@@ -1,36 +1,36 @@
 ---
-title: Informazioni su Universal Editor - Modalità reattiva
-description: Questo articolo spiega come visualizzare in anteprima i moduli utilizzando diversi emulatori nell’Editor universale per visualizzarne l’aspetto durante l’authoring.
+title: Informazioni sull’editor universale - Modalità reattiva
+description: Questo articolo spiega come visualizzare in anteprima i moduli utilizzando diversi emulatori nell’editor universale per verificarne l’aspetto durante l’authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 8f5b4d863ab469c44b4c221eab1fb128706b45c7
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 2%
+ht-degree: 33%
 
 ---
 
-# Modalità reattiva nell’authoring di WYSIWYG
+# Modalità reattiva nell’authoring WYSIWYG
 
 <span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
 
 
-[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) consente di visualizzare in anteprima Edge Delivery Services Forms con emulatori diversi per visualizzare l&#39;aspetto del modulo durante la creazione.
+L’[editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) consente di visualizzare in anteprima i moduli Edge Delivery Services con emulatori diversi per visualizzare l’aspetto del modulo durante l’authoring.
 
-La modalità reattiva consente agli sviluppatori di progettare layout che si adattano automaticamente a diverse dimensioni di schermo, inclusi desktop, tablet e dispositivi mobili. Universal Editor supporta emulatori per desktop, tablet e dispositivi mobili. È possibile impostare l&#39;altezza e la larghezza in base alle dimensioni dello schermo ed eseguire le azioni seguenti:
+La modalità reattiva (o responsive) consente agli sviluppatori di progettare layout che si adattano automaticamente a diverse dimensioni di schermo, inclusi desktop, tablet e dispositivi mobili. L’editor universale supporta emulatori per desktop, tablet e dispositivi mobili. È possibile impostare l’altezza e la larghezza in base alle dimensioni dello schermo ed eseguire le azioni seguenti:
 
-* Impostare l&#39;orientamento
-* Specificare la larghezza e l&#39;altezza
+* Impostare l’orientamento
+* Definire la larghezza e l’altezza
 * Modificare l’orientamento
 
-## Anteprima di Forms in modalità reattiva per dispositivi diversi
+## Visualizzare in anteprima i moduli in modalità reattiva per dispositivi diversi
 
 Universal Editor fornisce un&#39;icona **Emulatore** situata nell&#39;angolo in alto a destra dello schermo che consente di visualizzare in anteprima le pagine su dispositivi di dimensioni diverse e di verificare il comportamento della progettazione reattiva per una migliore esperienza utente.
 
-Per visualizzare il rendering dei moduli con Universal Editor su schermi di dimensioni diverse, effettuare le seguenti operazioni:
+Per vedere in che modo l’editor universale presenta i moduli per schermi di dimensioni diverse, effettua le seguenti operazioni:
 
-1. Apri il modulo nell’editor universale per la modifica.
+1. Apri un modulo nell’editor universale per la modifica.
 1. Selezionare l&#39;![icona Emulatore](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} disponibile sulla barra degli strumenti di Universal Editor e fare clic sull&#39;icona dell&#39;emulatore per visualizzare l&#39;opzione.
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
@@ -39,14 +39,14 @@ Per visualizzare il rendering dei moduli con Universal Editor su schermi di dime
 
    ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png){width=40%,height=40%}
 
-   Per impostazione predefinita, l’editor si apre in un layout desktop, con l’altezza e la larghezza determinate automaticamente dal browser. In alternativa, è possibile emulare un modulo su un dispositivo mobile o tablet. Puoi anche personalizzare la larghezza e l’altezza dello schermo per i dispositivi personalizzati.
+   Per impostazione predefinita, l’editor si apre in layout desktop, con altezza e larghezza definite automaticamente dal browser. In alternativa, è possibile emulare un modulo come verrebbe visualizzato su un dispositivo mobile o tablet. Puoi anche personalizzare la larghezza e l’altezza dello schermo per dispositivi personalizzati.
 
-Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su vari dispositivi. La tabella seguente elenca i tipi di emulatore disponibili e le relative rappresentazioni dei dispositivi:
+L’editor universale fornisce emulatori diversi per l’anteprima dei moduli su vari dispositivi. La tabella seguente elenca i tipi di emulatore disponibili e le relative rappresentazioni dei dispositivi:
 
 <table border="1" style="text-align:" left; border-collapse: collapse;">
     <tr>
         <th style="width: 20%">Tipo di emulatore</th>
-        <th style="width: 80%">Immagine dispositivo</th>
+        <th style="width: 80%">Immagine in base al dispositivo</th>
     </tr>
     <tr>
         <td style="width: 20%">Desktop</td>
@@ -66,7 +66,7 @@ Universal Editor fornisce emulatori diversi per l&#39;anteprima dei moduli su va
     </tr>
 </table>
 
-È possibile utilizzare l&#39;icona **Rotatore schermo** per alternare orientamento verticale e orientamento orizzontale durante l&#39;anteprima di un modulo su dispositivi diversi. Aiuta gli sviluppatori a testare il modo in cui la progettazione reattiva si adatta alle rotazioni dello schermo su vari dispositivi.
+Puoi utilizzare l’icona **Rotazione schermo** per passare all’orientamento orizzontale o verticale durante l’anteprima di un modulo su dispositivi diversi. Questo consente agli sviluppatori di testare il modo in cui la il design responsive si adatta alla rotazione dello schermo su vari dispositivi.
 
 Universal Editor supporta i vari layout di modulo. Per esplorare il layout diverso, consulta la sezione [Funzionalità di layout](#layout-capabilities).
 

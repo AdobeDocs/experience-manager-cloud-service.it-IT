@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
 source-wordcount: '1656'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Nell’era digitale di oggi, la creazione di moduli facili da usare è essenzial
 
 Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Google, consentendo di utilizzare un ecosistema dinamico e API affidabili di Fogli Google, Microsoft Excel e Microsoft SharePoint per elaborare facilmente i dati inviati o avviare un flusso di lavoro aziendale esistente.
 
-AEM Forms fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. È possibile [creare un nuovo progetto AEM preconfigurato con Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
+AEM Forms fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli per l’acquisizione e l’archiviazione dei dati acquisiti. Puoi [creare un nuovo progetto AEM preconfigurato con un blocco per moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->.
 
 Questa esercitazione di AEM Forms ti guida attraverso la creazione, l’anteprima e la pubblicazione di un modulo personalizzato con un nuovo progetto Adobe Experience Manager (AEM) Forms.
 
@@ -59,7 +59,7 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
    >[!NOTE]
    >
    >
-   > Se si utilizza GitHub Enterprise con il filtro IP, è possibile aggiungere il seguente IP al inserisco nell&#39;elenco Consentiti: 3.227.118.73
+   > Se utilizzi GitHub Enterprise con filtro IP, puoi aggiungere il seguente IP all’elenco Consentiti: 3.227.118.73
 
    Congratulazioni Hai un nuovo sito web in esecuzione su `https://<branch>--<repo>--<owner>.aem.page/`.
 
@@ -259,7 +259,7 @@ Vuoi mostrare la creazione? Utilizza Git per confermare e implementare le modifi
 Anteprima:`https://<branch>--<repo>--<owner>.aem.page/`
 Produzione: `https://<branch>--<repo>--<owner>.aem.live/`
 
-Congratulazioni L’ambiente di sviluppo locale è stato configurato correttamente e le modifiche sono state distribuite.
+Congratulazioni L’ambiente di sviluppo locale è stato configurato correttamente e le modifiche sono state implementate.
 
 
 <!--

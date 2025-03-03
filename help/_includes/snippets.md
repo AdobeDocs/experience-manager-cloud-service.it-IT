@@ -2,7 +2,7 @@
 source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -43,11 +43,11 @@ ht-degree: 96%
 ## Azioni di invio per modulo adattivo {#af-submit-action}
 
 * [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
-* [Invia a raccolta documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Invia a libreria documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Invia usando il modello dati modulo](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Invia all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Invia a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
 * [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
 * [Invia a Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)

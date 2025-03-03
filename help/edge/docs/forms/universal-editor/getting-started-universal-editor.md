@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -157,27 +157,27 @@ Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adat
 >[!NOTE]
 >
 >
-> Questo passaggio si applica ai progetti generati con [AEM ricorrenti](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Se hai creato il tuo progetto AEM utilizzando [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
+> Questo passaggio si applica ai progetti generati con [AEM ricorrenti](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Se hai creato il progetto AEM utilizzando [AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
 
 Per integrare:
-1. **Aggiungi file e cartelle richiesti**
-   1. Copia e incolla le cartelle e i file seguenti da [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) nel tuo progetto AEM:
+1. **Aggiungere file e cartelle richiesti**
+   1. Copia e incolla le cartelle e i file seguenti da [ AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms) nel tuo progetto AEM:
 
-      * [blocco modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) cartella
-      * [cartella-comune](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) modulo
-      * cartella [componenti modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
-      * file [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
-      * file [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+      * Cartella [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+      * Cartella [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * Cartella [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * File [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+      * File [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
 1. **Aggiornare le definizioni dei componenti e i file dei modelli**
-   1. Passa al file `../models/_component-definition.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-definition.json in AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+   1. Passa al file `../models/_component-definition.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-definition.json in AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
-   1. Passa al file `../models/_component-models.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-models.json in AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+   1. Passa al file `../models/_component-models.json` nel progetto AEM e aggiornalo con le modifiche apportate al file [_component-models.json in AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-1. **Aggiungi editor di moduli nello script dell&#39;editor**
-   1. Passa al file `../scripts/editor-support.js` nel progetto AEM e aggiornalo con le modifiche apportate al file [editor-support.js nel pannello di AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Aggiorna file di configurazione ESLint**
-   1. Passa al file `../.eslintignore` nel progetto AEM e aggiungi la seguente riga di codici per evitare errori relativi al motore di regole del blocco di moduli:
+1. **Aggiungere l’editor di moduli nello script dell’editor**
+   1. Passa al file `../scripts/editor-support.js` nel progetto AEM e aggiornalo con le modifiche apportate al file [editor-support.js in AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Aggiornare il file di configurazione ESLint**
+   1. Passa al file `../.eslintignore` nel progetto AEM e aggiungi la seguente riga di codici per evitare errori relativi al motore di regole del blocco moduli:
 
       ```
           blocks/form/rules/formula/*
@@ -193,14 +193,14 @@ Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi [ini
 Puoi aprire il progetto AEM nell’editor universale per l’authoring WYSIWYG, dove puoi modificare il progetto e aggiungere la sezione Modulo adattivo per includere i moduli Edge Delivery Services nelle pagine del progetto AEM.
 
 1. Aggiungi la sezione Modulo adattivo alla pagina del progetto AEM. Per aggiungere:
-   1. Passa al progetto AEM nella console Sites, seleziona la pagina del sito da modificare e fai clic su **Modifica**. La pagina del progetto AEM si apre in Universal Editor per la modifica.
+   1. Passa al progetto AEM nella console Sites, seleziona la pagina del sito da modificare e fai clic su **Modifica**. La pagina del progetto AEM viene aperta nell’editor universale per la modifica.
 In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
-   1. Apri la struttura Contenuto e passa a una sezione in cui desideri aggiungere la sezione Modulo adattivo.
+   1. Apri la Struttura contenuto e passa alla sezione in cui desideri aggiungere la sezione Modulo adattivo.
    1. Fai clic sull’icona **[!UICONTROL Aggiungi]** e seleziona il componente **[!UICONTROL Modulo adattivo]** dall’elenco dei componenti.
 
    ![struttura contenuto](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   Viene aggiunta la sezione Modulo adattivo. È ora possibile iniziare ad aggiungere i componenti del modulo alla pagina Progetto AEM.
+   La sezione Modulo adattivo è stata aggiunta. È ora possibile iniziare ad aggiungere i componenti del modulo alla pagina Progetto AEM.
 
 1. Aggiungi componenti del modulo alla sezione Modulo adattivo aggiunta. Per aggiungere componenti del modulo:
    1. Passa alla sezione Modulo adattivo aggiunto nella Struttura contenuto.
@@ -218,12 +218,12 @@ In questo caso, la pagina `index.html` viene utilizzata a scopo illustrativo.
 
       ![apri proprietà](/help/edge/docs/forms/assets/component-properties.png)
 
-   1. Visualizzare l&#39;anteprima del modulo.
+   1. Visualizza l’anteprima del modulo.
 La schermata seguente mostra il modulo creato nel progetto AEM utilizzando l’authoring WYSIWYG:
 
       ![modulo aggiunto](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-      Una volta ottenuta l’anteprima, l’utente può procedere alla pubblicazione della pagina.
+      Quando l’anteprima risulta soddisfacente, l’utente può procedere alla pubblicazione della pagina.
 
       >[!NOTE]
       >

@@ -1,13 +1,13 @@
 ---
 title: Personalizzare tema e stile per un modulo Edge Delivery Services di AEM Forms
-description: Personalizza efficacemente il tema e lo stile per AEM Forms fornito tramite Edge Delivery Services, garantendo un’esperienza utente coerente e di marchio.
+description: Personalizza efficacemente il tema e lo stile per AEM Forms fornito tramite Edge Delivery Services, garantendo un’esperienza utente coerente e con il brand.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 84%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Questo documento illustra la struttura HTML di vari componenti del modulo e spie
 Entro la fine dell’articolo:
 
 * Riuscirai a comprendere la struttura del file CSS predefinito incluso in un blocco moduli adattivi.
-* Acquisisci una conoscenza della struttura HTML dei componenti modulo forniti dal blocco Forms adattivo, inclusi componenti generali e componenti specifici come elenchi a discesa, gruppi di scelta e gruppi di caselle di controllo.
+* Puoi creare e comprendere la struttura HTML dei componenti modulo forniti dal Blocco moduli adattivi, inclusi i componenti generali e specifici come elenchi a discesa, gruppi di pulsanti di scelta e gruppi di caselle di controllo.
 * Scopri come assegnare uno stile ai campi modulo in base al tipo di campo e ai nomi di campo utilizzando i selettori CSS, consentendo uno stile coerente o univoco in base ai requisiti.
 
 ## Informazioni sui tipi di campi modulo
@@ -52,9 +52,9 @@ La comprensione dei [concetti CSS fondamentali](https://www.w3schools.com/css/cs
 
 Il blocco di moduli adattivi offre una struttura HTML standardizzata che semplifica la selezione e lo stile dei componenti dei moduli:
 
-* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Viene enfatizzato l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli.
+* **Aggiorna stili predefiniti**: è possibile modificare gli stili predefiniti di un modulo modificando il `/blocks/form/form.css file`. Questo file offre uno stile completo per un modulo, con supporto per i moduli della procedura guidata in più passaggi. Evidenzia l’utilizzo di variabili CSS personalizzate per una facile personalizzazione, manutenzione e uno stile uniforme tra i moduli.
 
-* **Stile CSS per Forms**: per garantire la corretta applicazione degli stili, racchiudi il CSS specifico per il modulo nel selettore `main .form form`. In questo modo, gli stili verranno indirizzati solo agli elementi del modulo all’interno dell’area del contenuto principale, evitando conflitti con altre parti del sito web.
+* **Stile CSS per i moduli**: per garantire la corretta applicazione degli stili, racchiudi il CSS specifico per il modulo nel selettore `main .form form`. In questo modo, gli stili verranno indirizzati solo agli elementi del modulo all’interno dell’area del contenuto principale, evitando conflitti con altre parti del sito web.
 Esempio:
 
   ```css
@@ -141,7 +141,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
   
 ```
 * `.{Type}-wrapper`: esegue il targeting dell’elemento esterno `div` in base al tipo di campo. Ad esempio: `.text-wrapper` esegue il targeting di tutti i campi di testo.
-* `.field-{Name}`: seleziona ulteriormente l&#39;elemento in base al nome di campo specifico. `.field-first-name`, ad esempio, esegue il targeting del campo di testo &quot;Nome&quot;. Questo selettore può essere utilizzato per il targeting di elementi con classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
+* `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo “Nome”. Questo selettore può essere utilizzato per eseguire il targeting di elementi con la classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
 
 **Esempio di selettori CSS per componenti generali**
 
@@ -341,7 +341,7 @@ main .form form .field-color .radio-wrapper label {
 
 +++ Selettori CSS per gruppi di caselle di controllo
 
-* Targeting del wrapper esterno: questi selettori eseguono il targeting dei contenitori più esterni dei gruppi di caselle di selezione e radio, consentendo di applicare stili generali all’intera struttura del gruppo. Questo è utile per impostare la spaziatura, l’allineamento o altre proprietà relative al layout.
+* Targeting del wrapper esterno: questi selettori eseguono il targeting dei contenitori dei gruppi di pulsanti scelta e delle caselle di controllo, consentendo di applicare stili generali all’intera struttura del gruppo. Questo è utile per impostare la spaziatura, l’allineamento o altre proprietà relative al layout.
 
 ```CSS
   
@@ -461,7 +461,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 * L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
 * L’elemento legend (<legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
-* All’interno del set di campi, più.elementi wrapper {Type} (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
+* All’interno del fieldset, più.elementi wrapper {Type} (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
 * Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
 +++

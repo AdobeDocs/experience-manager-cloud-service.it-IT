@@ -601,7 +601,7 @@ ht-degree: 95%
       + [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Imaging avanzato](/help/assets/dynamic-media/imaging-faq.md)
       + [Imaging avanzato con proporzioni pixel del dispositivo lato client](/help/assets/dynamic-media/client-side-dpr.md)
-      + [Distribuire elementi multimediali dinamici](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Distribuire risorse Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Modelli Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
       + [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Supporto 3D](/help/assets/dynamic-media/assets-3d.md)
@@ -739,9 +739,9 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura [!DNL Azure] archiviazione](/help/forms/configure-azure-storage.md)
-         + [Configura  [!DNL Microsoft Dynamics 365]  servizi cloud](/help/forms/configure-msdynamics.md)
-         + [Configurare i servizi cloud Salesforce](/help/forms/configure-salesforce.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
+         + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
@@ -765,9 +765,9 @@ ht-degree: 95%
             + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
             + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + Connetti un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
+            + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
                + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [Invia a raccolta documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [Invia a libreria documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
                + [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
                + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
@@ -784,7 +784,7 @@ ht-degree: 95%
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversione di moduli adattivi basati su componenti di base in moduli basati su Componenti core tramite lo strumento utility di migrazione](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modelli e-mail nei moduli adattivi](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Gestisci pubblicazione in Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Gestire la pubblicazione in Experience Manager Forms](/help/forms/manage-publication.md)
             + Introduzione all’editor di regole per moduli adattivi basati su componenti core{#rule-editor-core-components}
                + [Introduzione all’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components.md)
                + [Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
-      + [Come funziona Edge Delivery Services Forms?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
+      + [Come funzionano i modelli di Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo: Guida rapida con Google Sheets ed Excel](/help/edge/docs/forms/tutorial.md)
