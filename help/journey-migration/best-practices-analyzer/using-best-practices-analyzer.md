@@ -4,7 +4,7 @@ description: Scopri come utilizzare Best Practices Analyzer per comprendere lo s
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -81,6 +81,8 @@ Segui questa sezione per scoprire come visualizzare il rapporto Best Practices A
 
 >[!NOTE]
 > A partire dalla versione 2.1.54 di BPA, è stata introdotta una nuova funzione per ottenere il punteggio Lighthouse.
+
+
 1. Dopo aver fatto clic su **Genera report**, verrà visualizzato un pop-up con la richiesta dell&#39;URL del sito pubblico AEM per il punteggio Lighthouse. L’utente deve immettere un URL valido nel campo fornito.
 
    ![immagine](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
