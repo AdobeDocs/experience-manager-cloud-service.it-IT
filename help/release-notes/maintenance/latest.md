@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 19687 {#19687}
 
-Di seguito sono riepilogati i continui miglioramenti per la versione di manutenzione 19687 , rilasciata pubblicamente il 26 febbraio 2025. La versione di manutenzione precedente era la 19586.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 19687, rilasciata pubblicamente il 26 febbraio 2025. La versione di manutenzione precedente era la 19586.
 
 Con la versione di attivazione funzioni 2025.2.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
