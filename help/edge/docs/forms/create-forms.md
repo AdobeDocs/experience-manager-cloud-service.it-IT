@@ -2,9 +2,8 @@
 title: Guida introduttiva a Edge Delivery Services per AEM Forms. Crea un modulo.
 description: Crea moduli perfetti, velocemente. ⚡ authoring basato su documento di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
 feature: Edge Delivery Services
-exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 04fb65b4ec2d8bf6f54e1927469cda4bf94cbec8
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 98%

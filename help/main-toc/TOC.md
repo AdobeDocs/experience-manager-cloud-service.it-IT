@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a30591ba4ad1c73e5e6ca794dc7b84fd050c456
+source-git-commit: 27270875d9f66a3613ac042a450347439bb3baab
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6205'
 ht-degree: 95%
 
 ---
@@ -1045,10 +1045,10 @@ ht-degree: 95%
          + [Proteggi il tuo Forms: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti per moduli personalizzati: guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare le prestazioni dei moduli: guida al monitoraggio per uso reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [Distribuire Forms su Edge: guida alla pubblicazione per Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione a Forms Universal Editor per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Come creare il primo modulo con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Come avviare l’authoring con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Come creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guida all’interfaccia di Universal Editor: strumenti, funzionalità e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendi il tuo Forms facile da usare: design reattivo in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Design Beautiful Forms: guida di stile e teming per l&#39;editor universale](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

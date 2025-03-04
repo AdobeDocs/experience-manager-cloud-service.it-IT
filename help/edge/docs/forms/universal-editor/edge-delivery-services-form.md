@@ -7,8 +7,8 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
-workflow-type: ht
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Adobe Experience Manager offre e supporta più editor per la creazione di un mod
 
 L’editor universale è un editor visivo versatile che offre una funzionalità what-you-see-is-what-you-get (WYSIWYG) per garantire un’esperienza di creazione dei moduli intuitiva. Si consiglia di utilizzare l’editor universale durante la creazione di nuovi moduli, in quanto offre un design moderno e intuitivo e una comoda interfaccia tramite trascinamento.
 
-Per creare i moduli tramite l’Editor universale, vengono utilizzati i modelli di Edge Delivery Services disponibili nell’ambiente AEM. Questi moduli ereditano l’aspetto dalle configurazioni nell’archivio GitHub di Edge Delivery Services. È stata stabilita [una connessione tra l’ambiente AEM e l’archivio GitHub di Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md) per consentire la pubblicazione di questi moduli su Edge Delivery Services.
+Per creare i moduli tramite l’Editor universale, vengono utilizzati i modelli di Edge Delivery Services disponibili nell’ambiente AEM. Questi moduli ereditano l’aspetto dalle configurazioni nell’archivio GitHub di Edge Delivery Services. È stata stabilita [una connessione tra l’ambiente AEM e l’archivio GitHub di Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) per consentire la pubblicazione di questi moduli su Edge Delivery Services.
 
 Per informazioni dettagliate su come effettuare l’authoring con l’Editor universale, consulta l’articolo [Authoring dei contenuti con l’Editor universale.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring)
 
