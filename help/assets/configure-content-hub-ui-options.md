@@ -2,9 +2,9 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1668'
 ht-degree: 16%
 
 ---
@@ -229,19 +229,17 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-Content Hub consente di scaricare le rappresentazioni statiche. Le rappresentazioni statiche sono rappresentazioni diverse del file originale di una risorsa, generate in modo nativo. Alcuni esempi includono le miniature o le rappresentazioni ottimizzate per i dispositivi mobili. Gli amministratori possono gestire e controllare la disponibilità delle rappresentazioni delle risorse e decidere se scaricare o meno le risorse originali.
-
 Per farlo, esegui le seguenti operazioni:
 
 Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Rappresentazioni]**. Sono disponibili le seguenti opzioni:
 
-* Abilita l&#39;interruttore [!UICONTROL Abilita la disponibilità delle rappresentazioni statiche] per rendere visibili tutte le rappresentazioni statiche in Content Hub.
+* Attiva l&#39;interruttore [!UICONTROL Attiva disponibilità copie trasformate] per rendere visibili tutte le copie trasformate in Content Hub.
 
 * Abilita o disabilita **[!UICONTROL Consenti agli utenti di scaricare risorse originali]** per controllare la disponibilità del download di risorse originali.
 
   ![Configura copie trasformate in Content Hub](assets/config-renditions.png)
 
-Per informazioni su come visualizzare e scaricare le rappresentazioni statiche in Content Hub, vedi [scaricare risorse in Content Hub](/help/assets/download-assets-content-hub.md).
+Per informazioni su come visualizzare e scaricare le rappresentazioni in Content Hub, vedi [scaricare risorse in Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Collegamenti personalizzati {#configure-custom-links-content-hub}
 
