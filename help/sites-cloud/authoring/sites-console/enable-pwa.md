@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 60%
@@ -29,17 +29,17 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
 >[!IMPORTANT]
 >
->Le funzionalità PWA (progressive web app) per AEM Sites [sono diventate obsolete](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features).
+>Le funzionalità progressive web app (PWA) per AEM Sites [ sono state dichiarate obsolete](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non dovrebbero utilizzare questa funzione.
 
 ## Introduzione {#introduction}
 
-Le [app web progressive (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) abilitano esperienze simili alle applicazioni immersive per siti di AEM Sites, che possono essere memorizzate localmente sul computer di un utente ed essere accessibili offline. Un utente può navigare su un sito mentre è in movimento anche se perde una connessione a Internet. I PWA consentono un&#39;esperienza fluida anche in caso di perdita o instabilità della rete.
+Le [app web progressive (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) abilitano esperienze simili alle applicazioni immersive per siti di AEM Sites, che possono essere memorizzate localmente sul computer di un utente ed essere accessibili offline. Un utente può navigare su un sito mentre è in movimento anche se perde una connessione a Internet. Le PWA consentono un’esperienza fluida anche in caso di perdita o instabilità della rete.
 
 Anziché richiedere una nuova codifica del sito, un autore di contenuti può configurare le proprietà di PWA come scheda aggiuntiva nelle [proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) di un sito.
 
-* Quando viene salvata o pubblicata, questa configurazione attiva un gestore eventi che scrive i [file manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) e un [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) che abilitano le funzionalità PWA sul sito.
+* Quando viene salvata o pubblicata, questa configurazione attiva un gestore eventi che scrive i [file manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) e un [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) che abilita le funzionalità di PWA nel sito.
 * Vengono inoltre mantenute le mappature Sling per garantire che service worker sia servito dalla radice dell’applicazione per abilitare il proxy del contenuto che consente funzionalità offline all’interno dell’app.
 
 Con PWA, l’utente dispone di una copia locale del sito, che offre un’esperienza simile alle app anche senza una connessione Internet.
@@ -63,7 +63,7 @@ La versione 2.15.0 o successiva dei componenti core supporta completamente le fu
 
 >[!NOTE]
 >
->Adobe sconsiglia di utilizzare le funzionalità PWA su componenti personalizzati o non [estesi dai Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it).
+>Adobe sconsiglia di utilizzare le funzionalità di PWA su componenti personalizzati o non su [componenti personalizzati estesi dai Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it).
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -169,7 +169,7 @@ Queste impostazioni consentono al sito di comportarsi come un’app nativa rende
    * **Interfaccia utente minima** - Il browser è principalmente nascosto, come un’app nativa, ma sono esposti i controlli di navigazione di base.
    * **Schermo intero** - Il browser è nascosto, come un&#39;app nativa, ma viene riprodotto in modalità a schermo intero.
       * Con questa opzione, la navigazione nelle app deve essere possibile interamente tramite il contenuto mediante collegamenti e componenti nelle pagine del sito senza utilizzare i controlli di navigazione del browser.
-* **Orientamento schermo** - Come app locale, il PWA deve sapere come gestire [gli orientamenti del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
+* **Orientamento schermo** - Come app locale, PWA deve sapere come gestire [gli orientamenti del dispositivo](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Qualsiasi** - L’app si adatta all’orientamento del dispositivo dell’utente. Questo è il valore predefinito.
    * **Verticale** - Questo costringe l’app ad aprirsi in layout verticale indipendentemente dall’orientamento del dispositivo dell’utente.
    * **Orizzontale** - Questo costringe l’app ad aprirsi in layout orizzontale indipendentemente dall’orientamento del dispositivo dell’utente.
@@ -209,7 +209,7 @@ Non tutte le funzionalità di PWA sono disponibili per AEM Sites. Questi sono al
 
 * Le pagine non vengono sincronizzate o aggiornate automaticamente se l’utente non sta utilizzando l’app.
 
-Adobe consiglia inoltre quanto segue quando si implementa PWA.
+Quando si implementa PWA, Adobe consiglia anche quanto segue.
 
 ### Riduci al minimo il numero di risorse da pre-memorizzare in cache. {#minimize-precache}
 
@@ -220,7 +220,7 @@ Adobe consiglia di limitare il numero di pagine da pre-memorizzare in cache.
 
 ### Abilita PWA dopo la stabilizzazione degli script di progetto e dei fogli di stile. {#pwa-stabilized}
 
-Le librerie client vengono distribuite con l’aggiunta di un selettore di cache che osserva il seguente pattern `lc-<checksumHash>-lc`. Questo selettore cambia ogni volta che cambia uno dei file (e delle dipendenze) che compongono una libreria. Se hai elencato una libreria client che deve essere pre-memorizzata nella cache dal service-worker e desideri fare riferimento a una nuova versione, recupera e aggiorna manualmente la voce. Di conseguenza, Adobe consiglia di configurare il sito come PWA dopo la stabilizzazione degli script di progetto e dei fogli di stile.
+Le librerie client vengono distribuite con l’aggiunta di un selettore di cache che osserva il seguente pattern `lc-<checksumHash>-lc`. Questo selettore cambia ogni volta che cambia uno dei file (e delle dipendenze) che compongono una libreria. Se hai elencato una libreria client che deve essere pre-memorizzata nella cache dal service-worker e desideri fare riferimento a una nuova versione, recupera e aggiorna manualmente la voce. Di conseguenza, Adobe consiglia di configurare il sito come PWA dopo la stabilizzazione degli script del progetto e dei fogli di stile.
 
 ### Riduci al minimo il numero di varianti di immagine. {#minimize-variations}
 
