@@ -3,10 +3,10 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare le risorse dal portale Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 9%
+source-wordcount: '778'
+ht-degree: 8%
 
 ---
 
@@ -128,7 +128,7 @@ Ulteriori informazioni su [visualizzare e gestire le copie trasformate in Experi
 
 >[!NOTE]
 > 
-* Per accedere in anteprima all&#39;account Dynamic Media, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+* Le funzioni di rendering di ritaglio dinamico e avanzato sono in fase di adozione iniziale. Per accedere alla funzionalità, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 * I nuovi clienti onboarded nei [servizi API Dynamic Media Open](/help/assets/dynamic-media-open-apis-overview.md) devono rivedere i loro predefiniti immagine esistenti per l&#39;approvazione.
 
 
