@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Informazioni sulla dashboard di realizzazione del valore
 
 ![Dashboard di realizzazione Fvalue](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Questa funzionalità è una funzionalità beta, abilitata solo per alcuni clienti selezionati. </span>
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
+
 
 Benvenuto al tuo punto di riferimento per comprendere il valore che i moduli apportano. Questa dashboard offre informazioni utili per ottimizzare i moduli, semplificare i flussi di lavoro e, in ultima analisi, raggiungere gli obiettivi più rapidamente.
 
-Questo articolo fornisce una panoramica concettuale del dashboard di realizzazione del valore e dei relativi vantaggi. Per istruzioni di utilizzo dettagliate e interpretazione delle metriche, vedere [Interpretazione delle informazioni sull&#39;utilizzo dei moduli tramite il dashboard Realizzazione valore](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+Questo articolo fornisce una panoramica concettuale del dashboard di realizzazione del valore e dei relativi vantaggi. Per istruzioni di utilizzo dettagliate e interpretazione delle metriche, vedere [Interpretazione delle informazioni sull&#39;utilizzo dei moduli tramite il dashboard Realizzazione valore](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![dashboard di realizzazione valore](/help/forms/assets/forms-usage-insights.png)
+
 
 ## Cosa c&#39;è sul cruscotto? {#content-of-dashboard}
 
 Questa dashboard rappresenta la finestra sul mondo dell’utilizzo dei moduli. Ecco una suddivisione delle sezioni principali:
+
 
 ### Attività moduli e documenti nel tempo
 
@@ -44,8 +46,6 @@ Questa dashboard rappresenta la finestra sul mondo dell’utilizzo dei moduli. E
 * **Riutilizzo frammento di modulo**: verifica la frequenza con cui questi frammenti vengono utilizzati in diversi moduli.
 
 
-
-
 ## Quali vantaggi offre? {#benefits-to-you}
 
 Questa dashboard consente di prendere decisioni basate sui dati in merito ai moduli. Ecco come:
@@ -53,6 +53,8 @@ Questa dashboard consente di prendere decisioni basate sui dati in merito ai mod
 * **Identificare il Forms più diffuso**: elevate percentuali di invio indicano moduli importanti. Analizza queste best practice da replicare in altre.
 * **Ottimizza creazione modulo**: riduci i tempi di creazione identificando i colli di bottiglia. Esplora modelli predefiniti o flussi di lavoro semplificati.
 * **Migliora riutilizzo frammenti**: incoraggia la collaborazione e la reperibilità di frammenti riutilizzabili. Librerie di frammenti ben organizzate possono migliorare in modo significativo l’efficienza.
+
+  ![dashboard di realizzazione valore](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Trasformazione delle informazioni in azioni {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ Ricordati che questo cruscotto è il tuo alleato! Grazie a un utilizzo efficace,
 
 ## Consulta anche
 
-* [Interpretazione delle informazioni sull’utilizzo](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Utilizzo del dashboard per analizzare le tendenze di utilizzo di Forms e documenti](/help/forms/using-the-value-realization-dashboard.md)
