@@ -1,13 +1,13 @@
 ---
 title: Gestione dei frammenti di contenuto
-description: Scopri come gestire i frammenti di contenuto AEM dalla console e dall’editor, come creare contenuti come base per contenuti headless o per l’authoring delle pagine.
+description: Scopri come gestire i frammenti di contenuto di AEM dalla console e dall’editor, come creare contenuti come base per i contenuti headless o per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 44%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 44%
 >
 >Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-Scopri come gestire i **Frammenti di contenuto** in Adobe Experience Manager (AEM) in as a Cloud Service, dalla console dedicata [Frammenti di contenuto](#content-fragments-console) e dall&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Questi frammenti di contenuto possono essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
+Scopri come gestire i **Frammenti di contenuto** in Adobe Experience Manager (AEM) as a Cloud Service, dalla [Console Frammenti di contenuto](#content-fragments-console) dedicata e dall&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Questi frammenti di contenuto possono essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Per ulteriori informazioni consulta:
 
 >[!CAUTION]
 >
->Questa console è *only* disponibile nell&#39;as a Cloud Service di Adobe Experience Manager (AEM) online.
+>Questa console è *solo* disponibile nell&#39;as a Cloud Service online di Adobe Experience Manager (AEM).
 
 ### Struttura e gestione di base della console {#basic-structure-handling-content-fragments-console}
 
@@ -163,7 +163,7 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 
 >[!NOTE]
 >
->Azioni quali Publish, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano ogni processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
+>Azioni quali Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
 
 ### Informazioni fornite sui frammenti di contenuto {#information-content-fragments}
 
@@ -237,6 +237,7 @@ Per creare un frammento di contenuto:
 
    * **Posizione** - Completato automaticamente con la posizione corrente, ma se necessario puoi selezionare una posizione diversa.
    * **Modello per frammenti di contenuto** - Selezionare il modello da utilizzare come base per il frammento dall&#39;elenco a discesa.
+   * **Tag automatico** - Quando si seleziona questa opzione, tutti i tag assegnati al modello per frammenti di contenuto vengono ereditati dal nuovo frammento di contenuto e aggiunti a esso.
    * **Titolo**
    * **Nome** - Completato automaticamente in base al **Titolo**, ma puoi modificarlo, se necessario.
    * **Descrizione**
@@ -310,7 +311,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
   >[!CAUTION]
   >
-  >La pubblicazione di frammenti di contenuto nel servizio **Anteprima** è disponibile solo nella console Frammenti di contenuto utilizzando l&#39;azione **Publish**.
+  >La pubblicazione di frammenti di contenuto nel servizio **Anteprima** è disponibile solo nella console Frammenti di contenuto utilizzando l&#39;azione **Pubblica**.
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
 ### Pubblicazione {#publishing}
 
-Puoi pubblicare i frammenti di contenuto utilizzando l&#39;opzione **Publish** da:
+Puoi pubblicare i frammenti di contenuto utilizzando l&#39;opzione **Pubblica** da:
 
 * la barra degli strumenti della [console Frammenti di contenuto](#actions-selected-content-fragment)
 
@@ -332,7 +333,7 @@ Puoi pubblicare i frammenti di contenuto utilizzando l&#39;opzione **Publish** d
 
 * barra degli strumenti dell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Dopo aver selezionato l&#39;azione **Publish**:
+Dopo aver selezionato l&#39;azione **Pubblica**:
 
 1. Seleziona una delle seguenti opzioni per aprire la finestra di dialogo appropriata:
 
