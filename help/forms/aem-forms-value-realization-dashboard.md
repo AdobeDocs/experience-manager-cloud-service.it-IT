@@ -5,38 +5,48 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-exl-id: 2c071f3c-b74a-4efc-808d-6aba9f294663
-source-git-commit: cd106c1970bf26eb590a418e3e6b79e3d3d9b5fe
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# Dashboard per la realizzazione del valore: trarre il massimo dal tuo Forms {#value-realization-dashboard}
+
+# Informazioni sulla dashboard di realizzazione del valore
+
+![Dashboard di realizzazione Fvalue](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
+
 
 <span class="preview"> Questa funzionalità è una funzionalità beta, abilitata solo per alcuni clienti selezionati. </span>
 
 Benvenuto al tuo punto di riferimento per comprendere il valore che i moduli apportano. Questa dashboard offre informazioni utili per ottimizzare i moduli, semplificare i flussi di lavoro e, in ultima analisi, raggiungere gli obiettivi più rapidamente.
 
-## Cosa c&#39;è sulla dashboard? {#content-of-dashboard}
+Questo articolo fornisce una panoramica concettuale del dashboard di realizzazione del valore e dei relativi vantaggi. Per istruzioni di utilizzo dettagliate e interpretazione delle metriche, vedere [Interpretazione delle informazioni sull&#39;utilizzo dei moduli tramite il dashboard Realizzazione valore](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+
+
+![dashboard di realizzazione valore](/help/forms/assets/forms-usage-insights.png)
+
+## Cosa c&#39;è sul cruscotto? {#content-of-dashboard}
 
 Questa dashboard rappresenta la finestra sul mondo dell’utilizzo dei moduli. Ecco una suddivisione delle sezioni principali:
 
-### Attività modulo nel tempo:
+### Attività moduli e documenti nel tempo
 
 * **Invio moduli**: visualizza le tendenze relative alla frequenza di completamento dei moduli.
 * **Copie trasformate documenti**: tenere traccia del numero di documenti sottoposti a rendering nel tempo.
 * **Forms creato e pubblicato**: controlla la velocità di generazione e distribuzione dei nuovi moduli.
 * **Tempi di creazione e pubblicazione dei moduli**: analizza i tempi medi di creazione e pubblicazione dei moduli per identificare le aree da migliorare.
 
-### Utilizzo frammento:
+### Utilizzo frammento
 
 * **Numero di frammenti di modulo in uso**: vedere quante sezioni di modulo riutilizzabili sono attualmente incorporate nei moduli attivi.
-* **Numero di riutilizzo di frammenti di modulo**: verifica la frequenza con cui tali frammenti vengono utilizzati in diversi moduli.
+* **Riutilizzo frammento di modulo**: verifica la frequenza con cui questi frammenti vengono utilizzati in diversi moduli.
 
 
-## Quali Sono I Vantaggi? {#benefits-to-you}
+
+
+## Quali vantaggi offre? {#benefits-to-you}
 
 Questa dashboard consente di prendere decisioni basate sui dati in merito ai moduli. Ecco come:
 
@@ -45,7 +55,7 @@ Questa dashboard consente di prendere decisioni basate sui dati in merito ai mod
 * **Migliora riutilizzo frammenti**: incoraggia la collaborazione e la reperibilità di frammenti riutilizzabili. Librerie di frammenti ben organizzate possono migliorare in modo significativo l’efficienza.
 
 
-## Trasformare gli Approfondimenti in Azione {#turning-insights-into-actions}
+## Trasformazione delle informazioni in azioni {#turning-insights-into-actions}
 
 Traduciamo questi risultati in passaggi actionable!
 
@@ -62,3 +72,7 @@ Analizzando queste tendenze, è possibile creare moduli migliori, risparmiare te
 * **Esperimento e perfezionamento:** Non abbiate paura di sperimentare diverse progettazioni di moduli e utilizzo di frammenti. La dashboard consente di misurare l’efficacia delle modifiche.
 
 Ricordati che questo cruscotto è il tuo alleato! Grazie a un utilizzo efficace, è possibile trasformare i moduli da semplici strumenti di raccolta dati in risorse strategiche in grado di favorire il successo dell’azienda e del cliente.
+
+## Consulta anche
+
+* [Interpretazione delle informazioni sull’utilizzo](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)

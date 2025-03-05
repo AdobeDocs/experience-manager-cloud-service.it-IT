@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 26%
+source-wordcount: '2155'
+ht-degree: 28%
 
 ---
 
@@ -76,7 +76,7 @@ I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambi
 
 ### Authoring WYSIWYG per Edge Delivery Services
 
-WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi sui Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
+WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi in Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -92,9 +92,9 @@ WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms
 
 Il connettore [da AEM Forms a Marketo](/help/forms/integrate-form-to-marketo-engage.md) colma il divario tra i moduli web (Adaptive Forms) generati con Adobe Experience Manager (AEM) e la piattaforma di automazione marketing Marketo.
 
-Quando qualcuno invia un modulo sul tuo sito web creato con AEM Adaptive Forms, il connettore assicura che i dati inviati vengano inviati automaticamente a Marketo. Questo elimina la necessità di inserire manualmente i dati e riduce il rischio di errori.
+Quando qualcuno invia un modulo sul sito web creato con AEM Adaptive Forms, il connettore assicura che i dati inviati vengano inviati automaticamente a Marketo. Questo elimina la necessità di inserire manualmente i dati e riduce il rischio di errori.
 
-![Modulo AEM - Connettore Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
+![AEM Form - Connettore Marketo](/help/forms/assets/aem-forms-marketo-connector.jpeg)
 
 Semplificando il processo di trasferimento dei dati, il connettore può aiutarti a migliorare i tassi di conversione del tuo sito web. Inviando automaticamente i dati dei lead a Marketo, puoi essere certo che i lead qualificati vengano inseriti rapidamente nei tuoi programmi di sviluppo.
 
@@ -103,18 +103,40 @@ In sostanza, il connettore da AEM Forms a Marketo consente di sfruttare i punti 
 Pronto per iniziare? I seguenti articoli forniscono istruzioni dettagliate per utilizzare l’innovazione.
 
 * [Integrare Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-* [Integrare un modulo adattivo con il Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [Configurare l’origine dati di Marketo Engage e per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [Invia un modulo adattivo esistente al Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Integrare un modulo adattivo con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurare l’origine dati di Marketo Engage ad per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Inviare un modulo adattivo esistente a Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+### Dashboard di realizzazione del valore
+
+Monitora e analizza le prestazioni dei moduli con il dashboard di realizzazione del valore. Questo strumento di analisi consente di prendere decisioni basate sui dati per ottimizzare la strategia dei moduli.
+
+![Dashboard di informazioni sull&#39;utilizzo di Forms](/help/forms/assets/forms-usage-insights.png)
+
+**Funzioni chiave:**
+
+* Monitorare gli invii di moduli, le rappresentazioni di documenti e le metriche di creazione/pubblicazione di moduli
+* Tracciare l’utilizzo e il riutilizzo dei frammenti di modulo all’interno dell’organizzazione
+* Identificare tendenze, periodi di picco e opportunità di miglioramento
+
+Il dashboard fornisce informazioni attraverso due sezioni principali:
+
+* **Attività moduli e documenti nel tempo**: tiene traccia di invii, rappresentazioni e creazione/pubblicazione di moduli
+* **Utilizzo frammento**: monitora l&#39;adozione e il riutilizzo dei frammenti
+
+Per informazioni dettagliate:
+
+* [Informazioni sulla dashboard di realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
+* [Interpretazione di informazioni sull’utilizzo di moduli e documenti](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 
-### Modelli e-mail per HTML in Forms adattivo
+### Modelli e-mail per HTML nei moduli adattivi
 
 
-Forms adattivo consente di utilizzare [modelli e-mail di HTML](/help/forms/html-email-templates-in-adaptive-forms.md). I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+I moduli adattivi consentono di utilizzare [modelli e-mail HTML](/help/forms/html-email-templates-in-adaptive-forms.md). I modelli e-mail HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con i Moduli adattivi, è possibile caricare un file contenente un modello HTML o utilizzare un editor di testo normale per creare questi modelli.
 
-![Modelli e-mail HTML](/help/forms/assets/html-email.png)
+![Modello e-mail HTML](/help/forms/assets/html-email.png)
 
 ### Azione invio servizi Web RESTful
 
@@ -161,17 +183,17 @@ Sei pronto a integrare una di queste soluzioni CAPTCHA con il tuo modulo adattiv
 ### API Doc Assurance
 
 
-Le API Assurance di AEM Forms Doc sono un set di strumenti all’interno delle API di comunicazione di Cloud Service di AEM Forms che ti consentono di gestire la sicurezza e l’interazione dell’utente dei documenti PDF.
+Le API Assurance di AEM Forms Doc sono un set di strumenti all’interno delle API di comunicazione di AEM Forms Cloud Service che ti consentono di gestire la sicurezza e l’interazione dell’utente dei documenti di PDF.
 
 Ecco un raggruppamento delle funzioni delle API Doc Assurance:
 
-* **Crittografa e decrittografa documenti**: esegui il Protect dei documenti rendendo il contenuto illeggibile con la crittografia. È possibile controllare quali parti del PDF sono crittografate, inclusi l&#39;intero documento, contenuto specifico, metadati o allegati.
+* **Crittografa e decrittografa documenti**: proteggi i documenti rendendo illeggibile il loro contenuto con la crittografia. È possibile controllare quali parti del PDF sono crittografate, incluso l&#39;intero documento, contenuto specifico, metadati o allegati.
 
 * **Firma digitale dei documenti**: aggiungi firme digitali ai documenti per la convalida e la verifica a prova di manomissione. Può essere utilizzato a scopo di certificazione o per garantire l&#39;integrità dei documenti
 
-* **Reader Estendi i documenti (Applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all&#39;organizzazione di condividere facilmente i documenti PDF interattivi estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
+* **Reader Estendi i documenti (applica o modifica i diritti di utilizzo dei documenti PDF)**: consente all&#39;organizzazione di condividere facilmente i documenti PDF interattivi estendendo la funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi.
 
-  Le API di estensione del Reader (Diritti di utilizzo) aggiungono diritti di utilizzo a un documento PDF. Questa azione attiva caratteristiche che in genere non sono disponibili quando un documento PDF viene aperto mediante Adobe Reader, ad esempio l’aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti.
+  Le API di estensione Reader (diritti di utilizzo) aggiungono diritti di utilizzo a un documento PDF. Questa azione attiva le funzioni che in genere non sono disponibili quando un documento di PDF viene aperto mediante Adobe Reader, ad esempio l&#39;aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti.
 
   Quando ai documenti PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire attività abilitate dall’interno di Adobe Reader.
 
@@ -180,7 +202,7 @@ Nel complesso, le [API Doc Assurance](https://developer.adobe.com/experience-man
 
 ### API dei servizi Forms
 
-Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare/esportare dati da/verso un modulo interattivo di PDF esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
+Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare/esportare dati in/da un modulo PDF interattivo esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
 
 * **Rendering di moduli**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. In sostanza, questo produce un modulo PDF compilabile, facoltativamente precompilato con i dati.
 
@@ -190,23 +212,23 @@ Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. P
 
 ### API di generazione documento
 
-L’API di generazione dei documenti include una funzione facoltativa che consente il caricamento diretto dei PDF generati nell’archiviazione BLOB di Azure. Alcuni vantaggi chiave del caricamento di PDF direttamente nell’archiviazione BLOB di Azure tramite l’API di generazione dei documenti sono:
+L’API di generazione dei documenti include una funzione facoltativa che consente il caricamento diretto dei PDF generati nell’archiviazione BLOB di Azure. Alcuni vantaggi chiave del caricamento diretto di PDF nell’archiviazione BLOB di Azure tramite l’API di generazione dei documenti sono:
 
 * **Integrazione perfetta con Cloud Storage**:
 Il caricamento diretto dei PDF generati nell’archiviazione BLOB di Azure elimina la necessità di ulteriori passaggi manuali o programmatici per trasferire i file, semplificando i flussi di lavoro e migliorando l’efficienza.
 
 * **Gestione centralizzata dei documenti**:
-L’archiviazione dei PDF nell’archiviazione BLOB di Azure consente la gestione centralizzata dei documenti, semplificando l’organizzazione, il recupero e la gestione dei file generati in vari casi d’uso.
+L’archiviazione dei PDF in Azure Blob Storage consente la gestione centralizzata dei documenti, semplificando l’organizzazione, il recupero e la gestione dei file generati in vari casi d’uso.
 
 * **Protezione migliorata**: sfruttando le funzionalità di protezione integrate di Azure, ad esempio la crittografia a riposo e il controllo degli accessi basato sui ruoli, i documenti sensibili rimangono protetti durante l&#39;archiviazione.
 
-* **Percorsi di archiviazione personalizzabili**: la possibilità di definire percorsi di directory personalizzati garantisce che i PDF generati siano archiviati in percorsi organizzati e specifici dell&#39;applicazione, migliorando la gestione dei file.
+* **Percorsi di archiviazione personalizzabili**: la possibilità di definire percorsi di directory personalizzati garantisce che i PDF generati vengano archiviati in percorsi organizzati e specifici dell&#39;applicazione, migliorando la gestione dei file.
 
 ## Consulta anche
 
 * [Ultime innovazioni in AEM Forms](/help/forms/latest-innovations.md)
 
-* [Funzionalità di AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Funzionalità di AEM Forms as a Cloud Services](/help/forms/home.md)
 
-* [Differenza tra AEM 6.5 Forms (AMS e on-prem) e AEM Forms as a Cloud Service (AEM CS Forms)](/help/forms/notable-changes.md)
+* [Differenza tra AEM 6.5 Forms (AMS e on-prem) e AEM Forms as a Cloud Services (AEM CS Forms)](/help/forms/notable-changes.md)
 
