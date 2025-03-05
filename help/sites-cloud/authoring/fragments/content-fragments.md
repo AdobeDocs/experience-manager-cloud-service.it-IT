@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -14,17 +14,17 @@ ht-degree: 83%
 
 # Frammenti di contenuto {#content-fragments}
 
-I frammenti di contenuto in Adobe Experience Manager (AEM as a Cloud Service) sono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/overview.md), che consentono di creare contenuti indipendenti dal canale, insieme a varianti (possibilmente specifiche del canale). Puoi utilizzare questi frammenti, e le relative varianti, durante l’authoring delle pagine di contenuto.
+I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service sono [creati e gestiti come risorse indipendenti dalla pagina](/help/sites-cloud/administering/content-fragments/overview.md), che consentono di creare contenuti indipendenti dal canale, insieme a varianti (possibilmente specifiche del canale). Puoi utilizzare questi frammenti, e le relative varianti, durante l’authoring delle pagine di contenuto.
 
 >[!CAUTION]
 >
->Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base, oltre a informazioni sulla creazione e la gestione dei frammenti e sulla distribuzione di frammenti di contenuto strutturati a canali diversi dalle pagine AEM.
+>Questa pagina deve essere letta insieme a [Utilizzo dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) (e pagine correlate), in quanto introduce la terminologia e i concetti di base, oltre alle informazioni sulla creazione e la gestione dei frammenti e sulla distribuzione di frammenti di contenuto strutturati a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >
 >I frammenti di contenuto sono una funzionalità di **Sites**, ma sono memorizzati come **Assets**.
 >
->Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Esistono due editor per l’authoring dei frammenti di contenuto:
 >

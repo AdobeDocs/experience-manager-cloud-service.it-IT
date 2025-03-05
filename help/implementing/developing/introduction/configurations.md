@@ -1,10 +1,10 @@
 ---
 title: Configurazioni e browser di configurazione
-description: Scopri le configurazioni di Adobe Experience Manager (AEM) e come gestiscono le impostazioni dell’area di lavoro nell’AEM.
+description: Scopri le configurazioni di Adobe Experience Manager (AEM) e come gestiscono le impostazioni dell’area di lavoro in AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -13,30 +13,30 @@ ht-degree: 5%
 
 # Configurazioni e browser di configurazione {#configuration-browser}
 
-Le configurazioni di Adobe Experience Manager (AEM) servono per gestire le impostazioni nell’AEM e fungono da aree di lavoro.
+Le configurazioni di Adobe Experience Manager (AEM) servono per gestire le impostazioni in AEM e fungono da aree di lavoro.
 
 ## Cos&#39;è una configurazione? {#what-is-a-configuration}
 
 Una configurazione può essere considerata da due punti di vista diversi.
 
-* [Un amministratore](#configurations-administrator) utilizza le configurazioni come aree di lavoro in AEM per definire e gestire gruppi di impostazioni.
-* [Uno sviluppatore](#configurations-developer) utilizza il meccanismo di configurazione sottostante che implementa le configurazioni per mantenere e cercare le impostazioni nell&#39;AEM.
+* [Un amministratore](#configurations-administrator) utilizza le configurazioni come aree di lavoro all&#39;interno di AEM per definire e gestire gruppi di impostazioni.
+* [Uno sviluppatore](#configurations-developer) utilizza il meccanismo di configurazione sottostante che implementa le configurazioni per mantenere e cercare le impostazioni in AEM.
 
-In sintesi: dal punto di vista di un amministratore, per configurazioni si intende il modo in cui si creano le aree di lavoro per gestire le impostazioni in AEM; lo sviluppatore deve invece comprendere in che modo AEM utilizza e gestisce queste configurazioni all’interno dell’archivio.
+In sintesi: dal punto di vista di un amministratore, per configurazioni si intende il modo in cui vengono create le aree di lavoro per gestire le impostazioni in AEM; lo sviluppatore deve invece comprendere in che modo AEM utilizza e gestisce queste configurazioni all’interno dell’archivio.
 
-Indipendentemente dal tuo punto di vista, le configurazioni servono a due scopi principali in AEM:
+Indipendentemente dal tuo punto di vista, le configurazioni hanno due finalità principali in AEM:
 
 * Le configurazioni abilitano determinate funzioni per determinati gruppi di utenti.
 * Le configurazioni definiscono i diritti di accesso per tali funzioni.
 
 ## Configurazioni come amministratore {#configurations-administrator}
 
-L’amministratore AEM e gli autori possono considerare le configurazioni come aree di lavoro. Queste aree di lavoro possono essere utilizzate per raccogliere gruppi di impostazioni e i relativi contenuti associati a scopo organizzativo implementando i diritti di accesso per tali funzioni.
+L’amministratore di AEM e gli autori possono considerare le configurazioni come aree di lavoro. Queste aree di lavoro possono essere utilizzate per raccogliere gruppi di impostazioni e i relativi contenuti associati a scopo organizzativo implementando i diritti di accesso per tali funzioni.
 
-È possibile creare configurazioni per molte funzioni diverse all’interno dell’AEM.
+È possibile creare configurazioni per molte funzioni diverse all’interno di AEM.
 
 * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Modelli modificabili](/help/sites-cloud/authoring/page-editor/templates.md)
 * varie configurazioni cloud
 
@@ -68,7 +68,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 
 #### Creazione di una configurazione  {#creating-a-configuration}
 
-È semplice creare una configurazione in AEM utilizzando Configuration Browser.
+È semplice creare una configurazione in AEM utilizzando il Browser configurazioni.
 
 1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Strumenti** > **Generale** > **Browser configurazioni**.
 1. Seleziona **Crea**.
@@ -82,7 +82,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
       * Se necessario è possibile modificarlo.
 1. Controlla il tipo di configurazioni che desideri consentire.
    * [Segmenti Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Modelli modificabili](/help/sites-cloud/authoring/page-editor/templates.md)
    * varie configurazioni cloud
 1. Seleziona **Crea**.
@@ -120,7 +120,7 @@ In qualità di sviluppatore, è importante sapere come AEM as a Cloud Service fu
 
 ### Separazione di configurazione e contenuto {#separation-of-config-and-content}
 
-Anche se l&#39;amministratore [e gli utenti possono considerare le configurazioni come aree di lavoro](#configurations-administrator) per gestire impostazioni e contenuti diversi, è importante comprendere che le configurazioni e i contenuti sono archiviati e gestiti separatamente dall&#39;AEM nell&#39;archivio.
+Anche se l&#39;amministratore [e gli utenti possono considerare le configurazioni come aree di lavoro](#configurations-administrator) per gestire impostazioni e contenuti diversi, è importante comprendere che le configurazioni e i contenuti sono archiviati e gestiti separatamente da AEM nell&#39;archivio.
 
 * `/content` è la home page di tutti i contenuti.
 * `/conf` è la home di tutte le configurazioni.
@@ -169,7 +169,7 @@ Viene infine visualizzata la proprietà `bgkcolor` necessaria per questo codice 
 
 L’esempio di base precedente mostrava una singola configurazione. Tuttavia, in molti casi è necessario disporre di configurazioni diverse, ad esempio una configurazione globale predefinita, una diversa per ogni marchio e forse una specifica per i sottoprogetti.
 
-Per supportare questa ricerca nella configurazione, AEM dispone di un meccanismo di ereditarietà e fallback nell’ordine di preferenza seguente:
+Per supportare questa ricerca della configurazione, AEM dispone di un meccanismo di ereditarietà e fallback nell’ordine di preferenza seguente:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Configurazione specifica a cui si fa riferimento da `cq:conf` in `/content`
@@ -191,14 +191,14 @@ Per supportare questa ricerca nella configurazione, AEM dispone di un meccanismo
    * Risolto con l’implementazione dell’applicazione
    * Sola lettura in fase di runtime
 1. `/libs`
-   * Valori predefiniti dei prodotti AEM
+   * Valori predefiniti di AEM
    * Modificabile solo da Adobe, accesso al progetto non consentito
    * Risolto con l’implementazione dell’applicazione
    * Sola lettura in fase di runtime
 
 ### Utilizzo delle configurazioni {#using-configurations}
 
-Le configurazioni dell’AEM si basano sulle configurazioni in base al contesto di Sling. I bundle Sling forniscono un’API di servizio che può essere utilizzata per ottenere configurazioni in base al contesto. Le configurazioni in base al contesto sono configurazioni correlate a una risorsa di contenuto o a una struttura di risorse come [descritto nell&#39;esempio precedente](#developer-example).
+Le configurazioni in AEM si basano su Configurazioni in base al contesto di Sling. I bundle Sling forniscono un’API di servizio che può essere utilizzata per ottenere configurazioni in base al contesto. Le configurazioni in base al contesto sono configurazioni correlate a una risorsa di contenuto o a una struttura di risorse come [descritto nell&#39;esempio precedente](#developer-example).
 
 Per ulteriori dettagli su configurazioni in base al contesto, esempi e come utilizzarle, consulta la [documentazione di Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 

@@ -1,18 +1,18 @@
 ---
-title: Modelli per frammenti di contenuto
+title: Definizione dei modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM, consentendo di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
+source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
 workflow-type: tm+mt
-source-wordcount: '3591'
-ht-degree: 48%
+source-wordcount: '2260'
+ht-degree: 36%
 
 ---
 
-# Modelli per frammenti di contenuto {#content-fragment-models}
+# Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
 >[!IMPORTANT]
 >
@@ -20,80 +20,15 @@ ht-degree: 48%
 >
 >Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-I modelli per frammenti di contenuto in Adobe Experience Manager (AEM as a Cloud Service) definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
+I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
-Per utilizzare i modelli di frammento di contenuto:
-
-1. [Abilita la funzionalità modello Frammento di contenuto per un’istanza](/help/sites-cloud/administering/content-fragments/setup.md)
-1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model) i modelli per frammenti di contenuto
-1. [Abilitare i modelli di frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
-1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
-
-## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
-
-1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
-1. Utilizza **Crea** per aprire la procedura guidata.
-
-   >[!CAUTION]
-   >
-   >Se l&#39;utilizzo di [modelli per frammenti di contenuto non è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md), l&#39;opzione **Crea** non sarà disponibile.
-
-1. Specifica il **titolo modello**.
-Puoi anche definire varie proprietà; ad esempio, aggiungi **Tag**, **Descrizione**, seleziona **Abilita modello** per [abilitare il modello](#enabling-disabling-a-content-fragment-model) se necessario e definisci
-   **Pattern URL anteprima predefinito**.
-
-   >[!NOTE]
-   >
-   >Per informazioni dettagliate, consulta [Modello per frammenti di contenuto - Proprietà](#content-fragment-model-properties).
-
-   ![Titolo e descrizione](assets/cf-cfmodels-create.png)
-
-1. Utilizza **Crea** per salvare il modello vuoto. Un messaggio indica il successo dell&#39;azione. Puoi selezionare **Apri** per modificare immediatamente il modello, oppure **Fine** per tornare alla console.
+Questa pagina illustra come definire il modello per frammenti di contenuto utilizzando l’editor dedicato. Consulta [Gestione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) per ulteriori attività e opzioni disponibili dopo la creazione dei frammenti, tra cui [azioni disponibili nella Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [autorizzazione del modello nella cartella](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) e [pubblicazione del modello](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 
 >[!CAUTION]
 >
 >Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
 >
->Per ulteriori dettagli vedi [API GraphQL AEM per l&#39;utilizzo con frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
-
-### Modello per frammenti di contenuto - Proprietà {#content-fragment-model-properties}
-
-Queste proprietà vengono definite al momento della creazione di un modello e possono essere modificate in un secondo momento con l&#39;opzione **Proprietà** per il modello per frammenti di contenuto:
-
-* **Base**
-   * **Titolo modello**
-   * **Tag**
-   * **Descrizione**
-   * **Abilita modello**
-   * **Pattern URL anteprima predefinito**
-L&#39;editor frammento di contenuto consente agli autori di **visualizzare in anteprima** il contenuto in un&#39;applicazione front-end esterna. Una volta configurato il servizio **Anteprima**, aggiungere l&#39;URL per l&#39;applicazione front-end.
-
-     L’URL di anteprima deve seguire questo pattern:
-    `https://<preview_url>?param=${expression}`
-
-     Le espressioni disponibili sono:
-
-      * `${contentFragment.path}`
-      * `${contentFragment.model.path}`
-      * `${contentFragment.model.name}`
-      * `${contentFragment.variation}`
-      * `${contentFragment.id}`
-
-   * **Carica immagine**
-
-<!-- CHECK: currently under FT -->
-<!--
-* **GraphQL**
-  Define names relevant for GraphQL.
-  Changing the GraphQL API Name, or Query field names will impact client applications.
-  * **API Name**
-    Represents the GraphQL type and query field names in the GraphQL schema.
-  * **Single Query Field Name**
-    Represents the GraphQL single query field name in the GraphQL schema.
-  * **Multiple Query Field Name**
-    Represents the GraphQL multiple query field name in the GraphQL schema.
--->
+>Per ulteriori dettagli vedi [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ## Definizione del modello per frammenti di contenuto {#defining-your-content-fragment-model}
 
@@ -103,9 +38,12 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 >
 >La modifica di un modello già utilizzato da frammenti di contenuto esistenti può influire su tali frammenti dipendenti.
 
-1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
+1. Nella Console Frammenti di contenuto, seleziona il pannello per [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) e passa alla cartella contenente il modello per frammenti di contenuto.
 
-1. Passa alla cartella contenente il modello Frammento di contenuto.
+   >[!NOTE]
+   >
+   >Puoi anche aprire un modello direttamente dopo [averlo creato](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+
 1. Apri il modello che desideri **modificare** utilizzando l’azione rapida oppure selezionando il modello e quindi l’azione dalla barra degli strumenti.
 
    Una volta aperto, l’editor modelli mostra:
@@ -117,7 +55,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    >
    >Quando un campo è definito come **Obbligatorio**, l&#39;**Etichetta** indicata nel riquadro di sinistra è contrassegnata con un asterisco (**&#42;**).
 
-![Proprietà](assets/cf-cfmodels-empty-model.png)
+   ![Proprietà](assets/cf-cfmodels-empty-model.png)
 
 1. **Per aggiungere un campo**
 
@@ -127,7 +65,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    * Una volta aggiunto un campo al modello, il pannello di destra mostra le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
 
-      * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
+      * Molte proprietà sono auto-esplicative. Per ulteriori dettagli, vedere [Proprietà (tipi di dati)](#properties).
       * La digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà** - se vuoto, e può essere aggiornato manualmente in seguito.
 
         >[!CAUTION]
@@ -229,7 +167,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
      >
      Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
-## Proprietà {#properties}
+## Proprietà (tipi di dati) {#properties}
 
 Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune proprietà:
 
@@ -339,7 +277,7 @@ Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/head
 
 >[!NOTE]
 >
-L’AEM ha una protezione da recidiva per:
+AEM dispone di protezione di ricorrenza per:
 >
 * Riferimenti contenuto
 In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
@@ -351,7 +289,7 @@ Se crei una query approfondita che restituisce più frammenti di contenuto a cui
 >
 Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
 >
-Per ulteriori dettagli vedi [API GraphQL AEM per l&#39;utilizzo con frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
+Per ulteriori dettagli vedi [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Riferimento contenuto {#content-reference}
 
@@ -434,203 +372,3 @@ Specifica o rappresenta un percorso principale per tutti i frammenti a cui si fa
 È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento e può causare una finestra di dialogo vuota per la selezione del riferimento frammento.
 >
 In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituisce null.
-
-## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}
-
-Puoi **Abilitare** o **Disabilitare** i modelli per frammenti di contenuto per il controllo completo sul loro utilizzo.
-
-### Abilitazione di un modello per frammenti di contenuto {#enabling-a-content-fragment-model}
-
-Una volta creato, il modello deve essere abilitato in modo che:
-
-* Può essere selezionato quando si crea un frammento di contenuto.
-* Possibilità di utilizzarlo come riferimento all’interno di un modello per frammento di contenuto
-* Possibilità di utilizzarlo in GraphQL, affinché venga generato lo schema
-
-Per abilitare un modello contrassegnato come:
-
-* **Bozza**: nuova (mai abilitata).
-* **Disabilitato**: che è stato specificamente disabilitato
-
-puoi utilizzare l’opzione **Abilita** dalle seguenti aree:
-
-* Dalla barra degli strumenti superiore, quando è selezionato il modello richiesto.
-* Con l’azione rapida corrispondente (passando il mouse sul modello richiesto).
-
-![Abilitare un modello in stato Bozza o Disabilitato](assets/cf-cfmodels-status-enable.png)
-
-### Disabilitazione di un modello per frammenti di contenuto {#disabling-a-content-fragment-model}
-
-Un modello può anche essere disabilitato, con i seguenti risultati:
-
-* Il modello non sarà più disponibile come base per la creazione di *nuovi* frammenti di contenuto.
-* Tuttavia:
-   * Lo schema GraphQL continua a essere generato ed è ancora interrogabile (per evitare di influenzare l’API JSON).
-   * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
-* Non è più possibile fare riferimento al modello, ma i riferimenti esistenti vengono mantenuti intatti e possono ancora essere interrogati e restituiti dall’endpoint GraphQL.
-
-Per disabilitare un modello contrassegnato come **Abilitato**, utilizzare l&#39;opzione **Disabilita** da:
-
-* Dalla barra degli strumenti superiore, quando è selezionato il modello richiesto.
-* Con l’azione rapida corrispondente (passando il mouse sul modello richiesto).
-
-![Disattivare un modello abilitato](assets/cf-cfmodels-status-disable.png)
-
-## Consentire modelli per frammenti di contenuto nella cartella delle risorse {#allowing-content-fragment-models-assets-folder}
-
-Per implementare la governance dei contenuti, puoi configurare dei **Criteri** nella cartella Risorse per controllare quali modelli per frammenti di contenuto sono consentiti per la creazione di frammenti in tale cartella.
-
->[!NOTE]
->
-Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
-
-Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentiti**:
-
-1. Naviga e apri **Proprietà** per la cartella Risorse desiderata.
-
-1. Apri la scheda **Criteri**, dove puoi configurare:
-
-   * **Ereditato da`<folder>`**
-
-     I criteri vengono ereditati automaticamente durante la creazione di nuove cartelle secondarie; il criterio può essere riconfigurato (interrompendo l’ereditarietà) se le sottocartelle devono consentire modelli diversi dalla cartella principale.
-
-   * **Modelli per frammenti di contenuto consentiti per percorso**
-
-     Possono essere consentiti più modelli.
-
-   * **Modelli per frammenti di contenuto consentiti per tag**
-
-     Possono essere consentiti più modelli.
-
-   ![Criterio del modello per frammento di contenuto](assets/cf-cfmodels-policy-assets-folder.png)
-
-1. **Salva** eventuali modifiche.
-
-I modelli per frammenti di contenuto consentiti per una cartella vengono risolti come segue:
-* I **Criteri** dei **Modelli per frammenti di contenuto consentiti**.
-* Se vuoto, prova a determinare il criterio utilizzando le regole di ereditarietà.
-* Se la catena di ereditarietà non fornisce un risultato, consulta la sezione Configurazione di **Servizi cloud** per quella cartella (anche prima direttamente e poi tramite ereditarietà).
-* Se nessuno dei risultati di cui sopra fornisce risultati, allora non ci sono modelli consentiti per quella cartella.
-
-## Eliminazione di un modello per frammenti di contenuto {#deleting-a-content-fragment-model}
-
->[!CAUTION]
->
-L’eliminazione di un modello per frammenti di contenuto può influire sui frammenti dipendenti.
-
-Per eliminare un modello per frammenti di contenuto:
-
-1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-
-1. Passa alla cartella contenente il modello Frammento di contenuto.
-1. Seleziona il modello e poi **Elimina** dalla barra degli strumenti.
-
-   >[!NOTE]
-   >
-   Se al modello viene fatto riferimento, viene visualizzato un avviso che consente di eseguire le azioni appropriate.
-
-## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
-
-I modelli per frammenti di contenuto devono essere pubblicati quando/prima della pubblicazione di qualsiasi frammento di contenuto dipendente.
-
-Per pubblicare un modello per frammenti di contenuto:
-
-1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-
-1. Passa alla cartella contenente il modello Frammento di contenuto.
-1. Seleziona il modello e poi **Pubblica** dalla barra degli strumenti.
-Lo stato di pubblicazione viene visualizzato nella console.
-
-   >[!NOTE]
-   >
-   Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
-
-## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
-
-È possibile annullare la pubblicazione dei modelli per frammenti di contenuto se nessun frammento vi fa riferimento.
-
-Per annullare la pubblicazione di un modello per frammenti di contenuto:
-
-1. Passa a **Strumenti**, **Generale**, quindi apri **Modelli per frammenti di contenuto**.
-
-1. Passa alla cartella contenente il modello per frammenti di contenuto.
-1. Seleziona il modello e poi **Annulla pubblicazione** dalla barra degli strumenti.
-Lo stato di pubblicazione viene indicato nella console.
-
-Se tenti di annullare la pubblicazione di un modello attualmente utilizzato da uno o più frammenti, viene visualizzato un avviso di errore. Ad esempio:
-
-![Messaggio di errore di modello per frammenti di contenuto quando si annulla la pubblicazione di un modello in uso](assets/cf-cfmodels-unpublish-error.png)
-
-Il messaggio suggerisce di controllare il pannello [Riferimenti](/help/sites-cloud/authoring/basic-handling.md#references) per approfondire l&#39;analisi:
-
-![Modello per frammenti di contenuto nei riferimenti](assets/cf-cfmodels-references.png)
-
-## Modelli per frammenti di contenuto bloccati (pubblicati) {#locked-published-content-fragment-models}
-
-Questa funzione garantisce la governance dei modelli per frammenti di contenuto pubblicati.
-
-### La sfida {#the-challenge}
-
-* I modelli per frammenti di contenuto determinano lo schema per le query GraphQL in AEM.
-
-   * Gli schemi GraphQL AEM vengono creati non appena viene creato un modello per frammenti di contenuto e possono esistere sia nell’ambiente di creazione che in quello di pubblicazione.
-
-   * Gli schemi in fase di pubblicazione sono i più critici in quanto forniscono le basi per la consegna live di contenuti di frammenti di contenuto in formato JSON.
-
-* Possono verificarsi problemi quando i modelli per frammenti di contenuto vengono modificati o in altre parole modificate. Ciò significa che lo schema cambia, e questo può di conseguenza influenzare le query GraphQL esistenti.
-
-* L’aggiunta di nuovi campi a un modello per frammenti di contenuto non dovrebbe avere effetti negativi, in genere. Tuttavia, la modifica dei campi dati esistenti (ad esempio il nome) o l’eliminazione delle definizioni dei campi interromperà le query GraphQL esistenti quando richiedono questi campi.
-
-### Requisiti {#the-requirements}
-
-* Per sensibilizzare gli utenti sui rischi derivanti dalla modifica di modelli già utilizzati per la distribuzione di contenuti live, in altre parole, di modelli pubblicati.
-
-* Inoltre, per evitare modifiche non desiderate.
-
-Uno di questi criteri potrebbe interrompere le query se i modelli modificati vengono ripubblicati.
-
-### Soluzione {#the-solution}
-
-Per risolvere questi problemi, i modelli di frammento di contenuto sono *bloccati* in modalità di SOLA LETTURA su autore, non appena sono stati pubblicati. Questo stato è indicato da **Bloccato**:
-
-![Scheda del modello per frammenti di contenuto bloccato](assets/cf-cfmodels-locked.png)
-
-Quando il modello è **Bloccato** (in modalità di SOLA LETTURA), è possibile visualizzare il contenuto e la struttura dei modelli, ma non è possibile modificarli.
-
-Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
-
-* Console
-
-  Dalla console, è possibile gestire la modalità SOLA LETTURA con le azioni **Sblocca** e **Blocca** nella barra degli strumenti:
-
-  ![Barra degli strumenti del modello per frammenti di contenuto bloccato](assets/cf-cfmodels-locked.png)
-
-   * È possibile **Sbloccare** un modello per abilitare le modifiche.
-
-     Se selezioni **Sblocca** viene visualizzato un avviso ed è necessario confermare l&#39;azione **Sblocca**:
-     ![Messaggio relativo allo sblocco del modello per frammenti di contenuto](assets/cf-cfmodels-unlock-message.png)
-
-     Puoi quindi aprire il modello per la modifica.
-
-   * Puoi anche **Bloccare** successivamente il modello.
-   * La ripubblicazione del modello lo riporta immediatamente in modalità **Bloccato** (SOLA LETTURA).
-
-* Editor modelli
-
-   * Quando apri un modello bloccato, viene visualizzato un avviso e vengono presentate tre azioni: **Annulla**, **Visualizza sola lettura**, **Modifica**:
-
-     ![Messaggio relativo alla visualizzazione di un modello per frammenti di contenuto bloccato](assets/cf-cfmodels-editor-lock-message.png)
-
-   * Se si seleziona **Visualizza sola lettura**, è possibile visualizzare il contenuto e la struttura del modello:
-
-     ![Visualizza solo lettura: modello per frammenti di contenuto bloccato](assets/cf-cfmodels-editor-locked-view-only.png)
-
-   * Se selezioni **Modifica**, puoi modificare e salvare gli aggiornamenti:
-
-     ![Modifica: modello per frammenti di contenuto bloccato](assets/cf-cfmodels-editor-locked-edit.png)
-
-     >[!NOTE]
-     >
-     Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
-
-   * **Annulla** ti riporta alla console.

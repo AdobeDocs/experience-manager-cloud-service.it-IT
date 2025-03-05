@@ -1,20 +1,20 @@
 ---
 title: Utilizzo dei frammenti di contenuto (Assets - Frammenti di contenuto)
-description: Scopri come l’as a Cloud Service Frammenti di contenuto in Adobe Experience Manager (AEM) ti consente di progettare, creare, curare e utilizzare contenuti, ideali per l’authoring delle pagine e la distribuzione headless.
+description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service ti consentono di progettare, creare, curare e utilizzare contenuti, ideali per l’authoring delle pagine e la distribuzione headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2247'
 ht-degree: 57%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono inoltre essere utilizzati insieme a [Gestione multisito per consentire di riutilizzare il contenuto](#reusing-content-fragments-with-msm).
+Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-cloud/authoring/fragments/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless. Possono inoltre essere utilizzati insieme a [Gestione multisito per consentire di riutilizzare il contenuto](#reusing-content-fragments-with-msm).
 
 I frammenti di contenuto contengono contenuto strutturato:
 
@@ -39,7 +39,7 @@ I frammenti di contenuto possono essere consegnati anche in formato JSON, utiliz
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **Assets**. Questa sezione riguarda la gestione dalla console **Assets**.
+>I frammenti di contenuto e i modelli di frammenti di contenuto ora sono gestiti principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se i frammenti di contenuto possono ancora essere gestiti dalla console **Assets** e i modelli di frammenti di contenuto dalla console **Strumenti**. Questa sezione riguarda la gestione dalle console **Assets** e **Tools**.
 >
 >Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
 
@@ -92,7 +92,7 @@ Questi frammenti di contenuto possono quindi essere assemblati per fornire esper
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
 >
->Per ulteriori informazioni, vedere anche [Informazioni sui frammenti di contenuto e sui frammenti di esperienza nell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
+>Per ulteriori informazioni, vedere anche [Informazioni sui frammenti di contenuto e sui frammenti di esperienza in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it#content-fragments).
 
 ## Frammenti di contenuto e Content Services {#content-fragments-and-content-services}
 

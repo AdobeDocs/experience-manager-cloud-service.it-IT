@@ -5,7 +5,7 @@ landing-page-description: Scopri come utilizzare e amministrare Headless in Adob
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 94%
@@ -44,9 +44,9 @@ AEM as a Cloud Service è uno strumento flessibile per il modello di implementaz
 1. **Frammenti di contenuto**
    * Un frammento di contenuto viene creato in base a un modello di frammenti di contenuto.
    * I frammenti di contenuto vengono creati dagli autori di contenuti tramite l’editor di frammenti di contenuto di AEM.
-   * I frammenti di contenuto sono memorizzati come AEM Assets, ma possono essere gestiti tramite la console Risorse o la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * I frammenti di contenuto sono memorizzati come AEM Assets, ma possono essere gestiti tramite la console Risorse o la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **API per la distribuzione dei contenuti**
-   * Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
+   * Consulta [API di AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md) per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti.
 
    * La distribuzione diretta dei contenuti è possibile anche mediante l’[esportazione JSON del componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
@@ -65,7 +65,7 @@ Sono disponibili diverse risorse per iniziare a utilizzare le funzionalità head
 
 ## Confronto tra headful e headless {#headful-headless}
 
-Questa guida si concentra sul modello completo di implementazione headless di AEM. Tuttavia, la scelta tra headful e headless non deve essere necessariamente binaria nell’AEM. Le funzioni headless consentono di gestire e distribuire contenuti a più punti di contatto, consentendo agli autori di contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
+Questa guida si concentra sul modello completo di implementazione headless di AEM. Tuttavia, headful e headless non devono essere necessariamente una scelta binaria in AEM. Le funzioni headless consentono di gestire e distribuire contenuti a più punti di contatto, consentendo agli autori di contenuti di modificare le applicazioni a pagina singola. Tutto questo direttametne in AEM.
 
 >[!TIP]
 >

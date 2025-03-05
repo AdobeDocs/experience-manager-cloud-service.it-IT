@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 44%
+source-wordcount: '2629'
+ht-degree: 40%
 
 ---
 
@@ -22,9 +22,18 @@ ht-degree: 44%
 
 Scopri come gestire i **Frammenti di contenuto** in Adobe Experience Manager (AEM) as a Cloud Service, dalla [Console Frammenti di contenuto](#content-fragments-console) dedicata e dall&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Questi frammenti di contenuto possono essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
 
+>[!IMPORTANT]
+>
+>Varie funzioni della Console Frammenti di contenuto sono disponibili tramite il programma per utenti esperti.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
->Se necessario, il team del progetto può personalizzare la console e l’editor. Per ulteriori dettagli, consulta [Personalizzazione della console e dell&#39;editor dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md).
+>Questa pagina descrive la sezione della console che visualizza (solo) Frammenti di contenuto. Per gli altri pannelli, vedi:
+>
+>* [Gestione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Visualizzazione e gestione di Assets nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 Dopo aver definito i [modelli per frammenti di contenuto](#creating-a-content-model) puoi utilizzarli per:
 
@@ -45,41 +54,13 @@ Dopo aver definito i [modelli per frammenti di contenuto](#creating-a-content-mo
 >
 >I frammenti di contenuto sono memorizzati come **Risorse**. Sono gestite principalmente dalla console **Frammenti di contenuto**, ma la gestione è possibile anche dalla console [Assets](/help/assets/content-fragments/content-fragments-managing.md).
 
-## Console Frammenti di contenuto {#content-fragments-console}
+## Struttura e gestione di base dei frammenti di contenuto nella console {#basic-structure-handling-content-fragments-console}
 
-La console Frammenti di contenuto è dedicata a gestione, ricerca e creazione di frammenti di contenuto. È stata ottimizzata per l’utilizzo in un contesto headless, ma anche durante la creazione di frammenti di contenuto da usare nell’authoring delle pagine.
+Puoi utilizzare il pannello all&#39;estrema sinistra della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) per selezionare **Frammenti di contenuto** come tipo di risorsa per visualizzare, sfogliare e gestire:
 
-La console Frammenti di contenuto consente di accedere direttamente ai frammenti e alle attività correlate. È possibile accedere direttamente alla console dal livello superiore della navigazione globale.
-
-![Navigazione globale - Console Frammenti di contenuto](assets/cf-managing-global-navigation.png)
-
-Per ulteriori informazioni consulta:
-
-* [Struttura e gestione di base della console Frammenti di contenuto](#basic-structure-handling-content-fragments-console)
-
-* [Informazioni fornite sui frammenti di contenuto](#information-content-fragments)
-
-* [Azioni relative a un frammento di contenuto nella console Frammenti di contenuto](#actions-selected-content-fragment)
-
-* [Seleziona le colonne visualizzate nella console](#select-columns-console)
-
-* [Cercare e filtrare nella console Frammenti di contenuto](#filtering-fragments)
-
-* Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) è disponibile per questa console
-
->[!NOTE]
->
->In questa console vengono visualizzati solo i frammenti di contenuto. Non visualizza altri tipi di risorse, come immagini e video.
-
->[!CAUTION]
->
->Questa console è *solo* disponibile nell&#39;as a Cloud Service online di Adobe Experience Manager (AEM).
-
-### Struttura e gestione di base della console {#basic-structure-handling-content-fragments-console}
+![Console Frammenti di contenuto - navigazione](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 Selezionando **Frammenti di contenuto** si apre la console in una nuova scheda.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Console Frammenti di contenuto - Panoramica](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ Nella console puoi osservare tre aree principali:
    * Mostra anche la tua organizzazione IMS
    * Fornisce varie [azioni](#actions-unselected)
 * Pannello a sinistra
+   * Qui puoi comprimere o espandere i collegamenti ai pannelli
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
    * Può essere ridimensionato per mostrare le cartelle nidificate
-   * Puoi scegliere se visualizzare i frammenti di contenuto o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+   * Oltre ai frammenti di contenuto, puoi visualizzare [modelli di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); puoi anche comprimere o espandere i collegamenti ai pannelli
 * Pannello principale/destro; da qui puoi:
    * Visualizza l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:
@@ -114,58 +96,9 @@ In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ord
       * Seleziona uno o più frammenti per ulteriori [azioni](#actions-selected-content-fragment)
    * Utilizza la casella [Ricerca](#searching-fragments)
    * Apri il [pannello dei filtri](#filtering-fragments)
+   * Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) è disponibile per questa console
 
-### Azioni {#actions}
-
-Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
-
-* Varie azioni sono [disponibili direttamente dalla console](#actions-unselected)
-* È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment)
-
-#### Azioni (non selezionate) {#actions-unselected}
-
-Alcune azioni sono disponibili dalla console senza selezionare un frammento di contenuto specifico:
-
-* **[Creare](#creating-a-content-fragment)** un nuovo frammento di contenuto
-* [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
-* [Ricercare](#searching-fragments) i frammenti di contenuto
-* [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#select-columns-console)
-* Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
-
-  >[!NOTE]
-  >
-  >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
-  >
-  >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
-  >* direttamente dal riquadro **Navigazione** globale
-
-#### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
-
-Selezionando un frammento specifico si apre una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
-
-<!-- CQDOC-21349: screenshot -->
-
-![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[Apri in un nuovo editor](#editing-the-content-of-your-fragment)**
-* **[Apri](/help/assets/content-fragments/content-fragments-variations.md)** (nell&#39;editor originale)
-* **[Pubblica](#publishing-and-previewing-a-fragment)** (e **[Annulla pubblicazione](#unpublishing-a-fragment)**)
-* **[Gestisci tag](#manage-tags)**
-* **[Copia](/help/assets/manage-digital-assets.md)**
-* **[Sposta](/help/assets/manage-digital-assets.md)**
-* **[Rinomina](/help/assets/manage-digital-assets.md)**
-* **[Elimina](#deleting-a-fragment)**
-* **[Sostituisci](#find-and-replace)**
-
->[!NOTE]
->
->Utilizza **Apri** per aprire il frammento selezionato nell&#39;editor *originale*.
-
->[!NOTE]
->
->Azioni quali Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
-
-### Informazioni fornite sui frammenti di contenuto {#information-content-fragments}
+## Informazioni fornite sui frammenti di contenuto {#information-content-fragments}
 
 Il pannello principale (vista tabella) della console, a destra, fornisce una serie di informazioni sui frammenti di contenuto. Alcuni elementi forniscono anche collegamenti diretti a ulteriori azioni e/o informazioni:
 
@@ -214,6 +147,53 @@ Passando il puntatore del mouse sul nome della cartella verrà visualizzato il p
 
      ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
 
+## Azioni {#actions}
+
+Nella console sono disponibili diverse azioni utilizzabili direttamente o dopo aver selezionato un frammento specifico:
+
+* Varie azioni sono [disponibili direttamente dalla console](#actions-unselected)
+* È possibile [selezionare uno o più frammenti di contenuto per visualizzare le azioni disponibili](#actions-selected-content-fragment)
+
+### Azioni (non selezionate) {#actions-unselected}
+
+Alcune azioni sono disponibili dalla console senza selezionare un frammento di contenuto specifico:
+
+* **[Creare](#creating-a-content-fragment)** un nuovo frammento di contenuto
+* [Filtrare](#filtering-fragments) i frammenti di contenuto in base a una selezione di predicati e salvare il filtro per utilizzi futuri
+* [Ricercare](#searching-fragments) i frammenti di contenuto
+* [Personalizzare la vista tabella per mostrare le colonne di informazioni selezionate](#select-columns-console)
+* Utilizzare **Apri in Assets** per aprire direttamente la posizione corrente nella console **Assets**
+
+  >[!NOTE]
+  >
+  >La console **Assets** viene utilizzata per accedere alle risorse, ad esempio immagini, video e così via.  È possibile accedere a questa console:
+  >
+  >* utilizzando il collegamento **Apri in Assets** (nella console Frammenti di contenuto);
+  >* direttamente dal riquadro **Navigazione** globale
+
+### Azioni per un frammento di contenuto (selezionato) {#actions-selected-content-fragment}
+
+Selezionando un frammento specifico si apre una barra degli strumenti incentrata sulle azioni disponibili per tale frammento. Puoi inoltre selezionare più frammenti; la selezione delle azioni verrà regolata di conseguenza.
+
+![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[Apri in un nuovo editor](#editing-the-content-of-your-fragment)**
+* **[Apri](/help/assets/content-fragments/content-fragments-variations.md)** (nell&#39;editor originale)
+* **[Pubblica](#publishing-and-previewing-a-fragment)** (e **[Annulla pubblicazione](#unpublishing-a-fragment)**)
+* **[Gestisci tag](#manage-tags)**
+* **[Copia](/help/assets/manage-digital-assets.md)**
+* **[Sposta](/help/assets/manage-digital-assets.md)**
+* **[Rinomina](/help/assets/manage-digital-assets.md)**
+* **[Elimina](#deleting-a-fragment)**
+* **[Sostituisci](#find-and-replace)**
+
+>[!NOTE]
+>
+>Utilizza **Apri** per aprire il frammento selezionato nell&#39;editor *originale*.
+
+>[!NOTE]
+>
+>Azioni quali Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina e Copia attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
 
 ## Creare frammenti di contenuto {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ Prima di creare un frammento di contenuto, è necessario creare il modello per f
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-È necessario abilitare e creare i [modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) prima di creare frammenti di contenuto con struttura.
+È necessario abilitare e creare i [modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) prima di creare frammenti di contenuto con struttura.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ Per creare un frammento di contenuto:
 
 ## Stati dei frammenti di contenuto {#statuses-content-fragments}
 
-Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) e nell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md):
+Durante la sua esistenza, un frammento di contenuto può avere diversi stati, come mostrato nella [Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) e nell&#39;[Editor frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **Nuovo** (grigio)
 Nell’editor dei frammenti di contenuto è stato creato un nuovo frammento di contenuto, che tuttavia non ha contenuto in quanto non è mai stato modificato né aperto.
@@ -319,7 +299,7 @@ Puoi pubblicare i frammenti di contenuto in:
 
 >[!CAUTION]
 >
->Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model).
+>Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
@@ -382,8 +362,6 @@ Quando viene visualizzata la relativa finestra di dialogo, è possibile selezion
 
 ## Trova e sostituisci {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 L&#39;azione **Sostituisci** è disponibile nella barra degli strumenti superiore per trovare e sostituire il testo specificato nei frammenti di contenuto selezionati.
 
 ![Trova e sostituisci](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ Prima della sostituzione, vengono controllati i criteri di convalida e l’utent
 >L’azione Trova e sostituisci può essere eseguita solo su un massimo di 20 frammenti di contenuto selezionati (alla volta).
 >
 >Se selezioni più di 20 frammenti di contenuto, verrà visualizzato il messaggio **Impossibile trovare e sostituire**.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Conferma sostituzione](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ Il pannello Filtro offre:
 
 Una volta selezionata, vengono visualizzate le opzioni **Filtro in base a** (nella casella di ricerca). Possono essere deselezionati da lì. Ad esempio:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Console Frammenti di contenuto - Filtro](assets/cf-managing-console-filter.png)
 
 ### Filtro rapido {#fast-filtering}
@@ -488,13 +462,9 @@ Una volta selezionato, questo verrà visualizzato come un predicato del filtro e
 
 La casella di ricerca supporta la ricerca full-text. Immetti i termini di ricerca nella casella di ricerca:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Console Frammenti di contenuto - Ricerca](assets/cf-managing-console-search-specification.png)
 
 Fornirà i risultati selezionati:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Console Frammenti di contenuto - Risultati della ricerca](assets/cf-managing-console-search-results.png)
 

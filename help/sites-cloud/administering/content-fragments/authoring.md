@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 6%
@@ -50,7 +50,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
 * Barra degli strumenti superiore: per informazioni chiave e azioni
    * Collegamento alla Console Frammenti di contenuto (icona Home)
    * Informazioni sul modello e sulla cartella
-   * collegamenti a [Anteprima (se per il modello è configurato il modello URL di anteprima predefinito)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+   * collegamenti a [Anteprima (se per il modello è configurato il modello URL di anteprima predefinito)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
    * [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) azioni
    * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
    * **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** del frammento e le ultime informazioni salvate
@@ -508,7 +508,7 @@ L’editor dei frammenti di contenuto offre agli autori la possibilità di visua
 Per utilizzare questa funzione, devi innanzitutto:
 
 * Collabora con il tuo team IT per configurare l’applicazione front-end esterna che eseguirà il rendering del frammento di contenuto consumando il relativo output JSON.
-* Quando l&#39;applicazione front-end esterna è configurata, il **Pattern URL di anteprima predefinito** deve essere definito come [proprietà del modello per frammenti di contenuto appropriato](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* Quando l&#39;applicazione front-end esterna è configurata, il **Pattern URL di anteprima predefinito** deve essere definito come [proprietà del modello per frammenti di contenuto appropriato](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
 
 Una volta definito l&#39;URL, il pulsante **Anteprima** è attivo. Puoi selezionare questo pulsante per avviare l’applicazione esterna (in una scheda separata) per eseguire il rendering del frammento di contenuto.
 

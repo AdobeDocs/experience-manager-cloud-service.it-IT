@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 99%
 
 ---
 
@@ -117,21 +117,21 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
-      * [Definizione del modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model)
+      * [Definizione del modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#enabling-disabling-a-content-fragment-model)
+      * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#deleting-a-content-fragment-model)
+      * [Eliminazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#deleting-a-content-fragment-model)
 
-      * [Pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model)
+      * [Pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
-      * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#unpublishing-a-content-fragment-model)
+      * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#locked-published-content-fragment-models)
+      * [Modelli per frammenti di contenuto bloccati](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#locked-content-fragment-models)
 
 * Guide introduttive
 

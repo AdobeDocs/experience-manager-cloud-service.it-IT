@@ -1,22 +1,35 @@
 ---
 title: Visualizzazione e gestione di Assets nella console Frammenti di contenuto
-description: Scopri come visualizzare e gestire Assets nella **Console Frammenti di contenuto** di Adobe Experience Manager as a Cloud Service.
+description: Scopri come visualizzare e gestire Assets nella Console Frammenti di contenuto di Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 6%
+source-wordcount: '277'
+ht-degree: 5%
 
 ---
 
 # Visualizzazione e gestione di Assets nella console Frammenti di contenuto {#viewing-managing-assets-content-fragments-console}
 
-Per impostazione predefinita, la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) di Adobe Experience Manager as a Cloud Service presenta i tuoi [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).
+Per impostazione predefinita, la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) di Adobe Experience Manager as a Cloud Service presenta i tuoi [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md).
 
 Tuttavia, puoi anche visualizzare e gestire tutti gli altri tipi di **Assets** in questa **Console Frammenti di contenuto**.
+
+>[!IMPORTANT]
+>
+>Varie funzioni della Console Frammenti di contenuto sono disponibili tramite il programma per utenti esperti.
+>
+>Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!NOTE]
+>
+>Questa pagina descrive la sezione della console in cui viene visualizzato (solo) Assets. Per gli altri pannelli, vedi:
+>
+>* [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [Gestione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
 >[!NOTE]
 >
@@ -42,6 +55,7 @@ Dalla visualizzazione **Assets** della console Frammenti di contenuto è possibi
 * [Crea una cartella](/help/assets/manage-digital-assets.md#creating-folders)
 * [Carica risorse](/help/assets/add-delete-assets-view.md)
 * Configura il tipo di visualizzazione (Elenco, Griglia, Galleria, Cascata) e, se necessario, le colonne visibili
+* Una selezione di [scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) è disponibile per questa console
 
 Puoi anche eseguire azioni su uno o più Assets selezionati:
 
@@ -50,7 +64,7 @@ Puoi anche eseguire azioni su uno o più Assets selezionati:
 Vedi [Gestione di Assets](/help/assets/manage-organize-assets-view.md) per ulteriori dettagli su:
 
 * Dettagli
-* Scarica
+* Download
 * Condividi collegamento
 * Elimina
 * Copiare

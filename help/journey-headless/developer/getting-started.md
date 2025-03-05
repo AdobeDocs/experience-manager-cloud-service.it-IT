@@ -5,8 +5,8 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
 
@@ -295,7 +295,7 @@ Sebbene sia consigliabile spostarsi nella parte successiva del percorso per lo s
 * [Gestore multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
 * [Flussi di lavoro AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) - Documentazione tecnica per i frammenti di contenuto.
-* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.
 * [Documentazione tecnica GraphQL](https://graphql.org) - Definizione di GraphQL (collegamento esterno)
 * [API GraphQL](/help/headless/graphql-api/content-fragments.md) - Documentazione tecnica che spiega come creare richieste di accesso e distribuire frammenti di contenuto
 * [API REST di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) - Documentazione tecnica che spiega come creare e modificare Frammenti di contenuto (e altre risorse)

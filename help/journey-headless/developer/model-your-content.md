@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
@@ -271,7 +271,7 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti basandoti
 
 * [Utilizzo di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md): la pagina iniziale per i frammenti di contenuto
    * [Frammenti di contenuto nel Browser configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser): abilitare la funzionalità Frammento di contenuto nel browser configurazioni
-   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md): creazione e modifica di modelli per frammenti di contenuto
+   * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md): creazione e modifica di modelli per frammenti di contenuto
    * [Gestione dei frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md): creazione e authoring dei frammenti di contenuto; questa pagina ti porta ad altre sezioni dettagliate.
 * [Schemi GraphQL AEM](access-your-content.md): come GraphQL realizza i modelli
 * [La struttura del frammento di contenuto di esempio](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)

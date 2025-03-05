@@ -4,7 +4,7 @@ description: I componenti possono essere adattati per generare l’esportazione 
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -79,6 +79,6 @@ Ad esempio, consulta l’implementazione del modello Sling del componente core I
 ## Documentazione correlata {#related-documentation}
 
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

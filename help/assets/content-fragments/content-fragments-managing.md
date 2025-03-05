@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 65%
@@ -39,7 +39,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **Assets**. Questa sezione riguarda la gestione dalla console **Assets**.
+>Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **Assets**. Questa sezione riguarda la gestione dalla console **Assets**.
 >
 >Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
 
@@ -198,7 +198,7 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
    * **Modificato**: arancione
    * **Disattivato**: rosso
 
-* Un pulsante consente di **provare un nuovo editor**, aprendo direttamente *nuovo* [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) accessibile tramite la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Un pulsante consente di **provare un nuovo editor**, aprendo direttamente *nuovo* [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) accessibile tramite la [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
   >[!WARNING]
   >
