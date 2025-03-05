@@ -3,9 +3,9 @@ title: Filtri di ricerca personalizzati
 description: Scopri come personalizzare il modulo dei filtri di ricerca
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 8d3059f9cb92dc6c65eec33dcc69eed76b61546c
+source-git-commit: 0484b8ac158f0590d5ada7536cf8b547c71ab686
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1280'
 ht-degree: 13%
 
 ---
@@ -376,7 +376,7 @@ Ogni elemento filtro è associato a un set di proprietà. Le seguenti proprietà
         <ul>
         <li>Fai clic su <b>aggiungi</b> per aggiungere un nuovo valore. 
         <li>Fai clic su <span>✎</span> per modificare l'etichetta. 
-        <li>Fare clic su <img src="assets/do-not-localize/delete-icon.png"> per eliminare il valore dell'opzione. 
+        <li>Fare clic su <span>??</span> per eliminare il valore dell'opzione. 
         <li>Fai clic su <b>Modifica</b> per modificare le opzioni di modifica. 
         <li>Potete anche modificare la sequenza di opzioni tenendole per mano.
         </td>
