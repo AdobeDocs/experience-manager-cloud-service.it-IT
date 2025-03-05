@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 7%
+source-wordcount: '2847'
+ht-degree: 6%
 
 ---
 
@@ -312,10 +312,11 @@ In alternativa, è possibile [selezionare **Crea nuovo frammento** per aprire la
 
 #### Immagini di riferimento {#reference-images}
 
-Nei campi **Riferimento contenuto** è possibile:
+Nei campi **Riferimento contenuto** puoi:
 
-* risorse di riferimento già esistenti nell’archivio
-* caricali direttamente nel campo; questo evita la necessità di utilizzare la console **Assets** per caricare
+* risorse di riferimento già esistenti nell’archivio locale
+* fare riferimento alle risorse che risiedono in un archivio remoto
+* carica le risorse direttamente nel campo; questo evita la necessità di utilizzare la console **Assets** per caricare
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ Nei campi **Riferimento contenuto** è possibile:
   >* hanno un **Percorso principale** definito (nel [Modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Specifica dove verrà memorizzata l&#39;immagine.
   >* includi **Immagine** nell&#39;elenco dei tipi di contenuto accettati
 
-Per aggiungere una risorsa, puoi effettuare le seguenti operazioni:
+##### Assets locale di riferimento {#reference-local-assets}
+
+Per fare riferimento a una risorsa locale, puoi effettuare le seguenti operazioni:
 
 * trascina e rilascia il nuovo file di risorse direttamente (ad esempio, dal file system) nel campo **Riferimento contenuto**
 * utilizza l&#39;azione **Aggiungi risorsa**, quindi seleziona **Sfoglia Assets** o **Carica** per aprire il selettore appropriato da utilizzare:
 
   ![Editor frammento di contenuto - Aggiungi opzioni risorsa](assets/cf-authoring-add-asset-options.png)
+
+##### Riferimento ad Assets remoto {#reference-remote-assets}
+
+Per fare riferimento a risorse remote:
+
+1. Specifica l&#39;**archivio** remoto durante la ricerca delle risorse:
+
+   ![Editor frammento di contenuto - Seleziona risorsa da remoto](assets/cf-authoring-remote-asset-01.png)
+
+2. Dopo la selezione, la posizione può essere visualizzata nelle informazioni sulla risorsa:
+
+   ![Editor frammento di contenuto - Risorsa da archivio remoto](assets/cf-authoring-remote-asset-02.png)
+
+###### Assets remoto - Limitazioni {#remote-assets-limitations}
+
+Esistono alcune limitazioni quando si fa riferimento a risorse remote:
+
+* Solo [risorse approvate](/help/assets/approve-assets.md) sono disponibili per riferimento da un archivio risorse remoto.
+
+* Se una risorsa a cui si fa riferimento viene rimossa dall’archivio remoto, si verifica un errore in Riferimento al contenuto.
+
+* Tutti gli archivi di risorse di consegna a cui l’utente ha accesso sono disponibili per la selezione, l’elenco disponibile non può essere limitato.
+
+* L’istanza di AEM e l’istanza remota del repository di risorse devono avere la stessa versione.
+
+* Nessun metadati di risorse viene esposto tramite l’API di gestione o l’API di consegna. Per recuperare i dettagli dei metadati della risorsa, devi utilizzare l’API Asset Metadata:
+
+   * i metadati delle singole risorse: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * ottenere informazioni in blocco sui metadati utilizzando l&#39;API di ricerca (sperimentale): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>Vedi anche [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Dynamic Media per il supporto di risorse OpenAPI (Assets remoto)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Pagine di riferimento {#reference-pages}
 

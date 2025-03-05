@@ -4,10 +4,10 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '5814'
-ht-degree: 76%
+source-wordcount: '6021'
+ht-degree: 73%
 
 ---
 
@@ -39,11 +39,11 @@ L’utilizzo dell’API GraphQL in AEM consente la consegna efficiente di Framme
 
 >[!NOTE]
 >
->Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
+>Consulta [API di AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md) per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti.
 
 >[!NOTE]
 >
->Per informazioni aggiornate sulle API Experience Manager, visita anche [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Per informazioni aggiornate sulle API di Experience Manager, visita anche [API di Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## API GraphQL {#graphql-api}
 
@@ -130,7 +130,7 @@ Le [Query persistenti](/help/headless/graphql-api/persisted-queries.md) sono il 
 
 Le query GraphQL con l’utilizzo di POST non sono consigliate in quanto non sono memorizzate nella cache. Quindi, in un’istanza predefinita, Dispatcher è configurato per bloccarle.
 
-Anche se GraphQL supporta le richieste di GET, queste possono raggiungere dei limiti (ad esempio, la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
+Anche se GraphQL supporta le richieste GET, queste possono raggiungere dei limiti (ad esempio, la lunghezza dell’URL) che possono essere evitati utilizzando query persistenti.
 
 Per ulteriori dettagli, vedere [Abilitare la memorizzazione nella cache delle query persistenti](/help/headless/deployment/dispatcher-caching.md).
 
@@ -252,7 +252,7 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
    * C&#39;è anche da tenere presente l’impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, è possibile configurare un campo di testo a riga singola per contenere più testi a riga singola scegliendo `multifield` dall&#39;elenco a discesa.
 
-* GraphQL for AEM genera anche diversi [campi di supporto](#helper-fields).
+* GraphQL per AEM genera anche diversi [campi di supporto](#helper-fields).
 
 ### Tipi di dati {#data-types}
 
@@ -317,7 +317,7 @@ Vedi [Query di esempio: un singolo frammento di città specifico](/help/headless
 
 #### ID (UUID) {#id-uuid}
 
-Il campo ID viene utilizzato anche come identificatore nel GraphQL dell’AEM. Rappresenta il percorso della risorsa Frammento di contenuto all’interno dell’archivio AEM, ma invece del percorso effettivo contiene un UUID che rappresenta la risorsa. Abbiamo scelto questo come identificatore di un frammento di contenuto in quanto:
+Il campo ID viene utilizzato anche come identificatore in AEM GraphQL. Rappresenta il percorso della risorsa Frammento di contenuto all’interno dell’archivio AEM, ma invece del percorso effettivo contiene un UUID che rappresenta la risorsa. Abbiamo scelto questo come identificatore di un frammento di contenuto in quanto:
 
 * è univoco all’interno di AEM,
 * può essere facilmente recuperato,
@@ -775,11 +775,11 @@ La soluzione GraphQL consente di:
 
 >[!NOTE]
 >
->È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
+>È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per le risorse Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
 >* `_dynamicUrl`: una risorsa DAM
 >* `_dmS7Url` : risorsa Dynamic Media
 > 
->Se la risorsa a cui si fa riferimento è una risorsa DAM, il valore per `_dmS7Url` sarà `null`. Consulta [Consegna risorse Dynamic Media tramite URL nelle query GraphQL](#dynamic-media-asset-delivery-by-url).
+>Se la risorsa a cui si fa riferimento è una risorsa DAM, il valore per `_dmS7Url` sarà `null`. Consulta [Recapito risorse Dynamic Media tramite URL nelle query GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Struttura della richiesta di trasformazione {#structure-transformation-request}
 
@@ -955,9 +955,9 @@ Esistono le seguenti limitazioni:
    * Nessuna memorizzazione in cache sull&#39;authoring
    * Memorizzazione in cache al momento della pubblicazione - tempo massimo di 10 minuti (non può essere modificato dal client)
 
-## Consegna delle risorse Dynamic Media tramite URL nelle query GraphQL{#dynamic-media-asset-delivery-by-url}
+## Consegna di risorse Dynamic Media tramite URL nelle query GraphQL{#dynamic-media-asset-delivery-by-url}
 
-GraphQL per frammenti di contenuto AEM consente di richiedere un URL a una risorsa AEM Dynamic Media (Scene7) (a cui fa riferimento un **riferimento contenuto**).
+GraphQL per frammenti di contenuto di AEM consente di richiedere un URL a una risorsa AEM Dynamic Media (Scene7) (a cui fa riferimento un **riferimento contenuto**).
 
 La soluzione GraphQL consente di:
 
@@ -980,12 +980,12 @@ La soluzione GraphQL consente di:
 
 >[!NOTE]
 >
->È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per quelle Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
+>È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per le risorse Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
 >
 >* `_dmS7Url` : risorsa Dynamic Media
 >* `_dynamicUrl`: una risorsa DAM
 > 
->Se la risorsa a cui si fa riferimento è una risorsa di Dynamic Media, il valore per `_dynamicURL` sarà `null`. Consulta [consegna di immagini ottimizzate per il web nelle query GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Se la risorsa a cui si fa riferimento è una risorsa Dynamic Media, il valore per `_dynamicURL` sarà `null`. Consulta [consegna di immagini ottimizzate per il web nelle query GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimento immagine{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
@@ -1055,7 +1055,7 @@ query allTeams {
 }
 ```
 
-### Query di esempio per la consegna di risorse Dynamic Media per URL, con ritaglio avanzato {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+### Query di esempio per la consegna di risorse Dynamic Media tramite URL, con ritaglio avanzato {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
 
 Di seguito è riportato un esempio di query:
 
@@ -1084,6 +1084,110 @@ query allTeams {
   }
 } 
 ```
+
+## Supporto di Dynamic Media per risorse OpenAPI (Assets remoto) {#dynamic-media-for-openapi-asset-support}
+
+L&#39;integrazione di [Risorse remote](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) consente di fare riferimento a Assets, che non sono locali per l&#39;istanza AEM corrente, dall&#39;Editor frammento di contenuto. È implementato da Dynamic Media per il supporto di risorse OpenAPI nell’Editor frammento di contenuto e nel JSON GraphQL.
+
+### Query di esempio per Dynamic Media per il supporto di risorse OpenAPI (Assets remoto) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+Di seguito è riportato un esempio di richiesta:
+
+* per illustrare il concetto di riferimento alle risorse remote
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* la risposta
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limitazioni**
+
+Le limitazioni attuali sono:
+
+* Il recapito GraphQL supporta solo `repositoryId` e `assetId` (gli altri metadati della risorsa non vengono restituiti)
+
+  >[!NOTE]
+  >
+  >L&#39;URL completo deve quindi essere costruito sul lato client, in base all&#39;[API di consegna risorse](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Solo le *risorse approvate* saranno disponibili come riferimento dagli archivi remoti
+* Se una risorsa a cui si fa riferimento viene rimossa dall’archivio remoto, il riferimento alla risorsa per frammenti di contenuto non verrà corretto.
+* Tutti gli archivi di risorse per la consegna a cui l’utente ha accesso saranno disponibili per la selezione e l’elenco disponibile non può essere limitato.
+* Sia l’istanza di AEM che l’istanza del repository di risorse remote devono avere la stessa versione.
+* Nessun metadati di risorsa esposto tramite [API di gestione](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) e [API di consegna](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Per recuperare i dettagli dei metadati della risorsa, devi utilizzare l’API Asset Metadata.
 
 ## GraphQL per AEM: riepilogo delle estensioni {#graphql-extensions}
 
@@ -1164,8 +1268,8 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
    * Per la consegna delle immagini:
 
-      * `_authorURL`: l&#39;URL completo della risorsa immagine nell&#39;istanza di creazione AEM
-      * `_publishURL`: l&#39;URL completo della risorsa immagine sul Publish AEM
+      * `_authorURL`: l&#39;URL completo della risorsa immagine su AEM Author
+      * `_publishURL`: URL completo della risorsa immagine in AEM Publish
 
       * Per [consegna di immagini ottimizzate per il web](#web-optimized-image-delivery-in-graphql-queries) (di risorse DAM):
 
