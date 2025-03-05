@@ -3,13 +3,13 @@ title: Configurazione dell’autenticazione del sito per l’authoring dei conte
 description: Scopri come AEM Live supporta l’autenticazione basata su token e come configurare AEM per l’utilizzo dell’autenticazione con l’authoring WYSIWYG.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione dell’autenticazione del sito per l’authoring dei contenuti {#site-authentication}
 
@@ -46,11 +46,13 @@ Questi elementi sono necessari per completare la configurazione dell’autentica
 Una volta configurata l’autenticazione del sito, puoi abilitarla nell’ambiente di authoring AEM.
 
 1. Accedi all&#39;istanza di authoring di AEM e vai a **Strumenti** -> **Servizi cloud** -> **Configurazione Edge Delivery Services** e seleziona la configurazione creata automaticamente per il tuo sito, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
-1. Nella finestra **Configurazione Edge Delivery Services**, selezionare la scheda **Autenticazione** e fornire i seguenti valori, che sono stati rilevati al momento della configurazione dell&#39;autenticazione del sito.
-
-   * **ID account tecnico**
-   * **Token di autenticazione sito**
+1. Nella finestra **Configurazione Edge Delivery Services**, seleziona la scheda **Autenticazione** e fornisci il **Token di autenticazione sito**, che hai copiato in precedenza.
 
    ![Configurazione Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Verifica che l&#39;**ID account tecnico** corrisponda a quello copiato in precedenza.
+
+   * Questo campo è di sola lettura e predefinito.
+   * L’account tecnico è lo stesso per tutti i siti in un singolo ambiente di authoring AEM.
 
 1. Tocca o fai clic su **Salva e chiudi**.

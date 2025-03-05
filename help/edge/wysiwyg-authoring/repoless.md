@@ -4,9 +4,9 @@ description: Se hai molti siti simili che per lo più si presentano e si comport
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 2%
 
 ---
@@ -99,30 +99,14 @@ Devi creare una configurazione del sito e aggiungerla alla mappatura del percors
 
 Una volta mappata la configurazione del sito, puoi configurare il controllo degli accessi definendo l’account tecnico in modo che disponga dei privilegi per la pubblicazione.
 
-1. Nel browser, recupera l’account tecnico nella risposta del seguente collegamento.
+1. Accedi all&#39;istanza di authoring di AEM e vai a **Strumenti** -> **Servizi cloud** -> **Configurazione Edge Delivery Services** e seleziona la configurazione creata automaticamente per il tuo sito, quindi tocca o fai clic su **Proprietà** nella barra degli strumenti.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Nella finestra **Configurazione Edge Delivery Services**, seleziona la scheda **Autenticazione** e copia il valore per **ID account tecnico**.
 
-1. La risposta sarà simile alla seguente.
+   * Sarà simile a `<tech-account-id>@techacct.adobe.com`
+   * L’account tecnico è lo stesso per tutti i siti in un singolo ambiente di authoring AEM.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Imposta l’account tecnico nella configurazione con un comando cURL simile al seguente.
+1. Imposta l’account tecnico per la configurazione dei repoless con un comando cURL simile al seguente, utilizzando l’ID account tecnico copiato.
 
    * Adattare il blocco `admin` per definire gli utenti che devono disporre di accesso amministrativo completo al sito.
       * Si tratta di un array di indirizzi e-mail.
