@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 1%
 
 ---
 
 # Servizio di invio Forms con Edge Delivery Services Forms
+
+<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio. Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+
 
 Il servizio di invio di Forms consente di memorizzare i dati degli invii di moduli in qualsiasi foglio di calcolo, ad esempio OneDrive, SharePoint o Google Sheets, consentendo di accedere e gestire facilmente i dati dei moduli nella piattaforma di fogli di calcolo preferita.
 
@@ -30,12 +33,12 @@ Alcuni vantaggi dell’utilizzo del servizio di invio Forms con i fogli di calco
 
 Di seguito sono riportati i prerequisiti per l’utilizzo del servizio Forms Submission:
 
-* Assicurati che il progetto AEM contenga il blocco del modulo adattivo più recente.
+* Assicurati che nel progetto AEM sia presente il blocco di moduli adattivi più recente.
 * Assicurati che l’archivio Git sia aggiunto al inserisco nell&#39;elenco Consentiti di per utilizzare il servizio di invio Forms. [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio per aggiungerli al elenco Consentiti di per l&#39;utilizzo del servizio di invio Forms.
 
 ## Configurare il servizio di invio Forms
 
-Crea un nuovo progetto AEM configurato con Adaptive Forms Block. Consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per scoprire come creare un nuovo progetto AEM. Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
+Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informazioni su come creare un nuovo progetto AEM, consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial). Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
 
 È possibile [configurare il servizio di invio di Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurare il servizio di invio di Forms utilizzando l&#39;API](#configuring-the-forms-submission-service-using-api).
 
@@ -59,7 +62,7 @@ Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di cal
 
 >[!WARNING]
 >
-> Se il foglio `incoming` non esiste, l&#39;AEM non invierà alcun dato a questa cartella di lavoro.
+> Se il foglio `incoming` non esiste, AEM non invierà alcun dato a questa cartella di lavoro.
 
 #### 3. Condividi il foglio di calcolo e genera un collegamento.
 
@@ -96,13 +99,13 @@ Per configurare il servizio Invio di Forms con Google Sheets o Microsoft Excel, 
 
 >[!NOTE]
 >
-> * Se il foglio `incoming` non esiste, l&#39;AEM non invierà alcun dato a questa cartella di lavoro.
+> * Se il foglio `incoming` non esiste, AEM non invierà alcun dato a questa cartella di lavoro.
 > * Condividi il foglio `incoming` con Adobe Experience Manager `forms@adobe.com` e concedi l&#39;accesso di modifica.
 > * Visualizza l&#39;anteprima e pubblica il foglio `incoming` nella barra laterale.
 
 Per informazioni su come formattare la richiesta POST per la configurazione del foglio, consulta la [documentazione API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Osserva l’esempio fornito di seguito:
 
-Puoi utilizzare strumenti come curl o Postman per eseguire questa richiesta POST, come mostrato di seguito.
+Puoi utilizzare strumenti come curl o Postman per eseguire questa richiesta POST, come dimostrato di seguito.
 
 * **Utilizzo di Postman**:
 

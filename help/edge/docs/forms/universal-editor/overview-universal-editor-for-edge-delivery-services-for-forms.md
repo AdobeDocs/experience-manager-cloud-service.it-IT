@@ -4,10 +4,10 @@ description: Utilizza Universal Editor for Edge Delivery Services for Forms per 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 6b7ff166467a399502b63fd13b1f836213b7839b
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 84%
+source-wordcount: '1078'
+ht-degree: 83%
 
 ---
 
@@ -22,13 +22,11 @@ Con l’editor universale è possibile progettare rapidamente moduli interattivi
 
 Che si tratti di gestire un rendering snello lato client, garantire la compatibilità tra browser diversi o rispettare rigorosi standard di accessibilità, l’editor universale offre una soluzione semplificata per la creazione e la gestione dei moduli.
 
-![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
+![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Funzioni principali di Universal Editor per Edge Delivery Services per Forms
 
 
-
-Questo è il layout con schede a larghezza uguale (utilizzando colonne a larghezza fissa):
 
 | ![Interfaccia WYSIWYG](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![Editor di regole](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![Azioni di invio](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|

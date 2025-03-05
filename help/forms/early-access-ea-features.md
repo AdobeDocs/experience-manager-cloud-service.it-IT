@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 28%
+source-wordcount: '2289'
+ht-degree: 26%
 
 ---
 
@@ -74,9 +74,9 @@ Ecco cosa offre in più Conversational Forms:
 I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambiano l’esperienza degli utenti.  Incrementa il coinvolgimento, riduci l’abbandono dei moduli e rendi l’interazione con il tuo sito web un’esperienza più piacevole per tutti.
 
 
-### Authoring WYSIWYG per Edge Delivery Services
+### Authoring WYSIWYG (Universal Editor) per Edge Delivery Services per Forms
 
-WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi in Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
+Universal Editor fornisce una potente interfaccia WYSIWYG per generare e pubblicare [moduli adattivi in Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), combinando la semplicità di progettazione visiva con funzionalità avanzate. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/create-forms.md), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -86,6 +86,26 @@ WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms
 * Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
 * Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
 * Possibilità di scegliere tra più azioni di invio per la gestione degli invii di moduli, tra cui l&#39;invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
+
+![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**Vantaggi:**
+
+* **Time-to-Value accelerato (TTV)**: Launch si sviluppa più velocemente con l&#39;authoring visivo intuitivo che elimina i complessi requisiti di codifica.
+* **Costi di sviluppo ridotti**: riduzione del costo totale di proprietà consentendo agli utenti aziendali di creare e modificare moduli con un coinvolgimento IT minimo.
+* **Sviluppo semplificato**: creazione di componenti personalizzati utilizzando solo HTML, CSS e JavaScript. Non è richiesta alcuna conoscenza specifica del framework.
+* **Stack Web moderno**: basato su standard Web e tecnologie moderne familiari agli sviluppatori front-end.
+* **Prototipazione rapida**: generazione rapida e verifica dei concetti dei moduli prima di investire nello sviluppo completo
+
+
+**Per ulteriori informazioni, consulta la documentazione:**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**Funzioni chiave**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Usa layout reattivi**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configurare le azioni di invio**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**Introduzione a Universal Editor per Forms adattivo**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Personalizza lo stile dei moduli**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Aggiungi sicurezza reCAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**Crea il primo modulo**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Utilizza l&#39;editor di regole**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Pubblica moduli**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**Interfaccia utente**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Creare componenti personalizzati**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### Connettore da AEM Forms a Marketo

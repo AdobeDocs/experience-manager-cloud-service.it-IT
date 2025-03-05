@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 97%
+source-wordcount: '1505'
+ht-degree: 94%
 
 ---
 # Snippet {#snippets}
@@ -252,3 +252,25 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 >
 >* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva di contenuti headless.
 >* [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica di contenuti headless basata su modulo.
+
+## Editor universale{#ue-see-also}
+
+* [Creare Il Primo Modulo Con L’Editor Universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Aggiungere comportamento dinamico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Pubblicare e distribuire Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: guida allo stile e al teming](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Creare componenti per moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## Consulta anche {#see-more-eds-forms}
+
+* [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Creare un modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Impostare i fogli di Google o i file di Microsoft Excel per iniziare ad accettare i dati](/help/edge/docs/forms/submit-forms.md)
+* [Pubblicare il modulo e iniziare a raccogliere i dati](/help/edge/docs/forms/publish-forms.md)
+* [Personalizzare l’aspetto dei moduli](/help/edge/docs/forms/style-theme-forms.md)
+* [Aggiungere sezioni ripetibili a un modulo](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
+* [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+* [Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)

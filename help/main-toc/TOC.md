@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6220'
 ht-degree: 95%
 
 ---
@@ -1032,9 +1032,22 @@ ht-degree: 95%
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + [Come funzionano i modelli di Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + Authoring WYSIWYG {#universal-editor}
+         + [Introduzione a Forms Universal Editor per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Come avviare l’authoring con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Come creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Guida all’interfaccia di Universal Editor: strumenti, funzionalità e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [Rendi il tuo Forms facile da usare: design reattivo in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Design Beautiful Forms: guida di stile e teming per l&#39;editor universale](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Aggiungi comportamento dinamico a Forms: guida completa all’editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guida all’invio dei moduli: configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Come pubblicare e distribuire Forms: guida alla pubblicazione di Universal Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Componenti per moduli personalizzati: Guida per gli sviluppatori all&#39;editor universale](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo: Guida rapida con Google Sheets ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare Forms utilizzando Google Sheets o Excel: Guida dettagliata](/help/edge/docs/forms/create-forms.md)
+         + [Vari componenti del blocco di modulo adattivo](/help/edge/docs/forms/form-components.md)
          + [Collegare il modulo ai fogli di Google: Guida alla configurazione di Data Collection](/help/edge/docs/forms/submit-forms.md)
          + [Rendi il tuo modulo attivo: guida alla pubblicazione e alla raccolta dati](/help/edge/docs/forms/publish-forms.md)
          + [Convalida del campo modulo: aggiungi controlli di errore al Forms](/help/edge/docs/forms/validate-forms.md)
@@ -1049,21 +1062,7 @@ ht-degree: 95%
          + [Rendi il tuo modulo globale: guida alla traduzione dei moduli](/help/edge/docs/forms/translate-forms.md)
          + [Proteggi il tuo Forms: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componenti per moduli personalizzati: guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorare le prestazioni dei moduli: guida al monitoraggio per uso reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-      + Authoring WYSIWYG {#universal-editor}
-         + [Introduzione a Forms Universal Editor per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Come avviare l’authoring con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Come creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Guida all’interfaccia di Universal Editor: strumenti, funzionalità e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Rendi il tuo Forms facile da usare: design reattivo in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Design Beautiful Forms: guida di stile e teming per l&#39;editor universale](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Aggiungi comportamento dinamico a Forms: guida completa all’editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [Guida all’invio dei moduli: configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Come pubblicare e distribuire Forms: guida alla pubblicazione di Universal Editor](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [Componenti per moduli personalizzati: Guida per gli sviluppatori all&#39;editor universale](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + Riferimenti {#forms-references}
-         + [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
+         + [Monitora le prestazioni dei moduli: guide al monitoraggio per uso reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
