@@ -1,6 +1,6 @@
 ---
 title: Best practice per Dynamic Media
-description: Scopri le best practice di Dynamic Medie per l’utilizzo di immagini e video e le best practice per i visualizzatori Dynamic Medie.
+description: Scopri le best practice in Dynamic Media per l’utilizzo di immagini e video e le best practice per i visualizzatori Dynamic Media.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
+source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4071'
 ht-degree: 0%
 
 ---
@@ -35,68 +35,68 @@ Stage Business Problem Best Practice Recommendation: This section will outline s
 
 {{see-also-dm}}
 
-Le organizzazioni devono affrontare un&#39;esplosione di canali e dispositivi per interagire con gli utenti. Il percorso di clienti si estende su negozi fisici, web, dispositivi mobili, social media, e-mail e commercio. Per soddisfare questa esigenza, Dynamic Medie on Adobe Experience Manager (AEM) offre una soluzione completa. Ottimizza la distribuzione delle risorse, gestisce la personalizzazione e garantisce esperienze coerenti, performanti e allineate al brand tra canali e dispositivi.
+Le organizzazioni devono affrontare un&#39;esplosione di canali e dispositivi per interagire con gli utenti. Il percorso di clienti si estende su negozi fisici, web, dispositivi mobili, social media, e-mail e commercio. Per soddisfare questa domanda, Dynamic Media su Adobe Experience Manager (AEM) offre una soluzione completa. Ottimizza la distribuzione delle risorse, gestisce la personalizzazione e garantisce esperienze coerenti, performanti e allineate al brand tra canali e dispositivi.
 
-Alcuni dei principi chiave di Dynamic Medie includono:
+Alcuni dei principi chiave di Dynamic Media includono:
 
-* **Approccio a file singolo:** Con Dynamic Medie, viene archiviato un file di origine principale e tutte le varianti di dimensione e gli effetti visivi vengono creati e ottimizzati in modo dinamico al momento della consegna. Questo approccio consente di risparmiare sui costi di storage e di eliminare la complessità dei flussi di lavoro.
+* **Approccio a file singolo:** con Dynamic Media, viene archiviato un file di origine principale e tutte le varianti di dimensione e gli effetti visivi vengono creati e ottimizzati in modo dinamico al momento della consegna. Questo approccio consente di risparmiare sui costi di storage e di eliminare la complessità dei flussi di lavoro.
 * **Effettivamente globale:** Smart Imaging, applicato durante la distribuzione del contenuto, riduce in modo significativo le dimensioni dell&#39;immagine e il peso della pagina senza compromettere la qualità visiva. È ottimizzato per la larghezza di banda della rete e i rapporti pixel del dispositivo.
 * **Tecnologia AI:** Smart Crop, una funzionalità basata sull&#39;intelligenza artificiale, automatizza il ritaglio delle immagini e dei video point-of-interest. Consente di eliminare gli sforzi manuali e di scalare in modo efficiente per l&#39;uso aziendale.
-* **Video semplificato:** carica i video di origine principali in Dynamic Medie e li invia in streaming in più lingue con audio descrittivo.
+* **Video semplificato:** carica i video di origine principali in Dynamic Media e li invia in streaming in più lingue con audio descrittivo.
 * **Libreria visualizzatori di esperienze:** Personalizza e personalizza i visualizzatori di esperienze per immagini e video. Questi visualizzatori si integrano perfettamente nelle tue esperienze digitali.
-* **Supporto di formati emergenti:** Dynamic Medie consente la distribuzione di esperienze 3D e panoramiche.
+* **Supporto di formati emergenti:** Dynamic Media consente la distribuzione di esperienze 3D e panoramiche.
 
-Durante l&#39;esplorazione del [Percorso Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), l&#39;esame dell&#39;elenco consolidato delle best practice riportato di seguito consente di sfruttare al meglio le funzionalità. Adatta queste best practice di Dynamic Medie al tuo contesto specifico e ai requisiti del progetto, in modo da ottimizzare le tue esperienze su canali e dispositivi diversi.
+Durante l&#39;esplorazione del [Percorso Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), la revisione dell&#39;elenco consolidato delle best practice riportato di seguito può aiutarti a sfruttare al massimo le sue funzionalità. Adatta queste best practice di Dynamic Media al tuo contesto e ai requisiti del progetto specifici in modo da ottimizzare le tue esperienze su canali e dispositivi diversi.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
 >[!IMPORTANT]
 >
->Le best practice di Dynamic Medie contenute in questo articolo potrebbero evolvere nel tempo man mano che emergono nuove tecnologie in Dynamic Medie. Le informazioni seguenti sono aggiornate sulla versione più recente di Dynamic Medie.
+>Le best practice relative ai Dynamic Media descritte in questo articolo possono evolvere nel tempo man mano che emergono nuove tecnologie in Dynamic Media. Le informazioni seguenti sono aggiornate sulla versione più recente di Dynamic Media.
 
 
-## Inserire risorse in Dynamic Medie
+## Inserire risorse in Dynamic Media
 
 **Caso di business:** *Gestire in modo efficiente grandi volumi di risorse e assicurarsi che solo i contenuti approvati pertinenti vengano consegnati agli utenti finali.*
 
-Semplifica la gestione di un numero elevato di risorse in modo efficiente. Assicurati che solo il contenuto appropriato e autorizzato raggiunga gli utenti finali utilizzando le funzionalità **Sincronizzazione selettiva** e **Publish selettivo** di Dynamic Medie.
+Semplifica la gestione di un numero elevato di risorse in modo efficiente. Assicurati che solo il contenuto appropriato e autorizzato raggiunga gli utenti finali utilizzando le funzionalità di **Sincronizzazione selettiva** e **Pubblicazione selettiva** di Dynamic Media.
 
 * **Sincronizzazione selettiva:**
-Funzione proattiva che consente di scegliere le risorse da sincronizzare con Dynamic Medie. Ad esempio, puoi decidere di sincronizzare solo le cartelle contenenti risorse che hanno ricevuto l’approvazione finale. Questo flusso di lavoro consente di mantenere il controllo sulle risorse che vengono preparate per la consegna ai clienti.
+Funzione proattiva che consente di scegliere quali risorse sincronizzare con Dynamic Media. Ad esempio, puoi decidere di sincronizzare solo le cartelle contenenti risorse che hanno ricevuto l’approvazione finale. Questo flusso di lavoro consente di mantenere il controllo sulle risorse che vengono preparate per la consegna ai clienti.
 
 * **Pubblicazione selettiva:**
-Dopo aver sincronizzato le risorse, Selective Publish consente di controllare quali risorse sono visibili ai clienti. Grazie a questa funzionalità è possibile determinare quali risorse approvate vengono effettivamente consegnate tramite i canali, in modo che i clienti possano visualizzare solo i contenuti migliori e più rilevanti.
+Dopo aver sincronizzato le risorse, la pubblicazione selettiva consente di controllare quali risorse sono visibili ai clienti. Grazie a questa funzionalità è possibile determinare quali risorse approvate vengono effettivamente consegnate tramite i canali, in modo che i clienti possano visualizzare solo i contenuti migliori e più rilevanti.
 
 Queste due best practice consentono di migliorare il controllo, la governance e la produttività dei contenuti rich media.
 
-Vuoi saperne di più? Vai a [Configura Publish selettivo a livello di cartella in Dynamic Medie](/help/assets/dynamic-media/selective-publishing.md).
+Vuoi saperne di più? Vai a [Configura pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Visualizzatori Dynamic Media
 
-Le best practice per i visualizzatori Dynamic Medie sono linee guida essenziali progettate per ottimizzare le prestazioni, le funzionalità e l’esperienza utente delle risorse Dynamic Medie sull’AEM. Queste procedure garantiscono che le risorse siano sincronizzate, pubblicate e configurate correttamente per utilizzare tutte le funzionalità di Dynamic Medie.
+Le best practice per i visualizzatori Dynamic Media sono linee guida essenziali progettate per ottimizzare le prestazioni, le funzionalità e l’esperienza utente delle risorse Dynamic Media su AEM. Queste procedure garantiscono che le risorse siano sincronizzate, pubblicate e configurate correttamente per utilizzare tutte le funzionalità di Dynamic Media.
 
 Seguendo queste best practice, puoi ottenere un’integrazione perfetta, una gestione efficiente delle risorse e interazioni migliorate con i visualizzatori. La sincronizzazione delle risorse, l’utilizzo del ritaglio intelligente e il rispetto delle linee guida di inclusione dei file di JavaScript sono tutte pratiche importanti. Questi consigli aiutano a mantenere l’integrità e l’affidabilità della distribuzione dei contenuti multimediali su varie piattaforme e dispositivi.
 
 * **Sincronizza Assets visualizzatore:**
-Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Medie.
+Prima di utilizzare il lettore, assicurati che tutte le risorse visualizzatore siano sincronizzate con Dynamic Media.
 
    * Accedere alla pagina di gestione esempi in `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Questa pagina consente di risincronizzare le risorse di un visualizzatore, tra cui icone pronte all’uso, file CSS e predefiniti.
-   * In caso di problemi con il visualizzatore, vai all&#39;articolo [Risoluzione dei problemi relativi ai visualizzatori Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+   * In caso di problemi con il visualizzatore, vai all&#39;articolo [Risoluzione dei problemi relativi ai visualizzatori Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
 
-* **Assets Publish:**
+* **Pubblica Assets:**
 Assicurati che le risorse siano pubblicate prima di visualizzarle nei visualizzatori di consegna.
 * **Riproduzione automatica video disattivata:**
 Per la funzionalità di riproduzione automatica dei video, utilizza le impostazioni per la disattivazione dell’audio dei video, in quanto i browser limitano la riproduzione dei video con il volume.
 * **Ritaglio avanzato:**
 Utilizza il componente Immagine v3 per il ritaglio avanzato per migliorare la presentazione delle risorse immagine.
 * **Inclusione di file JavaScript:**
-Includi solo il file JavaScript del visualizzatore principale nella pagina. Evita di fare riferimento a file JavaScript aggiuntivi che la logica di runtime del visualizzatore potrebbe scaricare. In particolare, non collegare direttamente la libreria `Utils.js` dell&#39;SDK di HTML5 dal percorso di contesto `/s7viewers` (noto come inclusione SDK consolidata). La logica del visualizzatore gestisce la posizione di `Utils.js` o di librerie di visualizzatori di runtime simili, che possono cambiare tra le versioni. Adobe non mantiene sul server le versioni precedenti di inclusioni visualizzatore secondarie, pertanto il riferimento diretto a esse può interrompere la funzionalità del visualizzatore negli aggiornamenti futuri.
+Includi solo il file JavaScript del visualizzatore principale nella pagina. Evita di fare riferimento a file JavaScript aggiuntivi che la logica di runtime del visualizzatore potrebbe scaricare. In particolare, non collegare direttamente la libreria `Utils.js` di HTML5 SDK dal percorso di contesto `/s7viewers` (noto come SDK consolidato include). La logica del visualizzatore gestisce la posizione di `Utils.js` o di librerie di visualizzatori di runtime simili, che possono cambiare tra le versioni. Adobe non mantiene sul server versioni precedenti di inclusioni visualizzatore secondarie, pertanto il riferimento diretto ad esse può interrompere la funzionalità del visualizzatore negli aggiornamenti futuri.
 * **Linee guida per l&#39;incorporamento:**
 Utilizza la documentazione per incorporare le linee guida specifiche di ciascun visualizzatore.
 Vuoi saperne di più? Vai a [Visualizzatori per AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Esercitazione SDK ed esempi:**
-Consulta l&#39;[Esercitazione SDK per visualizzatori](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e gli esempi di applicazioni SDK [HTML5](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) per una conoscenza approfondita delle API dei componenti SDK.
+Esaminare l&#39;[Esercitazione SDK per visualizzatori](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e gli [esempi di applicazioni HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) per ottenere informazioni approfondite sulle API dei componenti SDK.
 
 
 ## Preparare le risorse per la consegna
@@ -114,7 +114,7 @@ Vuoi saperne di più? Vai a [Organizzare le risorse nelle cartelle](/help/assets
 L’assegnazione tag alle risorse migliora la ricercabilità, la creazione di raccolte e la classificazione delle ricerche. L’intelligenza artificiale di Adobe Sensei utilizza un algoritmo di apprendimento automatico per l’assegnazione di tag precisi, che consente di recuperare rapidamente le risorse. Adobe Sensei riconosce e assegna inoltre tag rilevanti alle risorse, inclusi quelli personalizzati, semplificando la gestione delle risorse con l’assegnazione automatica di tag descrittivi.
 Vuoi saperne di più? Vai a [Organizza le risorse utilizzando i tag](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organizza risorse come raccolte:**
-Dynamic Medie, insieme a Experience Manager Assets, consente di creare, modificare e condividere in modo efficiente le raccolte di risorse tra gli utenti. È possibile stabilire vari tipi di raccolta, inclusi gli elenchi statici e le compilazioni dinamiche basate su ricerche. Questi tipi di raccolte possono essere condivisi in diverse posizioni con diritti di accesso e modifica personalizzabili.
+Dynamic Media, insieme a Experience Manager Assets, consente di creare, modificare e condividere in modo efficiente le raccolte di risorse tra gli utenti. È possibile stabilire vari tipi di raccolta, inclusi gli elenchi statici e le compilazioni dinamiche basate su ricerche. Questi tipi di raccolte possono essere condivisi in diverse posizioni con diritti di accesso e modifica personalizzabili.
 Vuoi saperne di più? Vai a [Organizza risorse come raccolte](/help/assets/manage-collections.md).
 * **Organizzare le risorse utilizzando i profili:**
 Un profilo di elaborazione automatizza la gestione delle risorse in cartelle specifiche, semplificando l’organizzazione. La standardizzazione di metadati, nomi di file e strutture di cartelle consente un’applicazione coerente e precisa di questi profili man mano che la raccolta di risorse digitali si espande.
@@ -124,25 +124,25 @@ Vuoi saperne di più? Vai a [Organizza le risorse utilizzando i profili](/help/a
 
 ### Ottimizzare la qualità delle immagini
 
-**Caso di business:** *Ottenere immagini di buona qualità da Dynamic Medie.*
+**Caso di business:** *Ottieni immagini di buona qualità da Dynamic Media.*
 
 Per migliorare la qualità dell&#39;immagine è necessario considerare attentamente diversi fattori. Può richiedere molto tempo. Tuttavia, esistono alcune pratiche consolidate che possono aiutarti a raggiungere risultati desiderabili. Alcune di queste best practice includono come ottenere dimensioni ottimali dell’immagine, nitidezza e formati di immagine ottimali.
 
 Vuoi saperne di più? Vai a [Best practice per ottimizzare la qualità delle immagini](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
-Poiché la percezione della qualità dell&#39;immagine varia da persona a persona, a volte un approccio sistematico alla sperimentazione è essenziale per ottenere risultati desiderabili. Adobe Experience Manager facilita questo processo con più di 100 comandi Dynamic Medie per il miglioramento delle immagini.
+Poiché la percezione della qualità dell&#39;immagine varia da persona a persona, a volte un approccio sistematico alla sperimentazione è essenziale per ottenere risultati desiderabili. Adobe Experience Manager facilita questo processo con più di 100 comandi Dynamic Media per il miglioramento delle immagini.
 
-Vuoi saperne di più? Guarda [Snapshot Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuti, 17 secondi).
+Vuoi saperne di più? Guarda [Snapshot Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuti, 17 secondi).
 
-Per valutare l&#39;impatto di questi diversi comandi sulla qualità delle immagini, puoi caricare un&#39;immagine in Dynamic Medie, utilizzare l&#39;interfaccia dello strumento all&#39;URL specificato e applicare i comandi che desideri provare.
+Per valutare l’impatto di questi diversi comandi sulla qualità delle immagini, puoi caricare un’immagine in Dynamic Media, utilizzare l’interfaccia dello strumento all’URL specificato e applicare i comandi che desideri provare.
 
-Vuoi provarlo? Avvia [Snapshot Dynamic Medie](https://snapshot.scene7.com/)
+Vuoi provarlo? Avvia [Snapshot Dynamic Media](https://snapshot.scene7.com/)
 
 ### Standardizzazione degli stili applicati alle immagini
 
 **Caso di business:** *Standardizza in modo efficiente lo stile e la trasformazione applicati alle risorse immagine.*
 
-Utilizza i predefiniti per immagini regolarmente in Dynamic Medie per regolare in modo coerente e dinamico le dimensioni, i formati e le proprietà delle immagini. Considera un predefinito immagine come una macro: è un set denominato di comandi per il dimensionamento e la formattazione. Ad esempio, se il sito necessita di immagini di prodotto in varie dimensioni e formati, con una compressione specifica per desktop e dispositivi mobili, i predefiniti immagine automatizzano questo processo in modo efficiente.
+Utilizza i predefiniti per immagini regolarmente in Dynamic Media per regolare in modo coerente e dinamico le dimensioni, i formati e le proprietà delle immagini. Considera un predefinito immagine come una macro: è un set denominato di comandi per il dimensionamento e la formattazione. Ad esempio, se il sito necessita di immagini di prodotto in varie dimensioni e formati, con una compressione specifica per desktop e dispositivi mobili, i predefiniti immagine automatizzano questo processo in modo efficiente.
 
 Vuoi provarlo? Vai a [Nozioni di base sulla creazione di predefiniti immagine per il rendering delle risorse](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-e)
 
@@ -150,15 +150,15 @@ Vuoi provarlo? Vai a [Nozioni di base sulla creazione di predefiniti immagine pe
 
 **Caso di business:** *Assicurati che il punto di interesse principale delle mie immagini o dei miei video rimanga attivo tra i dispositivi.*
 
-Il ritaglio avanzato è una funzione in Dynamic Medie che utilizza Adobe Sensei, il framework di intelligenza artificiale e machine learning di Adobe, per automatizzare il ritaglio di immagini e video. Rileva e mette a fuoco in modo intelligente il soggetto principale o il punto di interesse in un&#39;immagine o in un video. Questa intelligenza assicura che il punto focale venga mantenuto su schermi di varie dimensioni su computer desktop e dispositivi mobili.
+Smart Crop è una funzione di Dynamic Media che utilizza Adobe Sensei, il framework di intelligenza artificiale e machine learning di Adobe, per automatizzare il ritaglio di immagini e video. Rileva e mette a fuoco in modo intelligente il soggetto principale o il punto di interesse in un&#39;immagine o in un video. Questa intelligenza assicura che il punto focale venga mantenuto su schermi di varie dimensioni su computer desktop e dispositivi mobili.
 
 Una best practice prevede la creazione di un profilo immagine con Ritaglio avanzato. Nel profilo, puoi definire diverse dimensioni dello schermo e consentire ad Adobe Sensei di fare il resto, assicurandoti che le immagini e i video siano sempre ottimizzati per il dispositivo dell’utente.
 
-Vuoi saperne di più? Guarda [Utilizzo di Ritaglio avanzato con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi) e [Utilizzo di Ritaglio avanzato Dynamic Medie per video](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuti, 22 secondi).
+Vuoi saperne di più? Guarda [Utilizzo di Ritaglio avanzato con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi) e [Utilizzo di Ritaglio avanzato Dynamic Media per video](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minuti, 22 secondi).
 
 ### Migliorare le classificazioni SEO
 
-**Caso di business:** *Configura Dynamic Medie per ottenere classificazioni SEO migliorate.*
+**Caso di business:** *Configura Dynamic Media per ottenere classificazioni SEO migliorate.*
 
 Utilizza regolarmente le seguenti raccomandazioni per garantire che le immagini contribuiscano in modo efficace alla strategia SEO complessiva.
 
@@ -177,12 +177,12 @@ Implementa un dominio personalizzato che includa la tua azienda o il tuo nome de
 
 * **Struttura delle cartelle compatibile con SEO:**
 Organizza le immagini in una struttura di cartelle che includa il nome o il marchio della tua azienda per una migliore indicizzazione, come `http://images.mycompany.com/is/image/companyname/`.
-* **Set di regole di Dynamic Medie:**
+* **Set di regole di Dynamic Media:**
 Scopri come trasformare gli URL in modo condizionale in base a vari fattori, migliorando la SEO e l’esperienza utente.
 Vuoi saperne di più? Vai a [Utilizza i set di regole per trasformare gli URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Imaging avanzato e ritaglio avanzato:**
-Utilizza le funzioni Smart Imaging e Ritaglio avanzato di Dynamic Medie per distribuire immagini ottimizzate e reattive. In questo modo non solo migliora i tempi di caricamento delle pagine, ma contribuisce anche positivamente alle classificazioni SEO (Search Engine Optimization).
-Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) oppure guarda [Utilizzo di Smart Crop con AEM Assets Dynamic Medie](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi).
+Utilizza le funzioni Smart Imaging e Ritaglio avanzato in Dynamic Media per distribuire immagini ottimizzate e reattive. In questo modo non solo migliora i tempi di caricamento delle pagine, ma contribuisce anche positivamente alle classificazioni SEO (Search Engine Optimization).
+Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) oppure guarda [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minuti, 35 secondi).
 
 Ricorda che queste best practice si allineano bene con le best practice Google per l’immagine SEO. Tali pratiche sottolineano l’importanza di fornire contesto e chiarezza ai motori di ricerca attraverso convenzioni di denominazione appropriate, dati strutturati e consegna di immagini ottimizzata.
 
@@ -192,19 +192,19 @@ Vuoi saperne di più? Vai a [Best practice per la struttura degli URL per Google
 
 **Caso di business:** *Applica effetti visivi avanzati alle immagini.*
 
-Dynamic Medie offre una suite di comandi per migliorare le immagini e creare effetti visivi in modo dinamico, senza la necessità di disporre di più risorse statiche. Di seguito sono riportate alcune brevi spiegazioni di alcuni di questi processi e alcuni esempi utili per guidarti:
+Dynamic Media offre una suite di comandi per migliorare le immagini e creare effetti visivi in modo dinamico, senza la necessità di disporre di più risorse statiche. Di seguito sono riportate alcune brevi spiegazioni di alcuni di questi processi e alcuni esempi utili per guidarti:
 
 #### Effetti nell&#39;immagine sorgente
 
 | Attività | Cosa fare |
 | --- | --- |
-| **Carica e pubblica l&#39;immagine originale** | <ul><li> Per iniziare, carica l’immagine originale su Dynamic Medie.</li><li> Assicurati che sia pubblicato e accessibile tramite un URL.</li><li> In questo esempio, viene caricata su Dynamic Medie un’immagine d’archivio di un orologio con sfondo bianco (chiamiamola &quot;Immagine X&quot;).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **Carica e pubblica l&#39;immagine originale** | <ul><li> Per iniziare, carica l’immagine originale in Dynamic Media.</li><li> Assicurati che sia pubblicato e accessibile tramite un URL.</li><li> In questo esempio, viene caricata su Dynamic Media un’immagine d’archivio di un orologio con sfondo bianco (chiamiamola &quot;Immagine X&quot;).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **Creare una maschera** | <ul><li> Sviluppare una maschera che definisca il soggetto (l&#39;area in cui si desidera applicare gli effetti) e lo sfondo (l&#39;area che si desidera modificare).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> Le maschere sono in genere immagini in scala di grigio, dove il bianco rappresenta il soggetto e il nero rappresenta lo sfondo. Puoi creare maschere utilizzando strumenti come Adobe Photoshop.<br>Ulteriori informazioni? Vai a [Creazione e modifica di una maschera rapida in Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).</li><li> Per &quot;Immagine X&quot;, creare una maschera che delinei con precisione il soggetto che si desidera migliorare. Ad esempio, una persona, un oggetto e così via.</li></ul> |
-| **Applicare i comandi URL di Dynamic Medie per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come un bagliore esterno o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<ul><li> **Effetto bagliore esterno:**<br> Per aggiungere un effetto bagliore esterno lungo il limite del soggetto, modificare l&#39;URL in questo modo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, i parametri `op_blur`, `op_grow` e `opac` creano l&#39;effetto bagliore esterno.</li><li> **Modifica colore di sfondo:**<br> Per modificare il colore di sfondo, utilizzare l&#39;URL con un valore diverso per il colore di sfondo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,0` imposta il colore di sfondo su giallo. Modifica lo sfondo con un colore specifico per un impatto visivo.</li></ul> |
+| **Applicare i comandi URL Dynamic Media per gli effetti** | Dopo aver inserito la maschera, usate i comandi URL per applicare effetti come un bagliore esterno o cambiate il colore di sfondo in &quot;Immagine X&quot;. Di seguito sono riportati due esempi:<ul><li> **Effetto bagliore esterno:**<br> Per aggiungere un effetto bagliore esterno lungo il limite del soggetto, modificare l&#39;URL in questo modo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>In questo URL, i parametri `op_blur`, `op_grow` e `opac` creano l&#39;effetto bagliore esterno.</li><li> **Modifica colore di sfondo:**<br> Per modificare il colore di sfondo, utilizzare l&#39;URL con un valore diverso per il colore di sfondo:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> In questo esempio, `color=255,255,0` imposta il colore di sfondo su giallo. Modifica lo sfondo con un colore specifico per un impatto visivo.</li></ul> |
 
 #### Aggiungi un bordo immagine
 
-Dynamic Medie consente di manipolare le immagini direttamente tramite URL, rendendole uno strumento potente per la creazione di esperienze digitali dinamiche. Di seguito sono riportati alcuni esempi. Iniziamo con il seguente URL immagine originale: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+Dynamic Media consente di manipolare le immagini direttamente tramite URL, rendendole uno strumento potente per la creazione di esperienze digitali dinamiche. Di seguito sono riportati alcuni esempi. Iniziamo con il seguente URL immagine originale: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
 
 | Attività | Cosa fare |
 | --- | --- |
@@ -216,15 +216,15 @@ Puoi sperimentare questi URL per ottenere gli effetti visivi desiderati.
 
 #### Creare sovrapposizioni immagine
 
-Se desideri sovrapporre un logo o un’icona a un’immagine esistente, Dynamic Medie offre un modo semplice per farlo utilizzando i comandi URL. Suddividiamo i passaggi.
+Se desideri sovrapporre un logo o un’icona a un’immagine esistente, Dynamic Media fornisce un modo semplice per farlo utilizzando i comandi URL. Suddividiamo i passaggi.
 
 | Passaggio | Cosa fare |
 | --- | --- |
 | **Carica e pubblica l&#39;immagine di base** | Innanzitutto, carica e pubblica l&#39;immagine di base sulla quale vuoi sovrapporre il logo o l&#39;icona. È possibile utilizzare qualsiasi immagine come base.<br>Questa è un&#39;immagine di base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Carica e pubblica l&#39;immagine del logo o dell&#39;icona** | Quindi, carica e pubblica l’immagine che desideri sovrapporre all’immagine di base. L&#39;immagine deve essere un file PNG trasparente con il logo o l&#39;icona che si desidera sovrapporre.<br>Immagine PNG trasparente di un oggetto stella con effetti di trasparenza che verrà sovrapposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Applica l&#39;URL di Dynamic Medie** | Ora crea un URL Dynamic Medie che combina l’immagine di base con l’immagine del logo o dell’icona. Per ottenere questo effetto, puoi utilizzare i comandi URL.<br>La struttura dell&#39;URL è simile alla seguente:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>in cui la risorsa<ul><li> `hotspotRetailBaseImage` è l&#39;immagine di base.</li><li> `starxp` è l&#39;immagine del logo/icona.</li><li> `layer=1` specifica che il logo o l&#39;icona deve essere sovrapposto all&#39;immagine di base.</li><li> `scale=1.25` regola le dimensioni del logo o dell&#39;icona.</li><li> `posN=0.33,-.25` determina la posizione del logo/icona rispetto all&#39;immagine di base.</li><li> `fmt=png` assicura che l&#39;output sia in formato PNG.</li></ul> |
+| **Applica l&#39;URL di Dynamic Media** | Ora crea un URL Dynamic Media che combina l’immagine di base con l’immagine del logo o dell’icona. Per ottenere questo effetto, puoi utilizzare i comandi URL.<br>La struttura dell&#39;URL è simile alla seguente:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>in cui la risorsa<ul><li> `hotspotRetailBaseImage` è l&#39;immagine di base.</li><li> `starxp` è l&#39;immagine del logo/icona.</li><li> `layer=1` specifica che il logo o l&#39;icona deve essere sovrapposto all&#39;immagine di base.</li><li> `scale=1.25` regola le dimensioni del logo o dell&#39;icona.</li><li> `posN=0.33,-.25` determina la posizione del logo/icona rispetto all&#39;immagine di base.</li><li> `fmt=png` assicura che l&#39;output sia in formato PNG.</li></ul> |
 
-Per saperne di più Vai a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) per ulteriori dettagli sul comando `src` e altri comandi URL di Dynamic Medie.
+Per saperne di più Vai a [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) per ulteriori dettagli sul comando `src` e altri comandi URL Dynamic Media.
 
 
 #### Sovrapposizione del testo promozionale
@@ -234,7 +234,7 @@ Di seguito sono riportati i passaggi per sovrapporre un messaggio di testo promo
 | Passaggio | Cosa fare |
 | --- | --- |
 | **Carica e pubblica l&#39;immagine di base** | Innanzitutto, carica e pubblica l’immagine di base sulla quale vuoi sovrapporre il testo. Puoi usare qualsiasi immagine ti piaccia. Esempio: <br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Applica operatori di testo Dynamic Medie** | Utilizzando Dynamic Medie, potete applicare operatori di testo per sovrapporre il testo dinamico direttamente sull&#39;immagine. L&#39;URL di esempio seguente dimostra questa capacità:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
+| **Applica operatori di testo Dynamic Media** | Dynamic Media consente di applicare operatori di testo per sovrapporre il testo dinamico direttamente sull’immagine. L&#39;URL di esempio seguente dimostra questa capacità:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600) |
 
 #### Ridimensionamento e ritaglio per vari casi d’uso
 
@@ -251,7 +251,7 @@ Il ridimensionamento può influire sulla qualità delle immagini. Evitare un aum
 
 ##### Ritaglio e ridimensionamento
 
-Il ritaglio e il ridimensionamento sono tecniche di Dynamic Medie che consentono di trasformare le immagini in base a diversi casi d’uso, sia che si tratti della creazione di miniature, di immagini di visualizzazione del prodotto o di banner.
+In Dynamic Media, il ritaglio e il ridimensionamento sono tecniche che consentono di trasformare le immagini in base ai vari casi d’uso, sia che si tratti della creazione di miniature, di immagini di visualizzazione del prodotto o di banner.
 
 * **Ritaglio:**
 Comporta la rimozione di parte di un&#39;immagine per modificarne la composizione e l&#39;inquadratura. Non modifica le dimensioni complessive, ma si concentra su un’area specifica.
@@ -278,11 +278,11 @@ Derivato dall&#39;immagine originale, enfatizzando la stanza.
 Puoi esplorare queste varianti in base alle tue esigenze specifiche.
 Vuoi saperne di più sui comandi disponibili all’interno di un URL? Vai a [Riferimento comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
-### Distribuire immagini GIF
+### Distribuisci immagini GIF
 
-**Caso di business:** *Trasmetti GIF tramite Dynamic Medie*
+**Caso di business:** *Trasmetti file GIF tramite Dynamic Media*
 
-Puoi caricare e consegnare GIF tramite Dynamic Medie. Per eseguire il rendering di un GIF animato, sostituisci `is/image` con `is/content` nell&#39;URL. Ad esempio, se hai caricato `abc.gif`, utilizza quanto segue:
+Puoi caricare e distribuire GIF tramite Dynamic Media. Per eseguire il rendering di un GIF animato, sostituisci `is/image` con `is/content` nell&#39;URL. Ad esempio, se hai caricato `abc.gif`, utilizza quanto segue:
 
 * Questo percorso URL esegue il rendering di una vista statica del GIF:
 
@@ -300,12 +300,12 @@ Puoi caricare e consegnare GIF tramite Dynamic Medie. Per eseguire il rendering 
 >
 >Quando si utilizza `is/content` nel percorso URL, i comandi di trasformazione delle immagini non vengono applicati alla risorsa.
 
-### Publish un video per il sito Web
+### Pubblica un video per il mio sito web
 
 **Caso di business:** *Pubblica rapidamente un video per un sito di marketing.*
 
 * **Selezionare un profilo video:**
-Innanzitutto, in Dynamic Medie, devi selezionare un profilo video appropriato. Puoi optare per il profilo *Codifica video adattiva* disponibile in AEM Assets alla voce Profili video. Queste impostazioni di codifica predefinite assicurano che il video sia ottimizzato per la riproduzione su vari dispositivi e condizioni di larghezza di banda. In alternativa, puoi creare un tuo profilo video adattivo.
+Innanzitutto, in Dynamic Media, devi selezionare un profilo video appropriato. Puoi optare per il profilo *Codifica video adattiva* disponibile in AEM Assets alla voce Profili video. Queste impostazioni di codifica predefinite assicurano che il video sia ottimizzato per la riproduzione su vari dispositivi e condizioni di larghezza di banda. In alternativa, puoi creare un tuo profilo video adattivo.
 * **Assegna il profilo:**
 Assegna il profilo video scelto alle cartelle in cui il video verrà caricato. Questo passaggio garantisce che vengano applicate le impostazioni di codifica corrette durante il processo di caricamento.
 * **Carica il video originale:**
@@ -328,14 +328,14 @@ Vuoi saperne di più? Vai a [Video](https://experienceleague.adobe.com/en/docs/e
 
 Per garantire la qualità e il coinvolgimento migliori per i tuoi video, puoi implementare una combinazione delle seguenti strategie per le best practice:
 
-* **Utilizza il visualizzatore video predefinito di HTML5:**
-I predefiniti per visualizzatore video di Dynamic Medie HTML5 sono lettori video affidabili. Utilizzali per evitare i problemi più comuni associati alla riproduzione di video HTML5 e ai dispositivi mobili.
+* **Utilizza il visualizzatore video integrato di HTML5:**
+I predefiniti per visualizzatore video Dynamic Media HTML5 sono lettori video affidabili. Utilizzali per evitare i problemi più comuni associati alla riproduzione di video HTML5 e ai dispositivi mobili.
 Questi predefiniti risolvono problematiche quali la distribuzione di streaming con bitrate adattivo e la portata limitata del browser desktop.
 Vuoi saperne di più? Vai a [Best practice: utilizzo del visualizzatore video di HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
-* **Usa profili video Dynamic Medie:**
-I profili video in Dynamic Medie consentono una gestione video efficiente, una qualità coerente e uno streaming adattivo.
-Vuoi saperne di più? Vai a [Profili video Dynamic Medie](/help/assets/dynamic-media/video-profiles.md).
+* **Usa profili video Dynamic Media:**
+I profili video in Dynamic Media consentono una gestione video efficiente, una qualità coerente e uno streaming adattivo.
+Vuoi saperne di più? Vai a [Profili video Dynamic Media](/help/assets/dynamic-media/video-profiles.md).
 
 * **Best practice per la codifica video:**
 Applicare profili di codifica video che mantengano la qualità video originale senza downscaling eccessivo durante la codifica.
@@ -346,22 +346,17 @@ Lo streaming adattivo regola la qualità video in base alla velocità di conness
 Utilizza protocolli come HLS (HTTP Live Streaming) o DASH (`Dynamic Adaptive Streaming over HTTP`) per garantire una qualità di riproduzione ottimale.
 A differenza dello streaming progressivo, che offre video in modo lineare, lo streaming adattivo riduce al minimo il buffering e offre un’esperienza di visualizzazione fluida.
 
-* **Abilita DASH sul tuo account (Digital Adaptive Streaming over HTTP):**
-DASH distribuisce dinamicamente i contenuti video tramite streaming adattivo.
-Per abilitare DASH, crea un ticket di supporto per il tuo ambiente.
-Vuoi saperne di più? Vai a [Abilita DASH sul tuo account Dynamic Medie](/help/assets/dynamic-media/video.md#enable-dash).
-
 ### Internazionalizzazione dei video per il consumo multilingue
 
 **Caso di business:** *Prepara i video per il consumo multilingue.*
 
-L’internazionalizzazione dei video per il consumo multilingue è essenziale per raggiungere un pubblico globale. Dynamic Medie fornisce funzionalità che possono aiutarti a raggiungere questo obiettivo.
+L’internazionalizzazione dei video per il consumo multilingue è essenziale per raggiungere un pubblico globale. Dynamic Media fornisce funzioni che possono aiutarti a raggiungere questo obiettivo.
 
 * **Carica i tuoi video:**
-   * Crea un profilo di codifica video. Puoi utilizzare il profilo di codifica video adattivo predefinito fornito con Dynamic Medie oppure creare un profilo personalizzato.
+   * Crea un profilo di codifica video. Puoi utilizzare il profilo di codifica video adattivo predefinito fornito con Dynamic Media oppure creare un profilo personalizzato.
    * Associa il profilo di elaborazione video a una o più cartelle in cui carichi i video sorgente principali.
-   * Carica i video sorgente principali in queste cartelle. Dynamic Medie li codifica in base al profilo di elaborazione video assegnato.
-   * Dynamic Medie supporta principalmente video in formato breve (fino a 30 minuti) con una risoluzione minima superiore a 25 × 25. È possibile caricare file video fino a 15 GB ciascuno1.
+   * Carica i video sorgente principali in queste cartelle. Dynamic Media li codifica in base al profilo di elaborazione video assegnato.
+   * Dynamic Media supporta principalmente video in formato breve (fino a 30 minuti) con una risoluzione minima superiore a 25 × 25. È possibile caricare file video fino a 15 GB ciascuno1.
 
 * **Gestione dei video:**
    * Organizza, sfoglia e cerca risorse video in AEM.
@@ -371,14 +366,14 @@ L’internazionalizzazione dei video per il consumo multilingue è essenziale pe
 
 * **Localizzazione:**
    * Per ogni area geografica/lingua di destinazione, create tracce audio e sottotitoli.
-   * Aggiungi questi brani audio e sottotitoli ai tuoi video dall’interfaccia AEM.
+   * Aggiungi questi brani audio e sottotitoli ai tuoi video dall’interfaccia di AEM.
    * Durante la riproduzione dei video, gli utenti possono selezionare la lingua preferita per l&#39;audio e i sottotitoli.
 
 * **Pubblicazione:**
-   * Se utilizzi l’AEM come sistema WCM (Web Content Management), puoi aggiungere video direttamente alle pagine web.
+   * Se utilizzi AEM come sistema di gestione dei contenuti web (WCM), puoi aggiungere video direttamente alle pagine web.
    * Se utilizzi un sistema WCM di terze parti, puoi collegare o incorporare video sulle pagine web utilizzando URL o codici di incorporamento.
 
-Vuoi saperne di più? Vai a [Informazioni sul supporto di più didascalie e tracce audio per i video in Dynamic Medie](/help/assets/dynamic-media/video.md#about-msma) o guarda [Aggiungi più didascalie e tracce audio a un video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 secondi).
+Vuoi saperne di più? Vai a [Informazioni sul supporto di più didascalie e tracce audio per i video in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) o guarda [Aggiungere più didascalie e tracce audio a un video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 secondi).
 
 
 ## Distribuire risorse ai clienti
@@ -387,9 +382,9 @@ Vuoi saperne di più? Vai a [Informazioni sul supporto di più didascalie e trac
 
 **Caso di business:** *Ottimizza le dimensioni delle immagini per qualsiasi browser o schermo e riduci il tempo di caricamento delle pagine.*
 
-Dynamic Medie Smart Imaging è uno strumento potente che migliora le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser del cliente.
+L’imaging avanzato Dynamic Media è uno strumento potente che migliora le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità dell’immagine in base alle funzionalità del browser del cliente.
 
-L&#39;Adobe consiglia di utilizzare le funzionalità di Smart Imaging anziché impostare manualmente il formato immagine su `webp` o `avif`. Ecco il motivo:
+Adobe consiglia di utilizzare le funzionalità di Smart Imaging anziché impostare manualmente il formato immagine su `webp` o `avif`. Ecco il motivo:
 
 * **Compatibilità browser:**
 La tecnologia Smart Imaging garantisce che il formato dell&#39;immagine fornita sia compatibile con il browser dell&#39;utente.
@@ -408,7 +403,7 @@ Vuoi saperne di più? Vai a [Smart Imaging](/help/assets/dynamic-media/imaging-f
 
 **Caso di business:** *Dopo aver pubblicato nuovi contenuti o sovrascritto quelli esistenti, come è possibile garantire che le modifiche vengano visualizzate immediatamente sulla rete CDN?*
 
-La rete CDN (Content Delivery Network) memorizza nella cache le risorse Dynamic Medie per consentirne la rapida distribuzione ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse consegnate da Dynamic Medie possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore. A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
+La rete CDN (Content Delivery Network) memorizza in cache le risorse Dynamic Media per consentirne la distribuzione rapida ai clienti. Quando vengono apportati aggiornamenti a queste risorse, è importante che le modifiche diventino effettive immediatamente sul sito web. Rimuovendo o annullando la validità della cache CDN, le risorse distribuite da Dynamic Media possono essere aggiornate rapidamente. Questo approccio elimina la necessità di attendere la scadenza della cache in base al valore TTL (Time To Live), che in genere è impostato su dieci ore. A seconda del caso d’uso specifico, puoi aggiornare di conseguenza le impostazioni TTL (Time to Live) della rete CDN.
 
-Vuoi saperne di più? Vai a [Invalida la cache CDN tramite Dynamic Medie](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+Vuoi saperne di più? Vai a [Invalida la cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
