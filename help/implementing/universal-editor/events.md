@@ -4,9 +4,9 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -180,29 +180,6 @@ Payload di risposta
 
 ## Eventi interfaccia utente {#ui-events}
 
-### aue:pubblicazione tramite interfaccia utente {#ui-publish}
-
-L&#39;evento `aue:ui-publish` viene attivato quando il contenuto viene pubblicato (con chiamata al livello `BODY`).
-
-Il payload è un elenco di ID elemento e del loro stato di pubblicazione.
-
-### aue:selezione tramite interfaccia utente {#ui-select}
-
-L&#39;evento `aue:ui-select` viene attivato quando viene selezionato un componente.
-
-Il payload è l’ID dell’elemento, le proprietà dell’elemento e il tipo di elemento del componente selezionato.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:anteprima interfaccia utente {#ui-preview}
 
 L&#39;evento `aue:ui-preview` viene attivato quando la modalità di modifica della pagina viene modificata in **Anteprima**.
@@ -271,7 +248,6 @@ Il payload è vuoto per questo evento.
 
 | Evento | Comportamento |
 |---|---|
-| `aue:ui-publish` | Nessuna azione |
 | `aue:ui-select` | Scorri fino all’elemento selezionato |
 | `aue:ui-preview` | Aggiungi `class="adobe-ue-preview"` al tag HTML |
 | `aue:ui-edit` | Aggiungi `class=adobe-ue-edit"` al tag HTML |
