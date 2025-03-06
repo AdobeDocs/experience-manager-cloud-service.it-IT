@@ -3,7 +3,7 @@ title: Dynamic Media Prime e Ultimate
 description: Scopri di più su Dynamic Media Prime e Ultimate, i loro vantaggi e le differenze tra i due.
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 0c0d33b3e022ff0265220bf3106b888b83e8af99
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 14%
@@ -28,13 +28,9 @@ Se hai bisogno delle funzionalità di base e avanzate di Dynamic Media e di acce
 Tra gli altri vantaggi principali di Dynamic Media Prime:
 
 * Gestione centralizzata delle risorse digitali
-
 * Aggiornamenti in tempo reale che si riflettono negli URL di consegna
-
 * Coerenza del brand
-
 * Consegna di immagini ottimizzate per il web
-
 * Streaming video adattivo
 
 ### Prerequisiti {#pre-requisites-dm-prime}
@@ -57,9 +53,7 @@ Oltre alle funzioni di Dynamic Media Prime, come l’integrazione di AEM Assets 
 * [Soluzione Dynamic Media in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), che include anche le seguenti funzionalità chiave:
 
    * [Modelli Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-
    * [Nozioni di base sui modelli](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-
    * [Configurazione visiva](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prerequisiti {#pre-requisites-dm-ultimate}
@@ -71,4 +65,3 @@ Oltre alle funzioni di Dynamic Media Prime, come l’integrazione di AEM Assets 
 Per ulteriori informazioni sull&#39;elenco completo delle funzionalità, vedere [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) e [Utilizzo di Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 Per informazioni su come abilitare Dynamic Media Prime e Ultimate per il tuo ambiente AEM as a Cloud Service, consulta [Abilitare Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md).
-
