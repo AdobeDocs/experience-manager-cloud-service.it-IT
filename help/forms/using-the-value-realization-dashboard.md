@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # Utilizzo della dashboard di realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti
 
 <span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
 
-![Dashboard di realizzazione del valore](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
+![Dashboard per la realizzazione del valore](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 Monitorando regolarmente le metriche presentate nella dashboard &quot;Informazioni sull’utilizzo di Forms&quot;, puoi ottenere informazioni utili sulle prestazioni di moduli, documenti e frammenti di modulo. Utilizza questi dati per prendere decisioni informate sulla progettazione dei moduli, sulla gestione dei frammenti e sulla strategia complessiva dei moduli.
 
@@ -33,7 +31,7 @@ Per accedere alla dashboard di Informazioni sull’utilizzo di Forms:
 1. Passa a **Forms** > **Forms e documenti**
 1. Fare clic su **Dashboard approfondimenti**. Il dashboard viene aperto in una nuova finestra.
 
-   ![Dashboard di realizzazione del valore](/help/forms/assets/forms-usage-insights.png)
+   ![Dashboard per la realizzazione del valore](/help/forms/assets/forms-usage-insights.png)
 
 ## Panoramica
 
