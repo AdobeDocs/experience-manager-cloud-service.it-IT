@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Questa dashboard rappresenta la finestra sul mondo dell’utilizzo dei moduli. E
 * **Invio moduli**: visualizza le tendenze relative alla frequenza di completamento dei moduli.
 * **Copie trasformate documenti**: tenere traccia del numero di documenti sottoposti a rendering nel tempo.
 * **Forms creato e pubblicato**: controlla la velocità di generazione e distribuzione dei nuovi moduli.
-* **Tempi di creazione e pubblicazione dei moduli**: analizza i tempi medi di creazione e pubblicazione dei moduli per identificare le aree da migliorare.
 
 ### Utilizzo frammento
 
