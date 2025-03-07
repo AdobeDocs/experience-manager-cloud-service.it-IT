@@ -1,14 +1,14 @@
 ---
-title: Dashboard di AEM Forms per la realizzazione del valore
-description: Monitora facilmente l’invio di moduli sulle istanze AEM Forms con la nostra dashboard di tracciamento intuitiva.
+title: Dashboard di AEM Forms Value Realization
+description: Monitora facilmente l’invio di moduli sulle istanze AEM Forms con una dashboard di tracciamento intuitiva.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 Benvenuto al tuo punto di riferimento per comprendere il valore che i moduli apportano. Questa dashboard offre informazioni utili per ottimizzare i moduli, semplificare i flussi di lavoro e, in ultima analisi, raggiungere gli obiettivi più rapidamente.
 
-Questo articolo fornisce una panoramica concettuale del dashboard di realizzazione del valore e dei relativi vantaggi. Per istruzioni di utilizzo dettagliate e interpretazione delle metriche, vedere [Interpretazione delle informazioni sull&#39;utilizzo dei moduli tramite il dashboard Realizzazione valore](/help/forms/using-the-value-realization-dashboard.md).
-
-
+Questo articolo fornisce una panoramica concettuale del dashboard di realizzazione del valore e dei relativi vantaggi. Per istruzioni di utilizzo dettagliate e interpretazione delle metriche, vedere [utilizzo del dashboard di realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## Cosa c&#39;è sul cruscotto? {#content-of-dashboard}
@@ -50,7 +48,7 @@ Questa dashboard rappresenta la finestra sul mondo dell’utilizzo dei moduli. E
 
 Questa dashboard consente di prendere decisioni basate sui dati in merito ai moduli. Ecco come:
 
-* **Identificare il Forms più diffuso**: elevate percentuali di invio indicano moduli importanti. Analizza queste best practice da replicare in altre.
+* **Identificare il Forms più diffuso**: elevate percentuali di invio indicano moduli importanti. Analizza questi moduli per individuare le best practice da replicare in altri moduli.
 * **Ottimizza creazione modulo**: riduci i tempi di creazione identificando i colli di bottiglia. Esplora modelli predefiniti o flussi di lavoro semplificati.
 * **Migliora riutilizzo frammenti**: incoraggia la collaborazione e la reperibilità di frammenti riutilizzabili. Librerie di frammenti ben organizzate possono migliorare in modo significativo l’efficienza.
 
@@ -77,4 +75,4 @@ Ricordati che questo cruscotto è il tuo alleato! Grazie a un utilizzo efficace,
 
 ## Consulta anche
 
-* [Utilizzo del dashboard per analizzare le tendenze di utilizzo di Forms e documenti](/help/forms/using-the-value-realization-dashboard.md)
+* [Utilizzo della dashboard per analizzare le tendenze di utilizzo di Forms e Documents](/help/forms/using-the-value-realization-dashboard.md)
