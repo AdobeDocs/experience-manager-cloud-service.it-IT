@@ -4,7 +4,7 @@ description: Scopri come abilitare  [!DNL Dynamic Media] le offerte Prime e Ulti
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
+source-git-commit: e52e38eb5313f265d7e0765ea5b788b648d9710e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Prima di avviare il processo di attivazione, è necessario soddisfare i seguenti
 
 1. [Accesso a Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
 1. [Il programma include [!DNL Dynamic Media] soluzioni](#configure-dynamic-media-solutions).
-1. La tua organizzazione ha [!DNL Dynamic Media] con crediti OpenAPI.
+1. Hai [!DNL Dynamic Media] licenza Prime o Ultimate.
 
 #### Abilitare le funzionalità di [!DNL Dynamic Media with OpenAPI] nell&#39;ambiente Cloud Service {#enable-dynamic-media-with-openapi-capabilites-in-your-CS-environment}
 
@@ -97,7 +97,7 @@ Configura le soluzioni [!UICONTROL Dynamic Media] per utilizzare le funzionalit�
 Per configurare le soluzioni [!UICONTROL Dynamic Media], assicurati di disporre delle seguenti informazioni:
 
 1. [Accesso a Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager).
-1. La tua organizzazione dispone di [!DNL Dynamic Media with OpenAPI] crediti.
+1. Hai [!DNL Dynamic Media] licenza Ultimate.
 
 #### Configura [!DNL Dynamic Media] soluzioni per la distribuzione delle risorse {#configure-dynamic-media-solutions-for-asset-delivery}
 
