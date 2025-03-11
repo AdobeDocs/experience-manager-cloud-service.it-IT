@@ -7,14 +7,14 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '2214'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 
 # Introduzione all’editor di regole nell’authoring WYSIWYG
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 
 È possibile aggiungere il comportamento di un modulo dinamico utilizzando l’editor di regole, che consente di creare regole. Queste regole abilitano la visibilità dei campi condizionali, automatizzano i calcoli in base a quanto immesso dall’utente e migliorano l’esperienza utente complessiva. Semplificando il processo di compilazione dei moduli, l’editor di regole favorisce sia l’accuratezza che l’efficienza.
@@ -186,7 +186,7 @@ Esaminiamo ora come [scrivere regole nell’editor di regole](#write-rules).
 
 ## Scrivere regole
 
-Per informazioni su come scrivere regole nell&#39;Editor di regole visive, si consideri un semplice esempio di modulo di calcolo delle imposte:
+Per informazioni su come scrivere regole nell’editor di regole visivo, prendiamo in considerazione un semplice esempio di modulo di calcolo delle imposte:
 
 ![Esempio di editor di regole](/help/edge/docs/forms/assets/rule-editor-1.png)
 

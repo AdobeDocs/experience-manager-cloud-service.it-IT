@@ -2,7 +2,7 @@
 source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -59,13 +59,13 @@ ht-degree: 94%
 
 ## Editor universale{#universal-editor-see-also}
 
-* [Creare Il Primo Modulo Con L’Editor Universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Aggiungere comportamento dinamico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Creare il primo modulo utilizzando l’Editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Aggiungere un comportamento dinamico ai moduli](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [Configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Pubblicare e distribuire Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms: guida allo stile e al teming](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Creare componenti per moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Pubblicare e distribuire i moduli](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Progettare moduli di bell’aspetto - Guida all’attribuzione stile e all’applicazione del tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Creare componenti dei moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteggere i moduli dallo spam - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Consulta anche {#see-more-forms-eds}
 
@@ -255,13 +255,13 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 ## Editor universale{#ue-see-also}
 
-* [Creare Il Primo Modulo Con L’Editor Universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Aggiungere comportamento dinamico a Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Creare il primo modulo utilizzando l’Editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Aggiungere un comportamento dinamico ai moduli](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 * [Configurare e personalizzare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Pubblicare e distribuire Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Design Beautiful Forms: guida allo stile e al teming](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Creare componenti per moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Proteggere il Forms dallo spam: aggiunta di sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Pubblicare e distribuire i moduli](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Progettare moduli di bell’aspetto - Guida all’attribuzione stile e all’applicazione del tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Creare componenti dei moduli personalizzati](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteggere i moduli dallo spam - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Consulta anche {#see-more-eds-forms}
 

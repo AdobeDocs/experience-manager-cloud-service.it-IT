@@ -7,14 +7,14 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 7%
+ht-degree: 42%
 
 ---
 
 
 # Modalità reattiva nell’authoring WYSIWYG
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 ## Introduzione a Responsive Forms
 
@@ -24,7 +24,7 @@ Nel mondo odierno del multi-dispositivo, i moduli devono avere un aspetto elegan
 
 ## Visualizzare in anteprima i moduli in modalità reattiva per dispositivi diversi
 
-Universal Editor fornisce un&#39;icona **Emulatore** situata nell&#39;angolo in alto a destra dello schermo che consente di visualizzare in anteprima le pagine su dispositivi di dimensioni diverse e di verificare il comportamento della progettazione reattiva per una migliore esperienza utente.
+Nell’editor universale, un’icona **Emulatore** situata nell’angolo in alto a destra della schermata consente di visualizzare in anteprima le pagine su dispositivi di dimensioni diverse e di testare il comportamento della progettazione reattiva per una migliore esperienza utente.
 
 Per visualizzare l’anteprima di un modulo in modalità reattiva:
 
@@ -67,17 +67,17 @@ L’editor universale fornisce emulatori diversi per l’anteprima dei moduli su
 
 ## Funzionalità di layout
 
-Universal Editor consente di creare moduli di facile utilizzo che offrono esperienze dinamiche agli utenti finali. Il layout del modulo controlla la modalità di visualizzazione degli elementi o dei componenti in un modulo.
+L’editor universale consente di creare moduli di facile utilizzo che offrono esperienze dinamiche agli utenti finali. Il layout del modulo controlla la modalità di visualizzazione degli elementi o dei componenti in un modulo.
 
-Universal Editor supporta i seguenti tipi di layout per i moduli:
+L’editor universale supporta i seguenti tipi di layout per i moduli:
 
 - [Layout pannello](#panel-layout)
 - [Layout procedura guidata](#wizard-layout)
-- [Layout Accordion](#accordion-layout)
+- [Layout pannello a soffietto](#accordion-layout)
 
 ### Layout pannello
 
-Il layout del pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti nei moduli.
+Il layout pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti nei moduli.
 
 ![Layout del pannello che mostra più sezioni distinte all&#39;interno di un modulo](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
@@ -85,11 +85,11 @@ Il layout del pannello è utile per organizzare i campi correlati in modo da sem
 
 **Comportamento reattivo:** Negli schermi più piccoli, i pannelli si sovrappongono in genere verticalmente, mantenendo i raggruppamenti distinti e regolando la larghezza su un valore più basso.
 
-È possibile utilizzare il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) per aggiungere il layout del pannello in un modulo. Per istruzioni dettagliate su come configurare varie proprietà del componente Pannello, consulta l&#39;articolo [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+È possibile utilizzare il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) per aggiungere il layout pannello in un modulo. Per istruzioni dettagliate su come configurare varie proprietà del componente pannello, consulta l’articolo [Componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Layout procedura guidata
 
-Il layout della procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti si spostano in sequenza, spesso con i pulsanti **Successivo** e **Indietro**. È possibile utilizzare il layout della procedura guidata per creare un modulo che comprenda più sezioni o passaggi.
+Il layout della procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti si spostano attraverso di essi in sequenza, spesso con i pulsanti **Successivo** e **Indietro**. È possibile utilizzare il layout procedura guidata per creare un modulo che comprende più sezioni o passaggi.
 
 ![Layout della procedura guidata che mostra un modulo con più passaggi con controlli di spostamento](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
@@ -97,11 +97,11 @@ Il layout della procedura guidata semplifica un modulo complesso suddividendolo 
 
 **Comportamento reattivo:** Nei dispositivi mobili, la procedura guidata mantiene il proprio approccio graduale ma regola il contenuto all&#39;interno di ogni passaggio per adattarlo allo schermo più stretto, spesso impilando elementi che apparirebbero affiancati su schermi più grandi.
 
-È possibile utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) per aggiungere il layout della procedura guidata in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente della procedura guidata, fare riferimento all&#39;articolo [componente della procedura guidata](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+È possibile utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) per aggiungere il layout procedura guidata in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente procedura guidata, consulta l’articolo [Componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
-### Layout Accordion
+### Layout pannello a soffietto
 
-Il layout del Pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un Modulo adattivo. Quando una sezione viene espansa, il contenuto viene visualizzato all’interno di, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
+Il layout pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un modulo adattivo. Quando una sezione viene espansa, viene mostrato il contenuto all’interno, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
 
 ![Layout Pannello a soffietto con sezioni espandibili in un modulo](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
@@ -109,19 +109,19 @@ Il layout del Pannello a soffietto mostra il contenuto in sezioni o pannelli com
 
 **Comportamento reattivo:** Le fisarmoniche funzionano particolarmente bene sui dispositivi mobili in quanto conservano naturalmente lo spazio verticale mostrando solo la sezione di contenuto espansa, rendendole ideali per gli schermi più piccoli.
 
-È possibile utilizzare il [componente Pannello a soffietto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) per aggiungere il layout Pannello a soffietto in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Pannello a soffietto, consulta l&#39;articolo [Componente Pannello a soffietto](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+È possibile utilizzare il [componente pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) per aggiungere il layout pannello a soffietto in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente pannello a soffietto, consulta l’articolo [Componente pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 ### Come scegliere il layout giusto?
 
-È importante selezionare il layout giusto per ottimizzare l’esperienza utente e la funzionalità dei moduli. La tabella ti aiuta a comprendere le diverse opzioni di layout disponibili e ti guida nella selezione del layout più adatto in base alle tue esigenze e ai tuoi casi d’uso specifici:
+È importante selezionare il layout giusto per ottimizzare l’esperienza utente e la funzionalità dei moduli. La tabella consente di comprendere le diverse opzioni di layout disponibili e ti aiuta nella selezione del layout più adatto in base alle tue esigenze e ai tuoi casi d’uso specifici:
 
-| Funzione obsoleta | Layout pannello | Layout procedura guidata | Layout Accordion |
+| Funzione | Layout pannello | Layout procedura guidata | Layout pannello a soffietto |
 |----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | **Scopo** | Raggruppa il contenuto correlato in sezioni distinte | Guida gli utenti attraverso un processo o un modulo in più fasi | Organizza il contenuto in sezioni comprimibili |
 | **Struttura** | Sezioni distinte | Passaggi/pagine sequenziali | Pannelli/sezioni comprimibili |
-| **Navigazione** | Fai clic sulle intestazioni del pannello per navigare | - Avanti: pulsante &quot;Avanti&quot;<br>- Indietro: pulsante &quot;Indietro&quot;<br>- Passaggi facoltativi ignorati | Fai clic sulle intestazioni per espandere/comprimere le sezioni |
-| **Esperienza utente** | Organizza grandi quantità di contenuti in modo gestibile | Guida passo passo, riduzione del sovraccarico | Vista compatta con sezioni espanse/compresse |
-| **Caso d’uso** | Moduli complessi con sezioni suddivise in categorie | Processi di configurazione, moduli complessi | Domande frequenti, menu delle impostazioni e sezioni del contenuto dettagliato |
+| **Navigazione** | Fai clic sulle intestazioni del pannello per spostarti | - Avanti: pulsante &quot;Avanti&quot;<br>- Indietro: pulsante &quot;Indietro&quot;<br>- Passaggi facoltativi ignorati | Fai clic sulle intestazioni per espandere/comprimere le sezioni |
+| **Esperienza utente** | Organizza grandi quantità di contenuti in modo gestibile | Guida dettagliata, riduzione del sovraccarico | Vista compatta con sezioni espanse/compresse |
+| **Caso d’uso** | Moduli complessi con sezioni suddivise in categorie | Processi di configurazione, moduli complessi | Domande frequenti, menu delle impostazioni e sezioni contenuto dettagliate |
 | **Ottimo per dispositivi mobili** | Modera: i pannelli si sovrappongono in verticale | Corretto: consente di concentrarsi solo sul passaggio corrente | Eccellente: consente di risparmiare spazio con sezioni comprimibili |
 
 ## Best practice per Forms reattivo

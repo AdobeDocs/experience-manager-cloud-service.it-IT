@@ -1,22 +1,22 @@
 ---
-title: Editor universale per Edge Delivery Services per Forms
-description: Utilizza Universal Editor for Edge Delivery Services for Forms per creare un Forms adattivo.
+title: Editor universale di moduli per Edge Delivery Services
+description: Utilizza l’editor universale di moduli per Edge Delivery Services per creare moduli adattivi.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 83%
+ht-degree: 97%
 
 ---
 
 
-# Editor universale per Edge Delivery Services per Forms
+# Editor universale di moduli per Edge Delivery Services
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
-Universal Editor rivoluziona la creazione di moduli per Adobe Edge Delivery Services offrendo un’interfaccia What You See Is What You Get (WYSIWYG) semplice, visiva e intuitiva. Progettato per chi crea contenuti e moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendola accessibile anche agli utenti non tecnici.
+L’editor universale rivoluziona la creazione di moduli per Edge Delivery Services di Adobe, grazie a un’interfaccia WYSIWYG (What You See Is What You Get) semplice, visiva e intuitiva. Progettato per chi crea contenuti e moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendola accessibile anche agli utenti non tecnici.
 
 Con l’editor universale è possibile progettare rapidamente moduli interattivi e reattivi utilizzando componenti predefiniti quali campi di testo, caselle di controllo e pulsanti di scelta. Il suo solido set di funzioni supporta regole dinamiche, integrazione perfetta dei dati e personalizzazione avanzata, affinché ogni modulo possa essere personalizzato in base alle tue esigenze.
 
@@ -24,7 +24,7 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 
 ![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## Funzioni principali di Universal Editor per Edge Delivery Services per Forms
+## Funzioni chiave dell’editor universale di moduli per Edge Delivery Services
 
 
 
@@ -43,14 +43,14 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 | [**Definizione dello stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Servizi di precompilazione** (disponibile a breve) | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | La definizione dello stile con CSS consente agli sviluppatori di personalizzare l’aspetto degli elementi del modulo e di creare un design visivamente accattivante e allineato all’estetica del sito web. | I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente. | Il test A/B consente alle organizzazioni di sperimentare diverse progettazioni, layout e funzionalità nei moduli per individuare le varianti che offrono prestazioni migliori. |
 
-| ![Analisi e tracciamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Frammenti modulo](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associazione dei dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![Analisi e tracciamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Frammenti di modulo](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associazione dei dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analisi e tracciamento**](https://www.aem.live/developer/martech-integration) | **Frammenti modulo** (disponibile a breve) | **Associazione dati** (disponibile a breve) |
-| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | I frammenti di modulo consentono la riutilizzabilità consentendo la creazione di sezioni di uso comune una sola volta e il riutilizzo in più moduli, garantendo coerenza e riducendo il carico di manutenzione. | L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, e supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati. |
+| [**Analisi e tracciamento**](https://www.aem.live/developer/martech-integration) | **Frammenti di modulo** (presto disponibili) | **Associazione dei dati** (presto disponibile) |
+| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | I frammenti di modulo facilitano il riutilizzo consentendo la creazione di sezioni di uso comune una sola volta e il relativo riutilizzo in più moduli, garantendo coerenza e riducendo le attività di manutenzione. | L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, e supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporazione dei moduli](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configurazione del ringraziamento](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporazione di Forms** (disponibile a breve) | [**Configurazione del ringraziamento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporazione dei moduli** (presto disponibile) | [**Configurazione del ringraziamento**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
 | Utilizza reCAPTCHA per proteggere i moduli dai bot automatizzati, garantendo una raccolta dati sicura e affidabile. | I moduli possono essere incorporati direttamente nelle pagine dei siti Edge Delivery Services utilizzando il componente incorporato dell’editor universale. | Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo. |
 
 
@@ -241,7 +241,7 @@ L’editor universale è progettato in modo da rispettare rigorosamente gli stan
 L’editor universale include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
 
 
-## Inizia a creare i moduli
+## Iniziare a creare i moduli
 
 {{universal-editor-see-also}}
 

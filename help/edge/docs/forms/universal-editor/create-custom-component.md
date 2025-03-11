@@ -7,13 +7,13 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1773'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 # Creare un componente personalizzato nell’ambiente di authoring WYSIWYG
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 
 I moduli di Edge Delivery Services offrono funzionalità di personalizzazione e permettono agli sviluppatori front-end di creare componenti per moduli su misura. Questi componenti personalizzati si integrano direttamente nell’esperienza di authoring WYSIWYG, consentendo agli autori di moduli di aggiungerli, configurarli e gestirli facilmente nell’editor di moduli. I componenti personalizzati permettono agli autori di ottimizzare le funzionalità dei moduli. Inoltre, assicurano un processo di authoring fluido e intuitivo.
@@ -72,7 +72,7 @@ Aggiungi al progetto AEM una nuova cartella e nuovi file per il componente perso
    * **id**: identificatore univoco del componente.
    * **fieldType**: i moduli supportano vari **fieldType** per acquisire tipi specifici di input dell’utente. Puoi trovare i [fieldType supportati nella sezione Byte aggiuntivi](#supported-fieldtypes).
    * **resourceType**: a ogni componente personalizzato è associato un tipo di risorsa basato sul relativo fieldType. Puoi trovare i [resourceType supportati nella sezione Byte aggiuntivi](#supported-resourcetype).
-   * **jcr:title**: è simile a un titolo, ma viene memorizzato all&#39;interno della struttura del componente.
+   * **jcr:title**: è simile a un titolo, ma viene memorizzato all’interno della struttura del componente.
    * **fd:viewType**: rappresenta il nome del componente personalizzato. È l’identificatore univoco del componente. È necessario per creare una vista personalizzata per il componente.
 
 Dopo aver aggiunto la definizione del componente, il file `_range.json` è il seguente:
@@ -187,7 +187,7 @@ Per aggiungere la proprietà personalizzata Valore passaggio, aggiungi il modell
 Lo snippet JSON definisce una proprietà personalizzata denominata **Valore passaggio** per un componente **Intervallo**. Di seguito è riportata la suddivisione di ciascun campo:
 
 * **component**: specifica il tipo di campo di input utilizzato nella finestra di dialogo Proprietà. In questo caso, `number` indica che il campo accetta valori numerici.
-* **name**: identificatore della proprietà, utilizzato per farvi riferimento nella logica del componente. In questo caso `stepValue` rappresenta l’impostazione del valore incremento per l’intervallo.
+* **name**: l’identificatore della proprietà, utilizzato per farvi riferimento nella logica del componente. In questo caso `stepValue` rappresenta l’impostazione del valore incremento per l’intervallo.
 * **label**: nome della proprietà visualizzato nella finestra di dialogo Proprietà.
 * **valueType**: definisce il tipo di dati previsto per la proprietà. `number` garantisce che siano consentiti solo gli input numerici.
 
