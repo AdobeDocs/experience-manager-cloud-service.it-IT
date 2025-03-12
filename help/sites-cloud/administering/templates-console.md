@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Scopri come la console dei modelli funge da posizione centrale per visualizzare 
 
 ## Panoramica {#overview}
 
-Durante la creazione di una pagina, devi selezionare un modello. Il modello di pagina viene utilizzato come base per la nuova pagina. [I modelli modificabili dell&#39;AEM](/help/implementing/developing/components/templates.md) possono definire la struttura della pagina risultante, qualsiasi contenuto iniziale e i componenti che possono essere utilizzati (proprietà di progettazione).
+Durante la creazione di una pagina, devi selezionare un modello. Il modello di pagina viene utilizzato come base per la nuova pagina. [I modelli modificabili di AEM](/help/implementing/developing/components/templates.md) possono definire la struttura della pagina risultante, qualsiasi contenuto iniziale e i componenti che possono essere utilizzati (proprietà di progettazione).
 
 Agli autori di contenuti viene presentata una selezione di modelli disponibili quando [creano nuove pagine nella console Sites](/help/sites-cloud/authoring/sites-console/creating-pages.md). I modelli possono essere utilizzati per creare pagine modificabili con:
 
@@ -95,12 +95,12 @@ Quando viene creato un modello, per impostazione predefinita si trova nello stat
 
 Un modello deve essere abilitato prima di poter essere utilizzato dagli autori di contenuto per creare pagine. Se un modello non è più necessario, può essere disabilitato in modo che non venga più visualizzato nella procedura guidata di creazione della pagina.
 
-* Seleziona il modello e tocca o fai clic su **Disattiva** per disabilitare il modello.
-* Seleziona il modello e tocca o fai clic su **Abilita** per abilitarlo.
+* Selezionare il modello e fare clic su **Disattiva** per disabilitare il modello.
+* Selezionare il modello e fare clic su **Abilita** per abilitarlo.
 
 ## Pubblicazione {#publish}
 
-Un modello creato con l’editor di modelli può essere utilizzato solo dopo che è stato pubblicato. Seleziona il modello e tocca o fai clic su **Publish** per pubblicarlo.
+Un modello creato con l’editor di modelli può essere utilizzato solo dopo che è stato pubblicato. Seleziona il modello e fai clic su **Pubblica** per pubblicarlo.
 
 Per poter essere utilizzati, i modelli creati con l’Editor universale non devono essere pubblicati.
 
@@ -117,7 +117,7 @@ Una volta incollato, puoi:
 * [Modifica il modello](#edit) per modificarlo in base alle esigenze.
 * [Utilizzare la finestra delle proprietà](#properties) per aggiornare il titolo del modello.
 * [Abilitare il modello](#enable-disable) in modo che possa essere utilizzato per creare la pagina.
-* [Publish il modello](#publish) se necessario.
+* [Pubblica il modello](#publish) se necessario.
 
 >[!TIP]
 >
