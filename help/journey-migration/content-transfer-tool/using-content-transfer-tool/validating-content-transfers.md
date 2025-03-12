@@ -4,9 +4,9 @@ description: Utilizzare lo strumento Content Transfer (Trasferimento contenuti) 
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Per visualizzare queste informazioni, passa a Cloud Acceleration Manager. Fai cl
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Viene visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Fai clic sul pulsante **Scarica rapporto** per scaricare il rapporto CSV completo.  Inoltre, alla fine di questo rapporto c’è il Rapporto utenti, che può essere utilizzato per la gestione degli utenti dopo la migrazione.
+Viene visualizzata una finestra di dialogo con le informazioni di riepilogo. Utilizzare le icone della guida per una descrizione più completa. Per scaricare il rapporto completo CSV (Principal Migration Report), seleziona **Rapporto di migrazione entità** dall&#39;elenco a discesa in **Scarica un file...** e fai clic sul pulsante **Scarica**. Inoltre, alla fine di questo rapporto c’è il Rapporto utenti, che può essere utilizzato per la gestione degli utenti dopo la migrazione.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 Il rapporto principale sulla migrazione conterrà:
 
 * È stata eseguita la migrazione di ogni gruppo e del primo percorso di contenuto che ha attivato la migrazione del gruppo. Il gruppo potrebbe trovarsi anche in altri percorsi, ma viene segnalato solo il primo trovato per un determinato gruppo. Indica anche se è stato trovato in un ACL o in un criterio CUG.
+* Ogni gruppo migrato come gruppo locale avrà la parola &quot;locale&quot; indicata sulla riga del gruppo.
 * Ogni gruppo non è stato migrato e il motivo per cui non è stato migrato.  In genere si tratta di uno dei seguenti motivi:
    * È un gruppo incorporato
    * È già presente nel sistema di destinazione

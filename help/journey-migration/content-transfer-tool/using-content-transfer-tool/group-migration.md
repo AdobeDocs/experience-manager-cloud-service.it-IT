@@ -2,10 +2,10 @@
 title: Migrazione dei gruppi
 description: Panoramica sulla migrazione dei gruppi in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
+source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 4%
+source-wordcount: '1914'
+ht-degree: 3%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 4%
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentazione di AEM Admin Console"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
-Nell’ambito del percorso di transizione verso l’as a Cloud Service Adobe Experience Manager (AEM), è necessario migrare i gruppi dagli AEM esistenti ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
+Come parte del percorso di transizione verso Adobe Experience Manager (AEM) as a Cloud Service, i gruppi devono essere migrati dai sistemi AEM esistenti ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
-Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli ID di Adobe per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS), che fornisce il single sign-on in tutte le applicazioni cloud di Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente sull’AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi migrati o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto AEM da migrare.  In questo modo, gli utenti del sistema cloud avranno lo stesso accesso che avevano sul loro sistema AEM sorgente.
+Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente su AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi di cui è stata effettuata la migrazione o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto di AEM da migrare.  In questo modo, gli utenti del cloud system avranno lo stesso accesso che avevano sul sistema AEM sorgente.
 
 ## Dettagli migrazione gruppo {#group-migration-detail}
 
@@ -44,11 +44,11 @@ Lo strumento Content Transfer (Trasferimento contenuti) e Cloud Acceleration Man
 
 Il percorso registrato/segnalato per un gruppo è solo il primo percorso che ha attivato la migrazione del gruppo e tale gruppo potrebbe trovarsi anche in altri percorsi di contenuto.
 
-La maggior parte dei gruppi migrati è configurata per essere gestita da IMS.  Ciò significa che un gruppo in IMS con lo stesso nome sarà collegato al gruppo in AEM e tutti gli utenti IMS nel gruppo IMS diventeranno utenti AEM e membri del gruppo in AEM.  Questo consente agli utenti di avere accesso al contenuto in base a ACL o criteri CUG per il gruppo.
+La maggior parte dei gruppi migrati è configurata per essere gestita da IMS.  Ciò significa che un gruppo in IMS con lo stesso nome verrà collegato al gruppo in AEM e che tutti gli utenti IMS nel gruppo IMS diventeranno utenti AEM e membri del gruppo in AEM.  Questo consente agli utenti di avere accesso al contenuto in base a ACL o criteri CUG per il gruppo.
 
-Si noti che i gruppi migrati non sono più considerati &quot;gruppi locali&quot; dell’AEM; sono gruppi pronti per l’IMS nell’AEM anche se potrebbero non esistere ancora nell’IMS.  Devono essere ricreati separatamente in IMS in modo che possano essere sincronizzati tra AEM e IMS.  Admin Console I gruppi possono essere creati in IMS tramite, tra gli altri metodi, singolarmente o in blocco.  Consulta [Gestione dei gruppi di utenti](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) per informazioni dettagliate sulla creazione di gruppi singolarmente o in blocco nell&#39;Admin Console.
+Tieni presente che i gruppi migrati non sono più considerati &quot;gruppi locali&quot; di AEM; sono gruppi pronti per IMS in AEM anche se potrebbero non esistere ancora in IMS.  Devono essere ricreati separatamente in IMS in modo che possano essere sincronizzati tra AEM e IMS.  I gruppi possono essere creati in IMS tramite Admin Console, tra gli altri metodi, singolarmente o in blocco.  Consulta [Gestione dei gruppi di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html) per informazioni dettagliate sulla creazione di gruppi singolarmente o in blocco in Admin Console.
 
-L’eccezione a questa configurazione IMS si verifica con i gruppi creati dalle raccolte Assets. Quando una raccolta viene creata su AEM, vengono creati gruppi per l’accesso a tale raccolta; tali gruppi vengono migrati al sistema cloud, ma non sono configurati per essere gestiti da IMS.  Per aggiungere utenti IMS a questi gruppi, è necessario aggiungerli nella pagina Proprietà gruppo dell’interfaccia utente di Assets, singolarmente o collettivamente, come parte di un altro gruppo IMS.
+L’eccezione a questa configurazione IMS si verifica con i gruppi creati dalle raccolte Assets. Quando si crea una raccolta in AEM, vengono creati gruppi per l’accesso a tale raccolta; tali gruppi vengono migrati nel sistema cloud, ma non sono configurati per essere gestiti da IMS.  Per aggiungere utenti IMS a questi gruppi, è necessario aggiungerli nella pagina Proprietà gruppo dell’interfaccia utente di Assets, singolarmente o collettivamente, come parte di un altro gruppo IMS.
 
 
 ## Migrazione del gruppo di rinuncia {#group-migration-option}
@@ -60,30 +60,56 @@ CTT versione 3.0.20 e successive include un’opzione per disabilitare la migraz
 * Deseleziona **Includi gruppi nella migrazione** per disabilitare le migrazioni dei gruppi
 * Fai clic su **Salva** per salvare e attivare la configurazione nel server
 
-Se questa impostazione è disabilitata, i gruppi non verranno migrati e non verrà generato alcun report di migrazione utenti/gruppi/ruoli né alcun report utente.
+Se questa impostazione è disabilitata, i gruppi non verranno migrati e non verranno generati rapporti sulla migrazione delle entità o sugli utenti (vedi sotto).
 
-## Report utente {#user-report}
+## Rapporto sulla migrazione principale e rapporto sugli utenti {#principal-migration-report}
 
-Durante la migrazione, gli utenti non vengono migrati, ma le relazioni utente-gruppo sul sistema di origine vengono perse a meno che non vengano in qualche modo acquisite.  Il report utente acquisisce alcune di queste informazioni in formato testo in un report utente. In esso, ogni utente viene segnalato (uno per riga) insieme a un elenco di gruppi di cui è membro (ma i gruppi non migrati non vengono inseriti in questo elenco), a meno che il suo elenco di gruppi non sia vuoto, nel qual caso l’utente non viene visualizzato. I gruppi segnalati insieme a ogni utente sono quelli di cui l’utente è membro direttamente o indirettamente nel sistema di origine; poiché i gruppi nel sistema di origine possono essere nidificati mentre nel sistema di destinazione non lo sono, questo elenco di gruppi supporta la nuova struttura di gruppi appiattiti in IMS.
+Quando i gruppi vengono inclusi durante la migrazione (impostazione predefinita), viene salvato un rapporto sulla migrazione principale che illustra cosa accade a ciascun gruppo durante la migrazione.  Per scaricare questo rapporto dopo una corretta acquisizione:
+* In CAM, vai a Trasferimento contenuti e seleziona Processi di acquisizione.
+* Fai clic sui puntini di sospensione (...) nella riga dell’acquisizione in questione e scegli &quot;Visualizza riepilogo entità&quot;.
+* Nella finestra di dialogo visualizzata, seleziona &quot;Report migrazione entità&quot; dall’elenco a discesa in &quot;Scarica un file...&quot; e fai clic sul pulsante Scarica.
+* Salva il file CSV risultante.
 
-In caso di acquisizione wipe e non wipe, i gruppi nell’elenco di un utente includeranno i gruppi migrati in entrambe le fasi.
+Alcune delle informazioni registrate per gruppo sono:
+* Se migrato, il percorso del primo ACL o CUG che ha causato la migrazione del gruppo.
+* Indica se il gruppo è stato migrato in precedenza; se l’acquisizione corrente era un’acquisizione non wipe, alcuni gruppi potrebbero essere stati migrati durante un’acquisizione precedente.
+* Se il gruppo è un gruppo integrato; questi gruppi non vengono migrati perché si trovano sempre nell’ambiente AEMaaCS di destinazione.
+* Se il gruppo non faceva parte di un ACL o di un CUG nel contenuto migrato, non sarebbe stata eseguita la migrazione.
+* Se il gruppo era locale, ad esempio un gruppo creato da una raccolta Assets, è possibile che sia stata eseguita la migrazione del gruppo e in questo caso viene aggiunta la parola &quot;locale&quot; al rapporto relativo al gruppo.
 
-Oltre ai gruppi per ogni utente, nel rapporto è presente un campo in cui è possibile aggiungere note per l’utente (e una descrizione dettagliata del significato della nota è presente anche nel rapporto).  Le note possibili sono:
+Durante la migrazione, gli utenti non vengono migrati, ma le relazioni utente-gruppo sul sistema di origine andrebbero perse a meno che non vengano in qualche modo acquisite. Il processo di acquisizione acquisisce alcune di queste informazioni in formato testo in un rapporto utente, che si trova alla fine del rapporto di migrazione principale.
 
-* Gli utenti a cui viene fatto riferimento direttamente in un ACL avranno *Nota-A* nella sezione delle note, in quanto non si tratta di un caso d&#39;uso consigliato o di una best practice.
-* Gli utenti che sono membri diretti di un gruppo predefinito avranno *Note-B* nella sezione delle note, poiché non si tratta di un caso d&#39;uso consigliato o di una best practice.
+### Report utente {#user-report}
 
-Questi casi possono verificarsi simultaneamente e contemporaneamente ai casi precedenti.
+Nella sezione Report utente vengono segnalati gli utenti (uno per riga) insieme al loro indirizzo e-mail e a un elenco di gruppi abilitati per IMS migrati durante questa acquisizione.  I gruppi che non sono stati migrati, che sono stati migrati durante un’acquisizione precedente o che sono gruppi locali non sono inclusi nell’elenco.   Se un utente non fa parte di alcun gruppo abilitato per IMS migrato e non dispone di note aggiuntive che indicano che si tratta di un caso speciale (vedi **Note** di seguito), tale utente non visualizza _not_ nel report. I gruppi riportati insieme a ogni utente sono quelli di cui l’utente è membro, direttamente o indirettamente, nel sistema di origine; poiché i gruppi nel sistema di origine possono essere nidificati mentre nel sistema di destinazione non lo sono, questo elenco di gruppi supporta la nuova struttura di gruppi appiattiti in IMS.
 
-Il report utente viene aggiunto alla fine (e fa quindi parte) del report di migrazione principale (vedi [Riepilogo finale e report](#final-summary-and-report) di seguito).  Le informazioni contenute in questo rapporto, inclusi i gruppi segnalati per ogni utente, possono essere utilizzate per creare un file di caricamento di utenti in blocco che può essere utilizzato, ad Admin Console, per creare più utenti in IMS in blocco.  È possibile modificare in blocco anche gli utenti IMS esistenti.
+Nel caso di un’acquisizione wipe e quindi non wipe, i gruppi nell’elenco di un utente dall’acquisizione non wipe saranno solo quelli migrati durante la fase non wipe.
 
-Vedi [Gestione di più utenti | Caricamento in blocco CSV](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html) per dettagli sulla creazione o modifica in blocco di utenti tramite l&#39;Admin Console.
+#### Note {#user-report-notes}
+
+Oltre ai gruppi per ogni utente, nel Rapporto utente è presente un campo in cui è possibile fornire note sull’utente (e una descrizione dettagliata del significato della nota è presente anche nel rapporto) a scopo informativo.  Le note possibili sono:
+
+* **Nota-A** Gli utenti a cui si fa riferimento direttamente in un ACL avranno *Nota-A* nella sezione delle note, in quanto non si tratta di un caso d&#39;uso consigliato o di una best practice.
+* **Nota-B** Gli utenti che sono membri diretti di un gruppo predefinito avranno *Nota-B* nella sezione delle note, poiché non si tratta di un caso d&#39;uso consigliato o di una best practice.
+* **Nota-C** Gli utenti che sono membri indiretti di un gruppo locale migrato (ad esempio un gruppo creato da una raccolta Assets) avranno *Nota-C* nella sezione delle note, poiché i gruppi locali non sono configurati per essere gestiti da IMS.
+
+Questi casi possono verificarsi simultaneamente e contemporaneamente ai casi precedenti.  _Per ulteriori informazioni sui gruppi a cui ogni nota fa riferimento per ogni utente, controllare il registro di acquisizione, che riporta queste informazioni per ogni utente._
+
+Il report utente viene aggiunto alla fine (e fa quindi parte) del report di migrazione principale (vedi [Riepilogo finale e report](#final-summary-and-report) di seguito) per fornire ai clienti una comprensione più completa dei gruppi e degli utenti e delle loro relazioni.
+
+## File di caricamento in blocco {#bulk-upload-files}
+
+Poiché la migrazione dei gruppi viene eseguita solo in AEM as a Cloud Service, è comunque necessario aggiungerli a IMS in modo che possano funzionare correttamente con AEM nel cloud. Inoltre, poiché non viene effettuata la migrazione degli utenti, è necessario aggiungerli a IMS. Questo passaggio non viene eseguito dagli strumenti di migrazione CTT/CAM, ma il processo di acquisizione crea due file di caricamento in blocco, uno per i gruppi e uno per gli utenti. Questi file possono essere modificati e quindi utilizzati, insieme alla funzionalità di caricamento in blocco di Admin Console, per creare gruppi IMS e utenti in base ai gruppi e agli utenti AEM.
+
+Consulta [Caricamento di utenti e gruppi in blocco in IMS](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md) per informazioni dettagliate su come utilizzare i file di caricamento in blocco per creare utenti e gruppi utilizzando Admin Console.
+
+Vedi anche [Gestione utenti](https://helpx.adobe.com/ca/enterprise/using/users.html) per ulteriori dettagli sulla gestione degli utenti di AEM as a Cloud Service.
 
 ## Considerazioni aggiuntive {#additional-considerations}
 
-* Se l&#39;impostazione **Cancella contenuto esistente nell&#39;istanza Cloud prima dell&#39;acquisizione** è impostata, i gruppi precedentemente trasferiti all&#39;istanza di Cloud Service vengono eliminati insieme all&#39;intero archivio esistente; viene creato un nuovo archivio in cui viene acquisito il contenuto. Questa procedura consente inoltre di ripristinare tutte le impostazioni, incluse le autorizzazioni sull&#39;istanza del Cloud Service di destinazione, ed è true per tutti gli utenti aggiunti al gruppo **amministratori**. L&#39;utente amministratore deve essere aggiunto nuovamente al gruppo **amministratori** per recuperare il token di accesso per l&#39;acquisizione CTT/CAM.
+* Se l&#39;impostazione **Cancella contenuto esistente nell&#39;istanza Cloud prima dell&#39;acquisizione** è impostata, i gruppi precedentemente trasferiti all&#39;istanza Cloud Service vengono eliminati insieme all&#39;intero archivio esistente; viene creato un nuovo archivio in cui viene acquisito il contenuto. Questo processo reimposta anche tutte le impostazioni, incluse le autorizzazioni sull&#39;istanza di Cloud Service di destinazione, ed è true per tutti gli utenti aggiunti al gruppo **amministratori**. L&#39;utente amministratore deve essere aggiunto nuovamente al gruppo **amministratori** per recuperare il token di accesso per l&#39;acquisizione CTT/CAM.
 * Quando si eseguono acquisizioni senza cancellazione (**Il contenuto esistente** non viene impostato), se il contenuto non viene trasferito perché non è stato modificato dal trasferimento precedente, i gruppi associati a tale contenuto non vengono trasferiti. Questa regola è vera anche se i gruppi sono cambiati nel sistema di origine. Questo perché i gruppi vengono migrati solo insieme al contenuto a cui sono associati. Per questo motivo, in questo caso non verrà eseguita la migrazione dei gruppi che sono membri di un gruppo nel sistema di origine, a meno che non facciano parte di un gruppo diverso di cui è in corso la migrazione o nell&#39;ACL di contenuti diversi di cui è in corso la migrazione. Per migrare successivamente questi gruppi, puoi utilizzare i pacchetti, eliminare i gruppi dalla destinazione e migrare nuovamente il contenuto pertinente o eseguire nuovamente la migrazione utilizzando un’acquisizione wipe.
-* Durante un&#39;acquisizione non wipe, se esiste un gruppo con gli stessi dati vincolati all&#39;univocità (rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId) sia sull&#39;istanza AEM di origine che sull&#39;istanza AEM Cloud Service di destinazione, il gruppo in questione è _not_ migrato e il gruppo esistente in precedenza sul cloud rimane invariato. Questa operazione viene registrata nel report di migrazione dell’entità.
+* Durante un’acquisizione non wipe, se esiste un gruppo con gli stessi dati vincolati all’univocità (rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId) sia sull’istanza AEM di origine che sull’istanza AEM Cloud Service di destinazione, il gruppo in questione è _not_ migrato e il gruppo esistente precedentemente sul cloud system rimane invariato. Questa operazione viene registrata nel report di migrazione dell’entità.
 * Vedere [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 ## Riepilogo finale e relazione
