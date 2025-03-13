@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1028'
 ht-degree: 16%
 
 ---
 
 
-# Aggiungere un nome di dominio personalizzato {#adding-cdn}
+# Aggiungere un nome di dominio personalizzato {#adding-custom-domain-name}
 
 Scopri come aggiungere un nome di dominio personalizzato utilizzando **Impostazioni dominio** in Cloud Manager.
 
@@ -29,7 +29,7 @@ Prima di aggiungere un nome di dominio personalizzato in Cloud Manager, è neces
 >
 >Se utilizzi una rete CDN gestita da Adobe, devi comunque aggiungere il dominio a Cloud Manager.
 
-## Dove aggiungere nomi di dominio personalizzati {#where-to-add-cdn}
+## Dove aggiungere nomi di dominio personalizzati {#where-to-add-custom-domain-name}
 
 È possibile aggiungere un nome di dominio personalizzato dalla [pagina Impostazioni dominio](#adding-cdn-settings) in Cloud Manager.
 
@@ -37,7 +37,7 @@ Quando si aggiunge un nome di dominio personalizzato, il dominio viene gestito u
 
 I passaggi per entrambi i metodi descritti in questo documento si basano su Fastly. Se utilizzi una rete CDN (Content Delivery Network) diversa, configura il dominio con la rete CDN che hai scelto di utilizzare.
 
-## Aggiungere un nome di dominio personalizzato {#adding-cdn-settings}
+## Aggiungere un nome di dominio personalizzato {#adding-custom-domain-name-settings}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -75,12 +75,12 @@ Quando si immette il nome di dominio, non includere `http://`, `https://` o spaz
 
    >[!NOTE]
    >
-   >Se utilizzi un tuo certificato SSL gestito dal cliente (OV/EV o DV) e desideri utilizzare un provider ***provider*** CDN gestito dal cliente, puoi saltare l&#39;aggiunta di un certificato SSL. Piuttosto, passa direttamente a [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando è pronto.
+   >Se utilizzi un certificato SSL personalizzato gestito dal cliente (OV/EV o DV), non è necessario aggiungere un certificato SSL. Questa regola si applica anche se intendi utilizzare un ***provider*** CDN (Content Delivery Network) gestito dal cliente. Piuttosto, passa direttamente a [Aggiungi una configurazione CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando è pronto.
 
 
 ### Passaggi del certificato gestito di Adobe {#adobe-managed-cert-steps}
 
-Se hai selezionato il tipo di certificato *Adobe certificato gestito*, completa il passaggio seguente nella finestra di dialogo **Verifica dominio**.
+Se hai selezionato il tipo di certificato *Certificato gestito da Adobe*, completa il passaggio seguente nella finestra di dialogo **Verifica dominio**.
 
 ![Passaggi del certificato gestito di Adobe](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 

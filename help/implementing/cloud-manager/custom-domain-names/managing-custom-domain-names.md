@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager consente di modificare, aggiornare, sostituire, verificare ed elim
 
 In Adobe Cloud Manager, potrebbe essere utile modificare la configurazione di un nome di dominio personalizzato per i seguenti motivi:
 
-* **Cambio degli ambienti**: applicare la configurazione corretta a seconda che il contenuto venga distribuito agli utenti finali (Publish) o agli utenti interni (Author).
+* **Cambio degli ambienti**: applicare la configurazione corretta a seconda che il contenuto venga distribuito agli utenti finali (pubblicazione) o agli utenti interni (creazione).
 * **Aggiornamenti della sicurezza**: per eseguire l&#39;aggiornamento a un certificato SSL più recente per migliorare la sicurezza o la conformità.
 * **Modifica della strategia di distribuzione**: assicurarsi che il certificato SSL corretto venga applicato a un ambiente specifico per la crittografia e l&#39;accesso al sito corretti.
 
@@ -31,7 +31,7 @@ In Adobe Cloud Manager, potrebbe essere utile modificare la configurazione di un
 
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 
-1. Nell&#39;angolo superiore sinistro della pagina fare clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu sul lato sinistro.
+1. Nell’angolo in alto a sinistra della pagina, fai clic sull’![icona Mostra menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu a sinistra.
 
 1. Nell&#39;intestazione **Servizi** fare clic su ![Icona social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mapping dominio**.
 
@@ -39,9 +39,9 @@ In Adobe Cloud Manager, potrebbe essere utile modificare la configurazione di un
 
 1. Fai clic su **Modifica**.
 
-1. Nella finestra di dialogo **Modifica configurazione CDN** eseguire le operazioni seguenti:
+1. Nella finestra di dialogo **Modifica configurazione dominio** eseguire le operazioni seguenti:
 
-   * Nell&#39;elenco a discesa **Livello** selezionare il livello (Publish o Anteprima) che si desidera utilizzare.
+   * Nell&#39;elenco a discesa **Livello** selezionare il livello (Pubblica o Anteprima) che si desidera utilizzare.
    * Nell&#39;elenco a discesa **Certificato SSL** selezionare il certificato SSL che si desidera utilizzare.
 
 1. Fai clic su **Aggiorna**.
@@ -81,7 +81,7 @@ Vedi anche [Aggiungere un nome di dominio personalizzato](/help/implementing/clo
 
    | Se hai selezionato il tipo di certificato | Descrizione |
    | --- | ---  |
-   | Certificato gestito da Adobe | a. Completare i [passaggi del certificato gestito di Adobe](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Dopo aver completato i passaggi della finestra di dialogo **Verifica dominio**, fare clic su **Verifica**.<ul><li>L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.</li><li>Cloud Manager verifica infine la proprietà del nome di dominio e aggiorna lo stato nella tabella **Impostazioni dominio**. Per ulteriori dettagli, vedere [Verifica stato nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Verifica stato dominio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. È ora possibile [aggiungere un certificato SSL gestito da Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Certificato gestito da Adobe | a. Completa i [passaggi del certificato gestito di Adobe](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Dopo aver completato i passaggi della finestra di dialogo **Verifica dominio**, fare clic su **Verifica**.<ul><li>L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS.</li><li>Cloud Manager verifica infine la proprietà del nome di dominio e aggiorna lo stato nella tabella **Impostazioni dominio**. Per ulteriori dettagli, vedere [Verifica stato nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li>![Verifica stato dominio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. È ora possibile [aggiungere un certificato SSL gestito da Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificato gestito dal cliente | a. Fare clic su **OK**.<br> b. Ora puoi [aggiungere un certificato SSL gestito dal cliente (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Dopo aver aggiunto il certificato, il nome di dominio viene contrassegnato come verificato nella tabella **Impostazioni dominio**. Per ulteriori dettagli, vedere [Verifica stato nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).</li></ul><br>![Verificare il dominio per un certificato EV/OV gestito dal cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
@@ -112,7 +112,7 @@ L’utente con il ruolo **Proprietario business** o **Responsabile dell’implem
 
 1. Dalla pagina **Ambienti**, accedi a una schermata dei dettagli dell&#39;ambiente di tuo interesse.
 
-1. Nella tabella dei nomi di dominio, identifica la riga del nome di dominio personalizzato che desideri eliminare.
+1. Nella tabella Mappature dominio, identifica la riga del nome di dominio personalizzato che desideri eliminare.
 
 1. Fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) all&#39;estrema destra della riga.
 

@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 20%
 
 ---
@@ -37,7 +37,7 @@ Vengono visualizzati i dettagli dello stato. Il dominio personalizzato è pronto
 
 >[!NOTE]
 >
->Se si utilizza un certificato SSL *gestito (DV) da Adobe* con il dominio, Cloud Manager attiva automaticamente la verifica quando si fa clic su **Verifica** nella finestra di dialogo Verifica dominio quando si [aggiunge un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Se si utilizza un *certificato SSL gestito (DV) di Adobe* con il dominio, Cloud Manager attiva automaticamente la verifica quando si fa clic su **Verifica** nella finestra di dialogo Verifica dominio quando si [aggiunge un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Se prevedi di utilizzare un **certificato SSL gestito dal cliente (OV/EV)**, il dominio viene verificato *dopo* che [aggiungi il certificato SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
@@ -76,7 +76,7 @@ L’errore viene corretto come segue:
 
 * Collega il dominio APEX e tutti i sottodomini all’account Fastly AEM as a Cloud Service con questa opzione. Per ulteriori informazioni, consulta [Utilizzo dei domini nella documentazione Fastly](https://docs.fastly.com/en/guides/working-with-domains).
 
-* Se il dominio apex ha più sottodomini per siti AEM as a Cloud Service e non AEM che devono essere collegati a diversi account Fastly, prova a installare il dominio in Cloud Manager. Questo processo consente di gestire le connessioni del sottodominio tra diversi account Fastly. Se l’installazione del dominio non riesce, crea un ticket di assistenza clienti con Fastly in modo che Adobe possa eseguire il follow-up con Fastly per tuo conto.
+* Se il dominio apex ha più sottodomini per siti AEM as a Cloud Service e non AEM che devono essere collegati a diversi account Fastly, prova a installare il dominio in Cloud Manager. Questo processo consente di gestire le connessioni del sottodominio tra diversi account Fastly. Se l’installazione del dominio non riesce, crea un ticket di assistenza clienti con Fastly in modo che Adobe possa eseguire il follow-up con Fastly a tuo nome.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ L’errore viene corretto come segue:
 
 ## Configurazioni CDN preesistenti per i nomi di dominio personalizzati {#pre-existing-cdn}
 
-Se disponi già di una configurazione CDN per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente**. Ti incoraggia ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che possano essere gestite e visualizzate all’interno di Cloud Manager.
+Se disponi già di una configurazione CDN (Content Delivery Network) per i nomi di dominio personalizzati, viene visualizzato un messaggio informativo sulle pagine **Nomi di dominio personalizzati** e **Ambiente**. Ti incoraggia ad aggiungere queste configurazioni tramite l’interfaccia utente in modo che possano essere gestite e visualizzate all’interno di Cloud Manager.
 
 Il messaggio scompare dopo che tutte le configurazioni dell’ambiente preesistenti sono state migrate utilizzando l’interfaccia utente. Potrebbero essere necessari 1-2 giorni lavorativi affinché il messaggio non venga più visualizzato.
 
