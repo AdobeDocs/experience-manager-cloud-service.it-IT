@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 896a2927c0f5733ab23ca9f6c9e975f8388daff9
+source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 48%
+source-wordcount: '1493'
+ht-degree: 46%
 
 ---
 
@@ -59,6 +59,10 @@ Il supporto UUID dei frammenti di contenuto è ora disponibile in versione GA. L
 **Dynamic Media con supporto OpenAPI nell&#39;Editor frammenti di contenuto e in GraphQL**
 
 I Assets memorizzati in programmi AEM as a Cloud Service diversi dai frammenti di contenuto e abilitati con la nuova funzionalità Dynamic Media con OpenAPI possono ora essere utilizzati nei frammenti di contenuto. Il selettore delle immagini nel nuovo Editor frammenti di contenuto ora consente di selezionare archivi &quot;remoti&quot; come origine per le risorse di immagini a cui fare riferimento nel frammento. E alla consegna di tali frammenti di contenuto tramite AEM GraphQL, la risposta JSON ora include le proprietà richieste per le risorse remote (assetId, repositoryId), in modo che le applicazioni client possano creare i rispettivi Dynamic Media con URL OpenAPI per recuperare l’immagine.
+
+**Rollout dell&#39;Editor frammenti di contenuto**
+
+Continueremo ad abilitare il nuovo Editor frammenti di contenuto basato sull’interfaccia utente di Spectrum in AEM as a Cloud Service. Dopo essere diventato predefinito per tutti gli ambienti di sviluppo di Cloud Service a novembre 2024, verrà impostato come predefinito per tutti gli ambienti di stage il 1° aprile 2025 e per tutti gli ambienti di produzione il 1° maggio 2025. In tutti i casi, gli utenti avranno ancora la possibilità di ripristinare l’Editor tradizionale dei frammenti di contenuto nell’interfaccia utente touch di AEM.
 
 **API HTTP per la traduzione**
 
