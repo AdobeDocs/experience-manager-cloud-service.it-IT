@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Un modello dati modulo (FDM) è un’estensione dello schema JSON che puoi utili
 * [Creazione di Forms e frammenti adattivi](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Anteprima con dati di esempio](#preview-ic)
-* [utilizzo del servizio Modello dati modulo](#prefill)
+* [Utilizzo del servizio Modello dati modulo](#prefill)
 * [Riscrivere i dati del modulo adattivo inviati nelle origini dati](#write-af)
 * [Richiama servizi tramite regole modulo adattivo](#invoke-services)
 
@@ -165,7 +165,7 @@ Ad esempio, la regola seguente richiama un servizio get che utilizza come input 
 
 È possibile [richiamare un modello dati modulo dall&#39;editor regole utilizzando funzioni personalizzate](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Per richiamare il modello dati del modulo (FDM), aggiungi un modello dati del modulo al inserisco nell&#39;elenco Consentiti di. Per aggiungere un modello dati modulo a un elenco Consentiti:
 
-1. Passa alla console Web Experience Manager all&#39;indirizzo `https://server:host/system/console/configMgr`.
+1. Passa alla console Web di Experience Manager all&#39;indirizzo `https://server:host/system/console/configMgr`.
 1. Individua **[!UICONTROL Inserimento in whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory]**.
 1. Fai clic sull&#39;icona ![icona più](/help/forms/assets/Smock_Add_18_N.svg) per aggiungere la configurazione.
 1. Aggiungi **[!UICONTROL Schema percorso contenuto]** per specificare il percorso del Forms adattivo.  Per impostazione predefinita, il valore è `/content/forms/af/(.*)`, che include tutti i Forms adattivi. Puoi anche specificare il percorso per un modulo adattivo specifico.
@@ -178,7 +178,7 @@ La configurazione aggiunta viene salvata nell&#39;inserimento nella whitelist a 
 
 >[!NOTE]
 >
-> Per richiamare un modello di dati modulo (FDM) dall’editor di regole utilizzando funzioni personalizzate tramite un progetto di archetipo AEM:
+> Per richiamare un modello dati modulo (FDM) dall’editor di regole utilizzando funzioni personalizzate tramite un progetto di archetipo AEM:
 >
 >1. [Crea un file di configurazione](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Imposta le proprietà di getContentPathPattern e getFormDataModelPathPattern.

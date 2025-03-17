@@ -6,16 +6,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 49%
+source-wordcount: '1069'
+ht-degree: 51%
 
 ---
 
 # Creare moduli autonomi tramite l’Editor universale (WYSIWYG)
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 Questo articolo illustra come creare moduli autonomi con l&#39;Editor universale selezionando un modello basato su Edge Delivery Services dalla Creazione guidata moduli. È inoltre possibile pubblicare i moduli creati con Universal Editor in AEM Edge Delivery Services.
 
@@ -58,7 +58,13 @@ Per creare un modulo adattivo indipendente utilizzando l’editor universale, ef
 
       ![Crea Forms EDS](/help/edge/assets/create-eds-forms.png)
 
+
+      Quando selezioni un modello basato su Edge Delivery Services, il pulsante **[!UICONTROL Crea]** è abilitato.
+   1. (Facoltativo) Nelle schede **[!UICONTROL Data Source]** o **[!UICONTROL Invio]**, puoi selezionare un&#39;origine dati o inviare un&#39;azione.
+   1. (Facoltativo) Nella scheda **[!UICONTROL Consegna]**, è possibile specificare una data di pubblicazione o di annullamento della pubblicazione per un modulo adattivo.
+
    1. Fai clic su **[!UICONTROL Crea]** per visualizzare la procedura guidata **Crea modulo**.
+   1. Specificare **Nome** e **Titolo**.
    1. Specifica l’**URL di GitHub**. Ad esempio, se l&#39;archivio GitHub si chiama `edsforms`, si trova sotto l&#39;account `wkndforms`, l&#39;URL è:
       `https://github.com/wkndforms/edsforms`
    1. Fai clic su **[!UICONTROL Crea]**.
@@ -160,6 +166,6 @@ Ci sono problemi durante il caricamento del modulo? Di seguito sono riportati al
 <!-- * **JSON Display**: If you see only JSON data instead of the actual form, your form block might be outdated. You can update it to the latest version available on https://github.com/adobe-rnd/aem-boilerplate-forms.
 -->
 
-## Inizia a creare i moduli
+## Iniziare a creare i moduli
 
 {{universal-editor-see-also}}

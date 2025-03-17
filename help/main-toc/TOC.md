@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6d6b857bf36771b92b8f11db5ce6608023d1fac0
+source-git-commit: 86c5ab645df0d94d4f9d538e8044b9ee7433a61b
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6082'
 ht-degree: 98%
 
 ---
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Come avviare l’authoring con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Come creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Come creare il primo modulo con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guida all’interfaccia dell’editor universale - Spiegazione su strumenti, funzioni e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendere i moduli facili da usare - Design reattivo nell’editor universale](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Progettare moduli di bell’aspetto - Guida all’attribuzione stile e all’applicazione del tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1046,6 +1046,7 @@ ht-degree: 98%
          + [Proteggere i moduli dallo spam - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Come pubblicare e distribuire moduli - Guida alla pubblicazione con l’editor universale](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Componenti per moduli personalizzati - Guida all’editor universale per sviluppatori](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [Integrazione del modello dati modulo: integrazione di Forms con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare moduli utilizzando Fogli Google o Excel - Guida dettagliata](/help/edge/docs/forms/create-forms.md)
