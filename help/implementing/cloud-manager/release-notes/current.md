@@ -4,9 +4,9 @@ description: Ulteriori informazioni sulla versione 2025.3.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 5983c8579dd8606bc8bedfe6fa2a3838493452cd
+source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 31%
 
 ---
@@ -33,6 +33,8 @@ La prossima pubblicazione è pianificata per il venerdì 10 aprile 2025.
   La possibilità di eseguire più pipeline contemporaneamente è stata introdotta nella pagina Pipeline. Gli utenti devono selezionare almeno una pipeline ma non più di dieci. Nell&#39;angolo superiore destro della pagina Pipeline, fare clic su **Esegui selezionati (x)**. Viene visualizzata una finestra di dialogo modale in cui sono elencate tutte le pipeline che non possono essere avviate. Fai clic su **Esegui** per avviare tutte le pipeline valide.
 
   ![Finestra di dialogo Esegui pipeline selezionate](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+
+  Vedi anche [Eseguire più pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
 
 * **Supporto esteso alle versioni di Node.js**
 
