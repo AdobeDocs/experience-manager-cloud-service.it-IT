@@ -1,17 +1,17 @@
 ---
-title: Come si crea un modello di dati modulo (FDM) per un modulo in Universal Editor?
+title: Come si integra il modello dati modulo (FDM) per un modulo in Universal Editor?
 description: Scopri come creare moduli basati su un modello di dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti modello dati in FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 5%
 
 ---
-
 
 # Integrare i moduli con il modello dati del modulo nell’editor universale
 
@@ -128,7 +128,7 @@ Quando si crea un modulo non basato su schema, non viene configurata alcuna orig
 
    ![Genera modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   È inoltre possibile aggiungere manualmente l&#39;associazione dati a un elemento modulo specificandolo nelle proprietà **Riferimento associazione** dell&#39;elemento modulo.
+   È necessario aggiungere manualmente l&#39;associazione dati a un elemento modulo specificandolo nelle proprietà **Riferimento associazione** dell&#39;elemento modulo.
 Aggiungiamo ad esempio un riferimento di associazione dati alla casella di testo **Nome animale** già presente nel modulo:
 
    ![Aggiungere manualmente il dinding dati per un campo modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

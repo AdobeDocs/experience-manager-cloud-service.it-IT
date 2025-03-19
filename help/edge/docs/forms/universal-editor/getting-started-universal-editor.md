@@ -4,9 +4,9 @@ description: Questo tutorial ti mostrerà come iniziare subito con un nuovo prog
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1857'
 ht-degree: 98%
 
 ---
@@ -195,7 +195,7 @@ Per integrare:
 
 Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi [iniziare a creare e aggiungere moduli al progetto AEM](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Creare AEM Forms utilizzando WYSIWYG
+## Creare Forms con WYSIWYG
 
 Puoi aprire il progetto AEM nell’editor universale per l’authoring WYSIWYG, dove puoi modificare il progetto e aggiungere la sezione Modulo adattivo per includere i moduli Edge Delivery Services nelle pagine del progetto AEM.
 

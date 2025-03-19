@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 51%
+source-wordcount: '1215'
+ht-degree: 44%
 
 ---
 
@@ -52,8 +52,9 @@ Per creare un modulo adattivo indipendente utilizzando l’editor universale, ef
 
 1. **Creazione di un modulo adattivo nell&#39;istanza di authoring di AEM Forms**
 
-   1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
-   1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.1. Seleziona **[!UICONTROL Crea]** > **[!UICONTROL Moduli adattivi]**. Viene aperta la procedura guidata.
+   1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
+   1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+   1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata.
    1. Nella scheda **Source** selezionare un modello di modulo basato su Edge Delivery Services:
 
       ![Crea Forms EDS](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ Di seguito viene descritto come accedere al modulo su Edge Delivery Services:
 La struttura URL rimane invariata sia per le versioni di staging sia per quelle live. Tuttavia, il contenuto visualizzato varia in base al contesto:
 
 ![Visualizza modulo pubblicato](/help/edge/assets/eds-view-publish-form.png)
+
+## Gestione moduli
+
+Puoi eseguire diverse operazioni sul modulo utilizzando l’interfaccia utente di AEM Forms.
+
+1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+
+1. Selezionare un modulo e sulla barra degli strumenti vengono visualizzate le operazioni seguenti che è possibile eseguire sul modulo selezionato.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Operazione</strong></p> </td>
+   <td><p><strong>Descrizione</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Modifica</p> </td>
+   <td><p>Apre il modulo in modalità di modifica.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Proprietà</p> </td>
+   <td><p>Fornisce opzioni per modificare le proprietà del modulo.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Copiare</p> </td>
+   <td><p> Fornisce opzioni per copiare il modulo e incollarlo nella posizione desiderata. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Anteprima</p> </td>
+   <td><p>Fornisce opzioni per visualizzare in anteprima il modulo come HTML o per eseguire un'anteprima personalizzata unendo i dati di un file XML con il modulo. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Download</p> </td>
+   <td><p>Scarica il modulo selezionato.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Avvia revisione/Gestisci revisione</p> </td>
+   <td><p>Consente di avviare e gestire una revisione del modulo selezionato.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Pubblica/Annulla pubblicazione</p> </td>
+   <td><p>Pubblica/annulla la pubblicazione del modulo selezionato.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Elimina</p> </td>
+   <td><p>Elimina il modulo selezionato.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Confronto</p> </td>
+   <td><p>Confronta due moduli diversi a scopo di anteprima.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## Risoluzione dei problemi
 
