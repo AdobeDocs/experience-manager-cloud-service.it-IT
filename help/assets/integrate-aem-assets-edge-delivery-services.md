@@ -1,55 +1,55 @@
 ---
 title: Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services
-description: Scopri come integrare AEM Assets con i Edge Delivery Services. Questa integrazione consente di integrare AEM Assets con Microsoft Word e Google Docs, integrare AEM Assets con Universal Editor, integrare Dynamic Media con funzionalità OpenAPI con Universal Editor e integrare Dynamic Media con funzionalità OpenAPI con Microsoft Word e Google Docs.
+description: Scopri come integrare AEM Assets con Edge Delivery Services. Questa integrazione consente di integrare AEM Assets con Microsoft Word e Google Docs, integrare AEM Assets con Universal Editor, integrare Dynamic Media con le funzionalità OpenAPI con Universal Editor e integrare Dynamic Media con le funzionalità OpenAPI con Microsoft Word e Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 105081c9124a85581240b19866adc271ea8bb190
+source-git-commit: 38d4ad078233fcb22422b8c771e7e553cc082c41
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '757'
 ht-degree: 3%
 
 ---
 
 # Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
 
-![EDS2](/help/assets/assets/EDS2.png)
+![risorse AEM con UE](/help/assets/assets/EDS2.png)
 
-[Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) è un insieme componibile di servizi che consente un elevato grado di flessibilità nel modo in cui si creano e distribuiscono i contenuti sul sito Web. È possibile utilizzare sia la [gestione dei contenuti AEM](/help/sites-cloud/authoring/author-publish.md) che la [creazione di WYSIWYG utilizzando l&#39;editor universale e l&#39;authoring basato su documenti](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) è un insieme componibile di servizi che consente un elevato grado di flessibilità nel modo in cui si creano e distribuiscono i contenuti sul sito Web. È possibile utilizzare sia la [gestione dei contenuti di AEM](/help/sites-cloud/authoring/author-publish.md) che la [creazione di WYSIWYG utilizzando l&#39;editor universale e l&#39;authoring basato su documenti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 Puoi modificare il contenuto in:
 
-* [Documentazione di Microsoft Word o Google](#integrate-aem-assets-with-document-based-authoring-tools)
+* [Microsoft Word o Google Docs](#integrate-aem-assets-with-document-based-authoring-tools)
 * [Editor universale](#integrate-aem-assets-with-universal-editor)
 
 Dopo aver modificato il contenuto, puoi pubblicarlo in Edge Delivery Services.
 
-## Integrazione di AEM Assets con i flussi di authoring basati su documenti per i Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
+## Integrazione di AEM Assets con i flussi di authoring basati su documenti per Edge Delivery Services {#integrate-aem-assets-with-document-based-authoring-tools}
 
 L’integrazione di AEM Assets con gli strumenti di authoring basato su documenti, come Microsoft Word o Google Docs, fornisce direttamente un selettore di risorse nell’editor. Utilizza questo selettore di risorse per accedere a AEM Assets e inserire nel documento le risorse approvate.
 
-Se disponi già di un sito Web Edge Delivery Services, consulta [Plug-in AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) per integrare AEM Assets con il progetto AEM esistente. Se non disponi di un sito web Edge Delivery Services, consulta le sezioni [Prerequisiti](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integrazione di AEM Assets con l&#39;ambiente di authoring basato su documenti](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) di seguito.
+Se disponi già di un sito Web Edge Delivery Services, consulta [Plug-in AEM Assets](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) per integrare AEM Assets con il progetto AEM esistente. Se non disponi di un sito Web Edge Delivery Services, consulta le sezioni [Prerequisiti](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integrazione di AEM Assets con l&#39;ambiente di authoring basato su documenti](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) di seguito.
 
 ### Prerequisiti{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
 Prima di iniziare, accertati che l’ambiente di authoring basato su documenti sia pronto:
 
-* È possibile integrare l’AEM con uno strumento di authoring basato su documenti per configurare l’ambiente di authoring. Consulta [Guida introduttiva - Esercitazione per sviluppatori](https://www.aem.live/developer/tutorial) per configurare l&#39;ambiente di authoring.
+* Integra AEM con uno strumento di authoring basato su documenti per configurare l’ambiente di authoring. Consulta [Guida introduttiva - Esercitazione per sviluppatori](https://www.aem.live/developer/tutorial) per configurare l&#39;ambiente di authoring.
 
 ### Integrazione di AEM Assets con l’ambiente di authoring basato su documenti{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
-Configura il plug-in Sidekick AEM Assets per utilizzare le risorse durante l’authoring dei contenuti nei documenti di Microsoft Word o Google.
+Configura il plug-in AEM Assets Sidekick per utilizzare le risorse durante l’authoring dei contenuti in Microsoft Word o Google Docs.
 
-* Consulta [Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) per informazioni su come accedere e utilizzare AEM Assets nei documenti di Microsoft Word o Google.
-* Per informazioni dettagliate sulla configurazione, consulta [Configurazione del plug-in di Sidekick di Adobe Experience Manager Assets](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin).
-  ![my-assets-sidebar](/help/assets/assets/my-assets-sidebar.png)
+* Consulta [Adobe Experience Manager Assets Sidekick Plugin](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) per informazioni su come accedere e utilizzare AEM Assets in Microsoft Word o Google Docs.
+* Per informazioni dettagliate sulla configurazione, vedere [Configurazione del plug-in di Adobe Experience Manager Assets Sidekick](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin).
+  ![utilizza dynamic media con funzionalità openAPI in ms word e google docs](/help/assets/assets/my-assets-sidebar.png)
 
-## Distribuire risorse tramite Dynamic Media con funzionalità OpenAPI {#integrate-Dynamic-Media-with-OpenAPI-capabilities-with-Microsoft-Word-Google-Docs-and-universal-editor}
+## Distribuire risorse utilizzando Dynamic Media con funzionalità OpenAPI {#integrate-Dynamic-Media-with-OpenAPI-capabilities-with-Microsoft-Word-Google-Docs-and-universal-editor}
 
 Puoi anche utilizzare le risorse distribuite tramite DM con funzionalità OpenAPI. Offre numerosi vantaggi, tra cui:
 
-* Accedi solo alle risorse approvate dal marchio (immagini, video, PDF e altri tipi di risorse) dai Cloud Service AEM Assets.
+* Accedi solo alle risorse approvate dal marchio (immagini, video, PDF e altri tipi di risorse) da AEM Assets Cloud Services.
 * Governance (riferimenti e copie della risorsa): per facilitare la propagazione automatica degli eventi del ciclo di vita delle risorse come scadenza, eliminazione e aggiornamenti.
 * Rappresentazioni di immagini dinamiche e ritaglio avanzato.
-* Ottimizzazione e distribuzione di contenuti multimediali avanzati, ad esempio streaming video adattivo pronto all’uso e distribuzione originale delle risorse per i PDF.
+* Ottimizzazione e distribuzione di contenuti multimediali avanzati, ad esempio streaming video adattivo pronto all’uso e distribuzione di risorse originali per PDF.
 * Rapporto impression a livello di risorsa ([disponibilità limitata](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
 Per ulteriori dettagli sulle funzionalità, consulta la documentazione di [Dynamic Media con funzionalità OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
@@ -58,14 +58,14 @@ Per ulteriori dettagli sulle funzionalità, consulta la documentazione di [Dynam
 
 Per utilizzare il riferimento della risorsa, è necessario disporre di:
 
-* Adesione a un ambiente di Cloud Service Assets in cui è abilitato Dynamic Media con funzionalità Open API.
+* Adesione a un ambiente Assets Cloud Service in cui è abilitato Dynamic Media con funzionalità Open API.
 * Una licenza Dynamic Media.
 * Il plug-in della barra laterale di AEM Assets è abilitato con il riferimento di copia per le risorse immagine. Per ulteriori dettagli, vedere [questo](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) per l&#39;authoring basato su documenti e [questo](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) per l&#39;authoring basato su Universal Editor.
-* Assets che sono approvati. Le risorse approvate hanno `dam:status=Approved` tramite il backend o le azioni dell&#39;interfaccia utente dei Cloud Service di Assets.
+* Assets che sono approvati. Le risorse approvate hanno `dam:status=Approved` tramite il backend o le azioni dell&#39;interfaccia utente di Assets Cloud Services.
 
 ### Utilizzare le risorse distribuite tramite Dynamic Media con funzionalità OpenAPI{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Per utilizzare le risorse distribuite tramite Dynamic Media con funzionalità OpenAPI durante la creazione dei contenuti, consulta:
+Per utilizzare le risorse distribuite tramite Dynamic Media con funzionalità OpenAPI durante l’authoring dei contenuti, consulta:
 
 * [Utilizzo dei riferimenti immagine](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [Utilizzo di riferimenti video](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
@@ -77,9 +77,9 @@ Guarda questo video per scoprire come distribuire le risorse utilizzando Dynamic
 
 ## Sito Edge Delivery Services di esempio{#example-of-an-Edge-Delivery-Services-site}
 
-Vedi [Viaggi WKND](http://bit.ly/3DExLnf). Questo sito viene creato utilizzando le funzionalità di authoring basato su documenti dei Edge Delivery Services. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), utilizzando Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse. Una volta creato, il contenuto viene pubblicato direttamente dal documento. Per questa configurazione di authoring basato su documenti, tutti i file essenziali, le cartelle, le configurazioni, lo stile e i codici di funzionalità del sito Web sono archiviati in questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
+Vedi [Viaggi WKND](http://bit.ly/3DExLnf). Questo sito viene creato utilizzando le funzionalità di authoring basato su documenti di Edge Delivery Services. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT), utilizzando Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse. Una volta creato, il contenuto viene pubblicato direttamente dal documento. Per questa configurazione di authoring basato su documenti, tutti i file essenziali, le cartelle, le configurazioni, lo stile e i codici di funzionalità del sito Web sono archiviati in questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks).
 
-## Integrazione di AEM Assets con flussi di authoring per Edge Delivery Services basati su Universal Editor {#integrate-aem-assets-with-universal-editor}
+## Integrazione di AEM Assets con flussi di authoring basati su Universal Editor per Edge Delivery Services {#integrate-aem-assets-with-universal-editor}
 
 Configura l’Editor universale per l’integrazione con AEM Assets. Questa integrazione consente di utilizzare Dynamic Media con funzionalità OpenAPI per distribuire le risorse.
 
