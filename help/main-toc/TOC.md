@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
+source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6103'
 ht-degree: 98%
 
 ---
@@ -1389,6 +1389,7 @@ ht-degree: 98%
          + [Internazionalizzazione delle stringhe dell’interfaccia utente](/help/implementing/developing/extending/i18n/dev.md)
          + [Utilizzo di Translator per gestire i dizionari](/help/implementing/developing/extending/i18n/translator.md)
          + [Estrazione delle stringhe per la traduzione](/help/implementing/developing/extending/i18n/extract.md)
+      + [Estensioni e Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + Implementazione in AEM as a Cloud Service {#deploying}
       + [Implementazione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md)
