@@ -5,10 +5,10 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 100%
+source-wordcount: '943'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 All’inizio del [percorso Architect di contenuti AEM headless](overview.md) l’[introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi alla modellazione dei contenuti headless.
 
-Questo articolo si basa su questi elementi per comprendere come modellare i contenuti per il progetto AEM headless.
+Questo articolo si basa su questi principi per comprendere come modellare i contenuti per un progetto headless AEM.
 
 ## Obiettivo {#objective}
 
@@ -87,9 +87,12 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 * Data e ora
 * Enumerazione
 * Tag
-* Riferimento contenuto
 * Riferimento frammento
+* Riferimento frammento (UUID)
+* Riferimento contenuto
+* Riferimento contenuto (UUID)
 * Oggetto JSON
+* Segnaposto scheda
 
 >[!NOTE]
 >
@@ -99,12 +102,12 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 
 Due tipi di dati forniscono riferimenti a contenuti esterni a uno specifico frammento:
 
-* **Riferimento contenuto**
-Fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
+* **Riferimento contenuto**/**Riferimento contenuto (UUID)**
+Questo fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
 Ad esempio, è possibile fare riferimento a un’immagine in una posizione specifica.
 
-* **Riferimento frammento**
-Fornisce riferimenti ad altri frammenti di contenuto.
+* **Riferimento frammento**/**Riferimento frammento (UUID)**
+Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
    * Modificare direttamente il frammento a cui si fa riferimento.
@@ -113,6 +116,10 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 >[!NOTE]
 >
 >È inoltre possibile creare riferimenti improvvisati utilizzando i collegamenti all’interno dei blocchi di testo.
+
+>[!NOTE]
+>
+>Nell’editor i riferimenti UUID specificano il percorso della risorsa di riferimento; internamente, tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alle risorse.
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 

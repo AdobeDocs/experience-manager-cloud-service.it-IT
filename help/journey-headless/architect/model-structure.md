@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 99%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 All’inizio del [Percorso di authoring di contenuti AEM Headless](overview.md), [Nozioni di base sulla modellazione dei contenuti per headless con AEM](basics.md) ha trattato i concetti e la terminologia di base relativi all’authoring per headless.
 
-L&#39;articolo si basa su questi elementi per comprendere come creare modelli per frammenti di contenuto personalizzati per il progetto AEM headless.
+Questo articolo si basa su questi principi per comprendere come creare modelli di frammenti di contenuto per un progetto headless AEM.
 
 ## Obiettivo {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**.
+È quindi possibile creare i modelli per frammenti di contenuto e definirne la struttura.
 
-![Modelli per frammenti di contenuto negli strumenti](assets/cfm-tools.png)
+1. Nella console Frammenti di contenuto, seleziona il pannello Modelli per frammenti di contenuto.
 
-Dopo aver selezionato questa opzione, passa alla posizione del modello e seleziona **Crea**. Qui puoi inserire vari dettagli chiave.
+1. Passa alla cartella appropriata per la configurazione o configurazione secondaria.
 
-L’opzione **Abilita modello** è attivata per impostazione predefinita. Ciò significa che il modello è disponibile per l’uso (nella creazione di frammenti di contenuto) non appena lo hai salvato. Se lo desideri, puoi disattivarlo; in seguito potrai abilitare (o disabilitare) un modello esistente.
+1. Utilizza **Crea** per aprire la finestra di dialogo **Nuovo modello per frammenti di contenuto**.
 
-![Crea modello per frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![Titolo e descrizione](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-Conferma con **Crea** e poi **Apri** il modello per iniziare a definire la struttura.
+1. Completa i dettagli
+
+1. Utilizza **Crea** per salvare il modello vuoto oppure **Crea e apri**.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ Puoi trascinare le istanze dei **Tipi di dati** nello spazio a sinistra: stai gi
 
 ![Definizione dei campi](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Dipendono dal tipo utilizzato. Esempio:
+Dopo aver aggiunto un tipo di dati, dovrai definire le **Proprietà** per quel campo. Queste proprietà dipendono dal tipo utilizzato. Esempio:
 
 ![Proprietà dati](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ Gli autori dei contenuti non visualizzano i tipi di dati e le proprietà effetti
 La gestione dei modelli per frammenti di contenuto comporta:
 
 * Abilitarli (o disattivarli), per renderli disponibili agli autori al momento della creazione dei frammenti di contenuto.
-* Eliminazione: è sempre necessario eliminare, ma ci si deve accertare di eliminare un modello già utilizzato per i frammenti di contenuto, in particolare i frammenti già pubblicati.
+* Eliminazione: l’eliminazione è sempre necessaria, ma è necessario essere consapevoli dell’eliminazione di un modello già utilizzato per i frammenti di contenuto, in particolare i frammenti già pubblicati.
 
 ## Pubblicazione {#publishing}
 
@@ -99,7 +115,7 @@ I modelli per frammenti di contenuto devono essere pubblicati quando/prima che v
 
 >[!NOTE]
 >
->Se un autore cerca di pubblicare un frammento di contenuto per il quale il modello non è stato ancora pubblicato, questo viene segnalato in un elenco di selezione e il modello viene pubblicato con il frammento.
+>Se un autore tenta di pubblicare un frammento di contenuto per il quale il modello non è ancora stato pubblicato, ciò viene indicato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 Non appena un modello viene pubblicato, viene *bloccato* in modalità SOLA LETTURA sull’autore. Questo serve a evitare modifiche che potrebbero causare errori agli schemi e alle query GraphQL esistenti, soprattutto nell’ambiente di pubblicazione. È indicato nella console come **Bloccato**.
 
