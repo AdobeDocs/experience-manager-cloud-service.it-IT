@@ -4,9 +4,9 @@ description: Scopri la funzionalità di estensibilità dell'interfaccia utente d
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -47,9 +47,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-[!DNL AEM Assets View] supporta l&#39;estensibilità dell&#39;interfaccia utente, che consente di aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per flussi di lavoro e requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View]. Questa funzionalità di estensibilità dell&#39;interfaccia utente di [!DNL AEM Assets View] ne migliora la flessibilità, consentendo alle organizzazioni di adattare l&#39;interfaccia per flussi di lavoro e requisiti specifici.
-
-Abilitare l&#39;estendibilità dell&#39;interfaccia utente in [!DNL AEM Assets View] per aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per soddisfare requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View].\
+[!DNL AEM Assets View] supporta l&#39;estensibilità dell&#39;interfaccia utente, che consente di aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per flussi di lavoro e requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View]. Questa funzionalità di estensibilità dell&#39;interfaccia utente di [!DNL AEM Assets View] ne migliora la flessibilità, consentendo alle organizzazioni di adattare l&#39;interfaccia per flussi di lavoro e requisiti specifici.\
 Puoi aggiungere le estensioni al livello **Risorsa**, **Cartella** e **Raccolta**. L&#39;estensione aggiunta viene visualizzata in un pannello dedicato nella pagina **Risorsa**, **Raccolta** o **Cartella** **[!UICONTROL Dettagli]**.
 
 >[!IMPORTANT]

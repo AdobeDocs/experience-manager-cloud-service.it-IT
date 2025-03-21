@@ -2,7 +2,7 @@
 title: Integra [!DNL AEM Assets] durante l'authoring del contenuto per [!DNL Edge Delivery Services]
 description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrare [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] e [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Dopo aver modificato il contenuto, puoi pubblicarlo in Edge Delivery Services.
 
 ## Integrazione di [!DNL AEM Assets] con flussi di authoring basati su documenti per [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
 
-Quando [!DNL AEM Assets] è integrato con gli strumenti di authoring basato su documenti, ad esempio [!DNL Microsoft Word] o [!DNL Google Docs], fornisce un selettore di risorse nell&#39;editor. Utilizza questo selettore risorse per accedere a [!DNL AEM Assets] e inserire nel documento le risorse approvate.
+Quando [!DNL AEM Assets] si integra con gli strumenti di authoring basati su documenti, ad esempio [!DNL Microsoft Word] o [!DNL Google Docs], fornisce un selettore di risorse nello strumento di authoring. Utilizza questo selettore risorse per accedere a [!DNL AEM Assets] e inserire nel contenuto le risorse approvate.
 Se disponi già di un sito Web [!DNL Edge Delivery Services], consulta la documentazione del [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) per scoprire come integrare [!DNL AEM Assets] con il progetto [!DNL AEM] esistente.
 Segui le seguenti [sezioni sui prerequisiti](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [sull&#39;integrazione [!DNL AEM Assets] con l&#39;ambiente di authoring basato su documenti](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) se non disponi di un sito Web [!DNL Edge Delivery Services] per pubblicare il contenuto inclusivo [!DNL AEM Assets] creato con gli strumenti di authoring basati su documenti.
 
@@ -94,7 +94,7 @@ Per utilizzare il riferimento della risorsa, è necessario disporre di:
 
 * Diritto a un ambiente Assets Cloud Service in cui è abilitato [!DNL Dynamic Media with Open API capabilities].
 * Una licenza di [!DNL Dynamic Media].
-* [!DNL AEM Assets sidekick plugin] abilitato con riferimento di copia per le risorse immagine abilitate. Per ulteriori dettagli, vedere [questo](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) per l&#39;authoring basato su documenti e [questo](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) per l&#39;authoring basato su Universal Editor.
+* [!DNL AEM Assets sidekick plugin] abilitato con riferimento di copia per le risorse immagine abilitate. Per ulteriori dettagli, consulta [questa documentazione](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) per l&#39;authoring basato su documenti e [questa documentazione](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) per l&#39;authoring basato su Universal Editor.
 * Assets che sono approvati. Le risorse approvate hanno `dam:status=Approved` tramite il backend o le azioni dell&#39;interfaccia utente di Assets Cloud Services.
 
 ### Utilizzare le risorse consegnate tramite [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
