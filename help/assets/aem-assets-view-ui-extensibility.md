@@ -1,55 +1,58 @@
 ---
-title: Estensibilità dell’interfaccia utente della vista di AEM Assets
-description: Scopri la funzionalità di estensibilità dell’interfaccia utente di AEM Assets View. L’interfaccia utente di AEM Assets View consente di aggiungere componenti personalizzati dell’interfaccia utente per soddisfare esigenze aziendali specifiche.
+title: Abilita estensibilità interfaccia utente in [!DNL AEM Assets View]
+description: Scopri la funzionalità di estensibilità dell'interfaccia utente di  [!DNL AEM Assets View]. [!DNL AEM Assets View] UI consente di aggiungere componenti dell'interfaccia utente personalizzati per soddisfare esigenze aziendali specifiche.
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
+source-git-commit: e32cd7b7822a983840377f7e69ac3ed0ceb86e16
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 5%
+source-wordcount: '544'
+ht-degree: 3%
 
 ---
 
-# Estensibilità dell’interfaccia utente della vista di AEM Assets{#AEM-Assets-View-UI-Extensibility}
+# Abilita estensibilità interfaccia utente in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
 | [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-La vista AEM Assets dispone della funzionalità di estensibilità dell’interfaccia utente. Questa funzionalità consente agli utenti di aggiungere componenti personalizzati all’interfaccia utente di Assets View per soddisfare esigenze aziendali specifiche che le funzionalità predefinite della visualizzazione AEM Assets non soddisfano. Questa funzione di estensibilità migliora la flessibilità di AEM Assets View, che consente alle organizzazioni di adattare l’interfaccia per flussi di lavoro e requisiti specifici.
-Puoi aggiungere le estensioni a livello di risorsa, cartella e raccolta. L’estensione aggiunta viene visualizzata all’interno di un pannello dedicato nella pagina Dettagli risorsa, raccolta o cartella.
+[!DNL AEM Assets View] supporta l&#39;estensibilità dell&#39;interfaccia utente, che consente di aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per flussi di lavoro e requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View]. Questa funzionalità di estensibilità dell&#39;interfaccia utente di [!DNL AEM Assets View] ne migliora la flessibilità, consentendo alle organizzazioni di adattare l&#39;interfaccia per flussi di lavoro e requisiti specifici.
+
+Abilitare l&#39;estendibilità dell&#39;interfaccia utente in [!DNL AEM Assets View] per aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per soddisfare requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View].\
+Puoi aggiungere le estensioni al livello **Risorsa**, **Cartella** e **Raccolta**. L&#39;estensione aggiunta viene visualizzata in un pannello dedicato nella pagina **Risorsa**, **Raccolta** o **Cartella** **[!UICONTROL Dettagli]**.
 
 >[!IMPORTANT]
 >
-> * L&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di AEM Assets è disponibile con [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
-> * Per accedere all&#39;estensibilità dell&#39;interfaccia utente di visualizzazione di Assets, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
-> * Puoi fornire feedback sulla documentazione espandendo le opzioni di feedback dettagliato e facendo clic su Segnala un problema.
+> * Estensibilità dell&#39;interfaccia utente [!DNL AEM Assets View] disponibile con [[!DNL Assets Ultimate]](/help/assets/assets-ultimate-overview.md).
+> * Per accedere all&#39;estensibilità dell&#39;interfaccia utente [!DNL Assets view], [crea e invia un [!DNL Adobe] caso di assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+> * Puoi fornire feedback sulla documentazione espandendo **[!UICONTROL le opzioni di feedback dettagliate]** e facendo clic su **[!UICONTROL Segnala un problema]**.
 
-## <a id="1"></a> Come accedere alla vista Assets
+## <a id="1"></a> Accedi alla visualizzazione Assets{#add-UI-Extensibility-in-AEM-Assets-View}
 
-Accedi alla vista Assets nei seguenti modi:
+Segui i passaggi indicati nell&#39;immagine seguente per accedere a [!DNL Assets View]:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## Dove vengono visualizzate le estensioni dell’interfaccia utente nell’interfaccia utente di visualizzazione di Assets? {#ui-extensibility-panel-assets-view}
+## Visualizza estensioni interfaccia utente in [!DNL Assets View] {#ui-extensibility-panel-assets-view}
 
-Nella Vista Assets, passa alla pagina Dettagli di una risorsa, cartella o raccolta. In questa pagina Dettagli è presente un pannello dedicato che mostra l’estensione dell’interfaccia utente aggiunta.
+In [!DNL Assets View], passa alla pagina **[!UICONTROL Dettagli]** di una risorsa, cartella o raccolta. Nella pagina **[!UICONTROL Dettagli]** viene visualizzata l&#39;estensione dell&#39;interfaccia utente aggiunta in un pannello dedicato.
 ![area di lavoro personale](/help/assets/assets/my-workspace-assets-view3.png)
 
+## Prerequisiti per l’aggiunta del componente extensibility{#assets-view-ui-extensibility}
 
-## Prerequisiti per l’aggiunta del componente Estensibilità
+Per iniziare ad aggiungere il componente di estensibilità in [!DNL Assets View UI], è necessario soddisfare i seguenti requisiti:
 
-* [Accesso alla visualizzazione Assets](#1).
-* Accedi al [generatore di app Adobe](https://developer.adobe.com/app-builder/docs/overview/).
-* Autorizzato a Sviluppatore del ruolo Amministratore di sistema all’interno dell’organizzazione. Per ulteriori informazioni, vedere [questo](https://developer.adobe.com/uix/docs/guides/get-access/).
-* Lo strumento per riga di comando Adobe IO (AIO CLI) deve essere installato sui computer locali. Questo strumento è essenziale per la creazione e la distribuzione di progetti di estensione. Per ulteriori informazioni, vedere [questo](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up).
-* Buona conoscenza delle tecnologie JavaScript, Node.js e React.
+* [Accesso a [!DNL Assets View]](#1).
+* Accesso a [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
+* Diritto allo sviluppatore del ruolo di amministratore di sistema all’interno dell’organizzazione. Per ulteriori informazioni, consulta [questa documentazione](https://developer.adobe.com/uix/docs/guides/get-access/).
+* [!DNL Adobe IO command line tool (AIO CLI)] è installato nei computer locali. Questo strumento è essenziale per la creazione e la distribuzione di progetti di estensione. Per ulteriori informazioni, consulta [questa documentazione](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up).
+* Buona conoscenza delle tecnologie [!DNL JavaScript], [!DNL Node.js] e [!DNL React].
 
-## Aggiunta del componente Estensibilità dell’interfaccia utente nell’interfaccia di visualizzazione di Assets{#Adding-UI-Extensibility-Component-on-Assets-View}
+## Aggiungi il componente di estendibilità dell&#39;interfaccia utente a [!DNL Assets View] {#ui-extensibility-in-assets-view}
 
-1. Consulta [Guida introduttiva](https://developer.adobe.com/uix/docs/getting-started/) per informazioni essenziali sulle estensioni dell&#39;interfaccia utente e sul framework di Adobe App Builder. Scopri come l’estensibilità dell’interfaccia utente consente l’integrazione di logica e interfaccia utente personalizzate all’interno dei servizi Adobe Experience Cloud e l’architettura e il flusso di lavoro per l’implementazione delle estensioni dell’interfaccia utente.
+1. Consulta [Guida introduttiva](https://developer.adobe.com/uix/docs/getting-started/) per informazioni essenziali sulle estensioni dell&#39;interfaccia utente e sul framework [!DNL Adobe App Builder]. Scopri come l&#39;estensibilità dell&#39;interfaccia utente consente l&#39;integrazione di logica e interfaccia utente personalizzate in [!DNL Adobe Experience Cloud services] e l&#39;architettura e il flusso di lavoro per l&#39;implementazione delle estensioni dell&#39;interfaccia utente.
 1. Consulta [Guide](https://developer.adobe.com/uix/docs/guides/) per informazioni generali sull&#39;estensibilità dell&#39;interfaccia utente, tra cui configurazione dell&#39;ambiente locale, anteprima locale, pubblicazione e gestione.
-1. Consulta [Concetti comuni nella sezione Creazione di estensioni](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) per informazioni sulle nozioni di base necessarie per sviluppare un&#39;estensione dell&#39;interfaccia utente per la visualizzazione AEM Assets.
-1. Aggiungi pannelli laterali personalizzati all’interfaccia di visualizzazione di Assets. L’applicazione host (Assets View) gestisce questi pannelli per gestire le interazioni dell’interfaccia utente, ad esempio l’attivazione e il collegamento profondo. Le estensioni utilizzano il punto di estensione `aem/assets/details/1` per integrare pannelli personalizzati che specificano proprietà quali ID pannello, titolo e URL contenuto. Gli sviluppatori registrano i pannelli personalizzati con il metodo `getPanels()` e creano le route per visualizzare il contenuto personalizzato. Per informazioni dettagliate sull&#39;implementazione, inclusi riferimenti API ed esempi di codice, vedere [Visualizzazione dettagli](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
-1. Configura l&#39;ambiente locale e scopri come sviluppare estensioni dell&#39;interfaccia utente nella vista Assets creando la prima estensione dell&#39;interfaccia utente. Per ulteriori dettagli, consulta [Sviluppo dell&#39;estensione AEM Assets View](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) passo dopo passo.
-1. Configura l’app utilizzando AIO CLI per generare la struttura di estensione di base e il codice richiesto. Per informazioni dettagliate, consulta [Generazione del codice per la visualizzazione AEM Assets](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
-1. Verifica le estensioni a livello locale per assicurarti che funzionino come previsto prima della distribuzione. Esegui l’estensione in un ambiente completamente isolato o con isolamento parziale e connetti l’estensione alla visualizzazione AEM Assets di produzione per il test. Per informazioni dettagliate, consulta [Risoluzione dei problemi - Estendibilità visualizzazione AEM Assets](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
+1. Consulta [Concetti comuni nella creazione di estensioni](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/) per informazioni sulle nozioni di base necessarie per sviluppare un&#39;estensione dell&#39;interfaccia utente per [!DNL AEM Assets View].
+1. Aggiungere pannelli laterali personalizzati all&#39;interfaccia [!DNL Assets View]. L&#39;applicazione host ([!DNL Assets View]) gestisce questi pannelli per gestire le interazioni dell&#39;interfaccia utente, ad esempio l&#39;attivazione e il collegamento profondo. Le estensioni utilizzano il punto di estensione `aem/assets/details/1` per integrare pannelli personalizzati che specificano proprietà quali ID pannello, titolo e URL contenuto. Gli sviluppatori registrano i pannelli personalizzati con il metodo `getPanels()` e creano le route per visualizzare il contenuto personalizzato. Per informazioni dettagliate sull&#39;implementazione, inclusi riferimenti API ed esempi di codice, vedere [Visualizzazione dettagli](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/).
+1. Configurare l&#39;ambiente locale e creare la prima estensione dell&#39;interfaccia utente per acquisire un&#39;esperienza diretta del processo di sviluppo delle estensioni dell&#39;interfaccia utente in [!DNL Assets View]. Per ulteriori dettagli, consulta [Sviluppo dell&#39;estensione AEM Assets View](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) passo dopo passo.
+1. Configurate l&#39;applicazione utilizzando la CLI AIO per generare la struttura di estensione di base e il codice richiesto. Per informazioni dettagliate, vedere [generazione del codice per [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
+1. Verifica le estensioni a livello locale per assicurarti che funzionino come previsto prima della distribuzione. Eseguire l&#39;estensione in un ambiente completamente isolato o con isolamento parziale e connettere l&#39;estensione all&#39;ambiente di produzione [!DNL AEM Assets View] per il test. Per informazioni dettagliate, vedere [Risoluzione dei problemi - [!DNL AEM Assets View] estensibilità](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
