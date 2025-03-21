@@ -7,7 +7,7 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 
 Nell’era digitale di oggi, i moduli facili da usare sono essenziali per qualsiasi organizzazione. I moduli di Edge Delivery Services vengono creati utilizzando l’Editor universale, che offre funzionalità WYSIWYG (what-you-see-is-what-you-get). Fornisce un’interfaccia moderna e intuitiva per l’authoring efficiente dei moduli.
 
-AEM Forms fornisce un blocco, noto come blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
 
@@ -262,7 +262,7 @@ Puoi assegnare uno stile ai moduli di Edge Delivery Services modificando i file 
 
 >[!NOTE]
 >
-> È inoltre possibile [creare un modulo autonomo in Universal Editor e pubblicarlo in Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> È inoltre possibile [creare un modulo autonomo nell’editor universale e pubblicarlo in Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## Configurare un ambiente di sviluppo AEM locale
 

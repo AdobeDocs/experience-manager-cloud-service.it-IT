@@ -7,13 +7,13 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Pubblicare un modulo adattivo in Edge Delivery Services
 
-<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 
 Quando un modulo è finalizzato e pronto per l’uso, puoi pubblicarlo per renderlo accessibile ai tuoi clienti per la raccolta e l’invio di dati. Una volta pubblicato, il modulo diventa disponibile su Edge Delivery e gli utenti possono interagire direttamente con esso. Questo processo consente ai clienti di compilare e inviare il modulo in tempo reale, rende più efficiente l’acquisizione dei dati e ne semplifica l’elaborazione.

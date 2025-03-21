@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: d693097226839c8d496c6a8b3466953b32eacac5
 workflow-type: tm+mt
 source-wordcount: '6103'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -895,9 +895,9 @@ ht-degree: 98%
    + Rapporti di transazioni {#using-communications}
       + [API rapporti di transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
       + [Registrare una transazione per un’implementazione personalizzata](/help/forms/record-transaction-custom-implementation.md)
-   + Dashboard di realizzazione del valore {#vr-dashboard}
-      + [Informazioni sulla dashboard di realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [Utilizzo della dashboard di realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md)
+   + Dashboard per la realizzazione del valore {#vr-dashboard}
+      + [Informazioni sulla dashboard per la realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
+      + [Utilizzo della dashboard per la realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
       + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1037,7 +1037,7 @@ ht-degree: 98%
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [Come avviare l’authoring con Universal Editor - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Come iniziare a creare con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Come creare il primo modulo con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [Guida all’interfaccia dell’editor universale - Spiegazione su strumenti, funzioni e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendere i moduli facili da usare - Design reattivo nell’editor universale](/help/edge/docs/forms/universal-editor/responsive-layout.md)
@@ -1052,7 +1052,7 @@ ht-degree: 98%
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare moduli utilizzando Fogli Google o Excel - Guida dettagliata](/help/edge/docs/forms/create-forms.md)
-         + [Vari componenti del blocco di modulo adattivo](/help/edge/docs/forms/form-components.md)
+         + [Vari componenti del Blocco moduli adattivi](/help/edge/docs/forms/form-components.md)
          + [Collegare il modulo a Fogli Google - Guida alla configurazione della raccolta dati](/help/edge/docs/forms/submit-forms.md)
          + [Rendere il modulo live - Guida alla pubblicazione e alla raccolta dati](/help/edge/docs/forms/publish-forms.md)
          + [Convalidare i campo modulo - Aggiungere controlli di errore ai moduli](/help/edge/docs/forms/validate-forms.md)
@@ -1067,7 +1067,7 @@ ht-degree: 98%
          + [Rendere il modulo globale - Guida alla traduzione dei moduli](/help/edge/docs/forms/translate-forms.md)
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitora le prestazioni dei moduli: guide al monitoraggio per uso reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitorare le prestazioni dei moduli - Guida al monitoraggio dell’utilizzo reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
