@@ -3,25 +3,59 @@ title: Integrare AEM Assets con le applicazioni a valle
 description: Integrare AEM Assets con le applicazioni a valle
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 8%
+source-wordcount: '235'
+ht-degree: 33%
 
 ---
 
 # Integrare AEM Assets con le applicazioni a valle {#integrate-dynamic-media-open-apis}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Dynamic Media con funzionalità OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Tutte le [risorse approvate](/help/assets/approve-assets.md) disponibili nell&#39;archivio Experience Manager Assets sono disponibili per la distribuzione alle applicazioni a valle.
+Tutte le [risorse approvate](/help/assets/approve-assets.md) disponibili nell&#39;archivio delle risorse di Experience Manager sono disponibili per la distribuzione alle applicazioni a valle.
 
 Puoi integrare un’interfaccia utente personalizzata con l’archivio di Experience Manager Assets utilizzando le API di ricerca e consegna oppure utilizzare il selettore delle risorse micro-front-end di Adobe.
 
@@ -33,6 +67,6 @@ Il selettore delle risorse Microsoft-Frontend di Adobe fornisce un&#39;interfacc
 
 >[!MORELIKETHIS]
 >
-* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
-* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
+* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
+* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
 * [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)

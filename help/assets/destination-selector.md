@@ -1,21 +1,55 @@
 ---
 title: Selettore di destinazione per AEM as a Cloud Service
-description: Utilizza il selettore di destinazione AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
+description: Utilizza il Selettore di destinazione di AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1933'
 ht-degree: 35%
 
 ---
 
 # Selettore di destinazione micro front-end {#Overview}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Il selettore di destinazione Microsoft-Frontend fornisce all&#39;interno dell&#39;applicazione un&#39;interfaccia utente che si integra facilmente con l&#39;archivio [!DNL Experience Manager Assets as a Cloud Service]. È possibile cercare o sfogliare la cartella appropriata all&#39;interno dell&#39;archivio [!DNL Experience Manager Assets as a Cloud Service] e caricare le risorse dall&#39;applicazione.
 
@@ -43,7 +77,7 @@ Per integrare e utilizzare il selettore di destinazione con l&#39;archivio [!DNL
 
 È possibile integrare qualsiasi [!DNL Adobe] o applicazioni non Adobe nell’archivio [!DNL Experience Manager Assets] as a [!DNL Cloud Service] e selezionare le risorse dall’interno dell’applicazione.
 
-L’integrazione viene eseguita importando il pacchetto Selettore di destinazione e collegandosi all’as a Cloud Service di Assets utilizzando la libreria Vanilla JavaScript. È necessario modificare un file `index.html` o qualsiasi file appropriato all&#39;interno dell&#39;applicazione in -
+L’integrazione viene eseguita importando il pacchetto Selettore di destinazione e collegandosi all’as a Cloud Service di Assets utilizzando la libreria JavaScript di Vanilla. È necessario modificare un file `index.html` o qualsiasi file appropriato all&#39;interno dell&#39;applicazione in -
 
 * Definire i dettagli di autenticazione
 * Accedere all’archivio Assets as a Cloud Service
@@ -198,7 +232,7 @@ Puoi utilizzare le proprietà del Selettore di destinazione per personalizzare i
 | *apiKey* | stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` non è richiesto se si utilizza il flusso SUSI. Tuttavia, è richiesto nel flusso non SUSI. |
 | *rootPath* | stringa | No | /content/dam/ | Percorso della cartella da cui il Selettore di destinazione visualizza le risorse. `rootPath` può essere utilizzato anche sotto forma di incapsulamento. Ad esempio, dato il seguente percorso, `/content/dam/marketing/subfolder/`, il selettore di destinazione non consente di scorrere tra le cartelle principali, ma visualizza solo le cartelle secondarie. |
 | *hasMore* | booleano | No | | Quando l’applicazione ha più contenuto da visualizzare, puoi utilizzare questa proprietà per aggiungere un caricatore che carica il contenuto per renderlo visibile nell’applicazione. È un indicatore che indica che il caricamento del contenuto è in corso. |
-| *nomeOrganizzazione* | booleano | No | | È il nome dell’organizzazione (probabilmente orgID) associata all’AEM |
+| *nomeOrganizzazione* | booleano | No | | È il nome dell’organizzazione (probabilmente orgID) associata ad AEM |
 | *initRepoID* | stringa | No | | Si tratta del percorso dell’archivio delle risorse che desideri utilizzare in una visualizzazione iniziale predefinita |
 | *suCreaCartella* | stringa | No | | La proprietà `onCreateFolder` consente di aggiungere un&#39;icona che aggiunge una nuova cartella nell&#39;applicazione. |
 | *onConfirm* | stringa | No | | Si tratta di un callback quando si preme il pulsante di conferma. |
@@ -257,7 +291,7 @@ Puoi ordinare le risorse in Selettore destinazione per nome, dimensione o dimens
 
 ### Archivio Assets {#assets-repo}
 
-Il selettore di destinazione consente inoltre di visualizzare i dati dell’archivio di tua scelta disponibili nell’applicazione AEM. È possibile utilizzare la proprietà `repositoryID` per inizializzare il percorso della cartella di destinazione da visualizzare nella prima istanza del selettore di destinazione.
+Il selettore delle destinazioni consente inoltre di visualizzare i dati dell’archivio scelto disponibili nell’applicazione AEM. È possibile utilizzare la proprietà `repositoryID` per inizializzare il percorso della cartella di destinazione da visualizzare nella prima istanza del selettore di destinazione.
 
 ### Aggiungi suffisso o prefisso {#add-suffix-or-prefix}
 

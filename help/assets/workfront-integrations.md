@@ -4,17 +4,51 @@ description: Introduzione all'integrazione tra [!DNL Assets] e [!DNL Workfront]
 role: Admin, Leader, Architect
 feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '436'
 ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Experience Manager] come integrazione [!DNL Cloud Service] [!DNL Assets] con [!DNL Adobe Workfront] {#assets-integration-overview}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -23,7 +57,7 @@ ht-degree: 7%
 
 [!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L&#39;integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
-offerte Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo (Assets Essentials di supporto e Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Le offerte di Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo (supporto di Assets Essentials e Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 Con l’integrazione nativa di Experience Manager, puoi:
 
@@ -41,11 +75,11 @@ Con l’integrazione nativa di Experience Manager, puoi:
 ## Connettore avanzato Adobe Workfront per Experience Manager {#enhanced-connector-information}
 
 
-A giugno 2022, Adobe ha rilasciato una nuova integrazione nativa per la connessione di Workfront con Adobe Experience Manager Assets as a Cloud Service. Questa integrazione è diventata il metodo richiesto per collegare queste due soluzioni. Qualsiasi nuova implementazione futura del connettore avanzato (versione 1.9.8 e successive) per collegare Workfront ad AEM Assets as a Cloud Service è bloccata. Per ulteriori informazioni su come configurare questa integrazione, vedere [Configurare l&#39;integrazione di Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
+A giugno 2022, Adobe ha rilasciato una nuova integrazione nativa per la connessione di Workfront con Adobe Experience Manager Assets as a Cloud Service. Questa integrazione è diventata il metodo richiesto per collegare queste due soluzioni. Qualsiasi nuova implementazione futura del connettore avanzato (versione 1.9.8 e successive) per collegare Workfront ad AEM Assets as a Cloud Service è bloccata. Per ulteriori informazioni su come configurare questa integrazione, vedere [Configurare l&#39;integrazione Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
 
 >[!NOTE]
 >
->Adobe non supporta l’utilizzo parallelo di Workfront per il connettore avanzato Experience Manager e l’integrazione Experience Manager.
+>Adobe non supporta l’utilizzo in parallelo del connettore avanzato Workfront for Experience Manager e dell’integrazione Experience Manager.
 
 Per le installazioni precedenti a giugno 2022, di seguito sono riportati alcuni punti da considerare per la distribuzione e la configurazione di [!DNL Adobe Workfront for Experience Manager enhanced connector]:
 

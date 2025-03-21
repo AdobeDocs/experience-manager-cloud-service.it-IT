@@ -1,32 +1,69 @@
 ---
 title: Best practice per ottimizzare la qualità delle immagini
-description: Scopri le best practice per ottimizzare la qualità delle risorse di immagini con Dynamic Medie.
+description: Scopri le best practice per ottimizzare la qualità delle risorse di immagini utilizzando Dynamic Media.
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 2%
 
 ---
 
 # Best practice per ottimizzare la qualità delle immagini {#best-practices-for-optimizing-the-quality-of-your-images}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
 L&#39;ottimizzazione della qualità delle immagini può richiedere molto tempo, poiché molti fattori contribuiscono al rendering di risultati accettabili. Il risultato è in parte soggettivo perché gli individui percepiscono la qualità dell&#39;immagine in modo diverso. La sperimentazione strutturata è fondamentale.
 
-Adobe Experience Manager include più di 100 comandi Dynamic Medie per la consegna delle immagini che consentono di ottimizzare e ottimizzare le immagini e i risultati del rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi essenziali e best practice.
+Adobe Experience Manager include più di 100 comandi di consegna delle immagini Dynamic Media per ottimizzare le immagini e i risultati del rendering. Le seguenti linee guida possono essere utili per semplificare il processo e ottenere rapidamente buoni risultati utilizzando alcuni comandi essenziali e best practice.
 
 <!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-## Abilitare Smart Imaging in Dynamic Medie {#bp-enable-smart-imaging}
+## Abilitare l’imaging avanzato in Dynamic Media {#bp-enable-smart-imaging}
 
 **Smart imaging:**
 
-* L’abilitazione di Smart Imaging in Dynamic Medie consente di ottimizzare automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+* L’abilitazione di Smart Imaging in Dynamic Media consente di ottimizzare automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 Vuoi saperne di più? Vai a [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Migliora le prestazioni di consegna delle immagini regolando dinamicamente questi parametri.
 * È possibile valutare Smart Imaging utilizzando lo strumento di autovalutazione [Snapshot](https://snapshot.scene7.com/).
@@ -38,7 +75,7 @@ Vuoi saperne di più? Vai a [Smart Imaging](https://experienceleague.adobe.com/e
 
 **Comportamento predefinito:**
 
-* Se nell’URL non è specificato alcun comando di formato e Smart Imaging non è abilitato, per impostazione predefinita la consegna delle immagini Dynamic Medie viene eseguita in formato JPEG.
+* Se nell’URL non è specificato alcun comando di formato e Smart Imaging non è abilitato, per impostazione predefinita la consegna delle immagini Dynamic Media utilizza il formato JPEG.
 
 Scegliendo con cognizione di causa i formati delle immagini e abilitando l&#39;imaging avanzato, si può avere un impatto significativo sulle prestazioni e sull&#39;esperienza utente.
 
@@ -50,7 +87,7 @@ Scegliendo con cognizione di causa i formati delle immagini e abilitando l&#39;i
 Considerazioni essenziali sull&#39;utilizzo delle immagini di origine:
 
 * **Formato immagine Source:**
-   * L’utilizzo di formati senza perdita di dati come PNG, TIFF o PSD garantisce che la qualità dell’immagine rimanga elevata senza artefatti di compressione.
+   * L&#39;utilizzo di formati senza perdita di dati come PNG, TIFF o PSD garantisce un&#39;elevata qualità dell&#39;immagine senza artefatti di compressione.
    * Questi formati conservano tutti i dati originali e li rendono ideali per l&#39;editing e l&#39;ulteriore elaborazione.
 * **Dimensione immagine Source:**
    * Iniziare con un&#39;immagine ad alta risoluzione fornisce più dettagli e flessibilità.
@@ -83,13 +120,13 @@ Come best practice per il dimensionamento delle immagini, utilizza `&wid=<value>
 
 ## Procedure consigliate per la nitidezza delle immagini {#best-practices-for-image-sharpening}
 
-La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Per ulteriori informazioni sul funzionamento della nitidezza e della maschera di contrasto, consultate, ad Experience Manager, le risorse utili riportate di seguito.
+La nitidezza delle immagini è l’aspetto più complesso del controllo delle immagini sul sito web e in cui vengono commessi molti errori. Per ulteriori informazioni su come funziona la nitidezza e la maschera di contrasto in Experience Manager, consulta le seguenti risorse utili:
 
 * Il white paper sulle best practice [Best practice per la qualità delle immagini e la nitidezza di Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche ad Experience Manager.
 
-* Guarda [Usa nitidezza immagine con Experience Manager - Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
-Ad Experience Manager, puoi rendere più nitide le immagini al momento dell’acquisizione, della consegna o di entrambe. Di solito, tuttavia, è meglio rendere più nitide le immagini utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini alla consegna, su un URL, in genere offre i risultati migliori.
+Con Experience Manager, puoi rendere più nitide le immagini al momento dell’acquisizione, della consegna o di entrambe. Di solito, tuttavia, è meglio rendere più nitide le immagini utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini alla consegna, su un URL, in genere offre i risultati migliori.
 
 Esistono due metodi per la nitidezza delle immagini:
 
@@ -111,7 +148,7 @@ Esistono due metodi per la nitidezza delle immagini:
 
       * Il white paper sulle best practice [Best practice per la qualità delle immagini e la nitidezza di Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche ad Experience Manager.
 
-      * Guarda [Usa nitidezza immagine con Experience Manager - Dynamic Medie](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager consente inoltre di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ogni componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
 
@@ -128,25 +165,25 @@ Lascia il parametro monocromatico impostato su 0.
 
 ### Best practice per la compressione JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
-* Questo parametro controlla la qualità della codifica JPG-. Un valore più alto indica un&#39;immagine di qualità superiore ma con dimensioni di file maggiori; in alternativa, un valore più basso indica un&#39;immagine di qualità inferiore ma con dimensioni di file inferiori. L&#39;intervallo per questo parametro è 0-100.
+* Questo parametro controlla la qualità della codifica JPG. Un valore più alto indica un&#39;immagine di qualità superiore ma con dimensioni di file maggiori; in alternativa, un valore più basso indica un&#39;immagine di qualità inferiore ma con dimensioni di file inferiori. L&#39;intervallo per questo parametro è 0-100.
 * Per ottimizzare la qualità, non impostate il valore del parametro su 100. La differenza tra un&#39;impostazione di 90 o 95 e 100 è quasi impercettibile. Eppure 100 aumenta inutilmente la dimensione del file di immagine. Pertanto, per ottimizzare la qualità, ma evitare che i file immagine diventino troppo grandi, impostare `qlt= value` su 90 o 95.
 * Per ottimizzare un file di immagine di dimensioni ridotte mantenendo la qualità dell&#39;immagine a un livello accettabile, impostare `qlt= value` su 80. Valori inferiori a 70-75 causano un significativo deterioramento della qualità dell&#39;immagine.
 * Come best practice, per rimanere al centro, impostare `qlt= value` su 85 per rimanere al centro.
 * Utilizzo del flag chroma in `qlt=`
 
-   * Il parametro `qlt=` dispone di una seconda impostazione che consente di attivare il downsampling della cromaticità RGB utilizzando il valore `,1` o di disattivare utilizzando il valore `,0`.
+   * Per il parametro `qlt=` è disponibile una seconda impostazione che consente di attivare il downsampling della cromaticità di RGB utilizzando il valore `,1` o di disattivare utilizzando il valore `,0`.
    * Per semplificare, iniziare con il downsampling della cromaticità RGB disattivato (`,0`). Questa impostazione di solito produce una migliore qualità dell&#39;immagine, specialmente per le immagini sintetiche con molti bordi nitidi e contrasto.
 
-Come best practice per la compressione JPG, utilizza `&qlt=85,0`.
+Come best practice per la compressione di JPG, utilizza `&qlt=85,0`.
 
-## Best practice per il dimensionamento JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Best practice per il dimensionamento di JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 Il parametro `jpegSize` è utile se si desidera garantire che un&#39;immagine non superi una determinata dimensione per la distribuzione a dispositivi con memoria limitata.
 
 * Questo parametro è impostato in kilobyte (`jpegSize=&lt;size_in_kilobytes&gt;`). Definisce la dimensione massima consentita per la consegna delle immagini.
-* `&jpegSize=` interagisce con il parametro di compressione JPG `&qlt=`. Se la risposta di JPG con il parametro di compressione JPG specificato (`&qlt=`) non supera il valore jpegSize, l&#39;immagine viene restituita con `&qlt=` come definito. In caso contrario, `&qlt=` viene gradualmente ridotto fino a quando l&#39;immagine non rientra nelle dimensioni massime consentite. Oppure, finché il sistema non determina che non può rientrare e restituisce un errore.
+* `&jpegSize=` interagisce con il parametro di compressione di JPG `&qlt=`. Se la risposta di JPG con il parametro di compressione JPG specificato (`&qlt=`) non supera il valore jpegSize, l&#39;immagine viene restituita con `&qlt=` come definito. In caso contrario, `&qlt=` viene gradualmente ridotto fino a quando l&#39;immagine non rientra nelle dimensioni massime consentite. Oppure, finché il sistema non determina che non può rientrare e restituisce un errore.
 
-Come best practice, impostare `&jpegSize=` e aggiungere il parametro `&qlt=` se si distribuiscono immagini JPG a dispositivi con memoria limitata.
+Come best practice, impostare `&jpegSize=` e aggiungere il parametro `&qlt=` se si consegnano immagini JPG a dispositivi con memoria limitata.
 
 ## Riepilogo delle best practice {#best-practices-summary}
 
@@ -163,5 +200,5 @@ Se i risultati della nitidezza non sono ancora soddisfacenti, aumentare il raggi
 Durante la sperimentazione, i seguenti suggerimenti generali sono utili per ottimizzare il flusso di lavoro:
 
 * Prova e testa diversi parametri in tempo reale, direttamente su un URL.
-* Come best practice, ricorda che puoi raggruppare i comandi di Dynamic Medie Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
-* Experience Manager offre inoltre metodi più avanzati per regolare la qualità delle immagini, ad esempio l’applicazione di immagini più nitide al momento dell’acquisizione. Per ottimizzare e ottimizzare i risultati del rendering, [i servizi di consulenza Adobe](https://business.adobe.com/customers/consulting-services/main.html) possono aiutarti con informazioni approfondite e best practice personalizzate.
+* Come best practice, ricorda che puoi raggruppare i comandi Dynamic Media Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
+* Experience Manager offre anche modi più avanzati per regolare la qualità delle immagini, ad esempio applicare immagini di nitidezza al momento dell’acquisizione. Per ottimizzare e ottimizzare i risultati del rendering, [i servizi di consulenza di Adobe](https://business.adobe.com/customers/consulting-services/main.html) possono aiutarti con informazioni approfondite e best practice personalizzate.

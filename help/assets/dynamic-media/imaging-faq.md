@@ -6,14 +6,51 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3243'
+source-wordcount: '3289'
 ht-degree: 1%
 
 ---
 
 # Imaging avanzato {#smart-imaging}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Scopri in che modo l’imaging intelligente con intelligenza artificiale di Adobe Sensei applica le caratteristiche di visualizzazione uniche di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
 
@@ -30,9 +67,9 @@ E ora, ottieni un punteggio Google Core Web Vital migliore per LCP (Largest Cont
 
 >[!TIP]
 >
->Prova e scopri i vantaggi dei modificatori di immagini Dynamic Media e dell&#39;imaging avanzato con Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
+>Prova e scopri i vantaggi dei modificatori di immagini Dynamic Media e dell&#39;imaging avanzato utilizzando Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
 >
->Snapshot è uno strumento di dimostrazione visiva, progettato per illustrare la potenza di Dynamic Media per la distribuzione di immagini ottimizzate e dinamiche. Sperimenta immagini di test o URL Dynamic Media per osservare visivamente l’output di vari modificatori di immagini Dynamic Media e ottimizzazioni Smart Imaging per i seguenti elementi:
+>Snapshot è uno strumento di dimostrazione visiva, progettato per illustrare la potenza di Dynamic Media per la distribuzione di immagini ottimizzate e dinamiche. Sperimenta immagini di test o URL di elementi multimediali dinamici per osservare visivamente l’output di vari modificatori di immagini Dynamic Media e le ottimizzazioni di Smart Imaging per i seguenti elementi:
 >
 >* Dimensione del file (con consegna WebP e AVIF)
 >* Larghezza di banda di rete
@@ -44,7 +81,7 @@ L’imaging avanzato trae vantaggio dall’aumento delle prestazioni derivante d
 
 I seguenti esempi di risorse di immagini illustrano l’ottimizzazione Smart Imaging aggiunta:
 
-| Immagine (URL) | Miniatura  | Dimensione (JPEG) | Dimensioni (WebP) con Smart Imaging | Formato (AVIF) con Smart Imaging | Riduzione % con WebP | % di riduzione con AVIF |
+| Immagine (URL) | Miniatura  | Dimensioni (JPEG) | Dimensioni (WebP) con Smart Imaging | Formato (AVIF) con Smart Imaging | Riduzione % con WebP | % di riduzione con AVIF |
 |---|---|---|---|---|---|---|
 | [Immagine 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![immagine1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90,2 KB | 26,89% | 37,79% |
 | [Immagine 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![immagine2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16,01% | 72,57% |
@@ -82,11 +119,11 @@ I vantaggi più recenti della tecnologia Smart Imaging includono:
 
 ### Informazioni sulla conversione del formato del browser {#bfc}
 
-Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;URL dell&#39;immagine, JPEG e PNG vengono automaticamente convertiti in file AVIF con perdita di dati, WebP con perdita di dati, JPEGXR con perdita di dati, JPEG2000 con perdita di dati per browser diversi. Per i browser che non supportano tali formati, la tecnologia Smart Imaging continua a essere utilizzata come JPEG o PNG. Smart Imaging ricalcola la qualità del nuovo formato insieme alla modifica del formato.
+Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;URL dell&#39;immagine, JPEG e PNG vengono automaticamente convertiti in file AVIF con perdita di dati, WebP con perdita di dati, JPEGXR con perdita di dati, JPEG2000 con perdita di dati per browser diversi. Per i browser che non supportano tali formati, la tecnologia Smart Imaging continua a essere utilizzata da JPEG o PNG. Smart Imaging ricalcola la qualità del nuovo formato insieme alla modifica del formato.
 
 Per disattivare Smart Imaging, aggiungi `bfc=off` all&#39;URL dell&#39;immagine.
 
-Vedere anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
+Vedi anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
 
 ### Informazioni sull&#39;ottimizzazione delle proporzioni pixel del dispositivo {#dpr}
 
@@ -104,7 +141,7 @@ Attualmente, la densità di pixel della visualizzazione proviene dai valori di i
 >[!NOTE]
 >
 >* È possibile utilizzare `dpr=on,dprValue` anche se l&#39;impostazione DPR a livello aziendale è disattivata.
->* A causa dell&#39;ottimizzazione DPR, quando l&#39;immagine risultante è maggiore dell&#39;impostazione MaxPix Dynamic Media, la larghezza MaxPix viene sempre riconosciuta mantenendo le proporzioni dell&#39;immagine. -->
+>* A causa dell’ottimizzazione DPR, quando l’immagine risultante è maggiore dell’impostazione MaxPix Dynamic Media, la larghezza MaxPix viene sempre riconosciuta mantenendo le proporzioni dell’immagine. -->
 
 | Dimensione immagine richiesta | Valore rapporto pixel dispositivo (dpr) | Dimensioni immagine consegnata |
 |---|---|---|
@@ -161,9 +198,9 @@ Per la creazione di immagini avanzate sono supportati i seguenti formati di imma
 * JPEG
 * PNG
 
-La funzione Smart Imaging ricalcola la qualità dei formati di file immagine JPEG durante la conversione in un nuovo formato.
+Smart Imaging ricalcola la qualità dei formati di file immagine JPEG durante la conversione in un nuovo formato.
 
-Per i formati di file di immagine che supportano la trasparenza come PNG, puoi configurare Smart Imaging per fornire file AVIF e WebP con perdita di dati. Per la conversione di formato con perdita di dati, Smart Imaging utilizza la qualità indicata nell’URL dell’immagine oppure la qualità configurata nell’account aziendale di Dynamic Media.
+Per i formati di file di immagine che supportano la trasparenza come PNG, puoi configurare Smart Imaging per fornire file AVIF e WebP con perdita di dati. Per la conversione di formato con perdita di dati, la tecnologia Smart Imaging utilizza la qualità indicata nell’URL dell’immagine oppure la qualità configurata nell’account aziendale Dynamic Media.
 
 ## Supporto dei comandi Image Server in Smart Imaging{#imaging-serving-command-support}
 
@@ -173,11 +210,11 @@ I comandi Image Server `fmt` e `qlt` non sono supportati. Tutti i comandi rimane
 
 +++**Sono presenti costi di licenza associati a Smart Imaging?**
 
-No. Smart Imaging è incluso nella licenza esistente. Questa regola è valida per Dynamic Media Classic o Experience Manager - Dynamic Media (on-prem, AMS e Experience Manager as a Cloud Service).
+No. Smart Imaging è incluso nella licenza esistente. Questa regola è valida per Dynamic Media Classic o Experience Manager - Dynamic Media (On-prem, AMS e Experience Manager as a Cloud Service).
 
 >[!IMPORTANT]
 >
->Smart Imaging non è disponibile per i clienti Dynamic Media - Hybrid.
+>L’imaging avanzato non è disponibile per i clienti Dynamic Media - Hybrid.
 
 +++
 
@@ -207,7 +244,7 @@ Smart Imaging si integra perfettamente con i predefiniti immagine esistenti, ris
 
 Le uniche regolazioni riguardano il formato dell&#39;immagine, la qualità o entrambi. Durante la conversione del formato, la tecnologia Smart Imaging mantiene la fedeltà visiva totale in base alle impostazioni predefinite, ma offre un file di dimensioni inferiori. È sufficiente abilitarlo aggiungendo `bfc=on`, o `dpr=on,dprValue`, o `network=on`, oppure tutte e tre le impostazioni dei parametri agli URL o ai predefiniti esistenti.
 
-Supponiamo ad esempio che un predefinito immagine specifichi un formato JPEG di 500 × 500 pixel, con `quality=85` e `unsharp mask=0.1,1,5`. Smart Imaging rileva se l’utente si trova su un browser Chrome. Quindi converte l&#39;immagine in WebP con le stesse dimensioni (500 × 500) e una maschera di contrasto corrispondente alle impostazioni del JPEG. Vengono quindi confrontate le dimensioni dei file delle versioni WebP e JPEG e viene distribuita all&#39;utente la versione più piccola.
+Supponiamo ad esempio che un predefinito immagine specifichi un formato JPEG con 500 × 500 pixel, con `quality=85` e `unsharp mask=0.1,1,5`. Smart Imaging rileva se l’utente si trova su un browser Chrome. Quindi converte l&#39;immagine in WebP con le stesse dimensioni (500 × 500) e una maschera di contrasto corrispondente alle impostazioni di JPEG. Vengono quindi confrontate le dimensioni dei file delle versioni WebP e JPEG e viene distribuita all&#39;utente la versione più piccola.
 
 +++
 
@@ -241,7 +278,7 @@ Sì, a entrambe le domande. La tecnologia Smart Imaging funziona con le immagini
 
 La tecnologia Smart Imaging è pronta per l&#39;uso immediato per tutti i clienti. Per iniziare a usufruire dei vantaggi, aggiungi `bfc=on`, `dpr=on,dprValue` o `network=on` oppure tutte e tre le impostazioni dei parametri agli URL o ai predefiniti esistenti.
 
-Per attivare Smart Imaging, l’account Dynamic Media Classic o Dynamic Media dell’azienda su Experience Manager deve includere nella licenza la rete CDN (Content Delivery Network) inclusa in Adobe.
+Per attivare Smart Imaging, l’account Dynamic Media Classic o Dynamic Media della tua azienda su Experience Manager deve includere la rete CDN (Content Delivery Network) in bundle con Adobe come parte della licenza.
 
 +++
 
@@ -256,11 +293,11 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
 >[!NOTE]
 >
->DPR richiede modifiche lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
+>DPR richiede modifiche lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare il DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
 
 **Per creare un caso di supporto per abilitare Smart Imaging sul tuo account:**
 
-1. [Utilizzare l&#39;Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. [Utilizzare Admin Console per avviare la creazione di un nuovo caso di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 1. Fornisci le seguenti informazioni nel tuo caso di assistenza:
 
    * **Dettagli contatto principale:**
@@ -273,7 +310,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
          * Conversione formato browser: WebP o AVIF
          * Ottimizzazione della larghezza di banda di rete
-         * DPR: DPR richiede adeguamenti lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
+         * DPR: DPR richiede adeguamenti lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare il DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
 
    * **Dominio per Smart Imaging:**
 
@@ -294,7 +331,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 Per regolare il valore TTL:
 
    1. **Per Dynamic Media Classic:**
-      1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Installazione di Publish]** > **[!UICONTROL Server immagini]**.
+      1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazione pubblicazione]** > **[!UICONTROL Server immagini]**.
       1. Imposta il valore **[!UICONTROL Durata predefinita cache client]** su 24 ore o più.
    1. **Per Dynamic Media su Adobe Experience Manager:**
       1. Segui [queste istruzioni](/help/assets/dynamic-media/config-dm.md).
@@ -308,7 +345,7 @@ L’Assistenza clienti elabora le richieste nell’ordine in cui vengono ricevut
 
 >[!NOTE]
 >
->Il lead time può essere lungo, perché l’abilitazione di Smart Imaging implica l’Adobe della cancellazione della cache. Pertanto, è possibile gestire solo poche transizioni cliente in un dato momento.
+>Il lead time può essere lungo perché l’abilitazione di Smart Imaging implica che Adobe cancelli la cache. Pertanto, è possibile gestire solo poche transizioni cliente in un dato momento.
 
 +++
 

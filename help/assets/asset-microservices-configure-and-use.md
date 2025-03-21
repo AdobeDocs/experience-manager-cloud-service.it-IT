@@ -5,23 +5,57 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2909'
+source-wordcount: '2937'
 ht-degree: 3%
 
 ---
 
 # Utilizzare i microservizi delle risorse e i profili di elaborazione {#get-started-using-asset-microservices}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 I microservizi per le risorse forniscono un’elaborazione scalabile e resiliente delle risorse utilizzando applicazioni native per il cloud (denominati anche processi di lavoro). Adobe gestisce i servizi per una gestione ottimale di diversi tipi di risorse e opzioni di elaborazione.
 
 I microservizi per le risorse consentono di elaborare [un&#39;ampia gamma di tipi di file](/help/assets/file-format-support.md) che coprono più formati predefiniti rispetto alle versioni precedenti di [!DNL Experience Manager]. Ad esempio, è ora possibile estrarre le miniature dei formati PSD e PSB, ma in precedenza richiedevano soluzioni di terze parti come [!DNL ImageMagick].
 
-L&#39;elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili elaborazione]**. In questo Experience Manager viene fornita una configurazione di base predefinita che consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare, gestire e modificare le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
+L&#39;elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili elaborazione]**. Experience Manager fornisce una configurazione di base predefinita e consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare, gestire e modificare le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -42,7 +76,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configurazione predefinita](#default-config) | È disponibile così com’è e non può essere modificato. Questa configurazione fornisce una funzionalità di base per la generazione delle rappresentazioni. | <ul> <li>Miniature standard utilizzate dall&#39;interfaccia utente [!DNL Assets] (48, 140 e 319 pixel) </li> <li> Anteprima grande (rappresentazione web - 1280 pixel) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l’interfaccia utente di. Vengono fornite più opzioni per la generazione della rappresentazione estendendo l’opzione predefinita. Estendi l’opzione predefinita per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO (solo per posizionamento). </li> <li>Modificare il formato e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
-| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite applicazioni personalizzate per chiamare il [servizio Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Vedi [casi d&#39;uso consentiti](#custom-config). |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite applicazioni personalizzate per chiamare il servizio [Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Vedi [casi d&#39;uso consentiti](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -82,7 +116,7 @@ Il profilo di elaborazione può includere una rappresentazione FPO (solo per pos
    * Nome file di ciascuna rappresentazione.
    * Formato file (PNG, JPEG, GIF o WebP) di ciascuna copia trasformata.
    * Larghezza e altezza in pixel di ciascuna rappresentazione. Se i valori non sono specificati, viene utilizzata la dimensione in pixel completa dell&#39;immagine originale.
-   * Qualità in percentuale di ogni rappresentazione di JPEG e WebP.
+   * Qualità in percentuale di ogni rappresentazione JPEG e WebP.
    * Tipi MIME inclusi ed esclusi per definire l’applicabilità di un profilo.
 
    ![elaborazione-profili-aggiunta](assets/processing-profiles-image.png)
@@ -102,7 +136,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Profilo personalizzato e casi d’uso {#custom-config}
 
-[!DNL Asset Compute Service] supporta diversi casi d&#39;uso, tra cui l&#39;elaborazione predefinita e l&#39;elaborazione di formati specifici per le Adobe, ad esempio i file Photoshop. Consente inoltre di implementare un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+[!DNL Asset Compute Service] supporta diversi casi d&#39;uso, inclusa l&#39;elaborazione predefinita e l&#39;elaborazione di formati specifici di Adobe come i file Photoshop. Consente inoltre di implementare un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 
 >[!NOTE]
 >
@@ -128,7 +162,7 @@ Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare app
 1. Nel campo di testo Nome, digita il nome file desiderato per la rappresentazione, quindi fornisci le seguenti informazioni.
 
    * Nome file di ciascuna copia trasformata e estensione di file supportata.
-   * [URL endpoint di un&#39;app personalizzata App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). L’app deve appartenere alla stessa organizzazione dell’account di Experience Manager.
+   * [URL endpoint di un&#39;app personalizzata App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). L’app deve appartenere alla stessa organizzazione dell’account Experience Manager.
    * Aggiungere parametri di servizio a [passare ulteriori informazioni o parametri all&#39;applicazione personalizzata](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend).
    * Tipi MIME inclusi ed esclusi per limitare l’elaborazione ad alcuni formati di file specifici.
 
@@ -144,7 +178,7 @@ Le applicazioni personalizzate sono app [Project App Builder](https://developer.
 
 Per illustrare l’utilizzo del profilo personalizzato, consideriamo un caso d’uso per applicare del testo personalizzato alle immagini della campagna. Puoi creare un profilo di elaborazione che utilizza l’API Photoshop per modificare le immagini.
 
-L&#39;integrazione del servizio Asset Compute consente ad Experience Manager di trasmettere questi parametri all&#39;applicazione personalizzata utilizzando il campo [!UICONTROL Parametri servizio]. L’applicazione personalizzata chiama quindi l’API Photoshop e trasmette questi valori all’API. Ad esempio, puoi passare il nome del font, il colore del testo, lo spessore e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
+L&#39;integrazione del servizio Asset Compute consente ad Experience Manager di trasmettere questi parametri all&#39;applicazione personalizzata utilizzando il campo [!UICONTROL Parametri del servizio]. L’applicazione personalizzata chiama quindi l’API Photoshop e trasmette questi valori all’API. Ad esempio, puoi passare il nome del font, il colore del testo, lo spessore e la dimensione del testo per aggiungere il testo personalizzato alle immagini della campagna.
 
 <!-- TBD: Check screenshot against the interface. -->
 
@@ -154,7 +188,7 @@ L&#39;integrazione del servizio Asset Compute consente ad Experience Manager di 
 
 ## Utilizzare i profili di elaborazione per elaborare le risorse {#use-profiles}
 
-Crea e applica ulteriori profili di elaborazione personalizzati a cartelle specifiche. Questo flusso di lavoro consente agli Experienci Manager di elaborare le risorse caricate o aggiornate in queste cartelle. Il profilo di elaborazione standard predefinito viene sempre eseguito ma non è visibile nell’interfaccia utente. Se aggiungi un profilo personalizzato, entrambi i profili vengono utilizzati per elaborare le risorse caricate.
+Crea e applica ulteriori profili di elaborazione personalizzati a cartelle specifiche. Questo flusso di lavoro consente ad Experience Manager di elaborare le risorse caricate o aggiornate in queste cartelle. Il profilo di elaborazione standard predefinito viene sempre eseguito ma non è visibile nell’interfaccia utente. Se aggiungi un profilo personalizzato, entrambi i profili vengono utilizzati per elaborare le risorse caricate.
 
 Applica i profili di elaborazione alle cartelle utilizzando uno dei metodi seguenti:
 

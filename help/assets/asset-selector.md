@@ -5,14 +5,51 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5339'
-ht-degree: 30%
+source-wordcount: '5385'
+ht-degree: 39%
 
 ---
 
 # Selettore risorse micro front-end {#Overview}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Il Selettore risorse micro front-end fornisce un’interfaccia utente che si integra facilmente con l’archivio di [!DNL Experience Manager Assets] in modo da poter sfogliare o cercare le risorse digitali disponibili nell’archivio e utilizzarle nell’esperienza di authoring dell’applicazione.
 
@@ -22,7 +59,7 @@ L’interfaccia utente micro front-end è resa disponibile nell’esperienza del
 
 Il Selettore risorse offre molti vantaggi, tra cui:
 
-* Facilità di integrazione con le applicazioni [Adobe](#asset-selector-ims) o [non Adobe](#asset-selector-non-ims) che utilizzano la libreria Vanilla JavaScript.
+* Facilità di integrazione con le applicazioni [Adobe](#asset-selector-ims) o [non Adobe](#asset-selector-non-ims) utilizzando la libreria Vanilla JavaScript.
 * Facile manutenzione poiché gli aggiornamenti al pacchetto Selettore risorse vengono automaticamente distribuiti nel selettore risorse disponibile per l’applicazione. Non sono necessari aggiornamenti all’interno dell’applicazione per caricare le modifiche più recenti.
 * Facilità di personalizzazione grazie alle proprietà disponibili che controllano la visualizzazione del Selettore risorse all’interno dell’applicazione.
 * Filtri di ricerca full-text, predefiniti e personalizzati per passare rapidamente alle risorse da utilizzare nell’esperienza di authoring.
@@ -46,22 +83,22 @@ Il Selettore risorse offre molti vantaggi, tra cui:
 
 Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 
-* L&#39;applicazione è in esecuzione su HTTPS.
+* L’applicazione è in esecuzione su HTTPS.
 * L’URL dell’applicazione si trova nell’elenco Consentiti degli URL di reindirizzamento del client IMS.
 * Il flusso di accesso IMS viene configurato e renderizzato utilizzando un pop-up sul browser web. Pertanto, i popup devono essere abilitati o consentiti nel browser di destinazione.
 
-Se hai bisogno del flusso di lavoro di autenticazione IMS di Asset Selector, utilizza i prerequisiti precedenti. In alternativa, se sei già autenticato con il flusso di lavoro IMS, puoi aggiungere le informazioni IMS.
+Se hai bisogno del flusso di lavoro di autenticazione IMS di Asset Selector, utilizza i prerequisiti precedenti. In alternativa, se hai già effettuato l’autenticazione con il flusso di lavoro IMS, puoi aggiungere le informazioni IMS.
 
 >[!IMPORTANT]
 >
-> Questo archivio funge da documentazione supplementare che descrive le API disponibili e alcuni esempi di utilizzo per l’integrazione di Asset Selector. Prima di installare o utilizzare il Selettore risorse, assicurati che all’organizzazione sia stato fornito l’accesso al Selettore risorse come parte del profilo Experience Manager Assets as a Cloud Service. Se non è stato eseguito il provisioning di, non è possibile integrare o utilizzare questi componenti. Per richiedere il provisioning, l’amministratore del programma deve generare un ticket di supporto contrassegnato come P2 da Admin Console e includere le seguenti informazioni:
+> Questo archivio funge da documentazione aggiuntiva sulle API disponibili e fornisce alcuni esempi di utilizzo per l’integrazione del Selettore risorse. Prima di installare o utilizzare il Selettore risorse, assicurati che all’organizzazione sia stato fornito l’accesso al Selettore risorse come parte del profilo Experience Manager Assets as a Cloud Service. Se non è stato fornito l’accesso, non è possibile integrare o utilizzare questi componenti. Per richiedere il provisioning, l’amministratore del programma deve richiedere ad Admin Console un ticket di supporto contrassegnato come P2 e includere le seguenti informazioni:
 >
->* Nomi di dominio in cui è ospitata l’applicazione che integra.
->* Dopo il provisioning, all&#39;organizzazione verranno forniti `imsClientId`, `imsScope` e un `redirectUrl` corrispondenti agli ambienti richiesti che sono essenziali per la configurazione di Asset Selector. Senza tali proprietà valide, non è possibile eseguire i passaggi di installazione.
+>* Nomi di dominio in cui è ospitata l’applicazione di integrazione.
+>* Dopo la fornitura dell’accesso, all’organizzazione verranno forniti i dati di `imsClientId`, `imsScope` e un `redirectUrl` corrispondenti agli ambienti richiesti, dati essenziali per la configurazione del Selettore risorse. Senza tali proprietà valide, non è possibile eseguire i passaggi di installazione.
 
 ## Installazione {#installation}
 
-Il selettore risorse è disponibile tramite CDN ESM (ad esempio, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e versione [UMD](https://github.com/umdjs/umd).
+Il Selettore risorse è disponibile tramite entrambe le versioni ESM CDN (ad esempio, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e [UMD](https://github.com/umdjs/umd).
 
 Nei browser che utilizzano la **versione UMD** (scelta consigliata):
 
@@ -89,7 +126,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Integra il Selettore risorse utilizzando Vanilla JS {#integration-using-vanilla-js}
 
-È possibile integrare qualsiasi applicazione [!DNL Adobe] o non Adobe con l&#39;archivio [!DNL Experience Manager Assets] e selezionare le risorse dall&#39;interno dell&#39;applicazione. Consulta [Integrazione di Asset Selector con varie applicazioni](#asset-selector-integration-with-apps).
+È possibile integrare qualsiasi applicazione [!DNL Adobe] o non Adobe con l&#39;archivio [!DNL Experience Manager Assets] e selezionare le risorse all&#39;interno dell&#39;applicazione. Consulta [Integrazione di Asset Selector con varie applicazioni](#asset-selector-integration-with-apps).
 
 L’integrazione viene eseguita importando il pacchetto Selettore risorse e connettendolo ad Assets as a Cloud Service tramite la libreria JavaScript Vanilla. Modificare un file `index.html` o qualsiasi file appropriato all&#39;interno dell&#39;applicazione in:
 
@@ -107,8 +144,8 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
 * [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
-* [Integrare Asset Selector con un’applicazione non basata su Adobi](#adobe-non-app-integration)
-* [Integrazione per Dynamic Medie con funzionalità OpenAPI](#adobe-app-integration-polaris)
+* [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
+* [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -169,7 +206,7 @@ Le proprietà `ImsAuthProps` definiscono le informazioni di autenticazione e il 
 
 | Nome proprietà | Descrizione |
 |---|---|
-| `imsClientId` | Valore stringa che rappresenta l’ID client IMS utilizzato a scopo di autenticazione. Questo valore è fornito da Adobe ed è specifico per l’organizzazione AEM CS Adobe. |
+| `imsClientId` | Valore stringa che rappresenta l’ID client IMS utilizzato a scopo di autenticazione. Questo valore è fornito da Adobe ed è specifico per la tua organizzazione Adobe AEM CS. |
 | `imsScope` | Descrive gli ambiti utilizzati nell&#39;autenticazione. Gli ambiti determinano il livello di accesso dell&#39;applicazione alle risorse dell&#39;organizzazione. Più ambiti possono essere separati da virgole. |
 | `redirectUrl` | Rappresenta l&#39;URL a cui l&#39;utente viene reindirizzato dopo l&#39;autenticazione. Questo valore viene in genere impostato sull’URL corrente dell’applicazione. Se non viene fornito `redirectUrl`, `ImsAuthService` utilizza il redirectUrl utilizzato per registrare `imsClientId` |
 | `modalMode` | Valore booleano che indica se il flusso di autenticazione deve essere visualizzato o meno in un modale (pop-up). Se è impostato su `true`, il flusso di autenticazione viene visualizzato in un popup. Se è impostato su `false`, il flusso di autenticazione viene visualizzato in un ricaricamento dell&#39;intera pagina. _Nota:_ per una migliore interfaccia utente, è possibile controllare dinamicamente questo valore se la finestra popup del browser dell&#39;utente è disabilitata. |
@@ -263,7 +300,7 @@ onErrorReceived: (type, msg) => {
 
 ### Prerequisiti {#prereqs-non-adobe-app}
 
-Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguenti prerequisiti:
+Se integri Asset Selector con un’applicazione non Adobe, utilizza i seguenti prerequisiti:
 
 * [Metodi di comunicazione](#prereqs)
 * imsClientId
@@ -274,11 +311,11 @@ Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguent
 
 Asset Selector supporta l&#39;autenticazione nell&#39;archivio [!DNL Experience Manager Assets] tramite le proprietà di Identity Management System (IMS), ad esempio `imsScope` o `imsClientID`, durante l&#39;integrazione con un&#39;applicazione non Adobe.
 
-+++**Configurare il selettore risorse per un&#39;applicazione non di Adobe**
-Per configurare Asset Selector per un’applicazione non di Adobe, devi innanzitutto registrare un ticket di supporto per il provisioning, seguito dai passaggi di integrazione.
++++**Configurare il selettore risorse per un&#39;applicazione non Adobe**
+Per configurare Asset Selector per un’applicazione non Adobe, devi innanzitutto registrare un ticket di supporto per il provisioning, seguito dai passaggi di integrazione.
 
 **Registrazione di un ticket di supporto**
-Passaggi per registrare un ticket di supporto tramite l’Admin Console:
+Passaggi per registrare un ticket di supporto tramite Admin Console:
 
 1. Aggiungi **Selettore risorse con AEM Assets** nel titolo del ticket.
 
@@ -289,7 +326,7 @@ Passaggi per registrare un ticket di supporto tramite l’Admin Console:
 +++
 
 +++**Passaggi di integrazione**
-Utilizza questo file `index.html` di esempio per l’autenticazione durante l’integrazione di Asset Selector con un’applicazione non di Adobe.
+Utilizza questo file `index.html` di esempio per l’autenticazione durante l’integrazione di Asset Selector con un’applicazione non Adobe.
 
 Accedere al pacchetto Asset Selector utilizzando il tag `Script`, come illustrato nella *riga 9* alla *riga 11* del file `index.html` di esempio.
 
@@ -297,7 +334,7 @@ Accedere al pacchetto Asset Selector utilizzando il tag `Script`, come illustrat
 
 Poiché non è stato generato alcun `imsToken`, utilizzare le funzioni `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow`, come mostrato nella riga 40 alla riga 50 del file `index.html` di esempio. Utilizzare la funzione `registerAssetsSelectorsAuthService` prima di `renderAssetSelectorWithAuthFlow` per registrare `imsToken` con il selettore risorse. [!DNL Adobe] consiglia di chiamare `registerAssetsSelectorsAuthService` quando si crea un&#39;istanza del componente.
 
-Definisci l&#39;autenticazione e altre proprietà relative all&#39;accesso as a Cloud Service di Assets nella sezione `const props`, come mostrato nella *riga 54* alla *riga 60* del file `index.html` di esempio.
+Definisci l&#39;autenticazione e altre proprietà relative all&#39;accesso ad Assets as a Cloud Service nella sezione `const props`, come mostrato nella *riga 54* alla *riga 60* del file di esempio `index.html`.
 
 La variabile globale `PureJSSelectors`, menzionata nella *riga 65*, viene utilizzata per eseguire il rendering del selettore risorse nel browser Web.
 
@@ -392,25 +429,25 @@ Il rendering del selettore risorse viene eseguito sull&#39;elemento contenitore 
 
 <!--Integration with Polaris application content starts here-->
 
->[!TAB Integrazione per Dynamic Medie con funzionalità OpenAPI]
+>[!TAB Integrazione per Dynamic Media con funzionalità OpenAPI]
 
 ### Prerequisiti {#prereqs-polaris}
 
-Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
+Se integri Asset Selector con Dynamic Media con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
 
 * [Metodi di comunicazione](#prereqs)
-* Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
+* Per accedere a Dynamic Media con funzionalità OpenAPI, è necessario disporre di licenze per:
    * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service).
-   * AEM-Dynamic Medie
+   * Dynamic Media di AEM.
 * Solo [le risorse approvate](#approved-assets.md) sono disponibili per l&#39;utilizzo per garantire la coerenza del brand.
 
-### Integrazione per Dynamic Medie con funzionalità OpenAPI{#adobe-app-integration-polaris}
+### Integrazione per Dynamic Media con funzionalità OpenAPI{#adobe-app-integration-polaris}
 
-L’integrazione del selettore delle risorse con il processo OpenAPI di Dynamic Medie prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato o pronto per scegliere l’URL Dynamic Media, ecc.
+L’integrazione di Asset Selector con il processo Dynamic Media OpenAPI prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato, la scelta dell’URL Dynamic Media e così via.
 
-+++**Integrare Asset Selector per Dynamic Medie con funzionalità OpenAPI**
++++**Integrare Asset Selector per Dynamic Media con funzionalità OpenAPI**
 
-Le proprietà `rootPath` e `path` non devono far parte di Dynamic Medie con funzionalità OpenAPI. È invece possibile configurare la proprietà `aemTierType`. Di seguito è riportata la sintassi della configurazione:
+Le proprietà `rootPath` e `path` non devono far parte di Dynamic Media con funzionalità OpenAPI. È invece possibile configurare la proprietà `aemTierType`. Di seguito è riportata la sintassi della configurazione:
 
 ```
 aemTierType:[1: "delivery"]
@@ -485,7 +522,7 @@ Di seguito sono riportati i due modi per attraversare l’oggetto JSON:
 ![URL di consegna dinamico](assets/dynamic-delivery-url.png)
 
 * **Miniatura:** le miniature possono essere immagini e le risorse sono PDF, video, immagini e così via. Tuttavia, puoi utilizzare gli attributi di altezza e larghezza della miniatura di una risorsa come rappresentazione dinamica della consegna.
-Per le risorse di tipo PDF è possibile utilizzare il seguente set di rappresentazioni:
+Per le risorse di tipo PDF può essere utilizzato il seguente set di rappresentazioni:
 Una volta selezionato un PDF nella barra laterale, il contesto di selezione offre le informazioni seguenti. Di seguito è riportato il modo per scorrere l’oggetto JSON:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -501,7 +538,7 @@ Una volta selezionato un PDF nella barra laterale, il contesto di selezione offr
   } 
   ```
 
-Nella schermata precedente, se è necessario PDF, l’URL di consegna del rendering originale del PDF deve essere incorporato nell’esperienza di destinazione e non nella relativa miniatura. Ad esempio `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+Nella schermata precedente, se è necessario PDF e non la sua miniatura, l’URL di consegna del rendering originale di PDF deve essere incorporato nell’esperienza di destinazione. Ad esempio `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **Video:** Puoi utilizzare l&#39;URL del lettore video per le risorse dei tipi di video che utilizzano un iFrame incorporato. Nell’esperienza di destinazione puoi utilizzare le seguenti rappresentazioni di array:
   <!--![Video dynamic delivery url](image.png)-->
@@ -521,11 +558,11 @@ Nella schermata precedente, se è necessario PDF, l’URL di consegna del render
 
   Nell&#39;esempio precedente, l&#39;URL del lettore video è `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-+++**Interfaccia utente di Asset Selector per Dynamic Medie con funzionalità OpenAPI**
++++**Interfaccia utente di Asset Selector per Dynamic Media con funzionalità OpenAPI**
 
-Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, nell’archivio Experience Manager Assets puoi visualizzare solo la struttura delle risorse approvate.
+Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, nell’archivio delle risorse di Experience Manager puoi visualizzare solo la struttura delle risorse approvate.
 
-![Dynamic Medie con funzionalità OpenAPI, interfaccia utente](assets/polaris-ui.png)
+![Interfaccia utente di Dynamic Media con funzionalità OpenAPI](assets/polaris-ui.png)
 
 * **A**: [Nascondi/Mostra pannello](#hide-show-panel)
 * **B**: [Assets](#repository)
@@ -539,7 +576,7 @@ Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, n
 +++
 
 +++**Configurare filtri personalizzati**
-Il selettore risorse per Dynamic Medie con funzionalità OpenAPI consente di configurare proprietà personalizzate e i filtri basati su di esse. La proprietà `filterSchema` viene utilizzata per configurare tali proprietà. La personalizzazione può essere esposta come `metadata.<metadata bucket>.<property name>.` in base al quale è possibile configurare i filtri, dove
+Il selettore risorse per Dynamic Media con funzionalità OpenAPI consente di configurare proprietà personalizzate e i filtri basati su di esse. La proprietà `filterSchema` viene utilizzata per configurare tali proprietà. La personalizzazione può essere esposta come `metadata.<metadata bucket>.<property name>.` in base al quale è possibile configurare i filtri, dove
 
 * `metadata` sono le informazioni di una risorsa
 * `embedded` è il parametro statico utilizzato per la configurazione e
@@ -547,7 +584,7 @@ Il selettore risorse per Dynamic Medie con funzionalità OpenAPI consente di con
 
 Per la configurazione, le proprietà definite al livello `jcr:content/metadata/` sono esposte come `metadata.<metadata bucket>.<property name>.` per i filtri che si desidera configurare.
 
-Ad esempio, in Asset Selector for Dynamic Medie con funzionalità OpenAPI, una proprietà su `asset jcr:content/metadata/client_name:market` viene convertita in `metadata.embedded.client_name:market` per la configurazione del filtro.
+Ad esempio, in Asset Selector for Dynamic Media con funzionalità OpenAPI, una proprietà su `asset jcr:content/metadata/client_name:market` viene convertita in `metadata.embedded.client_name:market` per la configurazione del filtro.
 
 Per ottenere il nome, è necessario eseguire un’attività una tantum. Effettua una chiamata API di ricerca per la risorsa e ottieni il nome della proprietà (essenzialmente il bucket).
 
@@ -555,7 +592,7 @@ Per ottenere il nome, è necessario eseguire un’attività una tantum. Effettua
 
 >[!ENDTABS]
 
-## Proprietà selettore risorse {#asset-selector-properties}
+## Proprietà del Selettore risorse {#asset-selector-properties}
 
 Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rendering. Nella tabella seguente sono elencate le proprietà che è possibile utilizzare per personalizzare e utilizzare il Selettore risorse.
 
@@ -566,7 +603,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *imsToken* | Stringa | No | | Token di connessione IMS utilizzato per l’autenticazione. `imsToken` è obbligatorio se si utilizza un&#39;applicazione [!DNL Adobe] per l&#39;integrazione. |
 | *apiKey* | Stringa | No | | Chiave API utilizzata per accedere al servizio di individuazione AEM. `apiKey` è richiesto se si utilizza un&#39;integrazione dell&#39;applicazione [!DNL Adobe]. |
 | *filterSchema* | Array | No | | Modello utilizzato per configurare le proprietà del filtro. Questa funzione è utile quando desideri limitare determinate opzioni di filtro nel Selettore risorse. |
-| *filterFormProps* | Oggetto | No | | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Per! ad esempio, tipo MIME JPG-GIF, PNG,. |
+| *filterFormProps* | Oggetto | No | | Specifica le proprietà del filtro da utilizzare per perfezionare la ricerca. Per! ad esempio JPG, PNG, GIF di tipo MIME. |
 | *selectedAssets* | Array `<Object>` | No |                 | Specifica le risorse selezionate quando viene eseguito il rendering del Selettore risorse. È necessario un array di oggetti che contenga una proprietà ID delle risorse. Ad esempio, `[{id: 'urn:234}, {id: 'urn:555'}]` Deve essere disponibile una risorsa nella directory corrente. Se devi utilizzare una directory diversa, specifica anche un valore per la proprietà `path`. |
 | *acvConfig* | Oggetto | No | | Proprietà Visualizzazione raccolta risorse che contiene un oggetto contenente una configurazione personalizzata per ignorare le impostazioni predefinite. Inoltre, questa proprietà viene utilizzata con la proprietà `rail` per abilitare la visualizzazione della barra del visualizzatore risorse. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Se le traduzioni OOTB non sono sufficienti per le esigenze dell&#39;applicazione, è possibile esporre un&#39;interfaccia tramite la quale è possibile passare i propri valori localizzati personalizzati tramite la proprietà `i18nSymbols`. Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue. Per eseguire la sostituzione, è necessario passare un oggetto valido del [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) alla chiave di `i18nSymbols` che desideri sostituire. |
@@ -1018,7 +1055,7 @@ Per nascondere le cartelle nel menu di navigazione a sinistra, fai clic sull’i
 
 ### Selettore archivio {#repository-switcher}
 
-Asset Selector consente inoltre di cambiare archivi per la selezione delle risorse. Puoi selezionare l’archivio desiderato dal menu a discesa disponibile nel pannello a sinistra. Le opzioni dell’archivio disponibili nell’elenco a discesa si basano sulla proprietà `repositoryId` definita nel file `index.html`. Si basa sull’ambiente dell’organizzazione IMS selezionata a cui accede l’utente connesso. I consumatori possono trasmettere un `repositoryID` preferito e, in tal caso, il Selettore risorse interrompe il rendering del selettore archivio ed esegue il rendering solo delle risorse dall’archivio specificato.
+Il Selettore risorse consente inoltre di cambiare archivio per la selezione delle risorse. Puoi selezionare l’archivio desiderato dal menu a discesa disponibile nel pannello a sinistra. Le opzioni dell’archivio disponibili nell’elenco a discesa si basano sulla proprietà `repositoryId` definita nel file `index.html`. Si basa sugli ambienti dell’organizzazione IMS selezionata a cui accede l’utente che ha eseguito l’accesso. I consumatori possono trasmettere un `repositoryID` preferito e, in tal caso, il Selettore risorse interrompe il rendering del selettore archivio ed esegue il rendering solo delle risorse dall’archivio specificato.
 
 ### Archivio risorse
 
@@ -1029,21 +1066,21 @@ Si tratta di una raccolta di cartelle di risorse che puoi utilizzare per eseguir
 Il Selettore risorse fornisce anche opzioni di filtro predefinite per perfezionare i risultati della ricerca. Sono disponibili i seguenti filtri:
 
 * **[!UICONTROL Stato]:** include lo stato corrente della risorsa tra `all`, `approved`, `rejected` o `no status`.
-* **[!UICONTROL Il tipo di file]:** include `folder`, `file`, `images`, `documents` o `video`.
-* **[!UICONTROL Stato scadenza]:** fa riferimento alle risorse in base alla relativa durata di scadenza. È possibile selezionare la casella di controllo `[!UICONTROL Expired]` per filtrare le risorse scadute oppure impostare `[!UICONTROL Expiration Duration]` per visualizzare le risorse in base alla loro durata di scadenza. Quando una risorsa è già scaduta o sta per scadere, viene visualizzato un badge che illustra la stessa cosa. Inoltre, puoi controllare se consentire l’utilizzo (o il trascinamento) di una risorsa scaduta. Ulteriori informazioni su [personalizzare le risorse scadute](#customize-expired-assets). Per impostazione predefinita, il badge **In scadenza** viene visualizzato per le risorse che scadono nei successivi 30 giorni. È tuttavia possibile configurare la scadenza utilizzando la proprietà `expirationDate`.
+* **[!UICONTROL Tipo di file]:** include `folder`, `file`, `images`, `documents` o `video`.
+* **[!UICONTROL Stato di scadenza]:** fa riferimento alle risorse in base alla relativa durata di scadenza. È possibile selezionare la casella di controllo `[!UICONTROL Expired]` per filtrare le risorse scadute oppure impostare `[!UICONTROL Expiration Duration]` per visualizzare le risorse in base alla durata della scadenza. Quando una risorsa è già scaduta o sta per scadere, viene visualizzato un badge che illustra la stessa cosa. Inoltre, puoi controllare se consentire l’utilizzo (o il trascinamento) di una risorsa scaduta. Ulteriori informazioni su [personalizzare le risorse scadute](#customize-expired-assets). Per impostazione predefinita, il badge **In scadenza** viene visualizzato per le risorse che scadono nei successivi 30 giorni. È tuttavia possibile configurare la scadenza utilizzando la proprietà `expirationDate`.
 
   >[!TIP]
   >
-  > Se desideri visualizzare o filtrare le risorse in base alla loro data di scadenza futura, indica l&#39;intervallo di date futuro nel campo `[!UICONTROL Expiration Duration]`. Visualizza le risorse con il badge **in scadenza**.
+  > Se desideri visualizzare o filtrare le risorse in base alla relativa data di scadenza futura, indica l’intervallo di date futuro nel campo `[!UICONTROL Expiration Duration]`. Le risorse verranno visualizzate con accanto il badge **In scadenza**.
 
 * **[!UICONTROL Tipo MIME]:** include `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
-* **[!UICONTROL Dimensioni immagine]:** include la larghezza minima/massima e l&#39;altezza minima/massima dell&#39;immagine.
+* **[!UICONTROL Dimensioni immagine]:** include larghezza minima/massima, altezza minima/massima dell’immagine.
 
   ![rail-view-example](assets/filters-asset-selector.png)
 
 ### Ricerca personalizzata
 
-Oltre alla ricerca full-text, Asset Selector consente di cercare le risorse all’interno dei file utilizzando la ricerca personalizzata. Puoi utilizzare filtri di ricerca personalizzati sia nella vista modale che nella vista della barra.
+Oltre alla ricerca full-text, il Selettore risorse consente di cercare le risorse all’interno dei file utilizzando la ricerca personalizzata. Puoi utilizzare filtri di ricerca personalizzati sia nella vista modale che nella vista della barra.
 
 ![custom-search](assets/custom-search1.png)
 
@@ -1059,12 +1096,12 @@ Puoi ordinare le risorse all’interno selettore risorse per nome, dimensione o 
 
 ### Tipi di visualizzazione {#types-of-view}
 
-Il selettore risorse consente di visualizzare la risorsa in quattro diverse visualizzazioni:
+Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi:
 
-* **![visualizzazione elenco](assets/do-not-localize/list-view.png) [!UICONTROL Visualizzazione elenco]** La visualizzazione elenco visualizza i file e le cartelle scorrevoli in un&#39;unica colonna.
-* **![visualizzazione griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Visualizzazione griglia]** La visualizzazione griglia visualizza i file e le cartelle scorrevoli in una griglia di righe e colonne.
-* **![visualizzazione raccolta](assets/do-not-localize/gallery-view.png) [!UICONTROL Visualizzazione raccolta]** La visualizzazione raccolta visualizza i file o le cartelle in un elenco orizzontale con blocco centrale.
-* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL vista a cascata]** La vista a cascata visualizza file o cartelle sotto forma di Bridge.
+* **![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL Vista a elenco]**: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
+* **![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL Vista griglia]**: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
+* **![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL Vista galleria]**: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
+* **![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vista a cascata]**: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 <!--
 ### Modes to view Asset Selector

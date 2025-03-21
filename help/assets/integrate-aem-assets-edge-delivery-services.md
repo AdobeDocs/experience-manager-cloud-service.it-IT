@@ -2,14 +2,48 @@
 title: Integra [!DNL AEM Assets] durante l'authoring del contenuto per [!DNL Edge Delivery Services]
 description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrare [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] e [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 # Integra [!DNL AEM Assets] durante l&#39;authoring dei contenuti per [!DNL Edge Delivery Services] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 ![risorse AEM con UE](/help/assets/assets/EDS2.png)
 

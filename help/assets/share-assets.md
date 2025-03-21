@@ -4,17 +4,51 @@ description: Distribuisci le risorse digitali utilizzando metodi come share as a
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 3%
+source-wordcount: '1875'
+ht-degree: 4%
 
 ---
 
 # Condividi e distribuisci le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -250,7 +284,7 @@ Gli utenti possono scaricare le risorse richieste e condividerle all&#39;esterno
 
 Gli addetti al marketing e gli utenti del settore possono condividere con facilità le risorse approvate con i loro creativi utilizzando,
 
-* **App desktop di Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con gli altri utenti Experienci Manager, ad esempio caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **App desktop Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con le controparti che sono utenti di Experience Manager, ad esempio, caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
@@ -312,7 +346,7 @@ Consulta [come configurare [!DNL Assets] per utilizzarlo con [!DNL Adobe Asset L
 ## Best practice e risoluzione dei problemi {#bestpractices}
 
 * Le cartelle o le raccolte di risorse il cui nome contiene uno spazio vuoto potrebbero non essere condivise.
-* Se gli utenti non riescono a scaricare le risorse condivise, rivolgiti al tuo amministratore di Experience Manager per sapere quali sono i limiti di download. Il valore predefinito è 100 MB.
+* Se gli utenti non possono scaricare le risorse condivise, verifica con il tuo amministratore Experience Manager quali sono i limiti di download. Il valore predefinito è 100 MB.
 * Per consentire a un utente di visualizzare in anteprima un video condiviso tramite la condivisione di collegamenti, è necessario che nel video sia disponibile una rappresentazione video statica nella posizione `/jcr:content/renditions` nel nodo del video nell&#39;archivio. L&#39;anteprima non dipende dalla disponibilità di una rappresentazione [!DNL Dynamic Media].
 * Quando si scarica una risorsa video tramite condivisione collegamenti, le rappresentazioni [!DNL Dynamic Media] non vengono incluse nell&#39;archivio scaricato.
 

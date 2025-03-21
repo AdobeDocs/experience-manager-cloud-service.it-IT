@@ -1,22 +1,56 @@
 ---
 title: Configurare la mappatura dei metadati delle risorse tra Workfront e Experience Manager Assets
-description: Mappa i campi di metadati delle risorse tra Adobe Workfront e le applicazioni Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
+description: Mappa i campi di metadati delle risorse tra le applicazioni Adobe Workfront e Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 4%
+source-wordcount: '1058'
+ht-degree: 6%
 
 ---
 
 # Configurare la mappatura dei metadati delle risorse tra Adobe Workfront e Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-Puoi mappare i campi di metadati delle risorse tra Adobe Workfront e le applicazioni Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
+Puoi mappare i campi di metadati delle risorse tra le applicazioni Adobe Workfront e Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
 
 Workfront Ad esempio, se quando invii l’immagine a Experience Manager Assets devi mantenere i campi di metadati per un’immagine come nome, descrizione e il progetto a cui appartiene, configura e mappa questi campi sulle proprietà di Experience Manager Assets.
 
@@ -34,7 +68,7 @@ Un&#39;immagine `add-users-workfront.png` esiste nel progetto `Metadata Syncs` n
 
 * Un amministratore accede alle applicazioni Workfront e Experience Manager Assets as a Cloud Service.
 
-* Integrazione tra [Workfront e Experience Manager Assets as a Cloud Service applications](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
+* Integrazione tra [applicazioni Workfront e Experience Manager Assets as a Cloud Service](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
 
 ## Configurare la mappatura dei metadati in Workfront {#set-up-metadata-mapping}
 
@@ -46,7 +80,7 @@ Per impostare la mappatura dei metadati per i campi Nome progetto, Nome document
 
 1. Seleziona l&#39;integrazione Experience Manager Assets e fai clic su **[!UICONTROL Modifica]**.
 
-1. Fare clic su **[!UICONTROL Metadati]**. Nella scheda **[!UICONTROL Assets]**, mappa il campo Workfront [!UICONTROL Progetto] > [!UICONTROL Nome] con il campo Experience Manager Assets `wm:projectName`. Se non trovi la corrispondenza esatta, l’Adobe consiglia di cercare la corrispondenza migliore per mappare i campi Workfront e Experience Manager Assets. Puoi evitare di mappare campi di tipi di dati diversi. Ad esempio, la mappatura di un campo Workfront della data su un campo Assets della descrizione.
+1. Fare clic su **[!UICONTROL Metadati]**. Nella scheda **[!UICONTROL Assets]**, mappa il campo Workfront [!UICONTROL Progetto] > [!UICONTROL Nome] con il campo Experience Manager Assets `wm:projectName`. Se non trovi la corrispondenza esatta, Adobe consiglia di cercare la corrispondenza migliore per mappare i campi Workfront e Experience Manager Assets. Puoi evitare di mappare campi di tipi di dati diversi. Ad esempio, la mappatura di un campo Workfront della data su un campo Assets della descrizione.
 1. Mappa il campo Workfront [!UICONTROL Document] > [!UICONTROL Name] al campo Experience Manager Assets `wm:documentName`.
 
    ![Mappatura in Workfront](assets/workfront-metadata-mapping.png)
@@ -67,13 +101,13 @@ Per inviare l&#39;immagine da Workfront a Experience Manager Assets:
 
 1. Fai clic su **[!UICONTROL Invia a]**, quindi scegli il nome dell&#39;integrazione Experience Manager Assets Essentials.
 
-   ![Invia a AEM](assets/send-to-aem.png)
+   ![Invia ad AEM](assets/send-to-aem.png)
 
 1. Scegliere la cartella di destinazione della risorsa, quindi fare clic su **[!UICONTROL Seleziona cartella]**.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-## Configurare la mappatura dei metadati delle risorse nell’Experience Manager as a Cloud Service {#metadata-mapping-aem}
+## Configurare la mappatura dei metadati delle risorse in Experience Manager as a Cloud Service {#metadata-mapping-aem}
 
 Dopo la [configurazione della mappatura dei metadati delle risorse in Adobe Workfront](#set-up-metadata-mapping), è necessario utilizzare la stessa mappatura nell&#39;applicazione Experience Manager Assets as a Cloud Service per visualizzare i risultati dei metadati appropriati per l&#39;immagine.
 
@@ -100,7 +134,7 @@ Per configurare la mappatura dei metadati utilizzando un nuovo modulo metadati i
 
       `wm` fa riferimento al nome dello spazio dei nomi e `projectName` al titolo della proprietà. Utilizza il formato `namespace:propertyTitle` per definire le mappature dei campi di metadati.
 
-      ![Invia a AEM](assets/metadata-schema-mapping.png)
+      ![Invia ad AEM](assets/metadata-schema-mapping.png)
 
 1. Fai clic sulla scheda **[!UICONTROL Genera modulo]** e trascina nel modulo il componente **[!UICONTROL Testo a riga singola]**. Fai clic sul componente nel modulo. Nella scheda **[!UICONTROL Genera modulo]**:
 

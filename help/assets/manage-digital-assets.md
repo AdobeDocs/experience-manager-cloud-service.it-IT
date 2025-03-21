@@ -6,17 +6,51 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4323'
 ht-degree: 10%
 
 ---
 
 # Gestire le risorse {#manage-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -31,8 +65,8 @@ Quando si organizza una raccolta di risorse, ad esempio tutte le immagini `Natur
 
 >[!NOTE]
 >
->* La condivisione di una cartella Assets di tipo `sling:OrderedFolder` non è supportata quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
->* L&#39;Experience Manager non consente di utilizzare `subassets` parola come nome di una cartella. È una parola chiave riservata ai nodi che contengono risorse secondarie per le risorse composte
+>* La condivisione di una cartella Assets di tipo `sling:OrderedFolder` non è supportata durante la condivisione in Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
+>* Experience Manager non consente di utilizzare `subassets` parola come nome di una cartella. È una parola chiave riservata ai nodi che contengono risorse secondarie per le risorse composte
 
 1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una cartella. Scegliere **[!UICONTROL Crea]** dal menu. Seleziona **[!UICONTROL Nuova cartella]**.
 1. Nel campo **[!UICONTROL Titolo]**, fornisci un nome di cartella. Per impostazione predefinita, DAM utilizza il titolo fornito come nome della cartella. Una volta creata la cartella, puoi sovrascrivere l’impostazione predefinita e specificare un altro nome di cartella.
@@ -45,7 +79,7 @@ I seguenti caratteri (separati da spazi) non sono supportati:
 
 ## Caricare le risorse {#uploading-assets}
 
-Consulta [aggiungere risorse digitali all&#39;Experience Manager](add-assets.md).
+Consulta [aggiungere risorse digitali ad Experience Manager](add-assets.md).
 
 ## Estrai archivi ZIP {#extract-zip-archives}
 
@@ -237,7 +271,7 @@ Le altre proprietà e le informazioni sui metadati vengono conservate. Una copia
 
    Puoi configurare le dimensioni per la rappresentazione da visualizzare nella pagina dei dettagli di un’immagine o di una risorsa video. In base alle dimensioni specificate, Assets visualizza la rappresentazione con le dimensioni esatte o più vicine.
 
-   Non è possibile creare copie trasformate con i seguenti prefissi, in quanto sono interni a Adobe:
+   Non è possibile creare copie trasformate con i seguenti prefissi, poiché sono interni di Adobe:
 
    * cq5
 
@@ -287,16 +321,16 @@ Inoltre, disattiva il pulsante Forza eliminazione utilizzando una sovrapposizion
 
 Vedi [scarica risorse da [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publish o annullare la pubblicazione delle risorse {#publish-assets}
+## Pubblicare o annullare la pubblicazione delle risorse {#publish-assets}
 
 1. Passa alla posizione della risorsa o della cartella di risorse da pubblicare o da rimuovere dall’ambiente di pubblicazione (annulla pubblicazione).
 
-1. Seleziona la risorsa o la cartella da pubblicare o annullare la pubblicazione e seleziona l&#39;opzione **[!UICONTROL Gestisci pubblicazione]** ![gestisci pubblicazione](assets/do-not-localize/globe-publication.png) dalla barra degli strumenti. In alternativa, per pubblicare rapidamente, selezionare l&#39;opzione **[!UICONTROL Publish rapido]** nella barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non viene pubblicata.
+1. Seleziona la risorsa o la cartella da pubblicare o annullare la pubblicazione e seleziona l&#39;opzione **[!UICONTROL Gestisci pubblicazione]** ![gestisci pubblicazione](assets/do-not-localize/globe-publication.png) dalla barra degli strumenti. In alternativa, per pubblicare rapidamente, seleziona l&#39;opzione **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti. Se la cartella da pubblicare include una cartella vuota, questa non viene pubblicata.
 
-1. Seleziona l&#39;opzione **[!UICONTROL Publish]** o **[!UICONTROL Annulla pubblicazione]** come richiesto.
+1. Seleziona l&#39;opzione **[!UICONTROL Pubblica]** o **[!UICONTROL Annulla pubblicazione]** come richiesto.
 
    ![Annulla pubblicazione azione](assets/unpublish_action.png)
-   *Figura: opzioni Publish e Annulla pubblicazione e l&#39;opzione di pianificazione.*
+   *Figura: opzioni di pubblicazione e annullamento della pubblicazione e opzione di pianificazione.*
 
 1. Seleziona **[!UICONTROL Ora]** per agire immediatamente sulla risorsa oppure seleziona **[!UICONTROL Più tardi]** per pianificare l&#39;azione. Selezionare una data e un&#39;ora se si sceglie l&#39;opzione **[!UICONTROL Più tardi]**. Fai clic su **[!UICONTROL Avanti]**.
 
@@ -330,7 +364,7 @@ I CUG sono un modo aggiuntivo per limitare l’accesso alle risorse. Puoi anche 
    >
    >Se non si specifica il percorso di una pagina di accesso, [!DNL Experience Manager] visualizza la pagina di accesso predefinita nell&#39;istanza di pubblicazione.
 
-1. Publish la cartella, quindi prova ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di accesso.
+1. Pubblica la cartella, quindi prova ad accedervi dall’istanza di pubblicazione. Viene visualizzata una schermata di accesso.
 1. Se si è un membro del gruppo utenti chiusi, immettere le credenziali di sicurezza. La cartella viene visualizzata dopo l&#39;autenticazione di [!DNL Experience Manager].
 
 ## Cerca risorse {#search-assets}
@@ -510,12 +544,12 @@ Se una risorsa contiene annotazioni o è stata soggetta a un flusso di lavoro di
 
 >[!NOTE]
 >
->È possibile selezionare più annotazioni durante la stampa della risorsa annotata come PDF.
+>È possibile selezionare più annotazioni durante la stampa della risorsa con annotazioni come PDF.
 
 Per stampare le annotazioni e controllare lo stato, selezionare l&#39;icona **[!UICONTROL Stampa]** e seguire le istruzioni della procedura guidata. L&#39;icona **[!UICONTROL Stampa]** viene visualizzata nella barra degli strumenti solo quando alla risorsa è assegnato almeno uno stato di annotazione o revisione.
 
 1. Dall’interfaccia utente di Assets, apri la pagina di anteprima di una risorsa.
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Per stampare tutte le annotazioni e lo stato di revisione, saltare il passaggio 3 e passare direttamente al passaggio 4.
    * Per stampare annotazioni specifiche e rivedere lo stato, aprire la [timeline](/help/assets/manage-digital-assets.md#timeline), quindi passare al passaggio 3.
@@ -532,7 +566,7 @@ Per stampare le annotazioni e controllare lo stato, selezionare l&#39;icona **[!
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
-1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato di annotazioni/revisioni sul PDF. Se ad esempio si desidera stampare le annotazioni o lo stato in alto a destra della pagina contenente l&#39;immagine stampata, utilizzare l&#39;impostazione **In alto a sinistra**. È selezionata per impostazione predefinita.
+1. Nella finestra di dialogo Stampa, scegliere la posizione in cui si desidera visualizzare lo stato delle annotazioni o della revisione in PDF. Se ad esempio si desidera stampare le annotazioni o lo stato in alto a destra della pagina contenente l&#39;immagine stampata, utilizzare l&#39;impostazione **In alto a sinistra**. È selezionata per impostazione predefinita.
 
    <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
@@ -548,7 +582,7 @@ Per stampare le annotazioni e controllare lo stato, selezionare l&#39;icona **[!
 
    Per modificare l&#39;aspetto del file PDF sottoposto a rendering, ad esempio il colore, la dimensione e lo stile del carattere e il colore di sfondo dei commenti e degli stati, aprire la **[!UICONTROL configurazione di Annotation PDF]** da Configuration Manager e modificare le opzioni desiderate. Ad esempio, per modificare il colore di visualizzazione dello stato approvato, modifica il codice del colore nel campo corrispondente. Per informazioni sulla modifica del colore del carattere delle annotazioni, vedere [Annotazione](/help/assets/manage-digital-assets.md#annotating).
 
-   Tornate al file PDF sottoposto a rendering e aggiornatelo. Il PDF aggiornato riflette le modifiche apportate.
+   Torna al file PDF sottoposto a rendering e aggiornalo. Il PDF aggiornato riflette le modifiche apportate.
 
 ## Controllo delle versioni di una risorsa {#asset-versioning}
 
@@ -644,7 +678,7 @@ Una raccolta è un set ordinato di risorse. Puoi utilizzare le raccolte per cond
 
 Per informazioni dettagliate sulla gestione della raccolta, vedere [gestire le raccolte](/help/assets/manage-collections.md).
 
-## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o nel collegamento di risorse Adobe {#hide-expired-assets-via-acp-api}
+## Nascondere le risorse scadute durante la visualizzazione delle risorse nell’app desktop o in Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
 L&#39;app desktop [!DNL Experience Manager] consente di accedere all&#39;archivio DAM dal desktop di Windows o Mac. Adobe Asset Link consente di accedere alle risorse dalle applicazioni desktop [!DNL Creative Cloud] supportate.
 

@@ -1,21 +1,55 @@
 ---
-title: Come si traducono le risorse in AEM?
+title: Come tradurre le risorse in AEM?
 description: Scopri come automatizzare i flussi di lavoro per tradurre le risorse in AEM, inclusi file binari, metadati e tag, in più lingue.
 contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2633'
-ht-degree: 17%
+source-wordcount: '2661'
+ht-degree: 18%
 
 ---
 
 # Tradurre le risorse in AEM {#multilingual-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -24,7 +58,7 @@ ht-degree: 17%
 
 Risorse multilingue significa risorse con binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag per le risorse esistono in una lingua e vengono quindi tradotti in altre lingue per l’utilizzo in progetti multilingue. Adobe Experience Manager Assets consente di automatizzare i flussi di lavoro per tradurre le risorse (inclusi file binari, metadati e tag) e generare risorse in altre lingue da utilizzare nei progetti multilingue.
 
-Per automatizzare la traduzione delle risorse AEM, puoi integrare fornitori di servizi di traduzione con Experience Manager e creare progetti per tradurre le risorse in più lingue. Experience Manager supporta flussi di lavoro di traduzione umana e automatica.
+Per automatizzare la traduzione delle risorse in AEM, puoi integrare fornitori di servizi di traduzione con Experience Manager e creare progetti per tradurre le risorse in più lingue. Experience Manager supporta flussi di lavoro di traduzione umana e automatica.
 
 Traduzione delle risorse umane in AEM: le risorse tradotte vengono restituite e importate in Experience Manager. Quando il provider di traduzione è integrato con Experience Manager, le risorse vengono inviate automaticamente tra Experience Manager e il provider di traduzione.
 
@@ -270,7 +304,7 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, installarlo da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md). Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installa il connettore da [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
-1. Selezionare il logo di Experience Manager e passare a **[!UICONTROL Strumenti > Distribuzione > Cloud Service]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Strumenti > Distribuzione > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

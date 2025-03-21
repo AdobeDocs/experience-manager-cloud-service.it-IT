@@ -1,18 +1,55 @@
 ---
 title: Banner a carosello
-description: Scopri come utilizzare i banner a carosello in Dynamic Medie.
+description: Scopri come utilizzare i banner carosello in Dynamic Media.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
-ht-degree: 1%
+source-wordcount: '4538'
+ht-degree: 2%
 
 ---
 
 # Banner a carosello{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 I banner carosello consentono agli addetti al marketing di promuovere la conversione dei contenuti creando facilmente contenuti promozionali a rotazione interattivi e distribuendoli a qualsiasi schermo.
 
@@ -44,7 +81,7 @@ Guarda una procedura dettagliata sulla [creazione dei banner a carosello](https:
 
 Per iniziare subito a utilizzare il prodotto:
 
-1. [Identificare le variabili del punto attivo e della mappa immagine](#identifying-hotspot-and-image-map-variables) (solo per i clienti che utilizzano Adobe Experience Manager Assets + Dynamic Medie)
+1. [Identificare le variabili del punto attivo e della mappa immagine](#identifying-hotspot-and-image-map-variables) (solo per i clienti che utilizzano Adobe Experience Manager Assets + Dynamic Media)
 
    Per prima cosa, identifica le variabili dinamiche utilizzate dall’implementazione della visualizzazione rapida esistente. In questo modo puoi inserire correttamente gli hotspot e i dati della mappa immagine durante il processo di creazione del banner a carosello in Experience Manager Assets.
 
@@ -79,17 +116,17 @@ Per iniziare subito a utilizzare il prodotto:
 
    Vedere [(Facoltativo) Anteprima Banner Carosello](#optional-previewing-carousel-banners) - Facoltativo. Se lo desideri, puoi visualizzare una rappresentazione del set carosello e testarne l’interattività.
 
-1. [Banner carosello Publish](#publishing-carousel-banners).
+1. [Pubblica banner carosello](#publishing-carousel-banners).
 
-   Pubblichi un set carosello come faresti con una risorsa. In Assets, passa al set carosello, selezionalo e seleziona **[!UICONTROL Publish]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
+   Pubblichi un set carosello come faresti con una risorsa. In Assets, passa al set carosello e selezionalo, quindi seleziona **[!UICONTROL Pubblica]**. La pubblicazione di un set carosello attiva l’URL e la stringa di incorporamento.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * [Aggiungi un banner carosello alla pagina del tuo sito Web](#adding-a-carousel-banner-to-your-website-page)Puoi aggiungere l&#39;URL del banner o il codice da incorporare copiato nella pagina del sito Web.
 
       * [Integrare il banner del carosello con una visualizzazione rapida esistente](#integrating-the-carousel-banner-with-an-existing-quickview). Se utilizzi un sistema di gestione dei contenuti web di terze parti, devi integrare il nuovo banner a carosello con l’implementazione Quick view esistente sul tuo sito web.
 
-   * [Aggiungi un banner carosello al tuo sito Web nell&#39;Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Se sei un cliente di Experience Manager Sites, puoi aggiungere il set carosello direttamente alla pagina utilizzando il componente File multimediali interattivi.
+   * [Aggiungi un banner carosello al tuo sito Web in Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Se sei un cliente di Experience Manager Sites, puoi aggiungere il set carosello direttamente alla pagina utilizzando il componente File multimediali interattivi.
 
 Se devi modificare i set carosello, vedi [Modifica set carosello](#editing-carousel-sets). Inoltre, puoi visualizzare e modificare [le proprietà del set carosello](/help/assets/manage-digital-assets.md#editing-properties).
 
@@ -181,7 +218,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
 
 ## Carica banner immagine {#uploading-image-banners}
 
-Se hai già caricato le immagini che desideri utilizzare, passa al passaggio successivo, [Crea set carosello](#creating-carousel-sets). Le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Medie.
+Se hai già caricato le immagini che desideri utilizzare, passa al passaggio successivo, [Crea set carosello](#creating-carousel-sets). Le immagini utilizzate nel carosello devono essere caricate dopo l’abilitazione di Dynamic Media.
 
 Per caricare i banner immagine, consulta [Caricare le risorse](/help/assets/manage-digital-assets.md).
 
@@ -209,7 +246,7 @@ Per caricare i banner immagine, consulta [Caricare le risorse](/help/assets/mana
    Per ulteriori informazioni, vedere [Utilizzare i selettori](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Continuate ad aggiungere diapositive fino ad aggiungere tutte le immagini da ruotare nel set carosello.
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Se necessario, trascinare la diapositiva per riordinare le immagini nell&#39;elenco.
    * Per eliminare un&#39;immagine, selezionarla, quindi selezionare **[!UICONTROL Elimina diapositiva]** nella barra degli strumenti.
@@ -328,9 +365,9 @@ Vedi [Frammenti esperienza](/help/sites-cloud/authoring/fragments/content-fragme
    Puoi anche visualizzare in anteprima l’aspetto del banner del carosello. Vedi [(Facoltativo) Anteprima Banner Carosello](#optional-previewing-carousel-banners).
 
 1. Seleziona **[!UICONTROL Salva]**.
-1. Publish il set carosello. La pubblicazione crea il codice o l’URL da incorporare che puoi utilizzare nella pagina del sito web. Se sei un cliente di Experience Manager Sites, aggiungi il set carosello direttamente alla pagina web.
+1. Pubblica il set carosello. La pubblicazione crea il codice o l’URL da incorporare che puoi utilizzare nella pagina del sito web. Se sei un cliente di Experience Manager Sites, aggiungi il set carosello direttamente alla pagina web.
 
-   Consulta [Risorse Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Consulta [Pubblicare risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Consulta [Aggiungere un set carosello alla pagina di destinazione del tuo sito Web](#adding-a-carousel-banner-to-your-website-page)
 
@@ -380,7 +417,7 @@ Puoi utilizzare Anteprima per vedere come il banner del carosello viene visualiz
 Quando sei soddisfatto del banner del carosello, puoi pubblicarlo.
 Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-Consulta [Aggiungere Dynamic Medie Assets alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (metodo preferito) o dall&#39;elenco **[!UICONTROL Visualizzatori]**.
 
@@ -402,9 +439,9 @@ Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (met
 1. Nell&#39;elenco **[!UICONTROL Visualizzatori]** nel pannello a sinistra della pagina, seleziona il nome del predefinito visualizzatore banner a carosello che desideri utilizzare.
 1. Per verificare le azioni associate, seleziona gli hotspot o le mappe immagine sull’immagine.
 
-## Banner a carosello Publish {#publishing-carousel-banners}
+## Pubblica banner a carosello {#publishing-carousel-banners}
 
-Per utilizzare il carosello, è necessario pubblicarlo. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica inoltre il carosello sul cloud Dynamic Medie, integrato con una rete CDN per una distribuzione scalabile e performante.
+Per utilizzare il carosello, è necessario pubblicarlo. La pubblicazione di un set carosello attiva l’URL e il codice di incorporamento. Pubblica inoltre il carosello sul cloud Dynamic Media, integrato con una rete CDN per una distribuzione scalabile e performante.
 
 >[!NOTE]
 >
@@ -412,7 +449,7 @@ Per utilizzare il carosello, è necessario pubblicarlo. La pubblicazione di un s
 >
 >Inoltre, se modifichi un’immagine interattiva pubblicata preesistente utilizzata in un banner carosello, pubblica l’immagine interattiva in modo che tali modifiche vengano riportate nel banner del carosello.
 
-Consulta [Publish Dynamic Medie Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni su come pubblicare i banner a carosello.
+Consulta [Pubblicare Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) per informazioni su come pubblicare i banner a carosello.
 
 ## Aggiungere un banner carosello alla pagina del sito Web {#adding-a-carousel-banner-to-your-website-page}
 
@@ -420,7 +457,7 @@ Dopo aver caricato le immagini del banner per creare un carosello, sono stati ag
 
 >[!NOTE]
 >
->Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere Dynamic Medie Assets alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+>Se sei un cliente di Experience Manager Sites, puoi aggiungere il banner del carosello direttamente alla pagina trascinando il componente File multimediali interattivi nella pagina. Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Tuttavia, se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente il banner a carosello alla pagina di destinazione del sito web.
 

@@ -5,23 +5,57 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 10%
+source-wordcount: '785'
+ht-degree: 12%
 
 ---
 
 # Importare ed esportare in blocco i metadati delle risorse {#import-and-export-asset-metadata-in-bulk}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Adobe Experience Manager Assets consente di importare in blocco i metadati delle risorse utilizzando un file CSV. Per eseguire aggiornamenti in blocco delle risorse caricate di recente o di quelle esistenti, importa un file CSV. Puoi anche inserire in blocco i metadati delle risorse da un sistema di terze parti in formato CSV.
 
 ## Importare metadati {#import-metadata}
 
-L’importazione dei metadati è asincrona e non impedisce le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa dell’attività di writeback dei metadati che utilizza i microservizi per le risorse. L’Adobe consiglia di pianificare eventuali operazioni in blocco durante l’utilizzo snello del server, in modo da non influire sulle prestazioni per gli altri utenti.
+L’importazione dei metadati è asincrona e non impedisce le prestazioni del sistema. L’aggiornamento simultaneo dei metadati per più risorse può richiedere molte risorse, a causa dell’attività di writeback dei metadati che utilizza i microservizi per le risorse. Adobe consiglia di pianificare eventuali operazioni in blocco durante l’utilizzo snello del server, in modo da non influire sulle prestazioni per gli altri utenti.
 
 >[!NOTE]
 >
@@ -36,7 +70,7 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    | Dimensione batch | Numero di risorse in un batch per le quali devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
    | Delimitatore multivalore | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
-   | Avvia flussi di lavoro | False per impostazione predefinita. Se è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro Writeback di metadati DAM (che scrive i metadati nei dati binari XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
+   | Avvia flussi di lavoro | False per impostazione predefinita. Se è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro Writeback di metadati DAM (che scrive i metadati nei dati binari di XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna per il file CSV con le risorse. |
 
 1. Seleziona **[!UICONTROL Importa]** nella barra degli strumenti. Dopo l’importazione dei metadati, viene inviata una notifica alla casella in entrata delle notifiche. Passa alla pagina delle proprietà della risorsa e verifica che i valori dei metadati siano importati correttamente per le risorse.

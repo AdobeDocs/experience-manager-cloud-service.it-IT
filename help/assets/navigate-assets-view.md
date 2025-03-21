@@ -4,17 +4,51 @@ description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 74%
+source-wordcount: '1026'
+ht-degree: 72%
 
 ---
 
 # Accedere ai file e alle cartelle e visualizzare le risorse {#view-assets-and-details}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -79,7 +113,7 @@ Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICON
 
 ![Visualizzare in anteprima una risorsa](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: Tornare alla cartella corrente o al risultato della ricerca corrente nel repository **B**: Nome e formato per il file visualizzato in anteprima **C**: Assegna attività **D**: Metadati avanzati **E**: Parole chiave e tag avanzati **F**: Commenta e annota **G**: Visualizza attività relative alla risorsa selezionata **H**: Visualizza e gestisci versioni **I**: Visualizza rappresentazioni dell&#39;immagine **J**: Modifica immagine **K**: visualizza le rappresentazioni di Dynamic Media, inclusi Ritaglio avanzato e Dynamic Media con le rappresentazioni delle funzionalità OpenAPI. **L**: metadati di base **M**: metadati avanzati **N**: parole chiave e tag avanzati **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella **P**: visualizzare un&#39;anteprima più dettagliata. Zoom, schermo intero e altre opzioni.
+**A**: torna alla cartella corrente o al risultato della ricerca corrente nel repository **B**: Nome e formato del file visualizzato in anteprima **C**: Assegna attività **D**: Metadati avanzati **E**: Parole chiave e tag avanzati **F**: Commenta e annota **G**: Visualizza attività relative alla risorsa selezionata **H**: Visualizza e gestisci versioni **I**: Visualizza rappresentazioni dell&#39;immagine **J**: Modifica immagine **K**: visualizza le rappresentazioni Dynamic Media, inclusi Smart Crop e Dynamic Media con le rappresentazioni delle funzionalità OpenAPI. **L**: metadati di base **M**: metadati avanzati **N**: parole chiave e tag avanzati **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella **P**: visualizzare un&#39;anteprima più dettagliata. Zoom, schermo intero e altre opzioni.
 
 Puoi anche visualizzare in anteprima i video.
 

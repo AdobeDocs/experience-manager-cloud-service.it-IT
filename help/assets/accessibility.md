@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Architect, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 2%
+source-wordcount: '1969'
+ht-degree: 3%
 
 ---
 
@@ -30,8 +30,42 @@ Possible topics to cover in this article are below.
 
 # Funzioni di accessibilità in [!DNL Adobe Experience Manager Assets] come [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] consente ai creatori e agli editori di contenuti di offrire esperienze straordinarie sul Web. Adobe si impegna a includere i creatori con disabilità migliorando l&#39;accessibilità di [!DNL Experience Manager]. Il software viene continuamente migliorato per soddisfare le esigenze di tutti i tipi di utenti e rispettare gli standard mondiali che includono le persone con disabilità visive, uditive, di mobilità o di altro tipo.
 
@@ -44,7 +78,7 @@ Possible topics to cover in this article are below.
 * [Iniziativa per l&#39;accessibilità - Applicazioni Internet avanzate accessibili (WAI-ARIA) di W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-Per leggere un report con i dettagli del livello di conformità, vedere la pagina [Report conformità accessibilità](https://www.adobe.com/accessibility/compliance.html) (ACR).
+Per leggere un report con i dettagli del livello di conformità, vedere la pagina del [report sulla conformità per l&#39;accessibilità](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 <!-- TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
@@ -213,7 +247,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 
 ## Documentazione accessibile {#accessible-docs}
 
-[!DNL Experience Manager] fornisce una documentazione accessibile per l&#39;utilizzo da parte di persone con disabilità. Di seguito è riportato come rendere accessibile per il momento l’offerta di contenuti, mentre Adobe continua a migliorare il modello e il contenuto:
+[!DNL Experience Manager] fornisce una documentazione accessibile per l&#39;utilizzo da parte di persone con disabilità. Di seguito è riportato come contribuire a rendere accessibile per il momento l’offerta di contenuti, mentre Adobe continua a migliorare il modello e il contenuto:
 
 * Gli assistenti vocali possono leggere il testo.
 * Per le immagini e le illustrazioni è disponibile testo alternativo.
@@ -247,4 +281,4 @@ Per fornire un feedback, porre domande e richiedere miglioramenti al prodotto re
 >
 >* [Note sulla versione dei miglioramenti eseguiti in ogni versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] guida all&#39;accessibilità](/help/compliance/accessibility/web-accessibility.md).
->* [Report di conformità (ACR) ed elenco VPAT per soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).
+>* [Rapporti di conformità (ACR) ed elenco VPAT per le soluzioni Adobe](https://www.adobe.com/accessibility/compliance.html).

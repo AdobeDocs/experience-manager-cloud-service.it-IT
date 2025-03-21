@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 34%
+source-wordcount: '1469'
+ht-degree: 35%
 
 ---
 
 # [!DNL Assets] formati di file supportati {#supported-file-formats}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supporta funzionalità di base per la gestione dei contenuti, quali archiviazione, gestione dei metadati online, controllo delle versioni, caricamento e download e così via, per qualsiasi file binario, indipendentemente dal formato. [!DNL Adobe Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzionalità del prodotto supporta diversi formati.
 
@@ -23,7 +57,7 @@ Inoltre, [!DNL Experience Manager Assets] fornisce supporto esteso per generare 
 
 Gli elementi di rilievo per la conversione delle risorse tramite i microservizi per le risorse includono:
 
-* [Formati di file di Adobe](#adobe-formats) chiave prodotti da applicazioni e servizi Adobe, inclusi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] o PDF.
+* [Formati di file Adobe](#adobe-formats) chiave prodotti dalle applicazioni e dai servizi Adobe, inclusi [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] o PDF.
 * [formati di file di imaging](#image-formats) chiave.
 * [Formati di file Camera Raw](#camera-raw-formats) per un&#39;ampia gamma di fotocamere, tra cui Canon, Nikon, Fujifilm, Olympus e altri produttori (con tecnologia Adobe Camera Raw).
 * [formati di documento](#document-formats) comuni, inclusi i formati di Microsoft® Office e Open Document.
@@ -37,7 +71,7 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | * | Vedi le osservazioni sotto la tabella |
 | - | Non applicabile |
 
-## Formati di Adobe {#adobe-formats}
+## Formati Adobe {#adobe-formats}
 
 | Formato file | Generazione miniature | Estrazione full-text | Estrazione di metadati | Larghezza/Altezza |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -76,9 +110,9 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 
 Sono supportati i seguenti formati 3D.
 
-Vedi anche [Utilizzare risorse 3D in Dynamic Medie](/help/assets/dynamic-media/assets-3d.md).
+Vedi anche [Utilizzare risorse 3D in Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
-| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Medie |
+| Formato | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Anteprima miniatura | Anteprima 3D | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -197,12 +231,12 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 * Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’estrazione dei metadati non riesce.
 
-## Dynamic Medie - Formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
+## Dynamic Media: formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
 
 | Estensione file video | Contenitore | Codec video consigliati | Codec video non supportati |
 | --- | --- | --- | --- |
 | AVI | Interfoliazione A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (file di animazione vettoriale) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animazione Apple |
@@ -213,9 +247,9 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Schermo Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 
-‡ Questo formato video non è ancora supportato per l&#39;utilizzo con i video interattivi in Dynamic Medie o con Annotation in Experience Manager Assets.
+‡ Questo formato video non è ancora supportato per l’utilizzo con video interattivi in Dynamic Media o con Annotation in Experience Manager Assets.
 
-## Dynamic Medie - Formati di documenti supportati {#document-support-dynamic-media}
+## Dynamic Media - Formati di documenti supportati {#document-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -225,9 +259,9 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 >[!NOTE]
 >
->Per PDF sicuri, è supportato solo il caricamento.
+>Per i PDF protetti, è supportato solo il caricamento.
 
-## Dynamic Medie - Formati di immagine raster supportati {#image-support-dynamic-media}
+## Dynamic Media - Formati supportati per le immagini raster {#image-support-dynamic-media}
 
 | Formato | Carica (formato di input) | Crea predefinito immagine (formato di output) | Anteprima rappresentazione dinamica | Distribuzione di una rappresentazione dinamica | Scarica rappresentazione dinamica | Imposta i tipi che supportano questo formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
@@ -247,7 +281,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ‡ L&#39;immagine unita viene estratta dal file PSD. Si tratta di un&#39;immagine generata da [!DNL Adobe Photoshop] e inclusa nel file PSD. A seconda delle impostazioni, l&#39;immagine unita potrebbe essere o meno l&#39;immagine effettiva.
 
-## Dynamic Medie - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
+## Dynamic Media - Formati immagine raster non supportati {#unsupported-raster-image-formats-dm}
 
 I seguenti sottotipi di formati di file immagine raster *non* sono supportati in [!DNL Dynamic Media]:
 
@@ -258,7 +292,7 @@ I seguenti sottotipi di formati di file immagine raster *non* sono supportati in
 * File TIFF con dati a virgola mobile.
 * File TIFF con spazio colore Lab.
 
-## Dynamic Medie - Formati di file 3D supportati {#support-3d-formats-dynamic-media}
+## Dynamic Media - Formati di file 3D supportati {#support-3d-formats-dynamic-media}
 
 Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3d-formats)
 

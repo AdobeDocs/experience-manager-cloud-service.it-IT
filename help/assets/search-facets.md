@@ -1,20 +1,54 @@
 ---
 title: Facet di ricerca.
-description: In questo articolo viene descritto come creare, modificare e utilizzare i facet di ricerca in Experience Manager.
+description: Questo articolo descrive come creare, modificare e utilizzare i facet di ricerca in Experience Manager.
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 19%
+source-wordcount: '2551'
+ht-degree: 20%
 
 ---
 
 # Facet di ricerca {#search-facets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -35,7 +69,7 @@ I facet di ricerca visualizzati nel pannello Filtri sono definiti nel modulo di 
 
 Per le ricerche full-text, aggiungere il predicato `Fulltext` al modulo. Utilizza il predicato Proprietà per cercare le risorse che corrispondono a una singola proprietà specificata. Utilizza il predicato Options per cercare le risorse che corrispondono a uno o più valori per una particolare proprietà. Aggiungi il predicato Intervallo date per cercare le risorse create all’interno di un intervallo di date specificato.
 
-1. Fai clic sul logo dell&#39;Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
+1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione Assets]**, quindi seleziona **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Individua e seleziona la barra di ricerca amministrazione Assets](assets/assets_admin_searchrail.png)
@@ -104,11 +138,11 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 >
 >Il predicato Options è un wrapper personalizzato che include predicati di proprietà per dimostrare il comportamento descritto. Attualmente, non è disponibile alcun endpoint REST per supportare la funzionalità in modo nativo.
 
-1. Selezionare il logo di Experience Manager, quindi passare a **[!UICONTROL Strumenti > Generale > Cerca in Forms]**.
+1. Selezionare il logo Experience Manager, quindi passare a **[!UICONTROL Strumenti > Generale > Cerca in Forms]**.
 1. Dalla pagina **[!UICONTROL Cerca in Forms]**, seleziona **[!UICONTROL Barra di ricerca amministrazione di Assets]**, quindi seleziona l&#39;icona Modifica.
 1. Nella pagina **[!UICONTROL Modifica modulo di ricerca]**, trascina **[!UICONTROL Predicato opzioni]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, inserisci un’etichetta e un nome per la proprietà. Ad esempio, per cercare le risorse in base al loro formato, specifica un nome descrittivo per l&#39;etichetta, ad esempio **[!UICONTROL Tipo file]**. Specificare la proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio `jcr:content/metadata/dc:format.`
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Nel campo **[!UICONTROL Nome proprietà]**, indica il percorso del file JSON in cui si definiscono i nodi per le opzioni e specifica le coppie chiave-valore corrispondenti.
    * Seleziona ![Icona Assets add](assets/do-not-localize/aem_assets_add_icon.png) accanto al campo Opzioni per specificare il testo e il valore da visualizzare per le opzioni che desideri specificare nel pannello Filtri. Per aggiungere un&#39;altra opzione, selezionare ![Icona di aggiunta Assets](assets/do-not-localize/aem_assets_add_icon.png) e ripetere il passaggio.
@@ -126,7 +160,7 @@ Se si desidera utilizzare un nodo esistente, specificarlo utilizzando la finestr
 
 Il predicato `Multi Value Property` consente di cercare risorse per più valori. Considera uno scenario in cui si dispone di immagini di più prodotti in [!DNL Assets] e i metadati per ogni immagine includono un numero SKU associato al prodotto. Puoi utilizzare questo predicato per cercare immagini di prodotto in base a più numeri SKU.
 
-1. Fai clic sul logo dell&#39;Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
+1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Nella pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione Assets]**, quindi seleziona **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina il predicato **[!UICONTROL Proprietà con più valori]** dalla scheda **[!UICONTROL Seleziona predicato]** al riquadro principale.
 1. Nella scheda **[!UICONTROL Impostazioni]**, immettere un&#39;etichetta e un testo segnaposto per il predicato. Specificare il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio `jcr:content/metadata/dc:value`. È inoltre possibile utilizzare la finestra di dialogo di selezione per selezionare un nodo.
@@ -139,7 +173,7 @@ Il predicato `Multi Value Property` consente di cercare risorse per più valori.
 
 Il predicato `Tags` consente di eseguire ricerche di risorse basate su tag. Per impostazione predefinita, [!DNL Assets] cerca le risorse per trovare uno o più tag corrispondenti in base ai tag specificati. In altre parole, la query di ricerca esegue un&#39;operazione OR utilizzando i tag specificati. Tuttavia, puoi utilizzare l’opzione abbina tutti i tag per cercare le risorse che includono tutti i tag specificati.
 
-1. Fai clic sul logo dell&#39;Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
+1. Fai clic sul logo Experience Manager, quindi vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Cerca in Forms]**.
 1. Dalla pagina Forms di ricerca, seleziona **[!UICONTROL Barra di ricerca amministrazione di Assets]**, quindi seleziona **Modifica** ![aemassets_edit](assets/aemassets_edit.png).
 1. Nella pagina Modifica modulo di ricerca, trascina **[!UICONTROL Predicato tag]** dalla scheda Seleziona predicato al riquadro principale.
 1. Nella scheda Impostazioni, immettere un testo segnaposto per il predicato. Specificare il nome della proprietà in base alla quale eseguire la ricerca nel campo proprietà, ad esempio `jcr:content/metadata/cq:tags`. In alternativa, potete selezionare un nodo in CRXDE dalla finestra di dialogo di selezione.
@@ -309,7 +343,7 @@ Analogamente al modo in cui si aggiunge un predicato Proprietà o Opzioni, è po
 
 ## Rimuovi facet di ricerca predefiniti {#removing-default-search-facets}
 
-L’Adobe consiglia di prestare attenzione durante la rimozione dei facet di ricerca predefiniti per evitare problemi di prestazioni. La rimozione dei facet di ricerca predefiniti potrebbe influire anche sul comportamento della funzionalità predefinita.
+Adobe consiglia di prestare attenzione durante la rimozione dei facet di ricerca predefiniti per evitare problemi di prestazioni. La rimozione dei facet di ricerca predefiniti potrebbe influire anche sul comportamento della funzionalità predefinita.
 
 Non rimuovere i seguenti campi nascosti poiché causano un problema di prestazioni delle query con OmniSearch e le raccolte avanzate:
 

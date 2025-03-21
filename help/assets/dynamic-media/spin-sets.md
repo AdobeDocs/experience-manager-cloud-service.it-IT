@@ -1,22 +1,59 @@
 ---
 title: Set 360 gradi
-description: Scopri come utilizzare i set 360 gradi in Dynamic Medie.
+description: Scopri come utilizzare i set 360 gradi in Dynamic Media.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 8%
+source-wordcount: '2002'
+ht-degree: 9%
 
 ---
 
 # Set 360 gradi{#spin-sets}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
 Un set 360 gradi simula l&#39;atto reale di girare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare gli elementi da qualsiasi angolazione, ottenendo i dettagli visivi chiave da qualsiasi angolazione.
 
-Un set 360° simula un’esperienza visiva a 360°. Dynamic Medie offre set 360 gradi a asse singolo in cui gli utenti possono ruotare un elemento. Inoltre, gli utenti possono eseguire lo zoom e la panoramica delle visualizzazioni con pochi semplici clic del mouse. In questo modo, gli utenti possono esaminare un elemento più da vicino da un punto di vista particolare.
+Un set 360° simula un’esperienza visiva a 360°. Dynamic Media offre set 360 gradi a asse singolo in cui i visualizzatori possono ruotare un elemento. Inoltre, gli utenti possono eseguire lo zoom e la panoramica delle visualizzazioni con pochi semplici clic del mouse. In questo modo, gli utenti possono esaminare un elemento più da vicino da un punto di vista particolare.
 
 I set 360 gradi sono indicati da un banner con la parola **[!UICONTROL SPINSET]**. Inoltre, se il set 360 gradi è pubblicato, la data di pubblicazione, indicata dall&#39;icona **[!UICONTROL Mondo]**, è riportata sul banner insieme all&#39;ultima data di modifica, contrassegnata dall&#39;icona **[!UICONTROL Matita]**.
 
@@ -32,7 +69,7 @@ Quando crei un set 360 gradi, Adobe consiglia la procedura consigliata seguente 
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Guida introduttiva: Set 360 gradi {#quick-start-spin-sets}
 
@@ -50,7 +87,7 @@ Per iniziare a usare rapidamente i set 360 gradi, effettua le seguenti operazion
 
    Sono necessari almeno 8-12 scatti di un elemento per un set 360 gradi monodimensionale e 16-24 per un set 360 gradi bidimensionale. Gli scatti devono essere effettuati a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360/12) include 12 scatti, ruotate l&#39;elemento di 30° per ogni scatto.
 
-   Per un elenco dei formati supportati dai set 360 gradi, vedere [Dynamic Medie - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
+   Per un elenco dei formati supportati dai set 360 gradi, vedere [Dynamic Media - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
 
 1. [Crea set 360 gradi](#creating-spin-sets).
 
@@ -72,7 +109,7 @@ Per iniziare a usare rapidamente i set 360 gradi, effettua le seguenti operazion
 
    Selezionate il set 360 gradi e potete visualizzarne l&#39;anteprima. Ruota il set 360 gradi. Puoi scegliere visualizzatori diversi dal menu **[!UICONTROL Visualizzatori]**, disponibile dal menu a discesa della barra a sinistra.
 
-1. [Set 360 gradi Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Pubblica set 360 gradi](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    La pubblicazione di un set 360 gradi attiva l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare il predefinito visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,16 +127,16 @@ Se necessario, puoi [modificare i set 360 gradi](#editing-spin-sets). Inoltre, p
 
 Per un set 360 gradi monodimensionale sono necessarie almeno 8-12 inquadrature di un elemento. Gli scatti devono essere effettuati a intervalli regolari per dare l&#39;impressione che l&#39;elemento stia ruotando e sia capovolto. Ad esempio, se un set 360/12) include 12 scatti, ruotate l&#39;elemento di 30° per ogni scatto.
 
-Per un elenco dei formati supportati dai set 360 gradi, vedere [Dynamic Medie - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
+Per un elenco dei formati supportati dai set 360 gradi, vedere [Dynamic Media - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
 
 È possibile caricare immagini per i set 360 gradi come si fa per [caricare qualsiasi altra risorsa in Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
 ### Linee guida per l’acquisizione di immagini per il set 360 gradi {#guidelines-for-shooting-spin-set-images}
 
-Di seguito sono riportate alcune best practice relative alle immagini dei set 360 gradi. In generale, più immagini si hanno in un set 360 gradi, migliore è l&#39;effetto di rotazione dell&#39;immagine. Tuttavia, l’inclusione di molte immagini nel set aumenta anche il tempo necessario per caricare le immagini. L’Experience Manager consiglia di seguire queste linee guida per la ripresa di immagini da utilizzare nei set 360 gradi:
+Di seguito sono riportate alcune best practice relative alle immagini dei set 360 gradi. In generale, più immagini si hanno in un set 360 gradi, migliore è l&#39;effetto di rotazione dell&#39;immagine. Tuttavia, l’inclusione di molte immagini nel set aumenta anche il tempo necessario per caricare le immagini. Experience Manager consiglia di seguire queste linee guida per la ripresa di immagini da utilizzare nei set 360 gradi:
 
 * Utilizzare almeno 8-12 immagini in un set 360 gradi monodimensionale e 16-24 immagini in un set 360 gradi bidimensionale. Per poter ruotare a 360° sono necessarie almeno 8 immagini. I set 360 gradi unidimensionali sono più comuni in quanto la creazione di set 360 gradi bidimensionali richiede molto lavoro.
-* Utilizza un formato senza perdita di dati; si consiglia di usare TIFF e PNG.
+* Utilizza un formato senza perdita di dati; si consigliano TIFF e PNG.
 * Mascherare tutte le immagini in modo che l&#39;elemento appaia su uno sfondo bianco puro o su un altro sfondo ad alto contrasto. Se necessario, aggiungete delle ombre.
 * Assicurati che i dettagli del prodotto siano ben illuminati e a fuoco.
 * Scattare immagini di spin per abbigliamento di moda con un manichino o modello. Spesso il manichino è mascherato (usando un manichino di vetro) o un manichino stilizzato/dressform è mostrato nell&#39;immagine. Potete creare un set 360 gradi nel modello definendo il numero di angoli. Contrassegna ogni angolo con del nastro sul pavimento in modo da guidare il modello a passo e guardare nella direzione di ogni ripresa.
@@ -112,7 +149,7 @@ Questa sezione descrive come creare i set 360 gradi.
 >
 >Puoi anche creare in automatico i set 360 gradi da [predefiniti set di batch](/help/assets/dynamic-media/config-dm.md). **Importante:** i set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
 >
->Vedere &quot;Creazione di set di batch predefiniti per la generazione automatica di set di immagini e set 360 gradi&quot; in [Configurare Dynamic Medie](/help/assets/dynamic-media/config-dm.md).
+>Consulta &quot;Creazione di set di batch predefiniti per la generazione automatica di set di immagini e set 360 gradi&quot; in [Configurare Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 
 >[!NOTE]
 >
@@ -124,7 +161,7 @@ Quando crei un set 360 gradi, Adobe consiglia la procedura consigliata seguente 
 | --- | --- | --- |
 | Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Per creare i set 360 gradi:**
 
@@ -138,9 +175,9 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    >[!NOTE]
    >
-   >Durante la creazione del set 360 gradi, puoi modificare la miniatura del set 360 gradi o consentire all’Experience Manager di selezionarla automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, selezionare **[!UICONTROL Cambia miniatura]** e selezionare un&#39;immagine (è possibile passare ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set 360 gradi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
+   >Durante la creazione del set 360 gradi, puoi modificare la miniatura del set 360 gradi o consentire ad Experience Manager di selezionarla automaticamente in base alle risorse del set 360 gradi. Per selezionare una miniatura, selezionare **[!UICONTROL Cambia miniatura]** e selezionare un&#39;immagine (è possibile passare ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set 360 gradi, seleziona **[!UICONTROL Passa alla miniatura automatica]**.
 
-1. Effettuare una delle seguenti operazioni:
+1. Effettua una delle operazioni seguenti:
 
    * Nell&#39;angolo superiore sinistro della pagina Editor set 360 gradi selezionare **[!UICONTROL Aggiungi risorsa]**.
 
@@ -162,7 +199,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    Riordinamento del frame 11 nel set 360 gradi trascinandolo in una nuova posizione.
 
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Per eliminare un&#39;immagine, selezionarla e selezionare **[!UICONTROL Elimina risorsa]**.
 
@@ -190,7 +227,7 @@ Puoi creare i set 360 gradi nell&#39;interfaccia utente o automaticamente utiliz
 
 1. Dalla ricerca, puoi selezionare **[!UICONTROL Filtri]**, quindi espandere **[!UICONTROL Dynamic Media]** e fare clic su **[!UICONTROL Set]**.
 
-   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca `Starts with`, che sono diversi dalla ricerca Experience Manager basata sull&#39;utilizzo dei criteri di ricerca `Contains`. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
+   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando i criteri di ricerca `Starts with`, che sono diversi dalla ricerca Experience Manager, basata sull&#39;utilizzo dei criteri di ricerca `Contains`. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -232,6 +269,6 @@ Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostit
 
 Vedi [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md).
 
-## Set 360 gradi Publish {#publishing-spin-sets}
+## Pubblica set 360 gradi {#publishing-spin-sets}
 
-Consulta [Risorse Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulta [Pubblicare risorse](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

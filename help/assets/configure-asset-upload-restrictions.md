@@ -4,17 +4,51 @@ description: Configura Adobe Experience Manager Assets per limitare il tipo di r
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 13%
+source-wordcount: '418'
+ht-degree: 16%
 
 ---
 
 # Configurare le restrizioni di caricamento delle risorse {#configure-asset-upload-restrictions}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Puoi configurare Adobe Experience Manager Assets in modo da limitare il tipo di risorse che gli utenti possono caricare in base al tipo MIME.
 
@@ -42,7 +76,7 @@ Per configurare [!DNL Experience Manager] in modo da limitare gli utenti al cari
 
 **Esempio 1: consenti il caricamento di tutte le immagini e dei file PDF in Experience Manager Assets**
 
-Per consentire il caricamento di immagini in tutti i formati e file PDF in Experience Manager Assets, effettuare le seguenti operazioni:
+Per consentire il caricamento di immagini in tutti i formati e di file PDF in Experience Manager Assets, effettuare le seguenti operazioni:
 
 ![Restrizioni al caricamento delle risorse](assets/asset-upload-restrictions.png)
 
@@ -60,7 +94,7 @@ Per aggiungere formati immagine specifici ai tipi MIME consentiti e limitare il 
 
 ![Restrizioni risorse](assets/asset-restrictions.png)
 
-In base alle impostazioni illustrate nell’immagine, puoi caricare in Experience Manager Assets immagini nei formati .JPG, .PNG e .GIF.
+In base alle impostazioni illustrate nell&#39;immagine, è possibile caricare in Experience Manager Assets immagini nei formati .JPG, .PNG e .GIF.
 
 **Consulta anche**
 

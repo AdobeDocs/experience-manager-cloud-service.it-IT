@@ -1,18 +1,55 @@
 ---
 title: Set di immagini
-description: Scopri come utilizzare i set di immagini in Dynamic Medie.
+description: Scopri come utilizzare i set di immagini in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 5%
 
 ---
 
 # Set di immagini {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 I set di immagini offrono agli utenti un&#39;esperienza di visualizzazione integrata, in cui gli utenti possono visualizzare diverse visualizzazioni di un elemento facendo clic su un&#39;immagine di anteprima. I set di immagini consentono di presentare viste alternative di un elemento e il visualizzatore offre strumenti di zoom per esaminare da vicino le immagini.
 
@@ -37,7 +74,7 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 | Numero di risorse duplicate per set | Nessun duplicato | 20 |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Guida introduttiva: Set di immagini {#quick-start-image-sets}
 
@@ -55,7 +92,7 @@ Per iniziare subito a utilizzare il prodotto:
 
    Carica le immagini per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le dimensioni delle immagini siano di almeno 2000 pixel.
 
-   Per un elenco dei formati supportati dai set di immagini, vedere [Dynamic Medie - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
+   Per un elenco dei formati supportati dai set di immagini, vedere [Dynamic Media - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
 
 1. [Crea set di immagini](#creating-image-sets).
 
@@ -78,7 +115,7 @@ Per iniziare subito a utilizzare il prodotto:
 
    Seleziona il set di immagini e puoi visualizzarlo in anteprima. Per esaminare il set di immagini nel visualizzatore selezionato, seleziona le icone delle miniature. Puoi scegliere visualizzatori diversi dal menu **[!UICONTROL Visualizzatori]**, disponibile dall&#39;elenco a discesa della barra a sinistra.
 
-1. [Set di immagini Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Pubblica set di immagini](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Quando si pubblica un set di immagini, vengono attivati l’URL e la stringa di incorporamento. Inoltre, devi [pubblicare un predefinito visualizzatore personalizzato](/help/assets/dynamic-media/managing-viewer-presets.md) creato. I predefiniti visualizzatore predefiniti sono già pubblicati.
 
@@ -92,15 +129,15 @@ Per iniziare subito a utilizzare il prodotto:
 
 Per modificare i set di immagini, vedere [modifica dei set di immagini](#editing-image-sets). Inoltre, puoi visualizzare e modificare [le proprietà del set di immagini](/help/assets/manage-digital-assets.md#editing-properties).
 
-In caso di problemi durante la creazione dei set, vedere Immagini e set in [Risoluzione dei problemi di Dynamic Medie](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+In caso di problemi durante la creazione dei set, vedi Immagini e set in [Risoluzione dei problemi di Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
 ## Caricare risorse per set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le immagini abbiano una dimensione minima di 2000 pixel per ottenere un dettaglio di zoom ottimale. Dynamic Medie è in grado di eseguire il rendering di immagini fino a 25 megapixel ciascuna. Ad esempio, puoi utilizzare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
+Per iniziare, carica le risorse immagine per i set di immagini. Gli utenti possono ingrandire le immagini nel Visualizzatore set di immagini. Scegliere quindi con attenzione le immagini. Assicurati che le immagini abbiano una dimensione minima di 2000 pixel per ottenere un dettaglio di zoom ottimale. Dynamic Media può eseguire il rendering di immagini fino a 25 megapixel ciascuna. Ad esempio, puoi utilizzare un’immagine da 5000 x 5000 megapixel o qualsiasi altra combinazione di dimensioni fino a 25 megapixel.
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Per un elenco dei formati supportati dai set di immagini, vedere [Dynamic Medie - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
+Per un elenco dei formati supportati dai set di immagini, vedere [Dynamic Media - Formati immagine raster supportati](/help/assets/file-format-support.md#image-support-dynamic-media).
 
 È possibile caricare immagini per i set di immagini come si fa per [caricare qualsiasi altra risorsa in Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
@@ -143,11 +180,11 @@ Quando crei un set di immagini, Adobe consiglia le seguenti best practice e appl
 | Numero di risorse duplicate per set | Nessun duplicato | 20 |
 | Numero massimo di immagini per set | 5-10 immagini per set | 1000 |
 
-Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations.md).
+Vedi anche [Limitazioni di Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Per creare i set di immagini:**
 
-1. In Adobe Experience Manager, seleziona il logo di Experience Manager per accedere alla console di navigazione globale.
+1. In Adobe Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale.
 1. Seleziona **[!UICONTROL Navigazione]** > **[!UICONTROL Assets]**. Passa alla posizione in cui desideri creare un set di immagini, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Set di immagini]** per aprire la pagina Editor set di immagini.
 
    Puoi anche creare il set dall’interno di una cartella che contiene le risorse.
@@ -158,7 +195,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
-1. Effettuare una delle seguenti operazioni:
+1. Effettua una delle operazioni seguenti:
 
    * Nell&#39;angolo superiore sinistro della pagina Editor set di immagini, seleziona **[!UICONTROL Aggiungi risorsa]**.
 
@@ -180,7 +217,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    Per modificare una miniatura o un campione, fai clic sull’icona **+** **miniatura** accanto all’immagine e individua la miniatura o il campione desiderato. Dopo aver selezionato tutte le immagini, fai clic su **[!UICONTROL Salva]**.
 
-1. (Facoltativo) Effettuate una delle seguenti operazioni:
+1. (Facoltativo) Effettua una delle seguenti operazioni:
 
    * Per eliminare un&#39;immagine, selezionarla e selezionare **[!UICONTROL Elimina risorsa]**.
 
@@ -188,7 +225,7 @@ Vedi anche [Limitazioni di Dynamic Medie](/help/assets/dynamic-media/limitations
 
    >[!NOTE]
    >
-   >Durante la creazione del set di immagini, è possibile modificare la miniatura del set di immagini. In alternativa, puoi consentire a Experience Manager di selezionare automaticamente la miniatura in base alle risorse nel set di immagini. Per selezionare una miniatura, selezionare **[!UICONTROL Cambia miniatura]** sopra il campo Titolo nella pagina Editor set di immagini. Quindi, seleziona un’immagine (puoi passare anche ad altre cartelle per trovare le immagini). Experience Manager Se hai selezionato una miniatura, decidi di generarne una dal set di immagini, quindi seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
+   >Durante la creazione del set di immagini, è possibile modificare la miniatura del set di immagini. In alternativa, puoi consentire ad Experience Manager di selezionare automaticamente la miniatura in base alle risorse nel set di immagini. Per selezionare una miniatura, selezionare **[!UICONTROL Cambia miniatura]** sopra il campo Titolo nella pagina Editor set di immagini. Quindi, seleziona un’immagine (puoi passare anche ad altre cartelle per trovare le immagini). Se hai selezionato una miniatura e vuoi che Experience Manager ne generi una dal set di immagini, seleziona **[!UICONTROL Passa a]** **[!UICONTROL Miniatura automatica]**.
 
 1. Fai clic su **[!UICONTROL Salva]**. Il set di immagini creato viene visualizzato nella cartella in cui è stato creato.
 
@@ -210,7 +247,7 @@ Tuttavia, i set creati utilizzando predefiniti set di batch, non *not* vengono v
 
   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dalla ricerca, puoi selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Dynamic Medie]** e selezionare **[!UICONTROL Set]**.
+* Dalla ricerca, puoi selezionare **[!UICONTROL Filtro]**, quindi espandere **[!UICONTROL Dynamic Media]** e selezionare **[!UICONTROL Set]**.
 
   La ricerca restituisce i set corrispondenti creati manualmente nell’interfaccia utente o automaticamente tramite i predefiniti per set di batch. Per i set automatizzati, la query di ricerca viene eseguita utilizzando &quot;Inizia con&quot;. Questo criterio di ricerca è diverso da Experience Manager, che si basa sull’utilizzo di &quot;Contiene&quot;. L&#39;impostazione del filtro su **[!UICONTROL Set]** è l&#39;unico modo per cercare i set automatizzati.
 
@@ -263,4 +300,4 @@ Vedi [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Pubblicazione dei set di immagini {#publishing-image-sets}
 
-Consulta [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulta [Pubblicare Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

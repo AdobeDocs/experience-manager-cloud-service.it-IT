@@ -1,15 +1,52 @@
 ---
-title: Modifica in blocco dei metadati nella vista Assets
+title: Modifica in blocco dei metadati nella vista Risorse
 description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili contemporaneamente nella vista Assets.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '503'
+ht-degree: 5%
 
 ---
 
-# Modifica in blocco dei metadati nella vista Assets{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# Modifica in blocco dei metadati nella vista Risorse{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 La funzionalità **Modifica in blocco dei metadati** nella visualizzazione Assets consente agli utenti di modificare contemporaneamente un set predefinito di campi di metadati standard per più file di risorse. Seleziona più risorse e aggiorna contemporaneamente in blocco il set predefinito di metadati standard, anziché aggiornare singolarmente i metadati standard di ogni risorsa. Questa funzione migliora l’efficienza, la coerenza e la precisione delle proprietà di metadati standard in un’ampia serie di risorse, migliorando la ricercabilità delle risorse e l’organizzazione.
 

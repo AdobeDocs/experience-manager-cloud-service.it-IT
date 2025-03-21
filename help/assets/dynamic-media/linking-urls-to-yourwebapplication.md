@@ -5,20 +5,57 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 5%
+source-wordcount: '1327'
+ht-degree: 6%
 
 ---
 
 # Collegamento degli URL all’applicazione Web {#linking-urls-to-your-web-application}
 
-I tuoi siti web e le tue applicazioni accedono ai servizi di Dynamic Media tramite chiamate URL. Dopo aver pubblicato una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Puoi incollare questi URL in un browser web per eseguirne il test.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
+I siti web e le applicazioni accedono ai servizi Dynamic Media tramite chiamate URL. Dopo aver pubblicato una risorsa, Dynamic Media attiva una stringa URL che fa riferimento alla risorsa. Puoi incollare questi URL in un browser web per eseguirne il test.
 
 Puoi effettuare il collegamento agli URL solo se *non* utilizza Adobe Experience Manager come WCM. Il collegamento, anziché l’incorporamento, viene utilizzato quando si desidera distribuire un lettore video come finestra popup o modale. Se utilizzi Experience Manager come WCM, [aggiungi le risorse direttamente nella pagina](adding-dynamic-media-assets-to-pages.md).
 
-Per inserire queste stringhe URL nelle pagine Web e nelle applicazioni, copiale da Dynamic Media.
+Per inserire queste stringhe URL nelle pagine web e nelle applicazioni, copiale da Dynamic Media.
 
 >[!NOTE]
 >
@@ -40,11 +77,11 @@ Puoi ottenere una stringa URL generata da un predefinito immagine o da un predef
 >
 >L’URL non è disponibile per la copia finché non hai pubblicato la risorsa selezionata. Inoltre, devi pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 >
->Consulta [Publish Assets](publishing-dynamicmedia-assets.md).
+>Consulta [Pubblicare Assets](publishing-dynamicmedia-assets.md).
 >
->Consulta [Predefiniti visualizzatore Publish](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulta [Predefiniti visualizzatore pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulta [Predefiniti immagine Publish](managing-image-presets.md#publishing-image-presets).
+>Consulta [Pubblica predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
 Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguenti mostrano un solo metodo che puoi utilizzare.
 
@@ -54,11 +91,11 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
    Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
 
-   Consulta [Publish Assets](publishing-dynamicmedia-assets.md).
+   Consulta [Pubblicare Assets](publishing-dynamicmedia-assets.md).
 
-   Consulta [Predefiniti visualizzatore Publish](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulta [Predefiniti visualizzatore pubblicazione](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulta [Predefiniti immagine Publish](managing-image-presets.md#publishing-image-presets).
+   Consulta [Pubblica predefiniti immagine](managing-image-presets.md#publishing-image-presets).
 
 1. In base alla risorsa selezionata, effettua una delle seguenti operazioni:
 
@@ -87,7 +124,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 Dynamic Media supporta la distribuzione di risorse statiche, che sono altre risorse oltre alle immagini e ai video. I formati di risorse statiche supportati per la distribuzione includono:
 
 * File 3D
-* Animated GIF
+* GIF animato
 * File audio
 * CSS
 * JavaScript (quando l’azienda è configurata con il proprio dominio)
@@ -118,11 +155,11 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
 ## Ottenere un URL per un rendering video pubblicato {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Service]**.
-1. Nella pagina **[!UICONTROL Cloud Service]**, scorri verso il basso fino all&#39;intestazione **[!UICONTROL Cloud Service Dynamic Media]**, quindi seleziona **[!UICONTROL Mostra configurazioni]**.
+1. In Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Servizi cloud]**.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all&#39;intestazione **[!UICONTROL Dynamic Media Cloud Services]**, quindi seleziona **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, selezionare il nome della configurazione desiderata.
 
-1. Nella pagina **[!UICONTROL Impostazioni cloud Dynamic Media]**, in **[!UICONTROL URL servizio video]**, copiare l&#39;intero percorso URL. Il percorso URL copiato è necessario nei passaggi successivi.
+1. Nella pagina **[!UICONTROL Impostazioni cloud per elementi multimediali dinamici]**, in **[!UICONTROL URL servizio video]**, copia l&#39;intero percorso URL. Il percorso URL copiato è necessario nei passaggi successivi.
 
    Ad esempio, il percorso URL potrebbe essere simile al seguente:
 
@@ -134,7 +171,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
    Ad esempio, se l&#39;ID di registrazione è `87654321|MyCompany`, il nome del cliente sarà `MyCompany`.
 
-1. Nell&#39;angolo superiore sinistro della pagina, seleziona **[!UICONTROL Cloud Service]**, quindi seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL Generale]** > **[!UICONTROL CRXDE Lite]**.
+1. Nell&#39;angolo superiore sinistro della pagina, seleziona **[!UICONTROL Cloud Services]**, quindi seleziona l&#39;icona Experience Manager e passa a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Copia l’intero percorso della rappresentazione video dal JCR (Java™ Content Repository).
 
    Ad esempio, il percorso della rappresentazione del video potrebbe essere simile al seguente:
@@ -155,10 +192,10 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
 ## Ottieni un URL video per streaming bitrate adattivo (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Ad Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Service]**.
-1. Nella pagina **[!UICONTROL Cloud Service]**, scorri verso il basso fino all&#39;intestazione **[!UICONTROL Cloud Service Dynamic Media]**, quindi seleziona **[!UICONTROL Mostra configurazioni]**.
+1. In Experience Manager, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Distribuzione]** > **[!UICONTROL Cloud]** > **[!UICONTROL Servizi cloud]**.
+1. Nella pagina **[!UICONTROL Cloud Services]**, scorri verso il basso fino all&#39;intestazione **[!UICONTROL Dynamic Media Cloud Services]**, quindi seleziona **[!UICONTROL Mostra configurazioni]**.
 1. In **[!UICONTROL Configurazioni disponibili]**, selezionare il nome della configurazione desiderata.
-1. Nella pagina **[!UICONTROL Impostazioni Cloud Service Dynamic Media]** eseguire le operazioni seguenti:
+1. Nella pagina **[!UICONTROL Impostazioni servizi cloud per elementi multimediali dinamici]** eseguire le operazioni seguenti:
 
    * In **[!UICONTROL URL servizio video]**, copia l&#39;intero percorso URL. Il percorso URL copiato sarà necessario nei passaggi seguenti. Ad esempio, il percorso URL potrebbe essere simile al seguente:
 
@@ -209,6 +246,6 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
 ## Utilizza HTTP/2 per distribuire le risorse Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, il che fornisce tempi di risposta e di caricamento migliori.
+HTTP/2 è il nuovo protocollo web aggiornato che migliora il modo in cui browser e server comunicano. Consente di trasferire più rapidamente le informazioni e di ridurre la potenza di elaborazione necessaria. La distribuzione delle risorse Dynamic Media ora può avvenire tramite HTTP/2, il che offre tempi di risposta e caricamento migliori.
 
-Consulta [Distribuzione HTTP2 dei contenuti](http2faq.md) per informazioni complete su come iniziare a utilizzare HTTP/2 con il tuo account Dynamic Media.
+Consulta [Distribuzione HTTP2 dei contenuti](http2faq.md) per informazioni complete su come iniziare a utilizzare HTTP/2 con l&#39;account Dynamic Media.

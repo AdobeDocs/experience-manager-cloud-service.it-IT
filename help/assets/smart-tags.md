@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 7%
 
 ---
@@ -15,8 +15,42 @@ ht-degree: 7%
 
 # Aggiungere tag avanzati alle risorse in AEM {#smart-tags-assets-aem}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -27,7 +61,7 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spe
 
 Rispetto ai vocabolari del linguaggio naturale, l’assegnazione di tag basati sulla tassonomia aziendale consente di allineare le risorse con le attività aziendali di un’azienda e assicura che le risorse più rilevanti vengano visualizzate nelle ricerche. Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli in modo da visualizzare solo le immagini pertinenti quando viene effettuata la ricerca per progettare una campagna promozionale.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare l&#39;algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, l’AEM applica automaticamente i tag avanzati alle risorse caricate.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare l&#39;algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, AEM applica automaticamente i tag avanzati alle risorse caricate.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -62,7 +96,7 @@ Puoi assegnare i tag ai seguenti tipi di risorse:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-Per impostazione predefinita, i tag avanzati vengono aggiunti automaticamente alle risorse basate su testo e ai video da AEM. Per aggiungere automaticamente tag avanzati alle immagini, completa le seguenti attività.
+Per impostazione predefinita, AEM aggiunge automaticamente i tag avanzati alle risorse basate su testo e ai video. Per aggiungere automaticamente tag avanzati alle immagini, completa le seguenti attività.
 
 * [Comprendere i modelli di tag e le linee guida](#understand-tag-models-guidelines).
 * [Addestra il modello](#train-model).
@@ -97,11 +131,11 @@ Assicurati che le immagini nel set di formazione siano conformi alle seguenti li
 
 ![Immagini illustrative che illustrano le linee guida per la formazione](assets/do-not-localize/completeness.png)
 
-**Numero di tag**: l&#39;Adobe consiglia di addestrare un modello utilizzando almeno due tag distinti e almeno dieci immagini diverse per ogni tag. In un singolo modello di tag, non aggiungere più di 50 tag.
+**Numero di tag**: Adobe consiglia di addestrare un modello utilizzando almeno due tag distinti e almeno dieci immagini diverse per ogni tag. In un singolo modello di tag, non aggiungere più di 50 tag.
 
-**Numero di esempi**: per ogni tag, aggiungi almeno dieci esempi. Tuttavia, l’Adobe consiglia circa 30 esempi. Sono supportati un massimo di 50 esempi per tag.
+**Numero di esempi**: per ogni tag, aggiungi almeno dieci esempi. Tuttavia, Adobe consiglia circa 30 esempi. Sono supportati un massimo di 50 esempi per tag.
 
-**Impedisci falsi positivi e conflitti**: l&#39;Adobe consiglia di creare un modello di tag singolo per un singolo aspetto visivo. Strutturare i modelli di tag in modo da evitare la sovrapposizione dei tag tra i modelli. Ad esempio, non utilizzare tag comuni come `sneakers` in due diversi modelli di tag con nomi `shoes` e `footwear`. Il processo di apprendimento sovrascrive un modello di tag addestrato con l’altro per una parola chiave comune.
+**Impedisci falsi positivi e conflitti**: Adobe consiglia di creare un modello di tag singolo per un singolo aspetto visivo. Strutturare i modelli di tag in modo da evitare la sovrapposizione dei tag tra i modelli. Ad esempio, non utilizzare tag comuni come `sneakers` in due diversi modelli di tag con nomi `shoes` e `footwear`. Il processo di apprendimento sovrascrive un modello di tag addestrato con l’altro per una parola chiave comune.
 
 **Esempi**: ulteriori esempi a titolo di guida:
 
@@ -192,9 +226,9 @@ Per verificare se il servizio Tag avanzati è stato addestrato sui tag nel set d
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Assegnare tag avanzati alle risorse in AEM {#tag-assets}
+## Assegnare tag alle risorse con tag avanzati in AEM {#tag-assets}
 
-Tutti i tipi di risorse supportate vengono automaticamente taggati da [!DNL Experience Manager Assets] al momento del caricamento. Per impostazione predefinita, l’assegnazione tag è attivata e funziona. L’AEM applica i tag avanzati appropriati quasi in tempo reale. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Tutti i tipi di risorse supportate vengono automaticamente taggati da [!DNL Experience Manager Assets] al momento del caricamento. Per impostazione predefinita, l’assegnazione tag è attivata e funziona. AEM applica i tag avanzati appropriati quasi in tempo reale. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Per immagini e video, i tag avanzati si basano su alcuni aspetti visivi.
 
@@ -259,7 +293,7 @@ Per cercare file con smart tag (regolari o avanzati), utilizzare la ricerca [!DN
 >[!NOTE]
 >
 >La capacità dei tag avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per l’apprendimento.
->Per ottenere i migliori risultati, l’Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
 
 **Consulta anche**
 

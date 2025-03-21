@@ -1,40 +1,74 @@
 ---
-title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
-description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
+title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 4%
+source-wordcount: '930'
+ht-degree: 7%
 
 ---
 
-# Integrazione per Dynamic Medie con funzionalità OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
+# Integrazione per Dynamic Media con funzionalità OpenAPI {#integrate-asset-selector-dynamic-media-open-apis}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-Asset Selector consente di eseguire l’integrazione utilizzando diverse applicazioni di Adobe per consentire loro di lavorare insieme senza problemi.
+Asset Selector (Selettore risorse) consente di integrare utilizzando diverse applicazioni Adobe per consentire loro di lavorare insieme senza problemi.
 
 
 ## Prerequisiti {#prereqs-polaris}
 
-Se integri Asset Selector con Dynamic Medie con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
+Se integri Asset Selector con Dynamic Media con le funzionalità OpenAPI, utilizza i seguenti prerequisiti:
 
 * [Metodi di comunicazione](/help/assets/overview-asset-selector.md#prereqs)
-* Per accedere a Dynamic Medie con funzionalità OpenAPI, è necessario disporre di licenze per:
+* Per accedere a Dynamic Media con funzionalità OpenAPI, è necessario disporre di licenze per:
    * Archivio Assets (ad esempio, Experience Manager Assets as a Cloud Service).
-   * AEM-Dynamic Medie
+   * Dynamic Media di AEM.
 * Solo [le risorse approvate](/help/assets/approve-assets.md) sono disponibili per l&#39;utilizzo per garantire la coerenza del brand.
 
-## Integrazione per Dynamic Medie con funzionalità OpenAPI {#adobe-app-integration-polaris}
+## Integrazione per Dynamic Media con funzionalità OpenAPI {#adobe-app-integration-polaris}
 
-L’integrazione del selettore delle risorse con il processo OpenAPI di Dynamic Medie prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato o pronto per scegliere l’URL Dynamic Media, ecc.
+L’integrazione di Asset Selector con il processo Dynamic Media OpenAPI prevede diversi passaggi, tra cui la creazione di un URL Dynamic Media personalizzato, la scelta dell’URL Dynamic Media e così via.
 
 ### Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI {#integrate-dynamic-media}
 
-Le proprietà `rootPath` e `path` non devono far parte di Dynamic Medie con funzionalità OpenAPI. È invece possibile configurare la proprietà `aemTierType`. Di seguito è riportata la sintassi della configurazione:
+Le proprietà `rootPath` e `path` non devono far parte di Dynamic Media con funzionalità OpenAPI. È invece possibile configurare la proprietà `aemTierType`. Di seguito è riportata la sintassi della configurazione:
 
 ```
 aemTierType:[1: "delivery"]
@@ -108,7 +142,7 @@ Di seguito sono riportati i due modi per attraversare l’oggetto JSON:
 ![URL di consegna dinamico](assets/dynamic-delivery-url.png)
 
 * **Miniatura:** le miniature possono essere immagini e le risorse sono PDF, video, immagini e così via. Tuttavia, puoi utilizzare gli attributi di altezza e larghezza della miniatura di una risorsa come rappresentazione dinamica della consegna.
-Per le risorse di tipo PDF è possibile utilizzare il seguente set di rappresentazioni:
+Per le risorse di tipo PDF può essere utilizzato il seguente set di rappresentazioni:
 Una volta selezionato un PDF nella barra laterale, il contesto di selezione offre le informazioni seguenti. Di seguito è riportato il modo per scorrere l’oggetto JSON:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -124,7 +158,7 @@ Una volta selezionato un PDF nella barra laterale, il contesto di selezione offr
   } 
   ```
 
-Nella schermata precedente, se è necessario PDF, l’URL di consegna del rendering originale del PDF deve essere incorporato nell’esperienza di destinazione e non nella relativa miniatura. Ad esempio `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+Nella schermata precedente, se è necessario PDF e non la sua miniatura, l’URL di consegna del rendering originale di PDF deve essere incorporato nell’esperienza di destinazione. Ad esempio `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
 * **Video:** Puoi utilizzare l&#39;URL del lettore video per le risorse dei tipi di video che utilizzano un iFrame incorporato. Nell’esperienza di destinazione puoi utilizzare le seguenti rappresentazioni di array:
   <!--![Video dynamic delivery url](image.png)-->
@@ -146,7 +180,7 @@ Nella schermata precedente, se è necessario PDF, l’URL di consegna del render
 
 ### Configurare filtri personalizzati {#configure-custom-filters-dynamic-media-open-api}
 
-Il selettore risorse per Dynamic Medie con funzionalità OpenAPI consente di configurare proprietà personalizzate e i filtri basati su di esse. La proprietà `filterSchema` viene utilizzata per configurare tali proprietà. La personalizzazione può essere esposta come `metadata.<metadata bucket>.<property name>.` in base al quale è possibile configurare i filtri, dove
+Il selettore risorse per Dynamic Media con funzionalità OpenAPI consente di configurare proprietà personalizzate e i filtri basati su di esse. La proprietà `filterSchema` viene utilizzata per configurare tali proprietà. La personalizzazione può essere esposta come `metadata.<metadata bucket>.<property name>.` in base al quale è possibile configurare i filtri, dove
 
 * `metadata` sono le informazioni di una risorsa
 * `embedded` è il parametro statico utilizzato per la configurazione e
@@ -154,15 +188,15 @@ Il selettore risorse per Dynamic Medie con funzionalità OpenAPI consente di con
 
 Per la configurazione, le proprietà definite al livello `jcr:content/metadata/` sono esposte come `metadata.<metadata bucket>.<property name>.` per i filtri che si desidera configurare.
 
-Ad esempio, in Asset Selector for Dynamic Medie con funzionalità OpenAPI, una proprietà su `asset jcr:content/metadata/client_name:market` viene convertita in `metadata.embedded.client_name:market` per la configurazione del filtro.
+Ad esempio, in Asset Selector for Dynamic Media con funzionalità OpenAPI, una proprietà su `asset jcr:content/metadata/client_name:market` viene convertita in `metadata.embedded.client_name:market` per la configurazione del filtro.
 
 Per ottenere il nome, è necessario eseguire un’attività una tantum. Effettua una chiamata API di ricerca per la risorsa e ottieni il nome della proprietà (essenzialmente il bucket).
 
-### Interfaccia utente di Asset Selector per Dynamic Medie con funzionalità OpenAPI {#interface-dynamic-media-open-api}
+### Interfaccia utente di Asset Selector per Dynamic Media con funzionalità OpenAPI {#interface-dynamic-media-open-api}
 
-Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, nell’archivio Experience Manager Assets puoi visualizzare solo la struttura delle risorse approvate.
+Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, nell’archivio delle risorse di Experience Manager puoi visualizzare solo la struttura delle risorse approvate.
 
-![Dynamic Medie con funzionalità OpenAPI, interfaccia utente](assets/polaris-ui.png)
+![Interfaccia utente di Dynamic Media con funzionalità OpenAPI](assets/polaris-ui.png)
 
 * **A**: [Nascondi/Mostra pannello](#hide-show-panel)
 * **B**: [Assets](#repository)
@@ -175,6 +209,6 @@ Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, n
 
 >[!MORELIKETHIS]
 >
->* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
->* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
->* [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
+>* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
+>* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+>* [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)

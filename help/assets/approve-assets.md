@@ -3,17 +3,51 @@ title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1143'
 ht-degree: 11%
 
 ---
 
 # Approva risorse in [!DNL Experience Manager]
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -27,7 +61,7 @@ Puoi approvare le risorse in AEM Assets per semplificare la gestione delle risor
 
 ## Prima di iniziare {#pre-requisites}
 
-Per modificare la proprietà **[!UICONTROL Verifica stato]** di una risorsa è necessario disporre dell&#39;accesso ad AEM Assets as a Cloud Service.
+Devi avere accesso ad AEM Assets as a Cloud Service e alle autorizzazioni per modificare la proprietà **[!UICONTROL Verifica stato]** di una risorsa.
 
 ## Configurazione
 
@@ -74,7 +108,7 @@ Per approvare le risorse in [!DNL Experience Manager Admin view], eseguire la pr
 Semplifica il flusso di lavoro approvando rapidamente più risorse contemporaneamente. Puoi approvare in blocco le risorse per accelerare il processo di approvazione, risparmiando tempo e migliorando la produttività.
 <br>Segui questi passaggi per approvare risorse in blocco in [!DNL Experience Manager Admin view]:
 
-1. Crea una cartella nell’ambiente di authoring (https://author-pXXX-eYYY.adobeaemcloud.com). Sostituisci _XXX_ con il tuo ID programma e _YYY_ con l&#39;ID ambiente dell&#39;Experience Manager.
+1. Crea una cartella nell’ambiente di authoring (https://author-pXXX-eYYY.adobeaemcloud.com). Sostituisci _XXX_ con il tuo ID programma e _YYY_ con l&#39;ID ambiente di Experience Manager.
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
@@ -112,9 +146,9 @@ Allo stesso modo, per approvare in blocco le risorse all’interno di una cartel
 
 1. Seleziona **[!UICONTROL Approvato]** nel campo **[!UICONTROL Stato]** disponibile nella sezione [!UICONTROL Proprietà] nel riquadro di destra.
 
-   Se selezioni lo stato come `Approved` e se [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) o [Content Hub](/help/assets/product-overview.md) o entrambi sono abilitati per il tuo Experience Manager Assets, puoi visualizzare le opzioni `Delivery` e `Content Hub` disponibili nel campo **[!UICONTROL Destinazione approvazione]**.
+   Se selezioni lo stato come `Approved` e se [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) o [Content Hub](/help/assets/product-overview.md), o entrambi sono abilitati per il tuo Experience Manager Assets, puoi visualizzare le opzioni `Delivery` e `Content Hub` disponibili nel campo **[!UICONTROL Target di approvazione]**.
 
-   * Seleziona **[!UICONTROL Consegna]** per rendere le risorse disponibili sia per Dynamic Media con funzionalità OpenAPI che per Content Hub. Se Content Hub non è abilitato, la selezione di questa opzione rende le risorse disponibili solo per Dynamic Media con funzionalità OpenAPI.
+   * Seleziona **[!UICONTROL Consegna]** per rendere le risorse disponibili sia per Dynamic Media con funzionalità OpenAPI che per Content Hub. Se Content Hub non è abilitato, la selezione di questa opzione rende le risorse disponibili solo per gli elementi multimediali dinamici con funzionalità OpenAPI.
    * Seleziona **[!UICONTROL Content Hub]** per rendere le risorse disponibili per Content Hub.
 
    ![Stato approvazione](/help/assets/assets/approval-status-delivery.png)
@@ -129,13 +163,13 @@ Allo stesso modo, per approvare in blocco le risorse all’interno di una cartel
 
 ## Copiare l’URL di consegna per le risorse approvate {#copy-delivery-url-approved-assets}
 
-L&#39;URL di consegna per tutte le risorse approvate nell&#39;archivio è disponibile se nell&#39;istanza di AEM as a Cloud Service è abilitato [!UICONTROL Dynamic Media con funzionalità OpenAPI].
+L&#39;URL di consegna per tutte le risorse approvate nell&#39;archivio è disponibile se nell&#39;istanza di AEM as a Cloud Service sono abilitati [!UICONTROL Dynamic Media con funzionalità OpenAPI].
 
 Per copiare l’URL di consegna di una risorsa approvata all’interno dell’archivio:
 
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Dettagli]**.
 
-1. Fai clic sull’icona Dynamic Media disponibile nel riquadro a destra.
+1. Fai clic sull’icona di Dynamic Media disponibile nel riquadro a destra.
 
 1. Selezionare **[!UICONTROL Dynamic Media con OpenAPI]** disponibile nel pannello **[!UICONTROL Dynamic Media]**.
 
@@ -146,4 +180,4 @@ Per copiare l’URL di consegna di una risorsa approvata all’interno dell’ar
    >
    L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
 
-Per informazioni sulle altre rappresentazioni visualizzate nel pannello Dynamic Media, consulta [Visualizzare e scaricare le rappresentazioni di Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).
+Per informazioni sulle altre rappresentazioni visualizzate nel pannello Dynamic Media, consulta [Visualizzare e scaricare le rappresentazioni Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

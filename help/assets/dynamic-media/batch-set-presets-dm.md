@@ -1,18 +1,55 @@
 ---
 title: Predefiniti set di batch
-description: Scopri come automatizzare la creazione di set di immagini e set 360 gradi utilizzando i predefiniti set di batch in Dynamic Medie.
+description: Scopri come automatizzare la creazione di set di immagini e set 360 gradi utilizzando i predefiniti set di batch in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 0%
+source-wordcount: '3480'
+ht-degree: 1%
 
 ---
 
 # Predefiniti per set di batch {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Utilizza **[!UICONTROL Predefiniti set di batch]** per creare e organizzare più risorse in un set di immagini o set 360 gradi al momento del caricamento dei file di risorse in una cartella singolarmente o mediante l&#39;acquisizione in blocco. Il predefinito può essere eseguito insieme ai processi di importazione risorse pianificati in [!DNL Dynamic Media]. Ogni predefinito è un set di istruzioni indipendente con nome univoco che definisce come creare il set di immagini o il set 360 gradi utilizzando immagini che corrispondono alle convenzioni di denominazione definite nella ricetta predefinita.
 
@@ -20,14 +57,14 @@ Utilizza **[!UICONTROL Predefiniti set di batch]** per creare e organizzare più
 >
 >Si utilizzano i predefiniti per set di batch in [!DNL Dynamic Media Classic] e si esegue la migrazione da [!DNL Dynamic Media Classic] ad Adobe Experience Manager as a Cloud Service? In tal caso, è necessario ricreare manualmente le definizioni dei predefiniti per set di batch in [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Best Practice** - Quando si utilizzano predefiniti per set di batch, l&#39;Adobe consiglia il seguente flusso di lavoro:
+**Best Practice** - Quando si lavora con i predefiniti per set di batch, Adobe consiglia il seguente flusso di lavoro:
 
 1. Crea un predefinito per set di batch. Vedi [Creare un predefinito per set di batch per un set di immagini o un set 360 gradi](#creating-bsp).
 1. Creare una cartella di risorse o utilizzare una cartella di risorse esistente e assicurarsi che sia sincronizzata in [!DNL Dynamic Media]. Consulta [Creare cartelle](/help/assets/manage-digital-assets.md#creating-folders).
 1. Applica il predefinito per set di batch alla cartella delle risorse. Vedere [Informazioni sull&#39;applicazione di predefiniti set di batch alle cartelle](#apply-bsp).
 1. Carica le immagini nella cartella delle risorse. Consulta [Caricare risorse per set di immagini](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Caricare risorse per set 360 gradi](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Aggiungere risorse digitali a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Il set di immagini o il set 360 gradi viene generato automaticamente nella cartella desiderata.
-1. Publish set di immagini o set 360 gradi. Consulta [Publish Dynamic Medie Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Pubblica il set di immagini o il set 360 gradi. Consulta [Pubblicare Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Creare un predefinito per set di batch per set di immagini o set 360 gradi {#creating-bsp}
 
@@ -44,7 +81,7 @@ Puoi creare molti predefiniti per set di batch in modo da coprire tutti i proces
 
 L&#39;area **[!UICONTROL Convenzione per la denominazione delle risorse]** nella pagina **[!UICONTROL Predefinito set di batch]** include due elementi che è possibile utilizzare per definire il predefinito set di batch: **[!UICONTROL Corrispondenza]** e **[!UICONTROL Nome base]**. Questi elementi ti consentono di definire una convenzione di denominazione e di identificare la parte della convenzione utilizzata per denominare il set in cui sono contenuti. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
-La convenzione di denominazione individuale di un’azienda utilizza spesso una o più righe di definizione da ciascuno di questi due elementi. È possibile utilizzare un numero illimitato di righe per la definizione univoca e raggrupparle in elementi distinti, ad esempio per l&#39;immagine principale, l&#39;elemento Colore, l&#39;elemento Visualizzazione alternativa e l&#39;elemento Campione.
+La convenzione di denominazione individuale di un’azienda spesso utilizza una o più righe di definizione da ciascuno di questi due elementi. È possibile utilizzare un numero illimitato di righe per la definizione univoca e raggrupparle in elementi distinti, ad esempio per l&#39;immagine principale, l&#39;elemento Colore, l&#39;elemento Visualizzazione alternativa e l&#39;elemento Campione.
 
 Ad esempio, la sintassi per un’espressione regolare di corrispondenza letterale potrebbe essere simile alla seguente:
 
@@ -66,7 +103,7 @@ Al termine della creazione di un predefinito per set di batch, lo si applica a u
 
 **Per creare un predefinito per set di batch per un set di immagini o un set 360 gradi:**
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -89,7 +126,7 @@ Per ulteriori informazioni sulle opzioni modificabili disponibili, vedere [Detta
       * Se hai aggiunto un gruppo e vuoi rimuoverlo, seleziona **[!UICONTROL X]**.
    * Quando si aggiungono due o più gruppi, nell&#39;elenco a discesa **[!UICONTROL And]** selezionare **[!UICONTROL And]** per unire un gruppo appena aggiunto a qualsiasi gruppo di espressioni precedente aggiunto. In alternativa, selezionare **[!UICONTROL Or]** per aggiungere un&#39;alternanza tra il gruppo di espressioni precedente e il nuovo gruppo creato. L&#39;operando **[!UICONTROL Or]** è definito dall&#39;utilizzo di un carattere di riga verticale `|` nella sintassi stessa dell&#39;espressione regolare.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Per aggiungere un altro nuovo gruppo, in **[!UICONTROL Corrispondenza]**, **[!UICONTROL Nome base]** o **[!UICONTROL Ordine di sequenza]**, selezionare **[!UICONTROL Aggiungi gruppo]**. Creare un altro gruppo di espressioni regolari come nel passaggio precedente.
    * Verificare la sintassi delle espressioni regolari nell&#39;area **[!UICONTROL Risultati regola - RegX]**. Se devi modificare la sintassi, apporta le modifiche nel rispettivo gruppo a sinistra della pagina.
@@ -109,8 +146,8 @@ Consulta [Creare un predefinito per set di batch per un set di immagini o un set
 | --- | --- |
 | Nome predefinito | Sola lettura. Il nome specificato al momento della creazione del set di batch. Se è necessario rinominare il predefinito, è possibile copiare il predefinito per set di batch esistente e specificare un nuovo nome. Vedi [Copiare un predefinito per set di batch esistente](#copy-bsp). |
 | Tipo | Sola lettura. Tipo specificato al momento della creazione del set di batch. La copia di un predefinito per set di batch esistente non consente di modificarne il [!UICONTROL tipo]; è necessario creare un predefinito. |
-| Includi risorse derivate | Facoltativo. Per fare in modo che l&#39;IPS (Image Production System) di [!DNL Dynamic Media] includa immagini generate o &quot;derivate&quot; con il set 360 gradi o il set di immagini, selezionare **[!UICONTROL Sì]** (impostazione predefinita). Una risorsa derivata è un’immagine che non è stata caricata direttamente da un utente. Al contrario, la risorsa è stata prodotta da IPS al caricamento di una risorsa principale. Ad esempio, una risorsa immagine generata da IPS da una pagina in un PDF al momento del caricamento del PDF in [!DNL Dynamic Media] è considerata una risorsa derivata. |
-| Cartella di destinazione | Facoltativo. Se definisci un numero elevato di set di immagini o set 360 gradi, Adobe consiglia di mantenere questi set separati dalle cartelle che contengono le risorse stesse. Pertanto, è consigliabile creare una cartella Set di immagini o Set 360 gradi e reindirizzare l&#39;applicazione per inserire qui i set di batch generati.<br>In questo caso, specificare la cartella all&#39;interno della struttura di cartelle di Experience Manager Assets (`/content/dam`) in cui è attivo il predefinito per set di batch. Assicurarsi che la cartella sia abilitata per la sincronizzazione [!DNL Dynamic Media] per consentirla come cartella di destinazione. Vedere [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Medie](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>È possibile assegnare un predefinito per set di batch a più cartelle, se si applica il predefinito tramite le **[!UICONTROL proprietà]** della cartella. Vedere [Applica predefiniti set di batch dalla pagina Proprietà di una cartella di risorse](#apply-bsp-to-folders-via-properties).<br>Se non specifichi una cartella, il set di immagini o il set 360 gradi generato dal predefinito per set di batch viene creato nella stessa cartella in cui è stata caricata la cartella risorse. |
+| Includi risorse derivate | Facoltativo. Per fare in modo che l&#39;IPS (Image Production System) di [!DNL Dynamic Media] includa immagini generate o &quot;derivate&quot; con il set 360 gradi o il set di immagini, selezionare **[!UICONTROL Sì]** (impostazione predefinita). Una risorsa derivata è un’immagine che non è stata caricata direttamente da un utente. Al contrario, la risorsa è stata prodotta da IPS al caricamento di una risorsa principale. Ad esempio, una risorsa immagine generata da IPS da una pagina in un PDF al momento del caricamento di PDF in [!DNL Dynamic Media] è considerata una risorsa derivata. |
+| Cartella di destinazione | Facoltativo. Se definisci un numero elevato di set di immagini o set 360 gradi, Adobe consiglia di mantenere questi set separati dalle cartelle che contengono le risorse stesse. Pertanto, è consigliabile creare una cartella Set di immagini o Set 360 gradi e reindirizzare l&#39;applicazione per inserire qui i set di batch generati.<br>In questo caso, specificare la cartella all&#39;interno della struttura di cartelle di Experience Manager Assets (`/content/dam`) in cui è attivo il predefinito per set di batch. Assicurarsi che la cartella sia abilitata per la sincronizzazione [!DNL Dynamic Media] per consentirla come cartella di destinazione. Vedi [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>È possibile assegnare un predefinito per set di batch a più cartelle, se si applica il predefinito tramite le **[!UICONTROL proprietà]** della cartella. Vedere [Applica predefiniti set di batch dalla pagina Proprietà di una cartella di risorse](#apply-bsp-to-folders-via-properties).<br>Se non specifichi una cartella, il set di immagini o il set 360 gradi generato dal predefinito per set di batch viene creato nella stessa cartella in cui è stata caricata la cartella risorse. |
 | **[!UICONTROL Imposta convenzione di denominazione]** |  |
 | Prefisso<br>o<br>Suffisso | Facoltativo. Immettere un prefisso, un suffisso o entrambi nei rispettivi campi.<br>I campi prefisso e suffisso consentono di creare molti predefiniti per set di batch utilizzando una convenzione di denominazione file personalizzata alternativa per un particolare set di contenuti. Questo metodo è particolarmente utile nei casi in cui esiste un’eccezione allo schema di denominazione predefinito definito da un’azienda.<br>Il prefisso o il suffisso viene aggiunto al **[!UICONTROL Nome base]** definito nell&#39;area **[!UICONTROL Convenzione di denominazione risorse]**. Aggiungendo un prefisso o un suffisso, assicurati che il set di immagini o il set 360 gradi venga creato in modo esclusivo e indipendente da altre risorse. Può anche essere utile per aiutare altri utenti a identificare i tipi di file. Ad esempio, per determinare una modalità colore utilizzata, è possibile aggiungere come prefisso o suffisso `rgb` o `cmyk`.<br>Sebbene non sia necessario specificare una convenzione per la denominazione dei set per utilizzare la funzionalità dei set di batch predefiniti, è consigliabile utilizzare la convenzione per la denominazione dei set. Questa procedura consente di definire tutti gli elementi della convenzione di denominazione che si desidera raggruppare in un set per semplificare la creazione di set di batch. |
 | **[!UICONTROL Risultati regola - RegX]** |  |
@@ -150,11 +187,11 @@ Rielabora le risorse in una cartella se si verifica uno dei due scenari seguenti
 
 ### Applicare predefiniti set di batch dalla pagina Proprietà di una cartella di risorse {#apply-bsp-to-folders-via-properties}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
 1. Passare a una cartella in cui si desidera applicare uno o più predefiniti per set di batch.
 1. Nella pagina, a sinistra della colonna **[!UICONTROL Name]**, selezionare la casella di controllo di una cartella.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Proprietà]**.
-1. Nella pagina Proprietà della cartella selezionare la scheda **[!UICONTROL Elaborazione Dynamic Medie]**.
+1. Nella pagina Proprietà della cartella selezionare la scheda **[!UICONTROL Elaborazione elemento multimediale dinamico]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -178,7 +215,7 @@ Se desiderate che il predefinito appena modificato venga riapplicato alle risors
 
 **Per modificare un predefinito per set di batch:**
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, controllare il predefinito set di batch che si desidera modificare.
 1. Nella barra degli strumenti, selezionare **[!UICONTROL Modifica predefinito per set di batch]**.
 1. Se necessario, modificate il predefinito.
@@ -192,7 +229,7 @@ Se copi un predefinito esistente a cui fanno riferimento le cartelle di risorse,
 
 **Copia un predefinito per set di batch esistente:**
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, selezionare la casella di controllo del predefinito set di batch da copiare.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Copia]**.
 1. Nella finestra di dialogo **[!UICONTROL Copia predefinito per set di batch]** digitare un nuovo nome per il predefinito nella casella di testo **[!UICONTROL Titolo]**.
@@ -214,7 +251,7 @@ Esistono due metodi per rimuovere i predefiniti per set di batch dalle cartelle.
 
 ### Rimuovere i predefiniti set di batch dalle cartelle tramite la pagina Predefinito set di batch {#remove-bsp-from-folders-via-bsp-page}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti set di batch]**.
 1. Nella pagina **[!UICONTROL Predefiniti set di batch]**, a sinistra della colonna **[!UICONTROL Nome predefinito]**, selezionare la casella di controllo di uno o più predefiniti set di batch da rimuovere da una o più cartelle.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Rimuovi predefinito batch da cartelle]**.
 
@@ -227,11 +264,11 @@ Esistono due metodi per rimuovere i predefiniti per set di batch dalle cartelle.
 
 ### Rimuovere i predefiniti per set di batch dalla pagina Proprietà di una cartella {#remove-bsp-from-folders-via-properties}
 
-1. Seleziona il logo di Experience Manager e passa a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
+1. Seleziona il logo Experience Manager e passa a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
 1. Passare a una cartella in cui si desidera rimuovere uno o più predefiniti per set di batch.
 1. Nella pagina, a sinistra della colonna **[!UICONTROL Name]**, selezionare la casella di controllo di una cartella.
 1. Nella barra degli strumenti, seleziona **[!UICONTROL Proprietà]**.
-1. Nella pagina Proprietà della cartella selezionare **[!UICONTROL Elaborazione Dynamic Medie]**.
+1. Nella pagina Proprietà della cartella selezionare **[!UICONTROL Elaborazione elemento multimediale dinamico]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -241,7 +278,7 @@ Esistono due metodi per rimuovere i predefiniti per set di batch dalle cartelle.
 
 ## Elimina predefiniti set di batch {#delete-bsp}
 
-È possibile eliminare i predefiniti set di batch per rimuoverli definitivamente da [!DNL Dynamic Media]. In altre parole, non vengono più visualizzati nella pagina [!UICONTROL Predefinito set di batch] né nell&#39;elenco a discesa **[!UICONTROL Predefiniti set di batch]** della scheda **[!UICONTROL Elaborazione Dynamic Medie]** nella pagina **[!UICONTROL Proprietà]** della cartella. Di conseguenza, il predefinito non viene applicato alle risorse esistenti durante la rielaborazione di una cartella o quando vengono caricate nuove risorse nella cartella.
+È possibile eliminare i predefiniti set di batch per rimuoverli definitivamente da [!DNL Dynamic Media]. In altre parole, non vengono più visualizzati nella pagina [!UICONTROL Predefinito set di batch] né nell&#39;elenco a discesa **[!UICONTROL Predefiniti set di batch]** della scheda **[!UICONTROL Elaborazione elementi multimediali dinamici]** nella pagina **[!UICONTROL Proprietà]** della cartella. Di conseguenza, il predefinito non viene applicato alle risorse esistenti durante la rielaborazione di una cartella o quando vengono caricate nuove risorse nella cartella.
 
 Se elimini un predefinito applicato in precedenza a una o più cartelle, tutti i set di immagini o i set 360 gradi creati dalle risorse in tali cartelle continuano a essere visualizzati così come sono.
 
@@ -265,5 +302,5 @@ Se invece desideri *rimuovere* predefiniti dalle cartelle, consulta [Rimuovere i
 >
 >* [Set di immagini](/help/assets/dynamic-media/image-sets.md)
 >* [Set 360 gradi](/help/assets/dynamic-media/spin-sets.md)
->* [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Medie](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder). Per ulteriori informazioni sulla sincronizzazione di una singola cartella in [!DNL Dynamic Media], vedere &quot;Modalità di sincronizzazione&quot; nell&#39;argomento.
->* [Crea una configurazione Dynamic Medie nei Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services). Per ulteriori informazioni sulla sincronizzazione di tutte le cartelle in [!DNL Dynamic Media], vedere &quot;Modalità di sincronizzazione Dynamic Medie&quot; nell&#39;argomento.
+>* [Configurare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder). Per ulteriori informazioni sulla sincronizzazione di una singola cartella in [!DNL Dynamic Media], vedere &quot;Modalità di sincronizzazione&quot; nell&#39;argomento.
+>* [Creare una configurazione Dynamic Media in Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services). Per ulteriori informazioni sulla sincronizzazione di tutte le cartelle in [!DNL Dynamic Media], vedere &quot;Modalità di sincronizzazione Dynamic Media&quot; nell&#39;argomento.

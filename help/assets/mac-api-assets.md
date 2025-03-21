@@ -5,26 +5,60 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1737'
 ht-degree: 6%
 
 ---
 
 # Gestire le risorse digitali con l&#39;API HTTP [!DNL Adobe Experience Manager Assets]{#assets-http-api}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
-## Introduzione all&#39;API HTTP [!DNL Assets] dell&#39;AEM {#overview}
+## Introduzione all&#39;API HTTP di AEM [!DNL Assets] {#overview}
 
-L&#39;API HTTP [!DNL Assets] dell&#39;AEM abilita le operazioni CRUD (create, read, update, delete) sulle risorse digitali tramite un&#39;interfaccia REST disponibile in /`api/assets`. Queste operazioni si applicano ai metadati delle risorse, alle rappresentazioni e ai commenti. Include [supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
+L&#39;API HTTP di AEM [!DNL Assets] abilita operazioni CRUD (creazione, lettura, aggiornamento ed eliminazione) sulle risorse digitali tramite un&#39;interfaccia REST disponibile in /`api/assets`. Queste operazioni si applicano ai metadati delle risorse, alle rappresentazioni e ai commenti. Include [supporto per frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -49,7 +83,7 @@ Per ulteriori informazioni, vedere il supporto per [Frammenti di contenuto nell&
 
 >[!NOTE]
 >
->Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
+>Consulta [API di AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md) per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti.
 >
 >Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
@@ -88,7 +122,7 @@ In [!DNL Experience Manager] una risorsa contiene i seguenti elementi:
 
 * **Proprietà e metadati:** Informazioni descrittive sulla risorsa.
 * **File binario:** Il file caricato originariamente.
-* **Rappresentazioni:** più rappresentazioni configurate (ad esempio immagini di varie dimensioni, diverse codifiche video o pagine estratte da file PDF/Adobe InDesign).
+* **Rappresentazioni:** più rappresentazioni configurate, ad esempio immagini di varie dimensioni, diverse codifiche video o pagine estratte da file PDF/Adobe InDesign.
 * **Commenti (facoltativo):** osservazioni fornite dall&#39;utente.
 
 Per informazioni sugli elementi nei frammenti di contenuto, vedere [Supporto dei frammenti di contenuto nell&#39;API HTTP Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
@@ -151,7 +185,7 @@ Recupera una rappresentazione Siren di una cartella esistente e delle relative e
 Crea un `sling`: `OrderedFolder` nel percorso specificato. Se viene fornito `*` invece del nome di un nodo, il servlet utilizza il nome del parametro come nome di nodo. La richiesta accetta uno dei seguenti elementi:
 
 * Una rappresentazione Siren della nuova cartella
-* Un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Questi sono utili per creare una cartella direttamente da un modulo HTML.
+* Un set di coppie nome-valore, codificate come `application/www-form-urlencoded` o `multipart`/ `form`- `data`. Questi sono utili per creare una cartella direttamente da un modulo di HTML.
 
 Inoltre, le proprietà della cartella possono essere specificate come parametri di query URL.
 

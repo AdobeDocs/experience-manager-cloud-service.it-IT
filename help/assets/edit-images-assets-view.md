@@ -4,19 +4,53 @@ description: Modifica le immagini utilizzando le opzioni basate su [!DNL Adobe E
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1173'
 ht-degree: 77%
 
 ---
 
 # Modificare le immagini in [!DNL Assets view] {#edit-images-in-assets-view}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-L’interfaccia utente di visualizzazione di Assets consente di eseguire semplici operazioni di modifica delle immagini, basate su Adobe Express e integrate nell’interfaccia utente. Questa modifica include il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG. Inoltre, consente la modifica avanzata tramite l’interfaccia Adobe Express incorporata nell’interfaccia di visualizzazione Assets.
+L’interfaccia utente di visualizzazione di Assets consente di modificare le immagini di base con tecnologia Adobe Express, integrata nell’interfaccia utente. Questa modifica include il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG. Inoltre, consente la modifica avanzata tramite l’interfaccia Adobe Express incorporata nell’interfaccia di visualizzazione Assets.
 
 Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Il controllo delle versioni consente di ripristinare la risorsa originale in un secondo momento, se necessario. Per modificare un’immagine: [apri l’anteprima](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e fai clic su **Modifica immagine**.
 
@@ -36,7 +70,7 @@ Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Modifica immagine nella vista Assets tramite Adobe Express {#edit-image-on-assets-view-using-adobe-express}
+### Modifica immagine nella vista Assets con Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
 Dopo essere passati alla visualizzazione Assets, fai clic su **Assets**, seleziona un&#39;immagine e quindi fai clic su **Modifica** nella barra superiore. Nella nuova schermata vengono visualizzate le opzioni di modifica disponibili gestite da Adobe Express, tra cui il ridimensionamento, la rimozione dello sfondo, il ritaglio e la conversione tra i formati JPEG e PNG.
 
@@ -88,7 +122,7 @@ Puoi convertire rapidamente un’immagine JPEG in formato PNG utilizzando Adobe 
 
 ### Modificare le immagine nell’editor integrato Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Gli utenti che dispongono del diritto Express possono utilizzare l’editor Express incorporato nella vista Assets per modificare facilmente i contenuti e crearne di nuovi con GenAI da Adobe Firefly. Questa funzione migliora il riutilizzo dei contenuti e ne accelera la velocità. Puoi anche utilizzare elementi predefiniti per migliorare la risorsa o eseguire azioni rapide per modificare l’immagine con pochi clic.
+Gli utenti che dispongono del diritto Express possono utilizzare l’editor Express integrato nella vista Assets per modificare facilmente i contenuti e crearne di nuovi con GenAI di Adobe Firefly. Questa funzione migliora il riutilizzo dei contenuti e ne accelera la velocità. Puoi anche utilizzare elementi predefiniti per migliorare la risorsa o eseguire azioni rapide per modificare l’immagine con pochi clic.
 
 ![express nell&#39;interfaccia utente di essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Per modificare le immagini utilizzando l&#39;editor incorporato [!DNL Adobe Express], effettuare le seguenti operazioni:

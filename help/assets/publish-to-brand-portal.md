@@ -5,17 +5,51 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1333'
 ht-degree: 84%
 
 ---
 
-# Risorse Publish per Brand Portal {#publish-assets-to-brand-portal}
+# Pubblicare risorse in Brand Portal {#publish-assets-to-brand-portal}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -28,9 +62,9 @@ Devi però prima configurare AEM Assets con Brand Portal. Per ulteriori dettagli
 
 Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o alla raccolta originale in AEM Assets non verranno applicate in Brand Portal finché non vengono ripubblicate da AEM Assets. Questa funzione garantisce che le modifiche in corso d’opera non siano disponibili in Brand Portal. Solo le modifiche approvate pubblicate da un amministratore sono infatti disponibili in Brand Portal.
 
-* [Risorse Publish per Brand Portal](#publish-assets-to-bp)
-* [Cartelle Publish in Brand Portal](#publish-folders-to-brand-portal)
-* [Raccolte Publish in Brand Portal](#publish-collections-to-brand-portal)
+* [Pubblicare risorse in Brand Portal](#publish-assets-to-bp)
+* [Pubblicare cartelle in Brand Portal](#publish-folders-to-brand-portal)
+* [Pubblicare raccolte in Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -38,7 +72,7 @@ Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o a
 >Assets deve essere pubblicato in batch. Il valore consigliato per la dimensione del batch è 15K.
 > Per [!DNL Experience Manager Assets] come [!DNL Cloud Service], la velocità di trasferimento osservata in condizioni lab è di 1000 risorse all&#39;ora. Il tasso si osserva con una dimensione media di 10 MB di risorse.
 
-## Risorse Publish per Brand Portal {#publish-assets-to-bp}
+## Pubblicare risorse in Brand Portal {#publish-assets-to-bp}
 
 Di seguito è descritta la procedura per pubblicare risorse su Brand Portal da AEM Assets:
 
@@ -50,7 +84,7 @@ Di seguito è descritta la procedura per pubblicare risorse su Brand Portal da A
    * [Pubblica ora](#publish-to-bp-now) (pubblica subito le risorse)
    * [Pubblica più tardi](#publish-to-bp-later) (pianifica la pubblicazione delle risorse)
 
-### Risorse Publish ora {#publish-to-bp-now}
+### Pubblicare subito le risorse {#publish-to-bp-now}
 
 Per pubblicare le risorse selezionate su Brand Portal, effettua una delle seguenti operazioni:
 
@@ -68,7 +102,7 @@ Per pubblicare le risorse selezionate su Brand Portal, effettua una delle seguen
 
 Viene visualizzato un messaggio per informare che le risorse sono state accodate per la pubblicazione su Brand Portal. Per visualizzare le risorse pubblicate, accedi all’interfaccia di Brand Portal.
 
-### Risorse Publish in un secondo momento {#publish-to-bp-later}
+### Pubblicare le risorse in un secondo momento {#publish-to-bp-later}
 
 Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un’ora successiva:
 
@@ -103,11 +137,11 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Cartelle Publish in Brand Portal {#publish-folders-to-brand-portal}
+## Pubblicare cartelle in Brand Portal {#publish-folders-to-brand-portal}
 
 Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse oppure pianificare la pubblicazione in una data o un’ora successiva.
 
-### Cartelle Publish in Brand Portal {#publish-folders-to-bp}
+### Pubblicare cartelle in Brand Portal {#publish-folders-to-bp}
 
 1. Dalla console di Assets, seleziona le cartelle da pubblicare e fai clic su **[!UICONTROL Pubblicazione rapida]** nella barra degli strumenti.
 
@@ -133,7 +167,7 @@ Puoi pubblicare o annullare subito la pubblicazione delle cartelle di risorse op
 
    Viene visualizzato un messaggio per informare che la cartella è stata accodata per la pubblicazione su Brand Portal. Per visualizzare la cartella pubblicata, accedi all’interfaccia di Brand Portal.
 
-1. **Cartelle Publish in seguito**
+1. **Pubblica cartelle più tardi**
 Per pianificare la pubblicazione delle cartelle di risorse in una data o in un’ora successiva:
 
    1. Seleziona le cartelle di cui vuoi pianificare la pubblicazione e fai clic su **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti in alto.
@@ -213,7 +247,7 @@ Per annullare la pubblicazione delle cartelle di risorse su Brand Portal:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Raccolte Publish in Brand Portal {#publish-collections-to-brand-portal}
+## Pubblicare raccolte in Brand Portal {#publish-collections-to-brand-portal}
 
 Puoi pubblicare o annullare la pubblicazione delle raccolte dall’istanza cloud di AEM Assets.
 
@@ -223,7 +257,7 @@ Puoi pubblicare o annullare la pubblicazione delle raccolte dall’istanza cloud
 >
 >Se le raccolte contenenti frammenti di contenuto vengono pubblicate da AEM Assets su Brand Portal, nell’interfaccia di Brand Portal viene replicato tutto il contenuto della cartella, tranne i frammenti di contenuto.
 
-### Raccolte Publish {#publish-collections}
+### Pubblicare le raccolte {#publish-collections}
 
 Di seguito è descritta la procedura per pubblicare raccolte su Brand Portal da AEM Assets:
 

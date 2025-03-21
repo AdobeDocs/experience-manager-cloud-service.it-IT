@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 9%
+source-wordcount: '496'
+ht-degree: 12%
 
 ---
 
 # Come modificare o aggiungere metadati {#how-to-edit-or-add-metadata}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 I metadati sono informazioni aggiuntive sulla risorsa in cui è possibile eseguire ricerche. Viene estratto automaticamente quando carichi un’immagine. Puoi modificare i metadati esistenti o aggiungere nuove proprietà di metadati ai campi esistenti (ad esempio, quando un campo di metadati è vuoto).
 
@@ -25,7 +59,7 @@ Poiché le aziende richiedono vocabolari di metadati controllati e affidabili, [
 
 Per modificare i metadati:
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Dall&#39;interfaccia utente di Assets, seleziona la risorsa e l&#39;icona **[!UICONTROL Visualizza proprietà]** dalla barra degli strumenti.
    * Dalla miniatura della risorsa, seleziona l&#39;azione rapida **[!UICONTROL Visualizza proprietà]**.
@@ -39,7 +73,7 @@ Per modificare i metadati:
    >
    >Se un campo di testo è vuoto, non è presente alcun set di metadati. Puoi immettere un valore nel campo e salvarlo per aggiungere tale proprietà di metadati.
 
-Eventuali modifiche ai metadati di una risorsa vengono riscritte nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita mediante un flusso di lavoro Experience Manager di reinserimento dei metadati. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà create (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
+Eventuali modifiche ai metadati di una risorsa vengono scritte nuovamente nel file binario originale come parte dei dati XMP. Questa operazione viene eseguita tramite il flusso di lavoro di reinserimento dei metadati di Experience Manager. Le modifiche apportate alle proprietà esistenti (ad esempio `dc:title`) vengono sovrascritte e le proprietà create (incluse le proprietà personalizzate come `cq:tags`) vengono aggiunte insieme allo schema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -49,7 +83,7 @@ Per informazioni dettagliate su come modificare lo schema metadati, vedere [Modi
 
 ## Registrazione di uno spazio dei nomi personalizzato in Experience Manager {#registering-a-custom-namespace-within-aem}
 
-In Experience Manager puoi aggiungere spazi dei nomi personalizzati. Proprio come ci sono spazi dei nomi predefiniti come cq, jcr e sling, puoi avere uno spazio dei nomi per i metadati dell’archivio e l’elaborazione xml.
+Puoi aggiungere spazi dei nomi personalizzati in Experience Manager. Proprio come ci sono spazi dei nomi predefiniti come cq, jcr e sling, puoi avere uno spazio dei nomi per i metadati dell’archivio e l’elaborazione xml.
 
 1. Vai alla pagina di amministrazione del tipo di nodo *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Seleziona **[!UICONTROL Namespace]** nella parte superiore della pagina. La pagina di amministrazione dello spazio dei nomi viene visualizzata in una finestra.

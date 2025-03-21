@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 8%
 
 ---
 
 # Anteprima di risorse 3D in Adobe Experience Manager{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -21,13 +58,13 @@ ht-degree: 6%
 
 Experience Manager Assets supporta l’acquisizione, la gestione, l’anteprima e la distribuzione di risorse 3D.
 
-Puoi visualizzare in anteprima le risorse 3D con le rappresentazioni delle miniature generate automaticamente o con il visualizzatore 3D interattivo. Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli della risorsa in Experience Manager. Il visualizzatore include, tra le altre cose, una raccolta di controlli interattivi della fotocamera che consentono di ruotare, ingrandire ed eseguire una panoramica intorno alla scena 3D.
+Puoi visualizzare in anteprima le risorse 3D con le rappresentazioni delle miniature generate automaticamente o con il visualizzatore 3D interattivo. Il visualizzatore 3D interattivo è disponibile dalla pagina dei dettagli delle risorse in Experience Manager. Il visualizzatore include, tra le altre cose, una raccolta di controlli interattivi della fotocamera che consentono di ruotare, ingrandire ed eseguire una panoramica intorno alla scena 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formati supportati per l’anteprima delle miniature nell’Experience Manager{#supported-thumbnail-previewing-assets}
+## Formati supportati per l’anteprima delle miniature in Experience Manager{#supported-thumbnail-previewing-assets}
 
-L&#39;Experience Manager genera le miniature per i seguenti formati di file per impostazione predefinita:
+Per impostazione predefinita, Experience Manager genera le miniature per i seguenti formati di file:
 
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
@@ -39,7 +76,7 @@ L&#39;Experience Manager genera le miniature per i seguenti formati di file per 
 
 ## Formati supportati per l’anteprima 3D interattiva in Experience Manager{#supported-3d-previewing-assets}
 
-L&#39;Experience Manager supporta l&#39;anteprima 3D interattiva per i seguenti formati di file in modalità nativa:
+Experience Manager supporta l’anteprima 3D interattiva per i seguenti formati di file in modalità nativa:
 
 | Estensione file 3D | Formato file | Tipo MIME | Note |
 |---|---|---|---|
@@ -60,17 +97,17 @@ L&#39;Experience Manager supporta l&#39;anteprima 3D interattiva per i seguenti 
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considerazioni sulle prestazioni quando si visualizza l’anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
+## Considerazioni sulle prestazioni durante l’anteprima delle risorse 3D in Experience Manager{#performance-3d-previewing-assets}
 
 Il tempo necessario per aprire una risorsa 3D nella pagina di visualizzazione dei dettagli della risorsa dipende da diversi fattori, quali la larghezza di banda, la complessità delle immagini e le latenze per il server.
 
 Inoltre, le funzionalità del computer client, ad esempio una workstation, un notebook o un dispositivo touch mobile, sono importanti quando si manipola la fotocamera in modo interattivo. Un sistema ragionevolmente potente con buone capacità grafiche può rendere l&#39;esperienza di visualizzazione 3D interattiva più fluida e più favorevole.
 
-**Per visualizzare in anteprima le risorse 3D nell&#39;Experience Manager:**
+**Per visualizzare in anteprima le risorse 3D in Experience Manager:**
 
 1. Assicurati di aver caricato risorse 3D in Experience Manager.
 Consulta [Formati supportati per anteprima 3D](#supported-3d-previewing-assets) e [Carica risorse](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Dall&#39;Experience Manager, nella pagina **[!UICONTROL Navigazione]**, passare a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
+1. Da Experience Manager, nella pagina **[!UICONTROL Navigazione]**, passa a **[!UICONTROL Assets]** > **[!UICONTROL File]**.
 
    ![Pagina di navigazione](/help/assets/dynamic-media/assets/navigation-assets.png)
 

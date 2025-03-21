@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1382'
+ht-degree: 5%
 
 ---
 
 # Scarica risorse da [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -32,7 +66,7 @@ Puoi scaricare risorse, incluse le rappresentazioni statiche e dinamiche. In alt
 
 Non è possibile scaricare i seguenti tipi di risorse: Set di immagini, Set 360 gradi, Set di file multimediali diversi e Set carosello.
 
-Puoi scaricare le risorse da Experience Manager utilizzando i seguenti metodi:
+Puoi scaricare risorse da Experience Manager utilizzando i seguenti metodi:
 
 <!-- * [Link Share](#link-share-download) -->
 
@@ -43,7 +77,7 @@ Puoi scaricare le risorse da Experience Manager utilizzando i seguenti metodi:
 
 ## Scaricare le risorse tramite l&#39;interfaccia [!DNL Experience Manager] {#download-assets}
 
-Experience Manager ottimizza l’esperienza di download in base alla quantità e alle dimensioni della risorsa. I file più piccoli vengono scaricati dall’interfaccia utente in tempo reale. [!DNL Experience Manager] scarica direttamente le richieste di singole risorse per il file originale anziché racchiudere le singole risorse in un archivio ZIP per consentire download più veloci. Experience Manager supporta i download di grandi dimensioni con richieste asincrone. Le richieste di download di dimensioni superiori a 100 GB vengono suddivise in più archivi ZIP con una dimensione massima di 100 MB ciascuno.
+Experience Manager ottimizza l’esperienza di download in base alla quantità e alle dimensioni delle risorse. I file più piccoli vengono scaricati dall’interfaccia utente in tempo reale. [!DNL Experience Manager] scarica direttamente le richieste di singole risorse per il file originale anziché racchiudere le singole risorse in un archivio ZIP per consentire download più veloci. Experience Manager supporta i download di grandi dimensioni con richieste asincrone. Le richieste di download di dimensioni superiori a 100 GB vengono suddivise in più archivi ZIP con una dimensione massima di 100 MB ciascuno.
 
 Per impostazione predefinita, [!DNL Experience Manager] attiva una notifica nella [[!DNL Experience Manager] Posta in arrivo](/help/sites-cloud/authoring/inbox.md) al momento della generazione di un archivio di download.
 
@@ -58,7 +92,7 @@ I download asincroni vengono attivati in uno dei seguenti casi:
 * Se la dimensione del download è superiore a 100 MB
 * Se la preparazione del download richiede più di 30 secondi
 
-Mentre il download asincrono viene eseguito nel backend, l’utente può continuare a esplorare e lavorare ulteriormente in Experience Manager. Oltre alle notifiche della casella in entrata dell’Experience Manager, Experience Manager può inviare e-mail per avvisare l’utente al termine del processo di download. Per abilitare questa funzionalità, gli amministratori possono configurare il servizio e-mail [configurando una connessione al server SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Mentre il download asincrono viene eseguito nel backend, l’utente può continuare a esplorare e lavorare ulteriormente in Experience Manager. Oltre alle notifiche della casella in entrata di Experience Manager, Experience Manager può inviare e-mail per avvisare l’utente al completamento del processo di download. Per abilitare questa funzionalità, gli amministratori possono configurare il servizio e-mail [configurando una connessione al server SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una volta configurato il servizio e-mail, gli amministratori e gli utenti possono abilitare le notifiche e-mail dall’interfaccia di Experience Manager.
 
@@ -113,7 +147,7 @@ Nella cartella Posta in arrivo [!UICONTROL Download] viene visualizzato lo stato
 
 Il servlet predefinito in [!DNL Experience Manager] consente agli utenti autenticati di inviare richieste di download simultanee di grandi dimensioni arbitrarie per creare file ZIP di risorse. La preparazione del download può avere implicazioni sulle prestazioni o può addirittura sovraccaricare il server e la rete. Per attenuare tali potenziali rischi di tipo DoS causati da questa funzionalità, il componente OSGi `AssetDownloadServlet` è disabilitato per le istanze di pubblicazione. Se non hai bisogno della funzione di download nelle istanze di authoring, disabilita il servlet in Author.
 
-Per consentire il download di risorse dal DAM, ad esempio quando utilizzi qualcosa come Asset Share Commons o un’altra implementazione simile a un portale, abilita manualmente il servlet tramite una configurazione OSGi. L’Adobe consiglia di impostare la dimensione di download consentita il più bassa possibile senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
+Per consentire il download di risorse dal DAM, ad esempio quando utilizzi qualcosa come Asset Share Commons o un’altra implementazione simile a un portale, abilita manualmente il servlet tramite una configurazione OSGi. Adobe consiglia di impostare le dimensioni di download consentite al livello più basso possibile senza influire sui requisiti di download giornalieri. Un valore elevato può influire sulle prestazioni.
 
 1. Creare una cartella con una convenzione di denominazione che esegue il targeting della modalità di esecuzione di pubblicazione, ovvero `config.publish`:
 
@@ -166,5 +200,5 @@ Per ulteriori dettagli sull&#39;aggiunta di una configurazione OSGi vuota, consu
 >[!MORELIKETHIS]
 >
 >* [Scarica risorse protette DRM](drm.md)
->* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Win o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Windows o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Scarica le risorse tramite Adobe Assets Link dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)

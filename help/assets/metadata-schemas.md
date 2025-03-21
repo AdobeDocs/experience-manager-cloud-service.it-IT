@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2680'
 ht-degree: 10%
 
 ---
 
 # Schemi metadati {#metadata-schemas}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -48,14 +82,14 @@ Per visualizzare un elenco di moduli o modelli, nell&#39;interfaccia [!DNL Exper
 |---|---|---|
 | [!UICONTROL predefinito] | | Modulo schema metadati di base per le risorse. |
 | | I seguenti moduli figlio ereditano le proprietà del modulo [!UICONTROL default]: | |
-| | <ul><li>[!UICONTROL video] dm</li></ul> | Modulo schema per video Dynamic Medie. |
+| | <ul><li>[!UICONTROL video] dm</li></ul> | Modulo schema per video Dynamic Media. |
 | | <ul><li>[!UICONTROL immagine]</li></ul> | Modulo schema per immagini con tipo MIME come `image/jpeg` e `image/png`. <br> Il modulo [!UICONTROL image] contiene i seguenti modelli di modulo figlio: <ul><li> [!UICONTROL jpeg]: modulo schema per risorse con sottotipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: modulo schema per le risorse con sottotipo TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL applicazione]</li></ul> | Modulo schema per risorse con tipo MIME come `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: modulo schema per risorse con sottotipo PDF. |
 | | <ul><li>[!UICONTROL video]</li></ul> | Modulo schema per risorse video con tipo MIME come `video/avi` e `video/mp4`. |
 | [!UICONTROL raccolta] | | Modulo schema per le raccolte. |
 | [!UICONTROL contentfragment] | | Modulo schema per frammenti di contenuto. |
 | [!UICONTROL moduli] | | Questo modulo schema fa riferimento a [!DNL Adobe Experience Manager Forms]. |
-| [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dall’utente integrati in Experience Manager da social media. |
+| [!UICONTROL ugc_contentfragment] | | Modulo schema per contenuti e risorse generati dagli utenti e integrati in Experience Manager dai social media. |
 
 >[!NOTE]
 >
@@ -123,7 +157,7 @@ Di seguito sono riportati alcuni esempi di valori validi per una proprietà:
 
 * `./jcr:content/metadata/dc:title`: memorizza il valore come proprietà nel nodo di metadati della risorsa `dc:title`.
 
-* `./jcr:created`: memorizza la data e l&#39;ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, l’Adobe consiglia di contrassegnarle come Disattiva modifica. In caso contrario, al momento di salvare le proprietà della risorsa si verifica l’errore “Impossibile modificare le risorse”.
+* `./jcr:created`: memorizza la data e l&#39;ora di creazione di una risorsa. È una proprietà protetta. Se configuri queste proprietà, Adobe consiglia di contrassegnarle come Disattiva modifica. In caso contrario, al momento di salvare le proprietà della risorsa si verifica l’errore “Impossibile modificare le risorse”.
 
 Per garantire che il componente venga visualizzato correttamente nel modulo dello schema metadati, il percorso della proprietà non deve includere spazi.
 
@@ -243,14 +277,14 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
 
 >[!NOTE]
 >
->Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista Schede, in Experience Manager non viene visualizzato il messaggio di avvertenza relativo a metadati mancanti per tali campi di metadati obbligatori.
+>Un campo di metadati può essere definito come obbligatorio in base al valore di un altro campo. Nella vista Schede, Experience Manager non visualizza il messaggio di avvertenza relativo a metadati mancanti per tali campi di metadati obbligatori.
 
-1. Fai clic sul logo di Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
+1. Fai clic sul logo Experience Manager, quindi passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi di metadati]**. Viene visualizzata la pagina **[!UICONTROL Moduli schema metadati]**.
 1. Salva il modulo metadati predefinito come modulo personalizzato. Ad esempio, salvarlo come `my_default`.
 1. Modifica il modulo personalizzato. Aggiungi un campo obbligatorio. Ad esempio, aggiungi un campo **[!UICONTROL Categoria]** e rendi obbligatorio il campo.
 1. Fai clic su **[!UICONTROL Salva]**. Il modulo modificato è elencato nella pagina **[!UICONTROL Schema metadati Forms]**. Selezionare il modulo, quindi selezionare **[!UICONTROL Applica a cartelle]** dalla barra degli strumenti per applicare i metadati personalizzati a una cartella.
 1. Passa alla cartella e carica alcune risorse con metadati mancanti per il campo obbligatorio aggiunto al modulo personalizzato. Nella vista a schede della risorsa viene visualizzato un messaggio per i metadati mancanti per il campo obbligatorio.
-1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configura e abilita il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disabilitato per impostazione predefinita. Imposta la frequenza con cui Experience Manager controlla la validità dei metadati delle risorse.
+1. (Facoltativo) Accesso `https://[server]:[port]/system/console/components/`. Configura e abilita il componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` disabilitato per impostazione predefinita. Imposta la frequenza con cui Experience Manager verifica la validità dei metadati delle risorse.
 
    Questa configurazione aggiunge una proprietà `hasValidMetadata` a `jcr:content` di risorse. Utilizzando questa proprietà, Experience Manager può filtrare i risultati in una ricerca.
 

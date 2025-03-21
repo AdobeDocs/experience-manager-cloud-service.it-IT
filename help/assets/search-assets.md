@@ -1,31 +1,65 @@
 ---
-title: Come si cercano le risorse in AEM?
+title: Come si eseguono ricerche nelle risorse in AEM?
 description: Scopri come cercare le risorse in AEM utilizzando il pannello Filtri e come utilizzare i risultati visualizzati nella ricerca delle risorse.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 6%
 
 ---
 
 # Cercare risorse in AEM {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
-
 [!DNL Adobe Experience Manager Assets] fornisce metodi affidabili per la ricerca delle risorse che consentono di velocizzare i contenuti. I team possono ridurre i tempi di lancio sul mercato con un’esperienza di ricerca delle risorse intelligente e fluida, utilizzando funzionalità pronte all’uso e metodi personalizzati. La funzionalità di ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia che venga utilizzato ulteriormente dai creativi, che le risorse vengano gestite in modo affidabile dagli utenti aziendali e dai professionisti del marketing o che venga amministrato dagli amministratori DAM. Ricerche semplici, avanzate e personalizzate che è possibile eseguire tramite l&#39;interfaccia utente di [!DNL Assets] o altre applicazioni e superfici consentono di soddisfare questi casi d&#39;uso.
 
-La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo descrive l’utilizzo, i concetti, le configurazioni, le limitazioni e la risoluzione dei problemi per tali casi d’uso.
+La ricerca delle risorse in AEM supporta i seguenti casi d’uso e descrive in questo articolo l’utilizzo, i concetti, le configurazioni, le limitazioni e la risoluzione dei problemi per tali casi d’uso.
 
 | Cerca risorse | Configurare e amministrare la funzionalità di ricerca | Utilizzare i risultati della ricerca delle risorse |
 |---|---|---|
@@ -35,7 +69,7 @@ La ricerca di risorse in AEM supporta i seguenti casi d’uso e questo articolo 
 | [Comprendere i risultati e il comportamento della ricerca](#searchbehavior) | [Modifica facet di ricerca](#searchfacets) | [Aggiornamenti in blocco dei metadati](#metadata-updates) |
 | [Ricerca classificazione e potenziamento](#searchrank) | [Predicati personalizzati](#custompredicates) | [Raccolte avanzate](#collections) |
 | [Ricerca avanzata: filtro e ambito della ricerca](#scope) | | [Comprendere e risolvere i problemi relativi ai risultati imprevisti](#unexpected-results) |
-| [Cerca in altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop di Experience Manager](#desktop-app)</li><li>[immagini Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Medie](#search-dynamic-media-assets)</li></ul> | | |
+| [Cerca in altre soluzioni e app](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[app desktop Experience Manager](#desktop-app)</li><li>[immagini Adobe Stock](#adobe-stock)</li><li>[Risorse Dynamic Media](#search-dynamic-media-assets)</li></ul> | | |
 | [Selettore risorse](#asset-picker) | | |
 | [Limitazioni](#limitations) e [Suggerimenti](#tips) | | |
 | [Esempi illustrati](#samples) | | |
@@ -88,13 +122,13 @@ A partire da agosto 2023, Experience Manager Assets include una nuova versione 9
 
 `damAssetLucene-9` modifica il comportamento del conteggio dei facet di Oak Query in modo da non valutare più il controllo degli accessi sui conteggi dei facet restituiti dall&#39;indice di ricerca sottostante. Ciò consente di ottenere tempi di risposta di ricerca più rapidi. Di conseguenza, agli utenti potrebbero essere presentati valori di conteggio dei facet, che includono risorse a cui non hanno accesso. Tali utenti non possono accedere, scaricare o leggere altri dettagli di tali risorse, inclusi i percorsi, né ottenere ulteriori informazioni su di esse.
 
-Per passare al comportamento precedente (modalità `statistical`), vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it) per creare una versione personalizzata dell&#39;indice `damAssetLucene-9`. L&#39;Adobe non consiglia di passare alla modalità `secure` a causa dell&#39;impatto sui tempi di risposta delle ricerche con set di risultati di grandi dimensioni.
+Per passare al comportamento precedente (modalità `statistical`), vedere [Ricerca e indicizzazione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it) per creare una versione personalizzata dell&#39;indice `damAssetLucene-9`. Adobe consiglia di non passare alla modalità `secure` a causa dell&#39;impatto sui tempi di risposta delle ricerche con set di risultati di grandi dimensioni.
 
 Per ulteriori informazioni sulle funzionalità dei facet di Oak, inclusa una descrizione dettagliata di queste modalità, consulta [Facet - Documentazione di Oak - Indice Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Suggerimenti per la ricerca durante la digitazione {#searchsuggestions}
 
-Quando si inizia a digitare una parola chiave, Experience Manager suggerisce le parole chiave o le frasi di ricerca possibili. I suggerimenti si basano sulle risorse di Experience Manager. Experience Manager indicizza tutti i campi di metadati per facilitare la ricerca. Per fornire suggerimenti di ricerca, il sistema utilizza i valori dei seguenti campi di metadati. Per fornire suggerimenti di ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
+Quando si inizia a digitare una parola chiave, Experience Manager suggerisce le possibili parole chiave o frasi di ricerca. I suggerimenti si basano sulle risorse di Experience Manager. Experience Manager indicizza tutti i campi di metadati per facilitare la ricerca. Per fornire suggerimenti di ricerca, il sistema utilizza i valori dei seguenti campi di metadati. Per fornire suggerimenti di ricerca, è consigliabile compilare i campi seguenti con le parole chiave appropriate:
 
 * Tag risorsa. (mappa su `jcr:content/metadata/cq:tags`)
 * Titolo risorsa. (mappa su `jcr:content/metadata/dc:title`)
@@ -196,7 +230,7 @@ Per trovare immagini visivamente simili a quelle selezionate dall’utente, fai 
 
 Dall&#39;interfaccia utente di [!DNL Experience Manager], gli utenti possono cercare [risorse Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e concedere in licenza le risorse richieste. Aggiungi `Location: Adobe Stock` nella barra di Omnisearch. Puoi anche utilizzare il pannello Filtri per trovare tutte le risorse con o senza licenza oppure cercare una risorsa specifica utilizzando il numero di file di Adobe Stock.
 
-### Risorse Dynamic Medie {#dmassets}
+### Risorse Dynamic Media {#dmassets}
 
 Per filtrare le immagini in base a Dynamic Media, dal pannello **[!UICONTROL Filtri]** seleziona **[!UICONTROL Dynamic Media]** > **[!UICONTROL Set]**. Filtra e visualizza le risorse come set di immagini, caroselli, set di file multimediali diversi e set 360 gradi.
 
@@ -243,7 +277,7 @@ Di seguito sono riportati alcuni esempi di formati di ricerca per query compless
 * Per visualizzare le risorse con valori di proprietà che iniziano con una stringa specifica (ad esempio, il titolo è Scott Reynolds): `title:Scott*`
 * Per visualizzare le risorse con valori di proprietà che terminano con una stringa specifica (ad esempio, il titolo è Scott Reynolds): `title:*Reynolds`
 * Per visualizzare le risorse con un valore di proprietà contenente una stringa specifica (ad esempio: title = Sala riunioni di Basilea): `title:*Meeting*`
-* Per visualizzare le risorse che contengono una stringa specifica e che hanno un valore di proprietà specifico (ad esempio: cerca un Adobe di stringa nelle risorse con title=John Doe): `*Adobe* title:"John Doe"`
+* Per visualizzare le risorse che contengono una stringa specifica e che hanno un valore di proprietà specifico (ad esempio: cerca la stringa Adobe nelle risorse con title=John Doe): `*Adobe* title:"John Doe"`
 
 ## Cerca risorse da altre offerte o interfacce [!DNL Experience Manager] {#search-assets-other-surfaces}
 
@@ -471,7 +505,7 @@ Con le risorse cercate in [!DNL Experience Manager] puoi effettuare le seguenti 
 
 Ordina i risultati della ricerca per individuare più rapidamente le risorse richieste. Puoi ordinare i risultati della ricerca nella vista a elenco e solo quando selezioni **[[!UICONTROL File]](#searchui)** dal pannello **[!UICONTROL Filtri]**. [!DNL Assets] utilizza l&#39;ordinamento lato server per ordinare rapidamente tutte le risorse (indipendentemente dal numero) all&#39;interno di una cartella o nei risultati di una query di ricerca. L’ordinamento lato server fornisce risultati più rapidi e precisi rispetto all’ordinamento lato client.
 
-Nella vista a elenco, puoi ordinare i risultati della ricerca così come puoi ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimension, Dimensione, Valutazione, Utilizzo, Data di creazione, Data di modifica, Data di pubblicazione, Flusso di lavoro ed Estrazione.
+Nella vista a elenco, puoi ordinare i risultati della ricerca così come puoi ordinare le risorse in qualsiasi cartella. L&#39;ordinamento funziona su queste colonne: Nome, Titolo, Stato, Dimensioni, Dimensione, Valutazione, Utilizzo, Data di creazione, Data di modifica, Data di pubblicazione, Flusso di lavoro ed Estrazione.
 
 Per limitazioni della funzionalità di ordinamento, vedi [limitazioni](#limitations).
 

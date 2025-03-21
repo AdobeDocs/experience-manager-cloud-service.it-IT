@@ -5,18 +5,55 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
 # Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
 Il Quickview predefinito viene utilizzato nelle esperienze di e-commerce, in cui viene visualizzato un pop-up con le informazioni di prodotto per stimolare un acquisto. Tuttavia, puoi attivare il contenuto personalizzato da visualizzare nei pop-up. A seconda del visualizzatore utilizzato, i clienti possono selezionare un hotspot, un&#39;immagine in miniatura o una mappa immagine per visualizzare informazioni o contenuti correlati.
 
-Quickview è supportato dai seguenti visualizzatori in Dynamic Medie:
+Quickview è supportato dai seguenti visualizzatori in Dynamic Media:
 
 * Immagini interattive (hotspot selezionabili)
 * Video interattivo (miniature selezionabili durante la riproduzione video)
@@ -155,7 +192,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    }
    ```
 
-   * Carica una pagina di test HTML in un server web e apri.
+   * Carica una pagina HTML di prova su un server web e apri.
 
      Le variabili di Quickview vengono mappate. La chiamata di funzione è attiva. E la console del browser scrive il valore della variabile nella console del browser. Questa operazione viene eseguita utilizzando la funzione di esempio fornita.
 
@@ -196,7 +233,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    </script>
    ```
 
-1. Carica una pagina di test HTML sul server web e apri. Il visualizzatore visualizza il popup `DIV` quando un utente richiama una visualizzazione rapida.
+1. Carica una pagina di prova di HTML sul server web e apri. Il visualizzatore visualizza il popup `DIV` quando un utente richiama una visualizzazione rapida.
 1. **Visualizzazione della finestra popup personalizzata in modalità a schermo intero**
 
    Alcuni visualizzatori, come il visualizzatore video interattivo, supportano la visualizzazione a schermo intero. Tuttavia, se si utilizza il pop-up come descritto nei passaggi precedenti, questo viene visualizzato dietro al visualizzatore in modalità a schermo intero.

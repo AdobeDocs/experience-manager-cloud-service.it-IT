@@ -1,19 +1,53 @@
 ---
-title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
+title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Esempi per personalizzare il selettore risorse in base alle esigenze.
 role: Admin, User
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 46%
+source-wordcount: '303'
+ht-degree: 52%
 
 ---
 
 # Esempi per utilizzare le proprietà del Selettore risorse {#usage-examples}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Puoi definire il selettore risorse [proprietà](/help/assets/asset-selector-properties.md) nel file **index.html** per personalizzare la visualizzazione del selettore risorse all&#39;interno dell&#39;applicazione.
 
@@ -55,7 +89,7 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 >[!MORELIKETHIS]
 >
->* [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
+>* [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
 >* [Caricamento selettore risorse](/help/assets/asset-selector-upload.md)
->* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
->* [Integrare Asset Selector con Dynamic Medie con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+>* [Integrare il Selettore risorse con Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

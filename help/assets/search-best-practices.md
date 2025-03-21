@@ -5,27 +5,58 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 2%
+source-wordcount: '2570'
+ht-degree: 3%
 
 ---
 
 # Best practice per la ricerca in AEM Assets
 
-| [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] fornisce metodi affidabili per la ricerca delle risorse che consentono di velocizzare i contenuti. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo. Pertanto, la funzionalità di ricerca delle risorse in [!DNL Adobe Experience Manager Assets] è fondamentale per l&#39;utilizzo di un sistema di gestione delle risorse digitali, sia per l&#39;ulteriore utilizzo da parte dei creativi, per la gestione affidabile delle risorse da parte degli utenti aziendali e degli addetti al marketing o per l&#39;amministrazione da parte degli amministratori DAM.
 
-Questo documento della Guida contiene le best practice per la ricerca dell’AEM con l’aiuto di vari scenari per aiutare gli utenti AEM a eseguire ricerche di base o avanzate.
+Questo documento della guida contiene le best practice per la ricerca di AEM con l’aiuto di vari scenari per aiutare gli utenti di AEM a eseguire ricerche di livello da semplice a avanzato.
 
-## Ricerca Experienci Manager di accesso {#access-experience-manager-search}
+## Accedere ad Experience Manager Search {#access-experience-manager-search}
 
 Di seguito sono riportati i passaggi di base da eseguire in Experience Manager prima di iniziare la ricerca:
 
-* Nella **visualizzazione Amministratore**, vai a Assets > File nell&#39;Experience Manager e fai clic sull&#39;icona di ricerca nella barra superiore. In alternativa, utilizza una barra (/) per aprire il campo Ricerca Omni.
+* Nella **visualizzazione Amministratore**, vai a Assets > File in Experience Manager e fai clic sull&#39;icona di ricerca nella barra superiore. In alternativa, utilizza una barra (/) per aprire il campo Ricerca Omni.
 Nella **visualizzazione Assets**, la barra di ricerca è visibile nella parte superiore ed è accessibile direttamente.
 * `Location:Assets` e `Path:/content/dam` sono preselezionati per limitare l&#39;ambito di ricerca all&#39;archivio Experience Manager Assets. Se ci si sposta in un&#39;altra cartella, `Path:/content/dam/<folder name>` viene visualizzato nel campo di ricerca Omni per limitare l&#39;ambito di ricerca alla cartella corrente.
 
@@ -41,7 +72,7 @@ I risultati della ricerca che corrispondono a tutti i termini di ricerca nei cam
 2. Corrisponde a `Classic Car` negli smart tag.
 3. Corrisponde a `Classic` o `Car` negli smart tag.
 
-Specificare `classic car` come parola chiave di ricerca e fare clic su Cerca. È possibile visualizzare i suggerimenti di ricerca in un elenco a discesa durante la digitazione della parola chiave. I suggerimenti di ricerca si basano sul contenuto dell’indice di ricerca della distribuzione dell’Experience Manager. Se non riesci a visualizzare le risorse appropriate nel menu a discesa, premi Invio per visualizzare l’elenco dei risultati. I risultati sono ordinati in base alla rilevanza, a partire dalle corrispondenze più vicine.
+Specificare `classic car` come parola chiave di ricerca e fare clic su Cerca. È possibile visualizzare i suggerimenti di ricerca in un elenco a discesa durante la digitazione della parola chiave. I suggerimenti di ricerca si basano sul contenuto dell’indice di ricerca della distribuzione di Experience Manager. Se non riesci a visualizzare le risorse appropriate nel menu a discesa, premi Invio per visualizzare l’elenco dei risultati. I risultati sono ordinati in base alla rilevanza, a partire dalle corrispondenze più vicine.
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
@@ -94,7 +125,7 @@ Se desideri essere specifico con i risultati della ricerca e desideri un’opzio
 
 ### Operatore NOT {#not-operator}
 
-Per recuperare i risultati escludendo alcune parole chiave, è possibile utilizzare l&#39;operatore NOT. L’operatore NOT utilizza il simbolo del trattino (-) per indirizzare la ricerca AEM a ciò che si desidera escludere dai risultati della ricerca. Ad esempio, la query di ricerca `car - classic` che specifica i metadati contenenti `car` ma esclude `classic`.
+Per recuperare i risultati escludendo alcune parole chiave, è possibile utilizzare l&#39;operatore NOT. L’operatore NOT utilizza il simbolo del trattino (-) per indirizzare la ricerca di AEM a ciò che si desidera escludere dai risultati della ricerca. Ad esempio, la query di ricerca `car - classic` che specifica i metadati contenenti `car` ma esclude `classic`.
 
 ![Cerca utilizzando l&#39;operatore NOT](assets/not-operator.png)
 
@@ -110,7 +141,7 @@ I caratteri jolly vengono utilizzati per sostituire uno o più caratteri nella r
 
 ### Punto interrogativo (?) {#question-mark}
 
-Il simbolo del punto interrogativo può essere utilizzato come operatore condizionale per semplificare la ricerca in Experience Manager.
+Il simbolo del punto interrogativo può essere utilizzato come operatore condizionale per facilitare la ricerca in Experience Manager.
 
 * La query `car?` corrisponde alla parola con un carattere dopo l&#39;auto. Ad esempio, il carrello.
 * La query `?car` corrisponde alla parola con un carattere prima dell&#39;auto. Ad esempio, cicatrice.
@@ -160,14 +191,14 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Scenario 4: cercare i documenti di tipo file PDF non pubblicati contenenti la parola chiave `classic car`.**
+**Scenario 4: cercare i documenti di tipo file di PDF non pubblicati contenenti la parola chiave `classic car`.**
 
 Eseguire i seguenti passaggi in **[!UICONTROL Visualizzazione amministratore]**:
 
 1. Digitare `classic car` nella barra di ricerca.
 1. Vai a Filtri. In [!UICONTROL Tipo file], espandere [!UICONTROL Documenti], quindi [!UICONTROL Elaborazione testi].
 1. Seleziona [!UICONTROL PDF].
-1. Vai a [!UICONTROL Stato] > [!UICONTROL Publish] > [!UICONTROL Non pubblicato].
+1. Vai a [!UICONTROL Stato] > [!UICONTROL Pubblica] > [!UICONTROL Non pubblicato].
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -196,9 +227,9 @@ Per eseguire ricerche nelle risorse utilizzando lo scenario indicato in **[!UICO
 
 ## Ricerca avanzata {#advanced-search}
 
-La ricerca AEM consente di creare query di ricerca complesse con meno sforzo. Di seguito sono riportati vari esempi per facilitare la creazione di query di ricerca complesse:
+La funzione di ricerca di AEM consente di creare query di ricerca complesse con meno sforzo. Di seguito sono riportati vari esempi per facilitare la creazione di query di ricerca complesse:
 
-**Scenario 6: cercare tutti i documenti nel repository di Experienci Manager con `classic car` nei relativi metadati. Il contenuto del documento deve contenere `classic car` parola chiave.**
+**Scenario 6: cercare tutti i documenti nell&#39;archivio Experience Manager con `classic car` nei relativi metadati. Il contenuto del documento deve contenere `classic car` parola chiave.**
 
 Adobe Experience Manager consente di aggiungere più criteri alla ricerca. È possibile utilizzare una combinazione di parole chiave, operatori e filtri per limitare i risultati della ricerca.
 
@@ -252,7 +283,7 @@ La ricerca visualizza risultati simili se si lavora anche nella **[!UICONTROL vi
 
 **Scenario 9: trova una corrispondenza simile per un&#39;auto di colore rosso**
 
-Durante la ricerca in base all’AEM, puoi filtrare i risultati mostrando risorse simili a quelle selezionate. Puoi usare l&#39;opzione **Trova simili** per limitare la ricerca alla corrispondenza esatta o simile della risorsa cercata. In questo modo è possibile trovare risorse con tag avanzati simili a quelli della risorsa selezionata. Ad esempio, per cercare risorse simili, effettua le seguenti operazioni:
+Durante la ricerca su AEM, puoi filtrare i risultati mostrando risorse simili a quelle selezionate. Puoi usare l&#39;opzione **Trova simili** per limitare la ricerca alla corrispondenza esatta o simile della risorsa cercata. In questo modo è possibile trovare risorse con tag avanzati simili a quelli della risorsa selezionata. Ad esempio, per cercare risorse simili, effettua le seguenti operazioni:
 
 1. Cerca la risorsa in base alle tue esigenze.
 1. Passa il puntatore del mouse sulla risorsa > fai clic sui puntini di sospensione > seleziona [!UICONTROL Trova simile].

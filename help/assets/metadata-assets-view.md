@@ -5,17 +5,51 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 82%
+source-wordcount: '1932'
+ht-degree: 85%
 
 ---
 
 # Metadati in Visualizza Risorse {#metadata}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 Con metadati si intendono i dati o la descrizione dei dati. Ad esempio, le immagini come risorsa possono contenere informazioni sulla fotocamera con cui sono state scattate o su eventuale copyright. Queste informazioni sono metadati dell’immagine. I metadati sono fondamentali per una gestione efficiente delle risorse. I metadati raccolgono tutti i dati disponibili per una risorsa, ma non sono necessariamente contenuti in essa.
 
@@ -82,7 +116,7 @@ La vista Assets utilizza la seguente sequenza per cercare i nomi dei moduli di m
 
 Sottotipo MIME > Tipo MIME > Modulo `default` > Modulo fornito con il prodotto
 
-Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se non esiste un modulo di metadati denominato `PDF` o `pdf`, la visualizzazione di Assets corrisponde a quella del modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la visualizzazione Assets non trova un modulo di metadati corrispondente, cerca il modulo di metadati `default` per applicare ai documenti di PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Assets applica a tutti i documenti di PDF caricati i campi di metadati definiti nel modulo fornito con il prodotto.
+Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se non esiste un modulo di metadati denominato `PDF` o `pdf`, la visualizzazione di Assets corrisponde a quella del modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la visualizzazione Assets non trova un modulo di metadati corrispondente, cerca il modulo di metadati `default` per applicare ai documenti PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Assets applica a tutti i documenti PDF caricati i campi di metadati definiti nel modulo fornito con il prodotto.
 Tuttavia, se desideri assegnare un modulo di metadati a una cartella [vedi](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
@@ -171,17 +205,17 @@ Per rimuovere un modulo di metadati da una cartella:
 
 Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo di metadati mappato dal sistema]** dal campo **[!UICONTROL Moduli di metadati]**, per rimuovere il modulo di metadati assegnato da una cartella.
 
-### Utilizzo del componente Collegamento nel modulo metadati {#link-component-metadata-form}
+### Utilizzare il componente Collegamento nel modulo di metadati {#link-component-metadata-form}
 
-Il componente collegamento viene utilizzato per abilitare URL esterni, inclusi collegamenti di archiviazione, informazioni sul copyright, moduli di contatto e così via. Per utilizzare il componente Collega nel modulo metadati, devi [configurare il modulo metadati](#metadata-forms).
+Il componente Collegamento viene utilizzato per abilitare URL esterni, tra cui link di archiviazione, informazioni sul copyright, moduli di contatto e così via. Per utilizzare il componente Collega nel modulo metadati, devi [configurare il modulo metadati](#metadata-forms).
 
 Per utilizzare il componente Collega nel modulo metadati, segui i passaggi seguenti:
 
-1. Vai alla pagina dei dettagli della risorsa e passa a **[!UICONTROL URL collegamento]**.
-1. Aggiungi un URL da utilizzare per reindirizzare la risorsa selezionata.
-1. Fare clic su **[!UICONTROL Aggiungi collegamento]**. Eseguire una delle azioni seguenti:
-   * Fai clic sull&#39;![icona Copia](assets/do-not-localize/copy.svg) per copiare l&#39;URL.
-   * Fai clic su ![icona Modifica](assets/do-not-localize/edit.svg) per modificare l&#39;URL.
+1. Passa alla pagina dei dettagli della risorsa, quindi a **[!UICONTROL URL collegamento]**.
+1. Aggiungi un URL da utilizzare per il reindirizzamento della risorsa selezionata.
+1. Fai clic su **[!UICONTROL Aggiungi collegamento]**. Effettua una delle seguenti operazioni:
+   * Fai clic su ![icona copia](assets/do-not-localize/copy.svg) per copiare l’URL.
+   * Fai clic su ![icona modifica](assets/do-not-localize/edit.svg) per modificare l’URL.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
 ## Passaggi successivi {#next-steps}

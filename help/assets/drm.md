@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 6%
+source-wordcount: '1414'
+ht-degree: 7%
 
 ---
 
 # Digital Rights Management per risorse digitali {#digital-rights-management-in-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -57,7 +91,7 @@ Quando scegli l&#39;opzione **[!UICONTROL Scaduto]**, nella console [!DNL Assets
 
 Inoltre, se un errore impedisce al modulo di pianificazione di rilevare le risorse scadute nel ciclo corrente, il modulo di pianificazione le esamina nuovamente nel ciclo successivo e ne rileva lo stato di scadenza.
 
-Per abilitare la console [!DNL Assets] per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura il flusso di lavoro **[!UICONTROL Adobe CQ DAM Expiry Notification]** in [!DNL Experience Manager]. Il modulo di pianificazione basato sul tempo pianifica un processo per verificare in un momento specifico se una risorsa è scaduta o meno. Al termine del processo, le risorse con risorse secondarie scadute e le risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
+Per abilitare la console [!DNL Assets] per visualizzare le risorse composte di riferimento insieme alle risorse secondarie scadute, configura **[!UICONTROL il flusso di lavoro Adobe CQ DAM Expiry Notification]** in [!DNL Experience Manager]. Il modulo di pianificazione basato sul tempo pianifica un processo per verificare in un momento specifico se una risorsa è scaduta o meno. Al termine del processo, le risorse con risorse secondarie scadute e le risorse di riferimento vengono visualizzate come scadute nei risultati della ricerca.
 
 1. Accedi all&#39;archivio Git [!DNL Cloud Manager] associato al tuo ambiente.
 1. Eseguire il commit di un file denominato `com.day.cq.dam.core.impl.ExpiryNotificationJobImpl.cfg.json` nell&#39;archivio con il contenuto seguente.
@@ -97,9 +131,9 @@ La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda 
 
 1. Nell&#39;interfaccia utente [!DNL Assets], seleziona una risorsa.
 
-1. Seleziona **[!UICONTROL Publish]** nella barra degli strumenti. Se nella barra degli strumenti non è visualizzata l&#39;opzione [!UICONTROL Publish], fare clic su **[!UICONTROL Altro]** e individuare l&#39;opzione **[!UICONTROL Publish]**.
+1. Seleziona **[!UICONTROL Pubblica]** nella barra degli strumenti. Se l&#39;opzione [!UICONTROL Pubblica] non è visualizzata nella barra degli strumenti, fare clic su **[!UICONTROL Altro]** sulla barra degli strumenti e individuare l&#39;opzione **[!UICONTROL Pubblica]**.
 
-1. Scegliere **[!UICONTROL Publish]** dal menu, quindi chiudere la finestra di dialogo di conferma.
+1. Scegliere **[!UICONTROL Pubblica]** dal menu, quindi chiudere la finestra di dialogo di conferma.
 
 1. Esci dalla modalità di selezione. Lo stato di pubblicazione della risorsa viene visualizzato nella parte inferiore della miniatura nella vista a schede. Nella vista a elenco, la colonna Pubblicato mostra l’ora in cui la risorsa è stata pubblicata.
 
@@ -121,7 +155,7 @@ La console [!DNL Assets] può visualizzare vari stati per le risorse. A seconda 
 
 1. Selezionare `Return` e fare clic su [!DNL Experience Manager].
 
-1. Nel pannello di ricerca, fai clic su **[!UICONTROL Stato Publish]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
+1. Nel pannello di ricerca, fai clic su **[!UICONTROL Stato pubblicazione]** e seleziona **[!UICONTROL Pubblicato]** per cercare le risorse pubblicate in [!DNL Assets].
 
 1. Per cercare le risorse approvate o rifiutate, selezionare **[!UICONTROL Stato approvazione]** e selezionare l&#39;opzione appropriata.
 
@@ -144,7 +178,7 @@ Un bene è considerato protetto se è soddisfatta una delle seguenti condizioni:
 
 >[!NOTE]
 >
->Il percorso `/etc/dam/drm/licences` è stato utilizzato per archiviare le licenze nelle versioni precedenti di [!DNL Experience Manager]. La posizione è ora obsoleta. Se si creano o si modificano le pagine delle licenze o si porta le pagine da [!DNL Experience Manager] versioni precedenti, l&#39;Adobe consiglia di memorizzare tali risorse in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` posizioni.
+>Il percorso `/etc/dam/drm/licences` è stato utilizzato per archiviare le licenze nelle versioni precedenti di [!DNL Experience Manager]. La posizione è ora obsoleta. Se si creano o si modificano le pagine delle licenze o si porta le pagine da [!DNL Experience Manager] versioni precedenti, Adobe consiglia di memorizzare tali risorse in `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses` posizioni.
 
 ### Scaricare risorse protette da DRM {#downloading-drm-assets}
 

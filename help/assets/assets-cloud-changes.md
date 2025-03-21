@@ -4,19 +4,53 @@ description: Modifiche di rilievo apportate a  [!DNL Adobe Experience Manager As
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1052'
 ht-degree: 10%
 
 ---
 
 # Modifiche di rilievo apportate a [!DNL Experience Manager Assets] come [!DNL Cloud Service] {#notable-changes}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] offre molte nuove funzionalità e possibilità per gestire i tuoi progetti di Experience Manager. Esistono molte differenze tra [!DNL Experience Manager Assets] on-premise o ospitato come Adobe Managed Service e [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità di [!DNL Assets].
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] offre molte nuove funzionalità e possibilità per gestire i tuoi progetti Experience Manager. Esistono molte differenze tra [!DNL Experience Manager Assets] on-premise o ospitato come Adobe Managed Service e [!DNL Experience Manager] come [!DNL Cloud Service]. Questo articolo evidenzia le differenze importanti per le funzionalità di [!DNL Assets].
 
 Le principali differenze rispetto a [!DNL Experience Manager] 6.5 riguardano le seguenti aree:
 
@@ -36,7 +70,7 @@ Il caricamento delle risorse è ottimizzato per migliorarne l’efficienza, in q
    * Consulta [configurare e utilizzare i microservizi per le risorse](/help/assets/asset-microservices-configure-and-use.md)
    * Per personalizzare i passaggi del flusso di lavoro nell&#39;elaborazione, è possibile utilizzare [flussi di lavoro di post-elaborazione](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
 
-* I componenti del sito web che forniscono un file binario senza alcuna trasformazione possono utilizzare il download diretto. Il servlet di GET Sling viene aggiornato per abilitare questa funzionalità per impostazione predefinita. I componenti del sito web che forniscono un binario con una certa trasformazione (ad esempio, ridimensionalo tramite un servlet) possono continuare a funzionare nello stato attuale.
+* I componenti del sito web che forniscono un file binario senza alcuna trasformazione possono utilizzare il download diretto. Per impostazione predefinita, il servlet GET di Sling viene aggiornato per abilitare questa funzionalità. I componenti del sito web che forniscono un binario con una certa trasformazione (ad esempio, ridimensionalo tramite un servlet) possono continuare a funzionare nello stato attuale.
 
 Le rappresentazioni standard generate con i microservizi per le risorse vengono memorizzate in modo compatibile con le versioni precedenti nei nodi dell’archivio delle risorse utilizzando le stesse convenzioni di denominazione.
 
@@ -55,12 +89,12 @@ Per eseguire una convalida end-to-end del codice e del processo, inclusa l&#39;a
 | Funzionalità o caso d’uso | Stato in [!DNL Experience Manager] come [!DNL Cloud Service] | Commenti |
 |-----|-----|-----|
 | [Rilevamento risorsa duplicato](/help/assets/detect-duplicate-assets.md) | Questo funziona diversamente | Vedi [come funzionava in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
-| [Rappresentazioni solo posizionamento](/help/assets/configure-fpo-renditions.md) | Questo funziona diversamente | I profili di elaborazione utilizzano i microservizi delle risorse per generare rappresentazioni FPO. Nell&#39;Experience Manager 6.5, era disponibile una soluzione di terze parti come [!DNL ImageMagick] per generare le rappresentazioni. |
+| [Rappresentazioni solo posizionamento](/help/assets/configure-fpo-renditions.md) | Questo funziona diversamente | I profili di elaborazione utilizzano i microservizi delle risorse per generare rappresentazioni FPO. In Experience Manager 6.5, era disponibile una soluzione di terze parti come [!DNL ImageMagick] per generare le rappresentazioni. |
 | Writeback di metadati | Questo funziona diversamente | Disabilitata per impostazione predefinita. Se necessario, abilita il modulo di avvio del flusso di lavoro corrispondente. I microservizi per le risorse gestiscono il writeback. |
 | Elaborazione delle risorse caricate tramite Gestione pacchetti | Questo richiede un intervento manuale | Rielabora manualmente utilizzando l&#39;azione **[!UICONTROL Rielabora risorsa]**. |
 | Rilevamento tipo MIME | Non supportato. | Se carichi una risorsa digitale senza un’estensione o con un’estensione non corretta, questa potrebbe non essere elaborata come desiderato. Gli utenti possono comunque memorizzare i file binari senza un’estensione in DAM. Vedi [Rilevamento del tipo MIME in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
 | Generazione di risorse secondarie per risorse composte | Non supportato. | I casi d’uso dipendenti come le annotazioni potrebbero non essere soddisfatti. Consulta [creazione di risorse secondarie in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). L&#39;anteprima PDF di alcuni tipi di file è disponibile a partire dalla versione [2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Modificare le immagini | Non supportato | La modifica delle risorse non è supportata in Experience Manager as a Cloud Service. Vedi [come funzionava nell&#39;Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
+| Modificare le immagini | Non supportato | La modifica delle risorse non è supportata in Experience Manager as a Cloud Service. Consulta [Funzionamento in Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
 | Home page | Non supportato | Consulta [[!DNL Assets] Esperienza pagina iniziale in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) |
 | Estrai risorse dall’archivio ZIP | Non supportato | Vedi [Estrazione ZIP in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
 | Valutazioni Assets | Non supportato | Il widget di valutazione nell’editor schema metadati non è supportato. |

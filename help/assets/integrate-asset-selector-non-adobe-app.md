@@ -1,25 +1,59 @@
 ---
-title: Selettore risorse per [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service]
-description: Integra il selettore delle risorse con varie applicazioni di Adobe, non di Adobe e di terze parti.
+title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 6%
+source-wordcount: '470'
+ht-degree: 13%
 
 ---
 
 # Integrazione con un’applicazione non Adobe {#integrate-asset-selector-non-adobe-app}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-Asset Selector consente di integrare utilizzando diverse applicazioni non di Adobe o di terze parti per consentire loro di lavorare insieme senza problemi.
+Asset Selector consente di integrare utilizzando varie applicazioni non Adobe o di terze parti per consentire loro di lavorare insieme senza problemi.
 
 ## Prerequisiti {#prereqs-non-adobe-app}
 
-Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguenti prerequisiti:
+Se integri Asset Selector con un’applicazione non Adobe, utilizza i seguenti prerequisiti:
 
 * [Metodi di comunicazione](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
@@ -30,9 +64,9 @@ Se integri Asset Selector con un’applicazione non di Adobe, utilizza i seguent
 
 Asset Selector supporta l&#39;autenticazione nell&#39;archivio [!DNL Experience Manager Assets] tramite le proprietà di Identity Management System (IMS), ad esempio `imsScope` o `imsClientID`, durante l&#39;integrazione con un&#39;applicazione non Adobe.
 
-## Configurare il selettore risorse per un’applicazione non di Adobe {#configure-non-adobe-app}
+## Configurare il selettore risorse per un’applicazione non Adobe {#configure-non-adobe-app}
 
-Per configurare Asset Selector per un’applicazione non di Adobe, devi innanzitutto registrare un ticket di supporto per il provisioning, seguito dai passaggi di integrazione.
+Per configurare Asset Selector per un’applicazione non Adobe, devi innanzitutto registrare un ticket di supporto per il provisioning, seguito dai passaggi di integrazione.
 
 ### Registrazione di un ticket di supporto {#log-a-support-ticket}
 
@@ -47,7 +81,7 @@ Passaggi per registrare un ticket di assistenza tramite Admin Console:
 
 ## Passaggi dell’integrazione {#non-adobe-app-integration-steps}
 
-Utilizzare questo file di esempio `index.html` per l&#39;autenticazione durante l&#39;integrazione di Asset Selector con un&#39;applicazione non di Adobe.
+Utilizza questo file di esempio `index.html` per l&#39;autenticazione durante l&#39;integrazione di Asset Selector con un&#39;applicazione non Adobe.
 
 Accedere al pacchetto Asset Selector utilizzando il tag `Script`, come illustrato nella *riga 9* alla *riga 11* del file `index.html` di esempio.
 
@@ -55,7 +89,7 @@ Accedere al pacchetto Asset Selector utilizzando il tag `Script`, come illustrat
 
 Poiché non è stato generato alcun `imsToken`, utilizzare le funzioni `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow`, come mostrato nella riga 40 alla riga 50 del file `index.html` di esempio. Utilizzare la funzione `registerAssetsSelectorsAuthService` prima di `renderAssetSelectorWithAuthFlow` per registrare `imsToken` con il selettore risorse. [!DNL Adobe] consiglia di chiamare `registerAssetsSelectorsAuthService` quando si crea un&#39;istanza del componente.
 
-Definisci l&#39;autenticazione e altre proprietà relative all&#39;accesso as a Cloud Service di Assets nella sezione `const props`, come mostrato nella *riga 54* alla *riga 60* del file `index.html` di esempio.
+Definisci l&#39;autenticazione e altre proprietà relative all&#39;accesso ad Assets as a Cloud Service nella sezione `const props`, come mostrato nella *riga 54* alla *riga 60* del file di esempio `index.html`.
 
 La variabile globale `PureJSSelectors`, menzionata nella *riga 65*, viene utilizzata per eseguire il rendering del selettore risorse nel browser Web.
 
@@ -146,7 +180,7 @@ Il rendering del selettore risorse viene eseguito sull&#39;elemento contenitore 
 
 >[!MORELIKETHIS]
 >
->* [Integrare Asset Selector con varie applicazioni](/help/assets/integrate-asset-selector.md)
->* [Proprietà selettore risorse](/help/assets/asset-selector-properties.md)
->* [Integrare Asset Selector con Dynamic Medie con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Personalizzazioni di Asset Selector](/help/assets/asset-selector-customization.md)
+>* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
+>* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+>* [Integrare il Selettore risorse con Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)

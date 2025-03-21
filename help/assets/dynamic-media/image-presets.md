@@ -1,18 +1,55 @@
 ---
 title: Applicare predefiniti per le immagini Dynamic Media
-description: Scopri come applicare i predefiniti per immagini in Dynamic Medie.
+description: Scopri come applicare i predefiniti per immagini in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 6%
+source-wordcount: '349'
+ht-degree: 10%
 
 ---
 
 # Applicare predefiniti per le immagini Dynamic Media {#applying-image-presets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 I predefiniti per immagini consentono alle risorse di distribuire dinamicamente immagini di diverse dimensioni, in formati diversi o con altre proprietà dell’immagine generate dinamicamente. Potete scegliere un predefinito quando esportate per riformattare le immagini in base alle specifiche definite dall&#39;amministratore.
 
@@ -26,7 +63,7 @@ Inoltre, puoi scegliere un predefinito immagine reattivo (indicato dal pulsante 
 
 Potete applicare un predefinito immagine a un&#39;immagine in qualsiasi momento.
 
-**Per applicare i predefiniti immagine Dynamic Medie:**
+**Per applicare i predefiniti immagine Dynamic Media:**
 
 1. Apri la risorsa e seleziona l&#39;elenco a discesa nella barra a sinistra, quindi seleziona **[!UICONTROL Rappresentazioni]**.
 
@@ -47,4 +84,4 @@ Potete applicare un predefinito immagine a un&#39;immagine in qualsiasi momento.
    >
    >Se la risorsa *e* il predefinito immagine non è ancora stato pubblicato, il pulsante **[!UICONTROL URL]** (o URL e RESS, se applicabile) non è disponibile.
    >
-   >Inoltre, i predefiniti per immagini vengono pubblicati automaticamente su un server Dynamic Medie S7.
+   >Inoltre, i predefiniti per immagini vengono pubblicati automaticamente su un server Dynamic Media S7.

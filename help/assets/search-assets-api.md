@@ -3,27 +3,61 @@ title: Cerca API di Assets
 description: Scopri come utilizzare l’API Search Assets.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 3%
+source-wordcount: '530'
+ht-degree: 9%
 
 ---
 
 # Cerca API di Assets {#search-assets-api}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->La guida alle funzionalità di Dynamic Media con OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza Adobe Acrobat AI Assistant per rispondere alle tue domande.
+>La guida di Dynamic Media con funzionalità OpenAPI è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
->[!BADGE Guida di Dynamic Media con funzionalità OpenAPI PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guida di Dynamic Media con funzionalità OpenAPI - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Tutte le [risorse approvate](approve-assets.md) disponibili nell&#39;archivio Experience Manager Assets possono essere cercate e quindi consegnate alle applicazioni downstream integrate utilizzando un URL di consegna.
+Tutte le [risorse approvate](approve-assets.md) disponibili nell&#39;archivio delle risorse di Experience Manager possono essere cercate e quindi consegnate alle applicazioni a valle integrate utilizzando un URL di consegna.
 
-La ricerca delle risorse approvate corrette dall’archivio Experience Manager è il primo passo per consegnare le risorse utilizzando l’URL di consegna. La risposta alla richiesta di ricerca comprende un array di documenti JSON corrispondenti alle risorse che soddisfano i criteri di ricerca. Ogni documento JSON viene identificato utilizzando un campo `id`, utilizzato per comporre la richiesta di consegna della risorsa.
+La ricerca delle risorse approvate corrette dall’archivio di Experience Manager è il primo passo per consegnare le risorse utilizzando l’URL di consegna. La risposta alla richiesta di ricerca comprende un array di documenti JSON corrispondenti alle risorse che soddisfano i criteri di ricerca. Ogni documento JSON viene identificato utilizzando un campo `id`, utilizzato per comporre la richiesta di consegna della risorsa.
 
 ![Panoramica del protocollo di caricamento binario diretto](assets/search-assets-api-overview.png)
 

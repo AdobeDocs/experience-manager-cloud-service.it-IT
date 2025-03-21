@@ -4,17 +4,51 @@ description: Aggiungi le tue risorse digitali a  [!DNL Adobe Experience Manager]
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
-ht-degree: 9%
+source-wordcount: '3190'
+ht-degree: 10%
 
 ---
 
 # Aggiungi risorse digitali a [!DNL Adobe Experience Manager] come [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] accetta molti tipi di risorse digitali da diverse origini. Memorizza i binari e le rappresentazioni create, può eseguire l&#39;elaborazione delle risorse utilizzando vari flussi di lavoro e servizi [!DNL Adobe Sensei], consente la distribuzione attraverso molti canali su molte superfici.
 
@@ -26,14 +60,14 @@ Anche se è possibile caricare e gestire qualsiasi file binario in [!DNL Experie
 
 Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse caricate. Sulla cartella è possibile configurare diversi profili di elaborazione delle risorse, in cui vengono caricate le risorse, per aggiungere metadati specifici, rappresentazioni o servizi di elaborazione delle immagini. Consulta [Elabora risorse al momento del caricamento](#process-when-uploaded).
 
-[!DNL Assets] forniscono i seguenti metodi di caricamento. L’Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
+[!DNL Assets] forniscono i seguenti metodi di caricamento. Adobe consiglia di comprendere il caso d’uso e l’applicabilità di un’opzione di caricamento prima di utilizzarla.
 
 | Metodo di caricamento | Quando utilizzare? | Persona primaria |
 |---------------------|----------------|-----------------|
 | [Interfaccia utente della console Assets](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del mirino. Non utilizzare per caricare più risorse. | Tutti gli utenti |
 | [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Sviluppatore |
 | [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Acquisizione di risorse di volume ridotto, ma non per la migrazione. | Amministratore, addetto marketing |
-| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Utile quando creativi e addetti al marketing lavorano su risorse dalle app desktop [!DNL Creative Cloud] supportate. | Creativo, addetto marketing |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Utile quando creativi e addetti al marketing lavorano su risorse dalle app desktop [!DNL Creative Cloud] supportate. | Creative, addetto marketing |
 | [Acquisizione in blocco risorse](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e acquisizioni in blocco occasionali. Solo per gli archivi dati supportati. | Amministratore, sviluppatore |
 
 ## Caricare le risorse {#upload-assets}
@@ -65,9 +99,9 @@ Per caricare uno o più file, selezionali sul desktop e trascinali sull&#39;inte
 
 >[!IMPORTANT]
 >
->Assets caricato in Experience Manager con un nome file superiore a 100 caratteri ha un nome abbreviato quando viene utilizzato in Dynamic Medie.
+>Gli Assets caricati in Experience Manager con un nome file superiore a 100 caratteri hanno un nome abbreviato quando vengono utilizzati in Dynamic Media.
 >
->I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Medie. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Medie.
+>I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
 
 
 1. Nell&#39;interfaccia utente di [!DNL Assets], passa alla posizione in cui desideri aggiungere risorse digitali.
@@ -153,7 +187,7 @@ Lo strumento viene fornito solo al gruppo di amministratori da utilizzare per l�
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-L’immagine seguente illustra le varie fasi di acquisizione delle risorse da Experience Manager da un archivio dati:
+L’immagine seguente illustra le varie fasi di acquisizione delle risorse in Experience Manager da un archivio dati:
 
 ![Strumento di acquisizione in blocco](assets/bulk-ingestion.png)
 
@@ -218,13 +252,13 @@ Seleziona la configurazione e fai clic su **[!UICONTROL Elimina]** per eliminare
 
 ### Convalidare la connessione all’origine dati {#validate-connection}
 
-Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL check]**. Se la connessione ha esito positivo, nell’Experience Manager viene visualizzato il seguente messaggio:
+Per convalidare la connessione all&#39;origine dati, selezionare la configurazione e quindi fare clic su **[!UICONTROL check]**. Se la connessione ha esito positivo, Experience Manager visualizza il seguente messaggio:
 
 ![Messaggio di completamento importazione in blocco](assets/bulk-import-success-message.png)
 
 ### Richiama un’esecuzione dei test per il processo di importazione in blocco {#invoke-test-run-bulk-import}
 
-Selezionare la configurazione e fare clic su **[!UICONTROL Esegui prova]** per richiamare un&#39;esecuzione dei test per il processo di importazione in blocco. In Experience Manager vengono visualizzati i dettagli seguenti sul processo di importazione in blocco:
+Selezionare la configurazione e fare clic su **[!UICONTROL Esegui prova]** per richiamare un&#39;esecuzione dei test per il processo di importazione in blocco. Experience Manager mostra i seguenti dettagli sul processo di importazione in blocco:
 
 ![Risultato esecuzione di prova](assets/dry-assets-result.png)
 
@@ -335,7 +369,7 @@ Dopo la [configurazione dello strumento Importazione in blocco](#configure-bulk-
 
 Per avviare il processo di importazione in blocco, passare a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Importazione in blocco]**, selezionare la [Configurazione importazione in blocco](#configure-bulk-ingestor-tool), quindi fare clic su **[!UICONTROL Esegui]**. Fai di nuovo clic su **[!UICONTROL Esegui]** per confermare.
 
-L&#39;Experience Manager aggiorna lo stato del processo a **Elaborazione** e a **Completata** al completamento del processo. Per visualizzare le risorse importate in Experience Manager, fai clic su **Visualizza Assets**.
+Experience Manager aggiorna lo stato del processo a **Elaborazione** e a **Completata** al completamento del processo. Per visualizzare le risorse importate in Experience Manager, fai clic su **Visualizza Assets**.
 
 Quando il processo è in corso, puoi anche selezionare la configurazione e fare clic su **Interrompi** per interrompere il processo di acquisizione in blocco. Fai di nuovo clic su **Esegui** per riprendere il processo. È inoltre possibile fare clic su **Dry Run** per conoscere i dettagli delle risorse ancora in attesa di importazione.
 
@@ -347,7 +381,7 @@ Per accedere alla cronologia dei processi per una configurazione, selezionare la
 
 ![Pianifica processo di acquisizione in blocco](assets/job-history-bulk-import.png)
 
-In Experience Manager viene visualizzata la cronologia del processo. Nella pagina della cronologia dei processi di importazione in blocco è inoltre possibile fare clic su **Elimina** per eliminare il processo per la configurazione dell&#39;importazione in blocco.
+In Experience Manager viene visualizzata la cronologia dei processi. Nella pagina della cronologia dei processi di importazione in blocco è inoltre possibile fare clic su **Elimina** per eliminare il processo per la configurazione dell&#39;importazione in blocco.
 
 
 ## Caricare risorse tramite client desktop {#upload-assets-desktop-clients}
@@ -381,13 +415,13 @@ Per le cartelle a cui è assegnato un profilo di elaborazione, il nome del profi
 
 ## Caricare o acquisire risorse tramite API {#upload-using-apis}
 
-I dettagli tecnici delle API di caricamento e del protocollo, nonché i collegamenti all&#39;SDK open-source e ai client di esempio sono forniti nella sezione [asset upload](developer-reference-material-apis.md#asset-upload) della documentazione per sviluppatori.
+I dettagli tecnici delle API di caricamento e del protocollo, nonché i collegamenti a client open-source SDK e di esempio sono forniti nella sezione [asset upload](developer-reference-material-apis.md#asset-upload) della documentazione per sviluppatori.
 
 ## Suggerimenti, best practice e limitazioni {#tips-limitations}
 
 * Il caricamento binario diretto è un nuovo metodo per caricare le risorse. È supportato per impostazione predefinita dalle funzionalità del prodotto e dai client, come l&#39;interfaccia utente [!DNL Experience Manager], [!DNL Adobe Asset Link] e l&#39;app desktop [!DNL Experience Manager]. Qualsiasi codice personalizzato personalizzato o esteso dai team tecnici del cliente deve utilizzare le nuove API e i nuovi protocolli di caricamento.
 
-* L&#39;Adobe consiglia di aggiungere non più di 1000 risorse in ogni cartella in [!DNL Experience Manager Assets]. Se provi a farlo, potresti ricevere un messaggio di avviso che dice: &quot;Questa directory contiene più di 1000 elementi. I caricamenti e le creazioni di nuove cartelle potrebbero subire ritardi.&quot; Anche se è comunque possibile aggiungere più risorse a una cartella, si potrebbero riscontrare problemi di prestazioni come una navigazione più lenta in tali cartelle.
+* Adobe consiglia di aggiungere non più di 1000 risorse in ogni cartella in [!DNL Experience Manager Assets]. Se provi a farlo, potresti ricevere un messaggio di avviso che dice: &quot;Questa directory contiene più di 1000 elementi. I caricamenti e le creazioni di nuove cartelle potrebbero subire ritardi.&quot; Anche se è comunque possibile aggiungere più risorse a una cartella, si potrebbero riscontrare problemi di prestazioni come una navigazione più lenta in tali cartelle.
 
 * Quando selezioni **[!UICONTROL Sostituisci]** nella finestra di dialogo [!UICONTROL Conflitto nome], l&#39;ID della risorsa viene rigenerato per la nuova risorsa. Questo ID è diverso da quello della risorsa precedente. Se [Assets Insights](/help/assets/assets-insights.md) è abilitato per monitorare impression o clic con [!DNL Adobe Analytics], l&#39;ID risorsa rigenerato invalida i dati acquisiti per la risorsa in [!DNL Analytics].
 

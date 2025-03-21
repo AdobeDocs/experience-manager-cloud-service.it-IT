@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1984'
 ht-degree: 8%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] casi d&#39;uso per sviluppatori, API e materiale di riferimento {#assets-cloud-service-apis}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli sviluppatori di [!DNL Assets] come [!DNL Cloud Service]. Include un nuovo modulo di caricamento delle risorse, un riferimento API e informazioni sul supporto fornito nei flussi di lavoro di post-elaborazione.
 
@@ -33,7 +67,7 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 | × | Non supportato. Non utilizzare. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
+| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **File binario originale** |  |  |  |  |  |  |
 | Crea originale | ✓ | × | - | × | × | - |
@@ -72,7 +106,7 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamente le risorse nell&#39;archiviazione cloud utilizzando l&#39;API HTTP. Di seguito sono riportati i passaggi per caricare un file binario. Eseguire questi passaggi in un&#39;applicazione esterna e non nella JVM [!DNL Experience Manager].
 
 1. [Invia una richiesta HTTP](#initiate-upload). Indica a [!DNL Experience Manage] la distribuzione dell&#39;intento di caricare un nuovo binario.
-1. [PUT il contenuto del file binario](#upload-binary) a uno o più URI forniti dalla richiesta di avvio.
+1. [PUT il contenuto del file binario](#upload-binary) in uno o più URI forniti dalla richiesta di avvio.
 1. [Inviare una richiesta HTTP](#complete-upload) per informare il server che il contenuto del binario è stato caricato correttamente.
 
 ![Panoramica del protocollo di caricamento binario diretto](assets/add-assets-technical.png)
@@ -92,7 +126,7 @@ L’approccio offre una gestione scalabile e più performante dei caricamenti di
 >
 >[!IMPORTANT]
 >
->In alcune circostanze, le modifiche potrebbero non propagarsi completamente tra le richieste di Experience Manager a causa della natura infine coerente dello storage nel Cloud Service. Questo porta a 404 risposte per avviare o completare chiamate di caricamento a causa della mancata propagazione delle creazioni della cartella richieste. I clienti devono aspettarsi risposte 404 e gestirle implementando un nuovo tentativo con una strategia di back-off.
+>In alcune circostanze, le modifiche potrebbero non propagarsi completamente tra le richieste ad Experience Manager a causa della natura infine coerente dello storage in Cloud Service. Questo porta a 404 risposte per avviare o completare chiamate di caricamento a causa della mancata propagazione delle creazioni della cartella richieste. I clienti devono aspettarsi risposte 404 e gestirle implementando un nuovo tentativo con una strategia di back-off.
 
 ### Avvia caricamento {#initiate-upload}
 
@@ -427,7 +461,7 @@ echo "File upload completed successfully."
 
 ### Libreria di caricamento open-source {#open-source-upload-library}
 
-Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento, Adobe fornisce librerie e strumenti open-source:
+Per ulteriori informazioni sugli algoritmi di caricamento o per creare script e strumenti di caricamento, Adobe fornisce librerie e strumenti open source:
 
 * [Libreria aem-upload open-source](https://github.com/adobe/aem-upload).
 * [Strumento da riga di comando open-source](https://github.com/adobe/aio-cli-plugin-aem).

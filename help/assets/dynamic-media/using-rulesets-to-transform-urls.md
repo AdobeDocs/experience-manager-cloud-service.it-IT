@@ -1,20 +1,57 @@
 ---
 title: Utilizzare i set di regole per trasformare gli URL
-description: Scopri come distribuire i set di regole in Dynamic Medie per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
+description: Scopri come distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni.
 contentOwner: Rick Brough
 feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 2%
 
 ---
 
 # Utilizzare i set di regole per trasformare gli URL {#using-rulesets-to-transform-urls}
 
-Puoi distribuire i set di regole in Dynamic Medie per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. Ogni regola è costituita da almeno una condizione e da almeno un&#39;azione. Una regola valuta i dati XML in base alle condizioni e, se una condizione viene soddisfatta, intraprende l&#39;azione appropriata. Di seguito sono riportati alcuni esempi di set di regole:
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
+Puoi distribuire i set di regole in Dynamic Media per trasformare gli URL. I set di regole sono insiemi di istruzioni scritte in un linguaggio di script (ad esempio JavaScript) che valutano i dati XML e eseguono determinate azioni se tali dati soddisfano determinate condizioni. Ogni regola è costituita da almeno una condizione e da almeno un&#39;azione. Una regola valuta i dati XML in base alle condizioni e, se una condizione viene soddisfatta, intraprende l&#39;azione appropriata. Di seguito sono riportati alcuni esempi di set di regole:
 
 * Aggiunta di un suffisso di tipo MIME. Molti servizi e siti Web richiedono suffissi immagine, ad esempio l&#39;aggiunta di `.jpg` a un URL.
 * Creazione di un percorso di cartella dell’URL a scopo di SEO (Search Engine Optimization).
@@ -32,11 +69,11 @@ Puoi distribuire i set di regole in Dynamic Medie per trasformare gli URL. I set
 
   Vedi [Rimuovi caratteri speciali dagli URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-Nel contesto di Dynamic Medie, i siti Web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Medie. Puoi designare uno di questi file come file del set di regole di pre-elaborazione per la gestione delle risorse Dynamic Medie. Questo file ristruttura il formato standard del protocollo URL per soddisfare la logica aziendale dei sistemi integrati con Dynamic Medie. Specificare un file XML da utilizzare come percorso del file delle definizioni del set di regole.
+Nel contesto di Dynamic Media, i siti web che utilizzano un sistema basato su XML per gestire le informazioni sulle risorse possono caricare file XML in Dynamic Media. Puoi designare uno di questi file come file del set di regole di pre-elaborazione per la trasmissione della risorsa Dynamic Media. Questo file ristruttura il formato standard del protocollo URL per soddisfare la logica aziendale dei sistemi integrati con Dynamic Media. Specificare un file XML da utilizzare come percorso del file delle definizioni del set di regole.
 
 >[!CAUTION]
 >
->Presta attenzione quando utilizzi i set di regole; possono impedire la visualizzazione del contenuto Dynamic Medie sul sito web.
+>Presta attenzione quando utilizzi i set di regole; possono impedire la visualizzazione del contenuto Dynamic Media sul sito web.
 
 Sono disponibili set di regole di esempio che possono essere utili per creare un set di regole personalizzato.
 Vedi [Riferimento set di regole](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
@@ -68,16 +105,16 @@ Vedi anche [Utilizzo di &quot;risorsa&quot; invece di &quot;è&quot; immagine in
    * Nella finestra di dialogo **[!UICONTROL Apri]**, individua il file del set di regole (XML).
    * Selezionare il file, quindi selezionare **[!UICONTROL Apri]**.
    * Sul lato destro della pagina **[!UICONTROL Carica]**, selezionare una cartella di destinazione per il file del set di regole.
-   * Nella parte inferiore della pagina, accertati che sia selezionato Publish After Uploading (Dopo il caricamento).
+   * Nella parte inferiore della pagina, accertati che l’opzione Pubblica dopo il caricamento sia selezionata.
    * Nell&#39;angolo inferiore destro della pagina, seleziona **[!UICONTROL Invia caricamento]**.
    * Sulla barra di navigazione globale, seleziona **[!UICONTROL Processi]** per controllare lo stato del processo di caricamento. Se la colonna **[!UICONTROL Stato]** nella pagina **[!UICONTROL Processo]** indica Caricamento completato, continua con i passaggi successivi.
 
-1. Sulla barra di spostamento nella parte superiore della pagina, passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Installazione di Publish]** > **[!UICONTROL Server immagini]**.
-1. Nella pagina **[!UICONTROL Image Server Publish]**, nel gruppo **[!UICONTROL Gestione catalogo]**, individuare **[!UICONTROL Percorso file definizione set regole]**, quindi selezionare **[!UICONTROL Seleziona]**.
+1. Nella barra di spostamento nella parte superiore della pagina, passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazione pubblicazione]** > **[!UICONTROL Server immagini]**.
+1. Nella pagina **[!UICONTROL Pubblicazione server immagini]**, nel gruppo **[!UICONTROL Gestione catalogo]**, individua **[!UICONTROL Percorso file definizione set regole]**, quindi seleziona **[!UICONTROL Seleziona]**.
 1. Nella pagina **[!UICONTROL Seleziona file definizione set regole (XML)]**, individua il file del set regole, quindi nell&#39;angolo inferiore destro della pagina seleziona **[!UICONTROL Seleziona]**.
 1. Nell&#39;angolo inferiore destro della pagina Configura selezionare **[!UICONTROL Chiudi]**.
-1. Esegui un processo di Image Server Publish.
+1. Esegui un processo di pubblicazione su Image Server.
 
-   Le condizioni del set di regole vengono applicate alle richieste ai server immagini Dynamic Medie live.
+   Le condizioni del set di regole vengono applicate alle richieste ai server di immagini Dynamic Media live.
 
    Se modifichi il file del set di regole, le modifiche vengono immediatamente applicate quando ricarichi e ripubblichi il file del set di regole aggiornato.

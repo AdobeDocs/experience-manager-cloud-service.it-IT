@@ -4,19 +4,53 @@ description: Scopri come AEM Assets e Dynamic Media semplificano la gestione eff
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: eb5886b5ed6a6f5b52303b4fccf5c266178b36f8
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 3%
 
 ---
 
 # Visualizzare e gestire le rappresentazioni in Experience Manager Assets{#renditions}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
-Le rappresentazioni in Adobe Experience Manager (AEM) sono versioni personalizzate di risorse digitali, come le immagini, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. L’AEM facilita la creazione e la gestione di queste rappresentazioni, migliorando l’esperienza di utilizzo. Puoi creare miniature, ottimizzare immagini per il web o per dispositivi mobili, aggiungere filigrane, visualizzare e scaricare rappresentazioni dinamiche o ritaglio avanzato e fare molto di più.
+Le rappresentazioni in Adobe Experience Manager (AEM) sono versioni personalizzate delle risorse digitali, come le immagini, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. AEM semplifica la creazione e la gestione di questi rendering, migliorando l’esperienza utente. Puoi creare miniature, ottimizzare immagini per il web o per dispositivi mobili, aggiungere filigrane, visualizzare e scaricare rappresentazioni dinamiche o ritaglio avanzato e fare molto di più.
 
 I predefiniti per le immagini Dynamic Media e le rappresentazioni Smart Crop promuovono una gestione sistematica delle immagini in linea con gli standard del marchio, massimizzando la coesione del marchio. Questo semplifica il processo di individuazione e utilizzo rapido delle rappresentazioni dinamiche delle immagini in base alle esigenze, senza alcun accesso da parte dell’amministratore.
 
@@ -46,16 +80,16 @@ Questi rendering consentono alle organizzazioni di fornire esperienze personaliz
 
 ### Prima di iniziare
 
-* Devi essere un utente con licenza di AEM Dynamic Media.
+* Devi essere un utente di AEM Dynamic Media con licenza.
 * Utilizza la [!UICONTROL visualizzazione Amministratore] per configurare:
    * [Profili immagine ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Predefiniti immagine](/help/assets/dynamic-media/managing-image-presets.md)
 
   È possibile [cambiare la visualizzazione](/help/assets/assets-view-introduction.md#how-to-access-assets-view) in un secondo momento per visualizzare in anteprima le rappresentazioni dinamiche nella visualizzazione Assets.
-* da Publish a Dynamic Media per rendere disponibili le rappresentazioni di Dynamic Media nella vista Assets. Per ulteriori informazioni, vedere [Publish da Assets a AEM e Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Pubblica le risorse in Dynamic Media per rendere disponibili le rappresentazioni Dynamic Media nella vista Assets. Per ulteriori informazioni, consulta [Pubblicare Assets in AEM e Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
-### Visualizzare e scaricare le rappresentazioni di Dynamic Media {#view-download-dm-renditions}
+### Visualizzare e scaricare le rappresentazioni Dynamic Media {#view-download-dm-renditions}
 
 Per visualizzare o scaricare le rappresentazioni dinamiche delle immagini in Experience Manager Assets, effettua le seguenti operazioni:
 
@@ -65,7 +99,7 @@ Per visualizzare o scaricare le rappresentazioni dinamiche delle immagini in Exp
 
 1. Fai clic sulla risorsa da visualizzare e fai clic su **[!UICONTROL Dettagli]**.
 
-1. Nel menu di destra, fai clic sull&#39;icona **[!UICONTROL Dynamic Media]**. Nel pannello **[!UICONTROL Dynamic Media]** sono visualizzate le rappresentazioni di Dynamic Media e Ritaglio avanzato.
+1. Nel menu di destra, fai clic sull&#39;icona **[!UICONTROL Dynamic Media]**. Il pannello **[!UICONTROL Dynamic Media]** visualizza le rappresentazioni Dynamic Media e Smart Crop.
 
    ![rappresentazioni dinamiche](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
@@ -79,18 +113,18 @@ Per visualizzare o scaricare le rappresentazioni dinamiche delle immagini in Exp
    >
    >Queste rappresentazioni sono disponibili solo per le risorse immagine.
 
-## Dynamic Media con rappresentazioni delle funzionalità OpenAPI {#dm-with-openapi-renditions}
+## Copie trasformate di elementi multimediali dinamici con funzionalità OpenAPI {#dm-with-openapi-renditions}
 
 ### Prima di iniziare
 
-* Devi essere un utente con licenza di AEM Dynamic Media.
-* Per visualizzare Dynamic Media con le funzionalità OpenAPI è necessario approvare Assets. Per ulteriori informazioni, consulta [Approvare le risorse in Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* Devi essere un utente di AEM Dynamic Media con licenza.
+* Per visualizzare i rendering di Dynamic Media con funzionalità OpenAPI, è necessario approvare Assets. Per ulteriori informazioni, consulta [Approvare le risorse in Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * Dynamic Media con funzionalità OpenAPI deve essere abilitato nell’istanza AEM as a Cloud Service.
 
-### Visualizza rappresentazioni di Dynamic Media con funzionalità OpenAPI {#view-download-dm-with-openapi-renditions}
+### Visualizza rappresentazioni Dynamic Media con funzionalità OpenAPI {#view-download-dm-with-openapi-renditions}
 
 1. Seleziona la risorsa e fai clic su **Dettagli**.
-1. Fai clic sull’icona Dynamic Media disponibile nel riquadro a destra. Il pannello Dynamic Media visualizza il rendering Dynamic Media con funzionalità OpenAPI per tutti i tipi di risorse.
+1. Fai clic sull’icona di Dynamic Media disponibile nel riquadro a destra. Il pannello Dynamic Media visualizza il rendering Dynamic Media con funzionalità OpenAPI per tutti i tipi di risorse.
    ![icona di download](/help/assets/assets/dm-with-open-api-copy-url.png)
 1. Seleziona l&#39;opzione **Dynamic Media con OpenAPI**, quindi fai clic su **Copia URL** per copiare l&#39;URL di consegna della risorsa.
 

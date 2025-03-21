@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 5%
 
 ---
 
 # Usa [!DNL Adobe Stock] risorse in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -38,12 +72,12 @@ L&#39;integrazione richiede:
 
 * [!DNL Experience Manager Assets] in esecuzione come istanza [!DNL Cloud Service]
 * Un [piano [!DNL Adobe Stock] aziendale](https://stockenterprise.adobe.com/)
-* Un utente con autorizzazioni in Admin Console al profilo di prodotto Stock predefinito
+* Un utente con autorizzazioni in Admin Console per il profilo di prodotto Stock predefinito
 * Utente con autorizzazioni per il profilo Accesso sviluppatore per la creazione di un’integrazione in Adobe Developer Console
 
 Un piano [!DNL Adobe Stock] dell&#39;organizzazione
 
-* Fornisce prodotti autorizzati per [!DNL Adobe Stock] (scorte collegate all&#39;Experience Manager)
+* Fornisce prodotti autorizzati per [!DNL Adobe Stock] (scorte connesse ad Experience Manager)
 * Crediti acquistati in [!DNL Adobe Admin Console] per il tuo diritto sulle azioni
 * Abilita l&#39;autenticazione dell&#39;account di servizio (JWT) entro [!DNL Adobe Developer Console] per il tuo diritto alle azioni
 * Consente di gestire i crediti e le licenze a livello globale da [!DNL Adobe Admin Console]
@@ -215,7 +249,7 @@ Per configurare l’account IMS:
 
 Per configurare il servizio cloud [!DNL Adobe Stock]:
 
-1. Nell&#39;interfaccia utente [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
+1. Nell&#39;interfaccia utente di [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Adobe Stock]**.
 
 1. Nella pagina [!DNL Adobe Stock Configurations], fai clic su **[!UICONTROL Crea]**.
 
@@ -272,7 +306,7 @@ Puoi creare un gruppo di utenti o assegnare le autorizzazioni a un gruppo di ute
 
    ![autorizzazioni-utente](assets/aem-stock-user-permissions.png)
 
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Selezionare la configurazione cloud [!DNL Adobe Stock] e fare clic su **[!UICONTROL Proprietà]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Adobe Stock]**. Selezionare la configurazione cloud [!DNL Adobe Stock] e fare clic su **[!UICONTROL Proprietà]**.
 
 1. Aggiungere il gruppo utenti creato alla configurazione [!DNL Adobe Stock]. Fai clic su **[!UICONTROL Salva e chiudi]**.
 
@@ -334,7 +368,7 @@ Una volta ottenuta la licenza per una risorsa [!DNL Adobe Stock] in [!DNL Experi
 
 ![Cerca [!DNL Adobe Stock] risorse e filtra i risultati dall&#39;area di lavoro [!DNL Adobe Experience Manager]](assets/adobe-stock-search-results-workspace.png)
 
-**A.** Cerca risorse simili a quelle di cui è stato fornito l&#39;ID [!DNL Adobe Stock]. **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più tipi di risorse supportati **D.** Apri o comprimi il riquadro dei filtri **E.** Concedi la licenza e salva la risorsa selezionata in [!DNL Experience Manager] **F.** Salva la risorsa in [!DNL Experience Manager] con filigrana **G.** Esplora le risorse nel sito Web [!DNL Adobe Stock] simili a quelle selezionate **H.** Visualizza le risorse selezionate nel sito Web [!DNL Adobe Stock] **I.** Numero di risorse selezionate dai risultati della ricerca **J.** 9} Passare dalla vista a schede alla vista a elenco
+**A.** Cerca risorse simili a quelle di cui è stato fornito l&#39;ID [!DNL Adobe Stock]. **B.** Cerca risorse corrispondenti alla tua selezione di forma o orientamento. **C.** Cerca uno o più tipi di risorse supportati **D.** Apri o comprimi il riquadro dei filtri **E.** Concedi la licenza e salva la risorsa selezionata in [!DNL Experience Manager] **F.** Salva la risorsa in [!DNL Experience Manager] con filigrana **G.** Esplora le risorse nel sito Web [!DNL Adobe Stock] simili a quelle selezionate **H.** Visualizza le risorse selezionate nel sito Web [!DNL Adobe Stock] **I.** Numero di risorse selezionate dai risultati della ricerca **J.** Passaggio tra la vista a schede e la vista a elenco
 
 ### Trovare le risorse {#find-assets}
 
@@ -384,7 +418,7 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 * **Gli utenti non amministratori devono attivare manualmente la configurazione cloud [!DNL Adobe Stock]**: nella finestra **[!UICONTROL Preferenze utente]**, la **[!UICONTROL Configurazione Stock]** mostra la configurazione cloud [!DNL Adobe Stock] come abilitata, ma non funziona per un utente non amministratore. L&#39;utente deve fare clic sul pulsante **[!UICONTROL Accetta]** per attivare la configurazione Stock. In assenza di questo passaggio, verrà visualizzato un messaggio di errore durante l&#39;accesso a **[!UICONTROL Assets]**.
 
-* **Avviso immagine editoriale non visualizzato**: quando si concede la licenza a un&#39;immagine, gli utenti non possono verificare se un&#39;immagine è Solo per uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare dall’Admin Console l’accesso alle risorse editoriali.
+* **Avviso immagine editoriale non visualizzato**: quando si concede la licenza a un&#39;immagine, gli utenti non possono verificare se un&#39;immagine è Solo per uso editoriale. Per evitare possibili abusi, gli amministratori possono disattivare l’accesso alle risorse editoriali da Admin Console.
 
 * **È stato visualizzato un tipo di licenza errato**: è possibile che in [!DNL Experience Manager] venga visualizzato un tipo di licenza errato per una risorsa. Gli utenti possono accedere al sito Web [!DNL Adobe Stock] per visualizzare il tipo di licenza.
 

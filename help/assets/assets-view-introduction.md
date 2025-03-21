@@ -1,25 +1,59 @@
 ---
-title: Quali vantaggi offre Assets all’AEM?
-description: Ulteriori informazioni sui principali vantaggi della visualizzazione Assets nell’AEM. Adobe, avvalendosi della sua esperienza nel rafforzare i professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria.
+title: Quali vantaggi offre la visualizzazione di Assets in AEM?
+description: Ulteriori informazioni sui vantaggi chiave della visualizzazione Assets in AEM. Adobe, avvalendosi della sua esperienza nel campo del marketing e dei professionisti creativi, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1012'
 ht-degree: 68%
 
 ---
 
 # Introduzione alla vista Assets {#assets-view}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Implementare Assets Essentials](assets/banner-image.jpg)
 
-Nell’attuale panorama dinamico digitale, in cui la creazione e la distribuzione dei contenuti in tempo reale sono essenziali, è fondamentale disporre di un’esperienza di gestione delle risorse digitali (DAM) progettata per velocizzare le attività di marketing downstream. Adobe, avvalendosi della sua esperienza nel rafforzare i professionisti del marketing e creativi, introduce una nuova esperienza utente rivoluzionaria. Questo approccio orientato al flusso di lavoro rivoluziona il modo in cui le aziende gestiscono le risorse digitali dinamiche, consentendo ai marketer di ottimizzare l’efficienza nella ricerca, nella collaborazione, nella personalizzazione e nella distribuzione delle risorse. Questi flussi di lavoro semplificati accelerano la velocità dei contenuti e stimolano le attività di marketing verso nuovi traguardi.
+Nell’attuale panorama dinamico digitale, in cui la creazione e la distribuzione dei contenuti in tempo reale sono essenziali, è fondamentale disporre di un’esperienza di gestione delle risorse digitali (DAM) progettata per velocizzare le attività di marketing downstream. Adobe, avvalendosi della sua esperienza nel campo del marketing e dei professionisti creativi, introduce una nuova esperienza utente rivoluzionaria. Questo approccio orientato al flusso di lavoro rivoluziona il modo in cui le aziende gestiscono le risorse digitali dinamiche, consentendo ai marketer di ottimizzare l’efficienza nella ricerca, nella collaborazione, nella personalizzazione e nella distribuzione delle risorse. Questi flussi di lavoro semplificati accelerano la velocità dei contenuti e stimolano le attività di marketing verso nuovi traguardi.
 
 Per ulteriori informazioni sulle esperienze disponibili basate su utenti tipo per Assets as a Cloud Service, consulta [Introduzione ad Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -80,7 +114,7 @@ Per tenere il passo con la velocità dei contenuti, è essenziale disporre di ap
 
 ### L’integrazione con Adobe Photoshop Express per accelerare la collaborazione {#accelerate-collaboration}
 
-La nuova esperienza offre un set completo di funzioni di collaborazione, tra cui la modifica in tempo reale con funzionalità di Adobe Photoshop integrate, controlli delle versioni e strumenti di annotazione. Questo consente una collaborazione perfetta tra i team di progettazione, creatività, branding e marketing, consentendo loro di eliminare gli ostacoli e accelerare il processo delle operazioni di marketing. I marketer dispongono ora di potenti strumenti per accelerare la consegna dei progetti e aumentare la produttività complessiva.
+La nuova esperienza offre un set completo di funzioni di collaborazione, tra cui la modifica in tempo reale con funzionalità di Adobe Photoshop incorporate, controlli delle versioni e strumenti di annotazione. Questo consente una collaborazione perfetta tra i team di progettazione, creatività, branding e marketing, consentendo loro di eliminare gli ostacoli e accelerare il processo delle operazioni di marketing. I marketer dispongono ora di potenti strumenti per accelerare la consegna dei progetti e aumentare la produttività complessiva.
 
 Guarda questo video per comprendere la potenza dell’integrazione della Vista risorse con Adobe Photoshop Express:
 

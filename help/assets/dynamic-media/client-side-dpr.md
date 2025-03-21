@@ -1,18 +1,55 @@
 ---
 title: Utilizzo di Smart Imaging con proporzioni pixel del dispositivo lato client
-description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Medie.
+description: Scopri come utilizzare le proporzioni pixel del dispositivo lato client con Smart Imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 5%
 
 ---
 
 # Informazioni sulla tecnologia Smart Imaging con rapporto pixel del dispositivo lato client (DPR) {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 La soluzione di Smart Imaging corrente utilizza stringhe dell’agente utente per determinare il tipo di dispositivo (desktop, tablet, dispositivi mobili e così via) utilizzato.
 
@@ -26,13 +63,13 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
 **App sottoposte a rendering lato server**
 
-1. Carica il processo di lavoro del servizio iniziando (`srvinit.js`) includendo lo script seguente nella sezione dell&#39;intestazione della pagina HTML:
+1. Caricare il processo di lavoro del servizio iniziando (`srvinit.js`) includendo lo script seguente nella sezione dell&#39;intestazione della pagina HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   L&#39;Adobe consiglia di caricare lo script _prima_ di qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
+   Adobe consiglia di caricare lo script _prima_ di qualsiasi altro script in modo che il service worker inizi immediatamente l&#39;inizializzazione.
 
 1. Includi il seguente codice tag immagine DPR nella parte superiore della sezione body della pagina HTML:
 
@@ -58,8 +95,8 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
 
    È possibile combinare entrambi gli script DPR in uno per evitare più richieste di rete.
 
-   L&#39;Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
-L’Adobe consiglia inoltre di eseguire la Bootstrap dell’app con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
+   Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
+Adobe consiglia inoltre di usare l’app per Bootstrap con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
 
 ## Download di file JavaScript {#client-side-dpr-script}
 

@@ -3,10 +3,10 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 18%
+source-wordcount: '1014'
+ht-degree: 17%
 
 ---
 
@@ -17,8 +17,42 @@ ht-degree: 18%
 >title="Caricare risorse approvate dal brand in Content Hub"
 >abstract="Aggiungi risorse approvate a Content Hub dal file system locale o importa risorse di origini di dati da OneDrive o di Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura della cartella, per migliorare le funzionalità di ricerca."
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione di AEM Assets per sviluppatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -26,7 +60,7 @@ ht-degree: 18%
 >
 >[!BADGE Guida di Content Hub - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-[Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da OneDrive o da origini dati di Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o nelle origini dati di OneDrive e di Dropbox, per migliorare le funzionalità di ricerca.
+[Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da origini dati OneDrive o Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o dalle origini dati di OneDrive e Dropbox, per migliorare le funzionalità di ricerca.
 
 Le risorse contrassegnate come `Approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub. Per ulteriori informazioni, consulta [Approvare le risorse per Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -74,13 +108,13 @@ Per aggiungere risorse a Content Hub, effettua le seguenti operazioni:
 Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante il caricamento delle risorse, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
 
-## Aggiungere risorse a Content Hub da origini dati OneDrive o di Dropbox {#add-assets-onedrive-dropbox}
+## Aggiungere risorse a Content Hub da origini dati OneDrive o Dropbox {#add-assets-onedrive-dropbox}
 
 Per aggiungere risorse a Content Hub da origini dati OneDrive o Dropbox:
 
-1. Fai clic su **[!UICONTROL Aggiungi Assets]** per visualizzare la finestra di dialogo **[!UICONTROL Aggiungi risorse approvate]** che consente di importare risorse da OneDrive o dal Dropbox.
+1. Fai clic su **[!UICONTROL Aggiungi Assets]** per visualizzare la finestra di dialogo **[!UICONTROL Aggiungi risorse approvate]** che consente di importare risorse da OneDrive o Dropbox.
 
-1. Fai clic su **[!UICONTROL OneDrive]** o **[!UICONTROL Dropbox]** per avviare il processo di importazione. Content Hub richiede di accedere all&#39;account di OneDrive o di Dropbox e quindi visualizza la struttura delle cartelle di OneDrive o di Dropbox nel riquadro a sinistra.
+1. Fai clic su **[!UICONTROL OneDrive]** o **[!UICONTROL Dropbox]** per avviare il processo di importazione. Content Hub richiede di accedere all&#39;account OneDrive o Dropbox e quindi visualizza la struttura delle cartelle di OneDrive o Dropbox nel riquadro a sinistra.
 
 1. Fai clic sull’icona + accanto al file o al nome della cartella per visualizzare l’elemento nell’elenco Elementi selezionati. Dopo aver selezionato tutti i file da aggiungere al portale Content Hub, ripetere i passaggi da 3 a 6 di [Aggiungi risorse a Content Hub dal file system locale](#add-assets-local-file-system) per completare il processo di caricamento.
 
@@ -90,7 +124,7 @@ Gli amministratori possono anche configurare i campi obbligatori e facoltativi d
 
 ## Gestire le risorse caricate tramite Content Hub {#manage-assets-uploaded-using-content-hub}
 
-[Gli utenti di Content Hub con diritti di aggiunta risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono [aggiungere risorse a Content Hub](/help/assets/upload-brand-approved-assets.md) dal file system locale o importare risorse da origini dati di OneDrive o di Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o nelle origini dati di OneDrive e di Dropbox, per migliorare le funzionalità di ricerca.
+[Gli utenti di Content Hub con diritti di aggiunta risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono [aggiungere risorse a Content Hub](/help/assets/upload-brand-approved-assets.md) dal file system locale o importare risorse da origini dati OneDrive o Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o dalle origini dati di OneDrive e Dropbox, per migliorare le funzionalità di ricerca.
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto che sia stato abilitato [l&#39;interruttore di approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
 

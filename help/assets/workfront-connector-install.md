@@ -4,17 +4,51 @@ description: Installa [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 2%
+source-wordcount: '811'
+ht-degree: 3%
 
 ---
 
 # Installa [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-| [Best practice per la ricerca](/help/assets/search-best-practices.md) | [Best practice per i metadati](/help/assets/metadata-best-practices.md) | [Hub di contenuti](/help/assets/product-overview.md) | [Dynamic Medie con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [Documentazione per gli sviluppatori di AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -25,7 +59,7 @@ Un utente con accesso amministratore in [!DNL Adobe Experience Manager] come [!D
 
 >[!IMPORTANT]
 >
->A giugno 2022, Adobe ha rilasciato una nuova integrazione nativa per la connessione di Workfront con Adobe Experience Manager Assets as a Cloud Service. Questa integrazione è diventata il metodo richiesto per collegare queste due soluzioni. Qualsiasi nuova implementazione futura del connettore avanzato (versione 1.9.8 e successive) per collegare Workfront ad AEM Assets as a Cloud Service è bloccata. Per ulteriori informazioni su come configurare questa integrazione, vedere [Configurare l&#39;integrazione di Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
+>A giugno 2022, Adobe ha rilasciato una nuova integrazione nativa per la connessione di Workfront con Adobe Experience Manager Assets as a Cloud Service. Questa integrazione è diventata il metodo richiesto per collegare queste due soluzioni. Qualsiasi nuova implementazione futura del connettore avanzato (versione 1.9.8 e successive) per collegare Workfront ad AEM Assets as a Cloud Service è bloccata. Per ulteriori informazioni su come configurare questa integrazione, vedere [Configurare l&#39;integrazione Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
 
 >[!IMPORTANT]
 >
@@ -39,7 +73,7 @@ Un utente con accesso amministratore in [!DNL Adobe Experience Manager] come [!D
 
 Prima di installare il connettore, effettuare le seguenti operazioni di preinstallazione:
 
-1. Se il programma AEM as a Cloud Service ha configurato il networking avanzato e abilitato l’inserimento di IP nell’elenco Consentiti, devi aggiungere gli IP Workfront a questo elenco per consentire alle sottoscrizioni di eventi e a varie chiamate API di passare all’AEM.
+1. Se il programma AEM as a Cloud Service ha configurato il networking avanzato e abilitato l’inserimento di IP nell’elenco Consentiti, devi aggiungere gli IP Workfront a questo elenco per consentire la trasmissione delle sottoscrizioni di eventi e di varie chiamate API ad AEM.
 
    * [IP cluster Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Per conoscere il cluster IP in [!DNL Workfront], passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informazioni cliente]**.
 
@@ -74,7 +108,7 @@ Prima di installare il connettore, effettuare le seguenti operazioni di preinsta
 
 Per installare il componente aggiuntivo in [!DNL Experience Manager] come [!DNL Cloud Service], eseguire la procedura seguente:
 
-1. Scarica il connettore avanzato da [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Scarica il connettore avanzato da [Distribuzione software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [Accedi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clona l&#39;archivio AEM as a Cloud Service da Cloud Manager.
 
@@ -149,7 +183,7 @@ Per informazioni sull&#39;aggiornamento di [!DNL Workfront for Experience Manage
 
 Per creare una connessione con [!DNL Workfront], eseguire la procedura seguente:
 
-1. In [!DNL Experience Manager], selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configurazione strumenti di Workfront]**.
+1. In [!DNL Experience Manager], selezionare **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Configurazione strumenti Workfront]**.
 
 1. Seleziona `workfront-tools` nel pannello a sinistra e seleziona l&#39;opzione **[!UICONTROL Crea]** nell&#39;area superiore destra della pagina.
 
