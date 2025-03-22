@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -355,7 +355,7 @@ Dopo la pubblicazione, sono disponibili due opzioni.
    * **Collegamento diretto:**
 Utilizza l’URL fornito per il collegamento diretto al video. Inseriscilo nel collegamento appropriato sul sito di marketing.
    * **Incorpora il video:**
-Copia il codice da incorporare fornito e incollalo nel HTML della pagina web in cui desideri visualizzare il video. In questo modo il video può essere riprodotto direttamente sul sito.
+Copia il codice incorporato fornito e incollalo nel HTML della pagina web in cui desideri visualizzare il video. In questo modo il video può essere riprodotto direttamente sul sito.
 
 Vuoi saperne di più? Vai a [Video](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
@@ -399,7 +399,7 @@ L’internazionalizzazione dei video per il consumo multilingue è essenziale pe
    * Organizza, sfoglia e cerca risorse video in AEM.
    * Visualizzare in anteprima e pubblicare le risorse video.
    * Visualizza il video sorgente e le relative rappresentazioni codificate insieme alle miniature associate.
-   * Modifica le proprietà video come titolo, descrizione e tag2.
+   * Modifica le proprietà del video, come titolo, descrizione e tag2.
 
 * **Localizzazione:**
    * Per ogni area geografica/lingua di destinazione, create tracce audio e sottotitoli.
@@ -410,7 +410,7 @@ L’internazionalizzazione dei video per il consumo multilingue è essenziale pe
    * Se utilizzi AEM come sistema di gestione dei contenuti web (WCM), puoi aggiungere video direttamente alle pagine web.
    * Se utilizzi un sistema WCM di terze parti, puoi collegare o incorporare video sulle pagine web utilizzando URL o codici di incorporamento.
 
-Vuoi saperne di più? Vai a [Informazioni sul supporto di più didascalie e tracce audio per i video in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) o guarda [Aggiungere più didascalie e tracce audio a un video](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 secondi).
+Vuoi saperne di più? Vai a [Informazioni sul supporto di più didascalie e tracce audio per i video in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Distribuire risorse ai clienti

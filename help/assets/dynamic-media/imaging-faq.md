@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '3289'
+source-wordcount: '3267'
 ht-degree: 1%
 
 ---
@@ -169,7 +169,7 @@ I valori di DPR e larghezza di banda di rete si basano sui valori lato client ri
 * Utilizza la tecnologia Adobe Sensei per la conversione in base alla qualità (`qlt`) specificata nella richiesta di immagine.
 * TTL (Time To Live) indipendente. In precedenza, era obbligatorio un TTL minimo di 12 ore affinché l’imaging intelligente potesse funzionare.
 * In precedenza, le immagini originali e derivate venivano memorizzate nella cache ed era un processo in due fasi per invalidare la cache. Nell’ultima versione di Smart Imaging, vengono memorizzate nella cache solo le derivate, consentendo un processo di invalidamento della cache in un unico passaggio.
-* I clienti che utilizzano intestazioni personalizzate nei propri set di regole beneficiano della tecnologia Smart Imaging più recente, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging. &quot;Timing Allow Origin&quot; e &quot;X-Robot&quot;, ad esempio, come suggerito in [Aggiungere un valore di intestazione personalizzato alle risposte dell&#39;immagine|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* I clienti che utilizzano intestazioni personalizzate nei propri set di regole beneficiano della tecnologia Smart Imaging più recente, in quanto queste intestazioni non sono bloccate, a differenza della versione precedente di Smart Imaging.
 
 ## Come funziona l&#39;imaging intelligente{#how-smart-imaging-works}
 
