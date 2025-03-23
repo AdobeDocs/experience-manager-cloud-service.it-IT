@@ -2,7 +2,7 @@
 title: Configurazione di Commerce Multi-Store
 description: Scopri come mappare più visualizzazioni dello store da Adobe Commerce a Adobe Experience Manager. Questo consente ai progetti di supportare casi d’uso multi-tenant e multilingue.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 15%
@@ -20,17 +20,17 @@ ht-degree: 15%
 
 # Configurazione di Commerce Multi-Store {#multi-store}
 
-I componenti core CIF di Adobe Experience Manager (AEM) possono essere utilizzati su più strutture di siti AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
+I componenti core CIF di Adobe Experience Manager (AEM) possono essere utilizzati su più strutture del sito AEM e l’implementazione client GraphQL sottostante può connettersi a diversi store o viste store di Adobe Commerce. Ciò consente ai progetti di implementare complesse impostazioni per più store o siti.
 
 Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni dello store di Adobe Commerce con Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Le funzioni di gestione multisito AEM di Live Copy e copia per lingua vengono utilizzate con Commerce integration framework per gestire globalmente i siti in aree geografiche e lingue diverse.
+Le funzioni Live Copy e copia per lingua di AEM per la gestione multisito sono utilizzate con Commerce integration framework per gestire globalmente i siti in aree geografiche e lingue diverse.
 
 Si consiglia di utilizzare una relazione 1:1 tra il sito AEM e la vista Store di Adobe Commerce.
 
-Per collegare un sito AEM e i componenti core CIF dell’AEM a una visualizzazione dedicata dello store, effettua le seguenti operazioni:
+Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione dedicata dello store, effettua le seguenti operazioni:
 
 ## Configurazione {#configuration}
 

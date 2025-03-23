@@ -2,7 +2,7 @@
 title: Creazione di più pagine per categorie e prodotti
 description: Scopri come arricchire le pagine di destinazione delle categorie e i dettagli dei prodotti con contenuti di marketing mirati.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 45%

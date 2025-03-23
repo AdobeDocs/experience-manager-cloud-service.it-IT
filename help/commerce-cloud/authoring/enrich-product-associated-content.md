@@ -2,7 +2,7 @@
 title: Arricchire i dati di prodotto con i contenuti AEM associati
 description: Scopri come gli esperti di marketing possono arricchire i dati dei prodotti con i contenuti associati provenienti da Adobe Experience Manager, aggiungendo in modo dinamico contenuti di marketing alle pagine dei prodotti. Questo consente agli addetti al marketing di indirizzare specifiche pagine di prodotti con contenuti aggiuntivi, come immagini e video.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%

@@ -1,24 +1,24 @@
 ---
-title: Utilizzo del selettore di prodotti e categorie CIF
-description: Scopri come utilizzare il selettore di prodotti e categorie CIF nei componenti per l’e-commerce dei clienti per supportare autori ed esperti di marketing a lavorare in modo efficiente con i dati di catalogo e i prodotti commerce.
+title: Utilizzo del selettore prodotti e categorie di CIF
+description: Scopri come utilizzare il selettore di prodotti e categorie CIF nei componenti commerce del cliente per supportare autori ed esperti di marketing nell’utilizzo efficiente dei dati di catalogo e dei prodotti commerce.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Picker per l’authoring di contenuti AEM e Commerce {#cif-pickers}
+# Selettori per l’authoring di contenuti AEM e Commerce {#cif-pickers}
 
-L’authoring di contenuti e Commerce dell’AEM fornisce una serie di strumenti di authoring per aiutare gli autori e gli esperti di marketing dell’AEM a lavorare in modo efficiente con i dati e i cataloghi dei prodotti commerce. Il selettore prodotti e il selettore categorie fanno parte del componente aggiuntivo CIF e sono utilizzati dai componenti core CIF. I progetti possono utilizzare questi selettori in qualsiasi finestra di dialogo dei componenti per selezionare prodotti o categorie.
+AEM Content &amp; Commerce Authoring fornisce una serie di strumenti di authoring per aiutare autori e addetti al marketing AEM a lavorare in modo efficiente con i dati di prodotto e i cataloghi commerce. Il selettore prodotti e il selettore categorie fanno parte del componente aggiuntivo CIF e sono utilizzati dai componenti core di CIF. I progetti possono utilizzare questi selettori in qualsiasi finestra di dialogo dei componenti per selezionare prodotti o categorie.
 
 ## Selettore prodotti {#product-picker}
 
@@ -50,9 +50,9 @@ Sono inoltre supportate le proprietà dei campi della finestra di dialogo standa
 >Il componente `cifproductfield` richiede clientlib `cif.shell.picker`. Per aggiungere una libreria client a una finestra di dialogo, puoi utilizzare la proprietà extraClientlibs.
 >[!CAUTION]
 >
->A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. L&#39;Adobe consiglia di utilizzare `sku` o `slug` come identificatore di prodotto. Adobe continua a supportare `id` solo per i progetti che utilizzano la versione 1.x dei Componenti core CIF.
+>A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `sku` o `slug` come identificatore di prodotto. Adobe continua a supportare `id` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.
 
-Un esempio completo di funzionamento di `cifproductfield` è disponibile nel progetto [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Vedi anche [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) della documentazione dei Componenti core AEM.
+Un esempio completo di funzionamento di `cifproductfield` è disponibile nel progetto [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulta anche [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core AEM.
 
 ## Selettore categorie {#category-picker}
 
@@ -77,9 +77,9 @@ Sono inoltre supportate le proprietà dei campi della finestra di dialogo standa
 
 >[!CAUTION]
 >
->Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, è possibile utilizzare la proprietà `extraClientlibs`. Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core AEM.
+>Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, è possibile utilizzare la proprietà `extraClientlibs`. Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core di AEM.
 >[!CAUTION]
 >
->A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. L&#39;Adobe consiglia di utilizzare `uid` o `urlPath` come identificatore di categoria. Adobe: continuare a supportare `id` e `idAndUrlPath` solo per i progetti che utilizzano i componenti core CIF versione 1.x.
+>A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `uid` o `urlPath` come identificatore di categoria. Adobe continua a supportare `id` e `idAndUrlPath` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.
 
 Un esempio completo di funzionamento di `cifcategoryfield` è disponibile nel progetto [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
