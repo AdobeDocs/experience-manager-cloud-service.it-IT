@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: a2f26e7befe4aa23350cfdca6a2c342500a909db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Il supporto UUID per frammenti di contenuto è ora in disponibilità generale. L
 
 Le risorse memorizzate in programmi AEM as a Cloud Service diversi dai frammenti di contenuto e che sono abilitate con la nuova funzionalità Dynamic Media con OpenAPI possono ora essere utilizzate nei frammenti di contenuto. Il selettore delle immagini nel nuovo Editor frammento di contenuto ora consente di selezionare archivi “remoti” come origine per le risorse di immagini a cui fare riferimento nel frammento. E alla consegna di tali frammenti di contenuto tramite AEM GraphQL, la risposta JSON ora include le proprietà richieste per le risorse remote (assetId, repositoryId), in modo che le applicazioni client possano creare i rispettivi Dynamic Media con URL OpenAPI per recuperare l’immagine.
 
-**Rollout dell&#39;Editor frammenti di contenuto**
+**Rollout dell’Editor frammento di contenuto**
 
-Continueremo ad abilitare il nuovo Editor frammenti di contenuto basato sull’interfaccia utente di Spectrum in AEM as a Cloud Service. Dopo essere diventato predefinito per tutti gli ambienti di sviluppo di Cloud Service a novembre 2024, verrà impostato come predefinito per tutti gli ambienti di stage il 1° aprile 2025 e per tutti gli ambienti di produzione il 1° maggio 2025. In tutti i casi, gli utenti avranno ancora la possibilità di ripristinare l’Editor tradizionale dei frammenti di contenuto nell’interfaccia utente touch di AEM.
+Continueremo ad abilitare il nuovo editor frammento di contenuto basato sull’interfaccia utente Spectrum in AEM as a Cloud Service. Dopo essere diventato predefinito per tutti gli ambienti per sviluppatori di Cloud Service a novembre 2024, verrà impostato come predefinito per tutti gli ambienti di staging il 1° aprile 2025 e per tutti gli ambienti di produzione il 1° maggio 2025. In tutti i casi, gli utenti avranno ancora la possibilità di ripristinare l’editor tradizionale frammento di contenuto nell’interfaccia touch in AEM.
 
 **API HTTP di traduzione**
 
