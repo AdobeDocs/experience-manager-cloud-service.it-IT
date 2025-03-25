@@ -1,5 +1,5 @@
 ---
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
@@ -248,7 +248,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 >[!IMPORTANT]
 >
->L&#39;editor per applicazioni a pagina singola (o editor SPA) [ è stato dichiarato obsoleto](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) per i nuovi progetti. Continua a essere supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora i seguenti:
+>L&#39;editor per applicazioni a pagina singola (o editor SPA) [ è stato dichiarato obsoleto](/help/implementing/developing/hybrid/spa-editor-deprecation.md) per i nuovi progetti. Continua a essere supportato da Adobe per i progetti esistenti, ma non dovrebbe essere utilizzato per i nuovi progetti. Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora i seguenti:
 >
 >* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva di contenuti headless.
 >* [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica di contenuti headless basata su modulo.
