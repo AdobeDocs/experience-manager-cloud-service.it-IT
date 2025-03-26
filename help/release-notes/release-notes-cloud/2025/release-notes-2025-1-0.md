@@ -3,10 +3,11 @@ title: Note sulla versione 2025.1.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.1.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 92%
 
 ---
 
@@ -80,17 +81,33 @@ Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuove funzioni nella vista AEM Assets {#new-features-assets}
+### Nuove funzioni in AEM Assets {#new-features-assets}
 
-**Personalizzare i filtri di ricerca**
+**Rapporti sulle consegne Dynamic Media**
 
-I filtri di ricerca personalizzati migliorano la precisione e l’efficienza nella ricerca di informazioni rilevanti. Consente ricerche più personalizzate, filtrando i dati in base ad attributi specifici come brand, prodotto, categoria o altri identificatori chiave. Ciò migliora l’organizzazione, riduce il tempo impiegato per il vaglio attraverso risultati irrilevanti e consente un processo decisionale più rapido. Supporta anche la scalabilità, in quanto i set di dati di grandi dimensioni diventano più facili da navigare e analizzare.
+Ottieni informazioni dettagliate sulla consegna delle risorse effettuata con Dynamic Media, inclusi numero di consegna a livello di risorsa, informazioni sul referrer, percorsi della risorsa in AEM Assets e ID univoco della risorsa. Genera report per tutte le risorse nell’archivio AEM Assets o gerarchie di cartelle specifiche. Queste informazioni consentono di misurare il ROI delle risorse fornite, valutare le prestazioni dei canali e prendere decisioni informate per la gestione delle risorse.
 
-![filtri di ricerca personalizzati](/help/assets/assets/custom-search-filters.png)
+![rappresentazioni dinamiche](/help/assets/assets/referrer.png)
 
-### Nuove funzioni nell’hub di contenuti {#new-features-content-hub}
+**Multi-audio e più didascalie per Dynamic Media**
 
-Descrizione
+[Supporto tracce con più didascalie e multi-audio per video Dynamic Media](/help/assets/dynamic-media/video.md#about-msma): è ora possibile aggiungere facilmente più didascalie e tracce audio a un video principale. Grazie a questa funzionalità, i video sono accessibili a un pubblico globale. È possibile personalizzare un singolo video principale pubblicato per un pubblico globale in più lingue e rispettare le linee guida sull’accessibilità per diverse aree geografiche. Gli autori possono gestire anche le didascalie e le tracce audio da una singola scheda nell’interfaccia utente.
+
+**Dynamic Adaptative Streaming con supporto HTTP**
+
+Lancio del supporto per il nuovo protocollo (DASH - Dynamic Adaptive Streaming over HTTP) per lo streaming adattivo nella distribuzione video Dynamic Media (con CMAF abilitato):
+
+* Lo streaming adattivo (DASH/HLS) garantisce agli utenti una migliore esperienza di visualizzazione dei video.
+
+* DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
+
+**Relazioni risorsa**
+
+La vista risorse ora supporta la visualizzazione e la modifica delle relazioni tra risorse in un pannello semplificato Dettagli risorsa. Aggiungi facilmente relazioni come Origine e Derivata ai contenuti in modo che gli utenti possano trovare più efficacemente contenuti principali rilevanti.
+
+**Rielaborazione risorse**
+
+La vista risorse ora supporta la rielaborazione delle risorse disponibili in una cartella. È possibile scegliere di utilizzare l’opzione **Processo completo** oppure opzioni avanzate, ad esempio rappresentazioni di anteprima predefinite, metadati, flusso di lavoro di post-elaborazione e profilo di elaborazione.
 
 ### Funzionalità per Accesso anticipato in AEM Assets {#early-access-features-assets}
 
