@@ -2,9 +2,9 @@
 title: Modifica in blocco dei metadati in [!DNL Assets View]
 description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [DNL! Assets View] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
     </tr>
 </table>
 
-La funzionalità **[!DNL Bulk Metadata Edit]** di [!DNL Assets View] consente di modificare un set predefinito di campi di metadati standard per più file di risorse contemporaneamente. Seleziona più risorse e aggiorna contemporaneamente in blocco il set predefinito di metadati standard, anziché aggiornare singolarmente i metadati standard di ogni risorsa. Questa capacità di modificare in blocco il set standard di proprietà dei metadati per più risorse contemporaneamente mantiene l’efficienza, la coerenza e l’accuratezza di tali proprietà dei metadati standard nell’ampio set di risorse, migliorando la ricercabilità e l’organizzazione di tali risorse.
+La funzionalità **[!DNL Bulk Metadata Edit]** di [!DNL Assets View] consente di modificare un set predefinito di campi di metadati standard per più file di risorse contemporaneamente. Seleziona più risorse e aggiorna contemporaneamente in blocco il set predefinito di metadati standard, anziché aggiornare singolarmente i metadati standard di ogni risorsa. Questa funzionalità consente di mantenere l&#39;efficienza, la coerenza e l&#39;accuratezza dell&#39;insieme di proprietà di metadati standard nei grandi insiemi di risorse, migliorando la ricercabilità e l&#39;organizzazione di tali risorse.
 
 ## Modificare in blocco i metadati delle risorse {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
