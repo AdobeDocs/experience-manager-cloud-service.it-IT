@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 40%
@@ -58,7 +58,7 @@ Dopo aver definito i [modelli per frammenti di contenuto](#creating-a-content-mo
 
 Puoi utilizzare il pannello all&#39;estrema sinistra della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) per selezionare **Frammenti di contenuto** come tipo di risorsa per visualizzare, sfogliare e gestire:
 
-![Console Frammenti di contenuto - navigazione](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Console Frammenti di contenuto - navigazione](/help/sites-cloud/administering/content-fragments/assets/cf-console-fragments-navigation.png)
 
 Selezionando **Frammenti di contenuto** si apre la console in una nuova scheda.
 

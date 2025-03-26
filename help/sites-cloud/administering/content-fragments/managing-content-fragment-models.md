@@ -4,9 +4,10 @@ description: Scopri come gestire i modelli per frammenti di contenuto, che fungo
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 36%
 
 ---
@@ -49,7 +50,7 @@ Come panoramica molto rapida, per lavorare con i modelli per frammenti di conten
 
 Puoi utilizzare il pannello all&#39;estrema sinistra della [console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) per selezionare **Modelli per frammenti di contenuto** come tipo di risorsa per visualizzare, sfogliare e gestire:
 
-![Console Frammenti di contenuto - navigazione](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Console Frammenti di contenuto - navigazione](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Verrà aperta la visualizzazione per i modelli per frammenti di contenuto:
 
@@ -62,7 +63,7 @@ Nella console puoi osservare tre aree principali:
    * Mostra anche la tua organizzazione IMS
    * Fornisce varie [azioni](#actions-unselected)
 * Pannello a sinistra
-   * Mostra tutte le [configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) elencate come cartelle
+   * Mostra i [percorsi per tutte le configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) elencate come cartelle
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare una cartella specifica della struttura
    * Può essere ridimensionata per mostrare cartelle nidificate (configurazioni secondarie)
@@ -75,7 +76,7 @@ Nella console puoi osservare tre aree principali:
          * [È possibile selezionare le colonne da visualizzare](#select-columns-console)
       * [Vari campi di informazioni](#information-content-fragment-models) su un modello per frammenti di contenuto forniscono collegamenti che, a seconda del campo, possono:
          * Apri il modello appropriato nell’editor
-         * Mostra informazioni sulla configurazione
+         * Mostra informazioni sul percorso della configurazione
          * Mostra informazioni sullo stato del modello
       * [Alcuni altri campi di informazioni](#information-content-fragments) su un modello per frammenti di contenuto possono essere utilizzati per [Filtro rapido](#fast-filtering):
          * Seleziona un valore nella colonna e viene immediatamente applicato come filtro
@@ -96,8 +97,8 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
    * Fornisce un collegamento per aprire il modello nell’editor.
 * Bloccato
    * Quando il modello è bloccato, questo viene indicato da un&#39;icona lucchetto.
-* **Configurazione**
-   * Fornisce un collegamento per aprire la configurazione nella console.
+* **Percorso**
+   * Fornisce il percorso come collegamento per aprire la configurazione nella console.
 Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
    * Solo informativo.
@@ -123,7 +124,7 @@ Quando selezioni un modello specifico, vengono visualizzate le proprietà del mo
 
 ![Console Frammenti di contenuto - Informazioni per un modello per frammenti di contenuto selezionato](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configurazione](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Percorso](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Stato](#enabling-a-content-fragment-model)**
 * **Titolo**
 * **Tag**
@@ -233,7 +234,7 @@ Selezionare ad esempio **Abilitato** nella colonna **Stato**. Una volta selezion
    >* Se l&#39;[utilizzo dei modelli per frammenti di contenuto è stato abilitato](/help/sites-cloud/administering/content-fragments/setup.md)
    >* dopo aver selezionato la cartella in cui desideri creare il modello.
 
-1. Seleziona la **Configurazione** e specifica il **Nome**.
+1. Seleziona il **Percorso** per la configurazione e specifica il **Nome**.
 
    >[!NOTE]
    >
