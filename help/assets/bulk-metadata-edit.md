@@ -1,10 +1,10 @@
 ---
-title: Modifica in blocco dei metadati in [DNL! Vista Assets]
+title: Modifica in blocco dei metadati in [!DNL Assets View]
 description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [DNL! Assets View] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 9b5191bd05bfb06fb4eb1a9b710b98cc132ffeda
+source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 3%
 
 ---
