@@ -4,9 +4,9 @@ description: Scopri come dichiarare i reindirizzamenti 301 o 302 senza accesso a
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Per vari motivi, le organizzazioni riscrivono gli URL in un modo che causa un re
 Gli scenari includono:
 
 * Una pagina HTML rimossa, quindi l&#39;utente viene portato a una pagina sostitutiva (a volte la home page) invece di visualizzare un errore `404 Page Not Found`.
-* Una pagina HTML rinominata.
+* Pagina HTML rinominata.
 * Ottimizzazione SEO.
 
 AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) per implementare i reindirizzamenti lato client, ma la strategia descritta in questo articolo, reindirizzamenti senza pipeline, è una buona scelta quando:
@@ -27,18 +27,20 @@ AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.c
 * Il numero di reindirizzamenti varia da poche a decine di migliaia.
 * Si desidera scegliere l&#39;opzione di un&#39;interfaccia utente, che può essere creata come progetto personalizzato o utilizzando [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) o [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-Il nucleo di questa funzione è la capacità di Apache/Dispatcher dell’AEM di caricare (o ricaricare) uno o più file di mappa di riscrittura posizionati in una posizione specifica nell’archivio di pubblicazione (in modo che sia scaricabile dalla pubblicazione AEM). È importante ricordare che il modo in cui i file vengono ricevuti è al di fuori dell’ambito di questa funzione, ma puoi prendere in considerazione uno dei seguenti metodi:
+Questa funzione si basa sulla capacità di AEM Apache/Dispatcher di caricare (o ricaricare) uno o più file di mappa di riscrittura posizionati in una posizione specifica nell’archivio di pubblicazione (in modo che sia scaricabile da AEM Publish). È importante ricordare che il modo in cui i file vengono ricevuti è al di fuori dell’ambito di questa funzione, ma puoi prendere in considerazione uno dei seguenti metodi:
 
 * Acquisizione della mappa di riscrittura come risorsa nell’interfaccia utente di authoring e pubblicazione.
 * Installazione di [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([almeno versione 6.7.0 o successiva](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), che include un&#39;interfaccia utente per la gestione dei mapping URL e può inoltre pubblicare il file di mapping di riscrittura.
 * Installazione di [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) ([almeno versione 6.10.0 o successiva](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), che include anche un&#39;interfaccia utente per gestire i mapping URL e può pubblicare anche il file di mapping di riscrittura.
-* Massima flessibilità scrivendo un&#39;applicazione personalizzata. Ad esempio, un’interfaccia utente o un’interfaccia a riga di comando per gestire le mappature URL oppure un modulo per caricare una mappa di riscrittura, che utilizza quindi le API AEM per pubblicare il file della mappa di riscrittura.
+* Massima flessibilità scrivendo un&#39;applicazione personalizzata. Ad esempio, un’interfaccia utente o un’interfaccia a riga di comando per gestire le mappature URL oppure un modulo per caricare una mappa di riscrittura, che utilizza quindi le API di AEM per pubblicare il file della mappa di riscrittura.
 
 >[!NOTE]
 > Questa funzionalità richiede AEM versione **18311 o successiva**.
 
 >[!NOTE]
 > L&#39;utilizzo di Gestione mappe di reindirizzamento da parte di questa funzionalità richiede ACS Commons versione **6.7.0 o successiva**, mentre l&#39;utilizzo di Gestione reindirizzamenti richiede la versione **6.10.0 o successiva**.
+
+Per una guida dettagliata all&#39;implementazione, consulta l&#39;esercitazione [Implementazione di reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## Mappa di riscrittura {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## Considerazioni {#considerations}
 
 Considera quanto segue:
@@ -83,3 +84,8 @@ Considera quanto segue:
 * Per impostazione predefinita, quando si carica una mappa di riscrittura, Apache si avvia senza attendere il caricamento dei file di mappa completi, e quindi possono esserci incoerenze temporanee fino al caricamento della mappa completa. Questa impostazione può essere modificata in modo che Apache attenda il caricamento dell’intero contenuto della mappa, ma l’avvio di Apache richiede più tempo. Per modificare questo comportamento in modo che Apache attenda, aggiungi `wait:true` al file `managed-rewrite-maps.yaml`.
 * Per modificare la frequenza tra i caricamenti, aggiungere `ttl: <integer>` al file `managed-rewrite-maps.yaml`. Ad esempio: `ttl: 120`.
 * Apache ha un limite di lunghezza di 1024 per le voci singole RewriteMap.
+
+## Tutorial {#tutorials}
+
+1. [Implementazione reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [Reindirizzamenti URL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
