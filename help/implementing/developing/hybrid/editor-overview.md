@@ -4,7 +4,7 @@ description: Questo articolo offre una panoramica completa dell’editor di SPA 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -25,13 +25,13 @@ I siti costruiti utilizzando framework SPA comuni come React e Angular caricano 
 
 Per abilitare la modifica delle SPA all’interno di AEM, è necessaria una mappatura tra l’output JSON della SPA e il modello di contenuto nell’archivio AEM per salvare le modifiche al contenuto.
 
-Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il codice JS SPA caricato nell’Editor pagina con cui è possibile inviare eventi e attivare la posizione dei controlli di modifica per consentire la modifica nel contesto. Questa funzione si basa sul concetto di endpoint API di Content Services, in quanto il contenuto dell’SPA deve essere caricato tramite Content Services.
+Il supporto SPA in AEM introduce un livello JS sottile che interagisce con il codice JS SPA caricato nell’Editor pagina con cui è possibile inviare eventi e attivare la posizione dei controlli di modifica per consentire la modifica nel contesto. Questa funzione si basa sul concetto di endpoint API di Content Services, in quanto il contenuto dell’applicazione a pagina singola deve essere caricato tramite Content Services.
 
-Per maggiori dettagli sull’SPA nell’AEM, vedi:
+Per ulteriori dettagli sulle applicazioni a pagina singola in AEM, consulta:
 
-* [Blueprint SPA](blueprint.md) per i requisiti tecnici di un SPA.
-* [Guida introduttiva dell&#39;SPA nell&#39;AEM utilizzando React](getting-started-react.md) per una presentazione rapida di un semplice SPA utilizzando React.
-* [Guida introduttiva dell&#39;SPA nell&#39;AEM utilizzando l&#39;Angular](getting-started-angular.md) per una presentazione rapida di un semplice SPA utilizzando l&#39;Angular.
+* [Blueprint SPA](blueprint.md) per i requisiti tecnici di un&#39;applicazione a pagina singola.
+* [Guida introduttiva alle applicazioni a pagina singola in AEM utilizzando React](getting-started-react.md) per una presentazione rapida di una semplice applicazione a pagina singola utilizzando React.
+* [Guida introduttiva alle applicazioni a pagina singola in AEM con Angular](getting-started-angular.md) per una presentazione rapida di una semplice applicazione a pagina singola con Angular.
 
 ## Design {#design}
 
@@ -189,6 +189,6 @@ L’SDK dell’editor di SPA di AEM è completamente supportato da Adobe e conti
 * Modificare le configurazioni (ad esempio, listener)
 * Annulla/Ripeti
 * Differenze tra pagine e alterazione ora
-* Funzioni che eseguono la riscrittura HTML lato server, come Verifica collegamenti, servizio di rewriter CDN, abbreviazione degli URL e così via.
+* Funzionalità che eseguono la riscrittura lato server di HTML, ad esempio [Verifica collegamenti,](/help/operations/link-checker.md) servizio di rewriter CDN, abbreviazione URL e così via.
 * Modalità sviluppatore
 * Lanci AEM
