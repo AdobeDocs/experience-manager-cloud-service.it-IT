@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
+source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1080'
 ht-degree: 65%
 
 ---
@@ -21,7 +21,7 @@ Questo articolo illustra come creare e creare moduli autonomi con Universal Edit
 
 AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. Puoi [creare un nuovo progetto AEM preconfigurato con il Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM Site esistente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flusso di lavoro per l’archivio Github](/help/edge/assets/repo-workflow.png)
+![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width=50%}
 
 ## Prerequisiti
 
