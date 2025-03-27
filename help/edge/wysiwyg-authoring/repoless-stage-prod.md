@@ -4,9 +4,9 @@ description: Scopri come impostare siti separati per gli ambienti di staging e p
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -141,3 +141,9 @@ Dopo aver apportato tutte le modifiche di configurazione necessarie, verifica ch
 1. Visita il tuo nuovo sito Edge Delivery Services per quella pagina all&#39;indirizzo `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 Se vengono visualizzate le modifiche apportate, la configurazione separata del sito di produzione funziona correttamente.
+
+## Utilizzo {#usage}
+
+Dopo aver configurato il progetto con gli ambienti di staging e produzione di Repoless, puoi gestire il codice per tali ambienti in modo indipendente. Il diagramma seguente illustra la relazione del contenuto nei vari ambienti in AEM, nei siti Edge Delivery Services e negli archivi GitHub.
+
+![Illustrazione degli ambienti AEM e degli ambienti prod/stage ripoless](assets/repoless/aem-edge-github.png)
