@@ -3,9 +3,9 @@ title: API di consegna
 description: Scopri come utilizzare le API di consegna.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '634'
 ht-degree: 11%
 
 ---
@@ -75,11 +75,7 @@ La tabella seguente illustra l’utilizzo delle varie API di consegna disponibil
 | [Contenitore lettore per la risorsa video](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Restituisce il contenitore del lettore per la risorsa video. È possibile incorporare il lettore in un elemento iframe HTML e riprodurre il video. |
 | [Manifesti di riproduzione nel formato di output selezionato](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Restituisce il file del manifesto di riproduzione per la risorsa video specificata nel formato di output selezionato. Devi creare un lettore personalizzato in grado di eseguire lo streaming adattivo tramite i protocolli HLS o DASH per estrarre il file del manifesto di riproduzione e riprodurre il video. |
 
-
->[!NOTE]
->
-* [I predefiniti immagine, la creazione di immagini avanzate e altri modificatori di immagini](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) sono disponibili come funzionalità di disponibilità limitata. Per ottenere l&#39;accesso, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
-* Ritaglio avanzato non disponibile con [Assets Prime](/help/assets/assets-ultimate-overview.md).
+Per informazioni sulle offerte Dynamic Media disponibili e sulle relative funzionalità, consulta [Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
 
 ## Endpoint API di consegna {#delivery-apis-endpoint}
 

@@ -2,10 +2,10 @@
 title: Integrare AEM Assets remoto con AEM Sites
 description: Scopri come configurare e collegare i siti di AEM con Approved AEM Assets.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 2ec0b4125aa0990b6e022350a1f861fe394e6b1f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 17%
+source-wordcount: '1085'
+ht-degree: 16%
 
 ---
 
@@ -178,4 +178,4 @@ Viene richiesto di effettuare l&#39;accesso.
 
 ### Accedere alle risorse remote in Edge Delivery Services {#access-assets-eds}
 
-Puoi anche accedere alle risorse remote in Edge Delivery Services. Per ulteriori informazioni, consulta [Utilizzo delle risorse da Assets as a Cloud Service distribuite tramite Dynamic Media con funzionalità OpenAPI](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
+È possibile accedere alle risorse remote durante l’authoring di contenuti in Microsoft Word, Google Docs o Universal Editor e quindi pubblicarli in Edge Delivery Services. Dynamic Media può essere utilizzato anche con OpenAPI per fornire risorse approvate dal marchio e sfruttare molti altri vantaggi offerti. Per ulteriori informazioni, vedere [Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md).
