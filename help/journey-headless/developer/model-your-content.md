@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 96%
 
 ---
 
@@ -184,9 +184,10 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 * Data e ora
 * Enumerazione
 * Tag
-* Riferimento contenuto
-* Riferimento frammento
+* Riferimento frammento/UUID riferimento frammento
+* Riferimento contenuto/UUID riferimento contenuto
 * Oggetto JSON
+* Segnaposto scheda
 
 ### Riferimenti e contenuto nidificato {#references-nested-content}
 
@@ -213,7 +214,9 @@ All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Q
 >
 >Consulta Risorse aggiuntive - Frammenti di contenuto nel Browser configurazioni
 
-È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Questo può essere fatto in **Strumenti** -> **Generale** -> **Modelli per frammenti di contenuto**. Esempio:
+È quindi possibile creare modelli per frammenti di contenuto e definire la struttura. Tutto questo può essere fatto nella console Frammenti di contenuto. Dalla console, seleziona il pannello Modelli per frammenti di contenuto, passa alla cartella appropriata, quindi utilizza **Crea** per aprire la finestra di dialogo **Nuovo modello per frammenti di contenuto**.
+
+Una volta creato, puoi modificare il modello. Esempio:
 
 ![Modello per frammenti di contenuto](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ I frammenti di contenuto vengono creati in base a un modello per frammenti di co
 
 ### Selezione del modello appropriato {#select-model}
 
-Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando Crea > Frammento di contenuto, nella cartella desiderata in Risorse > File. La procedura guidata ti conduce attraverso i diversi passaggi.
-
-Un frammento di contenuto si basa su un modello per frammento di contenuto specifico, selezionato come primo passaggio del processo di creazione.
+Il primo passaggio per creare effettivamente il contenuto è la creazione di un frammento di contenuto. Questa operazione viene eseguita utilizzando **Crea** dalla scheda **Frammenti di contenuto** della console Frammenti di contenuto.
 
 ### Creazione e modifica di contenuti strutturati {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ Una volta creato il frammento, è possibile aprirlo nell’Editor frammento di c
 
 Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
 
-![Editor frammento di contenuto](assets/cfm-editor.png)
+![Editor frammento di contenuto - Panoramica](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
