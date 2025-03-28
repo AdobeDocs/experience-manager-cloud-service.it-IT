@@ -1,20 +1,18 @@
 ---
-title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Note sulla versione 2025.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2025.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: c5bf8f4f0ffa250bee9743bf1810abcf171f24d3
+source-git-commit: 4d7f72813a1806c7f20d5699f42170b9b49dbb3c
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1079'
 ht-degree: 76%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2025.3.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione funzionale 2025.3.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.4.0) è il venerdì 24 aprile 2025. La prossima versione funzionale (2025.5.0) è pianificata per il venerdì 29 maggio 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) è il venerdì 27 marzo 2025. La prossima versione funzionale (2025.4.0) è pianificata per il venerdì 24 aprile 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
