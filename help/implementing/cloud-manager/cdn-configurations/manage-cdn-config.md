@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: 41155a724f48ad28a12aac615a3e9a13bb3afa26
+source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1075'
 ht-degree: 8%
 
 ---
@@ -67,31 +67,33 @@ I passaggi per modificare una configurazione CDN dalla pagina **Ambienti** sono 
 
 1. Fai clic su **Aggiorna**.
 
-<!-- 
-## Go live readiness: Configure DNS settings for a custom domain {#go-live-readiness} 
 
-Before a custom domain can serve traffic in Adobe Cloud Manager, you must complete DNS configuration with your DNS provider. After deploying a domain mapping and clicking **Go live**, Cloud Manager displays a dialog box that guides you through the DNS record setup process. You have the option to go live by adding either a CNAME record type or an A record type representing Fastly's IPs, simplifying domain routing. This ability eliminates the restriction of relying solely on CNAME records for domain setup with Fastly.
+## Preparazione Go Live: configurazione delle impostazioni DNS per un dominio personalizzato {#go-live-readiness}
 
-MAYBE There is support for A record types to improve Go Live readiness for domains using CDN configurations in AEM Cloud Manager. MAYBE
+Prima che un dominio personalizzato possa gestire il traffico, è necessario completare la configurazione DNS con il provider DNS. Dopo aver distribuito una mappatura di dominio e aver fatto clic su **Go live**, Cloud Manager visualizza una finestra di dialogo che ti guida attraverso il processo di configurazione dei record DNS. È possibile attivare l’opzione aggiungendo un tipo di record CNAME o A.
 
-See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record).
+<!-- See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record#adobe-managed-cert-apex-record) and [CNAME record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-cname-record). -->
 
-**To configure Go live readiness:**
+**Per configurare lo stato di preparazione al lancio:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
+1. Nel menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Social network](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Mappature dominio**.
+1. Nella tabella Mapping di dominio, fai clic su **Pubblica** alla fine di una riga corrispondente a una rete CDN di cui desideri configurare la disponibilità.
 
-1. In the left side menu, under **Services**, click ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Domain Mappings**.
+   ![Finestra di dialogo Preparazione pubblicazione](/help/implementing/cloud-manager/assets/domain-mappings-go-live-readiness.png)
 
-1. In the Domain Mappings table, click **Go live** near the end of a row that corresponds to a CDN whose Go Live readiness you want to configure. 
+1. Nella finestra di dialogo **Preparazione pubblicazione** eseguire una delle operazioni seguenti:
 
-1. In the Go live readiness dialog box, do one of the following:
+   | Opzione | Passaggi |
+   | --- | --- |
+   | Configurare RECORD A | Consigliato per domini radice come `example.com`<br><ol><li>Accedere al portale del provider di servizi DNS.<li>Passare alla sezione Record DNS.<li>Crea un record A che punti a tutti gli indirizzi IP elencati.</li></ol> |
+   | Configura CNAME | Consigliato per domini personalizzati come `www.example.com`<br><ol><li>Accedere al portale del provider di servizi DMS.<li>Passare alla sezione Record DNS.<li>Mappa [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (record CNAME) nel record DNS del provider di servizi DNS (dominio personalizzato). Questa mappatura assicura che le richieste ricevute al dominio personalizzato vengano reindirizzate al CDN di Adobe.</li></ol> |
 
-    | Configure  | Steps |
-    | --- | --- |
-    | A RECORD | Recommended for root domains like `example.com`<br><ol><li>Log in to your DNS service provider's portal.<li>Go to the DNS Records section.<li>Create an A record to point to all the listed IP addresses.<li>In the Go live readiness dialog box, click **OK**.<li>In the Domain Mappings table, under the **Status** column, click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).<br>The status is updated to **Verified** when the resolution is complete.</li></ol> |
-    | CNAME | Recommended for custom domains like `www.example.com`<br><ol><li>Log in to your DMS service provider's portal.<li>Go to the DNS Records section.<li>Map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider (your custom domain). This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN.<li>In the **Go live readiness** dialog box, click **OK** to save the record.<br>Wait for DNS propogation (may take several minutes to a few hours). When the **[!UICONTROL Status]** column in the Domamin Mappings table updates to **[!UICONTROL Verified]**, the custom domain is ready to use. You may need to click ![Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to refresh the status.</li></ol> | 
-    
--->
+1. Nella finestra di dialogo **Preparazione pubblicazione** fare clic su **OK** per salvare il record.
+
+   Attendere la propagazione DNS; potrebbero essere necessari alcuni minuti o alcune ore.
+
+   Quando la colonna **[!UICONTROL Stato]** nella tabella Mappature dominio viene aggiornata a **[!UICONTROL Verificato]**, il dominio personalizzato è pronto per l&#39;uso. Potrebbe essere necessario fare clic sull&#39;icona ![Aggiorna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) per aggiornare lo stato.
 
 ## Eliminare una configurazione CDN {#delete-cdn}
 
