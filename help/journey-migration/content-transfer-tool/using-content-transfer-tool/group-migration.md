@@ -2,9 +2,9 @@
 title: Migrazione dei gruppi
 description: Panoramica sulla migrazione dei gruppi in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ La maggior parte dei gruppi migrati è configurata per essere gestita da IMS.  C
 
 Tieni presente che i gruppi migrati non sono più considerati &quot;gruppi locali&quot; di AEM; sono gruppi pronti per IMS in AEM anche se potrebbero non esistere ancora in IMS.  Devono essere ricreati separatamente in IMS in modo che possano essere sincronizzati tra AEM e IMS.  I gruppi possono essere creati in IMS tramite Admin Console, tra gli altri metodi, singolarmente o in blocco.  Consulta [Gestione dei gruppi di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html) per informazioni dettagliate sulla creazione di gruppi singolarmente o in blocco in Admin Console.
 
-L’eccezione a questa configurazione IMS si verifica con i gruppi creati dalle raccolte Assets. Quando si crea una raccolta in AEM, vengono creati gruppi per l’accesso a tale raccolta; tali gruppi vengono migrati nel sistema cloud, ma non sono configurati per essere gestiti da IMS.  Per aggiungere utenti IMS a questi gruppi, è necessario aggiungerli nella pagina Proprietà gruppo dell’interfaccia utente di Assets, singolarmente o collettivamente, come parte di un altro gruppo IMS.
+L’eccezione a questa configurazione IMS si verifica con i gruppi creati dalle raccolte Assets e dalle cartelle private. Quando si crea una raccolta o una cartella privata in AEM, vengono creati dei gruppi per l’accesso a tale contenuto; tali gruppi vengono migrati nel cloud system, ma non sono configurati per essere gestiti da IMS.  Per aggiungere utenti IMS a questi gruppi, è necessario aggiungerli nella pagina Proprietà gruppo dell’interfaccia utente di Assets, singolarmente o collettivamente, come parte di un altro gruppo IMS.
 
 
 ## Migrazione del gruppo di rinuncia {#group-migration-option}

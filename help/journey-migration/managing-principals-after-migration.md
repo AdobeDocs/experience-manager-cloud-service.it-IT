@@ -2,10 +2,10 @@
 title: Gestione delle entità principali dopo la migrazione
 description: Scopri come configurare utenti e gruppi in IMS e AEM
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: 1c638f3d1cca4f97eb1f760054febd405b5714f5
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 79%
+source-wordcount: '851'
+ht-degree: 61%
 
 ---
 
@@ -38,7 +38,7 @@ Una volta effettuata la migrazione del contenuto all’ambiente AEM as a Cloud S
 
 Durante la fase di acquisizione della migrazione, i gruppi vengono migrati se sono necessari per soddisfare i criteri ACL o CUG sul contenuto migrato.  Per ulteriori dettagli, consulta la sezione [Migrazione dei gruppi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
-I gruppi migrati (quelli che non sono stati creati tramite la creazione di raccolte di risorse, consulta Raccolte di seguito) sono configurati come gruppi IMS.  Ciò significa che qualsiasi gruppo con lo stesso nome creato in IMS (tramite Admin Console, ad esempio) sarà collegato al gruppo in AEM e gli utenti che sono membri del gruppo IMS diventeranno membri del gruppo anche in AEM.  Affinché questo collegamento si verifichi, il gruppo deve prima essere creato anche in IMS.  Utilizza Admin Console per creare i gruppi, singolarmente o in blocco, nell’istanza AEM, come descritto in [Gestione delle entità principali in IMS con Admin Console](/help/journey-migration/managing-principals.md).
+I gruppi migrati (quelli non creati dalla raccolta Assets o dalla creazione di cartelle private, consulta Raccolte e cartelle private di seguito) sono configurati come gruppi IMS.  Ciò significa che qualsiasi gruppo con lo stesso nome creato in IMS (tramite Admin Console, ad esempio) sarà collegato al gruppo in AEM e gli utenti che sono membri del gruppo IMS diventeranno membri del gruppo anche in AEM.  Affinché questo collegamento si verifichi, il gruppo deve prima essere creato anche in IMS.  Utilizza Admin Console per creare i gruppi, singolarmente o in blocco, nell’istanza AEM, come descritto in [Gestione delle entità principali in IMS con Admin Console](/help/journey-migration/managing-principals.md).
 
 Utilizza l’interfaccia utente di AEM Security per assegnare gruppi IMS a gruppi AEM locali. A questo scopo, vai alla pagina Strumenti di AEM, fai clic su Sicurezza e scegli Gruppi.
 
@@ -48,15 +48,15 @@ Poiché non viene effettuata la migrazione degli utenti, è necessario crearli i
 
 Per sapere a quali gruppi ogni utente deve appartenere, puoi utilizzare il Report utente (consulta [Migrazione dei gruppi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)).  Questo rapporto elenca i gruppi di cui ogni utente deve essere membro e questo elenco verrà normalmente incluso nel file di input dell’utente in blocco da utilizzare con la funzionalità di caricamento in blocco di Admin Console.
 
-### Raccolte
+### Raccolte e cartelle private
 
-La creazione di una raccolta di risorse crea automaticamente anche alcuni gruppi per gestire l’accesso a tale raccolta.  Questi gruppi vengono migrati se sono menzionati nelle raccolte migrate, ma non sono configurati per collegarsi direttamente ai gruppi IMS. In AEM rimangono “gruppi locali” e non possono essere gestiti tramite IMS.
+La creazione di una raccolta Assets o di una cartella privata crea automaticamente anche alcuni gruppi per gestire l’accesso a tale contenuto Assets.  Questi gruppi vengono migrati se sono menzionati nel contenuto migrato, ma non sono configurati per collegarsi direttamente ai gruppi IMS; in AEM rimangono &quot;gruppi locali&quot; e non possono essere gestiti tramite IMS.
 
 Poiché questi gruppi non sono in IMS, non è possibile utilizzare lo strumento di caricamento in blocco per creare gli utenti come membri diretti.  Gli utenti IMS che sono anche in AEM possono essere aggiunti a questi gruppi singolarmente, ma per farlo in blocco richiede un passaggio aggiuntivo.  Di seguito è riportato un modo in cui è possibile eseguire questa operazione:
-* Crea uno o più nuovi gruppi in Admin Console/IMS per accedere alle raccolte e configurali per AEM.
+* Crea un nuovo gruppo o nuovi gruppi in Admin Console/IMS per accedere a raccolte o cartelle private e configurali per AEM.
 * Accedi come membro del gruppo o dei gruppi in modo che vengano creati in AEM.
-* Per le raccolte migrate, utilizza l’interfaccia utente Raccolte di risorse per aggiungere il nuovo gruppo come editor/proprietario/visualizzatore.
+* Per le raccolte o le cartelle private migrate, utilizza l’interfaccia utente di Assets per aggiungere il nuovo gruppo come editor/proprietario/visualizzatore.
 * Aggiungi utenti (o carica in blocco) ai nuovi gruppi in Admin Console.
-* Quando l’utente accede per la prima volta, il relativo utente IMS verrà creato in AEM e deve avere accesso ai nuovi gruppi e quindi ai gruppi di raccolta originali.
+* Quando l’utente accede a per la prima volta, il suo utente IMS verrà creato in AEM e dovrebbe avere accesso ai nuovi gruppi e quindi alla raccolta originale o ai gruppi di cartelle private.
 
 Nota: per l&#39;assegnazione in blocco degli utenti, è necessario utilizzare i passaggi precedenti per creare gli utenti in IMS; gli utenti già esistenti in IMS non possono essere creati nuovamente tramite il caricamento in blocco, anche se è possibile utilizzare l&#39;editor in blocco per apportare questo tipo di modifiche (vedi [Caricamento utenti in blocco Admin Console](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) in **Modifica dettagli utente**).
