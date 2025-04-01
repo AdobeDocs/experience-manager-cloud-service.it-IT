@@ -323,7 +323,7 @@ ht-degree: 99%
          + [Eliminazione di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestione delle entità principali dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
-         + [Caricamento in blocco di entità in IMS dopo la migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
+         + [Caricamento in blocco delle entità principali in IMS dopo la migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Strumento di mappatura utenti precedenti (legacy){#legacy-user-mapping-tool}
             + [Panoramica](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
@@ -1048,7 +1048,7 @@ ht-degree: 99%
          + [Proteggere i moduli dallo spam - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [Come pubblicare e distribuire moduli - Guida alla pubblicazione con l’editor universale](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Componenti per moduli personalizzati - Guida all’editor universale per sviluppatori](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Integrazione del modello dati modulo: integrazione di Forms con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Integrazione del modello dati modulo: integrazione di moduli con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Segmenti riutilizzabili, modulari e autonomi: creazione e utilizzo di frammenti di modulo nei moduli](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
@@ -1391,7 +1391,7 @@ ht-degree: 99%
          + [Internazionalizzazione delle stringhe dell’interfaccia utente](/help/implementing/developing/extending/i18n/dev.md)
          + [Utilizzo di Translator per gestire i dizionari](/help/implementing/developing/extending/i18n/translator.md)
          + [Estrazione delle stringhe per la traduzione](/help/implementing/developing/extending/i18n/extract.md)
-      + [Estensioni e Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+      + [Estensioni ed Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + Implementazione in AEM as a Cloud Service {#deploying}
       + [Implementazione in AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Aggiornamenti della versione di AEM](/help/implementing/deploying/aem-version-updates.md)

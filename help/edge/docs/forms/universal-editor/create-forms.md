@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 65%
+ht-degree: 83%
 
 ---
 
@@ -45,20 +45,20 @@ Con l’editor universale puoi progettare rapidamente moduli indipendenti intera
 
 ### Creare un modulo
 
-1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
-1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata.
+1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Moduli adattivi]**. Viene aperta la procedura guidata.
 1. Nella scheda **Origine**, seleziona un modello per moduli basato su Edge Delivery Services:
 
    ![Crea moduli EDS](/help/edge/assets/create-eds-forms.png)
 
 
    Quando selezioni un modello basato su Edge Delivery Services, il pulsante **[!UICONTROL Crea]** è abilitato.
-1. (Facoltativo) Nelle schede **[!UICONTROL Data Source]** o **[!UICONTROL Invio]**, puoi selezionare un&#39;origine dati o inviare un&#39;azione.
+1. (Facoltativo) Nelle schede **[!UICONTROL Origine dati]** o **[!UICONTROL Invio]**, puoi selezionare un’origine dati o un’azione di invio.
 1. (Facoltativo) Nella scheda **[!UICONTROL Consegna]**, puoi specificare una data di pubblicazione o di annullamento della pubblicazione per un modulo.
 
 1. Fai clic su **[!UICONTROL Crea]** per visualizzare la procedura guidata **Crea modulo**.
-1. Specificare **Nome** e **Titolo**.
+1. Specifica **Nome** e **Titolo**.
 1. Specifica l’**URL di GitHub**. Ad esempio, se l’archivio GitHub è denominato `edsforms` e si trova sotto l’account `wkndforms`, l’URL è:
    `https://github.com/wkndforms/edsforms`
 1. Fai clic su **[!UICONTROL Crea]**.
@@ -149,10 +149,10 @@ La struttura URL rimane invariata sia per le versioni di staging sia per quelle 
 
 Puoi eseguire diverse operazioni sul modulo utilizzando l’interfaccia utente di AEM Forms.
 
-1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
-1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
-1. Selezionare un modulo e sulla barra degli strumenti vengono visualizzate le operazioni seguenti che è possibile eseguire sul modulo selezionato.
+1. Selezionando un modulo, sulla barra degli strumenti vengono visualizzate le operazioni seguenti che è possibile eseguire sul modulo selezionato.
 
 <table>
  <tbody>
@@ -162,25 +162,25 @@ Puoi eseguire diverse operazioni sul modulo utilizzando l’interfaccia utente d
   </tr>
   <tr>
    <td><p>Modifica</p> </td>
-   <td><p>Apre il modulo in modalità di modifica.<br /> <br /> </p> </td>
+   <td><p>Apre il modulo in modalità di modifica.<br /> <br />  </p> </td>
   </tr>
     <tr>
    <td><p>Proprietà</p> </td>
    <td><p>Fornisce opzioni per modificare le proprietà del modulo.<br /> <br /> </p> </td>
   </tr>
-  <td><p>Copiare</p> </td>
+  <td><p>Copia</p> </td>
    <td><p> Fornisce opzioni per copiare il modulo e incollarlo nella posizione desiderata. <br /> <br /> </p> </td>
   </tr>
    <tr>
    <td><p>Anteprima</p> </td>
-   <td><p>Fornisce opzioni per visualizzare in anteprima il modulo come HTML o per eseguire un'anteprima personalizzata unendo i dati di un file XML con il modulo. <br /> </p> </td>
+   <td><p>Fornisce opzioni per visualizzare in anteprima il modulo come HTML o per eseguire un’anteprima personalizzata unendo i dati di un file XML con il modulo. <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Download</p> </td>
+   <td><p>Scarica</p> </td>
    <td><p>Scarica il modulo selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Avvia revisione/Gestisci revisione</p> </td>
+   <td><p>Avvia/Gestisci revisione</p> </td>
    <td><p>Consente di avviare e gestire una revisione del modulo selezionato.<br /> <br /> </p> </td>
   </tr>
   <!--<tr>
@@ -196,7 +196,7 @@ Puoi eseguire diverse operazioni sul modulo utilizzando l’interfaccia utente d
    <td><p>Elimina il modulo selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Confronto</p> </td>
+   <td><p>Confronta</p> </td>
    <td><p>Confronta due moduli diversi a scopo di anteprima.<br /> <br /> </p> </td>
   </tr>
  </tbody>
