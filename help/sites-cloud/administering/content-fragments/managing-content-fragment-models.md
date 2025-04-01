@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 36%
 
 ---
@@ -80,7 +80,7 @@ Nella console puoi osservare tre aree principali:
          * Mostra informazioni sullo stato del modello
       * [Alcuni altri campi di informazioni](#information-content-fragments) su un modello per frammenti di contenuto possono essere utilizzati per [Filtro rapido](#fast-filtering):
          * Seleziona un valore nella colonna e viene immediatamente applicato come filtro
-         * Il filtro rapido è supportato per le colonne **Modificato da**, **Pubblicato da** e **Stato**
+         * Il filtro rapido è supportato per le colonne **Modificato da**, **Pubblicato da** e **Stato**.
       * Se utilizzi il passaggio del mouse sulle intestazioni della colonna, verranno visualizzati un selettore di azioni a discesa e cursori di larghezza che ti consentono di:
          * Ordinare: selezionando l’azione appropriata per ordine crescente o decrescente. 
 In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ordinamento è disponibile solo nelle colonne appropriate.
@@ -95,7 +95,7 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
 
 * **Nome**
    * Fornisce un collegamento per aprire il modello nell’editor.
-* Bloccato
+* **Bloccato** (icona lucchetto)
    * Quando il modello è bloccato, questo viene indicato da un&#39;icona lucchetto.
 * **Percorso**
    * Fornisce il percorso come collegamento per aprire la configurazione nella console.
