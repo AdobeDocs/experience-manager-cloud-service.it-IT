@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
+source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,23 @@ ht-degree: 1%
 >
 >L’inoltro del registro è ora configurato in modo self-service, diverso dal metodo legacy, che richiedeva l’invio di un ticket di supporto Adobe. Consulta la sezione [Migrazione](#legacy-migration) se l&#39;inoltro del registro è stato configurato da Adobe.
 
-I clienti con una licenza di un fornitore di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri AEM (incluso Apache/Dispatcher) e CDN alla destinazione di registrazione associata. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
+I clienti con una licenza di un fornitore di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri di AEM (incluso Apache/Dispatcher) e i registri CDN alla destinazione di registrazione associata. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
+* Amazon S3 (versione beta privata, vedi [^1])
 * Archiviazione BLOB di Azure
 * Datadog
 * Elasticsearch o OpenSearch
 * HTTPS
 * Splunk
+* Logica di riepilogo (versione beta privata, vedere [^1])
 
-L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e può essere distribuito tramite pipeline di configurazione Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. Il file di configurazione può essere distribuito negli ambienti di sviluppo rapido (RDE) utilizzando gli strumenti della riga di comando.
+L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e può essere distribuito tramite pipeline di configurazione Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. Il file di configurazione può essere implementato negli ambienti di sviluppo rapido (RDE, Rapid Developement Environments) utilizzando gli strumenti della riga di comando.
 
-È disponibile un’opzione per instradare i registri AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata dell’AEM, ad esempio l’IP in uscita dedicato.
+È disponibile un’opzione per instradare i registri AEM e Apache/Dispatcher tramite l’infrastruttura di rete avanzata di AEM, ad esempio l’IP in uscita dedicato.
 
 La larghezza di banda di rete associata ai registri inviati alla destinazione di registrazione è considerata parte dell&#39;utilizzo di I/O di rete dell&#39;organizzazione.
+
+[^1] Amazon S3 e Sumo Logic sono in Private Beta e supportano solo i registri di AEM (inclusi Apache/Dispatcher).  Anche New Relic su HTTPS è in versione beta privata. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
 
 ## Struttura di questo articolo {#how-organized}
 
@@ -87,7 +91,7 @@ I token nella configurazione (ad esempio `${{SPLUNK_TOKEN}}`) rappresentano segr
          index: "AEMaaCS_CDN"   
 ```
 
-Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei registri AEM (incluso Apache/Dispatcher). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
+Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei registri di AEM (incluso Apache/Dispatcher). Ad esempio, per inoltrare solo i registri CDN, puoi configurare quanto segue:
 
 ```yaml
    kind: "LogForwarding"
@@ -156,7 +160,7 @@ table, th, td {
 >
 > La configurazione di rete avanzata è un [processo in due fasi](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) che richiede l&#39;abilitazione a livello di programma e ambiente.
 
-Per i registri AEM (incluso Apache/Dispatcher), se hai configurato [Rete avanzata](/help/security/configuring-advanced-networking.md), puoi utilizzare la proprietà `aem.advancedNetworking` per inoltrarli da un indirizzo IP in uscita dedicato o tramite una VPN.
+Per i registri di AEM (incluso Apache/Dispatcher), se hai configurato [Rete avanzata](/help/security/configuring-advanced-networking.md), puoi utilizzare la proprietà `aem.advancedNetworking` per inoltrarli da un indirizzo IP in uscita dedicato o tramite una VPN.
 
 L’esempio seguente mostra come configurare la registrazione su una porta HTTPS standard con rete avanzata.
 
@@ -177,14 +181,51 @@ data:
       advancedNetworking: true
 ```
 
-Per i registri CDN, puoi inserire nell&#39;elenco Consentiti gli indirizzi IP, come descritto in [Documentazione Fastly - Elenco IP pubblici](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco degli indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
+Per i registri CDN, puoi inserire nell&#39;elenco Consentiti gli indirizzi IP, come descritto in [Documentazione Fastly - Elenco IP pubblici](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
 
 >[!NOTE]
->Non è possibile che i registri CDN vengano visualizzati dallo stesso indirizzo IP da cui vengono visualizzati i registri AEM, perché i registri vengono inviati direttamente da Fastly e non da AEM Cloud Service.
+>Non è possibile che i registri CDN vengano visualizzati dallo stesso indirizzo IP da cui vengono visualizzati i registri di AEM, perché i registri vengono inviati direttamente da Fastly e non da AEM Cloud Service.
 
 ## Registrazione della configurazione di destinazione {#logging-destinations}
 
 Di seguito sono elencate le configurazioni per le destinazioni di registrazione supportate, insieme a eventuali considerazioni specifiche.
+
+### Amazon S3 {#amazons3}
+
+>
+>Registri scritti periodicamente in S3, ogni 10 minuti per ogni tipo di file di registro.  Questo può causare un ritardo iniziale nella scrittura dei registri in S3, una volta che la funzione è attivata.  Ulteriori informazioni sui motivi per cui questo comportamento esiste sono disponibili [qui](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+
+```yaml
+kind: "LogForwarding"
+version: "1.0"
+data:
+  awsS3:
+    default:
+      enabled: true
+      region: "your-bucket-region"
+      bucket: "your_bucket_name"
+      accessKey: "${{AWS_S3_ACCESS_KEY}}"
+      secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
+```
+
+Per utilizzare il server di inoltro registro S3, è necessario preconfigurare un utente IAM di AWS con i criteri appropriati per l’accesso al bucket S3.  Per informazioni su come creare le credenziali utente IAM, consulta [qui](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+
+I criteri IAM devono consentire all&#39;utente di utilizzare `s3:putObject`.  Ad esempio:
+
+```json
+{
+   "Version": "2012-10-17",
+   "Statement": [{
+       "Effect": "Allow",
+       "Action": [
+           "s3:PutObject"
+       ],
+       "Resource": "arn:aws:s3:::your_bucket_name/*"
+   }]
+}
+```
+
+Consulta [qui](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) per ulteriori informazioni sull&#39;implementazione dei criteri bucket di AWS.
 
 ### Archiviazione BLOB di Azure {#azureblob}
 
@@ -243,7 +284,7 @@ Ogni file contiene più voci di registro json, ciascuna su una riga separata. I 
 
 #### Registri AEM archiviazione BLOB di Azure {#azureblob-aem}
 
-I registri AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
+I registri di AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
 
 * aemaccess
 * aemerror
@@ -279,7 +320,7 @@ Considerazioni:
 
 * Crea una chiave API, senza alcuna integrazione con un provider cloud specifico.
 * La proprietà tags è facoltativa
-* Per i registri AEM, il tag di origine Datadog è impostato su uno dei seguenti valori: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
+* Per i registri di AEM, il tag di origine Datadog è impostato su uno dei seguenti valori: `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
 * Per i registri CDN, il tag di origine Datadog è impostato su `aemcdn`
 * Il tag del servizio Datadog è impostato su `adobeaemcloud`, ma è possibile sovrascriverlo nella sezione dei tag
 * Se la pipeline di acquisizione utilizza i tag Datadog per determinare l’indice appropriato per i registri di inoltro, verifica che tali tag siano configurati correttamente nel file YAML di inoltro del registro. I tag mancanti possono impedire l’acquisizione corretta del registro, se la pipeline dipende da essi.
@@ -308,8 +349,8 @@ Considerazioni:
 
 ![Credenziali distribuzione elastica](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* Per i registri AEM, `index` è impostato su uno di `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
-* La proprietà opzionale della pipeline deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
+* Per i registri di AEM, `index` è impostato su uno di `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` o `aemhttpderror`
+* La proprietà della pipeline opzionale deve essere impostata sul nome della pipeline di acquisizione Elasticsearch o OpenSearch, che può essere configurata per instradare la voce di registro all’indice appropriato. Il tipo di processore della pipeline deve essere impostato su *script* e il linguaggio di script su *indolore*. Di seguito è riportato un frammento di script di esempio per instradare le voci di registro in un indice come aemaccess_dev_26_06_2024:
 
 ```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -339,6 +380,13 @@ Considerazioni:
 * La stringa URL deve includere **https://**, altrimenti la convalida non riuscirà.
 * L’URL può includere una porta. Ad esempio, `https://example.com:8443/aem_logs/aem`. Se nella stringa URL non è inclusa alcuna porta, viene utilizzata la porta 443 (la porta HTTPS predefinita).
 
+#### API registro New Relic {#newrelic-https}
+
+Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
+
+>
+>New Relic fornisce endpoint specifici per l’area geografica in base alla posizione in cui è stato eseguito il provisioning dell’account New Relic.  Consulta [qui](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) per la documentazione di New Relic.
+
 #### Registri CDN HTTPS {#https-cdn}
 
 Le richieste Web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con il formato di voce di registro descritto in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-formats) di seguito.
@@ -349,9 +397,9 @@ Esiste anche una proprietà denominata `sourcetype`, impostata sul valore `aemcd
 >
 > Prima dell&#39;invio della prima voce di registro CDN, il server HTTP deve completare una richiesta una tantum: una richiesta inviata al percorso ``/.well-known/fastly/logging/challenge`` deve rispondere con un asterisco ``*`` nel corpo e il codice di stato 200.
 
-#### Registri AEM HTTPS {#https-aem}
+#### Registri HTTPS AEM {#https-aem}
 
-Per i registri AEM (incluso apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voci di registro come descritto in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-formats) di seguito.
+Per i registri di AEM (incluso apache/dispacher), le richieste web (POST) verranno inviate in modo continuo, con un payload json che è un array di voci di registro, con i vari formati di voci di registro come descritto in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Proprietà aggiuntive sono menzionate nella sezione [Formati di voce di registro](#log-formats) di seguito.
 
 Esiste anche una proprietà denominata `Source-Type`, impostata su uno dei seguenti valori:
 
@@ -389,24 +437,30 @@ Considerazioni:
 >
 > [Se si esegue la migrazione di](#legacy-migration) da Log Forwarding legacy a questo modello self-service, i valori del campo `sourcetype` inviati all&#39;indice Splunk potrebbero essere cambiati, quindi apportare le modifiche necessarie.
 
-<!--
-### Sumo Logic {#sumologic}
+### Logica sumo {#sumologic}
 
-   ```yaml
-   kind: "LogForwarding"
-   version: "1"
-   metadata:
-     envTypes: ["dev"]
-   data:
-     splunk:
-       default:
-         enabled: true
-         host: "https://collectors.de.sumologic.com"
-         uri: "/receiver/v1/http"
-         privateKey: "${{SomeOtherToken}}"
-   
-   ```   
--->
+Durante la configurazione di Sumo Logic per l’acquisizione dei dati, viene visualizzato un &quot;indirizzo HTTP Source&quot; che fornisce l’host, l’URI del ricevitore e la chiave privata in una singola stringa.  Ad esempio:
+
+`https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
+
+È necessario copiare l&#39;ultima sezione dell&#39;URL (senza `/` precedente) e aggiungerla come [Variabile di ambiente segreta di CloudManager](/help/operations/config-pipeline.md#secret-env-vars) come descritto nella sezione [Configurazione](#setup) precedente, quindi fare riferimento a tale variabile nella configurazione.  Di seguito è riportato un esempio.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  sumologic:
+    default:
+      enabled: true
+      collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
+      privateKey: "${{SUMOLOGIC_PRIVATE_KEY}}"
+      index: "aem-logs"
+```
+
+>
+> Per sfruttare la funzionalità del campo &quot;indice&quot; è necessario un abbonamento Sumo Logic Enterprise.  I registri delle sottoscrizioni non Enterprise verranno instradati alla partizione `sumologic_default` come standard.  Per ulteriori informazioni, vedere la [documentazione sul partizionamento logico Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/).
 
 ## Formati voce registro {#log-formats}
 
@@ -436,7 +490,7 @@ I clienti che sono stati configurati in questo modo da Adobe sono invitati ad ad
 
 * È stato eseguito il provisioning di un nuovo ambiente (ad esempio, un nuovo ambiente di sviluppo o RDE).
 * Modifiche all’endpoint o alle credenziali Splunk esistenti.
-* Adobe ha configurato l’inoltro dei registri prima che i registri CDN fossero disponibili e desideri ricevere i registri CDN.
+* Adobe ha configurato l’inoltro dei registri prima che fossero disponibili i registri CDN e desideri ricevere i registri CDN.
 * Una decisione consapevole di adattarsi in modo proattivo al modello self-service in modo che l’organizzazione disponga delle conoscenze necessarie anche prima che sia necessario un cambiamento sensibile al tempo.
 
 Per eseguire la migrazione, è sufficiente configurare il file YAML come descritto nelle sezioni precedenti. Utilizza la pipeline di configurazione Cloud Manager per distribuire in ciascuno degli ambienti in cui deve essere applicata la configurazione.
