@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: cd19612597d8f1841062bbc8de253ee7271adce3
+source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1514'
 ht-degree: 21%
 
 ---
@@ -36,13 +36,11 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-25433: supporta il rendering a pagina intera quando si confrontano versioni precedenti.
 * SITES-25923: LinkInfoStorageImpl può bloccarsi se non vengono più archiviati URL.
 * SITES-26208: L’eliminazione di un frammento di contenuto tramite un flusso di lavoro ora consente di aggiornare le risorse di riferimento rimuovendo il frammento appena eliminato.
-* SITES-26400: abbassa la barriera per adottare il servizio Edge Delivery migliorando, semplificando e rafforzando il Crosswalk
 * SITES-26500: aggiunta dell&#39;opzione per spostare i frammenti di contenuto tramite il flusso di lavoro - `move-fragments`.
 * SITES-26711: Attivatore rollout - I collegamenti non vengono aggiornati.
 * SITES-27583: i frammenti di esperienza perdono la cronologia delle versioni dopo essere stati spostati.
 * SITES-27618: la ricerca dei riferimenti di un frammento nelle pagine non restituisce tutti i risultati.
 * SITES-27781: è stata implementata la convalida a livello di modello per i riferimenti ai frammenti di contenuto, che consente di convalidare i frammenti di riferimento in base ai vincoli di modello e al tag richiesto.
-* SITES-27782: Crea agente di pubblicazione e sottoscrizione specifico per il crosswalk.
 * SITES-27784: Aggiornare la generazione di query SQL per utilizzare la funzione PATH anziché `jcr:path`.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener è danneggiato.
 * SITES-28051: ottiene le autorizzazioni dell&#39;utente corrente per un frammento di contenuto: GET /cf/fragments/{fragmentId}/permissions.
@@ -65,6 +63,10 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-2947: crea/modifica la visualizzazione kibana per confrontare i rasp di pubblicazione.
 * SITES-29733: sono state migliorate le prestazioni della ricerca di modelli tramite tag di Frammenti di contenuto.
 * SITES-8316: Criteri contenuto: memorizzare in cache ContentPolicyManager.
+* SITES-24906: Edge Delivery con Universal Editor: supporta fogli di calcolo creati dall’autore senza una mappatura (accesso anticipato)
+* SITES-24907: Edge Delivery con Universal Editor: supporto per la pubblicazione di Assets su più siti per casi di utilizzo MSM (accesso anticipato)
+* SITES-27956: Edge Delivery con Universal Editor: migliorare la velocità effettiva di pubblicazione (accesso anticipato)
+* SITES-27956: Edge Delivery con Universal Editor: migliorare la gestione degli errori per la pubblicazione su Edge Delivery Services (accesso anticipato)
 
 ### Problemi risolti {#fixed-issues-20133}
 
@@ -90,7 +92,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-26881: bug nell’accessibilità di AEMaaCS: viene fornito un ruolo non corretto per l’icona &quot;Tre punti&quot; accanto al campo di input del commento.
 * SITES-26956: Completare su SITES-24920 Impossibile spostare la pagina nell’ambiente di produzione.
 * SITES-27707: L’elenco delle risorse di Content Finder non riesce a causa di problemi con i nomi delle risorse (regressione di 6.5 SP22).
-* SITES-27757: l’icona non riscrive in modo preciso con helix-html-pipeline.
+* SITES-27757: Edge Delivery con Universal Editor: riscrivere le icone in base alla semantica helix-html-pipeline.
 * SITES-27780: Il tag &lt;br> imprevisto viene visualizzato nell’editor Rich Text con Plaintext DefaultPasteMode in SP22.
 * SITES-27958: Linkchecker genera errori &quot;Questa sessione è stata chiusa&quot;.
 * SITES-28149: ExperienceFragmentLinkRewriterProvider personalizzato non attivato durante l’esportazione XF in Target.
