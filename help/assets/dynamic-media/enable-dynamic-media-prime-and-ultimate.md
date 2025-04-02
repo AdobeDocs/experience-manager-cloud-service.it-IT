@@ -4,10 +4,10 @@ description: Scopri come abilitare  [!DNL Dynamic Media] le offerte Prime e Ulti
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 2%
+source-wordcount: '1077'
+ht-degree: 4%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
         <td>
             <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
@@ -53,7 +53,7 @@ Questo articolo fornisce il flusso di lavoro end-to-end per abilitare le offerte
 
 ## Abilita Ultimate [!DNL Dynamic Media] {#enable-dynamic-media-ultimate}
 
-Per abilitare [!DNL Dynamic Media] Ultimate, esegui i seguenti passaggi nell&#39;ambiente del servizio cloud:
+Per abilitare [!DNL Dynamic Media] Ultimate:
 
 1. [Attiva [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [Configura [!DNL Dynamic Media] soluzioni](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Se la creazione della società [!DNL Dynamic Media] non riesce, eseguire i passa
 
 1. Se **[!UICONTROL Stato]** è In sospeso, segnalare il problema al team di assistenza clienti per risolverlo.
 
-   ![stato in sospeso](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![stato in sospeso](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Se **[!UICONTROL Stato]** non riesce, riprovare in base al motivo dell&#39;errore.
 
-   ![stato non riuscito](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![stato non riuscito](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Facoltativo: configurare il dominio personalizzato nel livello di consegna {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## Abilita Prime [!DNL Dynamic Media] {#enable-dynamic-media-prime}
 
-Eseguire i seguenti passaggi nell&#39;ambiente del servizio cloud per abilitare [!DNL Dynamic Media] Prime:
+Per abilitare [!DNL Dynamic Media] Prime:
 
 1. [Attiva Dynamic Media con OpenAPI](#activate-dynamic-media-with-openapi)
 1. [Facoltativo: configurare il dominio personalizzato nel livello di consegna](#configure-custom-domain-in-delivery-tier)
