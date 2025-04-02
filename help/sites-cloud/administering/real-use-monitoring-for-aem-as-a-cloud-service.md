@@ -4,9 +4,9 @@ description: Scopri Real Use Monitoring (RUM), un servizio automatizzato che con
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: e6a610c56b9ad7a684ea9f5ef72199d3bed28cc0
+source-git-commit: f3091a3868ac57150afd6f1640709ce3e9566bac
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,7 @@ Il servizio RUM (Real Use Monitoring) è una tecnologia di monitoraggio delle pr
 
 ## Chi può trarre vantaggio da un servizio di monitoraggio Real Use? {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring aiuta i clienti e Adobe a comprendere come gli utenti finali interagiscono con i siti AEM. Monitoraggio Real Use consente di diagnosticare i problemi di prestazioni e di misurare l&#39;efficacia degli esperimenti. Il monitoraggio dell’utilizzo reale preserva la privacy dei visitatori attraverso il campionamento (viene monitorata solo una piccola parte di tutte le visualizzazioni di pagina) e non viene raccolta alcuna informazione personale identificabile (PII).
-
-## Servizio di monitoraggio Real Use e privacy {#rum-service-and-privacy}
-
-Il servizio Real Use Monitoring in AEM mantiene la privacy dei visitatori e riduce al minimo la raccolta dei dati. In qualità di visitatore, significa che il sito che stai visitando o che stai rendendo disponibile ad Adobe non raccoglie informazioni personali.
-
-In qualità di operatore del sito, non è necessario alcun consenso aggiuntivo per abilitare il monitoraggio tramite questa funzione. Non esiste alcun modulo aggiuntivo a comparsa o di consenso che gli utenti finali possano accettare per abilitare RUM.
+Real Use Monitoring aiuta i clienti e Adobe a comprendere come gli utenti finali interagiscono con i siti AEM. Real Use Monitoring preserva la privacy dei visitatori attraverso una raccolta e un campionamento di dati limitati: viene monitorata solo una piccola parte di tutte le visualizzazioni di pagina.
 
 ## Campionamento dei dati del servizio di monitoraggio Real Use {#rum-service-data-sampling}
 
@@ -43,7 +37,7 @@ Quando si decide se raccogliere o meno i dati, la procedura avviene in modalità
 
 ## Quali dati vengono raccolti? {#what-data-is-being-collected}
 
-Il servizio Real Use Monitoring è progettato per impedire la raccolta di informazioni personali. Di seguito sono elencate tutte le informazioni raccolte da RUM:
+Il servizio Real Use Monitoring è progettato per ridurre al minimo la raccolta di dati. Di seguito sono elencate tutte le informazioni raccolte da RUM:
 
 * Il nome host del sito visitato, ad esempio: `experienceleague.adobe.com`
 * Tipo di agente utente e sistema operativo utilizzati per visualizzare la pagina, ad esempio: `desktop:windows` o `mobile:ios`
@@ -105,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    La libreria RUM e la raccolta RUM non vengono conteggiate come richieste di contenuto e non aumentano il numero riportato di visualizzazioni di pagina o chiamate API. Inoltre, per i clienti che utilizzano una rete CDN preconfigurata con AEM as a Cloud Service, la [raccolta lato server](#serverside-collection) è la base per le richieste di contenuto.
 
-1. **Come posso rinunciare?**
+1. **Come disabilitare RUM?**
 
    Adobe consiglia di utilizzare il Monitoraggio utilizzo reale (RUM) per i suoi vantaggi significativi e per consentire ad Adobe di ottimizzare le esperienze digitali migliorando le prestazioni del sito web. Il servizio è progettato per essere semplice e non ha alcun impatto sulle prestazioni del sito web.
 
