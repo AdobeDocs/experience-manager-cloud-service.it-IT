@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2364'
 ht-degree: 9%
 
 ---
@@ -18,24 +18,24 @@ AEM as a Cloud Service è una piattaforma che consente ai clienti di includere c
 Le impostazioni di registrazione e i livelli di registro di AEM as a Cloud Service vengono gestiti in file di configurazione memorizzati come parte del progetto AEM in Git e distribuiti come parte del progetto AEM tramite Cloud Manager. La registrazione in AEM as a Cloud Service può essere suddivisa in tre set logici:
 
 * Registrazione AEM, che esegue la registrazione a livello di applicazione AEM
-* Registrazione del server web/Dispatcher Apache HTTPD, che esegue la registrazione del server web e di Dispatcher sul livello Publish.
-* La registrazione CDN, indicata dal nome, esegue la registrazione sulla CDN. Questa funzione verrà gradualmente implementata per i clienti a inizio settembre.
+* Registrazione del server web/Dispatcher Apache HTTPD, che esegue la registrazione del server web e di Dispatcher sul livello di pubblicazione.
+* La registrazione CDN, indicata dal nome, esegue la registrazione sulla CDN.
 
 ## Registrazione AEM {#aem-logging}
 
 La registrazione a livello di applicazione AEM è gestita da tre registri:
 
-1. Registri Java AEM, che restituiscono istruzioni di registrazione Java per l’applicazione AEM.
-1. Registri di richieste HTTP, che registrano le informazioni sulle richieste HTTP e le relative risposte fornite dall’AEM
-1. Registri di accesso HTTP, che registrano le informazioni di riepilogo e le richieste HTTP gestite dall’AEM
+1. Registri Java di AEM, che eseguono il rendering delle istruzioni di registrazione Java per l’applicazione AEM.
+1. Registri di richieste HTTP, che registrano le informazioni sulle richieste HTTP e le relative risposte fornite da AEM
+1. Registri di accesso HTTP, che registrano informazioni di riepilogo e richieste HTTP gestite da AEM
 
 >[!NOTE]
 >
->Le richieste HTTP che vengono servite dalla cache Dispatcher del livello Publish o dalla rete CDN a monte non vengono riportate in questi registri.
+>Le richieste HTTP che vengono servite dalla cache Dispatcher del livello di pubblicazione o dalla rete CDN a monte non vengono riportate in questi registri.
 
 ## Registrazione Java AEM {#aem-java-logging}
 
-AEM as a Cloud Service fornisce accesso alle istruzioni di registro Java. Gli sviluppatori di applicazioni per AEM devono seguire le best practice generali relative alla registrazione Java, registrando le istruzioni pertinenti sull’esecuzione del codice personalizzato, ai seguenti livelli di registro:
+AEM as a Cloud Service fornisce accesso alle istruzioni di registro Java. Gli sviluppatori di applicazioni per AEM devono seguire le best practice generali per la registrazione Java, registrando le istruzioni pertinenti sull’esecuzione del codice personalizzato, ai seguenti livelli di registro:
 
 <table>
 <tr>
@@ -97,7 +97,7 @@ Quando la registrazione degli errori è attiva, vengono registrate solo le istru
 
 Sebbene la registrazione Java supporti diversi altri livelli di granularità della registrazione, AEM as a Cloud Service consiglia di utilizzare i tre livelli descritti in precedenza.
 
-I livelli di registro AEM sono impostati per tipo di ambiente tramite la configurazione OSGi, che a sua volta viene eseguita su Git e implementata tramite Cloud Manager in AEM as a Cloud Service. Per questo motivo, è consigliabile mantenere le istruzioni di registro coerenti e ben note per i tipi di ambiente per garantire che i registri disponibili tramite AEM come Cloud Service siano disponibili al livello di registro ottimale senza richiedere la redistribuzione dell’applicazione con la configurazione a livello di registro aggiornata.
+I livelli di registro di AEM sono impostati per tipo di ambiente tramite la configurazione OSGi, che a sua volta viene eseguita su Git e distribuita tramite Cloud Manager in AEM as a Cloud Service. Per questo motivo, è consigliabile mantenere coerenza e conoscenza delle istruzioni di registro per i tipi di ambiente in modo che i registri disponibili tramite AEM as Cloud Service siano disponibili al livello di registro ottimale senza richiedere la ridistribuzione dell’applicazione con la configurazione a livello di registro aggiornata.
 
 **Esempio di output del registro**
 
@@ -135,14 +135,14 @@ I livelli di registro AEM sono impostati per tipo di ambiente tramite la configu
 </tr>
 <tr>
 <td>Messaggio di registro</td>
-<td>Nessun approvatore specificato. Impostazione predefinita: [ Gruppo utenti approvatori creativi ]</td>
+<td>Nessun approvatore specificato. Impostazione predefinita: [ Gruppo utenti approvatori Creative ]</td>
 </tr>
 </tbody>
 </table>
 
 ### Registratori configurazione {#configuration-loggers}
 
-I registri Java AEM sono definiti come configurazione OSGi e quindi sono destinati a ambienti AEM as a Cloud Service specifici utilizzando le cartelle in modalità di esecuzione.
+I registri Java di AEM sono definiti come configurazione OSGi e sono quindi destinati a ambienti AEM as a Cloud Service specifici utilizzando le cartelle in modalità di esecuzione.
 
 Configura la registrazione Java per i pacchetti Java personalizzati tramite le configurazioni OSGi per la factory Sling LogManager. Sono supportate tre proprietà di configurazione:
 
@@ -194,7 +194,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 
 ## Registrazione richieste HTTP AEM {#aem-http-request-logging}
 
-La registrazione delle richieste HTTP di AEM as a Cloud Service fornisce informazioni approfondite sulle richieste HTTP effettuate all’AEM e sulle relative risposte HTTP in ordine di tempo. Questo registro è utile per comprendere le richieste HTTP effettuate all’AEM e l’ordine in cui vengono elaborate e a cui rispondono.
+La registrazione delle richieste HTTP di AEM as a Cloud Service fornisce informazioni approfondite sulle richieste HTTP effettuate ad AEM e sulle relative risposte HTTP in ordine di tempo. Questo registro è utile per comprendere le richieste HTTP effettuate ad AEM e l’ordine in cui vengono elaborate e a cui rispondono.
 
 Per comprendere questo registro, è fondamentale mappare le coppie di richiesta HTTP e risposta in base ai rispettivi ID, indicati dal valore numerico tra parentesi. Spesso le richieste e le risposte corrispondenti presentano altre richieste HTTP e risposte interposte tra loro nel registro.
 
@@ -244,13 +244,13 @@ Per comprendere questo registro, è fondamentale mappare le coppie di richiesta 
 
 ### Configurazione del registro {#configuring-the-log}
 
-Il registro delle richieste HTTP dell’AEM non è configurabile in AEM as a Cloud Service.
+Il registro richieste HTTP di AEM non è configurabile in AEM as a Cloud Service.
 
 ## Registrazione accesso HTTP AEM {#aem-http-access-logging}
 
-La registrazione dell’accesso HTTP di Cloud Service in AEM mostra le richieste HTTP in ordine temporale. Ogni voce di registro rappresenta la richiesta HTTP che accede a AEM.
+La registrazione degli accessi HTTP in AEM as Cloud Service mostra le richieste HTTP in ordine temporale. Ogni voce di registro rappresenta la richiesta HTTP che accede ad AEM.
 
-Questo registro è utile per capire rapidamente quali richieste HTTP vengono inviate all’AEM, se queste hanno esito positivo, visualizzando il codice di stato della risposta HTTP associato e il tempo impiegato per completare la richiesta HTTP. Questo registro può essere utile anche per eseguire il debug dell’attività di un utente specifico filtrando le voci del registro in base agli utenti.
+Questo registro è utile per comprendere rapidamente quali richieste HTTP vengono effettuate ad AEM, se l’esito è positivo, visualizzando il codice di stato della risposta HTTP associato e il tempo impiegato per completare la richiesta HTTP. Questo registro può essere utile anche per eseguire il debug dell’attività di un utente specifico filtrando le voci del registro in base agli utenti.
 
 **Esempio di output del registro**
 
@@ -279,19 +279,19 @@ Il registro dell’accesso HTTP non è configurabile in AEM as a Cloud Service.
 
 ## Registrazione del server web Apache e di Dispatcher {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service fornisce tre registri per i server web Apache e il livello dispatcher su Publish:
+AEM as a Cloud Service fornisce tre registri per i server web Apache e il livello dispatcher sulla pubblicazione:
 
 * Registro accesso server web Apache HTTPD
 * Registro errori server web Apache HTTPD
 * Registro Dispatcher
 
-Questi registri sono disponibili solo per il livello Publish.
+Questi registri sono disponibili solo per il livello di pubblicazione.
 
-Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al livello Publish di AEM as a Cloud Service prima che tali richieste raggiungano l’applicazione AEM. È importante comprendere che, idealmente, la maggior parte delle richieste HTTP ai server di livello Publish sono gestite da contenuto memorizzato nella cache dal server web Apache HTTPD e da AEM Dispatcher e non raggiungono mai l’applicazione AEM stessa. Pertanto, nei registri Java, Request o Access dell’AEM non sono presenti istruzioni di registro per queste richieste.
+Questo set di registri fornisce informazioni approfondite sulle richieste HTTP al livello di pubblicazione AEM as a Cloud Service prima che tali richieste raggiungano l’applicazione AEM. È importante comprendere che, idealmente, la maggior parte delle richieste HTTP ai server di livello Publish sono gestite da contenuto memorizzato nella cache dal server web Apache HTTPD e da AEM Dispatcher e non raggiungono mai l’applicazione AEM stessa. Pertanto, nei registri Java, Request o Access di AEM non sono presenti istruzioni di registro per queste richieste.
 
 ### Registro accesso server web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-Il registro di accesso al server web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server web/Dispatcher del livello Publish. Le richieste servite da una rete CDN a monte non vengono riportate in questi registri.
+Il registro di accesso al server web Apache HTTP fornisce istruzioni per ogni richiesta HTTP che raggiunge il server web/Dispatcher del livello di pubblicazione. Le richieste servite da una rete CDN a monte non vengono riportate in questi registri.
 
 Consulta le informazioni sul formato del registro errori nella [documentazione ufficiale di Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -360,7 +360,7 @@ Questo registro non è configurabile in AEM as a Cloud Service.
 
 ## Registro errori server web Apache HTTPD {#apache-httpd-web-server-error-log}
 
-Il registro errori del server web Apache HTTP fornisce istruzioni per ogni errore nel server web/Dispatcher del livello Publish.
+Il registro errori del server web Apache HTTP fornisce istruzioni per ogni errore nel server web/Dispatcher del livello di pubblicazione.
 
 Consulta le informazioni sul formato del registro errori nella [documentazione ufficiale di Apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
@@ -403,7 +403,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 I livelli di log mod_rewrite sono definiti dalla variabile REWRITE_LOG_LEVEL nel file `conf.d/variables/global.var`.
 
-Può essere impostato su error, warn, info, debug e trace1 - trace8, con il valore predefinito warn. Per eseguire il debug di RewriteRules, si consiglia di aumentare il livello di registro a trace2. Si consiglia di eseguire il debug delle regole di riscrittura utilizzando [Dispatcher SDK](../../dispatcher/validation-debug.md). Il livello di registro massimo per AEM as a Cloud Service è `debug`. Pertanto, attualmente non è possibile eseguire il debug delle regole di riscrittura nel cloud.
+Può essere impostato su error, warn, info, debug e trace1 - trace8, con il valore predefinito warn. Per eseguire il debug di RewriteRules, si consiglia di aumentare il livello di registro a trace2. È consigliabile eseguire il debug delle regole di riscrittura utilizzando [Dispatcher SDK](../../dispatcher/validation-debug.md). Il livello di registro massimo per AEM as a Cloud Service è `debug`. Pertanto, attualmente non è possibile eseguire il debug delle regole di riscrittura nel cloud.
 
 Per ulteriori informazioni, consulta la [documentazione del modulo mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -561,11 +561,11 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 
 È possibile accedere ai registri di AEM as a Cloud Service per Cloud Services scaricandoli tramite l’interfaccia di Cloud Manager o scaricandoli dalla riga di comando tramite l’interfaccia della riga di comando di Adobe I/O. Per ulteriori informazioni, vedere la [documentazione di registrazione di Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
-### Registri per altre aree geografiche di Publish {#logs-for-additional-publish-regions}
+### Registri per aree geografiche di pubblicazione aggiuntive {#logs-for-additional-publish-regions}
 
 Se per un particolare ambiente sono abilitate ulteriori aree di pubblicazione, i registri di ciascuna area saranno disponibili per il download da Cloud Manager, come indicato in precedenza.
 
-I registri AEM e i registri dispatcher per le aree di pubblicazione aggiuntive specificheranno la regione nelle prime 3 lettere dopo l’ID ambiente, come esemplificato da **nld2** nel campione seguente, che fa riferimento a un’ulteriore istanza di pubblicazione AEM situata nei Paesi Bassi:
+I registri di AEM e i registri del dispatcher per le aree di pubblicazione aggiuntive specificheranno l’area nelle prime 3 lettere dopo l’ID ambiente, come esemplificato da **nld2** nell’esempio seguente, che fa riferimento a un’ulteriore istanza di pubblicazione di AEM situata nei Paesi Bassi:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
@@ -573,13 +573,13 @@ cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:1
 
 ### SDK locale {#local-sdk}
 
-L’SDK di AEM as a Cloud Service fornisce file di registro per supportare lo sviluppo locale.
+AEM as a Cloud Service SDK fornisce file di registro per supportare lo sviluppo locale.
 
-I registri AEM si trovano nella cartella `crx-quickstart/logs`, dove è possibile visualizzare i seguenti registri:
+I registri di AEM si trovano nella cartella `crx-quickstart/logs`, dove è possibile visualizzare i seguenti registri:
 
 * Registro Java AEM: `error.log`
 * Registro richieste HTTP AEM: `request.log`
-* Registro accesso HTTP AEM: `access.log`
+* Registro dell&#39;accesso HTTP di AEM: `access.log`
 
 I registri del livello Apache, incluso Dispatcher, si trovano nel contenitore Docker che contiene Dispatcher. Consulta la [documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) per informazioni su come avviare Dispatcher.
 
@@ -589,7 +589,7 @@ Per recuperare i registri:
 1. Per accedere al contenitore, digita &quot;`docker exec -it <container> /bin/sh`&quot;, dove `<container>` è l&#39;ID del contenitore del dispatcher del passaggio precedente
 1. Passa alla directory principale della cache in `/mnt/var/www/html`
 1. I registri si trovano in `/etc/httpd/logs`
-1. Inspect i registri: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti registri:
+1. Esamina i registri: sono accessibili nella cartella XYZ, dove è possibile visualizzare i seguenti registri:
    * Registro di accesso al server web Apache HTTPD - `httpd_access.log`
    * Registri errori server web Apache HTTPD - `httpd_error.log`
    * Registri Dispatcher - `dispatcher.log`
@@ -611,7 +611,7 @@ A seconda del traffico e della quantità di istruzioni di registro scritte da De
 
 ## Inoltro del registro {#log-forwarding}
 
-Anche se i registri possono essere scaricati da Cloud Manager, per alcune organizzazioni è utile inoltrarli a una destinazione di registrazione preferita. L’AEM supporta i registri di streaming per le seguenti destinazioni:
+Anche se i registri possono essere scaricati da Cloud Manager, per alcune organizzazioni è utile inoltrarli a una destinazione di registrazione preferita. AEM supporta i registri di streaming per le seguenti destinazioni:
 
 * Archiviazione BLOB di Azure
 * Datadog
