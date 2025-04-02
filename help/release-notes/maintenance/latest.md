@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7d93af706d8b0556e9e26282d339794447eb0a41
+source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1501'
 ht-degree: 21%
 
 ---
@@ -25,7 +25,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 ### Miglioramenti {#enhancements-20133}
 
 * ASSETS-47850: limita l’aggiunta di configurazioni Scene7 se AEM CS è abilitato per ES.
-* CQ-4359547: rimozione completa di Guava dall’archivio https://git.corp.adobe.com/target-sdk/tsdk-core.
+* CQ-4359547: rimozione completa di Guava dall’archivio Git.
 * FORMS-17551: aggiunto supporto per documenti di record (DoR) per le integrazioni di elenchi SharePoint.
 * FORMS-18432: è stata implementata la configurazione della precompilazione lato client specifica per il modulo (basata su regex) per abilitare la funzionalità di precompilazione selettiva senza modifiche a livello OSGI.
 * FORMS-18513: è stato implementato il supporto per la trasformazione della struttura dati nel connettore AEP per migliorare le funzionalità della procedura guidata e la gestione dei dati.
@@ -57,16 +57,16 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-28549: crea `/cf/domains` per restituire l&#39;ID dominio basato sul livello AEM.
 * SITES-29026: aggiunto un parametro facoltativo che specifica le impostazioni locali del frammento di contenuto, utilizzando una lingua e un codice paese.
 * SITES-29031: è stata migliorata la logica per i frammenti PATCH-ing, fornendo così prestazioni migliori.
-* SITES-29169: tutte le risorse pubblicate (indipendentemente dallo stato PUBBLICATO o MODIFICATO) verranno ripubblicate se fanno riferimento a una risorsa che è stata spostata, rinominata o eliminata.
+* SITES-29169: le risorse nello stato PUBBLICATO verranno ripubblicate se fanno riferimento a una risorsa che è stata spostata, rinominata o eliminata.
 * SITES-29376: Aggiungi codice per attivare o disattivare la convalida dell’eliminazione delle risorse pubblicate.
-* SITES-29417: aggiorna /libs/cq/Page/proxy.jsp per inoltrare la richiesta a jcr:content, nodo invece di includere.
+* SITES-29417: Aggiorna `/libs/cq/Page/proxy.jsp` per inoltrare la richiesta a jcr:content node invece di includere.
 * SITES-2947: crea/modifica la visualizzazione kibana per confrontare i rasp di pubblicazione.
 * SITES-29733: sono state migliorate le prestazioni della ricerca di modelli tramite tag di Frammenti di contenuto.
 * SITES-8316: Criteri contenuto: memorizzare in cache ContentPolicyManager.
-* SITES-24906: Edge Delivery con Universal Editor: supporta fogli di calcolo creati dall’autore senza una mappatura (accesso anticipato)
-* SITES-24907: Edge Delivery con Universal Editor: supporto per la pubblicazione di Assets su più siti per casi di utilizzo MSM (accesso anticipato)
-* SITES-27956: Edge Delivery con Universal Editor: migliorare la velocità effettiva di pubblicazione (accesso anticipato)
-* SITES-27956: Edge Delivery con Universal Editor: migliorare la gestione degli errori per la pubblicazione su Edge Delivery Services (accesso anticipato)
+* SITES-24906: Edge Delivery con Universal Editor: supporta fogli di calcolo creati dall’autore senza una mappatura (accesso anticipato).
+* SITES-24907: Edge Delivery con Universal Editor: supporto per la pubblicazione di Assets su più siti per casi di utilizzo MSM (accesso anticipato).
+* SITES-27956: Edge Delivery con Universal Editor: migliorare la velocità effettiva di pubblicazione (accesso anticipato).
+* SITES-27956: Edge Delivery con Universal Editor: migliorare la gestione degli errori per la pubblicazione su Edge Delivery Services (accesso anticipato).
 
 ### Problemi risolti {#fixed-issues-20133}
 
