@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 14%
+source-wordcount: '1048'
+ht-degree: 13%
 
 ---
 
@@ -39,6 +39,10 @@ La pagina **Certificati SSL** fornisce lo stato dei certificati SSL.
 Quando un certificato gestito dal cliente scade, i domini in uso con il certificato scaduto non funzionano più. L’aggiornamento dei certificati garantisce che il dominio continui a funzionare come desiderato.
 
 Per completare l&#39;attività, l&#39;utente deve avere il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione**.
+
+>[!IMPORTANT]
+>
+>Quando aggiungi o aggiorni un certificato SSL, non includere il nuovo certificato nella catena di certificati. L’inclusione di impedisce il completamento del caricamento.
 
 **Per aggiornare un certificato SSL gestito dal cliente scaduto:**
 
@@ -78,7 +82,7 @@ Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare
 * **Evitare confusione**: se gestisci più certificati, un nome chiaro e descrittivo può aiutare a evitare errori, ad esempio l&#39;applicazione del certificato errato al dominio errato.
 * **Conformità e controllo**: i certificati con nomi corretti possono essere più facili da tracciare a scopo di sicurezza e controllo.
 
-**Per rinominare un certificato SSL gestito da Adobe:**
+**Per rinominare un certificato SSL gestito di Adobe:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -88,7 +92,7 @@ Di seguito sono riportati alcuni motivi per cui potrebbe essere utile rinominare
 
 1. Sotto l&#39;intestazione **Services**, fare clic su ![Blocca icona chiuso](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificati SSL**.
 
-1. Nella pagina **Certificati SSL**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui desideri rinominare il certificato SSL **Adobe gestito**.
+1. Nella pagina **Certificati SSL**, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga il cui **certificato SSL gestito da Adobe** desideri rinominare.
 
 1. Scegliere **Rinomina** dal menu a discesa.
 
