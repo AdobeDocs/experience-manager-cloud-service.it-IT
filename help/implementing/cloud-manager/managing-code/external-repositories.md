@@ -4,9 +4,9 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 4667a00a156b3a2f66ed87c64763f93397aad946
+source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1866'
 ht-degree: 27%
 
 ---
@@ -206,16 +206,9 @@ Si applicano i seguenti comportamenti:
 * Se la convalida PR o i trigger della pipeline non funzionano, verifica che il segreto webhook sia aggiornato sia in Cloud Manager che nel fornitore Git.
 
 
-
-
-
-
-
-
-## Limitazioni
+## Limitazione
 
 * Gli archivi esterni non possono essere collegati alle pipeline di configurazione.
-* Le pipeline con archivi esterni (non ospitati su GitHub) e il trigger &quot;On Git Changes&quot; (In caso di modifiche Git) non si avviano automaticamente. Possono essere avviati solo manualmente.
 
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
