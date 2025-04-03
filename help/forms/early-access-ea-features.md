@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 26%
+source-wordcount: '2286'
+ht-degree: 27%
 
 ---
 
@@ -74,9 +74,9 @@ Ecco cosa offre in più Conversational Forms:
 I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambiano l’esperienza degli utenti.  Incrementa il coinvolgimento, riduci l’abbandono dei moduli e rendi l’interazione con il tuo sito web un’esperienza più piacevole per tutti.
 
 
-### Authoring WYSIWYG (Universal Editor) per Edge Delivery Services per Forms
+### Authoring WYSIWYG per Edge Delivery Services
 
-Universal Editor fornisce una potente interfaccia WYSIWYG per generare e pubblicare [moduli adattivi in Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), combinando la semplicità di progettazione visiva con funzionalità avanzate. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/create-forms.md), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
+WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi in Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
 
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
@@ -86,26 +86,6 @@ Universal Editor fornisce una potente interfaccia WYSIWYG per generare e pubblic
 * Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
 * Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
 * Possibilità di scegliere tra più azioni di invio per la gestione degli invii di moduli, tra cui l&#39;invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
-
-![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**Vantaggi:**
-
-* **Time-to-Value accelerato (TTV)**: Launch si sviluppa più velocemente con l&#39;authoring visivo intuitivo che elimina i complessi requisiti di codifica.
-* **Costi di sviluppo ridotti**: riduzione del costo totale di proprietà consentendo agli utenti aziendali di creare e modificare moduli con un coinvolgimento IT minimo.
-* **Sviluppo semplificato**: creazione di componenti personalizzati utilizzando solo HTML, CSS e JavaScript. Non è richiesta alcuna conoscenza specifica del framework.
-* **Stack Web moderno**: basato su standard Web e tecnologie moderne familiari agli sviluppatori front-end.
-* **Prototipazione rapida**: generazione rapida e verifica dei concetti dei moduli prima di investire nello sviluppo completo
-
-
-**Per ulteriori informazioni, consulta la documentazione:**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**Funzioni chiave**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Usa layout reattivi**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configurare le azioni di invio**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**Introduzione a Universal Editor per Forms adattivo**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Personalizza lo stile dei moduli**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Aggiungi sicurezza reCAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**Crea il primo modulo**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Utilizza l&#39;editor di regole**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Pubblica moduli**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**Interfaccia utente**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Creare componenti personalizzati**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### Connettore da AEM Forms a Marketo
@@ -127,27 +107,38 @@ Pronto per iniziare? I seguenti articoli forniscono istruzioni dettagliate per u
 * [Configurare l’origine dati di Marketo Engage ad per Forms adattivo esistente](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Inviare un modulo adattivo esistente a Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### Dashboard di realizzazione del valore
+### Comunicazioni interattive su Cloud
 
-Monitora e analizza le prestazioni dei moduli con il dashboard di realizzazione del valore. Questo strumento di analisi consente di prendere decisioni basate sui dati per ottimizzare la strategia dei moduli.
+Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la gestione e la distribuzione di corrispondenze interattive basate sui dati, come corrispondenza aziendale, documenti, dichiarazioni, note sui benefici, e-mail di marketing, fatture e kit di benvenuto.
 
-![Dashboard di informazioni sull&#39;utilizzo di Forms](/help/forms/assets/forms-usage-insights.png)
+![Editor di comunicazione interattiva](/help/forms/assets/ic-editor.png)
 
-**Funzioni chiave:**
+#### Caratteristiche principali:
 
-* Monitorare gli invii di moduli, le rappresentazioni di documenti e le metriche di creazione/pubblicazione di moduli
-* Tracciare l’utilizzo e il riutilizzo dei frammenti di modulo all’interno dell’organizzazione
-* Identificare tendenze, periodi di picco e opportunità di miglioramento
+* **Editor basato su cloud**: a differenza di AEM Forms Desktop Designer che può essere installato solo su computer Windows, l&#39;editor di comunicazioni interattive viene eseguito in qualsiasi browser moderno senza alcuna installazione richiesta. Questo approccio basato su cloud elimina i problemi di installazione, offre accessibilità multipiattaforma e consente la collaborazione da qualsiasi postazione con accesso a Internet.
 
-Il dashboard fornisce informazioni attraverso due sezioni principali:
+* **Progettazione intuitiva**: interfaccia intuitiva point-and-click che richiede conoscenze tecniche minime.
 
-* **Attività moduli e documenti nel tempo**: tiene traccia di invii, rappresentazioni e creazione/pubblicazione di moduli
-* **Utilizzo frammento**: monitora l&#39;adozione e il riutilizzo dei frammenti
+* **Integrazione dei dati**: connettersi a schemi, database e servizi Web per la generazione di contenuti dinamici.
 
-Per informazioni dettagliate:
+* **Rich Media**: incorpora testo, immagini ed elementi interattivi in modo semplice.
 
-* [Informazioni sulla dashboard di realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
-* [Interpretazione di informazioni sull’utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md)
+* **Frammenti di documenti**: riutilizzare blocchi di contenuto modulari in più documenti per coerenza ed efficienza.
+
+* **Output multicanale**: crea esperienze unificate nei formati di stampa e digitale con conformità alle normative.
+
+* **Contenuto dinamico**: genera contenuto personalizzato utilizzando la logica di business e l&#39;associazione dati.
+
+* **Flessibilità formato**: output nei formati PDF, HTML, PCL, PostScript® e ZPL.
+
+#### Casi d’uso:
+
+* Enti finanziari che generano gli estratti conto
+* Agenti governativi che semplificano le notifiche di benefit
+* Creazione di corrispondenza di alta qualità, sicura e conforme alle normative
+* Gestione della creazione, dell’assemblaggio e della distribuzione di corrispondenze interattive basate su dati
+
+Pronto per iniziare? L’editor di comunicazioni interattive è disponibile nel programma di accesso anticipato per le distribuzioni di Forms as a Cloud Service. Per richiedere l&#39;accesso, invia il tuo ID organizzazione e i dettagli del programma a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale.
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 
