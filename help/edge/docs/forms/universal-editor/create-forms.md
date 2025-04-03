@@ -6,22 +6,24 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c81698c2d424d39688d1c9fad6c085223f5854a5
+source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 83%
+source-wordcount: '1060'
+ht-degree: 78%
 
 ---
 
-# Guida dettagliata alla creazione di moduli autonomi in Universal Editor
+# Creazione di Forms adattivo con Universal Editor
 
 <span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
-Questo articolo illustra come creare e creare moduli autonomi con Universal Editor selezionando un modello basato su Edge Delivery Services dalla Creazione guidata moduli. È inoltre possibile pubblicare i moduli creati con l’editor universale in AEM Edge Delivery Services.
+Universal Editor è un editor visivo versatile che offre un’esperienza di modifica dei moduli che consente di vedere cosa si ottiene (WYSIWYG). Semplifica la creazione di moduli reattivi e facili da usare con una funzione di trascinamento della selezione, utilizzando i componenti di Forms adattivi disponibili come caselle di testo, pulsanti di scelta e caselle di controllo.
 
-AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. Puoi [creare un nuovo progetto AEM preconfigurato con il Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM Site esistente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM fornisce un blocco, noto come blocco di Forms adattivo, per facilitare la creazione di Edge Delivery Services Forms per l’acquisizione e l’archiviazione di dati tramite Universal Editor. Puoi [creare un nuovo progetto AEM preconfigurato con il Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM Site esistente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width=50%}
+![Flusso di lavoro per l’archivio Github](/help/edge/assets/repo-workflow.png)
+
+Questo articolo illustra come creare e creare moduli autonomi con Universal Editor selezionando un modello basato su Edge Delivery Services dalla Creazione guidata moduli.
 
 ## Prerequisiti
 
@@ -32,7 +34,7 @@ AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitar
 
 ## Utilizzo dei moduli nell’Editor universale
 
-Con l’editor universale puoi progettare rapidamente moduli indipendenti interattivi e reattivi utilizzando componenti predefiniti quali campi di testo, caselle di controllo e pulsanti di scelta. Offre potenti funzioni come regole dinamiche, integrazione dati fluida e opzioni di personalizzazione, che consentono di creare moduli in base a requisiti specifici. Puoi anche pubblicare i moduli su AEM Edge Delivery Services. In Universal Editor è possibile eseguire le azioni seguenti sui moduli:
+Con Universal Editor è possibile creare facilmente moduli autonomi interattivi e reattivi. In Universal Editor è possibile eseguire le azioni seguenti sui moduli:
 * [Creare un modulo](#create-a-form)
 * [Creare un modulo](#author-a-form)
 * [Pubblicare un modulo](#publish-a-form)
@@ -93,7 +95,7 @@ Con l’editor universale puoi progettare rapidamente moduli indipendenti intera
 
    ![modulo contattaci](/help/edge/assets/contact-us.png)
 
-   Ora puoi [configurare e personalizzare le azioni di invio del modulo](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Ora puoi [configurare e personalizzare le azioni di invio per i moduli](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
