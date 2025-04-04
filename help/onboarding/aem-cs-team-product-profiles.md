@@ -4,10 +4,10 @@ description: Scopri come usare i profili di team e di prodotto di AEM as a Cloud
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
+source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 88%
+source-wordcount: '2062'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service è un’offerta completamente nativa per il cloud che inc
 
 >[!NOTE]
 >
-> Alcune delle istanze di prodotto e alcuni profili di prodotto descritti in questo articolo possono essere visualizzati solo per gli ambienti appena creati. Un meccanismo futuro consentirà di aggiornare anche gli ambienti esistenti.
+> Alcune delle istanze di prodotto e alcuni profili di prodotto descritti in questo articolo possono essere visualizzati solo per gli ambienti appena creati. Consulta la sezione [Aggiunta di profili di prodotto per ambienti esistenti](#adding-product-profiles-for-existing-environments) per informazioni su come modernizzare gli ambienti.
 
 Quando Adobe elabora la licenza di una soluzione AEM per la prima volta, in Adobe Admin Console vengono visualizzate due istanze di prodotto, sotto il prodotto Adobe Experience Manager as a Cloud Service:
 
@@ -278,23 +278,23 @@ L’immagine seguente rappresenta i gruppi AEM che riflettono il profilo di prod
 
 ### Aggiunta di profili di prodotto per ambienti esistenti {#adding-product-profiles-for-existing-environments}
 
-Negli ambienti creati prima dell’inizio di novembre 2024 potrebbe mancare l’istanza di prodotto a livello di organizzazione descritta nelle sezioni precedenti, nonché alcuni profili di prodotto. Anche i profili di prodotto esistenti non disporranno degli interruttori del servizio. Si consiglia di aggiornare tali profili di prodotto, che è un prerequisito per accedere ad alcune API future.
+Negli ambienti creati prima dell’inizio di aprile 2024 potrebbe mancare l’istanza di prodotto a livello di organizzazione descritta nelle sezioni precedenti, nonché alcuni profili di prodotto. Inoltre, i profili di prodotto esistenti non disporranno degli interruttori del servizio. Si consiglia di aggiornare tali profili di prodotto, che è un prerequisito per accedere ad alcune API future.
 
-Se uno o più ambienti in un programma richiedono l’aggiornamento dei profili di prodotto, Cloud Manager mostrerà l’avviso seguente. Tieni presente che per poter aggiornare i profili di prodotto di un ambiente è necessario utilizzare la versione più recente dell’AEM.
+Se uno o più ambienti in un programma richiedono l’aggiornamento dei profili di prodotto, Cloud Manager mostrerà l’avviso seguente. Tieni presente che per poter aggiornare i profili di prodotto di un ambiente è necessario utilizzare la versione più recente di AEM.
 
 ![Modernizzare i profili di prodotto](/help/onboarding/assets/modernize-product-profiles.png)
 
-Facendo clic sul pulsante **Aggiungi profili di prodotto** verrà aperto un menu in cui sono visualizzate le opzioni per aggiungere nuovi profili di prodotto a tutti gli ambienti disponibili nel programma o nei singoli ambienti.
+Quando fai clic sul pulsante **Aggiungi profili di prodotto**, si apre un menu contenente le opzioni per aggiungere nuovi profili di prodotto a tutti gli ambienti disponibili nel programma o a singoli ambienti.
 
-![Sostituisci ambienti](/help/onboarding/assets/choose-env-r.png)
+![Sostituire gli ambienti](/help/onboarding/assets/choose-env-r.png)
 
-Fai clic su **Tutti gli ambienti** per aggiungere i nuovi profili di prodotto a tutti gli ambienti del programma. In alternativa, fai clic su **Singoli ambienti** per aggiungere i nuovi profili di prodotto agli ambienti selezionati. In questo modo l&#39;utente viene indirizzato a una pagina di elenco degli ambienti, in cui è possibile selezionare un&#39;azione **Aggiungi profili di prodotto** dall&#39;icona **Altre opzioni**.
+Fai clic su **Tutti gli ambienti** per aggiungere i nuovi profili di prodotto a tutti gli ambienti del programma. In alternativa, fai clic su **Singoli ambienti** per aggiungere i nuovi profili di prodotto agli ambienti selezionati. Viene aperta una pagina contenente un elenco degli ambienti, in cui puoi selezionare l’azione **Aggiungi profili di prodotto** dall’icona **Altre opzioni**.
 
 ![Singoli ambienti](/help/onboarding/assets/individual-environments.png)
 
 Per aggiungere profili di prodotto agli ambienti selezionati, vai alla sezione Ambienti della pagina Panoramica del programma, fai clic sull’icona Altre opzioni corrispondente a un ambiente e seleziona Aggiungi profili di prodotto.
 
-Lo stato dell’ambiente visualizza Aggiunta di profili di prodotto durante l’aggiunta dei nuovi profili di prodotto, per poi visualizzare In esecuzione al termine del processo.
+Mentre vengono aggiunti i nuovi profili di prodotto, viene riportato il messaggio di stato dell’ambiente “Aggiunta di profili di prodotto”; al termine del processo, viene visualizzato “In esecuzione”.
 
 
 ## Profili di prodotto di Cloud Manager {#cloud-manager-product-profiles}
