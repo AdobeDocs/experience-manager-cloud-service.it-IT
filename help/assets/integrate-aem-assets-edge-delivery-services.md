@@ -1,13 +1,16 @@
 ---
 title: Integra [!DNL AEM Assets] durante l'authoring del contenuto per [!DNL Edge Delivery Services]
 description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media] con [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrare [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] e [!DNL Google Docs].
+tags: "AEM Assets""Edge Delivery Services""Dynamic Media""Dynamic Media with OpenAPI capabilities""Universal Editor""Edge Delivery Services with Universal Editor"
+features: "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]""How to use [!DNL AEM Assets] with [!DNL Universal Editor]""How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]""How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools""How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
+source-git-commit: 64cf8feed8cc8c3c38b29f36ee7b2d7944f408d1
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: 671
 ht-degree: 6%
 
 ---
+
 
 # Integra [!DNL AEM Assets] durante l&#39;authoring dei contenuti per [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
@@ -86,7 +89,7 @@ Configurare il plug-in di Sidekick [!DNL AEM Assets] per utilizzare le risorse d
 * Ottimizzazione e distribuzione di contenuti multimediali avanzati, ad esempio streaming video adattivo pronto all’uso e distribuzione di risorse originali per PDF.
 * Rapporto impression a livello di risorsa ([disponibilità limitata](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Per ulteriori dettagli sulle funzionalità, vedere la documentazione di [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
+Per ulteriori dettagli sulle funzionalità, vedere la documentazione di [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
 ### Prerequisiti {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
