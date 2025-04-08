@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Prima che un dominio personalizzato possa gestire il traffico, è necessario com
    | Opzione | Passaggi |
    | --- | --- |
    | Configurare RECORD A | Consigliato per domini radice come `example.com`<br><ol><li>Accedere al portale del provider di servizi DNS.<li>Passare alla sezione Record DNS.<li>Crea un record A che punti a tutti gli indirizzi IP elencati.</li></ol> |
-   | Configura CNAME | Consigliato per domini personalizzati come `www.example.com`<br><ol><li>Accedere al portale del provider di servizi DMS.<li>Passare alla sezione Record DNS.<li>Mappa [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (record CNAME) nel record DNS del provider di servizi DNS (dominio personalizzato). Questa mappatura assicura che le richieste ricevute al dominio personalizzato vengano reindirizzate al CDN di Adobe.</li></ol> |
+   | Configura CNAME | Consigliato per domini personalizzati come `www.example.com`<br><ol><li>Accedere al portale del provider di servizi DMS.<li>Passare alla sezione Record DNS.<li>Mappa `cdn.adobeaemcloud.com` (record CNAME) nel record DNS del provider di servizi DNS (dominio personalizzato). Questa mappatura assicura che le richieste ricevute al dominio personalizzato vengano reindirizzate al CDN di Adobe.</li></ol> |
 
 1. Nella finestra di dialogo **Preparazione pubblicazione** fare clic su **OK** per salvare il record.
 
