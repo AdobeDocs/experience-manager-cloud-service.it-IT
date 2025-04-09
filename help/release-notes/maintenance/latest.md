@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
+source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 21%
+source-wordcount: '1577'
+ht-degree: 20%
 
 ---
 
@@ -67,6 +67,10 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-24907: Edge Delivery con Universal Editor: supporto per la pubblicazione di Assets su più siti per casi di utilizzo MSM (accesso anticipato).
 * SITES-27956: Edge Delivery con Universal Editor: migliorare la velocità effettiva di pubblicazione (accesso anticipato).
 * SITES-27956: Edge Delivery con Universal Editor: migliorare la gestione degli errori per la pubblicazione su Edge Delivery Services (accesso anticipato).
+* SITES-29602: CIF: rimozione dell’utilizzo di Guava in core-cif-components-core.
+* SITES-25785: CIF: aggiunta della selezione della variante di prodotto per il tipo di dati di riferimento prodotto CIF.
+* SITES-26392: CIF[Sperimentale]: JSON+LD nei componenti core CIF nei PDP.
+* SITES-21278: CIF[Sperimentale]: possibilità di CIF di cancellare la cache.
 
 ### Problemi risolti {#fixed-issues-20133}
 
@@ -111,6 +115,9 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-29363: il pulsante Reimposta Live Copy non funziona per la gerarchia dei contenuti della Live Copy nidificata.
 * SITES-29369: Problema dell&#39;evento Assets all&#39;AIO | Attivazione Errata Degli Eventi Pubblicati/Non Pubblicati Della Pagina.
 * SITES-29972: Le azioni Elimina e Rinomina a volte producono commenti non veri nei flussi di lavoro.
+* SITES-24631: CIF: problema di ricerca nel campo del prodotto.
+* SITES-24902: CIF: il formato dell’URL del prodotto non funziona come previsto per la #variant_sku.
+* SITES-29191: CIF: impossibile aggiungere più di 20 SKU al componente Elenco prodotti.
 
 ### Problemi noti {#known-issues-20133}
 
