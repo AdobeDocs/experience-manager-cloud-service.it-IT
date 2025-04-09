@@ -3,9 +3,9 @@ title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Se
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 94%
 
 ---
@@ -83,8 +83,9 @@ Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 
 * L&#39;applicazione host è in esecuzione su HTTPS.
 * Impossibile eseguire l&#39;applicazione su `localhost`. Se desideri integrare il Selettore risorse nel computer locale, devi creare un dominio personalizzato, ad esempio `[https://<your_campany>.localhost.com:<port_number>]`, e aggiungere questo dominio personalizzato in `redirectUrl list`.
-* Puoi configurare e aggiungere `ADOBE_PROVIDED_CLIENT_ID` nella variabile di ambiente AEM Cloud Service con il rispettivo `imsClientId`.
-  ![Ambiente ID client IMS selettore risorse](assets/asset-selector-ims-client-id-env.png)
+* Puoi configurare e aggiungere clientID nella variabile di ambiente AEM Cloud Service con il rispettivo `imsClientId`.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * L’elenco degli ambiti IMS deve essere definito nella configurazione dell’ambiente.
 * L’URL dell’applicazione si trova nell’elenco Consentiti degli URL di reindirizzamento del client IMS.
 * Il flusso di accesso IMS viene configurato e renderizzato utilizzando un pop-up sul browser web. Pertanto, i popup devono essere abilitati o consentiti nel browser di destinazione.
