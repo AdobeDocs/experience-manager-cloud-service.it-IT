@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 65%
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) è il venerdì 27 marzo 2025. La prossima versione funzionale (2025.4.0) è pianificata per il venerdì 24 aprile 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.3.0) è il 27 marzo 2025. La prossima versione funzionale (2025.4.0) è pianificata per il 24 aprile 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -46,11 +46,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nuove funzioni di Dynamic Media {#new-features-dynamic-media}
+### Nuove funzioni in Dynamic Media {#new-features-dynamic-media}
 
-**Supporto di moduli lunghi per video distribuiti tramite Dynamic Media con API aperta**
+**Supporto per video in forma estesa distribuiti tramite Dynamic Media con Open API**
 
-Dynamic Media con OpenAPI ora supporta i video in formato lungo. I video lunghi possono supportare fino a 50 GB e 2 ore.
+Dynamic Media con OpenAPI ora supporta i video in forma estesa. I video lunghi possono supportare fino a 50 GB e 2 ore.
 
 ### Dynamic Media Classic {#dmc}
 
@@ -64,9 +64,9 @@ Consulta [Larghezza di banda e archiviazione, tipi di report](https://experience
 ## Nuove funzioni nella vista Risorse {#new-features-assets-view}
 
 
-**Supporto per i tag radice**
+**Supporto per tag principali**
 
-AEM Assets ora supporta la mappatura di una proprietà tag in un modulo di metadati su metadati personalizzati. Inoltre, in qualità di amministratore, puoi limitare la disponibilità dei tag agli utenti limitando l’accesso a un tag principale specifico e ai tag esistenti sotto il tag principale.
+AEM Assets ora supporta la mappatura di una proprietà tag in un modulo metadati sui metadati personalizzati. Inoltre, in qualità di amministratore, puoi limitare la disponibilità dei tag agli utenti limitando l’accesso a un tag principale specifico e ai tag esistenti sotto il tag principale.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -96,15 +96,15 @@ Il Java 21 **runtime** più performante viene distribuito automaticamente quando
 
 >[!IMPORTANT]
 >
-> Java 21 **runtime** è stato distribuito negli ambienti di sviluppo/RDE a febbraio; verrà applicato agli ambienti di staging/produzione il **28 aprile e il 29**. Si noti che **la compilazione del codice** con Java 21 (o Java 17) è indipendente dal runtime di Java 21. È necessario eseguire in modo esplicito i passaggi per generare il codice con Java 21 (o Java 17).
+> Java 21 **runtime** è stato distribuito negli ambienti di sviluppo/RDE a febbraio; verrà applicato agli ambienti di staging/produzione il **28 aprile e il 29**. Tieni presente che **la generazione del codice** con Java 21 (o Java 17) è indipendente dal runtime di Java 21. È necessario eseguire in modo esplicito i passaggi per generare il codice con Java 21 (o Java 17).
 
-### Inoltro dei registri di AEM a più destinazioni - Programma Beta {#log-forwarding-earlyadopter}
+### Funzionalità di inoltro del registro di AEM a più destinazioni: programma Beta {#log-forwarding-earlyadopter}
 
-Ora in versione beta è possibile inoltrare i registri di AEM a New Relic (utilizzando HTTPS), Amazon S3 e Sumo Logic. Sono supportati i registri di AEM (incluso Apache/Dispatcher), ma non i registri CDN. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per accedere.
+Ora, in versione Beta, è possibile inoltrare i registri di AEM a New Relic (utilizzando HTTPS), Amazon S3 e Sumo Logic. Sono supportati i registri di AEM (incluso Apache/Dispatcher), ma non i registri CDN. Invia un’e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per accedere.
 
-Anche se i registri possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviarli in streaming a una destinazione di registrazione preferita. AEM supporta già l’inoltro dei registri (GA) AEM e CDN ad Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Questa funzione viene configurata in modo self-service e distribuita utilizzando la pipeline di configurazione.
+Anche se i registri di AEM possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM supporta già l’inoltro dei registri CDN e AEM (disponibilità generale) all’archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Questa funzione è configurata in modo autonomo e distribuita mediante la pipeline di configurazione.
 
-Ulteriori informazioni sono disponibili nella [documentazione sull&#39;inoltro dei registri](/help/implementing/developing/introduction/log-forwarding.md).
+Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei registri](/help/implementing/developing/introduction/log-forwarding.md).
 
 ### Edge Computing - Richiesta di feedback! {#edge-computing-feedback}
 
