@@ -1,23 +1,23 @@
 ---
-title: Aggiungere archivi esterni in Cloud Manager - Versione beta limitata
+title: Aggiungere archivi esterni in Cloud Manager - Beta limitato
 description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager supporta l’integrazione con gli archivi GitHub Enterprise, GitLab e Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
+source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1870'
 ht-degree: 27%
 
 ---
 
 # Aggiungere archivi esterni in Cloud Manager - Versione beta limitata {#external-repositories}
 
-Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager supporta l’integrazione con gli archivi GitHub Enterprise, GitLab e Bitbucket.
+Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager supporta l&#39;integrazione con i repository GitHub Enterprise, GitLab e Bitbucket.
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo tramite il programma di adozione anticipata. Per ulteriori dettagli e per iscriverti come utente iniziale, consulta [Porta il tuo Git, ora con supporto per GitLab e Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
+>Questa funzione è disponibile solo tramite il programma di adozione anticipata. Per ulteriori dettagli e per registrarsi come early adopter, vedere [Bring Your Own Git - now with support for GitLab and Bitbucket](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md#gitlab-bitbucket).
 
 ## Configurare un archivio esterno
 
@@ -52,7 +52,7 @@ La configurazione di un archivio esterno in Cloud Manager avviene in tre passagg
    | --- | --- |
    | **Nome dell’archivio** | Obbligatorio. Un nome espressivo per il nuovo archivio. |
    | **URL dell’archivio** | Obbligatorio. L’URL dell’archivio.<br><br>Se utilizzi un archivio ospitato da GitHub, il percorso deve terminare in `.git`.<br>Ad esempio, *`https://github.com/org-name/repo-name.git`* (il percorso URL è solo a scopo illustrativo).<br><br>Per gli archivi esterni, è necessario utilizzare il seguente formato di percorso URL: <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> o <br>`https://self-hosted-domain/org-name/repo-name.git`<br> e il fornitore Git corrispondente. |
-   | **Seleziona il tipo di archivio** | Obbligatorio. Selezionare il tipo di repository in uso:<ul><li>**GitHub** (GitHub Enterprise e versione self-hosted di GitHub)</li><li>**GitLab** (sia `gitlab.com` che la versione con hosting autonomo di GitLab) </li><li>**Bitbucket** (server `bitbucket.org` e Bitbucket e versione con hosting autonomo di Bitbucket)</li></ul>Se il percorso URL dell’archivio precedente include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato. |
+   | **Seleziona il tipo di archivio** | Obbligatorio. Selezionare il tipo di archivio in uso:<ul><li>**GitHub** (GitHub Enterprise e la versione self-hosted di GitHub)</li><li>**GitLab** (sia `gitlab.com` la versione self-hosted di GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` cloud versione) è supportato. La versione self-hosted di Bitbucket è stata deprecata a partire dal 15 febbraio 2024.)</li></ul>Se il percorso URL dell’archivio precedente include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato. |
    | **Descrizione** | Facoltativo. Descrizione dettagliata dell’archivio. |
 
 1. Seleziona **Salva** per aggiungere l’archivio.
@@ -65,9 +65,9 @@ La configurazione di un archivio esterno in Cloud Manager avviene in tre passagg
    | Tipo di token | Descrizione |
    | --- | --- |
    | **Usa token di accesso esistente** | Se hai già fornito un token di accesso all’archivio per la tua organizzazione e hai accesso a più archivi, puoi selezionare un token esistente. Utilizza l’elenco a discesa **Nome token** per scegliere il token da applicare all’archivio. In caso contrario, aggiungi un nuovo token di accesso. |
-   | **Aggiungere un nuovo token di accesso** | **Tipo di archivio: GitHub Enterprise**<br><ul><li> Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Autorizzazioni necessarie per il token di accesso personale GitHub Enterprise (PAT)<br>Queste autorizzazioni garantiscono che Cloud Manager possa convalidare le richieste di pull, gestire i controlli dello stato del commit e accedere ai dettagli dell&#39;archivio necessari.<br>Quando generi il PAT in GitHub Enterprise, accertati che includa le seguenti autorizzazioni dell&#39;archivio:<ul><li>Richiesta pull (lettura e scrittura)<li>Stati commit (lettura e scrittura)<li>Metadati archivio (sola lettura)</li></li></ul></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
-   | | **Tipo di archivio: GitLab**<ul><li>Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorizzazioni richieste per il token di accesso personale GitLab (PAT)<br>Questi ambiti consentono a Cloud Manager di accedere ai dati dell&#39;archivio e alle informazioni utente necessarie per la convalida e l&#39;integrazione del webhook.<br>Quando si genera il PAT in GitLab, assicurarsi che includa i seguenti ambiti token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
-   | | **Tipo di archivio: Bitbucket**<ul><li>Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Crea un token di accesso all&#39;archivio utilizzando la [documentazione Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorizzazioni necessarie per il token di accesso personale (PAT) Bitbucket<br>Queste autorizzazioni consentono a Cloud Manager di accedere al contenuto dell&#39;archivio, gestire le richieste di pull e configurare eventi webhook o reagire ad essi.<br>Quando crei la password dell&#39;app in Bitbucket, accertati che includa le seguenti autorizzazioni di password dell&#39;app richieste:<ul><li>Archivio (sola lettura)<li>Richieste pull (lettura e scrittura)<li>Webhook (lettura e scrittura)</li></li></ul></li></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
+   | **Aggiungere un nuovo token di accesso** | **Tipo di archivio: GitHub Enterprise**<br><ul><li> Nel campo di **testo Nome** token, digita un nome per il token accesso che stai creando.<li>Crea un token di accesso personale seguendo le istruzioni nella documentazione](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) di [GitHub.<li>Autorizzazioni necessarie per GitHub Enterprise Personal Access Token (PAT)<br>Queste autorizzazioni garantiscono che Cloud Manager possa convalidare le richieste richiamare, gestire i controlli dello stato del commit e accesso i dettagli repo necessari.<br>Quando generi il PAT in GitHub Enterprise, assicurati che includa le seguenti autorizzazioni archivio:<ul><li>Pull richiesta (lettura e scrittura)<li>Conferma degli stati (lettura e scrittura)<li>Repository metadati (sola lettura)</li></li></ul></li></ul></ul></ul><ul><li>Nel campo Token **di** accesso incollare il token appena creato. |
+   | | **Tipo di archivio: GitLab**<ul><li>Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Crea un token di accesso personale seguendo le istruzioni riportate nella [documentazione GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Autorizzazioni richieste per il token di accesso personale GitLab (PAT)<br>Questi ambiti consentono a Cloud Manager di accedere ai dati dell&#39;archivio e alle informazioni utente necessarie per la convalida e l&#39;integrazione del webhook.<br>Quando si genera il PAT in GitLab, assicurarsi che includa i seguenti ambiti token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Nel campo Token **di** accesso incollare il token appena creato. |
+   | | **Tipo di archivio: Bitbucket**<ul><li>Nel campo di **testo Nome** token, digita un nome per il token accesso che stai creando.<li>Crea un token di accesso all&#39;archivio utilizzando la [documentazione Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorizzazioni necessarie per il token di accesso personale (PAT) Bitbucket<br>Queste autorizzazioni consentono a Cloud Manager di accedere al contenuto dell&#39;archivio, gestire le richieste di pull e configurare eventi webhook o reagire ad essi.<br>Quando crei la password dell&#39;app in Bitbucket, accertati che includa le seguenti autorizzazioni di password dell&#39;app richieste:<ul><li>Archivio (sola lettura)<li>Richieste pull (lettura e scrittura)<li>Webhook (lettura e scrittura)</li></li></ul></li></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
 
    >[!NOTE]
    >
@@ -112,11 +112,11 @@ La configurazione del webhook non è necessaria per gli archivi ospitati su `Git
 
 Per tutti gli altri archivi esterni per i quali è stato eseguito l’onboarding con un token di accesso, come GitHub Enterprise, GitLab e Bitbucket, la configurazione del webhook è disponibile e deve essere impostata manualmente.
 
-**Per configurare un webhook per un repository esterno:**
+**Per configurare un webhook per un archivio esterno:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Nella console **[Programmi personali](/help/implementing/cloud-manager/navigation.md#my-programs)** selezionare il programma in cui si desidera configurare un webhook per un archivio Git esterno.
+1. **[Nella console Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** personali selezionare il programma per il quale si desidera configurare un webhook per un archivio Git esterno.
 
 1. Nell’angolo in alto a sinistra della pagina, fai clic sull’![icona Mostra menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu a sinistra.
 
@@ -130,20 +130,20 @@ Per tutti gli altri archivi esterni per i quali è stato eseguito l’onboarding
 
    ![Finestra di dialogo Configura webhook](/help/implementing/cloud-manager/managing-code/assets/config-webhook.png)
 
-1. Nella finestra di dialogo **Webhook di configurazione** eseguire le operazioni seguenti:
+1. Nella finestra di **dialogo Webhook** di configurazione eseguire le operazioni seguenti:
 
-   1. Accanto al campo **URL webhook**, fare clic sull&#39;icona ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Incolla l’URL in un file di testo normale. L’URL copiato è necessario per le impostazioni del webhook del fornitore Git.
-   1. Accanto al campo token/chiave **Segreto webhook**, fai clic su **Genera**, quindi fai clic sull&#39;icona ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
-Incolla il segreto in un file di testo normale. Il segreto copiato è necessario per le impostazioni del webhook del fornitore Git.
+   1. Successivo al campo URL **Webhook, fate clic sull&#39;icona ![**](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)Copia.
+Incolla il URL in un file di testo normale. Il URL copiato è necessario per le impostazioni Webhook del fornitore Git.
+   1. Successivo al campo token **/chiave segreta** Webhook, fai clic su **Genera**, quindi fai clic sull&#39;icona ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)Copia.
+Incolla il segreto in un file di testo normale. Il segreto copiato è necessario per le impostazioni Webhook del fornitore Git.
 1. Fai clic su **Chiudi**.
-1. Passa alla soluzione del fornitore Git (GitHub Enterprise, GitLab o Bitbucket).
+1. Passa alla soluzione del fornitore Git (GitHub Enterpriser, GitLab o Bitbucket).
 
-   Tutti i dettagli sulla configurazione del webhook e gli eventi necessari per ogni fornitore sono disponibili in [Aggiungi un repository esterno](#add-ext-repo). Al punto 8, vedere la tabella.
+   Tutti i dettagli sulla configurazione del webhook e gli eventi necessari per ogni fornitore sono disponibili in [Aggiungere un archivio](#add-ext-repo) esterno. Nel passaggio 8, vedere la tabella.
 
-1. Individua la sezione **Impostazioni webhook** della soluzione.
-1. Incolla l’URL del webhook copiato in precedenza nel campo di testo dell’URL.
-   1. Sostituisci il parametro di query `api_key` nell&#39;URL del webhook con la tua vera chiave API.
+1. Individua la sezione Webhook **Impostazioni della soluzione**.
+1. Incolla nel campo di testo URL il URL Webhook copiato in precedenza.
+   1. Sostituisci il parametro di `api_key` query nel URL Webhook con la tua chiave API reale.
 
       Per generare una chiave API, devi creare un progetto di integrazione in Adobe Developer Console. Per informazioni dettagliate, consulta [Creazione di un progetto di integrazione API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
 
@@ -152,9 +152,9 @@ Incolla il segreto in un file di testo normale. Il segreto copiato è necessario
 
    | Archivio | Eventi webhook richiesti |
    | --- | --- |
-   | GitHub Enterprise | Questi eventi consentono a Cloud Manager di rispondere all’attività GitHub, ad esempio la convalida di richieste pull, trigger basati su push per le pipeline o la sincronizzazione del codice Edge Delivery Services.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti:<ul><li>Richieste pull<li>Push<li>Commenti problema</li></li></li></ul></ul></ul> |
+   | GitHub Enterprise | Questi eventi consentono a Cloud Manager di rispondere alle attività di GitHub, ad esempio richiamare convalida richiesta, trigger basati su push per pipeline o Sincronizzazione di codice di Edge Delivery Services.<br>Assicurati che il webhook sia impostato per attivarsi nei seguenti eventi webhook obbligatori:<ul><li>Richieste pull<li>Push<li>Commenti problema</li></li></li></ul></ul></ul> |
    | GitLab | Questi eventi webhook consentono a Cloud Manager di attivare le pipeline quando il codice viene inviato o viene inviata una richiesta di unione. Tiene inoltre traccia dei commenti relativi alla convalida delle richieste pull (tramite eventi nota).<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Eventi push<li>Unisci eventi di richiesta<li>Eventi nota</li></li></li></ul></ul></ul> |
-   | Bitbucket | Questi eventi garantiscono che Cloud Manager possa convalidare le richieste pull, rispondere ai push del codice e interagire con i commenti per il coordinamento della pipeline.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Richiesta pull: creata<li>Richiesta pull: aggiornata<li>Richieste pull: unite<li>Richiesta pull: commento<li>Archivio: push</li></li></li></ul></ul></ul> |
+   | Bitbucket | Questi eventi garantiscono che Cloud Manager possa convalidare le richieste pull, rispondere ai push del codice e interagire con i commenti per il coordinamento della pipeline.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Richiesta pull: creata<li>Richiesta pull: aggiornata<li>Richieste pull: unite<li>Pull richiesta: Commento<li>Archivio: Push</li></li></li></ul></ul></ul> |
 
 ### Convalida delle richieste pull con webhook
 
@@ -180,15 +180,15 @@ Si applicano i seguenti comportamenti:
 
 * **GitLab**
 
-  Le interazioni GitLab si basano esclusivamente sui commenti. Quando inizia la convalida, viene aggiunto un commento. Al termine della convalida (riuscita o non riuscita), il commento iniziale viene rimosso e sostituito con un nuovo commento contenente i risultati della convalida o i dettagli dell’errore.
+  Le interazioni GitLab si basano esclusivamente sui commenti. Quando inizia la convalida, viene aggiunto un commento. Quando convalida è completo (positivo o negativo), il commento iniziale viene rimosso e sostituito con un nuovo commento contenente convalida risultati o dettagli di errore.
 
-  Quando la convalida della qualità del codice è in esecuzione:
+  Quando il convalida qualità del codice è in esecuzione:
 
-  ![Quando è in esecuzione la convalida della qualità del codice](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
+  ![Quando il convalida qualità del codice è in esecuzione](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-  Al termine della convalida della qualità a freddo:
+  Quando il convalida di qualità a freddo è terminato:
 
-  ![Al termine della convalida della qualità a freddo](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
+  ![Quando il convalida di qualità a freddo è finito](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
   Quando la convalida della qualità del codice non riesce e viene restituito un errore:
 
@@ -201,9 +201,9 @@ Si applicano i seguenti comportamenti:
 
 ## Risoluzione dei problemi del webhook
 
-* Accertati che l’URL del webhook includa una chiave API valida.
-* Controlla che gli eventi del webhook siano configurati correttamente nelle impostazioni del fornitore Git.
-* Se la convalida PR o i trigger della pipeline non funzionano, verifica che il segreto webhook sia aggiornato sia in Cloud Manager che nel fornitore Git.
+* Assicurati che l&#39;URL Webhook includa una chiave API valida.
+* Verifica che gli eventi webhook siano configurati correttamente nelle impostazioni del fornitore Git.
+* Se i trigger di PR convalida o pipeline non funzionano, verifica che il segreto Webhook sia aggiornato sia in Cloud Manager che nel fornitore Git.
 
 
 ## Limitazione
