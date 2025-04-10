@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 61992513d7c965d1c0b1f3d1134d35cc53bebe2f
+source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6134'
 ht-degree: 99%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 99%
    + Note sulla versione di Cloud Manager {#cloud-manager}
       + [Corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
          + [2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)
       + 2024 {#2024}
@@ -1107,7 +1108,7 @@ ht-degree: 99%
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
       + [Selettore frammento di contenuto - Proprietà correlate](/help/headless/content-fragment-selector/properties.md)
-   + [API AEM per la consegna e la gestione di contenuti strutturati](/help/headless/apis-headless-and-content-fragments.md)
+   + [API AEM per la consegna e gestione di contenuti strutturati](/help/headless/apis-headless-and-content-fragments.md)
    + API di GraphQL {#graphql-api}
       + [API di GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
       + [Gestione endpoint di GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1118,7 +1119,7 @@ ht-degree: 99%
       + [Aggiornamento dei frammenti di contenuto per riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Risoluzione dei problemi delle query GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI REST AEM per la consegna dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [Frammenti di contenuto e modelli OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Supporto dei frammenti di contenuto nell’API HTTP delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}
@@ -1323,7 +1324,7 @@ ht-degree: 99%
       + Sviluppo ibrido e SPA {#hybrid}
          + [Ibrido e SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=it)
-         + [Editor SPA obsoleto](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
+         + [Rimozione dell’editor di SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introduzione a SPA e procedura dettagliata](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial WKND per SPA](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Guida introduttiva all’utilizzo di React](/help/implementing/developing/hybrid/getting-started-react.md)
