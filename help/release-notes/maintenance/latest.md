@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c8d7f23ef89de97ed656157ba628fd33206b4588
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1589'
 ht-degree: 94%
 
 ---
@@ -43,7 +43,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-27781: è stata implementata la convalida a livello di modello per i riferimenti al frammento di contenuto, che consente di convalidare i frammenti di riferimento in base ai vincoli di modello e al tag richiesto.
 * SITES-27784: aggiornamento della generazione di query SQL per utilizzare la funzione PATH anziché `jcr:path`.
 * SITES-28040: Adobe Target ExperienceFragmentsReplicationListener è interrotto.
-* SITES-28051: ottiene le autorizzazioni dell&#39;utente corrente per un frammento di contenuto: GET /cf/fragments/{fragmentId}/permissions.
+* SITES-28051: ottiene le autorizzazioni dell’utente corrente per un frammento di contenuto: GET /cf/fragments/{fragmentId}/permissions.
 * SITES-28190: configurazione per il test di integrazione dell’anteprima.
 * SITES-28227: quando si aggiungono risorse come riferimenti a un frammento, viene convalidata l’esistenza della risorsa.
 * SITES-28248: attiva/disattiva eventi Sites in base alla configurazione OSGI.
@@ -121,7 +121,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 
 ### Problemi noti {#known-issues-20133}
 
-Nessuna.
+* SITES-30727: il trascinamento della selezione potrebbe non riuscire per i sottocomponenti nell’editor di AEM.
 
 ### Funzioni e API obsolete {#deprecated-20133}
 
