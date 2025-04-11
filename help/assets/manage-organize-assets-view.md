@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 71%
+source-wordcount: '1734'
+ht-degree: 63%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 71%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -135,17 +135,37 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
   ![Opzione per caricare una nuova versione di una risorsa dalla cronologia delle versioni](assets/view-asset-versions2.png)
 
-### Visualizzare le versioni di una risorsa {#view-versions}
+### Visualizzare e confrontare le versioni di una risorsa {#view-and-compare-versions}
 
-Quando carichi una copia duplicata o modificata di una risorsa, puoi crearne le versioni. Il controllo delle versioni consente di rivedere le risorse storiche e, se necessario, ripristinare una versione precedente.
+Carica una copia duplicata o modificata di una risorsa per crearne le versioni. Il controllo delle versioni consente di tenere traccia delle modifiche apportate a una risorsa nel tempo e, se necessario, di ripristinare una versione precedente.
 
-Per visualizzare le versioni, apri l’anteprima di una risorsa e fai clic su **[!UICONTROL Versioni]** ![icona Versioni](assets/do-not-localize/versions-clock-icon.png) nella barra laterale a destra. Per visualizzare in anteprima una versione specifica, selezionala. Per ripristinarla, fai clic su **[!UICONTROL Rendi più recente]**.
+Per visualizzare e confrontare le versioni:
 
-Puoi anche creare versioni dalla timeline delle versioni. Seleziona la versione più recente e fai clic su **[!UICONTROL Nuova versione]**, quindi carica una nuova copia della risorsa dal file system locale.
+1. Passa alla pagina dei dettagli della risorsa.
+1. Fai clic su ![Versioni](/help/assets/assets/Clock.svg) nel riquadro a destra per visualizzare il pannello **[!UICONTROL Versioni]**. In questo pannello vengono visualizzate le miniature della risorsa originale e delle versioni caricate.
+1. Selezionate una versione nel pannello per visualizzarla in anteprima nell&#39;area di anteprima.
+1. Selezionare una versione diversa da quella più recente e fare clic su **[!UICONTROL Rendi più recente]** per impostarla come versione più recente.
+1. Trascina il cursore nell’anteprima verso sinistra e destra per vedere rapidamente in un’unica anteprima la versione selezionata di un’immagine e quella più recente. Questo consente di confrontare rapidamente la versione selezionata dell’immagine con la versione più recente.
 
-![Visualizzare le versioni di una risorsa](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > Il confronto delle versioni è abilitato solo per le risorse immagine.
 
-*Figura: Visualizzare le versioni di una risorsa, ripristinare una versione precedente o caricare un’altra nuova versione.*
+   ![confronta le versioni della risorsa](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+Seleziona la versione più recente e fai clic su **[!UICONTROL Nuova versione]** per caricare una nuova copia della risorsa dal file system locale e creare una versione della risorsa.
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## Gestire lo stato delle risorse {#manage-asset-status}
 

@@ -4,10 +4,10 @@ description: Comprendere l’interfaccia utente e la navigazione in [!DNL Assets
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 72%
+ht-degree: 75%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 72%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ Per visualizzare in anteprima una risorsa, selezionala e fai clic sull’[!UICON
 
 ![Visualizzare in anteprima una risorsa](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: torna alla cartella corrente o al risultato della ricerca corrente nel repository **B**: Nome e formato del file visualizzato in anteprima **C**: Assegna attività **D**: Metadati avanzati **E**: Parole chiave e tag avanzati **F**: Commenta e annota **G**: Visualizza attività relative alla risorsa selezionata **H**: Visualizza e gestisci versioni **I**: Visualizza rappresentazioni dell&#39;immagine **J**: Modifica immagine **K**: visualizza le rappresentazioni Dynamic Media, inclusi Smart Crop e Dynamic Media con le rappresentazioni delle funzionalità OpenAPI. **L**: metadati di base **M**: metadati avanzati **N**: parole chiave e tag avanzati **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella **P**: visualizzare un&#39;anteprima più dettagliata. Zoom, schermo intero e altre opzioni.
+**A**: Tornare alla cartella corrente o al risultato della ricerca corrente nel repository **B**: Nome e formato per il file visualizzato in anteprima **C**: Assegna attività **D**: Metadati avanzati **E**: Parole chiave e tag avanzati **F**: Commenta e annota **G**: Visualizza attività relative alla risorsa selezionata **H**: [Visualizza e gestisci versioni](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: copie trasformate dell&#39;immagine **J**: Modifica immagine **K**: visualizza le copie trasformate di Dynamic Media, inclusi Smart Crop e Dynamic Media, con funzionalità OpenAPI. **L**: metadati di base **M**: metadati avanzati **N**: parole chiave e tag avanzati **O**: passare alla risorsa precedente o successiva nella cartella corrente senza tornare alla cartella **P**: visualizzare un&#39;anteprima più dettagliata. Zoom, schermo intero e altre opzioni.
 
 Puoi anche visualizzare in anteprima i video.
 
