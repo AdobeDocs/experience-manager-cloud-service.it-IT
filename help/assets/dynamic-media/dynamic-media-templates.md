@@ -4,7 +4,7 @@ description: Scopri come creare modelli Dynamic Media utilizzando un editor di m
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 2%
@@ -313,13 +313,15 @@ Trasforma qualsiasi livello di immagine o testo del modello Dynamic Media in un 
 1. Passa alla posizione del modello, seleziona il modello e fai clic su ![modifica](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Modifica modello]**. Il modello viene visualizzato nell’area di lavoro.
 1. Seleziona il livello del modello e [passa al relativo pannello delle proprietà](#edit-or-delete-a-layer) per aggiungervi un collegamento CTA.
 1. Nel pannello delle proprietà, seleziona **[!UICONTROL Aggiungi CTA]**, specifica l&#39;URL di destinazione nel campo **[!UICONTROL URL]** e fai clic su **[!UICONTROL Salva]**.
-   ![aggiungi CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![aggiungi CTA](/help/assets/assets/add-cta.png)
+
 1. Fai clic su **[!UICONTROL Anteprima]** per visualizzare l&#39;anteprima del modello e i relativi parametri definiti.
 1. Fai clic su **[!UICONTROL Pubblica]** e seleziona **[!UICONTROL Sì]** per pubblicare il modello, se non già pubblicato.
 1. Passa alla cartella in cui è stato salvato il modello, selezionalo e fai clic su ![pagina dettagli](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Dettagli]**.
 1. Fai clic su **[!UICONTROL Opzioni copia]** e seleziona **[!UICONTROL Copia codice di incorporamento]**.
 
-   ![copia codice da incorporare](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![copia codice da incorporare](/help/assets/assets/copy-options1.png)
 
    Di seguito è riportato un esempio di codice da incorporare:
 
