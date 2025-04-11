@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
+source-git-commit: 3323da83584c4511b15145c0106031df4597891c
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 38%
+source-wordcount: '1833'
+ht-degree: 40%
 
 ---
 
@@ -119,7 +119,7 @@ Dopo aver attivato [l&#39;account New Relic](#activate-account), puoi accedere a
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fare clic sul programma per il quale si desidera accedere a New Relic One.
+1. Fare clic sul programma per il quale si desidera accesso Nuovo Relic One.
 
 1. Nella parte inferiore della scheda **Ambienti** nella pagina di panoramica del programma, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e seleziona **Apri New Relic**.
 
@@ -159,9 +159,9 @@ Se sei stato aggiunto come utente New Relic One, come descritto in [Gestione ute
 
    ![Inserimento dell’indirizzo e-mail](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic ti invia un’e-mail contenente un collegamento per confermare l’account.
+1. Nuovo Relic ti invia un&#39;e-mail contenente un collegare per confermare l&#39;account.
 
-Se dopo aver completato la procedura di registrazione non riesci ad accedere al tuo account a causa di messaggi di errore relativi all&#39;e-mail o alla password, invia un ticket di supporto tramite [Admin Console](https://adminconsole.adobe.com/).
+Se completi il processo di registrazione e non riesci ad accedere al tuo account a causa di e-mail o messaggi di errore password, registra un ticket di supporto tramite l&#39;Admin Console[](https://adminconsole.adobe.com/).
 
 Se non ricevi un’e-mail da New Relic, effettua le seguenti operazioni:
 
@@ -174,8 +174,8 @@ Se non ricevi un’e-mail da New Relic, effettua le seguenti operazioni:
 L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 
 * È possibile aggiungere fino a un massimo di 30 utenti. Se è stato raggiunto il numero massimo di utenti, rimuovine alcuni per poterne aggiungere di nuovi.
-* Gli utenti aggiunti a New Relic sono di tipo **Limitato**. Per informazioni dettagliate, consulta la [documentazione di New Relic](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
-* AEM as a Cloud Service offre solo la soluzione **New Relic One APM** e non fornisce supporto per il monitoraggio, gli avvisi, la registrazione o le integrazioni API dell&#39;infrastruttura.
+* Gli utenti aggiunti a New Relic sono di tipo **Basic**. Per informazioni dettagliate, consulta la [documentazione di New Relic](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
+* AEM as a Cloud Service offre unicamente la soluzione New Relic One APM e non fornisce supporto per avvisi, registrazione o integrazioni API.
 
 >[!NOTE]
 >
@@ -234,7 +234,7 @@ Il supporto Adobe monitora AEM as a Cloud Service con New Relic One e altri stru
 
 +++
 
-+++**L&#39;agente APM per il mio account New Relic One è stato arrestato. Cos&#39;è successo?**
++++**L&#39;agente APM per la mia account Relic One Nuovo è stato arrestato. Cos&#39;è successo?**
 
 [Gli agenti APM vengono interrotti](#limitations) se non viene rilevata alcuna attività per 30 giorni o più. Segui gli stessi passaggi descritti nella sezione [Attiva l&#39;account secondario New Relic One](#activate-sub-account) di questo documento per riattivare l&#39;account secondario New Relic One.
 +++
