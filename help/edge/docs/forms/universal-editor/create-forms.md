@@ -1,6 +1,6 @@
 ---
-title: Come si creano moduli autonomi basati su un modello di Edge Delivery Services utilizzando Universal Editor?
-description: In questo articolo viene illustrato come utilizzare l'Editor universale per la creazione di moduli selezionando un modello basato su Edge Delivery Services nella Creazione guidata moduli. Puoi anche pubblicare i moduli su AEM Edge Delivery Services.
+title: Come si creano moduli indipendenti basati su un modello di Edge Delivery Services utilizzando l’editor universale?
+description: In questo articolo viene illustrato come utilizzare l’editor universale per creare moduli selezionando un modello basato su Edge Delivery Services nella procedura guidata per la creazione di moduli. Puoi anche pubblicare i moduli in AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: true
@@ -9,7 +9,7 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: b0cedf31a8759cdf403e1e7d6aadcab3bba03bab
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -32,20 +32,20 @@ Questo articolo illustra come creare e creare moduli autonomi con Universal Edit
 * L’istanza di authoring di AEM Forms include un modello basato su Edge Delivery Services. Assicurati che nel tuo ambiente sia installata la [versione più recente dei Componenti core](https://github.com/adobe/aem-core-forms-components).
 * Tieni a portata di mano l’URL dell’istanza di authoring di AEM Forms as a Cloud Service e dell’archivio GitHub.
 
-## Utilizzo dei moduli nell’Editor universale
+## Utilizzo dei moduli nell’editor universale
 
-Con Universal Editor è possibile creare facilmente moduli autonomi interattivi e reattivi. In Universal Editor è possibile eseguire le azioni seguenti sui moduli:
-* [Creare un modulo](#create-a-form)
-* [Creare un modulo](#author-a-form)
-* [Pubblicare un modulo](#publish-a-form)
-* [Gestire un modulo](#manage-a-form)
+Con Universal Editor è possibile creare facilmente moduli autonomi interattivi e reattivi. Nell’editor universale puoi eseguire le azioni seguenti sui moduli:
+* [Creazione di un modulo](#create-a-form)
+* [Authoring di un modulo](#author-a-form)
+* [Pubblicazione di un modulo](#publish-a-form)
+* [Gestione di un modulo](#manage-a-form)
 
 >[!NOTE]
 >
 > Puoi anche [creare un modulo in AEM Site utilizzando il modello per siti di Edge Delivery Services nell’editor universale e pubblicarlo in Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
 
-### Creare un modulo
+### Creazione di un modulo
 
 1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
 1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
@@ -77,7 +77,7 @@ Con Universal Editor è possibile creare facilmente moduli autonomi interattivi 
 
    Quando fai clic su **[!UICONTROL Crea]**, il modulo viene aperto nell’editor universale per la creazione.
 
-### Creare un modulo
+### Authoring di un modulo
 
 1. Apri il Browser dei contenuti e accedi al componente **[!UICONTROL Modulo adattivo]** nella **Struttura contenuto**.
 
@@ -117,7 +117,7 @@ Con Universal Editor è possibile creare facilmente moduli autonomi interattivi 
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-### Pubblicare un modulo
+### Pubblicazione di un modulo
 
 Ora, pubblica il modulo in Edge Delivery Services facendo clic sul pulsante **[!UICONTROL Pubblica]** nell’angolo in alto a destra dell’editor universale.
 
@@ -147,7 +147,7 @@ La struttura URL rimane invariata sia per le versioni di staging sia per quelle 
 
 ![Visualizza modulo pubblicato](/help/edge/assets/eds-view-publish-form.png)
 
-### Gestire un modulo
+### Gestione di un modulo
 
 Puoi eseguire diverse operazioni sul modulo utilizzando l’interfaccia utente di AEM Forms.
 
