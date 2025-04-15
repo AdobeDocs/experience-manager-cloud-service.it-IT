@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Queste sono le note sulla versione del 10 marzo 2025 dell’editor universale.
 
 ## Nuove estensioni per l’editor universale {#extensions}
 
-Sono state rilasciate diverse nuove estensioni su [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) per l&#39;editor universale, che migliorano l&#39;esperienza di authoring.
+Sono state rilasciate diverse nuove estensioni per l’editor universale in [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/), migliorando l’esperienza di authoring.
 
-* **Estensione MSM**: è ora possibile interrompere e creare nuovamente un&#39;istanza dell&#39;ereditarietà di componenti/blocchi utilizzando questa estensione.
-* **Estensione proprietà pagina**: consente di accedere alla finestra delle proprietà della pagina direttamente da Universal Editor tramite questa estensione.
-* **Estensione flusso di lavoro**: utilizza i flussi di lavoro nelle pagine e nei frammenti di contenuto instrumentati nella pagina utilizzando questa estensione.
-* **Estensione blocco pagina**: utilizzare questa estensione per bloccare e sbloccare una pagina direttamente dall&#39;editor universale.
+* **Estensione MSM**: ora con questa estensione puoi interrompere e creare nuovamente un’istanza dell’ereditarietà di componenti o blocchi.
+* **Estensione proprietà pagina**: con questa estensione puoi accedere alla finestra delle proprietà della pagina direttamente dall’editor universale.
+* **Estensione flusso di lavoro**: con questa estensione puoi utilizzare i flussi di lavoro nelle pagine e nei frammenti di contenuto abilitati nella pagina.
+* **Estensione blocco pagina**: con questa estensione puoi bloccare e sbloccare una pagina direttamente dall’editor universale.
 
 ## Altri miglioramenti {#other-improvements}
 
