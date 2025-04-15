@@ -4,9 +4,9 @@ description: Scopri come creare modelli Dynamic Media utilizzando un editor di m
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3071'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Per creare un modello Dynamic Media, è necessario disporre di:
 
 Per creare un modello DM, effettuare le seguenti operazioni:
 
+1. Passa alla home page di [!DNL AEM Assets] e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per creare il modello.
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
 1. [Aggiungere livelli di testo all&#39;area di lavoro](#add-text-to-the-canvas)
@@ -282,7 +283,7 @@ Per copiare l’URL del modello pubblicato visualizzato nell’anteprima:
 1. Utilizza questo URL per accelerare il merchandising dei tuoi prodotti o servizi. Puoi condividere questo URL con i clienti o integrarlo nel tuo sito web o in qualsiasi applicazione di terze parti a valle per visualizzare il banner e aggiornarlo in tempo reale per riflettere le offerte in corso.
 
 Scopri come creare un modello Dynamic Media in questo video, passo dopo passo.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Aggiornamenti in tempo reale al modello dall’URL{#update-the-template-from-the-url}
 
