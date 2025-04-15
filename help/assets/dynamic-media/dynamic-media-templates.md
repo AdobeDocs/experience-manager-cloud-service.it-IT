@@ -4,9 +4,9 @@ description: Scopri come creare modelli Dynamic Media utilizzando un editor di m
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 808ee16dbda140fe5bf64ecae249712b17f957db
+source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3072'
 ht-degree: 2%
 
 ---
@@ -283,7 +283,7 @@ Per copiare l’URL del modello pubblicato visualizzato nell’anteprima:
 1. Utilizza questo URL per accelerare il merchandising dei tuoi prodotti o servizi. Puoi condividere questo URL con i clienti o integrarlo nel tuo sito web o in qualsiasi applicazione di terze parti a valle per visualizzare il banner e aggiornarlo in tempo reale per riflettere le offerte in corso.
 
 Scopri come creare un modello Dynamic Media in questo video, passo dopo passo.
->[!VIDEO](https://video.tv.adobe.com/v/3457616)
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Aggiornamenti in tempo reale al modello dall’URL{#update-the-template-from-the-url}
 
@@ -307,7 +307,7 @@ Modifica il modello seguendo questi passaggi:
 3. Seleziona il modello.
 4. Fare clic su **[!UICONTROL Modifica modello]**. Nell&#39;area di lavoro del modello vengono visualizzati il modello e l&#39;elenco di tutti i relativi livelli nel pannello Livelli. Inizia a modificare il modello in base alle tue esigenze.
 
-## Aggiungere un collegamento di invito all’azione al livello del modello{#add-CTA-in-dynamic-media-templates}
+## Aggiungere un collegamento di invito all’azione (CTA) al livello del modello{#add-CTA-in-dynamic-media-templates}
 
 Trasforma qualsiasi livello di immagine o testo del modello Dynamic Media in un collegamento ipertestuale aggiungendo a esso un collegamento CTA che indirizza gli utenti a una pagina di destinazione. Per aggiungere un collegamento CTA a un livello, effettuate le seguenti operazioni:
 
@@ -342,7 +342,7 @@ Fai clic sull’elemento CTA sul modello per passare alla pagina di destinazione
 
 Guarda questo video passo per passo per scoprire come aggiungere un collegamento CTA a un livello di modello.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## Punti importanti da notare {#important-points-to-note}
 
