@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 94%
+source-wordcount: '1588'
+ht-degree: 99%
 
 ---
 
@@ -116,7 +116,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * SITES-29369 - Problema relartivi all’evento risorse in AIO: attivazione errata degli eventi di pubblicazione/annullamento pubblicazione della pagina.
 * SITES-29972: le azioni Elimina e Rinomina a volte producono un commento falso nel flusso di lavoro.
 * SITES-24631: CIF: problema di ricerca nel campo del prodotto.
-* SITES-24902: CIF: il formato dell’URL del prodotto non funziona come previsto per la #variant_sku.
+* SITES-24902: CIF: il formato dell’URL del prodotto non funziona come previsto per #variant_sku.
 * SITES-29191: CIF: impossibile aggiungere più di 20 SKU al componente Elenco prodotti.
 
 ### Problemi noti {#known-issues-20133}
