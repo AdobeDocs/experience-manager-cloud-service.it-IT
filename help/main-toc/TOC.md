@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a44b814ec29a31bc865e46f5eb8108e1c7f9265
+source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
 workflow-type: tm+mt
-source-wordcount: '6136'
-ht-degree: 99%
+source-wordcount: '6146'
+ht-degree: 94%
 
 ---
 
@@ -93,6 +93,7 @@ ht-degree: 99%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Note sulla versione di manutenzione 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
          + [Note sulla versione di manutenzione 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
          + [Note sulla versione di manutenzione 2025.2.0](/help/release-notes/maintenance/2025/2025-2-0.md)
          + [Note sulla versione di manutenzione 2025.1.0](/help/release-notes/maintenance/2025/2025-1-0.md)
@@ -217,9 +218,10 @@ ht-degree: 99%
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Note sulla versione per generare varianti {#generate-variations}
       + [Note sulla versione corrente per generare varianti](/help/generative-ai/release-notes-generate-variations.md)
-   + Note sulla versione per l&#39;editor universale {#univeral-editor}
+   + Note sulla versione per l’editor universale {#univeral-editor}
       + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.03.10](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [Note sulla versione 2025.02.25](/help/release-notes/universal-editor/2025/2025-02-25.md)
          + [Note sulla versione 2025.02.17](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [Note sulla versione 2025.01.16](/help/release-notes/universal-editor/2025/2025-01-16.md)
@@ -279,15 +281,15 @@ ht-degree: 99%
       + [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Profili di notifica](/help/journey-onboarding/notification-profiles.md)
-+ Versioni di prova di AEMaaCS {#trials}
-   + Versioni di prova headless {#headless}
++ Prove di AEMaaCS {#trials}
+   + Prove headless {#headless}
       + [Personalizzare il contenuto di un’app React di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
       + [Creare contenuti headless](/help/trials/headless/create-content.md)
       + [Estrarre contenuti utilizzando l’API GraphQL](/help/trials/headless/extract-content.md)
       + [Recuperare contenuti JSON con JavaScript](/help/trials/headless/code-playground.md)
       + [Modifica in linea con l’Editor universale](/help/trials/headless/universal-editor.md)
-+ Percorso di migrazione ad AEM as a Cloud Service {#migration-journey}
++ Percorso di migrazione AEM as a Cloud Service {#migration-journey}
    + [Guida introduttiva di AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Fase di preparazione](/help/journey-migration/readiness.md)
    + [Fase di implementazione](/help/journey-migration/implementation.md)
@@ -307,10 +309,10 @@ ht-degree: 99%
       + Analisi delle best practice {#best-practices-analyzer}
          + [Panoramica](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilizzo di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
-      + Trasformatore di contenuti {#content-transformer}
+      + Content Transformer {#content-transformer}
          + [Panoramica](/help/journey-migration/content-transformer/overview.md)
          + [Utilizzo del trasformatore di contenuti](/help/journey-migration/content-transformer/using.md)
-      + Strumento Content Transfer (Trasferimento contenuti) {#content-transfer-tool}
+      + Strumento trasferimento contenuti {#content-transfer-tool}
          + [Panoramica](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
@@ -328,7 +330,7 @@ ht-degree: 99%
          + [Gestione delle entità principali dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
          + [Caricamento in blocco delle entità principali in IMS dopo la migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Strumento di mappatura utenti precedenti (legacy){#legacy-user-mapping-tool}
+         + Strumento di mappatura utenti legacy (legacy){#legacy-user-mapping-tool}
             + [Panoramica](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Considerazioni importanti](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilizzo dello strumento di mappatura utente](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -452,7 +454,7 @@ ht-degree: 99%
             + [Distribuire il tema personalizzato](/help/journey-sites/quick-site/deploy-theme.md)
       + Riutilizzo del contenuto {#reusing-content}
          + [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md)
-         + Gestione di più siti {#msm}
+         + Gestore multisito {#msm}
             + [Panoramica di MSM e Live Copy](/help/sites-cloud/administering/msm/overview.md)
             + [Configurazione della sincronizzazione di una Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [Creazione e sincronizzazione di Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
@@ -461,7 +463,7 @@ ht-degree: 99%
             + [Best practice MSM](/help/sites-cloud/administering/msm/best-practices.md)
             + [Risoluzione dei problemi e domande frequenti](/help/sites-cloud/administering/msm/troubleshooting.md)
          + Traduzione {#translation}
-            + Percorso Sites Translation {#sites}
+            + Percorso di traduzione siti {#sites}
                + [Comprendere Sites translation in AEM](/help/journey-sites/translation/overview.md)
                + [Guida introduttiva di AEM Sites translation](/help/journey-sites/translation/getting-started.md)
                + [Scopri i contenuti di Sites e come tradurre in AEM](/help/journey-sites/translation/learn-about.md)
@@ -490,7 +492,7 @@ ht-degree: 99%
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
    + [Monitoraggio degli utenti reali per AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
-+ Assets {#assets}
++ Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
    + [Modifiche di rilievo apportate a [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] architettura](/help/assets/architecture.md)
@@ -502,10 +504,10 @@ ht-degree: 99%
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Utenti di Assets Collaborator](/help/assets/assets-collaborator-users.md)
    + [Integrare AEM Assets durante la creazione di contenuti per Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
-   + Gestire i contenuti digitali {#manage}
+   + Gestire le risorse digitali {#manage}
       + Selettore risorse micro front-end {#asset-selector}
          + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
-         + Integrazioni del Selettore risorse {#asset-selector-integration}
+         + Integrazioni di Asset Selector {#asset-selector-integration}
             + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
             + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
             + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
@@ -651,7 +653,7 @@ ht-degree: 99%
          + [Integrare AEM Assets remoto con AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [Domande frequenti](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configurare domini personalizzati](/help/assets/configure-custom-domain.md)
-   + Utilizzo della vista Risorse {#assets-view}
+   + Utilizzo della vista Assets {#assets-view}
       + [Introduzione](/help/assets/assets-view-introduction.md)
       + [Guida introduttiva](/help/assets/get-started-assets-view.md)
       + [Area di lavoro personale](/help/assets/my-workspace-assets-view.md)
@@ -678,7 +680,7 @@ ht-degree: 99%
       + [Content Credentials](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Estensibilità dell’interfaccia utente della vista di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
-   + Content Hub {#content-hub}
+   + Hub di contenuti {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
       + [Implementare Content Hub](/help/assets/deploy-content-hub.md)
       + [Caricare o importare risorse approvate dal brand in Content Hub](/help/assets/upload-brand-approved-assets.md)
@@ -707,7 +709,7 @@ ht-degree: 99%
       + [Integrazione nativa con Adobe Express](/help/assets/native-integration-adobe-express.md)
    + Integrazione con Creative Cloud {#integration-creative-cloud}
       + [Connettersi ad AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
-+ Forms {#forms}
++ Moduli {#forms}
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
       + [Introduzione](/help/forms/home2.md)
@@ -717,7 +719,7 @@ ht-degree: 99%
       + [Architettura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Domande frequenti](/help/forms/faq.md)
       + [Problemi noti](/help/forms/known-issues.md)
-   + Configurare e migrare {#setup-configure-migrate}
+   + Configurazione e migrazione {#setup-configure-migrate}
       + [Ambiente integrato a Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configurare un ambiente di sviluppo locale](/help/forms/setup-local-development-environment.md)
       + [Abilitare i componenti core dei moduli adattivi in AEM Forms as a Cloud Service e nell’ambiente di sviluppo locale](/help/forms/enable-adaptive-forms-core-components.md)
@@ -740,7 +742,7 @@ ht-degree: 99%
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporare un modulo adattivo basato su Componenti di base in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
-         + Integrare moduli adattivi con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+         + Integrare Forms adattivo con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
             + [Integrare Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
             + [Configurare un nuovo modulo da integrare con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
             + [Configurare l’origine dati Adobe Marketo Engage per moduli adattivi esistenti](/help/forms/use-marketo-engage-data-source-in-form.md)
@@ -809,13 +811,13 @@ ht-degree: 99%
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
                + [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
-            + Introduzione al Portale moduli e ai relativi componenti{#introduction-to-forms-portal}
+            + Introduzione a Forms Portal e ai suoi componenti{#introduction-to-forms-portal}
                + [Introduzione al componente Portale moduli](/help/forms/configure-forms-portal.md)
                + [Elencare i moduli nella pagina Sites utilizzando il componente Ricerca ed elenca](/help/forms/list-forms-on-sites-page.md)
                + [Salvare ed elencare i moduli come bozze nella pagina Sites utilizzando il componente Bozze e invii](/help/forms/save-core-component-based-form-as-draft.md)
                + [Aggiungere collegamenti per moduli alla pagina Sites utilizzando il componente Collegamento](/help/forms/add-form-link-to-aem-sites-page.md)
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
-         + Convertire moduli PDF in moduli adattivi {#afcs}
+         + Conversione di PDF forms in Forms adattivo {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
             + [Convertire un modulo PDF esistente in un modulo adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
             + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
@@ -879,7 +881,7 @@ ht-degree: 99%
       + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
       + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
       + [Domande frequenti](/help/forms/interactive-communications-faq.md)
-   + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
+   + Flussi di lavoro incentrati su Forms {#create-form-centric-workflows}
       + [Introduzione al flusso di lavoro incentrato su moduli](/help/forms/aem-forms-workflow.md)
       + [Utilizzare passaggi incentrati su Forms in un flusso di lavoro + riferimento a passaggi](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilizzare le variabili in un flusso di lavoro incentrato su Forms](/help/forms/variable-in-aem-workflows.md)
@@ -896,10 +898,10 @@ ht-degree: 99%
       + [Utilizzo di font personalizzati nei documenti PDF](/help/forms/use-custom-fonts.md)
       + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
-   + Rapporti di transazioni {#using-communications}
+   + Rapporti sulle transazioni {#using-communications}
       + [API rapporti di transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
       + [Registrare una transazione per un’implementazione personalizzata](/help/forms/record-transaction-custom-implementation.md)
-   + Dashboard per la realizzazione del valore {#vr-dashboard}
+   + Dashboard di realizzazione del valore  {#vr-dashboard}
       + [Informazioni sulla dashboard per la realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Utilizzo della dashboard per la realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
@@ -917,7 +919,7 @@ ht-degree: 99%
       + [Introduzione](/help/screens-cloud/introduction/introduction.md)
       + [Informazioni sulle definizioni dei ruoli](/help/screens-cloud/introduction/personas-screens-cloud.md)
       + [Integrazione di Adobe Analytics con Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
-   + Onboarding in Screens as a Cloud Service {#onboarding-screens-cloud}
+   + Onboarding per Screens as a Cloud Service {#onboarding-screens-cloud}
       + [Primo accesso](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + Aggiunta di un programma Screens come componente aggiuntivo in Cloud Manager {#adding-screens-addon}
          + [Aggiunta di un programma Screens come componente aggiuntivo a un nuovo programma](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
@@ -931,7 +933,7 @@ ht-degree: 99%
       + [Creazione di rappresentazioni video Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Configurazione di Dispatcher per Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
       + [Configurazione delle visualizzazioni della timeline per Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
-   + Creazione del contenuto {#create-content}
+   + Creazione di contenuti {#create-content}
       + [Creazione e gestione di un progetto nel provider di contenuti Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Creazione e gestione di un canale nel provider di contenuti Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
       + [Gestione della pubblicazione](/help/screens-cloud/creating-content/manage-publish.md)
@@ -953,7 +955,7 @@ ht-degree: 99%
    + [Introduzione e panoramica](/help/commerce-cloud/introduction.md)
    + [Modifiche di rilievo apportate ad AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
    + Percorsi Commerce {#journeys}
-      + Percorso di authoring dei contenuti {#author}
+      + Percorso autore contenuto {#author}
          + [Percorso di authoring di contenuti AEM e Commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [Guida introduttiva all’authoring CIF](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
          + [Gestione delle pagine e dei modelli del catalogo dei prodotti](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
@@ -1035,7 +1037,7 @@ ht-degree: 99%
       + [Configurazione di Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configurazione di Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
-   + Creazione di moduli {#build-forms}
+   + Creazione di Forms {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + [Come funzionano i modelli di Edge Delivery Services?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
@@ -1110,7 +1112,7 @@ ht-degree: 99%
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
       + [Selettore frammento di contenuto - Proprietà correlate](/help/headless/content-fragment-selector/properties.md)
    + [API AEM per la consegna e gestione di contenuti strutturati](/help/headless/apis-headless-and-content-fragments.md)
-   + API di GraphQL {#graphql-api}
+   + API GRAPHQL {#graphql-api}
       + [API di GraphQL per frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
       + [Gestione endpoint di GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
@@ -1164,13 +1166,13 @@ ht-degree: 99%
          + [Nozioni di base sull’authoring per headless con AEM](/help/journey-headless/author/basics.md)
          + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](/help/journey-headless/author/references.md)
          + [Scopri come definire metadati e tag per i frammenti di contenuto](/help/journey-headless/author/metadata-tagging.md)
-+ Intelligenza artificiale generativa {#generative-ai}
++ IA generativa {#generative-ai}
    + [Generare varianti](/help/generative-ai/generate-variations.md)
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Assistente (Beta limitata)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
-   + Utilizzare Cloud Manager {#using-cloud-manager}
+   + Usa Cloud Manager {#using-cloud-manager}
       + [Navigazione](/help/implementing/cloud-manager/navigation.md)
       + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programmi {#programs}
@@ -1181,12 +1183,12 @@ ht-degree: 99%
          + [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Modificare programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Sospendere gli ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Creare un progetto di applicazione AEM {#create-application-project}
+      + Creazione di un progetto di applicazione AEM {#create-application-project}
          + [Creazione guidata progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md)
-      + Gestire il codice {#managing-code}
+      + Gestione del codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
@@ -1381,7 +1383,7 @@ ht-degree: 99%
       + [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Personalizzazione della console e dell’editor Frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
-      + Gestire i moduli di ricerca {#manage-search-forms}
+      + Gestisci Forms di ricerca {#manage-search-forms}
          + [Configurazione dei moduli di ricerca](/help/implementing/developing/extending/search-forms.md)
          + [Configurare i filtri di ricerca per la casella in entrata](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
@@ -1406,7 +1408,7 @@ ht-degree: 99%
    + Livello di authoring {#author-tier}
       + [Accesso al livello di authoring](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Protezione del livello di authoring](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Panoramica della distribuzione dei contenuti {#content-delivery}
+   + Panoramica sulla distribuzione dei contenuti {#content-delivery}
       + [Flusso di distribuzione dei contenuti](/help/implementing/dispatcher/overview.md)
       + [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md)
       + [Convalida e debug con gli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug.md)
