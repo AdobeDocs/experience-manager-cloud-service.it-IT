@@ -1,55 +1,53 @@
 ---
-title: Applicare e rimuovere Elenchi consentiti IP
-description: Scopri come applicare e rimuovere gli Elenchi consentiti IP dagli ambienti Cloud Manager.
+title: Elenchi consentiti di Applica e Unpply IP
+description: Scopri come applicare e annullare l'applicazione degli elenchi di indirizzi IP consentiti agli ambienti Cloud Manager.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
 
-# Applicare e annullare l’applicazione degli Elenchi consentiti IP {#apply-allow-list}
+# Applica e annulla l&#39;applicazione degli elenchi indirizzi IP consentiti {#apply-allow-list}
 
-Quando si applicano Elenchi consentiti IP, tutti gli intervalli IP inclusi nella definizione dell’elenco vengono associati a un servizio Author o Publish all’interno di un ambiente. La rimozione di un elenco costituisce il processo inverso.
+Quando si applicano elenchi indirizzi IP consentiti, tutti gli intervalli IP inclusi nella definizione dell&#39;elenco sono associati a un autore o a un servizio pubblicare all&#39;interno di un ambiente. La rimozione di un elenco costituisce il processo inverso.
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-{{ip-allow-lists-ue}}
+## Applica Elenchi indirizzi IP consentiti {#applying}
 
-## Applicare Elenchi consentiti IP {#applying}
+Un utente nel ruolo Proprietario **Aziende o** Responsabile distribuzione **** può seguire questi passaggi per applicare un elenco indirizzi IP consentiti.
 
-L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione** può applicare un Elenco consentiti IP seguendo la procedura riportata di seguito.
+**Per applicare gli elenchi consentiti IP:**
 
-**Per applicare Elenchi consentiti IP:**
-
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Seleziona l’organizzazione appropriata.
+1. Accedi a Cloud Manager in [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Selezionare l&#39;organizzazione appropriata.
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
 1. Dalla pagina **Panoramica**, passa alla schermata **Ambienti**.
-1. Nella schermata **Ambienti**, passa alla pagina dei dettagli dell&#39;ambiente specifico.
-1. Passare alla tabella **Elenco consentiti IP**.
-1. Utilizza i campi di input nella parte superiore della tabella per selezionare l’Elenco consentiti IP e il servizio Author, Publish o Preview a cui applicarlo.
-L’Elenco consentiti IP deve esistere già in Cloud Manager per applicarlo. Vedi [Aggiungi Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
-1. Fai clic sull&#39;icona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Applica** e conferma quanto inserito.
+1. **Nella schermata Ambienti**, vai alla pagina dei dettagli dell&#39;ambiente specifico.
+1. Passare alla **tabella Elenco** indirizzi IP consentiti.
+1. Utilizzare i campi di input nella parte superiore della tabella in modo da poter selezionare l&#39;elenco indirizzi IP consentiti e il servizio Autore, Publish o Anteprima a cui applicarlo.
+Per applicarlo, l&#39;elenco indirizzi IP consentiti deve già esistere in Cloud Manager. Consulta [Aggiungere elenchi di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
+1. Fai clic sull&#39;icona ![**](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Aggiungi Applica** e conferma l&#39;invio.
 
-## Annulla applicazione Elenchi consentiti IP {#un-applying}
+## Non applicare elenchi di indirizzi IP consentiti {#un-applying}
 
-L&#39;utente con il ruolo **Proprietario business** o **Responsabile dell&#39;implementazione** può rimuovere un Elenco consentiti IP seguendo la procedura riportata di seguito.
+Un utente nel ruolo Proprietario **Aziende o** Responsabile distribuzione **può seguire questi passaggi per annullare l&#39;applicazione** di un elenco indirizzi IP consentiti.
 
-**Per annullare l&#39;applicazione degli Elenchi consentiti IP:**
+**Per annullare l&#39;applicazione degli elenchi indirizzi IP consentiti:**
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Seleziona l’organizzazione appropriata.
+1. Accedi a Cloud Manager in [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Selezionare l&#39;organizzazione appropriata.
 1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
-1. Dalla pagina **Panoramica**, passa alla pagina **Ambienti**.
-1. Passa alla pagina dei dettagli dell’ambiente specifico.
-1. Dalla scheda Generale, scorri fino alla tabella **Elenco consentiti IP**.
-1. Identifica la riga dell’Elenco consentiti IP da rimuovere.
-1. Sul lato destro della riga identificata, fare clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
-1. Fare clic su **Annulla applicazione**.
-1. Nella finestra di dialogo **Annulla applicazione Elenco consentiti IP**, fare clic su **Annulla applicazione**.
+1. **Dalla pagina Panoramica**, passa alla **pagina Ambienti**.
+1. Passa alla pagina dei dettagli dell&#39;ambiente specifico.
+1. Dall&#39;scheda Generale scorrere fino alla **tabella Elenco** indirizzi IP consentiti.
+1. Identificare la riga dell&#39;elenco indirizzi IP consentiti a cui si desidera annullare l&#39;applicazione.
+1. Sul lato destro della riga identificata, fare clic su ![Icona Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Fate clic su **Annulla applicazione**.
+1. Nella finestra di dialogo Non applicare l&#39;elenco **** indirizzi IP consentiti, fare clic su **Annulla applicazione**.

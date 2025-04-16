@@ -5,9 +5,9 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 25%
 
 ---
@@ -26,7 +26,7 @@ Scopri come gli Elenchi consentiti IP possono limitare gli indirizzi da cui gli 
 
 ## Panoramica {#overview}
 
-Per impostazione predefinita, l’accesso a AEM as a Cloud Service avviene tramite Internet. Mentre la sicurezza viene gestita tramite l’autenticazione e l’autorizzazione degli utenti, l’inserimento nell’elenco Consentiti IP è un modo per limitare l’accesso solo agli indirizzi IP attendibili.
+Per impostazione predefinita, AEM as a Cloud Service è accessibile tramite Internet. Mentre la sicurezza viene gestita tramite l’autenticazione e l’autorizzazione degli utenti, l’inserimento nell’elenco Consentiti IP è un modo per limitare l’accesso solo agli indirizzi IP attendibili.
 
 Gli Elenchi consentiti IP di Cloud Manager possono essere utilizzati per limitare e controllare l’accesso solo a tali indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono [creare e aggiungere Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) di indirizzi IP attendibili da cui gli utenti del sito possono accedere ai domini AEM.
 
@@ -81,7 +81,3 @@ Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip
 Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo Elenco consentiti IP di Cloud Manager sia aggiunto. Quindi, applica l&#39;elenco all&#39;ambiente di authoring *prima* di abilitare la pipeline.
 
 Per ulteriori informazioni, vedere [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
-
-### Editor universale e Elenchi consentiti IP {#universal-editor}
-
-{{ip-allow-lists-ue}}
