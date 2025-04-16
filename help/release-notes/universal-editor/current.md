@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.03.10 dell’editor universale
-description: Queste sono le note sulla versione 2025.03.10 dell’editor universale.
+title: Note sulla versione 2025.04.04 dell’editor universale
+description: Queste sono le note sulla versione 2025.04.04 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
-workflow-type: ht
-source-wordcount: '295'
-ht-degree: 100%
+source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 46%
 
 ---
 
 
-# Note sulla versione 2025.03.10 dell’editor universale {#release-notes}
+# Note sulla versione 2025.04.04 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 10 marzo 2025 dell’editor universale.
+Queste sono le note sulla versione del 4 aprile 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,26 +22,10 @@ Queste sono le note sulla versione del 10 marzo 2025 dell’editor universale.
 
 ## Novità {#what-is-new}
 
-* **Spostamento di componenti:** [lo spostamento di componenti tra contenitori](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) ora considera il filtro del componente del contenitore target.
-   * Non è più necessario disporre della stessa [definizione di filtro](/help/implementing/universal-editor/filtering.md) sia per i contenitori target che per quelli di destinazione per spostare il componente tra i contenitori.
-* **Pagine bloccate:** il servizio editor universale considera lo [stato di blocco di una pagina](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) e scrive solo su pagine non bloccate o bloccate dall’utente.
-
-## Nuove estensioni per l’editor universale {#extensions}
-
-Sono state rilasciate diverse nuove estensioni per l’editor universale in [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/), migliorando l’esperienza di authoring.
-
-* **Estensione MSM**: ora con questa estensione puoi interrompere e creare nuovamente un’istanza dell’ereditarietà di componenti o blocchi.
-* **Estensione proprietà pagina**: con questa estensione puoi accedere alla finestra delle proprietà della pagina direttamente dall’editor universale.
-* **Estensione flusso di lavoro**: con questa estensione puoi utilizzare i flussi di lavoro nelle pagine e nei frammenti di contenuto abilitati nella pagina.
-* **Estensione blocco pagina**: con questa estensione puoi bloccare e sbloccare una pagina direttamente dall’editor universale.
+* **Dynamic Media con supporto OpenAPI** - [Il selettore di risorse](/help/assets/overview-asset-selector.md#repository-switcher) nell&#39;Editor universale ora supporta [Dynamic Media con OpenAPI e risorse remote](/help/assets/integrate-remote-approved-assets-with-sites.md)
 
 ## Altri miglioramenti {#other-improvements}
 
-* Sono state apportate correzioni relative alla convalida per l’area di lavoro headless.
-
-## Obsolescenza {#deprecation}
-
-* La libreria dell’`universal-editor-cors` fornita tramite npm o `https://unviersal-editor-service.experiencecloud.live/corslib/*` non deve più essere utilizzata.
-   * Utilizzare invece un tag script che punta a `https://universal-editor-service.adobe.io/cors.js`.
-   * Per dettagli su come preparare correttamente la pagina per l’utilizzo con l’editor universale, consulta [Panoramica dell’editor universale per sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
-   * Utilizzando un metodo errato, gli utenti visualizzeranno un messaggio di obsolescenza una volta al giorno.
+* Il contesto di rimozione del layout è stato corretto.
+* Sono stati apportati miglioramenti al test e2e.
+* Sono stati eseguiti aggiornamenti delle dipendenze e pulizia del codice.
