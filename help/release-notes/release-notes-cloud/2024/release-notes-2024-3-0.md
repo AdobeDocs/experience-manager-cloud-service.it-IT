@@ -4,10 +4,10 @@ description: Note sulla versione 2024.3.0 di [!DNL Adobe Experience Manager] as 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
 workflow-type: tm+mt
 source-wordcount: '2293'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -116,7 +116,7 @@ Assets Essentials consente agli amministratori di gestire i livelli di accesso p
 
 ### Nuove funzioni di AEM Forms {#forms-new-features}
 
-* **[Edge Delivery Services Adobe Experience Manager Forms](/help/edge/docs/forms/overview.md)**: Edge Delivery Services per AEM Forms è un insieme componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare, pubblicare e avviare rapidamente nuovi moduli. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: Edge Delivery Services per AEM Forms è un insieme componibile di servizi che consente un ambiente di sviluppo rapido in cui gli autori possono aggiornare, pubblicare e avviare rapidamente nuovi moduli. Questi servizi forniscono esperienze di moduli di eccezionale e forte impatto che determinano coinvolgimento e conversioni. Queste esperienze di moduli sono facili da creare e sviluppare.
 
   ![Funzioni di EDS Forms](/help/edge/assets/eds-forms-features.png)
 
@@ -205,7 +205,7 @@ Ora puoi inviare un’e-mail **<aemcs-cdn-config-adopter@adobe.com>** per partec
 
 Oltre alle [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) con licenza facoltativa, esiste l’opportunità di utilizzare la pipeline di configurazione per specificare e distribuire altri tipi di configurazione CDN. Consulta [ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md) e partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>** per ottenere l’accesso a:
 
-* 301/302 reindirizzamenti lato client
+* Reindirizzamenti lato server 301/302
 * proxy di richieste al server Edge di origini arbitrarie (ad esempio applicazioni non AEM)
 * trasformazioni URL
 * impostazione o modifica delle intestazioni di risposta o richiesta

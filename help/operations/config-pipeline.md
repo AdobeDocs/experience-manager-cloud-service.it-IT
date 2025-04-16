@@ -4,7 +4,7 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 1%
@@ -38,14 +38,14 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Regole filtro traffico, incluso WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Dichiarare le regole per bloccare il traffico dannoso |
 | [Richiedi trasformazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della richiesta di traffico |
 | [Trasformazioni risposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | Dichiarare le regole per trasformare la forma della risposta per una determinata richiesta |
-| [Reindirizzamenti lato client](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | Dichiara reindirizzamenti lato client 301/302 |
+| [Reindirizzamenti lato server](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) | `CDN` | Dichiara reindirizzamenti lato server in stile 301/302 |
 | [Selettori origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Dichiarare le regole per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe |
 | [Pagine errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Sostituisci la pagina di errore predefinita se non è possibile raggiungere l’origine AEM, facendo riferimento alla posizione del contenuto statico con hosting autonomo nel file di configurazione |
 | [Rimozione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Dichiara le chiavi API di rimozione utilizzate per rimuovere la rete CDN |
-| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiara il valore della chiave X-AEM-Edge necessaria per chiamare la rete CDN di Adobe da una rete CDN del cliente |
-| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL. |
-| [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni dei contenuti devono essere eliminate |
-| [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di audit dell’AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri |
+| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiarare il valore della X-AEM-Edge-Key necessaria per chiamare la CDN Adobe Systems da una CDN cliente |
+| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base per proteggere determinati URL. |
+| [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni del contenuto devono essere eliminate |
+| [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di controllo di AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri |
 | [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurare gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk) |
 
 ## Creazione e gestione delle pipeline di configurazione {#creating-and-managing}
@@ -150,7 +150,7 @@ La struttura del file sarà simile alla seguente:
   logForwarding-prod.yaml
 ```
 
-Utilizza questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso, ad esempio
+Utilizzare questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso, ad esempio
 `cdn-dev.yaml` e `logForwarding-dev.yaml` con valore di `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` con valore di `["stage"]` e così via.
 
 ### Una cartella per ambiente {#folder-per-env}

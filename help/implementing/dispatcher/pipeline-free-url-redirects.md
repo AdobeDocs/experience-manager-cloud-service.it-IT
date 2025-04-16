@@ -4,7 +4,7 @@ description: Scopri come dichiarare i reindirizzamenti 301 o 302 senza accesso a
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Gli scenari includono:
 * Pagina HTML rinominata.
 * Ottimizzazione SEO.
 
-AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) per implementare i reindirizzamenti lato client, ma la strategia descritta in questo articolo, reindirizzamenti senza pipeline, è una buona scelta quando:
+AEM as a Cloud Service offre [diversi approcci](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) per implementare i reindirizzamenti lato server, ma la strategia descritta in questo articolo, reindirizzamenti senza pipeline, è una buona scelta quando:
 
 * Le persone che gestiscono i reindirizzamenti sono utenti aziendali che non dispongono dell’accesso necessario per confermare le modifiche ai file nel controllo del codice sorgente o della possibilità di eseguire una pipeline di configurazione a livello web di Cloud Manager.
 * Il numero di reindirizzamenti varia da poche a decine di migliaia.

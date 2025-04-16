@@ -4,7 +4,7 @@ description: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
+source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -136,9 +136,9 @@ Adobe Managed CDN ora supporta [Edge Side Includes (ESI)](/help/implementing/dis
 
 Proteggi alcune risorse di contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. Questa funzione è destinata principalmente a casi d’uso di autenticazione leggera, come la revisione dei contenuti da parte delle parti aziendali interessate, anziché fungere da soluzione completa per i diritti di accesso degli utenti finali. L’elenco di nome utente e password viene gestito in Git tramite un file di configurazione distribuito tramite Pipeline di configurazione, con riferimento a variabili di ambiente Cloud Manager di tipo segreto. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-### Reindirizzamenti lato client {#client-side-redirects}
+### Reindirizzamenti lato server {#server-side-redirects}
 
-Dichiara [i reindirizzamenti del browser](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) in un file di configurazione Git distribuiti e valutati nella rete CDN. Questa funzione può essere utile in scenari quali l’eliminazione di pagine, la modifica della struttura del sito e l’ottimizzazione SEO (Search Engine Optimization).
+Dichiara [i reindirizzamenti del browser](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) in un file di configurazione Git distribuiti e valutati nella rete CDN. Questa funzione può essere utile in scenari quali l’eliminazione di pagine, la modifica della struttura del sito e l’ottimizzazione SEO (Search Engine Optimization).
 
 ### Nuovo Developer Console di AEM (Beta pubblica) {#aem-developer-console-beta}
 

@@ -1,10 +1,10 @@
 ---
 title: Configurazione del traffico sulla rete CDN
-description: Scopri come configurare il traffico CDN dichiarando regole e filtri in un file di configurazione e distribuendoli nella CDN utilizzando una pipeline di configurazione di Cloud Manager.
+description: Scopri come configurare i traffico della rete CDN dichiarando regole e filtri in un file di configurazione e distribuendoli nella rete CDN utilizzando una pipeline di configurazione di Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -14,32 +14,32 @@ ht-degree: 1%
 
 # Configurazione del traffico sulla rete CDN {#cdn-configuring-cloud}
 
-AEM as a Cloud Service offre una raccolta di funzionalità configurabili a livello di [rete CDN gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) che modificano la natura delle richieste in arrivo o delle risposte in uscita. Le seguenti regole, descritte in dettaglio in questa pagina, possono essere dichiarate per ottenere il seguente comportamento:
+AEM come Cloud Service offre una raccolta di funzionalità configurabili a [livello di CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) gestita da Adobe Systems che modificano la natura delle richieste in entrata o delle risposte in uscita. The following rules, described in detail in this page, can be declared to achieve the following behavior:
 
-* [Trasformazioni richieste](#request-transformations) - Modifica gli aspetti delle richieste in arrivo, inclusi intestazioni, percorsi e parametri.
-* [Trasformazioni di risposta](#response-transformations) - Modifica le intestazioni che stanno per essere inviate al client (ad esempio, un browser Web).
-* [Reindirizzamenti lato client](#client-side-redirectors) - attiva un reindirizzamento del browser.
-* [Selettori di origine](#origin-selectors) - proxy a un backend di origine diverso.
+* [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
+* [Trasformazioni di](#response-transformations) risposta - modificare le intestazioni che sono sulla via del ritorno al client (ad esempio, un browser web).
+* [Reindirizzamenti](#server-side-redirectors) lato server: attivano un reindirizzare browser.
+* [Selettori di](#origin-selectors) origine: proxy per un backend di origine diverso.
 
-Nella rete CDN sono configurabili anche le regole del filtro del traffico (incluso WAF), che controllano il traffico consentito o negato dalla rete CDN. Questa funzionalità è già stata rilasciata ed è possibile ottenere ulteriori informazioni nella pagina [Regole filtro del traffico, incluse le regole di WAF](/help/security/traffic-filter-rules-including-waf.md).
+Nella CDN sono inoltre configurabili le regole di Filtra del traffico (incluso WAF), che controllano quali traffico sono consentite o negate dalla CDN. Questa funzione è già stata rilasciata e puoi trovare ulteriori informazioni nella [pagina Regole del Filtra del traffico, incluse le regole](/help/security/traffic-filter-rules-including-waf.md) WAF.
 
-Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Ulteriori informazioni leggendo l&#39;articolo [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md).
+Inoltre, se la rete CDN non è in grado di contattare la sua origine, è possibile scrivere un regola che fa riferimento a una pagina di errore personalizzata self-hosted (che viene quindi renderizzata). Scopri ulteriori informazioni su questo argomento leggendo l&#39;articolo [Configurazione delle pagine](/help/implementing/dispatcher/cdn-error-pages.md) di errore CDN.
 
-Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite tramite la pipeline [config](/help/operations/config-pipeline.md) di Cloud Manager. Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
+Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite utilizzando la pipeline](/help/operations/config-pipeline.md) di configurazione di Cloud Manager[. Tenere presente che la dimensione cumulativa del file di configurazione, incluse le regole di filtro traffico, non può superare i 100 KB.
 
 ## Ordine di valutazione {#order-of-evaluation}
 
-Dal punto di vista funzionale, le varie feature menzionate in precedenza vengono valutate nella seguente sequenza:
+Dal punto di vista funzionale, le varie caratteristiche menzionate in precedenza vengono valutate nella seguente sequenza:
 
 ![Ordine di valutazione](/help/implementing/dispatcher/assets/order.png)
 
 ## Configurazione {#initial-setup}
 
-Prima di configurare il traffico sulla rete CDN, è necessario effettuare le seguenti operazioni:
+Prima di poter configurare traffico sulla rete CDN, è necessario effettuare le seguenti operazioni:
 
-1. Creare un file denominato `cdn.yaml` o simile, facendo riferimento ai vari snippet di configurazione nelle sezioni seguenti.
+1. Crea un file denominato `cdn.yaml` o simile, facendo riferimento ai vari frammenti di configurazione nelle sezioni seguenti.
 
-   Tutti i frammenti hanno queste proprietà comuni, descritte in [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su *1*.
+   Tutti gli snippet hanno queste proprietà comuni, descritte in [Pipeline](/help/operations/config-pipeline.md#common-syntax) di configurazione. Il `kind` valore della proprietà deve essere *CDN* e la `version` proprietà deve essere impostata su *1*.
 
    ```
    kind: "CDN"
@@ -68,9 +68,9 @@ I dettagli del nodo delle azioni differiscono per tipo di regola e sono descritt
 
 Le regole di trasformazione delle richieste consentono di modificare le richieste in ingresso. Le regole supportano l’impostazione, la disimpostazione e l’alterazione di percorsi, parametri di query e intestazioni (inclusi i cookie) in base a varie condizioni di corrispondenza, comprese le espressioni regolari. Puoi anche impostare le variabili, a cui è possibile fare riferimento in un secondo momento nella sequenza di valutazione.
 
-I casi d’uso sono vari e includono la riscrittura degli URL per semplificare l’applicazione o mappare gli URL legacy.
+Use cases are varied and include URL rewrites for application simplification or mapping legacy URLs.
 
-Come indicato in precedenza, esiste un limite di dimensione per il file di configurazione, pertanto le organizzazioni con requisiti più grandi devono definire regole nel livello `apache/dispatcher`.
+As mentioned earlier, there is a size limit to the configuration file so organizations with larger requirements should define rules in the `apache/dispatcher` layer.
 
 Esempio di configurazione:
 
@@ -149,20 +149,20 @@ data:
 
 **Azioni**
 
-Nella tabella seguente sono illustrate le azioni disponibili.
+Explained in the table below are the available actions.
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valore | Imposta un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie su un valore specificato, che può essere un valore letterale stringa o un parametro di richiesta. |
-|     | var, value | Imposta una proprietà richiesta specificata su un valore specificato. |
-| **non impostato** | reqProperty | Rimuove un parametro di richiesta specificato (supportata solo la proprietà &quot;path&quot;) o un&#39;intestazione di richiesta, un parametro di query o un cookie da un determinato valore, che potrebbe essere un valore letterale stringa o un parametro di richiesta. |
-|         | var | Rimuove una variabile specificata. |
-|         | queryParamMatch | Rimuove tutti i parametri di query che corrispondono a un&#39;espressione regolare specificata. |
+| **set** | (reqProperty o reqHeader o queryParam o reqCookie), valore | Imposta un parametro richiesta specificato (supportata solo la proprietà &quot;path&quot;) o richiesta intestazione, parametro di query o cookie su un valore specificato, che può essere un valore letterale stringa o un parametro richiesta. |
+|     | var, valore | Imposta la proprietà richiesta specificata su un valore specificato. |
+| **Annullata** | reqProperty | Rimuove un parametro richiesta specificato (supportata solo la proprietà &quot;path&quot;) o richiesta intestazione, parametro di query o cookie a un determinato valore, che può essere un valore letterale stringa o un parametro richiesta. |
+|         | var | Removes a specified variable. |
+|         | queryParamMatch | Removes all query parameters that match a specified regular expression. |
 |         | queryParamDoesNotMatch | Rimuove tutti i parametri di query che non corrispondono a un&#39;espressione regolare specificata. |
 | **trasformazione** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Sostituisce parte del parametro di richiesta (supportata solo la proprietà &quot;path&quot;), dell’intestazione di richiesta, del parametro di query, del cookie o della variabile con un nuovo valore. |
 |              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Imposta sul valore minuscolo il parametro della richiesta (supportata solo la proprietà &quot;path&quot; ), l&#39;intestazione di richiesta, il parametro di query, il cookie o la variabile. |
 
-Le azioni di sostituzione supportano i gruppi di acquisizione, come illustrato di seguito:
+Sostituisci azioni supportano i gruppi di acquisizione, come illustrato di seguito:
 
 ```
       - name: extract-country-code-from-path
@@ -191,7 +191,7 @@ Le azioni di sostituzione supportano i gruppi di acquisizione, come illustrato d
             replacement: "\1\.jpeg"
 ```
 
-Le azioni possono essere concatenate tra loro. Ad esempio:
+Le azioni possono essere concatenate. Ad esempio:
 
 ```
 actions:
@@ -207,7 +207,7 @@ actions:
 
 ### Variabili {#variables}
 
-Puoi impostare le variabili durante la trasformazione della richiesta e quindi farvi riferimento in un secondo momento nella sequenza di valutazione. Per ulteriori dettagli, consulta il diagramma dell&#39;[ordine di valutazione](#order-of-evaluation).
+È possibile impostare le variabili durante la trasformazione richiesta e quindi farvi riferimento in un secondo momento nella sequenza di valutazione. Vedere l&#39;ordine [del diagramma di valutazione](#order-of-evaluation) per ulteriori dettagli.
 
 Esempio di configurazione:
 
@@ -240,9 +240,9 @@ data:
             value: some header value
 ```
 
-## Trasformazioni di risposta {#response-transformations}
+## Trasformazioni delle risposte {#response-transformations}
 
-Le regole di trasformazione delle risposte consentono di impostare e annullare l’impostazione delle intestazioni delle risposte in uscita della rete CDN. Inoltre, consulta l’esempio precedente per un riferimento a una variabile precedentemente impostata in una regola di trasformazione della richiesta. È inoltre possibile impostare il codice di stato della risposta.
+Le regole di trasformazione delle risposte consentono di impostare e annullare le intestazioni delle risposte in uscita della rete CDN. Inoltre, vedi l&#39;esempio precedente per fare riferimento a una variabile precedentemente impostata in un regola di trasformazione richiesta. È inoltre possibile impostare il codice di stato della risposta.
 
 Esempio di configurazione:
 
@@ -300,13 +300,13 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **set** | reqHeader, value | Imposta un&#39;intestazione specificata su un valore specificato nella risposta. |
-|          | respProperty, value | Imposta una proprietà di risposta. Supporta solo la proprietà &quot;status&quot; per impostare il codice di stato. |
-| **non impostato** | respHeader | Rimuove un’intestazione specificata dalla risposta. |
+| **mettere** | reqHeader, valore | Imposta un&#39;intestazione specificata su un dato valore nella risposta. |
+|          | respProperty, valore | Imposta una proprietà response. Supporta solo la proprietà &quot;status&quot; per impostare il codice di stato. |
+| **Annullata** | respHeader | Rimuove un’intestazione specificata dalla risposta. |
 
 ## Selettori di origine {#origin-selectors}
 
-Puoi sfruttare la rete CDN dell’AEM per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe (ad esempio in base al percorso o al sottodominio).
+Puoi sfruttare la rete CDN di AEM per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe (ad esempio in base al percorso o al sottodominio).
 
 Esempio di configurazione:
 
@@ -340,10 +340,10 @@ Nella tabella seguente è illustrata l’azione disponibile.
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **selectOrigin** | originName | Nome di una delle origini definite. |
-|     | skipCache (facoltativo, il valore predefinito è false) | Segnala se utilizzare il caching per le richieste che corrispondono a questa regola. Per impostazione predefinita, le risposte vengono memorizzate nella cache in base all’intestazione di memorizzazione nella cache delle risposte (ad esempio, Cache-Control o Expires) |
+| **selectOrigin** | originName | Name of one of the defined origins. |
+|     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
 
-**Origini**
+**Origins**
 
 Le connessioni alle origini sono solo SSL e utilizzano la porta 443.
 
@@ -352,19 +352,19 @@ Le connessioni alle origini sono solo SSL e utilizzano la porta 443.
 | **nome** | Nome a cui può fare riferimento &quot;action.originName&quot;. |
 | **dominio** | Nome di dominio utilizzato per connettersi al back-end personalizzato. Viene utilizzato anche per l’SNI SSL e la convalida. |
 | **ip** (facoltativo, supportato iv4 e ipv6) | Se fornito, viene utilizzato per connettersi al backend invece di &quot;dominio&quot;. Tuttavia, &quot;domain&quot; viene utilizzato per l’SNI SSL e la convalida. |
-| **forwardHost** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Host&quot; della richiesta client verrà passata al backend, altrimenti il valore &quot;dominio&quot; verrà passato nell’intestazione &quot;Host&quot;. |
-| **forwardCookie** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Cookie&quot; della richiesta client verrà passata al backend, altrimenti l’intestazione Cookie viene rimossa. |
-| **forwardAuthorization** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Authorization&quot; dalla richiesta del client verrà passata al backend, altrimenti l’intestazione Authorization viene rimossa. |
-| **timeout** (facoltativo, in secondi, il valore predefinito è 60) | Numero di secondi in cui la rete CDN deve attendere che un server backend distribuisca il primo byte di un corpo di risposta HTTP. Questo valore viene utilizzato anche come timeout tra i byte per il server back-end. |
+| **forwardHost** (facoltativo, il valore predefinito è false) | If set to true, then &quot;Host&quot; header from the client request will be passed to the backend, otherwise the &quot;domain&quot; value will be passed in the &quot;Host&quot; header. |
+| **forwardCookie** (optional, default is false) | If set to true then the &quot;Cookie&quot; header from the client request will be passed to backend, otherwise the Cookie header is removed. |
+| **forwardAuthorization** (optional, default is false) | If set to true then the &quot;Authorization&quot; header from the client request will be passed to the backend, otherwise the Authorization header is removed. |
+| **timeout** (optional, in seconds, default is 60) | Numero di secondi in cui la rete CDN deve attendere che un server backend distribuisca il primo byte di un corpo di risposta HTTP. Questo valore viene utilizzato anche come timeout tra i byte per il server back-end. |
 
-### Esecuzione del proxy a Edge Delivery Services {#proxying-to-edge-delivery}
+### Proxy a Edge Delivery Services {#proxying-to-edge-delivery}
 
-Esistono scenari in cui i selettori di origine devono essere utilizzati per instradare il traffico attraverso i Edge Delivery Services AEM Publish verso l’AEM:
+Esistono scenari in cui i selettori di origine devono essere utilizzati per instradare il traffico attraverso AEM Publish ad AEM Edge Delivery Services:
 
-* Alcuni contenuti vengono forniti da un dominio gestito da AEM Publish, mentre altri contenuti dello stesso dominio vengono forniti dai Edge Delivery Services
-* Il contenuto distribuito dai Edge Delivery Services trarrebbe vantaggio dalle regole distribuite tramite la pipeline di configurazione, incluse le regole del filtro del traffico o le trasformazioni di richieste/risposte
+* Alcuni contenuti vengono distribuiti da un dominio gestito da AEM Publish, mentre altri contenuti dello stesso dominio vengono distribuiti da Edge Delivery Services
+* Il contenuto distribuito da Edge Delivery Services trarrebbe vantaggio dalle regole distribuite tramite la pipeline di configurazione, incluse le regole del filtro del traffico o le trasformazioni di richiesta/risposta
 
-Di seguito è riportato un esempio di regola del selettore di origine che può eseguire questa operazione:
+Ecco un esempio di origine selettore regola che può raggiungere questo obiettivo:
 
 ```
 kind: CDN
@@ -390,16 +390,16 @@ data:
 ```
 
 >[!NOTE]
-> Poiché viene utilizzata la rete CDN gestita di Adobe, assicurati di configurare l&#39;annullamento della validità push in modalità **gestita**, seguendo la [documentazione sull&#39;annullamento della validità push dei Edge Delivery Services](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+> Poiché viene utilizzata la rete CDN gestita Adobe Systems, assicurarsi di configurare l&#39;invalidazione push in **modalità gestita**, seguendo la documentazione](https://www.aem.live/docs/byo-dns#setup-push-invalidation) di invalidazione push dell&#39;installazione di Edge Delivery Services[.
 
 
-## Reindirizzamenti lato client {#client-side-redirectors}
+## Reindirizzamenti lato server {#server-side-redirectors}
 
-Puoi utilizzare le regole di reindirizzamento lato client per 301, 302 e reindirizzamenti lato client simili. Se una regola corrisponde, la rete CDN risponde con una riga di stato che include il codice di stato e il messaggio (ad esempio, HTTP/1.1 301 Spostato definitivamente), nonché l’intestazione della posizione impostata.
+È possibile utilizzare le regole di reindirizzare lato client per i reindirizzamenti lato client 301, 302 e simili. Se un regola corrisponde, la rete CDN risponde con una riga di stato che include il codice di stato e il messaggio (ad esempio, HTTP/1.1 301 spostato in modo permanente), nonché il set di intestazioni della posizione.
 
-Sono consentite posizioni sia assolute che relative con valori fissi.
+Sono consentite posizioni assolute e relative con valori fissi.
 
-Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
+Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 Esempio di configurazione:
 
@@ -426,10 +426,10 @@ data:
 
 | Nome | Proprietà | Significato |
 |-----------|--------------------------|-------------|
-| **reindirizzamento** | luogo | Valore per l’intestazione &quot;Posizione&quot;. |
-|     | stato (facoltativo, il valore predefinito è 301) | Stato HTTP da utilizzare nel messaggio di reindirizzamento: 301 per impostazione predefinita. I valori consentiti sono: 301, 302, 303, 307, 308. |
+| **reindirizzare** | luogo | Valore per l&#39;intestazione &quot;Location&quot;. |
+|     | status (facoltativo, il valore predefinito è 301) | Stato HTTP da utilizzare nel messaggio reindirizzare, 301 Per impostazione predefinita, i valori consentiti sono: 301, 302, 303, 307, 308. |
 
-Le posizioni di un reindirizzamento possono essere valori letterali stringa (ad esempio, https://www.example.com/page) o il risultato di una proprietà (ad esempio, percorso) che viene facoltativamente trasformata con la seguente sintassi:
+Le posizioni di un reindirizzare possono essere letterali stringa (ad esempio, https://www.example.com/page) o il risultato di una proprietà (ad esempio, percorso) che viene facoltativamente trasformata, con la seguente sintassi:
 
 ```
 redirects:

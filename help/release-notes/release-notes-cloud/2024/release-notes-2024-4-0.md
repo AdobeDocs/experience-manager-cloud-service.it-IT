@@ -4,10 +4,10 @@ description: Note sulla versione 2024.4.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
+source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
 workflow-type: tm+mt
 source-wordcount: '2707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -186,9 +186,9 @@ Nell’improbabile eventualità in cui la rete CDN non riesca a indirizzare il t
 
 ### Programma per i primi utilizzatori {#foundation-early-adopter}
 
-#### Reindirizzamento lato client (programma per i primi utilizzatori) {#client-side-redirects-early-adopter}
+#### Reindirizzamenti lato server (programma Early Adopter) {#server-side-redirects-early-adopter}
 
-Configura i reindirizzamenti lato client 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. Consulta [ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) e partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>**.
+Configura i reindirizzamenti lato server 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. Consulta [ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors) e partecipa al programma per i primi utilizzatori inviando un’e-mail a **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Avvisi sulle regole del filtro del traffico (programma per i primi utilizzatori) {#traffic-filter-rules-alerts-early-adopter}
 
