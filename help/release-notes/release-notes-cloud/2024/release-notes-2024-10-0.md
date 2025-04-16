@@ -4,7 +4,7 @@ description: Note sulla versione 2024.10.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 100%
@@ -56,7 +56,7 @@ Sfruttare l’intelligenza artificiale generativa tramite la nuova funzione di A
 
 **OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto**
 
-OpenAPI REST di [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) è ora disponibile per AEM as a Cloud Service.
+OpenAPI REST di [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-content-fragment-delivery-with-openapi.md) è ora disponibile per AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

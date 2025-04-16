@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 94%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 94%
       + [Aggiornamento dei frammenti di contenuto per riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Query di esempio GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Risoluzione dei problemi delle query GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [Distribuzione di frammenti di contenuto di AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [Frammenti di contenuto e modelli OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Supporto dei frammenti di contenuto nell’API HTTP delle risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=it)
    + Sicurezza {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 94%
       + Editor universale {#universal-editor}
          + [Introduzione](/help/implementing/universal-editor/introduction.md)
          + [Casi d’uso](/help/implementing/universal-editor/use-cases.md)
+         + [Editor universale e editor siti](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
          + [Definizione del componente](/help/implementing/universal-editor/component-definition.md)
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)

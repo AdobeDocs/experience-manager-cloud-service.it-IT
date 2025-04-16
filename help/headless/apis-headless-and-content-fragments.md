@@ -1,38 +1,38 @@
 ---
-title: API AEM per la distribuzione strutturata dei contenuti e la gestione dei frammenti di contenuto
+title: API di AEM per la distribuzione strutturata dei contenuti e la gestione dei frammenti di contenuto
 description: Scopri le API disponibili per la distribuzione strutturata dei contenuti e la gestione dei frammenti di contenuto
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 21599676916068f3529976410a93951b02f750b0
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '591'
+ht-degree: 41%
 
 ---
 
+# API AEM per la consegna e gestione di contenuti strutturati {#aem-apis-structured-content-delivery-and-management}
 
-# API AEM per la distribuzione e la gestione strutturata dei contenuti {#aem-apis-structured-content-delivery-and-management}
+Adobe Experience Manager (AEM) as a Cloud Service offre più API sia per la distribuzione di contenuti strutturati dai frammenti di contenuto che per la gestione dei frammenti di contenuto. Per ulteriori dettagli sulle API specifiche, consulta le singole pagine.
 
-Adobe Experience Manager (AEM) as a Cloud Service offre più API per la distribuzione di contenuti strutturati da frammenti di contenuto e per la gestione dei frammenti di contenuto. Per ulteriori dettagli sulle API specifiche, consulta le singole pagine.
-
-* [REST OpenAPI per AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
-   * Questa API crea risposte JSON per la distribuzione di contenuti strutturati da frammenti di contenuto in AEM.
-   * Utilizza come endpoint il percorso di un frammento di contenuto.
+* [Distribuzione di frammenti di contenuto di AEM con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   * Questa API crea risposte JSON per la consegna di contenuti strutturati da frammenti di contenuto in AEM.
+   * Utilizza come endpoint il percorso per un frammento di contenuto.
    * Questa API è basata su REST.
-   * È ottimizzato per la distribuzione dei contenuti, inclusa l’integrazione CDN.
-* [API GraphQL dell’AEM per la distribuzione dei frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
-   * Questa API è basata su schema. Gli schemi API sono rappresentati da Modelli per frammenti di contenuto, che definiscono la struttura del contenuto.
+   * È ottimizzata per la distribuzione dei contenuti, inclusa l’integrazione CDN.
+* [OpenAPI REST AEM per la distribuzione dei frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
+   * Questa API è basata su schema. Gli schemi API sono rappresentati da modelli per frammenti di contenuto, che definiscono la struttura del contenuto.
    * Questa API è basata su GraphQL.
-* [Frammenti di contenuto e modelli per frammenti di contenuto OpenAPI](/help/headless/content-fragment-openapis.md)
+* [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md)
    * Queste API sono destinate alla gestione di contenuti strutturati.
-   * I rispettivi operatori di GET non sono ottimizzati per la distribuzione dei contenuti.
+   * I rispettivi operatori GET non sono ottimizzati per la consegna dei contenuti.
    * Questa API è basata su REST.
-* [Supporto per frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * L’API originale per l’output JSON per la distribuzione di contenuti strutturati in AEM.
-      * Benché solida e comprovata, questa API non fornisce l&#39;output JSON *completamente idratato*. I riferimenti vengono generati solo come percorsi, e richiedono richieste API secondarie per recuperare ulteriore contenuto.
-   * L’API HTTP di Assets può essere utilizzata anche per la gestione dei Frammenti di contenuto e dei Modelli per frammenti di contenuto (CRUD).
+* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
+   * API originale per l’output JSON per la consegna di contenuti strutturati in AEM.
+      * Benché solida e comprovata, questa API non fornisce l’output JSON *completamente popolato*. Gli output dei riferimenti sono solo percorsi che richiedono richieste API secondarie per recuperare ulteriore contenuto.
+   * L’API HTTP di Assets può essere utilizzata anche per la gestione di frammenti di contenuto e modelli per frammenti di contenuto (CRUD).
    * Questa API è basata su REST.
-   * In futuro, il supporto per i frammenti di contenuto nell’API HTTP di Assets diventerà obsoleto in quanto verrà sostituito dall’API REST JSON per i Edge Delivery Services. La tempistica non è ancora stata decisa.
+   * In futuro, il supporto per i frammenti di contenuto nell’API HTTP di Assets diventerà obsoleto in quanto verrà sostituito dall’API REST JSON di Edge Delivery Services. La tempistica non è ancora stata decisa.
 
 <!--
 ## JSON vs HTML {#json-vs-HTML}
@@ -51,7 +51,7 @@ Key considerations include:
 
 ## REST e GRAPHQL {#rest-vs-graphql}
 
-L’API utilizzata è una decisione per gli sviluppatori: l’AEM supporta entrambi.
+L’API utilizzata è una decisione per gli sviluppatori: AEM supporta entrambe.
 
 Molti confronti sono disponibili online, ma alcuni punti salienti e vantaggi di REST includono:
 
@@ -71,7 +71,7 @@ Molti confronti sono disponibili online, ma alcuni punti salienti e vantaggi di 
 
 * Memorizzazione in cache
 
-   * Le risposte JSON alle richieste REST `GET` sono intrinsecamente memorizzabili nella cache. Le richieste di GraphQL `POST` non possono essere memorizzate nella cache, a meno che non vengano effettuate in questo modo, ad esempio utilizzando query persistenti AEM memorizzate nel server e richieste con `GET` richieste simili a REST.
+   * Le risposte JSON alle richieste REST `GET` sono intrinsecamente memorizzabili nella cache. Le richieste di GraphQL `POST` non possono essere memorizzate nella cache, a meno che non vengano effettuate in questo modo, ad esempio utilizzando query persistenti di AEM memorizzate nel server e richieste con `GET` richieste simili a REST.
 
 I vantaggi di GraphQL includono:
 

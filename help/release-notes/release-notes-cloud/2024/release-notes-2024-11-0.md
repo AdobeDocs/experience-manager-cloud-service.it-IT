@@ -4,7 +4,7 @@ description: Note sulla versione 2024.11.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 100%
@@ -57,7 +57,7 @@ Gestisci in modo efficiente i dati del foglio di calcolo di Edge Delivery (ad es
 
 **OpenAPI REST di AEM per la distribuzione dei frammenti di contenuto**
 
-OpenAPI REST di [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-rest-openapi-content-fragment-delivery.md) è ora disponibile per AEM as a Cloud Service.
+OpenAPI REST di [AEM per la distribuzione dei frammenti di contenuto](/help/headless/aem-content-fragment-delivery-with-openapi.md) è ora disponibile per AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
