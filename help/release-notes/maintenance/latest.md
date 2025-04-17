@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 45%
+ht-degree: 48%
 
 ---
 
@@ -48,7 +48,7 @@ Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzio
 * CQ-4355411: le descrizioni comandi rimangono visualizzate nella finestra di dialogo &quot;Preferenze utente&quot;.
 * GRANITE-57265: i valori della selezione a discesa non vengono selezionati.
 * GRANITE-57067 - Mancano criteri efficaci nell’interfaccia utente.
-* SITES-30727: il trascinamento della selezione potrebbe non riuscire per i sottocomponenti nell’editor di AEM.
+* SITES-30727: il trascinamento potrebbe non riuscire per i componenti secondari nell’editor di AEM.
 * SKYOPS-90607: i processi Sling vengono eseguiti in una distribuzione inattiva o con contenuto mutabile.
 * SKYOPS-95722: rimuovi la dimensione `MaxPermSize` dai flag quickstart in AEM-SDK.
 * SKYOPS-103569: impossibile caricare alcune immagini con Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
