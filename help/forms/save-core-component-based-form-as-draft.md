@@ -4,17 +4,17 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 508265c72f458b062e1667fd42403743fa293586
+source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 2%
+source-wordcount: '1365'
+ht-degree: 1%
 
 ---
 
 
 # Salvare i moduli come bozze e elencarli nella pagina Sites
 
-<span class="preview"> Questo articolo contiene informazioni sulla funzionalità **Bozze**, una funzionalità non definitiva. La funzione pre-release è accessibile solo tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).</span>
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente predefinito **Bozze e invii** di Forms Portal, che consente di visualizzare le bozze e gli invii nelle pagine di AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 

@@ -4,13 +4,13 @@ description: Chiamate di funzione asincrone nell’editor di regole visive
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di funzioni asincrone in un modulo adattivo basato su componenti core
 
@@ -38,8 +38,6 @@ Puoi implementare le funzioni asincrone per Adaptive Forms utilizzando i seguent
 * [Uscita funzione](#how-to-use-function-output-rule-type)
 
 ## Come si utilizza il tipo di regola Chiamata funzione asincrona?
-
-<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 È possibile scrivere le [funzioni personalizzate](/help/forms/custom-function-core-component-create-function.md) per le operazioni asincrone e configurare le funzioni asincrone utilizzando il tipo di regola **[!UICONTROL Chiamata funzione asincrona]** nell&#39;editor di regole.
 
@@ -217,7 +215,7 @@ Per vedere come funziona, aggiungiamo un pulsante e creiamo una regola per il pu
 
 ![creazione regola per funzione asincrona](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-Fare riferimento alla schermata della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Inspect nella finestra della console per visualizzare la risposta al pulsante, fai clic su:
+Fare riferimento alla schermata della finestra della console seguente per dimostrare che quando l&#39;utente fa clic sul pulsante `Fetch`, viene richiamata la funzione personalizzata `callAsyncFunction`, che a sua volta chiama una funzione asincrona `asyncFunction`. Ispeziona la finestra della console per visualizzare la risposta al clic del pulsante:
 
 ![Finestra della console](/help/forms/assets/async-custom-funct-console.png)
 

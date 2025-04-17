@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,6 @@ ht-degree: 0%
 https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
-
-<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
-
 
 I componenti core Moduli adattivi forniscono funzionalità che consentono agli autori dei moduli di incorporare nei moduli il controllo delle versioni, i commenti e le annotazioni. Queste funzioni semplificano il processo di sviluppo dei moduli consentendo agli utenti di creare e gestire più versioni di un modulo, avviare discussioni collaborative tramite commenti e allegare annotazioni a specifici componenti del modulo, migliorando in tal modo l’esperienza complessiva di creazione del modulo.
 
@@ -34,7 +31,7 @@ Il controllo delle versioni adattive dei moduli consente di aggiungere versioni 
 Per creare una versione di un modulo, effettuare le seguenti operazioni:
 
 1. Creare un modulo o utilizzare un modulo esistente.
-1. Nell&#39;interfaccia utente dell&#39;AEM, passa al **[!UICONTROL modulo]**>**[!UICONTROL Forms &amp; Documents]** e seleziona il tuo **modulo**.
+1. Nell&#39;interfaccia utente di AEM, passa al **[!UICONTROL Modulo]**>**[!UICONTROL Forms e documenti]** e seleziona il tuo **Modulo**.
 1. Nel menu a discesa di selezione del pannello a sinistra, seleziona **[!UICONTROL Versioni]**.
    ![Seleziona modulo](select-a-form.png)
 1. Fai clic su **tre punti** nel pannello inferiore a sinistra, quindi fai clic su **[!UICONTROL Salva come versione]**.

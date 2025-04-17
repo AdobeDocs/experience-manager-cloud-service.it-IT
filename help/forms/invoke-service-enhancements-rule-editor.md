@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
 
-
 # Utilizzo del servizio Invoke nell’Editor di regole visive per i moduli basati su componenti core
-
-<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 L&#39;editor di regole visive in un modulo adattivo supporta la funzionalità **Richiama servizio**, che consente di selezionare un servizio dall&#39;elenco di modelli di dati modulo (FDM) configurati per l&#39;istanza. Puoi mappare i campi modulo direttamente sui parametri di input del servizio. Per mappare i campi modulo ai parametri di output, utilizza l’opzione payload dell’evento per il servizio del modello dati modulo specificato. Inoltre, l&#39;editor di regole visive consente di creare regole per i gestori di operazioni riuscite e non riuscite per le operazioni **Richiama servizio** in base alle relative risposte di output. I gestori di errori gestiscono l&#39;esecuzione corretta dell&#39;operazione **Richiama servizio**, mentre i gestori di errori risolvono gli errori che si verificano.
 
@@ -47,7 +45,7 @@ Quando si fa clic su **[!UICONTROL Aggiungi gestore operazioni riuscite]**, vien
 
 È possibile aggiungere più regole per gestire le risposte corrette per l&#39;operazione **Richiama servizio**:
 
-![Gestore di operazione riuscita multipla](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![Gestore di operazione riuscita multiplo](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 Analogamente, è possibile aggiungere regole per gestire la risposta di output **Invoke Service** quando l&#39;operazione non riesce. Nell&#39;immagine seguente viene visualizzato l&#39;editor di regole **[!UICONTROL Richiama gestore errori servizio]**:
 
@@ -242,4 +240,3 @@ Immettere `102` nella casella di testo `Pet ID` e il pulsante **Invia** è nasco
 ## Risorse aggiuntive
 
 {{see-also-rule-editor}}
-
