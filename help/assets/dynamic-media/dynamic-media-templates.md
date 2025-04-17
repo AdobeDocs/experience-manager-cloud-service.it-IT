@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Utilizza il tuo modello [!DNL Dynamic Media] nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
+Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Pubblica il modello [!DNL Dynamic Media] e utilizzalo nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
 
 Alcune delle caratteristiche principali includono:
 
@@ -88,7 +88,7 @@ Per creare un modello [!DNL Dynamic Media], è necessario disporre di:
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
 1. Passa a [!DNL Assets View] e [crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. La struttura di cartelle in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**. Salva il modello [!DNL Dynamic Media] in questa cartella [!UICONTROL Dynamic Media Assets].
-1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per la creazione del modello.
+1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per la creazione del modello. Per generare l’URL di consegna del modello, che può essere utilizzato nelle applicazioni a valle, è necessaria la pubblicazione di immagini.
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
 1. [Aggiungere livelli di testo all&#39;area di lavoro](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Per creare un’area di lavoro vuota, effettua le seguenti operazioni:
    >[!NOTE]
    >
    >  Il modello viene salvato nel percorso in cui è stato creato. Nella home page di [!DNL Assets View], seleziona **[!UICONTROL Dynamic Media Assets]** e fai clic su **[!UICONTROL Crea modello]** per salvare il modello nella cartella principale di **[!UICONTROL Dynamic Media Assets]**.
+
 1. Specifica un nome di modello, definisci la larghezza e l&#39;altezza dell&#39;area di lavoro e fai clic su **[!UICONTROL Crea]**. Viene visualizzata un&#39;area di lavoro vuota con opzioni di menu su entrambi i lati da utilizzare per la creazione del modello. Passa il puntatore del mouse sulle opzioni del menu per visualizzarne la descrizione comando.
    ![modello personalizzabile in tempo reale](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Per creare un’area di lavoro vuota, effettua le seguenti operazioni:
 * ![modelli personalizzabili](/help/assets/assets/add-text.svg): fare clic per aggiungere testi all&#39;area di lavoro.
 * ![modelli personalizzabili](/help/assets/assets/show-layers-list.svg): fare clic per visualizzare l&#39;elenco di tutti i livelli (immagine e testo) nell&#39;area di lavoro. Ogni immagine e testo aggiunti all’area di lavoro viene rappresentato come un livello separato.
 
-**Opzioni di menu nel riquadro a sinistra:** Utilizzare queste opzioni per le azioni comuni dell&#39;editor come indicato di seguito.
+**Opzioni di menu nel riquadro di sinistra:** Utilizzare queste opzioni per le seguenti azioni comuni dell&#39;editor.
 
-* ![Modelli DM](/help/assets/assets/layer-selector.svg): selezionare un livello.
-* ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg): fare clic per portare avanti un livello selezionato o premere **Ctrl** + **]** (Windows) o **Cmd** + **]** (Mac).
-* ![come creare un modello facilmente personalizzabile](/help/assets/assets/send-backward.svg): fare clic per inviare indietro un livello selezionato o premere **Ctrl** + **[** (Windows) o **Cmd** + **[** (Mac).
-* ![crea un modello personalizzabile all&#39;istante](/help/assets/assets/undo.svg): fare clic per annullare l&#39;ultima azione oppure premere **Ctrl** + **Z** (Windows) o **Cmd** + **Z** (Mac).
-* ![modello per creare rapidamente i banner](/help/assets/assets/redo.svg): fare clic per ripetere l&#39;ultima azione oppure premere **Ctrl** + **Y** (Windows) o **Cmd** + **Y** (Mac).
-* ![modello per creare rapidamente i volantini](/help/assets/assets/zoom-in.svg): fare clic per ingrandire l&#39;area di lavoro o premere **Ctrl** + **+** (Windows) o Cmd + **+** (Mac).
-* ![modello per creare rapidamente i banner](/help/assets/assets/Zoom-out.svg): fare clic per ridurre l&#39;area di lavoro o premere **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac).
+* ![Modelli DM](/help/assets/assets/layer-selector.svg): seleziona ![Modelli DM](/help/assets/assets/layer-selector.svg) e fai clic su un livello nell&#39;area di lavoro per selezionarlo.
+* ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg): fare clic su ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **]** (Windows) o **Cmd** + **]** (Mac) per portare avanti un livello selezionato.
+* ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg): fare clic su ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **[** (Windows) o **Cmd** + **[** (Mac) per inviare indietro un livello selezionato.
+* ![crea un modello personalizzabile all&#39;istante](/help/assets/assets/undo.svg): fai clic su ![crea un modello personalizzabile all&#39;istante](/help/assets/assets/undo.svg) oppure usa la scelta rapida da tastiera, **Ctrl** + **Z** (Windows) o **Cmd** + **Z** (Mac) per annullare l&#39;ultima azione.
+* ![modello per creare rapidamente i banner](/help/assets/assets/redo.svg): fare clic su ![modello per creare rapidamente i banner](/help/assets/assets/redo.svg) oppure utilizzare la scelta rapida da tastiera **Ctrl** + **Y** (Windows) o **Cmd** + **Y** (Mac) per ripetere l&#39;ultima azione.
+* ![modello per creare rapidamente i volantini](/help/assets/assets/zoom-in.svg): fare clic su ![modello per creare rapidamente i volantini](/help/assets/assets/zoom-in.svg) oppure utilizzare la scelta rapida da tastiera **Ctrl** + **+** (Windows) o **Cmd** + **+** (Mac) per ingrandire l&#39;area di lavoro.
+* ![modello per creare rapidamente i banner](/help/assets/assets/Zoom-out.svg): fai clic su ![modello per creare rapidamente i banner](/help/assets/assets/Zoom-out.svg) oppure utilizza la scelta rapida da tastiera, **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac) per ridurre l&#39;area di lavoro.
 * Premi **Backspace** o **delete** per eliminare il livello selezionato se non si sta modificando testo o proprietà.
 
-Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/show-layers-list.svg) **>** ulteriori opzioni (![](/help/assets/assets/three-dots.svg)) sul livello Canvas per modificare le dimensioni canvas in qualsiasi momento durante la creazione del modello.
+Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/show-layers-list.svg) e seleziona altre opzioni (![](/help/assets/assets/three-dots.svg)) sul livello Area di lavoro per modificare le dimensioni dell&#39;area di lavoro in qualsiasi momento durante la creazione del modello.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/sh
 
 Per aggiungere immagini all’area di lavoro, effettua le seguenti operazioni:
 
-1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per visualizzare il pannello [Selettore risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
+1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per aprire il pannello [Selettore risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
 1. Sfoglia il pannello o usa le parole chiave nella barra di ricerca per trovare un’immagine specifica.
 1. Trascina e rilascia un’immagine nell’area di lavoro per utilizzarla. Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per ridimensionare o riposizionare un livello nell&#39;area di lavoro.
    ![crea un banner in pochi secondi](/help/assets/assets/add-image-to-canvas.png)
