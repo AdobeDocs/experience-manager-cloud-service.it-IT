@@ -1,19 +1,19 @@
 ---
 title: Utilizzo delle pipeline di configurazione
-description: Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni di AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
+description: Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni in AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 0b4ed7a99400bb5f91f513bbcd01862cdced03c5
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 # Utilizzo delle pipeline di configurazione {#config-pipelines}
 
-Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni di AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
+Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni in AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 
 ## Panoramica {#overview}
 
@@ -42,11 +42,12 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Selettori origine](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | Dichiarare le regole per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe |
 | [Pagine errore CDN](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Sostituisci la pagina di errore predefinita se non è possibile raggiungere l’origine AEM, facendo riferimento alla posizione del contenuto statico con hosting autonomo nel file di configurazione |
 | [Rimozione CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Dichiara le chiavi API di rimozione utilizzate per rimuovere la rete CDN |
-| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiarare il valore della X-AEM-Edge-Key necessaria per chiamare la CDN Adobe Systems da una CDN cliente |
-| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base per proteggere determinati URL. |
+| [Token HTTP CDN gestito dal cliente](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Dichiara il valore della chiave X-AEM-Edge-Key necessaria per chiamare la rete CDN di Adobe da una rete CDN del cliente |
+| [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL. |
 | [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni del contenuto devono essere eliminate |
 | [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di controllo di AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri |
-| [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configurare gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configura gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk |
+| [Registrazione di un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Iscrivi i progetti API Adobe Developer Console in uno specifico ambiente AEM registrando l’ID client. Questo è necessario per l’utilizzo di API basate su OpenAPI che richiedono l’autenticazione |
 
 ## Creazione e gestione delle pipeline di configurazione {#creating-and-managing}
 
@@ -150,7 +151,7 @@ La struttura del file sarà simile alla seguente:
   logForwarding-prod.yaml
 ```
 
-Utilizzare questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso, ad esempio
+Utilizza questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso, ad esempio
 `cdn-dev.yaml` e `logForwarding-dev.yaml` con valore di `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` con valore di `["stage"]` e così via.
 
 ### Una cartella per ambiente {#folder-per-env}

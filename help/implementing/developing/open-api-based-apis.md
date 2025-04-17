@@ -4,48 +4,52 @@ description: Scopri il supporto di AEM as a Cloud Service per le API basate su O
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: e735f7d2a39e3165907969d2e27565639499a636
+source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
 
 # API basate su OpenAPI {#openapi-based-apis}
 
+Le API di AEM as a Cloud Service più recenti seguono le specifiche OpenAPI e offrono quindi un set di API coerente e ben documentato.
+
 >[!NOTE]
 >
->OpenAPI sono disponibili come parte di un programma di accesso anticipato. Se ti interessa accedervi, ti invitiamo a inviare un&#39;e-mail a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descrizione del tuo caso d&#39;uso.
+> Un [tutorial end-to-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) è una risorsa consigliata per scoprire come configurare e richiamare le API AEM basate su OpenAPI.
 
-Le API di AEM as a Cloud Service più recenti seguono le specifiche OpenAPI e producono quindi API coerenti, ben documentate e di facile utilizzo. Informazioni approfondite sono disponibili nelle pagine seguenti:
+Per gli endpoint che richiedono l’autenticazione, l’approccio all’autenticazione varia in base all’endpoint, ma può utilizzare OAuth Server-to-Server, OAuth Web App o OAuth Single Page App (SPA). Le credenziali sono configurate tramite progetti in [Adobe Developer Console](https://developer.adobe.com/developer-console/).
 
-* Un [tutorial end-to-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) su come configurare e richiamare le API AEM basate su OpenAPI utilizzando l&#39;autenticazione server-to-server.
+Casi d’uso comuni dell’API includono integrazioni con sistemi come un CRM o un PIM, in cui le API AEM vengono richiamate per recuperare o mantenere i dati. Come parte dell&#39;implementazione dell&#39;integrazione, le applicazioni possono sottoscrivere [eventi emessi da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), che possono attivare la logica di business in Adobe App Builder o in altre infrastrutture.
+
+Questo documento funge da panoramica, ma la documentazione più dettagliata è disponibile nelle pagine seguenti:
+
+* I collegamenti dalla sezione API basata su OpenAPI di [documentazione di riferimento](https://developer.adobe.com/experience-cloud/experience-manager-apis/). Ogni documentazione di riferimento dell’API include anche un ambiente playground API, che consente di provare facilmente un endpoint utilizzando un token bearer generato con Adobe Developer Console.
+
 * [Guide](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) informative, inclusi [concetti e sintassi API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
-* Endpoint API [documentazione di riferimento](https://developer.adobe.com/experience-cloud/experience-manager-apis/), in cui alcune API sono basate su OpenAPI, ad esempio [questa API Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). La documentazione di riferimento include anche un ambiente playground API, che semplifica la prova di un endpoint utilizzando un token bearer generato con Adobe Developer Console.
 
-Un caso d’uso API comune prevede integrazioni con sistemi come un CRM o un PIM, in cui le API AEM vengono richiamate per recuperare o mantenere i dati. Come parte dell&#39;implementazione dell&#39;integrazione, le applicazioni possono sottoscrivere [eventi emessi da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), che possono attivare la logica di business in Adobe App Builder o in altre infrastrutture.
+* Un tutorial di primo livello che descrive [approcci all&#39;autenticazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) e altri concetti.
 
-I tipi di autenticazione API supportati variano a seconda dell’endpoint, ma possono essere server-to-server OAuth, app Web OAuth e app a pagina singola OAuth (SPA).
+* Un tutorial con video incentrato su [come configurare le API basate su OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
->[!NOTE]
->
-> Il [tutorial end-to-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) è una risorsa consigliata per scoprire come configurare e richiamare le API AEM basate su OpenAPI.
-
+* [Un&#39;esercitazione end-to-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) sulla configurazione e la chiamata di OpenAPI con la strategia di autenticazione server-to-server. Esercitazioni simili sono disponibili anche per gli approcci di autenticazione tramite app web e applicazioni a pagina singola.
 
 ## Configurazione dell’accesso API {#configuring-api-access}
 
-Molte API AEM basate su OpenAPI richiedono l&#39;autenticazione, che richiede la generazione di credenziali tramite [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/). La configurazione prevede i seguenti passaggi:
+Alcune API AEM basate su OpenAPI richiedono l&#39;autenticazione, che richiede la generazione di credenziali tramite [Adobe Developer Console](https://developer.adobe.com/developer-console/). La configurazione prevede i seguenti passaggi:
 
-1. Assicurati che i profili di prodotto [ del tuo programma AEM siano aggiornati](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) e che sia abilitato un servizio appropriato per accedere all&#39;API desiderata.
-1. Crea un nuovo progetto in Adobe Developer Console e aggiungi le API desiderate al progetto, selezionando anche il tipo di autenticazione appropriato.
-1. Genera le credenziali, che verranno successivamente utilizzate per scambiarle con un token Bearer quando si richiama l’API.
-1. Registra l’ID client con l’ambiente configurando un file YAML, distribuito utilizzando la pipeline di configurazione (o riga di comando per gli RDE).
+1. Modernizzazione dell’ambiente AEM as a Cloud Service.
+1. Abilita l&#39;accesso alle API di AEM [tramite i profili di prodotto](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles).
+1. Creazione di un progetto Adobe Developer Console (ADC).
+1. Configura il progetto ADC. Questo genera credenziali che verranno utilizzate successivamente per scambiarle con un token Bearer quando si richiama l’API.
+1. Configura l’istanza di AEM per abilitare la comunicazione al progetto ADC. Ciò comporta la registrazione dell&#39;ID client con l&#39;ambiente configurando e distribuendo un file YAML, come descritto nella sezione [Registrazione di un ID client](#registering-a-client-id) di seguito.
 
-Per istruzioni dettagliate, consulta l&#39;esercitazione [Configurare API basate su OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/setup).
+Per istruzioni dettagliate, consulta l&#39;esercitazione [Configurare API basate su OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
-## Registrazione di un ID client {#registering-a-client-id}
+### Registrazione di un ID client {#registering-a-client-id}
 
-Gli ID client hanno come ambito le API di un progetto Adobe Developer Console per ambienti AEM specifici. Ciò si ottiene come segue:
+Gli ID client eseguono l’ambito delle API in un progetto Adobe Developer Console in ambienti AEM specifici. Ciò si ottiene come segue:
 
 1. Creare un file denominato `api.yaml` o simile con una configurazione come lo snippet sottostante, inclusi i livelli desiderati (authoring, pubblicazione, anteprima). I valori `Client_id` devono provenire dai progetti API di Adobe Developer Console.
 
