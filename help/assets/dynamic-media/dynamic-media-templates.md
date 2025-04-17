@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 1%
 
 ---
@@ -87,8 +87,8 @@ Per creare un modello [!DNL Dynamic Media], è necessario disporre di:
 
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
-1. Passa a [!DNL Assets View] e [crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in **[!UICONTROL Assets]**. La struttura di cartelle in **[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**. Usa questa cartella [!UICONTROL Dynamic Media Assets] per salvare il modello [!DNL Dynamic Media] in un secondo momento.
-1. Seleziona **[!UICONTROL Assets]** e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per creare il modello.
+1. Passa a [!DNL Assets View] e [crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. La struttura di cartelle in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**. Salva il modello [!DNL Dynamic Media] in questa cartella [!UICONTROL Dynamic Media Assets].
+1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per la creazione del modello.
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
 1. [Aggiungere livelli di testo all&#39;area di lavoro](#add-text-to-the-canvas)
@@ -99,13 +99,15 @@ Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
 Per creare un’area di lavoro vuota, effettua le seguenti operazioni:
 
-1. Passa a [!DNL Assets View] e seleziona **[!UICONTROL Dynamic Media Assets]** disponibile nel pannello a sinistra.
+1. Passa a [!DNL Assets View], seleziona **[!UICONTROL Dynamic Media Assets]** disponibile nel pannello a sinistra e passa alla cartella per salvare il modello in tale cartella.
 
    ![Modelli Dynamic Media](/help/assets/assets/DM-Assets1.png)
 
-1. Seleziona **[!UICONTROL Crea modello]** in questa pagina oppure passa alla cartella **[!UICONTROL Dynamic Media Assets]** e seleziona **[!UICONTROL Crea modello]**. Il modello viene salvato nel percorso in cui è stato creato, nella cartella principale come **[!UICONTROL Dynamic Media Assets]** o in una cartella all&#39;interno della directory principale. Dopo aver selezionato **[!UICONTROL Crea modello]** viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo modello]**.
+1. Seleziona **[!UICONTROL Crea modello]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo modello]**.
    ![come creare modelli dinamici personalizzabili in tempo reale](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  Il modello viene salvato nel percorso in cui è stato creato. Nella home page di [!DNL Assets View], seleziona **[!UICONTROL Dynamic Media Assets]** e fai clic su **[!UICONTROL Crea modello]** per salvare il modello nella cartella principale di **[!UICONTROL Dynamic Media Assets]**.
 1. Specifica un nome di modello, definisci la larghezza e l&#39;altezza dell&#39;area di lavoro e fai clic su **[!UICONTROL Crea]**. Viene visualizzata un&#39;area di lavoro vuota con opzioni di menu su entrambi i lati da utilizzare per la creazione del modello. Passa il puntatore del mouse sulle opzioni del menu per visualizzarne la descrizione comando.
    ![modello personalizzabile in tempo reale](/help/assets/assets/blank-canvas-page.png)
 
@@ -267,7 +269,7 @@ Per visualizzare in anteprima e pubblicare il modello e copiare l’URL di conse
    ![creazione rapida di contenuti](/help/assets/assets/dm-templates-publish-status.png)
 Puoi anche attivare **[!UICONTROL Includi tutti i parametri]** per modificare tutti i valori dei parametri visualizzati e visualizzare gli aggiornamenti nell&#39;anteprima del modello.
    <br>
-1. Per pubblicare il modello nella pagina di anteprima, fai clic su **[!UICONTROL Pubblica]** e conferma la pubblicazione. Viene visualizzato il messaggio Pubblica completata e lo stato di pubblicazione viene aggiornato a Pubblicato.
+1. Per pubblicare il modello nella pagina di anteprima, fai clic su **[!UICONTROL Pubblica]** e conferma la pubblicazione. Viene visualizzato il messaggio **[!UICONTROL Pubblicazione completata]** e lo stato di pubblicazione viene aggiornato a **[!UICONTROL Pubblicato]**.
 
 >[!NOTE]
 >
