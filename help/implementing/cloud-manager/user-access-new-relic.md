@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 40%
+source-wordcount: '1820'
+ht-degree: 39%
 
 ---
 
@@ -119,7 +119,7 @@ Dopo aver attivato [l&#39;account New Relic](#activate-account), puoi accedere a
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Fare clic sul programma per il quale si desidera accesso Nuovo Relic One.
+1. Fare clic sul programma per il quale si desidera accedere a New Relic One.
 
 1. Nella parte inferiore della scheda **Ambienti** nella pagina di panoramica del programma, fai clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e seleziona **Apri New Relic**.
 
@@ -159,9 +159,9 @@ Se sei stato aggiunto come utente New Relic One, come descritto in [Gestione ute
 
    ![Inserimento dell’indirizzo e-mail](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. Nuovo Relic ti invia un&#39;e-mail contenente un collegare per confermare l&#39;account.
+1. New Relic ti invia un’e-mail contenente un collegamento per confermare l’account.
 
-Se completi il processo di registrazione e non riesci ad accedere al tuo account a causa di e-mail o messaggi di errore password, registra un ticket di supporto tramite l&#39;Admin Console[](https://adminconsole.adobe.com/).
+Se dopo aver completato la procedura di registrazione non riesci ad accedere al tuo account a causa di messaggi di errore relativi all&#39;e-mail o alla password, invia un ticket di supporto tramite [Admin Console](https://adminconsole.adobe.com/).
 
 Se non ricevi un’e-mail da New Relic, effettua le seguenti operazioni:
 
@@ -169,9 +169,7 @@ Se non ricevi un’e-mail da New Relic, effettua le seguenti operazioni:
 * Se applicabile, [aggiungi New Relic al tuo inserisco nell&#39;elenco Consentiti di e-mail](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * Se nessuno dei due suggerimenti è utile, fornisci un feedback sul ticket di supporto.
 
-## Limitazioni {#limitations}
-
-L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
+## Note sull’utilizzo {#usage-notes}
 
 * È possibile aggiungere fino a un massimo di 30 utenti. Se è stato raggiunto il numero massimo di utenti, rimuovine alcuni per poterne aggiungere di nuovi.
 * Gli utenti aggiunti a New Relic sono di tipo **Basic**. Per informazioni dettagliate, consulta la [documentazione di New Relic](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -179,7 +177,7 @@ L’aggiunta di utenti a New Relic One prevede le seguenti limitazioni:
 
 >[!NOTE]
 >
->Se nel tuo account secondario New Relic One non viene rilevata alcuna attività di accesso **utente** per 30 giorni o più, l&#39;agente APM viene interrotto e i dati non verranno inviati da AEM Cloud Service a New Relic.  **I dati non verranno inviati finché il tuo account secondario non verrà riattivato.**
+>Se nel tuo account secondario New Relic One non viene rilevata alcuna attività di accesso **utente** per 30 giorni o più, l&#39;agente APM viene interrotto. I dati non vengono inviati da AEM Cloud Service a New Relic. *I dati non vengono inviati finché il tuo account secondario non viene riattivato.*
 >
 >Segui gli stessi passaggi descritti nella sezione [Attiva l&#39;account secondario New Relic One](#activate-sub-account) di questo documento per riattivare l&#39;account secondario New Relic One.
 
@@ -234,7 +232,7 @@ Il supporto Adobe monitora AEM as a Cloud Service con New Relic One e altri stru
 
 +++
 
-+++**L&#39;agente APM per la mia account Relic One Nuovo è stato arrestato. Cos&#39;è successo?**
++++**L&#39;agente APM per il mio account New Relic One è stato arrestato. Cos&#39;è successo?**
 
 [Gli agenti APM vengono interrotti](#limitations) se non viene rilevata alcuna attività per 30 giorni o più. Segui gli stessi passaggi descritti nella sezione [Attiva l&#39;account secondario New Relic One](#activate-sub-account) di questo documento per riattivare l&#39;account secondario New Relic One.
 +++

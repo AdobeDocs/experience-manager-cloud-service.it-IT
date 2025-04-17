@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Dopo l&#39;aggiunta, è possibile applicare o rimuovere più volte [Elenchi cons
 >
 >Se non viene applicato alcun Elenco consentiti IP, per impostazione predefinita sono consentiti tutti gli indirizzi IP. Quando viene applicato un Elenco consentiti IP, non sono consentiti indirizzi IP diversi da quelli dell’Elenco consentiti IP.
 
-## Limitazioni {#limitations}
-
-Prima di utilizzare gli Elenchi consentiti IP, è necessario comprendere le seguenti limitazioni in termini di funzionalità, utilizzo ed effetti su altre funzioni.
-
-### Limitazioni generali degli Elenchi consentiti IP {#general}
+## Note sull’utilizzo {#usage-notes}
 
 * È possibile aggiungere al programma un massimo di 50 Elenchi consentiti IP.
 * A ogni Elenco consentiti IP è possibile aggiungere un massimo di 50 indirizzi IP/CIDR.

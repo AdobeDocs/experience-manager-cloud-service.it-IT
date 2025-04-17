@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 38%
 
 ---
@@ -42,7 +42,7 @@ Dopo aver [configurato la pipeline di produzione](/help/implementing/cloud-manag
 
 1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma per il quale si desidera distribuire il codice.
 
-1. Nella pagina **Panoramica**, nell&#39;area di invito all&#39;azione, fare clic su **Distribuisci**.
+1. Nella pagina **Panoramica**, nell&#39;area call-to-action, fare clic su **Distribuisci**.
 
    ![Invito all’azione](assets/deploy-code1.png)
 
@@ -134,7 +134,7 @@ In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di
 >
 >In una riesecuzione, il passaggio di compilazione viene etichettato nell’interfaccia utente, per rispecchiare la copia degli artefatti non la ricompilazione.
 
-### Limitazioni {#limitations}
+### Note sull’utilizzo {#usage-notes}
 
 * La riesecuzione del passaggio di distribuzione di produzione è disponibile solo per l’ultima esecuzione.
 * La riesecuzione non è disponibile per le esecuzioni degli aggiornamenti push. Se l’ultima esecuzione è un aggiornamento push, non è possibile eseguirla nuovamente.

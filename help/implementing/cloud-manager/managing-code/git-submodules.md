@@ -4,9 +4,9 @@ description: Scopri come i moduli Git secondari possono essere utilizzati per un
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '391'
 ht-degree: 24%
 
 ---
@@ -68,14 +68,12 @@ Il risultato è un file `.gitmodules` simile al seguente:
 
 Per ulteriori informazioni sui sottomoduli Git, vedere anche il [Manuale di riferimento Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-## Limitazioni e consigli {#limitations-recommendations}
-
-Quando utilizzi i sottomoduli Git con archivi gestiti da Adobe, tieni presente le seguenti limitazioni.
+## Note sull’utilizzo {#usage-notes}
 
 * La sintassi dell’URL Git deve essere esattamente quella descritta nella sezione precedente.
 * I moduli secondari sono supportati unicamente nella radice del ramo.
 * Per motivi di sicurezza, non incorporare le credenziali negli URL Git.
-* Se non diversamente necessario, Adobe consiglia di utilizzare sottomoduli superficiali eseguendo quanto segue:
+* Se non diversamente necessario, Adobe consiglia di utilizzare i sottomoduli superficiali eseguendo quanto segue:
   `git config -f .gitmodules submodule.<submodule path>.shallow true` per ogni sottomodulo.
 * I riferimenti ai moduli secondari vengono memorizzati in commit Git specifici. Di conseguenza, quando vengono apportate modifiche all’archivio dei sottomoduli, il commit a cui si fa riferimento deve essere aggiornato.
 Ad esempio, utilizzando quanto segue:
@@ -92,10 +90,8 @@ Tuttavia, dopo aver configurato il file `pom.xml` e aver eseguito i comandi `git
 
 ![Aggregatore](assets/aggregator.png)
 
-### Limitazioni e consigli {#limitations-recommendations-private-repos}
+### Note sull’utilizzo {#usage-notes-recommendations-private-repos}
 
-Quando utilizzi i sottomoduli Git con archivi privati, tieni presenti le seguenti limitazioni:
-
-* Gli URL Git del sottomodulo possono essere in formato HTTPS o SSH, ma devono puntare a un archivio GitHub.com. Non è supportata l’aggiunta di un sottomodulo dell’archivio di Adobi a un archivio di aggregazione GitHub o viceversa.
+* Gli URL Git del sottomodulo possono essere in formato HTTPS o SSH, ma devono puntare a un archivio GitHub.com. L’aggiunta di un sottomodulo dell’archivio Adobe a un archivio di aggregazione GitHub o viceversa non è supportata.
 * I sottomoduli GitHub devono essere accessibili dall’app GitHub di Adobe.
 * Si applicano anche le [limitazioni all’utilizzo dei moduli Git secondari con archivi gestiti da Adobe](#limitations-recommendations).

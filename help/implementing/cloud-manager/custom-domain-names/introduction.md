@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 40%
+source-wordcount: '710'
+ht-degree: 41%
 
 ---
 
@@ -40,12 +40,12 @@ Il nome di dominio può essere acquistato da un registrar di nomi di dominio o d
 
 AEM as a Cloud Service offre un servizio CDN (Content Delivery Network) integrato, ma consente anche di utilizzare la rete CDN BYO (Bring Your Own) con AEM. I domini personalizzati possono essere installati nella rete CDN gestita da AEM o in una rete CDN gestita dall’utente.
 
-* Cloud Manager gestisce i nomi di dominio personalizzati e i certificati installati nella rete CDN gestita dall’AEM.
+* Cloud Manager gestisce i nomi di dominio personalizzati e i certificati installati nella rete CDN gestita da AEM.
 * I nomi di dominio personalizzati e i certificati installati in una rete CDN BYO vengono gestiti direttamente all’interno di tale rete CDN.
 
-**I domini gestiti nella tua rete CDN non richiedono l&#39;installazione tramite Cloud Manager**. Vengono resi disponibili all&#39;AEM tramite X-Forwarded-Host e corrispondono ai vhost definiti in Dispatcher. Consulta la [documentazione CDN](/help/implementing/dispatcher/cdn.md).
+**I domini gestiti nella tua rete CDN non richiedono l&#39;installazione tramite Cloud Manager**. Vengono resi disponibili ad AEM tramite X-Forwarded-Host e corrispondono ai vhost definiti in Dispatcher. Consulta la [documentazione CDN](/help/implementing/dispatcher/cdn.md).
 
-In un ambiente è possibile installare entrambi i domini nella rete CDN gestita dall’AEM e in una rete CDN BYO.
+In un ambiente è possibile installare entrambi i domini nella rete CDN gestita da AEM e in una rete CDN BYO.
 
 ## Flusso di lavoro {#workflow}
 
@@ -63,9 +63,7 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 >
 >L’impostazione di nomi di dominio personalizzati con AEM as a Cloud Service è in genere un processo semplice. Tuttavia, a volte possono verificarsi problemi di delega del dominio la cui risoluzione può richiedere 1-2 giorni lavorativi. Per questo motivo, si consiglia di installare i domini molto prima della loro data di Go Live. Per ulteriori informazioni, vedere il documento [Verifica stato nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-## Limitazioni {#limitations}
-
-L’utilizzo di nomi di dominio personalizzati con AEMaaCS presenta diverse limitazioni.
+## Note sull’utilizzo {#usage-notes}
 
 * I nomi di dominio personalizzati sono supportati in Cloud Manager solo per i servizi di pubblicazione e anteprima per i programmi Sites.
    * I domini personalizzati per i servizi di authoring non sono supportati.

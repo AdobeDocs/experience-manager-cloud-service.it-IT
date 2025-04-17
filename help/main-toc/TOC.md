@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
 workflow-type: tm+mt
 source-wordcount: '6152'
 ht-degree: 94%
@@ -217,7 +217,7 @@ ht-degree: 94%
    + Note sulla versione del connettore avanzato Workfront per Experience Manager{#workfront}
       + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + Note sulla versione per generare varianti {#generate-variations}
-      + [Note sulla versione corrente per generare varianti](/help/generative-ai/release-notes-generate-variations.md)
+      + [Note sulla versione corrente della funzione Genera varianti](/help/generative-ai/release-notes-generate-variations.md)
    + Note sulla versione per l’editor universale {#univeral-editor}
       + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
@@ -329,7 +329,7 @@ ht-degree: 94%
          + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestione delle entità principali dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
          + [Caricamento in blocco delle entità principali in IMS dopo la migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
-         + [Risoluzione dei problemi dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [Risoluzione dei problemi dello strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + Strumento di mappatura utenti legacy (legacy){#legacy-user-mapping-tool}
             + [Panoramica](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Considerazioni importanti](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
@@ -672,7 +672,7 @@ ht-degree: 94%
       + [Modificare i metadati in blocco](/help/assets/bulk-metadata-edit.md)
       + [Condividere le risorse](/help/assets/share-links-for-assets-view.md)
       + [Gestire le raccolte](/help/assets/manage-collections-assets-view.md)
-      + [Relazioni risorsa](/help/assets/asset-relations-for-assets-view.md)
+      + [Relazioni delle risorse](/help/assets/asset-relations-for-assets-view.md)
       + [Osservare risorse, cartelle e raccolte](/help/assets/manage-notifications-assets-view.md)
       + [Gestire i rapporti](/help/assets/manage-reports-assets-view.md)
       + [Rielaborazione](/help/assets/reprocessing-assets-view.md)
@@ -708,7 +708,7 @@ ht-degree: 94%
    + Integrazione con Adobe Express {#integration-adobe-express}
       + [Integrazione nativa con Adobe Express](/help/assets/native-integration-adobe-express.md)
    + Integrazione con Creative Cloud {#integration-creative-cloud}
-      + [Connettersi ad AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+      + [Connettere AEM Assets a Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 + Moduli {#forms}
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
@@ -835,7 +835,7 @@ ht-degree: 94%
             + [Migliorare le prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
             + [Pubblicare e annullare la pubblicazione di moduli e documenti](/help/forms/publishing-unpublishing-forms.md)
          + Aggiungere componenti a un modulo adattivo {#add-components-to-an-adaptive-form}
-            + [Utilizzare il CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
+            + [Utilizzare CAPTCHA in un modulo adattivo](/help/forms/captcha-adaptive-forms.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Utilizzare il CAPTCHA turnstile in un modulo adattivo](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Utilizzare componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -899,7 +899,7 @@ ht-degree: 94%
       + [Elenco dei font supportati nei documenti PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemi noti, best practice e domande frequenti](/help/forms/communications-known-issues-limitations.md)
    + Rapporti sulle transazioni {#using-communications}
-      + [API rapporti di transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
+      + [API rapporti sulle transazioni fatturabili](/help/forms/transaction-reports-billable-apis.md)
       + [Registrare una transazione per un’implementazione personalizzata](/help/forms/record-transaction-custom-implementation.md)
    + Dashboard di realizzazione del valore  {#vr-dashboard}
       + [Informazioni sulla dashboard per la realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
@@ -976,7 +976,7 @@ ht-degree: 94%
          + [Arricchire i dati di prodotto con i contenuti associati](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
          + [Consigli per prodotti](/help/commerce-cloud/authoring/product-recommendations.md)
       + Amministrazione {#administering}
-         + [Configurazione di più store](/help/commerce-cloud/configuring/multi-store-setup.md)
+         + [Configurazione multi-store](/help/commerce-cloud/configuring/multi-store-setup.md)
          + [Configurazione di più sistemi commerce](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
          + [Configurazione degli URL per SEO (Search Engine Optimization)](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Opzioni di memorizzazione in cache](/help/commerce-cloud/configuring/caching.md)
@@ -1193,7 +1193,7 @@ ht-degree: 94%
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Aggiungere un archivio esterno (Beta limitata)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Aggiungere un archivio esterno (primi utilizzatori)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
