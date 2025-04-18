@@ -4,10 +4,10 @@ description: Note sulla versione per generare varianti, accessibili da AEM as a 
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 83%
+source-wordcount: '284'
+ht-degree: 89%
 
 ---
 
@@ -23,17 +23,17 @@ Questa pagina documenta le note sulla versione per generare varianti, accessibil
 
 La versione corrente è la 3.0.0.
 
-### 3,0,0 {#release-notes-3-0-0}
+### 3.0.0 {#release-notes-3-0-0}
 
-Puoi [accedere a Genera varianti](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) dai seguenti editor ([una volta configurati](#access-generate-variations)):
+Puoi [accedere a Genera varianti](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) dai seguenti editor ([una volta che sono stati configurati](#access-generate-variations)):
 
-* [all’interno del Sidekick di AEM Edge Delivery Services; per l’authoring basato su documenti](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
-* [nell’Editor universale](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [all’interno della barra laterale di AEM Edge Delivery Services; per l’authoring basato su documenti](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [all’interno dell’editor universale](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [all’interno dell’editor di frammenti di contenuto](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
 >[!NOTE]
 >
->È comunque possibile accedere direttamente alla versione precedente di [Genera varianti](/help/generative-ai/generate-variations.md).
+>Si consiglia di utilizzare la versione 3.0.0, poiché anche se è ancora possibile accedere direttamente alla versione precedente di [Genera varianti](/help/generative-ai/generate-variations.md), in futuro diventerà obsoleta.
 
 ### 2.2.0 {#release-notes-2-2-0}
 

@@ -4,15 +4,20 @@ description: Scopri come generare varianti, accessibile da AEM as a Cloud Servic
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 99%
 
 ---
 
 
 # Generare varianti {#generate-variations}
+
+
+>[!NOTE]
+>
+>È consigliabile accedere a [Generate Variations (Genera varianti) integrato negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md), in quanto la versione descritta in questa pagina diventerà obsoleta in futuro.
 
 Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creazione di contenuti, puoi utilizzare la funzione Genera varianti. La funzione Genera varianti utilizza l’intelligenza artificiale (IA) generativa per creare varianti di contenuto in base ai prompt; questi prompt vengono forniti da Adobe oppure creati e gestiti dagli utenti. Dopo aver creato le varianti, puoi utilizzare il contenuto del tuo sito Web e misurarne il successo utilizzando la funzionalità [Sperimentazione](https://www.aem.live/docs/experimentation) di [Edge Delivery Services](/help/edge/overview.md).
 
@@ -25,10 +30,6 @@ Puoi [accedere a Genera varianti](#access-generate-variations) da:
 >[!NOTE]
 >
 >In tutti i casi, per utilizzare la funzione Genera varianti è necessario assicurarsi che siano soddisfatti i [prerequisiti di accesso](#access-prerequisites).
-
->[!NOTE]
->
->Puoi anche accedere a [Generate Variations (Genera varianti) integrato negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md).
 
 Puoi effettuare le seguenti operazioni:
 
@@ -121,7 +122,7 @@ Esistono diversi campi di input chiave comuni a più prompt (alcuni campi non so
 * **Modifica prompt**
    * Il [prompt sottostante può essere modificato](#edit-the-prompt) per perfezionare i risultati generati.
 
-### Genera copia {#generate-copy}
+### Generare la copia {#generate-copy}
 
 Dopo aver compilato i campi di input e/o modificato il prompt, puoi generare il contenuto e rivedere le risposte.
 
