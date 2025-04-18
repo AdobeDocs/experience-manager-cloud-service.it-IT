@@ -4,10 +4,10 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 27%
 
 ---
 
@@ -27,7 +27,6 @@ La configurazione di un archivio esterno in Cloud Manager avviene in tre passagg
 1. Fornire un token di accesso all’archivio esterno.
 1. Convalida la proprietà dell’archivio GitHub privato.
 1. [Configurare un webhook](#configure-webhook) in un repository esterno.
-
 
 
 ## Aggiungere un archivio esterno {#add-ext-repo}
@@ -212,90 +211,5 @@ Si applicano i seguenti comportamenti:
 * Accertati che l’URL del webhook includa una chiave API valida.
 * Controlla che gli eventi del webhook siano configurati correttamente nelle impostazioni del fornitore Git.
 * Se la convalida PR o i trigger della pipeline non funzionano, verifica che il segreto webhook sia aggiornato sia in Cloud Manager che nel fornitore Git.
-
-
-## Implementazione in un ambiente di sviluppo rapido da provider Git esterni {#deploy-to-rde}
-
->[!NOTE]
->
->Questa funzione è disponibile tramite il programma Early Adopter. Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare.
-
-Cloud Manager supporta la distribuzione di codice in ambienti di sviluppo rapido (RDE) direttamente da provider Git esterni quando si utilizza la configurazione [Bring Your Own Git (BYOG)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-La distribuzione degli RDE da un archivio Git esterno richiede quanto segue:
-
-* Utilizzo di un archivio Git esterno integrato con Cloud Manager (configurazione BYOG).
-* È necessario eseguire il provisioning di uno o più ambienti RDE per il progetto.
-* Se utilizzi `github.com`, devi rivedere e accettare l&#39;installazione aggiornata dell&#39;app GitHub per concedere le nuove autorizzazioni richieste.
-
-**Note sull&#39;utilizzo**
-
-* La distribuzione in RDE è attualmente supportata solo per i pacchetti di contenuti AEM e Dispatcher.
-* La distribuzione di altri tipi di pacchetti (ad esempio, pacchetti completi di applicazioni AEM) non è ancora supportata.
-* Attualmente, il ripristino di un ambiente RDE utilizzando un commento non è supportato. I clienti devono utilizzare i comandi CLI AIO esistenti, come [descritto qui](/help/implementing/developing/introduction/rapid-development-environments.md).
-
-**Come funziona**
-
-1. **Messaggio di convalida della qualità del codice.**
-
-   Quando una richiesta di pull (PR) attiva l’esecuzione di una pipeline di qualità del codice, i risultati della convalida indicano se la distribuzione può procedere a un ambiente RDE.
-
-   Come si presenta su GitHub Enterprise:
-   ![Messaggio di convalida della qualità del codice su GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   Come si presenta su GitLab:
-   ![Messaggio di convalida della qualità del codice su GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   Aspetto di Bitbucket:
-   ![Messaggio di convalida della qualità del codice in Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **Attiva la distribuzione tramite un commento.**
-
-   Per avviare la distribuzione, aggiungere un commento alla PR nel seguente formato: `deploy on rde-environment-<envName>`
-
-   ![Attiva la distribuzione tramite un commento](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   `<envName>` deve corrispondere al nome di un ambiente RDE esistente. Se il nome non viene trovato, viene restituito un commento che indica che l’ambiente non è valido.
-
-   Se lo stato dell’ambiente non è pronto, viene visualizzato il seguente commento:
-
-   ![Ambiente non pronto per la distribuzione](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **Verifica dell&#39;ambiente e distribuzione degli artefatti.**
-
-   Se il RDE è pronto, Cloud Manager invia un nuovo assegno al PR.
-
-   Come si presenta su GitHub Enterprise:
-
-   ![Stato dell&#39;ambiente su GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   Come si presenta su GitLab:
-
-   ![Stato dell&#39;ambiente in GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   Aspetto di Bitbucket:
-
-   ![Stato dell&#39;ambiente in Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **Messaggio di distribuzione riuscito.**
-
-   Al termine della distribuzione, Cloud Manager pubblica un messaggio di successo che riepiloga gli artefatti distribuiti nell’ambiente di destinazione.
-
-   Come si presenta su GitHub Enterprise:
-
-   ![Stato della distribuzione dell&#39;ambiente su GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   Come si presenta su GitLab:
-
-   ![Stato della distribuzione dell&#39;ambiente in GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   Aspetto di Bitbucket:
-
-   ![Stato di distribuzione dell&#39;ambiente in Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 
