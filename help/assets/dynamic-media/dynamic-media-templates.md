@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
+source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3172'
 ht-degree: 1%
 
 ---
@@ -83,12 +83,13 @@ Per creare un modello [!DNL Dynamic Media], è necessario disporre di:
    * Nella pagina **[!UICONTROL Modifica configurazione [!DNL Dynamic Media]]**, la modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** impostata su **[!UICONTROL Disabilitata per impostazione predefinita]** non è applicata a tutte le cartelle di AEM (**[!UICONTROL Sincronizza tutto il contenuto]** non è selezionata). Per ulteriori informazioni, vedere [configurazione di Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md).
    * La modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** è impostata su **[!UICONTROL Abilita per le sottocartelle]** per la cartella o sottocartella di destinazione in cui verrà salvato il modello dopo la creazione. Per ulteriori informazioni, vedere [configurazione [!DNL Dynamic Media] di Cloud Service](/help/assets/dynamic-media/config-dm.md).
 
-## Crea modello WYSIWYG [!DNL Dynamic Media]{#how-to-create-dynamic-media-wysiwyg-template}
+## Crea modello [!DNL Dynamic Media]{#how-to-create-dynamic-media-template}
 
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
 1. Passa a [!DNL Assets View] e [crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. La struttura di cartelle in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**. Salva il modello [!DNL Dynamic Media] in questa cartella [!UICONTROL Dynamic Media Assets].
-1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle per la creazione del modello. Per generare l’URL di consegna del modello, che può essere utilizzato nelle applicazioni a valle, è necessaria la pubblicazione di immagini.
+1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle nella creazione del modello. La pubblicazione delle immagini è necessaria per generare l’URL di consegna del modello, dopo la creazione del modello, che può essere utilizzato nelle applicazioni a valle.
+1. [Esegui i passaggi di caricamento e pubblicazione della risorsa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) per caricare e pubblicare il file dei caratteri contemporaneamente in AEM e Dynamic Media per utilizzare un carattere diverso da quello predefinito della famiglia di caratteri Adobe Sans F2 nel livello di testo. [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati di [rielaborare](/help/assets/reprocessing-assets-view.md) i caratteri meno recenti (nella home page di [!DNL Assets View], fai clic su ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, individua il percorso del file dei caratteri, seleziona il file dei caratteri alla volta e fai clic su ![Rielabora](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Rielabora]**) per utilizzarli nella creazione del modello. Per ulteriori informazioni sui tipi di carattere, consulta [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
 1. [Aggiungere livelli di testo all&#39;area di lavoro](#add-text-to-the-canvas)
@@ -158,11 +159,7 @@ Per aggiungere livelli di testo all’area di lavoro, effettua le seguenti opera
 1. Selezionare **[!UICONTROL Ridimensionamento automatico del testo]** nel pannello Proprietà per regolare automaticamente la lunghezza del testo e la dimensione del font in modo che si adattino in modo ottimale all&#39;area designata.
    ![banner meglio personalizzabili](/help/assets/assets/add-text-layer.png)
 
-Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il font, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello.
-
->[!NOTE]
->
-> Per utilizzare un tipo di carattere diverso da quello predefinito della famiglia di caratteri Adobe Sans F2, è necessario caricare e pubblicare il file dei caratteri in [!AEM Assets] e [!DNL Dynamic Media]. Se nell&#39;istanza sono presenti caratteri obsoleti, assicurati di [rielaborare](/help/assets/reprocessing-assets-view.md) per visualizzarli nell&#39;editor modelli.
+Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il font, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello. Consulta il [passaggio 3 nella sezione Create [!DNL Dynamic Media] template](#how-to-create-dynamic-media-template) per informazioni relative ai caratteri.
 
 ### Modificare o eliminare un livello {#edit-or-delete-a-layer}
 
@@ -361,3 +358,5 @@ Guarda questo video passo per passo per scoprire come aggiungere un collegamento
 
 1. Esplora [[!DNL Dynamic Media]  e le relative funzionalità](/help/assets/dynamic-media/dynamic-media.md)
 1. Esplora [[!DNL Dynamic Media] con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)
+
+
