@@ -4,10 +4,13 @@ description: Scopri come utilizzare i fogli di calcolo per gestire i dati tabula
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1294'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +186,7 @@ Ora che sai come creare un foglio di calcolo di reindirizzamento, puoi creare qu
 * [Segnaposto](https://www.aem.live/docs/placeholders)
 * [Metadati](https://www.aem.live/docs/bulk-metadata)
 * [Intestazioni](https://www.aem.live/docs/custom-headers)
-* [Configurazione](https://www.aem.live/docs/configuration) - Ad esempio per [invalidazione della cache](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
+* [Configurazione](https://www.aem.live/docs/configuration): ad esempio per [invalidazione della cache](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Segui semplicemente gli stessi passaggi descritti nelle sezioni [Crea foglio di calcolo](#spreadsheet) e [Aggiorna paths.json](#paths-json), scegli il modello appropriato e aggiorna il file `paths.json` in modo appropriato.

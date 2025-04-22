@@ -4,10 +4,13 @@ description: Scopri come gestire i dati di tassonomia per utilizzare i tag in AE
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ L’editor universale funziona solo con gli ID dei tag. Creando una pagina di ta
 
 >[!TIP]
 >
->Per ulteriori informazioni sul campo Tag di AEM disponibile per l&#39;Editor universale, che può essere utilizzato con la tassonomia, vedere il documento [Definizioni modello, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md).
+>Per ulteriori informazioni sul campo Tag di AEM disponibile per l’editor universale, che può essere utilizzato con la tassonomia, consulta il documento [Definizioni di modello, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md).
 
 ## Creazione di una pagina di tassonomia {#creating}
 
