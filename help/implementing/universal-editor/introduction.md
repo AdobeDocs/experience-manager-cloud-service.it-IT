@@ -4,7 +4,7 @@ description: Universal Editor è uno strumento di authoring visivo moderno proge
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 10%
@@ -108,7 +108,7 @@ Quando esplori l’Editor universale e procedi alla sua implementazione nei tuoi
 * Come parte di AEM, l&#39;editor universale [supporta gli stessi browser desktop di AEM.](/help/overview/supported-platforms.md)
    * Le versioni mobili di questi browser non sono supportate.
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## Passaggi successivi {#next-steps}
 

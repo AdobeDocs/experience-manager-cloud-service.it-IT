@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 26%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -77,3 +77,13 @@ Quando [aggiungi l&#39;Elenco consentiti IP](/help/implementing/cloud-manager/ip
 Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo Elenco consentiti IP di Cloud Manager sia aggiunto. Quindi, applica l&#39;elenco all&#39;ambiente di authoring *prima* di abilitare la pipeline.
 
 Per ulteriori informazioni, vedere [Applica Elenco consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Abilita pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+
+### Editor universale e Elenchi consentiti IP {#universal-editor}
+
+Se si desidera utilizzare l&#39;editor universale per la creazione dei contenuti, è necessario aggiungere a un Elenco consentiti gli indirizzi IP utilizzati dal servizio Editor universale e applicarli.
+
+1. Recuperare gli indirizzi IP utilizzati dal servizio Universal Editor dal seguente endpoint API: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Creare un elenco consentiti con tali indirizzi IP, denominandolo `Universal Editor Service` o simile.
+1. Applica l&#39;elenco consentiti `Universal Editor Service`.
+
+L&#39;elenco degli indirizzi IP utilizzati dal servizio Universal Editor è soggetto a modifiche ed è necessario aggiornare di conseguenza l&#39;elenco consentiti.
