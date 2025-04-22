@@ -6,7 +6,7 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -81,8 +81,8 @@ Il Selettore risorse offre molti vantaggi, tra cui:
 
 Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 
-* L&#39;applicazione host è in esecuzione su HTTPS.
-* Impossibile eseguire l&#39;applicazione su `localhost`. Se desideri integrare il Selettore risorse nel computer locale, devi creare un dominio personalizzato, ad esempio `[https://<your_campany>.localhost.com:<port_number>]`, e aggiungere questo dominio personalizzato in `redirectUrl list`.
+* L’applicazione host è in esecuzione su HTTPS.
+* Non è possibile eseguire l’applicazione su `localhost`. Se desideri integrare il Selettore risorse nel computer locale, è necessario creare un dominio personalizzato, ad esempio `[https://<your_campany>.localhost.com:<port_number>]`, e aggiungere tale dominio nell’`redirectUrl list`.
 * Puoi configurare e aggiungere clientID nella variabile di ambiente AEM Cloud Service con il rispettivo `imsClientId`.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
@@ -96,7 +96,7 @@ Se hai bisogno del flusso di lavoro di autenticazione IMS del Selettore risorse,
 
 * [Integrare il Selettore risorse con un’applicazione Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrare le API Dynamic Media Open di Asset Selector](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrare le Open API Dynamic Media del Selettore risorse](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
