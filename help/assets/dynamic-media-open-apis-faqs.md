@@ -4,9 +4,9 @@ description: Domande frequenti su Dynamic Media con funzionalità OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ In qualità di utente DAM, potresti non disporre delle autorizzazioni necessarie
 
 +++**Qual è la dimensione file supportata per i video?**
 
-Dynamic Media con funzionalità OpenAPI supporta video in formato esteso. I video possono supportare fino a 50 GB e 2 ore.
+Dynamic Media con funzionalità OpenAPI supporta i video a lunga durata. I video supportano fino a 50 GB e 2 ore.
 
 +++
 

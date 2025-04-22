@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service è un’offerta completamente nativa per il cloud che inc
 
 >[!NOTE]
 >
-> Alcune delle istanze di prodotto e alcuni profili di prodotto descritti in questo articolo possono essere visualizzati solo per gli ambienti appena creati. Consulta la sezione [Aggiunta di profili di prodotto per ambienti esistenti](#adding-product-profiles-for-existing-environments) per informazioni su come modernizzare gli ambienti.
+> Alcune delle istanze di prodotto e alcuni profili di prodotto descritti in questo articolo possono essere visualizzati solo per gli ambienti appena creati. Per informazioni su come modernizzare gli ambienti, consulta la [sezione Aggiungere profili di prodotto per ambienti esistenti](#adding-product-profiles-for-existing-environments).
 
 Quando Adobe elabora la licenza di una soluzione AEM per la prima volta, in Adobe Admin Console vengono visualizzate due istanze di prodotto, sotto il prodotto Adobe Experience Manager as a Cloud Service:
 
