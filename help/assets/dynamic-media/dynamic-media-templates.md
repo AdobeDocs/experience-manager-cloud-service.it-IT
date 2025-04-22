@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3222'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Per creare un modello [!DNL Dynamic Media], è necessario disporre di:
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
 1. Passa a [!DNL Assets View] e [crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. La struttura di cartelle in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** viene replicata in **[!UICONTROL Dynamic Media Assets]**. Salva il modello [!DNL Dynamic Media] in questa cartella [!UICONTROL Dynamic Media Assets].
-1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle nella creazione del modello. La pubblicazione delle immagini è necessaria per generare l’URL di consegna del modello, dopo la creazione del modello, che può essere utilizzato nelle applicazioni a valle.
+1. Seleziona ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e [carica e pubblica le immagini in [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) per utilizzarle nella creazione del modello. Per generare l’URL di consegna del modello, dopo aver creato il modello, è necessaria la pubblicazione delle immagini. L’URL di consegna può essere utilizzato nelle applicazioni a valle.
 1. [Esegui questi passaggi di caricamento e pubblicazione delle risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) per caricare e pubblicare contemporaneamente un file di font in AEM e Dynamic Media per utilizzarlo nella creazione del modello. [!UICONTROL Adobe Sans F2] è l&#39;unico font predefinito disponibile nel livello di testo. [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli nella creazione del modello (nella home page di [!DNL Assets View], fai clic su ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, passa alla posizione del file font, seleziona il file font una alla volta e fai clic su ![Rielabora](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Rielabora]**). Per ulteriori informazioni sui tipi di carattere, consulta [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
@@ -159,7 +159,7 @@ Per aggiungere livelli di testo all’area di lavoro, effettua le seguenti opera
 1. Selezionare **[!UICONTROL Ridimensionamento automatico del testo]** nel pannello Proprietà per regolare automaticamente la lunghezza del testo e la dimensione del font in modo che si adattino in modo ottimale all&#39;area designata.
    ![banner meglio personalizzabili](/help/assets/assets/add-text-layer.png)
 
-Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il font, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello. Nel campo **[!UICONTROL Famiglia di caratteri]** vengono visualizzati i caratteri esistenti rielaborati e i caratteri appena caricati e pubblicati. Per ulteriori informazioni, vedi il [passaggio 3 nella sezione Crea [!DNL Dynamic Media] modello](#how-to-create-dynamic-media-template) precedente.
+Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il font, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello. Nel campo **[!UICONTROL Famiglia di caratteri]** sono visualizzati il tipo di carattere predefinito [!UICONTROL Adobe Sans F2], i tipi di carattere esistenti rielaborati e i tipi di carattere appena caricati e pubblicati. Per ulteriori informazioni, vedi il [passaggio 3 nella sezione Crea [!DNL Dynamic Media] modello](#how-to-create-dynamic-media-template) precedente.
 
 ### Modificare o eliminare un livello {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ Per visualizzare in anteprima e pubblicare il modello e copiare l’URL di conse
    ![creazione rapida di contenuti](/help/assets/assets/dm-templates-publish-status.png)
 Puoi anche attivare **[!UICONTROL Includi tutti i parametri]** per modificare tutti i valori dei parametri visualizzati e visualizzare gli aggiornamenti nell&#39;anteprima del modello.
    <br>
-1. Per pubblicare il modello nella pagina di anteprima, fai clic su **[!UICONTROL Pubblica]** e conferma la pubblicazione. Viene visualizzato il messaggio **[!UICONTROL Pubblicazione completata]** e lo stato di pubblicazione viene aggiornato a **[!UICONTROL Pubblicato]**.
+1. Per pubblicare il modello dalla pagina di anteprima, fai clic su **[!UICONTROL Pubblica]** e conferma la pubblicazione. Viene visualizzato un messaggio di **[!UICONTROL Pubblicazione completata]** e lo stato di pubblicazione viene aggiornato a **[!UICONTROL Pubblicato]**.
 
->[!NOTE]
->
->La pubblicazione del modello richiede prima la pubblicazione delle immagini del modello.
+   >[!NOTE]
+   >
+   >La pubblicazione del modello richiede prima la pubblicazione delle immagini del modello.
 
 ### Copiare l’URL di consegna
 
 I parametri selezionati nella pagina **[!UICONTROL Anteprima]** diventano i parametri URL nell&#39;URL del modello.
 
-Per copiare l’URL del modello pubblicato visualizzato nell’anteprima:
+Assicurati che le immagini nel modello siano pubblicate in AEM e Dynamic Media per generare un URL di consegna del modello pubblicato.
+
+Per copiare l’URL di consegna del modello, effettua le seguenti operazioni:
 
 1. Fare clic su **[!UICONTROL Copia URL]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Copia URL]**. Seleziona e copia l’URL visualizzato. Il primo parametro nell&#39;URL inizia dopo un punto interrogativo **([!UICONTROL ?])** e una coppia chiave-valore iniziano con **[!UICONTROL $]** e terminano con **[!UICONTROL &amp;]**. La chiave e il valore sono separati da un segno di uguale **([!UICONTROL =])**, con la chiave a sinistra e il valore a destra.
 1. Incolla questo URL nella scheda del browser e visualizza il modello live. Personalizza il modello in tempo reale aggiornando il valore del parametro richiesto (valore della chiave) nell&#39;URL direttamente come mostrato nel [passaggio 2](#preview-and-publish-template-and-copy-template-deliver-url) della sezione **Anteprima e pubblicazione**.
