@@ -1,8 +1,8 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -187,7 +187,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 
 >[!IMPORTANT]
 >
->Se si utilizza l&#39;[Editor universale per l&#39;authoring dei contenuti](/help/implementing/universal-editor/introduction.md), è necessario [aggiungere e applicare un elenco consentiti con gli indirizzi IP del servizio Editor universale.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Se si utilizza l&#39;[Editor universale per l&#39;authoring dei contenuti](/help/implementing/universal-editor/introduction.md) e si desidera utilizzare anche [elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), è necessario [aggiungere e applicare un elenco consentiti con gli indirizzi IP del servizio Editor universale.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
