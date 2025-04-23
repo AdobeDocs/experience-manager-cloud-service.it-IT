@@ -3,20 +3,15 @@ title: Distribuzione di frammenti di contenuto di AEM con OpenAPI
 description: Scopri la distribuzione di frammenti di contenuto AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # Distribuzione di frammenti di contenuto di AEM con OpenAPI {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->Questa API è disponibile tramite il programma Early Adopter.
->
->Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 In Adobe Experience Manager (AEM) as a Cloud Service, AEM OpenAPI per la distribuzione dei frammenti di contenuto:
 
@@ -33,7 +28,7 @@ Questa API:
 
 * è un&#39;alternativa HTTP REST all&#39;API GraphQL di [AEM da utilizzare con i frammenti di contenuto](/help/headless/graphql-api/content-fragments.md)
 
-Per la documentazione completa consulta [Schemi API di AEM Sites - API di distribuzione dei frammenti di contenuto (2024.07-experiment)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/).
+Per la documentazione completa consulta [Distribuzione di frammenti di contenuto di AEM con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/).
 
 >[!NOTE]
 >

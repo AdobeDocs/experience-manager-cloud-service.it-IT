@@ -4,21 +4,15 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 73%
 
 ---
 
 
 # API GraphQL AEM per l’utilizzo con Frammenti di contenuto {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Varie funzioni dell’API GraphQL da utilizzare con i frammenti di contenuto sono disponibili tramite il programma Early Adopter.
->
->Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service con l’API GraphQL AEM per la consegna di contenuti headless.
 
@@ -250,7 +244,7 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
   Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#Data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** della scheda **Tipo di dati**.
 
-   * C&#39;è anche da tenere presente l’impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, è possibile configurare un campo di testo a riga singola per contenere più testi a riga singola scegliendo `multifield` dall&#39;elenco a discesa.
+   * C’è da prendere in considerazione anche l’impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, è possibile configurare un campo di testo a riga singola per contenere più testi a riga singola scegliendo `multifield` dall&#39;elenco a discesa.
 
 * GraphQL per AEM genera anche diversi [campi di supporto](#helper-fields).
 
@@ -1187,7 +1181,7 @@ Le limitazioni attuali sono:
 * Se una risorsa a cui si fa riferimento viene rimossa dall’archivio remoto, il riferimento alla risorsa per frammenti di contenuto non verrà corretto.
 * Tutti gli archivi di risorse per la consegna a cui l’utente ha accesso saranno disponibili per la selezione e l’elenco disponibile non può essere limitato.
 * Sia l’istanza di AEM che l’istanza del repository di risorse remote devono avere la stessa versione.
-* Nessun metadati di risorsa esposto tramite [API di gestione](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) e [API di consegna](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). Per recuperare i dettagli dei metadati della risorsa, devi utilizzare l’API Asset Metadata.
+* Nessun metadati di risorse esposto tramite l&#39;API [Management Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) e la consegna dei frammenti di contenuto di [AEM con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). Per recuperare i dettagli dei metadati della risorsa, devi utilizzare l’API Asset Metadata.
 
 ## GraphQL per AEM: riepilogo delle estensioni {#graphql-extensions}
 
