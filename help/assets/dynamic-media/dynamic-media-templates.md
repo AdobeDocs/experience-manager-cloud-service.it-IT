@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c237f53f771431cc15584b392106645b7eacaa30
+source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
 workflow-type: tm+mt
-source-wordcount: '3168'
+source-wordcount: '3176'
 ht-degree: 1%
 
 ---
@@ -80,8 +80,8 @@ Soddisfare i seguenti requisiti per creare un modello [!DNL Dynamic Media] e gen
 1. Accesso a [!DNL Dynamic Media].
 1. Nella home page di [!DNL Assets View] è presente una cartella in **[!UICONTROL Dynamic Media Assets]** per salvare il modello. [Crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**per replicare tale cartella in**[!UICONTROL  Dynamic Media Assets ]**.
 1. [Sincronizza le immagini disponibili nell&#39;istanza  [!DNL AEM Assets] con [!DNL Dynamic Media] per utilizzarle per creare il modello](/help/assets/dynamic-media/config-dm.md).
-1. Pubblica le immagini da utilizzare nella creazione del modello per generare l’URL di consegna del modello dopo averlo creato. L’URL di consegna può essere utilizzato nelle applicazioni a valle.
-1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). Assicurati di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli nella creazione del modello<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->. Per ulteriori informazioni sui tipi di carattere, consulta [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).
+1. Pubblica le immagini da utilizzare per creare il modello per generare l’URL di consegna del modello dopo averlo creato. L’URL di consegna può essere utilizzato nelle applicazioni a valle.
+1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati inoltre di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli. Per ulteriori informazioni, vedere [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. verifica quanto segue nell’interfaccia utente touch:
    * Nella pagina **[!UICONTROL Modifica configurazione [!DNL Dynamic Media]]**, la modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** impostata su **[!UICONTROL Disabilitata per impostazione predefinita]** non è applicata a tutte le cartelle di AEM (**[!UICONTROL Sincronizza tutto il contenuto]** non è selezionata). Per ulteriori informazioni, vedere [configurazione di Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md).
    * La modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** è impostata su **[!UICONTROL Abilita per le sottocartelle]** per la cartella o sottocartella di destinazione in cui verrà salvato il modello dopo la creazione. Per ulteriori informazioni, vedere [configurazione [!DNL Dynamic Media] di Cloud Service](/help/assets/dynamic-media/config-dm.md).
