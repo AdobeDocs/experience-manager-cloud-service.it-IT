@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 9%
 
 ---
@@ -194,7 +194,7 @@ Di seguito sono riportati alcuni esempi delle configurazioni di registrazione co
 
 ## Registrazione richieste HTTP AEM {#aem-http-request-logging}
 
-La registrazione delle richieste HTTP di AEM as a Cloud Service fornisce informazioni approfondite sulle richieste HTTP effettuate ad AEM e sulle relative risposte HTTP in ordine di tempo. Questo registro è utile per comprendere le richieste HTTP effettuate ad AEM e l’ordine in cui vengono elaborate e a cui rispondono.
+La registrazione delle richieste HTTP di AEM as a Cloud Service fornisce ad insight le richieste HTTP effettuate ad AEM e le relative risposte HTTP in ordine temporale. Questo registro è utile per comprendere le richieste HTTP effettuate ad AEM e l’ordine in cui vengono elaborate e a cui rispondono.
 
 Per comprendere questo registro, è fondamentale mappare le coppie di richiesta HTTP e risposta in base ai rispettivi ID, indicati dal valore numerico tra parentesi. Spesso le richieste e le risposte corrispondenti presentano altre richieste HTTP e risposte interposte tra loro nel registro.
 
@@ -411,7 +411,7 @@ Per impostare il livello di registro per ogni ambiente, utilizza il ramo condizi
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Per impostare il livello di registro per ogni ambiente, utilizzare il ramo condi
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ I registri CDN sono distinti dagli altri registri in quanto sono conformi al for
 | *pop* | Centro dati del server cache CDN. |
 | *regole* | Nomi delle [regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) e dei flag di WAF corrispondenti, che indicano anche se la corrispondenza ha generato un blocco. Vuoto se non corrisponde alcuna regola. |
 
+I registri CDN possono essere estesi con le tue proprietà utilizzando [trasformazioni di richiesta/risposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Come accedere ai registri {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ I registri di AEM si trovano nella cartella `crx-quickstart/logs`, dove è possi
 * Registro richieste HTTP AEM: `request.log`
 * Registro dell&#39;accesso HTTP di AEM: `access.log`
 
-I registri del livello Apache, incluso Dispatcher, si trovano nel contenitore Docker che contiene Dispatcher. Consulta la [documentazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) per informazioni su come avviare Dispatcher.
+I registri del livello Apache, incluso Dispatcher, si trovano nel contenitore Docker che contiene Dispatcher. Consulta la [documentazione di Dispatcher](/help/implementing/dispatcher/disp-overview.md) per informazioni su come avviare Dispatcher.
 
 Per recuperare i registri:
 
