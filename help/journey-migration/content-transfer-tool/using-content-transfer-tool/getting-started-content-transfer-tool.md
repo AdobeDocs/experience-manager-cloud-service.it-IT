@@ -4,9 +4,9 @@ description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Tr
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
->title="Download"
+>title="Scarica"
 >abstract="Lo strumento Content Transfer (Trasferimento contenuti) può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza di origine di Adobe Experience Manager (AEM). Assicurati di scaricare la versione più recente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=it" text="Note sulla versione"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Portale di distribuzione software"
@@ -95,11 +95,13 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    Viene visualizzata la seguente finestra di dialogo. Tieni presente che un set di migrazione scadrà dopo un periodo prolungato di inattività. Dopo aver visualizzato gli avvisi sulla scheda del progetto e sulle righe della tabella del processo di migrazione per un periodo di tempo, il set di migrazione scadrà e i relativi dati non saranno più disponibili. Rivedi [Scadenza set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) per i dettagli.
 
+   Durante la creazione del set di migrazione è possibile scegliere l’area geografica in cui verranno memorizzati i dati di migrazione temporanea.  È consigliabile scegliere l’area più vicina all’ambiente cloud di destinazione per garantire prestazioni ottimali durante le acquisizioni.  Non è possibile modificare l’area geografica dopo la creazione del set di migrazione; per utilizzare un’area diversa è necessario creare un nuovo set di migrazione.
+
    ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >Il nome deve seguire le stesse convenzioni di un nodo AEM, quindi non può contenere nessuno dei seguenti caratteri: . / : [ ] | *
+   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere i seguenti caratteri: `. / : [ ] | * &lt; > ^ ? { } % # &quot;né simboli o emoticon insoliti.
 
 1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Selezionare il simbolo dei tre punti (**...**) per aprire il menu a discesa e selezionare **Copia chiave di estrazione**. Questa chiave è necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
