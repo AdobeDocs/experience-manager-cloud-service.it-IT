@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 63%
+source-wordcount: '1700'
+ht-degree: 65%
 
 ---
 
@@ -214,10 +214,6 @@ Per impostare il target di approvazione:
 
 
    Per ulteriori informazioni sulle opzioni disponibili, consulta [Destinazione approvazione predefinita e destinazioni di pubblicazione per risorse approvate](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >L’impostazione di un target di approvazione è una funzione a disponibilità limitata. Per attivarla o disattivarla, crea un ticket di supporto. Se hai Dynamic Media con OpenAPI abilitato, per impostazione predefinita è abilitato.
 
    ![Stato approvazione](/help/assets/assets/approval-status-delivery.png)
 
