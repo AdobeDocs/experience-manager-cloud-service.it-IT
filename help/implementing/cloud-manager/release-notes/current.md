@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.4.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ La prossima versione è pianificata per l’8 maggio 2025.
 
 Partecipa al programma per i primi utilizzatori di Cloud Manager per ottenere un accesso esclusivo alle prossime funzioni prima del rilascio generale.
 
-Le seguenti opportunità sono attualmente disponibili per i primi utilizzatori:
+È attualmente disponibile la seguente opportunità di adozione anticipata:
 
 ### Bring Your Own Git: ora con supporto per GitLab e Bitbucket {#gitlab-bitbucket}
 
