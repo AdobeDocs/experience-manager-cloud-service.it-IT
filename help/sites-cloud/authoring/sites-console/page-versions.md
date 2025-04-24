@@ -1,14 +1,14 @@
 ---
-title: Utilizzo delle versioni di una pagina
-description: Scopri come creare, confrontare e ripristinare versioni delle pagine in AEM.
+title: 'Utilizzo delle versioni di una pagina  '
+description: Scopri come creare, confrontare e ripristinare le versioni delle pagine in AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,13 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 * Confrontare la versione corrente della pagina con una versione precedente.
    * Vengono evidenziate le differenze nel testo e nelle immagini.
 * Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
+
+>[!NOTE]
+>
+>Nell’archivio AEM viene creata una versione solo del contenuto. Le risorse dinamiche come codice, CSS e JavaScript non dispongono di versioni.
+>
+>* Quando si visualizzano le versioni, il contenuto viene visualizzato con il codice, CSS e JavaScript correnti dell’archivio.
+>* Durante il ripristino delle versioni, viene ripristinato solo il contenuto e vengono applicati il codice, i CSS e il JavaScript correnti dell’archivio.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
 
