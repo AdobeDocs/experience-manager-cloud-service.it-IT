@@ -4,9 +4,9 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 1%
 
 ---
@@ -322,8 +322,7 @@ Per aggiungere un collegamento CTA a un livello, effettuate le seguenti operazio
 
    ![aggiungi CTA](/help/assets/assets/add-cta.png)
 
-1. Fai clic su **[!UICONTROL Anteprima]** per visualizzare l&#39;anteprima del modello e i relativi parametri definiti.
-1. Fai clic su **[!UICONTROL Pubblica]** e seleziona **[!UICONTROL Sì]** per pubblicare il modello, se non già pubblicato.
+1. Fai clic su **[!UICONTROL Anteprima]** e seleziona **[!UICONTROL Pubblica]** per pubblicare il modello, se non già pubblicato in precedenza.
 1. Passa alla cartella in cui è stato salvato il modello, selezionalo e fai clic su ![pagina dettagli](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Dettagli]**.
 1. Fai clic su **[!UICONTROL Opzioni copia]** e seleziona **[!UICONTROL Copia codice di incorporamento]**. Assicurarsi di pubblicare le immagini modello in [!DNL AEM and Dynamic Media] per copiare il codice da incorporare.
 
