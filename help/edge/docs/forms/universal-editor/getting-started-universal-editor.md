@@ -4,7 +4,7 @@ description: Questo tutorial ti mostrerà come iniziare subito con un nuovo prog
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 99%
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| Authoring basato su editor universale | Questo articolo |
+| Authoring basato sull’editor universale | Questo articolo |
 | Authoring basato su documenti | [Fai clic qui](/help/edge/docs/forms/tutorial.md) |
 
 
@@ -26,7 +26,8 @@ Nell’era digitale di oggi, i moduli facili da usare sono essenziali per qualsi
 
 AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+<!-->
+![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
 
 Questo tutorial ti consente di creare, visualizzare in anteprima e pubblicare un modulo personalizzato con un progetto di sito Adobe Experience Manager nuovo o esistente mediante l’authoring WYSIWYG dell’editor universale.
 
@@ -195,7 +196,7 @@ Per integrare:
 
 Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi [iniziare a creare e aggiungere moduli al progetto AEM](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Creare Forms con WYSIWYG
+## Creare moduli utilizzando WYSIWYG
 
 Puoi aprire il progetto AEM nell’editor universale per l’authoring WYSIWYG, dove puoi modificare il progetto e aggiungere la sezione Modulo adattivo per includere i moduli Edge Delivery Services nelle pagine del progetto AEM.
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1561'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,21 @@ ht-degree: 0%
 L’articolo fornisce esempi dettagliati di editor di regole per un modulo adattivo basato su componenti core, fornendo informazioni sulla sua corretta implementazione per scenari diversi. L’editor di regole consente agli sviluppatori di definire e gestire la logica che controlla il comportamento dei moduli.
 Ora, parliamo delle diverse implementazioni per un editor di regole.
 
+## Imposta lo stato attivo su un altro pannello al clic del pulsante, se il primo pannello è valido
+
+<span class="preview"> Si tratta di una funzionalità pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+
+L’editor di regole consente di convalidare i layout di un pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata al clic del pulsante e di impostare lo stato attivo su un oggetto modulo in un altro pannello. Puoi utilizzare questa funzionalità per migliorare la navigazione nei moduli e l’esperienza utente.
+
+Immaginare un modulo applicativo in più passaggi utilizzando un layout della procedura guidata. È necessario completare il pannello `Personal Information` prima di passare a `Employment Details`. Quando fai clic sul pulsante `Next`, l&#39;editor di regole convalida il pannello `Personal Information`. Se tutti i campi obbligatori sono compilati correttamente, il modulo sposta automaticamente lo stato attivo sul pannello `Employment Details`. In caso contrario, viene visualizzato un messaggio di errore in cui si richiede agli utenti di completare i campi mancanti.
+
+È possibile creare una regola sul pulsante `Next` per convalidare il primo pannello:
+
+![Regola per pulsante Avanti](/help/forms/assets/next-rule.png){width=50%}
+
+Quando fai clic sul pulsante **Avanti**, il pannello **Informazioni personali** viene convalidato. Se i dettagli immessi sono corretti, lo stato attivo viene spostato sul pannello **Sicurezza account**. In caso contrario, verrà visualizzato un messaggio di errore in cui si richiede di specificare i dettagli mancanti.
+
+<!--![Video]()-->
 
 ## Navigazione tra i pannelli utilizzando il pulsante
 
@@ -120,9 +135,9 @@ La regola seguente mostra come configurare l’azione Richiama servizio per eseg
 
 In un modulo di richiesta di prestito, si desidera stabilire se il richiedente è un cliente esistente o meno. In base alle informazioni fornite dall’utente, il campo ID cliente deve essere visualizzato o nascosto. Inoltre, se l’utente è un cliente esistente, imposta il campo ID cliente come elemento attivo. Il modulo di richiesta di prestito presenta le seguenti componenti:
 
-* Un pulsante di scelta, **[!UICONTROL Sei già un cliente del Geometrixx?]**, che fornisce [!UICONTROL Sì] e [!UICONTROL No] opzioni. Il valore per Sì è **0** e No è **1**.
+* Un pulsante di scelta, **[!UICONTROL Sei un cliente Geometrixx esistente?]**, che fornisce [!UICONTROL Sì] e [!UICONTROL No] opzioni. Il valore per Sì è **0** e No è **1**.
 
-* Un campo di testo, **[!UICONTROL ID cliente Geometrixx]**, per specificare l&#39;ID cliente.
+* Campo di testo, **[!UICONTROL ID cliente Geometrixx]**, per specificare l&#39;ID cliente.
 
 Quando scrivi una regola When sul pulsante di scelta per implementare questo comportamento, la regola viene visualizzata come segue nell’editor di regole visive.
 

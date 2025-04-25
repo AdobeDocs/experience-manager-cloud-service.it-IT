@@ -4,10 +4,10 @@ description: Note sulla versione 2025.1.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e178672b51ede70b10bb57f0d7ffb4d39279a84e
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 93%
+source-wordcount: '1703'
+ht-degree: 92%
 
 ---
 
@@ -97,9 +97,6 @@ Lancio del supporto per il nuovo protocollo (DASH - Dynamic Adaptive Streaming o
 
 * DASH è il protocollo standard internazionale per lo streaming video adattivo ed è ampiamente adottato nel settore
 
-**Relazioni risorsa**
-
-La vista risorse ora supporta la visualizzazione e la modifica delle relazioni tra risorse in un pannello semplificato Dettagli risorsa. Aggiungi facilmente relazioni come Origine e Derivata ai contenuti in modo che gli utenti possano trovare più efficacemente contenuti principali rilevanti.
 
 **Rielaborazione risorse**
 

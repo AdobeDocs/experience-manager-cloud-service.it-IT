@@ -4,14 +4,14 @@ description: Un modulo adattivo fornisce più azioni di invio. Un’azione di in
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
-ht-degree: 3%
+source-wordcount: '3957'
+ht-degree: 4%
 
 ---
 
-# Azione di invio modulo adattivo {#configuring-the-submit-action}
+# Azione di invio per modulo adattivo {#configuring-the-submit-action}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Un&#39;azione di invio viene attivata quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service fornisce le seguenti azioni di invio pronte all’uso.
 
-* [Invia all’endpoint REST](#submit-to-rest-endpoint)
+* [Invia a endpoint REST](#submit-to-rest-endpoint)
 * [Invia e-mail](#send-email)
 * [Invia utilizzando modalità dati modulo (FDM)l](#submit-using-form-data-model)
 * [Richiama un flusso di lavoro AEM](#invoke-an-aem-workflow)
@@ -61,13 +61,13 @@ Puoi configurare un’azione di invio nella sezione **[!UICONTROL Invio]** delle
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 -->
 
-## Invia all’endpoint REST {#submit-to-rest-endpoint}
+## Invia a endpoint REST {#submit-to-rest-endpoint}
 
 Utilizzare l&#39;azione **[!UICONTROL Invia all&#39;endpoint REST]** per inviare i dati inviati a un URL rest. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell&#39;URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
 ![Mappatura dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
 
@@ -92,7 +92,7 @@ Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati co
 
 ![Configurazione dell&#39;azione di invio dell&#39;endpoint REST](assets/action-config.png)
 
-Puoi anche **[!UICONTROL abilitare la richiesta di POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizzare un percorso relativo corrispondente al percorso radice del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
 >[!NOTE]
 >
@@ -165,9 +165,9 @@ L’azione di invio inserisce quanto segue nella posizione di payload del flusso
 
 * **Documento record**: contiene il documento record generato per il modulo adattivo. È possibile utilizzare l&#39;opzione **[!UICONTROL Percorso del documento record]** per specificare il nome del file del documento record e il percorso del file relativo al payload. Ad esempio, il percorso `/addresschange/DoR.pdf` crea una cartella denominata `addresschange` relativa al payload e inserisce `DoR.pdf` relativa al payload. È inoltre possibile specificare solo `DoR.pdf` per salvare solo il documento di record senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
 
-Prima di utilizzare l&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]**, configura quanto segue per la configurazione del servizio **[!UICONTROL Impostazioni DS AEM]**:
+Prima di utilizzare l&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]**, configura quanto segue per la configurazione del **[!UICONTROL servizio impostazioni DS AEM]**:
 
-* **[!UICONTROL URL server di elaborazione]**: il server di elaborazione è il server in cui viene attivato il flusso di lavoro di Forms o AEM. Può essere uguale all’URL dell’istanza di authoring AEM o di un altro server.
+* **[!UICONTROL URL server di elaborazione]**: il server di elaborazione è il server in cui viene attivato il flusso di lavoro di Forms o AEM. Può essere uguale all’URL dell’istanza di authoring di AEM o di un altro server.
 
 * **[!UICONTROL Elaborazione nome utente server]**: nome utente dell&#39;utente del flusso di lavoro
 
@@ -193,7 +193,7 @@ Per utilizzare l&#39;azione di invio **[!UICONTROL Invia a raccolta documenti di
 
 Per connettere AEM Forms all&#39;archiviazione della raccolta documenti di Microsoft® Sharepoint:
 
-1. Vai all&#39;istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai alla tua istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, sei reindirizzato a **[!UICONTROL SharePoint Browser]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Libreria documenti di SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
@@ -232,12 +232,17 @@ Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di 
    > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
 1. Seleziona **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
-   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
+   ![GIF Sharepoint](/help/forms/assets/sharedrive-video.gif)
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
 Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato.
 La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+> ![image](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -252,7 +257,7 @@ Per utilizzare l&#39;azione di invio [!UICONTROL Invia a elenco SharePoint] in u
 
 Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
 1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -274,7 +279,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
 
-1. [Creare un modello dati modulo (FDM) utilizzando la configurazione di Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
+1. [Creare un modello dati modulo (FDM) tramite Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
 1. [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -302,7 +307,7 @@ Microsoft® OneDrive configurato.
 
 Per collegare AEM Forms allo storage Microsoft® OneDrive:
 
-1. Vai all&#39;istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® OneDrive]**.
+1. Vai all&#39;**istanza di AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® OneDrive]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® OneDrive]**, sei reindirizzato a **[!UICONTROL OneDrive Browser]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Verrà visualizzata la configurazione guidata di OneDrive.
@@ -341,7 +346,7 @@ Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;az
    > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
 1. Seleziona **Invia azione** come **[!UICONTROL Invia a OneDrive]**.
-   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+   ![GIF OneDrive](/help/forms/assets/onedrive-video.gif)
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
@@ -358,7 +363,7 @@ L&#39;azione di invio **[!UICONTROL Invia ad Azure Blob Storage]** collega un mo
 ### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
 
 Per connettere AEM Forms ai contenitori di archiviazione Azure:
-1. Vai all&#39;**istanza Autore AEM Forms** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
+1. Vai all&#39;**istanza Autore AEM Forms** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Archiviazione Azure]**.
 1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, si verrà reindirizzati a **[!UICONTROL Browser archiviazione Azure]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione Azure.
@@ -384,7 +389,7 @@ Puoi utilizzare la configurazione del contenitore di archiviazione Azure creata 
    > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
 1. Seleziona **Azione di invio** come **[!UICONTROL Invia ad Azure Blob Storage]**.
-   ![GIF archiviazione BLOB di Azure](/help/forms/assets/azure-submit-video.gif)
+   ![Archiviazione BLOB di Azure GIF](/help/forms/assets/azure-submit-video.gif)
 
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
@@ -392,7 +397,7 @@ Puoi utilizzare la configurazione del contenitore di archiviazione Azure creata 
 Quando si invia il modulo, i dati vengono salvati nella configurazione del contenitore di archiviazione Azure specificata.
 La struttura di cartelle per il salvataggio dei dati è `/configuration_container/form_name/year/month/date/submission_id/data`.
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza di Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 
 ## Invia a Power Automate {#microsoft-power-automate}
@@ -450,11 +455,11 @@ Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue 
 
 >[!NOTE]
 >
->La convalida lato server convalida il modello del modulo. Ti consigliamo di creare una libreria client separata per le convalide e di non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
+>La convalida lato server convalida il modello del modulo. Ti consigliamo di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
 
-A volte, se sono presenti **regole di convalida complesse**, lo script di convalida esatto risiede nelle funzioni personalizzate e l&#39;autore chiama tali funzioni personalizzate dall&#39;espressione di convalida del campo. Per rendere nota e disponibile questa libreria di funzioni personalizzata durante l&#39;esecuzione delle convalide lato server, l&#39;autore del modulo può configurare il nome della libreria client AEM nella scheda **[!UICONTROL Base]** delle proprietà del contenitore di moduli adattivi, come illustrato di seguito.
+A volte, se sono presenti **regole di convalida complesse**, lo script di convalida esatto risiede nelle funzioni personalizzate e l&#39;autore chiama tali funzioni personalizzate dall&#39;espressione di convalida del campo. Per rendere nota e disponibile questa libreria di funzioni personalizzata durante l&#39;esecuzione delle convalide lato server, l&#39;autore del modulo può configurare il nome della libreria client di AEM nella scheda **[!UICONTROL Base]** delle proprietà del contenitore di moduli adattivi, come illustrato di seguito.
 
 ![Supporto di funzioni personalizzate nelle espressioni di convalida](assets/clientlib-cat.png)
 
@@ -464,7 +469,7 @@ L’autore può configurare una libreria JavaScript personalizzata per modulo ad
 
 ## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
 
-Come parte delle linee guida sulla sicurezza e l’irrigidimento dell’AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. I gestori vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
+Come parte delle linee guida sulla sicurezza e l’irrigidimento di AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
 
 Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON a uno schema che non contiene tag `<afData>`, `<afBoundData>` e `</afUnboundData>`, i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza la proprietà `bindref`.
 

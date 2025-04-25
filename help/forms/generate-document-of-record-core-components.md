@@ -4,9 +4,9 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3152'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Prima di iniziare ad apprendere e preparare le risorse necessarie per un documen
 
 Carica il modello XFA (file XDP) nella tua istanza di AEM Forms. Per configurare un modulo adattivo in modo che utilizzi il modello XFA (file XDP) come modello per il documento record, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza Autore Experience Manager fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell&#39;istanza di Experience Manager Author, fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Selezionare un modulo o creare un modulo adattivo e fare clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
@@ -52,11 +52,11 @@ Il modulo adattivo è ora configurato per utilizzare un file XDP come modello pe
 
 Carica Adobe Acrobat PDF (Acroform) nella tua istanza di AEM Forms. Per configurare un modulo adattivo per l’utilizzo di Adobe Acrobat PDF (Acroform) come modello per documento record, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza Autore Experience Manager fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell&#39;istanza di Experience Manager Author, fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Seleziona un modulo o **[!UICONTROL Crea un modulo adattivo]** e fai clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
-1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, selezionare **Associa modello modulo come modello del documento record**. Selezionando questa opzione, vengono visualizzati tutti gli Acrobat PDF (Acroform) disponibili sul computer. Selezionare l&#39;Acroform che si desidera utilizzare.
+1. Nella sezione Configurazione modello del documento record della scheda Modello modulo, selezionare **Associa modello modulo come modello del documento record**. Selezionando questa opzione, vengono visualizzati tutti i PDF di Acrobat (Acroform) disponibili sul computer. Selezionare l&#39;Acroform che si desidera utilizzare.
 1. Fai clic su **[!UICONTROL Fine]**
 
 Il modulo adattivo è ora configurato per utilizzare un Acroform come modello per documento di record. Il passaggio successivo consiste nel [associare i componenti del modulo adattivo ai campi modello corrispondenti](#bind-adaptive-form-components-with-template-fields).
@@ -73,7 +73,7 @@ Quando un modulo adattivo è configurato per generare automaticamente un documen
 
 Per configurare un modulo adattivo in modo da generare automaticamente un documento di record, effettua le seguenti operazioni:
 
-1. Nell&#39;istanza Autore Experience Manager fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
+1. Nell&#39;istanza di Experience Manager Author, fare clic su **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti].**
 1. Selezionare un modulo o creare un modulo adattivo e fare clic su **[!UICONTROL Proprietà]**.
 1. Nella finestra Proprietà, selezionare **[!UICONTROL Modello modulo]**.
 1. Nella scheda **[!UICONTROL Modello modulo]**, nel menu a discesa **[!UICONTROL Seleziona da]**, selezionare **[!UICONTROL Modello dati modulo]**, **[!UICONTROL Schema]** o **[!UICONTROL Nessuno]**. È inoltre possibile selezionare un modello di modulo durante la creazione di un modulo.
@@ -103,6 +103,9 @@ Puoi utilizzare le azioni di invio, ad esempio &quot;Invia e-mail&quot;, &quot;R
 ![Azioni invio immagine](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> È possibile salvare il documento record per qualsiasi modello dati modulo utilizzando la proprietà **[!UICONTROL Riferimento associazione documento di record]**.
 
 ## Aggiornamenti incrementali al modello del documento record {#document-of-record-template-incremental-updates}
 
@@ -326,8 +329,8 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
    1. **Proprietà di base**:
       * **Modello**: per selezionare un modello personalizzato, sfogliare e selezionare un XDP nel server [!DNL AEM Forms]. Se desideri utilizzare un modello non disponibile sul server [!DNL AEM Forms], devi prima caricare XDP nel server [!DNL AEM Forms].
-      * **Colore accento**: il colore con cui vengono riprodotti il testo di intestazione e le linee di separazione nel documento di record PDF.
-      * **Famiglia di caratteri**: famiglia di caratteri del testo in Document of Record PDF.
+      * **Colore accento**: il colore con cui vengono riprodotti il testo di intestazione e le linee di separazione nel PDF del documento record.
+      * **Famiglia di caratteri**: famiglia di caratteri del testo nel PDF del documento record.
 
         >[!NOTE]
         >
@@ -381,7 +384,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
 ## Layout di tabella e colonna per i pannelli nel documento record {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Il modulo adattivo potrebbe essere lungo e contenere diversi campi modulo. Potrebbe non essere necessario salvare un documento record come copia esatta del modulo adattivo. Ora puoi scegliere un layout di tabella o colonna per salvare uno o più pannelli Modulo adattivo in Document of Record PDF.
+Il modulo adattivo potrebbe essere lungo e contenere diversi campi modulo. Potrebbe non essere necessario salvare un documento record come copia esatta del modulo adattivo. Ora puoi scegliere un layout di tabella o colonna per salvare uno o più pannelli Modulo adattivo nel PDF del documento record.
 
 Prima di generare un documento di record, nelle impostazioni di un pannello, seleziona Layout per il documento di record del pannello come Tabella o Colonna. I campi nel pannello vengono organizzati di conseguenza nel documento di record.
 

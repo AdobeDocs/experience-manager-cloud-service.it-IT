@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Come collegare la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint per un modulo adattivo, Libreria documenti di AEM Forms Data Model SharePoint, Libreria documenti di Forms Data Model SharePoint, Integrare il modello dati di Forms nella raccolta documenti di SharePoint
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
-
 
 # Collegare un modulo adattivo alla raccolta documenti di Microsoft® SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di 
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato.
-La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+>[!NOTE]
+>
+> Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato. La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## Articoli correlati
 
