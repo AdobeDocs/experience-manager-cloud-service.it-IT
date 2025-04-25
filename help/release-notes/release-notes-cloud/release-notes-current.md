@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 48%
+source-wordcount: '1713'
+ht-degree: 43%
 
 ---
 
@@ -162,6 +162,20 @@ Il **runtime** Java 21, con prestazioni più elevate, verrà distribuito automat
 >[!IMPORTANT]
 >
 > Il **runtime** Java 21 è stato distribuito negli ambienti di sviluppo/RDE a febbraio; verrà applicato agli ambienti di staging/produzione il **28 e 29 aprile**. Tieni presente che **la generazione del codice** con Java 21 (o Java 17) è indipendente dal runtime di Java 21. È necessario eseguire in modo esplicito i passaggi per generare il codice con Java 21 (o Java 17).
+
+### Applicazione dei criteri di configurazione della registrazione di AEM {#logconfig-policy}
+
+Per garantire un monitoraggio efficace degli ambienti dei clienti, i registri Java di AEM devono mantenere un formato coerente e non devono essere sostituiti da configurazioni personalizzate. L&#39;output del log deve rimanere indirizzato ai file predefiniti. Per il codice prodotto AEM, è necessario mantenere i livelli di registro predefiniti. Tuttavia, è accettabile regolare i livelli di registro per il codice sviluppato dal cliente.
+
+A tal fine, non è necessario apportare modifiche alle seguenti proprietà OSGi:
+* **Configurazione registro Sling Apache** (PID: `org.apache.sling.commons.log.LogManager`) — *tutte le proprietà*
+* **Configurazione logger registrazione Sling Apache** (PID factory: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+A metà maggio, AEM applicherà un criterio in base al quale eventuali modifiche personalizzate a queste proprietà verranno ignorate. Rivedi e adegua di conseguenza i processi a valle. Ad esempio, se utilizzi la funzione di inoltro del registro:
+* Se la destinazione di registrazione prevede un formato di registro personalizzato (non predefinito), potrebbe essere necessario aggiornare le regole di acquisizione.
+* Se le modifiche ai livelli di registro riducono la gravità del registro, tenere presente che i livelli di registro predefiniti possono causare un aumento significativo del volume del registro.
 
 ### Inoltro dei registri di AEM a più destinazioni - Programma Beta {#log-forwarding-earlyadopter}
 
