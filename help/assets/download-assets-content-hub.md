@@ -3,10 +3,10 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare le risorse dal portale Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ Per scaricare una risorsa e le relative rappresentazioni, esegui i seguenti pass
 
    >[!NOTE]
    >
-   * Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   * È possibile scaricare tutte le [rappresentazioni statiche, dinamiche e di ritaglio avanzato](#types-of-renditions) durante il download di una risorsa.
+   >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* È possibile scaricare tutte le [rappresentazioni statiche, dinamiche e di ritaglio avanzato](#types-of-renditions) durante il download di una risorsa.
 
 1. Selezionare una o più copie trasformate e fare clic su **[!UICONTROL Scarica]**.
 
@@ -86,7 +86,7 @@ Se stai scaricando una risorsa con licenza, seleziona **[!UICONTROL Ho letto e a
 
 >[!NOTE]
 >
-Gli utenti con accesso a [Dynamic Media con funzionalità Open API](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
+> Gli utenti con accesso a [Dynamic Media con funzionalità Open API](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
 
 ## Scaricare più risorse e le relative rappresentazioni {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Per scaricare più risorse e le relative rappresentazioni, esegui i seguenti pas
 
      >[!NOTE]
      >
-     * Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     * È possibile scaricare solo [rappresentazioni statiche](#types-of-renditions) durante il download di più risorse.
+     >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+     >* È possibile scaricare solo [rappresentazioni statiche](#types-of-renditions) durante il download di più risorse.
 
    Se una delle risorse selezionate è una risorsa con licenza, fai clic sulla licenza della risorsa nel riquadro a sinistra per visualizzarne l&#39;anteprima. In questo modo potrai selezionare **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]**, quindi fai clic su **[!UICONTROL Scarica]**. L’anteprima della licenza viene visualizzata solo se la risorsa viene approvata con l’ambiente di authoring Assets as a Cloud Service. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -153,17 +153,35 @@ Ulteriori informazioni su [visualizzare e gestire le copie trasformate in Experi
 
 * [Rappresentazioni statiche](/help/assets/renditions.md#static-renditions): le rappresentazioni statiche sono versioni precreate delle risorse digitali, in genere generate durante l&#39;inserimento o la modifica delle risorse. Sono ottimizzati per utilizzi e piattaforme specifici, ad esempio miniature web, formati facili da usare sui dispositivi mobili per progetti reattivi o file ad alta risoluzione per la stampa, per fornire un’esperienza semplificata e coerente.
 
-* [Rappresentazioni dinamiche](/help/assets/renditions.md#dynamic-renditions): le rappresentazioni dinamiche sono versioni personalizzate in tempo reale delle risorse per eseguire varie azioni, ad esempio ridimensionare le immagini per diverse risoluzioni del dispositivo o ritagliarle per adattarle a varie proporzioni. Questi rendering ti consentono di offrire esperienze personalizzate e ottimizzate per requisiti più ampi. Vengono creati rendering dinamici delle risorse nell&#39;ambiente di authoring [!DNL Adobe Experience Manager Assets].
+* [Rappresentazioni dinamiche](/help/assets/renditions.md#dynamic-renditions): le rappresentazioni dinamiche sono versioni personalizzate in tempo reale delle risorse per eseguire varie azioni, ad esempio ridimensionare le immagini per diverse risoluzioni del dispositivo o ritagliarle per adattarle a varie proporzioni. Questi rendering ti consentono di offrire esperienze personalizzate e ottimizzate per requisiti più ampi. Vengono creati rendering dinamici delle risorse nell&#39;ambiente di authoring [!DNL Adobe Experience Manager Assets]. Per informazioni sui passaggi necessari per abilitare le rappresentazioni dinamiche, vedere [Abilitare le rappresentazioni dinamiche](#enable-dynamic-media-renditions).
 
 * [Ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): il ritaglio avanzato si concentra esclusivamente sulla parte essenziale di una risorsa durante il processo di ritaglio. Dynamic Media Smart Crop per sfrutta l’intelligenza artificiale fornita da Adobe Sensei per monitorare il punto di interesse, assicurando che le nostre risorse abbiano l’aspetto migliore su tutti gli schermi. Con lo smart crop di [!DNL Adobe Experience Manager] vengono visualizzate la larghezza e l&#39;altezza delle rappresentazioni di una risorsa e il titolo. Per saperne di più, visita il sito [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  Le rappresentazioni di ritaglio avanzato vengono visualizzate e sono disponibili per il download solo se hai accesso a [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Le rappresentazioni con ritaglio avanzato sono disponibili solo per le risorse immagine.
+
   ![Tipi di rendering](/help/assets/assets/renditions-types.png)
 
+### Abilita rappresentazioni dinamiche {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* Le funzioni di rendering di ritaglio dinamico e avanzato sono in fase di adozione iniziale. Per accedere alla funzionalità, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
-* I nuovi clienti onboarded nei [servizi API Dynamic Media Open](/help/assets/dynamic-media-open-apis-overview.md) devono rivedere i loro predefiniti immagine esistenti per l&#39;approvazione.
+Per abilitare le rappresentazioni dinamiche:
+
+1. Assicurati di avere accesso a [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+
+   Una volta che hai accesso a Dynamic Media con funzionalità OpenAPI, tutte le risorse contrassegnate come `Approved` sono disponibili per la distribuzione pubblica tramite Dynamic Media.
+
+1. Imposta la destinazione di approvazione [ della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
+
+1. Abilita l&#39;opzione **[!UICONTROL Abilita disponibilità delle rappresentazioni]** nella scheda **[!UICONTROL Rappresentazioni]** dell&#39;interfaccia utente [Configurazione](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+
+1. Salvate nuovamente i predefiniti immagine esistenti per renderli disponibili su Content Hub. È applicabile solo se hai effettuato l’onboarding in Dynamic Media con OpenAPI.
+
+   Per salvare nuovamente i predefiniti immagine esistenti, passa alla visualizzazione Amministratore e seleziona **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefiniti immagine]**. Selezionare un predefinito, fare clic su **[!UICONTROL Modifica]** e quindi su **[!UICONTROL Salva]**.
+
+
+
+   >[!NOTE]
+   > 
+   > Le rappresentazioni dinamiche sono disponibili solo per le risorse di immagini.
 
 
 
