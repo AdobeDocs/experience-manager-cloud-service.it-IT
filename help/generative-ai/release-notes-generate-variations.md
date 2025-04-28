@@ -1,17 +1,17 @@
 ---
-title: Note sulla versione per generare varianti
+title: Note sulla versione della funzione Genera varianti
 description: Note sulla versione per generare varianti, accessibili da AEM as a Cloud Service e dalla barra laterale di Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione per generare varianti {#release-notes-generate-variations}
+# Note sulla versione della funzione Genera varianti {#release-notes-generate-variations}
 
 Questa pagina documenta le note sulla versione per generare varianti, accessibili da AEM as a Cloud Service e dalla barra laterale di Edge Delivery Services.
 
@@ -33,7 +33,7 @@ Puoi [accedere a Genera varianti](/help/generative-ai/generate-variations-integr
 
 >[!NOTE]
 >
->Si consiglia di utilizzare la versione 3.0.0, poiché anche se è ancora possibile accedere direttamente alla versione precedente di [Genera varianti](/help/generative-ai/generate-variations.md), in futuro diventerà obsoleta.
+>Si consiglia di utilizzare la versione 3.0.0 poiché, anche se [è ancora possibile accedere direttamente alla versione precedente della funzione Genera varianti](/help/generative-ai/generate-variations.md), in futuro diventerà obsoleta.
 
 ### 2.2.0 {#release-notes-2-2-0}
 

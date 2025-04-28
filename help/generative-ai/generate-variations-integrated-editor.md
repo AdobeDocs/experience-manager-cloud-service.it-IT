@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Puoi [accedere alla funzione Genera varianti](#access-generate-variations) dai s
 
 >[!NOTE]
 >
->Si consiglia di utilizzare questa versione, poiché anche se è ancora possibile accedere direttamente alla versione autonoma di [Genera varianti](/help/generative-ai/generate-variations.md), in futuro diventerà obsoleta.
+>Si consiglia di utilizzare questa versione poiché, anche se [è ancora possibile accedere direttamente alla versione autonoma della funzione Genera varianti](/help/generative-ai/generate-variations.md), in futuro diventerà obsoleta.
 
 Puoi effettuare le seguenti operazioni:
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->Per informazioni dettagliate su come generare la variante in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf), vedere la [Scheda informativa sulla sicurezza.
+>Consulta la [Scheda informativa sulla sicurezza per i dettagli su come generare una variante in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Panoramica {#overview}
 

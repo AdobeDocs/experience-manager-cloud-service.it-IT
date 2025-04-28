@@ -4,9 +4,9 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 
 * L’applicazione host è in esecuzione su HTTPS.
 * Non è possibile eseguire l’applicazione su `localhost`. Se desideri integrare il Selettore risorse nel computer locale, è necessario creare un dominio personalizzato, ad esempio `[https://<your_campany>.localhost.com:<port_number>]`, e aggiungere tale dominio nell’`redirectUrl list`.
-* Puoi configurare e aggiungere clientID nella variabile di ambiente AEM Cloud Service con il rispettivo `imsClientId`.
+* Puoi configurare e aggiungere clientID nella variabile di ambiente di AEM Cloud Services con il rispettivo `imsClientId`.
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * L’elenco degli ambiti IMS deve essere definito nella configurazione dell’ambiente.
