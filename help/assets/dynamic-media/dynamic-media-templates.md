@@ -4,7 +4,7 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 1%
@@ -72,6 +72,9 @@ Alcuni dei vantaggi principali dei modelli [!DNL Dynamic Media] includono:
 >[!NOTE]
 >
 >I clienti con abbonamenti allo SKU Sicurezza avanzata non possono utilizzare alcuna funzionalità [!DNL Dynamic Media], inclusi i modelli [!DNL Dynamic Media], in tale programma Cloud Services.
+
+Scopri come creare un modello [!DNL Dynamic Media] passo dopo passo in questo video.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Prima di iniziare{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ Per copiare l’URL di consegna del modello, effettua le seguenti operazioni:
 1. Fare clic su **[!UICONTROL Copia URL]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Copia URL]**. Seleziona e copia l’URL visualizzato. Il primo parametro nell&#39;URL inizia dopo un punto interrogativo **([!UICONTROL ?])** e una coppia chiave-valore iniziano con **[!UICONTROL $]** e terminano con **[!UICONTROL &amp;]**. La chiave e il valore sono separati da un segno di uguale **([!UICONTROL =])**, con la chiave a sinistra e il valore a destra.
 1. Incolla questo URL nella scheda del browser e visualizza il modello live. Personalizza il modello in tempo reale aggiornando il valore del parametro richiesto (valore della chiave) nell&#39;URL direttamente come mostrato nel [passaggio 2](#preview-and-publish-template-and-copy-template-deliver-url) della sezione **Anteprima e pubblicazione**.
 1. Utilizza questo URL per accelerare il merchandising dei tuoi prodotti o servizi. Puoi condividere questo URL con i clienti o integrarlo nel tuo sito web o in qualsiasi applicazione di terze parti a valle per visualizzare il banner e aggiornarlo in tempo reale per riflettere le offerte in corso.
-
-Scopri come creare un modello [!DNL Dynamic Media] passo dopo passo in questo video.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Aggiornamenti in tempo reale al modello dall’URL{#update-the-template-from-the-url}
 
