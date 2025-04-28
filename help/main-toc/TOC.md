@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
 source-wordcount: '6134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
    + [Percorsi di documentazione](/help/journey-documentation/documentation-journeys.md)
 + Note sulla versione {#release-notes}
    + [Informazioni sulla versione](/help/release-notes/home.md)
-   + Note sulla versione delle funzioni di AEMaaCS {#release-notes}
+   + Note sulla versione funzionale di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
          + [Note sulla versione 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
@@ -189,7 +189,7 @@ ht-degree: 99%
          + [2020.4.0](/help/implementing/cloud-manager/release-notes/2020/2020-4-0.md)
          + [2020.3.0](/help/implementing/cloud-manager/release-notes/2020/2020-3-0.md)
          + [2020.2.0](/help/implementing/cloud-manager/release-notes/2020/2020-2-0.md)
-   + Note sulla versione per gli strumenti di migrazione {#migration-tools}
+   + Note sulla versione degli strumenti di migrazione {#migration-tools}
       + [Note sulla versione corrente](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2024 {#2024}
          + [Note sulla versione 2024.01.0](/help/journey-migration/release-notes/release-notes-migration-tools-2024-01-0.md)
@@ -216,11 +216,11 @@ ht-degree: 99%
          + [Note sulla versione 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Note sulla versione 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Note sulla versione del connettore avanzato Workfront per Experience Manager{#workfront}
-      + [Note aggiornate sulla versione del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + Note sulla versione per generare varianti {#generate-variations}
+      + [Note sulla versione corrente del connettore avanzato Workfront per Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Note sulla versione della funzione Genera varianti {#generate-variations}
       + [Note sulla versione corrente della funzione Genera varianti](/help/generative-ai/release-notes-generate-variations.md)
-   + Note sulla versione per l’editor universale {#univeral-editor}
-      + [Note sulla versione corrente per l’editor universale](/help/release-notes/universal-editor/current.md)
+   + Note sulla versione dell’editor universale {#univeral-editor}
+      + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
          + [Note sulla versione 2025.03.10](/help/release-notes/universal-editor/2025/2025-03-10.md)
          + [Note sulla versione 2025.02.25](/help/release-notes/universal-editor/2025/2025-02-25.md)
@@ -271,7 +271,7 @@ ht-degree: 99%
       + [Gestione delle entità principali](/help/journey-migration/managing-principals.md)
       + [Attività degli utenti AEM](/help/journey-onboarding/aem-users.md)
       + [Elenco di controllo per la pubblicazione](/help/journey-onboarding/go-live-checklist.md)
-   + Percorso AEM Reference Demos Add-On {#demo-add-on}
+   + Percorso componente aggiuntivo Demo di riferimento di AEM {#demo-add-on}
       + [Panoramica](/help/journey-sites/demos-add-on/overview.md)
       + [Installazione](/help/journey-sites/demos-add-on/installation.md)
       + [Crea programma](/help/journey-sites/demos-add-on/create-program.md)
@@ -282,7 +282,7 @@ ht-degree: 99%
       + [Introduzione a Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Profili di notifica](/help/journey-onboarding/notification-profiles.md)
-+ Verisoni di prova di AEMaaCS {#trials}
++ Versioni di prova di AEMaaCS {#trials}
    + Versioni di prova headless {#headless}
       + [Personalizzare il contenuto di un’app React di esempio](/help/trials/headless/customize-app.md)
       + [Creare la struttura del contenuto per l’app](/help/trials/headless/content-structure.md)
@@ -306,14 +306,14 @@ ht-degree: 99%
          + [Fase di preparazione](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
          + [Fase di implementazione](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
          + [Vai alla fase live](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
-   + Strumenti di transizione verso il cloud {#cloud-migration}
-      + Analisi delle best practice {#best-practices-analyzer}
+   + Strumenti di transizione cloud {#cloud-migration}
+      + Best Practices Analyzer {#best-practices-analyzer}
          + [Panoramica](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilizzo di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Trasformazione contenuti {#content-transformer}
          + [Panoramica](/help/journey-migration/content-transformer/overview.md)
          + [Utilizzo del trasformatore di contenuti](/help/journey-migration/content-transformer/using.md)
-      + Strumento trasferimento contenuti {#content-transfer-tool}
+      + Strumento di trasferimento contenuti {#content-transfer-tool}
          + [Panoramica](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
@@ -444,7 +444,7 @@ ht-degree: 99%
          + [Modelli per siti](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Layout reattivo](/help/sites-cloud/administering/responsive-layout.md)
          + [Temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md)
-         + Percorso di creazione di siti rapidi AEM {#quick-site}
+         + Percorso di creazione rapida del sito AEM {#quick-site}
             + [Comprendere Creazione rapida del sito AEM](/help/journey-sites/quick-site/overview.md)
             + [Comprendere Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
             + [Crea sito da modello](/help/journey-sites/quick-site/create-site.md)
@@ -455,7 +455,7 @@ ht-degree: 99%
             + [Distribuire il tema personalizzato](/help/journey-sites/quick-site/deploy-theme.md)
       + Riutilizzo del contenuto {#reusing-content}
          + [MSM e traduzione](/help/sites-cloud/administering/msm-and-translation.md)
-         + Gestore multisito {#msm}
+         + Multi-Site Manager {#msm}
             + [Panoramica di MSM e Live Copy](/help/sites-cloud/administering/msm/overview.md)
             + [Configurazione della sincronizzazione di una Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [Creazione e sincronizzazione di Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
@@ -464,7 +464,7 @@ ht-degree: 99%
             + [Best practice MSM](/help/sites-cloud/administering/msm/best-practices.md)
             + [Risoluzione dei problemi e domande frequenti](/help/sites-cloud/administering/msm/troubleshooting.md)
          + Traduzione {#translation}
-            + Percorso di traduzione di un sito {#sites}
+            + Percorso di traduzione Sites {#sites}
                + [Comprendere Sites translation in AEM](/help/journey-sites/translation/overview.md)
                + [Guida introduttiva di AEM Sites translation](/help/journey-sites/translation/getting-started.md)
                + [Scopri i contenuti di Sites e come tradurre in AEM](/help/journey-sites/translation/learn-about.md)
@@ -508,7 +508,7 @@ ht-degree: 99%
    + Gestire le risorse digitali {#manage}
       + Selettore risorse micro front-end {#asset-selector}
          + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
-         + Integrazioni Selettore risorse {#asset-selector-integration}
+         + Integrazioni del Selettore risorse {#asset-selector-integration}
             + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
             + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
             + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
@@ -681,7 +681,7 @@ ht-degree: 99%
       + [Content Credentials](/help/assets/content-credentials.md)
       + [Pubblicare risorse in AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Estensibilità dell’interfaccia utente della vista di AEM Assets](/help/assets/aem-assets-view-ui-extensibility.md)
-   + Hub di contenuti {#content-hub}
+   + Content Hub {#content-hub}
       + [Panoramica](/help/assets/product-overview.md)
       + [Implementare Content Hub](/help/assets/deploy-content-hub.md)
       + [Caricare o importare risorse approvate dal brand in Content Hub](/help/assets/upload-brand-approved-assets.md)
@@ -812,7 +812,7 @@ ht-degree: 99%
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
                + [Oggetto ambito nelle funzioni personalizzate](/help/forms/custom-function-core-component-scope-function.md)
                + [Esempi di funzioni personalizzate per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-components-use-cases.md)
-            + Introduzione al Portale moduli e ai relativi componenti{#introduction-to-forms-portal}
+            + Introduzione al Portale Forms e ai relativi componenti{#introduction-to-forms-portal}
                + [Introduzione al componente Portale moduli](/help/forms/configure-forms-portal.md)
                + [Elencare i moduli nella pagina Sites utilizzando il componente Ricerca ed elenca](/help/forms/list-forms-on-sites-page.md)
                + [Salvare ed elencare i moduli come bozze nella pagina Sites utilizzando il componente Bozze e invii](/help/forms/save-core-component-based-form-as-draft.md)
@@ -856,7 +856,7 @@ ht-degree: 99%
             + [Concedere l’accesso all’editor di regole a specifici gruppi di utenti](/help/forms/rule-editor-access-user-groups.md)
             + [Utilizzare le espressioni SOM nei moduli adattivi](/help/forms/using-som-expressions-adaptive-forms.md)
             + [Espressioni per moduli adattivi](/help/forms/adaptive-form-expressions.md)
-         + Utilizzo [!DNL Adobe Sign] {#use-adobe-sign}
+         + Utilizzare [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
          + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
             + [Imposta azione di invio per un modulo adattivo](/help/forms/configuring-submit-actions.md)
@@ -1226,7 +1226,7 @@ ht-degree: 99%
          + [Creare un sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
-      + Impostazioni dominio {#custom-domain-names}
+      + Impostazioni di dominio {#custom-domain-names}
          + [Introduzione alle impostazioni di dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Verificare lo stato del nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
@@ -1269,7 +1269,7 @@ ht-degree: 99%
       + [Personalizzazione di modelli e temi del sito](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Headful e Headless in AEM](/help/implementing/developing/headful-headless.md)
       + [Non consentire la serializzazione di ResourceResolver tramite Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
-      + Sviluppo AEM full stack {#full-stack}
+      + Sviluppo AEM full-stack {#full-stack}
          + [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Struttura dell’interfaccia AEM](/help/implementing/developing/introduction/ui-structure.md)
          + [Guida di riferimento rapido per Sling](/help/implementing/developing/introduction/sling-cheatsheet.md)
@@ -1303,7 +1303,7 @@ ht-degree: 99%
       + Editor universale {#universal-editor}
          + [Introduzione](/help/implementing/universal-editor/introduction.md)
          + [Casi d’uso](/help/implementing/universal-editor/use-cases.md)
-         + [Editor universale e editor siti](/help/implementing/universal-editor/page-editor-universal-editor.md)
+         + [Editor universale e editor Sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Attributi e tipi di elementi](/help/implementing/universal-editor/attributes-types.md)
          + [Definizione del componente](/help/implementing/universal-editor/component-definition.md)
          + [Definizioni di modelli, campi e tipi di componenti](/help/implementing/universal-editor/field-types.md)
@@ -1379,7 +1379,7 @@ ht-degree: 99%
       + [Personalizzazione ed estensione dei frammenti di contenuto](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [Personalizzazione della console e dell’editor Frammenti di contenuto](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
-      + Gestire i moduli di ricerca {#manage-search-forms}
+      + Gestione dei moduli di ricerca {#manage-search-forms}
          + [Configurazione dei moduli di ricerca](/help/implementing/developing/extending/search-forms.md)
          + [Configurare i filtri di ricerca per la casella in entrata](/help/implementing/developing/extending/configure-inbox-search-rail.md)
       + [Configurare l’editor Rich Text](/help/implementing/developing/extending/rich-text-editor.md)
