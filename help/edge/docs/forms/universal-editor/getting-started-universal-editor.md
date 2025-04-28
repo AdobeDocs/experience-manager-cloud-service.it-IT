@@ -4,10 +4,10 @@ description: Questo tutorial ti mostrerà come iniziare subito con un nuovo prog
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,7 @@ Nell’era digitale di oggi, i moduli facili da usare sono essenziali per qualsi
 
 AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitare la creazione di moduli di Edge Delivery Services per l’acquisizione e l’archiviazione dei dati. È possibile [creare un nuovo progetto AEM preconfigurato con Blocco moduli adattivi](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) oppure [aggiungere il Blocco moduli adattivi a un progetto AEM esistente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-<!-->
-![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
+![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Questo tutorial ti consente di creare, visualizzare in anteprima e pubblicare un modulo personalizzato con un progetto di sito Adobe Experience Manager nuovo o esistente mediante l’authoring WYSIWYG dell’editor universale.
 

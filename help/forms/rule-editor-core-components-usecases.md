@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -31,7 +31,8 @@ Immaginare un modulo applicativo in più passaggi utilizzando un layout della pr
 
 Quando fai clic sul pulsante **Avanti**, il pannello **Informazioni personali** viene convalidato. Se i dettagli immessi sono corretti, lo stato attivo viene spostato sul pannello **Sicurezza account**. In caso contrario, verrà visualizzato un messaggio di errore in cui si richiede di specificare i dettagli mancanti.
 
-<!--![Video]()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
+
 
 ## Navigazione tra i pannelli utilizzando il pulsante
 
