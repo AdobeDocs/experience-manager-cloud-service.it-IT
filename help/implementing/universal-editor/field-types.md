@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1500'
 ht-degree: 11%
 
 ---
@@ -703,12 +703,7 @@ Un tipo di componente di riferimento consente un riferimento a un altro oggetto 
 
 #### Testo formattato {#rich-text}
 
-Il testo RTF consente l’inserimento di testo RTF su più righe. Offre tipi di convalida aggiuntivi.
-
-| Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
-|---|---|---|---|
-| `maxSize` | `number` | Numero massimo di caratteri consentito | No |
-| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `maxSize` viene superato | No |
+Il testo RTF consente l’inserimento di testo RTF su più righe.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ Il testo RTF consente l’inserimento di testo RTF su più righe. Offre tipi di 
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Esempio 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
