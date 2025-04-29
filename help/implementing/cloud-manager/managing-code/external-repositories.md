@@ -3,9 +3,9 @@ title: Aggiungere archivi esterni in Cloud Manager
 description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager supporta l’integrazione con gli archivi GitHub Enterprise, GitLab e Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badgePremium: label="Adottatore anticipato" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Adottatore anticipato" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ce6ddc47109e0e2ae6a11682122a30f1f679e349
+source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 27%
