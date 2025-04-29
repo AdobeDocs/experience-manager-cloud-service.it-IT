@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 43%
@@ -98,8 +98,8 @@ Ora puoi selezionare e confrontare rapidamente qualsiasi versione di una risorsa
 * **Editor regole**:
    * [Condizione binaria con evento di clic nella clausola &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): l&#39;editor di regole consente ora di combinare un evento di clic su pulsante (_Is Clicked_) con altre condizioni all&#39;interno della clausola &quot;When&quot;. Questo consente un controllo più preciso sull’esecuzione delle regole in base all’interazione dell’utente e ad altri fattori. Nota: quando si utilizzano più condizioni, l’evento clic deve essere la prima condizione elencata.
    * [Condizioni di convalida per campi e pannelli](/help/forms/rule-editor-core-components-usecases.md): l&#39;editor di regole ora include _IsValid_ e _IsNotValid_ condizioni. Consente di controllare lo stato di convalida di campi specifici o interi pannelli (inclusi layout come Schede orizzontali, Schede verticali, Pannello a soffietto e Creazioni guidate), semplificando la navigazione dei moduli e migliorando l’esperienza utente in base ai risultati della convalida.
-* **È stata migliorata la gestione dell&#39;ambito per gli elenchi SharePoint**: i siti SharePoint ora supportano tutti i percorsi gestiti, ad esempio /sites e /teams. Questo miglioramento consente un’integrazione più ampia tra diverse strutture del sito SharePoint, offrendo maggiore flessibilità nella connessione ai contenuti organizzativi.
-* **Supporto per il salvataggio del documento di record nell&#39;elenco SharePoint**: Forms creato utilizzando un modello dati modulo basato su elenco di SharePoint (FDM) può ora salvare il documento di record (DoR) negli elenchi di SharePoint configurando la proprietà del campo Riferimento associazione documento di record. Questo miglioramento consente l’integrazione diretta dei dati e dei documenti dei moduli supportati con lo storage SharePoint.
+* [È stata migliorata la gestione dell&#39;ambito per gli elenchi SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): i siti SharePoint ora supportano tutti i percorsi gestiti, ad esempio /sites e /teams. Questo miglioramento consente un’integrazione più ampia tra diverse strutture del sito SharePoint, offrendo maggiore flessibilità nella connessione ai contenuti organizzativi.
+* [Supporto per il salvataggio del documento di record nell&#39;elenco SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms creato utilizzando un modello dati modulo basato su elenco di SharePoint (FDM) può ora salvare il documento di record (DoR) negli elenchi di SharePoint configurando la proprietà del campo Riferimento associazione documento di record. Questo miglioramento consente l’integrazione diretta dei dati e dei documenti dei moduli supportati con lo storage SharePoint.
 
 ### Funzioni di accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
