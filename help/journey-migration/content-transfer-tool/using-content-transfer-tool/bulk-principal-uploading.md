@@ -5,15 +5,15 @@ exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Caricamento in blocco di entità in IMS dopo l’utilizzo di CTT {#bulk-principal-uploading}
+# Caricamento in blocco delle entità principali in IMS dopo aver usato CTT {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
->title="Caricamento in blocco di entità"
+>title="Caricamento in blocco delle entità principali"
 >abstract="Panoramica dei file di caricamento in blocco per gruppi e utenti e come utilizzarli in Admin Console per creare gruppi e utenti in IMS."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentazione di AEM Admin Console"
 >additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
