@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+source-git-commit: 437125b6819edf70539ebacb4a8beddb755fcb7a
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 39%
 
 ---
 
@@ -16,60 +16,68 @@ ht-degree: 100%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 20476 {#20476}
+## Versione 20626 {#20626}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 20476, rilasciata pubblicamente il 15 aprile 2025. La versione di manutenzione precedente era la 20133.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 20626, rilasciata pubblicamente il mercoledì 29 aprile 2025. La versione di manutenzione precedente era la 20476.
 
-Con la versione di attivazione funzioni 2025.4.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-20476}
+### Miglioramenti {#enhancements-20626}
 
-* CNTBF-411: è stata aggiunta la possibilità di eliminazione del processo sling nel caso in cui venga rilasciato da JCR.
-* CQ-4359813: kit di traduzione AEM: 20 marzo.
-* CQ-4359811: Kit di traduzione Granite: 20 marzo.
-* GRANITE-57863: aggiornamento di Filevault alla versione 3.8.4.
-* GRANITE-56154: configurazione di nuovi tentativi esponenziali in oak-segment-azure.
-* GRANITE-55999: miglioramento delle prestazioni di UserPropertiesService.
-* GRANITE-55781: è stata eliminata la riconfigurazione ridondante dell’iscrizione degli utenti.
-* GRANITE-53956: aggiornamento di Azure SDK V8 a V12 per oak-segment-azure.
-* GRANITE-50654: nella scheda Autorizzazioni principali, è stato rimosso il caricamento di “tutti” per impostazione predefinita sul front-end.
-* SKYOPS-103444: aggiornamento a Sling ResourceResolver 1.12.6.
-* SKYOPS-101147: aggiornamento caconfig impl.
-* SKYOPS-97124: sono stati aggiunti avvisi dell’Analyser per le versioni obsolete del bundle SPIFly.
-* SKYOPS-95826: aggiornamento delle versioni runtime di Java a 11.0.26 e 21.0.6.
-* SKYOPS-53671: utilizzo degli artefatti installati della clientela dai modelli di funzioni durante i riavvi di AEM (RDE).
+* ASSETS-46413, ASSETS-46580: aggiunto il nuovo stato di revisione &quot;Anteprima&quot;.
+* ASSETS-49542: espansione delle lingue supportate per la trascrizione e la traduzione video e audio.
+* ASSETS-48264: espansione del supporto della qualità PNG per le rappresentazioni.
 
-### Problemi risolti {#fixed-issues-20476}
+### Problemi risolti {#fixed-issues-20626}
 
-* ASSETS-49027: [Regressione] AemRequestEventFilter interrompe le richieste POST alla console web OSGI.
-* ASSETS-44956: non è possibile selezionare una rappresentazione Dynamic Media: i tag script devono essere caricati nel componente di livello principale.
-* CNTBF-410: puntatore null getId CheckJob nel bundle ContentCopy.
-* CNTBF-341: indice di esportazione ContentCopy al di fuori dei limiti.
-* CQ-4355411: le descrizioni comandi rimangono visualizzate nella finestra di dialogo “Preferenze utente”.
-* GRANITE-57265: i valori della selezione a discesa non vengono selezionati.
-* GRANITE-57067: criteri effettivi mancanti nell’interfaccia utente.
-* SITES-30727: il trascinamento potrebbe non riuscire per i componenti secondari nell’editor di AEM.
-* SKYOPS-90607: i processi Sling vengono eseguiti in una distribuzione inattiva/contenuti mutabili.
-* SKYOPS-95722: è stata rimossa la dimensione `MaxPermSize` dai flag quickstart in AEM-SDK.
-* SKYOPS-103569: non è possibile caricare alcune immagini con Java 21: `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`.
+* ASSETS-50387: correggi la miniatura predefinita del frammento di contenuto da utilizzare in GenStudio.
+* ASSETS-49006: visualizza le proprietà video quando l’utente non dispone di autorizzazioni di scrittura.
+* ASSETS-46757, ASSETS-46997: migliorare l’accessibilità nell’editor di ritaglio avanzato.
+* ASSETS-48018: migliora il tracciamento dei riferimenti delle risorse nel rapporto di pubblicazione di Assets.
+* ASSETS-35846: migliorare la coerenza dell’accesso tra il livello di authoring e quello di consegna.
+* ASSETS-48171: migliorare la coerenza dei modelli Dynamic Media con Canvas.
+* ASSETS-49813: migliorare la notifica di scadenza.
+* ASSETS-47768, ASSETS-49825, ASSETS-49008, ASSETS-48287: gestione e visibilità migliorate per le operazioni in blocco.
+* ASSETS-50003, ASSETS-50004: migliora la denominazione e il controllo dei rendering inclusi nel download di una risorsa.
+* ASSETS-47939: migliorare l’organizzazione delle risposte per Content Hub.
+* ASSETS-46738: migliora le prestazioni per raccolte molto grandi.
+* ASSETS-50121: maggiore affidabilità degli eventi di pubblicazione delle risorse.
+* ASSETS-48490: migliora la resilienza dell’elaborazione automatica durante l’acquisizione delle immagini.
+* ASSETS-28106, ASSETS-49404: migliorare la robustezza della ricerca full-text.
+* ASSETS-50006, ASSETS-50423: migliora le prestazioni di ricerca e navigazione all’interno di una cartella di grandi dimensioni.
+* ASSETS-46021: migliora la visualizzazione video per Safari e i browser mobili.
+* ASSETS-49002: migliorare la gestione della modifica dei modelli Dynamic Media.
+* ASSETS-48376: Vari miglioramenti nell’interfaccia utente di Content Hub.
+* ASSETS-48504, ASSETS-49378: vari miglioramenti al comportamento dell’interfaccia utente.
+* ASSETS-49540: spostare Asset Relations OpenAPI fuori dalla fase sperimentale.
+* ASSETS-40284: aggiorna la documentazione sull’integrazione di Adobe Stock.
+* ASSETS-49739: integra Figma da Asset Selector.
 
-### Problemi noti {#known-issues-20476}
+#### Guide AEM {#guides}
+
+* GUIDES-21734: non è possibile generare nuovi ID per gli elementi quando questi vengono aggiunti tramite snippet o creati tramite modelli, anche quando l’opzione di generazione automatica dell’ID è abilitata in XMLEditorConfig.
+* GUIDES-25969: se l&#39;attributo `scope=external` non è presente nei collegamenti esterni di un argomento DITA, la pubblicazione di HTML5 non riesce senza indicare i file in cui l&#39;attributo manca nei registri di errore, in particolare quando il microservizio è abilitato.
+* GUIDES-27288: impossibile trasmettere le proprietà dei metadati per mappare le pagine di destinazione generate utilizzando la nuova pubblicazione AEM Sites.
+
+Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, vedi [Roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Problemi noti {#known-issues-20626}
 
 Nessuna.
 
-### Funzioni e API obsolete {#deprecated-20476}
+### Funzioni e API obsolete {#deprecated-20626}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-20476}
+### Correzioni di sicurezza {#security-20626}
 
-AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 5 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
+AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 11 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-20476}
+### Tecnologie incorporate {#embedded-tech-20626}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
 | AEM Oak | 1.78.0 | [API Oak API 1.78.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.26-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
-| Componenti core AEM | 2.28.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Componenti core AEM | 2,29,0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
