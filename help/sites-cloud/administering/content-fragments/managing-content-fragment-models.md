@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 36%
+source-wordcount: '2260'
+ht-degree: 37%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 36%
 Dalla console Frammenti di contenuto puoi gestire i tuoi modelli di frammenti di contenuto, quindi [apri l&#39;editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) per definire la struttura.
 
 I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
-
->[!IMPORTANT]
->
->Varie funzioni della Console Frammenti di contenuto sono disponibili tramite il programma per utenti esperti.
->
->Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >

@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2817'
 ht-degree: 6%
 
 ---
 
 # Authoring dei frammenti di contenuto {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->Varie funzioni dell’Editor frammento di contenuto sono disponibili tramite il programma di adozione anticipata.
->
->Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 L’authoring dei frammenti di contenuto si concentra sia sulla distribuzione headless che sull’authoring delle pagine.
 
@@ -76,7 +70,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
   >
   >A seconda delle definizioni nel modello sottostante, i campi possono essere soggetti a determinati tipi di [convalida](/help/assets/content-fragments/content-fragments-models.md#validation).
 
-![Editor frammento di contenuto - Panoramica](assets/cf-authoring-overview.png)
+![Editor frammenti di contenuto: panoramica](assets/cf-authoring-overview.png)
 
 ## Navigare nella struttura dei frammenti di contenuto {#navigate-structure}
 
@@ -213,7 +207,7 @@ Per i campi **[Testo su più righe](/help/sites-cloud/administering/content-frag
 * Modifica il contenuto:
    * Annulla/Ripristina
    * Incolla/Incolla come testo
-   * Copiare
+   * Copia
    * Seleziona formato paragrafo
    * Crea/gestisci tabella
    * Formato testo; grassetto, corsivo, sottolineato, colore

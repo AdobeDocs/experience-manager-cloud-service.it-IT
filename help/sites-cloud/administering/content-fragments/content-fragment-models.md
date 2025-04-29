@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 36%
+source-wordcount: '2230'
+ht-degree: 39%
 
 ---
 
 # Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->Varie funzioni dei Modelli per frammenti di contenuto sono disponibili tramite il Programma per l’adozione anticipata.
->
->Per visualizzare lo stato e le modalità di applicazione, se sei interessato, consulta le [Note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
@@ -137,7 +131,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
       * Modificare direttamente il frammento a cui si fa riferimento.
       * Creare un nuovo frammento di contenuto basato sul modello appropriato
       * Crea nuove istanze del campo
-   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
       * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare il frammento richiesto
 
 * **Riferimento contenuto**
@@ -149,7 +143,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
    * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
-   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
       * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare la risorsa richiesta
 
 * **Oggetto JSON**
