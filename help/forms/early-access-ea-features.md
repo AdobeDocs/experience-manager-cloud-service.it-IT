@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 27%
+source-wordcount: '2356'
+ht-degree: 26%
 
 ---
 
@@ -139,6 +139,12 @@ Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la
 * Gestione della creazione, dell’assemblaggio e della distribuzione di corrispondenze interattive basate su dati
 
 Pronto per iniziare? L’editor di comunicazioni interattive è disponibile nel programma di accesso anticipato per le distribuzioni di Forms as a Cloud Service. Per richiedere l&#39;accesso, invia il tuo ID organizzazione e i dettagli del programma a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale.
+
+### Integrazione di AEM Forms con Adobe Experience Platform (AEP)
+
+Puoi collegare AEM Forms a Adobe Experience Platform (AEP) per sfruttare i profili dei clienti e i dati per esperienze di moduli personalizzati e attivare flussi di lavoro a valle in base all’invio di moduli. Inviando i dati del modulo direttamente ai set di dati di AEP, puoi arricchire i profili dei clienti e ottenere informazioni più approfondite sulle interazioni degli utenti.
+
+Pronto per iniziare? [Ulteriori informazioni sull&#39;integrazione di AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 
