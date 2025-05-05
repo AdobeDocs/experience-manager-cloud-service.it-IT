@@ -135,4 +135,4 @@ Tutte le operazioni della cartella sono accessibili tramite la barra delle azion
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come creare e gestire le visualizzazioni per il progetto, è necessario continuare con l&#39;percorso di Screens as a Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Dopo aver appreso come creare e gestire le visualizzazioni per il progetto, è necessario continuare con l&#39;percorso di Screens as a Cloud Service esaminando il documento [Assegnazione del canale a una visualizzazione in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=it).

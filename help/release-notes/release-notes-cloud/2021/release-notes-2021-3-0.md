@@ -64,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 Nel corso degli anni, AEM Forms ha aiutato molte organizzazioni a fornire esperienze straordinarie di onboarding e registrazione. Queste esperienze hanno aiutato le organizzazioni a convertire i lead in vendite, elaborare i dati dei clienti acquisiti, fornire esperienze dinamiche in base al profilo di pubblico e molto altro. Ora AEM Forms è disponibile come servizio cloud.
 
-È possibile utilizzare [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) per creare moduli digitali, connettere i moduli a origini dati esistenti, integrare i moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, l&#39;assenza di tempi di inattività per gli aggiornamenti e l&#39;ambiente di sviluppo nativo per il cloud.
+È possibile utilizzare [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=it) per creare moduli digitali, connettere i moduli a origini dati esistenti, integrare i moduli con Adobe Sign per aggiungere firme elettroniche ai moduli, generare documenti di record (DoR) per archiviare i moduli inviati come file PDF. Il servizio può anche convertire i PDF forms esistenti in moduli digitali. Oltre alle funzioni standard di AEM Forms, il servizio offre diverse funzionalità native per il cloud, come il ridimensionamento automatico, l&#39;assenza di tempi di inattività per gli aggiornamenti e l&#39;ambiente di sviluppo nativo per il cloud.
 
 Puoi rivolgerti al tuo rappresentante Adobe per una demo o per registrarti al servizio.
 
@@ -149,7 +149,7 @@ La data di pubblicazione dello strumento Content Transfer v1.3.0 è il 4 marzo 2
 ### Novità dello strumento Content Transfer {#what-is-new-ctt-march}
 
 * CTT ora viene installato in `/apps` invece che in `/libs`. I segnalibri del browser per alcune pagine potrebbero non essere più validi.
-* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Per ulteriori dettagli, vedere [Utilizzo dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html).
+* Quando CTT è installato, l’utente dovrà spostarsi su un livello aggiuntivo per accedere alla pagina Content Transfer (Trasferimento contenuti). Per ulteriori dettagli, vedere [Utilizzo dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=it).
 
 ### Correzioni di bug {#bug-fixes-ctt-march}
 

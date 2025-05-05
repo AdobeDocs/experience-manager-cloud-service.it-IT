@@ -16,7 +16,7 @@ ht-degree: 4%
 Questa sezione descrive come creare un ramo per il programma in Cloud Manager.
 
 >[!NOTE]
->Vedere [Utilizzo della procedura guidata in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) per informazioni su come creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
+>Vedere [Utilizzo della procedura guidata in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=it) per informazioni su come creare un progetto di applicazione AEM in Cloud Manager utilizzando la procedura guidata.
 
 ## Obiettivo {#objective}
 

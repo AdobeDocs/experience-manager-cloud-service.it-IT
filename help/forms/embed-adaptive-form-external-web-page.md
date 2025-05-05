@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 È possibile [incorporare moduli adattivi in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) o in una pagina Web ospitata al di fuori dell&#39;AEM. Il modulo adattivo incorporato è completamente funzionante e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e interagire contemporaneamente con il modulo.
@@ -159,8 +159,8 @@ Quando incorpori un modulo adattivo in una pagina web, considera le seguenti bes
 
 * Assicurati che le regole di stile definite nel CSS della pagina web non siano in conflitto con il CSS dell’oggetto modulo. Per evitare i conflitti, puoi riutilizzare il CSS della pagina web nel tema del modulo adattivo utilizzando la libreria client AEM. Per informazioni sull&#39;utilizzo della libreria client nei temi dei moduli adattivi, vedi [Temi in AEM Forms](/help/forms/themes.md).
 * Fare in modo che il contenitore del modulo nella pagina Web utilizzi l&#39;intera larghezza della finestra. In questo modo le regole CSS configurate per i dispositivi mobili funzionano senza modifiche. Se il contenitore del modulo non occupa l’intera larghezza della finestra, è necessario scrivere file CSS personalizzati per adattare il modulo a dispositivi mobili diversi.
-* Utilizza l&#39;API `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
-* Utilizza l&#39;API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` per scaricare il modulo adattivo dal DOM HTML.
+* Utilizza l&#39;API `[getData](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
+* Utilizza l&#39;API `[unloadAdaptiveForm](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` per scaricare il modulo adattivo dal DOM HTML.
 * Imposta l’intestazione access-control-origin quando invii una risposta da un server AEM.
 
 ## Consentire ad AEM Forms di distribuire moduli adattivi a un sito tra più domini {#cross-site}

@@ -53,7 +53,7 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
    1. Passa al portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) e scarica Best Practices Analyzer come file zip.
 
       >[!NOTE]
-      >Rivedi [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) per scoprire come eseguire BPA.
+      >Rivedi [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=it#imp-considerations) per scoprire come eseguire BPA.
 
 1. In CAM, fai clic su **Ottieni chiave di caricamento**, in modo da ottenere la chiave utilizzata per configurare il sistema per caricare automaticamente i rapporti BPA direttamente in CAM.
 
@@ -161,7 +161,7 @@ Puoi filtrare il rapporto in base alla rilevanza, al sottotipo o al conteggio.
 ![Filtri per report](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) per informazioni sulle categorie di risultati e sui livelli di importanza.
+>Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=it) per informazioni sulle categorie di risultati e sui livelli di importanza.
 
 #### Valutazione delle best practice {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=it).

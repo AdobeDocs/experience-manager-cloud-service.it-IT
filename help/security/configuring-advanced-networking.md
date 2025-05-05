@@ -22,7 +22,7 @@ Oltre a questa documentazione, è disponibile una serie di tutorial progettati p
 >
 >Puoi configurare la rete avanzata in AEM as a Cloud Service tramite l’interfaccia utente di Cloud Manager o utilizzando l’API di Cloud Manager (ad esempio, cURL).
 >
->Questo articolo si concentra sull’utilizzo del metodo dell’interfaccia utente. Se preferisci automatizzare la configurazione tramite l&#39;API, consulta l&#39;[esercitazione sulla rete privata virtuale (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Questo articolo si concentra sull’utilizzo del metodo dell’interfaccia utente. Se preferisci automatizzare la configurazione tramite l&#39;API, consulta l&#39;[esercitazione sulla rete privata virtuale (VPN)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automazione della rete avanzata con l&#39;API**
 >Per automatizzare la configurazione di rete avanzata (ad esempio la creazione di VPN), puoi utilizzare l’API Cloud Manager:
@@ -44,7 +44,7 @@ Oltre a questa documentazione, è disponibile una serie di tutorial progettati p
 >   }'
 >```
 >
->Vedere il tutorial completo e altri esempi API nell&#39;esercitazione [Virtual Private Network (VPN)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Vedere il tutorial completo e altri esempi API nell&#39;esercitazione [Virtual Private Network (VPN)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Panoramica {#overview}
@@ -59,7 +59,7 @@ Questo articolo descrive in dettaglio ciascuna di queste opzioni e il motivo per
 
 >[!CAUTION]
 >
->Se disponi già della tecnologia di uscita dedicata legacy e desideri configurare una di queste opzioni di rete avanzate, [contatta prima il Servizio Clienti Adobe.](https://experienceleague.adobe.com/?support-solution=Experience+Manager?lang=it#home)
+>Se disponi già della tecnologia di uscita dedicata legacy e desideri configurare una di queste opzioni di rete avanzate, [contatta prima il Servizio Clienti Adobe.](https://experienceleague.adobe.com/it?support-solution=Experience+Manager?lang=it#home)
 >
 >Il tentativo di configurare una rete avanzata con la tecnologia di uscita legacy può influire sulla connettività del sito.
 

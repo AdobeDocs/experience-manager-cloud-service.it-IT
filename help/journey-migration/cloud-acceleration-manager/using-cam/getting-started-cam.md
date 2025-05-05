@@ -103,4 +103,4 @@ Per eliminare un progetto, effettua le seguenti operazioni:
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, sei pronto per rivedere il passaggio successivo nella [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, sei pronto per rivedere il passaggio successivo nella [Fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it).

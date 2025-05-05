@@ -23,7 +23,7 @@ Il servizio Author è il luogo in cui gli utenti interni creano, gestiscono e pu
 
 Come best practice, le autorizzazioni devono essere impostate su Gruppi in AEM. Noti anche come gruppi locali, questi gruppi possono essere gestiti nell’ambiente di authoring AEM.
 
-Il modo più semplice per gestire l’iscrizione al gruppo è utilizzare i gruppi Adobe Identity Management System (IMS) e assegnare [Gruppi IMS a gruppi AEM locali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
+Il modo più semplice per gestire l’iscrizione al gruppo è utilizzare i gruppi Adobe Identity Management System (IMS) e assegnare [Gruppi IMS a gruppi AEM locali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it#managing-permissions-in-aem).
 
 ![Flusso delle autorizzazioni di Admin Console](assets/admin-console-aem-group-permissions.png)
 

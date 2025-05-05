@@ -52,7 +52,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, definire la
 
 >[!NOTE]
 >
->Per soddisfare i requisiti di [Dispatcher per i documenti che possono essere memorizzati nella cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
+>Per soddisfare i requisiti di [Dispatcher per i documenti che possono essere memorizzati nella cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=it#how-does-the-dispatcher-return-documents%3F), Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
 >
 >Questo suffisso viene aggiunto da una regola di riscrittura, una volta abilitata la memorizzazione in cache delle query persistenti.
 

@@ -51,7 +51,7 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 ![Ruoli di revisione per l’implementazione](assets/team_involvement.png)
 
-**Rivedi questo elenco con il tuo team di implementazione** e assicurati di avere persone con le qualifiche pertinenti per ogni ruolo. I membri del team che hanno meno familiarità con Adobe Experience Cloud possono utilizzare la risorse di apprendimento [Experience League](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+**Rivedi questo elenco con il tuo team di implementazione** e assicurati di avere persone con le qualifiche pertinenti per ogni ruolo. I membri del team che hanno meno familiarità con Adobe Experience Cloud possono utilizzare la risorse di apprendimento [Experience League](https://experienceleague.adobe.com/it?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
 ## **Ruoli chiave per AEM Experience Manager Assets**
 
@@ -80,4 +80,4 @@ Ora che sai quali ruoli sono richiesti, osserva il grafico seguente per vedere q
 
 >[!TIP]
 >
-> Ulteriori informazioni su Adobe Experience Cloud e sull’utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Ulteriori informazioni su Adobe Experience Cloud e sull’utilizzo delle risorse su [Experience League](https://experienceleague.adobe.com/it?lang=it#recommended/solutions/experience-manager) per ottenere la certificazione tramite [Adobe Digital Learning](https://learning.adobe.com/certification.html).

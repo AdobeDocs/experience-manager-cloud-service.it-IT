@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componenti core) | Questo articolo |
 | AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/rule-editor.md) |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=it) |
 
 In un modulo adattivo basato su componenti core, la funzione dell’editor di regole consente sia agli utenti aziendali che agli sviluppatori di scrivere regole per gli oggetti del modulo adattivo. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Questa funzionalità consente di semplificare ulteriormente l&#39;esperienza di compilazione dei moduli, garantendo precisione e velocità.
 

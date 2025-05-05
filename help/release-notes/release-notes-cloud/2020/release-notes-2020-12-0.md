@@ -32,7 +32,7 @@ La seguente versione (2021.1.0) è del 28 gennaio 2021.
 
 * Le funzionalità di [!DNL Dynamic Media] sono ora accessibili tramite i componenti core basati su immagini AEM [!DNL Sites]. Gli autori possono configurare rapidamente i componenti per utilizzare Predefiniti immagine, Ritaglio avanzato e Modificatori immagine durante la creazione di pagine Web. Consulta [Componenti core versione 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* L&#39;app desktop [!DNL Experience Manager] consente agli utenti di caricare file e cartelle trascinando i file da Esplora risorse o da Mac Finder nell&#39;interfaccia dell&#39;app desktop. Consulta [aggiungere risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
+* L&#39;app desktop [!DNL Experience Manager] consente agli utenti di caricare file e cartelle trascinando i file da Esplora risorse o da Mac Finder nell&#39;interfaccia dell&#39;app desktop. Consulta [aggiungere risorse tramite l&#39;app desktop](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -66,7 +66,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 ### Novità in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) per ulteriori informazioni su questo plug-in.
+* È stata rilasciata la nuova versione del plug-in AIO-CLI. La versione più recente di questo plug-in include correzioni di bug per AEM Dispatcher Converter e Repository Modernizer e supporta anche una nuova utility: Index Converter. Consulta [Esperienza unificata](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) per ulteriori informazioni su questo plug-in.
 
 * Index Converter è un’utility che può essere utilizzata per trasformare le definizioni dell’indice Oak personalizzato di un cliente in definizioni dell’indice Oak compatibili con AEM as a Cloud Service. Per ulteriori dettagli, vedere [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
 

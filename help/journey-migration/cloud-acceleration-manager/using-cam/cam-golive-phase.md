@@ -20,7 +20,7 @@ Fai clic sulla scheda del progetto per aprire la pagina di destinazione del prog
 ![Pubblica](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->Per ulteriori informazioni, vedere [Creazione e gestione di un progetto in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html#create-project).
+>Per ulteriori informazioni, vedere [Creazione e gestione di un progetto in Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it#create-project).
 
 
 ## Utilizzo della scheda Attività Go Live {#go-live}

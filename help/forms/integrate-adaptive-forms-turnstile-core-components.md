@@ -70,7 +70,7 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
    >
    > Gli utenti non devono modificare l’URL di convalida JavaScript lato client e l’URL di convalida lato server, in quanto sono già precompilati per la convalida lato client.
 
-   Una volta configurato, il servizio Captcha Turnstile è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Una volta configurato, il servizio Captcha Turnstile è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Utilizzare Turnstile in un modulo adattivo {#using-turnstile-core-components}
 

@@ -29,7 +29,7 @@ App Builder è disponibile per i clienti e i partner aziendali tramite Adobe Dev
 
 >[!NOTE]
 >
-> Per i clienti AEM 6.5 che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager 6.5 tramite Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> Per i clienti AEM 6.5 che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager 6.5 tramite Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=it).
 
 ## Architettura {#architecture}
 

@@ -42,4 +42,4 @@ In un mondo digitale, puoi misurare praticamente tutto. La scelta di tre KPI per
 
 >[!TIP]
 >
->[**Scaricare il modello di metodologia KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+>[**Scaricare il modello di metodologia KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=it)

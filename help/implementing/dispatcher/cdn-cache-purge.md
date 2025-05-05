@@ -31,7 +31,7 @@ Tutte le varianti di eliminazione condividono quanto segue:
 >[!CAUTION]
 >La rimozione della cache CDN, in particolare con il flag rigido, aumenterà il traffico all’origine e potrebbe causare un’interruzione quando non viene eseguita correttamente.
 
-Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
+Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
 ## Eliminazione di un singolo URL {#single-purge}
 

@@ -20,7 +20,7 @@ Di seguito è riportato un banner acquistabile con una finestra popup Quickview.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Vedi [immagini interattive in azione](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) nella pagina Web illustrata sopra.
+Vedi [immagini interattive in azione](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=it) nella pagina Web illustrata sopra.
 
 ## Guarda come vengono creati i banner interattivi per le immagini {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +30,7 @@ Segui la procedura dettagliata per [la creazione dei banner interattivi](https:/
 
 La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le immagini interattive in Adobe Experience Manager Assets.
 
-Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un esempio di [pagina Web a cui non sono ancora state aggiunte immagini interattive](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
+Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un esempio di [pagina Web a cui non sono ancora state aggiunte immagini interattive](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it).
 
 
 
@@ -146,7 +146,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
 
 **Esempio**
 
-Puoi applicare lo stesso approccio utilizzato nei tre esempi precedenti alla [pagina web demo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
+Puoi applicare lo stesso approccio utilizzato nei tre esempi precedenti alla [pagina web demo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it).
 
 La pagina web demo presenta diverse miniature di prodotto, ciascuna con un pulsante Quickview etichettato &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser ancora attivato, seleziona ogni pulsante e annota gli URL registrati di Quickview. Dopo aver attivato tutte e quattro le visualizzazioni rapide del prodotto disponibili nella pagina, viene visualizzato il seguente elenco di richieste Quickview effettuate al backend:
 
@@ -342,13 +342,13 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo in mod
 
 **Esempio**
 
-Utilizzando il sito Web [demo come esempio](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), l&#39;immagine dei tre singoli utenti è un tag `IMG` statico:
+Utilizzando il sito Web [demo come esempio](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it), l&#39;immagine dei tre singoli utenti è un tag `IMG` statico:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice da incorporare copiato da Experience Manager Assets. Il risultato [mostra l&#39;immagine interattiva acquistabile nella pagina con tre punti attivi circolari](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
+L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice da incorporare copiato da Experience Manager Assets. Il risultato [mostra l&#39;immagine interattiva acquistabile nella pagina con tre punti attivi circolari](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=it).
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il 
 
 Per applicare un ritaglio a un&#39;immagine interattiva acquistabile per un ambiente reattivo, includere nel percorso l&#39;attributo di configurazione dell&#39;immagine interattiva `ZoomView.iscommand`. In questo caso, viene chiamato il componente `ZoomView` e `iscommand` è il comando di server immagini &quot;ritagliate&quot; applicato.
 
-Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=it).
 
-Vedere il comando [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) image serving.
+Vedere il comando [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=it) image serving.
 
 Ora puoi integrare l’immagine interattiva con un Quickview esistente sul tuo sito web.
 
@@ -495,7 +495,7 @@ Di seguito è riportato il codice sorgente completo:
  s7interactiveimageviewer.init();
 ```
 
-Il sito Web di dimostrazione [final con l&#39;immagine interattiva completamente integrata](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
+Il sito Web di dimostrazione [final con l&#39;immagine interattiva completamente integrata](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=it).
 
 ## Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 

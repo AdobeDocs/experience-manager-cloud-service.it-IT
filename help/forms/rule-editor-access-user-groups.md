@@ -54,5 +54,5 @@ Esistono diversi tipi di utenti con diverse competenze che lavorano con Adaptive
 
    Barra degli strumenti Componenti visibile a un utente senza accesso all’editor di regole
 
-   Per istruzioni sull&#39;aggiunta di utenti ai gruppi, vedere [Amministrazione utenti e sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Per istruzioni sull&#39;aggiunta di utenti ai gruppi, vedere [Amministrazione utenti e sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
 

@@ -65,8 +65,8 @@ Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/
 
 Questa logica (facoltativa) può essere implementata in diversi modi e viene richiamata da HTL con comandi specifici:
 
-* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
-* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
+* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=it) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
+* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=it) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
 * Utilizzo delle librerie lato client: i siti web moderni si basano in larga misura sull’elaborazione lato client guidata da codici JavaScript e CSS complessi. Per ulteriori informazioni, vedere il documento [Utilizzo delle librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Struttura dei componenti {#structure}

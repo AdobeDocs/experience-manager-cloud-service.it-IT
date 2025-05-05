@@ -48,7 +48,7 @@ Il modello deve essere `/graphql/execute.json/thePath`.
 
 In questo caso, la query restituisce il codice di errore `405`.
 
-Un errore di questo tipo non è specifico di GraphQL. Vedere l&#39;articolo della Knowledge Base [405 Errore non consentito](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+Un errore di questo tipo non è specifico di GraphQL. Vedere l&#39;articolo della Knowledge Base [405 Errore non consentito](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloccato da Dispatcher {#blocked-dispatcher}
 

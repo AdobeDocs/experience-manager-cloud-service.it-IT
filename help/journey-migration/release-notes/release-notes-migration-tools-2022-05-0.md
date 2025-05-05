@@ -54,4 +54,4 @@ La data di rilascio per Cloud Acceleration Manager è il 2 giugno 2022.
 
 ### Novità {#what-is-new-cam}
 
-* Cloud Acceleration Manager ora fornisce agli utenti di avviare e gestire trasferimenti di contenuti per spostare i contenuti dall’istanza AEM di un cliente (On-Premise o Adobe Managed Services) ad AEM as a Cloud Service come parte di un progetto di migrazione. Per ulteriori dettagli, vedere [Utilizzo della scheda Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer).
+* Cloud Acceleration Manager ora fornisce agli utenti di avviare e gestire trasferimenti di contenuti per spostare i contenuti dall’istanza AEM di un cliente (On-Premise o Adobe Managed Services) ad AEM as a Cloud Service come parte di un progetto di migrazione. Per ulteriori dettagli, vedere [Utilizzo della scheda Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=it#content-transfer).

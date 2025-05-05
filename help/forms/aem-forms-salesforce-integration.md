@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 L’integrazione di Adobe Experience Manager (AEM) Forms con Salesforce consente alle organizzazioni di semplificare i processi collegando le funzionalità di creazione e gestione dei moduli alla piattaforma Salesforce. La connessione di un modulo adattivo con Salesforce consente uno scambio di dati fluido tra le due piattaforme. Quando gli utenti inviano i moduli, i dati vengono sincronizzati automaticamente con Salesforce. Garantisce che tutte le informazioni del cliente siano aggiornate e centralizzate all&#39;interno del sistema.
@@ -40,7 +40,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 * Crea un&#39;app connessa a [Salesforce con flusso di credenziali client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) e un utente solo API per la tua organizzazione e ottieni la chiave consumer e il segreto consumer per l&#39;app.
 
-* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
+* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=it) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
 
 
 ## Configurare l’applicazione Salesforce utilizzando il flusso delle credenziali client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}

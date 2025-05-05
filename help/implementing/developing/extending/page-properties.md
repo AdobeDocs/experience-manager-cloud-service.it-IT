@@ -35,7 +35,7 @@ I campi devono essere configurati in modo specifico se è necessaria una modific
 
 >[!TIP]
 >
->Per una guida alla personalizzazione delle proprietà di pagina, consulta il [tutorial Estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
+>Per una guida alla personalizzazione delle proprietà di pagina, consulta il [tutorial Estensione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=it).
 
 ## Configurazione delle proprietà della pagina {#configuring-your-page-properties}
 

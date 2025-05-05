@@ -29,7 +29,7 @@ La struttura di configurazione di Dispatcher presenta delle differenze tra Manag
 ## Come convertire una configurazione AMS in una configurazione AEM as a Cloud Service Dispatcher
 
 La sezione seguente fornisce istruzioni dettagliate su come convertire una configurazione AMS. Presuppone che
-di disporre di un archivio con una struttura simile a quella descritta in [Configurazione di Cloud Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+di disporre di un archivio con una struttura simile a quella descritta in [Configurazione di Cloud Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=it)
 
 ### Estrarre l’archivio e rimuovere un eventuale prefisso
 

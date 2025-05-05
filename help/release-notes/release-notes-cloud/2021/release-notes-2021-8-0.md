@@ -62,11 +62,11 @@ Dai un&#39;occhiata al video Panoramica sulla versione di [agosto 2021](https://
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* Il servizio di automated forms conversion può [convertire i PDF forms in lingua italiana e portoghese](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in Forms adattivo.
+* Il servizio di automated forms conversion può [convertire i PDF forms in lingua italiana e portoghese](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=it&#language-specific-meta-model) in Forms adattivo.
 
 * **Documento di record basato su Acroform**: AEM Forms as a Cloud Service supporta l’utilizzo di [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) come modello per documento record oltre al modello di modulo basato su XFA.
 
-* **Connettore per l&#39;archivio dati Microsoft® Azure**: è ora possibile [collegare il modello dati dei moduli al sistema di archiviazione Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Consente di recuperare e archiviare i dati dei moduli adattivi come BLOB nell’archiviazione di Microsoft® Azure.
+* **Connettore per l&#39;archivio dati Microsoft® Azure**: è ora possibile [collegare il modello dati dei moduli al sistema di archiviazione Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=it). Consente di recuperare e archiviare i dati dei moduli adattivi come BLOB nell’archiviazione di Microsoft® Azure.
 
 ### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms}
 

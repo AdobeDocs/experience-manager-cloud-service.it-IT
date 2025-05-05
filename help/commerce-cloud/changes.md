@@ -40,7 +40,7 @@ L’endpoint viene configurato e aggiornato tramite l’interfaccia utente di Cl
 
 ## Implementazione del progetto CIF Venia
 
-Progetto disponibile in [Archivio Git Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) e distribuzione eseguita tramite [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+Progetto disponibile in [Archivio Git Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=it) e distribuzione eseguita tramite [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 
 **Versioni CIF precedenti**
 

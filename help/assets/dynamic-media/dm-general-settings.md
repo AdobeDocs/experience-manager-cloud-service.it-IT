@@ -89,7 +89,7 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 
   Controlla la conservazione di qualsiasi definizione di ritaglio manuale esistente.
 
-  Vedi anche `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) e [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), entrambi nella Guida di riferimento per visualizzatori Dynamic Media.
+  Vedi anche `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) e [ReprocessAssetsJob](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), entrambi nella Guida di riferimento per visualizzatori Dynamic Media.
 
 ## Opzioni di caricamento predefinite {#default-upload-options}
 
@@ -106,7 +106,7 @@ L&#39;effetto Maschera di contrasto utilizza le stesse opzioni del filtro Masche
 | **[!UICONTROL Soglia]** | Obbligatorio.<br>Soglia è un intervallo di contrasto che viene ignorato quando si applica il filtro Maschera di contrasto. Questo effetto è importante in modo che non venga introdotto alcun &quot;disturbo&quot; in un&#39;immagine quando si utilizza questo filtro. L&#39;intervallo di valori è compreso tra `0` e `255`, ovvero il numero di passaggi di luminosità in un&#39;immagine in scala di grigio. `0`=nero, `128`=grigio 50% e `255`=bianco.<br>Un valore di soglia di `12` ignora le variazioni lievi della luminosità della tonalità della pelle per evitare di aggiungere rumore, ma aggiunge comunque contrasto ai bordi delle aree in cui le ciglia incontrano la pelle.<br>Se si dispone di una foto del volto di un utente, la Maschera definizione dettagli influisce sulle parti in contrasto dell&#39;immagine. Ad esempio, dove ciglia e pelle si incontrano per creare un’area di contrasto evidente e la pelle liscia stessa. Anche la pelle più liscia mostra lievi variazioni nei valori di luminosità. Se non utilizzi un valore di soglia, il filtro accentua queste sottili modifiche nei pixel della pelle. A sua volta, si crea un effetto rumoroso e indesiderato, mentre il contrasto sulle ciglia aumenta, aumentando la nitidezza.<br>Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel che non cambiano in modo significativo il contrasto, come lo skin uniforme.<br>Nell&#39;immagine della cerniera mostrata in precedenza, notare la trama accanto alle cerniere. Viene visualizzato disturbo dell&#39;immagine perché i valori di soglia erano troppo bassi per sopprimere il disturbo. |
 | **[!UICONTROL Monocromatico]** | Selezionate questa opzione per applicare una maschera di contrasto alla luminosità (intensità) dell&#39;immagine.<br>Deselezionate questa opzione per applicare una maschera di contrasto a ogni componente di colore separatamente. |
 
-Vedi anche [Immagini più nitide in Adobe Dynamic Media e sul server immagini](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en).
+Vedi anche [Immagini più nitide in Adobe Dynamic Media e sul server immagini](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=it).
 
 ### Scheda PostScript {#postscript-tab}
 

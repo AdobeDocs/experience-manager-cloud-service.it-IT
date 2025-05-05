@@ -20,7 +20,7 @@ Dopo aver firmato il contratto, Adobe Managed Services (AMS) avvia l’onboardin
 
 ## Aggiunta di utenti a Adobe Admin Console {#admin-console}
 
-Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi accedere a [Adobe Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni sull&#39;aggiunta di utenti all&#39;Admin Console, consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html).
+Dopo aver effettuato il provisioning con un ID organizzazione Adobe Identity Management System (IMS), ora puoi accedere a [Adobe Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni sull&#39;aggiunta di utenti all&#39;Admin Console, consulta [Utenti Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/users.ug.html).
 
 >[!NOTE]
 >Gli utenti hanno accesso al profilo di prodotto di AEM Cloud Service in modo che possano accedere all’AEM utilizzando l’Adobe ID o il Federated ID.

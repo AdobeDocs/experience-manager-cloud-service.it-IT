@@ -23,7 +23,7 @@ La data di pubblicazione dello strumento Content Transfer v1.7.18 è il 18 genna
 
 ### Novità {#what-is-new-ctt}
 
-* Attiva/disattiva aggiunta alla fase di estrazione nello strumento Content Transfer per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante l&#39;estrazione. Per velocità di estrazione ottimali, la pre-copia durante l’estrazione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima estrazione.
+* Attiva/disattiva aggiunta alla fase di estrazione nello strumento Content Transfer per consentire agli utenti di disabilitare [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it) durante l&#39;estrazione. Per velocità di estrazione ottimali, la pre-copia durante l’estrazione deve essere disabilitata per piccoli set di migrazione o se sono stati aggiunti solo pochi BLOB dall’ultima estrazione.
 
 ### Correzioni di bug {#bug-fixes-ctt}
 

@@ -22,7 +22,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componenti di base) | Questo articolo |
 | AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=it) |
 
 Sebbene ogni modulo sia progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio fornire dettagli personali like nome e indirizzo, familiari, dettagli sul reddito e così via. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo. L&#39;Forms adattivo offre un pratico meccanismo per creare un segmento del modulo like un pannello o un gruppo di campi una sola volta e riutilizzarli in Forms adattivi. Questi segmenti riutilizzabili e autonomi sono denominati Frammenti di modulo adattivi.
 

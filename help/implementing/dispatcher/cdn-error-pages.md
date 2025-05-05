@@ -93,6 +93,6 @@ In questo modo, attivi direttamente il gestore degli errori della rete CDN per t
 
 ### Tutorial
 
-Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
+Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
 
 

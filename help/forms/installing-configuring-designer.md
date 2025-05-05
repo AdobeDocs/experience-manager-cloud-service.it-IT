@@ -17,7 +17,7 @@ ht-degree: 7%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Questo articolo |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=it) |
 
 Designer è uno strumento di progettazione grafica semplice e intuitivo che semplifica la creazione di modelli di moduli XDP e PDF. È possibile progettare un modello di modulo, definirne la logica e soddisfare requisiti legislativi rigorosi. Un modulo XDP e PDF fungono da modello per un documento di record in un modulo adattivo. Questi modelli di moduli sono diversi dai [modelli di moduli adattivi](template-editor.md).
 

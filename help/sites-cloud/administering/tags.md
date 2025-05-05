@@ -36,7 +36,7 @@ I tag offrono funzioni affidabili per organizzare e gestire i contenuti.
    * Queste tassonomie sono globali in tutta l&#39;AEM.
 * I tag possono essere applicati dagli autori e utilizzati dai visitatori del sito.
 * Indipendentemente dall’autore, tutte le forme di tag sono disponibili per la selezione, sia durante l’assegnazione a una pagina che durante la ricerca.
-* I tag vengono utilizzati dal [componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) per generare elenchi dinamici in base ai tag selezionati.
+* I tag vengono utilizzati dal [componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it) per generare elenchi dinamici in base ai tag selezionati.
 
 ## Requisiti dei tag {#requirements}
 
