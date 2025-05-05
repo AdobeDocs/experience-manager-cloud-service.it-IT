@@ -42,7 +42,7 @@ La [console Componenti](/help/sites-cloud/authoring/components-console.md) offre
 
 ## Componenti core  {#core-components}
 
-I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core[ offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
+I [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
 Vengono creati utilizzando le best practice dell’AEM e sono alla base dell’esperienza di authoring dell’AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
 

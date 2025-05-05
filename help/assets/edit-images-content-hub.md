@@ -64,7 +64,7 @@ I diritti per accedere ad Adobe Express e [agli utenti Content Hub con diritti p
 
 >[!NOTE]
 >
-È possibile modificare le immagini dei tipi di file PNG e JPG/JPEG utilizzando [!DNL Adobe Express].
+>È possibile modificare le immagini dei tipi di file PNG e JPG/JPEG utilizzando [!DNL Adobe Express].
 
 ## Modificare le immagini utilizzando [!DNL Adobe Express] {#edit-images-using-content-hub}
 

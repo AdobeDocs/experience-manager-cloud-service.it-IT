@@ -243,6 +243,7 @@ Tuttavia, i set creati utilizzando predefiniti set di batch, non *not* vengono v
    * Per riordinare le risorse, trascina un’immagine in una nuova posizione (seleziona l’icona Riordina per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, fare clic sull&#39;intestazione della colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, fai clic su **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina.
+
      >[!NOTE]
      >
      >Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.

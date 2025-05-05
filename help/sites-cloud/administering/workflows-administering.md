@@ -33,17 +33,21 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 1. L’istanza **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. Ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e lo **Stato** dell’istanza di AEM:
 
    * **Stato: integro**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Stato: non integro**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Per i **Dettagli dello stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare il **numero di istanze di flussi di lavoro in esecuzione**, le **istanze di flusso di lavoro completate**, le **istanze di flusso di lavoro interrotte**, le **istanze di flusso di lavoro non riuscite** e così via. Ad esempio, di seguito sono riportate le immagini che mostrano i **Dettagli dello stato** con:
 
    * **Dettagli dello stato: integro**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Dettagli dello stato: non integro**
+
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -112,7 +116,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e &#x200B;** Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.

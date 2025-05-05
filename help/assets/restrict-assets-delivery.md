@@ -74,7 +74,7 @@ In Experience Manager Assets, la consegna limitata tramite IMS prevede due fasi 
 
 >[!NOTE]
 >
-Questa funzionalità non è attualmente self-service. Per limitare la consegna delle risorse per [Utenti](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Gruppi](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, rivolgiti al team di supporto Enterprise per informazioni su come recuperare le informazioni necessarie per limitare l&#39;accesso dal portale [Adobe Admin Console](https://adminconsole.adobe.com/) e su come configurare l&#39;accesso nel servizio di authoring di AEM as a Cloud Service.
+>Questa funzionalità non è attualmente self-service. Per limitare la consegna delle risorse per [Utenti](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Gruppi](https://helpx.adobe.com/in/enterprise/using/user-groups.html) IMS, rivolgiti al team di supporto Enterprise per informazioni su come recuperare le informazioni necessarie per limitare l&#39;accesso dal portale [Adobe Admin Console](https://adminconsole.adobe.com/) e su come configurare l&#39;accesso nel servizio di authoring di AEM as a Cloud Service.
 
 ### Limita la consegna delle risorse utilizzando data e ora di attivazione e disattivazione {#restrict-delivery-assets-date-time}
 
@@ -122,7 +122,7 @@ Nei servizi di authoring di AEM Cloud Service e in Selettore risorse, il token B
 
 >[!NOTE]
 >
-Per ulteriori informazioni su come abilitare l’autenticazione IMS sulle integrazioni basate su AEM Asset Selector, contatta il supporto Enterprise
+>Per ulteriori informazioni su come abilitare l’autenticazione IMS sulle integrazioni basate su AEM Asset Selector, contatta il supporto Enterprise
 
 1. Per esperienze non basate su Asset Selector, AEM as a Cloud Service e Dynamic Media con funzionalità OpenAPI supportano attualmente integrazioni API lato server e possono generare token IMS Bearer.
    * Segui le istruzioni [qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) per eseguire integrazioni API da servizio a server in grado di recuperare i token Bearer IMS tramite [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)

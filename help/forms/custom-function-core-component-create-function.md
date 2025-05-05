@@ -109,6 +109,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
          #base=js
        function.js
    ```
+
 1. Nella cartella `js`, aggiungi il file javascript come `function.js` che include le funzioni personalizzate:
 
    ```javascript
@@ -133,6 +134,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
     return age;
     }
    ```
+
 1. Salva i file.
 
 ![struttura cartella funzioni personalizzata](/help/forms/assets/custom-function-added-files.png)

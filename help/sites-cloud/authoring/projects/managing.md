@@ -138,7 +138,7 @@ Per rendere un progetto inattivo (o attivo):
 
    >[!NOTE]
    >
-   Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
+   >Potrebbe essere necessario aggiungere questo riquadro, se non è già presente nel progetto. Consulta [Aggiunta di riquadri](#adding-items-to-a-tile).
 
 1. Seleziona **Modifica**.
 1. Cambia il selettore da **Attivo** a **Inattivo** (o viceversa).

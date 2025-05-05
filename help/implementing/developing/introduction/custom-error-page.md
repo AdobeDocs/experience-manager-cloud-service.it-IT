@@ -25,7 +25,7 @@ Per rispondere agli errori, AEM fornisce uno script `404.jsp` in `/libs/sling/se
 
 >[!NOTE]
 >
->In un&#39;istanza di authoring, il filtro di debug ](/help/implementing/deploying/configuring-osgi.md) di CQ WCM è abilitato per impostazione predefinita. [ Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
+>In un&#39;istanza di authoring, il filtro di debug [&#128279;](/help/implementing/deploying/configuring-osgi.md) di CQ WCM è abilitato per impostazione predefinita.  Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
 >
 >In un&#39;istanza di pubblicazione, il filtro di debug CQ WCM è **sempre** disabilitato (anche se configurato come abilitato).
 
@@ -64,7 +64,7 @@ Quando l’elaborazione delle richieste genera un’eccezione, il framework Slin
    * Il codice di risposta HTTP 500
    * Traccia dello stack di eccezioni
 
-È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori](#how-to-customize-pages-shown-by-the-error-handler). [ Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
+È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori[&#128279;](#how-to-customize-pages-shown-by-the-error-handler).  Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
 
 In caso contrario, il codice di risposta è impostato su 500, ma lo script `500.jsp` non viene eseguito.
 
@@ -77,7 +77,7 @@ Per gestire gli errori 500, il nome file dello script del gestore degli errori d
 
 >[!CAUTION]
 >
->In un&#39;istanza di authoring, il filtro di debug ](/help/implementing/deploying/configuring-osgi.md) di CQ WCM è abilitato per impostazione predefinita. [ Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
+>In un&#39;istanza di authoring, il filtro di debug [&#128279;](/help/implementing/deploying/configuring-osgi.md) di CQ WCM è abilitato per impostazione predefinita.  Questo determina sempre il codice di risposta 200. Il gestore degli errori predefinito risponde scrivendo la traccia full stack nella risposta.
 >
 >Per un gestore degli errori personalizzato, sono necessarie risposte con codice 500, pertanto il filtro di debug WCM [CQ deve essere disabilitato](/help/implementing/deploying/configuring-osgi.md). In questo modo viene restituito il codice di risposta 500, che a sua volta attiva il gestore di errori Sling corretto.
 >

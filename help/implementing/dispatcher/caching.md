@@ -26,8 +26,8 @@ Queste intestazioni di cache sono in genere impostate in configurazioni vhost di
 
 La chiave cache per le risorse CDN contiene l’URL completo della richiesta, inclusi i parametri di query, in modo che ogni parametro di query diverso generi una voce cache diversa. Prendi in considerazione la rimozione di parametri di query indesiderati; [vedi di seguito](#marketing-parameters) per migliorare il rapporto di hit della cache.
 
-Le risposte di origine che contengono `private`, `no-cache` o `no-store` in `Cache-Control` non sono memorizzate nella cache dal CDN di AEM as a Cloud Service (vedere [Come disabilitare la memorizzazione nella cache del CDN
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) per ulteriori dettagli).  Inoltre, le risposte che impostano i cookie, ad esempio con un&#39;intestazione di risposta `Set-Cookie`, non vengono memorizzate nella cache dalla rete CDN.
+Le risposte di origine che contengono `private`, `no-cache` o `no-store` in `Cache-Control` non sono memorizzate nella cache dal CDN di AEM as a Cloud Service (vedere [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)Come disabilitare la memorizzazione nella cache del CDN
+ per ulteriori dettagli).  Inoltre, le risposte che impostano i cookie, ad esempio con un&#39;intestazione di risposta `Set-Cookie`, non vengono memorizzate nella cache dalla rete CDN.
 
 ### HTML/Text {#html-text}
 

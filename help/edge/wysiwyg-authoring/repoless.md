@@ -94,6 +94,7 @@ Devi creare una configurazione del sito e aggiungerla alla mappatura del percors
        }
    }'
    ```
+
 1. Verifica che la configurazione pubblica sia stata impostata e sia disponibile con un comando cURL simile al seguente.
 
    ```text

@@ -556,7 +556,7 @@ Una volta completata e completata l&#39;installazione, l&#39;elenco dei pacchett
 
 ### Reinstallazione dei pacchetti {#reinstalling-packages}
 
-La reinstallazione dei pacchetti esegue gli stessi passaggi in un pacchetto già installato elaborato durante l&#39;installazione iniziale del pacchetto [](#installing-packages).
+La reinstallazione dei pacchetti esegue gli stessi passaggi in un pacchetto già installato elaborato durante l&#39;installazione iniziale del pacchetto [&#128279;](#installing-packages).
 
 ### Caricamento e installazione basati su file system {#file-system-based-upload-and-installation}
 

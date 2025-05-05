@@ -77,6 +77,7 @@ Il supporto per le risorse remote che utilizzano Dynamic Media con funzionalità
 * Configura le [variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) seguenti per AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` fa riferimento all&#39;ID programma <br>
      `eYYYY` fa riferimento all&#39;ID ambiente
 
@@ -161,7 +162,7 @@ Per utilizzare le risorse remote all’interno del frammento di contenuto di AEM
 
    >[!NOTE]
    >
-   Se non disponi di un modello per frammenti di contenuto di AEM, potresti dover [crearne uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Se non disponi di un modello per frammenti di contenuto di AEM, potresti dover [crearne uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Fai clic sull&#39;icona ![segno di spunta](/help/assets/assets/do-not-localize/checkmark-icon.svg) accanto al componente testo.
 1. Seleziona **[!UICONTROL Remoto]** per recuperare la risorsa dal DAM remoto. <br>

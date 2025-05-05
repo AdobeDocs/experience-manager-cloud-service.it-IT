@@ -91,7 +91,7 @@ Le autorizzazioni sono suddivise nelle seguenti categorie.
 
 >[!NOTE]
 >
-Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
+>Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
 
 ### Scheda Replica {#replication-tab}
 
@@ -192,9 +192,9 @@ Ora puoi adattare il nodo alle tue esigenze modificando le proprietà o creando 
 
 >[!NOTE]
 >
-La maggior parte delle operazioni di modifica, incluso **Crea nodo**, mantiene tutte le modifiche in memoria e le archivia nell&#39;archivio solo al momento del salvataggio (utilizzando il [**pulsante Salva tutto**](#save-all-button)). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
+>La maggior parte delle operazioni di modifica, incluso **Crea nodo**, mantiene tutte le modifiche in memoria e le archivia nell&#39;archivio solo al momento del salvataggio (utilizzando il [**pulsante Salva tutto**](#save-all-button)). Tuttavia, alcune operazioni, come lo spostamento, vengono mantenute automaticamente.
 >
-La convalida relativa all’autorizzazione o meno del nodo creato dal tipo di nodo del nodo principale viene eseguita anche dall’archivio durante il salvataggio delle modifiche. Se durante il salvataggio di un nodo viene visualizzato un messaggio di errore, verificare che la struttura del contenuto sia valida (ad esempio, non è possibile creare un nodo `nt:unstructured` come nodo figlio di `nt:folder`).
+>La convalida relativa all’autorizzazione o meno del nodo creato dal tipo di nodo del nodo principale viene eseguita anche dall’archivio durante il salvataggio delle modifiche. Se durante il salvataggio di un nodo viene visualizzato un messaggio di errore, verificare che la struttura del contenuto sia valida (ad esempio, non è possibile creare un nodo `nt:unstructured` come nodo figlio di `nt:folder`).
 
 ## Creazione di una proprietà {#creating-a-property}
 

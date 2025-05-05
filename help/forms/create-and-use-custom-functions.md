@@ -168,6 +168,7 @@ Puoi creare una funzione personalizzata con o senza commenti jsdoc.
             // code to be executed
         }
 ```
+
 Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, questa viene elencata nell’editor di regole in base al nome della funzione. Tuttavia, si consiglia di includere annotazioni JavaScript per migliorare la leggibilità delle funzioni personalizzate.
 
 ### Funzione freccia con annotazioni o commenti JavaScript obbligatori

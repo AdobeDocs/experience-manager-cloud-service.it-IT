@@ -67,6 +67,6 @@ Il selettore delle risorse Microsoft-Frontend di Adobe fornisce un&#39;interfacc
 
 >[!MORELIKETHIS]
 >
-* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
-* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
-* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)
+>* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
+>* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+>* [Personalizzazione del selettore risorse](/help/assets/asset-selector-customization.md)

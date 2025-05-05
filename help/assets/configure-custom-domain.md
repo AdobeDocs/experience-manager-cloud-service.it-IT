@@ -79,4 +79,4 @@ L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritar
 
 >[!NOTE]
 >
-Aggiungi il dominio personalizzato all’elenco degli URL di reindirizzamento consentiti. L’elenco si trova nel client IMS per il selettore risorse.<br>Coordinati con il rispettivo team Adobe per eseguire questa attività fornendo la stringa di dominio personalizzata.
+>Aggiungi il dominio personalizzato all’elenco degli URL di reindirizzamento consentiti. L’elenco si trova nel client IMS per il selettore risorse.<br>Coordinati con il rispettivo team Adobe per eseguire questa attività fornendo la stringa di dominio personalizzata.

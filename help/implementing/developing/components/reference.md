@@ -301,7 +301,7 @@ Le proprietà definite dipendono dalle singole definizioni. Anche se possono ess
 
 ## Gerarchia dei componenti ed ereditarietà {#component-hierarchy-and-inheritance}
 
-I componenti in AEM sono soggetti alla gerarchia dei tipi di risorsa ****. Utilizzato per estendere i componenti utilizzando la proprietà `sling:resourceSuperType`. Questo consente al componente di ereditare da un altro componente.
+I componenti in AEM sono soggetti alla gerarchia dei tipi di risorsa **&#x200B;**. Utilizzato per estendere i componenti utilizzando la proprietà `sling:resourceSuperType`. Questo consente al componente di ereditare da un altro componente.
 
 Per ulteriori informazioni, vedere la sezione [Riutilizzo dei componenti](#reusing-components).
 

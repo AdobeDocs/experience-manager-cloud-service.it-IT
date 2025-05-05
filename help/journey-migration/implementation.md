@@ -160,7 +160,7 @@ La raccolta dei dati può essere utile per pianificare le attività di migrazion
 * Tempo totale impiegato per [estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * Tempo totale impiegato per [l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 * Tempo totale impiegato per [estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) integrativa
-* Tempo totale impiegato per l&#39;acquisizione integrativa di [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+* Tempo totale impiegato per l&#39;acquisizione integrativa di [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
 <!-- Alexandru: hiding this for now

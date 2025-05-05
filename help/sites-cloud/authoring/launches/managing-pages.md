@@ -28,6 +28,7 @@ Puoi navigare nella struttura del lancio da:
 * Editor pagina:
 
    * Seleziona **Naviga** per aprire la struttura del lancio nella console:
+
      ![Navigare nel lancio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

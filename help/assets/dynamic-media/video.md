@@ -60,6 +60,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
+
         [Anteprima video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md)
         [Gestione rappresentazioni video](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Utilizzare i metadati video
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
+
         [Modifica proprietà video](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestire i metadati per le risorse digitali](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Se utilizzi un sistema WCM di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
+
         [Collega URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
+
         [Incorpora il visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
    * [Genera report video](#viewing-video-reports).

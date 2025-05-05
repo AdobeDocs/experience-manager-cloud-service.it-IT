@@ -102,7 +102,7 @@ Per abilitare Dynamic Media con funzionalità OpenAPI su AEM as a Cloud Service,
 
   >[!NOTE]
   >
-  Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per fornire l’elenco consentiti in cui è ospitata l’applicazione.
+  >Per l’integrazione con un’applicazione non Adobe, fornisci i nomi di dominio per fornire l’elenco consentiti in cui è ospitata l’applicazione.
 
 * Dettagli dei contatti chiave della clientela coinvolta nel progetto di integrazione.
 
@@ -112,7 +112,7 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
 
 >[!NOTE]
 >
-Escludi `/conf/global/settings/dam/assets-configurations/assetdelivery` da qualsiasi pacchetto di contenuti, per evitare la disattivazione di Dynamic Media con funzionalità OpenAPI.
+>Escludi `/conf/global/settings/dam/assets-configurations/assetdelivery` da qualsiasi pacchetto di contenuti, per evitare la disattivazione di Dynamic Media con funzionalità OpenAPI.
 
 ## Approfondire le funzionalità chiave {#learn-more-key-capabilities}
 

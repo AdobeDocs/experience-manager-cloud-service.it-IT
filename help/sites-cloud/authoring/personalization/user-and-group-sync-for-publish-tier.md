@@ -92,7 +92,7 @@ L’interfaccia`com.adobe.granite.auth.oauth.provider` può essere integrata con
 
 **Prerequisito:**
 
-Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;idP, abilitare la [sincronizzazione dati](#data-synchronization-data-synchronization) inviando una richiesta all&#39;Assistenza clienti indicando il programma e gli ambienti appropriati. Oltre alla [sincronizzazione dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML verificare che sia abilitata l&#39;appartenenza al gruppo dinamico [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0).
+Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;idP, abilitare la [sincronizzazione dati](#data-synchronization-data-synchronization) inviando una richiesta all&#39;Assistenza clienti indicando il programma e gli ambienti appropriati. Oltre alla [sincronizzazione dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML verificare che sia abilitata l&#39;appartenenza al gruppo dinamico [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0).
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 

@@ -55,8 +55,10 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
 
 1. Configura Cloud Service:
    1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]** e fai clic su **[!UICONTROL Turnstile]**.
+
       ![Turnstile nell&#39;interfaccia utente](assets/turnstile-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
+
       ![Turnstile di configurazione](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Tipo widget]** come gestito, non interattivo o invisibile. Per ulteriori informazioni sul tipo di widget, visita [Widget tornstile](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Specificare **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio tornello [ottenuto nel prerequisito](#prerequisite).

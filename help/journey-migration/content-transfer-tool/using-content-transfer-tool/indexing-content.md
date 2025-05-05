@@ -56,7 +56,7 @@ L’indicizzazione dell’istanza del Cloud Service di destinazione avrà molto 
 
 >[!TIP]
 >
-> Se il processo di indicizzazione sembra essere in esecuzione troppo a lungo, verificare che non sia stato applicato un Elenco Consentiti IP [](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager poiché impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione.
+> Se il processo di indicizzazione sembra essere in esecuzione troppo a lungo, verificare che non sia stato applicato un Elenco Consentiti IP [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager poiché impedisce a Cloud Acceleration Manager di raggiungere il servizio di migrazione.
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

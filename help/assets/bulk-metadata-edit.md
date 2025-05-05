@@ -1,6 +1,6 @@
 ---
 title: Modifica in blocco dei metadati in [!DNL Assets View]
-description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [DNL! Assets View] simultaneamente.
+description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [!DNL ! Assets View] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
@@ -65,6 +65,7 @@ Per modificare in blocco i metadati di più risorse contemporaneamente, esegui i
    * **[!UICONTROL Parole chiave]:** Aggiungi termini o stringhe di testo specifici che forniscano informazioni di alto livello sulle risorse per migliorarne la reperibilità. Aggiungi una parola chiave e premi **Invio** o **Ritorno** per aggiungere un&#39;altra parola chiave all&#39;elenco.
    * **[!UICONTROL Tag]:** Fai clic su ![Modifica metadati in blocco](/help/assets/assets/tags-icon.svg) per selezionare i tag dalle opzioni disponibili. I tag forniscono informazioni più specifiche sulle risorse e ne migliorano la reperibilità. I tag già applicati alle risorse selezionate vengono visualizzati nel pannello **[!UICONTROL Proprietà]**. Se non riesci a trovare i tag rilevanti, creali e assegnali alle risorse selezionate. Consulta [Gestire i tag in [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) per informazioni dettagliate sulla creazione e l&#39;assegnazione di tag alle risorse.
    * Fai clic su **[!UICONTROL Salva]** per applicare gli aggiornamenti dei metadati di cui sopra alle risorse selezionate. Una volta salvati, le **[!UICONTROL Parole chiave]** e i **[!UICONTROL Tag]** vengono aggiunti mentre i dettagli aggiornati per **[!UICONTROL Stato]**, **[!UICONTROL Data di scadenza]** e **[!UICONTROL Autore]** sostituiscono i dettagli esistenti.
+
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

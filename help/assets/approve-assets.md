@@ -68,7 +68,7 @@ Devi avere accesso ad AEM Assets as a Cloud Service e alle autorizzazioni per mo
 Prima di approvare una risorsa, devi effettuare un aggiornamento una tantum dello schema di metadati applicabile nella visualizzazione Amministratore. Puoi saltare questa configurazione per la vista Assets. Per configurare lo schema metadati, effettua le seguenti operazioni:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**.
-1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2} con la scheda**[!UICONTROL  Base ]**evidenziata.]**
+1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2&rbrace; con la scheda**&#x200B;[!UICONTROL &#x200B; Base &#x200B;]&#x200B;**evidenziata.]**
 1. Scorri verso il basso e fai clic su **[!UICONTROL Verifica stato]**.
 1. Fai clic sulla scheda **[!UICONTROL Regole]** nel pannello laterale destro.
 1. Deseleziona **[!UICONTROL Disabilita modifica]**.
@@ -81,13 +81,13 @@ Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato
 
    >[!NOTE]
    >
-   Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
+   >Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
 >[!NOTE]
 >
-Se le risorse o le cartelle hanno uno schema predefinito diverso, assicurati di effettuare questo aggiornamento in quello specifico schema.
+>Se le risorse o le cartelle hanno uno schema predefinito diverso, assicurati di effettuare questo aggiornamento in quello specifico schema.
 
 ## Approvare risorse {#approve-assets}
 
@@ -112,7 +112,7 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.
@@ -127,7 +127,7 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 
    >[!NOTE]
    >
-   Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
+   >Quando selezioni la destinazione di approvazione come Content Hub utilizzando la vista Assets, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione. Quando selezioni un target di approvazione come Consegna, le risorse sono disponibili per tutti gli utenti.
 1. Fai clic su **[!UICONTROL Salva]**.
 1. Nella pagina **[!UICONTROL Profili metadati]**, seleziona il profilo metadati appena creato.
 1. Fai clic su **[!UICONTROL Applica profilo metadati a cartelle]** nella barra delle azioni superiore.
@@ -138,7 +138,7 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 
 >[!NOTE]
 > 
-Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente. <br> In alternativa, è possibile utilizzare l&#39;opzione **[!UICONTROL Rielabora]** per applicare le modifiche dal profilo metadati alle risorse precedenti.
+>Questo approccio approva le nuove risorse create nella cartella. Per le risorse esistenti nella cartella, devi selezionarle e approvarle manualmente. <br> In alternativa, è possibile utilizzare l&#39;opzione **[!UICONTROL Rielabora]** per applicare le modifiche dal profilo metadati alle risorse precedenti.
 
 Allo stesso modo, per approvare in blocco le risorse all’interno di una cartella nella vista Assets:
 
@@ -157,7 +157,7 @@ Allo stesso modo, per approvare in blocco le risorse all’interno di una cartel
 
    >[!NOTE]
    >
-   Se selezioni la destinazione di approvazione come `Content Hub` utilizzando la vista Assets all&#39;interno di un&#39;organizzazione, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione.
+   >Se selezioni la destinazione di approvazione come `Content Hub` utilizzando la vista Assets all&#39;interno di un&#39;organizzazione, le risorse vengono rese disponibili in Content Hub agli utenti che fanno parte della stessa organizzazione.
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
@@ -178,6 +178,6 @@ Per copiare l’URL di consegna di una risorsa approvata all’interno dell’ar
 
    >[!NOTE]
    >
-   L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
+   >L’opzione per copiare l’URL di consegna per le risorse approvate è disponibile nella vista Assets.
 
 Per informazioni sulle altre rappresentazioni visualizzate nel pannello Dynamic Media, consulta [Visualizzare e scaricare le rappresentazioni Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

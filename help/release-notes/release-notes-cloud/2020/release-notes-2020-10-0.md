@@ -32,7 +32,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* Applicazione di tag avanzati video **basata su**[!DNL Adobe Sensei]: applicando modelli AI per analizzare contenuti video per tag specifici per oggetti e azioni, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo all&#39;utilizzo di informazioni avanzate esposte. A tua volta, puoi offrire ai clienti l’esperienza giusta. Consulta [Risorse per video con tag avanzati](/help/assets/smart-tags-video-assets.md).
+* Applicazione di tag avanzati video **basata su**&#x200B;[!DNL Adobe Sensei]: applicando modelli AI per analizzare contenuti video per tag specifici per oggetti e azioni, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo all&#39;utilizzo di informazioni avanzate esposte. A tua volta, puoi offrire ai clienti l’esperienza giusta. Consulta [Risorse per video con tag avanzati](/help/assets/smart-tags-video-assets.md).
 
 * **Miglioramenti di Brand Portal**: le seguenti nuove funzionalità e altro ancora sono disponibili in [!DNL Brand Portal]. Per informazioni dettagliate, consulta [[!DNL Brand Portal] note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 

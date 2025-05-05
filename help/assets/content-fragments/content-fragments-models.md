@@ -87,9 +87,9 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
         >[!CAUTION]
         >
-        Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
+        >Quando aggiorni manualmente la proprietà **Nome proprietà** per un tipo di dati, tieni presente che i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura “_”.
         >
-        Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
      Esempio:
 
@@ -121,9 +121,9 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
+  >Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
   >
-  Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
+  >Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
 
 * **Numero**
    * Aggiungere un campo numerico
@@ -167,7 +167,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
      >[!NOTE]
      >
-     Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -179,7 +179,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
   >[!CAUTION]
   >
-  Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+  >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come** 
 Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questa proprietà ti consente di definire se l’autore vede una singola istanza del campo o se può creare più istanze. Quando si utilizza **Campo multiplo** è possibile definire il numero minimo e massimo di elementi. Per ulteriori dettagli, vedere [Convalida](#validation).
@@ -209,15 +209,15 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!NOTE]
   >
-  L’unicità è assicurata da directory principale lingua.
+  >L’unicità è assicurata da directory principale lingua.
 
   >[!NOTE]
   >
-  Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+  >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
   >[!CAUTION]
   >
-  Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), tutti i vincoli **Unique** devono essere rimossi da qualsiasi tipo di dati utilizzato nei rispettivi modelli per frammenti di contenuto.
+  >Se desideri utilizzare MSM (che crea copie dei frammenti di contenuto), tutti i vincoli **Unique** devono essere rimossi da qualsiasi tipo di dati utilizzato nei rispettivi modelli per frammenti di contenuto.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -270,18 +270,18 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 
      >[!NOTE]
      >
-     Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
-AEM ha una protezione periodica per:
+>AEM ha una protezione periodica per:
 >
-* Riferimenti contenuto
-Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>* Riferimenti contenuto
+>Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
-* Riferimenti frammento in GraphQL
-Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituirà null.
+>* Riferimenti frammento in GraphQL
+>Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 
@@ -323,7 +323,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-Ciò è di particolare interesse in combinazione con [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>Ciò è di particolare interesse in combinazione con [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Oltre alle proprietà standard puoi definire:
 
@@ -350,9 +350,9 @@ Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
 
 >[!NOTE]
 >
-È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
-In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto con riferimento l’uno all’altro, verrà restituito null.
+>In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto con riferimento l’uno all’altro, verrà restituito null.
 
 ## Modello per frammenti di contenuto - Proprietà {#content-fragment-model-properties}
 
@@ -367,7 +367,7 @@ Puoi modificare le **Proprietà** di un modello per frammenti di contenuto:
 
      >[!NOTE]
      >
-     Utilizzato solo dall&#39;*new* Editor frammento di contenuto. Per ulteriori informazioni, vedere [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties).
+     >Utilizzato solo dall&#39;*new* Editor frammento di contenuto. Per ulteriori informazioni, vedere [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties).
 
 
 ## Abilitazione o disabilitazione di un modello per frammenti di contenuto {#enabling-disabling-a-content-fragment-model}
@@ -417,7 +417,7 @@ Per implementare la governance dei contenuti, puoi configurare dei **Criteri** n
 
 >[!NOTE]
 >
-Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
+>Il meccanismo è simile a [consentire modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) per una pagina e i relativi elementi secondari, nelle proprietà avanzate di una pagina.
 
 Per configurare i **Criteri** dei **Modelli per frammenti di contenuto consentiti**:
 
@@ -452,7 +452,7 @@ I modelli per frammenti di contenuto consentiti per una cartella vengono risolti
 
 >[!CAUTION]
 >
-L’eliminazione di un modello per frammenti di contenuto può avere un impatto sui frammenti dipendenti.
+>L’eliminazione di un modello per frammenti di contenuto può avere un impatto sui frammenti dipendenti.
 
 Per eliminare un modello per frammenti di contenuto:
 
@@ -463,7 +463,7 @@ Per eliminare un modello per frammenti di contenuto:
 
    >[!NOTE]
    >
-   Se ci sono riferimenti al modello, viene visualizzata un’avvertenza. Agisci di conseguenza.
+   >Se ci sono riferimenti al modello, viene visualizzata un’avvertenza. Agisci di conseguenza.
 
 ## Pubblicazione di un modello per frammenti di contenuto {#publishing-a-content-fragment-model}
 
@@ -479,7 +479,7 @@ Lo stato di pubblicazione viene indicato nella console.
 
    >[!NOTE]
    >
-   Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo viene segnalato in un elenco di selezione e il modello viene pubblicato con il frammento.
+   >Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo viene segnalato in un elenco di selezione e il modello viene pubblicato con il frammento.
 
 ## Annullamento della pubblicazione di un modello per frammenti di contenuto {#unpublishing-a-content-fragment-model}
 
@@ -567,6 +567,6 @@ Puoi gestire i modelli **Bloccati** dalla console o dall’editor modelli:
 
      >[!NOTE]
      >
-     Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
+     >Potrebbe ancora essere presente un avviso nella parte superiore, ma si verifica quando il modello è già utilizzato da frammenti di contenuto esistenti.
 
    * **Annulla** ti riporterà alla console.

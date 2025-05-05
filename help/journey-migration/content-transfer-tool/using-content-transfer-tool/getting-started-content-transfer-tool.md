@@ -101,7 +101,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere i seguenti caratteri: `. / : [ ] | * &lt; > ^ ? { } % # &quot;né simboli o emoticon insoliti.
+   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere i seguenti caratteri: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;né simboli o emoticon insoliti.
 
 1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Selezionare il simbolo dei tre punti (**...**) per aprire il menu a discesa e selezionare **Copia chiave di estrazione**. Questa chiave è necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
@@ -148,6 +148,7 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa
       >A partire dalla versione CTT (3.0.24), sono state incluse nuove funzioni nello strumento Content Transfer (Trasferimento contenuti), che migliorano il processo di inclusione e esclusione dei percorsi. In precedenza, i percorsi dovevano essere selezionati singolarmente, operazione noiosa e dispendiosa in termini di tempo. Ora gli utenti possono includere percorsi direttamente dall’interfaccia utente o caricare un file CSV in base alle loro preferenze.
 
    1. **Percorsi da includere**: utilizzare il browser percorsi per selezionare i percorsi da migrare. Il selettore di percorsi accetta l’input digitando o selezionando. Gli utenti possono selezionare una sola opzione per l’inclusione dei percorsi: dall’interfaccia utente o caricando un file CSV.
+
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
       >* `/apps`

@@ -278,6 +278,7 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Meno]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Detrazione aggiuntiva]** nell’altro campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
+
      ![Editor di regole, esempio 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
@@ -295,6 +296,7 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Moltiplicato per]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona **Numero** dal campo **[!UICONTROL Seleziona opzione]** e immetti il valore `10` nel campo **[!UICONTROL Immetti un numero]**.
+
      ![Editor di regole, esempio 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
    ![Editor di regole, esempio 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -360,6 +362,7 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
+
 ![Aggiunta di una funzione personalizzata](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Utilizzare una funzione personalizzata nell’editor di regole

@@ -85,7 +85,7 @@ L&#39;esercitazione [WKND](develop-wknd-tutorial.md) utilizza questa strategia p
 
 ### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
 
-[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e l&#39;archetipo del progetto AEM [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [componente core Pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), che include clientlibs tramite i criteri di pagina.
+[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e l&#39;archetipo del progetto AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [componente core Pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), che include clientlibs tramite i criteri di pagina.
 
 Se il tuo componente pagina non è basato sul componente core pagina, puoi anche includere la cartella della libreria client nello script HTL o JSP. In questo modo si genera e si fa riferimento al file CSS con le query multimediali necessarie per il funzionamento della griglia reattiva.
 
@@ -205,4 +205,5 @@ container
   </div>
 </div>
 ```
+
 >[!ENDTABS]

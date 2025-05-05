@@ -239,7 +239,7 @@ Per impostazione predefinita, le porte utilizzate per l’invio delle e-mail son
 
 ### Invio di e-mail {#sending-emails}
 
-Utilizzare il servizio OSGI ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) del servizio di posta CQ di [ Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
+Utilizzare il servizio OSGI [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) del servizio di posta CQ di  Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
 
 ### Configurazione {#email-configuration}
 

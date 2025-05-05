@@ -215,6 +215,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * È possibile selezionare le intestazioni di colonna per modificare l&#39;ordinamento.
+
      ![La nuova cartella](../assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}

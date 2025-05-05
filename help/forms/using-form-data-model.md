@@ -172,7 +172,7 @@ Ad esempio, la regola seguente richiama un servizio get che utilizza come input 
 1. Aggiungi **[!UICONTROL Modello dati modulo pattern]** per specificare il percorso del modello dati modulo (FDM). Per impostazione predefinita, il valore è `/content/dams/formsanddocuments-fdm/(.*)`, che include tutto il modello dati del modulo (FDM). È inoltre possibile specificare il percorso per un modello di dati modulo (FDM) specifico.
 1. Salva le impostazioni.
 
-La configurazione aggiunta viene salvata nell&#39;inserimento nella whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory ]**.**[!UICONTROL 
+La configurazione aggiunta viene salvata nell&#39;inserimento nella whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory **.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
 

@@ -54,6 +54,7 @@ Per utilizzare la funzionalità di caricamento di gruppo in blocco di Admin Cons
       * _Nome gruppo utenti_ - Il nome del gruppo è obbligatorio e può contenere un massimo di 255 caratteri.  Questo nome di gruppo deve essere lo stesso in IMS e AEM
       * _Descrizione_ - Questo campo è facoltativo e può contenere un massimo di 255 caratteri
       * _Amministratori gruppo utenti_ - In questo campo deve essere incluso almeno un amministratore gruppo. È possibile assegnare più amministratori separando ogni amministratore con una virgola e racchiudendo l’elenco tra virgolette. La voce per ogni amministratore deve includere il tipo di identità dell’utente, seguito da un trattino e quindi dall’indirizzo e-mail.  Ad esempio
+
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Non includere uno spazio dopo la virgola che separa gli amministratori. Non puoi includere in Admin Console utenti (come amministratori) che al momento non fanno parte dell’organizzazione
       * _Profili di prodotto assegnati_ - Questo campo è facoltativo. Puoi assegnare più profili di prodotto separando ciascun profilo con una virgola e racchiudendo l’elenco tra virgolette. Tuttavia, i profili di prodotto che includi devono già essere impostati per l’organizzazione. Assicurati di specificare il nome del profilo di prodotto e non il nome del prodotto.  L’appartenenza ai profili di prodotto assegnati a un gruppo viene ereditata da tutti gli utenti inseriti in tale gruppo.  Per trovare un profilo di prodotto:
 

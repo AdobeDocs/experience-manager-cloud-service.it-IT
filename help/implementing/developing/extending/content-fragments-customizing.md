@@ -63,6 +63,7 @@ I frammenti di contenuto, basati su un modello per frammenti di contenuto, sono 
 * Tutto il contenuto è archiviato nel nodo `jcr:content/data` della risorsa:
 
    * I dati dell’elemento vengono memorizzati nel sottonodo principale:
+
      `jcr:content/data/master`
 
    * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante:
