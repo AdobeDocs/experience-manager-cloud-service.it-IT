@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3456082?quality=12&captions=ita)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

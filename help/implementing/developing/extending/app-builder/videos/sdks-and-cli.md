@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Scopri Adobe I/O SDK e come viene utilizzato per sviluppare applicazioni App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339166/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343413/?quality=12&learn=on&captions=ita)
 
 ## CLI
 
 Scopri Adobe I/O CLI e come utilizzarlo per lo sviluppo App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343408/?quality=12&learn=on&captions=ita)

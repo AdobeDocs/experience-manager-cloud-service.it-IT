@@ -32,7 +32,7 @@ Non preoccuparti se non conosci tutti i termini utilizzati in questa pagina. I t
 
 Questo video riassume il processo di onboarding descritto nel percorso ed è concepito come panoramica delle opzioni. Tutti gli argomenti del video sono presentati in dettaglio all’interno del percorso.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431506/?quality=12&learn=on&captions=ita)
 
 ## Contratto {#contract}
 

@@ -30,7 +30,7 @@ Questa serie di video analizza diversi casi d’uso relativi all’integrazione 
 
 La serie di video presume una conoscenza di base di Git e della gestione del controllo del codice sorgente. Per ulteriori informazioni su Git, consulta la sezione [Risorse aggiuntive in basso](#additional-resources).
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/37354?captions=ita)
 
 I passaggi e le convenzioni di denominazione descritti in questa serie di video rappresentano alcune best practice per l’utilizzo di un archivio Git gestito dal cliente in Cloud Manager. Le convenzioni e i flussi di lavoro descritti devono essere adattati ai casi d’uso individuali.
 
@@ -38,31 +38,31 @@ I passaggi e le convenzioni di denominazione descritti in questa serie di video 
 
 In questo video scoprirai i primi passaggi per sincronizzare un archivio Git gestito dal cliente con l’archivio Git di Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37352/?quality=12&captions=ita)
 
 ## Strategia di diramazione di base {#branching-strategy}
 
 In questo video scoprirai le strategie di base per la ramificazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37351/?quality=12&captions=ita)
 
 ## Sviluppo di rami di funzioni {#feature-development}
 
 Usa un ramo della funzione per isolare le modifiche apportate al codice in un archivio Git gestito dal cliente e sincronizzale con l’archivio Git di Cloud Manager, per utilizzare una pipeline di non produzione a scopi di test di qualità del codice e di convalida.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37349/?quality=12&captions=ita)
 
 ## Distribuzione di produzione {#production-deployment}
 
 Prepara il codice per una versione di produzione in un archivio Git gestito dal cliente e sincronizzalo con l’archivio Git di Cloud Manager, per la distribuzione negli ambienti di staging e di produzione.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37348/?quality=12&captions=ita)
 
 ## Sincronizzare i tag della versione {#sync-tags}
 
 Sincronizza i tag della versione da un archivio Git di Cloud Manager in un archivio Git gestito dal cliente, per fornire visibilità sul codice distribuito negli ambienti di staging e di produzione.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/37346/?quality=12&captions=ita)
 
 ## Risorse aggiuntive {#additional-resources}
 

@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Scopri l’architettura basata su eventi, gli eventi Adobe I/O e gli eventi personalizzati.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343686/?quality=12&learn=on&captions=ita)
 
 ## Creazione di applicazioni App Builder basate su eventi
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343693/?quality=12&learn=on&captions=ita)
 
 Scopri come creare una pubblicazione che possa utilizzare gli eventi in un’applicazione App Builder.
