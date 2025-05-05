@@ -5,22 +5,26 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 51%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
-[Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica significativa dei frammenti di contenuto nell&#39;as a Cloud Service Adobe Experience Manager (AEM). Questo perché ti consente di creare e modificare copie del contenuto **Master** da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
+[Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service. Questo perché ti consente di creare e modificare copie del contenuto **Master** da utilizzare su canali e scenari specifici. In particolare, questo rende la distribuzione di contenuti headless ancora più flessibile.
 
 >[!NOTE]
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Esistono due editor per l’authoring dei frammenti di contenuto: il nuovo editor e l’editor originale. Il nuovo editor è quello predefinito. Anche se la funzionalità di base è la stessa, ci sono alcune differenze.
+>
+>Questa sezione descrive l’editor originale. [aperto tramite il nuovo editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Per informazioni complete sul nuovo editor, consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Dalla scheda **Varianti** puoi effettuare le seguenti operazioni:
 
@@ -43,11 +47,11 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 
 >[!CAUTION]
 >
->Dopo la pubblicazione e/o il riferimento a un frammento, l’AEM visualizza un avviso quando un autore riapre il frammento per la modifica. Questo messaggio notifica circa l’effetto delle modifiche apportate al frammento anche sulle pagine a cui si fa riferimento.
+>Dopo la pubblicazione e/o il riferimento a un frammento, AEM visualizza un avviso quando un autore riapre il frammento per la modifica. Questo messaggio notifica circa l’effetto delle modifiche apportate al frammento anche sulle pagine a cui si fa riferimento.
 
 ## Authoring dei contenuti {#authoring-your-content}
 
-Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** è aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene campi di vari tipi di dati definiti nel modello di contenuto.
+Quando apri il frammento di contenuto per la modifica nell&#39;editor originale, la scheda **Varianti** è aperta per impostazione predefinita. Qui puoi creare il contenuto per l’elemento Principale o per una delle varianti disponibili. Il frammento strutturato contiene campi di vari tipi di dati definiti nel modello di contenuto.
 
 Ad esempio:
 
@@ -72,7 +76,7 @@ Operazioni disponibili:
    * [I tag](/help/sites-cloud/authoring/sites-console/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
       * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
-      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
+      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
 
      Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 

@@ -5,10 +5,10 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 83%
+source-wordcount: '1272'
+ht-degree: 82%
 
 ---
 
@@ -24,12 +24,11 @@ I frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service so
 >
 >I frammenti di contenuto sono una funzionalità di **Sites**, ma sono memorizzati come **Assets**.
 >
->Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
+>Sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Esistono due editor per l’authoring dei frammenti di contenuto:
+>L&#39;editor predefinito per [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) è il nuovo editor; è possibile accedere sia dalla console **Frammenti di contenuto** che dalla console **Assets**.
 >
->* Il nuovo editor per [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) è accessibile principalmente dalla console **Frammenti di contenuto**.
->* L&#39;[editor originale](/help/assets/content-fragments/content-fragments-variations.md) è accessibile principalmente dalla console **Assets**.
+>Per utilizzare l&#39;[editor originale](/help/assets/content-fragments/content-fragments-variations.md), aprire prima il nuovo editor e quindi disattivare l&#39;opzione **Nuovo editor**.
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 65%
+source-wordcount: '1925'
+ht-degree: 63%
 
 ---
 
@@ -37,11 +37,19 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
->I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
+>I frammenti di contenuto sono una funzionalità di **Sites**, ma sono memorizzati come **Assets**.
 >
->Ora sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **Assets**. Questa sezione riguarda la gestione dalla console **Assets**.
+>Sono gestite principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se possono ancora essere gestite dalla console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md). Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
+>Esistono due editor per l’authoring dei frammenti di contenuto: il nuovo editor e l’editor originale. Il nuovo editor è quello predefinito. Anche se la funzionalità di base è la stessa, ci sono alcune differenze.
+>
+>Questa sezione descrive l’editor originale.
+>
+>L&#39;editor predefinito per [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) è il nuovo editor, a cui si accede sia dalla console **Frammenti di contenuto** che dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, consulta la documentazione di Sites, [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>
+>Per utilizzare l&#39;[editor originale](/help/assets/content-fragments/content-fragments-variations.md), aprire prima il nuovo editor e quindi disattivare l&#39;opzione **Nuovo editor**.
+>
+>Entrambi gli editor dispongono di un interruttore nella barra degli strumenti superiore per consentire un accesso rapido all’altro editor.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
-Per aprire la pagina per la modifica:
+Per aprire il frammento per la modifica nell’editor originale:
 
 >[!CAUTION]
 >
 >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
-1. Utilizza la console **Assets** per passare alla posizione del frammento di contenuto.
-1. Apri il frammento per la modifica eseguendo una delle seguenti operazioni:
+1. Passa alla posizione del frammento di contenuto.
 
-   * Tocca o fai clic sul collegamento del frammento o del frammento (a seconda della vista della console).
-   * Seleziona il frammento, quindi **Modifica** dalla barra degli strumenti.
+1. Apri il frammento per la modifica.
 
-1. Viene aperto l’editor frammenti. Apporta le modifiche necessarie:
+1. Il frammento viene aperto nel nuovo editor. Disattiva l&#39;opzione **Nuovo editor** (in alto a destra) per aprire l&#39;editor originale:
 
    ![Editor frammento](assets/cfm-managing-03.png)
 
-1. Dopo aver apportato le modifiche, utilizza **Salva**, **Salva e chiudi** o **Chiudi** secondo la necessità.
+1. Apporta le modifiche necessarie.
+
+1. Al termine, usa **Salva**, **Salva e chiudi** o **Chiudi** come richiesto.
 
    >[!NOTE]
    >
