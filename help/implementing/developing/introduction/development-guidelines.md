@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Dimostrazione della struttura del pacchetto"
+>additional-url="https://video.tv.adobe.com/v/345903?captions=ita" text="Dimostrazione della struttura del pacchetto"
 
 Questo documento presenta le linee guida per lo sviluppo su AEM as a Cloud Service e sulle differenze importanti tra AEM on-premise e AEM in AMS.
 
