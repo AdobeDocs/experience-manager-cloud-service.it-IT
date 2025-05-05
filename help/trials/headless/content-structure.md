@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Avvia la console Modelli"
 >abstract="Scopriamo come creare uno schema riutilizzabile, denominato modello per frammenti di contenuto, per il contenuto in Adobe Experience Manager as a Cloud Service. Guarda il video per comprendere il motivo per cui questo passaggio è importante. <br><br>In questo modulo di apprendimento utilizzerai come esempio un sito di viaggi e vedrai in dettaglio come creare un modello che rappresenta un viaggio.<br><br>Avvia questo modulo in una nuova scheda facendo clic sul pulsante sottostante e quindi segui questa guida."
->additional-url="https://video.tv.adobe.com/v/3436548?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
+>additional-url="https://video.tv.adobe.com/v/3413261?captions=ita" text="Video introduttivo sulla struttura dei contenuti"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"

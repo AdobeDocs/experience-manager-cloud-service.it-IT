@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Cloud Service include molte nuove funzioni e oppo
 >id="aem_cloud_notable_changes"
 >title="Modifiche importanti in AEM as a Cloud Service"
 >abstract="In questa scheda, puoi visualizzare contenuti utili a comprendere le differenze tra AEM on-premise o in Adobe Managed Services rispetto ad AEM as a Cloud Service."
->additional-url="https://video.tv.adobe.com/v/346175?captions=ita" text="Evoluzione di AEM as a Cloud Service"
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evoluzione di AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -101,7 +101,7 @@ L’interfaccia classica non è più disponibile in AEM Cloud Service.
 
 L’accelerazione HTTP, compresa la gestione del traffico e la rete CDN per i servizi di authoring e pubblicazione, è inclusa per impostazione predefinita in AEM Cloud Service.
 
-Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe consiglia vivamente di utilizzare la rete CDN integrata, per la quale sono ottimizzate le funzioni incluse in AEM Cloud Service.
+Per la transizione dei progetti da AMS o da un’installazione on-premise, Adobe consiglia vivamente di utilizzare la rete CDN incorporata, per la quale sono ottimizzate le funzioni incluse in AEM Cloud Service.
 
 ## Gestione e distribuzione delle risorse {#asset-handling}
 

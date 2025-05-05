@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="Introduzione all’architettura di AEM as a Cloud Service"
 >abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud."
->additional-url="https://video.tv.adobe.com/v/346182?captions=ita" text="Panoramica dell’architettura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
 Adobe Experience Manager (AEM) as a Cloud Service offre una serie di servizi componibili per la creazione e la gestione di esperienze ad alto impatto.
 
@@ -89,7 +89,7 @@ consente di creare contenuti utilizzando applicazioni standard. Ad esempio:
    * Microsoft Word ed Excel, tramite SharePoint
    * Documenti e Fogli Google, tramite Google Drive
 
-Per la distribuzione delle esperienze, utilizzando AEM Sites o AEM Forms, sono disponibili anche due set principali di servizi, non reciprocamente esclusivi e che funzionano in una rete CDN (Content Delivery Network) gestita da un Adobe condivisa, come origini diverse:
+Per la distribuzione delle esperienze, utilizzando AEM Sites o AEM Forms, sono disponibili anche due set principali di servizi, non reciprocamente esclusivi e che funzionano in una rete per la consegna dei contenuti (CDN) gestita da Adobe e condivisa, come origini diverse:
 
 * Livello di pubblicazione di AEM:
    * Esegue una farm di editori e dispatcher AEM standard che consente il rendering dinamico di pagine web e contenuti API (ad esempio, GraphQL) assemblati con contenuti pubblicati.
