@@ -4,10 +4,10 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 28a8ce3b3afbdc80d06b50bf4824d52cb81954fe
-workflow-type: ht
+source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
+workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
    ![Crea frammento](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
 
    Viene visualizzata la procedura guidata **Crea frammento di modulo adattivo**.
-1. Seleziona il modello basato su Egde Delivery Services dalla scheda **Seleziona modello** e fai clic su **[!UICONTROL Avanti]**.
+1. Seleziona il modello basato su Edge Delivery Services dalla scheda **Seleziona modello** e fai clic su **[!UICONTROL Avanti]**.
    ![Seleziona modello di Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Inserisci un titolo, un nome, una descrizione e i tag relativi al frammento. Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, il frammento non viene creato.
