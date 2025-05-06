@@ -4,10 +4,10 @@ description: Scopri le informazioni su Genera varianti, accessibile da vari edit
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
-workflow-type: ht
-source-wordcount: '1355'
-ht-degree: 100%
+source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+workflow-type: tm+mt
+source-wordcount: '1372'
+ht-degree: 98%
 
 ---
 
@@ -325,6 +325,9 @@ Per ulteriori informazioni, consulta anche:
 
 * [Genera varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Sperimentazione di Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Cronologia delle versioni {#release-history}
 
