@@ -3,10 +3,8 @@ title: Come creare moduli in AEM?
 description: Scopri di più sulle varie piattaforme di creazione dei moduli disponibili in Adobe Experience Manager (AEM) e come scegliere quella giusta in base alle tue esigenze.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
-workflow-type: ht
+source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
+workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
 
@@ -74,7 +72,7 @@ La tabella seguente offre un breve confronto tra vari metodi di authoring dei mo
 
 La tabella seguente fornisce un confronto dettagliato delle funzioni chiave tra i diversi metodi di authoring dei moduli di AEM, utili per scegliere l’approccio più adatto alle tue esigenze.
 
-| **Funzionalità** | **Componenti di base** | **Componenti di base** | **Editor universale (WYSIWYG)** | **Authoring basato su documenti** | **Authoring headless** |
+| **Funzionalità** | **Componenti di base** | **Componenti core** | **Editor universale (WYSIWYG)** | **Authoring basato su documenti** | **Authoring headless** |
 |-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
 | **Composizione unificata con Sites** | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **Incorporazione del supporto dei moduli** | ✅ | ✅ | ✅ | ✅ | ✅ |
