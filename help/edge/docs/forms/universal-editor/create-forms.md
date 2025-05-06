@@ -1,44 +1,44 @@
 ---
-title: Come creare moduli autonomi basati su componenti core o modelli Edge Delivery Services e pubblicarli su Edge Delivery Services
-description: Questo articolo spiega come creare un Forms adattivo selezionando un modello basato su Componente core o un modello basato su Edge Delivery Services nella Creazione guidata modulo. Puoi anche pubblicare i moduli in AEM Edge Delivery Services.
+title: Come creare moduli indipendenti basati su componenti core o modelli Edge Delivery Services e pubblicarli su Edge Delivery Services
+description: Questo articolo spiega come creare moduli adattivi selezionando modelli basati su un componente core o su Edge Delivery Services nella procedura guidata per la creazione di moduli. Puoi anche pubblicare i moduli in AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 29%
+ht-degree: 50%
 
 ---
 
 
-# Dall’authoring alla pubblicazione: AEM Forms su Edge Delivery Services
+# Dall’authoring alla pubblicazione: moduli AEM su Edge Delivery Services
 
 <span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
-Adobe Experience Manager (AEM) consente di creare moduli coinvolgenti, reattivi e dinamici. Offre diversi metodi di authoring, ciascuno adatto a diversi requisiti e livelli di esperienza utente&#x200B;
+Adobe Experience Manager (AEM) consente di creare moduli coinvolgenti, reattivi e dinamici. Offre diversi metodi di authoring, ciascuno adatto a diversi requisiti e livelli di esperienza utente.
 
-Questo articolo si concentra sull’approccio in cui i moduli vengono creati all’interno dell’ambiente AEM e pubblicati tramite Edge Delivery Services. Forms creato utilizzando modelli basati su Componenti core può essere pubblicato sia su AEM che su Edge Delivery Services, offrendo flessibilità di implementazione. Al contrario, i moduli creati utilizzando modelli basati su Edge Delivery Services possono essere pubblicati solo su Edge Delivery Services&#x200B;
+Questo articolo si concentra sull’approccio in cui i moduli vengono creati all’interno dell’ambiente AEM e pubblicati tramite Edge Delivery Services. I moduli creati utilizzando modelli basati su componenti core possono essere pubblicati sia su AEM che su Edge Delivery Services, offrendo flessibilità di implementazione. Al contrario, i moduli creati utilizzando modelli basati su Edge Delivery Services possono essere pubblicati solo su Edge Delivery Services.
 
-![Crea e pubblica modulo adattivo](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
+![Authoring e pubblicazione di un modulo adattivo](/help/edge/docs/forms/universal-editor/assets/author-publish-af.png){width=50% align=center}
 
-## Vantaggi dell’authoring dei moduli in AEM e della pubblicazione tramite Edge Delivery Services:
+## I vantaggi dell’authoring di moduli in AEM e della pubblicazione tramite Edge Delivery Services sono:
 
-* **Mantenimento dei flussi di lavoro AEM esistenti**: le organizzazioni possono continuare a utilizzare i flussi di lavoro e le strutture di governance di AEM, garantendo la coerenza e il controllo sulla creazione dei contenuti&#x200B;
+* **Mantenimento dei flussi di lavoro AEM esistenti**: le organizzazioni possono continuare a utilizzare i flussi di lavoro AEM e le strutture di governance, garantendo la coerenza e il controllo sulla creazione dei contenuti.
 
-* **Prestazioni migliorate**: la pubblicazione tramite Edge Delivery Services comporta tempi di rendering più rapidi, un miglioramento dell&#39;esperienza utente e una riduzione dei tempi di caricamento delle pagine&#x200B;
+* **Prestazioni migliorate**: la pubblicazione tramite Edge Delivery Services comporta tempi di rendering più rapidi, migliorando l’esperienza utente e riducendo i tempi di caricamento delle pagine.
 
-* **SEO** migliorato: Edge Delivery Services è progettato per fornire contenuti con punteggi elevati di Google Lighthouse, che possono portare a una migliore ottimizzazione del motore di ricerca e a una maggiore visibilità.&#x200B;
+* **SEO migliorata**: Edge Delivery Services è progettato per fornire contenuti con punteggi elevati di Google Lighthouse, che possono comportare una migliore ottimizzazione SEO (Search Engine Optimization) e una maggiore visibilità.
 
-* **Opzioni di distribuzione flessibili**: è possibile pubblicare su AEM e Edge Delivery Services Forms i Componenti core, offrendo flessibilità nelle strategie di distribuzione&#x200B;
+* **Opzioni di distribuzione flessibili**: i moduli creati con componenti core possono essere pubblicati sia su AEM che su Edge Delivery Services, offrendo flessibilità nelle strategie di distribuzione.
 
 ## Prima di iniziare
 
-Prima di iniziare a creare moduli in AEM e pubblicarli tramite Edge Delivery Services, verifica che siano soddisfatti i seguenti prerequisiti:
+Prima di iniziare a creare moduli in AEM e pubblicarli tramite Edge Delivery Services, verifica che siano soddisfatti i prerequisiti seguenti:
 
-* Assicurati di disporre di un archivio Github configurato per Edge Delivery Services.
-   * Se non disponi di un archivio, [nuovo progetto AEM preconfigurato con il blocco Forms adattivo](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
-   * Se disponi di un archivio, aggiungi il blocco Forms adattivo all’archivio esistente. Istruzioni dettagliate sono disponibili nella [Guida introduttiva di Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
+* assicurati di disporre di un archivio Github configurato per Edge Delivery Services.
+   * Se non disponi di un archivio, consulta [nuovo progetto AEM preconfigurato con il Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block).
+   * Se disponi di un archivio, aggiungi il Blocco moduli adattivi all’archivio esistente. Istruzioni dettagliate sono disponibili nella [Guida introduttiva a Edge Delivery Services per moduli AEM](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 * Stabilisci una connessione tra l’ambiente AEM e l’archivio GitHub. [Come procedere?](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)
 
 Un diagramma di flusso decisionale per guidare la configurazione e la pubblicazione di Adaptive Forms:
@@ -79,7 +79,6 @@ Per scegliere il modello e creare il modulo, effettua le seguenti operazioni:
 
    1. Specifica **Nome** e **Titolo**.
    1. Specifica l’**URL di GitHub**. Ad esempio, se l’archivio GitHub è denominato `edsforms` e si trova sotto l’account `wkndforms`, l’URL è:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Procedura guidata per la creazione di un modulo](/help/edge/assets/create-form-wizard.png)
