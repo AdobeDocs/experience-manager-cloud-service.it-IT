@@ -1,5 +1,5 @@
 ---
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 778dad1ca9c1239d282b3d5e631162776ea4fed9
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 59%
@@ -14,3 +14,4 @@ Saremo lieti di accogliere anche il contributo alla documentazione. Consulta le 
 * [contributing.md](contributing.md): panoramica su come contribuire alla documentazione.
 * [guidelines.md](guidelines.md): panoramica su cosa includere nei contributi e come comporre i contributi alla documentazione.
 * [code-of-conduct.md](code-of-conduct.md): panoramica degli standard di comportamento a cui dovrà attenersi chi partecipa al progetto di documentazione.
+
