@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -187,7 +187,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 
 >[!IMPORTANT]
 >
->Se si utilizza l&#39;[Editor universale per l&#39;authoring dei contenuti](/help/implementing/universal-editor/introduction.md) e si desidera utilizzare anche [elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), è necessario [aggiungere e applicare un elenco consentiti con gli indirizzi IP del servizio Editor universale.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Se utilizzi l’[Editor universale per l’authoring dei contenuti](/help/implementing/universal-editor/introduction.md) e desideri utilizzare anche gli [elenchi indirizzi IP consentiti,](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) devi anche [aggiungere e applicare un elenco di indirizzi consentiti con gli indirizzi IP del servizio editor universale.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Utilizzare Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
