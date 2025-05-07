@@ -4,9 +4,9 @@ description: Scopri come usare i profili di team e di prodotto di AEM as a Cloud
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '2124'
 ht-degree: 100%
 
 ---
@@ -143,11 +143,10 @@ La tabella seguente descrive un elenco dei possibili profili di prodotto sotto u
         <td>AEM Assets Collaborator Users</td>
         <td>
         <ul>
-                <li>Per l’accesso in sola lettura al sistema DAM. Gli utenti in questo profilo di prodotto saranno membri del gruppo AEM “Contributors”, creato in automatico in AEM.
+                <li>Utilizzare le risorse di Experience Manager tramite integrazioni di Assets disponibili per la tua organizzazione in altri prodotti Adobe e in applicazioni non Adobe.
                 </li>
-                <li>
-                Inoltre, fornisce i diritti per l’utilizzo di Adobe Express per la creazione di varianti di risorse.
-                </li>
+                <li>Creare e modificare le risorse utilizzando Adobe Express e Firefly incorporati utilizzando in modo professionale modelli progettati, kit per i brand, risorse Adobe Stock e così via.</li>
+                <li>Accedere e sfruttare le risorse approvate dalla tua organizzazione utilizzando il portale Content Hub di AEM Assets.</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ La tabella seguente descrive un elenco dei possibili profili di prodotto sotto u
         <td>AEM Assets Power Users</td>
 <td>
         <ul>
-                <li>Per l’accesso in sola lettura al sistema DAM. Gli utenti in questo profilo di prodotto saranno membri del gruppo AEM “Contributors”, creato in automatico in AEM.
+                <li>Accedere a tutte le funzionalità di AEM Assets, tra cui la gestione delle risorse, dei metadati, la governance complessiva e l’automazione delle risorse digitali.</li>
+                <li>Utilizzare le risorse di Experience Manager tramite integrazioni di Assets disponibili per la tua organizzazione in altri prodotti Adobe e in applicazioni non Adobe.
                 </li>
-                <li>
-                Inoltre, fornisce i diritti per l’utilizzo di Adobe Express per la creazione di varianti di risorse.
-                </li>
+                <li>Creare e modificare le risorse utilizzando Adobe Express e Firefly incorporati utilizzando in modo professionale modelli progettati, kit per i brand, risorse Adobe Stock e così via.</li>
+                <li>Accedere e sfruttare le risorse approvate dalla tua organizzazione utilizzando il portale Content Hub di AEM Assets.</li>
           <ul>
 </td>
     </tr>
