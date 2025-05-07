@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1729'
 ht-degree: 25%
 
 ---
@@ -219,9 +219,9 @@ Ad esempio, la possibilità di annullare la pubblicazione di una pagina (ovvero 
 
 Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nella barra degli strumenti sono presenti pulsanti aggiuntivi, l’editor universale è stato esteso.
 
-* Per informazioni dettagliate sul funzionamento di una singola estensione, [consulta la documentazione di authoring di Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* Per informazioni dettagliate sulle possibilità di estensione, vedere [Estensione dell&#39;editor universale](/help/implementing/universal-editor/extending.md).
-* Per informazioni dettagliate su come installare una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Per informazioni dettagliate sul funzionamento di una singola estensione, [consulta la documentazione di authoring di Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Per informazioni dettagliate sulle possibilità di estensione, vedere [Estensione dell&#39;editor universale.](/help/implementing/universal-editor/extending.md)
+* Per informazioni dettagliate su come installare una singola estensione, consulta la [documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### L’editor {#editor}
 
@@ -236,6 +236,8 @@ Se l&#39;editor è in [modalità anteprima](#preview-mode), il contenuto sarà n
 Il pannello delle proprietà è sempre presente lungo il lato destro dell’editor. A seconda della modalità, può mostrare i dettagli di un componente selezionato nel contenuto o la gerarchia dei contenuti della pagina.
 
 ![Pannello delle proprietà](assets/properties-rail.png)
+
+A seconda della configurazione del programma, può anche presentare [funzionalità aggiuntive che sono state abilitate come estensioni dall&#39;amministratore.](#additional-properties-panel-buttons)
 
 #### Modalità proprietà {#properties-mode}
 
@@ -315,12 +317,13 @@ Toccando o facendo clic sul pulsante Elimina [il componente viene eliminato](/he
 >
 >Utilizzare il tasto di scelta rapida `Shift+Backspace` per eliminare un componente selezionato da un contenitore.
 
-## Funzioni aggiuntive {#additional-features}
+#### Pulsanti aggiuntivi {#additional-properties-panel-buttons}
 
-Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nel pannello delle proprietà o nella barra degli strumenti sono presenti pulsanti o opzioni aggiuntive, l&#39;editor universale è stato esteso.
+Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nel pannello delle proprietà sono presenti pulsanti aggiuntivi, l&#39;Editor universale è stato esteso.
 
-* Per informazioni dettagliate sulle possibilità di estensione, vedere [Personalizzazione ed estensione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md).
-* Per informazioni dettagliate sul funzionamento di una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Per informazioni dettagliate sul funzionamento di una singola estensione, [consulta la documentazione di authoring di Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Per informazioni dettagliate sulle possibilità di estensione, vedere [Estensione dell&#39;editor universale.](/help/implementing/universal-editor/extending.md)
+* Per informazioni dettagliate su come installare una singola estensione, consulta la [documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Passaggi successivi {#next-steps}
 

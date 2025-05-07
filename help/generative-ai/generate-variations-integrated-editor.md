@@ -4,10 +4,10 @@ description: Scopri le informazioni su Genera varianti, accessibile da vari edit
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 98%
+source-wordcount: '1401'
+ht-degree: 95%
 
 ---
 
@@ -313,7 +313,10 @@ Per utilizzare la funzione Genera varianti nella barra laterale (di Edge Deliver
 
 ### Accesso dall’editor universale di AEM {#access-aem-universal-editor}
 
-L’accesso dall’[editor universale di AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) è implementato come estensione. Per ulteriori dettagli, consulta [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/).
+L&#39;accesso da [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) è implementato come estensione.
+
+* Per informazioni dettagliate su come accedere a Genera varianti dall&#39;editor universale, vedere il documento [Authoring dei contenuti con l&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* Per informazioni dettagliate su come abilitare l&#39;estensione, consulta il documento [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Accesso dall’ editor frammenti di contenuto di AEM {#access-aem-content-fragment-editor}
 
@@ -325,9 +328,9 @@ Per ulteriori informazioni, consulta anche:
 
 * [Genera varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Sperimentazione di Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai)
+* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai#aem)
+   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Cronologia delle versioni {#release-history}
 

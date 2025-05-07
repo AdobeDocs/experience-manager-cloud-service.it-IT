@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 12%
+source-wordcount: '2222'
+ht-degree: 11%
 
 ---
 
@@ -178,14 +178,6 @@ I componenti vengono riordinati sia nella struttura del contenuto che nell’edi
 >
 >I componenti possono essere spostati tra contenitori solo se il filtro [componente](/help/implementing/universal-editor/filtering.md) dei contenitori di destinazione consente il componente selezionato.
 
-### Creare varianti utilizzando GenAI con Genera varianti {#generate-variations-ai}
-
-Utilizza le varianti generative per sfruttare l’intelligenza artificiale generativa per accelerare la creazione dei contenuti.
-
-Apri l’editor universale per trovare il punto di ingresso per generare varianti.
-
-Per ulteriori informazioni, consulta [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md).
-
 ## Anteprima del contenuto {#previewing-content}
 
 Quando hai finito di modificare il contenuto, spesso desideri navigare in esso per vedere come si presenta nel contenuto di altre pagine. In [modalità anteprima](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) puoi fare clic sui collegamenti per navigare nel contenuto come farebbe un lettore. Il contenuto viene riprodotto nell’editor così come verrebbe pubblicato.
@@ -202,8 +194,7 @@ Se l&#39;estensione **AEM Multi-Site-Management (MSM)** è abilitata per il prog
 
 Per ulteriori dettagli sul funzionamento dell&#39;ereditarietà mediante l&#39;Editor universale, vedere [Ereditarietà contenuto nell&#39;Editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
-
-## Opzioni facoltative della barra degli strumenti{#toolbar-options}
+## Funzioni opzionali della barra degli strumenti {#toolbar-options}
 
 Ulteriori funzioni sono disponibili come estensioni di Universal Editor per facilitare l’ulteriore gestione di pagine e contenuti. [Le estensioni devono essere abilitate nel programma da un amministratore](/help/implementing/universal-editor/extending.md) prima di essere visibili come autore di contenuto nella [barra degli strumenti di Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -305,6 +296,20 @@ L&#39;estensione di accesso per sviluppatori **AEM Universal Editor** è utile p
 Tocca o fai clic sull&#39;icona **Accesso sviluppatore** nella barra degli strumenti di Universal Editor per fornire le credenziali di accesso locali per accedere al tuo SDK AEM locale.
 
 ![Accesso per sviluppatori modale](assets/developer-login.png)
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## Funzioni facoltative del pannello Proprietà {#properties-panel-options}
+
+Ulteriori funzioni sono disponibili come estensioni di Universal Editor per facilitare l’ulteriore gestione del contenuto della pagina. [Queste estensioni devono essere abilitate nel programma da un amministratore](/help/implementing/universal-editor/extending.md) prima di essere visibili come autore di contenuto nel [pannello delle proprietà dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### Generare varianti {#generate-variations}
+
+L&#39;estensione **Genera varianti** consente di utilizzare l&#39;intelligenza artificiale generativa (AI) per creare varianti per il contenuto direttamente nel pannello delle proprietà.
+
+![Icona Genera varianti](assets/generate-variations-icon.png)
+
+Tocca o fai clic sull&#39;icona **Genera varianti** nel pannello delle proprietà dell&#39;editor universale per ricevere consigli e creare varianti. Per ulteriori dettagli sulla generazione delle varianti, consulta il documento [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md).
 
 Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
