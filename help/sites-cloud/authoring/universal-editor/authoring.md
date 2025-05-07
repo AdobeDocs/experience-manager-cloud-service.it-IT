@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 17%
+source-wordcount: '2133'
+ht-degree: 12%
 
 ---
 
@@ -192,6 +192,122 @@ Quando hai finito di modificare il contenuto, spesso desideri navigare in esso p
 
 In modalità anteprima, toccando o facendo clic sul contenuto si reagisce come se si trattasse di un normale lettore. Se si desidera selezionare il contenuto da modificare, uscire dalla [modalità anteprima](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
+## Modifica dell’ereditarietà dei componenti {#inheritance}
+
+L’ereditarietà è il meccanismo in cui il contenuto può essere collegato in modo che la modifica di un elemento cambia automaticamente l’altro.
+
+Utilizzando l’Editor universale, puoi annullare l’ereditarietà dei contenuti semplicemente aggiornandone il contenuto. L’editor disabilita automaticamente l’ereditarietà per tutte le modifiche apportate dagli autori sulla pagina, garantendo che il contenuto modificato venga mantenuto quando gli aggiornamenti vengono sincronizzati dalla blueprint.
+
+Se l&#39;estensione **AEM Multi-Site-Management (MSM)** è abilitata per il programma, sono disponibili [opzioni aggiuntive sulla barra degli strumenti](#inheritance-extension) per visualizzare e modificare lo stato di ereditarietà di un singolo componente nell&#39;editor universale.
+
+Per ulteriori dettagli sul funzionamento dell&#39;ereditarietà mediante l&#39;Editor universale, vedere [Ereditarietà contenuto nell&#39;Editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+
+
+## Opzioni facoltative della barra degli strumenti{#toolbar-options}
+
+Ulteriori funzioni sono disponibili come estensioni di Universal Editor per facilitare l’ulteriore gestione di pagine e contenuti. [Le estensioni devono essere abilitate nel programma da un amministratore](/help/implementing/universal-editor/extending.md) prima di essere visibili come autore di contenuto nella [barra degli strumenti di Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### Ereditarietà {#inheritance-extension}
+
+L&#39;estensione **AEM Multi-Site-Management (MSM)** visualizza lo stato di ereditarietà corrente del componente selezionato e consente di [interrompere o ripristinare l&#39;ereditarietà.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+L&#39;icona **Ereditarietà installata** nella barra degli strumenti di Universal Editor indica che l&#39;ereditarietà è ancora attiva per il componente selezionato.
+
+![Icona ereditarietà installata](assets/inheritance-installed-icon.png)
+
+Tocca o fai clic sull’icona per interrompere l’ereditarietà del componente selezionato. L’ereditarietà viene interrotta automaticamente se si modifica il componente.
+
+L&#39;icona **Ereditarietà interrotta** indica che l&#39;ereditarietà è stata interrotta per il componente selezionato.
+
+![Icona ereditarietà interrotta](assets/inheritance-broken-icon.png)
+
+Tocca o fai clic sull&#39;icona per ripristinare l&#39;ereditarietà per il componente selezionato. Per visualizzare il contenuto ereditato, ricarica la pagina per aggiornare il contenuto.
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>Le icone **Ereditarietà installata** e **Ereditarietà interrotta** vengono visualizzate solo quando un componente è stato selezionato e la pagina è basata su una blueprint.
+
+>[!NOTE]
+>
+>L&#39;estensione **AEM Multi-Site-Management (MSM)** funziona solo per le pagine, non per i frammenti di contenuto.
+
+### Accesso alle proprietà di pagina {#page-properties}
+
+L&#39;estensione **AEM Page Properties** consente di accedere rapidamente alla [finestra Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) per la pagina in corso di modifica.
+
+![Icona proprietà pagina](assets/page-properties-icon.png)
+
+Tocca o fai clic sull&#39;icona **Proprietà pagina** nella barra degli strumenti di Universal Editor per aprire le proprietà della pagina in una nuova scheda del browser.
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>L&#39;estensione **AEM Page Properties** funziona solo per le pagine, non per i frammenti di contenuto.
+
+### Accedere alla console Sites {#sites-console}
+
+L&#39;estensione **AEM Site Admin** consente di accedere rapidamente alla pagina in fase di modifica nella [console Sites di AEM](/help/sites-cloud/authoring/sites-console/introduction.md), consentendo di esplorare la struttura del sito o di eseguire azioni a livello di pagina nella console.
+
+![Icona Apri in amministrazione sito](assets/open-in-site-admin-icon.png)
+
+Tocca o fai clic sull’icona per aprire la console Sites in una nuova scheda del browser, per passare alla pagina attualmente nell’editor.
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Blocco e sblocco delle pagine {#locking-pages}
+
+L&#39;estensione **AEM Page Lock** visualizza lo stato di blocco corrente della pagina nell&#39;editor e consente di [bloccare o sbloccare la pagina.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+L&#39;icona **Sbloccato** nella barra degli strumenti di Universal Editor indica che la pagina attualmente nell&#39;editor non è bloccata.
+
+![Icona Sbloccato](assets/unlocked-icon.png)
+
+Tocca o fai clic sull’icona per bloccare la pagina.
+
+L&#39;icona **Bloccato** nella barra degli strumenti di Universal Editor indica che la pagina attualmente nell&#39;editor è bloccata. Passa il mouse sull’icona per visualizzare una descrizione comando che indica l’utente che ha bloccato la pagina.
+
+![Icona Bloccato](assets/locked-icon.png)
+
+Tocca o fai clic sull’icona per sbloccare la pagina se sei l’utente che l’ha bloccata.
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>L&#39;estensione **AEM Page Lock** funziona solo per le pagine, non per i frammenti di contenuto.
+
+### Flussi di lavoro {#workflows}
+
+L&#39;estensione **AEM Workflows** ti consente di [avviare un flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) sulla pagina che si trova attualmente nell&#39;editor.
+
+![Icona Flussi di lavoro](assets/workflows-icon.png)
+
+Tocca o fai clic sull&#39;icona **Flussi di lavoro** nella barra degli strumenti di Universal Editor per aprire il modale **Avvia un flusso di lavoro**. Nella finestra sono elencati i possibili contenuti a cui è possibile applicare un flusso di lavoro.
+
+![Avvia un flusso di lavoro modale](assets/start-a-workflow.png)
+
+1. Nel menu a discesa **Modello flusso di lavoro**, seleziona il flusso di lavoro da applicare.
+1. Fornisci una descrizione per il flusso di lavoro nel campo **Name**.
+1. Nell&#39;elenco **Contenuto da includere nel flusso di lavoro** utilizzare le caselle di controllo per definire il contenuto da includere nel flusso di lavoro.
+1. Tocca o fai clic su **Avvia flusso di lavoro** per avviare il flusso di lavoro o su **Chiudi** per interromperlo.
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Accesso sviluppatore {#developer-login}
+
+L&#39;estensione di accesso per sviluppatori **AEM Universal Editor** è utile per gli sviluppatori che sviluppano localmente, consentendo un modo pratico per eseguire l&#39;autenticazione in un SDK AEM locale a scopo di test.
+
+![Icona di accesso per sviluppatori](assets/developer-login-icon.png)
+
+Tocca o fai clic sull&#39;icona **Accesso sviluppatore** nella barra degli strumenti di Universal Editor per fornire le credenziali di accesso locali per accedere al tuo SDK AEM locale.
+
+![Accesso per sviluppatori modale](assets/developer-login.png)
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## Risorse aggiuntive {#additional-resources}
 
 Per informazioni su come pubblicare contenuti con l’editor universale, consulta questo documento.
@@ -205,11 +321,3 @@ Per ulteriori informazioni sui dettagli tecnici di Universal Editor, consulta qu
 * [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md): scopri l’architettura dell’editor universale e il flusso di dati tra i suoi servizi e livelli.
 * [Attributi e tipi](/help/implementing/universal-editor/attributes-types.md): scopri gli attributi e i tipi di dati richiesti dall’editor universale.
 * [Autenticazione dell’editor universale](/help/implementing/universal-editor/authentication.md): scopri come l’editor universale effettua l’autenticazione.
-
-## Modifica dell’ereditarietà dei componenti {#inheritance}
-
-L’ereditarietà è il meccanismo in cui il contenuto può essere collegato in modo che la modifica di un elemento cambia automaticamente l’altro.
-
-Utilizzando l’Editor universale, puoi annullare l’ereditarietà dei contenuti semplicemente aggiornandone il contenuto. L’editor disabilita automaticamente l’ereditarietà per tutte le modifiche apportate dagli autori sulla pagina, garantendo che il contenuto modificato venga mantenuto quando gli aggiornamenti vengono sincronizzati dalla blueprint.
-
-Per ulteriori dettagli sul funzionamento dell&#39;ereditarietà mediante l&#39;Editor universale, vedere [Ereditarietà contenuto nell&#39;Editor universale](/help/sites-cloud/authoring/universal-editor/inheritance.md).

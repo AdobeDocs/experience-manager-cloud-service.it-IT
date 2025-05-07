@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 26%
+source-wordcount: '1698'
+ht-degree: 25%
 
 ---
 
@@ -117,6 +117,8 @@ Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni ut
 
 La barra degli strumenti di Universal Editor è sempre presente nella parte superiore dello schermo immediatamente sotto [l&#39;intestazione di Experience Cloud](#experience-cloud-header). Ti consente di accedere rapidamente a un’altra pagina per modificare e pubblicare la pagina corrente.
 
+A seconda della configurazione del programma, può anche presentare [funzionalità aggiuntive che sono state abilitate come estensioni dall&#39;amministratore.](#additional-toolbar-buttons)
+
 ![Barra degli strumenti di Universal Editor](assets/universal-editor-toolbar.png)
 
 #### Pulsante Home {#home-button}
@@ -217,8 +219,9 @@ Ad esempio, la possibilità di annullare la pubblicazione di una pagina (ovvero 
 
 Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estensibile. Se nella barra degli strumenti sono presenti pulsanti aggiuntivi, l’editor universale è stato esteso.
 
+* Per informazioni dettagliate sul funzionamento di una singola estensione, [consulta la documentazione di authoring di Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * Per informazioni dettagliate sulle possibilità di estensione, vedere [Estensione dell&#39;editor universale](/help/implementing/universal-editor/extending.md).
-* Per informazioni dettagliate sul funzionamento di una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Per informazioni dettagliate su come installare una singola estensione, consulta la [documentazione di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### L’editor {#editor}
 

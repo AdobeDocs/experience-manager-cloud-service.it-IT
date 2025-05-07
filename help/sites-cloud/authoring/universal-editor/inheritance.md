@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -18,11 +18,11 @@ Scopri in che modo Universal Editor supporta l’ereditarietà dei contenuti per
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo per i contenuti archiviati nell’archivio AEM.
+>Questa funzione è disponibile solo per il contenuto archiviato nell’archivio AEM.
 
 ## Caso d’uso {#use-case}
 
-Per molti utenti dell&#39;AEM, la creazione di una pagina è solo l&#39;inizio. Per ridimensionare il contenuto in modo efficace, in genere dopo la creazione della pagina sono necessari i seguenti passaggi:
+Per molti utenti di AEM, la creazione di una pagina è solo l’inizio. Per ridimensionare il contenuto in modo efficace, in genere dopo la creazione della pagina sono necessari i seguenti passaggi:
 
 1. **Traduci la pagina** utilizzando copie per lingua e flussi di lavoro di traduzione.
 1. **Localizzare la pagina** utilizzando Gestione multisito per distribuire la pagina tradotta in mercati diversi.
@@ -44,17 +44,25 @@ Quando una pagina fa parte di MSM o di un lancio e il contenuto viene modificato
 
 L’autore non deve fare clic su un pulsante o adottare altri passaggi per disabilitare l’ereditarietà prima di apportare modifiche locali. Non appena viene apportata una modifica, l’ereditarietà viene implicitamente annullata. Questo flusso di lavoro è in contrasto con [Editor pagina](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+L’ereditarietà può essere ripristinata per l’intera pagina tramite:
+
+* [Console Panoramica Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Console dei lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Utilizzo del pulsante **Reimposta** nella scheda **Live Copy** della finestra [proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 L’editor universale non influisce sul meccanismo di ereditarietà sottostante. Per ulteriori dettagli sul funzionamento dell’ereditarietà, consulta la seguente documentazione.
 
 * [Gestione multisito (MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md)
 
+### Estensione AEM Multi-Site-Management (MSM) {#msm-extension}
+
+Se installata, l&#39;estensione **AEM Multi-Site-Management (MSM)** visualizza lo stato di ereditarietà corrente del componente selezionato e consente di interrompere o ripristinare l&#39;ereditarietà a livello di componente.
+
+Per ulteriori informazioni, vedere la [documentazione per l&#39;authoring.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
 ## Limitazioni {#limitations}
 
-* Gli autori non possono ripristinare l’ereditarietà per i singoli componenti.
-   * L&#39;ereditarietà può essere ripristinata solo per l&#39;intera pagina tramite
-      * [Console Panoramica Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Console dei lanci](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Utilizzo del pulsante **Reimposta** nella scheda **Live Copy** della finestra [proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Gli autori non dispongono di un feedback visivo per vedere quali componenti hanno la loro ereditarietà disabilitata e quali ancora la mantengono.
+* Per ripristinare l&#39;ereditarietà per i singoli componenti, è necessario abilitare l&#39;estensione **AEM Multi-Site-Management (MSM)**.
+* Per visualizzare il feedback visivo per vedere quali componenti hanno la loro ereditarietà disabilitata e quali ancora la mantengono, è necessario abilitare l&#39;estensione **AEM Multi-Site-Management (MSM)**.
 * Queste funzioni sono attualmente limitate ai componenti nelle pagine e non si applicano ancora a [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md), nonostante questi dispongano anche delle funzionalità MSM e Launch.

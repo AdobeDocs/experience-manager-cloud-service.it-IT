@@ -3,13 +3,13 @@ title: Estensione dell’editor universale
 description: Scopri le diverse opzioni per estendere le funzionalità di Universal Editor e supportare le esigenze degli autori di contenuti.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 0cab4a807be4aa402667feddb6a948f0d2db371f
+exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
+source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # Estensione dell’editor universale {#extending}
 
@@ -23,6 +23,12 @@ Scopri le diverse opzioni per estendere le funzionalità di Universal Editor e s
 
 In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor universale può essere estesa utilizzando App Builder e Experience Manager. Adobe offre molte estensioni pronte che puoi utilizzare per il tuo progetto.
 
+* **[Estensione AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: interrompere o ripristinare l&#39;ereditarietà a livello di componente
+* **[Estensione proprietà pagina AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: consente di accedere alla finestra delle proprietà della pagina nell&#39;editor universale
+* **[Estensione AEM Site Admin](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: apri la console Sites nel percorso della pagina nell&#39;editor universale
+* **[Estensione AEM Page Lock](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: visualizza e modifica lo stato di blocco della pagina da Universal Editor
+* **[Estensione flussi di lavoro AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: avvia flussi di lavoro sulla pagina e sul contenuto della pagina dall&#39;editor universale
+* **[Estensione di accesso per sviluppatori AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: esegui facilmente l&#39;autenticazione nel tuo SDK AEM locale durante lo sviluppo locale
 * **[Selettore prodotti AEM per Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: integra i dati di Adobe Commerce selezionando o rimuovendo i dati di prodotto dall&#39;editor.
 * **[Bozze di contenuto dell&#39;Editor universale](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: crea, modifica e gestisci più bozze di contenuto.
 * **[Selettore risorse configurabile](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**: abilita la selezione delle risorse dai repository diversi da quello utilizzato dalla pagina modificata.
@@ -42,7 +48,7 @@ Se desideri esplorare le possibilità di creazione di estensioni personalizzate,
 
 >[!TIP]
 >
->Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
+>Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
 
 [Utilizzando Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per Universal Editor, e molto altro.
 
