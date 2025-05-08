@@ -4,9 +4,9 @@ description: Scopri le diverse opzioni per estendere le funzionalità di Univers
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Scopri le diverse opzioni per estendere le funzionalità di Universal Editor e s
 
 ## Estensioni {#extensions}
 
-In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor universale può essere estesa utilizzando App Builder e Experience Manager. Adobe offre molte estensioni pronte che puoi utilizzare per il tuo progetto.
+In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor universale può essere estesa utilizzando App Builder e Experience Manager. Adobe offre molte estensioni già pronte disponibili tramite [Extension Manager](https://experience.adobe.com/aem/extension-manager) che puoi utilizzare per il tuo progetto.
 
 * **[Estensione AEM Multi-Site-Management (MSM)](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: interrompere o ripristinare l&#39;ereditarietà a livello di componente
 * **[Estensione proprietà pagina AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: consente di accedere alla finestra delle proprietà della pagina nell&#39;editor universale
@@ -37,6 +37,8 @@ In qualità di servizio di Adobe Experience Cloud, l’interfaccia utente dell�
 * **[Esporta frammenti di contenuto in Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: esporta frammenti di contenuto creati in Adobe Experience Manager as a Cloud Service in Adobe Target da utilizzare come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 * **[Flussi di lavoro per frammenti di contenuto](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: avvia un flusso di lavoro AEM per i frammenti di contenuto selezionati.
 
+Per informazioni su come abilitare queste estensioni, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## Estensione dell’interfaccia utente {#extending-ui}
 
 Le estensioni dell’interfaccia utente di Universal Editor sono applicazioni JavaScript create con Adobe App Builder. Utilizzando questi stessi strumenti, puoi anche aggiungere pulsanti e azioni personalizzati al menu e al pannello delle proprietà dell’intestazione e creare eventi personalizzati per Universal Editor.
@@ -49,7 +51,7 @@ Se desideri esplorare le possibilità di creazione di estensioni personalizzate,
 
 >[!TIP]
 >
->Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
+>Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
 
 [Utilizzando Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per Universal Editor, e molto altro.
 

@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,9 @@ L’editor universale non influisce sul meccanismo di ereditarietà sottostante.
 
 Se installata, l&#39;estensione **AEM Multi-Site-Management (MSM)** visualizza lo stato di ereditarietà corrente del componente selezionato e consente di interrompere o ripristinare l&#39;ereditarietà a livello di componente.
 
-Per ulteriori informazioni, vedere la [documentazione per l&#39;authoring.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+Per ulteriori informazioni su come utilizzare questa estensione, consulta la documentazione per l&#39;authoring di [.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+Per informazioni su come abilitare questa estensione, [consulta la documentazione di Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## Limitazioni {#limitations}
 
