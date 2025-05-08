@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # Snippet {#snippets}
@@ -222,7 +222,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
@@ -259,3 +259,9 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 * [Mostra un messaggio di ringraziamento personalizzato dopo l’invio del modulo](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
 * [Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
+
+## Autenticazione headless Universal Editor {#ue-headless-auth}
+
+>[!NOTE]
+>
+>Se utilizzi l’editor universale in un caso d’uso headless, l’app headless deve gestire la propria autenticazione.

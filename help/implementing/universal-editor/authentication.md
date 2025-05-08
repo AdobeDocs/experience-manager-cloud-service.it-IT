@@ -1,13 +1,13 @@
 ---
 title: Autenticazione dell’editor universale
-description: Scopri in che modo Universal Editor utilizza Identity Management System (IMS) di Adobe per l’autenticazione.
+description: Scopri in che modo Universal Editor utilizza Adobe Identity Management System (IMS) per l’autenticazione.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 92%
+source-wordcount: '191'
+ht-degree: 86%
 
 ---
 
@@ -31,3 +31,7 @@ Per utilizzare l’editor universale, l’utente deve essere connesso alla shell
 Ogni volta che un utente esegue un’operazione CRUD, viene inviata una chiamata al servizio editor universale con il token di connessione IMS nell’intestazione HTTP. Il servizio editor universale utilizza quindi il token di connessione per autenticare la richiesta al sistema di back-end di AEM per eseguire operazioni a nome dell’utente.
 
 ![Flusso di autenticazione standard](assets/standard-flow.png)
+
+In questo diagramma e in questo articolo viene descritta l&#39;autenticazione interna dell&#39;editor universale stesso.
+
+{{ue-headless-auth}}

@@ -4,7 +4,7 @@ description: Scopri i casi d’uso principali di Universal Editor e come utilizz
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -55,6 +55,8 @@ Se questo è il tuo caso d’uso, come passaggio successivo immediato, consulta 
 * [App di esempio SecurBank per l’editor universale](/help/implementing/universal-editor/securbank.md)
 
 Dopo aver letto il documento, puoi tornare a questa pagina per scoprire il caso d’uso dell’authoring di WYSIWYG e il funzionamento generale dell’Editor universale.
+
+{{ue-headless-auth}}
 
 ## Funzionamento dell&#39;editor universale {#how-ue-works}
 

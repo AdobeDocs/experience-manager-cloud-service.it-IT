@@ -4,7 +4,7 @@ description: Scopri come accedere all’editor universale e come iniziare a prep
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -178,6 +178,8 @@ Per definire le mappature nel campo **Mappatura di apertura dell&#39;editor univ
 L’app è ora preparata per l’utilizzo dell’editor universale.
 
 Consulta [Authoring dei contenuti con l’editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) per scoprire quanto è semplice e intuitivo per gli autori creare contenuti utilizzando l’editor universale.
+
+{{ue-headless-auth}}
 
 ## Risorse aggiuntive {#additional-resources}
 

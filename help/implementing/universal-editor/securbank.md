@@ -4,7 +4,7 @@ description: Scopri l’Editor universale con esperienza pratica utilizzando l�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -25,8 +25,8 @@ Scopri l’Editor universale con esperienza pratica utilizzando l’app SecurBan
 L’installazione dell’app SecurBank è immediata, ma poiché interessa molte aree di AEM as a Cloud Service sono necessari diversi passaggi. Di seguito è riportata una panoramica dei passaggi principali.
 
 1. [Crea un programma sandbox in Cloud Manager](#create-sandbox-program).
-1. [Clona l&#39;archivio Git del programma e aggiornalo con il contenuto del progetto AEM di SecurBank](#clone-and-update).
-1. [Esegui la pipeline per distribuire il progetto AEM SecurBank](#run-pipeline).
+1. [Clona l&#39;archivio Git del programma e aggiornalo con il contenuto del progetto SecurBank AEM](#clone-and-update).
+1. [Esegui la pipeline per distribuire il progetto SecurBank AEM](#run-pipeline).
 1. [Recupera le credenziali di Cloud Manager per lo sviluppo di app Web locali](#retrieve-credentials).
 1. [Scarica e configura l&#39;app Web SecurBank](#download-web-app).
 1. [Esegui l&#39;app Web SecurBank](#run-web-app).
@@ -44,7 +44,7 @@ Sarà necessario un nuovo programma Cloud Manager in cui installare SecurBank.
    * Utilizza le opzioni predefinite per selezionare **Soluzioni e componenti aggiuntivi**.
    * Per informazioni dettagliate su come creare un programma sandbox, consulta il documento [Creazione di programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
-### Clona l’archivio Git del programma e aggiornalo con il contenuto del progetto AEM di SecurBank. {#clone-and-update}
+### Clona l’archivio Git del programma e aggiornalo con il contenuto del progetto SecurBank AEM. {#clone-and-update}
 
 1. Una volta creato il programma, aprilo e nella scheda **Archivi** tocca o fai clic sul pulsante **Accedi a dati archivio** per aprire la finestra di dialogo **Informazioni archivio** e visualizzare le credenziali necessarie per accedere all&#39;archivio Git per l&#39;ambiente sandbox.
 
@@ -54,7 +54,7 @@ Sarà necessario un nuovo programma Cloud Manager in cui installare SecurBank.
 
 1. Individuare la cartella del clone locale, aprirla ed eliminare tutto il contenuto ad eccezione dei file nascosti/punti.
 
-1. Recupera il codice del progetto AEM SecurBank più recente da GitHub alle [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) facendo clic su **Code** e quindi su **Scarica ZIP** nel menu a discesa.
+1. Recupera il codice del progetto SecurBank AEM più recente da GitHub all&#39;indirizzo [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) facendo clic su **Codice** e quindi su **Scarica ZIP** nel menu a discesa.
 
 1. Decomprimi il contenuto del file zip sul file system locale e spostalo nella cartella ora vuota del clone locale del programma sandbox.
 
@@ -64,9 +64,9 @@ Sarà necessario un nuovo programma Cloud Manager in cui installare SecurBank.
    1. `git commit -m "Adding SecurBank app code"`
    1. `git push`
 
-### Esegui la pipeline per distribuire il progetto AEM SecurBank. {#run-pipeline}
+### Esegui la pipeline per distribuire il progetto SecurBank AEM. {#run-pipeline}
 
-Con il commit del progetto AEM per SecurBank nell’archivio sandbox, è possibile distribuirlo con una pipeline.
+Dopo aver eseguito il commit del progetto AEM per SecurBank nell’archivio sandbox, è possibile distribuirlo con una pipeline.
 
 1. Torna alla scheda **Panoramica** del programma sandbox in Cloud Manager ed esegui la pipeline non di produzione full stack.
 
@@ -137,3 +137,6 @@ Congratulazioni Ora l’app SecurBank è in esecuzione correttamente nel browser
 Se il contenuto non viene ancora visualizzato, verificare che la pipeline **Distribuzione a Dev** eseguita sia stata completata correttamente.
 
 ![App SecurBank nel browser](assets/securbank.png)
+
+{{ue-headless-auth}}
+
