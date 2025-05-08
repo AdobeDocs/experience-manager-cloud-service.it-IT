@@ -1,13 +1,13 @@
 ---
-title: Guida introduttiva a Edge Delivery Services per AEM Forms. Crea un modulo.
-description: Crea moduli perfetti, velocemente. ⚡ authoring basato su documento di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
+title: Creare un modulo utilizzando il blocco Forms adattivo
+description: Introduzione a Edge Delivery Services per AEM Forms. Crea moduli perfetti, velocemente. Authoring basato su documenti di AEM Forms Edge Delivery = velocità sorprendente e moduli compatibili con SEO per utenti e motori di ricerca più felici.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: ccadacb5db3c0dd57e61a9a1404049dbe7aa98d2
+source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 96%
 
 ---
 
