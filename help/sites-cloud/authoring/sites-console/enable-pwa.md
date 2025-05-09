@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dfa378e6ff8d0295a1e59cbf2cc71ca1a3eae9cb
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 60%
+source-wordcount: '1896'
+ht-degree: 61%
 
 ---
 
@@ -27,11 +27,7 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 >
 >Prima di utilizzare questa funzione, Adobe consiglia di discuterne con il team di sviluppo per definire il modo migliore per utilizzarla per il progetto.
 
->[!IMPORTANT]
->
->Le funzionalità progressive web app (PWA) per AEM Sites [ sono state dichiarate obsolete](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
->
->I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non dovrebbero utilizzare questa funzione.
+{{pwa-deprecation}}
 
 ## Introduzione {#introduction}
 

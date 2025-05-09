@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 # Snippet {#snippets}
@@ -222,7 +222,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
@@ -265,3 +265,11 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 >[!NOTE]
 >
 >Se utilizzi l’editor universale in un caso d’uso headless, l’app headless deve gestire la propria autenticazione.
+
+## PWA obsoleto {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>Le funzionalità progressive web app (PWA) per AEM Sites [ sono state dichiarate obsolete](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non dovrebbero utilizzare questa funzione.

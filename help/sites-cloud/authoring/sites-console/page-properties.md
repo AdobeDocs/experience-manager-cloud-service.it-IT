@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 87%
+source-wordcount: '2454'
+ht-degree: 82%
 
 ---
 
@@ -226,7 +226,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
 * **Configurazione**
 
-   * **Ereditarietà della Live Copy**: se selezionato, la configurazione Live Copy ha effetto su tutti gli elementi figli
+   * **Ereditarietà della Live Copy**: se selezionato, la configurazione Live Copy ha effetto su tutti gli elementi secondari
    * **Eredita configurazioni di rollout dal genitore**: se selezionato, la configurazione di rollout viene ereditata dalla pagina genitore
    * **Scegli configurazione di rollout**: definisce le circostanze in cui le modifiche vengono propagate dalla Blueprint e disponibili solo quando **Eredita configurazioni di rollout dall’elemento principale** non è selezionato
 
@@ -242,7 +242,9 @@ Grazie a una configurazione semplice, un autore di contenuti può ora abilitare 
 
 >[!NOTE]
 >
->Consulta [Abilitazione delle funzionalità progressive delle app Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Per ulteriori dettagli, vedere [Abilitazione delle funzionalità progressive dell&#39;app Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+
+{{pwa-deprecation}}
 
 * **Configura esperienza installabile**
 
@@ -337,3 +339,35 @@ Dopo aver attivato la funzione Modifica in serie, puoi effettuare le seguenti op
       * I nuovi valori vengono applicati a tutte le pagine selezionate quando selezioni **Fine**.
       * Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.
    * I campi in comune ma con valori diversi nelle varie pagine sono contraddistinti da uno speciale valore, ad esempio il testo `<Mixed Entries>`.
+
+## Ereditarietà proprietà {#inheritance}
+
+Se la pagina è basata su una blueprint o in altro modo eredita il contenuto da un&#39;altra pagina, l&#39;ereditarietà si riflette nella finestra **Proprietà pagina** per il singolo campo.
+
+![Proprietà ereditate](assets/property-inhertiance.png)
+
+Impossibile modificare le proprietà ereditate. Tocca o fai clic sull&#39;icona **Annulla ereditarietà** accanto a un determinato campo per interromperne l&#39;ereditarietà.
+
+![Annulla ereditarietà](assets/cancel-inheritance.png)
+
+Conferma l&#39;annullamento nel modale **Annulla ereditarietà**.
+
+![Annulla conferma ereditarietà modale](assets/cancel-inheriance-confirmation.png)
+
+Una volta annullata l’ereditarietà di un campo, questo diventa modificabile.
+
+![Ereditarietà annullata](assets/property-inheritance-broken.png)
+
+Per ripristinare l&#39;ereditarietà, tocca o fai clic sull&#39;icona **Ripristina ereditarietà** accanto al campo.
+
+![Ripristina ereditarietà](assets/revert-inheritance.png)
+
+Conferma la reversione nel modale **Ripristina ereditarietà**.
+
+![Ripristina conferma ereditarietà modale](assets/revert-inhertiance-confirmation.png)
+
+Seleziona **Sincronizza pagina dopo aver ripristinato l&#39;ereditarietà** per aggiornare il campo con i valori più recenti nella blueprint. In caso contrario, i valori verranno aggiornati alla successiva sincronizzazione della Live Copy.
+
+>[!TIP]
+>
+>Per ulteriori informazioni sull&#39;ereditarietà, vedere il documento [Gestione multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md)
