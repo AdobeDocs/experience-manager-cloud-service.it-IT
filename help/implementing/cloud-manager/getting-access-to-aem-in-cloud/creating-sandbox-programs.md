@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -43,7 +43,7 @@ Ulteriori informazioni sui tipi di programmi nel documento [Informazioni su prog
 1. Nella casella di riepilogo **Soluzioni e componenti aggiuntivi** selezionare una o più soluzioni da includere nel programma.
 
    * Fai clic sulla freccia a sinistra del nome di una soluzione per visualizzare eventuali componenti aggiuntivi opzionali disponibili che desideri includere con una soluzione selezionata.
-   * Le soluzioni **Sites**, **Assets** e **Edge Deliver Services** sono sempre selezionate per impostazione predefinita quando si crea un programma sandbox. Non è possibile deselezionarli.
+   * Le soluzioni **Sites**, **Assets** e **Edge Delivery Services** sono sempre selezionate per impostazione predefinita quando si crea un programma sandbox. Non è possibile deselezionarli.
 
    ![Selezionare soluzioni e componenti aggiuntivi per una sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -67,11 +67,11 @@ Al termine della creazione di un nuovo programma sandbox, puoi visualizzare i de
    >
    >Per ulteriori informazioni sull&#39;accesso e la gestione dell&#39;archivio Git, vedere [Accesso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Dopo aver creato l&#39;ambiente di sviluppo, è possibile fare clic su **Accedi a AEM** e accedere a AEM.
+1. Dopo aver creato l&#39;ambiente di sviluppo, puoi fare clic su **Accedi ad AEM** e accedere ad AEM.
 
    ![Collegamento per l’accesso a AEM](assets/create-program5.png)
 
-1. Al termine della distribuzione della pipeline non di produzione nell’ambiente di sviluppo, la procedura guidata dell’invito all’azione ti guida ad accedere all’ambiente di sviluppo AEM o a distribuire il codice nell’ambiente di sviluppo.
+1. Al termine della distribuzione della pipeline non di produzione nell’ambiente di sviluppo, la procedura guidata di call-to-action ti guida ad accedere all’ambiente di sviluppo AEM o a distribuire il codice nell’ambiente di sviluppo.
 
    ![Distribuzione del programma sandbox](assets/create-program-setup-deploy.png)
 

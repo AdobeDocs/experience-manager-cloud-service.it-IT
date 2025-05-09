@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Consulta [Altre opzioni del programma di produzione](#options).
 
    * Se non sai per certo se ti servono uno o più programmi per le varie soluzioni disponibili, seleziona quella che più ti interessa. Potrai attivare altre soluzioni in un secondo tempo [modificando il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Per ulteriori consigli sulla configurazione del programma, consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
    * Per la creazione del programma è necessaria almeno una soluzione.
-   * Seleziona **Edge Deliver Services** per una soluzione CDN completamente gestita che ottimizza le esperienze digitali. Consulta [Informazioni sull&#39;utilizzo di Edge Delivery Services per consegnare il tuo progetto Cloud Manager](#edge-overview)
+   * Seleziona **Edge Delivery Services** per una soluzione CDN completamente gestita che ottimizza le esperienze digitali. Consulta [Informazioni sull&#39;utilizzo di Edge Delivery Services per consegnare il tuo progetto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * Se è stata selezionata l&#39;opzione **[Abilita sicurezza avanzata](#security)**, è possibile selezionare solo tutte le soluzioni per le quali sono disponibili i diritti HIPAA.
 
      ![Selezione delle soluzioni](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Oltre alle adesioni richieste, l&#39;utilizzo del 99,99% di SLA per Sites o Form
 
 1. Per accedere alla pagina **Panoramica** di Cloud Manager, seleziona **Panoramica del programma**.
 
-1. La principale scheda di invito all’azione nella pagina della panoramica ti guida attraverso la creazione di un ambiente, una pipeline non di produzione e infine una pipeline di produzione.
+1. La scheda call-to-action principale nella pagina della panoramica ti guida attraverso la creazione di un ambiente, una pipeline non di produzione e infine una pipeline di produzione.
 
    ![Panoramica del programma](assets/set-up-prod5.png)
 
