@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.5.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 20%
+source-wordcount: '780'
+ht-degree: 21%
 
 ---
 
@@ -40,9 +40,9 @@ La configurazione dell&#39;origine di contenuto differisce tra Helix 4 e Helix 5
 
 Questo articolo fornisce passaggi di configurazione completi, esempi e istruzioni di convalida per entrambe le versioni.
 
-B **prima di iniziare**
+**Prima di iniziare**
 
-Se in Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. Seguire le istruzioni Helix 5 e utilizzare la versione Helix 4 YAML fornita come fallback.
+Se in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi [un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. Seguire le istruzioni Helix 5 e utilizzare la versione Helix 4 YAML fornita come fallback.
 
 **Determinare la versione Helix**
 
@@ -131,7 +131,7 @@ Utilizza l’API del servizio di configurazione.
 1. Esegui l’autenticazione tramite una chiave API o un token di accesso.
 1. Effettua la seguente chiamata API `PUT`:
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
