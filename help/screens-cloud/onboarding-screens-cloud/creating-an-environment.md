@@ -4,9 +4,9 @@ description: Questa pagina descrive la creazione di un ambiente in Cloud Manager
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 5%
 
 ---
@@ -22,9 +22,9 @@ Questa sezione descrive come creare un ambiente per il programma in Cloud Manage
 
 La sezione seguente descrive come creare un ambiente per il programma in Cloud Manager.
 
-## Passaggi per creare un ambiente per il progetto Screens in Cloud Manager {#steps-branch-creation}
+## Passaggi per creare un ambiente per il progetto in Cloud Manager {#steps-branch-creation}
 
-Una volta completata la creazione del progetto, puoi visualizzare l’aggiornamento della scheda di invito all’azione nella pagina Panoramica di Cloud Manager.
+Una volta completata la creazione del progetto, puoi visualizzare l’aggiornamento della scheda call-to-action nella pagina Panoramica di Cloud Manager.
 
 1. Passa a Cloud Manager e seleziona l&#39;icona per accedere alla pagina **Panoramica** di Cloud Manager.
 
@@ -36,7 +36,7 @@ Una volta completata la creazione del progetto, puoi visualizzare l’aggiorname
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Una volta aggiunto l’ambiente completo, la scheda di invito all’azione viene aggiornata come illustrato nella figura riportata di seguito.
+1. Una volta aggiunto l’ambiente completo, la scheda call-to-action viene aggiornata come illustrato nella figura riportata di seguito.
 
    ![immagine](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
