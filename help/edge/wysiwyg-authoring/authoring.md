@@ -7,10 +7,10 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -59,4 +59,4 @@ Consulta la [Guida introduttiva per sviluppatori di authoring WYSIWYG con Edge D
 
 L’authoring WYSIWYG è uno strumento potente e intuitivo per gli autori di contenuti. Tuttavia, esistono molti casi d’uso diversi per l’authoring ed è per questo che AEM offre soluzioni di authoring aggiuntive.
 
-Per ulteriori informazioni sulle soluzioni per l’authoring offerte da AEM, tra cui quello basato su documenti e headless, consulta il documento [Scelta di un metodo di authoring](/help/edge/authoring-methods.md).
+Per ulteriori informazioni sulle soluzioni di authoring offerte da AEM, tra cui l&#39;authoring basato su documenti e headless, consulta il documento [Panoramica di Edge Delivery Services](/help/edge/overview.md#authoring-method).
