@@ -7,7 +7,7 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -62,19 +62,19 @@ Nella tabella del sito Edge Delivery, fai clic sull’![icona Altro](https://spe
 
      ![Aggiungere un sito di Edge Delivery dal pulsante Siti di Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## Gestire un sito Edge Delivery tra Helix 4 e Helix 5
+## Gestire un sito Edge Delivery da Helix 4 a Helix 5
 
-Utilizzare l&#39;endpoint API `/program/{programId}/site/{siteId}` per migrare un sito Edge Delivery tra Helix 4 e Helix 5.
+Utilizzare l’endpoint API `/program/{programId}/site/{siteId}` per eseguire la migrazione di un sito Edge Delivery da Helix 4 a Helix 5.
 
 >[!IMPORTANT]
 >
->Le configurazioni CDN per i siti web Helix 4 non possono essere migrate automaticamente a Helix 5. Questo limite esiste perché i siti di produzione dei clienti possono ancora essere eseguiti su Helix 4, mentre le loro versioni Helix 5 sono ancora in fase di sviluppo.
+>Le configurazioni CDN per i siti web Helix 4 non possono essere migrate automaticamente a Helix 5. Questo limite esiste perché i siti in produzione della clientela possono ancora essere eseguiti su Helix 4, mentre le versioni Helix 5 sono ancora in fase di sviluppo.
 
 **Prerequisiti**
 
-* `sitename` deve già esistere.
+* `sitename` deve esistere già.
 * Conoscere i valori `branchName`, Helix `version` e `repo` appropriati.
-* La migrazione modifica solo `branchName`, Helix `version` e `repo`. Impossibile modificare il campo del proprietario.
+* La migrazione modifica solo `branchName`, Helix `version` e `repo`. Il campo proprietario non può essere modificato.
 
 **Formato API**
 
@@ -83,7 +83,7 @@ PUT /api/program/{programId}/site/{siteId}
 ```
 
 **Parametri corpo richiesta**
-Crea una sostituzione per un sito Edge Delivery per applicare l’origine specificata nel corpo della richiesta.
+Crea una sostituzione di un sito Edge Delivery per applicare l’origine specificata nel corpo della richiesta.
 
 ```json
 {
@@ -96,13 +96,13 @@ Crea una sostituzione per un sito Edge Delivery per applicare l’origine specif
 
 ### Esempio 1: migrazione a Helix 5
 
-**http**
+**HTTP**
 
 ```http
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**json**
+**JSON**
 
 ```json
 {
@@ -121,13 +121,13 @@ Restituisce un sito Edge Delivery con il seguente URL di origine:
 
 ### Esempio 2: migrazione a Helix 4
 
-**http**
+**HTTP**
 
 ```http
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**json**
+**JSON**
 
 ```json
 {
@@ -143,15 +143,15 @@ Restituisce un sito Edge Delivery con il seguente URL di origine:
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### Esempio 3: migrazione del sito di replica a Helix 5
+### Esempio 3: migrazione di un sito senza archivio a Helix 5
 
-**http**
+**HTTP**
 
 ```http
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**json**
+**JSON**
 
 ```json
 {
@@ -167,6 +167,6 @@ Restituisce un sito Edge Delivery con il seguente URL di origine:
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 
-## Registrare un ticket di assistenza {#eds-support-ticket}
+## Registrare un ticket di supporto {#eds-support-ticket}
 
 {{support-ticket}}
