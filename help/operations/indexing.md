@@ -4,10 +4,10 @@ description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cl
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
-ht-degree: 22%
+source-wordcount: '2850'
+ht-degree: 21%
 
 ---
 
@@ -31,9 +31,9 @@ Di seguito è riportato un elenco delle modifiche principali rispetto ad AEM 6.5
 
 Limiti:
 
-* Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo `lucene`.
-* Sono supportati solo gli analizzatori standard (ovvero gli analizzatori forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
+* Attualmente, la gestione degli indici su AEM as a Cloud Service è supportata solo per gli indici di tipo `lucene`. Tutte le personalizzazioni dell&#39;indice devono essere di tipo `lucene`. La proprietà `async` può essere solo una delle seguenti: `[async]`, `[async,nrt]` o `[fulltext-async]`.
 * Internamente, possono essere configurati e utilizzati per le query altri indici. Ad esempio, le query scritte rispetto all’indice `damAssetLucene` potrebbero, su Skyline, essere eseguite in base a una versione Elasticsearch di questo indice. Questa differenza generalmente non è visibile all&#39;applicazione e all&#39;utente, tuttavia alcuni strumenti come la funzionalità `explain` segnalano un indice diverso. Per le differenze tra gli indici Lucene e gli indici Elastic, vedi [la documentazione Elastic in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). I clienti non devono e non possono configurare direttamente gli indici di Elasticsearch.
+* Sono supportati solo gli analizzatori standard (ovvero gli analizzatori forniti con il prodotto). Gli analizzatori personalizzati non sono supportati.
 * La ricerca per vettori di funzionalità simili (`useInSimilarity = true`) non è supportata.
 
 >[!TIP]
@@ -78,6 +78,9 @@ Per le personalizzazioni di un indice OOTB, prepara un nuovo pacchetto contenent
 Per un indice completamente personalizzato, prepara un nuovo pacchetto di definizione dell’indice che contiene la definizione dell’indice che segue questo pattern di denominazione:
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
+
+Come indicato nelle sezioni delle limitazioni, `type` della definizione dell&#39;indice personalizzato deve essere sempre impostato su `lucene` anche se la definizione dell&#39;indice estratto utilizzando Gestione pacchetti è di un tipo diverso (ad esempio `elasticsearch`).
+È inoltre necessario modificare la proprietà `async` se la definizione dell&#39;indice estratto è impostata su `elastic-async`. La proprietà `async` deve essere impostata su uno dei seguenti valori: `[async]`, `[async,nrt]` o `[fulltext-async]` per la definizione dell&#39;indice personalizzato.
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
