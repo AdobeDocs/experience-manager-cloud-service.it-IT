@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 14%
 
 ---
@@ -33,9 +33,8 @@ Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzio
 * SITES-27775: Ricerca di riferimento ottimizzata durante la pubblicazione.
 * SITES-30885: elaborazione JSON ottimizzata nelle query persistenti.
 * SITES-25433: Edge Delivery con Universal Editor: supportano il rendering di pagine intere quando si confrontano versioni precedenti.
-* SITES-27792: Edge Delivery con Universal Editor: spostare completamente la configurazione EDS nella configurazione CA.
+* SITES-27792: Edge Delivery con Universal Editor: aggiungi un modello specifico per le configurazioni del servizio Edge Delivery
 * SITES-19754: Edge Delivery con Universal Editor: messaggio di errore convincente quando la configurazione non viene eseguita correttamente.
-* SITES-30267: Edge Delivery con Universal Editor: Sheet V2 (Early Access).
 * SITES-30328: Edge Delivery con Universal Editor: anteprima dal supporto Sidekick.
 * SITES-23499: Edge Delivery con Universal Editor: consente di utilizzare più campi per le opzioni di blocco.
 * SITES-29987: aggiungi la funzionalità per impostare `previewUrlPattern` durante la creazione di modelli per frammenti di contenuto.
