@@ -118,4 +118,4 @@ AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle 
 | AEM Oak | 1.78.1-T20250429061757 | [API Oak API 1.78.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.78.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.26-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
-| Componenti core AEM | 2,29,0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Componenti core AEM | 2.29.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |

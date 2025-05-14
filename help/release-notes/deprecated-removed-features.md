@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
 workflow-type: tm+mt
 source-wordcount: '2554'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -226,7 +226,7 @@ Di seguito è riportato un ampio elenco delle API AEM obsolete con la relativa d
 </table>
 </details>
 
-Di seguito è riportato un ampio elenco delle API di AEM rimosse.
+Di seguito è riportato un ampio elenco delle API AEM rimosse.
 
 <details>
   <summary>Espandi per visualizzare l’elenco delle API rimosse.</summary>
