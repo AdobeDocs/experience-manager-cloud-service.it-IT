@@ -4,14 +4,14 @@ description: Scopri come creare rapidamente un sito Edge Delivery in Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 59743546b5e057599f60a76d3087d7c5b6423b2e
+source-git-commit: 767b1f89f42340cc9307a43ff9e97e9a074e592e
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 98%
+source-wordcount: '948'
+ht-degree: 97%
 
 ---
 
-# Informazioni sulla creazione di un sito Edge Delivery in Cloud Manager {#about-one-click-edge-delivery-site}
+# Informazioni sulla creazione di un sito Edge Delivery in Cloud Manager con un clic{#about-one-click-edge-delivery-site}
 
 La funzionalità Crea un sito Edge Delivery è progettata per automatizzare l’onboarding e la distribuzione di siti Edge Delivery all’interno di Cloud Manager. Il processo è notevolmente semplificato ed è sufficiente fare clic su un singolo pulsante. Con un singolo clic, infatti, si esegue il provisioning dell’infrastruttura richiesta, l’integrazione con GitHub per il controllo della versione e la configurazione del’archiviazione di documenti e risorse in Google Drive.
 

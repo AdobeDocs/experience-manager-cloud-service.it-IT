@@ -1,23 +1,23 @@
 ---
-title: Aggiungere una configurazione CDN
-description: Scopri come aggiungere una configurazione CDN per un sito Edge Delivery o un ambiente Cloud Manager.
+title: Aggiungere una mappatura dominio
+description: Scopri come aggiungere una mappatura di dominio per un sito Edge Delivery o un ambiente Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
 
-# Aggiungere una configurazione CDN {#add-cdn}
+# Aggiungere una mappatura di dominio {#add-cdn}
 
 Per collegare un dominio con un certificato SSL sulla rete CDN gestita da Adobe all’interno del programma, è necessario aggiungere una configurazione CDN (Content Delivery Network).
 
-Ad Adobe, per le CDN gestite, quando si utilizza un certificato SSL DV, sono consentiti solo i siti con convalida ACME.
+Per le CDN gestite da Adobe, quando si utilizza un certificato SSL DV, sono consentiti solo i siti con convalida ACME.
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ Ad Adobe, per le CDN gestite, quando si utilizza un certificato SSL DV, sono con
 
 Vedi anche [CDN gestito da Adobe](https://www.aem.live/docs/byo-cdn-adobe-managed).
 
-**Per aggiungere una configurazione CDN:**
+**Per aggiungere un mapping di dominio:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -43,13 +43,13 @@ Vedi anche [CDN gestito da Adobe](https://www.aem.live/docs/byo-cdn-adobe-manage
    | Origine | Descrizione |
    | --- | --- |
    | Sites | Seleziona un sito Edge Delivery. |
-   | Ambiente | Seleziona un ambiente di Cloud Service specifico di cui desideri eseguire il targeting all’interno della configurazione AEM.<br>Nell&#39;elenco a discesa **Livello**, selezionare una delle opzioni seguenti:<br>· Selezionare **Publish** per impostare come destinazione un ambiente di produzione live in cui il contenuto viene distribuito agli utenti finali.<br>· Selezionare **Anteprima** per gli ambienti di staging o non di produzione in cui si esegue il test delle modifiche prima che vengano pubblicate. |
+   | Ambiente | Seleziona un ambiente Cloud Service specifico di cui desideri eseguire il targeting nella configurazione di AEM.<br>Nell&#39;elenco a discesa **Livello**, selezionare una delle opzioni seguenti:<br>· Selezionare **Pubblica** per eseguire il targeting di un ambiente di produzione live in cui il contenuto viene distribuito agli utenti finali.<br>· Selezionare **Anteprima** per gli ambienti di staging o non di produzione in cui si esegue il test delle modifiche prima che vengano pubblicate. |
 
 1. Seleziona il tipo di CDN e la configurazione associata selezionando una delle seguenti opzioni:
 
    | Tipo CDN | Dettagli configurazione |
    | --- | --- |
    | CDN gestita da Adobe | In **Dettagli configurazione** eseguire le operazioni seguenti:<br>a. Nell&#39;elenco a discesa **Dominio** selezionare il nome di dominio che si desidera utilizzare.<br>Nessun dominio verificato disponibile nell&#39;elenco a discesa? Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br> b. Nell&#39;elenco a discesa **Certificato SSL** selezionare il certificato che si desidera utilizzare.<br>Nessun certificato SSL disponibile nell&#39;elenco a discesa? Vedi [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-   | Altro provider CDN | Seleziona questa opzione se utilizzi un provider CDN personalizzato e non la rete CDN gestita Adobe disponibile.<br>In **Dettagli configurazione**, nell&#39;elenco a discesa **Dominio**, selezionare il nome di dominio che si desidera utilizzare.<br>Nessun dominio verificato disponibile nell&#39;elenco a discesa? Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+   | Altro provider CDN | Seleziona questa opzione se utilizzi un provider CDN personalizzato e non la rete CDN gestita di Adobe disponibile.<br>In **Dettagli configurazione**, nell&#39;elenco a discesa **Dominio**, selezionare il nome di dominio che si desidera utilizzare.<br>Nessun dominio verificato disponibile nell&#39;elenco a discesa? Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Fai clic su **Salva**.
