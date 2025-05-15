@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -81,12 +81,12 @@ Completa la procedura guidata come faresti per qualsiasi altra pagina e hai crea
 
 I modelli di pagina definiscono solo il contenuto iniziale delle pagine. Le pagine sono quindi completamente modificabili con l’Editor universale.
 
-* Le pagine create da modelli di pagine sono copie indipendenti del modello.
+* Le pagine create da modelli di pagina sono copie indipendenti del modello.
 * Se il modello cambia, le pagine esistenti basate su quel modello non cambiano.
 * L’autore del contenuto può modificare e aggiornare il contenuto della pagina risultante, se necessario, senza limitazioni dal modello.
 
 ## Modelli modificabili {#editable-templates}
 
-Anche le pagine create con [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) possono essere basate su modelli. I modelli utilizzati per creare pagine per l&#39;Editor universale e l&#39;Editor pagina sfruttano entrambi i [modelli modificabili](/help/implementing/developing/components/templates.md) dell&#39;AEM.
+Anche le pagine create con [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) possono essere basate su modelli. I modelli utilizzati per la creazione di pagine per l&#39;Editor universale e l&#39;Editor pagina sfruttano entrambi i [modelli modificabili](/help/implementing/developing/components/templates.md) di AEM.
 
 I modelli utilizzati per creare pagine modificabili con Editor pagina utilizzano tutte le funzioni dei modelli modificabili. I modelli utilizzati per creare pagine modificabili con Universal Editor utilizzano solo la funzione di contenuto iniziale.
