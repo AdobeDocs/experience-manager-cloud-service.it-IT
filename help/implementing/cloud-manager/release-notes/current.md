@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.5.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 16%
+source-wordcount: '1050'
+ht-degree: 15%
 
 ---
 
@@ -42,7 +42,7 @@ Questo articolo fornisce passaggi di configurazione completi, esempi e istruzion
 
 **Prima di iniziare**
 
-Se in Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. Seguire le istruzioni Helix 5 e utilizzare la versione Helix 4 YAML delle istruzioni come fallback.
+Se in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi [un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. Seguire le istruzioni Helix 5 e utilizzare la versione Helix 4 YAML delle istruzioni come fallback.
 
 **Determinare la versione Helix**
 
@@ -166,11 +166,11 @@ Partecipa al programma Early Adopter di Cloud Manager per ottenere accesso esclu
 
 Sono attualmente disponibili le seguenti opportunità di adozione anticipata:
 
-### Aggiungi pipeline Edge Delivery {#add-eds-pipeline}
+### Aggiungi pipeline di configurazione Edge Delivery {#add-eds-pipeline}
 
-**Le pipeline** sono ora supportate per i siti generati con Edge Delivery Services, espandendo questa funzionalità oltre gli ambienti Cloud Service. È possibile utilizzare **Pipeline** per gestire impostazioni quali le regole di filtro del traffico e le configurazioni di Web Application Firewall (WAF), se applicabile. Vedi [Configurazioni supportate](/help/operations/config-pipeline.md#configurations).
+Le pipeline di configurazione sono ora supportate per i siti creati con Edge Delivery Services, espandendo questa funzionalità oltre gli ambienti Cloud Service. È possibile utilizzare **Pipeline di configurazione** per gestire impostazioni quali le regole di filtro del traffico e le configurazioni del Firewall applicazione Web (WAF), se applicabile. Vedi [Configurazioni supportate](/help/operations/config-pipeline.md#configurations).
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![Aggiungi pipeline Edge Delivery nell&#39;elenco a discesa Aggiungi pipeline](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
@@ -197,7 +197,7 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 |---|---|
 | *Come può un progetto tornare all&#39;archivio Git gestito da Adobe, se necessario?* | Il passaggio all’indietro è semplice. [Aggiorna le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) in modo che puntino all&#39;archivio Adobe e rimuovi l&#39;archivio esterno se non è più necessario. |
 | *È possibile configurare archivi diversi per ambienti diversi (ad esempio, non di produzione rispetto alla produzione) per consentire prima il test in ambienti non di produzione?* | Sì, è possibile configurare archivi diversi per ambienti separati. Ad esempio, la pipeline di sviluppo o di qualità del codice può puntare a un archivio esterno mentre la pipeline di produzione rimane connessa all’archivio Adobe. Assicurati che il processo di sincronizzazione tra i due archivi rimanga attivo durante questa configurazione. |
-| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i indirizzi IP Adobe necessari. |
+| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i [indirizzi IP Adobe necessari. |
 | *Tutti gli URL dell&#39;archivio GitLab funzionano? L&#39;URL del repository in uso segue il formato `https://gitlab_dedicated_url.com/path/repo-name.git`, che differisce dall&#39;esempio riportato nella documentazione.* | Sì, è supportato qualsiasi archivio GitLab che supporta API V3 o V4, inclusi gli URL GitLab con hosting autonomo come quello descritto in [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
