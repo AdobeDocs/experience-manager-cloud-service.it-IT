@@ -3,13 +3,11 @@ title: Come integrare il modello dati modulo (FDM) per un modulo nell’editor u
 description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +15,13 @@ ht-degree: 100%
 
 L’integrazione dei moduli con un modello di dati modulo (FDM) nell’editor universale consente di utilizzare diverse origini dati back-end per creare un modello di dati modulo (FDM). Puoi utilizzare il modello dati modulo (FDM) come schema in vari flussi di lavoro di moduli. Configura le origini dati e crea un modello dati modulo (FDM) basato sugli oggetti e i servizi del modello dati disponibili nelle origini dati.
 
-## Considerazione
+## Considerazioni
+
+* Se nell&#39;interfaccia di Universal Editor non viene visualizzata l&#39;icona **Origini dati** o la proprietà **Associa riferimento** nel pannello delle proprietà di destra, abilitare l&#39;estensione **Origine dati** in **Extension Manager**.
+
+  ![gestore estensioni](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  Per informazioni su come abilitare e disabilitare le estensioni in Universal Editor, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 * Il servizio di precompilazione dei moduli nell’editor universale non è attualmente supportato.
 
@@ -32,6 +36,7 @@ Prima di configurare il modulo con il modello dati modulo nell’editor universa
 ## Creazione di moduli con il modello dati del modulo nell’editor universale
 
 Nell’editor universale puoi creare:
+
 * [Modulo basato su schema](#schema-based-form): un modulo basato su schema utilizza un’origine dati configurata durante la creazione del modulo nella scheda **Dati**, associando automaticamente i dati ai campi del modulo.
 * [Modulo non basato su schema](#non-schema-based-form): per un modulo non basato su schema è necessario aggiungere manualmente un’origine dati e associare ogni campo dalla struttura del contenuto.
 
@@ -44,14 +49,14 @@ Questi metodi offrono la flessibilità di collegare modelli di dati con moduli i
 Quando crei un modulo basato su schema, questo viene configurato automaticamente con un’origine dati e i campi modulo sono già collegati ai dati tramite associazioni di dati. Per creare un modulo basato su schema utilizzando la procedura guidata di creazione di moduli, esegui i seguenti passaggi:
 
 1. Accedi all’istanza di authoring [!DNL Experience Manager Forms].
-2. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
-3. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Moduli adattivi]**. Viene aperta la procedura guidata. Nella scheda **Origine**, seleziona un modello:
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
+1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Moduli adattivi]**. Viene aperta la procedura guidata. Nella scheda **Origine**, seleziona un modello:
 
    ![Modello di Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
    Quando selezioni un modello basato su Edge Delivery Services, il pulsante **[!UICONTROL Crea]** è abilitato. Per selezionare un’origine dati o un’azione di invio, è possibile passare alle schede **[!UICONTROL Origine dati]** o **[!UICONTROL Invio]**.
 
-4. Nella scheda **Dati** è possibile selezionare uno dei seguenti modelli di dati:
+1. Nella scheda **Dati** è possibile selezionare uno dei seguenti modelli di dati:
 
    * **Modello dati modulo (FDM)**: integra nel modulo gli oggetti e i servizi del modello dati dalle origini dati. Se il modulo richiede la lettura e la scrittura di dati da più origini, scegli Modello dati modulo (FDM).
 
@@ -64,11 +69,11 @@ Quando crei un modulo basato su schema, questo viene configurato automaticamente
 
      Per impostazione predefinita, tutti i campi dello schema JSON e del modello dati modulo associato vengono selezionati e convertiti automaticamente nei componenti del modulo corrispondenti, semplificando il processo di authoring. La procedura guidata consente inoltre di scegliere in modo selettivo i campi da includere nel modulo utilizzando le caselle di controllo.
 
-5. Fai clic su **[!UICONTROL Crea]** per visualizzare la procedura guidata **Crea modulo**.
-6. Specifica **Nome** e **Titolo**.
-7. Specifica l’**URL di GitHub**. Ad esempio, se l’archivio GitHub è denominato `edsforms` e si trova sotto l’account `wkndforms`, l’URL è:
+1. Fai clic su **[!UICONTROL Crea]** per visualizzare la procedura guidata **Crea modulo**.
+1. Specifica **Nome** e **Titolo**.
+1. Specifica l’**URL di GitHub**. Ad esempio, se l’archivio GitHub è denominato `edsforms` e si trova sotto l’account `wkndforms`, l’URL è:
    `https://github.com/wkndforms/edsforms`
-8. Fai clic su **[!UICONTROL Crea]**.
+1. Fai clic su **[!UICONTROL Crea]**.
 
    ![Crea modulo basato su schema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,12 +133,29 @@ Quando crei un modulo non basato su schema, non viene configurata alcuna origine
 
    ![Crea modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Devi aggiungere manualmente l’associazione dei dati a un elemento del modulo specificandolo nelle proprietà **Riferimento a un’associazione** di tale elemento.
-Aggiungi, ad esempio, un riferimento di associazione dati alla casella di testo **Nome animale domestico** già presente nel modulo:
+È possibile aggiungere l&#39;associazione dati a un campo modulo selezionandolo dalla proprietà **Riferimento associazione**. Aggiungiamo ad esempio un riferimento di associazione dati alla casella di testo **Id** già presente nel modulo.
+Per selezionare l&#39;associazione dati per il campo modulo dalla struttura dell&#39;origine dati, effettuare le seguenti operazioni:
+
+1. Aprire le proprietà del campo modulo per cui si desidera aggiungere il riferimento associazione dati.
+1. Vai alla proprietà **Associa riferimento** e fai clic sull&#39;icona **Sfoglia**.
 
    ![Aggiungere manualmente l’associazione dati per un campo modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   Puoi ora aggiungere e [configurare l’azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md) per il modulo.
+1. Scegliere il riferimento all&#39;associazione dati dalla struttura dell&#39;origine dati nella procedura guidata **Seleziona un riferimento associazione**.
+
+   ![seleziona riferimento associazione dati](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. Selezionare l&#39;elemento dati dalla struttura origine dati che si desidera associare al campo modulo e fare clic su **Seleziona**.
+
+   ![seleziona elemento dati](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   Il campo modulo si associa all&#39;elemento dati e viene visualizzato nella proprietà **Bind Reference**.
+
+   ![Associazione automatica dei dati](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   Puoi anche modificare manualmente la proprietà **Associa riferimento** per il campo modulo.
+
+Puoi ora aggiungere e [configurare l’azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md) per il modulo.
 
 ## Consulta anche
 
