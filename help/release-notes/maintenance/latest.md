@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
+source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 12%
+source-wordcount: '1448'
+ht-degree: 15%
 
 ---
 
@@ -24,13 +24,8 @@ Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzio
 
 ### Miglioramenti {#enhancements-20783}
 
-* FORMS-18455: l’editor di moduli adattivi per i componenti core di AEM Forms è stato migliorato per visualizzare indicatori visivi (punti) per gli oggetti dati già utilizzati o mappati nel modulo all’interno della struttura dell’origine dati, una funzione che consente agli autori di identificare facilmente gli elementi dati utilizzati.
-* FORMS-18450: il prodotto viene migliorato eseguendo la migrazione della logica del dominio reCaptcha V2 in `AdaptiveFormConfigurationServiceImpl`. Questa modifica ha lo scopo di centralizzare la configurazione e può essere allineata con l’aggiunta del supporto per reCaptcha V2 invisibile nei Componenti core.
-* FORMS-19630: AEM 6.5 quickstart uber-jar è stato aggiornato per includere il pacchetto più recente dei componenti core Adaptive Forms, in modo che l’ambiente quickstart rifletta le funzionalità più recenti di Adaptive Forms e sostituisca il codice legacy.
 * FORMS-19125: l’editor di moduli adattivi dei componenti core è stato migliorato per supportare la mappatura automatica dei frammenti di moduli adattivi disponibili quando una sezione corrispondente dalla struttura dell’origine dati viene rilasciata nell’area di lavoro del modulo. Questa funzione porta una caratteristica chiave di produttività dall’editor di base ai componenti core.
-* FORMS-17887: AEM Forms ora fornisce la funzionalità di generare documenti in formato AFP (Advanced Function Presentation) tramite il servizio di output. Questo miglioramento soddisfa le esigenze dei clienti per ambienti di stampa ad alta velocità e volumi elevati che utilizzano solitamente AFP.
-* FORMS-15089: AEM Forms ha introdotto la possibilità di creare una versione di un modulo al momento della pubblicazione in modo tale che tutti i frammenti che lo compongono siano allineati (incorporati) in quella specifica versione pubblicata. Ciò garantisce una rappresentazione esatta e indipendente del modulo così come appariva al momento della pubblicazione, che può essere fondamentale per scopi di archiviazione, legali o di conformità.
-* FORMS-17107: AEM Forms ora offre l’analisi migliorata delle funzioni personalizzate lato client. Ciò include il supporto delle funzionalità moderne di JavaScript (ECMAScript ES10+), ad esempio il concatenamento opzionale, e introduce la possibilità di utilizzare importazioni statiche all&#39;interno di script di funzioni personalizzati. Questo consente agli sviluppatori di organizzare meglio il codice, utilizzare i moduli ESM e rimuovere le limitazioni precedenti incontrate con le funzioni personalizzate in Adaptive Forms v2 e Edge Delivery Services, in particolare per gli utenti che in precedenza necessitavano di soluzioni alternative per queste funzionalità.
+* FORMS-17107: AEM Forms ora offre l’analisi migliorata delle funzioni personalizzate lato client. Ciò include il supporto delle funzionalità moderne di JavaScript (ECMAScript ES10+), ad esempio il concatenamento opzionale, e introduce la possibilità di utilizzare importazioni statiche all&#39;interno di script di funzioni personalizzati. Questo consente agli sviluppatori di organizzare meglio il codice, utilizzare i moduli ESM e rimuovere le limitazioni precedenti incontrate con le funzioni personalizzate in Adaptive Forms basate su Componenti core e Edge Delivery Services, in particolare per gli utenti che in precedenza necessitavano di soluzioni alternative per queste funzionalità.
 * SITES-27775: Ricerca di riferimento ottimizzata durante la pubblicazione.
 * SITES-30885: elaborazione JSON ottimizzata nelle query persistenti.
 * SITES-25433: Edge Delivery con Universal Editor: supportano il rendering di pagine intere quando si confrontano versioni precedenti.
@@ -65,14 +60,11 @@ Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzio
 * FORMS-18526: quando una regola contenente più campi nelle relative condizioni viene copiata da un campo all’altro, un riferimento a un campo fisso all’interno di queste condizioni mantiene erroneamente il proprio riferimento al campo di origine originale invece di eseguire l’aggiornamento al nuovo campo in cui la regola viene copiata.
 * FORMS-19047: dopo la modifica e la ripubblicazione di un modulo adattivo in AEM Forms (in particolare 6.5.22.0), potrebbero mancare le traduzioni per alcuni elementi del modulo, in particolare le caselle di testo.
 * FORMS-19234: la funzione timeline per PDF in AEM Forms, che consente agli utenti di visualizzare i dettagli sulla creazione e sul controllo delle versioni di un PDF, non funziona più dopo il caricamento di qualsiasi PDF nella sezione &quot;Forms e documenti&quot;.
-* FORMS-19373: gli errori di replica non vengono segnalati correttamente durante un processo di &quot;pubblicazione dorata&quot; in ambienti in cui non sono configurati agenti di replica.
 * FORMS-18196: l&#39;API HTTP per la sincronizzazione di `generatePrintedOutput` (o `generatePdfOutput`) restituisce erroneamente un codice di risposta 200 (riuscito) invece del codice di errore 400 (richiesta non valida) previsto quando i dati dei campi facoltativi richiesti dal modello XDP vengono lasciati vuoti nella richiesta.
 * FORMS-19336: nell’editor di moduli adattivi dei componenti core (editor AF2), la funzionalità di ricerca nella struttura del Source dati non funziona correttamente o come previsto, impedendo agli utenti di trovare facilmente elementi di dati specifici.
-* FORMS-19629: il parser dello schema JSON genera risultati non validi o interpreta in modo errato alcuni schemi JSON forniti dal cliente. Questo problema può influire negativamente sulle funzionalità che si basano su un’analisi corretta dello schema, come la mappatura automatica dei frammenti.
-* FORMS-19380: l’introduzione del supporto del controllo delle versioni per i Componenti core di Adaptive Forms ha involontariamente abilitato le funzionalità di controllo delle versioni per vari altri tipi di risorse (ad esempio, Foundation Forms, file PDF, Temi, FDM) senza una progettazione o un test specifici per tali tipi di risorse. Questo effetto collaterale non voluto è sotto esame.
 * FORMS-17707: il connettore AEP (Adobe Experience Platform) non funziona correttamente se configurato per la connessione agli ambienti di stage della piattaforma AEP.
-FORMS-18526: quando si copia una regola con condizioni basate su più campi, un campo a cui si fa riferimento nelle condizioni o azioni della regola (che non è il campo primario che attiva la regola) non viene aggiornato per fare riferimento correttamente al nuovo campo a cui viene copiata la regola. Continua invece a fare riferimento al campo di origine originale da cui è stata copiata la regola.
-FORMS-18474: regola progettata per attivare un pannello o un componente specifico quando il valore di un determinato campo cambia (ad esempio, campo &quot;A&quot;), ma non viene attivata correttamente in seguito a una modifica in qualsiasi campo del modulo. Ad esempio, se il campo &quot;B&quot; viene modificato, lo stato attivo viene ancora impostato sul pannello designato, anche se la regola è stata configurata solo per le modifiche al campo &quot;A&quot;.
+* FORMS-18526: quando si copia una regola con condizioni basate su più campi, un campo a cui si fa riferimento nelle condizioni o azioni della regola (che non è il campo primario che attiva la regola) non viene aggiornato per fare riferimento correttamente al nuovo campo a cui viene copiata la regola. Continua invece a fare riferimento al campo di origine originale da cui è stata copiata la regola.
+* FORMS-18474: regola progettata per attivare un pannello o un componente specifico quando il valore di un determinato campo cambia (ad esempio, campo &quot;A&quot;), ma non viene attivata correttamente in seguito a una modifica in qualsiasi campo del modulo. Ad esempio, se il campo &quot;B&quot; viene modificato, lo stato attivo viene ancora impostato sul pannello designato, anche se la regola è stata configurata solo per le modifiche al campo &quot;A&quot;.
 * GRANITE-58276: i cicli di dipendenza OSGi impediscono il corretto funzionamento del factory del motore di script HTL.
 * OAK-11673: aumento di Oak-segment-azure v12 CPU causato da refreshLease.
 * SITES-30752: non utilizzare le intestazioni `If-modified-since`/`last-modified` durante la generazione della risposta di query persistente.
