@@ -4,10 +4,10 @@ description: Note sulla versione 2025.2.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Continueremo ad abilitare il nuovo editor frammento di contenuto basato sull’i
 
 **API HTTP di traduzione**
 
-L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [qui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). L’API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione dei contenuti in AEM.
+L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [ qui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L&#39;API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione per il contenuto in AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
