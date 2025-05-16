@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 41%
 
 ---
@@ -97,7 +97,7 @@ Il pannello principale (vista tabella) della console, a destra, fornisce una ser
    * Può essere utilizzato per [Filtro rapido](#fast-filtering)
 * **Cartella**
    * Fornisce un collegamento per aprire la cartella nella console.
-Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
+Passando il puntatore sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
    * Solo informativo.
    * Può essere utilizzato per [Filtro rapido](#fast-filtering)
@@ -166,14 +166,14 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 ![Console Frammenti di contenuto; barra degli strumenti per un frammento selezionato](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Apri in un nuovo editor](#editing-the-content-of-your-fragment)**
-* **[Apri](/help/assets/content-fragments/content-fragments-variations.md)** (nell&#39;editor originale)
 * **[Pubblica](#publishing-and-previewing-a-fragment)** (e **[Annulla pubblicazione](#unpublishing-a-fragment)**)
 * **[Gestisci tag](#manage-tags)**
-* **[Copia](/help/assets/manage-digital-assets.md)**
-* **[Sposta](/help/assets/manage-digital-assets.md)**
-* **[Rinomina](/help/assets/manage-digital-assets.md)**
-* **[Elimina](#deleting-a-fragment)**
+* **Copia**
 * **[Sostituisci](#find-and-replace)**
+* **Sposta**
+* **Rinomina**
+* **[Elimina](#deleting-a-fragment)** (disponibile solo per frammenti non pubblicati)
+
 
 >[!NOTE]
 >
