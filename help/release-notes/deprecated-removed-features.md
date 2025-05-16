@@ -4,9 +4,9 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
+source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2560'
 ht-degree: 97%
 
 ---
@@ -48,6 +48,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 | [!DNL Foundation] | La scheda Distribuisci nella schermata di amministrazione dell’agente di replica e l’API di replica non possono replicare pacchetti di contenuti di dimensioni superiori a 10 MB. | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Le integrazioni che utilizzano credenziali generate dai progetti di Adobe Developer Console perdono gradualmente il supporto per le credenziali dell’account servizio (JWT). A partire dal 1° maggio 2024, non è possibile creare nuove credenziali dell’account di servizio (JWT) in Adobe Developer Console. Le credenziali dell’account di servizio (JWT) esistenti rimangono utilizzabili per le integrazioni configurate fino al 1° gennaio 2025, dopo di che cessano di funzionare, richiedendo alla clientela di migrare alle credenziali da server a server OAuth. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migra](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) alle credenziali da server a server OAuth. |
 | [!DNL Foundation] | Il flusso di lavoro Pubblica contenuti struttura e il relativo passaggio Flusso di lavoro di pubblicazione contenuti struttura, utilizzato per le repliche delle gerarchie di contenuto. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
+| Sites | [Automazione installazione Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nessuno |
 
 
 ## Funzioni rimosse {#removed-features}

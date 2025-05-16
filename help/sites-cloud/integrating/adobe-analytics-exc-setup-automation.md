@@ -5,14 +5,18 @@ feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 87%
+source-wordcount: '727'
+ht-degree: 86%
 
 ---
 
 # Integrare Adobe Analytics con Experience Cloud Setup Automation {#integrate-adobe-analytics-automation-setup}
+
+>[!CAUTION]
+>
+>La funzionalità Experience Cloud Setup Automation è obsoleta.
 
 Experience Cloud Setup Automation fornisce un modo semplice e automatizzato di integrare e dotare Experience Manager Sites di Experience Platform Tags e Adobe Analytics con una semplice procedura guidata dell’interfaccia utente.
 
@@ -47,11 +51,11 @@ L’ambiente ora dovrebbe essere pronto per la configurazione dell’automazione
 1. Passa a **Sites** e seleziona la pagina principale del sito da integrare con Adobe Analytics.
 1. Espandere il menu della barra laterale e selezionare **Imposta Analytics**.
 
-   Questa è una nuova opzione nella barra laterale che apre un pannello che fornisce controlli e stato per Experience Cloud Setup Automation.
+   Questa è una nuova opzione nella barra laterale che apre un pannello che fornisce i controlli e lo stato per Experience Cloud Setup Automation.
 1. Selezionare il pulsante **Integra Analytics**.
 1. Nella finestra di dialogo risultante, fornisci un nome per **ID suite di rapporti**.
 
-   Questa stringa viene utilizzata per creare un [ID suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=it) in Adobe Analytics come archivio dati per i dati di analisi del sito AEM selezionato. Alla stringa fornita verranno aggiunti l’ambiente e gli identificatori di livello per garantirne l’univocità.
+   Questa stringa viene utilizzata per creare un [ID suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) in Adobe Analytics come archivio dati per i dati di analisi del sito AEM selezionato. Alla stringa fornita verranno aggiunti l’ambiente e gli identificatori di livello per garantirne l’univocità.
 
 1. Aggiorna la pagina e il pannello e seleziona **Verifica stato integrazione** per controllare lo stato dell&#39;automazione.
 
