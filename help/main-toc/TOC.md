@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 9bf64836c2f769c31017d7f9df6bc26b280606a0
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -1241,7 +1241,7 @@ ht-degree: 99%
          + [Aggiungere un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Risolvere i problemi relativi agli errori dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Mappature di dominio {#cdn-configurations}
+      + Mappature di dominio {#domain-mappings}
          + [Aggiungere una mappatura dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
          + [Gestire le mappature dei domini](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
