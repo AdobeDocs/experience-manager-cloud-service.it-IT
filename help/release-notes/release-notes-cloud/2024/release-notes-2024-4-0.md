@@ -4,7 +4,7 @@ description: Note sulla versione 2024.4.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di aprile 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446317?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,7 +170,7 @@ Il servizio dati di monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Configurazione CDN {#cdn-config}
+### Mappatura del dominio {#cdn-config}
 
 Configura il traffico nella rete CDN di Adobe nei seguenti modi:
 

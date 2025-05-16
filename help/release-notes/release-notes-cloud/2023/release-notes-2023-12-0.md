@@ -4,7 +4,7 @@ description: Note sulla versione 2023.12.0 di [!DNL Adobe Experience Manager] as
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 74%
@@ -27,7 +27,7 @@ La sezione seguente illustra le note sulla versione funzionale 2023.12.0 di [!DN
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è il venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per il giovedì 25 gennaio 2023.
+La data di rilascio della versione corrente della funzione di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2023.12.0) è venerdì 14 dicembre 2023. La prossima versione funzionale (2024.1.0) è pianificata per il giovedì 25 gennaio 2023.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -105,9 +105,9 @@ Ora è possibile trovare facilmente il contenuto selezionando un’immagine e vi
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
+### Mappatura dei domini - Programma di adozione anticipata {#cdn-config-early-adopter}
 
-Oltre alle [Regole filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltativamente consentite, è possibile utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
+Oltre alle [Regole filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole del firewall dell&#39;applicazione Web (WAF) facoltativamente consentite, è possibile utilizzare la pipeline di configurazione per dichiarare e distribuire altri tipi di configurazione CDN. Ci piacerebbe conoscere i tuoi casi d’uso, tra cui:
 * 301/302 reindirizzamenti lato client
 * proxy di richieste al server Edge di origini arbitrarie
 * trasformazioni URL

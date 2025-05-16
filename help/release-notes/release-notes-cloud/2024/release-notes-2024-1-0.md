@@ -4,7 +4,7 @@ description: Note sulla versione 2024.1.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 96%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448937?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -110,7 +110,7 @@ I clienti Dynatrace possono monitorare il loro utilizzo di AEM. [Scopri come](/h
 
 Gli [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ora supportano il codice front-end basato su [temi del sito](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelli di sito](/help/sites-cloud/administering/site-creation/site-templates.md), per i primi utilizzatori. Con gli RDE, questa operazione viene eseguita utilizzando una direttiva della riga di comando, anziché una [pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Invia un’e-mail all’indirizzo **aemcs-rde-support@adobe.com** per provarlo e fornire un feedback.
 
-### Programma per i primi utilizzatori della configurazione CDN {#cdn-config-early-adopter}
+### Mappatura dei domini - Programma di adozione anticipata {#cdn-config-early-adopter}
 
 Oltre alle [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per specificare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Iscriviti al programma per primi utilizzatori tramite e-mail all’indirizzo **aemcs-cdn-config-adopter@adobe.com** per accedere a:
 * 301/302 reindirizzamenti lato client

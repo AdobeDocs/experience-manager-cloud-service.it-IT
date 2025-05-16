@@ -4,7 +4,7 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 11%
@@ -37,7 +37,7 @@ Per prepararti alla distribuzione dei contenuti utilizzando la rete CDN integrat
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduzione ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Configurare una rete CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configurare una rete CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **Limitazione del traffico**
 
