@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2540'
 ht-degree: 9%
 
 ---
@@ -154,7 +154,6 @@ Configura la registrazione Java per i pacchetti Java personalizzati tramite le c
 |---|---|
 | `org.apache.sling.commons.log.names` | I pacchetti Java per i quali raccogliere le istruzioni di registro. |
 | `org.apache.sling.commons.log.level` | Livello di log in cui registrare i pacchetti Java, specificato da `org.apache.sling.commons.log.names` |
-| `org.apache.sling.commons.log.file` | Specificare la destinazione per l&#39;output: `logs/error.log` |
 
 La modifica di altre proprietà di configurazione OSGi LogManager può causare problemi di disponibilità in AEM as a Cloud Service.
 
