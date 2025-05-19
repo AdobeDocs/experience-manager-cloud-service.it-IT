@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 15%
+source-wordcount: '1482'
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 15%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 20783 {#20783}
+## Versione 20936 {#20936}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 20783, rilasciata pubblicamente il mercoledì 13 maggio 2025. La versione di manutenzione precedente era la 20626.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 20936, rilasciata pubblicamente il martedì 19 maggio 2025. La versione di manutenzione precedente era la 20626.
 
 Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-20783}
+>[!NOTE]
+>
+>Il 20783 sulla versione è stato reso privato il 19 maggio ed è stato sostituito da 20936 sulla versione.
+
+### Miglioramenti {#enhancements-20936}
 
 * FORMS-19125: l’editor di moduli adattivi dei componenti core è stato migliorato per supportare la mappatura automatica dei frammenti di moduli adattivi disponibili quando una sezione corrispondente dalla struttura dell’origine dati viene rilasciata nell’area di lavoro del modulo. Questa funzione porta una caratteristica chiave di produttività dall’editor di base ai componenti core.
 * FORMS-17107: AEM Forms ora offre l’analisi migliorata delle funzioni personalizzate lato client. Ciò include il supporto delle funzionalità moderne di JavaScript (ECMAScript ES10+), ad esempio il concatenamento opzionale, e introduce la possibilità di utilizzare importazioni statiche all&#39;interno di script di funzioni personalizzati. Questo consente agli sviluppatori di organizzare meglio il codice, utilizzare i moduli ESM e rimuovere le limitazioni precedenti incontrate con le funzioni personalizzate in Adaptive Forms basate su Componenti core e Edge Delivery Services, in particolare per gli utenti che in precedenza necessitavano di soluzioni alternative per queste funzionalità.
@@ -46,7 +50,7 @@ Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzio
 * SITES-26711: i collegamenti per i campi di testo dell’Editor Rich Text non vengono aggiornati per puntare alla Live Copy durante il rollout di MSM.
 * SITES-25976: i collegamenti all’interno dei frammenti esperienza non si adattano dopo il rollout di MSM.
 
-### Problemi risolti {#fixed-issues-20783}
+### Problemi risolti {#fixed-issues-20936}
 
 * ASSETS-50994: traffico in ingresso bloccato in AemRequestEventFilter.
 * CQ-4358591: progetti mancanti per alcune lingue quando vengono create copie per lingua dal pannello di riferimento dei siti con l’opzione &quot;Crea progetti di traduzione&quot;.
@@ -92,21 +96,22 @@ Con la versione di attivazione funzioni 2025.5.0 verrà fornito il set di funzio
 * SITES-31020: migliora l’interfaccia utente Crea processo Live Copy per mostrare al cliente l’avanzamento.
 * SITES-29816: Errore &quot;Risorsa non trovata&quot; durante la creazione di Live Copy del frammento di esperienza.
 * SITES-29363: il pulsante Ripristina la Live Copy non funziona per la gerarchia dei contenuti della live copy nidificata.
+* SITES-31467: Errori JS da `contexthub.authoring-hook.js` nell&#39;editor pagina.
 * SKYOPS-106509: aggiungi altri flag di apertura dei componenti aggiuntivi per supportare l’accesso riflettente GSON su Java 21.
 
-### Problemi noti {#known-issues-20783}
+### Problemi noti {#known-issues-20936}
 
-Nessuna.
+* SITES-28030: opzione Avvia Target mancante nella selezione dell’opzione di targeting.
 
-### Funzioni e API obsolete {#deprecated-20783}
+### Funzioni e API obsolete {#deprecated-20936}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-20783}
+### Correzioni di sicurezza {#security-20936}
 
 AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 19 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-20783}
+### Tecnologie incorporate {#embedded-tech-20936}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
