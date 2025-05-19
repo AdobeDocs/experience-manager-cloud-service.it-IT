@@ -4,10 +4,10 @@ description: Scopri le informazioni su Genera varianti, accessibile da vari edit
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 743f9c43b90a6ad9c9fd41f4089680da44a9c8ff
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 95%
+source-wordcount: '1409'
+ht-degree: 94%
 
 ---
 
@@ -328,9 +328,11 @@ Per ulteriori informazioni, consulta anche:
 
 * [Genera varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Sperimentazione di Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai)
+* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai#aem)
+   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+
+* [Genera pagina di destinazione varianti in Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
 ## Cronologia delle versioni {#release-history}
 
