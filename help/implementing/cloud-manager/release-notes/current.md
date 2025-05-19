@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.5.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
+source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 15%
+source-wordcount: '640'
+ht-degree: 24%
 
 ---
 
@@ -31,133 +31,9 @@ La prossima versione è pianificata per l’venerdì 5 giugno 2025.
 
 Adobe Experience Manager (AEM) Edge Delivery Services consente la distribuzione dei contenuti da più origini, come Google Drive, SharePoint o AEM stesso, utilizzando una rete Edge veloce e distribuita a livello globale.
 
-La configurazione dell&#39;origine di contenuto differisce tra Helix 4 e Helix 5 nel modo seguente:
+La configurazione dell&#39;origine di contenuto è diversa tra Helix 4 e Helix 5. Scopri la differenza e segui i passaggi di configurazione completi, gli esempi e le istruzioni di convalida per entrambe le versioni.
 
-| Versione | Metodo di configurazione origine contenuto |
-| --- | --- |
-| Elica 4 | File YAML (`fstab.yaml`) |
-| Elica 5 | API del servizio di configurazione (*no`fstab.yaml`*) |
-
-Questo articolo fornisce passaggi di configurazione completi, esempi e istruzioni di convalida per entrambe le versioni.
-
-**Prima di iniziare**
-
-Se in Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. Seguire le istruzioni Helix 5 e utilizzare la versione Helix 4 YAML delle istruzioni come fallback.
-
-**Determinare la versione Helix**
-
-* Helix 4 - Il progetto include un file `fstab.yaml`.
-* Helix 5 - Il progetto *non* utilizza `fstab.yaml` ed è stato configurato tramite l&#39;interfaccia utente o l&#39;API di Edge Delivery Services.
-
-Conferma tramite i metadati dell’archivio o consulta l’amministratore se non sei ancora sicuro.
-
-#### Configurare l’origine di contenuto per Helix 4
-
-In Helix 4, il file fstab.yaml definisce l&#39;origine di contenuto per il sito. Situato nella directory principale dell’archivio GitHub, questo file mappa i prefissi del percorso URL (denominati punti di montaggio) alle origini di contenuto esterne. Un esempio tipico è simile al seguente:
-
-```yaml
-mountpoints:
-  /: https://drive.google.com/drive/folders/your-folder-id
-```
-
-Questo esempio è solo a scopo illustrativo. L’URL effettivo deve puntare all’origine di contenuto, ad esempio una cartella Google Drive, una directory SharePoint o un percorso AEM.
-
-**Per configurare l&#39;origine di contenuto per Helix 4:**
-
-I passaggi variano a seconda del sistema di origine utilizzato.
-
-* **Unità Google**
-
-   1. Creare una cartella di Google Drive.
-   1. Condividi la cartella con `helix@adobe.com`.
-   1. Ottieni il collegamento alla cartella condivisibile.
-   1. Aggiorna `fstab.yaml` come mostrato di seguito:
-
-      ```yaml
-      mountpoints: 
-          /: https://drive.google.com/drive/folders/<folder-id>
-      ```
-
-   1. Apporta le modifiche a GitHub.
-
-* **SharePoint**
-
-   1. Creare una cartella SharePoint o una raccolta documenti.
-   1. Condividi l&#39;accesso con `helix@adobe.com`.
-   1. Ottieni l’URL della cartella.
-   1. Aggiorna `fstab.yaml` come mostrato di seguito:
-
-      ```yaml
-      mountpoints:
-        /: https://<tenant>.sharepoint.com/sites/<site>/Shared%20Documents/<folder>
-      ```
-
-   1. Apporta le modifiche a GitHub.
-
-* **AEM**
-
-   1. Identifica il percorso del contenuto AEM.
-   1. Utilizza l’URL di esportazione del contenuto di AEM come mostrato di seguito:
-
-      ```yaml
-      mountpoints:
-        /: https://author.<your-aem-instance>.com/bin/franklin.delivery/<org>/<repo>/main
-      ```
-
-   1. Apporta le modifiche a GitHub.
-
-##### Convalida
-
-* Utilizzando l&#39;estensione AEM Sidekick Chrome, fai clic su **Anteprima** > **Pubblica** > **Verifica il sito attivo**.
-* Convalida URL: `https://main--<repo>--<org>.hlx.page/`
-
-#### Configurare l’origine di contenuto per Helix 5
-
-Helix 5 è repoless, non utilizza `fstab.yaml` e supporta più siti che condividono la stessa directory. La configurazione viene gestita tramite l’API del servizio di configurazione o l’interfaccia utente di Edge Delivery Services. La configurazione è a livello di sito (non a livello di archivio).
-
-Le differenze concettuali sono le seguenti:
-
-| Formato | Elica 4 | Elica 5 |
-| --- | --- | --- |
-| Configurazione | Completato tramite `fstab.yaml` | Eseguito tramite l’API o l’interfaccia utente anziché tramite YAML. |
-| Punti di montaggio | Definito in `fstab.yaml`. | Non obbligatorio. La radice è implicitamente compresa. |
-
-**Per configurare l&#39;origine di contenuto per Helix 5:**
-
-1. Utilizzando l’API del servizio di configurazione, esegui l’autenticazione tramite una chiave API o un token di accesso.
-1. Effettua la seguente chiamata API `PUT`:
-
-   ```bash {.line-numbering}
-   PUT /api/{program}/{programId}/site/{siteId}
-   Content-Type: application/json
-   
-   {
-     "sitename": "my-site",
-     "branchName": "main",
-     "version": "v5",
-     "repo": "my-content-repo-link"
-   }
-   ```
-
-1. Convalida la risposta (prevista: HTTP 200 OK).
-
-##### Convalida
-
-* Utilizzando l&#39;estensione AEM Sidekick Chrome, fai clic su **Anteprima** > **Pubblica** > **Verifica il sito attivo**.
-* Convalida URL: `https://main--<repo>--<org>.aem.page/`
-* (Facoltativo) Controllare la configurazione corrente tramite la seguente chiamata API `GET`:
-
-  ```bash
-  GET /api/{program}/{programId}/site/{siteId}
-  ```
-
-<!--
-* **AI-powered build summaries now available for internal use**
-
-    Internal users can now use AI-powered build summaries to simplify build log analysis. The feature provides actionable recommendations and helps identify the root causes of build failures.
-
-    ![Build Summary dialog box](/help/implementing/cloud-manager/release-notes/assets/build-summary.png)
--->
+Consulta [Configurare l&#39;origine di contenuto](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md).
 
 
 ## Programma per i primi utilizzatori {#early-adoption}
@@ -197,7 +73,7 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 |---|---|
 | *Come può un progetto tornare all&#39;archivio Git gestito da Adobe, se necessario?* | Il passaggio all’indietro è semplice. [Aggiorna le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) in modo che puntino all&#39;archivio Adobe e rimuovi l&#39;archivio esterno se non è più necessario. |
 | *È possibile configurare archivi diversi per ambienti diversi (ad esempio, non di produzione rispetto alla produzione) per consentire prima il test in ambienti non di produzione?* | Sì, è possibile configurare archivi diversi per ambienti separati. Ad esempio, la pipeline di sviluppo o di qualità del codice può puntare a un archivio esterno mentre la pipeline di produzione rimane connessa all’archivio Adobe. Assicurati che il processo di sincronizzazione tra i due archivi rimanga attivo durante questa configurazione. |
-| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i indirizzi IP Adobe necessari. |
+| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i [indirizzi IP Adobe necessari. |
 | *Tutti gli URL dell&#39;archivio GitLab funzionano? L&#39;URL del repository in uso segue il formato `https://gitlab_dedicated_url.com/path/repo-name.git`, che differisce dall&#39;esempio riportato nella documentazione.* | Sì, è supportato qualsiasi archivio GitLab che supporta API V3 o V4, inclusi gli URL GitLab con hosting autonomo come quello descritto in [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
