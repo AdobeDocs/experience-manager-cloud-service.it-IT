@@ -1,11 +1,12 @@
 ---
 title: Configurare il Source dei contenuti
-description: Scopri come configurare l’origine di contenuto per il sito Edge Delivery utilizzando fstab.yaml in Helix 4 o l’interfaccia utente di Edge Delivery Services (o l’API del servizio di configurazione) in Helix 5.
+description: Scopri come configurare l’origine di contenuto per il sito Edge Delivery utilizzando fstab.yaml in Helix 4 o utilizzando la procedura guidata in Cloud Manager (o l’API del servizio di configurazione) in Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
+source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -25,12 +26,12 @@ Questo articolo fornisce passaggi di configurazione completi, esempi e istruzion
 
 **Prima di iniziare**
 
-Se in Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. [Seguire le istruzioni Helix 5](#config-helix5) e utilizzare la versione Helix 4 YAML delle istruzioni come fallback.
+Se in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) utilizzi [un clic su Edge Delivery, il tuo sito è Helix 5 con un singolo archivio. [Seguire le istruzioni Helix 5](#config-helix5) e utilizzare la versione Helix 4 YAML delle istruzioni come fallback.
 
 **Determinare la versione Helix**
 
 * Helix 4 - Il progetto include un file `fstab.yaml`.
-* Helix 5 - Il progetto *non* utilizza `fstab.yaml` ed è stato configurato tramite l&#39;[interfaccia utente di Edge Delivery Services](#config-helix5) o API.
+* Helix 5 - Il progetto *non* utilizza `fstab.yaml` ed è stato configurato tramite [Cloud Manager tramite la procedura guidata](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) o l&#39;API.
 
 Conferma tramite i metadati dell’archivio o consulta l’amministratore se non sei ancora sicuro.
 
