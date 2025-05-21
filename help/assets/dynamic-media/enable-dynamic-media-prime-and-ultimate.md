@@ -216,7 +216,7 @@ Esegui i seguenti passaggi in Cloud Manager per configurare un dominio personali
 
 1. [Aggiungere un nome di dominio personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings).
 
-1. Passare alla pagina dei dettagli dell&#39;ambiente e [aggiungere una configurazione CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Durante l&#39;aggiunta della configurazione, selezionare **[!UICONTROL Consegna]** nel campo **[!UICONTROL Livello]** della finestra di dialogo **[!UICONTROL Configura CDN]**.
+1. Passare alla pagina dei dettagli dell&#39;ambiente e [aggiungere una configurazione CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping). Durante l&#39;aggiunta della configurazione, selezionare **[!UICONTROL Consegna]** nel campo **[!UICONTROL Livello]** della finestra di dialogo **[!UICONTROL Configura CDN]**.
 
    ![Configura CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
