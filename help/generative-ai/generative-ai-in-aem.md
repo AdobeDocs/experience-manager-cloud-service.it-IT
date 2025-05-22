@@ -45,6 +45,6 @@ L’intelligenza artificiale generativa viene utilizzata in AEM:
 
 * [Panoramica di Adobe AI](https://www.adobe.com/ai/overview.html)
 
-* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai)
 
-   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai#aem)
