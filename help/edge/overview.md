@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Con Edge Delivery Services, AEM offre esperienze eccezionali che stimolano coinv
 Utilizzando Edge Delivery Services, è possibile:
 
 * Creare siti veloci con un punteggio Lighthouse perfetto e monitorare continuamente le prestazioni del sito tramite il monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring).
-* Aumentare l’efficienza di authoring separando le origini dei contenuti. Con Universal Editor e authoring basato su documenti è possibile utilizzare sia la funzione di authoring di AEM. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
+* Aumentare l’efficienza di authoring separando le origini dei contenuti. È già possibile utilizzare sia l’authoring di AEM con l’editor universale che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
 * Utilizza un framework di sperimentazione incorporato che consente di creare e di eseguire rapidamente i test senza alcun impatto sulle prestazioni e di rilasciare rapidamente in produzione un vincitore di test.
 
 ## Reazione Agile alle esigenze aziendali {#agile-reaction}
@@ -46,7 +46,7 @@ Concentrandoti sul valore per gli autori, il progetto di Edge Delivery Services 
 
 ## Strumenti di authoring flessibili per i creatori di contenuti {#overview}
 
-Edge Delivery Services è un set di sevizi componibili che consente un elevato grado di flessibilità per quanto riguarda la creazione di contenuti sul sito web. È possibile utilizzare sia la [gestione dei contenuti di AEM](/help/sites-cloud/authoring/author-publish.md) che l&#39;authoring dei contenuti mediante [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) e l&#39;authoring basato su documenti [.](https://www.aem.live/docs/authoring)
+Edge Delivery Services è un set di sevizi componibili che consente un elevato grado di flessibilità per quanto riguarda la creazione di contenuti sul sito web. Puoi utilizzare sia la [Gestione dei contenuti AEM](/help/sites-cloud/authoring/author-publish.md) che l’authoring dei contenuti utilizzando l’[editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md), nonché l’[authoring basato su documenti.](https://www.aem.live/docs/authoring)
 
 Il diagramma seguente illustra come modificare il contenuto in Microsoft Word (authoring basato su documenti) e pubblicarlo in Edge Delivery Services insieme all’authoring di contenuti AEM utilizzando l’editor universale.
 
@@ -67,25 +67,25 @@ Grazie all’authoring basato su documenti, puoi utilizzare i contenuti direttam
 
 Ulteriori informazioni sono disponibili nella documentazione relativa all’authoring basato su documenti:
 
-* Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Build della documentazione di aem.live.](https://www.aem.live/docs/#build)
-* Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la sezione [Pubblica della documentazione di aem.live.](https://www.aem.live/docs/authoring)
-* Per informazioni su come avviare correttamente il progetto del sito Web, consulta la sezione [Launch della documentazione di aem.live](https://www.aem.live/docs/#launch)
+* Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Creare della documentazione aem.live.](https://www.aem.live/docs/#build)
+* Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la [sezione Pubblicare della documentazione aem.live.](https://www.aem.live/docs/authoring)
+* Per informazioni su come avviare correttamente il progetto del sito web, consulta la [sezione Avvio della documentazione aem.live](https://www.aem.live/docs/#launch)
 
-### Authoring di AEM con l’editor universale{#wysiwyg-authoring}
+### Authoring AEM con l’editor universale{#wysiwyg-authoring}
 
-WYSIWYG L’editor universale è una risorsa immediata e personalizzabile per la modifica del contenuto in tempo reale e nel contesto, grazie a un’anteprima visiva.
+L’editor universale è what-you-see-is-what-you-get (WYSIWYG), un’area personalizzabile e completa per la modifica dei contenuti in tempo reale e nel loro contesto, con un’anteprima visiva.
 
-* Con l’authoring AEM con Universal Editor, puoi aumentare l’efficienza dell’authoring sia headless che headful.
+* Grazie all’authoring AEM con l’editor universale, puoi aumentare l’efficienza dell’authoring sia headless che headful.
 * Puoi sfruttare le funzionalità complete di gestione dei contenuti di AEM, incluse quelle per flussi di lavoro e governance.
 * Sfrutta numerosi punti di estensione per supportare i processi e le integrazioni che utilizzi.
 * Le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub.
 
-![Authoring di AEM con Universal Editor](assets/wysiwyg-authoring.png)
+![Authoring AEM con l’editor universale](assets/wysiwyg-authoring.png)
 
-Introduzione all’authoring di AEM con Universal Editor e Edge Delivery Services:
+Introduzione all’authoring AEM con l’editor universale ed Edge Delivery Services:
 
-* Per una panoramica sull&#39;authoring di AEM con Universal Editor, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
-* Per una panoramica per gli sviluppatori, consulta il documento [Guida introduttiva - Esercitazione per sviluppatori di Universal Editor](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
+* Per una panoramica sull’authoring AEM con l’edito universale, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
+* Per una panoramica per gli sviluppatori, consulta il documento [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
 
 ### Scegliere il metodo di authoring più appropriato {#authoring-method}
 
@@ -100,9 +100,9 @@ Grazie alla flessibilità di AEM, puoi soddisfare le tue specifiche esigenze di 
 
 Edge Delivery Services fa parte di Adobe Experience Manager. Di conseguenza, Edge Delivery Services e AEM Sites possono coesistere sullo stesso dominio, che rappresenta un caso d’uso comune per i siti web più grandi. Inoltre, le pagine AEM Sites possono utilizzare facilmente i contenuti di Edge Delivery Service e può succedere anche il contrario.
 
-Per informazioni su come avviare un progetto personalizzato per l&#39;authoring con AEM e Edge Delivery Services, consulta il documento [Guida introduttiva - Esercitazione per sviluppatori di Universal Editor](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
+Consulta la [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live per scoprire come avviare un proprio progetto per l’authoring con AEM ed Edge Delivery Services.
 
-È inoltre possibile utilizzare Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), [Real Use Monitoring (RUM)](https://www.aem.live/developer/rum) per diagnosticare l&#39;utilizzo e le prestazioni dei siti e [Launch.](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
+È inoltre possibile utilizzare Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), con la funzione di [monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring)](https://www.aem.live/developer/rum) per diagnosticare l’utilizzo e le prestazioni dei siti, e [avviarli.](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
 
 ## Ottenere assistenza da Adobe {#getting-help}
 
@@ -114,7 +114,7 @@ Adobe fornisce tre canali per aiutarti con Edge Delivery Services:
 
 ### Accesso alle risorse della community {#community-resources}
 
-Adobe si impegna a fornire la migliore partecipazione e il miglior supporto della community per Edge Delivery Services, l’authoring AEM con Universal Editor e l’authoring basato su documenti.
+Adobe si impegna a fornire il miglior coinvolgimento della community e il miglior supporto per Edge Delivery Services, l’authoring AEM con l’editor universale e l’authoring basato su documenti.
 
 * Aderisci alla [community Experience League](https://adobe.ly/3Q6kTKl) per rivolgere domande, condividere feedback, avviare discussioni, chiedere assistenza da esperti di Adobe e consulenti ed esperti di AEM e connetterti in tempo reale con altri utenti che condividono i tuoi stessi interessi.
 * Segui il [canale Discord](https://discord.gg/aem-live), una piattaforma più informale per interazioni in tempo reale e rapidi scambi di idee.
