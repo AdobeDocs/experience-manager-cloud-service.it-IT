@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1079'
 ht-degree: 11%
 
 ---
@@ -49,13 +49,18 @@ Consulta [Altre opzioni del programma di produzione](#options).
 1. Nella casella di riepilogo **Soluzioni e componenti aggiuntivi** selezionare una o più soluzioni da includere nel programma.
 
    * Se non sai per certo se ti servono uno o più programmi per le varie soluzioni disponibili, seleziona quella che più ti interessa. Potrai attivare altre soluzioni in un secondo tempo [modificando il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md). Per ulteriori consigli sulla configurazione del programma, consulta [Introduzione ai programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
-   * Per la creazione del programma è necessaria almeno una soluzione.
-   * Seleziona **Edge Delivery Services** per una soluzione CDN completamente gestita che ottimizza le esperienze digitali. Consulta [Informazioni sull&#39;utilizzo di Edge Delivery Services per consegnare il tuo progetto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-   * Se è stata selezionata l&#39;opzione **[Abilita sicurezza avanzata](#security)**, è possibile selezionare solo tutte le soluzioni per le quali sono disponibili i diritti HIPAA.
+   * È necessario selezionare almeno una soluzione per la creazione del programma. Ad esempio, puoi scegliere di selezionare **Edge Delivery Services** per una soluzione CDN completamente gestita che ottimizza le esperienze digitali. Consulta [Informazioni sull&#39;utilizzo di Edge Delivery Services per consegnare il tuo progetto Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-     ![Selezione delle soluzioni](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![Selezione delle soluzioni](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * Fai clic sull&#39;icona ![Chevron Size 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) a sinistra del nome di una soluzione per visualizzare eventuali componenti aggiuntivi facoltativi, ad esempio il componente aggiuntivo **Commerce** in **Sites**.
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * Fai clic sull&#39;icona ![Dimensione freccia 300](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) a sinistra del nome di una soluzione per visualizzare eventuali componenti aggiuntivi facoltativi. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![Selezione dei componenti aggiuntivi](assets/setup-prod-commerce.png)
 
