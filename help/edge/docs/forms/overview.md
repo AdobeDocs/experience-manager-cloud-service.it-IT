@@ -4,10 +4,10 @@ description: Edge Delivery Services per AEM Forms
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ Questi servizi consentono di:
 
 * **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. Senza personalizzazioni è possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring WYSIWYG (Editor universale o editor di moduli adattivi). Si possono utilizzare più origini di contenuto nello stesso sito moduli e gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google, Editor universale o Editor di moduli adattivi.
 
-* **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite il monitoraggio degli utenti reali (RUM, Real User Monitoring). Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
+* **Offri esperienze di registrazione digitale eccezionali:** fornisci esperienze di registrazione digitale che consentono di caricare ed eseguire il rendering in modo rapido e continuo monitorando le prestazioni dei moduli tramite la telemetria operativa. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
 * **Usare set di strumenti intuitivi per gli sviluppatori:** Edge Delivery Services per AEM Forms utilizza il normale linguaggio HTML, CSS moderni e JavaScript Vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
 
@@ -62,7 +62,7 @@ L’authoring basato su documenti consente di creare moduli utilizzando strument
 * Integrazione del servizio reCaptcha di Google per la protezione da posta indesiderata.
 * Possibilità di creare componenti modulo personalizzati per esigenze specifiche.
 * Inviare i dati del modulo direttamente a Microsoft Excel o Fogli Google o indirizzi e-mail.
-* Monitorare le prestazioni dei moduli tramite il monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring)
+* Monitorare le prestazioni dei moduli tramite la telemetria operativa
 
 #### Funzionalità di authoring WYSIWYG
 

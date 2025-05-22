@@ -4,10 +4,10 @@ description: Introduzione all’architettura di Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 100%
+source-wordcount: '2712'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="Introduzione all’architettura di AEM as a Cloud Service"
 >abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud."
->additional-url="https://video.tv.adobe.com/v/346182?captions=ita" text="Panoramica dell’architettura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
 Adobe Experience Manager (AEM) as a Cloud Service offre una serie di servizi componibili per la creazione e la gestione di esperienze ad alto impatto.
 
@@ -138,7 +138,7 @@ Ci sono altri servizi adiacenti:
 * Servizio dati:
    * È responsabile dell’esposizione dei dati cliente come le metriche delle licenze (ad esempio, richieste di contenuti, archiviazione, utenti) o i rapporti sull’utilizzo (come il numero di caricamenti e download).
    * I dati cliente possono essere esposti tramite API e all’interno di interfacce utente del prodotto (come Cloud Manager).
-* Servizio metrica degli utenti reali (RUM, Real User Metric):
+* Il servizio di telemetria operativa:
    * È responsabile della raccolta di metriche chiave da un’esperienza del cliente (come visualizzazioni di pagina, web vitals di base, eventi di conversione), nonché della risposta alle query associate (ad esempio, principali visualizzazioni della pagina per un determinato dominio negli ultimi 7 giorni).
 * Servizio Assets Compute:
    * È responsabile dell’elaborazione di immagini, video e documenti caricati, ad esempio file PDF e Adobe Photoshop. L’elaborazione può utilizzare Adobe Sensei per estrarre metadati di immagini e video (come tag descrittivi o toni di colore primari) e generare rappresentazioni (come dimensioni o formati diversi) con accesso ad API, come le API di Adobe Photoshop e Adobe Lightroom.

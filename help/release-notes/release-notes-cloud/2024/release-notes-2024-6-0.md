@@ -4,10 +4,10 @@ description: Note sulla versione 2024.6.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 98%
+source-wordcount: '1967'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2024 per un riepi
 
 ### Nuova funzione in Experience Manager Sites {#new-feature-sites}
 
-**Real Use Monitoring (RUM) Data Service** {#real-use-monitoring}
+**Servizio dati di telemetria operativa** {#real-use-monitoring}
 
-Il [servizio dati del Monitoraggio dell’uso reale (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) è ora disponibile e consente la raccolta di dati lato client per AEM as a Cloud Service. Il servizio offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Offre ai clienti informazioni avanzate sul traffico e sulle prestazioni della pagina, presentando un’opportunità preziosa per comprenderne e migliorarne le prestazioni.
+Il [servizio di telemetria operativa](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) è ora generalmente disponibile e consente la raccolta dati lato client per AEM as a Cloud Service. Il servizio offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Offre ai clienti informazioni avanzate sul traffico e sulle prestazioni della pagina, presentando un’opportunità preziosa per comprenderne e migliorarne le prestazioni.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 
@@ -211,9 +211,9 @@ In precedenza, era necessario un ticket di supporto per generare la chiave X-AEM
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Server-Side Redirects (Early Adopter Program) {#server-side-redirects-early-adopter}
+#### Reindirizzamenti Lato Server (Programma Early Adopter) {#server-side-redirects-early-adopter}
 
-Configure 301/302 server-side redirects in source control, and deploy to the CDN. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Attenzione: sono già disponibili diverse altre funzioni correlate a [Configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), comprese le trasformazioni di richiesta e risposta e il routing del traffico verso siti esterni ad AEM.
+Configura i reindirizzamenti lato server 301/302 nel controllo del codice sorgente e distribuiscili alla rete CDN. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Attenzione: sono già disponibili diverse altre funzioni correlate a [Configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), comprese le trasformazioni di richiesta e risposta e il routing del traffico verso siti esterni ad AEM.
 
 #### Avvisi sulle regole del filtro del traffico (programma per i primi utilizzatori) {#traffic-filter-rules-alerts-early-adopter}
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8c53a27f7b4c076b92cf62df184018fd4b949656
+source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
 workflow-type: tm+mt
-source-wordcount: '6175'
+source-wordcount: '6173'
 ht-degree: 99%
 
 ---
@@ -495,7 +495,7 @@ ht-degree: 99%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [Monitoraggio degli utenti reali per AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
    + [Modifiche di rilievo apportate a [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -1078,7 +1078,7 @@ ht-degree: 99%
          + [Rendere il modulo globale - Guida alla traduzione dei moduli](/help/edge/docs/forms/translate-forms.md)
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorare le prestazioni dei moduli - Guida al monitoraggio dell’utilizzo reale](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [Monitorare Le Prestazioni Dei Moduli: Guide Di Telemetria Operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)

@@ -4,10 +4,10 @@ description: Note sulla versione 2024.5.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica della versione di maggio 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448070?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,9 @@ Le azioni e i flussi di lavoro per la traduzione dei contenuti ora attivano gli 
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### Servizio dati del Monitoraggio degli utenti reali (RUM) {#real-use-monitoring}
+#### Servizio di telemetria operativa {#real-use-monitoring}
 
-* **[Il servizio dati del Monitoraggio degli utenti reali (RUM) è ora disponibile](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** e consente la raccolta di dati lato client per AEM as a Cloud Service.
+* **[Il servizio di telemetria operativa è ora GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** e abilita la raccolta di dati lato client per AEM as a Cloud Service.
 Il servizio dati del Monitoraggio degli utenti reali (RUM) per la raccolta lato client rispecchia in modo più preciso le interazioni, per una misurazione affidabile del coinvolgimento nel sito web. Consente ai clienti di ottenere insight avanzati sul traffico e sulle prestazioni delle pagine. Permette di saperne di più sulle prestazioni delle pagine e di ottenere insight utili a migliorarle.
 
 #### Authoring di AEM per Edge Delivery Services {#edge-enhancements}

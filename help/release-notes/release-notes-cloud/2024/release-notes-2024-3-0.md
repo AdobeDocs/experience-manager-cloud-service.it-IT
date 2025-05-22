@@ -4,10 +4,10 @@ description: Note sulla versione 2024.3.0 di [!DNL Adobe Experience Manager] as 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2293'
-ht-degree: 95%
+source-wordcount: '2283'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video che mostra una panoramica sulla versione di marzo 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450367?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -123,7 +123,7 @@ Assets Essentials consente agli amministratori di gestire i livelli di accesso p
 Questi servizi consentono di:
 
 * Utilizza più origini di contenuto nello stesso sito moduli con i tuoi strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google o Editor di moduli adattivi.
-* Fornisci esperienze di registrazione digitale che consentono di caricare ed eseguire il rendering in modo rapido e continuo monitorando le prestazioni dei moduli tramite il monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring).
+* Fornisci esperienze di registrazione digitale che consentono di caricare ed eseguire il rendering in modo rapido e continuo monitorando le prestazioni dei moduli tramite la telemetria operativa.
 * Utilizza il semplice HTML, CSS moderno e JavaScript vanilla per creare esperienze eccezionali, evitando la difficile curva di apprendimento di un framework specifico.
 
 
@@ -186,10 +186,10 @@ Questo aggiornamento garantisce un’esperienza più inclusiva per gli utenti co
 
   Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, è possibile inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal proprio ID e-mail ufficiale.
 
-* **[È possibile utilizzare il servizio dati RUM (Real Use Monitoring)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
-Il servizio dati di monitoraggio dell’utilizzo reale (RUM, Real Use Monitoring) offre una panoramica più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento nel sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Inoltre, per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
+* **[Puoi sfruttare il servizio di telemetria operativa](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** per abilitare la raccolta lato client per AEM as a Cloud Service.
+Il servizio di telemetria operativa offre una riflessione più precisa delle interazioni degli utenti, garantendo una misura affidabile del coinvolgimento del sito web. Rappresenta un’ottima opportunità per ottenere informazioni avanzate sulle prestazioni della pagina. Questa funzione è utile per chi utilizza una rete CDN gestita o non gestita da Adobe. Inoltre, per chi utilizza una rete CDN non gestita da Adobe, ora è possibile abilitare il reporting automatico del traffico, eliminando in tal modo la necessità di condividere eventuali rapporti sul traffico con Adobe.
 
-  Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un’e-mail a `aemcs-rum-adopter@adobe.com`, insieme al nome di dominio per ciascuno degli ambienti per i quali desideri abilitare il monitoraggio degli utenti reali (RUM) dall’indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio di dati Real Use Monitoring (RUM).
+  Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a `aemcs-rum-adopter@adobe.com` insieme al tuo nome di dominio per ciascuno degli ambienti per i quali vuoi abilitare la telemetria operativa dal tuo indirizzo e-mail associato al tuo Adobe ID. Il team di prodotto di Adobe abiliterà quindi il servizio di telemetria operativa.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
