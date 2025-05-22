@@ -63,7 +63,7 @@ I privilegi possono essere aggiunti effettuando una ricerca utilizzando il campo
 
 >[!NOTE]
 >
->Per un elenco completo dei privilegi e delle descrizioni, vedere [User, Group, and Access Rights Administration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
+>Per un elenco completo dei privilegi e delle descrizioni, vedere [User, Group, and Access Rights Administration](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
 ![Autorizzazione di ricerca per un determinato percorso.](assets/image2019-3-21_0-5-47.png) ![Aggiungi nuova voce per &#39;dam-users&#39; come mostrato da un percorso selezionato in colonne verticali.](assets/image2019-3-21_0-6-53.png)
 
