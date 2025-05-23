@@ -19,7 +19,7 @@ ht-degree: 2%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Questo articolo |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=it) |
 
 Nel panorama in rapida evoluzione dell’analisi digitale, è fondamentale rimanere in sintonia con le tendenze globali per prendere decisioni informate e ottimizzare le esperienze digitali. Per risolvere questo problema, Forms adattivo si integra perfettamente con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo alla base dell’analisi di queste metriche è prendere decisioni basate sui dati, utilizzando metriche e analisi per migliorare l’usabilità e l’efficacia dei moduli.
 
@@ -52,7 +52,7 @@ Contiene le metriche Rendering moduli, Invio moduli, Errori di convalida e Visit
 
 * **Errori di convalida**: l&#39;errore di convalida visualizza il numero totale di errori correlati alla convalida che si sono verificati nei campi dei moduli.
 
-* **Visitatori univoci**: i visitatori univoci rappresentano il numero di volte in cui un visitatore esegue il rendering del modulo. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Visitatori univoci**: i visitatori univoci rappresentano il numero di volte in cui un visitatore esegue il rendering del modulo. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=it).
 
   ![Prestazioni Forms](assets/forms-performance.png){width="100%"}
 
@@ -60,8 +60,8 @@ Contiene le metriche Rendering moduli, Invio moduli, Errori di convalida e Visit
 
 Consente di ottenere informazioni utili sull’attività del visitatore nei moduli:
 
-* **Visite e invii**: descrive la frequenza delle visite ai moduli in un intervallo di date e il numero corrispondente di invii di moduli. Per ulteriori informazioni, fai clic su [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-* **Visitatori unici e relativo totale di visite**: distingue tra utenti nuovi e utenti di ritorno. Ad esempio, un visitatore può visitare il tuo sito ogni giorno per un mese, ma continua a contare come un singolo visitatore univoco. Visita [Visitatori univoci](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) per informazioni dettagliate.
+* **Visite e invii**: descrive la frequenza delle visite ai moduli in un intervallo di date e il numero corrispondente di invii di moduli. Per ulteriori informazioni, fai clic su [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=it).
+* **Visitatori unici e relativo totale di visite**: distingue tra utenti nuovi e utenti di ritorno. Ad esempio, un visitatore può visitare il tuo sito ogni giorno per un mese, ma continua a contare come un singolo visitatore univoco. Visita [Visitatori univoci](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it) per informazioni dettagliate.
 
   ![Visitatori Forms](assets/forms-visitors.png){width="100%"}
 
