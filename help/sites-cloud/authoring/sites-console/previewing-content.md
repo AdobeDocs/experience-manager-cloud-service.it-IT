@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 75%
+source-wordcount: '306'
+ht-degree: 65%
 
 ---
 
@@ -19,11 +19,15 @@ AEM offre un servizio di anteprima Sites che consente agli sviluppatori e agli a
 
 Semplifica la visualizzazione in anteprima delle esperienze di pagina che non sarebbero altrimenti visibili dall’ambiente di authoring, come le transizioni di pagina e altri contenuti solo lato pubblicazione.
 
+>[!IMPORTANT]
+>
+>L’accesso all’ambiente di anteprima richiede la configurazione di un inserisco nell&#39;elenco Consentiti di IP. Per ulteriori dettagli, vedere [Accedere al servizio di anteprima](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>Per ulteriori dettagli su tutti gli ambienti, vedi [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL (quindi non è necessario accedere a AEM).
-
-Per ulteriori dettagli sugli ambienti di anteprima, consulta il documento [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL.
 
 ## Pubblicazione del contenuto in anteprima {#publishing-content-to-preview}
 
@@ -40,7 +44,7 @@ Puoi pubblicare i contenuti nel servizio di anteprima utilizzando la funzione **
 
    >[!NOTE]
    >
-   >Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL (quindi non è necessario accedere a AEM).
+   >Poiché il contenuto è *pubblicato* nell&#39;ambiente di anteprima, è accessibile tramite URL (quindi non è necessario accedere ad AEM).
 
 Per visualizzare il contenuto dell’anteprima utilizzando gli URL nella procedura guidata, in alternativa, puoi anche anteporre `preview-` all’URL di pubblicazione dell’istanza di produzione.
 
@@ -48,7 +52,7 @@ Per visualizzare il contenuto dell’anteprima utilizzando gli URL nella procedu
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Per ulteriori informazioni su come recuperare gli URL per i tuoi ambienti, consulta il documento [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
+Per ulteriori informazioni su come recuperare gli URL per i tuoi ambienti, consulta [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md).
 
 Il contenuto può anche essere pubblicato in anteprima utilizzando un [flusso di lavoro della struttura dei contenuti di pubblicazione](/help/operations/replication.md#publish-content-tree-workflow) con il parametro `agentId` impostato su `preview` oppure utilizzando [API di replica](/help/operations/replication.md#replication-api) con `AgentFilter` configurato per l’anteprima.
 
