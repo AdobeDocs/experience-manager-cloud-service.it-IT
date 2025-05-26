@@ -2,10 +2,10 @@
 title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 97%
+source-wordcount: '1367'
+ht-degree: 77%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -111,9 +111,23 @@ Per trovare rapidamente le risorse caricate utilizzando Content Hub nell’ambie
 
 1. Ordina le risorse tramite il campo **[!UICONTROL Data di modifica]**.
 
-## Perché non trovo l’opzione Modifica con Adobe Express nella scheda delle risorse per poter eseguire il remix delle risorse e creare nuove varianti? {#edit-using-express-not-available}
+## Perché non vedo l’opzione Modifica con Adobe Express nella scheda delle risorse per poter eseguire il remix delle risorse e creare nuove varianti? {#edit-using-express-not-available}
 
-Per visualizzare l’opzione Modifica con Adobe Express nella scheda delle risorse, è necessario disporre dei diritti necessari per utilizzare Adobe Express, oltre ai privilegi per [utenti di Content Hub autorizzati a eseguire il remix delle risorse per creare nuove varianti](#onboard-content-hub-users-add-assets). Adobe Express deve essere implementato nella stessa organizzazione in Adobe Admin Console in cui è stato implementato Adobe Experience Manager.
+Per visualizzare l&#39;opzione **Modifica con Adobe Express** sulla scheda delle risorse, l&#39;utente deve disporre dei diritti Adobe Express Enterprise o Teams (vedere [plans](https://www.adobe.com/express/pricing)) oltre ai privilegi per [utenti Content Hub con diritti per il remix delle risorse in nuove varianti](#onboard-content-hub-users-add-assets).
+
+Esistono alcune configurazioni del modo in cui gli utenti vengono assegnati a [!DNL Content Hub] e [!DNL Adobe Express]:
+
+1. L&#39;organizzazione dispone di [licenza Assets Ultimate](/help/assets/assets-ultimate-overview.md) o [Assets Prime](/help/assets/assets-prime.md) e l&#39;utente è assegnato a uno dei profili Experience Manager in Admin Console che includono l&#39;adesione Adobe Express (collaboratore o utente avanzato). L’integrazione funziona senza alcuna configurazione aggiuntiva.
+
+1. [!DNL Adobe Express] è distribuito nello stesso [!DNL Adobe Admin Console] di [!DNL Experience Manager Assets] con [!DNL Content Hub]. L’integrazione funziona senza alcuna configurazione aggiuntiva.
+
+1. [!DNL Adobe Express] è distribuito in un [!DNL Adobe Admin Console] diverso da [!DNL Experience Manager Assets] con [!DNL Content Hub]. In questo caso, l&#39;amministratore [!DNL Assets] può configurare l&#39;integrazione (vedi [documentazione](/help/assets/connect-assets-with-creative-cloud.md)) per il funzionamento dell&#39;integrazione.
+
+   >[!NOTE]
+   >
+   >L&#39;utente assegnato ai profili di prodotto Express e Assets in due Admin Console deve avere lo stesso indirizzo e-mail e utilizzare un account aziendale **Enterprise o School**, non quello **Personal**. La configurazione ideale consiste nell&#39;avere entrambe le istanze di Admin Console impostate come **Federated ID** con relazione di trust impostata tra di esse, in modo che l&#39;utente abbia un&#39;esperienza di accesso singolo senza soluzione di continuità. Alcuni dei piani Express (ad esempio, Express Teams) non supportano Federated ID/single sign-on.
+
+Oltre alle giuste adesioni ai prodotti, l&#39;integrazione di Adobe Express in Content Hub richiede che l&#39;utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Can Edit] nell&#39;ambiente di authoring di Assets che alimenta Content Hub, almeno nella gerarchia di cartelle **[#UICONTROL /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare i contenuti creati utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella visualizzazione Amministratore (interfaccia utente touch) o una gestione semplificata delle [autorizzazioni nella visualizzazione Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## È possibile impostare Content Hub in modo che le linee guida del brand della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
 
