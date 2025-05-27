@@ -7,7 +7,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >[!IMPORTANT]
 >
 >Scopri perché devi effettuare l’onboarding del tuo sito Edge Delivery Services in Cloud Manager.
->Consulta [Vantaggi dell&#39;utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Consulta [Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Per aggiungere un sito Edge Delivery a Cloud Manager:**
 

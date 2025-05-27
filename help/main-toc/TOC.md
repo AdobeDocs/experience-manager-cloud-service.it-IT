@@ -766,7 +766,7 @@ ht-degree: 99%
          + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
    + Moduli adattivi {#adaptive-forms-authoring}
       + [Creare un modulo adattivo](/help/forms/create-an-adaptive-form.md)
-      + [Quale Forms adattivo è più adatto alle tue esigenze?](/help/edge/docs/forms/authoring-a-form.md)
+      + [Quale modulo adattivo è più adatto alle tue esigenze?](/help/edge/docs/forms/authoring-a-form.md)
       + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments.md)
       + [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Componenti core {#authoring-adaptive-forms-core-components}
@@ -1012,7 +1012,7 @@ ht-degree: 99%
       + [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WYSIWYG e blocchi basati su documenti](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [Pagine con risorse DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [Riutilizzo del codice in siti diversi](/help/edge/wysiwyg-authoring/repoless.md)
+      + [Riutilizzare il codice in siti diversi](/help/edge/wysiwyg-authoring/repoless.md)
       + [Gestione di più siti senza archivio](/help/edge/wysiwyg-authoring/repoless-msm.md)
       + [Ambienti di produzione e staging senza archivio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
       + [Configurare l’autenticazione del sito](/help/edge/wysiwyg-authoring/site-authentication.md)

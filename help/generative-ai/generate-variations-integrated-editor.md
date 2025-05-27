@@ -7,7 +7,7 @@ exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -313,10 +313,10 @@ Per utilizzare la funzione Genera varianti nella barra laterale (di Edge Deliver
 
 ### Accesso dall’editor universale di AEM {#access-aem-universal-editor}
 
-L&#39;accesso da [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) è implementato come estensione.
+L’accesso dall’[editor universale di AEM](/help/sites-cloud/authoring/universal-editor/authoring.md) è implementato come estensione.
 
-* Per informazioni dettagliate su come accedere a Genera varianti dall&#39;editor universale, vedere il documento [Authoring dei contenuti con l&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
-* Per informazioni dettagliate su come abilitare l&#39;estensione, consulta il documento [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+* Per informazioni dettagliate su come effettuare l’authoring con l’editor universale, consulta il documento [Authoring dei contenuti con l’editor universale.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* Per informazioni dettagliate su come abilitare l’estensione, consulta il documento [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Accesso dall’ editor frammenti di contenuto di AEM {#access-aem-content-fragment-editor}
 
