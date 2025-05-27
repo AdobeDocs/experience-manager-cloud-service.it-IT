@@ -3,13 +3,13 @@ title: Come creare moduli in AEM?
 description: Scopri di più sulle varie piattaforme di creazione dei moduli disponibili in Adobe Experience Manager (AEM) e come scegliere quella giusta in base alle tue esigenze.
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
-workflow-type: tm+mt
-source-wordcount: '1176'
+exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
+source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
+workflow-type: ht
+source-wordcount: '1075'
 ht-degree: 100%
 
 ---
-
 
 # Come creare moduli in Adobe Experience Manager (AEM)?
 
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) fornisce una piattaforma flessibile per la creazi
 
 AEM fornisce più opzioni di authoring per la creazione di moduli interattivi e coinvolgenti. Quando selezioni un ambiente di authoring di moduli, tieni presente i fattori seguenti:
 
-| ?? **Considerazione** | ?? **Che cosa chiedere** |
+| 📝 **Considerazione** | 💡 **Che cosa chiedere** |
 |----------------------|--------------------|
 | **Competenze utente** | Chi creerà i moduli: sviluppatori, utenti aziendali o autori di contenuti? |
 | **Complessità del modulo** | Il modulo richiede regole avanzate, sezioni dinamiche o integrazioni? |
@@ -81,24 +81,24 @@ La tabella seguente fornisce un confronto dettagliato delle funzioni chiave tra 
 | **Supporto CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Richiede l’integrazione personalizzata |
 | **Funzioni di invio** | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Solo foglio di calcolo | Endpoint API personalizzati |
 | **Schema dati** | FDM, personalizzato | FDM, personalizzato | FDM, personalizzato | Personalizzato | Personalizzato |
-| **Precompilazione** | ✅ | ✅ | ?? (tramite procedura guidata) | ✅ | Implementazione personalizzata |
+| **Precompilazione** | ✅ | ✅ | 💡 (tramite procedura guidata) | ✅ | Implementazione personalizzata |
 | **Frammenti** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Editor di regole visivo** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **Localizzazione** | ✅ | ✅ | ?? (tramite Sites) | ℹ️ (Excel - Manuale, funzione Fogli di Google) | Implementazione personalizzata |
-| **Schema dati (struttura dati)** | ✅ | ✅ | ?? (tramite estensione dell’interfaccia utente) | ❌ | Implementazione personalizzata |
+| **Localizzazione** | ✅ | ✅ | 💡 (tramite Sites) | ℹ️ (Excel - Manuale, funzione Fogli di Google) | Implementazione personalizzata |
+| **Schema dati (struttura dati)** | ✅ | ✅ | 💡 (tramite estensione dell’interfaccia utente) | ❌ | Implementazione personalizzata |
 | **Supporto modello** | ✅ | ✅ | Solo contenuto iniziale, nessun criterio | ❌ | Implementazione personalizzata |
 | **Portale** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **Authoring DoR** | ✅ | ✅ | ?? (tramite Derlina) | ❌ | ❌ |
-| **Generazione DoR** | ✅ | ✅ | ?? (FORMS-2475 Nuovo) | ❌ | ❌ |
+| **Authoring DoR** | ✅ | ✅ | 💡 (tramite Derlina) | ❌ | ❌ |
+| **Generazione DoR** | ✅ | ✅ | 💡 (FORMS-2475 Nuovo) | ❌ | ❌ |
 | **Tema** | ✅ | ✅ | ℹ️ (a livello di progetto) | ℹ️ (a livello di progetto) | Implementazione personalizzata |
 | **Componente personalizzato** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Funzioni OOTB e personalizzate** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Riferimento frammento** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **Integrazione di Sign** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **Supporto RTL** | ❌ | ✅ | ?? | ?? | Implementazione personalizzata |
+| **Supporto RTL** | ❌ | ✅ | 💡 | 💡 | Implementazione personalizzata |
 | **Sperimentazione** | ❌ | ❌ | ✅ | ✅ | Implementazione personalizzata |
 | **Gestione attività tramite Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **Estensione della personalizzazione** | ❌ | ❌ | ?? | ❌ | Implementazione personalizzata |
+| **Estensione della personalizzazione** | ❌ | ❌ | 💡 | ❌ | Implementazione personalizzata |
 | **Personalizzazione dell’editor** | ❌ | ❌ | ✅ (tramite estensione dell’interfaccia utente) | ❌ | Implementazione personalizzata |
 | **Azione di invio** | ✅ | ✅ | ✅ | Solo foglio di calcolo | Implementazione personalizzata |
 

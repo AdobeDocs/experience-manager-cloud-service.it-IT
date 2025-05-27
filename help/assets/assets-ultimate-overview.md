@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 source-git-commit: ccd2334528ed7309c271d069209adec333de356c
-workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '882'
+ht-degree: 100%
 
 ---
 
@@ -138,6 +138,6 @@ Nella tabella seguente sono riepilogati i tipi di utenti AEM Assets disponibili,
 | AEM > Istanza di authoring di produzione > Amministratori AEM | − | − | − | ✓ |
 | **Ulteriori informazioni** | Consulta [Abilitare Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Consulta [Onboarding degli utenti collaboratori](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Consulta [Onboarding utenti avanzati](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Per informazioni su come iniziare a utilizzare Assets Ultimate, consulta [Abilitare AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Se gli utenti AEM Assets esistenti hanno domande su quando effettuare l’aggiornamento ad Assets Ultimate, contatta il rappresentante del tuo account Adobe. Puoi anche visualizzare [Abilitare Assets Ultimate per i clienti esistenti](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) per ulteriori informazioni.
+Per informazioni su come iniziare a utilizzare Assets Ultimate, consulta [Abilitare AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Se gli utenti AEM Assets esistenti pongono domande su quando effettuare l’aggiornamento ad Assets Ultimate, contatta il rappresentante del tuo account Adobe. Per ulteriori informazioni, consulta anche [Abilitare Assets Ultimate per la clientela esistente](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers).
 
 AEM Assets fornisce anche un DAM più leggero per la clientela che non richiede requisiti avanzati come, estensibilità dell’interfaccia utente, automazione basata su API e distribuzione di codice personalizzato. Per ulteriori informazioni, consulta [AEM Assets Prime](/help/assets/assets-prime.md).

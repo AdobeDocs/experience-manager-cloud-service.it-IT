@@ -1,8 +1,8 @@
 ---
 source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 # Snippet {#snippets}
@@ -222,7 +222,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
@@ -260,16 +260,16 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 * [Componenti del blocco modulo adattivo e relative proprietà](/help/edge/docs/forms/form-components.md)
 * [Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
 
-## Autenticazione headless Universal Editor {#ue-headless-auth}
+## Autenticazione headless dell’editor universale {#ue-headless-auth}
 
 >[!NOTE]
 >
 >Se utilizzi l’editor universale in un caso d’uso headless, l’app headless deve gestire la propria autenticazione.
 
-## PWA obsoleto {#pwa-deprecation}
+## Obsolescenza della PWA {#pwa-deprecation}
 
 >[!IMPORTANT]
 >
->Le funzionalità progressive web app (PWA) per AEM Sites [ sono state dichiarate obsolete](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>La funzione progressiva dell’app web (PWA) per AEM Sites [sono state dichiarate obsolete](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
->I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non dovrebbero utilizzare questa funzione.
+>I progetti esistenti che utilizzano questa funzione continueranno a essere supportati, ma i nuovi progetti non la devono utilizzare.
