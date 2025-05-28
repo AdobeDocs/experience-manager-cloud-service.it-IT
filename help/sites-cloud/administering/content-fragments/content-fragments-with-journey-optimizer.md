@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # Frammenti di contenuto con Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) ti aiuta a fornire ai tuoi clienti esperienze connesse, contestuali e personalizzate. Integrando Adobe Experience Manager (AEM) as a Cloud Service con Adobe Journey Optimizer (AJO), puoi riutilizzare i contenuti AEM nei tuoi canali in uscita AJO, inclusi web, SMS ed e-mail.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/get-started) ti aiuta a fornire ai tuoi clienti esperienze connesse, contestuali e personalizzate. Integrando Adobe Experience Manager (AEM) as a Cloud Service con Adobe Journey Optimizer (AJO), puoi riutilizzare i contenuti AEM nei tuoi canali in uscita AJO, inclusi web, SMS ed e-mail.
 
 Ad esempio:
 
-* incorpora perfettamente i [frammenti di contenuto AEM](/help/sites-cloud/administering/content-fragments/overview.md) nel contenuto di [e-mail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email)
+* incorpora perfettamente i [frammenti di contenuto AEM](/help/sites-cloud/administering/content-fragments/overview.md) nel contenuto di [e-mail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/get-started-email)
 * visualizzare l’anteprima dell’esperienza AJO direttamente da AEM
 
 La connessione tra Frammenti di contenuto e AJO semplifica il processo di accesso e utilizzo dei contenuti di AEM, consentendo la creazione di campagne e percorsi personalizzati e dinamici.
 
 Per informazioni dettagliate, inizia con la documentazione di AJO:
 
-* [Utilizzo di frammenti di contenuto in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
-* [Offerte di integrazione AJO con frammento di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [Utilizzo di frammenti di contenuto in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=it#integrations)
+* [Offerte di integrazione AJO con frammento di contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Ulteriori informazioni {#further-information}
 
@@ -45,7 +45,7 @@ For integration, and preparation for use, several steps need to be completed in 
 
 >[!IMPORTANT]
 >
->You must also [configure AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>You must also [configure AJO](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/integrations/aem-fragments).
 
 ### Create the AEM tag for AJO synchronization {#create-the-aem-tag-for-AJO-synchronization}
 
@@ -86,7 +86,7 @@ If required, [publish your Content Fragment](/help/sites-cloud/administering/con
 
 ## Use your Content Fragment in Journey Optimizer {#use-your-content-fragment-in-journey-optimizer}
 
-You can now [use your fragment in AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+You can now [use your fragment in AJO](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/integrations/aem-fragments).
 
 ## Preview AJO experiences from AEM {#preview-ajo-experiences-from-aem}
 
@@ -135,22 +135,22 @@ To use the extension:
 
 For full information see:
 
-* [Get started with AJO Campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Campaigns](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+* [Preview and test your content](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ### Preview AJO Journeys {#preview-ajo-journeys}
 
 For full information see:
 
-* [Get started with AJO Journeys](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey).
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Journeys](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/orchestrate-journeys/journey).
+* [Preview and test your content](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ### Preview AJO Template {#preview-ajo-templates}
 
 For full information see:
 
-* [Get started with AJO Content Templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates).
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Content Templates](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-templates/content-templates).
+* [Preview and test your content](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ## Limitations {#limitations}
 
