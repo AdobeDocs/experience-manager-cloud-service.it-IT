@@ -4,9 +4,9 @@ description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Tr
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
+source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1654'
 ht-degree: 14%
 
 ---
@@ -64,7 +64,7 @@ Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Pe
 >id="aemcloud_ctt_demo"
 >title="Esecuzione dello strumento Content Transfer"
 >abstract="Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione)."
->additional-url="https://video.tv.adobe.com/v/327073/?quality=12&learn=on&captions=ita" text=" Guarda la dimostrazione"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Guarda la dimostrazione"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=it#migration" text="Tutorial - Utilizzo dello strumento Content Transfer"
 
 La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti ad AEM as a Cloud Service:
@@ -101,7 +101,7 @@ La sezione seguente si applica alla nuova versione dello strumento Content Trans
 
    >[!NOTE]
    >
-   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere i seguenti caratteri: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;né simboli o emoticon insoliti.
+   >Il nome deve seguire le stesse convenzioni di un nodo AEM, pertanto non può contenere i seguenti caratteri: `. / : [ ] | * &lt; > ^ ? { } % # &quot;né simboli o emoticon insoliti.
 
 1. Ora l’elenco delle migrazioni dovrebbe essere visualizzato nella vista a elenco. Selezionare il simbolo dei tre punti (**...**) per aprire il menu a discesa e selezionare **Copia chiave di estrazione**. Questa chiave è necessaria durante la fase di estrazione. Copia questa chiave di estrazione.
 
@@ -145,10 +145,9 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa
       >Se si desidera includere le versioni come parte di un set di migrazione e si stanno eseguendo integrazioni con `wipe=false`, è necessario disabilitare la rimozione delle versioni a causa di una limitazione corrente nello strumento Content Transfer (Trasferimento contenuti). Se preferisci mantenere abilitata l’eliminazione delle versioni e stai eseguendo integrazioni in un set di migrazione, devi eseguire l’acquisizione come `wipe=true`.
 
       >[!NOTE]
-      >A partire dalla versione CTT (3.0.24), sono state incluse nuove funzioni nello strumento Content Transfer (Trasferimento contenuti), che migliorano il processo di inclusione e esclusione dei percorsi. In precedenza, i percorsi dovevano essere selezionati singolarmente, operazione noiosa e dispendiosa in termini di tempo. Ora gli utenti possono includere percorsi direttamente dall’interfaccia utente o caricare un file CSV in base alle loro preferenze.
+      >A partire dalla versione CTT (3.0.24), sono state incluse nuove funzioni nello strumento Content Transfer (Trasferimento contenuti), che migliorano il processo di inclusione e esclusione dei percorsi. In precedenza, i percorsi dovevano essere selezionati singolarmente, operazione noiosa e dispendiosa in termini di tempo. Ora gli utenti possono includere percorsi direttamente dall’interfaccia utente o caricare un file CSV in base alle loro preferenze.  Il file CSV deve avere un percorso per riga e nessuna virgola.
 
    1. **Percorsi da includere**: utilizzare il browser percorsi per selezionare i percorsi da migrare. Il selettore di percorsi accetta l’input digitando o selezionando. Gli utenti possono selezionare una sola opzione per l’inclusione dei percorsi: dall’interfaccia utente o caricando un file CSV.
-
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
       >* `/apps`
