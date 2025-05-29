@@ -201,7 +201,7 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi
 * ![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
 * ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
 * ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** ]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** &#x200B;]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 ### Metadati e dettagli risorsa {#asset-details-and-metadata}
 
