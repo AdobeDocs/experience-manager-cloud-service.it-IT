@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1529'
 ht-degree: 8%
 
 ---
@@ -15,14 +15,15 @@ ht-degree: 8%
 
 # Dashboard di Experience Audit {#experience-audit-dashboard}
 
-Scopri in che modo l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO. Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Scopri come l’audit dell’esperienza convalida il processo di distribuzione, garantendo che le modifiche soddisfino gli standard di base in termini di prestazioni, accessibilità, best practice e SEO (Search Engine Optimization). Fornisce un’interfaccia dashboard chiara e informativa per monitorare queste metriche.
 
 ## Panoramica {#overview}
 
 L’audit dell’esperienza convalida il processo di distribuzione e garantisce che le modifiche vengano implementate:
 
-1. Soddisfa gli standard di base per prestazioni, accessibilità, best practice e SEO (Search Engine Optimization).
-
+1. Soddisfa gli standard di base in termini di prestazioni, accessibilità, best practice e SEO.
 1. non introducano regressioni.
 
 La funzione Audit dell’esperienza in Cloud Manager garantisce che l’esperienza dell’utente sul sito sia conforme agli standard più elevati.
@@ -35,9 +36,9 @@ L&#39;audit dell&#39;esperienza è basato su [Google Lighthouse](https://develop
 
 L’audit dell’esperienza è disponibile per Cloud Manager:
 
-* (Impostazione predefinita) Pipeline di produzione di Sites
-* Sviluppo di pipeline full stack (facoltativo)
-* Sviluppo di pipeline front-end (facoltativo)
+* Impostazione predefinita. Pipeline di produzione di Sites.
+* (Facoltativo) Sviluppo di pipeline full stack.
+* Sviluppo di pipeline front-end (facoltativo).
 
 Per ulteriori informazioni su come configurare il controllo di audit per gli ambienti facoltativi, vedere la [sezione Configurazione](#configuration).
 
@@ -49,9 +50,9 @@ L’audit dell’esperienza è disponibile per impostazione predefinita per le p
 
 1. A seconda del tipo di pipeline che desideri configurare, effettua una delle seguenti operazioni:
 
-   * Aggiungi una nuova [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per definire i percorsi che dovranno essere valutati dal controllo di audit.
-   * Aggiungi una nuova [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o full-stack di sviluppo.
-   * In alternativa, è possibile [modificare una pipeline esistente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiornare le opzioni esistenti.
+   * [Aggiungi una pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) per definire i percorsi che dovranno essere valutati dal controllo di audit.
+   * [Aggiungi una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desideri abilitare il controllo di audit su una pipeline front-end o di sviluppo full-stack.
+   * [Modifica una pipeline esistente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e aggiorna le opzioni esistenti.
 
 1. Per utilizzare Audit dell&#39;esperienza quando si aggiunge o si modifica una pipeline non di produzione, selezionare la casella di controllo **Audit dell&#39;esperienza**. È possibile trovare questa opzione nella scheda **Codice Source**.
 
@@ -148,7 +149,7 @@ Quando si sposta il mouse sul grafico, una descrizione comando visualizza i valo
 
 ![Dettagli tendenza](assets/experience-audit-trend-details.png)
 
-Se fai clic sul grafico in un determinato momento, viene visualizzato un messaggio con i dettagli della scansione. Fai clic su **apri analisi audit esperienza** per caricare i risultati dell&#39;analisi nella sezione **[Risultati analisi audit esperienza](#scan-results)**.
+Se fai clic sul grafico in un determinato momento, viene visualizzato un pop-up con i dettagli della scansione. Fai clic su **apri analisi audit esperienza** per caricare i risultati dell&#39;analisi nella sezione **[Risultati analisi audit esperienza](#scan-results)**.
 
 ![Seleziona un&#39;altra scansione](assets/experience-audit-open-scan.png)
 
