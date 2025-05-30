@@ -118,7 +118,7 @@ Assicurati che le immagini nel set di formazione siano conformi alle seguenti li
 >[!NOTE]
 >
 >Puoi utilizzare le stesse immagini per addestrare diversi modelli di tag. Tuttavia, non associare un’immagine a più tag in un modello di tag. È possibile assegnare tag alla stessa immagine con tag diversi appartenenti a modelli di tag diversi.
->>Non è possibile annullare l’apprendimento. Le linee guida di cui sopra dovrebbero aiutarti a scegliere le immagini migliori da addestrare.
+>&#x200B;>Non è possibile annullare l’apprendimento. Le linee guida di cui sopra dovrebbero aiutarti a scegliere le immagini migliori da addestrare.
 
 ## Addestra il modello per i tag personalizzati {#train-model}
 
@@ -161,7 +161,7 @@ Per verificare se il servizio Tag avanzati è stato addestrato sui tag nel set d
 >[!NOTE]
 >
 >Cosa succede se voglio trasferire la formazione di tag avanzati da un’istanza all’altra tramite un’esportazione?
->>Non è necessario esportare l’apprendimento dei tag avanzati se l’ambiente appartiene alla stessa organizzazione IMS. Viene condiviso automaticamente. Se l’ambiente si trova in più organizzazioni IMS, non è possibile condividere o esportare l’apprendimento dei tag avanzati.
+>&#x200B;>Non è necessario esportare l’apprendimento dei tag avanzati se l’ambiente appartiene alla stessa organizzazione IMS. Viene condiviso automaticamente. Se l’ambiente si trova in più organizzazioni IMS, non è possibile condividere o esportare l’apprendimento dei tag avanzati.
 
 ## Limitazioni e best practice relative agli smart tag {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Per verificare se il servizio Tag avanzati è stato addestrato sui tag nel set d
 >[!NOTE]
 >
 >La capacità dei tag avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per l’apprendimento.
->>Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>&#x200B;>Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
