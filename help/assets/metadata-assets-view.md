@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 79%
+source-wordcount: '2448'
+ht-degree: 76%
 
 ---
 
@@ -219,23 +219,23 @@ Per utilizzare il componente Collega nel modulo metadati, segui i passaggi segue
 1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
 
-### Utilizzo del componente Tag nel modulo metadati {#tag-component-metadata-form}
+### Utilizzare il componente Tag nel modulo dei metadati {#tag-component-metadata-form}
 
-L’elemento principale rappresenta la struttura ad albero dei tag che è possibile associare alle risorse, per identificare la risorsa in base al tag assegnato. Inoltre, puoi limitare l’accesso a una tassonomia specifica durante la configurazione del modulo metadati nell’editor metadati.
+L’elemento principale rappresenta la struttura ad albero dei tag che è possibile associare alle risorse e aiuta a identificare la risorsa in base al tag assegnato. Inoltre, puoi limitare l’accesso a una tassonomia specifica durante la configurazione del modulo metadati nell’editor metadati.
 
 #### Configurazione del componente Tag {#tags-component-configuration}
 
 Configura il componente Tag eseguendo i passaggi seguenti:
 
-1. Vai all&#39;editor metadati, passa a **[!UICONTROL Tag]** e inseriscilo nell&#39;area di lavoro.
-1. Rinomina il componente nell’area di lavoro. A questo scopo, vai a **[!UICONTROL Etichetta]** sotto la [!UICONTROL proprietà metadati] nel pannello delle impostazioni e aggiungi il testo per la sua identificazione.
-1. Nella [!UICONTROL proprietà metadati] nel pannello delle impostazioni, cerca la proprietà metadati che desideri assegnare al componente.
-1. Fare clic su **[!UICONTROL Limita a tassonomia specifica]** per limitare il percorso della directory principale della tassonomia. A questo scopo, sfoglia i tag e scegli la tassonomia del percorso specifico.
+1. Passa all’editor metadati, quindi a **[!UICONTROL Tag]** e inseriscilo nell’area di lavoro.
+1. Rinomina il componente nell’area di lavoro. A tale scopo, passa a **[!UICONTROL Etichetta]** in [!UICONTROL Proprietà metadati] nel pannello delle impostazioni e aggiungi il testo per l’identificazione.
+1. In [!UICONTROL Proprietà metadati] nel pannello delle impostazioni, cerca la proprietà metadati che desideri assegnare al componente.
+1. Fai clic su **[!UICONTROL Limita a tassonomia specifica]** per limitare il percorso della directory principale della tassonomia. A questo scopo, sfoglia i tag e scegli la tassonomia del percorso specifico.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
-   ![Configurazione tag radice](assets/root-tag-config.png)
+   ![Configurazione tag principali](assets/root-tag-config.png)
 
-1. [Assegna modulo metadati alle cartelle](#assign-metadata-form-folder).
+1. [Assegnare un modulo di metadati alle cartelle](#assign-metadata-form-folder).
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -249,7 +249,34 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-Per visualizzare i tag principali configurati, vai alla pagina dei dettagli della risorsa in cui viene eseguito il mapping tra il modulo di metadati e i tag principali.
+Per visualizzare i tag principali configurati, passa alla pagina dei dettagli della risorsa in cui viene eseguita la mappatura tra il modulo di metadati e i tag principali.
+
+## Miglioramento dell’individuazione dei contenuti con tag avanzati generati dall’intelligenza artificiale {#ai-smart-tags}
+
+Invece di fare affidamento sull’input manuale, l’intelligenza artificiale assegna automaticamente tag descrittivi alle risorse digitali. Questi tag generati dall’intelligenza artificiale migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali. Ad esempio, se la risorsa è un’immagine, l’intelligenza artificiale è in grado di identificare oggetti, scene, emozioni o anche loghi del brand al suo interno e generare tag rilevanti come &quot;tramonto&quot;, &quot;spiaggia&quot;, &quot;vacanza&quot; o &quot;sorriso&quot;. I contenuti generati dall’intelligenza artificiale possono migliorare la ricerca delle risorse sfruttando tecniche di ricerca sia semantiche che lessicali. Ulteriori informazioni su [Cerca in Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![Tag avanzati migliorati](assets/enhanced-smart-tags.png)
+
+### Utilizzo di tag avanzati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
+
+1. Nell&#39;interfaccia [!DNL Experience Manager], passare alla cartella desiderata e fare clic su **[!UICONTROL Aggiungi Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> I formati di file immagine compatibili sono `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` e `bmp`.
+
+1. Attendi che la nuova risorsa caricata venga elaborata. Al termine, vai ai dettagli della risorsa.
+
+1. Passa alla scheda **[!UICONTROL Generato da IA]**. Se la versione di [!DNL Experience Manager] non è compatibile o non è aggiornata, la scheda non è visibile. La versione minima richiesta di AEM è `20626`. Sono presenti i seguenti campi:
+
+   * **[!UICONTROL Titolo generato]:** Il titolo fornisce un titolo chiaro e conciso che acquisisce l&#39;idea di base di una risorsa caricata, semplificandone la comprensione immediata. Quando aggiungi una risorsa, se fornisci un titolo (in `dc:title`), questo verrà visualizzato nella visualizzazione Sfoglia risorse. Se non specificato, viene assegnato automaticamente un titolo generato dall’intelligenza artificiale.
+   * **[!UICONTROL Descrizione generata]:** La descrizione fornisce un riepilogo breve ma informativo di ciò che riguarda la risorsa, aiutando gli utenti e il modulo di ricerca a comprenderne rapidamente la rilevanza.
+   * **[!UICONTROL Parole chiave generate]:** Le parole chiave sono termini di destinazione che rappresentano i temi principali di una risorsa, facilitando l&#39;assegnazione di tag e il filtraggio del contenuto.
+
+1. [Facoltativo] Se ritieni che manchino dei tag rilevanti, puoi aggiungere altri tag o crearne di nuovi. A questo scopo, scrivi i tag nel campo **[!UICONTROL Parole chiave generate]** e fai clic su **[!UICONTROL Salva]**.
 
 ## Passaggi successivi {#next-steps}
 
@@ -259,7 +286,7 @@ Per visualizzare i tag principali configurati, vai alla pagina dei dettagli dell
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&amp;lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&amp;lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
