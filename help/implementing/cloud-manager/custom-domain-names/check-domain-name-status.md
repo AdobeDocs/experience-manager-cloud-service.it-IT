@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 17%
@@ -56,9 +56,9 @@ Cloud Manager verifica la proprietà del dominio tramite il certificato SSL gest
 | Eliminazione non riuscita | Eliminazione di un nome di dominio personalizzato non riuscita. È necessario riprovare.<br>Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md). |
 
 
-## Errori del nome dominio {#domain-error}
+## Errore del nome di dominio {#domain-error}
 
-Di seguito sono riportati alcuni errori comuni di verifica dei nomi di dominio e le relative risoluzioni tipiche.
+Di seguito è riportato un errore comune di verifica del nome di dominio e la sua risoluzione tipica.
 
 ### Errore dominio non installato {#domain-not-installed}
 
