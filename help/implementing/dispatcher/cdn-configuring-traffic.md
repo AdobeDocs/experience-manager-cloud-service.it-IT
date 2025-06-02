@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ I tipi di regole nelle sezioni seguenti condividono una sintassi comune.
 
 A una regola viene fatto riferimento tramite un nome, una &quot;clausola when&quot; condizionale e azioni.
 
-La clausola when determina se una regola verrà valutata in base a proprietà quali dominio, percorso, stringhe di query, intestazioni e cookie. La sintassi è la stessa per tutti i tipi di regole. Per ulteriori dettagli, vedere la [sezione Struttura condizione](/help/security/traffic-filter-rules-including-waf.md#condition-structure) nell&#39;articolo Regole filtro traffico.
+La clausola &quot;when&quot; determina se una regola verrà valutata in base a proprietà quali dominio, percorso, stringhe di query, intestazioni e cookie. La sintassi è la stessa per tutti i tipi di regole. Per ulteriori dettagli, vedere la [sezione Struttura condizione](/help/security/traffic-filter-rules-including-waf.md#condition-structure) nell&#39;articolo Regole filtro traffico.
 
 I dettagli del nodo delle azioni differiscono per tipo di regola e sono descritti nelle singole sezioni seguenti.
+
+Nelle regole di configurazione è possibile fare riferimento a segreti definiti come variabili di ambiente (vedere [Segreti di configurazione](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Richiedi trasformazioni {#request-transformations}
 
