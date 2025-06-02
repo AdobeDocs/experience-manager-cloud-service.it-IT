@@ -4,10 +4,10 @@ description: Guida introduttiva a Edge Delivery Services per AEM Forms. Crea rap
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -81,6 +81,10 @@ Per procedere con la creazione del modulo:
 1. Apri il foglio di calcolo creato e rinomina il foglio predefinito in “shared-aem”.
 
    ![rinominare il foglio predefinito in “shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**Il foglio in cui è stato creato il modulo presenta delle limitazioni relative al nome. Solo `helix-default` e `shared-aem` possono essere utilizzati come nomi di foglio.**
 
 1. Per aggiungere i campi modulo, inserisci le righe e le intestazioni di colonna nel foglio “shared-aem”. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
 

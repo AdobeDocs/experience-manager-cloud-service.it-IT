@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # Servizio di invio Forms con Edge Delivery Services Forms
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l&#39;URL del repository è https://github.com/adobe/abc, il nome dell&#39;organizzazione è adobe e il nome del repository è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 Il servizio di invio di Forms consente di memorizzare i dati degli invii di moduli in qualsiasi foglio di calcolo, ad esempio OneDrive, SharePoint o Google Sheets, consentendo di accedere e gestire facilmente i dati dei moduli nella piattaforma di fogli di calcolo preferita.
 
@@ -37,7 +37,7 @@ Di seguito sono riportati i prerequisiti per l’utilizzo del servizio Forms Sub
 
 ## Configurare il servizio di invio Forms
 
-Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informazioni su come creare un nuovo progetto AEM, consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial). Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
+Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informazioni su come creare un nuovo progetto AEM, consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial). Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
 
 È possibile [configurare il servizio di invio di Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurare il servizio di invio di Forms utilizzando l&#39;API](#configuring-the-forms-submission-service-using-api).
 
@@ -45,17 +45,21 @@ Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informa
 
 ![Flusso di lavoro per il servizio di invio moduli](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. Creare un modulo utilizzando una definizione di modulo
+#### &#x200B;1. Creare un modulo utilizzando una definizione di modulo
 
-Creare un modulo utilizzando Google Sheets o Microsoft Excel. Per informazioni su come creare un modulo utilizzando una definizione di modulo in Microsoft Excel o Google Sheets, [fare clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Creare un modulo utilizzando Google Sheets o Microsoft Excel. Per informazioni su come creare un modulo utilizzando una definizione di modulo in Microsoft Excel o Google Sheets, [fare clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La schermata seguente mostra la definizione del modulo utilizzata per creare il modulo:
 
 ![Definizione modulo](/help/forms/assets/form-submission-definition.png)
 
-#### 2. Abilitare il foglio di calcolo per accettare i dati.
+>[!IMPORTANT]
+>
+>**Il foglio in cui è stato creato il modulo presenta delle limitazioni relative al nome. Solo `helix-default` e `shared-aem` possono essere utilizzati come nomi di foglio.**
 
-Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di calcolo corrispondente per iniziare a ricevere i dati. aggiungere un nuovo foglio come `incoming`. È possibile [abilitare manualmente il foglio di calcolo per accettare i dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+#### &#x200B;2. Abilitare il foglio di calcolo per accettare i dati.
+
+Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di calcolo corrispondente per iniziare a ricevere i dati. aggiungere un nuovo foglio come `incoming`. È possibile [abilitare manualmente il foglio di calcolo per accettare i dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Foglio in ingresso](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -63,7 +67,7 @@ Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di cal
 >
 > Se il foglio `incoming` non esiste, AEM non invierà alcun dato a questa cartella di lavoro.
 
-#### 3. Condividi il foglio di calcolo e genera un collegamento.
+#### &#x200B;3. Condividi il foglio di calcolo e genera un collegamento.
 
 Per condividere il foglio di calcolo con l&#39;account `forms@adobe.com` e generare un collegamento, effettuare le seguenti operazioni:
 
@@ -77,7 +81,7 @@ fai clic sull&#39;icona a forma di occhio, seleziona l&#39;accesso **Modifica** 
 
    ![Copia collegamento del foglio in ingresso](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. Collegare il foglio di calcolo nella definizione del modulo
+#### &#x200B;4. Collegare il foglio di calcolo nella definizione del modulo
 
 Per configurare il servizio Invio di Forms con Google Sheets o Microsoft Excel, effettuare le seguenti operazioni:
 
@@ -153,8 +157,8 @@ Ad esempio, esegui il comando seguente nel terminale o nel prompt dei comandi do
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &quot;&lbrace;
-    &quot;data&quot;: &lbrace;
+    —data &quot;{
+    &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
@@ -165,8 +169,8 @@ Ad esempio, esegui il comando seguente nel terminale o nel prompt dei comandi do
     &quot;età&quot;: &quot;35&quot;,
     &quot;abbonamento&quot;: null,
     &quot;e-mail&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
-    &rbrace;&#39;
+    }
+    }&#39;
     
     &quot;
 

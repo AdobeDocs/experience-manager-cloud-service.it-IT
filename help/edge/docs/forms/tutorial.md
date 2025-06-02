@@ -4,10 +4,10 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 91%
+source-wordcount: '1922'
+ht-degree: 90%
 
 ---
 
@@ -189,6 +189,10 @@ Il contenuto di esempio include un foglio “enquiry” che funge da modello per
 
 ![Modulo di richiesta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**Il foglio in cui è stato creato il modulo presenta delle limitazioni relative al nome. Solo `helix-default` e `shared-aem` possono essere utilizzati come nomi di foglio.**
+
 Iniziamo con l’aggiornamento dell’etichetta di un campo. Apri il foglio “enquiry” per la modifica, cambia l’etichetta del pulsante Invia in `Let's Talk` e utilizza AEM Sidekick per visualizzare in anteprima e pubblicare il file.
 
 ![Modulo di richiesta](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -237,7 +241,7 @@ Per essere operativi con un ambiente di sviluppo AEM locale in tempi brevi:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clona il progetto GitHub: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendolo &lt;owner> con il proprietario dell’archivio e &lt;repo> con il nome dell’archivio:
+1. Clona il progetto GitHub: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendolo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
 
    ```
    git clone https://github.com/<owner>/<repo>
