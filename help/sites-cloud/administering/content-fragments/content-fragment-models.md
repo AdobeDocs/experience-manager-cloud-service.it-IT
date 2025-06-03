@@ -64,9 +64,9 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
         >[!CAUTION]
         >
-        Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
+        >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere *solo* caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
         >
-        Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
      Ad esempio:
 
@@ -98,9 +98,9 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
+  >Se l&#39;area di testo è RTF, Testo normale o Markdown, è definito nel modello dalla proprietà **Tipo predefinito**.
   >
-  Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
+  >Questo formato non può essere modificato dall&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), ma solo dal modello.
 
 * **Numero**
    * Aggiungere un campo numerico
@@ -137,7 +137,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
+  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
 
 * **Riferimento contenuto**
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
@@ -154,7 +154,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
   >[!NOTE]
   >
-  Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
+  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
 
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
@@ -169,7 +169,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
      >[!NOTE]
      >
-     Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà (tipi di dati) {#properties}
 
@@ -181,7 +181,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 
   >[!CAUTION]
   >
-  Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+  >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
 * **Rendering come**
 
@@ -212,11 +212,11 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 
   >[!NOTE]
   >
-  L’unicità è assicurata da directory principale lingua.
+  >L’unicità è assicurata da directory principale lingua.
 
   >[!NOTE]
   >
-  Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
+  >Le varianti possono avere lo stesso valore *unico* come varianti dello stesso frammento, ma non lo stesso valore utilizzato in qualsiasi variante di altri frammenti.
 
 * Vedi **[Riferimento contenuto](#content-reference)** per ulteriori dettagli su quel tipo di dati specifico e sulle relative proprietà.
 
@@ -272,28 +272,28 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 
      >[!NOTE]
      >
-     Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     >Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
-Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) per ulteriori informazioni su contenuto/riferimento frammento e riferimento contenuto/riferimento frammento (UUID) e per l&#39;aggiornamento ai tipi di dati basati su UUID.
+>Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) per ulteriori informazioni su contenuto/riferimento frammento e riferimento contenuto/riferimento frammento (UUID) e per l&#39;aggiornamento ai tipi di dati basati su UUID.
 
 >[!NOTE]
 >
-AEM dispone di protezione di ricorrenza per:
+>AEM dispone di protezione di ricorrenza per:
 >
-* Riferimenti contenuto
-In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
+>* Riferimenti contenuto
+>In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
 >
-* Riferimenti frammento in GraphQL
-Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+>* Riferimenti frammento in GraphQL
+>Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 >[!CAUTION]
 >
-Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
+>Se esegui una query su più frammenti a cui si fa riferimento, non è consigliabile che i vari modelli di frammenti abbiano nomi di campo con lo stesso nome, ma tipi diversi.
 >
-Per ulteriori dettagli vedi [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
+>Per ulteriori dettagli vedi [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Riferimento contenuto {#content-reference}
 
@@ -304,16 +304,16 @@ Oltre alle proprietà standard puoi specificare:
 * **Percorso principale**, che specifica o rappresenta la posizione in cui archiviare il contenuto a cui si fa riferimento
   >[!NOTE]
   >
-  Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
+  >Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
   >
-  Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
+  >Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
 
 * I tipi di contenuto a cui è possibile fare riferimento
   >[!NOTE]
   >
-  Devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l&#39;editor di frammenti di contenuto.
+  >Devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l&#39;editor di frammenti di contenuto.
   >
-  Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
+  >Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
 
 * Le limitazioni per le dimensioni dei file
 * Se si fa riferimento a un’immagine:
@@ -347,7 +347,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-I riferimenti ai frammenti sono di particolare interesse per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+>I riferimenti ai frammenti sono di particolare interesse per la [distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Oltre alle proprietà standard puoi definire:
 
@@ -373,6 +373,6 @@ Specifica o rappresenta un percorso principale per tutti i frammenti a cui si fa
 
 >[!NOTE]
 >
-È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento e può causare una finestra di dialogo vuota per la selezione del riferimento frammento.
+>È presente un meccanismo di protezione per evitare le ricorrenze. Non consente all’utente di selezionare il frammento di contenuto corrente nel riferimento frammento e può causare una finestra di dialogo vuota per la selezione del riferimento frammento.
 >
-In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituisce null.
+>In GraphQL è inoltre disponibile una protezione di ricorrenza per i riferimenti di frammenti. Se crei una query approfondita tra due frammenti di contenuto che si riferiscono l’uno all’altro, restituisce null.
