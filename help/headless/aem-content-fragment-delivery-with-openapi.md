@@ -4,10 +4,10 @@ description: Scopri la distribuzione di frammenti di contenuto AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '475'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +34,14 @@ Per la documentazione completa consulta [Distribuzione di frammenti di contenuto
 >
 >Consulta [API di AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md) per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti.
 
+>[!IMPORTANT]
+>
+>Per abilitare Content Fragment Delivery con OpenAPI su AEM as a Cloud Service, accertati che non sia già abilitato, quindi invia un ticket di supporto Adobe con il titolo **Enable Content Fragment Delivery with OpenAPI** e specifica:
+>
+>* ID del programma Cloud Service e dell&#39;ambiente
+>* dettagli del caso d’uso che desideri risolvere con Content Fragment Delivery OpenAPI
+>* i dettagli di tutti i contatti a cui Adobe deve rispondere e rimanere informato sulla richiesta e sul progetto (se necessario)
+
 ## Memorizzazione in cache {#caching}
 
 AEM si integra con AEM CDN Fastly. Ciò significa che le risposte JSON distribuite sul livello di pubblicazione sono memorizzate nella cache al livello Fastly.
@@ -49,4 +57,28 @@ Le risposte vengono quindi memorizzate nella cache, in base alle intestazioni di
 * I contenuti non aggiornati possono essere presentati, per errore, per un massimo di 1 giorno
    * `stale-on-error`=`86400`
 
-AEM include anche l’annullamento della validità della cache CDN attiva. Ciò significa che ogni volta che il contenuto viene aggiornato o pubblicato, le corrispondenti risposte JSON OpenAPI vengono automaticamente invalidate tramite una richiesta di eliminazione temporanea a Fastly. Questo consente di visualizzare le modifiche riportate nell&#39;output JSON prima che venga raggiunta l&#39;età effettiva della cache CDN (`s-maxage`).
+La distribuzione dei frammenti di contenuto con OpenAPI supporta l’annullamento della validità della cache CDN attiva. Ciò significa che ogni volta che il contenuto viene aggiornato o pubblicato, le corrispondenti risposte JSON OpenAPI vengono automaticamente invalidate tramite una richiesta di eliminazione temporanea a Fastly. Questo consente di visualizzare le modifiche riportate nell&#39;output JSON prima che venga raggiunta l&#39;età effettiva della cache CDN (`s-maxage`).
+
+## Disponibilità {#availability}
+
+La Distribuzione dei frammenti di contenuto con OpenAPI è disponibile sui livelli di anteprima e pubblicazione. OpenAPI distribuisce frammenti di contenuto in formato JSON, sia per l’anteprima che per la distribuzione live.
+
+Per visualizzare in anteprima la distribuzione dei frammenti di contenuto con OpenAPI puoi:
+
+* pubblica in anteprima
+* abilita l’accesso all’anteprima con elenco consentiti IP
+* ottenere l’URL di anteprima
+
+## CORS {#cors}
+
+[Origini consentite CORS](/help/headless/deployment/cross-origin-resource-sharing.md) definiscono le origini che possono chiamare l&#39;API.
+
+Questa API non prende in considerazione le origini consentite CORS definite sul lato della configurazione del dispatcher, in particolare per GraphQL.
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->
