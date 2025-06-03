@@ -4,10 +4,10 @@ description: Scopri le API disponibili per la distribuzione strutturata dei cont
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 42%
+source-wordcount: '516'
+ht-degree: 28%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager (AEM) as a Cloud Service offre più API sia per la dist
    * Queste API sono destinate alla gestione di contenuti strutturati.
    * I rispettivi operatori GET non sono ottimizzati per la consegna dei contenuti.
    * Questa API è basata su REST.
-* [Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * API originale per l’output JSON per la consegna di contenuti strutturati in AEM.
-      * Benché solida e comprovata, questa API non fornisce l’output JSON *completamente popolato*. Gli output dei riferimenti sono solo percorsi che richiedono richieste API secondarie per recuperare ulteriore contenuto.
-   * L’API HTTP di Assets può essere utilizzata anche per la gestione di frammenti di contenuto e modelli per frammenti di contenuto (CRUD).
-   * Questa API è basata su REST.
-   * In futuro, il supporto per i frammenti di contenuto nell’API HTTP di Assets diventerà obsoleto in quanto verrà sostituito dall’API REST JSON di Edge Delivery Services. La tempistica non è ancora stata decisa.
+
+>[!NOTE]
+>
+>[Il supporto per i frammenti di contenuto nell&#39;API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) è ora [obsoleto](/help/release-notes/deprecated-removed-features.md). È stato sostituito da [Content Fragment Delivery con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) insieme a [Content Fragments and Content Fragment Models Management OpenAPI](/help/headless/content-fragment-openapis.md).
 
 ## REST e GRAPHQL {#rest-vs-graphql}
 

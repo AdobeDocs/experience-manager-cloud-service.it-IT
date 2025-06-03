@@ -4,27 +4,33 @@ description: Scopri il supporto per i frammenti di contenuto nell’API HTTP di 
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1859'
 ht-degree: 14%
 
 ---
 
-# Supporto per frammenti di contenuto nell’API HTTP di AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Panoramica {#overview}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un elemento importante della funzione di distribuzione headless di Adobe Experience Manager (AEM).
+>[!CAUTION]
+>
+>Il supporto per i frammenti di contenuto nell&#39;API HTTP di Assets è ora [obsoleto](/help/release-notes/deprecated-removed-features.md).
+>
+>È stato sostituito da [Content Fragment Delivery con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) insieme a [Content Fragments and Content Fragment Models Management OpenAPI](/help/headless/content-fragment-openapis.md).
+
+Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un elemento importante della funzione di consegna headless di Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
->Per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti, consulta [API AEM per la distribuzione e la gestione strutturate dei contenuti](/help/headless/apis-headless-and-content-fragments.md).
+>Consulta [API di AEM per la distribuzione e la gestione strutturata dei contenuti](/help/headless/apis-headless-and-content-fragments.md) per una panoramica delle varie API disponibili e un confronto di alcuni dei concetti coinvolti.
 >
 >Sono disponibili anche [OpenAPI per frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md).
 
@@ -41,13 +47,13 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un el
 >
 >Per informazioni aggiornate sulle API Experience Manager, visita [API Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
-L&#39;[API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati nell&#39;AEM) direttamente tramite l&#39;API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete).
+L&#39;[API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager as a Cloud Service di accedere ai contenuti (memorizzati in AEM) direttamente tramite l&#39;API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete).
 
 L’API consente di utilizzare Adobe Experience Manager as a Cloud Service come CMS (Content Management System) headless fornendo Content Services a un’applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
 Ad esempio, [le applicazioni a pagina singola (SPA)](/help/implementing/developing/hybrid/introduction.md), basate su framework o personalizzate, richiedono contenuto fornito tramite API HTTP, spesso in formato JSON.
 
-Sebbene i [componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) forniscano un&#39;API personalizzabile in grado di fornire le operazioni di lettura necessarie per questo scopo e il cui output JSON possa essere personalizzato, richiedono il know-how WCM (Web Content Management) dell&#39;AEM per l&#39;implementazione. Questo perché devono essere ospitate in pagine basate su modelli AEM dedicati. Non tutte le organizzazioni per lo sviluppo dell&#39;SPA hanno accesso diretto a tali conoscenze.
+Sebbene i [componenti core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) forniscano un&#39;API personalizzabile in grado di fornire le operazioni di lettura necessarie per questo scopo e il cui output JSON possa essere personalizzato, richiedono il know-how AEM WCM (Web Content Management) per l&#39;implementazione. Questo perché devono essere ospitate in pagine basate su modelli AEM dedicati. Non tutte le organizzazioni che si occupano di sviluppo di applicazioni a pagina singola hanno accesso diretto a tali conoscenze.
 
 Qui è possibile utilizzare l’API REST di Assets. Consente agli sviluppatori di accedere direttamente alle risorse (ad esempio immagini e frammenti di contenuto), senza doverle incorporare in una pagina, e di distribuire il contenuto in formato JSON serializzato.
 
@@ -69,7 +75,7 @@ L’API REST di Assets è disponibile per ogni installazione predefinita di una 
 
 ## Concetti fondamentali {#key-concepts}
 
-L&#39;API REST di Assets offre l&#39;accesso in stile [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) alle risorse memorizzate all&#39;interno di un&#39;istanza AEM.
+L&#39;API REST di Assets offre l&#39;accesso in stile [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) alle risorse memorizzate all&#39;interno di un&#39;istanza di AEM.
 
 Utilizza l&#39;endpoint `/api/assets` e richiede il percorso della risorsa per accedervi (senza `/content/dam` iniziale).
 
@@ -109,12 +115,12 @@ Tutte le richieste sono atomiche.
 
 Ciò significa che le richieste successive (`write`) non possono essere combinate in una singola transazione che potrebbe avere esito positivo o negativo come singola entità.
 
-### API REST di AEM (Assets) rispetto ai componenti AEM {#aem-assets-rest-api-versus-aem-components}
+### API REST di AEM (Assets) rispetto ai componenti di AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
   <tr>
-   <td>Formato</td>
+   <td>Aspetto</td>
    <td>API REST di Assets<br/> </td>
    <td>Componente AEM<br/> (componenti che utilizzano modelli Sling)</td>
   </tr>
@@ -141,12 +147,12 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
   <tr>
    <td>Sicurezza</td>
    <td><p>Sono possibili più opzioni.</p> <p>OAuth è proposto; può essere configurato separatamente dalla configurazione standard.</p> </td>
-   <td>Utilizza la configurazione standard dell’AEM.</td>
+   <td>Utilizza la configurazione standard di AEM.</td>
   </tr>
   <tr>
    <td>Osservazioni di architettura</td>
-   <td><p>L'accesso in scrittura è in genere indirizzato a un'istanza Autore.</p> <p>La lettura può anche essere indirizzata a un’istanza di Publish.</p> </td>
-   <td>Poiché questo approccio è di sola lettura, in genere viene utilizzato per le istanze di Publish.</td>
+   <td><p>L'accesso in scrittura è in genere indirizzato a un'istanza Autore.</p> <p>La lettura può anche essere indirizzata a un’istanza Publish.</p> </td>
+   <td>Poiché questo approccio è di sola lettura, in genere viene utilizzato per le istanze Publish.</td>
   </tr>
   <tr>
    <td>Output</td>
@@ -158,14 +164,14 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
 
 ### Sicurezza {#security}
 
-Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di autenticazione specifici, il filtro CORS dell’AEM deve essere configurato correttamente.
+Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di autenticazione specifici, il filtro CORS di AEM deve essere configurato correttamente.
 
 >[!NOTE]
 >
 >Per ulteriori informazioni, consulta:
 >
->* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
->* [Video: sviluppo per CORS con AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it)
+>* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video: sviluppo per CORS con AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Negli ambienti con requisiti di autenticazione specifici, si consiglia OAuth.
@@ -218,7 +224,7 @@ La risposta contiene informazioni di paging nella sezione `properties` dell&#39;
 
 ### Cartelle {#folders}
 
-Le cartelle fungono da contenitori per risorse e altre cartelle. Riflettono la struttura dell’archivio dei contenuti dell’AEM.
+Le cartelle fungono da contenitori per risorse e altre cartelle. Riflettono la struttura dell’archivio dei contenuti di AEM.
 
 L’API REST di Assets espone l’accesso alle proprietà di una cartella. Ad esempio, il nome e il titolo. Assets sono esposte come entità secondarie di cartelle e sottocartelle.
 
@@ -266,13 +272,13 @@ L’utilizzo può variare a seconda che si utilizzi un ambiente AEM Author o Pub
 * Si consiglia di associare la creazione a un&#39;istanza Autore ([e attualmente non è possibile replicare un frammento da pubblicare utilizzando questa API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * La distribuzione è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
-   * L’archiviazione e la distribuzione da un’istanza di authoring AEM devono essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
+   * L’archiviazione e la distribuzione da un’istanza di AEM Author devono essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
 
-   * Per la distribuzione live sul web, si consiglia un’istanza Publish dell’AEM.
+   * Per la distribuzione live sul web, si consiglia un’istanza AEM Publish.
 
 >[!CAUTION]
 >
->La configurazione Dispatcher nelle istanze cloud AEM potrebbe bloccare l&#39;accesso a `/api`.
+>La configurazione di Dispatcher nelle istanze cloud di AEM potrebbe bloccare l&#39;accesso a `/api`.
 
 >[!NOTE]
 >
@@ -377,4 +383,4 @@ Consulta qui per riferimenti API dettagliati:
 Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
-* [Sessione Gem AEM: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=it)
+* [Sessione AEM Gem: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

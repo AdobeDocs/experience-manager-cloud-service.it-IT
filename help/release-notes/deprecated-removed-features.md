@@ -4,9 +4,9 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
+source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2912'
 ht-degree: 89%
 
 ---
@@ -35,6 +35,7 @@ Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nel
 
 | Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
+| Sites | [Supporto per frammenti di contenuto nell&#39;API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna dei frammenti di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione di frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
 | Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuno |
 | Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
