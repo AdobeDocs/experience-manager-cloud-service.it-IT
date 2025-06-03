@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -232,6 +232,69 @@ Il tuo contributo è prezioso per il continuo miglioramento dell’Assistente AI
 - **Fornisci feedback:** Utilizza il comando o il pulsante **&quot;Fornisci feedback&quot; integrato** nell&#39;interfaccia dell&#39;Assistente AI per condividere esperienze, segnalare problemi o suggerire miglioramenti. Ad esempio, è possibile digitare `/feedback` o cercare un&#39;icona di feedback.
 - **Supporto ufficiale:** Per problemi critici o ulteriore assistenza, contatta i canali ufficiali di supporto Adobe o i contatti per il supporto designati della tua organizzazione.
 
+
+
+## Utilizzo degli allegati
+
+L’Assistente AI supporta i file allegati per migliorare l’esperienza di creazione e configurazione dei moduli. È possibile allegare vari tipi di file per fornire contesto visivo, riferimenti di progettazione o moduli esistenti da convertire.
+
+### Tipi di allegati supportati
+
+| Tipo file | Casi d’uso | Comandi che supportano gli allegati | Esempi |
+|-----------|-----------|-----------------------------------|----------|
+| **Immagini** (PNG, JPG, JPEG, GIF) | Riferimenti layout modulo, modelli di interfaccia utente, scansioni moduli cartacei | /create-form, /add-form, /create-panel, /add-panel, /update-field | Carica uno screenshot del layout desiderato |
+| **File PDF** | Moduli esistenti da convertire, specifiche di progettazione | /create-form, /add-form, /create-panel, /add-panel | Conversione di moduli applicativi PDF |
+| **File Figma** | Riferimenti del sistema di progettazione, prototipi dell’interfaccia utente | /create-form, /add-form, /create-panel | Importa i frame di progettazione Figma |
+| **File di progettazione** (schizzo, esportazioni Adobe XD) | Riferimenti di progettazione visiva | /create-form, /add-form, /create-panel | Componenti del sistema di progettazione di riferimento |
+
+### Come utilizzare gli allegati
+
+1. **Allega prima o con il comando:**
+
+   - Fai clic sull’icona dell’allegato nell’interfaccia dell’Assistente AI
+   - Seleziona i file dal dispositivo
+   - Digita il comando facendo riferimento al file allegato
+
+2. **Allegati di riferimento nei comandi:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Più Allegati:**
+
+   - È possibile allegare più file per il confronto o il riferimento
+   - Specifica l’allegato da utilizzare: &quot;utilizzando la prima immagine allegata&quot; o &quot;in base al file PDF&quot;
+
+### Best practice per gli allegati
+
+- **Immagini chiare e di alta qualità:** assicurati che le immagini caricate siano chiare e leggibili per una migliore analisi AI
+- **Nomi file rilevanti:** Utilizza nomi file descrittivi per aiutare l&#39;IA a comprendere il contesto
+- **Singolo focus:** Ogni allegato deve concentrarsi su un aspetto specifico (layout, progettazione del campo, ecc.)
+- **Formati supportati:** Utilizza i formati più comuni (PNG, JPG, PDF) per garantire la massima compatibilità
+- **Dimensione file:** Mantieni gli allegati sotto i 10 MB per una velocità di elaborazione ottimale
+
+### Esempio di flussi di lavoro per allegati
+
+**Conversione di un modulo carta:**
+
+1. Scansionare o fotografare chiaramente il modulo cartaceo
+2. Carica il file di immagine
+3. Usa comando: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Corrispondenza con un sistema di progettazione:**
+
+1. Esportare o visualizzare i componenti di progettazione rilevanti
+2. Allega il riferimento di progettazione
+3. Usa comando: `/create-panel following the visual style and layout shown in the attached design`
+
+**Riferimento stile campo:**
+
+1. Allega schermata dell’aspetto del campo desiderato
+2. Usa comando: `/update-field @email to match the styling and layout shown in the attached image`
 
 ## Contenuto correlato
 

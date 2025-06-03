@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ L’ambito attuale dell’Assistente per l’intelligenza artificiale si concent
 
 ## Assistente AI per AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Oltre all&#39;Assistente generale all&#39;intelligenza artificiale per la conoscenza del prodotto, AEM offre un **Assistente all&#39;intelligenza artificiale specializzato per AEM Forms (Forms Experience Builder)**. Questo assistente avanzato può aiutarti attivamente a creare e configurare i moduli tramite prompt in linguaggio naturale e a rispondere a domande specifiche relative ai moduli.
+Oltre all&#39;Assistente generale all&#39;intelligenza artificiale per la conoscenza del prodotto, AEM offre un **[Assistente all&#39;intelligenza artificiale specializzato per AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. Questo assistente avanzato può aiutarti attivamente a creare e configurare i moduli tramite prompt in linguaggio naturale e a rispondere a domande specifiche relative ai moduli.
 
 ### Funzionalità principali
 
@@ -76,7 +76,7 @@ L’Assistente AI per AEM Forms è disponibile in:
 >
 > L’Assistente all’intelligenza artificiale per AEM Forms (Forms Experience Builder) è disponibile nel programma per gli utenti che lo hanno adottato in anticipo. Invia un&#39;e-mail dal tuo indirizzo di lavoro a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per richiedere l&#39;accesso.
 
-Per ulteriori informazioni sull’utilizzo di AI Assistant per AEM Forms, inclusi esempi dettagliati e best practice, consulta la documentazione di AI Assistant per AEM Forms.
+Per ulteriori informazioni sull&#39;utilizzo di Assistente IA per AEM Forms, inclusi esempi dettagliati e best practice, consulta la documentazione di [Assistente IA per AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Casi d’uso di esempio
 
