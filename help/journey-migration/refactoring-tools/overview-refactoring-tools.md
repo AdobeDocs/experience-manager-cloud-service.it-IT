@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Precedentemente disponibile solo come utility CLI, gli strumenti di refactoring offrono ora un&#39;interfaccia unificata con funzioni quali ispezione automatizzata, generazione della configurazione ed esecuzione dei processi, riducendo il sovraccarico manuale e migliorando la visibilità.
 
-&#x200B;---
+---
 
 ## Flusso di lavoro di ispezione {#inspection-workflow}
 
@@ -34,7 +34,7 @@ Il **flusso di lavoro di ispezione** semplifica il processo di preparazione per 
 * **Generazione configurazione** - Gli strumenti controllano il codice sorgente caricato e generano le configurazioni necessarie.
 * **Invio payload** - Queste configurazioni vengono passate direttamente agli strumenti selezionati per l&#39;esecuzione.
 
-&#x200B;---
+---
 
 ## Strumenti di refactoring disponibili
 
@@ -46,7 +46,7 @@ Il **Repository Modernizer** ristruttura il layout e il contenuto dell&#39;archi
 
 **Code Transformer** utilizza il riconoscimento intelligente dei pattern e l&#39;analisi basata su IA per rilevare e aggiornare segmenti di codice incompatibili con AEMaaCS. Questo strumento semplifica le operazioni di migrazione e riduce le modifiche manuali al codice.
 
-&#x200B;---
+---
 
 ## Fasi del flusso di lavoro di refactoring {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ Gli strumenti di refactoring seguono un processo strutturato in due fasi:
 >[!NOTE]
 >Durante il processo di ispezione non è consentito caricare un altro progetto.
 
-&#x200B;---
+---
 
 ### Fase 2: attivazione di un processo di refactoring
 
