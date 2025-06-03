@@ -35,7 +35,7 @@ Utilizza lo strumento Refactoring per migrare il codice e garantirne la compatib
 
    ![immagine](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
----
+&#x200B;---
 
 ## Caricamento del codice Source {#uploading}
 
@@ -72,7 +72,7 @@ Quando i clienti accedono per la prima volta agli **strumenti di refactoring**, 
 >[!NOTE]
 >I processi di refactoring possono essere eseguiti solo se il caricamento del codice sorgente ha esito positivo.
 
----
+&#x200B;---
 
 ## Processi di refactoring {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Quando si fa clic sulla scheda **Processo di refactoring**, viene visualizzato u
 >[!NOTE]
 >Puoi attivare singoli processi di refactoring o eseguire tutti gli strumenti disponibili in un&#39;unica operazione utilizzando l&#39;opzione **Tutti gli strumenti insieme**.
 
----
+&#x200B;---
 
 ### &#x200B;2. Stato processo
 
