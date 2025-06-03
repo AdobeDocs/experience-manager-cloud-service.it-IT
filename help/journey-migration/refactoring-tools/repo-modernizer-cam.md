@@ -40,7 +40,7 @@ Repository Modernizer ora supporta anche i seguenti tipi di progetto:
 
 ## Utilizzo di Repository Modernizer {#using-repo-modernizer}
 
->[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412960/?quality=12&learn=on&captions=ita)
 
 - Il Repository Modernizer viene ora richiamato automaticamente dal servizio di refactoring nella scheda Processo di refactoring. I clienti devono semplicemente caricare il proprio progetto e attivare il processo di refactoring, senza alcuna configurazione aggiuntiva.
 
