@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 28%
+source-wordcount: '1547'
+ht-degree: 29%
 
 ---
 
@@ -103,9 +103,7 @@ Le seguenti funzioni potrebbero non funzionare correttamente se distribuite in f
 
 #### Requisiti di runtime {#runtime-requirements}
 
-Il runtime Java 21 viene utilizzato per le build con Java 21 e Java 17 e verrà applicato gradualmente anche alle build Java 11 (vedi la nota seguente). Per ricevere l’aggiornamento Java 21, un ambiente deve trovarsi in una versione di AEM 17098 o più recente. Per garantire la compatibilità, sono necessari i seguenti adeguamenti.
-
-Gli aggiornamenti della libreria possono essere applicati in qualsiasi momento, in quanto rimangono compatibili con le versioni Java precedenti.
+Il runtime Java 21 è stato applicato a tutti gli ambienti idonei, che sono ambienti in AEM versione 17098 o successiva che soddisfano i criteri riportati di seguito. Se un ambiente non soddisfa i criteri, è importante apportare le modifiche necessarie per garantire prestazioni, disponibilità e sicurezza.
 
 * **Versione minima di ASM:**
 Aggiornare l&#39;utilizzo del pacchetto Java`org.objectweb.asm`, spesso incluso in `org.ow2.asm.*` artefatti, alla versione 9.5 o successiva per garantire il supporto per i runtime JVM più recenti.
@@ -127,8 +125,7 @@ Quando si esegue AEM localmente con Java 21, gli script iniziali (`crx-quickstar
 
 >[!IMPORTANT]
 >
->Quando `.cloudmanager/java-version` è impostato su `21` o `17`, il runtime Java 21 viene distribuito. Il runtime Java 21 è pianificato per il rollout graduale in tutti gli ambienti (non solo in quelli il cui codice è generato con Java 11) a partire da martedì 4 febbraio 2025. I rollout iniziano con sandbox e ambienti di sviluppo, seguiti da tutti gli ambienti di produzione ad aprile 2025. I clienti che desiderano adottare il runtime Java 21 *precedente* possono contattare Adobe all&#39;indirizzo [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
+>Se un ambiente non è ancora stato aggiornato automaticamente al runtime Java 21, puoi attivarlo creando Java 17 o 21. Questa operazione viene eseguita impostando `.cloudmanager/java-version` su `21` o `17`. Per qualsiasi domanda, contatta Adobe all&#39;indirizzo [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Requisiti di tempo di creazione {#build-time-reqs}
 
