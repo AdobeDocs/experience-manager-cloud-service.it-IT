@@ -4,10 +4,10 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,7 @@ Durante la copia del contenuto, l’ambiente sorgente è l’origine di riferime
 
 Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate autorizzazioni sia nell’ambiente di origine che in quello di destinazione.
 
-| Funzione Copia contenuto | Gruppo di amministratori AEM | Ruolo Responsabile della distribuzione |
+| Funzione Copia contenuto | Gruppo di amministratori di AEM | Ruolo Responsabile della distribuzione |
 |---|---|---|
 | Creare e modificare il [set di contenuti](#create-content-set) | Non obbligatorio | Obbligatorio |
 | Avviare o annullare il [processo di copia del contenuto](#copy-content) | Obbligatorio | Obbligatorio |
@@ -175,7 +175,7 @@ A tale scopo, nella pagina **Attività copia contenuto** selezionare l&#39;azion
 >
 >Quando annulli un’operazione di copia del contenuto, questa può tradursi in una copia parziale del contenuto nell’ambiente di destinazione. Questa situazione può lasciare l’ambiente di destinazione inutilizzabile.
 >
->Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti di Adobe.
+>Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti Adobe.
 
 ### Accesso ai registri {#accessing-logs}
 
@@ -200,3 +200,4 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione solo con le modifiche apportate al contenuto, dall’ultima operazione di copia del contenuto devi creare un set di contenuti. Quindi, specifica i percorsi nell’istanza sorgente in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
+* [I modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) possono specificare campi di riferimento basati su ID universalmente univoci (UUID). Tali UUID sono specifici dell’archivio, pertanto lo strumento di copia del contenuto ricalcola questi UUID nell’ambiente di destinazione durante la copia dei frammenti di contenuto.
