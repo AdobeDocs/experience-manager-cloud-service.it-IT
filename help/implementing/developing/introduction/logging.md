@@ -4,9 +4,9 @@ description: Scopri come utilizzare la funzione di registrazione per AEM as a Cl
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2556'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,7 @@ AEM as a Cloud Service fornisce accesso alle istruzioni di registro Java. Gli sv
 </tr>
 <tr>
 <td>
-Ambiente di sviluppo</td>
+Sviluppo</td>
 <td>
 DEBUG</td>
 <td>
@@ -158,8 +158,8 @@ Configura la registrazione Java per i pacchetti Java personalizzati tramite le c
 La modifica di altre proprietà di configurazione OSGi LogManager può causare problemi di disponibilità in AEM as a Cloud Service.
 
 Come indicato in una sezione precedente, per garantire un monitoraggio efficace degli ambienti dei clienti:
-* I registri Java per il codice prodotto di AEM devono mantenere il livello di registro predefinito &quot;INFO&quot; e non devono essere sostituiti da configurazioni personalizzate.
-* È accettabile impostare i livelli di registro su DEBUG per il codice prodotto, ma utilizzalo con moderazione per evitare il deterioramento delle prestazioni e ripristinalo su INFO quando non è più necessario.
+* Il livello di registro della configurazione di registro predefinita di AEM (Configurazione di registrazione Sling Apache) non deve essere modificato dal valore predefinito &quot;INFO&quot;.
+* È accettabile impostare i livelli di registro su DEBUG per i singoli pacchetti di codice prodotto (utilizzando le istanze della factory di configurazione OSGi &quot;Apache Sling Logging Logger configuration&quot;), ma utilizzarlo con moderazione per evitare il deterioramento delle prestazioni e ripristinare su INFO quando non è più necessario.
 * È accettabile regolare i livelli di registro per il codice sviluppato dal cliente.
 * Tutti i registri, sia per il codice del prodotto AEM che per il codice sviluppato dal cliente, devono mantenere il formato di registrazione predefinito.
 * L&#39;output del log deve rimanere indirizzato al file predefinito &quot;logs/error.log&quot;.
@@ -172,7 +172,7 @@ A tal fine, non è necessario apportare modifiche alle seguenti proprietà OSGi:
 
 Di seguito sono riportati alcuni esempi delle configurazioni di registrazione consigliate (utilizzando il pacchetto Java segnaposto di `com.example`) per i tre tipi di ambiente AEM as a Cloud Service.
 
-### Ambiente di sviluppo {#development}
+### Sviluppo {#development}
 
 /apps/my-app/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 
