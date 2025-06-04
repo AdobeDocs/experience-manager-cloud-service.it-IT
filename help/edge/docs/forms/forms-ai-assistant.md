@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+exl-id: a8d64082-a23f-4919-ad66-042faad77d29
+source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
-
 
 # Assistente AI per AEM Forms (Forms Experience Builder)
 
@@ -24,11 +24,17 @@ ht-degree: 1%
 >
 > **Documentazione soggetta a modifica**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi possono cambiare man mano che l’Assistente IA per AEM Forms continua a evolversi durante il programma per i primi utenti.
 
-L’Assistente all’intelligenza artificiale per AEM Forms (Forms Experience Builder) migliora l’esperienza di authoring semplificando le attività comuni di creazione dei moduli tramite messaggi in linguaggio naturale. Disponibile nell’interfaccia utente di gestione di Forms, nell’editor di Forms adattivo e nell’editor universale, consente di creare in modo più intelligente e veloce supportando sia le azioni di creazione che quelle di configurazione. Questa guida ti aiuterà a iniziare e a sfruttare al massimo le sue funzionalità.
+L’Assistente all’intelligenza artificiale per AEM Forms trasforma il modo in cui si creano i moduli, descrivendo semplicemente ciò di cui hai bisogno nel linguaggio naturale e osservando i moduli prendere vita. Disponibile nell’interfaccia utente di gestione di Forms, nell’editor di Forms adattivo e nell’editor universale, comprende le tue intenzioni e crea esattamente ciò che stai cercando.
 
-## Guida introduttiva
+## Guida introduttiva: basta parlarne
 
-Prima di immergerti in profondità, descriviamo le nozioni di base sull’accesso e l’interazione con l’Assistente AI.
+L’Assistente AI funziona come una conversazione con un collega esperto. Invece di imparare a usare menu e impostazioni complessi, descrivi semplicemente ciò che desideri creare.
+
+### Guida rapida
+
+Inizia subito a lavorare guardando il nostro video introduttivo:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ### Accesso all’Assistente AI
 
@@ -39,14 +45,14 @@ Prima di immergerti in profondità, descriviamo le nozioni di base sull’access
    - Cerca l’icona Assistente AI sul lato sinistro dell’interfaccia
    - Fai clic sull’icona per aprire il pannello Assistente AI
 
-   ![Icona Assistente IA*](/help/edge/docs/forms/assets/forms-manager.gif)
+   ![Icona Assistente IA*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
 
 2. **Editor Forms adattivo**
    - Passa a: Adobe Experience Manager > Forms > Forms e documenti
    - Seleziona e apri un modulo per la modifica
    - Fai clic sull’icona Assistente AI nell’interfaccia dell’editor
 
-   ![Icona Assistente IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif)
+   ![Icona Assistente IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
 3. **Editor universale**
 
@@ -54,70 +60,230 @@ Prima di immergerti in profondità, descriviamo le nozioni di base sull’access
    - Cerca l’icona Assistente AI sul lato sinistro dell’interfaccia
    - Fai clic sull’icona Assistente AI nell’interfaccia dell’editor
 
-L’Assistente AI adatta le sue funzionalità in base alla posizione e all’attività correnti, fornendo assistenza pertinente per ciascun contesto.
+### Come iniziare: conversazioni semplici
 
-### Come interagire:
+Il modo migliore per iniziare con l’Assistente AI è attraverso il linguaggio naturale. Ecco come:
 
-- È sufficiente digitare la richiesta nel linguaggio naturale.
-- Utilizzare `/` per visualizzare un elenco dei comandi o delle azioni rapide disponibili.
-- Fare riferimento a campi modulo specifici utilizzando `@fieldName` (ad esempio, `@firstName`, `@emailAddress`) quando si desidera che l&#39;assistente configuri o aggiorni quel particolare campo.
-- Puoi caricare immagini, PDF, file Figma o altre risorse di progettazione per aiutare l’Assistente AI a comprendere meglio le tue esigenze.
+**Descrivi solo ciò di cui hai bisogno:**
 
+- &quot;Crea un modulo di contatto per il sito Web&quot;
+- &quot;Ho bisogno di un modulo di feedback del cliente con le scale di valutazione&quot;
+- &quot;Crea un modulo di registrazione per il mio prossimo evento&quot;
+- &quot;Fai un semplice sondaggio sulla soddisfazione del prodotto&quot;
 
-### Guida rapida
+**Aggiungi dettagli man mano:**
 
-Inizia subito a lavorare guardando il nostro video introduttivo:
+- &quot;Crea un modulo per i contatti con i campi Nome, E-mail, Telefono e Messaggio&quot;
+- &quot;Ho bisogno di un modulo di registrazione in più passaggi per una conferenza&quot;
+- &quot;Crea un modulo di feedback del cliente con valutazioni a 5 stelle e sezioni di commenti&quot;
 
->[!VIDEO](https://video.tv.adobe.com/v/3463164/)
+**Fai riferimento ai campi esistenti:**
 
+- &quot;Rendi obbligatorio il campo e-mail&quot; (per @email)
+- &quot;Aggiungi convalida al campo del numero di telefono&quot; (per @phoneNumber)
+- &quot;Mostra le informazioni sul coniuge solo se è selezionata l&#39;opzione sposato&quot; (per @spouseInfo e @maritalStatus)
 
-Questo video illustra il lancio dell’assistente in tutti gli ambienti, le interazioni di base e una panoramica delle sue funzionalità.
+### Cosa puoi fare
 
-## Riferimento comando Assistente IA
+Oltre al linguaggio naturale, l’Assistente per l’intelligenza artificiale offre ulteriori modi di interagire:
 
-| Comando | Descrizione | Scopo | Contesto di utilizzo | Esempi | Funzioni principali |
-|---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Avviare un nuovo modulo nell’interfaccia utente di gestione di Forms o nell’editor di Forms | Avvia la creazione di un modulo completamente nuovo da zero | Interfaccia utente di gestione Forms, editor Forms adattivo | /create-form sondaggio del feedback dei clienti basato su PDF allegato | Fornisce opzioni per la struttura dei moduli e crea il modulo. **Supporta gli allegati** per i riferimenti di progettazione |
-| /add-form | Aggiungere un nuovo modulo nell’editor universale | Aggiunge un nuovo blocco modulo o componente in Universal Editor. | Editor universale per Edge Delivery Services | Modulo di contatto /add-form con nome e indirizzo e-mail | Inserisce blocchi di modulo, funziona con la modifica basata su blocchi. **Supporta gli allegati** per indicazioni sul layout |
-| /update-layout | Cambia il layout del modulo in Pannello a soffietto, Schede, Procedura guidata o Progettazione reattiva a pagina singola | Modifica il layout strutturale generale e il modello di navigazione | Tutti gli ambienti di modifica | procedura guidata /update-layout con 3 passaggi | Pannello a soffietto, schede, procedura guidata, opzioni reattive a pagina singola |
-| /update-field | Modificare le proprietà e la configurazione dei campi modulo esistenti | Modifica gli attributi dei campi come etichette, convalida, formattazione e comportamento | Tutti gli ambienti di modifica | /update-field @email necessario per la convalida | Etichette, regole di convalida, tipi di campo, valori predefiniti, visibilità. **Supporta gli allegati** per esempi di progettazione dei campi |
-| /create-rule | Creare un comportamento dinamico e una logica condizionale per i moduli | Implementa logica di business, calcoli e interazioni condizionali | Tutti gli ambienti di modifica | /create-rule mostra @spouseName se @maritalStatus è uguale a &quot;Sposato&quot; | Visibilità condizionale, calcoli, convalida, impostazione valore |
-| /create-panel | Crea un nuovo pannello (contenitore per raggruppare i campi correlati) | Aggiunge contenitori strutturali per organizzare i campi modulo in modo logico | Tutti gli ambienti di modifica | /create-panel Informazioni personali con nome, e-mail, telefono | Raggruppamento di campi, titoli, opzioni di layout, sezioni comprimibili. **Supporta gli allegati** per i riferimenti al layout del pannello |
-| /add-panel | Conversione di un’immagine in un pannello modulo in Universal Editor | Utilizza l’intelligenza artificiale per analizzare le immagini caricate e convertirle in pannelli di moduli strutturati | Editor universale | /add-panel da immagine modulo caricata | Riconoscimento delle immagini, conversione da visivo a funzionale, mantenimento del layout. **Sono necessari allegati** per l&#39;analisi delle immagini |
-| /configure-submit | Configurare le azioni di invio dei moduli e la gestione dei dati | Definisce cosa accade quando gli utenti inviano il modulo completato | Tutti gli ambienti di modifica | /configure-submit per inviare e-mail a `support@company.com` | E-mail, API REST, flussi di lavoro, fogli di calcolo, database, Power Automate |
-| /help | Accedere all’assistenza e alla documentazione nell’Assistente AI | Fornisce aiuto contestuale, indicazioni e risposte su AEM Forms | Tutti gli ambienti di modifica | /help come si creano i moduli con più passaggi? | Spiegazioni delle funzioni, guide, best practice e risoluzione dei problemi |
+- **Carica file**: allega immagini, PDF o progettazioni Figma per mostrare all&#39;intelligenza artificiale ciò che stai immaginando
+- **Usa comandi rapidi**: Digitare `/` per visualizzare le scelte rapide disponibili per le azioni comuni
+- **Riferimento a campi specifici**: utilizzare `@fieldName` per modificare campi modulo esistenti (ad esempio `@firstName`, `@emailAddress`)
 
-### Categorie di comandi
+## Cosa puoi creare: esempi efficaci
 
-| Categoria | Comandi | Casi d’uso principali |
-|----------|----------|-------------------|
-| Creazione modulo | /create-form, /add-form | Avvio di nuovi moduli, aggiunta di blocchi di moduli |
-| Struttura e layout | /update-layout, /create-panel, /add-panel | Organizzazione della struttura del modulo, progettazione visiva |
-| Gestione dei campi | /update-field | Configurazione di singoli elementi del modulo |
-| Logica e regole | /create-rule | Aggiunta di comportamento dinamico e convalida |
-| Invio | /configure-submit | Impostazione della gestione dei dati e dei flussi di lavoro |
-| Supporto | /help | Ottenere assistenza e documentazione |
+Di seguito sono riportati esempi reali di ciò che è possibile realizzare con un linguaggio semplice e naturale:
 
-### Linee guida per la sintassi
+### Avvio di un nuovo modulo
 
-| Elemento | Formato | Esempio | Note |
-|---------|--------|---------|-------|
-| Comandi | /nome-comando | /create-form | Inizia sempre con una barra |
-| Riferimenti campo | @fieldName | @email, @firstName | Usa il simbolo @ per i campi esistenti |
-| Linguaggio naturale | Comando + descrizione | /create-rule mostra campo se condizione | Combinare comandi con testo descrittivo |
-| Azioni multiple | Comandi separati | /create-panel, quindi /update-layout | Applica un comando alla volta |
+**Approccio semplice:**
 
+```
+"Create a contact form"
+```
 
-### Caratteristiche specifiche dell&#39;ambiente
+**Approccio più dettagliato:**
 
-| Ambiente | Comandi disponibili | Funzioni speciali |
-|-------------|-------------------|------------------|
-| Interfaccia utente di gestione Forms | /create-form, /help | Creazione e gestione a livello di modulo |
-| Editor Forms adattivo ed editor universale | Tutti i comandi | Set completo di funzioni, configurazione dettagliata |
+```
+"Create a professional contact form for a law firm with fields for name, email, phone, case type, and message. Make it mobile-friendly."
+```
 
+**Con riferimento progettazione:**
 
+```
+"Create a contact form based on the attached design mockup. Include all the fields shown in the layout."
+```
 
-### Sintassi dei riferimenti ai campi (elementi contestuali)
+### Aggiunta di elementi del modulo
+
+**Aggiunte di base:**
+
+```
+"Add a section for personal information"
+"Include a file upload for resume"
+"Add a dropdown for country selection"
+```
+
+**Specifiche dettagliate:**
+
+```
+"Add a personal information panel with fields for full name, date of birth, phone number, and email address"
+"Include a secure file upload component for documents, limited to PDF files under 5MB"
+"Add a country dropdown with options for USA, Canada, UK, and Germany"
+```
+
+### Creazione di un comportamento dinamico
+
+**Logica semplice:**
+
+```
+"Show additional fields when 'Other' is selected"
+"Make the email field required"
+"Calculate the total automatically"
+```
+
+**Regole di business complesse:**
+
+```
+"Show the spouse information fields only when marital status is set to 'Married'"
+"Calculate the total cost by multiplying quantity and price, then add 10% tax"
+"Enable the submit button only when all required fields are completed and terms are accepted"
+```
+
+### Layout e progettazione dei moduli
+
+**Modifiche layout:**
+
+```
+"Make this a multi-step form"
+"Organize fields in two columns"
+"Convert to an accordion layout"
+```
+
+**Miglioramenti alla progettazione:**
+
+```
+"Create a wizard-style form with 3 steps: personal info, preferences, and review"
+"Arrange the address fields in a compact two-column layout"
+"Update the layout to match the attached wireframe"
+```
+
+### Invio e integrazione
+
+**Invio di base:**
+
+```
+"Send form data to our email"
+"Save responses to a spreadsheet"
+"Redirect to a thank you page"
+```
+
+**Integrazione avanzata:**
+
+```
+"Send form submissions to hr@company.com and create a case in our CRM system"
+"Submit data to our REST API endpoint and trigger the new customer workflow"
+"Email responses to the sales team and add the lead to our marketing automation platform"
+```
+
+## Utilizzo degli allegati
+
+Carica i file per aiutare l’intelligenza artificiale a comprendere esattamente ciò che stai cercando:
+
+### Tipi di file supportati
+
+| Tipo file | Ideale per | Esempio di utilizzo |
+|-----------|----------|-------------|
+| **Immagini** (PNG, JPG, GIF) | Layout dei moduli, modelli di interfaccia utente, scansioni dei moduli cartacei | &quot;Crea un modulo corrispondente a questo layout&quot; |
+| **File PDF** | Moduli esistenti da convertire, specifiche | &quot;Converti questo modulo PDF in digitale&quot; |
+| **File Figma** | Prototipi di progettazione, linee guida per il marchio | &quot;Crea questo modulo dal mio design Figma&quot; |
+| **File di progettazione** | Riferimenti visivi, guide di stile | &quot;Corrispondenza con lo stile di questo design&quot; |
+
+### Come utilizzare gli allegati
+
+1. **Fare clic sull&#39;icona dell&#39;allegato** nell&#39;interfaccia dell&#39;Assistente AI
+2. **Seleziona il file** dal dispositivo
+3. **Descrivi cosa vuoi** facendo riferimento al file allegato:
+   - &quot;Crea un modulo basato su questo PDF allegato&quot;
+   - &quot;Crea un modulo di contatto corrispondente al layout in questa immagine&quot;
+   - &quot;Convertire il modulo cartaceo in una versione digitale&quot;
+
+### Best practice con allegati
+
+- **Utilizza immagini chiare e di alta qualità** per una migliore analisi AI
+- **Concentrarsi su un concetto per allegato** (layout, stile, ecc.)
+- **Descrivi cosa vuoi** insieme all&#39;allegato
+- **Mantieni i file sotto i 10 MB** per un&#39;elaborazione ottimale
+
+## Suggerimenti per ottenere risultati ottimali
+
+### Avvio semplice, creazione
+
+- Inizia con le richieste di base: &quot;Crea un modulo di contatto&quot;
+- Aggiungi gradualmente i dettagli: &quot;Aggiungi convalida al campo e-mail&quot;
+- Test e perfezionamento: &quot;Rendi opzionale il campo del telefono&quot;
+
+### Sii Specifico Quando Necessario
+
+- Invece di: &quot;Fai una buona impressione&quot;
+- Prova: &quot;Usa colori professionali e tipografia pulita&quot;
+
+### Usa linguaggio naturale
+
+- Invece di: &quot;Aggiungi componente di input testo&quot;
+- Prova: &quot;Aggiungi un campo per il nome&quot;
+
+### Riferimento a elementi esistenti
+
+- Usa `@fieldName` per i campi esistenti: &quot;Rendi @email obbligatorio&quot;
+- Specifica i nomi dei campi: &quot;Aggiorna il campo @phoneNumber&quot;
+
+### Suddividere richieste complesse
+
+- Invece di una richiesta grande, prova con più richieste più piccole
+- Creare il modulo passo dopo passo
+- Verifica ogni modifica prima di passare a quella successiva
+
+## Guida e apprendimento del prodotto
+
+L’Assistente AI può anche insegnarti le funzioni di AEM Forms:
+
+### Fai Domande Come:
+
+- &quot;Come si crea un modulo con più passaggi?&quot;
+- &quot;Qual è la differenza tra pannelli e sezioni?&quot;
+- &quot;Come si impostano le notifiche e-mail?&quot;
+- &quot;Quali sono le best practice per i moduli compatibili con i dispositivi mobili?&quot;
+- &quot;Come si applicano i temi ai moduli?&quot;
+
+### Ottieni Aiuto Per:
+
+- Concetti e terminologia di AEM Forms
+- Istruzioni dettagliate per le feature complesse
+- Best practice e raccomandazioni
+- Risoluzione dei problemi comuni
+
+## Guida di riferimento per le funzioni avanzate
+
+Per gli utenti che desiderano esplorare funzionalità avanzate:
+
+### Comandi rapidi
+
+Digitare `/` per visualizzare i collegamenti disponibili:
+
+| Comando | Scopo | Esempio |
+|---------|---------|---------|
+| `/create-form` | Avvia un nuovo modulo | `/create-form customer survey` |
+| `/add-form` | Aggiungi modulo nell’editor universale | `/add-form contact form` |
+| `/update-layout` | Modificare la struttura del modulo | `/update-layout wizard with 3 steps` |
+| `/update-field` | Modifica proprietà campo | `/update-field @email to be required` |
+| `/create-rule` | Aggiungi comportamento dinamico | `/create-rule show @spouse if married` |
+| `/create-panel` | Aggiungi contenitori campi | `/create-panel Personal Information` |
+| `/configure-submit` | Configurare l’invio di un modulo | `/configure-submit to email support` |
+| `/help` | Ottenere assistenza | `/help multi-step forms` |
+
+### Sintassi di riferimento campo
 
 Utilizza `@fieldName` per fare riferimento a campi esistenti:
 
@@ -128,7 +294,7 @@ Utilizza `@fieldName` per fare riferimento a campi esistenti:
 
 ### Tipi di componenti
 
-Questo elenco descrive i tipi di componenti più comuni. L’intelligenza artificiale può riconoscere varianti o tipi più specializzati, ma l’utilizzo di questi termini precisi produce i risultati migliori:
+Utilizza questi termini per ottenere risultati ottimali:
 
 - `text input` - Campo di testo a riga singola
 - `text area` - Campo di testo su più righe
@@ -140,224 +306,42 @@ Questo elenco descrive i tipi di componenti più comuni. L’intelligenza artifi
 - `file upload` - File allegato
 - `panel` - Contenitore per il raggruppamento dei campi
 
+## Risoluzione dei problemi
 
-## Funzionalità di base ed esempi di prompt estesi
+### Problemi comuni e soluzioni
 
-L’Assistente AI è in grado di comprendere un’ampia gamma di comandi. Ecco alcuni esempi per illustrarne il potere. Ricorda di utilizzare termini precisi per componenti come &quot;pannello&quot;, &quot;immissione testo&quot;, &quot;casella di controllo&quot;, ecc.
+**Assistente IA non risponde:**
 
-| Categoria funzionalità | Descrizione | Esempio di prompt |
-| ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Creazione modulo** | Iniziare un nuovo modulo da zero o in base a una descrizione. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
-| **Importa progettazione** | Converti una progettazione esistente (immagine, Figma, PDF) in un AEM Form. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
-| **Aggiunta di componenti e pannelli** | Aggiungi vari campi modulo e contenitori strutturali (pannelli). | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
-| **Regolazioni layout** | Modificare la struttura e l&#39;aspetto del layout del modulo. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
-| **Creazione regola e logica** | Implementare comportamento dinamico, calcoli e visibilità condizionale. | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **Aggiornamento proprietà campo** | Modifica gli attributi di campi modulo specifici come etichette, segnaposto e così via. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
-| **Azioni di invio** | Definire cosa accade quando un utente invia il modulo. | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **Tema** | Applica i temi AEM Forms esistenti per applicare uno stile al modulo. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
-| **Navigazione e struttura** | Aggiungere elementi di spostamento o riorganizzare parti del modulo. | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
-| **Convalida** | Impostare regole di convalida specifiche per i campi. | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **Piano di revisione** (editor universale) | Visualizza l&#39;anteprima delle modifiche proposte dall&#39;assistente prima dell&#39;esecuzione. | `Add a contact form with fields for name, email, subject, and message.` (L&#39;assistente mostrerà un piano di componenti e proprietà che creerà, quindi fai clic su &quot;Applica&quot;). <br> `Create a form based on the attached design file.` (L&#39;assistente analizzerà l&#39;allegato e mostrerà un piano dettagliato prima dell&#39;implementazione). |
+- Verifica la connessione Internet
+- Assicurarsi di essere in un ambiente supportato
+- Chiudere e riaprire il pannello Assistente AI
 
-## Best practice per risultati ottimali
+**Risultati imprevisti:**
 
-Per ottenere il massimo dall’Assistente AI, tieni presenti i seguenti suggerimenti:
+- Prova a riformulare la richiesta in modo più specifico
+- Suddividere le richieste complesse in passaggi più piccoli
+- Utilizza la terminologia standard di AEM Forms
 
-- **Inizio semplice, compilazione incrementale:** Iniziare con comandi specifici più piccoli (ad esempio, &quot;Aggiungere un input di testo per &#39;Nome&#39;&quot;) anziché richiedere più passaggi troppo complessi.
-- **Utilizza la terminologia di AEM Forms:** Utilizza termini come &quot;pannello&quot;, &quot;campo di immissione testo&quot;, &quot;gruppo di caselle di controllo&quot;, &quot;azione di invio&quot;, &quot;regola&quot; ecc. per una migliore comprensione da parte dell&#39;assistente.
-- **Riferimento chiaro ai campi:** Durante la configurazione dei campi esistenti, utilizzare la notazione `@fieldName` (ad esempio, `Make @firstName mandatory`).
-- **Rivedi piani** Rivedi sempre i piani con attenzione per le modifiche proposte dall&#39;assistente nell&#39;editor universale prima di fare clic su &quot;Applica&quot;.
-- **Convalida manuale:** Dopo che l&#39;assistente ha apportato le modifiche, visualizzare sempre l&#39;anteprima e verificare che il modulo si comporti e abbia l&#39;aspetto previsto. L’intelligenza artificiale è uno strumento potente, ma la convalida finale è fondamentale.
-- **Itera e perfeziona:** Se il primo prompt non restituisce il risultato esatto, provare a riformulare o suddividere la richiesta in passaggi più piccoli.
-- **Invia feedback:** Utilizza il meccanismo di feedback integrato per aiutare l&#39;assistente ad apprendere e migliorare (consulta la sezione &quot;Feedback e supporto&quot;).
+**Riferimenti campo non funzionanti:**
 
-## Guida del prodotto con l’Assistente AI
+- Controllare che i nomi dei campi siano scritti esattamente come appaiono
+- Usa la sintassi `@fieldName` per i campi esistenti
+- Assicurati che il campo esista prima di farvi riferimento
 
-L’Assistente AI per AEM Forms non è solo per la creazione, ma può anche aiutarti a imparare, comprendere e utilizzare le varie funzioni di AEM Forms.
+**Problemi relativi all&#39;importazione della progettazione:**
 
-### Argomenti della Guida supportati
-
-Puoi porre all’assistente domande come:
-
-- &quot;Come si crea un nuovo modulo adattivo da zero?&quot;
-- &quot;Che cos’è un pannello in Adaptive Forms e come viene utilizzato?&quot;
-- &quot;Spiegare come applicare un tema a un modulo.&quot;
-- &quot;Quali tipi di layout sono supportati per moduli e pannelli?&quot;
-- &quot;Come posso configurare diverse azioni di invio, ad esempio l’invio di un’e-mail?&quot;
-- &quot;Potete guidarmi nell&#39;utilizzo di un progetto Figma per creare un modulo?&quot;
-- &quot;Qual è il modo migliore per creare un modulo con più passaggi?&quot;
-
-### Come richiedere assistenza:
-
-1. Apri l’Assistente all’intelligenza artificiale nell’interfaccia utente di gestione di Forms o nell’editor di Forms adattivo.
-2. Digita la domanda nel linguaggio naturale (ad esempio, &quot;Come posso aggiungere un pannello ripetibile?&quot;).
-3. L’assistente risponderà con:
-   - Istruzioni dettagliate.
-   - Spiegazioni dei concetti di AEM Forms.
-   - Se applicabile, collegamenti alla documentazione pertinente di Adobe Experience League.
-
-### Suggerimenti per ottenere una guida migliore:
-
-- **Specifica:** Fai una domanda chiara alla volta.
-- **Usa parole chiave:** Includi parole chiave rilevanti per le funzioni o gli elementi dell&#39;interfaccia utente di AEM Forms (ad esempio, &quot;editor di moduli adattivi&quot;, &quot;editor di regole&quot;, &quot;tema&quot;).
-- **Riformula se necessario:** Se l&#39;assistente non comprende o non fornisce le informazioni desiderate, provare a semplificare la domanda o utilizzare termini diversi.
-
-
-## Risoluzione dei problemi comuni
-
-- **L&#39;Assistente Non Risponde:**
-   - Assicurati di lavorare attivamente all’interno di un ambiente supportato (interfaccia utente di gestione di Forms, editor di Forms adattivo o editor universale).
-   - Controlla la tua connessione Internet.
-   - Provare a chiudere e riaprire il pannello Assistente AI.
-
-- **Risposte imprecise o impreviste:**
-   - Riformula la richiesta in modo che sia più specifica o più semplice.
-   - Suddividere una richiesta complessa in singoli comandi più piccoli.
-   - Assicurati di utilizzare la terminologia standard di AEM Forms.
-
-- **Problemi relativi all&#39;importazione della progettazione (PDF/Figma/Image):**
-   - Verificare che il file di progettazione sia chiaro, ben strutturato e leggibile.
-   - Assicurati che il formato del file sia supportato (PDF, collegamento Figma, tipi di immagini comuni come PNG, JPG).
-   - Per Figma, assicurati che il frame di destinazione sia chiaramente definito e accessibile.
-
-- **Campo `@fieldName` Non Riconosciuto:**
-   - Controllare il nome esatto del campo nel modulo. I nomi dei campi fanno distinzione tra maiuscole e minuscole e devono corrispondere con precisione.
-   - Assicurati che il campo esista già se stai tentando di modificarlo.
-
+- Verificare che i file siano chiari e ben strutturati
+- Utilizzare i formati supportati (PDF, PNG, JPG, Figma)
+- Assicurati che la dimensione del file sia inferiore a 10 MB
 
 ## Feedback e supporto
 
-Il tuo contributo è prezioso per il continuo miglioramento dell’Assistente AI.
+Aiutaci a migliorare l’Assistente AI:
 
-- **Fornisci feedback:** Utilizza il comando o il pulsante **&quot;Fornisci feedback&quot; integrato** nell&#39;interfaccia dell&#39;Assistente AI per condividere esperienze, segnalare problemi o suggerire miglioramenti. Ad esempio, è possibile digitare `/feedback` o cercare un&#39;icona di feedback.
-- **Supporto ufficiale:** Per problemi critici o ulteriore assistenza, contatta i canali ufficiali di supporto Adobe o i contatti per il supporto designati della tua organizzazione.
+- **Invia feedback**: utilizza il pulsante Feedback nell&#39;interfaccia dell&#39;Assistente AI
+- **Segnala problemi**: contatta il supporto Adobe tramite canali ufficiali
+- **Condividi esperienze**: il tuo input ti aiuta a migliorare l&#39;assistente di tutti
 
-
-
-## Utilizzo degli allegati
-
-L’Assistente AI supporta i file allegati per migliorare l’esperienza di creazione e configurazione dei moduli. È possibile allegare vari tipi di file per fornire contesto visivo, riferimenti di progettazione o moduli esistenti da convertire.
-
-### Tipi di allegati supportati
-
-| Tipo file | Casi d’uso | Comandi che supportano gli allegati | Esempi |
-|-----------|-----------|-----------------------------------|----------|
-| **Immagini** (PNG, JPG, JPEG, GIF) | Riferimenti layout modulo, modelli di interfaccia utente, scansioni moduli cartacei | /create-form, /add-form, /create-panel, /add-panel, /update-field | Carica uno screenshot del layout desiderato |
-| **File PDF** | Moduli esistenti da convertire, specifiche di progettazione | /create-form, /add-form, /create-panel, /add-panel | Conversione di moduli applicativi PDF |
-| **File Figma** | Riferimenti del sistema di progettazione, prototipi dell’interfaccia utente | /create-form, /add-form, /create-panel | Importa i frame di progettazione Figma |
-| **File di progettazione** (schizzo, esportazioni Adobe XD) | Riferimenti di progettazione visiva | /create-form, /add-form, /create-panel | Componenti del sistema di progettazione di riferimento |
-
-### Come utilizzare gli allegati
-
-1. **Allega prima o con il comando:**
-
-   - Fai clic sull’icona dell’allegato nell’interfaccia dell’Assistente AI
-   - Seleziona i file dal dispositivo
-   - Digita il comando facendo riferimento al file allegato
-
-2. **Allegati di riferimento nei comandi:**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **Più Allegati:**
-
-   - È possibile allegare più file per il confronto o il riferimento
-   - Specifica l’allegato da utilizzare: &quot;utilizzando la prima immagine allegata&quot; o &quot;in base al file PDF&quot;
-
-### Best practice per gli allegati
-
-- **Immagini chiare e di alta qualità:** assicurati che le immagini caricate siano chiare e leggibili per una migliore analisi AI
-- **Nomi file rilevanti:** Utilizza nomi file descrittivi per aiutare l&#39;IA a comprendere il contesto
-- **Singolo focus:** Ogni allegato deve concentrarsi su un aspetto specifico (layout, progettazione del campo, ecc.)
-- **Formati supportati:** Utilizza i formati più comuni (PNG, JPG, PDF) per garantire la massima compatibilità
-- **Dimensione file:** Mantieni gli allegati sotto i 10 MB per una velocità di elaborazione ottimale
-
-### Esempio di flussi di lavoro per allegati
-
-**Conversione di un modulo carta:**
-
-1. Scansionare o fotografare chiaramente il modulo cartaceo
-2. Carica il file di immagine
-3. Usa comando: `/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**Corrispondenza con un sistema di progettazione:**
-
-1. Esportare o visualizzare i componenti di progettazione rilevanti
-2. Allega il riferimento di progettazione
-3. Usa comando: `/create-panel following the visual style and layout shown in the attached design`
-
-**Riferimento stile campo:**
-
-1. Allega schermata dell’aspetto del campo desiderato
-2. Usa comando: `/update-field @email to match the styling and layout shown in the attached image`
-
-## Contenuto correlato
+## Risorse correlate
 
 [Assistente AI di AEM Forms - Libreria di richieste](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-
-## Utilizzo degli allegati
-
-L’Assistente AI supporta i file allegati per migliorare l’esperienza di creazione e configurazione dei moduli. È possibile allegare vari tipi di file per fornire contesto visivo, riferimenti di progettazione o moduli esistenti da convertire.
-
-### Tipi di allegati supportati
-
-| Tipo file | Casi d’uso | Comandi che supportano gli allegati | Esempi |
-|-----------|-----------|-----------------------------------|----------|
-| **Immagini** (PNG, JPG, JPEG, GIF) | Riferimenti layout modulo, modelli di interfaccia utente, scansioni moduli cartacei | /create-form, /add-form, /create-panel, /add-panel, /update-field | Carica uno screenshot del layout desiderato |
-| **File PDF** | Moduli esistenti da convertire, specifiche di progettazione | /create-form, /add-form, /create-panel, /add-panel | Conversione di moduli applicativi PDF |
-| **File Figma** | Riferimenti del sistema di progettazione, prototipi dell’interfaccia utente | /create-form, /add-form, /create-panel | Importa i frame di progettazione Figma |
-| **File di progettazione** (schizzo, esportazioni Adobe XD) | Riferimenti di progettazione visiva | /create-form, /add-form, /create-panel | Componenti del sistema di progettazione di riferimento |
-
-### Come utilizzare gli allegati
-
-1. **Allega prima o con il comando:**
-
-   - Fai clic sull’icona dell’allegato nell’interfaccia dell’Assistente AI
-   - Seleziona i file dal dispositivo
-   - Digita il comando facendo riferimento al file allegato
-
-2. **Allegati di riferimento nei comandi:**
-
-   ```
-   /create-form based on the attached PDF application form
-   /add-panel using the layout shown in the uploaded image
-   /create-panel following the design in the attached Figma file
-   /update-field @email to match the style in the attached screenshot
-   ```
-
-3. **Più Allegati:**
-
-   - È possibile allegare più file per il confronto o il riferimento
-   - Specifica l’allegato da utilizzare: &quot;utilizzando la prima immagine allegata&quot; o &quot;in base al file PDF&quot;
-
-### Best practice per gli allegati
-
-- **Immagini chiare e di alta qualità:** assicurati che le immagini caricate siano chiare e leggibili per una migliore analisi AI
-- **Nomi file rilevanti:** Utilizza nomi file descrittivi per aiutare l&#39;IA a comprendere il contesto
-- **Singolo focus:** Ogni allegato deve concentrarsi su un aspetto specifico (layout, progettazione del campo, ecc.)
-- **Formati supportati:** Utilizza i formati più comuni (PNG, JPG, PDF) per garantire la massima compatibilità
-- **Dimensione file:** Mantieni gli allegati sotto i 10 MB per una velocità di elaborazione ottimale
-
-### Esempio di flussi di lavoro per allegati
-
-**Conversione di un modulo carta:**
-
-1. Scansionare o fotografare chiaramente il modulo cartaceo
-2. Carica il file di immagine
-3. Usa comando: `/create-form based on the attached form image, converting all fields to digital equivalents`
-
-**Corrispondenza con un sistema di progettazione:**
-
-1. Esportare o visualizzare i componenti di progettazione rilevanti
-2. Allega il riferimento di progettazione
-3. Usa comando: `/create-panel following the visual style and layout shown in the attached design`
-
-**Riferimento stile campo:**
-
-1. Allega schermata dell’aspetto del campo desiderato
-2. Usa comando: `/update-field @email to match the styling and layout shown in the attached image`
