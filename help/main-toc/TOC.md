@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
+source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6211'
 ht-degree: 98%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 98%
             + [Utilizzo dello strumento di mappatura utente](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Strumenti di refactoring del codice {#refactoring-tools}
       + [Guida introduttiva agli strumenti di refactoring](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+      + [Panoramica degli strumenti di refactoring](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Esperienza unificata](/help/journey-migration/unified-experience.md)
       + [Modernizzatore dell&#39;archivio](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [Repository Modernizer (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
