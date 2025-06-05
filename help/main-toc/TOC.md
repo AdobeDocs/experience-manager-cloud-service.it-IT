@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
+source-git-commit: be4c57c1703831b8c71fc722761515b32cfc0683
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6240'
 ht-degree: 98%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 98%
    + Note sulla versione funzionale di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
          + [Note sulla versione 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
          + [Note sulla versione 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [Note sulla versione 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
@@ -123,6 +124,7 @@ ht-degree: 98%
    + Note sulla versione di Cloud Manager {#cloud-manager}
       + [Corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -697,6 +699,7 @@ ht-degree: 98%
       + [Approvare risorse per Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Cercare risorse in Content Hub](/help/assets/search-assets-content-hub.md)
       + [Proprietà delle risorse](/help/assets/asset-properties-content-hub.md)
+      + [Controllo degli accessi basato su attributi](/help/assets/attribute-based-access-control.md)
       + [Condividere risorse in Content Hub](/help/assets/share-assets-content-hub.md)
       + [Scaricare risorse utilizzando Content Hub](/help/assets/download-assets-content-hub.md)
       + [Gestire risorse con licenza in Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -993,12 +996,14 @@ ht-degree: 98%
          + [Opzioni di memorizzazione in cache](/help/commerce-cloud/configuring/caching.md)
          + [Intestazioni HTTP personalizzate](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Impostazione del carrello e di Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+         + [Cancella cache componente e GraphQL](/help/commerce-cloud/configuring/clear-cache.md)
       + Sviluppo {#developing}
          + [Sviluppare con l’SDK di AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Definizione dello stile dei componenti CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personalizzazione dei componenti CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Utilizzo dei selettori del catalogo CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [Attributi personalizzati per il carosello dei prodotti CIF](/help/commerce-cloud/customizing/product-carousel.md)
+         + [Metadati JSON-LD](/help/commerce-cloud/customizing/json-ld.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migrazione](/help/commerce-cloud/migration.md)
    + [Domande frequenti](/help/commerce-cloud/faq.md)
@@ -1174,7 +1179,7 @@ ht-degree: 98%
 + Intelligenza artificiale generativa {#generative-ai}
    + [IA generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [Generare varianti](/help/generative-ai/generate-variations.md)
+   + [Genera varianti](/help/generative-ai/generate-variations.md)
    + [Assistente (Beta limitata)](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [Assistente AI per AEM Forms (Forms Experience Builder) (precoce adozione)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Assistente AI di AEM Forms - Libreria di richieste](/help/edge/docs/forms/ai-assistant-prompt-library.md)
@@ -1196,12 +1201,14 @@ ht-degree: 98%
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md)
+      + [Ambienti di test specializzati (precoce adozione)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestire il codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Aggiungere un archivio esterno (primi utilizzatori)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gestire i token di accesso degli archivi esterni (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
