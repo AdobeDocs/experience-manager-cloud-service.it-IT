@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 16%
+source-wordcount: '1987'
+ht-degree: 15%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 16%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -213,25 +213,37 @@ Gli amministratori possono definire i campi di metadati in cui eseguire le ricer
 1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche in modo che la nuova proprietà dei metadati venga visualizzata nell&#39;elenco dei campi di metadati.
 
 Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg), disponibile accanto a ciascuna proprietà di metadati disponibile, per modificare la proprietà o fare clic sull&#39;icona Elimina per eliminare una proprietà esistente. Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche necessarie per applicarle.
-
 ![Ricerca nell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
-Gli amministratori possono anche personalizzare il titolo e il corpo del testo sul banner del portale Content Hub, in base ai requisiti di branding. Per farlo, esegui le seguenti operazioni:
+In qualità di amministratore, personalizzare il portale [!DNL Content Hub] per soddisfare i requisiti di branding. Nella pagina ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** utilizza **[!UICONTROL Banner]**, **[!UICONTROL Colori]** e **[!UICONTROL Immagine banner]** per eseguire le seguenti personalizzazioni:
 
-1. Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Branding]**.
+1. [Modifica l&#39;immagine del banner dalla sezione [!UICONTROL Immagine del banner]](#Change-the-banner-image)
+1. [Aggiorna il titolo e il corpo del testo nel banner e cambia il colore del testo dalla sezione [!UICONTROL Banner]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [Modifica il colore primario e secondario dalla sezione [!UICONTROL Colori] per applicare una combinazione di colori che sia allineata al tema del tuo marchio](#Change-the-primary-and-secondary-color)
 
-1. Specifica il testo nei campi **[!UICONTROL Testo titolo nel banner]** e **[!UICONTROL Testo corpo nel banner]**.
+Seleziona l&#39;opzione **[!UICONTROL Reimposta valori predefiniti]** per ripristinare le modifiche e il tema predefinito.
 
-1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
+#### Modificare l&#39;immagine del banner{#Change-the-banner-image}
 
-![Branding dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-branding.png)
+Nella pagina ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, esegui i seguenti passaggi per modificare l&#39;immagine del banner della distribuzione di [!DNL Content Hub]:
 
-Gli aggiornamenti di branding abilitati nell’interfaccia utente di configurazione vengono visualizzati sul banner del portale Content Hub:
+1. Fai clic su ![seleziona immagine](/help/assets/assets/Browse.svg) **[!UICONTROL Seleziona dalla raccolta]** per selezionare un&#39;immagine del banner utilizzando la finestra di dialogo del selettore risorse. Il selettore risorse visualizza solo le immagini approvate.
+1. Seleziona l&#39;immagine, fai clic su **[!UICONTROL Seleziona]** e quindi su **[!UICONTROL Salva]** per visualizzarla come immagine del banner della distribuzione di [!DNL Content Hub].
 
-![Branding dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-branding-updates.png)
+#### Aggiungere titolo e corpo del testo al banner e modificare il colore del testo{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+Nella pagina ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilizza i rispettivi campi nella sezione **[!UICONTROL Banner]** per aggiungere il titolo e il corpo del testo al banner.
+Fare clic sulla casella quadrata accanto al **[!UICONTROL colore del testo del banner]** per selezionare un colore del testo dal selettore del colore per il testo del banner o specificare il codice esadecimale del colore nel campo accanto alla casella quadrata del selettore del colore.
+
+#### Modificare il colore primario e secondario{#Change-the-primary-and-secondary-color}
+
+Nella pagina ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilizza la sezione **[!UICONTROL Colori]** per impostare i colori primari e secondari selezionandoli tramite il selettore colore o definendo il codice esadecimale del colore. Questi colori consentono di impostare i colori dello sfondo, del testo e delle icone degli elementi dell&#39;interfaccia utente in modo da allineare l&#39;interfaccia utente di [!DNL Content Hub] al tema del tuo marchio.
+
+**[!UICONTROL Colore primario]:** La combinazione di colori principale si applica alle azioni di selezione, agli elementi interattivi quali caselle di controllo, barre di ricerca e agli interruttori tra [!DNL Content Hub], inclusi [!DNL Content Hub] home page e [!UICONTROL Configurazione] pagina. Si applica anche alle opzioni di azione disponibili sulle interfacce primarie [!DNL Content Hub], ad esempio le opzioni disponibili su **[!UICONTROL Tutte le pagine Assets]** e **[!UICONTROL Raccolte]**.
+
+**[!UICONTROL Colore secondario]:** Nella home page di [!DNL Content Hub], la combinazione di colori secondaria si applica alle opzioni dell&#39;interfaccia utente e ai campi di input disponibili nelle finestre di dialogo. Si applica a tutte le opzioni del menu di configurazione disponibili nella pagina [!UICONTROL Configurazione], ad eccezione delle azioni di selezione, delle caselle di controllo, delle barre di ricerca e dei pulsanti di attivazione/disattivazione.
 
 ### Risorse scadute{#expired-assets-content-hub}
 
@@ -261,7 +273,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
