@@ -1,12 +1,12 @@
 ---
 title: Scaricare risorse da Content Hub
-description: Scopri come scaricare le risorse dal portale Content Hub
+description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
+source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 10%
+source-wordcount: '888'
+ht-degree: 8%
 
 ---
 
@@ -54,61 +54,86 @@ ht-degree: 10%
 
 >[!AVAILABILITY]
 >
->La guida di Content Hub è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
+> La guida di [!DNL Content Hub] è ora disponibile in formato PDF. Scarica l’intera guida e utilizza l’Assistente IA di Adobe Acrobat per rispondere alle tue domande.
 >
 >[!BADGE Guida di Content Hub - PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-Content Hub ti consente di scaricare e condividere le risorse. Nell&#39;interfaccia utente di Content Hub vengono visualizzate solo le risorse approvate. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. Content Hub migliora l’accessibilità e l’adattabilità per una distribuzione efficace delle risorse.
+[!DNL Content Hub] ti consente di scaricare e condividere le risorse. L&#39;interfaccia utente di [!DNL Content Hub] visualizza solo le risorse approvate. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. [!DNL Content Hub] migliora l&#39;accessibilità e l&#39;adattabilità per una distribuzione efficace delle risorse.
 
-Puoi scaricare una o più risorse e i relativi rendering disponibili tramite Content Hub.
+È possibile scaricare una o più risorse e le relative rappresentazioni disponibili utilizzando [!DNL Content Hub].
 
-Vedi [tipi di rendering disponibili in Content Hub](#types-of-renditions).
+Visualizza i [tipi di rendering disponibili in Content Hub](#types-of-renditions).
 
-## Scaricare una risorsa e le relative rappresentazioni {#download-asset-renditions}
+## Scaricare una o più risorse e le relative rappresentazioni {#download-asset-renditions}
 
-Per scaricare una risorsa e le relative rappresentazioni, esegui i seguenti passaggi:
+Per scaricare una o più risorse e le relative rappresentazioni, esegui i seguenti passaggi:
 
-1. Fai clic sulla risorsa per visualizzarne le proprietà.
+1. Per scaricare una risorsa, seleziona ![scarica](/help/assets/assets/download-icon.svg) disponibile nella scheda delle risorse per visualizzarne l&#39;anteprima, seleziona le rappresentazioni disponibili e fai clic sull&#39;opzione **[!UICONTROL Scarica]** nella finestra di dialogo per scaricare le rappresentazioni selezionate come file ZIP. Se nella finestra di dialogo viene visualizzata una licenza per risorse (per risorse con licenza), accettare i termini e le condizioni di licenza e fare clic su **[!UICONTROL Scarica]**.
+   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-1. Fai clic su ![scarica](/help/assets/assets/download-icon.svg) per avviare il processo di download. Il pannello Scarica elenca tutte le rappresentazioni di risorse disponibili.
+   In alternativa, fai clic sulla miniatura della risorsa e seleziona ![scarica](/help/assets/assets/download-icon.svg) per selezionare e visualizzare le rappresentazioni disponibili nella finestra di dialogo prima di scaricarle.
+
+1. Per scaricare più risorse, seleziona le risorse, fai clic su ![scarica](/help/assets/assets/download-icon.svg) **[!UICONTROL Scarica]** e controlla l&#39;elenco delle risorse selezionate nella finestra di dialogo **[!UICONTROL Scarica risorse]**. Fai clic su ![deseleziona](/help/assets/assets/Close.svg) accanto a una risorsa per deselezionarla dall&#39;elenco. Seleziona una o più copie trasformate e fai clic su **[!UICONTROL Scarica]** per scaricarle come un singolo file ZIP. Selezionando **[!UICONTROL Ritaglio avanzato]** e **[!UICONTROL Rappresentazioni statiche]** vengono scaricate tutte le rappresentazioni statiche e di ritaglio avanzato disponibili per ogni risorsa selezionata.
+   ![scarica più risorse](/help/assets/assets/download-multiple-assets-CH.png)
+È possibile continuare a utilizzare [!DNL Content Hub] mentre il download è in corso. Content Hub non interrompe il flusso di lavoro durante il processo di download.
+   ![scarica più risorse](/help/assets/assets/download-assets-notification-ch.png)
+Se nella finestra di dialogo **[!UICONTROL Scarica risorse]** sono visualizzate le licenze delle risorse, selezionare ciascuna licenza dal riquadro di sinistra ([!UICONTROL Documenti T&amp;C]) per visualizzare l&#39;anteprima della licenza e le risorse selezionate associate alla licenza nel riquadro centrale della finestra di dialogo. Dopo aver esaminato ogni licenza, seleziona le rappresentazioni, fai clic su **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]** e seleziona **[!UICONTROL Scarica]** per scaricarle.
+   ![scarica più risorse](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
    >
-   >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* È possibile scaricare tutte le [rappresentazioni statiche, dinamiche e di ritaglio avanzato](#types-of-renditions) durante il download di una risorsa.
+   >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata utilizzando l&#39;interfaccia utente [!UICONTROL [Configurazione]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Gli utenti con accesso a [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
+   >* L&#39;anteprima della licenza viene visualizzata solo se la risorsa è approvata con l&#39;ambiente di authoring [!DNL Assets as a Cloud Service]. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-1. Selezionare una o più copie trasformate e fare clic su **[!UICONTROL Scarica]**.
+<!--
 
-   ![Scarica rappresentazioni di risorse singole](/help/assets/assets/download-single-asset-renditions.png)
+## Download an asset and its renditions {#download-asset-renditions} 
+
+To download an asset and its renditions, execute the following steps: 
+
+1. Click the asset to view its properties.
+
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
+
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+   ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
 
-Se stai scaricando una risorsa con licenza, seleziona **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]**, quindi fai clic su **[!UICONTROL Scarica]**. Puoi anche fare clic su **[!UICONTROL termini e condizioni]** per visualizzare la licenza della risorsa. L’anteprima della licenza viene visualizzata solo se la risorsa viene approvata con l’ambiente di authoring Assets as a Cloud Service. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
+If you are downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 >[!NOTE]
 >
-> Gli utenti con accesso a [Dynamic Media con funzionalità Open API](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
+> The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
 
-## Scaricare più risorse e le relative rappresentazioni {#download-multiple-assets-renditions}
+## Download multiple assets and their renditions {#download-multiple-assets-renditions} 
 
-Per scaricare più risorse e le relative rappresentazioni, esegui i seguenti passaggi:
+To download multiple assets and their renditions, execute the following steps: 
 
-1. Seleziona le risorse e fai clic su ![scarica](/help/assets/assets/download-icon.svg) **[!UICONTROL Scarica]**. Nella schermata [!UICONTROL Scarica risorse] sono elencate tutte le risorse selezionate.
-1. Fai clic su **[!UICONTROL Scarica]** per selezionare tra le varie opzioni di download per iniziare il download:
+1. Select the assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]**. The [!UICONTROL Download assets] screen displays listing all the selected assets. 
+1. Click **[!UICONTROL Download]** to select from the various download options to begin download:
 
-   * **Scarica [!UICONTROL Originali]**: seleziona questa opzione per scaricare le risorse selezionate nel modulo originale.
-   * **Scarica [!UICONTROL Solo rappresentazioni statiche]**: seleziona questa opzione per scaricare tutte le rappresentazioni statiche disponibili delle risorse, ad eccezione delle risorse originali.
-   * **Scarica [!UICONTROL Originali e rappresentazioni statiche]**: seleziona questa opzione per scaricare le rappresentazioni originali e statiche delle risorse selezionate.
+    * **Download [!UICONTROL Originals]**: Select this option to download the selected assets in the original form.
+    * **Download [!UICONTROL Static Renditions only]**: Select this option to download all available static renditions of assets except the original assets.
+    * **Download [!UICONTROL Originals & Static Renditions]**: Select this option to download both original and static renditions of the selected assets. 
 
-     ![Scarica più rappresentazioni](/help/assets/assets/download-multiple-renditions.png)
+      ![Download multiple renditions](/help/assets/assets/download-multiple-renditions.png)
 
-     >[!NOTE]
-     >
-     >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     >* È possibile scaricare solo [rappresentazioni statiche](#types-of-renditions) durante il download di più risorse.
+      >[!NOTE]
+      >
+      >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+      >* You can only download [static renditions](#types-of-renditions) while downloading multiple assets.
 
-   Se una delle risorse selezionate è una risorsa con licenza, fai clic sulla licenza della risorsa nel riquadro a sinistra per visualizzarne l&#39;anteprima. In questo modo potrai selezionare **[!UICONTROL Ho letto e accettato i termini e le condizioni di cui sopra]**, quindi fai clic su **[!UICONTROL Scarica]**. L’anteprima della licenza viene visualizzata solo se la risorsa viene approvata con l’ambiente di authoring Assets as a Cloud Service. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
+    If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-   <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
 <!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
@@ -142,12 +167,11 @@ The dialog box that displays depends on whether the download list includes expir
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
-
 ## Tipi di rappresentazioni {#types-of-renditions}
 
 Le rappresentazioni delle risorse sono rappresentazioni diverse del file originale di una risorsa. Questi possono includere miniature, versioni ottimizzate per file web o mobili, con filigrana o protetti da DRM, o anche elementi dinamici come ritagli avanzati. Non devono corrispondere al tipo di file originale, ma servono a rappresentare la risorsa in vari casi d’uso.
 
-Ulteriori informazioni su [visualizzare e gestire le copie trasformate in Experience Manager Assets](/help/assets/renditions.md).
+Ulteriori informazioni su [visualizzare e gestire le rappresentazioni in [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] supporta i seguenti tipi di rendering:
 
@@ -155,7 +179,7 @@ Ulteriori informazioni su [visualizzare e gestire le copie trasformate in Experi
 
 * [Rappresentazioni dinamiche](/help/assets/renditions.md#dynamic-renditions): le rappresentazioni dinamiche sono versioni personalizzate in tempo reale delle risorse per eseguire varie azioni, ad esempio ridimensionare le immagini per diverse risoluzioni del dispositivo o ritagliarle per adattarle a varie proporzioni. Questi rendering ti consentono di offrire esperienze personalizzate e ottimizzate per requisiti più ampi. Vengono creati rendering dinamici delle risorse nell&#39;ambiente di authoring [!DNL Adobe Experience Manager Assets]. Per informazioni sui passaggi necessari per abilitare le rappresentazioni dinamiche, vedere [Abilitare le rappresentazioni dinamiche](#enable-dynamic-media-renditions).
 
-* [Ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): il ritaglio avanzato si concentra esclusivamente sulla parte essenziale di una risorsa durante il processo di ritaglio. Dynamic Media Smart Crop per sfrutta l’intelligenza artificiale fornita da Adobe Sensei per monitorare il punto di interesse, assicurando che le nostre risorse abbiano l’aspetto migliore su tutti gli schermi. Con lo smart crop di [!DNL Adobe Experience Manager] vengono visualizzate la larghezza e l&#39;altezza delle rappresentazioni di una risorsa e il titolo. Per saperne di più, visita il sito [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): il ritaglio avanzato si concentra esclusivamente sulla parte essenziale di una risorsa durante il processo di ritaglio. Il ritaglio intelligente di Dynamic Media sfrutta l’intelligenza artificiale fornita da Adobe Sensei per monitorare il punto di interesse, assicurando che le nostre risorse abbiano un aspetto ottimale su tutte le dimensioni dello schermo. Con lo smart crop di [!DNL Adobe Experience Manager] vengono visualizzate la larghezza e l&#39;altezza delle rappresentazioni di una risorsa e il titolo. Per saperne di più, visita il sito [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   Le rappresentazioni di ritaglio avanzato vengono visualizzate e sono disponibili per il download solo se hai accesso a [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Le rappresentazioni con ritaglio avanzato sono disponibili solo per le risorse immagine.
 
