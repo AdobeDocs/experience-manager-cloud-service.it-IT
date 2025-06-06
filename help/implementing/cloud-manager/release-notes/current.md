@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.6.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 33%
+source-wordcount: '954'
+ht-degree: 32%
 
 ---
 
@@ -59,15 +59,6 @@ Partecipa al programma per i primi utilizzatori di Cloud Manager per ottenere l�
 Le seguenti opportunità sono attualmente disponibili per i primi utilizzatori:
 
 
-### Gestisci token di accesso{#manage-access-tokens}
-
-Utilizza **Gestisci token di accesso** in Cloud Manager per visualizzare, rinominare ed eliminare i token di accesso associati agli archivi Git esterni, quali GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
-
-Vedi [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-
-Se ti interessa testare questa nuova funzione e condividere i tuoi commenti e suggerimenti, invia un’e-mail a dal tuo indirizzo e-mail associato al tuo Adobe ID.
-
-
 ### Ambiente di test specializzato {#specialized-test-environment}
 
 Cloud Manager ora supporta l&#39;aggiunta di un nuovo tipo di ambiente denominato **Ambiente di test specializzato**. L’ambiente è progettato per aiutare i team a convalidare le funzioni in condizioni prossime alla produzione prima della pubblicazione. Questo tipo di ambiente è diverso dagli ambienti *Produzione + Stage*, *Sviluppo* o *Sviluppo rapido* e offre uno spazio mirato per l&#39;esecuzione di scenari di convalida avanzati.
@@ -79,7 +70,7 @@ Consulta [Aggiungere un ambiente di test specializzato](/help/implementing/cloud
 Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 
-### Bring Your Own Git: ora con supporto per Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Porta il tuo Git (BYOG), ora con supporto per Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -97,14 +88,23 @@ Consulta [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-
 Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Se ti trovi in una struttura di archivio privata/pubblica o aziendale, assicurati di specificare la piattaforma Git che desideri utilizzare.
 
 
-#### Domande frequenti su Porta il tuo Git
+**Domande frequenti su BYOG**
 
 | Domanda | Risposta |
 |---|---|
 | *Come può un progetto tornare all&#39;archivio Git gestito da Adobe, se necessario?* | Il passaggio all’indietro è semplice. [Aggiorna le pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) in modo che puntino all&#39;archivio Adobe e rimuovi l&#39;archivio esterno se non è più necessario. |
 | *È possibile configurare archivi diversi per ambienti diversi (ad esempio, non di produzione rispetto alla produzione) per consentire prima il test in ambienti non di produzione?* | Sì, è possibile configurare archivi diversi per ambienti separati. Ad esempio, la pipeline di sviluppo o di qualità del codice può puntare a un archivio esterno mentre la pipeline di produzione rimane connessa all’archivio Adobe. Assicurati che il processo di sincronizzazione tra i due archivi rimanga attivo durante questa configurazione. |
-| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i indirizzi IP Adobe necessari. |
+| *Le impostazioni esistenti come gli elenchi consentiti IP continuano a funzionare?* | Sì, gli elenchi consentiti IP esistenti continuano a funzionare come al solito. Tuttavia, se l&#39;archivio Git esterno è protetto da un firewall, è necessario aggiungere all&#39;elenco consentiti ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) i [indirizzi IP Adobe necessari. |
 | *Tutti gli URL dell&#39;archivio GitLab funzionano? L&#39;URL del repository in uso segue il formato `https://gitlab_dedicated_url.com/path/repo-name.git`, che differisce dall&#39;esempio riportato nella documentazione.* | Sì, è supportato qualsiasi archivio GitLab che supporta API V3 o V4, inclusi gli URL GitLab con hosting autonomo come quello descritto in [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+
+
+#### Gestisci token di accesso{#manage-access-tokens}
+
+Utilizza **Gestisci token di accesso** in Cloud Manager per visualizzare, rinominare ed eliminare i token di accesso associati agli archivi BYOG esterni, ad esempio GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
+
+Consulta [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
 
 
 ### Aggiungi pipeline di configurazione Edge Delivery {#add-eds-pipeline}
