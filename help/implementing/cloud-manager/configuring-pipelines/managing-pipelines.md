@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 29%
+source-wordcount: '1493'
+ht-degree: 28%
 
 ---
 
@@ -59,6 +59,19 @@ Se una pipeline è in esecuzione, fare clic su ![Informazioni - icona supporto](
 Puoi anche fare clic sull&#39;icona ![Puntini di sospensione - Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) accanto alla pipeline per eseguire altre azioni appropriate allo stato della pipeline, ad esempio [modificarla](#editing-pipelines) o [annullare l&#39;esecuzione](#cancel).
 
 ![Azioni pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
+### Contrassegnare i preferiti della pipeline{#pipeline-favorites}
+
+Puoi contrassegnare specifiche pipeline come preferite in modo che vengano visualizzate nella parte superiore dell&#39;elenco nella pagina **Pipeline**. Questa funzionalità semplifica la ricerca e l’esecuzione delle pipeline a cui si accede di frequente.
+
+**Per contrassegnare i preferiti della pipeline:**
+
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
+1. Nella console **[I miei programmi](/help/implementing/cloud-manager/navigation.md#my-programs)**, seleziona il programma.
+1. Dalla pagina **Panoramica programma**, fai clic sulla scheda ![Pipeline - Icona flusso di lavoro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipeline**.
+1. Nella pagina Pipeline, a sinistra del nome e del tipo di una pipeline, fai clic su ![Icona a forma di stella per la pipeline non preferita](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) per aggiungerla all&#39;elenco dei preferiti.
+In alternativa, fai clic sull&#39;icona ![Stella per una pipeline preferita](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) per rimuovere la pipeline dall&#39;elenco dei preferiti.
+
 
 ## Pagina Attività {#activity}
 
@@ -209,3 +222,4 @@ In alternativa, puoi annullare una pipeline dalla pagina dei dettagli della pipe
    ![Annulla dettagli pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. Fare clic su **Annulla**.
+

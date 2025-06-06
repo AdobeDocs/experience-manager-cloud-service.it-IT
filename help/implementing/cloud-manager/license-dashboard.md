@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # Dashboard delle licenze {#license-dashboard}
 
-Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti AEMaaCS disponibili per la tua organizzazione o tenant.
+Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei prodotti Adobe Experience Manager as a Cloud Service (AEMaaCS) disponibili per la tua organizzazione o tenant.
 
 >[!IMPORTANT]
 >
->La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
+>La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
 >
 >Per determinare il tipo di servizio del programma (AMS o AEMaaCS), vedi [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -41,7 +41,10 @@ La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai d
 
 La dashboard è divisa in tre sezioni:
 
-* **Soluzioni** - Quali soluzioni hai concesso la licenza.
+* **Soluzioni** - Quali soluzioni hai concesso la licenza. Ad esempio Sites, Edge Delivery Services e Assets.
+
+  ![Elenco soluzioni](assets/solutions.png)
+
 * **Componenti aggiuntivi** - Quali componenti aggiuntivi disponibili per le soluzioni concesse in licenza.
 * **Altri diritti** - Quale ambiente sandbox e di sviluppo e altri diritti è possibile utilizzare all&#39;interno del tenant.
 

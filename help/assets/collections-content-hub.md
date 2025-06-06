@@ -3,50 +3,85 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 9%
+source-wordcount: '1055'
+ht-degree: 10%
 
 ---
 
 # Gestisci raccolte in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+
         </td>
+
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+
         </td>
+
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
+
         </td>
+
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
+
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -77,15 +112,37 @@ Consente agli utenti di accedere e gestire facilmente le diverse risorse disponi
 
 ## Creare le raccolte{#create-collections}
 
-Puoi scegliere di [creare una nuova raccolta](#create-new-collection) o [aggiungere risorse a una raccolta esistente](#add-assets-to-existing-collection).
+Puoi scegliere di [creare una nuova raccolta](#create-new-collection) o [aggiungere risorse a una raccolta esistente](#add-assets-to-existing-collection) durante la gestione della governance.
 
 ### Crea una nuova raccolta{#create-new-collection}
 
-Selezionare le risorse da aggiungere a una raccolta e fare clic su **[!UICONTROL Aggiungi a raccolta]**.
+Esegui i passaggi seguenti per controllare l’accesso durante la creazione delle raccolte:
 
-![Creare la raccolta](assets/add-assets-collection.jpg)
+1. Vai alla scheda **[!DNL Collections]** e fai clic su **[!UICONTROL Crea raccolta]**. Viene visualizzata la finestra Nuova raccolta.
 
-Per creare una nuova raccolta, passare alla scheda **[!UICONTROL Raccolte]** e fare clic su **[!UICONTROL Crea nuova raccolta]**. Immetti il **[!UICONTROL Titolo]** e fornisci un **[!UICONTROL Descrizione]** facoltativo per le risorse. Fai clic su **[!UICONTROL Crea]**.
+1. Aggiungi **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** per la raccolta.
+
+   ![autorizzazioni raccolta](assets/collection-permissions.png)
+
+1. In **[!UICONTROL Chi può accedere]** menu a discesa > seleziona il tipo di controllo di accesso. Sono disponibili le seguenti opzioni:
+
+   | Metodo di accesso | Tipo di accesso | Descrizione |
+   |---|---|---|
+   | **Solo tu e gli amministratori potete accedere** | Privata | Solo il creatore e gli amministratori possono modificare e accedere a questa raccolta. |
+   | **Chiunque può accedere** | Pubblico | Tutti possono accedere a questa raccolta, ma solo il creatore e gli amministratori possono modificarla. |
+   | **Chiunque può accedere e modificare** | Pubblico | Questa raccolta è aperta a tutti, con autorizzazioni di accesso e modifica complete concesse senza restrizioni. |
+
+1. Fai clic su **[!UICONTROL Crea]**. Al termine, puoi [aggiungere risorse alla raccolta](#add-assets-to-existing-collection).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>La governance delle raccolte è una funzione di disponibilità limitata. Per abilitarlo, crea un ticket di supporto. Dopo l&#39;abilitazione, è necessario [configurare le raccolte in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+
+<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+![Create collection](assets/add-assets-collection.jpg)          
+-->
 
 ### Aggiungere risorse a una raccolta esistente{#add-assets-to-existing-collection}
 
@@ -93,13 +150,34 @@ Per aggiungere risorse a una raccolta esistente, seleziona le risorse da aggiung
 
 ![Crea una nuova raccolta](assets/create-add-collection.jpg)
 
-Scegli la raccolta in cui aggiungere la risorsa. Puoi anche cercare nella raccolta esistente utilizzando la barra di ricerca. <br>Selezionare le raccolte a cui aggiungere le risorse e fare clic su **[!UICONTROL Aggiungi alla raccolta]**.
+Scegli la raccolta in cui aggiungere la risorsa. Puoi anche cercare nella raccolta esistente utilizzando la barra di ricerca. <br>Seleziona le raccolte a cui aggiungere le risorse e fai clic su **[!UICONTROL Aggiungi alla raccolta]**.
 
 ## Visualizza raccolte{#view-collections}
 
-Passare alla scheda **[!UICONTROL Raccolte]** e cercare il nome della raccolta. Per visualizzare l’elenco delle risorse disponibili in una raccolta, fai clic sul nome della raccolta. Puoi anche applicare filtri all’interno di una raccolta per limitare i risultati della risorsa.
+Passare alla scheda **[!UICONTROL Raccolte]** e cercare il nome della raccolta. Puoi utilizzare i filtri per perfezionare i risultati della ricerca selezionando criteri specifici, per trovare rapidamente le raccolte più rilevanti.
 
-Fai clic sulla risorsa da visualizzare all’interno di una raccolta. [!DNL Content Hub] visualizza la vista dettagliata della risorsa. [Visualizza dettagli risorsa](asset-properties-content-hub.md).
+Per visualizzare l’elenco delle risorse disponibili in una raccolta, fai clic sul nome della raccolta. Puoi anche applicare filtri all’interno di una raccolta per limitare i risultati della risorsa. Fai clic sulla risorsa da visualizzare all’interno di una raccolta. [!DNL Content Hub] visualizza la vista dettagliata della risorsa. [Visualizza dettagli risorsa](asset-properties-content-hub.md).
+
+### Filtrare la vista delle raccolte {#filter-collections-view}
+
+Content Hub ti consente di filtrare la vista delle raccolte per trovare facilmente ciò che stai cercando, riducendo le opzioni in base alle tue preferenze. Verificare la [configurazione delle raccolte in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+
+Per filtrare la visualizzazione delle raccolte, passare alla scheda **[!DNL Collections]** e passare al menu a discesa Raccolte. Scegli tra le seguenti opzioni:
+
+* **[!UICONTROL Tutte le raccolte]:** Selezionare questa opzione per visualizzare tutte le raccolte private e condivise con l&#39;utente.
+* **[!UICONTROL Solo io]:** Seleziona questa opzione per visualizzare le raccolte a cui puoi accedere.
+* **[!UICONTROL Chiunque può visualizzare]:** Questa opzione consente di filtrare le raccolte accessibili a tutti ma modificabili solo dall&#39;autore.
+* **[!UICONTROL Chiunque può modificare]:** Seleziona questa opzione per filtrare raccolte accessibili e modificabili da tutti.
+
+  ![filtro visualizzazione raccolte](assets/filter-collection-view.png)
+
+Inoltre, per filtrare la visualizzazione delle raccolte in base alle autorizzazioni di accesso, passare alla scheda **[!DNL Collections]** e passare a una delle opzioni seguenti:
+
+* **[!UICONTROL Creato da chiunque]:** Questo filtro consente di visualizzare solo le raccolte create da qualsiasi utente.
+
+* **[!UICONTROL Creato da me]:** Questo filtro consente di visualizzare solo le raccolte create da te.
+
+  ![filtro visualizzazione raccolte](assets/filter-collection-view1.png)
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -119,7 +197,7 @@ Fai clic sulla risorsa da visualizzare all’interno di una raccolta. [!DNL Cont
 Per scaricare le risorse disponibili in una raccolta, passa alla scheda **[!UICONTROL Raccolte]**.\
 Fai clic sull&#39;icona ![icona di download](assets/download-icon.svg) sulla scheda della raccolta.
 
-![Scheda Raccolta](assets/download-collection.jpg)
+![Scheda Raccolta](assets/download-collection.png)
 
 Tutte le risorse della raccolta vengono scaricate.
 
@@ -129,7 +207,9 @@ Scopri come [scaricare una risorsa da [!DNL Content Hub]](download-assets-conten
 
 ## Condividere le risorse disponibili all’interno di una raccolta {#share-assets-available-within-collection}
 
-Puoi anche condividere le risorse disponibili all’interno di una raccolta. Passa alla scheda **[!UICONTROL Raccolte]**. Seleziona l&#39;icona ![condividi](assets/share.svg) sulla scheda della raccolta. Il collegamento di condivisione viene copiato. Puoi condividere il collegamento copiato con il destinatario. Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
+Puoi anche condividere le risorse disponibili all’interno di una raccolta. Assicurati di [abilitare la condivisione di collegamenti pubblici in Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Passa alla scheda **[!UICONTROL Raccolte]**. Seleziona l&#39;icona ![condividi](assets/share.svg) sulla scheda della raccolta. Il collegamento di condivisione viene copiato. Puoi condividere il collegamento copiato con il destinatario. Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
+
+Quando condividi le raccolte in Content Hub, puoi definire l’ambito di accesso e le azioni che i destinatari possono eseguire sulle risorse digitali all’interno del sistema. Content Hub Collections fornisce strumenti di governance completi per una gestione efficace delle risorse, tra cui autorizzazioni di condivisione personalizzabili e funzioni di collaborazione. Dall’accesso in sola lettura al controllo amministrativo completo, queste impostazioni supportano la governance fine sulla distribuzione delle risorse.
 
 ## Modificare i dettagli di una raccolta {#edit-details-of-collection}
 
@@ -149,3 +229,6 @@ Le risorse selezionate sono state rimosse dalla raccolta.
 ## Eliminare una raccolta{#delete-collection}
 
 Per eliminare una raccolta, passare alla scheda **[!UICONTROL Raccolte]** e fare clic sulla raccolta da eliminare. Fai clic sull&#39;icona ![rimuovi](assets/remove-icon.svg) per eliminare la raccolta.
+
+
+

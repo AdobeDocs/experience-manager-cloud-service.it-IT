@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adottatore anticipato" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 23%
+source-wordcount: '2079'
+ht-degree: 25%
 
 ---
 
@@ -18,12 +18,13 @@ Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud Manager suppo
 
 È ora possibile anche integrare gli archivi Git di Azure DevOps in Cloud Manager, con il supporto per gli archivi moderni di Azure DevOps e gli archivi VSTS (Visual Studio Team Services) legacy.
 
-* Per gli utenti di Edge Delivery Services, l’archivio integrato può essere utilizzato per sincronizzare e distribuire il codice del sito.
-* Per gli utenti di AEM as a Cloud Service e Adobe Managed Services (AMS), l’archivio può essere collegato sia a pipeline full stack che front-end.
-&#39;
+* Per chi usa Edge Delivery Services, l’archivio di cui è stato eseguito l’onboarding può essere utilizzato per sincronizzare e distribuire il codice del sito.
+* Per chi usa AEM as a Cloud Service e Adobe Managed Services (AMS), l’archivio può essere collegato sia a pipeline full stack che front-end.
+
 >[!NOTE]
 >
 >Le funzioni descritte in questo articolo sono disponibili solo attraverso il programma di adozione anticipata. Per ulteriori dettagli e per iscriverti come utente iniziale, consulta [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+
 
 ## Configurare un archivio esterno
 
@@ -83,13 +84,16 @@ La configurazione di un archivio esterno in Cloud Manager consiste nei seguenti 
    | | **Tipo di archivio: Bitbucket**<ul><li>Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Crea un token di accesso all&#39;archivio utilizzando la [documentazione Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Autorizzazioni necessarie per il token di accesso personale (PAT) Bitbucket<br>Queste autorizzazioni consentono a Cloud Manager di accedere al contenuto dell&#39;archivio, gestire le richieste di pull e configurare eventi webhook o reagire ad essi.<br>Quando crei la password dell&#39;app in Bitbucket, accertati che includa le seguenti autorizzazioni di password dell&#39;app richieste:<ul><li>Archivio (sola lettura)<li>Richieste pull (lettura e scrittura)<li>Webhook (lettura e scrittura)</li></li></ul></li></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
    | | **Tipo di archivio: Azure DevOps**<ul><li>Nel campo di testo **Nome token**, digita un nome per il token di accesso che stai creando.<li>Creare un token di accesso all&#39;archivio utilizzando la [documentazione di Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Autorizzazioni richieste per il token di accesso personale (PAT) di Azure DevOps.<br>Queste autorizzazioni consentono a Cloud Manager di accedere al contenuto dell&#39;archivio, gestire le richieste pull e configurare eventi webhook o di reagire a tali eventi.<br>Quando crei la password dell&#39;app in Azure DevOps, accertati che includa le seguenti autorizzazioni obbligatorie per la password dell&#39;app:<ul><li>Archivio (sola lettura)</li></ul></li></li></ul></ul></ul><ul><li>Nel campo **Token di accesso**, incolla il token appena creato. |
 
+   Vedi anche [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
    >[!IMPORTANT]
    >
    >La funzionalità **Aggiungi nuovo token di accesso** è attualmente in fase di adozione anticipata. Ulteriori funzionalità sono in fase di pianificazione. Di conseguenza, le autorizzazioni necessarie per i token di accesso potrebbero cambiare. Inoltre, è possibile che l’interfaccia utente per la gestione dei token venga aggiornata, includendo eventuali funzionalità quali le date di scadenza dei token. Inoltre, potrebbero essere aggiunti controlli automatici per garantire che i token collegati agli archivi rimangano validi.
 
 1. Fai clic su **Convalida**.
 
-Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e collegato a una pipeline.
+   Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e collegato a una pipeline.
+
 
 ## Collegare un archivio esterno convalidato a una pipeline {#validate-ext-repo}
 
@@ -113,6 +117,7 @@ Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e colleg
 >[!TIP]
 >
 >Per informazioni dettagliate sulla gestione degli archivi in Cloud Manager, consulta [Archivi di Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+
 
 ## Configurare un webhook per un archivio esterno {#configure-webhook}
 
@@ -172,6 +177,7 @@ Incolla il segreto in un file di testo normale. Il segreto copiato è necessario
    | GitLab | Questi eventi webhook consentono a Cloud Manager di attivare le pipeline quando il codice viene inviato o viene inviata una richiesta di unione. Tiene inoltre traccia dei commenti relativi alla convalida delle richieste pull (tramite eventi nota).<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Eventi push<li>Unisci eventi di richiesta<li>Eventi nota</li></li></li></ul></ul></ul> |
    | Bitbucket | Questi eventi garantiscono che Cloud Manager possa convalidare le richieste pull, rispondere ai push del codice e interagire con i commenti per il coordinamento della pipeline.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Richiesta pull: creata<li>Richiesta pull: aggiornata<li>Richieste pull: unite<li>Richiesta pull: commento<li>Archivio: push</li></li></li></ul></ul></ul> |
    | Azure DevOps | Questi eventi garantiscono che Cloud Manager possa convalidare le richieste pull, rispondere ai push del codice e interagire con i commenti per il coordinamento della pipeline.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Archivio: push</li></li></ul></ul></ul> |
+
 
 ### Convalida delle richieste pull con webhook
 
