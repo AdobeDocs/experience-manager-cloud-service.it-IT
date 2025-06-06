@@ -4,10 +4,10 @@ description: Scopri l’IA generativa in Adobe Experience Manager as a Cloud Ser
 feature: Generative AI
 role: Admin, Architect, Developer, User
 exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
-source-git-commit: df463616bcc85fc0065fb708e69d4f7bd5bac131
+source-git-commit: 8e3b3ffed97336580a17ad572cc1793c690a8a7d
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 36%
+source-wordcount: '350'
+ht-degree: 30%
 
 ---
 
@@ -37,6 +37,10 @@ L’intelligenza artificiale generativa viene utilizzata in AEM:
 * [Panoramica di Content Hub](/help/assets/product-overview.md)
 
   Content Hub consente di creare nuovi contenuti con Adobe Express (se disponi di diritti per l’utilizzo di Adobe Express). Puoi modificare i contenuti esistenti con strumenti facili da usare, produrre varianti on-brand con modelli ed elementi del brand e creare nuovi contenuti con le più recenti funzionalità GenAI di Adobe Firefly.
+
+* [Tag avanzati generati da IA](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  Per l’Assets digitale è possibile utilizzare l’intelligenza artificiale per assegnare automaticamente i tag descrittivi, anziché affidarsi all’input manuale. Questi tag generati dall’intelligenza artificiale migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali.
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)

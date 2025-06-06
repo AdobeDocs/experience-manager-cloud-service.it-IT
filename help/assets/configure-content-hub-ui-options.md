@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
+source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 15%
+source-wordcount: '2110'
+ht-degree: 14%
 
 ---
 
@@ -112,6 +112,8 @@ In qualità di amministratore, gestisci le seguenti opzioni di configurazione pe
 * [Rappresentazioni](#renditions-content-hub)
 
 * [Collegamenti personalizzati](#configure-custom-links-content-hub)
+
+* [Raccolte e condivisione](#configure-collections-sharing-content-hub)
 
 ### Importa {#configure-import-options-content-hub}
 
@@ -273,7 +275,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
@@ -308,3 +310,22 @@ Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-locali
 Il collegamento personalizzato viene visualizzato come una nuova scheda accanto alla scheda Approfondimenti nella home page di Content Hub.
 
 ![Schede Collegamenti personalizzati dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-ui-custom-link-tab.png)
+
+### Raccolte e condivisione {#configure-collections-sharing-content-hub}
+
+Gli amministratori possono definire le autorizzazioni utente durante la creazione delle raccolte e consentire agli utenti di Content Hub di generare un collegamento pubblico. Per abilitare queste impostazioni, effettua le seguenti operazioni:
+
+1. Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Raccolte e condivisione]**.
+
+1. Abilita l&#39;opzione **[!UICONTROL Raccolte di sola lettura]** per consentire raccolte accessibili a tutti ma modificabili solo dall&#39;autore e dall&#39;amministratore.
+
+1. Attiva l&#39;opzione **[!UICONTROL Raccolte pubbliche]** per consentire a tutti gli utenti di accedere e modificare le raccolte.
+
+1. Abilita l&#39;interruttore **[!UICONTROL Abilita collegamento pubblico]** per consentire agli utenti di Content Hub di generare un collegamento pubblico.
+
+1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
+
+   ![Scheda Raccolte di configurazione in Content Hub](assets/collections-link-sharing.png)
+
+
+   Per ulteriori informazioni sulle raccolte e sulla condivisione delle risorse, vedere [Gestire le raccolte in Content Hub](/help/assets/collections-content-hub.md) e [Condividere le risorse in [!DNL Content Hub]](share-assets-content-hub.md).
