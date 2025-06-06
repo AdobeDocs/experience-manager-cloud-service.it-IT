@@ -4,9 +4,9 @@ description: Scopri come abilitare e verificare la funzione di cancellazione del
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # Cancella cache componente e GraphQL {#clear-cache}
 
 Questo documento fornisce una guida completa sull’abilitazione e la verifica della funzione di cancellazione della cache in AEM CIF.
+
+>[!NOTE]
+>
+> Questa funzione è sperimentale.
 
 ## Abilitazione della funzione di cancellazione della cache nella configurazione di CIF {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ Per impostazione predefinita, la funzione di cancellazione della cache è disabi
 * Consenti al listener di cancellare la cache da ogni istanza di AEM (pubblicazione e authoring) aggiungendo la configurazione `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` nel progetto come mostrato [qui](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configurazione deve essere abilitata sia per le istanze di authoring che per quelle di pubblicazione.
    * Abilitare la cache di Dispatcher (facoltativo): è possibile abilitare l&#39;impostazione della cache di eliminazione del dispatcher impostando la proprietà `enableDispatcherCacheInvalidation` su true nella configurazione precedente. Questa funzione consente di cancellare la cache dal dispatcher.
-
-  >[!NOTE]
-  >
-  > Questo funziona solo con le istanze di pubblicazione.
+     >[!NOTE]
+     >
+     > Questo funziona solo con le istanze di pubblicazione.
 
    * Inoltre, assicurati di fornire il modello corrispondente che si adatta al tuo prodotto, categoria e pagina CMS che deve essere aggiunto al file di configurazione di cui sopra per rimuoverlo dalla cache del dispatcher.
 
@@ -60,7 +63,6 @@ Ora, per verificare se le cache vengono cancellate correttamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Se tutto va bene, le nuove modifiche si riflettono in ogni istanza. Se le modifiche non vengono applicate all’istanza Publish, controlla nella finestra privata le pagine PLP e PDP corrispondenti.
 
 >[!NOTE]
@@ -98,7 +100,6 @@ Questa tabella mostra la proprietà obbligatoria che deve essere passata in ogni
 | Proprietà | Valore | Tipo (Array/String/Boolean) | La cache del dispatcher verrà cancellata? | Commenti |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Valore corrispondente del percorso del sito da cui rimuovere la cache (esempio: `/content/venia/us/en` come riferimento con il progetto Venia). | Stringa | Sì | Questo valore deve essere specificato con la combinazione di `invalidateType.` |
-
 
 ### Richiesta API di esempio
 
