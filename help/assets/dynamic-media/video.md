@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
+source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
 workflow-type: tm+mt
-source-wordcount: '9849'
+source-wordcount: '10070'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-
         [Anteprima video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md)
         [Gestione rappresentazioni video](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,11 +69,10 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Utilizzare i metadati video
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
-
         [Modifica proprietà video](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestire i metadati per le risorse digitali](/help/assets/manage-metadata.md)
-      * [Schemi metadati](/help/assets/metadata-schemas.md)
+      * [Schemi di metadati](/help/assets/metadata-schemas.md)
 
    * Rivedi, approva e commenta video e mantieni il controllo completo della versione
 
@@ -95,11 +93,9 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Se utilizzi un sistema WCM di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-
         [Collega URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
-
         [Incorpora il visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
    * [Genera report video](#viewing-video-reports).
@@ -135,7 +131,7 @@ Durante la gestione di un singolo video e di set di video adattivi, sono support
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi per web e desktop, tablet e dispositivi mobili.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Vedere anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources).
+Vedere anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Best practice: utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ Sul lato di riproduzione del visualizzatore, rileva automaticamente la funzional
 
 È possibile combinare in un unico lettore la possibilità di progettare i componenti di riproduzione utilizzando HTML5 e CSS. Può avere una riproduzione incorporata e utilizzare uno streaming adattivo e progressivo a seconda delle funzionalità del browser. Tutte queste funzionalità consentono di estendere la portata dei contenuti rich media agli utenti desktop e mobili e di garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources).
+Vedi anche [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH è lo standard internazionale e HLS è uno standard Apple. Entrambi vengono
 
 Il video progressivo viene distribuito scaricando e memorizzando il video localmente sul sistema desktop o sul dispositivo mobile di un utente.
 
-Nella tabella seguente vengono descritti il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano [Visualizzatore video Dynamic Media HTML5](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+Nella tabella seguente vengono descritti il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano [Visualizzatore video Dynamic Media HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -223,27 +219,27 @@ Nella tabella seguente vengono descritti il dispositivo, il browser e il metodo 
    <td>Streaming bitrate adattivo HLS</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (Android™ 6 o versioni precedenti)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (Android™ 7 o versione successiva)</td>
    <td>Streaming/td bitrate adattivo HLS o DASH*&gt;
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Android™ (browser predefinito)</td>
    <td>Download progressivo.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Safari (iOS)</td>
    <td>Streaming bitrate adattivo HLS</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Chrome (iOS)</td>
    <td>Streaming bitrate adattivo HLS</td>
   </tr>
@@ -419,7 +415,7 @@ Dynamic Media consiglia di utilizzare i predefiniti di codifica video MP4 H.264.
 I report video visualizzano diverse metriche aggregate in un determinato periodo di tempo per aiutarti a monitorare che *video pubblicati* singoli e aggregati stiano ottenendo le prestazioni previste. I seguenti dati sulle metriche principali sono aggregati per tutti i video pubblicati sull’intero sito web:
 
 * Inizio video
-* Percentuale completata
+* Tasso di completamento
 * Tempo medio sul video
 * Tempo totale su video
 * Video per visita
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=it).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -565,14 +561,14 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
 1. Nella pagina Proprietà del video, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
 
    >[!TIP]
-   >Se la scheda **[!UICONTROL Sottotitoli e tracce audio]** non è visualizzata, significa che è presente uno dei due elementi seguenti:
+   >Se la scheda **[!UICONTROL Brani audio e didascalie]** non è visualizzata, significa che è presente uno dei due elementi seguenti:
    >
    >* Alla cartella in cui si trova il video selezionato non è assegnato alcun profilo video. In tal caso, vedere [Applicare un profilo video alla cartella](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* In alternativa, Dynamic Media deve rielaborare il video. In questo caso, consulta [Rielaborare le risorse Dynamic Media in una cartella](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >Dopo aver completato una delle attività di cui sopra, torna a questi passaggi.
 
-   ![Scheda Sottotitoli e tracce audio nella pagina Proprietà.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   ![Scheda Brani audio e didascalie nella pagina Proprietà.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
    *Scheda Brani didascalia e audio nella pagina Proprietà del video.*
 
 1. Per aggiungere una o più tracce audio a un video, effettuate le seguenti operazioni:
@@ -732,16 +728,45 @@ Le modifiche apportate a più sottotitoli hanno la precedenza su una didascalia 
 1. Pubblica il video come di consueto.
 L’URL esistente con il modificatore didascalia ora può caricare più didascalie.
 
+
+### Modifica sottotitoli video
+
+Puoi modificare i sottotitoli delle risorse video direttamente nell’interfaccia utente di Dynamic Media. Questa funzione consente di modificare i file dei sottotitoli `.vtt`, visualizzare in anteprima gli aggiornamenti e pubblicare le modifiche senza problemi.
+
+* Quando si pubblicano i sottotitoli, tutte le modifiche vengono sincronizzate e pubblicate automaticamente.
+* Se si verificano errori di modifica ed è necessario rigenerare i sottotitoli:
+   * Elimina il file dei sottotitoli esistente.
+   * Utilizzare l&#39;opzione 2 (Converti tracce audio) nel passaggio 7 di [Aggiungere più didascalie e tracce audio al video](#add-msma).
+   * Fai clic su **Salva** o **Salva e chiudi** per generare un nuovo file di sottotitoli.
+* L’anteprima dei sottotitoli all’interno dell’editor è solo a scopo di modifica e non riflette l’aspetto dei sottotitoli nell’interfaccia utente di riproduzione video finale.
+
+**Per modificare i sottotitoli video:**
+
+1. Passa alla risorsa video di cui desideri modificare i sottotitoli.
+1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
+1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Didascalie e tracce audio]**.
+1. Sotto l&#39;intestazione **Sottotitoli**, fare clic su ![icona](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) a destra del nome di un file di sottotitoli.
+
+   ![Icona Modifica sottotitoli sotto l&#39;intestazione Sottotitoli](/help/assets/dynamic-media/assets/msma-editcaption.png)
+
+1. Nella finestra di dialogo **Modifica sottotitolo**, modificare il testo nel file WebVTT in base alle esigenze.
+
+   ![Finestra di dialogo Modifica sottotitolo](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+
+1. Nell’angolo inferiore a destra della finestra di dialogo, fai clic su **Salva**.
+
+
 ### Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati {#lifecycle-status-video}
 
-Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale. Puoi farlo dalla scheda **Sottotitoli e tracce audio** di **Proprietà**.
+Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o traccia audio caricato nel video principale. Puoi farlo dalla scheda **Brani audio e didascalie** di **Proprietà**.
 
 **Per visualizzare lo stato del ciclo di vita di un video:**
 
 1. Passa alla risorsa video di cui desideri visualizzare lo stato del ciclo di vita.
 1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
 1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
-1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Didascalie e tracce audio]**.
 1. Nella colonna **[!UICONTROL Stato]**, annota lo stato di ogni didascalia o file audio.
 
 | Stato dei sottotitoli e delle tracce audio | Descrizione |
@@ -771,7 +796,7 @@ Tuttavia, tutti i file di traccia audio caricati possono essere impostati come a
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
 1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
-1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Didascalie e tracce audio]**.
 1. Sotto l&#39;intestazione **Tracce audio**, selezionare il file di traccia audio che si desidera impostare come predefinito del video.
 1. Fai clic sull&#39;![icona audio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Imposta come predefinito]**.
 1. Nella finestra di dialogo **Imposta come predefinito** fare clic su **[!UICONTROL Sostituisci]**.
@@ -825,7 +850,7 @@ Non è possibile eliminare la traccia audio originale estratta da un video princ
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
 1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
-1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Nella pagina Proprietà, seleziona la scheda **[!UICONTROL Didascalie e tracce audio]**.
 1. Effettua una delle operazioni seguenti:
 
    * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da eliminare dal video, quindi fai clic sull&#39;icona ![Elimina](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Elimina]**.
@@ -847,7 +872,7 @@ Non è possibile scaricare la traccia audio originale estratta da un file video 
 1. Passa alla risorsa video di cui desideri impostare la traccia audio predefinita.
 1. In modalità di selezione delle risorse, da ![Visualizza icona scheda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Vista a schede) o ![Visualizza icona elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Vista a elenco), seleziona la risorsa video.
 1. Sulla barra degli strumenti fare clic su ![Icona informazioni](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Proprietà.
-1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Sottotitoli e tracce audio]**.
+1. Nella pagina **Proprietà**, seleziona la scheda **[!UICONTROL Didascalie e tracce audio]**.
 1. Effettua una delle operazioni seguenti:
 
    * Sottotitoli: sotto l&#39;intestazione **Sottotitoli**, seleziona uno o più file di sottotitoli da scaricare dal video, quindi fai clic sull&#39;icona ![Scarica](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Scarica]**.
@@ -891,7 +916,7 @@ Vedi anche [Accessibilità in Dynamic Media](/help/assets/dynamic-media/accessib
 
 Dynamic Media può convertire i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire la ricerca per indicizzazione/indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti maggiori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Server static (non-image) contents](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Server static (non-image) contents](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Per aggiungere didascalie a un video:**
 
@@ -1510,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1572,11 +1597,11 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
    ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
 
    >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >If you do not see the [!UICONTROL Captions & Audio tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
