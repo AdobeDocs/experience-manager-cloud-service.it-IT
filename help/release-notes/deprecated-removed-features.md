@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
 workflow-type: tm+mt
 source-wordcount: '3039'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -35,11 +35,11 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 | Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
 | Sites | [Supporto per frammenti di contenuto nell&#39;API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna dei frammenti di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione di frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
-| Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuno |
+| Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuna |
 | Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. | La funzione è pianificata per la rimozione a breve. |
-| Sites | [Automazione installazione Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nessuno |
+| Sites | [Automazione della configurazione di Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nessuna |
 | [!DNL Sites] | Frammenti di contenuto semplici basati su modelli. | [Frammenti di contenuto strutturati basati su modelli](/help/assets/content-fragments/content-fragments-models.md) ora. |
 | [!DNL Assets] | Flusso di lavoro di `DAM Asset Update` per elaborare le immagini acquisite. | Per l’acquisizione delle risorse si utilizzano ora i [microservizi per le risorse](/help/assets/asset-microservices-overview.md). |
 | [!DNL Assets] | Carica risorse direttamente in [!DNL Experience Manager]. Consulta [API di caricamento risorse obsolete](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilizza il [caricamento binario diretto](/help/assets/add-assets.md). Per informazioni di carattere tecnico, consulta l’articolo sulle [API di caricamento diretto](/help/assets/developer-reference-material-apis.md#upload-binary). |
