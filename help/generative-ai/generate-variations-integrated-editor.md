@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 Se stai cercando un modo per ottimizzare i canali digitali e accelerare la creazione di contenuti, puoi utilizzare la funzione Genera varianti integrata negli editor AEM.
 
-La funzione Genera varianti utilizza l’intelligenza artificiale generativa (IA) per creare varianti di contenuto in base ai tuoi input. Dopo aver creato le varianti, puoi utilizzare il contenuto del tuo sito Web e misurarne il successo utilizzando la funzionalità [Sperimentazione](https://www.aem.live/docs/experimentation) di [Edge Delivery Services](/help/edge/overview.md).
+La funzione Generare varianti utilizza l’intelligenza artificiale generativa (IA) per creare varianti di contenuto in base ai tuoi input. Dopo aver creato le varianti, puoi utilizzare il contenuto del tuo sito Web e misurarne il successo utilizzando la funzionalità [Sperimentazione](https://www.aem.live/docs/experimentation) di [Edge Delivery Services](/help/edge/overview.md).
 
 Questo consente di accelerare la velocità dei contenuti creando rapidamente i contenuti del brand in pochi minuti. Di conseguenza aiuta a migliorare la conversione con le nuove varianti di copia.
 
@@ -332,9 +332,9 @@ Per ulteriori informazioni, consulta anche:
 
    * [IA generativa nei prodotti Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai#aem)
 
-* [Genera pagina di destinazione varianti in Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+* [Pagina di destinazione Generare varianti in Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html?lang=it)
 
-* [Generativo in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Cronologia delle versioni {#release-history}
 

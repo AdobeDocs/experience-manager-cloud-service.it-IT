@@ -1,23 +1,23 @@
 ---
 title: Telemetria operativa per Edge Delivery Services per AEM Forms as a Cloud Service
-description: La telemetria operativa per Edge Delivery Services per AEM Forms as a Cloud Service prevede il tracciamento e l’analisi continui delle interazioni degli utenti con i moduli.
+description: La telemetria operativa per Edge Delivery Services per AEM Forms as a Cloud Service comporta il tracciamento e l’analisi continui delle interazioni dell’utente con i moduli.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Telemetria operativa per Edge Delivery Services per AEM Forms as a Cloud Service
 
-La telemetria operativa ti consente di ottenere informazioni sul mondo reale su come i visitatori interagiscono con i siti web di Adobe Experience Manager (AEM). Questo strumento incorporato fornisce dati preziosi per comprendere il comportamento degli utenti, diagnosticare problemi di prestazioni e misurare l’efficacia degli esperimenti sul sito web. La telemetria operativa va oltre i test sintetici catturando le interazioni di uso reale, offrendo un quadro più preciso delle prestazioni del sito.
+La telemetria operativa ti consente di ottenere informazioni approfondite e realistiche sul modo in cui i visitatori interagiscono con i siti web di Adobe Experience Manager (AEM). Questo strumento incorporato fornisce dati preziosi per comprendere il comportamento degli utenti, diagnosticare problemi di prestazioni e misurare l’efficacia degli esperimenti sul sito web. La telemetria operativa va oltre i test sintetici, acquisendo le interazioni dell’utilizzo reale, offrendo un quadro più accurato delle prestazioni del sito.
 
-Tuttavia, la telemetria operativa dà la priorità alla privacy dei visitatori. Utilizza tecniche di campionamento per raccogliere dati da un sottoinsieme rappresentativo di utenti, garantendo che non venga mai acquisita alcuna informazione di identificazione personale (PII). Inoltre, la telemetria operativa è progettata pensando alla minimizzazione dei dati, raccogliendo solo le metriche essenziali necessarie per l&#39;analisi delle prestazioni. Questo approccio consente di ottimizzare i siti AEM mantenendo la fiducia degli utenti.
+Tuttavia, la telemetria operativa dà priorità alla privacy dei visitatori. Utilizza tecniche di campionamento per raccogliere dati da un sottoinsieme rappresentativo di utenti, garantendo che non venga mai acquisita alcuna informazione di identificazione personale (PII). Inoltre, la telemetria operativa è progettata per una minimizzazione dei dati, per raccogliere solo le metriche essenziali richieste per l’analisi delle prestazioni. Questo approccio consente di ottimizzare i siti AEM mantenendo la fiducia degli utenti.
 
 
 ## Prerequisiti
@@ -26,7 +26,7 @@ Puoi visualizzare la dashboard di monitoraggio di Edge Delivery Services per AEM
 
 https://data.aem.live/?ext=forms
 
-![Schermata di accesso telemetria operativa per Edge Delivery Services per Forms](/help/edge/assets/rum-login-screen.png)
+![Schermata di accesso alla telemetria operativa per i moduli di Edge Delivery Services](/help/edge/assets/rum-login-screen.png)
 
 Per accedere alla dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service, inserisci quanto segue:
 
@@ -40,7 +40,7 @@ Dopo aver inserito l‘URL e le chiavi di dominio nella schermata di accesso, ot
 
 L’illustrazione seguente mostra la dashboard di Edge Delivery Services per AEM Forms as a Cloud Service:
 
-![Dashboard Forms Di Telemetria Operativa](/help/edge/assets/rum-forms-dashboard.png)
+![Dashboard moduli di telemetria operativa](/help/edge/assets/rum-forms-dashboard.png)
 
 ### Diverse metriche chiave della dashboard dei moduli {#different-metrics-operational-telemetry-dashboard-forms}
 

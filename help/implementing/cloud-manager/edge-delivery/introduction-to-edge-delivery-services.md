@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ Ottimizza i vantaggi offerti da Adobe accedendo e utilizzando la licenza di Edge
 * [Accesso alla generazione di rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md) (*in arrivo*)
 * [Accedi al supporto Adobe](/help/edge/overview.md#support-ticket) per i programmi di produzione registrati.
 
-Se si dispone di una licenza Edge Delivery Services (EDS), è possibile utilizzare una [rete CDN gestita Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) per il sito Edge Delivery e usufruire di funzionalità quali la gestione CDN self-service e il rinnovo automatico dei certificati DV ogni tre mesi, a meno che non venga eliminata.
+Se disponi di una licenza Edge Delivery Services (EDS), puoi utilizzare una [rete CDN gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) per il sito Edge Delivery e usufruire di funzionalità quali la gestione della CDN in autonomia e il rinnovo automatico dei certificati DV ogni tre mesi, a meno che non venga eliminata.
 
-In alternativa, se si sceglie di utilizzare la rete CDN (ovvero una rete CDN non gestita da Adobe), indipendentemente dalle licenze Edge Delivery Services, è necessario configurarla sulla piattaforma `aem.live`. Vedere [Configurazione CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
+In alternativa, se scegli di utilizzare la rete CDN (ovvero una rete CDN non gestita da Adobe), indipendentemente dalle licenze Edge Delivery Services, devi configurarla sulla piattaforma `aem.live`. Consulta [Configurazione CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
 
 
 ## Informazioni sull’aggiunta di Edge Delivery Services a un programma di produzione o a un programma sandbox
@@ -82,11 +82,11 @@ L’**elenco attività di Edge Delivery** in Cloud Manager è un elenco di contr
 | 3 | Aggiungere un sito Edge Delivery O <br>Creare il sito ora | Consulta [Aggiungere un sito Edge Delivery](#eds-add-site).<br>Consulta [Creare un sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Aggiungi dominio | Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Aggiungi certificato SSL | Consulta [Aggiungi certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configura la CDN del sito Edge Delivery. | Vedi [Aggiungere un mapping di dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
+| 6 | Configura la CDN del sito Edge Delivery. | Consulta [Aggiungere una mappatura di dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 7 | Configurare la convalida push | Consulta [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Pubblicazione | Consulta [Elenco di controllo per la pubblicazione](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441569?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrare un ticket di assistenza {#eds-support-ticket}
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ L’integrazione dei moduli con un modello di dati modulo (FDM) nell’editor un
 
 ## Considerazioni
 
-* Se nell&#39;interfaccia di Universal Editor non viene visualizzata l&#39;icona **Origini dati** o la proprietà **Associa riferimento** nel pannello delle proprietà di destra, abilitare l&#39;estensione **Origine dati** in **Extension Manager**.
+* Se nell’interfaccia dell’editor universale non viene visualizzata l’icona **Origini dati** o la proprietà **Riferimento bind** nel pannello delle proprietà a destra, abilita l’estensione **Origine dati** in **Extension Manager**.
 
-  ![gestore estensioni](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  Per informazioni su come abilitare e disabilitare le estensioni in Universal Editor, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+  Per informazioni su come abilitare e disabilitare le estensioni nell’editor universale, consulta l’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 * Il servizio di precompilazione dei moduli nell’editor universale non è attualmente supportato.
 
@@ -133,27 +133,27 @@ Quando crei un modulo non basato su schema, non viene configurata alcuna origine
 
    ![Crea modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-È possibile aggiungere l&#39;associazione dati a un campo modulo selezionandolo dalla proprietà **Riferimento associazione**. Aggiungiamo ad esempio un riferimento di associazione dati alla casella di testo **Id** già presente nel modulo.
-Per selezionare l&#39;associazione dati per il campo modulo dalla struttura dell&#39;origine dati, effettuare le seguenti operazioni:
+Puoi aggiungere il binding dei dati a un campo modulo selezionandolo dalla proprietà **Riferimento bind**. Aggiungi, ad esempio, un riferimento di binding dei dati alla casella di testo **ID** già presente nel modulo.
+Per selezionare il binding dei dati per il campo modulo dalla struttura dell’origine dati, effettua i seguenti passaggi:
 
-1. Aprire le proprietà del campo modulo per cui si desidera aggiungere il riferimento associazione dati.
-1. Vai alla proprietà **Associa riferimento** e fai clic sull&#39;icona **Sfoglia**.
+1. Apri le proprietà del campo modulo per cui desideri aggiungere il riferimento di binding dei dati.
+1. Passa alla proprietà **Riferimento bind** e fai clic sull’icona **Sfoglia**.
 
-   ![Aggiungere manualmente l’associazione dati per un campo modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
+   ![Aggiungere manualmente il binding dei dati per un campo modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. Scegliere il riferimento all&#39;associazione dati dalla struttura dell&#39;origine dati nella procedura guidata **Seleziona un riferimento associazione**.
+1. Scegli il riferimento al binding dei dati dalla struttura dell’origine dati nella procedura guidata **Seleziona un riferimento bind**.
 
-   ![seleziona riferimento associazione dati](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+   ![seleziona riferimento binding dei dati](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. Selezionare l&#39;elemento dati dalla struttura origine dati che si desidera associare al campo modulo e fare clic su **Seleziona**.
+1. Seleziona l’elemento di dati dalla struttura dell’origine dati che desideri associare al campo modulo e fai clic su **Seleziona**.
 
-   ![seleziona elemento dati](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+   ![seleziona elemento di dati](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-   Il campo modulo si associa all&#39;elemento dati e viene visualizzato nella proprietà **Bind Reference**.
+   Il campo modulo si associa all’elemento dati e viene visualizzato nella proprietà **Riferimento bind**.
 
-   ![Associazione automatica dei dati](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+   ![Binding automatico dei dati](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-   Puoi anche modificare manualmente la proprietà **Associa riferimento** per il campo modulo.
+   Puoi modificare anche manualmente la proprietà **Riferimento bind** per il campo modulo.
 
 Puoi ora aggiungere e [configurare l’azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md) per il modulo.
 

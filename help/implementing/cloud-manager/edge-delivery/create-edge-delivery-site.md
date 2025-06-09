@@ -5,15 +5,15 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Crea il tuo primo sito Edge Delivery con un clic{#about-one-click-edge-delivery-site}
+# Creare il primo sito Edge Delivery con un clic{#about-one-click-edge-delivery-site}
 
-La creazione del primo sito Edge Delivery con un clic è progettata per automatizzare l’onboarding e la distribuzione di siti Edge Delivery in Cloud Manager. Il processo è notevolmente semplificato ed è sufficiente fare clic su un singolo pulsante. Con un singolo clic, infatti, si esegue il provisioning dell’infrastruttura richiesta, l’integrazione con GitHub per il controllo della versione e la configurazione del’archiviazione di documenti e risorse in Google Drive.
+La creazione del primo sito Edge Delivery con un clic è progettata per consentirti di automatizzare l’onboarding e la distribuzione di siti Edge Delivery all’interno di Cloud Manager. Il processo è notevolmente semplificato ed è sufficiente fare clic su un singolo pulsante. Con un singolo clic, infatti, si esegue il provisioning dell’infrastruttura richiesta, l’integrazione con GitHub per il controllo della versione e la configurazione del’archiviazione di documenti e risorse in Google Drive.
 
 Questa automazione consente di ridurre le attività manuali necessarie per configurare il sito iniziale. Garantisce flussi di lavoro ottimizzati, scalabilità e prestazioni migliori per i team che gestiscono i contenuti su server Edge.
 

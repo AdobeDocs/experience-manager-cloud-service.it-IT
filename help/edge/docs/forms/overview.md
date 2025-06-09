@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1033'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Questi servizi consentono di:
 
 * **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. Senza personalizzazioni è possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring WYSIWYG (Editor universale o editor di moduli adattivi). Si possono utilizzare più origini di contenuto nello stesso sito moduli e gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google, Editor universale o Editor di moduli adattivi.
 
-* **Offri esperienze di registrazione digitale eccezionali:** fornisci esperienze di registrazione digitale che consentono di caricare ed eseguire il rendering in modo rapido e continuo monitorando le prestazioni dei moduli tramite la telemetria operativa. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
+* **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite la telemetria operativa. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
 * **Usare set di strumenti intuitivi per gli sviluppatori:** Edge Delivery Services per AEM Forms utilizza il normale linguaggio HTML, CSS moderni e JavaScript Vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
 
