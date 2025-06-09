@@ -257,7 +257,7 @@ ht-degree: 98%
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
-   + [Visualizzazione entità per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
+   + [Visualizzazione principale per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Chiavi gestite dal cliente per Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Onboarding {#onboarding}
@@ -1088,7 +1088,7 @@ ht-degree: 98%
          + [Rendere il modulo globale - Guida alla traduzione dei moduli](/help/edge/docs/forms/translate-forms.md)
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
-         + [Monitorare Le Prestazioni Dei Moduli: Guide Di Telemetria Operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
@@ -1177,9 +1177,9 @@ ht-degree: 98%
          + [Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto](/help/journey-headless/author/references.md)
          + [Scopri come definire metadati e tag per i frammenti di contenuto](/help/journey-headless/author/metadata-tagging.md)
 + Intelligenza artificiale generativa {#generative-ai}
-   + [IA generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+   + [Intelligenza artificiale generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [Genera varianti](/help/generative-ai/generate-variations.md)
+   + [Generare varianti](/help/generative-ai/generate-variations.md)
    + [Assistente (Beta limitata)](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [Assistente AI per AEM Forms (Forms Experience Builder) (precoce adozione)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Assistente AI di AEM Forms - Libreria di richieste](/help/edge/docs/forms/ai-assistant-prompt-library.md)
@@ -1245,7 +1245,7 @@ ht-degree: 98%
          + [Aggiungere un sito Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Creare il primo sito Edge Delivery con un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
          + [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [Configurare il Source dei contenuti](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [Configurare l’origine di contenuto](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + Impostazioni di dominio {#custom-domain-names}
          + [Introduzione alle impostazioni di dominio](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1259,8 +1259,8 @@ ht-degree: 98%
          + [Risolvere i problemi relativi agli errori dei certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [Gestire i certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Mappature di dominio {#domain-mappings}
-         + [Aggiungere una mappatura dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
-         + [Gestire le mappature dei domini](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
+         + [Aggiungere una mappatura di dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
+         + [Gestire le mappature di dominio](/help/implementing/cloud-manager/domain-mappings/manage-domain-mappings.md)
       + Elenchi indirizzi IP consentiti {#ip-allow-lists}
          + [Introduzione agli elenchi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Aggiungere un elenco IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

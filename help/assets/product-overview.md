@@ -5,7 +5,7 @@ exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: dbf83611f31ee598b43208f44614d3d8210a20f1
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Content Hub consente di creare nuovi contenuti con Adobe Express (se disponi di 
 
 [!DNL Content Hub] fornisce informazioni utili sulle risorse, per rispondere ad esigenze spesso riscontrate da chi lavora nel marketing: dati statistici sull’utilizzo delle risorse usate nelle campagne di marketing, nei canali e nelle diverse aree geografiche. Acquisendo dati che consentono di comprendere chiaramente le prestazioni e la popolarità delle risorse, fornisce informazioni fruibili essenziali per migliorare l’esperienza utente.
 
-## Demo Content Hub {#content-hub-demo}
+## Demo di Content Hub {#content-hub-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 

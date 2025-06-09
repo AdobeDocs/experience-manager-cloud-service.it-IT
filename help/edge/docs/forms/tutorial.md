@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -241,7 +241,7 @@ Per essere operativi con un ambiente di sviluppo AEM locale in tempi brevi:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clona il progetto GitHub: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendolo &lt;owner> con il proprietario dell’archivio e &lt;repo> con il nome dell’archivio:
+1. Clona il progetto GitHub: clona l’archivio del progetto da GitHub utilizzando il seguente comando, sostituendolo <owner> con il proprietario dell’archivio e <repo> con il nome dell’archivio:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -268,24 +268,24 @@ Congratulazioni L’ambiente di sviluppo locale è stato configurato correttamen
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adattivi nel progetto corrente per iniziare a creare i moduli.
+Se disponi di un progetto AEM esistente, puoi integrare il blocco di moduli adattivi nel progetto corrente per iniziare a creare il modulo.
 
 >[!NOTE]
 >
 >
-> Questo passaggio si applica ai progetti generati con [AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate). Se hai creato il progetto AEM utilizzando [moduli AEM ricorrenti](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
+> Questo passaggio si applica ai progetti generati con il [XWalk standard AEM](https://github.com/adobe/aem-boilerplate). Se hai creato il progetto AEM utilizzando [moduli AEM standard](https://github.com/adobe-rnd/aem-boilerplate-forms), puoi saltare questo passaggio.
 
 Per integrare:
 
-1. Passa alla cartella dell’archivio dei progetti AEM nel sistema locale.
+1. Passa alla cartella dell’archivio di progetto AEM nel sistema locale.
 
-1. Copia e incolla le cartelle e i file seguenti da [ AEM Forms standard](https://github.com/adobe-rnd/aem-boilerplate-forms) nel tuo progetto AEM:
+1. Copia e incolla le cartelle e i file seguenti dal [ modello AEM standard](https://github.com/adobe-rnd/aem-boilerplate-forms) nel tuo progetto AEM:
 
-   * [blocco modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) cartella
+   * Cartella [blocco modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
    * File [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
    * File [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
-1. Passa al file `/scripts/editor-support.js` nel progetto AEM e aggiornalo con il file [editor-support.js in AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Passa a `/models/_section.json` nel progetto AEM e aggiungi &quot;form&quot; e &quot;embed-adaptive-form&quot; all’array dei componenti dell’oggetto `filters`:
+1. Passa al file `/scripts/editor-support.js` nel progetto AEM e aggiornalo con il file[editor-support.js nel modello standard AEM](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. Passa a `/models/_section.json` nel progetto AEM e aggiungi “modulo” e “modulo adattivo incorporato” all’array dei componenti dell’oggetto `filters`:
 
    ```
        "filters": [
@@ -311,7 +311,7 @@ Per integrare:
    scripts/editor-support-rte.js
    ```
 
-1. (Facoltativo) Passa a `/.eslintrc.js` nel progetto AEM e aggiungi sotto le righe di codice nell&#39;oggetto `rules`:
+1. (Facoltativo) Passa a `/.eslintrc.js` nel progetto AEM e aggiungi le righe di codice sottostanti nell’oggetto `rules`:
 
    ```
    'xwalk/max-cells': ['error', {
@@ -353,7 +353,7 @@ Per integrare:
 
    >[!NOTE]
    >
-   > Prima di inviare le modifiche all&#39;archivio dei progetti AEM su GitHub, assicurati che i file `component-definition.json`, `component-models.json` e `component-filters.json` che si trovano al livello principale del progetto AEM siano aggiornati con gli oggetti relativi al modulo.
+   > Prima di inviare le modifiche all’archivio di progetto AEM su GitHub, assicurati che i file `component-definition.json`, `component-models.json` e `component-filters.json` che si trovano al livello principale del progetto AEM siano aggiornati con gli oggetti relativi al modulo.
 
 1. Conferma e implementa queste modifiche al progetto AEM su GitHub.
 
@@ -363,8 +363,8 @@ Tutto qui. Il blocco di moduli adattivi fa ora parte del progetto AEM. Puoi iniz
 
 Assicurati un processo di compilazione di GitHub senza intoppi affrontando potenziali problemi:
 
-* **Errore percorso modulo di risoluzione:**
-Se si verifica l&#39;errore &quot;Impossibile risolvere il percorso del modulo &quot;&#39;/scripts/lib-franklin.js&#39;&quot;, passare al file [EDS Project]/blocks/forms/form.js. Aggiorna l’istruzione di importazione sostituendo il file lib-franklin.js con il file aem.js.
+* **Errore del percorso del modulo di risoluzione**
+Se riscontri l’errore “Impossibile risolvere il percorso del modulo ”‘/scripts/lib-franklin.js’, passa al file [Progetto EDS]/blocks/forms/form.js. Aggiorna l’istruzione di importazione sostituendo il file lib-franklin.js con il file aem.js.
 
 * **Gestire errori di stampa:**
 in caso di errori di stampa, è possibile ignorarli. Apri il file [Progetto EDS]/package.json e modifica lo script “lint” da `"lint": "npm run lint:js && npm run lint:css"` a `"lint": "echo 'skipping linting for now'"`. Salva il file e conferma le modifiche nel progetto GitHub.
