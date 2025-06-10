@@ -3,9 +3,9 @@ title: Integrare Asset Selector (Selettore risorse) con Dynamic Media open API
 description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 9%
 
 ---
@@ -206,6 +206,10 @@ Dopo l’integrazione con il selettore delle risorse micro-front-end di Adobe, n
 * **F**: [Ordinamento crescente o decrescente](#sorting)
 * **G**: Annulla selezione
 * **H**: selezionare una o più risorse
+
+>[!NOTE]
+>
+>Le cartelle sono supportate solo quando ci si connette all’archivio di authoring e non Dynamic Media con l’archivio OpenAPI.
 
 >[!MORELIKETHIS]
 >
