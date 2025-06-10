@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.04.04 dell’editor universale
-description: Queste sono le note sulla versione 2025.04.04 dell’editor universale.
+title: Note sulla versione 2025.05.21 dell’editor universale
+description: Queste sono le note sulla versione 2025.05.21 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# Note sulla versione 2025.04.04 dell’editor universale {#release-notes}
+# Note sulla versione 2025.05.21 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 4 aprile 2025 dell’editor universale.
+Queste sono le note sulla versione del 21 maggio 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ Queste sono le note sulla versione del 4 aprile 2025 dell’editor universale.
 
 ## Novità {#what-is-new}
 
-* **Dynamic Media con supporto OpenAPI**: [il selettore risorse](/help/assets/overview-asset-selector.md#repository-switcher) nell’editor universale ora supporta [Dynamic Media con OpenAPI e risorse remote](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **Elenco di indirizzi IP consentiti**: l’editor universale ora supporta gli [elenchi indirizzi IP consentiti.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) È possibile controllare gli IP del Servizio editor universale utilizzando [questo endpoint.](http://universal-editor-service.adobe.io/ip-ranges)
-
-## Altri miglioramenti {#other-improvements}
-
-* È stato corretto il problema relativo alla rimozione del layout.
-* Sono stati apportati miglioramenti al test e2e.
-* Sono stati effettuati aggiornamenti delle dipendenze ed è stata eseguita la pulizia del codice.
+* **Disabilita pulsante Apri pagina** - È ora possibile disabilitare il pulsante Apri pagina [.](/help/implementing/universal-editor/customizing.md#open-page)

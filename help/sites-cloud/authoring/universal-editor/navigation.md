@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 25%
 
 ---
@@ -183,9 +183,9 @@ In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe v
 >
 >Utilizzare il tasto di scelta rapida `p` per passare alla modalità anteprima e viceversa.
 
-#### Apri anteprima app {#open-app-preview}
+#### Apri pagina {#open-page}
 
-Seleziona l’icona di anteprima dell’app aperta per aprire la pagina che stai modificando nella scheda del browser corrispondente, senza dover accedere all’editor per visualizzare l’anteprima dei contenuti.
+Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella relativa scheda del browser, libera dall’editor per visualizzare l’anteprima del contenuto.
 
 ![Apri anteprima app](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Seleziona l’icona di anteprima dell’app aperta per aprire la pagina che stai
 >
 >L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+
 #### Pubblicazione {#publish}
 
 Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per l’utilizzo da parte dei lettori o in un ambiente di anteprima per la revisione.
@@ -206,6 +210,10 @@ Seleziona il pulsante Pubblica per pubblicare le modifiche al contenuto live per
 >[!TIP]
 >
 >Per ulteriori informazioni sulla pubblicazione con Universal Editor, vedere il documento [Pubblicazione di contenuti con Universal Editor](publishing.md).
+
+>[!NOTE]
+>
+>Il pulsante di pubblicazione [può essere disabilitato](/help/implementing/universal-editor/customizing.md#disable-publish) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Puntini di sospensione {#ellipsis}
 
@@ -305,7 +313,7 @@ Se selezioni un componente all’interno di un componente contenitore nella stru
 
 Toccando o facendo clic sul pulsante di duplicazione [viene duplicato il componente selezionato](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
-##### Elimina {#delete}
+##### Eliminare {#delete}
 
 Se selezioni un componente all’interno di un componente contenitore nella struttura del contenuto o nell’editor, l’opzione Elimina viene visualizzata nel pannello delle proprietà.
 

@@ -4,9 +4,9 @@ description: Scopri le diverse opzioni per personalizzare l’Editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 8%
 
 ---
@@ -38,6 +38,14 @@ L&#39;opzione **Anteprima** nella finestra di pubblicazione può quindi essere s
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Disabilitazione di Apri pagina {#open-page}
+
+Il pulsante **Apri pagina** può essere eliminato completamente in un&#39;app aggiungendo i metadati seguenti.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Filtrare i componenti {#filtering-components}
@@ -87,7 +95,7 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l’authoring WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
