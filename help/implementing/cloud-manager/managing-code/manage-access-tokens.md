@@ -4,13 +4,13 @@ description: Scopri come visualizzare, modificare ed eliminare i token di access
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Adottatore anticipato" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 3%
 
 ---
-
 
 # Gestire i token di accesso per gli archivi esterni {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Vedi anche [Aggiungere archivi esterni in Cloud Manager](/help/implementing/clou
 ## Modificare un token di accesso {#edit-access-tokens}
 
 1. Nella finestra di dialogo **Gestisci token di accesso**, a destra del nome di un token, fai clic sull&#39;icona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. Nella finestra di dialogo **Modifica token di accesso**, aggiorna il nome del token nel campo di testo **Nome token**.
+1. Nella finestra di dialogo **Modifica token di accesso**, aggiorna **Nome token**, il valore **Token di accesso** o entrambi.
 
-   Impossibile modificare il segreto del token di accesso.
+   Se il **token di accesso** è attualmente in uso, viene visualizzata una notifica che avvisa che tutti gli archivi associati verranno automaticamente riconvalidati dopo l&#39;aggiornamento.
 
    ![Finestra di dialogo Modifica token di accesso](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
