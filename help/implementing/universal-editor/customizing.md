@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’Editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 6%
 
 ---
 
@@ -47,6 +47,18 @@ Il pulsante **Apri pagina** può essere eliminato completamente in un&#39;app ag
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## Disabilitazione del pulsante Duplica {#duplicate-button}
+
+Alcuni flussi di lavoro di authoring potrebbero dover limitare la capacità dell’autore di contenuto di duplicare i componenti. Puoi disabilitare l&#39;[icona duplicata](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) aggiungendo i seguenti metadati.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Modifica dell’endpoint {#custom-endpoint}
+
+Se non desideri utilizzare il servizio Universal Editor, ospitato da Adobe, ma la tua versione ospitata, puoi impostarlo in un tag meta. Per informazioni dettagliate, consulta il documento [Guida introduttiva all&#39;editor universale in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings).
 
 ## Filtrare i componenti {#filtering-components}
 
@@ -95,7 +107,7 @@ Le condizioni possono essere definite utilizzando lo schema [JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+È possibile specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview`, che verrà aperta quando si fa clic sul pulsante **Apri pagina** nella barra degli strumenti superiore destra dell&#39;editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Ciò è particolarmente utile per le applicazioni con requisiti di anteprima specifici, ad esempio quelle [che utilizzano Edge Delivery Services con l’authoring WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
