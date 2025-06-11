@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: be4c57c1703831b8c71fc722761515b32cfc0683
+source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
 workflow-type: tm+mt
-source-wordcount: '6240'
+source-wordcount: '6242'
 ht-degree: 98%
 
 ---
@@ -408,7 +408,7 @@ ht-degree: 98%
          + [Gestione dei progetti](/help/sites-cloud/authoring/projects/managing.md)
          + [Utilizzo delle attività](/help/sites-cloud/authoring/projects/tasks.md)
          + [Utilizzo dei flussi di lavoro per i progetti](/help/sites-cloud/authoring/projects/workflows.md)
-      + Lanci {#launches}
+      + Lanci per pagine {#launches-for-pages}
          + [Utilizzo dei lanci](/help/sites-cloud/authoring/launches/overview.md)
          + [Creazione dei lanci](/help/sites-cloud/authoring/launches/creating.md)
          + [Gestione delle pagine nei lanci](/help/sites-cloud/authoring/launches/managing-pages.md)
