@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 76%
+source-wordcount: '2499'
+ht-degree: 74%
 
 ---
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Per visualizzare i tag principali configurati, passa alla pagina dei dettagli della risorsa in cui viene eseguita la mappatura tra il modulo di metadati e i tag principali.
 
-## Miglioramento dell’individuazione dei contenuti con tag avanzati generati dall’intelligenza artificiale {#ai-smart-tags}
+## Miglioramento dell’individuazione dei contenuti con metadati generati dall’intelligenza artificiale {#ai-smart-tags}
 
 Invece di fare affidamento sull’input manuale, l’intelligenza artificiale assegna automaticamente tag descrittivi alle risorse digitali. Questi tag generati dall’intelligenza artificiale migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali. Ad esempio, se la risorsa è un’immagine, l’intelligenza artificiale è in grado di identificare oggetti, scene, emozioni o anche loghi del brand al suo interno e generare tag rilevanti come &quot;tramonto&quot;, &quot;spiaggia&quot;, &quot;vacanza&quot; o &quot;sorriso&quot;. I contenuti generati dall’intelligenza artificiale possono migliorare la ricerca delle risorse sfruttando tecniche di ricerca sia semantiche che lessicali. Ulteriori informazioni su [Cerca in Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![Tag avanzati migliorati](assets/enhanced-smart-tags.png)
+![Metadati generati da IA](/help/assets/assets/enhanced-smart-tags.png)
 
-### Utilizzo di tag avanzati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
+### Come si abilitano i metadati generati dall’intelligenza artificiale? {#enable-ai-generated-metadata}
+
+Per abilitare i metadati generati dall’intelligenza artificiale:
+
+* La versione minima richiesta di AEM è `20626`.
+
+* È necessario firmare un accordo GenAI Rider. Per ulteriori informazioni, contatta il rappresentante Adobe.
+
+  >[!IMPORTANT]
+  >
+  > Il titolo di una risorsa generato dall’intelligenza artificiale viene visualizzato nella scheda delle risorse solo se non ne è stato definito il titolo. Non sovrascrive il titolo della risorsa specificato dall’utente.
+
+### Utilizzo di metadati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 1. Attendi che la nuova risorsa caricata venga elaborata. Al termine, vai ai dettagli della risorsa.
 
-1. Passa alla scheda **[!UICONTROL Generato da IA]**. Se la versione di [!DNL Experience Manager] non è compatibile o non è aggiornata, la scheda non è visibile. La versione minima richiesta di AEM è `20626`. Sono presenti i seguenti campi:
+1. Passa alla scheda **[!UICONTROL Generato da IA]**. Se la versione di [!DNL Experience Manager] non è compatibile o non è aggiornata, la scheda non è visibile.  Sono presenti i seguenti campi:
 
    * **[!UICONTROL Titolo generato]:** Il titolo fornisce un titolo chiaro e conciso che acquisisce l&#39;idea di base di una risorsa caricata, semplificandone la comprensione immediata. Quando aggiungi una risorsa, se fornisci un titolo (in `dc:title`), questo verrà visualizzato nella visualizzazione Sfoglia risorse. Se non specificato, viene assegnato automaticamente un titolo generato dall’intelligenza artificiale.
    * **[!UICONTROL Descrizione generata]:** La descrizione fornisce un riepilogo breve ma informativo di ciò che riguarda la risorsa, aiutando gli utenti e il modulo di ricerca a comprenderne rapidamente la rilevanza.
@@ -286,7 +298,7 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&amp;lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

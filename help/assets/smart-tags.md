@@ -3,13 +3,13 @@ title: Assegna tag automatici alle risorse con  [!DNL Adobe Sensei] servizio ava
 description: Assegna tag alle risorse con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # Tag avanzati per AEM Assets {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets senza tag in DAM {#smart-tag-existing-assets}
 
-Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
+Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Miglioramento dell’individuazione dei contenuti con tag avanzati generati dall’intelligenza artificiale {#ai-smart-tags}
+## Miglioramento dell’individuazione dei contenuti con metadati generati dall’intelligenza artificiale {#ai-smart-tags}
 
 Invece di fare affidamento sull’input manuale, l’intelligenza artificiale assegna automaticamente tag descrittivi alle risorse digitali. Questi tag generati dall’intelligenza artificiale migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali. Ad esempio, se la risorsa è un’immagine, l’intelligenza artificiale è in grado di identificare oggetti, scene, emozioni o anche loghi del brand al suo interno e generare tag rilevanti come &quot;tramonto&quot;, &quot;spiaggia&quot;, &quot;vacanza&quot; o &quot;sorriso&quot;. I contenuti generati dall’intelligenza artificiale possono migliorare la ricerca delle risorse sfruttando tecniche di ricerca sia semantiche che lessicali. Ulteriori informazioni su [Cerca in Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![Tag avanzati migliorati](assets/enhanced-smart-tags1.png)
 
-### Utilizzo di tag avanzati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
+### Come si abilitano i metadati generati dall’intelligenza artificiale? {#enable-ai-generated-metadata}
+
+Per abilitare i metadati generati dall’intelligenza artificiale:
+
+* La versione minima richiesta di AEM è `20626`.
+
+* È necessario firmare un accordo GenAI Rider. Per ulteriori informazioni, contatta il rappresentante Adobe.
+
+  >[!IMPORTANT]
+  >
+  > Il titolo di una risorsa generato dall’intelligenza artificiale viene visualizzato nella scheda delle risorse solo se non ne è stato definito il titolo. Non sovrascrive il titolo della risorsa specificato dall’utente.
+
+### Utilizzo di metadati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 1. Attendi che la nuova risorsa caricata venga elaborata. Al termine, vai a proprietà risorsa.
 
-1. Passa alla scheda **[!UICONTROL Generato da IA]**. Se la versione di [!DNL Experience Manager] non è compatibile o non è aggiornata, la scheda non è visibile. La versione minima richiesta di AEM è `20626`. Sono presenti i seguenti campi:
+1. Passa alla scheda **[!UICONTROL Generato da IA]**. Se la versione di [!DNL Experience Manager] non è compatibile o non è aggiornata, la scheda non è visibile. Sono presenti i seguenti campi:
 
    * **[!UICONTROL Titolo generato]:** Il titolo fornisce un titolo chiaro e conciso che acquisisce l&#39;idea di base di una risorsa caricata, semplificandone la comprensione immediata. Quando aggiungi una risorsa, se fornisci un titolo (in `dc:title`), questo verrà visualizzato nella visualizzazione Sfoglia risorse. Se non specificato, viene assegnato automaticamente un titolo generato dall’intelligenza artificiale.
    * **[!UICONTROL Descrizione generata]:** La descrizione fornisce un riepilogo breve ma informativo di ciò che riguarda la risorsa, aiutando gli utenti e il modulo di ricerca a comprenderne rapidamente la rilevanza.
