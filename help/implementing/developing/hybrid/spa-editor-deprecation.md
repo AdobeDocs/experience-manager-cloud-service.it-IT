@@ -1,17 +1,18 @@
 ---
-title: Editor SPA obsoleto
+title: Rimozione dell’editor di SPA
 description: Anche se l’editor di applicazioni a pagina singola rimane supportato da Adobe, scopri cosa significa la sua rimozione dal progetto e quali opzioni hai per i progetti futuri.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Editor SPA obsoleto {#spa-editor-deprecation}
+# Rimozione dell’editor di SPA {#spa-editor-deprecation}
 
 Anche se l’editor di applicazioni a pagina singola rimane supportato da Adobe, scopri cosa significa la sua rimozione dal progetto e quali opzioni hai per i progetti futuri.
 
@@ -32,7 +33,7 @@ I seguenti SDK sono ora in fase di blocco delle funzioni.
 * [Core progetto SPA di AEM](https://github.com/adobe/aem-spa-project-core)
 * [Gestione modelli pagina SPA di AEM](https://github.com/adobe/aem-spa-page-model-manager)
 * [Mappatura componente SPA di AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componenti modificabili di AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+* [Componenti modificabili di React SPA di AEM](https://github.com/adobe/aem-react-editable-components)
    * [Componenti core React di AEM](https://github.com/adobe/aem-react-core-wcm-components)
    * [Base componenti core React di AEM](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [SPA dei componenti core AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -87,7 +88,7 @@ L’editor universale offre molta più libertà agli implementatori di app web, 
 
 ![Architetture Universal Editor e SPA Editor confrontate](assets/spa-editor-vs-ue.png)
 
-|  | Editor SPA | Editor universale |
+|  | Editor di SPA | Editor universale |
 |---|---|---|
 | **Tema** | L’app deve implementare il layout con il CSS griglia di AEM. | L’app può utilizzare qualsiasi tecnica CSS moderna per il layout. |
 | **Rendering** | L’app deve seguire la struttura di indirizzamento dell’editor di applicazioni a pagina singola. | L’app può essere implementata liberamente, senza regole o pattern imposti da seguire. |

@@ -5,14 +5,16 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 100%
 
 ---
 
 # Personalizza il tema del sito {#customize-the-site-theme}
+
+{{traditional-aem}}
 
 Scopri come è fatto il tema del sito, come personalizzarlo e come testarlo utilizzando contenuti live AEM.
 
@@ -30,7 +32,7 @@ Questa parte del percorso tratta il passaggio successivo, analizzando il tema de
 Questo documento spiega come viene creato il tema del sito AEM, come personalizzarlo e come testarlo utilizzando il contenuto live AEM. Dopo la lettura dovresti:
 
 * Comprendere la struttura di base del tema del sito e come modificarlo.
-* Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
+* Come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
 * Scopri come eseguire il commit delle modifiche nell’archivio Git AEM.
 
 ## Ruolo responsabile {#responsible-role}
@@ -135,8 +137,8 @@ Le personalizzazioni ora vengono memorizzate in modo sicuro nell’archivio Git 
 Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, è necessario:
 
 * Comprendere la struttura di base del tema del sito e come modificarlo.
-* Scopri come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
-* Scopri come eseguire il commit delle modifiche nell’archivio Git AEM.
+* Come testare le personalizzazioni dei temi utilizzando contenuti AEM reali tramite proxy locale.
+* Come eseguire il commit delle modifiche nell’archivio Git AEM.
 
 Approfondisci questo argomento e continua il percorso di creazione rapida di un sito AEM consultando il documento [Distribuire il tema personalizzato](deploy-theme.md), dove verrà illustrato come distribuire il tema utilizzando la pipeline front-end.
 

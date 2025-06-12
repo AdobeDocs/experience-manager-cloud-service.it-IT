@@ -5,14 +5,16 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 100%
 
 ---
 
 # Recuperare le informazioni di accesso all’archivio Git {#retrieve-access}
+
+{{traditional-aem}}
 
 Scopri in che modo lo sviluppatore front-end utilizza Cloud Manager per accedere alle informazioni dell’archivio Git.
 
@@ -112,7 +114,7 @@ Viene visualizzata una panoramica del programma. La pagina avrà un aspetto dive
 Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, è necessario:
 
 * Comprendere ad alto livello cosa è Cloud Manager.
-* Aver recuperato le credenziali per accedere al Git AEM in modo da poter eseguire il commit delle personalizzazioni.
+* Come recuperare le credenziali per accedere al Git AEM in modo da poter eseguire il commit delle personalizzazioni.
 
 Sviluppa ulteriormente queste conoscenze e continua il percorso di creazione rapida del sito AEM consultando il documento [Personalizzare il tema del sito](customize-theme.md), dove scoprirai come è stato creato il tema del sito, come personalizzarlo e come eseguire il test utilizzando contenuti live AEM.
 

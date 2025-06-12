@@ -4,12 +4,14 @@ description: Questo articolo introduce i concetti di una SPA e spiega come utili
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
 
 ---
+
 
 # Introduzione alla SPA e procedura dettagliata {#spa-introduction}
 
@@ -134,7 +136,7 @@ Sono supportati ulteriori strumenti di authoring, come il trascinamento e il ril
 
 ## App SPA ed editor di SPA AEM {#spa-apps-and-the-aem-spa-editor}
 
-L&#39;esperienza del comportamento di un SPA per l&#39;utente e la successiva ispezione della pagina SPA consentono di comprendere meglio il funzionamento di un&#39;app SAP con l&#39;Editor SPA nell&#39;AEM.
+L&#39;esperienza del comportamento di un&#39;applicazione a pagina singola per l&#39;utente e la successiva ispezione della pagina dell&#39;applicazione a pagina singola consentono di comprendere meglio il funzionamento di un&#39;app SAP con l&#39;editor di applicazioni a pagina singola in AEM.
 
 ### Utilizzo di un’applicazione SPA {#using-an-spa-application}
 
@@ -144,13 +146,13 @@ L&#39;esperienza del comportamento di un SPA per l&#39;utente e la successiva is
 
    ![Anteprima della home del progetto SPA WKND](assets/wknd-preview.png)
 
-   Osserva la struttura delle pagine, inclusa la navigazione verso pagine figlie, menu e schede articolo.
+   Osserva la struttura delle pagine, inclusa la navigazione verso pagine secondarie, menu e schede articolo.
 
-1. Passa a una pagina figlia utilizzando il menu e controlla che la pagina venga caricata immediatamente senza la necessità di un aggiornamento.
+1. Passa a una pagina secondaria utilizzando il menu e controlla che la pagina venga caricata immediatamente senza la necessità di un aggiornamento.
 
    ![Progetto SPA WKND pagina 1](assets/wknd-page1.png)
 
-1. Apri gli strumenti di sviluppo incorporati del browser e monitora l’attività di rete mentre navighi nelle pagine figlie.
+1. Apri gli strumenti di sviluppo incorporati del browser e monitora l’attività di rete mentre navighi nelle pagine secondarie.
 
    ![Attività di rete](assets/wknd-network-activity.png)
 
@@ -158,7 +160,7 @@ L&#39;esperienza del comportamento di un SPA per l&#39;utente e la successiva is
 
    La SPA gestisce il contenuto e il routing interamente sul lato client.
 
-Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine figlie, come viene caricata?
+Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine secondarie, come viene caricata?
 
 La sezione successiva, [Caricamento di un’applicazione SPA](#loading-a-spa-application), approfondisce la procedura di caricamento della SPA e spiega come caricare il contenuto in modo sincrono e asincrono.
 
@@ -211,9 +213,9 @@ La sezione successiva, [Caricamento di un’applicazione SPA](#loading-a-spa-app
 
 ### Interazione con l’editor SPA {#interaction-with-the-spa-editor}
 
-Utilizzando l’applicazione di esempio WKND SPA Project, è chiaro come si comporta l’app che viene caricata quando viene pubblicata, utilizzando i servizi per contenuti per la distribuzione dei contenuti JSON e il caricamento asincrono delle risorse.
+Utilizzando l’applicazione di esempio per progetti SPA WKND, è chiaro come si comporta l’app e come viene caricata quando viene pubblicata, utilizzando servizi per contenuti per la distribuzione di contenuti JSON e il caricamento asincrono delle risorse.
 
-Inoltre, per l’autore di contenuti, la creazione di contenuti tramite un editor SPA avviene direttamente all’interno dell’AEM.
+Inoltre, per l’autore di contenuti, la creazione di contenuti tramite un editor SPA avviene direttamente all’interno di AEM.
 
 Nella sezione seguente esploreremo il contratto che consente all’editor di SPA di relazionare i componenti all’interno della SPA con i componenti AEM e ottenere questa esperienza di editing perfetta.
 
@@ -221,7 +223,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Utilizzando gli strumenti di sviluppo incorporati nel browser, esaminare il contenuto della pagina. Con lo strumento di selezione, selezionare un componente modificabile nella pagina e visualizzare i dettagli dell’elemento.
+1. Utilizzando gli strumenti di sviluppo incorporati nel browser, esamina il contenuto della pagina. Con lo strumento di selezione, selezionare un componente modificabile nella pagina e visualizzare i dettagli dell’elemento.
 
    Il componente ha un nuovo attributo dati `data-cq-data-path`.
 
@@ -245,7 +247,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
 ## Headful e headless in AEM {#headful-headless}
 
-Le SPA possono essere abilitate con livelli flessibili di integrazione all’interno di AEM, comprese le SPA sviluppate e mantenute al di fuori di AEM. Inoltre, l’SPA può essere utilizzato all’interno dell’AEM, mentre l’AEM può essere utilizzato anche per fornire contenuti a endpoint aggiuntivi in modo headless.
+Le SPA possono essere abilitate con livelli flessibili di integrazione all’interno di AEM, comprese le SPA sviluppate e mantenute al di fuori di AEM. Inoltre, le applicazioni a pagina singola possono essere utilizzate all’interno di AEM, utilizzando al contempo AEM per distribuire contenuti ad endpoint aggiuntivi in modo headless.
 
 >[!TIP]
 >

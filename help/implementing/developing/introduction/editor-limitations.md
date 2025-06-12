@@ -1,19 +1,20 @@
 ---
-title: Limitazioni per l’editor
-description: L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori.
+title: Limitazioni dell’Editor pagina
+description: L’Editor pagina utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 4%
 
 ---
 
-# Limitazioni per l’editor {#editor-limitations}
 
-L’editor nell’interfaccia touch utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori. Questa pagina riepiloga queste limitazioni e fornisce soluzioni o soluzioni alternative, ove possibile.
+# Limitazioni dell’Editor pagina {#editor-limitations}
+
+[L&#39;Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) utilizza le sovrapposizioni per interagire con contenuti confinati in un iframe. Questa interazione crea alcune limitazioni sia nell’utilizzo dell’editor che per gli sviluppatori. Questa pagina riepiloga queste limitazioni e fornisce soluzioni o soluzioni alternative, ove possibile.
 
 ## Limitazioni funzionali {#functional-limitations}
 
@@ -41,7 +42,7 @@ Gli elementi con posizionamento assoluto possono causare problemi nella posizion
 
 ### unità vh {#vh-units}
 
-`vh` unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente dall&#39;AEM.
+`vh` unità non sono supportate perché l&#39;altezza dell&#39;iframe deve essere regolata automaticamente da AEM.
 
 ### Immagini di sfondo fisse {#fixed-background-images}
 

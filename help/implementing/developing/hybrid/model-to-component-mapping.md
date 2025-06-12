@@ -1,19 +1,21 @@
 ---
-title: Mappatura di un modello dinamico a un componente per SPA
-description: Questo articolo descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for AEM.
+title: Mappatura da modello dinamico a componente per applicazioni a pagina singola
+description: Questo articolo descrive come si verifica il modello dinamico per la mappatura dei componenti in JavaScript SPA SDK for AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Mappatura di un modello dinamico a un componente per SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Questo documento descrive come avviene la mappatura del modello dinamico ai componenti in JavaScript SPA SDK for AEM.
+# Mappatura da modello dinamico a componente per applicazioni a pagina singola {#dynamic-model-to-component-mapping-for-spas}
+
+Questo documento descrive come si verifica il modello dinamico per la mappatura dei componenti in JavaScript SPA SDK for AEM.
 
 {{ue-over-spa}}
 
@@ -23,7 +25,7 @@ Il modulo `ComponentMapping` viene fornito come pacchetto NPM al progetto front-
 
 Ogni elemento presente nel modello contiene un campo `:type` che espone un tipo di risorsa AEM. Una volta montato, il componente front-end può eseguire il rendering utilizzando il frammento di modello ricevuto dalle librerie sottostanti.
 
-Per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al componente front-end del modello, consulta il documento [Blueprint per SPA](blueprint.md).
+Per ulteriori informazioni sull&#39;analisi del modello e sull&#39;accesso al componente front-end del modello, consulta il documento [Blueprint SPA](blueprint.md).
 
 Vedi anche il pacchetto npm: [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 

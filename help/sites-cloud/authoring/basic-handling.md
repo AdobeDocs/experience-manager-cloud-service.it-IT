@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 61%
@@ -15,13 +15,11 @@ ht-degree: 61%
 
 # Operazioni di base {#basic-handling}
 
-Questo documento offre una panoramica delle operazioni di base nell’ambiente di authoring AEM.
+Questo documento offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM.
 
 >[!TIP]
 >
->Sono disponibili scelte rapide da tastiera in tutto il AEM. In particolare quando [utilizza la console Sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) e [l&#39;editor di pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
-
-{{edge-delivery-authoring}}
+>Le scelte rapide da tastiera sono disponibili in AEM. In particolare quando [utilizza la console Sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) e [l&#39;editor di pagine](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Interfaccia touch {#a-touch-enabled-ui}
 
@@ -37,7 +35,7 @@ Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata
 
 ## Navigazione nel prodotto  {#product-navigation}
 
-Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Prenditi un minuto per effettuare la selezione e ottenere una buona panoramica della gestione di base dell’AEM.
+Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Dedica un minuto alla selezione per una buona panoramica della gestione di base di AEM.
 
 ![Esercitazione sulla navigazione](assets/basic-handling-tutorial.png)
 
@@ -55,7 +53,7 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](#navigation-panel)** - Rappresentata da una bussola e dal pannello predefinito al momento dell&#39;accesso a AEM
+* **[Navigazione](#navigation-panel)** - Rappresentata da una bussola e dal pannello predefinito al momento dell&#39;accesso ad AEM
 * **[Strumenti](#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
@@ -102,7 +100,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
 * La tua organizzazione IMS: seleziona questa opzione per apportare modifiche, se necessario.
 
-* [Soluzioni](https://www.adobe.com/it/experience-cloud.html) - Seleziona questa opzione per accedere alle altre soluzioni di Adobe.
+* [Soluzioni](https://www.adobe.com/it/experience-cloud.html) - Seleziona questa opzione per accedere alle altre soluzioni Adobe.
 
   ![Pulsante Soluzioni](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
@@ -130,9 +128,9 @@ Sono disponibili diverse risorse di assistenza e alcuni modi per accedervi.
 
   ![Icona Aiuto](assets/basic-handling-help.png)
 
-* **Console** - La prima volta che accedi al sistema, [una serie di diapositive introduce la navigazione AEM](#product-navigation).
+* **Console** - La prima volta che accedi al sistema, [una serie di diapositive introduce la navigazione in AEM](#product-navigation).
 
-  ![Esercitazione](assets/basic-handling-console-tutorial.png)
+  ![Tutorial](assets/basic-handling-console-tutorial.png)
 
 * **Editor pagina** - La prima volta che modifichi una pagina, una serie di diapositive introduce l&#39;editor pagina.
 

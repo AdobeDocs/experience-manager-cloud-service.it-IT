@@ -4,10 +4,10 @@ description: Scopri in che modo AEM as a Cloud Service può trarre vantaggio dal
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 96%
+source-wordcount: '1321'
+ht-degree: 94%
 
 ---
 
@@ -21,6 +21,12 @@ Utilizzando Edge Delivery Services, è possibile:
 * Crea siti veloci con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni del sito tramite la telemetria operativa.
 * Aumentare l’efficienza di authoring separando le origini dei contenuti. È già possibile utilizzare sia l’authoring di AEM con l’editor universale che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
 * Utilizza un framework di sperimentazione incorporato che consente di creare e di eseguire rapidamente i test senza alcun impatto sulle prestazioni e di rilasciare rapidamente in produzione un vincitore di test.
+
+>[!TIP]
+>
+>**Vuoi iniziare subito?**
+>
+>Se desideri iniziare subito a utilizzare, puoi iniziare il tuo progetto Edge Delivery Services con la creazione di AEM in meno di 30 minuti [consultando l&#39;esercitazione su aem.live.](https://www.aem.live/developer/ue-tutorial)
 
 ## Reazione Agile alle esigenze aziendali {#agile-reaction}
 
@@ -54,6 +60,22 @@ Il diagramma seguente illustra come modificare il contenuto in Microsoft Word (a
 
 Edge Delivery Services sfrutta GitHub per consentirti di gestire e distribuire il codice direttamente dall’archivio GitHub. Il nuovo contenuto viene subito aggiunto senza che sia necessario eseguire una nuova build.
 
+### Authoring AEM con l’editor universale{#wysiwyg-authoring}
+
+L’editor universale è what-you-see-is-what-you-get (WYSIWYG), un’area personalizzabile e completa per la modifica dei contenuti in tempo reale e nel loro contesto, con un’anteprima visiva.
+
+* Grazie all’authoring AEM con l’editor universale, puoi aumentare l’efficienza dell’authoring sia headless che headful.
+* Puoi sfruttare le funzionalità complete di gestione dei contenuti di AEM, incluse quelle per flussi di lavoro e governance.
+* Sfrutta numerosi punti di estensione per supportare i processi e le integrazioni che utilizzi.
+* Le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub.
+
+![Authoring AEM con l’editor universale](assets/wysiwyg-authoring.png)
+
+Introduzione all’authoring AEM con l’editor universale ed Edge Delivery Services:
+
+* Per una panoramica sull’authoring AEM con l’edito universale, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
+* Per una panoramica per gli sviluppatori, consulta il documento [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
+
 ### Authoring basato su documenti {#document-based}
 
 Grazie all’authoring basato su documenti, puoi utilizzare i contenuti direttamente da Microsoft Word o Documenti Google in modo che diventino pagine del sito web. I titoli, gli elenchi, le immagini e gli elementi font possono essere tutti trasferiti dall’origine iniziale al sito web.
@@ -70,22 +92,6 @@ Ulteriori informazioni sono disponibili nella documentazione relativa all’auth
 * Per informazioni dettagliate su come iniziare a utilizzare Edge Delivery, consulta la sezione [Creare della documentazione aem.live.](https://www.aem.live/docs/#build)
 * Per informazioni su come creare e pubblicare contenuti utilizzando Edge Delivery, consulta la [sezione Pubblicare della documentazione aem.live.](https://www.aem.live/docs/authoring)
 * Per informazioni su come avviare correttamente il progetto del sito web, consulta la [sezione Avvio della documentazione aem.live](https://www.aem.live/docs/#launch)
-
-### Authoring AEM con l’editor universale{#wysiwyg-authoring}
-
-L’editor universale è what-you-see-is-what-you-get (WYSIWYG), un’area personalizzabile e completa per la modifica dei contenuti in tempo reale e nel loro contesto, con un’anteprima visiva.
-
-* Grazie all’authoring AEM con l’editor universale, puoi aumentare l’efficienza dell’authoring sia headless che headful.
-* Puoi sfruttare le funzionalità complete di gestione dei contenuti di AEM, incluse quelle per flussi di lavoro e governance.
-* Sfrutta numerosi punti di estensione per supportare i processi e le integrazioni che utilizzi.
-* Le funzionalità del sito possono essere sviluppate utilizzando CSS e JavaScript in GitHub.
-
-![Authoring AEM con l’editor universale](assets/wysiwyg-authoring.png)
-
-Introduzione all’authoring AEM con l’editor universale ed Edge Delivery Services:
-
-* Per una panoramica sull’authoring AEM con l’edito universale, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
-* Per una panoramica per gli sviluppatori, consulta il documento [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
 
 ### Scegliere il metodo di authoring più appropriato {#authoring-method}
 

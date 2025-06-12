@@ -5,14 +5,16 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 100%
 
 ---
 
 # Creare un sito da un modello {#create-site-from-template}
+
+{{traditional-aem}}
 
 Scopri come creare rapidamente un sito AEM utilizzando un modello di sito.
 
@@ -30,7 +32,7 @@ Questo articolo si basa su queste nozioni fondamentali, per permetterti di compi
 Questo documento consente di comprendere come creare rapidamente un sito AEM utilizzando un modello di sito. Dopo la lettura dovresti:
 
 * Ottenere i modelli di sito AEM.
-* Scopri come creare un sito utilizzando un modello.
+* Creare un sito utilizzando un modello.
 * Scopri come scaricare il modello dal tuo nuovo sito per fornirlo allo sviluppatore front-end.
 
 ## Ruolo responsabile {#responsible-role}
@@ -174,7 +176,7 @@ La configurazione è stata completata. Gli autori dei contenuti ora possono iniz
 Dopo aver completato questa parte del percorso di creazione rapida sito di AEM, è necessario:
 
 * Ottenere i modelli di sito AEM.
-* Scopri come creare un sito utilizzando un modello.
+* Creare un sito utilizzando un modello.
 * Scopri come scaricare il modello dal tuo nuovo sito per fornirlo allo sviluppatore front-end.
 
 Per approfondire l’argomento e proseguire nel percorso di creazione rapida di siti AEM. consulta il documento [Configurare la pipeline](pipeline-setup.md), in cui creerai una pipeline front-end per gestire la personalizzazione del tema del sito.

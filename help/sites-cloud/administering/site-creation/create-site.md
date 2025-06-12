@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 80%
@@ -14,13 +14,15 @@ ht-degree: 80%
 
 # Creazione di un sito {#creating-site}
 
+{{traditional-aem}}
+
 Scopri come utilizzare AEM per creare un sito utilizzando i modelli per definire lo stile e la struttura del sito.
 
 ## Panoramica {#overview}
 
 Prima che gli autori dei contenuti possano creare pagine con contenuti, è necessario creare il sito. Questo viene generalmente eseguito da un amministratore AEM che definisce la struttura iniziale del sito. L’utilizzo dei modelli di sito rende la creazione del sito veloce e flessibile.
 
-Lo strumento di Creazione Rapida dei Siti dell’AEM consente ai non sviluppatori di creare rapidamente un sito da zero utilizzando i modelli di sito.
+Lo strumento Creazione rapida sito di AEM consente ai non sviluppatori di creare rapidamente un sito da zero utilizzando i modelli di sito.
 
 Una volta creato, lo strumento Creazione rapida sito consente inoltre di personalizzare velocemente il tema e lo stile del sito AEM (risorse JavaScript, CSS e statiche). In questo modo lo sviluppatore front-end, che non ha bisogno di conoscere AEM, può lavorare in maniera autonoma e in parallelo ai creatori di contenuti. L’amministratore AEM scarica semplicemente il tema del sito e lo fornisce allo sviluppatore front-end. Quest&#39;ultimo lo personalizza utilizzando i propri strumenti preferiti e successivamente conferma le modifiche nell’archivio del codice AEM, che viene quindi distribuito.
 

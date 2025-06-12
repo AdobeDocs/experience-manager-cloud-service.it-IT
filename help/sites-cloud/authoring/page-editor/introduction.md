@@ -1,20 +1,20 @@
 ---
-title: Editor pagina AEM
-description: L’editor di pagine dell’AEM è uno strumento utile per creare i contenuti.
+title: Editor pagina di AEM
+description: L’editor pagina di AEM è uno strumento utile per la creazione dei contenuti.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
 
 ---
 
-# Editor pagina AEM {#editing-page-content}
+# Editor pagina di AEM {#editing-page-content}
 
-Dopo aver creato la pagina nella console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), puoi modificarne il contenuto utilizzando l&#39;editor di pagine dell&#39;AEM, uno strumento utile per la creazione dei contenuti.
+Una volta creata la pagina nella console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), puoi modificarne il contenuto utilizzando l&#39;editor pagina di AEM, uno strumento utile per la creazione dei contenuti.
 
 >[!NOTE]
 >
@@ -24,9 +24,11 @@ Dopo aver creato la pagina nella console [**Sites**](/help/sites-cloud/authoring
 >
 >Il tuo account necessita dei diritti di accesso e delle autorizzazioni appropriate per modificare le pagine. Se non disponi delle autorizzazioni necessarie, contatta l’amministratore di sistema.
 
+{{traditional-aem}}
+
 ## Orientamento {#orientation}
 
-L’editor pagina dell’AEM è composto principalmente da tre sezioni:
+L’editor pagina di AEM è composto principalmente da tre sezioni:
 
 1. [Barra degli strumenti](#toolbar): consente di accedere rapidamente alla modifica della modalità della pagina e ad altre impostazioni di pagina.
 1. [Pannello laterale](#side-panel) - Il pannello laterale consente di accedere ai componenti e alle risorse della pagina e ad altri strumenti di creazione.
@@ -146,7 +148,7 @@ Nell’editor puoi apportare modifiche direttamente al contenuto della pagina. I
 
 Ora che conosci l’editor pagina, puoi modificare il contenuto.
 
-Per ulteriori informazioni, vedere il documento [Modifica del contenuto con l&#39;Editor pagina AEM](/help/sites-cloud/authoring/page-editor/edit-content.md).
+Per ulteriori informazioni, vedere il documento [Modifica del contenuto con AEM Page Editor](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Notifica di stato {#status-notification}
 

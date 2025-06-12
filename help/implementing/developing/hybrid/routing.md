@@ -1,33 +1,35 @@
 ---
 title: Routing modello SPA
-description: Per le applicazioni a pagina singola nell’AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
+description: Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
+
 # Routing modello SPA{#spa-model-routing}
 
-Per le applicazioni a pagina singola nell’AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
+Per le applicazioni a pagina singola in AEM, l’app è responsabile del routing. Questo documento descrive il meccanismo di instradamento, il contratto e le opzioni disponibili.
 
 {{ue-over-spa}}
 
 ## Indirizzamento progetto {#project-routing}
 
-L’app è proprietaria del routing e viene quindi implementata dagli sviluppatori front-end del progetto. Questo documento descrive il routing specifico del modello restituito dal server AEM. La struttura dati del modello di pagina espone l’URL della risorsa sottostante. Il progetto front-end può utilizzare qualsiasi libreria personalizzata o di terze parti che fornisce funzionalità di indirizzamento. Quando una route prevede un frammento di modello, è possibile effettuare una chiamata alla funzione `PageModelManager.getData()`. Quando viene modificata una route di modello, deve essere attivato un evento per avvisare le librerie in ascolto, come l’Editor pagina.
+L’app è proprietaria del routing e viene quindi implementata dagli sviluppatori front-end del progetto. Questo documento descrive il routing specifico per il modello restituito dal server AEM. La struttura dati del modello di pagina espone l’URL della risorsa sottostante. Il progetto front-end può utilizzare qualsiasi libreria personalizzata o di terze parti che fornisce funzionalità di indirizzamento. Quando una route prevede un frammento di modello, è possibile effettuare una chiamata alla funzione `PageModelManager.getData()`. Quando viene modificata una route di modello, deve essere attivato un evento per avvisare le librerie in ascolto, come l’Editor pagina.
 
 ## Architettura {#architecture}
 
-Per una descrizione dettagliata, vedi la sezione [PageModelManager](blueprint.md#pagemodelmanager) del documento Blueprint SPA.
+Per una descrizione dettagliata, consulta la sezione [PageModelManager](blueprint.md#pagemodelmanager) del documento Blueprint SPA.
 
 ## ModelRouter {#modelrouter}
 
-`ModelRouter` - se abilitato - incapsula le funzioni API cronologia di HTML5 `pushState` e `replaceState` per garantire che un determinato frammento di modello sia preacquisito e accessibile. Notifica quindi al componente front-end registrato che il modello è stato modificato.
+`ModelRouter` - se abilitato - incapsula le funzioni API della cronologia di HTML5 `pushState` e `replaceState` per garantire che un determinato frammento di modello sia preacquisito e accessibile. Notifica quindi al componente front-end registrato che il modello è stato modificato.
 
 ## Routing modello manuale e automatico {#manual-vs-automatic-model-routing}
 
@@ -39,19 +41,19 @@ Per una descrizione dettagliata, vedi la sezione [PageModelManager](blueprint.md
 
 ## Contratto ciclo {#routing-contract}
 
-L’implementazione corrente si basa sul presupposto che il progetto SPA utilizzi l’API Cronologia HTML5 per il routing alle diverse pagine dell’applicazione.
+L’implementazione corrente si basa sul presupposto che il progetto SPA utilizzi l’API della cronologia di HTML5 per il routing alle diverse pagine dell’applicazione.
 
 ### Configurazione {#configuration}
 
 `ModelRouter` supporta il concetto di routing del modello in quanto ascolta le chiamate `pushState` e `replaceState` per la preacquisizione dei frammenti del modello. Internamente, attiva `PageModelManager` per caricare il modello corrispondente a un determinato URL e genera un evento `cq-pagemodel-route-changed` a cui altri moduli possono fare da listener.
 
-Per impostazione predefinita, questo comportamento viene attivato automaticamente. Per disattivarla, l’SPA deve eseguire il rendering della seguente proprietà meta:
+Per impostazione predefinita, questo comportamento viene attivato automaticamente. Per disattivarla, l’applicazione a pagina singola deve eseguire il rendering della seguente proprietà meta:
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Ogni route dell&#39;SPA deve corrispondere a una risorsa accessibile nell&#39;AEM (ad esempio, &quot; `/content/mysite/mypage"`) poiché `PageModelManager` tenterà automaticamente di caricare il modello di pagina corrispondente una volta selezionata la route. Tuttavia, se necessario, l&#39;SPA può anche definire un &quot;elenco Bloccati&quot; di route che devono essere ignorate da `PageModelManager`:
+Ogni route dell&#39;applicazione a pagina singola deve corrispondere a una risorsa accessibile in AEM (ad esempio, &quot; `/content/mysite/mypage"`) poiché `PageModelManager` tenterà automaticamente di caricare il modello di pagina corrispondente una volta selezionata la route. Tuttavia, se necessario, l&#39;applicazione a pagina singola può anche definire un &quot;elenco Bloccati&quot; di route che devono essere ignorate da `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

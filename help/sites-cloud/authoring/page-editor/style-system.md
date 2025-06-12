@@ -5,20 +5,27 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 85%
+source-wordcount: '1338'
+ht-degree: 83%
 
 ---
 
-# Sistema di stili{#style-system}
+
+# Sistema di stili {#style-system}
 
 Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, allo scopo di renderlo più flessibile.
 
 In questo modo si elimina la necessità di sviluppare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per abilitare tale funzionalità di stile. Il risultato sono componenti riutilizzabili che possono essere adattati in modo rapido e semplice alle esigenze degli autori di contenuti, senza necessità di alcuno sviluppo back-end di AEM.
 
-## Caso d’uso  {#use-case}
+>[!NOTE]
+>
+>Il sistema di stili si applica solo alle pagine create con l’Editor pagina.
+>
+>Lo stile delle pagine create con [Universal Editor](/help/implementing/universal-editor/introduction.md) e servite con [Edge Delivery Services](/help/edge/overview.md) può essere eseguito interamente tramite il progetto GitHub.
+
+## Caso d’uso {#use-case}
 
 Gli autori di modelli devono poter configurare non solo il funzionamento dei componenti per gli autori di contenuto, ma anche diverse varianti visive alternative di un componente.
 
@@ -49,7 +56,7 @@ La procedura per l’uso del sistema di stili è simile alla seguente.
 
 1. L’autore della pagina AEM può quindi scegliere gli stili progettati nell’editor di pagine tramite il menu degli stili, nella barra degli strumenti del componente.
 
-Solo le ultime tre fasi vengono effettivamente eseguite nell&#39;AEM. Ciò significa che tutte le operazioni di sviluppo dei CSS e JavaScript necessari possono essere eseguite senza AEM.
+Solo gli ultimi tre passaggi vengono effettivamente eseguiti in AEM. Ciò significa che tutte le operazioni di sviluppo dei CSS e JavaScript necessari possono essere eseguite senza AEM.
 
 L’implementazione degli stili richiede infatti solo la distribuzione in AEM e la selezione all’interno dei componenti dei modelli desiderati.
 
