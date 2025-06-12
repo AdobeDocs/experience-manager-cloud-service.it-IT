@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets senza tag in DAM {#smart-tag-existing-assets}
 
-Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
+Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
