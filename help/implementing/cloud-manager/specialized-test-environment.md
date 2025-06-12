@@ -3,9 +3,9 @@ title: Aggiungere un ambiente di test specializzato
 description: Scopri in che modo gli ambienti di test specializzati di Cloud Manager forniscono uno spazio dedicato per convalidare le funzioni in condizioni prossime alla produzione, ideali per i test di stress e i controlli avanzati di pre-distribuzione.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Adottatore anticipato" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta privata" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>La funzione descritta in questo articolo è disponibile solo tramite il programma di adozione anticipata. Per iscriverti come utente che adotta il sistema in anticipo, consulta [Ambiente di test specializzato](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La funzione descritta in questo articolo è disponibile solo tramite il programma beta privato. Per iscriverti alla versione beta privata, consulta [Ambiente di test specializzato](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Lo Specialized Testing Environment, o DevXL, è un nuovo tipo di ambiente Cloud Manager che è possibile creare. È progettato per supportare casi d’uso avanzati, come test di accettazione utente (UAT) e convalida delle prestazioni. A differenza degli ambienti di sviluppo tradizionale, sviluppo rapido o staging, gli ambienti DevXL operano al di fuori della pipeline di implementazione di produzione. Offrono quindi maggiore flessibilità, pur mantenendo un rigoroso isolamento volto a evitare interferenze con i flussi di lavoro di produzione.
 

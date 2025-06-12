@@ -5,7 +5,7 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Puoi sospendere manualmente il programma sandbox da Console sviluppatori. L’ac
 
 1. Nella pagina **Developer Console** fare clic su **Sospendi**.
 
-<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
 ![Pulsante Sospendi](assets/hibernate-1.png)
 
@@ -108,7 +108,7 @@ Quando un utente effettua una richiesta del browser al servizio Author, Anteprim
 
 ![Pagina di destinazione del servizio sospeso](assets/de-hibernation-img5.png)
 
-## Distribuzioni e aggiornamenti AEM {#deployments-updates}
+## Distribuzioni e aggiornamenti di AEM {#deployments-updates}
 
 Negli ambienti sospesi è ancora possibile eseguire distribuzioni e aggiornamenti AEM manuali.
 

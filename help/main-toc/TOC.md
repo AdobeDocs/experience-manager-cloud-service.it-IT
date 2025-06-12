@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
+source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6239'
 ht-degree: 98%
 
 ---
@@ -1201,14 +1201,14 @@ ht-degree: 98%
          + [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente build](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md)
-      + [Ambienti di test specializzati (precoce adozione)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + [Ambienti di test specializzati (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gestire il codice {#managing-code}
          + [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Aggiungere un archivio esterno (primi utilizzatori)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gestire i token di accesso degli archivi esterni (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Aggiungere un archivio esterno (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gestire i token di accesso degli archivi esterni (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

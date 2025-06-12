@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.6.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -52,11 +52,11 @@ La prossima versione è pianificata per il venerdì 10 luglio 2025.
   Consulta [Contrassegnare i preferiti della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
-## Programma per i primi utilizzatori {#early-adoption}
+## Programma beta privato {#private-beta-program}
 
-Partecipa al programma per i primi utilizzatori di Cloud Manager per ottenere l’accesso esclusivo alle prossime funzioni prima che vengano rilasciate al pubblico.
+Partecipa al programma Beta privato di Cloud Manager per avere accesso esclusivo alle prossime funzionalità prima del rilascio generale.
 
-Le seguenti opportunità sono attualmente disponibili per i primi utilizzatori:
+Sono attualmente disponibili le seguenti opportunità beta private:
 
 
 ### Ambiente di test specializzato {#specialized-test-environment}
