@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 25%
+source-wordcount: '1782'
+ht-degree: 24%
 
 ---
 
@@ -269,7 +269,8 @@ In modalità struttura contenuto, il pannello mostra la gerarchia del contenuto 
 
 ![Modalità struttura contenuto](assets/content-tree-mode.png)
 
-Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre fino a quel contenuto e lo seleziona.
+* Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre fino a quel contenuto e lo seleziona.
+* Quando si fa doppio clic su un elemento nella struttura del contenuto, l&#39;editor scorre fino al contenuto selezionato e apre le proprietà associate in modalità [proprietà.](#properties-mode)
 
 ![Struttura contenuto](assets/content-tree.png)
 
@@ -277,7 +278,7 @@ Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre
 >
 >Usa il tasto di scelta rapida `f` per passare alla modalità struttura contenuto.
 
-##### Apri nell’editor di frammenti di contenuto {#edit}
+##### Apri in editor frammenti contenuto {#edit}
 
 Durante la modifica, le opzioni per il componente selezionato vengono visualizzate nel pannello delle proprietà, dove è possibile modificarlo. Se il componente selezionato è un frammento di contenuto, è inoltre possibile selezionare il pulsante **Apri in CF Editor**.
 
