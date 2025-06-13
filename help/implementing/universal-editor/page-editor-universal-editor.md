@@ -4,9 +4,9 @@ description: L’Editor pagina rimane supportato da Adobe, ma l’Editor univers
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 
 |  | Editor pagina | Note | Editor universale | Note |
 |---|---|---|---|---|
-| [Consegna classica di AEM](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponibile]{type=Positive} | Consigliato per l’utilizzo con i Componenti core | [!BADGE Non disponibile]{type=Negative} | Le pagine classiche di AEM in genere si basano su diverse funzioni specifiche dell’Editor pagina che sono difficili da replicare così com’è con l’Editor universale. |
+| [Pubblica consegna](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponibile]{type=Positive} | Consigliato per l’utilizzo con i Componenti core e i progetti AEM tradizionali | [!BADGE Non disponibile]{type=Negative} | Le pagine tradizionali di AEM in genere si basano su diverse funzioni specifiche dell’Editor pagina che sono difficili da replicare così com’è con l’Editor universale. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [Consegna headless](/help/headless/introduction.md) | [!BADGE Parzialmente disponibile]{type=Caution} | Solo con [l&#39;editor SPA,](/help/implementing/developing/hybrid/introduction.md) che era [obsoleto](/help/implementing/developing/hybrid/spa-editor-deprecation.md) a favore dell&#39;editor universale | [!BADGE Disponibile]{type=Positive} | L’editor universale consente agli sviluppatori di creare una propria app web senza imporre requisiti di framework o vincoli di implementazione specifici. |
 
@@ -57,7 +57,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 |---|---|---|---|---|
 | Modelli di pagina | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | L’editor universale è indipendente dal sistema di modelli utilizzato. Tuttavia, il modello di implementazione tipico favorisce i modelli definiti dagli sviluppatori, in quanto i moderni strumenti front-end consentono agli sviluppatori di definire e gestire più facilmente la logica dei modelli direttamente nel codice. |
 | Modifica WYSIWYG | [!BADGE Disponibile]{type=Positive} | Limitato alle pagine | [!BADGE Disponibile]{type=Positive} | Pagine di supporto e frammenti di contenuto |
-| [Genera varianti](/help/generative-ai/generate-variations.md) | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} | [Disponibile come estensione](/help/implementing/universal-editor/extending.md) |
+| [Generare varianti](/help/generative-ai/generate-variations.md) | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} | [Disponibile come estensione](/help/implementing/universal-editor/extending.md) |
 | Inserisci nuovo blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | Riordina blocco | [!BADGE Disponibile]{type=Positive} | Possibile con trascinamento nel contesto, ma non nel pannello laterale &quot;visualizzazione struttura&quot; | [!BADGE Disponibile]{type=Positive} | È possibile trascinarlo nella vista ad albero, ma non ancora nel contesto (operazione pianificata) |
 | Taglia/Copia-Incolla blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
@@ -67,7 +67,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 | Pubblica (anche in anteprima) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [Avvia flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione |
 | Commento | [!BADGE Disponibile]{type=Positive} | Utilizzo di [annotazioni](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Non disponibile]{type=Negative} | Pianificato |
-| Integrazione con Workfront | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione |
+| Integrazione di Workfront | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione |
 | [MSM e avvii](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile per le pagine come estensione |
 | Sperimentazione e personalizzazione | [!BADGE Disponibile]{type=Positive} | Utilizzo della [modalità di destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md) | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione per Edge Delivery Services |
 | Struttura contenuto | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Consente inoltre il riordinamento all&#39;interno della struttura |
@@ -103,6 +103,6 @@ Non esiste un percorso di migrazione diretta dall’Editor pagina all’Editor u
    * Questo interessa molte aree delle finestre di dialogo, come i widget personalizzati, la convalida dei campi, le regole mostra/nascondi e le personalizzazioni basate su modelli.
       * Anche se tali funzionalità sono ancora possibili, l’Editor universale le risolve tramite la configurazione, invece di JavaScript personalizzato distribuito nelle finestre di dialogo.
 
-Sebbene Universal Editor possa tecnicamente abilitare la modifica per le pagine AEM classiche (ad esempio create con i Componenti core), questi siti in genere si basano su diverse funzioni specifiche dell’Editor pagina, come il Sistema di stili, la Griglia reattiva, i Modelli modificabili e JavaScript personalizzato all’interno delle finestre di dialogo.
+Sebbene Universal Editor possa tecnicamente abilitare le pagine di modifica per i progetti AEM tradizionali (ad esempio generati con i Componenti core), questi siti in genere si basano su diverse funzioni specifiche dell’Editor pagina, come il Sistema di stili, la Griglia reattiva, i Modelli modificabili e JavaScript personalizzato all’interno delle finestre di dialogo.
 
 Poiché Universal Editor adotta un approccio più semplice e moderno che non supporta queste funzioni legacy, la migrazione di tali siti richiederebbe un refactoring significativo. Per questo motivo, **la migrazione dei siti Editor pagina nell&#39;Editor universale è consigliata solo per i progetti che passano a Edge Delivery Services.**
