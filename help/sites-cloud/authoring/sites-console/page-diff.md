@@ -1,14 +1,14 @@
 ---
-title: Differenze tra pagine
+title: 'Differenze tra pagine '
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 89%
+source-wordcount: '635'
+ht-degree: 85%
 
 ---
 
@@ -90,6 +90,7 @@ Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsias
 
 In alcune situazioni, il confronto delle differenze della pagina potrebbe non essere in grado di rilevare una differenza nel modo previsto.
 
+* Quando si differenziano le pagine create per l&#39;utilizzo con [Edge Delivery Services,](/help/edge/overview.md) le pagine verranno visualizzate affiancate per un confronto pratico, ma le differenze non verranno evidenziate.
 * Quando si confrontano versioni e lanci, la funzione non tiene conto dei componenti dinamici come breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per eseguire rendering del contenuto).
 * Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
 * Se una pagina viene spostata, non sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
