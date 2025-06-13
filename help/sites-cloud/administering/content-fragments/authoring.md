@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2824'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ Questo editor fornisce:
 
 >[!WARNING]
 >
->L&#39;editor descritto in questa sezione è *only* disponibile nell&#39;as a Cloud Service di *online* Adobe Experience Manager (AEM).
+>L&#39;editor descritto in questa sezione è *only* disponibile in [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); quindi *online* Adobe Experience Manager (AEM) as a Cloud Service, non un&#39;istanza locale.
 
 ## Editor frammento di contenuto {#content-fragment-editor}
 
@@ -267,7 +267,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 

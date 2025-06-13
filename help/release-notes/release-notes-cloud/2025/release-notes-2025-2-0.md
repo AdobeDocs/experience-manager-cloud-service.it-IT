@@ -4,10 +4,10 @@ description: Note sulla versione 2025.2.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 98%
+source-wordcount: '1527'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Le risorse memorizzate in programmi AEM as a Cloud Service diversi dai frammenti
 
 **Rollout dell’Editor frammento di contenuto**
 
-Continueremo ad abilitare il nuovo editor frammento di contenuto basato sull’interfaccia utente Spectrum in AEM as a Cloud Service. Dopo essere diventato predefinito per tutti gli ambienti per sviluppatori di Cloud Service a novembre 2024, verrà impostato come predefinito per tutti gli ambienti di staging il 1° aprile 2025 e per tutti gli ambienti di produzione il 1° maggio 2025. In tutti i casi, gli utenti avranno ancora la possibilità di ripristinare l’editor tradizionale frammento di contenuto nell’interfaccia touch in AEM.
+Continueremo ad abilitare il nuovo [Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md) in AEM as a Cloud Service utilizzando [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) (tramite Spectrum-UI). Dopo essere diventato predefinito per tutti gli ambienti per sviluppatori di Cloud Service a novembre 2024, verrà impostato come predefinito per tutti gli ambienti di staging il 1° aprile 2025 e per tutti gli ambienti di produzione il 1° maggio 2025. In tutti i casi, gli utenti avranno ancora la possibilità di ripristinare l’editor tradizionale frammento di contenuto nell’interfaccia touch in AEM.
 
 **API HTTP di traduzione**
 
