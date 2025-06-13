@@ -4,10 +4,10 @@ description: Note sulla versione 2024.9.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ Dai un’occhiata al video Panoramica della versione di settembre 2024 per un ri
 
 #### Gestione della traduzione {#translation-management}
 
-I flussi di lavoro di traduzione AEM e le azioni API ora attivano gli eventi per fornire informazioni approfondite sulle modifiche dello stato del processo di traduzione. Gli utenti possono iscriversi a questi eventi tramite Adobe Developer Console. Per ulteriori informazioni sull’API di gestione della traduzione AEM, consulta [qui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/).
+I flussi di lavoro di traduzione AEM e le azioni API ora attivano gli eventi per fornire informazioni approfondite sulle modifiche dello stato del processo di traduzione. Gli utenti possono iscriversi a questi eventi tramite Adobe Developer Console.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 

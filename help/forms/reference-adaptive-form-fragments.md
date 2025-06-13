@@ -9,19 +9,19 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 1%
+source-wordcount: '395'
+ht-degree: 2%
 
 ---
 
-
-# Riferimento a frammenti di moduli adattivi {#reference-adaptive-form-fragments}
+# Frammenti di moduli adattivi di riferimento {#reference-adaptive-form-fragments}
 
 Frammento modulo adattivo è un gruppo di campi o un pannello contenente un gruppo di campi che è possibile utilizzare durante la creazione di un modulo. Consente di creare un modulo in modo semplice e rapido. Puoi trascinare un frammento di modulo adattivo in un modulo utilizzando il browser Risorse nella barra laterale e modificarlo nell’editor di moduli.
 
-Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pacchetto [!DNL AEM Forms] [[!DNL AEM FORMS] FRAMMENTI DI RIFERIMENTO](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Include i seguenti frammenti:
+Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pacchetto [!DNL AEM Forms] [!DNL AEM FORMS] FRAMMENTI DI RIFERIMENTO. Include i seguenti frammenti:
 
 * Indirizzo
 * Informazioni di contatto
@@ -34,7 +34,7 @@ Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pa
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 

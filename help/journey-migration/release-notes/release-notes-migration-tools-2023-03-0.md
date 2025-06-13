@@ -4,9 +4,9 @@ description: Note sulla versione 2023.03.0 degli strumenti di migrazione in AEM 
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '297'
 ht-degree: 21%
 
 ---
@@ -38,8 +38,8 @@ La data di pubblicazione dello strumento Content Transfer v2.0.16 è il 8 marzo 
 
 ### Novità {#what-is-new-ctt}
 
-* La mappatura utente è stata semplificata e integrata nel passaggio di estrazione dei contenuti. Non è necessaria alcuna configurazione e, per impostazione predefinita, la mappatura utente viene eseguita automaticamente quando l’utente avvia l’estrazione del contenuto. L’utente ha la possibilità di disabilitare la mappatura utente, se necessario. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail).
-* Il passaggio di precopia con [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) è stato integrato con lo strumento Content Transfer per velocizzare notevolmente le estrazioni di contenuto. La precopia viene configurata e installata automaticamente quando questa versione del CTT viene installata. Per impostazione predefinita, quando viene avviata l’estrazione, la precopia viene eseguita automaticamente per set di migrazione di dimensioni superiori a 200 GB. L’utente ha la possibilità di disattivarla, se necessario. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it).
+* La mappatura utente è stata semplificata e integrata nel passaggio di estrazione dei contenuti. Non è necessaria alcuna configurazione e, per impostazione predefinita, la mappatura utente viene eseguita automaticamente quando l’utente avvia l’estrazione del contenuto. L’utente ha la possibilità di disabilitare la mappatura utente, se necessario.
+* Il passaggio di precopia con [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) è stato integrato con lo strumento Content Transfer per velocizzare notevolmente le estrazioni di contenuto. La precopia viene configurata e installata automaticamente quando questa versione del CTT viene installata. Per impostazione predefinita, quando viene avviata l’estrazione, la precopia viene eseguita automaticamente per set di migrazione di dimensioni superiori a 200 GB. L’utente ha la possibilità di disattivarla, se necessario. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html).
 * CTT può ora essere utilizzato sui server Windows.
 
 ### Correzioni di bug {#bug-fixes-ctt}

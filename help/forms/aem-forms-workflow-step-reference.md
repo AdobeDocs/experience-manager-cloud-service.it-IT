@@ -1,37 +1,37 @@
 ---
-title: Quali passaggi del flusso di lavoro sono disponibili per il Cloud Service AEM Forms per la creazione di un flusso di lavoro o per l'automazione dei processi aziendali (BPM, Business Process Automation)?
-description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare i documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
+title: Quali passaggi del flusso di lavoro sono disponibili in AEM Forms Cloud Service per la creazione di un flusso di lavoro o per l’automazione dei processi aziendali (BPM, Business Process Automation)?
+description: I flussi di lavoro incentrati su Forms consentono di creare rapidamente flussi di lavoro adattivi basati su Forms. Puoi utilizzare Adobe Sign per firmare documenti tramite e-sign, creare processi aziendali basati su moduli, recuperare e inviare dati a più origini dati e inviare notifiche e-mail
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: Utilizzare i flussi di lavoro AEM, utilizzando Assegna passaggi attività, converti in passaggi PDF/A, Genera un documento di passaggi registrati, Utilizza flussi di lavoro, Firma passaggio documento, Genera un passaggio di output stampato, Genera output PDF non interattivo
+keywords: 'Utilizza i flussi di lavoro di AEM: assegna passaggi di un’attività, converti in un passaggio PDF/A, Genera un documento del passaggio registrato, Utilizza flussi di lavoro, Firma il passaggio del documento, Genera un passaggio di output stampato, Genera un output PDF non interattivo'
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzare flussi di lavoro AEM incentrati su Forms - Riferimento alla fase per automatizzare i processi aziendali {#forms-centric-workflow-on-osgi-step-reference}
+# Utilizzare flussi di lavoro AEM incentrati su Forms: riferimento ai passaggi per automatizzare i processi aziendali {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro AEM in un modello per ottenere la logica di business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem).
+Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Passaggi incentrati su Forms {#forms-workflow-steps}
 
-I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente un flusso di lavoro adattivo basato su Forms basato su Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, interni e attraverso il firewall. È inoltre possibile utilizzare i passaggi di Forms Workflow per:
+I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specifiche per AEM Forms in un flusso di lavoro AEM. Questi passaggi consentono di creare rapidamente un flusso di lavoro adattivo basato su Forms basato su Forms su OSGi. Questi flussi di lavoro possono essere utilizzati per sviluppare flussi di lavoro di revisione e approvazione di base, interni e attraverso il firewall. Puoi anche utilizzare i passaggi di Forms Workflow per:
 
 * Crea processi aziendali, flussi di lavoro successivi all’invio e flussi di lavoro back-end per gestire i processi di iscrizione.
 
 * Crea e assegna attività a un utente o a un gruppo.
 
-* Utilizzare [!DNL Adobe Sign] in un flusso di lavoro AEM per inviare un documento per la firma.
+* Utilizza [!DNL Adobe Sign] in un flusso di lavoro AEM per inviare un documento per la firma.
 
 * Genera un documento di record su richiesta o all’invio di un modulo.
 
@@ -41,20 +41,20 @@ I passaggi del flusso di lavoro incentrati su Forms eseguono operazioni specific
 
 >[!NOTE]
 >
->Se il modello di flusso di lavoro è contrassegnato per un archivio esterno, per tutti i passaggi del Forms Workflow è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
+>Se il modello di flusso di lavoro è contrassegnato per un archivio esterno, per tutti i passaggi di Forms Workflow è possibile selezionare solo l&#39;opzione della variabile per memorizzare o recuperare file di dati e allegati.
 
 ## Assegna passaggio attività {#assign-task-step}
 
-Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un utente o a un gruppo. Oltre all’assegnazione dell’attività, il componente specifica anche il Modulo adattivo o il PDF non interattivo per l’attività. Il modulo adattivo è necessario per accettare l’input degli utenti e dei PDF non interattivi, oppure un modulo adattivo di sola lettura viene utilizzato per i flussi di lavoro di sola revisione.
+Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un utente o a un gruppo. Oltre all’assegnazione dell’attività, il componente specifica anche il Modulo adattivo o il PDF non interattivo per l’attività. Il modulo adattivo è necessario per accettare l’input degli utenti e PDF non interattivo oppure un modulo adattivo di sola lettura viene utilizzato per i flussi di lavoro di sola revisione.
 
 È inoltre possibile utilizzare il componente per controllare il comportamento dell&#39;attività. Ad esempio, la creazione di un documento di record automatico, l’assegnazione dell’attività a un utente o gruppo specifico, la specifica del percorso dei dati inviati, il percorso dei dati da precompilare e le azioni predefinite. Il passaggio Assegna attività presenta le seguenti proprietà:
 
-* **[!UICONTROL Titolo]**: titolo dell&#39;attività. Il titolo viene visualizzato nella casella in entrata AEM.
+* **[!UICONTROL Titolo]**: titolo dell&#39;attività. Il titolo viene visualizzato nella casella in entrata di AEM.
 * **[!UICONTROL Descrizione]**: spiegazione delle operazioni eseguite nell&#39;attività. Queste informazioni sono utili per altri sviluppatori di processi quando si lavora in un ambiente di sviluppo condiviso.
 
 * **[!UICONTROL Percorso miniatura]**: percorso della miniatura dell&#39;attività. Se non viene specificato alcun percorso, per un modulo adattivo viene visualizzata una miniatura predefinita e per il documento di record viene visualizzata un’icona predefinita.
-* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
-* **[!UICONTROL Priorità]**: la priorità selezionata viene visualizzata nella casella in entrata AEM. Le opzioni disponibili sono Alta, Medium e Bassa. Il valore predefinito è Medium.
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata di AEM. Potete definire questi stadi nelle proprietà del modello (Sidekick > Pagina > Proprietà pagina > Stadi).
+* **[!UICONTROL Priorità]**: la priorità selezionata viene visualizzata nella cartella Posta in arrivo di AEM. Le opzioni disponibili sono Alta, Medium e Bassa. Il valore predefinito è Medium.
 * **[!UICONTROL Data di scadenza]**: specificare il numero di giorni o di ore dopo le quali l&#39;attività viene contrassegnata come scaduta. Se selezioni **[!UICONTROL Disattivato]**, l&#39;attività non verrà mai contrassegnata come scaduta. È inoltre possibile specificare un gestore di timeout per eseguire attività specifiche dopo la scadenza dell&#39;attività.
 
 * **[!UICONTROL Giorni]**: il numero di giorni prima dei quali l&#39;attività deve essere completata. Il numero di giorni viene conteggiato dopo l&#39;assegnazione dell&#39;attività a un utente. Se un’attività non è completa e supera il numero di giorni specificato nel campo Giorni, se è selezionata viene attivato un gestore di timeout dopo la data di scadenza.
@@ -62,7 +62,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Timeout dopo la data di scadenza]**: selezionare questa opzione per abilitare il campo di selezione del gestore di timeout.
 * **[!UICONTROL Gestore timeout]**: selezionare lo script da eseguire quando il passaggio dell&#39;attività di assegnazione supera la data di scadenza. Gli script inseriti nell&#39;archivio CRX in [apps]/fd/dashboard/scripts/timeoutHandler sono disponibili per la selezione. Il percorso specificato non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo.
 * **[!UICONTROL Evidenzia l&#39;azione e il commento dall&#39;ultima attività in Dettagli attività]**: selezionare questa opzione per visualizzare l&#39;ultima azione eseguita e il commento ricevuto nella sezione dei dettagli dell&#39;attività di un&#39;attività.
-* **[!UICONTROL Tipo]**: scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. Puoi scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento PDF non interattivo.
+* **[!UICONTROL Tipo]**: scegliere il tipo di documento da compilare all&#39;avvio del flusso di lavoro. Puoi scegliere un modulo adattivo, un modulo adattivo di sola lettura, un documento non interattivo di PDF.
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,11 +81,11 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 -->
 
 * **[!UICONTROL Percorso modulo adattivo]**: specifica il percorso del modulo adattivo. Puoi utilizzare il modulo adattivo inviato al flusso di lavoro, disponibile in un percorso assoluto, oppure recuperare il modulo adattivo da un percorso memorizzato in una variabile di tipo stringa di dati.
-* **[!UICONTROL Seleziona PDF di input tramite]**: specifica il percorso di un documento di PDF non interattivo. Il campo è disponibile quando si sceglie un documento PDF non interattivo nel campo Tipo. È possibile selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto oppure utilizzando una variabile di tipo dati Documento. Ad esempio, [Directory_Payload]/Workflow/PDF/credit-card.pdf. Il percorso non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l’opzione Percorso PDF, è necessario abilitare l’opzione Documento di record o Adaptive Forms basato su modello di modulo.
+* **[!UICONTROL Seleziona PDF di input tramite]**: specifica il percorso di un documento PDF non interattivo. Il campo è disponibile quando si sceglie un documento non interattivo di PDF nel campo Tipo. Puoi selezionare il PDF di input utilizzando il percorso relativo al payload, salvato in un percorso assoluto oppure utilizzando una variabile di tipo dati Documento. Ad esempio, [Directory_Payload]/Workflow/PDF/credit-card.pdf. Il percorso non esiste in crx-repository. Un amministratore crea il percorso prima di utilizzarlo. Per utilizzare l’opzione Percorso PDF è necessario che sia abilitata l’opzione Documento di record o che sia abilitato l’opzione Adaptive Forms basato su modello di modulo.
 * **[!UICONTROL Per l&#39;attività completata, esegui il rendering del modulo adattivo come]**: quando un&#39;attività è contrassegnata come completata, puoi eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o documento PDF. Per eseguire il rendering del modulo adattivo come documento record, è necessario abilitare l’opzione Documento di record o un Forms adattivo basato su modello di modulo.
 * **[!UICONTROL Precompilati]**: i seguenti campi elencati di seguito fungono da input per l&#39;attività:
 
-   * **[!UICONTROL Selezionare il file di dati di input utilizzando]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo (FDM)). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Ad esempio, il file contiene i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Il percorso di esempio è [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Selezionare il file di dati di input utilizzando]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo (FDM)). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Il file contiene ad esempio i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Il percorso di esempio è [Payload_Directory]/workflow/data.
    * **[!UICONTROL Seleziona allegati di input tramite]**: gli allegati disponibili nel percorso sono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare l’allegato memorizzato in una variabile di un documento. Il percorso di esempio è [Payload_Directory]/allegati/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
   <!-- 
@@ -121,7 +121,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
     -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Partecipante dinamico Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Partecipanti]**: il campo è disponibile quando l&#39;opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo **[!UICONTROL Selettore partecipanti]**. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -137,24 +137,24 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 * **[!UICONTROL Indirizzo e-mail destinatario]**: è possibile memorizzare un indirizzo e-mail in una variabile, utilizzare un valore letterale per specificare un indirizzo e-mail permanente o utilizzare l&#39;indirizzo e-mail predefinito dell&#39;assegnatario specificato nel profilo dell&#39;assegnatario. Puoi utilizzare il letterale o una variabile per specificare l’indirizzo e-mail di un gruppo. L’opzione della variabile è utile per recuperare e utilizzare in modo dinamico un indirizzo e-mail. L&#39;opzione **[!UICONTROL Usa indirizzo e-mail predefinito dell&#39;assegnatario]** è riservata a un solo assegnatario. In questo caso, viene utilizzato l’indirizzo e-mail memorizzato nel profilo utente degli assegnatari.
 
 * **[!UICONTROL Modello e-mail HTML]**: selezionare il modello e-mail per l&#39;e-mail di notifica. Per modificare un modello, modifica il file che si trova in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
-* **[!UICONTROL Consenti delega a]**: la Posta in arrivo AEM fornisce un&#39;opzione all&#39;utente connesso per delegare il flusso di lavoro assegnato a un altro utente. Puoi delegare all’interno dello stesso gruppo o all’utente del flusso di lavoro di un altro gruppo. Se l&#39;attività è assegnata a un singolo utente e l&#39;opzione **[!UICONTROL consenti delega ai membri del gruppo assegnatario]** è selezionata, non è possibile delegare l&#39;attività a un altro utente o gruppo.
-* **[!UICONTROL Impostazioni condivisione]**: la casella in entrata AEM fornisce le opzioni per condividere una o tutte le attività della casella in entrata con un altro utente:
-   * Quando l&#39;opzione **[!UICONTROL Consenti all&#39;assegnatario di condividere in modo esplicito la cartella Posta in arrivo]** è selezionata, l&#39;utente può selezionare l&#39;attività nella cartella Posta in arrivo AEM e condividerla con un altro utente AEM.
+* **[!UICONTROL Consenti delega a]**: la Casella in entrata di AEM fornisce un&#39;opzione all&#39;utente connesso per delegare il flusso di lavoro assegnato a un altro utente. Puoi delegare all’interno dello stesso gruppo o all’utente del flusso di lavoro di un altro gruppo. Se l&#39;attività è assegnata a un singolo utente e l&#39;opzione **[!UICONTROL consenti delega ai membri del gruppo assegnatario]** è selezionata, non è possibile delegare l&#39;attività a un altro utente o gruppo.
+* **[!UICONTROL Impostazioni condivisione]**: la casella in entrata di AEM fornisce le opzioni per condividere una o tutte le attività della casella in entrata con un altro utente:
+   * Quando l&#39;opzione **[!UICONTROL Consenti all&#39;assegnatario di condividere in modo esplicito la cartella Posta in arrivo]** è selezionata, l&#39;utente può selezionare l&#39;attività nella cartella Posta in arrivo di AEM e condividerla con un altro utente di AEM.
    * Quando l&#39;opzione **[!UICONTROL Consenti all&#39;assegnatario di condividere tramite la condivisione della casella in entrata]** è selezionata e gli utenti condividono i propri elementi della casella in entrata o consentono ad altri utenti di accedere ai propri elementi della casella in entrata, solo le attività con l&#39;opzione precedentemente indicata abilitata vengono condivise con altri utenti.
    * Quando è selezionato **[!UICONTROL Consenti all&#39;assegnatario di delegare utilizzando le impostazioni &#39;Fuori sede&#39;]**. L’assegnatario può abilitare l’opzione per delegare l’attività ad altri utenti insieme ad altre opzioni Fuori sede. Tutte le nuove attività assegnate all&#39;utente fuori sede vengono automaticamente delegate (assegnate) agli utenti indicati nelle impostazioni fuori sede.
 
   Consente ad altri utenti di scegliere le attività assegnate mentre è fuori sede e non può lavorare sulle attività assegnate.
 
 * **[!UICONTROL Azioni]** > **[!UICONTROL Azioni predefinite]**: sono disponibili le azioni Invia, Salva e Reimposta. Per impostazione predefinita, sono attivate tutte le azioni predefinite.
-* **[!UICONTROL Variabile route]**: nome della variabile route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente nella casella in entrata AEM.
-* **[!UICONTROL Route]**: un&#39;attività può diramarsi in route diverse. Se selezionata nella casella in entrata AEM, la route restituisce un valore e i rami del flusso di lavoro si basano sulla route selezionata. È possibile archiviare le route in una variabile di matrice di tipi di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere le route manualmente.
+* **[!UICONTROL Variabile route]**: nome della variabile route. La variabile di route acquisisce le azioni personalizzate selezionate dall&#39;utente nella casella in entrata di AEM.
+* **[!UICONTROL Route]**: un&#39;attività può diramarsi in route diverse. Quando è selezionata nella casella in entrata di AEM, la route restituisce un valore e i rami del flusso di lavoro si basano sulla route selezionata. È possibile archiviare le route in una variabile di matrice di tipi di dati String oppure selezionare **[!UICONTROL Letterale]** per aggiungere le route manualmente.
 
-* **[!UICONTROL Titolo route]**: specificare il titolo della route. Viene visualizzato nella casella in entrata AEM.
-* **[!UICONTROL Icona rosso corallo]**: specificare un attributo HTML di un&#39;icona rosso corallo. La libreria Adobe CorelUI fornisce un vasto set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il ciclo di lavorazione. Viene visualizzato insieme al titolo nella casella in entrata AEM. Se memorizzi le route in una variabile, le route utilizzano un&#39;icona di corallo &quot;Tag&quot; predefinita.
-* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere commenti]**: selezionare questa opzione per abilitare i commenti per l&#39;attività. L’assegnatario può aggiungere i commenti dalla casella in entrata AEM al momento dell’invio dell’attività.
+* **[!UICONTROL Titolo route]**: specificare il titolo della route. Viene visualizzata nella casella in entrata di AEM.
+* **[!UICONTROL Icona rosso corallo]**: specificare un attributo HTML di un&#39;icona rosso corallo. La libreria CorelUI di Adobe fornisce un ampio set di icone touch-first. È possibile scegliere e utilizzare un&#39;icona per il ciclo di lavorazione. Viene visualizzato insieme al titolo nella Casella in entrata AEM. Se memorizzi le route in una variabile, le route utilizzano un&#39;icona di corallo &quot;Tag&quot; predefinita.
+* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere commenti]**: selezionare questa opzione per abilitare i commenti per l&#39;attività. L’assegnatario può aggiungere i commenti dalla casella in entrata di AEM al momento dell’invio dell’attività.
 * **[!UICONTROL Salva commento nella variabile]**: salva il commento in una variabile di tipo dati String. Questa opzione viene visualizzata solo se si seleziona la casella di controllo **[!UICONTROL Consenti all&#39;assegnatario di aggiungere commenti]**.
 
-* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività]**: selezionare questa opzione per abilitare gli allegati per l&#39;attività. L’assegnatario può aggiungere gli allegati dalla casella in entrata AEM al momento dell’invio dell’attività. È inoltre possibile limitare la dimensione massima **[!UICONTROL (Dimensione massima file)]** di un allegato. La dimensione predefinita è 2 MB.
+* **[!UICONTROL Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività]**: selezionare questa opzione per abilitare gli allegati per l&#39;attività. L’assegnatario può aggiungere gli allegati dalla casella in entrata di AEM al momento dell’invio dell’attività. È inoltre possibile limitare la dimensione massima **[!UICONTROL (Dimensione massima file)]** di un allegato. La dimensione predefinita è 2 MB.
 
 * **[!UICONTROL Salva allegati attività di output tramite]**: specificare il percorso della cartella degli allegati. È possibile salvare gli allegati delle attività di output utilizzando un percorso relativo al payload o in una variabile di un array di tipi di dati del documento. Questa opzione viene visualizzata solo se si seleziona la casella di controllo **[!UICONTROL Consenti all&#39;assegnatario di aggiungere allegati all&#39;attività]** e si seleziona **[!UICONTROL Modulo adattivo]**, **[!UICONTROL Modulo adattivo di sola lettura]** o **[!UICONTROL Documento PDF non interattivo]** dall&#39;elenco a discesa **[!UICONTROL Tipo]** nella scheda **[!UICONTROL Modulo/Documento]**.
 
@@ -166,18 +166,18 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
 
 >[!NOTE]
 >
->Le opzioni per salvare il passaggio Assegna attività come bozza e per recuperare la cronologia del passaggio Assegna attività sono disabilitate quando si configura un modello di flusso di lavoro AEM per l’archiviazione di dati esterni. Inoltre, nella casella in entrata, l’opzione di salvataggio è disabilitata.
+>Le opzioni per salvare il passaggio Assegna attività come bozza e per recuperare la cronologia del passaggio Assegna attività sono disabilitate quando configuri un modello di flusso di lavoro AEM per l’archiviazione di dati esterni. Inoltre, nella casella in entrata, l’opzione di salvataggio è disabilitata.
 
 ## Passaggio Converti in PDF/A {#convert-pdfa}
 
-PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Puoi usare il passaggio ***Converti in PDF/A*** in un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
+PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, incorporando i font e decomprimendo il file. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. È possibile utilizzare il passaggio ***Converti in PDF/A*** in un flusso di lavoro AEM per convertire i documenti PDF in formato PDF/A.
 
 Il passaggio Converti in PDF/A ha le seguenti proprietà:
 
 **[!UICONTROL Documento di input]**: il documento di input può essere relativo al payload, avere un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo dati Documento.
 
 **[!UICONTROL Opzioni di conversione]**: utilizzando questa proprietà, vengono specificate le impostazioni per la conversione di documenti PDF in documenti PDF/A. Le opzioni disponibili in questa scheda sono:
-* **[!UICONTROL Conformità]**: specifica lo standard a cui il documento di PDF/A di output deve conformarsi. Supporta diversi standard PDF come PDF/A-1b, PDF/A-2b o PDF/A-3b.
+* **[!UICONTROL Conformità]**: specifica lo standard a cui deve conformarsi il documento PDF/A di output. Supporta diversi standard PDF come PDF/A-1b, PDF/A-2b o PDF/A-3b.
 * **[!UICONTROL Livello risultati]**: specifica il livello dei risultati come PassFail, Summary o Detailed per l&#39;output di conversione.
 * **[!UICONTROL Spazio colore]**: specifica lo spazio colore predefinito come S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, che può essere utilizzato per i file PDF/A di output.
 * **[!UICONTROL Contenuto facoltativo]**: consenti la visualizzazione di specifici oggetti grafici e/o annotazioni nel documento PDF/A di output solo quando viene soddisfatto un insieme di criteri specificato.
@@ -187,9 +187,9 @@ Il passaggio Converti in PDF/A ha le seguenti proprietà:
 
 ## Passaggio Invia e-mail {#send-email-step}
 
-Utilizzare il passaggio e-mail per inviare un messaggio e-mail, ad esempio un messaggio e-mail con un documento Record, un collegamento di un modulo adattivo <!-- , link of an interactive communication--> o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello di e-mail HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
+Utilizzare il passaggio e-mail per inviare un messaggio e-mail, ad esempio un messaggio e-mail con un documento Record, un collegamento di un modulo adattivo <!-- , link of an interactive communication--> o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
 
 Il passaggio e-mail presenta le seguenti proprietà:
 
@@ -229,7 +229,7 @@ Selezionare l&#39;opzione **[!UICONTROL Variabile]** per recuperare l&#39;allega
 
 ## Passaggio Genera documento di record {#generate-document-of-record-step}
 
-Quando un modulo viene compilato o inviato, è possibile conservarne una registrazione, in formato cartaceo o in formato documento. Questo record è denominato documento record (DoR). È possibile utilizzare il passaggio Genera documento di record per creare una versione PDF interattiva o di sola lettura di un modulo adattivo. La versione PDF contiene informazioni inserite nel modulo insieme al layout del modulo adattivo.
+Quando un modulo viene compilato o inviato, è possibile conservarne una registrazione, in formato cartaceo o in formato documento. Questo record è denominato documento record (DoR). È possibile utilizzare il passaggio Genera documento di record per creare una versione di PDF di sola lettura o interattiva di un modulo adattivo. La versione PDF contiene informazioni inserite nel modulo insieme al layout del modulo adattivo.
 
 Il passaggio Documento record presenta le seguenti proprietà:
 
@@ -390,14 +390,14 @@ Il passaggio Firma documento presenta le seguenti proprietà:
 
 * **[!UICONTROL Impostazioni locali]**: specificare la lingua per le opzioni di posta elettronica e verifica. È possibile archiviare le impostazioni locali in una variabile di tipo di dati String oppure selezionare **[!UICONTROL Letterale]** per scegliere le impostazioni locali dall&#39;elenco delle opzioni disponibili. È necessario definire il codice delle impostazioni locali durante la memorizzazione del valore relativo in una variabile. Ad esempio, specifica **[!UICONTROL en_US]** per l&#39;inglese e **[!UICONTROL fr_FR]** per il francese.
 
-* **[!UICONTROL Configurazione cloud Adobe Sign]**: scegli una configurazione cloud [!DNL Adobe Sign]. Se non hai configurato [!DNL Adobe Sign] per [!DNL AEM Forms], vedi [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* **[!UICONTROL Configurazione Adobe Sign Cloud]**: scegli una configurazione cloud [!DNL Adobe Sign]. Se non hai configurato [!DNL Adobe Sign] per [!DNL AEM Forms], consulta [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
 * **[!UICONTROL Selezionare il documento da firmare utilizzando]**: è possibile scegliere un documento da una posizione relativa al payload, utilizzare il payload come documento, specificare un percorso assoluto del documento o recuperare il documento archiviato in una variabile di tipo dati Documento.
 * **[!UICONTROL Giorni fino alla scadenza]**: un documento è contrassegnato come scadenza (scadenza passata) dopo che non è presente alcuna attività per il numero di giorni specificato nel campo **[!UICONTROL Giorni fino alla scadenza]**. Il numero di giorni viene conteggiato dopo che la documentazione è stata assegnata a un utente per la firma.
 * **[!UICONTROL Frequenza e-mail promemoria]**: è possibile inviare un messaggio e-mail di promemoria a intervalli giornalieri o settimanali. La settimana viene conteggiata dal giorno in cui la documentazione viene assegnata a un utente per la firma.
 * **[!UICONTROL Processo di firma]**: è possibile scegliere di firmare un documento in ordine sequenziale o parallelo. In ordine sequenziale, un firmatario riceve il documento alla volta per la firma. Dopo che il primo firmatario ha completato la firma del documento, questo viene inviato al secondo firmatario e così via. In ordine parallelo, più firmatari possono firmare un documento alla volta.
 * **[!UICONTROL URL di reindirizzamento]**: specificare un URL di reindirizzamento. Dopo aver firmato il documento, puoi reindirizzare l’assegnatario a un URL. Di solito, questo URL contiene un messaggio di ringraziamento o ulteriori istruzioni.
-* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata AEM. Puoi definire questi stadi nelle proprietà del modello ( **[!UICONTROL Sidekick]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Stadi]**).
+* **[!UICONTROL Fase flusso di lavoro]**: un flusso di lavoro può avere più fasi. Questi stadi vengono visualizzati nella casella in entrata di AEM. Puoi definire questi stadi nelle proprietà del modello ( **[!UICONTROL Sidekick]** > **[!UICONTROL Pagina]** > **[!UICONTROL Proprietà pagina]** > **[!UICONTROL Stadi]**).
 * **[!UICONTROL Seleziona destinatari]**: specificare il metodo di selezione dei destinatari del documento. Puoi assegnare dinamicamente il flusso di lavoro a un utente o a un gruppo oppure aggiungere manualmente i dettagli di un destinatario. Quando selezioni Manualmente nell’elenco a discesa, aggiungi i dettagli del destinatario come E-mail, Ruolo e Metodo di autenticazione.
 
   >[!NOTE]
@@ -566,9 +566,9 @@ Digita il codice locale nella casella letterale o seleziona una variabile string
    * **[!UICONTROL Edge corto fronte-retro]**: utilizzare la stampa fronte-retro e la stampa utilizzando la paginazione lato-corto.
    * **[!UICONTROL Simplex]**: utilizzare la stampa fronte/retro.
 
-## Genera passaggio di output PDF non interattivo   {#generatePDFdocuments}
+## Passaggio Genera output PDF non interattivo   {#generatePDFdocuments}
 
-1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow in Sidekick.
+1. Trascina il flusso di lavoro Genera output PDF non interattivo nella scheda Forms Workflow di Sidekick.
 1. Fai doppio clic sul passaggio del flusso di lavoro aggiunto per modificare il componente.
 1. Nella finestra di dialogo Modifica componente configurare documenti di input, documenti di output e parametri aggiuntivi e fare clic su **[!UICONTROL OK]**.
 

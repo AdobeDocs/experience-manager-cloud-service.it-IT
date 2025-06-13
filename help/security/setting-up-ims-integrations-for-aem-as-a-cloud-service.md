@@ -4,10 +4,10 @@ description: Scopri come configurare le integrazioni IMS per AEM as a Cloud Serv
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Per informazioni dettagliate su come eseguire questa operazione, consulta la doc
 
 * Creazione di nuove credenziali OAuth:
 
-   * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrazione di una credenziale JWT esistente a una credenziale OAuth:
 
@@ -67,7 +67,7 @@ Per creare una nuova integrazione Adobe IMS utilizzando OAuth:
 
 1. Seleziona **Crea**.
 
-1. Completa la configurazione in base ai dettagli di [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Ad esempio:
+1. Completa la configurazione in base ai dettagli di [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). Ad esempio:
 
    ![Crea configurazione OAuth](assets/ims-create-oauth-configuration.png)
 

@@ -4,7 +4,7 @@ description: Scopri come utilizzare AEM Developer Tools per Eclipse, un plug-in 
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -13,18 +13,18 @@ ht-degree: 2%
 
 # Strumenti AEM Developer per Eclipse{#aem-developer-tools-for-eclipse}
 
-![Strumenti per sviluppatori Experienci Manager per il logo Eclipse](assets/eclipse-logo.png)
+![Logo Strumenti per sviluppatori Experience Manager per Eclipse](assets/eclipse-logo.png)
 
 ## Panoramica {#overview}
 
 _Experience Manager Developer Tools per Eclipse_ è un plug-in Eclipse basato sul [plug-in Eclipse per Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) rilasciato con la licenza Apache 2.
 
-Offre diverse funzioni che facilitano lo sviluppo dell’AEM:
+Offre diverse funzioni che facilitano lo sviluppo di AEM:
 
-* Integrazione perfetta con le istanze AEM tramite il connettore server Eclipse
+* Integrazione perfetta con le istanze di AEM tramite il connettore server Eclipse
 * Sincronizzazione per i bundle OSGi e per i contenuti
 * Supporto del debug con funzionalità di hot-swapping del codice
-* Bootstrap semplice di progetti AEM tramite una procedura guidata specifica per la creazione di progetti
+* Creazione guidata progetto: semplice Bootstrap di progetti AEM
 * Facile modifica delle proprietà JCR
 
 ## Requisiti {#requirements}
@@ -32,17 +32,17 @@ Offre diverse funzioni che facilitano lo sviluppo dell’AEM:
 Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 * Scarica e installa [Eclipse IDE per sviluppatori Java™ Enterprise](https://www.eclipse.org/downloads/packages/).
-* Configura l&#39;installazione di eclipse per assicurarti di disporre di almeno 1 GB di memoria heap modificando il file di configurazione `eclipse.ini` come descritto nelle [Domande frequenti su Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Configurare l&#39;installazione di eclipse per assicurarsi di disporre di almeno 1 GB di memoria heap modificando il file di configurazione `eclipse.ini` come descritto nelle [Domande frequenti su Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
 >In macOS, è necessario fare clic con il pulsante destro del mouse su **Eclipse.app**, quindi selezionare **Mostra contenuto pacchetto** per trovare `eclipse.ini`**.**
 
-## Come installare gli strumenti per sviluppatori AEM per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Installare AEM Developer Tools per Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare il plug-in come segue:
 
-1. Apri il [sito Web degli strumenti per sviluppatori AEM](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Apri il [sito Web AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copia il **collegamento di installazione**.
 
@@ -60,26 +60,26 @@ Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare
 1. Accettare i contratti di licenza e fare clic su **Fine**.
 1. Fare clic su **RiavviaOra** per riavviare Eclipse.
 
-## La prospettiva dell&#39;AEM {#the-aem-perspective}
+## La prospettiva di AEM {#the-aem-perspective}
 
 In Eclipse, una prospettiva determina le azioni e le viste disponibili all’interno di una finestra e consente un’interazione orientata alle attività con le risorse in Eclipse. Per ulteriori dettagli su Prospettiva, consulta la [documentazione di Eclipse](https://help.eclipse.org/latest/index.jsp).
 
-_Gli strumenti di sviluppo Experience Manager per Eclipse_ forniscono una prospettiva AEM che offre il controllo completo sui progetti e sulle istanze AEM. Per aprire la prospettiva AEM:
+_Gli strumenti di sviluppo Experience Manager per Eclipse_ forniscono una prospettiva AEM che ti offre il controllo completo sui tuoi progetti e istanze AEM. Per aprire la prospettiva di AEM:
 
 1. Dalla barra dei menu Eclipse, seleziona **Finestra** > **Prospettiva** > **Apri prospettiva** > **Altro**.
 1. Seleziona **AEM** nella finestra di dialogo e fai clic su **Apri**.
 
-![La prospettiva dell&#39;AEM in Eclipse](assets/eclipse-aem-perspective.png)
+![La prospettiva di AEM in Eclipse](assets/eclipse-aem-perspective.png)
 
 ## Esempio di progetto con più moduli {#sample-multi-module-project}
 
-Il _Experience Manager Developer Tools per Eclipse_ viene fornito con un progetto di esempio, con più moduli, che consente di imparare rapidamente a utilizzare la configurazione di un progetto in Eclipse. Funge anche da guida alle best practice per diverse funzioni dell’AEM. [Ulteriori informazioni su Archetipo progetto](https://github.com/adobe/aem-project-archetype).
+Il _Experience Manager Developer Tools per Eclipse_ viene fornito con un esempio di progetto con più moduli che consente di iniziare rapidamente a utilizzare la configurazione di un progetto in Eclipse. Funge anche da guida alle best practice per diverse funzioni di AEM. [Ulteriori informazioni su Archetipo progetto](https://github.com/adobe/aem-project-archetype).
 
 Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
-1. Nel menu **File** > **Nuovo** > **Progetto**, individua la sezione **AEM** e seleziona **Progetto con più moduli AEM di esempio**.
+1. Nel menu **File** > **Nuovo** > **Progetto**, individua la sezione **AEM** e seleziona **Progetto con più moduli di esempio AEM**.
 
-   ![Esempio di progetto con più moduli AEM](assets/aem-sample-project.png)
+   ![Progetto con più moduli di esempio AEM](assets/aem-sample-project.png)
 
 1. Fai clic su **Avanti**.
 
@@ -106,13 +106,13 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
 
 1. Quindi configura un server AEM a cui si connette Eclipse.
 
-   Per utilizzare la funzione di debugger, è necessario aver avviato AEM in modalità di debug, ottenibile aggiungendo quanto segue alla riga di comando:
+   Per utilizzare la funzione di debugger, è necessario avviare AEM in modalità di debug, ottenibile aggiungendo quanto segue alla riga di comando:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
    ```
 
-   ![Connessione al server AEM](assets/connect-server.png)
+   ![Connetti al server AEM](assets/connect-server.png)
 
 1. Fare clic su **Fine**. Viene creata la struttura del progetto.
 
@@ -189,10 +189,10 @@ Per creare il progetto di esempio, segui la procedura riportata di seguito.
         </workspaceFilter>
         ```
 
-1. Assicurati di salvare tutte le modifiche. Ora puoi sincronizzare il nuovo contenuto con l’istanza AEM.
+1. Assicurati di salvare tutte le modifiche. Ora puoi sincronizzare il nuovo contenuto con l’istanza di AEM.
 
 1. Nel pannello Server, accertatevi che la connessione sia avviata e, in caso contrario, avviatela.
-1. Fare clic sull&#39;icona **Pulisci e Publish**.
+1. Fai clic sull&#39;icona **Pulisci e pubblica**.
 
 Al termine, il pacchetto dovrebbe essere in esecuzione sull’istanza e, al momento del salvataggio, qualsiasi modifica viene sincronizzata automaticamente con l’istanza.
 
@@ -218,7 +218,7 @@ Eclipse scarica le dipendenze richieste. L&#39;operazione potrebbe richiedere al
 
 Il sito web ufficiale Apache Sling IDE tooling per Eclipse fornisce informazioni utili:
 
-* La [**Guida utente di Apache Sling IDE tooling per Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guida attraverso i concetti generali, l&#39;integrazione del server e le funzionalità di distribuzione supportate dagli strumenti di sviluppo AEM.
+* La [**Guida utente di Apache Sling IDE tooling per Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html), questa documentazione ti guida attraverso i concetti generali, l&#39;integrazione del server e le funzionalità di distribuzione supportate dagli strumenti di sviluppo di AEM.
 * La [sezione Risoluzione dei problemi](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * [Elenco dei problemi noti](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

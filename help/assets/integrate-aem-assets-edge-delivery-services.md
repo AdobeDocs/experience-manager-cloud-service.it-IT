@@ -3,7 +3,7 @@ title: Integra [!DNL AEM Assets] durante l'authoring del contenuto per [!DNL Edg
 description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] con [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] con [!DNL Universal Editor], integrate [!DNL Dynamic Media] con [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Universal Editor] e integrare [!DNL Dynamic Media with OpenAPI capabilities] con [!DNL Microsoft Word] e [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
@@ -113,7 +113,7 @@ Guarda questo video per scoprire come distribuire le risorse nel contenuto utili
 
 ## Sito [!DNL Edge Delivery Services] di esempio{#dynamic-media-with-google-docs-and-ms-word}
 
-Vedi [WKND Travel](http://bit.ly/3DExLnf), un sito creato utilizzando le funzionalità di authoring basato su documenti di [!DNL Edge Delivery Services]. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) e [!DNL Dynamic Media with OpenAPI capabilities] è utilizzato per distribuire le risorse nel contenuto. Dopo l’authoring, il contenuto viene pubblicato direttamente dal documento. Esplora questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) per informazioni su tutti i file, le cartelle, le configurazioni, lo stile e i codici di funzionalità essenziali del sito Web utilizzati per creare l&#39;impostazione di authoring basato su documenti per questo sito [!DNL Edge Delivery Services (EDS)].
+Vedi [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), un sito creato utilizzando le funzionalità di authoring basato su documenti di [!DNL Edge Delivery Services]. Il contenuto del sito è stato creato in [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) e [!DNL Dynamic Media with OpenAPI capabilities] è utilizzato per distribuire le risorse nel contenuto. Dopo l’authoring, il contenuto viene pubblicato direttamente dal documento. Esplora questo [archivio Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) per informazioni su tutti i file, le cartelle, le configurazioni, lo stile e i codici di funzionalità essenziali del sito Web utilizzati per creare l&#39;impostazione di authoring basato su documenti per questo sito [!DNL Edge Delivery Services (EDS)].
 
 ## Integrazione di [!DNL AEM Assets] con flussi di authoring basati su [!DNL Universal Editor] per [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 

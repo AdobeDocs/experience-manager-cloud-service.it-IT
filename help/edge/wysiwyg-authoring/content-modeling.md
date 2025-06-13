@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '2160'
 ht-degree: 100%
 
 ---
@@ -645,8 +645,3 @@ Ora che sai come modellare i contenuti, con il progetto di authoring WYSIWYG puo
 Consulta il documento [Creazione di blocchi abilitati all’utilizzo con l’editor universale](/help/edge/wysiwyg-authoring/create-block.md) per scoprire come creare blocchi abilitati all’utilizzo con l’editor universale nell’authoring WYSIWYG con progetti Edge Delivery Services.
 
 Se hai già familiarità con la creazione di blocchi, consulta il documento [Guida introduttiva per gli sviluppatori per l’authoring WYSIWYG con Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) per iniziare a utilizzare un nuovo sito Adobe Experience Manager con Edge Delivery Services e l’editor universale per l’authoring dei contenuti.
-
->[!TIP]
->
->Per una guida completa sulla creazione di un nuovo progetto Edge Delivery Services abilitato per l’authoring WYSIWYG con AEM as a Cloud Service come origine dei contenuti, guarda [questo webinar della serie AEM GEMs](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-
