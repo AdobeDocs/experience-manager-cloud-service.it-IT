@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 98%
 
 ---
@@ -1074,6 +1074,7 @@ ht-degree: 98%
          + [Componenti per moduli personalizzati - Guida all’editor universale per sviluppatori](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Integrazione del modello dati modulo: integrazione di moduli con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Segmenti riutilizzabili, modulari e autonomi: creazione e utilizzo di frammenti di modulo nei moduli](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Risoluzione dei problemi relativi a 403 errori non consentiti nell&#39;invio di Edge Delivery Services Form](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare moduli utilizzando Fogli Google o Excel - Guida dettagliata](/help/edge/docs/forms/create-forms.md)

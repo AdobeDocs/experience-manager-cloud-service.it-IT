@@ -1,9 +1,9 @@
 ---
 title: Risoluzione dei problemi relativi a errori non consentiti 403 nell’invio di Edge Delivery Services Form
 description: Scopri come diagnosticare e risolvere gli errori 403 Forbidden durante l’invio di moduli da Edge Delivery Services a AEM Publish. Questa guida descrive le cause più comuni, tra cui CORS, regole di Dispatcher e problemi relativi al filtro Referrer.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%
