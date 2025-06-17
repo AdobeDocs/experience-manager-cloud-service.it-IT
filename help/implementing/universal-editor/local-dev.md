@@ -4,7 +4,7 @@ description: Scopri come eseguire il servizio Universal Editor per lo sviluppo l
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -95,21 +95,21 @@ La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 | Valore | Facoltativo | Predefiniti | Descrizione |
 |---|---|---|---|
 | `UES_PORT` | Sì | `8080` | Porta su cui viene eseguito il server |
-| `UES_PRIVATE_KEY` | Sì | Nessuno | Percorso della chiave privata per il server HTTPS |
-| `UES_CERT` | Sì | Nessuno | Percorso del file di certificazione per il server HTTPS |
+| `UES_PRIVATE_KEY` | Sì | Nessuna | Percorso della chiave privata per il server HTTPS |
+| `UES_CERT` | Sì | Nessuna | Percorso del file di certificazione per il server HTTPS |
 | `UES_TLS_REJECT_UNAUTHORIZED` | Sì | `true` | Rifiuta connessioni TLS non autorizzate |
 | `UES_DISABLE_IMS_VALIDATION` | Sì | `false` | Disattiva convalida IMS |
 | `UES_ENDPOINT_MAPPING` | Sì | Vuoto | Mappatura degli endpoint per le riscritture interne<br>Esempio: `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>Risultato: il servizio Editor universale si connetterà a `http://10.0.0.1:4502` invece della connessione specificata `https://your-public-facing-author-domain.net` |
 | `UES_LOG_LEVEL` | Sì | `info` | Livello di registro per il server. I valori possibili sono `silly`, `trace`, `debug`, `verbose`, `info`, `log`, `warn`, `error` e `fatal` |
-| `UES_SPLUNK_HEC_URL` | Sì | Nessuno | URL HEC per endpoint Splunk |
-| `UES_SPLUNK_TOKEN` | Sì | Nessuno | Token Splunk |
-| `UES_SPLUNK_INDEX` | Sì | Nessuno | Indice in cui scrivere i registri |
+| `UES_SPLUNK_HEC_URL` | Sì | Nessuna | URL HEC per endpoint Splunk |
+| `UES_SPLUNK_TOKEN` | Sì | Nessuna | Token Splunk |
+| `UES_SPLUNK_INDEX` | Sì | Nessuna | Indice in cui scrivere i registri |
 | `UES_SPLUNK_SOURCE` | Sì | `universal-editor-service` | Nome dell&#39;origine nei registri di splunk |
 | `UES_CORS_PRIVATE_NETWORK` | Sì | `false` | Abilita l&#39;invio di intestazioni CORS per consentire [la rete privata](https://wicg.github.io/private-network-access/#private-network-request). Richiesto per gli utenti di Chrome versione 130+ |
 
 >[!NOTE]
 >
->Prima della versione [&#128279;](/help/release-notes/universal-editor/current.md) di 2024.08.13 di Universal Editor, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
+>Prima della versione ](/help/release-notes/universal-editor/current.md) di [2024.08.13 di Universal Editor, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
@@ -156,7 +156,7 @@ Una volta impostato, ogni chiamata di aggiornamento del contenuto dovrebbe passa
 
 ## Modifica di una pagina con il servizio Local Universal Editor {#editing}
 
-Con il servizio [Universal Editor Service in esecuzione localmente](#running-ue) e la [pagina di contenuto dotata di strumenti per l&#39;utilizzo del servizio locale](#using-loca-ue), ora è possibile avviare l&#39;editor.
+Con il servizio [Universal Editor Service in esecuzione localmente](#running-ue) e la [pagina di contenuto dotata di strumenti per l&#39;utilizzo del servizio locale](/help/implementing/universal-editor/getting-started.md), ora è possibile avviare l&#39;editor.
 
 1. Apri il browser per `https://localhost:8000/ping`.
 1. Indirizza il browser per accettare [il certificato autofirmato](#ue-https).
