@@ -109,7 +109,7 @@ La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 
 >[!NOTE]
 >
->Prima della versione ](/help/release-notes/universal-editor/current.md) di [2024.08.13 di Universal Editor, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
+>Prima della versione [&#128279;](/help/release-notes/universal-editor/current.md) di 2024.08.13 di Universal Editor, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
