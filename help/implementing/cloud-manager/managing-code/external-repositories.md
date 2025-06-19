@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privata" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
+source-git-commit: f51730be823782ba722a33be6da409fad14429eb
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 28%
+source-wordcount: '2301'
+ht-degree: 27%
 
 ---
 
@@ -83,6 +83,9 @@ La configurazione di un archivio esterno in Cloud Manager consiste nei seguenti 
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 | Opzione token di accesso | Descrizione |
 | --- | --- |
 | **Usa token di accesso esistente** | Se hai già fornito un token di accesso all’archivio per la tua organizzazione e hai accesso a più archivi, puoi selezionare un token esistente. Utilizza l’elenco a discesa **Nome token** per scegliere il token da applicare all’archivio. In caso contrario, aggiungi un nuovo token di accesso. |
@@ -93,6 +96,8 @@ Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e colleg
 Vedi anche [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Opzione token di accesso | Descrizione |
 | --- | --- |
@@ -105,6 +110,8 @@ Vedi anche [Gestione token di accesso](/help/implementing/cloud-manager/managing
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Opzione token di accesso | Descrizione |
 | --- | --- |
 | **Usa token di accesso esistente** | Se hai già fornito un token di accesso all’archivio per la tua organizzazione e hai accesso a più archivi, puoi selezionare un token esistente. Utilizza l’elenco a discesa **Nome token** per scegliere il token da applicare all’archivio. In caso contrario, aggiungi un nuovo token di accesso. |
@@ -115,6 +122,8 @@ Dopo la convalida, l’archivio esterno è pronto per essere utilizzato e colleg
 Vedi anche [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB DevOps di Azure]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Opzione token di accesso | Descrizione |
 | --- | --- |
@@ -208,11 +217,16 @@ Incolla il segreto in un file di testo normale. Il segreto copiato è necessario
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 | Eventi webhook richiesti |
 | --- |
 | Questi eventi consentono a Cloud Manager di rispondere all’attività GitHub, ad esempio la convalida di richieste pull, trigger basati su push per le pipeline o la sincronizzazione del codice Edge Delivery Services.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti:<ul><li>Richieste pull<li>Push<li>Commenti problema</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Eventi webhook richiesti |
 | --- |
@@ -220,11 +234,15 @@ Incolla il segreto in un file di testo normale. Il segreto copiato è necessario
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Eventi webhook richiesti |
 | --- |
 | Questi eventi garantiscono che Cloud Manager possa convalidare le richieste pull, rispondere ai push del codice e interagire con i commenti per il coordinamento della pipeline.<br>Verificare che il webhook sia configurato per l&#39;attivazione dei seguenti eventi del webhook richiesti<ul><li>Richiesta pull: creata<li>Richiesta pull: aggiornata<li>Richieste pull: unite<li>Richiesta pull: commento<li>Archivio: push</li></li></li></ul></ul></ul> |
 
 >[!TAB DevOps di Azure]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Eventi webhook richiesti |
 | --- |
@@ -244,12 +262,17 @@ Il comportamento varia a seconda del provider Git utilizzato, come descritto di 
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 Una volta creato, il controllo viene visualizzato come nella schermata seguente. La differenza chiave rispetto a `GitHub.com` è che `GitHub.com` utilizza un&#39;esecuzione di controllo, mentre GitHub Enterprise (utilizzando token di accesso personali) genera uno stato di commit:
 
 ![Conferma stato per indicare il processo di convalida PR su GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 Le interazioni GitLab si basano esclusivamente sui commenti. Quando inizia la convalida, viene aggiunto un commento. Al termine della convalida (riuscita o non riuscita), il commento iniziale viene rimosso e sostituito con un nuovo commento contenente i risultati della convalida o i dettagli dell’errore.
 
@@ -271,6 +294,8 @@ Quando la convalida della qualità del codice non riesce a causa di problemi del
 
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 Quando la convalida della qualità del codice è in esecuzione:
 
