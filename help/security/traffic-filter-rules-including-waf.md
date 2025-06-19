@@ -4,9 +4,9 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ Questo articolo è suddiviso nelle sezioni seguenti:
 * **Strumenti dashboard:** analizza i registri CDN per trovare nuove regole per il filtro del traffico.
 * **Regole iniziali consigliate:** una serie di regole con cui iniziare.
 * **Tutorial:** conoscenza pratica della funzione, incluso l’utilizzo degli strumenti della dashboard per dichiarare le regole corrette.
-
-Adobe invita a fornire un feedback o a porre domande sulle regole del filtro del traffico inviando un’e-mail all’indirizzo **aemcs-waf-adopter@adobe.com**.
 
 ## Panoramica sulla protezione del traffico {#traffic-protection-overview}
 
