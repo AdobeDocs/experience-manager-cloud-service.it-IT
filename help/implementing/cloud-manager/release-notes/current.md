@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 54%
+ht-degree: 96%
 
 ---
 
@@ -21,35 +21,35 @@ Consulta anche le [note sulla versione corrente di Adobe Experience Manager as a
 
 ## Date di pubblicazione {#release-date}
 
-La data di pubblicazione della versione 2025.6.0 di Cloud Manager in AEM as a Cloud Service è l’venerdì 5 giugno 2025.
+La data di pubblicazione della versione 2025.6.0 di Cloud Manager in AEM as a Cloud Service è il 5 giugno 2025.
 
-La prossima versione è pianificata per il venerdì 10 luglio 2025.
+La prossima versione è pianificata per il 10 luglio 2025.
 
 ## Novità {#what-is-new}
 
 * **La dashboard delle licenze ora include la licenza Edge Delivery Services**
 
-  L’utilizzo delle licenze Edge Delivery Services viene ora visualizzato nella dashboard Licenze, fornendo una visibilità più chiara delle adesioni e dello stato. <!-- CMGR-67686 -->
+  L’utilizzo della licenza Edge Delivery Services viene ora visualizzato nella dashboard delle licenze, fornendo una visibilità più chiara dei diritti e dello stato. <!-- CMGR-67686 -->
 
   ![Dashboard delle licenze](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-  Vedi [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
+  Consulta [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
 
 * **Configurazione del sito Edge Delivery aggiornata**
 
-  Il flusso per l&#39;aggiunta di un sito Edge Delivery è stato semplificato richiedendo l&#39;**origine Edge Delivery** invece dell&#39;**URL archivio**, rendendo l&#39;onboarding e la configurazione più veloci e intuitivi <!-- CMGR-67686 -->
+  Il flusso per l’aggiunta di un sito Edge Delivery è stato semplificato richiedendo l’**origine Edge Delivery** invece dell’**URL archivio**, rendendo l’onboarding e la configurazione più veloci e intuitivi <!-- CMGR-67686 -->
 
-  ![Finestra di dialogo Aggiungi sito Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+  ![Aggiungi finestra di dialogo al sito Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
 
   Consulta [Aggiungere un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **Preferiti pipeline**
+* **Pipeline preferite**
 
-  In questa versione, Cloud Manager introduce la possibilità di fissare le pipeline preferite, consentendoti di contrassegnare specifiche pipeline come preferite in modo che vengano visualizzate nella parte superiore dell&#39;elenco nella pagina **Pipeline**. Questo miglioramento semplifica la ricerca e l’esecuzione delle pipeline a cui si accede di frequente. <!-- CMGR-68293 -->
+  In questa versione, Cloud Manager introduce la possibilità di fissare le pipeline preferite, consentendoti di contrassegnare specifiche pipeline come preferite in modo che vengano visualizzate nella parte superiore dell’elenco nella pagina **Pipeline**. Questo miglioramento semplifica la ricerca e l’esecuzione delle pipeline a cui si accede di frequente. <!-- CMGR-68293 -->
 
   ![Pipeline contrassegnate come preferite](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Due pipeline contrassegnate come preferite.*
 
-  Consulta [Contrassegnare i preferiti della pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+  Consulta [Contrassegnare le pipeline come preferite](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
 ## Programma beta privato {#private-beta-program}
@@ -61,16 +61,16 @@ Sono attualmente disponibili le seguenti opportunità beta private:
 
 ### Ambiente di test specializzato {#specialized-test-environment}
 
-Cloud Manager ora supporta l&#39;aggiunta di un nuovo tipo di ambiente denominato **Ambiente di test specializzato**. L’ambiente è progettato per aiutare i team a convalidare le funzioni in condizioni prossime alla produzione prima della pubblicazione. Questo tipo di ambiente è diverso dagli ambienti *Produzione + Stage*, *Sviluppo* o *Sviluppo rapido* e offre uno spazio mirato per l&#39;esecuzione di scenari di convalida avanzati.
+Cloud Manager ora supporta l’aggiunta di un nuovo tipo di ambiente denominato **Ambiente di test specializzato**. L’ambiente è progettato per aiutare i team a convalidare le funzioni in condizioni prossime alla produzione prima della pubblicazione. Questo tipo di ambiente è diverso dagli ambienti *Produzione + Fase*, *Sviluppo* o *Sviluppo rapido* e offre uno spazio mirato per l’esecuzione di scenari di convalida avanzati.
 
 Consulta [Aggiungere un ambiente di test specializzato](/help/implementing/cloud-manager/specialized-test-environment.md).
 
-![Finestra di dialogo Aggiungi ambiente con il pulsante di opzione Ambiente di test specializzato selezionato](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+![Finestra di dialogo Aggiungi ambiente con il pulsante di scelta Ambiente di test specializzato selezionato](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID.
 
 
-### Porta il tuo Git (BYOG), ora con supporto per Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### BYOG (Bring Your Own Git): ora con supporto per Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -102,16 +102,16 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 
 Utilizza **Gestisci token di accesso** in Cloud Manager per visualizzare, rinominare ed eliminare i token di accesso associati agli archivi BYOG esterni, ad esempio GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
 
-Consulta [Gestione token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+Consulta [Gestisci token di accesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID.
 
 
 ### Aggiungere una pipeline di configurazione Edge Delivery {#add-eds-pipeline}
 
 Le pipeline di configurazione sono ora supportate per i siti creati con Edge Delivery Services, espandendo questa funzionalità oltre i singoli ambienti di Cloud Service. È possibile utilizzare le **pipeline di configurazione** per gestire impostazioni quali le regole di filtro del traffico e le configurazioni del firewall per applicazioni web (WAF), se applicabile. Consulta le [configurazioni supportate](/help/operations/config-pipeline.md#configurations).
 
-![Aggiungi pipeline Edge Delivery nell&#39;elenco a discesa Aggiungi pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Aggiunta di una pipeline Edge Delivery dalla pagina **Panoramica del programma**, scheda **Pipeline**.*
+![Aggiungi pipeline Edge Delivery nell’elenco a discesa Aggiungi pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Aggiunta di una pipeline Edge Delivery dalla pagina **Panoramica del programma**, scheda **Pipeline**.*
 
 ![Finestra di dialogo Aggiungi pipeline di Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Finestra di dialogo Aggiungi pipeline di Edge Delivery.*
 
@@ -120,8 +120,8 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 
 ## Correzioni di bug
 
-* Gli ambienti sandbox precedentemente contrassegnati come `HIBERNATED` non rimangono più bloccati in quello stato, consentendo all&#39;esecuzione o alla distribuzione della pipeline di procedere come previsto. <!-- CMGR-67705 -->
-* AEM Cloud Manager ora mappa correttamente gli errori di build Maven causati da errori 409 (conflitti) durante il recupero degli artefatti del cliente su un errore causato dal cliente. Questa modifica migliora la messaggistica di errore distinguendo tra errori interni e problemi relativi alla configurazione dell’ambiente del cliente. <!-- CMGR-66673 -->
+* Gli ambienti sandbox precedentemente contrassegnati come `HIBERNATED` non rimangono più bloccati in quello stato, consentendo all’esecuzione o alla distribuzione di pipeline di procedere come previsto. <!-- CMGR-67705 -->
+* AEM Cloud Manager ora mappa correttamente gli errori di build Maven causati da errori 409 (conflitti) durante il recupero degli artefatti del cliente su un errore causato dal cliente. Questa modifica migliora la messaggistica di errore consentendo la distinzione tra errori interni e problemi relativi alla configurazione dell’ambiente del cliente. <!-- CMGR-66673 -->
 
 
 <!-- ## Known issues {#known-issues} -->

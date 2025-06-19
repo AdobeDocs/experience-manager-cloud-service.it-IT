@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Con Edge Delivery Services, AEM offre esperienze eccezionali che stimolano coinv
 
 Utilizzando Edge Delivery Services, è possibile:
 
-* Crea siti veloci con un punteggio Lighthouse perfetto e monitora continuamente le prestazioni del sito tramite la telemetria operativa.
+* Creare siti veloci con un punteggio Lighthouse perfetto e monitorare continuamente le prestazioni del sito tramite la telemetria operativa.
 * Aumentare l’efficienza di authoring separando le origini dei contenuti. È già possibile utilizzare sia l’authoring di AEM con l’editor universale che l’authoring basato su documenti. Di conseguenza, puoi lavorare con più origini di contenuto sullo stesso sito Web.
 * Utilizza un framework di sperimentazione incorporato che consente di creare e di eseguire rapidamente i test senza alcun impatto sulle prestazioni e di rilasciare rapidamente in produzione un vincitore di test.
 
@@ -108,7 +108,7 @@ Edge Delivery Services fa parte di Adobe Experience Manager. Di conseguenza, Edg
 
 Consulta la [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live per scoprire come avviare un proprio progetto per l’authoring con AEM ed Edge Delivery Services.
 
-È inoltre possibile utilizzare Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), [Telemetria operativa](https://www.aem.live/developer/rum) per diagnosticare l&#39;utilizzo e le prestazioni dei siti e [Launch.](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
+Puoi utilizzare inoltre Edge Delivery Services con [Adobe Target](https://www.aem.live/developer/target-integration), la [telemetria operativa](https://www.aem.live/developer/rum) per diagnosticare l’utilizzo e le prestazioni dei siti, e [Launch.](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
 
 ## Ottenere assistenza da Adobe {#getting-help}
 

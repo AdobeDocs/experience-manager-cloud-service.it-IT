@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
 workflow-type: tm+mt
 source-wordcount: '3181'
-ht-degree: 68%
+ht-degree: 96%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 68%
 >title="Funzioni obsolete e rimosse in AEM as a Cloud Service"
 >abstract="AEM as a Cloud Service dispone di un modello di distribuzione nativo per il cloud. Questa scheda evidenzia le funzioni e le funzionalità sostituite dalle controparti native per il cloud."
 
-Adobe esamina regolarmente le funzioni, incluse API e configurazioni, per garantire che soddisfino gli standard in evoluzione in termini di prestazioni, sicurezza e valore complessivo per AEM as a Cloud Service. In base a queste valutazioni, alcune funzionalità potrebbero essere dichiarate obsolete. Se possibile, Adobe fornirà un sostituto adeguato.
+Adobe esamina regolarmente le funzioni, incluse API e configurazioni, per garantire che soddisfino gli standard in evoluzione in termini di prestazioni, sicurezza e valore complessivo per AEM as a Cloud Service. In base a queste valutazioni, alcune funzionalità potrebbero essere dichiarate obsolete. Quando possibile, Adobe fornirà una sostituzione adeguata.
 
-Quando viene annunciata una rimozione, la funzione rimarrà disponibile solo per un periodo limitato e i clienti dovranno rimuovere tutto l’utilizzo prima di qualsiasi data di rimozione specificata. Adobe fornirà un preavviso ragionevole e indicazioni per supportare una transizione senza problemi.
+Quando viene dichiarata obsoleta, la funzione rimarrà disponibile solo per un periodo limitato e la clientela dovrà rimuovere tutto l’utilizzo prima di qualsiasi data di rimozione specificata. Adobe fornirà un preavviso ragionevole e indicazioni per supportare una transizione senza problemi.
 
-Durante la finestra temporale di rimozione, Adobe ricorderà ai clienti le azioni da intraprendere per abbandonare l’utilizzo di una funzione tramite notifiche e-mail, avvisi del Centro operativo o promemoria in Cloud Manager.
+Durante la finestra temporale di dichiarazione come obsoleta, Adobe ricorderà alla clientela le azioni da intraprendere per abbandonare l’utilizzo di una funzione tramite notifiche e-mail, avvisi del Centro azioni o promemoria in Cloud Manager.
 
 >[!WARNING]
 >
@@ -34,7 +34,7 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 
 | Funzionalità | Funzione obsoleta | Sostituzione |
 | ------------ | ------------------ | ----------- |
-| Sites | [Supporto per frammenti di contenuto nell&#39;API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna dei frammenti di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione di frammenti di contenuto e modelli di frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
+| Sites | [Supporto frammento di contenuto nell’API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna frammento di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione dei modelli di frammento di contenuto e frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
 | Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuna |
 | Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
@@ -49,7 +49,7 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 | [!DNL Foundation] | La scheda Distribuisci nella schermata di amministrazione dell’agente di replica e l’API di replica non possono replicare pacchetti di contenuti di dimensioni superiori a 10 MB. | [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o [Passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Le integrazioni che utilizzano credenziali generate dai progetti di Adobe Developer Console perdono gradualmente il supporto per le credenziali dell’account servizio (JWT). A partire dal 1° maggio 2024, non è possibile creare nuove credenziali dell’account di servizio (JWT) in Adobe Developer Console. Le credenziali dell’account di servizio (JWT) esistenti rimangono utilizzabili per le integrazioni configurate fino al 1° gennaio 2025, dopo di che cessano di funzionare, richiedendo alla clientela di migrare alle credenziali da server a server OAuth. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migra](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) alle credenziali da server a server OAuth. |
 | [!DNL Foundation] | Il flusso di lavoro Pubblica contenuti struttura e il relativo passaggio Flusso di lavoro di pubblicazione contenuti struttura, utilizzato per le repliche delle gerarchie di contenuto. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
-| [!DNL Foundation] | Utilizzo dell’interfaccia utente per comprimere/minimizzare le librerie client di JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria YUI. | Adobe consiglia ai clienti di passare a Google Closure Compiler (GCC) per l’implementazione. |
+| [!DNL Foundation] | Utilizzo di YUI per comprimere/minimizzare le librerie client di JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria di YUI. | Adobe consiglia alla clientela di passare a Google Closure Compiler (GCC) per l’implementazione. |
 
 ## Funzionalità rimossa {#removed-features}
 
@@ -67,11 +67,11 @@ In questa sezione sono elencate le funzionalità rimosse.
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
 | [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS | Marzo 2023 |
 | [!DNL Foundation] | Supporto per la funzione org.apache.sling.serviceusermapping per [ottenere l’ID utente del servizio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
-| [!DNL Foundation] | Il runtime Java 11 è obsoleto ed è stato sostituito da Adobe con il runtime Java 21. È accettabile che il codice venga comunque generato con Java 11 (Java 17 e 21 sono le altre opzioni) | Viene applicato il runtime Java 21. Per garantire la compatibilità, è essenziale aggiornare le versioni della libreria come descritto in [Requisiti di runtime](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | 5/29/25 marzo |
+| [!DNL Foundation] | Il runtime Java 11 è obsoleto ed è stato sostituito da Adobe con il runtime Java 21. È accettabile che il codice venga comunque generato con Java 11 (Java 17 e 21 sono le altre opzioni) | Viene applicato il runtime Java 21. Per garantire la compatibilità, è essenziale aggiornare le versioni della libreria come illustrato in [Requisiti di runtime](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements). | 5/29/25 marzo |
 
 ## API obsolete {#aem-apis}
 
-Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono state dichiarate obsolete, ma non sono ancora state rimosse.  L’utilizzo di queste API deve cessare prima della data di rimozione prevista oppure si rischiano problemi relativi a prestazioni, disponibilità e sicurezza. Alcune API fanno riferimento alla sezione Linee guida per la rimozione delle API di seguito.
+Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono state dichiarate obsolete, ma non sono ancora state rimosse.  L’utilizzo di queste API deve cessare prima della data di rimozione prevista oppure si rischiano problemi relativi a prestazioni, disponibilità e sicurezza. Alcune API fanno riferimento alla sezione Indicazioni per la rimozione delle API di seguito riportata.
 
 <details>
   <summary>Espandi per visualizzare l’elenco delle API obsolete.</summary>
@@ -126,7 +126,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service non supporta questa API di log back interna. <a href="#ch.qos.logback">Consulta le note sulla rimozione di seguito.</a></td>
+    <td>AEM as a Cloud Service non supporta questa API di logback interna. <a href="#ch.qos.logback">Consulta le note sulla rimozione di seguito.</a></td>
     <td>27/01/2022</td>
     <td>31/08/2025</td>
   </tr>
@@ -178,7 +178,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>31/08/2025</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
-    <td>L’uso di questa API non è più supportato in AEM as a Cloud Service.</td>
+    <td>L’utilizzo di questa API non è più supportato in AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
     <td>31/08/2025</td>
   </tr>  
@@ -196,13 +196,13 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 è in modalità di manutenzione. Utilizzare Commons Lang 3. <a href="#apache.commons">Consulta le note sulla rimozione di seguito.</a></td>
+    <td>Commons Lang 2 è in modalità di manutenzione. Utilizzare invece Commons Lang 3. <a href="#apache.commons">Consulta le note sulla rimozione di seguito.</a></td>
     <td>30/04/2021</td>
     <td>Da definire</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 è in modalità di manutenzione. Utilizzare Commons Collections 4. <a href="#apache.commons">Consulta le note sulla rimozione di seguito.</a></td>
+    <td>Commons Collections 3 è in modalità di manutenzione. Utilizzare invece Commons Collections 4. <a href="#apache.commons">Consulta le note sulla rimozione di seguito.</a></td>
     <td>30/04/2021</td>
     <td>Da definire</td>
   </tr>
@@ -235,7 +235,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
 
 ## API rimosse {#removed-apis}
 
-In questa sezione sono elencate le API che sono state dichiarate obsolete e rimosse. Alcune API fanno riferimento alla sezione Linee guida per la rimozione delle API di seguito.
+In questa sezione sono elencate le API che sono state dichiarate obsolete e rimosse. Alcune API fanno riferimento alla sezione Indicazioni per la rimozione delle API di seguito riportata.
 
 <details>
   <summary>Espandi per visualizzare l’elenco delle API rimosse.</summary>
@@ -306,7 +306,7 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
   </tr>
   <tr>
     <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
-    <td>L’uso di questa API non è più supportato in AEM as a Cloud Service.</td>
+    <td>L’utilizzo di questa API non è più supportato in AEM as a Cloud Service.</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.cache</td>
@@ -316,9 +316,9 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 </table>
 </details>
 
-## Guida alla rimozione API {#api-removal-guidance}
+## Indicazioni per la rimozione di API {#api-removal-guidance}
 
-Questa sezione riflette le linee guida per la rimozione delle API per varie API nelle tabelle precedenti.
+Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
 ### Rimozione di `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -331,7 +331,7 @@ Elenco azioni:
 
 ### Rimozione di `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
 
-Se utilizzi pacchetti da `org.apache.felix.webconsole*`, rimuovi questo codice dal progetto. La console Web non è accessibile in Cloud Service.
+Se utilizzi pacchetti da `org.apache.felix.webconsole*`, rimuovi questo codice dal progetto. La console web non è accessibile in Cloud Service.
 
 Elenco azioni:
 
@@ -378,7 +378,7 @@ Elenco azioni:
 
 ### Rimozione di `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
-Rimuovi l’utilizzo delle librerie Apache Commons non mantenute e sostituiscili con l’utilizzo delle versioni di supporto. Nella maggior parte dei casi questo richiede solo di adeguare le importazioni dei pacchetti, solo in alcuni casi le classi o i metodi sono stati rinominati. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
+Rimuovi l’utilizzo delle librerie Apache Commons non mantenute e sostituiscile con l’utilizzo delle versioni di supporto. Nella maggior parte dei casi questo richiede solo di adeguare le importazioni dei pacchetti, solo in alcuni casi le classi o i metodi sono stati rinominati. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
 
 Elenco azioni:
 
@@ -413,7 +413,7 @@ Elenco azioni:
 
 ### Utilizzo di `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
 
-Se si utilizza `org.slf4j.event` o `org.slf4j.spi`, rimuoverne tutto l&#39;utilizzo. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
+Se utilizzi `org.slf4j.event` o `org.slf4j.spi`, rimuovine l’utilizzo completo. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
 
 Elenco azioni:
 
@@ -422,15 +422,15 @@ Elenco azioni:
 
 ### Utilizzo di `org.apache.log4j` {#org.apache.log4j}
 
-Se si sta utilizzando `org.apache.log4j`, passare a SLF4J (`org.slf4j`) o Log4J 2.x (`org.apache.logging.log4j`).
+Se stai utilizzando `org.apache.log4j`, passa a SLF4J (`org.slf4j`) o Log4J 2.x (`org.apache.logging.log4j`).
 
 Elenco azioni:
 
-* Sostituisci l&#39;utilizzo di `org.apache.log4j` con l&#39;utilizzo di `org.slf4j` (consigliato) o `org.apache.logging.log4j`
+* Sostituisci l’utilizzo di `org.apache.log4j` con quello di `org.slf4j` (consigliato) o `org.apache.logging.log4j`
 
 ## Configurazione OSGI {#osgi-configuration}
 
-Le sezioni seguenti riflettono l’area di configurazione OSGi di AEM as a Cloud Service e descrivono ciò che i clienti possono configurare.
+Le due sezioni seguenti trattano la superficie di configurazione OSGi di AEM as a Cloud Service e descrivono che cosa la clientela può configurare.
 
 1. Il codice cliente non deve configurare le configurazioni OSGi elencate.
 1. Un elenco di configurazioni OSGi le cui proprietà possono essere configurate, ma devono rispettare le regole di convalida indicate. Queste regole includono se è necessaria la dichiarazione della proprietà, il tipo e, in alcuni casi, l’intervallo di valori consentito.
@@ -443,15 +443,15 @@ Ulteriori informazioni sulla configurazione OSGI sono disponibili in [questa pos
 
 ### Proprietà OSGi obsolete (presto non modificabili) {#deprecated-unmodifiable-osgi-properties}
 
-Le proprietà per i seguenti PID del componente OSGi sono obsolete e l’utilizzo deve essere interrotto entro la data di applicazione.
+Le proprietà per i seguenti PID del componente OSGi sono obsolete e l’utilizzo deve esserne interrotto entro la data di applicazione.
 
-| **ID componente OSGI** | **Proprietà non modificabili** | **Obsolescenza** | **Applicazione** |
+| **ID componente OSGI** | **Proprietà non modificabili** | **Rimozione** | **Applicazione** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | tutti | 4/24/25 | 8/31/25 (configurazione ignorata in giugno) |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (configurazione ignorata in giugno) |
-| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | tutti | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | tutti | 6/3/25 | 8/31/25 |
-| **`org.apache.http.proxyconfigurator`** | tutti | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.commons.log.LogManager`** | tutti | 24/4/25 | 31/8/25 (configurazione ignorata a giugno) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 24/4/25 | 31/8/25 (configurazione ignorata a giugno) |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | tutti | 2024 | 31/8/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | tutti | 3/6/25 | 31/8/25 |
+| **`org.apache.http.proxyconfigurator`** | tutti | 3/6/25 | 31/8/25 |
 
 ### Proprietà OSGi non modificabili {#unmodifiable-osgi-properties}
 
@@ -473,14 +473,14 @@ Non è possibile modificare le proprietà dei PID del componente OSGi seguenti, 
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | tutti |
 
 
-### Restrizioni future applicate alle proprietà OSGi {#future-restrictions-osgi-properties}
+### Restrizioni applicate alle proprietà OSGi future {#future-restrictions-osgi-properties}
 
-In futuro, Adobe applicherà le seguenti restrizioni alle proprietà OSGi, pertanto l’utilizzo dovrebbe terminare.
+In futuro, Adobe applicherà le seguenti restrizioni alle proprietà OSGi, pertanto l’utilizzo ne sarà interrotto.
 
 | PID componente OSGi |   | Obbligatorio | Tipo | Restrizione (se applicabile) |
 |---|---|---|---|---|
 | `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | stringa |   |
-|   | `smtp.port` | Sì | numero intero | &quot;465&quot;, &quot;587&quot; o &quot;25&quot; |
+|   | `smtp.port` | Sì | intero | “465”, “587” o “25” |
 |   | `smtp.user` |   | stringa |   |
 |   | `smtp.password` |   | stringa |   |
 |   | `from.address` |   | stringa |   |
@@ -489,7 +489,7 @@ In futuro, Adobe applicherà le seguenti restrizioni alle proprietà OSGi, perta
 |   | `smtp.requiretls` |   | booleano |   |
 |   | `debug.email` |   | booleano |   |
 |   | `oauth.flow` |   | booleano |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Sì | stringa | &quot;INFO&quot;, &quot;DEBUG&quot; o &quot;TRACE&quot; |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | Sì | stringa | “INFO”, “DEBUG” o “TRACE” |
 |   | `org.apache.sling.commons.log.names` |   | array di stringhe |   |
 |   | `org.apache.sling.commons.log.additiv` |   | booleano |   |
 | `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | No | stringa[] |   |
@@ -503,19 +503,19 @@ I valori di queste proprietà OSGi sono limitati alle regole descritte di seguit
 
 | PID componente OSGi |   | Obbligatorio | Tipo | Restrizione (se applicabile) |
 |---|---|---|---|---|
-| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | Sì | numero intero | 2-100 |
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | Sì | intero | 2-100 |
 |   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | doppio | -- |
-|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | numero intero | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | intero | -- |
 |   | `org.apache.felix.eventadmin.RequireTopic` |   | booleano | -- |
-|   | `org.apache.felix.eventadmin.IgnoreTimeout` | Sì | array di stringhe | Deve includere almeno tutti `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | Sì | array di stringhe | Deve includere almeno tutti i seguenti `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*` |
 |   | `org.apache.felix.eventadmin.IgnoreTopic` |   | array di stringhe | -- |
-| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | numero intero |   |
-|   | `org.apache.felix.http.session.timeout` |   | numero intero |   |
-|   | `org.apache.felix.http.jetty.threadpool.max` |   | numero intero |   |
-|   | `org.apache.felix.http.jetty.headerBufferSize` |   | numero intero |   |
-|   | `org.apache.felix.http.jetty.requestBufferSize` |   | numero intero |   |
-|   | `org.apache.felix.http.jetty.responseBufferSize` |   | numero intero |   |
-|   | `org.apache.felix.http.jetty.maxFormSize` |   | numero intero |   |
+| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | intero |   |
+|   | `org.apache.felix.http.session.timeout` |   | intero |   |
+|   | `org.apache.felix.http.jetty.threadpool.max` |   | intero |   |
+|   | `org.apache.felix.http.jetty.headerBufferSize` |   | intero |   |
+|   | `org.apache.felix.http.jetty.requestBufferSize` |   | intero |   |
+|   | `org.apache.felix.http.jetty.responseBufferSize` |   | intero |   |
+|   | `org.apache.felix.http.jetty.maxFormSize` |   | intero |   |
 |   | `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | booleano |   |
 |   | `org.apache.felix.https.jetty.session.cookie.secure` |   | booleano |   |
 |   | `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | stringa |   |
@@ -523,12 +523,12 @@ I valori di queste proprietà OSGi sono limitati alle regole descritte di seguit
 |   | `org.eclipse.jetty.servlet.SessionCookie` |   | stringa |   |
 |   | `org.eclipse.jetty.servlet.SessionDomain` |   | stringa |   |
 |   | `org.eclipse.jetty.servlet.SessionPath` |   | stringa |   |
-|   | `org.eclipse.jetty.servlet.MaxAge` |   | numero intero |   |
-|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | numero intero |   |
+|   | `org.eclipse.jetty.servlet.MaxAge` |   | intero |   |
+|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | intero |   |
 |   | `org.apache.felix.jetty.gziphandler.enable` |   | booleano |   |
-|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | numero intero |   |
-|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | numero intero |   |
-|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | numero intero |   |
+|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | intero |   |
+|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | intero |   |
+|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | intero |   |
 |   | `org.apache.felix.jetty.gzip.syncFlush` |   | booleano |   |
 |   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | stringa |   |
 |   | `org.apache.felix.jetty.gzip.includedMethods` |   | array di stringhe |   |
@@ -539,8 +539,8 @@ I valori di queste proprietà OSGi sono limitati alle regole descritte di seguit
 |   | `org.apache.felix.http.session.invalidate` |   | booleano |   |
 |   | `org.apache.felix.http.session.container.attribute` |   | array di stringhe |   |
 |   | `org.apache.felix.http.session.uniqueid` |   | booleano |   |
-| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | Sì | numero intero | >= 2048 |
-|   | `org.apache.sling.scripting.cache.additional_extensions` | Sì | array di stringhe | deve includere &quot;js&quot; |
+| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | Sì | intero | >= 2048 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | Sì | array di stringhe | deve includere “js” |
 | `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | No | stringa |   |
 |   | `request.log.outputtype` | No | stringa |   |
 |   | `request.log.entry.format` | No | stringa |   |
@@ -550,7 +550,7 @@ I valori di queste proprietà OSGi sono limitati alle regole descritte di seguit
 |   | `access.log.outputtype` | No | stringa |   |
 |   | `access.log.enabled` | No | stringa |   |
 | `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | No | stringa |   |
-|   | `servletresolver.cacheSize` | No | numero intero |   |
+|   | `servletresolver.cacheSize` | No | intero |   |
 |   | `servletresolver.paths` | No | stringa[] |   |
 |   | `servletresolver.defaultExtensions` | No | stringa |   |
 |   | `servletresolver.mountProviders` | No | booleano |   |
@@ -558,5 +558,5 @@ I valori di queste proprietà OSGi sono limitati alle regole descritte di seguit
 
 ## Aggiornamento Java Runtime alla versione 21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service è passato al runtime Java 21. Per garantire la compatibilità, è essenziale aggiornare le versioni della libreria come descritto in [Requisiti di runtime](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Transizione da Adobe Experience Manager as a Cloud Service a Java Runtime 21. Per garantire la compatibilità, è essenziale aggiornare le versioni della libreria come descritto in [Requisiti di runtime](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 

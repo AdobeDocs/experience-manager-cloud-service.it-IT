@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
 source-wordcount: '2077'
-ht-degree: 31%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 ## Data di pubblicazione {#release-date}
 
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.5.0) è il venerdì 5 giugno 2025. La prossima versione funzionale (2025.6.0) è pianificata per il venerdì 26 giugno 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.5.0) è il 5 giugno 2025. La prossima versione funzionale (2025.6.0) è pianificata per il 26 giugno 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -41,21 +41,21 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Metadati generati da IA**
+**Metadati generati dall’IA**
 
-AEM Assets ora utilizza [AI per generare automaticamente i metadati, inclusi Titolo, Descrizione e Parole chiave](/help/assets/metadata-assets-view.md#ai-smart-tags). Questi campi generati dall’intelligenza artificiale migliorano la precisione dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali.
+AEM Assets ora utilizza l’[IA per generare automaticamente i metadati, inclusi Titolo, Descrizione e Parole chiave](/help/assets/metadata-assets-view.md#ai-smart-tags). Questi campi generati dall’IA migliorano la precisione dei metadati, rendendo le risorse più facili da ricercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuto digitale.
 
-![Metadati generati dall&#39;IA](/help/assets/assets/enhanced-smart-tags.png)
+![Metadati generati dall’IA](/help/assets/assets/enhanced-smart-tags.png)
 
 **Integrazione con Figma**
 
-AEM Assets si integra in modo nativo con Figma, consentendo ai designer di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente Figma. Puoi inserire il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il contenuto nuovo o modificato nell’archivio di AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+AEM Assets si integra in modo nativo con Figma, che consente agli sviluppatori di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente. Puoi inserire il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il contenuto nuovo o modificato nell’archivio di AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -66,55 +66,55 @@ AEM Assets si integra in modo nativo con Figma, consentendo ai designer di acced
 
 [Content Hub ora consente di applicare restrizioni basate su regole per accedere alle risorse](/help/assets/attribute-based-access-control.md). Le autorizzazioni per le risorse garantiscono la governance e assicurano che solo le risorse pertinenti siano accessibili agli utenti.
 
-Le regole di restrizione delle risorse si basano sui metadati e, se le condizioni definite nella regola corrispondono ai metadati della risorsa, la risorsa viene visualizzata ai gruppi di utenti.
+Le regole di limitazione delle risorse si basano sui metadati e, se le condizioni definite nella regola corrispondono ai metadati della risorsa, la risorsa viene visualizzata ai gruppi di utenti.
 
 Alcuni dei vantaggi principali del controllo degli accessi basato su attributi includono:
 
-* Elimina la dipendenza dalla struttura di cartelle per le autorizzazioni
+* Eliminazione della dipendenza dalla struttura di cartelle per le autorizzazioni
 
-* Consente agli amministratori di caricare le risorse e determinare retroattivamente le strutture delle autorizzazioni
+* Consenso agli amministratori di caricare le risorse e determinare retroattivamente le strutture delle autorizzazioni
 
-* Riduce il numero di duplicati, migliorando l&#39;integrità delle risorse. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
+* Riduzione del numero di duplicati, migliorando l’integrità della risorsa. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
 
 **Branding interfaccia utente**
 
-Content Hub ora consente agli amministratori di [personalizzare l&#39;interfaccia utente con elementi specifici del brand](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), tra cui immagini del banner, titoli dei banner e corpo del testo, nonché colori primari e secondari. Questi miglioramenti contribuiscono a garantire la coerenza del marchio, semplificare l’onboarding degli utenti e creare fiducia.
+Content Hub ora consente agli amministratori di [personalizzare l’interfaccia utente con elementi specifici del brand](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), tra cui immagini del banner, titoli dei banner e corpo del testo, nonché colori primari e secondari. Questi miglioramenti contribuiscono a garantire la coerenza del brand, semplificare l’onboarding degli utenti e creare fiducia.
 
 ![Branding interfaccia utente](/help/assets/assets/content-hub-ui-branding.png)
 
-**Condivisione di collegamenti pubblici**
+**Condivisione del collegamento pubblico**
 
-Content Hub ora supporta [la generazione di collegamenti condivisibili per consentire agli utenti esterni](/help/assets/share-assets-content-hub.md##share-assets), senza accesso all&#39;applicazione, di visualizzare i metadati delle risorse o scaricare le risorse.
+Content Hub ora supporta la [generazione di collegamenti condivisibili per consentire agli utenti esterni](/help/assets/share-assets-content-hub.md##share-assets), senza accesso all’applicazione, di visualizzare i metadati delle risorse o scaricarle.
 
 ![Branding interfaccia utente](/help/assets/assets/public-and-private-link.png)
 
 **Governance delle raccolte**
 
-Content Hub ora consente di [controllare l&#39;accesso alle raccolte durante la creazione, in modo che solo gli utenti autorizzati possano visualizzare o gestire risorse raggruppate](/help/assets/collections-content-hub.md##create-collections). Garantisce maggiore sicurezza, migliore collaborazione, gestione organizzata delle risorse e governance semplificata.
+Content Hub ora consente di [controllare l’accesso alle raccolte durante la creazione, in modo che solo gli utenti autorizzati possano visualizzare o gestire risorse raggruppate](/help/assets/collections-content-hub.md##create-collections). Ciò garantisce maggiore sicurezza, migliore collaborazione, gestione risorse organizzata e governance semplificata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
->La governance delle raccolte è una funzione di disponibilità limitata. Per abilitarlo, crea un ticket di supporto.
+>La governance delle raccolte è una funzione di disponibilità limitata. Per abilitarla, crea un ticket di supporto.
 
 **Scarica più risorse come file ZIP**
 
-Content Hub ora consente anche di [scaricare le risorse selezionate e le relative rappresentazioni in un file ZIP](/help/assets/download-assets-content-hub.md#download-asset-renditions) e non come file separati, semplificando la gestione dei file.
+Content Hub ora consente anche di [scaricare le risorse selezionate e le relative rappresentazioni in un file ZIP](/help/assets/download-assets-content-hub.md#download-asset-renditions) e non come file separati, semplificandone la gestione.
 
 **Rappresentazioni Dynamic Media in Content Hub**
 
-Accedi a tutte le [copie trasformate predefinite di Dynamic Media e agli smart crop per il download direttamente dall&#39;interfaccia utente di Content Hub](/help/assets/download-assets-content-hub.md#download-asset-renditions).
+Accedi a tutte le [rappresentazioni predefinite di Dynamic Media e ai ritagli avanzati per il download direttamente dall’interfaccia utente di Content Hub](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
-&#x200B;![Rappresentazioni Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
+![Rappresentazioni di Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 
-### Nuove funzioni di Dynamic Media {#new-features-dynamic-media}
+### Nuove funzioni in Dynamic Media {#new-features-dynamic-media}
 
-**Integrazione nativa di Dynamic Media con AJO B2C&#x200B;**
+**Integrazione nativa di Dynamic Media con AJO B2C**
 
-[Integrazione nativa di Dynamic Media di Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/aem-dynamic), per consentire agli addetti al marketing di incorporare facilmente le risorse di Dynamic Media di AEM (rendering e modello DM) nei contenuti di AJO e fornire aggiornamenti in tempo reale ed esperienze iperpersonalizzate su tutti i canali.
+[Integrazione nativa di Dynamic Media di Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/aem-dynamic), per consentire agli addetti marketing di incorporare facilmente le risorse di Dynamic Media di AEM (rappresentazione e modello DM) nel contenuto di AJO e consegnare aggiornamenti in tempo reale ed esperienze iperpersonalizzate su tutti i canali.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463790/?learn=on&enablevpops=&autoplay=true&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -142,18 +142,18 @@ Le funzionalità di integrazione tra Forms e AEP sono ora disponibili per i prim
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Processo di obsolescenza aggiornato {#updated-deprecation-process}
+### Processo di rimozione aggiornato {#updated-deprecation-process}
 
-Adobe esamina regolarmente funzioni, librerie, API e configurazioni per garantire che soddisfino gli standard in termini di prestazioni, sicurezza e valore. Quando le funzionalità non soddisfano più questi standard, vengono contrassegnate come obsolete e l’utilizzo deve essere interrotto entro una data di rimozione specificata. In attesa di tale data, Adobe ricorderà ai clienti le notifiche e-mail e le azioni da eseguire in Cloud Manager prima di procedere con le nuove build o di distribuirne di nuove. La mancata adozione delle misure necessarie può comportare l’impossibilità di eseguire l’aggiornamento a nuove versioni di AEM, con potenziali impatti su sicurezza, prestazioni, affidabilità e disponibilità.
+Adobe esamina regolarmente funzioni, librerie, API e configurazioni per garantire che soddisfino gli standard in termini di prestazioni, sicurezza e valore. Quando le funzionalità non soddisfano più questi standard, vengono contrassegnate come obsolete e l’utilizzo ne deve essere interrotto entro una data di rimozione specificata. In attesa di tale data, Adobe lo ricorderà alla clientela tramite notifiche e-mail e azioni da eseguire in Cloud Manager, prima di procedere con le nuove build o di distribuirne di nuove. La mancata adozione delle misure necessarie può comportare l’impossibilità di eseguire l’aggiornamento a nuove versioni di AEM, generando potenziali impatti su sicurezza, prestazioni, affidabilità e disponibilità.
 
-Per ulteriori informazioni, vedere l&#39;[articolo deprecazione](/help/release-notes/deprecated-removed-features.md).
+Per ulteriori informazioni, consulta l’articolo [Rimozione](/help/release-notes/deprecated-removed-features.md).
 
-#### API Java obsolete e configurazione OSGi vicina alle date di rimozione {#deprecated-near-removals}
+#### API Java obsolete e configurazione OSGi prossime alle date di rimozione {#deprecated-near-removals}
 
-Espandi l’elenco seguente per visualizzare le API e le configurazioni OSGi obsolete che non devono più essere utilizzate. Per informazioni complete, comprese le timeline di rimozione, consulta l’articolo sugli elementi obsoleti.
+Espandi l’elenco seguente per visualizzare le API e le configurazioni OSGi obsolete che non devono più essere utilizzate. Per informazioni complete, comprese le timeline di rimozione, consulta l’articolo sulla rimozione.
 
 <details>
-  <summary>Espandi per visualizzare le deprecazioni</summary>
+  <summary>Espandi per visualizzare le rimozioni</summary>
 
 API Java:
 * `org.apache.sling.commons.auth`
@@ -180,34 +180,34 @@ Proprietà OSGi:
 
 </details>
 
-### Deprecazione runtime Java 11 {#java11-runtime-deprecation}
+### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il runtime **Java 11** è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime **Java 21** più performante.
+Il **runtime Java 11** è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime **Java 21** più performante.
 
-Se non è stato possibile aggiornare l&#39;ambiente a causa di dipendenze non supportate (vedi [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un&#39;e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l&#39;ambiente possa essere aggiornato senza interruzioni.
+Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
-Nota: la versione di runtime è separata dalla versione di build del codice. Sebbene sia consigliabile creare con Java 21, le build Java 11 sono ancora supportate per il momento. In futuro verrà condiviso un avviso di rimozione separato per le build Java 11.
+Nota: la versione di runtime è separata dalla versione di build del codice. Sebbene consigliamo di creare con Java 21, le build Java 11 sono ancora supportate per il momento. In futuro verrà condiviso un avviso di rimozione separato per le build Java 11.
 
 ### Applicazione dei criteri di configurazione dei registri Java di AEM {#logconfig-policy}
 
-Come indicato nelle note sulla versione di aprile, i registri Java di AEM devono seguire un formato standard per garantire un monitoraggio affidabile in tutti gli ambienti dei clienti. Le configurazioni di registro personalizzate, ad esempio modifiche alla formattazione del registro, ai file di output o ai livelli di registro predefiniti, non sono più supportate. I registri devono rimanere indirizzati ai file predefiniti e i livelli di registro predefiniti per il codice prodotto AEM devono essere mantenuti. Vedi tutti i dettagli nell&#39;articolo [Registrazione](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+Come indicato nelle note sulla versione di aprile, i registri Java di AEM devono seguire un formato standard per garantire un monitoraggio affidabile in tutti gli ambienti del cliente. Le configurazioni di registro personalizzate, ad esempio modifiche alla formattazione del registro, ai file di output o ai livelli di registro predefiniti, non sono più supportate. I registri devono rimanere indirizzati ai file predefiniti e i livelli di registro predefiniti per il codice prodotto AEM devono essere mantenuti. Consulta tutti i dettagli nell’articolo [Registrazione](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partire dalla **fine di agosto**, le sostituzioni di registrazione personalizzate non supportate verranno ignorate. In base alla nostra analisi, la maggior parte dei clienti non sarà interessata e Adobe contatterà direttamente tutti i clienti la cui configurazione corrente potrebbe essere interessata.
+A partire dalla **fine di agosto**, qualsiasi sostituzione di registrazione personalizzata non supportate verrà ignorata. In base alla nostra analisi, la maggior parte della clientela non sarà interessata e Adobe contatterà direttamente tutti coloro la cui configurazione corrente potrebbe essere interessata.
 
 Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento di registrazione personalizzato. Ad esempio:
 
 * Se il sistema di inoltro dei registri prevede un formato di registro personalizzato, potrebbe essere necessario modificare le regole di acquisizione.
-* Se in precedenza è stato ridotto il livello di dettaglio del registro modificando i livelli del registro, il ripristino dei livelli predefiniti potrebbe aumentare il volume del registro.
+* Se in precedenza è stato ridotto il livello di verbosità del registro modificando i livelli del registro, il ripristino dei livelli predefiniti potrebbe aumentare il volume del registro.
 
-### Rimozione predefinita delle versioni precedenti e dei registri di controllo {#mt-defaults}
+### Eliminazione predefinita delle versioni precedenti e dei registri di controllo {#mt-defaults}
 
 Attualmente, le *attività di manutenzione dell&#39;eliminazione* associate alle versioni del contenuto e ai registri di audit sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso a meno che non sia configurato in modo esplicito.
 
-Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine giugno 2025**, la rimozione sarà abilitata per impostazione predefinita, seguendo queste linee guida:
+Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine giugno 2025**, l’eliminazione sarà abilitata per impostazione predefinita, seguendo queste linee guida:
 
-#### Versioni contenuto {#mt-content}
+#### Versioni di contenuto {#mt-content}
 
-* **Nuovi ambienti** (creati dopo una data futura (da comunicare in un secondo momento)
+* **Nuovi ambienti** (creati dopo una data prossima (da comunicare in un secondo momento)
    * Le versioni precedenti a **30 giorni** verranno eliminate periodicamente.
    * Vengono mantenute le cinque versioni più recenti degli ultimi 30 giorni, insieme alla versione più recente e a quella corrente, indipendentemente dalla loro età.
 
@@ -220,44 +220,44 @@ Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine gi
 
 #### Registro di controllo {#mt-auditlogs}
 
-* **Nuovi ambienti** (creati dopo una data futura, che verrà comunicata separatamente):
-   * I registri di replica, DAM e di controllo delle pagine precedenti a **7 giorni** verranno eliminati periodicamente.
+* **Nuovi ambienti** (creati dopo una data prossima, che verrà comunicata separatamente):
+   * I registri di controllo della pagina, DAM e di replica precedenti a **7 giorni** verranno eliminati periodicamente.
    * Tutti gli eventi vengono registrati per impostazione predefinita.
 
 * **Ambienti esistenti** (creati prima di questa data):
-   * I registri di replica, DAM e controllo delle pagine più vecchi di **7 anni** verranno eliminati periodicamente.
+   * I registri di controllo della pagina, DAM e di replica precedenti a **7 anni** verranno eliminati periodicamente.
    * Tutti gli eventi vengono registrati per impostazione predefinita.
    * Questa soglia predefinita elevata impedisce la rimozione involontaria dei dati recenti. Tuttavia, si consiglia di configurare valori inferiori per ottimizzare le prestazioni dell’archivio.
 
 * Potete modificare questi valori predefiniti mediante la configurazione YAML, distribuita mediante la pipeline di configurazione.
 
-Per ulteriori dettagli, vedere l&#39;articolo [Attività di manutenzione](/help/operations/maintenance.md#defaults).
+Per ulteriori dettagli, consulta l’articolo [Attività di manutenzione](/help/operations/maintenance.md#defaults).
 
-### Elaborazione Edge (programma Alpha) {#edge-computing}
+### Edge Computing (programma Alpha) {#edge-computing}
 
-Il computing Edge consente di eseguire JavaScript a livello CDN, avvicinando l’elaborazione dei dati all’utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
+Edge Computing consente di eseguire JavaScript a livello CDN, avvicinando l’elaborazione dati all’utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
 
 I casi d’uso comuni includono:
 
 * Autenticazione degli utenti con un provider di identità prima di concedere l’accesso al contenuto
-* Personalizzazione dei contenuti in base alla geolocalizzazione, al tipo di dispositivo o agli attributi utente
+* Personalizzazione del contenuto in base alla geolocalizzazione, al tipo di dispositivo o agli attributi utente
 * Funge da middleware tra la rete CDN e l’origine
 * Riformattazione delle risposte da API di terze parti (e forse aggregazione di più risposte API) prima di distribuirle al browser
-* Composizione e distribuzione di HTML con rendering server alla rete Edge tramite contenuti uniti da vari back-end
+* Composizione e trasmissione di HTML con rendering del server alla rete Edge tramite contenuti uniti da vari back-end
 
-Abbiamo un numero limitato di opportunità disponibili per i progetti AEM Publish Delivery o Edge Delivery Services per i siti di produzione live. Se sei interessato a partecipare o desideri saperne di più, invia un&#39;e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d&#39;uso.
+Abbiamo un numero limitato di opportunità disponibili per i progetti AEM Publish Delivery o Edge Delivery Services per i siti di produzione live. Se sei interessato a partecipare o desideri saperne di più, invia un’e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d’uso.
 
-### Configurazione CDN per Edge Delivery Services (programma Beta) {#cdn-eds-beta}
+### Configurazione rete CDN per Edge Delivery Services (programma Beta) {#cdn-eds-beta}
 
-La rete CDN gestita da Adobe offre opzioni di configurazione flessibili, come descritto nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#configurations).
+La rete CDN gestita da Adobe offre opzioni di configurazione flessibili, come descritto nell’articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#configurations).
 
-Ora in versione beta, distribuisci una pipeline di configurazione per le funzioni che includono i selettori di origine CDN, le trasformazioni di risposta e richiesta e altro ancora. Rivolgiti a [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con i dettagli del tuo caso d&#39;uso.
+Ora in versione beta, distribuisci una pipeline di configurazione per le funzioni che includono i selettori di origine CDN, le trasformazioni di risposta e richiesta e altro ancora. Rivolgiti a [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) con i dettagli del tuo caso d’uso.
 
-### Inoltro dei registri di AEM a più destinazioni (programma Beta) {#log-forwarding-beta}
+### Funzionalità di inoltro del registro di AEM a più destinazioni (programma Beta) {#log-forwarding-beta}
 
-Anche se i registri di AEM possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM supporta già l’inoltro dei registri AEM e CDN ad Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Questa funzione è configurata in modo autonomo e distribuita mediante la pipeline di configurazione.
+Anche se i registri di AEM possono essere scaricati da Cloud Manager, molte organizzazioni trovano utile inviare in streaming tali registri a una destinazione di registrazione preferita. AEM supporta già l’inoltro dei registri CDN e AEM all’archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Questa funzione è configurata in modo autonomo e distribuita mediante la pipeline di configurazione.
 
-Ora in versione beta, puoi inoltrare i registri di AEM a Amazon S3, Sumo Logic e al tuo account New Relic (non a quello fornito da Adobe). I registri di AEM (incluso Apache/Dispatcher) sono supportati per queste destinazioni di registrazione, ma non per i registri CDN. Invia un’e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per accedere.
+Ora in versione Beta, puoi inoltrare i registri di AEM a Amazon S3, Sumo Logic e al tuo account New Relic (non a quello fornito da Adobe). Per queste destinazioni di registrazione, sono supportati i registri di AEM (incluso Apache/Dispatcher), ma non i registri CDN. Invia un’e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per accedere.
 
 Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei registri](/help/implementing/developing/introduction/log-forwarding.md).
 
