@@ -4,10 +4,10 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 11%
+source-wordcount: '1744'
+ht-degree: 10%
 
 ---
 
@@ -78,10 +78,10 @@ Per i casi di utilizzo di autenticazione leggera che includono soggetti interess
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="CDN del cliente punta alla CDN gestita di AEM"
+>title="La rete CDN del cliente (o proxy) punta alla rete CDN gestita di AEM"
 >abstract="AEM as a Cloud Service offre ai clienti un’opzione per utilizzare la sua rete CDN esistente. Per il livello di pubblicazione, i clienti possono facoltativamente puntare a essa dalla propria CDN, che dovranno gestire. Questo scenario viene consentito caso per caso, in base al rispetto di alcuni prerequisiti, come ad esempio la presenza di un’eventuale integrazione precedente del cliente presso il proprio fornitore di CDN che sia difficile da abbandonare."
 
-Se un cliente deve utilizzare la propria rete CDN esistente, può gestirla e puntarla alla rete CDN gestita da AEM, purché siano soddisfatte le seguenti condizioni:
+Se un cliente deve utilizzare la propria rete CDN esistente (o qualsiasi tipo di proxy inverso, ad esempio un loadbalancer o un WAF), può gestirla e indirizzarla alla rete CDN gestita da AEM, purché siano soddisfatte le seguenti condizioni:
 
 * Il cliente deve disporre di una rete CDN esistente che sarebbe onerosa da sostituire.
 * Il cliente deve gestirlo.
