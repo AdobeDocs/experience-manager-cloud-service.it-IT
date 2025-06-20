@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 74%
+source-wordcount: '977'
+ht-degree: 76%
 
 ---
 
@@ -115,11 +115,13 @@ I lanci ti consentono di:
 
 ## La console Lanci {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->Questa console è solo per i lanci per le pagine.
+>This console is only for Launches for Pages. 
 >
->Per gestire i frammenti di contenuto, vedi [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli elencati.
 
