@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ Una volta abilitata la configurazione, devi consentire i modelli per il sito.
 
 1. Utilizza la console **Sites** per [passare alla pagina nuova o esistente](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) che desideri utilizzare come modello e tocca o fai clic su di essa per selezionarla.
 
-1. Dopo aver selezionato la pagina, tocca o fai clic sull&#39;icona [**Proprietà**](/help/sites-cloud/authoring/sites-console/page-properties.md) nella barra degli strumenti.
+1. Dopo aver selezionato la pagina, tocca o fai clic sull&#39;icona [**Proprietà**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) nella barra degli strumenti.
 
 1. Nella scheda **Avanzate** della finestra di dialogo delle proprietà nella sezione **Impostazioni modello**, seleziona l&#39;opzione **Usa pagina come modello**.
 

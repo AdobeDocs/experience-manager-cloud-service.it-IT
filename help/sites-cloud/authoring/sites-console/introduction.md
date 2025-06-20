@@ -1,11 +1,11 @@
 ---
 title: Console Sites
-description: Scopri come utilizzare la console Sites per gestire e organizzare le pagine AEM.
+description: Scopri come utilizzare la console Sites per gestire e organizzare le pagine di AEM.
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 45%
@@ -14,7 +14,7 @@ ht-degree: 45%
 
 # Console Sites {#sites-console}
 
-Scopri come utilizzare la console **Sites** per gestire e organizzare le pagine AEM.
+Scopri come utilizzare la console **Sites** per gestire e organizzare le pagine di AEM.
 
 ## Orientamento {#orientation}
 
@@ -84,7 +84,7 @@ Dopo aver fatto clic su, le opzioni visualizzate sono appropriate per la console
 * [Pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Sito](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy ](/help/sites-cloud/administering/msm/overview.md)
-* [Avvia](/help/sites-cloud/authoring/launches/overview.md)
+* [Lancio](/help/sites-cloud/authoring/launches/overview.md)
 * [Copia per lingua](/help/sites-cloud/administering/translation/overview.md)
 * [Rapporto CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
@@ -98,7 +98,7 @@ La console **Sites** offre tre diverse visualizzazioni della gerarchia dei conte
 * [Vista a schede](#card-view)
 * [Vista a elenco ](#list-view)
 
-L&#39;icona **Visualizza** all&#39;estrema destra della barra degli strumenti AEM indica la visualizzazione corrente selezionata.
+L&#39;icona **Visualizza** all&#39;estrema destra della barra degli strumenti di AEM indica la visualizzazione corrente selezionata.
 
 Toccando o facendo clic su di essa è possibile selezionare una vista diversa.
 
@@ -236,13 +236,13 @@ La barra delle azioni viene visualizzata solo quando una risorsa è selezionata 
 
 * [**Crea**](#create-action) - Crea nuovo contenuto o azioni relative al contenuto
 * **Modifica** - A seconda di come è stata creata la pagina selezionata, l&#39;azione **Modifica** aprirà l&#39;editor appropriato.
-   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l&#39;Editor pagina AEM
+   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l&#39;Editor pagina di AEM
    * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Per le pagine create con l&#39;editor universale
-* [**Proprietà**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Apre la finestra delle proprietà della pagina
+* [**Proprietà**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - Apre la finestra delle proprietà della pagina
 * [**Blocca**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Blocca una pagina per impedire ad altri utenti di modificarla
 * [**Copia**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copia una pagina
 * [**Sposta**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Sposta o rinomina una pagina
-* [**Publish rapido**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish immediatamente una o più pagine
+* [**Pubblicazione rapida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Pubblicazione immediata di una o più pagine
 * [**Gestisci pubblicazione**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Pianifica una o più pagine per la pubblicazione
 * [**Ripristina**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Ripristina una versione di una pagina o di un albero di pagine
 * [**Elimina**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Elimina una o più pagine

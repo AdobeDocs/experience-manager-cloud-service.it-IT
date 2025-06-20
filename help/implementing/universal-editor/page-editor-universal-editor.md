@@ -4,7 +4,7 @@ description: L’Editor pagina rimane supportato da Adobe, ma l’Editor univers
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 | Struttura contenuto | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Consente inoltre il riordinamento all&#39;interno della struttura |
 | Simulazione dispositivo | [!BADGE Disponibile]{type=Positive} | [È possibile simulare i dispositivi configurati](/help/sites-cloud/administering/responsive-layout.md), ma l&#39;utente non può immettere manualmente dimensioni dello schermo diverse da simulare. | [!BADGE Disponibile]{type=Positive} | [È possibile immettere manualmente qualsiasi dimensione dello schermo da simulare](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator), ma non è possibile configurare i punti di interruzione predefiniti. |
 | [Blocco pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Rispetta lo stato di blocco impostato nella console Sites con l’estensione disponibile per bloccare/sbloccare le pagine dall’editor |
-| [Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile dall’amministratore del sito, con estensione per accedere anche alle proprietà delle pagine dall’editor |
+| [Proprietà pagina](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile dall’amministratore del sito, con estensione per accedere anche alle proprietà delle pagine dall’editor |
 | Proprietà con più campi | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
 | [DAM remoto](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [Controllo delle versioni delle pagine](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |

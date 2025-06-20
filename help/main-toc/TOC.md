@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
+source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
-source-wordcount: '6267'
-ht-degree: 98%
+source-wordcount: '6281'
+ht-degree: 97%
 
 ---
 
@@ -372,6 +372,7 @@ ht-degree: 98%
          + [Creazione delle pagine](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [Gestione delle pagine](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Proprietà pagina](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [Modifica delle proprietà di una pagina](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [Anteprima delle pagine](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versioni di pagina](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -384,6 +385,7 @@ ht-degree: 98%
          + [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Pannello laterale editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Modifica delle pagine](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Pubblicazione di pagine dall’Editor pagina](/help/sites-cloud/authoring/page-editor/publishing.md)
          + [Modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md)
          + [Aggiunta di annotazioni di pagina](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [Editor Rich Text](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -397,7 +399,7 @@ ht-degree: 98%
       + Editor universale {#universal-editor}
          + [Navigazione](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Pubblicazione di pagine dall’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Ereditarietà](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Modelli di pagina](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Frammenti {#fragments}

@@ -1,28 +1,35 @@
 ---
-title: Pubblicazione delle pagine
-description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando vari meccanismi in AEM.
+title: Pubblicazione di pagine dalla console Sites
+description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando la console Sites.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 75%
+source-wordcount: '1635'
+ht-degree: 73%
 
 ---
 
-# Pubblicazione delle pagine {#publishing-pages}
+
+# Pubblicazione di pagine dalla console Sites {#publishing-pages}
 
 Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, l’obiettivo è [renderli disponibili nel sito web pubblico](/help/sites-cloud/authoring/author-publish.md) (l’ambiente di pubblicazione).
 
 Questa operazione è denominata pubblicazione della pagina. Quando si rimuove una pagina dall’ambiente di pubblicazione, si parla di annullamento della pubblicazione. Durante la pubblicazione e l’annullamento della pubblicazione, la pagina rimane disponibile nell’ambiente di authoring per ulteriori modifiche fino a quando non viene eliminata.
 
-Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
+È possibile utilizzare la console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md) per pubblicare/annullare la pubblicazione di una pagina immediatamente o in una data/ora futura predefinita.
 
->[!NOTE]
+>[!TIP]
 >
->La pubblicazione di un [frammento di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) segue sostanzialmente la stessa procedura utilizzata per la pubblicazione di una pagina, ma dalla console o dall&#39;editor frammenti di esperienza.
+>Puoi pubblicare da posizioni diverse dalla console Sites.
+>
+>* [Dall&#39;Editor pagina](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [Dall&#39;editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [Dalla console o dall&#39;editor frammenti di esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+>
+>La pubblicazione da queste posizioni offre diverse opzioni, ma segue procedure simili e idee generali descritte qui.
 
 ## Terminologia {#terminology}
 
@@ -38,14 +45,6 @@ Puoi anche pubblicare o annullare la pubblicazione di una pagina immediatamente 
    * Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un servizio all’altro al momento della pubblicazione di una pagina (ad esempio, dall’authoring all’anteprima).
    * Questi termini vengono utilizzati principalmente dagli sviluppatori.
 
-## Pubblicazione delle pagine {#publishing-pages-1}
-
-A seconda della posizione, puoi pubblicare:
-
-* [Dall’editor di pagine](#publishing-from-the-page-editor)
-* [Dalla sezione ](#publishing-from-the-sites-console)
-* [Dall’editor universale](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Se non disponi dei privilegi necessari per la pubblicazione di una pagina specifica:
@@ -60,50 +59,17 @@ A seconda della posizione, puoi pubblicare:
 >
 >L’ordine delle pagine non è garantito:
 >
->* se sono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
->* se le pagine padre e figlio vengono pubblicate in azioni separate
+>* Se vengono selezionate per la pubblicazione solo le pagine figlie (in quanto le informazioni sull’ordine si trovano nella pagina padre)
+>* Se le pagine padre e figlio vengono pubblicate in azioni separate
 
-### Pubblicazione dall’Editor pagina {#publishing-from-the-page-editor}
-
-Se stai modificando una pagina nell&#39;[editor di pagine](/help/sites-cloud/authoring/page-editor/introduction.md), puoi pubblicarla direttamente dall&#39;editor.
-
-1. Seleziona l’icona **Informazioni pagina** per aprire il menu, quindi l’opzione **Pubblica pagina**.
-
-   ![Pubblicazione di una pagina tramite le opzioni di pagina](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. A seconda che la pagina includa o meno riferimenti che devono essere pubblicati:
-
-   * La pagina viene pubblicata direttamente, se non sono presenti riferimenti da pubblicare.
-   * Se la pagina include riferimenti da pubblicare, questi sono elencati nella procedura guidata di **Pubblicazione**, dove è possibile:
-      * Specifica le risorse, i tag e così via da pubblicare insieme alla pagina, quindi utilizza **Pubblica** per completare il processo.
-      * Seleziona **Annulla** per annullare l’azione.
-
-   ![Pubblicazione di riferimenti alla pagina](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Se selezioni l’opzione **Pubblica**, la pagina verrà replicata nell’ambiente di pubblicazione. Nell’editor pagina viene visualizzato un banner informativo che conferma l’azione di pubblicazione.
-
-   ![Banner informazioni stato di pubblicazione](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Quando visualizzi la stessa pagina nella console, lo stato aggiornato della pubblicazione è visibile.
-
-   ![Stato di pubblicazione della pagina nella vista a colonne della console Sites](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->La pubblicazione dall’editor pagina è superficiale, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine figlie.
-
->[!NOTE]
->
->Impossibile pubblicare le pagine a cui accedono [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) nell&#39;editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
-
-### Pubblicazione dalla console del sito {#publishing-from-the-sites-console}
+## Pubblicazione di pagine dalla console Sites {#publishing-from-the-sites-console}
 
 Nella console **Sites** sono disponibili due opzioni per la pubblicazione:
 
 * [Pubblicazione rapida ](#quick-publish)
 * [Gestisci pubblicazione ](#manage-publication)
 
-#### Pubblicazione rapida  {#quick-publish}
+### Pubblicazione rapida  {#quick-publish}
 
 **Pubblicazione rapida** si usa in casi semplici; le pagine selezionate vengono pubblicate immediatamente senza ulteriore interazione. Per questo motivo, anche eventuali riferimenti non pubblicati verranno pubblicati automaticamente.
 
@@ -123,7 +89,7 @@ Per pubblicare una pagina con Pubblicazione rapida:
 >
 >La pubblicazione rapida è una pubblicazione “superficiale”, ovvero vengono pubblicate solo le pagine selezionate e non le relative pagine secondarie.
 
-#### Gestisci pubblicazione  {#manage-publication}
+### Gestisci pubblicazione  {#manage-publication}
 
 **Gestisci pubblicazione** offre più opzioni rispetto a **Pubblicazione rapida**, consentendo l&#39;inclusione di pagine figlie, la personalizzazione dei riferimenti, la pubblicazione in un servizio di anteprima (se disponibile) e l&#39;avvio di tutti i flussi di lavoro applicabili e offrendo la possibilità di pubblicare in un secondo momento.
 
@@ -149,19 +115,19 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
      Con Pubblica più tardi viene avviato un flusso di lavoro per attivare le pagine selezionate alla data e all’ora specificate. Al contrario, l’annullamento della pubblicazione in un secondo momento avvia un flusso di lavoro per annullare la pubblicazione della pagina o delle pagine selezionate in un momento specifico.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >La pianificazione del contenuto per la pubblicazione non corrisponde a [**Ora di attivazione** e **Ora di disattivazione** disponibili nelle proprietà della pagina,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), ma può essere utilizzata in circostanze simili.
+     >La pianificazione del contenuto per la pubblicazione replica il contenuto e rispetta i flussi di lavoro di pubblicazione. Se desideri nascondere temporaneamente il contenuto già pubblicato senza annullare la pubblicazione, considera [**Ora di attivazione** e **Ora di disattivazione** disponibili nelle proprietà della pagina.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Opzioni di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Fai clic su **Avanti** per continuare.
 
-1. Nel passaggio successivo della procedura guidata Gestisci pubblicazione, **Ambito**, puoi definire l’ambito della pubblicazione o dell’annullamento della pubblicazione, ad esempio decidendo se includere pagine figlie e/o riferimenti.
+1. Nel passaggio successivo della procedura guidata Gestisci pubblicazione, **Ambito**, puoi definire l’ambito della pubblicazione o dell’annullamento della pubblicazione, ad esempio decidendo se includere pagine secondarie e/o riferimenti.
 
    ![Ambito di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
@@ -193,22 +159,22 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   **Includi elementi figlio**
+   **Includi elementi secondari**
 
    >[!NOTE]
    >
    >Consulta [Pubblicazione e annullamento della pubblicazione di una struttura](#publishing-and-unpublishing-a-tree)
 
-   Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di:
+   Facendo clic su **Includi elementi secondari** viene visualizzata una finestra di dialogo che consente di:
 
-   * **Includi elementi figlio**
-   * **Solo gli elementi figli di primo livello**
+   * **Includi elementi secondari**
+   * **Solo gli elementi secondari di primo livello**
    * **Solo pagine modificate**
    * **Solo pagine già pubblicate**
 
-   Attiva le opzioni richieste e conferma con **OK** per aggiungere le pagine figlie all’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Attiva le opzioni richieste e conferma con **OK** per aggiungere le pagine secondarie all’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
-   ![Inclusione di elementi figlio in Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+   ![Inclusione di elementi secondari in Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
 1. Fai clic su **Pubblica** per completare l’azione.
 
@@ -230,26 +196,9 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
 1. Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
 
-
-
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
 
-L’annullamento della pubblicazione di una pagina ne effettua la rimozione dall’ambiente di pubblicazione o [Anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) e la pagina non sarà più disponibile per i lettori.
-
-Con una [procedura simile alla pubblicazione](#publishing-pages), è possibile annullare la pubblicazione di una o più pagine dalla destinazione desiderata:
-
-* [Dall’editor di pagine](#unpublishing-from-the-editor)
-* [Dalla console Sites](#unpublishing-from-the-console)
-
-### Annullamento della pubblicazione dall’editor  {#unpublishing-from-the-editor}
-
-Durante la modifica di una pagina, se desideri annullarne la pubblicazione seleziona **Annulla pubblicazione pagina** nel menu **Informazioni pagina**, esattamente come [pubblicheresti la pagina](#publishing-from-the-editor).
-
->[!NOTE]
->
->Non è possibile annullare la pubblicazione delle pagine a cui accedono [alias](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) nell&#39;editor. Le opzioni di pubblicazione nell’editor sono disponibili solo per le pagine accessibili tramite i percorsi effettivi.
-
-### Annullamento della pubblicazione dalla console  {#unpublishing-from-the-console}
+L&#39;annullamento della pubblicazione di una pagina ne effettua la rimozione dall&#39;ambiente di pubblicazione o [anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) e la pagina non sarà più disponibile per i lettori.
 
 Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazione](#manage-publication), ma anche per annullarla.
 
@@ -283,16 +232,16 @@ Dopo aver inserito o aggiornato un numero considerevole di pagine di contenuto, 
 
    ![Selezione pagine di Gestisci pubblicazione](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Nella finestra di dialogo **Includi elementi figlio**:
+1. Nella finestra di dialogo **Includi elementi secondari**:
 
-   * seleziona **Includi elementi figlio**
-   * deseleziona **Includi solo gli elementi figlio di primo livello**
+   * seleziona **Includi elementi secondari**
+   * deseleziona **Includi solo gli elementi secondari di primo livello**
    * deseleziona **Includi solo pagine già pubblicate**
    * configura **Includi solo pagine modificate** come richiesto
 
    Queste opzioni sono selezionate per impostazione predefinita, pertanto dovrai ricordarti di configurarle. Conferma la selezione con **OK** per aggiungere il contenuto alla pubblicazione o all’annullamento della pubblicazione.
 
-   ![Inclusione di elementi figlio per la pubblicazione della struttura](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
+   ![Inclusione di elementi secondari per la pubblicazione della struttura](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
 1. Nella procedura guidata **Gestisci pubblicazione** è possibile personalizzare ulteriormente la selezione aggiungendo ulteriori pagine o rimuovendo quelle selezionate.
 

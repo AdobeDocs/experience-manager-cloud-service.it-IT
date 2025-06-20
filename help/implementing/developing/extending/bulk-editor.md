@@ -4,16 +4,16 @@ description: Scopri come configurare la modifica in serie per poter modificare l
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Configurazione della modifica in blocco delle proprietà di pagina {#configuring-bulk-editing-of-page-properties}
 
-[La modifica in blocco delle proprietà della pagina](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
+[La modifica in blocco delle proprietà della pagina](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 
 ## Considerazioni {#considerations}
 

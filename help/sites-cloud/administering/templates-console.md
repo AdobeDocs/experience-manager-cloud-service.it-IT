@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -50,8 +50,8 @@ Seleziona un modello per visualizzare le opzioni disponibili nella barra degli s
 * [Proprietà](#properties)
 * [Disattiva/Abilita](#enable-disable)
 * [Pubblicazione](#publish)
-* [Copiare](#copy)
-* [Elimina](#delete)
+* [Copia](#copy)
+* [Eliminare](#delete)
 
 ## Modifica {#edit}
 
@@ -73,7 +73,7 @@ Se un autore inizia a creare un modello con l’editor di modelli già abilitato
 
 ## Proprietà {#properties}
 
-È possibile modificare le [proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) nello stesso modo in cui è possibile [modificare le proprietà della pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).Le proprietà del modello includono:
+È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) includono:
 
 * Titolo modello
 * Descrizione
@@ -123,7 +123,7 @@ Una volta incollato, puoi:
 >
 >Dopo aver selezionato un modello nella console, utilizzare il tasto di scelta rapida `Command+c` o `ctrl+c` per copiare il modello selezionato.
 
-## Eliminazione in corso {#delete}
+## Eliminazione {#delete}
 
 Se un modello non è più necessario, può essere eliminato purché non sia referenziato da alcuna pagina.
 

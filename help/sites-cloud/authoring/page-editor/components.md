@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 89%
@@ -30,7 +30,7 @@ I componenti sono disponibili nella scheda **Componenti** del pannello laterale 
 
 Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pagina. Puoi quindi modificarlo utilizzando:
 
-* [Configura proprietà](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [Configura proprietà](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [Modifica contenuto](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
@@ -42,11 +42,11 @@ La [console Componenti](/help/sites-cloud/authoring/components-console.md) offre
 
 ## Componenti core  {#core-components}
 
-I [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
+I ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)componenti core[ offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-Vengono creati utilizzando le best practice dell’AEM e sono alla base dell’esperienza di authoring dell’AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
+Vengono creati utilizzando le best practice di AEM e sono alla base dell’esperienza di authoring di AEM. I componenti core possono essere facilmente estesi dagli sviluppatori per soddisfare specifiche esigenze di progetto.
 
-Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Oltre ai componenti core WCM, puoi utilizzare anche [Componenti core dei moduli adattivi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Questi componenti core forniscono un metodo standard e più semplice per [creare o aggiungere moduli a una pagina AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configurazione dei modelli {#configuring-templates}
 

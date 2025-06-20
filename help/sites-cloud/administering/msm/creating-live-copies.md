@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -155,7 +155,7 @@ Se ometti alcuni rami di lingua dalla Live Copy, puoi aggiungerli in un secondo 
 Quando crei il sito, fornisci valori per le seguenti proprietà:
 
 * **Lingue iniziali**: i rami della lingua della sorgente blueprint da includere nella Live Copy.
-* **Capitoli iniziali**: le pagine figlie dei rami di lingua blueprint da includere nella Live Copy.
+* **Capitoli iniziali**: le pagine secondarie dei rami di lingua blueprint da includere nella Live Copy.
 * **Percorso di Destinazione**: posizione della pagina root del sito Live Copy.
 * **Titolo**: titolo della pagina root del sito Live Copy.
 * **Nome**: (facoltativo) il nome del nodo JCR che memorizza la pagina root della Live Copy (il valore predefinito è basato sul titolo).
@@ -212,7 +212,7 @@ Per visualizzare le proprietà:
 
 ### Visualizzazione delle Live Copy di una pagina blueprint {#seeing-the-live-copies-of-a-blueprint-page}
 
-Le pagine blueprint (a cui si fa riferimento in una configurazione blueprint) ti forniscono un elenco delle pagine Live Copy che utilizzano la pagina corrente (blueprint) come sorgente. Utilizza questo elenco per tenere traccia delle Live Copy. L&#39;elenco viene visualizzato sulla scheda **Blueprint** nelle [proprietà della pagina](/help/sites-cloud/authoring/sites-console/page-properties.md).
+Le pagine blueprint (a cui si fa riferimento in una configurazione blueprint) ti forniscono un elenco delle pagine Live Copy che utilizzano la pagina corrente (blueprint) come sorgente. Utilizza questo elenco per tenere traccia delle Live Copy. L&#39;elenco viene visualizzato nella scheda **Blueprint** delle [proprietà pagina.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Scheda Blueprint nelle proprietà della pagina](../assets/live-copy-blueprint-tab.png)
 
@@ -356,7 +356,7 @@ Quando la pagina Live Copy viene sincronizzata con la pagina di origine, i compo
 
 ### Sospensione dell’ereditarietà per una pagina {#suspending-inheritance-for-a-page}
 
-Quando crei una Live Copy, la configurazione della Live Copy viene salvata nella pagina principale delle pagine copiate. Tutte le pagine figlie della pagina principale ereditano le configurazioni della Live Copy. Anche i componenti nelle pagine Live Copy ereditano la configurazione della Live Copy.
+Quando crei una Live Copy, la configurazione della Live Copy viene salvata nella pagina principale delle pagine copiate. Tutte le pagine secondarie della pagina principale ereditano le configurazioni della Live Copy. Anche i componenti nelle pagine Live Copy ereditano la configurazione della Live Copy.
 
 Puoi sospendere l’ereditarietà della Live Copy per una pagina Live Copy in modo da poter modificare le proprietà e i componenti della pagina. Quando sospendi l’ereditarietà, le proprietà e i componenti della pagina non vengono più sincronizzati con il sorgente.
 
@@ -373,7 +373,7 @@ Per sospendere l’ereditarietà su una pagina:
 1. Seleziona **Sospendi** nella barra degli strumenti. Puoi quindi selezionare:
 
    * **Sospendi**: per sospendere solo la pagina corrente.
-   * **Sospendi con elementi figlio**: per sospendere la pagina corrente insieme a eventuali pagine figlie.
+   * **Sospendi con elementi secondari**: per sospendere la pagina corrente insieme a eventuali pagine secondarie.
 
 1. Nella finestra di dialogo di conferma, seleziona **Sospendi**.
 
@@ -386,9 +386,9 @@ Quando viene selezionata una pagina Live Copy, l’azione [Sospendi è disponibi
 1. Seleziona l’opzione appropriata da:
 
    * **Sospendi**
-   * **Sospendi con figli**
+   * **Sospendi con elementi secondari**
 
-   ![Sospendi con figli](../assets/suspend-with-children.png)
+   ![Sospendi con elementi secondari](../assets/suspend-with-children.png)
 
 1. Conferma l’azione **Sospendi** nella finestra di dialogo **Sospendi Live Copy**:
 
@@ -436,27 +436,27 @@ Su una Live Copy esistente è possibile modificare la profondità di una pagina,
 
    * Avrà effetto immediato ed è non reversibile.
 
-   * Scollega esplicitamente le pagine figlie dalla Live Copy. Ulteriori modifiche sugli elementi figlio non potranno essere mantenute se annullate.
+   * Scollega esplicitamente le pagine secondarie dalla Live Copy. Ulteriori modifiche sugli elementi secondari non potranno essere mantenute se annullate.
 
    * Rimuove eventuali discendenti `LiveRelationships` anche se sono nidificati `LiveCopies`.
 
 * Passaggio a una Live Copy profonda:
 
-   * Lascia inalterate le pagine figlie.
+   * Lascia inalterate le pagine secondarie.
    * Per vedere l’effetto del passaggio, puoi effettuare un rollout in cui tutte le modifiche di contenuto vengono applicate in base alla configurazione del rollout.
 
 * Passa a una Live Copy shallow e quindi torna a una deep:
 
-   * Tratta tutti i figli della Live Copy shallow (precedentemente) come se fossero stati creati manualmente e vengono quindi spostati utilizzando `[oldname]_msm_moved name`.
+   * Tratta tutti gli elementi secondarie della Live Copy shallow (precedentemente) come se fossero stati creati manualmente e vengono quindi spostati utilizzando `[oldname]_msm_moved name`.
 
 Per specificare o modificare la profondità:
 
 1. Apri le proprietà della pagina Live Copy utilizzando il comando **Visualizza proprietà** della console **Sites** o utilizzando **Informazioni pagina** sulla barra degli strumenti.
 1. Apri la scheda **Live Copy**.
-1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine figlie siano incluse o meno:
+1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine secondarie siano incluse o meno:
 
-   * Spunta: una Live Copy deep (le pagine figlie sono incluse)
-   * Senza spunta: una Live Copy shallow (le pagine figlie sono escluse)
+   * Spunta: una Live Copy deep (le pagine secondarie sono incluse)
+   * Senza spunta: una Live Copy shallow (le pagine secondarie sono escluse)
 
    >[!CAUTION]
    >
