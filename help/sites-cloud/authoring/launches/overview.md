@@ -1,22 +1,30 @@
 ---
-title: Lanci
-description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di apportare modifiche pronte per la pubblicazione futura, mantenendo le pagine correnti
+title: Lanci per pagine
+description: Scopri come utilizzare Launches per le pagine in Adobe Experience Manager as a Cloud Service. I lanci consentono di sviluppare in modo efficiente i contenuti per una versione futura, mantenendo al contempo le pagine correnti.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 74%
 
 ---
 
-# Lanci {#launches}
+# Lanci per pagine {#launches-for-pages}
 
-I lanci consentono di creare in modo efficiente contenuti per una versione futura.
+In Adobe Experience Manager (AEM) as a Cloud Service, Launches consente di sviluppare in modo efficiente contenuti per una versione futura.
 
-Viene creato un *lancio* per consentire di apportare modifiche in preparazione alla pubblicazione futura, mantenendo al contempo le pagine correnti. Ciò significa che stai modificando effettivamente due versioni contemporaneamente: pagine attualmente pubblicate e una versione di tali pagine, da pubblicare in futuro. Una volta arrivato questo momento, puoi sostituire le pagine originali e pubblicare la nuova versione.
+Viene creato un *lancio* per consentire di apportare modifiche in preparazione alla pubblicazione futura, mantenendo al contempo il contenuto corrente. Per le pagine AEM, questo significa che stai modificando in modo efficace due versioni contemporaneamente: pagine attualmente pubblicate e una versione di tali pagine, da pubblicare in futuro. Una volta arrivato questo momento, puoi sostituire le pagine originali e pubblicare le nuove versioni.
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 Hai creato un *lancio*, quindi dopo aver modificato e aggiornato le tue *pagine di lancio* le hai *promosse* di nuovo al *Source*. Puoi quindi attivare queste *pagine Source* (livello principale). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
@@ -28,7 +36,7 @@ Ad esempio, le pagine di prodotti stagionali del tuo negozio online vengono aggi
 È inoltre possibile effettuare le seguenti operazioni:
 
 * Navigare nel contenuto del ramo lancio; se necessario, aggiungere o rimuovere pagine.
-* Visualizzare in anteprima come il contenuto pubblicato apparirà in una certa data nel futuro.
+* Visualizzare in anteprima come il contenuto pubblicato apparirà in una data specifica nel futuro.
 
 Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblicare le pagine sorgenti (mantenendo i contenuti aggiornati). Puoi promuovere tutte le pagine o solo quelle che hai modificato.
 
@@ -106,6 +114,12 @@ I lanci ti consentono di:
    ![Azioni da intraprendere su Launches nella console Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## La console Lanci {#the-launches-console}
+
+>[!NOTE]
+>
+>Questa console è solo per i lanci per le pagine.
+>
+>Per gestire i frammenti di contenuto, vedi [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli elencati.
 
