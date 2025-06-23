@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 92%
 
 ---
@@ -184,7 +184,7 @@ L’inserimento di contenuti multimediali nelle pagine web AEM è simile a quell
 
 #### Finalità - Sottotitoli (preregistrati) (1.2.2) {#purpose-captions-prerecorded}
 
-Per persone con disabilità uditiva totale o parziale, l’accesso ai contenuti audio è impossibile o molto difficile. I sottotitoli sono equivalenti testuali di elementi audio verbali e non, visualizzati sullo schermo al momento opportuno durante il video. Permettono alle persone che non possono ascoltare l’audio di capire cosa sta succedendo.
+Le persone non udenti o ipoudenti non sono in grado di accedere ai contenuti audio o hanno grandi difficoltà di accesso. I sottotitoli sono equivalenti testuali di elementi audio verbali e non, visualizzati sullo schermo al momento opportuno durante il video. Permettono alle persone che non possono ascoltare l’audio di capire cosa sta succedendo.
 
 #### Come soddisfare il criterio - Sottotitoli (preregistrati) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -197,17 +197,17 @@ Se possibile, utilizza i sottotitoli codificati in modo da consentire agli utent
 
 Per i sottotitoli codificati è necessario creare e fornire, unitamente al file video, un file di sottotitoli sincronizzati in un formato appropriato, ad esempio [SMIL](https://www.w3.org/AudioVideo/). I dettagli su come eseguire questa operazione vanno oltre lo scopo di questa guida, ma sono disponibili collegamenti ad alcune esercitazioni nella sezione [Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2)](#more-information-captions-prerecorded). Assicurati di includere una nota o di attivare la funzione dei sottotitoli nel lettore video per informare gli utenti che per il video sono disponibili i sottotitoli.
 
-Se è necessario utilizzare sottotitoli non codificati, inserisci il testo nella traccia video. A questo scopo è possibile utilizzare applicazioni di editing video che consentono di sovrapporre i sottotitoli al video.
+Se è necessario utilizzare sottotitoli non codificati, incorpora il testo nella traccia video. A questo scopo è possibile utilizzare applicazioni di editing video che consentono di sovrapporre i sottotitoli al video.
 
 #### Ulteriori informazioni - Sottotitoli (preregistrati) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Informazioni sui criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
-* [Come soddisfare i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
+* [Comprendere i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [Come soddisfare i criteri di successo 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C: File Multimediali Sincronizzati](https://www.w3.org/AudioVideo/).
-* [Sottotitoli, trascrizioni e descrizioni audio di WebAIM](https://webaim.org/techniques/captions/).
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### Audiodescrizione o tipo di media alternativo (preregistrato) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -360,7 +360,7 @@ Puoi assicurarti che alle pagine web sia associata la struttura corretta utilizz
      >
      >L’efficacia è la medesima, ma `<strong>` e `<em>` sono preferibili in quanto rappresentano un html corretto dal punto di vista semantico. Il tuo team di sviluppo può configurare l’editor Rich Text in modo che utilizzi `<strong>` e `<em>` (anziché `<b>` e `<i>`) durante lo sviluppo dell’istanza di progetto.
 
-* **Tabelle dati complesse**: in alcuni casi, in presenza di tabelle complesse con due o più livelli di titoli, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate mediante gli attributi **header** e **id**.
+* **Tabelle dati complesse**: in alcuni casi, in presenza di tabelle complesse con due o più livelli di intestazioni, le proprietà della tabella di base potrebbero non essere sufficienti a fornire tutte le informazioni strutturali necessarie. Per questo tipo di tabelle complesse, è necessario creare relazioni dirette tra le intestazioni e le celle correlate mediante gli attributi **header** e **id**.
 
   >[!NOTE]
   >
