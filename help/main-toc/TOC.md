@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
 source-wordcount: '6281'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -342,10 +342,10 @@ ht-degree: 97%
             + [Utilizzo dello strumento di mappatura utente](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + Strumenti di refactoring del codice {#refactoring-tools}
       + [Guida introduttiva agli strumenti di refactoring](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
-      + [Panoramica degli strumenti di refactoring](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
+      + [Panoramica sugli strumenti di refactoring](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Esperienza unificata](/help/journey-migration/unified-experience.md)
       + [Modernizzatore dell&#39;archivio](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [Repository Modernizer (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [Modernizzatore dell’archivio (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [Convertitore indice](/help/journey-migration/refactoring-tools/index-converter.md)
       + [Asset Workflow Migration (Migrazione flussi di lavoro per risorse)](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -448,7 +448,7 @@ ht-degree: 97%
          + [Lanci per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [Risorse nella console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Frammenti di contenuto con Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [Estensione dei riferimenti esterni AJO per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [Estensione dei riferimenti esterni ai frammenti di contenuto AJO](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [Scelte rapide da tastiera](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Creazione di un sito {#site-creation}
          + [Creazione di un nuovo sito](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -540,7 +540,7 @@ ht-degree: 97%
       + [Attività comuni di gestione risorse](/help/assets/manage-digital-assets.md)
       + [Gestisci pubblicazione](/help/assets/manage-publication.md)
       + [Anteprima delle risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-      + [Abilita tag avanzati per immagini](/help/assets/smart-tags.md)
+      + [Tag avanzati per immagini](/help/assets/smart-tags.md)
       + [Tag avanzati per video](/help/assets/smart-tags-for-videos.md)
       + [Organizzare le risorse](/help/assets/organize-assets.md)
       + [Utilizzare [!DNL Adobe Stock] risorse](/help/assets/aem-assets-adobe-stock.md)
@@ -1189,8 +1189,8 @@ ht-degree: 97%
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Generare varianti](/help/generative-ai/generate-variations.md)
    + [Assistente (Beta limitata)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Assistente AI per AEM Forms (Forms Experience Builder) (precoce adozione)](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Assistente AI di AEM Forms - Libreria di richieste](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Assistente IA per AEM Forms (Forms Experience Builder) (primi utilizzatori)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistente IA di AEM Forms - Libreria dei prompt](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
