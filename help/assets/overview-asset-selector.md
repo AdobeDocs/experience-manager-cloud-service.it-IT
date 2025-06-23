@@ -4,9 +4,9 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -201,19 +201,19 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi
 * ![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
 * ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
 * ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** &#x200B;]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** ]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
-### Metadati e dettagli risorsa {#asset-details-and-metadata}
+### Metadati e dettagli della risorsa {#asset-details-and-metadata}
 
-La pagina Dettagli risorsa offre una visualizzazione completa di una risorsa specifica, consolidando tutte le informazioni chiave in un’unica posizione. Include una panoramica con il nome, il formato del file, lo stato e una breve descrizione, insieme a un&#39;anteprima o a una miniatura per una facile identificazione visiva. Include anche i metadati di una risorsa come la data di creazione, l’autore, le dimensioni, la combinazione di colori e così via. Questi attributi consentono di cercare, filtrare e classificare in modo efficiente una risorsa. Il pannello dei dettagli della risorsa è disponibile sia nella barra che nella vista modale di Asset Selector (Selettore risorse). Nella visualizzazione della barra è necessario abilitare e configurare la proprietà `onDrop` per restituire una risorsa. In alternativa, nella vista modale, la proprietà `handleSelection` restituisce una risorsa. Vedi [Proprietà selettore risorse](asset-selector-properties.md).
+La pagina Dettagli risorsa offre una visualizzazione completa di una risorsa specifica, accorpando tutte le informazioni chiave in un’unica posizione. Include una panoramica con il nome, il formato del file, lo stato e una breve descrizione, insieme a un’anteprima o a una miniatura per una facile identificazione visiva. Include anche i metadati di una risorsa come la data di creazione, l’autore, le dimensioni, lo schema di colore e così via. Questi attributi consentono di cercare, filtrare e classificare una risorsa in modo efficiente. Il pannello dei dettagli della risorsa è disponibile sia nella visualizzazione a barra sia in quella modale del Selettore risorse. Nella visualizzazione a barra è necessario abilitare e configurare la proprietà `onDrop` per restituire una risorsa. In alternativa, nella visualizzazione modale, la proprietà `handleSelection` restituisce una risorsa. Consulta [proprietà del Selettore risorse](asset-selector-properties.md).
 
 Per visualizzare i dettagli di una risorsa e i metadati, esegui i passaggi seguenti:
 
-1. Apri Asset Selector MFE e passa a una risorsa.
-1. Passa il puntatore del mouse sulla risorsa e fai clic sull&#39;icona ![info](/help/assets/assets/info-icon-solid-black.svg).
-1. Vai alla scheda **[!UICONTROL Informazioni]** per visualizzare i dettagli della risorsa. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+1. Apri Selettore risorse MFE e passa a una risorsa.
+1. Passa il cursore del mouse sulla risorsa e fai clic sull’![icona info](/help/assets/assets/info-icon-solid-black.svg).
+1. Passa alla scheda **[!UICONTROL Informazioni]** per visualizzare i dettagli della risorsa. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-Per personalizzare il pannello di visualizzazione dei dettagli di una risorsa, vedi [Personalizzare le informazioni nella visualizzazione modale](asset-selector-customization.md#customize-info-in-modal-view).
+Per personalizzare il pannello di visualizzazione dei dettagli di una risorsa, consulta [Personalizzare le informazioni nella visualizzazione modale](asset-selector-customization.md#customize-info-in-modal-view).
 
 ![Dettagli risorsa](assets/asset-details.png)
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -276,16 +276,16 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Immagine Esempi del Selettore risorse"><br/>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Grafica di esempi del Selettore risorse"><br/>
         <a href="asset-selector-properties.md">Proprietà del Selettore risorse</a>
         <p>
-        <em>Comprendere l’utilizzo delle proprietà in modo pratico. </em>
+        <em>Informazioni sull’utilizzo delle proprietà in modo pratico. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Immagine Proprietà del Selettore risorse"><br/>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Grafica delle proprietà del Selettore risorse"><br/>
         <a href="asset-selector-examples.md">Esempi del Selettore risorse</a>
         <p>
         <em>Scopri le nozioni di base per personalizzare vari componenti del Selettore risorse, ad esempio filtri, selezione di risorse, risorse scadute e molto altro. </em>
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Immagine Raccolte del Selettore risorse"><br/>
         <a href="asset-selector-collections.md">Raccolte del Selettore risorse</a>
         <p>
-        <em>Scopri come utilizzare le raccolte in Asset Selector utilizzando l’archivio Experience Manager. </em>
+        <em>Scopri come utilizzare le raccolte all’interno del Selettore risorse utilizzando l’archivio Experience Manager. </em>
         </p>
     </td>
     <td>

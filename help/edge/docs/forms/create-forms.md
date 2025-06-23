@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Per procedere con la creazione del modulo:
 
    >[!IMPORTANT]
    >
-   >**Il foglio in cui è stato creato il modulo presenta delle limitazioni relative al nome. Solo `helix-default` e `shared-aem` possono essere utilizzati come nomi di foglio.**
+   >**Il foglio in cui è stato creato il modulo presenta restrizioni relative al nome. Solo `helix-default` e `shared-aem` possono essere utilizzati come nomi per il foglio.**
 
 1. Per aggiungere i campi modulo, inserisci le righe e le intestazioni di colonna nel foglio “shared-aem”. Ogni riga deve rappresentare un [campo modulo](/help/edge/docs/forms/form-components.md#available-components), con intestazioni di colonna che definiscono il campo corrispondente [proprietà](/help/edge/docs/forms/form-components.md#components-properties).
 

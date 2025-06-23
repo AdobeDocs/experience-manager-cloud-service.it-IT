@@ -1,46 +1,45 @@
 ---
-title: Assistente AI di AEM Forms - Libreria di richieste
-description: Raccolta di modelli ed esempi comprovati per la creazione di moduli con assistenza AI nell’interfaccia utente di gestione di Forms, nell’editor di Forms adattivo e nell’editor universale.
+title: Assistente IA di AEM Forms - Libreria dei prompt
+description: Raccolta di pattern di prompt ed esempi dimostrati per la creazione di moduli con assistenza IA nell’interfaccia utente per la gestione dei moduli, nell’editor dei moduli adattivi e nell’editor universale.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
-workflow-type: tm+mt
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: abcd5be06b0bf24ebe8737827fb4abdbf148b1b0
+workflow-type: ht
 source-wordcount: '1613'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Assistente IA di AEM Forms - Libreria dei prompt
 
-
-# Assistente AI di AEM Forms - Libreria di richieste
-
-Raccolta di modelli di prompt riutilizzabili ed esempi per scenari comuni di creazione di moduli. Considera questi modelli come modelli che puoi adattare alle tue esigenze specifiche. Ogni sezione tratta un caso d’uso particolare con istruzioni su quando utilizzarlo e esempi comprovati.
+Raccolta di pattern ed esempi di prompt riutilizzabili per scenari comuni di creazione di moduli. Considerali come modelli che puoi adattare alle tue esigenze specifiche. Ogni sezione tratta un caso d’uso particolare con indicazioni su quando utilizzarlo ed esempi dimostrati.
 
 >[!NOTE]
 >
-> L’Assistente all’intelligenza artificiale per AEM Forms è disponibile nell’ambito del programma per l’adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com.
+> L’Assistente IA per AEM Forms è disponibile nel programma per primi utilizzatori. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifica**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che l’Assistente IA per AEM Forms continua a evolvere durante il programma di adozione anticipata.
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che l’Assistente IA per AEM Forms continua a evolversi durante il programma per primi utilizzatori.
 
 ## Best practice per risultati ottimali
 
-Per ottenere il massimo dall’Assistente AI, tieni presenti i seguenti suggerimenti:
+Per ottenere il massimo dall’Assistente IA, tieni presente i seguenti consigli:
 
-### Avvio semplice, creazione incrementale
+### Inizia in modo semplice, crea gradualmente
 
-Inizia con comandi specifici più piccoli (ad esempio, &quot;Aggiungi un input di testo per &#39;Nome&#39;&quot;) invece di richieste complesse in più passaggi inizialmente. Questo approccio garantisce precisione e semplifica la risoluzione dei problemi se qualcosa non funziona come previsto.
+Inizia con comandi specifici più piccoli (ad esempio, “Aggiungi un input di testo per ‘Nome’”) invece di richieste complesse in più passaggi fin da subito. Questo approccio contribuisce a garantire precisione e semplifica la risoluzione dei problemi se qualcosa non funziona come previsto.
 
-**Esempio di avvio semplice:**
+**Esempio di inizio semplice:**
 
 ```
 Add a text input field for "First Name" with placeholder "Enter your first name"
 ```
 
-**Quindi Generare In Modo Incrementale:**
+**Quindi costruisci in modo graduale:**
 
 ```
 Make @firstName mandatory and add validation message "First name is mandatory"
@@ -48,20 +47,20 @@ Make @firstName mandatory and add validation message "First name is mandatory"
 
 ### Utilizzare la terminologia di AEM Forms
 
-Utilizza termini come &quot;pannello&quot;, &quot;campo di immissione testo&quot;, &quot;gruppo di caselle di controllo&quot;, &quot;azione di invio&quot;, &quot;regola&quot; ecc. per una migliore comprensione da parte dell’assistente. In questo modo l’intelligenza artificiale interpreta correttamente le richieste nel contesto di AEM Forms.
+Utilizza termini come “pannello”, “campo di input di testo”, “gruppo di caselle di controllo”, “azione di invio”, “regola” ecc. per una comprensione migliore da parte dell’assistente. Ciò assicura che l’IA interpreti correttamente le richieste nel contesto di AEM Forms.
 
 **Termini preferiti:**
 
-- &quot;campo di immissione testo&quot; invece di &quot;casella di testo&quot;
-- &quot;gruppo di caselle di controllo&quot; invece di &quot;caselle di controllo&quot;
-- &quot;menu a discesa&quot; invece di &quot;seleziona elenco&quot;
-- &quot;pannello&quot; invece di &quot;sezione&quot; o &quot;contenitore&quot;
-- &quot;invia azione&quot; invece di &quot;invio modulo&quot;
-- &quot;rule&quot; invece di &quot;logic&quot; o &quot;condition&quot;
+- “campo di input di testo” invece di “casella di testo”
+- “gruppo di caselle di controllo” invece di “caselle di controllo”
+- “menu a discesa” invece di “seleziona elenco”
+- “pannello” invece di “sezione” o “contenitore”
+- “invia azione” invece di “invio modulo”
+- “regola” invece di “logica” o “condizione”
 
-### Campi di riferimento chiari
+### Riferimento ai campi in modo chiaro
 
-Durante la configurazione dei campi esistenti, utilizza la notazione @fieldName (ad esempio, &quot;Rendi @firstName obbligatorio&quot;). Questo aiuta l’intelligenza artificiale a identificare esattamente a quale campo stai facendo riferimento, soprattutto nelle forme complesse con molti campi.
+Durante la configurazione dei campi esistenti, utilizza la notazione @fieldName (ad esempio, “Rendi @firstName obbligatorio”). Questo aiuta l’IA a identificare esattamente a quale campo stai facendo riferimento, soprattutto nei moduli complessi con molti campi.
 
 **Esempi:**
 
@@ -69,43 +68,43 @@ Durante la configurazione dei campi esistenti, utilizza la notazione @fieldName 
 - `Show @spouseInfo panel when @maritalStatus equals "Married"`
 - `Set @country default value to "United States"`
 
-### Rivedi sempre i piani
+### Rivedere sempre i piani
 
-Prima di fare clic su Applica, esaminare sempre attentamente i piani per le modifiche proposte dall&#39;assistente nell&#39;Editor universale. L’intelligenza artificiale ti mostrerà cosa intende fare; impiega un attimo a verificare che corrisponda alle tue aspettative.
+Prima di fare clic su “Applica”, rivedi sempre attentamente i piani per le modifiche proposte dall’assistente nell’editor universale. L’IA ti mostrerà cosa intende fare; prenditi un momento per verificare che corrisponda alle tue aspettative.
 
-### Convalida manuale
+### Convalidare manualmente
 
-Dopo che l&#39;assistente apporta le modifiche, visualizzare sempre in anteprima e verificare il funzionamento e l&#39;aspetto del modulo. L’intelligenza artificiale è uno strumento potente, ma la convalida finale è fondamentale per garantire la qualità.
+Dopo che l’assistente apporta le modifiche, visualizza sempre in anteprima e testa il modulo per assicurarti che funzioni e appaia come previsto. L’IA è uno strumento potente, ma la convalida finale è fondamentale per garantire la qualità.
 
-**Elenco di controllo convalida:**
+**Elenco di controllo della convalida:**
 
-- Verifica della funzionalità del modulo in modalità anteprima
+- Testare la funzionalità del modulo in modalità anteprima
 - Verificare che la logica condizionale funzioni correttamente
-- Verifica la reattività mobile
-- Invio modulo di prova
+- Controllare la reattività dei dispositivi mobili
+- Invio di un modulo di test
 - Convalidare le funzioni di accessibilità
 
 ### Iterare e perfezionare
 
-Se il primo prompt non restituisce il risultato esatto, prova a riformulare o suddividere la richiesta in passaggi più piccoli. L’intelligenza artificiale apprende dal contesto, quindi fornire dettagli più specifici spesso migliora i risultati.
+Se il primo prompt non restituisce il risultato esatto, prova a riformulare o suddividere la richiesta in passaggi più piccoli. L’IA apprende dal contesto, quindi fornire dettagli più specifici spesso migliora i risultati.
 
-**Esempio iterazione:**
+**Esempio di iterazione:**
 
-1. Primo tentativo: &quot;Rendi il modulo compatibile con i dispositivi mobili&quot;
-2. Perfezionato: &quot;Ottimizza il layout del modulo per schermi mobili sotto i 768 px con layout a colonna singola e target touch più grandi&quot;
+1. Primo tentativo: “Rendi il modulo adatto ai dispositivi mobili”
+2. Perfezionato: “Ottimizza il layout del modulo per schermi di dispositivi mobili sotto i 768px con layout a colonna singola e target touch più grandi”
 
-### Invia feedback
+### Fornire feedback
 
-Utilizza il meccanismo di feedback integrato per aiutare l’assistente ad apprendere e migliorare. Il tuo feedback aiuta a migliorare l’intelligenza artificiale per tutti.
+Utilizza il meccanismo di feedback incorporato per aiutare l’assistente ad apprendere e migliorare. Il tuo feedback aiuta a migliorare l’IA per tutti.
 
 
 ## Esempi di sviluppo incrementale
 
-Questi esempi mostrano come creare moduli passo dopo passo, partendo da semplici e aggiungendo gradualmente complessità:
+Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo semplice e aggiungendo complessità gradualmente:
 
-### Esempio 1: creazione incrementale di un modulo contatto
+### Esempio 1: creazione incrementale di un modulo di contatto
 
-**Passaggio 1 - Inizio semplice:**
+**Passaggio 1 - Inizia in modo semplice:**
 
 ```
 Create a basic contact form with name, email, and message fields
@@ -117,25 +116,25 @@ Create a basic contact form with name, email, and message fields
 Make @name and @email mandatory fields with appropriate validation
 ```
 
-**Passaggio 3 - Migliorare l&#39;esperienza utente:**
+**Passaggio 3 - Migliora l’esperienza utente:**
 
 ```
 Add placeholder text: @name "Your full name", @email "your.email@company.com", @message "Tell us how we can help"
 ```
 
-**Passaggio 4 - Aggiunta di funzionalità avanzate:**
+**Passaggio 4 - Aggiungi funzionalità avanzate:**
 
 ```
 Add a dropdown @inquiryType with options: "General Question", "Support Request", "Sales Inquiry", "Partnership"
 ```
 
-**Passaggio 5 - Implementazione logica condizionale:**
+**Passaggio 5 - Implementa logica condizionale:**
 
 ```
 Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "Support Request"
 ```
 
-### Esempio 2: creazione di un modulo di registrazione in modo incrementale
+### Esempio 2: creazione incrementale di un modulo di registrazione
 
 **Passaggio 1 - Struttura di base:**
 
@@ -143,7 +142,7 @@ Show @urgencyLevel dropdown (Low, Medium, High) only when @inquiryType equals "S
 Create a user registration form with personal information panel
 ```
 
-**Passaggio 2 - Aggiungi campi di base:**
+**Passaggio 2 - Aggiungi campi principali:**
 
 ```
 Add text input fields: @firstName, @lastName, @email, @phone to the personal information panel
@@ -161,7 +160,7 @@ Make @firstName, @lastName, and @email mandatory with real-time validation
 Create a new panel "Account Information" with @username and @password fields
 ```
 
-**Passaggio 5 - Miglioramento della sicurezza:**
+**Passaggio 5 - Migliora sicurezza:**
 
 ```
 Add password confirmation field @confirmPassword with validation to match @password
@@ -175,18 +174,18 @@ Create "Preferences" panel with @newsletter checkbox and @communicationMethod ra
 
 Questo approccio incrementale consente di:
 
-- Rileva i problemi prima che si verifichino
+- Rilevare i problemi prima che si verifichino
 - Testare accuratamente ogni funzione
-- Effettua regolazioni in base al feedback degli utenti
+- Effettuare modifiche in base al feedback degli utenti
 - Mantenere un maggiore controllo sul processo di sviluppo
 
-## Avvio di un nuovo Forms
+## Avvio di nuovi moduli
 
-**Quando utilizzare:** All&#39;inizio di qualsiasi progetto modulo. Questo prompt consente all’intelligenza artificiale di comprendere le tue esigenze e creare la struttura di base.
+**Quando utilizzarlo:** all’inizio di qualsiasi progetto di modulo. Questo prompt consente all’IA di comprendere i requisiti e creare la struttura di base.
 
-**Come utilizzare:** Inizia con la struttura di base e i requisiti di base. Specifica il tipo di modulo, il pubblico di destinazione e lo scopo principale. Aggiungete complessità ai prompt successivi.
+**Come utilizzarlo:** inizia con la struttura di base e i requisiti principali. Specifica il tipo di modulo, il pubblico di destinazione e lo scopo principale. Aggiungi complessità nei prompt successivi.
 
-**Esempio di prompt - Avvio semplice:**
+**Prompt di esempio - Inizio semplice:**
 
 ```
 Create a **customer onboarding form** for new bank account applications with:
@@ -199,7 +198,7 @@ Create a **customer onboarding form** for new bank account applications with:
 Start with a simple layout that we can enhance step by step.
 ```
 
-**Quindi Generare In Modo Incrementale:**
+**Quindi crea in modo incrementale:**
 
 ```
 Add an address panel to @customerOnboardingForm with street address, city, state, and zip code fields
@@ -213,7 +212,7 @@ Add employment information panel with @employer, @jobTitle, and @annualIncome fi
 Add file upload field @identityDocuments for identity verification (Accept: .pdf,.jpg,.png)
 ```
 
-**Richieste di avvio semplici alternative:**
+**Prompt alternativi di inizio semplice:**
 
 ```
 Create a basic **event registration form** with name, email, and event selection fields
@@ -227,13 +226,13 @@ Build a simple **contact form** with name, email, and message fields
 Design a basic **feedback survey** with rating scale and comments field
 ```
 
-## Struttura e layout modulo
+## Struttura e layout del modulo
 
-**Quando utilizzare:** quando è necessario organizzare moduli complessi o migliorare l&#39;esperienza utente tramite una migliore progettazione del layout.
+**Quando utilizzarlo:** quando è necessario organizzare moduli complessi o migliorare l’esperienza utente tramite una migliore progettazione del layout.
 
-**Come utilizzare:** Concentrarsi sul percorso di utenti e sul raggruppamento logico delle informazioni. Specifica le preferenze di layout e i pattern di navigazione.
+**Come utilizzarlo:** concentrati sul percorso dell’utente e sul raggruppamento logico delle informazioni. Specifica le preferenze di layout e i modelli di navigazione.
 
-**Esempio di richiesta - Struttura di modulo con più passaggi:**
+**Prompt di esempio - Struttura di modulo con più passaggi:**
 
 ```
 Convert this single-page form into a **3-step wizard** with:
@@ -258,7 +257,7 @@ Convert this single-page form into a **3-step wizard** with:
 Include "Previous" and "Next" buttons, allow users to jump between completed steps, save progress automatically.
 ```
 
-**Prompt di ottimizzazione layout:**
+**Prompt di ottimizzazione del layout:**
 
 ```
 Reorganize this form using a **wizard layout** for desktop and single column for mobile. 
@@ -272,13 +271,14 @@ Convert this long form into an **accordion layout** where users can expand/colla
 Create a **vertical tabbed interface** for this form with tabs for: Basic Info, Contact Details, Preferences, and Review.
 ```
 
-## Gestione e convalida dei campi
+## Gestione e convalida del campo
 
-**Quando utilizzare:** Quando è necessario aggiungere, modificare o migliorare i campi modulo con regole e comportamenti di convalida specifici.
+**Quando utilizzarlo:** quando è necessario aggiungere, modificare o migliorare i campi modulo con regole e comportamenti di convalida specifici.
 
-**Come utilizzare:** Specifica i tipi di campo, i requisiti di convalida e le aspettative di esperienza utente. Fai riferimento ai campi esistenti utilizzando la sintassi @fieldName.
+**Come utilizzarlo:** specifica i tipi di campo, i requisiti di convalida e le aspettative dell’esperienza utente. Fai riferimento ai campi esistenti utilizzando la sintassi @fieldName.
 
-**Esempio di richiesta - Miglioramento del campo:**
+
+**Prompt di esempio - Miglioramento del campo:**
 
 ```
 Enhance the form fields with these specific requirements:
@@ -305,7 +305,7 @@ Enhance the form fields with these specific requirements:
 - Show upload progress and file names after upload
 ```
 
-**Prompt Specifici Del Campo:**
+**Prompt specifici per i campi:**
 
 ```
 Add a **file upload field** for resume with these specs: Accept only PDF/DOC/DOCX files, allow multiple files, show upload progress, display file names after upload.
@@ -321,11 +321,11 @@ Build a **repeatable panel** for work experience where users can add/remove mult
 
 ## Logica e regole condizionali
 
-**Quando utilizzare:** Quando è necessario un comportamento di modulo dinamico basato su input utente o regole business.
+**Quando utilizzarlo:** quando è necessario un comportamento dinamico del modulo basato su input utente o regole di business.
 
-**Come utilizzare:** Definisci chiaramente le condizioni e le azioni risultanti. Utilizza riferimenti di campo specifici e operatori logici.
+**Come utilizzarlo:** definisci chiaramente le condizioni e le azioni risultanti. Utilizza riferimenti di campo specifici e operatori logici.
 
-**Esempio di richiesta - Logica condizionale complessa:**
+**Prompt di esempio - Logica condizionale complessa:**
 
 ```
 Implement these conditional rules for the application form:
@@ -357,7 +357,7 @@ Implement these conditional rules for the application form:
   - Add accessibility preferences section
 ```
 
-**Prompt Specifici Della Regola:**
+**Prompt specifici per regole:**
 
 ```
 Create a **visibility rule** that shows @spouseInformation panel only when @maritalStatus equals "Married" or "Domestic Partnership".
@@ -373,9 +373,9 @@ Implement **smart defaults** where @country selection auto-sets related fields. 
 
 ## Integrazione e invio dei dati
 
-**Quando utilizzare:** Quando è necessario connettere i moduli a sistemi back-end, database o servizi esterni.
+**Quando utilizzarlo:** quando è necessario connettere i moduli a sistemi back-end, database o servizi esterni.
 
-**Come utilizzare:** Inizia con la configurazione di base dell&#39;invio, quindi aggiungi ulteriori integrazioni in modo incrementale. Specifica il tipo di integrazione, i requisiti del formato dati e le preferenze di gestione degli errori.
+**Come utilizzarlo:** inizia con la configurazione di base dell’invio, quindi aggiungi ulteriori integrazioni in modo incrementale. Specifica il tipo di integrazione, i requisiti del formato dati e le preferenze di gestione degli errori.
 
 **Prompt di esempio - Inizia con invio di base:**
 
@@ -389,7 +389,7 @@ Configure basic form submission for @applicationForm:
 - Show error message if submission fails: "Submission failed, please try again"
 ```
 
-**Aggiungi Azioni Secondarie In Modo Incrementale:**
+**Aggiungi azioni secondarie in modo in modo incrementale:**
 
 ```
 Add email notification to @applicationForm: Send confirmation email to @email address with application reference number
@@ -399,7 +399,7 @@ Add email notification to @applicationForm: Send confirmation email to @email ad
 Add CRM integration to @applicationForm: Create new lead record with @firstName, @lastName, @email, and set Status to "New Application"
 ```
 
-**Esempio di richiesta - Invio multicanale avanzato:**
+**Prompt di esempio - Invio multicanale avanzato:**
 
 ```
 Configure form submission with multiple data destinations:
@@ -428,7 +428,7 @@ Configure form submission with multiple data destinations:
 - Display estimated processing timeline
 ```
 
-**Prompt Specifici Dell&#39;Integrazione:**
+**Prompt specifici per integrazione:**
 
 ```
 Connect this form to **CRM system** to create new leads. Map @firstName to FirstName, @email to Email, set LeadSource to "Web Form", and Status to "New".
@@ -442,13 +442,13 @@ Set up **workflow trigger** when form is submitted. Pass all form data and trigg
 Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents.
 ```
 
-## Importazione progettazione e conversione
+## Importazione e conversione della progettazione
 
-**Quando utilizzare:** Se sono presenti progettazioni di moduli esistenti (PDF, Figma, immagini) che devono essere convertite in moduli AEM funzionali.
+**Quando utilizzarlo:** quando disponi di progettazioni di moduli esistenti (PDF, Figma, immagini) che devono essere convertite in moduli AEM funzionali.
 
-**Come utilizzare:** Fornire un contesto chiaro sulla progettazione di origine e specificare eventuali modifiche o miglioramenti necessari.
+**Come utilizzarlo:** fornisci un contesto chiaro sulla progettazione di origine e specifica eventuali modifiche o miglioramenti necessari.
 
-**Esempio di richiesta - Conversione PDF Form:**
+**Prompt di esempio - Conversione modulo PDF:**
 
 ```
 Convert this uploaded **PDF application form** into a functional AEM adaptive form:
@@ -480,7 +480,7 @@ Convert this uploaded **PDF application form** into a functional AEM adaptive fo
 Preserve all original field labels and help text, but improve the user experience with modern form interactions.
 ```
 
-**Richieste di importazione progettazione:**
+**Prompt di importazione della progettazione:**
 
 ```
 Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness.
@@ -494,13 +494,13 @@ Analyze this **image of a paper form** and recreate it digitally. Improve the la
 Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes.
 ```
 
-## Ottimizzazione mobile e reattività
+## Ottimizzazione e reattività per dispositivi mobili
 
-**Quando utilizzare:** Quando i moduli devono funzionare senza problemi su tutti i tipi di dispositivi e le dimensioni dello schermo.
+**Quando utilizzarlo:** quando i moduli devono funzionare senza problemi su tutti i tipi di dispositivi e dimensioni dello schermo.
 
-**Come utilizzare:** Inizia con l&#39;ottimizzazione mobile di base, quindi migliora con le funzionalità avanzate. Enfatizza l’approccio mobile-first e specifica i comportamenti dei punti di interruzione in modo incrementale.
+**Come utilizzarlo:** inizia con l’ottimizzazione per dispositivi mobili di base, quindi migliora con le funzioni avanzate. Enfatizza l’approccio mobile-first e specifica i comportamenti dei punti di interruzione in modo incrementale.
 
-**Esempio di richiesta - Inizia con ottimizzazione mobile di base:**
+**Prompt di sempio - Inizia con l’ottimizzazione per dispositivi mobili di base:**
 
 ```
 Make @contactForm mobile-friendly with:
@@ -511,7 +511,7 @@ Make @contactForm mobile-friendly with:
 - Responsive design that works on phones and tablets
 ```
 
-**Aggiungi funzionalità mobili avanzate:**
+**Aggiungi funzioni avanzate per dispositivi mobili:**
 
 ```
 Enhance @contactForm mobile experience with:
@@ -520,7 +520,7 @@ Enhance @contactForm mobile experience with:
 - Swipe gestures for multi-step navigation
 ```
 
-**Esempio di richiesta - Ottimizzazione completa di Mobile-First:**
+**Prompt di esempio - Ottimizzazione completa mobile-first:**
 
 ```
 Optimize this form for **mobile-first responsive design**:
@@ -557,7 +557,7 @@ Optimize this form for **mobile-first responsive design**:
 - Progressive enhancement approach
 ```
 
-**Richieste semplici specifiche per dispositivi mobili:**
+**Prompt semplici specifici per dispositivi mobili:**
 
 ```
 Make @checkoutForm mobile-optimized with large buttons and one-thumb navigation
@@ -573,11 +573,11 @@ Enable offline functionality for @applicationForm with local data saving
 
 ## Accessibilità e conformità
 
-**Quando utilizzare:** Quando i moduli devono soddisfare gli standard di accessibilità (WCAG 2.1 AA) o i requisiti di conformità.
+**Quando utilizzarlo:** quando i moduli devono soddisfare gli standard di accessibilità (WCAG 2.1 AA) o i requisiti di conformità.
 
-**Come utilizzare:** Specificare i requisiti di accessibilità e gli standard di conformità che devono essere soddisfatti.
+**Come utilizzarlo:** specifica i requisiti di accessibilità e gli standard di conformità che devono essere soddisfatti.
 
-**Esempio di richiesta - Implementazione accessibilità:**
+**Prompt di esempio - Implementazione accessibilità:**
 
 ```
 Make this form **WCAG 2.1 AA compliant** with these accessibility features:
@@ -619,7 +619,7 @@ Make this form **WCAG 2.1 AA compliant** with these accessibility features:
 - Validate HTML for semantic correctness
 ```
 
-**Richieste specifiche di conformità:**
+**Prompt specifici per conformità:**
 
 ```
 Ensure this **healthcare form meets HIPAA requirements** with proper data encryption, audit logging, and privacy controls.
@@ -633,13 +633,13 @@ Make this **financial form PCI DSS compliant** with secure payment field handlin
 Create a **government form meeting Section 508 standards** with full accessibility and plain language requirements.
 ```
 
-## Test e qualità Assurance
+## Test e garanzia di qualità
 
-**Quando utilizzare:** Quando è necessario convalidare la funzionalità del modulo, l&#39;esperienza utente e le prestazioni tecniche.
+**Quando utilizzarlo:** quando è necessario convalidare la funzionalità del modulo, l’esperienza utente e le prestazioni tecniche.
 
-**Come utilizzare:** Specificare scenari di test, casi limite e criteri di qualità da verificare.
+**Come utilizzarlo:** specifica scenari di test, casi limite e criteri di qualità da verificare.
 
-**Esempio di richiesta - Test modulo completo:**
+**Prompt di esempio- Test modulo completo:**
 
 ```
 Create a **comprehensive testing plan** for this application form:
@@ -687,7 +687,7 @@ Create a **comprehensive testing plan** for this application form:
 - Check print functionality across browsers
 ```
 
-**Prompt Specifici Per Il Test:**
+**Prompt specifici per test:**
 
 ```
 Create **automated test scripts** for this form's critical user paths: successful submission, validation errors, and conditional logic.
@@ -703,11 +703,11 @@ Set up **performance monitoring** to track form completion rates, abandonment po
 
 ## Funzioni e integrazioni avanzate
 
-**Quando utilizzare:** Quando sono necessarie funzionalità di moduli sofisticati come l&#39;assistenza AI, flussi di lavoro avanzati o integrazioni complesse.
+**Quando utilizzarlo:** quando sono necessarie funzionalità di moduli sofisticate come l’assistenza IA, flussi di lavoro avanzati o integrazioni complesse.
 
-**Come utilizzare:** Definisci chiaramente le funzionalità avanzate e i requisiti di integrazione.
+**Come utilizzarlo:** definisci chiaramente le funzionalità avanzate e i requisiti di integrazione.
 
-**Esempio di richiesta - Modulo avanzato dall&#39;intelligenza artificiale:**
+**Prompt di esempio - Modulo migliorato dall’IA:**
 
 ```
 Add **AI-powered features** to enhance this application form:
@@ -765,11 +765,11 @@ Implement **blockchain verification** for document authenticity, immutable audit
 
 ## Risoluzione dei problemi e ottimizzazione
 
-**Quando utilizzare:** Quando i moduli presentano problemi di prestazioni, di esperienza utente o tecnici.
+**Quando utilizzarlo:** quando i moduli presentano problemi di prestazioni, di esperienza utente o difficoltà tecniche.
 
-**Come utilizzare:** Descrivere chiaramente il problema specifico e il risultato desiderato.
+**Come utilizzarlo:** descrivi chiaramente il problema specifico e il risultato desiderato.
 
-**Esempio di prompt - Ottimizzazione delle prestazioni:**
+**Prompt di esempio- Ottimizzazione delle prestazioni:**
 
 ```
 Optimize this form for **better performance and user experience**:
@@ -809,7 +809,7 @@ Optimize this form for **better performance and user experience**:
 - A/B test improvements with real users
 ```
 
-**Prompt per la risoluzione dei problemi:**
+**Risoluzione dei problemi relativi ai prompt:**
 
 ```
 **Debug this form submission error:** Users report getting "500 Internal Server Error" when submitting. Check validation logic, server endpoints, and data formatting.
@@ -825,17 +825,17 @@ Optimize this form for **better performance and user experience**:
 
 ## Best practice specifiche per l’ambiente
 
-### Interfaccia utente di gestione Forms
+### Interfaccia utente per la gestione dei moduli
 
-**Quando utilizzare:** per attività di gestione e creazione di moduli di alto livello.
+**Quando utilizzarlo:** per attività di gestione e creazione di moduli di alto livello.
 
 ```
 In Forms Management UI, create a new **customer survey template** that can be reused across different departments. Include standard branding, common field types, and configurable sections.
 ```
 
-### Editor Forms adattivo
+### Editor di moduli adattivi
 
-**Quando utilizzare:** Per la configurazione dettagliata del modulo e la creazione di regole complesse.
+**Quando utilizzarlo:** per la configurazione dettagliata del modulo e la creazione di regole complesse.
 
 ```
 In the Adaptive Forms Editor, configure **advanced business rules** for this loan application: calculate debt-to-income ratio, determine eligibility, and show appropriate next steps.
@@ -843,57 +843,57 @@ In the Adaptive Forms Editor, configure **advanced business rules** for this loa
 
 ### Editor universale
 
-**Quando utilizzare:** Per Edge Delivery Services Form con modifica visiva.
+**Quando utilizzarlo:** per moduli di Edge Delivery Services con modifica visiva.
 
 ```
 In Universal Editor, create a **responsive contact form** for the company website. Ensure it matches the site design and integrates with the existing content management workflow.
 ```
 
-## Guida rapida alla guida di riferimento dei comandi
+## Guida rapida alla guida ai comandi
 
-| Comando | Caso d’uso migliore | Esempio |
+| Comando | Miglior caso d’uso | Esempio |
 |---------|---------------|---------|
 | `/create-form` | Avvio di nuovi moduli | `/create-form employee onboarding with personal info and benefits selection` |
 | `/add-form` | Aggiunta di moduli alle pagine | `/add-form newsletter signup with email and preferences` |
 | `/update-layout` | Modifica della struttura del modulo | `/update-layout wizard with 4 steps: info, preferences, review, confirm` |
-| `/update-field` | Modifica delle proprietà dei campi | `/update-field @email to be mandatory with real-time validation` |
+| `/update-field` | Modifica delle proprietà del campo | `/update-field @email to be mandatory with real-time validation` |
 | `/create-rule` | Aggiunta di un comportamento dinamico | `/create-rule show @spouseInfo if @maritalStatus equals "Married"` |
 | `/create-panel` | Organizzazione delle sezioni del modulo | `/create-panel Employment Details with job title, company, salary fields` |
-| `/add-panel` | Conversione di progetti | `/add-panel from uploaded form image with field recognition` |
+| `/add-panel` | Conversione delle progettazioni | `/add-panel from uploaded form image with field recognition` |
 | `/configure-submit` | Impostazione della gestione dei dati | `/configure-submit to CRM and send confirmation email` |
 | `/help` | Ottenere assistenza | `/help how to implement multi-step validation?` |
 
-## Riferimento alle proprietà dei componenti supportati
+## Riferimento alle proprietà del componente supportato
 
 ### Proprietà universali (tutti i componenti)
 
-- **Tipo**: tipo di componente (testo, e-mail, numero, telefono, data, casella di controllo, radio, elenco a discesa, file, ecc.)
-- **Nome**: identificatore del campo per l&#39;invio del modulo
+- **Tipo**: tipo di componente (testo, e-mail, numero, telefono, data, casella di controllo, radio, menu a discesa, file, ecc.)
+- **Nome**: identificatore del campo per l’invio del modulo
 - **Etichetta**: visualizza il testo per il campo
-- **Descrizione**: testo della Guida per il campo
+- **Descrizione**: testo di istruzioni per il campo
 - **Visibile**: booleano per la visibilità iniziale
 - **Obbligatorio**: booleano per i campi obbligatori
 
-### Proprietà campo di input
+### Proprietà del campo di input
 
 - **Valore**: valore predefinito/iniziale
-- **Segnaposto**: testo suggerimento per i campi di input
+- **Segnaposto**: testo di suggerimento per i campi di input
 - **Min**: valore minimo (per numeri/date)
 - **Max**: valore massimo (per numeri/date)
 
-### Proprietà caricamento file
+### Proprietà di caricamento del file
 
 - **Accetta**: tipi di file (.pdf, .doc, .docx, .jpg, .png, ecc.)
 - **Multipli**: booleano per la selezione di più file
 
-### Proprietà controllo selezione
+### Proprietà di controllo della selezione
 
 - **Opzioni**: scelte per i menu a discesa (elenco separato da virgole)
 - **Selezionato**: selezione predefinita per caselle di controllo/radio
 
-### Proprietà contenitore
+### Proprietà del contenitore
 
-- **Set di campi**: raggruppamento campi correlati
+- **Set di campi**: raggruppamento di campi correlati
 - **Ripetibile**: booleano per sezioni ripetibili
 
 ### Proprietà avanzate
@@ -906,38 +906,38 @@ In Universal Editor, create a **responsive contact form** for the company websit
 ### Linee guida tecniche
 
 - **Utilizza solo le proprietà supportate** dalla specifica ufficiale del componente AEM Forms
-- **Seguire la sintassi corretta** per i riferimenti di campo (@fieldName) e le espressioni (=formula)
+- **Segui la sintassi corretta** per i riferimenti al campo (@fieldName e le espressioni (=formula)
 - **Esegui il test in modo incrementale** dopo ogni modifica per rilevare i problemi in anticipo
-- **Pianifica l&#39;accessibilità** fin dall&#39;inizio, non come ulteriore considerazione
-- **Considera gli utenti mobili** in ogni decisione di progettazione
-- **Documenta regole complesse** per manutenzione futura e collaborazione tra team
+- **Pianifica l’accessibilità** fin dall’inizio e non in un secondo momento
+- **Considera gli utenti dei dispositivi mobili** in ogni decisione relativa alla progettazione
+- **Documenta regole complesse** per la manutenzione futura e la collaborazione tra team
 
 ### Approccio strategico
 
-- **Inizia con le esigenze dell&#39;utente** - Concentrati su ciò che gli utenti devono eseguire, non solo sulle caratteristiche tecniche
-- **Progettazione per il completamento** - Riduci al minimo l&#39;attrito e il carico cognitivo nella progettazione del modulo
-- **Pianifica il flusso di dati** in anticipo. Valuta come verranno elaborati, memorizzati e utilizzati i dati
-- **Generazione per la scala** - Progetta moduli in grado di gestire la crescita prevista del volume utente e dei dati
-- **Implementa miglioramento progressivo** - Assicurati che le funzionalità di base funzionino, quindi aggiungi funzionalità avanzate
+- **Inizia con le esigenze dell’utente** - Concentrati su ciò che gli utenti devono eseguire, non solo sulle funzioni tecniche
+- **Progettazione per il completamento**: riduci al minimo l’attrito e il carico cognitivo nella progettazione del modulo
+- **Pianifica il flusso di dati** in anticipo: valuta come verranno elaborati, memorizzati e utilizzati i dati
+- **Creazione per scala**: progetta moduli in grado di gestire la crescita prevista del volume degli utenti e dei dati
+- **Implementa un miglioramento progressivo**: assicurati che le funzionalità di base funzionino, quindi aggiungi le funzioni avanzate
 
 ### Insidie comuni da evitare
 
-- **Richieste iniziali eccessivamente complesse** - Suddividi le attività di grandi dimensioni in passaggi più piccoli e gestibili
+- **Richieste iniziali eccessivamente complesse**: suddividi le attività di grandi dimensioni in passaggi più piccoli e gestibili
 - **Utilizzo di proprietà non supportate** non incluse nelle specifiche AEM Forms
-- **Esperienza mobile ignorata** fino alla fine del processo di sviluppo
-- **I test utente** verranno ignorati con scenari reali e casi limite
-- **Presupponendo che AI comprenda il contesto** senza fornire istruzioni chiare e specifiche
-- **Dimenticanza dei requisiti di accessibilità** e conformità
-- **Impossibile convalidare le modifiche** prima di passare al passaggio successivo
+- **Ignorare l’esperienza dei dispositivi mobili** fino alla fine del processo di sviluppo
+- **Saltare i test con gli utenti** in scenari reali e casi limite
+- **Presumere che l’IA comprenda il contesto** senza fornire istruzioni chiare e specifiche
+- **Dimenticare i requisiti di accessibilità** e conformità
+- **Non convalidare le modifiche** prima di passare alla fase successiva
 
-### Approccio Assurance di qualità
+### Approccio garanzia di qualità
 
-1. **Anteprima frequente** - Controlla il tuo lavoro in modalità anteprima dopo ogni modifica significativa
-2. **Test dei casi limite** - Prova input insoliti, testo lungo, caratteri speciali
-3. **Convalida su più dispositivi** - Test su dispositivi mobili, tablet e desktop
-4. **Verifica accessibilità** - Verifica della compatibilità della navigazione da tastiera e dell&#39;utilità di lettura dello schermo
-5. **Test delle prestazioni** - Assicurarsi che i moduli vengano caricati rapidamente e che rispondano senza problemi
-6. **Test di accettazione utente** - Chiedi a utenti reali di testare il modulo prima della distribuzione
+1. **Anteprima frequente**: controlla il tuo lavoro in modalità di anteprima dopo ogni modifica significativa
+2. **Test dei casi limite**: prova input insoliti, testo lungo, caratteri speciali
+3. **Convalida su più dispositivi**: testa su dispositivi mobili, tablet e desktop
+4. **Verifica accessibilità**: verifica la navigazione tramite tastiera e la compatibilità di lettura dello schermo
+5. **Test delle prestazioni**: assicurati che i moduli vengano caricati rapidamente e che rispondano senza problemi
+6. **Test di accettazione utente**: fai testare il modulo da utenti reali prima della distribuzione
 
 
-*Questa libreria di prompt viene continuamente aggiornata in base al feedback degli utenti e alle nuove funzionalità dell&#39;Assistente di intelligenza artificiale. Per le funzionalità e gli esempi più recenti, consulta la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).*
+*Questa libreria di prompt viene continuamente aggiornata in base al feedback degli utenti e alle nuove funzionalità dell’Assistente IA. Per le funzionalità e gli esempi più recenti, controlla la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).*
