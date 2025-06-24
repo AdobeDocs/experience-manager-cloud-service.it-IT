@@ -4,9 +4,9 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5981'
 ht-degree: 73%
 
 ---
@@ -375,7 +375,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
+>>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
 >
 >Ad esempio, effettuando una chiamata del campo `stringMetadata`, può essere restituito un array di tutti i metadati memorizzati nell’archivio come una `String`; se si effettua una chiamata dell’`stringArrayMetadata` può essere restituito un array di tutti i metadati memorizzati nell’archivio come `String[]`.
 
@@ -795,7 +795,6 @@ La struttura e la sintassi sono:
 * `flip`: un’enumerazione di HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: un numero intero compreso tra 1 e 100 che rileva la percentuale di qualità dell’immagine
 * `width`: un numero intero che definisce la larghezza dell’immagine di output, ma che viene ignorato dal generatore di immagini
-* `preferWebp`: un valore booleano che indica se webp è preferito (il valore predefinito è false)
 
 La trasformazione URL è disponibile per tutti i tipi di query: per percorso, elenco o impaginata.
 
@@ -823,7 +822,6 @@ Di seguito è riportato un esempio di query con un set completo di parametri:
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +860,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +898,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
