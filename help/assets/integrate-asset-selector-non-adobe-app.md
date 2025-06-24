@@ -3,7 +3,7 @@ title: Integrare Asset Selector con applicazioni non Adobe o di terze parti
 description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 19a7d8089a3c33f2d066bcbb4b7a99e77777eb91
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 18%
@@ -150,7 +150,7 @@ Il rendering del selettore risorse viene eseguito sull&#39;elemento contenitore 
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
