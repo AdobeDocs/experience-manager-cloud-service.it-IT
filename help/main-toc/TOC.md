@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f4bcd84684aea304ecc1e55c2b1c0a78b94ac6eb
+source-git-commit: 7e78b8eeb0dfed7bfd69b57454303fba20ed4ad3
 workflow-type: tm+mt
-source-wordcount: '6292'
+source-wordcount: '6298'
 ht-degree: 98%
 
 ---
@@ -95,6 +95,7 @@ ht-degree: 98%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Note sulla versione di manutenzione 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
          + [Note sulla versione di manutenzione 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
          + [Note sulla versione di manutenzione 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
          + [Note sulla versione di manutenzione 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -713,7 +714,7 @@ ht-degree: 98%
       + [Best practice per la ricerca](/help/assets/search-best-practices.md)
       + [Gestione dei metadati e best practice](/help/assets/metadata-best-practices.md)
    + Integrazione con Figma {#integration-figma}
-      + [Integrazione nativa con Figma](/help/assets/integrate-aem-assets-with-figma.md)
+      + [Integrazione nativa con Figma](/help/assets/integrating-aem-assets-with-figma.md)
    + Integrazione con Adobe Workfront {#integrations}
       + [Integrazioni con [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurare la mappatura dei metadati delle risorse](/help/assets/configure-asset-metadata-mapping.md)
