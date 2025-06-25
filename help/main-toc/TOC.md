@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
+source-git-commit: f4bcd84684aea304ecc1e55c2b1c0a78b94ac6eb
 workflow-type: tm+mt
-source-wordcount: '6281'
+source-wordcount: '6292'
 ht-degree: 98%
 
 ---
@@ -745,6 +745,7 @@ ht-degree: 98%
       + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
+      + [Abilita attivazione/disattivazione funzionalità in Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
    + Guida introduttiva {#getting-started-forms}
       + [Caso d’uso e configurazione di un ambiente di sviluppo](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creare il modulo di richiesta del prestito](/help/forms/create-adaptive-form-tutorial.md)
