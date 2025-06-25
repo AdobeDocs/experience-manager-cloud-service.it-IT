@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3181'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Le librerie core Guava di Google sono obsolete in Cloud Service. <a href="#com.google.common">Consulta le note sulla rimozione di seguito.</a></td>
-    <td>15/5/2023</td>
+    <td>15/05/2023</td>
     <td>31/08/2025</td>
   </tr>
   <tr>
@@ -214,7 +214,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
     <td>AEM as a Cloud Service non supporta questa API.</td>
-    <td>15/5/2023</td>
+    <td>15/05/2023</td>
     <td>Da definire</td>
   </tr>
   <tr>
@@ -367,13 +367,13 @@ Puoi scegliere una versione diversa, a seconda delle tue esigenze.
 
 ### Rimozione di `com.google.common*` {#com.google.common}
 
-Rimuovi l’utilizzo delle librerie core Java di Google o includi una versione appropriata nel progetto. In molti casi l’utilizzo di questa libreria può essere sostituito con una delle classi di raccolta delle raccolte JDK o Apache Commons4. Se non trovi sostituzioni, includi nel progetto la versione più recente della Libreria core Guave di Google. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
+Rimuovi l’utilizzo delle librerie core Java di Google o includi una versione appropriata nel progetto. In molti casi l’utilizzo di questa libreria può essere sostituito con una delle classi di raccolta di JDK o Apache Commons4. Se non trovi sostituzioni, includi nel progetto la versione più recente della Libreria core Guava di Google. Se stai utilizzando una versione precedente di [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), assicurati di eseguire l’aggiornamento alla versione più recente.
 
 Elenco azioni:
 
 * Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
 * Sostituire l’utilizzo della libreria core Guava di Google con raccolte JDK o Apache Commons4
-* Se ancora necessario, aggiungi questo bundle al progetto (sostituisci la versione con l’ultima disponibile):
+* Se ancora necessario, aggiungi questo pacchetto al progetto (sostituisci la versione con quella più recente disponibile):
    * `com.google.guava:guava:33.4.8-jre`
 
 ### Rimozione di `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}

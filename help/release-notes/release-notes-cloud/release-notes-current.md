@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ AEM Assets ora utilizza l’[IA per generare automaticamente i metadati, inclusi
 
 **Integrazione con Figma**
 
-AEM Assets si integra in modo nativo con Figma, che consente agli sviluppatori di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente. Puoi inserire il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il contenuto nuovo o modificato nell’archivio di AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+AEM Assets si integra in modo nativo con Figma, che consente agli sviluppatori di accedere direttamente alle risorse memorizzate in AEM Assets dall’interfaccia utente. Puoi posizionare il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il nuovo o quello modificato in un archivio AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -114,7 +114,7 @@ Accedi a tutte le [rappresentazioni predefinite di Dynamic Media e ai ritagli av
 
 [Integrazione nativa di Dynamic Media di Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/aem-dynamic), per consentire agli addetti marketing di incorporare facilmente le risorse di Dynamic Media di AEM (rappresentazione e modello DM) nel contenuto di AJO e consegnare aggiornamenti in tempo reale ed esperienze iperpersonalizzate su tutti i canali.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463790/?learn=on&enablevpops=&autoplay=true&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento d
 
 ### Eliminazione predefinita delle versioni precedenti e dei registri di controllo {#mt-defaults}
 
-Attualmente, le *attività di manutenzione dell&#39;eliminazione* associate alle versioni del contenuto e ai registri di audit sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso a meno che non sia configurato in modo esplicito.
+Attualmente, le *attività di manutenzione dell’eliminazione* associate alle versioni di contenuto e ai registri di controllo sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso, a meno che questo non sia configurato in modo esplicito.
 
 Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine giugno 2025**, l’eliminazione sarà abilitata per impostazione predefinita, seguendo queste linee guida:
 
@@ -216,7 +216,7 @@ Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine gi
    * Vengono mantenute tutte le versioni degli ultimi 7 anni.
    * Questa soglia predefinita elevata impedisce la rimozione involontaria dei dati recenti. Tuttavia, si consiglia di configurare valori inferiori per ottimizzare le prestazioni dell’archivio.
 
-* Potete modificare questi valori predefiniti mediante la configurazione YAML, distribuita mediante la pipeline di configurazione.
+* Puoi modificare questi valori predefiniti tramite la configurazione YAML, distribuita mediante la pipeline di configurazione.
 
 #### Registro di controllo {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine gi
    * Tutti gli eventi vengono registrati per impostazione predefinita.
    * Questa soglia predefinita elevata impedisce la rimozione involontaria dei dati recenti. Tuttavia, si consiglia di configurare valori inferiori per ottimizzare le prestazioni dell’archivio.
 
-* Potete modificare questi valori predefiniti mediante la configurazione YAML, distribuita mediante la pipeline di configurazione.
+* Puoi modificare questi valori predefiniti tramite la configurazione YAML, distribuita mediante la pipeline di configurazione.
 
 Per ulteriori dettagli, consulta l’articolo [Attività di manutenzione](/help/operations/maintenance.md#defaults).
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Utilizzando Edge Delivery Services, è possibile:
 
 >[!TIP]
 >
->**Vuoi iniziare subito?**
+>**Desideri metterti subito all’opera?**
 >
->Se desideri iniziare subito a utilizzare, puoi iniziare il tuo progetto Edge Delivery Services con la creazione di AEM in meno di 30 minuti [consultando l&#39;esercitazione su aem.live.](https://www.aem.live/developer/ue-tutorial)
+>Se lo desideri, avvia il tuo progetto Edge Delivery Services con l’authoring di AEM in meno di 30 minuti [consultando il tutorial su aem.live.](https://www.aem.live/developer/ue-tutorial)
 
-## Reazione Agile alle esigenze aziendali {#agile-reaction}
+## Reazione agile alle esigenze aziendali {#agile-reaction}
 
 Adobe, da sempre leader riconosciuto del settore, sa quanto sia importante poter creare e pubblicare rapidamente nuovi contenuti significativi per la propria clientela. Il mercato ha messo in evidenza le sfide comuni in materia di scalabilità della creazione dei contenuti, tra cui:
 

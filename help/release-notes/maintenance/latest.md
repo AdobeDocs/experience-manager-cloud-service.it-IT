@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -18,25 +18,25 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 21193 {#21193}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21193, rilasciata pubblicamente il mercoledì 10 giugno 2025. La versione di manutenzione precedente era la 21005.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21193, rilasciata pubblicamente il 10 giugno 2025. La versione di manutenzione precedente era la 21005.
 
 Con la versione di attivazione funzioni 2025.6.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ### Miglioramenti {#enhancements-21193}
 
-* ASSETS-51245: prestazioni migliorate per gli elenchi di cartelle di grandi dimensioni nell’interfaccia utente touch.
-* ASSETS-51686: sono stati apportati miglioramenti al processo di operazioni in blocco, tra cui una più semplice cancellazione del processo, una registrazione avanzata e download di audit per risultati di grandi dimensioni.
-* CQ-4360131: è stata migliorata la risposta di errore per gli endpoint OpenAPI, consentendo ai client API di ricevere informazioni corrette sull’errore strutturato.
+* ASSETS-51245: prestazioni migliorate per gli elenchi di cartelle di grandi dimensioni nell’interfaccia touch.
+* ASSETS-51686: sono stati apportati miglioramenti al processo di operazioni in blocco, tra cui una più semplice cancellazione del processo, una registrazione avanzata e il download di audit per risultati di grandi dimensioni.
+* CQ-4360131: è stata migliorata la risposta di errore per gli endpoint OpenAPI, consentendo ai client API di ricevere informazioni di errore strutturate correttamente.
 
 ### Problemi risolti {#fixed-issues-21193}
 
 * ASSETS-41007: le risorse eliminate potrebbero rimanere visibili in Content Hub.
-* ASSETS-50994: AemRequestEventFilter causa un conflitto eccessivo del thread Jetty.
+* ASSETS-50994: AemRequestEventFilter causa un’eccessiva contesa del thread Jetty.
 * ASSETS-50155: attivati eventi di modifica dei metadati duplicati.
-* ASSETS-50716: l’ordinamento per titolo nella vista a elenco di Assets non funziona come previsto.
+* ASSETS-50716: l’ordinamento per titolo nella vista a elenco delle risorse non funziona come previsto.
 * ASSETS-50820: assicurati che le richieste non valide per l’API delle relazioni con le risorse vengano rifiutate correttamente con un errore 400.
-* ASSETS-50562: l’API di caricamento risorse deve creare una versione in base al comportamento predefinito in caso di conflitto di nomi.
-* ASSETS-50992: l’endpoint Assets API beginUpload.json deve restituire il tipo di contenuto &quot;application/json&quot;.
+* ASSETS-50562: l’API di caricamento risorse deve creare una versione in base al comportamento predefinito in caso di conflitto sul nome.
+* ASSETS-50992: l’endpoint initiateUpload.json delle API di Assets dovrebbe restituire il tipo di contenuto “application/json”.
 * ASSETS-51322: rimozione automatica e scadenza delle barricate asincrone che rimangono persistenti a tempo indefinito dopo un processo non riuscito.
 * ASSETS-51809: l’editor CSV non mostrava le modifiche salvate di recente a causa della memorizzazione nella cache del browser.
 * SITES-31678: i frammenti di esperienza (XF) con riferimenti in base al contesto non hanno risolto la directory principale della lingua corretta nell’API di pubblicazione XF.
