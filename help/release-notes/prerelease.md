@@ -4,10 +4,10 @@ description: Scopri come utilizzare il canale prerelease per ottenere un’antep
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
-workflow-type: ht
-source-wordcount: '889'
-ht-degree: 100%
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service offre nuove funzioni a cadenza regol
 
 Le prossime funzioni sono generalmente rese disponibili in uno dei due modi seguenti:
 
-* Come parte di un programma di adozione anticipata
+* Come parte di un programma Alpha, Beta o Disponibilità limitata
 * Come parte del canale di pre-release
 
 Questo documento descrive come abilitare il canale di pre-release. Il canale di pre-release fornisce l’accesso alle funzioni preliminari che verranno introdotte in una versione futura delle funzioni di AEM. Questo offre l’opportunità di convalidare le nuove funzioni e pianificarne l’adozione in vista del loro rilascio futuro. Per informazioni dettagliate sulla pianificazione del rilascio di AEM, consulta il documento [Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md).
