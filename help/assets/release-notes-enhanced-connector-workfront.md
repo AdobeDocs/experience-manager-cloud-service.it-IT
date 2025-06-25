@@ -4,10 +4,10 @@ description: Note sulla versione di [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
-workflow-type: ht
-source-wordcount: '1724'
-ht-degree: 100%
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 96%
 
 ---
 
@@ -52,13 +52,17 @@ ht-degree: 100%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Workfront for Experience Manager enhanced connector].
 
-La data di rilascio dell’ultima versione 1.9.20 di [!DNL Workfront for Experience Manager enhanced connector] è il 6 settembre 2024.
+La data di rilascio dell’ultima versione 1.9.21 di [!DNL Workfront for Experience Manager enhanced connector] è il 25 giugno 2025.
 
 ## Caratteristiche principali della versione {#release-highlights}
 
-L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector] include la seguente correzione di bug:
+La versione più recente di [!DNL Workfront for Experience Manager enhanced connector] include i miglioramenti e le correzioni di bug seguenti:
 
-* Il tipo MIME viene perso durante il caricamento e la creazione di una nuova versione di una risorsa esistente.
+* È stata migliorata la registrazione delle richieste API per evitare la registrazione di falsi positivi di errori di autenticazione.
+
+* È stata risolta una perdita di connessione nelle chiamate API di Workfront.
+
+* Supporto del connettore avanzato Workfront con 6.5 LTS per le versioni Java 17 e Java 21.
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ L’ultima versione di [!DNL Workfront for Experience Manager enhanced connector
 * Durante l’utilizzo dell’esperienza Workfront classica, l’opzione **[!UICONTROL Invia a]** disponibile nell’elenco a discesa **[!UICONTROL Altro]** non consente di selezionare la destinazione target in Experience Manager. L’opzione **[!UICONTROL Invia a]** funziona correttamente utilizzando l’elenco a discesa **[!UICONTROL Azioni documento]**. L’opzione **[!UICONTROL Invia a]** funziona correttamente per gli elenchi a discesa **[!UICONTROL Altro]** e **[!UICONTROL Azioni documento]** disponibile nella nuova esperienza Workfront.
 
 ## Versioni precedenti {#previous-releases}
+
+### Versione di settembre 2024 {#september-2024-release}
+
+* Il tipo MIME viene perso durante il caricamento e la creazione di una nuova versione di una risorsa esistente.
 
 ### Versione di aprile 2024 {#april-2024-release}
 
