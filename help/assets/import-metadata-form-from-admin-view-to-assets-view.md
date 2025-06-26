@@ -77,8 +77,10 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 1. Seleziona uno o più moduli nella tabella e fai clic su **[!UICONTROL Avvia importazione]** per importare i moduli di metadati e le cartelle associate in [!DNL Assets View]. Viene visualizzato un messaggio di elaborazione (ad esempio, *Importazione di 3 moduli di metadati. Per favore, aspetta!*). Una volta completata l&#39;importazione, un messaggio di operazione riuscita conferma che i moduli sono stati importati correttamente e la pagina **[!UICONTROL Metadati Forms]** (di [!DNL Assets View]) visualizza sia i moduli importati di recente che quelli esistenti disponibili in [!DNL Assets View]. In questa pagina è possibile effettuare le seguenti operazioni:
    * Fai clic sull&#39;intestazione della colonna per ordinare la tabella in base a [!UICONTROL Nome], [!UICONTROL Modificato] o [!UICONTROL Autore].
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Rimuovi da cartelle]**, quindi verifica il nome della cartella nel percorso della cartella per verificare che la cartella sia stata trasferita correttamente.
+
      ![verifica pagina moduli metadati](/help/assets/assets/confirm-ported-folder.png)
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
+
      ![verifica pagina moduli metadati](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Verificare i moduli di metadati importati{#Verify-the-imported-metadata-forms}
