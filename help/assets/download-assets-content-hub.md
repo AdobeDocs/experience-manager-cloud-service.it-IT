@@ -3,7 +3,7 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 8%
@@ -82,8 +82,8 @@ Se nella finestra di dialogo **[!UICONTROL Scarica risorse]** sono visualizzate 
 
    >[!NOTE]
    >
-   >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata utilizzando l&#39;interfaccia utente [[!UICONTROL [Configurazione]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Gli utenti con accesso a [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
+   >* Le rappresentazioni vengono visualizzate solo se la loro visibilità è abilitata mediante l&#39;interfaccia utente [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Gli utenti con accesso a [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) possono visualizzare e scaricare rappresentazioni dinamiche e con ritaglio avanzato.
    >* L&#39;anteprima della licenza viene visualizzata solo se la risorsa è approvata con l&#39;ambiente di authoring [!DNL Assets as a Cloud Service]. Per ulteriori informazioni, consulta [Gestire le risorse con licenza nell’hub di contenuti](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
