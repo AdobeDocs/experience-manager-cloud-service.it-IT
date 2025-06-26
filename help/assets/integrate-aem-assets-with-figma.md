@@ -4,7 +4,7 @@ description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Figma] per acced
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 10%
@@ -70,13 +70,13 @@ In alternativa, accedere a [[!DNL Adobe Experience Manager (AEM) Assets Connecto
 
 >[!NOTE]
 >
-> [Contatta il supporto Adobe](https://helpx.adobe.com/it/contact.html) per assistenza se dopo l&#39;accesso all&#39;ambiente [!DNL AEM] ricevi un messaggio di **[!UICONTROL errore di rete]**.
+> [Contatta il supporto Adobe](https://helpx.adobe.com/contact.html) per assistenza se dopo l&#39;accesso all&#39;ambiente [!DNL AEM] ricevi un messaggio di **[!UICONTROL errore di rete]**.
 
 ## Importa [!DNL AEM] risorse nell&#39;area di lavoro [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
 [Accedi al pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]](#access-aem-assets-connector) nell&#39;interfaccia di progettazione di [!DNL Figma] ed effettua le seguenti operazioni:
 
-1. Cerca le risorse nel pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]. Per ulteriori informazioni, consulta [utilizzo di Asset Selector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Cerca le risorse nel pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]. Per ulteriori informazioni, consulta [utilizzo di Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Trascina e rilascia la risorsa nell&#39;area di lavoro o selezionala e fai clic su **[!UICONTROL Seleziona]** per inserire la risorsa nell&#39;area di lavoro.
 
@@ -101,4 +101,3 @@ Questa integrazione presenta attualmente le seguenti limitazioni:
 
 * Per importare [!DNL AEM] risorse in Figma, i formati supportati sono **JPEG**, **PNG**.
 * Per esportare le progettazioni da [!DNL Figma] a [!DNL AEM Assets], i formati supportati sono **PNG**, **PDF**, **JPG**, **SVG**.
-
