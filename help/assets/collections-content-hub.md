@@ -3,9 +3,9 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1110'
 ht-degree: 9%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 9%
 # Gestisci raccolte in [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -134,7 +169,7 @@ Content Hub ti consente di filtrare la vista delle raccolte per trovare facilmen
 
 Per filtrare la visualizzazione delle raccolte, passare alla scheda **[!DNL Collections]** e passare al menu a discesa Raccolte. Scegli tra le seguenti opzioni:
 
-* **[!UICONTROL Tutte le raccolte]:** Selezionare questa opzione per visualizzare tutte le raccolte private e condivise con l&#39;utente.
+* **[!UICONTROL Tutte le raccolte]:** Selezionare questa opzione per visualizzare e modificare tutte le raccolte, incluse quelle private o condivise.
 * **[!UICONTROL Solo io]:** Seleziona questa opzione per visualizzare le raccolte a cui puoi accedere.
 * **[!UICONTROL Chiunque può visualizzare]:** Questa opzione consente di filtrare le raccolte accessibili a tutti ma modificabili solo dall&#39;autore.
 * **[!UICONTROL Chiunque può modificare]:** Seleziona questa opzione per filtrare raccolte accessibili e modificabili da tutti.
