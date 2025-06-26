@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7ae30d2053a17c2855c66b265c831ea27d19d535
+source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 18%
+source-wordcount: '1758'
+ht-degree: 16%
 
 ---
 
@@ -31,11 +31,14 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * FORMS-19336: ricerca aggiunta nella struttura Data Source nell’editor AF.
 * FORMS-19417: supporto dei pulsanti di scelta nella vista Gerarchia.
 * FORMS-19603: supporta la pagina master e la pagina di progettazione nell’editor di regole.
+* SITES-5358: API Rest dei frammenti di contenuto: copia i file CF con elementi figlio.
 * SITES-10575: &quot;MSM Blueprint Bloomfilter Loader&quot; tenta di caricare più di 100000 righe.
 * SITES-14542: se si rinomina o si sposta una pagina Live Copy di origine, dovrebbe essere attivata la pubblicazione della pagina Live Copy rinominata/spostata nel caso in cui sia stata precedentemente pubblicata.
 * SITES-19754: Edge Delivery con Universal Editor: aggiungi un messaggio di errore leggibile quando l’integrazione presenta problemi.
 * SITES-23499: Edge Delivery con Universal Editor: aggiunta del supporto per più campi da utilizzare per le opzioni di blocco.
 * SITES-23518: Edge Delivery con Universal Editor: aggiunta del supporto per rappresentazioni di risorse specifiche per Edge Delivery.
+* SITES-24436: API REST per frammenti di contenuto: è stata introdotta la cache locale per velocizzare il recupero dei riferimenti duplicati.
+* SITES-25155: API Rest dei frammenti di contenuto: rimuovi il parametro di query &quot;enabledForFolder&quot; obsoleto nell’elenco Modelli.
 * SITES-25913: API REST per frammenti di contenuto: convalida delle risorse in base al tempo prima di avviare il flusso di lavoro di pubblicazione.
 * SITES-25976: i collegamenti all’interno dei frammenti esperienza non si adattano dopo il rollout di MSM.
 * SITES-26271: Frammenti di contenuto Rest API: passa a BFS Traversal per l’endpoint di variante GET.
@@ -43,10 +46,16 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-27775: Ricerca di riferimento ottimizzata durante la pubblicazione (caricamento lento dei metadati).
 * SITES-27782: Edge Delivery con Universal Editor: aggiungi un’implementazione specifica dell’editore-abbonato per pubblicare contenuti su Edge Delivery (accesso anticipato).
 * SITES-27792: Edge Delivery con Universal Editor: aggiungi un modello di configurazione del servizio Edge Delivery dedicato.
+* SITES-28557: API REST per frammenti di contenuto: consenti l&#39;utilizzo di ETag recuperati chiamando `/cf/fragments/{fragmentId}` con `references=direct` per applicare una patch a un frammento di contenuto.
 * SITES-28683: consenti alle ricerche MSM LiveRelationship di saltare lo stato avanzato.
+* SITES-29601: API REST per frammenti di contenuto: convalida dei riferimenti ai frammenti di contenuto dei campi di testo lunghi.
+* SITES-29614: API REST per frammenti di contenuto: recupera un flusso di lavoro utilizzando l&#39;endpoint `/cf/workflows/{workflowInstanceId}`, dove workflowInstanceIda è l&#39;ID restituito dalla richiesta di pubblicazione.
+* SITES-29615: API REST dei frammenti di contenuto: elenca tutte le richieste batch create tramite POST `/cf/batch` utilizzando `GET /cf/batch`.
+* SITES-29874: API Rest per frammenti di contenuto: i riferimenti da campi di testo lunghi di frammenti di contenuto ora vengono recuperati e identificati.
 * SITES-29930: API Rest dei frammenti di contenuto: aggiungi metriche per il flusso di lavoro Pubblicazione dei frammenti di contenuto.
 * SITES-29986: API Rest dei frammenti di contenuto: supporta la denominazione tecnica del modello CF.
 * SITES-30088: Frammenti di contenuto Rest API: Pubblicazione CF - Ignora il recupero dei riferimenti quando filterReferencesByStatus è vuoto.
+* SITES-30126: Frammenti di contenuto Rest API: CF Miglioramento delle prestazioni di pubblicazione: ha sostituito il controllo se una risorsa è un frammento con un controllo minimo.
 * SITES-30328: Edge Delivery con Universal Editor: aggiunta del supporto per l’anteprima da Sidekick.
 * SITES-30445: API REST per frammenti di contenuto: Schema dell’interfaccia utente del modello CF: aggiungi un’opzione per controllare lo stato iniziale del file comprimibile.
 * SITES-30604: API Rest dei frammenti di contenuto: supporta l’adozione dello schema metadati del modello nella nuova interfaccia utente.
@@ -54,11 +63,14 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-30886: API Rest dei frammenti di contenuto: flussi di lavoro GET per l’endpoint dei frammenti di contenuto basati sugli UUID dei frammenti memorizzati nei metadati del flusso di lavoro.
 * SITES-31005: migliora l’interfaccia utente del processo di rollout per mostrare l’avanzamento.
 * SITES-31020: migliora l’interfaccia utente di Crea processo Live Copy per mostrare l’avanzamento.
+* SITES-31111: API Rest dei frammenti di contenuto: consenti all’API della patch di variante di accettare riferimenti ai frammenti di contenuto all’interno dei lanci di frammenti di contenuto.
+* SITES-31343: API Rest dei frammenti di contenuto: aggiungi filtro e impaginazione per data all’endpoint che elenca le richieste batch.
 * SITES-31472: l’eliminazione di Launch può causare la sospensione dell’archivio se il lancio è massiccio.
+* SITES-31641: API REST per frammenti di contenuto: aggiungi una proprietà ai campi modello per memorizzare le mappe dinamiche relative alle estensioni.
 * SITES-31677: l’area di lavoro personalizzata supporta l’esportazione dei frammenti di contenuto di AEM in Target.
+* SITES-31770: API Rest dei frammenti di contenuto: miglioramenti delle prestazioni di PATCH.
 * SITES-31782: API REST per frammenti di contenuto: aggiungi una descrizione per le risorse locali.
 * SITES-32175: consenti commit intermediari sia per la creazione di Live Copy che per il rollout di pagine MSM.
-* SITES-5358: API Rest dei frammenti di contenuto: copia i file CF con elementi figlio.
 
 ### Problemi risolti {#fixed-issues-21331}
 
@@ -85,6 +97,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-25235: il messaggio di caricamento del contenuto della barra dei filtri non viene annunciato dall’assistente vocale.
 * SITES-25254: la barra di scorrimento orizzontale viene visualizzata nel modale Carosello quando il contenuto viene visualizzato a 320 px.
 * SITES-25433: Edge Delivery con Universal Editor: Correggere il rendering delle versioni di pagina per strutture di siti multilingue.
+* SITES-26064: API REST per frammenti di contenuto: è stato corretto il codice di stato restituito durante la creazione di un frammento e l’ottenimento di un `AccessDeniedException` nel backend.
 * SITES-26890: quando si utilizza la tastiera, lo stato attivo su Tastiera Ambito &quot;Intestazioni tabella&quot; non è visibile nella pagina Gestisci pubblicazione.
 * SITES-29075: la panoramica della Live Copy non funziona per i siti web con volumi elevati.
 * SITES-29514: Edge Delivery con Universal Editor: rendi obbligatorio l’URL di GitHub/progetto durante la creazione di un nuovo sito.
@@ -94,7 +107,6 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-29789: problema di modifica del collegamento del componente nelle pagine principali copiate.
 * SITES-29987: API REST per frammenti di contenuto: Crea e modifica modello per frammenti di contenuto non supporta `previewUrlPattern`.
 * SITES-30140: problema relativo alla finestra doppia durante la creazione del riferimento a un frammento di contenuto.
-* SITES-30260: API Rest dei frammenti di contenuto: errore nell’aggiornare/eliminare il FC utilizzando l’ETag più recente.
 * SITES-30327: API REST per frammenti di contenuto: la pubblicazione di FC senza autorizzazioni crea flussi di lavoro separati per ogni risorsa del payload.
 * SITES-30333: lettura dei metadati delle risorse da JCR per evitare problemi di analisi XMP.
 * SITES-30353: GraphQL DataFetchingExceptions per il campo &quot;src&quot; nei frammenti di contenuto di AEM.
@@ -112,13 +124,16 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-30899: il rollout dell’opzione &quot;Più tardi&quot; consente di continuare senza selezionare alcuna data.
 * SITES-30947: Eccezione Null Pointer a causa di una proprietà &quot;behavior&quot; mancante sulla blueprint durante il rollout.
 * SITES-31157: API Rest dei frammenti di contenuto: la patch non riesce è un caso specifico.
+* SITES-31162: API Rest dei frammenti di contenuto: è stato risolto un problema di cast per il campo `DateTimeField` in `ModelFieldMapper`.
+* SITES-31174: API REST per frammenti di contenuto: i tag non sono stati pubblicati insieme alla richiesta di pubblicazione.
 * SITES-31272: impossibile creare la copia per lingua di Assets tramite PageManager.copy.
 * SITES-31327: API REST per frammenti di contenuto: rimuovi la convalida ETag nella richiesta di frammenti di GET.
 * SITES-31387: Errore JavaScript &quot;ns.ui.alert non è una funzione&quot; durante la riattivazione dell’ereditarietà del componente fantasma.
+* SITES-31454: Frammenti di contenuto Rest API: rilascia il modello per i campi di riferimento dei frammenti per accettare anche gli UUID.
 * SITES-31455: API REST per frammenti di contenuto: correggi la mancata corrispondenza ETag tra gli endpoint per lo stesso modello per frammenti di contenuto.
 * SITES-31459: API Rest dei frammenti di contenuto: non è possibile modificare la Live Copy CF quando è presente un campo di riferimento al contenuto.
 * SITES-31467: js-errors da contexthub.authoring-hook.js nell’editor di pagine.
-* SITES-31594: API REST dei frammenti di contenuto: errore `extractMetadataSchemaFieldLabel`.
+* SITES-31487: API Rest dei frammenti di contenuto: consenti la chiamata dell’endpoint delle autorizzazioni per la cartella principale.
 * SITES-31621: Edge Delivery con Universal Editor: rimuovi una riga vuota dai fogli di calcolo che sono Live Copy.
 * SITES-31676: quando si creano o si eliminano componenti, nella parte inferiore della pagina rimane uno spazio vuoto.
 * SITES-31822: etichetta della casella di controllo ClassicUI mancante e HTML codificato.

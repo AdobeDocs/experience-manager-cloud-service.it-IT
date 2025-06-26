@@ -3,9 +3,10 @@ title: Note sulla versione 2025.4.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.4.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: a3bdb58e3a53ffc422320b08bfb260b47fb2ddef
+exl-id: 48e09824-5c67-49d8-8896-358d679649fc
+source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1744'
 ht-degree: 99%
 
 ---
@@ -32,15 +33,11 @@ La data di rilascio della versione corrente della funzione di [!DNL Adobe Experi
 
 Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Video sulla versione {#release-video}
 
-## Release Video {#release-video}
+Dai un’occhiata al video Panoramica sulla versione di aprile 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.4.0:
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
