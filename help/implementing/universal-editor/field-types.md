@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -91,7 +91,7 @@ Un oggetto campo ha la seguente definizione di tipo.
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
 | `component` | `ComponentType` | Rendering del componente | Sì |
-| `name` | `string` | Proprietà in cui i dati sono persistenti | Sì |
+| `name` | `string` | Proprietà [o percorso](#nesting) in cui i dati devono essere persistenti | Sì |
 | `label` | `FieldLabel` | Etichetta del campo | Sì |
 | `description` | `FieldDescription` | Descrizione del campo | No |
 | `placeholder` | `string` | Segnaposto per il campo | No |
@@ -105,7 +105,15 @@ Un oggetto campo ha la seguente definizione di tipo.
 | `validation` | `ValidationType` | Regola o regole di convalida per il campo | No |
 | `raw` | `unknown` | Dati non elaborati che possono essere utilizzati dal componente | No |
 
-### Tipi di componenti {#component-types}
+### nome Campo e nidificazione {#nesting}
+
+Il campo `name` può puntare direttamente a una proprietà della risorsa corrente oppure, nel caso di componenti in `cq:Pages`, può anche utilizzare un percorso a una proprietà nidificata. Ad esempio:
+
+```json
+"name": "teaser/image/fileReference"
+```
+
+### Tipi componente {#component-types}
 
 Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il rendering dei campi.
 
@@ -281,7 +289,7 @@ Simile a un booleano, un tipo di componente gruppo casella di controllo consente
 
 #### Contenitore {#container}
 
-Un tipo di componente contenitore consente il raggruppamento di componenti. Offre una configurazione aggiuntiva.
+Un tipo di componente contenitore consente il raggruppamento di componenti, incluso il supporto per più campi. Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Un tipo di componente contenitore consente il raggruppamento di componenti. Offr
 
 ![Schermata del tipo di componente contenitore](assets/component-types/container.png)
 
+>[!TAB Supporto Multifield]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Frammenti di contenuto {#content-fragment}
 
