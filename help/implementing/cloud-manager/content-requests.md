@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
+source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Le richieste di contenuto possono presentare varianze all’interno degli strume
 | Motivo della varianza | Spiegazione |
 |---|---|
 | Consenso utente finale | Gli strumenti di Analytics che si basano su strumentazione lato client spesso dipendono dal consenso dell’utente all’attivazione. Questo flusso di lavoro potrebbe rappresentare la maggior parte del traffico che non viene tracciato. Per i clienti che desiderano misurare autonomamente le richieste di contenuto, Adobe consiglia di utilizzare gli strumenti di analisi per raccogliere dati dai rapporti lato server o CDN. |
-| Assegnazione dei tag | A tutte le pagine o chiamate API tracciate come richieste di contenuto di Adobe Experience Manager potrebbe non essere applicato il tag tracciamento Analytics. |
+| Assegnazione tag | A tutte le pagine o chiamate API tracciate come richieste di contenuto di Adobe Experience Manager potrebbe non essere applicato il tag tracciamento Analytics. |
 | Regole di gestione dei tag | Le impostazioni delle regole di gestione dei tag possono comportare diverse configurazioni di raccolta dati su una pagina, con conseguente combinazione di discrepanze con il tracciamento delle richieste di contenuto. |
 | Bot | I bot sconosciuti che AEM non ha pre-identificato e rimosso possono causare discrepanze nel tracciamento. |
 | Suite per rapporti | Le pagine all’interno della stessa istanza di AEM possono generare rapporti per suite di rapporti di Analytics diverse. Questo processo può dividere i dati tra più suite, a seconda della configurazione. |
@@ -101,3 +101,4 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | Escludere le chiamate Commerce integration framework | Escluso | Le richieste effettuate ad AEM che vengono inoltrate a Commerce integration framework, l&#39;URL inizia con `/api/graphql`, per evitare un doppio conteggio, non sono fatturabili per Cloud Service. |
 | Escludi `manifest.json` | Escluso | Il manifesto non è una chiamata API. È qui per fornire informazioni su come installare siti web su un desktop o un telefono cellulare. Adobe non deve contare la richiesta JSON a `/etc.clientlibs/*/manifest.json` |
 | Escludi `favicon.ico` | Escluso | Anche se il contenuto restituito non deve essere HTML o JSON, si è osservato che alcuni scenari come i flussi di autenticazione SAML restituiscono favicon come HTML. Di conseguenza, le favicon sono esplicitamente escluse dal conteggio. |
+| Frammento esperienza (XF) - Riutilizzo dello stesso dominio | Escluso | Richieste effettuate a percorsi XF (ad esempio `/content/experience-fragments/...`) da pagine ospitate sullo stesso dominio (come identificato dall&#39;intestazione Referer che corrisponde all&#39;host della richiesta).<br><br> Esempio: una home page su `aem.customer.com` che richiama un XF per un banner o una scheda dello stesso dominio.<br><br>· URL matches /content/experience-fragments/...<br>· Il dominio di riferimento corrisponde a `request_x_forwarded_host`<br><br>**Nota:** Se il percorso del frammento di esperienza è personalizzato (ad esempio utilizzando `/XFrags/...` o un percorso esterno a `/content/experience-fragments/`), la richiesta non verrà esclusa e potrebbe essere conteggiata, anche se si tratta dello stesso dominio. È consigliabile utilizzare la struttura di percorso XF standard di Adobe per garantire che la logica di esclusione venga applicata correttamente. |
