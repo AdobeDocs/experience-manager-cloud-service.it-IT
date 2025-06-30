@@ -117,4 +117,4 @@ Impossibile utilizzare smart tag, collegamento [!DNL Asset], selettore [!DNL Ass
 >[!MORELIKETHIS]
 >
 >* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=it)
->* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

@@ -15,7 +15,7 @@ ht-degree: 19%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 Un’implementazione a livello aziendale di Adobe Experience Manager Assets ha la capacità di archiviare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.

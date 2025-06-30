@@ -16,7 +16,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 Con Adobe Experience Manager Assets puoi impostare flussi di lavoro di revisione ad hoc per le risorse presenti in una cartella o in una raccolta. Puoi condividerlo con revisori o partner creativi per chiedere il loro feedback. È possibile associare un flusso di lavoro di revisione a un progetto o creare un&#39;attività di revisione indipendente.

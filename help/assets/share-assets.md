@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzare i metodi seguenti per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
@@ -24,7 +24,7 @@ ht-degree: 3%
 * [Scarica le risorse](/help/assets/download-assets-from-aem.md) e condividile separatamente.
 * Condividi con [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it).
 * Condividi con [[!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html).
-* Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
+* Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=it).
 
 ## Prerequisiti {#prerequisites}
 
@@ -50,7 +50,7 @@ Sono necessari privilegi di amministratore per [configurare le impostazioni per 
 1. Pulsante **[!UICONTROL Condivisione collegamento]** nella barra delle azioni:
    * Tutti gli utenti con autorizzazioni `jcr:modifyAccessControl` possono visualizzare l&#39;opzione [!UICONTROL Condivisione collegamenti]. Per impostazione predefinita, è visibile a tutti gli amministratori. Per impostazione predefinita, il pulsante [!UICONTROL Condivisione collegamento] è visibile a tutti. È possibile configurare per visualizzare questa opzione solo per i gruppi definiti oppure negarla a gruppi specifici. Selezionare `Allow only for groups` per consentire a gruppi specifici di visualizzare l&#39;opzione `Share Link`. Selezionare `Deny from groups` per negare l&#39;opzione `Share Link` da gruppi specifici. Dopo aver selezionato una di queste opzioni, specificare i nomi dei gruppi utilizzando il campo `Select Groups` per aggiungere i nomi dei gruppi da consentire o negare.
 
-Per le impostazioni relative alla configurazione e-mail, visita la [documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Per le impostazioni relative alla configurazione e-mail, visita la [documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=it)
 
 ![Configura servizio e-mail](/help/assets/assets/config-email-service.png)
 
@@ -247,7 +247,7 @@ Gli utenti possono scaricare le risorse richieste e condividerle all&#39;esterno
 
 Gli addetti al marketing e gli utenti del settore possono condividere con facilità le risorse approvate con i loro creativi utilizzando,
 
-* **App desktop Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con le controparti che sono utenti di Experience Manager, ad esempio, caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **App desktop Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con le controparti che sono utenti di Experience Manager, ad esempio, caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
@@ -296,7 +296,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilita le azioni desktop da utilizzare con l’app desktop {#desktop-actions}
 
-Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#desktopactions-v2)
 
 ![Abilita le azioni desktop da utilizzare come collegamento quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 

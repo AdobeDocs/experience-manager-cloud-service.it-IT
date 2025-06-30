@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Stai cercando la documentazione dell&#39;aggiornamento [!DNL Workfront for Experience Manager enhanced connector] per AEM 6.5? Fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>Stai cercando la documentazione dell&#39;aggiornamento [!DNL Workfront for Experience Manager enhanced connector] per AEM 6.5? Fai clic [qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=it##update-enhanced-connector-for-workfront).
 
 
 Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] alla versione più recente:
 
 1. Scarica la versione più recente del connettore avanzato da [Distribuzione software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Accedi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clona l&#39;archivio AEM as a Cloud Service da Cloud Manager.
+1. [Accedi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=it) e clona l&#39;archivio AEM as a Cloud Service da Cloud Manager.
 
 1. Apri l’archivio Experience Manager as a Cloud Service clonato utilizzando un IDE a tua scelta.
 
@@ -85,4 +85,4 @@ Per aggiornare [!DNL Workfront for Experience Manager enhanced connector] alla v
 
 1. Invia le modifiche all’archivio.
 
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).

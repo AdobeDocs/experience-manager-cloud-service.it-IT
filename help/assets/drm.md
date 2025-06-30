@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata di utilizzo. Utilizzando la piattaforma [!DNL Experience Manager], puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e le informazioni sulle licenze.

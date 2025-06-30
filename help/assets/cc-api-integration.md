@@ -60,7 +60,7 @@ Per abilitare il componente aggiuntivo Automazione dei contenuti per il programm
 1. Fai clic su **[!UICONTROL Continua]**.
 1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Crea]**.
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).
 
 Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un programma AEM as a Cloud Service esistente in Cloud Manager:
 
@@ -70,7 +70,7 @@ Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un progr
 
 1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Aggiorna]**.
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).
 
 ## Utilizzare un profilo di elaborazione per modificare in blocco le risorse creative {#process-assets}
 
