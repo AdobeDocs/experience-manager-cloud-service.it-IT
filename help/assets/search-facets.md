@@ -4,55 +4,18 @@ description: Questo articolo descrive come creare, modificare e utilizzare i fac
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2551'
-ht-degree: 20%
+source-wordcount: '2505'
+ht-degree: 19%
 
 ---
 
 # Facet di ricerca {#search-facets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
-        </td>
-    </tr>
-</table>
-
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Un’implementazione a livello aziendale di Adobe Experience Manager Assets ha la capacità di archiviare molte risorse. Talvolta, trovare la risorsa giusta può essere difficile e richiedere tempo se utilizzi solo le funzionalità di ricerca generiche di Experience Manager.
@@ -220,7 +183,7 @@ Analogamente al modo in cui si aggiunge un predicato Proprietà o Opzioni, è po
    <td>
     <ul>
      <li>Segnaposto</li>
-     <li>Percorso directory principale</li>
+     <li>Percorso principale</li>
      <li>Descrizione</li>
     </ul> </td>
   </tr>
@@ -374,7 +337,7 @@ Se non ti è stato assegnato un ruolo di amministratore, ecco un elenco di autor
 | Azione | Autorizzazione |
 |---|---|
 | Modifica | Autorizzazioni di lettura e scrittura sul nodo `/apps` in CRX. |
-| Elimina | Autorizzazioni di lettura, scrittura ed eliminazione per il nodo `/apps` in CRX. |
+| Eliminare | Autorizzazioni di lettura, scrittura ed eliminazione per il nodo `/apps` in CRX. |
 | Anteprima | Autorizzazioni di lettura, scrittura ed eliminazione per il nodo `/var/dam/content` in CRX. Inoltre, le autorizzazioni di lettura e scrittura sul nodo `/apps`. |
 
 **Consulta anche**

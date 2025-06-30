@@ -4,48 +4,14 @@ description: Scopri la funzionalità di estensibilità dell'interfaccia utente d
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 6%
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 # Abilita estensibilità interfaccia utente in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets View] supporta l&#39;estensibilità dell&#39;interfaccia utente, che consente di aggiungere componenti personalizzati all&#39;interfaccia utente di [!DNL Assets View] per flussi di lavoro e requisiti aziendali specifici che non sono soddisfatti dalle funzionalità predefinite di [!DNL AEM Assets View]. Questa funzionalità di estensibilità dell&#39;interfaccia utente di [!DNL AEM Assets View] ne migliora la flessibilità, consentendo alle organizzazioni di adattare l&#39;interfaccia per flussi di lavoro e requisiti specifici.\
 Puoi aggiungere le estensioni al livello **Risorsa**, **Cartella** e **Raccolta**. L&#39;estensione aggiunta viene visualizzata in un pannello dedicato nella pagina **Risorsa**, **Raccolta** o **Cartella** **[!UICONTROL Dettagli]**.

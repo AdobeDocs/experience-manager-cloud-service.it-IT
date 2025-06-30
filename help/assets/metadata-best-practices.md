@@ -4,10 +4,10 @@ description: Scopri le best practice sui metadati per gestire in modo efficace l
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 2%
+source-wordcount: '1384'
+ht-degree: 1%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # Gestione dei metadati e best practice {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
-        </td>
-    </tr>
-</table>
 
 Per dare risalto alla tua attività e coinvolgere più clienti, è fondamentale utilizzare elementi visivi di alta qualità come immagini, video e altre risorse digitali. A questo scopo, è necessario un processo che ti consenta di aggiungere metadati a tutte le risorse digitali, affinché siano facilmente ricercabili. I metadati sono dati che forniscono dettagli essenziali sulle risorse digitali, tra cui il nome, il tipo, la posizione all’interno di un archivio, la data di modifica e i tag associati alla risorsa. I metadati semplificano la gestione delle risorse, migliorano la ricercabilità e l’accessibilità e garantiscono un controllo efficace delle versioni.
 
@@ -131,7 +97,7 @@ Determina da dove provengono le informazioni ed esamina i dettagli della strateg
 
 >[!NOTE]
 >
->Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=it).
+>Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Coerenza con la strategia per i metadati
 
@@ -170,7 +136,7 @@ Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
    1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
-  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
+  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Campi metadati personalizzati:** Personalizza i campi metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca. Scopri [come modificare o aggiungere metadati personalizzati](meta-edit.md) in Experience Manager Assets.
 
@@ -200,4 +166,4 @@ Esaminare la catena di fornitura dei contenuti per individuare le origini dei me
 
 Comunica tempestivamente obiettivi, progressi, tappe fondamentali e sfide per ricevere il contributo e la cooperazione di tutte le parti interessate. Incoraggiare la collaborazione all&#39;interno dell&#39;organizzazione per creare processi efficienti e metadati preziosi.
 
-Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=it) per gestire in modo efficace i metadati di Experience Manager.
+Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) per gestire in modo efficace i metadati di Experience Manager.

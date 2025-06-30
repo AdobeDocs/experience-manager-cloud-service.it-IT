@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: fdd74e4d9b74600fd462e951046abfb1bb8e203b
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 8%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
 # Importa moduli metadati da [!DNL Admin View] a [!DNL Assets View] {#import-metadata-forms-from-admin-view-to-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] consente di importare i moduli di metadati e le relative associazioni di cartelle da [!DNL Admin View] a [!DNL Assets View].
 
@@ -83,9 +46,8 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 
    * Fai clic sull&#39;intestazione della colonna per ordinare la tabella in base a [!UICONTROL Nome], [!UICONTROL Modificato] o [!UICONTROL Autore].
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Rimuovi da cartelle]**, quindi verifica il nome della cartella nel percorso della cartella per verificare che la cartella sia stata trasferita correttamente.
-
      ![verifica pagina moduli metadati](/help/assets/assets/confirm-ported-folder.png)
-   * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
+   * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
 
    ![verifica pagina moduli metadati](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -94,8 +56,8 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 Dopo aver importato i moduli di metadati da [!DNL Admin View] a [!DNL Assets View], eseguire la procedura seguente per verificare l&#39;importazione:
 
 1. Passa a una delle cartelle associate al modulo di metadati importato.
-1. Passa alla pagina dei dettagli di una [risorsa](/help/assets/navigate-assets-view.md#preview-assets) e verifica che i componenti di metadati, i campi dei componenti e i valori dei campi supportati siano sincronizzati da [!DNL Admin View]. Consulta l&#39;articolo [Metadati in Assets Essentials](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/metadata) per ulteriori informazioni sui componenti metadati, i campi dei componenti e i valori dei campi.
+1. Passa alla pagina dei dettagli di una [risorsa](/help/assets/navigate-assets-view.md#preview-assets) e verifica che i componenti di metadati, i campi dei componenti e i valori dei campi supportati siano sincronizzati da [!DNL Admin View]. Consulta l&#39;articolo [Metadati in Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) per ulteriori informazioni sui componenti metadati, i campi dei componenti e i valori dei campi.
 
    >[!NOTE]
    >
-   > Nella [[!DNL Assets View] pagina dei dettagli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o nella [[!DNL Admin View] pagina delle proprietà](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/metadata-schemas), le modifiche ai valori delle proprietà dei metadati vengono sincronizzate automaticamente tra le due interfacce. Tuttavia, le modifiche strutturali del modulo, ad esempio l’aggiunta o la rimozione di campi o altre modifiche, non vengono sincronizzate.
+   > Nella [[!DNL Assets View] pagina dei dettagli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o nella [[!DNL Admin View] pagina delle proprietà](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), le modifiche ai valori delle proprietà dei metadati vengono sincronizzate automaticamente tra le due interfacce. Tuttavia, le modifiche strutturali del modulo, ad esempio l’aggiunta o la rimozione di campi o altre modifiche, non vengono sincronizzate.

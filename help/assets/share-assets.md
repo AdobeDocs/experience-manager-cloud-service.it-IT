@@ -4,55 +4,18 @@ description: Distribuisci le risorse digitali utilizzando metodi come share as a
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 3%
 
 ---
 
 # Condividi e distribuisci le risorse gestite in [!DNL Experience Manager] {#share-assets-from-aem}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità interfaccia utente</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nuovo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilita Dynamic Media Prime e Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
-        </td>
-    </tr>
-</table>
-
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte con membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. Utilizzare i metodi seguenti per condividere risorse da [!DNL Experience Manager Assets] come [!DNL Cloud Service]:
@@ -61,7 +24,7 @@ ht-degree: 4%
 * [Scarica le risorse](/help/assets/download-assets-from-aem.md) e condividile separatamente.
 * Condividi con [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it).
 * Condividi con [[!DNL Adobe Asset Link]](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html).
-* Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=it).
+* Condividi con [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
 ## Prerequisiti {#prerequisites}
 
@@ -87,11 +50,11 @@ Sono necessari privilegi di amministratore per [configurare le impostazioni per 
 1. Pulsante **[!UICONTROL Condivisione collegamento]** nella barra delle azioni:
    * Tutti gli utenti con autorizzazioni `jcr:modifyAccessControl` possono visualizzare l&#39;opzione [!UICONTROL Condivisione collegamenti]. Per impostazione predefinita, è visibile a tutti gli amministratori. Per impostazione predefinita, il pulsante [!UICONTROL Condivisione collegamento] è visibile a tutti. È possibile configurare per visualizzare questa opzione solo per i gruppi definiti oppure negarla a gruppi specifici. Selezionare `Allow only for groups` per consentire a gruppi specifici di visualizzare l&#39;opzione `Share Link`. Selezionare `Deny from groups` per negare l&#39;opzione `Share Link` da gruppi specifici. Dopo aver selezionato una di queste opzioni, specificare i nomi dei gruppi utilizzando il campo `Select Groups` per aggiungere i nomi dei gruppi da consentire o negare.
 
-Per le impostazioni relative alla configurazione e-mail, visita la [documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=it)
+Per le impostazioni relative alla configurazione e-mail, visita la [documentazione del servizio e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
 ![Configura servizio e-mail](/help/assets/assets/config-email-service.png)
 
-## Condividere le risorse come collegamento {#sharelink}
+## Condividere risorse come collegamento {#sharelink}
 
 La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili a parti esterne, addetti al marketing e altri utenti di [!DNL Experience Manager]. Questa funzionalità consente agli utenti anonimi di accedere e scaricare le risorse condivise con loro. Quando si scaricano risorse da un collegamento condiviso, [!DNL Experience Manager Assets] utilizza un servizio asincrono che offre un download più rapido e ininterrotto. Le risorse da scaricare vengono accodate in background in archivi ZIP di dimensioni file gestibili. Per i download di grandi dimensioni, il download è raggruppato in più file di 100 GB per file di dimensioni.
 
@@ -284,7 +247,7 @@ Gli utenti possono scaricare le risorse richieste e condividerle all&#39;esterno
 
 Gli addetti al marketing e gli utenti del settore possono condividere con facilità le risorse approvate con i loro creativi utilizzando,
 
-* **App desktop Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con le controparti che sono utenti di Experience Manager, ad esempio, caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#upload-and-add-new-assets-to-aem).
+* **App desktop Experience Manager**: l&#39;app funziona su Windows e Mac. Vedi [Panoramica dell&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=it). Per sapere in che modo un utente desktop autorizzato può accedere facilmente alle risorse condivise, consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Gli utenti desktop possono creare risorse e condividerle nuovamente con le controparti che sono utenti di Experience Manager, ad esempio, caricando nuove immagini. Consulta [caricare risorse tramite un&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: i professionisti della creatività possono cercare e utilizzare le risorse direttamente da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
@@ -333,7 +296,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilita le azioni desktop da utilizzare con l’app desktop {#desktop-actions}
 
-Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#desktopactions-v2)
+Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2}.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 
 ![Abilita le azioni desktop da utilizzare come collegamento quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 
