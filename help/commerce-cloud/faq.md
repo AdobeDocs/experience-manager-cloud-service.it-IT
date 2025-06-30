@@ -5,9 +5,9 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
 source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ I dati dinamici come prezzo o inventario non vengono memorizzati nella cache di 
 
 ## &#x200B;9. Come funziona l’annullamento della validità della cache per il Dispatcher AEM con AEM e Commerce?
 
-Adobe consiglia di impostare l’annullamento della validità della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o inventario, Adobe consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull&#39;annullamento della validità della cache basata su TTL, vedere [Ottimizzazione della cache di Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it)
+Adobe consiglia di impostare l’annullamento della validità della cache basata su TTL per le pagine memorizzate nella cache di Dispatcher. Per informazioni dinamiche come prezzo o inventario, Adobe consiglia di eseguire il rendering dei dati lato client. Per ulteriori informazioni sull’annullamento della validità della cache basata su TTL, consulta [Ottimizzazione della cache di Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it)
 
 ## &#x200B;10. Vi sono consigli sulla ricerca unificata nei contenuti AEM con Commerce?
 
