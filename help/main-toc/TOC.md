@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 924fa9e731935ca43387801d10ddd339929cc3d4
 workflow-type: tm+mt
 source-wordcount: '6320'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -1081,8 +1081,8 @@ ht-degree: 98%
          + [Come pubblicare e distribuire moduli - Guida alla pubblicazione con l’editor universale](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Componenti per moduli personalizzati - Guida all’editor universale per sviluppatori](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Integrazione del modello dati modulo: integrazione di moduli con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [Segmenti riutilizzabili, modulari e autonomi: creazione e utilizzo di frammenti di modulo nei moduli](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Risoluzione dei problemi relativi a 403 errori non consentiti nell&#39;invio di Edge Delivery Services Form](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Segmenti riutilizzabili, modulari e autonomi: creazione e utilizzo di frammenti di moduli nei moduli](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Risoluzione dei problemi relativi agli errori 403 durante l’invio di moduli di Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare moduli utilizzando Fogli Google o Excel - Guida dettagliata](/help/edge/docs/forms/create-forms.md)
