@@ -296,7 +296,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Abilita le azioni desktop da utilizzare con l’app desktop {#desktop-actions}
 
-Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2}.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+Dall&#39;interfaccia utente di [!DNL Assets] in un browser, puoi esplorare i percorsi delle risorse o estrarle e aprire la risorsa per la modifica nell&#39;applicazione desktop. Queste opzioni sono denominate azioni desktop e per abilitarle, vedi [abilitare le azioni desktop nell&#39;interfaccia Web [!DNL Assets] 2&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 
 ![Abilita le azioni desktop da utilizzare come collegamento quando si lavora con l&#39;app desktop](assets/enable_desktop_actions.png)
 

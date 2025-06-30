@@ -46,6 +46,7 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 
    * Fai clic sull&#39;intestazione della colonna per ordinare la tabella in base a [!UICONTROL Nome], [!UICONTROL Modificato] o [!UICONTROL Autore].
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Rimuovi da cartelle]**, quindi verifica il nome della cartella nel percorso della cartella per verificare che la cartella sia stata trasferita correttamente.
+
      ![verifica pagina moduli metadati](/help/assets/assets/confirm-ported-folder.png)
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
 

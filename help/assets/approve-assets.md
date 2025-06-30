@@ -25,7 +25,7 @@ Devi avere accesso ad AEM Assets as a Cloud Service e alle autorizzazioni per mo
 Prima di approvare una risorsa, devi effettuare un aggiornamento una tantum dello schema di metadati applicabile nella visualizzazione Amministratore. Puoi saltare questa configurazione per la vista Assets. Per configurare lo schema metadati, effettua le seguenti operazioni:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**.
-1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2} con la scheda**[!UICONTROL  Base ]**evidenziata.]**
+1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2&rbrace; con la scheda**&#x200B;[!UICONTROL &#x200B; Base &#x200B;]&#x200B;**evidenziata.]**
 1. Scorri verso il basso e fai clic su **[!UICONTROL Verifica stato]**.
 1. Fai clic sulla scheda **[!UICONTROL Regole]** nel pannello laterale destro.
 1. Deseleziona **[!UICONTROL Disabilita modifica]**.
@@ -69,7 +69,7 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.

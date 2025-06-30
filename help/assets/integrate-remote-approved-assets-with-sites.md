@@ -34,6 +34,7 @@ Il supporto per le risorse remote che utilizzano Dynamic Media con funzionalità
 * Configura le [variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) seguenti per AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` fa riferimento all&#39;ID programma <br>
      `eYYYY` fa riferimento all&#39;ID ambiente
 

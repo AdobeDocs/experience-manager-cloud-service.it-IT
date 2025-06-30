@@ -91,6 +91,7 @@ Per configurare la mappatura dei metadati utilizzando un nuovo modulo metadati i
    1. Specificare `Project Name` nel campo **[!UICONTROL Etichetta campo]**.
 
    1. Specificare `./jcr:content/metadata/wm:projectName` nel campo **[!UICONTROL Mappa su proprietà]**. Come linea guida, utilizza il seguente modello per definire le mappature dei campi in Experience Manager Assets:
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Durante la configurazione delle mappature in Workfront, hai mappato il campo Experience Manager Assets `wm:projectName` al campo Progetto > Nome Workfront.
