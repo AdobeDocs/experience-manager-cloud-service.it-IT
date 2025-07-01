@@ -4,10 +4,10 @@ description: Scopri la distribuzione di frammenti di contenuto AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ Per visualizzare in anteprima la distribuzione dei frammenti di contenuto con Op
 
 Questa API non prende in considerazione le origini consentite CORS definite sul lato della configurazione del dispatcher, in particolare per GraphQL.
 
-<!-- 
 ## API Rate Limits {#api-rate-limits}
--->
+
+L’API consente nuove richieste a una velocità massima di 200 richieste al secondo, per ambiente.
+
+Una volta superato questo limite, l’API inizia a inviare 429 errori. Questi errori devono essere gestiti da qualsiasi applicazione client e le richieste non riuscite vengono ritentate dopo un nuovo tentativo di backoff esponenziale.
 
 <!-- 
 ## Limitations {#limitations}
