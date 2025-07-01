@@ -4,10 +4,10 @@ description: Carica le risorse in [!DNL Assets view], visualizza lo stato di car
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Per aggiungere nuove risorse con cui lavorare, carica alcune risorse dal file sy
 Per caricare una o più risorse o una cartella contenente risorse, puoi utilizzare i seguenti metodi:
 
 * Trascina risorse o cartelle nell’interfaccia utente e segui le istruzioni visualizzate.
-* Fai clic sull’opzione **[!UICONTROL Aggiungi risorse]** nella barra degli strumenti e aggiungi alcuni file nella finestra di dialogo di caricamento.
+* Fai clic sull&#39;opzione **[!UICONTROL Aggiungi Assets]** nella barra degli strumenti e aggiungi alcuni file alla finestra di dialogo di caricamento.
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a [!DNL Cloud Service] fornisce un metodo nativo per il cloud per sfruttare le applicazioni e le funzionalità di Experience Manager. Uno degli elementi chiave di questa nuova architettura è l’acquisizione e l’elaborazione delle risorse, basate sui microservizi per le risorse. I microservizi per le risorse forniscono un’elaborazione scalabile e flessibile delle risorse utilizzando servizi cloud. Adobe gestisce i servizi cloud per una gestione ottimale dei diversi tipi di risorse e opzioni di elaborazione. I vantaggi principali dei microservizi per le risorse native per il cloud sono:
 
-* Architettura scalabile che consente un’elaborazione perfetta per le operazioni ad alta intensità di risorse.
+* Architettura scalabile che consente l&#39;elaborazione senza soluzione di continuità per operazioni a uso intensivo di risorse.
 * Indicizzazione ed estrazione del testo efficienti che non influiscono sulle prestazioni degli ambienti di Experience Manager.
 * Riduci al minimo la necessità di flussi di lavoro per gestire l’elaborazione delle risorse nell’ambiente Experience Manager. Questo consente di liberare risorse, ridurre al minimo il carico sull’Experience Manager e fornisce scalabilità.
 * Maggiore resilienza dell’elaborazione delle risorse. I potenziali problemi relativi alla gestione di file atipici, come file danneggiati o file di grandi dimensioni, non influiscono più sulle prestazioni della distribuzione.
