@@ -6,8 +6,8 @@ exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Il contro
 ## Editing delle immagini {#edit-image}
 
 Passa all&#39;interfaccia utente di visualizzazione di Assets utilizzando il collegamento [Visualizzazione Assets](https://experience.adobe.com/#/assets) e selezionando l&#39;archivio appropriato. Per ricevere l’accesso, contatta l’amministratore dell’organizzazione.
-Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all&#39;utilizzo di Adobe Experience Manager Assets View](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di Assets View](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casi di utilizzo di Assets View](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Per ulteriori informazioni di riferimento, fare riferimento a: [Introduzione all&#39;utilizzo di Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Interfaccia utente di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casi di utilizzo di Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -153,7 +153,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/it/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}

@@ -1,11 +1,11 @@
 ---
-title: Panoramica degli strumenti di refactoring
+title: Panoramica sugli strumenti di refactoring
 description: Scopri come iniziare a utilizzare gli strumenti di refactoring di AEM
 exl-id: b8137e01-87e8-4298-b0cc-b376330cb730
 source-git-commit: 879f4f3476ee369554188d6e3b7973d32454ed4b
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 >id="aemcloud_rs_overview"
 >title="Overview"
 >abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=it" text="Guidelines and Best Practices"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
 -->
 
-# Panoramica degli strumenti di refactoring {#refactoring-tools-overview}
+# Panoramica sugli strumenti di refactoring {#refactoring-tools-overview}
 
 **Strumenti di refactoring** semplifica il processo di aggiornamento dei progetti AEM esistenti per renderli compatibili con **AEM as a Cloud Service (AEMaaCS)**. Questi strumenti automatizzano le attività comuni di refactoring e modernizzazione e sono integrati con il **Cloud Acceleration Manager (CAM)** per un&#39;esperienza fluida.
 
