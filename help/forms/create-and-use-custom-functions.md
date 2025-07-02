@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Questo articolo |
 
 AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole aziendali complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti. Le funzioni personalizzate consentono inoltre agli sviluppatori di applicare logiche di convalida complesse, eseguire calcoli dinamici e controllare la visualizzazione o il comportamento degli elementi del modulo in base alle interazioni dell&#39;utente o a criteri predefiniti.
@@ -214,6 +214,16 @@ Per elencare le funzioni personalizzate nell’editor di regole di un modulo ada
 ```
 
 Se l’utente non aggiunge annotazioni JavaScript alla funzione personalizzata, la funzione personalizzata non viene elencata nell’editor di regole di un modulo adattivo.
+
+## Problema noto
+
+* Le funzioni personalizzate non supportano i valori letterali delle espressioni regolari di JavaScript. L’utilizzo di valori letterali regex in una funzione personalizzata genera errori durante l’esecuzione. Ad esempio:
+  `const pattern = /^abc$/;`
+
+  Per garantire la compatibilità, utilizza il costruttore RegExp nelle funzioni personalizzate.
+
+  `const pattern = new RegExp("^abc$");`
+Effettua il refactoring delle espressioni regolari per utilizzare il costruttore RegExp per garantire un’esecuzione coerente e affidabile.
 
 ## Passaggio successivo
 

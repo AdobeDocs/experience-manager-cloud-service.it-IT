@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Fare riferimento all&#39;illustrazione di `console window` seguente per dimostra
 
 È inoltre possibile esaminare la finestra della console per visualizzare i dati inviati al server:
 
-![Dati Inspect nella finestra della console](/help/forms/assets/custom-function-submit-data-console-data.png)
+![Verifica i dati nella finestra della console](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## Ignora gestori di errori e operazioni riuscite per l’invio del modulo
 
@@ -370,7 +370,7 @@ Fai riferimento all’illustrazione seguente per dimostrare che quando l’invio
 
 Per visualizzare l&#39;invio dei moduli completato e non riuscito in modo predefinito, sono disponibili le funzioni `Default submit Form Success Handler` e `Default submit Form Error Handler` pronte all&#39;uso.
 
-Nel caso in cui il gestore di invio personalizzato non riesca a eseguire le operazioni previste nei progetti o moduli AEM esistenti, consulta la sezione [risoluzione dei problemi](#troubleshooting).
+Nel caso in cui il gestore di invio personalizzato non riesca a eseguire le operazioni previste nei moduli o nei progetti AEM esistenti, consulta la sezione [risoluzione dei problemi](#troubleshooting).
 
 ## Eseguire azioni in un&#39;istanza specifica del pannello ripetibile
 
@@ -513,11 +513,20 @@ Fare riferimento al file GIF riportato di seguito, a dimostrazione che quando si
 
 ![Elimina pannello](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Problema noto
+
+* Le funzioni personalizzate non supportano i valori letterali delle espressioni regolari di JavaScript. L’utilizzo di valori letterali regex in una funzione personalizzata genera errori durante l’esecuzione. Ad esempio:
+  `const pattern = /^abc$/;`
+
+  Per garantire la compatibilità, utilizza il costruttore RegExp nelle funzioni personalizzate.
+
+  `const pattern = new RegExp("^abc$");`
+Effettua il refactoring delle espressioni regolari per utilizzare il costruttore RegExp per garantire un’esecuzione coerente e affidabile.
 
 ## Risoluzione dei problemi
 
 * Se il gestore di invio personalizzato non funziona come previsto nei progetti o moduli AEM esistenti, effettua le seguenti operazioni:
-   * Verificare che la versione dei componenti core [sia aggiornata a 3.0.18 e versioni successive](https://github.com/adobe/aem-core-forms-components). Tuttavia, per i progetti e i moduli AEM esistenti, vi sono ulteriori passi da seguire:
+   * Verificare che la versione dei componenti core [sia aggiornata a 3.0.18 e versioni successive](https://github.com/adobe/aem-core-forms-components). Tuttavia, per i progetti e i moduli AEM esistenti, sono disponibili ulteriori passaggi da seguire:
 
    * Per il progetto AEM, l&#39;utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e distribuire il progetto tramite la pipeline Cloud Manager.
 
