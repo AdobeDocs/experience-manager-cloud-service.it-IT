@@ -3,7 +3,7 @@ title: Integrazione con Content Credentials
 description: Content Credentials, integrato in AEM Assets e disponibile nella visualizzazione Assets, può offrire un contesto nella cronologia di una risorsa, compreso come è stata creata e chi è stato coinvolto nella sua creazione. Come un’etichetta nutrizionale per i contenuti digitali, Content Credentials può contribuire ad aumentare la trasparenza e a creare fiducia nei confronti del pubblico.
 role: User
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,11 +37,8 @@ Adobe Experience Manager Assets ora supporta Content Credentials, consentendo ag
 1. Fai clic su **Dettagli** e seleziona `Cr pin` dal riquadro più a destra. Nella scheda Content Credentials sono visualizzate le seguenti informazioni sulla risorsa.
    1. **Immagine generata:** Data e ora di applicazione di Content Credentials.
    1. **Riepilogo contenuto:** indica se la risorsa è generata parzialmente o completamente da IA o come è stata modificata.
-
       ![credenziali contenuto](/help/assets/assets/content-credentials1.png)
    1. **Processo:** descrive l&#39;applicazione, il dispositivo e lo strumento di intelligenza artificiale (ad esempio Adobe Firefly) utilizzati per generare la risorsa, nonché le modifiche apportate successivamente.
-
       ![processo](/help/assets/assets/CR-Process.png)
    1. **Informazioni su questo Content Credentials:** Nome dell&#39;emittente insieme alla data e all&#39;ora di emissione.
-
       ![emittente](/help/assets/assets/CR-issuer.png)
