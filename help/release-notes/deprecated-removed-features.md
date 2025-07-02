@@ -4,10 +4,10 @@ description: Note sulla versione specifiche per le funzioni obsolete e rimosse i
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: ht
-source-wordcount: '3181'
-ht-degree: 100%
+source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 98%
 
 ---
 
@@ -453,9 +453,9 @@ Le proprietà per i seguenti PID del componente OSGi sono obsolete e l’utilizz
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | tutti | 3/6/25 | 31/8/25 |
 | **`org.apache.http.proxyconfigurator`** | tutti | 3/6/25 | 31/8/25 |
 
-### Proprietà OSGi non modificabili {#unmodifiable-osgi-properties}
+### Configurazioni OSGi non modificabili {#unmodifiable-osgi-properties}
 
-Non è possibile modificare le proprietà dei PID del componente OSGi seguenti, come descritto di seguito.
+Non è possibile modificare le proprietà per i PID dei seguenti componenti OSGi, pertanto questi non devono essere configurati.
 
 | **ID componente OSGI** | **Proprietà non modificabili** |
 |---|---|
@@ -475,7 +475,7 @@ Non è possibile modificare le proprietà dei PID del componente OSGi seguenti, 
 
 ### Restrizioni applicate alle proprietà OSGi future {#future-restrictions-osgi-properties}
 
-In futuro, Adobe applicherà le seguenti restrizioni alle proprietà OSGi, pertanto l’utilizzo ne sarà interrotto.
+In futuro, Adobe applicherà le seguenti restrizioni alle proprietà OSGi. Per i PID menzionati, è consentito configurare solo le proprietà elencate.
 
 | PID componente OSGi |   | Obbligatorio | Tipo | Restrizione (se applicabile) |
 |---|---|---|---|---|
