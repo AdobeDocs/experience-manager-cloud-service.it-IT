@@ -4,9 +4,9 @@ description: Scopri la distribuzione di frammenti di contenuto AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Questa API non prende in considerazione le origini consentite CORS definite sul 
 
 L’API consente nuove richieste a una velocità massima di 200 richieste al secondo, per ambiente.
 
-Una volta superato questo limite, l’API inizia a inviare 429 errori. Questi errori devono essere gestiti da qualsiasi applicazione client e le richieste non riuscite vengono ritentate dopo un nuovo tentativo di backoff esponenziale.
+Una volta superato questo limite, l&#39;API inizia a inviare [429 errori](https://www.rfc-editor.org/rfc/rfc6585#section-4). Questi errori devono essere gestiti da qualsiasi applicazione client e le richieste non riuscite vengono ritentate dopo un nuovo tentativo di backoff esponenziale. La risposta HTTP viene fornita con un&#39;intestazione specifica, `Retry-After`, che indica al client il tempo di attesa necessario prima di inviare di nuovo la richiesta.
 
 <!-- 
 ## Limitations {#limitations}
