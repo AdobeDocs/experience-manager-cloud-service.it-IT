@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 83%
 
 ---
@@ -146,7 +146,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 
 ### Problemi noti {#known-issues-21331}
 
-Nessuna.
+* SITES-33177: Gli stili di sezione memorizzati come stringhe separate da virgola sono interrotti.
 
 ### Funzioni e API obsolete {#deprecated-21331}
 
