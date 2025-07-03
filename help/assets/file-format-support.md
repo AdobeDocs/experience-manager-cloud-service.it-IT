@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1082'
 ht-degree: 10%
 
 ---
@@ -33,6 +33,12 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 | ✓ | Funzione supportata |
 | * | Vedi le osservazioni sotto la tabella |
 | - | Non applicabile |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] supporta solo i formati di file elencati in questo articolo.
+>>Alcune funzionalità potrebbero funzionare con altri formati, ma questi formati non sono ufficialmente supportati. I risultati potrebbero essere incoerenti e le funzioni potrebbero non funzionare come previsto.
+>>Per garantire risultati coerenti e affidabili, utilizza solo i formati supportati.
 
 ## Formati Adobe {#adobe-formats}
 
@@ -192,7 +198,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 ## Suggerimenti e limitazioni {#limitations-and-tips}
 
-* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’estrazione dei metadati non riesce.
+* Attualmente, il limite di dimensione del file per l’estrazione dei metadati è di circa 15 GB. Quando si caricano risorse di grandi dimensioni, a volte l’operazione di estrazione dei metadati non riesce.
 
 ## Dynamic Media: formati video di ingresso supportati per la transcodifica {#video-dynamic-media-transcoding}
 
