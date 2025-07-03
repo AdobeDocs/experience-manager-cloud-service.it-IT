@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 96%
 
 La sezione seguente illustra le note generali sulla versione di [!DNL Workfront for Experience Manager enhanced connector].
 
-La data di rilascio dell’ultima versione 1.9.21 di [!DNL Workfront for Experience Manager enhanced connector] è il 25 giugno 2025.
+La data di rilascio della versione più recente 1.9.21 di [!DNL Workfront for Experience Manager enhanced connector] è il 25 giugno 2025.
 
 ## Caratteristiche principali della versione {#release-highlights}
 
-La versione più recente di [!DNL Workfront for Experience Manager enhanced connector] include i miglioramenti e le correzioni di bug seguenti:
+La versione più recente di [!DNL Workfront for Experience Manager enhanced connector] include le seguenti correzioni di bug e miglioramenti:
 
 * È stata migliorata la registrazione delle richieste API per evitare la registrazione di falsi positivi di errori di autenticazione.
 

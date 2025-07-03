@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) è il venerdì 26 giugno 2025. La prossima versione funzionale (2025.7.0) è pianificata per il venerdì 31 luglio 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.6.0) è 26 giugno 2025. La prossima versione funzionale (2025.7.0) è pianificata per il 31 luglio 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -40,15 +40,15 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Gestione avanzata dei moduli di metadati in Assets View**
+**Gestione avanzata del modulo metadati nella vista Risorse**
 
-Ora puoi importare i moduli di metadati dalla vista Amministratore direttamente nella vista Assets. Eventuali aggiornamenti apportati a questi moduli nella visualizzazione Assets si riflettono automaticamente nella visualizzazione Amministratore, garantendo la coerenza tra le due esperienze. Questa funzionalità supporta una transizione fluida alla nuova vista Assets mantenendo al contempo la continuità con le configurazioni di metadati esistenti.
+Ora puoi importare i moduli di metadati dalla vista Amministratore direttamente nella vista Risorse. Eventuali aggiornamenti apportati a questi moduli nella vista Risorse si riflettono automaticamente nella vista Amministratore, garantendo la coerenza tra le due esperienze. Questa funzionalità supporta una transizione fluida alla nuova vista Risorse mantenendo al contempo la continuità con le configurazioni di metadati esistenti.
 
 ![Metadati generati dall’IA](/help/assets/assets/import-metadata-forms-page.png)
 
@@ -104,7 +104,7 @@ Proprietà OSGi:
 
 Il **runtime Java 11** è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime **Java 21** più performante.
 
-Se non è stato possibile aggiornare l&#39;ambiente a causa di dipendenze non supportate (vedi [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un&#39;e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
+Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
 Nota: la versione di runtime è separata dalla versione di build del codice. Sebbene consigliamo di creare con Java 21, le build Java 11 sono ancora supportate per il momento. In futuro verrà condiviso un avviso di rimozione separato per le build Java 11.
 
@@ -112,7 +112,7 @@ Nota: la versione di runtime è separata dalla versione di build del codice. Seb
 
 Come indicato nelle note sulla versione di aprile, i registri Java di AEM devono seguire un formato standard per garantire un monitoraggio affidabile in tutti gli ambienti del cliente. Le configurazioni di registro personalizzate, ad esempio modifiche alla formattazione del registro, ai file di output o ai livelli di registro predefiniti, non sono più supportate. I registri devono rimanere indirizzati ai file predefiniti e i livelli di registro predefiniti per il codice prodotto AEM devono essere mantenuti. Consulta tutti i dettagli nell’articolo [Registrazione](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partire dalla **fine di agosto**, qualsiasi sostituzione di registrazione personalizzata non supportate verrà ignorata. In base alla nostra analisi, la maggior parte dei clienti non sarà interessata e Adobe ha contattato i clienti la cui configurazione corrente potrebbe essere interessata.
+A partire dalla **fine di agosto**, qualsiasi sostituzione di registrazione personalizzata non supportate verrà ignorata. In base alla nostra analisi, la maggior parte della clientela non sarà interessata e Adobe ha contattato tutti coloro la cui configurazione corrente potrebbe essere coinvolta.
 
 Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento di registrazione personalizzato. Ad esempio:
 
@@ -123,7 +123,7 @@ Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento d
 
 Attualmente, le *attività di manutenzione dell’eliminazione* associate alle versioni di contenuto e ai registri di controllo sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso, a meno che questo non sia configurato in modo esplicito.
 
-Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire dal **inizio di luglio 2025**, la rimozione sarà abilitata per impostazione predefinita, seguendo queste linee guida:
+Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine luglio 2025**, l’eliminazione sarà abilitata per impostazione predefinita, seguendo queste linee guida:
 
 #### Versioni di contenuto {#mt-content}
 
