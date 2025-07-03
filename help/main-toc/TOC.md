@@ -685,7 +685,7 @@ ht-degree: 99%
       + [Modificare i video](/help/assets/edit-videos-assets-view.md)
       + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
       + [Gestire i metadati delle risorse](/help/assets/metadata-assets-view.md)
-      + [Importare il modulo metadati dalla visualizzazione Amministratore alla visualizzazione Assets](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
+      + [Importare il modulo metadati dalla vista Amministratore alla vista Risorse](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
       + [Rinominare in blocco](/help/assets/bulk-rename-assets-view.md)
       + [Modificare i metadati in blocco](/help/assets/bulk-metadata-edit.md)
       + [Condividere le risorse](/help/assets/share-links-for-assets-view.md)
@@ -751,7 +751,7 @@ ht-degree: 99%
       + [Migrare da [!DNL AEM 6.5 Forms] o precedenti verso [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Gruppi e autorizzazioni](/help/forms/forms-groups-privileges-tasks.md)
       + [Importare, esportare e organizzare Forms adattivo, PDF forms e altre risorse](/help/forms/import-export-forms-templates.md)
-      + [Abilita attivazione/disattivazione funzionalità in Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
+      + [Abilitare attivazione/disattivazione funzioni in Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
    + Guida introduttiva {#getting-started-forms}
       + [Caso d’uso e configurazione di un ambiente di sviluppo](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Creare il modulo di richiesta del prestito](/help/forms/create-adaptive-form-tutorial.md)
