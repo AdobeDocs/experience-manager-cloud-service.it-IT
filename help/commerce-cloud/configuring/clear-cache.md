@@ -32,6 +32,7 @@ Per impostazione predefinita, la funzione di cancellazione della cache è disabi
 * Consenti al listener di cancellare la cache da ogni istanza di AEM (pubblicazione e authoring) aggiungendo la configurazione `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` nel progetto come mostrato [qui](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * La configurazione deve essere abilitata sia per le istanze di authoring che per quelle di pubblicazione.
    * Abilitare la cache di Dispatcher (facoltativo): è possibile abilitare l&#39;impostazione della cache di eliminazione del dispatcher impostando la proprietà `enableDispatcherCacheInvalidation` su true nella configurazione precedente. Questa funzione consente di cancellare la cache dal dispatcher.
+
      >[!NOTE]
      >
      > Questo funziona solo con le istanze di pubblicazione.
@@ -64,6 +65,7 @@ Ora, per verificare se le cache vengono cancellate correttamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 Se tutto va bene, le nuove modifiche si riflettono in ogni istanza. Se le modifiche non sono visibili nell’istanza di pubblicazione, prova ad accedere alle pagine PLP e PDP pertinenti in una finestra del browser privata/in incognito.
 
 >[!NOTE]

@@ -49,7 +49,7 @@ Sono inoltre supportate le proprietà dei campi della finestra di dialogo standa
 >[!CAUTION]
 >
 >Il componente `cifproductfield` richiede clientlib `cif.shell.picker`. Per aggiungere una libreria client a una finestra di dialogo, puoi utilizzare la proprietà extraClientlibs.
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `sku` o `slug` come identificatore di prodotto. Adobe continua a supportare `id` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.
 
@@ -79,7 +79,7 @@ Sono inoltre supportate le proprietà dei campi della finestra di dialogo standa
 >[!CAUTION]
 >
 >Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, è possibile utilizzare la proprietà `extraClientlibs`. Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core di AEM.
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `uid` o `urlPath` come identificatore di categoria. Adobe continua a supportare `id` e `idAndUrlPath` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.
 

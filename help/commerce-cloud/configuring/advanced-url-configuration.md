@@ -224,15 +224,15 @@ Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di A
 
 Come accennato prima di selezionare uno dei formati predefiniti disponibili, o anche l&#39;implementazione di un formato personalizzato, altamente dipende dalle esigenze e requisiti di un negozio. I seguenti suggerimenti possono essere utili per prendere una decisione ponderata.
 
-_**Utilizza un formato URL della pagina di prodotto contenente lo SKU.**_
+_&#x200B;**Utilizza un formato URL della pagina di prodotto contenente lo SKU.**&#x200B;_
 
 I Componenti core di CIF utilizzano lo SKU come identificatore primario in tutti i componenti. Se il formato dell’URL della pagina di prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questa risoluzione può influire sul tempo al primo byte. Inoltre, può essere necessario che gli acquirenti possano trovare i prodotti per SKU utilizzando i motori di ricerca.
 
-_**Utilizza un formato URL per la pagina del prodotto contenente il contesto della categoria.**_
+_&#x200B;**Utilizza un formato URL per la pagina del prodotto contenente il contesto della categoria.**&#x200B;_
 
 Alcune funzionalità del provider URL di CIF sono disponibili solo quando si utilizzano formati URL di prodotto che codificano il contesto della categoria, come la categoria `url_key` o la categoria `url_path`. Anche se queste funzioni non sono necessarie per un nuovo archivio, l’utilizzo iniziale di uno di questi formati URL contribuisce a ridurre le attività di migrazione in futuro.
 
-_**Equilibrio tra la lunghezza dell&#39;URL e le informazioni codificate.**_
+_&#x200B;**Equilibrio tra la lunghezza dell&#39;URL e le informazioni codificate.**&#x200B;_
 
 A seconda della dimensione del catalogo, in particolare la dimensione e la profondità della struttura delle categorie, potrebbe non essere ragionevole codificare l’`url_path` completo delle categorie nell’URL. In tal caso, la lunghezza dell&#39;URL può essere ridotta includendo solo il `url_key` della categoria. Questo metodo supporta la maggior parte delle funzionalità disponibili quando si utilizza la categoria `url_path`.
 
