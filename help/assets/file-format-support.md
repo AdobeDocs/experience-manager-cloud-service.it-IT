@@ -37,8 +37,8 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] supporta solo i formati di file elencati in questo articolo.
->>Alcune funzionalità potrebbero funzionare con altri formati, ma questi formati non sono ufficialmente supportati. I risultati potrebbero essere incoerenti e le funzioni potrebbero non funzionare come previsto.
->>Per garantire risultati coerenti e affidabili, utilizza solo i formati supportati.
+>&#x200B;>Alcune funzionalità potrebbero funzionare con altri formati, ma questi formati non sono ufficialmente supportati. I risultati potrebbero essere incoerenti e le funzioni potrebbero non funzionare come previsto.
+>&#x200B;>Per garantire risultati coerenti e affidabili, utilizza solo i formati supportati.
 
 ## Formati Adobe {#adobe-formats}
 
