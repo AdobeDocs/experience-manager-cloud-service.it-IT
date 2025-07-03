@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -31,14 +31,14 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * FORMS-19336: ricerca aggiunta nella struttura di origine dei dati nell’editor dei moduli adattivi (AF).
 * FORMS-19417: supporto di pulsanti di scelta nella vista Gerarchia.
 * FORMS-19603: supporto alla pagina mastro e a quella di progettazione nell’editor di regole.
-* SITES-5358: API REST di frammenti di contenuto: copia i frammenti di contenuto (CF) con elementi figlio.
+* SITES-5358: API REST per frammenti di contenuto: copia di frammenti di contenuto (CF) con elementi figlio.
 * SITES-10575: “MSM: caricatore di filtri Bloom nella Blueprint” (Blueprint Bloomfilter Loader) tenta di caricare più di 100.000 righe.
 * SITES-14542: la ridenominazione o lo spostamento di una pagina di origine Live Copy deve attivare la pubblicazione della pagina Live Copy rinominata/spostata nel caso in cui sia stata precedentemente pubblicata.
 * SITES-19754: Edge Delivery con l’editor universale: aggiungi un messaggio di errore leggibile quando l’integrazione presenta problemi.
 * SITES-23499: Edge Delivery con l’editor universale: aggiungi l’utilizzo di un supporto per più campi per le opzioni di blocco.
 * SITES-23518: Edge Delivery con l’editor universale: aggiungi supporto a rappresentazioni di risorse specifiche Edge Delivery.
-* SITES-24436: API REST per frammenti di contenuto: è stata introdotta la cache locale per velocizzare il recupero dei riferimenti duplicati.
-* SITES-25155: API Rest dei frammenti di contenuto: rimuovi il parametro di query &quot;enabledForFolder&quot; obsoleto nell’elenco Modelli.
+* SITES-24436: API REST per frammenti di contenuto: è stata introdotta la cache locale per velocizzare il recupero di riferimenti duplicati.
+* SITES-25155: API REST per frammenti di contenuto: rimozione del parametro di query “enabledForFolder” obsoleto dall’elenco Modelli.
 * SITES-25913: API REST di frammenti di contenuto: convalida delle risorse in base al tempo prima di avviare il flusso di lavoro di pubblicazione.
 * SITES-25976: i collegamenti all’interno dei frammenti esperienza non si adattano dopo il rollout di MSM.
 * SITES-26271: API REST di frammenti di contenuto: passa a BFS Traversal per l’endpoint di variante GET.
@@ -46,16 +46,16 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-27775: ricerca di riferimento ottimizzata durante la pubblicazione (caricamento lento dei metadati).
 * SITES-27782: Edge Delivery con l’editor universale: aggiungi un’implementazione specifica dell’editore abbonato per pubblicare contenuti su Edge Delivery (accesso anticipato).
 * SITES-27792: Edge Delivery con l’editor universale: aggiungi un modello di configurazione di Edge Delivery Services dedicato.
-* SITES-28557: API REST per frammenti di contenuto: consenti l&#39;utilizzo di ETag recuperati chiamando `/cf/fragments/{fragmentId}` con `references=direct` per applicare una patch a un frammento di contenuto.
-* SITES-28683: consenti alle ricerche MSM LiveRelationship di ignorare lo stato avanzato.
+* SITES-28557: API REST per frammenti di contenuto: consente l’utilizzo di ETag recuperati chiamando `/cf/fragments/{fragmentId}` con `references=direct` per applicare una patch a un frammento di contenuto.
+* SITES-28683: ricerche MSM LiveRelationship con possibilità di ignorare lo stato avanzato.
 * SITES-29601: API REST per frammenti di contenuto: convalida dei riferimenti ai frammenti di contenuto dei campi di testo lunghi.
-* SITES-29614: API REST per frammenti di contenuto: recupera un flusso di lavoro utilizzando l&#39;endpoint `/cf/workflows/{workflowInstanceId}`, dove workflowInstanceIda è l&#39;ID restituito dalla richiesta di pubblicazione.
-* SITES-29615: API REST dei frammenti di contenuto: elenca tutte le richieste batch create tramite POST `/cf/batch` utilizzando `GET /cf/batch`.
-* SITES-29874: API Rest per frammenti di contenuto: i riferimenti da campi di testo lunghi di frammenti di contenuto ora vengono recuperati e identificati.
+* SITES-29614: API REST per frammenti di contenuto: recupera un flusso di lavoro utilizzando l’endpoint `/cf/workflows/{workflowInstanceId}`, dove workflowInstanceIda è l’ID restituito dalla richiesta di pubblicazione.
+* SITES-29615: API REST per frammenti di contenuto: elenca tutte le richieste batch create tramite POST `/cf/batch` utilizzando `GET /cf/batch`.
+* SITES-29874: API REST per frammenti di contenuto: i riferimenti da campi di testo lunghi di frammenti di contenuto ora vengono recuperati e idratati.
 * SITES-29930: API REST di frammenti di contenuto: aggiungi metriche per il flusso di lavoro Pubblicazione dei frammenti di contenuto.
 * SITES-29986: API REST di frammenti di contenuto: supporto alla denominazione tecnica del modello CF.
 * SITES-30088: API REST di frammenti di contenuto: Pubblicazione CF: ignora il recupero di riferimenti quando filterReferencesByStatus è vuoto.
-* SITES-30126: Frammenti di contenuto Rest API: CF Miglioramento delle prestazioni di pubblicazione: ha sostituito il controllo se una risorsa è un frammento con un controllo minimo.
+* SITES-30126: API REST per frammenti di contenuto: miglioramento delle prestazioni per la pubblicazione dei frammenti di contenuto: è stato sostituito il controllo se una risorsa è un frammento con un controllo minimo.
 * SITES-30328: Edge Delivery con l’editor universale: aggiungi supporto all’anteprima dalla barra laterale.
 * SITES-30445: API REST di frammenti di contenuto: schema dell’interfaccia utente del modello CF: aggiungi un’opzione per controllare lo stato iniziale del file comprimibile.
 * SITES-30604: API REST di frammenti di contenuto: supporto all’adozione dello schema metadati del modello nella nuova interfaccia utente.
@@ -63,12 +63,12 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-30886: API REST di frammenti di contenuto: flussi di lavoro GET per l’endpoint dei frammenti di contenuto basati sugli UID dei frammenti memorizzati nei metadati del flusso di lavoro.
 * SITES-31005: l’interfaccia utente del processo di rollout è stata migliorata per mostrarne l’avanzamento.
 * SITES-31020: l’interfaccia utente del processo Crea Live Copy è stata migliorata per mostrarne l’avanzamento.
-* SITES-31111: API Rest dei frammenti di contenuto: consenti all’API della patch di variante di accettare riferimenti ai frammenti di contenuto all’interno dei lanci di frammenti di contenuto.
-* SITES-31343: API Rest dei frammenti di contenuto: aggiungi filtro e impaginazione per data all’endpoint che elenca le richieste batch.
-* SITES-31472: l’eliminazione di Launch può causare la sospensione dell’archivio se il lancio è massivo.
-* SITES-31641: API REST per frammenti di contenuto: aggiungi una proprietà ai campi modello per memorizzare le mappe dinamiche relative alle estensioni.
+* SITES-31111: API REST per frammenti di contenuto: consente all’API della patch di variante di accettare riferimenti ai frammenti di contenuto all’interno dei lanci di frammenti di contenuto.
+* SITES-31343: API REST per frammenti di contenuto: sono stati aggiunti filtro e impaginazione per data all’endpoint che elenca le richieste batch.
+* SITES-31472: l’utilizzo di Elimina lancio per un lancio di grandi dimensioni può causare la sospensione dell’archivio.
+* SITES-31641: API REST per frammenti di contenuto: è stata aggiunta una proprietà ai campi modello per memorizzare le mappe dinamiche relative alle estensioni.
 * SITES-31677: l’area di lavoro personalizzata supporta l’esportazione dei frammenti di contenuto di AEM in Target.
-* SITES-31770: API Rest dei frammenti di contenuto: miglioramenti delle prestazioni di PATCH.
+* SITES-31770: API REST per frammenti di contenuto: miglioramenti delle prestazioni di PATCH.
 * SITES-31782: API REST di frammenti di contenuto: aggiungi una descrizione per le risorse locali.
 * SITES-32175: consenti impegni intermediari sia per la creazione di Live Copy che per il rollout di pagine MSM.
 
@@ -97,7 +97,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-25235: il messaggio di caricamento del contenuto della barra dei filtri non viene annunciato dall’assistente vocale.
 * SITES-25254: la barra di scorrimento orizzontale viene visualizzata nel modale Carosello quando il contenuto viene visualizzato a 320 px.
 * SITES-25433: Edge Delivery con Editor universale: correzione del rendering delle versioni di pagina per strutture di siti multilingue.
-* SITES-26064: API REST per frammenti di contenuto: è stato corretto il codice di stato restituito durante la creazione di un frammento e l’ottenimento di un `AccessDeniedException` nel backend.
+* SITES-26064: API REST per frammenti di contenuto: è stato corretto il codice di stato restituito durante la creazione di un frammento e la ricezione di un `AccessDeniedException` nel backend.
 * SITES-26890: quando viene utilizzata la tastiera, il focus tastiera dell’ambito “Intestazioni tabella” non è visibile nella pagina Gestione Pubblicazione.
 * SITES-29075: la panoramica della Live Copy non funziona per i siti web con volumi elevati.
 * SITES-29514: Edge Delivery con Editor universale: rende obbligatorio l’URL di GitHub/progetto durante la creazione di un nuovo sito.
@@ -124,16 +124,16 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-30899: l’opzione di rollout “Più tardi” consente di continuare senza selezionare alcuna data.
 * SITES-30947: eccezione Null Pointer a causa di una proprietà “behavior” mancante sulla blueprint durante il rollout.
 * SITES-31157: API REST di frammenti di contenuto: la patch Non riesce è un caso specifico.
-* SITES-31162: API Rest dei frammenti di contenuto: è stato risolto un problema di cast per il campo `DateTimeField` in `ModelFieldMapper`.
+* SITES-31162: API REST per frammenti di contenuto: è stato risolto un problema di casting per il campo `DateTimeField` in `ModelFieldMapper`.
 * SITES-31174: API REST per frammenti di contenuto: i tag non sono stati pubblicati insieme alla richiesta di pubblicazione.
 * SITES-31272: impossibile creare la copia per lingua di Assets tramite PageManager.copy.
 * SITES-31327: API REST di frammenti di contenuto: rimuovi la convalida ETag nella richiesta del frammento GET.
 * SITES-31387: errore di JavaScript “ns.ui.alert non è una funzione” durante la riattivazione dell’ereditarietà del componente fantasma.
-* SITES-31454: Frammenti di contenuto Rest API: rilascia il modello per i campi di riferimento dei frammenti per accettare anche gli UUID.
+* SITES-31454: API REST per frammenti di contenuto: allenta i pattern per i campi di riferimento dei frammenti per accettare anche gli UUID.
 * SITES-31455: API REST di frammenti di contenuto: correggi la mancata corrispondenza di ETag tra gli endpoint per lo stesso modello per frammenti di contenuto.
 * SITES-31459: API REST di frammenti di contenuto: non è possibile modificare la Live Copy dei frammenti di contenuto (CF) quando è presente un campo di riferimento al contenuto.
 * SITES-31467: js-errors da contexthub.authoring-hook.js nell’editor pagina.
-* SITES-31487: API Rest dei frammenti di contenuto: consenti la chiamata dell’endpoint delle autorizzazioni per la cartella principale.
+* SITES-31487: API REST per frammenti di contenuto: consente la chiamata dell’endpoint delle autorizzazioni per la cartella principale.
 * SITES-31621: Edge Delivery con l’editor universale: rimuovi una riga vuota dai fogli di calcolo che sono Live Copy.
 * SITES-31676: quando si creano o si eliminano componenti, nella parte inferiore della pagina rimane uno spazio vuoto.
 * SITES-31822: etichetta della casella di controllo ClassicUI mancante e HTML codificato.
