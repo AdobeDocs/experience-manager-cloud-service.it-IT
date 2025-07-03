@@ -118,4 +118,4 @@ Ora puoi gestire le esperienze dei prodotti utilizzando AEM Content e Commerce. 
 
 * [Creazione di esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Cockpit prodotto](/help/commerce-cloud/authoring/product-cockpit.md)
-* [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
