@@ -1,10 +1,11 @@
 ---
 title: Componente CIF della pagina di elenco prodotti [!DNL Live Search]
-description: Utilizzo di componenti CIF per abilitare [!DNL Live Search] il componente Pagina di elenco prodotti in un sito AEM
+description: Utilizzo di componenti CIF per abilitare il componente Pagina di elenco prodotti [!DNL Live Search] su un sito AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -15,13 +16,13 @@ ht-degree: 0%
 
 Live Search per Adobe Commerce offre un’esperienza di ricerca rapida, rilevante e intuitiva senza costi aggiuntivi. La Live Search fornita da Adobe Sensei utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un’analisi approfondita dei dati aggregati dei visitatori. Quando vengono combinati con il catalogo Adobe Commerce, questi dati generano esperienze di acquisto pertinenti e personalizzate.
 
-In questo argomento viene descritto come utilizzare un componente CIF dell&#39;AEM per implementare il widget Pagina elenco prodotti (PLP) [!DNL Live Search] nel sito AEM.
+In questo argomento viene descritto come utilizzare un componente CIF di AEM per implementare il widget della pagina di elenco prodotti (PLP) [!DNL Live Search] nel sito AEM.
 
 ## Prerequisiti {#prerequisites}
 
 In questo argomento si presuppone che sia stato configurato un [ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it) locale.
 
-Il componente PLP richiede l&#39;installazione del [[!DNL Live Search] componente CIF Popover](live-search-popover.md). Il widget PLP richiede una variabile di sessione del browser generata dal popover.
+Il componente PLP richiede l&#39;installazione del [[!DNL Live Search] componente CIF popover](live-search-popover.md). Il widget PLP richiede una variabile di sessione del browser generata dal popover.
 
 ## Aggiorna Compositore {#update-composer}
 

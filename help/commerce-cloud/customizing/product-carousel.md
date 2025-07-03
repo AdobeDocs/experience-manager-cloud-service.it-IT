@@ -3,7 +3,9 @@ title: Attributi personalizzati per il carosello dei prodotti CIF
 description: Scopri come estendere il componente Carosello prodotto AEM CIF aggiornando il modello Sling e personalizzando il markup.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 4%
@@ -38,7 +40,6 @@ Puoi estendere la logica di business del carosello di prodotti implementando un 
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
 1. Creare quindi una classe di implementazione `CustomCarouselImpl.java` in `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
 Il modello di delega per modelli Sling consente a `CustomCarouselImpl` di fare riferimento al modello `ProductCarousel` tramite la proprietà `sling:resourceSuperType`:
 
@@ -87,4 +88,4 @@ Per personalizzare ulteriormente il markup:
    ..
    ```
 
-1. Salva le modifiche e distribuisci gli aggiornamenti a AEM utilizzando il comando Maven, da un terminale della riga di comando. Nella pagina verrà visualizzato il valore dell&#39;attributo personalizzato `accessory_gemstone_addon` per i prodotti selezionati.
+1. Salva le modifiche e distribuisci gli aggiornamenti in AEM utilizzando il comando Maven, da un terminale della riga di comando. Nella pagina verrà visualizzato il valore dell&#39;attributo personalizzato `accessory_gemstone_addon` per i prodotti selezionati.

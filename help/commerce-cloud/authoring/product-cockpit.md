@@ -4,7 +4,8 @@ description: Scopri come utilizzare il pannello di comando del prodotto, che for
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -25,9 +26,9 @@ I dati dei prodotti in staging includono qualsiasi mutazione futura, ad esempio 
 
 ## Configurazione {#configuration}
 
-I cataloghi di prodotti devono essere configurati in AEM. Per ulteriori informazioni, vedere [configurazione di archivio e cataloghi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=it#catalog).
+I cataloghi di prodotti devono essere configurati in AEM. Per ulteriori informazioni, vedere [configurazione di archivio e cataloghi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog).
 
-L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=it).
+L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazione. Per ulteriori informazioni, vedere [Guida introduttiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html).
 
 >[!NOTE]
 >
@@ -35,7 +36,7 @@ L’abilitazione delle funzioni di catalogo in staging richiede l’autenticazio
 
 ## Apertura della cabina di comando del prodotto {#opening-product-cockpit}
 
-Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale dell’AEM. È inoltre possibile utilizzare Omnisearch (cerca Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
+Il modo più semplice per accedere al pannello di comando del prodotto è tramite il menu &quot;Commerce&quot; nel menu principale di AEM. È inoltre possibile utilizzare Omnisearch (cerca Commerce) o aprire `https://<yourAEMInstance>/commerce.html`.
 
 ![Menu AEM](../assets/aem-menu.png)
 
@@ -55,7 +56,7 @@ Facendo clic su un prodotto vengono caricate le varianti di prodotto, se disponi
 
 >[!NOTE]
 >
->I dati del catalogo dei prodotti nell’AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. Nessun dato del catalogo dei prodotti viene memorizzato nell’AEM.
+>I dati del catalogo dei prodotti in AEM sono dati recuperati in tempo reale tramite l’endpoint commerce configurato. In AEM non viene memorizzato alcun dato del catalogo dei prodotti.
 
 ## Ricerca nei cataloghi di prodotti {#searching-product-catalog}
 
@@ -75,7 +76,7 @@ Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria s
 
 ### Schede Commerce {#tabs}
 
-Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (inclusi variants) è un dato di sola lettura in AEM in quanto il sistema di registrazione è il back-end commerciale. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
+Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (inclusi variants) è un dato di sola lettura in AEM, in quanto il sistema di registrazione è il back-end per l’e-commerce. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
 
 ![proprietà catalogo](../assets/catalog-properties.png)
 

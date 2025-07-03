@@ -4,7 +4,8 @@ description: Scopri come gestire pagine e modelli di catalogo dei prodotti
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -17,7 +18,7 @@ Scopri come gestire pagine e modelli di catalogo dei prodotti.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorsi AEM di authoring di contenuti AEM e Commerce, [Guida introduttiva alle nozioni di base sull&#39;authoring di CIF](getting-started.md), hai imparato le nozioni di base sull&#39;authoring di CIF.
+Nel documento precedente del percorso di authoring AEM Content and Commerce, [Guida introduttiva alle nozioni di base sull&#39;authoring AEM CIF](getting-started.md), hai imparato le nozioni di base sull&#39;authoring CIF.
 
 Questo articolo si basa su questi principi fondamentali.
 
@@ -33,7 +34,7 @@ Questo documento spiega come gestire pagine e modelli di catalogo dei prodotti. 
 
 La vetrina Venia offre un’esperienza tipica con il catalogo dei prodotti, con navigazione e pagine di dettaglio dei prodotti (PDP), categorie (PLP) e destinazione.
 
-Le pagine del catalogo vengono create dinamicamente utilizzando un modello di catalogo CIF dell’AEM e dati dei prodotti in tempo reale che vengono recuperati dall’endpoint commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
+Le pagine del catalogo vengono create dinamicamente utilizzando un modello di catalogo AEM CIF e dati di prodotto in tempo reale che vengono recuperati dall’endpoint commerce quando necessario. Ogni catalogo dispone di un modello generico per le pagine di prodotti e categorie.
 ![struttura catalogo](assets/catalog-structure.png)
 
 Il componente Navigazione mostra il contenuto e le pagine del catalogo. È possibile visualizzare la pagina di destinazione del catalogo o le categorie di primo livello nella navigazione. Passando il puntatore del mouse su una categoria, le categorie di secondo livello vengono visualizzate come seconda riga.
@@ -63,7 +64,7 @@ I modelli possono essere modificati aprendo direttamente la pagina del modello o
 
 ### Modelli per categorie o prodotti specifici {#specific}
 
-L’CIF supporta più modelli con pochi clic. Per creare un altro modello, selezionare il modello generico dalla rispettiva categoria e creare una pagina utilizzando l&#39;azione **Crea**.
+CIF supporta più modelli con pochi clic. Per creare un altro modello, selezionare il modello generico dalla rispettiva categoria e creare una pagina utilizzando l&#39;azione **Crea**.
 
 ![crea pagina modello](assets/create-template-page.png)
 
@@ -109,11 +110,11 @@ Ora che hai completato questa parte del percorso dovresti:
 * funzionamento dei modelli generici
 * hanno creato un singolo modello
 
-Approfondisci l&#39;argomento e continua il tuo percorso consultando il documento [Gestire le esperienze del catalogo prodotti in staging](staged-catalog.md), dove imparerai a utilizzare i dati dei prodotti in staging e i lanci AEM.
+Approfondisci l&#39;argomento e continua il tuo percorso consultando il documento [Gestire le esperienze del catalogo prodotti in staging](staged-catalog.md), dove imparerai a utilizzare i dati dei prodotti in staging e AEM Launches.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Sebbene sia consigliabile passare alla parte successiva del percorso esaminando il documento [Gestione delle esperienze del catalogo prodotti in staging](staged-catalog.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless:
 
 * [Creazione di più pagine per categorie e prodotti](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guida alla migrazione per l&#39;Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come effettuare la migrazione al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente
+* [Guida alla migrazione per Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Come effettuare la migrazione al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente

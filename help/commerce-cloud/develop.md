@@ -9,7 +9,8 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 41%
@@ -22,17 +23,17 @@ Lo sviluppo di progetti AEM Commerce, basati su Commerce integration framework (
 
 - [Struttura dei progetti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=it)
 - [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it)
-- [Linee guida per lo sviluppo per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it)
+- [Linee guida per lo sviluppo per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
 
 ## Sviluppo locale con AEM as a Cloud Service SDK {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/347037/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
 Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF. Il componente aggiuntivo CIF fornito per AEM as a Cloud Service è disponibile anche per lo sviluppo locale. Può essere scaricato dal portale di [distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html).
 
 Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il file zip disponibile nel portale di distribuzione software include due file di archivio Sling Feature, uno per l’istanza AEM di authoring e uno per quella di pubblicazione.
 
-**Ti avvicini adesso ad AEM as a Cloud Service?** Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
+**Ti avvicini adesso ad AEM as a Cloud Service?** Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview).
 
 ### Software richiesto
 
@@ -85,7 +86,7 @@ Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM 
 
    Questa variabile viene utilizzata da AEM per la connessione al sistema commerce. Inoltre, il componente aggiuntivo CIF include un proxy inverso locale per rendere disponibile localmente l’endpoint Commerce GraphQL. Questo proxy viene utilizzato dagli strumenti di authoring di CIF (console prodotti e selettori) e per i componenti lato client di CIF che eseguono chiamate dirette a GraphQL.
 
-   Questa variabile deve essere impostata anche per l’ambiente AEM as a Cloud Service. Per ulteriori informazioni sulle variabili, vedere [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#local-development).
+   Questa variabile deve essere impostata anche per l’ambiente AEM as a Cloud Service. Per ulteriori informazioni sulle variabili, vedere [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
 
 1. (Facoltativo) Per abilitare le funzioni di catalogo per staging, devi creare un token di integrazione per la tua istanza di Adobe Commerce. Segui i passaggi in [Guida introduttiva](./getting-started.md#staging) per creare il token.
 
@@ -95,7 +96,7 @@ Per lo sviluppo locale del componente aggiuntivo CIF utilizzando l’SDK di AEM 
    Authorization: Bearer <Access Token>
    ```
 
-   Per ulteriori informazioni sui segreti, vedere [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#local-development).
+   Per ulteriori informazioni sui segreti, vedere [Configurazione di OSGi per AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Avvia l’SDK di AEM as a Cloud Service.
 

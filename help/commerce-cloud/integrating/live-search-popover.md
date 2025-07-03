@@ -1,17 +1,18 @@
 ---
-title: Componente CIF popopover [!DNL Live Search]
+title: '[!DNL Live Search] componente Popover CIF'
 description: Utilizzo di componenti CIF per abilitare [!DNL Live Search] il componente Popover in un sito AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# Componente CIF popopover [!DNL Live Search] {#live-search-popover}
+# Componente CIF postver [!DNL Live Search] {#live-search-popover}
 
 Il Popover [!DNL Live Search] è l&#39;elemento che contiene i risultati [!DNL Live Search] durante la digitazione nel campo di ricerca.
 Questo argomento descrive come integrare questo componente nel sito AEM.

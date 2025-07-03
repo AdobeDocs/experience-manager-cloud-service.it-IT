@@ -11,7 +11,8 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 15%
@@ -24,7 +25,7 @@ I componenti core CIF di Adobe Experience Manager (AEM) possono essere utilizzat
 
 Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni dello store di Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36997/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Le funzioni Live Copy e copia per lingua di AEM per la gestione multisito sono utilizzate con Commerce integration framework per gestire globalmente i siti in aree geografiche e lingue diverse.
 
@@ -34,11 +35,11 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Configurazione {#configuration}
 
-1. Configura più store e viste store in base al pattern descritto in [Siti Web, store e viste di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
+1. Configura più store e viste store in base al pattern descritto in [Siti Web, store e viste di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
-3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
+3. Crea una configurazione secondaria della configurazione di Cloud Service CIF:
 
    * In AEM vai a Strumenti > Generale > [Browser configurazioni](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleziona la configurazione di base creata
@@ -50,7 +51,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
    >
    > I cataloghi Commerce possono essere indirizzati utilizzando ID o UID. UID introdotti in Adobe Commerce 2.4.2. Abilita questa opzione solo se il backend di e-commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 
-4. Assegnare la configurazione figlio a un sito AEM
+4. Assegnare la configurazione secondaria a un sito AEM
 
    * Passa alla console AEM Sites
    * Passa alla directory principale dell’area geografica o della lingua della struttura del sito. Ad esempio, `/content/venia/us _or_ /content/venia/us/en` per la pagina di esempio Venia
@@ -60,7 +61,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Risorse aggiuntive
 
-* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
+* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componenti core CIF di AEM: configurazione di più store o siti](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=it)
+* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-cloud/administering/msm/overview.md)

@@ -11,7 +11,8 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 9%
@@ -22,11 +23,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi all’ottimizzazione SEO devono essere affrontati in molti progetti su Adobe Experience Manager (AEM) as a Cloud Service. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=it).
+> L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi all’ottimizzazione SEO devono essere affrontati in molti progetti su Adobe Experience Manager (AEM) as a Cloud Service. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/38587/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configurazione {#configuration}
 
@@ -223,15 +224,15 @@ Le riscritture URL possono essere ottenute anche utilizzando il server HTTP di A
 
 Come accennato prima di selezionare uno dei formati predefiniti disponibili, o anche l&#39;implementazione di un formato personalizzato, altamente dipende dalle esigenze e requisiti di un negozio. I seguenti suggerimenti possono essere utili per prendere una decisione ponderata.
 
-_&#x200B;**Utilizza un formato URL della pagina di prodotto contenente lo SKU.**&#x200B;_
+_**Utilizza un formato URL della pagina di prodotto contenente lo SKU.**_
 
 I Componenti core di CIF utilizzano lo SKU come identificatore primario in tutti i componenti. Se il formato dell’URL della pagina di prodotto non contiene lo SKU, è necessaria una query GraphQL per risolverlo. Questa risoluzione può influire sul tempo al primo byte. Inoltre, può essere necessario che gli acquirenti possano trovare i prodotti per SKU utilizzando i motori di ricerca.
 
-_&#x200B;**Utilizza un formato URL per la pagina del prodotto contenente il contesto della categoria.**&#x200B;_
+_**Utilizza un formato URL per la pagina del prodotto contenente il contesto della categoria.**_
 
 Alcune funzionalità del provider URL di CIF sono disponibili solo quando si utilizzano formati URL di prodotto che codificano il contesto della categoria, come la categoria `url_key` o la categoria `url_path`. Anche se queste funzioni non sono necessarie per un nuovo archivio, l’utilizzo iniziale di uno di questi formati URL contribuisce a ridurre le attività di migrazione in futuro.
 
-_&#x200B;**Equilibrio tra la lunghezza dell&#39;URL e le informazioni codificate.**&#x200B;_
+_**Equilibrio tra la lunghezza dell&#39;URL e le informazioni codificate.**_
 
 A seconda della dimensione del catalogo, in particolare la dimensione e la profondità della struttura delle categorie, potrebbe non essere ragionevole codificare l’`url_path` completo delle categorie nell’URL. In tal caso, la lunghezza dell&#39;URL può essere ridotta includendo solo il `url_key` della categoria. Questo metodo supporta la maggior parte delle funzionalità disponibili quando si utilizza la categoria `url_path`.
 
@@ -256,5 +257,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive {#additional}
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=it)
+* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

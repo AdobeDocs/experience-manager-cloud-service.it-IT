@@ -1,37 +1,38 @@
 ---
 title: Guida introduttiva all’authoring CIF
-description: Guida introduttiva all’authoring CIF.
+description: Guida introduttiva all’authoring di CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
-# Guida introduttiva all’authoring dell’CIF AEM {#getting-started}
+# Guida introduttiva all’authoring di AEM CIF {#getting-started}
 
 Scopri di più sull’authoring CIF di Adobe Experience Manager (AEM).
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente di questo percorso di contenuti AEM e Commerce, [Scopri i contenuti AEM e Commerce](/help/commerce-cloud/introduction.md), hai imparato la teoria di base e i concetti di CMS headless, Contenuto AEM e Commerce.
+Nel documento precedente di questo percorso AEM Content and Commerce, [Scopri AEM Content e Commerce](/help/commerce-cloud/introduction.md), hai imparato la teoria e i concetti di base di CMS headless, AEM Content e Commerce.
 
 Questo articolo si basa su questi principi fondamentali.
 
 ## Obiettivo {#objective}
 
-Questo documento spiega come utilizzare CIF per l’authoring specifico di contenuti e Commerce. Dopo la lettura dovresti:
+Questo documento spiega come utilizzare CIF per l’authoring specifico di contenuti e Commerce. La lettura di questo articolo ti consente di:
 
-* Comprendere i concetti dell’authoring CIF utilizzando l’Editor pagina nell’AEM
+* Comprendere i concetti dell’authoring di CIF utilizzando l’Editor pagina in AEM
 * Come accedere ai dati del catalogo dei prodotti in AEM utilizzando i selettori di prodotti e categorie
 * Come accedere a contenuti e dati di e-commerce utilizzando il pannello di comando del prodotto e AEM Omnisearch
 
-## Authoring CIF nell’Editor pagina AEM {#cif-authoring}
+## Authoring di CIF nell’Editor pagina di AEM {#cif-authoring}
 
-L’CIF estende l’Editor pagina nell’AEM con funzionalità che consentono di accedere ai dati di prodotto in tempo reale senza uscire dal contesto:
+CIF estende l’Editor pagina in AEM con funzionalità che consentono di accedere ai dati di prodotto in tempo reale senza uscire dal contesto:
 
 Apri il pannello laterale e seleziona Prodotti dall’elenco a discesa.
 ![Seleziona tipo di prodotto](assets/asset-finder-overview.png)
@@ -43,7 +44,7 @@ I prodotti possono essere rilasciati su componenti che supportano i rilasci di p
 
 ## Selettori di prodotti e categorie {#pickers}
 
-Se i dati di prodotti e categorie sono necessari nei componenti commerce o nelle finestre di dialogo di back-office dell’AEM, gli autori AEM possono utilizzare selettori che sono elementi dell’interfaccia utente per cercare e selezionare comodamente i dati del catalogo dei prodotti.
+Se i dati di prodotti e categorie sono necessari nei componenti commerce o nelle finestre di dialogo di back-office di AEM, gli autori di AEM possono utilizzare selettori che sono elementi dell’interfaccia utente per cercare e selezionare comodamente i dati del catalogo dei prodotti.
 
 ### Selettore prodotti
 
@@ -84,20 +85,20 @@ Per aprire le proprietà del prodotto, fai clic sull’icona della proprietà. L
 Tutte le proprietà del prodotto sono di sola lettura perché i dati vengono caricati in tempo reale dal backend connesso. La modifica delle proprietà del prodotto deve essere eseguita nel sistema back-end, ovvero nel sistema di registrazione. La scheda **Varianti** viene visualizzata solo se il prodotto contiene varianti. Facendo clic sulla scheda vengono visualizzate tutte le varianti con i relativi attributi.
 ![varianti prodotto cabina di comando](assets/cockpit-properties-variants.png)
 
-Le restanti schede mostrano tutto il contenuto AEM associato al prodotto. Queste schede vengono discusse in uno dei moduli successivi.
+Le schede rimanenti mostrano tutto il contenuto AEM associato al prodotto. Queste schede vengono discusse in uno dei moduli successivi.
 
 ## AEM Omnisearch {#omnisearch}
 
-Omnisearch consente di trovare facilmente i contenuti AEM mediante la ricerca full-text. CIF estende Omnisearch con la ricerca full-text di cataloghi di prodotti e del relativo contenuto AEM associato.
+Omnisearch consente di trovare facilmente i contenuti AEM mediante la ricerca full-text. CIF estende Omnisearch con la ricerca full-text di cataloghi di prodotti e dei relativi contenuti AEM associati.
 ![voce di menu commerce](assets/omnisearch.png)
 
-Omnisearch esegue una ricerca full-text nel backend di Commerce per trovare tutti i prodotti correlati. Il risultato è elencato in **Visualizza tutti i prodotti**. Omnisearch cerca inoltre nell’AEM i contenuti associati al prodotto cercato. I risultati sono elencati nelle rispettive categorie AEM. In questo esempio, un frammento di contenuto è correlato al prodotto.
+Omnisearch esegue una ricerca full-text nel backend di Commerce per trovare tutti i prodotti correlati. Il risultato è elencato in **Visualizza tutti i prodotti**. Omnisearch cerca inoltre in AEM il contenuto associato al prodotto cercato. I risultati sono elencati nelle rispettive categorie di AEM. In questo esempio, un frammento di contenuto è correlato al prodotto.
 
 ## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso dovresti:
 
-* Comprendere i concetti dell’authoring CIF utilizzando l’Editor pagina
+* Comprendere i concetti dell’authoring di CIF utilizzando l’Editor pagina
 * Come accedere al catalogo dei prodotti in AEM utilizzando i selettori di prodotti e categorie
 * Come accedere a contenuti e dati di e-commerce utilizzando il pannello di comando del prodotto e AEM Omnisearch
 
