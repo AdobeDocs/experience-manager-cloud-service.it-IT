@@ -4,9 +4,9 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi
 * ![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
 * ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
 * ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** &#x200B;]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** ]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 ### Metadati e dettagli della risorsa {#asset-details-and-metadata}
 
@@ -202,7 +202,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -286,4 +286,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [Integrare il Selettore risorse con varie applicazioni](/help/assets/integrate-asset-selector.md)
 >* [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
 >* [Integrare il Selettore risorse con Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Visualizzazioni prodotto basate sull&#39;integrazione di AEM Assets per Commerce](https://experienceleague.adobe.com/it/docs/commerce/product-visuals/overview)
+>* [Elementi visivi di prodotto basate su AEM Assets Integration for Commerce](https://experienceleague.adobe.com/it/docs/commerce/product-visuals/overview)
