@@ -4,9 +4,9 @@ description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 49%
 
 ---
@@ -27,7 +27,7 @@ Cloud Manager fornisce due tipi di backup dai quali è possibile ripristinare il
 * **Punto nel tempo (PIT):** Questo tipo ripristina i backup continui del sistema delle ultime 24 ore dall&#39;ora corrente.
 * **Ultima settimana:** questo tipo ripristina i backup del sistema degli ultimi sette giorni, escludendo le 24 ore precedenti.
 
-In entrambi i casi, la versione del codice personalizzato e la versione dell’AEM rimangono invariate.
+In entrambi i casi, la versione del codice personalizzato e la versione di AEM rimangono invariate.
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ Per impostazione predefinita, nessun utente dispone dell’autorizzazione per es
 
 1. Crea un profilo di prodotto con un nome espressivo che faccia riferimento al ripristino del contenuto.
 1. Fornisci l&#39;autorizzazione **Accesso al programma** per il programma richiesto.
-1. Fornisci l&#39;autorizzazione **Ripristino contenuto** per l&#39;ambiente richiesto o per tutti gli ambienti del programma, a seconda del caso d&#39;uso.
+1. Fornisci l&#39;autorizzazione **Creazione ripristino ambiente** per l&#39;ambiente richiesto o per tutti gli ambienti del programma, a seconda del caso d&#39;uso.
 1. Assegna gli utenti a quel profilo di profilo.
 
 Per informazioni dettagliate sulla gestione delle autorizzazioni, consulta la documentazione sulle [autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md).
@@ -93,7 +93,7 @@ Determina innanzitutto l’intervallo di tempo del contenuto da ripristinare. Qu
 
    ![Backup disponibili](assets/backup-available.png)
 
-1. Trovare il backup da ripristinare utilizzando l&#39;icona delle informazioni per visualizzare le informazioni relative alla versione del codice e della release AEM incluse nel backup e considerare le implicazioni di un ripristino quando [si sceglie il backup](#choosing-the-right-backup).
+1. Individuare il backup da ripristinare utilizzando l&#39;icona delle informazioni per visualizzare informazioni relative alla versione del codice e di AEM incluse nel backup e considerare le implicazioni di un ripristino quando [si sceglie il backup](#choosing-the-right-backup).
 
    ![Informazioni sul backup](assets/backup-info.png)
 
@@ -114,7 +114,7 @@ Dopo il corretto ripristino:
 
 ## Scelta del backup corretto {#choosing-backup}
 
-Il processo di ripristino self-service di Cloud Manager ripristina solo il contenuto all’AEM. Per questo motivo, è necessario considerare attentamente le modifiche apportate al codice tra il punto di ripristino desiderato e l’ora corrente, esaminando la cronologia del commit tra l’ID commit corrente e quello in fase di ripristino.
+Il processo di ripristino self-service di Cloud Manager ripristina solo i contenuti in AEM. Per questo motivo, è necessario considerare attentamente le modifiche apportate al codice tra il punto di ripristino desiderato e l’ora corrente, esaminando la cronologia del commit tra l’ID commit corrente e quello in fase di ripristino.
 
 Sono possibili diversi scenari.
 
