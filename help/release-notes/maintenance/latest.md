@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 
 ### Problemi noti {#known-issues-21331}
 
-* SITES-33177: Gli stili di sezione memorizzati come stringhe separate da virgola sono interrotti.
+* SITES-33177: gli stili di sezione memorizzati come stringhe separate da virgola sono danneggiati.
 * SITES-33262: i blocchi senza proprietà name non vengono sottoposti a rendering e pubblicazione della pagina.
 
 ### Funzioni e API obsolete {#deprecated-21331}
