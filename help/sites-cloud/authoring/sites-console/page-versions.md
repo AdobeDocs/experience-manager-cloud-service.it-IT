@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
+source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 90%
 
 ---
 
@@ -162,7 +162,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
    * Se è attiva (selezionata), tutte le pagine senza versione vengono mantenute e non sono interessate dal ripristino.
 
-   * Se non è attiva (deselezionata), tutte le pagine non versionate vengono rimosse in quanto non esistevano nella struttura versionata.
+   * Se è inattiva (deselezionata), tutte le pagine non versionate vengono rimosse in quanto non esistevano nella struttura versionata.
 
 1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come versione *attuale*.
 
@@ -202,10 +202,6 @@ Per mettere a confronto una versione precedente con la pagina corrente:
 
 Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di una pagina in specifici momenti nel passato.
 
->[!TIP]
->
->[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime](/help/sites-cloud/authoring/launches/preview.md).
-
 Poiché la creazione di contenuti è un processo continuo e collaborativo, lo scopo di Timewarp è consentire agli autori di tenere traccia del sito web pubblicato nel tempo, in modo da comprendere in che modo è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione.
 
 Per utilizzare questa funzione:
@@ -214,6 +210,16 @@ Per utilizzare questa funzione:
 * In altre parole, la versione mostrata era stata creata/attivata *prima* del momento temporale selezionato in Timewarp.
 * Quando si passa a una pagina che è stata successivamente eliminata, questa viene riprodotta purché nell’archivio siano disponibili ancora le precedenti versioni di tale pagina.
 * Se non viene individuata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (in modo da evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione).
+
+>[!NOTE]
+>
+>Timewarp funziona ed è destinato all’utilizzo per le pagine AEM, ovvero versioni per cronologia e lanci per i futuri stati dei contenuti.
+>
+>Non funziona per i lanci nidificati o quando vengono utilizzati frammenti di esperienza.
+
+>[!TIP]
+>
+>[Timewarp può essere utilizzato anche con Launches per visualizzare anteprime](/help/sites-cloud/authoring/launches/preview.md).
 
 ### Utilizzo di Timewarp {#using-timewarp}
 
@@ -240,6 +246,7 @@ Timewarp semplifica al massimo la riproduzione di una pagina in un determinato m
 * **Le versioni rimosse influiscono su Timewarp**: se dalla directory archivio sono state rimosse delle versioni, Timewarp non può mostrare la visualizzazione corretta.
 * **Timewarp è di sola lettura**: non è possibile modificare la versione precedente della pagina, ma solo visualizzarla. Se desideri ripristinare la versione precedente, devi farlo manualmente utilizzando la funzione di [ripristino](#revert-to-a-version).
 * **Timewarp si basa sul contenuto della pagina**: se sono stati modificati alcuni elementi per il rendering del sito web, ad esempio codice, css e risorse, la visualizzazione sarà diversa da quella originale. Per tali elementi non viene creata una versione nell’archivio.
+* Timewarp non funziona per i lanci nidificati o quando vengono utilizzati frammenti di esperienza.
 
 >[!CAUTION]
 >
