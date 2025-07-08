@@ -1,20 +1,20 @@
 ---
-title: Modifica del contenuto di una pagina con l’Editor pagina dell’AEM
-description: L’editor di pagine dell’AEM è uno strumento utile per creare i contenuti.
+title: Modifica del contenuto di una pagina con l’Editor pagina di AEM
+description: L’editor pagina di AEM è uno strumento utile per la creazione dei contenuti.
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 33%
+source-wordcount: '1628'
+ht-degree: 32%
 
 ---
 
-# Modifica del contenuto di una pagina con l’Editor pagina dell’AEM {#edit-content}
+# Modifica del contenuto di una pagina con l’Editor pagina di AEM {#edit-content}
 
-L’editor di pagine AEM è uno strumento utile per creare il contenuto di una pagina. Scopri come utilizzarlo per trascinare e rilasciare i contenuti e modificarli direttamente.
+L’editor pagina di AEM è uno strumento utile per creare il contenuto di una pagina. Scopri come utilizzarlo per trascinare e rilasciare i contenuti e modificarli direttamente.
 
 ## Panoramica {#overview}
 
@@ -24,13 +24,17 @@ Nell’editor pagina puoi eseguire tre azioni di base per modificare il contenut
 1. [Aggiunta di nuove risorse](#adding-asset) mediante trascinamento nella pagina.
 1. [Modifica di componenti sul posto](#edit-in-place) già esistenti nella pagina.
 
-L’editor di pagine dell’AEM fornisce un’interfaccia utente intuitiva per eseguire queste attività, oltre a fornire accesso a funzioni più avanzate.
+L’editor pagina di AEM fornisce un’interfaccia utente intuitiva per eseguire queste attività, oltre a fornire accesso a funzioni più avanzate.
 
 Inoltre, l’editor ti consente di organizzare il contenuto esistente nella pagina consentendo di:
 
 * [Spostare i componenti](#moving-components)
 * [Modifica layout componente](#editing-component-layout)
 * [Modifica ereditarietà componente](#inherited-components)
+
+>[!NOTE]
+>
+>Se necessario, il team del progetto può personalizzare l’editor. Per ulteriori dettagli, vedi [Personalizzazione dell&#39;authoring delle pagine](/help/implementing/developing/extending/page-authoring.md).
 
 ## Aggiunta di componenti {#adding-components}
 
