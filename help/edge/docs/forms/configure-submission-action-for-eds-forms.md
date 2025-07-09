@@ -46,6 +46,7 @@ Il [servizio di invio Forms](/help/forms/forms-submission-service.md) è un endp
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Invio Forms](/help/forms/assets/eds-fss.png)
 
 Questo diagramma di flusso mostra come il servizio di invio Forms accetta i dati inviati e li invia a un foglio di calcolo o a un messaggio e-mail configurato.
@@ -144,6 +145,7 @@ La pagina in cui vuoi visualizzare il modulo (chiamiamolo &quot;Pagina host&quot
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
 Questo diagramma mostra la pagina host che recupera da HTML Form Source e la visualizza. L’invio utilizza l’endpoint configurato del modulo originale.
 
