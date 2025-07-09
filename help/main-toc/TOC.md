@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c23a9512f8599394ee589ce249cc566f85606456
-workflow-type: ht
-source-wordcount: '6325'
-ht-degree: 100%
+source-git-commit: 82367f603eede5de4cdca25bb2ef11650a0df41d
+workflow-type: tm+mt
+source-wordcount: '6337'
+ht-degree: 99%
 
 ---
 
@@ -994,7 +994,7 @@ ht-degree: 100%
       + [Componente CIF popover Live Search](/help/commerce-cloud/integrating/live-search-popover.md)
       + [Soluzione Commerce di terze parti](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM Storefront {#storefront}
+   + Vetrina digitale AEM {#storefront}
       + [Guida introduttiva](/help/commerce-cloud/getting-started.md)
       + Authoring {#authoring}
          + [Esperienze Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
@@ -1068,7 +1068,9 @@ ht-degree: 100%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
+      + [Configurare l’invio per Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md)
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Come iniziare a creare con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)

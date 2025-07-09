@@ -4,8 +4,10 @@ description: Scopri di più sulle varie piattaforme di creazione dei moduli disp
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
