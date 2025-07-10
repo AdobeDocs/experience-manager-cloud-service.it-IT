@@ -3,13 +3,13 @@ title: Configurare le azioni di invio per AEM Forms con Edge Delivery Services
 description: Scopri come configurare le azioni di invio in AEM Forms utilizzando Edge Delivery Services. Scegli tra Servizio di invio Forms e Azione di invio pubblicazione AEM per gestire i dati del modulo in modo sicuro ed efficiente.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
 
 ---
-
 
 # Configurazione Dell’Invio Del Modulo: Dove Arrivano I Dati?
 
@@ -46,7 +46,6 @@ Il [servizio di invio Forms](/help/forms/forms-submission-service.md) è un endp
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Invio Forms](/help/forms/assets/eds-fss.png)
 
 Questo diagramma di flusso mostra come il servizio di invio Forms accetta i dati inviati e li invia a un foglio di calcolo o a un messaggio e-mail configurato.
@@ -145,7 +144,6 @@ La pagina in cui vuoi visualizzare il modulo (chiamiamolo &quot;Pagina host&quot
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
 Questo diagramma mostra la pagina host che recupera da HTML Form Source e la visualizza. L’invio utilizza l’endpoint configurato del modulo originale.
 

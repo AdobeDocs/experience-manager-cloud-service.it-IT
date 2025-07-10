@@ -3,7 +3,8 @@ title: Procedure consigliate per la progettazione di Forms ad alte prestazioni
 description: Scopri le best practice essenziali per la creazione di moduli facili da usare, accessibili e dalle prestazioni elevate tramite AEM Forms. Migliora la qualità dei dati, l’esperienza utente e i tassi di successo degli invii.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
