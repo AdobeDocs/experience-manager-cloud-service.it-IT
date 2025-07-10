@@ -4,7 +4,7 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 62%
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 21484 {#21484}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21484, rilasciata pubblicamente mercoledì 8 luglio 2025. La versione di manutenzione precedente era la 21331.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21484, rilasciata pubblicamente venerdì 10 luglio 2025. La versione di manutenzione precedente era la 21331.
 
 Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
