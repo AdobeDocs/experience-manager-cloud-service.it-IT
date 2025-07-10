@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 37%
+source-wordcount: '2474'
+ht-degree: 36%
 
 ---
 
@@ -67,7 +67,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente** eseguire le operazioni seguenti:
 
-   * Selezionare un tipo di ambiente [**&#128279;**](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
+   * Selezionare un tipo di ambiente [****](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Fornisci una **Descrizione** facoltativa per l&#39;ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
@@ -130,26 +130,29 @@ Le modifiche apportate all’ambiente di produzione verranno applicate sia agli 
 
 Se desideri effettuare il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, si consiglia di eseguire questa operazione prima di aggiungere aree geografiche di pubblicazione aggiuntiva negli ambienti. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
 
-## Dettagli dell’ambiente di accesso {#viewing-environment}
+## Visualizzare i dettagli di un ambiente {#viewing-environment}
 
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
-1. Per accedere ai dettagli dell’ambiente, effettua una delle seguenti operazioni:
+1. Nella console **[Programmi](/help/implementing/cloud-manager/navigation.md#my-programs)** fare clic sul programma per il quale si desidera visualizzare i dettagli di un ambiente.
 
-   * Nella pagina **Panoramica**, nel menu a sinistra, fare clic sull&#39;icona ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti**.
+1. Elencare tutti gli ambienti per il programma eseguendo una delle operazioni seguenti:
 
-   ![Scheda Ambienti](assets/environments-tab2.png)
+   * Dal menu a sinistra, in **Servizi**, fai clic sull&#39;icona ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambienti**.
 
-   * Dalla scheda **Ambienti**, fai clic sull&#39;icona ![Flusso di lavoro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostra tutto**.
+   ![Scheda Ambienti](assets/environments-1.png)
 
-     ![Opzione Mostra tutto](assets/environment-showall.png)
+   * Dal menu a sinistra, nella sezione **Programma**, fai clic su **Panoramica**, quindi dalla scheda **Ambienti** fai clic sull&#39;icona ![Flusso di lavoro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostra tutto**.
 
-   Nella pagina **Ambienti** vengono visualizzati tutti gli ambienti del programma.
+     ![Opzione Mostra tutto](assets/environments-2.png)
 
-   ![Scheda Ambienti](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >Nella scheda **Ambienti** sono elencati solo tre ambienti. Fai clic su **Mostra tutto** nella scheda per visualizzare *tutti* gli ambienti del programma.
 
 1. Nella pagina Ambienti, effettua una delle seguenti operazioni:
 
-   * Fai clic su un ambiente dell’elenco per visualizzarne i dettagli.
+   * Fai clic su un ambiente nell’elenco per visualizzarne i dettagli.
 
    ![Dettagli dell’ambiente](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ Se desideri effettuare il provisioning di [rete avanzata](/help/security/configu
 
    ![Visualizza dettagli ambiente](assets/view-environment-details.png)
 
->[!NOTE]
->
->Nella scheda **Ambienti** sono elencati solo tre ambienti. Fai clic su **Mostra tutto** nella scheda per visualizzare tutti gli ambienti del programma.
+
+## Ripristinare il contenuto di un ambiente (Alpha) {#restore-environment}
+
+Vedi [Ripristino del contenuto in AEM as a Cloud Service](/help/operations/restore.md).
+
 
 ### Accedere al servizio di anteprima {#access-preview-service}
 
@@ -299,7 +304,7 @@ Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer
 
 Solo gli utenti con il ruolo **Sviluppatore** possono accedere a **Developer Console**. Tuttavia, per i programmi sandbox, qualsiasi utente con accesso al programma sandbox ha accesso a **Developer Console**.
 
-Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
+Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
 
 Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **Panoramica** quando si fa clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) di un singolo ambiente.
 

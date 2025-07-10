@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2025.7.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 26fbc60b1348e8c5f42adc8fd0e596b639fe9b44
+source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 66%
+source-wordcount: '1198'
+ht-degree: 60%
 
 ---
 
@@ -37,34 +37,50 @@ La prossima versione è pianificata per il venerdì 7 agosto 2025.
 
   ![Pagina dettagli utilizzo siti](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+  Consulta [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
+
 ## Programmi di adozione anticipata {#private-beta-program}
 
 Partecipa ai programmi alfa e beta di Cloud Manager per ottenere un accesso esclusivo anticipato alle prossime funzionalità prima del loro rilascio generale.
 
 Sono attualmente disponibili le seguenti opportunità:
 
-
 ### Rollback con un solo clic per le distribuzioni della pipeline {#one-click-rollback}
 
-Ripristino rapido di una distribuzione precedente se il codice più recente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Ripristino rapido di una distribuzione precedente se il codice sorgente del cliente più recente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**per un ambiente selezionato.*
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+![Finestra di dialogo Ripristina codice precedente distribuito](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*Nella finestra di dialogo **Ripristina codice precedente distribuito**, controlla la versione attualmente distribuita e la versione da ripristinare, quindi fai clic su **Conferma***.
+
+
+![Ripristino dell&#39;attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**fino al completamento della distribuzione.*
+
+
+![Versione del codice Source in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell&#39;ambiente, come illustrato in precedenza, mostra ora anche la versione del codice sorgente attiva in uso.*
+
+Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [restorecode@adobe.com](mailto:restorecode@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
+
+Vedi anche [Ripristino del contenuto in AEM as a Cloud Service](/help/operations/restore.md).
+
+
+### Ambiente di test specializzato {#specialized-test-environment}
+
+Cloud Manager ora supporta l’aggiunta di un nuovo tipo di ambiente denominato **Ambiente di test specializzato**. L’ambiente è progettato per aiutare i team a convalidare le funzioni in condizioni prossime alla produzione prima della pubblicazione. Questo tipo di ambiente è diverso dagli ambienti *Produzione + Fase*, *Sviluppo* o *Sviluppo rapido* e offre uno spazio mirato per l’esecuzione di scenari di convalida avanzati.
+
+Miglioramento recente: ora puoi configurare ambienti di test specializzati su una pipeline non di produzione tramite un flusso di lavoro più semplice e intuitivo. La configurazione semplificata accelera il completamento e riduce gli errori di configurazione.
+
+Consulta [Aggiungere un ambiente di test specializzato](/help/implementing/cloud-manager/specialized-test-environment.md).
+
+![Finestra di dialogo Aggiungi ambiente con il pulsante di scelta Ambiente di test specializzato selezionato](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID.
+
+
+### BYOG (Bring Your Own Git): ora con supporto per Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 

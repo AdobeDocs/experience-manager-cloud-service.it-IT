@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei p
 
 >[!IMPORTANT]
 >
->La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
+>La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
 >
 >Per determinare il tipo di servizio del programma (AMS o AEMaaCS), vedi [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -77,6 +77,8 @@ La finestra **Dettagli sull&#39;utilizzo di Sites** presenta grafici che offrono
 Il lato sinistro della finestra presenta un grafico a torta che mostra il raggruppamento del contratto per l&#39;anno contrattuale selezionato nel menu a discesa **Visualizza anno contrattuale**.
 
 Il lato destro della finestra presenta un grafico ad area che mostra l&#39;utilizzo suddiviso per programma nel tempo per l&#39;anno di contratto selezionato. Al passaggio del mouse viene visualizzata una finestra a comparsa con i dettagli del programma per il momento selezionato.
+
+Nell&#39;angolo superiore destro della pagina del dashboard, puoi fare clic su **Scarica report** per esportare i dati come file CSV. Questo download semplifica l’analisi e la condivisione delle tendenze di utilizzo.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
