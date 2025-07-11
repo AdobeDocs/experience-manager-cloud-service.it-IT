@@ -4,9 +4,9 @@ description: Scopri gli attributi di dati e i tipi di elementi richiesti dall’
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 45%
 
 ---
@@ -52,6 +52,6 @@ Affinché un’app possa essere modificata dall’editor universale, deve essere
 * Non è richiesta direttamente sul tag in cui è impostato `data-aue-type`.
 * Se non è impostato, verrà utilizzato l&#39;attributo `data-aue-resource` dell&#39;elemento padre più vicino.
 
-`data-aue-prop` è obbligatorio ogni volta che si desidera eseguire una modifica nel contesto del, ad eccezione di un contenitore in cui è facoltativo (se impostato, il contenitore è un frammento di contenuto e il prop punta a un campo con più riferimenti).
+`data-aue-prop` è obbligatorio ogni volta che si desidera modificare il contesto, ad eccezione di un contenitore in cui è facoltativo (se impostato, il contenitore è un frammento di contenuto e la proprietà punta a un campo con più riferimenti).
 
 * `data-aue-prop` è l&#39;attributo da aggiornare per la chiave primaria di `data-aue-resource`.

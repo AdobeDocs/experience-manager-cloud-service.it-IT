@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 11%
 
 ---
@@ -129,6 +129,8 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 1. Quindi selezionate l&#39;icona Aggiungi nel pannello delle proprietà.
 
    ![Seleziona icona di aggiunta](assets/add-icon.png)
+
+1. Se per il contenitore sono consentiti più componenti, seleziona quello che desideri inserire dal menu a discesa. Se è consentito un solo componente, questo viene inserito automaticamente.
 
 Il componente viene inserito nel contenitore e può essere modificato nell’editor.
 

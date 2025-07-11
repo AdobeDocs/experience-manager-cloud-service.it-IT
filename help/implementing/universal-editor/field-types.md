@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 11%
 
 ---
@@ -101,7 +101,7 @@ Un oggetto campo ha la seguente definizione di tipo.
 | `readOnly` | `boolean` | Campo di sola lettura | No |
 | `hidden` | `boolean` | Campo nascosto per impostazione predefinita | No |
 | `condition` | `RulesLogic` | Regola per mostrare o nascondere il campo in base a una [condizione](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
-| `multi` | `boolean` | Campo multiplo | No |
+| `multi` | `boolean` | Il campo è multicampo<br/>Si noti che la nidificazione dei contenitori non è consentita per i campi multipli nel pannello delle proprietà | No |
 | `validation` | `ValidationType` | Regola o regole di convalida per il campo | No |
 | `raw` | `unknown` | Dati non elaborati che possono essere utilizzati dal componente | No |
 
@@ -289,7 +289,7 @@ Simile a un booleano, un tipo di componente gruppo casella di controllo consente
 
 #### Contenitore {#container}
 
-Un tipo di componente contenitore consente il raggruppamento di componenti, incluso il supporto per più campi. Offre una configurazione aggiuntiva.
+Un tipo di componente contenitore consente il raggruppamento di componenti, incluso il supporto per più campi. Offre una configurazione aggiuntiva. La nidificazione dei contenitori non è consentita per i campi multipli nel pannello delle proprietà
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|

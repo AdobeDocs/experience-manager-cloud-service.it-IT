@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.06.19 dell’editor universale
-description: Queste sono le note sulla versione 2025.06.19 dell’editor universale.
+title: Note sulla versione 2025.07.09 dell’editor universale
+description: Queste sono le note sulla versione 2025.07.09 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
-workflow-type: ht
-source-wordcount: '297'
-ht-degree: 100%
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 25%
 
 ---
 
 
-# Note sulla versione 2025.06.19 dell’editor universale {#release-notes}
+# Note sulla versione 2025.07.09 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 19 giugno 2025 dell’editor universale.
+Queste sono le note sulla versione del 9 luglio 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,29 +22,35 @@ Queste sono le note sulla versione del 19 giugno 2025 dell’editor universale.
 
 ## Novità {#what-is-new}
 
-* **Supporto per più campi nella barra delle proprietà** -
-  È ora possibile utilizzare [il componente contenitore](/help/implementing/universal-editor/field-types.md#container) per creare proprietà con più campi.
-* **Supporto per le proprietà nidificate**: il campo](/help/implementing/universal-editor/field-types.md#nesting) [`name` ora supporta i percorsi per abilitare la nidificazione delle proprietà.
-* **Pannello destro ridimensionabile**: il pannello laterale può ora essere ridimensionato per rendere migliore la visualizzazione del contenuto più lungo nel pannello laterale.
+* [Facendo clic sul pulsante **Aggiungi** sulla barra degli strumenti dei contenitori,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) se è consentito un solo tipo di componente, questo viene inserito immediatamente senza richiedere la selezione dal menu a discesa.
+* [L&#39;opzione della barra degli strumenti dell&#39;intestazione di autenticazione](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) è stata posizionata dietro un interruttore di funzionalità, in quanto non è utile nella maggior parte dei casi.
+* [Poiché la nidificazione dei contenitori non è consentita per più campi nel pannello delle proprietà,](/help/implementing/universal-editor/field-types.md#fields) la routine di rendering ora filtra i contenitori nidificati dall&#39;elenco dei campi per impedire la nidificazione non valida.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
-Per avere la possibilità di testare alcune delle prossime funzioni, partecipa al programma dei primi utilizzatori di Adobe.
+Se ti interessa testare queste nuove funzioni e condividere i tuoi commenti, invia un’e-mail al tuo Customer Success Manager Adobe dall’indirizzo e-mail associato al tuo Adobe ID.
 
-### **Annullare/Ripetere** {#undo-redo}
+### Nuovo editor Rich Text {#new-rte}
+
+Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra di dialogo del collegamento, è ora disponibile nel pannello di destra.
+
+### Annulla/Ripristina {#undo-redo}
 
 La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell’Editor universale.
 
 * Sono incluse le modifiche apportate nel contesto, quelle effettuate tramite il pannello Proprietà, nonché l’aggiunta (o la duplicazione), lo spostamento e l’eliminazione di blocchi.
 * Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
 
-Se ti interessa testare questa nuova funzione e condividere un tuo feedback, invia un’e-mail al tuo Adobe Customer Success Manager dall’indirizzo e-mail associato al tuo Adobe ID.
-
 ## Altri miglioramenti {#other-improvements}
 
-* Sono stati corretti gli errori di collisione relativi alla chiave di risorsa durante lo spostamento di blocchi tra contenitori.
-* È stato risolto un problema a causa del quale la duplicazione dell’ultimo blocco di un contenitore non riusciva.
-* Il menu a discesa Aggiungi azione ora elenca solo i componenti che hanno un plug-in appropriato definito nel file `component-definition.json`.
-* La data di modifica utilizzata nella finestra di dialogo di pubblicazione è stata corretta e in alcune circostanze le pagine non venivano riconosciute come modificate e non venivano ripubblicate.
-* È stato corretto il comportamento di ereditarietà MSM a causa del quale la modifica di un contenitore annullava l’ereditarietà per i nodi secondari.
-* È stato corretto `fetchUrl`, ripristinando lo spostamento di blocchi da un contenitore all’altro.
+* È stato risolto un problema che impediva la rimozione di un singolo riferimento a una risorsa durante la modifica tramite la barra delle proprietà.
+* È stato risolto un problema che causava il caricamento indefinito del pannello Proprietà, poiché i riferimenti alle risorse venivano automaticamente convertiti in array, causando uno stato di caricamento infinito.
+   * I valori di riferimento delle risorse vengono ora memorizzati così come sono, senza conversione automatica in array.
+* È stato risolto un problema a causa del quale il pannello Proprietà non visualizzava campi quando era definito un modello, ma non conteneva alcun contenuto.
+   * Questo causava uno stato di caricamento infinito per il pannello Proprietà per risposte di dettaglio vuote, come nel caso di frammenti di contenuto vuoti.
+* La configurazione ESLint è stata sottoposta a refactoring per compatibilità con la versione 9, incluso il supporto di regole aggiornate e plug-in.
+
+## Obsoleti {#deprecations}
+
+* Il componente `text-input` è ora ufficialmente obsoleto.
+   * In `model-definition.json`, utilizzare il componente testo per creare input di testo per il pannello Proprietà.

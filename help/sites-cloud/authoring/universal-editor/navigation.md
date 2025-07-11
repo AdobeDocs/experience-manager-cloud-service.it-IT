@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1820'
 ht-degree: 24%
 
 ---
@@ -154,6 +154,10 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo di sviluppo locale](/help/implementing/universal-editor/developer-overview.md#auth-header), seleziona l&#39;icona delle impostazioni dell&#39;intestazione di autenticazione.
 
 ![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>Questo pulsante è nascosto per impostazione predefinita in quanto nella maggior parte dei casi ha un valore limitato. Se necessario, invia un’e-mail al tuo Customer Success Manager Adobe dall’indirizzo e-mail associato al tuo Adobe ID.
 
 #### Impostazioni emulatore {#emulator}
 
