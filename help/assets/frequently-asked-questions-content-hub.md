@@ -2,10 +2,10 @@
 title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -97,3 +97,42 @@ Adobe fornisce supporto per la migrazione da Brand Portal a Content Hub, che puo
 ## Perché non trovo l’opzione Impostazioni/Configurazione del prodotto in Content Hub? {#ui-configuration-option-missing}
 
 Per accedere all’[interfaccia utente per la configurazione](/help/assets/configure-content-hub-ui-options.md), devi avere il ruolo di [amministratore di Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Se in Adobe Admin Console ti è stato assegnato il profilo di prodotto Amministratori AEM nell’istanza di authoring per l’ambiente di produzione e non trovi l’opzione di configurazione, assicurati che il profilo di prodotto Amministratori AEM non sia rinominato. Per ulteriori dettagli, consulta [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
+
+## In che modo Content Hub soddisfa i limiti di Brand Portal? {#content-hub-brand-portal-comparison}
+
+
+La tabella seguente illustra le principali differenze tra le due soluzioni:
+
+| Area | Funzionalità | Content Hub | Brand Portal |
+|---|---|----|----|
+| Configurazione dell’esperienza di distribuzione | Configura i metadati per filtri, dettagli risorsa e aggiungi pagina risorse | ✓ | − |
+|  | Configurare collegamenti esterni dal portale | ✓ | − |
+|  | Configurare i messaggi del banner | ✓ | ✓ |
+|  | Configura immagine banner per il branding | ✓ | ✓ |
+|  | Configurare i colori primari e secondari per l’interfaccia utente in base ai requisiti di branding | ✓ | − |
+| Condivisione di risorse da DAM | Condivisione di risorse originali approvate da DAM | ✓ | ✓ |
+|  | Modifiche alle risorse approvate sincronizzate automaticamente | ✓ | − |
+| Ricerca e filtri | Filtri dinamici (le opzioni vengono visualizzate in modo dinamico in base alle risorse visualizzate) | ✓ | − |
+|  | Cronologia ricerche | ✓ | − |
+| Caricamento risorse | Unità locale | ✓ | ✓ |
+|  | Aggiungere metadati configurabili durante il caricamento delle risorse | ✓ | − |
+| Download e rendering | Scarica risorsa originale | ✓ | ✓ |
+|  | Condividere e scaricare rappresentazioni statiche da DAM | ✓ | ✓ |
+|  | Scarica rappresentazioni dinamiche (predefinito e ritaglio avanzato) | ✓ | ✓ |
+|  | Possibilità di limitare la visualizzazione e il download delle risorse scadute | ✓ | − |
+| Condivisione collegamenti e raccolte | Condivisione collegamenti per utenti connessi | ✓ | ✓ |
+|  | Raccolte pubbliche | ✓ | ✓ |
+|  | Cerca nelle raccolte | ✓ | − |
+|  | Condivisione collegamento anonimo | ✓ | ✓ |
+|  | Raccolte private | ✓ | ✓ |
+| Autorizzazioni | autorizzazioni basate su ACL | − | ✓ |
+|  | Controllo degli accessi basato su attributi | ✓ | − |
+| Integrazione Express | Modificare Content Hub Assets in Adobe Express e salvarlo in DAM | ✓ | − |
+| Dashboard e rapporti | Dashboard approfondimenti | ✓ | − |
+| Estensibilità dell’interfaccia utente | Punti di estensione personalizzati nella pagina dei dettagli della risorsa | Disponibilità limitata | − |
+| Innovazioni in arrivo | Raccolte preferite per utente | ✓ | − |
+|  | Raccolte bloccate dall’amministratore | ✓ | − |
+|  | Ricerca semantica | ✓ | − |
+|  | Ricerca localizzata e visualizzazione dei metadati | ✓ | − |
+
+

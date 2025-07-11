@@ -3,10 +3,10 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 14%
+source-wordcount: '761'
+ht-degree: 17%
 
 ---
 
@@ -61,21 +61,6 @@ Per aggiungere risorse a Content Hub, effettua le seguenti operazioni:
 1. Fai clic su **[!UICONTROL Carica]** per caricare le risorse in Content Hub. [!UICONTROL Visualizza dettagli] viene visualizzata la casella di conferma. Fai clic su [!UICONTROL Continua].
 
 1. Avvia il caricamento di Assets. Fai clic su [!UICONTROL Nuovo caricamento] per riavviare la procedura di caricamento. Fai clic su [!UICONTROL Fine] per completare il caricamento.
-
-Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante il caricamento delle risorse, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-
-## Aggiungere risorse a Content Hub da origini dati OneDrive o Dropbox {#add-assets-onedrive-dropbox}
-
-Per aggiungere risorse a Content Hub da origini dati OneDrive o Dropbox:
-
-1. Fai clic su **[!UICONTROL Aggiungi Assets]** per visualizzare la finestra di dialogo **[!UICONTROL Aggiungi risorse approvate]** che consente di importare risorse da OneDrive o Dropbox.
-
-1. Fai clic su **[!UICONTROL OneDrive]** o **[!UICONTROL Dropbox]** per avviare il processo di importazione. Content Hub richiede di accedere all&#39;account OneDrive o Dropbox e quindi visualizza la struttura delle cartelle di OneDrive o Dropbox nel riquadro a sinistra.
-
-1. Fai clic sull’icona + accanto al file o al nome della cartella per visualizzare l’elemento nell’elenco Elementi selezionati. Dopo aver selezionato tutti i file da aggiungere al portale Content Hub, ripetere i passaggi da 3 a 6 di [Aggiungi risorse a Content Hub dal file system locale](#add-assets-local-file-system) per completare il processo di caricamento.
-
-   ![Carica risorse in Content Hub da OneDrive o Dropbox](assets/add-assets-onedrive-dropbox.png)
 
 Gli amministratori possono anche configurare i campi obbligatori e facoltativi da visualizzare durante il caricamento delle risorse, ad esempio il nome della campagna, le parole chiave, i canali e così via. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
