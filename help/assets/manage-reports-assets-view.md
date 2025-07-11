@@ -143,7 +143,7 @@ Ottieni informazioni dettagliate sulla consegna delle risorse effettuata con Dyn
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Prerequisiti {#prereqs-dynamic-media-delivery-reports}
