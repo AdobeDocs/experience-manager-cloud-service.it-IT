@@ -4,17 +4,17 @@ description: L’editor di regole di Forms adattivo consente agli utenti di scri
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2298'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
+# Interfaccia utente dell’editor di regole per moduli adattivi basati su componenti core
 
-# Interfaccia utente dell’Editor regole per Forms adattivo basato su componenti core
-
-L’interfaccia utente dell’Editor regole per Forms adattivo basato su componenti core ottimizza il processo di creazione dei moduli in Adobe Experience Manager (AEM). Consente sia agli utenti aziendali che agli sviluppatori di implementare comportamenti dinamici e logiche complesse nei moduli scrivendo regole che attivano azioni in base a condizioni predefinite, input utente e interazioni. Questa funzione supporta le funzionalità moderne di JavaScript, tra cui le funzioni ES10, e offre un editor visivo intuitivo che semplifica il processo di scrittura delle regole.
+L’interfaccia utente dell’Editor regole per Forms adattivo basato su componenti core ottimizza il processo di creazione dei moduli in Adobe Experience Manager (AEM). Consente sia agli utenti aziendali che agli sviluppatori di implementare comportamenti dinamici e logiche complesse nei moduli scrivendo regole che attivano azioni in base a condizioni predefinite, input utente e interazioni. Questa funzione supporta le funzionalità moderne di JavaScript fino a ES2022 e offre un editor visivo intuitivo che semplifica il processo di scrittura delle regole.
 L’editor di regole è fondamentale per semplificare l’esperienza di compilazione dei moduli, garantendo sia precisione che efficienza. Consente la convalida o il ripristino di pannelli e moduli e l&#39;esecuzione di funzioni personalizzate per il calcolo dei valori degli oggetti modulo. Grazie al supporto delle condizioni nidificate e alla possibilità di richiamare i servizi del modello dati modulo, l’interfaccia utente dell’editor di regole è un componente fondamentale per la creazione di moduli reattivi, di facile utilizzo e adattivi.
 
 ## Interfaccia utente dell’editor di regole {#understanding-the-rule-editor-user-interface}
@@ -62,7 +62,7 @@ Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli ogget
 
 ### C. Attivazione/disattivazione di funzioni e oggetti modulo {#c-form-objects-and-functions-toggle-br}
 
-Quando viene toccato, questo pulsante attiva o disattiva il riquadro delle funzioni e degli oggetti del modulo.
+Quando viene toccato questo pulsante, diventa attivo il riquadro Oggetti modulo o il riquadro Funzioni.
 
 ### D. Editor di regole visive {#visual-rule-editor}
 
@@ -108,7 +108,7 @@ La sezione Requisiti del prestito nell&#39;esempio di modulo di domanda di prest
 * Il campo Stipendio coniuge viene visualizzato solo quando lo stato civile è sposato.
 * L’importo di ammissibilità al prestito è pari al 50% dello stipendio totale.
 
-Per scrivere le regole, effettua le seguenti operazioni:
+Per scrivere regole, esegui i seguenti passaggi:
 
 1. Innanzitutto, scrivi la regola per controllare la visibilità del campo Stipendio coniuge in base all’opzione selezionata dall’utente per il pulsante di opzione Stato civile.
 
@@ -154,7 +154,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
 
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
@@ -175,7 +175,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Seleziona **[!UICONTROL Seleziona opzione]** e seleziona **[!UICONTROL Espressione matematica]**. Viene aperto un campo per scrivere espressioni matematiche.
+1. Seleziona **[!UICONTROL Seleziona opzione]** e scegli **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -189,11 +189,11 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Quindi, seleziona nell&#39;area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
+1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   Nel campo espressione estesa, selezionare **[!UICONTROL diviso per]** dal campo **[!UICONTROL Seleziona operatore]** e **[!UICONTROL Numero]** dal campo **[!UICONTROL Seleziona opzione]**. Specificare quindi **[!UICONTROL 2]** nel campo numerico.
+   Nel campo espressione estesa, seleziona **[!UICONTROL diviso per]** dal campo **[!UICONTROL Seleziona operatore]** e **[!UICONTROL Numero]** dal campo **[!UICONTROL Seleziona opzione]**. Specificare quindi **[!UICONTROL 2]** nel campo numerico.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -238,7 +238,7 @@ In alternativa, è possibile utilizzare la regola Imposta valore di per calcolar
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -474,7 +474,7 @@ Per copiare e incollare le regole, effettuare le seguenti operazioni:
    >
    >È possibile incollare una regola in un altro oggetto modulo solo se tale oggetto supporta l&#39;evento della regola copiata. Ad esempio, un pulsante supporta l’evento clic. È possibile incollare una regola con un evento clic su un pulsante ma non su una casella di controllo.
 
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
 
 ## Passaggio successivo
 

@@ -4,9 +4,9 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4225'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -203,7 +203,7 @@ La tabella seguente descrive i componenti Modulo adattivo e i corrispondenti com
    <td> </td>
   </tr>
   <tr>
-   <td>Firma a mano</td>
+   <td>Firma scarabocchio</td>
    <td>Disegno a mano</td>
    <td>vero</td>
    <td> </td>
@@ -395,6 +395,14 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    ```
 
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
+
+>[!NOTE]
+> 
+> Per visualizzare il titolo di un modulo personalizzato nel documento record, modifica il **Titolo modulo personalizzato** in **Proprietà documento record** > **Proprietà pagina master**. Questo titolo personalizzato:
+> 
+> * Viene visualizzato nell’intestazione del PDF generato
+> * Viene visualizzato come Titolo nelle proprietà del documento di PDF
+> * Appare come titolo della vista iniziale all&#39;apertura del PDF
 
 ## Supporto per documenti di record nell’editor di moduli adattivi {#dor-support-in-adaptiveform}
 

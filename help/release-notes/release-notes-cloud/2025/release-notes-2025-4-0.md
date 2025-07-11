@@ -4,10 +4,10 @@ description: Note sulla versione 2025.4.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 99%
+source-wordcount: '1828'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di aprile 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464010?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,19 +81,21 @@ Ora puoi selezionare e confrontare rapidamente qualsiasi versione di una risorsa
 
 ![confronta le versioni della risorsa](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Funzioni pre-release
 
-* [Editor universale - Frammenti di modulo](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): l’editor universale ora consente di creare e riutilizzare frammenti di modulo per i moduli adattivi. Questi frammenti sono sezioni di moduli riutilizzabili (ad esempio, dettagli di contatto, campi di consenso) che una volta creati possono essere e applicati a più moduli. Questa funzione semplifica la creazione dei moduli, garantisce la coerenza e migliora l’efficienza nell’authoring.
+* [Editor universale per Forms adattivo e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l&#39;editor universale ora supporta la creazione sia di Forms adattivo che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione dei moduli, migliora la coerenza e migliora la protezione contro spam e abusi automatizzati.
 
 * [Libreria documenti di SharePoint - Salva allegati con nomi file originali](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ora puoi salvare gli allegati del modulo utilizzando i nomi file originali durante l’archiviazione in una raccolta documenti di SharePoint. Questo miglioramento semplifica l’identificazione e la gestione dei file caricati.
 
 * **Editor di regole**:
    * [Condizione binaria con evento clic nella clausola “When”](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): l’editor di regole consente ora di combinare un evento di clic su pulsante (_Is Clicked_) con altre condizioni all’interno della clausola “When”. Questo consente un controllo più preciso sull’esecuzione delle regole in base all’interazione utente e ad altri fattori. Nota: quando si utilizzano più condizioni, l’evento clic deve essere la prima condizione elencata.
    * [Condizioni di convalida per campi e pannelli](/help/forms/rule-editor-core-components-usecases.md): l’editor di regole ora include le condizioni _IsValid_ e _IsNotValid_. In questo modo è possibile verificare lo stato di convalida di campi specifici o interi pannelli (inclusi layout come Schede orizzontali, Schede verticali, Pannello a soffietto e Procedure guidate), semplificando la navigazione dei moduli e migliorando l’esperienza utente in base ai risultati della convalida.
-* **È stata migliorata la gestione dell’ambito per gli elenchi SharePoint**: i siti SharePoint ora supportano tutti i percorsi gestiti, ad esempio /sites e /teams. Questo miglioramento consente un’integrazione più ampia tra diverse strutture del sito SharePoint, offrendo maggiore flessibilità nella connessione ai contenuti organizzativi.
-* **Supporto per il salvataggio del documento di record nell’elenco SharePoint**: i moduli creati utilizzando un modello dati modulo (FDM) basato su elenco di SharePoint ora consentono di salvare il documento di record (DoR) negli elenchi di SharePoint configurando la proprietà del campo Riferimento di binding al documento di record. Questo miglioramento consente l’integrazione diretta dei dati e dei documenti dei moduli supportati con l’archiviazione SharePoint.
+* [È stata migliorata la gestione dell’ambito per gli elenchi SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): i siti SharePoint ora supportano tutti i percorsi gestiti, ad esempio /sites e /teams. Questo miglioramento consente un’integrazione più ampia tra diverse strutture del sito SharePoint, offrendo maggiore flessibilità nella connessione ai contenuti organizzativi.
+* [Supporto per il salvataggio del documento di record nell’elenco SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): i moduli creati utilizzando un modello dati modulo (FDM) basato su elenco di SharePoint ora consentono di salvare il documento di record (DoR) negli elenchi di SharePoint configurando la proprietà del campo Riferimento di binding al documento di record. Questo miglioramento consente l’integrazione diretta dei dati e dei documenti dei moduli supportati con l’archiviazione SharePoint.
+* [Supporto di mappatura automatica per frammenti di moduli adattivi](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): Forms adattivo ora supporta l&#39;inserimento automatico dei frammenti corrispondenti quando gli oggetti dello schema vengono allineati a una struttura di frammenti definita, semplificando la creazione dei moduli e promuovendo il riutilizzo.
 
 ### Funzionalità per Accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Integrazione di Adobe Experience Platform (AEP) con Forms
 
-Le funzionalità di integrazione tra Forms e AEP sono ora disponibili per i primi utilizzatori.
+* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l&#39;integrazione diretta tra Adaptive Forms e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente ad AEP in tempo reale. Semplifica l’acquisizione dei dati per casi di utilizzo di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 

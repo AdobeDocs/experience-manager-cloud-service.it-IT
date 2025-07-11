@@ -4,9 +4,9 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -380,7 +380,13 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
 
-
+>[!NOTE]
+> 
+> Per visualizzare il titolo di un modulo personalizzato nel documento record, modifica il **Titolo modulo personalizzato** in **Proprietà documento record** > **Proprietà pagina master**. Questo titolo personalizzato:
+> 
+> * Viene visualizzato nell’intestazione del PDF generato
+> * Viene visualizzato come Titolo nelle proprietà del documento di PDF
+> * Appare come titolo della vista iniziale all&#39;apertura del PDF
 
 ## Layout di tabella e colonna per i pannelli nel documento record {#table-and-column-layouts-for-panels-in-document-of-record}
 

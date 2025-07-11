@@ -3,10 +3,11 @@ title: Note sulla versione 2025.5.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 98%
+source-wordcount: '2162'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica della versione di maggio 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464358?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -107,13 +108,13 @@ Accedi a tutte le [rappresentazioni predefinite di Dynamic Media e ai ritagli av
 
 [Integrazione nativa di Dynamic Media di Experience Manager (AEM) con Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/aem-dynamic), per consentire agli addetti marketing di incorporare facilmente le risorse di Dynamic Media di AEM (rappresentazione e modello DM) nel contenuto di AJO e consegnare aggiornamenti in tempo reale ed esperienze iperpersonalizzate su tutti i canali.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463790/?learn=on&enablevpops=&autoplay=true&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Funzioni pre-release
 
-* [Editor universale - Frammenti di modulo](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): l’editor universale ora consente di creare e riutilizzare frammenti di modulo per i moduli adattivi. Questi frammenti sono sezioni di moduli riutilizzabili (ad esempio, dettagli di contatto, campi di consenso) che una volta creati possono essere e applicati a più moduli. Questa funzione semplifica la creazione dei moduli, garantisce la coerenza e migliora l’efficienza nell’authoring.
+* [Editor universale per Forms adattivo e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l&#39;editor universale ora supporta la creazione sia di Forms adattivo che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione dei moduli, migliora la coerenza e migliora la protezione contro spam e abusi automatizzati.
 
 * [Libreria documenti di SharePoint - Salva allegati con nomi file originali](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ora puoi salvare gli allegati del modulo utilizzando i nomi file originali durante l’archiviazione in una raccolta documenti di SharePoint. Questo miglioramento semplifica l’identificazione e la gestione dei file caricati.
 
@@ -131,7 +132,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Integrazione di Adobe Experience Platform (AEP) con Forms
 
-Le funzionalità di integrazione tra Forms e AEP sono ora disponibili per i primi utilizzatori.
+* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l&#39;integrazione diretta tra Adaptive Forms e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente ad AEP in tempo reale. Semplifica l’acquisizione dei dati per casi di utilizzo di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 

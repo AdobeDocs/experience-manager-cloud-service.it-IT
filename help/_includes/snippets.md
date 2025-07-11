@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1556'
-ht-degree: 100%
+source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+workflow-type: tm+mt
+source-wordcount: '1560'
+ht-degree: 97%
 
 ---
 # Snippet {#snippets}
@@ -111,9 +111,9 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
    </td>
    </tr>
    <tr>
-    <td>Supporto ES10 </td>
-    <td>ES10 non è ancora supportato. Supporta solo le funzioni JavaScript ES5. </td>
-    <td>Supporto di funzioni JavaScript moderne, come le funzioni let e arrow (supporto ES10) all’interno delle funzioni personalizzate. 
+    <td>Supporto ES2022 </td>
+    <td>ES2022 non è ancora supportato. Il supporto è limitato alle funzioni JavaScript di ES5. </td>
+    <td>Nelle funzioni personalizzate è disponibile il supporto delle funzioni moderne di JavaScript, ad esempio le funzioni let e arrow fino a ES2022. 
    </td>
    </tr>
    </tr>
@@ -222,7 +222,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
