@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 21484 {#21484}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21484, rilasciata pubblicamente venerdì 10 luglio 2025. La versione di manutenzione precedente era la 21331.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21484, rilasciata pubblicamente l’venerdì 10 luglio 2025. La versione di manutenzione precedente era la 21331.
 
 Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -32,11 +32,11 @@ Nessuna.
 
 #### Guide AEM {#guides-21484}
 
-* GUIDE-29781: quando un commento XML viene aggiunto all&#39;interno di un elemento nella visualizzazione Source, gli spazi iniziali e finali intorno al commento vengono persi quando si passa da una visualizzazione all&#39;altra.
-* GUIDE-29078: quando si apre un argomento nella vista Autore dopo un aggiornamento del browser, i tag applicati in precedenza nel pannello Proprietà file non vengono mantenuti e l’aggiunta di nuovi tag sovrascrive quelli esistenti, in particolare quando è disponibile un numero elevato di tag da selezionare.
+* GUIDE-29781: quando un commento XML viene aggiunto all’interno di un elemento nella vista Origine, gli spazi iniziali e finali intorno al commento vengono persi al passaggio tra viste.
+* GUIDE-29078: quando viene aperto un argomento nella vista Autore dopo un aggiornamento del browser, i tag applicati in precedenza nel pannello Proprietà file non vengono mantenuti e l’aggiunta di nuovi tag sovrascrive quelli esistenti, in particolare quando è disponibile un numero elevato di tag da selezionare.
 * GUIDES-28214: i tentativi di creare attività di revisione tramite il flusso di lavoro di AEM hanno esito negativo in modo coerente perché il nodo di revisione non è stato creato.
-* GUIDES-28104: la pubblicazione di una mappa DITA con l&#39;attributo `chunk=to-content` crea nodi JCR duplicati nel nuovo output di AEM Sites, determinando una struttura di contenuto ridondante in AEM Sites.
-* GUIDES-29065, GUIDES-28793: quando si lavora con raccolte di grandi dimensioni, si osservano problemi di prestazioni quali tempi di caricamento più lunghi e timeout intermittenti.
+* GUIDES-28104: la pubblicazione di una mappa DITA con l’attributo `chunk=to-content` crea nodi JCR duplicati nel nuovo output di AEM Sites, determinando una struttura di contenuto ridondante in AEM Sites.
+* GUIDES-29065, GUIDES-28793: lavorando con raccolte di grandi dimensioni, vengono osservati problemi di prestazioni quali tempi di caricamento più lunghi e timeout intermittenti.
 
 Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
