@@ -4,9 +4,9 @@ description: Ulteriori informazioni sulla versione 2025.7.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cf36a5f22132695be47c3d52292f59f785a0fd52
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1210'
 ht-degree: 60%
 
 ---
@@ -49,7 +49,7 @@ Sono attualmente disponibili le seguenti opportunità:
 
 Ripristino rapido di una distribuzione precedente se il codice sorgente del cliente più recente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**&#x200B;per un ambiente selezionato.*
+![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**per un ambiente selezionato.*
 
 
 ![Finestra di dialogo Ripristina codice precedente distribuito](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
@@ -57,12 +57,14 @@ Ripristino rapido di una distribuzione precedente se il codice sorgente del clie
 
 
 ![Ripristino dell&#39;attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**&#x200B;fino al completamento della distribuzione.*
+*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**fino al completamento della distribuzione.*
 
 
 ![Versione del codice Source in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell&#39;ambiente, come illustrato in precedenza, mostra ora anche la versione del codice sorgente attiva in uso.*
 
 Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [restorecode@adobe.com](mailto:restorecode@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
+
+Vedi [Ripristinare il codice precedente distribuito in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 Vedi anche [Ripristino del contenuto in AEM as a Cloud Service](/help/operations/restore.md).
 

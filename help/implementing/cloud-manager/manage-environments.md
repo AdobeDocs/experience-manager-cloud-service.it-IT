@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2488'
 ht-degree: 36%
 
 ---
@@ -67,7 +67,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente** eseguire le operazioni seguenti:
 
-   * Selezionare un tipo di ambiente [**&#128279;**](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
+   * Selezionare un tipo di ambiente [****](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Fornisci una **Descrizione** facoltativa per l&#39;ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
@@ -161,9 +161,13 @@ Se desideri effettuare il provisioning di [rete avanzata](/help/security/configu
    ![Visualizza dettagli ambiente](assets/view-environment-details.png)
 
 
-## Ripristinare il contenuto di un ambiente (Alpha) {#restore-environment}
+## Ripristinare il contenuto di un ambiente {#restore-environment}
 
-Vedi [Ripristino del contenuto in AEM as a Cloud Service](/help/operations/restore.md).
+Vedi [Ripristina contenuto in AEM as a Cloud Service](/help/operations/restore.md).
+
+## Ripristina il codice precedente distribuito {#restore-previous-code-deployed}
+
+Vedi [Ripristina il codice precedente distribuito in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 
 ### Accedere al servizio di anteprima {#access-preview-service}
@@ -304,7 +308,7 @@ Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer
 
 Solo gli utenti con il ruolo **Sviluppatore** possono accedere a **Developer Console**. Tuttavia, per i programmi sandbox, qualsiasi utente con accesso al programma sandbox ha accesso a **Developer Console**.
 
-Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
+Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
 
 Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **Panoramica** quando si fa clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) di un singolo ambiente.
 

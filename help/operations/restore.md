@@ -1,18 +1,18 @@
 ---
-title: Ripristino del contenuto in AEM as a Cloud Service
+title: Ripristinare il contenuto in AEM as a Cloud Service
 description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 26%
+source-wordcount: '1359'
+ht-degree: 23%
 
 ---
 
 
-# Ripristino del contenuto in AEM as a Cloud Service {#content-restore}
+# Ripristinare il contenuto in AEM as a Cloud Service {#content-restore}
 
 Puoi ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 
@@ -20,7 +20,7 @@ Puoi ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando 
 
 Il processo di ripristino self-service di Cloud Manager copia i dati dai backup del sistema Adobe e li ripristina nell’ambiente originale. Viene eseguito un ripristino per riportare alle condizioni originali i dati persi, danneggiati o accidentalmente eliminati.
 
-Il processo di ripristino influisce solo sul contenuto, lasciando invariati il codice e la versione di AEM. È possibile avviare un’operazione di ripristino dei singoli ambienti in qualsiasi momento.
+Il processo di ripristino influisce solo sul contenuto, lasciando invariati il codice e la versione di AEM. Puoi avviare un’operazione di ripristino di singoli ambienti in qualsiasi momento. Se devi ripristinare il codice sorgente distribuito in precedenza in modo semplice e veloce, senza dover avviare una nuova esecuzione della pipeline, puoi utilizzare [Ripristina il codice precedente distribuito](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager fornisce due tipi di backup dai quali è possibile ripristinare il contenuto.
 
@@ -87,7 +87,7 @@ Per informazioni dettagliate sulla gestione delle autorizzazioni, vedere [Autori
      >
      >Nella scheda **Ambienti** sono elencati solo tre ambienti. Fai clic su **Mostra tutto** nella scheda per visualizzare *tutti* gli ambienti del programma.
 
-1. Nella tabella Ambienti, a destra di un ambiente di cui si desidera ripristinare il contenuto, fare clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Ripristina contenuto**.
+1. Nella tabella Ambienti, a destra di un ambiente di cui desideri ripristinare il contenuto, fai clic sull&#39;icona ![Altro o sull&#39;icona del menu con i puntini di sospensione](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi fai clic su **Ripristina contenuto**.
 
    ![Ripristina contenuto dal menu con i puntini di sospensione](/help/operations/assets/environments-ellipsis-menu.png)
 
