@@ -52,6 +52,7 @@ L’ambiente di visualizzazione AEM Assets offre funzionalità di reporting comp
    1. **Descrizione**: specifica una descrizione facoltativa per il rapporto.
    1. **Seleziona il percorso della cartella:** seleziona un percorso della cartella per generare il rapporto delle risorse caricate e scaricate all’interno di quella cartella specifica. Ad esempio, se hai bisogno del rapporto sulle risorse caricate in una cartella, specifica il percorso di tale cartella.
    1. **Seleziona intervallo date:** seleziona l’intervallo di date per visualizzare l’attività di caricamento o download nella cartella.
+
    <br>
 
    >[!NOTE]
@@ -204,6 +205,7 @@ Per pianificare un rapporto, effettua le seguenti operazioni:
    1. **Descrizione**: aggiungi una descrizione facoltativa al rapporto.
    1. **Seleziona il percorso della cartella:** seleziona il percorso di una cartella per generare un rapporto per le risorse che verranno caricate o scaricate in futuro da tale cartella specifica.
    1. Attiva/disattiva **Pianifica rapporto:** attiva/disattiva la pianificazione del rapporto per un momento successivo o per la sua occorrenza ripetuta.
+
       ![pianifica rapporto](/help/assets/assets/schedule-reports1.svg)
 
    1. **Scegli la frequenza:** specifica l’intervallo di generazione del rapporto (ad esempio giornaliero, settimanale, mensile, annuale o una volta) e imposta la data e l’ora di esecuzione del rapporto insieme alla data di fine per la ricorrenza. Per un rapporto una tantum, seleziona l’intervallo di date per il rapporto sul tipo di attività selezionato nell’ambiente AEM. Ad esempio, se hai bisogno di un rapporto sulle risorse scaricate dal 10 al 29 (date future) di un mese specifico, seleziona queste date nel campo **Seleziona intervallo date**.
