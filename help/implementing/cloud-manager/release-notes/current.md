@@ -49,7 +49,7 @@ Sono attualmente disponibili le seguenti opportunità:
 
 Ripristino rapido di una distribuzione precedente se il codice sorgente del cliente più recente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**per un ambiente selezionato.*
+![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**&#x200B;per un ambiente selezionato.*
 
 
 ![Finestra di dialogo Ripristina codice precedente distribuito](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
@@ -57,7 +57,7 @@ Ripristino rapido di una distribuzione precedente se il codice sorgente del clie
 
 
 ![Ripristino dell&#39;attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**fino al completamento della distribuzione.*
+*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**&#x200B;fino al completamento della distribuzione.*
 
 
 ![Versione del codice Source in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell&#39;ambiente, come illustrato in precedenza, mostra ora anche la versione del codice sorgente attiva in uso.*
