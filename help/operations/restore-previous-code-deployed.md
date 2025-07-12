@@ -1,12 +1,12 @@
 ---
-title: Ripristina il codice Source precedente implementato in AEM as a Cloud Service
+title: Ripristina il codice Source precedente distribuito
 description: Scopri come ripristinare l’ultima build riuscita di un ambiente &ndash; non è richiesta alcuna esecuzione della pipeline.
 feature: Operations
 role: Admin
 badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>La funzione descritta in questo articolo è disponibile solo attraverso il primo programma alfa per utenti. Per iscriverti all&#39;Alfa, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>La funzione descritta in questo articolo è disponibile solo attraverso il primo programma alfa per utenti. Per iscriverti all&#39;Alfa, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilizza **Ripristina il codice precedente distribuito** per ripristinare immediatamente l&#39;ultima compilazione riuscita di un ambiente, senza richiedere alcuna esecuzione della pipeline.
 
