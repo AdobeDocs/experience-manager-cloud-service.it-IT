@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->>La funzione descritta in questo articolo è disponibile solo attraverso il primo programma alfa per utenti. Per iscriverti all&#39;Alfa, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>&#x200B;>La funzione descritta in questo articolo è disponibile solo attraverso il primo programma alfa per utenti. Per iscriverti all&#39;Alfa, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilizza **Ripristina il codice precedente distribuito** per ripristinare immediatamente l&#39;ultima compilazione riuscita di un ambiente, senza richiedere alcuna esecuzione della pipeline.
 
