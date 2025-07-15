@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
+source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 94%
+source-wordcount: '214'
+ht-degree: 81%
 
 ---
 
@@ -16,43 +16,37 @@ ht-degree: 94%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 21484 {#21484}
+## Versione 21570 {#21570}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21484, rilasciata pubblicamente l’venerdì 10 luglio 2025. La versione di manutenzione precedente era la 21331.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21570, rilasciata pubblicamente l’mercoledì 15 luglio 2025. La versione di manutenzione precedente era la 21484.
+
+>[!NOTE]
+>
+>[La versione 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) è stata resa privata e sostituita da 21570 sulla versione.
 
 Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-21484}
+### Miglioramenti {#enhancements-21570}
 
-Nessuna.
+Nessuna
 
-### Problemi risolti {#fixed-issues-21484}
+### Problemi risolti {#fixed-issues-21570}
 
-Nessuna.
+* SKYOPS-112722 - È stato risolto un problema che impediva la risoluzione degli URL personalizzati
 
-#### Guide AEM {#guides-21484}
+### Problemi noti {#known-issues-21570}
 
-* GUIDE-29781: quando un commento XML viene aggiunto all’interno di un elemento nella vista Origine, gli spazi iniziali e finali intorno al commento vengono persi al passaggio tra viste.
-* GUIDE-29078: quando viene aperto un argomento nella vista Autore dopo un aggiornamento del browser, i tag applicati in precedenza nel pannello Proprietà file non vengono mantenuti e l’aggiunta di nuovi tag sovrascrive quelli esistenti, in particolare quando è disponibile un numero elevato di tag da selezionare.
-* GUIDES-28214: i tentativi di creare attività di revisione tramite il flusso di lavoro di AEM hanno esito negativo in modo coerente perché il nodo di revisione non è stato creato.
-* GUIDES-28104: la pubblicazione di una mappa DITA con l’attributo `chunk=to-content` crea nodi JCR duplicati nel nuovo output di AEM Sites, determinando una struttura di contenuto ridondante in AEM Sites.
-* GUIDES-29065, GUIDES-28793: lavorando con raccolte di grandi dimensioni, vengono osservati problemi di prestazioni quali tempi di caricamento più lunghi e timeout intermittenti.
+* Il SDK di AEM correlato ha un diverso ID versione (21575) ed è disponibile tramite il portale di distribuzione software.
 
-Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemi noti {#known-issues-21484}
-
-* Il SDK reso disponibile nel portale di distribuzione software presenta problemi con esecuzione locale. Continua a utilizzare il SDK precedente per i test locali.
-
-### Funzioni e API obsolete {#deprecated-21484}
+### Funzioni e API obsolete {#deprecated-21570}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-21484}
+### Correzioni di sicurezza {#security-21570}
 
-AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 5 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
+Nessuna
 
-### Tecnologie incorporate {#embedded-tech-21484}
+### Tecnologie incorporate {#embedded-tech-21570}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
