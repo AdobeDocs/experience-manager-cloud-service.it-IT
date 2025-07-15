@@ -39,7 +39,7 @@ Di seguito sono riportati i prerequisiti per l’utilizzo del servizio Forms Sub
 
 ## Configurare il servizio di invio Forms
 
-Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informazioni su come creare un nuovo progetto AEM, consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial). Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
+Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informazioni su come creare un nuovo progetto AEM, consulta l&#39;articolo [Guida introduttiva - Esercitazione per sviluppatori](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial). Aggiorna il file `fstab.yaml` nel progetto. Sostituire il riferimento esistente con il percorso della cartella condivisa con `forms@adobe.com`.
 
 È possibile [configurare il servizio di invio di Forms manualmente](#configuring-the-forms-submission-service-manually) o [configurare il servizio di invio di Forms utilizzando l&#39;API](#configuring-the-forms-submission-service-using-api).
 
@@ -49,7 +49,7 @@ Crea un nuovo progetto AEM configurato con il blocco Forms adattivo. Per informa
 
 #### &#x200B;1. Creare un modulo utilizzando una definizione di modulo
 
-Creare un modulo utilizzando Google Sheets o Microsoft Excel. Per informazioni su come creare un modulo utilizzando una definizione di modulo in Microsoft Excel o Google Sheets, [fare clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Creare un modulo utilizzando Google Sheets o Microsoft Excel. Per informazioni su come creare un modulo utilizzando una definizione di modulo in Microsoft Excel o Google Sheets, [fare clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 La schermata seguente mostra la definizione del modulo utilizzata per creare il modulo:
 
@@ -61,7 +61,7 @@ La schermata seguente mostra la definizione del modulo utilizzata per creare il 
 
 #### &#x200B;2. Abilitare il foglio di calcolo per accettare i dati.
 
-Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di calcolo corrispondente per iniziare a ricevere i dati. aggiungere un nuovo foglio come `incoming`. È possibile [abilitare manualmente il foglio di calcolo per accettare i dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Dopo aver creato e visualizzato in anteprima il modulo, abilita il foglio di calcolo corrispondente per iniziare a ricevere i dati. aggiungere un nuovo foglio come `incoming`. È possibile [abilitare manualmente il foglio di calcolo per accettare i dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Foglio in ingresso](/help/forms/assets/form-submission-incoming-sheet.png)
 
