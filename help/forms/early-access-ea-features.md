@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 26%
+source-wordcount: '2219'
+ht-degree: 25%
 
 ---
 
@@ -72,21 +72,6 @@ Ecco cosa offre in più Conversational Forms:
 
 
 I Forms per conversazioni sono molto di più di un semplice aspetto nuovo: cambiano l’esperienza degli utenti.  Incrementa il coinvolgimento, riduci l’abbandono dei moduli e rendi l’interazione con il tuo sito web un’esperienza più piacevole per tutti.
-
-
-### Authoring WYSIWYG per Edge Delivery Services
-
-WYSIWYG Authoring fornisce interfacce WYSIWYG (Universal Editor e Adaptive Forms Editor) per generare e pubblicare moduli adattivi in Edge Delivery Services. WYSIWYG Authoring offre tutte le funzionalità di [authoring basato su documenti](/help/edge/docs/forms/overview.md#document-based-authoring-features), oltre a un&#39;ampia gamma di funzionalità aggiuntive:
-
-* Editor di regole avanzate per la creazione di logica complessa.
-* Estensibilità lato server per funzionalità personalizzate.
-* Esperienza di modifica WYSIWYG per creare e visualizzare facilmente i moduli.
-* Documento di funzionalità del record per creare archivi inalterabili dei dati inviati.
-* Integrazione con Adobe Sign per le firme elettroniche.
-* Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
-* Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
-* Possibilità di scegliere tra più azioni di invio per la gestione degli invii di moduli, tra cui l&#39;invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
-
 
 ### Connettore da AEM Forms a Marketo
 

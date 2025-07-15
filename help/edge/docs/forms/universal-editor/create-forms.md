@@ -4,10 +4,10 @@ description: Questo articolo spiega come creare moduli adattivi selezionando mod
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Un diagramma di flusso decisionale per guidare la configurazione e la pubblicazi
 
 Per creare moduli in AEM e pubblicarli in Edge Delivery Services, segui questi passaggi:
 
-[1. Scegliere un modello e creare il modulo](#choose-a-template-and-create-the-form)
+[&#x200B;1. Scegliere un modello e creare il modulo](#choose-a-template-and-create-the-form)
 
-[2. Creare il modulo](#author-the-form)
+[&#x200B;2. Creare il modulo](#author-the-form)
 
-[3. Pubblicare un modulo](#publish-a-form)
+[&#x200B;3. Pubblicare un modulo](#publish-a-form)
 
 ### Scegliere un modello e creare il modulo
 
@@ -85,7 +85,7 @@ Per scegliere il modello e creare il modulo, segui i passaggi seguenti:
 
    Quando fai clic su **[!UICONTROL Crea]**, il modulo viene aperto nell’editor universale per l’authoring.
 
-   ![crea il modulo](/help/edge/assets/author-form.png)
+   ![Schermata dell&#39;Editor universale che mostra un modulo creato con la palette dei componenti a sinistra, l&#39;area di lavoro del modulo al centro e il pannello delle proprietà a destra](/help/edge/assets/author-form.png)
 1. Fai clic su **[!UICONTROL Crea]** per creare il modulo. Ora puoi [creare il modulo utilizzando l’editor universale](#author-the-form).
 
 >[!TAB Modello basato su componenti core]
@@ -135,7 +135,7 @@ Per l’authoring di moduli utilizzando l’editor universale per i modelli basa
 
    La schermata seguente mostra il `Registration Form` creato nell’editor universale:
 
-   ![modulo contattaci](/help/edge/assets/contact-us.png)
+   ![Schermata del modulo Contattaci completato nell&#39;Editor universale che mostra i campi modulo per nome, e-mail, telefono e messaggio con stile e layout corretti](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Per accedere al modulo in Edge Delivery Services, è obbligatorio pubblicarlo. P
 
 1. Pubblica il modulo facendo clic sul pulsante **[!UICONTROL Pubblica]** nell’angolo in alto a destra dell’editor universale.
 
-![pubblica modulo](/help/edge/assets/publish-form.png)
+![Schermata dell&#39;editor universale che mostra la finestra di dialogo di pubblicazione con le opzioni di pubblicazione del modulo e i pulsanti di conferma](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

@@ -4,14 +4,52 @@ description: Configura le azioni di invio per modulo adattivo.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 78%
 
 ---
 
 # Azione di invio per modulo adattivo
+
+## Panoramica
+
+L’invio di un modulo è il passaggio finale fondamentale nel percorso di utenti: i dati raccolti vengono elaborati e vengono intraprese azioni. Questo documento fornisce una guida completa alla configurazione e alla gestione delle azioni di invio per Adaptive Forms in Universal Editor.
+
+### Argomenti trattati
+
+Alla fine di questo documento verrà illustrato come:
+
+* Configurare diversi tipi di azioni di invio per i moduli
+* Configurare gli invii di endpoint REST per l’integrazione con i sistemi esterni
+* Configurare gli invii e-mail per le risposte ai moduli
+* Implementare azioni di invio personalizzate per esigenze aziendali specifiche
+* Gestire gli scenari di errore e convalida dei moduli durante l’invio
+
+### Pubblico di destinazione
+
+Questa guida è progettata per:
+
+* **Sviluppatori di moduli** che implementano la logica di invio
+* **Integratori di sistema** connessione dei moduli ai sistemi back-end
+* **Business analyst** definizione dei flussi di lavoro dei moduli
+* **Architetti tecnici** progettazione dei processi di invio dei moduli
+
+### Azioni di invio disponibili
+
+Universal Editor fornisce due tipi di azioni di invio principali:
+
+1. **Invia all&#39;endpoint REST** * Invia dati modulo agli endpoint API
+2. **Invia e-mail** * Invia risposte modulo tramite e-mail
+
+### Prerequisiti
+
+Prima di configurare le azioni di invio, assicurati di disporre di:
+
+* Accesso a Universal Editor
+* Autorizzazioni appropriate per la configurazione del modulo
+* Informazioni sull’endpoint di invio di destinazione o sulla configurazione e-mail
 
 Un’azione di invio specifica la destinazione dei dati raccolti tramite un modulo adattivo. Il processo di invio inizia quando l’utente fa clic sul pulsante **[!UICONTROL Invia]** nel modulo. AEM Forms offre due tipi di azioni di invio descritte di seguito e consente di creare e utilizzare azioni di invio personalizzate per soddisfare esigenze specifiche. Le azioni di invio predefinite sono:
 
@@ -42,7 +80,7 @@ Per configurare un endpoint REST:
 1. Specifica l’URL dell’endpoint REST.
 1. Puoi anche selezionare **Abilita richiesta POST** e fornire un URL per pubblicare la richiesta.
 
-![Abilitare la richiesta POST per moduli adattivi](/help/forms/assets/enable-post-request-ue.png)
+![Schermata del pannello delle proprietà dell&#39;editor universale che mostra i campi di configurazione dell&#39;endpoint REST, inclusi l&#39;input dell&#39;URL e l&#39;opzione Abilita richiesta POST per l&#39;invio del modulo](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ Per configurare un’azione di invio come e-mail per l’invio del modulo:
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 

@@ -4,17 +4,17 @@ description: L’editor di regole nell’editor universale consente di aggiunger
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 99%
+source-wordcount: '2253'
+ht-degree: 98%
 
 ---
 
 
 # Introduzione all’editor di regole nell’authoring WYSIWYG
 
-<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 
 È possibile aggiungere il comportamento di un modulo dinamico utilizzando l’editor di regole, che consente di creare regole. Queste regole abilitano la visibilità dei campi condizionali, automatizzano i calcoli in base a quanto immesso dall’utente e migliorano l’esperienza utente complessiva. Semplificando il processo di compilazione dei moduli, l’editor di regole favorisce sia l’accuratezza che l’efficienza.
@@ -188,7 +188,7 @@ Esaminiamo ora come [scrivere regole nell’editor di regole](#write-rules).
 
 Per informazioni su come scrivere regole nell’editor di regole visivo, prendiamo in considerazione un semplice esempio di modulo di calcolo delle imposte:
 
-![Esempio di editor di regole](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Schermata dell&#39;interfaccia dell&#39;editor di regole che mostra la creazione di una regola condizionale con logica When-Then per la visibilità dei campi modulo](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 Nel modulo descritto in precedenza, l’utente immette lo stipendio lordo. In base a questo input, viene visualizzato il campo condizionale e viene calcolata l’imposta dovuta.
 
@@ -209,7 +209,7 @@ Nel modulo descritto in precedenza, l’utente immette lo stipendio lordo. In ba
 
 Per scrivere regole, esegui i seguenti passaggi:
 
-### 1. Creare un modulo
+### &#x200B;1. Creare un modulo
 
 Per creare un modulo nell’editor universale:
 
@@ -223,9 +223,9 @@ Per creare un modulo nell’editor universale:
    * Invia (pulsante Invia)
 1. Nascondi il campo modulo `Additional Deduction` aprendo `Properties`.
 
-   ![Esempio di editor di regole](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Schermata di un modulo di calcolo delle imposte con campi di input per lo stipendio lordo, lo stato civile e i figli dipendenti, che illustra la struttura del modulo prima dell&#39;applicazione delle regole](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Aggiungere una regola condizionale per un campo modulo
+### &#x200B;2. Aggiungere una regola condizionale per un campo modulo
 
 Dopo aver creato il modulo, scrivi la prima regola per visualizzare il campo `Additional Deduction` solo se lo stipendio lordo supera i 50.000 dollari. Per aggiungere una regola condizionale:
 
@@ -261,7 +261,7 @@ La regola viene visualizzata nell’editor di regole nel modo seguente.
 >
 > In alternativa, per implementare lo stesso comportamento, è possibile scrivere una regola Mostra nel campo Detrazione aggiuntiva, anziché una regola Quando nel campo Stipendio lordo.
 
-### 3. Aggiungere regole di calcolo per i campi modulo
+### &#x200B;3. Aggiungere regole di calcolo per i campi modulo
 
 Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza tra `Gross Salary` e `Additional Deduction` (se applicabile). Per aggiungere la regola di calcolo nel campo **[!UICONTROL Reddito imponibile]**, esegui i seguenti passaggi:
 
@@ -278,7 +278,6 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Meno]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Detrazione aggiuntiva]** nell’altro campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
-
      ![Editor di regole, esempio 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
@@ -296,7 +295,6 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Moltiplicato per]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona **Numero** dal campo **[!UICONTROL Seleziona opzione]** e immetti il valore `10` nel campo **[!UICONTROL Immetti un numero]**.
-
      ![Editor di regole, esempio 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
    ![Editor di regole, esempio 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    ![Editor di regole, esempio 20](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Per salvare la regola, seleziona **[!UICONTROL Fine]**.
 
-### 4. Visualizzare l’anteprima di un modulo
+### &#x200B;4. Visualizzare l’anteprima di un modulo
 
 Ora, quando visualizzi l’anteprima del modulo e immetti come **Stipendio lordo** `60,000`, viene visualizzato il campo **Detrazione aggiuntiva** e vengono calcolati di conseguenza il **Reddito imponibile** e l’**Imposta dovuta**.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Aggiunta di una funzione personalizzata](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Utilizzare una funzione personalizzata nell’editor di regole

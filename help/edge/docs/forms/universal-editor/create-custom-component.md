@@ -4,16 +4,16 @@ description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 98%
+source-wordcount: '1841'
+ht-degree: 95%
 
 ---
 
 # Creare un componente personalizzato nell’ambiente di authoring WYSIWYG
 
-<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l&#39;accesso, invia un&#39;e-mail con il nome dell&#39;organizzazione GitHub e il nome dell&#39;archivio dall&#39;indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
 
 
 I moduli di Edge Delivery Services offrono funzionalità di personalizzazione e permettono agli sviluppatori front-end di creare componenti per moduli su misura. Questi componenti personalizzati si integrano direttamente nell’esperienza di authoring WYSIWYG, consentendo agli autori di moduli di aggiungerli, configurarli e gestirli facilmente nell’editor di moduli. I componenti personalizzati permettono agli autori di ottimizzare le funzionalità dei moduli. Inoltre, assicurano un processo di authoring fluido e intuitivo.
@@ -39,11 +39,11 @@ Quando si aggiunge nell’editor universale un componente personalizzato, questo
 
 Prendiamo ad esempio la creazione di un nuovo componente personalizzato denominato **Intervallo**. Il componente Intervallo viene visualizzato come una linea retta e mostra valori quali minimo, massimo o il valore selezionato.
 
-![Stile del componente Intervallo](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Rappresentazione visiva di un componente intervallo che mostra un dispositivo di scorrimento con valori minimi e massimi e un indicatore di valori selezionato](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 Alla fine di questo articolo avrai appreso a creare componenti personalizzati da zero.
 
-### 1. Aggiungere la struttura per il nuovo componente personalizzato
+### &#x200B;1. Aggiungere la struttura per il nuovo componente personalizzato
 
 Prima di poter utilizzare un componente personalizzato, è necessario registrarlo in modo che l’editor universale lo riconosca come opzione disponibile. A tale scopo è necessaria una definizione del componente, che include un identificatore univoco, le proprietà predefinite e la struttura. Per rendere il componente personalizzato disponibile per l’authoring dei moduli, segui i passaggi riportati di seguito:
 
@@ -106,7 +106,7 @@ Dopo aver aggiunto la definizione del componente, il file `_range.json` è il se
 >
 > Tutti i componenti relativi ai moduli adottano lo stesso approccio di Sites nell’aggiunta di blocchi all’editor universale. Per ulteriori informazioni, puoi consultare l’articolo [Creazione di blocchi abilitati all’utilizzo con l’editor universale](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block).
 
-### 2. Definizione delle proprietà per l’authoring del componente personalizzato
+### &#x200B;2. Definizione delle proprietà per l’authoring del componente personalizzato
 
 Il componente personalizzato include un modello di componente che specifica quali proprietà possono essere configurate dall’autore del modulo. Queste proprietà vengono visualizzate nella finestra di dialogo **Proprietà** dell’editor universale, consentendo agli autori di modificare impostazioni quali etichette, regole di convalida, stili e altri attributi. Per definire le proprietà:
 
@@ -188,7 +188,7 @@ Lo snippet JSON definisce una proprietà personalizzata denominata **Valore pass
 
 * **component**: specifica il tipo di campo di input utilizzato nella finestra di dialogo Proprietà. In questo caso, `number` indica che il campo accetta valori numerici.
 * **name**: l’identificatore della proprietà, utilizzato per farvi riferimento nella logica del componente. In questo caso `stepValue` rappresenta l’impostazione del valore incremento per l’intervallo.
-* **label**: nome della proprietà visualizzato nella finestra di dialogo Proprietà.
+* **label**: nome visualizzato con cui la proprietà viene identificata nella finestra di dialogo Proprietà.
 * **valueType**: definisce il tipo di dati previsto per la proprietà. `number` garantisce che siano consentiti solo gli input numerici.
 
 Ora puoi utilizzare `stepValue` come proprietà personalizzata nelle proprietà JSON di `range.js` e implementarne il comportamento dinamico in base al relativo valore in fase di esecuzione.
@@ -253,7 +253,7 @@ Di conseguenza, il file `_range.json` finale, dopo l’aggiunta della definizion
 ![definizione componente e modello](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. Rendere visibile il componente personalizzato nell’elenco dei componenti WYSIWYG.
+### &#x200B;3. Rendere visibile il componente personalizzato nell’elenco dei componenti WYSIWYG.
 
 Un filtro definisce la sezione in cui il componente personalizzato può essere utilizzato nell’editor universale. In questo modo il componente può essere utilizzato solo nelle sezioni appropriate, mantenendo la struttura e l’usabilità.
 
@@ -299,7 +299,7 @@ Per fare in modo che il componente personalizzato venga visualizzato nell’elen
 
 ![filtro componente](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. Registrazione del componente personalizzato
+### &#x200B;4. Registrazione del componente personalizzato
 
 Per consentire al blocco modulo di riconoscere il componente personalizzato e caricarne le proprietà definite nel modello di componente durante l’authoring, aggiungi il valore `fd:viewType` dalla definizione del componente al file `mappings.js`.
 Per registrare un componente:
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 Dopo aver completato i passaggi precedenti, il componente personalizzato viene visualizzato nell’elenco dei componenti del modulo all’interno dell’editor universale. Puoi quindi trascinarlo nella sezione del modulo.
 
-![componente intervallo](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Schermata della tavolozza dei componenti di Universal Editor che mostra il componente intervallo personalizzato disponibile per il trascinamento nei moduli](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 La schermata seguente mostra le proprietà del componente `range` aggiunto al modello di componente, che specifica le proprietà che l’autore del modulo può configurare.:
 
-![Proprietà del componente intervallo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Schermata del pannello delle proprietà di Universal Editor che mostra le impostazioni configurabili per il componente intervallo, incluse le proprietà di base, le regole di convalida e le opzioni di stile](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Ora puoi definire il comportamento runtime del componente personalizzato aggiungendo stile e funzionalità.
 
-### 5. Aggiungere il comportamento runtime per il componente personalizzato
+### &#x200B;5. Aggiungere il comportamento runtime per il componente personalizzato
 
 Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come spiegato in [ Stile dei campi modulo](/help/edge/docs/forms/style-theme-forms.md). A questo scopo, puoi utilizzare CSS (Cascading Style Sheets) personalizzati e codice personalizzato per migliorare l’aspetto del componente. Per aggiungere i il comportamento runtime del componente:
 
@@ -392,7 +392,6 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    float: right;
    }
    ```
-
    Il codice consente di definire lo stile e l’aspetto visivo del componente personalizzato.
 
 1. Per aggiungere la funzionalità, passa al file `/blocks/form/components/range/range.js` e aggiungi la seguente riga di codice:
@@ -457,7 +456,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    L’integrazione di stile e funzionalità personalizzati migliora l’aspetto e il comportamento del componente Intervallo. Il design aggiornato riflette gli stili applicati, mentre la funzionalità aggiunta garantisce un’esperienza utente più dinamica e interattiva.
 La schermata seguente illustra il componente intervallo aggiornato.
 
-![Stile componente intervallo](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![Componente intervallo finale in azione che mostra un dispositivo di scorrimento formattato con visualizzazione a bolla di valori e funzionalità interattive nell&#39;Universal Editor](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Domande frequenti
 
