@@ -159,8 +159,8 @@ Ad esempio, esegui il comando seguente nel terminale o nel prompt dei comandi do
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &quot;{
-    &quot;data&quot;: {
+    —data &quot;&lbrace;
+    &quot;data&quot;: &lbrace;
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
@@ -171,8 +171,8 @@ Ad esempio, esegui il comando seguente nel terminale o nel prompt dei comandi do
     &quot;età&quot;: &quot;35&quot;,
     &quot;abbonamento&quot;: null,
     &quot;e-mail&quot;: &quot;mary@gmail.com&quot;
-    }
-    }&#39;
+    &rbrace;
+    &rbrace;&#39;
     
     &quot;
 
