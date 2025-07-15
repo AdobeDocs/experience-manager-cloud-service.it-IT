@@ -4,17 +4,17 @@ description: Utilizza l’editor universale di moduli per Edge Delivery Services
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 99%
+source-wordcount: '1012'
+ht-degree: 98%
 
 ---
 
 
 # Editor universale di moduli per Edge Delivery Services
 
-<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail con il nome dell’organizzazione e il nome dell’archivio GitHub dall’indirizzo ufficiale a <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Ad esempio, se l’URL dell’archivio è https://github.com/adobe/abc, il nome dell’organizzazione è adobe e il nome dell’archivio è abc.</span>
+<span class="preview"> Questa è una funzionalità pre-release disponibile tramite il nostro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 L’editor universale rivoluziona la creazione di moduli per Edge Delivery Services di Adobe, grazie a un’interfaccia WYSIWYG (What You See Is What You Get) semplice, visiva e intuitiva. Progettato per chi crea contenuti e moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendola accessibile anche agli utenti non tecnici.
 
