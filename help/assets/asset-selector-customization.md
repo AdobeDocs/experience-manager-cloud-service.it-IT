@@ -3,9 +3,9 @@ title: Personalizzare l’applicazione Asset Selector
 description: Utilizza le funzioni per personalizzare il selettore delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 25%
 
 ---
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Carica nel selettore risorse {#upload-in-asset-selector}
 
-Puoi caricare file o cartelle in Asset Selector dal file system locale. Per caricare i file utilizzando il file system locale, in genere è necessario utilizzare una funzione di caricamento fornita da una micro applicazione front-end Asset Selector. Vari snippet di codice necessari per richiamare il caricamento nel selettore risorse includono:
+Puoi caricare file o cartelle in Asset Selector dal file system locale. Per caricare i file utilizzando il file system locale, in genere è necessario utilizzare una funzione di caricamento fornita da una micro applicazione front-end Asset Selector. `upload` Vari snippet di codice necessari per richiamare il caricamento nel selettore risorse includono:
 
 * [Frammento di codice modulo caricamento di base](#basic-upload)
+* [Carica configurazione](#upload-config)
 * [Carica con metadati](#upload-with-metadata)
 * [Caricamento personalizzato](#customized-upload)
 * [Carica utilizzando origini di terze parti](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Carica configurazione {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*Altre proprietà includono `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Per ulteriori informazioni, consulta [Proprietà selettore risorse](#asset-selector-properties.md).
 
 ### Carica con metadati {#upload-with-metadata}
 

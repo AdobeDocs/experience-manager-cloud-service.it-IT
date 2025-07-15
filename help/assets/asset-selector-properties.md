@@ -3,10 +3,10 @@ title: Proprietà del selettore risorse per la personalizzazione
 description: Utilizza il Selettore risorse per cercare, trovare e recuperare i metadati e le rappresentazioni delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 39%
+source-wordcount: '1420'
+ht-degree: 37%
 
 ---
 
@@ -47,16 +47,16 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *filterRepoList* | Funzione | No |  | È possibile utilizzare la funzione di callback `filterRepoList` che chiama l&#39;archivio Experience Manager e restituisce un elenco filtrato di archivi. |
 | *expiryOptions* | Funzione | | | È possibile utilizzare tra le due proprietà seguenti: **getExpiryStatus** che fornisce lo stato di una risorsa scaduta. La funzione restituisce `EXPIRED`, `EXPIRING_SOON` o `NOT_EXPIRED` in base alla data di scadenza di una risorsa fornita. Consulta [personalizzare le risorse scadute](/help/assets/asset-selector-customization.md#customize-expired-assets). È inoltre possibile utilizzare **allowSelectionAndDrag** in cui il valore della funzione può essere `true` o `false`. Quando il valore è impostato su `false`, la risorsa scaduta non può essere selezionata o trascinata nell&#39;area di lavoro. |
 | *showToast* | | No | | Consente al selettore risorse di visualizzare un messaggio popup personalizzato per la risorsa scaduta. |
-| *metadataSchema* | Array | No | | Aggiungi un array di campi fornito per raccogliere i metadati dall’utente. Utilizzando questa proprietà, puoi anche utilizzare metadati nascosti che vengono assegnati automaticamente a una risorsa ma non sono visibili all’utente. |
-| *onMetadataFormChange* | Funzione callback | No | | È costituito da `property` e `value`. `Property` è uguale a *mapToProperty* del campo passato da *metadataSchema* il cui valore è in fase di aggiornamento. Mentre,`value` è uguale al nuovo valore fornito come input. |
-| *targetUploadPath* | Stringa |  | `"/content/dam"` | Percorso di caricamento di destinazione per i file che per impostazione predefinita sono nella directory principale dell’archivio delle risorse. |
-| *nascondiPulsanteCaricamento* | Booleano | | Falso | In questo modo viene garantito se il pulsante Caricamento interno deve essere nascosto o meno. |
-| *onUploadStart* | Funzione | No |  | Si tratta di una funzione di callback utilizzata per passare l&#39;origine di caricamento tra Dropbox, OneDrive o locale. La sintassi è `(uploadInfo: UploadInfo) => void` |
-| *importSettings* | Funzione | | | Abilita il supporto per l’importazione di risorse da origini terze. `sourceTypes` utilizza un array delle origini di importazione che si desidera abilitare. Le origini supportate sono Onedrive e Dropbox. La sintassi è `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | Funzione | No | | Si tratta di una funzione di callback utilizzata per passare lo stato di caricamento del file tra completato, non riuscito o duplicato. La sintassi è `(uploadStats: UploadStats) => void` |
-| *onFilesChange* | Funzione | No | | Si tratta di una funzione di callback utilizzata per mostrare il comportamento di caricamento quando un file viene modificato. Trasmette il nuovo array di file in attesa di caricamento e il tipo di origine del caricamento. Il tipo di Source può essere nullo in caso di errore. La sintassi è `(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | Stringa | | | È un’immagine segnaposto che sostituisce il modulo metadati quando viene avviato il caricamento della risorsa. La sintassi è `{ href: string; alt: string; } ` |
-| *uploadConfig* | Oggetto | | | Si tratta di un oggetto che contiene una configurazione personalizzata per il caricamento. |
+| *uploadConfig* | Oggetto | | | Si tratta di un oggetto che contiene una configurazione personalizzata per il caricamento. Per informazioni sull&#39;usabilità, vedere [configurazione caricamento](#asset-selector-customization.md#upload-config). |
+| *metadataSchema* | Array | No | | Questa proprietà è nidificata nella proprietà `uploadConfig`. Aggiungi un array di campi fornito per raccogliere i metadati dall’utente. Utilizzando questa proprietà, puoi anche utilizzare metadati nascosti che vengono assegnati automaticamente a una risorsa ma non sono visibili all’utente. |
+| *onMetadataFormChange* | Funzione callback | No | | Questa proprietà è nidificata nella proprietà `uploadConfig`. È costituito da `property` e `value`. `Property` è uguale a *mapToProperty* del campo passato da *metadataSchema* il cui valore è in fase di aggiornamento. Mentre,`value` è uguale al nuovo valore fornito come input. |
+| *targetUploadPath* | Stringa |  | `"/content/dam"` | Questa proprietà è nidificata nella proprietà `uploadConfig`. Percorso di caricamento di destinazione per i file che per impostazione predefinita sono nella directory principale dell’archivio delle risorse. |
+| *nascondiPulsanteCaricamento* | Booleano | | Falso | In questo modo viene garantito se il pulsante Caricamento interno deve essere nascosto o meno. Questa proprietà è nidificata nella proprietà `uploadConfig`. |
+| *onUploadStart* | Funzione | No |  | Si tratta di una funzione di callback utilizzata per passare l&#39;origine di caricamento tra Dropbox, OneDrive o locale. La sintassi è `(uploadInfo: UploadInfo) => void`. Questa proprietà è nidificata nella proprietà `uploadConfig`. |
+| *importSettings* | Funzione | | | Abilita il supporto per l’importazione di risorse da origini terze. `sourceTypes` utilizza un array delle origini di importazione che si desidera abilitare. Le origini supportate sono Onedrive e Dropbox. La sintassi è `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`. Inoltre, questa proprietà è nidificata nella proprietà `uploadConfig`. |
+| *onUploadComplete* | Funzione | No | | Si tratta di una funzione di callback utilizzata per passare lo stato di caricamento del file tra completato, non riuscito o duplicato. La sintassi è `(uploadStats: UploadStats) => void`. Inoltre, questa proprietà è nidificata nella proprietà `uploadConfig`. |
+| *onFilesChange* | Funzione | No | | Questa proprietà è nidificata nella proprietà `uploadConfig`. Si tratta di una funzione di callback utilizzata per mostrare il comportamento di caricamento quando un file viene modificato. Trasmette il nuovo array di file in attesa di caricamento e il tipo di origine del caricamento. Il tipo di Source può essere nullo in caso di errore. La sintassi è `(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | Stringa | | | È un’immagine segnaposto che sostituisce il modulo metadati quando viene avviato il caricamento della risorsa. La sintassi è `{ href: string; alt: string; }`. Inoltre, questa proprietà è nidificata sotto la proprietà `uploadConfig`. |
 | *featureSet* | Array | Stringa | | La proprietà `featureSet:[ ]` viene utilizzata per abilitare o disabilitare una particolare funzionalità nell&#39;applicazione Asset Selector. Per abilitare un componente o una funzione, puoi passare un valore stringa nell’array oppure lasciare vuoto l’array per disabilitare tale componente.  Ad esempio, per abilitare la funzionalità di caricamento nel selettore risorse, utilizza la sintassi `featureSet:[0:"upload"]`. Allo stesso modo, puoi utilizzare `featureSet:[0:"collections"]` per abilitare le raccolte nel Selettore risorse. Inoltre, utilizza `featureSet:[0:"detail-panel"]` per abilitare [il pannello dei dettagli](overview-asset-selector.md#asset-details-and-metadata) di una risorsa. Per utilizzare insieme queste funzionalità, la sintassi è `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
