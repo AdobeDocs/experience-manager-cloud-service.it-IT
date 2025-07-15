@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,8 @@ La funzionalità **Ripristina codice precedente distribuito** diventa disponibil
 * L’organizzazione è iscritta al programma Early Adopter e il flag di funzione è attivato.
 * Il programma viene eseguito su AEM as a Cloud Service.
 * L&#39;ambiente scelto è un ambiente `Development` (limite temporaneo di Alpha).
-* L&#39;ultima pipeline per l&#39;ambiente è stata completata correttamente ed è stata eseguita **meno di 10 giorni** fa.
+* L&#39;ultima pipeline per l&#39;ambiente è stata completata correttamente ed è stata eseguita **meno di 30 giorni** fa.
 * Lo stato dell&#39;ambiente è *In esecuzione* e nessuna pipeline è in corso.
-* La versione del codice sorgente di destinazione da ripristinare è stata distribuita **entro 30 giorni**.
 
 Se un controllo non riesce, Cloud Manager apre la seguente finestra di dialogo in cui sono elencate una o più condizioni non soddisfatte e disabilita **Conferma**, impedendo il ripristino.
 
