@@ -79,6 +79,7 @@ Per scegliere il modello e creare il modulo, segui i passaggi seguenti:
 
    1. Specifica **Nome** e **Titolo**.
    1. Specifica l’**URL di GitHub**. Ad esempio, se l’archivio GitHub è denominato `edsforms` e si trova sotto l’account `wkndforms`, l’URL è:
+
       `https://github.com/wkndforms/edsforms`
 
    ![Procedura guidata per la creazione di un modulo](/help/edge/assets/create-form-wizard.png)

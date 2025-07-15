@@ -392,6 +392,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    float: right;
    }
    ```
+
    Il codice consente di definire lo stile e l’aspetto visivo del componente personalizzato.
 
 1. Per aggiungere la funzionalità, passa al file `/blocks/form/components/range/range.js` e aggiungi la seguente riga di codice:

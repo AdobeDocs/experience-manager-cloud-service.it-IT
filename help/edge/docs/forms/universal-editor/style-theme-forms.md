@@ -142,6 +142,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
   }
   
 ```
+
 * `.{Type}-wrapper`: esegue il targeting dell’elemento esterno `div` in base al tipo di campo. Ad esempio: `.text-wrapper` esegue il targeting di tutti i campi di testo.
 * `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo “Nome”. Questo selettore può essere utilizzato per il targeting di elementi con classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * Eseguire il targeting del wrapper: il primo selettore (`.drop-down-wrapper`) esegue il targeting dell’elemento wrapper esterno, assicurando che gli stili vengano applicati all’intero componente del menu a discesa.
 * Layout flexbox: flexbox dispone l’etichetta, il menu a discesa e la descrizione in verticale per un layout pulito.
 * Stile etichetta: l’etichetta si distingue per uno spessore del carattere più audace e un leggero margine.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### Gruppi pulsanti di scelta
 
@@ -282,6 +284,7 @@ Analogamente ai componenti a discesa, i gruppi pulsanti di scelta dispongono di 
     padding: 10px;
   }
 ```
+
 Questo selettore esegue il targeting di qualsiasi set di campi con la classe radio-group-wrapper. Questo sarebbe utile per applicare stili generali all’intero gruppo pulsanti di scelta.
 
 * Targeting delle etichette del pulsante di scelta
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-* L’elemento legend (<legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+* L’elemento legend (&lt;legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
 * All’interno del fieldset, più.Gli elementi wrapper {Type} (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all&#39;interno del pannello.
 * Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 questo selettore applica uno stile a tutti i wrapper del campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
 
 * Targeting di campi specifici (all’interno di un pannello):
