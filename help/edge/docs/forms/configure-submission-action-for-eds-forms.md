@@ -46,6 +46,7 @@ Il [servizio di invio moduli](/help/forms/forms-submission-service.md) è un end
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Invio moduli](/help/forms/assets/eds-fss.png)
 
 Questo diagramma di flusso mostra come il servizio di invio moduli acquisisce i dati inviati e li inoltra a un foglio di calcolo o a un’e-mail configurati.
@@ -144,6 +145,7 @@ La pagina in cui desideri visualizzare il modulo (che qui verrà denominata, “
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
 Questo diagramma mostra la pagina host che recupera l’HTML del modulo dalla relativa sorgente e lo visualizza. L’invio utilizza l’endpoint configurato del modulo originale.
 
