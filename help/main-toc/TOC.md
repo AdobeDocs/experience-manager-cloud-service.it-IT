@@ -370,7 +370,7 @@ ht-degree: 99%
       + [Casella in entrata](/help/sites-cloud/authoring/inbox.md)
       + [Console Componenti](/help/sites-cloud/authoring/components-console.md)
       + [Selezione del percorso](/help/sites-cloud/authoring/path-selection.md)
-      + [Risoluzione dei problemi](/help/sites-cloud/authoring/troubleshooting.md)
+      + [Risoluzione di problemi](/help/sites-cloud/authoring/troubleshooting.md)
       + Console Sites {#sites-console}
          + [Console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [Pannello laterale console](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
@@ -941,7 +941,7 @@ ht-degree: 99%
       + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Riferimento API per JavaScript del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
       + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-   + Risoluzione dei problemi {#troubleshooting-aem-forms-cloud-service}
+   + Risoluzione di problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
       + [Riavvio di SDK di AEM](/help/forms/restart-aem-sdk.md)
@@ -1073,7 +1073,7 @@ ht-degree: 99%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
-      + [Configurare l’invio per Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
@@ -1109,7 +1109,7 @@ ht-degree: 99%
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
-   + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [Best practice per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
