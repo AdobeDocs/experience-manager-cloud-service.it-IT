@@ -77,7 +77,7 @@ Per gestire gli errori 500, il nome file dello script del gestore degli errori d
 >[!NOTE]
 >
 >In AEM as Cloud Service, la CDN fornisce una pagina di errore generica quando viene ricevuto un errore 5XX dal backend. Per consentire la trasmissione della risposta effettiva del backend, è necessario aggiungere la seguente intestazione alla risposta: `x-aem-error-pass: true`.
->>Questo funziona solo per le risposte provenienti da AEM o dal livello Apache/Dispatcher. Altri errori imprevisti provenienti dai livelli intermedi dell’infrastruttura visualizzeranno comunque la pagina di errore generico.
+>&#x200B;>Questo funziona solo per le risposte provenienti da AEM o dal livello Apache/Dispatcher. Altri errori imprevisti provenienti dai livelli intermedi dell’infrastruttura visualizzeranno comunque la pagina di errore generico.
 
 >[!CAUTION]
 >
