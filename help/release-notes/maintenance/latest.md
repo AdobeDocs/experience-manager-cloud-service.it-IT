@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
+source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 81%
+source-wordcount: '276'
+ht-degree: 63%
 
 ---
 
@@ -28,7 +28,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 
 ### Miglioramenti {#enhancements-21570}
 
-Nessuna
+* Migrazione ad Apache Httpd 2.4.63
 
 ### Problemi risolti {#fixed-issues-21570}
 
@@ -37,6 +37,7 @@ Nessuna
 ### Problemi noti {#known-issues-21570}
 
 * Il SDK di AEM correlato ha un diverso ID versione (21575) ed è disponibile tramite il portale di distribuzione software.
+* Apache HTTP Server versione 2.4.63 ha introdotto una modifica fondamentale nella gestione dei punti interrogativi (`mod_rewrite`) negli URL da parte di `?`. Questa modifica è stata implementata per impedire l&#39;utilizzo del flag `UnsafeAllow3F`, che è stato considerato un rischio per la sicurezza. Ciò influisce su tutte le direttive `RewriteRule` che si basano sul rilevamento del punto interrogativo nei modelli URL.
 
 ### Funzioni e API obsolete {#deprecated-21570}
 
@@ -53,4 +54,5 @@ Nessuna
 | AEM Oak | 1.80.0 | [API Oak API 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
+| Server HTTP Apache | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | Componenti core AEM | 2.29.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
