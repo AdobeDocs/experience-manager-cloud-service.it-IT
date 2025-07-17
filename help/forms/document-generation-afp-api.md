@@ -3,10 +3,11 @@ title: Come si utilizza l’API di sincronizzazione dell’output AFP?
 description: Scopri come utilizzare l’API AFP Output Sync per recuperare e sincronizzare le rappresentazioni di output.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
-source-git-commit: 0b86f3bf71505b69ef995369045b7c682d7db8e3
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
+source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 10%
+source-wordcount: '235'
+ht-degree: 11%
 
 ---
 
@@ -100,4 +101,4 @@ Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionali
 
 Puoi salvare la risposta e aprire il file salvato nel lettore AFP per visualizzarlo.
 
-![Lettore PDF](/help/forms/assets/afp-pdf.png)
+<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
