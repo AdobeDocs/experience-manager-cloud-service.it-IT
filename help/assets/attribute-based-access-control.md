@@ -2,10 +2,11 @@
 title: Controllo degli accessi basato su attributi
 description: Scopri come abilitare il controllo degli accessi basato su attributi per definire regole basate su metadati per definire il livello di accesso alle risorse disponibili in Content Hub
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 4%
 
 ---
 
@@ -21,15 +22,26 @@ Ad esempio, CONSENTI l’accesso al gruppo di utenti con ID gruppo = 1011, quand
 
 Alcuni dei vantaggi principali del controllo degli accessi basato su attributi includono:
 
-* Elimina la dipendenza dalla struttura di cartelle per le autorizzazioni
+* Eliminazione della dipendenza dalla struttura di cartelle per le autorizzazioni
 
-* Consente agli amministratori di caricare le risorse e determinare retroattivamente le strutture delle autorizzazioni
+* Consenso agli amministratori di caricare le risorse e determinare retroattivamente le strutture delle autorizzazioni
 
-* Riduce il numero di duplicati, migliorando l&#39;integrità delle risorse. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
+* Riduzione del numero di duplicati, migliorando l’integrità della risorsa. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
 
 ## Come abilitare il controllo degli accessi basato su attributi? {#enable-attribute-based-access-control}
 
-Al momento, non è possibile creare autonomamente regole di controllo di accesso basate su attributi utilizzando l’interfaccia utente di Content Hub. Crea un ticket di supporto Adobe per definire le regole in un foglio di calcolo utilizzando le linee guida definite in questo articolo.
+Al momento, non è possibile creare autonomamente regole di controllo di accesso basate su attributi utilizzando l’interfaccia utente di Content Hub.
+
+Fare clic su **Scarica foglio di calcolo** per scaricare e definire le regole in un foglio di calcolo. Crea un ticket di supporto Adobe e fornisci ad Adobe le regole definite nel foglio di calcolo.
+
+[!BADGE Scarica il foglio di calcolo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Definisci le regole nel foglio di calcolo utilizzando le linee guida definite in questo articolo.
+
+>[!IMPORTANT]
+>
+> Dopo aver definito le regole, passare alla scheda **Errori di convalida** del foglio di calcolo e fare clic su **Esegui convalide ABAC**. **Tutte le convalide passate** messaggio conferma che puoi fornire le regole definite ad Adobe.
 
 ## Esempio di utilizzo del controllo degli accessi basato su attributi {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Questo consente di scrivere regole semplici ed espressive, come: ALLOW if region
 * Acquisisci l’intento di business della regola nel commento, indipendentemente dal fatto che la condizione sia scritta correttamente, in quanto l’intento ci aiuta a convalidare e correggere la logica, se necessario.
 
 * I file PDF delle licenze impostati per DRM devono essere visibili a tutti, in modo che gli utenti possano visualizzarli quando scaricano la risorsa con licenza.
-
-
-
-
-
-
-
-
-
-
