@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
-ht-degree: 99%
+source-wordcount: '6521'
+ht-degree: 97%
 
 ---
 
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [Creare e gestire le revisioni per un modulo adattivo](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Parole chiave per moduli adattivi](/help/forms/adaptive-forms-keywords.md)
       + [Anteprima di un modulo](/help/forms/previewing-forms.md)
+   + Moduli HTML5 {#html5-forms}
+      + [Introduzione ai moduli HTML5](/help/forms/introductionhtml5.md)
+      + [Guida introduttiva ai moduli di HTML5](/help/forms/get-started.md)
+      + [Architettura dei moduli HTML5](/help/forms/html5-forms-architecture.md)
+      + [Differenziazione delle funzioni tra HTML5 Forms e PDF forms](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [Domande frequenti per i moduli HTML5](/help/forms/faqhtml5.md)
+      + [Progettazione di modelli di modulo per moduli HTML5](/help/forms/designing-form-template.md)
+      + [Best practice per i moduli HTML5](/help/forms/best-practices-for-html5-forms.md)
+      + [Progettazione di moduli HTML5 accessibili](/help/forms/design-accessible-html5-forms.md)
+      + [Generare l’anteprima HTML5 di un modulo XDP](/help/forms/preview-xdp-forms-html.md)
+      + [Rendering del modello di modulo per i moduli HTML5](/help/forms/rendering-form-template.md)
+      + [Abilitazione degli allegati per un modulo HTML5](/help/forms/enabling-attachments-html5-form.md)
+      + [proxy del servizio HTML5 forms](/help/forms/service-proxy.md)
+      + [Ottimizzazione dei moduli HTML5](/help/forms/optimize-html5-forms.md)
+      + [Lettori di schermo per moduli HTML5](/help/forms/screen-readers.md)
+      + [Creazione di un profilo personalizzato per i moduli HTML5](/help/forms/custom-profile.md)
+      + [Lingue da destra a sinistra nei moduli HTML5](/help/forms/right-left-languages.md)
+      + [Integrazione di Form Bridge con il portale personalizzato per HTML5 Forms](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [Creare aspetti personalizzati nei moduli di HTML5](/help/forms/custom-widgets.md)
+      + [Modifica degli stili predefiniti dei moduli di HTML5](/help/forms/changing-default-styles.md)
+      + [Supporto delle clausole di immagine per i moduli HTML5](/help/forms/picture-clause-support.md)
+      + [Creare tabelle complesse accessibili in moduli HTML5](/help/forms/accessible-tables.md)
+      + [Creazione di stili CSS per i moduli HTML5](/help/forms/css-styles.md)
+      + [Personalizzazione dei messaggi di errore per i moduli HTML5](/help/forms/customzing-errors-html5-forms.md)
+      + [Salvataggio di un modulo HTML5 come bozza](/help/forms/saving-html5-form-draft.md)
+      + [Abilita registrazione per moduli HTML5](/help/forms/enable-logs.md)
+      + [Debug di moduli HTML5](/help/forms/debug.md)
+      + [Supporto di script per i moduli HTML5](/help/forms/scripting-support.md)
+      + [Set di moduli in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Comunicazione interattiva {#interactive-communocation}
       + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
       + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)

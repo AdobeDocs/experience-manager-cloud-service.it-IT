@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 25%
+source-wordcount: '2467'
+ht-degree: 22%
 
 ---
 
@@ -130,6 +130,30 @@ Pronto per iniziare? L’editor di comunicazioni interattive è disponibile nel 
 Puoi collegare AEM Forms a Adobe Experience Platform (AEP) per sfruttare i profili dei clienti e i dati per esperienze di moduli personalizzati e attivare flussi di lavoro a valle in base all’invio di moduli. Inviando i dati del modulo direttamente ai set di dati di AEP, puoi arricchire i profili dei clienti e ottenere informazioni più approfondite sulle interazioni degli utenti.
 
 Pronto per iniziare? [Ulteriori informazioni sull&#39;integrazione di AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Forms consente di eseguire il rendering dei modelli di modulo XFA (XML Forms Architecture) esistenti in formato HTML5, rendendoli accessibili su browser e dispositivi mobili moderni in cui non è supportato il PDF basato su XFA. Questa funzionalità colma il divario tra la PDF forms tradizionale e le moderne esperienze web.
+
+![Anteprima Forms HTML5](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Funzionalità chiave:**
+
+* **Rendering basato su HTML5 dei modelli di modulo XFA**: esegui il rendering dei moduli basati su XFA esistenti in formato HTML5 per espandere la piattaforma client ai dispositivi mobili (Apple iPad, tablet Android, smartphone e altro) che supportano HTML5 ma non Adobe Reader con XFA Forms.
+
+* **Moduli predisposti per dispositivi mobili**: HTML5 Forms offre numerose funzionalità predisposte per dispositivi mobili, che consentono di espandere le soluzioni e i flussi di lavoro correnti a tablet o smartphone con browser HTML5.
+
+* **Supporto per l&#39;accessibilità**: HTML5 Forms utilizza lo standard di accessibilità ARIA HTML5 e supporta la navigazione a schede, rendendoli compatibili con gli assistenti vocali comuni come JAWS e VoiceOver.
+
+* **Funzionalità di personalizzazione**: è possibile personalizzare l&#39;aspetto dei widget esistenti, creare widget personalizzati o utilizzare stili personalizzati nei moduli utilizzando tecnologie Web standard come CSS e JavaScript.
+
+* **Supporto per le lingue da destra a sinistra**: HTML5 Forms supporta le lingue da destra a sinistra come l&#39;ebraico, consentendo la visualizzazione e la compilazione dei moduli nelle lingue RTL.
+
+* **Supporto per gli allegati**: consente di caricare, visualizzare in anteprima e inviare allegati con i moduli HTML5 per una raccolta dati avanzata.
+
+* **Salvataggio bozza**: salva un modulo di HTML5 come bozza e riprendi la compilazione del modulo in una fase successiva.
+
+Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/introductionhtml5.md) fornisce una panoramica completa e una guida introduttiva per questa innovazione.
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 
