@@ -15,7 +15,7 @@ ht-degree: 4%
 
 L’implementazione OpenAPI modernizzata dell’API di gestione dei frammenti di contenuto consente agli sviluppatori di eseguire in modo programmatico le operazioni Crea, Leggi, Aggiorna ed Elimina in AEM Author per gestire i modelli di frammenti di contenuto e i frammenti di contenuto memorizzati in AEM. Queste API supportano una serie di casi d’uso.
 
-L&#39;utilizzo esistente di [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per i frammenti di contenuto deve essere migrato alla nuova OpenAPI per la gestione dei frammenti di contenuto. Per la documentazione completa, consulta [API di gestione dei frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+L&#39;utilizzo esistente di [Assets HTTP API](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per i frammenti di contenuto deve essere migrato alla nuova OpenAPI per la gestione dei frammenti di contenuto. Per la documentazione completa, consulta [API di gestione dei frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
 
 >[!NOTE]
 >
