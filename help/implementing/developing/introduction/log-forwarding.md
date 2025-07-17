@@ -19,22 +19,22 @@ ht-degree: 3%
 
 I clienti con una licenza di un fornitore di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri di AEM (incluso Apache/Dispatcher) e i registri CDN alla destinazione di registrazione associata. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
-<html>
-<style>
-table {
+&lt;html>
+&lt;style>
+table &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
   table-layout: fixed;
-}
-th, td {
+&rbrace;
+th, td &lbrace;
   width: 5%;
   max-width: 100%;
   border: 1px solid black;
   padding: 8px;
   word-wrap: break-word;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +109,7 @@ th, td {
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -200,14 +200,14 @@ Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei r
 Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione, altre potrebbero richiedere l’uso di porte diverse da HTTPS (443).  In tal caso [La rete avanzata](/help/security/configuring-advanced-networking.md) dovrà essere configurata prima di distribuire la configurazione di inoltro del registro.
 
 Utilizzare la tabella seguente per verificare quali sono i requisiti per la configurazione avanzata di rete e registrazione in base al fatto che si utilizzi o meno la porta 443 e che i registri debbano essere visualizzati da un indirizzo IP fisso.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -239,7 +239,7 @@ table, th, td {
       <td>Sì</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >La visualizzazione dei registri da un singolo indirizzo IP dipende dalla configurazione di rete avanzata scelta.  Per facilitare questa fase, è necessario utilizzare un’uscita dedicata.
