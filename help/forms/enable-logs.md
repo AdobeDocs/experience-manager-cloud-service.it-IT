@@ -172,9 +172,9 @@ Ad esempio:
 >[!NOTE]
 >
 >Il livello di registro predefinito per ogni categoria di registro a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli del registro per le diverse categorie sono:
->>a (xfa): 2 (errore di livello predefinito)
->>b (xfaView): 6 (TRACE specificato dall&#39;utente)
->>a (xfaPerf): 2 (errore di livello predefinito)
+>&#x200B;>a (xfa): 2 (errore di livello predefinito)
+>&#x200B;>b (xfaView): 6 (TRACE specificato dall&#39;utente)
+>&#x200B;>a (xfaPerf): 2 (errore di livello predefinito)
 
 ### Abilitazione della registrazione tramite Configuration Manager {#enabling-logging-using-configuration-manager}
 
