@@ -5,9 +5,9 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 23%
 
 ---
@@ -99,7 +99,7 @@ La visualizzazione **Riferimenti** mostra un elenco di tipi di riferimenti a o d
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno direttamente riferimento alla pagina selezionata, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
+* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno direttamente riferimento alla pagina selezionata insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
    * In questo modo vengono visualizzati solo i collegamenti statici, non quelli generati in modo dinamico, ad esempio dal componente Elenco.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
