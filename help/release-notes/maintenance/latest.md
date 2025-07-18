@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 21570 {#21570}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21570, rilasciata pubblicamente l’mercoledì 15 luglio 2025. La versione di manutenzione precedente era la 21484.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21570, rilasciata pubblicamente il mercoledì 15 luglio 2025. La versione di manutenzione precedente era la 21484.
 
 >[!NOTE]
 >

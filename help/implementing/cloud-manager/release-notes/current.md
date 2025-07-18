@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2025.7.0 di Cloud Manager
-description: Ulteriori informazioni sulla versione 2025.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service.
+description: Scopri la versione 2025.7.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 60%
+ht-degree: 99%
 
 ---
 
@@ -15,58 +15,58 @@ ht-degree: 60%
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Ulteriori informazioni sulla versione 2025.7.0 di Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
+Scopri la versione 2025.7.0 di Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consulta anche le [note sulla versione corrente di Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Date di pubblicazione {#release-date}
 
-La data di pubblicazione della versione 2025.7.0 di Cloud Manager in AEM as a Cloud Service è il venerdì 10 luglio 2025.
+La versione 2025.7.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata il 10 luglio 2025.
 
-La prossima versione è pianificata per il venerdì 7 agosto 2025.
+La prossima versione è pianificata per il 7 agosto 2025.
 
 ## Novità {#what-is-new}
 
-* **Cloud Manager aggiunge il supporto del certificato SSL ECDSA (Elliptic Curve Digital Signature Algorithm)**
+* **In Cloud Manager è stato aggiunto il supporto per i certificati SSL con ECDSA (Elliptic Curve Digital Signature Algorithm)**
 
-  Cloud Manager ora supporta i certificati ECDSA. Questa funzione garantisce una sicurezza elevata con chiavi di dimensioni più piccole, consentendo ai clienti di applicare la crittografia moderna e leggera alle configurazioni CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+  Cloud Manager ora supporta i certificati ECDSA. Questa funzione garantisce un livello di sicurezza elevato con chiavi di dimensioni più piccole e consente di applicare una crittografia moderna e leggera alle configurazioni CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
-* **Download del report sull&#39;utilizzo delle licenze del sito**
+* **Scarica il report sull’utilizzo della licenza del sito**
 
-  Nella pagina **Dettagli sull&#39;utilizzo dei siti** (in Cloud Manager, fare clic su **Licenza**. Nella tabella Soluzioni, nella riga **Sites**, fai clic su **Visualizza dettagli sull&#39;utilizzo**). I clienti possono ora fare clic su **Scarica report** per esportare i dati come file CSV. Questo download semplifica l’analisi e la condivisione delle tendenze di utilizzo. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+  Nella pagina **Dettagli sull’utilizzo di Sites** (in Cloud Manager, fai clic su **Licenza**. nella tabella Soluzioni, nella riga **Sites**, fai clic su **Visualizza dettagli sull’utilizzo**), la clientela può ora fare clic su **Scarica report** per esportare i dati come file CSV. Questo scaricamento semplifica l’analisi e la condivisione delle tendenze di utilizzo. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
 
-  ![Pagina dettagli utilizzo siti](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
+  ![Dettagli sull’utilizzo di Sites](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
   Consulta [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Programmi di adozione anticipata {#private-beta-program}
+## Programma per primi utilizzatori {#private-beta-program}
 
-Partecipa ai programmi alfa e beta di Cloud Manager per ottenere un accesso esclusivo anticipato alle prossime funzionalità prima del loro rilascio generale.
+Partecipa ai programmi Beta e Alpha di Cloud Manager per ottenere un accesso esclusivo alle prossime funzioni prima della versione generale.
 
 Sono attualmente disponibili le seguenti opportunità:
 
-### Rollback con un solo clic per le distribuzioni della pipeline {#one-click-rollback}
+### Rollback con un solo clic per le implementazioni di pipeline {#one-click-rollback}
 
-Ripristino rapido di una distribuzione precedente se il codice sorgente del cliente più recente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Ripristino rapido a un’implementazione precedente se il codice di origine più recente del cliente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice sorgente del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l&#39;opzione **Ripristina**>**Codice precedente distribuito**&#x200B;per un ambiente selezionato.*
-
-
-![Finestra di dialogo Ripristina codice precedente distribuito](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*Nella finestra di dialogo **Ripristina codice precedente distribuito**, controlla la versione attualmente distribuita e la versione da ripristinare, quindi fai clic su **Conferma***.
+![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**per un ambiente selezionato.*
 
 
-![Ripristino dell&#39;attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l&#39;ambiente alla build precedente, mantiene intatti il contenuto e la configurazione e contrassegna l&#39;ambiente **Ripristino**&#x200B;fino al completamento della distribuzione.*
+![Finestra di dialogo Ripristina codice precedente implementato](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
+*Nella finestra di dialogo **Ripristina codice precedente implementato**, controlla la versione attualmente implementata e quella che desideri ripristinare, quindi fai clic su **Conferma***.
 
 
-![Versione del codice Source in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell&#39;ambiente, come illustrato in precedenza, mostra ora anche la versione del codice sorgente attiva in uso.*
+![Ripristino dell’attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
+*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**fino al completamento dell’implementazione.*
 
-Se ti interessa testare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [restorecode@adobe.com](mailto:restorecode@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID.
+
+![Versione del codice di origine in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell’ambiente, come illustrato in precedenza, mostra ora anche la versione del codice di origine attiva in uso.*
+
+Se ti interessa testare questa nuova funzione e condividere il tuo feedback, invia un’e-mail a [restorecode@adobe.com](mailto:restorecode@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID.
 
 Vedi [Ripristinare il codice precedente distribuito in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
-Vedi anche [Ripristino del contenuto in AEM as a Cloud Service](/help/operations/restore.md).
+Consulta anche [Ripristino dei contenuti in AEM as a Cloud Service](/help/operations/restore.md).
 
 
 ### Ambiente di test specializzato {#specialized-test-environment}
@@ -136,9 +136,9 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 * Ora l’interfaccia utente visualizza messaggi di stato e messaggi di errore dettagliati quando un certificato SSL di convalida del dominio (DV) non riesce, utili per comprendere e risolvere i problemi relativi ai certificati. <!-- CMGR-68872 -->
 * Durante la modifica di una mappatura di dominio, l’interfaccia utente ora impedisce la selezione di certificati SSL che non corrispondono al dominio scelto, riducendo gli errori di configurazione e migliorando l’affidabilità durante la configurazione. <!-- CMGR-64307 -->
 * In alcune situazioni, i certificati non venivano eliminati correttamente, mantenendo il dominio ancora attivo. <!-- CMGR-69867 -->
-* È stato risolto un problema che poteva bloccare gli aggiornamenti da *Adobe Assets* a *Adobe Assets Ultimate* in alcuni casi. Le transizioni sono ora più fluide e affidabili. <!-- CMGR-69506 -->
-* È stato risolto un problema che causava l&#39;impostazione automatica dei campi delle aree chiave durante la creazione di ambienti con più aree al fine di supportare agevolmente servizi e implementazioni a valle. <!-- CMGR-69471 -->
-* È stato risolto un problema che impediva il corretto arresto di alcune pipeline di configurazione dopo l’esecuzione. Ora le pipeline vengono completate correttamente e chiuse come previsto, migliorando l’affidabilità. <!-- CMGR-69344 -->
+* È stato risolto un problema che in alcuni casi poteva bloccare gli aggiornamenti da *Adobe Assets* a *Adobe Assets Ultimate*. Le transizioni sono ora più fluide e affidabili. <!-- CMGR-69506 -->
+* È stato risolto un problema che causava l’impostazione automatica dei campi delle aree chiave durante la creazione di ambienti con più aree geografiche, al fine di supportare servizi e implementazioni a valle fluidamente. <!-- CMGR-69471 -->
+* È stato risolto un problema che impediva la corretta interruzione di alcune pipeline di configurazione dopo l’esecuzione. Ora le pipeline vengono completate correttamente e chiuse come previsto, migliorando l’affidabilità. <!-- CMGR-69344 -->
 
 
 <!-- ## Known issues {#known-issues} -->
