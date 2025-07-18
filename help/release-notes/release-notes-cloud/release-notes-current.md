@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1810'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,11 +63,11 @@ Content Hub ora consente di [controllare l’accesso alle raccolte durante la cr
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Editor universale per Forms adattivo e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l&#39;editor universale ora supporta la creazione sia di Forms adattivo che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione dei moduli, migliora la coerenza e migliora la protezione contro spam e abusi automatizzati.
+* [Editor universale per moduli adattivi e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l’editor universale ora supporta la creazione sia di moduli adattivi che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
 
 ### Funzioni pre-release
 
-* [Genera e sincronizza rappresentazioni AFP da Forms adattivo](/help/forms/document-generation-afp-api.md): l&#39;API di sincronizzazione output AFP consente agli amministratori e agli utenti di generare output AFP (Advanced Function Presentation) da Forms adattivo e di sincronizzare l&#39;output con i sistemi esterni o i percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali su larga scala.
+* [Genera e sincronizza rappresentazioni AFP da moduli adattivi](/help/forms/document-generation-afp-api.md): l’API di sincronizzazione dell’output AFP consente ad amministratori e utenti di generare output AFP (Advanced Function Presentation) da moduli adattivi e di sincronizzare l’output con sistemi esterni o percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali di larga scala.
 
 * [Libreria documenti di SharePoint - Salva allegati con nomi file originali](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ora puoi salvare gli allegati del modulo utilizzando i nomi file originali durante l’archiviazione in una raccolta documenti di SharePoint. Questo miglioramento semplifica l’identificazione e la gestione dei file caricati.
 
@@ -85,7 +85,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Integrazione di Adobe Experience Platform (AEP) con Forms
 
-* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l&#39;integrazione diretta tra Adaptive Forms e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente ad AEP in tempo reale. Semplifica l’acquisizione dei dati per casi di utilizzo di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
+* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l’integrazione diretta tra i moduli adattivi e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente a AEP in tempo reale. Semplifica l’acquisizione dei dati per casi d’uso di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
