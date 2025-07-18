@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
+
 
 # Set di moduli in AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ I set di moduli sono supportati anche nell’app AEM Forms, per consentire alla 
 
 È possibile associare diversi XDP o modelli di modulo, creati con Designer, a un set di moduli. I set di moduli possono quindi essere utilizzati per eseguire selettivamente il rendering degli XDP in base ai valori immessi dagli utenti nei moduli iniziali e nei relativi profili.
 
-Utilizza l&#39;[interfaccia utente di AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) per gestire tutti i tuoi moduli, set di moduli e risorse correlate.
+Utilizza l&#39;[interfaccia utente di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) per gestire tutti i tuoi moduli, set di moduli e risorse correlate.
 
 ### Creare un set di moduli {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
 
    * Ordine dei moduli: trascinare i moduli per riordinarli. L’ordine dei moduli definisce l’ordine in cui i moduli vengono mostrati all’utente finale nell’app AEM Forms e nella rappresentazione autonoma.
    * Identificatore modulo: specifica un’identità univoca per i moduli da utilizzare nelle espressioni di idoneità.
-   * Directory principale dati: per ogni modulo nel set di moduli, l’autore può configurare l’XPATH in cui i dati di quel particolare modulo sono posizionati nell’XML inviato. Per impostazione predefinita, il valore è /. Se tutti i moduli nel set di moduli sono associati a uno schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che in ogni campo del modulo sia specificata un&#39;associazione dati corretta nell&#39;XDP. Se due campi in due moduli diversi condividono la stessa associazione dati, il campo nel secondo modulo mostra i valori precompilati del primo modulo. Non associare due sottomaschere con lo stesso contenuto interno allo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per set di moduli](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Directory principale dati: per ogni modulo nel set di moduli, l’autore può configurare l’XPATH in cui i dati di quel particolare modulo sono posizionati nell’XML inviato. Per impostazione predefinita, il valore è /. Se tutti i moduli nel set di moduli sono associati a uno schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che in ogni campo del modulo sia specificata un&#39;associazione dati corretta nell&#39;XDP. Se due campi in due moduli diversi condividono la stessa associazione dati, il campo nel secondo modulo mostra i valori precompilati del primo modulo. Non associare due sottomaschere con lo stesso contenuto interno allo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per set di moduli](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Espressione di idoneità: specifica un&#39;espressione di JavaScript che valuta un valore booleano e indica se un modulo nel set di moduli è idoneo alla compilazione. Se false, all’utente non viene richiesto o non viene mostrato nemmeno il modulo da compilare. In genere, l’espressione si basa sui valori dei campi acquisiti prima del modulo. Le espressioni contengono anche chiamate al set di moduli API fs.valueOf per estrarre i valori compilati dall’utente in un campo di un modulo del set di moduli:
 
    *fs.valueOf(&lt;Identificatore modulo>, &lt;espressione fieldSom>) > &lt;valore>*
@@ -303,7 +306,7 @@ La sottostruttura indica i dati dei moduli nel set di moduli. L’elemento è fa
 
 Questo tag indica l&#39;inizio dell&#39;XML di HTML5 Form. Questo viene aggiunto nel codice XML di invio se è presente nel codice XML di precompilazione o se non è presente alcun codice XML di precompilazione. Questo tag può essere rimosso dal file XML di precompilazione.
 
-### XFA:SET DI DATI {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +318,7 @@ Questo tag indica l&#39;inizio dell&#39;XML di HTML5 Form. Questo viene aggiunto
 
 `children: xfa:data`
 
-### XFA:DATI {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
