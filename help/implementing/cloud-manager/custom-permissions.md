@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 38%
 
 ---
@@ -48,7 +48,7 @@ Questa sezione descrive questi passaggi. Durante la creazione delle autorizzazio
 
 ### Creare un nuovo profilo di prodotto {#create}
 
-Crea innanzitutto un profilo di prodotto prima del quale puoi assegnare autorizzazioni personalizzate.
+Crea innanzitutto un profilo di prodotto a cui assegnare autorizzazioni personalizzate.
 
 1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -174,7 +174,7 @@ Gli elementi autorizzazione si riferiscono all’ambito in cui viene applicata l
 
 | Tipo di elemento di autorizzazione | Esempio | Descrizione |
 | --- | --- | --- |
-| Organizzazione | organization:companyA | Tutte le risorse applicabili di un’organizzazione. Una risorsa può essere un programma, un ambiente o una pipeline. Se l’utente aggiunge un’organizzazione per qualsiasi autorizzazione, anche tutte le nuove risorse in tale organizzazione disporranno di tale autorizzazione. |
+| Organizzazione | organizzazione:companyA | Tutte le risorse applicabili di un’organizzazione. Una risorsa può essere un programma, un ambiente o una pipeline. Se l’utente aggiunge un’organizzazione per qualsiasi autorizzazione, anche tutte le nuove risorse in tale organizzazione disporranno di tale autorizzazione. |
 | Programma | Programma A | Tutte le risorse applicabili di un programma. |
 | Ambiente | Programma A: ambiente | Applicabile a un ambiente specifico. |
 | Pipeline | Programma A: pipeline | Applicabile a una pipeline specifica. |
