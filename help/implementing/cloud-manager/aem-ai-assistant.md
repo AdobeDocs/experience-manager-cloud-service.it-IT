@@ -81,7 +81,7 @@ Gli amministratori devono tenere presente la normale governance di Cloud Manager
 
 ![Creazione di ticket di supporto tecnico nell&#39;Assistente all&#39;intelligenza artificiale di AEM di Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-Per informazioni dettagliate sulla configurazione di utenti e gruppi in AEM as a Cloud Service, vedere [Configurazione dell&#39;accesso ad AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview).
+Per informazioni dettagliate sulla configurazione di utenti e gruppi in AEM as a Cloud Service, vedere [Configurazione dell&#39;accesso ad AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/accessing/overview).
 
 Vedi anche [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md).
 
