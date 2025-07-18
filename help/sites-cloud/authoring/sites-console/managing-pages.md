@@ -1,20 +1,20 @@
 ---
 title: Gestione delle pagine
-description: Scopri come gestire le pagine del tuo sito web in AEM, incluso lo spostamento, la copia e l’eliminazione.
+description: Scopri come gestire le pagine del sito web in AEM, incluso lo spostamento, la copia e l’eliminazione.
 exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 64%
+source-wordcount: '1329'
+ht-degree: 61%
 
 ---
 
 # Gestione delle pagine {#managing-pages}
 
-Scopri come gestire le pagine del tuo sito web in AEM, incluso lo spostamento, la copia e l’eliminazione.
+Scopri come gestire le pagine del sito web in AEM, incluso lo spostamento, la copia e l’eliminazione.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Dopo aver [creato una pagina](/help/sites-cloud/authoring/sites-console/creating
    Pulsante ![Modifica](/help/sites-cloud/authoring/assets/edit.png)
 
 1. La pagina viene aperta e puoi modificarla come necessario. A seconda della modalità di creazione della pagina selezionata, l&#39;azione **Modifica** aprirà l&#39;editor appropriato.
-   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l&#39;Editor pagina AEM
+   * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md) - Per le pagine create con l&#39;Editor pagina di AEM
    * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md) - Per le pagine create con l&#39;editor universale
 
 ## Copiare e incollare una pagina    {#copying-and-pasting-a-page}
@@ -71,7 +71,7 @@ Puoi copiare una pagina e tutte le relative sottopagine in una nuova posizione:
 
 1. La finestra di dialogo Incolla presenta un riepilogo della transazione della funzione incolla e la possibilità di:
    * **Nuovo nome sito:** modificare il nome della pagina incollata
-   * **Incolla senza elementi figlio:** ometti le pagine figlie della pagina selezionata quando si incollano (per impostazione predefinita le pagine figlie vengono incollate)
+   * **Incolla senza elementi secondari:** ometti le pagine secondarie della pagina selezionata quando si incollano (per impostazione predefinita le pagine secondarie vengono incollate)
 
    ![Finestra di dialogo Incolla](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -106,7 +106,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    ![Pulsante Sposta](/help/sites-cloud/authoring/assets/move.png)
 
-1. Dal passaggio **Rinomina** della procedura guidata puoi effettuare le seguenti operazioni:
+1. Il passaggio **Rinomina** della procedura guidata fornisce **informazioni** sulla pagina, inclusa la data di creazione, il percorso e il numero di riferimenti diretti. Da qui puoi effettuare le seguenti operazioni:
 
    * Specifica il nome da assegnare alla pagina spostata, quindi seleziona **Avanti** per continuare.
    * Seleziona **Annulla** per interrompere la procedura.
@@ -144,7 +144,8 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    >[!NOTE]
    >
-   >Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Questo passaggio elenca riferimenti diretti e indiretti. Questo valore può essere diverso dalla quantità riportata nel passaggio **Rinomina** della procedura guidata e dai riferimenti riportati dalla barra dei riferimenti, che in entrambi i casi segnalano solo riferimenti diretti per motivi di prestazioni.
 
    ![Ripubblica pagina in spostamento](/help/sites-cloud/authoring/assets/move-page-republish.png)
 

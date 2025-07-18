@@ -1,11 +1,11 @@
 ---
 title: Pannello laterale della console Sites
-description: Scopri come utilizzare il pannello laterale nella console dei siti AEM per comprendere e navigare meglio nel contenuto.
+description: Scopri come utilizzare il pannello laterale nella console AEM Sites per comprendere e navigare meglio nel contenuto.
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -14,7 +14,7 @@ ht-degree: 23%
 
 # Pannello laterale della console Sites {#side-panel}
 
-Scopri come utilizzare il pannello laterale nella console **Sites** dell&#39;AEM per comprendere e navigare meglio nel contenuto.
+Scopri come utilizzare il pannello laterale nella console **Sites** di AEM per comprendere e navigare meglio nel contenuto.
 
 ## Orientamento {#orientation}
 
@@ -99,8 +99,8 @@ La visualizzazione **Riferimenti** mostra un elenco di tipi di riferimenti a o d
 
 Seleziona il tipo di riferimento adeguato per ulteriori informazioni. In determinate situazioni sono disponibili azioni ulteriori quando viene selezionato un riferimento specifico, inclusi:
 
-* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
-   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente come dal componente Elenco.
+* **Collegamenti in ingresso**, fornisce un elenco di pagine che fanno direttamente riferimento alla pagina selezionata, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
+   * In questo modo vengono visualizzati solo i collegamenti statici, non quelli generati in modo dinamico, ad esempio dal componente Elenco.
 * [Lanci](/help/sites-cloud/authoring/launches/overview.md): fornisce accesso ai lanci correlati.
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md) visualizza i percorsi di tutte le Live Copy basate sulla risorsa selezionata.
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md) fornisce dettagli e varie azioni
@@ -112,7 +112,7 @@ La visualizzazione **Sito** del pannello laterale mostra i dettagli dei siti [cr
 
 ![Pannello del sito](assets/console-side-panel-site-paenl.png)
 
-Per ulteriori informazioni su come utilizzare il pannello per gestire il [tema del sito](/help/sites-cloud/administering/site-creation/site-themes.md), consulta il documento [Utilizzo del pannello del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md).
+Per ulteriori informazioni su come utilizzare il pannello per gestire il [tema del sito](/help/sites-cloud/administering/site-creation/site-rail.md), consulta il documento [Utilizzo del pannello del sito per gestire il tema del sito](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 Se non hai ancora configurato la pipeline front-end per abilitare la creazione di siti basati su temi, il pannello laterale offrirà tale opzione.
 
