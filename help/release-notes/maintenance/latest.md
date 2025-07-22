@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2e90e40a0fe439653987a23792a4c1ec612aafd6
+source-git-commit: 13124956fcce105ad42767f67b700284c8250012
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 63%
+source-wordcount: '620'
+ht-degree: 34%
 
 ---
 
@@ -16,38 +16,68 @@ ht-degree: 63%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 21570 {#21570}
+## Versione 21644 {#21644}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21570, rilasciata pubblicamente il mercoledì 15 luglio 2025. La versione di manutenzione precedente era la 21484.
-
->[!NOTE]
->
->[La versione 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) è stata resa privata e sostituita da 21570 sulla versione.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21644, rilasciata pubblicamente il mercoledì 22 luglio 2025. La versione di manutenzione precedente era la 21570.
 
 Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-21570}
+### Miglioramenti {#enhancements-21644}
 
-* Migrazione ad Apache Httpd 2.4.63
+* ASSETS-39377: migliora la gestione dei 429 da storage remoto in Assets Bulk Importer.
+* ASSETS-46026: profondità massima configurabile per l’esportazione dei metadati.
+* ASSETS-49172: le risorse modello Dynamic Media devono ereditare i metadati dalla cartella.
+* ASSETS-50209: supporto per la sottostringa nei modelli DM.
+* ASSETS-52326: pagina di configurazione di AEM Assets per impostare le preferenze di visualizzazione del titolo per Assets.
+* ASSETS-52805: è stato aggiunto il supporto per output/download CSV per il processo di operazione in blocco.
+* ASSETS-52873: aggiungi una nuova configurazione nelle proprietà della cartella per disabilitare l’elaborazione IA per tale cartella.
+* ASSETS-53535: prestazioni migliorate per il caricamento video di YouTube.
+* ASSETS-53612: Controllo per la ricerca ibrida in Assets Omnisearch.
+* GRANITE-60183: aggiorna la dipendenza commons-fileupload alla versione 1.6.0.
+* GRANITE-60287: Aggiornare QS a Jackrabbit 2.22.1.
+* SITES-30452: API di contenuto con ASO - Suggerimenti per titolo e descrizione.
+* SITES-31677: l’area di lavoro personalizzata supporta l’esportazione dei frammenti di contenuto di AEM in Target.
+* SKYOPS-112741: rimuovere il bundle `com.adobe.granite.product.support` da AEM-CS SDK.
 
-### Problemi risolti {#fixed-issues-21570}
+### Problemi risolti {#fixed-issues-21644}
 
-* SKYOPS-112722 - È stato risolto un problema che impediva la risoluzione degli URL personalizzati
+* ASSETS-12882: problemi di allineamento dell’interfaccia utente dopo l’apertura dei predefiniti visualizzatore.
+* ASSETS-48958: problema con la modifica dello stato di pubblicazione di Sites nell’AEM locale di Asset Sync.
+* ASSETS-50856: impossibile reimpostare `dam:processingAttempts` su completeUpload.
+* ASSETS-51604: CSV dei rapporti di condivisione dei collegamenti con dati &quot;condivisi con&quot; mancanti.
+* ASSETS-51783: fallback alla configurazione DM in `/conf/global` se non viene trovata alcuna configurazione utilizzando la query di ricerca.
+* ASSETS-51857: elementi della tabella delle risorse non riordinabili.
+* ASSETS-52169: il rendering della nuova macchina BAT veniva erroneamente incluso nei download delle risorse.
+* ASSETS-52229: notifiche casella in entrata mancanti per i rapporti sulle risorse in AEM as a Cloud Service.
+* ASSETS-52399: il bug della versione in com.day.cq.dam.api potrebbe interrompere il codice cliente.
+* ASSETS-52780: la risorsa può essere contrassegnata per l’anteprima anche senza l’attivazione.
+* ASSETS-52866: i video DM migrati rimangono nello stato di elaborazione nella cartella con DM Sync disabilitato.
+* ASSETS-53237: elenco a discesa Profilo colore vuoto nell’editor predefiniti immagine.
+* ASSETS-53240: Rapporto risorse - L’utilizzo del disco non riesce quando si ottengono le dimensioni del rendering delle risorse da Dynamic Media.
+* ASSETS-53446: errori intermittenti nell’aggiornamento del token di autenticazione di YouTube dovuti a NPE.
+* ASSETS-53827: la convalida ACL blocca il salvataggio di set di file multimediali diversi.
+* ASSETS-5403: le librerie client Dynamicmedia utilizzate nell&#39;istanza Publish devono avere `allowProxy=true`.
+* ASSETS-54261: l’importazione dei metadati causa la perdita di connessioni e viene bloccata se il download del file non riesce.
+* CQ-4359863: la ricerca di parole chiave nei tag è stata interrotta per ordine errato nell’Editor frammenti di contenuto/editor risorse.
+* CQ-4359958: rendere il supporto openapi compatibile con AEM 6.5.22.0 e versioni successive.
+* CQ-4360256: include il percorso del contesto del servlet nel percorso della richiesta per le richieste HTTP gestite tramite il contesto del servlet `/adobe`.
+* CQ-4360317: metodo Add per impostare l’intestazione della data di scadenza durante la creazione delle risposte.
+* GRANITE-60311: AEM SDK Quickstart - NPE su &quot;OSGi Installer Configuration Printer&quot; (Stampante di configurazione di OSGi Installer).
+* GS-15285: gli utenti vengono visualizzati come disattivati.
 
-### Problemi noti {#known-issues-21570}
+### Problemi noti {#known-issues-21644}
 
-* Il SDK di AEM correlato ha un diverso ID versione (21575) ed è disponibile tramite il portale di distribuzione software.
-* Apache HTTP Server versione 2.4.63 ha introdotto una modifica fondamentale nella gestione dei punti interrogativi (`mod_rewrite`) negli URL da parte di `?`. Questa modifica è stata implementata per impedire l&#39;utilizzo del flag `UnsafeAllow3F`, che è stato considerato un rischio per la sicurezza. Ciò influisce su tutte le direttive `RewriteRule` che si basano sul rilevamento del punto interrogativo nei modelli URL.
+Nessuna.
 
-### Funzioni e API obsolete {#deprecated-21570}
+### Funzioni e API obsolete {#deprecated-21644}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-21570}
+### Correzioni di sicurezza {#security-21644}
 
-Nessuna
+AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 4 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-21570}
+### Tecnologie incorporate {#embedded-tech-21644}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
