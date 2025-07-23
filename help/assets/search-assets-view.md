@@ -4,10 +4,10 @@ description: Scopri come cercare e individuare le risorse nella vista AEM Assets
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 [!DNL Assets view] fornisce una funzione di ricerca efficace e attiva per impostazione predefinita. Si tratta di una ricerca full-text completa. La potente funzionalità di ricerca consente di trovare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti. [!DNL Assets view] consente di effettuare ricerche full-text, anche nei metadati, quali tag avanzati, titolo, data di creazione e copyright.
 
-Per cercare le risorse, effettua le operazioni seguenti:
+Per cercare le risorse:
 
 * Fai clic nella casella di ricerca nella parte superiore della pagina. Per impostazione predefinita, la ricerca viene eseguita all’interno della cartella attuale. Effettua una delle operazioni seguenti:
 
@@ -120,6 +120,40 @@ Per rimuovere i filtri personalizzati:
 1. Nella finestra di dialogo **[!UICONTROL Gestione filtri personalizzati]** deseleziona i filtri da rimuovere dall’elenco di filtri esistente.
 
 1. Fai clic su **[!UICONTROL Conferma]** per rimuovere i filtri dall’interfaccia utente.
+
+## Ricerca semantica {#semantic-search}
+
+La ricerca semantica è una funzionalità di ricerca avanzata che comprende il significato e l’intento alla base della query di un utente, anziché fare affidamento su corrispondenze esatte tra parole chiave. Utilizza l’intelligenza artificiale (IA), l’elaborazione del linguaggio naturale (NLP) e l’apprendimento automatico per fornire risultati più precisi e contestuali.
+
+A differenza della ricerca tradizionale basata su parole chiave, che cerca termini esatti, la ricerca semantica interpreta le relazioni tra parole, concetti e intento dell&#39;utente. In questo modo gli utenti possono trovare ciò che stanno cercando, anche se la query è formulata in modo diverso, contiene errori di battitura o è in un’altra lingua.
+
+Alcuni vantaggi, tra cui:
+
+* **Supporto multilingue**: eseguire ricerche in più lingue senza richiedere traduzioni esatte. Gli utenti possono trovare contenuti rilevanti indipendentemente dal linguaggio di query.
+
+* **Gestisce gli errori di ortografia**: corregge o interpreta automaticamente gli errori di battitura e di ortografia, garantendo risultati accurati anche con input imperfetto.
+
+* **Comprende i sinonimi**: fornisce risultati per termini e frasi correlati, pertanto gli utenti non devono indovinare la parola chiave corretta.
+
+* **Ricerca in base al contesto**: riconosce l&#39;intento di una query, non solo le parole.
+
+* **Ricerca basata su prompt basati su testo**: Experience Manager Assets applica i filtri al contenuto e visualizza automaticamente i risultati appropriati in base a semplici prompt basati su testo.
+
+>[!IMPORTANT]
+>
+> Specificare tre o più parole per la ricerca semantica per visualizzare i risultati appropriati.
+
+### Esempi di ricerca semantica {#examples-semantic-search}
+
+**Prompt di esempio**: *Donna che beve caffè*
+
+La ricerca tradizionale basata su parole chiave cerca corrispondenze esatte tra i metadati delle risorse, ad esempio Donna, Caffè e così via, e restituisce le risorse che includono queste parole chiave.
+
+Tuttavia, la ricerca semantica cerca parole simili come `Girl`, `Lady` nel caso di `Woman` e le opzioni per il caffè, come `Cappuccino` e `Latte` nel caso di `Coffee`.
+
+Analogamente, è possibile specificare questa richiesta in spagnolo o inserire erroneamente `Woman` come `Wman` e ottenere comunque gli stessi risultati.
+
+![Ricerca semantica nella visualizzazione Assets](assets/semantic-search.png)
 
 ## Cercare risorse utilizzando [!DNL Adobe Firefly] {#search-firefly}
 
@@ -343,6 +377,6 @@ Per fornire un feedback sulla funzione di ricerca contestuale, fai clic sull’i
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 
