@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Pubblicare un modulo adattivo in Edge Delivery Services
 
-<span class="preview"> Questa è una funzionalità pre-release disponibile tramite il nostro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 
 Quando un modulo è finalizzato e pronto per l’uso, puoi pubblicarlo per renderlo accessibile ai tuoi clienti per la raccolta e l’invio di dati. Una volta pubblicato, il modulo diventa disponibile su Edge Delivery e gli utenti possono interagire direttamente con esso. Questo processo consente ai clienti di compilare e inviare il modulo in tempo reale, rende più efficiente l’acquisizione dei dati e ne semplifica l’elaborazione.
@@ -57,7 +57,6 @@ Modifica il valore `submitBaseUrl` nel file **constant.js** all’interno del bl
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **Per lo sviluppo locale:**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 Per lo sviluppo locale, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) per abilitare CORS dall’**URL host dell’interfaccia utente di sviluppo**.
 
 ### Configurare il filtro Referrer

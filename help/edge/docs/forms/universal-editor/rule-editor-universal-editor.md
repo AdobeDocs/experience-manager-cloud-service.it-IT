@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Introduzione all’editor di regole nell’authoring WYSIWYG
 
-<span class="preview"> Questa è una funzionalità pre-release disponibile tramite il nostro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 
 È possibile aggiungere il comportamento di un modulo dinamico utilizzando l’editor di regole, che consente di creare regole. Queste regole abilitano la visibilità dei campi condizionali, automatizzano i calcoli in base a quanto immesso dall’utente e migliorano l’esperienza utente complessiva. Semplificando il processo di compilazione dei moduli, l’editor di regole favorisce sia l’accuratezza che l’efficienza.
@@ -188,7 +188,7 @@ Esaminiamo ora come [scrivere regole nell’editor di regole](#write-rules).
 
 Per informazioni su come scrivere regole nell’editor di regole visivo, prendiamo in considerazione un semplice esempio di modulo di calcolo delle imposte:
 
-![Schermata dell&#39;interfaccia dell&#39;editor di regole che mostra la creazione di una regola condizionale con logica When-Then per la visibilità dei campi modulo](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Schermata dell’interfaccia dell’editor di regole che mostra la creazione di una regola condizionale con logica When-Then per la visibilità dei campi modulo](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 Nel modulo descritto in precedenza, l’utente immette lo stipendio lordo. In base a questo input, viene visualizzato il campo condizionale e viene calcolata l’imposta dovuta.
 
@@ -223,7 +223,7 @@ Per creare un modulo nell’editor universale:
    * Invia (pulsante Invia)
 1. Nascondi il campo modulo `Additional Deduction` aprendo `Properties`.
 
-   ![Schermata di un modulo di calcolo delle imposte con campi di input per lo stipendio lordo, lo stato civile e i figli dipendenti, che illustra la struttura del modulo prima dell&#39;applicazione delle regole](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Schermata di un modulo di calcolo delle imposte con campi di input per lo stipendio lordo, lo stato civile e i figli a carico, che illustra la struttura del modulo prima che le regole siano applicate](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### &#x200B;2. Aggiungere una regola condizionale per un campo modulo
 
@@ -278,7 +278,6 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Meno]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Detrazione aggiuntiva]** nell’altro campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
-
      ![Editor di regole, esempio 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
@@ -296,7 +295,6 @@ Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza
    * Seleziona **[!UICONTROL Moltiplicato per]** dal campo **[!UICONTROL Seleziona operatore]**.
 
    * Seleziona **Numero** dal campo **[!UICONTROL Seleziona opzione]** e immetti il valore `10` nel campo **[!UICONTROL Immetti un numero]**.
-
      ![Editor di regole, esempio 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
    ![Editor di regole, esempio 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Aggiunta di una funzione personalizzata](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Utilizzare una funzione personalizzata nell’editor di regole

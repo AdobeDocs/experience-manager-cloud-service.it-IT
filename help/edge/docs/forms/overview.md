@@ -1,13 +1,13 @@
 ---
 title: Panoramica di Edge Delivery Services per AEM Forms
-description: Crea e distribuisci moduli ad alte prestazioni su Adobe Experience Manager Edge Delivery Services, con particolare attenzione all’approccio di authoring di Universal Editor.
+description: Crea e distribuisci moduli con prestazioni elevate su Adobe Experience Manager Edge Delivery Services, con particolare attenzione all’approccio di authoring dell’editor universale.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -28,33 +28,33 @@ Questi servizi consentono di:
 ## Scelta di un metodo di authoring
 
 
-Adobe Experience Manager (AEM) Edge Delivery Services (EDS) consente di offrire esperienze web estremamente veloci e altamente scalabili dall’edge di. Questa guida spiega **come creare e pubblicare moduli per tali esperienze**, con una chiara gerarchia di consigli:
+Adobe Experience Manager (AEM) Edge Delivery Services (EDS) consente di offrire esperienze web estremamente veloci e altamente scalabili dall’edge. Questa guida spiega **come creare e pubblicare moduli per tali esperienze**, con una chiara gerarchia di consigli:
 
-* **Editor universale (UE): scelta migliore per la maggior parte dei team**
+* **Editor universale (UE): la migliore scelta per la maggior parte dei team**
 * **Authoring basato su documenti (documenti/fogli): ideale per moduli semplici e veloci**
-* **Authoring dei documenti (DA) - Utilizzare per incorporare i moduli nelle pagine create da DA**
+* **Authoring di documenti (DA): da utilizzare per incorporare i moduli nelle pagine create da DA**
 
-Entro la fine sarà possibile scegliere il metodo di authoring corretto, comprendere le opzioni di invio e seguire i passaggi successivi verso i moduli pronti per la produzione.
+Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprendere le opzioni di invio e seguire i passaggi successivi verso i moduli pronti per la produzione.
 
 
-| Team e requisiti | Metodo consigliato | Perché |
+| Team &amp; requisiti | Metodo consigliato | Perché |
 |--------------------|--------------------|-----|
-| Gli addetti al marketing e i designer hanno bisogno di controllo visivo, logica condizionale o integrazioni AEM | **Editor universale** | Trascinamento della selezione, regole avanzate, invii a FSS o AEM Publish |
-| Autori di contenuti che già lavorano in Word/Google Docs/Sheets; acquisizione dati semplice su foglio di calcolo/e-mail | **Authoring basato su documenti** | Strumenti familiari, percorso più veloce per i moduli di base |
-| Pagine del sito Web generate in **Document Authoring (DA)** | **Incorpora** un modulo UE o basato su documenti nella pagina DA | DA non genera i moduli |
+| Gli addetti al marketing e i designer hanno bisogno di controllo visivo, logica condizionale o integrazioni AEM | **Editor universale** | Trascinamento, regole avanzate, invii a FSS o AEM Publish |
+| Autori di contenuti che già lavorano in Word/Google Docs/Sheets; acquisizione semplice dei dati su foglio di calcolo/e-mail | **Authoring basato su documenti** | Strumenti noti, percorso più veloce per moduli di base |
+| Pagine del sito web generate in **Document Authoring (DA)** | **Incorpora** un modulo UE o basato su documenti nella pagina DA | DA non genera i moduli autonomamente |
 
 
-## Metodi di authoring dettagliati
+## Metodi di authoring in dettaglio
 
 ### Editor universale
 
-<span class="preview"> Questa è una funzionalità pre-release disponibile tramite il nostro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
+<span class="preview"> Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
-[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) è uno strumento visivo di creazione con trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
+[Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) è uno strumento di authoring visivo e di trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
 
 * Editing WYSIWYG in tempo reale e anteprime dei dispositivi.
-* Integrazione diretta con risorse AEM, flussi di lavoro e Form Data Model (FDM).
-* Comodo passaggio per gli sviluppatori di componenti personalizzati in Vanilla JS/CSS.
+* Integrazione diretta con AEM Assets, flussi di lavoro e modello dati modulo (FDM).
+* Passaggio semplice per sviluppatori di componenti personalizzati in Vanilla JS/CSS.
 * Editor di regole avanzate per la creazione di logica complessa.
 * Estensibilità lato server per funzionalità personalizzate.
 * Esperienza di modifica WYSIWYG per creare e visualizzare facilmente i moduli.
@@ -64,14 +64,14 @@ Entro la fine sarà possibile scegliere il metodo di authoring corretto, compren
 * Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
 * Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
 * Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
-* Invia utilizzando le azioni di invio Forms Submission Service (FSS) o AEM Publish
+* Invia utilizzando le azioni di invio del servizio di invio moduli (FSS) o AEM Publish
 
-**Consiglio**: avvia ogni nuovo progetto modulo con Universal Editor a meno che il team non sia interamente incentrato sul documento e il modulo non sia molto semplice.
+**Consiglio**: avvia ogni nuovo progetto di modulo con l’editor universale a meno che il team non sia interamente incentrato sul documento e il modulo non sia molto semplice.
 
 
-### Authoring basato su documenti (con Microsoft Docs o Google Sheets)
+### Authoring basato su documenti (utilizzando Microsoft Docs o Google Sheets)
 
-[Authoring basato su documenti](/help/edge/docs/forms/tutorial.md) è ideale per la creazione di moduli semplici e a bassa complessità utilizzando strumenti familiari come Microsoft Word, Google Docs o Google Sheets. Questo metodo è ideale per i team di contenuti che richiedono un modo rapido e semplice di creare moduli.
+[Authoring basato su documenti](/help/edge/docs/forms/tutorial.md) è ideale per la creazione di moduli semplici e a bassa complessità utilizzando strumenti noti come Microsoft Word, Google Docs o Google Sheets. Questo metodo è ideale per i team di contenuti che richiedono un modo rapido e diretto per creare moduli.
 
 * Componenti accessibili per un’esperienza di facile utilizzo.
 * Struttura HTML standardizzata per un rendering coerente.
@@ -83,13 +83,13 @@ Entro la fine sarà possibile scegliere il metodo di authoring corretto, compren
 * Monitorare le prestazioni dei moduli tramite la telemetria operativa
 
 
-### Incorporazione di Forms nell’authoring dei documenti (DA)
+### Incorporamento di moduli in Document Authoring (DA)
 
-L’authoring dei documenti (DA) è progettato per creare contenuti di pagina strutturati e non supporta la creazione di moduli nativi. Per aggiungere un modulo a una pagina creata da DA, è possibile creare il modulo utilizzando **Universal Editor** (scelta consigliata) o l&#39;authoring basato su documenti e incorporarlo nella pagina di authoring dei documenti.
+Document Authoring (DA) è progettato per la creazione di contenuti di pagina strutturati e non supporta la creazione di moduli nativi. Per aggiungere un modulo a una pagina creata da DA, è possibile creare il modulo utilizzando l’**editor universale** (consigliato) o l&#39;authoring basato su documenti e incorporarlo nella pagina di authoring dei documenti.
 
-## Pubblicazione di Edge Delivery Services Forms {#edge-overview}
+## Pubblicazione di moduli di Edge Delivery Services {#edge-overview}
 
-Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o Fogli Google (modifica basata su documento) e pubblicarlo in Edge Delivery Services. Mostra inoltre il metodo di pubblicazione AEM utilizzando l’authoring WYSIWYG (Universal Editor).
+Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o Fogli Google (modifica basata su documento) e pubblicarlo in Edge Delivery Services. Mostra anche il metodo di pubblicazione di AEM utilizzando l’authoring WYSIWYG (editor universale).
 
 ![Pubblicare in Edge Delivery Services e AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -112,13 +112,13 @@ Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o
 
 ## Passaggi successivi
 
-* [Funzionalità di Universal Editor per Edge Delivery Services per Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Creare il primo modulo con Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Creare il primo modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
-* [Incorpora Forms nell&#39;authoring dei documenti (DA)](https://www.aem.live/developer/da-tutorial)
+* [Funzioni e funzionalità dell’editor universale per i moduli di Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Crea il primo modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Moduli incorporati in Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
 
 
-Ora puoi creare il tuo primo modulo ad alte prestazioni con AEM Edge Delivery Services.
+Ora puoi creare il tuo primo modulo a prestazioni elevate con AEM Edge Delivery Services.
 
 
 <!-- 

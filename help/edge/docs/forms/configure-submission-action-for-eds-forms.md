@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2166'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,6 @@ Il [servizio di invio moduli](/help/forms/forms-submission-service.md) è un end
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Invio moduli](/help/forms/assets/eds-fss.png)
 
 Questo diagramma di flusso mostra come il servizio di invio moduli acquisisce i dati inviati e li inoltra a un foglio di calcolo o a un’e-mail configurati.
@@ -74,7 +73,7 @@ Per esigenze più complesse, [i moduli (in particolare quelli creati con l’edi
 * [Inviare ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Inviare a iMicrosoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Inviare a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Invia a Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Inviare ad Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -145,7 +144,6 @@ La pagina in cui desideri visualizzare il modulo (che qui verrà denominata, “
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
 Questo diagramma mostra la pagina host che recupera l’HTML del modulo dalla relativa sorgente e lo visualizza. L’invio utilizza l’endpoint configurato del modulo originale.
 

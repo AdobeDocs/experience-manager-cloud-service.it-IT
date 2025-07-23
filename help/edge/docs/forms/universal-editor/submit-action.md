@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -15,39 +15,39 @@ ht-degree: 78%
 
 ## Panoramica
 
-L’invio di un modulo è il passaggio finale fondamentale nel percorso di utenti: i dati raccolti vengono elaborati e vengono intraprese azioni. Questo documento fornisce una guida completa alla configurazione e alla gestione delle azioni di invio per Adaptive Forms in Universal Editor.
+L’invio di un modulo è il passaggio finale critico nel percorso dell’utente, dove i dati raccolti vengono elaborati e vengono intraprese azioni. Questo documento fornisce una guida completa alla configurazione e alla gestione delle azioni di invio per moduli adattivi nell’editor universale.
 
-### Argomenti trattati
+### Che cosa imparerai
 
-Alla fine di questo documento verrà illustrato come:
+Alla fine di questo documento comprenderai come:
 
 * Configurare diversi tipi di azioni di invio per i moduli
 * Configurare gli invii di endpoint REST per l’integrazione con i sistemi esterni
-* Configurare gli invii e-mail per le risposte ai moduli
+* Configurare gli invii di e-mail per le risposte ai moduli
 * Implementare azioni di invio personalizzate per esigenze aziendali specifiche
-* Gestire gli scenari di errore e convalida dei moduli durante l’invio
+* Gestire gli scenari di errore e convalida del modulo durante l’invio
 
-### Pubblico di destinazione
+### Pubblico target
 
 Questa guida è progettata per:
 
 * **Sviluppatori di moduli** che implementano la logica di invio
-* **Integratori di sistema** connessione dei moduli ai sistemi back-end
-* **Business analyst** definizione dei flussi di lavoro dei moduli
-* **Architetti tecnici** progettazione dei processi di invio dei moduli
+* **Integratori di sistema** che collegano i moduli ai sistemi di back-end
+* **Analisti ziendali** che definiscono i flussi di lavoro del modulo
+* **Architetti tecnici** che progettano i processi di invio del modulo
 
 ### Azioni di invio disponibili
 
-Universal Editor fornisce due tipi di azioni di invio principali:
+L’editor universale fornisce due tipi di azioni di invio principali:
 
-1. **Invia all&#39;endpoint REST** * Invia dati modulo agli endpoint API
-2. **Invia e-mail** * Invia risposte modulo tramite e-mail
+1. **Invio all’endpoint REST** * Invia dati del modulo agli endpoint API
+2. **Invio di e-mail** * Invia risposte del modulo tramite e-mail
 
 ### Prerequisiti
 
-Prima di configurare le azioni di invio, assicurati di disporre di:
+Prima di configurare le azioni di invio, verifica di disporre di:
 
-* Accesso a Universal Editor
+* Accesso all’editor universale
 * Autorizzazioni appropriate per la configurazione del modulo
 * Informazioni sull’endpoint di invio di destinazione o sulla configurazione e-mail
 
@@ -80,7 +80,7 @@ Per configurare un endpoint REST:
 1. Specifica l’URL dell’endpoint REST.
 1. Puoi anche selezionare **Abilita richiesta POST** e fornire un URL per pubblicare la richiesta.
 
-![Schermata del pannello delle proprietà dell&#39;editor universale che mostra i campi di configurazione dell&#39;endpoint REST, inclusi l&#39;input dell&#39;URL e l&#39;opzione Abilita richiesta POST per l&#39;invio del modulo](/help/forms/assets/enable-post-request-ue.png)
+![Schermata del pannello delle proprietà dell’editor universale che mostra i campi di configurazione dell’endpoint REST, inclusi l’input dell’URL e il pulsante di attivazione/disattivazione della richiesta POST per l’invio del modulo](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >

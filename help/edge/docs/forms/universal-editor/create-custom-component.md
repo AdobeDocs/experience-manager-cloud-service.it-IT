@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1804'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Creare un componente personalizzato nell’ambiente di authoring WYSIWYG
 
-<span class="preview"> Questa è una funzionalità pre-release disponibile tramite il nostro <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 
 I moduli di Edge Delivery Services offrono funzionalità di personalizzazione e permettono agli sviluppatori front-end di creare componenti per moduli su misura. Questi componenti personalizzati si integrano direttamente nell’esperienza di authoring WYSIWYG, consentendo agli autori di moduli di aggiungerli, configurarli e gestirli facilmente nell’editor di moduli. I componenti personalizzati permettono agli autori di ottimizzare le funzionalità dei moduli. Inoltre, assicurano un processo di authoring fluido e intuitivo.
@@ -39,7 +39,7 @@ Quando si aggiunge nell’editor universale un componente personalizzato, questo
 
 Prendiamo ad esempio la creazione di un nuovo componente personalizzato denominato **Intervallo**. Il componente Intervallo viene visualizzato come una linea retta e mostra valori quali minimo, massimo o il valore selezionato.
 
-![Rappresentazione visiva di un componente intervallo che mostra un dispositivo di scorrimento con valori minimi e massimi e un indicatore di valori selezionato](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Rappresentazione visiva di un componente intervallo che mostra un cursore con valori minimi e massimi e un indicatore di valore selezionato](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 Alla fine di questo articolo avrai appreso a creare componenti personalizzati da zero.
 
@@ -324,11 +324,11 @@ const OOTBComponentDecorators = ['file-input',
 
 Dopo aver completato i passaggi precedenti, il componente personalizzato viene visualizzato nell’elenco dei componenti del modulo all’interno dell’editor universale. Puoi quindi trascinarlo nella sezione del modulo.
 
-![Schermata della tavolozza dei componenti di Universal Editor che mostra il componente intervallo personalizzato disponibile per il trascinamento nei moduli](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Schermata della palette dei componenti dell’editor universale che mostra il componente intervallo personalizzato disponibile per il trascinamento nei moduli](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
-La schermata seguente mostra le proprietà del componente `range` aggiunto al modello di componente, che specifica le proprietà che l’autore del modulo può configurare.:
+La schermata seguente mostra le proprietà del componente `range` aggiunto al modello di componente, che specifica le proprietà che l’autore del modulo può configurare:
 
-![Schermata del pannello delle proprietà di Universal Editor che mostra le impostazioni configurabili per il componente intervallo, incluse le proprietà di base, le regole di convalida e le opzioni di stile](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Schermata del pannello delle proprietà dell’editor universale che mostra le impostazioni configurabili per il componente intervallo, incluse le proprietà di base, le regole di convalida e le opzioni di stile](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Ora puoi definire il comportamento runtime del componente personalizzato aggiungendo stile e funzionalità.
 
@@ -392,7 +392,6 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    float: right;
    }
    ```
-
    Il codice consente di definire lo stile e l’aspetto visivo del componente personalizzato.
 
 1. Per aggiungere la funzionalità, passa al file `/blocks/form/components/range/range.js` e aggiungi la seguente riga di codice:
@@ -457,7 +456,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    L’integrazione di stile e funzionalità personalizzati migliora l’aspetto e il comportamento del componente Intervallo. Il design aggiornato riflette gli stili applicati, mentre la funzionalità aggiunta garantisce un’esperienza utente più dinamica e interattiva.
 La schermata seguente illustra il componente intervallo aggiornato.
 
-![Componente intervallo finale in azione che mostra un dispositivo di scorrimento formattato con visualizzazione a bolla di valori e funzionalità interattive nell&#39;Universal Editor](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![Componente intervallo finale in azione che mostra un cursore formattato con visualizzazione a bolla del valore e funzionalità interattiva nell’editor universale](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Domande frequenti
 

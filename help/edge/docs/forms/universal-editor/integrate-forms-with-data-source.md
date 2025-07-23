@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ L’integrazione dei moduli con un modello di dati modulo (FDM) nell’editor un
 
 * Se nell’interfaccia dell’editor universale non viene visualizzata l’icona **Origini dati** o la proprietà **Riferimento bind** nel pannello delle proprietà a destra, abilita l’estensione **Origine dati** in **Extension Manager**.
 
-  ![Schermata dell&#39;interfaccia Extension Manager di Universal Editor che mostra le estensioni disponibili, inclusa l&#39;estensione Origini dati, che possono essere abilitate per l&#39;integrazione modulo](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Schermata dell’interfaccia dell’editor universale di Extension Manager che mostra le estensioni disponibili, inclusa l’estensione Origini dati, che possono essere abilitate per l’integrazione del modulo](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   Per informazioni su come abilitare e disabilitare le estensioni nell’editor universale, consulta l’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
@@ -77,9 +77,9 @@ Quando crei un modulo basato su schema, questo viene configurato automaticamente
 
    ![Crea modulo basato su schema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
-   Non appena fai clic su **[!UICONTROL Crea]**, il modulo viene aperto nell’editor universale per la creazione.
+   Non appena fai clic su **[!UICONTROL Crea]**, il modulo viene aperto nell’editor universale per l’authoring.
 
-   ![Schermata dell&#39;editor universale che mostra un modulo basato su schema con campi modulo precompilati e il browser Contenuto che visualizza gli elementi dell&#39;origine dati disponibili](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![Schermata dell’editor universale che mostra un modulo basato su schema con campi modulo precompilati e il browser dei contenuti con gli elementi dell’origine dati disponibili](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    Il modulo viene creato utilizzando gli elementi dati dall’origine dati associata, con i campi modulo che presentano l’associazione dati preconfigurata.
 
@@ -131,7 +131,7 @@ Quando crei un modulo non basato su schema, non viene configurata alcuna origine
 
    Puoi anche trascinare questi elementi per creare il modulo adattivo. Quando fai clic su **[!UICONTROL Aggiungi]**, gli elementi selezionati dalla scheda **[!UICONTROL Origine dati]** vengono aggiunti al modulo e viene visualizzato un segno di spunta prima degli elementi aggiunti.
 
-   ![Schermata che mostra l&#39;Editor universale con un modulo non di schema generato trascinando elementi dati dalla scheda Source dati nella struttura del modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![Schermata che mostra l’editor universale con un modulo non basato su schema generato trascinando elementi di dati dalla scheda Origine dati nella struttura del modulo](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Puoi aggiungere il binding dei dati a un campo modulo selezionandolo dalla proprietà **Riferimento bind**. Aggiungi, ad esempio, un riferimento di binding dei dati alla casella di testo **ID** già presente nel modulo.
 Per selezionare il binding dei dati per il campo modulo dalla struttura dell’origine dati, effettua i seguenti passaggi:

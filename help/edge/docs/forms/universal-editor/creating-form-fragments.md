@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
 
    Nella schermata seguente viene visualizzato il `contact fragment` creato nell’editor universale.
 
-   ![Schermata di un frammento del modulo dei dettagli di contatto completato nell&#39;editor universale, con campi per nome, telefono, e-mail e indirizzo che possono essere riutilizzati in più moduli](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Schermata di un frammento di modulo dei dettagli di contatto completato nell’editor universale, con campi per nome, telefono, e-mail e indirizzo che possono essere riutilizzati in più moduli](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Dopo aver creato il frammento, puoi [aggiungere il frammento creato nei moduli di Edge Delivery Services](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Ora verrà creato un modulo `Employee Details` semplice che include informazioni
 
    Il frammento di modulo viene aggiunto facendo riferimento al modulo e rimane sincronizzato con il frammento di modulo indipendente.
 
-   ![Schermata che mostra il frammento dei dettagli di contatto integrato correttamente in un modulo per i dipendenti all&#39;interno di Universal Editor, in cui viene illustrato come i frammenti mantengono la propria struttura quando vengono riutilizzati](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Schermata che mostra il frammento dei dettagli di contatto integrato correttamente in un modulo dipendente all’interno dell’editor universale, in cui viene illustrato come i frammenti mantengono la propria struttura quando vengono riutilizzati](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    È possibile visualizzare in anteprima il modulo per visualizzarne l’aspetto nella modalità **Anteprima**.
 
