@@ -940,7 +940,7 @@ ht-degree: 97%
    + Comunicazione interattiva {#interactive-communocation}
       + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
       + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
-      + [Generare output AFP utilizzando l’API AEM Forms](/help/forms/document-generation-afp-api.md)
+      + [Generare output AFP utilizzando le API di AEM Forms](/help/forms/document-generation-afp-api.md)
       + [Domande frequenti](/help/forms/interactive-communications-faq.md)
    + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
       + [Introduzione al flusso di lavoro incentrato su moduli](/help/forms/aem-forms-workflow.md)
@@ -1501,7 +1501,7 @@ ht-degree: 97%
    + [Aree geografiche di pubblicazione aggiuntiva](/help/operations/additional-publish-regions.md)
    + [Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Attività di manutenzione](/help/operations/maintenance.md)
-   + [Ripristina contenuto](/help/operations/restore.md)
+   + [Ripristinare il contenuto](/help/operations/restore.md)
    + [Ripristina codice precedente distribuito (Alpha)](/help/operations/restore-previous-code-deployed.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
    + [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md)
