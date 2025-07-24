@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Distribuz
 >[!NOTE]
 >
 >Se ti interessa pubblicare contenuti in blocco, crea un flusso di lavoro utilizzando il [Passaggio del flusso di lavoro di attivazione struttura](#tree-activation), che può gestire in modo efficiente payload di grandi dimensioni.
->>Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
->>Se devi personalizzare per qualsiasi motivo, puoi attivare un flusso di lavoro con questo passaggio utilizzando API di flusso di lavoro esistenti.
->>È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. E fai attenzione a non pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite flussi di lavoro con il passaggio Flusso di lavoro di attivazione struttura.
+>&#x200B;>Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
+>&#x200B;>Se devi personalizzare per qualsiasi motivo, puoi attivare un flusso di lavoro con questo passaggio utilizzando API di flusso di lavoro esistenti.
+>&#x200B;>È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. E fai attenzione a non pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite flussi di lavoro con il passaggio Flusso di lavoro di attivazione struttura.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
@@ -193,6 +193,7 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### API di replica {#replication-api}

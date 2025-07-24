@@ -548,7 +548,7 @@ Il video seguente mostra il componente finito e come può essere aggiunto a un c
 
 ## Codice finito {#finished-code}
 
-Di seguito è riportato il codice finito dell&#39;esercitazione. I pacchetti AEM compilati sono **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**. **SRC-screens-weretail-run-0.0.1.zip **è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
+Di seguito è riportato il codice finito dell&#39;esercitazione. I pacchetti AEM compilati sono **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**. **SRC-screens-weretail-run-0.0.1.zip &#x200B;** è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
 
 [Ottieni file](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
