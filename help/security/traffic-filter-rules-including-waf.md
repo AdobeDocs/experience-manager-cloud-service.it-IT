@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4582'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Le regole del filtro del traffico possono essere utilizzate per bloccare o conse
 * Definizione dei limiti di frequenza per essere meno suscettibili ad attacchi DoS volumetrici
 * La prevenzione del targeting delle tue pagine da parte di indirizzi IP dannosi
 
-Molte di queste regole del filtro del traffico sono disponibili per tutti i clienti AEM as a Cloud Service Sites e Forms. Denominate *regole di filtro del traffico standard*, funzionano principalmente sulle proprietà di richiesta e sulle intestazioni di richiesta, inclusi IP, nome host, percorso e agente utente. Le regole standard del filtro del traffico includono regole di limite di frequenza per evitare picchi di traffico.
+La maggior parte di queste regole del filtro del traffico è disponibile per tutta la clientela di Sites e Forms di AEM as a Cloud Service. Denominate *regole di filtro del traffico standard*, funzionano principalmente sulle proprietà e sulle intestazioni della richiesta, inclusi IP, nome host, percorso e agente utente. Le regole standard del filtro del traffico includono regole del limite di frequenza per evitare picchi di traffico.
 
-Una sottocategoria delle regole del filtro del traffico richiede una licenza di sicurezza avanzata o una licenza di protezione WAF-DDoS. Queste potenti regole sono note come regole del filtro del traffico di WAF (Web Application Firewall) (o *regole WAF* in breve) e hanno accesso ai [flag WAF](#waf-flags-list) descritti più avanti in questo articolo.
+Una sottocategoria delle regole del filtro del traffico richiede una licenza di sicurezza avanzata o una licenza di protezione WAF-DDoS. Queste potenti regole sono note come regole del filtro del traffico WAF (Web Application Firewall, Firewall per l’applicazione web) (o *regole WAF*, in breve) e hanno accesso ai [flag WAF](#waf-flags-list) descritti di seguito in questo articolo.
 
 Le regole di filtro del traffico possono essere implementate nei tipi di ambiente di sviluppo, di staging e di produzione tramite la pipeline di configurazione di Cloud Manager. Il file di configurazione può essere implementato negli ambienti di sviluppo rapido (RDE, Rapid Developement Environments) utilizzando gli strumenti della riga di comando.
 
@@ -61,23 +61,23 @@ La clientela può adottare misure proattive per mitigare gli attacchi a livello 
 
 Ad esempio, al livello Apache, è possibile configurare il [modulo Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) o [ModSecurity](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) per limitare l’accesso a determinati contenuti.
 
-Come descritto in questo articolo, le regole di filtro del traffico possono essere distribuite alla rete CDN gestita da Adobe, utilizzando le [pipeline di configurazione](/help/operations/config-pipeline.md) di Cloud Manager. Oltre alle *regole standard per il filtro del traffico* basate su proprietà quali indirizzo IP, percorso e intestazioni o regole basate sull&#39;impostazione di limiti di velocità, i clienti possono anche concedere in licenza una potente sottocategoria di regole per il filtro del traffico denominate *regole WAF*.
+Come descritto in questo articolo, le regole di filtro del traffico possono essere distribuite alla rete CDN gestita da Adobe, utilizzando le [pipeline di configurazione](/help/operations/config-pipeline.md) di Cloud Manager. Oltre alle *regole del filtro del traffico standard* basate su proprietà come indirizzo IP, percorso e intestazioni, o alle regole basate sull’impostazione dei limiti di frequenza, è possibile anche concedere in licenza alla clientela una potente sottocategoria di regole del filtro del traffico, denominate *regole WAF*.
 
 ## Processo consigliato {#suggested-process}
 
 Di seguito è riportato un processo end-to-end di alto livello consigliato per individuare le regole corrette per il filtro del traffico:
 
 1. Configura le pipeline di configurazione di produzione e non di produzione, come descritto nella sezione [Configurazione](#setup).
-1. I clienti che hanno concesso in licenza le *regole del filtro del traffico di WAF* devono abilitarle in Cloud Manager.
+1. La clientela che dispone della licenza per le *regole del filtro del traffico WAF* deve abilitarle in Cloud Manager.
 1. Leggi e prova l’esercitazione per comprendere concretamente come utilizzare le regole del filtro del traffico, incluse le regole WAF, se disponi della licenza. Il tutorial illustra come distribuire le regole in un ambiente di sviluppo, simulare traffico dannoso, scaricare i [Registri CDN](#cdn-logs) e analizzarli negli [strumenti della dashboard](#dashboard-tooling).
-1. Copiare le regole di avvio consigliate in `cdn.yaml` e distribuire la configurazione nell&#39;ambiente di produzione, con alcune delle regole in modalità log.
+1. Copia le regole iniziali consigliate in `cdn.yaml` e implementa la configurazione nell’ambiente di produzione con alcune regole in modalità registro.
 1. Dopo aver raccolto alcuni dati di traffico, analizza i risultati utilizzando gli [strumenti della dashboard](#dashboard-tooling) per vedere se ci sono state corrispondenze. Cerca i falsi positivi e apporta le eventuali modifiche necessarie, in ultima analisi abilitando tutte le regole iniziali in modalità blocco.
-1. Se necessario, aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo prima un test con traffico simulato negli ambienti di sviluppo prima di distribuirlo negli ambienti di staging e produzione in modalità registro, quindi in modalità blocco.
+1. Se necessario, aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo per prima un test con traffico simulato in ambienti di sviluppo prima di distribuirlo negli ambienti di staging e produzione in modalità registro e in seguito in modalità blocco.
 1. Monitora costantemente il traffico e modifica le regole man mano che il panorama delle minacce evolve.
 
 ## Configurazione {#setup}
 
-1. Creare un file `cdn.yaml` con un set di regole del filtro del traffico, incluse le regole di WAF. Ad esempio:
+1. Crea un file `cdn.yaml` con un set di regole di filtro del traffico, incluse le regole WAF. Ad esempio:
 
    ```
    kind: "CDN"
@@ -107,13 +107,13 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
 
    1. Per configurare WAF su un programma esistente: [modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) e nella scheda **Sicurezza** deseleziona o seleziona l’opzione **WAF-DDOS** in qualsiasi momento.
 
-1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager). La pipeline farà riferimento a una cartella `config` di primo livello con il file `cdn.yaml` posizionato in un punto qualsiasi al di sotto, consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
+1. Crea una pipeline di configurazione in Cloud Manager, come descritto nell’[articolo sulle pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager). La pipeline farà riferimento a una cartella `config` di primo livello con il file `cdn.yaml` posizionato in un punto qualsiasi al di sotto, consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintassi delle regole di filtro del traffico {#rules-syntax}
 
 Puoi configurare le *regole di filtro del traffico* affinché corrispondano a pattern quali IP, agente utente, intestazioni di richiesta, nome host, geo e URL.
 
-I clienti che dispongono di una licenza per l&#39;offerta Protezione avanzata o Protezione WAF-DDoS possono anche configurare una categoria speciale di regole per il filtro del traffico denominata *Regole filtro del traffico di WAF* (o *Regole WAF* in breve) che fanno riferimento a uno o più [flag WAF](#waf-flags-list).
+La clientela che dispone di una licenza per l’offerta Sicurezza avanzata o Protezione WAF-DDoS può anche configurare una categoria speciale di regole di filtro del traffico denominate *regole del filtro del traffico WAF* (o *regole WAF*, in breve) che fanno riferimento a uno o più [flag WAF](#waf-flags-list).
 
 Di seguito è riportato un esempio di un set di regole per il filtro del traffico, che include anche una regola WAF.
 
@@ -237,8 +237,8 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
-| ATTACK | Attacco | Un’aggregazione di flag relativi al traffico dannoso (SQLI, CMDEXE, XSS, ecc.). Consulta la [sezione Regole di WAF consigliate](#recommended-waf-starter-rules) per informazioni su come utilizzare questo flag in modo efficace. |
-| ATTACK-FROM-BAD-IP | Attacco da IP non valido | Simile al flag ATTACK, ma &quot;logically AND-ed&quot; con il flag `BAD-IP` in modo che una richiesta venga contrassegnata se corrisponde sia ad ATTACK che BAD-IP. Consulta la [sezione Regole di WAF consigliate](#recommended-waf-starter-rules) per informazioni su come utilizzare questo flag in modo efficace. |
+| ATTACK | Attacco | Un’aggregazione di flag relativi al traffico dannoso (SQLI, CMDEXE, XSS, ecc.). Consulta la [sezione Regole WAF consigliate](#recommended-waf-starter-rules) per informazioni su come utilizzare questo flag in modo efficace. |
+| ATTACK-FROM-BAD-IP | Attacco da IP non valido | Simile al flag ATTACK, ma “logically AND-ed” con il flag `BAD-IP` in modo che una richiesta venga contrassegnata se corrisponde sia ad ATTACK che a BAD-IP. Consulta la [sezione Regole WAF consigliate](#recommended-waf-starter-rules) per informazioni su come utilizzare questo flag in modo efficace. |
 | SQLI | SQL Injection | SQL Injection è il tentativo di accedere a un’applicazione o di ottenere informazioni con privilegi tramite l’esecuzione di query arbitrarie nel database. |
 | BACKDOOR | Backdoor | Un segnale backdoor è una richiesta che tenta di determinare se un file backdoor comune è presente sul sistema. |
 | CMDEXE | Command Execution | Command Execution è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di sistema mediante l’input dell’utente. |
@@ -254,7 +254,7 @@ La proprietà `wafFlags`, che può essere utilizzata nelle regole del filtro del
 | **ID contrassegno** | **Nome contrassegno** | **Descrizione** |
 |---|---|---|
 | ABNORMALPATH | Percorso anomalo | Percorso anomalo indica che il percorso originale è diverso dal percorso normalizzato (ad esempio, `/foo/./bar` è normalizzato su `/foo/bar`) |
-| BAD-IP | IP non valido | Identifica le richieste provenienti da indirizzi IP noti per essere dannosi, a causa dell&#39;inclusione nei set di dati come `SANS` e `TORNODE`, o in base al precedente rilevamento di comportamenti dannosi da parte di WAF |
+| BAD-IP | IP non valido | Identifica le richieste provenienti da indirizzi IP noti per essere dannosi, a causa dell’inclusione nei set di dati come `SANS` e `TORNODE` oppure in base a un precedente rilevamento di comportamenti dannosi da parte del WAF |
 | BHH | Intestazioni hop non valide | Le intestazioni hop non valide indicano un tentativo di smuggling dell’HTTP tramite un’intestazione di codifica di trasferimento (TE) o lunghezza dei contenuti (CL) non valida oppure tramite un’intestazione TE e CL corretta |
 | CODEINJECTION | Code Injection | Code Injection è il tentativo di ottenere il controllo o danneggiare un sistema di destinazione attraverso comandi arbitrari di codice di applicazione tramite l’input dell’utente. |
 | COMPRESSED | Compressione rilevata | Il corpo della richiesta POST è compresso e non può essere esaminato. Ad esempio, se viene specificata un’intestazione di richiesta `Content-Encoding: gzip` e il corpo POST non è testo normale. |
@@ -661,20 +661,20 @@ Adobe fornisce un meccanismo per scaricare gli strumenti della dashboard sul com
 
 Gli strumenti della dashboard possono essere clonati direttamente dall’archivio GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 
-[È disponibile un&#39;esercitazione](#tutorial) per istruzioni concrete sull&#39;utilizzo degli strumenti del dashboard.
+È disponibile [un tutorial](#tutorial) con istruzioni pratiche su come utilizzare gli strumenti della dashboard.
 
 ## Regole iniziali consigliate {#recommended-starter-rules}
 
-Adobe consiglia di iniziare con le regole del filtro del traffico riportate di seguito e quindi di perfezionarle nel tempo. *Le regole standard* sono disponibili con una licenza Sites o Forms, mentre *le regole WAF* richiedono una licenza Protezione avanzata o Protezione WAF-DDoS.
+Adobe consiglia di iniziare con le regole del filtro del traffico riportate di seguito e quindi di perfezionarle nel tempo. Le *regole standard* sono disponibili con una licenza Sites o Forms, mentre *le regole WAF* richiedono una licenza Sicurezza avanzata o Protezione WAF-DDoS.
 
 ### Regole standard consigliate {#recommended-nonwaf-starter-rules}
 
 Inizia con queste regole:
 
-1. limite di velocità (modalità registro):
-   * registra quando il traffico da un determinato IP supera un limite di velocità. Passare alla modalità blocco dopo aver verificato che non vengono ricevuti avvisi; se gli avvisi fossero stati ricevuti, avrebbe indicato che il valore limite era troppo basso.
+1. limite di frequenza (modalità registro):
+   * registra quando il traffico da un determinato IP supera un limite di frequenza. Passa alla modalità di blocco dopo aver verificato che non vengono ricevuti avvisi; se gli avvisi fossero stati ricevuti, avrebbe indicato che il valore limite era troppo basso.
 2. paesi specifici (modalità blocco):
-   * bloccare il traffico da alcuni paesi (modifica i codici paese in base ai requisiti aziendali)
+   * blocca il traffico da alcuni Paesi (modifica i codici paese in base ai requisiti aziendali)
 
 ```
 kind: "CDN"
@@ -737,15 +737,15 @@ data:
 
 Aggiungi le seguenti regole alla configurazione esistente:
 
-1. Flag ATTACK-FROM-BAD-IP (Modalità blocco):
-   * Blocca immediatamente il traffico che corrisponde a pattern sospetti (inclusi diversi nell&#39;[elenco dei flag di WAF](#waf-flags-list)) e proviene da indirizzi IP noti per essere dannosi.
-   * Il flag ATTACK-FROM-BAD-IP soddisfa intrinsecamente entrambe le condizioni (pattern match e known malicious IP), riducendo al minimo il rischio di falsi positivi. Pertanto, puoi applicare questa regola in modo sicuro in modalità di blocco immediatamente.
-2. Flag ATTACCO (modalità registro):
-   * Inizialmente registra (anziché bloccare) il traffico che corrisponde a pattern sospetti ma non proviene da indirizzi IP dannosi noti. Questo approccio prudente di registrazione anziché di blocco consente di evitare il blocco involontario del traffico legittimo (falsi positivi).
-   * Dopo aver distribuito questa regola, analizza attentamente i registri CDN per verificare che le richieste legittime non vengano contrassegnate in modo errato. Se hai la certezza che non è interessato alcun traffico legittimo, passa alla modalità blocco.
+1. Flag ATTACK-FROM-BAD-IP (modalità blocco):
+   * Blocca immediatamente il traffico che corrisponde a pattern sospetti (inclusi diversi nell’[elenco dei flag WAF](#waf-flags-list)) e che proviene da indirizzi IP noti per essere dannosi.
+   * Il flag ATTACK-FROM-BAD-IP soddisfa intrinsecamente entrambe le condizioni (corrispondenza pattern e IP dannosi noti), riducendo al minimo il rischio di falsi positivi. Pertanto, puoi applicare questa regola in modalità di blocco in modo sicuro e immediato.
+2. Flag ATTACK (modalità registro):
+   * Inizialmente registra (anziché bloccare) il traffico che corrisponde a pattern sospetti ma non proviene da indirizzi IP dannosi noti. Questo approccio prudente di registrazione, anziché di blocco, consente di evitare il blocco involontario del traffico legittimo (falsi positivi).
+   * Dopo aver distribuito questa regola, analizza attentamente i registri CDN per verificare che le richieste legittime non vengano contrassegnate in modo errato. Se hai la certezza che non è interessato alcun traffico legittimo, passa alla modalità di blocco.
 
 >[!NOTE]
-> La nostra esperienza indica che i falsi positivi associati alla bandiera ATTACK sono rari. Pertanto, può essere una strategia pratica bloccare immediatamente tutto il traffico sospetto, anche se l’indirizzo IP non è noto come dannoso, e successivamente utilizzare l’analisi del registro CDN per identificare e introdurre regole di autorizzazione per il traffico legittimo. Ciascuna organizzazione dovrebbe valutare la propria tolleranza al rischio, soppesando i vantaggi di una maggiore protezione rispetto al rischio di bloccare inavvertitamente le richieste legittime.
+> L’esperienza indica che i falsi positivi associati al flag ATTACK sono rari. Pertanto, può essere una strategia pratica bloccare immediatamente tutto il traffico sospetto, anche se l’indirizzo IP non è noto come dannoso, e successivamente utilizzare l’analisi del registro CDN per identificare e introdurre regole di autorizzazione per il traffico legittimo. Ciascuna organizzazione dovrebbe valutare la propria tolleranza del rischio, soppesando i vantaggi di una maggiore protezione rispetto al rischio di bloccare inavvertitamente le richieste legittime.
 >
 
 ```
@@ -769,12 +769,12 @@ Aggiungi le seguenti regole alla configurazione esistente:
           - ATTACK
 ```
 
-### Regole legacy consigliate per WAF {#previous-waf-starter-rules}
+### Regole precedenti WAF consigliate {#previous-waf-starter-rules}
 
-Prima di luglio 2025, Adobe raccomandava le regole WAF elencate di seguito, ancora valide ed efficaci nella difesa contro il traffico dannoso. Per considerazioni sulla migrazione alle nuove regole consigliate, consulta il tutorial.
+Prima di luglio 2025, Adobe consigliava le regole WAF elencate di seguito, ancora valide ed efficaci nella difesa contro il traffico dannoso. Per considerazioni sulla migrazione alle nuove regole consigliate, visualizza il tutorial.
 
 <details>
-  <summary>Espandi per visualizzare le precedenti regole consigliate di WAF.</summary>
+  <summary>Espandi per visualizzare le precedenti regole WAF consigliate.</summary>
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,19 +799,18 @@ Prima di luglio 2025, Adobe raccomandava le regole WAF elencate di seguito, anco
           - PRIVATEFILE
           - NULLBYTE
 ```
-
 </details>
 
 ## Tutorial {#tutorial}
 
-Segui [una serie di tutorial](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) per acquisire conoscenze pratiche ed esperienza sulle regole del filtro del traffico, incluse le regole di WAF.
+Esercitati con [una serie di tutorial](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) per acquisire conoscenze pratiche e generali ed esperienza sulle regole del filtro del traffico, incluse le regole WAF.
 
 I tutorial includono:
 
-* Panoramica delle regole del filtro del traffico standard e WAF
-* Configurazione delle regole del filtro del traffico standard e WAF consigliate per bloccare attacchi, inclusi Denial of Service (DoS) e altre minacce
-* Distribuzione di regole tramite la pipeline di configurazione di Cloud Manager
-* Verifica delle regole tramite strumenti per simulare traffico dannoso
+* Una panoramica delle regole del filtro del traffico standard e WAF
+* Configurazione delle regole del filtro del traffico standard e WAF consigliate per bloccare attacchi, inclusi Denial of Service (DoS, attacco di negazione del servizio) e altre minacce
+* Implementazione delle regole tramite la pipeline di configurazione di Cloud Manager
+* Test delle regole tramite strumenti per simulare il traffico dannoso
 * Analisi dei risultati mediante lo strumento di analisi dei registri
 * Best practice
 
