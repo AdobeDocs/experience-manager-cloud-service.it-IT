@@ -3,9 +3,9 @@ title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, utenti Adobe Express) e fornire privilegi di amministratore agli utenti.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1586'
 ht-degree: 6%
 
 ---
@@ -17,6 +17,10 @@ Content Hub è disponibile come parte di Experience Manager Assets as a Cloud Se
 Le risorse contrassegnate come Approvate in Experience Manager Assets as a Cloud Service sono disponibili per la distribuzione delle risorse in Content Hub.
 
 Questo articolo fornisce un flusso di lavoro end-to-end per fornire agli utenti l’accesso a Content Hub, comprese le varianti di privilegi in base alle loro esigenze.
+
+Guarda questo video per scoprire come abilitare Content Hub per Experience Manager Assets:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 Le varianti di privilegi su Content Hub includono:
 
