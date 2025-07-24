@@ -4,7 +4,7 @@ description: Scopri la distribuzione e la risoluzione dei problemi di replica in
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 31%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service utilizza la funzionalità [Distribuz
 >[!NOTE]
 >
 >Se ti interessa pubblicare contenuti in blocco, crea un flusso di lavoro utilizzando il [Passaggio del flusso di lavoro di attivazione struttura](#tree-activation), che può gestire in modo efficiente payload di grandi dimensioni.
->Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
->Se devi personalizzare per qualsiasi motivo, puoi attivare un flusso di lavoro con questo passaggio utilizzando API di flusso di lavoro esistenti.
->È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. E fai attenzione a non pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite flussi di lavoro con il passaggio Flusso di lavoro di attivazione struttura.
+>>Si sconsiglia di creare un codice personalizzato per la pubblicazione in blocco.
+>>Se devi personalizzare per qualsiasi motivo, puoi attivare un flusso di lavoro con questo passaggio utilizzando API di flusso di lavoro esistenti.
+>>È sempre buona prassi pubblicare solo i contenuti che devono essere pubblicati. E fai attenzione a non pubblicare un gran numero di contenuti, se non è necessario. Tuttavia, non vi sono limiti alla quantità di contenuto che è possibile inviare tramite flussi di lavoro con il passaggio Flusso di lavoro di attivazione struttura.
 
 ### Annullamento/pubblicazione rapida - Annullamento/pubblicazione pianificata {#publish-unpublish}
 
@@ -82,7 +82,7 @@ Creare un modello di flusso di lavoro che utilizza il passaggio del processo `Tr
 
 **Parametri**
 
-| Nome | impostazione predefinita | descrizione |
+| Nome | predefinito | descrizione |
 | -------------- | ------- | --------------------------------------------------------------- |
 | percorso |         | percorso principale da cui iniziare |
 | agentId | pubblicazione | Nome dell’agente di replica da utilizzare |
@@ -135,7 +135,7 @@ Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rapprese
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
-Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=it#extending-aem).
+Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 In alternativa, è possibile creare un modello di flusso di lavoro che utilizza il passaggio del processo `Publish Content Tree`.
 
@@ -193,7 +193,6 @@ Di seguito sono riportati alcuni esempi di registri generati durante un flusso d
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### API di replica {#replication-api}
@@ -272,7 +271,7 @@ La dimensione del contenuto trasmesso per chiamata di replica non deve superare 
 
 Per risolvere i problemi di replica, accedi alle code di replica nell’interfaccia web del servizio AEM Author:
 
-1. Dal menu Start di AEM, passa a **Strumenti** > **Distribuzione** > **Distribuzione**
+1. Dalla [Navigazione globale](/help/sites-cloud/authoring/basic-handling.md#global-navigation) di AEM, passa a **Strumenti** > **Distribuzione** > **Distribuzione**
 1. Seleziona la scheda **Pubblica**.
 
    ![Stato](assets/publish-status.png "Stato")
