@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
+source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 34%
+source-wordcount: '632'
+ht-degree: 33%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 34%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 21644 {#21644}
+## Versione 21706 {#21706}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21644, rilasciata pubblicamente il mercoledì 22 luglio 2025. La versione di manutenzione precedente era la 21570.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21706, rilasciata pubblicamente il venerdì 24 luglio 2025. La versione di manutenzione precedente era la 21570.
+
+>[!NOTE]
+>
+>Le 21644 sulla versione sono state rese private e sostituite da 21706 sulla versione.
 
 Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Miglioramenti {#enhancements-21644}
+### Miglioramenti {#enhancements-21706}
 
 * ASSETS-39377: migliora la gestione dei 429 da storage remoto in Assets Bulk Importer.
 * ASSETS-46026: profondità massima configurabile per l’esportazione dei metadati.
@@ -39,7 +43,7 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * SITES-31677: l’area di lavoro personalizzata supporta l’esportazione dei frammenti di contenuto di AEM in Target.
 * SKYOPS-112741: rimuovere il bundle `com.adobe.granite.product.support` da AEM-CS SDK.
 
-### Problemi risolti {#fixed-issues-21644}
+### Problemi risolti {#fixed-issues-21706}
 
 * ASSETS-12882: problemi di allineamento dell’interfaccia utente dopo l’apertura dei predefiniti visualizzatore.
 * ASSETS-48958: problema con la modifica dello stato di pubblicazione di Sites nell’AEM locale di Asset Sync.
@@ -65,19 +69,19 @@ Con la versione di attivazione funzioni 2025.7.0 verrà fornito il set di funzio
 * GRANITE-60311: AEM SDK Quickstart - NPE su &quot;OSGi Installer Configuration Printer&quot; (Stampante di configurazione di OSGi Installer).
 * GS-15285: gli utenti vengono visualizzati come disattivati.
 
-### Problemi noti {#known-issues-21644}
+### Problemi noti {#known-issues-21706}
 
 Nessuna.
 
-### Funzioni e API obsolete {#deprecated-21644}
+### Funzioni e API obsolete {#deprecated-21706}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-21644}
+### Correzioni di sicurezza {#security-21706}
 
 AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 4 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-21644}
+### Tecnologie incorporate {#embedded-tech-21706}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
