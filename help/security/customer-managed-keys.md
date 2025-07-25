@@ -6,14 +6,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 69%
 
 ---
 
-# Impostazione delle chiavi gestite dal cliente per AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# Impostazione delle chiavi gestite dal cliente per AEM as a Cloud Service {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service attualmente memorizza i dati dei clienti nell’archiviazione BLOB di Azure e MongoDB, utilizzando, per impostazione predefinita, le chiavi di crittografia gestite dal provider per proteggere i dati. Sebbene questa configurazione soddisfi le esigenze di sicurezza di molte organizzazioni, le aziende dei settori regolamentati o che necessitano di una sicurezza dei dati avanzata possono richiedere un maggiore controllo sulle proprie pratiche di crittografia. Per le organizzazioni che danno priorità alla sicurezza dei dati, alla conformità e alla capacità di gestire le proprie chiavi di crittografia, la soluzione CMK (Customer-Managed Keys, chiavi gestite dal cliente) offre un miglioramento fondamentale.
 
@@ -42,8 +42,8 @@ Verranno inoltre illustrati i seguenti passaggi per la creazione e la configuraz
 1. Configurare l’ambiente
 1. Ottenere un ID applicazione da Adobe
 1. Creare un nuovo gruppo di risorse
-1. Creare un insieme di credenziali della chiave
-1. Concedere ad Adobe l’accesso all’insieme di credenziali della chiave
+1. Creare un archivio chiavi
+1. Concedere ad Adobe l’accesso all’archivio chiavi
 1. Creare una chiave di crittografia
 
 È necessario condividere con Adobe l’URL dell’insieme di credenziali delle chiavi, il nome della chiave di crittografia e le informazioni sull’insieme di credenziali delle chiavi.
@@ -52,15 +52,30 @@ Verranno inoltre illustrati i seguenti passaggi per la creazione e la configuraz
 
 L’interfaccia CLI (Command Line Interface) di Azure è l’unico requisito per questa guida. Se Azure CLI non è già installato, segui le istruzioni di installazione ufficiali [qui](https://learn.microsoft.com/it-it/cli/azure/install-azure-cli).
 
-Prima di procedere con il resto di questa guida, accedi alla CLI con `az login`.
+Prima di procedere con il resto di questa guida, accedere alla CLI con `az login`.
 
 >[!NOTE]
 >
 >Anche se questa guida utilizza Azure CLI, è possibile eseguire le stesse operazioni tramite la console Azure. Se preferisci utilizzare la console Azure, utilizza i comandi seguenti come riferimento.
 
+
+## Avviare il processo di configurazione CMK per AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
+
+Devi richiedere la configurazione di Customer Managed Keys (CMK) per il tuo ambiente AEM as a Cloud Service tramite l’interfaccia utente. A questo scopo, passa all&#39;interfaccia utente di AEM Home Security, nella sezione **Chiavi gestite dal cliente**.
+Puoi quindi avviare il processo di onboarding facendo clic sul pulsante **Avvia onboarding**.
+
+![Avvia l&#39;onboarding di un sito Web utilizzando l&#39;interfaccia utente CMK](./assets/cmk/step1.png)
+
+
 ## Ottenere un ID applicazione da Adobe {#obtain-an-application-id-from-adobe}
 
-Adobe ti fornirà l’ID applicazione Entra di cui avrai bisogno nel resto di questa guida. Se non disponi già di un ID applicazione, contatta Adobe per ottenerlo.
+Dopo aver avviato il processo di onboarding, Adobe fornirà un ID applicazione Entra. Questo ID applicazione è necessario per il resto della guida e verrà utilizzato per creare un’entità servizio che consenta ad Adobe di accedere all’insieme di credenziali delle chiavi. Se non disponi già di un ID applicazione, devi attendere che venga fornito da Adobe.
+
+![È in corso l&#39;elaborazione della richiesta. Attendere che Adobe fornisca l&#39;ID applicazione Entra](./assets/cmk/step2.png)
+
+Al termine della richiesta, potrai visualizzare l’ID applicazione nell’interfaccia utente della CMK.
+
+![L&#39;ID applicazione Entra è fornito da Adobe](./assets/cmk/step3.png)
 
 ## Creare un nuovo gruppo di risorse {#create-a-new-resource-group}
 
@@ -79,7 +94,7 @@ Se disponi già di un gruppo di risorse, puoi utilizzarlo. Nel resto di questa g
 
 ## Creare un insieme di credenziali delle chiavi {#create-a-key-vault}
 
-È necessario creare un insieme di credenziali delle chiavi per contenere la chiave di crittografia. Nell’insieme di credenziali delle chiavi deve essere attivata la protezione da eliminazione. La protezione da eliminazione è necessaria per crittografare i dati a riposo da altri servizi Azure. È necessario abilitare anche l’accesso alla rete pubblica per garantire che il tenant Adobe possa accedere all’insieme di credenziali delle chiavi.
+È necessario creare un insieme di credenziali delle chiavi per contenere la chiave di crittografia. Nell’insieme di credenziali delle chiavi deve essere attivata la protezione da eliminazione. La protezione da eliminazione è necessaria per crittografare i dati a riposo da altri servizi Azure. L’accesso alla rete pubblica deve essere abilitato per garantire che i servizi Adobe possano accedere all’insieme di credenziali delle chiavi.
 
 >[!IMPORTANT]
 >La creazione del Key Vault con l’accesso alla rete pubblica disabilitato impone che tutte le operazioni relative ad esso come la creazione o la rotazione, vengano eseguite da un ambiente con accesso di rete al Key Vault, ad esempio una macchina virtuale in grado di accedervi.
@@ -97,7 +112,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -107,7 +122,7 @@ az keyvault create `
 
 In questo passaggio consentirai ad Adobe di accedere al Key Vault tramite un’applicazione Entra. L’ID dell’applicazione Entra è già stato fornito da Adobe.
 
-Innanzitutto, è necessario creare un’entità servizio collegata all’applicazione Entra e assegnare a tale entità i ruoli con **autorizzazione di lettura per Key Vault** e **Utente di crittografia di Key Vault**. I ruoli sono limitati al Key Vault creato in questa guida.
+Innanzitutto, devi creare un&#39;entità servizio collegata all&#39;applicazione Entra e assegnare a essa i ruoli **Key Vault Reader** e **Key Vault Crypto User**. I ruoli sono limitati al Key Vault creato in questa guida.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -128,7 +143,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## Creare una chiave di crittografia {#create-an-ecryption-key}
+## Creare una chiave di crittografia {#create-an-encryption-key}
 
 Infine, puoi creare una chiave di crittografia nel Key Vault. Per completare questo passaggio, è necessario il ruolo di **Responsabile della crittografia di Key Vault**. Se l’utente che ha effettuato l’accesso non dispone di questo ruolo, contatta l’amministratore di sistema per ottenere l’autorizzazione per questo ruolo o chiedere a un utente che dispone già di tale ruolo di completare questo passaggio.
 
@@ -138,7 +153,7 @@ Per creare la chiave di crittografia è necessario l’accesso di rete al Key Va
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -147,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## Condividere le informazioni del Key Vault {#share-the-key-vault-information}
 
-A questo punto, è tutto pronto. È sufficiente condividere alcune informazioni richieste con Adobe, che si occuperà di configurare l’ambiente per te.
+A questo punto, è tutto pronto. È sufficiente condividere alcune informazioni richieste tramite l’interfaccia utente di CMK, che avvierà il processo di configurazione dell’ambiente.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -167,7 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+Fornisci queste informazioni nell’interfaccia utente della CMK:
+![Inserisci le informazioni nell&#39;interfaccia utente](./assets/cmk/step3a.png)
 
 ## Implicazioni della revoca dell’accesso alla chiave {#implications-of-revoking-key-access}
 
@@ -177,27 +193,16 @@ Se decidi di revocare l’accesso di Platform ai tuoi dati, puoi farlo rimuovend
 
 ## Passaggi successivi {#next-steps}
 
-Contatta Adobe e condividi:
+Dopo aver fornito le informazioni richieste nell’interfaccia utente di CMK, Adobe avvierà il processo di configurazione per l’ambiente AEM as a Cloud Service. Questo processo può richiedere un po’ di tempo e riceverai una notifica una volta completato.
 
-* l’URL del Key Vault. Tale URL è stato recuperato in questo passaggio e salvato nella variabile `$keyVaultUri`.
-* Il nome della tua chiave di crittografia. La chiave è stata creata in un passaggio precedente e salvata nella variabile `$keyName`.
-* `$resourceGroup`, `$subscriptionId` e `$tenantId` necessari per impostare la connessione al Key Vault.
+![Attendi che Adobe configuri l&#39;ambiente.](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
 
-### Private Link Approvals {#private-link-approvals}
+## Completare la configurazione della CMK {#complete-the-cmk-setup}
 
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+Una volta completato il processo di configurazione, potrai vedere lo stato della configurazione della CMK nell’interfaccia utente. È inoltre possibile visualizzare l&#39;insieme di credenziali delle chiavi e la chiave di crittografia.
+![Il processo in è ora completato](./assets/cmk/step5.png)
 
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+## Domande e supporto {#questions-and-support}
 
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-## Chiavi gestite dal cliente in Private Beta {#customer-managed-keys-in-private-beta}
-
-Il team di progettazione di Adobe sta attualmente lavorando a un’implementazione migliorata della CMK utilizzando il collegamento privato di Azure. La nuova implementazione consentirà di condividere la chiave tramite il backbone di Azure e grazie a una connessione privata diretta tra il tenant di Adobe e il Key Vault.
-
-Questa implementazione avanzata è attualmente in versione Beta privata e può essere abilitata per la clientela che accetta di iscriversi al programma in tale versione e di lavorare a stretto contatto con i tecnici di Adobe. Se ti interessa la versione Beta privata di CMK tramite collegamento privato, contatta Adobe per ulteriori informazioni.
+Contattaci in caso di domande, richieste o assistenza sulla configurazione di Customer Managed Keys per AEM as a Cloud Service. Il supporto Adobe può aiutarti con qualsiasi domanda.
