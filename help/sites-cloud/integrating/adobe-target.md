@@ -2,10 +2,10 @@
 title: Integrazione con Adobe Target
 description: Integrazione con Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
+source-git-commit: 0af1f7dcc330a2ee5300088f274150a3ea79efe8
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 94%
 
 ---
 
@@ -24,20 +24,15 @@ Integra i tuoi siti di AEM Sites con Adobe Target per personalizzare i contenuti
 >
 >I clienti che non dispongono di un account Target esistente possono richiedere l’accesso a Target Foundation Pack per Experience Cloud. Foundation Pack fornisce un uso limitato del volume di Target.
 
-
 Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 * [Esegui attività preliminari](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=it): registrati ad Adobe Target e configura alcuni aspetti dell’istanza di authoring AEM. Il tuo account Adobe Target deve disporre dei permessi di livello **approvatore** come requisito minimo. Inoltre, devi proteggere le impostazioni dell’attività sul nodo di pubblicazione in modo che sia inaccessibile agli utenti.
 
 * Experience Platform Launch è lo strumento per la strumentazione di un sito AEM con funzionalità di Target (librerie JS). Pertanto, l’integrazione di AEM as a Cloud Service con Launch e Adobe Target procede di pari passo (consulta i collegamenti di seguito).
 
-<!--   
-  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html?lang=it)
--->
-
-* [Integrare Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
-* [Integrare AEM con Adobe Launch mediante Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
-* [Informazioni sull’integrazione AEM con Experience Platform Launch, Analytics e Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
+   * [Integrare Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
+   * [Integrare AEM con Adobe Launch mediante Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
+   * [Informazioni sull’integrazione AEM con Experience Platform Launch, Analytics e Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
 
 >[!NOTE]
 >
@@ -47,7 +42,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/it?support-solution=General&amp;lang=it#support).
+>In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=it#support).
 
 >[!NOTE]
 >
@@ -59,7 +54,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=it#securing-the-activity-settings-node) per informazioni dettagliate.
 
