@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 83aceb71ead66763b94ec523c9d9c76c4286c762
+source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,9 +63,11 @@ Content Hub ora consente di [controllare l’accesso alle raccolte durante la cr
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Editor universale per moduli adattivi e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l’editor universale ora supporta la creazione sia di moduli adattivi che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
+
 
 ### Funzioni pre-release
+
+* [Editor universale per moduli adattivi e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l’editor universale ora supporta la creazione sia di moduli adattivi che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
 
 * [Genera e sincronizza rappresentazioni AFP da moduli adattivi](/help/forms/document-generation-afp-api.md): l’API di sincronizzazione dell’output AFP consente ad amministratori e utenti di generare output AFP (Advanced Function Presentation) da moduli adattivi e di sincronizzare l’output con sistemi esterni o percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali di larga scala.
 
