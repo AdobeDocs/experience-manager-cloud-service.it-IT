@@ -42,7 +42,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=it#support).
+>In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support).
 
 >[!NOTE]
 >
