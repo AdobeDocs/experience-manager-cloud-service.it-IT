@@ -7,9 +7,9 @@ user-guide-description: Scopri come funziona Experience Manager as a Cloud Servi
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
 source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6522'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -910,30 +910,30 @@ ht-degree: 97%
       + [Anteprima di un modulo](/help/forms/previewing-forms.md)
    + Moduli HTML5 {#html5-forms}
       + [Introduzione ai moduli HTML5](/help/forms/introductionhtml5.md)
-      + [Guida introduttiva ai moduli di HTML5](/help/forms/get-started.md)
+      + [Introduzione ai moduli HTML5](/help/forms/get-started.md)
       + [Architettura dei moduli HTML5](/help/forms/html5-forms-architecture.md)
-      + [Differenziazione delle funzioni tra HTML5 Forms e PDF forms](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [Differenziazione delle funzioni tra moduli HTML5 e moduli PDF](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
       + [Domande frequenti per i moduli HTML5](/help/forms/faqhtml5.md)
       + [Progettazione di modelli di modulo per moduli HTML5](/help/forms/designing-form-template.md)
-      + [Best practice per i moduli HTML5](/help/forms/best-practices-for-html5-forms.md)
+      + [Best practice per moduli HTML5](/help/forms/best-practices-for-html5-forms.md)
       + [Progettazione di moduli HTML5 accessibili](/help/forms/design-accessible-html5-forms.md)
       + [Generare l’anteprima HTML5 di un modulo XDP](/help/forms/preview-xdp-forms-html.md)
-      + [Rendering del modello di modulo per i moduli HTML5](/help/forms/rendering-form-template.md)
+      + [Rendering del modello moduli per i moduli HTML5](/help/forms/rendering-form-template.md)
       + [Abilitazione degli allegati per un modulo HTML5](/help/forms/enabling-attachments-html5-form.md)
-      + [proxy del servizio HTML5 forms](/help/forms/service-proxy.md)
+      + [Proxy del servizio moduli HTML5](/help/forms/service-proxy.md)
       + [Ottimizzazione dei moduli HTML5](/help/forms/optimize-html5-forms.md)
-      + [Lettori di schermo per moduli HTML5](/help/forms/screen-readers.md)
+      + [Assistente vocale per moduli HTML5](/help/forms/screen-readers.md)
       + [Creazione di un profilo personalizzato per i moduli HTML5](/help/forms/custom-profile.md)
       + [Lingue da destra a sinistra nei moduli HTML5](/help/forms/right-left-languages.md)
-      + [Integrazione di Form Bridge con il portale personalizzato per HTML5 Forms](/help/forms/integrate-form-bridge-forms-portal.md)
-      + [Creare aspetti personalizzati nei moduli di HTML5](/help/forms/custom-widgets.md)
-      + [Modifica degli stili predefiniti dei moduli di HTML5](/help/forms/changing-default-styles.md)
+      + [Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [Creare aspetti personalizzati nei moduli HTML5](/help/forms/custom-widgets.md)
+      + [Modifica degli stili predefiniti dei moduli HTML5](/help/forms/changing-default-styles.md)
       + [Supporto delle clausole di immagine per i moduli HTML5](/help/forms/picture-clause-support.md)
-      + [Creare tabelle complesse accessibili in moduli HTML5](/help/forms/accessible-tables.md)
+      + [Creare tabelle complesse accessibili nei moduli HTML5](/help/forms/accessible-tables.md)
       + [Creazione di stili CSS per i moduli HTML5](/help/forms/css-styles.md)
       + [Personalizzazione dei messaggi di errore per i moduli HTML5](/help/forms/customzing-errors-html5-forms.md)
-      + [Salvataggio di un modulo HTML5 come bozza](/help/forms/saving-html5-form-draft.md)
-      + [Abilita registrazione per moduli HTML5](/help/forms/enable-logs.md)
+      + [Salvare un modulo HTML5 come bozza](/help/forms/saving-html5-form-draft.md)
+      + [Abilitare la registrazione per i moduli HTML5](/help/forms/enable-logs.md)
       + [Debug di moduli HTML5](/help/forms/debug.md)
       + [Supporto di script per i moduli HTML5](/help/forms/scripting-support.md)
       + [Set di moduli in AEM Forms](/help/forms/formset-in-aem-forms.md)
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [Intelligenza artificiale generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Generare varianti](/help/generative-ai/generate-variations.md)
-   + [Assistente AI di AEM (Beta limitato)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [Assistente AI di AEM Forms (Forms Experience Builder) (precoce adozione)](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [Assistente IA di AEM (Beta limitato)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [Assistente IA di AEM Forms (Forms Experience Builder) (primi utilizzatori)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Assistente IA di AEM Forms - Libreria dei prompt](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementazione {#implementing}
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
