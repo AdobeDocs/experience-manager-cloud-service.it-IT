@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ La prossima versione è pianificata per il 7 agosto 2025.
 
 ## Programmi Alpha/Beta {#private-beta-program}
 
-Partecipa ai programmi alfa e beta di Cloud Manager per ottenere accesso esclusivo alle prossime funzionalità prima del loro rilascio generale.
+Partecipa ai programmi Alpha e Beta di Cloud Manager per ottenere un accesso esclusivo alle funzioni in arrivo prima del rilascio generale.
 
 Sono attualmente disponibili le seguenti opportunità:
 
@@ -49,7 +49,7 @@ Sono attualmente disponibili le seguenti opportunità:
 
 Ripristino rapido a un’implementazione precedente se il codice di origine più recente del cliente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**&#x200B;per un ambiente selezionato.*
+![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**per un ambiente selezionato.*
 
 
 ![Finestra di dialogo Ripristina codice precedente implementato](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
@@ -57,7 +57,7 @@ Ripristino rapido a un’implementazione precedente se il codice di origine più
 
 
 ![Ripristino dell’attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**&#x200B;fino al completamento dell’implementazione.*
+*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**fino al completamento dell’implementazione.*
 
 
 ![Versione del codice di origine in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell’ambiente, come illustrato in precedenza, mostra ora anche la versione del codice di origine attiva in uso.*
