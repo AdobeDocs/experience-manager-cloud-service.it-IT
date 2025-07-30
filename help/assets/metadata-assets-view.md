@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2430'
 ht-degree: 74%
 
 ---
@@ -130,10 +130,10 @@ Di seguito è riportata una panoramica di ciascun tipo di proprietà e della rel
 | Casella di selezione | Aggiungi un valore booleano. Memorizzato come TRUE o FALSE dopo il salvataggio di un valore. |
 | Data | Aggiungi un componente data. |
 | Elenchi a discesa | Aggiungi un elenco a discesa. |
-| Stato | Aggiungi la proprietà dello stato del repository (mappata a repo:state) |
+| Stato | Aggiungi la proprietà dello stato del repository (mappata al repository:state) |
 | Stato risorsa | Aggiungi la proprietà predefinita Stato risorsa (mappata a dam:assetStatus) |
-| Tag | Aggiungi un tag dai valori memorizzati in Gestione tassonomia (mappato a xcm:tags). |
-| Parole chiave | Aggiungi parole chiave in formato libero (mappate a dc:subject). |
+| Tag | Aggiungere un tag dai valori archiviati in Gestione tassonomia (mappato a xcm:tags). |
+| Parole chiave | Aggiungere parole chiave in formato libero (mappate a dc:subject). |
 | Tag avanzati | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
 
 ### Assegnare un modulo di metadati a una cartella {#assign-metadata-form-folder}
@@ -228,11 +228,8 @@ Per abilitare i metadati generati dall’intelligenza artificiale:
 
 * È necessario firmare un accordo GenAI Rider. Per ulteriori informazioni, contatta il rappresentante Adobe.
 
-  >[!IMPORTANT]
-  >
-  > Il titolo di una risorsa generato dall’intelligenza artificiale viene visualizzato nella scheda delle risorse solo se non ne è stato definito il titolo. Non sovrascrive il titolo della risorsa specificato dall’utente.
 
-### Utilizzo di metadati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
+### Utilizzo di metadati generati da IA {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -253,6 +250,8 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 1. [Facoltativo] Se ritieni che manchino dei tag rilevanti, puoi aggiungere altri tag o crearne di nuovi. A questo scopo, scrivi i tag nel campo **[!UICONTROL Parole chiave generate]** e fai clic su **[!UICONTROL Salva]**.
 
+Per informazioni su come disabilitare i metadati generati dall&#39;intelligenza artificiale, vedi [Disabilitare i metadati generati dall&#39;intelligenza artificiale](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+
 ## Passaggi successivi {#next-steps}
 
 * [Guarda un video per gestire i moduli di metadati nella visualizzazione Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=it)
@@ -261,7 +260,7 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
