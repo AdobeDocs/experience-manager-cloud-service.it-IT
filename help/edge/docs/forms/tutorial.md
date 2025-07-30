@@ -4,10 +4,10 @@ description: Questo tutorial ti mostrerà come essere subito operativo con un nu
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,8 +111,8 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 1. Ora che hai configurato la cartella dei contenuti, puoi collegarla al progetto su GitHub che hai creato utilizzando precedentemente moduli AEM ricorrenti. Per connettersi:
 
    1. vai all’archivio GitHub che hai creato in precedenza utilizzando moduli AEM ricorrenti.
-   1. Apri `fstab.yaml` per la modifica.
-   1. Sostituisci il riferimento esistente con il percorso della cartella condivisa con l’utente AEM (forms@adobe.com).
+   1. Aggiungere il file `fstab.yaml` nella cartella principale.
+   1. Aggiungi il riferimento con il percorso alla cartella condivisa con l’utente di AEM (forms@adobe.com).
 
       ![Contenuto di esempio su Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
       Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, consulta [Come usare Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Conferma l’aggiornamento del file `fsatb.yaml` dopo aver aggiornato il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
+   1. Eseguire il commit del file `fsatb.yaml`, dopo aver aggiunto il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
 
       ![Conferma l’aggiornamento del file fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 

@@ -4,10 +4,10 @@ description: Questo tutorial ti mostrerà come iniziare subito con un nuovo prog
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms fornisce un blocco, noto come Blocco di moduli adattivi, per facilitar
 ![Flusso di lavoro archivio Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Questo tutorial ti consente di creare, visualizzare in anteprima e pubblicare un modulo personalizzato con un progetto di sito Adobe Experience Manager nuovo o esistente mediante l’authoring WYSIWYG dell’editor universale.
-
 
 ## Prerequisiti
 
@@ -66,16 +65,16 @@ Il modello standard di AEM Forms consente di iniziare rapidamente un progetto AE
 1. Ora collega l’archivio GitHub creato utilizzando il Modello di archivio standard per AEM Forms al tuo ambiente di authoring di progetti AEM. Per connettersi:
 
    1. vai all’archivio GitHub che hai creato in precedenza utilizzando moduli AEM ricorrenti.
-   1. Apri il file **fstab.yaml** per la modifica.
+   1. Aggiungi il file **fstab.yaml** nella cartella principale.
 
       ![apri file fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. Modifica il file **fstab.yaml** per aggiornare il punto di montaggio del progetto. Sostituisci l’URL con l’URL dell’istanza di authoring di AEM as a Cloud Service.
+   1. Aggiungi il punto di montaggio del progetto al file **fstab.yaml**. Aggiungi l’URL dell’istanza di authoring di AEM as a Cloud Service.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![modifica file fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Dopo aver aggiornato il riferimento e una volta che tutto sembra corretto, conferma l’aggiornamento del file **fstab.yaml**.
+   1. Esegui il commit del file **fstab.yaml**, dopo aver aggiunto il riferimento e tutto sembra a posto.
 
       ![conferma le modifiche](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -176,7 +175,7 @@ Per integrare:
    * Cartella [blocco modulo](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
    * File [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
    * File [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
-1. Passa al file `/scripts/editor-support.js` nel progetto AEM e aggiornalo con il file [editor-support.js in nel modello AEM standard](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. Passa al file `/scripts/editor-support.js` nel progetto AEM e aggiornalo con il file[editor-support.js nel modello standard AEM](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
 1. Passa a `/models/_section.json` nel progetto AEM e aggiungi “modulo” e “modulo adattivo incorporato” all’array dei componenti dell’oggetto `filters`:
 
    ```
