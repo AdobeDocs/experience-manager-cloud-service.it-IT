@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 41%
+source-wordcount: '698'
+ht-degree: 37%
 
 ---
 
@@ -49,15 +49,19 @@ In un ambiente è possibile installare entrambi i domini nella rete CDN gestita 
 
 ## Flusso di lavoro {#workflow}
 
-L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra il servizio DNS e Cloud Manager. A causa di questo flusso di lavoro, sono necessari diversi passaggi per installare, configurare e verificare i nomi di dominio personalizzati. La tabella seguente offre una panoramica dei passaggi necessari, inclusi i collegamenti alle risorse della documentazione per completare tali passaggi.
+L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra il servizio DNS e Cloud Manager. A causa di questo flusso di lavoro, sono necessari diversi passaggi per installare, configurare e verificare i nomi di dominio personalizzati. La tabella seguente illustra i passaggi necessari, con collegamenti alle risorse della documentazione per completare tali passaggi.
 
-| Passaggio | Descrizione | Documentazione |
-| --- | --- | --- |
-| 1 | Aggiungere un certificato SSL a Cloud Manager | [Aggiungi un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Aggiungere un dominio personalizzato a Cloud Manager | [Aggiungi un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Configurazione delle impostazioni DNS tramite aggiunta dei record DNS CNAME o APEX che puntano a AEM as a Cloud Service | [Aggiungi un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | Verifica stato del dominio | [Verifica lo stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Verifica dello stato del record DNS | [Verifica stato record DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+>[!WARNING]
+>
+>Eseguire il passaggio 4 (configurare DNS) *solo dopo* il passaggio 3 (aggiungere la mappatura del dominio) è stato completato. In base a questo ordine, il dominio viene registrato con la rete CDN di Adobe e viene impostato il routing corretto, proteggendo il sito dalle acquisizioni del dominio.
+
+| Passaggio | Descrizione |
+| --- | --- |
+| 1 | [Aggiungi certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | [Aggiungi un dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | [Aggiungi mapping di dominio](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | [Configura DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [Verifica stato DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
@@ -75,7 +79,7 @@ L’aggiunta di un nome di dominio personalizzato richiede l’interazione tra i
 * Prima di aggiungere un nome di dominio personalizzato, è necessario installare un certificato SSL valido contenente il nome di dominio personalizzato (i certificati con caratteri jolly sono validi).
 * Sono necessari ulteriori passaggi di configurazione per utilizzare un nome di dominio personalizzato con [la funzionalità pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains).
 
-## Inizia {#get-started}
+## Introduzione {#get-started}
 
 * Inizia a configurare un nuovo nome di dominio personalizzato per il progetto [aggiungendo un certificato SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Gestisci i tuoi nomi di dominio esistenti consultando il documento [Gestisci nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).

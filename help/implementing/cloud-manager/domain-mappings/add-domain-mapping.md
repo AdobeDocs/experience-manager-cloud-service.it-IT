@@ -1,14 +1,14 @@
 ---
-title: Aggiungere una mappatura dominio
+title: Aggiungere una mappatura di dominio
 description: Scopri come aggiungere una mappatura di dominio per un sito Edge Delivery o un ambiente Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
@@ -53,3 +53,22 @@ Vedi anche [CDN gestito da Adobe](https://www.aem.live/docs/byo-cdn-adobe-manage
    | Altro provider CDN | Seleziona questa opzione se utilizzi un provider CDN personalizzato e non la rete CDN gestita di Adobe disponibile.<br>In **Dettagli configurazione**, nell&#39;elenco a discesa **Dominio**, selezionare il nome di dominio che si desidera utilizzare.<br>Nessun dominio verificato disponibile nell&#39;elenco a discesa? Consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Fai clic su **Salva**.
+
+   Adobe consiglia di testare la mappatura del dominio.
+
+## Testare la mappatura del dominio {#test-domain-mapping}
+
+Puoi verificare che un nuovo mapping di dominio sia attivo sulla rete CDN gestita da Adobe senza attendere la propagazione del DNS pubblico.
+
+Esegui un comando **curl** che esegue l&#39;override della risoluzione DNS e punta direttamente al server Edge CDN:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Sostituisci **`www.example.com`** con il tuo dominio.
+* Sostituisci **151.101.3.10** con l&#39;indirizzo IP di Edge visualizzato in Cloud Manager per questa mappatura.
+
+Il flag `--resolve` forza la richiesta all&#39;IP specificato e restituisce l&#39;esito positivo solo dopo che il certificato e il routing per il dominio sono stati installati correttamente.
+
