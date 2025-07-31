@@ -114,7 +114,7 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
 * Si consiglia di mantenere il contenuto dell’e-mail chiaro e conciso. Gli utenti devono comprendere lo scopo dell’e-mail e tutte le azioni da intraprendere.
 * Si consiglia di assegnare nomi elementi univoci a tutti i campi modulo, anche se sono posizionati in pannelli diversi all’interno di un modulo adattivo.
-* Quando si utilizza AEM as a Cloud Service, i messaggi e-mail in uscita richiedono la crittografia. Per impostazione predefinita, la funzionalità e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [richiedi l&#39;accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+* Quando si utilizza AEM as a Cloud Service, i messaggi e-mail in uscita richiedono la crittografia. Per impostazione predefinita, la funzionalità e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [richiedi l&#39;accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it#sending-email).
 
 ## Articoli correlati
 

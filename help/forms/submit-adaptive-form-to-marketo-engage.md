@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-3.png)
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) all&#39;invio.
+L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home) all&#39;invio.
 
 Sono disponibili varie azioni di invio predefinite per la gestione degli invii dei moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -94,7 +94,7 @@ Dopo aver configurato l&#39;azione di invio per il modulo adattivo come **Invia 
 
 ## Passaggio successivo
 
-È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
+È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
 
 ## Articoli correlati
 

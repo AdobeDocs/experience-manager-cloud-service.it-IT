@@ -18,7 +18,7 @@ ht-degree: 7%
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-4.png)
 
-Dopo aver creato la configurazione del servizio cloud per integrare Marketo Engage con AEM Forms, puoi configurare un modulo adattivo da integrare con [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
+Dopo aver creato la configurazione del servizio cloud per integrare Marketo Engage con AEM Forms, puoi configurare un modulo adattivo da integrare con [Adobe Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home).
 
 È possibile collegare Marketo Engage a un modulo adattivo utilizzando la procedura guidata del modulo, che semplifica il processo di configurazione guidando l’utente attraverso ogni passaggio. Include la selezione di modelli, stili e campi dati, nonché la configurazione della mappatura dei dati per garantire che il modulo sia pronto per la comunicazione con Marketo Engage dopo la creazione. Utilizzando la procedura guidata del modulo, puoi anche configurare il modulo adattivo in modo che invii i dati direttamente a Adobe Marketo Engage al momento dell’invio.
 
@@ -178,7 +178,7 @@ Il modulo adattivo è ora configurato per connettersi all’istanza di Marketo E
 
 ## Passaggio successivo
 
-È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
+È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
 
 ## Articoli correlati
 
