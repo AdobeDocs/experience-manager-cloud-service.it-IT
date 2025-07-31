@@ -2,12 +2,12 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Come collegare la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint per un modulo adattivo, Libreria documenti di AEM Forms Data Model SharePoint, Libreria documenti di Forms Data Model SharePoint, Integrare il modello dati di Forms nella raccolta documenti di SharePoint
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Per utilizzare l&#39;azione di invio **[!UICONTROL Invia a raccolta documenti di
 1. [Crea una configurazione della libreria di documenti di SharePoint](#1-create-a-sharepoint-document-library-configuration): connette AEM Forms all&#39;archiviazione di Microsoft® Sharepoint.
 2. [Utilizzare l&#39;azione Invia a SharePoint in un modulo adattivo](#2-use-sharepoint-document-library-configuration-in-an-adaptive-form): il modulo adattivo viene collegato a Microsoft® SharePoint configurato.
 
-## 1. Creare una configurazione di SharePoint Document Library
+## &#x200B;1. Creare una configurazione di SharePoint Document Library
 
 Per collegare AEM Forms all&#39;archivio della raccolta documenti di Microsoft® Sharepoint:
 
@@ -59,30 +59,73 @@ Per collegare AEM Forms all&#39;archivio della raccolta documenti di Microsoft®
 
 Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
 
-### 2. Utilizzare la configurazione della raccolta documenti di SharePoint in un modulo adattivo
+### &#x200B;2. Utilizzare la configurazione della raccolta documenti di SharePoint in un modulo adattivo
 
-È possibile utilizzare la configurazione della raccolta documenti di SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di SharePoint. Per utilizzare una configurazione di archiviazione SharePoint Document Library in un modulo adattivo, effettua le seguenti operazioni:
+È possibile utilizzare la configurazione della raccolta documenti di SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di SharePoint.
 
-1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form-core-components.md).
+>[!NOTE]
+>
+> * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stata creata l&#39;archiviazione della raccolta documenti di SharePoint.
+> * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
-   >[!NOTE]
-   >
-   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stata creata l&#39;archiviazione della raccolta documenti di SharePoint.
-   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
+>[!BEGINTABS]
 
-1. Seleziona **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
+>[!TAB Componente di base]
+
+Per utilizzare una configurazione di archiviazione della libreria di documenti di SharePoint in un modulo adattivo basato su un componente di base, effettua le seguenti operazioni:
+
+1. Apri il modulo adattivo per la modifica e passa alla sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
+   ![GIF Sharepoint](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+>[!NOTE]
+>
+> * Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato. La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+
+>[!TAB Componente core]
+
+Per utilizzare una configurazione di archiviazione della libreria di documenti di SharePoint in un modulo adattivo basato su componente core, effettua le seguenti operazioni:
+
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
    ![GIF Sharepoint](/help/forms/assets/sharedrive-video.gif)
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
 >[!NOTE]
 >
-> Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato. La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato. La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+
+>[!TAB Editor universale]
+
+Per utilizzare una configurazione di archiviazione della raccolta documenti di SharePoint in un modulo adattivo creato in Universal Editor, effettua le seguenti operazioni:
+
+1. Apri il modulo adattivo per la modifica.
+1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.
+Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
+   >[!NOTE]
+   >
+   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
+   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+
+1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia a SharePoint]** azione di invio.
+   ![GIF Sharepoint](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
+1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]** per salvare le impostazioni di invio.
 
 >[!NOTE]
 >
-> Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
-> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+> * Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato. La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+
+>[!ENDTABS]
 
 ## Articoli correlati
 

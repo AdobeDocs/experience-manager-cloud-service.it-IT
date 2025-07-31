@@ -1,15 +1,15 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
-keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, configurazione di OneDrive con moduli AEM
-feature: Adaptive Forms, Core Components
+Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, configurazione di OneDrive con AEM Forms
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 2%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 1%
 
 L&#39;azione di invio **[!UICONTROL Invia a OneDrive]** collega un modulo adattivo a Microsoft® OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft® OneDrive collegato.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/aem-forms-submit-action.md).
 
 ## Vantaggi
 
 Alcuni dei vantaggi dell&#39;integrazione diretta di AEM Forms e Microsoft® OneDrive sono:
 
 * L&#39;accessibilità cross-device di OneDrive garantisce che i dati dei moduli archiviati siano prontamente disponibili su piattaforme diverse. Gli utenti possono accedere ai dati, agli allegati e ai documenti inviati da desktop, notebook, tablet e dispositivi mobili, migliorando l&#39;accessibilità e la flessibilità.
-* L&#39;integrazione di OneDrive con i moduli AEM fornisce una soluzione affidabile e scalabile per l&#39;archiviazione efficiente dei dati. Tutti gli invii di moduli adattivi, come file, allegati e documenti di record, possono essere salvati in OneDrive in modo semplice, garantendo dati organizzati e accessibili.
+* L&#39;integrazione di OneDrive con AEM Forms fornisce una soluzione affidabile e scalabile per l&#39;archiviazione efficiente dei dati. Tutti gli invii di moduli adattivi, come file, allegati e documenti di record, possono essere salvati in OneDrive in modo semplice, garantendo dati organizzati e accessibili.
 
 ## Connessione di OneDrive a un modulo adattivo
 
@@ -39,7 +39,7 @@ La configurazione di OneDrive per l&#39;invio di AEM Forms prevede i seguenti pa
 
 Per collegare AEM Forms allo storage Microsoft® OneDrive:
 
-1. Vai all&#39;istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® OneDrive]**.
+1. Vai all&#39;**istanza di AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® OneDrive]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® OneDrive]**, sei reindirizzato a **[!UICONTROL OneDrive Browser]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fai clic su **[!UICONTROL Crea]**. Verrà visualizzata la configurazione guidata di OneDrive.
@@ -69,21 +69,61 @@ Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;az
 
 ### Usa configurazione OneDrive in un modulo adattivo {#use-onedrive-configuartion-in-af}
 
-È possibile utilizzare la configurazione di archiviazione di OneDrive creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di OneDrive. Per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo, effettua le seguenti operazioni:
-1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form.md).
+È possibile utilizzare la configurazione di archiviazione di OneDrive creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di OneDrive.
 
-   >[!NOTE]
-   >
-   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo spazio di archiviazione di OneDrive.
-   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
+>[!NOTE]
+>
+> * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo spazio di archiviazione di OneDrive.
+> * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
 
-1. Seleziona **Invia azione** come **[!UICONTROL Invia a OneDrive]**.
-   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+>[!BEGINTABS]
+
+>[!TAB Componente di base]
+
+Per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo basato su Componente di base, effettua le seguenti operazioni:
+
+1. Apri il modulo adattivo per la modifica e passa alla sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **[!UICONTROL Invia a OneDrive]**.
+   ![GIF OneDrive](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
+È inoltre possibile salvare il documento di record (DoR) in OneDrive.
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
 
 Quando si invia il modulo, i dati vengono salvati nell&#39;archivio Microsoft® OneDrive specificato.
 La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!TAB Componente core]
+
+Per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo basato su Componente core, effettua le seguenti operazioni:
+
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
+1. Dall&#39;elenco a discesa **[!UICONTROL Invia azione]**, selezionare **[!UICONTROL Invia a OneDrive]**.
+   ![GIF OneDrive](/help/forms/assets/onedrive-video.gif)
+È inoltre possibile salvare il documento di record (DoR) in OneDrive.
+1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
+1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+
+>[!TAB Editor universale]
+
+Per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo creato in Universal Editor, effettua le seguenti operazioni:
+
+1. Apri il modulo adattivo per la modifica.
+1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.
+Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
+   >[!NOTE]
+   >
+   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
+   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia a OneDrive]**.
+   ![GIF OneDrive](/help/forms/assets/submit-to-onedrive-ue.png)
+Se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali. Puoi anche salvare il documento di record (DoR) nell’archiviazione BLOB di Azure.
+1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
+1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**
+
+>[!ENDTABS]
 
 ## Articoli correlati
 

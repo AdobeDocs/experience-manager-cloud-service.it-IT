@@ -1,45 +1,58 @@
 ---
 title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '3957'
-ht-degree: 4%
+source-wordcount: '255'
+ht-degree: 23%
 
 ---
 
-# Azione di invio per modulo adattivo {#configuring-the-submit-action}
+# Azione di invio per Forms adattivo basato su componenti di base
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=it) |
-| AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/configure-submit-actions-core-components.md) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componenti di base) | Questo articolo |
+| AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Edge Delivery Services) | [Fai clic qui](/help/forms/configure-submit-action-eds-forms.md) |
 
-**Si applica a**: ✔️ componenti di base modulo adattivo. ❌ [Componenti core modulo adattivo](/help/forms/configure-submit-actions-core-components.md). Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare un Forms adattivo autonomo](creating-adaptive-form-core-components.md).
+<!--
+**Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
 
-Un&#39;azione di invio viene attivata quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Forms as a Cloud Service fornisce le seguenti azioni di invio pronte all’uso.
+Il [Forms adattivo basato sul componente Foundation](/help/forms/creating-adaptive-form.md) supporta diverse [azioni di invio predefinite](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components). Un&#39;azione Invia viene attivata quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo.
 
-* [Invia a endpoint REST](#submit-to-rest-endpoint)
-* [Invia e-mail](#send-email)
-* [Invia utilizzando modalità dati modulo (FDM)l](#submit-using-form-data-model)
-* [Richiama un flusso di lavoro AEM](#invoke-an-aem-workflow)
-* [Invia a SharePoint](#submit-to-sharedrive)
-* [Invia a OneDrive](#submit-to-onedrive)
-* [Invia ad Azure Blob Storage](#azure-blob-storage)
-* [Invia a Power Automate](#microsoft-power-automate)
-* [Invia a Workfront Fusion](#workfront-fusion)
-* [Invia a Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+## Inviare azioni per Forms basate su Componenti di base
 
-Puoi anche [estendere le azioni di invio predefinite](custom-submit-action-form.md) per creare un&#39;azione di invio personalizzata.
+Le seguenti azioni di invio sono supportate da Forms adattivo basato su Componenti di base:
+
+* [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
+* [Richiama un flusso Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Richiama Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Inviare mediante il modello di dati modulo (FDM)](/help/forms/using-form-data-model.md)
+* [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Invia a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
+* [Invia a Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Invia a Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+
+Puoi anche inviare un modulo adattivo basato su componenti di base ad altre configurazioni di archiviazione:
+
+* [Collegare un modulo adattivo all’applicazione Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [Collegare un modulo adattivo a Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+
+Inoltre, puoi [personalizzare le azioni di invio predefinite](/help/forms/custom-submit-action-form.md) per allinearle a specifici requisiti organizzativi.
+
+### Configurare un’azione di invio per un modulo basato su componenti di base
 
 Puoi configurare un’azione di invio nella sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo nella barra laterale.
 
-![Configura azione di invio](assets/submission.png)
-
+![Azione di invio AEM Forms](/help/forms/assets/submit-form-foundation-component.png)
 
 <!-- [!NOTE]
 >
@@ -58,71 +71,70 @@ Puoi configurare un’azione di invio nella sezione **[!UICONTROL Invio]** delle
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
--->
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) 
 
-## Invia a endpoint REST {#submit-to-rest-endpoint}
+## Submit to REST endpoint {#submit-to-rest-endpoint}
 
-Utilizzare l&#39;azione **[!UICONTROL Invia all&#39;endpoint REST]** per inviare i dati inviati a un URL rest. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
+Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted data to a rest URL. The URL can be of an internal (the server on which the form is rendered) or an external server.
 
-Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+To post data to an internal server, provide path of the resource. The data is posted the path of the resource. For example, /content/restEndPoint. For such post requests, the authentication information of the submit request is used.
 
-Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+To post data to an external server, provide a URL. The format of the URL is `https://host:port/path_to_rest_end_point`. Ensure that you configure the path to handle the POST request anonymously.
 
-![Mappatura dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
+![Mapping for field values passed as Thank You Page parameters](assets/post-enabled-actionconfig.png)
 
-Nell&#39;esempio precedente, le informazioni immesse dall&#39;utente in `textbox` vengono acquisite tramite il parametro `param1`. La sintassi per pubblicare i dati acquisiti tramite `param1` è:
+In the example above, user entered information in `textbox` is captured using parameter `param1`. Syntax to post data captured using `param1` is:
 
 `String data=request.getParameter("param1");`
 
-Analogamente, i parametri utilizzati per la registrazione di dati e allegati XML sono `dataXml` e `attachments`.
+Similarly, parameters that you use for posting XML data and attachments are `dataXml` and `attachments`.
 
-Ad esempio, questi due parametri vengono utilizzati nello script per analizzare i dati in un punto finale rest. Utilizza la sintassi seguente per archiviare e analizzare i dati:
+For example, you use these two parameters in your script to parse data to a rest end point. You use the following syntax to store and parse the data:
 
 `String data=request.getParameter("dataXml");`
 `String att=request.getParameter("attachments");`
 
-In questo esempio, `data` memorizza i dati XML e `att` i dati dell&#39;allegato.
+In this example, `data` stores the XML data, and `att` stores attachment data.
 
-L&#39;azione di invio **[!UICONTROL Invia all&#39;endpoint REST]** invia i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
+The **[!UICONTROL Submit to REST endpoint]** Submit Action submits the data filled in the form to a configured confirmation page as part of the HTTP GET request. You can add the name of the fields to request. The format of the request is:
 
 `{fieldName}={request parameter name}`
 
-Come mostrato nell&#39;immagine seguente, `param1` e `param2` vengono passati come parametri con valori copiati dai campi **textbox** e **numericbox** per l&#39;azione successiva.
+As shown in the image below, `param1` and `param2` are passed as parameters with values copied from the **textbox** and **numericbox** fields for the next action.
 
-![Configurazione dell&#39;azione di invio dell&#39;endpoint REST](assets/action-config.png)
+![Configuring Rest Endpoint Submit Action](assets/action-config.png)
 
-Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
+You can also **[!UICONTROL Enable POST request]** and provide a URL to post the request. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, `/content/forms/af/SampleForm.html`. To submit data to any other server, use absolute path.
 
 >[!NOTE]
 >
->Per passare i campi come parametri in un URL REST, tutti i campi devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi.
+>To pass the fields as parameters in a REST URL, all the fields must have different element names, even if the fields are placed on different panels.
 
-## Invia e-mail {#send-email}
+## Send Email {#send-email}
 
-È possibile utilizzare l&#39;azione di invio **[!UICONTROL Invia e-mail]** per inviare un&#39;e-mail a uno o più destinatari quando il modulo viene inviato correttamente. L’e-mail generata può contenere dati del modulo in un formato predefinito. Ad esempio, nel modello seguente, il nome del cliente, l’indirizzo di spedizione, il nome dello stato e il codice postale vengono recuperati dai dati del modulo inviati.
+You can use the **[!UICONTROL Send Email]** Submit Action to send an email to one or more recipients on successful submission of the form. The email generated can contain form data in a predefined format. For example, in the following template, customer name, shipping address, name of the state, and zip code are retrieved from submitted form data.
 
-    &quot;
-    
-    Ciao ${customer_Name},
-    
-    L&#39;indirizzo di spedizione predefinito è:
+    ```
+
+    Hi ${customer_Name},
+
+    The following is set as your deafult shipping address:
     ${customer_Name},
     ${customer_Shipping_Address},
     ${customer_State},
     ${customer_ZIPCode}
-    
-    Cordiali saluti,
-    WKND
-    
-    &quot;
+
+    Regards,
+    WKND 
+
+    ```
 
 >[!NOTE]
 >
-> * Tutti i campi modulo devono avere nomi di elementi diversi, anche se i campi sono posizionati su pannelli diversi di un modulo adattivo.
-> * AEM as a Cloud Service richiede la crittografia della posta in uscita. Per impostazione predefinita, l’e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [Richiedendo l&#39;accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it#sending-email).
+> * All the form fields must have different element names, even if the fields are placed on different panels of an Adaptive Form.
+> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
 
-Puoi anche includere nell’e-mail allegati e un documento di record (DoR). Per abilitare l&#39;opzione **[!UICONTROL Allega documento di record]**, configura il modulo adattivo per generare un documento di record (DoR). Puoi abilitare l’opzione per generare un documento di record dalle proprietà del modulo adattivo.
+You can also include attachments and a Document of Record (DoR) to the email. To enable **[!UICONTROL Attach Document of Record]** option, configure the Adaptive Form to generate a Document of Record (DoR). You can enable the option to generate a Document of Record from Adaptive Form properties.
 
 
 
@@ -138,343 +150,343 @@ The **Send PDF via Email** Submit Action sends an email with a PDF containing fo
 
 The **Submit to Forms workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or [!DNL AEM Forms] on JEE process.
 
-For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
+For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). 
 
-## Invia utilizzando il modello dati modulo (FDM) {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-L&#39;azione di invio **[!UICONTROL Invia tramite modello dati modulo]** scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati modulo (FDM) nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
+The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-È inoltre possibile inviare un allegato modulo all&#39;origine dati utilizzando un modello dati modulo (FDM) e un documento di record (DoR). Per informazioni sul modello dati modulo (FDM), vedere [[!DNL AEM Forms] Integrazione dati](data-integration.md).
+In addition, you can submit a form attachment using a Form Data Model (FDM) and a Document of Record (DoR) to the data source. For information about form data model (FDM), see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
 
 The **Forms Portal Submit Action** option makes form data available through an [!DNL AEM Forms] portal.
 
-For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
+For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md).
 
-## Richiama un flusso di lavoro AEM {#invoke-an-aem-workflow}
+## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-L&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]** associa un modulo adattivo a un [flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza Autore. Puoi salvare il file di dati, gli allegati e il documento di record nella posizione di payload del flusso di lavoro o in una variabile. Se il flusso di lavoro è contrassegnato per l’archiviazione dati esterna e configurato per un’archiviazione dati esterna, è disponibile solo l’opzione della variabile. Puoi effettuare una selezione dall’elenco di variabili disponibili per il modello di flusso di lavoro. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni in una fase successiva e non al momento della creazione del flusso di lavoro, assicurati che siano presenti le configurazioni di variabili richieste.
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the payload location of the workflow or to a variable. If the workflow is marked for external data storage and configured for an external data storage, then only the variable option is available. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
 
-L’azione di invio inserisce quanto segue nella posizione di payload del flusso di lavoro, o nella variabile se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni:
+The Submit Action places the following at the payload location of the workflow, or the variable if the workflow is marked for external data storage: 
 
-* **File di dati**: contiene i dati inviati al modulo adattivo. È possibile utilizzare l&#39;opzione **[!UICONTROL Percorso file dati]** per specificare il nome del file e il percorso del file relativo al payload. Il percorso `/addresschange/data.xml`, ad esempio, crea una cartella denominata `addresschange` e la inserisce in relazione al payload. È inoltre possibile specificare solo `data.xml` per inviare solo i dati inviati senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
+* **Data file**: It contains data submitted to the Adaptive Form. You can use the **[!UICONTROL Data File Path]** option to specify the name of the file and path of file relative to the payload. For example, the `/addresschange/data.xml` path creates a folder named `addresschange` and places it relative to payload. You can also specify only `data.xml` to send only submitted data without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model. 
 
-* **Allegati**: è possibile utilizzare l&#39;opzione **[!UICONTROL Percorso allegato]** per specificare il nome della cartella in cui archiviare gli allegati caricati nel modulo adattivo. La cartella viene creata in relazione al payload. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
+* **Attachments**: You can use the **[!UICONTROL Attachment Path]** option to specify the folder name to store the attachments uploaded to the Adaptive Form. The folder is created relative to the payload. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+ 
+* **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
 
-* **Documento record**: contiene il documento record generato per il modulo adattivo. È possibile utilizzare l&#39;opzione **[!UICONTROL Percorso del documento record]** per specificare il nome del file del documento record e il percorso del file relativo al payload. Ad esempio, il percorso `/addresschange/DoR.pdf` crea una cartella denominata `addresschange` relativa al payload e inserisce `DoR.pdf` relativa al payload. È inoltre possibile specificare solo `DoR.pdf` per salvare solo il documento di record senza creare una gerarchia di cartelle. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni, utilizza l’opzione della variabile e seleziona la variabile dall’elenco di variabili disponibili per il modello di flusso di lavoro.
+Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure the following for the **[!UICONTROL AEM DS settings service]** configuration: 
 
-Prima di utilizzare l&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]**, configura quanto segue per la configurazione del **[!UICONTROL servizio impostazioni DS AEM]**:
+* **[!UICONTROL Processing Server URL]**: The Processing Server is the server where the Forms or AEM Workflow is triggered. This can be same as the URL of the AEM author instance or another server.
 
-* **[!UICONTROL URL server di elaborazione]**: il server di elaborazione è il server in cui viene attivato il flusso di lavoro di Forms o AEM. Può essere uguale all’URL dell’istanza di authoring di AEM o di un altro server.
+* **[!UICONTROL Processing Server User Name]**: Workflow user's username
 
-* **[!UICONTROL Elaborazione nome utente server]**: nome utente dell&#39;utente del flusso di lavoro
+* **[!UICONTROL Processing Server Password]**: Workflow user's password
 
-* **[!UICONTROL Elaborazione password server]**: password utente flusso di lavoro
+## Submit to SharePoint {#submit-to-sharedrive}
 
-## Invia a SharePoint {#submit-to-sharedrive}
+The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-L&#39;azione di invio **[!UICONTROL Invia a SharePoint]** collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
-
-Utilizzando Invia a SharePoint, puoi:
-* [Collegare un modulo adattivo alla raccolta documenti di SharePoint](#connect-af-sharepoint-doc-library)
-* [Collegare un modulo adattivo all&#39;elenco di SharePoint](#connect-af-sharepoint-list)
+Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
 
 
-### Collegare un modulo adattivo alla raccolta documenti di SharePoint {#connect-af-sharepoint-doc-library}
+### Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
-Per utilizzare l&#39;azione di invio **[!UICONTROL Invia a raccolta documenti di SharePoint]** in un modulo adattivo:
+To use the **[!UICONTROL Submit to SharePoint Document Library]** Submit Action in an Adaptive Form:
 
-1. [Crea una configurazione della libreria di documenti di SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): connette AEM Forms all&#39;archiviazione di Microsoft® Sharepoint.
-2. [Utilizzare l&#39;azione Invia a SharePoint in un modulo adattivo](#use-sharepoint-configuartion-in-af): il modulo adattivo viene collegato a Microsoft® SharePoint configurato.
+1. [Create a SharePoint Document Library Configuration](#create-a-sharepoint-configuration-create-sharepoint-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint Storage.
+2. [Use the Submit to SharePoint submit action in an Adaptive Form](#use-sharepoint-configuartion-in-af): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
 
-#### Creare una configurazione di SharePoint Document Library {#create-sharepoint-configuration}
+#### Create a SharePoint Document Library configuration {#create-sharepoint-configuration}
 
-Per connettere AEM Forms all&#39;archiviazione della raccolta documenti di Microsoft® Sharepoint:
+To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library Storage:
 
-1. Vai alla tua istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
-1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, sei reindirizzato a **[!UICONTROL SharePoint Browser]**.
-1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Libreria documenti di SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
+1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
 
-   ![Configurazione Sharepoint](/help/forms/assets/sharepoint_configuration.png)
-1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
-   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire le autorizzazioni di lettura/scrittura.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+    ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-   >[!NOTE]
-   >
-   > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+    >[!NOTE]
+    >
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+    
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
-1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
+1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
 
-1. Selezionare **Sito SharePoint** > **Raccolta documenti** > **Cartella SharePoint** per salvare i dati.
+    >[!NOTE]
+    >
+    >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at selected SharePoint Site.
+    >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present in the `Documents` library of the selected SharePoint Site by clicking **Create Folder**.
 
-   >[!NOTE]
-   >
-   >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel sito SharePoint selezionato.
-   >* Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente nella raccolta `Documents` del sito SharePoint selezionato facendo clic su **Crea cartella**.
+Now, you can use this SharePoint Sites configuration for the submit action in an Adaptive Form. 
 
-Ora puoi utilizzare questa configurazione di SharePoint Sites per l’azione di invio in un modulo adattivo.
+#### Use SharePoint Document Library Configuration in an Adaptive Form {#use-sharepoint-configuartion-in-af}
 
-#### Utilizzare la configurazione della raccolta documenti di SharePoint in un modulo adattivo {#use-sharepoint-configuartion-in-af}
+You can use the created SharePoint Document Library configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form as:
 
-È possibile utilizzare la configurazione della raccolta documenti di SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di SharePoint. Per utilizzare una configurazione di archiviazione SharePoint Document Library in un modulo adattivo, effettua le seguenti operazioni:
+1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
 
-1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form.md).
+    >[!NOTE]
+    >
+    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your SharePoint Document Library storage. 
+    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
 
-   >[!NOTE]
-   >
-   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stata creata l&#39;archiviazione della raccolta documenti di SharePoint.
-   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
+1. Select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
+    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
+1. Click **[!UICONTROL Save]** to save the Submit settings.
 
-1. Seleziona **Invia azione** come **[!UICONTROL Invia a SharePoint]**.
-   ![GIF Sharepoint](/help/forms/assets/sharedrive-video.gif)
-1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
-1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
-
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio della raccolta documenti di Microsoft® Sharepoint specificato.
-La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. 
+Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
 >[!NOTE]
 >
-> Gli allegati vengono archiviati anche nella directory `/folder_name/form_name/year/month/date/submission_id/data`. Tuttavia, se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali.
+> Attachments are also stored in the `/folder_name/form_name/year/month/date/submission_id/data` directory. However, if you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames.
 > ![image](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
-### Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
+### Connect an Adaptive Form to Microsoft&reg; SharePoint List {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-Per utilizzare l&#39;azione di invio [!UICONTROL Invia a elenco SharePoint] in un modulo adattivo:
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
-1. [Crea una configurazione elenco SharePoint](#create-sharepoint-list-configuration): connette AEM Forms all&#39;archiviazione elenco Microsoft® Sharepoint.
-1. [Utilizzare l&#39;invio utilizzando il modello dati del modulo (FDM) in un modulo adattivo](#use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint List Storage.
+1. [Use the Submit using Form Data Model (FDM) in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
 
-#### Creare una configurazione dell’elenco SharePoint {#create-sharepoint-list-configuration}
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
 
-Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
-1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
-1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
-   * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nella scheda **Microsoft® Graph** per fornire le autorizzazioni di lettura/scrittura. Aggiungere l&#39;autorizzazione `AllSites.Manage` nella scheda **Sharepoint** per interagire in remoto con i dati di SharePoint.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-     >[!NOTE]
-     >
-     > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
 
-1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
-1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
-1. Selezionare **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 
-#### Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
+#### Use the Submit using Form Data Model (FDM) in an Adaptive Form {#use-submit-using-fdm}
 
-È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
-1. [Creare un modello dati modulo (FDM) tramite Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
-1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form.md)
-1. [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Create a Form Data Model (FDM) using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Microsoft® Sharepoint specificato.
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
 >[!NOTE]
 >
-> In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
-> * colonna immagine
-> * colonna metadati
-> * colonna persona
-> * colonna di dati esterni
+> In Microsoft&reg; SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
 
 
-## Invia a OneDrive {#submit-to-onedrive}
+## Submit to OneDrive {#submit-to-onedrive}
 
-L&#39;azione di invio **[!UICONTROL Invia a OneDrive]** collega un modulo adattivo a Microsoft® OneDrive. È possibile inviare i dati del modulo, i file, gli allegati o il documento di record all&#39;archivio Microsoft® OneDrive collegato. Per utilizzare l&#39;azione di invio [!UICONTROL Invia a OneDrive] in un modulo adattivo:
+The **[!UICONTROL Submit to OneDrive]** Submit Action connects an Adaptive Form with a Microsoft&reg; OneDrive. You can submit the form data, file, attachments, or Document of Record to the connected Microsoft&reg; OneDrive Storage. To use the [!UICONTROL Submit to OneDrive] Submit Action in an Adaptive Form:
 
-1. [Crea una configurazione di OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): connette AEM Forms al tuo archivio Microsoft® OneDrive.
-2. [Utilizza l&#39;azione Invia a OneDrive in un modulo adattivo](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): collega il modulo adattivo a
-Microsoft® OneDrive configurato.
+1. [Create a OneDrive Configuration](#create-a-onedrive-configuration-create-onedrive-configuration): It connects AEM Forms to your Microsoft&reg; OneDrive Storage.
+2. [Use the Submit to OneDrive submit action in an Adaptive Form](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): It connects your Adaptive Form to
+configured Microsoft&reg; OneDrive.
 
-### Crea una configurazione OneDrive {#create-onedrice-configuration}
+### Create a OneDrive Configuration {#create-onedrice-configuration}
 
-Per collegare AEM Forms allo storage Microsoft® OneDrive:
+To connect AEM Forms to your Microsoft&reg; OneDrive Storage:
 
-1. Vai all&#39;**istanza di AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® OneDrive]**.
-1. Dopo aver selezionato **[!UICONTROL Microsoft® OneDrive]**, sei reindirizzato a **[!UICONTROL OneDrive Browser]**.
-1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fai clic su **[!UICONTROL Crea]**. Verrà visualizzata la configurazione guidata di OneDrive.
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; OneDrive]**.   
+1. Once you select the **[!UICONTROL Microsoft&reg; OneDrive]**, you are redirected to **[!UICONTROL OneDrive Browser]**.
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]**. The OneDrive configuration wizard appears. 
 
-   ![Schermata Configurazione OneDrive](/help/forms/assets/onedrive-configuration.png)
+    ![OneDrive Configuration Screen](/help/forms/assets/onedrive-configuration.png)
 
-1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
-   * Aggiungere le autorizzazioni API `offline_access` e `Files.ReadWrite.All` per fornire le autorizzazioni di lettura/scrittura.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Files.ReadWrite.All` to provide read/write permissions.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-   >[!NOTE]
-   >
-   > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+    >[!NOTE]
+    >
+    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+    
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
 
-1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
+1. Now, select **[!UICONTROL OneDrive Container]** > **[OneDrive Folder]**  to save the data. 
 
-1. Selezionare **[!UICONTROL Contenitore OneDrive]** > **[Cartella OneDrive]** per salvare i dati.
+    >[!NOTE]
+    >
+    >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at OneDrive Container. 
+    > * Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present by clicking **Create Folder**.
 
-   >[!NOTE]
-   >
-   >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel contenitore OneDrive.
-   > * Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente, facendo clic su **Crea cartella**.
+Now, you can use this OneDrive storage configuration for the submit action in an Adaptive Form. 
 
-Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;azione di invio in un modulo adattivo.
+### Use OneDrive Configuration in an Adaptive Form {#use-onedrive-configuartion-in-af}
 
-### Usa configurazione OneDrive in un modulo adattivo {#use-onedrive-configuartion-in-af}
+You can use the created OneDrive storage configuration in an Adaptive Form, to save data or generated Document of Record in a OneDrive folder. Perform the following steps to use OneDrive storage configuration in an Adaptive Form as:
+1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
 
-È possibile utilizzare la configurazione di archiviazione di OneDrive creata in un modulo adattivo per salvare dati o documenti di record generati in una cartella di OneDrive. Per utilizzare la configurazione di archiviazione OneDrive in un modulo adattivo, effettua le seguenti operazioni:
-1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form.md).
+    >[!NOTE]
+    >
+    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your OneDrive storage. 
+    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
 
-   >[!NOTE]
-   >
-   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo spazio di archiviazione di OneDrive.
-   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
+1. Select **Submit Action** as **[!UICONTROL Submit to OneDrive]**.
+    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
+1. Click **[!UICONTROL Save]** to save the Submit settings.
 
-1. Seleziona **Invia azione** come **[!UICONTROL Invia a OneDrive]**.
-   ![GIF OneDrive](/help/forms/assets/onedrive-video.gif)
-1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
-1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
+When you submit the form, the data is saved in the specified Microsoft&reg; OneDrive Storage. 
+Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
-Quando si invia il modulo, i dati vengono salvati nell&#39;archivio Microsoft® OneDrive specificato.
-La struttura di cartelle per il salvataggio dei dati è `/folder_name/form_name/year/month/date/submission_id/data`.
+## Submit to Azure Blob Storage {#submit-to-azure-blob-storage}
 
-## Invia ad Azure Blob Storage {#submit-to-azure-blob-storage}
+The **[!UICONTROL Submit to Azure Blob Storage]**  Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal. You can submit the form data, file, attachments, or Document of Record to the connected Azure Storage containers. To use the  Submit action for Azure Blob Storage: 
 
-L&#39;azione di invio **[!UICONTROL Invia ad Azure Blob Storage]** collega un modulo adattivo a un portale Microsoft® Azure. È possibile inviare i dati del modulo, il file, gli allegati o il documento record ai contenitori di archiviazione di Azure connessi. Per utilizzare l’azione Invia per l’archiviazione BLOB di Azure:
+1. [Create an Azure Blob Storage Container](#create-a-azure-blob-storage-container-create-azure-configuration): It connects AEM Forms to Azure Storage containers.
+2. [Use Azure Storage Configuration in an Adaptive Form ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): It connects your Adaptive Form to configured Azure Storage containers.
 
-1. [Creare un contenitore di archiviazione BLOB di Azure](#create-a-azure-blob-storage-container-create-azure-configuration): connette AEM Forms ai contenitori di archiviazione di Azure.
-2. [Usa la configurazione di archiviazione Azure in un modulo adattivo](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): connette il modulo adattivo ai contenitori di archiviazione Azure configurati.
+### Create an Azure Blob Storage Container {#create-azure-configuration}
 
-### Creare un contenitore di archiviazione BLOB di Azure {#create-azure-configuration}
+To connect AEM Forms to your Azure Storage containers:
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure Storage]**.   
+1. Once you select the **[!UICONTROL Azure Storage]**, you are redirected to **[!UICONTROL Azure Storage Browser]**.
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]**. The Create Azure Storage Configuration wizard appears. 
 
-Per connettere AEM Forms ai contenitori di archiviazione Azure:
-1. Vai all&#39;**istanza Autore AEM Forms** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Archiviazione Azure]**.
-1. Dopo aver selezionato **[!UICONTROL Archiviazione Azure]**, si verrà reindirizzati a **[!UICONTROL Browser archiviazione Azure]**.
-1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
-1. Fai clic su **[!UICONTROL Crea]**. Viene visualizzata la procedura guidata Crea configurazione di archiviazione Azure.
+    ![Azure Storage Configuration](/help/forms/assets/azure-storage-configuration.png)
 
-   ![Configurazione archiviazione Azure](/help/forms/assets/azure-storage-configuration.png)
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access key]**. 
+    
+    * You can retrieve `Azure Storage Account` name and `Azure Access key` from the Storage Accounts in the Microsoft&reg; Azure portal.
+    
+1. Click **[!UICONTROL Save]**.
 
-1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
+Now, you can use this Azure Storage container configuration for the submit action in an Adaptive Form.
 
-   * È possibile recuperare il nome `Azure Storage Account` e `Azure Access key` dagli account di archiviazione nel portale Microsoft® Azure.
+### Use Azure Storage Configuration in an Adaptive Form {#use-azure-storage-configuartion-in-af}
 
-1. Fai clic su **[!UICONTROL Salva]**.
+You can use the created Azure Storage container configuration in an Adaptive Form, to save data or generated Document of Record in Azure Storage container. Perform the following steps to use Azure Storage container configuration in an Adaptive Form as:
+1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
 
-Ora puoi utilizzare questa configurazione del contenitore di archiviazione Azure per l’azione di invio in un modulo adattivo.
+    >[!NOTE]
+    >
+    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your OneDrive storage. 
+    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
 
-### Utilizzare la configurazione di archiviazione Azure in un modulo adattivo {#use-azure-storage-configuartion-in-af}
+1. Select **Submit Action** as **[!UICONTROL Submit to Azure Blob Storage]**.
+    ![Azure Blob Storage GIF](/help/forms/assets/azure-submit-video.gif)
+    
+1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
+1. Click **[!UICONTROL Save]** to save the Submit settings.
 
-Puoi utilizzare la configurazione del contenitore di archiviazione Azure creata in un modulo adattivo per salvare dati o documenti di record generati nel contenitore di archiviazione Azure. Per utilizzare la configurazione del contenitore di archiviazione Azure in un modulo adattivo, effettua le seguenti operazioni:
-1. Crea un [modulo adattivo](/help/forms/creating-adaptive-form.md).
+When you submit the form, the data is saved in the specified Azure Storage container configuration. 
+Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
-   >[!NOTE]
-   >
-   > * Selezionare lo stesso [!UICONTROL Contenitore configurazione] per un modulo adattivo, in cui è stato creato lo spazio di archiviazione di OneDrive.
-   > * Se non è selezionato alcun contenitore di configurazione [!UICONTROL Contenitore di configurazione], nella finestra delle proprietà dell&#39;azione di invio vengono visualizzate le cartelle globali [!UICONTROL Configurazione archiviazione].
-
-1. Seleziona **Azione di invio** come **[!UICONTROL Invia ad Azure Blob Storage]**.
-   ![Archiviazione BLOB di Azure GIF](/help/forms/assets/azure-submit-video.gif)
-
-1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
-1. Fai clic su **[!UICONTROL Salva]** per salvare le impostazioni di invio.
-
-Quando si invia il modulo, i dati vengono salvati nella configurazione del contenitore di archiviazione Azure specificata.
-La struttura di cartelle per il salvataggio dei dati è `/configuration_container/form_name/year/month/date/submission_id/data`.
-
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 
-## Invia a Power Automate {#microsoft-power-automate}
+## Submit to Power Automate {#microsoft-power-automate}
 
-È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business basate sui dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
+You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
 
-* Utilizzare dati Forms adattivi in processi aziendali Power Automate
-* Utilizza Power Automate per inviare i dati acquisiti a più di 500 origini dati o a qualsiasi API disponibile pubblicamente
-* Eseguire calcoli complessi sui dati acquisiti
-* Salvataggio dei dati Adaptive Forms sui sistemi di storage secondo una pianificazione predefinita
+* Use Adaptive Forms data in a Power Automate business processes
+* Use Power Automate to send captured data to more than 500 data sources or any publicly available API  
+* Perform complex calculations on captured data
+* Save Adaptive Forms data to storage systems at a predefined schedule
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Richiama un flusso Microsoft® Power Automate** per inviare i dati dei moduli adattivi, gli allegati e il documento di record al flusso cloud di Power Automate. Per utilizzare l&#39;azione Invia per inviare i dati acquisiti a Microsoft® Power Automate, [Connetti l&#39;istanza Forms as a Cloud Service con Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md)  
 
-Dopo una configurazione corretta, utilizzare l&#39;azione di invio [Richiama un flusso Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) per inviare dati a un flusso Power Automate.
+After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
 
-## Invia a Workfront Fusion {#workfront-fusion}
+## Submit to Workfront Fusion {#workfront-fusion}
 
-È possibile configurare un modulo adattivo per inviare dati a Workfront Fusion al momento dell’invio. Workfront Fusion consente l&#39;automazione dei processi in modo che l&#39;utente possa concentrarsi su nuove attività anziché ripetere più volte le stesse attività. Automatizza attività semplici e complesse, risparmiando tempo e garantendo un&#39;esecuzione coerente dei processi.
+You can configure an Adaptive Form to submit data to Workfront Fusion on submission. Workfront Fusion allows automation of processes so that user can concentrate on new tasks rather than repeating the same tasks again and again. It automates both simple and complex tasks, saving time and ensuring consistent process execution.
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Richiama uno scenario di Workfront Fusion** per inviare dati o allegati di Forms adattivo a uno scenario di Workfront Fusion. Per utilizzare l&#39;azione di invio per inviare i dati acquisiti a uno scenario di Workfront Fusion, fare riferimento a [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
-## Utilizzare l’invio sincrono o asincrono {#use-synchronous-or-asynchronous-submission}
+## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
-Un’azione di invio può utilizzare l’invio sincrono o asincrono.
+A Submit Action can use synchronous or asynchronous submission.
 
-**Invio sincrono**: in genere, i moduli web sono configurati per l&#39;invio sincrono. In un invio sincrono, quando gli utenti inviano un modulo, vengono reindirizzati a una pagina di conferma, a una pagina di ringraziamento oppure, se l’invio non riesce, a una pagina di errore. È possibile selezionare l&#39;opzione **[!UICONTROL Usa invio asincrono]** per reindirizzare gli utenti a una pagina Web o mostrare un messaggio all&#39;invio.
+**Synchronous submission**: Traditionally, web forms are configured to submit synchronously. In a synchronous submission, when users submit a form, they are redirected to an acknowledgment page, a thank you page, or if there is submission failure, an error page. You can select the **[!UICONTROL Use asynchronous submission]** option to redirect the users to a webpage or show a message on submission.  
 
-![Configura azione di invio](assets/thank-you-setting.png)
+![Configure Submit Action](assets/thank-you-setting.png)
 
-**Invio asincrono**: le moderne esperienze Web come le applicazioni a pagina singola stanno guadagnando popolarità, dove la pagina Web rimane statica mentre l&#39;interazione client-server avviene in background. È ora possibile fornire questa esperienza con Adaptive Forms [configurando l&#39;invio asincrono](asynchronous-submissions-adaptive-forms.md).
+**Asynchronous submission**: Modern web experiences like single page applications are gaining popularity where the web page remains static while client-server interaction happens in the background. You can now provide this experience with Adaptive Forms by [configuring asynchronous submission](asynchronous-submissions-adaptive-forms.md).
 
-## Riconvalida lato server in modulo adattivo {#server-side-revalidation-in-adaptive-form}
+## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 
-In genere, in qualsiasi sistema di acquisizione dati online, gli sviluppatori inseriscono alcune convalide JavaScript sul lato client per applicare alcune regole di business. Tuttavia, nei browser moderni, gli utenti finali possono ignorare tali convalide ed effettuare manualmente gli invii utilizzando varie tecniche, ad esempio la Console per la creazione di strumenti di browser Web. Tali tecniche sono valide anche per Adaptive Forms. Uno sviluppatore di moduli può creare diverse logiche di convalida, ma tecnicamente gli utenti finali possono ignorarle e inviare dati non validi al server. I dati non validi violano le regole business applicate da un autore di moduli.
+Typically, in any online data capture system, developers place someJavaScript validations on client side to enforce a few business rules. But in modern browsers, end users have way to bypass those validations and manually do submissions using various techniques, Such as Web Browser DevTools Console. Such techniques are also valid for Adaptive Forms. A forms developer can create various validation logics, but technically, end users can bypass those validation logics and submit invalid data to the server. Invalid data would break the business rules that a forms author has enforced.
 
-La funzione di riconvalida lato server consente inoltre di eseguire le convalide fornite da un autore di Forms adattivo durante la progettazione di un modulo adattivo sul server. Impedisce qualsiasi possibile compromissione dell’invio dei dati e delle violazioni delle regole aziendali rappresentate in termini di convalide dei moduli.
+The server-side revalidation feature provides the ability to also run the validations that an Adaptive Forms author has provided while designing an Adaptive Form on the server. It prevents any possible compromise of data submissions and business rules violations represented in terms of form validations.
 
-### Cosa convalidare su Server? {#what-to-validate-on-server-br}
+### What to validate on Server? {#what-to-validate-on-server-br}
 
-Tutte le convalide di campo pronte all’uso di un modulo adattivo che vengono rieseguite sul server sono:
+All out of the box (OOTB) field validations of an Adaptive Form that are rerun at the server are:
 
-* Obbligatorio
-* Clausola di convalida immagine
-* Espressione di convalida
+* Required
+* Validation Picture Clause
+* Validation Expression
 
-### Abilitazione della convalida lato server {#enabling-server-side-validation-br}
+### Enabling Server-side Validation {#enabling-server-side-validation-br}
 
-Utilizza **[!UICONTROL Riconvalida sul server]** in Contenitore modulo adattivo nella barra laterale per abilitare o disabilitare la convalida lato server per il modulo corrente.
+Use the **[!UICONTROL Revalidate on server]** under Adaptive Form Container in the sidebar to enable or disable server-side validation for the current form.
 
-![Abilitazione della convalida lato server](assets/revalidate-on-server.png)
+![Enabling Server-Side Validation](assets/revalidate-on-server.png)
 
-Abilitazione della convalida lato server
+Enabling Server-Side Validation
 
-Se l&#39;utente finale ignora tali convalide e invia i moduli, il server esegue nuovamente la convalida. Se la convalida non riesce alla fine del server, la transazione di invio viene interrotta. All’utente viene nuovamente presentato il modulo originale. I dati acquisiti e inviati vengono presentati all’utente come un errore.
+If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The user is presented with the original form again. The captured data and submitted data are presented to the user as an error.
 
 >[!NOTE]
 >
->La convalida lato server convalida il modello del modulo. Ti consigliamo di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
+>Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
 
-### Supporto di funzioni personalizzate nelle espressioni di convalida {#supporting-custom-functions-in-validation-expressions-br}
+### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 
-A volte, se sono presenti **regole di convalida complesse**, lo script di convalida esatto risiede nelle funzioni personalizzate e l&#39;autore chiama tali funzioni personalizzate dall&#39;espressione di convalida del campo. Per rendere nota e disponibile questa libreria di funzioni personalizzata durante l&#39;esecuzione delle convalide lato server, l&#39;autore del modulo può configurare il nome della libreria client di AEM nella scheda **[!UICONTROL Base]** delle proprietà del contenitore di moduli adattivi, come illustrato di seguito.
+At times, if there are **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
 
-![Supporto di funzioni personalizzate nelle espressioni di convalida](assets/clientlib-cat.png)
+![Supporting Custom functions in Validation Expressions](assets/clientlib-cat.png)
 
-Supporto di funzioni personalizzate nelle espressioni di convalida
+Supporting Custom functions in Validation Expressions
 
-L’autore può configurare una libreria JavaScript personalizzata per modulo adattivo. Si consiglia di mantenere solo le funzioni riutilizzabili nella libreria, che dipendono dalle librerie di terze parti jquery e underscore.js.
+Author can configure customJavaScript library per Adaptive Form. In the library, only keep the reusable functions, which have dependency on jquery and underscore.js third-party libraries.
 
-## Gestione degli errori nell’azione di invio {#error-handling-on-submit-action}
+## Error handling on Submit Action {#error-handling-on-submit-action}
 
-Come parte delle linee guida sulla sicurezza e l’irrigidimento di AEM, configura pagine di errore personalizzate come 400.jsp, 404.jsp e 500.jsp. Questi gestori vengono chiamati quando all’invio di un modulo vengono visualizzati errori 400, 404 o 500. Gli handler vengono chiamati anche quando questi codici di errore vengono attivati sul nodo Publish. Puoi anche creare pagine JSP per altri codici di errore HTTP.
+As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-Quando si precompila un modello di dati modulo (FDM) o un modulo adattivo basato su schema con dati XML o JSON a uno schema che non contiene tag `<afData>`, `<afBoundData>` e `</afUnboundData>`, i dati dei campi non limitati del modulo adattivo andranno persi. Lo schema può essere uno schema XML, uno schema JSON o un modello dati modulo (FDM). I campi non limitati sono campi modulo adattivo senza la proprietà `bindref`.
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+ For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
->[!MORELIKETHIS]
->
->* [Crea un&#39;azione di invio personalizzata per Forms adattivo](/help/forms/custom-submit-action-form.md)
+## Consulta anche {#see-also}
+
+{{af-submit-action}}

@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: Come connettere l’elenco di SharePoint per un modulo adattivo?, Invia a SharePoint, Crea configurazione elenco SharePoint, Utilizza l’azione di invio Invia a SharePoint in un modulo adattivo, Connetti un modulo adattivo a Microsoft&reg; Elenco SharePoint.
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
 
 ---
-
 
 # Collegare un modulo adattivo all’elenco di Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -22,7 +22,7 @@ Per utilizzare l&#39;azione di invio [!UICONTROL Invia a elenco SharePoint] in u
 1. [Crea una configurazione elenco SharePoint](#1-create-a-sharepoint-list-configuration): connette AEM Forms all&#39;archiviazione elenco Microsoft® Sharepoint.
 1. [Utilizzare l&#39;invio utilizzando il modello dati del modulo (FDM) in un modulo adattivo](#2-use-the-submit-using-form-data-model-fdm-in-an-adaptive-form-use-submit-using-fdm): collega il modulo adattivo a Microsoft® SharePoint configurato.
 
-## 1. Creare una configurazione dell’elenco SharePoint
+## &#x200B;1. Creare una configurazione dell’elenco SharePoint
 
 Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
@@ -44,7 +44,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 1. Selezionare **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
 
-## 2. Utilizzare l’opzione Sottometti con modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
+## &#x200B;2. Utilizzare l’opzione Sottometti con modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare un elenco SharePoint in un modulo adattivo come, effettua le seguenti operazioni:
 

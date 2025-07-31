@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1697'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=it) |
-| AEM as a Cloud Service (Componenti core) | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (Componenti core) | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (Componenti di base) | Questo articolo |
 
 Un modulo adattivo fornisce più azioni di invio pronte all’uso. Un’azione di invio specifica i dettagli delle azioni da eseguire sui dati raccolti tramite il modulo adattivo. Ad esempio, l’invio di dati tramite e-mail.
@@ -94,7 +94,7 @@ Se l’azione non fornisce un percorso di inoltro, il servlet di invio reindiriz
 
 ## Azione invio {#submit-action}
 
-Un’azione di invio è un sling:Folder che include quanto segue:
+Un&#39;azione di invio è un sling:Folder che include quanto segue:
 
 * **addfields.jsp**: questo script fornisce i campi di azione che vengono aggiunti al file HTML durante il rendering. Utilizza questo script per aggiungere i parametri di input nascosti richiesti durante l’invio nello script POST.POST.jsp.
 * **dialog.xml**: questo script è simile alla finestra di dialogo del componente CQ. Fornisce informazioni di configurazione personalizzate dall’autore. I campi vengono visualizzati nella scheda Invia azioni della finestra di dialogo Modifica modulo adattivo quando si seleziona l’azione di invio.
@@ -111,11 +111,11 @@ Un’azione di invio è un sling:Folder che include quanto segue:
 
 >[!NOTE]
 >
-> Per informazioni su come creare un&#39;azione di invio personalizzata per i Componenti core, consulta [Creare un&#39;azione di invio personalizzata per Forms adattivo (Componenti core)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Per informazioni su come creare un&#39;azione di invio personalizzata per i Componenti core, consulta [Creare un&#39;azione di invio personalizzata per Forms adattivo (Componenti core)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Per creare un’azione di invio personalizzata che salvi i dati nell’archivio CRX, quindi ti invia un’e-mail, effettua le seguenti operazioni. Il modulo adattivo contiene il contenuto dell’archivio azioni di invio OOTB (obsoleto) che salva i dati nell’archivio CRX. Inoltre, AEM fornisce un&#39;API [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) che può essere utilizzata per inviare e-mail. Prima di utilizzare l’API Mail, configura il servizio Day CQ Mail tramite la console di sistema. Puoi riutilizzare l’azione Archivia contenuto (obsoleta) per memorizzare i dati nell’archivio. L’azione Archivia contenuto (obsoleta) è disponibile nella posizione /libs/fd/af/components/guidesubmittype/store nell’archivio CRX.
 
-1. Accedi a CRXDE Lite all’URL https://&lt;server>:&lt;porta>/crx/de/index.jsp. Crea un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Creare la cartella custom_submit_action se non esiste già.
+1. Accedi a CRXDE Lite all’URL https://&lt;server>:&lt;porta>/crx/de/index.jsp. Creare un nodo con la proprietà sling:Folder e name store_and_mail nella cartella /apps/custom_submit_action. Creare la cartella custom_submit_action se non esiste già.
 
    ![Schermata che illustra la creazione di un nodo con la proprietà sling:Folder](assets/step1.png)
 
@@ -127,7 +127,7 @@ Per creare un’azione di invio personalizzata che salvi i dati nell’archivio 
 
 3. **Fornire i campi di configurazione per richiedere all&#39;autore la configurazione della posta elettronica.**
 
-   Il modulo adattivo fornisce anche un’azione E-mail che invia e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Passa a /libs/fd/af/components/guidesubmittype/email/dialog. Copia i nodi all’interno del nodo cq:dialog nel nodo cq:dialog dell’azione di invio (/apps/custom_submit_action/store_and_email/dialog).
+   Il modulo adattivo fornisce anche un’azione E-mail che invia e-mail agli utenti. Personalizza questa azione in base alle tue esigenze. Passa a /libs/fd/af/components/guidesubmittype/email/dialog. Copia i nodi all&#39;interno del nodo cq:dialog nel nodo cq:dialog dell&#39;azione di invio (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Personalizzazione dell&#39;azione e-mail](assets/step3.png)
 
@@ -209,7 +209,7 @@ Per creare un’azione di invio personalizzata che salvi i dati nell’archivio 
 
 ## Utilizzare la proprietà submitService per azioni di invio personalizzate {#submitservice-property}
 
-Quando si imposta l&#39;azione di invio personalizzata, che include la proprietà `submitService`, il modulo attiva [FormSubmitActionService](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) all&#39;invio. `FormSubmitActionService` utilizza il metodo `getServiceName` per recuperare il valore per la proprietà `submitService`. In base al valore della proprietà `submitService`, il servizio richiama il metodo submit appropriato. Includere `FormSubmitActionService` nel bundle personalizzato caricato nel server [!DNL AEM Forms].
+Quando si imposta l&#39;azione di invio personalizzata, che include la proprietà `submitService`, il modulo attiva [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) all&#39;invio. `FormSubmitActionService` utilizza il metodo `getServiceName` per recuperare il valore per la proprietà `submitService`. In base al valore della proprietà `submitService`, il servizio richiama il metodo submit appropriato. Includere `FormSubmitActionService` nel bundle personalizzato caricato nel server [!DNL AEM Forms].
 
 Aggiungi la proprietà `submitService` di tipo stringa a `sling:Folder` dell&#39;azione di invio personalizzata per abilitare [!DNL Adobe Sign] per il modulo adattivo. È possibile selezionare l&#39;opzione **[!UICONTROL Abilita Adobe Sign]** nella sezione **[!UICONTROL Firma elettronica]** delle proprietà del contenitore Moduli adattivi solo dopo aver impostato il valore per la proprietà `submitService` dell&#39;azione di invio personalizzata.
 
@@ -217,6 +217,7 @@ Aggiungi la proprietà `submitService` di tipo stringa a `sling:Folder` dell&#39
 
 
 ![Invia proprietà servizio](assets/submit-service-property.png)
+
 
 <!-- You can't do comments within comments, so I changed comment tags to <start-comment> <end-comment> -->
 

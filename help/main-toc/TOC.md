@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
-workflow-type: ht
-source-wordcount: '6522'
-ht-degree: 100%
+source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
+workflow-type: tm+mt
+source-wordcount: '6551'
+ht-degree: 99%
 
 ---
 
@@ -766,17 +766,9 @@ ht-degree: 100%
          + [Integrare AEM Forms as a Cloud Service con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrare i moduli adattivi in Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Visualizzazione e comprensione del rapporto di analisi dei moduli adattivi](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporare un modulo adattivo in una pagina AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporare un modulo adattivo basato su Componenti core in una pagina web esterna](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Integrazione di AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + [Incorporare un modulo adattivo basato su Componenti di base in una pagina web esterna](/help/forms/embed-adaptive-form-external-web-page.md)
-         + Integrare moduli adattivi con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Integrare Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configurare un nuovo modulo da integrare con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configurare l’origine dati Adobe Marketo Engage per moduli adattivi esistenti](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configurare l’azione di invio a Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Modello dati modulo {#use-form-data-model}
          + [Connettere AEM Forms a un database o un’origine dati](/help/forms/data-integration.md)
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
@@ -789,6 +781,29 @@ ht-degree: 100%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
          + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
+      + Imposta azione di invio per un modulo adattivo {#set-submit-action}
+         + [Azioni di invio supportate da Adaptive Forms](/help/forms/aem-forms-submit-action.md)
+         + [Configurare l’azione di invio per un modulo adattivo basato su componenti di base](/help/forms/configuring-submit-actions.md)
+         + [Configurare l’azione di invio per un modulo adattivo basato su componenti core](/help/forms/configure-submit-actions-core-components.md)
+         + [Configurare l’azione di invio per Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+         + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
+         + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
+            + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Invia a libreria documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+            + [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
+            + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
+         + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
+         + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
+         + [Integrazione di AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+         + Integrare moduli adattivi con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrare Adobe Marketo Engage con AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurare un nuovo modulo da integrare con Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurare l’origine dati Adobe Marketo Engage per moduli adattivi esistenti](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurare l’azione di invio a Marketo Engage per i moduli esistenti](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Moduli adattivi {#adaptive-forms-authoring}
       + [Creare un modulo adattivo](/help/forms/create-an-adaptive-form.md)
       + [Quale modulo adattivo è più adatto alle tue esigenze?](/help/edge/docs/forms/authoring-a-form.md)
@@ -806,17 +821,6 @@ ht-degree: 100%
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
-            + [Configurare l’azione di invio per un modulo adattivo](/help/forms/configure-submit-actions-core-components.md)
-            + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
-               + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [Invia a libreria documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
-               + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
-            + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
-            + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
             + [Utilizzare reCAPTCHA di Google in un modulo adattivo](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Utilizzare hCAPTCHA in un modulo adattivo per i componenti core](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Utilizzare il CAPTCHA Turnstile in un modulo adattivo per i componenti core](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -889,7 +893,6 @@ ht-degree: 100%
          + Utilizzare [!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilizzare Adobe Sign per apporre la firma elettronica a un modulo adattivo](/help/forms/working-with-adobe-sign.md)
          + Configurare le azioni di invio e l’invio dei metadati {#configure-submit-actions-and-metadata-submission}
-            + [Imposta azione di invio per un modulo adattivo](/help/forms/configuring-submit-actions.md)
             + [Configurare la pagina di reindirizzamento](/help/forms/configuring-redirect-page.md)
             + [Configurare l’invio asincrono per un modulo adattivo](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Creare un’azione di invio personalizzata](/help/forms/custom-submit-action-form.md)

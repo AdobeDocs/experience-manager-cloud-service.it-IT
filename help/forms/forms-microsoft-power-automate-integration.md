@@ -3,11 +3,11 @@ title: Come integrare un modulo adattivo con Microsoft&reg; Power Automate?
 description: Integrare un modulo adattivo con Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: collegare i moduli AEM per l'automazione dell'alimentazione, l'automazione dell'alimentazione AEM Forms, integrare l'automazione dell'alimentazione in Adaptive Forms, inviare dati da Adaptive Forms a Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1531'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Richiama un flusso Microsoft® Power Automate** per inviare i dati dei moduli adattivi, gli allegati e il documento di record al flusso cloud di Power Automate.
 
-AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
+AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/aem-forms-submit-action.md).
 
 
 ## Vantaggi
@@ -140,12 +140,17 @@ L&#39;istanza Forms as a Cloud Service è ora collegata a Microsoft® Power Auto
 
 Dopo aver [connesso l&#39;istanza di Forms as a Cloud Service con Microsoft® Power Automate](#connect-forms-server-with-power-automate), eseguire l&#39;azione seguente per configurare il modulo adattivo in modo da inviare i dati acquisiti a un flusso Microsoft® all&#39;invio del modulo.
 
+>[!BEGINTABS]
+
+>[!TAB Componente di base]
+
 1. Accedi all&#39;istanza Autore, seleziona il modulo adattivo e fai clic su **[!UICONTROL Proprietà]**.
 1. Nel Contenitore configurazione, sfogliare e selezionare il contenitore creato nella sezione [Crea configurazione cloud Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration), quindi selezionare **[!UICONTROL Salva e chiudi]**.
 1. Apri il modulo adattivo per la modifica e passa alla sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo.
 1. Nel contenitore delle proprietà, per **[!UICONTROL Azioni di invio]** selezionare l&#39;opzione **[!UICONTROL Richiama un flusso Power Automate]** e selezionare un flusso **[!UICONTROL Power Automate]**. Seleziona il flusso richiesto e i dati di Adaptive Forms vengono inviati al momento dell’invio.
 
    ![Configura azione di invio](assets/submission.png)
+1. Fai clic su **[!UICONTROL Fine]**.
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ Dopo aver [connesso l&#39;istanza di Forms as a Cloud Service con Microsoft® Po
             }
         }
 ```
+
+>[!TAB Componente core]
+
+1. Accedi all&#39;istanza Autore, seleziona il modulo adattivo e fai clic su **[!UICONTROL Proprietà]**.
+1. Nel Contenitore configurazione, sfogliare e selezionare il contenitore creato nella sezione [Crea configurazione cloud Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration), quindi selezionare **[!UICONTROL Salva e chiudi]**.
+1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
+1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
+1. Fare clic sulla scheda **[!UICONTROL Invio]**.
+1. Selezionare l&#39;opzione **[!UICONTROL Richiama un flusso Power Automate]** dall&#39;elenco a discesa Azione di invio e selezionare un **[!UICONTROL flusso Power Automate]**. Seleziona il flusso richiesto e i dati di Adaptive Forms vengono inviati al momento dell’invio.
+
+   ![Configura azione di invio](/help/forms/assets/power-automate-cc.png)
+1. Fai clic su **[!UICONTROL Fine]**.
+
+>[!NOTE]
+>
+> Prima di inviare il modulo adattivo, accertati che il trigger `When an HTTP Request is received` con lo schema JSON sottostante sia aggiunto al flusso Power Automate.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB Editor universale]
+
+1. Accedi all’istanza di authoring e seleziona il modulo adattivo.
+1. Nel Contenitore configurazione, sfogliare e selezionare il contenitore creato nella sezione [Crea configurazione cloud Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration), quindi selezionare **[!UICONTROL Salva e chiudi]**.
+1. Apri il modulo adattivo per la modifica.
+1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.
+Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
+   >[!NOTE]
+   >
+   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
+   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+
+
+1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Richiama un flusso Power Automate]**. Invia azione. Seleziona il flusso richiesto e i dati di Adaptive Forms vengono inviati al momento dell’invio.
+
+   ![Configura azione di invio](/help/forms/assets/power-automate-ue.png)
+1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**.
+
+>[!NOTE]
+>
+> Prima di inviare il modulo adattivo, accertati che il trigger `When an HTTP Request is received` con lo schema JSON sottostante sia aggiunto al flusso Power Automate.
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also
