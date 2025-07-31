@@ -1,19 +1,57 @@
 ---
 title: Come gestire  [!DNL Dynamic Media]  modelli?
-description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un editor di modelli di WYSIWYG e includere più immagini e livelli di testo per creare rapidamente banner e volantini e utilizzarli nelle applicazioni a valle.
+description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un editor di modelli di WYSIWYG e includere più livelli di immagini, testi e forme per creare rapidamente banner e volantini e utilizzarli nelle applicazioni a valle.
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 69e6b5a50f4625b9ef868216f6e44381771bf05b
 workflow-type: tm+mt
-source-wordcount: '3119'
-ht-degree: 0%
+source-wordcount: '3415'
+ht-degree: 1%
 
 ---
 
+
 # [!DNL Dynamic Media] modelli{#dynamic-media-templates}
 
-Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Pubblica il modello [!DNL Dynamic Media] e utilizzalo nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>Integrazione di AEM Assets con Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Estensibilità dell’interfaccia utente</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novità</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Abilitare Dynamic Media Prime e Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Best practice per la ricerca</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Best practice per i metadati</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media con funzionalità OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentazione di AEM Assets per sviluppatori</b></a>
+        </td>
+    </tr>
+</table>
+
+Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Pubblica il modello [!DNL Dynamic Media] e utilizzalo nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
 
 Alcune delle caratteristiche principali includono:
 
@@ -25,7 +63,7 @@ Alcune delle caratteristiche principali includono:
 
 Alcuni dei vantaggi principali dei modelli [!DNL Dynamic Media] includono:
 
-* **Ottimizza Personalization 1:1:** Personalizza il contenuto per i segnali dei clienti in tempo reale.
+* **Ottimizzare 1:1 Personalization:** Personalizzare il contenuto ai segnali dei clienti in tempo reale.
 * **Riduzione dello sforzo manuale:** Automatizzazione e accelerazione della creazione e della gestione dei contenuti.
 * **Assicurare Esperienze omnicanale coerenti:** Mantenere la coerenza del brand tra i canali.
 * **Riutilizzare il contenuto in modo efficace:** evitare contenuti monouso e scalare con modelli dinamici con parametri.
@@ -44,10 +82,10 @@ Scopri come creare un modello [!DNL Dynamic Media] passo dopo passo in questo vi
 Soddisfare i seguenti requisiti per creare un modello [!DNL Dynamic Media] e generarne l&#39;URL di consegna:
 
 1. Accesso a [!DNL Dynamic Media].
-1. Nella home page di [!DNL Assets View] è presente una cartella in **[!UICONTROL Dynamic Media Assets]** per salvare il modello. [Crea una cartella](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;per replicare tale cartella in&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
+1. Nella home page di [!DNL Assets View] è presente una cartella in **[!UICONTROL Dynamic Media Assets]** per salvare il modello. [Crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**per replicare tale cartella in**[!UICONTROL  Dynamic Media Assets ]**.
 1. [Sincronizza le immagini disponibili nell&#39;istanza  [!DNL AEM Assets] con [!DNL Dynamic Media] per utilizzarle per creare il modello](/help/assets/dynamic-media/config-dm.md).
 1. Pubblica le immagini da utilizzare per creare il modello per generare l’URL di consegna del modello dopo averlo creato. L’URL di consegna può essere utilizzato nelle applicazioni a valle.
-1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati inoltre di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli. Per ulteriori informazioni, vedere [Tipi di carattere](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati inoltre di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli. Per ulteriori informazioni, vedere [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. verifica quanto segue nell’interfaccia utente touch:
    * Nella pagina **[!UICONTROL Modifica configurazione [!DNL Dynamic Media]]**, la modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** impostata su **[!UICONTROL Disabilitata per impostazione predefinita]** non è applicata a tutte le cartelle di AEM (**[!UICONTROL Sincronizza tutto il contenuto]** non è selezionata). Per ulteriori informazioni, vedere [configurazione di Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md).
    * La modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** è impostata su **[!UICONTROL Abilita per le sottocartelle]** per la cartella o sottocartella di destinazione in cui verrà salvato il modello dopo la creazione. Per ulteriori informazioni, vedere [configurazione [!DNL Dynamic Media] di Cloud Service](/help/assets/dynamic-media/config-dm.md).
@@ -56,13 +94,14 @@ Soddisfare i seguenti requisiti per creare un modello [!DNL Dynamic Media] e gen
 
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
 1. [Aggiungere immagini all’area di lavoro](#add-images-to-the-canvas)
 1. [Aggiungere livelli di testo all&#39;area di lavoro](#add-text-to-the-canvas)
+1. [Aggiungere forme all&#39;area di lavoro](#add-shapes-to-the-canvas)
 1. [Modificare o eliminare un livello](#edit-or-delete-a-layer)
 1. [Livelli parametrizzati](#parameterise-a-layer)
 
@@ -96,13 +135,13 @@ Per creare un’area di lavoro vuota, effettua le seguenti operazioni:
 **Opzioni di menu nel riquadro di sinistra:** Utilizzare queste opzioni per le seguenti azioni comuni dell&#39;editor.
 
 * ![Modelli DM](/help/assets/assets/layer-selector.svg): seleziona ![Modelli DM](/help/assets/assets/layer-selector.svg) e fai clic su un livello nell&#39;area di lavoro per selezionarlo.
-* ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg): fare clic su ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **&rbrack;** (Windows) o **Cmd** + **&rbrack;** (Mac) per portare avanti un livello selezionato.
-* ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg): fare clic su ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **&lbrack;** (Windows) o **Cmd** + **&lbrack;** (Mac) per inviare indietro un livello selezionato.
+* ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg): fare clic su ![modelli che supportano la personalizzazione](/help/assets/assets/bring-forward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **]** (Windows) o **Cmd** + **]** (Mac) per portare avanti un livello selezionato.
+* ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg): fare clic su ![come creare un modello che possa essere personalizzato facilmente](/help/assets/assets/send-backward.svg) o utilizzare la scelta rapida da tastiera, **Ctrl** + **[** (Windows) o **Cmd** + **[** (Mac) per inviare indietro un livello selezionato.
 * ![crea un modello personalizzabile all&#39;istante](/help/assets/assets/undo.svg): fai clic su ![crea un modello personalizzabile all&#39;istante](/help/assets/assets/undo.svg) oppure usa la scelta rapida da tastiera, **Ctrl** + **Z** (Windows) o **Cmd** + **Z** (Mac) per annullare l&#39;ultima azione.
 * ![modello per creare rapidamente i banner](/help/assets/assets/redo.svg): fare clic su ![modello per creare rapidamente i banner](/help/assets/assets/redo.svg) oppure utilizzare la scelta rapida da tastiera **Ctrl** + **Y** (Windows) o **Cmd** + **Y** (Mac) per ripetere l&#39;ultima azione.
 * ![modello per creare rapidamente i volantini](/help/assets/assets/zoom-in.svg): fare clic su ![modello per creare rapidamente i volantini](/help/assets/assets/zoom-in.svg) oppure utilizzare la scelta rapida da tastiera **Ctrl** + **+** (Windows) o **Cmd** + **+** (Mac) per ingrandire l&#39;area di lavoro.
 * ![modello per creare rapidamente i banner](/help/assets/assets/Zoom-out.svg): fai clic su ![modello per creare rapidamente i banner](/help/assets/assets/Zoom-out.svg) oppure utilizza la scelta rapida da tastiera, **Ctrl** + **-** (Windows) o **Cmd** + **-** (Mac) per ridurre l&#39;area di lavoro.
-* Premi **Backspace** o **delete** per eliminare il livello selezionato se non si sta modificando testo o proprietà.
+* Premi **backspace** o **delete** per eliminare il livello selezionato se non si sta modificando testo o proprietà.
 
 Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/show-layers-list.svg) e seleziona altre opzioni (![](/help/assets/assets/three-dots.svg)) sul livello Area di lavoro per modificare le dimensioni dell&#39;area di lavoro in qualsiasi momento durante la creazione del modello.
 ![](/help/assets/assets/edit-canvas1.png)
@@ -115,10 +154,12 @@ Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/sh
 
 Per aggiungere immagini all’area di lavoro, effettua le seguenti operazioni:
 
-1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per aprire il pannello [Selettore risorse](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
+1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per aprire il pannello [Selettore risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
 1. Sfoglia il pannello o usa le parole chiave nella barra di ricerca per trovare un’immagine specifica.
 1. Trascina e rilascia un’immagine nell’area di lavoro per utilizzarla. Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per ridimensionare o riposizionare un livello nell&#39;area di lavoro.
    ![crea un banner in pochi secondi](/help/assets/assets/add-image-to-canvas.png)
+1. Attiva l&#39;interruttore **[!UICONTROL Raggio uniforme]** e utilizza il cursore **[!UICONTROL Raggio angolo]** per regolare uniformemente la rotondità di tutti e quattro gli angoli di un&#39;immagine. Disattivate l&#39;interruttore per personalizzare la rotondità degli angoli assegnando valori di raggio specifici a ciascun angolo.
+   ![regola la rotondità degli angoli dell&#39;immagine](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### Aggiungere livelli di testo all&#39;area di lavoro{#add-text-to-the-canvas}
 
@@ -130,6 +171,17 @@ Per aggiungere livelli di testo all’area di lavoro, effettua le seguenti opera
    ![banner meglio personalizzabili](/help/assets/assets/add-text-layer.png)
 
 Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per riposizionare, ridimensionare, ruotare o eliminare il livello. Formatta il testo con il font, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (nel livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello. Nel campo **[!UICONTROL Famiglia di caratteri]** sono visualizzati il tipo di carattere predefinito [!UICONTROL Adobe Sans F2], i tipi di carattere esistenti rielaborati e i tipi di carattere appena caricati e pubblicati. Per ulteriori informazioni, vedere il punto 5 della sezione [Prima di iniziare](#prerequisites-for-dynamic-media-wysiwyg-template).
+
+### Aggiungere forme all&#39;area di lavoro {#add-shapes-to-the-canvas}
+
+Per aggiungere forme all&#39;area di lavoro, eseguire la procedura seguente:
+
+1. Fare clic su ![creazione forme](/help/assets/assets/Shapes.svg), selezionare una forma (rettangolo o cerchio) per aggiungerla all&#39;area di lavoro. Utilizzare il [[!UICONTROL pannello Proprietà]](#reposition-resize-delete-a-layer) della forma per riposizionare, ridimensionare, ruotare o eliminare il livello.
+1. Scorri fino alla sezione **[!UICONTROL Stile]** del pannello, definisci un codice esadecimale nel campo **[!UICONTROL Colore forma]** o utilizza il selettore colore per riempire il colore nella forma selezionata.
+1. Attiva l&#39;interruttore **[!UICONTROL Raggio uniforme]** e utilizza il cursore **[!UICONTROL Raggio angolo]** per regolare uniformemente la rotondità di tutti e quattro gli angoli del rettangolo. Disattivate l&#39;interruttore per personalizzare la rotondità degli angoli assegnando valori di raggio specifici a ciascun angolo.
+   ![regolare la rotondità degli angoli delle forme](/help/assets/assets/enable-uniform-radius-shape.png)
+1. [Aggiungi il parametro **[!UICONTROL Nascondi]** al livello selezionato](#parameterise-a-layer) per mostrare o nascondere il livello nel modello in tempo reale utilizzando l&#39;URL del modello.
+1. Selezionare il livello per [aggiungervi un collegamento [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates), consentendo agli utenti di fare clic sulla forma come collegamento ipertestuale nel modello attivo.
 
 ### Modificare o eliminare un livello {#edit-or-delete-a-layer}
 
@@ -143,23 +195,18 @@ Per modificare o eliminare un livello area di lavoro, esegui la procedura seguen
 
 ### Pannello Proprietà{#properties-panel}
 
-Per passare al pannello delle proprietà di un livello:
-
-1. Fai clic su ![creazione rapida contenuto](/help/assets/assets/show-layers-list.svg).
-1. Selezionate il livello dall&#39;elenco.
-
-In questo pannello viene visualizzata la posizione del punto centrale del livello sul piano dell&#39;area di lavoro (valori X e Y), le dimensioni del livello (larghezza e altezza) e le opzioni di formattazione del testo.
+Il pannello [!UICONTROL Proprietà] include sezioni per [riposizionare](#reposition-resize-delete-a-layer), [ridimensionare](#reposition-resize-delete-a-layer) e [ruotare](#reposition-resize-delete-a-layer) un livello.  Fornisce inoltre opzioni di riempimento colore per [livelli forma](#add-shapes-to-the-canvas), [opzioni di formattazione testo](#text-formatting-options-on-properties-panel) per [livelli testo](#add-text-to-the-canvas) e un&#39;opzione per [aggiungere un collegamento [!UICONTROL CTA]](#add-CTA-in-dynamic-media-templates) a qualsiasi livello selezionato.
+Per passare al pannello delle proprietà di un livello, fai clic su ![Creazione rapida contenuto](/help/assets/assets/show-layers-list.svg) e seleziona il livello dall&#39;elenco per visualizzare il relativo pannello [!UICONTROL Proprietà].
 
 ![creazione rapida dei contenuti](/help/assets/assets/properties-panel.png)
 
-Dal pannello delle proprietà di un livello, selezionate un altro livello nell&#39;area di lavoro per passare al relativo pannello delle proprietà.
-
+Dal pannello [!UICONTROL Proprietà] di un livello, seleziona un altro livello nell&#39;area di lavoro per passare al relativo pannello [!UICONTROL Proprietà].
 
 #### Riposizionare, ridimensionare, ruotare o eliminare un livello{#reposition-resize-delete-a-layer}
 
 Per modificare un livello testo o immagine, consulta le seguenti azioni di modifica dei livelli comuni:
 
-* **Riposizionare il livello:** Trascinare il livello per spostarlo in qualsiasi punto dell&#39;area di lavoro. Questa azione aggiorna i valori X e Y nel pannello delle proprietà.
+* **Riposizionare il livello:** Trascinare il livello per spostarlo in qualsiasi punto dell&#39;area di lavoro. Questa azione aggiorna i valori X e Y nel pannello delle proprietà. X e Y sono le coordinate del centro del livello sul piano dell&#39;area di lavoro.
 * **Ridimensiona il livello:** Seleziona il livello e trascina i relativi quadratini di ridimensionamento per ridimensionarlo. Questa azione aggiorna i valori W (larghezza) e H (altezza) nel pannello delle proprietà.
 * **Ruotare il livello:** Trascinare la maniglia quadrata posizionata verticalmente sopra il livello per ruotarlo intorno al centro. Questa azione aggiorna i valori degli angoli nel pannello delle proprietà.
 * **Eliminare il livello:** Premere **Backspace** o **delete** e quindi fare clic su **[!UICONTROL Confirm]** per eliminare il livello selezionato.
@@ -167,18 +214,18 @@ Per modificare un livello testo o immagine, consulta le seguenti azioni di modif
 #### Opzioni di formattazione del testo{#text-formatting-options-on-properties-panel}
 
 Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (all&#39;interno del livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello.
-Assicurarsi di includere **[!UICONTROL Ridimensionamento testo avanzato]**. [!UICONTROL Smart Text Resize] funziona sull&#39;algoritmo [Copyfit](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) per riempire in modo ottimale il testo nell&#39;area di testo, impedisce l&#39;overflow del testo e riduce al minimo lo spazio in eccesso nella parte inferiore del testo.
+Assicurarsi di includere **[!UICONTROL Ridimensionamento testo avanzato]**. [!UICONTROL Smart Text Resize] funziona sull&#39;algoritmo [Copyfit](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) per riempire in modo ottimale il testo nell&#39;area di testo, impedisce l&#39;overflow del testo e riduce al minimo lo spazio in eccesso nella parte inferiore del testo.
 
 ![creazione contenuto in pochissimo tempo](/help/assets/assets/smart-text-resize.png)
 
 ### Livelli parametrizzati {#parameterise-a-layer}
 
-Dopo aver creato un modello con più livelli di immagini e testi, impostate i parametri per i livelli selezionati. Quando un livello o la relativa proprietà sono parametrizzati, ottiene una coppia chiave-valore (detta anche parametro). Questo parametro può essere incluso nell’URL del modello per aggiornare la posizione, le dimensioni o il contenuto del livello in tempo reale, con conseguente personalizzazione del modello in un attimo.
+Dopo aver creato un modello con più livelli di immagini, testi e forme, impostate i parametri per i livelli selezionati. Quando un livello o la relativa proprietà sono parametrizzati, ottiene una coppia chiave-valore (detta anche parametro). Questo parametro può essere incluso nell’URL del modello per aggiornare la posizione, le dimensioni o il contenuto del livello in tempo reale, con conseguente personalizzazione del modello in un attimo.
 
 Per parametrizzare un livello:
 
 1. fai clic su ![creazione immediata contenuto](/help/assets/assets/show-layers-list.svg), seleziona un livello e fai clic su **[!UICONTROL Parametri]**. Viene visualizzato il pannello **[!UICONTROL Parametri]**.
-1. Attiva **[!UICONTROL Includi parametro]** per parametrizzare una proprietà. Per informazioni sul comportamento della proprietà dopo la parametrizzazione, vedere [Opzione pannello Parametri](#parameterisation-options-or-allowed-parameters).
+1. Attiva **[!UICONTROL Includi parametro]** per parametrizzare una proprietà. Per informazioni sul comportamento della proprietà dopo la parametrizzazione, vedere l&#39;opzione [Parametri del pannello](#parameterisation-options-or-allowed-parameters).
 1. **Facoltativo:** Rinominare il nome del parametro. Il nome di un parametro è seguito da un suffisso. Per un livello selezionato, tutte le relative proprietà con parametri condividono lo stesso nome di livello seguito da un suffisso variabile. Rinominate il nome del livello seguendo la convenzione di denominazione semantica in modo che, quando includete il parametro nell&#39;URL, il nome del parametro spieghi da solo il contenuto o lo scopo del livello.
 1. Fai clic su **[!UICONTROL Salva]**.
    ![creazione immediata dei contenuti](/help/assets/assets/parameterise-a-layer.png)
@@ -191,7 +238,7 @@ Le proprietà con parametri possono essere incluse come parametri URL nell’URL
 **Parametri immagine:**
 
 **[!UICONTROL X]:** Includere per spostare il livello orizzontalmente lungo la sua linea centrale, parallelamente all&#39;asse X del piano del modello, modificando il valore del parametro nell&#39;URL.
-**[!UICONTROL Y]:** Includere per spostare il livello verticalmente lungo la linea centrale, parallelamente all&#39;asse Y del piano del modello, modificando il valore del parametro nell&#39;URL.
+**[!UICONTROL Y]:** Includere per spostare il livello verticalmente lungo la sua linea centrale, parallelamente all&#39;asse Y del piano del modello, modificando il valore del parametro nell&#39;URL.
 **[!UICONTROL Larghezza]:** Includere per regolare la larghezza del livello modificando il valore del parametro nell&#39;URL.
 **[!UICONTROL Altezza]:** Includere per regolare l&#39;altezza del livello modificando il valore del parametro nell&#39;URL.
 **[!UICONTROL Nascondi]:** Includi per nascondere o mostrare il livello nel modello utilizzando 0 (mostra) e 1 (nascondi).
@@ -210,7 +257,7 @@ Includi i seguenti parametri per modificare il testo, il relativo font, colore e
 
 Un altro modo per mantenere flessibili i modelli consiste nell&#39;utilizzare un singolo nome di parametro per controllare più livelli. Questa strategia è utile per il parametro di visibilità (nascondi o mostra livelli), per aggiornare la progettazione o gli elementi grafici da un singolo modello.
 
-Segui questi passaggi per assegnare lo stesso nome ai parametri di nascondi (![creazione rapida di contenuti](/help/assets/assets/Visibility-icon.svg)) di più livelli, consentendo di nasconderli o visualizzarli contemporaneamente.
+Segui questi passaggi per assegnare lo stesso nome ai parametri [!UICONTROL Nascondi] (![creazione rapida contenuto](/help/assets/assets/Visibility-icon.svg)) di più livelli, consentendo di nasconderli o visualizzarli contemporaneamente.
 
 1. Passa al [**[!UICONTROL pannello Proprietà]**](#parameterise-a-layer) di un livello.
 1. Attiva/disattiva il parametro **[!UICONTROL Nascondi]** se non è già stato impostato in precedenza come parametro.
@@ -275,7 +322,7 @@ Modifica il modello seguendo questi passaggi:
 
 ## Aggiungere un collegamento Call to action (CTA) al livello del modello{#add-CTA-in-dynamic-media-templates}
 
-Trasforma qualsiasi livello immagine o testo del modello [!DNL Dynamic Media] in un collegamento ipertestuale aggiungendo un collegamento CTA che indirizza gli utenti a una pagina di destinazione.
+Trasforma qualsiasi livello immagine, testo o forma del modello [!DNL Dynamic Media] in un collegamento ipertestuale aggiungendo un collegamento CTA che indirizza gli utenti a una pagina di destinazione.
 
 Per aggiungere un collegamento CTA a un livello, effettuate le seguenti operazioni:
 
@@ -314,7 +361,7 @@ Guarda questo video passo per passo per scoprire come aggiungere un collegamento
 ## Punti importanti da notare {#important-points-to-note}
 
 * Dopo aver creato un modello con livelli immagine con parametri per gli aggiornamenti dinamici, assicuratevi che le immagini destinate agli aggiornamenti futuri condividano le stesse dimensioni delle immagini con parametri. In questo modo le immagini si adattano perfettamente ai livelli senza traboccare o lasciare spazi vuoti. Attualmente, il modello non supporta le regolazioni automatiche delle quote per adattare le immagini ai livelli.
-* Non è disponibile alcun supporto per sottostringhe in un livello di testo. L&#39;utente non può applicare proprietà font diverse alla sottostringa di un livello di testo.
+* Non è disponibile alcun supporto per sottostringhe in un livello di testo. L’utente non può applicare proprietà di font diverse alla sottostringa di un livello di testo.
 * Il supporto di più società [!DNL Dynamic Media] non è attualmente disponibile con [!DNL Dynamic Media] modelli.
 * In caso di copia o spostamento, il selettore di destinazione mostra tutte le cartelle (incluse le cartelle non sincronizzate [!DNL Dynamic Media]). Inoltre, attualmente non visualizza le risorse Modello [!DNL Dynamic Media] (entrambe queste sono limitazioni del selettore di destinazione).
 * Qualsiasi operazione di aggiornamento su una cartella (ad esempio, Pubblica o Elimina) da Assets influisce sui modelli [!DNL Dynamic Media] disponibili in tale cartella.
