@@ -31,7 +31,7 @@ Durante la versione beta privata, l’Assistente all’intelligenza artificiale 
 
 Il seguente video di 3 minuti e 39 secondi offre una guida dettagliata dell’Assistente di intelligenza artificiale di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470363?learn=on&captions=ita)
 
 >[!IMPORTANT]
 >Assicurati di aver rivisto e inviato il contratto utente in modo che Adobe possa abilitare la funzione di AI Assistant per il test e la partecipazione al programma beta privato.
