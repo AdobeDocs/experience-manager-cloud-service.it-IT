@@ -74,9 +74,9 @@ Entrambi i modelli possono coesistere all’interno dello stesso programma Cloud
 : richiesto per entrambi i modelli di distribuzione. Segui Onboarding in un sito AEM.
 
 2. Portare il proprio Git (BYOG) (facoltativo)
-- Se memorizzi il codice del sito al di fuori di Adobe Git, completa l’onboarding BYOG.
+&#x200B;- Se memorizzi il codice del sito al di fuori di Adobe Git, completa l’onboarding BYOG.
 
 3. Licenza Edge Delivery
-- Assicurarsi che il programma sia concesso in licenza per Edge Delivery Services.
+&#x200B;- Assicurarsi che il programma sia concesso in licenza per Edge Delivery Services.
 
 
