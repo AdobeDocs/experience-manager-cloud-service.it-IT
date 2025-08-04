@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 95%
+source-wordcount: '1997'
+ht-degree: 91%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->* I frammenti di contenuto di AEM vengono esportati nell’area di lavoro predefinita di Adobe Target.
->* AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+>AEM deve essere integrato con Adobe Target secondo le istruzioni contenute in [Integrazione con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 Puoi esportare i [frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) creati in Adobe Experience Manager as a Cloud Service (AEM) in Adobe Target (Target). Puoi quindi utilizzarli come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
 
@@ -70,50 +69,24 @@ Prima di esportare un frammento è necessario aggiungere la **Configurazione clo
 
 * specificare le opzioni di formato da utilizzare per l’esportazione
 * selezionare un’area di lavoro di Target come destinazione
-* seleziona un dominio di Externalizer per riscrivere i riferimenti nel frammento di contenuto (facoltativo)
 
-Le opzioni richieste possono essere selezionate in **Proprietà pagina** della cartella e/o del frammento richiesti; la specifica viene ereditata in base alle necessità.
+Le opzioni richieste possono essere selezionate in **Proprietà** della cartella richiesta; la specifica viene ereditata in base alle esigenze.
 
 1. Passa alla console **Assets**.
 
-1. Apri **Proprietà pagina** per la cartella o il frammento appropriato.
+1. Apri **Proprietà** per la cartella appropriata.
 
    >[!NOTE]
    >
    >Se aggiungi la configurazione cloud alla cartella principale del frammento di contenuto, questa viene ereditata da tutti gli elementi secondari.
-   >
-   >Se aggiungi la configurazione cloud al frammento di contenuto stesso, questa viene ereditata da tutte le varianti.
 
 1. Seleziona la scheda **Servizi cloud**.
 
-1. Sotto **Configurazione servizio cloud**, seleziona **Adobe Target** dall’elenco a discesa.
+1. In **Configurazione Cloud Service**, seleziona la configurazione di destinazione dall&#39;elenco a discesa.
 
-   <!-- is this note appropriate? -->
+1. Seleziona la tua area di lavoro Adobe Target.
 
-   >[!NOTE]
-   >
-   >È possibile personalizzare il formato JSON di un’offerta in un frammento di contenuto. A questo scopo, definisci un componente di frammento di contenuto del cliente e poi annota come esportarne le proprietà nel modello Sling del componente.
-   >
-   >Consulta il componente core: [Componenti core - Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)
-
-1. Sotto **Adobe Target** seleziona:
-
-   * la configurazione appropriata
-   * l’opzione di formato richiesta
-   * un’area di lavoro Adobe Target
-   * se necessario, il dominio esternalizzatore
-
-   >[!CAUTION]
-   >
-   >Il dominio esternalizzatore è facoltativo.
-   >
-   > Un esternalizzatore AEM è configurato quando desideri che il contenuto esportato punti a uno specifico dominio di *pubblicazione*. Per ulteriori dettagli vedi [Configurazione di AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
-   >
-   > Inoltre, i domini di Externalizer sono rilevanti solo per il contenuto del frammento di contenuto inviato a Target, e non per i metadati come Visualizza contenuto offerta.
-
-   Ad esempio, per una cartella:
-
-   <!-- need a new screenshot -->
+   Ad esempio:
 
    ![Cartella - Servizi cloud](assets/cf-target-integration-01.png "Cartella - Servizi cloud")
 
@@ -221,7 +194,7 @@ Ora puoi selezionare la nuova configurazione da modificare.
      >
      >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
      >
-     >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+     >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell&#39;istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
      >
      >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Devi apportare le modifiche direttamente a tali componenti.
 
@@ -268,7 +241,7 @@ Il framework viene creato. Per replicare il framework nell’istanza di pubblica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=it).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -337,7 +310,7 @@ Per esportare un frammento di contenuto da AEM in Target (dopo aver specificato 
    
    -->
 
-1. Seleziona **Esporta senza pubblicare** o **Publish** come richiesto.
+1. Seleziona **Esporta senza pubblicare** o **Pubblica** come richiesto.
 
    >[!NOTE]
    >
