@@ -61,7 +61,7 @@ CIF ti supporta con modelli di integrazione standardizzati basati sulle best pra
    * Nessun accesso ai dati in fase di sviluppo
    * Necessità di dati ed esperienze sui prodotti in tempo reale
 * Una maturità digitale in crescita comporta la necessità di gestire l’esperienza
-* 
+* &#x200B;
    * CIF offre funzionalità di gestione dell’esperienza dei prodotti che possono essere incorporate in modo incrementale senza ulteriore sforzo IT.
 * Pronto per l&#39;omni-channel
    * CIF supporta una serie di tecnologie di punti di contatto (lato server, ibrido, lato client) con modelli, acceleratori e componenti core.
