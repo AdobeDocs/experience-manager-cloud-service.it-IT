@@ -2,10 +2,10 @@
 title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 89%
 
 ---
 
@@ -134,5 +134,29 @@ La tabella seguente illustra le principali differenze tra le due soluzioni:
 |  | Raccolte fissate dall’amministratore | ✓ | − |
 |  | Ricerca semantica | ✓ | − |
 |  | Ricerca localizzata e visualizzazione dei metadati | ✓ | − |
+
+## Come posso selezionare un archivio per visualizzare le risorse solo per l’ambiente selezionato? {#select-repository-multiple-environments}
+
+Dopo aver configurato Content Hub per la produzione e altri ambienti inferiori per lo stesso programma, puoi selezionare l’archivio e visualizzare le risorse per l’ambiente selezionato. Esegui i passaggi seguenti:
+
+1. Fai clic sull’icona utente nel riquadro a destra.
+
+1. Nella sezione **[!UICONTROL Impostazioni prodotto]**, selezionare **[!UICONTROL Seleziona archivio]**.
+
+1. Selezionare l&#39;archivio dal menu a discesa **[!UICONTROL Archivio]** e fare clic su **[!UICONTROL OK]** per confermare.
+
+   Content Hub ora visualizza le risorse per l’ambiente selezionato.
+
+## Come può Content Hub visualizzare l’anteprima delle miniature per il tipo di file .ZIP? {#thumbnail-preview-zip-file}
+
+Per fornire un&#39;anteprima delle miniature per tipi di file come .ZIP in Content Hub, è possibile aggiungere una rappresentazione denominata `cq5dam.preview.jpg` o `cq5dam.preview.png` alla radice del percorso in cui è disponibile il file .ZIP nell&#39;ambiente di authoring AEM as a Cloud Service.
+
+Immagine aggiunta come rappresentazione:
+
+* Può essere in formato JPG, JPEG o PNG.
+
+* Deve essere inferiore a 50 MB
+
+Quando disponibile, Content Hub visualizza l&#39;immagine come miniatura di anteprima per il file .ZIP su Content Hub.
 
 

@@ -3,9 +3,9 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -138,6 +138,10 @@ Ulteriori informazioni su [visualizzare e gestire le rappresentazioni in [!DNL E
   Le rappresentazioni di ritaglio avanzato vengono visualizzate e sono disponibili per il download solo se hai accesso a [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Le rappresentazioni con ritaglio avanzato sono disponibili solo per le risorse immagine.
 
   ![Tipi di rendering](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > Nel pannello Download vengono visualizzate solo le rappresentazioni statiche personalizzate. Le miniature predefinite di `cq5dam.*` non vengono visualizzate in Content Hub.
 
 ### Abilita rappresentazioni dinamiche {#enable-dynamic-media-renditions}
 

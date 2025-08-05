@@ -2,7 +2,7 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 10%
@@ -233,7 +233,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
