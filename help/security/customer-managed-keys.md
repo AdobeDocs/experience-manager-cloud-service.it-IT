@@ -3,10 +3,8 @@ title: Chiavi gestite dal cliente per AEM as a Cloud Service
 description: Scopri come gestire le chiavi di crittografia per AEM as a Cloud Service
 feature: Security
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
+source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 69%
@@ -182,7 +180,6 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
 Fornisci queste informazioni nell’interfaccia utente della CMK:
 ![Inserisci le informazioni nell&#39;interfaccia utente](./assets/cmk/step3a.png)
 
