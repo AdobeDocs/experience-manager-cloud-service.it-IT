@@ -180,6 +180,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 Fornisci queste informazioni nell’interfaccia utente della CMK:
 ![Inserisci le informazioni nell&#39;interfaccia utente](./assets/cmk/step3a.png)
 
