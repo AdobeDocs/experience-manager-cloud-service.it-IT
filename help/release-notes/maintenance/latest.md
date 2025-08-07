@@ -4,7 +4,7 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 13%
@@ -131,7 +131,7 @@ Con la versione di attivazione funzioni 2025.8.0 verrà fornito il set di funzio
 
 ### Problemi noti {#known-issues-21772}
 
-* SITES-31791: GraphQL dei frammenti di contenuto - Query non riuscita con &quot;Numero massimo di campi superato&quot;. Vedi [Articolo della Knowledge Base](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* SITES-31791: GraphQL dei frammenti di contenuto - Query non riuscita con &quot;Numero massimo di campi superato&quot;. Vedi [Articolo della Knowledge Base](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Funzioni e API obsolete {#deprecated-21772}
 
@@ -140,7 +140,6 @@ Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte
 ### Correzioni di sicurezza {#security-21772}
 
 AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 35 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
-
 
 ### Tecnologie incorporate {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle 
 | AEM HTL | 1.4.28-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | Componenti core AEM | 2.29.0 | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (predefinito) | [Versioni supportate di Node.js](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14 (predefinito) | [Versioni supportate di Node.js](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
