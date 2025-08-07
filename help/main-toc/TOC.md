@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
 workflow-type: tm+mt
-source-wordcount: '6563'
+source-wordcount: '6566'
 ht-degree: 99%
 
 ---
@@ -841,6 +841,7 @@ ht-degree: 99%
                + [Esempi per un editor di regole per un modulo adattivo basato su componenti core](/help/forms/rule-editor-core-components-usecases.md)
                + [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
                + [Miglioramenti a Avvia servizio nell’editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [Miglioramenti dell’editor di regole](/help/forms/rule-editor-enhancements-use-cases.md)
             + Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core{#create-and-use-custom-function-core-component}
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
