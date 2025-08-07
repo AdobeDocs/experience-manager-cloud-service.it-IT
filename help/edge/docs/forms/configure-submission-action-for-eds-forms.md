@@ -4,318 +4,227 @@ description: Scopri come configurare le azioni di invio in AEM Forms utilizzando
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
-workflow-type: ht
-source-wordcount: '2166'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 12%
 
 ---
 
-# Configurazione dell’invio dei moduli: dove finiscono i dati?
+# Configurare le azioni di invio per AEM Forms
 
-Dopo che un utente ha fatto clic su **Invia** nel modulo, è necessario indicare a Edge Delivery Services cosa fare con tali dati. Sono disponibili due opzioni principali:
+Configura la gestione dell’invio dei moduli per indirizzare i dati a fogli di calcolo, e-mail o sistemi backend tramite AEM Forms con Edge Delivery Services.
 
-## Metodo 1: utilizzo del servizio di invio moduli di AEM (semplificato)
+## Guida rapida alle decisioni
 
-Questo servizio è ideale per operazioni comuni e semplici, come l’invio di dati a un foglio di calcolo o a un’e-mail.
+Scegliere il metodo di invio:
 
-**Che cos’è e in che modo può aiutare?**
+| Metodo | Ideale per | Complessità configurazione | Casi d’uso |
+|--------|----------|------------------|-----------|
+| **Servizio di invio Forms** | Acquisizione dati semplice | Bassa | Moduli di contatto, sondaggi, raccolta di dati di base |
+| **Invio pubblicazione AEM** | Flussi di lavoro complessi | Alta | Integrazioni aziendali, elaborazione personalizzata, flussi di lavoro |
 
-Il [servizio di invio moduli](/help/forms/forms-submission-service.md) è un endpoint ospitato da Adobe. Quando il modulo invia i dati, questo servizio subentra ed esegue un’azione preconfigurata. È progettato per essere facile da configurare. Puoi configurare: invio a fogli di calcolo o e-mail:
+## Prerequisiti
 
-* **Invia al foglio di calcolo:** aggiungi automaticamente i dati del modulo inviati come nuova riga in un foglio di Google o in un file di Microsoft Excel (archiviato in OneDrive o SharePoint).
-* **Invia e-mail:** invia un’e-mail contenente i dati del modulo a uno o più indirizzi e-mail specificati.
+Prima di configurare le azioni di invio, verifica di disporre di:
 
-#### Importante: requisiti di configurazione
+- Istanza di AEM Forms as a Cloud Service
+- Progetto Edge Delivery Services configurato
+- Modulo creato tramite l’authoring di documenti o l’editor universale
+- Autorizzazioni richieste per le destinazioni (fogli di calcolo, sistemi e-mail o AEM)
 
-* **Accesso al foglio di calcolo:** per inviare dati a un foglio di Google o a un file di Excel in OneDrive/SharePoint, l’account del servizio Adobe (spesso `forms@adobe.com`) richiede in genere **l’autorizzazione di modifica** su tale foglio di calcolo specificato.
-* **Programma di accesso anticipato:** alcune funzioni di questo servizio, in particolare per i fogli di calcolo, potrebbero far parte di un programma di accesso anticipato. Potrebbe essere necessario richiedere l’accesso inviando un’e-mail a `aem-forms-ea@adobe.com` o compilando un modulo Adobe specifico con i dettagli del progetto. Controlla sempre la documentazione più recente di Adobe.
++++ Metodo 1: Servizio di invio Forms
 
-**Diagramma di flusso del servizio di invio moduli**
-<!--
-```mermaid
-    graph TD
-    UserForm[User Submits Form on Your EDS Site] >|Data Sent| FormSubmissionService[AEM Forms Submission Service]
-    FormSubmissionService -- "If configured for Google Sheets" > GoogleSheet[Data written to Google Sheet]
-    FormSubmissionService -- "If configured for Excel (OneDrive or SharePoint)" > ExcelSheet[Data written to Excel]
-    FormSubmissionService -- "If configured for Email" > Email[Email with data is sent]
+Il servizio di invio Forms è un endpoint ospitato da Adobe ideale per scenari di acquisizione dati semplici.
 
-    style UserForm fill:#ccf,stroke:#333
-    style FormSubmissionService fill:#fca,stroke:#333
-    style GoogleSheet fill:#90ee90,stroke:#333
-    style ExcelSheet fill:#90ee90,stroke:#333
-    style Email fill:#add8e6,stroke:#333
-```-->
-![Invio moduli](/help/forms/assets/eds-fss.png)
+### Destinazioni supportate
 
-Questo diagramma di flusso mostra come il servizio di invio moduli acquisisce i dati inviati e li inoltra a un foglio di calcolo o a un’e-mail configurati.
+- **Fogli di calcolo**: fogli Google, Microsoft Excel (OneDrive/SharePoint)
+- **E-mail**: invia i dati del modulo agli indirizzi e-mail specificati
 
-## Metodo 2: invio all’istanza AEM Publish (avanzato)
+### Passaggi di configurazione
 
-Per esigenze più complesse, [i moduli (in particolare quelli creati con l’editor universale) possono inviare dati direttamente all’istanza di pubblicazione di AEM as a Cloud Service](/help/forms/configure-submit-actions-core-components.md). Questo consente di sfruttare tutta la potenza del back-end di AEM.
+1. **Configurazione dell&#39;accesso di destinazione**
+   - Per i fogli di calcolo: concedere l&#39;autorizzazione di modifica a `forms@adobe.com` nel foglio di calcolo di destinazione
+   - Per l’e-mail: verifica che gli indirizzi e-mail dei destinatari siano accessibili
 
-**Quando è necessario effettuare l’invio ad AEM Publish?**
+2. **Configura invio modulo**
+   - Aprire il modulo nell’ambiente di authoring
+   - Imposta l&#39;azione di invio su &quot;Forms Submission Service&quot;
+   - Specifica l’URL o gli indirizzi e-mail del foglio di calcolo di destinazione
+   - Salvare e pubblicare il modulo
 
-* Per attivare flussi di lavoro AEM personalizzati dopo l’invio.
-* Per utilizzare il Modello dati modulo AEM (FDM) per l’integrazione con database o altri sistemi aziendali.
-* Per connettersi a servizi di terze parti come Marketo, Microsoft Power Automate o Adobe Workfront Fusion.
-* Per memorizzare i dati in posizioni specifiche, ad esempio Archiviazione BLOB di Azure o Elenchi/librerie documenti di SharePoint (non solo semplici fogli di calcolo).
-* Se disponi di una logica di convalida lato server o elaborazione dati complessa all’interno di AEM.
+3. **Invio di prova**
+   - Inviare i dati di prova tramite il modulo
+   - Verifica che i dati vengano visualizzati nella destinazione
+   - Controlla i registri di errore se l’invio non riesce
 
-**Azioni di invio disponibili (Invii AEM Publish)**
+### Note importanti
 
-* [Inviare a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
-* [Inviare e-mail (utilizzando i servizi di posta di AEM)](/help/forms/configure-submit-action-send-email.md)
-* [Inviare mediante il modello di dati modulo (FDM)](/help/forms/configure-data-sources.md)
-* [Richiamare un flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md)
-* [Inviare a SharePoint (come voci di elenco o documenti)](/help/forms/configure-submit-action-sharepoint.md)
-* [Inviare a OneDrive (come documenti)](/help/forms/configure-submit-action-onedrive.md)
-* [Inviare ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Inviare a iMicrosoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Inviare a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Inviare ad Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+- L&#39;account del servizio `forms@adobe.com` richiede l&#39;accesso in modifica ai fogli di calcolo di destinazione
+- Le notifiche e-mail vengono inviate subito dopo l’invio del modulo
+- La convalida dei dati avviene a livello di servizio
 
->[!NOTE]
->
-> Anche eseguendo il targeting di un foglio Google/Excel da AEM Publish, sono necessari passaggi di configurazione diversi rispetto al servizio di invio diretto di moduli.
+![Flusso del servizio di invio Forms](/help/forms/assets/eds-fss.png)
 
-**Diagramma di flusso invio AEM Publish**
++++
 
-<!--```mermaid
-    graph TD
-    UEForm[User Submits Universal Editor Form on EDS Site] >|Data sent to AEM Publish URL - example: /adobe/forms/af/submit/...| AEMPublish[AEM Publish Instance]
-    AEMPublish -- Configured to run AEM Workflow > AEMWorkflow[AEM Workflow is Triggered]
-    AEMPublish -- Configured to use Form Data Model > FDM[FDM updates Backend System or Database]
-    AEMPublish -- Configured for Marketo > Marketo[Data sent to Marketo Engage]
-    AEMPublish -- Other configured actions... > OtherIntegrations[...]
++++ Metodo 2: Invio pubblicazione AEM
 
-    style UEForm fill:#ccf,stroke:#333
-    style AEMPublish fill:#fca,stroke:#333
-    style AEMWorkflow fill:#add8e6,stroke:#333
-    style FDM fill:#add8e6,stroke:#333
-    style Marketo fill:#add8e6,stroke:#333
-```-->
+Invia i dati del modulo direttamente all’istanza Publish di AEM as a Cloud Service per un’elaborazione complessa.
 
-![Diagramma di flusso invio AEM Publish](/help/forms/assets/eds-aem-publish.png)
-Questo diagramma di flusso mostra l’invio di un modulo ad AEM Publish, il quale in seguito gestirà attività di back-end complesse.
+### Quando utilizzare AEM Publish
 
-### Confronto tra servizio di invio moduli e Invii AEM Publish
+- Flussi di lavoro AEM personalizzati richiesti dopo l’invio
+- Integrazione di Form Data Model (FDM) con i database
+- Integrazioni di servizi di terze parti (Marketo, Power Automate, Workfront Fusion)
+- Archiviazione BLOB di Azure o librerie di documenti SharePoint
+- Logica di convalida o elaborazione lato server complessa
 
-| Funzione | Servizio di invio dei moduli | Invii AEM Publish |
-| :- | :- | :-- |
-| **Ideale per** | Acquisizione semplice dei dati su fogli di calcolo, notifiche e-mail | Flussi di lavoro complessi, integrazioni aziendali, logica personalizzata |
-| **Authoring modulo** | Ottimo per moduli basati su documenti; adeguato per moduli UE semplici | Ideale per moduli creati con l’editor universale |
-| **Impegno richiesto per la configurazione** | Basso (configurazione spesso semplice) | Più alto (necessita di AEM Publish, Dispatcher, OSGi, configurazione CDN) |
-| **Sistema back-end** | Servizio ospitato da Adobe | Istanza di pubblicazione AEM as a Cloud Service |
-| **Flessibilità** | Limitato a foglio/e-mail | Molto flessibile e gamma completa di azioni AEM Forms |
-| **Esempio** | Dati del modulo di contatto in un foglio Google | Richiesta di prestito che attiva un flusso di lavoro di approvazione AEM |
+### Azioni di invio disponibili
 
-## Come incorporare i moduli in diversi siti o pagine
+- [Invia a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+- [Inviare e-mail tramite i servizi di posta AEM](/help/forms/configure-submit-action-send-email.md)
+- [Invia usando il modello dati modulo](/help/forms/configure-data-sources.md)
+- [Richiama il flusso di lavoro AEM](/help/forms/aem-forms-workflow-step-reference.md)
+- [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+- [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
+- [Inviare ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [Inviare a iMicrosoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+- [Inviare a Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [Inviare a Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-Talvolta, si desidera visualizzare un modulo creato e gestito in un’unica posizione (ad esempio, un “sito moduli” centrale) su una pagina o un sito Web diverso.
+![Flusso invio pubblicazione AEM](/help/forms/assets/eds-aem-publish.png)
 
-### Perché incorporare un modulo?
+### Requisiti di configurazione
 
-* Hai creato un modulo standard “Contattaci” con l’editor universale che deve essere visualizzato su più pagine di destinazione realizzate con l’authoring basato su documenti.
-* Il contenuto principale del sito web è in Authoring di documenti (DA) ed è necessario includere un modulo specializzato.
-* Desideri riutilizzare un singolo modulo ben gestito in diversi progetti EDS.
+#### &#x200B;1. Configurazione di AEM Dispatcher
 
-### Funzionamento tecnico dell’incorporamento dei moduli
+Configura Dispatcher nell’istanza AEM Publish:
 
-La pagina in cui desideri visualizzare il modulo (che qui verrà denominata, “pagina host”) conterrà del codice (in genere un blocco o uno script speciale). Quando un utente visita la pagina host, questo codice invia una richiesta all’URL in cui è ospitato il modulo effettivo (qui denominato “sorgente modulo”). La sorgente del modulo in seguito restituisce il proprio HTML, che la pagina host inserisce e visualizza.
+- **Consenti percorsi di invio**: modifica `filters.any` per consentire le richieste POST a `/adobe/forms/af/submit/...`
+- **Nessun reindirizzamento**: assicurati che le regole di Dispatcher non reindirizzino i percorsi di invio dei moduli
 
-**Architettura modulo incorporato**
+#### &#x200B;2. Filtro referrer OSGi
 
-<!--```mermaid
-   graph LR
-    User[User] >|Visits| HostPage[Host Page - for example: your-site.com/landing-page]
-    HostPage >|Contains code to embed form| FetchForm{Host Page Requests Form HTML}
-    FetchForm >|HTTP GET request to the form URL| FormSource[Form Source - for example: forms-repo.hlx.page/my-form]
-    FormSource >|Returns form HTML| FetchForm
-    FetchForm >|Injects form HTML into page| HostPage
-    HostPage >|Displays full page with embedded form| User
+Nella console OSGi di AEM (`/system/console/configMgr`):
 
-    subgraph Submission ["Form Submission from Host Page"]
-        HostPage_Form[Embedded form on the host page] >|User submits| TargetEndpoint[Submission endpoint - FSS or AEM Publish]
-    end
+1. Trova &quot;Apache Sling Referrer Filter&quot; (Filtro Referrer Apache Sling)
+2. Aggiungere il dominio Edge Delivery all’elenco &quot;Consenti host&quot;
+3. Includi domini come `https://your-eds-domain.hlx.page`
 
-    style HostPage fill:#e6f3ff,stroke:#333
-    style FormSource fill:#ffe6e6,stroke:#333
-    style FetchForm fill:#fff2cc,stroke:#333
-    style Submission fill:#f0fff0,stroke:#333
-```-->
+#### &#x200B;3. Regole di reindirizzamento CDN
+
+Configura la tua rete CDN di Edge Delivery per instradare gli invii:
+
+- Inoltra le richieste da `/adobe/forms/af/submit/...` alla tua istanza di pubblicazione AEM
+- L’implementazione varia a seconda del provider CDN (Fastly, Akamai, Cloudflare)
+
+#### &#x200B;4. Configurazione modulo
+
+1. Creare un modulo nell’editor universale
+2. Configurare l’azione di invio per eseguire il targeting dell’azione AEM Forms
+3. Specifica il percorso dell’endpoint di invio
+4. Pubblicare un modulo su un sito Edge Delivery
+
++++
+
++++ Incorporamento modulo (facoltativo)
+
+Incorpora i moduli creati in un percorso in pagine o siti Web diversi.
+
+### Casi d’uso
+
+- Riutilizzare i moduli standard in più pagine di destinazione
+- Includi moduli specializzati nel contenuto creato da documenti
+- Gestisci modulo singolo per più progetti EDS
+
+### Configurazione CORS
+
+Configura condivisione risorse tra origini nell&#39;origine del modulo:
+
+1. **Aggiungi intestazioni CORS** alle risposte dell&#39;origine del modulo:
+   - `Access-Control-Allow-Origin: https://your-host-domain.com`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Headers: Content-Type`
+
+2. **Esempio di configurazione**:
+
+       # Configurazione per il sito che ospita il modulo
+       intestazioni:
+       - percorso: /forms/**
+       personalizzato:
+       Access-Control-Allow-Origin: https://host-domain.com
+       Metodi Di Consenti-Controllo-Accesso: GET, OPTIONS
+   
+### Passaggi di incorporamento
+
+1. **Crea e pubblica modulo**
+   - Creare un modulo tramite l’authoring di documenti o l’editor universale
+   - Configurare il metodo di invio (pubblicazione FSS o AEM)
+   - Pubblica in URL autonomo
+
+2. **Configura CORS**
+   - Configurare le intestazioni CORS nel sito di origine del modulo
+   - Consenti al dominio della pagina host di recuperare il modulo
+
+3. **Incorpora nella pagina host**
+   - Aggiungi blocco di incorporamento modulo alla pagina host
+   - Posiziona blocco su URL modulo pubblicato
+   - Pubblica pagina host
+
 ![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
-Questo diagramma mostra la pagina host che recupera l’HTML del modulo dalla relativa sorgente e lo visualizza. L’invio utilizza l’endpoint configurato del modulo originale.
 
-## Configurazione di CORS per moduli incorporati
++++
 
-[CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) è una funzione di sicurezza del browser. Se la pagina host (ad esempio, `site-a.com`) tenta di recuperare un modulo da un dominio diverso (ad esempio, `forms-site-b.com`), il browser ne eseguirà il blocco, a meno che `forms-site-b.com` non lo consenta esplicitamente tramite le intestazioni CORS.
++++ Problemi comuni
 
-Senza le intestazioni CORS corrette sul **server della sorgente del modulo**, il browser impedisce il caricamento del modulo da parte della pagina host e il modulo incorporato non verrà visualizzato.
+| Problema   | Soluzione |
+|-------|----------|
+| **Invio del modulo non riuscito** | Controlla gli errori della console, verifica l’URL dell’endpoint, conferma le autorizzazioni |
+| **Modulo incorporato non visualizzato** | Configurare le intestazioni CORS nell’origine del modulo, verificare l’URL del modulo |
+| **errori 403/401 con AEM** | Aggiorna filtro Sling Referrer, controlla le impostazioni di autenticazione |
+| **I dati non raggiungono il foglio di calcolo** | Verificare che `forms@adobe.com` disponga dell&#39;accesso di modifica e controllare l&#39;URL del foglio di calcolo |
+| **Errori CORS** | Aggiungi `Access-Control-Allow-Origin` intestazioni corrette all&#39;origine del modulo |
 
-### Come configurare CORS sul sito che trasmette il modulo?
++++
 
-È necessario configurare il server che ospita la **sorgente modulo** per inviare intestazioni HTTP specifiche nella risposta. Il metodo esatto dipende dalla configurazione EDS (ad esempio, per i progetti Franklin, questa operazione viene spesso eseguita in un file di configurazione `helix-config.yaml` o simile nell’archivio GitHub che controlla il comportamento della CDN o la logica dell’edge worker).
-Intestazioni chiave da aggiungere alle risposte della sorgente del modulo:
+## Esempi di configurazione
 
-* `Access-Control-Allow-Origin: <URL_of_Host_Page>` (esempio: `https://your-site.com`). Per il test, è possibile utilizzare `*`, per la produzione, invece, è necessario specificare i domini esatti.
-* `Access-Control-Allow-Methods: GET, OPTIONS` (potrebbe essere necessario `POST` se anche l’invio del modulo stesso avviene tra origini diverse, ma in genere le operazioni di invio sono dirette a un endpoint separato, spesso con la stessa origine o configurato in modo specifico).
-* `Access-Control-Allow-Headers: Content-Type` (e qualsiasi altra intestazione personalizzata utilizzata dal recupero del modulo).
++++ Modulo basato su documenti con invio di fogli di calcolo
 
-**Esempio (concettuale per un file di configurazione):**
+1. Creare una struttura di modulo in Google Docs/Sheets
+2. Configurare l’endpoint del servizio di invio Forms
+3. Concedi a `forms@adobe.com` l&#39;accesso in modifica al foglio di calcolo di destinazione
+4. Pubblica documento su sito Edge Delivery
+5. Invio di moduli di prova e flusso di dati
 
-```yaml
-        # In the configuration for the site HOSTING THE FORM (Form Source)
-        headers:
-          # Apply to paths where your forms are served, e.g., /forms/**
-          - path: /forms/**
-            custom:
-              Access-Control-Allow-Origin: https://host-page-domain.com
-              Access-Control-Allow-Methods: GET, OPTIONS
-```
++++
 
-## Considerazioni aggiuntive: CDN e basi di codice multiple (Helix 4)
++++ Modulo editor universale con flusso di lavoro AEM
 
-* **Regole CDN:** la rete CDN potrebbe offrire alcune modalità per effettuare il proxy delle richieste. Ad esempio, una richiesta a `host-page.com/embedded-form` potrebbe essere instradata internamente dalla rete CDN per recuperare il contenuto da `form-source.com/actual-form`, facendolo apparire al browser come proveniente dalla stessa origine. Questa configurazione potrebbe risultare complessa.
-* **Basi di codice multiple (Helix 4):** se la pagina host e la sorgente del modulo si trovano in archivi GitHub diversi (comuni nelle impostazioni di Helix 4), assicurati che qualsiasi “blocco modulo” JavaScript necessario per il rendering o la gestione del modulo sia disponibile nella base di codice della pagina host o che il modulo HTML recuperato dalla sorgente del modulo sia autonomo con tutti i JavaScript necessari. Nei documenti originali viene indicato che per “helix4 con diverse basi di codice, è necessario aggiungere il blocco del modulo su entrambe le basi di codice”.
+1. Creare un modulo in Universal Editor
+2. Configurare l’azione di invio per &quot;Richiamare il flusso di lavoro AEM&quot;
+3. Configurare Dispatcher e il filtro referente su AEM Publish
+4. Configurare le regole di routing CDN
+5. Pubblicare un modulo e testare l’esecuzione del flusso di lavoro
 
-### Configurazioni architetturali comuni e passaggi di configurazione
++++
 
-Di seguito sono riportati alcuni modi comuni per configurare i moduli, combinando i metodi di authoring con le strategie di invio, insieme ai punti chiave di configurazione.
+## Best practice
 
-#### Modulo basato su documenti con invio di fogli di calcolo/e-mail
+- **Utilizza Forms Submission Service** per semplici scenari di acquisizione dati
+- **Scegli AEM Publish** quando sono necessarie elaborazioni o integrazioni complesse
+- **Verifica approfondita** nell&#39;ambiente di staging prima della distribuzione di produzione
+- **Monitorare gli invii** tramite i registri di AEM ed errori della console
+- **Implementare la corretta gestione degli errori** per gli invii non riusciti
+- **Convalida dati** a livello client e server
+- **Usa HTTPS** per tutti gli invii di moduli e la trasmissione di dati
 
-Questa è la configurazione più semplice. Creando il modulo in Word/Google Docs, i dati vengono inviati a un foglio di calcolo o a un’e-mail tramite il servizio di invio moduli.
+## Argomenti correlati
 
-1. Definisci il modulo in un documento/foglio Word/Google utilizzando la struttura di tabella o il blocco di modulo specificato.
-1. Nel documento (o nella configurazione correlata), specifica l’URL del foglio di calcolo di destinazione o l’indirizzo e-mail per il servizio di invio moduli.
-1. Assicurati che `forms@adobe.com` (o l’account del servizio pertinente) abbia accesso per la modifica al foglio di calcolo di destinazione.
-1. Pubblica il documento sul tuo sito Edge Delivery.
-
-**Architettura del servizio di invio basata su documenti + moduli**
-<!--
-```mermaid
-    graph TD
-        User[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User] >|Fills Out| EDS_Page_DocBased[EDS Page with Document-Based Form]
-        EDS_Page_DocBased >|Submits Data| FSS[AEM Forms Submission Service]
-        FSS > Target[<img src='https://img.icons8.com/color/48/000000/google-sheets.png' width='30' /> Data to Spreadsheet / <img src='https://img.icons8.com/color/48/000000/filled-sent.png' width='30' /> Email Notification]
-
-        Authoring[Form defined in Google Doc/Sheet] >|EDS Syncs & Renders| EDS_Page_DocBased
-
-        style EDS_Page_DocBased fill:#ccf,stroke:#333
-        style FSS fill:#fca,stroke:#333
-        style Target fill:#90ee90,stroke:#333
-        style Authoring fill:#e6ffe6,stroke:#333
-```-->
-
-![Architettura del servizio di invio basata su documenti + moduli](/help/forms/assets/eds-doc-fss.png)
-
-#### Modulo editor universale con invio foglio di calcolo/e-mail
-
-Per creare il modulo viene utilizzato l’editor universale visivo; per l’acquisizione dei dati, viene comunque utilizzato il semplice servizio di invio moduli.
-
-1. Crea il modulo utilizzando l’editor universale in AEM.
-1. Configura l’azione di invio del modulo nell’editor universale (UE) per utilizzare l’opzione “Invia al servizio di invio moduli”.
-1. Specifica l’URL o l’indirizzo e-mail del foglio di calcolo di destinazione.
-1. Se utilizzi i fogli di calcolo, assicurati che `forms@adobe.com` disponga dell’accesso per la modifica.
-1. Pubblica la pagina contenente il modulo da AEM sul tuo sito Edge Delivery.
-
-   **Architettura del servizio di invio moduli + editor universale**
-
-   ![Architettura del servizio di invio moduli + editor universale](/help/forms/assets/eds-ue-fss.png)
-
-   <!--```mermaid
-    graph TD
-    User[User] >|Fills Out| EDS_Page_UE[EDS Page with Universal Editor Form]
-    EDS_Page_UE >|Submits Data| FSS[AEM Forms Submission Service]
-    FSS > Target[Data sent to Google Sheet and Email Notification]
-    AuthoringUE[Form built in Universal Editor - AEM] >|AEM Publishes to EDS| EDS_Page_UE
-    style EDS_Page_UE fill:#ccf,stroke:#333
-    style FSS fill:#fca,stroke:#333
-    style Target fill:#90ee90,stroke:#333
-    style AuthoringUE fill:#e6f3ff,stroke:#333
-    ```
-    -->
-
-#### Modulo editor universale con invio AEM Publish (avanzato)
-
-Questa configurazione utilizza l’editor universale per la creazione dei moduli e l’istanza AEM Publish per una potente elaborazione back-end (flussi di lavoro, FDM, ecc.). Ciò richiede una maggiore configurazione.
-
-1. **Crea modulo in UE:** crea il modulo nell’editor universale. Configura la relativa azione di invio in modo che punti a un’azione AEM Forms (ad esempio, “Avvia un flusso di lavoro AEM”, “Invia utilizzando il modello dati del modulo”).
-1. **Configurazione AEM Dispatcher (a livello di AEM Publish):**
-   * **Nessun reindirizzamento:** assicurati che le regole di Dispatcher *non* reindirizzino le richieste effettuate ai `/adobe/forms/af/submit/...` percorsi.
-   * **Consenti invii:** modifica i filtri di Dispatcher (ad esempio, in `filters.any`) per `allow` in modo esplicito le richieste POST a `/adobe/forms/af/submit/...` dal dominio o dagli indirizzi IP del sito Edge Delivery.
-1. **Filtro referrer OSGi in AEM (nel livello AEM Publish):**
-   * Nella console OSGi di AEM (`/system/console/configMgr`), individua e configura il “Filtro referrer Apache Sling”.
-   * Aggiungi i domini del tuo sito Edge Delivery (ad esempio, `https://your-eds-domain.hlx.page`, `https://your-custom-eds-domain.com`) all’elenco “Consenti host” o “Consenti host RegExp”. Questo comunica ad AEM di accettare gli invii provenienti dal tuo sito EDS.
-1. **Regola di reindirizzamento CDN (sulla rete CDN di Edge Delivery):**
-   * Il sito Edge Delivery (ad esempio, `your-eds-domain.hlx.page`) deve indirizzare correttamente le richieste di invio all’istanza AEM Publish.
-   * Quando il modulo nella pagina EDS viene inviato, potrebbe essere destinato a un percorso relativo come `/adobe/forms/af/submit/...`. È necessaria una regola sul CDN di Edge Delivery (o edge worker) che dica: “Se una richiesta arriva a `your-eds-domain.hlx.page/adobe/forms/af/submit/...`, inoltrala (tramite proxy o reindirizzmento) a `your-aem-publish-instance.com/adobe/forms/af/submit/...`”.
-   * L’implementazione esatta dipende dal provider CDN (ad esempio, Fastly VCL, Akamai Property Manager, Cloudflare Workers).
-1. **(Facoltativo) `constants.js` per lo sviluppo (nella base di codice del progetto EDS):**
-   * Per lo sviluppo locale o se gli script dei moduli lato client devono conoscere l’URL completo di AEM Publish, puoi configurarlo in un file di configurazione `constants.js` o simile nell’archivio GitHub del progetto Edge Delivery. Esempio:
-
-   ```javascript
-       // in your-eds-project/scripts/constants.js
-       export const AEM_PUBLISH_URL = 'https://publish-p123-e456.adobeaemcloud.com';
-            // Your form submission script might then construct the submit URL:
-           // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
-   ```
-
-1. **Pubblicazione:** pubblica la pagina del modulo da AEM a EDS e assicurati che tutte le configurazioni di AEM siano attive nell’istanza AEM Publish.
-
-   **Editor universale + Architettura AEM Publish**
-
-![Editor universale + Architettura AEM Publish](/help/forms/assets/eds-aem-publish.png)
-
-Questo mostra il flusso: l’utente invia sul sito EDS, CDN invia ad AEM Dispatcher, quindi AEM Publish lo elabora.
-
-#### Incorporamento di un modulo in una pagina di Authoring di documenti (DA)
-
-Il contenuto del sito web principale viene creato in Authoring di documenti (DA). Il modulo viene creato separatamente utilizzando l’authoring basato su documenti o l’editor universale, in seguito incorporandolo nella pagina DA.
-
-1. **Crea e pubblica il modulo:**
-   * Per creare il modulo, utilizza l’authoring basato sui documenti O l’editor universale.
-   * Configura il relativo metodo di invio (al servizio di invio dei moduli o AEM Publish, come da configurazione 1, 2 o 3).
-   * Pubblica questo modulo in modo che sia attivo sul proprio URL di Edge Delivery (ad esempio, `.../forms/my-special-form`).
-1. **Configura CORS:** nel sito/progetto Edge Delivery che ospita questo modulo autonomo, verifica che le intestazioni CORS siano configurate in modo da consentire al dominio del sito di authoring dei documenti di recuperarlo.
-1. **Crea pagina in DA:** crea o modifica la pagina in Authoring documenti.
-1. **Incorpora blocco modulo:** utilizza il blocco appropriato in DA per incorporare un URL esterno. Punta questo blocco all’URL del modulo autonomo pubblicato.
-1. **Pubblica pagina DA:** pubblica la pagina DA. Ora recupera e visualizza il modulo.
-
-   **Moduli incorporati nell’architettura DA**
-
-   ![Moduli incorporati nell’architettura DA](/help/forms/assets/eds-forms-embedd-da.png)
-
-   Mostra una pagina DA che estrae un modulo da un’altra posizione EDS. Il modulo incorporato gestisce il proprio invio.
-
-## Risoluzione di problemi
-
-* **L’invio del modulo non funziona.**
-   * **Controlla errori console:** apri la console di sviluppo del browser (di solito F12) e cerca gli errori nella scheda Rete o Console al momento dell’invio.
-   * **Verifica l’URL di invio:** il modulo sta tentando di inviare all’endpoint corretto (URL del servizio di invio moduli o percorso di AEM Publish)?
-   * **Servizio di invio moduli:** se si invia a un foglio di calcolo, è stato concesso l’accesso di modifica a `forms@adobe.com`? L’URL del foglio di calcolo è corretto?
-   * **Invii AEM Publish:**
-      * Il Dispatcher consente ai POST di `/adobe/forms/af/submit/...`?
-      * Il filtro Sling Referrer su AEM Publish è configurato per consentire il dominio EDS?
-      * Le regole di reindirizzamento CDN per `/adobe/forms/af/submit/...` funzionano correttamente?
-
-* **Il modulo incorporato non viene visualizzato.**
-
-   * **CORS!** Questo è il motivo più comune. Controlla la console del browser per individuare eventuali errori CORS. Assicurati che il sito *che ospita* il modulo contenga le intestazioni `Access-Control-Allow-Origin` corrette.
-   * **URL del modulo corretto?** Il codice da incorporare nella pagina host punta all’URL live corretto del modulo?
-   * **Blocchi JavaScript:** se il modulo dipende da uno specifico “blocco modulo” JavaScript per il rendering, il codice di tale blocco è disponibile nella pagina host?
-
-* **Ricevo un messaggio “403 Forbidden” o “401 Unauthorized” quando invio ad AEM Publish.**
-
-   * Questo spesso indica che il filtro Sling Referrer su AEM Publish non consente le richieste dal dominio EDS. Ricontrolla la configurazione.
-   * Potrebbe anche trattarsi di un problema di autenticazione/autorizzazione se l’endpoint di invio AEM lo richiede, anche se gli invii dei moduli standard sono in genere anonimi.
-
-## Passaggi successivi
-
-Questa guida ha fornito una panoramica sull’utilizzo dei moduli con AEM Edge Delivery Services. Per istruzioni più dettagliate, passo dopo passo, su configurazioni specifiche, fai riferimento alla documentazione ufficiale di Adobe Experience Manager:
-
-* [Authoring basato su documenti con moduli Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
-* [Editor universale con moduli Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Authoring di documenti (DA) e incorporamento di contenuti](https://www.aem.live/developer/da-tutorial)
-* [Servizio di invio dei moduli AEM](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [Authoring basato su documenti con EDS Forms](/help/edge/docs/forms/tutorial.md)
+- [Editor universale con EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Servizio di invio dei moduli AEM](/help/forms/forms-submission-service.md)
+- [Configurare origini dati](/help/forms/configure-data-sources.md)
+- [Riferimento flusso di lavoro di AEM Forms](/help/forms/aem-forms-workflow-step-reference.md)

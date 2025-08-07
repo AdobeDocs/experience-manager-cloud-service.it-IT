@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM fornisce più opzioni di authoring per la creazione di moduli interattivi e 
 
 AEM supporta più metodi di authoring, ciascuno adatto a esigenze utente, livelli di competenza tecnica e destinazioni di pubblicazione diversi.
 
-* [Componenti di base](/help/forms/create-adaptive-form-tutorial.md): utilizza componenti di base per creare moduli interattivi tradizionali. Ideale per moduli che si integrano con i sistemi precedenti o si basano su flussi di lavoro consolidati. I moduli creati con i componenti di base possono essere pubblicati solo su AEM e non sono compatibili con Edge Delivery Services.
+- [Componenti di base](/help/forms/create-adaptive-form-tutorial.md): utilizza componenti di base per creare moduli interattivi tradizionali. Ideale per moduli che si integrano con i sistemi precedenti o si basano su flussi di lavoro consolidati. I moduli creati con i componenti di base possono essere pubblicati solo su AEM e non sono compatibili con Edge Delivery Services.
 
-* [Componenti core](/help/forms/creating-adaptive-form-core-components.md): utilizza i componenti core per creare moduli moderni, reattivi e scalabili. Supportano la riutilizzabilità, l’accessibilità e prestazioni migliori. I moduli creati con i componenti core possono essere pubblicati sia su AEM che Edge Delivery Services, offrendo flessibilità su più piattaforme.
+- [Componenti core](/help/forms/creating-adaptive-form-core-components.md): utilizza i componenti core per creare moduli moderni, reattivi e scalabili. Supportano la riutilizzabilità, l’accessibilità e prestazioni migliori. I moduli creati con i componenti core possono essere pubblicati sia su AEM che Edge Delivery Services, offrendo flessibilità su più piattaforme.
 
-* [Moduli Edge Delivery Services](/help/edge/docs/forms/overview.md): i moduli Edge Delivery Services trasformano il modo in cui i moduli vengono creati, eseguiti ed elaborati. Sfruttando Edge Delivery Services, le organizzazioni possono creare moduli digitali veloci, sicuri e altamente disponibili, migliorando l’esperienza utente e l’efficienza operativa con un ambiente di sviluppo rapido. Puoi creare moduli Edge Delivery Services in due modi:
-   * [Authoring WYSIWYG](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): utilizza l’editor universale per la creazione di moduli visivi e con metodo di trascinamento, ideale per autori di contenuti con conoscenze tecniche limitate. I moduli creati con l’editor universale vengono forniti con Edge Delivery Services per un rendering rapido e semplice.
-   * [Authoring basato su documenti](/help/edge/docs/forms/tutorial.md): utilizza strumenti come Microsoft Excel o Fogli Google per definire la struttura del modulo e il contenuto. Questo metodo è utile per gli utenti aziendali che preferiscono un input basato su fogli di calcolo. Questi moduli vengono generalmente pubblicati tramite Edge Delivery Services e sono adatti per casi d’uso semplici e a volume elevato.
-* [Authoring headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): utilizza le API per eseguire il rendering dei moduli come JSON per qualsiasi front-end, ad esempio React, Angular, app mobili o chioschi, senza dipendere da AEM. Attualmente, solo i componenti core supportano la consegna headless. I moduli headless sono ideali per casi di utilizzo omnicanale e vengono utilizzati indipendentemente dal rendering delle pagine di AEM, rendendoli flessibili per le distribuzioni front-end personalizzate.
+- [Moduli Edge Delivery Services](/help/edge/docs/forms/overview.md): i moduli Edge Delivery Services trasformano il modo in cui i moduli vengono creati, eseguiti ed elaborati. Sfruttando Edge Delivery Services, le organizzazioni possono creare moduli digitali veloci, sicuri e altamente disponibili, migliorando l’esperienza utente e l’efficienza operativa con un ambiente di sviluppo rapido. Puoi creare moduli Edge Delivery Services in due modi:
+   - [Authoring WYSIWYG](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): utilizza l’editor universale per la creazione di moduli visivi e con metodo di trascinamento, ideale per autori di contenuti con conoscenze tecniche limitate. I moduli creati con l’editor universale vengono forniti con Edge Delivery Services per un rendering rapido e semplice.
+   - [Authoring basato su documenti](/help/edge/docs/forms/tutorial.md): utilizza strumenti come Microsoft Excel o Fogli Google per definire la struttura del modulo e il contenuto. Questo metodo è utile per gli utenti aziendali che preferiscono un input basato su fogli di calcolo. Questi moduli vengono generalmente pubblicati tramite Edge Delivery Services e sono adatti per casi d’uso semplici e a volume elevato.
+- [Authoring headless](https://experienceleague.adobe.com/it/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): utilizza le API per eseguire il rendering dei moduli come JSON per qualsiasi front-end, ad esempio React, Angular, app mobili o chioschi, senza dipendere da AEM. Attualmente, solo i componenti core supportano la consegna headless. I moduli headless sono ideali per casi di utilizzo omnicanale e vengono utilizzati indipendentemente dal rendering delle pagine di AEM, rendendoli flessibili per le distribuzioni front-end personalizzate.
 
 ### Analisi comparativa dei metodi di authoring dei moduli di AEM
 
@@ -79,7 +79,7 @@ La tabella seguente fornisce un confronto dettagliato delle funzioni chiave tra 
 | **Composizione unificata con Sites** | ❌ | ✅ | ✅ | ❌ | ❌ |
 | **Incorporazione del supporto dei moduli** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Regole (comportamento dinamico)** | Editor di regole avanzate con funzioni personalizzate | Editor di regole avanzate con funzioni personalizzate | Editor di regole avanzate con funzioni personalizzate | Limitato: Mostra/nascondi, valore di calcolo, funzioni personalizzate | Limitato: richiede implementazione personalizzata |
-| **Supporto allegato** | ✅ | ✅ | ✅ | ℹ️ (Accesso anticipato) | ❌ |
+| **Supporto per allegati** | ✅ | ✅ | ✅ | ℹ️ (Accesso anticipato) | ❌ |
 | **Supporto CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Turnstile (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Richiede l’integrazione personalizzata |
 | **Funzioni di invio** | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Endpoint REST, e-mail, modello dati modulo (FDM), Richiama il flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion (EA) | Solo foglio di calcolo | Endpoint API personalizzati |
 | **Schema dati** | FDM, personalizzato | FDM, personalizzato | FDM, personalizzato | Personalizzato | Personalizzato |
@@ -107,7 +107,7 @@ La tabella seguente fornisce un confronto dettagliato delle funzioni chiave tra 
 
 ## Articolo correlato
 
-* [Creazione basata su documenti con Microsoft Excel o Fogli Google](/help/edge/docs/forms/create-forms.md)
-* [Editor universale per l’authoring WYSIWYG](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [Creare un modulo adattivo (componenti di base)](/help/forms/creating-adaptive-form.md)
-* [Creare un modulo adattivo (componenti core)](/help/forms/create-an-adaptive-form.md)
+- [Creazione basata su documenti con Microsoft Excel o Fogli Google](/help/edge/docs/forms/create-forms.md)
+- [Editor universale per l’authoring WYSIWYG](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Creare un modulo adattivo (componenti di base)](/help/forms/creating-adaptive-form.md)
+- [Creare un modulo adattivo (componenti core)](/help/forms/create-an-adaptive-form.md)

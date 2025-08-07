@@ -4,17 +4,17 @@ description: Utilizzare Google reCAPTCHA in un modulo per Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '848'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '847'
+ht-degree: 97%
 
 ---
 
 
 # Utilizzare reCAPTCHA con Edge Delivery Services per AEM Forms as a Cloud Service
 
-<span>La funzione **reCAPTCHA** è inclusa nel programma pre-release. Per richiedere l’accesso alla funzione **reCAPTCHA** per Edge Delivery Services per AEM Forms, invia un’e-mail dal tuo indirizzo di lavoro a: aem-forms-ea@adobe.com.</span>
+<span>La funzione **reCAPTCHA** è inclusa nel programma pre-release. Per richiedere l&#39;accesso alla funzionalità **reCAPTCHA** per Edge Delivery Services for AEM Forms, invia un&#39;e-mail dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com.</span>
 
 reCAPTCHA è un popolare strumento utilizzato per proteggere i siti web da attività fraudolente, spam e uso improprio. In Edge Delivery Services, il blocco modulo adattivi fornisce la capacità di aggiungere Google reCAPTCHA per distinguere tra esseri umani e bot. Questa funzione consente agli utenti di proteggere il proprio sito web da spam e uso improprio.
 Si consideri, ad esempio, un modulo “enquiry” che raccoglie dati quali le date di inizio e di fine del viaggio, il budget della camera, il costo stimato del viaggio e le informazioni sui viaggiatori. In tali casi, esiste il rischio che utenti malintenzionati sfruttino il modulo per scopi quali l’invio di e-mail di phishing o l’invio di contenuti irrilevanti o dannosi tramite spambot. L’integrazione di reCAPTCHA offre maggiore sicurezza verificando che gli invii provengano da utenti autentici, riducendo in modo efficace le voci di spam.
@@ -27,19 +27,20 @@ Edge Delivery Services supporta solo il **reCAPTCHA basato su punteggio(v3)** pe
 
 
 Alla fine di questo articolo imparerai a:
-* [Abilitare Google reCAPTCHA per un singolo modulo](#enable-google-recaptchas-for-a-single-form)
-* [Abilitare reCAPTCHA per tutti i moduli sul sito](#enable-recaptcha-for-all-the-forms)
+- [Abilitare Google reCAPTCHA per un singolo modulo](#enable-google-recaptchas-for-a-single-form)
+- [Abilitare reCAPTCHA per tutti i moduli sul sito](#enable-recaptcha-for-all-the-forms)
 
 ## Prerequisiti
 
-* Inizia lo sviluppo di moduli di Edge Delivery Services seguendo i passaggi descritti in [Creare un modulo utilizzando il Blocco moduli adattivi](/help/edge/docs/forms/create-forms.md).
-* Registra il dominio con [Google reCAPTCHA e ottieni le credenziali](https://www.google.com/recaptcha/admin/create).
+- Inizia lo sviluppo di moduli di Edge Delivery Services seguendo i passaggi descritti in [Creare un modulo utilizzando il Blocco moduli adattivi](/help/edge/docs/forms/create-forms.md).
+- Registra il dominio con [Google reCAPTCHA e ottieni le credenziali](https://www.google.com/recaptcha/admin/create).
 
 ## Abilitare Google reCAPTCHA per un singolo modulo {#enable-google-recaptchas-for-a-single-form}
 
 L’abilitazione di Google reCAPTCHA per un singolo modulo comporta l’integrazione del servizio Google reCAPTCHA in un modulo web specifico per evitare abusi automatizzati o invii di spam.
 
 Per abilitare Google reCAPTCHA per un singolo modulo:
+
 1. [Configurare la chiave segreta reCAPTCHA nel file di configurazione del progetto](#configure-secret-key)
 1. [Aggiungi la chiave del sito reCAPTCHA al modulo](#add-site-key)
 
@@ -58,13 +59,13 @@ Il segreto del sito per il dominio registrato con Google reCAPTCHA viene aggiunt
 
 1. Apri il file `config` e aggiungi le seguenti coppie chiave-valore:
 
-   * **captcha.secret**: valore chiave segreta Google reCAPTCHA
-   * **captcha.type**: reCAPTCHA v2
+   - **captcha.secret**: valore chiave segreta Google reCAPTCHA
+   - **captcha.type**: reCAPTCHA v2
 
    >[!NOTE]
    >
-   >  * È possibile recuperare le chiavi reCAPTCHA dall’[Admin Console Google reCAPTCHA](https://www.google.com/recaptcha/admin).
-   >  * Devi specificare il valore di **captcha.type** nel file `config` come **reCAPTCHA v2**.
+   >  - È possibile recuperare le chiavi reCAPTCHA dall’[Admin Console Google reCAPTCHA](https://www.google.com/recaptcha/admin).
+   >  - Devi specificare il valore di **captcha.type** nel file `config` come **reCAPTCHA v2**.
 
    Fai riferimento alla schermata di un file di configurazione del progetto di seguito:
 
@@ -80,8 +81,8 @@ La chiave del sito per un dominio registrato con Google reCAPTCHA viene aggiunta
 
 1. Passa alla cartella del progetto AEM in Microsoft® SharePoint o Google Drive e apri il foglio di calcolo. È inoltre possibile creare un nuovo foglio di calcolo per un modulo.
 1. Inserisci una riga nel foglio di calcolo per aggiungere un nuovo campo come CAPTCHA, inclusi i seguenti dettagli:
-   * **tipo**: captcha
-   * **valore**: valore chiave del sito Google reCAPTCHA
+   - **tipo**: captcha
+   - **valore**: valore chiave del sito Google reCAPTCHA
 
    Fai riferimento alla schermata seguente, che mostra il foglio di calcolo con il nuovo tipo di riga CAPTCHA:
 
@@ -129,8 +130,4 @@ Distribuisci il file `recaptcha.js` aggiornato nel progetto GitHub e verifica la
 Utilizza [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) per visualizzarne l’anteprima e pubblicare il sito.
 
 Il badge reCAPTCHA inizia a essere visualizzato per tutti i moduli sul sito.
-
-## Consulta anche
-
-{{see-more-forms-eds}}
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6563'
 ht-degree: 99%
 
 ---
@@ -1106,8 +1106,6 @@ ht-degree: 99%
       + [Reindirizzamenti](/help/edge/docs/redirects.md)
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
-      + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + Authoring WYSIWYG {#universal-editor}
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Come iniziare a creare con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1121,6 +1119,7 @@ ht-degree: 99%
          + [Come pubblicare e distribuire moduli - Guida alla pubblicazione con l’editor universale](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Componenti per moduli personalizzati - Guida all’editor universale per sviluppatori](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Integrazione del modello dati modulo: integrazione di moduli con il modello dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Configurazione del servizio di preriempimento: guida dettagliata alla configurazione del servizio di preriempimento](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Segmenti riutilizzabili, modulari e autonomi: creazione e utilizzo di frammenti di moduli nei moduli](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [Risoluzione dei problemi relativi agli errori 403 durante l’invio di moduli di Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
@@ -1142,6 +1141,8 @@ ht-degree: 99%
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+      + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Best practice per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Risorse di Edge Delivery {#resources}
       + Sidekick {#sidekick}

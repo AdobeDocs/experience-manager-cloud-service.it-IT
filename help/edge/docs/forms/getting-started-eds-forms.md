@@ -4,8 +4,8 @@ description: Scopri come creare e distribuire moduli con prestazioni elevate in 
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -41,11 +41,11 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 
 L’editor universale è uno strumento di authoring visivo e di trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
 
-* Editing WYSIWYG in tempo reale e anteprime dei dispositivi.
-* Regole avanzate e interfaccia utente di convalida: non è richiesto alcun codice.
-* Integrazione diretta con AEM Assets, flussi di lavoro e modello dati modulo (FDM).
-* Passaggio semplice per sviluppatori di componenti personalizzati in Vanilla JS/CSS.
-* Destinazioni di invio flessibili: inizia in modo semplice con il **servizio di invio moduli (FSS)** o passa alle **azioni di invio AEM Publish** in base alle tue esigenze.
+- Editing WYSIWYG in tempo reale e anteprime dei dispositivi.
+- Regole avanzate e interfaccia utente di convalida: non è richiesto alcun codice.
+- Integrazione diretta con AEM Assets, flussi di lavoro e modello dati modulo (FDM).
+- Passaggio semplice per sviluppatori di componenti personalizzati in Vanilla JS/CSS.
+- Destinazioni di invio flessibili: inizia in modo semplice con il **servizio di invio moduli (FSS)** o passa alle **azioni di invio AEM Publish** in base alle tue esigenze.
 
 > **Consiglio**: avvia ogni nuovo progetto di modulo con l’editor universale a meno che il team non sia interamente incentrato sul documento e il modulo non sia molto semplice.
 
@@ -54,10 +54,10 @@ L’editor universale è uno strumento di authoring visivo e di trascinamento pe
 
 L’authoring basato su documenti è particolarmente adatto per la creazione di moduli semplici e a bassa complessità, utilizzando strumenti noti come Microsoft Word, Google Docs o Google Sheets. Questo metodo è ideale per i team di contenuti che richiedono un modo rapido e diretto per creare moduli.
 
-* Definisci i campi modulo all’interno di una tabella (Docs) o come righe (Sheets).
-* Supporta la convalida del campo di base e Google reCAPTCHA per la protezione da posta indesiderata.
-* Gli invii di moduli vengono gestiti esclusivamente tramite il servizio di invio moduli.
-* Pubblicazione immediata: qualsiasi modifica apportata nel documento di origine viene immediatamente riportata sul sito senza richiedere una pipeline di distribuzione.
+- Definisci i campi modulo all’interno di una tabella (Docs) o come righe (Sheets).
+- Supporta la convalida del campo di base e Google reCAPTCHA per la protezione da posta indesiderata.
+- Gli invii di moduli vengono gestiti esclusivamente tramite il servizio di invio moduli.
+- Pubblicazione immediata: qualsiasi modifica apportata nel documento di origine viene immediatamente riportata sul sito senza richiedere una pipeline di distribuzione.
 
 
 ### Incorporamento di moduli in Document Authoring (DA)

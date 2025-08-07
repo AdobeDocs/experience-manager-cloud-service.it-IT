@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,8 +21,8 @@ In Edge Delivery Services, la traduzione dei moduli comporta la conversione del 
 
 Alla fine di questo articolo imparerai a:
 
-* [Tradurre moduli in Google Drive](#translate-form-google-drive)
-* [Tradurre moduli nel sito SharePoint](#translate-form-sharepoint)
+- [Tradurre moduli in Google Drive](#translate-form-google-drive)
+- [Tradurre moduli nel sito SharePoint](#translate-form-sharepoint)
 
 ## Tradurre moduli in Google Drive {#translate-form-google-drive}
 
@@ -68,11 +68,11 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Problemi noti {#known-issues}
 
-* Le etichette del modulo vengono tradotte nella lingua localizzata specificata nel foglio `shared-default`, ma i messaggi di errore vengono visualizzati nella lingua predefinita del browser.
+- Le etichette del modulo vengono tradotte nella lingua localizzata specificata nel foglio `shared-default`, ma i messaggi di errore vengono visualizzati nella lingua predefinita del browser.
 
   ![Messaggio di errore](/help/forms/assets/translate-error-message.png)
 
-* Quando apri il calendario, viene visualizzato in elenco a discesa nella lingua predefinita del browser.
+- Quando apri il calendario, viene visualizzato in elenco a discesa nella lingua predefinita del browser.
 
   ![Messaggio di errore](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **R**: per inserire testo in una lingua localizzata specifica, regola le impostazioni della tastiera sul dispositivo. Per istruzioni su come eseguire questa operazione, fai riferimento ai seguenti collegamenti:
 
-* [Configurare il Mac per ricevere input in un’altra lingua](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [Configurare Windows per ricevere input in un’altra lingua](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-* [Configurare dispositivi Android o iPhone/iPad per ricevere input in un’altra lingua](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+- [Configurare il Mac per ricevere input in un’altra lingua](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [Configurare Windows per ricevere input in un’altra lingua](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+- [Configurare dispositivi Android o iPhone/iPad per ricevere input in un’altra lingua](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
-**Q**: come posso recuperare un elenco di lingue utilizzate nella funzione `GOOGLETRANSLATE`?
+**D**: come posso recuperare un elenco di lingue utilizzate nella funzione `GOOGLETRANSLATE`?
 
-**A**: puoi fare riferimento alla [documentazione ufficiale di Google](https://cloud.google.com/translate/docs/languages) per un elenco completo delle lingue utilizzate in GOOGLETRANSLATE.
+**R**: puoi fare riferimento alla [documentazione ufficiale di Google](https://cloud.google.com/translate/docs/languages) per un elenco completo delle lingue utilizzate in GOOGLETRANSLATE.
 
-## Consulta anche
-
-{{see-more-forms-eds}}
 

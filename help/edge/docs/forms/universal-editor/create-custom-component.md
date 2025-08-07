@@ -4,17 +4,14 @@ description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1804'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 96%
 
 ---
 
 # Creare un componente personalizzato nell’ambiente di authoring WYSIWYG
-
-<span class="preview">Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
-
 
 I moduli di Edge Delivery Services offrono funzionalità di personalizzazione e permettono agli sviluppatori front-end di creare componenti per moduli su misura. Questi componenti personalizzati si integrano direttamente nell’esperienza di authoring WYSIWYG, consentendo agli autori di moduli di aggiungerli, configurarli e gestirli facilmente nell’editor di moduli. I componenti personalizzati permettono agli autori di ottimizzare le funzionalità dei moduli. Inoltre, assicurano un processo di authoring fluido e intuitivo.
 
@@ -24,8 +21,8 @@ Questo documento illustra i passaggi necessari per creare componenti personalizz
 
 Prima di iniziare a creare il componente personalizzato, è necessario:
 
-* Avere una conoscenza di base dei [componenti HTML nativi](/help/edge/docs/forms/form-components.md).
-* Scopri come [assegnare uno stile ai campi modulo in base al tipo di campo utilizzando i selettori CSS](/help/edge/docs/forms/style-theme-forms.md)
+- Avere una conoscenza di base dei [componenti HTML nativi](/help/edge/docs/forms/form-components.md).
+- Scopri come [assegnare uno stile ai campi modulo in base al tipo di campo utilizzando i selettori CSS](/help/edge/docs/forms/style-theme-forms.md)
 
 ## Creare un componente personalizzata
 
@@ -52,9 +49,9 @@ Aggiungi al progetto AEM una nuova cartella e nuovi file per il componente perso
    1. Apri il progetto AEM e passa a `../blocks/form/components/`.
    1. Aggiungi una nuova cartella per il componente personalizzato in `../blocks/form/components/<component_name>`. In questo esempio verrà creata una cartella denominata `range`.
    1. Passa alla cartella appena creata in `../blocks/form/components/<component_name>`. Ad esempio, passa a `../blocks/form/components/range` e aggiungi i seguenti file:
-      * `/blocks/form/components/range/_range.json`: contiene la definizione del componente personalizzato.
-      * `../blocks/form/components/range/range.css`: definisce lo stile del componente personalizzato.
-      * `../blocks/form/components/range/range.js`: personalizza il componente personalizzato in fase di esecuzione.
+      - `/blocks/form/components/range/_range.json`: contiene la definizione del componente personalizzato.
+      - `../blocks/form/components/range/range.css`: definisce lo stile del componente personalizzato.
+      - `../blocks/form/components/range/range.js`: personalizza il componente personalizzato in fase di esecuzione.
 
         ![Aggiungere il componente personalizzato per l’authoring](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
 
@@ -68,12 +65,12 @@ Aggiungi al progetto AEM una nuova cartella e nuovi file per il componente perso
 
    Per aggiungere la definizione, è necessario aggiungere i seguenti campi al file `_range.json`:
 
-   * **title**: titolo del componente visualizzato nell’editor universale.
-   * **id**: identificatore univoco del componente.
-   * **fieldType**: i moduli supportano vari **fieldType** per acquisire tipi specifici di input dell’utente. Puoi trovare i [fieldType supportati nella sezione Byte aggiuntivi](#supported-fieldtypes).
-   * **resourceType**: a ogni componente personalizzato è associato un tipo di risorsa basato sul relativo fieldType. Puoi trovare i [resourceType supportati nella sezione Byte aggiuntivi](#supported-resourcetype).
-   * **jcr:title**: è simile a un titolo, ma viene memorizzato all’interno della struttura del componente.
-   * **fd:viewType**: rappresenta il nome del componente personalizzato. È l’identificatore univoco del componente. È necessario per creare una vista personalizzata per il componente.
+   - **title**: titolo del componente visualizzato nell’editor universale.
+   - **id**: identificatore univoco del componente.
+   - **fieldType**: i moduli supportano vari **fieldType** per acquisire tipi specifici di input dell’utente. Puoi trovare i [fieldType supportati nella sezione Byte aggiuntivi](#supported-fieldtypes).
+   - **resourceType**: a ogni componente personalizzato è associato un tipo di risorsa basato sul relativo fieldType. Puoi trovare i [resourceType supportati nella sezione Byte aggiuntivi](#supported-resourcetype).
+   - **jcr:title**: è simile a un titolo, ma viene memorizzato all&#39;interno della struttura del componente.
+   - **fd:viewType**: rappresenta il nome del componente personalizzato. È l’identificatore univoco del componente. È necessario per creare una vista personalizzata per il componente.
 
 Dopo aver aggiunto la definizione del componente, il file `_range.json` è il seguente:
 
@@ -118,17 +115,17 @@ Il componente personalizzato include un modello di componente che specifica qual
 
    1. **Creare un nuovo modello**
 
-      * Nell’array dei modelli, aggiungi un nuovo oggetto e imposta l’`id` del modello di componente in modo che corrisponda alla proprietà `fd:viewType` configurata in precedenza nella definizione del componente.
-      * Includi un’array di campi all’interno di questo oggetto.
+      - Nell’array dei modelli, aggiungi un nuovo oggetto e imposta l’`id` del modello di componente in modo che corrisponda alla proprietà `fd:viewType` configurata in precedenza nella definizione del componente.
+      - Includi un’array di campi all’interno di questo oggetto.
 
    2. **Definire i campi per la finestra di dialogo Proprietà**
 
-      * Ogni oggetto nell’array di campi deve essere un componente di tipo contenitore, per poter comparire come scheda nella finestra di dialogo **Proprietà**.
-      * Alcuni campi possono fare riferimento a proprietà riutilizzabili disponibili in `models/form-common`.
+      - Ogni oggetto nell’array di campi deve essere un componente di tipo contenitore, per poter comparire come scheda nella finestra di dialogo **Proprietà**.
+      - Alcuni campi possono fare riferimento a proprietà riutilizzabili disponibili in `models/form-common`.
 
    3. **Utilizzare un modello di componente esistente come riferimento**
 
-      * Puoi copiare il contenuto di un modello di componente esistente che corrisponde al `fieldType` scelto e modificarlo in base alle esigenze. Ad esempio, il componente `number-input` è stato esteso per creare un componente **intervallo**, pertanto è possibile utilizzare l’array di modelli da `models/form-components/_number-input.json` come riferimento.
+      - Puoi copiare il contenuto di un modello di componente esistente che corrisponde al `fieldType` scelto e modificarlo in base alle esigenze. Ad esempio, il componente `number-input` è stato esteso per creare un componente **intervallo**, pertanto è possibile utilizzare l’array di modelli da `models/form-components/_number-input.json` come riferimento.
 
    Il file `_range.json`, dopo l’aggiunta del modello di componente, è il seguente:
 
@@ -186,10 +183,10 @@ Per aggiungere la proprietà personalizzata Valore passaggio, aggiungi il modell
 
 Lo snippet JSON definisce una proprietà personalizzata denominata **Valore passaggio** per un componente **Intervallo**. Di seguito è riportata la suddivisione di ciascun campo:
 
-* **component**: specifica il tipo di campo di input utilizzato nella finestra di dialogo Proprietà. In questo caso, `number` indica che il campo accetta valori numerici.
-* **name**: l’identificatore della proprietà, utilizzato per farvi riferimento nella logica del componente. In questo caso `stepValue` rappresenta l’impostazione del valore incremento per l’intervallo.
-* **label**: nome visualizzato con cui la proprietà viene identificata nella finestra di dialogo Proprietà.
-* **valueType**: definisce il tipo di dati previsto per la proprietà. `number` garantisce che siano consentiti solo gli input numerici.
+- **component**: specifica il tipo di campo di input utilizzato nella finestra di dialogo Proprietà. In questo caso, `number` indica che il campo accetta valori numerici.
+- **name**: l’identificatore della proprietà, utilizzato per farvi riferimento nella logica del componente. In questo caso `stepValue` rappresenta l’impostazione del valore incremento per l’intervallo.
+- **label**: nome visualizzato con cui la proprietà viene identificata nella finestra di dialogo Proprietà.
+- **valueType**: definisce il tipo di dati previsto per la proprietà. `number` garantisce che siano consentiti solo gli input numerici.
 
 Ora puoi utilizzare `stepValue` come proprietà personalizzata nelle proprietà JSON di `range.js` e implementarne il comportamento dinamico in base al relativo valore in fase di esecuzione.
 
@@ -263,46 +260,48 @@ Per fare in modo che il componente personalizzato venga visualizzato nell’elen
 1. Individua l’array di componenti all’interno dell’oggetto che contiene `id="form"`.
 1. Aggiungi il valore `fd:viewType` da `definitions[]` all’array di componenti dell’oggetto con `id="form"`.
 
-```javascript
- "filters": [
-    {
-      "id": "form",
-      "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-    }
-  ]
-```
+   ```javascript
+   "filters": [
+     {
+       "id": "form", 
+       "components": [
+         "captcha",
+         "checkbox",
+         "checkbox-group",
+         "date-input",
+         "drop-down",
+         "email",
+         "file-input",
+         "form-accordion",
+         "form-button",
+         "form-fragment",
+         "form-image",
+         "form-modal",
+         "form-reset-button",
+         "form-submit-button",
+         "number-input",
+         "panel",
+         "plain-text",
+         "radio-group",
+         "rating",
+         "telephone-input",
+         "text-input",
+         "tnc",
+         "wizard",
+         "range"
+       ]
+     }
+   ]
+   ```
 
 ![filtro componente](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
 ### &#x200B;4. Registrazione del componente personalizzato
 
-Per consentire al blocco modulo di riconoscere il componente personalizzato e caricarne le proprietà definite nel modello di componente durante l’authoring, aggiungi il valore `fd:viewType` dalla definizione del componente al file `mappings.js`.
+Per consentire al blocco di modulo di riconoscere il componente personalizzato e caricarne le proprietà definite nel modello di componente durante la creazione del modulo, aggiungere il valore `fd:viewType` dalla definizione del componente al file `mappings.js`.
+
 Per registrare un componente:
+
 1. Passa al file `/blocks/form/mappings.js`.
 1. Individua l’array `customComponents[]`.
 1. Aggiungi il valore `fd:viewType` dall’array `definitions[]` all’array `customComponents[]`.
@@ -347,7 +346,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    height: 5px;
    border-radius: 5px;
    border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% * var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps)/var(--total-steps)));
+   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
    }
    
    main .form .range-widget-wrapper.decorated input[type="range"]:focus {
@@ -359,18 +358,18 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
+   background: #00008B; /- Dark Blue */
+   border: 3px solid #00008B; /- Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
+   border-color: #00008B; /- Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
+   color: #00008B; /- Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -392,6 +391,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    float: right;
    }
    ```
+
    Il codice consente di definire lo stile e l’aspetto visivo del componente personalizzato.
 
 1. Per aggiungere la funzionalità, passa al file `/blocks/form/components/range/range.js` e aggiungi la seguente riga di codice:
@@ -407,7 +407,7 @@ Puoi modificare i componenti personalizzati utilizzando markup predefiniti, come
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
+   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),
@@ -460,18 +460,18 @@ La schermata seguente illustra il componente intervallo aggiornato.
 
 ## Domande frequenti
 
-* **Se aggiungo lo stile sia in component.css che in forms.css, quale dei due ha la priorità?**
+- **Se aggiungo lo stile sia in component.css che in forms.css, quale dei due ha la priorità?**
 Quando gli stili sono definiti sia in `component.css` che in **forms.css**, `component.css` ha la priorità. Questo perché gli stili a livello di componente sono più specifici e sovrascrivono gli stili globali di `forms.css`.
 
-* **Il componente personalizzato non è visibile nell’elenco dei componenti disponibili nell’editor universale. Come posso risolvere il problema?**
+- **Il componente personalizzato non è visibile nell’elenco dei componenti disponibili nell’editor universale. Come posso risolvere il problema?**
 Se il componente personalizzato non viene visualizzato, controlla i file seguenti per verificare che il componente sia registrato correttamente:
-   * **component-definition.json**: verifica che il componente sia definito correttamente.
-   * **component-filters.json**: verifica che il componente sia consentito nelle sezioni appropriate.
-   * **component-models.json**: verifica che il modello del componente sia configurato correttamente.
+   - **component-definition.json**: verifica che il componente sia definito correttamente.
+   - **component-filters.json**: verifica che il componente sia consentito nelle sezioni appropriate.
+   - **component-models.json**: verifica che il modello del componente sia configurato correttamente.
 
 ## Best practice
 
-* È consigliato di [configurare un ambiente di sviluppo AEM locale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) per sviluppare stili e componenti personalizzati a livello locale.
+- È consigliato di [configurare un ambiente di sviluppo AEM locale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment) per sviluppare stili e componenti personalizzati a livello locale.
 
 
 ## Byte aggiuntivi
@@ -496,19 +496,17 @@ Se il componente personalizzato non viene visualizzato, controlla i file seguent
 ### fieldType supportati
 
 I fieldType supportati per i moduli sono:
-* text-input
-* number-input
-* date-input
-* pannello
-* checkbox
-* drop-down
-* radio-group
-* plain-text
-* file-input
-* email
-* immagine
-* button
 
-## Consulta anche
+- text-input
+- number-input
+- date-input
+- pannello
+- checkbox
+- drop-down
+- radio-group
+- plain-text
+- file-input
+- email
+- immagine
+- button
 
-{{universal-editor-see-also}}

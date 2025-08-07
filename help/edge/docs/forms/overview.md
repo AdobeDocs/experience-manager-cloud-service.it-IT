@@ -4,8 +4,8 @@ description: Crea e distribuisci moduli con prestazioni elevate su Adobe Experie
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -19,20 +19,20 @@ Edge Delivery Services per AEM Forms è un set di servizi componibili per un am
 
 Questi servizi consentono di:
 
-* **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. Senza personalizzazioni è possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring WYSIWYG (Editor universale o editor di moduli adattivi). Si possono utilizzare più origini di contenuto nello stesso sito moduli e gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google, Editor universale o Editor di moduli adattivi.
+- **creare esperienze di iscrizione con strumenti a tua scelta:** aumentare l’efficienza di authoring separando le origini di contenuto. Senza personalizzazioni è possibile utilizzare sia l’authoring basato su documenti (Microsoft SharePoint o Google Drive) che l’authoring WYSIWYG (Editor universale o editor di moduli adattivi). Si possono utilizzare più origini di contenuto nello stesso sito moduli e gli strumenti di authoring preferiti, ad esempio Microsoft Excel, Fogli Google, Editor universale o Editor di moduli adattivi.
 
-* **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite la telemetria operativa. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
+- **Offrire esperienze di registrazione digitale eccezionali:** offri esperienze di registrazione digitale che vengono caricate e riprodotte rapidamente, e controlla in modo continuo le prestazioni dei moduli tramite la telemetria operativa. Tempi di caricamento più rapidi e un’esperienza utente ottimizzata contribuiscono a tassi più elevati di completamento e conversione dei moduli.
 
-* **Usare set di strumenti intuitivi per gli sviluppatori:** Edge Delivery Services per AEM Forms utilizza il normale linguaggio HTML, CSS moderni e JavaScript Vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
+- **Usare set di strumenti intuitivi per gli sviluppatori:** Edge Delivery Services per AEM Forms utilizza il normale linguaggio HTML, CSS moderni e JavaScript Vanilla per creare esperienze eccezionali, evitando la curva di apprendimento ripida di un framework specifico. Uno sviluppatore con competenze di base per lo sviluppo web può personalizzare e creare facilmente componenti ed esperienze di moduli. Non è necessario attendere l’esecuzione di una pipeline, è sufficiente archiviare il codice in GitHub e le modifiche sono live.
 
 ## Scelta di un metodo di authoring
 
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) consente di offrire esperienze web estremamente veloci e altamente scalabili dall’edge. Questa guida spiega **come creare e pubblicare moduli per tali esperienze**, con una chiara gerarchia di consigli:
 
-* **Editor universale (UE): la migliore scelta per la maggior parte dei team**
-* **Authoring basato su documenti (documenti/fogli): ideale per moduli semplici e veloci**
-* **Authoring di documenti (DA): da utilizzare per incorporare i moduli nelle pagine create da DA**
+- **Editor universale (UE): la migliore scelta per la maggior parte dei team**
+- **Authoring basato su documenti (documenti/fogli): ideale per moduli semplici e veloci**
+- **Authoring di documenti (DA): da utilizzare per incorporare i moduli nelle pagine create da DA**
 
 Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprendere le opzioni di invio e seguire i passaggi successivi verso i moduli pronti per la produzione.
 
@@ -52,19 +52,19 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 
 [Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) è uno strumento di authoring visivo e di trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
 
-* Editing WYSIWYG in tempo reale e anteprime dei dispositivi.
-* Integrazione diretta con AEM Assets, flussi di lavoro e modello dati modulo (FDM).
-* Passaggio semplice per sviluppatori di componenti personalizzati in Vanilla JS/CSS.
-* Editor di regole avanzate per la creazione di logica complessa.
-* Estensibilità lato server per funzionalità personalizzate.
-* Esperienza di modifica WYSIWYG per creare e visualizzare facilmente i moduli.
-* Documento di funzionalità del record per creare archivi inalterabili dei dati inviati.
-* Integrazione con Adobe Sign per le firme elettroniche.
-* Integrazione con Adobe Workfront Fusion per attivare scenari Adobe Workfront Fusion al momento dell’invio del modulo.
-* Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
-* Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
-* Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
-* Invia utilizzando le azioni di invio del servizio di invio moduli (FSS) o AEM Publish
+- Editing WYSIWYG in tempo reale e anteprime dei dispositivi.
+- Integrazione diretta con AEM Assets, flussi di lavoro e modello dati modulo (FDM).
+- Passaggio semplice per sviluppatori di componenti personalizzati in Vanilla JS/CSS.
+- Editor di regole avanzate per la creazione di logica complessa.
+- Estensibilità lato server per funzionalità personalizzate.
+- Esperienza di modifica WYSIWYG per creare e visualizzare facilmente i moduli.
+- Documento di funzionalità del record per creare archivi inalterabili dei dati inviati.
+- Integrazione con Adobe Sign per le firme elettroniche.
+- Integrazione con Adobe Workfront Fusion per attivare scenari Adobe Workfront Fusion al momento dell’invio del modulo.
+- Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
+- Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
+- Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
+- Invia utilizzando le azioni di invio del servizio di invio moduli (FSS) o AEM Publish
 
 **Consiglio**: avvia ogni nuovo progetto di modulo con l’editor universale a meno che il team non sia interamente incentrato sul documento e il modulo non sia molto semplice.
 
@@ -73,14 +73,14 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 
 [Authoring basato su documenti](/help/edge/docs/forms/tutorial.md) è ideale per la creazione di moduli semplici e a bassa complessità utilizzando strumenti noti come Microsoft Word, Google Docs o Google Sheets. Questo metodo è ideale per i team di contenuti che richiedono un modo rapido e diretto per creare moduli.
 
-* Componenti accessibili per un’esperienza di facile utilizzo.
-* Struttura HTML standardizzata per un rendering coerente.
-* Regole e convalide per garantire l’accuratezza dei dati.
-* Opzioni di file allegato per la raccolta di informazioni aggiuntive.
-* Integrazione del servizio reCaptcha di Google per la protezione da posta indesiderata.
-* Possibilità di creare componenti modulo personalizzati per esigenze specifiche.
-* Inviare i dati del modulo direttamente a Microsoft Excel o Fogli Google o indirizzi e-mail.
-* Monitorare le prestazioni dei moduli tramite la telemetria operativa
+- Componenti accessibili per un’esperienza di facile utilizzo.
+- Struttura HTML standardizzata per un rendering coerente.
+- Regole e convalide per garantire l’accuratezza dei dati.
+- Opzioni di file allegato per la raccolta di informazioni aggiuntive.
+- Integrazione del servizio reCaptcha di Google per la protezione da posta indesiderata.
+- Possibilità di creare componenti modulo personalizzati per esigenze specifiche.
+- Inviare i dati del modulo direttamente a Microsoft Excel o Fogli Google o indirizzi e-mail.
+- Monitorare le prestazioni dei moduli tramite la telemetria operativa
 
 
 ### Incorporamento di moduli in Document Authoring (DA)
@@ -112,10 +112,10 @@ Il diagramma seguente illustra come modificare il contenuto in Microsoft Excel o
 
 ## Passaggi successivi
 
-* [Funzioni e funzionalità dell’editor universale per i moduli di Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
-* [Crea il primo modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
-* [Moduli incorporati in Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
+- [Funzioni e funzionalità dell’editor universale per i moduli di Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Creare il primo modulo utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/create-forms.md)
+- [Crea il primo modulo utilizzando Google Sheets o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+- [Moduli incorporati in Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
 
 
 Ora puoi creare il tuo primo modulo a prestazioni elevate con AEM Edge Delivery Services.
@@ -125,15 +125,15 @@ Ora puoi creare il tuo primo modulo a prestazioni elevate con AEM Edge Delivery 
 
 ## Start creating forms
 
-* [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
-* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
-* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
-* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
-* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-* [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
+- [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
+- [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+- [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+- [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+- [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+- [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+- [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+- [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+- [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
@@ -149,10 +149,10 @@ Ora puoi creare il tuo primo modulo a prestazioni elevate con AEM Edge Delivery 
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
+        transition: background-color 0.3s ease; /- Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
+        background-color: #f0f0f0; /- Changing background color on hover */
     }
 </style>
 

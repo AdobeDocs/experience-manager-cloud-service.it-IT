@@ -4,13 +4,13 @@ description: Scopri come creare un modulo adattivo utilizzando  [!DNL Experience
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 12%
+source-wordcount: '711'
+ht-degree: 16%
 
 ---
-
 
 # Creare un modulo adattivo (componenti core) basato su modelli di modulo XFA
 
@@ -25,7 +25,7 @@ Puoi riutilizzare il modello di modulo XFA o i modelli di modulo per file XDP pe
 Alcuni dei vantaggi della creazione di moduli basati su modelli di moduli XFA o su file XDP sono:
 
 * **Risparmio di tempo**: puoi riutilizzare rapidamente i modelli di modulo XFA esistenti (file XDP) senza dover ricreare la struttura del modulo, risparmiando tempo e fatica durante il processo di authoring.
-* **Migrazione semplificata**: se disponi già di modelli di modulo XFA in uso, questa opzione fornisce un facile percorso di migrazione ad Adaptive Forms, consentendoti di sfruttare i vantaggi dei moderni componenti core AEM senza perdere i dati e la logica del modulo esistenti.
+* **Migrazione semplificata**: se disponi già di modelli di modulo XFA in uso, questa opzione fornisce un facile percorso di migrazione ad Adaptive Forms, consentendoti di sfruttare i vantaggi dei moderni componenti core di AEM senza perdere i dati e la logica del modulo esistenti.
 * **Esperienza utente migliorata**: i Forms adattivi sono più reattivi e personalizzabili dei moduli XFA. Passando ad Adaptive Forms, puoi garantire un’esperienza più semplice da usare su diversi dispositivi e dimensioni di schermo.
 * **Integrazione migliorata**: Forms adattivo si integra meglio con altre funzioni, quali flussi di lavoro, associazione dati e invio di moduli, consentendo flussi di lavoro più fluidi e una migliore gestione complessiva dei moduli.
 
@@ -43,7 +43,7 @@ Per creare un modulo adattivo basato su componenti core utilizzando modelli di m
 Per creare un modulo adattivo utilizzando modelli di modulo XFA o XDP, effettua le seguenti operazioni:
 
 1. Accedi all&#39;istanza dell&#39;autore [!DNL Experience Manager Forms].
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
    ![Forms e documenti](/help/forms/assets/create-fdm.png)
 
@@ -93,7 +93,3 @@ Viene creato un modulo adattivo che viene aperto nell’editor di moduli adattiv
 >
 > Puoi disattivare gli script per i campi del modulo XDP utilizzando la barra degli strumenti del pannello del campo aggiunto. Creare logiche per i campi aggiunti utilizzando [Editor regole visive](/help/forms/rule-editor-core-components.md).
 
-## Consulta anche
-
-{{see-also}}
-* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](/help/forms/rule-editor-core-components.md)

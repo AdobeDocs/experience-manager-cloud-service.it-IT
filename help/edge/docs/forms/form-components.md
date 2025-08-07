@@ -4,9 +4,9 @@ description: Questo documento fornisce una panoramica dei componenti del modulo 
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ Ecco una panoramica dei componenti disponibili:
 
 ### Campi di input
 
-* Tutti i [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) HTML5 validi e [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Ad esempio, pulsante, casella di controllo, colore, data, datetime-local, e-mail, file, nascosto, immagine, mese, numero, password, radio, intervallo, reimposta, invia, tel, testo, orario, url e settimana.
+- Tutti i [tipi di input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) HTML5 validi e [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Ad esempio, pulsante, casella di controllo, colore, data, datetime-local, e-mail, file, nascosto, immagine, mese, numero, password, radio, intervallo, reimposta, invia, tel, testo, orario, url e settimana.
 
 ### Controlli selezione
 
-* [Gruppi di caselle di controllo](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): per selezionare più opzioni.
-* [Gruppi di scelta](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): per selezionare una singola opzione da un gruppo.
-* [Menu a discesa](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): per visualizzare un menu di opzioni. Ad esempio, casella a discesa.
+- [Gruppi di caselle di controllo](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): per selezionare più opzioni.
+- [Gruppi di scelta](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): per selezionare una singola opzione da un gruppo.
+- [Menu a discesa](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): per visualizzare un menu di opzioni. Ad esempio, casella a discesa.
 
 ### Contenitori
 
-* Pannelli/contenitori: per raggruppare gli elementi del modulo correlati in modo da migliorarne l’organizzazione. Si tratta di una combinazione di [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+- Pannelli/contenitori: per raggruppare gli elementi del modulo correlati in modo da migliorarne l’organizzazione. Si tratta di una combinazione di [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Proprietà dei componenti
@@ -64,8 +64,3 @@ Ogni componente del modulo include varie proprietà che consentono di controllar
 | Ripetibile | Tutti | Una proprietà booleana per `fieldset` che indica che un particolare fieldset può essere ripetuto per uno specifico numero `Min` e `Max` di volte. La proprietà `Min` deve essere impostata su 1 o maggiore, non impostare la proprietà `Min` su 0. |
 | Espressione visible | Tutti | Un’espressione visible si riferisce a una formula del foglio di calcolo, identificata dal tag &#39;=&#39; e utilizzata per controllare la visibilità di un campo. In questa formula, è possibile utilizzare solo la proprietà value di altri campi, per una gestione semplice della visibilità dei campi all’interno del sistema. |
 | Espressione value | Tutti | Un’espressione value si riferisce a una formula del foglio di calcolo, identificata dal tag &#39;=&#39;, utilizzata per controllare il valore di un campo. In questa formula, è possibile utilizzare solo la proprietà value di altri campi, per una gestione semplice del valore del campo all’interno del sistema. |
-
-
-## Consulta anche
-
-{{see-more-forms-eds}}

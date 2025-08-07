@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '2370'
-ht-degree: 45%
+source-wordcount: '2348'
+ht-degree: 46%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 45%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -42,9 +42,9 @@ Per creare un modulo adattivo è necessario quanto segue:
    * Il modello `blank` è incluso in ogni nuovo programma AEM Forms as a Cloud Service.
    * È possibile installare il pacchetto di riferimento tramite Gestione pacchetti per aggiungere il `blank` modello al programma AEM Forms as a Cloud Service.
    * È inoltre possibile [creare un modello di Forms adattivo (Componenti core)](/help/forms/template-editor-core-components.md) da zero.
-   * Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) nel tuo ambiente. che consentono di iniziare a creare rapidamente i moduli.
+   * Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. che consentono di iniziare a creare rapidamente i moduli.
 
-* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service. Puoi anche distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) nel tuo ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
+* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il modello `Canvas` è incluso in ogni nuovo programma AEM Forms as a Cloud Service. Puoi anche distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -55,16 +55,16 @@ Per creare un modulo adattivo è necessario quanto segue:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Creare un modulo adattivo  {#create-an-adaptive-form-core-components}
 
 1. Accedi all’istanza di authoring [!DNL Experience Manager Forms]. Può essere un’istanza Cloud o un’istanza di sviluppo locale.
 
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
-1. Selezionare **[!UICONTROL Crea]** > **[!UICONTROL Forms adattivo]**. Viene aperta la procedura guidata. Nella scheda Sorgente, seleziona un modello:
+1. Seleziona **[!UICONTROL Crea]**  > **[!UICONTROL Moduli adattivi]**. Viene aperta la procedura guidata. Nella scheda Sorgente, seleziona un modello:
 
    ![Modello componenti core](/help/forms/assets/core-components-template.png)
 
@@ -195,7 +195,7 @@ Puoi utilizzare il servizio di precompilazione per compilare automaticamente i c
 1. Seleziona **[!UICONTROL Salva]** per salvare le proprietà.
 
 
-## Come rinominare un modulo adattivo per l’AEM? {#rename-an-AEM-Adaptive-Form}
+## Come rinominare un modulo adattivo AEM? {#rename-an-AEM-Adaptive-Form}
 
 Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
@@ -206,20 +206,5 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
 ![Rinominare un modulo adattivo AEM](/help/forms/assets/change-af-name.png)
 
-<!--
 
-## See next
-
-* [Create style or themes for your forms](using-themes-in-core-components.md)
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
-
--->
-
-## Consulta anche {#see-also}
-
-{{see-also}}
-* [Aggiungere un comportamento dinamico ai moduli tramite l’editor di regole](/help/forms/rule-editor-core-components.md)
-* [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

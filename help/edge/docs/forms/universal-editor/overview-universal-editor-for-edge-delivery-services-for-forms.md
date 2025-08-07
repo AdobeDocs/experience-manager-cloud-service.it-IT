@@ -4,17 +4,15 @@ description: Utilizza l’editor universale di moduli per Edge Delivery Services
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1012'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '987'
 ht-degree: 100%
 
 ---
 
 
 # Editor universale di moduli per Edge Delivery Services
-
-<span class="preview">Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 L’editor universale rivoluziona la creazione di moduli per Edge Delivery Services di Adobe, grazie a un’interfaccia WYSIWYG (What You See Is What You Get) semplice, visiva e intuitiva. Progettato per chi crea contenuti e moduli, elimina la complessità dei processi tradizionali di creazione dei moduli, rendendola accessibile anche agli utenti non tecnici.
 
@@ -46,7 +44,7 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 | ![Analisi e tracciamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Frammenti di modulo](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associazione dei dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
 | [**Analisi e tracciamento**](https://www.aem.live/developer/martech-integration) | **Frammenti di modulo** (presto disponibili) | [**Associazione dei dati**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
-| Con le funzionalità di analisi e tracciamento integrate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | I frammenti di modulo facilitano il riutilizzo consentendo la creazione di sezioni di uso comune una sola volta e il relativo riutilizzo in più moduli, garantendo coerenza e riducendo le attività di manutenzione. | L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, e supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati. |
+| Con le funzionalità di analisi e tracciamento incorporate puoi ottenere informazioni sul comportamento degli utenti, sulle interazioni con i moduli e sui tassi di invio, per l’ottimizzazione dei moduli basata sui dati. | I frammenti di modulo facilitano il riutilizzo consentendo la creazione di sezioni di uso comune una sola volta e il relativo riutilizzo in più moduli, garantendo coerenza e riducendo le attività di manutenzione. | L’associazione dei dati consente connessioni dirette tra i campi modulo e le origini dati back-end, e supporta gli aggiornamenti in tempo reale e la mappatura avanzata dei dati. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporazione dei moduli](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Configurazione del ringraziamento](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
@@ -54,26 +52,6 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 | Utilizza reCAPTCHA per proteggere i moduli dai bot automatizzati, garantendo una raccolta dati sicura e affidabile. | I moduli possono essere incorporati direttamente nelle pagine dei siti Edge Delivery Services utilizzando il componente Incorpora integrato nell’editor universale. | Personalizza facilmente il messaggio di ringraziamento o la pagina mostrata agli utenti dopo l’invio corretto del modulo. |
 
 
-<!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
-
-
-* **Rule editor**: The rule editor stands out as a powerful mechanism for creating sophisticated form interactions. It supports event-driven rules, instant validation, and error handling through lightweight JavaScript and JSON-based definitions. This allows developers to implement complex form logic, such as conditional field visibility, automatic calculations, and dynamic form behaviour without extensive coding.
-
-* **Submit actions**: Submit Actions enable form submission workflows. These actions provide comprehensive backend integration options, supporting protocols like REST API. The system allows you configure data pre-processors for automatic data transformation, conditional submission logic based on form field values, and secure endpoint connections. Organizations can define complex submission rules that validate data, and manage form responses with granular control.
-
-* **Pre-fill services:** Pre-fill Services enhance user experience by intelligently populating form fields with relevant data. These services connect to various data sources, including user profiles, browser local storage, and external databases. The mechanism supports dynamic data population, enabling automatic completion of form fields based on contextual information. Users benefit from reduced manual data entry, while administrators gain flexibility in configuring pre-fill rules across different form types and scenarios. The pre-fill functionality adapts to different authentication methods, including session-based approaches and token-based systems, ensuring both convenience and security.
-
-* **Data binding capabilities**: Data binding in the Universal Editor enables direct, dynamic connections between form fields and backend data sources. This feature allows real-time synchronization of form data, supporting complex data mapping scenarios. The system supports transforming form inputs into structured database records with minimal configuration. Advanced mapping supports nested data structures, allowing complex form designs to interact seamlessly with intricate data models.
-
-* **Internationalization/localization capabilities**: Internationalization support ensures global accessibility, with multi-language rendering, right-to-left language compatibility, and locale-specific formatting.
-
-* **Analytics and tracking mechanisms**: The built-in analytics and tracking mechanisms provide comprehensive insights into form interactions, submission rates, and user behavior, enabling continuous optimization of form design and performance. 
-
-* **Experimentation (A/B Testing)**: The Universal Editor supports experimentation by allowing organizations to run A/B tests on form designs to identify the best-performing layouts or features.
-
-* **Task Management via Adobe Workfront**: Integration with Adobe Workfront allows teams to manage tasks related to form creation and maintenance, ensuring streamlined collaboration and efficient workflows.
-
-* **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
 ## Componenti dei moduli predefiniti
 
@@ -180,53 +158,17 @@ L’editor universale fornisce i seguenti componenti dei moduli predefiniti:
   </tbody>
 </table>
 
-<!-- * Footer: Adds a footer section for consistent design or additional information.
-* Form Container: Wraps all form elements and manages overall form properties.
-* Header: Adds a header section for form titles, branding, or instructions.-->
-<!-- * 
-* Prefillable Fields: Automatically populates form fields with data from predefined sources such as user profiles or APIs. 
-
-* Switches/Toggle Buttons: Provides binary on/off choices for user input.
-
-
-* Title: Adds a text-based heading or label to improve form clarity and organization.
-
-
-In-addtion to pre-built form components, the Universal editor also provides support for:
-
-* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
-
-* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
-    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
-    * Customizable Messages: Allows form authors to define user-friendly error texts.
-    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
-
-* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
-    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
-    * Capturing metadata like timestamps or tracking IDs.
-    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
-
-* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
-    * Flexibility: Developers can design unique form elements tailored to specific use cases.
-    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
-    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
-
-* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
--->
-
 
 ## Onboarding
-
-<span class="preview"> Si tratta di una funzione pre-release accessibile tramite il <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">canale pre-release</a>. </span>
 
 ## Domande frequenti (FAQ)
 
 **D. Chi può utilizzare l’editor universale?**
 L’editor universale è progettato per un pubblico ampio, tra cui:
 
-* Creatori di contenuti che desiderano creare moduli visivamente accattivanti.
-* Sviluppatori che richiedono funzionalità avanzate di personalizzazione e integrazione.
-* Organizzazioni alla ricerca di soluzioni di moduli scalabili, sicure e conformi.
+- Creatori di contenuti che desiderano creare moduli visivamente accattivanti.
+- Sviluppatori che richiedono funzionalità avanzate di personalizzazione e integrazione.
+- Organizzazioni alla ricerca di soluzioni di moduli scalabili, sicure e conformi.
 
 **D: è possibile integrare i moduli creati con l’editor universale nei sistemi esistenti?**
 Assolutamente. L’editor universale supporta l’associazione diretta dei dati con i sistemi back-end, consentendo aggiornamenti in tempo reale e mappatura avanzata dei dati. Si integra anche con strumenti come Adobe Workfront per la gestione delle attività e supporta endpoint sicuri per i flussi di lavoro di invio dei dati.
@@ -241,7 +183,5 @@ L’editor universale è progettato in modo da rispettare rigorosamente gli stan
 L’editor universale include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
 
 
-## Iniziare a creare i moduli
 
-{{universal-editor-see-also}}
 

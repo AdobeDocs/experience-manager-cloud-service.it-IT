@@ -4,10 +4,10 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 97%
 
 ---
 
@@ -24,17 +24,17 @@ Alla fine dell’articolo avrai appreso come creare e utilizzare frammenti nei m
 
 ## Caratteristiche dei frammenti di modulo di Edge Delivery Services
 
-* **Mantenimento della coerenza a livello di frammenti di modulo**
+- **Mantenimento della coerenza a livello di frammenti di modulo**
 Puoi integrare i frammenti in moduli diversi per mantenere layout coerenti e contenuti standardizzati.
 
   >[!NOTE]
   >
   > Con l’approccio “cambia una volta, rifletti ovunque”, qualsiasi aggiornamento effettuato su un frammento si applica automaticamente a tutti i moduli in modalità Anteprima. Tuttavia, in modalità Pubblicazione, devi pubblicare il frammento o ripubblicare il modulo affinché le modifiche si riflettano.
 
-* **Possibilità di aggiungere più volte frammenti di modulo all’interno di un modulo**
+- **Possibilità di aggiungere più volte frammenti di modulo all’interno di un modulo**
 Puoi aggiungere più volte un frammento di modulo all’interno di un modulo e configurarne le proprietà di associazione dei dati a schemi o origini di dati.
 
-* **Utilizzo di frammenti all’interno di frammenti**
+- **Utilizzo di frammenti all’interno di frammenti**
 Puoi creare frammenti di modulo nidificati, ovvero puoi aggiungere un frammento in un altro frammento e creare così una struttura di frammenti nidificata.
 
   >[!NOTE]
@@ -43,23 +43,23 @@ Puoi creare frammenti di modulo nidificati, ovvero puoi aggiungere un frammento 
 
 ## Considerazioni durante l’utilizzo dei frammenti di modulo di Edge Delivery Services
 
-* Devi aggiungere lo stesso URL GitHub sia nel frammento sia nel modulo in cui intendi utilizzare il frammento.
-* Non puoi modificare un frammento di modulo all’interno di un modulo. Per apportare modifiche, modifica il frammento di modulo indipendente.
+- Devi aggiungere lo stesso URL GitHub sia nel frammento sia nel modulo in cui intendi utilizzare il frammento.
+- Non puoi modificare un frammento di modulo all’interno di un modulo. Per apportare modifiche, modifica il frammento di modulo indipendente.
 
 ## Prerequisiti
 
-* [Configura l’archivio GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) per stabilire una connessione tra l’ambiente AEM e l’archivio GitHub.
-* Se utilizzi già Edge Delivery Services, aggiungi la versione più recente del [Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) all’archivio GitHub.
-* L’istanza di authoring di AEM Forms include un modello basato su Edge Delivery Services.
-* Tieni a portata di mano l’URL dell’istanza di authoring di AEM Forms as a Cloud Service e dell’archivio GitHub.
+- [Configura l’archivio GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) per stabilire una connessione tra l’ambiente AEM e l’archivio GitHub.
+- Se utilizzi già Edge Delivery Services, aggiungi la versione più recente del [Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) all’archivio GitHub.
+- L’istanza di authoring di AEM Forms include un modello basato su Edge Delivery Services.
+- Tieni a portata di mano l’URL dell’istanza di authoring di AEM Forms as a Cloud Service e dell’archivio GitHub.
 
 ## Utilizzo dei frammenti di modulo di Edge Delivery Services
 
 Puoi creare frammenti di modulo di Edge Delivery Services nell’editor universale e aggiungere i frammenti creati a moduli di Edge Delivery Services. Con i frammenti di modulo di Edge Delivery Services puoi creare le azioni elencate di seguito:
 
-* [Creazione di frammenti di modulo](#creating-form-fragments)
-* [Aggiunta di frammenti di modulo a un modulo](#adding-form-fragments-to-a-form)
-* [Gestione dei frammenti di modulo](#managing-form-fragments)
+- [Creazione di frammenti di modulo](#creating-form-fragments)
+- [Aggiunta di frammenti di modulo a un modulo](#adding-form-fragments-to-a-form)
+- [Gestione dei frammenti di modulo](#managing-form-fragments)
 
 ### Creazione di frammenti di modulo
 
@@ -84,14 +84,14 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
 
    ![Mostra il tipo di modello nella scheda Modello modulo](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **Modello dati modulo (FDM)**: integra nel frammento oggetti e servizi del modello dati provenienti dalle origini dati. Se il modulo richiede la lettura e la scrittura di dati da più origini, scegli Modello dati modulo (FDM).
+   - **Modello dati modulo (FDM)**: integra nel frammento oggetti e servizi del modello dati provenienti dalle origini dati. Se il modulo richiede la lettura e la scrittura di dati da più origini, scegli Modello dati modulo (FDM).
 
-   * **Schema JSON**: integra il modulo con un sistema back-end associando uno schema JSON che definisce la struttura dei dati. Consente di aggiungere contenuti dinamici utilizzando gli elementi dello schema.
-   * **Nessuno**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
+   - **Schema JSON**: integra il modulo con un sistema back-end associando uno schema JSON che definisce la struttura dei dati. Consente di aggiungere contenuti dinamici utilizzando gli elementi dello schema.
+   - **Nessuno**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
 
    >[!NOTE]
    >
-   > Per informazioni su come integrare moduli o frammenti con un modello dati modulo (FDM) nell’editor universale per utilizzare diverse origini dati di back-end, [fai clic qui](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Per informazioni su come integrare moduli o frammenti con un modello dati modulo (FDM) nell&#39;editor universale per utilizzare diverse origini dati back-end, vedere [Integrare moduli con il modello dati modulo nell&#39;editor universale](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Facoltativo) Specifica la **Data pubblicazione** o la **Data annullamento pubblicazione** per il frammento nella scheda **Avanzate**.
 
@@ -211,10 +211,8 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
 
 ## Best practice
 
-* Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
-* Qualsiasi espressione, script o stile in un frammento di modulo autonomo viene mantenuto quando viene inserito tramite riferimento o incorporato in un modulo.
-* Quando pubblichi un modulo, i frammenti del modulo inseriti tramite riferimento all’interno del modulo vengono pubblicati automaticamente.
+- Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
+- Qualsiasi espressione, script o stile in un frammento di modulo autonomo viene mantenuto quando viene inserito tramite riferimento o incorporato in un modulo.
+- Quando pubblichi un modulo, i frammenti del modulo inseriti tramite riferimento all’interno del modulo vengono pubblicati automaticamente.
 
-## Consulta anche
 
-{{universal-editor-see-also}}

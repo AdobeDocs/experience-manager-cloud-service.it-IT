@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ Di seguito sono riportate alcune espressioni regolari utilizzabili per migliorar
 
 La password deve contenere almeno 8 caratteri con:
 
-* Lettera minuscola (a-z)
-* Lettera maiuscola (A-Z)
-* Cifra (0-9)
-* Carattere speciale (@$!%*?&amp;)
+- Lettera minuscola (a-z)
+- Lettera maiuscola (A-Z)
+- Cifra (0-9)
+- Carattere speciale (@$!%*?&amp;)
 
 
 ## Indirizzo e-mail
@@ -76,7 +76,7 @@ Le date vanno convalidate nel formato AAAA-MM-GG.
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-L’ora va convalidata nel formato HH:MM (formato 24 ore).
+Convalida gli orari nel formato HH:MM (formato 24 ore).
 
 
 ## Codice postale (formato USA)

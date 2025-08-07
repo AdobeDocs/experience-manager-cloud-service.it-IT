@@ -4,9 +4,9 @@ description: Guida introduttiva a Edge Delivery Services per AEM Forms. Crea rap
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '807'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '805'
 ht-degree: 100%
 
 ---
@@ -26,9 +26,9 @@ Questi moduli inviano i dati direttamente a un file Microsoft Excel o Fogli Goog
 
 Prima di iniziare, assicurati di aver completato i seguenti passaggi:
 
-* Configura un [progetto AEM utilizzando AEM Forms standard](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [Blocco moduli adattivi aggiunto al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
+- Configura un [progetto AEM utilizzando AEM Forms standard](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [Blocco moduli adattivi aggiunto al progetto AEM esistente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clona l’archivio GitHub corrispondente sul computer locale.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Assicurati di avere accesso a Fogli Google o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedi [Come usare SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+- Assicurati di avere accesso a Fogli Google o Microsoft SharePoint. Per impostare Microsoft SharePoint come origine di contenuto, vedi [Come usare SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -54,10 +54,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ Passaggio 1: creare un modulo utilizzando Microsoft Excel o foglio Google.
@@ -105,9 +105,9 @@ Per procedere con la creazione del modulo:
        https://<branch>--<repository>--<owner>.aem.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` fa riferimento al ramo dell’archivio GitHub.
-   * `<repository>` denota l’archivio GitHub.
-   * `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
+   - `<branch>` fa riferimento al ramo dell’archivio GitHub.
+   - `<repository>` denota l’archivio GitHub.
+   - `<owner>` fa riferimento al nome utente dell’account GitHub che ospita l’archivio GitHub.
 
    Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto l’account “wkndform” e stai utilizzando il ramo “main”, l’URL avrà l’aspetto seguente:
 
@@ -164,6 +164,3 @@ Finora è stata preparata la struttura del modulo. Ora, per visualizzare in ante
 [Preparare il foglio di calcolo](/help/edge/docs/forms/submit-forms.md) per iniziare ad accettare i dati al momento dell’invio del modulo.
 
 
-## Consulta anche
-
-{{see-more-forms-eds}}

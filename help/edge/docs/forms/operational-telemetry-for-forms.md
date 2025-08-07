@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '789'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
@@ -30,9 +30,9 @@ https://data.aem.live/?ext=forms
 
 Per accedere alla dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service, inserisci quanto segue:
 
-* **URL**: l’URL è specifico per il sito utente o il dominio. Gli utenti possono filtrare il sito o il dominio per visualizzare la dashboard in base alle proprie esigenze.
+- **URL**: l’URL è specifico per il sito utente o il dominio. Gli utenti possono filtrare il sito o il dominio per visualizzare la dashboard in base alle proprie esigenze.
 
-* **Chiave dominio**: l’utente genera manualmente la chiave di dominio. Per ottenere le chiavi di dominio per i moduli, contatta il rappresentante Adobe.
+- **Chiave dominio**: l’utente genera manualmente la chiave di dominio. Per ottenere le chiavi di dominio per i moduli, contatta il rappresentante Adobe.
 
 ### Dashboard di monitoraggio di Edge Delivery Services per AEM Forms as a Cloud Service
 
@@ -46,36 +46,34 @@ L’illustrazione seguente mostra la dashboard di Edge Delivery Services per AEM
 
 Questa dashboard fornisce informazioni chiave sul modo in cui i visitatori interagiscono con i moduli sul sito web di Adobe Experience Manager (AEM). Monitorando queste metriche, puoi identificare le aree di miglioramento e ottimizzare i moduli per una migliore esperienza utente e tassi di conversione:
 
-* **Visualizzazioni modulo**: tengono traccia del numero totale di volte in cui vengono visualizzati i moduli
-* **Invii di moduli**: tengono traccia del numero totale di invii completati
+- **Visualizzazioni modulo**: tengono traccia del numero totale di volte in cui vengono visualizzati i moduli
+- **Invii di moduli**: tengono traccia del numero totale di invii completati
 
-* **Largest Contentful Paint**: mostra la velocità di caricamento dell’URL, indicando il tempo necessario per rendere visibile nel riquadro di visualizzazione l’elemento di contenuto più grande dal momento in cui l’utente richiede l’URL. Questo elemento di contenuto più grande può essere un’immagine, un video o un elemento di testo sostanziale a livello di blocco. Le valutazioni delle prestazioni per la velocità di caricamento degli URL sono suddivise come segue:
-   * **Buona**: se il tempo di caricamento è pari o inferiore a 2,5 secondi.
-   * **Ok**: se il tempo di caricamento è superiore a 2,5 secondi ma pari o inferiore a 4 secondi.
-   * **Scarsa**: se il tempo di caricamento supera i 4 secondi
+- **Largest Contentful Paint**: mostra la velocità di caricamento dell’URL, indicando il tempo necessario per rendere visibile nel riquadro di visualizzazione l’elemento di contenuto più grande dal momento in cui l’utente richiede l’URL. Questo elemento di contenuto più grande può essere un’immagine, un video o un elemento di testo sostanziale a livello di blocco. Le valutazioni delle prestazioni per la velocità di caricamento degli URL sono suddivise come segue:
+   - **Buona**: se il tempo di caricamento è pari o inferiore a 2,5 secondi.
+   - **Ok**: se il tempo di caricamento è superiore a 2,5 secondi ma pari o inferiore a 4 secondi.
+   - **Scarsa**: se il tempo di caricamento supera i 4 secondi
 
-* **Spostamento del layout cumulativo**: misura la somma totale di tutti i singoli punteggi di spostamento del layout per ogni spostamento imprevisto che si verifica per l’intera durata della pagina. Svolge un ruolo cruciale nell’identificare le prestazioni di una pagina perché quando gli elementi di una pagina si spostano mentre un utente cerca di interagire con essi, l’esperienza utente risulta scadente. Questo punteggio va da zero a qualsiasi numero positivo: zero indica che non vi sono spostamenti, mentre un numero più alto indica più spostamenti di layout sulla pagina. Le metriche delle prestazioni utilizzate per valutare i punteggi di spostamento del layout sono suddivise nelle seguenti categorie:
+- **Spostamento del layout cumulativo**: misura la somma totale di tutti i singoli punteggi di spostamento del layout per ogni spostamento imprevisto che si verifica per l’intera durata della pagina. Svolge un ruolo cruciale nell’identificare le prestazioni di una pagina perché quando gli elementi di una pagina si spostano mentre un utente cerca di interagire con essi, l’esperienza utente risulta scadente. Questo punteggio va da zero a qualsiasi numero positivo: zero indica che non vi sono spostamenti, mentre un numero più alto indica più spostamenti di layout sulla pagina. Le metriche delle prestazioni utilizzate per valutare i punteggi di spostamento del layout sono suddivise nelle seguenti categorie:
 
-   * **Buona**: se il punteggio di spostamento del layout è pari o inferiore a 0,1.
-   * **Ok**: se il punteggio di spostamento del layout è maggiore di 0,1 ma minore o uguale a 0,25.
-   * **Scarsa**: se il punteggio di spostamento del layout supera 0,25.
+   - **Buona**: se il punteggio di spostamento del layout è pari o inferiore a 0,1.
+   - **Ok**: se il punteggio di spostamento del layout è maggiore di 0,1 ma minore o uguale a 0,25.
+   - **Scarsa**: se il punteggio di spostamento del layout supera 0,25.
 
-* **Interazione con elemento successivo**: valuta la velocità con cui una pagina reagisce alle interazioni dell’utente, considerando il tempo necessario alla pagina per rispondere a clic, tocchi e input da tastiera durante la visita di un utente alla pagina. Il valore finale è l’interazione più lunga osservata, senza tenere conto di eventuali anomalie. Le metriche delle prestazioni per l’interazione con l’elemento successivo sono suddivise nelle categorie seguenti:
-   * **Buona**: se la durata tra le azioni dell’utente è inferiore o pari a 200 millisecondi (ms).
-   * **Ok**: se la durata è superiore a 200 ms ma non superiore a 500 ms.
-   * **Scarsa**: se la durata supera i 500 ms.
+- **Interazione con elemento successivo**: valuta la velocità con cui una pagina reagisce alle interazioni dell’utente, considerando il tempo necessario alla pagina per rispondere a clic, tocchi e input da tastiera durante la visita di un utente alla pagina. Il valore finale è l’interazione più lunga osservata, senza tenere conto di eventuali anomalie. Le metriche delle prestazioni per l’interazione con l’elemento successivo sono suddivise nelle categorie seguenti:
+   - **Buona**: se la durata tra le azioni dell’utente è inferiore o pari a 200 millisecondi (ms).
+   - **Ok**: se la durata è superiore a 200 ms ma non superiore a 500 ms.
+   - **Scarsa**: se la durata supera i 500 ms.
 
 ## Informazioni utilizzabili
 
 Analizzando queste metriche, puoi identificare opportunità per:
 
-* Semplificare i moduli e ridurre il numero dei campi.
-* Migliorare la chiarezza dei moduli con istruzioni ed etichette chiare.
-* Ottimizzare il layout del modulo per la reattività mobile.
-* Risolvere i problemi tecnici che rallentano il caricamento dei moduli.
+- Semplificare i moduli e ridurre il numero dei campi.
+- Migliorare la chiarezza dei moduli con istruzioni ed etichette chiare.
+- Ottimizzare il layout del modulo per la reattività mobile.
+- Risolvere i problemi tecnici che rallentano il caricamento dei moduli.
 
 Concentrandoti su queste aree, puoi creare moduli più facili da usare e incoraggiare i visitatori a completarli, portando in definitiva a tassi di conversione più elevati.
 
-## Consulta anche
 
-{{see-more-forms-eds}}

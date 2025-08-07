@@ -5,9 +5,9 @@ topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '704'
 ht-degree: 2%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-## Rivedi {#review}
+## Rivedere {#review}
 
 Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli.
 
@@ -116,17 +116,3 @@ Questa sezione descrive cosa accade il **aggiornamento/fine revisione**:
    1. **Tutti**: la revisione viene visualizzata nella sezione Revisioni precedenti. Non è possibile aggiungere altri commenti.
 
    ![revisione completata](assets/review-complete-imgg.png)
-
-
-## Consulta anche {#see-also}
-
-{{see-also}}
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
-
--->

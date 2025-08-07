@@ -4,9 +4,9 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4221'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -281,7 +281,6 @@ La tabella seguente descrive i componenti Modulo adattivo e i corrispondenti com
 | Componente modulo adattivo | Componente XFA corrispondente | Note |
 |---|---|---|
 | Immagine | Immagine | I componenti TextDraw e Image, sia associati che non associati, vengono sempre visualizzati nel documento di record per un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
-| Testo | Testo |
 
 ### Tabelle {#tables}
 
@@ -364,7 +363,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Per i componenti Casella di controllo e Pulsante di opzione, mostrare solo i valori selezionati**: impostando la proprietà verranno visualizzati solo i valori selezionati della casella di controllo e del pulsante di opzione in [!UICONTROL Documento record].
       * **Separatore per più valori**: è possibile scegliere qualsiasi separatore, ad esempio virgola o interruzione di riga, per visualizzare più valori.
       * **Allineamento opzioni**: è possibile selezionare l&#39;allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l&#39;allineamento per i campi, ad esempio la casella di controllo o il pulsante di scelta da visualizzare nel [!UICONTROL Documento record]. Per impostazione predefinita, l&#39;allineamento verticale è impostato per i campi in [!UICONTROL Documento di record]. L&#39;impostazione delle proprietà dalle [!UICONTROL proprietà campo modulo] del DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Se si seleziona l&#39;opzione [!UICONTROL Come modulo adattivo], per i campi [!UICONTROL Documento record] viene utilizzato l&#39;allineamento configurato in un&#39;istanza di authoring del modulo adattivo.
-      * **Numero di opzioni per l&#39;allineamento orizzontale**: è possibile impostare il numero di opzioni da visualizzare nel documento di record per l&#39;allineamento orizzontale.
+      * **Numero di opzioni per l&#39;allineamento orizzontale**:You può impostare il numero di opzioni da visualizzare nel documento di record per l&#39;allineamento orizzontale.
 
       ![Proprietà campo modulo](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ Esegui i seguenti passaggi dall’istanza di authoring dell’editor di moduli a
 1. Fai clic sull’icona ![Configura icona](/help/forms/assets/configure-icon.svg) per aprire le **[!UICONTROL proprietà]** del contenitore per modulo adattivo.
 1. Apri la scheda **[!UICONTROL Modello del documento record]** e seleziona una delle seguenti opzioni:
    * **[!UICONTROL Nessuno]**: quando questa opzione è selezionata, non è stato creato il modello [!UICONTROL Documento record] per il modulo adattivo.
-
-   * **[!UICONTROL Associa modello modulo come modello del documento record]**:Quando questa opzione è selezionata, il modulo XFA viene utilizzato come modello per il documento record.
-
+   * **[!UICONTROL Associa modello modulo come modello del documento record]**:When questa opzione è selezionata, il modulo XFA viene utilizzato come modello per il documento record.
    * **[!UICONTROL Genera documento di record]**: quando questa opzione è selezionata, il modello [!UICONTROL Documento di record] viene generato automaticamente per il modulo adattivo.
 
 1. Seleziona ![Salva](/help/forms/assets/check-button.png) per salvare le proprietà.

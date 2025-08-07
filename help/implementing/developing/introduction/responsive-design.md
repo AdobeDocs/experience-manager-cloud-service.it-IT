@@ -4,7 +4,7 @@ description: Con il design reattivo, le stesse esperienze possono essere visuali
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Con il design reattivo, le stesse esperienze possono essere visualizzate in modo
 
 >[!TIP]
 >
->Questo documento fornisce una panoramica della progettazione reattiva per gli sviluppatori e del modo in cui le funzioni vengono realizzate nell’AEM. Sono disponibili risorse aggiuntive:
+>Questo documento fornisce una panoramica della progettazione reattiva per gli sviluppatori e del modo in cui le funzioni vengono realizzate in AEM. Sono disponibili risorse aggiuntive:
 >
 >* Per gli autori di contenuto, i dettagli sull&#39;utilizzo delle funzionalità di progettazione reattiva in una pagina di contenuto sono disponibili nel documento [Layout reattivo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 >* Per gli amministratori del sito, i dettagli sulla configurazione del contenitore di layout per i siti sono descritti nel documento [Configurazione del contenitore di layout e della modalità di layout.](/help/sites-cloud/administering/responsive-layout.md)
@@ -35,7 +35,7 @@ Progetta le esperienze in modo che si adattino al riquadro di visualizzazione cl
 
 ![Esempi di progettazione reattiva](assets/responsive-example.png)
 
-Sviluppa applicazioni Adobe Experience Manager (AEM) che generano HTML5 adattabili a più dimensioni e orientamenti di finestre. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
+Sviluppare applicazioni Adobe Experience Manager (AEM) che generano HTML5 adattabile a più dimensioni di finestra e orientamenti. Ad esempio, i seguenti intervalli di larghezze dei riquadri di visualizzazione corrispondono a vari tipi di dispositivi e orientamenti
 
 * Larghezza massima di 480 pixel (telefono, verticale)
 * Larghezza massima di 767 pixel (telefono, orizzontale)
@@ -53,7 +53,7 @@ Mentre progetti, utilizza la barra degli strumenti **Emulatore** per visualizzar
 
 ## Prima di sviluppare {#before-you-develop}
 
-Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessario prendere diverse decisioni di progettazione. Ad esempio, è necessario disporre delle seguenti informazioni:
+Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessario prendere diverse decisioni relative alla progettazione. Ad esempio, è necessario disporre delle seguenti informazioni:
 
 * Dispositivi di destinazione
 * Le dimensioni del riquadro di visualizzazione di destinazione
@@ -61,14 +61,14 @@ Prima di sviluppare l’applicazione AEM che supporta le pagine web, è necessar
 
 ### Struttura dell&#39;applicazione {#application-structure}
 
-La tipica struttura di applicazioni AEM supporta tutte le implementazioni di progettazione reattiva:
+La struttura tipica delle applicazioni AEM supporta tutte le implementazioni di progettazione reattiva:
 
 * I componenti della pagina risiedono sotto `/apps/<application_name>/components`
 * I modelli si trovano sotto `/apps/<application_name>/templates`
 
 ## Utilizzo delle query multimediali {#using-media-queries}
 
-Le query multimediali consentono l’utilizzo selettivo degli stili CSS per il rendering delle pagine. Gli strumenti e le funzioni di sviluppo AEM consentono di implementare in modo efficace ed efficiente le query multimediali nelle applicazioni.
+Le query multimediali consentono l’utilizzo selettivo degli stili CSS per il rendering delle pagine. Gli strumenti e le funzioni di sviluppo di AEM consentono di implementare in modo efficace ed efficiente le query multimediali nelle applicazioni.
 
 Il gruppo W3C fornisce il consiglio [Media Queries](https://www.w3.org/TR/css3-mediaqueries/) che descrive questa funzione CSS3 e la sintassi.
 
@@ -85,7 +85,7 @@ L&#39;esercitazione [WKND](develop-wknd-tutorial.md) utilizza questa strategia p
 
 ### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
 
-[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e l&#39;archetipo del progetto AEM [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [componente core Pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=it), che include clientlibs tramite i criteri di pagina.
+[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [Componente core pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), che include clientlibs tramite i criteri di pagina.
 
 Se il tuo componente pagina non è basato sul componente core pagina, puoi anche includere la cartella della libreria client nello script HTL o JSP. In questo modo si genera e si fa riferimento al file CSS con le query multimediali necessarie per il funzionamento della griglia reattiva.
 
@@ -137,14 +137,14 @@ Le pagine reattive si adattano dinamicamente al dispositivo su cui vengono ripro
 
 [Il componente core Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it) offre funzionalità quali la selezione di immagini adattive.
 
-* Per impostazione predefinita, il componente Immagine utilizza [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=it) per distribuire la rappresentazione corretta.
+* Per impostazione predefinita, il componente Immagine utilizza [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) per distribuire la rappresentazione corretta.
 * [La consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) è disponibile anche tramite una semplice casella di controllo nei suoi criteri, che fornisce risorse immagine da DAM in formato WebP e può ridurre la dimensione di download di un&#39;immagine di circa il 25% in media.
 
 ## Contenitore di layout {#layout-container}
 
-Il Contenitore di layout AEM consente di implementare in modo efficiente ed efficace il layout dinamico per adattare le dimensioni della pagina al riquadro di visualizzazione client.
+Il Contenitore di layout di AEM consente di implementare in modo efficiente ed efficace il layout dinamico per adattare le dimensioni della pagina al riquadro di visualizzazione client.
 
->[La documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) della griglia reattiva è un riferimento che può essere dato agli sviluppatori front-end consentendo loro di utilizzare la griglia AEM al di fuori dell&#39;AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
+>[La documentazione GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) della griglia reattiva è un riferimento che può essere dato agli sviluppatori front-end consentendo loro di utilizzare la griglia di AEM al di fuori di AEM, ad esempio, durante la creazione di modelli statici di HTML per un futuro sito AEM.
 
 >[!TIP]
 >

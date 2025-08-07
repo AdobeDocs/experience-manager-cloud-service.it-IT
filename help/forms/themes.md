@@ -4,7 +4,7 @@ description: Utilizza i temi del modulo adattivo per applicare uno stile e forni
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 È possibile creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo<!-- or interactive communication -->.
@@ -212,7 +212,7 @@ L’Editor tema è suddiviso in due pannelli:
 
 * **Area di lavoro** - Viene visualizzata sul lato destro. Viene visualizzato un esempio di modulo adattivo <!--  or interactive communication --> in cui tutte le modifiche di stile si riflettono immediatamente. È inoltre possibile selezionare gli oggetti direttamente dall&#39;area di lavoro per cercare gli stili ad essi associati e modificarli. L’area di lavoro è gestita da un righello di risoluzione dispositivo posto nella parte superiore. Se si seleziona un punto di interruzione di risoluzione dal righello, viene visualizzata l&#39;anteprima del modulo di esempio <!--  or interactive communication --> per la rispettiva risoluzione. L&#39;area di lavoro è trattata in dettaglio [sotto](themes.md#using-canvas).
 
-* **Barra laterale**- Viene visualizzata sul lato sinistro. Include i seguenti elementi:
+* **Barra laterale*** visualizzata sul lato sinistro. Include i seguenti elementi:
 
    * **Selettore:** mostra il componente selezionato per lo stile e le relative proprietà alle quali è possibile applicare uno stile. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per lo stile, tutte le caselle di testo nel modulo <!-- or interactive communication --> ereditano lo stile. I selettori consentono di selezionare un componente generico o un componente specifico per lo stile. Ad esempio, un componente campo è un componente generico e una casella di testo è un componente specifico.
 
@@ -420,7 +420,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di aggiungere effetti speciali ai componenti quali opacità, modalità di fusione e ombre. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzate </p> </td>
+   <td><p>Avanzato</p> </td>
    <td><p>Consente di aggiungere:</p>
     <ul>
      <li>Proprietà per gli pseudo elementi <code>::before</code> e <code>::after</code> per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e assegnarvi uno stile.<br /> Consulta <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elementi CSS</a>.</li>

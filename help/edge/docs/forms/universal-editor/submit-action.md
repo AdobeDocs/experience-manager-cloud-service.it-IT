@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -23,20 +23,20 @@ L’invio di un modulo è il passaggio finale critico nel percorso dell’utente
 
 Alla fine di questo documento comprenderai come:
 
-* Configurare diversi tipi di azioni di invio per i moduli
-* Configurare gli invii di endpoint REST per l’integrazione con i sistemi esterni
-* Configurare gli invii di e-mail per le risposte ai moduli
-* Implementare azioni di invio personalizzate per esigenze aziendali specifiche
-* Gestire gli scenari di errore e convalida del modulo durante l’invio
+- Configurare diversi tipi di azioni di invio per i moduli
+- Configurare gli invii di endpoint REST per l’integrazione con i sistemi esterni
+- Configurare gli invii di e-mail per le risposte ai moduli
+- Implementare azioni di invio personalizzate per esigenze aziendali specifiche
+- Gestire gli scenari di errore e convalida del modulo durante l’invio
 
 ### Pubblico target
 
 Questa guida è progettata per:
 
-* **Sviluppatori di moduli** che implementano la logica di invio
-* **Integratori di sistema** che collegano i moduli ai sistemi di back-end
-* **Analisti ziendali** che definiscono i flussi di lavoro del modulo
-* **Architetti tecnici** che progettano i processi di invio del modulo
+- **Sviluppatori di moduli** che implementano la logica di invio
+- **Integratori di sistema** che collegano i moduli ai sistemi di back-end
+- **Analisti ziendali** che definiscono i flussi di lavoro del modulo
+- **Architetti tecnici** che progettano i processi di invio del modulo
 
 ### Azioni di invio disponibili
 
@@ -49,16 +49,16 @@ L’editor universale fornisce due tipi di azioni di invio principali:
 
 Prima di configurare le azioni di invio, verifica di disporre di:
 
-* Accesso all’editor universale
-* Autorizzazioni appropriate per la configurazione del modulo
-* Informazioni sull’endpoint di invio di destinazione o sulla configurazione e-mail
+- Accesso all’editor universale
+- Autorizzazioni appropriate per la configurazione del modulo
+- Informazioni sull’endpoint di invio di destinazione o sulla configurazione e-mail
 
 Un’azione di invio specifica la destinazione dei dati raccolti tramite un modulo adattivo. Il processo di invio inizia quando l’utente fa clic sul pulsante **[!UICONTROL Invia]** nel modulo. AEM Forms offre due tipi di azioni di invio descritte di seguito e consente di creare e utilizzare azioni di invio personalizzate per soddisfare esigenze specifiche. Le azioni di invio predefinite sono:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [Invia a endpoint REST](#rest-endpoint-submission-ue)
-* [Invia e-mail](#email-submission-ue)
+- [Invia a endpoint REST](#rest-endpoint-submission-ue)
+- [Invia e-mail](#email-submission-ue)
 
 
 ### Invia a endpoint REST {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Un’azione di invio specifica la destinazione dei dati raccolti tramite un modu
 L’azione Invia a endpoint REST viene utilizzata per inviare i dati del modulo a un endpoint REST specificato. L’endpoint può appartenere a un server interno in cui il modulo è ospitato oppure a un server esterno utilizzando rispettivamente un percorso relativo o un percorso assoluto. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizza un percorso assoluto.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ Per configurare un endpoint REST:
 
 >[!NOTE]
 >
-> * Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
-> * Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+> - Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+> - Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è `https://host:port/path_to_rest_end_point`. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
 ### Invia e-mail {#email-submission-ue}
 
@@ -176,11 +176,8 @@ L’opzione All’invio consente di configurare un messaggio di azione di invio 
 1. Seleziona il **[!UICONTROL Blocco per moduli adattivi]**.
 1. Fai clic sull’icona delle proprietà ![proprietà](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Quando fai clic, viene visualizzata la seguente opzione:
-   * **[!UICONTROL All’invio]**: all’invio consente di personalizzare un messaggio da visualizzare all’invio di un modulo. Per impostazione predefinita, quando un modulo viene inviato correttamente, all’utente viene mostrato il messaggio personalizzato “Grazie per l’invio del modulo”.
+   - **[!UICONTROL All’invio]**: all’invio consente di personalizzare un messaggio da visualizzare all’invio di un modulo. Per impostazione predefinita, quando un modulo viene inviato correttamente, all’utente viene mostrato il messaggio personalizzato “Grazie per l’invio del modulo”.
 Puoi anche personalizzare il messaggio di ringraziamento all’invio del modulo selezionando l’opzione **[!UICONTROL Mostra messaggio]** e aggiungendo/modificando il messaggio nell’**editor** Rich Text.
 
 
-## Consulta anche
-
-{{universal-editor-see-also}}
 

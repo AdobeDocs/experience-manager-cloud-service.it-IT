@@ -4,10 +4,10 @@ description: Le opzioni dell’elenco a discesa sono incluse in un foglio di cal
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ I moduli spesso includono menu a discesa che gli utenti possono selezionare dall
 
 I vantaggi del caricamento delle opzioni a discesa da un foglio di calcolo separato sono:
 
-* Gestione semplificata: mantiene le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
-* Maggiore efficienza: elimina la necessità di aggiungere manualmente lunghi elenchi di opzioni all’interno della definizione del modulo.
+- Gestione semplificata: mantiene le opzioni a discesa in una posizione centralizzata per semplificare gli aggiornamenti e le aggiunte.
+- Maggiore efficienza: elimina la necessità di aggiungere manualmente lunghi elenchi di opzioni all’interno della definizione del modulo.
 
 ![Opzioni a discesa](/help/forms/assets/drop-down-options.png)
 
 
 Alla fine di questo articolo imparerai a:
 
-* [Definire le opzioni in un foglio di calcolo separato](#define-options)
-* [Aggiungere un URL per caricare le opzioni dell’elenco a discesa](#add-url)
+- [Definire le opzioni in un foglio di calcolo separato](#define-options)
+- [Aggiungere un URL per caricare le opzioni dell’elenco a discesa](#add-url)
 
 ## Definire le opzioni in un foglio separato {#define-options}
 
@@ -39,8 +39,8 @@ Definizione delle opzioni in un foglio di calcolo separato
    1. Aggiungi un nuovo foglio. Ad esempio, “paese-condiviso”.
 1. Definisci le colonne delle opzioni:
 Aggiungi due colonne: “Opzione” e “Valore”.
-   * “Opzione” definisce il testo visualizzato nel menu a discesa.
-   * “Valore” definisce il valore inviato quando un utente seleziona l’opzione.
+   - “Opzione” definisce il testo visualizzato nel menu a discesa.
+   - “Valore” definisce il valore inviato quando un utente seleziona l’opzione.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ Immetti le opzioni relative al paese nella colonna “Opzione” (e nella colonn
 
 1. Visualizzare in anteprima e pubblicare il foglio `shared-country` utilizzando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si utilizza il ramo &quot;main&quot;, l&#39;URL che mostra il foglio `shared-country`:
+   Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto il proprietario dell’account “wkndform” e stai utilizzando il ramo “main”, l’URL che mostra il foglio `shared-country` è:
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ Puoi fare riferimento al [foglio di calcolo “enquiry”](/help/edge/assets/enq
 
 Dopo aver integrato l’URL nella definizione del modulo per caricare le opzioni dell’elenco a discesa, tali opzioni per l’elenco a discesa `Destination` iniziano a comparire dall’URL.
 
-Ad esempio, se l&#39;archivio del progetto è denominato &quot;wefinance&quot;, si trova sotto il proprietario dell&#39;account &quot;wkndform&quot; e si sta utilizzando il ramo &quot;main&quot;, l&#39;URL seguente visualizza il modulo `enquiry` contenente le opzioni salvate nel foglio separato:
+Ad esempio, se l’archivio del progetto è denominato “wefinance”, si trova sotto il proprietario dell’account “wkndform” e si sta utilizzando il ramo “main”, l’URL seguente mostra il modulo `enquiry` contenente le opzioni salvate nel foglio separato:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Consulta anche
-
-{{see-more-forms-eds}}
 
 
