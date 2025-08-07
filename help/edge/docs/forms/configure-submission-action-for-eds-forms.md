@@ -150,13 +150,14 @@ Configura condivisione risorse tra origini nell&#39;origine del modulo:
 
 2. **Esempio di configurazione**:
 
-       # Configurazione per il sito che ospita il modulo
+       &#x200B;# Configurazione per il sito che ospita il modulo
        intestazioni:
        - percorso: /forms/**
        personalizzato:
        Access-Control-Allow-Origin: https://host-domain.com
        Metodi Di Consenti-Controllo-Accesso: GET, OPTIONS
    
+
 ### Passaggi di incorporamento
 
 1. **Crea e pubblica modulo**

@@ -476,7 +476,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 ```
 
 - L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-- L’elemento legend (<legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+- L’elemento legend (&lt;legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
 - All’interno del fieldset, più{Type}-elementi wrapper (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
 - Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
@@ -637,6 +637,7 @@ il selettore applica uno stile a tutti i pannelli che possono essere ripetuti, a
   margin-bottom: 10px;
 }
 ```
+
 questo selettore applica uno stile a tutti i wrapper del campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
 
 - Targeting di campi specifici (all’interno di un pannello):

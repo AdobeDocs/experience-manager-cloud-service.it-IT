@@ -695,7 +695,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-Problemi relativi alla build di +++GitHub
++++Problemi relativi alla build di GitHub
 
 **Problema:** errori di compilazione o di puntamento
 
@@ -760,7 +760,7 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
-Problemi relativi alla funzionalità dei +++moduli
++++Problemi relativi alla funzionalità dei moduli
 
 **Problema:** invii modulo non funzionanti
 

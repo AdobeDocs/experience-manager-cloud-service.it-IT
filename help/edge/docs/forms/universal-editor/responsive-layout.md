@@ -335,7 +335,7 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++
 
-Destinazioni +++Touch troppo piccole
++++Destinazioni Touch troppo piccole
 
 **Cause comuni:**
 
