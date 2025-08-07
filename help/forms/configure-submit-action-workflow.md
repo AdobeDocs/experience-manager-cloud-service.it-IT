@@ -18,7 +18,7 @@ L&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]** associa 
 
 >[!NOTE]
 >
->  Scopri come [creare un modello di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) per definire la serie di passaggi eseguiti quando un utente avvia il flusso di lavoro. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
+>  Scopri come [creare un modello di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem) per definire la serie di passaggi eseguiti quando un utente avvia il flusso di lavoro. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
 
 AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -47,7 +47,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB Componente di base]
 
-Per impostare il processo automatizzato con [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) per un modulo adattivo basato su componenti di base, eseguire la procedura seguente:
+Per impostare il processo automatizzato con [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem) per un modulo adattivo basato su componenti di base, eseguire la procedura seguente:
 
 1. Apri il modulo adattivo per la modifica e passa alla sezione **[!UICONTROL Invio]** delle proprietà Contenitore modulo adattivo.
 1. Dall&#39;elenco a discesa **[!UICONTROL Azione invio]**, selezionare **Azione invio** come **[!UICONTROL Richiama un flusso di lavoro AEM]**.
@@ -73,7 +73,7 @@ Per impostare il processo automatizzato con [AEM Workflow](https://experiencelea
 
 >[!TAB Componente core]
 
-Per impostare il processo automatizzato con [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) per un modulo adattivo basato su componenti core, eseguire la procedura seguente:
+Per impostare il processo automatizzato con [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem) per un modulo adattivo basato su componenti core, eseguire la procedura seguente:
 
 1. Apri il browser Contenuto e seleziona il componente **[!UICONTROL Contenitore guida]** del modulo adattivo.
 1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
@@ -102,7 +102,7 @@ Per impostare il processo automatizzato con [AEM Workflow](https://experiencelea
 
 >[!TAB Editor universale]
 
-Per impostare il processo automatizzato con [Flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) per un modulo adattivo creato in Universal Editor, effettuare le seguenti operazioni:
+Per impostare il processo automatizzato con [Flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem) per un modulo adattivo creato in Universal Editor, effettuare le seguenti operazioni:
 
 1. Apri il modulo adattivo per la modifica.
 1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.

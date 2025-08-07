@@ -17,7 +17,7 @@ ht-degree: 3%
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=it) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
 
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
@@ -37,8 +37,8 @@ AEM Forms as a Cloud Service fornisce un connettore OOTB per connettersi e invia
 
 Per stabilire una connessione tra Workfront Fusion e AEM Forms, sono necessari i seguenti elementi:
 
-* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html) valida.
-* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=it) valida.
+* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
 
@@ -105,7 +105,7 @@ Per aggiungere una connessione:
    >
    > L’URL dell’istanza è l’indirizzo web univoco che punta a un’istanza AEM Forms specifica.
 
-   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessarie per creare una connessione.
+   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it) necessarie per creare una connessione.
 
 1. Sostituisci `ims-na1.adobelogin.com` nell&#39;endpoint **IMS** con il valore di **imsEndpoint** dalle credenziali del servizio nella console per sviluppatori.
 
