@@ -3,9 +3,9 @@ title: Cercare risorse in Content Hub
 description: Scopri come cercare le risorse in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Cercare ad esempio tutte le immagini **[!UICONTROL JPEG]** contenenti la parola 
 
 ## Restringi i risultati della ricerca utilizzando i filtri {#narrow-down-search-results}
 
-Utilizza il pannello Filtri per cercare le risorse in base ai metadati. Puoi filtrare i risultati della ricerca in base a vari predicati di ricerca. Puoi selezionare tutti i predicati appropriati per ridurre o ridurre al minimo i risultati della ricerca. Quando selezioni più opzioni all’interno di un filtro, Content Hub visualizza le risorse che corrispondono a una qualsiasi delle opzioni selezionate all’interno di un filtro. Tuttavia, quando selezioni più opzioni tra i filtri, in Content Hub vengono visualizzate solo le risorse che corrispondono a tutte le opzioni selezionate tra i filtri, per limitare i risultati della ricerca.
+Utilizza il pannello Filtri per cercare le risorse in base ai metadati. Puoi filtrare i risultati della ricerca in base a vari predicati di ricerca. Puoi selezionare tutti i predicati appropriati per ridurre o ridurre al minimo i risultati della ricerca. Puoi scegliere più di 10 predicati mentre filtri i risultati della ricerca. Quando selezioni più opzioni all’interno di un filtro, Content Hub visualizza le risorse che corrispondono a una qualsiasi delle opzioni selezionate all’interno di un filtro. Tuttavia, quando selezioni più opzioni tra i filtri, in Content Hub vengono visualizzate solo le risorse che corrispondono a tutte le opzioni selezionate tra i filtri, per limitare i risultati della ricerca.
 
 I filtri predefiniti includono formato file, approvato da, data approvata, risorse scadute e non scadute e data di scadenza. Gli amministratori possono anche configurare i filtri visualizzati nell’elenco dei filtri. Per ulteriori informazioni, vedere [Configurare l&#39;interfaccia utente di Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
