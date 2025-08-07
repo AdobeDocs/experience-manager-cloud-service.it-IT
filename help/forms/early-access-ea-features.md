@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 22%
+source-wordcount: '2837'
+ht-degree: 19%
 
 ---
 
@@ -116,6 +116,8 @@ Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la
 
 * **Flessibilità formato**: output nei formati PDF, HTML, PCL, PostScript® e ZPL.
 
+* **Editor regole**: crea azioni dinamiche basate su dati direttamente nei tuoi documenti tramite un&#39;interfaccia intuitiva e intuitiva. Definisci facilmente la logica condizionale, automatizza i flussi di lavoro e personalizza i contenuti senza scrivere codice.
+
 #### Casi d’uso:
 
 * Enti finanziari che generano gli estratti conto
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms consente di eseguire il rendering dei modelli di modulo XF
 * **Salvataggio bozza**: salva un modulo di HTML5 come bozza e riprendi la compilazione del modulo in una fase successiva.
 
 Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/introductionhtml5.md) fornisce una panoramica completa e una guida introduttiva per questa innovazione.
+
+### CLI di AEM Forms Scaffolder per i componenti personalizzati
+
+Accelera lo sviluppo di AEM Forms Edge Delivery Services con lo strumento AEM Forms CLI. Questa interfaccia della riga di comando consente di generare immediatamente il codice e il cablaggio necessari per avviare lo sviluppo di componenti personalizzati, senza problemi o problemi.
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms)
+
+**Funzionalità chiave:**
+
+* **Scaffolding rapido**: genera istantaneamente la struttura e il codice per i nuovi componenti personalizzati, riducendo il tempo di installazione manuale.
+* **Best practice integrate**: lo strumento segue i modelli consigliati per AEM Forms Edge Delivery Services, garantendo coerenza e manutenibilità.
+* **Produttività per gli sviluppatori**: concentrarsi sulla creazione della logica di business e dell&#39;interfaccia utente, mentre l&#39;interfaccia della riga di comando gestisce attività di configurazione ripetitive.
+* **Integrazione perfetta**: i componenti generati sono pronti per l&#39;uso e per l&#39;integrazione con i progetti AEM Forms esistenti.
+
+Pronto per iniziare? Lo strumento AEM Forms CLI è disponibile nel programma di accesso anticipato per le distribuzioni Forms as a Cloud Service. Per richiedere l&#39;accesso, invia il tuo ID organizzazione e i dettagli del programma a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo indirizzo ufficiale.
+
+### Strumento di integrazione API per dati modulo dinamico
+
+Lo strumento di integrazione API consente agli autori dei moduli di creare moduli dinamici e intelligenti che recuperano e compilano automaticamente i dati dalle API REST esterne in base alle interazioni degli utenti. Questa funzionalità di integrazione senza codice trasforma i moduli statici in interfacce di raccolta dati dinamiche.
+
+Le funzionalità principali includono:
+
+* **Interfaccia di configurazione visiva**: crea integrazioni API tramite un&#39;interfaccia intuitiva e intuitiva senza codifica personalizzata
+* **Popolazione dati in tempo reale**: compila automaticamente i campi del modulo in base all&#39;utente inserito (ad esempio, città e stato compilati automaticamente quando l&#39;utente immette il codice postale)
+* **Supporto API flessibile**: connettiti a qualsiasi API REST accessibile pubblicamente con supporto per metodi GET/POST, autenticazione e risposte JSON/XML
+* **Attivatori basati su regole**: definisci quando attivare le chiamate API utilizzando il motore di regole incorporato (ad esempio, modifiche ai campi, eventi modulo)
+* **Mappatura dati avanzata**: configura il mapping dei dati di risposta API a campi modulo specifici utilizzando le funzionalità di analisi JSON di Adobe
+* **Esperienza utente migliorata**: riduci l&#39;immissione manuale dei dati, migliora la precisione dei dati e crea interazioni modulo più coinvolgenti
+
+Questo strumento è particolarmente utile per scenari come il completamento automatico degli indirizzi, la popolazione a discesa dinamica, la convalida in tempo reale rispetto a database esterni e la creazione di esperienze di modulo in base al contesto che si adattano in base all’input dell’utente.
+
+
 
 ## Ulteriori innovazioni nell’accesso in anteprima
 

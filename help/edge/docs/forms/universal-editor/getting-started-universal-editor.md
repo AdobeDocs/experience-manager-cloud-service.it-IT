@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 1%
 
 ---
@@ -182,8 +182,8 @@ Il file `fstab.yaml` collega l&#39;archivio GitHub all&#39;ambiente di authoring
 
 **Convalida:** Conferma la connessione dell&#39;archivio GitHub ad AEM.
 
->[!NOTE]
->
+    >[!NOTA]
+    >
 >Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Passiamo ad ogni passaggio:
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Aggiorna .eslintrc.js**
@@ -648,7 +648,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
    AEM CLI semplifica le attività di sviluppo locale:
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Clona l&#39;archivio**
@@ -695,7 +695,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-+++Problemi relativi alla build di GitHub
+Problemi relativi alla build di +++GitHub
 
 **Problema:** errori di compilazione o di puntamento
 
@@ -760,7 +760,7 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
-+++Problemi relativi alla funzionalità dei moduli
+Problemi relativi alla funzionalità dei +++moduli
 
 **Problema:** invii modulo non funzionanti
 
