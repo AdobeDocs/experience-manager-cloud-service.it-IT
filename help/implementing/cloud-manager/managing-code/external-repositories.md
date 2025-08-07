@@ -4,7 +4,7 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 27%
@@ -68,7 +68,7 @@ La configurazione di un archivio esterno in Cloud Manager consiste nei seguenti 
    | --- | --- |
    | **Nome dell’archivio** | Obbligatorio. Un nome espressivo per il nuovo archivio. |
    | **URL dell’archivio** | Obbligatorio. L’URL dell’archivio.<br><br>Se utilizzi un archivio ospitato da GitHub, il percorso deve terminare in `.git`.<br>Ad esempio, *`https://github.com/org-name/repo-name.git`* (il percorso URL è solo a scopo illustrativo).<br><br>Per gli archivi esterni, è necessario utilizzare il seguente formato di percorso URL: <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> o <br>`https://self-hosted-domain/org-name/repo-name.git`<br> e il fornitore Git corrispondente. |
-   | **Seleziona il tipo di archivio** | Obbligatorio. Seleziona il tipo di archivio in uso. Se il percorso URL dell’archivio include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato.:<ul><li>**GitHub** (GitHub Enterprise e versione self-hosted di GitHub)</li><li>**GitLab** (sia `gitlab.com` che la versione con hosting autonomo di GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` - versione cloud) supportato. La versione con hosting autonomo di Bitbucket è stata rimossa a partire dal 15 febbraio 2024.)</li><li>**DevOps di Azure** (`dev.azure.com`) </ul> |
+   | **Seleziona il tipo di archivio** | Obbligatorio. Seleziona il tipo di archivio in uso. Se il percorso URL dell’archivio include il nome del fornitore Git, ad esempio GitLab o Bitbucket, il tipo di archivio è già preselezionato.:<ul><li>**GitHub** (GitHub Enterprise e versione self-hosted di GitHub)</li><li>**GitLab** (sia `gitlab.com` che la versione con hosting autonomo di GitLab) </li><li>**Bitbucket** (solo `bitbucket.org` - versione cloud) supportato. La versione self-hosted di Bitbucket è stata rimossa a partire dal 15 febbraio 2024.</li><li>**DevOps di Azure** (`dev.azure.com`) </ul> |
    | **Descrizione** | Facoltativo. Descrizione dettagliata dell’archivio. |
 
 1. Seleziona **Salva** per aggiungere l’archivio.
