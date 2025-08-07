@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -180,14 +180,14 @@ La **Barra degli strumenti dell&#39;editor universale** contiene gli strumenti p
 **Scopo:** Visualizza il modulo in una nuova scheda senza l&#39;interfaccia dell&#39;editor\
 **Quando utilizzare:** Per test a schermo intero, condivisione con le parti interessate per la revisione
 
-    .[Apri pagina](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Apri pagina](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Pubblica**
 
 **Scopo:** Rendere il modulo attivo e accessibile agli utenti\
 **Quando utilizzare:** Dopo un test approfondito in modalità Anteprima e Reattiva
 
-    .[Pubblica](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Pubblica](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Elenco di controllo convalida prima della pubblicazione:**
 
@@ -216,12 +216,22 @@ La **Barra degli strumenti dell&#39;editor universale** contiene gli strumenti p
 
 **Questi strumenti vengono utilizzati per scenari specifici o impostazioni avanzate:**
 
-#### **Modifica proprietà modulo**
+#### **Proprietà modulo AEM**
 
 **Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM) e le date di pubblicazione\
 **Quando utilizzare:** Configurazione delle integrazioni di dati, pianificazione della pubblicazione
 
 ![Proprietà modulo](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Creazione guidata proprietà modulo](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+Il pannello Proprietà modulo include le sezioni seguenti:
+
+- **Invio**: definisci cosa accade dopo che un utente invia il modulo. È possibile scegliere tra più azioni di invio, ad esempio l’invio di dati tramite e-mail, l’invio a SharePoint, l’utilizzo di un modello dati modulo o l’integrazione con servizi come Adobe Experience Platform o Microsoft Power Automate. Per un elenco completo delle azioni di invio supportate, fare riferimento all&#39;articolo [Azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md).
+
+- **Precompilazione**: configura il popolamento automatico dei campi modulo prima che l&#39;utente interagisca con il modulo. Puoi connetterti a origini dati, ad esempio un Modello dati modulo (FDM), oppure utilizzare parametri URL per precompilare i campi, migliorando l’esperienza utente e riducendo l’input manuale. Per ulteriori informazioni, consulta l&#39;articolo [Servizio di precompilazione](/help/edge/docs/forms/universal-editor/prefill-form.md).
+
+- **Grazie**: personalizza i contenuti visualizzati dagli utenti dopo l&#39;invio del modulo. Puoi visualizzare un messaggio di conferma o reindirizzarli a un’altra pagina web, garantendo un’esperienza di completamento fluida e professionale. Per informazioni su come configurare un messaggio di ringraziamento per i moduli, vedere l&#39;articolo [Configura messaggio di ringraziamento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Editor regole** (accesso anticipato)
 
@@ -521,4 +531,3 @@ Ora che conosci l’interfaccia di Universal Editor:
 4. **Editor regole master** - Aggiungi comportamenti dinamici con la [Guida dell&#39;editor regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **Ricorda:** L&#39;editor universale è progettato per rendere intuitivo lo sviluppo di moduli. Inizia con le funzionalità essenziali ed esplora gradualmente le funzioni avanzate man mano che le tue esigenze aumentano.
-

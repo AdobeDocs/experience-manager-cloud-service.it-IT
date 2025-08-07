@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
+source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
 workflow-type: tm+mt
-source-wordcount: '6566'
-ht-degree: 99%
+source-wordcount: '6586'
+ht-degree: 98%
 
 ---
 
@@ -787,6 +787,7 @@ ht-degree: 99%
          + [Configurare l’azione di invio per un modulo adattivo basato su componenti core](/help/forms/configure-submit-actions-core-components.md)
          + [Configurare l’azione di invio per Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
          + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
+         + [Integrare un modulo adattivo con il modello di dati del modulo](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
             + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -1111,6 +1112,7 @@ ht-degree: 99%
          + [Introduzione all’editor universale dei moduli per Edge Delivery Services - Guida completa](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Come iniziare a creare con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Come creare il primo modulo con l’editor universale - Tutorial dettagliato](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Guida gli utenti dopo l’invio: configura i reindirizzamenti e i messaggi di ringraziamento nell’editor universale](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [Guida all’interfaccia dell’editor universale - Spiegazione su strumenti, funzioni e navigazione](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Rendere i moduli facili da usare - Design reattivo nell’editor universale](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [Progettare moduli di bell’aspetto - Guida all’attribuzione stile e all’applicazione del tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 23%
@@ -16,6 +16,7 @@ ht-degree: 23%
 # Editor di regole per Dynamic Forms nell’editor universale
 
 L&#39;Editor di regole di Universal Editor consente di creare moduli intelligenti e dinamici che rispondono in tempo reale agli input dell&#39;utente. Puoi trasformare i moduli statici in esperienze interattive con visibilità dei campi condizionale, calcoli automatizzati e logica di business complessa, il tutto senza scrivere codice.
+
 
 ## Che cosa imparerai
 

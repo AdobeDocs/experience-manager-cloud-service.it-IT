@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # Creare un Forms reattivo con Universal Editor
 
 Gli utenti accedono ai moduli su una vasta gamma di dispositivi, tra cui desktop, tablet e smartphone. La progettazione di moduli reattivi garantisce un’esperienza ottimale per tutti gli utenti, indipendentemente dal dispositivo. Questa guida spiega come progettare, testare e ottimizzare i moduli per qualsiasi dimensione di schermo utilizzando Universal Editor.
+
 
 La creazione di moduli reattivi prevede due attività principali:
 
@@ -335,7 +336,7 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++
 
-+++Destinazioni Touch troppo piccole
+Destinazioni +++Touch troppo piccole
 
 **Cause comuni:**
 

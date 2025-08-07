@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '882'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,8 @@ Alcuni dei vantaggi dell&#39;integrazione diretta di AEM Forms e Microsoft® One
 ## Connessione di OneDrive a un modulo adattivo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+<span> Questo video è applicabile solo ai Componenti core. Per i componenti UE/Foundation, fare riferimento all&#39;articolo.</span>
 
 La configurazione di OneDrive per l&#39;invio di AEM Forms prevede i seguenti passaggi:
 

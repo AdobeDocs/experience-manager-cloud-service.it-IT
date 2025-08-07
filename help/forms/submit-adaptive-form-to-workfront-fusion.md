@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1304'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=it) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
 
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
@@ -31,12 +31,14 @@ AEM Forms as a Cloud Service fornisce un connettore OOTB per connettersi e invia
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
+<span> Questo video è applicabile solo ai Componenti core. Per i componenti UE/Foundation, fare riferimento all&#39;articolo.</span>
+
 ## Prerequisiti per integrare AEM Forms con Adobe Workfront Fusion {#prerequisites}
 
 Per stabilire una connessione tra Workfront Fusion e AEM Forms, sono necessari i seguenti elementi:
 
-* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=it) valida.
-* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it).
+* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html) valida.
+* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
 
@@ -103,7 +105,7 @@ Per aggiungere una connessione:
    >
    > L’URL dell’istanza è l’indirizzo web univoco che punta a un’istanza AEM Forms specifica.
 
-   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it) necessarie per creare una connessione.
+   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessarie per creare una connessione.
 
 1. Sostituisci `ims-na1.adobelogin.com` nell&#39;endpoint **IMS** con il valore di **imsEndpoint** dalle credenziali del servizio nella console per sviluppatori.
 
