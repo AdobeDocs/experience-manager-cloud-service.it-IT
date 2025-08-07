@@ -3,9 +3,9 @@ title: Ripristina il codice Source precedente distribuito
 description: Scopri come ripristinare l’ultima build riuscita di un ambiente &ndash; non è richiesta alcuna esecuzione della pipeline.
 feature: Operations
 role: Admin
-badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
+source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->La funzione descritta in questo articolo è disponibile solo tramite il programma alfa. Per iscriverti all&#39;Alfa, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>La funzione descritta in questo articolo è disponibile solo tramite il programma beta. Per iscriverti alla versione beta, vedi [Rollback con un solo clic per le distribuzioni della pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Utilizza **Ripristina il codice precedente distribuito** per ripristinare immediatamente l&#39;ultima compilazione riuscita di un ambiente, senza richiedere alcuna esecuzione della pipeline.
 
@@ -31,9 +31,9 @@ Utilizza **Ripristina il codice precedente distribuito** per ripristinare immedi
 La funzionalità **Ripristina codice precedente distribuito** diventa disponibile solo quando **ogni** condizione seguente è true:
 
 * Hai **autorizzazioni Creazione ripristino ambiente**. Per informazioni dettagliate sulla gestione delle autorizzazioni, vedere [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md).
-* L’organizzazione è iscritta al programma alfa e il flag di funzione è attivato.
+* L’organizzazione è iscritta al programma beta e il flag di funzione è attivo.
 * Il programma viene eseguito su AEM as a Cloud Service.
-* L&#39;ambiente scelto è un ambiente `Development` (limite temporaneo di Alpha).
+* L&#39;ambiente scelto è un ambiente `Development` (limite temporaneo di Beta).
 * L&#39;ultima pipeline per l&#39;ambiente è stata completata correttamente ed è stata eseguita **meno di 30 giorni** fa.
 * Lo stato dell&#39;ambiente è *In esecuzione* e nessuna pipeline è in corso.
 
