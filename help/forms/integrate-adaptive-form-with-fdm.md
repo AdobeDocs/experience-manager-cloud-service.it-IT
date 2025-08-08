@@ -3,7 +3,7 @@ title: Come integrare il modello dati del modulo (FDM) per un modulo con il modu
 description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 19%
@@ -66,15 +66,19 @@ Per configurare il modello dati modulo con un modulo adattivo creato in universa
 
 1. Apri il modulo adattivo per la modifica.
 1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.
-Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
+   Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
    > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
    > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia utilizzando il modello dati del modulo]**.
+
    ![GIF OneDrive](/help/forms/assets/submit-uisng-fdm-ue.png)
 Se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali. Puoi anche salvare il documento di record (DoR) nell’archiviazione BLOB di Azure.
+
 1. Selezionare la **[!UICONTROL configurazione archiviazione]**, in cui si desidera salvare i dati.
 1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**
 

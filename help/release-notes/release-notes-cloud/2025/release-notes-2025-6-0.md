@@ -3,10 +3,10 @@ title: Note sulla versione 2025.6.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 2679466939e1c2e25e426c62f0fd6bde1bf90b93
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,10 +70,10 @@ Per ulteriori informazioni, consulta l’articolo [Rimozione](/help/release-note
 
 Espandi l’elenco seguente per visualizzare le API e le configurazioni OSGi obsolete che non devono più essere utilizzate. Per informazioni complete, comprese le timeline di rimozione, consulta l’articolo sulla rimozione.
 
-<details>
-  <summary>Espandi per visualizzare le rimozioni</summary>
++++Espandi per visualizzare le voci obsolete
 
 API Java:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -96,7 +96,7 @@ Proprietà OSGi:
 * `org.apache.sling.commons.log.LogManager` (tutte le proprietà)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
 
-</details>
++++
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
@@ -125,7 +125,7 @@ Tuttavia, per ottimizzare le prestazioni dell’archivio, a partire da **fine lu
 
 #### Versioni di contenuto {#mt-content}
 
-* **Nuovi ambienti** (creati dopo una data prossima (da comunicare in un secondo momento)
+* **Nuovi ambienti** (creati dopo una data futura da comunicare in un secondo momento)
    * Le versioni precedenti a **30 giorni** verranno eliminate periodicamente.
    * Vengono mantenute le cinque versioni più recenti degli ultimi 30 giorni, insieme alla versione più recente e a quella corrente, indipendentemente dalla loro età.
 

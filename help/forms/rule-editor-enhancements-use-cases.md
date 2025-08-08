@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Nella regola precedente, il pulsante **Successivo** controlla se i campi nella s
 
 >[!NOTE]
 >
-> È possibile utilizzare il metodo **validate()** su moduli, frammenti o singoli campi. Quando un frammento è incluso in un modulo, sia il modulo che il frammento vengono visualizzati come opzioni nel contesto di convalida. In questo caso, il frammento si riferisce ai campi al suo interno, mentre il modulo si riferisce al modulo principale in cui è incorporato il frammento.
+>È possibile utilizzare il metodo **validate()** su moduli, frammenti o singoli campi. Quando un frammento è incluso in un modulo, sia il modulo che il frammento vengono visualizzati come opzioni nel contesto di convalida. In questo caso, il frammento si riferisce ai campi al suo interno, mentre il modulo si riferisce al modulo principale in cui è incorporato il frammento.
 
 ## Funzione DownloadDor as OOTB nell’editor di regole
 
@@ -67,7 +67,7 @@ L&#39;utilizzo della funzione **DownloadDor()** preconfigurata nell&#39;editor d
 
 >[!NOTE]
 >
-> Se il modulo non è configurato per il documento di record, viene visualizzato un messaggio di errore quando la regola che utilizza la funzione **downloadDoR()** viene applicata al pulsante.
+>Se il modulo non è configurato per il documento di record, viene visualizzato un messaggio di errore quando la regola che utilizza la funzione **downloadDoR()** viene applicata al pulsante.
 
 **Scenario**: un&#39;agenzia governativa fornisce un modulo di richiesta digitale per il rilascio dei certificati. Dopo aver inviato il modulo, i candidati spesso richiedono una copia del modulo compilato per i loro registri o per condividere con un altro reparto. Per migliorare l’esperienza utente, l’agenzia vuole dare ai richiedenti la possibilità di scaricare un documento Record (DoR) immediatamente dopo la presentazione o in qualsiasi fase prima della presentazione finale.
 

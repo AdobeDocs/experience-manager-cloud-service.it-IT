@@ -3,7 +3,7 @@ title: Configurare un sito Edge Delivery per l’utilizzo di un archivio Git est
 description: Scopri come collegare un sito Edge Delivery a un archivio Git privato o aziendale.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 239ee3021057dd108d18ab2d7729680692223403
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 7%
