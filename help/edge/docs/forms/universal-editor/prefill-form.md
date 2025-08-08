@@ -251,7 +251,7 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Scegli **Anteprima come HTML**
 4. Verifica la precompilazione aggiungendo i parametri all’URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Esempio:**
 
@@ -271,19 +271,19 @@ Il modulo deve essere compilato automaticamente con dati basati sul parametro fo
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferenze utente&quot; caricato&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
