@@ -1,18 +1,17 @@
 ---
-title: Come si precompilano i campi del modulo adattivo?
+title: Come precompilare i campi del modulo adattivo
 description: Utilizza i dati esistenti per precompilare i campi di un modulo adattivo. Gli utenti possono precompilare le informazioni di base in un modulo accedendo con i loro profili social.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: precompilare un modulo adattivo, servizi di consegna edge di moduli adattivi, riempimento automatico di moduli adattivi
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%
 
 ---
-
 
 # Configurazione del servizio di preriempimento in Adaptive Forms tramite Edge Delivery Services
 
@@ -37,9 +36,9 @@ Il diagramma seguente illustra il processo di precompilazione automatica che si 
 Il processo di precompilazione prevede quattro passaggi chiave:
 
 1. **Modulo aperto dall&#39;utente**: l&#39;utente accede a un modulo adattivo tramite un URL o un sistema di navigazione
-2. **Identifica Source dati**: il servizio di precompilazione determina l&#39;origine dati configurata (modello dati modulo o servizio bozza)
-3. **Recupera dati**: il sistema recupera i dati utente pertinenti in base al contesto, ai parametri o all&#39;identificazione utente
-4. **Mappa e visualizza**: i dati sono mappati ai campi modulo utilizzando le proprietà `bindRef` e il modulo compilato viene visualizzato all&#39;utente
+1. **Identifica Source dati**: il servizio di precompilazione determina l&#39;origine dati configurata (modello dati modulo o servizio bozza)
+1. **Recupera dati**: il sistema recupera i dati utente pertinenti in base al contesto, ai parametri o all&#39;identificazione utente
+1. **Mappa e visualizza**: i dati sono mappati ai campi modulo utilizzando le proprietà `bindRef` e il modulo compilato viene visualizzato all&#39;utente
 
 Questo processo automatizzato garantisce agli utenti di visualizzare un modulo precompilato con le informazioni pertinenti, migliorando in modo significativo l’esperienza utente e i tassi di completamento dei moduli.
 
@@ -62,7 +61,6 @@ Il formato dei dati deve corrispondere al modello del modulo:
 - **Moduli schema JSON**: conformi allo schema JSON
 - **Moduli FDM (Form Data Model)**: JSON corrispondente alla struttura FDM
 - **Moduli senza schema**: tutti i campi non sono associati e utilizzano XML non associato
-
 
 ## Prerequisiti
 
@@ -106,39 +104,39 @@ Universal Editor offre due opzioni di servizio di precompilazione:
 
 ## Configurare il servizio di precompilazione per un modulo
 
-
 +++Fase 1: Impostazione del modello dati del modulo
 
 ### Passaggio 1: creare il modello dati del modulo
 
 1. Accedi all’istanza di AEM Forms as a Cloud Service
-2. Passa a **Adobe Experience Manager** > **Forms** > **Integrazioni dati**
-3. Seleziona **Crea** > **Modello dati modulo**
-4. Scegli la tua **configurazione Source dati** e seleziona il **Source dati** configurato
+1. Passa a **Adobe Experience Manager** > **Forms** > **Integrazioni dati**
+1. Seleziona **Crea** > **Modello dati modulo**
+1. Scegli la tua **configurazione Source dati** e seleziona il **Source dati** configurato
 
    ![Modello dati modulo creato](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Per istruzioni dettagliate sulla creazione di modelli dati modulo, vedi [Crea modello dati modulo](/help/forms/create-form-data-models.md).
+   >Per istruzioni dettagliate sulla creazione di modelli dati modulo, vedi [Crea modello dati modulo](/help/forms/create-form-data-models.md).
 
 ### Passaggio 2: configurare i servizi FDM
 
 1. Vai a **Adobe Experience Manager** > **Forms** > **Integrazioni dati**
-2. Aprire il modello dati modulo in modalità di modifica
-3. Seleziona un oggetto modello dati e fai clic su **Modifica proprietà**
-4. Configura i servizi **Lettura** e **Scrittura** per gli oggetti modello dati selezionati
+1. Aprire il modello dati modulo in modalità di modifica
+1. Seleziona un oggetto modello dati e fai clic su **Modifica proprietà**
+1. Configura i servizi **Lettura** e **Scrittura** per gli oggetti modello dati selezionati
 
    ![Configura servizio di lettura/scrittura](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configurare gli argomenti del servizio:
+1. Configurare gli argomenti del servizio:
+
    - Fai clic sull’icona Modifica per l’argomento Servizio di lettura
    - Associa l&#39;argomento a un **attributo profilo utente**, **attributo richiesta** o **valore letterale**
    - Specificare il valore di binding (ad esempio, `petid` per un modulo di registrazione per animali domestici)
 
    ![Configura argomento ID animale domestico](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Fai clic su **Fine** per salvare l&#39;argomento e su **Salva** per salvare FDM
+1. Fai clic su **Fine** per salvare l&#39;argomento e su **Salva** per salvare FDM
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Scegli **Anteprima come HTML**
 4. Verifica la precompilazione aggiungendo i parametri all’URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Esempio:**
 
@@ -271,19 +269,19 @@ Il modulo deve essere compilato automaticamente con dati basati sul parametro fo
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferenze utente&quot; caricato&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 

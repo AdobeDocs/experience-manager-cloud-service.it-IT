@@ -4,7 +4,7 @@ description: Crea e distribuisci moduli con prestazioni elevate su Adobe Experie
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -49,7 +49,7 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 ### Editor universale
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) è uno strumento di authoring visivo e di trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
@@ -151,10 +151,10 @@ Ora puoi creare il tuo primo modulo a prestazioni elevate con AEM Edge Delivery 
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /- Adding transition effect */
+        transition: background-color 0.3s ease; /* Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /- Changing background color on hover */
+        background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
 
