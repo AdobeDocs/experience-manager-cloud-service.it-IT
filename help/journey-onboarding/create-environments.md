@@ -93,7 +93,7 @@ Pertanto, prima di continuare il percorso di onboarding, rivedi il documento [As
 Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre il contenuto del percorso di onboarding.
 
 * [Gestione degli ambienti](/help/implementing/cloud-manager/manage-environments.md): scopri di più sui tipi di ambiente che è possibile creare e come crearli per un progetto di Cloud Manager.
-* [Utilizzo degli ambienti di Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments): gli ambienti di Cloud Manager sono composti dai servizi di authoring, pubblicazione e Dispatcher di AEM. Scopri in che modo i diversi ambienti supportano i ruoli e come utilizzarli con diverse pipeline CI/CD.
+* [Utilizzo degli ambienti di Adobe Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/cloud-manager/environments): gli ambienti di Cloud Manager sono composti dai servizi di authoring, pubblicazione e Dispatcher di AEM. Scopri in che modo i diversi ambienti supportano i ruoli e come utilizzarli con diverse pipeline CI/CD.
 * [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md): consulta la documentazione per informazioni dettagliate sull’utilizzo di un RDE.
 <!-- ERROR: Not Found (HTTP error 404) FIND AN ALTERNATE RESOURCE? * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
 
