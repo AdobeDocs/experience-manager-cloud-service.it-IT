@@ -7,7 +7,7 @@ exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 6db226bf1cd6de0e64cd07de35137ab4bd3b9b22
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Verranno inoltre illustrati i seguenti passaggi per la creazione e la configuraz
 1. Configurare l’ambiente
 1. Ottenere un ID applicazione da Adobe
 1. Creare un nuovo gruppo di risorse
-1. Creare un archivio chiavi
-1. Concedere ad Adobe l’accesso all’archivio chiavi
+1. Creare un Key Vault
+1. Concedere ad Adobe l’accesso al Key Vault
 1. Creare una chiave di crittografia
 
 È necessario condividere con Adobe l’URL dell’insieme di credenziali delle chiavi, il nome della chiave di crittografia e le informazioni sull’insieme di credenziali delle chiavi.
@@ -50,7 +50,7 @@ Verranno inoltre illustrati i seguenti passaggi per la creazione e la configuraz
 
 L’interfaccia CLI (Command Line Interface) di Azure è l’unico requisito per questa guida. Se Azure CLI non è già installato, segui le istruzioni di installazione ufficiali [qui](https://learn.microsoft.com/it-it/cli/azure/install-azure-cli).
 
-Prima di procedere con il resto di questa guida, accedere alla CLI con `az login`.
+Prima di procedere con il resto di questa guida, accedi alla CLI con `az login`.
 
 >[!NOTE]
 >
@@ -59,21 +59,21 @@ Prima di procedere con il resto di questa guida, accedere alla CLI con `az login
 
 ## Avviare il processo di configurazione CMK per AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
-Devi richiedere la configurazione di Customer Managed Keys (CMK) per il tuo ambiente AEM as a Cloud Service tramite l’interfaccia utente. A questo scopo, passa all&#39;interfaccia utente di AEM Home Security, nella sezione **Chiavi gestite dal cliente**.
-Puoi quindi avviare il processo di onboarding facendo clic sul pulsante **Avvia onboarding**.
+È necessario richiedere la configurazione delle chiavi gestite dal cliente (CMK) per il tuo ambiente AEM as a Cloud Service tramite l’interfaccia utente. A tale scopo, passa all’interfaccia utente di sicurezza nella Home di AEM, nella sezione **Chiavi gestite dal cliente**.
+In seguito, potrai avviare il processo di onboarding facendo clic sul pulsante **Avvia onboarding**.
 
-![Avvia l&#39;onboarding di un sito Web utilizzando l&#39;interfaccia utente CMK](./assets/cmk/step1.png)
+![Avviare l’onboarding di un sito web utilizzando l’interfaccia utente di CMK](./assets/cmk/step1.png)
 
 
 ## Ottenere un ID applicazione da Adobe {#obtain-an-application-id-from-adobe}
 
-Dopo aver avviato il processo di onboarding, Adobe fornirà un ID applicazione Entra. Questo ID applicazione è necessario per il resto della guida e verrà utilizzato per creare un’entità servizio che consenta ad Adobe di accedere all’insieme di credenziali delle chiavi. Se non disponi già di un ID applicazione, devi attendere che venga fornito da Adobe.
+Dopo aver avviato il processo di onboarding, Adobe fornirà un ID applicazione Entra. Questo ID applicazione è necessario per il resto della guida e verrà utilizzato per creare un’entità principale di servizio che consenta ad Adobe di accedere al Key Vault. Se non disponi già di un ID applicazione, dovrai attendere che venga fornito da Adobe.
 
-![È in corso l&#39;elaborazione della richiesta. Attendere che Adobe fornisca l&#39;ID applicazione Entra](./assets/cmk/step2.png)
+![È in corso l’elaborazione della richiesta. Attendi che Adobe fornisca l’ID applicazione Entra](./assets/cmk/step2.png)
 
-Al termine della richiesta, potrai visualizzare l’ID applicazione nell’interfaccia utente della CMK.
+Al termine della richiesta, potrai visualizzare l’ID applicazione nell’interfaccia utente di CMK.
 
-![L&#39;ID applicazione Entra è fornito da Adobe](./assets/cmk/step3.png)
+![L’ID applicazione Entra è fornito da Adobe](./assets/cmk/step3.png)
 
 ## Creare un nuovo gruppo di risorse {#create-a-new-resource-group}
 
@@ -92,7 +92,7 @@ Se disponi già di un gruppo di risorse, puoi utilizzarlo. Nel resto di questa g
 
 ## Creare un insieme di credenziali delle chiavi {#create-a-key-vault}
 
-È necessario creare un insieme di credenziali delle chiavi per contenere la chiave di crittografia. Nell’insieme di credenziali delle chiavi deve essere attivata la protezione da eliminazione. La protezione da eliminazione è necessaria per crittografare i dati a riposo da altri servizi Azure. L’accesso alla rete pubblica deve essere abilitato per garantire che i servizi Adobe possano accedere all’insieme di credenziali delle chiavi.
+È necessario creare un insieme di credenziali delle chiavi per contenere la chiave di crittografia. Nell’insieme di credenziali delle chiavi deve essere attivata la protezione da eliminazione. La protezione da eliminazione è necessaria per crittografare i dati a riposo da altri servizi Azure. È necessario abilitare anche l’accesso alla rete pubblica per garantire che i servizi Adobe possano accedere al Key Vault.
 
 >[!IMPORTANT]
 >La creazione del Key Vault con l’accesso alla rete pubblica disabilitato impone che tutte le operazioni relative ad esso come la creazione o la rotazione, vengano eseguite da un ambiente con accesso di rete al Key Vault, ad esempio una macchina virtuale in grado di accedervi.
@@ -120,7 +120,7 @@ az keyvault create `
 
 In questo passaggio consentirai ad Adobe di accedere al Key Vault tramite un’applicazione Entra. L’ID dell’applicazione Entra è già stato fornito da Adobe.
 
-Innanzitutto, devi creare un&#39;entità servizio collegata all&#39;applicazione Entra e assegnare a essa i ruoli **Key Vault Reader** e **Key Vault Crypto User**. I ruoli sono limitati al Key Vault creato in questa guida.
+Innanzitutto, è necessario creare un’entità principale di servizio collegata all’applicazione Entra e assegnare a tale entità i ruoli con **Lettore Key Vault** e **Utente di crittografia di Key Vault**. I ruoli sono limitati al Key Vault creato in questa guida.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,9 +180,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-Fornisci queste informazioni nell’interfaccia utente della CMK:
-![Inserisci le informazioni nell&#39;interfaccia utente](./assets/cmk/step3a.png)
+Fornisci queste informazioni nell’interfaccia utente di CMK:
+![Inserisci le informazioni nell’interfaccia utente](./assets/cmk/step3a.png)
 
 ## Implicazioni della revoca dell’accesso alla chiave {#implications-of-revoking-key-access}
 
@@ -194,14 +193,14 @@ Se decidi di revocare l’accesso di Platform ai tuoi dati, puoi farlo rimuovend
 
 Dopo aver fornito le informazioni richieste nell’interfaccia utente di CMK, Adobe avvierà il processo di configurazione per l’ambiente AEM as a Cloud Service. Questo processo può richiedere un po’ di tempo e riceverai una notifica una volta completato.
 
-![Attendi che Adobe configuri l&#39;ambiente.](./assets/cmk/step4.png)
+![Attendi che Adobe configuri l’ambiente.](./assets/cmk/step4.png)
 
 
-## Completare la configurazione della CMK {#complete-the-cmk-setup}
+## Completare la configurazione CMK {#complete-the-cmk-setup}
 
-Una volta completato il processo di configurazione, potrai vedere lo stato della configurazione della CMK nell’interfaccia utente. È inoltre possibile visualizzare l&#39;insieme di credenziali delle chiavi e la chiave di crittografia.
-![Il processo in è ora completato](./assets/cmk/step5.png)
+Una volta completato il processo di configurazione, potrai visualizzare lo stato della configurazione di CMK nell’interfaccia utente. È inoltre possibile visualizzare il Key Vault e la chiave di crittografia.
+![Il processo è ora completato](./assets/cmk/step5.png)
 
 ## Domande e supporto {#questions-and-support}
 
-Contattaci in caso di domande, richieste o assistenza sulla configurazione di Customer Managed Keys per AEM as a Cloud Service. Il supporto Adobe può aiutarti con qualsiasi domanda.
+Contattaci in caso di domande, richieste o assistenza sulla configurazione delle chiavi gestite dal cliente per AEM as a Cloud Service. Il supporto Adobe può aiutarti a rispondere a qualsiasi domanda.
