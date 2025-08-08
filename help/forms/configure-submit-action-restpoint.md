@@ -115,13 +115,13 @@ Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL
 
    Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
-+++
+   +++
 
    +++Configurazione
 
    Questa opzione consente di aggiungere una configurazione HTTP predefinita gestita tramite il browser configurazioni di AEM. È possibile selezionare la configurazione creata per il tipo di autenticazione dell&#39;endpoint REST del servizio e i tipi di contenuto. Per ulteriori informazioni sul tipo di autenticazione e sui tipi di contenuto, visita [configura origini dati](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Fai clic su **[!UICONTROL Fine]**.
 
@@ -172,13 +172,13 @@ Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL
 
    Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
-+++
+   +++
 
    +++Configurazione
 
    Questa opzione consente di aggiungere una configurazione HTTP predefinita gestita tramite il browser configurazioni di AEM. È possibile selezionare la configurazione creata per il tipo di autenticazione dell&#39;endpoint REST del servizio e i tipi di contenuto. Per ulteriori informazioni sul tipo di autenticazione e sui tipi di contenuto, visita [configura origini dati](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**.
 
