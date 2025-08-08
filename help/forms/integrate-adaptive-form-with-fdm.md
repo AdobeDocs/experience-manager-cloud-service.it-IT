@@ -3,7 +3,7 @@ title: Come integrare il modello dati del modulo (FDM) per un modulo con il modu
 description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 19%
@@ -54,6 +54,7 @@ Per configurare il modello dati modulo con modulo adattivo basato su componente 
 1. Fare clic sull&#39;icona delle proprietà del Contenitore Guida TV ![Proprietà Guida](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo (Adaptive Form Container).
 1. Fare clic sulla scheda **[!UICONTROL Invio]**.
 1. Dall&#39;elenco a discesa **[!UICONTROL Azione invio]**, selezionare **[Invia utilizzando il modello dati modulo]**.
+
    ![invia tramite il modello dati modulo](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. Seleziona il **[!UICONTROL Modello dati creato per inviare]** la configurazione.

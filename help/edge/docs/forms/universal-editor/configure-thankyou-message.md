@@ -4,7 +4,7 @@ description: Scopri come gli utenti possono visualizzare un messaggio di ringraz
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -27,8 +27,8 @@ Puoi configurare il messaggio di ringraziamento o gli URL di reindirizzamento pe
 
 >[!NOTE]
 >
-> * Se l&#39;icona **Proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-> * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+>* Se l&#39;icona **Proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
+>* Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 ## Come configurare il reindirizzamento o il messaggio di ringraziamento?
 
@@ -37,9 +37,9 @@ Quando si invia un modulo, è possibile reindirizzare l&#39;utente a un&#39;altr
 Per configurare la pagina di reindirizzamento o il messaggio di ringraziamento:
 
 1. Apri il modulo adattivo per la modifica.
-2. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
-3. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
-4. Apri la scheda **[!UICONTROL Invio]**. Vengono visualizzate le opzioni per configurare una pagina di reindirizzamento o un messaggio:
+1. Aprire la Struttura contenuto e selezionare il **[!UICONTROL Contenitore guida]**.
+1. Fai clic sull&#39;icona Proprietà contenitore modulo adattivo ![Proprietà contenitore modulo adattivo](/help/forms/assets/configure-icon.svg). Viene visualizzata la finestra di dialogo Contenitore modulo adattivo per configurare i modelli dati.
+1. Apri la scheda **[!UICONTROL Invio]**. Vengono visualizzate le opzioni per configurare una pagina di reindirizzamento o un messaggio:
 
    ![Finestra di dialogo per l&#39;invio del Contenitore guida per configurare una pagina di reindirizzamento o un messaggio](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
