@@ -225,7 +225,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime **Java 21** più performante.
+Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime &#x200B;** Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
