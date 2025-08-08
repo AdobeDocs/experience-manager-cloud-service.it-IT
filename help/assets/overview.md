@@ -1,13 +1,13 @@
 ---
 title: Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 description: Assets as a Cloud Service per la gestione delle risorse digitali in AEM
-source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
 workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 29%
 
 ---
-
 
 # Assets as a Cloud Service per la gestione delle risorse digitali in AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
@@ -57,11 +57,11 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
    <img alt="Utilizzare l’app desktop AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
       <strong>Utilizza l'app desktop AEM</strong>
       </a>
    </div>
@@ -515,7 +515,7 @@ AEM Assets può integrarsi perfettamente con varie applicazioni Adobe e non Adob
 
 * **Integrazione con Adobe Workfront**: [!DNL Adobe Workfront] è un&#39;applicazione per la gestione dell&#39;intero ciclo di vita del lavoro in un&#39;unica posizione. L&#39;integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di velocizzare le attività relative ai contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto della gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini richiesti.
 
-  Le offerte Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=it).
+  Le offerte Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 * **Integrazione con Figma**: AEM Assets si integra in modo nativo con Figma, consentendo ai designer di accedere direttamente alle risorse memorizzate in AEM Assets dall&#39;interfaccia utente Figma. Puoi posizionare il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il nuovo o quello modificato in un archivio AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -581,11 +581,11 @@ Se disponi già di un sito Web [!DNL Edge Delivery Services], consulta la docume
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integrazione con Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integrazione con Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -594,11 +594,11 @@ Se disponi già di un sito Web [!DNL Edge Delivery Services], consulta la docume
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Integrazione con Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Integrazione con Commerce</strong>
       </a>
    </div>
@@ -900,5 +900,3 @@ Gli utenti con accesso alla vista Amministratore possono accedere anche alla vis
 Librerie, sviluppatori e utenti con privilegi avanzati DAM possono continuare a utilizzare la vista Amministratore o passare da un’interfaccia utente all’altra, in base alle esigenze. Puoi selezionare l’esperienza che funziona meglio per il tuo ruolo.
 
 Per informazioni su come accedere alla vista Risorse e su alcune delle semplificazioni offerte rispetto alla vista Amministratore, consulta [Introduzione alla vista Risorse](/help/assets/assets-view-introduction.md).
-
-
