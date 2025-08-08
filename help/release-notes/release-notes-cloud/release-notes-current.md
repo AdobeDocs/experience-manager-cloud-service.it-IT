@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 51%
+source-wordcount: '2235'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Nuove funzioni in Experience Manager Sites {#enhancements-sites}
 
-**Miglioramenti dei frammenti di contenuto**
-
-* Ora è possibile copiare frammenti di contenuto con elementi secondari.
-* Ora puoi configurare un’area di lavoro personalizzata nelle impostazioni della cartella per esportare i frammenti di contenuto nell’area di lavoro configurata in Adobe Target.
+* È ora possibile copiare frammenti di contenuto con frammenti di riferimento (elementi secondari) in un’unica operazione. Ciò consente di riutilizzare le strutture dei frammenti di contenuto esistenti per creare nuovi contenuti.
+* Nell’interfaccia utente di amministrazione dei frammenti di contenuto ora è possibile visualizzare lo stato del flusso di lavoro per i frammenti di contenuto, con informazioni dettagliate sui flussi di lavoro passati e attualmente in esecuzione per un frammento selezionato.
+* Ora la ridenominazione o lo spostamento di una pagina Live Copy di origine attiva la ripubblicazione di una pagina Live Copy rinominata o spostata di conseguenza.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Content Hub ora include un&#39;opzione **Mostra tutto** all&#39;interno dei filt
 
 Caricamento automatizzato di nuovi file e cartelle, operazioni avanzate sui file, individuazione più intelligente delle risorse e integrazione perfetta con AEM, per una gestione dei contenuti più rapida, chiara e intuitiva.
 
-Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/release-notes).
+Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime &#x200B;** Java 21** più performante.
+Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime **Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
