@@ -1,16 +1,16 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: Come si configura un sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione?
+description: Scopri come configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione.
 keywords: Come configurare il sito SharePoint con accesso limitato?, Configurare SharePoint con accesso limitato, Utilizzare l'ambito di autorizzazione per limitare l'accesso al sito SharePoint.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '842'
 ht-degree: 3%
 
 ---
-
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
@@ -37,7 +37,7 @@ Vantaggi per fornire accesso limitato al sito SharePoint:
 Per configurare SharePoint Sites con accesso limitato utilizzando gli ambiti di autorizzazione, effettua le seguenti operazioni:
 
 1. [Creare un’applicazione con ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
-1. [Imposta l’ambito di autorizzazione all’istanza AEM](#set-the-authorization-scope-at-aem-instance)
+1. [Imposta l’ambito di autorizzazione nell’istanza di AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Creare un’applicazione con l’autorizzazione limitata nel portale di Azure
 
@@ -52,13 +52,13 @@ Per informazioni su come recuperare `Client ID`, `Client Secret` e `Tenant ID` p
 
 Per utilizzare l&#39;autorizzazione API `Sites.Selected` è necessaria un&#39;applicazione registrata nel portale di Azure con le autorizzazioni appropriate impostate per i siti SharePoint Online. Questa configurazione garantisce che l’applicazione disponga dell’autorizzazione necessaria per interagire con il sito SharePoint all’interno dell’ambito definito, fornendo in tal modo l’accesso limitato richiesto.
 
-Per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni `Sites.Selected` per Sites SharePoint Online, consulta l&#39;[articolo del blog - Sviluppo di applicazioni che utilizzano le autorizzazioni Sites.Selected per i siti SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476).
+Per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni [ per Sites SharePoint Online, consulta l&#39;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)articolo del blog - Sviluppo di applicazioni che utilizzano le autorizzazioni Sites.Selected per i siti SPO`Sites.Selected`.
 
-### Imposta l’ambito di autorizzazione all’istanza AEM
+### Imposta l’ambito di autorizzazione nell’istanza di AEM
 
 Per fornire un accesso limitato a un sito SharePoint di Microsoft, è essenziale impostare correttamente l’ambito di autorizzazione. Per impostare l’ambito di autorizzazione e collegare AEM Forms allo storage Microsoft® SharePoint:
 
-1. Vai all&#39;istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vai alla tua istanza di **AEM Forms Author** > **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Dopo aver selezionato **[!UICONTROL Microsoft® SharePoint]**, sei reindirizzato a **[!UICONTROL SharePoint Browser]**.
 1. Seleziona un **contenitore configurazione**. La configurazione viene archiviata nel Contenitore configurazione selezionato.
 1. Fare clic su **[!UICONTROL Crea]** > **[!UICONTROL Libreria documenti di SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.

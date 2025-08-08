@@ -1,14 +1,14 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Come si configura l’azione di invio a Marketo Engage per i moduli?
+description: Scopri come configurare l’azione di invio del modulo adattivo per inviare dati a Marketo Engage.
+keywords: Invia dati a Marketo coinvolgi, configura l’azione di invio come Invia a Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 8%
+source-wordcount: '772'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-3.png)
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home) all&#39;invio.
+L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) all&#39;invio.
 
 Sono disponibili varie azioni di invio predefinite per la gestione degli invii dei moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -97,7 +97,7 @@ Dopo aver configurato l&#39;azione di invio per il modulo adattivo come **Invia 
 
 ## Passaggio successivo
 
-È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
+È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
 
 ## Articoli correlati
 

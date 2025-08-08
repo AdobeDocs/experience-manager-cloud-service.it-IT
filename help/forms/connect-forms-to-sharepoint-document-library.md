@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: Come si integra un modulo adattivo in una raccolta documenti di SharePoint?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Come collegare la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint per un modulo adattivo, Libreria documenti di AEM Forms Data Model SharePoint, Libreria documenti di Forms Data Model SharePoint, Integrare il modello dati di Forms nella raccolta documenti di SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
