@@ -140,9 +140,9 @@ Universal Editor offre due opzioni di servizio di precompilazione:
 
 6. Fai clic su **Fine** per salvare l&#39;argomento e su **Salva** per salvare FDM
 
-       >[!NOTA]
+       >[ !NOTA]
        >
-   > Ulteriori informazioni sulla configurazione dei servizi FDM in [Utilizzare il modello dati modulo (FDM)](/help/forms/work-with-form-data-model.md).
+       > Ulteriori informazioni sulla configurazione dei servizi FDM in [Utilizzare il modello dati modulo (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ Il modulo deve essere compilato automaticamente con dati basati sul parametro fo
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferenze utente&quot; caricato&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
