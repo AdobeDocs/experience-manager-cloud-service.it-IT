@@ -4,7 +4,7 @@ description: Utilizza i temi del modulo adattivo per applicare uno stile e forni
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 È possibile creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo<!-- or interactive communication -->.
@@ -511,7 +511,8 @@ Per configurare un tema per l’utilizzo della configurazione di Adobe Fonts, ef
 
    Ora è possibile vedere che i font vengono aggiunti nella proprietà font-family del tema.
 
-<!-- >
+<!-- 
+
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
@@ -521,7 +522,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
    ![theme-config](assets/theme-config.png)
 
-1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
+1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. 
+-->
 
 #### Selezione di tipi di carattere nell&#39;editor temi {#selecting-fonts-in-theme-editor}
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 82a3016149645701abe829ad89c493f480956267
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2197'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=it#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service | Questo articolo |
 
 [!DNL Adobe Acrobat Sign] abilita i flussi di lavoro di firma elettronica per i flussi di lavoro Adaptive Forms e AEM. Le firme elettroniche consentono di migliorare i flussi di lavoro per l&#39;elaborazione di documenti relativi a questioni legali, vendite, retribuzioni, gestione delle risorse umane e molte altre aree.
@@ -37,7 +37,7 @@ Per integrare [!DNL Adobe Acrobat Sign] con [!DNL AEM Forms] è necessario esegu
 1. Un account sviluppatore [Adobe Acrobat Sign attivo.](https://www.adobe.com/acrobat/business/developer-form.html)
 1. Applicazione API [Adobe Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Credenziali (ID client e segreto client) dell&#39;applicazione API [!DNL Adobe Acrobat Sign].
-1. (Solo per autenticazione basata su documento ufficiale) [Abilitare il metodo di autenticazione](https://helpx.adobe.com/it/sign/using/adobesign-authentication-government-id.html#AuditReport) per l&#39;autenticazione tramite documento ufficiale.
+1. (Solo per autenticazione basata su documento ufficiale) [Abilitare il metodo di autenticazione](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) per l&#39;autenticazione tramite documento ufficiale.
 
 ### Connettere le istanze di authoring e pubblicazione di AEM Forms con Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
@@ -84,7 +84,7 @@ Dopo aver impostato i prerequisiti, eseguire la procedura seguente per configura
 
    Dove:
 
-   **na1** fa riferimento alla partizione di database predefinita. È possibile modificare il valore della partizione del database. Verificare che le [!DNL &#x200B; Adobe Acrobat Sign] configurazioni cloud puntino alla [partizione corretta](https://helpx.adobe.com/it/sign/using/identify-account-shard.html).
+   **na1** fa riferimento alla partizione di database predefinita. È possibile modificare il valore della partizione del database. Verificare che le [!DNL  Adobe Acrobat Sign] configurazioni cloud puntino alla [partizione corretta](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -135,7 +135,7 @@ Ora puoi [utilizzare l&#39;aggiunta di campi Adobe Acrobat Sign a un modulo adat
 >
 > Per configurare la sandbox di Adobe Sign, puoi seguire gli stessi passaggi di configurazione descritti in [Adobe Sign](#adobe-sign).
 
-#### Risoluzione dei problemi {#resolve-config-error}
+#### Risoluzione di problemi {#resolve-config-error}
 
 Quando si connette [!DNL Adobe Acrobat Sign] a [!DNL AEM Forms] e si trova un errore `Unable to authorize access because the client configuration is invalid: invalid_request`, come illustrato nell&#39;immagine seguente. Per risolvere il problema, segui questi passaggi:
 
@@ -225,7 +225,7 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 
    Dove:
 
-   **na1** fa riferimento alla partizione di database predefinita. È possibile modificare il valore della partizione del database. Verificare che le [!DNL &#x200B; Adobe Acrobat Sign] configurazioni cloud puntino alla [partizione corretta](https://helpx.adobe.com/it/sign/using/identify-account-shard.html).
+   **na1** fa riferimento alla partizione di database predefinita. È possibile modificare il valore della partizione del database. Verificare che le [!DNL  Adobe Acrobat Sign] configurazioni cloud puntino alla [partizione corretta](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -239,7 +239,9 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 
    ![Configurazione cloud Adobe Acrobat Sign completata](assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      -->
 
 1. Seleziona **[!UICONTROL Crea]** per creare la configurazione.
 
@@ -260,7 +262,7 @@ Per impostazione predefinita, i servizi di pianificazione [!DNL Adobe Acrobat Si
 
 Per modificare l&#39;intervallo predefinito, specificare un&#39;espressione [cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) per la proprietà **sign.status.exp** della configurazione **Servizio di configurazione di Adobe Acrobat Sign**.
 
-Ad esempio, per eseguire il servizio di configurazione ogni giorno alle 00:00, impostare la proprietà **sign.status.exp** della configurazione **Servizio di configurazione di Adobe Acrobat Sign** per specificare `0 0 0 1/1 * ? *`. Il seguente file JSON mostra l’esempio per eseguire il servizio di configurazione ogni giorno alle 00:00:
+Ad esempio, per eseguire il servizio di configurazione ogni giorno alle 00:00, impostare la proprietà **sign.status.exp** della configurazione **Servizio di configurazione di Adobe Acrobat Sign** per specificare `0 0 0 1/1 * ? *`. Nel seguente file JSON viene visualizzato l&#39;esempio per l&#39;esecuzione giornaliera del servizio di configurazione alle 00:00:
 
 ```json
 {
@@ -268,7 +270,7 @@ Ad esempio, per eseguire il servizio di configurazione ogni giorno alle 00:00, i
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Domande frequenti
 

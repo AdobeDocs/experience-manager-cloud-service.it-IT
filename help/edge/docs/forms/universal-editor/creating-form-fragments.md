@@ -4,7 +4,7 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 97%
@@ -13,9 +13,11 @@ ht-degree: 97%
 
 # Creazione di frammenti di modulo nell’editor universale
 
-<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<!--
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>-->
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+-->
 
 I moduli includono spesso sezioni comuni come informazioni di contatto, dettagli di identificazione o accordi di consenso. Gli sviluppatori di moduli creano queste sezioni ogni volta che realizzano un nuovo modulo e si trovano quindi a dover eseguire operazioni lunghe e ripetitive.
 Per eliminare operazioni duplicate, l’editor universale consente di creare una sola volta segmenti di modulo riutilizzabili, ad esempio pannelli o gruppi di campi, e di applicarli a vari moduli. Questi segmenti riutilizzabili, modulari e autonomi sono denominati frammenti di modulo. Lo stesso frammento del contatto di emergenza, ad esempio, può essere utilizzato in diverse sezioni di un modulo, ad esempio nei dettagli di contatto del dipendente e del supervisore.
