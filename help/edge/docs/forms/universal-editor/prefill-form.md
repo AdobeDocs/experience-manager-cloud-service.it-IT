@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: precompilare un modulo adattivo, servizi di consegna edge di moduli adattivi, riempimento automatico di moduli adattivi
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 2%
+source-wordcount: '1829'
+ht-degree: 3%
 
 ---
 
@@ -140,9 +140,9 @@ Universal Editor offre due opzioni di servizio di precompilazione:
 
 6. Fai clic su **Fine** per salvare l&#39;argomento e su **Salva** per salvare FDM
 
-       >[ !NOTA]
-       >
-       > Ulteriori informazioni sulla configurazione dei servizi FDM in [Utilizzare il modello dati modulo (FDM)](/help/forms/work-with-form-data-model.md).
+   >[!NOTE]
+   >
+   > Ulteriori informazioni sulla configurazione dei servizi FDM in [Utilizzare il modello dati modulo (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -151,35 +151,36 @@ Universal Editor offre due opzioni di servizio di precompilazione:
 ### Passaggio 3: creare un modulo adattivo
 
 1. Passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**
-2. Seleziona **Crea** > **Forms adattivo**
-3. Nella scheda **Source** selezionare un modello di Edge Delivery Services:
+1. Seleziona **Crea** > **Forms adattivo**
+1. Nella scheda **Source** selezionare un modello di Edge Delivery Services:
 
-       .[Modello Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
-   
-4. Fai clic su **Crea** per aprire la procedura guidata **Crea modulo**
-5. Specifica i dettagli del modulo:
+   ![Modello di Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
+
+1. Fai clic su **Crea** per aprire la procedura guidata **Crea modulo**
+1. Specifica i dettagli del modulo:
+
    - **Nome**: immetti un nome descrittivo per il modulo
    - **Titolo**: fornisci un titolo intuitivo
    - **URL GitHub**: immetti l&#39;URL dell&#39;archivio (ad esempio, `https://github.com/wkndforms/edsforms`)
 
-6. Fai clic su **Crea**.
+1. Fai clic su **Crea**.
 
-       .[Crea modulo basato su schema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![Crea modulo basato su schema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 Il modulo viene aperto nell’editor universale per l’authoring.
 
 ### Passaggio 4: configurare Source dati modulo
 
 1. Seleziona il modulo e fai clic su **Proprietà**
 
-       .[Seleziona proprietà modulo](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![Seleziona proprietà modulo](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. Apri la scheda **Modello modulo**
 3. Dal menu a discesa **Seleziona da**, scegli **Modello dati modulo (FDM)**
 4. Seleziona il Modello dati modulo creato (ad esempio, PetFDM) dal menu a discesa
 
-       .[Selezionare la scheda Modello modulo](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![Seleziona scheda Modello del modulo](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. Fai clic su **Salva e chiudi**
 6. Apri il modulo per la modifica in Editor universale
 
@@ -193,6 +194,7 @@ Gli elementi del modulo dal tuo FDM vengono visualizzati nella scheda **Origine 
    ![Schermata di Universal Editor che mostra il modulo basato su schema](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Aggiungere l&#39;associazione dati ai campi modulo:
+
    - Seleziona un campo modulo
    - Nel pannello **Proprietà**, individua la proprietà **Riferimento binding**
    - Selezionare il riferimento di associazione dati appropriato
@@ -208,12 +210,14 @@ Gli elementi del modulo dal tuo FDM vengono visualizzati nella scheda **Origine 
 Assicurati che queste estensioni siano abilitate in Universal Editor:
 
 1. **Estensione proprietà AEM Form**
+
    - Apri **Extension Manager** nell&#39;editor universale
    - Abilita l&#39;estensione **AEM Form Properties**
 
    ![Icona proprietà modulo](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Estensione Data Source**
+1. **Estensione Data Source**
+
    - Abilita l&#39;estensione **Origine dati** se non vedi l&#39;icona **Origini dati**
 
    ![Schermata di Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Fai clic sulla scheda **Precompila**
 4. Seleziona **Servizio di precompilazione modello dati modulo**
 
-       .[Selezionare il servizio di precompilazione](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![Seleziona servizio di precompilazione](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. Fai clic su **Salva e chiudi**
 
 +++
@@ -247,14 +251,14 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Scegli **Anteprima come HTML**
 4. Verifica la precompilazione aggiungendo i parametri all’URL:
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;valore>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **Esempio:**
 
-       https://your-preview-url.com?petid=12345
-       
-       [Modulo precompilato](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![Modulo precompilato](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 Il modulo deve essere compilato automaticamente con dati basati sul parametro fornito.
 
 +++
@@ -267,19 +271,19 @@ Il modulo deve essere compilato automaticamente con dati basati sul parametro fo
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferenze utente&quot; caricato&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -306,11 +310,11 @@ Gli URL riportati di seguito hanno solo scopo illustrativo e non funzioneranno c
 
 **Test di precompilazione di base:**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Test con più parametri:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Risoluzione di problemi
@@ -330,21 +334,25 @@ Gli URL riportati di seguito hanno solo scopo illustrativo e non funzioneranno c
 +++Passaggi di debug
 
 1. **Verifica configurazione FDM:**
+
    - Verifica se i servizi sono configurati correttamente
    - Test indipendente dei servizi FDM
    - Convalidare la connettività dell’origine dati
 
 2. **Verifica configurazione modulo:**
+
    - Il modulo di conferma è associato a FDM corretto
    - Verifica valori campo `bindRef`
    - Modulo di prova senza precompilazione
 
 3. **Flusso dati di prova:**
+
    - Utilizzare gli strumenti di sviluppo del browser per verificare le richieste di rete
    - Verifica la presenza di errori JavaScript nella console
    - Convalida formato dati risposta
 
 4. **Messaggi di errore comuni:**
+
    - &quot;Servizio di precompilazione non trovato&quot;: verifica la configurazione del servizio
    - &quot;Associazione dati non riuscita&quot;: verificare la precisione di `bindRef`
    - &quot;Formato dati non valido&quot;: verifica che i dati corrispondano allo schema
