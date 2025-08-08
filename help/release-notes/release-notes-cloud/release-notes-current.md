@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 50%
 
 ---
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ AEM Assets ora consente di [configurare la visualizzazione dei titoli delle riso
 
 Ora puoi anche scegliere di disabilitare i metadati generati dall’intelligenza artificiale a livello di cartella.
 
-
 ### Nuove funzioni in Content Hub {#new-features-content-hub}
 
 **Maggiore flessibilità di branding in Content Hub**
@@ -89,7 +88,7 @@ Content Hub ora include un&#39;opzione **Mostra tutto** all&#39;interno dei filt
 
 Caricamento automatizzato di nuovi file e cartelle, operazioni avanzate sui file, individuazione più intelligente delle risorse e integrazione perfetta con AEM, per una gestione dei contenuti più rapida, chiara e intuitiva.
 
-Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/release-notes).
+Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ Lo strumento di integrazione API consente agli autori dei moduli di creare modul
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
+### Visualizzazione principale per la gestione delle autorizzazioni {#principal-view}
+
+AEM introduce la gestione delle autorizzazioni per utenti e gruppi. La funzionalità principale rimane la stessa dell’interfaccia classica, ma è più semplice ed efficiente. Per ulteriori informazioni, consulta l&#39;[articolo dedicato](/help/security/touch-ui-principal-view.md).
+
 ### Processo di rimozione aggiornato {#updated-deprecation-process}
 
 Adobe esamina regolarmente funzioni, librerie, API e configurazioni per garantire che soddisfino gli standard in termini di prestazioni, sicurezza e valore. Quando le funzionalità non soddisfano più questi standard, vengono contrassegnate come obsolete e l’utilizzo ne deve essere interrotto entro una data di rimozione specificata. In attesa di tale data, Adobe lo ricorderà alla clientela tramite notifiche e-mail e azioni da eseguire in Cloud Manager, prima di procedere con le nuove build o di distribuirne di nuove. La mancata adozione delle misure necessarie può comportare l’impossibilità di eseguire l’aggiornamento a nuove versioni di AEM, generando potenziali impatti su sicurezza, prestazioni, affidabilità e disponibilità.
@@ -222,7 +225,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime &#x200B;** Java 21** più performante.
+Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime **Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
