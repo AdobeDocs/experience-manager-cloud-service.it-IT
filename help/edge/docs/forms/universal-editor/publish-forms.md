@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [pubblicazione di moduli, Edge Delivery Services, configurazione dei moduli, CORS, filtro referrer]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # Pubblicare Forms adattivo con Edge Delivery Services
-
-## Panoramica
 
 La pubblicazione di un modulo adattivo ne consente l’accesso e l’invio da parte degli utenti finali su Edge Delivery Services. Questo processo prevede tre fasi principali: pubblicazione del modulo, configurazione delle impostazioni di protezione e accesso al modulo live.
 
@@ -28,29 +26,35 @@ La pubblicazione di un modulo adattivo ne consente l’accesso e l’invio da pa
 
 ## Prerequisiti
 
-- **Requisiti modulo:**
-   - Modulo adattivo creato utilizzando un modello di Edge Delivery Services
-   - Modulo testato e pronto per l’uso in produzione
+- Modulo adattivo creato utilizzando un modello di Edge Delivery Services
+- Modulo testato e pronto per l’uso in produzione
+- Autorizzazioni di authoring di AEM Forms
+- Accesso a Cloud Manager (per la configurazione di produzione)
+- Accesso degli sviluppatori al codice del blocco modulo (per la configurazione dell’invio)
 
-- **Requisiti di accesso:**
-   - Autorizzazioni di authoring di AEM Forms
-   - Accesso a Cloud Manager (per la configurazione di produzione)
-   - Accesso degli sviluppatori al codice del blocco modulo (per la configurazione dell’invio)
+## Panoramica del processo di pubblicazione
 
-- **Documentazione correlata:**
-   - [Creare moduli con Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Configurare le azioni di invio](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+La pubblicazione dei moduli in Edge Delivery Services segue un approccio in tre fasi:
 
-## Fase 1: Pubblicazione del modulo
+- **Fase 1: pubblicazione modulo** - Pubblica il modulo sul CDN e verifica lo stato di pubblicazione
+- **Fase 2: configurazione della sicurezza** - Impostazione dei criteri CORS e dei filtri di riferimento per gli invii sicuri
+- **Fase 3: accesso e convalida** - Verificare la funzionalità del modulo e convalidare il flusso di lavoro completo
 
-### Passaggio 1: avviare la pubblicazione
+Ogni fase si basa sulla precedente per garantire una distribuzione sicura e funzionale.
+
+### Fase 1: Pubblicazione del modulo
+
++++ Passaggio 1: avviare la pubblicazione
 
 1. **Accedi al modulo**: apri il modulo adattivo nell&#39;editor universale
 2. **Inizia pubblicazione**: fai clic sull&#39;icona **Pubblica** nella barra degli strumenti
 
    ![Fai clic su Pubblica](/help/forms/assets/publish-icon-eds-form.png)
 
-### Passaggio 2: rivedere e confermare
++++
+
+
++++ Passaggio 2: rivedere e confermare
 
 1. **Rivedi la pubblicazione delle risorse**: il sistema mostra tutte le risorse in fase di pubblicazione, compreso il modulo
 
@@ -61,7 +65,10 @@ La pubblicazione di un modulo adattivo ne consente l’accesso e l’invio da pa
 
    ![Pubblicazione completata](/help/forms/assets/publish-success.png)
 
-### Passaggio 3: verificare lo stato della pubblicazione
++++
+
+
++++ Passaggio 3: verificare lo stato della pubblicazione
 
 **Verifica stato**: fai di nuovo clic sull&#39;icona **Pubblica** per visualizzare lo stato corrente
 
@@ -73,7 +80,10 @@ La pubblicazione di un modulo adattivo ne consente l’accesso e l’invio da pa
 - Nessun messaggio di errore durante il processo di pubblicazione
 - Il modulo viene visualizzato nell’elenco delle risorse pubblicate
 
-### Gestione di Published Forms
++++
+
+
++++ Gestione di Published Forms
 
 **Per annullare la pubblicazione di un modulo:**
 
@@ -83,9 +93,12 @@ La pubblicazione di un modulo adattivo ne consente l’accesso e l’invio da pa
 
 ![Annulla pubblicazione modulo](/help/forms/assets/unpublish--form.png)
 
-## Fase 2: Configurare le impostazioni di protezione
++++
 
-### Perché è necessaria la configurazione della sicurezza
+
+### Fase 2: Configurare le impostazioni di protezione
+
++++ Perché è necessaria la configurazione della sicurezza
 
 Per abilitare l’invio sicuro dei moduli, devi configurare le impostazioni di protezione che:
 
@@ -98,7 +111,11 @@ Per abilitare l’invio sicuro dei moduli, devi configurare le impostazioni di p
 >
 >**Richiesto per la produzione**: queste configurazioni sono obbligatorie per l&#39;invio dei moduli in modo che funzionino negli ambienti di produzione.
 
-### Passaggio 1: configurare l’URL di invio del modulo
++++
+
+
+
++++ Passaggio 1: configurare l’URL di invio del modulo
 
 **Finalità**: invio diretto di moduli all&#39;istanza AEM
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - L’URL corrisponde all’ambiente (produzione, gestione temporanea o locale)
 - Nessuna barra finale nell’URL
 
-### Passaggio 2: configurare le impostazioni CORS
++++
+
+
+
++++ Passaggio 2: configurare le impostazioni CORS
 
 **Scopo**: Consenti richieste di invio moduli da domini Edge Delivery Services
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [Guida alla configurazione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Documentazione Filtro Referrer](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### Passaggio 3: configurare il filtro Referrer
++++
+
+
+
++++ Passaggio 3: configurare il filtro Referrer
 
 **Scopo**: limitare le operazioni di scrittura ai domini Edge Delivery Services autorizzati
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Configurare il filtro Referrer tramite Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## Fase 3: Accesso al modulo pubblicato
++++
 
-### Struttura URL per Edge Delivery Services
+
+### Fase 3: Accesso al modulo pubblicato
+
+
+
++++ Struttura URL per Edge Delivery Services
 
 **Formato URL standard:**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### Passaggi di convalida finali
++++
+
+
+
++++ Passaggi di convalida finali
 
 **Verifica accessibilità modulo:**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - I dati vengono visualizzati nella destinazione configurata (foglio di calcolo, e-mail, ecc.)
 - Nessun errore della console correlato a CORS o ai criteri di sicurezza
 
++++
+
 
 ## Passaggi successivi
 
-**Azioni immediate:**
-
-- Verifica accuratamente il modulo pubblicato
-- Monitorare i dati di invio dei moduli
-- Se necessario, configura il tracciamento delle analisi
-
-**Argomenti avanzati:**
 
 - [Configurare le azioni di invio dei moduli](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Personalizzare lo stile e il tema dei moduli](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [Aggiungere la protezione reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Creare layout di moduli reattivi](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## Riepilogo
 
-Hai completato correttamente:
-
-- Modulo adattivo pubblicato in Edge Delivery Services
-- Impostazioni di protezione configurate per l&#39;invio del modulo
-- Impostare l’accesso URL corretto per gli utenti finali
-- Funzionalità e accessibilità verificate dei moduli
-
-Il modulo è ora live e pronto per l’utilizzo in produzione.

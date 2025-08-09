@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 1%
 
 # Creare un Forms reattivo con Universal Editor
 
-Gli utenti accedono ai moduli su una vasta gamma di dispositivi, tra cui desktop, tablet e smartphone. La progettazione di moduli reattivi garantisce un’esperienza ottimale per tutti gli utenti, indipendentemente dal dispositivo. Questa guida spiega come progettare, testare e ottimizzare i moduli per qualsiasi dimensione di schermo utilizzando Universal Editor.
+Il panorama web moderno richiede forme che funzionino perfettamente in uno spettro sempre più ampio di dispositivi e dimensioni dello schermo. Dai monitor desktop di grandi dimensioni agli schermi compatti degli smartphone, gli utenti si aspettano esperienze coerenti e intuitive indipendentemente dal dispositivo scelto. La creazione di moduli reattivi non è più facoltativa, ma è un requisito fondamentale per offrire esperienze digitali professionali, accessibili e ottimizzate per la conversione.
 
+Universal Editor fornisce strumenti e metodologie completi per lo sviluppo di moduli reattivi che si adattano in modo intelligente a varie dimensioni dello schermo, metodi di input e contesti utente. Questa guida illustra le basi tecniche, le strategie di implementazione e le tecniche di ottimizzazione necessarie per creare moduli che offrono prestazioni eccezionali su tutti i dispositivi, mantenendo al contempo l’usabilità, l’accessibilità e l’impatto visivo.
 
 La creazione di moduli reattivi prevede due attività principali:
 
@@ -160,115 +161,116 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 ### Layout pannello
 
-**Scopo:** organizza i contenuti correlati in sezioni visivamente distinte che possono essere visualizzate contemporaneamente.
+Il layout del pannello organizza il contenuto correlato in sezioni visivamente distinte, consentendo agli utenti di visualizzare più sezioni contemporaneamente. Questo layout è ideale per i moduli con informazioni suddivise in categorie e che prevedono una presentazione affiancata su schermi più grandi.
 
 ![Esempio di layout pannello](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Comportamento reattivo:**
+**Comportamento reattivo**
 
-- **Desktop (1200px+):** pannelli affiancati o in griglia
-- **Tablet (768px-1199px):** i pannelli si sovrappongono verticalmente con la spaziatura
-- **Mobile (320px-767px):** layout a colonna singola con interruzioni di sezione cancellate
+- **Desktop (1200px e versioni successive):** i pannelli vengono visualizzati affiancati o in una griglia per ottenere la massima visibilità.
+- **Tablet (768px-1199px):** i pannelli si sovrappongono verticalmente con la spaziatura appropriata per mantenere la chiarezza.
+- **Mobile (320px-767px):** i pannelli sono presentati in un layout a colonna singola, con netta separazione tra le sezioni per una facile navigazione.
 
-**Passaggi di implementazione:**
+**Come implementare**
 
-1. Utilizza il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Raggruppa i campi correlati in ciascun pannello.
-3. Aggiungi intestazioni chiare per ogni sezione.
-4. Assicurati che vi sia una spaziatura adeguata tra i pannelli.
+1. Aggiungi il [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) al modulo.
+2. Raggruppa i campi correlati all’interno di ciascun pannello per mantenere un’organizzazione logica.
+3. Assegna intestazioni chiare e descrittive a ciascuna sezione del pannello.
+4. Assicurati che vi sia una spaziatura sufficiente tra i pannelli per evitare disagi visivi.
 
-**Best practice:**
+**Best practice**
 
-- Limita a 3-4 pannelli sul desktop per evitare di sopraffare gli utenti.
-- Utilizza titoli descrittivi per ciascun pannello.
-- Raggruppa i campi correlati in modo logico per ridurre il carico cognitivo.
-- Test della navigazione del pannello sui dispositivi touch.
+- Limita il numero di pannelli a 3 o 4 sul desktop per evitare di sopraffare gli utenti.
+- Utilizza titoli descrittivi e concisi per ciascun pannello, per aiutare l’utente a comprendere.
+- Organizza i campi all’interno dei pannelli in modo logico per ridurre al minimo il carico cognitivo.
+- Testa la navigazione del pannello sui dispositivi touch per assicurarne l’usabilità su tutte le piattaforme.
 
-**Casi d&#39;uso di esempio:**
+**Casi d&#39;uso comuni**
 
-- **Domanda di lavoro:** Informazioni personali, Istruzione, Esperienza, Riferimenti
-- **Registrazione prodotto:** Dettagli di base, Specifiche tecniche, Informazioni sulla garanzia
-- **Forms sondaggio:** Dati demografici, preferenze, feedback, contatto
+- **Domanda di lavoro:** sezioni per informazioni personali, istruzione, esperienza e riferimenti.
+- **Registrazione prodotto:** pannelli per informazioni di base, specifiche tecniche e garanzia.
+- **Forms sondaggio:** raggruppamenti per dati demografici, preferenze, feedback e informazioni di contatto.
 
 ### Layout procedura guidata
 
-**Finalità:** guida gli utenti attraverso processi complessi passo dopo passo, riducendo il carico cognitivo e migliorando i tassi di completamento.
+Il layout guidato guida gli utenti attraverso un processo con più passaggi, presentando una sezione alla volta. Questo layout è particolarmente efficace per le forme complesse, in quanto riduce il carico cognitivo e aumenta i tassi di completamento suddividendo il processo in passaggi gestibili.
 
 ![Esempio di layout guidato](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Comportamento reattivo:**
+**Comportamento reattivo**
 
-- **Tutti i dispositivi:** mantiene lo stato attivo in un unico passaggio per un&#39;esperienza mobile ottimale.
-- **Contenuto passaggio:** si adatta all&#39;interno di ogni passaggio (stacking o side-by-side).
-- **Navigazione:** pulsanti descrittivi con spaziatura sufficiente.
-- **Indicatore di avanzamento:** ridimensiona in modo appropriato le dimensioni dello schermo.
+- **Tutti i dispositivi:** mantiene lo stato attivo in un unico passaggio, il che è ottimale per gli utenti di dispositivi mobili.
+- **Contenuto passaggio:** ogni passaggio si adatta in modo dinamico, impilando i campi o disponendoli affiancati in base alle dimensioni dello schermo.
+- **Navigazione:** presenta pulsanti touch-screen con spazio adeguato per una facile interazione.
+- **Indicatore di avanzamento:** Le barre di avanzamento o gli indicatori di passaggio vengono scalati in modo appropriato per i diversi dispositivi, fornendo un feedback chiaro sullo stato di completamento.
 
-**Passaggi di implementazione:**
+**Come implementare**
 
-1. Utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Suddividi le forme complesse in fasi logiche (sono ottimali 3-7 fasi).
-3. Includi indicatori di progresso per l’orientamento degli utenti.
-4. Fornisce chiari controlli di navigazione (Avanti, Indietro, Salva).
+1. Inserire il [componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) nel modulo.
+2. Dividi la forma in passaggi logici, idealmente tra 3 e 7, per mantenere ogni passaggio mirato e gestibile.
+3. Aggiungi indicatori di progresso per aiutare gli utenti a comprendere la loro posizione nel processo.
+4. Fornisce controlli di navigazione chiari, ad esempio i pulsanti Avanti, Indietro e Salva.
 
-**Ottimizzazione mobile:**
+**Suggerimenti per l&#39;ottimizzazione mobile**
 
-- Utilizza destinazioni touch di grandi dimensioni (minimo 44 px) per i pulsanti di navigazione.
-- Assicurati che gli indicatori a gradino siano chiari e visibili sui piccoli schermi.
-- Limita il numero di campi per passaggio per ridurre lo scorrimento.
-- Abilita il salvataggio automatico per evitare la perdita di dati.
+- Utilizza destinazioni touch di grandi dimensioni (altezza minima 44 px) per i controlli di navigazione per migliorare l’accessibilità.
+- Assicurati che gli indicatori a gradino siano visibili e leggibili su schermi di piccole dimensioni.
+- Limita il numero di campi per passaggio per ridurre al minimo lo scorrimento e migliorare lo stato attivo.
+- Abilita la funzionalità di salvataggio automatico per evitare la perdita di dati se gli utenti lasciano il modulo.
 
-**Best practice:**
+**Best practice**
 
-- Garantire la progressione dei passaggi logici: ogni passaggio deve basarsi sul precedente.
-- Utilizza titoli chiari per i passaggi, in modo che gli utenti sappiano cosa aspettarsi.
-- Convalida l’input in ogni passaggio per rilevare gli errori in anticipo.
-- Consente agli utenti di spostarsi all’indietro per rivedere o modificare le informazioni.
+- Progetta i passaggi per seguire una progressione logica, con ogni passaggio che si basa sul precedente.
+- Utilizza titoli chiari e descrittivi per ogni passaggio per definire le aspettative dell’utente.
+- Convalida l’input dell’utente in ogni passaggio per rilevare gli errori in anticipo e ridurre la frustrazione.
+- Consente agli utenti di tornare indietro per rivedere o modificare le informazioni precedenti senza perdere dati.
 
-**Casi d&#39;uso di esempio:**
+**Casi d&#39;uso comuni**
 
-- **Indennizzi assicurativi:** Incidenti → Prove → Revisione → Personali
-- **Configurazione account:** Informazioni di base → Preferenze → Sicurezza → Conferma
-- **Processo ordine:** Prodotti → Spedizione → Riepilogo → pagamento
+- **Indennizzi assicurativi:** passaggi per i dettagli sull&#39;incidente, l&#39;invio di prove, le informazioni personali e la revisione.
+- **Configurazione account:** fasi per informazioni di base, preferenze, impostazioni di protezione e conferma.
+- **Processo ordine:** passaggi per la selezione del prodotto, le informazioni di spedizione, i dettagli del pagamento e il riepilogo dell&#39;ordine.
 
 ### Layout pannello a soffietto
 
-**Scopo:** consente di risparmiare spazio organizzando il contenuto in sezioni comprimibili, ideali per informazioni facoltative o secondarie.
+Il layout Pannello a soffietto consente di organizzare i contenuti in sezioni comprimibili, rendendoli ideali per le informazioni facoltative o secondarie. Questo layout è particolarmente efficace per i moduli con contenuto che può essere raggruppato logicamente e che non deve essere visualizzato contemporaneamente.
 
 ![Esempio di layout pannello a soffietto](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Comportamento reattivo:**
+**Comportamento reattivo**
 
-- **Prestazioni mobili eccellenti:** viene visualizzato solo il contenuto pertinente.
-- **Intestazioni ottimizzate per il tocco:** Tocca ed espandi le sezioni con facilità.
-- **Animazioni smussate:** fornire un feedback visivo per le interazioni.
-- **Riduzione dello spazio:** Riduce al minimo lo scorrimento su tutti i dispositivi.
+- **Prestazioni mobili:** solo la sezione pertinente viene espansa, riducendo la necessità di scorrere e migliorando i tempi di caricamento.
+- **Intestazioni ottimizzate per il tocco:** Le intestazioni di sezione sono facili da toccare ed espandere, e supportano i movimenti naturali sui dispositivi mobili.
+- **Animazioni smussate:** Le sezioni di espansione e compressione forniscono un feedback visivo per le interazioni dell&#39;utente.
+- **Efficienza dello spazio:** Le sezioni compresse riducono al minimo lo spazio verticale, semplificando la navigazione del modulo su tutti i dispositivi.
 
-**Passaggi di implementazione:**
+**Come implementare**
 
-1. Utilizza il [componente Pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Raggruppa contenuti facoltativi correlati in ogni sezione.
-3. Utilizza le intestazioni di sezione descrittive.
-4. Impostare gli stati di apertura/chiusura predefiniti appropriati.
+1. Aggiungi il [componente Pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) al modulo.
+2. Raggruppa contenuti facoltativi o secondari correlati all’interno di ogni sezione del Pannello a soffietto.
+3. Utilizza intestazioni chiare e descrittive per ogni sezione per aiutare gli utenti a comprendere quali informazioni sono contenute in.
+4. Impostare gli stati di apertura o chiusura predefiniti appropriati per ogni sezione in base alla rilevanza e alle esigenze dell&#39;utente.
 
-**Vantaggi per dispositivi mobili:**
+**Vantaggi per dispositivi mobili**
 
-- Riduce lo scorrimento comprimendo le sezioni inutilizzate.
-- Interazione intuitiva con gesti naturali di espansione/compressione.
-- Caricamento più rapido: è visibile solo il contenuto attivo.
-- Maggiore attenzione: gli utenti possono vedere solo ciò di cui hanno bisogno.
+- Riduce lo scorrimento comprimendo le sezioni inutilizzate, consentendo agli utenti di concentrarsi su una sezione alla volta.
+- L’interazione touch supporta i gesti di espansione/compressione naturali.
+- Caricamento più rapido, in quanto è visibile solo il contenuto attivo.
+- È stata migliorata la messa a fuoco, poiché gli utenti visualizzano solo le informazioni necessarie in un dato momento.
 
-**Best practice:**
+**Best practice**
 
-- Utilizza intestazioni di sezione chiare in modo che gli utenti sappiano cosa c’è dentro prima di espanderlo.
-- Raggruppa in modo logico il contenuto correlato all’interno di ogni sezione.
-- Imposta le sezioni importanti per iniziare espanse, se necessario.
-- Fornisci brevi anteprime di sezione per aiutare gli utenti a decidere cosa espandere.
+- Utilizza intestazioni di sezione chiare in modo che gli utenti sappiano cosa aspettarsi prima di espandere una sezione.
+- Raggruppa in modo logico i contenuti correlati all’interno di ogni sezione per facilitarne la comprensione.
+- Impostare le sezioni importanti in modo che inizino espanse se è richiesto un intervento immediato.
+- Fornisci brevi anteprime di sezioni o riepiloghi per aiutare gli utenti a decidere quali sezioni espandere.
 
-**Casi d&#39;uso di esempio:**
+**Casi d&#39;uso comuni**
 
-- **Configurazione prodotto:** Supporto → per accessori → di base → avanzati
-- **Domande frequenti su Forms:** Account → fatturazione → tecnico → Generale
-- **Impostazioni Forms:** Privacy → Notifiche → Aspetto → Avanzate
+- **Configurazione prodotto:** sezioni per le opzioni di base, le impostazioni avanzate, gli accessori e il supporto.
+- **Domande frequenti su Forms:** raggruppamenti per domande relative a account, fatturazione, tecniche e generali.
+- **Impostazioni Forms:** Sezioni per le opzioni Privacy, Notifiche, Aspetto e Avanzate.
+
 
 ## Parte 3: Best practice per la progettazione reattiva
 
@@ -276,42 +278,42 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++Ottimizzazione mobile (320px-767px)
 
-**Pratiche Essenziali:**
+**Layout e interazione:**
 
-- Utilizza un layout a colonna singola per tutto il contenuto.
-- Tasti touch-screen di grandi dimensioni (altezza minima 44 px).
-- Semplifica la navigazione con opzioni chiare &quot;Indietro/Avanti&quot;.
-- Riduci al minimo lo scorrimento all&#39;interno di ogni sezione.
-- Attiva automaticamente il primo campo per visualizzare la tastiera.
+- Utilizza un layout a colonna singola per tutto il contenuto del modulo per massimizzare la leggibilità e la facilità d’uso.
+- Assicurati che tutti i pulsanti e gli elementi interattivi abbiano un&#39;altezza di almeno 44 px per un&#39;interazione touch affidabile.
+- Navigazione semplice e chiara con pulsanti visibili sul retro e sul successivo.
+- Riduci al minimo la necessità di scorrere all’interno di ogni sezione suddividendo le forme lunghe.
+- Attiva automaticamente il primo campo di input per richiedere la tastiera mobile.
 
-**Linee Guida Specifiche Per Il Campo:**
+**Linee guida per i campi:**
 
-- **Input di testo:** Larghezza intera con spaziatura ampia.
-- **Elenchi a discesa:** Utilizza elementi di selezione nativi per migliorare l&#39;esperienza di contatto.
-- **Selettori data:** Utilizza input data nativi per la compatibilità mobile.
-- **Caricamenti di file:** Specificare aree di caricamento grandi e chiare.
+- I campi di testo devono coprire l’intera larghezza dello schermo con una spaziatura sufficiente per l’input tocco.
+- Utilizza elementi nativi a discesa/selezionati per un’usabilità mobile ottimale.
+- Implementa selettori data nativi per un’esperienza mobile coerente.
+- Aree di caricamento file grandi e chiaramente etichettate per un facile accesso.
 
 +++
 
 +++Ottimizzazione tablet (768px-1199px)
 
-**Strategie di layout:**
+**Layout e usabilità:**
 
-- Utilizza layout a due colonne per i campi correlati.
-- Verifica l&#39;orientamento sia verticale che orizzontale.
-- Supporto delle interazioni con il mouse e con il tocco.
-- Fornire aree di contenuto più ampie mantenendo al tempo stesso la leggibilità.
+- Utilizza layout a due colonne per i campi correlati per sfruttare lo spazio disponibile sullo schermo.
+- Verificate l&#39;aspetto e l&#39;usabilità del modulo sia in orientamento verticale che orizzontale.
+- Progettazione per il tocco e l&#39;input del mouse, garantendo l&#39;accesso facile a tutti i controlli.
+- Aumentare le dimensioni dell&#39;area del contenuto mantenendo una chiara gerarchia visiva e la leggibilità.
 
 +++
 
 +++Ottimizzazione desktop (1200 px+)
 
-**Funzioni avanzate:**
+**Funzioni e layout avanzati:**
 
-- Utilizzare layout a più colonne per un utilizzo efficiente dello spazio.
-- Scelte rapide da tastiera per gli utenti esperti.
-- Implementa gli stati al passaggio del mouse per il feedback interattivo.
-- Fornisci la convalida avanzata con messaggi di errore dettagliati.
+- Utilizza layout a più colonne per utilizzare in modo efficiente lo spazio orizzontale e ridurre lo scorrimento verticale.
+- Fornire scelte rapide da tastiera per azioni frequenti a supporto degli utenti esperti.
+- Implementa stati di passaggio del mouse e feedback visivo per gli elementi interattivi.
+- Offri la convalida avanzata con messaggi di errore chiari e dettagliati per i moduli complessi.
 
 +++
 
@@ -321,52 +323,52 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++Interruzioni layout modulo su dispositivi mobili
 
-**Cause comuni:**
+**Cause possibili:**
 
-- Elementi a larghezza fissa non scalabili
-- CSS progettato per layout desktop
-- Immagini o contenuti con overflow dei contenitori
+- Elementi a larghezza fissa che non si adattano a schermi più piccoli
+- CSS per desktop che sostituisce gli stili dei dispositivi mobili
+- Immagini o contenuti che traboccano dai loro contenitori
 
-**Soluzioni:**
+**Come correggere:**
 
-- Assicurati che le immagini e i contenitori siano scalabili in base alle dimensioni dello schermo.
-- Utilizza un design mobile-first con miglioramento progressivo.
-- Test con emulatori di dispositivi e dispositivi reali.
-- Utilizzare il dimensionamento flessibile invece di dimensioni fisse.
+- Assicurati che tutte le immagini e i contenitori utilizzino dimensioni relative o basate su percentuali.
+- Inizia con un approccio CSS mobile-first e posiziona i miglioramenti per schermi più grandi.
+- Testare i moduli utilizzando sia emulatori di dispositivi che dispositivi reali.
+- Evitare quote fisse; utilizzare layout flessibili.
 
 +++
 
-+++Destinazioni Touch troppo piccole
+Destinazioni +++Touch troppo piccole
 
-**Cause comuni:**
+**Cause possibili:**
 
-- Pulsanti inferiori a 44 px × 44 px
+- Pulsanti o collegamenti di dimensioni inferiori a 44 px per 44 px
 - Elementi interattivi troppo vicini tra loro
-- CSS personalizzato che sovrascrive i valori predefiniti touch
+- CSS personalizzato che riduce le dimensioni predefinite del target di contatto
 
-**Soluzioni:**
+**Come correggere:**
 
-- Assicurati che tutti gli elementi interattivi siano almeno 44 px × 44 px.
-- Aggiungi spaziatura tra pulsanti e collegamenti.
-- Verificare l&#39;interazione con le dita reali, non solo con il mouse.
-- Aumenta le aree di destinazione di contatto per toccare più facilmente.
+- Assicurati che ogni elemento interattivo sia di almeno 44 px per 44 px.
+- Aggiungere una spaziatura adeguata tra pulsanti, collegamenti e altri controlli.
+- Prova con dispositivi touch reali, non solo con un mouse.
+- Espandi le aree di destinazione di contatto in base alle esigenze di accessibilità.
 
 +++
 
 +++Problemi di overflow del contenuto
 
-**Cause comuni:**
+**Cause possibili:**
 
 - Testo lungo o etichette che non vanno a capo
-- Contenitori a larghezza fissa
-- Immagini che non vengono ridimensionate correttamente
+- Contenitori con larghezze fisse
+- Immagini che non sono scalabili in modo dinamico
 
-**Soluzioni:**
+**Come correggere:**
 
-- Abilita la disposizione del testo per i contenuti lunghi.
-- Utilizza immagini reattive scalabili in modo appropriato.
-- Implementare layout flessibili che si adattano ai contenuti.
-- Esegui il test con diverse lunghezze di contenuto.
+- Attiva la disposizione del testo per tutte le etichette e il contenuto.
+- Utilizza immagini reattive scalabili con il contenitore.
+- Progetta layout flessibili che si adattano a lunghezze di contenuto diverse.
+- Esegui test con contenuti brevi e lunghi per garantire adattabilità.
 
 +++
 
@@ -374,18 +376,18 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++Caricamento lento su dispositivi mobili
 
-**Cause comuni:**
+**Cause possibili:**
 
-- Immagini di grandi dimensioni non ottimizzate per i dispositivi mobili
-- Esecuzione eccessiva di JavaScript
+- Immagini grandi e non ottimizzate
+- JavaScript pesanti o eccessivi
 - Troppi campi modulo caricati contemporaneamente
 
-**Soluzioni:**
+**Come correggere:**
 
-- Ottimizza le immagini per diverse dimensioni dello schermo.
-- Caricare contenuti non critici solo quando necessario.
-- Utilizza tecniche per velocizzare il caricamento dei dispositivi mobili.
-- Riduci al minimo script e widget di terze parti.
+- Ottimizza le immagini per dispositivi mobili e utilizza i formati di file appropriati.
+- Differire o caricare lentamente contenuti non critici.
+- Riduci al minimo l’utilizzo di script e widget di terze parti.
+- Semplifica i campi modulo per caricare solo ciò che è necessario.
 
 +++
 
@@ -393,18 +395,18 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++Differenze tra emulatore e dispositivo reale
 
-**Cause comuni:**
+**Cause possibili:**
 
-- Differenze di rendering specifiche per il browser
-- Differenze di interazione tra tocco e mouse
-- Variazioni della velocità di rete
+- Differenze nei motori di rendering del browser
+- Interazione touch non accuratamente simulata con il mouse
+- Discrepanze nella velocità della rete
 
-**Soluzioni:**
+**Come correggere:**
 
-- Se possibile, eseguire il test sui dispositivi effettivi.
-- Utilizza più browser per testare l’emulatore.
-- Simulare diverse velocità di rete durante il test.
-- Convalida con utenti reali negli ambienti di destinazione.
+- Eseguire sempre il test su dispositivi reali oltre agli emulatori.
+- Utilizza più browser e dispositivi per test completi.
+- Simulare varie velocità di rete per identificare i colli di bottiglia delle prestazioni.
+- Raccogli feedback da utenti reali nel pubblico di destinazione.
 
 +++
 
@@ -412,33 +414,34 @@ I modelli di layout determinano il modo in cui il contenuto del modulo si adatta
 
 +++Indicatori prestazioni chiave
 
-**Metriche esperienza utente:**
+**Esperienza utente:**
 
-- **Percentuale di completamento modulo:** Target 85%+ su dispositivi mobili
-- **Tempo di completamento:** Il tempo di completamento mobile deve essere entro il 20% del desktop
-- **Frequenza errori:** meno del 5% di errori di convalida
-- **Punti di abbandono:** Identificare la destinazione degli utenti
+- **Percentuale di completamento modulo:** Esegui l&#39;85% o superiore sui dispositivi mobili.
+- **Tempo di completamento:** gli utenti mobili devono completare i moduli entro il 20% dei tempi di completamento del desktop.
+- **Frequenza errori:** Mantenere gli errori di convalida al di sotto del 5%.
+- **Punti di abbandono:** Identificare e indirizzare i passaggi in cui gli utenti si ritirano.
 
 **Prestazioni tecniche:**
 
-- **Tempo di caricamento pagina:** In meno di 3 secondi sulle reti 3G
-- **Core Web Vitals:** supera tutti i benchmark delle prestazioni Google
-- **Punteggio di accessibilità:** conformità WCAG 2.1 AA
-- **Compatibilità tra browser diversi:** 98%+ funzionalità tra browser principali
+- **Tempo di caricamento pagina:** Meno di 3 secondi in una connessione 3G.
+- **Core Web Vitals:** soddisfa o supera le soglie consigliate di Google.
+- **Accessibilità:** Raggiungere la conformità WCAG 2.1 AA.
+- **Compatibilità browser:** Garantire il 98%+ di funzionalità in tutti i principali browser.
 
 +++
 
 +++Elenco di controllo di prova
 
-**Prima della pubblicazione:**
+**Elenco di controllo pre-pubblicazione:**
 
-- Verifica il modulo su dispositivi mobili effettivi.
+- Verifica il modulo su dispositivi mobili effettivi (non solo emulatori).
 - Assicurati che tutte le destinazioni di contatto siano almeno 44 px × 44 px.
-- Verifica la leggibilità del testo a tutte le dimensioni dello schermo.
-- La convalida del modulo di conferma funziona su tutti i dispositivi.
-- Assicurati che il tempo di caricamento sia inferiore a 3 secondi su dispositivi mobili.
-- Verifica che tutti gli elementi interattivi siano accessibili.
+- Verifica la leggibilità del testo a tutte le dimensioni di schermo supportate.
+- La convalida del modulo di conferma funziona in modo coerente tra dispositivi e browser.
+- Assicurati che il tempo di caricamento mobile sia inferiore a 3 secondi.
+- Verifica che tutti gli elementi interattivi siano accessibili tramite la tastiera e gli assistenti vocali.
 - Verifica l’invio del modulo su tutti i dispositivi supportati.
+
 
 +++
 

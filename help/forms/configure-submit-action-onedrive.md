@@ -1,13 +1,13 @@
 ---
+title: Come inviare dati da un modulo adattivo a Microsoft&reg; OneDrive?
 description: Esplora il processo semplificato di connessione di AEM Forms con Microsoft&reg; OneDrive utilizzando l'azione di invio Invia a OneDrive. Scopri la guida dettagliata per configurare OneDrive e impostare le azioni di invio per l'archiviazione e il recupero efficienti dei dati
 keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, configurazione di OneDrive con AEM Forms
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---

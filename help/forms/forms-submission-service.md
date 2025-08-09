@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: b8b5937919dceb83a11b2fe359a9accec7012f81
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -19,18 +19,14 @@ ht-degree: 1%
 
 Il servizio di invio Forms è la soluzione ospitata di Adobe che memorizza automaticamente i dati di invio dei moduli direttamente nei fogli di calcolo preferiti: Google Sheets, Microsoft OneDrive o SharePoint. Questo elimina la necessità di complesse infrastrutture di back-end e fornisce al contempo la raccolta e la gestione dei dati in tempo reale.
 
->[!NOTE]
->
->**Programma di accesso anticipato:** Questa funzionalità è attualmente disponibile tramite accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) con i nomi dell&#39;organizzazione GitHub e dell&#39;archivio dall&#39;indirizzo ufficiale.
->
->**Esempio:** Per l&#39;archivio `https://github.com/adobe/abc`, invia: organizzazione = `adobe`, archivio = `abc`
+
 
 ## Panoramica
 
 ![Servizio di invio Forms](/help/forms/assets/form-submission-service.png)
 *Figura: flusso di lavoro del servizio di invio Forms - dall&#39;invio del modulo all&#39;archiviazione del foglio di calcolo*
 
-### Chi deve utilizzare questo servizio?
++++ Chi deve utilizzare questo servizio?
 
 **Ideale per:**
 
@@ -45,7 +41,9 @@ Il servizio di invio Forms è la soluzione ospitata di Adobe che memorizza autom
 - Integrazioni aziendali con i database
 - Forms che necessita di convalida o elaborazione avanzata
 
-### Casi d’uso comuni
++++
+
++++ Casi d’uso comuni
 
 | Caso d’uso | Esempio | Vantaggi del foglio di calcolo |
 |----------|---------|-------------------|
@@ -54,38 +52,54 @@ Il servizio di invio Forms è la soluzione ospitata di Adobe che memorizza autom
 | **Generazione lead** | Iscrizioni newsletter → SharePoint | Analisi di una campagna di marketing |
 | **Raccolta feedback** | Risposte ai sondaggi → fogli Google | Visualizzazione dati rapida |
 
++++
+
 ## Vantaggi principali
 
 Il servizio di invio Forms offre diversi vantaggi per una raccolta dati semplificata:
 
-### **Installazione semplificata**
+
+
++++ Configurazione semplificata
 
 - **Non è richiesta alcuna infrastruttura di back-end** - Adobe ospita l&#39;endpoint di invio
 - **Integrazione diretta** con piattaforme di fogli di calcolo più diffuse
 - **Mappatura automatica dei dati** dai campi modulo alle colonne del foglio di calcolo
 
-### **Gestione dati in tempo reale**
++++
+
+
++++ Gestione dei dati in tempo reale
 
 - **Acquisizione immediata dei dati** - gli invii vengono visualizzati immediatamente nel foglio di calcolo
 - **Archiviazione strutturata**: colonne organizzate per analisi semplificate
 - **Collaborazione in tempo reale** - più membri del team possono accedere e analizzare i dati
 
-### **Sicurezza e controllo degli accessi integrati**
++++
+
++++ Sicurezza e controllo degli accessi integrati
 
 - **Sfrutta le autorizzazioni esistenti** - utilizza i controlli di condivisione della piattaforma del foglio di calcolo
 - **Sicurezza gestita da Adobe** - endpoint di invio sicuro con protezione di livello enterprise
 - **Proprietà dei dati**: i dati rimangono nella piattaforma del foglio di calcolo scelta
 
++++
+
 ## Prerequisiti
 
 Prima di configurare il servizio di invio Forms, verificare di disporre dei seguenti elementi:
 
-### **Requisiti tecnici**
+
+
++++ Requisiti tecnici
 
 - **Archivio GitHub** configurato per il progetto Edge Delivery Services con il blocco Forms adattivo più recente installato
 - **Approvazione dell&#39;accesso** - repository aggiunto al inserisco nell&#39;elenco Consentiti di
 
-### **Installazione piattaforma foglio di calcolo**
++++
+
++++ Configurazione piattaforma foglio di calcolo
+
 
 Scegli una delle piattaforme supportate:
 
@@ -93,33 +107,41 @@ Scegli una delle piattaforme supportate:
 - **Microsoft OneDrive** - Account Microsoft 365 con accesso a Excel Online
 - **SharePoint** - Accesso a SharePoint con autorizzazioni elenco/raccolta
 
-### **Autorizzazioni e accesso**
++++
+
++++ Autorizzazioni e accesso
 
 - **Modifica autorizzazioni** per il foglio di calcolo di destinazione
 - **Funzionalità di condivisione** per concedere l&#39;accesso a `forms@adobe.com`
 - **Autorizzazioni generazione collegamenti** per la piattaforma scelta
 
++++
+
 >[!TIP]
 >
->**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
+>**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
 
 ## Metodi di configurazione
 
 Il servizio di invio Forms offre due approcci di configurazione. Scegli il metodo più adatto al tuo flusso di lavoro:
 
-### Scegli il metodo di configurazione
+
++++ Scegli il metodo di configurazione
 
 | Metodo | Ideale per | Tempo richiesto | Livello tecnico |
 |--------|----------|---------------|-----------------|
 | **[Installazione manuale](#manual-configuration)** | Creatori di contenuti, configurazione una tantum | 10-15 minuti | Principiante |
 | **[Configurazione API](#api-configuration)** | Sviluppatori, flussi di lavoro automatizzati | 5-10 minuti | Intermedio |
 
-### Configurazione del progetto
++++
+
++++ Configurazione del progetto
 
 Prima di configurare uno di questi metodi, assicurati che le basi del progetto AEM siano pronte:
 
-1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-1. **Aggiorna`fstab.yaml`** nella directory principale del progetto:
+1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+
+2. **Aggiorna`fstab.yaml`** nella directory principale del progetto:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -127,7 +149,10 @@ Prima di configurare uno di questi metodi, assicurati che le basi del progetto A
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-1. **Condividi la cartella del progetto** con `forms@adobe.com` (sono necessarie le autorizzazioni di modifica)
+
+3. **Condividi la cartella del progetto** con `forms@adobe.com` (sono necessarie le autorizzazioni di modifica)
+
++++
 
 ## Configurazione manuale
 
@@ -136,16 +161,18 @@ Prima di configurare uno di questi metodi, assicurati che le basi del progetto A
 
 Segui queste istruzioni dettagliate per configurare il modulo con l’invio di un foglio di calcolo:
 
-### Passaggio 1: creare la definizione del modulo
+
+
++++ Passaggio 1: creare la definizione del modulo
 
 Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 
 **Passaggi per la creazione del modulo:**
 
 1. **Apri la piattaforma del foglio di calcolo** (fogli di Google o Microsoft Excel)
-1. **Crea un nuovo foglio di calcolo** per il progetto modulo
-1. **Denomina il foglio** (deve essere `helix-default` o `shared-aem`)
-1. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+2. **Crea un nuovo foglio di calcolo** per il progetto modulo
+3. **Denomina il foglio** (deve essere `helix-default` o `shared-aem`)
+4. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definizione modulo](/help/forms/assets/form-submission-definition.png)
 *Esempio: definizione modulo con tipi di campo, etichette e regole di convalida*
@@ -167,16 +194,18 @@ Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 - Il foglio è denominato correttamente (`helix-default` o `shared-aem`)
 - I tipi di campo e le regole di convalida sono configurati correttamente
 
-### Passaggio 2: creare il foglio di raccolta dati
++++
+
++++ Passaggio 2: creare il foglio di raccolta dati
 
 Imposta un foglio dedicato per ricevere i dati di invio del modulo.
 
 **Impostazione foglio dati:**
 
 1. **Aggiungi un nuovo foglio** al foglio di calcolo esistente
-1. **Denomina il foglio esattamente`incoming`** (distinzione maiuscole/minuscole)
-1. **Configura intestazioni di colonna** corrispondenti ai campi modulo
-1. **Salvare il foglio di calcolo** per assicurarsi che le modifiche vengano mantenute
+2. **Denomina il foglio esattamente`incoming`** (distinzione maiuscole/minuscole)
+3. **Configura intestazioni di colonna** corrispondenti ai campi modulo
+4. **Salvare il foglio di calcolo** per assicurarsi che le modifiche vengano mantenute
 
 ![Foglio in ingresso](/help/forms/assets/form-submission-incoming-sheet.png)
 *Esempio: foglio in ingresso con intestazioni di colonna corrispondenti ai campi modulo*
@@ -201,24 +230,23 @@ Imposta un foglio dedicato per ricevere i dati di invio del modulo.
 >
 >**Suggerimento pro:** copia i nomi di campo esatti dalla definizione del modulo per garantire una corrispondenza perfetta tra i campi modulo e le colonne del foglio di calcolo.
 
-### Passaggio 3: condividere un foglio di calcolo con Adobe Service
++++
+
++++ Passaggio 3: condividere un foglio di calcolo con Adobe Service
 
 Concedi al servizio Adobe Forms Submission l’accesso al tuo foglio di calcolo.
 
 **Processo di condivisione:**
 
 1. **Fai clic sul pulsante Condividi** nell&#39;angolo superiore destro del foglio di calcolo
-1. **Aggiungere l&#39;account del servizio Adobe:**
-
+2. **Aggiungere l&#39;account del servizio Adobe:**
    - E-mail: `forms@adobe.com`
    - Livello di autorizzazione: **Editor** (obbligatorio per la scrittura dei dati)
-
-1. **Invia l&#39;invito alla condivisione**
-1. **Copia il collegamento del foglio di calcolo** per il passaggio successivo
+3. **Invia l&#39;invito alla condivisione**
+4. **Copia il collegamento del foglio di calcolo** per il passaggio successivo
 
    ![Condividi foglio in ingresso](/help/forms/assets/form-submission-share-incoming.png)
-
-*Processo di condivisione passo per passo per concedere l&#39;accesso al servizio Adobe*
+   *Processo di condivisione passo per passo per concedere l&#39;accesso al servizio Adobe*
 
 **Istruzioni Specifiche Per La Piattaforma:**
 
@@ -243,26 +271,27 @@ Concedi al servizio Adobe Forms Submission l’accesso al tuo foglio di calcolo.
 - Il collegamento al foglio di calcolo viene copiato e pronto per l&#39;uso
 - Le autorizzazioni di condivisione consentono l&#39;accesso esterno
 
-### Passaggio 4: connettere il modulo al foglio di calcolo
++++
+
++++ Passaggio 4: connettere il modulo al foglio di calcolo
 
 Collegare la definizione del modulo al foglio di calcolo di invio.
 
 **Connessione Foglio Di Calcolo Modulo:**
 
 1. **Apri il foglio di calcolo di definizione modulo** (quello con `helix-default` o `shared-aem` foglio)
-1. **Individua la riga del campo Invia** nella definizione del modulo
-1. **Incolla il collegamento del foglio di calcolo copiato** nella colonna **Azione** per il campo Invia
-1. **Salva le modifiche** nella definizione del modulo
+2. **Individua la riga del campo Invia** nella definizione del modulo
+3. **Incolla il collegamento del foglio di calcolo copiato** nella colonna **Azione** per il campo Invia
+4. **Salva le modifiche** nella definizione del modulo
 
    ![Collega un foglio di calcolo](/help/forms/assets/form-submission-sheet-linking.png)
-
-*Esempio: connessione dell&#39;azione di invio al foglio di calcolo della raccolta dati*
+   *Esempio: connessione dell&#39;azione di invio al foglio di calcolo della raccolta dati*
 
 **Pubblicazione del modulo:**
 
 1. **Apri AEM Sidekick** nel browser
-1. **Visualizza l&#39;anteprima del modulo** per verificare la configurazione
-1. **Pubblica il modulo** per renderlo attivo
+2. **Visualizza l&#39;anteprima del modulo** per verificare la configurazione
+3. **Pubblica il modulo** per renderlo attivo
 
 **Convalida finale:**
 
@@ -280,11 +309,14 @@ Collegare la definizione del modulo al foglio di calcolo di invio.
 - [Completare il foglio di calcolo di esempio](/help/forms/assets/spreadsheet.xlsx) con la configurazione corretta
 - [Documentazione di AEM Sidekick](https://www.aem.live/docs/sidekick) per istruzioni sulla pubblicazione
 
++++
+
 ## Configurazione API
 
 Il metodo API consente agli sviluppatori di inviare in modo programmatico i dati al servizio di invio Forms, ideale per flussi di lavoro automatizzati e integrazioni personalizzate.
 
-### Quando utilizzare l’API
+
++++ Quando utilizzare l’API
 
 **Ideale per:**
 
@@ -293,7 +325,9 @@ Il metodo API consente agli sviluppatori di inviare in modo programmatico i dati
 - Integrazione con le applicazioni esistenti
 - Flussi di lavoro per l’invio di dati in blocco
 
-### Prerequisiti API
++++
+
++++ Prerequisiti API
 
 Prima di utilizzare l’API, assicurati di disporre di:
 
@@ -312,7 +346,9 @@ Prima di utilizzare l’API, assicurati di disporre di:
 >- `forms@adobe.com` deve avere accesso come editor
 >- Il foglio deve essere pubblicato tramite AEM Sidekick
 
-### Endpoint API e autenticazione
++++
+
++++ Endpoint API e autenticazione
 
 **URL di base:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 
@@ -323,45 +359,46 @@ Prima di utilizzare l’API, assicurati di disporre di:
 
 **Documentazione API:** [Riferimento API completo](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
-### Utilizzo di Postman
++++
+
++++ Utilizzo di Postman
 
 Postman fornisce un’interfaccia intuitiva per testare gli invii API.
 
 **Istruzioni di installazione:**
 
 1. **Crea una nuova richiesta POST** in Postman
-1. **Configura l&#39;endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-1. **Sostituisci segnaposto:**
-
+2. **Configura l&#39;endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **Sostituisci segnaposto:**
    - `{id}` → l&#39;ID modulo effettivo
    - `[repository]` → nome archivio GitHub
    - `[organization]` → nome utente/organizzazione GitHub
 
 **Configurazione richiesta:**
 
-```json
-POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+    &quot;json
+PUBBLICA https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Headers:
+Intestazioni:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main--your-repo--your-org
+x-adobe-routing: tier=live,bucket=main—your-repo—your-org
 
-Body (JSON):
+Corpo (JSON):
 {
-        "data": {
-            "startDate": "2025-01-10",
-            "endDate": "2025-01-25",
-            "destination": "Australia",
-            "class": "First Class",
-            "budget": "2000",
-            "amount": "1000000",
-            "name": "Mary",
-            "age": "35",
-            "subscribe": null,
-            "email": "mary@gmail.com"
-                }
+&quot;data&quot;: {
+&quot;startDate&quot;: &quot;2025-01-10&quot;,
+&quot;endDate&quot;: &quot;2025-01-25&quot;,
+&quot;destinazione&quot;: &quot;Australia&quot;,
+&quot;class&quot;: &quot;First Class&quot;,
+&quot;bilancio&quot;: &quot;2000&quot;,
+&quot;amount&quot;: &quot;1000000&quot;,
+&quot;name&quot;: &quot;Mary&quot;,
+&quot;age&quot;: &quot;35&quot;,
+&quot;subscribe&quot;: null,
+&quot;email&quot;: &quot;mary@gmail.com&quot;
 }
-```
+}
+&quot;
 
 **Risposta prevista:**
 
@@ -371,7 +408,9 @@ Body (JSON):
 ![schermata postman](/help/forms/assets/postman-api.png)
 *Esempio: invio API riuscito tramite interfaccia Postman*
 
-### Utilizzo della riga di comando (curl)
++++
+
++++ Utilizzo della riga di comando (curl)
 
 Per gli sviluppatori che preferiscono terminale/prompt dei comandi, utilizza curl per inviare i dati a livello di programmazione.
 
@@ -405,10 +444,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
->[!TAB Prompt dei comandi di Windows]
-
+>[!TAB Windows Command Prompt]
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -438,13 +477,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### Risposta e verifica API
++++
 
-**Risposta corretta:**
++++ API Response & Verification
+
+**Successful Response:**
 
 ```http
 HTTP/1.1 201 Created
@@ -470,9 +511,13 @@ Dopo un invio corretto, verifica che i dati vengano visualizzati nel foglio di c
 - **Dati visualizzati** nel foglio `incoming` in pochi secondi
 - **Tutti i campi modulo** sono mappati correttamente alle colonne del foglio di calcolo
 
++++
+
 ## Risoluzione di problemi
 
-### Problemi comuni e soluzioni
+
+
++++ Problemi comuni e soluzioni
 
 **Problema: Errore 403 Non Consentito**
 
@@ -518,7 +563,9 @@ Solutions:
 ```
 
 
-### Ottenimento della Guida
++++
+
++++ Ottenimento della Guida
 
 **Canali di supporto:**
 
@@ -526,24 +573,33 @@ Solutions:
 - **Documentazione API:** [Riferimento sviluppatore](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 - **Supporto community:** [Community Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
 
++++
+
 ## Passaggi successivi
 
 Ora che hai configurato il servizio di invio Forms, scopri i seguenti argomenti correlati:
 
-### **Migliora Forms**
 
-- **[Crea Forms avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
++++ Migliora il tuo Forms
+
+- **[Crea Forms avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
 - **[Guida ai componenti del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Esplora i tipi di campo modulo disponibili
 
-### **Metodi di invio alternativi**
++++
+
++++ Metodi di invio alternativi
 
 - **[Invii di pubblicazione AEM](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)** - Per flussi di lavoro complessi e integrazioni aziendali
 - **[Azioni di invio personalizzate](/help/forms/configure-submit-actions-core-components.md)** - Gestione avanzata dell&#39;invio
 
-### **Gestione dati**
++++
+
++++ Gestione dati
 
 - **[Analisi modulo](/help/forms/view-understand-aem-forms-analytics-reports.md)** - Monitora prestazioni e utilizzo modulo
 - **[Integrazione dei dati](/help/forms/configure-data-sources.md)** - Connessione dei moduli a database e sistemi di gestione delle relazioni con i clienti
+
++++
 
 ## Riepilogo
 
@@ -555,4 +611,4 @@ Il servizio di invio Forms fornisce una soluzione potente e senza codice per la 
 - **Accesso API** - Funzionalità di invio programmatiche
 - **Sicurezza aziendale** - Endpoint gestiti da Adobe con controlli di accesso
 
-**Inizio?*** Segui la [guida alla configurazione manuale](#manual-configuration) per una configurazione visiva oppure passa alla [configurazione API](#api-configuration) per l&#39;integrazione programmatica.
+**Inizio?** Segui la [guida alla configurazione manuale](#manual-configuration) per una configurazione visiva, oppure passa alla [configurazione API](#api-configuration) per l&#39;integrazione programmatica.

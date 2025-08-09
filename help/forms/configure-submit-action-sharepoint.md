@@ -1,13 +1,13 @@
 ---
+title: Come si inviano i dati a un archivio SharePoint all’invio di un modulo adattivo?
 description: Scopri come inviare dati dal modulo adattivo a un archivio SharePoint, ad esempio un elenco SharePoint o una raccolta documenti, quando invii il modulo.
 keywords: Come connettere l'elenco di SharePoint per un modulo adattivo?, Come connettere la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l'azione Invia a SharePoint in un modulo adattivo, Connettere un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '242'
 ht-degree: 3%
 
 ---

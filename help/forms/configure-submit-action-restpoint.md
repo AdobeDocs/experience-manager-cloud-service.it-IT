@@ -1,14 +1,14 @@
 ---
+title: Come si configura l’azione di invio Invia a endpoint REST per un modulo adattivo?
 description: Scopri i passaggi per impostare l’endpoint REST durante l’invio di un modulo adattivo.
 keywords: Endpoint REST di AEM Forms, invia all’endpoint REST, invia dati all’URL REST, configura azione endpoint REST
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 13%
+source-wordcount: '1471'
+ht-degree: 14%
 
 ---
 
@@ -115,13 +115,13 @@ Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL
 
    Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
-   +++
++++
 
    +++Configurazione
 
    Questa opzione consente di aggiungere una configurazione HTTP predefinita gestita tramite il browser configurazioni di AEM. È possibile selezionare la configurazione creata per il tipo di autenticazione dell&#39;endpoint REST del servizio e i tipi di contenuto. Per ulteriori informazioni sul tipo di autenticazione e sui tipi di contenuto, visita [configura origini dati](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Fai clic su **[!UICONTROL Fine]**.
 
@@ -172,13 +172,13 @@ Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL
 
    Puoi anche **[!UICONTROL abilitare la richiesta POST]** e fornire un URL per pubblicare la richiesta. Per inviare i dati al server AEM che ospita il modulo, utilizza un percorso relativo corrispondente al percorso principale del server AEM. Ad esempio, `/content/forms/af/SampleForm.html`. Per inviare dati a qualsiasi altro server, utilizzare il percorso assoluto.
 
-   +++
++++
 
    +++Configurazione
 
    Questa opzione consente di aggiungere una configurazione HTTP predefinita gestita tramite il browser configurazioni di AEM. È possibile selezionare la configurazione creata per il tipo di autenticazione dell&#39;endpoint REST del servizio e i tipi di contenuto. Per ulteriori informazioni sul tipo di autenticazione e sui tipi di contenuto, visita [configura origini dati](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-   +++
++++
 
 1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**.
 

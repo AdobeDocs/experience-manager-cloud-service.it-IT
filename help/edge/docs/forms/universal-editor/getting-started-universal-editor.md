@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 1%
 
 ---
@@ -48,25 +48,25 @@ Seleziona l’approccio che corrisponde allo scenario:
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di avere i seguenti elementi:
+Per garantire un’esperienza fluida e di successo con Edge Delivery Services per AEM Forms utilizzando Universal Editor, rivedi e conferma i seguenti prerequisiti prima di procedere:
 
-### Accesso richiesto
+### Requisiti di accesso
 
-- **Account GitHub** con autorizzazione per la creazione di archivi
-- Accesso di authoring **AEM as a Cloud Service**
+- **Account GitHub**: per creare nuovi archivi è necessario disporre di un account GitHub con autorizzazioni. Questo è essenziale per gestire il codice sorgente del progetto e collaborare con il team.
+- **Accesso all&#39;authoring di AEM as a Cloud Service**: assicurati di disporre dell&#39;accesso a livello di autore al tuo ambiente AEM as a Cloud Service. Questo accesso è necessario per creare, modificare e pubblicare i moduli.
 
 ### Requisiti tecnici
 
-- **Nozioni di base su Git**: operazioni di clonazione, commit e push
-- **Tecnologie web**: nozioni di base su HTML, CSS e JavaScript
-- **Node.js** (versione 16+ consigliata) per lo sviluppo locale
-- Gestione pacchetti **npm** o **yarn**
+- **Familiarità con Git**: è consigliabile eseguire operazioni Git di base quali la clonazione degli archivi, il commit delle modifiche e il push degli aggiornamenti. Queste competenze sono fondamentali per il controllo del codice sorgente e la collaborazione nei progetti.
+- **Informazioni sulle tecnologie Web**: si consiglia di utilizzare HTML, CSS e JavaScript. Queste tecnologie sono alla base della personalizzazione dei moduli e della risoluzione dei problemi.
+- **Node.js (versione 16 o successiva)**: Node.js è necessario per lo sviluppo locale e per l&#39;esecuzione di strumenti di compilazione. Verificare che nel sistema sia installata la versione 16 o successiva.
+- **Gestione pacchetti (npm o yarn)**: per gestire le dipendenze e gli script del progetto sarà necessario npm (Gestione pacchetti nodi) o yarn.
 
-### Conoscenza consigliata
+### Sfondo consigliato
 
-- Nozioni di base sui concetti di AEM Sites
-- Familiarità con i principi di progettazione dei moduli
-- Esperienza con gli editor di WYSIWYG
+- **Concetti di AEM Sites**: una conoscenza di base di AEM Sites, inclusa la struttura del sito e l&#39;authoring dei contenuti, ti aiuterà a navigare e integrare i moduli in modo efficace.
+- **Principi per la progettazione dei moduli**: la familiarità con le best practice per la progettazione dei moduli, quali usabilità, accessibilità e convalida dei dati, consente di creare moduli efficaci e di facile utilizzo.
+- **Esperienza con gli editor di WYSIWYG**: l&#39;esperienza precedente con gli editor di What You See Is What You Get (WYSIWYG) ti aiuterà a sfruttare le funzionalità di authoring visivo di Universal Editor in modo più efficiente.
 
 >[!TIP]
 >
@@ -74,19 +74,21 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 
 ## Percorso A: Creare un nuovo progetto con Forms
 
-**Ideale per:** nuove implementazioni o prove di concetti
+**Consigliato per:** nuovi progetti, progetti pilota o iniziative di verifica
 
-AEM Forms Boilerplate fornisce un modello preconfigurato con Adaptive Forms Block integrato.
+Sfrutta AEM Forms Boilerplate per accelerare la configurazione del progetto. Questo modello offre un modello pronto all’uso che integra perfettamente il blocco Forms adattivo, consentendo di creare e distribuire rapidamente i moduli all’interno del sito AEM.
 
-### Panoramica dei passaggi
+### Panoramica
 
-1. Configurare un archivio GitHub dal modello
-2. Installare AEM Code Sync
-3. Configurare la connessione al progetto AEM
-4. Creare e pubblicare un sito AEM
-5. Aggiungere moduli tramite l’Editor universale
+Per avviare correttamente il nuovo progetto con moduli integrati:
 
-Passiamo ad ogni passaggio:
+1. Crea un archivio GitHub utilizzando il modello standard di AEM Forms.
+2. Configura AEM Code Sync per automatizzare la sincronizzazione dei contenuti tra AEM e l’archivio.
+3. Configura la connessione tra il progetto GitHub e l’ambiente AEM.
+4. Stabilisci e pubblica un nuovo sito AEM.
+5. Aggiungi e gestisci i moduli tramite l’Editor universale.
+
+Le sezioni seguenti ti guideranno nei dettagli di ogni passaggio, garantendo un’esperienza di configurazione del progetto fluida ed efficiente.
 
 +++Passaggio 1: creare l’archivio GitHub dal modello
 
@@ -182,9 +184,9 @@ Il file `fstab.yaml` collega l&#39;archivio GitHub all&#39;ambiente di authoring
 
 **Convalida:** Conferma la connessione dell&#39;archivio GitHub ad AEM.
 
-    >[ !NOTA]
+    >[!NOTA]
     >
-    >Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
+>Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -320,20 +322,26 @@ Se disponi già di un progetto AEM che utilizza Edge Delivery Services, puoi agg
 
 ### Prerequisiti per il percorso B
 
-- Progetto AEM esistente creato con [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
-- Configurazione dell’ambiente di sviluppo locale
-- Accesso Git all’archivio del progetto
+Per procedere con l’integrazione dei moduli nel progetto AEM esistente, assicurati di soddisfare i seguenti prerequisiti:
 
-**Utilizzo di AEM Forms Boilerplate?** Se il progetto è stato creato con [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), i moduli sono già integrati. Passa a [Crea il primo modulo](#create-your-first-form).
+- È presente un progetto AEM creato con [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+- Hai configurato [un ambiente di sviluppo locale](#set-up-local-development-environment)
+- Puoi accedere a Git nell’archivio dei progetti, per poter clonare, modificare e inviare le modifiche in base alle esigenze.
 
-Passiamo ad ogni passaggio:
+>[!NOTE]
+>
+> Se il progetto è stato originariamente configurato utilizzando [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), la funzionalità del modulo è già inclusa. In questo caso, è possibile passare alla sezione [Crea il primo modulo](#create-your-first-form).
 
-### Panoramica dei passaggi
+La guida seguente fornisce un approccio strutturato per aggiungere funzionalità di modulo al progetto esistente. Ogni fase è progettata per garantire un&#39;integrazione perfetta e funzionalità ottimali nell&#39;ambiente Universal Editor.
 
-1. Copiare file di blocco Forms adattivi
-2. Aggiorna configurazione progetto
-3. Configurare le regole ESLint
-4. Generare e confermare le modifiche
+### Panoramica
+
+Completa i seguenti passaggi di alto livello:
+
+1. Copia i file del blocco Forms adattivo nel progetto.
+2. Aggiorna la configurazione del progetto per riconoscere e supportare i componenti del modulo.
+3. Regola le regole ESLint per adattarle ai nuovi file e modelli di codifica.
+4. Crea il progetto e conferma le modifiche nell’archivio.
 
 +++Passaggio 1: copiare i file di blocco di Forms
 
@@ -494,19 +502,31 @@ Passiamo ad ogni passaggio:
 
 ## Creare il primo modulo
 
-**Si applica a:** utenti sia percorso A che percorso B
+**Chi deve seguire questa sezione:**\
+Questa sezione è pertinente per gli utenti che seguono il Percorso A (nuovo progetto) o il Percorso B (progetto esistente).
 
-Ora che il progetto è configurato con funzionalità di modulo, creiamo il primo modulo utilizzando l’interfaccia WYSIWYG di Universal Editor.
+Con il progetto ora predisposto per la creazione di moduli, puoi creare il primo modulo utilizzando l’ambiente di authoring WYSIWYG intuitivo di Universal Editor. I passaggi seguenti forniscono un approccio strutturato alla progettazione, configurazione e pubblicazione di un modulo all’interno del sito AEM.
 
-### Panoramica del processo di creazione dei moduli
+### Panoramica
 
-1. **Aggiungi il blocco modulo adattivo** alla pagina
-2. **Aggiungi componenti modulo** (input testo, pulsanti, ecc.)
-3. **Configura proprietà componente**
-4. **Anteprima e verifica** il modulo
-5. **Pubblica** la pagina aggiornata
+Il processo di creazione di un modulo in Universal Editor consiste in diverse fasi chiave:
 
-Passiamo ad ogni passaggio:
+1. **Inserire il blocco del modulo adattivo**\
+   Inizia aggiungendo il blocco di modulo adattivo alla pagina scelta.
+
+2. **Aggiungi componenti modulo**\
+   Compilare il modulo inserendo componenti quali campi di testo, pulsanti e altri elementi di input.
+
+3. **Configura proprietà componente**\
+   Regola le impostazioni e le proprietà di ciascun componente in base ai requisiti del modulo.
+
+4. **Anteprima e verifica del modulo**\
+   Utilizza la funzionalità di anteprima per convalidare l’aspetto e il comportamento del modulo prima della pubblicazione.
+
+5. **Pubblica la pagina aggiornata**\
+   Una volta completata l’operazione, pubblica la pagina per rendere il modulo disponibile agli utenti finali.
+
+Nelle sezioni seguenti verranno descritti in dettaglio tutti i passaggi, per garantire un’esperienza di creazione dei moduli fluida ed efficace.
 
 +++Passaggio 1: aggiungere un blocco di modulo adattivo
 
@@ -695,7 +715,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-+++Problemi relativi alla build di GitHub
+Problemi relativi alla build di +++GitHub
 
 **Problema:** errori di compilazione o di puntamento
 
@@ -760,7 +780,7 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
-+++Problemi relativi alla funzionalità dei moduli
+Problemi relativi alla funzionalità dei +++moduli
 
 **Problema:** invii modulo non funzionanti
 

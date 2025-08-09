@@ -4,10 +4,10 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 97%
+source-wordcount: '1670'
+ht-degree: 40%
 
 ---
 
@@ -16,44 +16,67 @@ ht-degree: 97%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 -->
 
-I moduli includono spesso sezioni comuni come informazioni di contatto, dettagli di identificazione o accordi di consenso. Gli sviluppatori di moduli creano queste sezioni ogni volta che realizzano un nuovo modulo e si trovano quindi a dover eseguire operazioni lunghe e ripetitive.
-Per eliminare operazioni duplicate, l’editor universale consente di creare una sola volta segmenti di modulo riutilizzabili, ad esempio pannelli o gruppi di campi, e di applicarli a vari moduli. Questi segmenti riutilizzabili, modulari e autonomi sono denominati frammenti di modulo. Lo stesso frammento del contatto di emergenza, ad esempio, può essere utilizzato in diverse sezioni di un modulo, ad esempio nei dettagli di contatto del dipendente e del supervisore.
+I frammenti di modulo sono componenti riutilizzabili che eliminano il lavoro di sviluppo ripetitivo e garantiscono la coerenza tra i moduli dell’organizzazione. Invece di ricreare sezioni comuni come informazioni di contatto, dettagli sull’indirizzo o accordi di consenso per ogni modulo, puoi creare questi elementi una volta come frammenti e riutilizzarli in più moduli.
 
-Alla fine dell’articolo avrai appreso come creare e utilizzare frammenti nei moduli mediante l’editor universale.
+**Operazioni da eseguire in questo articolo:**
 
-## Caratteristiche dei frammenti di modulo di Edge Delivery Services
+- Comprendere il valore aziendale e le funzionalità tecniche dei frammenti di modulo
+- Creare frammenti di modulo riutilizzabili tramite Editor universale
+- Integrare frammenti nei moduli esistenti con la configurazione corretta
+- Gestire il ciclo di vita dei frammenti e mantenere la coerenza tra i moduli
 
-- **Mantenimento della coerenza a livello di frammenti di modulo**
-Puoi integrare i frammenti in moduli diversi per mantenere layout coerenti e contenuti standardizzati.
+**Vantaggi aziendali:**
 
-  >[!NOTE]
-  >
-  > Con l’approccio “cambia una volta, rifletti ovunque”, qualsiasi aggiornamento effettuato su un frammento si applica automaticamente a tutti i moduli in modalità Anteprima. Tuttavia, in modalità Pubblicazione, devi pubblicare il frammento o ripubblicare il modulo affinché le modifiche si riflettano.
+- **Tempo di sviluppo ridotto**: creazione di sezioni di moduli comuni una sola volta e riutilizzo ovunque
+- **Maggiore coerenza**: layout e contenuti standardizzati in tutti i moduli
+- **Manutenzione semplificata**: aggiorna un frammento una volta per riflettere le modifiche in tutti i moduli che lo utilizzano
+- **Conformità migliorata**: garantire che le sezioni normative rimangano coerenti e aggiornate
 
-- **Possibilità di aggiungere più volte frammenti di modulo all’interno di un modulo**
-Puoi aggiungere più volte un frammento di modulo all’interno di un modulo e configurarne le proprietà di associazione dei dati a schemi o origini di dati.
+I frammenti di modulo in Edge Delivery Services supportano funzionalità avanzate, tra cui frammenti nidificati, più istanze all’interno di un singolo modulo e un’integrazione perfetta con le origini dati.
 
-- **Utilizzo di frammenti all’interno di frammenti**
-Puoi creare frammenti di modulo nidificati, ovvero puoi aggiungere un frammento in un altro frammento e creare così una struttura di frammenti nidificata.
+## Informazioni sui frammenti di modulo
 
-  >[!NOTE]
-  >
-  > Non puoi invece nidificare un frammento all’interno di se stesso, poiché questa operazione può determinare riferimenti ricorrenti e comportamenti non desiderati, con conseguenti errori o problemi di rendering.
+I frammenti di modulo in Edge Delivery Services forniscono funzionalità avanzate per lo sviluppo di moduli modulari:
 
-## Considerazioni durante l’utilizzo dei frammenti di modulo di Edge Delivery Services
+**Funzionalità di base:**
 
-- Devi aggiungere lo stesso URL GitHub sia nel frammento sia nel modulo in cui intendi utilizzare il frammento.
-- Non puoi modificare un frammento di modulo all’interno di un modulo. Per apportare modifiche, modifica il frammento di modulo indipendente.
+- **Gestione coerenza**: i frammenti mantengono layout e contenuti identici in più moduli. Con l’approccio &quot;cambia una volta, riflette ovunque&quot;, gli aggiornamenti a un frammento si applicano automaticamente a tutti i moduli in modalità Anteprima.
+- **Utilizzo multiplo**: aggiungere lo stesso frammento più volte all&#39;interno di un singolo modulo, ciascuno con associazione dati indipendente a diverse origini dati o elementi dello schema.
+- **Strutture annidate**: crea gerarchie complesse incorporando frammenti in altri frammenti per architetture di moduli sofisticate.
+
+**Requisiti tecnici:**
+
+- **Coerenza URL GitHub**: sia il frammento che qualsiasi modulo che lo utilizza devono specificare lo stesso URL archivio GitHub
+- **Modifica autonoma**: è possibile modificare i frammenti solo nel relativo modulo autonomo; non è possibile apportare modifiche nel modulo host
+
+**Comportamento pubblicazione:**
+
+>[!IMPORTANT]
+>
+>In modalità Anteprima, le modifiche apportate ai frammenti vengono applicate immediatamente a tutti i moduli. In modalità Pubblica, per visualizzare gli aggiornamenti è necessario ripubblicare sia il frammento che tutti i moduli che lo utilizzano.
+
+>[!CAUTION]
+>
+>Evita riferimenti ricorsivi ai frammenti (nidificando un frammento all’interno di se stesso), in quanto questo causa errori di rendering e comportamenti imprevisti.
 
 ## Prerequisiti
 
-- [Configura l’archivio GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) per stabilire una connessione tra l’ambiente AEM e l’archivio GitHub.
-- Se utilizzi già Edge Delivery Services, aggiungi la versione più recente del [Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) all’archivio GitHub.
-- L’istanza di authoring di AEM Forms include un modello basato su Edge Delivery Services.
-- Tieni a portata di mano l’URL dell’istanza di authoring di AEM Forms as a Cloud Service e dell’archivio GitHub.
+**Requisiti tecnici di installazione:**
+
+- [Archivio GitHub configurato](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) con connessione stabilita tra l&#39;ambiente AEM e l&#39;archivio GitHub
+- [Ultimo blocco Forms adattivo](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) aggiunto all&#39;archivio GitHub (per progetti Edge Delivery Services esistenti)
+- È disponibile l’istanza Autore AEM Forms con modello Edge Delivery Services
+- Accesso all’URL dell’istanza di authoring di AEM Forms as a Cloud Service e all’URL dell’archivio GitHub
+
+**Conoscenze e autorizzazioni richieste:**
+
+- Nozioni di base sui concetti di progettazione dei moduli e sulla gerarchia dei componenti
+- Familiarità con l’interfaccia dell’Editor universale e i flussi di lavoro per la creazione di moduli
+- Autorizzazioni a livello di autore in AEM Forms per la creazione e la gestione delle risorse dei moduli
+- Informazioni sugli standard dei moduli aziendali e sui requisiti dei componenti riutilizzabili
 
 ## Utilizzo dei frammenti di modulo di Edge Delivery Services
 
@@ -63,11 +86,11 @@ Puoi creare frammenti di modulo di Edge Delivery Services nell’editor universa
 - [Aggiunta di frammenti di modulo a un modulo](#adding-form-fragments-to-a-form)
 - [Gestione dei frammenti di modulo](#managing-form-fragments)
 
-### Creazione di frammenti di modulo
++++ Creazione di frammenti di modulo
 
 Per creare un frammento di modulo nell’editor universale, effettua le seguenti operazioni:
 
-1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
+1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
 1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Fai clic su **Crea > Frammento di modulo adattivo**.
 
@@ -78,7 +101,7 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
    ![Seleziona modello di Edge Delivery Services](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Inserisci un titolo, un nome, una descrizione e i tag relativi al frammento. Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, il frammento non viene creato.
-1. Specifica l’**URL di GitHub**. Se, ad esempio, l’archivio GitHub è denominato `edsforms` e nell’account `wkndforms`, l’URL è `https://github.com/wkndforms/edsforms`.
+1. Specifica l’**URL di GitHub**. Ad esempio, se l&#39;archivio GitHub è denominato `edsforms`, si trova sotto l&#39;account `wkndforms`, l&#39;URL è `https://github.com/wkndforms/edsforms`.
 
    ![proprietà di base](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -98,25 +121,39 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
 1. (Facoltativo) Specifica la **Data pubblicazione** o la **Data annullamento pubblicazione** per il frammento nella scheda **Avanzate**.
 
    ![Scheda Avanzate](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Fai clic su **Crea** per visualizzare una procedura guidata.
+1. Fai clic su **Crea** per generare il frammento. Viene visualizzata una finestra di dialogo di successo con le opzioni di modifica.
 
    ![Modifica frammento](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-1. Facendo clic su **Modifica** viene aperto il frammento creato con un modello predefinito nell’editor universale per l’authoring.
+1. Fai clic su **Modifica** per aprire il frammento nell&#39;Editor universale con il modello predefinito applicato.
 
-   ![Frammento nell’editor universale per l’authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![Frammento nell&#39;editor universale per la creazione](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-   In modalità di modifica, puoi aggiungere al frammento qualsiasi componente del modulo. Per informazioni su come creare un frammento nell’editor universale, consulta l’articolo [Guida introduttiva a Edge Delivery Services per AEM Forms utilizzando l’editor universale (WYSIWYG)](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+1. **Progetta il contenuto del frammento**: aggiungi i componenti del modulo (campi di testo, elenchi a discesa, caselle di controllo) per creare la sezione riutilizzabile. Per istruzioni dettagliate sui componenti, consulta [Guida introduttiva di Edge Delivery Services per AEM Forms con Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-   Nella schermata seguente viene visualizzato il `contact fragment` creato nell’editor universale.
+1. **Configurare le proprietà del componente**: impostare i nomi dei campi, le regole di convalida e i valori predefiniti in base alle esigenze del caso d&#39;uso.
+
+1. **Salva e visualizza l&#39;anteprima**: salva il frammento e utilizza la modalità Anteprima per verificare il layout e le funzionalità.
 
    ![Schermata di un frammento di modulo dei dettagli di contatto completato nell’editor universale, con campi per nome, telefono, e-mail e indirizzo che possono essere riutilizzati in più moduli](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
-   Dopo aver creato il frammento, puoi [aggiungere il frammento creato nei moduli di Edge Delivery Services](#adding-form-fragments-in-forms).
+**Checkpoint di convalida:**
 
-### Aggiunta di frammenti di modulo a un modulo
+- Nell’editor universale i frammenti vengono caricati senza errori
+- Tutti i componenti del modulo vengono riprodotti correttamente
+- Le proprietà dei campi e le regole di convalida funzionano come previsto
+- Il frammento è salvato e disponibile nella console Forms e documenti
 
-Ora verrà creato un modulo `Employee Details` semplice che include informazioni sia sul dipendente sia sul supervisore. È possibile utilizzare il frammento `Contact Details` sia nel pannello del dipendente che in quello del supervisore. Per utilizzare il frammento di modulo nel modulo, esegui i seguenti passaggi:
+Una volta completato il frammento, puoi [integrarlo in qualsiasi Edge Delivery Services Form](#adding-form-fragments-to-a-form).
+
++++
+
+
++++ Aggiunta di frammenti di modulo a un modulo
+
+In questo esempio viene illustrata la creazione di un modulo `Employee Details` che utilizza il frammento `Contact Details` per le sezioni delle informazioni relative ai dipendenti e ai supervisori. Questo approccio garantisce una raccolta coerente dei dati, riducendo al contempo lo sforzo di sviluppo.
+
+Per integrare un frammento di modulo nel modulo:
 
 1. Apri il passaggio in modalità di modifica.
 1. Aggiungi il componente Frammento modulo al modulo.
@@ -140,7 +177,7 @@ Ora verrà creato un modulo `Employee Details` semplice che include informazioni
 
 1. Fai clic su **[!UICONTROL Seleziona]**.
 
-   Il frammento di modulo viene aggiunto facendo riferimento al modulo e rimane sincronizzato con il frammento di modulo indipendente.
+   Il frammento di modulo viene aggiunto facendo riferimento al modulo e rimane sincronizzato con il frammento di modulo autonomo.
 
    ![Schermata che mostra il frammento dei dettagli di contatto integrato correttamente in un modulo dipendente all’interno dell’editor universale, in cui viene illustrato come i frammenti mantengono la propria struttura quando vengono riutilizzati](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -150,13 +187,17 @@ Ora verrà creato un modulo `Employee Details` semplice che include informazioni
 
    Analogamente, è possibile ripetere i passaggi da 3 a 7 per inserire il frammento `Contact Details` nel pannello `Supervisor Details`.
 
-   ![Modulo dettagli dipendente](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+   ![Modulo dettagli dipendenti](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
 
-### Gestione dei frammenti di modulo
++++
+
+
+
++++ Gestione dei frammenti di modulo
 
 Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfaccia utente di AEM Forms.
 
-1. Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
+1. Accedi all’istanza Autore AEM Forms as a Cloud Service.
 1. Seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
 1. Selezionando un frammento di modulo, nella barra degli strumenti vengono visualizzate le seguenti operazioni che è possibile eseguire sul frammento selezionato.
@@ -211,10 +252,50 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
     </tbody>
     </table>
 
++++
+
 ## Best practice
 
-- Assicurati che il nome del frammento sia univoco. Il frammento non viene creato se è presente un frammento con lo stesso nome.
-- Qualsiasi espressione, script o stile in un frammento di modulo autonomo viene mantenuto quando viene inserito tramite riferimento o incorporato in un modulo.
-- Quando pubblichi un modulo, i frammenti del modulo inseriti tramite riferimento all’interno del modulo vengono pubblicati automaticamente.
+**Progettazione e denominazione frammento:**
+
+- **Usa nomi descrittivi e univoci**: scegli nomi che indichino chiaramente lo scopo del frammento (ad esempio, &quot;contact-details-with-validation&quot; anziché &quot;fragment1&quot;)
+- **Pianificazione della riutilizzabilità**: i frammenti di progettazione devono essere indipendenti dal contesto, in modo che funzionino in diversi tipi di moduli
+- **Mantieni concentrati i frammenti**: crea frammenti monouso anziché componenti multifunzionali complessi
+
+**Flusso di lavoro di sviluppo:**
+
+- **Test indipendente dei frammenti**: verifica la funzionalità del frammento prima dell&#39;integrazione nei moduli
+- **Mantieni URL GitHub coerenti**: assicurati che venga utilizzato lo stesso URL dell&#39;archivio in tutti i frammenti e moduli correlati
+- **Scopo del frammento di documento**: includere descrizioni e tag chiari per aiutare i membri del team a capire quando utilizzare ogni frammento
+
+**Pubblicazione e manutenzione:**
+
+- **Coordinare la pubblicazione**: durante l&#39;aggiornamento dei frammenti, pianifica la ripubblicazione simultanea di tutti i moduli dipendenti
+- **Controllo versione**: utilizza messaggi di commit significativi quando aggiorni i frammenti per tenere traccia delle modifiche nel tempo
+- **Monitorare le dipendenze**: tenere traccia dei moduli che utilizzano ogni frammento per valutare l&#39;impatto degli aggiornamenti
+
+>[!TIP]
+>
+>Gli stili, gli script e le espressioni dei frammenti vengono mantenuti quando incorporati, quindi progetta tenendo presente questa ereditarietà.
+
+## Riepilogo
+
+Hai imparato a sfruttare i frammenti di modulo in Edge Delivery Services per migliorare l’efficienza dello sviluppo e mantenere la coerenza tra i moduli della tua organizzazione.
+
+**Risultati chiave:**
+
+- **Informazioni**: riconosciuto il valore aziendale e le funzionalità tecniche dei frammenti di modulo
+- **Creazione**: frammenti di modulo riutilizzabili creati con Universal Editor con configurazione corretta
+- **Integrazione**: frammenti aggiunti ai moduli con la configurazione corretta della proprietà e dell&#39;installazione dei riferimenti
+- **Gestione**: operazioni del ciclo di vita e flussi di lavoro di manutenzione dei frammenti esplorati
+
+**Passaggi successivi:**
+
+- Crea una libreria di frammenti di uso comune per la tua organizzazione
+- Stabilire convenzioni di denominazione e criteri di governance per l’utilizzo dei frammenti
+- Esplora l&#39;integrazione avanzata con [Modelli dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) per frammenti dinamici basati su dati
+- Implementare modelli di modulo basati su frammenti per esperienze utente coerenti
+
+I moduli ora usufruiscono di un’architettura modulare e gestibile in grado di scalare in modo efficiente tra i progetti, garantendo al contempo esperienze utente coerenti.
 
 

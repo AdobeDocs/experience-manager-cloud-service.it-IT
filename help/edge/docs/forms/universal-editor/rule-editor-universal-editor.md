@@ -5,788 +5,679 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '3597'
-ht-degree: 23%
+source-wordcount: '2598'
+ht-degree: 1%
 
 ---
 
 
 # Editor di regole per Dynamic Forms nell’editor universale
 
-L&#39;Editor di regole di Universal Editor consente di creare moduli intelligenti e dinamici che rispondono in tempo reale agli input dell&#39;utente. Puoi trasformare i moduli statici in esperienze interattive con visibilità dei campi condizionale, calcoli automatizzati e logica di business complessa, il tutto senza scrivere codice.
+L’editor di regole consente agli autori di trasformare i moduli statici in esperienze intelligenti e reattive, senza scrivere codice. È possibile visualizzare i campi in modo condizionale, eseguire calcoli, convalidare dati, guidare gli utenti attraverso i flussi e integrare una logica di business che si adatta al tipo di persona.
 
+## Cosa imparerai
 
-## Che cosa imparerai
-
-Al termine di questa guida:
+Al termine di questa guida, sarai in grado di:
 
 - Comprendere il funzionamento delle regole e quando utilizzare tipi di regole diversi
 - Abilitare e accedere all’editor di regole nell’editor universale
-- Creare una logica condizionale per visualizzare o nascondere i campi modulo in modo dinamico
+- Creare una logica condizionale per visualizzare o nascondere i campi in modo dinamico
 - Implementazione di calcoli automatizzati e convalida dei dati
 - Creare funzioni personalizzate per regole aziendali complesse
-- Applicare le best practice per ottenere prestazioni ottimali dei moduli
+- Applicare best practice per prestazioni, manutenibilità e UX
 
 ## Perché utilizzare l’editor di regole?
 
-**Trasforma Forms statico in esperienze avanzate:**
+- **Logica condizionale**: mostra i campi rilevanti solo quando necessario per ridurre il rumore e il carico cognitivo.
+- **Calcoli dinamici**: calcola automaticamente i valori (totali, aliquote, imposte) durante la digitazione da parte degli utenti.
+- **Convalida dei dati**: consente di evitare gli errori in anticipo con controlli in tempo reale e messaggi di cancellazione.
+- **Esperienze guidate**: guida gli utenti attraverso passaggi logici (procedure guidate, ramificazioni).
+- **Authoring senza codice**: configura un comportamento efficace tramite un&#39;interfaccia visiva.
 
-- **Logica condizionale**: mostra i campi rilevanti in base alle selezioni effettuate dall&#39;utente
-- **Calcoli dinamici**: calcola automaticamente i valori come tipi di utenti
-- **Convalida dati**: fornire feedback in tempo reale ed evitare errori
-- **UX migliorata**: riduzione della complessità dei moduli e guida gli utenti attraverso i flussi logici
-- **Non è richiesta alcuna codifica**: interfaccia visiva accessibile ai non sviluppatori
-
-**Casi d&#39;uso comuni:**
-
-- Moduli di calcolo delle imposte con detrazioni condizionali
-- Procedure guidate in più passaggi con percorsi di diramazione
-- Moduli assicurativi con calcoli dei tassi
-- Moduli di sondaggio con domande condizionali
-- Moduli e-commerce con prezzi dinamici
+Gli scenari comuni includono calcolatori fiscali, calcolatori di prestiti e premi, flussi di idoneità, applicazioni in più fasi e indagini con domande condizionali.
 
 ## Funzionamento delle regole
 
-Le regole sono istruzioni automatizzate che rendono i moduli intelligenti e reattivi. Esse specificano cosa dovrebbe accadere quando vengono soddisfatte determinate condizioni.
+Una regola definisce cosa dovrebbe accadere quando viene soddisfatta una condizione. Concettualmente, una regola è composta da due parti:
 
-### **Componenti regola**
+- **Condizione**: istruzione che restituisce true o false.
+   - Esempi: &quot;Entrate > 50.000,&quot; &quot;Copertura = &#39;Sì&#39;,&quot; &quot;Il campo è vuoto&quot;
+- **Azione**: cosa accade quando la condizione è vera (e facoltativamente quando è falsa).
+   - Esempi: mostrare/nascondere un campo, impostare/cancellare un valore, convalidare l’input, abilitare/disabilitare un pulsante
 
-**Condizione**: un test logico che restituisce true o false.
++++ Modelli logici delle regole
 
-- &quot;Il reddito dell&#39;utente è superiore a 50.000 dollari?&quot;
-- &quot;L&#39;utente ha selezionato &#39;Sì&#39; per la copertura assicurativa?&quot;
-- &quot;Il campo modulo è vuoto?&quot;
+- **Condizione → Azione (When/Then)**
 
-**Azione**: risultato che si verifica quando viene soddisfatta la condizione.
+  ```text
+  WHEN Gross Salary > 50000
+  THEN Show "Additional Deduction"
+  ```
 
-- Mostrare o nascondere i campi modulo
-- Calcola automaticamente i valori
-- Visualizza messaggi di convalida
-- Abilitare o disabilitare i componenti
+  Ideale per la visibilità condizionale e la divulgazione progressiva.
 
-### **Modelli logici regola**
+- **Condizione ← azione (Imposta se/solo se)**
 
-**1. Condizione-Azione (When-Then)**
+  ```text
+  SET Taxable Income = Gross Salary - Deductions
+  IF Deductions are applicable
+  ```
 
-```
-WHEN gross salary > 50000
-THEN show "Additional Deduction" field
-```
+  Consigliato per calcoli e trasformazioni di dati.
 
-*Ideale per:* Visibilità campo condizionale, contenuto dinamico
+- **Se → Allora → Altro (Azione Alternativa)**
 
-**2. Condizione-Azione (Set-If)**
+  ```text
+  IF Income > 50000
+  THEN Show "High Income" fields
+  ELSE Show "Standard Income" fields
+  ```
 
-```
-SET taxable income = gross salary - deductions
-IF deductions are applicable
-```
+  Consigliato per logica di ramificazione e flussi reciprocamente esclusivi.
 
-*Ottimo per:* Calcoli, trasformazioni dati
++++
 
-**3. Azione-Condizione-Alternativa (If-Then-Else)**
-
-```
-IF income > 50000
-THEN show "High Income" fields
-ELSE show "Standard Income" fields
-```
-
-*Ideale per:* logica di diramazione, opzioni reciprocamente esclusive
-
-### **Esempio reale**
-
-**Scenario**: modulo di calcolo delle imposte
++++ Esempio reale
 
 - **Condizione**: &quot;Lo stipendio lordo supera i 50.000 dollari&quot;
-- **Azione primaria**: mostra campo &quot;Detrazione aggiuntiva&quot;
-- **Azione alternativa**: nasconde il campo &quot;Detrazione aggiuntiva&quot;
-- **Risultato**: gli utenti visualizzano solo i campi pertinenti in base al loro livello di reddito
+- **Azione primaria**: mostra &quot;detrazione aggiuntiva&quot;
+- **Azione alternativa**: nascondi &quot;detrazione aggiuntiva&quot;
+- **Risultato**: gli utenti visualizzano solo i campi ad essi applicabili
+
++++
 
 ## Prerequisiti
 
-Prima di iniziare a utilizzare l’editor di regole, assicurati di disporre dei seguenti elementi:
 
-### **Requisiti di accesso**
++++ Requisiti di accesso
 
-- Accesso di authoring a **AEM as a Cloud Service**
-- **Universal Editor** con estensione editor di regole abilitata
-- Autorizzazioni di modifica dei moduli nell’ambiente AEM
+**Autorizzazioni essenziali e configurazione**:
 
-### **Requisiti tecnici**
+- **AEM as a Cloud Service**: autorizzazione alla modifica di accessi tramite modulo
+- **Editor universale**: installato e configurato nel tuo ambiente
+- **Estensione editor regole**: abilitato tramite [Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+- **Autorizzazioni di modifica dei moduli**: possibilità di creare e modificare i componenti del modulo in Universal Editor
 
-- **Conoscenza di base sulla progettazione dei moduli**: familiarità con i componenti del modulo e le relative proprietà
-- **Familiarità con la logica di business**: possibilità di definire i requisiti condizionali
-- **Conoscenza di base di JavaScript** (richiesta solo per le funzioni personalizzate)
+**Passaggi di verifica**:
 
-### **Abilita estensione editor regole**
+1. Conferma di poter accedere a Universal Editor dalla console AEM Sites.
+2. Verificare di poter creare e modificare i componenti del modulo
+3. Controlla che venga visualizzata l&#39;icona dell&#39;editor di regole ![edit-rules](/help/forms/assets/edit-rules-icon.svg) durante la selezione dei componenti del modulo
 
-Per impostazione predefinita, l’estensione dell’editor di regole non è abilitata nell’editor universale. È possibile abilitarlo da [Extension Manager](/help/implementing/developing/extending/extension-manager.md).
++++
 
-**Dopo aver abilitato l&#39;estensione:**
-Quando selezioni i componenti del modulo, nell&#39;angolo superiore destro viene visualizzata l&#39;icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg).
++++ Requisiti tecnici
+
+**Conoscenze e competenze richieste**:
+
+- **Competenza editor universale**: esperienza nella creazione di moduli con input di testo, elenchi a discesa e proprietà di campo di base
+- **Informazioni sulla logica di business**: possibilità di definire requisiti condizionali e regole di convalida per il caso d&#39;uso specifico
+- **Familiarità del componente Modulo**: conoscenza dei tipi di campo (testo, numero, elenco a discesa), delle proprietà (obbligatorie, visibili, di sola lettura) e della struttura del modulo
+
+**Facoltativo per utilizzo avanzato**:
+
+- **Nozioni di base di JavaScript**: necessario solo per la creazione di funzioni personalizzate (tipi di dati, funzioni, sintassi di base)
+- **Comprensione JSON**: utile per la manipolazione di dati complessi e le integrazioni API
+
+**Domande di valutazione**:
+
+- È possibile creare un modulo di base con input di testo e un pulsante di invio in Universal Editor?
+- Sapete quando i campi devono essere obbligatori o facoltativi nel vostro contesto aziendale?
+- È possibile identificare gli elementi del modulo che richiedono visibilità condizionale nel caso d’uso?
+
++++
+
++++ Abilitare l’estensione Editor regole
+
+**Importante**: l&#39;estensione dell&#39;editor di regole non è abilitata per impostazione predefinita negli ambienti dell&#39;editor universale.
+
+**Passaggi di attivazione**:
+
+1. Passa a [Extension Manager](/help/implementing/developing/extending/extension-manager.md) nel tuo ambiente AEM
+2. Individua l’estensione &quot;Rule Editor&quot; nell’elenco delle estensioni disponibili.
+3. Fai clic su **Abilita** e conferma l&#39;attivazione
+4. Attendere l&#39;aggiornamento del sistema (potrebbero essere necessari 1-2 minuti)
+
+**Verifica**:
+
+- Dopo l&#39;abilitazione, l&#39;icona Editor regole viene visualizzata quando si seleziona un componente del modulo: ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
 
 ![Editor regole dell&#39;editor universale](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
-*Figura: l&#39;icona Editor regole viene visualizzata quando si selezionano i componenti del modulo*
+Figura: L’icona Editor regole viene visualizzata quando si selezionano i componenti del modulo
 
-**Per accedere all&#39;editor di regole:**
+Per aprire l’editor di regole:
 
 1. Seleziona un componente modulo nell’Editor universale.
-2. Fai clic sull&#39;icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg) visualizzata.
-3. L’interfaccia dell’editor delle regole si apre in un nuovo pannello.
+2. Fai clic sull’icona Editor di regole.
+3. L’Editor regole si apre in un pannello laterale.
 
 ![Interfaccia utente dell&#39;editor di regole](/help/edge/docs/forms/assets/rule-editor-for-field.png)
-*Figura: interfaccia dell&#39;editor di regole per la modifica delle regole dei componenti*
+Figura: Interfaccia dell’editor delle regole per la modifica delle regole dei componenti
 
 >[!NOTE]
 >
-> In questo articolo, &quot;componente modulo&quot; e &quot;oggetto modulo&quot; si riferiscono agli stessi elementi (come campi di input, pulsanti, pannelli, ecc.).
+> In questo articolo, &quot;componente modulo&quot; e &quot;oggetto modulo&quot; si riferiscono agli stessi elementi (ad esempio, ingressi, pulsanti, pannelli).
 
 ## Panoramica dell’interfaccia dell’editor di regole
 
-L’editor di regole offre un’interfaccia visiva intuitiva per la creazione e la gestione delle regole:
-
 ![Interfaccia utente editor regole](/help/edge/docs/forms/assets/rule-editor-interface.png)
-*Figura: interfaccia completa dell&#39;editor di regole con componenti numerati*
+Figura: Interfaccia completa dell’Editor regole con componenti numerati
 
-### **Componenti interfaccia**
+- **Titolo componente e tipo di regola**: conferma il componente selezionato e il tipo di regola attivo.
+- **Pannello Funzioni e oggetti modulo**:
+   - Oggetti modulo: visualizzazione gerarchica di campi e contenitori a cui fare riferimento nelle regole
+   - Funzioni: helper incorporati di matematica, stringhe, data e convalida
+- **Selettore pannello**: mostra/nascondi il pannello oggetti e funzioni per aumentare l&#39;area di lavoro
+- **Generatore di regole visive**: Compositore di regole a discesa con trascinamento della selezione
+- **Controlli**: Operazione completata (salvataggio), Annulla (eliminazione). Prima di salvare, verifica sempre le regole.
 
-**1. Titolo componente e tipo di regola**
++++
 
-- **Scopo**: visualizza il nome del componente selezionato e il tipo di regola corrente.
-- **Esempio**: &quot;Inserisci stipendio lordo&quot; (input di testo) con la regola &quot;Quando&quot; selezionata.
-- **Suggerimento**: confermare sempre che si sta modificando il componente corretto.
++++ Gestione delle regole esistenti
 
-**2. Pannello Funzioni e oggetti modulo**
+Quando un componente ha già delle regole, puoi:
 
-- **Scheda Oggetti modulo**: fornisce una visualizzazione gerarchica di tutti i componenti del modulo.
-   - Utilizza per: riferimento ad altri campi nelle regole.
-   - Navigazione: espandi o comprimi per individuare componenti specifici.
-- **Scheda Funzioni**: contiene funzioni matematiche e logiche incorporate.
-   - Utilizzare per: esecuzione di calcoli complessi e manipolazioni di dati.
-   - Categorie: funzioni Matematica, Stringa, Data e Convalida.
-
-**3. Pulsante di attivazione/disattivazione pannello**
-
-- **Scopo**: mostra o nasconde il pannello oggetti e funzioni.
-- **Suggerimento**: disattiva il pannello per aumentare l&#39;area di lavoro di modifica delle regole.
-- **Scelta rapida da tastiera**: utile quando si lavora con regole complesse.
-
-**4. Generatore di regole visive**
-
-- **Scopo**: area principale per la costruzione della logica delle regole.
-- **Funzionalità**: interfaccia di trascinamento e selettori a discesa.
-- **Flusso di lavoro**: seleziona il tipo di regola → Definisci condizioni → Imposta azioni.
-
-**5. Pulsanti di controllo**
-
-- **Fine**: salva la regola e chiude l&#39;editor.
-- **Annulla**: ignora le modifiche e chiude l&#39;editor senza salvarlo.
-- **Suggerimento**: verifica sempre le regole prima di fare clic su Fine.
-
-### **Gestione regole**
-
-Quando apri l’Editor regole per un componente che dispone già di regole:
-
-![mostra le regole disponibili dell&#39;oggetto modulo](/help/edge/docs/forms/assets/rule-editor15.png)
-*Figura: Gestione delle regole esistenti per un componente modulo*
-
-**Azioni disponibili:**
-
-- **Visualizza**: rivedi i riepiloghi e la logica delle regole.
-- **Modifica**: modifica le condizioni o azioni della regola esistenti.
-- **Riordina**: cambia l&#39;ordine di esecuzione delle regole (le regole vengono eseguite dall&#39;alto verso il basso).
-- **Attiva/Disattiva**: attiva o disattiva temporaneamente le regole a scopo di test.
-- **Elimina**: rimuovere definitivamente le regole.
+- **Visualizza**: vedere i riepiloghi e la logica delle regole
+- **Modifica**: modifica condizioni e azioni
+- **Riordina**: cambia ordine di esecuzione (dall&#39;alto in basso)
+- **Attiva/Disattiva**: attiva/disattiva le regole per il test
+- **Elimina**: rimuovi le regole in modo sicuro
 
 >[!TIP]
 >
-> **Importanza ordine di esecuzione regola**: le regole vengono eseguite dall&#39;alto verso il basso. Posizionare condizioni più specifiche prima di quelle generali.
+> Metti regole specifiche prima di quelle generali. L’esecuzione è dall’alto verso il basso.
+
++++
 
 ## Tipi di regole disponibili
 
-L’Editor regole offre un set completo di tipi di regole organizzati per funzionalità. Seleziona il tipo appropriato in base al caso d’uso specifico:
+Scegli il tipo di regola che corrisponde meglio all’intento.
 
-### **Regole per la logica condizionale**
++++ Logica condizionale
 
-**Quando**
-
-- **Scopo**: funge da regola condizionale principale per l&#39;implementazione di logica complessa.
-- **Caso d&#39;uso**: ad esempio, &quot;Quando l&#39;utente seleziona &#39;Sposato&#39;, mostra i campi relativi alle informazioni sul coniuge.&quot;
-- **Schema logico**: Condizione → Azione (con un&#39;azione alternativa facoltativa)
-
-**Nascondi/Mostra**
-
-- **Scopo**: controlla la visibilità del campo in base alle condizioni specificate.
-- **Caso d&#39;uso**: nascondi sezioni irrilevanti o abilita la divulgazione progressiva.
-- **Best practice**: utilizza per creare un&#39;esperienza utente pulita e mirata.
-
-**Attiva/Disattiva**
-
-- **Scopo**: controlla se un campo può essere interagito con, in base alle condizioni.
-- **Caso d&#39;uso**: disabilitare il pulsante di invio fino al completamento di tutti i campi obbligatori.
-- **Best practice**: fornisci agli utenti un feedback visivo chiaro.
-
-### **Regole di manipolazione dei dati**
-
-**Imposta Valore Di**
-
-- **Scopo**: compila automaticamente i valori dei campi.
-- **Caso d&#39;uso**: imposta la data odierna, calcola i totali o copia i valori tra i campi.
-- **Best practice**: utilizza per ridurre il carico di lavoro degli utenti e garantire precisione.
-
-**Cancella Valore Di**
-
-- **Scopo**: rimuove i dati dai campi quando cambiano le condizioni.
-- **Caso d&#39;uso**: cancella i campi dipendenti quando cambia una selezione padre.
-- **Best practice**: mantieni l&#39;integrità dei dati e impedisci valori orfani.
-
-**Formato**
-
-- **Scopo**: trasforma la visualizzazione dei valori.
-- **Caso d&#39;uso**: formattazione valuta, numeri di telefono o date.
-- **Best practice**: migliora la leggibilità senza modificare i dati sottostanti.
-
-### **Regole di convalida**
-
-**Convalida**
-
-- **Scopo**: implementa una logica di convalida personalizzata.
-- **Caso d&#39;uso**: applicazione di regole di business complesse o convalida tra campi.
-- **Best practice**: fornisci messaggi di errore chiari e actionable.
-
-### **Regole di calcolo**
-
-**Espressione matematica**
-
-- **Scopo**: esegue calcoli automatizzati.
-- **Caso d&#39;uso**: calcoli fiscali, totali o percentuali.
-- **Best practice**: aggiorna i calcoli in tempo reale durante la digitazione da parte degli utenti.
-
-### **Regole interfaccia utente**
-
-**Imposta stato attivo**
-
-- **Scopo**: indirizza l&#39;attenzione dell&#39;utente a campi specifici.
-- **Caso d&#39;uso**: concentrarsi sui campi di errore o guidare gli utenti attraverso i passaggi della procedura guidata.
-- **Best practice**: utilizza con moderazione per evitare di interrompere il flusso dell&#39;utente.
-
-**Imposta proprietà**
-
-- **Scopo**: modifica dinamicamente le proprietà del componente.
-- **Caso d&#39;uso**: modifica il testo segnaposto o le opzioni di modifica in un elenco a discesa.
-- **Best practice**: migliora l&#39;esperienza utente con modifiche contestuali.
-
-### **Regole di controllo modulo**
-
-**Invia modulo**
-
-- **Scopo**: attiva l&#39;invio dei moduli a livello di programmazione.
-- **Caso d&#39;uso**: invio automatico dopo che sono state soddisfatte determinate condizioni.
-- **Best practice**: convalida sempre il modulo prima dell&#39;invio.
-
-**Reimposta modulo**
-
-- **Scopo**: cancella tutti i dati del modulo e ripristina lo stato iniziale del modulo.
-- **Caso d&#39;uso**: funzionalità &quot;Ricomincia&quot;.
-- **Best practice**: conferma l&#39;azione con l&#39;utente prima di reimpostare.
-
-**Salva modulo**
-
-- **Scopo**: salva il modulo come bozza per un successivo completamento.
-- **Caso d&#39;uso**: utile per moduli lunghi o flussi di lavoro con più sessioni.
-- **Best practice**: fornisci un feedback chiaro sullo stato di salvataggio.
-
-### **Regole avanzate**
-
-**Richiama servizio**
-
-- **Scopo**: chiama API o servizi esterni.
-- **Caso d&#39;uso**: ricerca di indirizzi, convalida in tempo reale o arricchimento dei dati.
-- **Best practice**: gestisci in modo appropriato gli stati di caricamento e gli scenari di errore.
-
-**Aggiungi/Rimuovi istanza**
-
-- **Scopo**: gestione dinamica delle sezioni ripetibili.
-- **Caso d&#39;uso**: aggiungere membri della famiglia o più indirizzi.
-- **Best practice**: fornisci controlli chiari per l&#39;aggiunta o la rimozione di istanze.
-
-**Accedi A**
-
-- **Scopo**: reindirizza gli utenti ad altri moduli o pagine.
-- **Caso d&#39;uso**: flussi di lavoro multimodulo o routing condizionale.
-- **Best practice**: mantieni i dati del modulo prima della navigazione.
-
-**Naviga Tra I Pannelli**
-
-- **Scopo**: controlla la navigazione nei moduli in stile procedura guidata.
-- **Caso d&#39;uso**: moduli con più passaggi o passaggio condizionale ignorato.
-- **Best practice**: visualizza indicatori di avanzamento chiari.
-
-**Evento di invio**
-
-- **Scopo**: attiva eventi personalizzati per integrazioni avanzate.
-- **Caso d&#39;uso**: tracciamento di Analytics o integrazioni di terze parti.
-- **Best practice**: da utilizzare solo per le azioni non bloccanti.
-
-
-## Tutorial dettagliato: creazione di un calcolatore di imposta intelligente
-
-In questa sezione viene fornito un esempio pratico per illustrare le funzionalità dell&#39;editor di regole. Nell&#39;esempio viene illustrato come creare un modulo di calcolo delle imposte che utilizza la logica condizionale e i calcoli automatizzati.
-
-![Schermata dell&#39;interfaccia dell&#39;editor di regole che mostra la creazione di una regola condizionale con logica When-Then per la visibilità dei campi modulo](/help/edge/docs/forms/assets/rule-editor-1.png)
-*Figura: Modulo di calcolo imposte con campi condizionali intelligenti*
-
-### **Panoramica del tutorial**
-
-In questa esercitazione verrà creato un modulo che:
-
-1. **Si adatta all&#39;input dell&#39;utente**: visualizza i campi pertinenti in base al livello di reddito.
-2. **Calcola automaticamente**: calcola la passività fiscale in tempo reale.
-3. **Convalida dei dati**: garantisce calcoli accurati e l&#39;immissione dei dati.
-
-### **Struttura modulo**
-
-| Nome campo | Tipo | Scopo | Comportamento |
-|------------|------|---------|----------|
-| **Stipendio lordo** | Inserimento numero | L&#39;utente immette il reddito annuale | Attiva la logica condizionale |
-| **Detrazione aggiuntiva** | Inserimento numero | Detrazioni supplementari (se del caso) | Visualizza quando lo stipendio è > $50.000 |
-| **Reddito imponibile** | Inserimento numero | Calcolato automaticamente | Aggiornamenti sulle modifiche di input |
-| **Imposta dovuta** | Inserimento numero | Importo imposta finale | Calcola a una percentuale del 10% |
-
-### **Logica aziendale da implementare**
-
-**Regola 1: Visualizzazione Campo Condizionale**
-
-```
-WHEN Gross Salary > 50,000
-THEN Show "Additional Deduction" field
-ELSE Hide "Additional Deduction" field
-```
-
-**Regola 2: Calcolo reddito imponibile**
-
-```
-SET Taxable Income = Gross Salary - Additional Deduction
-(When Additional Deduction is applicable)
-```
-
-**Regola 3: Calcolo delle imposte**
-
-```
-SET Tax Payable = Taxable Income × 10%
-(Simplified flat rate for demonstration)
-```
-
-### **Passaggi di implementazione**
-
-Per creare il modulo fiscale intelligente, segui la procedura riportata di seguito.
-
-
-
-+++ 1: Creare il modulo Foundation
-
-**Obiettivo**: creare la struttura del modulo di base con tutti i componenti richiesti
-
-Per creare il modulo di calcolo delle imposte in Universal Editor:
-
-1. **Apri editor universale**
-   - Passa alla console AEM Sites
-   - Selezionare la pagina in cui si desidera aggiungere il modulo
-   - Fai clic su **Modifica** per aprire Editor universale
-
-2. **Aggiungi componenti modulo**
-
-   Aggiungi questi componenti nell’ordine:
-
-   | Componente | Tipo | Etichetta | Impostazioni |
-   |-----------|------|-------|----------|
-   | Titolo | Titolo | &quot;Modulo di calcolo imposte&quot; | Livello di intestazione H2 |
-   | Inserimento numero | Inserimento numero | &quot;Stipendio lordo&quot; | Obbligatorio: sì, segnaposto: &quot;Inserire lo stipendio annuale&quot; |
-   | Inserimento numero | Inserimento numero | &quot;Detrazione aggiuntiva&quot; | Obbligatorio: no, segnaposto: &quot;Inserire detrazioni aggiuntive&quot; |
-   | Inserimento numero | Inserimento numero | &quot;Reddito Imponibile&quot; | Obbligatorio: no, sola lettura: sì |
-   | Inserimento numero | Inserimento numero | &quot;Imposta da pagare&quot; | Obbligatorio: no, sola lettura: sì |
-   | Pulsante Invia | Invia | &quot;Calcola imposta&quot; | Tipo: invia |
-
-3. **Configura impostazioni iniziali**
-
-   - **Nascondi il campo Detrazione aggiuntiva**:
-      - Seleziona il componente &quot;Detrazione aggiuntiva&quot;
-      - Nel pannello Proprietà, imposta **Visible** su **No**
-      - Questo campo verrà visualizzato in modo condizionale in base alle regole
-
-   - **Rendi i campi calcolati di sola lettura**:
-      - Selezionare i campi &quot;Reddito imponibile&quot; e &quot;Imposta da pagare&quot;
-      - Imposta **Sola lettura** su **Sì** nelle proprietà
-
-     ![Schermata di un modulo di calcolo delle imposte con campi di input per lo stipendio lordo, lo stato civile e i figli a carico, che illustra la struttura del modulo prima che le regole siano applicate](/help/edge/docs/forms/assets/rule-editor2.png)
-     *Figura: struttura del modulo iniziale con componenti di base configurati*
-
-**Checkpoint**: è ora necessario disporre di un modulo con tutti i campi obbligatori, in cui &quot;Detrazione aggiuntiva&quot; è nascosto e i campi calcolati sono di sola lettura.
+- **Quando**: regola primaria per un comportamento condizionale complesso (condizione → azione ± altro)
+- **Nascondi/Mostra**: controlla la visibilità in base a una condizione (divulgazione progressiva)
+- **Abilita/Disabilita**: controlla se un campo è interattivo (ad esempio, disabilita Invia finché i campi obbligatori non sono validi)
 
 +++
 
-+++ &#x200B;2. Aggiungere una regola condizionale per un campo modulo
++++ Manipolazione dei dati
 
-Dopo aver creato il modulo, scrivi la prima regola per visualizzare il campo `Additional Deduction` solo se lo stipendio lordo supera i 50.000 dollari. Per aggiungere una regola condizionale:
+- **Imposta valore di**: compila automaticamente i valori (ad esempio, date, totali, copie)
+- **Cancella valore di**: rimuovi dati quando cambiano le condizioni
+- **Formato**: trasforma la formattazione di visualizzazione (valuta, telefono, data) senza modificare i valori memorizzati
 
-1. Apri un modulo nell’editor universale per la modifica e seleziona il campo **[!UICONTROL Stipendio lordo]** nella struttura contenuto, quindi seleziona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). In alternativa, puoi selezionare il campo **[!UICONTROL Stipendio lordo]** direttamente dal riquadro **[!UICONTROL Oggetto Forms]**.
-   ![Esempio di editor di regole1](/help/edge/docs/forms/assets/rule-editor3.png)
-Viene visualizzata l’interfaccia dell’editor di regole visivo.
-1. Fai clic su **[!UICONTROL Crea]** per creare le regole.
-   ![Esempio di editor di regole2](/help/edge/docs/forms/assets/rule-editor4.png)
-Per impostazione predefinita, è selezionato il tipo di regola `Set Value Of`. Sebbene non sia possibile cambiare o modificare l’oggetto selezionato, è possibile utilizzare l’elenco a discesa delle regole per selezionare un altro tipo di regola.\
-   ![Esempio di editor di regole3](/help/edge/docs/forms/assets/rule-editor5.png)
-1. Apri l’elenco a discesa Tipo di regola e seleziona il tipo di regola **[!UICONTROL Quando]**.
-   ![Esempio di editor di regole4](/help/edge/docs/forms/assets/rule-editor6.png)
-1. Seleziona l’elenco a discesa **[!UICONTROL Seleziona stato]** e seleziona **[!UICONTROL è maggiore di]**. Viene visualizzato il campo **[!UICONTROL Immetti un numero]**.
-   ![Esempio di editor di regole5](/help/edge/docs/forms/assets/rule-editor7.png)
-1. Immetti `50000` nel campo **[!UICONTROL Immetti un numero]** nella regola.
-   ![Esempio di editor di regole6](/help/edge/docs/forms/assets/rule-editor8.png)
-La condizione è stata definita come `When Gross Salary is greater than 50000`. Definisci quindi l’azione da eseguire se la condizione è `True`.
-1. Nell’istruzione `Then`, seleziona **[!UICONTROL Mostra]** dal menu a discesa **[!UICONTROL Seleziona azione]**.
-   ![Esempio di editor di regole7](/help/edge/docs/forms/assets/rule-editor9.png)
-1. Trascina il campo **[!UICONTROL Detrazione aggiuntiva]** dalla scheda Oggetti modulo del campo **[!UICONTROL Rilascia oggetto o seleziona qui]**. In alternativa, seleziona il campo **[!UICONTROL Rilascia oggetto o seleziona qui]** e seleziona il campo **[!UICONTROL Detrazione aggiuntiva]** dal menu a comparsa, in cui sono elencati tutti gli oggetti modulo nel modulo.
-   ![Esempio di editor di regole8](/help/edge/docs/forms/assets/rule-editor10.png)
-1. Fai clic su **[!UICONTROL Aggiungi altra sezione]** per aggiungere un’altra condizione per il campo **[!UICONTROL Stipendio lordo]**, nel caso in cui sia immesso uno stipendio inferiore a `50000`.
-   ![Esempio di editor di regole9](/help/edge/docs/forms/assets/rule-editor11.png)
-1. Seleziona **[!UICONTROL Nascondi]** dal menu a discesa **[!UICONTROL Seleziona azione]** nell’istruzione `Else`.
-   ![Esempio di editor di regole10](/help/edge/docs/forms/assets/rule-editor12.png)
-1. Trascina il campo **[!UICONTROL Detrazione aggiuntiva]** dalla scheda Oggetti modulo nel campo **[!UICONTROL Rilascia oggetto o seleziona qui]**. In alternativa, seleziona il campo **[!UICONTROL Rilascia oggetto o seleziona qui]** e seleziona il campo **[!UICONTROL Detrazione aggiuntiva]** dal menu a comparsa, in cui sono elencati tutti gli oggetti modulo nel modulo.
-   ![Editor di regole, esempio 11](/help/edge/docs/forms/assets/rule-editor13.png)
-1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
-La regola viene visualizzata nell’editor di regole nel modo seguente.
-   ![Editor di regole, esempio 12](/help/edge/docs/forms/assets/rule-editor14.png)
++++
+
++++ Convalida
+
+- **Convalida**: logica di convalida personalizzata, inclusi controlli tra campi diversi e regole business
+
++++
+
++++ Calcolo
+
+- **Espressione matematica**: calcolo dei valori in tempo reale (totali, imposte, rapporti)
+
++++
+
++++ Interfaccia utente
+
+- **Imposta stato attivo**: sposta lo stato attivo su un campo specifico (usa con moderazione)
+- **Imposta proprietà**: modifica dinamicamente le proprietà del componente (segnaposto, opzioni, ecc.)
+
++++
+
++++ Controllo modulo
+
+- **Invia modulo**: invia il modulo a livello di programmazione (solo dopo il superamento delle convalide)
+- **Ripristina modulo**: cancella e ripristina lo stato iniziale (conferma prima dell&#39;uso)
+- **Salva modulo**: salva come bozza per un momento successivo (moduli lunghi, sessioni multiple)
+
++++
+
++++ Avanzato
+
+- **Richiama servizio**: chiama API/servizi esterni (caricamento handle ed errori)
+- **Aggiungi/Rimuovi istanza**: gestisci sezioni ripetibili (ad esempio, dipendenti, indirizzi)
+- **Accedi a**: Inoltra ad altri moduli/pagine (mantieni i dati prima della navigazione)
+- **Naviga tra i pannelli**: navigazione e salto del passaggio della procedura guidata di controllo
+- **Evento di invio**: attiva eventi personalizzati per integrazioni o analisi
+
++++
+
+## Tutorial dettagliato: creare un calcolatore fiscale intelligente
+
++++ Panoramica del tutorial
+
+In questo esempio vengono illustrati la visibilità condizionale e i calcoli automatici.
+
+![Schermata dell&#39;interfaccia dell&#39;editor di regole che mostra la creazione di una regola condizionale con logica When-Then per la visibilità dei campi modulo](/help/edge/docs/forms/assets/rule-editor-1.png)
+Figura: Modulo di calcolo delle imposte con campi condizionali intelligenti
+
+Verrà creato un modulo che:
+
+1. Si adatta all’input dell’utente mostrando i campi rilevanti
+2. Calcola i valori in tempo reale
+3. Convalida i dati per migliorare la precisione
+
++++
+
++++ Struttura del modulo
+
+| Nome campo | Tipo | Scopo | Comportamento |
+|-------------------------|---------------|--------------------------------|-----------------------------------------|
+| Stipendio lordo | Inserimento numero | Reddito annuale dell&#39;utente | Attiva la logica condizionale |
+| Detrazione aggiuntiva | Inserimento numero | Detrazioni supplementari (se ammissibili) | Visibile solo quando lo stipendio è > $50.000 |
+| Reddito Imponibile | Inserimento numero | Valore calcolato | Sola lettura, aggiornamenti in caso di modifica |
+| Imposta da pagare | Inserimento numero | Valore calcolato | Sola lettura, calcolato su base forfettaria |
+
++++
+
++++ Logica di business
+
+- **Regola 1: visualizzazione condizionale**
+
+  ```text
+  WHEN Gross Salary > 50,000
+  THEN Show "Additional Deduction"
+  ELSE Hide "Additional Deduction"
+  ```
+
+- **Regola 2: calcolo reddito imponibile**
+
+  ```text
+  SET Taxable Income = Gross Salary - Additional Deduction
+  (Only when Additional Deduction applies)
+  ```
+
+- **Regola 3: calcolo imposta a debito**
+
+  ```text
+  SET Tax Payable = Taxable Income × 10%
+  (Simplified flat rate)
+  ```
+
++++
+
++++ Passaggio 1: creare il modulo di base
+
+**Obiettivo**: creare il modulo di base con tutti i campi e le impostazioni iniziali.
+
+1. **Apri editor universale**:
+   - Passa alla console AEM Sites, seleziona la pagina e fai clic su **Modifica**
+   - Verifica che [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) sia configurato correttamente
+
+2. **Aggiungi componenti modulo in questo ordine**:
+   - Titolo (H2): &quot;Modulo di calcolo delle imposte&quot;
+   - Numero Input: &quot;Stipendio lordo&quot; (obbligatorio: Sì, segnaposto: &quot;Inserisci stipendio annuale&quot;)
+   - Input numero: &quot;Detrazione aggiuntiva&quot; (obbligatorio: No, segnaposto: &quot;Inserire detrazioni aggiuntive&quot;)
+   - Input numero: &quot;Reddito imponibile&quot; (sola lettura: sì)
+   - Input numero: &quot;Imposta dovuta&quot; (sola lettura: sì)
+   - Pulsante Invia: &quot;Calcola imposta&quot;
+
+3. **Configurare le proprietà del campo iniziale**:
+   - Nascondi &quot;Detrazione aggiuntiva&quot; (set Visibile: no nel pannello Proprietà)
+   - Impostare &quot;Reddito imponibile&quot; e &quot;Imposta pagabile&quot; su Sola lettura: Sì
+
+![Schermata di un modulo di calcolo delle imposte con campi di input per lo stipendio lordo, lo stato civile e i figli dipendenti, che illustra la struttura del modulo prima dell&#39;applicazione delle regole](/help/edge/docs/forms/assets/rule-editor2.png)
+Figura: Struttura del modulo iniziale con componenti di base configurati
+
+**Checkpoint**: è necessario disporre di un modulo con tutti i campi obbligatori in cui &quot;Detrazione aggiuntiva&quot; è nascosto e i campi calcolati sono di sola lettura.
+
++++
+
++++ Passaggio 2: aggiungere la regola di visibilità condizionale
+
+**Obiettivo**: mostra il campo &quot;Detrazione aggiuntiva&quot; solo quando lo stipendio lordo supera i 50.000 dollari.
+
+1. **Selezionare il campo Stipendio lordo** e fare clic sull&#39;icona Editor regole ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
+2. **Crea una nuova regola**:
+   - Fai clic su **Crea**.
+   - Cambia il tipo di regola da &quot;Imposta valore di&quot; a **&quot;Quando&quot;**
+3. **Configura la condizione**:
+   - Seleziona **&quot;è maggiore di&quot;** dal menu a discesa
+   - Immetti `50000` nel campo numerico
+4. **Imposta l&#39;azione Then**:
+   - Scegli **&quot;Show&quot;** dal menu a discesa Seleziona azione
+   - Trascina o seleziona il campo **&quot;Detrazione aggiuntiva&quot;** dagli oggetti modulo
+5. **Aggiungi l&#39;azione Else**:
+   - Fare clic su **&quot;Aggiungi sezione Else&quot;**
+   - Scegli **&quot;Nascondi&quot;** dal menu a discesa Seleziona azione
+   - Seleziona campo **&quot;Detrazione aggiuntiva&quot;**
+6. **Salva la regola**: fai clic su **Fine**
 
 >[!NOTE]
 >
-> In alternativa, per implementare lo stesso comportamento, è possibile scrivere una regola Mostra nel campo Detrazione aggiuntiva, anziché una regola Quando nel campo Stipendio lordo.
+> Approccio alternativo: è possibile ottenere lo stesso risultato creando una regola Mostra/Nascondi direttamente nel campo &quot;Detrazione aggiuntiva&quot; invece di una regola Quando su &quot;Stipendio lordo&quot;.
 
 +++
 
-+++ &#x200B;3. Aggiungere regole di calcolo per i campi modulo
++++ Passaggio 3: aggiungere regole di calcolo
 
-Scrivi quindi una regola per calcolare il `Taxable Income`, che è la differenza tra `Gross Salary` e `Additional Deduction` (se applicabile). Per aggiungere la regola di calcolo nel campo **[!UICONTROL Reddito imponibile]**, esegui i seguenti passaggi:
+**Obiettivo**: calcolare automaticamente &quot;Reddito imponibile&quot; e &quot;Imposta pagabile&quot; in base all&#39;input dell&#39;utente.
 
-1. In modalità di authoring, seleziona il campo **[!UICONTROL Reddito imponibile]** e quindi l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). In alternativa, puoi selezionare il campo **[!UICONTROL Reddito imponibile]** direttamente dal riquadro **[!UICONTROL Oggetto Forms]**.
-1. Quindi, seleziona **[!UICONTROL Crea]** per creare la regola.
-   ![Editor di regole, esempio 13](/help/edge/docs/forms/assets/rule-editor16.png)
-1. Seleziona **[!UICONTROL Seleziona opzione]** e scegli **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
-   ![Editor di regole, esempio 14](/help/edge/docs/forms/assets/rule-editor17.png)
+**Configura calcolo reddito imponibile**:
 
-1. Nel campo per le espressioni matematiche:
+1. **Selezionare il campo &quot;Reddito imponibile&quot;** e aprire l&#39;editor di regole
+2. **Crea espressione matematica**:
+   - Fai clic su **Crea** → Seleziona **&quot;Espressione matematica&quot;**
+   - Espressione di compilazione: **Stipendio lordo − detrazione aggiuntiva**
+   - Trascinare &quot;Stipendio lordo&quot; nel primo campo
+   - Seleziona operatore **&quot;Meno&quot;**
+   - Trascina &quot;Detrazione aggiuntiva&quot; nel secondo campo
+3. **Salva**: fai clic su **Fine**
 
-   - Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Stipendio lordo]** nel primo campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
+**Configura calcolo imposta a debito**:
 
-   - Seleziona **[!UICONTROL Meno]** dal campo **[!UICONTROL Seleziona operatore]**.
-
-   - Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Detrazione aggiuntiva]** nell’altro campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
-     ![Editor di regole, esempio 15](/help/edge/docs/forms/assets/rule-editor18.png)
-
-1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.
-
-   Aggiungi ora una regola per il campo `Tax Payable `, determinata moltiplicando il reddito imponibile per l’aliquota fiscale. Per semplicità, supponiamo un’aliquota fissa di `10%`.
-
-1. In modalità di authoring, seleziona il campo **[!UICONTROL Imposta dovuta]** e seleziona l’icona ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Successivamente, seleziona **[!UICONTROL Crea]** per creare le regole.
-   ![Editor di regole, esempio 16](/help/edge/docs/forms/assets/rule-editor19.png)
-1. Seleziona **[!UICONTROL Seleziona opzione]** e seleziona **[!UICONTROL Espressione matematica]**. Si apre un campo in cui scrivere espressioni matematiche.
-   ![Editor di regole, esempio 17](/help/edge/docs/forms/assets/rule-editor20.png)
-1. Nel campo per le espressioni matematiche:
-
-   - Seleziona o trascina dalla scheda Oggetto modulo il campo **[!UICONTROL Reddito imponibile]** nel primo campo **[!UICONTROL Rilascia oggetto o seleziona qui]**.
-
-   - Seleziona **[!UICONTROL Moltiplicato per]** dal campo **[!UICONTROL Seleziona operatore]**.
-
-   - Seleziona **Numero** dal campo **[!UICONTROL Seleziona opzione]** e immetti il valore `10` nel campo **[!UICONTROL Immetti un numero]**.
-     ![Editor di regole, esempio 18](/help/edge/docs/forms/assets/rule-editor21.png)
-1. Quindi, seleziona nell’area evidenziata intorno al campo espressione e seleziona **[!UICONTROL Estendi espressione]**.
-   ![Editor di regole, esempio 19](/help/edge/docs/forms/assets/rule-editor22.png)
-1. Nel campo espressione estesa, seleziona **[!UICONTROL diviso per]** dal campo **[!UICONTROL Seleziona operatore]** e **[!UICONTROL Numero]** dal campo **[!UICONTROL Seleziona opzione]**. Quindi, specifica `100` nel campo Numero.
-   ![Editor di regole, esempio 20](/help/edge/docs/forms/assets/rule-editor23.png)
-1. Per salvare la regola, seleziona **[!UICONTROL Fine]**.
+1. **Selezionare il campo &quot;Imposta dovuta&quot;** e aprire l&#39;editor di regole
+2. **Crea espressione matematica**:
+   - Fai clic su **Crea** → Seleziona **&quot;Espressione matematica&quot;**
+   - Espressione di compilazione: **Reddito imponibile × 10 ÷ 100**
+   - Trascinare &quot;Reddito imponibile&quot; nel primo campo
+   - Seleziona **&quot;Moltiplicato per&quot;** operatore
+   - Immetti `10` come numero
+   - Fare clic su **&quot;Estendi espressione&quot;**
+   - Seleziona **&quot;diviso per&quot;** operatore
+   - Immetti `100` come numero
+3. **Salva**: fai clic su **Fine**
 
 +++
 
-+++ &#x200B;4. Visualizzare l’anteprima di un modulo
++++ Passaggio 4: verifica del modulo
 
-Ora, quando visualizzi l’anteprima del modulo e immetti come **Stipendio lordo** `60,000`, viene visualizzato il campo **Detrazione aggiuntiva** e vengono calcolati di conseguenza il **Reddito imponibile** e l’**Imposta dovuta**.
+**Verifica l&#39;implementazione sottoponendo a test il flusso completo**:
 
-![Visualizzare l’anteprima di un modulo](/help/edge/docs/forms/assets/rule-editor-form.png)
+1. **Anteprima modulo**: fare clic sulla modalità di anteprima in Universal Editor
+2. **Verifica la logica condizionale**:
+   - Immettere lo stipendio lordo = `30000` → &quot;Detrazione aggiuntiva&quot; deve rimanere nascosta
+   - Immettere lo stipendio lordo = `60000` → dovrebbe essere visualizzata la &quot;detrazione aggiuntiva&quot;
+3. **Calcoli del test**:
+   - Con Stipendio lordo = `60000`, immettere Detrazione aggiuntiva = `5000`
+   - Verifica reddito imponibile = `55000` (60000 - 5000)
+   - Verifica imposta a debito = `5500` (55000 × 10%)
+
+![Anteprima modulo](/help/edge/docs/forms/assets/rule-editor-form.png)
+Figura: Calcolatore imposte completato con campi condizionali e calcoli automatici
+
+**Criteri di successo**: il modulo deve mostrare/nascondere dinamicamente i campi e calcolare i valori in tempo reale durante la digitazione da parte degli utenti.
+
 
 +++
-
-Oltre alle funzioni incorporate come Somma e Media, puoi creare funzioni personalizzate per implementare logiche di business complesse personalizzate in base alle tue esigenze.
 
 ## Avanzate: funzioni personalizzate
 
-**Quando utilizzare le funzioni personalizzate:**
+Per una logica di business complessa oltre le funzionalità incorporate, puoi creare funzioni JavaScript personalizzate che si integrano perfettamente con l’Editor di regole.
 
-- Per calcoli complessi che vanno oltre le funzionalità delle funzioni integrate
-- Per implementare regole di convalida specifiche per l&#39;azienda
-- Per la trasformazione e la formattazione dei dati
-- Per l’integrazione con sistemi o API esterni
++++ Quando utilizzare funzioni personalizzate
 
-**Vantaggi:**
+**Scenari ideali per le funzioni personalizzate**:
 
-- **Riutilizzabilità**: scrivere la funzione una sola volta e utilizzarla in più moduli e regole
-- **Manutenzione**: logica centralizzata facile da aggiornare
-- **Prestazioni**: esecuzione JavaScript ottimizzata
-- **Flessibilità**: possibilità di gestire scenari complessi non gestiti da regole standard
+- **Calcoli complessi**: i calcoli a più passaggi non sono facilmente espressi nella regola Espressione matematica
+- **Convalide specifiche per l&#39;azienda**: logica di convalida personalizzata specifica per l&#39;organizzazione o il settore
+- **Trasformazioni dati**: conversioni di formati, manipolazioni di stringhe o analisi dei dati
+- **Integrazioni esterne**: chiamate alle API interne o a servizi di terze parti (con limitazioni)
 
-### **Creazione di funzioni personalizzate**
+**Vantaggi delle funzioni personalizzate**:
 
-**Posizione file**: `/blocks/form/functions.js` nel progetto AEM
+- **Riutilizzabilità**: scrittura singola, utilizzo in più moduli e regole
+- **Manutenzione**: logica centralizzata più semplice da aggiornare ed eseguire il debug
+- **Prestazioni**: esecuzione di JavaScript ottimizzata rispetto a catene di regole complesse
+- **Flessibilità**: gestisci casi edge e scenari complessi non gestiti da regole standard
 
-**Flusso di lavoro di sviluppo:**
++++
 
-1. **Dichiarazione funzione**
-   - Definire nomi e parametri di funzioni chiari e descrittivi
-   - Utilizzare nomi che indicano lo scopo della funzione
-   - Parametri del documento e tipi restituiti
++++ Creazione e implementazione di funzioni personalizzate
 
-2. **Implementazione logica**
-   - Scrittura di codice JavaScript pulito ed efficiente
-   - Gestire casi edge e scenari di errore
-   - Segui le best practice di codifica
+**Percorso file**: tutte le funzioni personalizzate devono essere definite in `/blocks/form/functions.js` nel progetto Edge Delivery Services.
 
-3. **Esportazione funzione**
-   - Esporta funzioni per renderle disponibili nell’Editor di regole
-   - Utilizzare esportazioni denominate per una migliore organizzazione
-   - Test delle funzioni prima della distribuzione
+**Flusso di lavoro di sviluppo**:
 
-4. **documentazione**
-   - Aggiungere commenti JSDoc per la documentazione della funzione
-   - Includi esempi di utilizzo
-   - Specificare i tipi di parametri e i valori restituiti
+1. **Progettazione funzione**
+   - Utilizzare nomi di funzione descrittivi e orientati alle azioni
+   - Definisci i tipi di parametri e i valori restituiti
+   - Gestione corretta dei casi edge e degli input non validi
 
-L&#39;esempio seguente illustra due funzioni personalizzate: `getFullName` e `days`.
+2. **Implementazione**
+   - Scrivi JavaScript pulito e ben commentato
+   - Includi convalida input e gestione degli errori
+   - Verifica delle funzioni in modo indipendente prima dell’integrazione
 
-```JavaScript
+3. **documentazione**
+   - Aggiungere commenti JSDoc completi
+   - Includi esempi di utilizzo e descrizioni dei parametri
+   - Documentare eventuali limitazioni o dipendenze
+
+4. **Distribuzione**
+   - Esportare funzioni utilizzando esportazioni denominate
+   - Implementare nell’archivio del progetto
+   - Verifica il completamento della build prima del test
+
+**Implementazione di esempio**:
+
+```javascript
 /**
- - Get Full Name
- - @name getFullName Concats first name and last name
- - @param {string} firstname in Stringformat
- - @param {string} lastname in Stringformat
- - @return {string}
+ * Concatenates first and last name with proper formatting
+ * @name getFullName
+ * @description Combines first and last name, handles edge cases like missing values
+ * @param {string} firstName - The person's first name
+ * @param {string} lastName - The person's last name  
+ * @returns {string} Formatted full name or empty string if both inputs are invalid
  */
-function getFullName(firstname, lastname) {
-  return `${firstname} ${lastname}`.trim();
+function getFullName(firstName, lastName) {
+  // Handle null, undefined, or empty string inputs
+  const first = (firstName || '').toString().trim();
+  const last = (lastName || '').toString().trim();
+  
+  return `${first} ${last}`.trim();
 }
 
 /**
- - Calculate the number of days between two dates.
- - @param {*} endDate
- - @param {*} startDate
- - @name days Calculates the numebr of days between two dates
- - @returns {number} returns the number of days between two dates
+ * Calculates the number of days between two dates
+ * @name days
+ * @description Computes absolute difference in days, handles various date input formats
+ * @param {Date|string} endDate - End date (Date object or ISO string)
+ * @param {Date|string} startDate - Start date (Date object or ISO string)
+ * @returns {number} Number of days between dates, 0 if inputs are invalid
  */
 function days(endDate, startDate) {
+  // Convert string inputs to Date objects
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
 
-  // return zero if dates are valid
+  // Validate date objects
   if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
     return 0;
   }
 
+  // Calculate absolute difference in milliseconds, then convert to days
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
-// eslint-disable-next-line import/prefer-default-export
+// Export functions for use in Rule Editor
 export { getFullName, days };
 ```
 
-![Aggiunta di una funzione personalizzata](/help/edge/docs/forms/assets/create-custom-function.png)
+![Aggiunta funzione personalizzata](/help/edge/docs/forms/assets/create-custom-function.png)
+Figura: Aggiunta di funzioni personalizzate al file functions.js
 
-### Utilizzare una funzione personalizzata nell’editor di regole
++++
 
-Per utilizzare una funzione personalizzata nell’editor di regole:
++++ Utilizzo di funzioni personalizzate nell’editor delle regole
 
-1. **Aggiungi funzione**: aggiungi la funzione personalizzata al file `../[blocks]/form/functions.js`. Assicurarsi di includerlo nell&#39;istruzione `export` nel file.
-2. **Distribuisci il file**: distribuisci il file `functions.js` aggiornato nel progetto GitHub e verifica che la compilazione sia stata completata correttamente.
-3. **Utilizzo funzione**: nell&#39;Editor regole del modulo, accedere alla funzione selezionando l&#39;opzione `Function Output` nel campo **[!UICONTROL Seleziona azione]**.
+**Passaggi dell&#39;integrazione**:
 
-   ![Funzione personalizzata nell’editor di regole](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+1. **Aggiungi funzione al progetto**
+   - Crea o modifica `/blocks/form/functions.js` nel progetto
+   - Includi la funzione nell’istruzione di esportazione
 
-4. **Anteprima del modulo**: visualizza l&#39;anteprima del modulo per verificare che la nuova funzione implementata funzioni come previsto.
+2. **Distribuisci e genera**
+   - Eseguire il commit delle modifiche nell&#39;archivio
+   - Verifica del completamento del processo di compilazione
+   - Consenti aggiornamenti cache CDN
 
-## Best practice per lo sviluppo delle regole
+3. **Accesso nell&#39;editor di regole**
+   - Apri l’editor di regole per qualsiasi componente del modulo
+   - Seleziona **&quot;Output funzione&quot;** nel menu a discesa **Seleziona azione**
+   - Scegliere la funzione personalizzata dall&#39;elenco delle funzioni disponibili
+   - Configurare i parametri della funzione utilizzando campi modulo o valori statici
 
-### **Ottimizzazione delle prestazioni**
+4. **Verifica completa**
+   - Visualizza l&#39;anteprima del modulo per verificare il comportamento della funzione
+   - Test con varie combinazioni di input, inclusi casi limite
+   - Verificare l’impatto delle prestazioni sul caricamento e sull’interazione dei moduli
 
-**Ridurre Al Minimo La Complessità Delle Regole**
+![Funzione personalizzata nell&#39;editor di regole](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+Figura: Selezione e configurazione di funzioni personalizzate nell’interfaccia dell’editor di regole
 
-- Mantieni le singole regole semplici e mirate.
-- Suddividi la logica complessa in più regole più piccole.
-- Se possibile, evita le condizioni annidate in profondità.
+**Best practice per l&#39;utilizzo delle funzioni**:
 
-**Ottimizza esecuzione regola**
+- **Gestione degli errori**: includi sempre il comportamento di fallback per gli errori di funzione
+- **Prestazioni**: funzioni di profilo con volumi di dati realistici
+- **Sicurezza**: convalida di tutti gli input per evitare vulnerabilità di sicurezza
+- **Test**: crea test case che coprono casi normali e edge
 
-- Inserisci prima le regole attivate più di frequente.
-- Utilizza condizioni specifiche per ridurre le valutazioni non necessarie.
-- Considera l’impatto delle regole sul tempo di caricamento dei moduli.
++++
 
-**Gestione risorse**
+## Best practice per lo sviluppo di regole
 
-- Limita il numero di regole per componente modulo.
-- Utilizza funzioni personalizzate per logica ripetuta invece di duplicare le regole.
-- Verifica le prestazioni con volumi di dati realistici.
 
-### **Linee guida per l&#39;esperienza utente**
++++ Ottimizzazione delle prestazioni
 
-**Cancella feedback**
+- Ridurre al minimo la complessità delle regole; suddividere la logica di grandi dimensioni in regole piccole e mirate
+- Ordina le regole in base alla frequenza (prima le più comuni)
+- Mantieni gestibili i set di regole per componente
+- Preferisci funzioni personalizzate riutilizzabili rispetto alla logica di duplicazione
 
-- Utilizzare messaggi di convalida che guidano gli utenti verso l&#39;input corretto.
-- Mostra gli indicatori di caricamento per le regole che coinvolgono servizi esterni.
-- Implementa la divulgazione progressiva per ridurre il carico cognitivo.
++++
 
-**Gestisci reattività modulo**
++++ Esperienza utente
 
-- Evita le regole che causano improvvisi cambiamenti visivi.
-- Implementare transizioni graduali per le operazioni di visualizzazione/nascondere.
-- Verifica le regole su dispositivi e dimensioni di schermo diversi.
+- Fornire una convalida chiara e un feedback in linea
+- Evita di alterare le modifiche visive; usa mostra/nascondi attentamente
+- Test tra dispositivi e layout
 
-**Gestione errori**
++++
 
-- Fornisci un comportamento di fallback quando le regole non riescono.
-- Visualizzare messaggi di errore intuitivi.
-- Registra gli errori per il debug mantenendo un’esperienza utente positiva.
++++ Igiene dello sviluppo
 
-### **Best practice per lo sviluppo**
+- Test con casi limite e valori noti
+- Verifica tra browser
+- Intento del documento alla base di regole complesse, non solo meccanica
+- Gestisci un inventario di regole per i moduli di grandi dimensioni
+- Utilizza nomi coerenti per componenti e regole
+- Funzioni personalizzate della versione e test in ambienti non di produzione
 
-**Strategia di test**
-
-- Verifica le regole con casi di spigoli e valori limite.
-- Verifica il comportamento delle regole tra browser diversi.
-- Test della funzionalità dei moduli con e senza JavaScript abilitato.
-
-**documentazione**
-
-- Documentare la logica di business alla base di regole complesse.
-- Gestisce un inventario di regole per i moduli di grandi dimensioni.
-- Utilizza convenzioni di denominazione coerenti per componenti e regole.
-
-**Controllo versione**
-
-- Tieni traccia delle modifiche alle funzioni personalizzate nel controllo della versione.
-- Test delle regole in un ambiente di sviluppo prima della produzione.
-- Gestisci copie di backup delle configurazioni delle regole di lavoro.
++++
 
 ## Risoluzione dei problemi comuni
 
-### **Problemi di esecuzione delle regole**
 
-**Impossibile attivare le regole**
++++ Le regole non vengono attivate
 
-- **Controllare i nomi dei componenti**: verificare che i componenti a cui si fa riferimento esistano e che i nomi siano corretti.
-- **Verifica ordine regole**: le regole vengono eseguite dall&#39;alto verso il basso; riordinarle se necessario.
-- **Convalida condizioni**: condizioni di test con valori noti per verificare la logica.
-- **Console browser**: verificare la presenza di errori JavaScript che potrebbero bloccare l&#39;esecuzione.
+- Verifica dei nomi e dei riferimenti dei componenti
+- Controlla ordine di esecuzione (dall’alto verso il basso)
+- Convalida condizioni con valori noti
+- Controlla la console del browser per individuare eventuali errori di blocco
 
-**Comportamento regola non corretto**
++++
 
-- **Operatori logici di revisione**: verificare che le condizioni AND/OR siano strutturate correttamente.
-- **Verifica con dati di esempio**: utilizza valori noti per isolare i problemi.
-- **Controllare i tipi di dati**: assicurarsi che i confronti numerici utilizzino numeri, non stringhe.
-- **Convalida espressioni**: verifica le espressioni matematiche separatamente.
++++ Comportamento errato
 
-### **Problemi relativi alle prestazioni**
+- Verifica operatori e raggruppamenti (AND/OR)
+- Test dei singoli frammenti di espressione
+- Conferma tipi di dati (numeri e stringhe)
 
-**Risposta modulo lenta**
++++
 
-- **Ridurre la complessità delle regole**: semplificare la logica condizionale complessa.
-- **Ottimizzare le funzioni personalizzate**: profilare e ottimizzare il codice JavaScript.
-- **Limita chiamate esterne**: riduci al minimo le chiamate al servizio nelle regole.
-- **Utilizzare selettori efficienti**: verificare che i riferimenti agli oggetti modulo siano specifici.
++++ Problemi relativi alle prestazioni
 
-**Utilizzo memoria**
+- Semplificare le condizioni profondamente nidificate
+- Funzioni personalizzate del profilo
+- Riduci a icona le chiamate esterne all&#39;interno delle regole
+- Utilizzare selettori e riferimenti specifici
 
-- **Pulizia listener di eventi**: rimuovere le associazioni di regole non utilizzate.
-- **Ottimizzare le funzioni personalizzate**: evitare perdite di memoria nel codice JavaScript.
-- **Limita ambito regola**: utilizza regole di destinazione anziché condizioni globali.
++++
 
-### **Problemi con la funzione personalizzata**
++++ Problemi relativi alla funzione personalizzata
 
-**Funzioni non disponibili**
+- Conferma percorso file: `/blocks/form/functions.js`
+- Verificare che le esportazioni denominate siano corrette
+- Conferma che la build includa le modifiche
+- Cancella cache del browser dopo la distribuzione
+- Convalidare i tipi di parametri e la gestione degli errori
 
-- **Controllare il percorso del file**: verificare che `functions.js` si trovi nel percorso corretto: `/blocks/form/functions.js`.
-- **Verifica esportazioni**: verificare che le funzioni siano esportate correttamente.
-- **Processo di compilazione**: verificare che la compilazione del progetto includa il file delle funzioni aggiornato.
-- **Cancellazione della cache**: cancella la cache del browser dopo aver distribuito nuove funzioni.
++++
 
-**Errori di funzione**
++++ Integrazione con Universal Editor
 
-- **Convalida parametro**: verificare che i parametri della funzione corrispondano ai tipi previsti.
-- **Gestione degli errori**: aggiungi blocchi try-catch per gestire le eccezioni in modo corretto.
-- **Registrazione console**: utilizzare console.log per l&#39;esecuzione della funzione di debug.
-- **Convalida JSDoc**: verifica che la documentazione della funzione corrisponda all&#39;implementazione.
-
-### **Integrazione editor universale**
-
-**Editor Regole Non Visualizzato**
-
-- **Estensione abilitata**: verificare che l&#39;estensione dell&#39;editor di regole sia attivata.
-- **Selezione di componenti**: verificare di aver selezionato un componente modulo supportato.
-- **Compatibilità browser**: verifica nei browser supportati (Chrome, Firefox, Safari).
-- **Autorizzazioni di accesso**: verificare che l&#39;utente disponga delle autorizzazioni AEM necessarie.
-
-**Problemi di interfaccia**
-
-- **Visibilità pannello**: utilizzare il pulsante di attivazione/disattivazione per mostrare o nascondere il pannello oggetti modulo.
-- **Salvataggio regola**: assicurati che le regole siano salvate prima di chiudere l&#39;editor.
-- **Zoom del browser**: reimposta lo zoom del browser al 100% per una visualizzazione ottimale dell&#39;interfaccia.
+- Conferma che l’estensione Editor regole sia abilitata
+- Seleziona un componente supportato
+- Utilizza un browser supportato (Chrome, Firefox, Safari)
+- Verifica di disporre delle autorizzazioni necessarie
 
 ## Limitazioni importanti
 
 >[!IMPORTANT]
 >
-> **Restrizioni funzioni personalizzate**:
+> Vincoli di funzione personalizzati:
 >
-> - Le importazioni statiche e dinamiche non sono supportate negli script di funzioni personalizzati.
-> - Tutto il codice deve essere incluso direttamente nel file `/blocks/form/functions.js`.
-> - Le funzioni devono essere sincrone (senza async/await o Promises).
-> - L’accesso alle API del browser è limitato per motivi di sicurezza.
+> - Importazioni statiche/dinamiche non supportate
+> - Tutta la logica deve risiedere in `/blocks/form/functions.js`
+> - Le funzioni devono essere sincrone (no async/await or Promises)
+> - L’accesso all’API del browser è limitato
 
 >[!WARNING]
 >
-> **Considerazioni sulla produzione**:
+> Considerazioni sulla produzione:
 >
-> - Verifica a fondo tutte le regole in un ambiente di staging.
-> - Monitora le prestazioni dei moduli dopo la distribuzione di regole complesse.
-> - Disporre di un piano di ripristino per i problemi correlati alle regole.
-> - Considera l’impatto sugli utenti con connessioni di rete lente.
+> - Esegui il test completo nella gestione temporanea
+> - Monitorare le prestazioni dopo l’implementazione
+> - Disponi di un piano di ripristino per i problemi relativi alle regole
+> - Considerare reti lente e dispositivi a basse specifiche
 
 ## Riepilogo
 
-L’Editor di regole nell’Editor universale consente di creare moduli intelligenti e dinamici che forniscono esperienze utente eccezionali. Implementando la logica condizionale, i calcoli automatizzati e le regole aziendali personalizzate, è possibile:
+L’editor di regole di Universal Editor trasforma i moduli statici in esperienze intelligenti e reattive che si adattano all’input dell’utente in tempo reale. Sfruttando la logica condizionale, i calcoli automatizzati e le regole aziendali personalizzate, è possibile creare flussi di lavoro di moduli sofisticati senza scrivere il codice dell’applicazione.
 
-**Trasforma Forms statico**:
+**Funzionalità chiave acquisite**:
 
-- Aggiunta della visibilità dei campi condizionali per interfacce più pulite e mirate.
-- Implementa calcoli in tempo reale e convalida dei dati.
-- Crea una logica di business sofisticata senza codificare.
+- **Logica condizionale**: mostra e nascondi i campi in base all&#39;input dell&#39;utente per creare esperienze mirate e rilevanti
+- **Calcoli dinamici**: calcola automaticamente i valori (imposte, totali, tassi) durante l&#39;interazione degli utenti con il modulo
+- **Convalida dei dati**: implementa la convalida in tempo reale con messaggi di feedback chiari e actionable
+- **Funzioni personalizzate**: estendere le funzionalità con JavaScript per logiche di business e integrazioni complesse
+- **Ottimizzazione delle prestazioni**: applica le best practice per uno sviluppo delle regole gestibile ed efficiente
 
-**Migliora l&#39;esperienza utente**:
+**Valore consegnato**:
 
-- Guida gli utenti attraverso i flussi di moduli logici.
-- Riduci gli errori con la convalida intelligente.
-- Fornisci feedback e assistenza immediati.
+- **Esperienza utente migliorata**: riduci il carico cognitivo con la divulgazione progressiva e i flussi di moduli intelligenti
+- **Errori ridotti**: impedisci invii non validi tramite convalida in tempo reale e input guidato
+- **Maggiore efficienza**: automazione dei calcoli e dell&#39;immissione dei dati per ridurre al minimo il lavoro dell&#39;utente
+- **Soluzioni gestibili**: crea regole riutilizzabili e ben documentate su larga scala nell&#39;organizzazione
 
-**Maggiore efficienza**:
+**Impatto aziendale**:
 
-- Automatizzare i calcoli ripetitivi e l&#39;immissione dei dati.
-- Semplifica i flussi di lavoro complessi con il routing intelligente.
-- Riduzione del carico di supporto con funzionalità self-service.
+Forms diventa uno strumento potente per la raccolta di dati, la qualifica dei lead e il coinvolgimento degli utenti. L’editor di regole consente agli autori non tecnici di implementare una logica di business sofisticata, riducendo i costi di sviluppo e migliorando al contempo i tassi di completamento dei moduli e la qualità dei dati.
 
-### **Passaggi successivi**
++++
 
-Ora che conosci le nozioni di base dell’Editor regole:
++++ Passaggi successivi
 
-1. **Inizia semplice**: inizia con le regole di base per mostrare/nascondere prima di passare a calcoli complessi.
-1. **Esercitazione con esempi**: utilizzare l&#39;esercitazione del calcolatore delle imposte come base.
-1. **Esplora le funzionalità avanzate**: prova le funzioni personalizzate per i requisiti specifici.
-1. **Verifica approfondita**: convalida sempre le regole in scenari e dispositivi diversi.
-1. **Monitoraggio delle prestazioni**: assicurarsi che le regole migliorino l&#39;esperienza utente anziché ostacolarla.
+**Percorso consigliato**:
+
+1. **Inizia con le nozioni di base**: crea semplici regole di visualizzazione per comprendere i concetti di base
+2. **Esercitazione con i tutorial**: utilizza l&#39;esempio del calcolatore delle imposte come base per i moduli
+3. **Espandi gradualmente**: aggiungi espressioni matematiche e regole di convalida man mano che la tua affidabilità cresce
+4. **Implementazione di funzioni personalizzate**: sviluppo di funzioni JavaScript per esigenze aziendali specifiche
+5. **Ottimizza e ridimensiona**: applica le best practice per le prestazioni e mantieni la documentazione sulle regole
+
+**Risorse aggiuntive**:
+
+- [Documentazione di Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) per un contesto più ampio
+- [Guida di Extension Manager](/help/implementing/developing/extending/extension-manager.md) per abilitare funzionalità aggiuntive
+- [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) per informazioni complete sullo sviluppo di moduli
+
++++

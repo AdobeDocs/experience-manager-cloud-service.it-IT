@@ -1,13 +1,13 @@
 ---
+title: Come si inviano i dati a un archivio dell’elenco SharePoint all’invio di un modulo adattivo?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: Come connettere l’elenco di SharePoint per un modulo adattivo?, Invia a SharePoint, Crea configurazione elenco SharePoint, Utilizza l’azione di invio Invia a SharePoint in un modulo adattivo, Connetti un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: Come si configura un’azione di invio per un modulo adattivo?
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---

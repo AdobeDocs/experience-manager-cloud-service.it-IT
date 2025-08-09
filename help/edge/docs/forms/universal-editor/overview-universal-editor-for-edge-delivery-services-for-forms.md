@@ -4,10 +4,10 @@ description: Utilizza l’editor universale di moduli per Edge Delivery Services
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Che si tratti di gestire un rendering snello lato client, garantire la compatibi
 
 | ![Definizione dello stile](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Servizi di precompilazione](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Test A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Definizione dello stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Servizi di precompilazione** (disponibile a breve) | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Definizione dello stile**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Moduli precompilati](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**Test A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | La definizione dello stile con CSS consente agli sviluppatori di personalizzare l’aspetto degli elementi del modulo e di creare un design visivamente accattivante e allineato all’estetica del sito web. | I servizi di precompilazione compilano automaticamente i campi del modulo con i dati utente pertinenti provenienti da varie origini, riducendo l’input manuale e migliorando l’esperienza utente. | Il test A/B consente alle organizzazioni di sperimentare diverse progettazioni, layout e funzionalità nei moduli per individuare le varianti che offrono prestazioni migliori. |
 
 | ![Analisi e tracciamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Frammenti di modulo](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associazione dei dati](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
