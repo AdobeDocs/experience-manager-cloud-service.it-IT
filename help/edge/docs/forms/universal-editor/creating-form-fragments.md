@@ -16,7 +16,7 @@ ht-degree: 40%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 -->
 
 I frammenti di modulo sono componenti riutilizzabili che eliminano il lavoro di sviluppo ripetitivo e garantiscono la coerenza tra i moduli dell’organizzazione. Invece di ricreare sezioni comuni come informazioni di contatto, dettagli sull’indirizzo o accordi di consenso per ogni modulo, puoi creare questi elementi una volta come frammenti e riutilizzarli in più moduli.

@@ -308,7 +308,7 @@ Verrà creato un modulo che:
 
 1. **Apri editor universale**:
    - Passa alla console AEM Sites, seleziona la pagina e fai clic su **Modifica**
-   - Verifica che [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) sia configurato correttamente
+   - Verifica che [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=it) sia configurato correttamente
 
 2. **Aggiungi componenti modulo in questo ordine**:
    - Titolo (H2): &quot;Modulo di calcolo delle imposte&quot;
@@ -676,7 +676,7 @@ Forms diventa uno strumento potente per la raccolta di dati, la qualifica dei le
 
 **Risorse aggiuntive**:
 
-- [Documentazione di Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) per un contesto più ampio
+- [Documentazione di Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=it) per un contesto più ampio
 - [Guida di Extension Manager](/help/implementing/developing/extending/extension-manager.md) per abilitare funzionalità aggiuntive
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) per informazioni complete sullo sviluppo di moduli
 
