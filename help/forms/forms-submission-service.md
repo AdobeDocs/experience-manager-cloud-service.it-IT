@@ -384,8 +384,8 @@ Content-Type: application/json
 x-adobe-routing: tier=live,bucket=main—your-repo—your-org
 
 Corpo (JSON):
-{
-&quot;data&quot;: {
+&lbrace;
+&quot;data&quot;: &lbrace;
 &quot;startDate&quot;: &quot;2025-01-10&quot;,
 &quot;endDate&quot;: &quot;2025-01-25&quot;,
 &quot;destinazione&quot;: &quot;Australia&quot;,
@@ -396,8 +396,8 @@ Corpo (JSON):
 &quot;age&quot;: &quot;35&quot;,
 &quot;subscribe&quot;: null,
 &quot;email&quot;: &quot;mary@gmail.com&quot;
-}
-}
+&rbrace;
+&rbrace;
 &quot;
 
 **Risposta prevista:**

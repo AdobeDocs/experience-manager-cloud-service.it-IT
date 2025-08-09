@@ -338,7 +338,7 @@ Il layout Pannello a soffietto consente di organizzare i contenuti in sezioni co
 
 +++
 
-Destinazioni +++Touch troppo piccole
++++Destinazioni Touch troppo piccole
 
 **Cause possibili:**
 

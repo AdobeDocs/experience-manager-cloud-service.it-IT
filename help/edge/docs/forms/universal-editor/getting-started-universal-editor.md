@@ -184,9 +184,9 @@ Il file `fstab.yaml` collega l&#39;archivio GitHub all&#39;ambiente di authoring
 
 **Convalida:** Conferma la connessione dell&#39;archivio GitHub ad AEM.
 
-    >[!NOTA]
+    >[ !NOTA]
     >
->Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
+    >Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -715,7 +715,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-Problemi relativi alla build di +++GitHub
++++Problemi relativi alla build di GitHub
 
 **Problema:** errori di compilazione o di puntamento
 
@@ -780,7 +780,7 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
-Problemi relativi alla funzionalità dei +++moduli
++++Problemi relativi alla funzionalità dei moduli
 
 **Problema:** invii modulo non funzionanti
 
