@@ -115,7 +115,7 @@ Scegli una delle piattaforme supportate:
 
 >[!TIP]
 >
->**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
+>**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
 
 ## Metodi di configurazione
 
@@ -135,7 +135,7 @@ Il servizio di invio Forms offre due approcci di configurazione. Scegli il metod
 
 Prima di configurare uno di questi metodi, assicurati che le basi del progetto AEM siano pronte:
 
-1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 1. **Aggiorna`fstab.yaml`** nella directory principale del progetto:
 
    ```yaml
@@ -166,7 +166,7 @@ Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 1. **Apri la piattaforma del foglio di calcolo** (fogli di Google o Microsoft Excel)
 1. **Crea un nuovo foglio di calcolo** per il progetto modulo
 1. **Denomina il foglio** (deve essere `helix-default` o `shared-aem`)
-1. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+1. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definizione modulo](/help/forms/assets/form-submission-definition.png)
 *Esempio: definizione modulo con tipi di campo, etichette e regole di convalida*
@@ -579,7 +579,7 @@ Ora che hai configurato il servizio di invio Forms, scopri i seguenti argomenti 
 
 +++ Migliora il tuo Forms
 
-- **[Crea Forms avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
+- **[Crea Forms avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
 - **[Guida ai componenti del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Esplora i tipi di campo modulo disponibili
 
 +++
