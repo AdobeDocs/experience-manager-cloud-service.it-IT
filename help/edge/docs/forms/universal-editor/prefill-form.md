@@ -249,7 +249,7 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Scegli **Anteprima come HTML**
 4. Verifica la precompilazione aggiungendo i parametri all’URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Esempio:**
 
