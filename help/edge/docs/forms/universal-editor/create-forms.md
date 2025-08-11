@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 3%
@@ -41,10 +41,12 @@ Prima di iniziare, determinare quale tipo di modello è allineato ai requisiti:
 
 **Guida alla decisione:**
 
+![Decisione selezione modello](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Utilizza **Componenti core** per flussi di lavoro complessi, integrazione deep AEM o se utilizzi risorse AEM esistenti.
 - Utilizza **Edge Delivery Services** per prestazioni, semplicità e pratiche di sviluppo moderne.
 
-![Decisione selezione modello](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Diagramma di flusso delle decisioni per la scelta del tipo di modello appropriato*
 
 ## Prerequisiti

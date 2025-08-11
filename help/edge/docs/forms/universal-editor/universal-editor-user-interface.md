@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 4%
@@ -507,19 +507,19 @@ Utilizza queste scelte rapide per creare moduli in modo più rapido ed efficient
 - **Pianifica prima della compilazione** - Crea uno schizzo della struttura del modulo prima dell&#39;inizio
 - **Semplifica** - Evita di sopraffare gli utenti con troppi campi
 
-### **Ottimizzazione delle prestazioni**
-
-- **Riduci a icona i componenti** - Utilizza solo i campi modulo necessari
-- **Ottimizza immagini** - Comprimi tutte le immagini utilizzate nei moduli
-- **Test su dispositivi mobili** - Garantire buone prestazioni su connessioni mobili più lente
-- **Convalida anticipata** - Imposta la convalida corretta per evitare errori di invio
-
 ### **Esperienza utente**
 
 - **Test frequente** - Utilizza la modalità Anteprima dopo ogni modifica importante
 - **Pensa come utenti** - Considera l&#39;esperienza completa di compilazione dei moduli
 - **Fornisci etichette chiare** - Rendi evidenti gli scopi del campo agli utenti
 - **Aggiungi testo utile** - Utilizza testo della Guida per campi complessi
+
+### **Ottimizzazione delle prestazioni**
+
+- **Riduci a icona i componenti** - Utilizza solo i campi modulo necessari
+- **Ottimizza immagini** - Comprimi tutte le immagini utilizzate nei moduli
+- **Test su dispositivi mobili** - Garantire buone prestazioni su connessioni mobili più lente
+- **Convalida anticipata** - Imposta la convalida corretta per evitare errori di invio
 
 ## Passaggi successivi
 

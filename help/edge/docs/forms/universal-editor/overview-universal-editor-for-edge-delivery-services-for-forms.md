@@ -4,7 +4,7 @@ description: Utilizza l’editor universale di moduli per Edge Delivery Services
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 99%
@@ -173,11 +173,13 @@ Assolutamente. L’editor universale supporta l’associazione diretta dei dati 
 **D: è possibile personalizzare i componenti del modulo?**
 Sì, l’editor universale consente agli sviluppatori di creare componenti personalizzati in base a esigenze organizzative specifiche. Inoltre, puoi estendere le funzionalità dell’editor tramite estensioni dell’interfaccia utente e flussi di lavoro personalizzati.
 
+**D: che tipo di analisi è possibile ottenere dai moduli?**
+L’editor universale include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
+
 **D: in che modo l’editor universale gestisce l’accessibilità?**
 L’editor universale è progettato in modo da rispettare rigorosamente gli standard di accessibilità, incluse le linee guida per l’accessibilità dei contenuti WCAG (Web Content Accessibility Guidelines). In questo modo i moduli sono utilizzabili da persone affette da disabilità e forniscono un’esperienza inclusiva.
 
-**D: che tipo di analisi è possibile ottenere dai moduli?**
-L’editor universale include strumenti di analisi e tracciamento incorporati per monitorare le interazioni degli utenti, i tassi di invio dei moduli e le metriche di conversione. Queste informazioni consentono di ottimizzare i moduli per ottenere prestazioni migliori.
+
 
 
 

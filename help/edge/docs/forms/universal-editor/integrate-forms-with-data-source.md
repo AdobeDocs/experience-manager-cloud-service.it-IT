@@ -1,13 +1,13 @@
 ---
 title: Come integrare il modello dati modulo (FDM) per un modulo nell’editor universale?
-description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
+description: Scopri come creare moduli per i servizi di consegna edge basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 33%
+source-wordcount: '716'
+ht-degree: 31%
 
 ---
 

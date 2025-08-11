@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 1%
@@ -184,9 +184,9 @@ Il file `fstab.yaml` collega l&#39;archivio GitHub all&#39;ambiente di authoring
 
 **Convalida:** Conferma la connessione dell&#39;archivio GitHub ad AEM.
 
-    >[ !NOTA]
+    >[!NOTA]
     >
-    >Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
+>Problemi di build? Consulta [Risoluzione dei problemi di compilazione GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -715,7 +715,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-+++Problemi relativi alla build di GitHub
+Problemi relativi alla build di +++GitHub
 
 **Problema:** errori di compilazione o di puntamento
 
@@ -759,6 +759,28 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
+Problemi relativi alla funzionalità dei +++moduli
+
+**Problema:** invii modulo non funzionanti
+
+**Soluzioni:**
+
+- Assicurati di disporre di un componente pulsante Invia
+- Verifica configurazione URL azione modulo
+- Verificare le regole di convalida del modulo
+- Esegui prima il test in modalità anteprima
+
+**Problema:** problemi di stile
+
+**Soluzioni:**
+
+- Controlla percorsi file CSS in `blocks/form/`
+- Cancella cache del browser
+- Verificare la sintassi CSS
+- Test nell’ambiente di sviluppo locale
+
++++
+
 +++Problemi relativi all’editor universale
 
 **Problema:** componenti modulo non visualizzati nell&#39;editor universale
@@ -780,25 +802,5 @@ Se vedi &quot;Impossibile risolvere il percorso del modulo &#39;/scripts/lib-fra
 
 +++
 
-+++Problemi relativi alla funzionalità dei moduli
 
-**Problema:** invii modulo non funzionanti
-
-**Soluzioni:**
-
-- Assicurati di disporre di un componente pulsante Invia
-- Verifica configurazione URL azione modulo
-- Verificare le regole di convalida del modulo
-- Esegui prima il test in modalità anteprima
-
-**Problema:** problemi di stile
-
-**Soluzioni:**
-
-- Controlla percorsi file CSS in `blocks/form/`
-- Cancella cache del browser
-- Verificare la sintassi CSS
-- Test nell’ambiente di sviluppo locale
-
-+++
 

@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: precompilare un modulo adattivo, servizi di consegna edge di moduli adattivi, riempimento automatico di moduli adattivi
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +249,7 @@ Assicurati che queste estensioni siano abilitate in Universal Editor:
 3. Scegli **Anteprima come HTML**
 4. Verifica la precompilazione aggiungendo i parametri all’URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Esempio:**
 
@@ -422,17 +422,19 @@ Verifica che tutti i campi abbiano valori `bindRef` corretti che corrispondano e
 
 +++
 
++++È possibile utilizzare più servizi di precompilazione in un unico modulo?
+
+Puoi configurare un servizio di precompilazione principale per modulo. Tuttavia, per ottenere funzionalità simili, è possibile combinare diverse origini dati all’interno di un singolo modello dati modulo.
+
++++
+
 +++Come posso gestire l’autenticazione per i servizi di preriempimento?
 
 L’autenticazione dipende dalla configurazione dell’origine dati. Per la precompilazione basata su FDM, configura l’autenticazione nelle impostazioni dell’origine dati. Per la precompilazione delle bozze, gli utenti in genere devono aver effettuato l’accesso per accedere alle bozze salvate.
 
 +++
 
-+++È possibile utilizzare più servizi di precompilazione in un unico modulo?
 
-Puoi configurare un servizio di precompilazione principale per modulo. Tuttavia, per ottenere funzionalità simili, è possibile combinare diverse origini dati all’interno di un singolo modello dati modulo.
-
-+++
 
 ## Argomenti correlati
 

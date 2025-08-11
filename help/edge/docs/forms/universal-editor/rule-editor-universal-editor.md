@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ Verrà creato un modulo che:
 
 1. **Apri editor universale**:
    - Passa alla console AEM Sites, seleziona la pagina e fai clic su **Modifica**
-   - Verifica che [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=it) sia configurato correttamente
+   - Verifica che [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) sia configurato correttamente
 
 2. **Aggiungi componenti modulo in questo ordine**:
    - Titolo (H2): &quot;Modulo di calcolo delle imposte&quot;
@@ -664,7 +664,7 @@ Forms diventa uno strumento potente per la raccolta di dati, la qualifica dei le
 
 +++
 
-+++ Passaggi successivi
+## Passaggi successivi
 
 **Percorso consigliato**:
 
@@ -676,8 +676,7 @@ Forms diventa uno strumento potente per la raccolta di dati, la qualifica dei le
 
 **Risorse aggiuntive**:
 
-- [Documentazione di Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=it) per un contesto più ampio
+- [Documentazione di Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) per un contesto più ampio
 - [Guida di Extension Manager](/help/implementing/developing/extending/extension-manager.md) per abilitare funzionalità aggiuntive
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) per informazioni complete sullo sviluppo di moduli
 
-+++
