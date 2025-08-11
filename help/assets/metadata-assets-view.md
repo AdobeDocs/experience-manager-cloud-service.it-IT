@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 74%
+source-wordcount: '2557'
+ht-degree: 70%
 
 ---
+
 
 # Metadati in Visualizza Risorse {#metadata}
 
@@ -181,7 +182,6 @@ Per utilizzare il componente Collega nel modulo metadati, segui i passaggi segue
    * Fai clic su ![icona modifica](assets/do-not-localize/edit.svg) per modificare l’URL.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
-
 ### Utilizzare il componente Tag nel modulo dei metadati {#tag-component-metadata-form}
 
 L’elemento principale rappresenta la struttura ad albero dei tag che è possibile associare alle risorse e aiuta a identificare la risorsa in base al tag assegnato. Inoltre, puoi limitare l’accesso a una tassonomia specifica durante la configurazione del modulo metadati nell’editor metadati.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 Per visualizzare i tag principali configurati, passa alla pagina dei dettagli della risorsa in cui viene eseguita la mappatura tra il modulo di metadati e i tag principali.
+
+## Modifica Forms metadati {#edit-metadata-forms}
+
+Per modificare un modulo di metadati, effettua le seguenti operazioni:
+
+1. Passa alla home page di [!DNL Assets View] e seleziona **[!DNL Metadata Forms]** per visualizzare un elenco di moduli di metadati.
+1. Selezionare un modulo e fare clic su **[!UICONTROL Modifica]** per aprire la pagina [!DNL Metadata Form Editor]. In questa pagina vengono visualizzati i componenti del modulo metadati nel riquadro di sinistra, schede quali Base, Avanzate, Tag e altro ancora nel riquadro centrale e nel pannello Impostazioni per la modifica delle proprietà dei metadati nel riquadro di destra.
+1. Apri una scheda (**[!DNL Basic]**, **[!DNL Advanced]** o **[!DNL Tags]**).
+1. Seleziona una proprietà di metadati per modificarne le impostazioni nel pannello **[!UICONTROL Impostazioni]**. Puoi aggiornare i mapping delle proprietà, rinominare le etichette, modificare o aggiungere valori di proprietà ed eseguire altre modifiche di questo tipo nel pannello **[!UICONTROL Impostazioni]**.
+1. Fare clic su **[!UICONTROL Anteprima]** per esaminare le modifiche apportate al modulo prima di salvarle.
+1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
 
 ## Miglioramento dell’individuazione dei contenuti con metadati generati dall’intelligenza artificiale {#ai-smart-tags}
 
@@ -260,7 +271,7 @@ Per informazioni su come disabilitare i metadati generati dall&#39;intelligenza 
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
