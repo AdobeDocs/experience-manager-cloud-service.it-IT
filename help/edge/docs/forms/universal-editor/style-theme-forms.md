@@ -147,6 +147,7 @@ Le variabili di composizione tipografica e spaziatura forniscono un controllo co
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Variabili di layout e struttura
@@ -1108,6 +1109,7 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
   text-align: center;
 }
 ```
+
 +++
 
 +++ Stile basato sul nome del campo
