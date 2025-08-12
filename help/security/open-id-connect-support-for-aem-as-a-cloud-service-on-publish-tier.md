@@ -115,6 +115,7 @@ Ora configura il gestore di autenticazione OIDC. È possibile configurare più c
       "storeRefreshToken": false
    }
    ```
+
 1. Quindi, configura le relative proprietà come segue:
    * `groupsInIdToken`: impostato su true se i gruppi vengono inviati in un token ID. Se il valore è false o non specificato, i gruppi vengono letti dall&#39;endpoint UserInfo.
    * `groupsClaimName`: il nome dell&#39;attestazione contiene i gruppi da sincronizzare in AEM.
