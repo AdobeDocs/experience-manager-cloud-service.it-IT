@@ -27,7 +27,7 @@ Assicurati di disporre di:
 
 * Accesso a [!DNL AEM Assets as a Cloud Service].
 * Autorizzazione per modificare la proprietà Status delle risorse.
-* [È stato aggiunto il valore [!UICONTROL Anteprima] alla proprietà dei metadati [!UICONTROL  Status] disponibile nella scheda [!UICONTROL Basic]](/help/assets/metadata-assets-view.md#edit-metadata-forms) del modulo dei metadati applicato alla cartella contenente le risorse da visualizzare in anteprima.
+* [È stato aggiunto il valore [!UICONTROL Anteprima] alla proprietà dei metadati [!UICONTROL &#x200B; Status] disponibile nella scheda [!UICONTROL Basic]](/help/assets/metadata-assets-view.md#edit-metadata-forms) del modulo dei metadati applicato alla cartella contenente le risorse da visualizzare in anteprima.
   ![Aggiungi opzione anteprima](/help/assets/assets/metedata-form-preview.png)
 * Chiave per generare il token di anteprima. [Contatta il supporto Adobe](https://helpx.adobe.com/in/contact.html) e richiedi la chiave.
 
