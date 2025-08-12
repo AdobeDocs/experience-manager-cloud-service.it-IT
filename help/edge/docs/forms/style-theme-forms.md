@@ -637,6 +637,7 @@ il selettore applica uno stile a tutti i pannelli che possono essere ripetuti, a
   margin-bottom: 10px;
 }
 ```
+
 questo selettore applica uno stile a tutti i wrapper del campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
 
 - Targeting di campi specifici (all’interno di un pannello):

@@ -93,7 +93,7 @@ I clienti con una licenza di un fornitore di registrazione o che ospitano un pro
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Utilizzare la tabella seguente per verificare quali sono i requisiti per la conf
       <td>Sì</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >La visualizzazione dei registri da un singolo indirizzo IP dipende dalla configurazione di rete avanzata scelta.  Per facilitare questa fase, è necessario utilizzare un’uscita dedicata.
