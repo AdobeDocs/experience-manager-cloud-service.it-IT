@@ -3,13 +3,13 @@ title: Supporto Open ID Connect per AEM as a Cloud Service sul livello di pubbli
 description: Scopri come impostare Open ID Connect (OIDC) per AEM as a Cloud Service sul livello di pubblicazione
 feature: Security
 role: Admin
-source-git-commit: 7f96e51861cb544f83f8ff557dd923fa5b59c0b2
+exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
 
 ---
-
 
 # Supporto Open ID Connect per AEM as a Cloud Service sul livello di pubblicazione
 

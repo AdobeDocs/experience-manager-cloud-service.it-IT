@@ -4,7 +4,8 @@ description: Un modulo adattivo fornisce più azioni di invio. Un’azione di in
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello di dati modulo (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 39%
@@ -15,7 +16,7 @@ ht-degree: 39%
 
 | Versione | Collegamento articolo |
 |---------|-----------------------------|
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componenti core) | [Fai clic qui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Questo articolo |
@@ -23,7 +24,7 @@ ht-degree: 39%
 
 L’invio di un modulo è il passaggio finale critico nel percorso dell’utente, dove i dati raccolti vengono elaborati e vengono intraprese azioni. Questo documento fornisce una guida completa alla configurazione e alla gestione delle azioni di invio per moduli adattivi nell’editor universale.
 
-### Che cosa imparerai
+## Che cosa imparerai
 
 Alla fine di questo documento comprenderai come:
 
@@ -33,7 +34,7 @@ Alla fine di questo documento comprenderai come:
 - Implementare azioni di invio personalizzate per esigenze aziendali specifiche
 - Gestire gli scenari di errore e convalida del modulo durante l’invio
 
-### Pubblico target
+## Pubblico target
 
 Questa guida è progettata per:
 
@@ -77,6 +78,3 @@ Puoi configurare l&#39;azione di invio per i moduli creati nell&#39;Editor unive
 >
 > - Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
 > - Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
-
-
-

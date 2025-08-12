@@ -4,7 +4,7 @@ description: Personalizza efficacemente il tema e lo stile per AEM Forms fornito
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ Il Blocco moduli adattivi offre una struttura HTML coerente per vari elementi de
 
 Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di scelta e gruppi di caselle di controllo, hanno la seguente struttura HTML:
 
-#### Struttura HTML dei componenti generali
+### Struttura HTML dei componenti generali
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ Questi selettori consentono di applicare uno stile a varie parti del componente 
 
 Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo specifici e applicare gli stili in modo coerente.
 
-#### Struttura HTML
+### Struttura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 
 
 
-#### Esempio di selettori CSS
+### Esempio di selettori CSS
 
 ```CSS
 /- Primary Pattern: Target all text input fields */

@@ -4,7 +4,7 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -93,7 +93,6 @@ I clienti con una licenza di un fornitore di registrazione o che ospitano un pro
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +215,6 @@ Utilizzare la tabella seguente per verificare quali sono i requisiti per la conf
       <td>Sì</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >La visualizzazione dei registri da un singolo indirizzo IP dipende dalla configurazione di rete avanzata scelta.  Per facilitare questa fase, è necessario utilizzare un’uscita dedicata.
