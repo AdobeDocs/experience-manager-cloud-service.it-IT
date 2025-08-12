@@ -22,11 +22,11 @@ Questa pagina descrive anche come viene invalidata la cache di Dispatcher e come
 
 La memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service è controllata dalle seguenti intestazioni di risposta HTTP dall&#39;origine: `Cache-Control`, `Surrogate-Control` o `Expires`.
 
-Queste intestazioni di cache sono in genere impostate in configurazioni vhost di AEM Dispatcher utilizzando mod_headers, ma possono anche essere impostate in un codice Java™ personalizzato in esecuzione nella stessa pubblicazione AEM (vedi [Come abilitare la memorizzazione nella cache CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+Queste intestazioni di cache sono in genere impostate in configurazioni vhost di AEM Dispatcher utilizzando mod_headers, ma possono anche essere impostate in un codice Java™ personalizzato in esecuzione nella stessa pubblicazione AEM (vedi [Come abilitare la memorizzazione nella cache CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
 
 La chiave cache per le risorse CDN contiene l’URL completo della richiesta, inclusi i parametri di query, in modo che ogni parametro di query diverso generi una voce cache diversa. Prendi in considerazione la rimozione di parametri di query indesiderati; [vedi di seguito](#marketing-parameters) per migliorare il rapporto di hit della cache.
 
-Le risposte di origine che contengono `private`, `no-cache` o `no-store` in `Cache-Control` non sono memorizzate nella cache dal CDN di AEM as a Cloud Service (per ulteriori dettagli, vedere [Come disabilitare la memorizzazione nella cache del CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)).  Inoltre, le risposte che impostano i cookie, ad esempio con un&#39;intestazione di risposta `Set-Cookie`, non vengono memorizzate nella cache dalla rete CDN.
+Le risposte di origine che contengono `private`, `no-cache` o `no-store` in `Cache-Control` non sono memorizzate nella cache dal CDN di AEM as a Cloud Service (per ulteriori dettagli, vedere [Come disabilitare la memorizzazione nella cache del CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)).  Inoltre, le risposte che impostano i cookie, ad esempio con un&#39;intestazione di risposta `Set-Cookie`, non vengono memorizzate nella cache dalla rete CDN.
 
 ### HTML/Text {#html-text}
 
@@ -53,7 +53,7 @@ Questo metodo è utile, ad esempio, quando la logica di business richiede l’ot
   ```
 
   >[!NOTE]
-  >L’intestazione Surrogate-Control si applica alla rete CDN gestita da Adobe. Se utilizzi una [rete CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), potrebbe essere necessaria un&#39;intestazione diversa a seconda del provider CDN in uso.
+  >L’intestazione Surrogate-Control si applica alla rete CDN gestita da Adobe. Se utilizzi una [rete CDN gestita dal cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=it#point-to-point-CDN), potrebbe essere necessaria un&#39;intestazione diversa a seconda del provider CDN in uso.
 
   Presta attenzione quando imposti intestazioni di controllo cache globale o intestazioni di cache simili che corrispondono a un’ampia regola, in modo che non vengano applicate a contenuti che devono essere mantenuti privati. Valuta l’utilizzo di più direttive per garantire che le regole vengano applicate in modo granulare. Detto questo, AEM as a Cloud Service rimuove l’intestazione della cache se rileva che è stata applicata a ciò che rileva come non memorizzabile in cache da Dispatcher, come descritto nella documentazione di Dispatcher. Per forzare AEM ad applicare sempre le intestazioni di memorizzazione in cache, è possibile aggiungere l&#39;opzione **`always`** come segue:
 
@@ -89,7 +89,7 @@ Questo metodo è utile, ad esempio, quando la logica di business richiede l’ot
   >Gli altri metodi, incluso il [progetto ACS Commons di Dispatcher-ttl AEM](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), non eseguono correttamente l&#39;override dei valori.
 
   >[!NOTE]
-  >Dispatcher potrebbe comunque memorizzare in cache il contenuto in base alle proprie [regole di memorizzazione in cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato nella cache da Dispatcher.
+  >Dispatcher potrebbe comunque memorizzare in cache il contenuto in base alle proprie [regole di memorizzazione in cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=it). Per rendere il contenuto veramente privato, assicurati che non venga memorizzato nella cache da Dispatcher.
 
 ### Librerie lato client (js,css) {#client-side-libraries}
 
@@ -237,7 +237,7 @@ Adesso, le immagini nell&#39;archiviazione BLOB contrassegnate come private non 
 
 ### Analisi del rapporto di hit della cache CDN {#analyze-chr}
 
-Per informazioni sul download dei registri CDN e sull&#39;analisi del rapporto di hit della cache del sito tramite un dashboard, consulta l&#39;[esercitazione sull&#39;analisi del rapporto di hit della cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html).
+Per informazioni sul download dei registri CDN e sull&#39;analisi del rapporto di hit della cache del sito tramite un dashboard, consulta l&#39;[esercitazione sull&#39;analisi del rapporto di hit della cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=it).
 
 ### Comportamento della richiesta HEAD {#request-behavior}
 
@@ -267,7 +267,7 @@ data:
     removeMarketingParams: false
 ```
 
-Se la funzionalità `removeMarketingParams` è disabilitata a livello CDN, è comunque consigliabile configurare la proprietà `ignoreUrlParams` della configurazione Dispatcher. Vedere [Configurazione di Dispatcher - Ignorare i parametri URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+Se la funzionalità `removeMarketingParams` è disabilitata a livello CDN, è comunque consigliabile configurare la proprietà `ignoreUrlParams` della configurazione Dispatcher. Vedere [Configurazione di Dispatcher - Ignorare i parametri URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#ignoring-url-parameters).
 
 Esistono due possibilità per ignorare i parametri di marketing. (dove il primo è preferito per ignorare il busting della cache tramite parametri di query):
 
@@ -303,7 +303,7 @@ Come per le versioni precedenti di AEM, la pubblicazione o l’annullamento dell
 >[!NOTE]
 >Per un&#39;invalidazione corretta di Dispatcher, assicurarsi che le richieste da &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;\*.local&quot;, &quot;\*.adobeaemcloud.com&quot; e &quot;\*.adobeaemcloud.net&quot; corrispondano e siano gestite da una configurazione vhost in modo che la richiesta possa essere soddisfatta. Puoi eseguire questa attività facendo corrispondere globalmente &quot;*&quot; in una configurazione vhost catch-all seguendo il pattern nel riferimento [Archetipo AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). In alternativa, puoi assicurarti che l’elenco precedentemente menzionato sia stato acquisito da uno dei host.
 
-Quando l’istanza Publish riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di svuotamento per invalidare i percorsi appropriati sul proprio Dispatcher. Il percorso aggiornato viene rimosso dalla cache di Dispatcher, insieme ai relativi elementi principali, fino a un livello (è possibile configurare questo livello con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+Quando l’istanza Publish riceve una nuova versione di una pagina o di una risorsa dall’autore, utilizza l’agente di svuotamento per invalidare i percorsi appropriati sul proprio Dispatcher. Il percorso aggiornato viene rimosso dalla cache di Dispatcher, insieme ai relativi elementi principali, fino a un livello (è possibile configurare questo livello con [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#invalidating-files-by-folder-level)).
 
 ## Annullamento esplicito della validità della cache di Dispatcher {#explicit-invalidation}
 
@@ -514,7 +514,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -526,9 +526,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/it/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/it/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## Librerie lato client e coerenza delle versioni {#content-consistency}
 

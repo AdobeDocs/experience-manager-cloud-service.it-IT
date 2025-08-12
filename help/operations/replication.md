@@ -134,7 +134,7 @@ Il flusso di lavoro elabora il contenuto in blocchi, ciascuno dei quali rapprese
 
 Non richiamare il modello originale. Assicurati invece di copiare prima il modello e richiamare tale copia.
 
-Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Come tutti i flussi di lavoro, può anche essere richiamato tramite API. Per ulteriori informazioni, vedere [Interazione con i flussi di lavoro a livello di programmazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=it#extending-aem).
 
 In alternativa, è possibile creare un modello di flusso di lavoro che utilizza il passaggio del processo `Publish Content Tree`.
 

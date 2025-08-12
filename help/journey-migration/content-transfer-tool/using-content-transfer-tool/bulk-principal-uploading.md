@@ -97,7 +97,7 @@ Per utilizzare la funzionalità di caricamento in blocco degli utenti di Admin C
    1. Nella finestra di dialogo visualizzata, seleziona **File utente in blocco** dall&#39;elenco a discesa in **Scarica un file...** e fai clic sul pulsante **Scarica**.
    1. Salva il file CSV risultante
 1. Modifica il file utente ausiliario
-   * Ogni riga rappresenta un utente da caricare e contiene quindici campi (i nomi dei campi costituiscono la prima riga del file). Alcuni campi sono facoltativi e non sono descritti qui. Consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  I campi sono:
+   * Ogni riga rappresenta un utente da caricare e contiene quindici campi (i nomi dei campi costituiscono la prima riga del file). Alcuni campi sono facoltativi e non sono descritti qui. Consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format).  I campi sono:
 
       * _Tipo di identità_ - Facoltativo.  Se non viene specificato, verrà creato come Adobe ID
       * _Nome utente_ - Facoltativo e non utilizzato per caricamenti Adobe ID
@@ -108,14 +108,14 @@ Per utilizzare la funzionalità di caricamento in blocco degli utenti di Admin C
       * _Codice paese_ - Facoltativo e non utilizzato per caricamenti Adobe ID
       * _ID_ - Facoltativo e non utilizzato per caricamenti Adobe ID
       * _Configurazioni prodotto_ - Facoltativo. Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Ruoli di amministratore_ - Facoltativo. Utilizzare questo campo se l&#39;utente è un amministratore. Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Configurazioni di prodotto amministrate_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Ruoli di amministratore_ - Facoltativo. Utilizzare questo campo se l&#39;utente è un amministratore. Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Configurazioni di prodotto amministrate_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
       * _Gruppi di utenti_ - Facoltativo. Un elenco di gruppi a cui l’utente deve essere assegnato come membro. Ogni gruppo deve essere un gruppo IMS già esistente. Quando il file utente in blocco viene scaricato da CAM, questo campo viene precompilato con i nomi del gruppo abilitato per IMS di cui l’utente era membro (direttamente o indirettamente) prima della migrazione
-      * _Gruppi di utenti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Prodotti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Contratti amministrati_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Accesso per sviluppatori_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Prodotti assegnati automaticamente_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Gruppi di utenti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Prodotti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Contratti amministrati_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Accesso per sviluppatori_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Prodotti assegnati automaticamente_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
 
    * Durante la modifica del file CSV, alcune applicazioni possono aggiungere virgolette aggiuntive al momento del salvataggio, causando errori di elaborazione. È buona prassi controllare il file CSV non elaborato in un semplice editor di testo per garantire che ogni campo abbia una sola virgoletta di apertura e una di chiusura (e non devono essere &quot;virgolette intelligenti&quot;)
 
