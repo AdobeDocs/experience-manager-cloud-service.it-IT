@@ -4,7 +4,7 @@ description: Personalizzare il tema e lo stile per Edge Delivery Services di AEM
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 ```
 
 - L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-- L’elemento legend (&lt;legend>) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+- L&#39;elemento legenda (`<legend>`) funge da titolo del pannello con il testo &quot;Informazioni di accesso&quot; e l&#39;etichetta del campo della classe. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
 - All’interno del fieldset, più{Type}-elementi wrapper (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
 - Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
@@ -637,7 +637,6 @@ il selettore applica uno stile a tutti i pannelli che possono essere ripetuti, a
   margin-bottom: 10px;
 }
 ```
-
 questo selettore applica uno stile a tutti i wrapper del campo all’interno di un pannello ripetibile, mantenendo una spaziatura coerente tra i campi.
 
 - Targeting di campi specifici (all’interno di un pannello):

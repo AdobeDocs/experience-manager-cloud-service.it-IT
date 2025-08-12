@@ -4,13 +4,13 @@ description: Scopri come creare un’azione di invio personalizzata per consenti
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 1%
 
 ---
-
 
 # Creare un’azione di invio personalizzata per Adaptive Forms (Componenti core)
 
@@ -47,11 +47,11 @@ Il diagramma seguente illustra i passaggi necessari per creare un’azione di in
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Il progetto è pronto!**
 
-   Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall’applicazione (ad esempio, app-id). Questa cartella contiene tutti i file e il codice scaricati dall’archivio Git di AEM as a Cloud Service. Puoi trovare `<appid>` per il progetto AEM nel file `archetype.properties`.
+   Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall’applicazione (ad esempio, app-id). Questa cartella contiene tutti i file e il codice scaricati dall’archivio Git di AEM as a Cloud Service. Puoi trovare `<appid>` per il tuo progetto AEM nel file `archetype.properties`.
 
    ![Proprietà Archetipo](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ Il diagramma seguente illustra i passaggi necessari per creare un’azione di in
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: Sostituisci &lt;app-id> con l&#39;ID applicazione effettivo.
+   `Important`: sostituisci `<app-id>` con l&#39;ID applicazione effettivo.
 
 1. Crea un nuovo file di configurazione.
 Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.xml`.
@@ -134,7 +134,7 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
 1. Passare alla seguente directory all&#39;interno di `[AEMaaCS project directory]`:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: Sostituisci &lt;app-id> con l&#39;ID applicazione effettivo.
+   `Important`: sostituisci `<app-id>` con l&#39;ID applicazione effettivo.
 1. Crea un nuovo file Java per implementare il servizio per l’azione di invio aggiunta. Ad esempio, aggiungere un nuovo file Java come `CustomSubmitService.java`.
 
    ![Cartella azioni di invio personalizzate](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -204,9 +204,9 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
       ![Distribuzione locale](/help/forms/assets/custom-submit-action-local-deployment.png)
 
-**Distribuire il codice per l&#39;ambiente di Cloud Service**
+**Distribuire il codice per l&#39;ambiente Cloud Service**
 
-* Distribuire AEM as a Cloud Service, `[AEMaaCS project directory]`, nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+* Distribuire AEM as a Cloud Service, `[AEMaaCS project directory]`, nell&#39;ambiente Cloud Service. Per eseguire l’implementazione nell’ambiente Cloud Service:
 
    1. Eseguire il commit delle modifiche:
 
@@ -214,9 +214,9 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    1. Distribuisci il codice aggiornato:
 
-      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
+      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
 
-      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
+      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![Distribuzione cloud](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -230,7 +230,7 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
 ### Anteprima di un modulo adattivo con nuova azione di invio aggiunta
 
-1. Accedi all’istanza AEM Forms as a Cloud Service.
+1. Accedi all’istanza di AEM Forms as a Cloud Service.
 1. Vai a **Forms** > **Forms e documenti**.
 
    ![Forms e documenti](/help/forms/assets/custom-submit-action-fnd.png)

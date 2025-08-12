@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5357'
 ht-degree: 38%
 
 ---
@@ -172,7 +172,7 @@ Le proprietà `ImsAuthProps` definiscono le informazioni di autenticazione e il 
 | `imsClientId` | Valore stringa che rappresenta l’ID client IMS utilizzato a scopo di autenticazione. Questo valore è fornito da Adobe ed è specifico per la tua organizzazione Adobe AEM CS. |
 | `imsScope` | Descrive gli ambiti utilizzati nell&#39;autenticazione. Gli ambiti determinano il livello di accesso dell&#39;applicazione alle risorse dell&#39;organizzazione. Più ambiti possono essere separati da virgole. |
 | `redirectUrl` | Rappresenta l&#39;URL a cui l&#39;utente viene reindirizzato dopo l&#39;autenticazione. Questo valore viene in genere impostato sull’URL corrente dell’applicazione. Se non viene fornito `redirectUrl`, `ImsAuthService` utilizza il redirectUrl utilizzato per registrare `imsClientId` |
-| `modalMode` | Valore booleano che indica se il flusso di autenticazione deve essere visualizzato o meno in un modale (pop-up). Se è impostato su `true`, il flusso di autenticazione viene visualizzato in un popup. Se è impostato su `false`, il flusso di autenticazione viene visualizzato in un ricaricamento dell&#39;intera pagina. _Nota:_ per una migliore interfaccia utente, è possibile controllare dinamicamente questo valore se la finestra popup del browser dell&#39;utente è disabilitata. |
+| `modalMode` | Valore booleano che indica se il flusso di autenticazione deve essere visualizzato o meno in un modale (pop-up). Se è impostato su `true`, il flusso di autenticazione viene visualizzato in un popup. Se è impostato su `false`, il flusso di autenticazione viene visualizzato in un ricaricamento dell&#39;intera pagina. _Note :_per una migliore interfaccia utente, è possibile controllare dinamicamente questo valore se la finestra popup del browser dell&#39;utente è disabilitata. |
 | `onImsServiceInitialized` | Funzione di callback chiamata quando viene inizializzato il servizio di autenticazione Adobe IMS. Questa funzione accetta un parametro, `service`, che è un oggetto che rappresenta il servizio Adobe IMS. Per ulteriori dettagli, vedere [`ImsAuthService`](#imsauthservice-ims-auth-service). |
 | `onAccessTokenReceived` | Funzione di callback chiamata quando viene ricevuto un `imsToken` dal servizio di autenticazione Adobe IMS. Questa funzione accetta un parametro, `imsToken`, che è una stringa che rappresenta il token di accesso. |
 | `onAccessTokenExpired` | Funzione di callback chiamata quando un token di accesso è scaduto. Questa funzione viene in genere utilizzata per attivare un nuovo flusso di autenticazione per ottenere un nuovo token di accesso. |
@@ -790,18 +790,18 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
-| *repo:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
-| *repo:id* | stringa | Identificatore univoco della risorsa. |
-| *repo:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
-| *repo:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
-| *repo:size* | numero | Dimensione della risorsa in byte. |
-| *repo:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
-| *repo:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
-| *repo:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
-| *repo:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
-| *repo:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
-| *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
-| *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
+| *archivio:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
+| *archivio:id* | stringa | Identificatore univoco della risorsa. |
+| *archivio:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
+| *archivio:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
+| *archivio:size* | numero | Dimensione della risorsa in byte. |
+| *archivio:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
+| *archivio:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
+| *archivio:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
+| *archivio:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
+| *archivio:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
+| *archivio:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
+| *archivio:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
 | *dc:format* | stringa | Il formato della risorsa, ad esempio il tipo di file (ad esempio, JPEG, PNG e così via). |
 | *tiff:imageWidth* | numero | Larghezza di una risorsa. |
 | *tiff:imageLength* | numero | Altezza di una risorsa. |
@@ -840,6 +840,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

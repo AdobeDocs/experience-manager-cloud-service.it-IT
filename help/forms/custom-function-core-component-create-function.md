@@ -5,7 +5,7 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 2%
@@ -42,9 +42,10 @@ Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, v
 
 ## Creare una funzione personalizzata
 
-Crea una libreria client per chiamare funzioni personalizzate nell’editor di regole. Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it#developing).
+Crea una libreria client per chiamare funzioni personalizzate nell’editor di regole. Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 I passaggi per creare funzioni personalizzate sono i seguenti:
+
 1. [Creare una libreria client](#create-client-library)
 1. [Aggiungere una libreria client a un modulo adattivo](#use-custom-function)
 
@@ -54,7 +55,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per cre
 
 **Clona l&#39;archivio**
 
-Clona il tuo [archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git):
+Clona il tuo [archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Apri la riga di comando o la finestra del terminale.
 
@@ -152,7 +153,7 @@ Aggiungi quanto segue alla cartella della libreria client aggiunta:
 
 **Distribuisci la cartella della libreria client appena creata nell&#39;ambiente AEM**
 
-Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39;ambiente Cloud Service. Per eseguire l’implementazione nell’ambiente Cloud Service:
 
 1. Eseguire il commit delle modifiche
 
@@ -168,7 +169,7 @@ Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39
 
    1. Attiva una distribuzione del codice tramite la pipeline full stack esistente. In questo modo viene automaticamente generato e distribuito il codice aggiornato.
 
-Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
+Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunta nella libreria client diventa disponibile nell&#39;[editor di regole per moduli adattivi](/help/forms/rule-editor-core-components.md).
 
@@ -228,11 +229,11 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/assets//customfunctions.zip). Scarica e installa questa cartella nella tua istanza AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> È possibile fare riferimento alla seguente cartella [funzione personalizzata](/help/forms/assets//customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 ## Funzioni delle funzioni personalizzate
 
-Le funzioni personalizzate nei moduli AEM offrono una soluzione solida per estendere e personalizzare la funzionalità dei moduli. Puoi utilizzare le funzioni personalizzate per soddisfare le esigenze specifiche della tua organizzazione.
+Le funzioni personalizzate in AEM Forms offrono una soluzione solida per estendere e personalizzare le funzionalità dei moduli. Puoi utilizzare le funzioni personalizzate per soddisfare le esigenze specifiche della tua organizzazione.
 
 Queste funzioni supportano varie funzionalità, tra cui l’utilizzo di campi specifici, l’utilizzo di campi globali, le operazioni asincrone e l’incorporazione di meccanismi di caching. Questa flessibilità assicura che i moduli possano adattarsi a requisiti complessi e fornire un’esperienza utente efficiente e personalizzata. Sfruttando queste funzioni avanzate, puoi migliorare le interazioni dei moduli e ottimizzare le prestazioni, rendendo i moduli AEM più funzionali e reattivi.
 
@@ -254,19 +255,19 @@ Per ulteriori informazioni sugli oggetti ambito, vedere l&#39;articolo [Oggetti 
 
 ### Supporto della memorizzazione in cache nella funzione personalizzata
 
-Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list from cache`.
+Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Nel file `Fetched following custom functions list from cache` viene visualizzato il messaggio `error.log`.
 
 ![funzione personalizzata con supporto cache](/help/forms/assets/custom-function-cache-error.png)
 
 Se le funzioni personalizzate vengono modificate, la memorizzazione in cache viene invalidata e analizzata.
 
-## Risoluzione dei problemi
+## Risoluzione di problemi
 
 * Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor delle regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile individuare l&#39;errore nel file `error.log`. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
 
   ![file di log degli errori](/help/forms/assets/custom-function-list-error-file.png)
 
-  In caso di errore, la funzione personalizzata viene recuperata e visualizzata nel file `error.log`. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list`:
+  In caso di errore, la funzione personalizzata viene recuperata e visualizzata nel file `error.log`. Nel file `Fetched following custom functions list` viene visualizzato il messaggio `error.log`:
 
   ![file di registro errori con funzione personalizzata appropriata](/help/forms/assets/custom-function-list-fetched-in-error.png)
 

@@ -4,7 +4,7 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 I clienti con una licenza di un fornitore di registrazione o che ospitano un prodotto di registrazione possono inoltrare i registri di AEM (incluso Apache/Dispatcher) e i registri CDN alla destinazione di registrazione associata. AEM as a Cloud Service supporta le seguenti destinazioni di registrazione:
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ Un altro scenario consiste nel disabilitare l’inoltro dei registri CDN o dei r
 Alcune organizzazioni scelgono di limitare il traffico che può essere ricevuto dalle destinazioni di registrazione, altre potrebbero richiedere l’uso di porte diverse da HTTPS (443).  In tal caso [La rete avanzata](/help/security/configuring-advanced-networking.md) dovrà essere configurata prima di distribuire la configurazione di inoltro del registro.
 
 Utilizzare la tabella seguente per verificare quali sono i requisiti per la configurazione avanzata di rete e registrazione in base al fatto che si utilizzi o meno la porta 443 e che i registri debbano essere visualizzati da un indirizzo IP fisso.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Sì</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >La visualizzazione dei registri da un singolo indirizzo IP dipende dalla configurazione di rete avanzata scelta.  Per facilitare questa fase, è necessario utilizzare un’uscita dedicata.
@@ -270,6 +247,7 @@ data:
 Per i registri CDN, puoi inserire nell&#39;elenco Consentiti gli indirizzi IP, come descritto in [Documentazione Fastly - Elenco IP pubblici](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se l’elenco di indirizzi IP condivisi è troppo grande, puoi inviare traffico a un server https o a un archivio BLOB di Azure (non Adobe) in cui è possibile scrivere una logica per inviare i registri da un IP noto alla destinazione finale.
 
 >[!NOTE]
+>
 >Non è possibile che i registri CDN vengano visualizzati dallo stesso indirizzo IP da cui vengono visualizzati i registri di AEM, perché i registri vengono inviati direttamente da Fastly e non da AEM Cloud Service.
 
 ## Registrazione della configurazione di destinazione {#logging-destinations}
@@ -304,15 +282,15 @@ Per utilizzare il server di inoltro registro S3, è necessario preconfigurare un
 I criteri IAM devono consentire all&#39;utente di utilizzare `s3:putObject`.  Ad esempio:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ L’inoltro del registro a New Relic sfrutta l’API HTTPS di New Relic per l’
 ```
 
 >[!NOTE]
+>
 >L’inoltro dei registri a New Relic è disponibile solo per gli account New Relic di proprietà del cliente.
 >
 >Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
@@ -538,6 +517,7 @@ L’attributo di ambito &quot;Ingest Logs&quot; (Acquisisci registri) è obbliga
 ```
 
 >[!NOTE]
+>
 > Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ Per eseguire la migrazione, è sufficiente configurare il file YAML come descrit
 È consigliabile, ma non obbligatorio, distribuire una configurazione in tutti gli ambienti in modo che siano tutti sotto il controllo self-service. In caso contrario, potresti dimenticare quali ambienti sono stati configurati da Adobe rispetto a quelli configurati in modo self-service.
 
 >[!NOTE]
+>
 >È possibile che i valori del campo `sourcetype` inviati all&#39;indice Splunk siano stati modificati, quindi apportare le modifiche necessarie.
 >
 >Quando l’inoltro dei registri viene distribuito in un ambiente configurato in precedenza dal supporto Adobe, è possibile che vengano visualizzati registri duplicati per un massimo di alcune ore. Questo alla fine si risolverà automaticamente.

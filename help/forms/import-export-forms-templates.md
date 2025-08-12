@@ -1,25 +1,23 @@
 ---
-title: Come importare, esportare e organizzare Forms o PDF forms adattivi in un’istanza di AEM Forms?
-description: Scopri come migrare Forms adattivo, PDF forms, temi e altre risorse di supporto da e verso istanze AEM.
+title: Come importare, esportare e organizzare Adaptive Forms o PDF forms in un’istanza di AEM Forms?
+description: Scopri come migrare Forms adattivo, PDF forms, temi e altre risorse di supporto da e verso le istanze di AEM.
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
 
 ---
 
-
+# Importare o esportare risorse Adaptive Forms e AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Questo articolo |
-
-# Importare o esportare risorse Adaptive Forms e AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 È possibile spostare tra [!DNL AEM Forms] istanze Forms adattivo e risorse correlate, ad esempio temi di moduli adattivi, modello dati modulo (FDM), modelli di moduli adattivi, frammenti e PDF forms.
 
@@ -70,10 +68,10 @@ Per caricare un modulo o una risorsa correlata:
 
 ## Scaricare un tema
 
-È possibile esportare i temi in [!DNL AEM Forms] che è possibile utilizzare in altri progetti o istanze. AEM consente di scaricare i temi come file zip, che puoi caricare sull’istanza.
+È possibile esportare i temi in [!DNL AEM Forms] che è possibile utilizzare in altri progetti o istanze. AEM ti consente di scaricare i temi come file zip, che puoi caricare sull’istanza.
 Per scaricare un tema:
 
-1. Accedi all&#39;istanza Autore [!DNL Experience Manager Forms].
+1. Accedi all’istanza di authoring [!DNL Experience Manager Forms].
 1. Seleziona **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 
    ![Seleziona tema](/help/forms/assets/select-theme.png)
@@ -96,7 +94,7 @@ Le risorse selezionate vengono scaricate come archivio (file .zip).
 Per caricare un tema:
 
 1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
-1. Ad Experience Manager, passa a **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
+1. In Experience Manager, passa a **[!UICONTROL Forms]** > **[!UICONTROL Temi]**.
 
    ![Seleziona tema](/help/forms/assets/select-theme.png)
 
@@ -106,7 +104,7 @@ Per caricare un tema:
 
 1. Sfoglia e seleziona un pacchetto tema nel computer e fai clic su **[!UICONTROL Carica]**. Il tema caricato diventa disponibile nella pagina Temi.
 
-## Utilizzare le cartelle per organizzare Forms adattivo, PDF forms e risorse correlate  {#folders-and-organizing-assets}
+## Utilizzare le cartelle per organizzare Forms adattivo, PDF forms e le risorse correlate  {#folders-and-organizing-assets}
 
 Puoi utilizzare le cartelle per organizzare e disporre le risorse. L’organizzazione di documenti e risorse in una cartella consente di raggruppare i file per semplificarne la gestione. Puoi selezionare una cartella e scegliere se scaricarla o eliminarla.
 

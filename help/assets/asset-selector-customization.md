@@ -3,10 +3,10 @@ title: Personalizzare l’applicazione Asset Selector
 description: Utilizza le funzioni per personalizzare il selettore delle risorse all’interno dell’applicazione.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 23%
 
 ---
 
@@ -170,18 +170,18 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 
 | Proprietà | Tipo | Descrizione |
 |---|---|---|
-| *repo:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
-| *repo:id* | stringa | Identificatore univoco della risorsa. |
-| *repo:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
-| *repo:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
-| *repo:size* | numero | Dimensione della risorsa in byte. |
-| *repo:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
-| *repo:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
-| *repo:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
-| *repo:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
-| *repo:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
-| *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
-| *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
+| *archivio:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
+| *archivio:id* | stringa | Identificatore univoco della risorsa. |
+| *archivio:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
+| *archivio:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
+| *archivio:size* | numero | Dimensione della risorsa in byte. |
+| *archivio:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
+| *archivio:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
+| *archivio:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
+| *archivio:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
+| *archivio:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
+| *archivio:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
+| *archivio:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
 | *dc:format* | stringa | Il formato della risorsa, ad esempio il tipo di file (ad esempio, JPEG, PNG e così via). |
 | *tiff:imageWidth* | numero | Larghezza di una risorsa. |
 | *tiff:imageLength* | numero | Altezza di una risorsa. |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

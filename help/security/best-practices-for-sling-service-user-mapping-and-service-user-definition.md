@@ -4,10 +4,10 @@ description: Scopri le best practice per la mappatura degli utenti del servizio 
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ La sequenza per ottenere un servizio `Session/ResourceResolver` è la seguente:
 
 1. Ottieni nomi di entità da `ServiceUserMapper` => pre-autenticazione per l’accesso all’archivio nel modo descritto di seguito
 1. Recupera ID utente da `ServiceUserMapper`
-1. Controlla se il 1ServiceUserConfiguration è obsoleto per l’ID utente corrente
+1. Cerca `1ServiceUserConfiguration` obsoleto per l&#39;ID utente corrente
 1. Accesso al servizio Sling predefinito con l’ID utente (ad esempio, una sequenza di `createAdministrativeSession` e impersonare l’ID utente del servizio)
 
 La nuova mappatura con i nomi delle entità determina il seguente accesso semplificato all’archivio:
@@ -189,7 +189,7 @@ Esempi di `userproperties-copy-service`:
 * Riduci ambito
 
    * Posiziona i criteri di controllo dell’accesso in sottostrutture specifiche per la funzione
-   * In caso di articoli distribuiti: utilizza restrizioni per limitare l’ambito (consulta [la documentazione](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) per un elenco di restrizioni integrate).
+   * In caso di articoli distribuiti: utilizza restrizioni per limitare l’ambito (consulta [la documentazione](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) per un elenco di restrizioni incorporate).
 
 * Garantire coerenza
 
@@ -225,7 +225,7 @@ Usa sempre `repo-init` per definire gli utenti del servizio e l’impostazione d
 
 * Usa sempre `repo-init` per creare l’utente del servizio
 * Specifica sempre un percorso intermedio per la creazione di utenti del servizio
-* Tutti gli utenti del servizio integrati per AEM devono essere situati sotto `system/cq:services/internal`
+* Tutti gli utenti del servizio incorporati per AEM devono essere situati sotto `system/cq:services/internal`
 * Aggiungi inoltre al percorso relativo intermedio al gruppo gli utenti del servizio in base alla funzione: `system/cq:services/internal/<your-feature>`
 * Gli utenti del servizio definiti della clientela devono trovarsi sotto `system/cq:services/<customer-intermediate-rel-path>` e mai sotto la struttura interna
 * Utilizza **con percorso forzato** invece di **con percorso** se un utente esiste già e deve essere spostato nella nuova posizione che supporta l’autorizzazione basata su entità.

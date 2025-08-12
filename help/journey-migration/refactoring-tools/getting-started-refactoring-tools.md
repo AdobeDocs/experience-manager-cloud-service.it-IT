@@ -1,10 +1,11 @@
 ---
 title: Guida introduttiva agli strumenti di refactoring
 description: Scopri come iniziare a utilizzare gli strumenti di refactoring in AEM as a Cloud Service
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=it" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -34,8 +35,6 @@ Utilizza lo strumento Refactoring per migrare il codice e garantirne la compatib
 1. Quando accedi per la prima volta alla **Visualizzazione codice Source**, verrà visualizzato uno stato vuoto in cui viene richiesto di caricare il codice sorgente.
 
    ![immagine](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Caricamento del codice Source {#uploading}
 
@@ -67,12 +66,12 @@ Quando i clienti accedono per la prima volta agli **strumenti di refactoring**, 
    ![immagine](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Il caricamento di un nuovo progetto eliminerà quello esistente. Prima di procedere, assicurati di aver salvato tutti i dati necessari.
 
 >[!NOTE]
+>
 >I processi di refactoring possono essere eseguiti solo se il caricamento del codice sorgente ha esito positivo.
-
-&#x200B;---
 
 ## Processi di refactoring {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ Quando si fa clic sulla scheda **Processo di refactoring**, viene visualizzato u
 ![immagine](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >Puoi attivare singoli processi di refactoring o eseguire tutti gli strumenti disponibili in un&#39;unica operazione utilizzando l&#39;opzione **Tutti gli strumenti insieme**.
-
-&#x200B;---
 
 ### &#x200B;2. Stato processo
 
@@ -110,5 +108,5 @@ Quando il processo viene completato correttamente, il pulsante **Scarica** diven
 ![immagine](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Il completamento di ogni processo può richiedere fino a 1 ora. Se lo stato non viene aggiornato, contatta il supporto Adobe.
-

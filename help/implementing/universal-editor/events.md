@@ -4,9 +4,9 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Gli eventi includono il payload della richiesta e della risposta e vengono attiv
 
 ## Eventi aggiornamento contenuto {#content-events}
 
-### aue:aggiungere contenuti {#content-add}
+### aue:content-add {#content-add}
 
 L&#39;evento `aue:content-add` viene attivato quando un nuovo componente viene aggiunto a un contenitore.
 
@@ -70,7 +70,7 @@ Il payload è il contenuto del componente e, facoltativamente, il relativo schem
 }
 ```
 
-### aue:spostamento contenuto {#content-move}
+### aue:content-move {#content-move}
 
 L&#39;evento `aue:content-move` viene attivato quando un componente viene spostato.
 
@@ -89,7 +89,7 @@ Il payload è il componente, il contenitore di origine e il contenitore di desti
 }
 ```
 
-### aue:patch di contenuto {#content-patch}
+### aue:content-patch {#content-patch}
 
 L&#39;evento `aue:content-patch` viene attivato quando i dati di un componente vengono aggiornati nel pannello delle proprietà.
 
@@ -108,7 +108,7 @@ Il payload è una patch JSON delle proprietà aggiornate.
 }
 ```
 
-### aue:rimuovi-contenuto {#content-remove}
+### aue:content-remove {#content-remove}
 
 L&#39;evento `aue:content-remove` viene attivato quando un componente viene rimosso da un contenitore.
 
@@ -124,7 +124,7 @@ Il payload è l’ID dell’elemento rimosso.
 }
 ```
 
-### aue:aggiornamento-contenuto {#content-update}
+### aue:content-update {#content-update}
 
 L&#39;evento `aue:content-update` viene attivato quando le proprietà di un componente vengono aggiornate nel contesto.
 
@@ -180,7 +180,7 @@ Payload di risposta
 
 ## Eventi interfaccia utente {#ui-events}
 
-### aue:anteprima interfaccia utente {#ui-preview}
+### aue:ui-preview {#ui-preview}
 
 L&#39;evento `aue:ui-preview` viene attivato quando la modalità di modifica della pagina viene modificata in **Anteprima**.
 
@@ -192,7 +192,7 @@ Il payload è vuoto per questo evento.
 }
 ```
 
-### aue:modifica tramite interfaccia utente {#ui-edit}
+### aue:ui-edit {#ui-edit}
 
 L&#39;evento `aue:ui-edit` viene attivato quando la modalità di modifica della pagina viene modificata in **Modifica**.
 
@@ -219,7 +219,7 @@ Il payload è rappresentato dalle dimensioni del riquadro di visualizzazione.
 }
 ```
 
-### aue:inizializzato {#initialized}
+### aue:initialized {#initialized}
 
 L&#39;evento `aue:initialized` viene attivato per comunicare alla pagina remota che è stata caricata correttamente nell&#39;editor universale.
 

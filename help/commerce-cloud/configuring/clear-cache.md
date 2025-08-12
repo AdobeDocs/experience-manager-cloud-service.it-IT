@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 3%
 
 ---
@@ -25,6 +25,7 @@ Questo documento fornisce una guida completa sull’abilitazione e la verifica d
 Per impostazione predefinita, la funzione di cancellazione della cache è disabilitata nella configurazione di CIF. Per abilitarlo, devi aggiungere quanto segue ai progetti corrispondenti:
 
 * Abilita il servlet `/bin/cif/invalidate-cache` che ti aiuta ad attivare l&#39;API clear-cache con le loro richieste corrispondenti aggiungendo la configurazione `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` nel progetto come mostrato [qui](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
+
   >[!NOTE]
   >
   > La configurazione deve essere abilitata solo per le istanze di authoring.
@@ -45,11 +46,12 @@ Per impostazione predefinita, la funzione di cancellazione della cache è disabi
 
 Per verificare che tutto sia configurato correttamente:
 
-* Attiva il servlet corrispondente all&#39;istanza di authoring AEM, ad esempio [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache), e dovresti ricevere una risposta HTTP 200.
+* Attiva il servlet corrispondente nell&#39;istanza di authoring di AEM, ad esempio [http://localhost:4502/bin/cif/invalidate-cache](http://localhost:4502/bin/cif/invalidate-cache). Riceverai una risposta HTTP 200.
 * Verificare che un nodo sia stato creato nel percorso seguente nelle istanze di authoring: `/var/cif/cacheinvalidation`. Il nome del nodo segue questo pattern: `cmd_{{timestamp}}`.
 * Verifica che lo stesso nodo sia stato creato in ogni istanza di pubblicazione.
 
 Ora, per verificare se le cache vengono cancellate correttamente:
+
 1. Passare alle pagine PLP e PDP corrispondenti.
 2. Aggiorna il nome di un prodotto o di una categoria nel motore di commerce. Le modifiche non vengono riportate in AEM immediatamente in base alle configurazioni della cache.
 3. Attiva l’API del servlet, come illustrato di seguito:
@@ -57,7 +59,7 @@ Ora, per verificare se le cache vengono cancellate correttamente:
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -109,7 +111,7 @@ Questa tabella mostra la proprietà obbligatoria che deve essere passata in ogni
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

@@ -4,7 +4,7 @@ description: Personalizza efficacemente il tema e lo stile per AEM Forms fornito
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -1109,7 +1109,6 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
   text-align: center;
 }
 ```
-
 +++
 
 +++ Stile basato sul nome del campo

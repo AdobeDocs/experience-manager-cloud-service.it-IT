@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 1%
 
 ---
@@ -28,12 +28,12 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 
 * **È uguale a** - Controlla se l&#39;oggetto modulo corrisponde a un valore specificato.
 * **Is Not Equal To** - Controlla se l&#39;oggetto modulo non corrisponde a un valore specificato.
-* **Inizia con** : controlla se l&#39;oggetto modulo inizia con una stringa specificata.
-* **Termina con** : controlla se l&#39;oggetto modulo termina con una stringa specificata.
-* **Contiene** : controlla se l&#39;oggetto modulo include una sottostringa specificata.
-* **Non contiene** : controlla se l&#39;oggetto modulo non include una sottostringa specificata.
-* **È vuoto** : controlla se l&#39;oggetto modulo è vuoto o non fornito.
-* **Non è vuoto** : controlla se l&#39;oggetto modulo è presente e non vuoto.
+* **Inizia con** - Controlla se l&#39;oggetto modulo inizia con una stringa specificata.
+* **Termina con** - Controlla se l&#39;oggetto modulo termina con una stringa specificata.
+* **Contiene** - Controlla se l&#39;oggetto modulo include una sottostringa specificata.
+* **Does Not Contain** - Controlla se l&#39;oggetto modulo non include una sottostringa specificata.
+* **È vuoto** - Controlla se l&#39;oggetto modulo è vuoto o non specificato.
+* **Non è vuoto** - Controlla se l&#39;oggetto modulo è presente e non è vuoto.
 * **Ha selezionato** - Restituisce true quando un utente seleziona una casella di controllo, un elenco a discesa o un pulsante di scelta specifica.
 * **È inizializzato (evento)** - Restituisce true quando viene eseguito il rendering di un oggetto modulo nel browser.
 * **È stato modificato (evento)** - Restituisce true quando un utente modifica il valore o la selezione di un oggetto modulo.
@@ -68,12 +68,11 @@ In parole semplici, una regola When tipica è strutturata come segue:
 
 `Action 2 on Object B;`
 `AND`
-&quot;Azione 3 sull’oggetto C;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 Quando si dispone di un componente con più valori, ad esempio pulsanti di scelta o elenco, durante la creazione di una regola per tale componente le opzioni vengono recuperate e rese disponibili automaticamente al creatore della regola. Non è necessario digitare nuovamente i valori delle opzioni.
 
@@ -87,11 +86,11 @@ Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella val
 
 >[!NOTE]
 >
-> Quando il tipo regola supporta solo istruzioni then-else a livello singolo.
+> Quando il tipo di regola supporta solo istruzioni then-else a livello singolo.
 
-##### Campi multipli consentiti in [!UICONTROL Quando] {#allowed-multiple-fields}
+##### Più campi consentiti in [!UICONTROL When] {#allowed-multiple-fields}
 
-**Nella condizione Quando**, è possibile aggiungere altri campi oltre al campo a cui è applicato il regola.
+Nella condizione **When** è possibile aggiungere altri campi oltre al campo a cui viene applicata la regola.
 
 Ad esempio, utilizzando il tipo di regola When, è possibile valutare una condizione su diversi oggetti modulo ed eseguire l&#39;azione:
 
@@ -157,13 +156,13 @@ Se nella funzione Condizione When sono presenti più campi consentiti, segui i p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul servizio Invoke, [fare clic qui](/help/forms/invoke-service-enhancements-rule-editor.md).
+> Per ulteriori informazioni sul servizio Invoke, [fai clic qui](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-Vedere l&#39;regola di esempio per richiamare i servizi FDM (Form Data Model).
+Vedi la regola di esempio per richiamare i servizi del modello dati modulo (FDM).
 
-Oltre al servizio Modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio Form Data Model presenta numerosi vantaggi e l&#39;approccio consigliato per richiamare un servizio.
+Oltre al servizio Modello dati modulo, è possibile specificare un URL WSDL diretto per richiamare un servizio Web. Tuttavia, un servizio di modello dati modulo presenta molti vantaggi e l’approccio consigliato per richiamare un servizio.
 
-Per ulteriori informazioni sulla configurazione dei servizi in FDM (Form Data Model), vedere [[!DNL Experience Manager Forms] Integrazione](data-integration.md) dei dati.
+Per ulteriori informazioni sulla configurazione dei servizi nel modello dati modulo, vedere [[!DNL Experience Manager Forms] Integrazione dati](data-integration.md).
 
 **[!UICONTROL Imposta il valore di]** Calcola e imposta il valore dell&#39;oggetto specificato. È possibile impostare il valore dell&#39;oggetto su una stringa, il valore di un altro oggetto, il valore calcolato utilizzando un&#39;espressione o una funzione matematica, il valore di una proprietà di un oggetto o il valore di output di un servizio Form Data Model configurato. Quando si sceglie l&#39;opzione Servizio Web, vengono visualizzati tutti i servizi configurati in tutti i modelli di dati del modulo (FDM) nell&#39;istanza [!DNL Experience Manager]. Quando si sceglie un servizio Modello dati modulo, vengono visualizzati più campi in cui è possibile mappare gli oggetti modulo con i parametri di input e output per il servizio specificato.
 
@@ -234,7 +233,7 @@ Impostare il valore dell&#39;oggetto A su:
 
 Quando (facoltativo):
 
-(Condizione 1 E Condizione 2 E Condizione 3) è VERO;
+(Condizione 1 AND Condizione 2 AND Condizione 3) è TRUE;
 
 L&#39;esempio seguente seleziona il valore di `Question2` come `True` e imposta il valore di `Result` come `correct`.
 
@@ -276,9 +275,9 @@ Una tipica regola Nascondi è strutturata come segue:
 
 #### [!UICONTROL Abilita] {#enable}
 
-Il **[!UICONTROL tipo Abilita]** regola consente di abilitare o disabilitare un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo Abilita regola attiva anche l&#39;azione Disabilita nel caso in cui la condizione non sia soddisfatta o si ripresenti `False`.
+Il tipo di regola **[!UICONTROL Enable]** consente di abilitare o disabilitare un oggetto modulo in base al soddisfacimento o meno di una condizione. Il tipo di regola Enable attiva anche l&#39;azione Disable nel caso in cui la condizione non sia soddisfatta o restituisca `False`.
 
-Una tipica regola di attivazione è strutturata come segue:
+Una regola di abilitazione tipica è strutturata come segue:
 
 `Enable Object A;`
 
@@ -290,9 +289,9 @@ Una tipica regola di attivazione è strutturata come segue:
 
 `Disable Object A;`
 
-#### [!UICONTROL Disabilitare] {#disable}
+#### [!UICONTROL Disattiva] {#disable}
 
-Analogamente al tipo di regola Abilita, il **[!UICONTROL tipo Disabilita]** regola consente di abilitare o disabilitare un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo di regola Disable attiva anche l&#39;azione Enable nel caso in cui la condizione non sia soddisfatta o restituisca `False`.
+Analogamente al tipo di regola Abilita, il tipo di regola **[!UICONTROL Disabilita]** consente di abilitare o disabilitare un oggetto modulo a seconda che una condizione sia soddisfatta o meno. Il tipo di regola Disable attiva anche l&#39;azione Enable nel caso in cui la condizione non sia soddisfatta o restituisca `False`.
 
 Una regola di Disattivazione tipica è strutturata come segue:
 
@@ -350,13 +349,13 @@ Analogamente, puoi scrivere **Navigare tra i pannelli** regola per spostare lo s
 
 Per ulteriori dettagli su come creare una regola per navigare in un pannello, [fai clic qui](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
 
-#### [!UICONTROL Chiamata di funzione asincrona]
+#### [!UICONTROL Chiamata funzione asincrona]
 
-<span class="preview"> Si tratta di una funzionalità pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
-Il **[!UICONTROL tipo di chiamata]** regola della funzione asincrona consente di eseguire funzioni asincrone. Consente di avviare una chiamata di funzione che opera indipendentemente dal thread di esecuzione principale, consentendo ad altri processi di continuare a funzionare senza attendere il completamento della funzione asincrona.
+Il tipo di regola **[!UICONTROL Chiamata funzione asincrona]** consente di eseguire funzioni asincrone. Consente di avviare una chiamata di funzione che funziona in modo indipendente dal thread di esecuzione principale, consentendo ad altri processi di continuare l’esecuzione senza attendere il completamento della funzione asincrona.
 
-Una tipica regola di chiamata di una funzione asincrona per eseguire una funzione asincrona è strutturata come segue:
+Una regola di chiamata della funzione asincrona tipica per eseguire la funzione asincrona è strutturata come segue:
 
 `When:`
 

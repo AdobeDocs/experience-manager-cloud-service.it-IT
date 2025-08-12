@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -172,7 +172,7 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 |     | var | Rimuove una variabile specificata. |
 |     | queryParamMatch | Rimuove tutti i parametri di query che corrispondono a un&#39;espressione regolare specificata. |
 |     | queryParamDoesNotMatch | Rimuove tutti i parametri di query che non corrispondono a un&#39;espressione regolare specificata. |
-| **trasformazione** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), match, replace | Sostituisce parte del parametro di richiesta (supportata solo la proprietà &quot;path&quot;), dell’intestazione di richiesta, del parametro di query, del cookie o della variabile con un nuovo valore. |
+| **trasformazione** | op:replace, (reqProperty o reqHeader o queryParam o reqCookie o var), corrispondenza, sostituzione | Sostituisce parte del parametro di richiesta (supportata solo la proprietà &quot;path&quot;), dell’intestazione di richiesta, del parametro di query, del cookie o della variabile con un nuovo valore. |
 |              | op:tolower, (reqProperty o reqHeader o queryParam o reqCookie o var) | Imposta sul valore minuscolo il parametro della richiesta (supportata solo la proprietà &quot;path&quot; ), l&#39;intestazione di richiesta, il parametro di query, il cookie o la variabile. |
 
 Le azioni di sostituzione supportano i gruppi di acquisizione, come illustrato di seguito:

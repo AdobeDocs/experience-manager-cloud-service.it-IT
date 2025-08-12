@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -22,10 +22,15 @@ Il componente Carosello prodotto viene esteso durante questa esercitazione. Come
 1. Inserisci un nuovo componente Carosello prodotto nel contenitore di layout principale della pagina.
    ![Componente Carosello prodotti](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Espandi il pannello laterale (se non è già attivato) e imposta il menu a discesa di ricerca risorse su **Prodotti**.
-     ![Prodotti carosello](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![Prodotti carosello](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Dovrebbe essere visualizzato un elenco dei prodotti disponibili da un’istanza di Adobe Commerce connessa.
+
    ![Istanza connessa](/help/commerce-cloud/assets/connected-instance.png)
+
 1. I prodotti verranno visualizzati come segue con le proprietà predefinite:
+
    ![Prodotto visualizzato con proprietà](/help/commerce-cloud/assets/discount.png)
 
 ## Aggiornare il modello Sling {#update-sling-model}
@@ -50,7 +55,7 @@ Il modello di delega per modelli Sling consente a `CustomCarouselImpl` di fare r
    private ProductCarousel productCarousel;
    ```
 
-1. L’annotazione @PostConstruct assicura che questo metodo venga chiamato quando il modello Sling viene inizializzato. La query GraphQL del prodotto è già stata estesa utilizzando il metodo extendProductQueryWith per recuperare gli attributi. Aggiorna la query GraphQL per includere  attributo nella query parziale:
+1. L’annotazione @PostConstruct assicura che questo metodo venga chiamato quando il modello Sling viene inizializzato. La query GraphQL del prodotto è già stata estesa utilizzando il metodo extendProductQueryWith per recuperare gli attributi. Aggiorna la query GraphQL per includere l’attributo nella query parziale:
 
    ```
    @PostConstruct

@@ -2,10 +2,10 @@
 title: Gestione delle entità principali
 description: Gestione delle entità principali per la migrazione tramite Admin Console
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Prima del trasferimento dei contenuti all’ambiente cloud AEM as a Cloud Service, è possibile eseguire alcune attività su Admin Console.  Si tratta di: creare utenti, gruppi e assegnare utenti a gruppi; questi utenti e gruppi esistono in IMS, il servizio Identity Management di Adobe, utilizzato per gestire utenti e gruppi per tutti i servizi basati su cloud di Adobe.
 
-### Creazione di gruppi e dei relativi utenti in Admin Console
+## Creazione di gruppi e dei relativi utenti in Admin Console
 
 [L’utilizzo di Admin Console per le entità principali di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) fornisce istruzioni dettagliate sulla creazione di utenti e gruppi in IMS e su come aggiungere gli utenti ai gruppi contemporaneamente o successivamente.  Il documento include tre opzioni per la creazione: manualmente tramite Admin Console, caricando il file CSV in Admin Console e con uno strumento User Sync.
 

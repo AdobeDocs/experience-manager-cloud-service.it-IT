@@ -5,19 +5,19 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
 
-
-# Espressioni modulo adattivo {#adaptive-form-expressions}
+# Espressioni per moduli adattivi {#adaptive-form-expressions}
 
 Forms adattivo offre un’esperienza di compilazione dei moduli ottimizzata e semplificata per gli utenti finali con funzionalità di scripting dinamico. Consente di scrivere espressioni per aggiungere vari comportamenti, ad esempio mostrare/nascondere campi e pannelli dinamici. Consente inoltre di aggiungere campi calcolati, rendere i campi di sola lettura, aggiungere logica di convalida e molto altro. Il comportamento dinamico si basa sull’input dell’utente o sui dati precompilati.
 
-JavaScript™ è il linguaggio di espressione di Adaptive Forms. Tutte le espressioni sono espressioni JavaScript™ valide e utilizzano le API del modello di script di Forms adattivo. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche di Forms adattivo, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript™ è il linguaggio di espressione di Adaptive Forms. Tutte le espressioni sono espressioni JavaScript™ valide e utilizzano le API del modello di script di Forms adattivo. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi, degli eventi, degli oggetti e delle API pubbliche di Forms adattivo, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Best practice per la scrittura di espressioni {#best-practices-for-writing-expressions}
 
@@ -32,7 +32,7 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse d
 * Per creare un pannello ripetuto, nella finestra di dialogo del pannello, apri le impostazioni e imposta il valore del campo conteggio massimo su più di 1.
 * Il valore di conteggio minimo delle impostazioni di ripetizione del pannello può essere uno o più ma non può essere superiore al valore di conteggio massimo.
 * Quando un’espressione fa riferimento a un campo di un pannello ripetuto, i nomi dei campi nell’espressione vengono risolti nell’elemento ripetuto più vicino.
-* Forms adattivo fornisce alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l&#39;elenco completo delle funzioni, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/af.html)
+* Forms adattivo fornisce alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l&#39;elenco completo delle funzioni, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * Le API per la manipolazione delle istanze del pannello ripetuto sono:
 
    * Per aggiungere un&#39;istanza del pannello: `panel1.instanceManager.addInstance()`
@@ -78,7 +78,7 @@ L’espressione di calcolo viene utilizzata per calcolare automaticamente il val
 
 ### Espressione clic {#click-expression}
 
-L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per l&#39;elenco completo delle API, vedere [API GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html).
+L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per l&#39;elenco completo delle API, vedere [API GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Si applica a**: campi pulsante
 
@@ -209,7 +209,7 @@ Formato di visualizzazione può essere utilizzato per visualizzare i dati in for
 
 ### GuideBridge - API ed eventi {#guidebridge-apis-and-events}
 
-GuideBridge è una raccolta di API che possono essere utilizzate per interagire con Adaptive Forms nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/).
+GuideBridge è una raccolta di API che possono essere utilizzate per interagire con Adaptive Forms nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -217,15 +217,15 @@ GuideBridge è una raccolta di API che possono essere utilizzate per interagire 
 
 #### Utilizzo di GuideBridge in varie espressioni {#guidebridge-usage-in-various-expressions}
 
-* Per reimpostare i campi modulo, è possibile attivare l&#39;API `guideBridge.reset()` all&#39;espressione di clic di un pulsante. Analogamente, esiste un&#39;API di invio che può essere chiamata come espressione di clic `guideBridge.submit()`**.**
+* Per reimpostare i campi modulo, è possibile attivare l&#39;API `guideBridge.reset()` all&#39;espressione di clic di un pulsante. Analogamente, esiste un&#39;API di invio che può essere chiamata come espressione di clic `guideBridge.submit()`.
 
-* È possibile utilizzare l&#39;API `setFocus()` per impostare lo stato attivo su vari campi o pannelli (perché lo stato attivo del pannello viene impostato automaticamente sul primo campo). `setFocus()`offre un&#39;ampia gamma di opzioni per la navigazione, ad esempio la navigazione tra i pannelli, l&#39;attraversamento precedente/successivo, l&#39;impostazione dello stato attivo su un particolare campo e molte altre. Ad esempio, per passare al pannello successivo, puoi utilizzare: &quot;guideBridge.setFocus(this.panel.somExpression, &quot;nextItem&quot;).
+* È possibile utilizzare l&#39;API `setFocus()` per impostare lo stato attivo su vari campi o pannelli (perché lo stato attivo del pannello viene impostato automaticamente sul primo campo). `setFocus()` offre un&#39;ampia gamma di opzioni per la navigazione, ad esempio la navigazione tra pannelli, l&#39;attraversamento precedente/successivo, l&#39;impostazione dello stato attivo su un particolare campo e molte altre. Ad esempio, per passare al pannello successivo, puoi utilizzare: `guideBridge.setFocus(this.panel.somExpression, 'nextItem')`.
 
 * Per convalidare un modulo adattivo o i relativi pannelli specifici, utilizzare `guideBridge.validate(errorList, somExpression).`
 
 #### Utilizzo di GuideBridge all&#39;esterno delle espressioni  {#using-guidebridge-outside-expressions-nbsp}
 
-È inoltre possibile utilizzare le API GuideBridge al di fuori delle espressioni. È possibile, ad esempio, utilizzare l’API GuideBridge per impostare la comunicazione tra il HTML della pagina che ospita il modulo adattivo e il modello di modulo. Inoltre, puoi impostare il valore proveniente dall’elemento padre dell’Iframe che ospita il modulo.
+È inoltre possibile utilizzare le API GuideBridge al di fuori delle espressioni. Ad esempio, puoi utilizzare l’API GuideBridge per impostare la comunicazione tra la pagina HTML che ospita il modulo adattivo e il modello di modulo. Inoltre, puoi impostare il valore proveniente dall’elemento padre dell’Iframe che ospita il modulo.
 
 Per utilizzare l&#39;API GuideBridge per l&#39;esempio sopra riportato, acquisire un&#39;istanza di GuideBridge. Per acquisire l&#39;istanza, ascoltare l&#39;evento `bridgeInitializeStart` di un oggetto `window`:
 
@@ -255,7 +255,7 @@ Per utilizzare GuideBridge dopo l&#39;inizializzazione del modulo (invio dell&#3
 
 #### Eventi GuideBridge {#guidebridge-events}
 
-GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, consulta [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, consulta [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilizza il seguente codice per registrare i gestori:
 
@@ -274,7 +274,7 @@ Come accennato in precedenza, Adaptive Forms consente all’autore di fornire mo
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, effettua le seguenti operazioni:
 
 1. Passa a CRXDE Lite nell’istanza di authoring.
-1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps, crea un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
+1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps creare un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
 1. Apri la scheda Proprietà del nodo creato. Aprire ad esempio la scheda Proprietà di `textboxpatterns`. Aggiungere la proprietà `guideComponentType` a questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i modelli. Per il campo numerico, il valore della proprietà `guideComponentType` è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*.
@@ -284,4 +284,3 @@ Per creare un pattern personalizzato per un tipo di campo specifico e riutilizza
    ![Creazione di modelli personalizzati per i campi in CrxDe](assets/creating-custom-patterns.png)
 
    Creazione di pattern personalizzati
-

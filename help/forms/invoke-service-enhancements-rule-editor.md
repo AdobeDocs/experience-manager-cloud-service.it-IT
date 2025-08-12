@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 L&#39;editor di regole visive in un modulo adattivo supporta la funzionalità **Richiama servizio**, che consente di selezionare un servizio dall&#39;elenco di modelli di dati modulo (FDM) configurati per l&#39;istanza. Puoi mappare i campi modulo direttamente sui parametri di input del servizio. Per mappare i campi modulo ai parametri di output, utilizza l’opzione payload dell’evento per il servizio del modello dati modulo specificato. Inoltre, l&#39;editor di regole visive consente di creare regole per i gestori di operazioni riuscite e non riuscite per le operazioni **Richiama servizio** in base alle relative risposte di output. I gestori di errori gestiscono l&#39;esecuzione corretta dell&#39;operazione **Richiama servizio**, mentre i gestori di errori risolvono gli errori che si verificano.
 
-### Vantaggi dell’utilizzo del servizio Invoke nell’editor di regole del modulo
+## Vantaggi dell’utilizzo del servizio Invoke nell’editor di regole del modulo
 
 Di seguito sono riportati alcuni vantaggi dell’utilizzo dell’operazione Invoke Service nell’editor di regole di un modulo Adobe:
 

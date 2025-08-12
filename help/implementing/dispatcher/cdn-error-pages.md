@@ -4,7 +4,7 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configurazione delle pagine di errore CDN {#cdn-error-pages}
 
-Nel caso improbabile che la rete CDN [gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine dell&#39;AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non è raggiungibile. È possibile ignorare la pagina di errore predefinita ospitando i file statici nell&#39;archiviazione con hosting autonomo, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la pipeline di configurazione [config](/help/operations/config-pipeline.md#managing-in-cloud-manager) di Cloud Manager.
+Nel caso improbabile che la rete CDN [gestita da Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) non raggiunga l&#39;origine di AEM, per impostazione predefinita la rete CDN fornisce una pagina di errore generica senza marchio che indica che il server non può essere raggiunto. È possibile ignorare la pagina di errore predefinita ospitando i file statici nell&#39;archiviazione con hosting autonomo, ad esempio Amazon S3 o Azure Blob Storage, e facendo riferimento a tali file in un file di configurazione distribuito utilizzando la pipeline di configurazione [config](/help/operations/config-pipeline.md#managing-in-cloud-manager) di Cloud Manager.
 
 ## Configurazione {#setup}
 
@@ -30,7 +30,7 @@ Prima di poter sovrascrivere la pagina di errore predefinita, è necessario effe
 
 ### Sintassi {#syntax}
 
-La pagina di errore viene implementata come applicazione a pagina singola (SPA) e fa riferimento a una serie di proprietà, come illustrato nell’esempio seguente.  I file statici a cui fanno riferimento gli URL devono essere ospitati da te su un servizio accessibile a Internet come Amazon S3 o Azure Blob Storage.
+La pagina di errore viene implementata come applicazione a pagina singola e fa riferimento a una serie di proprietà, come illustrato nell’esempio seguente.  I file statici a cui fanno riferimento gli URL devono essere ospitati da te su un servizio accessibile a Internet come Amazon S3 o Azure Blob Storage.
 
 Esempio di configurazione:
 
@@ -93,6 +93,6 @@ In questo modo, attivi direttamente il gestore degli errori della rete CDN per t
 
 ### Tutorial
 
-Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
+Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
 
 

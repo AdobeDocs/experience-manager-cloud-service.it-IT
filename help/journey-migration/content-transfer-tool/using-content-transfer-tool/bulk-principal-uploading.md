@@ -2,7 +2,7 @@
 title: Caricamento in blocco di entità in IMS dopo l’utilizzo di CTT
 description: Panoramica dei file di caricamento in blocco per gruppi e utenti e come utilizzarli in Admin Console per creare gruppi e utenti in IMS.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 3%
@@ -37,9 +37,10 @@ Esistono alcune linee guida generali per la modifica e l’utilizzo di entrambi 
 
 ## Caricamento gruppo in blocco {#group-upload}
 
-#### Caso d’uso: è stata effettuata la migrazione dei gruppi ad AEM as a Cloud Service, ma poiché non sono presenti in IMS/Admin Console, è necessario caricarli in IMS tramite Admin Console.
+### Caso d’uso: è stata effettuata la migrazione dei gruppi ad AEM as a Cloud Service, ma poiché non sono presenti in IMS/Admin Console, è necessario caricarli in IMS tramite Admin Console.
 
 Per utilizzare la funzionalità di caricamento di gruppo in blocco di Admin Console dopo l’esecuzione di una migrazione CTT/CAM, effettua le seguenti operazioni:
+
 1. Scarica il file del gruppo ausiliario da CAM
 
    1. In CAM, vai a **Trasferimento contenuti** e seleziona **Processi di acquisizione**.
@@ -54,7 +55,6 @@ Per utilizzare la funzionalità di caricamento di gruppo in blocco di Admin Cons
       * _Nome gruppo utenti_ - Il nome del gruppo è obbligatorio e può contenere un massimo di 255 caratteri.  Questo nome di gruppo deve essere lo stesso in IMS e AEM
       * _Descrizione_ - Questo campo è facoltativo e può contenere un massimo di 255 caratteri
       * _Amministratori gruppo utenti_ - In questo campo deve essere incluso almeno un amministratore gruppo. È possibile assegnare più amministratori separando ogni amministratore con una virgola e racchiudendo l’elenco tra virgolette. La voce per ogni amministratore deve includere il tipo di identità dell’utente, seguito da un trattino e quindi dall’indirizzo e-mail.  Ad esempio
-
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Non includere uno spazio dopo la virgola che separa gli amministratori. Non puoi includere in Admin Console utenti (come amministratori) che al momento non fanno parte dell’organizzazione
       * _Profili di prodotto assegnati_ - Questo campo è facoltativo. Puoi assegnare più profili di prodotto separando ciascun profilo con una virgola e racchiudendo l’elenco tra virgolette. Tuttavia, i profili di prodotto che includi devono già essere impostati per l’organizzazione. Assicurati di specificare il nome del profilo di prodotto e non il nome del prodotto.  L’appartenenza ai profili di prodotto assegnati a un gruppo viene ereditata da tutti gli utenti inseriti in tale gruppo.  Per trovare un profilo di prodotto:
 
@@ -97,7 +97,7 @@ Per utilizzare la funzionalità di caricamento in blocco degli utenti di Admin C
    1. Nella finestra di dialogo visualizzata, seleziona **File utente in blocco** dall&#39;elenco a discesa in **Scarica un file...** e fai clic sul pulsante **Scarica**.
    1. Salva il file CSV risultante
 1. Modifica il file utente ausiliario
-   * Ogni riga rappresenta un utente da caricare e contiene quindici campi (i nomi dei campi costituiscono la prima riga del file). Alcuni campi sono facoltativi e non sono descritti qui. Consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format).  I campi sono:
+   * Ogni riga rappresenta un utente da caricare e contiene quindici campi (i nomi dei campi costituiscono la prima riga del file). Alcuni campi sono facoltativi e non sono descritti qui. Consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  I campi sono:
 
       * _Tipo di identità_ - Facoltativo.  Se non viene specificato, verrà creato come Adobe ID
       * _Nome utente_ - Facoltativo e non utilizzato per caricamenti Adobe ID
@@ -108,14 +108,14 @@ Per utilizzare la funzionalità di caricamento in blocco degli utenti di Admin C
       * _Codice paese_ - Facoltativo e non utilizzato per caricamenti Adobe ID
       * _ID_ - Facoltativo e non utilizzato per caricamenti Adobe ID
       * _Configurazioni prodotto_ - Facoltativo. Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Ruoli di amministratore_ - Facoltativo. Utilizzare questo campo se l&#39;utente è un amministratore. Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Configurazioni di prodotto amministrate_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Ruoli di amministratore_ - Facoltativo. Utilizzare questo campo se l&#39;utente è un amministratore. Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Configurazioni di prodotto amministrate_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
       * _Gruppi di utenti_ - Facoltativo. Un elenco di gruppi a cui l’utente deve essere assegnato come membro. Ogni gruppo deve essere un gruppo IMS già esistente. Quando il file utente in blocco viene scaricato da CAM, questo campo viene precompilato con i nomi del gruppo abilitato per IMS di cui l’utente era membro (direttamente o indirettamente) prima della migrazione
-      * _Gruppi di utenti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Prodotti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
-      * _Contratti amministrati_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Accesso per sviluppatori_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
-      * _Prodotti assegnati automaticamente_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Gruppi di utenti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Prodotti amministrati_ - Facoltativo.  Per informazioni dettagliate, consulta [Formato CSV per utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format). Questo campo verrà ereditato anche da tutti i gruppi di cui l’utente è membro
+      * _Contratti amministrati_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Accesso per sviluppatori_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
+      * _Prodotti assegnati automaticamente_ - Facoltativo.  Vedi [Formato CSV utenti in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) per i dettagli
 
    * Durante la modifica del file CSV, alcune applicazioni possono aggiungere virgolette aggiuntive al momento del salvataggio, causando errori di elaborazione. È buona prassi controllare il file CSV non elaborato in un semplice editor di testo per garantire che ogni campo abbia una sola virgoletta di apertura e una di chiusura (e non devono essere &quot;virgolette intelligenti&quot;)
 
