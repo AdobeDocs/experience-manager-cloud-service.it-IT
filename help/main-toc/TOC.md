@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
+source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
 workflow-type: tm+mt
-source-wordcount: '6592'
+source-wordcount: '6605'
 ht-degree: 97%
 
 ---
@@ -266,6 +266,7 @@ ht-degree: 97%
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Supporto Open ID Connect per AEM as a Cloud Service sul livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Visualizzazione principale per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
