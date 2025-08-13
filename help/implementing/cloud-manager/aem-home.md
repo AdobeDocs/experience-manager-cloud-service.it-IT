@@ -1,13 +1,13 @@
 ---
 title: Informazioni su Experience Hub
-description: Scopri la pagina Experience Hub di AEM.
+description: Scopri la pagina Experience Hub di Adobe.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Experience Hub introduce un punto di partenza centralizzato per la gestione di c
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (1 minuto e 27 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463275?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -51,7 +51,7 @@ Queste soluzioni sono ora spostate nella navigazione principale in **Strumenti**
 
 ![Ambienti Experience Hub](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Fungendo da hub centrale per Adobe Experience Manager, la pagina Experience Hub si espande con widget e azioni aggiuntivi personalizzati per ogni ruolo utente. Completamente personalizzabile, la pagina consente di scegliere il layout ottimale per lo schermo. I widget possono essere filtrati in modo che solo quelli selezionati vengano visualizzati nella pagina principale, garantendo un’esperienza personalizzata.
+Fungendo da hub centrale per Adobe Experience Manager, la pagina Experience Hub si espande per includere widget e azioni aggiuntivi personalizzati per ogni ruolo utente. Completamente personalizzabile, la pagina consente di scegliere il layout ottimale per lo schermo. I widget possono essere filtrati in modo che solo quelli selezionati vengano visualizzati nella pagina principale, garantendo un’esperienza personalizzata.
 
 ![Experience Hub personalizzato](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
