@@ -4,10 +4,10 @@ description: Scopri come utilizzare Cloud Acceleration Manager per acquisire i c
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
 workflow-type: tm+mt
-source-wordcount: '3467'
-ht-degree: 12%
+source-wordcount: '3577'
+ht-degree: 11%
 
 ---
 
@@ -112,7 +112,7 @@ Inizia creando un processo di acquisizione e assicurati che **Cancella** sia dis
 
 ![immagine](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
@@ -151,13 +151,13 @@ Questo messaggio indica che Cloud Acceleration Manager non è riuscito a raggiun
 > Viene visualizzato il campo &quot;Token di migrazione&quot; perché in alcuni casi è ciò che non è consentito recuperare il token. Consentendo la trasmissione manuale, può consentire all’utente di avviare l’acquisizione rapidamente, senza alcun aiuto aggiuntivo. Se il token è fornito e il messaggio viene ancora visualizzato, il problema non era il recupero del token.
 
 * AEM as a Cloud Service mantiene lo stato dell’ambiente e, occasionalmente, deve riavviare il servizio di migrazione per vari motivi normali. Se il servizio viene riavviato, non potrà essere raggiunto, ma sarà disponibile alla fine.
-* È possibile che nell’istanza sia in esecuzione un altro processo. Se ad esempio [Aggiornamenti della versione di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
+* È possibile che nell’istanza sia in esecuzione un altro processo. Se ad esempio [Aggiornamenti della versione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) applica un aggiornamento, è possibile che il sistema sia occupato e che il servizio di migrazione non sia regolarmente disponibile. Al termine di questo processo, è possibile tentare di nuovo l’inizio dell’acquisizione.
 * Se è stato applicato un Inserisco nell&#39;elenco Consentiti di [IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tramite Cloud Manager, Cloud Acceleration Manager non potrà raggiungere il servizio di migrazione. Non è possibile aggiungere un indirizzo IP per le acquisizioni perché il relativo indirizzo è dinamico. Attualmente, l’unica soluzione consiste nel disabilitare il inserisco nell&#39;elenco Consentiti di indicizzazione e acquisizione dell’IP durante il processo di acquisizione.
 * Ci possono essere altri motivi che richiedono un&#39;indagine. Se l’acquisizione o l’indicizzazione continua a non riuscire, contatta l’Assistenza clienti di Adobe.
 
 ### Aggiornamenti e acquisizioni delle versioni di AEM {#aem-version-updates-and-ingestions}
 
-[Gli aggiornamenti della versione di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
+[Gli aggiornamenti della versione di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) vengono applicati automaticamente agli ambienti per mantenerli aggiornati con la versione di AEM as a Cloud Service più recente. Se l’aggiornamento viene attivato quando viene eseguita un’acquisizione, possono verificarsi risultati imprevedibili, incluso il danneggiamento dell’ambiente.
 
 Se nel programma di destinazione è stato effettuato l’onboarding di &quot;Aggiornamenti della versione di AEM&quot;, il processo di acquisizione tenta di disabilitare la coda prima dell’avvio. Al termine dell’acquisizione, lo stato del programma di aggiornamento della versione viene ripristinato come era prima dell’inizio delle acquisizioni.
 
@@ -239,7 +239,7 @@ Questa è una restrizione di MongoDB.
 
 Per ulteriori informazioni e un collegamento a uno strumento Oak che consenta di trovare tutti i nodi di grandi dimensioni, vedere la nota `Node property value in MongoDB` in [Prerequisiti per lo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md). Dopo aver risolto tutti i nodi con dimensioni elevate, esegui di nuovo l’estrazione e l’acquisizione.
 
-Per evitare questa restrizione, esegui [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e controlla i risultati che presenta, in particolare il pattern [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Per evitare questa restrizione, esegui [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sull&#39;istanza AEM di origine e controlla i risultati che presenta, in particolare il pattern [&quot;Unsupported Repository Structure&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -269,6 +269,15 @@ Talvolta, problemi intermittenti inattesi potrebbero prestarsi a acquisizioni no
 >abstract="L’estrazione attesa per l’acquisizione non è stata completata correttamente. L’acquisizione è stata annullata perché non è stato possibile eseguirla."
 
 Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende pazientemente che l’estrazione abbia esito positivo e a quel punto inizia normalmente. Se l’estrazione non riesce o viene interrotta, l’acquisizione e il relativo processo di indicizzazione non iniziano ma vengono annullati. In questo caso, controlla l’estrazione per determinare il motivo dell’errore, risolvi il problema e avvia di nuovo l’estrazione. Una volta eseguita l’estrazione fissa, è possibile pianificare una nuova acquisizione.
+
+### Avvio acquisizione in attesa non riuscito {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Acquisizione in attesa non avviata"
+>abstract="Impossibile avviare l’acquisizione dopo aver atteso il completamento di un’estrazione."
+
+Un’acquisizione creata con un’estrazione in esecuzione come set di migrazione di origine attende finché l’estrazione non riesce e a quel punto l’acquisizione tenta di avviarsi normalmente. Se l’acquisizione non viene avviata correttamente, viene contrassegnata come non riuscita. I possibili motivi del mancato avvio sono: un Elenco consentiti IP è configurato nell’ambiente di authoring di destinazione; l’ambiente di destinazione non è disponibile per altri motivi.  In questo caso, verifica il motivo per cui l’acquisizione non è riuscita, risolve il problema e avvia di nuovo l’acquisizione (non è necessario ripetere l’estrazione).
 
 ### La risorsa eliminata non è presente dopo la nuova acquisizione
 
