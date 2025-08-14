@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1095,7 +1095,6 @@ ht-degree: 97%
          + [Convalidare i campo modulo - Aggiungere controlli di errore ai moduli](/help/edge/docs/forms/validate-forms.md)
          + [Progettare moduli di bell’aspetto - Guida allo stile e alla personalizzazione](/help/edge/docs/forms/style-theme-forms.md)
          + [Creare messaggi di successo - Personalizzare la pagina di ringraziamento del modulo](/help/edge/docs/forms/thank-you-page-form.md)
-         + [Guida all’invio dei moduli- Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
          + [Campi modulo dinamici - Caricamento delle opzioni dagli URL](/help/edge/docs/forms/load-options-from-url.md)
          + [Aggiungere un comportamento intelligente - Regole modulo e guida logica](/help/edge/docs/forms/rules-forms.md)
          + [Convalida dei moduli avanzata - Guida alle espressioni regolari](/help/edge/docs/forms/regex-forms.md)
@@ -1106,6 +1105,7 @@ ht-degree: 97%
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [Guida all’invio dei moduli- Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}

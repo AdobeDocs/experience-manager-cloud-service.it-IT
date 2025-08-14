@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # Navigare nell’interfaccia dell’editor universale per AEM Forms
 
-[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un&#39;interfaccia visiva per la creazione di AEM Forms con Edge Delivery Services. Questa guida ti aiuta a comprendere l’interfaccia per creare moduli in modo efficiente.
+[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un&#39;interfaccia visiva per la creazione di AEM Forms con Edge Delivery Services. Offre un&#39;esperienza di **What You See Is What You Get (WYSIWYG)** che mostra esattamente come i moduli appariranno agli utenti.
 
 ![Panoramica dell&#39;interfaccia dell&#39;editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Panoramica
-
-L&#39;editor universale offre un&#39;esperienza di **What You See Is What You Get (WYSIWYG)** che visualizza esattamente l&#39;aspetto dei moduli per gli utenti. Che tu sia un nuovo utente nella creazione di moduli o uno sviluppatore esperto, questa guida ti aiuterà a:
+Questa guida ti aiuta a comprendere l’interfaccia per creare moduli in modo efficiente. Che tu sia un nuovo utente nella creazione di moduli o uno sviluppatore esperto, questa guida ti aiuterà a:
 
 **Scopri le abilità essenziali:**
 
@@ -37,6 +35,8 @@ L&#39;editor universale offre un&#39;esperienza di **What You See Is What You Ge
 - Creare moduli dal concetto alla pubblicazione
 - Test e anteprima dei moduli tra dispositivi
 - Collaborazione con i membri del team nei progetti modulo
+
+
 
 ## Guida introduttiva
 
@@ -472,7 +472,7 @@ Utilizza queste scelte rapide per creare moduli in modo più rapido ed efficient
 
 +++
 
-+++I Componenti Non Rispondono
++++I componenti non rispondono
 
 **Problema:** impossibile selezionare i componenti o il pannello Proprietà non viene aggiornato
 
