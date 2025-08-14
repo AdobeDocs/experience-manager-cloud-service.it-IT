@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 16%
+source-wordcount: '1089'
+ht-degree: 15%
 
 ---
 
@@ -94,13 +94,18 @@ Per configurare queste impostazioni, determinare se è necessario configurare un
 >
 >Per le CDN gestite da Adobe, quando si utilizzano certificati DV (convalida del dominio), sono consentiti solo i siti con convalida ACME.
 
-#### Requisiti {#adobe-managed-cert-dv-requirements}
 
-Rispetta questi requisiti prima di configurare i record DNS.
+### Configurare DNS{#config-dns}
+
+>[!WARNING]
+>
+>Il principio &quot;registrati prima di pubblicizzare&quot; si applica qui. In altre parole, la configurazione del DNS deve essere eseguita solo *dopo* che il mapping del dominio è stato aggiunto correttamente. In questo modo Cloud Manager riconosce e verifica che il dominio esista nella propria configurazione prima di poter rispondere alle relative richieste. Evita inoltre qualsiasi tentativo di acquisizione del dominio.
+
+Assicurati di soddisfare i seguenti requisiti *prima* di configurare i record DNS:
 
 * Identifica l’host o il registrar del dominio se non lo conosci già.
 * Essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o contattare la persona appropriata che può farlo.
-* È necessario aver già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* Hai già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 #### Record CNAME {#adobe-managed-cert-cname-record}
 
