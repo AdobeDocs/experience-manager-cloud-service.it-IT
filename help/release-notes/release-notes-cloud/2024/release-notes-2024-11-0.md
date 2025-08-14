@@ -4,10 +4,10 @@ description: Note sulla versione 2024.11.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di giugno 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.11.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ Trasforma rapidamente qualsiasi pagina di Edge Delivery in un modello di pagina.
 
 **[!DNL Edge Delivery Services]Importazione CSV per la pubblicazione tramite un’istanza AEM**
 
-Gestisci in modo efficiente i dati del foglio di calcolo di Edge Delivery (ad es. reindirizzamenti) nello strumento preferito e caricalo su AEM tramite la nuova funzione di importazione CSV. [Ulteriori informazioni](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+Gestisci in modo efficiente i dati del foglio di calcolo di Edge Delivery (ad es. reindirizzamenti) nello strumento preferito e caricalo su AEM tramite la nuova funzione di importazione CSV. [Ulteriori informazioni](https://www.aem.live/docs/authoring-tabular-data).
 
 ### Funzionalità pre-release in AEM Sites
 
-È stato migliorato il [riferimento del frammento di contenuto con riferimenti univoci basati su ID](/help/headless/graphql-api/uuid-reference-upgrade.md), garantendo collegamenti stabili che rimangono validi anche quando le risorse o i frammenti vengono spostati, eliminando la necessità di aggiornamenti o ripubblicazione. Limitazione corrente: i riferimenti a pagine non sono ancora supportati con ID univoci. Se nei frammenti di contenuto si fa riferimento alle pagine, questa funzionalità non deve essere utilizzata.
+È stato migliorato il [frammento di contenuto con riferimento a riferimenti univoci basati su ID](/help/headless/graphql-api/uuid-reference-upgrade.md), garantendo collegamenti stabili che rimangono validi anche quando le risorse o i frammenti vengono spostati, eliminando la necessità di aggiornamenti o ripubblicazione. Limitazione corrente: i riferimenti a pagine non sono ancora supportati con ID univoci. Se nei frammenti di contenuto si fa riferimento alle pagine, questa funzionalità non deve essere utilizzata.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}
 

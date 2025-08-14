@@ -4,9 +4,9 @@ description: Anche se l’editor di applicazioni a pagina singola rimane support
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ I seguenti SDK sono ora in fase di blocco delle funzioni.
 
 La sostituzione più adatta per l’editor SPA dipende dalle esigenze dei tuoi progetti.
 
-* **[L&#39;editor universale](/help/edge/wysiwyg-authoring/authoring.md)** è la sostituzione diretta migliore per l&#39;editor SPA.
+* **[L&#39;editor universale](https://www.aem.live/docs/aem-authoring)** è la migliore sostituzione diretta per l&#39;editor SPA.
    * Universal Editor è anche un editor visivo ed è stato progettato appositamente per implementazioni disaccoppiate, incorporando tutta l’esperienza di Adobe dall’editor SPA.
    * L’editor universale è stato anche [rilasciato per AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (con la versione 2024.11.05 di AEM 6.5) e pertanto supporta AMS e casi d’uso in locale oltre a Cloud Services.
 * **[L&#39;Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md)** è un&#39;alternativa per coloro che preferiscono un editor basato su moduli.

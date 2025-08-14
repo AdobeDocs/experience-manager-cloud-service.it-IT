@@ -4,9 +4,9 @@ description: Scopri i campi e i tipi di componenti che l’Editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 11%
 
 ---
@@ -166,7 +166,7 @@ Un tipo di componente Tag di AEM abilita un selettore di tag di AEM, che può es
 
 >[!TIP]
 >
->Per ulteriori informazioni su come utilizzare i fogli di calcolo per gestire i dati della tassonomia per il progetto Edge Delivery Services, vedere il documento [Gestione dei dati della tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md).
+>Per ulteriori informazioni su come utilizzare i fogli di calcolo per gestire i dati della tassonomia per il progetto Edge Delivery Services, vedere il documento [Gestione dei dati della tassonomia](https://www.aem.live/docs/authoring-taxonomy).
 
 #### Contenuto AEM {#aem-content}
 

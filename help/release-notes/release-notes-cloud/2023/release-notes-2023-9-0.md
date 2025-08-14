@@ -4,7 +4,7 @@ description: Note sulla versione 2023.9.0 di [!DNL Adobe Experience Manager] as 
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 81%
@@ -40,11 +40,11 @@ Dai un’occhiata al video Panoramica della versione di settembre 2023 per un ri
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## Edge Delivery Services AEM {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
 Edge Delivery è una nuova serie di servizi componibili incentrati sulla massimizzazione dell’impatto dei contenuti per promuovere risultati aziendali misurabili al momento dell’interazione con il cliente.
 
-Ulteriori informazioni sui Edge Delivery Services nell&#39;articolo [qui](/help/edge/overview.md).
+Ulteriori informazioni su Edge Delivery Services sono disponibili nell&#39;articolo [qui](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Ora puoi assegnare il modulo metadati a una cartella specifica all’interno del
 
 ### Nuove funzioni nella vista Amministratore {#admin-view-features}
 
-* **Integrare AEM Assets as a Cloud Service con l&#39;authoring basato su documenti per Edge Delivery Services**: integrare AEM Assets con l&#39;authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti Web di [utilizzare le immagini disponibili negli archivi AEM Assets durante l&#39;authoring di documenti in Microsoft Word o Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrare AEM Assets as a Cloud Service con l&#39;authoring basato su documenti per Edge Delivery Services**: integrare AEM Assets con l&#39;authoring basato su documenti per Edge Delivery Services per consentire agli autori di siti Web di [utilizzare le immagini disponibili negli archivi AEM Assets durante l&#39;authoring di documenti in Microsoft Word o Google Docs](/help/edge/overview.md).
 
 * **Estrai archivi ZIP**: possibilità di selezionare archivi ZIP gestiti in Experience Manager e [di estrarre i file direttamente in Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) senza scaricarli.
 

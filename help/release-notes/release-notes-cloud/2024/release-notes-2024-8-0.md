@@ -4,9 +4,9 @@ description: Note sulla versione 2024.8.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Ora è supportata, la funzionalità [ereditarietà](/help/sites-cloud/authoring/
 
 Inoltre, sono ora supportate le seguenti funzioni di gestione delle pagine:
 
-* [I tag AEM](/help/sites-cloud/authoring/sites-console/tags.md) possono essere esportati come [tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md) in Edge Delivery Services.
+* [I tag AEM](/help/sites-cloud/authoring/sites-console/tags.md) possono essere esportati come [tassonomia](https://www.aem.live/docs/authoring-taxonomy) in Edge Delivery Services.
 * [I modelli](/help/sites-cloud/authoring/universal-editor/templates.md) per Edge Delivery Services saranno presto disponibili.
 
 ### Programma per i primi utilizzatori {#sites-early-adopter}

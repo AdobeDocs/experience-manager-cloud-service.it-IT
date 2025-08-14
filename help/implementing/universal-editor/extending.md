@@ -4,9 +4,9 @@ description: Scopri le diverse opzioni per estendere le funzionalità di Univers
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Se desideri esplorare le possibilità di creazione di estensioni personalizzate,
 
 >[!TIP]
 >
->Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
+>Se preferisci imparare da esempio, consulta l&#39;[esercitazione sull&#39;estensibilità dell&#39;interfaccia utente di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Anche se si concentra sull’estensione della console Frammenti di contenuto, i concetti per l’implementazione di un’estensione dell’interfaccia utente nell’Editor universale sono gli stessi.
 
 [Utilizzando Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per Universal Editor, e molto altro.
 
@@ -59,6 +59,6 @@ Se desideri esplorare le possibilità di creazione di estensioni personalizzate,
 
 Oltre all’estensibilità dell’interfaccia utente, Universal Editor offre molti altri punti di estensione flessibili per consentire l’integrazione perfetta di requisiti aziendali personalizzati.
 
-* **[Blocchi](/help/edge/developer/block-collection.md)**: in formato JSON semplice, i progetti possono regolare i blocchi e utilizzare le funzioni disponibili per la creazione di contenuti.
+* **[Blocchi](https://www.aem.live/developer/block-collection)**: in formato JSON semplice, i progetti possono regolare i blocchi e utilizzare le funzionalità disponibili per la creazione di contenuti.
 * **[Interfaccia utente personalizzata](#extending-ui)**: le estensioni possono visualizzare l&#39;interfaccia utente necessaria nei pannelli laterali o nelle finestre di dialogo modali.
 * **[Eventi](/help/implementing/universal-editor/events.md)**: le estensioni ricevono eventi sulle azioni dell&#39;autore e sulle selezioni effettuate nella pagina per rispondere in modo appropriato.

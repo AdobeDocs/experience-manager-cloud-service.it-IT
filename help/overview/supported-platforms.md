@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ L’interfaccia utente di Adobe Experience Manager funziona con le seguenti piat
 
 * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Authoring basato su documenti](/help/edge/docs/authoring.md) utilizzando [Sidekick](/help/edge/docs/sidekick.md)
+* [Authoring basato su documenti](https://www.aem.live/docs/aem-authoring) utilizzando [Sidekick](https://www.aem.live/docs/sidekick)
 
 Tutti i browser vengono testati con il set predefinito di plug-in e componenti aggiuntivi.
 
@@ -64,4 +64,4 @@ Tutti i browser vengono testati con il set predefinito di plug-in e componenti a
 
 Il supporto browser per i siti Web sottoposti a rendering da AEM dipende dall’implementazione dei modelli di pagina, dei blocchi, della progettazione e dell’output dei componenti di AEM. Pertanto, gli sviluppatori che implementano il progetto hanno il controllo finale sulla compatibilità del sito.
 
-Il [progetto standard AEM](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project), i [componenti core](/help/implementing/developing/components/overview.md#aem-core-components) e il [sito di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono compatibili con tutti i browser moderni.
+Il [progetto standard AEM](https://www.aem.live/developer/ue-tutorial#create-github-project), i [componenti core](/help/implementing/developing/components/overview.md#aem-core-components) e il [sito di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) sono compatibili con tutti i browser moderni.

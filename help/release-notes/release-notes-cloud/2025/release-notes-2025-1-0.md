@@ -4,9 +4,9 @@ description: Note sulla versione 2025.1.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1703'
 ht-degree: 92%
 
 ---
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3456082?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -68,7 +68,7 @@ La versione minima supportata di AEM as a Cloud Service per le nuove interfacce 
 
 Gli editor preferiti per la gestione dei contenuti headless in AEM sono ora:
 
-* [Editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.
+* [Editor universale](https://www.aem.live/docs/aem-authoring) per la modifica visiva.
 * [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo.
 
 #### Funzioni di PWA {#pwa-features}
@@ -180,7 +180,7 @@ Chiunque può accedere alla versione Beta pubblica facendo clic sul pulsante *Nu
 
 ## Guide di [!DNL Experience Manager] {#guides}
 
-L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
+L’elenco completo delle funzioni nuove e migliorate dell’ultima versione delle Guide di Adobe Experience Manager è disponibile [qui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2412-release/fixed-issues-2024-12-0).
 
 ## Cloud Manager {#cloud-manager}
 

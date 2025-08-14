@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '618'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Edge Delivery Services velocizzano inoltre la creazione dei contenuti offrendo n
 
 L’editor universale offre un’esperienza di authoring semplice e intuitiva (WYSIWYG) che può essere utilizzata per creare qualsiasi contenuto.
 
-Per ulteriori informazioni sull’authoring dei contenuti con l’editor universale, consulta il documento [Authoring dei contenuti WYSIWYG per Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md).
+Per ulteriori informazioni sull’authoring dei contenuti con l’editor universale, consulta il documento [Authoring dei contenuti WYSIWYG per Edge Delivery Services](https://www.aem.live/docs/aem-authoring).
 
 ### Authoring basato su documenti {#document-authoring}
 

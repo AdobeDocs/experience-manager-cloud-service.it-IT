@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 | ------------ | ------------------ | ----------- |
 | Sites | [Supporto frammento di contenuto nell’API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna frammento di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione dei modelli di frammento di contenuto e frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
 | Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuna |
-| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/edge/wysiwyg-authoring/authoring.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
+| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](https://www.aem.live/docs/aem-authoring) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. | La funzione è pianificata per la rimozione a breve. |
 | Sites | [Automazione della configurazione di Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nessuna |

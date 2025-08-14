@@ -1,24 +1,24 @@
 ---
-title: Impostare l’annullamento della validità push per un sito Edge Delivery
-description: Scopri come configurare l’invalidazione push per un sito Edge Delivery per garantire aggiornamenti dei contenuti e un controllo efficace della memorizzazione in cache.
+title: Configurare l’annullamento della validità push per un sito Edge Delivery
+description: Scopri come configurare l’annullamento della validità push per un sito Edge Delivery, per gestire in modo efficace l’aggiornamento dei contenuti e la memorizzazione in cache.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 2%
+source-wordcount: '173'
+ht-degree: 100%
 
 ---
 
-# Impostare l’annullamento della validità push
+# Configurare l’annullamento della validità push
 
-L’annullamento della validità push assicura che gli aggiornamenti di contenuto effettuati dagli autori vengano rimossi automaticamente dalla rete CDN (Content Delivery Network) gestita al momento della pubblicazione. In questo modo viene fornito solo il contenuto più recente.
+L’annullamento della validità push assicura che, al momento della pubblicazione, gli aggiornamenti dei contenuti effettuati dagli autori vengano rimossi automaticamente dalla rete per la consegna dei contenuti (CDN) gestita. In questo modo verranno forniti solo i contenuti più recenti.
 
-Il sistema cancella il contenuto in base a URL specifici e memorizza nella cache tag o chiavi, garantendo l’eliminazione delle versioni obsolete.
+Il sistema cancella i contenuti in base a specifici URL e tag o chiavi della cache, in modo che vengano eliminate le versioni obsolete.
 
-Per abilitare l’invalidazione push, è necessario aggiungere proprietà specifiche al file di configurazione del progetto. Ad esempio, una cartella di lavoro di Microsoft Excel denominata `.helix/config.xlsx` in SharePoint o il nome di un foglio di Google `.helix/config` in Google Drive.
+Per abilitare l’annullamento della validità push, è necessario aggiungere proprietà specifiche al file di configurazione del progetto. Ad esempio, una cartella di lavoro di Microsoft Excel denominata `.helix/config.xlsx` in SharePoint o un foglio di Google denominato `.helix/config` in Google Drive.
 
 Le seguenti proprietà di configurazione definiscono il nome dell’host di produzione e il tipo di gestione CDN:
 
@@ -27,6 +27,6 @@ Le seguenti proprietà di configurazione definiscono il nome dell’host di prod
 | `cdn.prod.host` | `<Production Host>` | Nome host del sito di produzione. Esempio: `www.example.com`. |
 | `cdn.prod.type` | gestito |   |
 
-Dopo aver apportato modifiche al foglio di configurazione, gli utenti devono visualizzarle in anteprima e attivarle con lo strumento [Sidekick](/help/edge/docs/sidekick.md) per applicare gli aggiornamenti.
+Dopo aver apportato modifiche al foglio di configurazione, gli utenti devono visualizzarle in anteprima e attivarle con lo strumento [Sidekick](https://www.aem.live/docs/sidekick) per applicare gli aggiornamenti.
 
-Vedere anche [Informazioni sull&#39;elenco attività di Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
+Consulta anche [Informazioni sull’elenco attività di Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).

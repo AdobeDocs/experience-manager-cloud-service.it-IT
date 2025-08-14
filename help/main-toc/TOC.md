@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
+source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
 workflow-type: tm+mt
-source-wordcount: '6604'
+source-wordcount: '6470'
 ht-degree: 97%
 
 ---
@@ -1066,50 +1066,7 @@ ht-degree: 97%
    + [Domande frequenti](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Panoramica di Edge Delivery Services](/help/edge/overview.md)
-   + [Utilizzo di Edge Delivery Services con AEM](/help/edge/using.md)
-   + [Scelta di un metodo di authoring](/help/edge/authoring-methods.md)
-   + Authoring WYSIWYG {#wysiwyg-authoring}
-      + [Authoring dei contenuti WYSIWYG per Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
-      + [Pubblicazione di contenuti per Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
-      + [Guida introduttiva per sviluppatori](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-      + [Creazione di blocchi](/help/edge/wysiwyg-authoring/create-block.md)
-      + [Modellazione dei contenuti](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [Mappatura del percorso](/help/edge/wysiwyg-authoring/path-mapping.md)
-      + [Dati tabulari e fogli di calcolo](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [Gestione dei dati di tassonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYG e blocchi basati su documenti](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [Pagine con risorse DAM](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [Riutilizzare il codice in siti diversi](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Gestione di più siti senza archivio](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Ambienti di produzione e staging senza archivio](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [Configurare l’autenticazione del sito](/help/edge/wysiwyg-authoring/site-authentication.md)
-      + [Funzioni siti WIP](/help/edge/wysiwyg-authoring/wip-features.md)
-   + Authoring basato su documenti {#document-authoring}
-      + [Authoring](/help/edge/docs/authoring.md)
-      + [Metadati in blocco](/help/edge/docs/bulk-metadata.md)
-      + [Segnaposto](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [Configurazione di SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Bot di Slack](/help/edge/docs/slack.md)
-   + Creazione di applicazioni {#build}
-      + [Guida introduttiva: tutorial per sviluppatori](/help/edge/developer/tutorial.md)
-      + [Anatomia di un progetto](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Bloccare una raccolta](/help/edge/developer/block-collection.md)
-      + [Fogli di calcolo](/help/edge/developer/spreadsheets.md)
-      + [Moduli](/help/edge/developer/forms.md)
-      + [Indicizzazione](/help/edge/developer/indexing.md)
-      + [Mantenere 100](/help/edge/developer/keeping-it-100.md)
-      + [Markup: sezioni](/help/edge/developer/markup-sections-blocks.md)
-      + [Favicon](/help/edge/developer/favicon.md)
-      + [Intestazioni personalizzate](/help/edge/docs/custom-headers.md)
-      + [Best practice per sviluppatori](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Avvio di applicazioni {#launch}
-      + [Lista di controllo per il Go Live](/help/edge/docs/go-live-checklist.md)
-      + [Annullamento Push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Configurazione di Cloudflare Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Configurazione di Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Configurazione di Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [Reindirizzamenti](/help/edge/docs/redirects.md)
+{#wysiwyg-authoring}
    + Creazione di moduli {#build-forms}
       + [Panoramica](/help/edge/docs/forms/overview.md)
       + Authoring WYSIWYG {#universal-editor}
@@ -1150,15 +1107,7 @@ ht-degree: 97%
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [Best practice per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
-   + Risorse di Edge Delivery {#resources}
-      + Sidekick {#sidekick}
-         + [Utilizzo di Sidekick](/help/edge/docs/sidekick.md)
-         + [Installazione dell’estensione](/help/edge/docs/sidekick-extension.md)
-         + [Libreria di Sidekick](/help/edge/docs/sidekick-library.md)
-      + [Domande frequenti](/help/edge/docs/faq.md)
-      + Strumenti {#tools}
-         + [Registro di controllo](/help/edge/docs/auditlog.md)
+   + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [Cos’è un CMS headless?](/help/headless/what-is-headless.md)
    + [Introduzione ad AEM Headless](/help/headless/introduction.md)

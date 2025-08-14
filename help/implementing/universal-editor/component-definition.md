@@ -4,10 +4,10 @@ description: Comprendi in dettaglio il contratto JSON tra la definizione del com
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ Il file `component-definition.json` definisce i componenti disponibili per gli a
 
 >[!TIP]
 >
->Per una panoramica del processo di modellazione del contenuto, vedere il documento [Modellazione del contenuto per l&#39;authoring WYSIWYG con progetti Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Per una panoramica del processo di modellazione del contenuto, vedere il documento [Modellazione del contenuto per l&#39;authoring di WYSIWYG con progetti Edge Delivery Services.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->Non è necessario creare un file `component-definition.json` personalizzato da zero. Il boilerplate del progetto utilizzato per [avviare il progetto](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contiene un [file `component-definition.json` perfettamente funzionante](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) che puoi adattare in base alle tue esigenze.
+>Non è necessario creare un file `component-definition.json` personalizzato da zero. Il boilerplate del progetto utilizzato per [avviare il progetto](https://www.aem.live/developer/ue-tutorial) contiene un [file `component-definition.json` perfettamente funzionante](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) che puoi adattare in base alle tue esigenze.
 
 ## Esempio di definizione del componente {#example}
 
@@ -87,7 +87,7 @@ Di seguito è riportato un esempio di `component-definition.json` completo ma se
    * Poiché è univoco, può essere utilizzato, ad esempio, in una [definizione di filtro](/help/implementing/universal-editor/filtering.md) per determinare quali componenti possono essere aggiunti a un contenitore.
 * `model` definisce quale [modello](/help/implementing/universal-editor/field-types.md#model-structure) viene utilizzato con il componente.
    * Il modello viene quindi mantenuto centralmente nella definizione del componente e non è necessario che sia [specificata la strumentazione.](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * Questo consente di spostare i componenti tra contenitori diversi.
+   * In questo modo, inoltre, sarà possibile spostare i componenti tra contenitori diversi.
 * `filter` definisce quale [filtro](/help/implementing/universal-editor/filtering.md) deve essere utilizzato con il componente.
 
 ## `plugins` {#plugins}
