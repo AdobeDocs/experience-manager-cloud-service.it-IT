@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -95,7 +95,7 @@ Per configurare queste impostazioni, determinare se è necessario configurare un
 >Per le CDN gestite da Adobe, quando si utilizzano certificati DV (convalida del dominio), sono consentiti solo i siti con convalida ACME.
 
 
-### Configurare DNS{#config-dns}
+## Configurare DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ Assicurati di soddisfare i seguenti requisiti *prima* di configurare i record DN
 * Essere in grado di modificare i record DNS per il dominio dell&#39;organizzazione o contattare la persona appropriata che può farlo.
 * Hai già verificato il nome di dominio personalizzato configurato come descritto nel documento [Verifica dello stato del nome di dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Record CNAME {#adobe-managed-cert-cname-record}
+### Record CNAME {#adobe-managed-cert-cname-record}
 
 Un nome canonico o record CNAME è un tipo di record DNS che associa un nome alias a un nome di dominio reale o canonico. I record CNAME vengono in genere utilizzati per associare un sottodominio come `www.example.com` al dominio che ospita il contenuto del sottodominio.
 
@@ -117,7 +117,7 @@ Accedere al provider di servizi DNS e creare un record `CNAME` per far sì che i
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### Record APEX {#adobe-managed-cert-apex-record}
+### Record APEX {#adobe-managed-cert-apex-record}
 
 Un dominio apex è un dominio personalizzato che non contiene un sottodominio, ad esempio `example.com`. Un dominio APEX è configurato con un record `A`, `ALIAS` o `ANAME` tramite il provider DNS. I domini apex devono puntare a indirizzi IP specifici.
 
