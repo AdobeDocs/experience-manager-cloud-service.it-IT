@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 97%
@@ -1104,8 +1104,8 @@ ht-degree: 97%
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
-      + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Guida all’invio dei moduli- Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
+      + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
