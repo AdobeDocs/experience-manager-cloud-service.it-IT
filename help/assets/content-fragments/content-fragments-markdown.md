@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 79%
+source-wordcount: '595'
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ Quando si esegue l&#39;[authoring](/help/assets/content-fragments/content-fragme
 >
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
->Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console **Frammenti di contenuto**, consulta la documentazione di Sites [Frammenti di contenuto - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md).
+>Esistono due editor per l’authoring dei frammenti di contenuto; anche se la funzionalità di base è la stessa, esistono alcune differenze. Questa sezione tratta l&#39;editor originale, a cui si accede principalmente dalla console **Assets**. Per informazioni dettagliate sul nuovo editor, a cui si accede principalmente dalla console [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md), consulta la documentazione di Sites **Frammenti di contenuto - Authoring**.
 
 ![Editor markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -136,7 +136,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizza il simbolo &ast; davanti agli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizza il simbolo &amp;ast; davanti agli elementi dell’elenco. Esempio:
 
     `* item in list`
 
@@ -172,7 +172,7 @@ Puoi applicare il grassetto con la seguente procedura:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Per indicare un’estensione del codice, inseriscila tra apici inversi (&grave;). A differenza di un blocco di codice preformattato, un’estensione del codice indica il codice all’interno di un paragrafo normale.
+Per indicare un intervallo di codice, racchiuderlo tra apici inversi (`` ` ``). A differenza di un blocco di codice preformattato, un’estensione del codice indica il codice all’interno di un paragrafo normale.
 
 Esempio:
 
