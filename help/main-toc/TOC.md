@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
+source-git-commit: 0fa217bdab8c5a604fe97fcbf1adc0421d3377d9
 workflow-type: tm+mt
-source-wordcount: '6470'
+source-wordcount: '6476'
 ht-degree: 97%
 
 ---
@@ -1191,6 +1191,7 @@ ht-degree: 97%
    + [Intelligenza artificiale generativa in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Generare varianti](/help/generative-ai/generate-variations.md)
+   + [Configurare l’Assistente IA in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
    + [Assistente IA di AEM (Beta limitato)](/help/implementing/cloud-manager/aem-ai-assistant.md)
    + [Assistente IA di AEM Forms (Forms Experience Builder) (primi utilizzatori)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [Assistente IA di AEM Forms - Libreria dei prompt](/help/edge/docs/forms/ai-assistant-prompt-library.md)
