@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
+source-git-commit: fb33696ae7987081c7ee4cd35a233f54aaaa4c65
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1545'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Scegli una delle piattaforme supportate:
 
 >[!TIP]
 >
->**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
+>**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
 
 ## Metodi di configurazione
 
@@ -133,7 +133,7 @@ Il servizio di invio Forms offre due approcci di configurazione. Scegli il metod
 
 Prima di configurare uno di questi metodi, assicurati che le basi del progetto AEM siano pronte:
 
-1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Aggiorna`fstab.yaml`** nella directory principale del progetto:
 
@@ -166,7 +166,7 @@ Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 1. **Apri la piattaforma del foglio di calcolo** (fogli di Google o Microsoft Excel)
 2. **Crea un nuovo foglio di calcolo** per il progetto modulo
 3. **Denomina il foglio** (deve essere `helix-default` o `shared-aem`)
-4. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definizione modulo](/help/forms/assets/form-submission-definition.png)
 *Esempio: definizione modulo con tipi di campo, etichette e regole di convalida*
@@ -373,30 +373,29 @@ Postman fornisce un’interfaccia intuitiva per testare gli invii API.
 
 **Configurazione richiesta:**
 
-    &quot;json
+```json
+POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-PUBBLICA https://forms.adobe.com/adobe/forms/af/submit/your-form-id
-
-Intestazioni:
+Headers:
 Content-Type: application/json
-x-adobe-routing: tier=live,bucket=main—your-repo—your-org
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-Corpo (JSON):
-&lbrace;
-&quot;data&quot;: &lbrace;
-&quot;startDate&quot;: &quot;2025-01-10&quot;,
-&quot;endDate&quot;: &quot;2025-01-25&quot;,
-&quot;destinazione&quot;: &quot;Australia&quot;,
-&quot;class&quot;: &quot;First Class&quot;,
-&quot;bilancio&quot;: &quot;2000&quot;,
-&quot;amount&quot;: &quot;1000000&quot;,
-&quot;name&quot;: &quot;Mary&quot;,
-&quot;age&quot;: &quot;35&quot;,
-&quot;subscribe&quot;: null,
-&quot;email&quot;: &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
-&quot;
+Body (JSON):
+{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
+}
+```
 
 **Risposta prevista:**
 
@@ -442,9 +441,9 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-        ```
+```
 
->[!TAB Windows Command Prompt]
+>[!TAB Prompt dei comandi di Windows]
 
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
@@ -475,15 +474,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-    ```
+```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Response & Verification
++++ Risposta e verifica API
 
-**Successful Response:**
+**Risposta corretta:**
 
 ```http
 HTTP/1.1 201 Created
@@ -580,7 +579,7 @@ Ora che hai configurato il servizio di invio Forms, scopri i seguenti argomenti 
 
 +++ Migliora il tuo Forms
 
-- **[Crea Forms avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
+- **[Crea Forms avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
 - **[Guida ai componenti del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Esplora i tipi di campo modulo disponibili
 
 +++
