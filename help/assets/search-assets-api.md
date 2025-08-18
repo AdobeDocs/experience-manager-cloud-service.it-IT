@@ -3,7 +3,7 @@ title: Cerca API di Assets
 description: Scopri come utilizzare l’API Search Assets.
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-Per richiamare l&#39;API di ricerca, è necessario un token IMS per definire nei dettagli `Authorization`. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#fetch-the-aem-as-a-cloud-service-credentials) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#generating-the-access-token) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di Search Assets.
+Per richiamare l&#39;API di ricerca, è necessario un token IMS per definire nei dettagli `Authorization`. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di Search Assets.
 
-Per visualizzare esempi di richieste, campioni di risposta e codici di risposta, vedere [Cerca nell&#39;API Assets](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+Per visualizzare esempi di richieste, campioni di risposta e codici di risposta, vedere [Cerca nell&#39;API Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search).

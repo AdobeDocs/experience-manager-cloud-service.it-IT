@@ -3,9 +3,9 @@ title: API di consegna
 description: Scopri come utilizzare le API di consegna.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '575'
 ht-degree: 5%
 
 ---
@@ -24,13 +24,13 @@ La tabella seguente illustra l’utilizzo delle varie API di consegna disponibil
 
 | API di consegna | Descrizione |
 |---|---|
-| [Rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Restituisce la rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto in base all’ID risorsa inviato nella richiesta. Inoltre, puoi definire vari modificatori di immagini, ad esempio larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e [ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md). Consulta [Dettagli API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) per i formati e i modificatori di immagini supportati.<br>Adobe consiglia di utilizzare questa API per tutti i tipi di formato immagine. |
-| [Rappresentazione binaria ottimizzata per il web della risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | L’API di convenienza che applica i valori predefiniti alla rappresentazione binaria ottimizzata per il web della risorsa restituita nella risposta. I valori predefiniti includono un formato JPEG/WEBP standard, qualità => 65 e larghezza => 1024. |
-| [File binario caricato originale della risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Restituisce i file binari caricati originariamente per la risorsa. Adobe consiglia di utilizzare questa API per i tipi di formati di documento e le immagini SVG. |
-| [Rendering pregenerato della risorsa disponibile nell&#39;ambiente di authoring AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Restituisce il bitstream del rendering della risorsa disponibile nell’ambiente di authoring AEM Assets in base all’ID risorsa e al nome del rendering inviati nella richiesta. |
-| [Metadati risorsa](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Restituisce le proprietà associate a una risorsa, ad esempio titolo, descrizione, CreateDate, ModifyDate e così via. |
-| [Contenitore lettore per la risorsa video](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Restituisce il contenitore del lettore per la risorsa video. È possibile incorporare il lettore in un elemento iframe HTML e riprodurre il video. |
-| [Manifesti di riproduzione nel formato di output selezionato](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Restituisce il file del manifesto di riproduzione per la risorsa video specificata nel formato di output selezionato. Devi creare un lettore personalizzato in grado di eseguire lo streaming adattivo tramite i protocolli HLS o DASH per estrarre il file del manifesto di riproduzione e riprodurre il video. |
+| [Rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) | Restituisce la rappresentazione binaria ottimizzata per il web della risorsa nel formato di output richiesto in base all’ID risorsa inviato nella richiesta. Inoltre, puoi definire vari modificatori di immagini, ad esempio larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e [ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md). Consulta [Dettagli API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) per i formati e i modificatori di immagini supportati.<br>Adobe consiglia di utilizzare questa API per tutti i tipi di formato immagine. |
+| [Rappresentazione binaria ottimizzata per il web della risorsa](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAsset) | L’API di convenienza che applica i valori predefiniti a una rappresentazione binaria ottimizzata per il web della risorsa restituita nella risposta. I valori predefiniti includono un formato JPEG/WEBP standard, qualità => 65 e larghezza => 1024. |
+| [File binario caricato originale della risorsa](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetOriginal) | Restituisce i file binari caricati originariamente per la risorsa. Adobe consiglia di utilizzare questa API per i tipi di formati di documento e le immagini SVG. |
+| [Rendering pregenerato della risorsa disponibile nell&#39;ambiente di authoring AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetRendition) | Restituisce il bitstream del rendering della risorsa disponibile nell’ambiente di authoring AEM Assets in base all’ID risorsa e al nome del rendering inviati nella richiesta. |
+| [Metadati risorsa](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata) | Restituisce le proprietà associate a una risorsa, ad esempio titolo, descrizione, CreateDate, ModifyDate e così via. |
+| [Contenitore lettore per la risorsa video](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Restituisce il contenitore del lettore per la risorsa video. È possibile incorporare il lettore in un elemento iframe HTML e riprodurre il video. |
+| [Manifesti di riproduzione nel formato di output selezionato](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Restituisce il file del manifesto di riproduzione per la risorsa video specificata nel formato di output selezionato. Devi creare un lettore personalizzato in grado di eseguire lo streaming adattivo tramite i protocolli HLS o DASH per estrarre il file del manifesto di riproduzione e riprodurre il video. |
 
 Dynamic Media con funzionalità OpenAPI supporta anche video in formato esteso. I video supportano fino a 50 GB e 2 ore.
 
@@ -47,7 +47,7 @@ Il dominio di consegna è simile nella struttura al dominio dell’ambiente di a
 
 `eYYYY` fa riferimento all&#39;ID ambiente
 
-Per ulteriori informazioni, vedere [Dettagli API](https://adobe-aem-assets-delivery.redoc.ly/#tag/Assets).
+Per ulteriori informazioni, vedere [Dettagli API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#tag/Assets).
 
 ## Metodo di richiesta API di consegna {#delivery-api-request-method}
 
@@ -64,7 +64,7 @@ headers: {
     }
 ```
 
-Per richiamare le API di consegna, è necessario un token IMS nei dettagli `Authorization` per inviare una risorsa con restrizioni. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#fetch-the-aem-as-a-cloud-service-credentials) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#generating-the-access-token) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di consegna.
+Per richiamare le API di consegna, è necessario un token IMS nei dettagli `Authorization` per inviare una risorsa con restrizioni. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di consegna.
 
 
-Per visualizzare esempi di richieste, campioni di risposta e codici di risposta, vedi [API di consegna](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+Per visualizzare esempi di richieste, campioni di risposta e codici di risposta, vedi [API di consegna](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

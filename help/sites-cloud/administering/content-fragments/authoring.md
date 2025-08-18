@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 6%
@@ -48,7 +48,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
    * [Pubblica](#publish-content-fragment) e [Annulla pubblicazione](#unpublish-content-fragment) azioni
    * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
    * **[Stato](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** del frammento e le ultime informazioni salvate
-   * Pulsante per passare all’editor originale (basato su Assets)
+   * Pulsante di attivazione per passare all’editor originale (basato su Assets)
 
      >[!WARNING]
      >
@@ -205,7 +205,7 @@ I campi definiti come Testo normale o Markdown hanno una casella di testo sempli
 Per i campi **[Testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** definiti come **Testo formattato**, sono disponibili diverse funzionalità:
 
 * Modifica il contenuto:
-   * Annulla/Ripristina
+   * Annullare/Ripetere
    * Incolla/Incolla come testo
    * Copia
    * Seleziona formato paragrafo
@@ -267,7 +267,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
@@ -354,9 +354,9 @@ Esistono alcune limitazioni quando si fa riferimento a risorse remote:
 
 * Nessun metadati di risorse viene esposto tramite l’API di gestione o l’API di consegna. Per recuperare i dettagli dei metadati della risorsa, devi utilizzare l’API Asset Metadata:
 
-   * i metadati delle singole risorse: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * i metadati delle singole risorse: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * ottenere informazioni in blocco sui metadati utilizzando l&#39;API di ricerca (sperimentale): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * ottenere informazioni in blocco sui metadati utilizzando l&#39;API di ricerca (sperimentale): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
+source-wordcount: '5984'
 ht-degree: 73%
 
 ---
@@ -109,7 +109,7 @@ Con GraphQL è possibile eseguire query per ottenere:
 
 * Un **[elenco delle voci](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM fornisce funzionalità per convertire le query (entrambi i tipi) in [Query persistenti, che possono essere memorizzate nella cache](/help/headless/graphql-api/persisted-queries.md) da Dispatcher e CDN.
+AEM fornisce funzionalità per convertire le query (di entrambi i tipi) in [query persistenti, che possono essere memorizzate nella cache](/help/headless/graphql-api/persisted-queries.md) da Dispatcher e CDN.
 
 ### Best practice per le query GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
 
@@ -375,7 +375,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->&#x200B;>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
+>>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
 >
 >Ad esempio, effettuando una chiamata del campo `stringMetadata`, può essere restituito un array di tutti i metadati memorizzati nell’archivio come una `String`; se si effettua una chiamata dell’`stringArrayMetadata` può essere restituito un array di tutti i metadati memorizzati nell’archivio come `String[]`.
 
@@ -1171,7 +1171,7 @@ Le limitazioni attuali sono:
 
   >[!NOTE]
   >
-  >L&#39;URL completo deve quindi essere costruito sul lato client, in base all&#39;[API di consegna risorse](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >L&#39;URL completo deve quindi essere costruito sul lato client, in base all&#39;[API di consegna risorse](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Solo le *risorse approvate* saranno disponibili come riferimento dagli archivi remoti
 * Se una risorsa a cui si fa riferimento viene rimossa dall’archivio remoto, il riferimento alla risorsa per frammenti di contenuto non verrà corretto.
@@ -1225,7 +1225,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * Per il contenuto:
 
       * `_locale`: per visualizzare la lingua; basato su Language Manager
-         * Vedi [Query di esempio per più frammenti di contenuto di una specifica impostazione locale](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+         * Vedi [Query di esempio per più frammenti di contenuto di una determinata lingua](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata`: per visualizzare i metadati del frammento
          * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
