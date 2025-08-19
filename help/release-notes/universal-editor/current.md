@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.07.31 dell’editor universale
-description: Queste sono le note sulla versione 2025.07.31 dell’editor universale.
+title: Note sulla versione 2025.08.14 dell’editor universale
+description: Queste sono le note sulla versione 2025.08.14 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: f3003f8e607121c8dd9a8ccef5e0d5a3dd35255f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 56%
+source-wordcount: '233'
+ht-degree: 69%
 
 ---
 
 
-# Note sulla versione 2025.07.31 dell’editor universale {#release-notes}
+# Note sulla versione 2025.08.14 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 31 luglio 2025 di Universal Editor.
+Queste sono le note sulla versione del 14 agosto 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,15 +22,8 @@ Queste sono le note sulla versione del 31 luglio 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [L&#39;opzione della barra degli strumenti dell&#39;intestazione di autenticazione](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) rimane dietro un interruttore di funzionalità introdotto nella versione [2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * Tuttavia, ora è attivata per impostazione predefinita.
-* Nuove funzionalità per [Utenti che utilizzano l&#39;editor Rich Text](#new-rte)
-   * È stato aggiunto il supporto per la modalità scura.
-   * È stato aggiunto il supporto per l’allineamento del testo.
-      * Disabilitata per impostazione predefinita e disponibile solo per progetti headless
-   * È stato aggiunto il supporto per il rientro.
-      * Disabilitata per impostazione predefinita e disponibile solo per progetti headless
-   * Le interruzioni (`<br>`) sono ora inserite al passaggio del mouse+Invio.
+* Nuova funzionalità per [Utenti che utilizzano l&#39;editor Rich Text in anticipo](#new-rte)
+   * È stata aggiunta un’opzione di configurazione per disabilitare la destinazione nella finestra di dialogo Collegamento editor Rich Text.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -49,10 +42,9 @@ La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell
 
 ## Altri miglioramenti {#other-improvements}
 
-* Correzioni relative all’editor Rich Text di primo utilizzo
-   * Premendo Invio verrà creata una nuova voce di elenco (`<li>`) all&#39;interno di un elenco.
-* I video ora vengono aggiornati correttamente quando si utilizza DAM remoto.
-* È stato aggiunto il supporto per 6,5 LTS.
+* È stato risolto un problema relativo allo scorrimento a schermo intero in [nuovo editor Rich Text](#new-rte).
+* Il comportamento persistente durante la modifica dei campi condizionali è stato corretto.
+* `aem-content-fragment` è stato abilitato per il passaggio tra varianti.
 
 ## Obsoleti {#deprecations}
 
