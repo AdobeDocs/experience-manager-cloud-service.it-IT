@@ -167,11 +167,11 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >[!IMPORTANT]
 >
 >La pipeline front-end richiede che il seguente Elenco di indirizzi IP consentiti sia aggiunto in anticipo a Cloud Manager.
->>Se necessario, [aggiungi l’Elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando il blocco di indirizzi seguente. Ogni indirizzo è separato da una virgola. Incolla il blocco nel campo **Indirizzo IP / CIDR** della finestra di dialogo **Aggiungi Elenco indirizzi IP consentiti**. Posiziona il cursore subito dopo la prima virgola nell’elenco indirizzi e premi **Invio**. Salva l’elenco.
->>Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo elenco di indirizzi IP consentiti sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
+>&#x200B;>Se necessario, [aggiungi l’Elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando il blocco di indirizzi seguente. Ogni indirizzo è separato da una virgola. Incolla il blocco nel campo **Indirizzo IP / CIDR** della finestra di dialogo **Aggiungi Elenco indirizzi IP consentiti**. Posiziona il cursore subito dopo la prima virgola nell’elenco indirizzi e premi **Invio**. Salva l’elenco.
+>&#x200B;>Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo elenco di indirizzi IP consentiti sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
 >
 >**Elenco indirizzi IP consentiti di Cloud Manager**
->>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Aggiungere un elenco di indirizzi IP consentiti e pipeline front-end di Could Manager {#add-cm-allowlist-frontend-pipeline}
@@ -179,7 +179,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >[!IMPORTANT]
 >
 >Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
->>Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>&#x200B;>Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Elenchi IP consentiti ed editor universale {#ip-allow-lists-ue}
 
