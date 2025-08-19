@@ -5,10 +5,10 @@ feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 87%
+source-wordcount: '718'
+ht-degree: 83%
 
 ---
 
@@ -30,7 +30,7 @@ Vengono utilizzati Frammenti di contenuto AEM insieme all’API GraphQL di AEM (
 >
 >GraphQL è attualmente utilizzato in due scenari (separati) in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce sfrutta i dati da una piattaforma commerce tramite GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce sfrutta i dati da una piattaforma commerce tramite GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [I Frammenti di contenuto AEM collaborano con l’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni](/help/headless/graphql-api/content-fragments.md).
 
 ## CMS headless {#headless-cms}
@@ -39,7 +39,7 @@ Vengono utilizzati Frammenti di contenuto AEM insieme all’API GraphQL di AEM (
 
 In termini di authoring di frammenti di contenuto in AEM, questo significa che:
 
-* È possibile utilizzare i frammenti di contenuto per l’authoring contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
+* È possibile utilizzare i frammenti di contenuto per creare contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
 
 * Il contenuto dei frammenti di contenuto è strutturato in modo predeterminato, in base ai modelli per frammenti di contenuto. Questo ne semplifica l’accesso da parte delle applicazioni che poi elaboreranno ulteriormente i contenuti.
 
@@ -51,7 +51,7 @@ GraphQL è:
 
   Vedi [GraphQL.org](https://graphql.org)
 
-L&#39;[API GraphQL per AEM](#aem-graphql-api) consente di eseguire query (complesse) sui [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
+L&#39;[API GraphQL di AEM](#aem-graphql-api) consente di eseguire query (complesse) sui [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
 ## API GraphQL di AEM {#aem-graphql-api}
 

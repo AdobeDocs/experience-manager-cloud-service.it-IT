@@ -4,10 +4,10 @@ description: Note sulla versione 2025.4.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di aprile 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464010?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ Ora puoi selezionare e confrontare rapidamente qualsiasi versione di una risorsa
 
 ### Funzioni pre-release
 
-* [Editor universale per Forms adattivo e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l&#39;editor universale ora supporta la creazione sia di Forms adattivo che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione dei moduli, migliora la coerenza e migliora la protezione contro spam e abusi automatizzati.
+* [Editor universale per moduli adattivi e frammenti di modulo](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): l’editor universale ora supporta la creazione sia di moduli adattivi che di frammenti di modulo riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
 
 * [Libreria documenti di SharePoint - Salva allegati con nomi file originali](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): ora puoi salvare gli allegati del modulo utilizzando i nomi file originali durante l’archiviazione in una raccolta documenti di SharePoint. Questo miglioramento semplifica l’identificazione e la gestione dei file caricati.
 
@@ -105,15 +105,15 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Integrazione di Adobe Experience Platform (AEP) con Forms
 
-* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l&#39;integrazione diretta tra Adaptive Forms e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente ad AEP in tempo reale. Semplifica l’acquisizione dei dati per casi di utilizzo di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
+* [Integrazione di AEM Forms con Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): il connettore da AEM Forms a Adobe Experience Platform consente l’integrazione diretta tra i moduli adattivi e Adobe Experience Platform. Questa funzione consente di mappare i dati del modulo su schemi XDM e inviarli direttamente a AEP in tempo reale. Semplifica l’acquisizione dei dati per casi d’uso di personalizzazione e attivazione tra le soluzioni Adobe Experience Cloud.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
 ### Miglioramenti {#enhancements-cif}
 
 * È stata aggiunta la selezione della variante di prodotto per il tipo di dati di riferimento prodotto CIF
-* **Sperimentale**: [JSON+LD nei componenti core CIF nei PDP](/help/commerce-cloud/customizing/json-ld.md)
-* **Sperimentale**: [CIF è in grado di cancellare la cache](/help/commerce-cloud/configuring/clear-cache.md)
+* **Sperimentale**: [JSON+LD nei componenti core CIF nei PDP](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Sperimentale**: [CIF è in grado di cancellare la cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Correzioni di bug {#bug-fixes-cif}
 
