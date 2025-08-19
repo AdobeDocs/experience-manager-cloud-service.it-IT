@@ -57,7 +57,7 @@ Esistono due opzioni per configurare l’endpoint:
 
 ### Tramite l’interfaccia utente di Cloud Manager (impostazione predefinita) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343369?quality=12&learn=on&captions=ita)
 
 Questa configurazione può essere eseguita utilizzando una finestra di dialogo nella pagina Dettagli dell’ambiente. Quando si visualizza questa pagina per un programma abilitato per Commerce, se l’endpoint non è attualmente configurato viene visualizzato un pulsante:
 
