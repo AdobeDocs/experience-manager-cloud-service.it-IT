@@ -37,7 +37,7 @@ Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il fi
 >[!TIP]
 >
 >**Novità di AEM as a Cloud Service?**
->>Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
+>&#x200B;>Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
 
 ### Software richiesto {#required-software}
 
