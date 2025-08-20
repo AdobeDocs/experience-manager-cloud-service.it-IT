@@ -134,7 +134,7 @@ Tutte le richieste di immagini OpenAPI ora sfruttano pienamente la tecnologia de
 
 * **Gestione avanzata degli errori per i tipi di file con restrizioni**
 
-  [È ora supportata la gestione degli errori per i tipi di file con restrizioni](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), che blocca i caricamenti di file non supportati. Quando gli utenti tentano di inviare un file modificandone il tipo in un formato non supportato, il modulo genera un errore durante l’invio.
+  [È ora supportata la gestione degli errori per i tipi di file con restrizioni](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), che blocca i caricamenti di file non supportati. Quando gli utenti tentano di inviare un file modificandone il tipo in un formato non supportato, il modulo genera un errore durante l’invio.
 
 
 <!--
