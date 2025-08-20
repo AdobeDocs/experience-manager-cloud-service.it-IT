@@ -4,10 +4,10 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -162,3 +162,4 @@ Gli archivi privati convalidati possono essere associati a [pipeline full-stack 
 * La [funzionalità di riutilizzo degli artefatti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) non si applica agli archivi privati.
 * Non è possibile sospendere la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
 Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenta sempre di convalidare le richieste pull create per tale archivio.
+* Se l’organizzazione GitHub dispone di restrizioni IP, crea un caso di supporto per ricevere l’elenco degli indirizzi IP consentiti.
