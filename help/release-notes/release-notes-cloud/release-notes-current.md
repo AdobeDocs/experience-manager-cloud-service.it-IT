@@ -88,7 +88,7 @@ Content Hub ora include un&#39;opzione **Mostra tutto** all&#39;interno dei filt
 
 Caricamento automatizzato di nuovi file e cartelle, operazioni avanzate sui file, individuazione più intelligente delle risorse e integrazione perfetta con AEM, per una gestione dei contenuti più rapida, chiara e intuitiva.
 
-Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -134,7 +134,7 @@ Tutte le richieste di immagini OpenAPI ora sfruttano completamente la tecnologia
 
 * **Gestione avanzata degli errori per i tipi di file con restrizioni**
 
-  [È ora supportata la gestione degli errori per i tipi di file con restrizioni](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), che blocca i caricamenti di file non supportati. Quando gli utenti tentano di inviare un file modificandone il tipo in un formato non supportato, il modulo genera un errore durante l’invio.
+  [È ora supportata la gestione degli errori per i tipi di file con restrizioni](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), che blocca i caricamenti di file non supportati. Quando gli utenti tentano di inviare un file modificandone il tipo in un formato non supportato, il modulo genera un errore durante l’invio.
 
 
 <!--
