@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 49%
+source-wordcount: '2350'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -88,7 +88,7 @@ Content Hub ora include un&#39;opzione **Mostra tutto** all&#39;interno dei filt
 
 Caricamento automatizzato di nuovi file e cartelle, operazioni avanzate sui file, individuazione più intelligente delle risorse e integrazione perfetta con AEM, per una gestione dei contenuti più rapida, chiara e intuitiva.
 
-Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/release-notes).
+Per l&#39;elenco completo delle funzionalità, vedere [Note sulla versione dell&#39;app desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Tutte le richieste di immagini OpenAPI ora sfruttano completamente la tecnologia
 
 ### Nuove funzioni in AEM Forms {#forms-new-features}
 
-**Editor universale per Forms adattivo e frammenti di moduli**
+* **Editor universale per Forms adattivo e frammenti di moduli**
 
-L&#39;[Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ora supporta la creazione sia di Forms adattivo che di frammenti di moduli riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
+  L&#39;[Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) ora supporta la creazione sia di Forms adattivo che di frammenti di moduli riutilizzabili. Gli autori possono creare moduli visivamente, configurare azioni di invio e aggiungere la convalida reCAPTCHA, il tutto in un ambiente di authoring WYSIWYG semplificato. Questa funzionalità accelera la creazione di moduli, ne incrementa la coerenza e ne migliora la protezione contro spam e abusi automatizzati.
 
-![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![Editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Servizio di invio Forms per Edge Delivery Services Forms**
+* **Servizio di invio Forms per Edge Delivery Services Forms**
 
-Vedere [Servizio di invio Forms](/help/forms/forms-submission-service.md). consente di memorizzare facilmente i dati provenienti dall’invio di moduli adattivi direttamente nelle piattaforme di fogli di calcolo più diffuse, come Google Sheets, Microsoft OneDrive o SharePoint. Questa integrazione semplifica la gestione dei dati consentendo l’invio diretto dei dati del modulo al foglio di calcolo scelto, eliminando il trasferimento manuale dei dati e riducendo gli errori.
+  Il servizio di invio di [Forms](/help/forms/forms-submission-service.md) consente di memorizzare i dati provenienti dall&#39;invio di moduli adattivi direttamente nelle piattaforme di fogli di calcolo più diffuse, ad esempio Google Sheets, Microsoft OneDrive o SharePoint. Questa integrazione semplifica la gestione dei dati consentendo l&#39;invio diretto dei dati del modulo al foglio di calcolo scelto, eliminando il trasferimento manuale dei dati e riducendo gli errori. I vantaggi principali includono:
 
-I vantaggi principali includono:
+   * **Integrazione diretta:** Configura i moduli per inviare i dati direttamente a un foglio di calcolo specificato.
+   * **Mappatura dati personalizzati:** Mappatura dei campi modulo alle colonne del foglio di calcolo corrispondenti per l&#39;archiviazione organizzata.
+   * **Controllo degli accessi:** Sfrutta le autorizzazioni esistenti per i fogli di calcolo per gestire gli utenti che possono accedere ai dati inviati o modificarli.
 
-* **Integrazione diretta:** Configura i moduli per inviare i dati direttamente a un foglio di calcolo specificato.
-* **Mappatura dati personalizzati:** Mappatura dei campi modulo alle colonne del foglio di calcolo corrispondenti per l&#39;archiviazione organizzata.
-* **Controllo degli accessi:** Sfrutta le autorizzazioni esistenti per i fogli di calcolo per gestire gli utenti che possono accedere ai dati inviati o modificarli.
+* **Genera e sincronizza copie trasformate AFP da Forms adattivo**
 
-**Genera e sincronizza copie trasformate AFP da Forms adattivo**
+  L&#39;API di sincronizzazione output [AFP](/help/forms/document-generation-afp-api.md) consente agli amministratori e agli utenti di generare output AFP (Advanced Function Presentation) da Adaptive Forms e di sincronizzare l&#39;output con i sistemi esterni o i percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali di larga scala.
 
-L&#39;API di sincronizzazione output [AFP](/help/forms/document-generation-afp-api.md) consente agli amministratori e agli utenti di generare output AFP (Advanced Function Presentation) da Adaptive Forms e di sincronizzare l&#39;output con i sistemi esterni o i percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali di larga scala.
+* **Supporto della mappatura automatica per frammenti di moduli adattivi**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  Forms adattivo ora supporta [la mappatura automatica dei frammenti del modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Con questo miglioramento, i frammenti corrispondenti vengono inseriti automaticamente quando gli oggetti dello schema si allineano a una struttura di frammenti definita. Semplifica la creazione di moduli, migliora la riutilizzabilità dei frammenti e garantisce coerenza tra i moduli integrati nei dati.
+
+* **Titolo modulo personalizzato nel documento record**
+
+  Gli autori possono ora definire un titolo del modulo personalizzato [nel documento di record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) modificando Titolo modulo personalizzato. Il titolo personalizzato viene visualizzato nell&#39;intestazione PDF, nelle proprietà del documento PDF e come titolo della visualizzazione iniziale all&#39;apertura del PDF, garantendo una chiara identificazione e un marchio coerente.
+
+* **Gestione avanzata degli errori per i tipi di file con restrizioni**
+
+  [È ora supportata la gestione degli errori per i tipi di file con restrizioni](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab), che blocca i caricamenti di file non supportati. Quando gli utenti tentano di inviare un file modificandone il tipo in un formato non supportato, il modulo genera un errore durante l’invio.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ L&#39;API di sincronizzazione output [AFP](/help/forms/document-generation-afp-a
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### Nuove funzioni di accesso anticipato in AEM Forms {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-Il programma di accesso anticipato di AEM Forms offre un’opportunità unica per ottenere accesso esclusivo alle innovazioni all’avanguardia e contribuire a modellarne lo sviluppo.
-
-In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime &#x200B;** Java 21** più performante.
+Il runtime **Java 11*- è ora obsoleto e la maggior parte degli ambienti è già stata aggiornata al runtime **Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
