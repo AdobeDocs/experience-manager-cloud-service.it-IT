@@ -4,10 +4,10 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 35%
+source-wordcount: '1340'
+ht-degree: 34%
 
 ---
 
@@ -133,6 +133,7 @@ Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
       * Produzione
       * Staging
       * Sviluppo/RDE
+   * Per impostazione predefinita, la funzione Copia contenuto tra programmi è disabilitata. Tuttavia, su richiesta del cliente, può essere abilitato, rendendo disponibile un ulteriore campo di input **Programma di destinazione**.
 
 1. Se necessario, puoi anche scegliere di **Includere gli elenchi di controllo di accesso** nel processo di copia.
 
@@ -193,7 +194,6 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 
 * Il contenuto non può essere copiato da un ambiente inferiore a un ambiente superiore.
 * Il contenuto può essere copiato solo da e verso i servizi di authoring.
-* Non è possibile copiare il contenuto tra più programmi.
 * Non è possibile eseguire operazioni simultanee di copia del contenuto nello stesso ambiente.
 * È possibile specificare fino a 50 percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
 * Non utilizzare lo strumento di copia del contenuto come strumento di duplicazione o mirroring perché non è in grado di tenere traccia del contenuto spostato o eliminato nell&#39;origine.
