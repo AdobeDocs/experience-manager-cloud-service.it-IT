@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 15%
 
 ---
-
 
 # Guida introduttiva di Forms Experience Builder
 
@@ -483,4 +482,4 @@ Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
 
 **Hai ancora bisogno di aiuto?** Digitare `/help` seguito da una domanda specifica o contattare l&#39;amministratore di sistema.
 
-Per ulteriore supporto, fare riferimento alla [Libreria prompt di Forms Experience Builder](ai-assistant-prompt-library.md) principale o contattare l&#39;amministratore di sistema per assistenza tecnica.
+Per ulteriore supporto, fare riferimento alla [Libreria prompt di Forms Experience Builder](/help/edge/docs/forms/ai-assistant-prompt-library.md) principale o contattare l&#39;amministratore di sistema per assistenza tecnica.
