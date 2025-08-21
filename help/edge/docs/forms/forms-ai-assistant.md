@@ -3,23 +3,23 @@ title: Assistente IA per AEM Forms (Forms Experience Builder)
 description: Creare moduli potenti più rapidamente utilizzando i frammenti di modulo
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# Assistente IA per AEM Forms (Forms Experience Builder)
+
+# Guida introduttiva all’Assistente AI per AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> La funzionalità dell’Assistente IA per AEM Forms (Forms Experience Builder) è disponibile nel **programma per primi utilizzatori**. Se ti interessa, invia una breve e-mail dall’indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l’accesso alla funzionalità.
-
+> La funzionalità dell’Assistente IA per AEM Forms (Forms Experience Builder) è disponibile nel **programma per primi utilizzatori**. Se sei interessato, invia un&#39;e-mail rapida dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità.
 
 >[!IMPORTANT]
 >
