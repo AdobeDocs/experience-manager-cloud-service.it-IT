@@ -3,7 +3,7 @@ title: Introduzione ad Assets as a Cloud Service per la gestione delle risorse d
 description: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 100%
 
