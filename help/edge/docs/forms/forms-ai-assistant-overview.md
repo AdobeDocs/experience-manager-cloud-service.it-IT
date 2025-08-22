@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -175,11 +175,9 @@ Forms Experience Builder adotta un approccio semplice e conversazionale:
 Trasforma i moduli esistenti in potenti esperienze digitali con la conversione basata sull’intelligenza artificiale.
 
 
-### 📄 da PDF a Digital
+#### Trasformare PDF forms in Digital Forms
 
-**Da documenti statici a moduli interattivi**
-
-Trasforma PDF forms con oltre 50 campi in esperienze digitali dinamiche con calcoli automatizzati e design reattivo per i dispositivi mobili.
+Trasforma PDF forms con più campi in esperienze digitali dinamiche con calcoli automatizzati e design reattivo per i dispositivi mobili.
 
 **Vantaggi chiave:**
 
@@ -188,17 +186,10 @@ Trasforma PDF forms con oltre 50 campi in esperienze digitali dinamiche con calc
 - Ottimizzazione del layout adattabile ai dispositivi mobili
 - Riduzione del 95% degli errori di elaborazione
 
-**Ideale per:** moduli fiscali, applicazioni governative, documenti aziendali complessi
 
-**Risparmio di tempo:** 2-3 ore → 15 minuti per modulo
+#### Modernizzazione dei moduli legacy basati su XFA
 
-
-
-### 🏛️ modernizzazione XFA legacy
-
-**Dai vita ai moduli obsoleti**
-
-Conversione di applicazioni XFA complesse in moderne procedure guidate in più passaggi con convalida in tempo reale e conformità per l&#39;accessibilità.
+È possibile convertire applicazioni XFA complesse in moderne procedure guidate in più passaggi con convalida in tempo reale e conformità alle normative di accessibilità.
 
 **Vantaggi chiave:**
 
@@ -207,37 +198,21 @@ Conversione di applicazioni XFA complesse in moderne procedure guidate in più p
 - Integrazione del database governativo
 - Conformità completa alle linee guida WCAG 2.1 per l’accessibilità
 
-**Ideale per:** permessi governativi, applicazioni aziendali, moduli di conformità
 
-**Impatto:** completamento più rapido del 70%, meno errori del 90%
+#### Convertire la schermata di un modulo in un modulo digitale
 
-
-
-
-### Schermata da 📱 a digitale
-
-**Trasforma qualsiasi modulo cartaceo in esperienza digitale**
-
-Carica un’immagine di qualsiasi modulo cartaceo e osserva i campi di estrazione AI, ottimizza il layout e crea moduli digitali pronti per l’integrazione.
+È possibile trasformare qualsiasi modulo cartaceo in un’esperienza digitale. AEM Forms ottimizza automaticamente il layout e crea moduli digitali pronti per l’integrazione da uno screenshot.
 
 **Vantaggi chiave:**
 
-- Rilevamento intelligente del tipo di campo (precisione superiore al 99%)
+- Rilevamento intelligente del tipo di campo
 - Generazione di layout reattivo ottimizzato
 - Convalida migliorata oltre la carta originale
 - Architettura pronta per l’integrazione
 
-**Ideale per:** applicazioni carta, moduli scritti a mano, documenti legacy
+#### Importare e migliorare i moduli web esistenti
 
-**Tempo di elaborazione:** 2 ore → 5 minuti per modulo
-
-
-
-### Miglioramento HTML 🌐
-
-**Sovrattassa i moduli Web esistenti**
-
-Aggiungere convalida avanzata, logica condizionale e invio multicanale a HTML Form di base senza interrompere le funzionalità esistenti.
+Puoi importare il modulo web esistente e aggiungere ai moduli convalida avanzata, logica condizionale e invio multicanale senza interrompere le funzionalità esistenti.
 
 **Vantaggi chiave:**
 
@@ -245,11 +220,6 @@ Aggiungere convalida avanzata, logica condizionale e invio multicanale a HTML Fo
 - Comportamenti e flussi di lavoro dei campi condizionali
 - Opzioni di invio multicanale
 - Analisi integrata e tracciamento delle prestazioni
-
-**Ideale per:** Moduli di contatto, moduli di registrazione, applicazioni Web semplici
-
-**Miglioramento conversione:** +40% con esperienza utente migliorata
-
 
 ## Confronto tra Forms Experience Builder e sviluppo tradizionale
 

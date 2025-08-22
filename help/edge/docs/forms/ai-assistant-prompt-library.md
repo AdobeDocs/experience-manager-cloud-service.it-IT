@@ -6,13 +6,14 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
+
 
 # Forms Experience Builder - Libreria di richieste
 
@@ -140,7 +141,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **Quando utilizzare:** Quando è necessario creare nuovi moduli o modificare quelli esistenti.
 
-**Come utilizzare:** Scegliere uno dei due approcci seguenti: Crea da zero o Importa e converti (vedere [Guida introduttiva](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Come utilizzare:** Scegliere uno dei due approcci seguenti: Crea da zero o Importa e converti (vedere [Guida introduttiva](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
 **Esempio di richiesta - Creazione modulo semplice:**
 
@@ -517,7 +518,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **Quando utilizzare:** Quando si dispone di moduli, documenti o progettazioni esistenti da trasformare in moduli AEM moderni.
 
-**Come utilizzare:** Caricare il file di origine e descrivere i requisiti di conversione (vedere [Guida all&#39;importazione](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**Come utilizzare:** Caricare il file di origine e descrivere i requisiti di conversione (vedere [Guida all&#39;importazione](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Prompt di esempio - Conversione modulo PDF:**
 

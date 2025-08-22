@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 15%
 
 ---
+
 
 # Guida introduttiva di Forms Experience Builder
 
@@ -97,11 +97,10 @@ Prova questa semplice conversazione per iniziare:
 * **Chiedi aiuto**: digita `/help` seguito dalla domanda
 * **Iterazione**: apporta una modifica alla volta per ottenere risultati ottimali
 
-## Funzioni core
 
-### Due modi per creare Forms
+## Metodi per iniziare a creare un modulo
 
-#### &#x200B;1. Creazione da zero
+### &#x200B;1. Inizia con i prompt del linguaggio naturale
 
 Descrivi i requisiti del modulo nel linguaggio naturale e Forms Experience Builder genera la struttura completa del modulo:
 
@@ -111,17 +110,17 @@ Descrivi i requisiti del modulo nel linguaggio naturale e Forms Experience Build
 * &quot;Creare un modulo di feedback dei clienti con valutazioni, commenti e categorie di prodotti&quot;
 * &quot;Ho bisogno di un modulo di registrazione in più passaggi per una conferenza con elaborazione dei pagamenti&quot;
 
-#### &#x200B;2. Importare e convertire
+### &#x200B;2. Importare e convertire
 
 Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 
 **Origini supportate:**
 
-* **PDF forms**: carica PDF statici → moduli digitali interattivi con convalida
-* **Schermate/Immagini**: foto di moduli cartacei → versioni digitali funzionali
-* **HTML Forms**: moduli Web di base → AEM Forms avanzato con funzionalità avanzate
-* **XFA Forms**: moduli Adobe legacy → moduli reattivi moderni
-* **URL**: moduli web esistenti → AEM Forms nativo con interfaccia utente migliorata
+* **PDF forms**: carica PDF statici per convertirli in moduli digitali interattivi con convalide.
+* **Schermate o immagini**: carica foto dei moduli cartacei per generare versioni digitali funzionali
+* **HTML Forms**: importa e converti i moduli Web di base in AEM Forms avanzato con funzionalità avanzate
+* **XFA Forms**: convertire i moduli basati su XFA legacy in moduli reattivi moderni
+* **URL**: converti i moduli web esistenti in AEM Forms nativi con interfaccia utente migliorata
 
 **Come importare:**
 
@@ -482,4 +481,4 @@ Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
 
 **Hai ancora bisogno di aiuto?** Digitare `/help` seguito da una domanda specifica o contattare l&#39;amministratore di sistema.
 
-Per ulteriore supporto, fare riferimento alla [Libreria prompt di Forms Experience Builder](/help/edge/docs/forms/ai-assistant-prompt-library.md) principale o contattare l&#39;amministratore di sistema per assistenza tecnica.
+Per ulteriore supporto, fare riferimento alla [Libreria prompt di Forms Experience Builder](ai-assistant-prompt-library.md) principale o contattare l&#39;amministratore di sistema per assistenza tecnica.
