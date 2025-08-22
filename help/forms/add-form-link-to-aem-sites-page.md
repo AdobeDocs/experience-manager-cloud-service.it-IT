@@ -3,13 +3,13 @@ title: Come si aggiungono i collegamenti ai moduli nella pagina AEM Sites utiliz
 description: Scopri come aggiungere collegamenti ai moduli alla pagina AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
-
 
 # Aggiungi collegamenti modulo alla pagina Sites
 
@@ -19,7 +19,7 @@ Nello scenario del sito Web della banca, il componente **Link** Forms Portal mig
 
 ## Prerequisito
 
-Prima di esplorare le varie funzionalità di un componente Forms Portal, accertati che i Componenti core siano abilitati per il tuo ambiente. Per istruzioni dettagliate su come abilitare i Componenti core per il tuo ambiente, [fai clic qui](/help/forms/enable-adaptive-forms-core-components.md).
+Prima di esplorare le varie funzionalità di un componente Forms Portal, accertati che i Componenti core siano abilitati per il tuo ambiente. Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
 
 Dopo aver distribuito i Componenti core più recenti nell’ambiente, i componenti del portale Forms diventano accessibili nell’ambiente di authoring.
 
@@ -31,7 +31,7 @@ Per aggiungere il componente del portale **Collegamento** alla pagina Sites, eff
 1. Vai a **[!UICONTROL Informazioni pagina]** > **[!UICONTROL Modifica modello]**
    ![Modifica criterio modello](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Collegamento]** in **[Nome progetto Archetipo AEM] - Forms and Communications Portal**.
+1. Fai clic sul **[!UICONTROL Criterio]** e seleziona la casella di controllo **[!UICONTROL Collegamento]** nel **[Nome progetto Archetipo AEM] - Forms and Communications Portal**.
 
    ![Selezione criteri](/help/forms/assets/add-link.png)
 

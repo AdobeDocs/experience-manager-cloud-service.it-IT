@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1951'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,11 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Prerequisito
 
-**Abilita i componenti core adattivi di Forms per il tuo ambiente**: quando crei un programma, i componenti core adattivi di Forms sono già abilitati per il tuo ambiente. Se disponi di un ambiente di tipo Form as a Cloud Service basato su [Archetipo AEM 39 o versioni precedenti](https://github.com/adobe/aem-project-archetype), [Abilita i componenti core Adaptive Forms per il tuo ambiente](enable-adaptive-forms-core-components.md).
+**Abilita i componenti core Forms adattivi per il tuo ambiente**: quando crei un programma, i componenti core Forms adattivi sono già abilitati per il tuo ambiente.Installa l&#39;ultima versione per abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service.
 
 >[!NOTE]
 >
-> Quando si distribuisce l&#39;ambiente Forms as a Cloud Service basato su Archetipo 45, i **modelli di Forms adattivo (Componente core)** e i temi basati su componenti core vengono aggiunti all&#39;ambiente.
+> Quando si distribuisce l&#39;ambiente Forms as a Cloud Service basato su Archetipo 45, all&#39;ambiente vengono aggiunti i **modelli di Forms adattivo (Componente core)** e i temi basati su componenti core.
 
 ## Utilizzo del modello {#working-with-templates}
 
@@ -42,7 +42,7 @@ Puoi accedere all&#39;editor modelli dal menu Strumenti passando a **[!UICONTROL
 >
 > Puoi trovare i modelli modificabili basati su componenti core nelle cartelle specifiche dei componenti core.
 
-In Experience Manager viene fornita una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it#editing-templates-template-authors).
+Experience Manager fornisce una cartella globale per organizzare i modelli. Tuttavia, non è attivato per impostazione predefinita. Puoi richiedere all’amministratore di abilitare la cartella globale o di creare una cartella per i modelli. Per ulteriori informazioni su come creare cartelle, vedere [Cartelle modelli](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ## Creazione di un modello {#create-template}
 
@@ -58,7 +58,7 @@ Puoi anche fornire una descrizione.
 
 ## Interfaccia utente dell’editor modelli {#template-editor-ui}
 
-Quando apri un modello per la modifica, puoi vedere i seguenti componenti dell’editor AEM:
+Quando apri un modello per la modifica, puoi vedere i seguenti componenti di AEM Editor:
 
 * **Barra degli strumenti Pagina**
 Contiene le seguenti opzioni:
@@ -139,7 +139,7 @@ Quando modifichi un modello puoi definire il layout, che utilizza il layout dina
 
 ![Contenitore di layout nel livello struttura](/help/forms/assets/layout-template-core-component.png)
 
-Per ulteriori informazioni, consulta l&#39;articolo [informazioni sul layout dinamico](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=it).
+Per ulteriori informazioni, consulta l&#39;articolo [informazioni sul layout dinamico](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en).
 
 ## Abilitazione del modello {#enabling-the-template}
 
@@ -152,7 +152,7 @@ Quando crei un modulo adattivo, puoi visualizzare il modello elencato quando ti 
 
 ## Importazione o esportazione di un modello {#importing-or-exporting-a-template}
 
-Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;istanza [!DNL AEM Forms] diversa, il modulo viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. È possibile creare un pacchetto del modello personalizzato dal nodo `/conf` in `https://<server>:<port>/crx/packmgr` e portarlo nell&#39;istanza [!DNL AEM Forms] in cui si desidera caricare il modulo. Puoi anche [creare un modello utilizzando l&#39;archetipo AEM e distribuirlo nell&#39;istanza dei Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=it#prerequisites).
+Un modulo funziona con il relativo modello. Quando si scarica un modulo adattivo creato utilizzando un modello personalizzato, il modello non viene scaricato. Quando si importa il modulo in un&#39;istanza [!DNL AEM Forms] diversa, il modulo viene importato senza il relativo modello. Se un modulo viene importato ma il relativo modello non è disponibile, il modulo non viene sottoposto a rendering. È possibile creare un pacchetto del modello personalizzato dal nodo `/conf` in `https://<server>:<port>/crx/packmgr` e portarlo nell&#39;istanza [!DNL AEM Forms] in cui si desidera caricare il modulo. Puoi anche [creare un modello utilizzando Archetipo AEM e distribuirlo nell&#39;istanza di Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >

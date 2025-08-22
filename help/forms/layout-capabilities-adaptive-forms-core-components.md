@@ -2,13 +2,13 @@
 title: Quali sono le funzionalità di layout di Adaptive Forms basate sui componenti core?
 description: Il layout e l’aspetto di Adaptive Forms su vari dispositivi sono regolati dalle impostazioni di layout. Comprendere i vari layout e come applicarli.
 feature: Adaptive Forms, Core Components
-keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di modulo dinamico AEM, layout di modulo AEM Cloud Service, tipi di layout di modulo nei componenti core AEM, layout di modulo adattivo
+keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di moduli dinamici AEM, layout di moduli di AEM Cloud Service, tipi di layout di moduli nei componenti core di AEM, layout di moduli adattivi
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Componenti core) | Questo articolo |
 
@@ -27,7 +27,7 @@ Adaptive Forms fornisce componenti di prima classe per il layout e la progettazi
 
 ## Prerequisito
 
-Prima di esplorare le varie funzionalità di un layout, assicurati che i Componenti core siano abilitati per il tuo ambiente. Per istruzioni dettagliate su come abilitare i componenti core per il tuo ambiente, [fai clic qui](/help/forms/enable-adaptive-forms-core-components.md).
+Prima di esplorare le varie funzionalità di un layout, assicurati che i Componenti core siano abilitati per il tuo ambiente. Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
 
 ## Tipi di layout Forms adattivi
 
@@ -42,23 +42,23 @@ Il modulo adattivo basato su componenti core supporta i seguenti tipi di layout:
 
 >[!TAB Layout pannello]
 
-Il layout del pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti in un modulo adattivo.
+Il layout pannello è utile per organizzare i campi correlati in modo da semplificare la navigazione e la ricerca del contenuto corrispondente. Il layout del pannello dispone i componenti del modulo all’interno di sezioni o pannelli distinti in un modulo adattivo.
 
 ![Layout pannello](/help/forms/assets/panel-layout.png)
 
 Layout pannello
 
-È possibile utilizzare il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) per aggiungere il layout del pannello in un modulo. Per istruzioni dettagliate su come configurare varie proprietà del componente Pannello, consulta l&#39;articolo [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+È possibile utilizzare il [componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) per aggiungere il layout pannello in un modulo. Per istruzioni dettagliate su come configurare varie proprietà del componente pannello, consulta l’articolo [Componente pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
->[!TAB Layout guidato]
+>[!TAB Layout procedura guidata]
 
-Il layout della procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti possono spostarsi tra i passaggi in sequenza, spesso con i pulsanti **Successivo** e **Precedente**. È possibile utilizzare il layout della procedura guidata per creare un modulo che comprenda più sezioni o passaggi.
+Il layout procedura guidata semplifica un modulo complesso suddividendolo in passaggi distinti. Ogni passaggio rappresenta una parte diversa del processo e gli utenti possono spostarsi tra i passaggi in sequenza, spesso con i pulsanti **Successivo** e **Precedente**. È possibile utilizzare il layout procedura guidata per creare un modulo che comprende più sezioni o passaggi.
 
-![Layout guidato](/help/forms/assets/wizard-layout-compare.gif)
+![Layout procedura guidata](/help/forms/assets/wizard-layout-compare.gif)
 
 Layout procedura guidata
 
-È possibile utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) per aggiungere il layout della procedura guidata in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente della procedura guidata, fare riferimento all&#39;articolo [componente della procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+È possibile utilizzare il [componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) per aggiungere il layout procedura guidata in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente procedura guidata, consulta l’articolo [Componente procedura guidata](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Layout schede verticale]
 
@@ -68,7 +68,7 @@ Il layout delle schede verticali è noto anche come tabulazioni nel layout sinis
 
 Layout schede verticali
 
-È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB Layout schede orizzontali]
@@ -80,18 +80,18 @@ Il layout delle schede orizzontali è noto anche come Tabulazioni nel layout sup
 
 Layout schede orizzontali
 
-È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
->[!TAB Layout Accordion]
+>[!TAB Layout pannello a soffietto]
 
-Il layout del Pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un Modulo adattivo. Quando una sezione viene espansa, il contenuto viene visualizzato all’interno di, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
+Il layout pannello a soffietto mostra il contenuto in sezioni o pannelli comprimibili in un modulo adattivo. Quando una sezione viene espansa, viene mostrato il contenuto all’interno, mentre le altre sezioni rimangono compresse. Questo layout è ideale per visualizzare grandi quantità di informazioni in un formato compatto.
 
-![Layout Accordion](/help/forms/assets/accordion-layout-compare.gif)
+![Layout pannello a soffietto](/help/forms/assets/accordion-layout-compare.gif)
 
-Layout Accordion
+Layout pannello a soffietto
 
-È possibile utilizzare il [componente Pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) per aggiungere il layout Pannello a soffietto in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Pannello a soffietto, consulta l&#39;articolo [Componente Pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+È possibile utilizzare il [componente pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) per aggiungere il layout pannello a soffietto in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente pannello a soffietto, consulta l’articolo [Componente pannello a soffietto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ Per informazioni su come inserire un layout e aggiungervi componenti modulo, con
 
 È importante selezionare il layout corretto per il modulo adattivo per ottimizzare l’esperienza utente e la funzionalità dei moduli. La tabella ti aiuta a comprendere le diverse opzioni di layout disponibili e ti guida nella selezione del layout più adatto in base alle tue esigenze e ai tuoi casi d’uso specifici:
 
-| Funzione obsoleta | Layout pannello | Layout procedura guidata | Schede nel layout Schede superiori/verticali | Schede nel layout Schede a sinistra/orizzontale | Layout Accordion |
+| Funzione | Layout pannello | Layout procedura guidata | Schede nel layout Schede superiori/verticali | Schede nel layout Schede a sinistra/orizzontale | Layout pannello a soffietto |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
 | **Scopo** | Raggruppa il contenuto correlato in sezioni distinte | Guida gli utenti attraverso un processo o un modulo in più fasi | Consente il passaggio tra sezioni/viste sulla stessa pagina | Simile alle schede superiori ma disposte verticalmente a sinistra | Organizza il contenuto in sezioni comprimibili |
 | **Struttura** | Sezioni distinte | Passaggi/pagine sequenziali | Schede orizzontali nella parte superiore | Schede verticali a sinistra | Pannelli/sezioni comprimibili |
-| **Navigazione** | Fai clic sulle intestazioni del pannello per navigare | - Avanti: pulsante &quot;Avanti&quot;<br>- Indietro: pulsante &quot;Indietro&quot;<br>- Passaggi facoltativi ignorati | Fai clic sulle schede per cambiare sezione | Fai clic sulle schede per cambiare sezione | Fai clic sulle intestazioni per espandere/comprimere le sezioni |
-| **Esperienza utente** | Organizza grandi quantità di contenuti in modo gestibile | Guida passo passo, riduzione del sovraccarico | Passaggio da una visualizzazione all&#39;altra chiaro e accessibile | Utilizzo efficiente dello spazio verticale, schede sempre visibili | Vista compatta con sezioni espanse/compresse |
-| **Caso d’uso** | Moduli complessi con sezioni suddivise in categorie | Processi di configurazione, moduli complessi | Organizzazione delle impostazioni o delle categorie di contenuto | Dashboard, visualizzazioni dati complesse | Domande frequenti, menu delle impostazioni e sezioni del contenuto dettagliato |
+| **Navigazione** | Fai clic sulle intestazioni del pannello per spostarti | - In avanti: pulsante “Avanti”<br>- All’indietro: pulsante “Indietro”<br>- Salto dei passaggi facoltativo | Fai clic sulle schede per cambiare sezione | Fai clic sulle schede per cambiare sezione | Fai clic sulle intestazioni per espandere/comprimere le sezioni |
+| **Esperienza utente** | Organizza grandi quantità di contenuti in modo gestibile | Guida dettagliata, riduzione del sovraccarico | Passaggio da una visualizzazione all&#39;altra chiaro e accessibile | Utilizzo efficiente dello spazio verticale, schede sempre visibili | Vista compatta con sezioni espanse/compresse |
+| **Caso d’uso** | Moduli complessi con sezioni suddivise in categorie | Processi di configurazione, moduli complessi | Organizzazione delle impostazioni o delle categorie di contenuto | Dashboard, visualizzazioni dati complesse | Domande frequenti, menu delle impostazioni e sezioni contenuto dettagliate |
 
 
 ## Come si inserisce un layout e vi si aggiungono i componenti del modulo?
@@ -126,7 +126,7 @@ Considera il **modulo di richiesta IT** visualizzato nella sezione [Tipi di layo
 
 Esaminiamo il processo dettagliato per l’inserimento di un layout e l’aggiunta di componenti. In questo esempio, in un modulo viene inserito un layout con schede orizzontali.
 
-### 1. Inserire un componente layout in un modulo
+### &#x200B;1. Inserire un componente layout in un modulo
 
 1. Accedi all&#39;istanza [!DNL Experience Manager Forms].
 1. Nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
@@ -168,7 +168,7 @@ Ad esempio, in questo caso, aggiungiamo il nome del componente Schede orizzontal
 
 Una volta aggiunto il componente layout nel modulo, modifica il numero di pannelli in base ai requisiti.
 
-### 2. Aggiungere pannelli al layout
+### &#x200B;2. Aggiungere pannelli al layout
 
 Aggiungi un nuovo pannello al componente Schede orizzontali:
 
@@ -216,7 +216,7 @@ Aggiungi un nuovo pannello al componente Schede orizzontali:
 
 Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. Al termine, puoi procedere con l’aggiunta di componenti modulo a ciascun pannello.
 
-### 3. Aggiungere componenti modulo al pannello
+### &#x200B;3. Aggiungere componenti modulo al pannello
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)

@@ -6,7 +6,9 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
+hide: true
+hidefromtoc: true
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 3%
@@ -299,7 +301,7 @@ Distribuisci il codice aggiornato negli ambienti di sviluppo locali e Cloud Serv
 
    Una volta creato correttamente il pacchetto, puoi trovarlo nella [cartella dell&#39;archivio Git]\all\target\[appid].all-[versione].zip
 
-1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip nell&#39;ambiente di sviluppo locale.
+1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip nell&#39;ambiente di sviluppo locale.
 
 
 ### Creare e distribuire il codice aggiornato in un ambiente AEM Forms as a Cloud Service {#core-components-on-aem-forms-cs}

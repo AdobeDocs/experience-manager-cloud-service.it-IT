@@ -4,9 +4,9 @@ description: Note sulla versione 2023.11.0 di [!DNL Adobe Experience Manager] as
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1282'
 ht-degree: 41%
 
 ---
@@ -82,13 +82,13 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Invi
 
 ### Nuove funzionalità in [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Componente casella di controllo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=it)**: Forms adattivo basato su componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
+* **[Componente casella di controllo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Forms adattivo basato su componenti core ora può includere un componente casella di controllo. Consente agli utenti di effettuare scelte binarie, selezionando o deselezionando una particolare opzione. In genere viene visualizzata come una piccola casella su cui è possibile fare clic o toccare per alternare due stati: selezionato e deselezionato. La casella di controllo è un elemento modulo comune utilizzato per presentare una scelta sì/no o vero/falso.
 
-* **[Componente termini e condizioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=it)**: Forms adattivo basato su componenti core può ora includere un componente termini e condizioni. Consente agli autori dei moduli di introdurre una sezione specifica all’interno del modulo in cui vengono presentati agli utenti i termini, le condizioni o gli accordi legali associati all’utilizzo di un servizio, un prodotto o una piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
+* **[Componente termini e condizioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adattivo basato su componenti core può ora includere un componente termini e condizioni. Consente agli autori dei moduli di introdurre una sezione specifica all’interno del modulo in cui vengono presentati agli utenti i termini, le condizioni o gli accordi legali associati all’utilizzo di un servizio, un prodotto o una piattaforma. Questo componente è progettato per informare gli utenti sulle regole, le normative e gli obblighi che si impegnano a rispettare inviando il modulo.
 
   ![Casella di controllo, termini e condizioni e schede verticali](/help/forms/assets/forms-components.png)
 
-* **[Componente schede verticali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=it)**: Forms adattivo basato su componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. L’utilizzo di schede verticali in un modulo può migliorare l’esperienza utente complessiva semplificando la navigazione e migliorando l’organizzazione del contenuto del modulo, soprattutto nelle situazioni in cui un modulo contiene più sezioni o informazioni complesse.
+* **[Componente schede verticali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adattivo basato su componenti core ora può organizzare il contenuto del modulo in un elenco verticale di schede, fornendo un layout strutturato e navigabile. L’utilizzo di schede verticali in un modulo può migliorare l’esperienza utente complessiva semplificando la navigazione e migliorando l’organizzazione del contenuto del modulo, soprattutto nelle situazioni in cui un modulo contiene più sezioni o informazioni complesse.
 
 
 
@@ -149,4 +149,4 @@ L’elenco completo dei rilasci mensili degli strumenti di migrazione è disponi
 
 * Impossibile inviare il Forms adattivo basato sui componenti core. Il problema si verifica per Forms adattivo creato utilizzando i Componenti core versioni 2.0.38 - 2.0.60.
 
-  Per risolvere il problema. puoi passare alla versione 2.0.62 o successiva dei componenti core del modulo adattivo. Per impostare una versione dei componenti core adattivi di Forms per il tuo ambiente, [imposta le versioni delle dipendenze dei componenti core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) nel tuo archivio Forms as a Cloud Service o progetto basato su Archetipo AEM e [distribuisci le modifiche nel tuo ambiente Forms as a Cloud Service](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). La versione più recente delle dipendenze dei Componenti core Forms adattivi è disponibile all&#39;indirizzo [Archivio Git dei Componenti core Forms adattivi](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Per risolvere il problema. puoi passare alla versione 2.0.62 o successiva dei componenti core del modulo adattivo. Per impostare una versione dei componenti core adattivi di Forms per il tuo ambiente, imposta le versioni delle dipendenze `core.forms.components.version`, `core.forms.components.af.version` e `core.wcm.components.version component` nel tuo archivio Forms as a Cloud Service o progetto basato su Archetipo AEM e distribuisci le modifiche nel tuo ambiente Forms as a Cloud Service. La versione più recente delle dipendenze dei Componenti core Forms adattivi è disponibile all&#39;indirizzo [Archivio Git dei Componenti core Forms adattivi](https://github.com/adobe/aem-core-forms-components#system-requirements).

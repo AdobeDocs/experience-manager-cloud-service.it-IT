@@ -1,30 +1,30 @@
 ---
 title: Come si aggiunge un modulo adattivo a una pagina di AEM Sites?
-description: Incorpora facilmente Forms adattivo in una pagina AEM Sites o in una pagina web ospitata al di fuori dell’AEM.
+description: Incorpora facilmente Forms adattivo in una pagina AEM Sites o in una pagina web ospitata al di fuori di AEM.
 feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3143'
 ht-degree: 0%
 
 ---
 
-# Incorporare un modulo adattivo in una pagina dei siti AEM {#embed-an-adaptive-form-to-aem-sites-page}
+# Incorporare un modulo adattivo in una pagina AEM Sites {#embed-an-adaptive-form-to-aem-sites-page}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
 ## Panoramica {#overview}
 
-AEM Forms consente agli sviluppatori di moduli di incorporare facilmente Forms adattivo in una pagina AEM Sites o in una pagina web ospitata al di fuori dell’AEM. Il modulo adattivo incorporato è completamente funzionante e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e interagire contemporaneamente con il modulo. Questo consente agli utenti di compilare e inviare i moduli in modo semplice e senza mai uscire dalla pagina in cui si trovano. Questa integrazione consente di riutilizzare in modo pratico i Forms adattivi già creati.
+AEM Forms consente agli sviluppatori di moduli di incorporare facilmente Forms adattivo in una pagina AEM Sites o in una pagina web ospitata al di fuori di AEM. Il modulo adattivo incorporato è completamente funzionante e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e interagire contemporaneamente con il modulo. Questo consente agli utenti di compilare e inviare i moduli in modo semplice e senza mai uscire dalla pagina in cui si trovano. Questa integrazione consente di riutilizzare in modo pratico i Forms adattivi già creati.
 
-È possibile utilizzare l’Editor pagina AEM per incorporare rapidamente più moduli nelle pagine AEM Sites. L’editor di pagine AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti di Adaptive Forms, tra cui comportamento dinamico, convalide, integrazione dei dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
+È possibile utilizzare l’Editor pagina di AEM per incorporare rapidamente più moduli nelle pagine AEM Sites. L’utilizzo dell’Editor pagina di AEM consente agli autori di contenuti di creare esperienze di acquisizione dati fluide all’interno di una pagina Sites, sfruttando la potenza dei componenti di Adaptive Forms, tra cui comportamento dinamico, convalide, integrazione di dati, generazione di documenti di record e automazione dei processi aziendali. Consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
 AEM Forms fornisce **[!UICONTROL Contenitore modulo adattivo]** e **[!UICONTROL Componenti Forms adattivo - Incorpora(v2)]**. È possibile utilizzare il componente **[!UICONTROL Forms adattivo - Incorpora(v2)]** per aggiungere un modulo adattivo esistente o creare un modulo utilizzando l&#39;editor di Forms adattivo, mentre **[!UICONTROL Contenitore di moduli adattivi]** consente di creare un nuovo modulo all&#39;interno di un frammento di esperienza o di una pagina AEM Sites.
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -62,22 +62,22 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 * **[Crea e aggiungi un modulo adattivo personalizzato a un frammento di esperienza](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** Puoi estendere la portata dei moduli aggiungendoli ai frammenti di esperienza AEM, in modo da riutilizzarli in più pagine o siti.
 
-* **Aggiungere più moduli a una pagina AEM Sites o a un frammento di esperienza:** È possibile creare o aggiungere più Forms adattivi a una pagina AEM Sites per fornire più scelte agli utenti in base alle loro preferenze e ai loro requisiti. È possibile utilizzare l’Editor pagina AEM per incorporare rapidamente più moduli nelle pagine AEM Sites. Puoi utilizzare più volte il componente **[!UICONTROL Contenitore modulo adattivo]** per aggiungere Forms adattivo a una pagina di AEM Sites. Puoi utilizzare il componente **[!UICONTROL Forms adattivo - Incorpora]** più volte in una pagina di AEM Sites, solo se è selezionata l&#39;opzione **[!UICONTROL Modulo occupa l&#39;intera larghezza del frame]**. Se l&#39;opzione **[!UICONTROL Modulo occupa l&#39;intera larghezza del frame]** non è selezionata, la pagina di AEM Sites supporta un solo modulo adattivo per esistere senza un iframe. Per aggiungere altro Forms adattivo utilizzando il componente **[!UICONTROL Forms adattivo - Incorpora]**, seleziona **[!UICONTROL Il modulo copre l&#39;intera larghezza del frame]**.
+* **Aggiungere più moduli a una pagina AEM Sites o a un frammento di esperienza:** È possibile creare o aggiungere più Forms adattivi a una pagina AEM Sites per fornire più scelte agli utenti in base alle loro preferenze e ai loro requisiti. È possibile utilizzare l’Editor pagina di AEM per incorporare rapidamente più moduli nelle pagine AEM Sites. Puoi utilizzare più volte il componente **[!UICONTROL Contenitore modulo adattivo]** per aggiungere Forms adattivo a una pagina di AEM Sites. Puoi utilizzare il componente **[!UICONTROL Forms adattivo - Incorpora]** più volte in una pagina di AEM Sites, solo se è selezionata l&#39;opzione **[!UICONTROL Modulo occupa l&#39;intera larghezza del frame]**. Se l&#39;opzione **[!UICONTROL Modulo occupa l&#39;intera larghezza del frame]** non è selezionata, la pagina di AEM Sites supporta un solo modulo adattivo per esistere senza un iframe. Per aggiungere altro Forms adattivo utilizzando il componente **[!UICONTROL Forms adattivo - Incorpora]**, seleziona **[!UICONTROL Il modulo copre l&#39;intera larghezza del frame]**.
 
-## Considerazioni per incorporare un modulo adattivo nella pagina di AEM Sites o nel frammento di esperienza AEM {#consideration}
+## Considerazioni per incorporare un modulo adattivo in una pagina AEM Sites o in un frammento esperienza AEM {#consideration}
 
 * Quando crei o aggiungi un modulo utilizzando il componente **[!UICONTROL Forms adattivo - Incorpora(v2)]**, i moduli vengono tradotti e localizzati utilizzando il flusso di traduzione AEM Forms. In questo caso, viene mantenuto un singolo modulo a cui viene fatto riferimento in tutte le copie in lingua delle pagine di Sites. Il componente **[!UICONTROL Forms adattivo - Incorpora(v2)]** non fornisce l&#39;accesso a varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
 * Quando si utilizza il **[!UICONTROL Contenitore modulo adattivo]** per creare un modulo, i moduli vengono tradotti e localizzati attraverso il flusso di traduzione AEM Sites. Per ogni lingua viene generata una copia separata (copia per lingua) della pagina del sito e dei moduli corrispondenti e, quando un autore di contenuto modifica una regola in un modulo nella pagina padre, le stesse modifiche devono essere apportate in tutte le copie per lingua del modulo. **[!UICONTROL Contenitore modulo adattivo]** consente inoltre di utilizzare varie funzioni delle pagine AEM Sites, come controllo delle versioni, targeting, traduzione e gestione multisito.
 
 
-## Requisiti per incorporare un modulo adattivo nella pagina di AEM Sites o nel frammento di esperienza AEM {#before-you-start-embedding-an-adaptive-form}
+## Requisiti per incorporare un modulo adattivo nella pagina AEM Sites o nel frammento di esperienza AEM {#before-you-start-embedding-an-adaptive-form}
 
 Prima di iniziare a incorporare un nuovo modulo adattivo o un modulo adattivo preesistente utilizzando **[!UICONTROL Forms adattivo - Incorpora(v2)]**, abilita **Componenti core Forms adattivo** e aggiungi **Librerie client Forms adattive** alla pagina AEM Sites:
 
-### Abilitare i componenti core Forms adattivi per il tuo ambiente AEM Cloud Service
+### Abilitare i componenti core adattivi di Forms per il tuo ambiente AEM Cloud Service
 
-Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente AEM Forms as a Cloud Service](enable-adaptive-forms-core-components.md).
+Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
 
 ### Aggiungere librerie client Forms adattive alla pagina o al frammento di esperienza AEM Sites
 
@@ -88,8 +88,8 @@ Quando l&#39;opzione **[!UICONTROL Quando il modulo copre l&#39;intera larghezza
 
 Aggiungi le **librerie client Customheaderlibs** e **Customfooterlibs** alla pagina AEM Sites utilizzando la pipeline di distribuzione. Per aggiungere le librerie client:
 
-1. Accedi e clona l&#39;[archivio Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=it).
-1. Apri la cartella AEM Cloud Service Git Repository in un editor di testo per piani. Ad esempio, Microsoft® Visual Code.
+1. Accedi e clona l&#39;[archivio Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. Apri la cartella dell’archivio Git di AEM Cloud Service in un editor di testo del piano. Ad esempio, Microsoft® Visual Code.
 1. Aprire il file `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` e aggiungere il codice seguente al file:
 
    ```
@@ -126,7 +126,7 @@ Aggiungi le **librerie client Customheaderlibs** e **Customfooterlibs** alla pag
        </sly> 
    ```
 
-1. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=it) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
+1. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
 
 ### Abilita Forms adattivo: incorpora(v2) per la pagina o il frammento di esperienza AEM Sites
 
@@ -259,7 +259,7 @@ Per convertire un modulo adattivo nella pagina di AEM Sites in un frammento di e
   > È possibile utilizzare le opzioni **Usa lingua pagina**, **Imposta stato attivo su modulo** e **Tema** solo per modulo adattivo (Foundation).
 
 * **Il modulo occupa l&#39;intera larghezza del frame**:
-Un frame in linea (iframe) è un elemento HTML che carica un modulo adattivo in una pagina AEM Sites.
+Un frame in linea (iframe) è un elemento di HTML che carica un modulo adattivo in una pagina AEM Sites.
 
    * Se la casella di controllo **[!UICONTROL Modulo occupa l&#39;intera larghezza della cornice]** è selezionata, un modulo adattivo occupa l&#39;intera larghezza del contenitore in cui viene inserito. In questo caso, non viene utilizzato un iframe per eseguire il rendering del modulo. Il layout e il design di un modulo adattivo si adattano a coprire l’intera larghezza del contenitore, rendendolo reattivo e in grado di adattarsi a diverse dimensioni dello schermo. Questa opzione consente di incorporare più Forms adattivi all’interno di una pagina AEM Sites.
 
@@ -267,7 +267,7 @@ Un frame in linea (iframe) è un elemento HTML che carica un modulo adattivo in 
      >
      > Per incorporare più moduli in una pagina AEM Sites, selezionare **[!UICONTROL La casella di controllo Campo modulo copre l&#39;intera larghezza del frame]**.
 
-   * Se la casella di controllo **[!UICONTROL Modulo copre l&#39;intera larghezza del frame]** non è selezionata, un modulo adattivo non copre l&#39;intera larghezza del contenitore. Viene invece utilizzato un iframe per eseguire il rendering del modulo, che non può essere esteso oltre una larghezza specifica. Questo approccio è utile quando un modulo adattivo ha confini definiti e deve coesistere con altri componenti AEM adiacenti all’interno del contenitore. Se questa opzione non è selezionata, è possibile incorporare un solo Forms adattivo nella pagina AEM Sites senza un iframe.
+   * Se la casella di controllo **[!UICONTROL Modulo copre l&#39;intera larghezza del frame]** non è selezionata, un modulo adattivo non copre l&#39;intera larghezza del contenitore. Viene invece utilizzato un iframe per eseguire il rendering del modulo, che non può essere esteso oltre una larghezza specifica. Questo approccio è utile quando un modulo adattivo ha limiti definiti e deve coesistere con altri componenti AEM adiacenti all’interno del contenitore. Se questa opzione non è selezionata, è possibile incorporare un solo Forms adattivo nella pagina AEM Sites senza un iframe.
 
      >[!NOTE]
      >
@@ -339,11 +339,11 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Modulo adattivo incorporato Publish {#publishing-embedded-adaptive-form}
+## Pubblicare un modulo adattivo incorporato {#publishing-embedded-adaptive-form}
 
-Prendiamo in considerazione i seguenti scenari per la pubblicazione di un modulo adattivo incorporato nella pagina dei siti AEM:
+Prendiamo in considerazione i seguenti scenari per la pubblicazione di un modulo adattivo incorporato nella pagina dei siti di AEM:
 
-* Se pubblichi la pagina dei siti AEM per la prima volta e include un modulo adattivo incorporato, pubblica la pagina dei siti e la risorsa incorporata.
+* Se pubblichi la pagina dei siti di AEM per la prima volta e include un modulo adattivo incorporato, pubblica la pagina dei siti e la risorsa incorporata.
 * Se hai modificato solo il modulo adattivo incorporato in una pagina del sito pubblicata, pubblica la risorsa originale e le modifiche si riflettono nella pagina del sito pubblicata. La pagina del sito pubblicata include un riferimento alla risorsa e non richiede la ripubblicazione della pagina.
 * Se hai modificato la pagina Sites e il modulo adattivo incorporato, ripubblica la pagina Sites e la risorsa incorporata.
 
@@ -360,7 +360,7 @@ Per modificare una configurazione o una proprietà del modulo adattivo incorpora
 
 ## Best practice {#best-practices}
 
-Quando incorpori Forms adattivo nelle pagine dei siti AEM, considera gli aspetti seguenti:
+Quando incorpori Forms adattivo nelle pagine dei siti di AEM, considera gli aspetti seguenti:
 
 * Intestazione e piè di pagina nel modulo originale non sono inclusi nel modulo incorporato.
 * Le bozze utente e gli invii di moduli incorporati sono supportati e visibili nelle schede Bozze e Forms inviate nel portale Forms.
