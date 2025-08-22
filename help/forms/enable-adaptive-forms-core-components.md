@@ -301,7 +301,7 @@ Distribuisci il codice aggiornato negli ambienti di sviluppo locali e Cloud Serv
 
    Una volta creato correttamente il pacchetto, puoi trovarlo nella [cartella dell&#39;archivio Git]\all\target\[appid].all-[versione].zip
 
-1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip nell&#39;ambiente di sviluppo locale.
+1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip nell&#39;ambiente di sviluppo locale.
 
 
 ### Creare e distribuire il codice aggiornato in un ambiente AEM Forms as a Cloud Service {#core-components-on-aem-forms-cs}

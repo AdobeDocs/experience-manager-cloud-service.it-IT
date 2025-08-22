@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Salvare i moduli come bozze e elencarli nella pagina Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente predefinito **Bozze e invii** di Forms Portal, che consente di visualizzare le bozze e gli invii nelle pagine di AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 

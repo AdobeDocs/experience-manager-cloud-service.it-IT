@@ -165,5 +165,5 @@ Ora puoi vedere che il modulo adattivo basato su componenti di base si trasforma
 
 ## Best practice {#best-practices}
 
-* Assicurati che i moduli basati su Componenti di base utilizzino solo i componenti con un [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponibile. Nei casi in cui utilizzi componenti di base che non hanno un componente core equivalente, il componente di base non viene convertito. Di conseguenza, non funziona correttamente durante la creazione di un modulo
+* Assicurati che i moduli basati su Componenti di base utilizzino solo i componenti con un [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponibile. Nei casi in cui utilizzi componenti di base che non hanno un componente core equivalente, il componente di base non viene convertito. Di conseguenza, non funziona correttamente durante la creazione di un modulo
 * Assicurati che le regole per convertire i Componenti di base in Componenti core siano formattate in XML.
