@@ -4,10 +4,10 @@ description: Scopri come configurare le azioni di invio in AEM Forms utilizzando
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 12%
+source-wordcount: '810'
+ht-degree: 13%
 
 ---
 
@@ -98,27 +98,100 @@ Invia i dati del modulo direttamente all’istanza Publish di AEM as a Cloud Ser
 
 ### Requisiti di configurazione
 
-#### &#x200B;1. Configurazione di AEM Dispatcher
+#### &#x200B;1. Aggiornare l’URL dell’istanza di AEM in Edge Delivery
 
-Configura Dispatcher nell’istanza AEM Publish:
+Aggiorna l&#39;URL dell&#39;istanza di AEM Cloud Service nel file `constant.js` nel blocco `form` in `submitBaseUrl`. Puoi configurare l’URL in base all’ambiente:
 
-- **Consenti percorsi di invio**: modifica `filters.any` per consentire le richieste POST a `/adobe/forms/af/submit/...`
-- **Nessun reindirizzamento**: assicurati che le regole di Dispatcher non reindirizzino i percorsi di invio dei moduli
+**Per l&#39;istanza di Cloud Service**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**Per lo sviluppo locale**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. Filtro referrer OSGi
 
-Nella console OSGi di AEM (`/system/console/configMgr`):
+Configura il filtro Referrer per consentire domini del sito Edge Delivery specifici:
 
-1. Trova &quot;Apache Sling Referrer Filter&quot; (Filtro Referrer Apache Sling)
-2. Aggiungere il dominio Edge Delivery all’elenco &quot;Consenti host&quot;
-3. Includi domini come `https://your-eds-domain.hlx.page`
+1. Crea o aggiorna il file di configurazione OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### &#x200B;3. Regole di reindirizzamento CDN
+2. Aggiungi la seguente configurazione ai tuoi domini di sito specifici:
 
-Configura la tua rete CDN di Edge Delivery per instradare gli invii:
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- Inoltra le richieste da `/adobe/forms/af/submit/...` alla tua istanza di pubblicazione AEM
-- L’implementazione varia a seconda del provider CDN (Fastly, Akamai, Cloudflare)
+3. Distribuire la configurazione tramite Cloud Manager
+
+Per informazioni dettagliate sulla configurazione del filtro Referrer OSGi, consulta la [Guida del filtro Referrer](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+
+#### &#x200B;3. Problemi CORS (Cross-Origin Resource Sharing)
+
+Configura le impostazioni CORS in AEM per consentire le richieste dai domini del sito Edge Delivery specifici:
+
+**Localhost sviluppatore**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Siti Edge Delivery - Aggiungi ogni dominio del sito singolarmente**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**Domini Franklin precedenti (se ancora in uso)**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>Sostituisci `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` con i tuoi domini del sito effettivi. Ogni sito ospitato dallo stesso archivio richiede una voce di configurazione CORS separata.
+
+Per informazioni dettagliate sulla configurazione CORS, consulta la [Guida alla configurazione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+Per abilitare CORS per l&#39;ambiente di sviluppo locale, consulta l&#39;articolo [Comprendere la condivisione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. Configurazione modulo
 
@@ -128,55 +201,54 @@ Configura la tua rete CDN di Edge Delivery per instradare gli invii:
 4. Pubblicare un modulo su un sito Edge Delivery
 
 +++
+<!--
++++ Form Embedding
 
-+++ Incorporamento modulo (facoltativo)
+Embed forms created in one location into different web pages or sites.
 
-Incorpora i moduli creati in un percorso in pagine o siti Web diversi.
+### Use Cases
 
-### Casi d’uso
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- Riutilizzare i moduli standard in più pagine di destinazione
-- Includi moduli specializzati nel contenuto creato da documenti
-- Gestisci modulo singolo per più progetti EDS
+### CORS Configuration
 
-### Configurazione CORS
+Configure Cross-Origin Resource Sharing on the form source:
 
-Configura condivisione risorse tra origini nell&#39;origine del modulo:
-
-1. **Aggiungi intestazioni CORS** alle risposte dell&#39;origine del modulo:
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **Esempio di configurazione**:
+2. **Example Configuration**:
 
-       &#x200B;# Configurazione per il sito che ospita il modulo
-       intestazioni:
-       - percorso: /forms/**
-       personalizzato:
-       Access-Control-Allow-Origin: https://host-domain.com
-       Metodi Di Consenti-Controllo-Accesso: GET, OPTIONS
-   
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-### Passaggi di incorporamento
+### Embedding Steps
 
-1. **Crea e pubblica modulo**
-   - Creare un modulo tramite l’authoring di documenti o l’editor universale
-   - Configurare il metodo di invio (pubblicazione FSS o AEM)
-   - Pubblica in URL autonomo
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-2. **Configura CORS**
-   - Configurare le intestazioni CORS nel sito di origine del modulo
-   - Consenti al dominio della pagina host di recuperare il modulo
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-3. **Incorpora nella pagina host**
-   - Aggiungi blocco di incorporamento modulo alla pagina host
-   - Posiziona blocco su URL modulo pubblicato
-   - Pubblica pagina host
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-![Architettura modulo incorporato](/help/forms/assets/eds-embedded-form.png)
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Problemi comuni
 
