@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 92%
+source-wordcount: '2496'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -157,7 +157,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
@@ -339,7 +339,7 @@ J. **Altri**: fornisce ulteriori opzioni per lavorare con il componente selezion
 
 * Visualizza espressione SOM
 * Salva un pannello come frammento (solo per i pannelli)
-* Aggiungi pannello figlio (solo per pannelli)
+* Aggiungi pannello secondario (solo per pannelli)
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
 
@@ -363,6 +363,10 @@ La struttura del contenuto contiene in genere i seguenti componenti primari:
 * **Barra degli strumenti:** a un contenitore Modulo adattivo è associata una barra degli strumenti globale, che è globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando **[!UICONTROL Aggiungi barra degli strumenti]** nella barra di modifica, che consente agli autori di aggiungere azioni come Invia, Salva, Ripristina e così via.
 
 * **Risorse:** questo nodo contiene informazioni aggiuntive utilizzate per la creazione dei moduli. Ad esempio, dettagli del modello di modulo, localizzazione e così via.
+
+## Assistente AI in AEM
+
+Per i clienti che hanno [completato i criteri dei prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l&#39;Assistente per l&#39;intelligenza artificiale in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Consulta anche {#see-also}
 

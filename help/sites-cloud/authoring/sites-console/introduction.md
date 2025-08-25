@@ -5,10 +5,10 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 45%
+source-wordcount: '1653'
+ht-degree: 44%
 
 ---
 
@@ -263,3 +263,8 @@ Inoltre, consente di creare azioni relative alla pagina.
 ## Modelli
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [**Vista a colonne**](/help/sites-cloud/authoring/basic-handling.md#column-view) o [**Vista a elenco**](/help/sites-cloud/authoring/basic-handling.md#list-view).
+
+## Assistente AI in AEM
+
+Per i clienti che hanno [completato i criteri dei prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l&#39;Assistente per l&#39;intelligenza artificiale in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
