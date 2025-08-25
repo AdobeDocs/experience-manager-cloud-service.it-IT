@@ -126,7 +126,7 @@ Una scheda (o riga in una tabella) rappresenta ogni programma, fornendo una pano
 * Nome assegnato al programma. L’immagine qui sopra mostra &quot;SecurBank Sample&quot; come nome del programma.
 * Tipo di servizio:
    * **Experience Manager Cloud** — per programmi AEM as a Cloud Service
-   * **Experience Manager** — per [programmi AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — per [programmi AMS (Adobe Managed Services)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo di programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produzione

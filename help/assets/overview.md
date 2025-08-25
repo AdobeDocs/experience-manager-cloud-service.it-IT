@@ -57,11 +57,11 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/get-started">
    <img alt="Utilizzare l’app desktop AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/get-started">
       <strong>Utilizzare l’app desktop AEM</strong>
       </a>
    </div>
@@ -518,7 +518,7 @@ Puoi integrare il selettore delle risorse con un’applicazione Adobe o non Adob
 
 * **Integrazione con Adobe Workfront**: [!DNL Adobe Workfront] è un’applicazione per la gestione del lavoro che ti aiuta a gestirne l’intero ciclo di vita in un’unica posizione. L’integrazione tra [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] consente alle organizzazioni di migliorare la velocità dei contenuti e il time-to-market, grazie a un collegamento intrinseco tra il lavoro e la gestione delle risorse digitali. Nel contesto di gestione del proprio lavoro in Workfront, gli utenti possono accedere ai documenti e alle immagini necessari.
 
-  Le offerte Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Le offerte Adobe per [integrare [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] in modo nativo](https://experienceleague.adobe.com/it/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Integrazione con Figma**: AEM Assets si integra in modo nativo con Figma, consentendo ai designer di accedere alle risorse memorizzate direttamente in AEM Assets dall&#39;interfaccia utente di Figma. Puoi inserire il contenuto gestito in AEM Assets nell’area di lavoro di Figma e quindi salvare il contenuto nuovo o modificato nell’archivio di AEM Assets. Per accedere al connettore AEM Assets disponibile nella pagina della community di Figma, fai clic [qui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -597,11 +597,11 @@ Se disponi già di un sito web [!DNL Edge Delivery Services], consulta la docume
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/overview">
    <img alt="Integrazione con Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/overview">
       <strong>Integrazione con Commerce</strong>
       </a>
    </div>
