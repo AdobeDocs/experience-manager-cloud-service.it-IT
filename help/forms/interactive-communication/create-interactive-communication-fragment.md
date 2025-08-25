@@ -35,7 +35,7 @@ Per creare un frammento di comunicazione interattivo, effettua le seguenti opera
 
 1. Dopo aver selezionato il frammento di comunicazione interattiva, viene visualizzata una schermata in cui vengono definiti i dettagli chiave del frammento, ad esempio titolo, nome, descrizione, modello dati (una rappresentazione strutturata dei dati di back-end) e tag.
 
-   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Trova documento IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
