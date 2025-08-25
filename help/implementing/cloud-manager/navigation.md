@@ -153,7 +153,7 @@ L&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_22/Smock_M
 * Passa a una particolare ![icona dati](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
 * Apri l&#39;![icona Panoramica programma](/help/implementing/cloud-manager/assets/program-overview.svg) [Panoramica programma](#program-overview)
 * ![Icona Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
