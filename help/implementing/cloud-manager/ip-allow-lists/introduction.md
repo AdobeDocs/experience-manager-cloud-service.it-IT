@@ -21,8 +21,8 @@ Scopri come gli Elenchi consentiti IP possono limitare gli indirizzi da cui gli 
 >id="aemcloud_golive_ipallowlist"
 >title="Gestire gli elenchi IP consentiti"
 >abstract="AEM as a Cloud Service è accessibile tramite Internet ed è protetto tramite autenticazione e autorizzazione degli utenti. È possibile utilizzare gli elenchi IP consentiti di Cloud Manager per controllare l’accesso e limitarlo ai soli indirizzi IP attendibili. Gli utenti di Cloud Manager con le autorizzazioni appropriate possono creare degli elenchi di indirizzi IP consentiti attendibili da cui gli utenti del sito possono accedere ai domini AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="Aggiungere un elenco IP consentiti"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="Visualizzare e aggiornare un elenco di indirizzi IP consentiti"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="Aggiungere un elenco IP consentiti"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="Visualizzare e aggiornare un elenco di indirizzi IP consentiti"
 
 ## Panoramica {#overview}
 
