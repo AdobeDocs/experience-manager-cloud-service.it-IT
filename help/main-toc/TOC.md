@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
-source-wordcount: '6549'
+source-wordcount: '6552'
 ht-degree: 96%
 
 ---
@@ -274,6 +274,8 @@ ht-degree: 96%
    + [Visualizzazione principale per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Chiavi gestite dal cliente per Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
++ Experience Hub {#experience-hub}
+   + [Informazioni su Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
    + [Inizia qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=it)
    + Percorso di onboarding {#journey}
@@ -1216,7 +1218,6 @@ ht-degree: 96%
    + [Implementazione di applicazioni per AEM as a Cloud Service](/help/implementing/home.md)
    + Utilizzare Cloud Manager {#using-cloud-manager}
       + [Navigazione](/help/implementing/cloud-manager/navigation.md)
-      + [Experience Hub](/help/experience-hub.md)
    + Programmi {#programs}
       + [Programmi e tipi di programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
