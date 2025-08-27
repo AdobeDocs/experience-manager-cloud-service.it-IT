@@ -4,10 +4,10 @@ description: Scopri la telemetria operativa, un servizio automatizzato che conse
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 0%
+source-wordcount: '974'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Il servizio di telemetria operativa è progettato per ridurre al minimo la racco
 * Il nome host del sito visitato, ad esempio: `experienceleague.adobe.com`
 * Tipo di agente utente e sistema operativo utilizzati per visualizzare la pagina, ad esempio: `desktop:windows` o `mobile:ios`
 * Ora della raccolta dati, ad esempio: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs?lang=it`
+* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs`
 * URL referente (URL della pagina collegata alla pagina corrente, se l’utente ha seguito un collegamento)
 * ID della visualizzazione pagina generato in modo casuale, in un formato simile a: `2Ac6`
 * Peso o inverso della frequenza di campionamento, ad esempio: `100`. Significa che viene registrata solo una visualizzazione pagina su cento
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **Il percorso `/.rum` è bloccato sul sito, come posso risolvere il problema?**
 
-   Il percorso `/.rum` è necessario per il funzionamento della raccolta di telemetria operativa. Se utilizzi una rete CDN davanti all&#39;AEM as a Cloud Service di Adobe, accertati che il percorso `/.rum` inoltri alla stessa origine AEM degli altri contenuti AEM. E assicurati che non venga regolato in alcun modo.
+   Il percorso `/.rum` è necessario per il funzionamento della raccolta di telemetria operativa. Se utilizzi una rete CDN davanti all&#39;AEM as a Cloud Service di Adobe, accertati che il percorso `/.rum` inoltri alla stessa origine AEM degli altri contenuti AEM. E assicurati che non venga regolato in alcun modo. In alternativa, è possibile modificare l&#39;host da utilizzare per la telemetria operativa in `rum.hlx.page` impostando [una variabile di ambiente in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominata `AEM_OPTEL_EXTERNAL` al valore `true`. Se in un secondo momento desideri tornare alle stesse richieste di dominio, rimuovi semplicemente di nuovo la variabile di ambiente.
 
 1. **La raccolta di telemetria operativa viene conteggiata per le richieste di contenuto a scopo contrattuale?**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe consiglia di utilizzare la telemetria operativa per i suoi vantaggi significativi e per consentire ad Adobe di ottimizzare le esperienze digitali migliorando le prestazioni del sito web. Il servizio è progettato per essere semplice e non ha alcun impatto sulle prestazioni del sito web.
 
-   Rinunciare potrebbe significare perdere l’opportunità di migliorare il coinvolgimento del traffico sul sito web. Tuttavia, in caso di problemi, contatta il supporto Adobe.
+   Rinunciare potrebbe significare perdere l’opportunità di migliorare il coinvolgimento del traffico sul sito web. Se tuttavia si verificano problemi, è possibile disattivare la telemetria operativa [impostando una variabile di ambiente in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominata `AEM_OPTEL_DISABLED` sul valore `true`. Per riattivare la telemetria operativa in un secondo momento, è sufficiente rimuovere nuovamente la variabile di ambiente.
