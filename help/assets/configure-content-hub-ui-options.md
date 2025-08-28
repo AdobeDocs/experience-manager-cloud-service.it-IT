@@ -2,9 +2,9 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
+source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2265'
 ht-degree: 9%
 
 ---
@@ -90,7 +90,7 @@ Puoi configurare i campi di metadati che vengono visualizzati dagli utenti duran
 
 1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche.
 
-Allo stesso modo, puoi fare clic sull&#39;icona ![Modifica](assets/do-not-localize/edit_icon.svg), disponibile accanto a ciascuna proprietà disponibile, per modificare le etichette, rendere questi campi obbligatori o non obbligatori per gli utenti durante il caricamento di risorse utilizzando l&#39;interruttore **[!UICONTROL Campo obbligatorio]**, oppure fare clic sull&#39;icona Elimina per eliminare qualsiasi proprietà di metadati.
+Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg) disponibile accanto a ciascuna proprietà disponibile per modificare le etichette, rendere questi campi obbligatori o non obbligatori per gli utenti durante il caricamento di risorse utilizzando l&#39;interruttore **[!UICONTROL Campo obbligatorio]**, oppure fare clic sull&#39;icona Elimina per eliminare qualsiasi proprietà di metadati.
 
 Fai clic sull&#39;interruttore **[!UICONTROL Approvazione automatica]** se tutte le risorse aggiunte all&#39;archivio Experience Manager Assets devono essere approvate automaticamente in modo che siano immediatamente disponibili in Content Hub. Altrimenti, gli autori o gli amministratori di DAM devono approvare manualmente le risorse per renderle disponibili su Content Hub. Per impostazione predefinita, l&#39;interruttore è impostato sullo stato Off.
 
@@ -123,6 +123,20 @@ Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-locali
 
 I filtri abilitati nell’interfaccia utente di configurazione vengono visualizzati nella pagina Ricerca:
 ![Cerca in Content Hub](assets/content-hub-filters1.png)
+
+#### Ricerca in blocco {#bulk-search-configuration}
+
+Per abilitare la ricerca di più risorse contemporaneamente in [!DNL Content Hub], eseguire i passaggi seguenti:
+
+1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Filters]**.
+
+1. Fai clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg)accanto a ciascun filtro disponibile.
+
+1. Attiva/disattiva **[!UICONTROL Ricerca in blocco]**. I delimitatori predefiniti `[ , | \t | \r\n | \r | \n ]` vengono visualizzati automaticamente. Inoltre, puoi anche aggiungere altri delimitatori. A questo scopo, specifica i delimitatori nella casella di input separati da `pipe symbol (|)`.
+
+   ![Configurazione ricerca in blocco](assets/bulk-search-configuration.png)
+
+1. Fai clic su **[!UICONTROL Conferma]** per salvare le modifiche. Vedere [Ricerca in blocco in Content Hub](search-assets-content-hub.md#bulk-search) in azione.
 
 ### Dettagli risorsa {#configure-asset-details-content-hub}
 
@@ -248,7 +262,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
@@ -312,3 +326,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
+

@@ -3,16 +3,16 @@ title: Cercare risorse in Content Hub
 description: Scopri come cercare le risorse in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
 
 # Cerca in Assets in [!DNL Content Hub] {#search-assets}
 
-Se nell’archivio sono presenti numerose risorse, la ricerca della risorsa corretta richiede tempo. La ricerca di [!DNL The Content Hub] consente di cercare le risorse approvate in modo da poter eseguire azioni aggiuntive, ad esempio il download, la condivisione o la creazione di raccolte. Puoi utilizzare varie funzionalità per limitare i risultati della ricerca, ad esempio eseguire ricerche basate su testo, utilizzare filtri, eseguire tag o ricerche specifiche per i tag avanzati, cercare un particolare formato di file e così via.
+Se nell’archivio sono presenti numerose risorse, la ricerca della risorsa corretta richiede tempo. La ricerca di [!DNL The Content Hub] consente di cercare le risorse approvate in modo da poter eseguire azioni aggiuntive, ad esempio il download, la condivisione o la creazione di raccolte. È possibile utilizzare varie funzionalità per limitare i risultati della ricerca, ad esempio l&#39;esecuzione di ricerche basate su testo, l&#39;utilizzo di filtri, l&#39;esecuzione di tag o di ricerche specifiche per i tag avanzati, la ricerca di un particolare formato di file e così via.
 
 ## Prerequisiti {#prerequisites}
 
@@ -148,6 +148,24 @@ I filtri predefiniti includono formato file, approvato da, data approvata, risor
 
 -->
 
+## Ricerca in blocco {#bulk-search}
+
+La ricerca in blocco di risorse consente di cercare più risorse contemporaneamente inserendo un elenco di identificatori (come nomi, formati di file, colori, tag e altro ancora). Invece di cercare le risorse una alla volta, la funzione di ricerca in blocco di [!DNL Content Hub] consente di individuare più rapidamente le risorse necessarie. Con questa funzionalità, puoi immettere più valori per qualsiasi proprietà di filtro, separati da un delimitatore (ad esempio, più ID SKU), e recuperare immediatamente tutte le risorse corrispondenti con una singola ricerca.
+
+Per cercare più risorse contemporaneamente, immetti più valori in una singola query separandoli con delimitatori ` [ , | \t | \r | \n | \r\n ]`. Puoi anche aggiungere altri delimitatori a seconda del caso d’uso. Vedi [Configurare la ricerca in blocco](configure-content-hub-ui-options.md#bulk-search-configuration).
+
+Per eseguire la ricerca in blocco in [!DNL Content Hub], eseguire i passaggi seguenti:
+
+1. Una volta che la ricerca in blocco è [configurata](configure-content-hub-ui-options.md#bulk-search-configuration), puoi visualizzare l&#39;opzione di ricerca in blocco nelle proprietà del filtro [!DNL Content Hub] configurate. Puoi abilitarlo o disabilitarlo in base al requisito.
+
+1. Aggiungi una query di ricerca contenente i delimitatori specificati nella configurazione. La query di ricerca deve contenere una stringa accompagnata da più valori separati da virgola.
+
+![Interfaccia utente per la ricerca in blocco](assets/bulk-search-ui.png)
+
 ## Fare di più con la ricerca {#do-more-with-search}
 
 [!DNL The Content Hub] non è limitato alla ricerca, ma consente di eseguire azioni aggiuntive, ad esempio [download](download-assets-content-hub.md), [condivisione](share-assets-content-hub.md) e [aggiungere risorse alla raccolta](collections-content-hub.md), direttamente dall&#39;interfaccia di ricerca o anteprima. Seleziona le risorse nella pagina dei risultati della ricerca per visualizzare queste opzioni.
+
+Ulteriori informazioni sulla [configurazione delle risorse in [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+
