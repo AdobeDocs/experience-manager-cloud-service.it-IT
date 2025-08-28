@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: c273b78fe698ef0cdc4bf3999a0479d0509c7ad4
 workflow-type: tm+mt
 source-wordcount: '6552'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -790,11 +790,11 @@ ht-degree: 96%
          + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
          + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
-      + Imposta azione di invio per un modulo adattivo {#set-submit-action}
-         + [Azioni di invio supportate da Adaptive Forms](/help/forms/aem-forms-submit-action.md)
+      + Impostare azione di invio per un modulo adattivo {#set-submit-action}
+         + [Azioni di invio supportate dai moduli adattivi](/help/forms/aem-forms-submit-action.md)
          + [Configurare l’azione di invio per un modulo adattivo basato su componenti di base](/help/forms/configuring-submit-actions.md)
          + [Configurare l’azione di invio per un modulo adattivo basato su componenti core](/help/forms/configure-submit-actions-core-components.md)
-         + [Configurare l’azione di invio per Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+         + [Configurare l’azione di invio per moduli Edge Delivery Services](/help/forms/configure-submit-action-eds-forms.md)
          + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
          + [Integrare un modulo adattivo con il modello di dati del modulo](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -1037,7 +1037,7 @@ ht-degree: 96%
    + Vetrina di terze parti {#thrid-party-storefront}
       + [Introduzione](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF Storefront {#cif-storefront}
-      + [Introduzione a CIF](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [Introduzione CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Modifiche di rilievo apportate ad AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
       + Percorsi Commerce {#journeys}
          + Percorso di authoring dei contenuti {#author}
@@ -1086,18 +1086,18 @@ ht-degree: 96%
       + Authoring WYSIWYG {#universal-editor}
          + [Editor universale di moduli per Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Navigare nell’interfaccia dell’editor universale per AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [Guida introduttiva di Edge Delivery Services per AEM Forms con Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Creare e pubblicare Forms adattivo con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [Creare un Forms reattivo con Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [Personalizzare tema e stile per un modulo Edge Delivery Services di AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [Editor di regole per Dynamic Forms nell’editor universale](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Guida introduttiva a Edge Delivery Services per moduli AEM utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Creare e pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [Creare moduli adattivi con l’editor universale](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [Personalizzare tema e stile per Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [Editor di regole per moduli dinamici nell’editor universale](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [Come creare frammenti di modulo per l’authoring basato su WYSIWYG](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [Come si configura un’azione di invio per un modulo adattivo?](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [Come configurare un’azione di invio per un modulo adattivo?](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Come configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [Aggiungere Google reCAPTCHA a Forms in Universal Editor](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Come integrare il modello dati modulo (FDM) per un modulo nell’editor universale?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Aggiungere Google reCAPTCHA ai moduli nell’editor universale](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [Come integrare un modello dati di modulo (FDM) in un modulo nell’editor universale?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Come precompilare i campi del modulo adattivo](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Pubblicare Forms adattivo con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Creare componenti personalizzati per un modulo EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Risoluzione dei problemi relativi agli errori 403 durante l’invio di moduli di Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
@@ -1275,7 +1275,7 @@ ht-degree: 96%
          + [Introduzione a Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Aggiungere un sito Edge Delivery a Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Creare il primo sito Edge Delivery con un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [Configurare un sito Edge Delivery per l’utilizzo di un archivio Git esterno](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [Configura un sito Edge Delivery per l’utilizzo di un archivio Git esterno](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Configurare l’origine di contenuto](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Gestire i siti Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

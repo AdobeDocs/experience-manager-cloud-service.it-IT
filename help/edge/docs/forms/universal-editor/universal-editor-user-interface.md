@@ -1,7 +1,7 @@
 ---
 title: Navigare nell’interfaccia dell’editor universale per AEM Forms
-description: Padroneggia l’interfaccia di Universal Editor per creare AEM Forms con Edge Delivery Services. Scopri gli strumenti essenziali, le scelte rapide e i flussi di lavoro per creare moduli in modo efficiente con questa guida completa all’interfaccia.
-keywords: editor universale, AEM forms, servizi di consegna edge, guida all’interfaccia, authoring di moduli, editor WYSIWYG, strumenti per la generazione di moduli, navigazione nell’interfaccia utente
+description: Padroneggia l’interfaccia dell’editor universale per creare moduli AEM con Edge Delivery Services. Scopri gli strumenti essenziali, le scelte rapide da tastiera e i flussi di lavoro per creare moduli in modo efficiente con questa guida completa all’interfaccia.
+keywords: editor universale, moduli AEM, edge delivery services, guida all’interfaccia, authoring di moduli, editor WYSIWYG, strumenti per la crezione di moduli, navigazione nell’interfaccia utente
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
@@ -9,147 +9,147 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '2355'
-ht-degree: 4%
+ht-degree: 97%
 
 ---
 
 
 # Navigare nell’interfaccia dell’editor universale per AEM Forms
 
-[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un&#39;interfaccia visiva per la creazione di AEM Forms con Edge Delivery Services. Offre un&#39;esperienza di **What You See Is What You Get (WYSIWYG)** che mostra esattamente come i moduli appariranno agli utenti.
+L’[editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un’interfaccia visiva per la creazione di moduli AEM con Edge Delivery Services. Offre un&#39;esperienza di **What You See Is What You Get (WYSIWYG)** che mostra esattamente come i moduli appariranno agli utenti.
 
-![Panoramica dell&#39;interfaccia dell&#39;editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
+![Panoramica sull’interfaccia dell’editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-Questa guida ti aiuta a comprendere l’interfaccia per creare moduli in modo efficiente. Che tu sia un nuovo utente nella creazione di moduli o uno sviluppatore esperto, questa guida ti aiuterà a:
+Questa guida ti aiuta a comprendere l’interfaccia per creare moduli in modo efficiente. Se non hai mai sperimentato la creazione di moduli o anche se hai esperienza nello sviluppo, questa guida ti aiuterà a:
 
-**Scopri le abilità essenziali:**
+**Scoprire le abilità essenziali:**
 
 - Navigare nell’interfaccia in modo sicuro ed efficiente
 - Utilizzare gli strumenti appropriati per le attività comuni di creazione dei moduli
 - Sfruttare le scelte rapide da tastiera per aumentare la produttività
 - Risolvere i problemi comuni dell’interfaccia
 
-**Flussi di lavoro chiave master:**
+**Conoscere a fondo i principali flussi di lavoro:**
 
-- Configurate l&#39;area di lavoro per una produttività ottimale
+- Configurare l’area di lavoro per una produttività ottimale
 - Creare moduli dal concetto alla pubblicazione
-- Test e anteprima dei moduli tra dispositivi
-- Collaborazione con i membri del team nei progetti modulo
+- Eseguire test e visualizzare l’anteprima dei moduli tra dispositivi
+- Collaborare con i membri del team nei progetti modulo
 
 
 
-## Guida introduttiva
+## Guida introduttiva rapida
 
-**Utenti nuovi:** Inizia con [Strumenti essenziali](#essential-tools-for-form-building) per scoprire le funzionalità principali che userai più spesso.
+**Utenti nuovi:** inizia con [Strumenti essenziali](#essential-tools-for-form-building) per scoprire le funzionalità principali che userai più spesso.
 
-**Utenti esperti:** passa a [Funzionalità avanzate](#advanced-features-and-integrations) per strumenti e integrazioni speciali.
+**Utenti esperti:** passa a [Funzionalità avanzate](#advanced-features-and-integrations) per avere strumenti e integrazioni specializzati.
 
-**Riferimento rapido:** Utilizzare le sezioni [Panoramica dell&#39;interfaccia](#interface-overview) e [Scelte rapide da tastiera](#keyboard-shortcuts) per eseguire ricerche rapide.
+**Riferimento rapido:** utilizza le sezioni [Panoramica dell’interfaccia](#interface-overview) e [Scelte rapide da tastiera](#keyboard-shortcuts) per eseguire ricerche rapide.
 
 >[!NOTE]
 >
-> Sei nuovo all’authoring di moduli? Per istruzioni dettagliate sulla creazione di moduli, consulta [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+> Nessuna esperienza nell’authoring di moduli? Per istruzioni dettagliate sulla creazione di moduli, consulta [Guida introduttiva a Edge Delivery Services per AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Panoramica dell’interfaccia
 
-L&#39;interfaccia di Universal Editor è strutturata in quattro aree principali, ognuna delle quali è progettata per attività specifiche:
+L’interfaccia dell’editor universale è strutturata in quattro aree principali, ognuna delle quali è progettata per attività specifiche:
 
 ![Layout interfaccia editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-| **Area** | **Scopo** | **Uso primario** |
+| **Area** | **Scopo** | **Uso principale** |
 |----------|-------------|----------------|
 | **[A: intestazione di Experience Cloud](#experience-cloud-header)** | Navigazione e gestione account | Passare da uno strumento Adobe all’altro, accedere alla guida e gestire le notifiche |
 | **[B: barra degli strumenti dell’editor universale](#universal-editor-toolbar)** | Modifica e pubblicazione di moduli | Creare, modificare, visualizzare in anteprima e pubblicare moduli |
-| **[C: pannello Proprietà](#properties-panel)** | Configurazione del componente | Configurare i campi modulo, gestire la struttura del contenuto e accedere alle funzioni avanzate |
-| **[D: area di lavoro editor](#editor-canvas)** | Creazione di moduli visivi | Aggiungi componenti, disponi il layout, vedi anteprima in tempo reale |
+| **[C: pannello Proprietà](#properties-panel)** | Configurazione componente | Configurare i campi modulo, gestire la struttura dei contenuti e accedere alle funzioni avanzate |
+| **[D: area di lavoro editor](#editor-canvas)** | Creazione di moduli visivi | Aggiungere componenti, disporre il layout, visualizzare anteprima in tempo reale |
 
-**Flusso interfaccia:** La maggior parte degli utenti lavora principalmente nell&#39;**Area di lavoro editor** (D) e nel **Pannello proprietà** (C), utilizzando la **Barra degli strumenti** (B) per azioni quali anteprima e pubblicazione.
+**Flusso interfaccia:** la maggior parte degli utenti lavora principalmente nell’**area di lavoro editor** (D) e nel **pannello Proprietà** (C), utilizzando la **barra degli strumenti** (B) per azioni quali anteprima e pubblicazione.
 
 ## Strumenti essenziali per la creazione di moduli
 
-Inizia qui se hai poca esperienza con Universal Editor. Questi sono gli strumenti di base che verranno utilizzati per la maggior parte delle attività di creazione moduli:
+Inizia qui se hai poca esperienza con l’editor universale. Questi sono gli strumenti di base che utilizzerai per la maggior parte delle attività di creazione moduli:
 
-### **1. Area di lavoro dell&#39;editor - Workspace principale**
+### **1. Area di lavoro dell’editor -La tua area di lavoro principale**
 
-Nell&#39;area di lavoro **Editor** è possibile creare i moduli visivamente. Viene visualizzato esattamente l&#39;aspetto del modulo per gli utenti.
+Nell’**area di lavoro dell’editor** puoi creare i moduli visivamente. Mostra esattamente come il modulo apparirà agli utenti.
 
-![Area di lavoro editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+![Area di lavoro dell’editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
 **Azioni chiave:**
 
-- **Aggiungi componenti** facendo clic sul pulsante **Aggiungi** nel pannello Proprietà
-- **Selezionare gli elementi** facendo clic direttamente su di essi nell&#39;area di lavoro
-- **Visualizza modifiche in tempo reale** durante la configurazione dei componenti
-- **Interazioni test** in modalità Anteprima
+- **Aggiungere componenti** facendo clic sul pulsante **Aggiungi** nel pannello Proprietà
+- **Selezionare gli elementi** facendo clic direttamente su di essi nell’area di lavoro
+- **Visualizzare le modifiche in tempo reale** durante la configurazione dei componenti
+- **Testare le interazioni** in modalità anteprima
 
-### **2. Pannello Proprietà - Configurazione Dei Componenti**
+### **2. Pannello Proprietà - Configurare i componenti**
 
-Nel **pannello Proprietà** (lato destro) è possibile personalizzare i componenti selezionati e gestire la struttura del modulo.
+Nel **pannello Proprietà** (lato destro) puoi personalizzare i componenti selezionati e gestire la struttura del modulo.
 
 ![Pannello Proprietà](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-**Caratteristiche essenziali:**
+**Funzioni essenziali:**
 
-- **Modalità proprietà** (`d` collegamento) - Configura le impostazioni del componente selezionato
-- **Struttura contenuto** (`f` collegamento) - Naviga nella struttura del modulo
-- **Aggiungi componenti** (collegamento `a`) - Inserisci nuovi campi modulo
-- **Azioni componente** - Duplica o elimina gli elementi selezionati
+- **Modalità delle proprietà** (scelta rapida da tastiera `d`): configura le impostazioni del componente selezionato
+- **Struttura del contenuto** (scelta rapida da tastiera`f`): naviga nella struttura del modulo
+- **Aggiungere componenti** (scelta rapida da tastiera `a`): inserisci nuovi campi modulo
+- **Azioni dei componenti**: duplica o elimina gli elementi selezionati
 
 ### **3. Nozioni di base sulla barra degli strumenti - Anteprima e pubblicazione**
 
-La **Barra degli strumenti dell&#39;editor universale** fornisce azioni chiave per testare e pubblicare i moduli.
+La **barra degli strumenti dell’editor universale** fornisce azioni chiave per il test e la pubblicazione dei moduli.
 
 ![Barra degli strumenti dell’editor universale](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-**Strumenti da conoscere:**
+**Strumenti fondamentali**
 
-- **Modalità anteprima** (`p` collegamento) - Verifica il modulo così come verrà visualizzato dagli utenti
-- **Modalità reattiva** - Controlla l&#39;aspetto del modulo sui dispositivi mobili
-- **Apri pagina** (collegamento `o`) - Visualizza modulo in una nuova scheda
-- **Pubblica** - Rendi il modulo attivo per gli utenti
+- **Modalità anteprima** (scelta rapida da tastiera`p`): testa il modulo così come verrà visualizzato dagli utenti
+- **Modalità reattiva**: verifica l’aspetto del modulo sui dispositivi mobili
+- **Apri pagina** (scelta rapida da tastiera `o`): visualizza modulo in una nuova scheda
+- **Pubblica**: rendi il modulo attivo per gli utenti
 
 ### **4. Flusso di lavoro di avvio rapido**
 
 **Per il primo modulo:**
 
-1. **Inizia la compilazione** - Aggiungi componenti utilizzando il pulsante **Aggiungi** (`a`)
-2. **Configura campi** - Seleziona i componenti e utilizza **Modalità proprietà** (`d`)
-3. **Verifica il modulo** - Utilizza la **modalità anteprima** (`p`) per interagire con il modulo
-4. **Controlla la visualizzazione per dispositivi mobili** - Passa alla **modalità reattiva** per i test mobili
-5. **Pubblica** - Fai clic su **Pubblica** quando è pronto
+1. **Iniziare la compilazione**: aggiungi componenti utilizzando il pulsante **Aggiungi** (`a`)
+2. **Configura campi**: seleziona i componenti e utilizza le **Modalità delle proprietà** (`d`)
+3. **Testa il modulo**: utilizza la **modalità anteprima** (`p`) per interagire con il modulo
+4. **Verifica la visualizzazione per dispositivi mobili**: passa alla **modalità reattiva** per i test su dispositivi mobili
+5. **Pubblica**: fai clic su **Pubblica** quando è pronto
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
-- È possibile aggiungere e configurare campi modulo?
-- La modalità Anteprima funziona correttamente?
-- Tutti i campi obbligatori sono impostati correttamente?
+- Puoi aggiungere e configurare campi modulo?
+- La modalità anteprima funziona correttamente?
+- Tutti i campi obbligatori sono configurati correttamente?
 - Il modulo viene visualizzato correttamente sui dispositivi mobili?
 
 ## Intestazione di Experience Cloud
 
-L&#39;**Intestazione Experience Cloud** fornisce gli strumenti di navigazione e gestione account. La maggior parte dei creatori di moduli lo utilizza occasionalmente per passare da uno strumento Adobe all’altro o per accedere all’Aiuto.
+L’**Intestazione Experience Cloud** fornisce gli strumenti di navigazione e gestione account. La maggior parte dei creatori di moduli la utilizza occasionalmente per passare da uno Adobe all’altro o per accedere alla guida.
 
-![Intestazione Experience Cloud](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
+![Intestazione di Experience Cloud](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
 **Elementi chiave:**
 
 | **Elemento** | **Scopo** | **Quando utilizzare** |
 |-------------|-------------|----------------|
 | **Adobe Experience Cloud** | Passare ad altri strumenti di Adobe | Passaggio tra Sites, Assets, Forms |
-| **Organizzazione** | Passare da un’organizzazione all’altra | Scenari di accesso per più organizzazioni |
-| **Guida** | Accedere alla documentazione e al supporto tecnico | Quando hai bisogno di assistenza o desideri inviare un feedback |
-| **Notifiche** | Visualizza le attività e gli avvisi assegnati | Verifica dello stato del flusso di lavoro |
-| **Soluzioni** | Accesso rapido ad altre soluzioni Adobe | Passare da un prodotto Adobe a un altro |
+| **Organizzazione** | Passaggio tra organizzazioni | Scenari di accesso per più organizzazioni |
+| **Guida** | Accedere alla documentazione e al supporto | Quando si ha bisogno di assistenza o si desidera inviare un feedback |
+| **Notifiche** | Visualizzare le attività e gli avvisi assegnati | Verificare lo stato del flusso di lavoro |
+| **Soluzioni** | Accesso rapido ad altre soluzioni Adobe | Spostarsi da un prodotto Adobe a un altro |
 | **Profilo utente** | Impostazioni account e disconnessione | Gestione dell’account o cambio di utente |
 
 **Usi più comuni:**
 
-- **Visualizzazione della Guida** - Fare clic sull&#39;icona della Guida per accedere alla documentazione e al supporto tecnico
-- **Cambio di organizzazioni** - Utilizza il menu a discesa Organizzazione se disponi di accesso per più organizzazioni
+- **Ottenere assistenza**: fai clic sull’icona della Guida per accedere alla documentazione e al supporto
+- **Passaggio tra organizzazioni**: utilizzare il menu a discesa Organizzazione se si dispone dell’accesso per più organizzazioni
 
 ## Barra degli strumenti dell’editor universale
 
-La **Barra degli strumenti dell&#39;editor universale** contiene gli strumenti principali di modifica e pubblicazione dei moduli. Queste sono organizzate in base alla frequenza di utilizzo e al flusso di lavoro tipico.
+La **barra degli strumenti dell’editor universale** contiene gli strumenti principali di modifica e pubblicazione dei moduli. Questi sono organizzati in base alla frequenza di utilizzo e al flusso di lavoro tipico.
 
 ![Barra degli strumenti dell’editor universale](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
@@ -157,137 +157,137 @@ La **Barra degli strumenti dell&#39;editor universale** contiene gli strumenti p
 
 **Questi strumenti vengono utilizzati nella maggior parte delle sessioni di creazione moduli:**
 
-#### **Modalità anteprima** (`p` collegamento)
+#### **Modalità anteprima** (`p` scelta rapida)
 
-**Scopo:** verifica il modulo esattamente come verrà visualizzato dagli utenti\
-**Quando utilizzare:** Prima della pubblicazione, dopo aver apportato modifiche, per testare la funzionalità del modulo
+**Scopo:** testare il modulo esattamente come verrà visualizzato dagli utenti\
+**Quando utilizzare:** prima della pubblicazione, dopo aver apportato modifiche, per testare la funzionalità del modulo
 
 ![Modalità Anteprima](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-**Best practice:** visualizza l&#39;anteprima dopo ogni modifica importante per rilevare i problemi in anticipo.
+**Best practice:** visualizza l’anteprima dopo ogni modifica importante per rilevare i problemi in anticipo.
 
 #### **Modalità reattiva**
 
-**Scopo:** verifica la visualizzazione del modulo sui dispositivi mobili\
-**Quando utilizzare:** Dopo aver generato il modulo, prima della pubblicazione
+**Scopo:** controllare la visualizzazione del modulo sui dispositivi mobili\
+**Quando utilizzare:** dopo aver creato il modulo, prima della pubblicazione
 
 ![Modalità reattiva](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-**Best practice:** verifica sempre la visualizzazione per dispositivi mobili. Molti utenti accederanno ai moduli sul telefono.
+**Best practice:** testa sempre la visualizzazione per dispositivi mobili. Molti utenti accederanno ai moduli dal proprio telefono.
 
-#### **Apri pagina** (`o` collegamento)
+#### **Aprire la pagina** (`o` scelta rapida)
 
-**Scopo:** Visualizza il modulo in una nuova scheda senza l&#39;interfaccia dell&#39;editor\
-**Quando utilizzare:** Per test a schermo intero, condivisione con le parti interessate per la revisione
+**Scopo:** visualizzare il modulo in una nuova scheda senza l’interfaccia dell’editor\
+**Quando utilizzare:** per test a schermo intero, condivisione con gli stakeholder per la revisione
 
 ![Apri pagina](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Pubblica**
 
-**Scopo:** Rendere il modulo attivo e accessibile agli utenti\
-**Quando utilizzare:** Dopo un test approfondito in modalità Anteprima e Reattiva
+**Scopo:** rendere il modulo attivo e accessibile agli utenti\
+**Quando utilizzare:** dopo un test approfondito in modalità Anteprima e Reattiva
 
 ![Pubblica](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Elenco di controllo convalida prima della pubblicazione:**
 
 - Modulo testato in modalità Anteprima
-- Velocità di risposta mobile verificata
+- Reattività dispositivi mobili verificata
 - Tutti i campi obbligatori configurati
-- Azioni di invio che funzionano correttamente
+- Azioni di invio correttamente funzionanti
 
 ### **Strumenti di navigazione**
 
 #### **Pulsante Home**
 
-**Scopo:** Tornare alla pagina iniziale dell&#39;editor universale\
-**Quando utilizzare:** Avvio del lavoro in un modulo diverso
+**Scopo:** tornare alla pagina iniziale dell’editor universale\
+**Quando utilizzare:** avvio del lavoro in un modulo diverso
 
 ![Pulsante Home](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
-#### **Barra località** (`l` collegamento)
+#### **Barra di posizione** (`l` scelta rapida)
 
-**Scopo:** Passare direttamente a qualsiasi modulo tramite URL\
-**Quando utilizzare:** Passaggio rapido tra moduli specifici
+**Scopo:** passare direttamente a qualsiasi modulo tramite URL\
+**Quando utilizzare:** passaggio rapido tra moduli specifici
 
 ![Barra della posizione](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
 
 ### **Strumenti di configurazione avanzati**
 
-**Questi strumenti vengono utilizzati per scenari specifici o impostazioni avanzate:**
+**Questi strumenti vengono utilizzati per scenari specifici o configurazioni avanzate:**
 
-#### **Proprietà modulo AEM**
+#### **Proprietà AEM Form**
 
 **Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM) e le date di pubblicazione\
-**Quando utilizzare:** Configurazione delle integrazioni di dati, pianificazione della pubblicazione
+**Quando utilizzare:** configurazione delle integrazioni di dati, pianificazione della pubblicazione
 
 ![Proprietà modulo](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
 
-![Creazione guidata proprietà modulo](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+![Procedura guidata proprietà modulo](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 Il pannello Proprietà modulo include le sezioni seguenti:
 
-- **Invio**: definisci cosa accade dopo che un utente invia il modulo. È possibile scegliere tra più azioni di invio, ad esempio l’invio di dati tramite e-mail, l’invio a SharePoint, l’utilizzo di un modello dati modulo o l’integrazione con servizi come Adobe Experience Platform o Microsoft Power Automate. Per un elenco completo delle azioni di invio supportate, fare riferimento all&#39;articolo [Azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md).
+- **Invio**: definisci cosa accade dopo che un utente invia il modulo. È possibile scegliere tra più azioni di invio, ad esempio l’invio di dati tramite e-mail, l’invio a SharePoint, l’utilizzo di un modello dati modulo o l’integrazione con servizi come Adobe Experience Platform o Microsoft Power Automate. Per un elenco completo delle azioni di invio supportate, fai riferimento all’articolo [Azione di invio](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-- **Precompilazione**: configura il popolamento automatico dei campi modulo prima che l&#39;utente interagisca con il modulo. Puoi connetterti a origini dati, ad esempio un Modello dati modulo (FDM), oppure utilizzare parametri URL per precompilare i campi, migliorando l’esperienza utente e riducendo l’input manuale. Per ulteriori informazioni, consulta l&#39;articolo [Servizio di precompilazione](/help/edge/docs/forms/universal-editor/prefill-form.md).
+- **Precompilazione**: configura il popolamento automatico dei campi modulo prima che l’utente interagisca con il modulo. Puoi connetterti a origini dati, ad esempio un Modello dati modulo (FDM), oppure utilizzare parametri URL per precompilare i campi, migliorando l’esperienza utente e riducendo l’input manuale. Per ulteriori informazioni, consulta l’articolo [Servizio di precompilazione](/help/edge/docs/forms/universal-editor/prefill-form.md).
 
-- **Grazie**: personalizza i contenuti visualizzati dagli utenti dopo l&#39;invio del modulo. Puoi visualizzare un messaggio di conferma o reindirizzarli a un’altra pagina web, garantendo un’esperienza di completamento fluida e professionale. Per informazioni su come configurare un messaggio di ringraziamento per i moduli, vedere l&#39;articolo [Configura messaggio di ringraziamento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
+- **Ringraziamento**: personalizza i contenuti visualizzati dagli utenti dopo l’invio del modulo. Puoi visualizzare un messaggio di conferma o reindirizzarli a un’altra pagina web, garantendo un’esperienza di completamento fluida e professionale. Per scoprire come configurare un messaggio di ringraziamento per i moduli, consulta l’articolo [Configurare un messaggio di ringraziamento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Editor regole** (accesso anticipato)
 
-**Scopo:** Aggiungere comportamenti dinamici, convalide e logica condizionale\
-**Quando utilizzare:** Creazione di moduli interattivi con logica di business complessa
+**Scopo:** aggiungere comportamenti dinamici, convalide e logica condizionale\
+**Quando utilizzare:** creazione di moduli interattivi con logica di business complessa
 
 ![Editor di regole](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
 
 >[!IMPORTANT]
 >
-> **Funzione di accesso anticipato:** L&#39;editor di regole richiede un accesso speciale. Contattare [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per abilitare questa funzionalità.
+> **Funzione di accesso anticipato:** l’editor di regole richiede un accesso speciale. Contatta [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) per abilitare questa funzione.
 >
-> **Ulteriori informazioni:** Per istruzioni dettagliate, consulta la [Guida dell&#39;editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
+> **Ulteriori informazioni:** per istruzioni dettagliate, consulta la [Guida all’editor di regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
-#### **Impostazioni intestazione di autenticazione**
+#### **Impostazioni dell’intestazione di autenticazione**
 
 **Scopo:** impostare intestazioni di autenticazione personalizzate per i test di sviluppo\
-**Quando utilizzare:** Sviluppo locale con moduli richiesti per l&#39;autenticazione
+**Quando utilizzare:** sviluppo locale con moduli richiesti per l’autenticazione
 
 ![Intestazioni di autenticazione](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
 
 #### **Opzioni aggiuntive** (Menu con puntini di sospensione)
 
-**Finalità:** Accedi ad azioni meno comuni, ad esempio l&#39;annullamento della pubblicazione\
-**Quando utilizzare:** Disconnessione dei moduli, accesso alle opzioni avanzate
+**Scopo:** accedere ad azioni meno comuni, ad esempio l’annullamento della pubblicazione\
+**Quando utilizzare:** disconnessione dei moduli, accesso alle opzioni avanzate
 
 ![Opzioni aggiuntive](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
 
 ## Pannello Proprietà
 
-Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazione e la configurazione dei moduli. Cambia in base a ciò che selezioni e fornisce strumenti diversi per le diverse attività.
+Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazione e la configurazione dei moduli. Cambia in base a ciò che selezioni e fornisce strumenti diversi per attività diverse.
 
 ![Pannello Proprietà](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-### **Strumenti core per la generazione di moduli**
+### **Strumenti di base per la creazione di moduli**
 
-**Questi strumenti sono essenziali per la creazione e l&#39;organizzazione dei moduli:**
+**Questi strumenti sono essenziali per la creazione e l’organizzazione dei moduli:**
 
-#### **Aggiungi componenti** (`a` collegamento)
+#### **Aggiungere componenti** (`a` scelta rapida)
 
 **Scopo:** inserire nuovi campi ed elementi del modulo\
 **Funzionamento:** mostra i componenti disponibili per il contenitore selezionato
 
-![Aggiungi componenti](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+![Aggiungere componenti](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
 
 **Componenti comuni:**
 
 - Input di testo, e-mail, campi telefono
 - Menu a discesa, pulsanti di scelta, caselle di controllo
-- Caricamento di file, selezione data
+- Caricamento di file, selettore data
 - Pannelli e sezioni per l’organizzazione
 
-#### **Modalità proprietà** (`d` collegamento)
+#### **Modalità proprietà** (scelta rapida da tastiera `d`)
 
 **Scopo:** configurare le impostazioni per i componenti selezionati\
-**Quando utilizzare:** Dopo aver aggiunto un componente per personalizzarne il comportamento
+**Quando utilizzarli:** dopo aver aggiunto un componente per personalizzarne il comportamento
 
 ![Modalità proprietà](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
 
@@ -295,29 +295,29 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 - Etichette di campo e testo segnaposto
 - Regole di convalida (obbligatorio, formato, lunghezza)
-- Valori predefiniti e testo della guida
+- Valori predefiniti e testo di istruzioni
 - Regole di visibilità condizionale
 
-#### **Struttura contenuto** (`f` collegamento)
+#### **Struttura contenuto** (scelta rapida da tastiera`f`)
 
-**Scopo:** Navigare e organizzare la struttura del modulo\
-**Quando utilizzare:** moduli complessi con più sezioni, ricerca di componenti specifici
+**Scopo:** navigare e organizzare la struttura del modulo\
+**Quando utilizzarle:** moduli complessi con più sezioni, ricerca di componenti specifici
 
 ![Struttura contenuto](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
 
 **Vantaggi:**
 
-- Navigazione rapida a qualsiasi componente
+- Navigazione rapida per qualsiasi componente
 - Gerarchia dei moduli visivi
 - Riordinamento semplice degli elementi
 
-#### **Azioni componente**
+#### **Azioni dei componenti**
 
 **Scopo:** gestire i componenti esistenti\
 **Azioni disponibili:**
 
-- **Duplica** - Copia rapidamente i componenti ![Duplica](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
-- **Elimina** - Rimuovi componenti (nessuna richiesta di conferma) ![Elimina](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+- **Duplica**: copia rapidamente i componenti ![Duplica](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+- **Elimina**: rimuovi i componenti (nessun prompt di conferma) ![Elimina](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
 
 ### **Funzioni e integrazioni avanzate**
 
@@ -327,15 +327,15 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 #### **Origine dati**
 
-**Scopo:** connettere i moduli ai sistemi di dati back-end\
-**Quando utilizzare:** Forms che devono leggere/scrivere su database o servizi esterni
+**Scopo:** connetti i moduli ai sistemi di dati di back-end\
+**Quando utilizzarla:** con moduli che devono leggere/scrivere su database o servizi esterni
 
 ![Origine dati](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
 
-**Funzionalità:**
+**Funzionalità**
 
 - Configurazione modello dati modulo (FDM)
-- Popolazione dati dinamici
+- Compilazione dati dinamici
 - Invio a sistemi esterni
 
 +++
@@ -344,17 +344,17 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 #### **Generare varianti**
 
-**Scopo:** utilizzare l&#39;intelligenza artificiale per creare diverse versioni del contenuto del modulo\
-**Quando utilizzare:** Sperimentazione con testo, layout o approcci diversi
+**Scopo:** utilizza l’intelligenza artificiale per creare diverse versioni del contenuto del modulo\
+**Quando utilizzarla:** per la sperimentazione con testo, layout o approcci diversi
 
-    .[Genera varianti](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+    .[Generare varianti](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Ulteriori informazioni:** [Genera guida varianti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Ulteriori informazioni:** [Guida di generare varianti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Bozze di contenuto**
 
-**Scopo:** Creare e salvare le versioni preliminari del testo\
-**Quando utilizzare:** Iterazione nella copia del modulo, salvataggio di opzioni di testo alternative
+**Scopo:** creare e salvare le versioni preliminari del testo\
+**Quando utilizzarle:** per iterazione nella copia del modulo, salvataggio di opzioni di testo alternative
 
 ![Bozze di contenuto](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
 
@@ -364,17 +364,17 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 #### **Test A/B**
 
-**Scopo:** Confronta le varianti di modulo per ottimizzare le prestazioni\
-**Quando utilizzare:** Ottimizzazione dei tassi di conversione, test di diverse progettazioni
+**Scopo:** confronta le varianti del modulo per ottimizzare le prestazioni\
+**Quando utilizzare:** ottimizzazione dei tassi di conversione, test delle diverse progettazioni
 
 ![Test A/B](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
 
 #### **Sperimentazione**
 
 **Scopo:** eseguire test controllati sulle progettazioni dei moduli\
-**Quando utilizzare:** Ottimizzazione dei moduli basati su dati, test dell&#39;esperienza utente
+**Quando utilizzare:** ottimizzazione dei moduli basati su dati, test dell’esperienza utente
 
-    .[Sperimentazione](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+    ![Sperimentazione](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
 
 +++
 
@@ -383,77 +383,77 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 #### **Gestione attività**
 
 **Scopo:** organizzare il flusso di lavoro del team per i progetti modulo\
-**Quando utilizzare:** Sviluppo di moduli per più persone, tracciamento dei progetti
+**Quando utilizzare:** sviluppo di moduli per più persone, tracciamento di progetti
 
 ![Gestione attività](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
 
 #### **Personalizzazione**
 
-**Scopo:** Connettiti con Adobe Experience Platform per esperienze personalizzate\
-**Quando utilizzare:** Creazione di moduli personalizzati basati su dati utente
+**Scopo:** connettersi ad Adobe Experience Platform per esperienze personalizzate\
+**Quando utilizzare:** creazione di moduli personalizzati basati su dati utente
 
-    .[Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+    ![Personalizzazione](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
 
 +++
 
-## Editor Canvas
+## Area di lavoro dell’editor
 
-L&#39;**Area di lavoro editor** è l&#39;area di lavoro principale in cui si creano visivamente i moduli. Visualizza esattamente l&#39;aspetto del modulo per gli utenti e fornisce feedback in tempo reale durante l&#39;esecuzione delle modifiche.
+L’**area di lavoro dell’editor** è l’area di lavoro principale in cui vengono creati visivamente i moduli. Mostra esattamente come il modulo apparirà agli utenti e fornisce feedback in tempo reale mentre apporti modifiche.
 
-![Area di lavoro editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+![Area di lavoro dell’editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-**Caratteristiche principali:**
+**Funzioni chiave:**
 
-- **Modifica WYSIWYG** - Visualizza le modifiche immediatamente dopo averle apportate
-- **Interazione diretta** - Fai clic su un componente per selezionarlo e modificarlo
-- **Anteprima in tempo reale** - Passa alla modalità Anteprima per testare la funzionalità
-- **Visualizzazione reattiva** - Attiva/disattiva le visualizzazioni del dispositivo per verificare la compatibilità mobile
+- **Modifica WYSIWYG**: visualizza subito le modifiche mentre le apporti
+- **Interazione diretta**: fai clic su un componente per selezionarlo e modificarlo
+- **Anteprima in tempo reale**: passa alla modalità anteprima per testare la funzionalità
+- **Visualizzazione reattiva**: attiva/disattiva le visualizzazioni del dispositivo per verificarne la compatibilità
 
-**Best practice:**
+**Best practice**
 
-- **Inizia con la struttura** - Aggiungi sezioni principali prima dei componenti dettagliati
-- **Test frequente** - Utilizza regolarmente la modalità Anteprima per rilevare i problemi in anticipo
-- **Pensa a mobile-first** - Controlla la modalità reattiva durante il processo di progettazione
+- **Iniziare con la struttura**: aggiungi sezioni principali prima dei componenti dettagliati
+- **Testare frequentemente**: utilizza regolarmente la modalità anteprima per rilevare i problemi in anticipo
+- **Pensare mobile-first**: verifica la modalità reattiva durante il processo di progettazione
 
 ## Scelte rapide da tastiera
 
-Utilizza queste scelte rapide per creare moduli in modo più rapido ed efficiente:
+Impara ad usare queste scelte rapide per creare moduli in modo più rapido ed efficiente:
 
-| **Collegamento** | **Azione** | **Quando utilizzare** |
+| **Scelta rapida da tastiera** | **Azione** | **Quando utilizzare** |
 |--------------|------------|----------------|
-| `a` | Apri elenco componenti | Aggiunta di nuovi campi modulo |
-| `d` | Apri proprietà componente | Configurazione degli elementi selezionati |
-| `f` | Attiva/disattiva struttura contenuto | Esplorazione di moduli complessi |
-| `p` | Attiva/disattiva modalità anteprima | Verifica della funzionalità del modulo |
-| `o` | Apri modulo in una nuova scheda | Test a schermo intero |
-| `l` | Barra di posizione dello stato attivo | Passaggio a diversi moduli |
+| `a` | Aprire l’elenco dei componenti | Aggiungere nuovi campi modulo |
+| `d` | Aprire le proprietà del componente | Configurazione degli elementi selezionati |
+| `f` | Attivare/disattivare la struttura del contenuto | Navigazione in moduli complessi |
+| `p` | Attivare/disattivare la modalità di anteprima | Testare la funzionalità del modulo |
+| `o` | Aprire il modulo in una nuova scheda | Test a schermo intero |
+| `l` | Concentrarsi sulla barra di posizione | Passaggio a diversi moduli |
 
-**Suggerimento pro:** Utilizza queste scelte rapide in combinazione. Ad esempio, seleziona un componente, premi `d` per configurarlo, quindi `p` per verificare le modifiche.
+**Suggerimento pro:** utilizza queste scelte rapide da tastiera in combinazione. Ad esempio, seleziona un componente, premi `d` per configurarlo, quindi `p` per testare le modifiche.
 
 ## Flussi di lavoro comuni
 
 ### **Creazione del primo modulo**
 
-1. **Aggiungi struttura** - Utilizza `a` per aggiungere un pannello per le sezioni del modulo
-2. **Aggiungi campi** - Inserisci input testo, e-mail e altri componenti
-3. **Configura proprietà** - Seleziona ogni campo e premi `d` per impostare le etichette e la convalida
-4. **Funzionalità di test** - Premere `p` per visualizzare l&#39;anteprima e verificare il modulo
-5. **Controlla visualizzazione mobile** - Utilizza la modalità reattiva per verificare la visualizzazione mobile
-6. **Pubblica** - Fai clic su Pubblica per andare &quot;live&quot;
+1. **Aggiungi struttura**: utilizzare `a` per aggiungere un pannello per le sezioni del modulo
+2. **Aggiungi campi**: inserire input di testo, e-mail e altri componenti
+3. **Configura proprietà**: selezionare ogni campo e premere `d` per impostare le etichette e la convalida
+4. **Funzionalità del test**: premere `p` per visualizzare l’anteprima e testare il modulo
+5. **Controlla visualizzazione su su dispositivo mobile**: utilizzare la modalità reattiva per verificare la visualizzazione su dispositivo mobile
+6. **Pubblica**: fare clic su Pubblica per andare live
 
-### **Modifica di Forms esistenti**
+### **Modifica di moduli esistenti**
 
-1. **Naviga nella struttura** - Utilizza la struttura contenuto (`f`) per trovare rapidamente i componenti
-2. **Seleziona e modifica** - Fai clic direttamente sui componenti o utilizza la struttura contenuto
-3. **Modifiche test** - Anteprima (`p`) dopo ogni modifica significativa
-4. **Convalida flusso di lavoro** - Verifica il flusso di modulo completo prima della ripubblicazione
+1. **Naviga nella struttura**: utilizzare la struttura contenuto (`f`) per trovare rapidamente i componenti
+2. **Seleziona e modifica**: fare clic direttamente sui componenti o utilizzare la struttura contenuto
+3. **Testa le modifiche**: visualizzare anteprima (`p`) dopo ogni modifica significativa
+4. **Convalida flusso di lavoro**: testare il flusso di modulo completo prima della ripubblicazione
 
 ### **Collaborazione con i team**
 
-1. **Gestione attività** - Assegna sezioni di modulo specifiche ai membri del team
-2. **Condividi per revisione** - Utilizza Apri pagina (`o`) per condividere anteprime pulite
-3. **Test congiunto** - Utilizza la modalità Anteprima per le sessioni di test collaborativo
-4. **Tracciamento avanzamento** - Controlla notifiche per aggiornamenti attività
+1. **Gestione attività**: assegnare sezioni di modulo specifiche ai membri del gruppo
+2. **Condividi per revisione**: utilizzare Apri pagina (`o`) per condividere anteprime chiare
+3. **Test congiunto**: utilizzare la modalità Anteprima per le sessioni di test collaborativo
+4. **Tracciamento avanzamento**: controllare le notifiche per aggiornamenti attività
 
 ## Risoluzione dei problemi comuni
 
@@ -461,14 +461,14 @@ Utilizza queste scelte rapide per creare moduli in modo più rapido ed efficient
 
 +++Impossibile caricare gli elementi dell&#39;interfaccia
 
-**Problema:** i pulsanti della barra degli strumenti, il pannello delle proprietà o altri elementi dell&#39;interfaccia non vengono visualizzati
+**Problema:** i pulsanti della barra degli strumenti, il pannello delle proprietà o altri elementi dell’interfaccia non vengono visualizzati
 
 **Soluzioni:**
 
-- **Aggiorna la pagina** - Un semplice aggiornamento del browser spesso risolve i problemi di caricamento
-- **Verifica compatibilità browser** - Utilizza Chrome, Firefox o Safari
-- **Cancella cache del browser** - Rimuovi i file memorizzati nella cache che potrebbero non essere aggiornati
-- **Verifica autorizzazioni** - Assicurati di disporre dell&#39;accesso corretto per la modifica dei moduli
+- **Aggiorna la pagina**: un semplice aggiornamento del browser spesso risolve i problemi di caricamento
+- **Verifica compatibilità browser**: utilizzare Chrome, Firefox o Safari
+- **Cancella cache del browser**: rimuovere i file memorizzati nella cache che potrebbero non essere aggiornati
+- **Verifica autorizzazioni**: assicurarsi di disporre dell’accesso corretto per la modifica dei moduli
 
 +++
 
@@ -478,56 +478,56 @@ Utilizza queste scelte rapide per creare moduli in modo più rapido ed efficient
 
 **Soluzioni:**
 
-- **Fai clic direttamente sui componenti** - Evita di fare clic su aree vuote
-- **Utilizza struttura contenuto** - Premi `f` e seleziona i componenti dalla struttura
-- **Verifica la presenza di elementi sovrapposti** - Alcuni componenti potrebbero bloccarne altri
-- **Ricarica il modulo**. Utilizzare la barra della posizione (`l`) per ricaricare il modulo corrente
+- **Fai clic direttamente sui componenti**: evita di fare clic su aree vuote
+- **Utilizza la struttura del contenuto**: premi `f` e seleziona i componenti dalla struttura
+- **Verifica la presenza di elementi sovrapposti**: alcuni componenti potrebbero bloccarne altri
+- **Ricarica il modulo**: utilizza la barra di posizione (`l`) per ricaricare il modulo corrente
 
 +++
 
 +++Problemi relativi alla modalità Anteprima
 
-**Problema:** la modalità Anteprima non funziona correttamente o mostra errori
+**Problema:** la modalità anteprima non funziona correttamente o mostra errori
 
 **Soluzioni:**
 
-- **Verifica convalida modulo** - Verifica che tutti i campi obbligatori siano configurati correttamente
-- **Verifica prima in modalità di modifica** - Verifica del funzionamento dei componenti prima dell&#39;anteprima
-- **Cancella cache del browser** - Gli script memorizzati nella cache potrebbero interferire con l&#39;anteprima
-- **Verifica la configurazione del componente** - Controlla le impostazioni della modalità delle proprietà per individuare eventuali errori
+- **Verifica la convalida del modulo**: verifica che tutti i campi obbligatori siano configurati correttamente
+- **Testa prima in modalità di modifica**: verifica il funzionamento dei componenti prima dell’anteprima
+- **Cancella cache del browser**: gli script memorizzati nella cache potrebbero interferire con l’anteprima
+- **Verifica la configurazione del componente**: rivedi le impostazioni della modalità delle proprietà per individuare eventuali errori
 
 +++
 
-## Procedure consigliate per la creazione efficiente di moduli
+## Best practice per la creazione efficiente dei moduli
 
-### **Suggerimenti organizzazione**
+### **Suggerimenti per l’organizzazione**
 
-- **Usa nomi descrittivi** - Etichetta chiaramente i componenti in modalità Proprietà
-- **Campi correlati al gruppo** - Utilizza i pannelli per organizzare in modo logico le sezioni del modulo
-- **Pianifica prima della compilazione** - Crea uno schizzo della struttura del modulo prima dell&#39;inizio
-- **Semplifica** - Evita di sopraffare gli utenti con troppi campi
+- **Utilizza nomi descrittivi**: etichetta i componenti in modo chiaro nella modalità Proprietà
+- **Raggruppa campi correlati**: utilizza i pannelli per organizzare in modo logico le sezioni del modulo
+- **Pianifica prima di creare**: crea uno schizzo della struttura del modulo prima di iniziare
+- **Semplifica**: evita di caricare eccessivamente gli utenti con troppi campi
 
 ### **Esperienza utente**
 
-- **Test frequente** - Utilizza la modalità Anteprima dopo ogni modifica importante
-- **Pensa come utenti** - Considera l&#39;esperienza completa di compilazione dei moduli
-- **Fornisci etichette chiare** - Rendi evidenti gli scopi del campo agli utenti
-- **Aggiungi testo utile** - Utilizza testo della Guida per campi complessi
+- **Testa frequentemente**: utilizza la modalità Anteprima dopo ogni modifica importante
+- **Pensa come gli utenti**: considera l’esperienza completa di compilazione dei moduli
+- **Fornisci etichette chiare**: rendi evidenti gli scopi del campo agli utenti
+- **Aggiungi testo utile**: utilizza il testo della Guida per campi complessi
 
 ### **Ottimizzazione delle prestazioni**
 
-- **Riduci a icona i componenti** - Utilizza solo i campi modulo necessari
-- **Ottimizza immagini** - Comprimi tutte le immagini utilizzate nei moduli
-- **Test su dispositivi mobili** - Garantire buone prestazioni su connessioni mobili più lente
-- **Convalida anticipata** - Imposta la convalida corretta per evitare errori di invio
+- **Riduci a icona i componenti**: utilizza solo i campi modulo necessari
+- **Ottimizza immagini**: comprimi tutte le immagini utilizzate nei moduli
+- **Test su dispositivi mobili**: garantisci buone prestazioni sulle connessioni mobili più lente
+- **Convalida anticipata**: imposta una convalida corretta per evitare errori di invio
 
 ## Passaggi successivi
 
-Ora che conosci l’interfaccia di Universal Editor:
+Ora che conosci l’interfaccia dell’editor universale:
 
-1. **Esercitarsi con un modulo semplice** - Iniziare con i campi di base per iniziare
-2. **Esplora le funzionalità avanzate** - Prova gli strumenti e le integrazioni basati sull&#39;intelligenza artificiale quando saranno pronti
-3. **Scopri come creare i moduli**. Consulta la [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-4. **Editor regole master** - Aggiungi comportamenti dinamici con la [Guida dell&#39;editor regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+1. **Esercitati con un modulo semplice**: inizia con i campi di base per imparare
+2. **Esplora le funzionalità avanzate**: prova gli strumenti e le integrazioni basati sull’intelligenza artificiale appena sono pronti
+3. **Scopri l’authoring dei moduli**: consulta la [Guida introduttiva](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+4. **Editor di regole master**: aggiungi comportamenti dinamici con la [Guida dell’editor regole](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
-**Ricorda:** L&#39;editor universale è progettato per rendere intuitivo lo sviluppo di moduli. Inizia con le funzionalità essenziali ed esplora gradualmente le funzioni avanzate man mano che le tue esigenze aumentano.
+**Ricorda:** l’editor universale è progettato per rendere intuitiva la creazione di moduli. Inizia con le funzionalità essenziali ed esplora gradualmente quelle avanzate ogni volta che ne hai bisogno.

@@ -1,5 +1,5 @@
 ---
-title: Personalizzare tema e stile per un modulo Edge Delivery Services di AEM Forms
+title: Personalizzare tema e stile per Edge Delivery Services per AEM Forms
 description: Personalizza efficacemente il tema e lo stile per AEM Forms fornito tramite Edge Delivery Services, garantendo un’esperienza utente coerente e con il brand.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,27 +7,27 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Personalizzare l’aspetto dei moduli
 
-Lo stile dei moduli in Edge Delivery Services per AEM Forms richiede una conoscenza approfondita delle proprietà personalizzate CSS, dell’architettura basata su blocchi e delle strategie di targeting specifiche dei componenti. A differenza degli approcci tradizionali allo stile dei moduli, l’Adaptive Forms Block implementa un sistema di token di progettazione sistematico che consente di applicare temi coerenti, mantenendo al contempo i vantaggi di prestazioni e accessibilità di Edge Delivery Services.
+Lo stile dei moduli in Edge Delivery Services per AEM Forms richiede una conoscenza approfondita delle proprietà personalizzate CSS, dell’architettura basata su blocchi e delle strategie di targeting specifiche dei componenti. A differenza degli approcci tradizionali all’applicazione dello stile dei moduli, il blocco dei moduli adattivi implementa un sistema di token di progettazione sistematico che consente di applicare temi coerenti, mantenendo al contempo i vantaggi di prestazioni e accessibilità di Edge Delivery Services.
 
-L’architettura Adaptive Forms Block genera strutture HTML standardizzate su tutti i componenti del modulo, creando modelli prevedibili per il targeting e la personalizzazione CSS. Questa coerenza consente agli sviluppatori di implementare sistemi di stile completi che si adattano a implementazioni di moduli complessi, preservando al contempo le ottimizzazioni delle prestazioni basate su blocchi che rendono Edge Delivery Services eccezionalmente veloce.
+L’architettura dei blocchi dei moduli adattivi genera strutture HTML standardizzate su tutti i componenti del modulo, creando modelli prevedibili per il targeting e la personalizzazione dei CSS. Questa uniformità consente agli sviluppatori di implementare sistemi di applicazione dello stile completi che si adattano a implementazioni di moduli complessi, preservando al contempo le ottimizzazioni delle prestazioni basate su blocchi che rendono Edge Delivery Services eccezionalmente veloce.
 
-Questa guida completa descrive le basi tecniche dello stile dei moduli all’interno dell’ecosistema Edge Delivery Services, inclusi i sistemi di proprietà personalizzati CSS, i modelli di struttura dei componenti HTML e le tecniche di stile avanzate. La documentazione fornisce sia conoscenze teoriche che indicazioni pratiche sull’implementazione per creare esperienze di modulo sofisticate e di marca.
+Questa guida completa descrive le basi tecniche dell’applicazione dello stile ai moduli all’interno dell’ecosistema Edge Delivery Services, inclusi i sistemi di proprietà personalizzati CSS, i modelli di struttura dei componenti HTML e le tecniche di stile avanzate. La documentazione fornisce sia conoscenze teoriche che indicazioni pratiche sull’implementazione per creare esperienze di modulo sofisticate e in linea con il brand.
 
-## Cosa imparerai
+## Che cosa imparerai
 
-**Proprietà personalizzate CSS**: comprende il sistema completo di variabili che controlla l&#39;aspetto del modulo, incluse le combinazioni di colori, le scale tipografiche, i sistemi di spaziatura e i parametri di layout. Scopri come escludere ed estendere queste proprietà per implementare i temi completi del brand.
+**Padronanza delle proprietà personalizzate CSS**: informazioni sul sistema completo di variabili che controlla l’aspetto del modulo, incluse le combinazioni di colori, le scale tipografiche, i sistemi di spaziatura e i parametri di layout. Scopri come sostituire ed estendere queste proprietà per implementare i temi completi del brand.
 
-**Informazioni sull&#39;architettura dei componenti**: acquisisci una conoscenza approfondita dei modelli di struttura HTML utilizzati da ciascun tipo di componente modulo, consentendo un targeting e una personalizzazione CSS precisi senza interrompere le funzionalità sottostanti o le funzioni di accessibilità.
+**Informazioni sull’architettura dei componenti**: acquisisci una conoscenza approfondita dei modelli di struttura HTML utilizzati da ciascun tipo di componente del modulo, consentendo un targeting e una personalizzazione CSS precisi senza interrompere le funzionalità sottostanti o le funzioni di accessibilità.
 
-**Tecniche di stile avanzate**: implementa modelli di stile sofisticati, tra cui stili basati sullo stato, integrazione di progettazione reattiva e strategie di personalizzazione ottimizzate per le prestazioni, che mantengono le caratteristiche di caricamento rapido di Edge Delivery Services.
+**Tecniche di applicazione di stile avanzate**: implementa modelli di stile sofisticati, tra cui stili basati sullo stato, integrazione di progettazione reattiva e strategie di personalizzazione ottimizzate per le prestazioni, che mantengono le caratteristiche di caricamento rapido di Edge Delivery Services.
 
-**Strategie di implementazione professionali**: scopri gli approcci standard del settore allo stile dei moduli, inclusa l&#39;integrazione del sistema di progettazione, l&#39;architettura CSS manutenibile e le tecniche di risoluzione dei problemi per scenari di stile complessi.
+**Strategie di implementazione professionali**: scopri gli approcci standard del settore allo stile dei moduli, inclusi l’integrazione dei sistemi di progettazione, l’architettura CSS mantenibile e le tecniche di risoluzione dei problemi per scenari di stile complessi.
 
 ## Informazioni sui tipi di campi modulo
 
@@ -51,25 +51,25 @@ La comprensione dei [concetti CSS fondamentali](https://www.w3schools.com/css/cs
 
 
 
-## Stile modulo completo con proprietà personalizzate CSS
+## Applicazione dello stile al modulo completa con proprietà personalizzate CSS
 
-Il blocco Forms adattivo utilizza una sofisticata architettura CSS basata su proprietà personalizzate (variabili CSS) che consente di applicare temi sistematici e uno stile coerente a tutti i componenti del modulo. Comprendere questa struttura è essenziale per una personalizzazione e un branding efficaci dei moduli.
+Il Blocco moduli adattivi utilizza una sofisticata architettura CSS basata su proprietà personalizzate (variabili CSS) che consente di applicare temi sistematici e uno stile coerente a tutti i componenti del modulo. Comprendere questa struttura è essenziale per una personalizzazione e un branding efficaci dei moduli.
 
 ### Informazioni sull’architettura di forms.css
 
-Gli stili di modulo predefiniti si trovano nell&#39;archivio dei progetti in `/blocks/form/form.css` e seguono un approccio strutturato che dà priorità a manutenibilità, coerenza e flessibilità di personalizzazione. L’architettura è costituita da diversi componenti chiave:
+Gli stili di modulo predefiniti si trovano nell’archivio dei progetti in `/blocks/form/form.css` e seguono un approccio strutturato che dà priorità a manutenibilità, coerenza e flessibilità di personalizzazione. L’architettura è costituita da diversi componenti chiave:
 
-**Proprietà personalizzate CSS Foundation**: il sistema di stile è basato sulle proprietà personalizzate CSS definite al livello `:root`, fornendo un sistema di temi centralizzato che esegue la cascata in tutti i componenti del modulo. Queste variabili stabiliscono i token di progettazione per i colori, la composizione tipografica, la spaziatura e le proprietà di layout.
+**Basi delle proprietà personalizzate CSS**: il sistema di applicazione dello stile è basato sulle proprietà personalizzate CSS definite nel livello `:root`, fornendo un sistema di temi centralizzato che si estende su tutti i componenti del modulo. Queste variabili stabiliscono i token di progettazione per i colori, la tipografia, la spaziatura e le proprietà di layout.
 
-**Struttura CSS basata su blocchi**: Edge Delivery Services utilizza un&#39;architettura basata su blocchi in cui la classe `.form` funge da spazio dei nomi primario per tutti gli stili correlati ai moduli, garantendo il corretto isolamento dell&#39;ambito ed evitando conflitti CSS con altri componenti di pagina.
+**Struttura CSS basata su blocchi**: Edge Delivery Services utilizza un’architettura basata su blocchi in cui la classe `.form` funge da spazio dei nomi primario per tutti gli stili correlati ai moduli, garantendo il corretto isolamento dell’ambito ed evitando conflitti CSS con altri componenti della pagina.
 
-**Stile specifico del componente**: i singoli componenti del modulo sono formattati con modelli di wrapper coerenti (`.{Type}-wrapper`) che forniscono un targeting prevedibile per tipi di campo diversi mantenendo al contempo l&#39;integrità complessiva del sistema di progettazione.
+**Applicazione dello stile specifica del componente**: i singoli componenti del modulo sono formattati con modelli di wrapper coerenti (`.{Type}-wrapper`) che forniscono un targeting prevedibile per tipi di campo diversi mantenendo al contempo l’integrità complessiva del sistema di progettazione.
 
-### Riferimento e personalizzazione delle proprietà personalizzate CSS
+### Riferimento e personalizzazione delle proprietà CSS personalizzate
 
-Il sistema di stile dei moduli include oltre 50 proprietà personalizzate CSS che controllano ogni aspetto dell’aspetto e del comportamento dei moduli. Comprendere queste proprietà consente una personalizzazione completa mantenendo al contempo la coerenza della progettazione.
+Il sistema di applicazione dello stile dei moduli include oltre 50 proprietà CSS personalizzate che controllano tutte le caratteristiche dell’aspetto e del comportamento dei moduli. Comprendere queste proprietà consente una personalizzazione completa mantenendo al contempo la coerenza della progettazione.
 
-+++ Variabili di colore e temi
++++ Variabili di colori e temi
 
 Il sistema di colori stabilisce una base visiva completa per i moduli attraverso proprietà personalizzate attentamente organizzate:
 
@@ -94,7 +94,7 @@ Il sistema di colori stabilisce una base visiva completa per i moduli attraverso
 }
 ```
 
-**Esempio pratico di personalizzazione**: per implementare un tema scuro per i moduli, sostituire le variabili dei colori di base:
+**Esempio pratico di personalizzazione**: per implementare un tema scuro per i moduli, sostituisci le variabili dei colori di base:
 
 ```css
 :root {
@@ -112,7 +112,7 @@ Questa singola modifica si propaga attraverso tutti i componenti del modulo poic
 
 +++ Tipografia e spaziatura variabili
 
-Le variabili di composizione tipografica e spaziatura forniscono un controllo completo sulla presentazione del testo e sulla spaziatura del layout:
+Le variabili di tipografia e spaziatura forniscono un controllo completo sulla presentazione del testo e sulla spaziatura del layout:
 
 ```css
 :root {
@@ -197,13 +197,13 @@ Le variabili di layout controllano le dimensioni del modulo, il comportamento de
 
 +++
 
-### Modelli di stile CSS e best practice
+### Pattern di applicazione dello stile CSS e best practice
 
-Il blocco Forms adattivo segue pattern CSS specifici che garantiscono uno stile manutenibile, performante e coerente per tutti i componenti.
+Il Blocco moduli adattivi segue modelli CSS specifici che garantiscono un’applicazione dello stile gestibile, performante e coerente per tutti i componenti.
 
-+++ Modelli di stile principali
++++ Pattern di applicazione dello stile principali
 
-**Contenitore modulo a livello di blocco**: esegui il targeting del contenitore del modulo principale per il layout generale e lo stile di sfondo:
+**Contenitore modulo a livello di blocco**: esegui il targeting del contenitore del modulo principale per il layout generale e l’applicazione dello stile dello sfondo:
 
 ```css
 .form {
@@ -216,7 +216,7 @@ Il blocco Forms adattivo segue pattern CSS specifici che garantiscono uno stile 
 }
 ```
 
-**Modelli wrapper componenti**: utilizzare classi wrapper coerenti per tipi di campi specifici di destinazione:
+**Modelli wrapper componenti**: esegui il targeting di tipi di campi specifici utilizzando classi wrapper coerenti:
 
 ```css
 /* Text input fields */
@@ -252,11 +252,11 @@ Il blocco Forms adattivo segue pattern CSS specifici che garantiscono uno stile 
 }
 ```
 
-+++
++++ 
 
-+++ Modelli di personalizzazione avanzati
++++ Pattern di personalizzazione avanzati
 
-**Targeting specifico per campo**: esegui il targeting di singoli campi per nome per requisiti di stile univoci:
+**Targeting specifico per campo**: esegui il targeting di singoli campi per nome per requisiti di applicazione dello stile univoci:
 
 ```css
 /* Style specific fields */
@@ -274,7 +274,7 @@ Il blocco Forms adattivo segue pattern CSS specifici che garantiscono uno stile 
 }
 ```
 
-**Stile basato sullo stato**: implementare gli stati di convalida e interazione:
+**Stile basato sullo stato**: implementa gli stati di convalida e interazione:
 
 ```css
 /* Validation states */
@@ -368,9 +368,9 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
 }
 ```
 
-- `.form .{Type}-wrapper`: esegue il targeting dell&#39;elemento wrapper del campo in base al tipo di campo. Ad esempio, `.form .text-wrapper` esegue il targeting di tutti i contenitori di campi di testo.
-- `.form .{Type}-wrapper input`: esegue il targeting degli elementi di input effettivi nel wrapper. Questo è il pattern consigliato per la formattazione degli input dei moduli.
-- `.form .field-{Name}`: esegue il targeting degli elementi in base al nome di campo specifico. Ad esempio, `.form .field-first-name` esegue il targeting del contenitore di campi &quot;First Name&quot;. Utilizza `.form .field-{Name} input` per eseguire il targeting specifico dell&#39;elemento di input.
+- `.form .{Type}-wrapper`: esegue il targeting dell’elemento wrapper del campo in base al tipo di campo. Ad esempio: `.form .text-wrapper` esegue il targeting di tutti i contenitori dei campi di testo.
+- `.form .{Type}-wrapper input`: esegue il targeting degli elementi di input effettivi all’interno del wrapper. Questo è il pattern consigliato per l’applicazione dello stile agli input dei moduli.
+- `.form .field-{Name}`: esegue il targeting degli elementi in base al nome di campo specifico. Ad esempio: `.form .field-first-name` esegue il targeting del contenitore di testo “Nome”. Utilizza `.form .field-{Name} input` per eseguire il targeting specifico dell’elemento di input.
 - **Evita**: `main .form form .{Type}-wrapper` - Questo crea una specificità CSS non necessaria ed è più difficile da mantenere.
 
 **Esempio di selettori CSS per componenti generali**
@@ -763,7 +763,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 ```
 
 - L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-- L&#39;elemento legenda (`<legend>`) funge da titolo del pannello con il testo &quot;Informazioni di accesso&quot; e l&#39;etichetta del campo della classe. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+- L’elemento legend (`<legend>`) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
 - All’interno del fieldset, più.{Type}-elementi wrapper (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
 - Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
@@ -1158,26 +1158,26 @@ main .form .field-otp input {
 }
 ```
 
-Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura del modulo di Edge Delivery Services segue le convenzioni di blocco di Forms adattivo, in cui i contenitori sono contrassegnati con classi specifiche dei campi come &quot;field-otp&quot; per i campi con il nome &quot;otp&quot;.
+Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura del modulo di Edge Delivery Services segue le convenzioni del blocco dei moduli adattivi, in cui i contenitori sono contrassegnati con classi specifiche per i campi come “field-otp” per i campi con il nome “otp”.
 
 
 ## Struttura e implementazione dei file CSS
 
 ### **Implementazione di riferimento**
 
-Il riferimento completo allo stile del modulo è disponibile nell’archivio AEM Forms Boilerplate:
+Il riferimento completo allo stile dei moduli è disponibile nell’archivio standard dei moduli AEM:
 
 ```
 https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
 ```
 
-Questo file funge da implementazione canonica del sistema di proprietà personalizzate CSS e fornisce le basi per tutti gli stili dei moduli. Include definizioni complete per tutte le variabili CSS, i pattern di stile dei componenti e le implementazioni di progettazione reattiva.
+Questo file funge da implementazione canonica del sistema delle proprietà CSS personalizzate e fornisce le basi per tutti gli stili dei moduli. Include definizioni complete per tutte le variabili CSS, modelli di stile dei componenti e implementazioni di progettazione reattiva.
 
 +++
 
-+++ Integrazione dei progetti
++++ Integrazione del progetto
 
-Nel progetto Edge Delivery Services, implementa lo stile del modulo tramite questo approccio strutturato:
+Nel progetto Edge Delivery Services, implementa lo stile dei moduli tramite questo approccio strutturato:
 
 ```
 /blocks/form/form.css          // Core form block styles (copied from boilerplate)
@@ -1189,7 +1189,7 @@ Nel progetto Edge Delivery Services, implementa lo stile del modulo tramite ques
 
 +++ Strategia di implementazione
 
-**Sovrascritture proprietà personalizzate CSS**: sovrascrivi le variabili modulo negli stili globali per implementare i temi specifici del brand:
+**Sostituzioni delle proprietà CSS personalizzate**: sostituisci le variabili dei moduli negli stili globali per implementare i temi specifici per il brand:
 
 ```css
 /* In /styles/styles.css */
@@ -1202,7 +1202,7 @@ Nel progetto Edge Delivery Services, implementa lo stile del modulo tramite ques
 ```
 
 **Personalizzazioni specifiche per i componenti**:
-Aggiungi uno stile specifico per il componente mantenendo il sistema di variabili CSS:
+aggiungi uno stile specifico per i componenti mantenendo il sistema di variabili CSS:
 
 ```css
 /* Enhanced component styling */
@@ -1217,7 +1217,7 @@ Aggiungi uno stile specifico per il componente mantenendo il sistema di variabil
 }
 ```
 
-**Integrazione di progettazione reattiva**: utilizza le proprietà personalizzate CSS all&#39;interno delle query multimediali per un comportamento reattivo coerente:
+**Integrazione della progettazione reattiva**: utilizza le proprietà CSS personalizzate all’interno delle query multimediali per un comportamento reattivo coerente:
 
 ```css
 @media (max-width: 768px) {
@@ -1231,15 +1231,15 @@ Aggiungi uno stile specifico per il componente mantenendo il sistema di variabil
 
 +++
 
-### Completa l’implementazione dello stile
+### Esempio completo di implementazione dello stile
 
-In questa sezione viene illustrato come creare un modulo moderno con marchio utilizzando le proprietà personalizzate CSS. L’implementazione è suddivisa in sottosezioni chiare per facilitarne la comprensione e la navigazione.
+In questa sezione viene illustrato come creare un modulo moderno e in linea con il brand utilizzando le proprietà CSS personalizzate. L’implementazione è suddivisa in sottosezioni chiare per facilitarne la comprensione e la navigazione.
 
 
 
-+++ &#x200B;1. Variabili del tema del marchio
++++ &#x200B;1. Variabili del tema del brand
 
-Definisci la palette di colori, la spaziatura e la tipografia del tuo marchio utilizzando le proprietà personalizzate CSS.
+Definisci la palette di colori, la spaziatura e la composizione tipografica del brand utilizzando le proprietà CSS personalizzate.
 
 ```css
 /* Custom brand theme */
@@ -1274,9 +1274,9 @@ Definisci la palette di colori, la spaziatura e la tipografia del tuo marchio ut
 
 +++
 
-+++ &#x200B;2. Stile contenitore modulo
++++ &#x200B;2. Stile del contenitore del modulo
 
-Applica uno sfondo moderno, un raggio del bordo e un&#39;ombreggiatura al contenitore del modulo per un layout visivamente accattivante.
+Applica uno sfondo moderno, un raggio di bordo e un’ombra al contenitore del modulo per un layout visivamente accattivante.
 
 
 ```css
@@ -1296,9 +1296,9 @@ Applica uno sfondo moderno, un raggio del bordo e un&#39;ombreggiatura al conten
 
 +++
 
-+++ &#x200B;3. Stile campo di input
++++ &#x200B;3. Stile del campo di input
 
-I campi di input per testo, e-mail e numeri di stile conferiscono un aspetto moderno e pulito.
+Applica uno stile ai campi di input di testo, e-mail e numeri per un aspetto moderno e pulito.
 
 
 ```css
@@ -1321,7 +1321,7 @@ I campi di input per testo, e-mail e numeri di stile conferiscono un aspetto mod
 
 +++ &#x200B;4. Personalizzazione aggiuntiva
 
-Puoi estendere ulteriormente lo stile del modulo eseguendo il targeting di campi, stati o componenti specifici, in base alle esigenze. Per i motivi avanzati, fare riferimento alle sezioni precedenti.
+Puoi estendere ulteriormente lo stile del modulo eseguendo il targeting di campi, stati o componenti specifici, in base alle esigenze. Per i modelli avanzati, fai riferimento alle sezioni precedenti.
 
 ```css
 /* Custom brand theme */
@@ -1404,11 +1404,11 @@ Puoi estendere ulteriormente lo stile del modulo eseguendo il targeting di campi
 }
 ```
 
-Questo approccio completo dimostra come le proprietà personalizzate CSS consentano temi sofisticati mantenendo le funzioni di integrità strutturale e accessibilità del sistema di blocchi Forms adattivi.
+Questo approccio completo dimostra come le proprietà CSS personalizzate consentano temi sofisticati mantenendo le funzioni di integrità strutturale e accessibilità del sistema del blocco dei moduli adattivi.
 
 +++
 
-## Risoluzione dei problemi CSS
+## Risoluzione di problemi CSS
 
 +++ Problemi di specificità CSS
 
@@ -1431,7 +1431,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Problemi di sostituzione della variabile CSS
++++ Problemi di sostituzione di variabili CSS
 
 ```css
 /- ❌ Problem: Variables not working */
@@ -1447,7 +1447,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Stile stato modulo
++++ Stile degli stati del modulo
 
 ```css
 /- Validation states */
@@ -1474,7 +1474,7 @@ main .form .text-wrapper input {
 
 +++
 
-+++ Errori selettori comuni
++++ Errori comuni del selettore
 
 ```css
 /- ❌ Incorrect: Assumes direct nesting */
@@ -1505,7 +1505,7 @@ main .form form .text-wrapper input {
 ### **Best practice specifiche per i componenti**
 
 
-+++ Stile pulsanti
++++ Stile dei pulsanti
 
 ```css
 /- Primary buttons */
@@ -1527,7 +1527,7 @@ main .form form .text-wrapper input {
 
 +++
 
-+++ Progettazione modulo reattivo
++++ Progettazione reattiva dei moduli
 
 ```css
 /- Mobile-first approach */
@@ -1549,12 +1549,12 @@ main .form form .text-wrapper input {
 
 ## Riepilogo delle best practice
 
-1. **Usa proprietà personalizzate CSS**: sfrutta le variabili per temi coerenti
-2. **Segui architettura basata su blocchi**: utilizza `.form` come selettore di blocchi principale
-3. **Evita di specificare eccessivamente**: non utilizzare `main .form form` se non necessario
-4. **Wrapper di destinazione**: utilizza `.{Type}-wrapper` modelli per il targeting dei componenti
-5. **Mantieni coerenza**: utilizza gli stessi modelli di selettore in tutto il progetto
-6. **Test tra dispositivi**: garantire il corretto funzionamento dei moduli su dispositivi mobili, tablet e desktop
-7. **Convalida accessibilità**: assicurati che gli stili non interferiscano con le utilità per la lettura dello schermo o la navigazione da tastiera
+1. **Utilizzare proprietà CSS personalizzate**: sfrutta le variabili per temi coerenti
+2. **Seguire l’architettura basata su blocchi**: utilizza `.form` come selettore del blocco principale
+3. **Evitare l’eccessiva specificità**: non utilizzare `main .form form` se non necessario
+4. **Wrapper di destinazione**: utilizza modelli `.{Type}-wrapper` per il targeting dei componenti
+5. **Mantenere la coerenza**: utilizza gli stessi modelli di selettore in tutto il progetto
+6. **Test su più dispositivi**: garantisci il corretto funzionamento dei moduli su dispositivi mobili, tablet e desktop
+7. **Convalidare l’accessibilità**: assicurati che gli stili non interferiscano con le utilità di lettura dello schermo o la navigazione tramite tastiera
 
 

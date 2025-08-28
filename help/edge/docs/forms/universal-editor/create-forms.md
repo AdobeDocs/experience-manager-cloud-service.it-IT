@@ -1,5 +1,5 @@
 ---
-title: Creare e pubblicare Forms adattivo con Edge Delivery Services
+title: Creare e pubblicare moduli adattivi con Edge Delivery Services
 description: Istruzioni dettagliate per la creazione, l’authoring e la pubblicazione di Adaptive Forms utilizzando i modelli di Edge Delivery Services in AEM, con particolare attenzione all’accuratezza e alla chiarezza tecnica.
 keywords: moduli adattivi, servizi di consegna edge, editor universale, creazione di moduli, AEM forms, pubblicazione di moduli
 feature: Edge Delivery Services
@@ -9,16 +9,16 @@ exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1005'
-ht-degree: 1%
+ht-degree: 87%
 
 ---
 
 
-# Creare e pubblicare Forms adattivo con Edge Delivery Services
+# Creare e pubblicare moduli adattivi con Edge Delivery Services
 
 Questo documento fornisce istruzioni dettagliate per la creazione, la configurazione e la pubblicazione di Adaptive Forms utilizzando i modelli di Edge Delivery Services in AEM. Copre l’intero flusso di lavoro, dalla creazione dei moduli all’implementazione in produzione.
 
-Al termine di questa guida, imparerai a:
+Alla fine di questo articolo imparerai come:
 
 - Creare moduli utilizzando i modelli di Edge Delivery Services
 - Creare moduli con l’Editor universale
@@ -32,87 +32,87 @@ Al termine di questa guida, imparerai a:
 Prima di procedere, assicurati che siano soddisfatti i seguenti prerequisiti:
 
 
-- **AEM Forms as a Cloud Service**: istanza di authoring attiva con una licenza Forms.
-- **Account GitHub**: account personale o organizzativo per la gestione dell&#39;archivio.
-- **Configurazione archivio**: scegliere una delle opzioni seguenti:
-   - **Nuovo progetto**: [Crea un nuovo progetto AEM con blocco Forms adattivo](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). L’archivio è preconfigurato per Edge Delivery Services.
-   - **Progetto esistente**: [Aggiungi blocco Forms adattivo a un repository esistente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) e aggiorna la configurazione.
+- **AEM Forms as a Cloud Service**: istanza di authoring attiva con una licenza per Moduli.
+- **Account GitHub**: account personale o organizzativo per la gestione dell’archivio.
+- **Configurazione archivio**: scegli una delle opzioni seguenti:
+   - **Nuovo progetto**: [crea un nuovo progetto AEM con il Blocco moduli adattivi](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block). L’archivio è preconfigurato per Edge Delivery Services.
+   - **Progetto esistente**: [aggiungi il Blocco moduli adattivi a un archivio esistente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) e aggiorna la configurazione.
 
-- **Connessione AEM-GitHub**: [Stabilire una connessione](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) tra l&#39;istanza AEM e l&#39;archivio GitHub.
-- **Edge Delivery Services**: verificare che l&#39;archivio sia configurato per la distribuzione automatica.
-- **Autorizzazioni**: verificare di disporre dei diritti di accesso necessari per la creazione e la pubblicazione dei moduli.
+- **Connessione AEM-GitHub**: [stabilisci una connessione](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) tra l’istanza AEM e l’archivio GitHub.
+- **Edge Delivery Services**: verifica che l’archivio sia configurato per la distribuzione automatica.
+- **Autorizzazioni**: verifica di disporre dei diritti di accesso necessari per la creazione e la pubblicazione dei moduli.
 
-- Conferma che l’archivio GitHub contenga il blocco Forms adattivo.
+- Conferma che l’archivio GitHub contiene il blocco dei moduli adattivi.
 
 
 
 ## Flusso di lavoro di creazione e pubblicazione di moduli
 
-Il processo si articola in tre fasi principali:
+Il processo è composto da tre fasi principali:
 
 - **Fase 1:** [Creazione modulo](#step-1-form-creation)
-- **Fase 2:** [Authoring e progettazione dei moduli](#step-2-form-authoring-and-design)
-- **Fase 3:** [Configurazione e pubblicazione](#step-3-configuration-and-publishing)
+- **Fase 2:** [authoring e progettazione dei moduli](#step-2-form-authoring-and-design)
+- **Fase 3:** [configurazione e pubblicazione](#step-3-configuration-and-publishing)
 
 Ogni fase include passaggi di convalida per confermare la corretta configurazione.
 
 
 ### Passaggio 1: creazione di moduli
 
-1. **Creazione modulo di accesso**
-   - Accedi all’istanza Autore AEM Forms as a Cloud Service.
-   - Passa a **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
-   - Fai clic su **Crea** > **Forms adattivo**.
+1. **Creazione del modulo di accesso**
+   - Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
+   - Passa ad **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
+   - Seleziona **Crea** > **Moduli adattivi**.
 
 1. **Seleziona modello**
-   - Nella scheda **Source**, seleziona un **modello basato su Edge Delivery Services**.
+   - Nella scheda **Origine**, seleziona un **modello basato su Edge Delivery Services**.
    - Il pulsante **Crea** viene attivato.
 
      ![Creare moduli EDS](/help/edge/assets/create-eds-forms.png)
 
-1. **Configura opzioni (facoltativo)**
-   - **Scheda Data Source**: se necessario, seleziona l&#39;integrazione dei dati.
-   - **Scheda Invio**: scegli un&#39;azione di invio (configurabile in seguito).
-   - **Scheda Consegna**: imposta la pianificazione della pubblicazione/annullamento della pubblicazione.
+1. **Configurare opzioni (facoltativo)**
+   - **Scheda Origine dati**: se necessario, seleziona l’integrazione dei dati.
+   - **Scheda invio**: scegli un’azione di invio (configurabile in seguito).
+   - **Scheda consegna**: imposta la pianificazione della pubblicazione/annullamento della pubblicazione.
 
-1. **Completare la configurazione del modulo**
+1. **Completa la configurazione del modulo**
    - Fai clic su **Crea** per aprire la procedura guidata per la creazione di moduli.
-   - Immetti quanto segue:
-      - **Nome**: identificatore interno (senza spazi, usare i trattini).
+   - Immetti le seguenti informazioni:
+      - **Nome**: identificatore interno (senza spazi, usa i trattini).
       - **Titolo**: nome visualizzato per il modulo.
-      - **URL GitHub**: URL archivio (ad esempio, `https://github.com/your-org/your-repo`).
+      - **URL di GitHub**: URL dell’archivio (ad esempio, `https://github.com/your-org/your-repo`).
 
    ![Procedura guidata per la creazione di un modulo](/help/edge/assets/create-form-wizard.png)
 
 1. **Convalida**
-   - Dopo aver fatto clic su **Crea**, verifica:
-      - Il modulo viene aperto in Universal Editor.
-      - L’URL GitHub è collegato correttamente.
-      - È disponibile la palette dei componenti.
-      - L’area di lavoro del modulo è visibile.
+   - Dopo aver fatto clic su **Crea**, verifica che:
+      - Il modulo venga aperto nell’editor universale.
+      - L’URL di GitHub sia collegato correttamente.
+      - La palette dei componenti sia disponibile.
+      - L’area di lavoro del modulo sia visibile.
 
-   ![Interfaccia editor universale](/help/edge/assets/author-form.png)
+   ![Interfaccia dell’editor universale](/help/edge/assets/author-form.png)
 
-**Risultato:** il modulo è pronto per l&#39;authoring nell&#39;editor universale.
+**Risultato:** il modulo è pronto per l’authoring nell’editor universale.
 
 ### Passaggio 2: authoring e progettazione dei moduli
 
 
-1. **Accedi alla libreria dei componenti**
+1. **Accedere alla libreria dei componenti**
    - Apri il browser Contenuto nell’editor universale.
-   - Passa al componente **Modulo adattivo** nella struttura del contenuto.
+   - Passa al componente **Modulo adattivo** nella struttura contenuto.
 
-   ![Navigazione struttura contenuto](/help/edge/assets/content-tree.png)
+   ![Navigazione della struttura contenuto](/help/edge/assets/content-tree.png)
 
-1. **Aggiungi campi modulo**
-   - Fai clic sull&#39;icona **Aggiungi** per aprire la libreria dei componenti.
-   - Selezionare i componenti dall&#39;elenco **Componenti modulo adattivo**.
+1. **Aggiungere i campi modulo**
+   - Fai clic sull’icona **Aggiungi** per aprire la libreria dei componenti.
+   - Seleziona i componenti dall’elenco **Componenti del modulo adattivo**.
    - Trascina i componenti nell’area di lavoro del modulo.
 
-   ![Aggiungi componenti](/help/edge/assets/add-component.png)
+   ![Aggiungere componenti](/help/edge/assets/add-component.png)
 
 1. **Progettare il modulo**
-   - Configura le proprietà del campo nel pannello delle proprietà.
+   - Configurare le proprietà del campo nel pannello delle proprietà.
    - Impostare regole e comportamenti di convalida.
    - Regola lo stile e il layout in base alle esigenze.
 
@@ -127,8 +127,8 @@ Ogni fase include passaggi di convalida per confermare la corretta configurazion
 
 #### Passaggi successivi
 
-- [Configurare le azioni di invio](/help/edge/docs/forms/universal-editor/submit-action.md) per la gestione dei dati.
-- [Guida dell&#39;editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) per le funzionalità avanzate.
+- [Configura le azioni di invio](/help/edge/docs/forms/universal-editor/submit-action.md) per la gestione dei dati.
+- [Guida all’editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) per le funzioni avanzate.
 
 ### Passaggio 3: configurazione e pubblicazione
 
@@ -142,27 +142,27 @@ Configura Edge Delivery Services e pubblica il modulo.
 **Verifica:**
 
 - Conferma che la configurazione venga visualizzata nelle impostazioni del modulo.
-- Verifica che l’URL GitHub sia collegato correttamente.
+- Assicurati che l’URL GitHub sia collegato correttamente.
 
 ![Configurazione automatica EDS](/help/edge/assets/aem-instance-eds-configuration.png)
 
 #### Pubblicazione del modulo
 
-1. In Universal Editor, fare clic sul pulsante **Pubblica** (angolo superiore destro).
-2. Conferma la pubblicazione nella finestra di dialogo.
-3. Prendi nota degli URL generati per le versioni in staging e live.
+1. Nell’editor universale, fai clic sul pulsante **Pubblica** (nell’angolo in alto a destra).
+2. Conferma la pubblicazione riuscita nella finestra di dialogo.
+3. Prendi nota degli URL generati per le versioni in prova e live.
 
-   ![Pubblicazione editor universale](/help/edge/assets/publish-form.png)
+   ![Pubblicare con l’editor universale](/help/edge/assets/publish-form.png)
 
 - [Guida alla pubblicazione](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
-## URL modulo
+## URL del modulo
 
-I moduli pubblicati sono accessibili tramite URL di Edge Delivery Services.
+I moduli pubblicati sono accessibili tramite gli URL di Edge Delivery Services.
 
-### Struttura URL
+### Struttura dell’URL
 
-- **In prova (anteprima/prova):**
+- **In staging (anteprima/test):**
 
   ```
   https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>
@@ -176,32 +176,32 @@ I moduli pubblicati sono accessibili tramite URL di Edge Delivery Services.
 
 #### Parametri URL
 
-- `<branch>`: nome ramo GitHub (ad esempio `main`, `develop`)
-- `<repo>`: nome archivio GitHub (esempio: `my-forms-project`)
+- `<branch>`: nome ramo GitHub (ad esempio, `main`, `develop`)
+- `<repo>`: nome archivio GitHub (ad esempio, `my-forms-project`)
 - `<owner>`: organizzazione GitHub o nome utente (ad esempio, `company-name`)
 - `<form_name>`: identificatore del modulo definito in AEM (ad esempio, `contact-us`)
 
 #### Esempio
 
-Esempio per il modulo `contact-us` nell&#39;archivio `forms-project` nell&#39;organizzazione `acme-corp`:
+Esempio per il modulo `contact-us` nell’archivio `forms-project` nell’organizzazione `acme-corp`:
 
-- **In prova:** `https://main--forms-project--acme-corp.aem.page/content/forms/af/contact-us`
+- **In staging:** `https://main--forms-project--acme-corp.aem.page/content/forms/af/contact-us`
 - **Live:** `https://main--forms-project--acme-corp.aem.live/content/forms/af/contact-us`
 
 #### Differenze di ambiente
 
-- **In attesa (.page):** Ultime modifiche per il test.
+- **Staging (.page):** ultime modifiche per il test.
 - **Live (.live):** contenuto pubblicato per la produzione.
 
 ![Struttura URL](/help/edge/docs/forms/universal-editor/assets/url-structure.svg)
-*raggruppamento struttura URL modulo Edge Delivery Services*
+*raggruppamento della struttura URL per modulo Edge Delivery Services*
 
 #### Esempi visivi
 
-**Modello Edge Delivery Services:**
+**Modello di Edge Delivery Services:**
 
-- In prova: ![Versione in prova modulo di registrazione](/help/forms/assets/registration-form-staged-version.png)
-- Live: ![Versione live del modulo di registrazione](/help/forms/assets/registration-form-live-version.png)
+- Staging: ![versione di staging modulo di registrazione](/help/forms/assets/registration-form-staged-version.png)
+- Live: ![versione live del modulo di registrazione](/help/forms/assets/registration-form-live-version.png)
 
 ## Risoluzione di problemi
 
@@ -209,13 +209,13 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 +++Modulo non caricato
 
-**Problema:** l&#39;URL del modulo restituisce una pagina vuota o 404.
+**Problema:** l’URL del modulo restituisce una pagina vuota o l’errore 404.
 
 **Risoluzione:**
 
-- Rimuovi l&#39;estensione `.html` dagli URL.
+- Rimuovi l’estensione `.html` dagli URL.
 - Verifica che il modulo sia pubblicato.
-- Controlla l’archivio GitHub per il blocco Forms adattivo.
+- Controlla l’archivio GitHub per il blocco dei moduli adattivi.
 - Assicurati che il nome del modulo corrisponda all’URL (distinzione maiuscole/minuscole).
 
 +++
@@ -226,10 +226,10 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 **Risoluzione:**
 
-- Verificare che l&#39;URL GitHub sia nel formato `https://github.com/owner/repository`.
+- Assicurati che l’URL GitHub sia nel formato `https://github.com/owner/repository`.
 - Utilizza il nome del ramo corretto nella configurazione.
-- Verificare l&#39;accesso all&#39;archivio (pubblico o autenticato).
-- Controllare `fstab.yaml` per i dettagli GitHub corretti.
+- Verifica l’accesso all’archivio (pubblico o autenticato).
+- Controlla `fstab.yaml` per i dettagli GitHub corretti.
 
 +++
 
@@ -239,7 +239,7 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 **Risoluzione:**
 
-- Attendere 2-3 minuti per l’aggiornamento della cache CDN.
+- Attendi 2-3 minuti per l’aggiornamento della cache CDN.
 - Conferma il completamento del flusso di lavoro di pubblicazione.
 - Esegui prima il test nell’ambiente di staging (.page).
 - Assicurati che l’archivio GitHub sia aggiornato.
@@ -248,13 +248,13 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 +++Problemi relativi all’editor universale
 
-**Problema:** Impossibile modificare il modulo o i componenti senza caricarli.
+**Problema:** impossibile modificare il modulo o i componenti senza caricarli.
 
 **Risoluzione:**
 
 - Utilizza un browser supportato (Chrome, Firefox, Safari).
 - Cancella la cache del browser e i cookie.
-- Verificare la connettività di rete.
+- Verifica la connettività di rete.
 - Conferma le autorizzazioni di creazione.
 
 +++
@@ -266,7 +266,7 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 **Risoluzione:**
 
 - Configura l’azione di invio nelle proprietà del modulo.
-- Test manuale degli endpoint per l’invio.
+- Testa gli endpoint per l’invio in modo manuale.
 - Se incorpori moduli, seleziona le impostazioni CORS.
 - Verifica che i campi obbligatori siano configurati.
 
@@ -274,13 +274,13 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 +++Problemi relativi alle prestazioni
 
-**Problema:** caricamento del modulo lento o prestazioni insoddisfacenti.
+**Problema:** caricamento del modulo lento o prestazioni scarse.
 
 **Risoluzione:**
 
-- Ottimizzare le immagini.
-- Rimuovere i componenti non necessari.
-- Utilizzo di Edge Delivery Services CDN.
+- Ottimizza le immagini.
+- Rimuovi i componenti non necessari.
+- Sfrutta la CDN Edge Delivery Services.
 - Riduci a icona JavaScript/CSS personalizzato.
 
 +++
@@ -292,7 +292,7 @@ Se i problemi persistono:
 1. Verifica lo stato del servizio Adobe Experience Cloud.
 2. Rivedi la [documentazione di Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it).
 3. Visita la [community Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
-4. Contatta l’Assistenza clienti di Adobe.
+4. Contatta l’Assistenza clienti Adobe.
 
 +++
 
@@ -300,8 +300,8 @@ Se i problemi persistono:
 
 Dopo aver completato la creazione e la pubblicazione del modulo, considera quanto segue:
 
-- [Configurare le azioni di invio](/help/edge/docs/forms/universal-editor/submit-action.md): configurare la gestione dei dati e le integrazioni.
-- [Modelli dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): connettere i moduli a origini dati back-end.
-- [Best practice per Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it): massimizzare le prestazioni.
-- [Analisi modulo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): tieni traccia delle prestazioni del modulo e del comportamento dell&#39;utente.
+- [Configura le azioni di invio](/help/edge/docs/forms/universal-editor/submit-action.md): configura la gestione dei dati e le integrazioni.
+- [Modelli dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md): connetti i moduli a origini dati back-end.
+- [Best practice per Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it): massimizza le prestazioni.
+- [Analisi modulo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html?lang=it): tieni traccia delle prestazioni del modulo e del comportamento degli utenti.
 

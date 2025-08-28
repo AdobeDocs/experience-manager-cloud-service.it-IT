@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
    - {Type}: identifica il componente per tipo di campo. Ad esempio, testo (text-wrapper), numero (number-wrapper), data (date-wrapper).
    - {Name}: identifica il componente per nome. Il nome del campo può contenere solo caratteri alfanumerici; i trattini consecutivi multipli nel nome vengono sostituiti da un singolo trattino `(-)` e i trattini iniziali e finali nel nome di un campo vengono rimossi. Ad esempio, nome (field-first-name field-wrapper).
    - {FieldId}: è un identificatore univoco per il campo, generato automaticamente
-   - {Required}: valore booleano che indica se il campo è obbligatorio
+   - {Required}: è un valore booleano che indica se il campo è obbligatorio
 - Etichetta: l’elemento `label` fornisce un testo descrittivo per il campo e lo associa all’elemento di input utilizzando l’attributo `for`.
 - Input: l’elemento `input` definisce il tipo di dati da immettere. Ad esempio, testo, numero, e-mail.
 - Descrizione (facoltativa): il `div` con classe `field-description` fornisce informazioni o istruzioni aggiuntive per l’utente.
@@ -139,7 +139,7 @@ Tutti i campi modulo, ad eccezione di elenchi a discesa, gruppi di pulsanti di s
 ```
 
 - `.{Type}-wrapper`: esegue il targeting dell’elemento esterno `div` in base al tipo di campo. Ad esempio: `.text-wrapper` esegue il targeting di tutti i campi di testo
-- `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo “Nome”. Questo selettore può essere utilizzato per eseguire il targeting di elementi con la classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per la formattazione dei campi di input perché avrebbe come target non solo l’input stesso, ma anche gli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
+- `.field-{Name}`: seleziona ulteriormente l’elemento in base al nome del campo specifico. Ad esempio: `.field-first-name` esegue il targeting del campo di testo “Nome”. Questo selettore può essere utilizzato per eseguire il targeting di elementi con la classe field-{Name}, ma è importante prestare attenzione. In questo caso specifico, non sarebbe utile per l’applicazione dello stile ai campi di input perché eseguirebbe il targeting non solo dell’input stesso, ma anche degli elementi etichetta e descrizione. Si consiglia di utilizzare selettori più specifici, come quelli disponibili per il targeting dei campi di input di testo (input .text-wrapper).
 
 **Esempio di selettori CSS per componenti generali**
 
@@ -240,7 +240,7 @@ Per i menu a discesa, l’elemento `select` viene utilizzato al posto di un elem
 
 Analogamente ai componenti a discesa, i gruppi pulsanti di scelta dispongono di una propria struttura HTML e CSS:
 
-+++ Struttura HTML del gruppo pulsanti di scelta
++++ Struttura HTML del gruppo pulsanti di scelta 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 }
 ```
 
-+++
++++ 
 
 ### Gruppi di caselle di controllo
 
-+++ Struttura HTML del gruppo di caselle di controllo
++++ Struttura HTML del gruppo di caselle di controllo 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
      }
   ```
 
-+++
++++ 
 
 ### Componenti pannello/contenitore
 
@@ -476,11 +476,11 @@ Questo selettore esegue il targeting di qualsiasi set di campi con la classe rad
 ```
 
 - L’elemento fieldset funge da contenitore del pannello con la classe panel-wrapper e classi aggiuntive per lo stile in base al nome del pannello (field-login).
-- L&#39;elemento legenda (`<legend>`) funge da titolo del pannello con il testo &quot;Informazioni di accesso&quot; e l&#39;etichetta del campo della classe. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
+- L’elemento legend (`<legend>`) funge da titolo del pannello con il testo “Informazioni di accesso” e la classe field-label. L’attributo data-visible=&quot;false&quot; può essere utilizzato con JavaScript per controllare la visibilità del titolo.
 - All’interno del fieldset, più{Type}-elementi wrapper (.text-wrapper e .password-wrapper in questo caso) rappresentano singoli campi modulo all’interno del pannello.
 - Ogni wrapper contiene un’etichetta, un campo di input e una descrizione, simili agli esempi precedenti.
 
-+++
++++ 
 
 +++ Esempio di selettori CSS per i componenti pannello/contenitore
 
@@ -608,7 +608,7 @@ Ogni pannello ha la stessa struttura dell’esempio di pannello singolo, con att
 
 - ID e nomi univoci: ogni elemento all’interno del pannello ha un ID univoco (ad esempio, nome-1, e-mail-1) e un attributo del nome basato sull’indice del pannello (ad esempio, nome=&quot;contacts[0].name&quot;). Questo consente una corretta raccolta dei dati quando vengono inviati più pannelli.
 
-+++
++++ 
 
 +++ Selettori CSS per un pannello ripetibile
 
@@ -698,7 +698,7 @@ questo selettore applica uno stile a tutti i wrapper del campo all’interno di 
 - Gli attributi ID e nome dell’elemento di input corrispondono al nome dell’allegato (claim_form).
 - La sezione dell’elenco dei file è inizialmente vuota. Viene compilato dinamicamente con JavaScript quando i file vengono caricati.
 
-+++
++++ 
 
 +++ Selettori CSS per il componente File allegato
 
@@ -816,7 +816,7 @@ Puoi utilizzare i selettori CSS per eseguire il targeting di tipi di campo speci
 - Ogni campo ha un’etichetta corrispondente, un elemento di input e potenziali elementi aggiuntivi come segnaposto e descrizioni.
 
 
-+++
++++ 
 
 
 +++ Esempio di selettori CSS
@@ -864,7 +864,7 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 </div>
 ```
 
-+++
++++ 
 
 +++ Esempio di selettore CSS
 
@@ -878,5 +878,5 @@ Per applicare stili univoci, puoi anche eseguire il targeting di singoli campi p
 
 Questo CSS esegue il targeting di tutti gli elementi di input che si trovano all’interno di un elemento che ha la classe `field-otp`. La struttura HTML del modulo segue le convenzioni del Blocco moduli adattivi. Ciò implica che esiste un contenitore contrassegnato con la classe “field-otp” che contiene il campo con il nome “otp”.
 
-+++
++++ 
 
