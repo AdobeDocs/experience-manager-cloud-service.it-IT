@@ -4,7 +4,7 @@ description: Scopri come monitorare i problemi e migliorare le prestazioni.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 22%
@@ -17,7 +17,7 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="Risoluzione dei problemi relativi ad AEM"
 >abstract="Esamina le best practice per lo sviluppo e la gestione continua dei registri. Scopri strumenti come Developer Console e CRXDE Lite per aiutarti nella risoluzione dei problemi relativi ad AEM."
->additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="Accesso e gestione dei registri"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accesso e gestione dei registri"
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Strumenti di sviluppo in AEM as a Cloud Service"
 
 Questo percorso è l’ultima parte, per consentirti di imparare a monitorare i problemi e migliorare le prestazioni al termine della migrazione. Assicurati che i file temporanei vengano eliminati, rivedi le best practice per lo sviluppo continuo e gestisci i registri.

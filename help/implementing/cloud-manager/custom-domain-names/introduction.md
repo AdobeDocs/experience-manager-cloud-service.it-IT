@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
+source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 37%
@@ -19,8 +19,8 @@ ht-degree: 37%
 >id="aemcloud_golive_domains"
 >title="Gestione dei nomi di dominio personalizzati"
 >abstract="L’interfaccia utente di Cloud Manager consente di aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="Aggiunta di un nome di dominio personalizzato"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="Visualizzazione e aggiornamento del nome di dominio personalizzato"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Aggiunta di un nome di dominio personalizzato"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="Visualizzazione e aggiornamento del nome di dominio personalizzato"
 
 Adobe Experience Manager as a Cloud Service viene fornito con un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Utilizzando l’interfaccia utente di Cloud Manager, puoi aggiungere un dominio personalizzato per identificare il sito con un nome univoco e personalizzato in modo autonomo. Il nome di dominio predefinito `*.adobeaemcloud.com` rimane, anche dopo aver associato i nomi di dominio personalizzati al sito Web.
 
