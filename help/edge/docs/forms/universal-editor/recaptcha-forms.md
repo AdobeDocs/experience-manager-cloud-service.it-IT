@@ -1,26 +1,26 @@
 ---
-title: Aggiungere Google reCAPTCHA a Forms in Universal Editor
-description: Guida all’implementazione della protezione Google reCAPTCHA nei Edge Delivery Services Form per prevenire spam e attacchi automatizzati
+title: Aggiungere Google reCAPTCHA ai moduli nell’editor universale
+description: Guida all’implementazione della protezione Google reCAPTCHA nei moduli Edge Delivery Services per prevenire spam e attacchi automatizzati
 feature: Edge Delivery Services
 keywords: reCAPTCHA nei moduli, Utilizzo di reCAPTCHA nell’editor universale, Aggiunta di reCAPTCHA nei moduli, sicurezza dei moduli, protezione da spam
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Aggiungere Google reCAPTCHA a Forms in Universal Editor
+# Aggiungere Google reCAPTCHA ai moduli nell’editor universale
 
-Google reCAPTCHA aiuta a proteggere i moduli distinguendo tra utenti umani e bot automatizzati. Questa guida spiega come implementare sia la versione Enterprise che la versione Standard di reCAPTCHA in Universal Editor.
+Google reCAPTCHA aiuta a proteggere i moduli distinguendo tra utenti umani e bot automatizzati. Questa guida spiega come implementare sia la versione Enterprise che la versione Standard di reCAPTCHA nell’editor universale.
 
 **Obiettivi:**
 
-- Seleziona la soluzione reCAPTCHA appropriata
+- Selezionare la soluzione reCAPTCHA appropriata
 - Configurare reCAPTCHA Enterprise o Standard
 - Aggiungere reCAPTCHA ai moduli
 - Convalidare e testare l’implementazione
@@ -28,7 +28,7 @@ Google reCAPTCHA aiuta a proteggere i moduli distinguendo tra utenti umani e bot
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di disporre dei seguenti elementi:
+Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
 
 ### Requisiti di accesso
 
@@ -45,55 +45,55 @@ Prima di iniziare, assicurati di disporre dei seguenti elementi:
 
 ### Requisiti di conoscenza
 
-- Nozioni di base su AEM Forms e Universal Editor
+- Informazioni di base su AEM Forms e l’editor universale
 - Familiarità con le configurazioni del servizio cloud
-- Informazioni sui concetti di protezione dei moduli
+- Informazioni sui concetti di sicurezza dei moduli
 
-## Perché utilizzare reCAPTCHA nel Forms?
+## Perché utilizzare reCAPTCHA nei moduli?
 
 | ![Sicurezza](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Protezione da bot](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![Esperienza utente](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Sicurezza avanzata** | **Prevenzione di bot e spam** | **Esperienza utente perfetta** |
-| Proteggere i moduli da attività e attacchi fraudolenti | Impedisci l&#39;invio automatico di moduli da parte di bot | Il reCAPTCHA invisibile non danneggia gli utenti legittimi |
+| Proteggere i moduli da attività fraudolente e attacchi | Impedire ai bot automatizzati l’invio dei moduli | reCAPTCHA invisibile non disturba gli utenti legittimi |
 
-**Concetto chiave:** reCAPTCHA utilizza l&#39;apprendimento automatico per analizzare il comportamento dell&#39;utente e assegna un punteggio (da 0,0 a 1,0) che indica la probabilità di interazione umana. Punteggi più alti indicano gli utenti umani; punteggi più bassi suggeriscono i bot.
+**Concetto chiave:** reCAPTCHA utilizza il machine learning per analizzare il comportamento dell’utente e assegna un punteggio (da 0,0 a 1,0) che indica la probabilità di interazione umana. Punteggi più alti indicano che si tratta di utenti umani; punteggi più bassi suggeriscono la presenza di bot.
 
-**Esempio:** Un modulo di calcolo fiscale che gestisce dati sensibili richiede la protezione da attacchi automatici. reCAPTCHA verifica che le richieste provengano da utenti reali, non da bot.
+**Esempio:** un modulo per il calcolo fiscale che gestisce dati sensibili richiede la protezione da attacchi automatici. reCAPTCHA verifica che gli invii provengano da utenti reali, non da bot.
 
-## Scegli la tua soluzione reCAPTCHA
+## Scelta della soluzione reCAPTCHA
 
-Edge Delivery Services Forms supporta due opzioni Google reCAPTCHA. Utilizza i seguenti criteri per selezionare la soluzione giusta:
+I moduli Edge Delivery Services supportano due opzioni Google reCAPTCHA. Utilizza i seguenti criteri per selezionare la soluzione giusta:
 
 ### Guida rapida alle decisioni
 
-**Utilizzare reCAPTCHA Enterprise se si dispone di:**
+**Utilizza reCAPTCHA Enterprise se disponi di:**
 
 - Moduli a traffico elevato (>10.000 richieste/mese)
-- Requisiti di conformità rigidi (RGPD, SOX, HIPAA)
+- Requisiti rigorosi di conformità (GDPR, SOX, HIPAA)
 - Necessità di analisi avanzate e reporting
-- Budget per le funzionalità di sicurezza Premium
-- Distribuzioni complesse su più domini
+- Budget per le funzioni di sicurezza Premium
+- Implementazioni complesse su più domini
 
-**Utilizzare reCAPTCHA Standard se si dispone di:**
+**Quando utilizzare reCAPTCHA Standard:**
 
 - Traffico da basso a moderato (&lt;10.000 richieste/mese)
 - Requisiti di sicurezza di base
 - Budget limitato (livello gratuito)
-- Configurazione semplice a dominio singolo
-- Novità di reCAPTCHA
+- Configurazione semplice per dominio singolo
+- Nessuna esperienza pregressa nell’uso di reCAPTCHA
 
 ### Confronto dettagliato
 
-| **Funzionalità** | **reCAPTCHA Enterprise** | **reCAPTCHA Standard** |
+| **Funzione** | **reCAPTCHA Enterprise** | **reCAPTCHA Standard** |
 |-------------|--------------------------|------------------------|
-| **Costo** | Pagato (prezzo basato sull&#39;utilizzo) | Gratuito |
-| **Limite richieste** | Senza limiti | 1 milione di richieste al mese |
-| **Analisi avanzata** | Reporting dettagliato | Solo statistiche di base |
+| **Costo** | A pagamento (prezzo in base all’utilizzo) | Gratuito |
+| **Limite di richieste** | Illimitate | 1 milione di richieste al mese |
+| **Analisi avanzate** | Reporting dettagliato | Solo statistiche di base |
 | **Regole personalizzate** | Regole specifiche per l’account | Solo regole globali |
 | **Supporto di più domini** | Gestione avanzata | Supporto di base |
-| **SLA** | Garanzia di uptime al 99,9% | Massima efficienza |
-| **Supporto** | Supporto Enterprise | Sostegno comunitario |
-| **Conformità** | Di livello Enterprise | Conformità standard |
+| **SLA** | Garanzia di tempo di operatività al 99,9% | Tentativo migliore |
+| **Assistenza** | Assistenza Enterprise | Assistenza community |
+| **Conformità** | Livello Enterprise | Conformità standard |
 
 **Entrambe le soluzioni forniscono:**
 
@@ -110,35 +110,35 @@ Edge Delivery Services Forms supporta due opzioni Google reCAPTCHA. Utilizza i s
 **Requisiti:**
 
 1. Progetto Google Cloud con fatturazione abilitata
-2. ID progetto (dal dashboard GCP)
+2. ID progetto (dalla dashboard GCP)
 3. Verifica del dominio per i moduli
 4. Accesso amministratore a GCP e AEM
 
 **Configurazione:**
 
-1. Crea o seleziona un progetto Google Cloud
-   - Vai a [Console Google Cloud](https://console.cloud.google.com/)
-   - Crea un nuovo progetto o selezionane uno esistente
-   - Prendi nota dell&#39;ID progetto
+1. Crea o seleziona un progetto Google Cloud.
+   - Passa alla [console di Google Cloud](https://console.cloud.google.com/).
+   - Crea un nuovo progetto o selezionane uno esistente.
+   - Prendi nota dell’ID del progetto.
 
-2. Abilita API reCAPTCHA Enterprise
-   - Vai a API e servizi > Libreria
-   - Cerca &quot;reCAPTCHA Enterprise API&quot;
-   - Fai clic su Abilita
+2. Abilita API reCAPTCHA Enterprise.
+   - Passa a API e servizi > Libreria.
+   - Cerca “API reCAPTCHA Enterprise”.
+   - Fai clic su Abilita.
 
-3. Creare le credenziali API
-   - Vai a API e servizi > Credenziali
+3. Crea le credenziali API.
+   - Passa a API e servizi > Credenziali.
    - Fai clic su Crea credenziali > Chiave API.
-   - Copiare e memorizzare la chiave API
+   - Copia e memorizza la chiave API.
 
-4. Crea chiave sito
-   - Vai a Sicurezza > reCAPTCHA Enterprise
-   - Fai clic su Crea chiave
-   - Scegli il tipo di chiave basato su punteggio
-   - Aggiungi i tuoi domini
-   - Imposta il punteggio di soglia (consigliato: 0,5)
+4. Crea la chiave del sito.
+   - Passa a Sicurezza > reCAPTCHA Enterprise.
+   - Fai clic su Crea chiave.
+   - Scegli il tipo di chiave basato su punteggio.
+   - Aggiungi i tuoi domini.
+   - Imposta il punteggio di soglia (consigliato: 0,5).
 
-**Checkpoint di convalida:** Verifica di disporre di:
+**Checkpoint di convalida:** assicurati di disporre di:
 
 - ID progetto
 - Chiave API
@@ -147,67 +147,67 @@ Edge Delivery Services Forms supporta due opzioni Google reCAPTCHA. Utilizza i s
 
 +++
 
-+++ Passaggio 2: configurare il contenitore di configurazione cloud di AEM
++++ Passaggio 2: configurare un contenitore della configurazione cloud AEM
 
 ![Configurazione della configurazione cloud dettagliata](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
 *Figura: abilitazione delle configurazioni cloud per il contenitore di moduli*
 
 **Configurazione:**
 
-1. Accedi al browser configurazioni
-   - Accedere all’istanza di authoring AEM
-   - Vai a Strumenti > Generale > Browser configurazioni
+1. Accedi al browser di configurazione
+   - Accedi all’istanza di authoring di AEM.
+   - Passare a Strumenti > Generale > Browser di configurazione
 
-2. Abilita configurazioni cloud
+2. Abilitare configurazioni cloud
    - Individuare il contenitore di configurazione del modulo
-   - Seleziona proprietà
-   - Verifica configurazioni cloud
-   - Fai clic su Salva e chiudi
+   - Selezionare le proprietà
+   - Controllare le configurazioni cloud
+   - Fare clic su Salva e chiudi
 
-3. Verificare la configurazione
-   - Conferma che &quot;Configurazioni cloud&quot; sia visualizzato nelle proprietà del contenitore
+3. Verifica la configurazione.
+   - Confermare che “Configurazioni cloud” sia visualizzato nelle proprietà del contenitore
 
-**Checkpoint di convalida:**
+**Punto di controllo di convalida:**
 
 - Configurazioni cloud abilitate per il contenitore
-- Il contenitore viene visualizzato nel browser configurazioni
-- Le proprietà mostrano &quot;Configurazioni cloud&quot; come abilitato
+- Il contenitore viene visualizzato nel browser di configurazione
+- Le proprietà mostrano “Configurazioni cloud” come abilitato
 
 +++
 
-+++ Passaggio 3: configurare il servizio enterprise reCAPTCHA in AEM
++++ Passaggio 3: configurare il servizio reCAPTCHA Enterprise in AEM
 
-![schermata di configurazione Enterprise CAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
-*Figura: interfaccia di configurazione Enterprise reCAPTCHA in AEM*
+![Schermata di configurazione Enterprise CAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+*Figura: interfaccia di configurazione reCAPTCHA Enterprise in AEM*
 
 **Configurazione:**
 
-1. Accedi alla configurazione reCAPTCHA
-   - Vai a Strumenti > Cloud Services > reCAPTCHA
-   - Seleziona il contenitore di configurazione del modulo
+1. Accedere alla configurazione reCAPTCHA
+   - Passa a Strumenti > Servizi cloud > reCAPTCHA.
+   - Seleziona il contenitore di configurazione del modulo.
    - Fai clic su Crea.
 
 2. Configurare le impostazioni Enterprise
-   - Titolo: nome descrittivo (ad esempio, &quot;Production reCAPTCHA&quot;)
+   - Titolo: nome descrittivo (ad esempio, “Produzione reCAPTCHA”)
    - Nome: nome del sistema (generato automaticamente o personalizzato)
    - Versione: seleziona ReCAPTCHA Enterprise
-   - ID progetto: immetti l&#39;ID del progetto Google Cloud
-   - Chiave sito: immetti la chiave del sito da Google Cloud
+   - ID progetto: immetti l’ID del progetto Google Cloud
+   - Chiave del sito: immetti la chiave del sito da Google Cloud
    - Chiave API: immetti la chiave API di Google Cloud
-   - Tipo di chiave: seleziona la chiave del sito basata su punteggio
+   - Tipo di chiave: seleziona la chiave del sito basata sul punteggio
 
-3. Imposta soglia di protezione
-   - Punteggio soglia: impostato tra 0,0 e 1,0
+3. Imposta la soglia di sicurezza
+   - Punteggio della soglia: imposta tra 0,0 e 1,0
    - Valori consigliati:
-      - 0.7-0.9: Elevata sicurezza (può bloccare alcuni utenti legittimi)
-      - 0.5-0.7: Sicurezza bilanciata (consigliata)
-      - 0.1-0.5: Protezione inferiore (per consentire più utenti)
+      - 0,7-0,9: sicurezza alta (può bloccare alcuni utenti legittimi)
+      - 0,5-0,7: sicurezza bilanciata (consigliata)
+      - 0,1-0,5: sicurezza ridotta (consente a più utenti)
 
 4. Salva e pubblica
    - Fai clic su Crea per salvare la configurazione
-   - Fai clic su Pubblica per renderlo disponibile
+   - Fai clic su Pubblica per renderla disponibile
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
 - Configurazione salvata correttamente
 - Tutti i campi obbligatori completati
@@ -218,37 +218,37 @@ Edge Delivery Services Forms supporta due opzioni Google reCAPTCHA. Utilizza i s
 
 ## Configurare reCAPTCHA Standard
 
-+++Passaggio 1: ottenere le chiavi API reCAPTCHA (consulta i dettagli)
++++Passaggio 1: ottieni le chiavi API reCAPTCHA (consulta i dettagli)
 
 >[!IMPORTANT]
 >
-> Edge Delivery Services Forms supporta solo reCAPTCHA v2 (basato su punteggio). Non utilizzare la versione della casella di controllo.
+> I moduli Edge Delivery Services supportano solo reCAPTCHA v2 (basato sul punteggio). Non utilizzare la versione della casella di controllo.
 
-**Generazione chiave:**
+**Generazione della chiave:**
 
-1. Accedere alla console Google reCAPTCHA
+1. Accedi alla console Google reCAPTCHA
 
-   - Vai a [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)
+   - Pass all’[Admin Console di Google reCAPTCHA](https://www.google.com/recaptcha/admin)
    - Accedi con il tuo account Google
 
-2. Crea nuovo sito
+2. Crea un nuovo sito
 
    - Fai clic su + per aggiungere un nuovo sito
    - Etichetta: inserisci un nome descrittivo
-   - reCAPTCHA Tipo: selezionare reCAPTCHA v2 > &quot;I&#39;m not a robot&quot; Invisibile
+   - Tipo di reCAPTCHA: seleziona reCAPTCHA v2 > “Non sono un robot” invisibile
    - Domini: aggiungi i domini del modulo
    - Accetta i termini e fai clic su Invia
 
-3. Raccogli Le Tue Chiavi
+3. Raccogli le chiavi
 
-   - Chiave sito: copia la chiave del sito (chiave pubblica)
-   - Chiave segreta: copia la chiave privata
+   - Chiave del sito: copia la chiave del sito (chiave pubblica)
+   - Chiave segreta: copia la chiave segreta (chiave privata)
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
 - Sito creato nella console reCAPTCHA
 
-- Chiave sito ottenuta
+- Chiave del sito ottenuta
 
 - Chiave segreta ottenuta
 
@@ -256,11 +256,11 @@ Edge Delivery Services Forms supporta due opzioni Google reCAPTCHA. Utilizza i s
 
 +++
 
-+++Passaggio 2: configurare il contenitore della configurazione cloud di AEM (consulta i dettagli)
++++Passaggio 2: configura il contenitore della configurazione di AEM Cloud (consulta i dettagli)
 
-Seguire lo stesso processo della configurazione Enterprise:
+Segui lo stesso processo della configurazione Enterprise:
 
-1. Abilitare le configurazioni cloud nel browser configurazioni
+1. Abilita le configurazioni cloud nel browser di configurazione
 
 2. Verifica la configurazione del contenitore
 
@@ -268,33 +268,33 @@ Seguire lo stesso processo della configurazione Enterprise:
 
 +++
 
-+++Passaggio 3: configurare il servizio standard reCAPTCHA in AEM (consulta i dettagli)
++++Passaggio 3: configura il servizio standard reCAPTCHA in AEM (consulta i dettagli)
 
 ![schermata di configurazione standard di reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Figura: interfaccia di configurazione di reCAPTCHA Standard in AEM*
 
 **Configurazione:**
 
-1. Accedi alla configurazione reCAPTCHA
+1. Accedere alla configurazione reCAPTCHA
 
-   - Vai a Strumenti > Cloud Services > reCAPTCHA
-   - Seleziona il contenitore di configurazione del modulo
+   - Passa a Strumenti > Servizi cloud > reCAPTCHA.
+   - Seleziona il contenitore di configurazione del modulo.
    - Fai clic su Crea.
 
-2. Configura impostazioni standard
+2. Configura le impostazioni Standard.
 
-   - Titolo: nome descrittivo (ad esempio, &quot;Standard reCAPTCHA&quot;)
+   - Titolo: nome descrittivo (ad esempio, “reCAPTCHA standard”)
    - Nome: nome del sistema (generato automaticamente o personalizzato)
-   - Versione: Seleziona ReCAPTCHA v2
-   - Chiave sito: immetti la chiave del sito Google reCAPTCHA
-   - Chiave segreta: immetti la chiave segreta Google reCAPTCHA
+   - Versione: seleziona reCAPTCHA v2.
+   - Chiave sito: immetti la chiave del sito Google reCAPTCHA.
+   - Chiave segreta: immetti la chiave segreta Google reCAPTCHA.
 
 3. Salva e pubblica
 
    - Fai clic su Crea per salvare la configurazione
-   - Fai clic su Pubblica per renderlo disponibile
+   - Fai clic su Pubblica per renderla disponibile
 
-**Checkpoint di convalida:**
+**Punto di controllo di convalida:**
 
 - Configurazione creata senza errori
 
@@ -302,57 +302,57 @@ Seguire lo stesso processo della configurazione Enterprise:
 
 - Configurazione pubblicata correttamente
 
-- La configurazione viene visualizzata nell&#39;elenco
+- Configurazione visualizzata nell’elenco
 
 +++
 
-## Aggiungere reCAPTCHA al modulo
+## Aggiungere reCAPTCHA a un modulo
 
 Dopo aver configurato il servizio reCAPTCHA, aggiungi la protezione al modulo come segue:
 
 ![Aggiunta del componente reCAPTCHA a un modulo](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figura: aggiunta del componente Captcha invisibile al modulo*
 
-+++1 Apri modulo nell’editor universale
-Vai al modulo in AEM Sites e fai clic su Modifica per aprirlo in Universal Editor. Attendi il caricamento dell’editor.
++++1. Apri il modulo nell’editor universale
+Passa al modulo in AEM Sites e fai clic su Modifica per aprirlo nell’editor universale. Attendi il caricamento dell’editor.
 
-- Vai al modulo in AEM Sites
-- Fai clic su Modifica per aprire in Editor universale
-- Attendere il caricamento dell’editor
+- Passa al modulo in AEM Sites.
+- Fai clic su Modifica per aprirlo nell’editor universale.
+- Attendi il caricamento dell’editor
 +++
 
-+++2 Individuare la struttura del modulo
++++2. Individua la struttura del modulo
 Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo adattivo ed espandi la struttura del modulo per visualizzare i punti di inserimento.
 
-- Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo adattivo
-- Espandere la struttura del modulo per visualizzare i punti di inserimento
+- Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo adattivo.
+- Espandi la struttura del modulo per visualizzare i punti di inserimento.
 +++
 
-+++3 Aggiungi componente reCAPTCHA
++++3. Aggiungi il componente reCAPTCHA
 Aggiungi il componente Captcha (invisibile) al modulo.
 
-- Fai clic sull’icona Aggiungi (+) nella sezione del modulo
-- Dall’elenco dei componenti, seleziona Captcha (invisibile)
-- In alternativa, trascina e rilascia il componente dal pannello Componenti
+- Fai clic sull’icona Aggiungi (+) nella sezione del modulo.
+- Dall’elenco dei componenti, seleziona Captcha (invisibile).
+- In alternativa, trascina il componente dal pannello Componenti.
 +++
 
-+++4 Configura componente (facoltativo)
-Seleziona il componente captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA.
++++4. Configura il componente (facoltativo)
+Seleziona il componente Captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA precedentemente salvata.
 
-- Seleziona il componente captcha appena aggiunto
-- Nel pannello Proprietà, verificate che utilizzi la configurazione reCAPTCHA
-- Non è necessaria alcuna configurazione aggiuntiva per la configurazione di base
+- Seleziona il componente Captcha appena aggiunto.
+- Nel pannello Proprietà, verifica che utilizzi la configurazione reCAPTCHA precedentemente salvata.
+- Non è necessaria alcuna configurazione aggiuntiva per la configurazione di base.
 +++
 
-+++5 Pubblicare Le Modifiche
-Pubblica le modifiche e verifica che non siano presenti errori.
++++5. Pubblica le modifiche
+Pubblica le modifiche e verifica che non vi siano errori.
 
-- Fai clic su Pubblica nell’editor universale
-- Attendi conferma
-- Verifica che non vengano visualizzati errori
+- Fai clic su Pubblica nell’editor universale.
+- Attendi la conferma.
+- Verifica che non vengano visualizzati errori.
 +++
 
-### Verifica implementazione
+### Verificare l’implementazione
 
 Il modulo protetto è ora disponibile all’indirizzo:
 

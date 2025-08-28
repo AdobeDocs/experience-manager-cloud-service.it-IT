@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1033'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ In questa sezione del [percorso di onboarding](overview.md) scoprirai come acced
 
 ## Obiettivo {#objective}
 
-Nell’articolo precedente di questo percorso di onboarding, [Assegnazione dei membri del team ai profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md), hai assegnato i ruoli appropriati al team AEMaaCS. Scopri ora come accedere a Cloud Manager per configurare le risorse del progetto che il team intende utilizzare.
+Nell’articolo precedente di questo percorso di onboarding, [Assegnazione dei membri del team ai profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md), hai assegnato i ruoli appropriati al team AEMaaCS. Ora, scopri come accedere a Cloud Manager per configurare le risorse del progetto che verranno utilizzate dal team.
 
-Ora che hai completato il passaggio precedente in questo percorso, il team può accedere a Cloud Manager. Cloud Manager viene utilizzato per creare e gestire le risorse del progetto, ad esempio programmi e ambienti.
+Ora che hai completato il passaggio precedente in questo percorso, il tuo team può accedere a Cloud Manager. Cloud Manager viene utilizzato per creare e gestire le risorse dei progetti, come ad esempio programmi e ambienti.
 
 Dopo aver letto questo documento avrai compreso:
 
@@ -28,25 +28,25 @@ Dopo aver letto questo documento avrai compreso:
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager è un componente essenziale di AEM as a Cloud Service e funge da punto di ingresso singolo per il team. Supporta i clienti con configurazioni di sviluppo di livello Enterprise e pipeline CI/CD appositamente progettate per garantire test approfonditi e la massima qualità del codice, in modo da poter offrire esperienze eccezionali. Cloud Manager offre tutto il necessario per iniziare a lavorare in autonomia, inclusa la possibilità di creare risorse e ambienti cloud.
+Cloud Manager è un componente essenziale di AEM as a Cloud Service e funge da punto di ingresso singolo per il team. Supporta i clienti con configurazioni di sviluppo di livello Enterprise e pipeline CI/CD appositamente progettate per garantire test approfonditi e la massima qualità del codice, in modo da poter offrire esperienze eccezionali. Cloud Manager offre tutti gli strumenti necessari per iniziare a lavorare in autonomia, inclusa la possibilità di creare le risorse e gli ambienti cloud.
 
-In genere un membro del team assegnato al profilo di prodotto **Proprietario business** è responsabile dell&#39;aggiunta delle risorse cloud, ad esempio programmi e ambienti. Si tratta della persona che, in base alle esigenze aziendali, completa la configurazione iniziale di Cloud Manager.
+In genere un membro del team assegnato al profilo di prodotto **Proprietario business** è responsabile dell’aggiunta delle risorse cloud, ad esempio programmi e ambienti. Si tratta della persona che, in base alle esigenze aziendali, completa la configurazione iniziale di Cloud Manager.
 
 Ai fini di questo percorso di onboarding, come amministratore di sistema dovresti aver già assegnato te stesso/a al profilo di prodotto **Proprietario business** e ti occuperai della configurazione delle risorse cloud. A seconda dei requisiti effettivi del progetto, gli utenti con ruolo Proprietario business e Amministratore di sistema possono corrispondere.
 
 ## Accesso a Cloud Manager come Amministratore di sistema e Proprietario business {#access-sysadmin-bo}
 
-Prima che i membri del team assegnati al ruolo **Proprietario business** possano accedere a Cloud Manager e iniziare a creare risorse cloud, è necessario assegnare all&#39;amministratore di sistema il ruolo **Proprietario business**. Devono anche accedere a Cloud Manager come hai fatto nel passaggio precedente in questo percorso di onboarding.
+Prima che i membri del gruppo assegnati al ruolo **Proprietario business** possano accedere a Cloud Manager e iniziare a creare risorse cloud, l’amministratore di sistema deve essere assegnato al ruolo **Proprietario business**. Devono anche accedere a Cloud Manager come hai fatto nel passaggio precedente in questo percorso di onboarding.
 
 1. Come amministratore di sistema, assicurati di aver assegnato il tuo utente al ruolo **Proprietario business**.
 
-   Tornare al passaggio precedente, [Assegnare membri del team ai profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md), per informazioni dettagliate sull&#39;assegnazione del ruolo **Proprietario business** all&#39;amministratore di sistema.
+   Torna al passaggio precedente, [Assegnare membri del gruppo ai profili di prodotto di Cloud Manager,](assign-profiles-cloud-manager.md) per ulteriori informazioni sull’assegnazione del ruolo **Proprietario business** all’amministratore di sistema.
 
-1. Accedi a Cloud Manager in [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-Dopo aver effettuato l&#39;accesso come amministratore di sistema con il ruolo **Proprietario business**, è possibile inizializzare Cloud Manager per l&#39;utilizzo da parte di altri utenti con il ruolo **Proprietario business**. Non ricevi alcuna conferma o messaggio. È sufficiente effettuare l’accesso.
+Dopo aver effettuato l’accesso come amministratore di sistema con il ruolo **Proprietario business**, hai inizializzato Cloud Manager per l’utilizzo da parte di altri utenti con il ruolo **Proprietario business**. Non ricevi alcuna conferma o messaggio. È sufficiente effettuare l’accesso.
 
-Finché non accedi a Cloud Manager come amministratore di sistema con il ruolo **Proprietario business**, gli altri utenti con ruolo **Proprietario business** non possono creare programmi in Cloud Manager. Questa regola vale anche se sono stati assegnati i ruoli corretti.
+Fino a quando non accedi a Cloud Manager come amministratore di sistema con il ruolo **Proprietario business**, gli altri utenti con ruolo **Proprietario business** non possono creare programmi in Cloud Manager. Questa regola vale anche se sono stati assegnati i ruoli corretti.
 
 ## Passa a Cloud Manager {#navigate-cloud-manager}
 
@@ -63,9 +63,9 @@ Gli utenti con il ruolo **Proprietario business** ricevono un’e-mail di benven
 
 1. Si apre la pagina di destinazione di Cloud Manager.
 
-In alternativa, è possibile passare alla pagina **Programmi e prodotti** di Cloud Manager dalla home page di Adobe Experience Cloud seguendo la procedura riportata di seguito.
+In alternativa, segui questa procedura accedendo alla pagina **Programmi e prodotti** di Cloud Manager dalla pagina Home di Adobe Experience Cloud.
 
-1. Passa direttamente a [Adobe Experience Cloud](https://experience.adobe.com) e accedi con il tuo Adobe ID.
+1. Passa direttamente ad [Adobe Experience Cloud](https://experience.adobe.com) e accedi con il tuo Adobe ID.
 
 1. Dalla pagina Home di Adobe Experience Cloud, seleziona **Experience Manager** per aprire la pagina Home di AEM.
 
@@ -101,7 +101,7 @@ Se nell’organizzazione sono già presenti dei programmi, questi vengono visual
 
 ### In presenza di programmi e con il ruolo di amministratore di sistema {#programs-exist-sysadmin}
 
-Se nell&#39;organizzazione sono presenti programmi e l&#39;utente è l&#39;amministratore di sistema, nella pagina di destinazione verrà visualizzato il pulsante **Gestisci accesso** insieme all&#39;opzione **Aggiungi programma**.
+Se nell’organizzazione sono già presenti dei programmi e disponi del ruolo di Amministratore di sistema, nella pagina di destinazione viene visualizzato il pulsante **Gestisci accesso** e l’opzione **Aggiungi programma**.
 
 ![Vista dell’amministratore di sistema](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 

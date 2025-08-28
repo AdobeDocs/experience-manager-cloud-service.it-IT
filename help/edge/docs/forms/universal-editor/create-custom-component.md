@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Alla fine di questo articolo avrai appreso a creare componenti personalizzati da
 
 Prima di poter utilizzare un componente personalizzato, è necessario registrarlo in modo che l’editor universale lo riconosca come opzione disponibile. A tale scopo è necessaria una definizione del componente, che include un identificatore univoco, le proprietà predefinite e la struttura. Per rendere il componente personalizzato disponibile per l’authoring dei moduli, segui i passaggi riportati di seguito:
 
-1. **Aggiungi cartella e file**
+1. **Aggiungere cartella e file nuovi**
 
-   Aggiungi una nuova cartella e nuovi file per il nuovo componente personalizzato nel progetto AEM.
+   Aggiungere una cartella e dei file nuovi per il nuovo componente personalizzato nel progetto AEM.
 
    1. Apri il progetto AEM e passa a `../blocks/form/components/`.
    1. Aggiungi una nuova cartella per il componente personalizzato in `../blocks/form/components/<component_name>`. In questo esempio verrà creata una cartella denominata `range`.
@@ -72,7 +72,7 @@ Prima di poter utilizzare un componente personalizzato, è necessario registrarl
    - **id**: identificatore univoco del componente.
    - **fieldType**: i moduli supportano vari **fieldType** per acquisire tipi specifici di input dell’utente. Puoi trovare i [fieldType supportati nella sezione Byte aggiuntivi](#supported-fieldtypes).
    - **resourceType**: a ogni componente personalizzato è associato un tipo di risorsa basato sul relativo fieldType. Puoi trovare i [resourceType supportati nella sezione Byte aggiuntivi](#supported-resourcetype).
-   - **jcr:title**: è simile a un titolo, ma viene memorizzato all&#39;interno della struttura del componente.
+   - **jcr:title**: è simile a un titolo, ma viene memorizzato all’interno della struttura del componente.
    - **fd:viewType**: rappresenta il nome del componente personalizzato. È l’identificatore univoco del componente. È necessario per creare una vista personalizzata per il componente.
 
 Dopo aver aggiunto la definizione del componente, il file `_range.json` è il seguente:
@@ -301,7 +301,7 @@ Per fare in modo che il componente personalizzato venga visualizzato nell’elen
 
 ### &#x200B;4. Registrazione del componente personalizzato
 
-Per consentire al blocco di modulo di riconoscere il componente personalizzato e caricarne le proprietà definite nel modello di componente durante la creazione del modulo, aggiungere il valore `fd:viewType` dalla definizione del componente al file `mappings.js`.
+Per consentire al blocco modulo di riconoscere il componente personalizzato e caricarne le proprietà definite nel modello di componente durante l’authoring del modulo, aggiungi il valore `fd:viewType` dalla definizione del componente al file `mappings.js`.
 
 Per registrare un componente:
 

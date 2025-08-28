@@ -3,9 +3,9 @@ title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ Le risorse contrassegnate come approvate in Assets as a Cloud Service sono autom
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende se hai abilitato il pulsante di attivazione/disattivazione [Approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) disponibile nell’interfaccia utente Configurazione:
 
-* Se il pulsante **Approvazione automatica** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
+* Se il pulsante di attivazione **Approvazione automatica** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
-* Se il pulsante **Approvazione automatica** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](/help/assets/approve-assets-content-hub.md) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
+* Se il pulsante di attivazione **Approvazione automatica** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](/help/assets/approve-assets-content-hub.md) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ## Come trovare rapidamente le risorse caricate utilizzando Content Hub nell’ambiente AEM as a Cloud Service? {#find-uploaded-assets-on-aem-cloud}
 
@@ -84,7 +84,7 @@ Esistono alcune configurazioni del modo in cui gli utenti vengono assegnati a [!
    >
    >L’utente assegnato ai profili di prodotto Express e Assets in due Admin Console deve avere lo stesso indirizzo e-mail e utilizzare un account aziendale **Enterprise o scolastico**, non uno **personale**. La configurazione ideale consiste nell’avere entrambe le configurazioni di Admin Console impostate come **Federated ID** con relazione di affidabilità configurata tra loro, in modo che l’utente abbia un’esperienza di accesso unico semplice. Alcuni dei piani Express (ad esempio, Express Teams) non supportano il Federated ID/accesso unico.
 
-Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[!UICONTROL # /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
+Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[#UICONTROL /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
 
 ## È possibile impostare Content Hub in modo che le linee guida del brand della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
 
@@ -139,17 +139,17 @@ La tabella seguente illustra le principali differenze tra le due soluzioni:
 
 Dopo aver configurato Content Hub per la produzione e altri ambienti inferiori per lo stesso programma, puoi selezionare l’archivio e visualizzare le risorse per l’ambiente selezionato. Esegui i passaggi seguenti:
 
-1. Fai clic sull’icona utente nel riquadro a destra.
+1. Fai clic sull’icona dell’utente nel riquadro a destra.
 
-1. Nella sezione **[!UICONTROL Impostazioni prodotto]**, selezionare **[!UICONTROL Seleziona archivio]**.
+1. Nella sezione **[!UICONTROL Impostazioni prodotto]**, seleziona **[!UICONTROL Seleziona archivio]**.
 
-1. Selezionare l&#39;archivio dal menu a discesa **[!UICONTROL Archivio]** e fare clic su **[!UICONTROL OK]** per confermare.
+1. Seleziona l’archivio dal menu a discesa **[!UICONTROL Archivio]** e fare clic su **[!UICONTROL OK]** per confermare.
 
    Content Hub ora visualizza le risorse per l’ambiente selezionato.
 
 ## Come può Content Hub visualizzare l’anteprima delle miniature per il tipo di file .ZIP? {#thumbnail-preview-zip-file}
 
-Per fornire un&#39;anteprima delle miniature per tipi di file come .ZIP in Content Hub, è possibile aggiungere una rappresentazione denominata `cq5dam.preview.jpg` o `cq5dam.preview.png` alla radice del percorso in cui è disponibile il file .ZIP nell&#39;ambiente di authoring AEM as a Cloud Service.
+Per fornire un’anteprima delle miniature per tipi di file come .ZIP in Content Hub, puoi aggiungere una rappresentazione denominata `cq5dam.preview.jpg` o `cq5dam.preview.png` alla radice del percorso in cui è disponibile il file .ZIP nell’ambiente di authoring di AEM as a Cloud Service.
 
 Immagine aggiunta come rappresentazione:
 
@@ -157,6 +157,6 @@ Immagine aggiunta come rappresentazione:
 
 * Deve essere inferiore a 50 MB
 
-Quando disponibile, Content Hub visualizza l&#39;immagine come miniatura di anteprima per il file .ZIP su Content Hub.
+Quando disponibile, Content Hub visualizza l’immagine come miniatura di anteprima per il file .ZIP su Content Hub.
 
 

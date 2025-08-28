@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,8 +111,8 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
 1. Ora che hai configurato la cartella dei contenuti, puoi collegarla al progetto su GitHub che hai creato utilizzando precedentemente moduli AEM ricorrenti. Per connettersi:
 
    1. vai all’archivio GitHub che hai creato in precedenza utilizzando moduli AEM ricorrenti.
-   1. Aggiungere il file `fstab.yaml` nella cartella principale.
-   1. Aggiungi il riferimento con il percorso alla cartella condivisa con l’utente di AEM (forms@adobe.com).
+   1. Aggiungi il file `fstab.yaml` nella cartella principale.
+   1. Aggiungi il riferimento con il percorso della cartella condivisa con l’utente AEM (forms@adobe.com).
 
       ![Contenuto di esempio su Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ Per copiare il contenuto di esempio nella cartella del contenuto e indirizzarvi 
       Per ulteriori informazioni sulla gestione dei file con Microsoft SharePoint, consulta [Come usare Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
-   1. Eseguire il commit del file `fsatb.yaml`, dopo aver aggiunto il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
+   1. Conferma l’aggiornamento del file `fsatb.yaml` dopo aver aggiunto il riferimento e tutto sembra a posto. Se riscontri problemi di build, consulta [Risoluzione dei problemi di build di GitHub](#troubleshooting-github-build-issues).
 
       ![Conferma l’aggiornamento del file fsatab.yaml](/help/edge/assets/commit-updated-fstab-yaml.png)
 
