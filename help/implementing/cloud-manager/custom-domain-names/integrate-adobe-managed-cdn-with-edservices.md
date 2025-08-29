@@ -6,10 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,13 +70,10 @@ Entrambi i modelli possono coesistere all’interno dello stesso programma Cloud
 
 ## Prerequisiti {#prerequisites}
 
-1. Integrare il sito in Cloud Manager
-: richiesto per entrambi i modelli di distribuzione. Segui Onboarding in un sito AEM.
+1. Onboarding del sito in Cloud Manager: richiesto per entrambi i modelli di distribuzione. Segui Onboarding in un sito AEM.
 
-2. Portare il proprio Git (BYOG) (facoltativo)
-&#x200B;- Se memorizzi il codice del sito al di fuori di Adobe Git, completa l’onboarding BYOG.
+2. Porta il tuo Git (BYOG) (facoltativo): se archivi il codice del sito al di fuori di Adobe Git, completa l’onboarding di BYOG.
 
-3. Licenza Edge Delivery
-&#x200B;- Assicurarsi che il programma sia concesso in licenza per Edge Delivery Services.
+3. Licenza Edge Delivery: assicurati che il programma sia concesso in licenza per Edge Delivery Services.
 
 
