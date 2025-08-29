@@ -4,7 +4,7 @@ description: Scopri come accedere a Cloud Manager per configurare le risorse del
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 84%
@@ -42,7 +42,7 @@ Prima che i membri del gruppo assegnati al ruolo **Proprietario business** possa
 
    Torna al passaggio precedente, [Assegnare membri del gruppo ai profili di prodotto di Cloud Manager,](assign-profiles-cloud-manager.md) per ulteriori informazioni sull’assegnazione del ruolo **Proprietario business** all’amministratore di sistema.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com/).
+1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com).
 1. Nel raggruppamento Accesso rapido fare clic su **Experience Manager**.
 1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
 
