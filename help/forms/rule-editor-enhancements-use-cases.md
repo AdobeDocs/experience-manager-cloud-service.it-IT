@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -105,6 +105,8 @@ Per evitare di riempire il modulo con campi nascosti, l’azienda decide di memo
 
 **Implementazione tramite le funzioni Imposta valore variabile e Ottieni valore variabile nell&#39;editor di regole**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 Nel frammento **Address** è configurata una regola utilizzando la funzione **Imposta valore variabile** per assegnare una variabile temporanea denominata **extracharge**. Il valore di questa variabile cambia in modo dinamico in base al paese selezionato. Ad esempio:
 
 * Se l&#39;utente seleziona Stati Uniti, **extracharge** è impostato su 500.
@@ -122,7 +124,7 @@ Il campo **Costo totale spedizione** viene aggiornato in modo dinamico per rifle
 >[!NOTE]
 >
 > È inoltre possibile aggiungere la funzione **Ottieni valore variabile** nella condizione When.
-> &#x200B;> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Questo approccio consente di eseguire calcoli dinamici e in tempo reale senza aggiungere campi aggiuntivi al modulo, mantenendo la struttura pulita e intuitiva.
 
@@ -135,6 +137,9 @@ L&#39;editor di regole avanzato supporta la gestione degli eventi personalizzati
 Invece di associare la logica direttamente ai campi, il modulo utilizza un approccio basato su eventi con **Dispatch Event** e **On Trigger Event** per migliorare la modularità e la gestibilità.
 
 **Implementazione tramite evento di invio e evento all&#39;attivazione**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 Il frammento di accesso viene aggiunto al modulo, contenente campi predefiniti per Nome utente e Password. Nel pulsante **Ottieni OTP** è configurata una regola per visualizzare il **Pannello di convalida**, che include il campo di input per l&#39;immissione e la convalida dell&#39;OTP.
 
