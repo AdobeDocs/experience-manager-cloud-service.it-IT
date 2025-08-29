@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2920'
 ht-degree: 37%
 
 ---
@@ -134,6 +134,18 @@ Passando il puntatore sul nome della cartella verrà visualizzato il percorso JC
    * Seleziona il conteggio per aprire una finestra di dialogo in cui vengono visualizzate tutte le copie per lingua. Per aprire una copia di una lingua specifica, fai clic sul **Titolo** nella finestra di dialogo.
 
      ![Console Frammenti di contenuto - Finestra di dialogo Lingua](assets/cf-managing-console-languages-dialog.png)
+
+* **Flussi di lavoro**
+
+   * Solo informazioni
+
+   * Seleziona l’icona per un frammento specifico:
+
+     ![Console Frammenti di contenuto - Icona Flussi di lavoro](assets/cf-managing-console-workflows-icon.png)
+
+     Per aprire una finestra di dialogo con informazioni dettagliate sui flussi di lavoro (passati e correnti) per il frammento.:
+
+     ![Console Frammenti di contenuto - Finestra di dialogo Flussi di lavoro](assets/cf-managing-console-workflows-dialog.png)
 
 ## Azioni {#actions}
 
