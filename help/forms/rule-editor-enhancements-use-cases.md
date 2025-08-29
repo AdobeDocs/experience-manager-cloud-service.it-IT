@@ -122,7 +122,7 @@ Il campo **Costo totale spedizione** viene aggiornato in modo dinamico per rifle
 >[!NOTE]
 >
 > È inoltre possibile aggiungere la funzione **Ottieni valore variabile** nella condizione When.
-> > ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Questo approccio consente di eseguire calcoli dinamici e in tempo reale senza aggiungere campi aggiuntivi al modulo, mantenendo la struttura pulita e intuitiva.
 
