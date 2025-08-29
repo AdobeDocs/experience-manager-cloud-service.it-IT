@@ -4,10 +4,10 @@ description: Scopri come accedere a Cloud Manager per configurare le risorse del
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
-workflow-type: ht
-source-wordcount: '1033'
-ht-degree: 100%
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 84%
 
 ---
 
@@ -42,9 +42,13 @@ Prima che i membri del gruppo assegnati al ruolo **Proprietario business** possa
 
    Torna al passaggio precedente, [Assegnare membri del gruppo ai profili di prodotto di Cloud Manager,](assign-profiles-cloud-manager.md) per ulteriori informazioni sull’assegnazione del ruolo **Proprietario business** all’amministratore di sistema.
 
-1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com/).
+1. Nel raggruppamento Accesso rapido fare clic su **Experience Manager**.
+1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
 
-Dopo aver effettuato l’accesso come amministratore di sistema con il ruolo **Proprietario business**, hai inizializzato Cloud Manager per l’utilizzo da parte di altri utenti con il ruolo **Proprietario business**. Non ricevi alcuna conferma o messaggio. È sufficiente effettuare l’accesso.
+   ![Cloud Manager nella console](/help/journey-onboarding/assets/consol-cloud-manager.png)
+
+Dopo aver effettuato l&#39;accesso come amministratore di sistema con il ruolo **Proprietario business**, puoi utilizzare Cloud Manager per gli altri utenti con ruolo **Proprietario business**. Non ricevi alcuna conferma o messaggio. È sufficiente effettuare l’accesso.
 
 Fino a quando non accedi a Cloud Manager come amministratore di sistema con il ruolo **Proprietario business**, gli altri utenti con ruolo **Proprietario business** non possono creare programmi in Cloud Manager. Questa regola vale anche se sono stati assegnati i ruoli corretti.
 
@@ -63,63 +67,64 @@ Gli utenti con il ruolo **Proprietario business** ricevono un’e-mail di benven
 
 1. Si apre la pagina di destinazione di Cloud Manager.
 
-In alternativa, segui questa procedura accedendo alla pagina **Programmi e prodotti** di Cloud Manager dalla pagina Home di Adobe Experience Cloud.
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
-1. Passa direttamente ad [Adobe Experience Cloud](https://experience.adobe.com) e accedi con il tuo Adobe ID.
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Dalla pagina Home di Adobe Experience Cloud, seleziona **Experience Manager** per aprire la pagina Home di AEM.
+1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
 
-   ![Pagina Home di Experience Cloud](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. Nel riquadro **Cloud Manager**, seleziona **Avvia**.
+1. On the **Cloud Manager** tile, select **Launch**.
 
-   ![Pagina Home di AEM](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. Dopo aver effettuato correttamente l’accesso, si apre la pagina di destinazione di Cloud Manager. Per ulteriori dettagli, consulta [Visualizzazione dei programmi di Cloud Manager](#viewing-programs).
+1. After successfully logging on, you are directed to the Cloud Manager landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) for more details.
 
-La modalità di accesso a programmi e prodotti tramite Cloud Manager è a tua discrezione e non ha alcun effetto su come utilizzi Cloud Manager o come gestisci i programmi.
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
 >[!NOTE]
 >
->A seconda dei ruoli assegnati in Cloud Manager e dello stato dell’applicazione, vengono visualizzate diverse schermate durante l’utilizzo dell’interfaccia utente di Cloud Manager.
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## Visualizzazione dei programmi {#viewing-programs}
+## Visualizza programmi {#viewing-programs}
 
 Dopo aver effettuato correttamente l’accesso a Cloud Manager, gli elementi visualizzati dipendono dallo stato dei programmi, come descritto nelle sezioni seguenti.
 
-### In assenza di programmi {#no-programs}
+### Se non esiste alcun programma {#no-programs}
 
 Se nell’organizzazione non sono presenti programmi, la pagina di destinazione ti invita a creare il primo programma.
 
-![Senza programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![Senza programmi](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### In presenza di programmi {#programs-exist}
+### Quando i programmi esistono già {#programs-exist}
 
 Se nell’organizzazione sono già presenti dei programmi, questi vengono visualizzati nella pagina di destinazione, insieme a un pulsante per aggiungerne di nuovi.
 
-![Con programmi](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![Con programmi](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### In presenza di programmi e con il ruolo di amministratore di sistema {#programs-exist-sysadmin}
+### Quando è presente un programma e si è un amministratore di sistema {#programs-exist-sysadmin}
 
 Se nell’organizzazione sono già presenti dei programmi e disponi del ruolo di Amministratore di sistema, nella pagina di destinazione viene visualizzato il pulsante **Gestisci accesso** e l’opzione **Aggiungi programma**.
 
-![Vista dell’amministratore di sistema](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![Vista dell’amministratore di sistema](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## Verifica dei ruoli utente {#verify-user-roles}
+## Verifica i ruoli utente {#verify-user-roles}
 
-Dopo aver effettuato l’accesso a Cloud Manager, puoi verificare che il tuo utente sia stato correttamente assegnato al profilo di prodotto **Proprietario business**.
+Dopo aver effettuato l&#39;accesso a Cloud Manager, è possibile verificare di aver ricevuto il profilo di prodotto **Proprietario business**.
 
-1. Seleziona il tuo profilo nella parte in alto a destra della finestra.
+1. Fai clic sull&#39;icona **Account** nell&#39;angolo superiore destro della pagina.
 
-1. Per visualizzare i ruoli assegnati ai tuoi utenti, seleziona **Ruoli utente**.
+1. Fare clic su **Ruoli utente**.
 
-   ![Ruoli utente](/help/journey-onboarding/assets/setup-resources6.png)
+   ![Ruoli utente](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. La finestra di dialogo deve confermare che ti è stato assegnato il ruolo **Proprietario business**.
+1. Nella finestra di dialogo **Ruoli utente**, verifica che l&#39;utente abbia il ruolo **Proprietario business**.
 
-   ![Elenco dei ruoli utente](/help/journey-onboarding/assets/setup-resources7.png)
+   ![Elenco dei ruoli utente](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Hai completato correttamente l’accesso a Cloud Manager come Proprietario business. Se il tuo utente non è assegnato al ruolo **Proprietario business**, contatta l’amministratore di sistema.
+Hai effettuato correttamente l’accesso a Cloud Manager come Proprietario business. Se il tuo utente non è assegnato al ruolo **Proprietario business**, contatta l’amministratore di sistema.
 
 ## Passaggio successivo {#whats-next}
 

@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
-workflow-type: ht
-source-wordcount: '1295'
-ht-degree: 100%
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+workflow-type: tm+mt
+source-wordcount: '1348'
+ht-degree: 78%
 
 ---
 
@@ -38,11 +38,17 @@ Di conseguenza:
 
 ## Concetti e obiettivo {#concepts}
 
-Sebbene possa sembrare che vi siano molte informazioni da apprendere quando si inizia con AEM as a Cloud Service, concettualmente i blocchi logici sono pochi.
+<!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-* **Contratto**: è necessario avere familiarità con il contratto sottoscritto con Adobe in quanto definisce gli aspetti del processo di onboarding.
-* **Admin Console**: l’ambiente dove si gestiscono gli utenti e si assegnano i ruoli.
-* **Cloud Manager**: lo strumento per configurare risorse quali programmi e ambienti. Da Cloud Manager puoi accedere a Git e creare pipeline per gestire e distribuire il codice personalizzato.
+Il percorso di onboarding per AEM as a Cloud Service si basa sui seguenti elementi principali:
+
+* **Contratto** - Rivedi il contratto Adobe per comprendere i dettagli chiave del processo di onboarding.
+* **Experience Hub** - Utilizza [experience.adobe.com](https://experience.adobe.com/) come punto di ingresso centrale per le funzionalità di AEM. Experience Hub si adatta alla tua persona e alle adesioni in modo da poter lavorare in modo efficiente. Da qui, vai a:
+   * **Admin Console** - Gestisci gli utenti e assegna i ruoli.
+   * **Cloud Manager** - Configura programmi e ambienti, accedi a Git e crea pipeline per gestire e distribuire il codice personalizzato.
+   * **Sites** - Crea, gestisci e distribuisci esperienze digitali. (Diritti basati su licenza)
+   * **Assets** - Organizza, archivia e distribuisci le risorse digitali. (Diritti basati su licenza)
+   * **Forms** - Crea e gestisci moduli adattivi e reattivi. (Diritti basati su licenza)
 
 Tali concetti sono descritti dettagliatamente in questo percorso di onboarding. L’obiettivo è che, alla fine del percorso, tu possa:
 
@@ -59,11 +65,11 @@ Il percorso di onboarding è destinato specificatamente all’**amministratore d
 L’amministratore di sistema gestisce tutti gli aspetti degli utenti di AEMaaCS dell’organizzazione, dall’accesso alle autorizzazioni. Tuttavia, l’amministratore di sistema deve interagire con altre persone durante il percorso.
 
 | Persona | Descrizione | Ruolo nel percorso |
-|---|---|---|
-| Amministratore di sistema | Il destinatario di questo percorso fornisce il provisioning iniziale delle risorse cloud e assegna gli utenti ai ruoli appropriati in base alle rispettive responsabilità lavorative. | Gestione di tutti gli aspetti relativi agli utenti, dall’accesso alle autorizzazioni. |
-| Autore di contenuti | Crea e rivede i contenuti in AEM. | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, gli autori e le autrici possono iniziare il percorso per la creazione di contenuti |
-| Sviluppatore | Sviluppa le applicazioni AEM che utilizzano contenuti provenienti da fonti diverse | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, gli sviluppatori e le sviluppatrici possono iniziare il percorso per lo sviluppo di soluzioni |
-| Responsabile dell’implementazione | Aggiunge o aggiorna un ambiente, esegue le pipeline e distribuisce il codice nell’ambiente AEM o per la verifica della qualità del codice. | Dopo aver ricevuto le autorizzazioni dall’amministratore di sistema, i e le responsabili dell’implementazione possono iniziare il percorso per la gestione delle distribuzioni. |
+| --- | --- | --- |
+| Amministratore di sistema | La destinazione di questo percorso fornisce il provisioning iniziale delle risorse cloud e l’assegnazione degli utenti a ruoli appropriati in base alle loro responsabilità lavorative. | Il ruolo consente di gestire tutti gli aspetti relativi agli utenti, dall’accesso alle autorizzazioni. |
+| Autore di contenuti | Crea e rivede il contenuto in AEM. | Una volta ricevute le autorizzazioni dall’amministratore di sistema, gli autori possono avviare un proprio percorso nella creazione dei contenuti. |
+| Sviluppatore | Sviluppa le applicazioni AEM che utilizzano contenuti provenienti da origini diverse. | Una volta ricevute le autorizzazioni dall’amministratore di sistema, gli sviluppatori possono avviare il proprio percorso nello sviluppo di soluzioni. |
+| Responsabile dell’implementazione | Aggiunge o aggiorna un ambiente, esegue le pipeline e distribuisce il codice nell’ambiente AEM o per la verifica della qualità del codice. | Una volta ricevute le autorizzazioni dall’amministratore di sistema, i responsabili dell’implementazione possono avviare il proprio percorso per la gestione delle distribuzioni. |
 
 Questa guida all’onboarding descrive l’intero processo di onboarding come amministratore di sistema. I ruoli Utenti di AEM, Sviluppatore e Responsabile dell’implementazione sono brevemente descritti come parti aggiuntive e facoltative del percorso.
 
@@ -76,18 +82,19 @@ Questa guida all’onboarding descrive l’intero processo di onboarding come am
 I seguenti articoli descrivono in dettaglio i concetti fondamentali dell’onboarding e forniscono informazioni fondamentali su AEM as a Cloud Service. Sebbene tu possa accedere direttamente a una sezione specifica del percorso, molti concetti si basano su quelli degli articoli precedenti. Perciò, se non possiedi alcuna conoscenza del processo di onboarding, Adobe consiglia di partire dall’inizio e di avanzare progressivamente.
 
 | | Articolo | Descrizione | Pubblico |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 0 | Percorso di onboarding | Questo documento | Amministratore di sistema |
 | 1 | [Preparazione all’onboarding](preparation.md) | Prima dell’inizio del processo di onboarding e di effettuare l’accesso al sistema è necessario che l’amministratore comprenda una serie di passaggi preparatori. | Amministratore di sistema |
 | 2 | [Terminologia di AEM as a Cloud Service](terminology.md) | Prima di accedere a AEMaaCS per la prima volta è utile comprendere alcuni termini del sistema e la relativa struttura di base. | Amministratore di sistema |
 | 3 | [Admin Console](admin-console.md) | Scopri Admin Console, come effettuare l’accesso e come verificare il tuo profilo come amministratore di sistema. | Amministratore di sistema |
-| 4 | [Assegnazione dei profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md) | Scopri i profili di prodotto di Cloud Manager e come assegnarli ai membri del gruppo. | Amministratore di sistema |
-| 5 | [Accesso a Cloud Manager](cloud-manager.md) | Scopri come accedere a Cloud Manager per configurare le risorse del progetto. | Amministratore di sistema |
-| 6 | [Creazione di un programma](create-program.md) | Scopri come creare un programma con Cloud Manager. | Amministratore di sistema |
-| 7 | [Creazione di ambienti](create-environments.md) | Scopri come creare un ambiente con Cloud Manager. | Amministratore di sistema |
-| 8 | [Assegnazione dei profili di prodotto di AEM](assign-profiles-aem.md) | Scopri come l’amministratore di sistema assegna i membri del gruppo ai profili di prodotto in AEM as a Cloud Service. | Amministratore di sistema |
-| 9 | [Attività dei ruoli Sviluppatore e Responsabile dell’implementazione](developers.md) | Facoltativo: scopri come accedere e gestire l’archivio Git di Cloud Manager in qualità di Sviluppatore e come configurare le pipeline e distribuire il codice in Cloud Manager in qualità di Responsabile della distribuzione. | Ruoli Sviluppatore e Responsabile dell’implementazione |
-| 10 | [Attività degli utenti AEM](aem-users.md) | Facoltativo: scopri come accedere all’istanza di AEM as a Cloud Service come autore o autrice AEM e come acquisire familiarità con l’authoring dei contenuti per AEM as a Cloud Service. | Utenti AEM |
+| 4 | [Assegnazione dei profili di prodotto di Cloud Manager](assign-profiles-cloud-manager.md) | Rivedi i profili di prodotto di Cloud Manager e scopri come assegnare i membri del gruppo ai profili di prodotto di Cloud Manager. | Amministratore di sistema |
+| 5 | [Accedi ad Experience Hub](/help/experience-hub.md) | Utilizza Experience Hub, che funge da punto di ingresso unificato e personalizzato per l’ecosistema AEM. | AEM Users |
+| 6 | [Accesso a Cloud Manager](cloud-manager.md) | Scopri come accedere a Cloud Manager per configurare le risorse del progetto. | Amministratore di sistema |
+| 7 | [Creazione di un programma](create-program.md) | Scopri come creare un programma con Cloud Manager. | Amministratore di sistema |
+| 8 | [Creazione di ambienti](create-environments.md) | Scopri come creare un ambiente con Cloud Manager. | Amministratore di sistema |
+| 9 | [Assegnazione dei profili di prodotto di AEM](assign-profiles-aem.md) | Scopri in che modo l’amministratore di sistema assegna i membri del gruppo ai profili di prodotto in AEM as a Cloud Service. | Amministratore di sistema |
+| 10 | [Attività dei ruoli Sviluppatore e Responsabile dell’implementazione](developers.md) | Facoltativo - In qualità di sviluppatore, scopri come accedere e gestire Cloud Manager Git. In qualità di Responsabile dell’implementazione, scopri come impostare le pipeline e distribuire il codice in Cloud Manager. | Ruoli Sviluppatore e Responsabile dell’implementazione |
+| 11 | [Attività degli utenti AEM](aem-users.md) | Facoltativo: scopri come accedere all’istanza di AEM as a Cloud Service come autore o autrice AEM e come acquisire familiarità con l’authoring dei contenuti per AEM as a Cloud Service. | Utenti AEM |
 
 ## Passaggio successivo {#what-is-next}
 
