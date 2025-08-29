@@ -4,14 +4,14 @@ description: Scopri come utilizzare l’API AFP Output Sync per recuperare e sin
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: b6316401bea7d6593d89d15e70c50536df5f116c
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 11%
+source-wordcount: '237'
+ht-degree: 14%
 
 ---
 
-# Generare output AFP utilizzando l’API AEM Forms
+# Generare output AFP utilizzando le API di AEM Forms
 
 <span class="preview">Si tratta di una funzione pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
@@ -101,4 +101,4 @@ Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionali
 
 Puoi salvare la risposta e aprire il file salvato nel lettore AFP per visualizzarlo.
 
-<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
+![Lettore PDF](/help/forms/assets/afp-pdf.png)

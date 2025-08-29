@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ Creare una regola nella casella di testo `Pet ID` per richiamare il servizio `ge
 Immettere `102` nella casella di testo `Pet ID` e il pulsante **Invia** è nascosto.
 
 ![Output](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> È inoltre possibile [integrare l&#39;API direttamente nell&#39;interfaccia dell&#39;editor di regole](/help/forms/api-integration-in-rule-editor.md) senza utilizzare un modello dati modulo predefinito.
 
 ## Domande frequenti
 

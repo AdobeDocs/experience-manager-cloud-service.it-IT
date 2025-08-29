@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Il diagramma seguente illustra i passaggi necessari per creare un’azione di in
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Il progetto è pronto!**
 
@@ -128,7 +128,7 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    ![Aggiungi le cartelle create nel file filter.xml](/help/forms/assets/custom-submit-action-filter-xml.png)
 
-1. Salva le modifiche.
+1. Salvare le modifiche.
 
 ### Implementa il servizio per l’azione di invio aggiunta.
 
@@ -182,7 +182,7 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    ![Servizio azione invio personalizzato](/help/forms/assets/custom-submit-action-service.png)
 
-1. Salva le modifiche.
+1. Salvare le modifiche.
 
 ### Distribuisci il codice.
 
@@ -214,9 +214,9 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    1. Distribuisci il codice aggiornato:
 
-      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
+      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
 
-      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
+      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![Distribuzione cloud](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -268,7 +268,14 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    >[!NOTE]
    >
-   > Per visualizzare i registri di errore nell’ambiente AEM as a Cloud Service, puoi utilizzare Splunk.
+   > * Per visualizzare i registri di errore nell’ambiente AEM as a Cloud Service, puoi utilizzare Splunk.
+   > * Se un servizio azione di invio personalizzato rileva un errore non gestito, AEM as a Cloud Service restituisce un HTML della pagina di errore 502.
+
+
+## Domande frequenti
+
+**D: perché il modulo adattivo mostra una pagina di errore 5.x.x dopo l’invio?**
+Errore non gestito del servizio azione di invio personalizzata. AEM Cloud Service restituisce quindi la pagina di errore predefinita.
 
 <!--
 ## Best practices
