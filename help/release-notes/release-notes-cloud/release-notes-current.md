@@ -85,7 +85,7 @@ Crea URL personalizzati per la consegna delle risorse in DM con OpenAPI, sostitu
 
 **Componente input data e ora**
 
-È ora disponibile un [componente Data e ora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) che consente agli utenti di selezionare sia la data che l&#39;ora tramite un&#39;interfaccia calendario e orologio oppure immettendo manualmente i valori in un formato supportato.
+È ora disponibile un [componente Data e ora](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) che consente agli utenti di selezionare sia la data che l&#39;ora tramite un&#39;interfaccia calendario e orologio oppure immettendo manualmente i valori in un formato supportato.
 
 **Gestione avanzata degli errori per i caricamenti di file**
 
@@ -129,7 +129,7 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 **Componente firma scarabocchio**
 
-È ora possibile utilizzare il componente [Firma scarabocchio](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) per consentire agli utenti di aggiungere le firme a un modulo, ad esempio in un modulo di contratto. Il componente consente agli utenti di disegnare la propria firma direttamente all’interno del modulo utilizzando un mouse, uno stilo o un touchscreen.
+È ora possibile utilizzare il componente [Firma scarabocchio](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) per consentire agli utenti di aggiungere le firme a un modulo, ad esempio in un modulo di contratto. Il componente consente agli utenti di disegnare la propria firma direttamente all’interno del modulo utilizzando un mouse, uno stilo o un touchscreen.
 
 **Integrazione diretta API nell&#39;editor di regole**
 
