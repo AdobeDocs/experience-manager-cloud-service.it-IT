@@ -4,16 +4,19 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # Strumento Copia contenuto {#content-copy}
 
 Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
+
+>[!NOTE]
+>Mentre il flusso di copia del contenuto principale va dagli ambienti di livello superiore a quelli di livello inferiore, una funzionalità aggiuntiva, **Flusso successivo**, consente la copia dagli ambienti di non produzione di livello inferiore agli ambienti di non produzione di livello superiore (ad esempio Dev → Stage, RDE → Stage). Per informazioni dettagliate, inclusi i requisiti di disponibilità, vedere [Limitazioni](#limitations).
 
 ## Introduzione {#introduction}
 
@@ -105,7 +108,7 @@ Quando modifichi il set di contenuti, puoi espandere i percorsi configurati per 
 Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto. Segui questi passaggi per copiare il contenuto.
 
 >[!NOTE]
-> Non utilizzare la copia contenuto in un ambiente mentre è in esecuzione un&#39;operazione di [trasferimento contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in tale ambiente.
+> Non utilizzare la copia del contenuto in un ambiente mentre è in esecuzione un&#39;operazione di [trasferimento del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in tale ambiente.
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
@@ -133,7 +136,7 @@ Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
       * Produzione
       * Staging
       * Sviluppo/RDE
-   * Per impostazione predefinita, la funzione Copia contenuto tra programmi è disabilitata. Tuttavia, su richiesta del cliente, può essere abilitato, rendendo disponibile un ulteriore campo di input **Programma di destinazione**.
+   * Per impostazione predefinita, la copia del contenuto tra programmi è disabilitata. Tuttavia, su richiesta del cliente, può essere abilitato, rendendo disponibile un ulteriore campo di input **Programma di destinazione**.
 
 1. Se necessario, puoi anche scegliere di **Includere gli elenchi di controllo di accesso** nel processo di copia.
 
@@ -192,7 +195,9 @@ I registri vengono scaricati nel computer locale. Se il download non inizia, con
 
 Lo strumento Copia contenuto presenta le seguenti limitazioni.
 
-* Il contenuto non può essere copiato da un ambiente inferiore a un ambiente superiore.
+* Lo strumento di copia del contenuto supporta due modalità di flusso:
+   1. Flusso top-down: il contenuto può essere copiato da ambienti superiori in ambienti inferiori (ad esempio Production → Stage, Stage → Development/RDE).
+   2. Flusso di inoltro (nuova funzione): il contenuto può anche essere copiato da un ambiente non di produzione di livello inferiore a un ambiente non di produzione di livello superiore (ad esempio Stage di → di sviluppo, Stage di → RDE). Questa funzione è disponibile solo su richiesta esplicita e rimane abilitata fino a quando non viene esplicitamente richiesta la disabilitazione. Gli ambienti di produzione non sono mai destinazioni valide per il flusso di inoltro.
 * Il contenuto può essere copiato solo da e verso i servizi di authoring.
 * Non è possibile eseguire operazioni simultanee di copia del contenuto nello stesso ambiente.
 * È possibile specificare fino a 50 percorsi per set di contenuti. Non ci sono limitazioni per i percorsi esclusi.
