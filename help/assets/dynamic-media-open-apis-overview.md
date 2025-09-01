@@ -3,10 +3,10 @@ title: Dynamic Media con funzionalità OpenAPI
 description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Media con funzionalità OpenAPI e come abilitarlo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1062'
-ht-degree: 100%
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Dynamic Media con funzionalità OpenAPI offre i seguenti vantaggi chiave:
 
 * **Consegna ottimizzata per il web**: le risorse digitali vengono consegnate in formati ottimizzati per il web in modo da migliorare i web vitals di base delle esperienze digitali. Ciò include il supporto per le rappresentazioni WebP per le immagini, lo streaming adattivo tramite protocolli HLS o DASH per i video e le rappresentazioni originali per i documenti.
 
-* **Trasformazione dinamica delle risorse**: il sistema consente la trasformazione immediata delle immagini utilizzando i parametri URL noti come modificatori di immagini. [Ad esempio, larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e ritaglio avanzato](/help/assets/deliver-assets-apis.md). Le rappresentazioni trasformate vengono generate dinamicamente e consegnate senza problemi tramite la rete CDN.
+* [Trasformazione dinamica delle risorse](https://developer.adobe.com/experience-cloud/experience-manager-apis): il sistema consente la trasformazione immediata delle immagini utilizzando i parametri URL noti come modificatori di immagini. Ad esempio, larghezza, altezza, rotazione, capovolgimento, qualità, ritaglio, formato e ritaglio avanzato. Le rappresentazioni trasformate vengono generate dinamicamente e consegnate senza problemi tramite la rete CDN.
 
 * **Consegna sicura delle risorse**: Dynamic Media con funzionalità OpenAPI offre un meccanismo per controllare l’accesso alle risorse digitali. Puoi specificare ruoli o gruppi di utenti come metadati per le risorse da proteggere e impostare un intervallo di tempo predefinito durante il quale [solo gli utenti autorizzati possono accedere a tali risorse](/help/assets/restrict-assets-delivery.md). Gli URL di consegna per le risorse protette non vengono risolti per gli utenti non autorizzati durante il periodo limitato.
 
