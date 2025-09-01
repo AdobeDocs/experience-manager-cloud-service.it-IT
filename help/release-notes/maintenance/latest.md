@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 38%
+source-wordcount: '632'
+ht-degree: 37%
 
 ---
 
@@ -65,6 +65,8 @@ Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi riso
 ### Problemi noti {#known-issues-21994}
 
 * Apache HTTPD versione 2.4.65 introduce modifiche che possono interessare determinate configurazioni a causa di nuove restrizioni implementate come parte di correzioni di sicurezza. Queste correzioni risolvono alcune vulnerabilità garantendo che le direttive come `RequestHeader set`, `edit` e `edit_r` utilizzate per modificare l&#39;intestazione Content-Type siano ora limitate correttamente alle intestazioni di richiesta. Questa modifica impedisce modifiche non desiderate alle intestazioni di risposta, in particolare per il contenuto statico.
+* Apache HTTPD versione 2.4.65 introduce modifiche in mod_proxy quando si utilizzano connessioni ProxyRemote. In caso di problemi, imposta il flag disablereuse su On.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Funzioni e API obsolete {#deprecated-21994}
 
