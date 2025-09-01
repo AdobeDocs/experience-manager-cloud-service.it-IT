@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '585'
+ht-degree: 4%
 
 ---
 
-
 # Creare una comunicazione interattiva
+
+>[!NOTE]
+>
+> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+
+>[!IMPORTANT]
+>
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per i primi utenti.
 
 La comunicazione interattiva ti consente di creare, gestire e distribuire comunicazioni personalizzate e interattive, tra cui servizio clienti, fatturazione, documenti di onboarding, lettere di offerta, aggiornamenti dell’account e altro ancora. È progettato per supportare qualsiasi scenario in cui contenuti dinamici e specifici per l’utente migliorino l’esperienza di comunicazione nei diversi settori.
 
