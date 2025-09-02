@@ -73,7 +73,7 @@ Gli autori possono selezionare [!DNL Image Presets] durante la modifica delle pa
 Per utilizzare i predefiniti immagine nella pagina di authoring, effettua le seguenti operazioni:
 1. Passa alla pagina di authoring di Sites.
 1. Eseguire i passaggi descritti nella sezione [Accedere alle risorse remote nell&#39;Editor pagina di AEM](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) per utilizzare il pannello [!DNL Asset Selector] per selezionare una risorsa.
-1. Nel pannello [!DNL asset selector], scorri verso il basso fino al tipo di predefinito **** e specifica `Preset=Preset Name` nel campo **[!UICONTROL Modificatori immagine]**.
+1. Nel pannello [!DNL asset selector], scorri verso il basso fino al tipo di predefinito **&#x200B;**&#x200B;e specifica `Preset=Preset Name` nel campo **[!UICONTROL Modificatori immagine]**.
    ![predefinito](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Imaging avanzato{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
