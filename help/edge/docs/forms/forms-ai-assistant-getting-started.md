@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 15%
+source-wordcount: '2013'
+ht-degree: 6%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-> La funzionalità Forms Experience Builder è disponibile nel **programma per utenti precoci**. Se sei interessato, invia una breve e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso alla funzionalità.
+> La funzionalità Forms Experience Builder è disponibile nel **programma di accesso anticipato**. Se sei interessato, invia una breve e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso alla funzionalità.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi potrebbero cambiare man mano che Forms Experience Builder continua ad evolversi durante il programma per i primi utenti.
+> **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi potrebbero cambiare man mano che Forms Experience Builder continua ad evolversi durante il programma Early Access.
 
 Questa guida completa ti aiuta a iniziare a creare e gestire i moduli utilizzando la tecnologia di intelligenza artificiale per conversazioni. Sia che si tratti di un principiante che desidera creare il primo modulo o di un utente avanzato che desidera sfruttare funzionalità sofisticate, è possibile trovare informazioni dettagliate ed esempi pratici per guidare il percorso attraverso le funzionalità di Forms Experience Builder.
 
@@ -30,11 +30,35 @@ Questa guida completa ti aiuta a iniziare a creare e gestire i moduli utilizzand
 
 ### &#x200B;1. Richiedi accesso
 
-Se non hai accesso a Forms Experience Builder:
+Forms Experience Builder è attualmente disponibile come parte del programma di accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
 
-1. **Richiedi accesso**: invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dall&#39;e-mail aziendale
-2. **Includi informazioni**: nome organizzazione e dettagli progetto
-3. **Attendi approvazione**: Adobe rivedrà e fornirà istruzioni di onboarding
+**Informazioni richieste**
+
+- **ID organizzazione IMS**: identificatore organizzazione Adobe
+- **ID programma**: identificatore del programma specifico in Adobe Experience Cloud
+- **Dettagli progetto**: Timeline, ambito e casi d&#39;uso previsti
+- **E-mail ufficiale di lavoro**: associata all&#39;account Adobe della tua organizzazione
+
+**Come ottenere l&#39;ID organizzazione IMS e l&#39;ID programma**
+
+Per i passaggi dettagliati per individuare l’ID organizzazione IMS e l’ID programma, consulta:
+
+- [Guida alla configurazione dell&#39;organizzazione Adobe Experience Cloud](/help/onboarding/cloud-manager-introduction.md)
+- [Gestione di programmi e ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+**Richiedi accesso**
+
+1. Raccogli l’ID organizzazione IMS e l’ID programma utilizzando le guide precedenti
+2. Invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) richiedendo l&#39;accesso
+3. Includi nella richiesta:
+   - Nome organizzazione e ID organizzazione IMS
+   - ID programma
+   - Timeline e ambito del progetto
+   - Casi d’uso previsti e obiettivi aziendali
+
+>[!IMPORTANT]
+>
+> **Programma di disponibilità limitata**: l&#39;accesso a Forms Experience Builder è soggetto all&#39;approvazione delle parti interessate interne. Adobe esaminerà la tua richiesta in base alla capacità del programma e all’allineamento con i criteri di accesso in anteprima. L&#39;approvazione non è garantita e dipende dalla disponibilità del programma corrente.
 
 ### &#x200B;2. Verificare che Forms sia abilitato
 
@@ -44,58 +68,81 @@ Prima di utilizzare Forms Experience Builder, assicurati che [AEM Forms sia abil
 ### &#x200B;3. Configurare l’ambiente
 
 
-* **Per Edge Delivery Services (EDS):**
+- **Per Edge Delivery Services (EDS):**
 
-   * [Ambiente di configurazione per Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   * [Creare un nuovo modulo utilizzando il modello Forms di Edge Delivery](/help/edge/docs/forms/universal-editor/create-forms.md)
+   - [Ambiente di configurazione per Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Creare un nuovo modulo utilizzando il modello Forms di Edge Delivery](/help/edge/docs/forms/universal-editor/create-forms.md)
 
-* **Per moduli basati su Componenti core:**
+- **Per moduli basati su Componenti core:**
 
-   * Nell’istanza di Adobe Experience Manager, accedi a Forms > Forms e documenti
-   * [Creare una nuova pagina utilizzando il modello Componenti core](/help/forms/creating-adaptive-form-core-components.md)
+   - Nell’istanza di Adobe Experience Manager, accedi a Forms > Forms e documenti
+   - [Creare una nuova pagina utilizzando il modello Componenti core](/help/forms/creating-adaptive-form-core-components.md)
+
 
 ## Inizio rapido
 
 ### Accedere a Forms Experience Builder
 
-**Editor universale**
+Forms Experience Builder è disponibile nell’interfaccia utente di gestione Forms, nell’editor universale e nell’editor di Forms adattivo. Per accedere al modulo è possibile utilizzare uno dei seguenti metodi:
 
-* Aprire la pagina EDS in Universal Editor
-* Cerca l’icona Forms Experience Builder nel pannello a sinistra
-* Fare clic per aprire l&#39;interfaccia di conversazione
+**Interfaccia utente di gestione Forms (per i componenti core)**
 
-**Editor dei moduli adattivi**
+1. **Passa a Forms**: vai a AEM > Forms > Forms e documenti
+1. Fai clic sull’icona di Forms Experience Builder nella barra degli strumenti. Si trova in alto a sinistra nell’interfaccia utente.
+   ![Icona Assistente IA*](/help/edge/docs/forms/assets/forms-manager.gif){width="50%"}
+1. Inizia la creazione del modulo di conversazione
 
-* Passa a: AEM > Forms > Forms e documenti
-* Creare o aprire un modulo basato su Componenti core per la modifica
-* Fai clic sull’icona di Forms Experience Builder nella barra degli strumenti dell’editor
+
+**Editor Forms adattivo (per componenti core)**
+
+1. Passa a AEM > Forms > Forms e documenti
+2. [Creare un nuovo modulo utilizzando il modello Componenti core](/help/forms/creating-adaptive-form-core-components.md)
+3. Apri il modulo per la modifica
+4. Fai clic sull’icona di Forms Experience Builder nella barra degli strumenti dell’editor
+   ![Icona Assistente IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
+
+5. Inizia la creazione del modulo di conversazione
+
+
+**Editor universale (per Edge Delivery Services Forms)**
+
+1. Segui la [guida all&#39;installazione di Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) per creare la tua pagina EDS
+1. Passare alla pagina EDS in Universal Editor
+1. Cerca l’icona Forms Experience Builder nel pannello a destra
+1. Fare clic per aprire l&#39;interfaccia di conversazione
+
+
 
 ### Il primo modulo
 
-Prova questa semplice conversazione per iniziare:
+| Esempio di conversazione |   |
+|--------------------------------------------------------------------------------------------------------------------------------------------|---|
+| **Prova questa conversazione per creare un modulo di contatto completo (basato sulla demo del Summit):**<br><br>**Tu:** &quot;Crea un modulo di contatto per acquisire informazioni personali tra cui nome completo, indirizzo e-mail, numero di telefono, nome della società, titolo del processo e un campo del messaggio per le richieste&quot;<br><br>**AI:** Seleziona un modello<br>    Un elenco a discesa per selezionare un modello <br><br>**AI:** Seleziona un tema<br>    Un elenco a discesa per selezionare un tema <br><br>**AI:** Crea modulo | ![Primo modulo](/help/edge/docs/forms/assets/create-form.png) |
+| <br>**AI:** Apri modulo creato | </br> Il modulo viene creato e aperto nell&#39;editor |
 
-```
-👤 You: "Create a simple contact form"
-🤖 AI: "I'll create a contact form with name, email, and message fields for you."
-
-👤 You: "Make the email field required"
-🤖 AI: "Updated the email field to be required with validation."
-```
 
 ### Comandi essenziali
 
-| Simbolo | Scopo | Guida all’uso |
-|--------|---------|------------|
-| `/` | Azioni rapide e collegamenti | Digitare `/create` per la creazione del modulo, `/help` per assistenza |
-| `@` | Fai riferimento a campi modulo esistenti | Digitare `@fieldName` per modificare campi specifici (ad esempio, `@email`) |
-| Testo normale | Conversazione naturale | Descrivi cosa desideri: &quot;Aggiungi un campo numero di telefono obbligatorio&quot; |
+| Simbolo | Scopo | Esempio di utilizzo |
+|--------|---------|---------------|
+| `/` | Azioni rapide e collegamenti | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
+| `@` | Fai riferimento a campi modulo esistenti | `@email`, `@firstName`, `Make @phoneNumber required` |
+| Testo normale | Conversazione naturale | &quot;Aggiungi un campo numero di telefono richiesto&quot;, &quot;Crea convalida per e-mail&quot; |
+
+**Esempi di comandi specifici:**
+
+- `/create-form customer survey` - Crea un nuovo modulo di sondaggio cliente
+- `/add-field @email validation` - Aggiunge la convalida al campo e-mail esistente
+- `/create-rule show @spouse if @maritalStatus equals married` - Crea logica condizionale
+- `/configure-submit to email support@company.com` - Configura l&#39;invio di e-mail
+- `/help multi-step forms` - Ottiene informazioni sulla creazione di moduli con più passaggi
 
 ### Suggerimenti per il successo
 
-* **Specificare**: &quot;Aggiungere un campo e-mail obbligatorio con convalida&quot; funziona meglio di &quot;aggiungere e-mail&quot;
-* **Riferimento a campi esistenti**: utilizzare `@fieldName` per modificare i moduli
-* **Chiedi aiuto**: digita `/help` seguito dalla domanda
-* **Iterazione**: apporta una modifica alla volta per ottenere risultati ottimali
+- **Specificare**: &quot;Aggiungere un campo e-mail obbligatorio con convalida&quot; funziona meglio di &quot;aggiungere e-mail&quot;
+- **Riferimento a campi esistenti**: utilizzare `@fieldName` per modificare i moduli
+- **Chiedi aiuto**: digita `/help` seguito dalla domanda
+- **Iterazione**: apporta una modifica alla volta per ottenere risultati ottimali
 
 
 ## Metodi per iniziare a creare un modulo
@@ -106,9 +153,9 @@ Descrivi i requisiti del modulo nel linguaggio naturale e Forms Experience Build
 
 **Esempi:**
 
-* &quot;Crea un modulo di richiesta di prestito con informazioni personali, dettagli finanziari e caricamenti di documenti&quot;
-* &quot;Creare un modulo di feedback dei clienti con valutazioni, commenti e categorie di prodotti&quot;
-* &quot;Ho bisogno di un modulo di registrazione in più passaggi per una conferenza con elaborazione dei pagamenti&quot;
+- &quot;Crea un modulo di richiesta di prestito con informazioni personali, dettagli finanziari e caricamenti di documenti&quot;
+- &quot;Creare un modulo di feedback dei clienti con valutazioni, commenti e categorie di prodotti&quot;
+- &quot;Ho bisogno di un modulo di registrazione in più passaggi per una conferenza con elaborazione dei pagamenti&quot;
 
 ### &#x200B;2. Importare e convertire
 
@@ -116,27 +163,25 @@ Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 
 **Origini supportate:**
 
-* **PDF forms**: carica PDF statici per convertirli in moduli digitali interattivi con convalide.
-* **Schermate o immagini**: carica foto dei moduli cartacei per generare versioni digitali funzionali
-* **HTML Forms**: importa e converti i moduli Web di base in AEM Forms avanzato con funzionalità avanzate
-* **XFA Forms**: convertire i moduli basati su XFA legacy in moduli reattivi moderni
-* **URL**: converti i moduli web esistenti in AEM Forms nativi con interfaccia utente migliorata
+- **PDF forms**: carica PDF statici per convertirli in moduli digitali interattivi con convalide.
+- **Schermate o immagini**: carica foto dei moduli cartacei per generare versioni digitali funzionali
+- **XFA Forms**: convertire i moduli basati su XFA legacy in moduli reattivi moderni
 
 **Come importare:**
 
 1. Fai clic sull’icona dell’allegato nell’interfaccia di Forms Experience Builder
 2. Carica il file (PDF, immagine, progettazione Figma, ecc.)
 3. Descrivi le tue esigenze:
-   * &quot;Converti questo modulo PDF in una versione digitale&quot;
-   * &quot;Crea un modulo che corrisponda a questo layout di schermata&quot;
-   * “Crea questo modulo dalla mia progettazione Figma”
+   - &quot;Converti questo modulo PDF in una versione digitale&quot;
+   - &quot;Crea un modulo che corrisponda a questo layout di schermata&quot;
+   - “Crea questo modulo dalla mia progettazione Figma”
 
 **Tipi di file supportati:**
 
-* **Immagini** (PNG, JPG, GIF): layout di moduli, modelli di interfaccia utente, moduli digitalizzati
-* **File PDF**: moduli, specifiche e documenti esistenti
-* **File Figma**: prototipi di progettazione, linee guida del brand
-* **File di progettazione**: riferimenti visivi, guide di stile
+- **Immagini** (PNG, JPG, GIF): layout di moduli, modelli di interfaccia utente, moduli digitalizzati, schizzi disegnati a mano
+- **File PDF**: moduli, specifiche, documenti, Acroform, moduli XFA esistenti
+- **Schermate**: schermate di app desktop/mobili, foto in formato cartaceo, schizzi su lavagna
+- **Schizzi disegnati a mano**: schizzi di tovagliolo, wireframe, disegni concettuali (fotografati)
 
 ### Interazioni chiave
 
@@ -144,91 +189,69 @@ Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 
 **Aggiunte di base:**
 
-```
-👤 You: "Add a section for personal information"
-🤖 AI: "Added a personal information panel with standard fields"
-
-👤 You: "Include a file upload for resume"
-🤖 AI: "Added a secure file upload component for documents"
-
-👤 You: "Add a dropdown for country selection"
-🤖 AI: "Added a country dropdown with common options"
-```
+    👤 Sei: &quot;Aggiungi una sezione per informazioni personali&quot;
+    👤 Sei: &quot;Includi un caricamento di file per la ripresa&quot;
+    👤 Sei: &quot;Aggiungi un menu a discesa per la selezione del paese&quot;
 
 **Specifiche dettagliate:**
 
-```
-👤 You: "Add a personal information panel with fields for full name, date of birth, phone number, and email address"
-🤖 AI: "Created a personal information panel with all requested fields and appropriate validation"
-
-👤 You: "Include a secure file upload component for documents, limited to PDF files under 5MB"
-🤖 AI: "Added a file upload field with PDF restriction and 5MB size limit"
-
-👤 You: "Add a country dropdown with options for USA, Canada, UK, and Germany"
-🤖 AI: "Added a country dropdown with the specified options"
-```
+    👤 You: &quot;Aggiungi un pannello di informazioni personali con campi per nome completo, data di nascita, numero di telefono e indirizzo e-mail&quot;
+    👤 You: &quot;Includi un componente di caricamento file sicuro per i documenti, limitato ai file PDF sotto 5 MB&quot;
+    👤 You: &quot;Aggiungi un elenco a discesa paese con opzioni per USA, Canada, Regno Unito e Germania&quot;
 
 #### Creazione di un comportamento dinamico
 
 **Logica semplice:**
 
-```
-👤 You: "Show additional fields when 'Other' is selected"
-🤖 AI: "Created a conditional rule that shows additional fields when 'Other' is chosen"
-
-👤 You: "Make the email field required"
-🤖 AI: "Updated the email field to be required with validation"
-
-👤 You: "Calculate the total automatically"
-🤖 AI: "Added calculation logic to automatically compute totals"
-```
+    👤 You: &quot;Show additional fields when &#39;Other&#39; is selected&quot;
+    🤖 AI: &quot;Creata una regola condizionale che mostra campi aggiuntivi quando si sceglie &#39;Other&#39;&quot;
+    
+    👤 You: &quot;Rendi obbligatorio il campo e-mail&quot;
+    🤖 AI: &quot;Aggiornato il campo e-mail affinché sia obbligatorio con la convalida&quot;
+    
+    👤 You: &quot;Calcola il totale automaticamente&quot;
+    🤖 AI: &quot;Aggiunta della logica di calcolo per calcolare automaticamente i totali&quot;
 
 **Regole di business complesse:**
 
-```
-👤 You: "Show the spouse information fields only when marital status is set to 'Married'"
-🤖 AI: "Created a conditional rule that displays spouse fields based on marital status"
-
-👤 You: "Calculate the total cost by multiplying quantity and price, then add 10% tax"
-🤖 AI: "Added calculation logic with quantity, price, and tax computation"
-
-👤 You: "Enable the submit button only when all required fields are completed and terms are accepted"
-🤖 AI: "Created validation logic that enables submission only when all conditions are met"
-```
+    👤 Sei: &quot;Mostra i campi di informazioni sul coniuge solo quando lo stato civile è impostato su &#39;Coniugato&#39;&quot;
+    🤖 AI: &quot;Creata una regola condizionale che visualizza i campi del coniuge in base allo stato civile&quot;
+    
+    👤 Tu: &quot;Calcola il costo totale moltiplicando la quantità e il prezzo, quindi aggiungi il 10% di imposta&quot;
+    🤖 AI: &quot;Aggiunta della logica di calcolo con la quantità, il prezzo e il calcolo delle imposte&quot;
+    
+    👤 Tu: &quot;Abilita il pulsante Invia solo quando tutti i campi obbligatori sono completati e i termini sono accettati&quot;
+    🤖 AI: &quot;Creazione della logica di convalida che abilita l&#39;invio solo quando tutte le condizioni sono soddisfatte&quot;
 
 #### Layout e progettazione dei moduli
 
 **Modifiche del layout:**
 
-```
-👤 You: "Make this a multi-step form"
-🤖 AI: "Converted the form to a progressive layout with navigation"
-
-👤 You: "Organize fields in two columns"
-🤖 AI: "Updated the layout to display fields in a two-column arrangement"
-
-👤 You: "Convert to an accordion layout"
-🤖 AI: "Transformed the form to use accordion-style sections"
-```
+    👤 Sei: &quot;Rendi questo un modulo con più passaggi&quot;
+    🤖 AI: &quot;Ha convertito il modulo in un layout progressivo con navigazione&quot;
+    
+    👤 Tu: &quot;Organizza i campi in due colonne&quot;
+    🤖 AI: &quot;Ha aggiornato il layout per visualizzare i campi in una disposizione a due colonne&quot;
+    
+    👤 Tu: &quot;Converti in un layout a soffietto&quot;
+    🤖 AI: &quot;Ha trasformato il modulo per utilizzare le sezioni in stile soffietto&quot;
 
 **Miglioramenti alla progettazione:**
 
-```
-👤 You: "Create a wizard-style form with 3 steps: personal info, preferences, and review"
-🤖 AI: "Created a wizard form with three distinct steps and navigation"
+    👤 Sei: &quot;Crea un modulo stile procedura guidata con 3 passaggi: informazioni personali, preferenze e revisione&quot;
+    🤖 AI: &quot;Crea un modulo procedura guidata con tre passaggi distinti e navigazione&quot;
+    
+    👤 Tu: &quot;Disponi i campi indirizzo in un layout compatto a due colonne&quot;
+    🤖 AI: &quot;Organizza i campi indirizzo in un formato compatto a due colonne&quot;
+    
+    👤 Tu: &quot;Aggiorna il layout in modo che corrisponda al wireframe allegato&quot;
+    🤖 AI: &quot;Modificato il layout in modo che corrisponda al riferimento progettazione fornito&quot;
 
-👤 You: "Arrange the address fields in a compact two-column layout"
-🤖 AI: "Organized address fields in a compact two-column format"
-
-👤 You: "Update the layout to match the attached wireframe"
-🤖 AI: "Modified the layout to match the provided design reference"
-```
-
-### Configurazione dell’integrazione
+### Invia configurazione
 
 Forms Experience Builder può configurare vari endpoint di invio per collegare i moduli a sistemi e servizi esterni:
 
-| Tipo di integrazione | Comando di installazione | Caso d’uso |
+| Invia tipo di azione | Comando di installazione | Caso d’uso |
 |------------------|---------------|----------|
 | **E-mail** | &quot;Invia modulo a e-mail&quot; | Notifiche e conferme per l’invio di moduli |
 | **API REST** | &quot;Invia all’endpoint REST&quot; | Applicazioni personalizzate e sistemi di terze parti |
@@ -236,18 +259,16 @@ Forms Experience Builder può configurare vari endpoint di invio per collegare i
 | **Flusso di lavoro** | &quot;Connetti a Power Automate&quot; | Automazione e approvazione dei processi aziendali |
 | **Marketing** | &quot;Integrare con Marketo&quot; | Gestione dei lead e automazione del marketing |
 
-**Esempi di integrazione avanzata:**
+**Esempi di configurazione invio avanzata:**
 
-```
-👤 You: "Send form submissions to hr@company.com and create a case in our CRM system"
-🤖 AI: "Configured email submission and CRM integration"
-
-👤 You: "Submit data to our REST API endpoint and trigger the new customer workflow"
-🤖 AI: "Set up REST API submission with workflow triggers"
-
-👤 You: "Email responses to the sales team and add the lead to our marketing automation platform"
-🤖 AI: "Configured multi-channel submission with email and marketing automation"
-```
+    👤 Tu: &quot;Invia invii di moduli a hr@company.com e crea un caso nel nostro sistema di gestione delle relazioni con i clienti&quot;
+    🤖 AI: &quot;Invio di e-mail configurato e azione di invio CRM&quot;
+    
+    👤 Tu: &quot;Invia dati all&#39;endpoint REST API e attiva il nuovo flusso di lavoro del cliente&quot;
+    🤖 AI: &quot;Configura l&#39;invio REST API con i trigger del flusso di lavoro&quot;
+    
+    👤 Tu: &quot;Invia risposte e-mail al team di vendita e aggiungi il lead alla nostra piattaforma di automazione marketing&quot;
+    🤖 AI: &quot;Invio multicanale configurato con automazione e-mail e marketing&quot;
 
 
 
@@ -260,134 +281,30 @@ Forms Experience Builder può configurare vari endpoint di invio per collegare i
 
 Creare regole di convalida e business sofisticate che rispondano alle interazioni degli utenti e garantiscano l&#39;integrità dei dati:
 
-```
-👤 You: "Show the address section only if the user selects 'Ship to different address'"
-🤖 AI: "Created a conditional rule that shows/hides the address panel based on checkbox selection"
-```
+    👤 Sei: &quot;Mostra la sezione dell&#39;indirizzo solo se l&#39;utente seleziona &#39;Spedisci a indirizzo diverso&#39;&quot;
+    🤖 AI: &quot;Creata una regola condizionale che mostra/nasconde il pannello dell&#39;indirizzo in base alla selezione della casella di controllo&quot;
 
 ### Creazione di moduli in più passaggi
 
-```
-👤 You: "Create a progressive form with 3 steps: personal info, preferences, confirmation"
-🤖 AI: "Created a progressive form with navigation between steps and validation at each stage"
-```
+    👤 You: &quot;Crea un modulo progressivo con 3 passaggi: informazioni personali, preferenze, conferma&quot;
+    🤖 AI: &quot;Crea un modulo progressivo con navigazione tra passaggi e convalida in ogni fase&quot;
 
 ### Tipi di campo avanzati
 
-* Caricamento di file con restrizioni di convalida e dimensione per la gestione dei documenti
-* Selettori di date con vincoli e regole aziendali per la programmazione
-* Elenchi a discesa con opzioni dinamiche che cambiano in base alle selezioni effettuate dagli utenti
-* Pulsanti di scelta con logica condizionale per strutture decisionali complesse
+- Caricamento di file con restrizioni di convalida e dimensione per la gestione dei documenti
+- Selettori di date con vincoli e regole aziendali per la programmazione
+- Elenchi a discesa con opzioni dinamiche che cambiano in base alle selezioni effettuate dagli utenti
+- Pulsanti di scelta con logica condizionale per strutture decisionali complesse
 
 
 ### Conversione da PDF a modulo
 
-```
-👤 You: "Convert this PDF into an interactive form"
-🤖 AI: "Analyzed the PDF and created a form with appropriate field types and validation"
-```
+    👤 Sei: &quot;Converti questo PDF in un modulo interattivo&quot;
+    🤖 AI: &quot;Ha analizzato PDF e creato un modulo con i tipi di campo e la convalida appropriati&quot;
 
-### Conversione da URL a modulo
 
-```
-👤 You: "Create a form from this website"
-🤖 AI: "Extracted form elements and created a native AEM Form with enhanced functionality"
-```
 
-### Analisi delle prestazioni
 
-```
-👤 You: "Analyze this form's conversion performance"
-🤖 AI: "Provided insights on form effectiveness and suggested optimizations"
-```
-
-### Personalizzazione avanzata
-
-#### Regole di convalida personalizzate
-
-* Dipendenze dei campi che creano un comportamento dinamico del modulo basato sugli input dell’utente
-* Logica condizionale complessa che adatta l’esperienza del modulo alle esigenze dell’utente
-* Messaggi di errore personalizzati che forniscono indicazioni chiare agli utenti
-* Convalida tra campi che garantisce la coerenza dei dati tra più input
-
-#### Ottimizzazione del layout
-
-* Tempi di risposta mobili che garantiscono il funzionamento ottimale dei moduli su tutti i dispositivi
-* Conformità in materia di accessibilità che rende i moduli utilizzabili da persone con disabilità
-* Miglioramenti nella progettazione visiva che migliorano il coinvolgimento degli utenti e i tassi di completamento
-* Miglioramenti dell’esperienza utente che riducono l’attrito e migliorano la soddisfazione
-
-#### Flussi di lavoro di integrazione
-
-* Processi di approvazione in più fasi che indirizzano l’invio dei moduli tramite i flussi di lavoro aziendali
-* Trasformazione dei dati che converte i dati del modulo in formati richiesti da sistemi esterni
-* Logica di business personalizzata che applica regole e calcoli specifici all&#39;invio di moduli
-* Gestione avanzata degli errori che fornisce un ripristino agevole dai problemi di sistema
-
-## Riferimento comando
-
-### Comandi essenziali
-
-| Simbolo | Scopo | Guida all’uso |
-|--------|---------|------------|
-| `/` | Azioni rapide e collegamenti | Digitare `/create` per la creazione del modulo, `/help` per assistenza |
-| `@` | Fai riferimento a campi modulo esistenti | Digitare `@fieldName` per modificare campi specifici (ad esempio, `@email`) |
-| Testo normale | Conversazione naturale | Descrivi cosa desideri: &quot;Aggiungi un campo numero di telefono obbligatorio&quot; |
-
-### Comandi barra
-
-| Comando | Contesto | Esempio di utilizzo |
-|---------|---------|---------------|
-| `/create-form` | Tutti gli ambienti | `/create-form customer survey` |
-| `/add-form` | Editor universale | `/add-form contact form` |
-| `/update-layout` | Editor modulo | `/update-layout wizard with 3 steps` |
-| `/update-field` | Editor modulo | `/update-field @email to be required` |
-| `/create-rule` | Editor modulo | `/create-rule show @spouse if married` |
-| `/create-panel` | Editor modulo | `/create-panel Personal Information` |
-| `/configure-submit` | Editor modulo | `/configure-submit to email support` |
-| `/help` | Tutti gli ambienti | `/help multi-step forms` |
-
-### Riferimenti campo
-
-Utilizza `@fieldName` per fare riferimento ai campi esistenti:
-
-* `@firstName`, `@lastName` * Campi nome
-* `@email`, `@phoneNumber` * Campi di contatto
-* `@address`, `@city`, `@zipCode` * Campi indirizzo
-* `@dateOfBirth`, `@startDate` * Campi data
-
-### Tipi componente
-
-Utilizza questi termini per descrivere gli elementi del modulo:
-
-* `text input` * Campo di testo a riga singola
-* `text area` * Campo di testo su più righe
-* `dropdown` * Seleziona elenco con opzioni
-* `checkbox` * Casella di controllo singola
-* `checkbox group` * Più caselle di controllo
-* `radio group` * Gruppo di pulsanti di scelta
-* `date picker` * Campo selezione data
-* `file upload` * Campo allegato
-* `panel` * Contenitore per il raggruppamento dei campi
-
-### Comandi di integrazione
-
-| Servizio | Comando linguaggio naturale | Requisiti |
-|---------|--------------------------|--------------|
-| E-mail | &quot;Invia invii a [e-mail]&quot; | Indirizzo e-mail valido |
-| API REST | &quot;Invia all&#39;endpoint REST [URL]&quot; | Endpoint API e credenziali |
-| Archiviazione Azure | &quot;Salva i file nell’archiviazione di Azure&quot; | Configurazione dell&#39;account di archiviazione |
-| SharePoint | &quot;Archivia in SharePoint [sito]&quot; | Accesso al sito SharePoint |
-| Power Automate | Flusso di &quot;Trigger Power Automate&quot; | Configurazione del flusso |
-| Marketo | &quot;Aggiungere lead a Marketo&quot; | Credenziali API di Marketo |
-
-### Suggerimenti
-
-1. **Usa linguaggio naturale**: l&#39;intelligenza artificiale comprende le richieste complesse e può interpretare i requisiti dettagliati
-2. **Essere specifici**: le descrizioni dettagliate producono risultati migliori e una generazione più accurata dei moduli
-3. **Iterazione**: perfeziona i moduli tramite conversazione per ottenere un&#39;esperienza utente perfetta
-4. **Sfrutta il contesto**: fai riferimento agli elementi del modulo esistenti per creare nuove versioni in base a quelli già disponibili
-5. **Verifica approfondita**: convalida tutti gli scenari utente per garantire che i moduli funzionino come previsto
 
 ## Assistenza e formazione sul prodotto
 
@@ -395,89 +312,62 @@ Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
 
 ### Fai domande come:
 
-* “Come si crea un modulo con più passaggi?”
-* “Qual è la differenza tra pannelli e sezioni?”
-* “Come si configurano le notifiche e-mail?”
-* “Quali sono le best practice per i moduli compatibili con i dispositivi mobili?”
-* “Come si applicano i temi ai moduli?”
+- “Come si crea un modulo con più passaggi?”
+- “Qual è la differenza tra pannelli e sezioni?”
+- “Come si configurano le notifiche e-mail?”
+- “Quali sono le best practice per i moduli compatibili con i dispositivi mobili?”
+- “Come si applicano i temi ai moduli?”
 
 ### Ottieni assistenza per:
 
-* Concetti e terminologia di AEM Forms
-* Istruzioni passo dopo passo per le funzioni complesse
-* Best practice e consigli
-* Risoluzione dei problemi comuni
+- Concetti e terminologia di AEM Forms
+- Istruzioni passo dopo passo per le funzioni complesse
+- Best practice e consigli
+- Risoluzione dei problemi comuni
 
 ## Best practice
 
 ### Progettazione modulo
 
-* **Semplifica**: inizia con campi essenziali e aggiungi complessità solo quando necessario per evitare di sovraffollare gli utenti
-* **Usa etichette chiare**: le finalità dei campi sono evidenti con etichette descrittive che guidano gli utenti attraverso il modulo
-* **Fornisci testo di aiuto**: guida gli utenti attraverso campi complessi con esempi e guida contestuale
-* **Verifica approfondita**: convalida tutti i percorsi utente per garantire il corretto funzionamento dei moduli in tutti gli scenari
+- **Semplifica**: inizia con campi essenziali e aggiungi complessità solo quando necessario per evitare di sovraffollare gli utenti
+- **Usa etichette chiare**: le finalità dei campi sono evidenti con etichette descrittive che guidano gli utenti attraverso il modulo
+- **Fornisci testo di aiuto**: guida gli utenti attraverso campi complessi con esempi e guida contestuale
+- **Verifica approfondita**: convalida tutti i percorsi utente per garantire il corretto funzionamento dei moduli in tutti gli scenari
 
 ### Esperienza utente
 
-* **Divulgazione progressiva**: mostra i campi rilevanti in base al contesto per ridurre il carico cognitivo e migliorare i tassi di completamento
-* **Cancella navigazione**: aiuta gli utenti a capire dove si trovano nel modulo e quali passaggi rimangono
-* **Progettazione reattiva**: assicurarsi che i moduli funzionino su tutti i dispositivi e su tutte le dimensioni dello schermo per la massima accessibilità
-* **Accessibilità**: attieniti alle linee guida WCAG per rendere i moduli utilizzabili da persone con disabilità
+- **Divulgazione progressiva**: mostra i campi rilevanti in base al contesto per ridurre il carico cognitivo e migliorare i tassi di completamento
+- **Cancella navigazione**: aiuta gli utenti a capire dove si trovano nel modulo e quali passaggi rimangono
+- **Progettazione reattiva**: assicurarsi che i moduli funzionino su tutti i dispositivi e su tutte le dimensioni dello schermo per la massima accessibilità
+- **Accessibilità**: attieniti alle linee guida WCAG per rendere i moduli utilizzabili da persone con disabilità
 
 ### Prestazioni
 
-* **Ottimizza conteggio campi**: richiedi solo le informazioni necessarie per ridurre l&#39;abbandono dei moduli e migliorare i tassi di completamento
-* **Utilizza la convalida appropriata**: evita errori prima dell&#39;invio per fornire feedback e indicazioni immediati
-* **Tassi di completamento dei test**: monitora e migliora l&#39;efficacia dei moduli tramite analisi e feedback degli utenti
-* **Aggiornamenti regolari**: i moduli sono aggiornati in base alle esigenze aziendali e alle aspettative degli utenti per prestazioni ottimali
+- **Ottimizza conteggio campi**: richiedi solo le informazioni necessarie per ridurre l&#39;abbandono dei moduli e migliorare i tassi di completamento
+- **Utilizza la convalida appropriata**: evita errori prima dell&#39;invio per fornire feedback e indicazioni immediati
+- **Tassi di completamento dei test**: monitora e migliora l&#39;efficacia dei moduli tramite analisi e feedback degli utenti
+- **Aggiornamenti regolari**: i moduli sono aggiornati in base alle esigenze aziendali e alle aspettative degli utenti per prestazioni ottimali
 
 ### Coerenza del brand
 
-* **Crea modelli marchio**: prepara modelli di modulo con marchio con i colori, i font e lo stile della tua organizzazione prima di iniziare la creazione del modulo
-* **Definisci standard di stile**: stabilisce stili di pulsante, layout di campo e linee guida di spaziatura coerenti a cui è possibile fare riferimento nei prompt
-* **Utilizzare le risorse per i marchi**: prepara logo, codici colore e linee guida per i marchi per un riferimento semplice durante la creazione dei moduli
-* **Libreria modelli**: crea una raccolta di modelli di modulo con marchio per i casi d&#39;uso comuni (contatto, registrazione, feedback)
-* **Richieste di stile**: includere istruzioni specifiche per il marchio: &quot;Utilizza il blu società (#1234AB) per i pulsanti e il font aziendale Helvetica&quot;
+- **Crea modelli marchio**: prepara modelli di modulo con marchio con i colori, i font e lo stile della tua organizzazione prima di iniziare la creazione del modulo
+- **Definisci standard di stile**: stabilisce stili di pulsante, layout di campo e linee guida di spaziatura coerenti a cui è possibile fare riferimento nei prompt
+- **Utilizzare le risorse per i marchi**: prepara logo, codici colore e linee guida per i marchi per un riferimento semplice durante la creazione dei moduli
+- **Libreria modelli**: crea una raccolta di modelli di modulo con marchio per i casi d&#39;uso comuni (contatto, registrazione, feedback)
+- **Richieste di stile**: includere istruzioni specifiche per il marchio: &quot;Utilizza il blu società (#1234AB) per i pulsanti e il font aziendale Helvetica&quot;
 
-### Suggerimenti per ottenere risultati ottimali
 
-**Avvio semplice, compilazione**
-
-* Inizia con le richieste di base: “Crea un modulo di contatto”
-* Aggiungi gradualmente i dettagli: “Aggiungi convalida al campo dell’e-mail”
-* Testa e perfeziona: “Rendi opzionale il campo del telefono”
-
-**Specifica Quando Necessario**
-
-* Invece di: “Rendilo bello”
-* Prova: “Usa colori professionali e una tipografia pulita”
-
-**Usa linguaggio naturale**
-
-* Invece di: “Aggiungi un componente di input di testo”
-* Prova: “Aggiungi un campo per il nome”
-
-**Riferimento a elementi esistenti**
-
-* Usa `@fieldName` per i campi esistenti: “Rendi @email obbligatorio”
-* Fornisci dettagli per i nomi dei campi: “Aggiorna il campo @phoneNumber”
-
-**Suddividere Richieste Complesse**
-
-* Invece di una grande richiesta, prova con più richieste più piccole
-* Creare il modulo passo dopo passo
-* Verificare ogni modifica prima di passare a quella successiva
 
 ## Risoluzione di problemi
 
-| Problema   | Correzione rapida |
+| Problema | Correzione rapida |
 |-------|-----------|
 | **Impossibile caricare l&#39;interfaccia** | Aggiorna browser, controlla la connessione Internet |
 | **Comandi non funzionanti** | Prova `/help` o usa il linguaggio naturale |
 | **@fieldName non riconosciuto** | Controlla ortografia, assicurati che il campo esista |
 | **Impossibile caricare il file** | Usa PDF/JPG/PNG inferiore a 10 MB |
 | **Il modulo ha un aspetto errato** | Essere più specifici: &quot;Rendi mobile-friendly&quot; |
-| **Integrazione non riuscita** | Verifica credenziali e autorizzazioni API |
+| **Impossibile inviare la configurazione** | Verifica credenziali e autorizzazioni API |
 
 **Hai ancora bisogno di aiuto?** Digitare `/help` seguito da una domanda specifica o contattare l&#39;amministratore di sistema.
 

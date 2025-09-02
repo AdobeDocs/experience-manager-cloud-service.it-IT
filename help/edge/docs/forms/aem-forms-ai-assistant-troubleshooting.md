@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
+source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
 
 ## Riferimento rapido - Problemi comuni
 
-| Problema   | Correzione rapida |
+| Problema | Correzione rapida |
 |-------|-----------|
 | **Impossibile caricare l&#39;interfaccia** | Aggiorna il browser, controlla la connessione Internet, verifica le autorizzazioni di accesso anticipato |
 | **Comandi non funzionanti** | Prova `/help` o usa il linguaggio naturale invece dei comandi barra |
@@ -197,7 +198,6 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
        - Messaggio (area di testo richiesta, massimo 500 caratteri)
        - Invia a notifica e-mail
    
-
 ### Problemi di layout e stile
 
 **Sintomi:**
