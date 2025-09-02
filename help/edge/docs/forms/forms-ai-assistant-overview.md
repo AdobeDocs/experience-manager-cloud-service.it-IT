@@ -6,10 +6,10 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '939'
+ht-degree: 3%
 
 ---
 
@@ -20,46 +20,21 @@ ht-degree: 2%
 >
 > **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi potrebbero cambiare man mano che Forms Experience Builder continua ad evolversi durante il programma per i primi utenti.
 
-Forms Experience Builder porta la potenza dell&#39;intelligenza artificiale a Adobe Experience Manager (AEM) Forms. Questa soluzione innovativa trasforma il modo in cui le organizzazioni creano, gestiscono e ottimizzano i propri moduli digitali attraverso interazioni nel linguaggio naturale e automazione intelligente.
+AEM Forms Experience Builder sfrutta la potenza dell’intelligenza artificiale generativa per democratizzare e accelerare la creazione e l’aggiornamento delle esperienze di moduli digitali. Consentendo flussi di lavoro basati sulle finalità guidati dalle interazioni del linguaggio naturale, consente agli utenti di progettare, modificare e ottimizzare i moduli in modo semplice e rapido.
 
-Basato sulle moderne tecnologie web e su servizi di intelligenza artificiale avanzati, Forms Experience Builder consente agli utenti tecnici e non di creare moduli sofisticati di livello professionale tramite interfacce conversazionali. Forms Experience Builder semplifica l&#39;intero processo di creazione dei moduli, sia che si tratti di un analista aziendale che necessita di un semplice modulo di registrazione o di uno sviluppatore che crea flussi di lavoro complessi in più passaggi.
+Basato sulle moderne tecnologie web e su servizi di intelligenza artificiale avanzati, Forms Experience Builder consente agli utenti tecnici e non di creare moduli sofisticati di livello professionale tramite interfacce conversazionali. Questo approccio rivoluzionario riduce il time-to-value da giorni ad ore, elimina gli ostacoli tecnici attraverso la semplicità dell’interfaccia e ridimensiona gli sforzi di modernizzazione dell’intero ecosistema di moduli.
 
-## Interfaccia conversazionale
 
-Forms Experience Builder offre un’interfaccia intuitiva basata su chat che rende la creazione di moduli semplice come una conversazione:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Forms Experience Builder                               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  👤 User: Create a customer feedback form              │
-│                                                         │
-│  🤖 AI: I'll help you create a feedback form. What    │
-│       type of feedback do you want to collect?         │
-│                                                         │
-│  👤 User: Product reviews with ratings and comments    │
-│                                                         │
-│  🤖 AI: Perfect! I've created a feedback form with:   │
-│       * Product rating (1-5 stars)                     │
-│       * Comment field                                   │
-│       * Customer email (optional)                       │
-│       * Submit to email notification                    │
-│                                                         │
-│  👤 User: Add a field for product category             │
-│                                                         │
-│  🤖 AI: Added a dropdown field with common categories  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## Funzionalità di base
 
-### Creazione di moduli basati su intelligenza artificiale
+Forms Experience Builder offre due flussi di lavoro principali per la creazione di potenti moduli digitali:
+
+### &#x200B;1. Creazione di moduli basati sull’intelligenza artificiale
 
 **Generazione modulo lingua naturale**
 
-Crea moduli completi da zero utilizzando descrizioni in inglese semplice. È sufficiente descrivere i requisiti, ad esempio &quot;Creare un modulo di feedback del cliente con scale di valutazione e campi di commento&quot; e Forms Experience Builder genera la struttura del modulo, i tipi di campo e le regole di convalida appropriati.
+Crea moduli completi da zero utilizzando descrizioni in inglese semplice. È sufficiente descrivere le proprie esigenze, ad esempio &quot;Creare un modulo di feedback del cliente con scale di valutazione e campi di commento&quot; e Forms Experience Builder genera la struttura appropriata del modulo. Utilizza il generatore di esperienze degli editor visivi per aggiungere altri campi, regole di convalida e logica di invio.
 
 **Dynamic Field Management**
 
@@ -67,27 +42,7 @@ Aggiungi, modifica o rimuovi campi modulo tramite comandi di conversazione. L’
 
 **Ottimizzazione layout**
 
-Aggiorna i layout e le configurazioni dei moduli tramite il linguaggio naturale. Richiedi modifiche quali &quot;Rendi il modulo più facile da usare&quot; o &quot;Riorganizza i campi in un flusso logico&quot; e Forms Experience Builder applica le regolazioni di stile e layout appropriate.
-
-### Importazione e conversione intelligenti
-
-**Conversione da PDF a modulo**
-
-Trasformare i documenti PDF statici in moduli interattivi e dinamici. Caricare qualsiasi documento PDF e Forms Experience Builder analizza la struttura per creare un modulo digitale corrispondente con i tipi di campo e la convalida appropriati.
-
-**URL per conversione modulo**
-
-Converti moduli web o pagine esistenti in AEM Forms. È sufficiente fornire un URL; Forms Experience Builder estrae gli elementi modulo e li ricrea come AEM Forms nativo con funzionalità avanzate.
-
-**Supporto di file multiformato**
-
-Gestisci vari tipi di file per la creazione di moduli, tra cui PDF, immagini, schermate e modelli di modulo esistenti. Forms Experience Builder è in grado di elaborare e convertire questi elementi in AEM Forms funzionali.
-
-### Logica avanzata dei moduli e integrazione
-
-**Generazione intelligente di regole**
-
-Creazione di regole complesse di convalida dei moduli e di logica di business attraverso il linguaggio naturale. Forms Experience Builder può generare una logica condizionale sofisticata, dipendenze dei campi e regole di convalida che in genere richiedono una conoscenza approfondita della codifica.
+Aggiorna i layout e le configurazioni dei moduli tramite il linguaggio naturale. Richiedi modifiche quali &quot;Modifica il layout del modulo al layout della procedura guidata&quot; e Forms Experience Builder applica le regolazioni di stile e layout appropriate.
 
 **Configurazione completa azione di invio**
 
@@ -100,126 +55,93 @@ Configura l’invio dei moduli da integrare con i sistemi aziendali esistenti:
 - **Piattaforme di marketing**: integrazione diretta con Marketo per la gestione dei lead
 - **Flussi di lavoro di AEM**: sfrutta le funzionalità del flusso di lavoro di AEM esistenti
 
-**Analisi delle prestazioni**
 
-Analizza le prestazioni di conversione dei moduli e i modelli di coinvolgimento degli utenti. Forms Experience Builder fornisce informazioni approfondite sull’efficacia dei moduli e suggerisce ottimizzazioni per migliorare i tassi di completamento e l’esperienza utente.
+### &#x200B;2. Importazione e conversione intelligenti
+
+**Formati di importazione supportati**
+
+Trasforma moduli e documenti esistenti in esperienze digitali interattive. Forms Experience Builder supporta:
+
+- **Acroforms**: PDF forms interattivo con strutture di campi esistenti
+- **PDF XFA**: architetture di moduli basate su XML complesse
+- **PDF semplici**: documenti statici convertiti in moduli interattivi
+- **Immagini e schermate**: formati JPG e PNG (verifica con il team i limiti di dimensione)
+- **Forms disegnato a mano**: schizzi e fotografie su carta
+
+
+**Processo di conversione intelligente**
+
+Il contenuto caricato viene analizzato in:
+
+- Rileva tipi di campo e relazioni
+- Mantieni il layout nella misura del possibile
+- Migliora con un design reattivo moderno
+- Aggiungere convalida avanzata e logica condizionale
+- Ottimizza per accessibilità ed esperienza mobile
 
 ## Come funziona
 
 Forms Experience Builder adotta un approccio semplice e conversazionale:
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
-│  Your Form      │    │  Initial Form   │    │  Configure      │
-│  Requirements   │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  "Create a loan application form"  →  Form with relevant        │
-│  "Add conditional logic"           →  fields and basic          │
-│  "Connect to CRM system"           →  validation rules          │
-└─────────────────────────────────────────────────────────────────┘
-```
+    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+    │ 1 Descrivere    │───▶│ 2. IA Crea │───▶│ 3. Perfeziona e    │
+    │ modulo      │    Modulo iniziale di │   │    Configurazione di │      │
+    │ requisiti   │    │                 │    │                 │
+    └─────────────────┘    └─────────────────┘    └─────────────────┘
+    │                       │                       │
+    │                       │                       │
+    ▼                       ▼                       ▼
+    ┌───────────────────────────────────────────────────────────────────────────┐
+    │ Modulo di → &quot;Crea un modulo di richiesta di prestito&quot; con relativo                  │
+    │ &quot;Aggiungi campo e-mail&quot;           Campi → e di base                          │
+    │ &quot;Imposta il valore del campo e-mail su @firstname@gmail.com&quot; → regole di convalida   │
+    └───────────────────────────────────────────────────────────────────────────┘
 
-## Esempi di casi d’uso
+## Scenari di esempio
 
-### Modulo di richiesta di prestito
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Trasformare PDF forms in Digital Forms</p>
+                    <p class="is-size-6">Converti Acroform, PDF XFA o documenti PDF semplici in moduli digitali interattivi e reattivi con funzionalità avanzate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Modernizzare la versione precedente di XFA Forms</p>
+                    <p class="is-size-6">Trasforma applicazioni XFA complesse in esperienze digitali moderne e accessibili con flussi di lavoro degli utenti migliorati.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Conversione di schermate in Forms digitale</p>
+                    <p class="is-size-6">Trasforma immagini, schermate o moduli disegnati a mano in esperienze digitali completamente funzionali.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Loan Application - Multi-Step Form                    │
-├─────────────────────────────────────────────────────────┤
-│ Step 1: Personal Information                           │
-│  🏠 Property Type: [Primary] [Investment] [Commercial] │
-│  💰 Loan Amount: [$_______] (triggers different paths) │
-│  📊 Income Verification: [W2] [Self-Employed] [Other]  │
-│                                                         │
-│ Step 2: Financial Details (conditional based on above) │
-│  ↳ If Self-Employed: Show tax returns, profit/loss     │
-│  ↳ If W2: Show employment history, pay stubs           │
-│  ↳ Complex debt-to-income calculations                 │
-│                                                         │
-│ Step 3: Compliance & Review                            │
-│  📋 Regulatory disclosures, digital signatures         │
-│  🔍 Automated eligibility pre-screening                │
-└─────────────────────────────────────────────────────────┘
-```
+<!-- #### Import and Enhance Web Forms
 
-### Modulo di richiesta di risarcimento assicurativo
+Import existing HTML forms and enhance them with advanced features while preserving existing functionality.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Insurance Claim - Adaptive Form                        │
-├─────────────────────────────────────────────────────────┤
-│ 🚗 Claim Type: [Auto] [Property] [Health] [Business]   │
-│                                                         │
-│ ↳ Auto Selected: Shows accident details, police report │
-│ ↳ Property: Shows damage assessment, repair estimates  │
-│ ↳ Health: Shows medical provider network, pre-auth     │
-│                                                         │
-│ 📎 Dynamic Document Requirements:                       │
-│   * Photos/videos of damage                            │
-│   * Police reports (auto only)                         │
-│   * Medical records (health only)                      │
-│   * Repair estimates (property only)                   │
-│                                                         │
-│ 🔄 Real-time claim status updates                      │
-└─────────────────────────────────────────────────────────┘
-```
+**Key benefits:**
 
-### Scenari di migrazione e conversione
-
-Trasforma i moduli esistenti in potenti esperienze digitali con la conversione basata sull’intelligenza artificiale.
-
-
-#### Trasformare PDF forms in Digital Forms
-
-Trasforma PDF forms con più campi in esperienze digitali dinamiche con calcoli automatizzati e design reattivo per i dispositivi mobili.
-
-**Vantaggi chiave:**
-
-- Calcolo automatico delle imposte e dipendenze dei campi
-- Firme digitali e integrazione di archiviazione elettronica
-- Ottimizzazione del layout adattabile ai dispositivi mobili
-- Riduzione del 95% degli errori di elaborazione
-
-
-#### Modernizzazione dei moduli legacy basati su XFA
-
-È possibile convertire applicazioni XFA complesse in moderne procedure guidate in più passaggi con convalida in tempo reale e conformità alle normative di accessibilità.
-
-**Vantaggi chiave:**
-
-- Interfaccia semplificata con procedura guidata in più passaggi
-- Convalida in tempo reale con aiuto contestuale
-- Integrazione del database governativo
-- Conformità completa alle linee guida WCAG 2.1 per l’accessibilità
-
-
-#### Convertire la schermata di un modulo in un modulo digitale
-
-È possibile trasformare qualsiasi modulo cartaceo in un’esperienza digitale. AEM Forms ottimizza automaticamente il layout e crea moduli digitali pronti per l’integrazione da uno screenshot.
-
-**Vantaggi chiave:**
-
-- Rilevamento intelligente del tipo di campo
-- Generazione di layout reattivo ottimizzato
-- Convalida migliorata oltre la carta originale
-- Architettura pronta per l’integrazione
-
-#### Importare e migliorare i moduli web esistenti
-
-Puoi importare il modulo web esistente e aggiungere ai moduli convalida avanzata, logica condizionale e invio multicanale senza interrompere le funzionalità esistenti.
-
-**Vantaggi chiave:**
-
-- Logica e regole di convalida avanzate
-- Comportamenti e flussi di lavoro dei campi condizionali
-- Opzioni di invio multicanale
-- Analisi integrata e tracciamento delle prestazioni
+- Advanced validation and business logic
+- Conditional field behaviors
+- Multi-channel submission options
+- Enhanced user experience design -->
 
 ## Confronto tra Forms Experience Builder e sviluppo tradizionale
 
@@ -228,46 +150,92 @@ Puoi importare il modulo web esistente e aggiungere ai moduli convalida avanzata
 | **Tempo di creazione** | 2-3 giorni | 2-3 ore |
 | **Conoscenze tecniche** | Obbligatorio | Non obbligatorio |
 | **Regole di convalida** | Codifica manuale | Linguaggio naturale |
-| **Ottimizzazione mobile** | CSS/JS manuale | Automatico |
 | **Accessibilità** | Implementazione manuale | Conformità incorporata |
-| **Aggiornamenti** | Modifiche al codice necessarie | Linguaggio naturale |
 
 
 ## Vantaggi per le organizzazioni
 
-### Creazione di moduli democratizzati
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Creazione di moduli democratizzati</p>
+                    <p class="is-size-6">Consentire agli utenti non tecnici di creare moduli sofisticati senza alcuna conoscenza di programmazione attraverso conversazioni in linguaggio naturale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Time-to-Value ridotto (TTV)</p>
+                    <p class="is-size-6">Accelera notevolmente lo sviluppo dei moduli da giorni ad ore, consentendo un più rapido lancio sul mercato per le iniziative digitali.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Semplicità dell'interfaccia</p>
+                    <p class="is-size-6">Elimina la curva di apprendimento con un'interfaccia di conversazione intuitiva, riducendo i tempi di formazione e aumentando l'adozione.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Ridimensionamento degli sforzi di modernizzazione</p>
+                    <p class="is-size-6">Modernizza in modo efficiente i portfolio di moduli legacy, preservando la logica di business e migliorando l’esperienza utente nell’intero ecosistema dei moduli.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-Consentire agli utenti non tecnici di creare moduli sofisticati senza conoscenze di programmazione. Gli analisti aziendali, gli esperti in materia e i creatori di contenuti possono tradurre direttamente le loro esigenze in forme funzionali attraverso conversazioni in linguaggio naturale.
+## Onboarding
 
-### Time-to-Value ridotto (TTV)
+Forms Experience Builder è attualmente disponibile come parte del programma di accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
 
-Accelerare notevolmente lo sviluppo dei moduli da giorni ad ore. Ciò che in precedenza richiedeva cicli di sviluppo estesi ora può essere realizzato in una singola sessione tramite IA conversazionale, consentendo un più rapido go-to-market per le iniziative digitali.
+### Informazioni richieste
 
-### Semplicità dell&#39;interfaccia
+- **ID organizzazione IMS**: identificatore organizzazione Adobe
+- **ID programma**: identificatore del programma specifico in Adobe Experience Cloud
+- **Dettagli progetto**: Timeline, ambito e casi d&#39;uso previsti
+- **E-mail ufficiale di lavoro**: associata all&#39;account Adobe della tua organizzazione
 
-Elimina la curva di apprendimento con un&#39;interfaccia di conversazione intuitiva. Gli utenti possono creare moduli complessi utilizzando il linguaggio naturale invece di imparare gli strumenti tecnici per la creazione dei moduli, riducendo i tempi di formazione e aumentando l’adozione.
 
-### Ridimensionamento degli sforzi di modernizzazione
+### Ottenere l’ID organizzazione IMS e l’ID programma
 
-Modernizzare in modo efficiente i portfolio di moduli legacy. Converti i moduli PDF, XFA e HTML esistenti in esperienze digitali dinamiche, preservando al contempo la logica di business e migliorando l’esperienza utente nell’intero ecosistema dei moduli.
+Per i passaggi dettagliati per individuare l’ID organizzazione IMS e l’ID programma, consulta:
+
+- [Guida alla configurazione dell&#39;organizzazione Adobe Experience Cloud](/help/onboarding/cloud-manager-introduction.md)
+- [Gestione di programmi e ambienti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+### Richiedi accesso
+
+1. Raccogli l’ID organizzazione IMS e l’ID programma utilizzando le guide precedenti
+2. Invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) richiedendo l&#39;accesso
+3. Includi nella richiesta:
+   - Nome organizzazione e ID organizzazione IMS
+   - ID programma
+   - Timeline e ambito del progetto
+   - Casi d’uso previsti e obiettivi aziendali
+
+>[!IMPORTANT]
+>
+> **Programma di disponibilità limitata**: l&#39;accesso a Forms Experience Builder è soggetto all&#39;approvazione delle parti interessate interne. Adobe esaminerà la tua richiesta in base alla capacità del programma e all’allineamento con i criteri di accesso anticipato. L&#39;approvazione non è garantita e dipende dalla disponibilità del programma corrente.
+
+Per ulteriori informazioni sul programma Early Access e sulle relative funzionalità, consulta la [documentazione di AEM Forms Early Access](/help/forms/early-access-ea-features.md).
+
 
 ## Guida introduttiva
 
 Per iniziare a utilizzare Forms Experience Builder, visita la [documentazione di Forms Experience Builder](forms-ai-assistant-getting-started.md). Puoi accedere a Forms Experience Builder tramite AEM Forms Editor o Universal Editor, a seconda del flusso di lavoro preferito.
 
 Per le organizzazioni che intendono trasformare i processi di creazione dei moduli, Forms Experience Builder offre una soluzione potente e intuitiva che combina la flessibilità dell’intelligenza artificiale conversazionale con la robustezza della gestione dei moduli di livello enterprise.
-
-## Onboarding e accesso anticipato
-
-Forms Experience Builder è attualmente disponibile come parte del programma di accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, eseguire la procedura seguente:
-
-1. Assicurati di utilizzare il tuo indirizzo e-mail ufficiale di lavoro associato alla tua organizzazione.
-2. Invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) richiedendo l&#39;accesso a Forms Experience Builder.
-3. Includi il nome della tua organizzazione ed eventuali dettagli rilevanti sul progetto nella richiesta per accelerare il processo di onboarding.
-
->[!NOTE]
->
-> L’accesso a Forms Experience Builder è limitato ai partecipanti approvati nel programma Early Access. Adobe rivedrà la tua richiesta e fornirà ulteriori istruzioni per l’onboarding, se hai i requisiti necessari.
-
-Per ulteriori informazioni sul programma Early Access e sulle relative funzionalità, consulta la [documentazione di AEM Forms Early Access](/help/forms/early-access-ea-features.md).
-
