@@ -8,14 +8,22 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 6%
 
 ---
 
 # Introduzione all’Editor di comunicazione interattiva
+
+>[!NOTE]
+>
+> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+
+>[!IMPORTANT]
+>
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per i primi utenti.
 
 ## Cos’è l’Editor di comunicazione interattiva?
 
@@ -40,12 +48,12 @@ I Casi D’Uso Comuni Includono:
 
 L&#39;editor di comunicazione interattiva (IC) è progettato per garantire efficienza, usabilità e controllo. Le sue funzioni consentono agli autori di creare comunicazioni visive accattivanti, personalizzate e integrate nei dati.
 
-| **Funzionalità** | **Funzionalità chiave** |
+| **Funzione** | **Funzionalità chiave** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
 | **Editor WYSIWYG** | - Perfezione dei pixel per un rendering accurato <br> - Controlli per lo stile dei caratteri <br> - Layout flessibile per un design professionale |
 | **Controllo layout** | - Posizionamento (assoluto e fluido) <br> - Funzionalità di trascinamento semplice <br> - Utilizzare le pagine master per definire layout coerenti |
 | **Componenti** | - Accesso ai nuovi componenti introdotti, tra cui tabelle, grafici e codici a barre <br> - Componenti pronti all&#39;uso per una progettazione più rapida |
-| **Associazione dei dati** | - Collegamento diretto dei componenti alle origini dati <br> - Precompilazione automatica dei campi per comunicazioni personalizzate |
+| **Binding dei dati** | - Collegamento diretto dei componenti alle origini dati <br> - Precompilazione automatica dei campi per comunicazioni personalizzate |
 | **Editor di regole** | - Configurare le convalide dinamiche <br> - Aggiungere calcoli e logica condizionale per l&#39;interattività |
 | **Libreria frammenti** | - Creazione di blocchi predefiniti modulari (intestazioni, piè di pagina, esclusioni di responsabilità, icone) <br> - Mantenimento della coerenza tra più comunicazioni |
 | **Modelli** | - Garantire l&#39;uniformità del marchio e della struttura nelle comunicazioni |
