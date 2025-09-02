@@ -198,6 +198,7 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
        - Messaggio (area di testo richiesta, massimo 500 caratteri)
        - Invia a notifica e-mail
    
+
 ### Problemi di layout e stile
 
 **Sintomi:**
