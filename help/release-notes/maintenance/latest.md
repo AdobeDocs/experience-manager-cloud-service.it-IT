@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
+source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 37%
+source-wordcount: '350'
+ht-degree: 67%
 
 ---
 
@@ -16,67 +16,47 @@ ht-degree: 37%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 21994 {#21994}
+## Versione 22171 {#22171}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 21994, rilasciata al pubblico il mercoledì 19 agosto 2025. La versione di manutenzione precedente era la 21772.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 22171, rilasciata al pubblico il mercoledì 2 settembre 2025. La versione di manutenzione precedente era la 21994.
 
-Con la versione di attivazione funzioni 2025.8.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2025.9.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
-### Nuove funzioni  {#new-features-21994}
+### Nuove funzioni  {#new-features-22171}
+
+* ASSETS-53136: Supporto per Vanity ID in Dynamic Media con OpenAPI.
+
+### Miglioramenti {#enhancements-22171}
 
 Nessuna.
 
-### Miglioramenti {#enhancements-21994}
+### Problemi risolti {#fixed-issues-22171}
 
-* GRANITE-53488: migliorare la gestione degli errori dell’endpoint deleteconf.json.
-* GRANITE-59968: consente di configurare REPLICATION_FORCE_READY_MILLIES.
-* GRANITE-60183: Apache commons-fileupload 1.6.0.
-* GRANITE-60306: Apache commons-lang 3.18.0.
-* GRANITE-60637: Apache commons-codec su 1.19.0.
-* GRANITE-60645: Apache commons-io 2.20.0.
-* GRANITE-60663: Apache commons-text 1.14.0.
-* GRANITE-60714: Driver Java Mongo 5.2.
-* GRANITE-60778: Filevault 4.0.0.
-* GRANITE-60823: Jackrabbit 2.22.2.
-* GRANITE-60967: crea metriche per il tracciamento del tempo di compilazione clientlib.
-* SKYOPS-105469: aggiunta del supporto per acsredirectMgr nell’api di correzione automatica.
-* SKYOPS-113929: aggiungi metriche per il controllo della disponibilità per la replica.
-* SKYOPS-84821: motore Sling 2.16.6.
-* SKYOPS-114322: aumentare il linguaggio del compilatore di chiusura nel livello a `ECMASCRIPT_2018`.
-
-### Problemi risolti {#fixed-issues-21994}
-
-* GRANITE-60167: l’aggiornamento dell’indice asincrono in Skyline non supporta i dati CSV.
-* GRANITE-60532: la modifica degli interruttori di valore non viene selezionata.
-* SITES-34277: è stato corretto un errore di blocco nei flussi di lavoro di traduzione per le pagine.
-* SKYOPS-105471: supporta la correzione dambaseredirect per l’autocorrezione aso.
-* SKYOPS-109532: attivazione/disattivazione del collegamento per la rimozione della funzione.
-
-#### Guide AEM {#guides-21994}
-
-* GUIDES-26688: i file di layout CSS e Pagina nei modelli PDF nativi presentano un comportamento di blocco dei file incoerente, che consente di apportare modifiche anche quando i file sono bloccati.
-* GUIDES-30900: la copia di una cartella con un numero elevato di risorse dall’interfaccia utente di Assets causa un timeout dell’API. L’operazione continua a essere eseguita nel backend e viene completata dopo un certo periodo di tempo, ma nell’interfaccia utente non viene visualizzato alcun messaggio di esito positivo o negativo o di notifica.
-* GUIDES-29090: nell’output PDF nativo, l’elenco degli indici (LOI) viene visualizzato in ordine non alfabetico e i termini degli indici nidificati non vengono raggruppati correttamente, rendendo difficile la navigazione nell’indice.
-* GUIDES-11227: Copiando una mappa DITA dall&#39;interfaccia utente di Assets, anche la Baseline associata viene copiata nella nuova mappa.
-* GUIDE-31506: la home page rimane vuota quando uno dei file elencati nel widget File recenti è basato su un modello il cui modello di origine non include una miniatura.
+* ASSETS-52510: il rilevamento di nomi file duplicati non riesce per i nomi file contenenti Unicode `U+202F`.
+* ASSETS-53489: l’eliminazione della cartella dall’interfaccia utente di visualizzazione di Assets non annulla l’approvazione di tutte le risorse contenute.
+* ASSETS-54821: &quot;Errore server&quot; intermittente in Asset Link.
+* ASSETS-55024: immagine danneggiata nel modello AEM Assets &quot;Download per e-mail&quot;.
+* ASSETS-55325: gli URL statici di Dynamic Media omettono l’estensione file dopo la ridenominazione della risorsa.
+* ASSETS-55334: la finestra di dialogo Condivisione collegamenti lampeggia brevemente e scompare o non viene mai visualizzata.
+* ASSETS-55382: i processi di risorse asincrone riavviati creano una cartella di destinazione duplicata.
+* ASSETS-55472: opzione Gestisci pubblicazione &quot;Solo pagine già pubblicate&quot; ignorata.
+* SITES-31600: errore di Contexthub js che interrompe la personalizzazione.
 
 Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemi noti {#known-issues-21994}
+### Problemi noti {#known-issues-22171}
 
-* Apache HTTPD versione 2.4.65 introduce modifiche che possono interessare determinate configurazioni a causa di nuove restrizioni implementate come parte di correzioni di sicurezza. Queste correzioni risolvono alcune vulnerabilità garantendo che le direttive come `RequestHeader set`, `edit` e `edit_r` utilizzate per modificare l&#39;intestazione Content-Type siano ora limitate correttamente alle intestazioni di richiesta. Questa modifica impedisce modifiche non desiderate alle intestazioni di risposta, in particolare per il contenuto statico.
-* Apache HTTPD versione 2.4.65 introduce modifiche in mod_proxy quando si utilizzano connessioni ProxyRemote. In caso di problemi, imposta il flag disablereuse su On.
-  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
+Nessuna.
 
-### Funzioni e API obsolete {#deprecated-21994}
+### Funzioni e API obsolete {#deprecated-22171}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-21994}
+### Correzioni di sicurezza {#security-22171}
 
-AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 2 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
+AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 7 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-21994}
+### Tecnologie incorporate {#embedded-tech-22171}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
