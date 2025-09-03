@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -28,7 +28,7 @@ La comunicazione interattiva ti consente di creare, gestire e distribuire comuni
 
 Immagina di dover inviare un estratto conto bancario, una polizza assicurativa o una bolletta per migliaia di clienti. Ognuno ha lo stesso layout ma dati personalizzati. La comunicazione interattiva (IC) rende questo possibile in modo efficiente.
 
-![Trova documento IC](/help/forms/interactive-communication/assets/Picture1.png)
+![Trova documento IC](/help/forms/interactive-communication/assets/introimg.png)
 
 La produzione manuale di questi documenti può richiedere molto tempo e spesso genera incoerenze, soprattutto quando sono necessarie personalizzazione e integrazione dei dati. Con l’Editor di comunicazione interattiva, gli utenti possono semplificare il processo di creazione della comunicazione interattiva.
 
