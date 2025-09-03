@@ -5,9 +5,9 @@ exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
 source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ La sequenza per ottenere un servizio `Session/ResourceResolver` è la seguente:
 
 1. Ottieni nomi di entità da `ServiceUserMapper` => pre-autenticazione per l’accesso all’archivio nel modo descritto di seguito
 1. Recupera ID utente da `ServiceUserMapper`
-1. Cerca `1ServiceUserConfiguration` obsoleto per l&#39;ID utente corrente
+1. Controlla se `1ServiceUserConfiguration` è obsoleto per l’ID utente corrente
 1. Accesso al servizio Sling predefinito con l’ID utente (ad esempio, una sequenza di `createAdministrativeSession` e impersonare l’ID utente del servizio)
 
 La nuova mappatura con i nomi delle entità determina il seguente accesso semplificato all’archivio:
