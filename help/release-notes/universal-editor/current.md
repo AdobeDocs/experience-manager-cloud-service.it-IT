@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: cd717eac1e4eb6eda3b2a60fc28ad63d92e858ec
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 67%
+ht-degree: 71%
 
 ---
 
@@ -47,7 +47,7 @@ La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell
 
 * [La funzione Annulla/Ripristina prima dell&#39;adozione](#undo-redo) non attiva più il ricaricamento della pagina quando un componente viene aggiunto tramite un&#39;operazione Annulla o Ripristina.
 
-## Obsoleti {#deprecations}
+## Rimozioni {#deprecations}
 
 * I componenti `text-input` e `text-area` sono stati ufficialmente dichiarati obsoleti con la [versione 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
    * In `model-definition.json`, utilizza il componente testo per creare input di testo per il pannello Proprietà.
