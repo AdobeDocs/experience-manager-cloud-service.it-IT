@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
+source-git-commit: 99e17dbc675a6dd86afddcc44e0fd9e1d84b3858
 workflow-type: tm+mt
-source-wordcount: '6571'
+source-wordcount: '6575'
 ht-degree: 98%
 
 ---
@@ -234,6 +234,7 @@ ht-degree: 98%
    + Note sulla versione dell’editor universale {#univeral-editor}
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [Note sulla versione 2025.08.14](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [Note sulla versione 2025.07.31](/help/release-notes/universal-editor/2025/2025-07-31.md)
          + [Note sulla versione 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -270,7 +271,7 @@ ht-degree: 98%
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Supporto Open ID Connect per AEM as a Cloud Service sul livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [Supporto OpenID Connect per AEM as a Cloud Service sul livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Visualizzazione principale per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
