@@ -4,10 +4,10 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ Configurando Cloud Manager per l&#39;integrazione con GitHub Cloud privato (arch
 >
 >Puoi anche aggiungere i seguenti tipi di archivio con i webhook:
 >
->* Archivi GitHub Enterprise Server (versione self-hosted di GitHub)
->* Archivi GitLab (sia `gitlab.com` che versioni con hosting autonomo di GitLab)
->* Archivi Bitbucket (sia `bitbucket.org` che Bitbucket Server, versione con hosting autonomo di BitBucket)
+>* Archivi GitHub Enterprise Server (versione con hosting autonomo di GitHub) .
+>* Archivi GitLab (sia `gitlab.com` che versioni con hosting autonomo di GitLab).
+>* Archivi Bitbucket (sia `bitbucket.org` che Bitbucket Server, versione con hosting autonomo di BitBucket).
+>* Archivi DevOps di Azure (sia [dev.azure.com](http://dev.azure.com) che versioni con hosting autonomo di Azure DevOps).
 >
 >Vedi [Aggiungi archivi esterni in Cloud Manager - versione beta privata](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -153,13 +154,13 @@ Gli archivi privati convalidati possono essere associati a [pipeline full-stack 
 
 
 
-## Note sull’utilizzo {#usage-notes}
+## Limitazioni {#limitations}
 
-* Le pipeline a livello web e di configurazione non sono supportate con gli archivi privati.
+Quando si utilizzano archivi privati con Cloud Manager si applicano determinate limitazioni.
+
 * Quando si utilizzano archivi privati su pipeline di produzione full stack, non viene creato e né inviato alcun tag Git.
 * Se l’app GitHub Adobe viene rimossa dall’organizzazione GitHub, rimuove la funzione di convalida delle richieste pull per tutti gli archivi.
 * Le pipeline che utilizzano archivi GitHub Cloud privati e il trigger di build &quot;on-commit&quot; non vengono avviati automaticamente quando un nuovo commit viene inviato al ramo selezionato.
 * La [funzionalità di riutilizzo degli artefatti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) non si applica agli archivi privati.
-* Non è possibile sospendere la convalida della richiesta di pull utilizzando il controllo GitHub di Cloud Manager.
-Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenta sempre di convalidare le richieste pull create per tale archivio.
-* Se l’organizzazione GitHub dispone di restrizioni IP, crea un caso di supporto per ricevere l’elenco degli indirizzi IP consentiti.
+* Non puoi mettere in pausa la convalida della richiesta pull tramite la verifica GitHub di Cloud Manager. Se l’archivio GitHub viene convalidato in Cloud Manager, Cloud Manager tenta sempre di convalidare le richieste pull create per tale archivio.
+* Se l’organizzazione GitHub applica restrizioni IP, apri un caso di supporto per ottenere l’elenco degli indirizzi IP che devono essere consentiti.

@@ -1,28 +1,28 @@
 ---
-title: Configurazione verifica GitHub per archivi privati
+title: Controlli delle richieste di pull per archivi privati
 description: Scopri come controllare le pipeline create automaticamente per convalidare ogni richiesta pull in un archivio privato.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# Configurazione verifica GitHub per archivi privati {#github-check-config}
+# Controlli delle richieste di pull per archivi privati {#github-check-config}
 
 Scopri come controllare le pipeline create automaticamente per convalidare ogni richiesta pull in un archivio privato.
 
-## Configurazione delle verifiche GitHub {#configuration}
+## Configurazione dei controlli dell’archivio privato {#configuration}
 
 Quando si utilizzano gli [archivi privati,](private-repositories.md#using) viene creata automaticamente una [pipeline di qualità del codice full-stack](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). Tale pipeline viene avviata ogni volta che la richiesta pull viene aggiornata.
 
 È possibile controllare questi controlli creando un file di configurazione `.cloudmanager/pr_pipelines.yml` nel ramo predefinito dell&#39;archivio privato.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
