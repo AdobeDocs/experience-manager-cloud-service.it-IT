@@ -4,7 +4,7 @@ description: Queste sono le note sulla versione 2025.09.04 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ca329ad8fe64ab4c45b01ce5906d51c8db45155
+source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 71%
@@ -24,6 +24,13 @@ Queste sono le note sulla versione del 4 settembre 2025 di Universal Editor.
 
 * Il comando Copia/Incolla è disponibile per [utenti che lo hanno adottato in anticipo](#copy-paste)
 
+### Annullare/Ripetere {#undo-redo}
+
+La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell’Editor universale.
+
+* Sono incluse le modifiche apportate nel contesto, quelle effettuate tramite il pannello Proprietà, nonché l’aggiunta (o la duplicazione), lo spostamento e l’eliminazione di blocchi.
+* Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
+
 ## Funzioni per adozione anticipata {#early-adopter}
 
 Se ti interessa testare queste nuove funzioni e condividere un feedback, invia un’e-mail al tuo Adobe Customer Success Manager dall’indirizzo e-mail associato al tuo Adobe ID.
@@ -31,13 +38,6 @@ Se ti interessa testare queste nuove funzioni e condividere un feedback, invia u
 ### Nuovo editor Rich Text {#new-rte}
 
 Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra di dialogo del collegamento, è ora disponibile nel pannello di destra.
-
-### Annullare/Ripetere {#undo-redo}
-
-La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell’Editor universale.
-
-* Sono incluse le modifiche apportate nel contesto, quelle effettuate tramite il pannello Proprietà, nonché l’aggiunta (o la duplicazione), lo spostamento e l’eliminazione di blocchi.
-* Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
 
 ### Copia/Incolla {#copy-paste}
 
