@@ -3,9 +3,9 @@ title: Anteprima risorsa e relative propriet√† in [!DNL the Content Hub]
 description: Scopri come visualizzare in anteprima risorse e propriet√† in [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '636'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi√
 * **K:** Chiudi la schermata di anteprima
 * **L:** informazioni di una risorsa che includono titolo, formato, dimensione, risoluzione, tag, tag colore e smart tag.
 
-## Formati di file supportati {#supported-formats}
+## Formati di risorse supportati {#supported-formats}
 
 [!DNL Content Hub] supporta tutti i tipi e i formati di risorse supportati dall&#39;archivio [!DNL Assets] sottostante. Nella tabella seguente sono elencati i formati di file chiave in [!DNL the Content Hub], che forniscono supporto aggiuntivo per l&#39;anteprima visiva delle risorse:
 
@@ -54,23 +54,16 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi√
      <tr>
       <th><strong>Tipo di file</strong></th>
       <th><strong>Formati supportati</strong></th>
-      <th><strong>Dimensione</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Immagine </td>
+        <td rowspan="3"> Immagine </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 pixel, massimo 40 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 pixel, massimo 40 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Massimo 250 KB</td>
     </tr>
     <tr>
         <td rowspan="4"> Video </td>
@@ -78,15 +71,12 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi√
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 pixel, massimo 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> Massimo 200 MB </td>
     </tr>
     <tr>
         <td rowspan="4"> Documento </td>
@@ -94,15 +84,12 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi√
     </tr>
     <tr>
         <td>[!UICONTROL txt] (semplice)</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td rowspan="2"> Supporti di stampa </td>
@@ -110,7 +97,6 @@ Prima di utilizzare, condividere o scaricare una risorsa, puoi visualizzarla pi√
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -125,7 +111,7 @@ Alcune propriet√† per le risorse visualizzate in [!DNL Content Hub] vengono deri
 
 * **Tag avanzati:** [!DNL The Content Hub] utilizza i servizi di contenuti avanzati di Adobe Sensei per addestrare le risorse utilizzando l&#39;algoritmo di riconoscimento sulla struttura basata su tag. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Grazie ai tag avanzati √® possibile velocizzare le attivit√† relative ai contenuti dei progetti grazie alla possibilit√† di trovare rapidamente le risorse rilevanti. Gli smart tag sono un esempio di informazioni sulla risorsa non contenute nell‚Äôimmagine. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse per impostazione predefinita.
 
-* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=it) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalit√† di IA per Sensei di Adobe.
+* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalit√† di IA per Sensei di Adobe.
 
 * Data di caricamento
 

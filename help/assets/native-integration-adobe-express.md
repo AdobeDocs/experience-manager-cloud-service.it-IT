@@ -4,9 +4,9 @@ description: L’integrazione nativa di AEM Assets con Adobe Express consente di
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '646'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,10 @@ Dopo aver incorporato le modifiche appropriate nell’area di lavoro di Express,
 
    ![Salva risorse in AEM](assets/adobe-express-share.png)
 
-2. Dalla sezione Archiviazione nel riquadro di destra, selezionare **AEM Assets**. Adobe Express visualizza la finestra di dialogo di caricamento.
+2. Dalla sezione **[!UICONTROL Consigliato]** nel riquadro di destra, seleziona **AEM Assets**. Adobe Express visualizza la finestra di dialogo di caricamento.
+
+   ![Salva risorse in AEM](assets/adobe-express-aem.png)
+
 3. Selezionare **Pagina corrente** o **Tutte le pagine**. Specifica un nome e un formato per le risorse da esportare. Puoi esportare i contenuti dell’area di lavoro nei formati PNG, JPEG, PDF, MP4, MP4+PNG o MP4+JPEG. Il formato viene regolato automaticamente in base alle risorse presenti nelle pagine dell’area di lavoro.
 Se selezioni **Pagina corrente**, la risorsa nella pagina corrente verrà salvata nella cartella di destinazione. Se si seleziona **Tutte le pagine** e il formato di esportazione non è PDF, tutte le pagine dell&#39;area di lavoro vengono salvate come file separati in una nuova cartella all&#39;interno della cartella di destinazione. Se il formato di esportazione è PDF, tutte le pagine canvas vengono salvate come un singolo file PDF nella cartella di destinazione.
 
@@ -65,20 +68,12 @@ Come best practice, Adobe consiglia di specificare i valori negli altri campi e 
 
 7. Fai clic su **[!UICONTROL Carica]** per caricare le risorse in AEM Assets.
 
-Consulta [Formati di file supportati](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] supporta tutti i tipi e i formati di risorse supportati dall&#39;archivio [!DNL Assets] sottostante. Nella tabella seguente sono elencati i formati di file chiave in [!DNL the Content Hub], che forniscono supporto aggiuntivo per l&#39;anteprima visiva delle risorse:
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>Tipo di file</strong></th>
       <th><strong>Formati supportati</strong></th>
       <th><strong>Dimensione</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Immagine </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -93,44 +88,11 @@ Consulta [Formati di file supportati](asset-properties-content-hub.md#supported-
         <td> Massimo 250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> Video </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 pixel, massimo 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> Massimo 200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Documento </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (semplice)</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Supporti di stampa </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -139,7 +101,7 @@ Consulta [Formati di file supportati](asset-properties-content-hub.md#supported-
 
 1. Per l&#39;importazione e l&#39;esportazione, il tipo di file video supportato è MP4.
 
-2. Per **importazione video MP4**, fare riferimento ai [formati di file supportati](asset-properties-content-hub.md#supported-formats). Inoltre, i video con sfondi trasparenti (canale alfa) non sono supportati.
+2. Per **importazione video MP4**, i video con sfondi trasparenti (canale alfa) non sono supportati.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
