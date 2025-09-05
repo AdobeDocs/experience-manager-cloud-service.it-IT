@@ -4,10 +4,10 @@ description: Scopri la versione 2025.9.0 di Cloud Manager in Adobe Experience Ma
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 98182e835e10b0b29aa2ae21c2a02562ca64111a
+source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 90%
+source-wordcount: '1125'
+ht-degree: 89%
 
 ---
 
@@ -41,15 +41,12 @@ La prossima versione è pianificata per il venerdì 2 ottobre 2025.
 
   Cloud Manager ora supporta le pipeline di configurazione con archivi privati su GitHub, Bitbucket, Azure DevOps e GitLab. Consulta [Controlli della richiesta di pull per archivi privati](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
-* **In Cloud Manager è stato aggiunto il supporto per i certificati SSL con ECDSA (Elliptic Curve Digital Signature Algorithm)**
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-  Cloud Manager ora supporta i certificati ECDSA. Questa funzione garantisce un livello di sicurezza elevato con chiavi di dimensioni più piccole e consente di applicare una crittografia moderna e leggera alle configurazioni CDN. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-### Pipeline solo di staging e solo di produzione {#staging-production-only-pipelines}
-
-È stato introdotto il supporto per le [pipeline solo di staging e solo di produzione](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md), che consente di suddividere le pipeline di distribuzione di produzione full stack in distribuzioni più piccole e specializzate.
-
-Se ti interessa testare questa nuova funzionalità e condividere un feedback, invia un’e-mail a `Grp-cloudmanager_splitpipelines@adobe.com` dall’indirizzo e-mail associato al tuo Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
 
 
 ## Programmi Beta {#private-beta-program}
@@ -66,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Ripristino rapido a un’implementazione precedente se il codice di origine più recente del cliente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**&#x200B;per un ambiente selezionato.*
+![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**per un ambiente selezionato.*
 
 ![Finestra di dialogo Ripristina codice precedente implementato](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Nella finestra di dialogo **Ripristina codice precedente implementato**, controlla la versione attualmente implementata e quella che desideri ripristinare, quindi fai clic su **Conferma***.
 
 ![Ripristino dell’attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**&#x200B;fino al completamento dell’implementazione.*
+*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**fino al completamento dell’implementazione.*
 
 ![Versione del codice di origine in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell’ambiente, come illustrato in precedenza, mostra ora anche la versione del codice di origine attiva in uso.*
 
