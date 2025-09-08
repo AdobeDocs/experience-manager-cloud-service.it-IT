@@ -95,7 +95,7 @@ Di seguito è riportato un esempio di `component-definition.json` completo ma se
 `plugins` definisce quale plug-in è responsabile della persistenza del componente. I plug-in più comuni includono:
 
 * `aem` per [AEM as a Cloud Service.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service)
-* `aem65` per [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `aem65` per [AEM 6.5.](https://experienceleague.adobe.com/it/docs/experience-manager-65)
 * `xwalk` per [Authoring con AEM Sites per Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` oppure `cf` {#page-cf}
