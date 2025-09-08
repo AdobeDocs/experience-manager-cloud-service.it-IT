@@ -4,9 +4,9 @@ description: Scopri come scegliere i KPI giusti per l’implementazione di AEM
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 100%
 
 In un mondo digitale, puoi misurare praticamente tutto. La scelta di tre KPI per l’implementazione di Adobe Experience Manager aiuta il tuo team a concentrarsi su ciò che è prioritario.
 
-
 ## **Segui questi sei passaggi per decidere cosa misurare e come**
-
 
 1. **Inizia con gli obiettivi aziendali.** Ad esempio, gli obiettivi aziendali possono essere la crescita delle entrate online, la riduzione delle spese operative o la riduzione delle spese legali associate alle violazioni DRM (Digital Rights Management).
 
@@ -40,6 +38,8 @@ In un mondo digitale, puoi misurare praticamente tutto. La scelta di tre KPI per
 
 1. **Definisci il pubblico per ogni KPI.** L’ultimo passaggio di questa settimana è identificare il gruppo di stakeholder più interessati a ogni KPI. La prossima settimana lavorerai con ciascun gruppo per confermare il KPI, perfezionare la metodologia e concordare il formato e la tempistica dei tuoi rapporti.
 
+<!--
 >[!TIP]
 >
->[**Scaricare il modello di metodologia KPI**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=it)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
