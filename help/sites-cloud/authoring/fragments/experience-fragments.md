@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 92%
+source-wordcount: '2142'
+ht-degree: 90%
 
 ---
 
@@ -73,7 +73,7 @@ I Frammenti di esperienza sono indicati nei seguenti casi:
 * Se usi un’esperienza con diverse varianti o rappresentazioni.
    * Varianti specifiche del canale o del contesto.
    * Esperienze che è utile raggruppare; ad esempio, una campagna con esperienze diverse per i diversi canali.
-* Quando utilizzi Commerce omnichannel.
+* Quando utilizzi Commerce omnicanale.
    * Per assegnare funzioni transazionali ai punti di contatto.
 
 ## Organizzazione dei frammenti esperienza {#organizing-your-experience-fragments}
@@ -445,6 +445,16 @@ Se utilizzi il selettore `.plain.` nell’URL, puoi accedere al rendering HTML s
 La pubblicazione di un frammento di esperienza è fondamentalmente identica alla [pubblicazione di una pagina](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (ma viene eseguita dalla console o dall’editor frammenti di esperienza).
 
 In alternativa è possibile [pubblicare in anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) (di nuovo dalla console o dall’editor frammenti di esperienza).
+
+>[!CAUTION]
+>
+>Per impostazione predefinita, la pubblicazione della cartella principale dei frammenti esperienza (che si trova direttamente in `/content/experience-fragments`):
+>
+>* pubblica solo la cartella contenitore stessa
+>* non pubblica alcun elemento figlio
+>* annulla la pubblicazione di eventuali elementi figlio già pubblicati
+>
+>Per la pubblicazione di tutti i frammenti esperienza nella cartella, ciascuno di essi deve essere pubblicato separatamente.
 
 ## Esportazione di frammenti esperienza   {#exporting-experience-fragments}
 
