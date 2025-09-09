@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1598'
 ht-degree: 1%
 
 ---
 
-# Utilizzo del servizio Invoke nell’Editor di regole visive per i moduli basati su componenti core
+# Integrazione di API esterne con l’Editor di regole visive nel Forms dei componenti core
 
-L&#39;editor di regole visive in un modulo adattivo supporta la funzionalità **Richiama servizio**, che consente di selezionare un servizio dall&#39;elenco di modelli di dati modulo (FDM) configurati per l&#39;istanza. Puoi mappare i campi modulo direttamente sui parametri di input del servizio. Per mappare i campi modulo ai parametri di output, utilizza l’opzione payload dell’evento per il servizio del modello dati modulo specificato. Inoltre, l&#39;editor di regole visive consente di creare regole per i gestori di operazioni riuscite e non riuscite per le operazioni **Richiama servizio** in base alle relative risposte di output. I gestori di errori gestiscono l&#39;esecuzione corretta dell&#39;operazione **Richiama servizio**, mentre i gestori di errori risolvono gli errori che si verificano.
+L&#39;editor di regole visive in un modulo adattivo supporta la funzionalità **Invoke Service**, che consente di connettersi alle API esterne tramite i modelli di dati del modulo (FDM) configurati per l&#39;istanza. Puoi mappare i campi modulo direttamente sui parametri di input del servizio e utilizzare l’opzione payload dell’evento per mappare i parametri di output. L’Editor di regole visive consente inoltre di definire regole per i gestori con esito positivo o negativo in base alla risposta del servizio: i gestori con esito positivo gestiscono le chiamate API, mentre i gestori con esito negativo gestiscono gli errori.
+
+Questo consente di inviare facilmente richieste API dal modulo, elaborare le risposte API e visualizzare o utilizzare dinamicamente i dati restituiti all’interno del modulo. Garantisce un’integrazione perfetta tra il modulo adattivo e i sistemi o le origini dati esterni.
+
 
 ## Vantaggi dell’utilizzo del servizio Invoke nell’editor di regole del modulo
 
 Di seguito sono riportati alcuni vantaggi dell’utilizzo dell’operazione Invoke Service nell’editor di regole di un modulo Adobe:
 
-* **Integrazione semplificata**: l&#39;editor di regole visive semplifica il processo di integrazione di servizi o API esterni nel Forms adattivo. Utilizzando il servizio **Invoke**, è possibile collegare facilmente i moduli a varie origini dati e servizi senza la necessità di codifiche complesse, rendendo l&#39;integrazione dei moduli più efficiente.
+* **Integrazione API semplificata**: l&#39;editor di regole visive semplifica il processo di integrazione di servizi o API esterni nel Forms adattivo. Utilizzando il servizio **Invoke**, è possibile collegare facilmente i moduli a varie origini dati e servizi senza la necessità di codifiche complesse, rendendo l&#39;integrazione dei moduli più efficiente.
 
 * **Gestione dinamica delle risposte**: è possibile gestire le risposte di esito positivo e di errore in base alle risposte di output del **servizio Invoke**, consentendo ai moduli di reagire dinamicamente a scenari diversi. Garantisce che i moduli gestiscano in modo appropriato le varie condizioni, migliorando la flessibilità e il controllo.
 

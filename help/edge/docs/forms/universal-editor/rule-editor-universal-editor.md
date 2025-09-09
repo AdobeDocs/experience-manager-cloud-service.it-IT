@@ -1,21 +1,21 @@
 ---
-title: Editor di regole per moduli dinamici nell’editor universale
+title: Editor regole per Edge Delivery Services Forms
 description: Crea moduli dinamici e avanzati utilizzando l’editor di regole nell’editor universale. Aggiungi logica condizionale, calcoli e comportamenti interattivi senza codifica.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 93%
+source-wordcount: '2780'
+ht-degree: 92%
 
 ---
 
 
-# Editor di regole per moduli dinamici nell’editor universale
+# Editor regole per Edge Delivery Services Forms
 
-L’editor di regole consente agli autori di trasformare i moduli statici in esperienze avanzate e dinamiche, senza scrivere codice. Puoi visualizzare i campi in modo condizionale, eseguire calcoli, convalidare dati, guidare gli utenti attraverso specifici flussi e integrare una logica di business che si adatta in base a ciò che viene digitato dall&#39;utente.
+L’editor di regole consente agli autori di trasformare i moduli statici in esperienze intelligenti e reattive senza scrivere codice. Puoi visualizzare i campi in modo condizionale, eseguire calcoli, convalidare dati, guidare gli utenti attraverso specifici flussi e integrare una logica di business che si adatta in base a ciò che viene digitato dall&#39;utente.
 
 ## Che cosa imparerai
 
@@ -363,7 +363,7 @@ Figura: struttura del modulo iniziale con componenti di base configurati
 
 1. **Seleziona il campo “reddito imponibile”** e apri l’editor di regole
 2. **Crea l’espressione matematica**:
-   - “Fai clic su **Crea**   Seleziona **“Espressione matematica”**
+   - “Fai clic su **Crea** 	 Seleziona **“Espressione matematica”**
    - Crea l’espressione: **stipendio lordo − detrazione aggiuntiva**
    - Trascina “Stipendio lordo” nel primo campo
    - Seleziona l’operatore **“meno”**
