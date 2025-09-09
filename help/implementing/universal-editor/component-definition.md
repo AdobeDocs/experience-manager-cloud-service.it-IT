@@ -4,9 +4,9 @@ description: Comprendi in dettaglio il contratto JSON tra la definizione del com
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
+source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Di seguito è riportato un esempio di `component-definition.json` completo ma se
 `plugins` definisce quale plug-in è responsabile della persistenza del componente. I plug-in più comuni includono:
 
 * `aem` per [AEM as a Cloud Service.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service)
-* `aem65` per [AEM 6.5.](https://experienceleague.adobe.com/it/docs/experience-manager-65)
+* `aem65` per [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65) e [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
 * `xwalk` per [Authoring con AEM Sites per Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` oppure `cf` {#page-cf}
