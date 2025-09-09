@@ -363,7 +363,7 @@ Figura: struttura del modulo iniziale con componenti di base configurati
 
 1. **Seleziona il campo “reddito imponibile”** e apri l’editor di regole
 2. **Crea l’espressione matematica**:
-   - “Fai clic su **Crea** 	 Seleziona **“Espressione matematica”**
+   - “Fai clic su **Crea**   Seleziona **“Espressione matematica”**
    - Crea l’espressione: **stipendio lordo − detrazione aggiuntiva**
    - Trascina “Stipendio lordo” nel primo campo
    - Seleziona l’operatore **“meno”**
