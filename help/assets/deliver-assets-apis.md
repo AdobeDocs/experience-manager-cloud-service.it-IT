@@ -3,9 +3,9 @@ title: API di consegna
 description: Scopri come utilizzare le API di consegna.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -32,9 +32,18 @@ La tabella seguente illustra l’utilizzo delle varie API di consegna disponibil
 | [Contenitore lettore per la risorsa video](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Restituisce il contenitore del lettore per la risorsa video. È possibile incorporare il lettore in un elemento iframe HTML e riprodurre il video. |
 | [Manifesti di riproduzione nel formato di output selezionato](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Restituisce il file del manifesto di riproduzione per la risorsa video specificata nel formato di output selezionato. Devi creare un lettore personalizzato in grado di eseguire lo streaming adattivo tramite i protocolli HLS o DASH per estrarre il file del manifesto di riproduzione e riprodurre il video. |
 
+>[!IMPORTANT]
+>
+>Puoi testare qualsiasi modificatore che non è generalmente disponibile tramite API sperimentali. Ad esempio `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>>Fai clic qui per ulteriori informazioni su come utilizzare le [API sperimentali](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e l&#39;[elenco completo dei modificatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 Dynamic Media con funzionalità OpenAPI supporta anche video in formato esteso. I video supportano fino a 50 GB e 2 ore.
 
 Per informazioni sulle offerte Dynamic Media disponibili e sulle relative funzionalità, consulta [Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>I clienti di DM Prime possono utilizzare modificatori di immagine di base, tra cui rotazione, ritaglio, capovolgimento, altezza, larghezza e qualità. Smart Imaging non supporta AVIF per i clienti DM Prime.
 
 ## Endpoint API di consegna {#delivery-apis-endpoint}
 
@@ -64,7 +73,7 @@ headers: {
     }
 ```
 
-Per richiamare le API di consegna, è necessario un token IMS nei dettagli `Authorization` per inviare una risorsa con restrizioni. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di consegna.
+Per richiamare le API di consegna, è necessario un token IMS nei dettagli `Authorization` per inviare una risorsa con restrizioni. Il token IMS viene recuperato da un account tecnico. Consulta [Recuperare le credenziali di AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per creare un nuovo account tecnico. Consulta [Generazione del token di accesso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) per generare il token IMS e utilizzarlo in modo appropriato nell&#39;intestazione della richiesta API di consegna.
 
 
 Per visualizzare esempi di richieste, campioni di risposta e codici di risposta, vedi [API di consegna](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
