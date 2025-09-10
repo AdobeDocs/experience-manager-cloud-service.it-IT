@@ -4,9 +4,9 @@ description: L’Editor pagina rimane supportato da Adobe, ma l’Editor univers
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 L’Editor pagina rimane supportato da Adobe, ma l’Editor universale offre nuove possibilità per i tuoi nuovi progetti.
 
-## Informazioni di base {#background}
+## Esperienza pregressa {#background}
 
 Adobe ha introdotto [Universal Editor](/help/implementing/universal-editor/introduction.md) nel 2024 come editor semplificato che adotta un approccio di sviluppo moderno basato su JavaScript. Universal Editor è la visione di Adobe per un’esperienza di authoring di contenuti visivi fluida ed estensibile.
 
@@ -63,7 +63,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 | Taglia/Copia-Incolla blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
 | Applica stili | [!BADGE Disponibile]{type=Positive} | Gli stili possono essere applicati ai componenti utilizzando [il sistema di stili.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponibile]{type=Positive} | Gli stili possono essere applicati utilizzando le proprietà normali del componente (o del frammento di contenuto). Lo stesso selettore di stile non è disponibile nell’editor universale, tuttavia utilizzando un widget a selezione multipla è possibile ottenere un’interfaccia utente molto simile. |
 | Applica layout | [!BADGE Disponibile]{type=Positive} | I siti devono implementare la [griglia reattiva di AEM](/help/implementing/developing/introduction/responsive-design.md) per consentire agli autori di ridimensionare i componenti in tre punti di interruzione predefiniti. | [!BADGE Disponibile]{type=Positive} | I layout possono essere applicati utilizzando le proprietà del componente regolare (o Frammento di contenuto), ma la griglia reattiva non è supportata. |
-| Annulla-Ripristina | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
+| Annulla-Ripristina | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | Pubblica (anche in anteprima) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [Avvia flusso di lavoro](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione |
 | Commento | [!BADGE Disponibile]{type=Positive} | Utilizzo di [annotazioni](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Non disponibile]{type=Negative} | Pianificato |

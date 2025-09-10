@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2319'
 ht-degree: 11%
 
 ---
@@ -172,13 +172,27 @@ Il componente selezionato è stato eliminato.
 
    ![Riordinamento dei componenti](assets/ue-reordering-components.png)
 
-1. Il componente trascinato diventa grigio nella struttura del contenuto, mentre il punto di inserimento è rappresentato da una linea blu. Rilasciate il componente per posizionarlo nella nuova posizione.
+1. Il componente trascinato è disattivato nella struttura del contenuto, mentre il punto di inserimento è rappresentato da una linea blu. Rilasciate il componente per posizionarlo nella nuova posizione.
 
 I componenti vengono riordinati sia nella struttura del contenuto che nell’editor.
 
 >[!NOTE]
 >
 >I componenti possono essere spostati tra contenitori solo se il filtro [componente](/help/implementing/universal-editor/filtering.md) dei contenitori di destinazione consente il componente selezionato.
+
+### Annulla e Ripristina {#undo-redo}
+
+Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;ultima modifica nell&#39;editor.
+
+![Icona Annulla](assets/undo.png)
+![Icona Ripristina](assets/redo.png)
+
+* Le operazioni Annulla e Ripeti possono essere eseguite per le modifiche apportate nel contesto, per le modifiche effettuate tramite il pannello Proprietà, nonché per aggiungere, duplicare, spostare ed eliminare blocchi.
+* Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
+
+>[!TIP]
+>
+>Utilizzare il tasto di scelta rapida `Command-Z` o `Shift-Command-Z` rispettivamente per annullare o ripetere l&#39;operazione.
 
 ## Anteprima del contenuto {#previewing-content}
 

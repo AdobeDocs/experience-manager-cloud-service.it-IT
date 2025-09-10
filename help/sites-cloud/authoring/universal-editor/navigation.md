@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 24%
+source-wordcount: '1854'
+ht-degree: 20%
 
 ---
 
@@ -89,15 +89,9 @@ Viene visualizzata l’organizzazione in cui hai effettuato l’accesso. Selezio
 
 ![Indicatore dell’organizzazione](assets/organization.png)
 
-#### Soluzioni {#solutions}
+#### Centro assistenza {#help}
 
-Tocca o fai clic sul selettore delle soluzioni per passare rapidamente ad altre soluzioni di Experience Cloud.
-
-![Selettore di soluzioni](assets/solutions.png)
-
-#### Aiuto {#help}
-
-L’icona dell’aiuto fornisce un accesso rapido alle risorse di apprendimento e supporto.
+L’icona del centro assistenza consente di accedere rapidamente alle risorse di apprendimento e supporto.
 
 ![Aiuto](assets/help.png)
 
@@ -107,9 +101,15 @@ Questa icona è contrassegnata con il numero di [notifiche](/help/implementing/c
 
 ![Notifiche](assets/notifications.png)
 
-#### Proprietà utente {#user-properties}
+#### App {#solutions}
 
-Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni utente. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
+Toccando o facendo clic sul commutatore dell’app puoi passare rapidamente ad altre soluzioni Experience Cloud.
+
+![Commutatore app](assets/solutions.png)
+
+#### Account {#user-properties}
+
+Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni del tuo account. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
 
 ![Proprietà utente](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Nella pagina iniziale è possibile immettere l&#39;URL del sito che si desidera 
 >
 >Qualsiasi pagina che si desidera modificare con l&#39;Editor universale deve essere [dotata di strumenti per supportare l&#39;Editor universale](/help/implementing/universal-editor/getting-started.md).
 
+Una sezione **Collegamenti rapidi** fornisce risorse di aiuto e una sezione **Recenti** fornisce collegamenti alle pagine aperte di recente con l&#39;editor universale.
+
 #### Barra della posizione {#location-bar}
 
 La barra della posizione mostra l’indirizzo della pagina che stai modificando. Selezionare questa opzione per immettere l&#39;indirizzo di un&#39;altra pagina da modificare.
@@ -149,21 +151,32 @@ La barra della posizione mostra l’indirizzo della pagina che stai modificando.
 >
 >Qualsiasi pagina che si desidera modificare con l&#39;Editor universale deve essere [dotata di strumenti per supportare l&#39;Editor universale](/help/implementing/universal-editor/getting-started.md).
 
-#### Impostazioni intestazione autenticazione {#authentication-settings}
+#### Annulla e Ripristina {#undo-redo}
 
-Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo di sviluppo locale](/help/implementing/universal-editor/developer-overview.md#auth-header), seleziona l&#39;icona delle impostazioni dell&#39;intestazione di autenticazione.
+Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;ultima modifica nell&#39;editor. Per ulteriori informazioni, vedere il documento [Authoring dei contenuti con Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo).
+
+![Icona Annulla](assets/undo.png)
+![Icona Ripristina](assets/redo.png)
+
+>[!TIP]
+>
+>Utilizzare il tasto di scelta rapida `Command-Z` o `Shift-Command-Z` rispettivamente per annullare o ripetere l&#39;operazione.
+
+#### Intestazioni di autenticazione {#authentication-settings}
+
+Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo di sviluppo locale](/help/implementing/universal-editor/developer-overview.md#auth-header), seleziona l&#39;icona delle intestazioni di autenticazione.
 
 ![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
 
-#### Impostazioni emulatore {#emulator}
+#### Modalità reattiva {#emulator}
 
-Seleziona l’icona di emulazione per definire il rendering della pagina in Editor universale.
+Seleziona l’icona della modalità reattiva per definire il rendering della pagina da parte dell’Editor universale.
 
-![Icona dell’emulatore](assets/emulator.png)
+![Icona modalità reattiva](assets/emulator.png)
 
-Toccando o facendo clic sull’icona dell’emulatore vengono visualizzate le opzioni.
+Toccando o facendo clic sull’icona della modalità reattiva vengono visualizzate le opzioni.
 
-![Opzioni di emulazione](assets/emulation-options.png)
+![Opzioni modalità reattiva](assets/emulation-options.png)
 
 Per impostazione predefinita, l’editor si apre in layout desktop, dove l’altezza e la larghezza vengono definite automaticamente dal browser.
 
@@ -173,7 +186,7 @@ Puoi anche scegliere di emulare un dispositivo mobile e nell’editor universale
 * Definire la larghezza e l’altezza
 * Modificare l’orientamento
 
-#### Modalità Anteprima {#preview-mode}
+#### Anteprima {#preview-mode}
 
 In modalità anteprima, la pagina viene riprodotta nell’editor come verrebbe visualizzata sul servizio pubblicato. Questo consente all’autore di contenuto di navigare nel contenuto facendo clic sui collegamenti e così via.
 

@@ -4,10 +4,10 @@ description: Queste sono le note sulla versione 2025.09.04 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 71%
+source-wordcount: '215'
+ht-degree: 52%
 
 ---
 
@@ -23,13 +23,9 @@ Queste sono le note sulla versione del 4 settembre 2025 di Universal Editor.
 ## Novità {#what-is-new}
 
 * Il comando Copia/Incolla è disponibile per [utenti che lo hanno adottato in anticipo](#copy-paste)
-
-### Annullare/Ripetere {#undo-redo}
-
-La funzione Annulla e Ripeti è ora disponibile per gli autori di contenuti dell’Editor universale.
-
-* Sono incluse le modifiche apportate nel contesto, quelle effettuate tramite il pannello Proprietà, nonché l’aggiunta (o la duplicazione), lo spostamento e l’eliminazione di blocchi.
-* Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
+* [Annulla e ripristina](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) è ora disponibile per gli autori di contenuto.
+   * Le operazioni Annulla e Ripeti possono essere eseguite per le modifiche apportate nel contesto, per le modifiche effettuate tramite il pannello Proprietà, nonché per aggiungere, duplicare, spostare ed eliminare blocchi.
+   * Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -47,8 +43,3 @@ Gli autori di contenuti possono ora copiare e incollare componenti all’interno
 
 * Lo stile della barra degli strumenti dell’editor è stato aggiornato per allinearlo meglio al nuovo editor RTF in arrivo.
 * I filtri nella finestra di dialogo del selettore risorse sono stati ripristinati.
-
-## Rimozioni {#deprecations}
-
-* I componenti `text-input` e `text-area` sono stati ufficialmente dichiarati obsoleti con la [versione 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * In `model-definition.json`, utilizza il componente testo per creare input di testo per il pannello Proprietà.
