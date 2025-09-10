@@ -29,7 +29,7 @@ Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi s
 
 ![Pubblicazione pagine](assets/publish-menu.png)
 
-1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **** nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **&#x200B;**&#x200B;nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. Se hai un [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponibile, puoi scegliere dove pubblicare i contenuti, in **[Anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (se disponibile) o **Pubblica**.
 1. Nella sezione **Elementi** sono elencati i contenuti inclusi nella pubblicazione. Tocca o fai clic su **Visualizza** per visualizzare i dettagli, tra cui:
    * **Nuovi** elementi non ancora pubblicati.
