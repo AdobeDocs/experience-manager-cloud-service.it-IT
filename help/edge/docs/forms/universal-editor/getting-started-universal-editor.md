@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ Le sezioni seguenti ti guideranno nei dettagli di ogni passaggio, garantendo un�
 
 +++
 
-+++Passaggio 2: installare la sincronizzazione del codice AEM
++++Passaggio 2: installare AEM Code Sync
 
 La sincronizzazione del codice AEM sincronizza automaticamente le modifiche apportate al contenuto tra l’ambiente di authoring AEM e l’archivio GitHub.
 
@@ -157,7 +157,10 @@ Il file `fstab.yaml` connette l’archivio GitHub all’ambiente di authoring AE
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **Sostituisci:**
@@ -184,9 +187,9 @@ Il file `fstab.yaml` connette l’archivio GitHub all’ambiente di authoring AE
 
 **Convalida:** conferma la connessione tra l’archivio GitHub e AEM.
 
-    >[!NOTA]
-    >
->Problemi di creazione? Consulta [Risoluzione dei problemi di creazione di GitHub](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Problemi di creazione? Consulta [Risoluzione dei problemi di creazione di GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -343,7 +346,7 @@ Completerai i seguenti passaggi di alto livello:
 3. Imposta le regole ESLint per adattarle ai nuovi file e modelli di codifica.
 4. Crea il progetto e impegna le modifiche nell’archivio.
 
-+++Passaggio 1: copiare i file di blocco dei moduli
++++Passaggio 1: copiare i file di blocco di Forms
 
 1. **Passa al progetto locale**
 
@@ -368,7 +371,7 @@ Completerai i seguenti passaggi di alto livello:
 
 +++
 
-+++Passaggio 2: aggiornare la configurazione del componente
++++Passaggio 2: Aggiornare la configurazione del componente
 
 1. **Aggiornare il modello della sezione**
 
@@ -462,7 +465,7 @@ Completerai i seguenti passaggi di alto livello:
 
 +++
 
-+++Passaggio 4: generare e implementare
++++Passaggio 4: generare e distribuire
 
 1. **Installare le dipendenze e generare**
 
@@ -550,7 +553,7 @@ Le sezioni seguenti ti guideranno nel dettaglio attraverso tutti questi passaggi
 
 +++
 
-+++Passaggio 2: aggiungere componenti del modulo
++++Passaggio 2: Aggiungere componenti modulo
 
 1. **Passa al blocco modulo**
    - Nella struttura contenuto, individua la sezione Modulo adattivo appena aggiunta
@@ -626,13 +629,13 @@ Le sezioni seguenti ti guideranno nel dettaglio attraverso tutti questi passaggi
    Il modulo è ora attivo all’indirizzo:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **URL di esempio:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Pagina del modulo attivo](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -715,7 +718,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-+++Problemi relativi alla creazione in GitHub
++++Problemi relativi alla build GitHub
 
 **Problema:** errori di creazione o di linting
 
@@ -759,7 +762,7 @@ Se visualizzi “Impossibile risolvere il percorso al modulo &#39;/scripts/lib-f
 
 +++
 
-+++Problemi relativi alla funzionalità del modulo
++++Problemi relativi alla funzionalità dei moduli
 
 **Problema:** gli invii del modulo non funzionano
 

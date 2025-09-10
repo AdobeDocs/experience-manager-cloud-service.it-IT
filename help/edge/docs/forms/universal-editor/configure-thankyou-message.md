@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 100%
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ I messaggi di ringraziamento funzionano al meglio quando:
 
 Apri il modulo adattivo nell’editor universale e fai clic sull’icona **Modifica proprietà modulo** nella barra degli strumenti. Verrà visualizzata la finestra di dialogo completa delle proprietà del modulo.
 
+![Icona proprietà modulo](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Passare alla configurazione del ringraziamento**
 
 Nella finestra di dialogo Proprietà modulo, seleziona la scheda **Ringraziamento** per accedere alle opzioni di configurazione successive all’invio.
 
+![Proprietà del modulo dell’editor universale](/help/forms/assets/ue-form-properties.png)
+
 **3. Configurare la visualizzazione del messaggio**
 
-Seleziona **Mostra messaggio** dalle opzioni disponibili. In questo modo viene attivato l’editor del contenuto dei messaggi con funzionalità Rich Text.
+Selezionare **Mostra messaggio** dalle opzioni disponibili.
+
+![grazie](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Creare il contenuto del messaggio**
 
@@ -117,13 +123,19 @@ Gli URL di reindirizzamento sono ottimali per:
 
 Apri il modulo adattivo nell&#39;Editor universale e fai clic sull&#39;icona **Modifica proprietà modulo** per aprire la finestra di dialogo per la configurazione del modulo.
 
+![Icona proprietà modulo](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Passare alla configurazione di ringraziamento**
 
 Seleziona la scheda **Ringraziamento** nella finestra di dialogo Proprietà modulo per accedere alle opzioni di configurazione del reindirizzamento.
 
+![Proprietà del modulo dell’editor universale](/help/forms/assets/ue-form-properties.png)
+
 **3. Abilitare lefunzionalità di reindirizzamento**
 
 Scegli **Reindirizza all&#39;URL** tra le opzioni disponibili per il post-invio.
+
+![reindirizzamento](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Configurare l&#39;URL di destinazione**
 

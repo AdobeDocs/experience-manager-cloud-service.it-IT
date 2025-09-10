@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 97%
+source-wordcount: '2390'
+ht-degree: 95%
 
 ---
 
@@ -112,11 +112,16 @@ La **barra degli strumenti dell’editor universale** fornisce azioni chiave per
 
 **Per il primo modulo:**
 
-1. **Iniziare la compilazione**: aggiungi componenti utilizzando il pulsante **Aggiungi** (`a`)
-2. **Configura campi**: seleziona i componenti e utilizza le **Modalità delle proprietà** (`d`)
-3. **Testa il modulo**: utilizza la **modalità anteprima** (`p`) per interagire con il modulo
-4. **Verifica la visualizzazione per dispositivi mobili**: passa alla **modalità reattiva** per i test su dispositivi mobili
-5. **Pubblica**: fai clic su **Pubblica** quando è pronto
+1. **Aggiungi un componente modulo adattivo** - Inserisci il componente `Adaptive Form` in una sezione.
+2. **Iniziare la compilazione**: aggiungi componenti utilizzando il pulsante **Aggiungi** (`a`)
+3. **Configura campi**: seleziona i componenti e utilizza le **Modalità delle proprietà** (`d`)
+4. **Testa il modulo**: utilizza la **modalità anteprima** (`p`) per interagire con il modulo
+5. **Verifica la visualizzazione per dispositivi mobili**: passa alla **modalità reattiva** per i test su dispositivi mobili
+6. **Pubblica**: fai clic su **Pubblica** quando è pronto
+
+>[!NOTE]
+>
+> Per informazioni dettagliate sulla creazione di moduli in Universal Editor, vedere [Creare e pubblicare Forms adattivo con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Punto di controllo per la convalida:**
 
@@ -218,7 +223,7 @@ La **barra degli strumenti dell’editor universale** contiene gli strumenti pri
 
 #### **Proprietà AEM Form**
 
-**Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM) e le date di pubblicazione\
+**Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM), configurare le azioni di invio e le date di pubblicazione\
 **Quando utilizzare:** configurazione delle integrazioni di dati, pianificazione della pubblicazione
 
 ![Proprietà modulo](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ Il pannello Proprietà modulo include le sezioni seguenti:
 
 Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazione e la configurazione dei moduli. Cambia in base a ciò che selezioni e fornisce strumenti diversi per attività diverse.
 
-![Pannello Proprietà](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![Pannello Proprietà](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **Strumenti di base per la creazione di moduli**
 

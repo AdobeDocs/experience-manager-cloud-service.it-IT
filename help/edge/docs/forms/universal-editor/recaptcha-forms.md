@@ -6,10 +6,10 @@ keywords: reCAPTCHA nei moduli, Utilizzo di reCAPTCHA nell’editor universale, 
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,6 @@ Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
 
 - Accesso all’authoring di AEM as a Cloud Service
 - Accesso all’editor universale con autorizzazioni di modifica dei moduli
-- Iscrizione al programma di accesso anticipato per le funzioni reCAPTCHA
 
 ### Requisiti tecnici
 
@@ -218,7 +217,7 @@ I moduli Edge Delivery Services supportano due opzioni Google reCAPTCHA. Utilizz
 
 ## Configurare reCAPTCHA Standard
 
-+++Passaggio 1: ottieni le chiavi API reCAPTCHA (consulta i dettagli)
++++Passaggio 1: ottenere le chiavi API reCAPTCHA (vedi i dettagli)
 
 >[!IMPORTANT]
 >
@@ -256,7 +255,7 @@ I moduli Edge Delivery Services supportano due opzioni Google reCAPTCHA. Utilizz
 
 +++
 
-+++Passaggio 2: configura il contenitore della configurazione di AEM Cloud (consulta i dettagli)
++++Passaggio 2: configurare il contenitore di configurazione cloud di AEM (consulta i dettagli)
 
 Segui lo stesso processo della configurazione Enterprise:
 
@@ -268,7 +267,7 @@ Segui lo stesso processo della configurazione Enterprise:
 
 +++
 
-+++Passaggio 3: configura il servizio standard reCAPTCHA in AEM (consulta i dettagli)
++++Passaggio 3: configurare il servizio standard reCAPTCHA in AEM (vedi dettagli)
 
 ![schermata di configurazione standard di reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Figura: interfaccia di configurazione di reCAPTCHA Standard in AEM*
@@ -313,22 +312,22 @@ Dopo aver configurato il servizio reCAPTCHA, aggiungi la protezione al modulo co
 ![Aggiunta del componente reCAPTCHA a un modulo](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figura: aggiunta del componente Captcha invisibile al modulo*
 
-+++1. Apri il modulo nell’editor universale
-Passa al modulo in AEM Sites e fai clic su Modifica per aprirlo nell’editor universale. Attendi il caricamento dell’editor.
++++&#x200B;1. Apri modulo nell’editor universale
+Vai al modulo in AEM Sites e fai clic su Modifica per aprirlo in Universal Editor. Attendi il caricamento dell’editor.
 
 - Passa al modulo in AEM Sites.
 - Fai clic su Modifica per aprirlo nell’editor universale.
 - Attendi il caricamento dell’editor
 +++
 
-+++2. Individua la struttura del modulo
++++&#x200B;2. Individuare la struttura del modulo
 Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo adattivo ed espandi la struttura del modulo per visualizzare i punti di inserimento.
 
 - Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo adattivo.
 - Espandi la struttura del modulo per visualizzare i punti di inserimento.
 +++
 
-+++3. Aggiungi il componente reCAPTCHA
++++&#x200B;3. Aggiungere il componente reCAPTCHA
 Aggiungi il componente Captcha (invisibile) al modulo.
 
 - Fai clic sull’icona Aggiungi (+) nella sezione del modulo.
@@ -336,16 +335,16 @@ Aggiungi il componente Captcha (invisibile) al modulo.
 - In alternativa, trascina il componente dal pannello Componenti.
 +++
 
-+++4. Configura il componente (facoltativo)
-Seleziona il componente Captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA precedentemente salvata.
++++&#x200B;4. Configurare il componente (facoltativo)
+Seleziona il componente captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA.
 
 - Seleziona il componente Captcha appena aggiunto.
 - Nel pannello Proprietà, verifica che utilizzi la configurazione reCAPTCHA precedentemente salvata.
 - Non è necessaria alcuna configurazione aggiuntiva per la configurazione di base.
 +++
 
-+++5. Pubblica le modifiche
-Pubblica le modifiche e verifica che non vi siano errori.
++++&#x200B;5. Pubblicare Le Modifiche
+Pubblica le modifiche e verifica che non siano presenti errori.
 
 - Fai clic su Pubblica nell’editor universale.
 - Attendi la conferma.

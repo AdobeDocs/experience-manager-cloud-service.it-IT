@@ -4,10 +4,10 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ I frammenti di modulo in Edge Delivery Services forniscono funzionalità avanzat
 
 Puoi creare frammenti di modulo di Edge Delivery Services nell’editor universale e aggiungere i frammenti creati a moduli di Edge Delivery Services. Con i frammenti di modulo di Edge Delivery Services puoi creare le azioni elencate di seguito:
 
-- [Creazione di frammenti di modulo](#creating-form-fragments)
-- [Aggiunta di frammenti di modulo a un modulo](#adding-form-fragments-to-a-form)
-- [Gestione dei frammenti di modulo](#managing-form-fragments)
+- [Creazione di frammenti di modulo nell’editor universale](#creating-form-fragments-in-universal-editor)
+   - [Informazioni sui frammenti di modulo](#understanding-form-fragments)
+   - [Prerequisiti](#prerequisites)
+   - [Utilizzo dei frammenti di modulo di Edge Delivery Services](#working-with-edge-delivery-services-form-fragments)
+   - [Best practice](#best-practices)
+   - [Riepilogo](#summary)
 
 +++ Creazione di frammenti di modulo
 
@@ -175,6 +178,10 @@ Per integrare un frammento di modulo nel modulo:
 
    ![Schermata che mostra il frammento dei dettagli di contatto integrato correttamente in un modulo dipendente all’interno dell’editor universale, in cui viene illustrato come i frammenti mantengono la propria struttura quando vengono riutilizzati](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
+   >[!NOTE]
+   >
+   > Il pulsante **Modifica frammento** consente agli utenti di passare direttamente al frammento di modulo per la modifica.
+
    È possibile visualizzare in anteprima il modulo per visualizzarne l’aspetto nella modalità **Anteprima**.
 
    ![Anteprima](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
@@ -246,7 +253,7 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
     </tbody>
     </table>
 
-+++
++++ 
 
 ## Best practice
 
@@ -285,10 +292,10 @@ Hai imparato a sfruttare correttamente i frammenti di modulo in Edge Delivery Se
 
 **Passaggi successivi:**
 
-- Crea una libreria di frammenti di utilizzo comune per la tua organizzazione
-- Stabilisci convenzioni di denominazione e criteri di governance per l’utilizzo del frammento
+- Crea una libreria di frammenti di uso comune per la tua organizzazione.
+- Stabilisci convenzioni di denominazione e criteri di governance per l’utilizzo dei frammenti.
 - Esplora l’integrazione avanzata con [modelli di dati del modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) per frammenti dinamici basati su dati
-- Implementa modelli di modulo basati su frammenti per esperienze utente coerenti
+- Implementare modelli di modulo basati su frammenti per esperienze utente coerenti.
 
 I moduli ora beneficiano di un’architettura modulare e gestibile in grado di scalare in modo efficiente tra i progetti, garantendo al contempo esperienze utente coerenti.
 

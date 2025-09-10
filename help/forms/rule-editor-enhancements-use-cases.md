@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -31,7 +31,7 @@ La tabella seguente elenca i recenti miglioramenti apportati all’editor di reg
 
 >[!NOTE]
 >
-> I miglioramenti all’Editor regole sono applicabili anche ad Edge Delivery Services Forms.
+> I miglioramenti sono applicabili anche all&#39;[Editor regole di Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Esaminiamo ora in dettaglio ogni metodo con casi d’uso specifici per aiutarti a capire come queste funzioni possono essere utilizzate per fornire un’esperienza personalizzata agli utenti
 
@@ -124,7 +124,7 @@ Il campo **Costo totale spedizione** viene aggiornato in modo dinamico per rifle
 >[!NOTE]
 >
 > È inoltre possibile aggiungere la funzione **Ottieni valore variabile** nella condizione When.
-> &#x200B;> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Questo approccio consente di eseguire calcoli dinamici e in tempo reale senza aggiungere campi aggiuntivi al modulo, mantenendo la struttura pulita e intuitiva.
 

@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: pubblicazione di moduli, Edge Delivery Services, configurazione dei moduli, CORS, filtro referrer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Ogni fase si basa sulla precedente per garantire una distribuzione sicura e funz
 1. **Accedi al modulo**: apri il modulo adattivo nell’editor universale
 2. **Inizia la pubblicazione**: fai clic sull’icona **Pubblica** nella barra degli strumenti
 
-   ![Fai clic su Pubblica](/help/forms/assets/publish-icon-eds-form.png)
+   ![Fai clic su Pubblica](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Ogni fase si basa sulla precedente per garantire una distribuzione sicura e funz
 
 1. **Rivedi le risorse della pubblicazione**: il sistema mostra tutte le risorse in fase di pubblicazione, compreso il modulo
 
-   ![Quando fai clic su Pubblica](/help/forms/assets/on-click-publish.png)
+   ![Quando fai clic su Pubblica](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Conferma la pubblicazione**: fai clic su **Pubblica** per continuare
 3. **Verifica esito positivo**: cerca il messaggio di conferma
 
-   ![Pubblicazione completata](/help/forms/assets/publish-success.png)
+   ![Pubblicazione completata](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Ogni fase si basa sulla precedente per garantire una distribuzione sicura e funz
 
 **Verifica lo stato**: fai di nuovo clic sull’icona **Pubblica** per visualizzare lo stato corrente
 
-![Stato pubblicazione](/help/forms/assets/publish-status.png)
+![Stato pubblicazione](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Punto di controllo della convalida:**
 
@@ -91,7 +91,7 @@ Ogni fase si basa sulla precedente per garantire una distribuzione sicura e funz
 2. Fai clic sul menu a tre punti (⋯) nell’angolo in alto a destra
 3. Seleziona **Annulla pubblicazione**
 
-![Annulla la pubblicazione del modulo](/help/forms/assets/unpublish--form.png)
+![Annulla la pubblicazione del modulo](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

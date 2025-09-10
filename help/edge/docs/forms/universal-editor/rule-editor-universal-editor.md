@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ Figura: interfaccia dell’editor di regole per la modifica delle regole del com
 ![Interfaccia utente dell’editor di regole](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figura: interfaccia dell’editor di regole completa con componenti numerati
 
-- **Titolo del componente e tipo di regola**: conferma il componente selezionato e il tipo di regola attivo.
-- **Pannello Funzioni e oggetti del modulo**:
+1. **Titolo del componente e tipo di regola**: conferma il componente selezionato e il tipo di regola attivo.
+2. **Pannello Funzioni e oggetti del modulo**:
+
    - Oggetti del modulo: vista gerarchica di campi e contenitori a cui fare riferimento nelle regole
    - Funzioni: helper incorporati di matematica, stringhe, data e convalida
-- **Pulsante di attivazione/disattivazione del pannello**: mostra/nascondi il pannello oggetti e funzioni per aumentare l’area di lavoro
-- **Generatore di regole visive**: compositore di regole a discesa con trascinamento
-- **Controlli**: Fine (salva), Annulla (elimina). Prima di salvare, testa sempre le regole.
+
+3. **Pulsante di attivazione/disattivazione del pannello**: mostra/nascondi il pannello oggetti e funzioni per aumentare l’area di lavoro
+4. **Generatore di regole visive**: compositore di regole a discesa con trascinamento
+5. **Controlli**: Fine (salva), Annulla (elimina). Prima di salvare, testa sempre le regole.
 
 +++
 
@@ -302,7 +304,7 @@ Creerai un modulo che:
 
 +++
 
-+++ Passaggio 1: creare il modulo di base
++++ Passaggio 1: creare il modulo
 
 **Obiettivo**: creare il modulo di base con tutti i campi e le impostazioni iniziali.
 
@@ -363,7 +365,7 @@ Figura: struttura del modulo iniziale con componenti di base configurati
 
 1. **Seleziona il campo “reddito imponibile”** e apri l’editor di regole
 2. **Crea l’espressione matematica**:
-   - “Fai clic su **Crea**   Seleziona **“Espressione matematica”**
+   - “Fai clic su **Crea** 	 Seleziona **“Espressione matematica”**
    - Crea l’espressione: **stipendio lordo − detrazione aggiuntiva**
    - Trascina “Stipendio lordo” nel primo campo
    - Seleziona l’operatore **“meno”**
@@ -533,6 +535,9 @@ Immagine: aggiunta di funzioni personalizzate al file functions.js
 ![Funzione personalizzata nell&#39;editor di regole](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figura: selezione e configurazione di funzioni personalizzate nell’interfaccia dell’editor di regole
 
+>
+>
+> I miglioramenti all’editor delle regole, tra cui regole personalizzate basate su eventi, supporto per variabili dinamiche e integrazione API, sono disponibili anche per Edge Delivery Services Forms. Per ulteriori informazioni su questi miglioramenti e su come utilizzarli, consulta l&#39;articolo [Miglioramenti dell&#39;editor di regole e casi d&#39;uso](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Best practice per l&#39;uso della funzione**
 

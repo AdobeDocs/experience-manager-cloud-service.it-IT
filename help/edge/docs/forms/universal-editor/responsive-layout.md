@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 93%
 
 ---
 
 
-# Creare moduli adattivi con l’editor universale
+# Creazione di Forms reattivo con Universal Editor - Guida completa
 
 Il panorama web moderno richiede moduli che funzionino perfettamente in uno spettro sempre più ampio di dispositivi e dimensioni dello schermo. Che sia su un grande monitor desktop o sul piccolo display dello smartphone, gli utenti si aspettano esperienze coerenti e intuitive a prescindere dal dispositivo utilizzato. La creazione di moduli dinamici non è più un optional: è un requisito fondamentale per offrire esperienze digitali professionali, accessibili e ottimizzate per la conversione.
 
@@ -33,20 +33,21 @@ La creazione di moduli reattivi prevede due attività principali:
 - Risolvere i problemi comuni relativi ai moduli reattivi
 - Ottimizzare i moduli per le prestazioni dei dispositivi mobili
 
-## Perché i moduli reattivi sono importanti
+<!--
+## Why Responsive Forms Are Important
 
-**Impatto sull’esperienza utente:**
+**User Experience Impact:**
 
-- Oltre il 60% degli utenti accede ai moduli su dispositivi mobili
-- Le esperienze di dispositivi mobili scadenti causano un tasso di abbandono del 67% più elevato
-- I moduli reattivi possono aumentare i tassi di completamento fino al 25%
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**Vantaggi aziendali:**
+**Business Benefits:**
 
-- Tassi più elevati per il completamento dei moduli
-- Migliore soddisfazione degli utenti
-- Conformità all’accessibilità migliorata
-- Riduzione dei costi di sviluppo e manutenzione
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -295,18 +296,18 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 +++
 
-+++Ottimizzazione per tablet (768px-1199px)
++++Ottimizzazione tablet (768px-1199px)
 
 **Layout e usabilità:**
 
-- Utilizza layout a due colonne per i campi correlati per sfruttare al meglio lo spazio disponibile sullo schermo.
+- Utilizza layout a due colonne per i campi correlati per sfruttare lo spazio disponibile sullo schermo.
 - Verifica l’aspetto e l’usabilità del modulo sia in orientamento verticale che orizzontale.
 - Progetta per l’input touch e con il mouse, garantendo un facile accesso a tutti i controlli.
 - Aumenta le dimensioni dell’area del contenuto mantenendo una chiara gerarchia visiva e leggibilità.
 
 +++
 
-+++Ottimizzazione per desktop (1200px+)
++++Ottimizzazione desktop (1200 px+)
 
 **Funzioni e layout avanzati:**
 
@@ -317,11 +318,45 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 +++
 
+## Configurare layout personalizzati con punti di interruzione query multimediali
+
+Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando **Universal Editor**, devi definire il comportamento reattivo utilizzando **Punti di interruzione per query multimediali CSS**. In questo modo i moduli vengono riprodotti correttamente su dispositivi e dimensioni di schermo diversi.
+
+**Punti di interruzione consigliati (basati sui componenti core di AEM)**
+
+| **Tipo di dispositivo** | **Punto di interruzione consigliato** |
+|-----------------|---------------------------|
+| **Desktop** | `min-width: 1200px` |
+| **Tablet** | `min-width: 768px and max-width: 1199px` |
+| **Dispositivi mobili** | `max-width: 767px` |
+
+**Punti chiave**
+
+- Utilizzare questi punti di interruzione per controllare il modo in cui i componenti vengono ridimensionati, sovrapposti o nascosti su dispositivi diversi.
+- Segui le linee guida di progettazione reattiva della tua organizzazione per un’esperienza utente coerente.
+- Test dei layout su più dispositivi e orientamenti per garantire usabilità e accessibilità.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> L’editor universale non fornisce un’interfaccia utente per la definizione del comportamento reattivo. Tutte le personalizzazioni del layout devono essere gestite tramite CSS.
+
+
+
 ## Risoluzione di problemi
 
 ### Problemi di layout
 
-+++Interruzioni del layout del modulo su dispositivi mobili
++++Interruzioni layout modulo su dispositivi mobili
 
 **Cause possibili:**
 
@@ -338,7 +373,7 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 +++
 
- +++Destinazioni touch troppo piccole
++++Destinazioni Touch Troppo Piccole
 
 **Cause possibili:**
 
