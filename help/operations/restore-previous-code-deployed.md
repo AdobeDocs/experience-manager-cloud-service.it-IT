@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
+source-git-commit: 650ef846b469337c96e728277af02ca890e85117
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '536'
 ht-degree: 3%
 
 ---
@@ -30,13 +30,15 @@ Utilizza **Ripristina il codice precedente distribuito** per ripristinare immedi
 
 La funzionalità **Ripristina codice precedente distribuito** diventa disponibile solo quando **ogni** condizione seguente è true:
 
+* È consentito un solo ripristino per ogni esecuzione riuscita della pipeline; per ripristinarla nuovamente, completa un’altra esecuzione riuscita della pipeline.
 * Hai **autorizzazioni Creazione ripristino ambiente**. Per informazioni dettagliate sulla gestione delle autorizzazioni, vedere [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md).
 * L’organizzazione è iscritta al programma beta e il flag di funzione è attivo.
 * Il programma viene eseguito su AEM as a Cloud Service.
-* L&#39;ambiente scelto è un ambiente `Development` (limite temporaneo di Beta).
+* Il ripristino del codice sorgente precedente può essere eseguito in un ambiente `Development`, `Stage` o `Specialized Testng Environment`.
 * L&#39;ultima pipeline per l&#39;ambiente è stata completata correttamente ed è stata eseguita **meno di 30 giorni** fa.
 * Lo stato dell&#39;ambiente è *In esecuzione* e nessuna pipeline è in corso.
 
+Ripristina L&#39;ambiente scelto è un ambiente di test `Development`, stage o specializzato.
 Se un controllo non riesce, Cloud Manager apre la seguente finestra di dialogo in cui sono elencate una o più condizioni non soddisfatte e disabilita **Conferma**, impedendo il ripristino.
 
 ![Finestra di dialogo Ripristina errore precedente distribuito del codice](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).

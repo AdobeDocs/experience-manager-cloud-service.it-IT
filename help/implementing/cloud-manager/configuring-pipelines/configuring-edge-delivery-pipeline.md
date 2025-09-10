@@ -9,9 +9,9 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -22,13 +22,13 @@ Scopri come configurare le pipeline di Edge Delivery per generare e distribuire 
 
 Per configurare le pipeline di produzione, l’utente deve avere il ruolo **[Responsabile dell’implementazione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Non è possibile configurare una pipeline di Edge Delivery finché non si verifica quanto segue:
 >
->* Viene creato un programma che contiene un sito Edge Delivery Services e un dominio mappato. In caso contrario, nell&#39;interfaccia utente l&#39;opzione **Aggiungi pipeline Edge Delivery** risulta disabilitata e una descrizione comando spiega i requisiti mancanti.
->* L’archivio Git dispone di almeno un ramo.
->* Vengono creati gli ambienti di produzione e di staging.
+>* Viene creato un programma che contiene un sito Edge Delivery Services e un dominio mappato. In caso contrario, nell&#39;interfaccia utente l&#39;opzione **Aggiungi pipeline Edge Delivery** risulta disabilitata e una descrizione comando spiega i requisiti mancanti. Vedi [Creare un sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* L’archivio Git dispone di almeno un ramo. Vedi [Gestione archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>* Vengono creati gli ambienti di produzione e di staging. Consulta [Introduzione alle pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ Prima di iniziare la distribuzione del codice, configura le impostazioni della p
 
 **Per aggiungere una pipeline Edge Delivery:**
 
-1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l&#39;organizzazione desiderata.
+1. Accedi a Cloud Manager all&#39;indirizzo [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/), quindi nel pannello laterale sinistro fai clic su **Cloud Manager**.
+
+1. Selezionare l&#39;organizzazione desiderata.
 
 1. Nella pagina **Programmi personali** selezionare il programma desiderato.
 

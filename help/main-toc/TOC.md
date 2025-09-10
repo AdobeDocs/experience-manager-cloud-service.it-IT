@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 365e700b93d52448d1be8c3e0e6eb2185c605b18
+source-git-commit: 316c2fcbd90c4268816faabbe9836383d12139e1
 workflow-type: tm+mt
 source-wordcount: '6599'
 ht-degree: 98%
@@ -524,7 +524,7 @@ ht-degree: 98%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -1493,7 +1493,7 @@ ht-degree: 98%
    + [Monitoraggio dell’infrastruttura e dei servizi in AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Attività di manutenzione](/help/operations/maintenance.md)
    + [Ripristinare il contenuto](/help/operations/restore.md)
-   + [Ripristina codice precedente distribuito (Alpha)](/help/operations/restore-previous-code-deployed.md)
+   + [Ripristina codice precedente distribuito (Beta)](/help/operations/restore-previous-code-deployed.md)
    + [Processi asincroni](/help/operations/asynchronous-jobs.md)
    + [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md)
    + [Rimozione dell’indice generico Lucene](/help/operations/removal-generic-lucene-index.md)
