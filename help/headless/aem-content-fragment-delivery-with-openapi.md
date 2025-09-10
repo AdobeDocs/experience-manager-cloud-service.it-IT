@@ -4,9 +4,9 @@ description: Scopri la distribuzione di frammenti di contenuto AEM con OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -81,6 +81,14 @@ Questa API non prende in considerazione le origini consentite CORS definite sul 
 L’API consente nuove richieste a una velocità massima di 200 richieste al secondo, per ambiente.
 
 Una volta superato questo limite, l&#39;API inizia a inviare [429 errori](https://www.rfc-editor.org/rfc/rfc6585#section-4). Questi errori devono essere gestiti da qualsiasi applicazione client e le richieste non riuscite vengono ritentate dopo un nuovo tentativo di backoff esponenziale. La risposta HTTP viene fornita con un&#39;intestazione specifica, `Retry-After`, che indica al client il tempo di attesa necessario prima di inviare di nuovo la richiesta.
+
+## Richieste autenticate {#authenticated-requests}
+
+Il supporto per le richieste autenticate può essere implementato con la [chiave Edge CDN di AEM](/help/implementing/dispatcher/cdn-credentials-authentication.md). L’utilizzo della chiave Edge della rete CDN di AEM consente di fare affidamento sulla rete CDN di AEM e garantire che solo specifiche richieste possano accedere all’API, in base all’intestazione della chiave Edge fornita.
+
+>[!NOTE]
+>
+>L’autorizzazione basata sugli ACL specifici dell’archivio non è attualmente supportata.
 
 <!-- 
 ## Limitations {#limitations}
