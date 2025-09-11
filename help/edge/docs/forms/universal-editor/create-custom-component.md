@@ -4,7 +4,7 @@ description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ In questa sezione verrà illustrato il processo di creazione di un componente pe
 #### 1.1 File e cartelle
 
 Il primo passaggio consiste nell’impostare i file necessari del componente personalizzato e collegarlo al codice nell’archivio. Questo processo viene eseguito automaticamente da **AEM Forms Scaffolder CLI**, rendendo più rapido lo scaffolding e il cablaggio dei file necessari.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. Apri il terminale e passa alla directory principale del progetto modulo.
 2. Esegui i seguenti comandi:
@@ -520,13 +522,13 @@ Il modo precedente per farlo è seguire manualmente i passaggi descritti di segu
 
 10. **Aggiorna _component-definition.json**: in `models/_component-definition.json` aggiorna l&#39;array all&#39;interno del gruppo con `id custom-components` con un oggetto nel modo seguente:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
+   In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
 
 11. **Esegui lo script :json della build**: esegui `npm run build:json` per compilare e unire tutte le definizioni JSON dei componenti in un unico file da distribuire dal server. In questo modo lo schema del nuovo componente viene incluso nell’output unito.
 
