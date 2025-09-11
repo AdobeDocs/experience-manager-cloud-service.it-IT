@@ -4,9 +4,9 @@ description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ Ora viene visualizzato il componente scheda personalizzato, come illustrato di s
 
 ![Componente personalizzato scheda](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Commit e push delle modifiche
+### &#x200B;3. Commit e push delle modifiche
 
 Dopo aver implementato JavaScript e CSS per il componente personalizzato e averlo verificato localmente, esegui il commit e invia le modifiche all’archivio Git.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 È stato creato un componente complesso per la selezione della scheda personalizzata in alcuni semplici passaggi.
 
-## Metodo manuale o legacy per creare un componente personalizzato
++++ ## Metodo manuale o legacy per creare un componente personalizzato
 
 Il modo precedente per farlo è seguire manualmente i passaggi descritti di seguito:
 
@@ -522,13 +522,13 @@ Il modo precedente per farlo è seguire manualmente i passaggi descritti di segu
 
 10. **Aggiorna _component-definition.json**: in `models/_component-definition.json` aggiorna l&#39;array all&#39;interno del gruppo con `id custom-components` con un oggetto nel modo seguente:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
+   In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
 
 11. **Esegui lo script :json della build**: esegui `npm run build:json` per compilare e unire tutte le definizioni JSON dei componenti in un unico file da distribuire dal server. In questo modo lo schema del nuovo componente viene incluso nell’output unito.
 
