@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.09.04 dell’editor universale
-description: Queste sono le note sulla versione 2025.09.04 dell’editor universale.
+title: Note sulla versione 2025.09.11 dell’editor universale
+description: Queste sono le note sulla versione 2025.09.11 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 52%
+source-wordcount: '220'
+ht-degree: 46%
 
 ---
 
 
-# Note sulla versione 2025.09.04 dell’editor universale {#release-notes}
+# Note sulla versione 2025.09.11 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 4 settembre 2025 di Universal Editor.
+Queste sono le note sulla versione dell’11 settembre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Queste sono le note sulla versione del 4 settembre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* Il comando Copia/Incolla è disponibile per [utenti che lo hanno adottato in anticipo](#copy-paste)
-* [Annulla e ripristina](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) è ora disponibile per gli autori di contenuto.
-   * Le operazioni Annulla e Ripeti possono essere eseguite per le modifiche apportate nel contesto, per le modifiche effettuate tramite il pannello Proprietà, nonché per aggiungere, duplicare, spostare ed eliminare blocchi.
-   * Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
+* [Copia e incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) è ora disponibile per i componenti all&#39;interno dei contenitori sulla stessa pagina.
+* 6.5 LTS SP1 è ora supportato.
+* L&#39;editor universale ora supporta [l&#39;ereditarietà della gestione multisito](/help/sites-cloud/authoring/universal-editor/inheritance.md) per i frammenti di contenuto, inclusa l&#39;interruzione automatica dell&#39;ereditarietà quando viene modificato un frammento di contenuto Live Copy.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -35,11 +34,11 @@ Se ti interessa testare queste nuove funzioni e condividere un feedback, invia u
 
 Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra di dialogo del collegamento, è ora disponibile nel pannello di destra.
 
-### Copia/Incolla {#copy-paste}
+### Copia e incolla tra le pagine {#copy-paste}
 
-Gli autori di contenuti possono ora copiare e incollare componenti all’interno della stessa pagina.
+È ora possibile copiare e incollare su più pagine oltre che all’interno della stessa pagina.
 
 ## Altri miglioramenti {#other-improvements}
 
-* Lo stile della barra degli strumenti dell’editor è stato aggiornato per allinearlo meglio al nuovo editor RTF in arrivo.
-* I filtri nella finestra di dialogo del selettore risorse sono stati ripristinati.
+* Sono stati implementati diversi piccoli miglioramenti delle prestazioni in Universal Editor funziona con AEM come sistema back-end.
+* I frammenti di contenuto vengono ora pubblicati utilizzando l’API aperta, con miglioramenti delle prestazioni e coerenza rispetto al modo in cui l’Editor frammenti di contenuto e la console pubblicano.

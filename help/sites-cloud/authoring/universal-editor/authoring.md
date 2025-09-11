@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 11%
 
 ---
@@ -193,6 +193,24 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 >[!TIP]
 >
 >Utilizzare il tasto di scelta rapida `Command-Z` o `Shift-Command-Z` rispettivamente per annullare o ripetere l&#39;operazione.
+
+### Copiare e incollare {#copy-paste}
+
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo all&#39;interno della stessa pagina e se il contenitore di destinazione [consente di incollare il componente.](/help/implementing/universal-editor/filtering.md)
+
+![Icona copia](assets/copy.png)
+![Icona Incolla](assets/paste.png)
+
+1. Seleziona un componente nell’editor o nella struttura del contenuto.
+1. L&#39;icona **Copia** viene visualizzata nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tocca o fai clic su di esso.
+1. L&#39;icona **Incolla** viene visualizzata nel pannello delle proprietà.
+1. Selezionare il componente _dopo_ che si desidera incollare.
+1. Tocca o fai clic su Incolla.
+1. Il componente copiato viene incollato _dopo_ il componente selezionato.
+
+>[!TIP]
+>
+>Utilizzare la scelta rapida `Command-C` o `Command-V` rispettivamente per copiare o incollare.
 
 ## Anteprima del contenuto {#previewing-content}
 

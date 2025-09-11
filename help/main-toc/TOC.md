@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 316c2fcbd90c4268816faabbe9836383d12139e1
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '6599'
+source-wordcount: '6603'
 ht-degree: 98%
 
 ---
@@ -235,6 +235,7 @@ ht-degree: 98%
    + Note sulla versione dell’editor universale {#universal-editor}
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.09.04](/help/release-notes/universal-editor/2025/2025-09-04.md)
          + [Note sulla versione 2025.08.22](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [Note sulla versione 2025.08.14](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [Note sulla versione 2025.07.31](/help/release-notes/universal-editor/2025/2025-07-31.md)
@@ -524,7 +525,7 @@ ht-degree: 98%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -793,7 +794,7 @@ ht-degree: 98%
          + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
-         + [Utilizzare il modello dati del modulo](/help/forms/work-with-form-data-model.md)
+         + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
          + [Utilizzare il modello di dati del modulo](/help/forms/using-form-data-model.md)
          + [Progettare uno schema XML per un modulo adattivo](/help/forms/adaptive-form-xml-schema-form-model.md)
       + Impostare azione di invio per un modulo adattivo {#set-submit-action}
@@ -802,7 +803,7 @@ ht-degree: 98%
          + [Configurare l’azione di invio per un modulo adattivo basato su componenti core](/help/forms/configure-submit-actions-core-components.md)
          + [Configurare l’azione di invio per moduli Edge Delivery Services](/help/forms/configure-submit-action-eds-forms.md)
          + [Configurare l’azione di invio Invia e-mail per un modulo adattivo](/help/forms/configure-submit-action-send-email.md)
-         + [Integrare un modulo adattivo con il modello di dati del modulo](/help/forms/integrate-adaptive-form-with-fdm.md)
+         + [Integrare un modulo adattivo con un modello dati modulo](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
             + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -831,8 +832,8 @@ ht-degree: 98%
             + [Impostare un layout per un modulo adattivo basato sui componenti core](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
-            + [Creare un modello di modulo adattivo basato sui componenti core](/help/forms/template-editor-core-components.md)
-            + [Creare un modulo adattivo (componenti core) basato su modelli di modulo XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
+            + [Creare un modello per moduli adattivi basato sui componenti core](/help/forms/template-editor-core-components.md)
+            + [Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -882,7 +883,7 @@ ht-degree: 98%
             + [Creare un modello](/help/forms/template-editor.md)
             + [Creare un tema](/help/forms/themes.md)
             + [Frammenti di moduli adattivi di riferimento](/help/forms/reference-adaptive-form-fragments.md)
-            + [Sincronizzazione di moduli adattivi con i modelli di modulo XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [Sincronizzazione di moduli adattivi con i modelli per moduli XFA](/help/forms/synchronizing-adaptive-forms-xfa.md)
             + [Supporto XFA in moduli adattivi basati su XDP](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [Progettazione di uno schema JSON per un modulo adattivo](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Migliorare le prestazioni dei moduli di grandi dimensioni con caricamento lento](/help/forms/lazy-loading-adaptive-forms.md)
@@ -935,11 +936,11 @@ ht-degree: 98%
       + [Architettura dei moduli HTML5](/help/forms/html5-forms-architecture.md)
       + [Differenziazione delle funzioni tra moduli HTML5 e moduli PDF](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
       + [Domande frequenti per i moduli HTML5](/help/forms/faqhtml5.md)
-      + [Progettazione di modelli di modulo per moduli HTML5](/help/forms/designing-form-template.md)
+      + [Progettazione di modelli per moduli per moduli HTML5](/help/forms/designing-form-template.md)
       + [Best practice per moduli HTML5](/help/forms/best-practices-for-html5-forms.md)
       + [Progettazione di moduli HTML5 accessibili](/help/forms/design-accessible-html5-forms.md)
       + [Generare l’anteprima HTML5 di un modulo XDP](/help/forms/preview-xdp-forms-html.md)
-      + [Rendering del modello moduli per i moduli HTML5](/help/forms/rendering-form-template.md)
+      + [Rendering del modello per moduli HTML5](/help/forms/rendering-form-template.md)
       + [Abilitazione degli allegati per un modulo HTML5](/help/forms/enabling-attachments-html5-form.md)
       + [Proxy del servizio moduli HTML5](/help/forms/service-proxy.md)
       + [Ottimizzazione dei moduli HTML5](/help/forms/optimize-html5-forms.md)
@@ -1103,7 +1104,7 @@ ht-degree: 98%
          + [Come configurare un’azione di invio per un modulo adattivo?](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Come configurare una pagina di reindirizzamento o un messaggio di ringraziamento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [Aggiungere Google reCAPTCHA ai moduli nell’editor universale](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Come integrare un modello dati di modulo (FDM) in un modulo nell’editor universale?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Come integrare un modello dati modulo (FDM) in un modulo nell’editor universale?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Come precompilare i campi del modulo adattivo](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Creare componenti personalizzati per un modulo EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)

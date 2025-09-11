@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 3%
 
 ---
@@ -67,4 +67,3 @@ Per informazioni su come abilitare questa estensione, [consulta la documentazion
 
 * Per ripristinare l&#39;ereditarietà per i singoli componenti, è necessario abilitare l&#39;estensione **AEM Multi-Site-Management (MSM)**.
 * Per visualizzare il feedback visivo per vedere quali componenti hanno la loro ereditarietà disabilitata e quali ancora la mantengono, è necessario abilitare l&#39;estensione **AEM Multi-Site-Management (MSM)**.
-* Queste funzioni sono attualmente limitate ai componenti nelle pagine e non si applicano ancora a [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md), nonostante questi dispongano anche delle funzionalità MSM e Launch.
