@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Utilizza **Ripristina il codice precedente distribuito** per ripristinare immedi
 * Il programma viene eseguito su AEM as a Cloud Service.
 * L&#39;ultima pipeline per l&#39;ambiente è stata completata correttamente ed è stata eseguita **meno di 30 giorni** fa.
 * Lo stato dell&#39;ambiente è *In esecuzione* e nessuna pipeline è in corso.
-* **È possibile ripristinare il codice precedente distribuito** in un ambiente `Development`, `Stage` o `Specialized Testng Environment`.
+* **È possibile ripristinare il codice precedente distribuito** in un ambiente `Development`, `Stage` o `Specialized Testing Environment`.
 
 Se un controllo non riesce, Cloud Manager apre la seguente finestra di dialogo in cui sono elencate una o più condizioni non soddisfatte e disabilita **Conferma**, impedendo il ripristino.
 
