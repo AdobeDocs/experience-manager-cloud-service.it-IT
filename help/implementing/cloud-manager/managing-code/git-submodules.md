@@ -4,9 +4,9 @@ description: Scopri come i moduli Git secondari possono essere utilizzati per un
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 24%
 
 ---
@@ -68,7 +68,7 @@ Il risultato è un file `.gitmodules` simile al seguente:
 
 Per ulteriori informazioni sui sottomoduli Git, vedere anche il [Manuale di riferimento Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-## Note sull’utilizzo {#usage-notes}
+## Note sull’utilizzo degli archivi Adobe {#usage-notes-recommendations-adobe-repos}
 
 * La sintassi dell’URL Git deve essere esattamente quella descritta nella sezione precedente.
 * I moduli secondari sono supportati unicamente nella radice del ramo.
@@ -94,4 +94,4 @@ Tuttavia, dopo aver configurato il file `pom.xml` e aver eseguito i comandi `git
 
 * Gli URL Git del sottomodulo possono essere in formato HTTPS o SSH, ma devono puntare a un archivio GitHub.com. L’aggiunta di un sottomodulo dell’archivio Adobe a un archivio di aggregazione GitHub o viceversa non è supportata.
 * I sottomoduli GitHub devono essere accessibili dall’app GitHub di Adobe.
-* Si applicano anche le [limitazioni all’utilizzo dei moduli Git secondari con archivi gestiti da Adobe](#limitations-recommendations).
+* Si applicano anche le [limitazioni all’utilizzo dei moduli Git secondari con archivi gestiti da Adobe](#usage-notes-recommendations-adobe-repos).
