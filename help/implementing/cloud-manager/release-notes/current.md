@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -21,25 +21,25 @@ Consulta anche le [note sulla versione corrente di Adobe Experience Manager as a
 
 ## Date di pubblicazione {#release-date}
 
-La versione 2025.9.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata il venerdì 4 settembre 2025.
+La versione 2025.9.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata il 4 settembre 2025.
 
-La prossima versione è pianificata per il venerdì 2 ottobre 2025.
+La prossima versione è pianificata per il 2 ottobre 2025.
 
 ## Novità {#what-is-new}
 
-* **Rinnovare manualmente i certificati di convalida del dominio gestito da Adobe**
+* **Rinnovare manualmente i certificati di convalida del dominio gestiti da Adobe**
 
   È ora possibile rinnovare manualmente i certificati DV (Adobe-managed Domain Validation) non riusciti da Cloud Manager o dall&#39;API pubblica per aggiornare i certificati in modo proattivo. <!-- CMGR-68738 -->
 
   ![Rinnovo certificato SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **È stato aggiunto il supporto per Azure DevOps (archivi privati)**
+* **Ora è stato aggiunto il supporto per Azure DevOps (archivi privati)**
 
-  Gli aggiornamenti della documentazione includono passaggi di configurazione per acquisire un Git personalizzato con Azure DevOps e la convalida delle richieste di pull. Vedi [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+  Gli aggiornamenti della documentazione includono passaggi di configurazione per integrare un Git personalizzato con Azure DevOps e la convalida delle richieste di pull. Consulta [Aggiungere archivi esterni in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 * **Estensione del supporto Git personalizzato (BYOG) alle pipeline di configurazione (archivi privati)**
 
-  Cloud Manager ora supporta le pipeline di configurazione con archivi privati su GitHub, Bitbucket, Azure DevOps e GitLab. Questo sostegno accelera ulteriormente il ciclo di sviluppo. Consulta [Controlli della richiesta di pull per archivi privati](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  Cloud Manager ora supporta le pipeline di configurazione con archivi privati su GitHub, Bitbucket, Azure DevOps e GitLab. Questo supporto accelera ulteriormente il ciclo di sviluppo. Consulta [Controlli della richiesta di pull per archivi privati](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Ripristino rapido a un’implementazione precedente se il codice di origine più recente del cliente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**&#x200B;per un ambiente selezionato.*
+![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**per un ambiente selezionato.*
 
 ![Finestra di dialogo Ripristina codice precedente implementato](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Nella finestra di dialogo **Ripristina codice precedente implementato**, controlla la versione attualmente implementata e quella che desideri ripristinare, quindi fai clic su **Conferma***.
 
 ![Ripristino dell’attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**&#x200B;fino al completamento dell’implementazione.*
+*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**fino al completamento dell’implementazione.*
 
 ![Versione del codice di origine in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell’ambiente, come illustrato in precedenza, mostra ora anche la versione del codice di origine attiva in uso.*
 
@@ -135,7 +135,7 @@ Consulta [Gestisci token di accesso](/help/implementing/cloud-manager/managing-c
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Aggiungi pipeline di configurazione di Edge Delivery {#add-eds-pipeline}
+### Aggiungere una pipeline di configurazione Edge Delivery {#add-eds-pipeline}
 
 Le pipeline di configurazione sono ora supportate per i siti creati con Edge Delivery Services, espandendo questa funzionalità oltre i singoli ambienti di Cloud Service. È possibile utilizzare le **pipeline di configurazione** per gestire impostazioni quali le regole di filtro del traffico e le configurazioni del firewall per applicazioni web (WAF), se applicabile. Consulta le [configurazioni supportate](/help/operations/config-pipeline.md#configurations).
 
@@ -162,7 +162,7 @@ Se ti interessa testare questa nuova funzione e condividere il tuo feedback, inv
 
 ## Correzioni di bug {#bug-fixes}
 
-Non sono state apportate correzioni di bug significativi nella versione di settembre di Cloud Manager.
+Non sono state apportate correzioni di bug significative nella versione di settembre di Cloud Manager.
 
 
 <!-- ## Known issues {#known-issues} -->
