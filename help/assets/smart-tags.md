@@ -7,7 +7,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets senza tag in DAM {#smart-tag-existing-assets}
 
-Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
+Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -243,7 +243,7 @@ Per configurare i titoli generati dall’intelligenza artificiale:
 
    * **Visualizza titolo generato dall&#39;intelligenza artificiale solo se il titolo del controller di dominio non esiste**: AEM Assets visualizza il titolo generato dall&#39;intelligenza artificiale solo se per una risorsa non è definito alcun titolo.
 
-     ![Configura titoli generati da IA](assets/configure-title-ai-generated.png)
+     ![Configurare titoli generati dall’IA](assets/configure-title-ai-generated.png)
 
 ### Utilizzo di metadati generati dall’intelligenza artificiale {#using-ai-generated-smart-tags}
 
