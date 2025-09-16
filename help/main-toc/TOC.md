@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
+source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
-source-wordcount: '6618'
+source-wordcount: '6624'
 ht-degree: 97%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 97%
    + Note sulla versione di manutenzione di AEMaaCS {#maintenance}
       + [Note sulla versione di manutenzione corrente](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [Note sulla versione di manutenzione 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
          + [Note sulla versione di manutenzione 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
          + [Note sulla versione di manutenzione 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
          + [Note sulla versione di manutenzione 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -525,7 +526,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -1015,7 +1016,7 @@ ht-degree: 97%
       + [Guida introduttiva di AI Assistant per AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
       + [Guida introduttiva all’Assistente AI per AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
       + [Assistente IA di AEM Forms - Libreria dei prompt](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - Procedure consigliate](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder - Best practice](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
       + [Forms Experience Builder - Guida alla risoluzione dei problemi](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Panoramica di Screens as a Cloud Service {#overview}
