@@ -32,7 +32,7 @@ La data di rilascio della versione funzionale di Content Hub (2025.8.0) è il 28
 
 Content Hub consente ora di individuare più rapidamente le risorse necessarie. Con la nuova funzionalità di ricerca in blocco, puoi immettere più valori per qualsiasi proprietà di filtro, separati da un delimitatore (ad esempio, più ID SKU), e recuperare tutte le risorse corrispondenti all’istante e con una singola ricerca.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## Funzioni della versione di luglio {#july-release-features}
 
