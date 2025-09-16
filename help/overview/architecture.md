@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 >id="intro_aem_cloudservice_architecture"
 >title="Introduzione all’architettura di AEM as a Cloud Service"
 >abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud."
->additional-url="https://video.tv.adobe.com/v/346182?captions=ita" text="Panoramica dell’architettura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
 Adobe Experience Manager (AEM) as a Cloud Service offre una serie di servizi componibili per la creazione e la gestione di esperienze ad alto impatto.
 
@@ -53,7 +53,7 @@ Con AEM as a Cloud Service sono disponibili quattro tipi di [ambienti](/help/imp
 
 * Ambiente di staging:
 
-   * Un ambiente stage è in genere associato a un ambiente di produzione in una relazione 1:1.
+   * Un ambiente di staging è generalmente associato a un ambiente di produzione con una relazione 1:1.
    * L’ambiente di staging è progettato principalmente per test automatizzati prima che le modifiche all’applicazione vengano inviate all’ambiente di produzione,
       * indipendentemente dalle modifiche avviate da Adobe come parte di un aggiornamento di manutenzione o dalle distribuzioni del codice.
       * In caso di distribuzione del codice, è possibile anche eseguire test manuali.

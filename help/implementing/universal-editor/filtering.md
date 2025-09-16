@@ -1,29 +1,29 @@
 ---
 title: Filtrare i componenti
-description: Scopri come limitare i componenti consentiti per contenitore nell’Editor universale utilizzando i filtri dei componenti.
+description: Scopri come limitare i componenti consentiti per contenitore nell’editor universale, utilizzando i filtri dei componenti.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
 source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Filtrare i componenti {#filtering-components}
 
-Scopri come limitare i componenti consentiti per contenitore nell’Editor universale utilizzando i filtri dei componenti.
+Scopri come limitare i componenti consentiti per contenitore nell’editor universale, utilizzando i filtri dei componenti.
 
 ## Filtri {#filters}
 
-Quando utilizzi l’Editor universale, puoi limitare i componenti consentiti per componente contenitore. A questo scopo, devi introdurre un tag script aggiuntivo che punti alla definizione del filtro.
+Quando utilizzi l’editor universale, puoi limitare i componenti consentiti a livello di componente contenitore. A questo scopo, devi introdurre un tag di script aggiuntivo che punti alla definizione del filtro.
 
 ```html
 <script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
 ```
 
-Una definizione di filtro potrebbe avere un aspetto simile al seguente, il che impedirebbe a un contenitore di aggiungere solo testo e immagini.
+L&#39;esempio seguente è una definizione di filtro per limitare un contenitore alla sola aggiunta di testo e immagini.
 
 ```json
 [
@@ -34,13 +34,13 @@ Una definizione di filtro potrebbe avere un aspetto simile al seguente, il che i
 ]
 ```
 
-È quindi possibile fare riferimento alla definizione del filtro dal componente contenitore aggiungendo la proprietà `data-aue-filter`, passando l&#39;ID del filtro definito in precedenza.
+È quindi possibile fare riferimento alla definizione di filtro dal componente contenitore aggiungendo la proprietà `data-aue-filter`, passando l&#39;ID del filtro definito in precedenza.
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-L&#39;impostazione dell&#39;attributo `components` in una definizione di filtro su `null` consente tutti i componenti, come se non ci fosse alcun filtro.
+In una definizione di filtro, se l’attributo `components` viene impostato su `null`, vengono consentiti tutti i componenti, come se non ci fosse alcun filtro.
 
 ```json
 [
@@ -55,5 +55,5 @@ L&#39;impostazione dell&#39;attributo `components` in una definizione di filtro 
 >
 >Scopri altre opzioni di personalizzazione ed estensione disponibili per l’editor universale nei documenti:
 >
->* [Personalizzazione dell&#39;editor universale](/help/implementing/universal-editor/customizing.md)
->* [Estensione dell&#39;editor universale](/help/implementing/universal-editor/extending.md)
+>* [Personalizzare l’editor universale](/help/implementing/universal-editor/customizing.md)
+>* [Navigazione nell’editor universale](/help/implementing/universal-editor/extending.md)

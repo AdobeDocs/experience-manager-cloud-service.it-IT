@@ -1,34 +1,34 @@
 ---
 title: Definizioni di modelli, campi e tipi di componenti
-description: Scopri i campi e i tipi di componenti che l’Editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
+description: Scopri i campi e i tipi di componenti che l’editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come puoi dotare di strumenti la tua app creando una definizione di modello e un collegamento al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
 
 # Definizioni di modelli, campi e tipi di componenti {#field-types}
 
-Scopri i campi e i tipi di componenti che l’Editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come creare una definizione di modello e un collegamento al componente per sfruttare al meglio la tua app.
+Scopri i campi e i tipi di componenti che l’editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come puoi dotare di strumenti la tua app creando una definizione di modello e un collegamento al componente.
 
 ## Panoramica {#overview}
 
-Quando adattate le vostre app per l&#39;uso con l&#39;Editor universale, dovete instrumentare i componenti e definire quali campi e tipi di componenti possono essere manipolati nel pannello delle proprietà dell&#39;editor. A tale scopo, crea un modello e crea un collegamento a tale modello dal componente.
+Quando adatti le tue app per utilizzarle con l’editor universale, devi dotare di strumenti i componenti e definire quali campi e tipi di componenti possono manipolare nel pannello delle proprietà dell’editor. Questo avviene mediante la creazione di un modello e un collegamento ad esso dal componente.
 
-Questo documento fornisce una panoramica della definizione di un modello, dei campi e dei tipi di componenti disponibili, insieme ad esempi di configurazioni.
+Questo documento fornisce una panoramica della definizione di un modello, dei campi e dei tipi di componenti disponibili, insieme a configurazioni di esempio.
 
 >[!TIP]
 >
->Se non sai come gestire l&#39;app per l&#39;editor universale, consulta il documento [Panoramica dell&#39;editor universale per sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
+>Se non sai come dotare di strumenti la tua app per l’editor universale, consulta il documento [Panoramica dell’editor universale per sviluppatori AEM](/help/implementing/universal-editor/developer-overview.md).
 
-## Struttura definizione modello {#model-structure}
+## Struttura della definizione di un modello {#model-structure}
 
-Per configurare un componente tramite il pannello delle proprietà nell’Editor universale, è necessario che esista una definizione di modello e che tale definizione sia collegata al componente.
+Per configurare un componente tramite il pannello delle proprietà nell’editor universale, è necessario che sia presente una definizione di modello e che questa sia collegata al componente.
 
 La definizione del modello è una struttura JSON che inizia con un array di modelli.
 
@@ -41,21 +41,21 @@ La definizione del modello è una struttura JSON che inizia con un array di mode
 ]
 ```
 
-Consulta la sezione **[Fields](#fields)** di questo documento per ulteriori informazioni su come definire l&#39;array `fields`.
+Per ulteriori informazioni su come definire l’array `fields`, consulta la sezione **[Campi](#fields)** di questo documento.
 
-È possibile collegare un modello a un componente in due modi: utilizzando la [definizione del componente](#component-definition) o [tramite la strumentazione.](#instrumentation)
+Puoi collegare un modello a un componente in due modi, ovvero utilizzando la [definizione del componente](#component-definition) o [tramite la strumentazione.](#instrumentation)
 
 ### Collegamento tramite la definizione del componente {#component-definition}
 
-Questo è il metodo preferito per collegare il modello al componente. In questo modo puoi mantenere il collegamento a livello centrale nella definizione del componente e consentire il trascinamento dei componenti tra i contenitori.
+Si tratta del metodo preferito per collegare il modello al componente. In questo modo puoi mantenere il collegamento a livello centrale nella definizione del componente e consentire il trascinamento dei componenti tra i contenitori.
 
-È sufficiente includere la proprietà `model` nell&#39;oggetto componente nell&#39;array `components` nel file `component-definition.json`.
+È sufficiente includere la proprietà `model` nell’oggetto del componente nell’array `components` nel file `component-definition.json`.
 
-Per informazioni dettagliate, vedere il documento [Definizione del componente.](/help/implementing/universal-editor/component-definition.md)
+Per informazioni dettagliate, consulta il documento [Definizione del componente.](/help/implementing/universal-editor/component-definition.md)
 
 ### Collegamento tramite strumentazione {#instrumentation}
 
-Per utilizzare la definizione del modello con un componente, è possibile utilizzare l&#39;attributo `data-aue-model`.
+Per utilizzare la definizione del modello con un componente, è possibile utilizzare l’attributo `data-aue-model`.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -63,12 +63,12 @@ Per utilizzare la definizione del modello con un componente, è possibile utiliz
 
 >[!NOTE]
 >
->Prima di controllare la definizione del componente, Universal Editor controlla se un modello è collegato tramite la strumentazione e lo utilizza. Ciò significa che:
+>L’editor universale verifica innanzitutto se un modello è collegato tramite la strumentazione e lo utilizza prima di verificare la definizione del componente. Ciò significa che:
 >
 >* I progetti che hanno implementato il collegamento al modello tramite la strumentazione continueranno a funzionare così come sono senza bisogno di modifiche.
->* Se si definisce il modello nella [definizione del componente](#component-definition) e nella strumentazione, la strumentazione verrà sempre utilizzata.
+>* Se definisci il modello nella [definizione del componente](#component-definition) e nella strumentazione, quest’ultima verrà sempre utilizzata.
 
-## Caricamento di una definizione di modello {#loading-model}
+## Caricamento della definizione di un modello {#loading-model}
 
 Una volta creato un modello, è possibile farvi riferimento come file esterno.
 
@@ -76,7 +76,7 @@ Una volta creato un modello, è possibile farvi riferimento come file esterno.
 <script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
 ```
 
-In alternativa, potete anche definire il modello in linea.
+In alternativa, puoi anche definire il modello in linea.
 
 ```html
 <script type="application/vnd.adobe.aue.model+json">
@@ -86,34 +86,34 @@ In alternativa, potete anche definire il modello in linea.
 
 ## Campi {#fields}
 
-Un oggetto campo ha la seguente definizione di tipo.
+Di seguito è riportata la definizione di tipo di un oggetto campo.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `component` | `ComponentType` | Rendering del componente | Sì |
-| `name` | `string` | Proprietà [o percorso](#nesting) in cui i dati devono essere persistenti | Sì |
+| `component` | `ComponentType` | Modulo di rendering del componente | Sì |
+| `name` | `string` | Proprietà [o percorso](#nesting) in cui devono essere mantenuti i dati | Sì |
 | `label` | `FieldLabel` | Etichetta del campo | Sì |
 | `description` | `FieldDescription` | Descrizione del campo | No |
 | `placeholder` | `string` | Segnaposto per il campo | No |
 | `value` | `FieldValue` | Valore predefinito | No |
 | `valueType` | `ValueType` | Convalida standard, può essere `string`, `string[]`, `number`, `date`, `boolean` | No |
-| `required` | `boolean` | Il campo è obbligatorio | No |
-| `readOnly` | `boolean` | Campo di sola lettura | No |
-| `hidden` | `boolean` | Campo nascosto per impostazione predefinita | No |
+| `required` | `boolean` | Il campo è obbligatorio? | No |
+| `readOnly` | `boolean` | Il campo è di sola lettura? | No |
+| `hidden` | `boolean` | Il campo è nascosto per impostazione predefinita? | No |
 | `condition` | `RulesLogic` | Regola per mostrare o nascondere il campo in base a una [condizione](/help/implementing/universal-editor/customizing.md#conditionally-hide) | No |
-| `multi` | `boolean` | Il campo è multicampo<br/>Si noti che la nidificazione dei contenitori non è consentita per i campi multipli nel pannello delle proprietà | No |
+| `multi` | `boolean` | Si tratta di un campo multiplo<br/>L’annidamento dei contenitori non è consentito per i campi multipli nel pannello delle proprietà | No |
 | `validation` | `ValidationType` | Regola o regole di convalida per il campo | No |
 | `raw` | `unknown` | Dati non elaborati che possono essere utilizzati dal componente | No |
 
-### nome Campo e nidificazione {#nesting}
+### Campo name e annidamento {#nesting}
 
-Il campo `name` può puntare direttamente a una proprietà della risorsa corrente oppure, nel caso di componenti in `cq:Pages`, può anche utilizzare un percorso a una proprietà nidificata. Ad esempio:
+Il campo `name` può puntare direttamente a una proprietà della risorsa corrente oppure, nel caso di componenti in `cq:Pages`, può anche utilizzare un percorso a una proprietà annidata. Ad esempio:
 
 ```json
 "name": "teaser/image/fileReference"
 ```
 
-### Tipi componente {#component-types}
+### Tipi di componente {#component-types}
 
 Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il rendering dei campi.
 
@@ -125,20 +125,20 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Gruppo di caselle di controllo](#checkbox-group) | `checkbox-group` |
 | [Contenitore](#container) | `container` |
 | [Frammento di contenuto](#content-fragment) | `aem-content-fragment` |
-| [Data e ora](#date-time) | `date-time` |
-| [Frammento esperienza](#experience-fragment) | `aem-experience-fragment` |
+| [Data/ora](#date-time) | `date-time` |
+| [Frammento di esperienza](#experience-fragment) | `aem-experience-fragment` |
 | [Selezione multipla](#multiselect) | `multiselect` |
 | [Numero](#number) | `number` |
 | [Gruppo pulsanti di scelta](#radio-group) | `radio-group` |
 | [Riferimento](#reference) | `reference` |
-| [Formato RTF](#rich-text) | `richtext` |
+| [Formattato](#rich-text) | `richtext` |
 | [Seleziona](#select) | `select` |
 | [Scheda](#tab) | `tab` |
 | [Testo](#text) | `text` |
 
 #### Tag AEM {#aem-tag}
 
-Un tipo di componente Tag di AEM abilita un selettore di tag di AEM, che può essere utilizzato per allegare i tag al componente.
+Un tipo di componente tag AEM abilita un selettore di tag AEM che può essere utilizzato per applicare i tag al componente.
 
 >[!BEGINTABS]
 
@@ -160,21 +160,21 @@ Un tipo di componente Tag di AEM abilita un selettore di tag di AEM, che può es
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente tag di AEM](assets/component-types/aem-tag-picker.png)
+![Schermata del tipo di componente tag AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
 >[!TIP]
 >
->Per ulteriori informazioni su come utilizzare i fogli di calcolo per gestire i dati della tassonomia per il progetto Edge Delivery Services, vedere il documento [Gestione dei dati della tassonomia](https://www.aem.live/docs/authoring-taxonomy).
+>Per ulteriori informazioni su come utilizzare i fogli di calcolo per gestire i dati della tassonomia per il progetto Edge Delivery Services, consulta il documento [Gestione dei dati della tassonomia](https://www.aem.live/docs/authoring-taxonomy).
 
 #### Contenuto AEM {#aem-content}
 
-Un tipo di componente contenuto di AEM abilita un selettore di contenuti di AEM, che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del [componente di riferimento](#reference), che può selezionare solo le risorse, il componente di contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente contenuto AEM abilita un selettore di contenuti AEM che può essere utilizzato per selezionare qualsiasi risorsa AEM. A differenza del [componente riferimento](#reference) che può selezionare solo le risorse, il componente contenuto AEM può fare riferimento a qualsiasi contenuto AEM. Offre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il contenuto di AEM, limitando la selezione a tale directory e sottodirectory | No |
+| `rootPath` | `string` | Percorso che il selettore di contenuti aprirà per consentire all’utente di selezionare il contenuto AEM, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!BEGINTABS]
 
@@ -200,13 +200,13 @@ Un tipo di componente contenuto di AEM abilita un selettore di contenuti di AEM,
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente contenuto di AEM](assets/component-types/aem-content-picker.png)
+![Schermata del tipo di componente contenuto AEM](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
 #### Booleano {#boolean}
 
-Un tipo di componente booleano memorizza un semplice valore true/false renderizzato come un interruttore. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente booleano memorizza un semplice valore vero/falso sottoposto a rendering come pulsante di attivazione/disattivazione. Offre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
@@ -257,7 +257,7 @@ Un tipo di componente booleano memorizza un semplice valore true/false renderizz
 
 #### Gruppo di caselle di controllo {#checkbox-group}
 
-Simile a un booleano, un tipo di componente gruppo casella di controllo consente la selezione di più elementi true/false, riprodotti come più caselle di controllo.
+Essendo simile a un booleano, un tipo di componente gruppo di caselle di controllo consente la selezione di più elementi veri/falsi, sottoposti a rendering come più caselle di controllo.
 
 >[!BEGINTABS]
 
@@ -283,17 +283,17 @@ Simile a un booleano, un tipo di componente gruppo casella di controllo consente
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente gruppo casella di controllo](assets/component-types/checkbox-group.png)
+![Schermata del tipo di componente gruppo di caselle di controllo](assets/component-types/checkbox-group.png)
 
 >[!ENDTABS]
 
 #### Contenitore {#container}
 
-Un tipo di componente contenitore consente il raggruppamento di componenti, incluso il supporto per più campi. Offre una configurazione aggiuntiva. La nidificazione dei contenitori non è consentita per i campi multipli nel pannello delle proprietà
+Un tipo di componente contenitore consente il raggruppamento di componenti, incluso il supporto per più campi. Offre una configurazione aggiuntiva. L’annidamento dei contenitori non è consentito per i campi multipli nel pannello delle proprietà
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `collapsible` | `boolean` | Il contenitore è comprimibile | No |
+| `collapsible` | `boolean` | Il contenitore è comprimibile? | No |
 
 >[!BEGINTABS]
 
@@ -332,7 +332,7 @@ Un tipo di componente contenitore consente il raggruppamento di componenti, incl
 
 ![Schermata del tipo di componente contenitore](assets/component-types/container.png)
 
->[!TAB Supporto Multifield]
+>[!TAB Supporto per campi multipli]
 
 ```json
 {
@@ -363,23 +363,23 @@ Un tipo di componente contenitore consente il raggruppamento di componenti, incl
 
 
 
-#### Frammenti di contenuto {#content-fragment}
+#### Frammento di contenuto {#content-fragment}
 
-Il selettore Frammento di contenuto può essere utilizzato per selezionare un [Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore di frammenti di contenuto può essere utilizzato per selezionare un [frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+| `variationName` | `string` | Nome della variabile per archiviare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore di varianti | No |
 
 Offre inoltre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il Frammento di contenuto, limitando la selezione a tale directory e sottodirectory | No |
+| `rootPath` | `string` | Percorso che il selettore di contenuti aprirà per consentire all’utente di selezionare il frammento di contenuto, limitando la selezione a tale directory e alle sottodirectory | No |
 
 >[!NOTE]
 >
->L&#39;editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare le regole di integrità dei dati, ad esempio i pattern regex e i vincoli di univocità.
+>L’editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare regole di integrità dei dati, ad esempio i pattern delle espressioni regolari e i vincoli di univocità.
 >
 >In questo modo, il contenuto soddisfa i requisiti aziendali specifici prima della pubblicazione.
 
@@ -426,7 +426,7 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `valueFormat` non è soddisfatto | No |
+| `customErrorMsg` | `string` | Messaggio che verrà visualizzato se `valueFormat` non viene soddisfatto | No |
 
 >[!BEGINTABS]
 
@@ -506,17 +506,17 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 #### Frammento di esperienza {#experience-fragment}
 
-Il selettore Frammento esperienza può essere utilizzato per selezionare un [Frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
+Il selettore Frammento di esperienza può essere utilizzato per selezionare un [frammento esperienza](/help/sites-cloud/authoring/fragments/experience-fragments.md) e le relative varianti (se necessario). Offre una configurazione aggiuntiva.
 
 | Configurazione | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `variationName` | `string` | Nome della variabile per memorizzare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore varianti | No |
+| `variationName` | `string` | Nome della variabile per archiviare la variante selezionata. Se non è definito, non viene visualizzato alcun selettore di varianti | No |
 
 Offre inoltre un tipo di convalida aggiuntivo.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
-| `rootPath` | `string` | Percorso che il selettore contenuto aprirà per consentire all’utente di selezionare il frammento di esperienza, limitando la selezione a tale directory e sottodirectory | No |
+| `rootPath` | `string` | Percorso che il selettore di contenuti aprirà per consentire all’utente di selezionare il frammento di esperienza, limitando la selezione a tale directory e sottodirectory | No |
 
 >[!BEGINTABS]
 
@@ -544,14 +544,14 @@ Offre inoltre un tipo di convalida aggiuntivo.
 
 >[!TAB Schermata]
 
-![Schermata del selettore frammenti esperienza](assets/component-types/aem-experience-fragment.png)
+![Schermata del selettore di frammenti di esperienza](assets/component-types/aem-experience-fragment.png)
 
 >[!ENDTABS]
 
 
 #### Selezione multipla {#multiselect}
 
-Un tipo di componente a selezione multipla presenta più elementi da selezionare in un elenco a discesa, inclusa la possibilità di raggruppare gli elementi selezionabili.
+Un tipo di componente a selezione multipla presenta più elementi da selezionare in un elenco a discesa, con la possibilità di raggruppare gli elementi selezionabili.
 
 >[!BEGINTABS]
 
@@ -678,7 +678,7 @@ Un tipo di componente numero consente di immettere un numero. Offre tipi di conv
 
 #### Gruppo pulsanti di scelta {#radio-group}
 
-Un tipo di componente gruppo di scelta consente una selezione reciprocamente esclusiva da più opzioni sottoposte a rendering come gruppo simile a un gruppo di caselle di controllo.
+Un tipo di componente gruppo pulsanti di scelta consente una selezione reciprocamente esclusiva di più opzioni sottoposte a rendering come gruppo simile a un gruppo di caselle di controllo.
 
 >[!BEGINTABS]
 
@@ -704,15 +704,15 @@ Un tipo di componente gruppo di scelta consente una selezione reciprocamente esc
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente del gruppo radio](assets/component-types/radio.png)
+![Schermata del tipo di componente gruppo pulsanti di scelta](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
 #### Riferimento {#reference}
 
-Un tipo di componente di riferimento abilita un selettore risorse di AEM, che può essere utilizzato per selezionare qualsiasi risorsa di AEM a cui fare riferimento. A differenza del [componente contenuto AEM](#aem-content), che può selezionare qualsiasi risorsa AEM, il componente di riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
+Un tipo di componente riferimento abilita un selettore di risorse AEM che può essere utilizzato per selezionare qualsiasi risorsa AEM a cui fare riferimento. A differenza del [componente contenuto AEM](#aem-content) che può selezionare qualsiasi risorsa AEM, il componente riferimento può fare riferimento solo alle risorse. Offre un tipo di convalida aggiuntivo.
 
-Un tipo di componente di riferimento consente un riferimento a un altro oggetto dati dall&#39;oggetto corrente.
+Un tipo di componente riferimento consente un riferimento a un altro oggetto dati dall’oggetto corrente.
 
 >[!BEGINTABS]
 
@@ -734,13 +734,13 @@ Un tipo di componente di riferimento consente un riferimento a un altro oggetto 
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente di riferimento](assets/component-types/reference.png)
+![Schermata del tipo di componente riferimento](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
 #### Testo formattato {#rich-text}
 
-Il testo RTF consente l’inserimento di testo RTF su più righe.
+Il testo formattato può essere inserito su più righe.
 
 >[!BEGINTABS]
 
@@ -768,7 +768,7 @@ Il testo RTF consente l’inserimento di testo RTF su più righe.
 
 #### Seleziona {#select}
 
-Un tipo di componente seleziona consente di selezionare una singola opzione da un elenco di opzioni predefinite in un menu a discesa.
+Un tipo di componente selezione consente di selezionare una singola opzione da un elenco di opzioni predefinite in un menu a discesa.
 
 >[!BEGINTABS]
 
@@ -794,15 +794,15 @@ Un tipo di componente seleziona consente di selezionare una singola opzione da u
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente selezionato](assets/component-types/select.png)
+![Schermata del tipo di componente selezione](assets/component-types/select.png)
 
 >[!ENDTABS]
 
-#### Tab {#tab}
+#### Scheda {#tab}
 
 Un tipo di componente Scheda consente di raggruppare altri campi di input in più schede per migliorare l’organizzazione del layout per gli autori.
 
-Una definizione di `tab` può essere considerata come un separatore nell&#39;array di `fields`. Tutto ciò che arriva dopo un `tab` verrà inserito in quella scheda fino a quando non si incontra un nuovo `tab`, dopo di che i seguenti elementi verranno inseriti nella nuova scheda.
+Una definizione di `tab` può essere considerata come un separatore nell’array di `fields`. Tutto ciò che arriva dopo un `tab` verrà inserito in quella scheda fino a quando non si incontra un nuovo `tab`, dopo di che i seguenti elementi verranno inseriti nella nuova scheda.
 
 Se desideri che gli elementi vengano visualizzati sopra tutte le schede, è necessario definirli prima di qualsiasi scheda.
 
@@ -902,6 +902,6 @@ Il testo consente di inserire una singola riga di testo.  Include tipi di conval
 
 >[!TAB Schermata]
 
-![Schermata del tipo di componente testo](assets/component-types/simpletext.png)
+![Schermata del tipo di componente Testo](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

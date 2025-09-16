@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -100,9 +100,9 @@ Invia i dati del modulo direttamente all’istanza Publish di AEM as a Cloud Ser
 
 #### &#x200B;1. Aggiornare l’URL dell’istanza di AEM in Edge Delivery
 
-Aggiorna l&#39;URL dell&#39;istanza di AEM Cloud Service nel file `constant.js` nel blocco `form` in `submitBaseUrl`. Puoi configurare l’URL in base all’ambiente:
+Aggiorna l’URL dell’istanza di AEM Cloud Service nel file `constant.js` all’interno del blocco `form` di `submitBaseUrl`. È possibile configurare l’URL in base al proprio ambiente:
 
-**Per l&#39;istanza di Cloud Service**
+**Per l’istanza di Cloud Service**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. Filtro referrer OSGi
 
-Configura il filtro Referrer per consentire domini del sito Edge Delivery specifici:
+Configura il filtro Referrer per consentire i domini specifici del tuo sito Edge Delivery:
 
 1. Crea o aggiorna il file di configurazione OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. Aggiungi la seguente configurazione ai tuoi domini di sito specifici:
+2. Aggiungi la seguente configurazione ai domini specifici del tuo sito:
 
    ```json
    {
@@ -148,13 +148,13 @@ Configura il filtro Referrer per consentire domini del sito Edge Delivery specif
    }
    ```
 
-3. Distribuire la configurazione tramite Cloud Manager
+3. Distribuisci la configurazione tramite Cloud Manager
 
-Per informazioni dettagliate sulla configurazione del filtro Referrer OSGi, consulta la [Guida del filtro Referrer](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+Per informazioni dettagliate sulla configurazione del filtro OSGi Referrer, consulta la guida del [filtro Referrer](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
-#### &#x200B;3. Problemi CORS (Cross-Origin Resource Sharing)
+#### &#x200B;3. Problemi relativi a CORS (Cross-Origin Resource Sharing)
 
-Configura le impostazioni CORS in AEM per consentire le richieste dai domini del sito Edge Delivery specifici:
+Configura le impostazioni CORS in AEM per consentire richieste dai domini specifici del tuo sito Edge Delivery:
 
 **Localhost sviluppatore**
 
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->Sostituisci `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` con i tuoi domini del sito effettivi. Ogni sito ospitato dallo stesso archivio richiede una voce di configurazione CORS separata.
+>Sostituisci `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` con i domini effettivi del tuo sito. Ogni sito ospitato dallo stesso archivio richiede una voce di configurazione CORS separata.
 
 Per informazioni dettagliate sulla configurazione CORS, consulta la [Guida alla configurazione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Per abilitare CORS per l&#39;ambiente di sviluppo locale, consulta l&#39;articolo [Comprendere la condivisione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+Per abilitare CORS per l’ambiente di sviluppo locale, consulta l’articolo [Informazioni su CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
 
 <!--
 #### 4. CDN Redirect Rules

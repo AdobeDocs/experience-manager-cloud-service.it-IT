@@ -1,27 +1,27 @@
 ---
 title: Creare e pubblicare moduli adattivi con Edge Delivery Services
-description: Istruzioni dettagliate per la creazione, l’authoring e la pubblicazione di Adaptive Forms utilizzando i modelli di Edge Delivery Services in AEM, con particolare attenzione all’accuratezza e alla chiarezza tecnica.
-keywords: moduli adattivi, servizi di consegna edge, editor universale, creazione di moduli, AEM forms, pubblicazione di moduli
+description: Istruzioni dettagliate per la creazione, l’authoring e la pubblicazione di moduli adattivi utilizzando i modelli Edge Delivery Services in AEM, con particolare attenzione all’accuratezza e alla chiarezza tecnica.
+keywords: moduli adattivi, edge delivery service, editor universale, creazione di moduli, AEM forms, pubblicazione di moduli
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Creare e pubblicare moduli adattivi con Edge Delivery Services
 
-Questo documento fornisce istruzioni dettagliate per la creazione, la configurazione e la pubblicazione di Adaptive Forms utilizzando i modelli di Edge Delivery Services in AEM. Copre l’intero flusso di lavoro, dalla creazione dei moduli all’implementazione in produzione.
+Questo documento fornisce istruzioni dettagliate per la creazione, la configurazione e la pubblicazione di moduli adattivi utilizzando i modelli di Edge Delivery Services in AEM. Copre l’intero flusso di lavoro, dalla creazione dei moduli all’implementazione nella produzione.
 
-Alla fine di questo articolo imparerai come:
+Al termine di questa guida, imparerai come:
 
 - Creare moduli utilizzando i modelli di Edge Delivery Services
-- Creare moduli con l’Editor universale
+- Authoring dei moduli utilizzando l’editor universale
 - Configurare e pubblicare moduli in Edge Delivery Services
 - Accedere ai moduli pubblicati e verificare la distribuzione
 
@@ -42,7 +42,7 @@ Prima di procedere, assicurati che siano soddisfatti i seguenti prerequisiti:
 - **Edge Delivery Services**: verifica che l’archivio sia configurato per la distribuzione automatica.
 - **Autorizzazioni**: verifica di disporre dei diritti di accesso necessari per la creazione e la pubblicazione dei moduli.
 
-- Conferma che l’archivio GitHub contiene il blocco dei moduli adattivi.
+- Conferma che l’archivio GitHub contenga il blocco dei moduli adattivi.
 
 
 
@@ -50,14 +50,14 @@ Prima di procedere, assicurati che siano soddisfatti i seguenti prerequisiti:
 
 Il processo è composto da tre fasi principali:
 
-- **Fase 1:** [Creazione modulo](#step-1-form-creation)
+- **Fase 1:** [creazione del modulo](#step-1-form-creation)
 - **Fase 2:** [authoring e progettazione dei moduli](#step-2-form-authoring-and-design)
 - **Fase 3:** [configurazione e pubblicazione](#step-3-configuration-and-publishing)
 
 Ogni fase include passaggi di convalida per confermare la corretta configurazione.
 
 
-### Passaggio 1: creazione di moduli
+### Fase 1: creazione de modulo
 
 1. **Creazione del modulo di accesso**
    - Accedi all’istanza di authoring di AEM Forms as a Cloud Service.
@@ -113,7 +113,7 @@ Ogni fase include passaggi di convalida per confermare la corretta configurazion
 
 1. **Progettare il modulo**
    - Configurare le proprietà del campo nel pannello delle proprietà.
-   - Impostare regole e comportamenti di convalida.
+   - Imposta regole e comportamenti di convalida.
    - Regola lo stile e il layout in base alle esigenze.
 
    ![Modulo di registrazione completato](/help/edge/assets/contact-us.png)
@@ -207,7 +207,7 @@ Esempio per il modulo `contact-us` nell’archivio `forms-project` nell’organi
 
 Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge Delivery Services.
 
-+++Modulo non caricato
++++Modulo che non si carica
 
 **Problema:** l’URL del modulo restituisce una pagina vuota o l’errore 404.
 
@@ -285,7 +285,7 @@ Di seguito sono riportati i problemi comuni e le soluzioni di AEM Forms con Edge
 
 +++
 
-+++Ottenimento della Guida
++++Come trovare assistenza
 
 Se i problemi persistono:
 

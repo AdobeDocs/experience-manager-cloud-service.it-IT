@@ -1,13 +1,13 @@
 ---
 title: Autenticazione dell’editor universale
-description: Scopri in che modo Universal Editor utilizza Adobe Identity Management System (IMS) per l’autenticazione.
+description: Scopri in che modo l’editor universale utilizza Identity Management System (IMS) di Adobe per l’autenticazione.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,6 +32,6 @@ Ogni volta che un utente esegue un’operazione CRUD, viene inviata una chiamata
 
 ![Flusso di autenticazione standard](assets/standard-flow.png)
 
-In questo diagramma e in questo articolo viene descritta l&#39;autenticazione interna dell&#39;editor universale stesso.
+In questo diagramma e nell’articolo viene descritta l’autenticazione interna dell’editor universale.
 
 {{ue-headless-auth}}

@@ -4,9 +4,9 @@ description: Domande frequenti su Dynamic Media con funzionalità OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1609'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Allo stesso modo, per approvare più risorse contemporaneamente all’interno di
 1. Fai clic su **[!UICONTROL Salva]**.
 
 
-## Come posso proteggere la distribuzione delle risorse e cercare Dynamic Media con OpenAPI? {#secure-asset-delivery}
+## Come posso proteggere la consegna delle risorse e cercare le OpenAPI di Dynamic Media? {#secure-asset-delivery}
 
 La governance centrale delle risorse in Experience Manager consente agli amministratori DAM o ai Responsabili del brand di gestire l’accesso alle risorse. Queste figure possono limitare l’accesso configurando i ruoli o impostando il tempo di attivazione e disattivazione delle risorse approvate sul lato authoring, in particolare sull’istanza di authoring di AEM as a Cloud Service.
 
@@ -111,9 +111,9 @@ Di seguito sono riportate alcune delle principali differenze tra Dynamic Media c
 | Solo le risorse approvate sono disponibili per la consegna di risorse alle applicazioni a valle, consentendo l’utilizzo di risorse approvate dal brand nelle esperienze digitali. | Eventuali aggiornamenti a una risorsa Dynamic Media pubblicata vengono applicati automaticamente senza alcun flusso di lavoro di approvazione, il che non garantisce che le risorse nelle esperienze digitali siano approvate dal brand. |
 | Report sull’utilizzo in base al numero di risorse consegnate. Questa funzionalità sarà presto disponibile. | I rapporti sull’utilizzo non sono disponibili. Questa funzionalità sarà presto disponibile. |
 | Le risorse contrassegnate come Scadute nell’archivio Assets as a Cloud Service non sono più disponibili per le applicazioni a valle. | Nessuna scadenza risorsa intrinseca. Una risorsa rimane pubblica finché non viene eliminata dall’archivio AEM as a Cloud Service. |
-| Non supporta le funzionalità di ritaglio avanzato video. | Supporta le funzionalità di ritaglio avanzato video. |
+| Non supporta le funzionalità di ritaglio avanzato dei video. | Supporta le funzionalità di ritaglio avanzato dei video. |
 | Codifiche Dynamic Video, che garantiscono che le codifiche migliori al video di input siano basate su server. Non è richiesta alcuna configurazione per la consegna di video nativi. | Lo standard 3 effettua la codifica indipendentemente dal video di input (può influire sulle prestazioni di consegna del video). È necessario impostare manualmente codifiche diverse per bit rate video diverse. |
-| Abilita URL protetti e offuscati utilizzando gli UID delle risorse senza compromettere l’SEO (Search Engine Optimization). | Offuscamento URL disponibile solo per i parametri di query URL. Gli ID risorsa (nomi di risorsa) negli URL sono riconoscibili. |
+| Abilita URL protetti e offuscati utilizzando gli UID delle risorse senza compromettere la SEO (Search Engine Optimization). | Offuscamento URL disponibile solo per i parametri di query URL. Gli ID risorsa (nomi di risorsa) negli URL sono riconoscibili. |
 
 
 ## In che modo Dynamic Media con funzionalità OpenAPI soddisfa le limitazioni della funzione Risorse collegate? {#dynamic-media-openapi-addresses-connected-assets-limitations}
@@ -146,5 +146,5 @@ Per abilitare l’utilizzo di produzione di [modificatori in disponibilità limi
 
 ## Come si testano i modificatori sperimentali? {#modifiers-not-generally-available}
 
-Puoi testare qualsiasi modificatore che non è generalmente disponibile tramite API sperimentali. Ad esempio, &lt;/adobe/experiment/advancemodifiers-expires-YYYYMMDD/assets>
-Fai clic qui per ulteriori informazioni su come utilizzare le [API sperimentali](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e l&#39;[elenco completo dei modificatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+Puoi testare i modificatori che non sono ancora stati rilasciati con disponibilità generale tramite le API sperimentali. Ad esempio, &lt;/adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
+Fai clic qui per ulteriori informazioni su come utilizzare le [API sperimentali](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e per l&#39;[elenco completo dei modificatori](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

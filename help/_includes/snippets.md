@@ -1,6 +1,6 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -220,7 +220,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 

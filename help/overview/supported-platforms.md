@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi presenti in
 L’interfaccia utente di Adobe Experience Manager funziona con le seguenti piattaforme client a seconda del [metodo di authoring.](/help/edge/overview.md#authoring-method)
 
 * [Editor universale](/help/sites-cloud/authoring/universal-editor/authoring.md)
-* [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
+* [Editor di pagine](/help/sites-cloud/authoring/page-editor/introduction.md)
 * [Authoring basato su documenti](https://www.aem.live/docs/aem-authoring) utilizzando [Sidekick](https://www.aem.live/docs/sidekick)
 
 Tutti i browser vengono testati con il set predefinito di plug-in e componenti aggiuntivi.
