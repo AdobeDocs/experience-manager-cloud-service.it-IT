@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Puoi definire l&#39;aspetto e lo stile generali di un modulo adattivo specificando gli stili tramite [editor temi](themes.md). Inoltre, puoi applicare stili CSS in linea ai singoli componenti del modulo adattivo e visualizzare all’istante le modifiche in anteprima. Gli stili in linea sostituiscono gli stili forniti nel tema.
@@ -29,7 +29,7 @@ Puoi definire l&#39;aspetto e lo stile generali di un modulo adattivo specifican
 
 Per aggiungere stili in linea a un componente:
 
-1. Apri il modulo nell’editor moduli e cambia la modalità in modalità di stile. Per cambiare la modalità in stile, nella barra degli strumenti della pagina, seleziona ![elenco a discesa dell&#39;area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
+1. Aprire il modulo nel generatore di moduli e impostare la modalità stile. Per cambiare la modalità in stile, nella barra degli strumenti della pagina, seleziona ![elenco a discesa dell&#39;area di lavoro](assets/Smock_ChevronDown.svg) > **[!UICONTROL Stile]**.
 1. Selezionare un componente nella pagina, quindi selezionare il pulsante di modifica ![edit-button](assets/edit.svg). Le proprietà di stile si aprono nella barra laterale.
 
    Puoi anche selezionare i componenti dalla struttura gerarchica del modulo nella barra laterale. La struttura della gerarchia dei moduli è disponibile come Oggetti modulo nella barra laterale.
@@ -40,7 +40,7 @@ Per aggiungere stili in linea a un componente:
 
 1. Fai clic su una scheda nella barra laterale per specificare le proprietà CSS. Puoi specificare proprietà quali:
 
-   * [!UICONTROL Dimension e posizione] (impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, virgola mobile, cancella, riversamento)
+   * [!UICONTROL Dimensioni e posizione] (impostazione di visualizzazione, spaziatura interna, altezza, larghezza, margine, posizione, indice z, virgola mobile, cancellazione, riversamento)
    * [!UICONTROL Testo] (famiglia di caratteri, peso, colore, dimensione, altezza della riga e allineamento)
    * [!UICONTROL Sfondo] (immagine e sfumatura, colore di sfondo)
    * [!UICONTROL Bordo] (larghezza, stile, colore, raggio)
@@ -82,7 +82,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   </tr>
   <tr>
    <td><p>Etichetta</p> </td>
-   <td><p>Dimension e posizione &gt; larghezza</p> </td>
+   <td><p>Dimensioni e posizione &gt; larghezza</p> </td>
    <td><p>100 px</p> </td>
    <td><p>Imposta la larghezza come 100 px per l'etichetta</p> </td>
   </tr>

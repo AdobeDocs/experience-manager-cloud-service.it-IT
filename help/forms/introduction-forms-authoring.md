@@ -1,20 +1,20 @@
 ---
-title: Introduzione alla creazione di moduli adattivi
-description: AEM Forms fornisce un’interfaccia semplice, ma potente per l’authoring dei moduli adattivi. Fornisce una serie di componenti e strumenti che è possibile utilizzare per creare i moduli.
+title: Introduzione alla creazione di Forms adattivi
+description: AEM Forms fornisce un’interfaccia facile da usare ma potente per la creazione di Forms adattivi. Fornisce una serie di componenti e strumenti che è possibile utilizzare per creare i moduli.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2496'
 ht-degree: 91%
 
 ---
 
-# Editor di moduli adattivi {#introduction-to-authoring-adaptive-forms}
+# Generatore di Forms adattivo {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -32,8 +32,8 @@ I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si ri
 * **Utilizzo di un modello dati modulo (FDM)**
   [Integrazione dei dati](data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo (FDM) che è possibile utilizzare per creare Forms adattivo. Scegli Modello dati modulo (FDM) se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
-* **Utilizzo di un modello di modulo XDP**
-Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
+* **Utilizzo di un modello per moduli XDP**
+Si tratta di un modello per moduli ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
 Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili per l’uso nella scheda Oggetti modello dati del browser dei contenuti durante la creazione di moduli adattivi.
@@ -43,7 +43,7 @@ I moduli adattivi creati con questa opzione non utilizzano alcun modello di modu
 
   >[!NOTE]
   >
-  > È possibile modificare le proprietà del modello di modulo dall’editor di moduli adattivi o dall’editor di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Modificare le proprietà del modello di modulo di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > È possibile modificare le proprietà del modello di modulo dal generatore di moduli adattivi o dal generatore di modelli di moduli adattivi. Per ulteriori informazioni, consulta [Modificare le proprietà del modello di modulo di un modulo adattivo](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Per creare un modulo adattivo, consulta [Creazione di un modulo adattivo](creating-adaptive-form.md).
 
@@ -157,7 +157,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
@@ -245,7 +245,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Interruttore</td>
-   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o attivazione/disattivazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
+   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o abilitazione/disabilitazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
   </tr>
   <tr>
    <td>Tabella</td>
@@ -364,9 +364,9 @@ La struttura del contenuto contiene in genere i seguenti componenti primari:
 
 * **Risorse:** questo nodo contiene informazioni aggiuntive utilizzate per la creazione dei moduli. Ad esempio, dettagli del modello di modulo, localizzazione e così via.
 
-## Assistente AI in AEM
+## Assistente IA in AEM
 
-Per i clienti che hanno [completato i criteri dei prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l&#39;Assistente per l&#39;intelligenza artificiale in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+L’Assistente IA in AEM è disponibile per gli utenti delle organizzazioni che hanno [completato i criteri prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access). Consulta [Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Consulta anche {#see-also}
 

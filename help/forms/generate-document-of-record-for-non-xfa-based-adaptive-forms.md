@@ -4,7 +4,7 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '4221'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -203,7 +203,7 @@ La tabella seguente descrive i componenti Modulo adattivo e i corrispondenti com
    <td> </td>
   </tr>
   <tr>
-   <td>Firma scarabocchio</td>
+   <td>Firma a mano</td>
    <td>Disegno a mano</td>
    <td>vero</td>
    <td> </td>
@@ -405,9 +405,9 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
 ## Supporto per documenti di record nell’editor di moduli adattivi {#dor-support-in-adaptiveform}
 
-Puoi configurare il modello [!UICONTROL Documento di record] direttamente dall&#39;editor di moduli adattivi o dall&#39;editor di modelli di moduli adattivi.
+Puoi configurare il modello [!UICONTROL Documento di record] direttamente dal generatore di moduli adattivi o dal generatore di modelli di moduli adattivi.
 
-Esegui i seguenti passaggi dall’istanza di authoring dell’editor di moduli adattivi:
+Esegui i seguenti passaggi dall’istanza di authoring di Adaptive Form Builder:
 
 1. Seleziona il componente **[!UICONTROL Contenitore per modulo adattivo (principale)]**.
 1. Fai clic sull’icona ![Configura icona](/help/forms/assets/configure-icon.svg) per aprire le **[!UICONTROL proprietà]** del contenitore per modulo adattivo.

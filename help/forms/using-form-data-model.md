@@ -1,14 +1,14 @@
 ---
 title: Come possiamo creare un modello dati modulo (FDM) per un modulo adattivo?
-description: Scopri come creare Forms adattivo e frammenti basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti modello dati in FDM.
+description: Scopri come creare Forms adattivo e frammenti basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -56,7 +56,7 @@ Un modello dati modulo (FDM) è un’estensione dello schema JSON che puoi utili
 
    ![create-af-3](assets/create-af-3.png)
 
-   Una volta creato il modulo adattivo o il frammento di modulo adattivo basato su un modello di dati del modulo (FDM), gli oggetti del modello di dati del modulo vengono visualizzati nella scheda **[!UICONTROL Origini dati]** del browser Contenuto nell&#39;editor del modulo adattivo.
+   Una volta creato il modulo adattivo o il frammento di modulo adattivo basato su un modello dati modulo (FDM), gli oggetti del modello dati modulo vengono visualizzati nella scheda **[!UICONTROL Origini dati]** del browser Contenuto nel generatore di moduli adattivi.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Ad esempio, la regola seguente richiama un servizio get che utilizza come input 
 1. Aggiungi **[!UICONTROL Modello dati modulo pattern]** per specificare il percorso del modello dati modulo (FDM). Per impostazione predefinita, il valore è `/content/dams/formsanddocuments-fdm/(.*)`, che include tutto il modello dati del modulo (FDM). È inoltre possibile specificare il percorso per un modello di dati modulo (FDM) specifico.
 1. Salva le impostazioni.
 
-La configurazione aggiunta viene salvata nell&#39;inserimento nella whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory **.**
+La configurazione aggiunta viene salvata nell&#39;inserimento nella whitelist a livello di modulo adattivo del modello dati del modulo per chiamata di servizio - Configuration Factory **[!UICONTROL .]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
 

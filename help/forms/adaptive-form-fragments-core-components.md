@@ -6,10 +6,10 @@ keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi,
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 12%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (Componenti core) | Questo articolo |
-| AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=it) |
+| AEM as a Cloud Service (componenti core) | Questo articolo |
+| AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/adaptive-form-fragments.md) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni, ad esempio per fornire dati personali come nome e indirizzo, dettagli sulla famiglia e dettagli sul reddito. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo.
 
@@ -32,7 +32,7 @@ I frammenti di modulo si integrano perfettamente in più moduli, semplificando l
 
 >[!NOTE]
 >
-> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Creare un frammento di modulo adattivo {#create-a-fragment}
 
@@ -67,7 +67,7 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Inoltre, se hai selezionato uno schema XML come modello di modulo per il frammento, nel Finder contenuto viene visualizzata una nuova scheda che mostra la gerarchia del modello di modulo. Consente di trascinare gli elementi del modello di modulo sul frammento. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Una volta creato il frammento di modulo adattivo basato su uno schema o un modello di dati del modulo (FDM), gli elementi del modello di dati del modulo (FDM) o dello schema vengono visualizzati nella scheda Origini dati del browser Contenuto nell’editor di moduli adattivi. Puoi trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dallo schema associato.
+Una volta creato il frammento di modulo adattivo basato su uno schema o un modello dati modulo (FDM), gli elementi del modello dati modulo (FDM) o dello schema vengono visualizzati nella scheda Origini dati del browser Contenuto nel generatore di moduli adattivi. Puoi trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dallo schema associato.
 
 
 ## Aggiungere un frammento a un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}

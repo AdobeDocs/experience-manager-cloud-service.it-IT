@@ -1,15 +1,15 @@
 ---
 title: Come possiamo utilizzare Adobe Sign in un modulo adattivo?
-description: Utilizza Adobe Sign in un modulo adattivo per consentire ai destinatari del modulo di apporre la firma elettronica a un modulo dal dispositivo e dal luogo di loro scelta.
+description: Utilizza Adobe Sign in un modulo adattivo per consentire ai destinatari del modulo di firmare elettronicamente un modulo dal dispositivo e dal luogo di loro scelta.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '3243'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -42,7 +42,7 @@ L&#39;integrazione di [!DNL Adobe Sign] con [!DNL AEM Forms] supporta:
 * Firma dei moduli come utente anonimo o connesso
 * Processi di firma dinamici (integrazione con il flusso di lavoro [!DNL AEM Forms])
 * Autenticazione tramite knowledge base, telefono, profili social e documento ufficiale
-* Assegna ruoli a ogni destinatario del contratto. Adobe Sign per i livelli di servizio business ed enterprise ha la possibilità di espandere i [ruoli per i destinatari del contratto](#addsignerstoanadaptiveform).
+* Assegna ruoli a ogni destinatario del contratto. Adobe Sign per i livelli di servizio business ed enterprise può espandere i [ruoli per i destinatari del contratto](#addsignerstoanadaptiveform).
 
 <!-- * In-form and out-of-form signing experiences -->
 
@@ -50,7 +50,7 @@ L&#39;integrazione di [!DNL Adobe Sign] con [!DNL AEM Forms] supporta:
 
 Prima di utilizzare [!DNL Adobe Sign] in un modulo adattivo:
 
-* Verificare che [!DNL AEM Forms] as a Cloud Service sia configurato per l&#39;utilizzo di Adobe Sign. Per ulteriori dettagli, vedere [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* Assicurati che [!DNL AEM Forms] as a Cloud Service sia configurato per l&#39;utilizzo di Adobe Sign. Per ulteriori dettagli, consulta [Integrare Adobe Sign con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 * Tieni pronto l’elenco dei destinatari. È necessario almeno un indirizzo e-mail per ogni destinatario.
 
 ## Configura [!DNL Adobe Sign] per un modulo adattivo {#configure-adobe-sign-for-an-adaptive-form}
@@ -59,7 +59,7 @@ Per configurare [!DNL Adobe Sign] per un modulo adattivo:
 
 1. [Abilita  [!DNL Adobe Sign]  per un modulo adattivo](#enableadobsignforanadaptiveform)
 1. [Aggiungi [!DNL Adobe Sign] campi a un modulo adattivo](#addadobesignfieldstoanadaptiveform)
-1. [Seleziona  [!DNL Adobe Sign]  Cloud Service per un modulo adattivo](#select-adobe-sign-cloud-service-and-signing-order)
+1. [Seleziona [!DNL Adobe Sign] Cloud Service per un modulo adattivo](#select-adobe-sign-cloud-service-and-signing-order)
 
 1. [Aggiungi  [!DNL Adobe Sign] destinatario a un modulo adattivo](#addsignerstoanadaptiveform)
 1. [Seleziona Azione di invio per un modulo adattivo](#selectsubmitactionforanadaptiveform)
@@ -73,11 +73,11 @@ Per configurare [!DNL Adobe Sign] per un modulo adattivo:
 * [Crea un modulo adattivo abilitato per  [!DNL Adobe Sign] ](#create-an-adaptive-form-for-adobe-sign)
 * [Attiva [!DNL Adobe Sign] per un modulo adattivo esistente](#editafsign).
 
-#### Creazione di un modulo adattivo per Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
+#### Creare un modulo adattivo per Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
 Per creare un modulo adattivo abilitato alla firma:
 
-1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Passa ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Modulo adattivo]**. Viene visualizzato un elenco di modelli. Seleziona un modello e seleziona **[!UICONTROL Avanti]**.
 1. Nella scheda **[!UICONTROL Base]**:
 
@@ -85,7 +85,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
    1. Seleziona il [contenitore di configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l&#39;[integrazione [!DNL Adobe Sign] con [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   Il contenitore di configurazione contiene i [!DNL Adobe Sign] Cloud Service configurati per l&#39;ambiente. Questi servizi sono disponibili per la selezione nell’editor di moduli adattivi.
+   Il contenitore di configurazione contiene i servizi cloud [!DNL Adobe Sign] configurati per l&#39;ambiente. Questi servizi sono disponibili per la selezione nel generatore di moduli adattivi.
 
 1. Nella scheda **[!UICONTROL Modello modulo]** selezionare una delle opzioni seguenti:
 
@@ -99,7 +99,7 @@ Per creare un modulo adattivo abilitato alla firma:
 
 Per utilizzare [!DNL Adobe Sign] in un modulo adattivo esistente:
 
-1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+1. Passa ad **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 1. Seleziona il modulo adattivo e seleziona **[!UICONTROL Proprietà]**.
 1. Nella scheda **[!UICONTROL Base]**, seleziona il [contenitore di configurazione](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) creato durante l&#39;integrazione di [!DNL Adobe Sign] con [!DNL AEM Forms].
 1. Nella scheda **[!UICONTROL Modalità modulo]** selezionare una delle opzioni seguenti:
@@ -124,8 +124,8 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
 
    >[!NOTE]
    >
-   >  * L&#39;utilizzo del blocco [!DNL Adobe Sign] non è obbligatorio per utilizzare [!DNL Adobe Sign] in un modulo adattivo. Se non si utilizza il blocco [!DNL Adobe Sign] e non si aggiungono campi per i destinatari, nella parte inferiore dei documenti di firma verrà visualizzato il campo firma predefinito.
-   >  * Usa il blocco [!DNL Adobe Sign] solo per Forms adattivi che generano automaticamente documenti di record. Se utilizzi un XDP personalizzato per generare un documento di record o un modulo adattivo basato su modello di modulo, il blocco [!DNL Adobe Sign] non è supportato.
+   > * L&#39;utilizzo del blocco [!DNL Adobe Sign] non è obbligatorio per utilizzare [!DNL Adobe Sign] in un modulo adattivo. Se non si utilizza il blocco [!DNL Adobe Sign] e non si aggiungono campi per i destinatari, nella parte inferiore dei documenti di firma verrà visualizzato il campo firma predefinito.
+   > * Usa il blocco [!DNL Adobe Sign] solo per Forms adattivi che generano automaticamente documenti di record. Se utilizzi un XDP personalizzato per generare un documento di record o un modulo adattivo basato su modello di modulo, il blocco [!DNL Adobe Sign] non è supportato.
 
 
 1. Seleziona il componente **[!UICONTROL Adobe Sign Block]** e l&#39;icona **[!UICONTROL Edit]** ![Edit](assets/Smock_Edit_18_N.svg). Vengono visualizzate le opzioni per aggiungere campi e formattare l&#39;aspetto di un campo.
@@ -136,7 +136,7 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
 
 1. Seleziona l&#39;icona **[!UICONTROL Adobe Sign]** Campo ![Adobe Sign](assets/adobesign.png). Vengono visualizzate le opzioni per selezionare e aggiungere i campi [!DNL Adobe Sign].
 
-   Espandere il campo a discesa **[!UICONTROL Tipo]** per selezionare un campo [!DNL Adobe Sign] e selezionare l&#39;icona Fine ![Salva](assets/save_icon.svg) per aggiungere il campo selezionato al blocco [!DNL Adobe Sign]. Il campo a discesa **[!UICONTROL Tipo]** include i tipi di campo Firma, Informazioni destinatario e Dati. L&#39;integrazione di [!DNL Adobe Sign] con AEM [!DNL Forms] supporta solo i campi elencati nella casella a discesa [!UICONTROL Tipo]. Per informazioni dettagliate sui campi [!DNL Adobe Sign], consulta la [documentazione di Adobe Sign](https://helpx.adobe.com/it/sign/help/field-types.html).
+   Espandere il campo a discesa **[!UICONTROL Tipo]** per selezionare un campo [!DNL Adobe Sign] e selezionare l&#39;icona Fine ![Salva](assets/save_icon.svg) per aggiungere il campo selezionato al blocco [!DNL Adobe Sign]. Il campo a discesa **[!UICONTROL Tipo]** include i tipi di campo Firma, Informazioni destinatario e Dati. Integrazione di [!DNL Adobe Sign] con i campi di supporto di AEM [!DNL Forms] elencati solo nella casella a discesa [!UICONTROL Tipo]. Per informazioni dettagliate sui campi [!DNL Adobe Sign], consulta [Documentazione di Adobe Sign](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -144,7 +144,7 @@ Per aggiungere campi a un modulo adattivo e personalizzare varie opzioni relativ
 
    Se si seleziona **[!UICONTROL Firma digitale]** dall&#39;elenco a discesa, è possibile applicare le firme digitali al modulo adattivo:
 
-   * Online utilizzando le firme cloud per la firma con un [ID digitale](https://helpx.adobe.com/it/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di attendibilità.
+   * Online utilizzando le firme cloud per la firma con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider di servizi di attendibilità.
    * In locale, scaricando il documento con Adobe Acrobat o Reader utilizzando una smart card, un token USB o un ID digitale basato su file.
 
 ### Abilita [!DNL Adobe Sign] per un modulo adattivo {#enableadobsignforanadaptiveform}
@@ -160,7 +160,7 @@ Per impostazione predefinita, [!DNL Adobe Sign] non è abilitato per un modulo a
 
 Un documento può avere anche più destinatari. Ad esempio, un&#39;applicazione con carta di credito può avere più richiedenti. Una banca richiede le firme di tutti i richiedenti prima di iniziare l&#39;elaborazione della domanda. Per scenari con più destinatari, è possibile scegliere di firmare il documento in ordine sequenziale o simultaneo.
 
-Per selezionare un Cloud Service e un ordine di firma:
+Per selezionare un Cloud Service e l’ordine di firma:
 
 ![Servizio cloud](/help/forms/assets/adobe-sign-cloud-service.png)
 
@@ -170,7 +170,7 @@ Per selezionare un Cloud Service e un ordine di firma:
 
    Se l&#39;elenco **[!UICONTROL Adobe Sign Cloud Service]** è vuoto, seguire l&#39;articolo [Configure [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) per configurare il servizio.
 
-   Nell&#39;elenco a discesa sono elencati i Cloud Service presenti nella cartella `global` in Strumenti > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Nell&#39;elenco a discesa vengono inoltre elencati i Cloud Service presenti nella cartella selezionata nel campo **[!UICONTROL Contenitore configurazione]** durante la creazione di un modulo adattivo.
+   Nell&#39;elenco a discesa sono elencati i servizi cloud esistenti nella cartella `global` in Strumenti > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Adobe Sign]**. Nell&#39;elenco a discesa sono inoltre elencati i servizi cloud presenti nella cartella selezionata nel campo **[!UICONTROL Contenitore configurazione]** al momento della creazione di un modulo adattivo.
 
 1. Selezionare l&#39;opzione per configurare l&#39;azione di invio utilizzando **[!UICONTROL Invia il modulo]**. È possibile selezionare una delle due opzioni seguenti:
    * **Invia il modulo (e invia il contratto per la firma)**: questa opzione invia il modulo immediatamente e quindi invia il modulo per la firma ai destinatari.
@@ -192,11 +192,11 @@ Per selezionare un Cloud Service e un ordine di firma:
 
 ### Aggiungere destinatari a un modulo adattivo {#addsignerstoanadaptiveform}
 
-Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un destinatario, puoi anche configurare i dettagli di autenticazione per il destinatario e selezionare se il compilatore del modulo e il destinatario sono la stessa persona. Per aggiungere e fornire vari dettagli su un destinatario, effettua le seguenti operazioni:
+Puoi avere uno o più destinatari per un contratto Adobe Sign. Quando aggiungi un destinatario, puoi anche configurare i dettagli di autenticazione per il destinatario e selezionare se il compilatore del modulo e il destinatario sono la stessa persona. Per aggiungere e fornire vari dettagli su un destinatario, effettua le seguenti operazioni:
 
 1. Nel browser Contenuto, selezionare **[!UICONTROL Contenitore modulo]** e l&#39;icona **[!UICONTROL Configura]** ![configura](assets/Smock_Wrench_18_N.svg). Apre il browser delle proprietà con le proprietà del contenitore Modulo adattivo.
 1. Nel browser delle proprietà, espandi il pannello a soffietto **[!UICONTROL Firma elettronica]** e seleziona l&#39;opzione **[!UICONTROL Abilita Adobe Sign]**. Abilita [!DNL Adobe Sign] per un modulo adattivo.
-1. Seleziona **[!UICONTROL Aggiungi destinatario]**. Aggiunge un destinatario al modulo adattivo. È possibile aggiungere più destinatari a un modulo adattivo. Tutti i destinatari ricevono un accordo Adobe Sign sull’invio del modulo adattivo.
+1. Seleziona **[!UICONTROL Aggiungi destinatario]**. Aggiunge un destinatario al modulo adattivo. È possibile aggiungere più destinatari a un modulo adattivo. Tutti i destinatari ricevono un accordo Adobe Sign all’invio del modulo adattivo.
    ![dettagli telefono](assets/recipient-settings.png)
 
 1. Fai clic sull&#39;icona **[!UICONTROL Modifica]** ![Modifica](assets/Smock_Edit_18_N.svg) per specificare le seguenti informazioni sul destinatario:
@@ -205,19 +205,19 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
 
    * **[!UICONTROL Il destinatario e la persona che compila il modulo corrispondono?]:** Seleziona **[!UICONTROL Sì]**, se il compilatore del modulo e il primo destinatario sono la stessa persona. <!-- If the option is set to **No,** then do not use the signature step component in the Adaptive Form. If the form contains a Signature Step component, then the field is automatically set to Yes. -->
 
-   * **[!UICONTROL Ruolo destinatario]:** Seleziona il ruolo di un destinatario. Adobe Sign per i livelli di servizio business ed enterprise hanno la possibilità di espandere i [ruoli per i destinatari del contratto](https://helpx.adobe.com/it/sign/using/set-up-signer-approver-roles.html), oltre a **Firmatario**, per soddisfare meglio i requisiti del flusso di lavoro.
+   * **[!UICONTROL Ruolo destinatario]:** Seleziona il ruolo di un destinatario. Adobe Sign per i livelli di servizio business ed enterprise ha la possibilità di espandere i [ruoli per i destinatari del contratto](https://helpx.adobe.com/sign/using/set-up-signer-approver-roles.html), oltre a **Firmatario**, per soddisfare meglio i requisiti del flusso di lavoro.
 
-   * **[!UICONTROL Indirizzo e-mail destinatario]:** Specifica l&#39;indirizzo e-mail del destinatario. Il destinatario riceve il contratto Adobe Sign relativo all’indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente di Experience Manager dell’utente connesso, oppure immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio.
+   * **[!UICONTROL Indirizzo e-mail destinatario]:** Specifica l&#39;indirizzo e-mail del destinatario. Il destinatario riceve il contratto Adobe Sign sull’indirizzo e-mail specificato. Puoi scegliere di utilizzare un indirizzo e-mail fornito in un campo del modulo, nel profilo utente di Experience Manager dell’utente connesso o immettere manualmente un indirizzo e-mail. È un passaggio obbligatorio.
 
      >[!NOTE]
      >
-     >Verificare che l&#39;indirizzo di posta elettronica del primo destinatario o dell&#39;unico destinatario (se esiste un solo destinatario) non sia identico all&#39;account [!DNL Adobe Sign] utilizzato per configurare i Cloud Service AEM.
+     >Verificare che l&#39;indirizzo di posta elettronica del primo destinatario o dell&#39;unico destinatario (se esiste un solo destinatario) non sia identico all&#39;account [!DNL Adobe Sign] utilizzato per configurare AEM Cloud Services.
 
-   * **[!UICONTROL Metodo di autenticazione destinatario]:** Specificare il metodo per autenticare un destinatario prima di aprire il contratto Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [ID governo](https://helpx.adobe.com/it/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign]. Per [!DNL Adobe Acrobat Sign for Government] è possibile scegliere tra l&#39;autenticazione tramite telefono e l&#39;autenticazione basata su Knowledge Base.
+   * **[!UICONTROL Metodo di autenticazione destinatario]:** Specificare il metodo per autenticare un destinatario prima di aprire l&#39;accordo Adobe Sign. Puoi scegliere tra telefono, knowledge base, autenticazione basata su identità social e [ID governo](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) per [!DNL Adobe Acrobat Sign]. Per [!DNL Adobe Acrobat Sign for Government] è possibile scegliere tra l&#39;autenticazione tramite telefono e l&#39;autenticazione basata su Knowledge Base.
 
    >[!NOTE]
    >
-   >    * Per impostazione predefinita, l’autenticazione basata su identità social fornisce un’opzione per eseguire l’autenticazione utilizzando Facebook, Google e LinkedIn. È possibile contattare il supporto di [!DNL Adobe Sign] per abilitare altri provider di autenticazione social network.
+   > * Per impostazione predefinita, l’autenticazione basata su identità social fornisce un’opzione per eseguire l’autenticazione tramite Facebook, Google e LinkedIn. È possibile contattare il supporto di [!DNL Adobe Sign] per abilitare altri provider di autenticazione social network.
    >
 
    * **[!DNL Adobe Sign]campi da compilare o firmare:** Seleziona [!DNL Adobe Sign] campi per il destinatario. Un modulo adattivo può avere più campi [!DNL Adobe Sign]. Puoi scegliere di abilitare campi specifici per un destinatario. Nel campo vengono visualizzati tutti i [!DNL Adobe Sign] blocchi disponibili. Quando selezioni un blocco, vengono selezionati tutti i campi del blocco. Puoi utilizzare l’icona X per deselezionare un campo.
@@ -230,13 +230,13 @@ Puoi avere uno o più destinatari per un accordo Adobe Sign. Quando aggiungi un 
 
 ### Seleziona Azione di invio per un modulo adattivo {#selectsubmitactionforanadaptiveform}
 
-Dopo aver aggiunto [!DNL Adobe Sign] campi a un modulo adattivo, abilitato [!DNL Adobe Sign] dal contenitore del modulo, selezionato [!DNL Adobe Sign] Cloud Service e aggiunto i destinatari dell&#39;accordo Adobe Sign, selezionare un&#39;azione di invio appropriata per il modulo adattivo. Per informazioni dettagliate sulle azioni di invio di Adaptive Forms, vedi [Configurazione dell&#39;azione di invio](configuring-submit-actions.md).
+Dopo aver aggiunto [!DNL Adobe Sign] campi a un modulo adattivo, abilitato [!DNL Adobe Sign] dal contenitore del modulo, selezionato [!DNL Adobe Sign] Cloud Service e aggiunto i destinatari del contratto Adobe Sign, selezionare un&#39;azione di invio appropriata per il modulo adattivo. Per informazioni dettagliate sulle azioni di invio di Adaptive Forms, vedi [Configurazione dell&#39;azione di invio](configuring-submit-actions.md).
 
-La firma e l’invio di un modulo sono indipendenti l’uno dall’altro. L’invio di un modulo adattivo ha luogo subito dopo la creazione di un accordo Adobe Sign dopo l’invio di un modulo da parte dell’utente. as a Cloud Service [!DNL AEM Forms] non attende che i destinatari firmino o completino altre azioni per inviare un modulo adattivo. Un modulo viene inviato non appena un utente fa clic sul pulsante Invia o quando un passaggio di riepilogo visualizza il riepilogo del modulo.
+La firma e l’invio di un modulo sono indipendenti l’uno dall’altro. L’invio di un modulo adattivo ha luogo non appena viene creato un accordo Adobe Sign dopo che un utente ha inviato un modulo. [!DNL AEM Forms] as a Cloud Service non attende che i destinatari firmino o completino altre azioni per inviare un modulo adattivo. Un modulo viene inviato non appena un utente fa clic sul pulsante Invia o quando un passaggio di riepilogo visualizza il riepilogo del modulo.
 
-Inoltre, un modulo adattivo abilitato per [!DNL Adobe Sign] incorpora l&#39;ID contratto Adobe Sign per l&#39;invio dei dati. È possibile utilizzare l&#39;ID accordo per tenere traccia dello stato dell&#39;accordo utilizzando un codice personalizzato (è necessaria l&#39;implementazione personalizzata).
+Inoltre, un modulo adattivo abilitato per [!DNL Adobe Sign] incorpora l&#39;ID contratto di Adobe Sign per inviare i dati. È possibile utilizzare l&#39;ID accordo per tenere traccia dello stato dell&#39;accordo utilizzando un codice personalizzato (è necessaria l&#39;implementazione personalizzata).
 
-L’ID contratto Adobe Sign (agreementId) è incluso nei dati di invio del modulo adattivo. Per impostazione predefinita, l&#39;ID contratto è presente nel nodo `afSubmissionInfo` dei dati inviati.
+L’ID contratto di Adobe Sign (agreementId) è incluso nei dati di invio del modulo adattivo. Per impostazione predefinita, l&#39;ID contratto è presente nel nodo `afSubmissionInfo` dei dati inviati.
 
 ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -299,7 +299,7 @@ Facoltativamente, è anche possibile associare un bindref all&#39;ID contratto (
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-L’esperienza di firma del modulo è pronta. Puoi visualizzare in anteprima il modulo per verificare l’esperienza di firma. Nel modulo pubblicato, i campi di blocco [!DNL Adobe Sign] vengono visualizzati quando un destinatario riceve il modulo per la firma tramite un messaggio e-mail. Quando **[!UICONTROL È lo stesso destinatario e la persona che compila il modulo?L&#39;opzione]** è contrassegnata come Sì e la condizione è soddisfatta, l&#39;utente viene reindirizzato al contratto Adobe Sign dopo l&#39;invio e può firmare il documento immediatamente, invece di attendere che il contratto venga visualizzato tramite e-mail.
+L’esperienza di firma del modulo è pronta. Puoi visualizzare in anteprima il modulo per verificare l’esperienza di firma. Nel modulo pubblicato, i campi di blocco [!DNL Adobe Sign] vengono visualizzati quando un destinatario riceve il modulo per la firma tramite un messaggio e-mail. Quando **[!UICONTROL È lo stesso destinatario e la persona che compila il modulo?L&#39;opzione]** è contrassegnata come Sì e la condizione è soddisfatta, l&#39;utente viene reindirizzato al contratto Adobe Sign dopo l&#39;invio e può firmare il documento immediatamente, invece di attendere che il contratto venga visualizzato nel messaggio di posta elettronica.
 
 ## Configurare le firme cloud per un modulo adattivo {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -307,7 +307,7 @@ Le firme digitali basate sul cloud o firme remote sono una nuova generazione di 
 
 Dopo [aver modificato le proprietà del modulo adattivo per Adobe Sign](working-with-adobe-sign.md#enableadobesign), effettua le seguenti operazioni per aggiungere il campo della firma cloud a un modulo adattivo:
 
-1. Trascina il componente **[!UICONTROL Adobe Sign Block]** dal browser dei componenti al modulo adattivo. Il componente [!UICONTROL Blocco Adobe Sign] include tutti i campi [!DNL Adobe Sign] supportati. Per impostazione predefinita, aggiunge un campo **[!UICONTROL Firma]** al modulo adattivo.
+1. Trascina il componente **[!UICONTROL Adobe Sign Block]** dal browser dei componenti al modulo adattivo. Il componente [!UICONTROL Adobe Sign Block] include tutti i campi [!DNL Adobe Sign] supportati. Per impostazione predefinita, aggiunge un campo **[!UICONTROL Firma]** al modulo adattivo.
 
    ![Blocco firma](assets/sign-block-new.png)
 
@@ -327,7 +327,7 @@ Dopo [aver modificato le proprietà del modulo adattivo per Adobe Sign](working-
 
    Applica firme digitali al modulo adattivo utilizzando:
 
-   * Firme cloud: accedi con un [ID digitale](https://helpx.adobe.com/it/sign/kb/digital-certificate-providers.html) ospitato da un provider del servizio di trust.
+   * Firme cloud: accedi con un [ID digitale](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) ospitato da un provider del servizio di trust.
    * Adobe Acrobat o Reader: scarica e apri il documento con Adobe Acrobat o Reader per firmare utilizzando una smart card, un token USB o un ID digitale basato su file.
 
      >[!NOTE]
@@ -354,7 +354,7 @@ Il componente **[!UICONTROL Passaggio di riepilogo]** invia automaticamente il m
 **Ans:** il modulo adattivo creato utilizzando il modello avanzato è configurato per l&#39;utilizzo di [!DNL Adobe Sign]. Per risolvere l&#39;errore, creare e selezionare una configurazione cloud [!DNL Adobe Sign] e configurare un destinatario [!DNL Adobe Sign] per il modulo adattivo.
 
 **Q:** posso utilizzare [!DNL Adobe Sign] tag di testo in un componente di testo statico di un modulo adattivo?
-**Ans:** Sì, è possibile utilizzare i tag di testo in un componente di testo per aggiungere [!DNL Adobe Sign] campi a un modulo adattivo abilitato per il documento di record (solo per opzione Documento di record generato automaticamente). Per informazioni sulla procedura e sulle regole per la creazione di un tag di testo, consulta la [documentazione di Adobe Sign](https://helpx.adobe.com/it/sign/using/text-tag.html). Inoltre, Adaptive Forms dispone di un supporto limitato per i tag di testo. È possibile utilizzare i tag di testo per creare solo i campi supportati da [Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Ans:** Sì, è possibile utilizzare i tag di testo in un componente di testo per aggiungere [!DNL Adobe Sign] campi a un modulo adattivo abilitato per il documento di record (solo per opzione Documento di record generato automaticamente). Per informazioni sulla procedura e sulle regole per creare un tag di testo, consulta [Documentazione di Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html). Inoltre, Adaptive Forms dispone di un supporto limitato per i tag di testo. È possibile utilizzare i tag di testo per creare solo i campi supportati da [Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 ## Risoluzione dei problemi {#troubleshoot}
 
@@ -366,10 +366,10 @@ Quando il servizio [!DNL Adobe Sign] è configurato per un modulo adattivo, non 
 **Risoluzione**
 
 * Controlla la [configurazione di Adobe Sign Cloud Service](adobe-sign-integration-adaptive-forms.md) utilizzata nel modulo adattivo.
-* Verificare che l&#39;applicazione API nel server [!DNL Adobe Sign] utilizzata per configurare il Cloud Service [!DNL Adobe Sign] disponga delle autorizzazioni necessarie.
-* Se utilizzi più di [!DNL Adobe Sign] Cloud Service, punta l&#39;**[!UICONTROL URL oAuth]** di tutti i servizi allo stesso **[!UICONTROL Adobe Sign Shard]**.
+* Verificare che l&#39;applicazione API nel server [!DNL Adobe Sign] utilizzata per configurare [!DNL Adobe Sign] Cloud Service disponga delle autorizzazioni necessarie.
+* Se utilizzi più servizi cloud [!DNL Adobe Sign], punta l&#39;**[!UICONTROL URL oAuth]** di tutti i servizi allo stesso **[!UICONTROL Condivisione Adobe Sign]**.
 
-* Utilizzare indirizzi di posta elettronica distinti per configurare l&#39;account [!DNL Adobe Sign] e per il primo o il singolo destinatario. L&#39;indirizzo di posta elettronica del primo destinatario o dell&#39;unico destinatario (se è presente il singolo destinatario) non può essere identico all&#39;account [!DNL Adobe Sign] utilizzato per configurare i Cloud Service AEM.
+* Utilizzare indirizzi di posta elettronica distinti per configurare l&#39;account [!DNL Adobe Sign] e per il primo o il singolo destinatario. L&#39;indirizzo di posta elettronica del primo destinatario o dell&#39;unico destinatario (se è presente il singolo destinatario) non può essere identico all&#39;account [!DNL Adobe Sign] utilizzato per configurare AEM Cloud Services.
 
 >[!MORELIKETHIS]
 >

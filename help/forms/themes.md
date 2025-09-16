@@ -4,7 +4,7 @@ description: Utilizza i temi del modulo adattivo per applicare uno stile e forni
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 È possibile creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo<!-- or interactive communication -->.
@@ -299,7 +299,7 @@ Quando si applica uno stile a un componente, gli stili vengono memorizzati nella
 
 In questo esempio viene modificato lo stile dell’etichetta del campo e, quando per lo stile è selezionata l’opzione Descrizione pannello reattivo, viene aggiunta una voce di elenco nella libreria delle risorse. La voce nella libreria di risorse può essere utilizzata per modificare lo stile di Descrizione pannello reattivo.
 
-Quando uno stile viene aggiunto nella libreria delle risorse, è disponibile per altri temi e nella [modalità di stile](inline-style-adaptive-forms.md) dell&#39;interfaccia utente dell&#39;editor di moduli. Analogamente, quando si utilizza la modalità di stile dell&#39;interfaccia utente dell&#39;editor di moduli <!-- or interactive communication editor --> per applicare uno stile a un componente, lo stile viene memorizzato nella cache ed è disponibile nei temi.
+Quando uno stile viene aggiunto nella libreria delle risorse, è disponibile per altri temi e nella modalità [style](inline-style-adaptive-forms.md) dell&#39;interfaccia utente del generatore di moduli. Analogamente, quando si utilizza la modalità di stile dell&#39;interfaccia utente del generatore di moduli <!-- or interactive communication editor --> per applicare uno stile a un componente, lo stile viene memorizzato nella cache ed è disponibile nei temi.
 
 Il pulsante più (+) posto accanto alla libreria di risorse consente di salvare in modo permanente lo stile con il nome fornito. Il pulsante più salva lo stile anche se non fai clic sul pulsante Salva nella barra laterale per applicarlo a un componente. Il pulsante più per salvare uno stile da utilizzare successivamente non è disponibile in modalità stile.
 
@@ -408,7 +408,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di personalizzare gli stili di testo nel componente del tema.</p> <p>Si desidera ad esempio modificare l'aspetto del testo immesso nella casella di testo.</p> <p>Le opzioni disponibili sono famiglia di caratteri, peso, colore, dimensione, altezza linea, allineamento testo, spaziatura, rientro testo, sottolineatura, corsivo, trasformazione testo, allineamento verticale, linea di base e direzione. </p> </td>
   </tr>
   <tr>
-   <td><p>Informazioni di base </p> </td>
+   <td><p>Esperienza pregressa </p> </td>
    <td><p>Consente di riempire lo sfondo del componente con un’immagine o un colore. </p> </td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di aggiungere effetti speciali ai componenti quali opacità, modalità di fusione e ombre. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzato</p> </td>
+   <td><p>Avanzate</p> </td>
    <td><p>Consente di aggiungere:</p>
     <ul>
      <li>Proprietà per gli pseudo elementi <code>::before</code> e <code>::after</code> per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e assegnarvi uno stile.<br /> Consulta <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elementi CSS</a>.</li>
@@ -673,10 +673,10 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 
   La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
 
-* **Utilizzo dell&#39;editor moduli o dell&#39;editor temi per l&#39;utilizzo di intestazione e piè di pagina**
+* **Utilizzo del generatore di moduli o dell&#39;editor di temi per l&#39;utilizzo di intestazione e piè di pagina**
 
   Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
-Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.
+Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni del generatore di moduli.
 
 
 ## Consulta anche {#see-also}
