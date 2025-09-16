@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
+source-git-commit: 1d75ad2487271f1839ed3a4f2b41597c3d183612
 workflow-type: tm+mt
 source-wordcount: '6618'
 ht-degree: 97%
@@ -525,7 +525,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -1007,7 +1007,7 @@ ht-degree: 97%
    + Assistente IA {#ai-assistant}
       + [Configurare l’Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [Informazioni sull’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-   + Intelligenza artificiale generativa {#generative-ai}
+   + Generare varianti {#generate-variations}
       + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Generare varianti](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
