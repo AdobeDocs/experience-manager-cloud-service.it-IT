@@ -120,7 +120,7 @@ Per configurare l’azione di invio personalizzata predefinita e DocuSign Cloud 
 
    Dopo aver eseguito questi passaggi, puoi visualizzare una nuova azione di invio personalizzata [Invia con le firme elettroniche DocuSign](#enabledocusign) disponibile nell&#39;elenco delle opzioni di invio per un modulo adattivo e una [configurazione del servizio cloud DocuSign](#configure-docusign-with-aem-forms) nell&#39;ambiente di sviluppo locale.
 
-1. Compila e [distribuisci il codice nell&#39;ambiente [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
+1. Compila e [distribuisci il codice nell&#39;ambiente [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#customer-releases).
 
 ## Integra [!DNL DocuSign] con [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 

@@ -34,7 +34,7 @@ Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pa
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 
