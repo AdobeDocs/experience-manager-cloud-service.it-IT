@@ -1,5 +1,5 @@
 ---
-title: Forms Experience Builder - Libreria di richieste
+title: 'Forms Experience Builder: libreria di prompt'
 description: Raccolta di pattern di prompt ed esempi dimostrati per la creazione di moduli con assistenza IA nell’interfaccia utente per la gestione dei moduli, nell’editor dei moduli adattivi e nell’editor universale.
 feature: Edge Delivery Services
 hide: true
@@ -10,42 +10,42 @@ exl-id: c8f64082-a23f-4919-ad66-042faad77d31
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 13%
+ht-degree: 39%
 
 ---
 
 
-# Forms Experience Builder - Libreria di richieste
+# Forms Experience Builder: libreria di prompt
 
-Raccolta di modelli ed esempi di prompt riutilizzabili ottimizzati per Forms Experience Builder. Questa libreria semplificata si concentra sui due metodi di creazione di base: Crea da zero e Importa e converti, con supporto migliorato per campi avanzati basati su LLM e coerenza del brand.
+Raccolta di esempi e pattern di prompt riutilizzabili ottimizzati per Forms Experience Builder. Questa libreria semplificata si concentra sui due metodi di creazione principali, ovvero la creazione da zero e l’importazione e la conversione, con supporto migliorato per i campi avanzati basati su LLM e la coerenza del brand.
 
 >[!NOTE]
 >
-> Forms Experience Builder è disponibile nell&#39;ambito del programma per gli utenti meno esperti. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+> Forms Experience Builder è disponibile nell’ambito del programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per i primi utenti.
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
-## Utilizzo di questa libreria di richieste
+## Utilizzo di questa libreria di prompt
 
-Questa libreria fornisce modelli di prompt riutilizzabili per scenari comuni di creazione di moduli. Per informazioni complete sulle best practice, consulta la [Guida introduttiva di Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
+Questa libreria fornisce modelli di prompt riutilizzabili per scenari comuni di creazione di moduli. Per best practice complete, consulta la [Guida introduttiva di Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
 ### Suggerimenti rapidi per questa libreria
 
-- **Inizia con esempi**: utilizza i prompt forniti come modelli e adattali alle tue esigenze
-- **Due metodi di creazione** - Scegliere Crea da zero o Importa e converti.
-- **Specifici** - Aggiungi i tuoi dettagli agli esempi generici
-- **Verifica approfondita** - Convalida sempre i risultati nel tuo ambiente specifico
+- **Inizia con gli esempi**: utilizza i prompt forniti come modelli e adattali alle tue esigenze
+- **Due metodi di creazione**: scegli Crea da zero o Importa e converti.
+- **Specificità**: aggiungi dettagli personali agli esempi generici
+- **Verifica approfonditamente**: convalida sempre i risultati nel tuo ambiente specifico
 
-### Modelli e stili del marchio
+### Modelli e stili del brand
 
 **Prepara in anticipo le risorse del brand per la creazione di moduli coerenti:**
 
 - **Modelli marchio** - Prepara modelli di modulo standardizzati con i colori, i font e i modelli di layout della tua organizzazione
 - **Linee guida per gli stili** - Definisci stili di campo coerenti, progettazioni di pulsanti e standard di spaziatura che Forms Experience Builder può applicare
 - **Libreria componenti** - Collabora con il team di sviluppo per preparare componenti modulo riutilizzabili che corrispondano alla tua brand identity
-- **Visual Assets** - Prepara logo, icone ed elementi di sfondo per l&#39;integrazione dei moduli
+- **Risorse visive**: prepara logo, icone ed elementi di sfondo per l’integrazione dei moduli
 
 <!-- **Example Brand Application Prompt:**
 
@@ -118,11 +118,11 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 ## Creazione e gestione moduli
 
-**Quando utilizzare:** Quando è necessario creare nuovi moduli o modificare quelli esistenti.
+**Quando utilizzare:** quando è necessario creare nuovi moduli o modificare quelli esistenti.
 
-**Come utilizzare:** Scegliere uno dei due approcci seguenti: Crea da zero o Importa e converti (vedere [Guida introduttiva](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**Come utilizzare:** scegli uno dei due approcci seguenti: Crea da zero o Importa e converti (consulta la [Guida introduttiva](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
-**Esempio di richiesta - Creazione modulo semplice:**
+**Esempio di prompt - Creazione semplice del modulo:**
 
     Crea un modulo di feedback del cliente con:
     - Valutazione del prodotto (1-5 stelle)
@@ -130,7 +130,7 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     - E-mail del cliente (facoltativo)
     - Invia a notifica e-mail
 
-**Esempio di richiesta - Creazione modulo complessa:**
+**Esempio di prompt: creazione modulo complesso:**
 
     Crea un modulo di onboarding completo per i dipendenti con:
     
@@ -181,15 +181,15 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 ## Gestione e configurazione del campo
 
-**Quando utilizzare:** Quando è necessario aggiungere, modificare o configurare campi modulo.
+**Quando utilizzare:** quando hai bisogno dio aggiungere, modificare o configurare campi modulo.
 
-**Come utilizzare:** Specifica i tipi di campo, le regole di convalida e i requisiti di esperienza utente.
+**Come utilizzare:** specifica i tipi di campo, i requisiti di convalida e i requisiti dell’esperienza utente.
 
-**Esempio di richiesta - Aggiunta di un campo di base:**
+**Esempio di prompt: aggiunta di un campo di base:**
 
     Aggiungi un campo di immissione testo per &quot;Nome società&quot; con segnaposto &quot;Inserisci il nome società&quot;
 
-**Esempio di richiesta - Configurazione avanzata del campo:**
+**Esempio di prompt: configurazione avanzata del campo:**
 
     Aggiungi una sezione di indirizzo completa con:
     
@@ -212,7 +212,7 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     - Campi di input descrittivi per dispositivi mobili
     - Conformità per l&#39;accessibilità
 
-**Richieste configurazione campo:**
+**Prompt di configurazione campo:**
 
     Rendi obbligatorio @email campo con convalida in tempo reale e messaggio di errore personalizzato
     
@@ -222,13 +222,13 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     
     Aggiungi un campo di caricamento file per @resume con restrizioni PDF e DOC, massimo 5 MB
 
-## Campi avanzati migliorati LLM
+## Campi avanzati migliorati con LLM
 
-**Quando utilizzare:** Quando sono necessari campi con opzioni precompilate che sfruttano la knowledge base dell&#39;intelligenza artificiale.
+**Quando utilizzare:** quando sono necessari campi con opzioni precompilate che sfruttano la knowledge base dell’intelligenza artificiale.
 
-**Come utilizzare:** Campi di richiesta che richiedono set di dati completi - L&#39;intelligenza artificiale può compilare automaticamente le opzioni utilizzando la conoscenza incorporata.
+**Come utilizzare:** se ci sono campi di richiesta che richiedono set di dati completi. L’intelligenza artificiale può compilare automaticamente le opzioni utilizzando la propria conoscenza incorporata.
 
-### Campi geografici e di ubicazione
+### Campi geografici e di posizione
 
 **Aeroporti e trasporti:**
 
@@ -247,7 +247,7 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 ### Dati aziendali e di settore
 
-**Classificazioni società:**
+**Classificazioni aziendali:**
 
     Aggiungi un campo per la classificazione del settore con codici NAICS
     Crea un elenco a discesa dei tipi di entità business (LLC, Corporation, Partnership, ecc.)
@@ -263,9 +263,9 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     Aggiungi un campo per anni di intervalli di esperienza
     Crea una selezione per linguaggi e framework di programmazione
 
-### Norme e normative
+### Standard e normative
 
-**Finanziario e legale:**
+**Aree finanziaria e legale:**
 
     Aggiungi un campo per i codici valuta con simboli e tassi di cambio
     Crea un elenco a discesa di tipi di ID imposta per paese
@@ -290,7 +290,7 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     Aggiungi una selezione per le relazioni di contatto di emergenza medica
     Crea un campo per le restrizioni alimentari e le allergie
 
-### Informazioni su ora e calendario
+### Intelligence su orario e calendario
 
 **Campi data e ora:**
 
@@ -324,15 +324,15 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 ## Creazione di regole e logica di business
 
-**Quando utilizzare:** Quando è necessario implementare logica condizionale, regole di convalida o processi aziendali.
+**Quando utilizzare:** quando è necessario implementare logica condizionale, regole di convalida o processi aziendali.
 
-**Come utilizzare:** Descrivere chiaramente la logica di business, specificando condizioni e azioni.
+**Come utilizzare:** per descrivere chiaramente la logica di business, specificando condizioni e azioni.
 
-**Esempio di richiesta - Logica condizionale semplice:**
+**Prompt di esempio: logica condizionale semplice:**
 
-    Crea una regola che mostri @spouseInformation pannello solo quando @maritalStatus è uguale a &quot;Sposato&quot;
+    Crea una regola che mostri il pannello @spouseInformation solo quando @maritalStatus è uguale a “Sposato”
 
-**Esempio di richiesta - Regole aziendali complesse:**
+**Esempio di prompt: regole aziendali complesse:**
 
     Implementare la convalida completa della richiesta di prestito:
     
@@ -384,7 +384,7 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     
     Aggiungi l&#39;integrazione CRM a @applicationForm: crea un nuovo record cliente potenziale con @firstName, @lastName, @email e imposta lo stato su &quot;Nuova applicazione&quot;
 
-**Esempio di richiesta - Invio multicanale standard:**
+**Prompt di esempio: invio multicanale standard:**
 
     Configura invio modulo con più destinazioni dati:
     
@@ -675,7 +675,7 @@ Set up **performance monitoring** to track form load times and user interactions
     
 -->
 
-## Riferimento comando
+## Documentazione di riferimento ai comandi
 
 ### Comandi essenziali
 
@@ -690,15 +690,15 @@ Set up **performance monitoring** to track form load times and user interactions
 | `/add-panel` | Conversione delle progettazioni | `/add-panel from uploaded form image with field recognition` |
 | `/help` | Ottenere assistenza | `/help how to implement multi-step validation?` |
 
-### Riferimenti campo
+### Riferimenti ai campi
 
 Utilizza la sintassi `@fieldName` per fare riferimento a campi esistenti nei prompt:
 
-- `@email` - Campo e-mail di riferimento
-- `@firstName` - Campo nome di riferimento
-- `@maritalStatus` - Campo Stato civile di riferimento
+- `@email`: campo e-mail di riferimento
+- `@firstName`: campo nome di riferimento
+- `@maritalStatus`: campo stato civile di riferimento
 
-### Tipi componente
+### Tipi di componente
 
 **Componenti di input:**
 
@@ -719,24 +719,24 @@ Utilizza la sintassi `@fieldName` per fare riferimento a campi esistenti nei pro
 - **Visibile**: booleano per la visibilità iniziale
 - **Obbligatorio**: booleano per i campi obbligatori
 
-**Proprietà campo di input:**
+**Proprietà del campo di input:**
 
 - **Valore**: valore predefinito/iniziale
 - **Segnaposto**: testo di suggerimento per i campi di input
 - **Min**: valore minimo (per numeri/date)
 - **Max**: valore massimo (per numeri/date)
 
-**Proprietà caricamento file:**
+**Proprietà di caricamento del file:**
 
 - **Accetta**: tipi di file (.pdf, .doc, .docx, .jpg, .png, ecc.)
 - **Multipli**: booleano per la selezione di più file
 
-**Proprietà controllo selezione:**
+**Proprietà di controllo della selezione:**
 
 - **Opzioni**: scelte per i menu a discesa (elenco separato da virgole)
 - **Selezionato**: selezione predefinita per caselle di controllo/radio
 
-**Proprietà contenitore:**
+**Proprietà del contenitore:**
 
 - **Set di campi**: raggruppamento di campi correlati
 - **Ripetibile**: booleano per sezioni ripetibili
@@ -748,23 +748,23 @@ Utilizza la sintassi `@fieldName` per fare riferimento a campi esistenti nei pro
 
 ### Comandi di integrazione
 
-**Azioni invio:**
+**Azioni di invio:**
 
 - Notifiche e-mail
 - Invii API REST
 - Archiviazione cloud (Azure, SharePoint)
-- Automazione dei flussi di lavoro (Power Automate, Workfront Fusion)
+- Automazione del flusso di lavoro (Power Automate, Workfront Fusion)
 - Piattaforme di marketing (Marketo)
 - Integrazioni CRM
 
-### Linee guida per la sintassi Prompt
+### Linee guida per la sintassi dei prompt
 
-- **Riferimenti campo**: utilizzare `@fieldName` per i campi esistenti
-- **Comandi**: utilizzare `/command` per azioni specifiche
-- **Linguaggio naturale**: descrive i requisiti in modo chiaro e specifico
+- **Riferimenti campo**: utilizza `@fieldName` per i campi esistenti
+- **Comandi**: utilizza `/command` per azioni specifiche
+- **Linguaggio naturale**: descrivi i requisiti in modo chiaro e specifico
 
-### Elenco di controllo convalida
+### Elenco di controllo della convalida
 
 Per informazioni complete sulle best practice e le linee guida per la convalida, consulta la [Guida introduttiva di Forms Experience Builder](forms-ai-assistant-getting-started.md#best-practices).
 
-*Questa libreria di prompt viene continuamente aggiornata in base al feedback degli utenti e alle nuove funzionalità di Forms Experience Builder. Per le funzionalità e gli esempi più recenti, controlla la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).*
+*Questa libreria di prompt viene continuamente aggiornata in base al feedback degli utenti e alle nuove funzionalità di Forms Experience Builder. Per le funzionalità e gli esempi più recenti, consulta la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).*

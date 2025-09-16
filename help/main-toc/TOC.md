@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
 workflow-type: tm+mt
 source-wordcount: '6624'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -274,7 +274,7 @@ ht-degree: 97%
    + [Regole del filtro del traffico, incluse le regole WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerazioni sulla sicurezza di AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Credenziali JWT nella console Adobe Developer obsolete](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Supporto OpenID Connect per AEM as a Cloud Service sul livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [Supporto Open ID Connect per AEM as a Cloud Service sul livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [Configurazione delle integrazioni IMS per AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Visualizzazione principale per la gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md)
    + [Best practice per la mappatura e la definizione degli utenti del servizio Sling](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -402,7 +402,7 @@ ht-degree: 97%
          + [Abilitazione delle funzioni progressive delle web app](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [Scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [Esportazione in formato CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
-      + Editor pagina {#page-editor}
+      + Editor di pagine {#page-editor}
          + [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Pannello laterale editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Modifica delle pagine](/help/sites-cloud/authoring/page-editor/edit-content.md)
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -961,10 +961,10 @@ ht-degree: 97%
       + [Supporto di script per i moduli HTML5](/help/forms/scripting-support.md)
       + [Set di moduli in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Comunicazione interattiva {#interactive-communication}
-      + [Introduzione all’editor di comunicazioni interattive](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [Introduzione all’editor comunicazione interattiva](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [Creare una comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Creare un modello di comunicazione interattivo](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Creare un frammento di comunicazione interattivo](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Creare un modello di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Creare un frammento di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
       + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
       + [Domande frequenti](/help/forms/interactive-communications-faq.md)
@@ -1006,15 +1006,15 @@ ht-degree: 97%
 + IA in AEM {#ai-in-aem}
    + [Panoramica](/help/ai-in-aem/overview.md)
    + Assistente IA {#ai-assistant}
-      + [Configurare l’Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [Configurare l’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [Informazioni sull’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
    + Generare varianti {#generate-variations}
       + [Funzione Genera varianti - Integrata negli editor di AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Generare varianti](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
       + [Assistente IA per AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Guida introduttiva di AI Assistant per AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Guida introduttiva all’Assistente AI per AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [Guida introduttiva dell’Assistente IA per AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [Guida introduttiva dell’Assistente IA per AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
       + [Assistente IA di AEM Forms - Libreria dei prompt](/help/edge/docs/forms/ai-assistant-prompt-library.md)
       + [Forms Experience Builder - Best practice](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
       + [Forms Experience Builder - Guida alla risoluzione dei problemi](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
@@ -1057,11 +1057,11 @@ ht-degree: 97%
    + [Domande frequenti su Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [Introduzione e panoramica](/help/commerce-cloud/introduction.md)
-   + Edge Delivery Services Storefront {#edge-storefront}
+   + Vetrina di Edge Delivery Services {#edge-storefront}
       + [Introduzione](/help/commerce-cloud/edge-storefront/introduction.md)
    + Vetrina di terze parti {#thrid-party-storefront}
       + [Introduzione](/help/commerce-cloud/third-party-storefront/introduction.md)
-   + CIF Storefront {#cif-storefront}
+   + Vetrina CIF {#cif-storefront}
       + [Introduzione CIF](/help/commerce-cloud/cif-storefront/introduction.md)
       + [Modifiche di rilievo apportate ad AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
       + Percorsi Commerce {#journeys}
@@ -1149,10 +1149,10 @@ ht-degree: 97%
          + [Proteggere i moduli - Aggiunta della sicurezza reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Creare componenti per moduli personalizzati - Guida per gli sviluppatori](/help/edge/docs/forms/custom-components-forms.md)
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
-      + [Guida all’invio dei moduli- Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
+      + [Guida all’invio dei moduli - Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
       + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [Procedure consigliate per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [Best practice per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [Cos’è un CMS headless?](/help/headless/what-is-headless.md)
    + [Introduzione ad AEM Headless](/help/headless/introduction.md)
@@ -1163,7 +1163,7 @@ ht-degree: 97%
       + [Configurazione](/help/headless/setup/create-configuration.md)
       + [Modello per frammenti di contenuto](/help/headless/setup/create-content-model.md)
       + [Cartella di risorse](/help/headless/setup/create-assets-folder.md)
-      + [Frammenti di contenuto](/help/headless/setup/create-content-fragment.md)
+      + [Frammento di contenuto](/help/headless/setup/create-content-fragment.md)
       + [Endpoint di GraphQL](/help/headless/setup/create-api-request.md)
    + Frammenti di contenuto {#content-fragments}
       + [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=it)

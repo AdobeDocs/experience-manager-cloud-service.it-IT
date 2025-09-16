@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 3%
+ht-degree: 40%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi potrebbero cambiare man mano che Forms Experience Builder continua ad evolversi durante il programma per i primi utenti.
+> **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 AEM Forms Experience Builder sfrutta la potenza dell’intelligenza artificiale generativa per democratizzare e accelerare la creazione e l’aggiornamento delle esperienze di moduli digitali. Consentendo flussi di lavoro basati sulle finalità guidati dalle interazioni del linguaggio naturale, consente agli utenti di progettare, modificare e ottimizzare i moduli in modo semplice e rapido.
 
-Basato sulle moderne tecnologie web e su servizi di intelligenza artificiale avanzati, Forms Experience Builder consente agli utenti tecnici e non di creare moduli sofisticati di livello professionale tramite interfacce conversazionali. Questo approccio rivoluzionario riduce il time-to-value da giorni ad ore, elimina gli ostacoli tecnici attraverso la semplicità dell’interfaccia e ridimensiona gli sforzi di modernizzazione dell’intero ecosistema di moduli.
+Basato sulle moderne tecnologie web e su servizi di IA avanzati, Forms Experience Builder consente agli utenti tecnici e non tecnici di creare moduli sofisticati di livello professionale tramite interfacce conversazionali. Questo approccio rivoluzionario riduce il time-to-value da giorni ad ore, elimina gli ostacoli tecnici attraverso la semplicità dell’interfaccia e ridimensiona gli sforzi di modernizzazione dell’intero ecosistema di moduli.
 
 
 
@@ -32,13 +32,13 @@ Forms Experience Builder offre due flussi di lavoro principali per la creazione 
 
 ### &#x200B;1. Creazione di moduli basati sull’intelligenza artificiale
 
-**Generazione modulo lingua naturale**
+**Generazione moduli in linguaggio naturale**
 
 Crea moduli completi da zero utilizzando descrizioni in inglese semplice. È sufficiente descrivere le proprie esigenze, ad esempio &quot;Creare un modulo di feedback del cliente con scale di valutazione e campi di commento&quot; e Forms Experience Builder genera la struttura appropriata del modulo. Utilizza il generatore di esperienze degli editor visivi per aggiungere altri campi, regole di convalida e logica di invio.
 
-**Dynamic Field Management**
+**Gestione campi dinamici**
 
-Aggiungi, modifica o rimuovi campi modulo tramite comandi di conversazione. L’intelligenza artificiale comprende il contesto e può suggerire in modo intelligente tipi di campi, regole di convalida e miglioramenti all’interfaccia utente in base alle tue esigenze.
+Aggiungi, modifica o rimuovi campi modulo tramite comandi conversazionali. L’IA comprende il contesto e può suggerire in modo intelligente i tipi di campi, le regole di convalida e i miglioramenti all’interfaccia utente in base alle tue esigenze.
 
 **Ottimizzazione layout**
 
@@ -48,12 +48,12 @@ Aggiorna i layout e le configurazioni dei moduli tramite il linguaggio naturale.
 
 Configura l’invio dei moduli da integrare con i sistemi aziendali esistenti:
 
-- **Integrazione e-mail**: configurare notifiche e conferme e-mail automatiche
-- **Endpoint REST API**: connessione ad applicazioni e servizi personalizzati
-- **Archiviazione cloud**: integrazione con Azure Blob Storage, SharePoint e OneDrive
-- **Automazione dei flussi di lavoro**: connessione a Power Automate e Workfront Fusion
+- **Integrazione e-mail**: configura notifiche e conferme e-mail automatiche
+- **Endpoint API REST**: connessione ad applicazioni e servizi personalizzati
+- **Archiviazione cloud**: integrazione con Blob Storage di Azure, SharePoint e OneDrive
+- **Automazione dei flussi di lavoro**: connessione a Power Automate e a Workfront Fusion
 - **Piattaforme di marketing**: integrazione diretta con Marketo per la gestione dei lead
-- **Flussi di lavoro di AEM**: sfrutta le funzionalità del flusso di lavoro di AEM esistenti
+- **Flussi di lavoro di AEM**: sfrutta le funzionalità esistenti del flusso di lavoro di AEM
 
 
 ### &#x200B;2. Importazione e conversione intelligenti
@@ -104,7 +104,7 @@ Forms Experience Builder adotta un approccio semplice e conversazionale:
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Trasformare PDF forms in Digital Forms</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Trasformare moduli PDF in moduli adattivi</p>
                     <p class="is-size-6">Converti Acroform, PDF XFA o documenti PDF semplici in moduli digitali interattivi e reattivi con funzionalità avanzate.</p>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 | Aspetto | Creazione di moduli tradizionali | Forms Experience Builder |
 |--------|---------------------------|----------------------|
 | **Tempo di creazione** | 2-3 giorni | 2-3 ore |
-| **Conoscenze tecniche** | Obbligatorio | Non obbligatorio |
+| **Conoscenza tecnica** | Obbligatorio | Non obbligatorio |
 | **Regole di convalida** | Codifica manuale | Linguaggio naturale |
 | **Accessibilità** | Implementazione manuale | Conformità incorporata |
 
@@ -170,7 +170,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Time-to-Value ridotto (TTV)</p>
+                    <p class="headline is-size-6 has-text-weight-bold">TTV (Time-to-Value) ridotto</p>
                     <p class="is-size-6">Accelera notevolmente lo sviluppo dei moduli da giorni ad ore, consentendo un più rapido lancio sul mercato per le iniziative digitali.</p>
                 </div>
             </div>
@@ -180,7 +180,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">Semplicità dell'interfaccia</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Semplicità dell’interfaccia</p>
                     <p class="is-size-6">Elimina la curva di apprendimento con un'interfaccia di conversazione intuitiva, riducendo i tempi di formazione e aumentando l'adozione.</p>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Onboarding
 
-Forms Experience Builder è attualmente disponibile come parte del programma di accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
+Forms Experience Builder è attualmente disponibile come parte del programma per l’accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
 
 ### Informazioni richieste
 
@@ -231,11 +231,11 @@ Per i passaggi dettagliati per individuare l’ID organizzazione IMS e l’ID pr
 >
 > **Programma di disponibilità limitata**: l&#39;accesso a Forms Experience Builder è soggetto all&#39;approvazione delle parti interessate interne. Adobe esaminerà la tua richiesta in base alla capacità del programma e all’allineamento con i criteri di accesso anticipato. L&#39;approvazione non è garantita e dipende dalla disponibilità del programma corrente.
 
-Per ulteriori informazioni sul programma Early Access e sulle relative funzionalità, consulta la [documentazione di AEM Forms Early Access](/help/forms/early-access-ea-features.md).
+Per ulteriori informazioni sul programma Accesso anticipato e sulle relative funzioni, consulta la [documentazione rellativa all’accesso anticipato di AEM Forms](/help/forms/early-access-ea-features.md).
 
 
 ## Guida introduttiva
 
-Per iniziare a utilizzare Forms Experience Builder, visita la [documentazione di Forms Experience Builder](forms-ai-assistant-getting-started.md). Puoi accedere a Forms Experience Builder tramite AEM Forms Editor o Universal Editor, a seconda del flusso di lavoro preferito.
+Per iniziare a utilizzare Forms Experience Builder, visita la [documentazione di Forms Experience Builder](forms-ai-assistant-getting-started.md). Puoi accedere a Forms Experience Builder tramite l’editor di AEM Forms o l’editor universale, a seconda del flusso di lavoro preferito.
 
-Per le organizzazioni che intendono trasformare i processi di creazione dei moduli, Forms Experience Builder offre una soluzione potente e intuitiva che combina la flessibilità dell’intelligenza artificiale conversazionale con la robustezza della gestione dei moduli di livello enterprise.
+Per le organizzazioni che mirano a trasformare i processi di creazione dei moduli, Forms Experience Builder offre una soluzione potente e intuitiva che combina la flessibilità dell’intelligenza artificiale conversazionale con la robustezza della gestione dei moduli di livello Enterprise.

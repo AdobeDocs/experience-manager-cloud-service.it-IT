@@ -9,17 +9,17 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Guida introduttiva all’Assistente AI per AEM Forms (Forms Experience Builder)
+# Guida introduttiva dell’Assistente IA per AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> La funzionalità dell’Assistente IA per AEM Forms (Forms Experience Builder) è disponibile nel **programma per primi utilizzatori**. Se sei interessato, invia un&#39;e-mail rapida dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità.
+> La funzionalità dell’Assistente IA per AEM Forms (Forms Experience Builder) è disponibile nel **programma per primi utilizzatori**. Se ti interessa, invia una breve e-mail dall’indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l’accesso alla funzionalità.
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ L’Assistente IA per AEM Forms trasforma il modo in cui si creano i moduli: bas
 
 Interagire con l’Assistente IA è come parlare con un collega esperto. Invece di imparare a usare menu e impostazioni complessi, descrivi semplicemente ciò che desideri creare.
 
-### Inizio rapido
+### Avvio rapido
 
 Inizia subito guardando il nostro video introduttivo:
 
@@ -218,7 +218,7 @@ Carica i file per aiutare l’IA a comprendere esattamente ciò che stai cercand
 - **Descrivi cosa desideri** insieme all’allegato
 - **Mantieni i file sotto i 10 MB** per un’elaborazione ottimale
 
-## Suggerimenti per ottenere risultati ottimali
+## Suggerimenti per ottenere i risultati migliori
 
 ### Inizia in modo semplice, poi costruisci
 
@@ -294,7 +294,7 @@ Utilizza `@fieldName` per fare riferimento ai campi esistenti:
 - `@phoneNumber` - Campo numero di telefono
 - `@dateOfBirth` - Campo data di nascita
 
-### Tipi componente
+### Tipi di componente
 
 Utilizza questi termini per ottenere risultati ottimali:
 
@@ -308,7 +308,7 @@ Utilizza questi termini per ottenere risultati ottimali:
 - `file upload` - Allegato file
 - `panel` - Contenitore per il raggruppamento dei campi
 
-## Risoluzione dei problemi
+## Risoluzione di problemi
 
 ### Problemi comuni e soluzioni
 
@@ -328,7 +328,7 @@ Utilizza questi termini per ottenere risultati ottimali:
 
 - Verifica che i nomi dei campi siano scritti esattamente come appaiono
 - Usa la sintassi `@fieldName` per i campi esistenti
-- Assicurati che il campo esista prima di farvi riferimento
+- Assicurati che il campo sia presente prima di farvi riferimento
 
 **Problemi relativi all’importazione della progettazione:**
 

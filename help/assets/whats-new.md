@@ -1,12 +1,12 @@
 ---
 title: Novità di Content Hub
-description: Ulteriori informazioni su alcune delle funzionalità di Content Hub recentemente lanciate
+description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 49%
+ht-degree: 99%
 
 ---
 
@@ -24,15 +24,15 @@ Il seguente video illustra le funzionalità principali di Content Hub:
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della funzione Content Hub (2025.8.0) è il 28 agosto 2025 (come quella della versione di AEM as a Cloud Service). La prossima versione funzionale (2025.9.0) è pianificata per il venerdì 25 settembre 2025.
+La data di rilascio della versione funzionale di Content Hub (2025.8.0) è il 28 agosto 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.9.0) è pianificata per il 25 settembre 2025.
 
 ## Funzioni della versione di agosto {#august-release-features}
 
-**Ricerca in blocco tramite proprietà filtro**
+**Ricerca in blocco tramite le proprietà del filtro**
 
-Content Hub consente ora di individuare più rapidamente le risorse necessarie. Con la nuova funzionalità di ricerca in blocco, puoi immettere più valori per qualsiasi proprietà di filtro, separati da un delimitatore (ad esempio, più ID SKU), e recuperare immediatamente tutte le risorse corrispondenti utilizzando una singola ricerca.
+Content Hub consente ora di individuare più rapidamente le risorse necessarie. Con la nuova funzionalità di ricerca in blocco, puoi immettere più valori per qualsiasi proprietà di filtro, separati da un delimitatore (ad esempio, più ID SKU), e recuperare tutte le risorse corrispondenti all’istante e con una singola ricerca.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 
 ## Funzioni della versione di luglio {#july-release-features}
 
@@ -58,23 +58,23 @@ Content Hub ora include un’opzione **Mostra tutto** all’interno dei filtri, 
 
 ### Governance delle raccolte {#collections-governance}
 
-Content Hub ora consente di controllare l’accesso alle raccolte durante la creazione, garantendo che solo gli utenti autorizzati possano visualizzare o gestire le risorse raggruppate. Ciò garantisce maggiore sicurezza, migliore collaborazione, gestione risorse organizzata e governance semplificata.
+Content Hub ora consente di controllare l’accesso alle raccolte in fase di creazione, in modo che solo gli utenti autorizzati possano visualizzare o gestire risorse raggruppate. Questo garantisce maggiore sicurezza, migliore collaborazione, gestione risorse organizzata e governance semplificata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 [!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
-## Funzioni di maggio {#may-release-features}
+## Funzioni della versione di maggio {#may-release-features}
 
-Il rilascio di Content Hub di maggio include le seguenti funzionalità:
+La versione di maggio di Content Hub include le seguenti funzioni:
 
 * [Controllo degli accessi basato su attributi](#attribute-based-access-control)
 
-* [Marchio interfaccia utente](#ui-branding)
+* [Branding dell’interfaccia utente](#ui-branding)
 
 * [Condivisione di collegamenti pubblici](#public-link-sharing)
 
-* [Scaricare più risorse come file ZIP](#download-multiple-assets-as-zip)
+* [Download di più risorse come file ZIP](#download-multiple-assets-as-zip)
 
 * [Rappresentazioni Dynamic Media in Content Hub](#dynamic-media-renditions)
 
@@ -94,9 +94,9 @@ Alcuni dei vantaggi principali del controllo degli accessi basato su attributi i
 
 [!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
-### Marchio interfaccia utente {#ui-branding}
+### Branding dell’interfaccia utente {#ui-branding}
 
-Content Hub ora consente agli amministratori di personalizzare l’interfaccia utente con elementi specifici del brand, tra cui immagini del banner, titoli dei banner e testo del corpo del messaggio, nonché colori primari e secondari. Questi miglioramenti contribuiscono a garantire la coerenza del brand, semplificare l’onboarding degli utenti e creare fiducia.
+Content Hub ora consente agli amministratori di personalizzare l’interfaccia utente con elementi specifici del brand, tra cui immagini del banner, titoli dei banner e corpo del testo, nonché colori primari e secondari. Questi miglioramenti contribuiscono a garantire la coerenza del brand, semplificare l’onboarding degli utenti e creare fiducia.
 
 ![Branding interfaccia utente](/help/assets/assets/content-hub-ui-branding.png)
 
@@ -104,21 +104,21 @@ Content Hub ora consente agli amministratori di personalizzare l’interfaccia u
 
 ### Condivisione di collegamenti pubblici {#public-link-sharing}
 
-Content Hub ora supporta la generazione di collegamenti condivisibili per consentire agli utenti esterni, senza accesso alle applicazioni, di visualizzare i metadati delle risorse o scaricare le risorse.
+Content Hub ora supporta la generazione di collegamenti condivisibili affinché anche gli utenti esterni che non hanno accesso all’applicazione possano visualizzare i metadati delle risorse o scaricarle.
 
 ![Branding interfaccia utente](/help/assets/assets/public-and-private-link.png)
 
 [!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
-### Scaricare più risorse come file ZIP {#download-multiple-assets-as-zip}
+### Download di più risorse come file ZIP {#download-multiple-assets-as-zip}
 
-Content Hub ora consente anche di scaricare le risorse selezionate e le relative rappresentazioni in un file ZIP e non come file separati, semplificando la gestione dei file.
+Content Hub ora consente anche di scaricare le risorse selezionate e le relative rappresentazioni in un file ZIP e non come file separati, semplificandone la gestione.
 
 [!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ### Rappresentazioni Dynamic Media in Content Hub {#dynamic-media-renditions}
 
-Accedi a tutte le rappresentazioni predefinite e ai ritagli avanzati di Dynamic Media per il download, direttamente dall’interfaccia utente di Content Hub.
+Accedi a tutte le rappresentazioni predefinite di Dynamic Media e ai ritagli avanzati per scaricarli direttamente dall’interfaccia utente di Content Hub.
 
 ![Rappresentazioni di Dynamic Media](/help/assets/assets/dm-renditions-content-hub.png)
 

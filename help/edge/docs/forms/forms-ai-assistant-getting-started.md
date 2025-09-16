@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2013'
-ht-degree: 6%
+ht-degree: 53%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> La funzionalità Forms Experience Builder è disponibile nel **programma di accesso anticipato**. Se sei interessato, invia una breve e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso alla funzionalità.
+> La funzionalità Forms Experience Builder è disponibile nel **programma di accesso anticipato**. Se ti interessa, invia una breve e-mail dall’indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l’accesso alla funzionalità.
 
 >[!IMPORTANT]
 >
 > **Documentazione soggetta a modifiche**: questa documentazione è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Funzionalità, comandi ed esempi potrebbero cambiare man mano che Forms Experience Builder continua ad evolversi durante il programma Early Access.
 
-Questa guida completa ti aiuta a iniziare a creare e gestire i moduli utilizzando la tecnologia di intelligenza artificiale per conversazioni. Sia che si tratti di un principiante che desidera creare il primo modulo o di un utente avanzato che desidera sfruttare funzionalità sofisticate, è possibile trovare informazioni dettagliate ed esempi pratici per guidare il percorso attraverso le funzionalità di Forms Experience Builder.
+Questa guida completa ti aiuta a iniziare a creare e gestire i moduli utilizzando la tecnologia IA conversazionale. Sia che si tratti di un principiante che desidera creare il primo modulo o di un utente avanzato che desidera sfruttare funzionalità sofisticate, può trovare informazioni dettagliate ed esempi pratici per guidare il percorso attraverso le funzionalità di Forms Experience Builder.
 
 ## Prerequisiti e configurazione
 
-### &#x200B;1. Richiedi accesso
+### &#x200B;1. Richiedi l’accesso
 
-Forms Experience Builder è attualmente disponibile come parte del programma di accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
+Forms Experience Builder è attualmente disponibile come parte del programma per l’accesso anticipato (EA). Per partecipare e ottenere l&#39;accesso, è necessario disporre delle seguenti informazioni:
 
 **Informazioni richieste**
 
@@ -60,28 +60,28 @@ Per i passaggi dettagliati per individuare l’ID organizzazione IMS e l’ID pr
 >
 > **Programma di disponibilità limitata**: l&#39;accesso a Forms Experience Builder è soggetto all&#39;approvazione delle parti interessate interne. Adobe esaminerà la tua richiesta in base alla capacità del programma e all’allineamento con i criteri di accesso in anteprima. L&#39;approvazione non è garantita e dipende dalla disponibilità del programma corrente.
 
-### &#x200B;2. Verificare che Forms sia abilitato
+### &#x200B;2. Verifica che Forms sia abilitato
 
 Prima di utilizzare Forms Experience Builder, assicurati che [AEM Forms sia abilitato per il tuo ambiente](/help/forms/setup-forms-cloud-service.md).
 
 
-### &#x200B;3. Configurare l’ambiente
+### &#x200B;3. Configura l’ambiente
 
 
 - **Per Edge Delivery Services (EDS):**
 
-   - [Ambiente di configurazione per Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [Creare un nuovo modulo utilizzando il modello Forms di Edge Delivery](/help/edge/docs/forms/universal-editor/create-forms.md)
+   - [Configura l’ambiente per moduli Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+   - [Crea un nuovo modulo utilizzando il modello dei moduli Edge Delivery](/help/edge/docs/forms/universal-editor/create-forms.md)
 
-- **Per moduli basati su Componenti core:**
+- **Per moduli basati su componenti core:**
 
-   - Nell’istanza di Adobe Experience Manager, accedi a Forms > Forms e documenti
-   - [Creare una nuova pagina utilizzando il modello Componenti core](/help/forms/creating-adaptive-form-core-components.md)
+   - Nell’istanza di Adobe Experience Manager, accedi a Moduli > Moduli e documenti
+   - [Creare una nuova pagina utilizzando il modello dei componenti core](/help/forms/creating-adaptive-form-core-components.md)
 
 
-## Inizio rapido
+## Avvio rapido
 
-### Accedere a Forms Experience Builder
+### Accedi a Forms Experience Builder
 
 Forms Experience Builder è disponibile nell’interfaccia utente di gestione Forms, nell’editor universale e nell’editor di Forms adattivo. Per accedere al modulo è possibile utilizzare uno dei seguenti metodi:
 
@@ -109,7 +109,7 @@ Forms Experience Builder è disponibile nell’interfaccia utente di gestione Fo
 1. Segui la [guida all&#39;installazione di Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) per creare la tua pagina EDS
 1. Passare alla pagina EDS in Universal Editor
 1. Cerca l’icona Forms Experience Builder nel pannello a destra
-1. Fare clic per aprire l&#39;interfaccia di conversazione
+1. Fai clic per aprire l’interfaccia di conversazione
 
 
 
@@ -125,7 +125,7 @@ Forms Experience Builder è disponibile nell’interfaccia utente di gestione Fo
 
 | Simbolo | Scopo | Esempio di utilizzo |
 |--------|---------|---------------|
-| `/` | Azioni rapide e collegamenti | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
+| `/` | Azioni rapide e scelte rapide | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
 | `@` | Fai riferimento a campi modulo esistenti | `@email`, `@firstName`, `Make @phoneNumber required` |
 | Testo normale | Conversazione naturale | &quot;Aggiungi un campo numero di telefono richiesto&quot;, &quot;Crea convalida per e-mail&quot; |
 
@@ -137,43 +137,43 @@ Forms Experience Builder è disponibile nell’interfaccia utente di gestione Fo
 - `/configure-submit to email support@company.com` - Configura l&#39;invio di e-mail
 - `/help multi-step forms` - Ottiene informazioni sulla creazione di moduli con più passaggi
 
-### Suggerimenti per il successo
+### Suggerimenti per la buona riuscita
 
-- **Specificare**: &quot;Aggiungere un campo e-mail obbligatorio con convalida&quot; funziona meglio di &quot;aggiungere e-mail&quot;
-- **Riferimento a campi esistenti**: utilizzare `@fieldName` per modificare i moduli
+- **Sii più specifico**: “Aggiungi un campo e-mail obbligatorio con convalida” funziona meglio di “aggiungi e-mail”
+- **Riferimento a campi esistenti**: utilizza `@fieldName` quando modifichi i moduli
 - **Chiedi aiuto**: digita `/help` seguito dalla domanda
 - **Iterazione**: apporta una modifica alla volta per ottenere risultati ottimali
 
 
 ## Metodi per iniziare a creare un modulo
 
-### &#x200B;1. Inizia con i prompt del linguaggio naturale
+### &#x200B;1. Inizia con prompt in linguaggio naturale
 
-Descrivi i requisiti del modulo nel linguaggio naturale e Forms Experience Builder genera la struttura completa del modulo:
+Descrivi i requisiti del modulo in linguaggio naturale; Forms Experience Builder genererà la struttura completa del modulo:
 
 **Esempi:**
 
-- &quot;Crea un modulo di richiesta di prestito con informazioni personali, dettagli finanziari e caricamenti di documenti&quot;
-- &quot;Creare un modulo di feedback dei clienti con valutazioni, commenti e categorie di prodotti&quot;
-- &quot;Ho bisogno di un modulo di registrazione in più passaggi per una conferenza con elaborazione dei pagamenti&quot;
+- “Crea un modulo per la richiesta di un prestito con informazioni personali, dettagli finanziari e caricamenti di documenti”
+- “Crea un modulo per il feedback dei clienti con valutazioni, commenti e categorie di prodotti”
+- “Ho bisogno di un modulo di registrazione in più passaggi per una conferenza con elaborazione dei pagamenti”
 
-### &#x200B;2. Importare e convertire
+### &#x200B;2. Importa e converti
 
 Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 
 **Origini supportate:**
 
-- **PDF forms**: carica PDF statici per convertirli in moduli digitali interattivi con convalide.
+- **Moduli PDF**: carica PDF statici per convertirli in moduli digitali interattivi con convalide.
 - **Schermate o immagini**: carica foto dei moduli cartacei per generare versioni digitali funzionali
-- **XFA Forms**: convertire i moduli basati su XFA legacy in moduli reattivi moderni
+- **Moduli XFA**: converti i precedenti moduli basati su XFA in moduli responsive moderni
 
 **Come importare:**
 
 1. Fai clic sull’icona dell’allegato nell’interfaccia di Forms Experience Builder
 2. Carica il file (PDF, immagine, progettazione Figma, ecc.)
 3. Descrivi le tue esigenze:
-   - &quot;Converti questo modulo PDF in una versione digitale&quot;
-   - &quot;Crea un modulo che corrisponda a questo layout di schermata&quot;
+   - “Converti questo modulo PDF in una versione digitale”
+   - “Crea un modulo che corrisponda al layout di questa schermata”
    - “Crea questo modulo dalla mia progettazione Figma”
 
 **Tipi di file supportati:**
@@ -183,7 +183,7 @@ Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 - **Schermate**: schermate di app desktop/mobili, foto in formato cartaceo, schizzi su lavagna
 - **Schizzi disegnati a mano**: schizzi di tovagliolo, wireframe, disegni concettuali (fotografati)
 
-### Interazioni chiave
+### Interazioni principali
 
 #### Aggiunta di elementi modulo
 
@@ -251,13 +251,13 @@ Trasforma i moduli e i documenti esistenti in esperienze moderne e interattive:
 
 Forms Experience Builder può configurare vari endpoint di invio per collegare i moduli a sistemi e servizi esterni:
 
-| Invia tipo di azione | Comando di installazione | Caso d’uso |
+| Invia tipo di azione | Comando di configurazione | Caso d’uso |
 |------------------|---------------|----------|
 | **E-mail** | &quot;Invia modulo a e-mail&quot; | Notifiche e conferme per l’invio di moduli |
-| **API REST** | &quot;Invia all’endpoint REST&quot; | Applicazioni personalizzate e sistemi di terze parti |
-| **Archiviazione cloud** | &quot;Salva in Azure/SharePoint&quot; | Archiviazione dei documenti e gestione dei file |
-| **Flusso di lavoro** | &quot;Connetti a Power Automate&quot; | Automazione e approvazione dei processi aziendali |
-| **Marketing** | &quot;Integrare con Marketo&quot; | Gestione dei lead e automazione del marketing |
+| **API REST** | &quot;Invia a endpoint REST&quot; | Applicazioni personalizzate e sistemi di terze parti |
+| **Archiviazione cloud** | “Salva in Azure/SharePoint” | Archiviazione dei documenti e gestione dei file |
+| **Flusso di lavoro** | “Connettiti a Power Automate” | Automazione e approvazione dei processi aziendali |
+| **Marketing** | “Integra con Marketo” | Gestione dei lead e automazione del marketing |
 
 **Esempi di configurazione invio avanzata:**
 
@@ -279,12 +279,12 @@ Forms Experience Builder può configurare vari endpoint di invio per collegare i
 
 ### Creazione di regole complesse
 
-Creare regole di convalida e business sofisticate che rispondano alle interazioni degli utenti e garantiscano l&#39;integrità dei dati:
+Crea una logica di convalida e di business avanzata che risponda alle interazioni degli utenti e garantisca l’integrità dei dati:
 
     👤 Sei: &quot;Mostra la sezione dell&#39;indirizzo solo se l&#39;utente seleziona &#39;Spedisci a indirizzo diverso&#39;&quot;
     🤖 AI: &quot;Creata una regola condizionale che mostra/nasconde il pannello dell&#39;indirizzo in base alla selezione della casella di controllo&quot;
 
-### Creazione di moduli in più passaggi
+### Creazione di moduli con più passaggi
 
     👤 You: &quot;Crea un modulo progressivo con 3 passaggi: informazioni personali, preferenze, conferma&quot;
     🤖 AI: &quot;Crea un modulo progressivo con navigazione tra passaggi e convalida in ogni fase&quot;
@@ -293,8 +293,8 @@ Creare regole di convalida e business sofisticate che rispondano alle interazion
 
 - Caricamento di file con restrizioni di convalida e dimensione per la gestione dei documenti
 - Selettori di date con vincoli e regole aziendali per la programmazione
-- Elenchi a discesa con opzioni dinamiche che cambiano in base alle selezioni effettuate dagli utenti
-- Pulsanti di scelta con logica condizionale per strutture decisionali complesse
+- Elenchi a discesa con opzioni dinamiche che cambiano in base alle selezioni degli utenti
+- Pulsanti di scelta con logica condizionale per alberi decisionali complessi
 
 
 ### Conversione da PDF a modulo
@@ -308,7 +308,7 @@ Creare regole di convalida e business sofisticate che rispondano alle interazion
 
 ## Assistenza e formazione sul prodotto
 
-Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
+Forms Experience Builder può anche insegnarti le funzionalità di AEM Forms:
 
 ### Fai domande come:
 
@@ -327,34 +327,34 @@ Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
 
 ## Best practice
 
-### Progettazione modulo
+### Progettazione del modulo
 
-- **Semplifica**: inizia con campi essenziali e aggiungi complessità solo quando necessario per evitare di sovraffollare gli utenti
-- **Usa etichette chiare**: le finalità dei campi sono evidenti con etichette descrittive che guidano gli utenti attraverso il modulo
-- **Fornisci testo di aiuto**: guida gli utenti attraverso campi complessi con esempi e guida contestuale
-- **Verifica approfondita**: convalida tutti i percorsi utente per garantire il corretto funzionamento dei moduli in tutti gli scenari
+- **Semplifica**: inizia con campi essenziali e aggiungi complessità solo se necessario per evitare di sopraffare gli utenti
+- **Usa etichette chiare**: rendi evidenti le finalità dei campi con etichette descrittive che guidano gli utenti attraverso il modulo
+- **Fornisci un testo di aiuto**: supporta gli utenti nei campi complessi con esempi e guida contestuale
+- **Esegui test approfonditi**: convalida tutti i percorsi dell’utente per garantire il corretto funzionamento dei moduli in tutti gli scenari
 
-### Esperienza utente
+### User experience
 
 - **Divulgazione progressiva**: mostra i campi rilevanti in base al contesto per ridurre il carico cognitivo e migliorare i tassi di completamento
-- **Cancella navigazione**: aiuta gli utenti a capire dove si trovano nel modulo e quali passaggi rimangono
-- **Progettazione reattiva**: assicurarsi che i moduli funzionino su tutti i dispositivi e su tutte le dimensioni dello schermo per la massima accessibilità
+- **Navigazione chiara**: aiuta gli utenti a capire in che punto del modulo si trovano e quali passaggi devono ancora fare
+- **Progettazione responsive**: assicurati che i moduli funzionino su tutti i dispositivi e con tutte le dimensioni dello schermo per garantire la massima accessibilità
 - **Accessibilità**: attieniti alle linee guida WCAG per rendere i moduli utilizzabili da persone con disabilità
 
 ### Prestazioni
 
-- **Ottimizza conteggio campi**: richiedi solo le informazioni necessarie per ridurre l&#39;abbandono dei moduli e migliorare i tassi di completamento
-- **Utilizza la convalida appropriata**: evita errori prima dell&#39;invio per fornire feedback e indicazioni immediati
-- **Tassi di completamento dei test**: monitora e migliora l&#39;efficacia dei moduli tramite analisi e feedback degli utenti
-- **Aggiornamenti regolari**: i moduli sono aggiornati in base alle esigenze aziendali e alle aspettative degli utenti per prestazioni ottimali
+- **Ottimizza il conteggio dei campi**: richiedi solo le informazioni necessarie per ridurre l’abbandono dei moduli e migliorare i tassi di completamento
+- **Utilizza la convalida appropriata**: evita errori prima dell’invio per fornire feedback e indicazioni immediati
+- **Esegui test sui tassi di completamento**: monitora e migliora l’efficacia dei moduli tramite analisi e feedback degli utenti
+- **Aggiornamenti regolari**: mantieni i moduli aggiornati in base alle esigenze aziendali e alle aspettative degli utenti per assicurare prestazioni ottimali
 
-### Coerenza del brand
+### Brand consistency
 
-- **Crea modelli marchio**: prepara modelli di modulo con marchio con i colori, i font e lo stile della tua organizzazione prima di iniziare la creazione del modulo
-- **Definisci standard di stile**: stabilisce stili di pulsante, layout di campo e linee guida di spaziatura coerenti a cui è possibile fare riferimento nei prompt
-- **Utilizzare le risorse per i marchi**: prepara logo, codici colore e linee guida per i marchi per un riferimento semplice durante la creazione dei moduli
-- **Libreria modelli**: crea una raccolta di modelli di modulo con marchio per i casi d&#39;uso comuni (contatto, registrazione, feedback)
-- **Richieste di stile**: includere istruzioni specifiche per il marchio: &quot;Utilizza il blu società (#1234AB) per i pulsanti e il font aziendale Helvetica&quot;
+- **Crea modelli di brand**: prepara modelli di moduli con brand con i colori, i font e lo stile della tua organizzazione prima di iniziare la creazione del modulo
+- **Definisci standard di stile**: stabilisci stili per i pulsanti, layout per i campi e linee guida di spaziatura coerenti a cui è possibile fare riferimento nei prompt
+- **Utilizza le risorse per i brand**: prepara loghi, codici colore e linee guida per i brand per garantire un riferimento semplice durante la creazione dei moduli
+- **Libreria di modelli**: crea una raccolta di modelli di moduli con brand per i casi d’uso comuni (contatto, registrazione, feedback)
+- **Prompt con stile**: includi istruzioni specifiche per i brand, ad esempio &quot;Utilizza il blu dell’azienda (#1234AB) per i pulsanti e il font dell’azienda Helvetica&quot;
 
 
 
@@ -362,13 +362,13 @@ Forms Experience Builder può anche insegnarti le funzioni di AEM Forms:
 
 | Problema | Correzione rapida |
 |-------|-----------|
-| **Impossibile caricare l&#39;interfaccia** | Aggiorna browser, controlla la connessione Internet |
-| **Comandi non funzionanti** | Prova `/help` o usa il linguaggio naturale |
-| **@fieldName non riconosciuto** | Controlla ortografia, assicurati che il campo esista |
-| **Impossibile caricare il file** | Usa PDF/JPG/PNG inferiore a 10 MB |
-| **Il modulo ha un aspetto errato** | Essere più specifici: &quot;Rendi mobile-friendly&quot; |
+| **L’interfaccia non si carica** | Aggiorna il browser, controlla la connessione Internet |
+| **Comandi non funzionanti** | Prova `/help` o utilizza invece il linguaggio naturale |
+| **@fieldName non riconosciuto** | Controlla l’ortografia, assicurati che il campo esista |
+| **Impossibile caricare il file** | Utilizza file PDF/JPG/PNG inferiori a 10 MB |
+| **Il modulo sembra errato** | Sii più specifico: “Rendilo adatto ai dispositivi mobili” |
 | **Impossibile inviare la configurazione** | Verifica credenziali e autorizzazioni API |
 
-**Hai ancora bisogno di aiuto?** Digitare `/help` seguito da una domanda specifica o contattare l&#39;amministratore di sistema.
+**Hai ancora bisogno di assistenza?** Digita `/help` seguito da una domanda specifica o contatta l’amministratore di sistema.
 
-Per ulteriore supporto, fare riferimento alla [Libreria prompt di Forms Experience Builder](ai-assistant-prompt-library.md) principale o contattare l&#39;amministratore di sistema per assistenza tecnica.
+Per ulteriore supporto, consulta la [Libreria prompt per Forms Experience Builder](ai-assistant-prompt-library.md) principale o contatta l’amministratore di sistema per assistenza tecnica.

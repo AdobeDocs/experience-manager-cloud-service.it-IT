@@ -1,6 +1,6 @@
 ---
 title: Forms Experience Builder - Guida alla risoluzione dei problemi
-description: Guida completa alla risoluzione dei problemi per Forms Experience Builder, che tratta problemi comuni, soluzioni e tecniche di debug per la creazione e la gestione dei moduli.
+description: Guida completa alla risoluzione dei problemi per Forms Experience Builder in cui sono illustrati problemi comuni, soluzioni e tecniche di debug per la creazione e la gestione dei moduli.
 feature: Edge Delivery Services
 hide: true
 index: false
@@ -10,7 +10,7 @@ exl-id: 6a7810fd-2860-410b-867d-8d29afd5297d
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -19,33 +19,33 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Forms Experience Builder è disponibile nell&#39;ambito del programma per gli utenti meno esperti. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+> Forms Experience Builder è disponibile nell’ambito del programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa guida alla risoluzione dei problemi è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. Problemi, soluzioni e tecniche di debug possono cambiare in base all’evoluzione di Forms Experience Builder durante il programma di adozione anticipata.
+> **Documentazione soggetta a modifiche**: questa guida alla risoluzione dei problemi è attualmente in fase di test rispetto al prodotto, pertanto è soggetta ad aggiornamenti e revisioni. Problemi, soluzioni e tecniche di debug possono cambiare in base all’evoluzione di Forms Experience Builder durante il programma per primi utilizzatori.
 
-Questa guida completa alla risoluzione dei problemi consente di identificare, diagnosticare e risolvere i problemi più comuni quando si lavora con Forms Experience Builder. La guida è organizzata per categorie di problemi con correzioni rapide e soluzioni dettagliate.
+Questa guida completa alla risoluzione dei problemi consente di identificare, diagnosticare e risolvere i problemi più comuni durante l’utilizzo di Forms Experience Builder. La guida è organizzata per categorie di problemi con correzioni rapide e soluzioni dettagliate.
 
 ## Riferimento rapido - Problemi comuni
 
 | Problema | Correzione rapida |
 |-------|-----------|
-| **Impossibile caricare l&#39;interfaccia** | Aggiorna il browser, controlla la connessione Internet, verifica le autorizzazioni di accesso anticipato |
-| **Comandi non funzionanti** | Prova `/help` o usa il linguaggio naturale invece dei comandi barra |
-| **@fieldName non riconosciuto** | Controlla l&#39;ortografia, verifica che il campo esista, verifica la sintassi del nome campo |
-| **Impossibile caricare il file** | Usa PDF/JPG/PNG inferiore a 10 MB, verifica la compatibilità del formato file |
-| **Il modulo ha un aspetto errato** | Sii più specifico: &quot;Rendi mobile-friendly&quot; invece di &quot;fix layout&quot; |
-| **Integrazione non riuscita** | Verifica credenziali e autorizzazioni API, verifica la disponibilità dell’endpoint |
-| **Modulo non inviato** | Verifica la configurazione e le regole di convalida dell’azione di invio |
-| **Errori di convalida non visualizzati** | Verificare le impostazioni di convalida del campo e il posizionamento del messaggio di errore |
-| **Problemi di layout dispositivi mobili** | Verifica delle impostazioni di progettazione reattiva e del dimensionamento dei campi |
-| **Campi non visualizzati** | Verificare la logica condizionale e le regole di visibilità |
-| **Errori di importazione** | Verifica della compatibilità del formato del file e dei limiti di dimensione |
-| **Problemi di prestazioni** | Ottimizza il conteggio dei campi e rimuovi le convalide non necessarie |
-| **Problemi di accessibilità** | Etichette dei campi di revisione, attributi ARIA e ordine di tabulazione |
+| **L’interfaccia non si carica** | Aggiorna il browser, controlla la connessione Internet e verifica le autorizzazioni di accesso anticipato |
+| **Comandi non funzionanti** | Prova `/help` o usa il linguaggio naturale invece dei comandi slash |
+| **@fieldName non riconosciuto** | Controlla l’ortografia, assicurati che il campo esista e verifica la sintassi del nome del campo |
+| **Impossibile caricare il file** | Usa un file PDF/JPG/PNG con dimensioni inferiori a 10 MB e verifica la compatibilità del formato di file |
+| **Aspetto del modulo sbagliato** | Sii più specifico: &quot;Rendilo semplice e intuitivo&quot; invece di &quot;Correggi il layout&quot; |
+| **Integrazione non riuscita** | Verifica le credenziali e le autorizzazioni API e controlla la disponibilità dell’endpoint |
+| **Il modulo non viene inviato** | Verifica la configurazione e le regole di convalida dell’azione di invio |
+| **Errori di convalida non visualizzati** | Verifica le impostazioni di convalida del campo e il posizionamento del messaggio di errore |
+| **Problemi di layout dei dispositivi mobili** | Rivedi le impostazioni di design responsive e del dimensionamento dei campi |
+| **Campi non visualizzati** | Verifica la logica condizionale e le regole di visibilità |
+| **Errori durante l’importazione** | Verifica la compatibilità del formato del file e i limiti di dimensione |
+| **Problemi relativi alle prestazioni** | Ottimizza il conteggio dei campi e rimuovi le convalide non necessarie |
+| **Problemi di accessibilità** | Rivedi le etichette dei campi, gli attributi ARIA e l’ordine delle schede |
 
-**Hai ancora bisogno di aiuto?** Digitare `/help` seguito da una domanda specifica o contattare l&#39;amministratore di sistema per assistenza tecnica.
+**Hai ancora bisogno di aiuto?** Digita `/help` seguito da una domanda specifica o contatta l’amministratore di sistema per richiedere assistenza tecnica.
 
 ## Problemi di accesso e autenticazione
 
@@ -55,178 +55,177 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
 
 - Interfaccia di Forms Experience Builder non visibile
 - &quot;Accesso negato&quot; o messaggi di errore simili
-- Icona Forms Experience Builder mancante nell’editor
+- Icona di Forms Experience Builder non presente nell’editor
 
 **Soluzioni:**
 
-1. **Verifica iscrizione programma di accesso anticipato**
-   - Conferma di essere stato approvato per il programma di adozione anticipata
-   - Verifica che la richiesta sia stata inviata dall’e-mail ufficiale di lavoro
-   - Contattare `aem-forms-ea@adobe.com` se l&#39;accesso è ancora in sospeso
+1. **Verifica l’iscrizione al programma di accesso anticipato**
+   - Conferma di avere ricevuto l’approvazione per partecipare al programma di adozione anticipata.
+   - Verifica che la richiesta sia stata inviata dal tuo indirizzo e-mail ufficiale di lavoro.
+   - Se l’accesso risulta ancora in sospeso, contatta `aem-forms-ea@adobe.com`.
 
-2. **Verifica configurazione ambiente**
-   - Verifica che AEM Forms sia abilitato per il tuo ambiente
-   - Assicurati di utilizzare un browser supportato (Chrome, Firefox, Safari, Edge)
-   - Cancella cache del browser e cookie
-   - Disattiva le estensioni del browser che potrebbero interferire
+2. **Verifica la configurazione dell’ambiente**
+   - Verifica che AEM Forms sia abilitato per il tuo ambiente.
+   - Assicurati di utilizzare un browser supportato (Chrome, Firefox, Safari, Edge).
+   - Cancella la cache del browser e i cookie
+   - Disattiva eventuali estensioni del browser che potrebbero interferire
 
-3. **Verifica autorizzazioni utente**
-   - Conferma di disporre dei ruoli utente e delle autorizzazioni appropriati
-   - Rivolgiti all’amministratore di sistema per informazioni sui diritti di accesso
-   - Verifica di aver effettuato l’accesso con l’account corretto
+3. **Verifica le autorizzazioni utente**
+   - Conferma di disporre dei ruoli utente e delle autorizzazioni appropriati.
+   - Rivolgiti all’amministratore di sistema per informazioni sui diritti di accesso.
+   - Verifica di aver effettuato l’accesso con l’account corretto.
 
 ### Problemi di caricamento dell’interfaccia
 
-**Sintomi:**
+**Sintomi**
 
 - Interfaccia vuota o parzialmente caricata
-- Spinning degli indicatori di caricamento non completati
+- Indicatori di caricamento che continuano a ruotare
 - Errori JavaScript nella console del browser
 
 **Soluzioni:**
 
 1. **Risoluzione dei problemi del browser**
-   - Aggiorna la pagina (Ctrl+F5 o Comando+Maiusc+R)
-   - Prova con un browser diverso o in modalità incognito/privata
-   - Controlla la disponibilità di aggiornamenti del browser e installalo se disponibile
-   - Disattiva temporaneamente ad blocker e estensioni della privacy
+   - Aggiorna la pagina (Ctrl+F5 o Comando+Maiusc+R).
+   - Prova con un altro browser o in modalità incognito/privata.
+   - Controlla se è disponibile un aggiornamento del browser e, se disponibile, installalo.
+   - Disabilita temporaneamente ad blocker ed estensioni di privacy.
 
 2. **Connettività di rete**
-   - Verifica connessione Internet stabile
-   - Controlla se il firewall aziendale sta bloccando i domini richiesti
-   - Se possibile, prova con una connessione di rete diversa
-   - Contattare il supporto IT per problemi di configurazione della rete
+   - Verifica che la connessione Internet sia stabile.
+   - Controlla se il firewall aziendale blocca i domini richiesti.
+   - Se possibile, prova con una connessione di rete diversa.
+   - Per problemi di configurazione della rete, contatta il supporto IT.
 
 3. **Problemi relativi a cache e archiviazione**
-   - Cancella cache del browser e archiviazione locale
-   - Ripristina impostazioni predefinite browser
-   - Controllare lo spazio disponibile sul dispositivo
-   - Prova ad accedere da un altro dispositivo
+   - Cancella la cache del browser e l’archiviazione locale.
+   - Ripristina le impostazioni predefinite del browser.
+   - Controlla lo spazio disponibile sul dispositivo.
+   - Prova ad accedere da un altro dispositivo.
 
-## Problemi di comando e interazione
+## Problemi di comandi e interazione
 
-### Comandi barra non funzionanti
+### Comandi con barra non funzionanti
 
-**Sintomi:**
+**Sintomi**
 
-- `/create-form` o altri comandi barra non riconosciuti
-- Nessun suggerimento di completamento automatico visualizzato
+- `/create-form` o altri comandi con barra non riconosciuti
+- Non vengono visualizzati i suggerimenti di completamento automatico
 - I comandi generano messaggi di errore
 
 **Soluzioni:**
 
-1. **Verifica della sintassi del comando**
-   - Verificare che il formato del comando sia corretto: `/command-name description`
-   - Verificare la presenza di errori di battitura nei nomi dei comandi
+1. **Verifica la sintassi del comando**
+   - Verifica che il formato del comando sia corretto: `/command-name description`
+   - Verifica la presenza di errori di battitura nei nomi dei comandi.
    - Utilizza il linguaggio naturale come alternativa: &quot;Crea un modulo di contatto&quot;
-   - Prova `/help` a verificare la disponibilità del comando
+   - Prova `/help` per verificare se il comando è disponibile.
 
-2. **Comandi specifici del contesto**
-   - Verifica di essere nel contesto dell’editor corretto (Universal Editor vs Adaptive Forms Editor)
-   - Alcuni comandi funzionano solo in ambienti specifici
-   - Controlla il riferimento del comando per i requisiti di contesto
+2. **Comandi specifici per il contesto**
+   - Verifica di essere nel contesto dell’editor corretto (editor universale o editor di moduli adattivi).
+   - Alcuni comandi funzionano solo in ambienti specifici.
+   - Consulta la documentazione di riferimento dei comandi per verificare i requisiti di contesto.
 
 3. **Approcci alternativi**
-   - Utilizza il linguaggio naturale invece dei comandi barra
-   - Suddividere comandi complessi in richieste più semplici e di dimensioni ridotte
-   - Prova a creare moduli in modo dettagliato invece di eseguire un singolo comando complesso
+   - Utilizza il linguaggio naturale invece dei comandi slash
+   - Suddividi i comandi complessi in richieste più semplici e di dimensioni ridotte
+   - Prova a creare i moduli passo dopo passo invece di eseguire un unico comando complesso
 
-### Riferimenti campo non funzionanti
+### Riferimenti ai campi non funzionanti
 
 **Sintomi:**
 
-- `@fieldName` riferimenti non riconosciuti
-- Messaggi di errore su campi sconosciuti
-- Modifiche dei campi non applicate correttamente
+- Riferimenti `@fieldName` non riconosciuti
+- Messaggi di errore relativi a campi sconosciuti
+- Le modifiche apportate ai campi non si applicano correttamente
 
 **Soluzioni:**
 
-1. **Verifica nome campo**
-   - Controllare l&#39;ortografia esatta dei nomi di campo (distinzione maiuscole/minuscole)
-   - Assicurati che il campo esista prima di farvi riferimento
-   - Utilizza il nome esatto del campo come creato, non l’etichetta visualizzata
+1. **Verifica del nome del campo**
+   - Controlla l’ortografia esatta dei nomi dei campi (distinzione maiuscole/minuscole)
+   - Assicurati che il campo sia presente prima di farvi riferimento
+   - Utilizza il nome preciso del campo come creato, non l’etichetta visualizzata
    - Verifica le convenzioni di denominazione dei campi (camelCase, snake_case, ecc.)
 
-2. **Sintassi di riferimento campo**
+2. **Sintassi di riferimento ai campi**
    - Usa la sintassi `@fieldName` corretta senza spazi
-   - Evita caratteri speciali nei riferimenti di campo
-   - Verifica la presenza di caratteri invisibili o problemi di formattazione
-   - Provare a ricreare manualmente il riferimento campo
+   - Evita caratteri speciali nei riferimenti ai campi
+   - Verifica l’eventuale presenza di caratteri invisibili o problemi di formattazione
+   - Prova a ricreare manualmente il riferimento al campo
 
-3. **Riferimenti campo debug**
-   - Elenca prima tutti i campi esistenti: &quot;Mostra tutti i campi modulo correnti&quot;
+3. **Debug dei riferimenti ai campi**
+   - Elenca prima tutti i campi esistenti: &quot;Mostra tutti i campi dei moduli correnti&quot;
    - Crea campi prima di farvi riferimento nelle regole
-   - Utilizzare nomi di campo semplici senza caratteri complessi
-   - Riferimenti di campo di prova uno alla volta
+   - Utilizza nomi di campo semplici senza caratteri complessi
+   - Prova i riferimenti ai campi uno alla volta
 
 ## Problemi relativi alla creazione e alla progettazione dei moduli
 
-### Creazione modulo non prevista
+### Il modulo non viene creato come previsto
 
 **Sintomi:**
 
-- Campi richiesti mancanti nel modulo generato
+- Il modulo generato non presenta i campi richiesti
 - Layout o tipi di campo non corretti
 - La struttura del modulo non corrisponde alla descrizione
 
 **Soluzioni:**
 
 1. **Migliora la specificità del prompt**
-   - Descrivere in modo più dettagliato i moduli
-   - Specificare i tipi di campo esatti e i requisiti di convalida
-   - Includi preferenze di layout e requisiti di esperienza utente
-   - Suddividere moduli complessi in richieste incrementali di dimensioni inferiori
+   - Descrivi i moduli in modo più dettagliato
+   - Specifica i tipi di campo e i requisiti di convalida esatti
+   - Includi preferenze di layout e requisiti di user experience
+   - Suddividi i moduli complessi in richieste incrementali e di dimensioni ridotte
 
-2. **Approccio di sviluppo iterativo**
+2. **Approccio allo sviluppo iterativo**
    - Inizia con la struttura di base del modulo
-   - Aggiungere campi e funzionalità in modo incrementale
-   - Verificare ogni aggiunta prima di procedere
-   - Ottimizzare la conversazione anziché una singola richiesta complessa
+   - Aggiungi campi e funzionalità in modo incrementale
+   - Verifica ogni aggiunta prima di procedere
+   - Ottimizza la conversazione anziché una singola richiesta complessa
 
-3. **Esempio di prompt migliorati**
+3. **Esempio di prompt migliori**
 
    Invece di:
 
        Crea un modulo per i clienti
    
-   Usa:
+   Utilizza:
 
-       Crea un modulo contatto cliente con:
+       Crea un modulo di contatto con il cliente con:
        - Nome completo (campo di testo obbligatorio)
-       - Indirizzo e-mail (obbligatorio con convalida)
+       - Indirizzo e-mail (obbligatorio con la convalida)
        - Numero di telefono (facoltativo, formattato)
        - Messaggio (area di testo richiesta, massimo 500 caratteri)
-       - Invia a notifica e-mail
+       - Invio alla notifica e-mail
    
-
-### Problemi di layout e stile
+### Problemi di layout e applicazione dello stile
 
 **Sintomi:**
 
-- Il modulo appare danneggiato su dispositivi mobili
-- Spaziatura o allineamento non coerenti
+- Il modulo appare tagliato sui dispositivi mobili
+- Spaziatura o allineamento non coerente
 - Campi non visualizzati correttamente
 - Gerarchia visiva insufficiente
 
 **Soluzioni:**
 
-1. **Velocità di risposta mobile**
-   - Richiedi ottimizzazioni specifiche per dispositivi mobili: &quot;Rendi questo modulo compatibile con i dispositivi mobili&quot;
-   - Specificare i requisiti di progettazione reattiva
-   - Test su dispositivi mobili effettivi
+1. **Reattività sui dispositivi mobili**
+   - Richiedere ottimizzazioni specifiche per dispositivi mobili: “Rendi questo modulo adatto ai dispositivi mobili”
+   - Specifica i requisiti di progettazione dinamica
+   - Esegui test su dispositivi mobili effettivi
    - Utilizzare layout a colonna singola per dispositivi mobili
 
-2. **Miglioramenti layout**
-   - Specifica i requisiti di layout: &quot;Disponi i campi indirizzo in due colonne&quot;
-   - Richiedi uno stile specifico: &quot;Usa colori professionali e tipografia pulita&quot;
+2. **Miglioramenti del layout**
+   - Specificare i requisiti di layout: “Disponi i campi indirizzo in due colonne”
+   - Richiedere uno stile specifico: “Utilizza colori professionali e composizione tipografica pulita”
    - Specificare le esigenze di spaziatura e allineamento
-   - Richiedi conformità accessibilità
+   - Richiedere conformità all’accessibilità
 
-3. **Coerenza marchio**
+3. **Coerenza del brand**
    - Preparare le linee guida per il brand prima della creazione del modulo
    - Includere codici colore e font specifici nelle richieste
-   - Utilizza uno stile coerente in tutti i moduli
-   - Creare modelli di marchio da riutilizzare
+   - Utilizzare uno stile coerente in tutti i moduli
+   - Creare modelli di brand da riutilizzare
 
 ### Problemi di logica condizionale
 
@@ -235,29 +234,29 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
 - Le regole non vengono attivate come previsto
 - Campi visualizzati/nascosti in modo errato
 - Logica di convalida non funzionante
-- Errore di regole business complesse
+- Errore nelle regole di business complesse
 
 **Soluzioni:**
 
-1. **Semplificazione regole**
+1. **Semplificazione delle regole**
    - Suddividere regole complesse in condizioni più semplici e più piccole
    - Testare ogni regola singolarmente prima di combinarla
-   - Utilizza condizioni chiare e specifiche: &quot;Mostra @spouseInfo quando @maritalStatus è uguale a &quot;Sposato&quot;&quot;
-   - Evita logica nidificata o eccessivamente complessa inizialmente
+   - Utilizzare condizioni chiare e specifiche: “Mostra @spouseInfo quando @maritalStatus è uguale a “Sposato””
+   - Evitare inizialmente la logica nidificata o eccessivamente complessa
 
-2. **Test e debug delle regole**
-   - Test di tutti i possibili percorsi e scenari utente
+2. **Debug e test delle regole**
+   - Testare tutti i possibili percorsi e scenari utente
    - Verificare i nomi e i valori dei campi nelle condizioni
-   - Verifica la sensibilità alle maiuscole/minuscole nelle condizioni della regola
-   - Utilizza la modalità di debug per tracciare l’esecuzione della regola
+   - Verificare la differenziazione tra maiuscole e minuscole nelle condizioni della regola
+   - Utilizzare la modalità di debug per tracciare l’esecuzione della regola
 
 3. **Implementazione della logica di business**
-   - Documentare chiaramente i requisiti aziendali prima dell&#39;implementazione
-   - Implementa le regole in modo incrementale e testa ogni passaggio
-   - Fornire un feedback chiaro agli utenti quando vengono attivate le regole
-   - Gestire casi edge e scenari di eccezione
+   - Documentare chiaramente i requisiti aziendali prima dell’implementazione
+   - Implementare le regole in modo incrementale e testare ogni passaggio
+   - Fornire un feedback chiaro all’utente quando vengono attivate le regole
+   - Gestire casi limite e scenari di eccezione
 
-## Problemi relativi all’importazione e alla conversione dei file
+## Problemi relativi alla conversione e all’importazione dei file
 
 ### Errori di importazione PDF
 
@@ -270,213 +269,213 @@ Questa guida completa alla risoluzione dei problemi consente di identificare, di
 
 **Soluzioni:**
 
-1. **Formato e dimensioni file**
-   - Assicurati che i file PDF siano inferiori a 10 MB
-   - Utilizza PDF di alta qualità basati su testo (immagini non acquisite)
-   - Verificare che PDF non sia crittografato o protetto da password
-   - Prova a convertire PDF in formato immagine se l’estrazione del testo non riesce
+1. **Formato e dimensioni del file**
+   - Assicurarsi che i file PDF siano inferiori a 10 MB
+   - Utilizza PDF di alta qualità basati su testo (immagini non scansionate)
+   - Verifica che il file PDF non sia crittografato o protetto da password
+   - Prova a convertire il file PDF in formato immagine se non è possibile estrarre il testo
 
-2. **Ottimizzazione qualità PDF**
-   - Utilizzare i PDF con campi modulo chiari e ben definiti
-   - Garantire un buon contrasto e testo leggibile
-   - Evitare layout complessi o elementi sovrapposti
+2. **Ottimizzazione della qualità dei file PDF**
+   - Utilizza i file PDF con campi modulo chiari e ben definiti
+   - Garantisci un buon contrasto e testo leggibile
+   - Evita layout complessi o elementi sovrapposti
    - Fornisci contesto aggiuntivo nella richiesta di conversione
 
-3. **Miglioramento conversione**
-   - Descrizione dettagliata della struttura di modulo prevista
-   - Specificare i tipi di campo e i requisiti di convalida
-   - Miglioramenti specifici per le richieste: &quot;Aggiungere capacità di risposta e convalida per dispositivi mobili&quot;
-   - Revisione e perfezionamento manuale dei moduli convertiti
+3. **Miglioramento della conversione**
+   - Descrivi in modo dettagliato la struttura del modulo prevista
+   - Specifica i tipi di campo e i requisiti di convalida
+   - Richiedi miglioramenti specifici: &quot;Aggiungere capacità di risposta e convalida per dispositivi mobili&quot;
+   - Rivedi e perfeziona manualmente i moduli convertiti
 
 ### Problemi di conversione di immagini e schermate
 
 **Sintomi:**
 
-- Riconoscimento campo insufficiente dalle immagini
+- Riconoscimento dei campi non sufficiente dalle immagini
 - Layout o tipi di campo non corretti
-- Elementi modulo mancanti
-- Errori o timeout di conversione
+- Elementi del modulo mancanti
+- Timeout o errori di conversione
 
 **Soluzioni:**
 
 1. **Requisiti di qualità delle immagini**
-   - Usare immagini ad alta risoluzione (minimo 300 DPI)
-   - Assicurare una buona illuminazione e un buon contrasto
-   - Evitare ombre, abbagliamenti o distorsioni
+   - Usa immagini ad alta risoluzione (minimo 300 DPI)
+   - Assicura una buona illuminazione e un buon contrasto
+   - Evita ombre, bagliori o distorsioni
    - Ritaglia le immagini per concentrarti solo sul contenuto del modulo
 
 2. **Formati immagine ottimali**
-   - Utilizzare i formati PNG o JPG per ottenere risultati ottimali
+   - Utilizza i formati PNG o JPG per ottenere risultati ottimali
    - Evita GIF o immagini compresse di bassa qualità
    - Assicurati che il testo sia chiaramente leggibile nell’immagine
-   - Se necessario, prova con orientamenti immagine diversi
+   - Se necessario, prova a orientare l’immagine in modo diverso
 
-3. **Guida alla conversione**
-   - Fornire descrizioni dettagliate della struttura del modulo
-   - Specificare in modo esplicito i tipi di campo e i requisiti
+3. **Indicazioni per la conversione**
+   - Fornisci descrizioni dettagliate della struttura del modulo
+   - Specifica in modo esplicito i tipi di campo e i requisiti
    - Richiedi miglioramenti specifici durante la conversione
-   - Prepararsi a eseguire regolazioni manuali dopo la conversione
+   - Preparati ad apportare delle modifiche manuali dopo la conversione
 
 ## Problemi di integrazione e invio
 
-### Errori di invio modulo
+### Errori di invio del modulo
 
 **Sintomi:**
 
-- Invio di Forms non riuscito
+- Invio dei moduli non riuscito
 - Messaggi di errore durante l’invio
 - I dati non raggiungono le destinazioni previste
 - Errori di timeout durante l’invio
 
 **Soluzioni:**
 
-1. **Configurazione azione invio**
+1. **Configurazione delle azioni di invio**
    - Verifica che l’azione di invio sia configurata correttamente
-   - Verifica endpoint API e credenziali di autenticazione
-   - Test con invio di e-mail semplice
-   - Convalidare i requisiti del formato dati
+   - Verifica gli endpoint API e credenziali di autenticazione
+   - Effettua un test con l’invio di un’e-mail semplice
+   - Convalida i requisiti del formato dati
 
 2. **Rete e connettività**
-   - Verificare la connettività Internet e la stabilità della rete
-   - Verificare che le impostazioni del firewall consentano l&#39;invio di moduli
-   - Test da diverse connessioni di rete
-   - Verifica la presenza di proxy aziendali o restrizioni di sicurezza
+   - Verifica la connessione a Internet e la stabilità della rete
+   - Verifica che le impostazioni del firewall consentano l&#39;invio di moduli.
+   - Esegui test da altre connessioni di rete.
+   - Verifica la presenza di proxy aziendali o restrizioni di sicurezza.
 
 3. **Problemi di convalida dei dati**
-   - Assicurati che tutti i campi obbligatori siano completati
-   - Verificare che i formati dei dati corrispondano ai requisiti API
-   - Verifica la presenza di caratteri speciali o problemi di codifica
-   - Esegui prima il test con set di dati minimo
+   - Assicurati che tutti i campi obbligatori siano completati.
+   - Verifica che i formati dei dati corrispondano ai requisiti API.
+   - Verifica che non vi siano caratteri speciali o problemi di codifica.
+   - Esegui prima un test con un set di dati minimo.
 
 ### Problemi di integrazione API
 
-**Sintomi:**
+**Sintomi**
 
 - Gli endpoint REST API non rispondono
 - Errori di autenticazione
-- Mancata corrispondenza formato dati
+- Formato dati non corrispondente
 - Timeout o errori di integrazione
 
 **Soluzioni:**
 
-1. **Verifica configurazione API**
-   - Verificare che gli URL degli endpoint API siano corretti e accessibili
-   - Verifica credenziali e autorizzazioni di autenticazione
-   - Test degli endpoint API in modo indipendente utilizzando strumenti come Postman
-   - Verifica che l’API accetti il formato dati corretto (JSON, XML, ecc.)
+1. **Verifica della configurazione API**
+   - Verifica che gli URL degli endpoint API siano corretti e accessibili.
+   - Verifica le credenziali e le autorizzazioni di autenticazione.
+   - Esegui un test degli endpoint API in modo indipendente con strumenti come Postman.
+   - Verifica che l’API accetti il formato dati corretto (JSON, XML, ecc.).
 
 2. **Problemi di mappatura dei dati**
-   - Assicurati che i nomi dei campi modulo corrispondano ai requisiti dei parametri API
-   - Verifica la presenza di campi obbligatori che potrebbero essere mancanti
-   - Verificare la compatibilità del tipo di dati (stringhe, numeri, date)
-   - Test con dati di esempio per identificare i problemi di mappatura
+   - Assicurati che i nomi dei campi modulo corrispondano ai requisiti dei parametri API.
+   - Verifica che tutti i campi obbligatori siano presenti.
+   - Verifica la compatibilità del tipo di dati (stringhe, numeri, date).
+   - Esegui test con dati di esempio per identificare eventuali problemi di mappatura.
 
 3. **Gestione e debug degli errori**
-   - Abilita registrazione dettagliata degli errori per le chiamate API
-   - Controllare i codici di risposta API e i messaggi di errore
-   - Implementare la logica dei nuovi tentativi per errori temporanei
-   - Fornisci opzioni di fallback per gli utenti quando l’API non riesce
+   - Abilita la registrazione dettagliata degli errori per le chiamate API.
+   - Controlla i messaggi di errore e i codici di risposta API.
+   - Implementa la logica per nuovi tentativi in caso di errori temporanei.
+   - Fornisci opzioni di fallback per gli utenti quando l’API non riesce.
 
-### Problemi di integrazione e-mail
+### Risoluzione dei problemi di integrazione
 
-**Sintomi:**
+**Sintomi**
 
 - E-mail di conferma non inviate
-- E-mail che vanno in cartelle di posta indesiderata
-- Formattazione e-mail errata
-- Dati modulo mancanti nelle e-mail
+- E-mail in cartelle di posta indesiderata
+- E-mail con formattazione errata
+- E-mail prive di dati modulo
 
 **Soluzioni:**
 
-1. **Configurazione e-mail**
-   - Verificare che gli indirizzi di posta elettronica siano formattati correttamente
-   - Verifica impostazioni SMTP e autenticazione
-   - Test con indirizzi e-mail semplici
-   - Verifica autorizzazioni e quote del server e-mail
+1. **Configurazione delle e-mail**
+   - Verifica che gli indirizzi e-mail siano formattati correttamente.
+   - Verifica le impostazioni SMTP e l’autenticazione
+   - Esegui un test con indirizzi e-mail semplici.
+   - Verifica le autorizzazioni e le quote del server e-mail.
 
-2. **Ottimizzazione recapito e-mail**
-   - Utilizza intestazioni e-mail e informazioni sul mittente corrette
-   - Evita parole di attivazione spam nelle righe dell’oggetto
-   - Includi meccanismi di annullamento iscrizione corretti
-   - Testare la consegna e-mail a diversi provider
+2. **Ottimizzazione della consegna e-mail**
+   - Assicurati che le intestazioni e-mail e le informazioni sul mittente siano corrette.
+   - Evita di inserire nell’oggetto parole che potrebbero attivare regole anti-spam
+   - Includi meccanismi corretti per l’annullamento dell’iscrizione.
+   - Esegui un test della consegna e-mail verso altri provider.
 
-3. **Contenuto e formattazione**
-   - Verificare che i dati del modulo siano formattati correttamente nelle e-mail
-   - Verifica la presenza di caratteri speciali o problemi di codifica
-   - Testare modelli e-mail con varie combinazioni di dati
+3. **Contenuti e formattazione**
+   - Verifica che i dati del modulo siano formattati correttamente nelle e-mail.
+   - Verifica che non vi siano caratteri speciali o problemi di codifica.
+   - Testa modelli di e-mail con varie combinazioni di dati
    - Assicurati che il contenuto delle e-mail sia accessibile e leggibile
 
 ## Problemi relativi a prestazioni e caricamento
 
-### Caricamento modulo lento
+### Caricamento lento del modulo
 
 **Sintomi:**
 
-- Il caricamento iniziale di Forms richiede molto tempo
+- Il caricamento iniziale di dei moduli richiede molto tempo
 - Interazioni utente lente
-- Timeout durante le operazioni del modulo
+- Timeout durante le operazioni nel modulo
 - Prestazioni scadenti sui dispositivi mobili
 
 **Soluzioni:**
 
-1. **Ottimizzazione modulo**
-   - Riduzione del numero di campi e della complessità
-   - Implementare il caricamento lento per le sezioni non critiche
-   - Ottimizzare immagini e risorse per la distribuzione web
-   - Rimuovere le regole di convalida o la logica non necessarie
+1. **Ottimizzazione del modulo**
+   - Riduci il numero di campi e la complessità
+   - Implementa il caricamento lento per le sezioni non critiche
+   - Ottimizza immagini e risorse per la distribuzione sul web
+   - Rimuovi le regole di convalida o la logica non necessarie
 
 2. **Ottimizzazione di browser e dispositivi**
-   - Cancella cache del browser e file temporanei
-   - Chiudere le schede e le applicazioni del browser non necessarie
-   - Controllare la memoria e lo storage del dispositivo disponibili
-   - Prova diversi browser per il confronto delle prestazioni
+   - Cancella la cache del browser e i file temporanei
+   - Chiudi le applicazioni e le schede del browser non necessarie
+   - Controlla l’archiviazione e la memoria del dispositivo disponibili
+   - Prova browser diversi per il confronto delle prestazioni
 
-3. **Ottimizzazione rete**
-   - Verifica con diverse connessioni di rete
-   - Verificare la presenza di congestione di rete o limitazioni della larghezza di banda
-   - Se possibile, utilizzare la connessione cablata anziché WiFi
-   - Contattare il supporto IT per problemi di prestazioni della rete
+3. **Ottimizzazione della rete**
+   - Esegui il test con diverse connessioni di rete
+   - Verifica la presenza di congestione di rete o di limitazioni della larghezza di banda
+   - Se possibile, utilizza la connessione cablata anziché il WiFi
+   - Contatta il supporto IT per problemi relativi alle prestazioni della rete
 
 ### Problemi relativi alle prestazioni di convalida
 
 **Sintomi:**
 
 - Risposte di convalida lente
-- Visualizzazione messaggio di errore ritardato
+- Visualizzazione ritardata dei messaggi di errore
 - Blocco del modulo durante la convalida
 - Errori di timeout durante la convalida del campo
 
 **Soluzioni:**
 
-1. **Ottimizzazione convalida**
-   - Riduzione della frequenza di convalida in tempo reale
-   - Implementazione del debug per le chiamate di convalida
-   - Semplificare regole di convalida complesse
+1. **Ottimizzazione della convalida**
+   - Riduci la frequenza di convalida in tempo reale
+   - Implementa il debouncing per le chiamate di convalida
+   - Semplifica le regole di convalida complesse
    - Se possibile, utilizza la convalida lato client
 
-2. **Semplificazione regole**
-   - Suddividere la convalida complessa in regole più piccole
-   - Rimuovere le convalide tra campi non necessarie
-   - Ottimizzare la logica condizionale per le prestazioni
-   - Risultati della convalida della cache, se appropriato
+2. **Semplificazione delle regole**
+   - Suddividi la convalida complessa in regole più semplici
+   - Rimuovi le convalide tra campi non necessarie
+   - Ottimizza la logica condizionale per le prestazioni
+   - Memorizza nella cache i risultati della convalida, se possibile
 
-3. **Miglioramenti esperienza utente**
-   - Fornire feedback immediato per convalide semplici
+3. **Miglioramenti della user experience**
+   - Fornisci feedback immediati per assicurare convalide semplici
    - Utilizza la convalida progressiva invece del tempo reale per le regole complesse
    - Mostra gli indicatori di caricamento durante i processi di convalida
-   - Consenti agli utenti di continuare durante i processi di convalida in background
+   - Consenti agli utenti di continuare a lavorare in background durante i processi di convalida
 
-## Risoluzione avanzata dei problemi
+## Risoluzione dei problemi avanzata
 
 ### Modalità di debug e diagnostica
 
-**Abilita informazioni di debug**
+**Abilita le informazioni di debug**
 
-Utilizzare queste istruzioni per ottenere informazioni più dettagliate sui problemi relativi ai moduli:
+Utilizza questi prompt per ottenere informazioni più dettagliate sui problemi relativi ai moduli:
 
-    Abilita la modalità di debug per identificare i problemi relativi all&#39;invio dei moduli e alla convalida dei campi
+    Abilita la modalità di debug per identificare i problemi relativi all’invio dei moduli e alla convalida dei campi
     
-    Analizza gli errori dei moduli: controlla le regole di convalida, le risposte API e i pattern di input dell&#39;utente
+    Analizza gli errori dei moduli: controlla le regole di convalida, le risposte API e i pattern di input dell’utente
     
     Mostra informazioni dettagliate sulla struttura del modulo e sulla configurazione dei campi
 
@@ -484,60 +483,60 @@ Utilizzare queste istruzioni per ottenere informazioni più dettagliate sui prob
 
 **Approccio al debug sistematico**
 
-1. **Isolare il problema**
-   - Test con configurazione minima del modulo
-   - Rimuovere temporaneamente le feature complesse
-   - Test separato dei singoli componenti
+1. **Isola il problema**
+   - Esegui test con configurazione minima del modulo
+   - Rimuovi temporaneamente le funzionalità complesse
+   - Esegui test separati dei singoli componenti
    - Utilizza il processo di eliminazione per identificare la causa principale
 
 2. **Raccogli informazioni di diagnostica**
    - Verifica la presenza di errori JavaScript nella console del browser
-   - Rivedere richieste e risposte di rete
-   - Documenta i passaggi esatti per riprodurre il problema
-   - Raccogliere screenshot e messaggi di errore
+   - Rivedi le richieste e le risposte della rete
+   - Documenta i passaggi specifici per la riproduzione del problema
+   - Raccogli screenshot e messaggi di errore
 
-3. **Variabili di ambiente di prova**
-   - Prova browser e dispositivi diversi
-   - Eseguire test con account utente e autorizzazioni diversi
+3. **Esegui test delle variabili di ambiente**
+   - Utilizza browser e dispositivi diversi
+   - Esegui test con account utente e autorizzazioni diversi
    - Verifica in diversi ambienti di rete
-   - Confronta con moduli di lavoro o configurazioni
+   - Esegui il confronto con moduli di lavoro o configurazioni
 
 ### Analisi e monitoraggio dei registri
 
 **Debug della console del browser**
 
-1. Apri strumenti per sviluppatori browser (F12)
-2. Controlla la scheda della console per individuare eventuali errori JavaScript
-3. Controlla la scheda Rete per le richieste non riuscite
-4. Scheda Monitora prestazioni per operazioni lente
+1. Apri gli strumenti per sviluppatori di browser (F12)
+2. Verifica la presenza di errori JavaScript nella scheda Console
+3. Verifica la presenza di richieste non riuscite nella scheda Rete
+4. Controlla la scheda Prestazioni per la presenza di operazioni lente
 
-**Modelli di errore comuni**
+**Pattern di errori comuni**
 
 - **Errori CORS**: problemi di richieste tra origini diverse con integrazioni API
 - **Errori di autenticazione**: credenziali non valide o token scaduti
-- **Errori di convalida**: conflitti della regola di convalida del campo o errori di sintassi
-- **Timeout rete**: connessioni di rete lente o inaffidabili
+- **Errori di convalida**: conflitti della regola di convalida dei campi o errori di sintassi
+- **Timeout della rete**: connessioni di rete lente o inaffidabili
 
-## Ottenere ulteriore assistenza.
+## Ottenere ulteriore assistenza
 
 ### Risorse self-service
 
-**Sistema di assistenza predefinito**
+**Sistema di assistenza incorporato**
 
-- Usa il comando `/help` seguito da domande specifiche
-- Accedere all’aiuto contestuale nell’interfaccia di Forms Experience Builder
-- Rivedi attentamente i messaggi di errore per indicazioni specifiche
+- Utilizza il comando `/help` seguito da domande specifiche
+- Accedi alla guida contestuale nell’interfaccia di Forms Experience Builder
+- Rivedi attentamente i messaggi di errore per ottenere indicazioni specifiche
 - Consulta la [Guida introduttiva di Forms Experience Builder](forms-ai-assistant-getting-started.md)
 
-**Risorse di documentazione**
+**Risorse della documentazione**
 
-- [Prompt Library di Forms Experience Builder](ai-assistant-prompt-library.md)
+- [Libreria di prompt di Forms Experience Builder](ai-assistant-prompt-library.md)
 - [Best practice per Forms Experience Builder](aem-forms-ai-assistant-best-practices.md)
 - [Documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it)
 
 ### Escalation e supporto
 
-**Quando contattare il supporto tecnico**
+**Quando contattare il supporto**
 
 - I problemi persistono dopo aver provato le soluzioni documentate
 - Problemi a livello di sistema che interessano più utenti
@@ -547,31 +546,31 @@ Utilizzare queste istruzioni per ottenere informazioni più dettagliate sui prob
 **Informazioni da fornire**
 
 - Descrizione dettagliata del problema e passaggi da riprodurre
-- Schermate o registrazioni del problema
+- Schermate o registrazioni dello schermo relative al problema
 - Informazioni su browser e sistema
 - Messaggi di errore e registri della console
-- Dettagli di configurazione e integrazione del modulo
+- Dettagli di configurazione e integrazione dei moduli
 
 **Metodi di contatto**
 
 - Amministratore di sistema: per problemi di ambiente e accesso
-- Supporto tecnico: per problemi di integrazione e configurazione complessi
-- Programma di accesso in anteprima: `aem-forms-ea@adobe.com` per problemi specifici del programma
+- Assistenza tecnica: per problemi di integrazione e configurazione complessi
+- Programma di accesso anticipato: `aem-forms-ea@adobe.com` per problemi relativi al programma
 
 ### Community e condivisione delle conoscenze
 
-**Procedure consigliate per la risoluzione dei problemi**
+**Best practice per la risoluzione di problemi**
 
-- Soluzioni documentali per riferimenti futuri
-- Condividere con i membri del team gli approcci per la risoluzione dei problemi
-- Contribuire alla knowledge base organizzativa
-- Partecipare a community di utenti e forum
+- Documenta le soluzioni per farvi riferimento in futuro.
+- Condividi con i membri del team gli approcci che hanno consentito di risolvere problemi.
+- Contribuisci alla knowledge base della tua organizzazione.
+- Partecipa a community di utenti e forum.
 
 **Miglioramento continuo**
 
-- Esame periodico dei problemi e delle soluzioni comuni
-- Aggiornare le procedure di risoluzione dei problemi in base ai nuovi risultati
-- Sessioni di formazione e condivisione delle conoscenze
-- Feedback al team di prodotto per miglioramenti delle funzioni
+- Rivedi periodicamente i problemi e le soluzioni più comuni.
+- Aggiorna le procedure di risoluzione dei problemi in base ai nuovi risultati.
+- Organizza sessioni di formazione e condivisione delle conoscenze.
+- Fornisci feedback al team del prodotto a scopo di miglioramento delle funzioni.
 
-Questa guida alla risoluzione dei problemi viene continuamente aggiornata in base al feedback degli utenti e alle nuove funzionalità di Forms Experience Builder. Per informazioni aggiornate e risorse aggiuntive, consulta la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).
+Questa guida alla risoluzione dei problemi viene continuamente aggiornata in base al feedback ricevuto dagli utenti e alle nuove funzionalità di Forms Experience Builder. Per informazioni sempre aggiornate e risorse aggiuntive, consulta la [documentazione di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it).

@@ -9,14 +9,14 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '2390'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
 
 # Navigare nell’interfaccia dell’editor universale per AEM Forms
 
-L’[editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un’interfaccia visiva per la creazione di moduli AEM con Edge Delivery Services. Offre un&#39;esperienza di **What You See Is What You Get (WYSIWYG)** che mostra esattamente come i moduli appariranno agli utenti.
+L’[editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornisce un’interfaccia visiva per la creazione di moduli AEM con Edge Delivery Services. L’editor universale offre un’esperienza **WYSIWYG (What You See Is What You Get)** che mostra esattamente l’aspetto dei moduli per gli utenti.
 
 ![Panoramica sull’interfaccia dell’editor universale](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
@@ -345,7 +345,7 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 +++
 
-+++Strumenti basati sull’intelligenza artificiale
++++Strumenti basati sull’IA
 
 #### **Generare varianti**
 
@@ -383,7 +383,7 @@ Il **pannello Proprietà** (lato destro) è il centro di controllo per la creazi
 
 +++
 
-+++Strumenti Collaboration
++++Strumenti di collaborazione
 
 #### **Gestione attività**
 
@@ -464,7 +464,7 @@ Impara ad usare queste scelte rapide per creare moduli in modo più rapido ed ef
 
 ### **Problemi di interfaccia**
 
-+++Impossibile caricare gli elementi dell&#39;interfaccia
++++Impossibile caricare gli elementi dell’interfaccia
 
 **Problema:** i pulsanti della barra degli strumenti, il pannello delle proprietà o altri elementi dell’interfaccia non vengono visualizzati
 
@@ -477,7 +477,7 @@ Impara ad usare queste scelte rapide per creare moduli in modo più rapido ed ef
 
 +++
 
-+++I componenti non rispondono
++++Componenti non rispondono
 
 **Problema:** impossibile selezionare i componenti o il pannello Proprietà non viene aggiornato
 
@@ -490,7 +490,7 @@ Impara ad usare queste scelte rapide per creare moduli in modo più rapido ed ef
 
 +++
 
-+++Problemi relativi alla modalità Anteprima
++++Problemi relativi alla modalità anteprima
 
 **Problema:** la modalità anteprima non funziona correttamente o mostra errori
 
