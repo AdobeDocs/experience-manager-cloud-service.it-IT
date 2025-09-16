@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
+source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 40%
@@ -23,8 +23,6 @@ ht-degree: 40%
 AEM Forms Experience Builder sfrutta la potenza dell’intelligenza artificiale generativa per democratizzare e accelerare la creazione e l’aggiornamento delle esperienze di moduli digitali. Consentendo flussi di lavoro basati sulle finalità guidati dalle interazioni del linguaggio naturale, consente agli utenti di progettare, modificare e ottimizzare i moduli in modo semplice e rapido.
 
 Basato sulle moderne tecnologie web e su servizi di IA avanzati, Forms Experience Builder consente agli utenti tecnici e non tecnici di creare moduli sofisticati di livello professionale tramite interfacce conversazionali. Questo approccio rivoluzionario riduce il time-to-value da giorni ad ore, elimina gli ostacoli tecnici attraverso la semplicità dell’interfaccia e ridimensiona gli sforzi di modernizzazione dell’intero ecosistema di moduli.
-
-
 
 ## Funzionalità di base
 
@@ -54,7 +52,6 @@ Configura l’invio dei moduli da integrare con i sistemi aziendali esistenti:
 - **Automazione dei flussi di lavoro**: connessione a Power Automate e a Workfront Fusion
 - **Piattaforme di marketing**: integrazione diretta con Marketo per la gestione dei lead
 - **Flussi di lavoro di AEM**: sfrutta le funzionalità esistenti del flusso di lavoro di AEM
-
 
 ### &#x200B;2. Importazione e conversione intelligenti
 
