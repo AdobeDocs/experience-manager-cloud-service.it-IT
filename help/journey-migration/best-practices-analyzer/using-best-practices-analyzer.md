@@ -23,7 +23,7 @@ ht-degree: 37%
 
 La sezione seguente per contiene considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
+* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=it). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
 
 * BPA può essere eseguito solo dall&#39;utente **admin** o da un utente del gruppo **amministratori**.
 
@@ -286,8 +286,8 @@ Il valore di questa proprietà corrisponde alla durata della cache, in secondi. 
 
 BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, l&#39;account deve essere creato *prima dell&#39;installazione di* di BPA, eseguendo la procedura seguente:
 
-1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
+1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=it#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 
-2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
+2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
 
 3. Installa il pacchetto BPA tramite Gestione pacchetti nell’istanza AEM di origine. Questa azione aggiunge la necessaria modifica alla configurazione ServiceUserMapper per l’utente di servizio del sistema `repository-reader-service`.)
