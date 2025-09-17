@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5074e777c68c51955b9ad8f055e04067163b9596
+source-git-commit: 6dfcb0712f2c7208e100b52a290dcf4fbfe9d0e4
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6634'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -691,6 +691,7 @@ ht-degree: 98%
          + [Domande frequenti](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configurare domini personalizzati](/help/assets/configure-custom-domain.md)
          + [Ottimizzare le immagini](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [Creare URL personalizzati](/help/assets/vanity-urls.md)
    + Utilizzare la vista Risorse {#assets-view}
       + [Introduzione](/help/assets/assets-view-introduction.md)
       + [Guida introduttiva](/help/assets/get-started-assets-view.md)
