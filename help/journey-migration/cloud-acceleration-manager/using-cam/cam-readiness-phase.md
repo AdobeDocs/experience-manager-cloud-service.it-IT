@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Fase di preparazione in Cloud Acceleration Manager {#readiness-phase-cam}
 
-Dopo aver creato un progetto in Cloud Acceleration Manager (CAM), ora puoi avviare la valutazione dell’attuale implementazione Adobe Experience Manager (AEM) nella fase di preparazione.
+Dopo aver creato un progetto in Cloud Acceleration Manager (CAM), ora puoi avviare la valutazione dell’implementazione Adobe Experience Manager (AEM) corrente nella fase di preparazione.
 
 La fase di preparazione include:
 
@@ -38,7 +38,7 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
 >title="Rapporto di analisi di Best Practices"
->abstract="Il rapporto di analisi di Best Practice può essere caricato su CAM per fornire un’analisi sulla migrazione ad AEM as a Cloud Service."
+>abstract="Il rapporto di Best Practices Analyzer può essere caricato su CAM per fornire un’analisi sulla migrazione ad AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="Utilizzo di Best Practices Analyzer"
 
 1. Fai clic su **Rivedi** dalla scheda **Analisi delle best practice**.
@@ -53,7 +53,7 @@ Per passare alla fase di preparazione, segui la procedura riportata di seguito:
    1. Passa al portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) e scarica Best Practices Analyzer come file zip.
 
       >[!NOTE]
-      >Rivedi [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=it#imp-considerations) per scoprire come eseguire BPA.
+      >Rivedi [Utilizzo di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) per scoprire come eseguire BPA.
 
 1. In CAM, fai clic su **Ottieni chiave di caricamento**, in modo da ottenere la chiave utilizzata per configurare il sistema per caricare automaticamente i rapporti BPA direttamente in CAM.
 
@@ -84,7 +84,7 @@ Effettua le seguenti operazioni:
 
    ![Anteprima di stampa](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
-1. Nella nuova scheda con il report visualizzato in anteprima stampabile, fai clic su **Stampa** per stampare il report in formato PDF.
+1. Nella nuova scheda con il report visualizzato in un&#39;anteprima stampabile, fare clic su **Stampa** per stampare il report in formato PDF.
 
    >[!IMPORTANT]
    >
@@ -161,11 +161,11 @@ Puoi filtrare il rapporto in base alla rilevanza, al sottotipo o al conteggio.
 ![Filtri per report](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=it) per informazioni sulle categorie di risultati e sui livelli di importanza.
+>Consulta [Interpretazione del rapporto di Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) per informazioni sulle categorie di risultati e sui livelli di importanza.
 
 #### Valutazione delle best practice {#best-practices-assessment}
 
-L’opzione di valutazione delle best practice fornisce una valutazione dell’istanza AEM corrente e indicazioni sui passaggi successivi per adottare le best practice per l’AEM. Da questa scheda è possibile esaminare le informazioni riportate di seguito.
+L’opzione di valutazione delle best practice fornisce una valutazione dell’istanza AEM corrente e indicazioni sui passaggi successivi per adottare le best practice di AEM. Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 * Panoramica dell’istanza AEM
 * Componenti e modelli personalizzati
@@ -187,7 +187,7 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 ## Utilizzo della scheda Pianificazione e configurazione {#planning-setup}
 
-1. Fare clic su **Visualizza** dalla scheda **Pianificazione e installazione**. Questa scheda fornisce tutti i contenuti utili per pianificare e configurare la migrazione dell’AEM.
+1. Fare clic su **Visualizza** dalla scheda **Pianificazione e installazione**. Questa scheda fornisce tutti i contenuti utili per pianificare e configurare la migrazione AEM.
 
    ![Pianificazione E Installazione - Vista](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -222,4 +222,4 @@ Da questa scheda è possibile esaminare le informazioni riportate di seguito.
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=it).
+Dopo aver appreso come accedere a Cloud Acceleration Manager e come creare un progetto, puoi passare alla revisione del passaggio successivo nella [fase di implementazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).

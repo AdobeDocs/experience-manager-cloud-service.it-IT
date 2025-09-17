@@ -39,7 +39,7 @@ I metadati di base quali titolo, descrizione e data di caricamento sono disponib
 
 ## Aggiornare i metadati {#update-metadata}
 
-Una volta che l’amministratore ha configurato il modulo metadati, è possibile aggiornare manualmente gli altri campi. Potrebbe essere utile modificare tale impostazione, in quanto viene letta solo in base al modulo di metadati predefinito.
+Una volta che l’amministratore ha configurato il modulo metadati, è possibile aggiornare manualmente gli altri campi. Potrebbe essere utile modificare tale impostazione, in quanto viene letta solo in base al modulo metadati predefinito.
 
 ## Tag avanzati {#smart-tags}
 
@@ -63,16 +63,16 @@ Dalla sezione [!UICONTROL Tag avanzati] puoi anche rimuovere i tag aggiunti auto
 
 I tag possono anche essere nidificati in una gerarchia per supportare relazioni come categoria e sottocategoria. Se devi inserire dei tag gerarchici, questi vengono facilmente gestiti dall’amministratore nella sezione [!UICONTROL Gestione tassonomia] delle [!UICONTROL Impostazioni]. Puoi creare un set regolamentato di spazi dei nomi e tag a cui tutti gli utenti possono accedere per l’utilizzo durante la descrizione del contenuto. Solo gli amministratori possono impostare gerarchie di tag nella [!UICONTROL Gestione tassonomia] garantendo che i valori siano controllati e utilizzati in modo coerente.
 
-## Configurare i moduli di metadati {#metadata-forms}
+## Configurare i moduli metadati {#metadata-forms}
 
 >[!CONTEXTUALHELP]
 >id="assets_metadata_forms"
->title="Moduli di metadati"
->abstract="[!DNL Experience Manager Assets] fornisce molti campi di metadati standard per impostazione predefinita. Le organizzazioni hanno l’esigenza di aggiungere altri metadati e ulteriori campi di metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina Dettagli di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse."
+>title="Moduli metadati"
+>abstract="[!DNL Experience Manager Assets] fornisce molti campi di metadati standard per impostazione predefinita. Le organizzazioni hanno l’esigenza di aggiungere altri metadati e ulteriori campi di metadati, specifici per l’azienda. I moduli metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina Dettagli di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse."
 
-La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
+La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
 
-Puoi configurare i moduli di metadati per diversi tipi di risorse (diversi tipi MIME). Utilizza un modulo con lo stesso nome del tipo MIME del file. La vista Assets fa corrispondere automaticamente il tipo MIME delle risorse caricate al nome del modulo e aggiorna i metadati delle risorse caricate in base ai campi del modulo.
+Puoi configurare i moduli metadati per diversi tipi di risorse (diversi tipi MIME). Utilizza un modulo con lo stesso nome del tipo MIME del file. La vista Assets fa corrispondere automaticamente il tipo MIME delle risorse caricate al nome del modulo e aggiorna i metadati delle risorse caricate in base ai campi del modulo.
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
@@ -80,27 +80,27 @@ La vista Assets utilizza la seguente sequenza per cercare i nomi dei moduli di m
 
 Sottotipo MIME > Tipo MIME > Modulo `default` > Modulo fornito con il prodotto
 
-Ad esempio, se è presente un modulo di metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se non esiste un modulo di metadati denominato `PDF` o `pdf`, la visualizzazione di Assets corrisponde a quella del modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la visualizzazione Assets non trova un modulo di metadati corrispondente, cerca il modulo di metadati `default` per applicare ai documenti PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Assets applica a tutti i documenti PDF caricati i campi di metadati definiti nel modulo fornito con il prodotto.
+Ad esempio, se è presente un modulo metadati denominato `PDF` o `pdf`, i documenti PDF caricati contengono i campi di metadati definiti in tale modulo. Se non esiste un modulo di metadati denominato `PDF` o `pdf`, la visualizzazione di Assets corrisponde a quella del modulo di metadati denominato `application`. Se è presente un modulo metadati denominato `application`, i documenti PDF caricati contengono campi di metadati definiti nel modulo. Se la visualizzazione Assets non trova un modulo di metadati corrispondente, cerca il modulo di metadati `default` per applicare ai documenti PDF caricati i campi di metadati definiti nel modulo. Se nessuno di questi passaggi funziona, la vista Assets applica a tutti i documenti PDF caricati i campi di metadati definiti nel modulo fornito con il prodotto.
 Tuttavia, se desideri assegnare un modulo di metadati a una cartella [vedi](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
->Un nuovo modulo di metadati per un tipo di file specifico sostituisce interamente quello predefinito fornito da [!DNL Assets view]. Se elimini o rinomini un modulo di metadati, i campi di metadati predefiniti diventano di nuovo disponibili per le nuove risorse.
+>Un nuovo modulo metadati per un tipo di file specifico sostituisce interamente quello predefinito fornito da [!DNL Assets view]. Se elimini o rinomini un modulo metadati, i campi di metadati predefiniti diventano di nuovo disponibili per le nuove risorse.
 
-Per creare un modulo di metadati, effettua le seguenti operazioni:
+Per creare un modulo metadati, effettua le seguenti operazioni:
 
 1. Nella barra a sinistra, fai clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli metadati]**.
 
-   ![opzione Moduli di metadati nella barra laterale a sinistra](assets/metadata-forms-sidebar.png)
+   ![opzione Moduli metadati nella barra laterale a sinistra](assets/metadata-forms-sidebar.png)
 
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra nell’interfaccia utente.
 1. Assegna un nome al modulo, quindi fai clic su **[!UICONTROL Crea]**.
 1. Nella barra a destra, specifica un nome per la scheda in **[!UICONTROL Impostazioni]**.
 1. Da **[!UICONTROL Componenti]** nella barra a sinistra, trascina i componenti richiesti su una scheda del modulo. Trascina i componenti nella sequenza desiderata.
 
-   ![opzione oduli di metadati nella barra laterale a sinistra](assets/metadata-form-new.png)
+   ![opzione moduli metadati nella barra laterale a sinistra](assets/metadata-form-new.png)
 
-   *Figura: Interfaccia per la creazione di moduli di metadati, con opzioni che consentono di aggiungere componenti e visualizzare l’anteprima del modulo.*
+   *Figura: Interfaccia per la creazione di moduli metadati, con opzioni che consentono di aggiungere componenti e visualizzare l’anteprima del modulo.*
 
 1. Per ogni componente, specifica un nome nelle **[!UICONTROL Impostazioni]** nella barra a destra e una mappatura con le proprietà supportate.
 1. Se necessario, per un singolo componente, seleziona **[!UICONTROL Obbligatorio]** per rendere obbligatorio il campo di metadati e seleziona **[!UICONTROL Solo lettura]** per impedire la modifica del campo nella pagina [!UICONTROL Dettagli] della risorsa.
@@ -114,7 +114,7 @@ Guarda questo video per visualizzare la sequenza di passaggi:
 
 Dopo aver creato il modulo, quest’ultimo viene applicato automaticamente quando gli utenti caricano una risorsa del tipo MIME corrispondente.
 
-Per creare un nuovo modulo riutilizzandone uno esistente, seleziona un modulo di metadati e fai clic su **[!UICONTROL Copia]** nella barra degli strumenti, specifica un nome e fai clic su **[!UICONTROL Conferma]**. A questo punto puoi modificare il modulo di metadati. Quando modifichi un modulo, quest’ultimo viene utilizzato per le risorse caricate in seguito alla modifica. L’operazione non modifica le risorse esistenti.
+Per creare un nuovo modulo riutilizzandone uno esistente, seleziona un modulo metadati e fai clic su **[!UICONTROL Copia]** nella barra degli strumenti, specifica un nome e fai clic su **[!UICONTROL Conferma]**. A questo punto puoi modificare il modulo metadati. Quando modifichi un modulo, quest’ultimo viene utilizzato per le risorse caricate in seguito alla modifica. L’operazione non modifica le risorse esistenti.
 
 ### Componenti proprietà {#property-components}
 
@@ -137,21 +137,21 @@ Di seguito è riportata una panoramica di ciascun tipo di proprietà e della rel
 | Parole chiave | Aggiungere parole chiave in formato libero (mappate a dc:subject). |
 | Tag avanzati | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
 
-### Assegnare un modulo di metadati a una cartella {#assign-metadata-form-folder}
+### Assegnare un modulo metadati a una cartella {#assign-metadata-form-folder}
 
-Puoi anche assegnare un modulo di metadati a una cartella all’interno della distribuzione della vista Assets. Il modulo di metadati assegnato a una cartella in base al tipo MIME viene sovrascritto quando si applica manualmente un modulo di metadati a una cartella. Per tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, vengono quindi visualizzate le proprietà definite nel modulo di metadati.
+Puoi anche assegnare un modulo di metadati a una cartella all’interno della distribuzione della vista Assets. Il modulo metadati assegnato a una cartella in base al tipo MIME viene sovrascritto quando si applica manualmente un modulo metadati a una cartella. Per tutte le risorse nella cartella, comprese le risorse nelle sottocartelle, vengono quindi visualizzate le proprietà definite nel modulo metadati.
 
-Per assegnare un modulo di metadati a una cartella:
+Per assegnare un modulo metadati a una cartella:
 
-1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli di metadati]** e seleziona un modulo di metadati.
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli metadati]** e seleziona un modulo metadati.
 
 2. Fai clic su **[!UICONTROL Assegna a cartella]**.
 
 3. Selezionare la cartella e fare clic su **[!UICONTROL Assegna]**. Puoi selezionare le cartelle facendo clic sui nomi delle cartelle.
 
-   ![assegnare un modulo di metadati a una cartella](assets/assign-to-folder.png)
+   ![assegnare un modulo metadati a una cartella](assets/assign-to-folder.png)
 
-   Per assegnare un modulo di metadati alla cartella, puoi anche passare alla pagina dei dettagli della cartella e selezionare un modulo di metadati dalle proprietà della cartella, nel riquadro a destra.
+   Per assegnare un modulo metadati alla cartella, puoi anche passare alla pagina dei dettagli della cartella e selezionare un modulo metadati dalle proprietà della cartella, nel riquadro a destra.
 
    ![Modulo metadati da proprietà cartella](assets/metadata-from-folder-props.png)
 
@@ -159,17 +159,17 @@ Per assegnare un modulo di metadati a una cartella:
 
 Dopo aver assegnato un modulo metadati a una o più cartelle, Experience Manager Assets consente inoltre di rimuovere il modulo metadati dalle cartelle selezionate.
 
-Per rimuovere un modulo di metadati da una cartella:
+Per rimuovere un modulo metadati da una cartella:
 
-1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli di metadati]** e seleziona un modulo di metadati.
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Moduli metadati]** e seleziona un modulo metadati.
 
-1. Fai clic su **[!UICONTROL Rimuovi da cartelle]**. Viene visualizzato l’elenco delle cartelle assegnate al modulo di metadati.
+1. Fai clic su **[!UICONTROL Rimuovi da cartelle]**. Viene visualizzato l’elenco delle cartelle assegnate al modulo metadati.
 
 1. Seleziona la cartella e fai clic su **[!UICONTROL Rimuovi]**. È anche possibile selezionare più cartelle dall’elenco.
 
-Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo di metadati mappato dal sistema]** dal campo **[!UICONTROL Moduli di metadati]**, per rimuovere il modulo di metadati assegnato da una cartella.
+Puoi passare anche alla pagina dei dettagli della cartella e selezionare **[!UICONTROL Modulo metadati mappato dal sistema]** dal campo **[!UICONTROL Moduli metadati]**, per rimuovere il modulo metadati assegnato da una cartella.
 
-### Utilizzare il componente Collegamento nel modulo di metadati {#link-component-metadata-form}
+### Utilizzare il componente Collegamento nel modulo metadati {#link-component-metadata-form}
 
 Il componente Collegamento viene utilizzato per abilitare URL esterni, tra cui link di archiviazione, informazioni sul copyright, moduli di contatto e così via. Per utilizzare il componente Collega nel modulo metadati, devi [configurare il modulo metadati](#metadata-forms).
 
@@ -182,7 +182,7 @@ Per utilizzare il componente Collega nel modulo metadati, segui i passaggi segue
    * Fai clic su ![icona modifica](assets/do-not-localize/edit.svg) per modificare l’URL.
 1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 
-### Utilizzare il componente Tag nel modulo dei metadati {#tag-component-metadata-form}
+### Utilizzare il componente Tag nel modulo metadati {#tag-component-metadata-form}
 
 L’elemento principale rappresenta la struttura ad albero dei tag che è possibile associare alle risorse e aiuta a identificare la risorsa in base al tag assegnato. Inoltre, puoi limitare l’accesso a una tassonomia specifica durante la configurazione del modulo metadati nell’editor metadati.
 
@@ -198,7 +198,7 @@ Configura il componente Tag eseguendo i passaggi seguenti:
 
    ![Configurazione tag principali](assets/root-tag-config.png)
 
-1. [Assegnare un modulo di metadati alle cartelle](#assign-metadata-form-folder).
+1. [Assegnare un modulo metadati alle cartelle](#assign-metadata-form-folder).
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -212,7 +212,7 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-Per visualizzare i tag principali configurati, passa alla pagina dei dettagli della risorsa in cui viene eseguita la mappatura tra il modulo di metadati e i tag principali.
+Per visualizzare i tag principali configurati, passa alla pagina dei dettagli della risorsa in cui viene eseguita la mappatura tra il modulo metadati e i tag principali.
 
 ## Modifica Forms metadati {#edit-metadata-forms}
 
@@ -271,7 +271,7 @@ Per informazioni su come disabilitare i metadati generati dall&#39;intelligenza 
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

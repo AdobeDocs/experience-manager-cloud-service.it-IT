@@ -41,14 +41,14 @@ Al fine di sviluppare un codice personalizzato per una versione interna, deve es
 
 Il video seguente fornisce una panoramica di alto livello su come distribuire il codice in AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/39832?quality=9&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
 >It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
 -->
 
-## Distribuzione di pacchetti di contenuti tramite Cloud Manager e Gestione pacchetti {#deploying-content-packages-via-cloud-manager-and-package-manager}
+## Implementazione di pacchetti di contenuti tramite Cloud Manager e il gestore di pacchetti {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
 ### Distribuzioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
@@ -56,9 +56,9 @@ Il video seguente fornisce una panoramica di alto livello su come distribuire il
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. Cloud Manager trasforma i pacchetti di contenuto assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione AEM as a Cloud Service quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti in [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) negli ambienti cloud, il nome includerà “cp2fm” e nei pacchetti trasformati saranno rimossi tutti i metadati. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. Per la documentazione dettagliata sul convertitore, vedi [sling-org-apache-sling-feature-cpconverter su GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. Cloud Manager trasforma i pacchetti di contenuti assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione AEM as a Cloud Service quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti nel [Gestore di pacchetti](/help/implementing/developing/tools/package-manager.md) negli ambienti cloud, il nome includerà “cp2fm” e nei pacchetti trasformati saranno rimossi tutti i metadati. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. Per la documentazione dettagliata sul convertitore, vedi [sling-org-apache-sling-feature-cpconverter su GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-I pacchetti di contenuto scritti per le applicazioni AEM as a Cloud Service devono avere una separazione netta tra contenuto immutabile e contenuto mutabile; Cloud Manager installerà solo il contenuto mutabile, producendo anche un messaggio come:
+I pacchetti di contenuti scritti per le applicazioni AEM as a Cloud Service devono avere una separazione netta tra contenuti immutabili e contenuti mutabili; Cloud Manager installerà solo i contenuti mutabili, producendo anche un messaggio come:
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -87,9 +87,9 @@ Ulteriori informazioni sulla configurazione OSGI in [Configurazione OSGi per AEM
 
 In alcuni casi potrebbe essere utile preparare le modifiche al contenuto nel controllo della sorgente, in modo che possa essere distribuito da Cloud Manager ogni volta che un ambiente viene aggiornato. Ad esempio, potrebbe essere ragionevole eseguire il seeding di determinate strutture di cartelle principali. In alternativa, allinea le modifiche nei modelli modificabili per abilitare i componenti dei criteri aggiornati dalla distribuzione dell’applicazione.
 
-Esistono due strategie per descrivere il contenuto che verrà distribuito da Cloud Manager nell’archivio mutabile, nei pacchetti di contenuto mutabile e nelle istruzioni. `repoinit`
+Esistono due strategie per descrivere i contenuti che verrà implementato da Cloud Manager nell’archivio mutabile, nei pacchetti di contenuti mutabili e nelle istruzioni `repoinit`. 
 
-### Pacchetti di contenuto mutabile {#mutable-content-packages}
+### Pacchetti di contenuti mutabili {#mutable-content-packages}
 
 Contenuti come gerarchie di percorsi di cartelle, utenti di servizi e controlli di accesso (ACL) vengono generalmente salvati in un progetto AEM basato su un archetipo maven. Le tecniche includono l’esportazione da AEM o la scrittura diretta come XML. Durante il processo di creazione e distribuzione, Cloud Manager crea un pacchetto con il pacchetto di contenuti mutabili risultante. Il contenuto mutabile viene installato in momenti diversi, durante la fase di distribuzione nella pipeline:
 
@@ -114,7 +114,7 @@ Dopo il passaggio alla nuova versione dell’applicazione:
 È possibile limitare l’installazione di contenuti mutabili all’authoring o alla pubblicazione incorporando i pacchetti in una cartella install.author o install.publish in `/apps`. La ristrutturazione per riflettere questa separazione è stata eseguita in AEM 6.5 e i dettagli sulla ristrutturazione del progetto consigliata sono disponibili nella [documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=it).
 
 >[!NOTE]
->I pacchetti di contenuto vengono distribuiti in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md).
+>I pacchetti di contenuti vengono implementati in tutti i tipi di ambiente (dev, stage, prod). Non è possibile limitare la distribuzione a un ambiente specifico. Questa limitazione è presente per garantire la possibilità di effettuare un test di esecuzione automatica. Il contenuto specifico di un ambiente richiede l’installazione manuale tramite il [Gestore di pacchetti](/help/implementing/developing/tools/package-manager.md).
 
 Inoltre, non esiste un meccanismo per ripristinare la versione precedente dopo l’applicazione delle modifiche al pacchetto di contenuti mutabili. Se i clienti rilevano un problema, possono scegliere di correggerlo nella versione successiva del codice o, come ultima risorsa, ripristinare l’intero sistema in un punto temporale prima della distribuzione.
 
@@ -141,12 +141,12 @@ Per i casi seguenti, è preferibile adottare l’approccio della creazione di co
 Repoinit è preferibile per questi casi d’uso di modifica del contenuto supportati grazie ai seguenti vantaggi:
 
 * `Repoinit` crea risorse all’avvio in modo che la logica possa dare per scontata l’esistenza di tali risorse. Nell’approccio a pacchetti di contenuti mutabili, le risorse vengono create dopo l’avvio, pertanto il codice dell’applicazione che si basa su di esse potrebbe non riuscire.
-* `Repoinit` è un set di istruzioni relativamente sicuro in quanto si controlla esplicitamente l’azione da intraprendere. Inoltre, le uniche operazioni supportate sono aggiuntive, fatta eccezione per alcuni casi relativi alla sicurezza che consentono la rimozione di utenti, utenti del servizo e gruppi. Al contrario, è esplicita la rimozione di qualcosa nell’approccio a pacchetti di contenuti mutabili: quando definisci un filtro, tutto ciò che è presente ed è coperto da un filtro verrà eliminato. Tuttavia, è necessario prestare attenzione, in quanto con qualsiasi contenuto ci sono scenari in cui la presenza di nuovi contenuti può alterare il comportamento dell’applicazione.
-* `Repoinit` esegue operazioni rapide e atomiche. I pacchetti di contenuti mutabili, al contrario, possono dipendere in modo molto efficiente dalle prestazioni delle strutture coperte da un filtro. Anche se si aggiorna un singolo nodo, è possibile creare un’istantanea di una struttura di grandi dimensioni.
+* `Repoinit` è un set di istruzioni relativamente sicuro in quanto si controlla esplicitamente l’azione da intraprendere. Inoltre, le uniche operazioni supportate sono aggiuntive, fatta eccezione per alcuni casi relativi alla sicurezza che consentono la rimozione di utenti, utenti del servizo e gruppi. Al contrario, è esplicita la rimozione di qualcosa nell’approccio con pacchetti di contenuti mutabili: quando definisci un filtro, tutto ciò che è interessato da un filtro verrà eliminato. Tuttavia, è necessario prestare attenzione, in quanto con qualsiasi contenuto ci sono scenari in cui la presenza di nuovi contenuti può alterare il comportamento dell’applicazione.
+* `Repoinit` esegue operazioni rapide e atomiche. I pacchetti di contenuti mutabili, al contrario, possono dipendere in modo molto efficiente dalle prestazioni delle strutture interessate da un filtro. Anche se si aggiorna un singolo nodo, è possibile creare un’istantanea di una struttura di grandi dimensioni.
 * È possibile convalidare le istruzioni `repoinit` in un ambiente di sviluppo locale in fase di esecuzione, poiché verranno eseguite quando la configurazione OSGi sarà registrata.
 * Le istruzioni `Repoinit` sono atomiche ed esplicite e vengono ignorate se lo stato è già corrispondente.
 
-Quando Cloud Manager distribuisce l’applicazione, esegue queste istruzioni, indipendentemente dall’installazione di qualsiasi pacchetto di contenuto.
+Quando Cloud Manager implementa l’applicazione, esegue queste istruzioni, indipendentemente dall’installazione di eventuali pacchetti di contenuti.
 
 Per creare istruzioni `repoinit`, segui la procedura seguente:
 
@@ -170,27 +170,27 @@ Maggiori dettagli su `repoinit` sono disponibili nella [documentazione Sling](ht
 
 above appears to be internal, to confirm with Brian -->
 
-### Gestione pacchetti “una tantum” per pacchetti di contenuti mutabili {#package-manager-oneoffs-for-mutable-content-packages}
+### Gestore di pacchetti “una tantum” per pacchetti di contenuti mutabili {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Gestione pacchetti - Migrazione dei pacchetti di contenuto mutabile"
->abstract="Scopri l’utilizzo di Gestione pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato “una tantum”. L’installazione include l’importazione di contenuto specifico dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti di AEM Cloud e molto altro ancora."
+>title="Gestore di pacchetti - Migrazione dei pacchetti di contenuti mutabili"
+>abstract="Scopri l’utilizzo del gestore di pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato “una tantum”. L’installazione include l’importazione di contenuto specifico dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti di AEM Cloud e molto altro ancora."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it" text="Strumento trasferimento contenuti"
 
-Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, è possibile utilizzare la funzione [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) in ambienti AEM as a Cloud Service.
+Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, è possibile utilizzare il [Gestore di pacchetti](/help/implementing/developing/tools/package-manager.md) in ambienti AEM as a Cloud Service.
 
-Poiché Gestione pacchetti è un concetto di esecuzione, non è possibile installare contenuto o codice nell’archivio immutabile, quindi questi pacchetti di contenuto devono essere costituiti solo da contenuto mutabile (principalmente `/content` o `/conf`). Se il pacchetto di contenuti include contenuti misti (con contenuto mutabile e immutabile), verrà installato solo il contenuto mutabile.
+Poiché il gestore di pacchetti è un concetto di esecuzione, non è possibile installare contenuti o codice nell’archivio immutabile, quindi questi pacchetti di contenuti devono essere costituiti solo da contenuti mutabili (principalmente `/content` o `/conf`). Se il pacchetto di contenuti include contenuti misti (con contenuto mutabile e immutabile), verrà installato solo il contenuto mutabile.
 
 >[!IMPORTANT]
 >
->L’interfaccia utente di Gestione pacchetti potrebbe restituire un messaggio di errore **non definito** se l’installazione di un pacchetto richiede più di dieci minuti.
+>L’interfaccia utente del gestore di pacchetti potrebbe restituire un messaggio di errore **non definito** se l’installazione di un pacchetto richiede più di dieci minuti.
 >
 >Questo non è dovuto a un errore nell’installazione, ma a un timeout che Cloud Service ha per tutte le richieste.
 >
 >Non ripetere l’installazione se viene visualizzato un errore di questo tipo. L’installazione sta procedendo correttamente in background. Se si riavvia l’installazione, è possibile che alcuni conflitti siano introdotti da più processi di importazione simultanei.
 
-Tutti i pacchetti di contenuto installati tramite Cloud Manager (mutabili e immutabili) verranno visualizzati in uno stato congelato nell’interfaccia utente di Gestione Pacchetti AEM. Questi pacchetti non possono essere reinstallati, rigenerati o persino scaricati e verranno elencati con un suffisso **“cp2fm”** che indica che l’installazione è stata gestita da Cloud Manager.
+Tutti i pacchetti di contenuti installati tramite Cloud Manager (mutabili e immutabili) verranno visualizzati in uno stato congelato nell’interfaccia utente del gestore di pacchetti di AEM. Questi pacchetti non possono essere reinstallati, rigenerati o persino scaricati e verranno elencati con un suffisso **“cp2fm”** che indica che l’installazione è stata gestita da Cloud Manager.
 
 ### Inclusione di pacchetti di terzi {#including-third-party}
 
@@ -270,7 +270,7 @@ Per sviluppare e testare tramite la replica con l’avvio rapido di AEM cloud re
 
 Come descritto in precedenza, la strategia di distribuzione continua di AEM as a Cloud Service implica che sia le versioni precedenti che quelle nuove possano funzionare contemporaneamente. Pertanto, presta attenzione alle modifiche del codice che non sono compatibili con la vecchia versione AEM che è ancora in esecuzione.
 
-Inoltre, la vecchia versione deve essere testata per verificare la compatibilità con eventuali nuove strutture di contenuto mutabile applicate dalla nuova versione in caso di ripristino, in quanto il contenuto mutabile non viene rimosso.
+Inoltre, la vecchia versione deve essere testata per verificare la compatibilità con eventuali nuove strutture di contenuto mutabile applicate dalla nuova versione in caso di rollback, in quanto il contenuto mutabile non viene rimosso.
 
 ### Utenti del servizio e modifiche ACL {#service-users-and-acl-changes}
 
@@ -280,9 +280,9 @@ La modifica degli utenti del servizio o delle ACL necessarie per accedere al con
 
 Se vengono apportate modifiche agli indici, è importante che la vecchia versione continui a utilizzare i suoi indici fino a quando non viene terminata, mentre la nuova versione utilizza il proprio set modificato di indici. Lo sviluppatore deve seguire le tecniche di gestione dell&#39;indice descritte in [Ricerca e indicizzazione dei contenuti](/help/operations/indexing.md).
 
-### Codifica conservativa per i ripristini {#conservative-coding-for-rollbacks}
+### Codifica conservativa per i rollback {#conservative-coding-for-rollbacks}
 
-Se viene segnalato o rilevato un errore dopo la distribuzione, è possibile che sia necessario eseguire il ripristino della versione precedente. È consigliato garantire che il nuovo codice sia compatibile con tutte le nuove strutture create dalla nuova versione, in quanto le nuove strutture (qualsiasi contenuto mutabile) non subiranno ripristini. Se il codice precedente non è compatibile, le correzioni dovranno essere applicate nelle versioni successive del cliente.
+Se viene segnalato o rilevato un errore dopo l’implementazione, è possibile che sia necessario eseguire il rollback per ripristinare la versione precedente. È consigliato garantire che il nuovo codice sia compatibile con tutte le nuove strutture create dalla nuova versione, in quanto le nuove strutture (qualsiasi contenuto mutabile) non subiranno ripristini. Se il codice precedente non è compatibile, le correzioni dovranno essere applicate nelle versioni successive del cliente.
 
 ## Ambienti di sviluppo rapido (RDE) {#rde}
 
@@ -299,7 +299,7 @@ AEM as a Cloud Service d’altra parte è più rigoroso su quali modalità di es
 * Le modalità di esecuzione della configurazione OSGI devono fare riferimento ad ambienti RDE, di sviluppo, di staging o di produzione, oppure a servizi di authoring o pubblicazione. È supportata una combinazione di `<service>.<environment_type>`, mentre questi ambienti devono essere utilizzati in questo particolare ordine (ad esempio, `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando il metodo `getRunModes`, che non include più `environment_type` in fase di esecuzione. Per ulteriori informazioni, consulta [Configurazione OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (authoring, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install.author` o `install.publish`.
 
-AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare contenuti per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML non presenti negli ambienti di staging o di produzione: è possibile utilizzare Gestione pacchetti.
+AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare contenuti per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML non presenti negli ambienti di staging o di produzione: è possibile utilizzare Gestore di pacchetti.
 
 Le configurazioni supportate per la modalità di esecuzione sono:
 

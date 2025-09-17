@@ -23,7 +23,7 @@ ht-degree: 37%
 
 La sezione seguente per contiene considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=it). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
+* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
 
 * BPA può essere eseguito solo dall&#39;utente **admin** o da un utente del gruppo **amministratori**.
 
@@ -46,7 +46,7 @@ La sezione seguente per contiene considerazioni importanti sull’esecuzione di 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_download"
 >title="Scaricare Best Practices Analyzer"
->abstract="Best Practices Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite Gestione pacchetti nella tua istanza sorgente di Adobe Experience Manager (AEM)."
+>abstract="Best Practices Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite il gestore di pacchetti nella tua istanza di origine di Adobe Experience Manager (AEM)."
 
 Best Practices Analyzer può essere scaricato come file zip dal portale di distribuzione software. Puoi installare il pacchetto tramite [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) nell&#39;istanza Adobe Experience Manager (AEM) di origine.
 
@@ -165,7 +165,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
 >title="Interpretazione del rapporto di Best Practices Analyzer"
->abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto di BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore di pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
+>abstract="Sono disponibili due opzioni per visualizzare gli output del rapporto BPA: interfaccia utente e CSV. Quando lo strumento Best Practices Analyzer viene eseguito nell’istanza di AEM, il rapporto per l’interfaccia utente viene visualizzato sotto forma di risultati nella finestra dello strumento. Il formato CSV del rapporto include informazioni generate dall’output del rilevatore di pattern, ordinate e organizzate per tipo di categoria, sottotipo e livello di importanza."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#analysis-report" text="Analisi del rapporto di Best Practices Analyzer"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=it" text="Categorie del rapporto di Best Practices Analyzer"
 
@@ -286,8 +286,8 @@ Il valore di questa proprietà corrisponde alla durata della cache, in secondi. 
 
 BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, l&#39;account deve essere creato *prima dell&#39;installazione di* di BPA, eseguendo la procedura seguente:
 
-1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=it#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
+1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 
-2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
+2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
 
 3. Installa il pacchetto BPA tramite Gestione pacchetti nell’istanza AEM di origine. Questa azione aggiunge la necessaria modifica alla configurazione ServiceUserMapper per l’utente di servizio del sistema `repository-reader-service`.)
