@@ -4,28 +4,29 @@ description: Scopri in che modo AEM as a Cloud Service può trarre vantaggio dal
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Panoramica di Edge Delivery Services {#edge-delivery-services}
 
+>[!TIP]
+>
+>**Desideri metterti subito all’opera?**
+>
+>Se desideri iniziare subito a utilizzare Edge Delivery Services, hai a disposizione due opzioni.
+>* [Avvia subito l&#39;authoring con un ambiente di esercitazione predefinito, completamente configurato e pronto per l&#39;uso.](https://www.aem.live/developer/ue-trial)
+>* Accedi a ulteriori dettagli e configura il tuo ambiente in meno di 30 minuti [consultando l&#39;esercitazione su aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## Che cos’è Edge Delivery Services? {#what-is-edge}
 
 Edge Delivery Services è un framework moderno per la distribuzione dei contenuti che reinterpreta il modo in cui vengono creati e distribuiti i siti web, ottimizzandoli per velocità, semplicità e scalabilità. È una parte fondamentale di Adobe Experience Manager e consente esperienze digitali più veloci, rendendo il rendering e la distribuzione più vicini all’utente, alla periferia della rete.
 
 Non sostituisce una rete per la distribuzione dei contenuti (CDN, Content Delivery Network), ma si integra perfettamente con la tua rete CDN o con la rete inclusa [CDN gestita da Adobe.](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**Desideri metterti subito all’opera?**
->
->Se lo desideri, avvia il tuo progetto Edge Delivery Services con l’authoring di AEM in meno di 30 minuti [consultando il tutorial su aem.live.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## Perché scegliere Edge Delivery Services? {#why-edge}
 
@@ -83,7 +84,7 @@ Adobe Experience Manager utilizza la [telemetria operativa](https://www.aem.live
 Introduzione all’authoring AEM con l’editor universale ed Edge Delivery Services:
 
 * Documentazione di Edge Delivery Services [Edge Delivery Services](https://www.aem.live)
-* Per una panoramica sull’authoring AEM con l’edito universale, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
+* Per una panoramica sull’authoring AEM con l’editor universale, consulta il documento [Authoring con AEM per Edge Delivery Services](https://www.aem.live/docs/aem-authoring) nella documentazione di aem.live.
 * Per una panoramica per gli sviluppatori, consulta il documento [Guida introduttiva - Tutorial per sviluppatori di editor universale](https://www.aem.live/developer/ue-tutorial) nella documentazione di aem.live.
 
 ## Edge Delivery Services e altri prodotti di Adobe Experience Cloud {#edge-other-products}
