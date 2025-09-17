@@ -4,14 +4,11 @@ description: Scopri l’Editor di comunicazione interattiva in AEM Forms. Scopri
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
@@ -19,11 +16,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per i primi utenti.
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## Cos’è l’Editor di comunicazione interattiva?
 

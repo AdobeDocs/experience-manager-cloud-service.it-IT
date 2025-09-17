@@ -4,7 +4,7 @@ description: Scopri la telemetria operativa, un servizio automatizzato che conse
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Il servizio di telemetria operativa è progettato per ridurre al minimo la racco
 * Il nome host del sito visitato, ad esempio: `experienceleague.adobe.com`
 * Tipo di agente utente e sistema operativo utilizzati per visualizzare la pagina, ad esempio: `desktop:windows` o `mobile:ios`
 * Ora della raccolta dati, ad esempio: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs?lang=it`
+* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs`
 * URL referente (URL della pagina collegata alla pagina corrente, se l’utente ha seguito un collegamento)
 * ID della visualizzazione pagina generato in modo casuale, in un formato simile a: `2Ac6`
 * Peso o inverso della frequenza di campionamento, ad esempio: `100`. Significa che viene registrata solo una visualizzazione pagina su cento
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Rinunciare potrebbe significare perdere l’opportunità di migliorare il coinvolgimento del traffico sul sito web. Se tuttavia si verificano problemi, è possibile disattivare la telemetria operativa [impostando una variabile di ambiente in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominata `AEM_OPTEL_DISABLED` sul valore `true`. Per riattivare la telemetria operativa in un secondo momento, è sufficiente rimuovere nuovamente la variabile di ambiente.
 
-1. **Posso utilizzare un criterio sulla sicurezza dei contenuti con un nonce?
+1. **È possibile utilizzare criteri sulla sicurezza dei contenuti con un Nonce?**
 
    Il supporto per la telemetria operativa contiene una funzione sperimentale per supportare un criterio sulla sicurezza dei contenuti con un nonce. Questa funzionalità può essere abilitata [impostando una variabile di ambiente in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) denominata `AEM_OPTEL_NONCE` sul valore `true`. Se desideri disattivarla nuovamente in un secondo momento, rimuovi semplicemente di nuovo la variabile di ambiente.
 
