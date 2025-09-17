@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -426,6 +426,8 @@ Nella tabella seguente è illustrata l’azione disponibile.
 |-----------|--------------------------|-------------|
 | **selectOrigin** | originName | Nome di una delle origini definite. |
 |     | skipCache (facoltativo, il valore predefinito è false) | Segnala se utilizzare il caching per le richieste che corrispondono a questa regola. Per impostazione predefinita, le risposte vengono memorizzate nella cache in base all’intestazione di memorizzazione nella cache delle risposte (ad esempio, Cache-Control o Expires) |
+| **selezionaOrigineAem** | originName | Nome di una delle origini predefinite di AEM (valore supportato: `static`). |
+|     | skipCache (facoltativo, il valore predefinito è false) | Segnala se utilizzare il caching per le richieste che corrispondono a questa regola. Per impostazione predefinita, le risposte vengono memorizzate nella cache in base all’intestazione di memorizzazione nella cache delle risposte (ad esempio, Cache-Control o Expires) |
 
 **Origini**
 
@@ -441,6 +443,29 @@ Le connessioni alle origini sono solo SSL e utilizzano la porta 443.
 | **forwardAuthorization** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Authorization&quot; dalla richiesta del client verrà passata al backend, altrimenti l’intestazione Authorization viene rimossa. |
 | **timeout** (facoltativo, in secondi, il valore predefinito è 60) | Numero di secondi in cui la rete CDN deve attendere che un server backend distribuisca il primo byte di un corpo di risposta HTTP. Questo valore viene utilizzato anche come timeout tra i byte per il server back-end. |
 
+### Trasferimento del dominio personalizzato al livello statico di AEM {#proxy-custom-domain-static}
+
+I selettori di origine possono essere utilizzati per instradare il traffico di pubblicazione AEM al contenuto statico AEM distribuito utilizzando la [pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). I casi d’uso includono l’utilizzo di risorse statiche sullo stesso dominio della pagina (ad esempio, example.com/static) o su un dominio esplicitamente diverso (ad esempio, static.example.com).
+
+Di seguito è riportato un esempio di regola del selettore di origine che può eseguire questa operazione:
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Proxy a Edge Delivery Services {#proxying-to-edge-delivery}
 
 Esistono scenari in cui i selettori di origine devono essere utilizzati per instradare il traffico attraverso AEM Publish ad AEM Edge Delivery Services:
@@ -454,6 +479,8 @@ Di seguito è riportato un esempio di regola del selettore di origine che può e
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
