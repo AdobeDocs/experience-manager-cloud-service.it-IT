@@ -4,13 +4,10 @@ description: Crea modelli di comunicazione interattiva in AEM Forms per definire
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 9%
+ht-degree: 18%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.
+> La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
 
 >[!IMPORTANT]
 >
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per i primi utenti.
+> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 I modelli di comunicazione interattiva in AEM consentono agli utenti di definire strutture di layout riutilizzabili come intestazioni, piè di pagina, loghi e stili predefiniti. Questi modelli fungono da base per creare comunicazioni coerenti, di marchio ed efficienti.
 
