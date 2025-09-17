@@ -41,7 +41,7 @@ Al fine di sviluppare un codice personalizzato per una versione interna, deve es
 
 Il video seguente fornisce una panoramica di alto livello su come distribuire il codice in AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/39832?quality=9&captions=ita)
 
 <!--
 >[!NOTE]
