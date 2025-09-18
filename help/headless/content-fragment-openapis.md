@@ -19,7 +19,7 @@ Per la documentazione completa, consulta [API di gestione dei frammenti di conte
 
 >[!NOTE]
 >
->L&#39;utilizzo esistente di [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per i frammenti di contenuto deve essere migrato alla nuova OpenAPI per la gestione dei frammenti di contenuto.
+>L&#39;utilizzo esistente di [Assets HTTP API](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per i frammenti di contenuto deve essere migrato alla nuova OpenAPI per la gestione dei frammenti di contenuto.
 
 >[!NOTE]
 >
