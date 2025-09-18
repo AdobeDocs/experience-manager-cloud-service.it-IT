@@ -1,24 +1,28 @@
 ---
-title: Configurare l’Assistente AI in AEM
+title: Configurare l’Assistente IA in AEM
 description: Scopri come impostare e configurare l’Assistente AI utilizzando Admin Console in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing, AI Assistant, AI Tools
 role: Admin, Architect, Developer
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: 33eab4e431284f3bb772f9e70a1fdb9e56c4c4aa
+source-git-commit: c47b1ec8219c7130f1f5767551d442b0af3195c0
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 3%
+source-wordcount: '1152'
+ht-degree: 4%
 
 ---
 
-# Configurare l’Assistente AI in AEM {#aem-ai-asst-admin-setup}
+# Configurare l’Assistente IA in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Per utilizzare l’Assistente AI in AEM (Adobe Experience Manager), la tua organizzazione deve dare il consenso a livello di Admin Console. Un amministratore di prodotto crea (o sceglie) un gruppo di utenti e gli concede la nuova autorizzazione &quot;Assistente IA&quot;. Chiunque sia aggiunto a quel gruppo ha accesso istantaneamente all’Assistente all’intelligenza artificiale in AEM. Se l’obiettivo è la disponibilità a livello aziendale, l’amministratore assegna semplicemente tutti gli utenti a quel gruppo.
+Per utilizzare l’Assistente all’intelligenza artificiale in AEM (Adobe Experience Manager), è necessario disporre dell’autorizzazione per accedere alla conoscenza del prodotto tramite l’Assistente all’intelligenza artificiale. Questa autorizzazione è attivata per impostazione predefinita.
+
+Se desideri controllare chi può accedere alla conoscenza del prodotto, invia un&#39;e-mail a [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Adobe può abilitare il controllo degli accessi a livello di utente. Quando è abilitato, l’amministratore può concedere l’accesso a livello di utente seguendo i passaggi descritti di seguito.
+
+Se hai richiesto il controllo degli accessi a livello di utente, la tua organizzazione deve dare il consenso tramite Adobe Admin Console. Un amministratore di prodotto crea (o sceglie) un gruppo di utenti e gli concede la nuova autorizzazione &quot;Assistente IA&quot;. Chiunque sia aggiunto a quel gruppo ha accesso istantaneamente all’Assistente all’intelligenza artificiale in AEM. Se l’obiettivo è la disponibilità a livello aziendale, l’amministratore assegna semplicemente tutti gli utenti a quel gruppo.
 
 Dal punto di vista di un dipendente, il processo è semplice: identifica l’amministratore del prodotto per Adobe Experience Manager nella tua organizzazione e richiede di essere aggiunto al gruppo di utenti abilitato all’intelligenza artificiale. Una volta visualizzato in tale gruppo, l&#39;icona Assistente viene visualizzata automaticamente al successivo accesso.
 
@@ -49,7 +53,7 @@ Prima di iniziare, assicurati di aver soddisfatto i seguenti prerequisiti:
 
 ## 1 - Creare un nuovo profilo di prodotto in Adobe Admin Console{#create-profile}
 
-1. Segui le istruzioni dettagliate in [Creare un nuovo profilo di prodotto in Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/ui/create-profile), reperibile nella documentazione di Experience Platform.
+1. Segui le istruzioni dettagliate in [Creare un nuovo profilo di prodotto in Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile), reperibile nella documentazione di Experience Platform.
 
 1. Quando crei il nuovo profilo di prodotto, puoi utilizzare i seguenti valori consigliati per l’Assistente IA.
 
@@ -65,7 +69,7 @@ Prima di iniziare, assicurati di aver soddisfatto i seguenti prerequisiti:
 
 Il processo di assegnazione di autorizzazioni personalizzate ai profili di prodotto segue il flusso di lavoro standard delle autorizzazioni personalizzate di Adobe Cloud Manager.
 
-Articolo di riferimento: [Assegnare autorizzazioni personalizzate al nuovo profilo di prodotto](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Articolo di riferimento: [Assegnare autorizzazioni personalizzate al nuovo profilo di prodotto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. In Admin Console, fai clic sul nome del nuovo profilo di prodotto creato (`AI Assistant in AEM`)
 
@@ -194,5 +198,5 @@ Chiedi a un utente del gruppo assegnato di effettuare le seguenti operazioni:
 ## Consulta anche
 
 * [Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-* [Controllo dell&#39;accesso a Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/access-control/ui/overview)
+* [Controllo dell&#39;accesso a Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Autorizzazioni personalizzate di Cloud Manager](/help/implementing/cloud-manager/custom-permissions.md)
