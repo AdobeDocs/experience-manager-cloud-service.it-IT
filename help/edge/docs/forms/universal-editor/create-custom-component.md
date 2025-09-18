@@ -4,9 +4,9 @@ description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ Ora che il modulo contiene il componente personalizzato, è possibile inoltrare 
 
 Aggiungiamo una **scheda** di classe al componente per la creazione dello stile e aggiungiamo un&#39;immagine per ogni radio. A tale scopo, utilizza il codice seguente.
 
-**Personalizza lo stile del componente utilizzando la funzione decorate in cards.js**
+**Personalizza lo stile del componente utilizzando card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Aggiungi comportamento runtime per il componente personalizzato in cards.css**
+**Aggiungi comportamento runtime utilizzando cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ Il modo precedente per farlo è seguire manualmente i passaggi descritti di segu
 
 10. **Aggiorna _component-definition.json**: in `models/_component-definition.json` aggiorna l&#39;array all&#39;interno del gruppo con `id custom-components` con un oggetto nel modo seguente:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
+   In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
 
 11. **Esegui lo script :json della build**: esegui `npm run build:json` per compilare e unire tutte le definizioni JSON dei componenti in un unico file da distribuire dal server. In questo modo lo schema del nuovo componente viene incluso nell’output unito.
 
@@ -587,7 +587,7 @@ Tieni presente quanto segue prima di creare un componente personalizzato:
 
 ## Riferimenti
 
-- form-field-types (tipi di campi modulo): strutture e proprietà di base di HTML per tutti i tipi di campi. [Fare clic qui](/help/edge/docs/forms/eds-form-field-properties) per visualizzare le strutture e le proprietà dettagliate dei campi modulo.
+- [tipi-campo-modulo](/help/edge/docs/forms/eds-form-field-properties.md): strutture e proprietà di base di HTML per tutti i tipi di campo.
 
 - **blocchi/moduli/modelli/componenti modulo**: definizioni di proprietà OOTB e di componenti personalizzati.
 
