@@ -4,8 +4,8 @@ description: Scopri come accedere all’editor universale e come iniziare a prep
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: ht
+source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Le connessioni utilizzate nell’app vengono memorizzate come `<meta>` tag nella
 * `<protocol>`: indica il plug-in di persistenza del servizio di persistenza dell’editor universale da utilizzare. Ad esempio, `aem`
 * `<url>`: questo è l’URL del sistema in cui le modifiche devono essere mantenute. Ad esempio, `http://localhost:4502`
 
-L’identificatore `urn:adobe:aue:system` rappresenta la connessione per Adobe Universal Editor.
+L’identificatore `urn:adobe:aue:system` rappresenta la connessione per l’editor universale Adobe.
 
 Negli identificatori `data-aue-resource` verrà utilizzato il prefisso `urn` per accorciare l’identificatore.
 
@@ -69,8 +69,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### Connessione di esempio {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
