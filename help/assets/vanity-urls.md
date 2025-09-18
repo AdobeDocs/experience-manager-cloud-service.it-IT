@@ -3,9 +3,9 @@ title: Creare URL personalizzati utilizzando Dynamic Media con funzionalità Ope
 description: Utilizza le funzionalità OpenAPI di Dynamic Media per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Un URL personalizzato è una versione breve, pulita, facile da ricordare e leggibile del tuo URL di consegna complesso. Puoi includere il nome del tuo marchio, i nomi dei prodotti e le parole chiave pertinenti nell’URL personalizzato per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
+source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Ulteriori informazioni su [schemi metadati](/help/assets/metadata-schemas.md).
 
      >[!NOTE]
      >
-     > Una singola risorsa può avere più ID di reindirizzamento. [Contatta il supporto Adobe](https://helpx.adobe.com/in/contact.html) e invia una richiesta per generare gli ID personalizzati richiesti.
+     > * Utilizza ID personalizzati univoci per ogni risorsa. Verifica sempre che le risorse che condividono lo stesso modulo di metadati abbiano ID personalizzati per DM con distribuzione OpenAPI tramite URL personalizzati. Se due risorse condividono lo stesso ID Vanity, DM con OpenAPI distribuisce la risorsa che ha ricevuto più di recente l’ID, ignorando il diritto precedente dell’ID a un’altra risorsa.
+     >
+     > * Una singola risorsa può avere più ID di reindirizzamento. [Contatta il supporto Adobe](https://helpx.adobe.com/in/contact.html) e invia una richiesta per generare gli ID personalizzati richiesti.
 
 Dopo aver impostato il tuo ID personalizzato nel modulo dei metadati della risorsa, [mappa questo campo di metadati sul meccanismo di consegna del sistema](#map-cloud-manager-environment-variable).
 
@@ -132,7 +134,7 @@ Quando l&#39;utente fa clic sull&#39;URL personalizzato, [!DNL Dynamic Media wit
 
 ## Ridimensionare utilizzando gli URL personalizzati{#scale-using-vanity-url}
 
-AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
+AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
 
 Consulta il seguente URL personalizzato e i relativi componenti personalizzabili:
 
@@ -182,7 +184,7 @@ Consulta il seguente URL personalizzato e i relativi componenti personalizzabili
 Esegui la procedura seguente per riscrivere le regole CDN per la consegna:
 
 1. Passa al tuo archivio AEM per creare un file di configurazione YAML.
-2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
+2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
 Segui queste [best practice](#best-practices) per creare il percorso del dominio.
    [Ulteriori informazioni sulle regole di riscrittura CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
