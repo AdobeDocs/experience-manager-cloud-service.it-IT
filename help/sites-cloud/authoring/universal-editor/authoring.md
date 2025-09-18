@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 11%
+source-wordcount: '2495'
+ht-degree: 13%
 
 ---
 
@@ -81,6 +81,22 @@ Nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/nav
 
 Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvare le modifiche.
 
+#### Opzioni di formattazione RTF {#formatting-options}
+
+L’editor Rich Text di Universal Editor consente all’autore di applicare la formattazione di testo standard. Per impostazione predefinita, sono disponibili le seguenti opzioni.
+
+* Paragrafo (h1, h2, h3, ecc.)
+* Grassetto
+* Corsivo
+* Sottolineato
+* Apice
+* Pedice
+* Elenco puntato
+* Elenco numerato
+* Collegamento
+
+L’editor Rich Text può essere configurato in modo da nascondere le opzioni o mostrare opzioni aggiuntive a seconda delle esigenze degli autori. Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;editor Rich Text per Universal Editor](/help/implementing/universal-editor/configure-rte.md).
+
 ### Editing di file multimediali {#edit-media}
 
 Puoi visualizzarne i dettagli nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
@@ -116,7 +132,7 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 
 >[!NOTE]
 >
->L&#39;editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare le regole di integrità dei dati, ad esempio i pattern regex e i vincoli di univocità.
+>L’editor universale [convalida i campi dei frammenti di contenuto in base ai relativi modelli](/help/assets/content-fragments/content-fragments-models.md#validation), consentendo di applicare regole di integrità dei dati, ad esempio i pattern delle espressioni regolari e i vincoli di univocità.
 >
 >In questo modo, il contenuto soddisfa i requisiti aziendali specifici prima della pubblicazione.
 
@@ -351,9 +367,9 @@ Per informazioni su come abilitare questa estensione, [consulta la documentazion
 
 Per informazioni su come pubblicare contenuti con l’editor universale, consulta questo documento.
 
-* [Pubblicazione di contenuti con l&#39;editor universale](publishing.md) - Scopri come l&#39;editor universale pubblica i contenuti e come le app possono gestire i contenuti pubblicati.
+* [Pubblicazione di contenuti con l’editor universale](publishing.md): scopri in che modo l’editor universale pubblica i contenuti e in che modo le app possono gestire i contenuti pubblicati.
 
-Per ulteriori informazioni sui dettagli tecnici di Universal Editor, consulta questi documenti per gli sviluppatori.
+Per ulteriori informazioni sui dettagli tecnici dell’editor universale, consulta questi documenti per gli sviluppatori.
 
 * [Introduzione all&#39;editor universale](/help/implementing/universal-editor/introduction.md): scopri come l&#39;editor universale consente di modificare qualsiasi aspetto di qualsiasi contenuto in qualsiasi implementazione per offrire esperienze eccezionali e velocizzare la creazione dei contenuti.
 * [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.

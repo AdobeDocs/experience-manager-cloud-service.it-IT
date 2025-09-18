@@ -1,20 +1,21 @@
 ---
-title: Configura l'editor Rich Text per creare contenuti in  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Configura l'editor Rich Text per creare contenuti in  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Configura l'editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Configura l'editor Rich Text per creare contenuti in [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
+
 # Configurare l’editor Rich Text {#configure-the-rich-text-editor}
 
-L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Sono disponibili icone, caselle di selezione, barre degli strumenti e menu per un&#39;esperienza di modifica del testo WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri in che modo gli autori [utilizzano l&#39;editor Rich Text per l&#39;authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) dei contenuti web.
+L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Icone, caselle di selezione, barre degli strumenti e menu sono disponibili per la modifica del testo in WYSIWYG. Gli amministratori configurano l’editor Rich Text per abilitare, disabilitare ed estendere le funzioni disponibili nei componenti di authoring. Scopri in che modo gli autori [utilizzano l&#39;editor Rich Text per l&#39;authoring](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) dei contenuti web.
 
 Di seguito sono elencati i concetti e i passaggi necessari per la configurazione dell’editor Rich Text.
 
@@ -24,6 +25,10 @@ Di seguito sono elencati i concetti e i passaggi necessari per la configurazione
 | [Tipi di modalità di modifica](#editingmodes) | [Attiva plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Imposta proprietà funzionalità](#aboutplugins) |
 | [Informazioni sui plug-in](#aboutplugins) | [Configurare le barre degli strumenti dell&#39;editor Rich Text](#dialogfullscreen) | [Configurare le modalità Incolla](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
+>[!NOTE]
+>
+>L’editor Rich Text descritto in questo documento descrive quello disponibile nell’Editor pagina. Se si utilizza il moderno Universal Editor, vedere il documento [Configurazione dell&#39;editor Rich Text per l&#39;editor universale](/help/implementing/universal-editor/configure-rte.md) per ulteriori dettagli.
+
 ## Interfaccia utente disponibile per gli autori {#understand-rte-ui}
 
 L&#39;interfaccia dell&#39;editor Rich Text offre una [progettazione reattiva](/help/sites-cloud/authoring/page-editor/responsive-layout.md) per l&#39;ambiente di authoring. L&#39;interfaccia è progettata per essere utilizzata su dispositivi touch e desktop.
@@ -32,7 +37,7 @@ L&#39;interfaccia dell&#39;editor Rich Text offre una [progettazione reattiva](/
 
 *Figura: barra degli strumenti dell&#39;Editor Rich Text con tutte le opzioni disponibili abilitate.*
 
-La barra degli strumenti fornisce le opzioni per l’esperienza di authoring WYSIWYG. Gli amministratori di [!DNL Experience Manager] possono configurare le opzioni disponibili nella barra degli strumenti dell&#39;interfaccia. Un set completo di opzioni di modifica è disponibile per impostazione predefinita in [!DNL Experience Manager]. Gli sviluppatori possono personalizzare [!DNL Experience Manager] per aggiungere altre opzioni di modifica.
+La barra degli strumenti fornisce le opzioni per l’esperienza di authoring di WYSIWYG. Gli amministratori di [!DNL Experience Manager] possono configurare le opzioni disponibili nella barra degli strumenti dell&#39;interfaccia. Un set completo di opzioni di modifica è disponibile per impostazione predefinita in [!DNL Experience Manager]. Gli sviluppatori possono personalizzare [!DNL Experience Manager] per aggiungere altre opzioni di modifica.
 
 ## Varie modalità di editing {#editingmodes}
 
@@ -90,7 +95,7 @@ Le funzionalità di base dell&#39;editor Rich Text vengono attivate o disattivat
 
 Nella tabella seguente sono elencati i plug-in correnti:
 
-* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1&rbrace;.](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)
+* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1}.](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)
 * Valori consentiti per la proprietà `features`.
 * Descrizione delle funzionalità fornite dal plug-in.
 
@@ -104,7 +109,7 @@ Nella tabella seguente sono elencati i plug-in correnti:
 | giustificare | `justifyleft`, `justifycenter`, `justifyright` | Allineamento paragrafo. |
 | collegamenti | `modifylink`, `unlink`, `anchor` | [Collegamenti ipertestuali e ancoraggi](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | elenchi | `ordered`, `unordered`, `indent`, `outdent` | Questo plug-in controlla sia il rientro [che gli elenchi](configure-rich-text-editor-plug-ins.md#indentmargin), inclusi gli elenchi nidificati. |
-| misctools | `specialchars`, `sourceedit` | Strumenti vari consentono agli autori di immettere [caratteri speciali](configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine HTML. Inoltre, puoi aggiungere un [intervallo di caratteri speciali](configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
+| misctools | `specialchars`, `sourceedit` | Strumenti vari consentono agli autori di immettere [caratteri speciali](configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un [intervallo di caratteri speciali](configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
 | Paraformat | `paraformat` | I formati di paragrafo predefiniti sono Paragrafo, Titolo 1, Titolo 2 e Titolo 3 (`<p>`, `<h1>`, `<h2>` e `<h3>`). È possibile [aggiungere altri formati di paragrafo](configure-rich-text-editor-plug-ins.md#paraformats) o estendere l&#39;elenco. |
 | controllo ortografico | `checktext` | [Controllo ortografico in base alla lingua](configure-rich-text-editor-plug-ins.md#adddict). |
 | stili | `styles` | Supporto per lo stile tramite una classe CSS. [Aggiungere nuovi stili di testo](configure-rich-text-editor-plug-ins.md#textstyles) se si desidera aggiungere o estendere un intervallo personalizzato di stili da utilizzare con il testo. |
@@ -154,7 +159,7 @@ Per informazioni dettagliate sulle configurazioni dei plug-in dell&#39;editor Ri
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text utilizzando l&#39;interfaccia utente come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=it).
+Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text utilizzando l&#39;interfaccia utente come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento. Per ulteriori informazioni, consulta [creare modelli di pagina](/help/sites-cloud/authoring/page-editor/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >A scopo di riferimento, i componenti di testo predefiniti (forniti come parte di un’installazione standard) sono disponibili all’indirizzo:
 >
@@ -228,7 +233,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non consente un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
