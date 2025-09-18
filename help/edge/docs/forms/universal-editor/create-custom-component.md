@@ -505,13 +505,13 @@ Il modo precedente per farlo è seguire manualmente i passaggi descritti di segu
 
 10. **Aggiorna _component-definition.json**: in `models/_component-definition.json` aggiorna l&#39;array all&#39;interno del gruppo con `id custom-components` con un oggetto nel modo seguente:
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
+    In questo modo si fornisce il riferimento al nuovo componente Schede da creare con gli altri componenti
 
 11. **Esegui lo script :json della build**: esegui `npm run build:json` per compilare e unire tutte le definizioni JSON dei componenti in un unico file da distribuire dal server. In questo modo lo schema del nuovo componente viene incluso nell’output unito.
 
