@@ -3,7 +3,7 @@ title: Creare URL personalizzati utilizzando Dynamic Media con funzionalità Ope
 description: Utilizza le funzionalità OpenAPI di Dynamic Media per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Un URL personalizzato è una versione breve, pulita, facile da ricordare e leggibile del tuo URL di consegna complesso. Puoi includere il nome del tuo marchio, i nomi dei prodotti e le parole chiave pertinenti nell’URL personalizzato per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
+source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
 workflow-type: tm+mt
 source-wordcount: '1377'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzare URL personalizzati?{#vanity-urls}
+# Utilizzare URL personalizzati{#vanity-urls}
 
 Utilizza [!DNL Dynamic Media OpenAPI capabilities] per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Gli URL di consegna di risorse standard includono UID di risorse generate dal sistema che rendono l’URL di consegna complesso, difficile da ricordare e condividere. Sostituisci questi UUID delle risorse con identificatori semplici (Vanity ID) per generare un URL personalizzato. Un URL personalizzato è una versione breve, pulita e leggibile del tuo URL di consegna complesso.
 
@@ -43,7 +43,7 @@ Nell&#39;esempio precedente, `43341ab1-4086-44d2-b7ce-ee546c35613b` è l&#39;UUI
 
 Gli URL personalizzati includono un identificatore personalizzato al posto dell’UUID della risorsa e seguono il seguente formato.
 
-***Formato:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+***Formato:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 L&#39;URL personalizzato include `avid` (*identificatore personalizzato effettivo*) dopo `urn:` e il tuo ID personalizzato tra `urn:avid:aem:` e `/<seoname>.<format>`.
 
@@ -134,13 +134,13 @@ Quando l&#39;utente fa clic sull&#39;URL personalizzato, [!DNL Dynamic Media wit
 
 ## Ridimensionare utilizzando gli URL personalizzati{#scale-using-vanity-url}
 
-AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
+AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
 
 Consulta il seguente URL personalizzato e i relativi componenti personalizzabili:
 
 **Formato URL personalizzato:**
 
-`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
 <tr valign="top">
@@ -161,14 +161,14 @@ Consulta il seguente URL personalizzato e i relativi componenti personalizzabili
 <div style="text-align:center;"><a href="#create-vanity-urls">Crea ID reindirizzamento</a></div>
 </td>
 <td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
-<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+<code>/as/&lt;seoname&gt;.&lt;format&gt;</code>
 </td>
 </tr>
 </table>
 
 **Formato URL personalizzato con nomi DNS e CDN personalizzati:**
 
-`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
+`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
 **Componenti URL personalizzabili**
 
@@ -184,7 +184,7 @@ Consulta il seguente URL personalizzato e i relativi componenti personalizzabili
 Esegui la procedura seguente per riscrivere le regole CDN per la consegna:
 
 1. Passa al tuo archivio AEM per creare un file di configurazione YAML.
-2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
+2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
 Segui queste [best practice](#best-practices) per creare il percorso del dominio.
    [Ulteriori informazioni sulle regole di riscrittura CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
