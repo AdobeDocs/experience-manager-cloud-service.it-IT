@@ -3,9 +3,9 @@ title: Creare URL personalizzati utilizzando Dynamic Media con funzionalità Ope
 description: Utilizza le funzionalità OpenAPI di Dynamic Media per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Un URL personalizzato è una versione breve, pulita, facile da ricordare e leggibile del tuo URL di consegna complesso. Puoi includere il nome del tuo marchio, i nomi dei prodotti e le parole chiave pertinenti nell’URL personalizzato per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utilizzare URL personalizzati{#vanity-urls}
 
-Utilizza [!DNL Dynamic Media OpenAPI capabilities] per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Gli URL di consegna di risorse standard includono UID di risorse generate dal sistema che rendono l’URL di consegna complesso, difficile da ricordare e condividere. Sostituisci questi UUID delle risorse con identificatori semplici (Vanity ID) per generare un URL personalizzato. Un URL personalizzato è una versione breve, pulita e leggibile del tuo URL di consegna complesso.
+Utilizza [!DNL Dynamic Media with OpenAPI capabilities] per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Gli URL di consegna di risorse standard includono UID di risorse generate dal sistema che rendono l’URL di consegna complesso, difficile da ricordare e condividere. Sostituisci questi UUID delle risorse con identificatori semplici (Vanity ID) per generare un URL personalizzato. Un URL personalizzato è una versione breve, pulita e leggibile del tuo URL di consegna complesso.
 
 Consulta i seguenti formati URL per comprenderne la differenza:
 * [URL di consegna standard](#standard-urls)
@@ -21,7 +21,7 @@ Consulta i seguenti formati URL per comprenderne la differenza:
 
 Gli URL di consegna standard utilizzano `aaid` seguito da un UUID, mentre gli URL personalizzati utilizzano `avid` seguito da un identificatore personalizzato (identificatore personalizzato).
 
-Utilizza identificatori personalizzati brevi e semplici per rendere l’URL della consegna breve, pulito, leggibile, facile da ricordare e da condividere. Utilizza il tuo nome di marchio, i nomi dei prodotti e le parole chiave rilevanti come ID personalizzati per aumentare la visibilità del tuo marchio e il coinvolgimento degli utenti.
+Utilizza identificatori di reindirizzamento brevi e semplici per rendere il tuo URL personalizzato breve, pulito, leggibile, facile da ricordare e da condividere. Utilizza il tuo nome di marchio, i nomi dei prodotti e le parole chiave rilevanti come ID personalizzati per aumentare la visibilità del tuo marchio e il coinvolgimento degli utenti.
 
 Quando l&#39;utente fa clic sull&#39;URL personalizzato, [!DNL Dynamic Media with OpenAPI] viene mappato automaticamente sulla posizione della risorsa originale al momento dell&#39;acquisizione e risolto correttamente al momento della consegna per inviare la risorsa all&#39;utente.
 
@@ -130,11 +130,11 @@ Scopri come [copiare Dynamic Media con gli URL di consegna OpenAPI](/help/assets
 
 Quando l&#39;utente fa clic sull&#39;URL personalizzato, [!DNL Dynamic Media with OpenAPI] associa automaticamente il reindirizzamento all&#39;UUID della risorsa originale al momento dell&#39;acquisizione e lo risolve correttamente al momento della consegna per distribuire la risorsa all&#39;utente senza alcun ritardo. Puoi personalizzare il Vanity URL in tempo reale senza influire sulle prestazioni di consegna delle risorse.
 
-[Migliora l’impatto dei tuoi URL personalizzati utilizzando le funzionalità avanzate di personalizzazione di AEM Cloud Service.](#scale-using-vanity-url)
+[Utilizza le funzionalità avanzate di personalizzazione di AEM Cloud Service con il tuo URL personalizzato per migliorarne l&#39;impatto](#scale-using-vanity-url).
 
 ## Ridimensionare utilizzando gli URL personalizzati{#scale-using-vanity-url}
 
-AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
+AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
 
 Consulta il seguente URL personalizzato e i relativi componenti personalizzabili:
 
@@ -184,7 +184,7 @@ Consulta il seguente URL personalizzato e i relativi componenti personalizzabili
 Esegui la procedura seguente per riscrivere le regole CDN per la consegna:
 
 1. Passa al tuo archivio AEM per creare un file di configurazione YAML.
-2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
+2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
 Segui queste [best practice](#best-practices) per creare il percorso del dominio.
    [Ulteriori informazioni sulle regole di riscrittura CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
@@ -233,9 +233,9 @@ type: transform
 
 ## Segui le best practice per creare URL personalizzati puliti{#best-practices}
 
-Segui queste best practice per la creazione di ID di reindirizzamento, DNS personalizzati e nomi di dominio:
+Segui queste best practice per creare [ID reindirizzamento](#create-vanity-urls), [DNS personalizzati](#customize-dns) e [nomi CDN](#rewrite-cdn-rules):
 
 1. Non utilizzare caratteri speciali negli ID personalizzati, ad esempio spazi, barre, trattini e altro ancora. Il sistema sostituisce i caratteri speciali negli ID personalizzati utilizzando una mappatura predefinita.
-1. Utilizza il tuo nome di marchio, i nomi dei prodotti e le parole chiave pertinenti nei tuoi ID personalizzati, DNS personalizzati e nomi di dominio per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti.
+1. Utilizza il tuo nome commerciale, i nomi dei prodotti e le parole chiave pertinenti nei tuoi [ID visitatore](#create-vanity-urls), [nomi DNS personalizzati](#customize-dns) e [nomi CDN](#rewrite-cdn-rules) per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti.
 1. Utilizza parole brevi e descrittive o stringhe che trasmettono significato.
 1. Utilizza i testi che invitano gli utenti ai clic.
