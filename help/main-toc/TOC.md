@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bf7145e7a4ebf6601670a0721defc411b552aa2e
+source-git-commit: 4f7bca2c4ed4e2d3e02760bc862db0a183a115a4
 workflow-type: tm+mt
 source-wordcount: '6665'
 ht-degree: 97%
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -1115,11 +1115,7 @@ ht-degree: 97%
       + [Panoramica](/help/edge/docs/forms/overview.md)
 
       + Authoring WYSIWYG {#universal-editor}
-         + Elenco a discesa a cascata {#cascading-drop-down-list}
-            + [Introduzione](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-            + [Crea integrazione API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [Creare un modulo](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-            + [Editor universale di moduli per Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Editor universale di moduli per Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Navigare nell’interfaccia dell’editor universale per AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [Guida introduttiva a Edge Delivery Services per moduli AEM utilizzando l’editor universale](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [Creare e pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1136,6 +1132,10 @@ ht-degree: 97%
          + [Creare componenti personalizzati per un modulo EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Risoluzione dei problemi relativi a errori non consentiti 403 nell’invio di Edge Delivery Services Form](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [Crea oggetto lead Salesforce tramite integrazione API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + Elenco a discesa a cascata {#cascading-drop-down-list}
+            + [Introduzione](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+            + [Crea integrazione API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [Crea modulo](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
          + [Come creare moduli utilizzando Fogli Google o Excel - Guida dettagliata](/help/edge/docs/forms/create-forms.md)
