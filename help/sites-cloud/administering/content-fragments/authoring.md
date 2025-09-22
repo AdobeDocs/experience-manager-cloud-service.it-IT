@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2823'
 ht-degree: 6%
 
 ---
@@ -176,9 +176,9 @@ Per ulteriori informazioni, consulta [Generate Variations - Integrated in AEM Ed
 
 Per eliminare una variante del frammento di contenuto:
 
-    >[!NOTE]
-    >
-    >Impossibile eliminare **Main**.
+>[!NOTE]
+>
+>Impossibile eliminare **Principale**.
 
 1. Seleziona la Variante.
 
@@ -267,7 +267,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
