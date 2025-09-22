@@ -3,7 +3,7 @@ title: Controllo degli accessi basato su attributi
 description: Scopri come abilitare il controllo degli accessi basato su attributi per definire regole basate su metadati per definire il livello di accesso alle risorse disponibili in Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Al momento, non è possibile creare autonomamente regole di controllo di accesso
 
 Fare clic su **Scarica foglio di calcolo** per scaricare e definire le regole in un foglio di calcolo. Crea un ticket di supporto Adobe e fornisci ad Adobe le regole definite nel foglio di calcolo.
 
-[!BADGE Scarica il foglio di calcolo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Scarica il foglio di calcolo]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Definisci le regole nel foglio di calcolo utilizzando le linee guida definite in questo articolo.
