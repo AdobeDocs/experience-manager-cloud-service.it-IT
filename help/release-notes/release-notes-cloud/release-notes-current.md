@@ -5,8 +5,8 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: ht
+source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
+workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -149,7 +149,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+-->
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
@@ -161,8 +162,7 @@ La compilazione JavaScript predefinita delle librerie lato client (clientlibs) o
 
 Diverse API obsolete eseguono il targeting della rimozione il 31 agosto e pertanto non è più necessario farvi riferimento. All’inizio di settembre, il Centro azioni invierà notifiche in caso di rilevamento dell’utilizzo delle API; dopo il 25 settembre, verranno visualizzate notifiche durante le build in Cloud Manager per sottolineare l’importanza di cessare tale utilizzo. Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/release-notes/deprecated-removed-features.md#aem-apis). Per comodità, tuttavia, le seguenti API sono elencate di seguito:
 
-<details>
-  <summary>Espandi per visualizzare le rimozioni</summary>
++++ Espandi per visualizzare le rimozioni
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -181,7 +181,7 @@ Diverse API obsolete eseguono il targeting della rimozione il 31 agosto e pertan
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
