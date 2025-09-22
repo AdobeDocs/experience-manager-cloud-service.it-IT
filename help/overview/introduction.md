@@ -4,7 +4,7 @@ description: Scopri come funziona Experience Manager as a Cloud Service e come p
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -23,7 +23,7 @@ AEM as a Cloud Service consente di sfruttare le applicazioni AEM in modo nativo 
 
 * Consentire agli sviluppatori di aggiungere automazione alle procedure di sviluppo delle applicazioni.
 
-* Distribuire i contenuti in modo rapido ed efficiente su scala globale, utilizzando una rete CDN (Content Delivery Network) integrata e altre best practice a livello di rete.
+* Distribuire i contenuti in modo rapido ed efficiente su scala globale, utilizzando una rete per la consegna dei contenuti (CDN) incorporata e altre best practice a livello di rete.
 
 * Sfruttare un’architettura dinamica in grado di adattarsi automaticamente, eliminando in tal modo le considerazioni relative all’infrastruttura.
 
@@ -46,6 +46,7 @@ Con AEM as a Cloud Service,
 * I professionisti del marketing possono accelerare il time-to-value.
 
 >[!NOTE]
+>
 >Consulta l’articolo [Terminologia](terminology.md) per saperne di più su alcuni dei nuovi termini introdotti con AEM as a Cloud Service.
 
 ## Valore aggiunto as a Cloud Service {#value-added-as-a-cloud-service}
