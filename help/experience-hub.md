@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Home page di Adobe Experience Cloud](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. Nel raggruppamento **Accesso rapido**, fai clic su [**Experience Manager**](https://experience.adobe.com).
-1. La prima volta che accedi a questo sito, nella pagina **Informazioni**, fai clic sull&#39;opzione desiderata in modo che Adobe possa personalizzare la tua esperienza.
+1. Al primo accesso, il sistema ti assegna il predefinito **Autore contenuto** (visualizzato nell&#39;angolo superiore destro della pagina). Controlla i widget, gli elementi di navigazione e il contenuto visualizzato.
 
-   È possibile modificare questa preferenza in qualsiasi momento.
+   Potete cambiare questo predefinito in qualsiasi momento.
 
-   ![Indicare le operazioni da eseguire sulla pagina](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+   ![L&#39;elenco a discesa che mostra il predefinito di authoring dei contenuti è selezionato](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 La pagina Adobe Experience Manager è stata aggiornata con una navigazione migliorata e widget interattivi. La precedente raccolta di schede della soluzione forniva accesso a strumenti come i seguenti:
 
