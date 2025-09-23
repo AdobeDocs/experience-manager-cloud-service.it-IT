@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4f7bca2c4ed4e2d3e02760bc862db0a183a115a4
+source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
 workflow-type: tm+mt
-source-wordcount: '6665'
+source-wordcount: '6667'
 ht-degree: 97%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -759,6 +759,8 @@ ht-degree: 97%
 + Moduli {#forms}
    + Panoramica {#forms-overview}
       + [Introduzione](/help/forms/home.md)
+      + [Introduzione 2](/help/forms/home2.md)
+      + [Introduzione3](/help/forms/home3.md)
       + [Innovazioni principali di Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Funzionalità per Accesso anticipato (EA)](/help/forms/early-access-ea-features.md)
       + [Modifiche di rilievo](/help/forms/notable-changes.md)
