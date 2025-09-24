@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '6667'
+source-wordcount: '6675'
 ht-degree: 97%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -839,6 +839,7 @@ ht-degree: 97%
             + [Creare un modello per moduli adattivi basato sui componenti core](/help/forms/template-editor-core-components.md)
             + [Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
+            + [Tag di markup HTML supportati nel documento di record](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
