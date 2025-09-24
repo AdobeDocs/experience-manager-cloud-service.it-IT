@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -67,7 +68,7 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 
 ### Creare una pipeline per sola fase {#stage-only}
 
-1. Nella finestra di dialogo **Aggiungi pipeline non di produzione**, nella scheda **Configurazione**, seleziona il campo **Pipeline di distribuzione** per la pipeline.
+1. Nella scheda **Configurazione** della finestra di dialogo **Aggiungi pipeline non di produzione**, seleziona il campo **Pipeline di distribuzione** per la pipeline.
 1. Nel campo Nome pipeline non di produzione, inserisci un nome a testo libero.
 1. Selezionare le opzioni di distribuzione desiderate, quindi fare clic su **Continua**.
 
@@ -81,7 +82,7 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 
    ![Scheda Codice Source nella finestra di dialogo Aggiungi pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. Nella scheda **Audit dell&#39;esperienza**, l&#39;URL del sito specificato è l&#39;URL di pubblicazione controllato da Cloud Manager per la qualità della pagina.
+1. Nella scheda **Audit dell&#39;esperienza**, l&#39;URL del sito specificato è l&#39;URL pubblicato che Cloud Manager controlla per la qualità delle pagine.
 
 1. Nel campo **Percorso pagina**, specifica le pagine da controllare, quindi fai clic su **![Icona Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Aggiungi pagina**.
 
@@ -94,13 +95,13 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 
 ### Creare una pipeline di sola produzione {#prod-only}
 
-1. Nella finestra di dialogo **Aggiungi pipeline di sola produzione**, immetti il nome della pipeline nel campo di testo **Nome pipeline**.
+1. Nella finestra di dialogo **Aggiungi pipeline di sola produzione**, immetti il nome libero della pipeline nel campo di testo **Nome pipeline**.
 1. Nel campo **Nome pipeline** digitare il nome desiderato.
 1. In **Opzioni di distribuzione di produzione**, seleziona **Sospendi prima della distribuzione in produzione**.
 
    Questa opzione inserisce un gate di approvazione manuale subito prima del passaggio di produzione. La pipeline si interrompe e attende che un approvatore (ad esempio un Responsabile della distribuzione o un Proprietario business) approvi o annulli la distribuzione di produzione.
 
-   Utilizzarlo per il controllo delle modifiche o per i controlli dell&#39;ultimo minuto.
+   Utilizzare per il controllo delle modifiche o i controlli dell&#39;ultimo minuto.
 
 1. Fai clic su **Salva** per creare la pipeline di sola produzione con queste opzioni.
 
@@ -129,7 +130,7 @@ Nei dettagli di esecuzione, dopo i passaggi di test viene visualizzato un pulsan
 
 ![Esecuzione pipeline solo di staging](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Quando si fa clic su **Promuovi build**, se esiste una pipeline di sola fase, viene visualizzata una finestra di dialogo di conferma per avviarla. Fare clic su **Esegui**.
+Quando fai clic su **Promuovi build**, viene visualizzata una finestra di dialogo che consente di confermare l&#39;esecuzione della pipeline correlata di sola produzione. Fai clic su **Esegui** per avviarlo.
 
 ![Promuovi compilazione - Finestra di dialogo Esegui pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ Per una pipeline **solo produzione**, Cloud Manager visualizza gli artefatti di 
 
 
 ![Dettagli artefatto](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
