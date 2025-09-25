@@ -115,7 +115,7 @@ Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 A tal fine, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app dotata di strumenti come nell’esempio seguente.
 
