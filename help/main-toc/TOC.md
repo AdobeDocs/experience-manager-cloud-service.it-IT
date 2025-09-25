@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6680'
 ht-degree: 97%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 97%
    + Note sulla versione funzionale di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
          + [Note sulla versione 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [Note sulla versione 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [Note sulla versione 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
@@ -380,7 +381,7 @@ ht-degree: 97%
       + [Authoring e pubblicazione](/help/sites-cloud/authoring/author-publish.md)
       + [Metodi di authoring](/help/sites-cloud/authoring/authoring-methods.md)
       + [Ricerca](/help/sites-cloud/authoring/search.md)
-      + [Configurazione dell’ambiente dell’account](/help/sites-cloud/authoring/account-environment.md)
+      + [Configurazione dell’ambiente account](/help/sites-cloud/authoring/account-environment.md)
       + [Casella in entrata](/help/sites-cloud/authoring/inbox.md)
       + [Console Componenti](/help/sites-cloud/authoring/components-console.md)
       + [Selezione del percorso](/help/sites-cloud/authoring/path-selection.md)
@@ -526,7 +527,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)

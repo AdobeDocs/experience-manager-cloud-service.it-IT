@@ -4,7 +4,8 @@ description: Scopri come ridurre al minimo l’impatto operativo degli aggiornam
 feature: Deploying
 role: Admin
 badge: label="Disponibilità limitata" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # Ore non interattive e aggiornamento dei periodi liberi {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Questa funzionalità sarà disponibile come **Disponibilità limitata** a partire dal 29 settembre. Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivare la funzionalità nei programmi.
+>Questa funzionalità sarà disponibile come **Disponibilità limitata** a partire dal 25 settembre. Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivare la funzionalità nei programmi.
 
 Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md) di AEM as a Cloud Service garantiscono la protezione delle istanze e l&#39;aggiornamento alle ultime versioni di manutenzione. Detto questo, in alcuni casi (come eventi di pubblicazione) potrebbe essere necessario &quot;proteggere&quot; tali ore di lavoro critiche da potenziali interruzioni. AEM as a Cloud Service offre quindi la possibilità di impostare un intervallo di tempo in cui non si verificano aggiornamenti automatici per i programmi in corso.
 
