@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ Alcuni flussi di lavoro di authoring potrebbero dover limitare la capacità dell
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Disabilitazione di Copia e Incolla {#copy-paste}
+
+Alcuni flussi di lavoro di authoring potrebbero dover limitare la possibilità dell’autore di contenuto di copiare e incollare componenti. È possibile disabilitare le [icone Copia e Incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) aggiungendo i metadati seguenti.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## Modifica dell’endpoint {#custom-endpoint}

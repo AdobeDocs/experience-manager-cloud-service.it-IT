@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.09.18 dell’editor universale
-description: Queste sono le note sulla versione 2025.09.18 dell’editor universale.
+title: Note sulla versione 2025.09.25 dell’editor universale
+description: Queste sono le note sulla versione 2025.09.25 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 67%
+source-wordcount: '224'
+ht-degree: 46%
 
 ---
 
 
-# Note sulla versione 2025.09.18 dell’editor universale {#release-notes}
+# Note sulla versione 2025.09.25 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 18 settembre 2025 di Universal Editor.
+Queste sono le note sulla versione del 25 settembre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Queste sono le note sulla versione del 18 settembre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) è ora utilizzato come endpoint del servizio per AMS invece di dover ospitare il servizio localmente.
-* I campi multipli compositi sono ora supportati quando si utilizza l’authoring AEM.
+* [La funzionalità di copia e incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) può essere [disabilitata utilizzando un tag meta.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [Quando si utilizza l&#39;editor universale in ambienti AEM ospitati,](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) l&#39;editor universale utilizzerà ora il servizio editor universale ospitato da AEM e non si baserà più su un&#39;installazione AMS locale, assicurandosi di disporre sempre automaticamente del servizio Editor universale più recente.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -39,5 +39,5 @@ Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra
 
 ## Altri miglioramenti {#other-improvements}
 
-* Sono stati implementati diversi piccoli miglioramenti delle prestazioni nell’editor universale funziona con AEM come sistema di back-end.
-* I frammenti di contenuto vengono ora pubblicati utilizzando l’API aperta, con miglioramenti delle prestazioni e coerenza rispetto al modo in cui l’Editor frammenti di contenuto e la console pubblicano.
+* La barra delle proprietà è stata corretta quando la si utilizza con l’authoring dei documenti.
+* È stato risolto un problema che si verificava durante la modifica di più campi di un frammento di contenuto con MSM.
