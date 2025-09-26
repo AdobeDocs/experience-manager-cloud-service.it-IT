@@ -44,7 +44,7 @@ Prima di iniziare ad aggiungere una funzione personalizzata al Forms adattivo, v
 
 ## Creare una funzione personalizzata
 
-Crea una libreria client per chiamare funzioni personalizzate nell’editor di regole. Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+Crea una libreria client per chiamare funzioni personalizzate nell’editor di regole. Per ulteriori informazioni, vedere [Utilizzo di librerie lato client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it#developing).
 
 I passaggi per creare funzioni personalizzate sono i seguenti:
 
@@ -57,7 +57,7 @@ Puoi aggiungere funzioni personalizzate aggiungendo una libreria client. Per cre
 
 **Clona l&#39;archivio**
 
-Clona il tuo [archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Clona il tuo [archivio as a Cloud Service di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git):
 
 1. Apri la riga di comando o la finestra del terminale.
 
@@ -171,7 +171,7 @@ Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39
 
    1. Attiva una distribuzione del codice tramite la pipeline full stack esistente. In questo modo viene automaticamente generato e distribuito il codice aggiornato.
 
-Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
 
 Una volta eseguita correttamente la pipeline, la funzione personalizzata aggiunta nella libreria client diventa disponibile nell&#39;[editor di regole per moduli adattivi](/help/forms/rule-editor-core-components.md).
 
