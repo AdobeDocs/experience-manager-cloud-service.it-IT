@@ -166,7 +166,7 @@ Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/
 
 Accelera lo sviluppo di AEM Forms Edge Delivery Services con lo strumento AEM Forms CLI. Questa interfaccia della riga di comando consente di generare immediatamente il codice e il cablaggio necessari per avviare lo sviluppo di componenti personalizzati, senza problemi o problemi.
 
->[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Funzionalità chiave:**
 
