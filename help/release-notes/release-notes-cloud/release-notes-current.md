@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -267,7 +267,7 @@ Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei
 
 ### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
-Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
+Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
 
 
 ## Guide di [!DNL Experience Manager] {#guides}
