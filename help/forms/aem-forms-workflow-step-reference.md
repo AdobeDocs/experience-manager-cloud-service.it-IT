@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 'Utilizza i flussi di lavoro di AEM: assegna passaggi di un’attività, converti in un passaggio PDF/A, Genera un documento del passaggio registrato, Utilizza flussi di lavoro, Firma il passaggio del documento, Genera un passaggio di output stampato, Genera un output PDF non interattivo'
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '7370'
+source-wordcount: '7409'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem).
+Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Passaggi incentrati su Forms {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
     -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Partecipanti]**: il campo è disponibile quando l&#39;opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo **[!UICONTROL Selettore partecipanti]**. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -189,7 +189,7 @@ Il passaggio Converti in PDF/A ha le seguenti proprietà:
 
 Utilizzare il passaggio e-mail per inviare un messaggio e-mail, ad esempio un messaggio e-mail con un documento Record, un collegamento di un modulo adattivo <!-- , link of an interactive communication--> o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
 
 Il passaggio e-mail presenta le seguenti proprietà:
 
@@ -362,7 +362,12 @@ Il passaggio del servizio Richiama modello dati modulo dispone dei campi elencat
 
    * **[!UICONTROL Relativo al payload]**: utilizzare l&#39;opzione per recuperare l&#39;allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
 
-     Se ad esempio la cartella Relativa al payload nel repository di CRX include un file allegato nel percorso `attachment\attachment-folder`, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato l&#39;opzione **[!UICONTROL Relativa al payload]**.
+     >[!NOTE]
+     >
+     > Il passaggio del flusso di lavoro **Richiama modello dati modulo** supporta i metadati lato flusso di lavoro per gli array di allegati con codifica Base64 in [Modelli dati modulo basati su elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) e consente ai flussi di lavoro di passare, archiviare e recuperare metadati quali nome file, tipo MIME o proprietà personalizzate per gli allegati.
+     > ![Allegati elenco SP](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > La cartella relativa al payload include un file allegato nel percorso `attachment`. Specificare `attachment` nella casella di testo dopo aver selezionato l&#39;opzione **[!UICONTROL relativa al payload]**.
 
    * **[!UICONTROL Notazione con punti JSON]**: utilizza l&#39;opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input dall’opzione JSON di input.
    * **[!UICONTROL Mappa i campi di input da JSON di input]**: specifica il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Form Data Model (FDM).

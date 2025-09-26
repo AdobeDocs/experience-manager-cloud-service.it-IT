@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ La tabella seguente descrive alcuni scenari in cui è possibile utilizzare il se
 | **Imposta il pannello ripetibile utilizzando l&#39;output del servizio di richiamo** | Configura un pannello ripetibile utilizzando i dati dell’output del servizio Invoke, consentendo l’utilizzo di pannelli dinamici. [Fare clic qui](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) per visualizzare l&#39;implementazione. |
 | **Imposta il pannello utilizzando l&#39;output di Invoke Service** | Imposta il contenuto o la visibilità di un pannello utilizzando valori specifici dell’output del servizio di richiamo. [Fare clic qui](#use-case-3-set-panel-using-output-of-invoke-service) per visualizzare l&#39;implementazione. |
 | **Usa il parametro di output del servizio di richiamo per convalidare altri campi** | Utilizza parametri di output specifici dal servizio di richiamo per convalidare i campi del modulo. [Fare clic qui](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) per visualizzare l&#39;implementazione. |
+| **Utilizzare il payload degli eventi in Accedi all&#39;azione nel servizio di richiamo** | Utilizza il payload dell’evento per gestire le risposte di esito positivo e negativo e per trasmettere i dati all’azione Vai a durante la navigazione. [Fai clic qui](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) per visualizzare l&#39;implementazione. |
 
 Creare un modulo `Get Information` che recuperi i valori in base all&#39;input immesso nella casella di testo `Pet ID`. La schermata seguente mostra il modulo utilizzato in questi casi d’uso:
 
@@ -142,7 +143,6 @@ Pubblichiamo il seguente JSON utilizzando il servizio [addPet](https://petstore.
         "status": "available"
     }
 ```
-
 
 Le regole e la logica vengono implementate utilizzando l&#39;azione **Richiama servizio** nell&#39;editor delle regole nella casella di testo `Pet ID` per dimostrare i casi d&#39;uso menzionati.
 
@@ -222,9 +222,38 @@ Immettere `102` nella casella di testo `Pet ID` e il pulsante **Invia** è nasco
 
 ![Output](/help/forms/assets/output4.png)
 
+### Caso d&#39;uso 5: utilizzo del payload degli eventi in Accedi all&#39;azione nel servizio di richiamo
+
+Questo caso d&#39;uso illustra come configurare una regola sul pulsante **Invia** che chiama un **Richiama servizio** e reindirizza l&#39;utente a un&#39;altra pagina utilizzando l&#39;azione **Accedi a**.
+
+#### Implementazione
+
+Creare una regola sul pulsante **Invia** per richiamare il servizio API `redirect-api`. Questo servizio è responsabile del reindirizzamento dell&#39;utente al modulo **Contattaci**.
+
+È possibile integrare direttamente un&#39;API come servizio API `redirect-api` nell&#39;editor di regole utilizzando i dati JSON forniti di seguito:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> È inoltre possibile [integrare l&#39;API direttamente nell&#39;interfaccia dell&#39;editor di regole](/help/forms/api-integration-in-rule-editor.md) senza utilizzare un modello dati modulo predefinito.
+> Per scoprire come integrare le API direttamente nell&#39;interfaccia dell&#39;editor di regole, [fai clic qui](/help/forms/api-integration-in-rule-editor.md) senza utilizzare un modello dati modulo predefinito.
+
+In **[!UICONTROL Aggiungi gestore di successo]**, configura l&#39;azione **Accedi a** per reindirizzare l&#39;utente alla pagina **Contattaci** utilizzando il parametro `Event Payload`. In questo caso, l’utente può inviare i propri dettagli di contatto.
+
+![Payload evento](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Facoltativamente, configura un gestore degli errori per visualizzare un messaggio di errore se la chiamata al servizio non riesce.
+
+#### Output
+
+Quando si fa clic sul pulsante **Invia**, viene richiamato il servizio API `redirect-api`. Dopo il completamento, l&#39;utente viene reindirizzato alla pagina **Contattaci**.
+
+![Output payload evento](/help/forms/assets/output5.gif)
 
 ## Domande frequenti
 

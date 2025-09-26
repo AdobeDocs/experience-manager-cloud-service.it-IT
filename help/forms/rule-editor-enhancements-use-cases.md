@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -22,12 +22,12 @@ La tabella seguente elenca i recenti miglioramenti apportati all’editor di reg
 
 | Miglioramento | Descrizione | Vantaggi |
 |---|----|---|
-| **Convalida tramite il metodo `validate()`** | Disponibile nell’elenco delle funzioni per convalidare singoli campi, pannelli o l’intero modulo. | - Convalida granulare a livello di pannello, campo o modulo <br> - Migliore esperienza utente con messaggi di errore mirati <br> - Impedisce la progressione con dati incompleti <br> - Riduce gli errori di invio dei moduli |
-| **Scarica DOR** | Funzione predefinita disponibile nell’editor delle regole per scaricare il documento record (DoR). | - Non è richiesto alcuno sviluppo personalizzato per il download del DoR <br> - Esperienza di download coerente tra i moduli |
-| **Variabili dinamiche** | Crea regole utilizzando variabili che cambiano in base all’input dell’utente o ad altre condizioni. | - Abilita le condizioni di regola flessibili <br> - Riduce la necessità di duplicare la logica <br> - Elimina la necessità di creare campi nascosti |
-| **Regole personalizzate basate su eventi** | Definisci regole che rispondono a eventi personalizzati oltre i trigger standard. | - Supporta casi d&#39;uso avanzati <br> - Maggiore controllo su quando e come vengono eseguite le regole <br> - Maggiore interattività |
-| **Esecuzione del pannello ripetibile in base al contesto** | Le regole ora vengono eseguite nel contesto corretto per ogni pannello ripetuto, anziché solo l’ultima istanza. | - Applicazione accurata delle regole per ogni istanza ripetuta <br> - Riduzione degli errori nelle sezioni dinamiche <br> - Miglioramento dell&#39;esperienza utente con contenuti ripetuti |
-| **Supporto per stringa di query, UTM e parametri del browser** | Crea regole che adattano il comportamento del modulo in base a parametri URL o valori specifici del browser. | - Abilita la personalizzazione in base all&#39;origine o all&#39;ambiente <br> - Utile per flussi specifici di marketing o tracciamento <br> - Non è necessario aggiungere script o personalizzazioni |
+| [Convalida tramite il metodo validate()](#validate-method-in-function-list) | Disponibile nell’elenco delle funzioni per convalidare singoli campi, pannelli o l’intero modulo. | - Convalida granulare a livello di pannello, campo o modulo <br> - Migliore esperienza utente con messaggi di errore mirati <br> - Impedisce la progressione con dati incompleti <br> - Riduce gli errori di invio dei moduli |
+| [Scarica documento record](#download-document-of-record) | Funzione predefinita disponibile nell’editor delle regole per scaricare il documento record (DoR). | - Non è richiesto alcuno sviluppo personalizzato per il download del DoR <br> - Esperienza di download coerente tra i moduli |
+| [Variabili dinamiche](#support-for-dynamic-variables-in-rules) | Crea regole utilizzando variabili che cambiano in base all’input dell’utente o ad altre condizioni. | - Abilita le condizioni di regola flessibili <br> - Riduce la necessità di duplicare la logica <br> - Elimina la necessità di creare campi nascosti |
+| [Regole personalizzate basate su eventi](#custom-event-based-rules-support) | Definisci regole che rispondono a eventi personalizzati oltre i trigger standard. | - Supporta casi d&#39;uso avanzati <br> - Maggiore controllo su quando e come vengono eseguite le regole <br> - Maggiore interattività |
+| [Esecuzione del pannello ripetibile in base al contesto](#context-based-rule-execution-for-repeatable-panels) | Le regole ora vengono eseguite nel contesto corretto per ogni pannello ripetuto, anziché solo l’ultima istanza. | - Applicazione accurata delle regole per ogni istanza ripetuta <br> - Riduzione degli errori nelle sezioni dinamiche <br> - Miglioramento dell&#39;esperienza utente con contenuti ripetuti |
+| [Supporto per stringa di query, UTM e parametri del browser](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Crea regole che adattano il comportamento del modulo in base a parametri URL o valori specifici del browser. | - Abilita la personalizzazione in base all&#39;origine o all&#39;ambiente <br> - Utile per flussi specifici di marketing o tracciamento <br> - Non è necessario aggiungere script o personalizzazioni |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Nella regola precedente, il pulsante **Successivo** controlla se i campi nella s
 >
 >È possibile utilizzare il metodo **validate()** su moduli, frammenti o singoli campi. Quando un frammento è incluso in un modulo, sia il modulo che il frammento vengono visualizzati come opzioni nel contesto di convalida. In questo caso, il frammento si riferisce ai campi al suo interno, mentre il modulo si riferisce al modulo principale in cui è incorporato il frammento.
 
-## Funzione DownloadDor as OOTB nell’editor di regole
+## Scarica documento record
 
 L&#39;utilizzo della funzione **DownloadDor()** preconfigurata nell&#39;editor di regole consente di scaricare il documento di record, se il modulo è configurato per generare il documento di record.
 
@@ -124,7 +124,7 @@ Il campo **Costo totale spedizione** viene aggiornato in modo dinamico per rifle
 >[!NOTE]
 >
 > È inoltre possibile aggiungere la funzione **Ottieni valore variabile** nella condizione When.
-> &#x200B;> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Questo approccio consente di eseguire calcoli dinamici e in tempo reale senza aggiungere campi aggiuntivi al modulo, mantenendo la struttura pulita e intuitiva.
 

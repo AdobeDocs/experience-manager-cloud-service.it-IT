@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 19%
+source-wordcount: '2940'
+ht-degree: 20%
 
 ---
 
@@ -118,6 +118,11 @@ Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la
 
 * **Editor regole**: crea azioni dinamiche basate su dati direttamente nei tuoi documenti tramite un&#39;interfaccia intuitiva e intuitiva. Definisci facilmente la logica condizionale, automatizza i flussi di lavoro e personalizza i contenuti senza scrivere codice.
 
+* **Anteprima PDF:** visualizza l&#39;anteprima della comunicazione interattiva senza dati, file JSON locali o modelli di dati per test flessibili basati sui dati.
+* **Tipi di carattere personalizzati:** incorpora tipi di carattere personalizzati o approvati dall&#39;organizzazione per garantire un rendering PDF coerente e personalizzato tra i dispositivi.
+* **Importa ed esporta:** Esegui la migrazione e riutilizza la comunicazione interattiva con i relativi frammenti e modelli di dati in ambienti diversi.
+
+
 #### Casi d’uso:
 
 * Enti finanziari che generano gli estratti conto
@@ -161,7 +166,7 @@ Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/
 
 Accelera lo sviluppo di AEM Forms Edge Delivery Services con lo strumento AEM Forms CLI. Questa interfaccia della riga di comando consente di generare immediatamente il codice e il cablaggio necessari per avviare lo sviluppo di componenti personalizzati, senza problemi o problemi.
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Funzionalità chiave:**
 
@@ -262,7 +267,7 @@ Nel complesso, le [API Doc Assurance](https://developer.adobe.com/experience-man
 
 ### API dei servizi Forms
 
-Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare/esportare dati in/da un modulo PDF interattivo esistente e convalidare i dati inviati. Ecco una suddivisione delle sue funzionalità:
+Il servizio Forms genera moduli PDF interattivi per l’acquisizione dei dati. Può essere utilizzato anche per importare/esportare dati in/da un modulo PDF interattivo esistente e convalidare i dati inviati. Ecco un riepilogo delle sue funzionalità:
 
 * **Rendering di moduli**: genera un modulo PDF interattivo da un modello creato con AEM Forms Designer e, facoltativamente, da dati XML. In sostanza, questo produce un modulo PDF compilabile, facoltativamente precompilato con i dati.
 
@@ -283,6 +288,10 @@ L’archiviazione dei PDF in Azure Blob Storage consente la gestione centralizza
 * **Protezione migliorata**: sfruttando le funzionalità di protezione integrate di Azure, ad esempio la crittografia a riposo e il controllo degli accessi basato sui ruoli, i documenti sensibili rimangono protetti durante l&#39;archiviazione.
 
 * **Percorsi di archiviazione personalizzabili**: la possibilità di definire percorsi di directory personalizzati garantisce che i PDF generati vengano archiviati in percorsi organizzati e specifici dell&#39;applicazione, migliorando la gestione dei file.
+
+### Miglioramenti nell’Editor di regole visive
+
+* L&#39;editor di regole visive in Forms adattivo ora supporta l&#39;integrazione di [API diretta senza richiedere un modello dati modulo](/help/forms/api-integration-in-rule-editor.md). Puoi connetterti a un endpoint API immettendo il relativo URL JSON o importando la configurazione utilizzando un comando cURL. Dopo l&#39;integrazione, l&#39;API può essere richiamata utilizzando l&#39;azione `Invoke Service`.
 
 ## Consulta anche
 
