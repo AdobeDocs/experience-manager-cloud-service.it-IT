@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 69%
+source-wordcount: '1905'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Nuove funzioni in Experience Manager Forms {#new-features-forms}
 
-**Componente Data e ora**
+**Richiama il passaggio del flusso di lavoro del modello dati modulo per gli allegati dell&#39;elenco di SharePoint**
 
-È ora disponibile un[componente Data e ora](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) che consente agli utenti di selezionare sia la data che l’ora utilizzando un’interfaccia con calendario e orologio, oppure inserendo manualmente i valori in un formato supportato.
-
-**Gestione avanzata degli errori per i caricamenti di file**
-
-Il [componente Allegato file](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) ora convalida automaticamente il tipo di file caricato rispetto all’elenco Consentiti. Se un utente carica un file in un formato non supportato, il modulo mostra un errore durante l’invio. Il componente controlla anche il contenuto del file per convalidarne il tipo, migliorando la sicurezza complessiva del modulo.
-
-**Risposta di errore specificata per azione di invio personalizzata**
-
-Quando un’[azione di invio personalizzata](/help/forms/custom-submit-action-troubleshooting.md) rileva un errore non gestito, il sistema restituisce il codice di errore 502. Questo aiuta a identificare che il problema è correlato all’azione di invio personalizzata, semplificando il debug.
-
-**Esclusione dei campi nascosti dal documento record**
-
-Una nuova proprietà consente di escludere i campi nascosti dal [documento record](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). Per impostazione predefinita, questa opzione non è selezionata e si applica a tutti i campi modulo.
-
+Il passaggio del flusso di lavoro Richiama modello dati modulo ora supporta la gestione dei metadati lato flusso di lavoro per gli array di allegati con codifica Base64 nei modelli dati modulo basati su elenco SharePoint. Con questo miglioramento, il passaggio del flusso di lavoro può trasmettere, archiviare e recuperare metadati quali nome file, tipo MIME e proprietà personalizzate per ogni allegato. Questa funzionalità consente una gestione dei dati più completa e agevola l’integrazione diretta a valle. Per informazioni dettagliate, vedere [Supporto avanzato nel passaggio del flusso di lavoro Richiama modello dati modulo per allegati elenco SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
 ### Funzioni pre-release in AEM Forms
 
-**Generare e sincronizzare rappresentazioni AFP**
+**Miglioramenti all&#39;editor di regole**
 
-È ora possibile utilizzare [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) per convertire un file XDP in formato AFP. L’AFP è un formato ad alte prestazioni ampiamente utilizzato nella stampa aziendale su larga scala.
+L’Editor regole ora supporta la navigazione avanzata e consente l’utilizzo di espressioni matematiche e funzionali nei parametri di input.
 
-**Miglioramenti all’editor di regole**
+**Navigazione migliorata con supporto payload eventi**
 
-* [Metodo di convalida nell’elenco funzioni](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): i metodi di convalida e ripristino supportano ora l’esecuzione a livello di pannello, campo e modulo. In precedenza, erano supportati solo a livello di modulo.
-* [Supporto moderno di JavaScript](/help/forms/rule-editor-core-components-difference-tables.md): è stato aggiunto il supporto per le funzioni personalizzate di ECMAScript 2019 e versioni successive, che consente di scrivere codice più efficiente, modulare e riutilizzabile.
-* [Opzione di download del DoR nell’editor di regole](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): una funzione per scaricare il documento record (DoR) è stata aggiunta come opzione predefinita (OOTB) nell’editor di regole.
+L&#39;azione `Navigate To` nei gestori del servizio Invoke ora supporta `EVENT_PAYLOAD`, consentendo agli autori di moduli di configurare azioni di follow-up in base alle risposte agli eventi. Questo miglioramento offre una maggiore flessibilità nella progettazione dei flussi di lavoro dopo l’invio, garantendo transizioni più fluide ed esperienze utente più personalizzate. Per ulteriori informazioni, vedere [Navigazione avanzata con supporto payload eventi](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-  ![Documento record](/help/forms/assets/document-of-record-rn.gif)
+**Supporto di espressioni matematiche e funzioni nei parametri di input**
 
-* [Variabili dinamiche nell’editor di regole](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): è ora possibile utilizzare variabili dinamiche (temporanee) nell’editor di regole per una maggiore flessibilità nella definizione di condizioni e azioni. I campi nascosti non sono più necessari per memorizzare valori temporanei.
-* [Supporto di regole basate su eventi personalizzati](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): è ora possibile definire eventi personalizzati e attivare regole in base a tali eventi.
-* [Regole pannello ripetibili in base al contesto](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): nei pannelli ripetibili, le regole vengono ora eseguite in base al contesto, anziché essere applicate solo all’ultima istanza del pannello.
-* [Regole attivate dai parametri](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): l’editor di regole ora supporta l’esecuzione di regole basate su parametri di query, di UTM o relativi al browser.
-* [Funzioni personalizzate specifiche del modulo](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): i moduli Edge Delivery Services ora supportano script di funzioni personalizzate specifiche del modulo, fornendo maggiore flessibilità nella gestione della logica riutilizzabile.
-* [Importazioni statiche per funzioni personalizzate](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): l’editor di regole nell’editor universale ora supporta le importazioni statiche, consentendo agli sviluppatori di organizzare, condividere e riutilizzare le funzioni in più moduli.
+I parametri di input ora supportano sia le chiamate di funzione che le espressioni matematiche, consentendo agli autori dei moduli di trasmettere direttamente i valori calcolati in modo dinamico. Questo miglioramento semplifica le configurazioni delle regole, elimina la necessità di campi aggiuntivi e rende i moduli più adattabili a scenari logici complessi e basati su calcoli. Per ulteriori informazioni, vedere [Supporto di espressioni matematiche e funzioni nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità uni
 
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Componente Firma scarabocchio**
+**Anteprima PDF nell&#39;Editor comunicazioni interattive**
 
-È ora possibile utilizzare il componente [Firma scarabocchio](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) per consentire agli utenti di aggiungere le firme a un modulo, ad esempio in un modulo di accordo. Il componente consente agli utenti di disegnare la propria firma direttamente all’interno del modulo utilizzando un mouse, uno stilo o uno schermo tattile.
+Gli utenti possono visualizzare in anteprima i PDF di comunicazione interattiva senza dati, con file di dati JSON locali o con dati provenienti da un modello di dati, consentendo test flessibili basati sui dati. Per ulteriori informazioni, vedere [Anteprima PDF nell&#39;Editor comunicazioni interattive](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Integrazione diretta API nell’editor di regole**
+**Supporto di caratteri personalizzati nella comunicazione interattiva**
 
-I moduli adattivi ora supportano [l’integrazione diretta API](/help/forms/api-integration-in-rule-editor.md) nell’editor di regole visivo senza richiedere un modello dati modulo. Gli autori possono configurare le API utilizzando un URL o tramite un’importazione cURL, mappare i parametri di input/output e proteggere le chiamate con l’autenticazione.
+La funzione Font personalizzati consente agli utenti di incorporare font personalizzati o approvati dall’organizzazione nelle comunicazioni interattive, garantendo un rendering PDF coerente e personalizzato su dispositivi e piattaforme. Per ulteriori informazioni, vedere [Supporto di caratteri personalizzati nella comunicazione interattiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+
+**Importa ed esporta comunicazioni interattive**
+
+Questa funzione consente la migrazione e il riutilizzo delle comunicazioni interattive in ambienti diversi. Ora puoi esportare una comunicazione interattiva con i frammenti e i modelli di dati associati da un ambiente e importarla in un altro. Per ulteriori informazioni, vedere [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -283,7 +267,7 @@ Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei
 
 ### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
-Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
+Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
 
 
 ## Guide di [!DNL Experience Manager] {#guides}
