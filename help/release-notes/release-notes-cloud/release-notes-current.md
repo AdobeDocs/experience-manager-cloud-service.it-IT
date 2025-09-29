@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
+source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 48%
+source-wordcount: '1875'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -240,8 +240,6 @@ Autenticazione Edge consente di limitare l’accesso alle pagine Edge Delivery S
 
 Se sei interessato, invia una e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d&#39;uso e le domande che potresti avere.
 
-Separatamente da Edge Delivery Services, all&#39;inizio di quest&#39;anno è stata rilasciata una funzionalità per configurare Open ID Connect [per i progetti AEM Cloud Service a livello di pubblicazione](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) per proteggere le pagine AEM.
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
@@ -267,7 +265,7 @@ Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei
 
 ### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
-Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
+Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
 
 
 ## Guide di [!DNL Experience Manager] {#guides}
