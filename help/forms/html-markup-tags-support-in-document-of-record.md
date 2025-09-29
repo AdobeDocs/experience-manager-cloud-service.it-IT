@@ -3,13 +3,13 @@ title: Tag di markup HTML supportati nel documento di record
 description: La guida di riferimento per i tag di markup HTML è ora supportata nella generazione del documento di record, incluse considerazioni sul comportamento di rendering e sull’accessibilità
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 7%
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
-
 
 
 # Tag di markup HTML supportati nel documento di record
@@ -132,23 +132,10 @@ Questi tag non sono supportati e non verranno visualizzati correttamente:
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## Informazioni correlate
+## Contenuto correlato
 
-### Documentazione di AEM Forms
 
 - [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [Genera documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md)
 - [Personalizzazione del modello del documento record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### Riferimenti tecnici
-
-- [Specifica XFA - Attributi XHTML e CSS](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) (pagina 1187)
-- [Standard di accessibilità PDF](https://www.w3.org/TR/WCAG21/)
-- [Mappature API di accessibilità di base](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### Guide alle best practice
-
-- [Creazione di PDF accessibili](https://www.adobe.com/accessibility/pdf.html)
-- [Best practice per l’utilizzo di testo RTF nei moduli](/help/forms/creating-accessible-adaptive-forms.md)
-- [Struttura del documento per l’accessibilità](/help/forms/creating-accessible-adaptive-forms.md)
 
