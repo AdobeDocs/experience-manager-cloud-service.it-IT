@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
-source-wordcount: '6698'
-ht-degree: 97%
+source-wordcount: '6799'
+ht-degree: 95%
 
 ---
 
@@ -527,7 +527,7 @@ ht-degree: 97%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -564,7 +564,7 @@ ht-degree: 97%
       + [Attività comuni di gestione risorse](/help/assets/manage-digital-assets.md)
       + [Gestisci pubblicazione](/help/assets/manage-publication.md)
       + [Anteprima delle risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-      + [Tag avanzati per immagini](/help/assets/smart-tags.md)
+      + [Abilita tag avanzati per immagini](/help/assets/smart-tags.md)
       + [Tag avanzati per video](/help/assets/smart-tags-for-videos.md)
       + [Organizzare le risorse](/help/assets/organize-assets.md)
       + [Utilizzare [!DNL Adobe Stock] risorse](/help/assets/aem-assets-adobe-stock.md)
@@ -970,8 +970,23 @@ ht-degree: 97%
       + [Creare una comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Creare un modello di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Creare un frammento di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
       + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
+      + [Oggetto Casella di testo nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
+      + [Oggetto immagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
+      + [Oggetto campo immagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
+      + [Oggetto Campo di testo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
+      + [Oggetto campo numerico nell’editor di comunicazione interattiva](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
+      + [Oggetto campo data/ora nell’editor di comunicazione interattiva](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
+      + [Oggetto campo data nell’editor di comunicazione interattiva](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
+      + [Oggetto CheckBox nell’editor di comunicazione interattiva](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
+      + [Oggetto pulsante di scelta nell’editor di comunicazione interattiva](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
+      + [Oggetto Subform nell’editor di comunicazione interattiva](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
+      + [Oggetto Rectangle nell&#39;editor di comunicazioni interattive](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
+      + [Oggetto Table nell’editor di comunicazione interattiva](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
+      + [Oggetto Line nell&#39;editor di comunicazioni interattive](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
+      + [Oggetto Barcode nell’editor di comunicazioni interattive](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + [Associazione dati nell’editor di comunicazione interattiva](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
+      + [Creazione di regole nell’editor di comunicazioni interattive](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [Aggiungere caratteri personalizzati all’editor di comunicazione interattiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [Anteprima PDF nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)

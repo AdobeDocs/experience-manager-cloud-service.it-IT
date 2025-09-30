@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 1%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ Crea moduli utilizzando l’approccio di authoring più adatto alle tue esigenze
 | **Funzionamento:** progettare comunicazioni personalizzate che combinano contenuti statici con dati dinamici per canali di stampa e digitali. |
 | **Quando utilizzare:** Rendiconti cliente, fatture, avvisi, comunicazioni personalizzate, flussi di lavoro basati su documenti. |
 | 📄 Progettazione documento visivo 📄 Integrazione dati dinamici 📄 Output multicanale 📄 Personalization |
-| [Introduzione alle comunicazioni interattive →](/help/forms/introduction-to-interactive-communication.md) |
+| [Introduzione alle comunicazioni interattive →](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## Dati e integrazione 🔗 {#data-integration}
 
@@ -254,7 +254,7 @@ Ottimizzazione dei moduli mediante test di layout, disposizioni sul campo e flus
 
 Gestione centralizzata dei moduli, controllo dell&#39;accesso degli utenti e funzionalità di governance per l&#39;implementazione di moduli su scala aziendale.
 
-### Portale moduli {#forms-portal}
+### Portale dei moduli {#forms-portal}
 
 Archivio di moduli centralizzato con funzionalità di ricerca, categorizzazione dei moduli, gestione delle bozze e monitoraggio dell’invio in un’interfaccia unificata.
 
@@ -266,7 +266,7 @@ Archivio di moduli centralizzato con funzionalità di ricerca, categorizzazione 
 
 [Configurare Forms Portal →](/help/forms/configure-forms-portal.md)
 
-### User Management {#user-management}
+### Gestione utenti {#user-management}
 
 Controllo dell’accesso basato sui ruoli con autorizzazioni granulari per la creazione, la modifica, la pubblicazione e l’amministrazione dei moduli all’interno dell’organizzazione.
 
@@ -304,7 +304,7 @@ Scegli il tuo punto di partenza in base alle tue esigenze immediate e ai tuoi re
 
 **Per la modernizzazione XFA:** Inizia con [HTML5 Forms](/help/forms/introductionhtml5.md)
 
-**Per le comunicazioni documenti:** Inizia con [Comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md)
+**Per le comunicazioni documenti:** Inizia con [Comunicazioni interattive](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Guida rapida all’integrazione dei dati {#integration-start}
 

@@ -4,14 +4,15 @@ description: Progettazione di comunicazioni dinamiche e basate su dati con facil
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 2%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
-
 
 # Comunicazioni interattive
 
@@ -32,18 +33,18 @@ Le funzionalità principali dell&#39;editor di comunicazioni interattive sono:
 
 | Funzionalità | Descrizione | Disponibilità |
 |------------|-------------|--------------|
-| Design semplice | Interfaccia semplice e intuitiva che richiede una conoscenza tecnica minima | ✅ disponibile |
-| Integrazione dei dati | Connessione a schemi, database e servizi Web per la generazione di contenuti dinamici | ✅ disponibile |
-| Contenuti multimediali avanzati | Incorporare testo, immagini ed elementi interattivi in modo semplice | ✅ disponibile |
-| Controllo della versione | Tenere traccia delle modifiche e gestire la cronologia dei documenti | ✅ disponibile |
-| Supporto modelli | Creazione da zero o utilizzo di modelli per una generazione efficiente dei documenti | ✅ disponibile |
-| Integrazione cloud | Modificare i documenti direttamente in AEM Forms as a Cloud Service | ✅ disponibile |
-| Frammenti del documento | Riutilizzo di blocchi di contenuto modulari su più documenti per coerenza ed efficienza | ✅ disponibile |
-| Associazione dati in linea | Associa i dati direttamente all’interno del contenuto per la personalizzazione in tempo reale senza configurazioni esterne | ✅ disponibile |
-| Più componenti | Utilizzo di diversi componenti per creare documenti complessi e coinvolgenti | ✅ disponibile |
-| Progettazione multicanale | Creazione di esperienze unificate su formati stampati e digitali con conformità alle normative | ?? Parzialmente disponibile |
-| Contenuto dinamico | Generare contenuti personalizzati utilizzando la logica di business e l’associazione dati | ?? Parzialmente disponibile |
-| Flessibilità del formato | Output nei formati PDF, HTML, PCL, PostScript®️ e ZPL | ?? Parzialmente disponibile |
+| Design semplice | Interfaccia semplice e intuitiva che richiede una conoscenza tecnica minima | ✅ disponibili |
+| Integrazione dei dati | Connessione a schemi, database e servizi Web per la generazione di contenuti dinamici | ✅ disponibili |
+| Contenuti multimediali avanzati | Incorporare testo, immagini ed elementi interattivi in modo semplice | ✅ disponibili |
+| Controllo della versione | Tenere traccia delle modifiche e gestire la cronologia dei documenti | ✅ disponibili |
+| Supporto modelli | Creazione da zero o utilizzo di modelli per una generazione efficiente dei documenti | ✅ disponibili |
+| Integrazione cloud | Modificare i documenti direttamente in AEM Forms as a Cloud Service | ✅ disponibili |
+| Frammenti del documento | Riutilizzo di blocchi di contenuto modulari su più documenti per coerenza ed efficienza | ✅ disponibili |
+| Associazione dati in linea | Associa i dati direttamente all’interno del contenuto per la personalizzazione in tempo reale senza configurazioni esterne | ✅ disponibili |
+| Più componenti | Utilizzo di diversi componenti per creare documenti complessi e coinvolgenti | ✅ disponibili |
+| Progettazione multicanale | Creazione di esperienze unificate su formati stampati e digitali con conformità alle normative | 🌓 Parzialmente Disponibile |
+| Contenuto dinamico | Generare contenuti personalizzati utilizzando la logica di business e l’associazione dati | 🌓 Parzialmente Disponibile |
+| Flessibilità del formato | Output nei formati PDF, HTML, PCL, PostScript®️ e ZPL | 🌓 Parzialmente Disponibile |
 | Supporto lingua | Creazione di comunicazioni in più lingue con il supporto di tipi di carattere personalizzati | ⏳ Disponibile A Breve |
 
 ## Onboarding

@@ -4,12 +4,14 @@ description: Crea frammenti di comunicazione interattiva in AEM Forms per creare
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 18%
 
 ---
+
 
 # Creare un frammento di comunicazione interattiva
 
@@ -39,7 +41,7 @@ Per creare un frammento di comunicazione interattivo, effettua le seguenti opera
 
 1. Dopo aver selezionato il frammento di comunicazione interattiva, viene visualizzata una schermata in cui vengono definiti i dettagli chiave del frammento, ad esempio titolo, nome, descrizione, modello dati (una rappresentazione strutturata dei dati di back-end) e tag.
 
-   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Trova documento IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

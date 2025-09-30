@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # Introduzione ad AEM Forms as a Cloud Service {#introduction}
 
@@ -95,7 +95,7 @@ Implementa [logica condizionale](/help/forms/rule-editor-core-components.md), di
 Esegui il rendering dei moduli basati su XFA come [moduli HTML5](/help/forms/introductionhtml5.md) per dispositivi mobili e browser legacy. HTML5 Forms offre un’esperienza mobile nativa senza plug-in, mantenendo al contempo la logica del modulo e la convalida dai modelli XDP originali.
 
 **Comunicazioni interattive**
-Creare comunicazioni incentrate sui documenti, ad esempio rendiconti, fatture e avvisi, utilizzando un editor visivo. [Le comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md) combinano il contenuto statico con i dati dinamici per generare comunicazioni personalizzate tra i canali di stampa e digitali.
+Creare comunicazioni incentrate sui documenti, ad esempio rendiconti, fatture e avvisi, utilizzando un editor visivo. [Le comunicazioni interattive](/help/forms/interactive-communication/create-interactive-communication.md) combinano il contenuto statico con i dati dinamici per generare comunicazioni personalizzate tra i canali di stampa e digitali.
 
 ### Governare: revisione e conformità {#govern}
 
@@ -249,7 +249,7 @@ Per requisiti complessi che coinvolgono più sistemi, generazione di documenti e
 **Servizi documentali e comunicazioni:**
 
 1. **[Implementazione delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md)** per la generazione automatica dei documenti
-2. **[Crea comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md)** per istruzioni e avvisi personalizzati
+2. **[Crea comunicazioni interattive](/help/forms/interactive-communication/create-interactive-communication.md)** per istruzioni e avvisi personalizzati
 3. **[Configura Forms Portal](/help/forms/configure-forms-portal.md)** per la gestione centralizzata dei moduli
 
 ### Distribuzione aziendale: scalabilità e governance {#enterprise-deployment}
