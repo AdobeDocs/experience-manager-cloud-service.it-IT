@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
+source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 49%
+source-wordcount: '1957'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -249,6 +249,14 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
+### Distribuzioni di produzione Canarie al codice di test prima di accettare il traffico live (programma Beta) {#canary-beta}
+
+Convalida una build di produzione con traffico di test solo interno prima di esporla agli utenti finali. Spedisci alla produzione, instrada solo il traffico canary (utilizzando un&#39;intestazione speciale), monitora il comportamento, quindi promuovi al traffico live o ripristina lo stato precedente, senza influire sui clienti.
+
+Distribuisci le versioni del codice in produzione, ma limitalo al solo traffico di test interno prima di decidere se accettare il traffico in tempo reale o eseguire il rollback.
+
+Invia un&#39;e-mail a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) per richiedere l&#39;accesso e condividere i commenti.
+
 ### Istantanee per RDE (programma Alpha) {#rde-snapshot-program}
 
 In Alpha, gli ambienti di sviluppo rapido (RDE) ora supportano una funzione per acquisire un’istantanea dello stato corrente del codice e del contenuto, che può essere ripristinata in un secondo momento. Questo può essere utile quando si sincronizza un codice che potrebbe essere necessario ripristinare o quando si passa da uno sviluppo di funzioni diverse all’altro. È inoltre possibile ripristinare solo il contenuto mutabile come punto di partenza noto per il test.
@@ -265,7 +273,7 @@ Ulteriori informazioni sono disponibili nella [documentazione sull’inoltro dei
 
 ### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
-Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
+Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto per opzioni APM aggiuntive, inviaci un&#39;e-mail all&#39;indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) con il tuo fornitore o tecnologia preferita, oltre a casi d&#39;uso.
 
 
 ## Guide di [!DNL Experience Manager] {#guides}
