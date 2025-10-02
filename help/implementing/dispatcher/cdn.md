@@ -4,10 +4,10 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ I clienti che desiderano pubblicare sul livello Edge Delivery Services possono s
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN gestito di Adobe {#aem-managed-cdn}
+## CDN gestita da Adobe {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -91,7 +91,7 @@ Se un cliente deve utilizzare la propria rete CDN esistente (o qualsiasi tipo di
 
 Istruzioni di configurazione:
 
-1. Puntare la rete CDN all’ingresso della rete CDN di Adobe come dominio di origine. Esempio: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Puntare la rete CDN all’ingresso della rete CDN di Adobe come dominio di origine. Ad esempio, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Imposta SNI sull’ingresso della rete CDN di Adobe.
 1. Imposta l’intestazione Host sul dominio di origine. Ad esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio in modo che AEM possa determinare l&#39;intestazione host. Ad esempio: `X-Forwarded-Host:example.com`.
@@ -175,7 +175,7 @@ Di seguito sono riportati diversi esempi di configurazione di diversi fornitori 
 **Cloudflare**
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
-![Cloudflare2](assets/cloudflare2.png "Nuvola")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ### Errori comuni {#common-errors}
 

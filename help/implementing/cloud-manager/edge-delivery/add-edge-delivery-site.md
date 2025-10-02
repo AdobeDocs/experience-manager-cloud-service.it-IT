@@ -4,10 +4,10 @@ description: Scopri come aggiungere un sito Edge Delivery al programma di produz
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 100%
 
 1. Prima di effettuare l’onboarding di un sito Edge Delivery in Cloud Manager, assicurati di aver creato il programma con una licenza Edge Delivery Services.
 Consulta [Creare un programma di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Accedi a Cloud Manager all’indirizzo [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) e seleziona il programma appropriato.
+1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com).
+1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
+1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
+1. Selezionare un&#39;organizzazione desiderata.
+1. Nella console **Programmi** fare clic su un programma.
 1. Effettua una delle seguenti operazioni:
 
    * Dalla pagina **Panoramica del programma**, fai clic sulla scheda **Edge Delivery**. Quindi, nell’angolo inferiore a destra della pagina, fai clic su **Aggiungi sito Edge Delivery**.
@@ -31,7 +35,7 @@ Consulta [Creare un programma di produzione](/help/implementing/cloud-manager/ge
 
    * Nell’angolo superiore a sinistra della pagina fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) per visualizzare il menu sul lato sinistro.
 Nell’intestazione **Servizi** fai clic sull’![icona Pagina Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Siti Edge Delivery**.
-Fai clic su **Aggiungi sito** nell’angolo superiore a destra della pagina.
+Nell&#39;angolo superiore destro della pagina fare clic sull&#39;icona ![Collegamento o su Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Aggiungi sito Edge Delivery**.
 
      ![Aggiungere un sito Edge Delivery dal pulsante Edge Delivery Sites](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 

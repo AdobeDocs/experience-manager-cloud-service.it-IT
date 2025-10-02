@@ -1,14 +1,14 @@
 ---
 title: Panoramica dei test di Cloud Manager
-description: Ottieni una panoramica dei tre tipi di test eseguiti automaticamente da Cloud Manager per garantire la qualità del codice personalizzato.
+description: Visualizza una panoramica dei tre tipi di test eseguiti automaticamente da Cloud Manager per garantire la qualità del codice personalizzato.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 91%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,9 +25,9 @@ Cloud Manager supporta tre categorie di test per le pipeline di Cloud Service.
 
 1. [Test funzionali](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Il test funzionale fa parte della fase di test nell’ambiente di staging di una [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ed eventualmente fa parte della fase di test di una [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * I test funzionali vengono eseguiti durante la fase di test dello staging di una [pipeline di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). Può anche essere eseguito, facoltativamente, durante la fase di test di una [pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [Test dell’audit dell’esperienza](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    * I test di audit dell’esperienza sono abilitati in tutte le pipeline di produzione di Cloud Manager e non possono essere ignorati.
 

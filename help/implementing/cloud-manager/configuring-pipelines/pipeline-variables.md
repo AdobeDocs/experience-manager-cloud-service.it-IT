@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '638'
 ht-degree: 14%
 
 ---
@@ -48,12 +48,12 @@ Se una pipeline è in esecuzione, la gestione delle variabili viene bloccata.
    | --- | --- |
    | Nome | Nome univoco della variabile di configurazione. Identifica la variabile specifica utilizzata nella pipeline. Deve rispettare le seguenti convenzioni di denominazione:<ul><li>Le variabili possono contenere solo caratteri alfanumerici e il carattere di sottolineatura (`_`).</li><li>I nomi devono essere scritti in lettere maiuscole.</li><li>È previsto un limite di 200 variabili per pipeline.</li><li>Ogni nome non può contenere più di 100 caratteri.</li><li>Ogni valore della variabile `string` deve avere una lunghezza inferiore a 2048 caratteri.</li><li>Ogni valore della variabile di tipo `secretString` deve contenere un massimo di 500 caratteri.</li></ul> |
    | Valore | Valore contenuto nella variabile. |
-   | Passaggio applicato | Obbligatorio. Passaggio della pipeline a cui si applica la variabile:<ul><li>**Build** - La variabile viene applicata durante il processo di compilazione.</li><li>**Test funzionali** - La variabile viene utilizzata durante il passaggio del test funzionale.</li><li>**Test interfaccia utente** - La variabile viene utilizzata durante la fase di test dell&#39;interfaccia utente.</li></ul> |
+   | Passaggio applicato | Obbligatorio. Passaggio della pipeline a cui si applica la variabile:<ul><li>**Build** - La variabile viene applicata durante il processo di compilazione.</li><li>**Test funzionali** - La variabile viene utilizzata durante il passaggio del test funzionale.</li><li>**Test interfaccia utente** - La variabile viene utilizzata durante la fase di test dell&#39;interfaccia utente.</li>&lt;li&lt;**Distribuzione** - La variabile viene utilizzata durante il passaggio di distribuzione. Ad esempio, utilizza questa variabile per le pipeline di Edge Delivery Services.</li></ul> |
    | Tipo | Seleziona questa opzione se la variabile è in testo normale o crittografata come segreto. |
 
    ![Aggiungi variabile](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 
    Aggiungi ulteriori variabili in base alle esigenze.
 
@@ -77,7 +77,7 @@ Se una pipeline è in esecuzione, la gestione delle variabili viene bloccata.
 
    È possibile modificare solo il valore della variabile.
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Fai clic su ![Applica - icona segno di spunta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) per applicare la modifica.
    * Fai clic sull&#39;icona ![Annulla](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) per annullare la modifica.

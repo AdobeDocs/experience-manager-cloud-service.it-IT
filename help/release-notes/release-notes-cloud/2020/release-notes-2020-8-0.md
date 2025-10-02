@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione 2020.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] note sulla versione 2020.8.0 di as a Cloud Service.'
+description: '[!DNL Adobe Experience Manager] Note sulla versione 2020.8.0 di as a Cloud Service.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 33%
 La sezione seguente illustra le note generali sulla versione di Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## as a Cloud Service [!DNL Adobe Experience Manager Sites] {#sites}
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
 * Possibilità di [ripristinare pagine e sottopagine (strutture ad albero pagina) in una versione precedente](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Possibilità di [creare lanci](/help/sites-cloud/authoring/launches/overview.md) nell&#39;editor SPA [AEM](/help/implementing/developing/hybrid/introduction.md).
+* Possibilità di [creare lanci](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### Novità in [!DNL Assets] {#what-is-new-assets}
 
@@ -42,11 +42,11 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 * Utilizza un profilo di elaborazione per generare metadati personalizzati utilizzando Compute Service. Vedi [Metadati personalizzati utilizzando il profilo di elaborazione](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Esperienza di download più semplice per gli utenti di Brand Portal che gli amministratori possono configurare. Consulta [panoramica dell&#39;esperienza di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it#download-configurations).
+* Esperienza di download più semplice per gli utenti di Brand Portal che gli amministratori possono configurare. Consulta [panoramica dell&#39;esperienza di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Le anteprime dei documenti PDF nativi e ad alta fedeltà sono ora disponibili in Brand Portal. Vedi [panoramica del visualizzatore di documenti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it#doc-viewer).
+* Le anteprime native e ad alta fedeltà dei documenti PDF sono ora disponibili in Brand Portal. Vedi [panoramica del visualizzatore di documenti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* È ora possibile annullare la validità della rete CDN direttamente da [!DNL Dynamic Media] in AEM as a Cloud Service (anziché utilizzare [!DNL Dynamic Media Classic]). In questo modo le risorse più recenti vengono servite in pochi minuti anziché in alcune ore. Vedere [Annullamento della validità della cache CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* È ora possibile annullare la validità della rete CDN direttamente da [!DNL Dynamic Media] in AEM as a Cloud Service (anziché utilizzare [!DNL Dynamic Media Classic]). In questo modo le risorse più recenti vengono servite in pochi minuti anziché in alcune ore. Vedi [Annullamento della validità della CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Il supporto per l&#39;accesso facilitato è stato aggiunto ai controlli dell&#39;interfaccia utente, alla navigazione, alla navigazione e alla ricerca in [!DNL Assets].
 
@@ -66,7 +66,7 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 ### Novità {#what-is-new-commerce}
 
-* È ora disponibile la funzione Console del prodotto. Questo consente agli esperti di marketing/autori in AEM di visualizzare e navigare tra le categorie e i prodotti memorizzati nel back-end per l’e-commerce. È inoltre disponibile il supporto per proprietà, categorie e prodotti nella console Prodotti.
+* È ora disponibile la funzione Console del prodotto. Questo consente agli esperti di marketing e agli autori in AEM di visualizzare e navigare tra le categorie e i prodotti memorizzati nel back-end per l’e-commerce. È inoltre disponibile il supporto per proprietà, categorie e prodotti nella console Prodotti.
 
 * Sono stati migliorati i selettori di prodotti e categorie per consentire agli addetti al marketing di selezionare un prodotto tramite SKU o di selezionare una categoria tramite l’ID categoria.
 
@@ -84,7 +84,7 @@ La data di pubblicazione di [!UICONTROL Cloud Manager] versione 2020.8.0 è il 6
   >[!NOTE]
   >Audit del contenuto è stato successivamente rinominato in Audit dell’esperienza.
 
-  Per ulteriori informazioni, consulta [Test di audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+  Per ulteriori informazioni, consulta [Test di audit dell’esperienza](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 * Ora gli ambienti creati di recente nei programmi Assets vengono configurati automaticamente con Smart Content Services.
 
@@ -120,7 +120,7 @@ La data di pubblicazione di [!UICONTROL Cloud Manager] versione 2020.8.0 è il 6
 
 * Per attivare il passaggio di audit del contenuto, gli utenti devono modificare la pipeline e, facoltativamente, aggiungere pagine. Se non si aggiunge alcuna pagina, viene sottoposta a audit la pagina Home.
 
-## Strumento trasferimento contenuti {#content-transfer-tool}
+## Strumento di trasferimento contenuti {#content-transfer-tool}
 
 Leggi questa sezione per scoprire le novità e gli aggiornamenti della versione 1.0.4 dello strumento Content Transfer.
 
@@ -142,6 +142,6 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Strumenti di
 
 * Plug-in AIO-CLI rilasciato per unificare gli strumenti di refactoring del codice per consentire agli sviluppatori di richiamare ed eseguire strumenti di refactoring del codice da un’unica posizione. Per ulteriori dettagli, consulta [Risorsa Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
-* AEM Dispatcher Converter esteso per supportare le conversioni delle configurazioni Dispatcher On-Premise e Adobe Managed Services in configurazioni Dispatcher compatibili con AEM as a Cloud Service. Per ulteriori dettagli, consulta [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* AEM Dispatcher Converter esteso per supportare le conversioni delle configurazioni di Dispatcher Managed Services On-Premise e Adobe in configurazioni di Dispatcher compatibili con AEM as a Cloud Service. Per ulteriori dettagli, consulta [Risorsa Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
 
 * AEM Dispatcher Converter riscritto in ` node.js ` e integrato con il plug-in AIO-CLI.

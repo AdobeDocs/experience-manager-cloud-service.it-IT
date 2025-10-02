@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
+source-git-commit: 7c8d3e78109f7eb8f90dca5f851e354c33943450
 workflow-type: tm+mt
-source-wordcount: '6811'
+source-wordcount: '6816'
 ht-degree: 95%
 
 ---
@@ -132,6 +132,7 @@ ht-degree: 95%
    + Note sulla versione di Cloud Manager {#cloud-manager}
       + [Corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
          + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
@@ -530,7 +531,7 @@ ht-degree: 95%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -798,8 +799,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -1313,10 +1314,13 @@ ht-degree: 95%
             + [Panoramica del test funzionale](/help/implementing/cloud-manager/functional-testing.md)
             + [Test funzionale Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Test dell’interfaccia utente](/help/implementing/cloud-manager/ui-testing.md)
-         + [Dashboard di audit dell’esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Accedere e gestire i registri](/help/implementing/cloud-manager/manage-logs.md)
       + [Autorizzazioni personalizzate](/help/implementing/cloud-manager/custom-permissions.md)
-      + [Generazione rapporti SLA](/help/implementing/cloud-manager/sla-reporting.md)
+      + Rapporti {#reports}
+         + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
+         + [Confronto visivo](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+         + [Valutazione stato](/help/implementing/cloud-manager/reports/report-health-assessment.md)
+         + [Audit dell’esperienza](/help/implementing/cloud-manager/reports/report-experience-audit.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notifiche](/help/implementing/cloud-manager/notifications.md)

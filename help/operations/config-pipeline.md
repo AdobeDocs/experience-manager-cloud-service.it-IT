@@ -1,17 +1,17 @@
 ---
-title: Utilizzo delle pipeline di configurazione
+title: Usa pipeline di configurazione
 description: Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni in AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
-# Utilizzo delle pipeline di configurazione {#config-pipelines}
+# Utilizzare le pipeline di configurazione {#config-pipelines}
 
 Scopri come utilizzare le pipeline di configurazione per distribuire diverse configurazioni in AEM as a Cloud Service, ad esempio le impostazioni di inoltro del registro, le attività di manutenzione relative all’eliminazione e varie configurazioni CDN.
 
@@ -25,14 +25,14 @@ Le pipeline di configurazione possono essere distribuite anche tramite Cloud Man
 
 Nelle sezioni seguenti di questo documento viene fornita una panoramica di informazioni importanti su come utilizzare le pipeline di configurazione e su come strutturare le relative configurazioni. Descrive i concetti generali condivisi tra tutte le funzionalità o un sottoinsieme di quelle supportate dalle pipeline di configurazione.
 
-* [Configurazioni supportate](#configurations) - Elenco di configurazioni che possono essere distribuite con le pipeline di configurazione
-* [Creazione e gestione delle pipeline di configurazione](#creating-and-managing) - Come creare una pipeline di configurazione
-* [Sintassi comune](#common-syntax) - Sintassi condivisa tra le configurazioni
-* [Struttura cartella](#folder-structure) - Descrive la struttura prevista dalle pipeline di configurazione per le configurazioni
-* [Variabili di ambiente segrete](#secret-env-vars) - Esempi di utilizzo delle variabili di ambiente per non divulgare i segreti nelle configurazioni
-* [Variabili pipeline segrete](#secret-pipeline-vars) - Esempi di utilizzo delle variabili di ambiente per non divulgare i segreti nelle configurazioni prima dei progetti Edge Delivery Services
+* [Configurazioni supportate](#configurations) - Elenco di configurazioni che possono essere distribuite con le pipeline di configurazione.
+* [Creare e gestire le pipeline di configurazione](#creating-and-managing) - Creare una pipeline di configurazione
+* [Sintassi comune](#common-syntax) - Sintassi condivisa tra le configurazioni.
+* [Struttura cartella](#folder-structure) - Descrive la struttura prevista dalle pipeline di configurazione per le configurazioni.
+* [Variabili di ambiente segrete](#secret-env-vars) - Esempi di utilizzo delle variabili di ambiente per non divulgare i segreti nelle configurazioni.
+* [Variabili pipeline segrete](#secret-pipeline-vars) - Esempi di utilizzo delle variabili di ambiente per non divulgare i segreti nelle configurazioni prima dei progetti Edge Delivery Services.
 
-## Configurazioni supportate {#configurations}
+## Configurazioni supportati {#configurations}
 
 La tabella seguente offre un elenco completo di tali configurazioni, con collegamenti alla documentazione dedicata che descrive la sintassi di configurazione specifica e altre informazioni.
 
@@ -50,13 +50,13 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni del contenuto devono essere eliminate | X |  |
 | [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di controllo di AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri | X |  |
 | [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configura gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
-| [Registrazione di un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Iscrivi i progetti API Adobe Developer Console in uno specifico ambiente AEM registrando l’ID client. Questo è necessario per l’utilizzo di API basate su OpenAPI che richiedono l’autenticazione | X |  |
+| [Registrazione di un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Iscrivi i progetti API Adobe Developer Console in un ambiente AEM specifico registrando l’ID client. Necessario per l’utilizzo di API basate su OpenAPI che richiedono l’autenticazione | X |  |
 
-## Creazione e gestione delle pipeline di configurazione {#creating-and-managing}
+## Creare e gestire le pipeline di configurazione {#creating-and-managing}
 
 Per informazioni su come creare e configurare **Pipeline di configurazione della distribuzione di pubblicazione**, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Durante la creazione di una pipeline di configurazione in Cloud Manager, assicurati di selezionare una **distribuzione di destinazione** anziché **codice full stack** durante la configurazione della pipeline. Come indicato in precedenza, la configurazione per gli RDE viene distribuita utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) anziché una pipeline.
 
-Per informazioni su come creare e configurare **pipeline di configurazione Edge Delivery**, vedere l&#39;articolo [Aggiungere una pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+Per informazioni su come creare e configurare **pipeline di configurazione di Edge Delivery**, consulta l&#39;articolo [Aggiungere una pipeline di Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 ## Sintassi comune {#common-syntax}
 
@@ -73,7 +73,7 @@ Ogni file di configurazione inizia con proprietà simili al seguente snippet di 
 |---|---|---|
 | `kind` | Stringa che determina il tipo di configurazione, ad esempio inoltro registro, regole del filtro del traffico o trasformazioni richieste | Obbligatorio, nessun valore predefinito |
 | `version` | Stringa che rappresenta la versione dello schema | Obbligatorio, nessun valore predefinito |
-| `envTypes` | Questa matrice di stringhe è una proprietà figlio del nodo `metadata`. Per **Distribuzione pubblicazione**, i valori possibili sono dev, stage, prod o qualsiasi combinazione e determina per quali tipi di ambiente verrà elaborata la configurazione. Ad esempio, se l&#39;array include solo `dev`, la configurazione non verrà caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì. Per **Edge Delivery**, deve essere utilizzato solo un valore di `prod` | Tutti i tipi di ambiente, ovvero (dev, stage, prod) per la distribuzione delle pubblicazioni o solo prod per Edge Delivery |
+| `envTypes` | Questa matrice di stringhe è una proprietà figlio del nodo `metadata`. Per **Distribuzione pubblicazione**, i valori possibili sono dev, stage, prod o qualsiasi combinazione e determina per quali tipi di ambiente viene elaborata la configurazione. Ad esempio, se l&#39;array include solo `dev`, la configurazione non viene caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì. Per **Edge Delivery**, deve essere utilizzato solo un valore di `prod`. | Tutti i tipi di ambiente, ovvero (dev, stage, prod) per la distribuzione delle pubblicazioni o solo prod per Edge Delivery. |
 
 È possibile utilizzare l&#39;utilità `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq cdn.yaml`).
 
@@ -88,7 +88,7 @@ Ad esempio:
   cdn.yaml
 ```
 
-oppure
+Oppure
 
 ```text
 /config
@@ -98,13 +98,13 @@ oppure
 
 I nomi delle cartelle e dei file sotto `/config` sono arbitrari. Il file YAML, tuttavia, deve includere un valore di proprietà [`kind` valido](#configurations).
 
-In genere, le configurazioni vengono distribuite in tutti gli ambienti. Se tutti i valori delle proprietà sono identici per ogni ambiente, è sufficiente un singolo file YAML. Tuttavia, è comune che i valori delle proprietà differiscano tra gli ambienti, ad esempio durante il test di un ambiente inferiore.
+In genere, le configurazioni vengono distribuite in tutti gli ambienti. Se tutti i valori delle proprietà sono identici per ciascun ambiente, è sufficiente un singolo file YAML. Tuttavia, è comune che i valori delle proprietà differiscano tra gli ambienti, ad esempio durante il test di un ambiente inferiore.
 
 Le sezioni seguenti illustrano alcune strategie per strutturare i file.
 
 ### Un singolo file di configurazione per tutti gli ambienti {#single-file}
 
-La struttura del file sarà simile alla seguente:
+La struttura del file è simile alla seguente:
 
 ```text
 /config
@@ -121,7 +121,7 @@ Utilizza questa struttura quando la stessa configurazione è sufficiente per tut
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Utilizzando variabili di ambiente (o pipeline) di tipo segreto, è possibile che [proprietà segrete](#secret-env-vars) varino in base all&#39;ambiente, come illustrato dal riferimento a `${{SPLUNK_TOKEN}}`
+Utilizzando variabili di ambiente (o pipeline) di tipo segreto, è possibile che [proprietà segrete](#secret-env-vars) varino in base all&#39;ambiente, come illustrato dal seguente riferimento a `${{SPLUNK_TOKEN}}`.
 
 ```yaml
 kind: "LogForwarding"
@@ -137,9 +137,9 @@ data:
       index: "AEMaaCS"
 ```
 
-### Un File Separato Per Tipo Di Ambiente {#file-per-env}
+### Un file separato per tipo di ambiente {#file-per-env}
 
-La struttura del file sarà simile alla seguente:
+La struttura del file è simile alla seguente:
 
 ```text
 /config
@@ -151,8 +151,7 @@ La struttura del file sarà simile alla seguente:
   logForwarding-prod.yaml
 ```
 
-Utilizza questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso, ad esempio
-`cdn-dev.yaml` e `logForwarding-dev.yaml` con valore di `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` con valore di `["stage"]` e così via.
+Utilizza questa struttura quando possono esserci differenze nei valori delle proprietà. Nei file, ci si aspetta che il valore dell&#39;array `envTypes` corrisponda al suffisso. Ad esempio, `cdn-dev.yaml` e `logForwarding-dev.yaml` con valore di `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` con valore di `["stage"]` e così via.
 
 ### Una cartella per ambiente {#folder-per-env}
 
@@ -160,7 +159,7 @@ In questa strategia, esiste una cartella `config` separata per ogni ambiente, co
 
 Questo approccio è particolarmente utile se disponi di più ambienti di sviluppo, ciascuno dei quali ha valori di proprietà univoci.
 
-La struttura del file sarà simile alla seguente:
+La struttura del file è simile alla seguente:
 
 ```text
 /config/dev1
@@ -178,7 +177,8 @@ Una variazione di questo approccio consiste nel mantenere un ramo separato per o
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Le pipeline di configurazione di Edge Delivery non dispongono di ambienti di sviluppo, staging e produzione separati. A differenza degli ambienti di distribuzione della pubblicazione, in cui le modifiche progrediscono attraverso i livelli di sviluppo, stage e produzione, la configurazione distribuita tramite una pipeline di configurazione di Edge Delivery viene applicata direttamente a tutte le mappature di dominio registrate in Cloud Manager con un sito Edge Delivery.
+Le pipeline di configurazione di Edge Delivery non dispongono di ambienti di sviluppo, staging e produzione separati. Negli ambienti di distribuzione della pubblicazione, le modifiche progrediscono attraverso i livelli di sviluppo, stage e produzione. Al contrario, una pipeline di configurazione di Edge Delivery applica la configurazione direttamente a tutte le mappature di dominio registrate in Cloud Manager per un sito Edge Delivery.
+
 
 Di conseguenza, distribuisci una struttura di file semplice come:
 
@@ -215,7 +215,7 @@ Per evitare che le informazioni riservate vengano archiviate nel controllo del c
 
 Tieni presente che le variabili di ambiente segrete vengono utilizzate per i progetti di distribuzione della pubblicazione; consulta la sezione Variabili segrete della pipeline per i progetti Edge Delivery Services.
 
-Lo snippet seguente è un esempio di come la variabile di ambiente segreta `${{SPLUNK_TOKEN}}` viene utilizzata nella configurazione.
+Il frammento seguente è un esempio dell&#39;utilizzo della variabile di ambiente segreta `${{SPLUNK_TOKEN}}` nella configurazione.
 
 ```
 kind: "LogForwarding"
@@ -231,7 +231,7 @@ data:
       index: "AEMaaCS"
 ```
 
-Per informazioni dettagliate sull&#39;utilizzo delle variabili di ambiente, vedere il documento [Variabili di ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+Per informazioni dettagliate sull&#39;utilizzo delle variabili di ambiente, vedere [Variabili di ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ## Variabili segrete della pipeline {#secret-pipeline-vars}
 
@@ -239,5 +239,4 @@ Per i progetti Edge Delivery Services, utilizzare le variabili della pipeline Cl
 
 La sintassi è identica al frammento mostrato nella sezione precedente.
 
-Per informazioni dettagliate su come utilizzare le variabili della pipeline, consulta il documento [Variabili della pipeline in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
-
+Per informazioni dettagliate sull&#39;utilizzo delle variabili di pipeline, vedere [Variabili di pipeline in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).

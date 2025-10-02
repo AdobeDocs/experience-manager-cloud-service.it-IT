@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 38%
@@ -67,7 +67,7 @@ La fase **Distribuzione nell&#39;ambiente di staging** prevede i seguenti passag
 | Passaggio della distribuzione dello staging | Descrizione |
 | --- | --- |
 | Convalida | Assicura che la pipeline sia configurata per utilizzare le risorse attualmente disponibili. Ad esempio, i test per verificare che il ramo configurato esista e che gli ambienti siano disponibili. |
-| Build e unit test | Esegue un processo di compilazione containerizzato.<br>Per informazioni dettagliate sull&#39;ambiente di compilazione, vedere [Dettagli ambiente di compilazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). |
+| Build e test unitari | Esegue un processo di compilazione containerizzato.<br>Per informazioni dettagliate sull&#39;ambiente di compilazione, vedere [Dettagli ambiente di compilazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). |
 | Scansione del codice | Valuta la qualità del codice dell’applicazione.<br>Consulta [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md) per informazioni dettagliate sul processo di test. |
 | Immagini di build | Questo processo converte il contenuto e i pacchetti Dispatcher dalla fase Build in immagini Docker. Genera anche configurazioni Kubernetes basate su questi pacchetti. |
 | Implementa in staging | L&#39;immagine viene distribuita nell&#39;ambiente di staging in preparazione della [fase di test dello staging](#stage-testing). |
@@ -83,7 +83,7 @@ La fase **Test dello staging** prevede i seguenti passaggi:
 | Test funzionali del prodotto | La pipeline di Cloud Manager esegue i test per l’ambiente di staging.<br>Vedere anche [Test funzionali del prodotto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Test funzionali personalizzati | Questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Se la build non produce un JAR di test, il test viene superato automaticamente.<br>Vedere anche [Test funzionali personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Test dell’interfaccia utente personalizzati | Funzione facoltativa che esegue automaticamente i test dell’interfaccia utente creati per le applicazioni personalizzate.<br>I test dell&#39;interfaccia utente sono basati su Selenium e inclusi in un&#39;immagine Docker per offrire flessibilità nel linguaggio e nei framework. Questo approccio consente di utilizzare Java e Maven, Node e WebDriver.io o qualsiasi framework o tecnologia basati su Selenium.<br>Vedi anche [Test dell&#39;interfaccia utente personalizzati](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Audit dell’esperienza | Questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguono i controlli.<ul><li>Le pagine configurate vengono inviate al servizio e valutate.</li><li>I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.</li><li>Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.</li></ul>Consulta [Informazioni sui risultati dell&#39;audit dell&#39;esperienza](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Audit dell’esperienza | Questo passaggio nella pipeline viene sempre eseguito e non può essere saltato. Quando si esegue una pipeline di produzione, viene incluso un passaggio di audit dell’esperienza dopo i test funzionali personalizzati che eseguono i controlli.<ul><li>Le pagine configurate vengono inviate al servizio e valutate.</li><li>I risultati sono informativi e mostrano i punteggi e cosa è cambiato tra il punteggio corrente e quello precedente.</li><li>Questo approfondimento e è utile per determinare l’eventuale introduzione di una regressione con la distribuzione corrente.</li></ul>Consulta [Informazioni sui risultati dell&#39;audit dell&#39;esperienza](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Test nell’ambiente di staging](assets/stage-testing.png)
 
@@ -132,7 +132,7 @@ In tali circostanze, in cui è possibile eseguire una riesecuzione, la pagina di
 
 >[!NOTE]
 >
->In una riesecuzione, il passaggio di compilazione viene etichettato nell’interfaccia utente, per rispecchiare la copia degli artefatti non la ricompilazione.
+>In una riesecuzione, il passaggio di build viene etichettato nell’interfaccia utente in modo per rispecchiare il fatto che gli artefatti vengono copiati, e non ricompilati.
 
 ### Note sull’utilizzo {#usage-notes}
 
