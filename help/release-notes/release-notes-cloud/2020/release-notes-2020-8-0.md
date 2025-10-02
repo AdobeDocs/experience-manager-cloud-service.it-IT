@@ -42,9 +42,9 @@ La sezione seguente illustra le note generali sulla versione di Experience Manag
 
 * Utilizza un profilo di elaborazione per generare metadati personalizzati utilizzando Compute Service. Vedi [Metadati personalizzati utilizzando il profilo di elaborazione](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Esperienza di download più semplice per gli utenti di Brand Portal che gli amministratori possono configurare. Consulta [panoramica dell&#39;esperienza di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
+* Esperienza di download più semplice per gli utenti di Brand Portal che gli amministratori possono configurare. Consulta [panoramica dell&#39;esperienza di download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it#download-configurations).
 
-* Le anteprime native e ad alta fedeltà dei documenti PDF sono ora disponibili in Brand Portal. Vedi [panoramica del visualizzatore di documenti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
+* Le anteprime native e ad alta fedeltà dei documenti PDF sono ora disponibili in Brand Portal. Vedi [panoramica del visualizzatore di documenti](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it#doc-viewer).
 
 * È ora possibile annullare la validità della rete CDN direttamente da [!DNL Dynamic Media] in AEM as a Cloud Service (anziché utilizzare [!DNL Dynamic Media Classic]). In questo modo le risorse più recenti vengono servite in pochi minuti anziché in alcune ore. Vedi [Annullamento della validità della CDN tramite Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
