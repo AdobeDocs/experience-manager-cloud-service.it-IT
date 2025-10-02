@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilità limitata" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
+source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >Questa funzionalità sarà disponibile come **Disponibilità limitata** a partire dal 25 settembre. Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivare la funzionalità nei programmi.
+
+>[!WARNING]
+>È possibile utilizzare le funzionalità Ore non interattive e Aggiorna periodi liberi solo dopo aver effettuato l&#39;onboarding in [Aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md).
 
 Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md) di AEM as a Cloud Service garantiscono la protezione delle istanze e l&#39;aggiornamento alle ultime versioni di manutenzione. Detto questo, in alcuni casi (come eventi di pubblicazione) potrebbe essere necessario &quot;proteggere&quot; tali ore di lavoro critiche da potenziali interruzioni. AEM as a Cloud Service offre quindi la possibilità di impostare un intervallo di tempo in cui non si verificano aggiornamenti automatici per i programmi in corso.
 
