@@ -16,7 +16,7 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >Scopri perché devi effettuare l’onboarding del sito Edge Deliver Services in Cloud Manager.
->>Consulta [Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>&#x200B;>Consulta [Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Per aggiungere un sito Edge Delivery a Cloud Manager:**
 

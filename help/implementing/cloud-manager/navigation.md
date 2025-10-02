@@ -47,7 +47,7 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
    * **Licenza** che accede alla [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
    * Il valore predefinito delle schede è Chiuso e può essere visualizzato utilizzando ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) nell&#39;intestazione [Cloud Manager](#cloud-manager-header).
 1. [Statistiche e invito all’azione](#statistics) per una panoramica dell’attività recente
-1. Sezione [**Programmi personali** ](#my-programs-section) con una panoramica di tutti i programmi
+1. Sezione [**Programmi personali** &#x200B;](#my-programs-section) con una panoramica di tutti i programmi
 1. [Collegamenti rapidi](#quick-links-section) per accedere facilmente alle risorse correlate.
 
 >[!TIP]
@@ -153,7 +153,7 @@ L&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_22/Smock_M
 * Passa a una particolare ![icona dati](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
 * Apri l&#39;![icona Panoramica programma](/help/implementing/cloud-manager/assets/program-overview.svg) [Panoramica programma](#program-overview)
 * ![Icona Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
