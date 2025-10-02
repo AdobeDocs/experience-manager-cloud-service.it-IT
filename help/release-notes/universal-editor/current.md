@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.09.25 dell’editor universale
-description: Queste sono le note sulla versione 2025.09.25 dell’editor universale.
+title: Note sulla versione 2025.10.02 dell’editor universale
+description: Queste sono le note sulla versione 2025.10.02 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 46%
+source-wordcount: '169'
+ht-degree: 61%
 
 ---
 
 
-# Note sulla versione 2025.09.25 dell’editor universale {#release-notes}
+# Note sulla versione 2025.10.02 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 25 settembre 2025 di Universal Editor.
+Queste sono le note sulla versione del 2 ottobre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -22,8 +22,7 @@ Queste sono le note sulla versione del 25 settembre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [La funzionalità di copia e incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) può essere [disabilitata utilizzando un tag meta.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [Quando si utilizza l&#39;editor universale in ambienti AEM ospitati,](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) l&#39;editor universale utilizzerà ora il servizio editor universale ospitato da AEM e non si baserà più su un&#39;installazione AMS locale, assicurandosi di disporre sempre automaticamente del servizio Editor universale più recente.
+* È stato aggiunto un pulsante per passare dall’ambiente di anteprima a quello di produzione.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -39,5 +38,4 @@ Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra
 
 ## Altri miglioramenti {#other-improvements}
 
-* La barra delle proprietà è stata corretta quando la si utilizza con l’authoring dei documenti.
-* È stato risolto un problema che si verificava durante la modifica di più campi di un frammento di contenuto con MSM.
+* La barra della posizione e il relativo testo sono stati allineati meglio nell’interfaccia utente.

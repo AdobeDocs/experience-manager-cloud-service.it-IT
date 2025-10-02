@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d96401a5200dbffb49315af8745c22171f4ecc3
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 95%
 
 ---
@@ -237,6 +237,7 @@ ht-degree: 95%
    + Note sulla versione dell’editor universale {#universal-editor}
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Note sulla versione 2025.09.25](/help/release-notes/universal-editor/2025/2025-09-25.md)
          + [Note sulla versione 2025.09.18](/help/release-notes/universal-editor/2025/2025-09-18.md)
          + [Note sulla versione 2025.09.11](/help/release-notes/universal-editor/2025/2025-09-11.md)
          + [Note sulla versione 2025.09.04](/help/release-notes/universal-editor/2025/2025-09-04.md)
@@ -529,7 +530,7 @@ ht-degree: 95%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
@@ -1028,7 +1029,7 @@ ht-degree: 95%
       + [Riavvio di SDK di AEM](/help/forms/restart-aem-sdk.md)
       + [Risoluzione degli errori di creazione di moduli](/help/forms/form-creation-failing.md)
       + [Pagina di errore 502 nell’azione di invio personalizzata](/help/forms/custom-submit-action-troubleshooting.md)
-+ IA in AEM {#ai-in-aem}
++ Assistente IA in AEM {#ai-in-aem}
    + [Panoramica](/help/ai-in-aem/overview.md)
    + Assistente IA {#ai-assistant}
       + [Configurare l’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
