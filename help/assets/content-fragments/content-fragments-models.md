@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 76%
+source-wordcount: '3588'
+ht-degree: 71%
 
 ---
 
@@ -28,6 +28,14 @@ Per utilizzare i modelli di frammento di contenuto:
 >I frammenti di contenuto sono una funzione di Sites, ma vengono memorizzati come **Risorse**.
 >
 >I frammenti di contenuto e i modelli di frammenti di contenuto ora sono gestiti principalmente con la console **[Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, anche se i frammenti di contenuto possono ancora essere gestiti dalla console **Assets** e i modelli di frammenti di contenuto dalla console **Strumenti**. Questa sezione riguarda la gestione dalle console **Assets** e **Tools**.
+
+>[!NOTE]
+>
+>Se è stato creato un modello con il [nuovo editor modelli](/help/sites-cloud/administering/content-fragments/content-fragment-models.md), utilizzare sempre tale editor per il modello.
+>
+>Se poi apri il modello con questo editor di modelli (originale), verrà visualizzato il messaggio:
+>
+>* &quot;Questo modello ha uno schema di interfaccia utente personalizzato configurato. L’ordine dei campi visualizzati in questa interfaccia utente potrebbe non corrispondere allo schema dell’interfaccia utente. Per visualizzare i campi allineati con lo schema dell’interfaccia utente, devi passare al nuovo Editor frammento di contenuto.&quot;
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
@@ -67,6 +75,7 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    * a sinistra: campi già definiti
    * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione
+   * top: opzione per provare il [nuovo editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 * **Tag**
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
 
+* **Riferimento frammento**
+   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
+      * Modificare direttamente il frammento a cui si fa riferimento.
+      * Creare un nuovo frammento di contenuto basato sul modello appropriato
+      * Crea nuove istanze del campo
+   * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
+
+* **Riferimento frammento (UUID)**
+   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
+      * Modificare direttamente il frammento a cui si fa riferimento.
+      * Creare un nuovo frammento di contenuto basato sul modello appropriato
+      * Crea nuove istanze del campo
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
+      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare il frammento richiesto
+
+  >[!NOTE]
+  >
+  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
+
 * **Riferimento contenuto**
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
    * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+   * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
 
-* **Riferimento frammento**
-   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Il campo può essere configurato per consentire agli autori di frammenti di:
-      * Modificare direttamente il frammento a cui si fa riferimento
-      * Creare un nuovo frammento di contenuto basato sul modello appropriato
-      * Crea nuove istanze del campo
+* **Riferimento contenuto (UUID)**
+   * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+   * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
+   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
+      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare la risorsa richiesta
+
+  >[!NOTE]
+  >
+  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
 
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
@@ -260,32 +295,43 @@ Diversi tipi di dati includono ora la possibilità di definire requisiti di conv
 
 I frammenti di contenuto possono formare contenuto nidificato utilizzando uno dei seguenti tipi di dati:
 
-* **[Riferimento contenuto](#content-reference)**
+* [Riferimento contenuto](#content-reference)
    * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
+   * Forniti dai tipi di dati:
+      * **Riferimento contenuto** - basato su percorso
+      * **Riferimento contenuto (UUID)** - basato su UUID
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
-* **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
+* [Riferimento frammento](#fragment-reference-nested-fragments) (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
+   * Forniti dai tipi di dati:
+      * **Riferimento frammento** - basato su percorso
+      * **Riferimento frammento (UUID)** - basato su UUID
    * Consente di includere/recuperare dati strutturati.
 
      >[!NOTE]
      >
-     >Questo metodo è particolarmente interessante in relazione alla [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
->AEM ha una protezione periodica per:
+>Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) per ulteriori informazioni su contenuto/riferimento frammento e riferimento contenuto/riferimento frammento (UUID) e per l&#39;aggiornamento ai tipi di dati basati su UUID.
+
+>[!NOTE]
+>
+>AEM ha una protezione di ricorrenze per:
 >
 >* Riferimenti contenuto
->Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>  >  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
->Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituirà null.
+>  >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 
-Il Riferimento contenuto consente di eseguire il rendering del contenuto da un’altra origine, ad esempio un frammento di immagine o di contenuto.
+I tipi di dati **Riferimento contenuto** e **Riferimento contenuto (UUID)** consentono di eseguire il rendering del contenuto da un&#39;altra origine, ad esempio immagine, pagina o frammento di esperienza.
 
 Oltre alle proprietà standard puoi specificare:
 
@@ -300,7 +346,7 @@ Oltre alle proprietà standard puoi specificare:
 
 ### Riferimento frammento (frammenti nidificati) {#fragment-reference-nested-fragments}
 
-Il Riferimento frammento fa riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
+I tipi di dati **Riferimento frammento** e **Riferimento frammento (UUID)** possono fare riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
 
 Esempio:
 

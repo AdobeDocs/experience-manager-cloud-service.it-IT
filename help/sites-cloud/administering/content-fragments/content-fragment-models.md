@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 38%
+source-wordcount: '2201'
+ht-degree: 31%
 
 ---
 
@@ -24,6 +24,14 @@ Questa pagina illustra come definire il modello per frammenti di contenuto utili
 >
 >Per ulteriori dettagli vedi [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Limitazioni](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>Se crei un modello con questo nuovo editor, utilizza sempre questo editor per quel modello.
+>
+>Se poi apri il modello con [editor modelli originale](/help/assets/content-fragments/content-fragments-models.md), verrà visualizzato il messaggio:
+>
+>* &quot;Questo modello ha uno schema di interfaccia utente personalizzato configurato. L’ordine dei campi visualizzati in questa interfaccia utente potrebbe non corrispondere allo schema dell’interfaccia utente. Per visualizzare i campi allineati con lo schema dell’interfaccia utente, devi passare al nuovo Editor frammento di contenuto.&quot;
+
 ## Definizione del modello per frammenti di contenuto {#defining-your-content-fragment-model}
 
 Il modello per frammenti di contenuto definisce efficacemente la struttura dei frammenti di contenuto risultanti utilizzando una selezione di **[Tipi di dati](#data-types)**. Utilizzando l’editor modelli è possibile aggiungere istanze dei tipi di dati, quindi configurarle per creare i campi richiesti:
@@ -38,26 +46,46 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
    >
    >Puoi anche aprire un modello direttamente dopo [averlo creato](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
-1. Apri il modello che desideri **modificare** utilizzando l’azione rapida oppure selezionando il modello e quindi l’azione dalla barra degli strumenti.
+1. Apri il modello richiesto per **Modifica**. Utilizza uno dei collegamenti di azione rapida oppure seleziona il modello e quindi l&#39;azione dalla barra degli strumenti.
 
-   Una volta aperto, l’editor modelli mostra:
-
-   * a sinistra: campi già definiti
-   * a destra: **Tipi di dati** disponibili per la creazione di campi, oltre alle **Proprietà** da utilizzare dopo la creazione
-
-   >[!NOTE]
-   >
-   >Quando un campo è definito come **Obbligatorio**, l&#39;**Etichetta** indicata nel riquadro di sinistra è contrassegnata con un asterisco (**&#42;**).
 
    ![Proprietà](assets/cf-cfmodels-empty-model.png)
 
+   Una volta aperto, l’editor modelli mostra:
+
+   * superiore:
+      * Icona **Home**
+      * opzione per passare da [original](/help/assets/content-fragments/content-fragments-models.md) al nuovo editor
+      * **Annulla**
+      * **Salva**
+
+   * a sinistra: **Tipi di dati** disponibili per la creazione di campi
+
+   * middle: campi già definiti insieme all&#39;opzione **Aggiungi**
+
+   * a destra: utilizzando le icone all’estrema destra puoi scegliere tra:
+
+      * **Proprietà**: definire e visualizzare le proprietà per il campo selezionato
+      * **Dettagli modello**: mostra lo stato **Enabled**, **Titolo modello**, **Tag**, **Descrizione** e **URL anteprima**
+
 1. **Per aggiungere un campo**
 
-   * Trascina un tipo di dati obbligatorio nella posizione desiderata per un campo:
+   * Effettua una delle seguenti operazioni:
 
-     ![Trascina il tipo di dati per creare il campo](assets/cf-cfmodels-create-field.png)
+      * Trascina un tipo di dati dal pannello di sinistra alla posizione desiderata per un campo nel pannello centrale.
+      * Selezionare l&#39;icona **+** per un tipo di dati per aggiungerla alla fine dell&#39;elenco dei campi.
+      * Seleziona **Aggiungi** nel pannello centrale e quindi il tipo di dati richiesto dall&#39;elenco a discesa risultante per aggiungere un campo alla fine dell&#39;elenco.
 
-   * Una volta aggiunto un campo al modello, il pannello di destra mostra le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
+     >[!NOTE]
+     >
+     >**I campi segnaposto scheda** devono essere sempre visualizzati sopra i campi esistenti.
+
+   * Puoi riposizionare un campo utilizzando la formazione di punti a sinistra della casella del campo:
+
+     ![Sposta campo](assets/cf-cfmodels-move-field-icon.png)
+
+   * Una volta aggiunto un campo al modello (e selezionato), il pannello di destra mostra le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire cosa è necessario per il
+campo.
 
       * Molte proprietà sono auto-esplicative. Per ulteriori dettagli, vedere [Proprietà (tipi di dati)](#properties).
       * La digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà** - se vuoto, e può essere aggiornato manualmente in seguito.
@@ -72,15 +100,17 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
      ![Proprietà campo](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >Quando un campo è definito come **Obbligatorio**, l&#39;**Etichetta** indicata nel riquadro centrale è contrassegnata con un asterisco (**&#42;**).
+
 1. **Per rimuovere un campo**
 
-   Seleziona il campo richiesto, quindi seleziona l’icona del cestino. Viene richiesto di confermare l’azione.
+   Seleziona l’icona cestino per il campo appropriato nel pannello centrale.
 
    ![Rimuovi](assets/cf-cfmodels-remove-icon.png)
 
-1. Aggiungi tutti i campi obbligatori e definisci le relative proprietà in base alle esigenze. Esempio:
-
-   ![Salva](assets/cf-cfmodels-save.png)
+1. Aggiungi tutti i campi obbligatori e definisci le relative proprietà in base alle esigenze.
 
 1. Seleziona **Salva** per mantenere la definizione.
 
@@ -118,6 +148,7 @@ Per definire il modello è disponibile una selezione di tipi di dati:
 
 * **Tag**
    * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
+
 * **Riferimento frammento**
    * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
    * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
@@ -126,18 +157,16 @@ Per definire il modello è disponibile una selezione di tipi di dati:
       * Crea nuove istanze del campo
    * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
 
-* **Riferimento frammento (UUID)**
-   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
-      * Modificare direttamente il frammento a cui si fa riferimento.
-      * Creare un nuovo frammento di contenuto basato sul modello appropriato
-      * Crea nuove istanze del campo
-   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
-      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare il frammento richiesto
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Riferimento contenuto**
    * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
    * Il riferimento specifica il percorso della risorsa di riferimento, ad esempio `/content/dam/path/to/resource`
 
-* **Riferimento contenuto (UUID)**
-   * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
-   * Il campo può essere configurato per consentire agli autori di frammenti di creare nuove istanze del campo
-   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
-      * Non è necessario conoscere l’UUID; nell’editor frammenti puoi individuare la risorsa richiesta
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Gli UUID sono specifici dell’archivio. Se si utilizza lo strumento [Copia contenuto](/help/implementing/developing/tools/content-copy.md) per copiare frammenti di contenuto, gli UUID verranno ricalcolati nell&#39;ambiente di destinazione.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Oggetto JSON**
    * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
@@ -170,6 +199,8 @@ Per definire il modello è disponibile una selezione di tipi di dati:
      >[!NOTE]
      >
      >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+     >
+     >**I campi segnaposto scheda** devono essere sempre visualizzati sopra i campi esistenti.
 
 ## Proprietà (tipi di dati) {#properties}
 
@@ -258,16 +289,12 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 
 * [Riferimento contenuto](#content-reference)
    * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
-   * Forniti dai tipi di dati:
-      * **Riferimento contenuto** - basato su percorso
-      * **Riferimento contenuto (UUID)** - basato su UUID
+   * Fornito dal tipo di dati **Riferimento contenuto**
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 * [Riferimento frammento](#fragment-reference-nested-fragments) (frammenti nidificati)
    * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
-   * Forniti dai tipi di dati:
-      * **Riferimento frammento** - basato su percorso
-      * **Riferimento frammento (UUID)** - basato su UUID
+   * Fornito dal tipo di dati **Riferimento frammento**
    * Consente di includere/recuperare dati strutturati.
 
      >[!NOTE]
@@ -275,19 +302,21 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
      >Questo metodo è particolarmente interessante quando si utilizza [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
+<!--
 >[!NOTE]
 >
->Consulta [Aggiornare i frammenti di contenuto per i riferimenti UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) per ulteriori informazioni su contenuto/riferimento frammento e riferimento contenuto/riferimento frammento (UUID) e per l&#39;aggiornamento ai tipi di dati basati su UUID.
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM dispone di protezione di ricorrenza per:
 >
->* Riferimenti contenuto
->In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
+>* Riferimenti al contenuto
+>  >  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
 >
 >* Riferimenti frammento in GraphQL
->Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+>  >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 
 ### Riferimento contenuto {#content-reference}
 
-I tipi di dati **Riferimento contenuto** e **Riferimento contenuto (UUID)** consentono di eseguire il rendering del contenuto da un&#39;altra origine, ad esempio immagine, pagina o frammento di esperienza.
+Il tipo di dati **Riferimento contenuto** consente di eseguire il rendering del contenuto da un&#39;altra origine, ad esempio immagine, pagina o frammento di esperienza.
 
 Oltre alle proprietà standard puoi specificare:
 
@@ -324,7 +353,7 @@ Oltre alle proprietà standard puoi specificare:
 
 ### Riferimento frammento (frammenti nidificati) {#fragment-reference-nested-fragments}
 
-I tipi di dati **Riferimento frammento** e **Riferimento frammento (UUID)** possono fare riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
+Il tipo di dati **Riferimento frammento** può fare riferimento a uno o più frammenti di contenuto. Questa funzione è particolarmente interessante per il recupero dei contenuti da utilizzare nell’app, in quanto consente di recuperare dati strutturati con più livelli.
 
 Ad esempio:
 
