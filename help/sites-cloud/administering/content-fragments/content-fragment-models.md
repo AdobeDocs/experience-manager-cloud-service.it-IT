@@ -313,10 +313,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM dispone di protezione di ricorrenza per:
 >
 >* Riferimenti al contenuto
->  >  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
+>  &#x200B;>  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
 >
 >* Riferimenti frammento in GraphQL
->  >  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+>  &#x200B;>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 >[!CAUTION]
 >
