@@ -1,5 +1,5 @@
 ---
-title: Panoramica dello strumento Content Transfer (Trasferimento contenuti)
+title: Panoramica dello strumento di trasferimento contenuti
 description: Scopri come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per trasferire contenuti da un’istanza AEM on-premise ad AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Panoramica"
->abstract="Lo strumento Content Transfer (Trasferimento contenuti) è stato sviluppato da Adobe e può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-Premise o AMS) all’istanza di destinazione AEM Cloud Service. Questo strumento trasferisce automaticamente anche i gruppi."
+>abstract="Lo strumento di trasferimento contenuti è stato sviluppato da Adobe e può essere utilizzato per spostare i contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza di destinazione AEM Cloud Service. Questo strumento trasferisce automaticamente anche i gruppi."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=it" text="Linee guida e best practice"
 
 Lo strumento Content Transfer (Trasferimento contenuti) è uno strumento sviluppato da Adobe che può essere utilizzato per avviare la migrazione dei contenuti esistenti da un’istanza AEM di origine (on-premise o AMS) all’istanza AEM Cloud Service di destinazione.
@@ -31,7 +31,7 @@ Lo strumento Content Transfer (Trasferimento contenuti) integra il processo di t
 * I registri di acquisizione vengono mantenuti e sono sempre disponibili per la risoluzione dei problemi
 * I report di convalida e migrazione entità sono disponibili per la convalida
 
-## Fasi nello strumento Content Transfer (Trasferimento contenuti) {#phases-content-transfer-tool}
+## Fasi nello strumento di trasferimento contenuti {#phases-content-transfer-tool}
 
 Il trasferimento dei contenuti prevede due fasi:
 
@@ -50,7 +50,7 @@ Un set di migrazione ha i seguenti attributi:
 * Con la nuova versione, puoi creare un massimo di dieci set di migrazione all’interno di un progetto creato in Cloud Acceleration Manager.
 * Ogni set di migrazione deve avere un nome univoco.
 
-Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
+Lo strumento di trasferimento contenuti dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service.
@@ -79,4 +79,4 @@ La scadenza di un set di migrazione può essere monitorata nella riga Set di mig
 
 ## Passaggio successivo {#whats-next}
 
-Dopo aver studiato lo strumento Content Transfer (Trasferimento contenuti), e la panoramica che descrive come lo si può utilizzare per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di AEM Cloud Service di destinazione, devi consultare i [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).
+Dopo aver studiato lo strumento di trasferimento contenuti, e la panoramica che descrive come lo si può utilizzare per spostare il contenuto esistente da un’istanza di AEM di origine (on-premise o AMS) all’istanza di AEM Cloud Service di destinazione, devi consultare i [Prerequisiti per lo strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).

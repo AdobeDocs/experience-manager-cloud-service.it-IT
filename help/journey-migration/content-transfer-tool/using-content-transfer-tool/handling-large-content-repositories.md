@@ -18,7 +18,7 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="Gestione di archivi di contenuti di grandi dimensioni"
->abstract="Per velocizzare in modo significativo le fasi di estrazione ed acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, lo Strumento di trasferimento dei contenuti (CTT) può utilizzare AzCopy come fase di pre-copia opzionale. Una volta configurato questo passaggio preliminare, nella fase di estrazione AzCopy copia i BLOB da Amazon S3 o dall’archiviazione BLOB di Azure nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione."
+>abstract="Per velocizzare in modo significativo le fasi di estrazione ed acquisizione dell’attività di trasferimento dei contenuti per spostare i contenuti in AEM as a Cloud Service, lo strumento di trasferimento contenuti (CTT, Content Transfer Tool) può utilizzare AzCopy come fase di pre-copia opzionale. Una volta configurato questo passaggio preliminare, nella fase di estrazione AzCopy copia i BLOB da Amazon S3 o dall’archiviazione BLOB di Azure nell’archivio BLOB del set di migrazione. Nella fase di acquisizione AzCopy copia i BLOB dall’archivio BLOB del set di migrazione all’archivio BLOB di AEM as a Cloud Service di destinazione."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it#setting-up-pre-copy-step" text="Guida introduttiva ad AzCopy come passaggio di pre-copia"
 
 La copia di molti BLOB con lo strumento Content Transfer (CTT) può richiedere diversi giorni.
@@ -32,13 +32,13 @@ Prima di iniziare, segui la sezione seguente per comprendere le considerazioni i
 
 * La versione di Source AEM deve essere 6.3 - 6.5.
 
-* L’archivio dati di Source AEM è configurato per l’utilizzo dell’archiviazione BLOB di Amazon S3 o Azure. Per ulteriori dettagli, vedere [Configurazione degli archivi nodi e dei dati in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=it).
+* L’archivio dati di Source AEM è configurato per l’utilizzo dell’archiviazione BLOB di Amazon S3 o Azure. Per ulteriori dettagli, vedere [Configurazione degli archivi nodi e dei dati in AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
 
 * Ogni set di migrazione copia l’intero archivio dati, pertanto è necessario utilizzare un solo set di migrazione.
 
 * È necessario accedere per installare [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) nell&#39;istanza (o macchina virtuale) che esegue l&#39;istanza AEM di origine.
 
-* La raccolta oggetti inattivi dell’archivio dati è stata eseguita nei sette giorni precedenti sull’origine. Per ulteriori dettagli, vedere [Raccolta di oggetti inattivi dell&#39;archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=it#data-store-garbage-collection).
+* La raccolta oggetti inattivi dell’archivio dati è stata eseguita nei sette giorni precedenti sull’origine. Per ulteriori dettagli, vedere [Raccolta di oggetti inattivi dell&#39;archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
 ### Considerazioni aggiuntive se l’istanza AEM di origine è configurata per utilizzare un archivio dati di archiviazione BLOB di Amazon S3 o Azure {#additional-considerations-amazons3-azure}
 
@@ -162,7 +162,7 @@ Con il file di configurazione di cui sopra attivo, la fase di pre-copia di AzCop
 
 >[!NOTE]
 >Se AzCopy non è configurato correttamente, nei registri viene visualizzato il seguente messaggio:
->&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Inizia un’estrazione dall’interfaccia utente CTT. Per ulteriori dettagli, vedere [Guida introduttiva allo strumento Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) e [Processo di estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
@@ -172,7 +172,7 @@ Con il file di configurazione di cui sopra attivo, la fase di pre-copia di AzCop
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-Congratulazioni Questa voce di registro indica che la configurazione è stata considerata valida e che AzCopy sta copiando tutti i BLOB dal contenitore di origine al contenitore di migrazione.
+Congratulazioni. Questa voce di registro indica che la configurazione è stata considerata valida e che AzCopy sta copiando tutti i BLOB dal contenitore di origine al contenitore di migrazione.
 
 Le voci di registro da AzCopy vengono visualizzate nel registro di estrazione con il prefisso c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [Precopia AzCopy]
 

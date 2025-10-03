@@ -13,7 +13,7 @@ ht-degree: 17%
 
 # Estrazione del contenuto dall’origine {#extracting-content}
 
-## Processo di estrazione nello strumento di trasferimento dei contenuti {#extraction-process}
+## Processo di estrazione nello strumento di trasferimento contenuti {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
@@ -22,7 +22,7 @@ ht-degree: 17%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#top-up-extraction-process" text="Estrazione integrativa"
 
 
-Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferimento contenuti), effettua le seguenti operazioni:
+Per estrarre il set di migrazione dallo strumento di trasferimento contenuti, effettua le seguenti operazioni:
 
 >[!NOTE]
 >Se come tipo di archivio dati viene utilizzato Amazon S3, Azure Data Store o File Data Store, puoi eseguire il passaggio di pre-copia facoltativo per aumentare la velocità della fase di estrazione. Il passaggio di pre-copia è più efficace per la prima estrazione e acquisizione complete. Per ulteriori dettagli, consulta [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
@@ -65,17 +65,17 @@ Per estrarre il set di migrazione dallo strumento Content Transfer (Trasferiment
 
 ## Estrazione integrativa {#top-up-extraction-process}
 
-Lo strumento Content Transfer (Trasferimento contenuti) dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
+Lo strumento di trasferimento contenuti dispone di una funzione che supporta l’integrazione di contenuti differenziali, per trasferire solo le modifiche apportate dall’ultima attività di trasferimento dei contenuti.
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativo è inferiore a 200 GB). Il motivo è che potrebbe aggiungere tempo all&#39;intero processo.
->Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
+>>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 >[!NOTE]
 >Dopo la migrazione dei percorsi di contenuto al contenitore di staging, non è possibile rimuovere o escludere tali percorsi o eventuali percorsi secondari al loro interno dalle migrazioni integrative successive.
->Esempio: Migrazione iniziale: content/dam/weRetail,
->Prossimo tentativo di esclusione integrativa: content/dam/weRetail/ab.
->In questo scenario, l’esclusione di contenuto/dam/weRetail/ab non è possibile perché i dati sono già stati migrati nel contenitore di staging.
+>>Esempio: Migrazione iniziale: content/dam/weRetail,
+>>Prossimo tentativo di esclusione integrativa: content/dam/weRetail/ab.
+>>In questo scenario, l’esclusione di contenuto/dam/weRetail/ab non è possibile perché i dati sono già stati migrati nel contenitore di staging.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa.
 

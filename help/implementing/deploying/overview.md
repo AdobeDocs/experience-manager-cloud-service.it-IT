@@ -41,7 +41,7 @@ Al fine di sviluppare un codice personalizzato per una versione interna, deve es
 
 Il video seguente fornisce una panoramica di alto livello su come distribuire il codice in AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/39832?quality=9&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -176,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestore di pacchetti - Migrazione dei pacchetti di contenuti mutabili"
 >abstract="Scopri l’utilizzo del gestore di pacchetti per i casi di utilizzo in cui un pacchetto di contenuti deve essere installato “una tantum”. L’installazione include l’importazione di contenuto specifico dalla produzione allo staging per eseguire il debug di un problema di produzione, il trasferimento di un piccolo pacchetto di contenuti dall’ambiente on-premise agli ambienti di AEM Cloud e molto altro ancora."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it" text="Strumento trasferimento contenuti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it" text="Strumento di trasferimento contenuti"
 
 Ci sono casi d’uso in cui un pacchetto di contenuti deve essere installato come “una tantum”. Ad esempio, per eseguire il debug di un problema di produzione, è necessario importare contenuto specifico dalla produzione allo staging. Per questi scenari, è possibile utilizzare il [Gestore di pacchetti](/help/implementing/developing/tools/package-manager.md) in ambienti AEM as a Cloud Service.
 
