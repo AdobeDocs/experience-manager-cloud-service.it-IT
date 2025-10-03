@@ -1,15 +1,14 @@
 ---
 title: Sperimentazione contestuale in AEM as a Cloud Service
-description: Scopri come utilizzare il plug-in di sperimentazione per aggiungere funzionalità di sperimentazione ai siti.
+description: Scopri come utilizzare il plug-in di sperimentazione per aggiungere funzionalità di sperimentazione al sito.
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # Panoramica {#overview}
 
