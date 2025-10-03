@@ -3,14 +3,14 @@ title: Sperimentazione contestuale in AEM as a Cloud Service
 description: Scopri come utilizzare il plug-in di sperimentazione per aggiungere funzionalità di sperimentazione al sito.
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# Panoramica {#overview}
+# Sperimentazione contestuale in AEM as a Cloud Service {#contextual-experimentation}
 
 >[!NOTE]
 >Attualmente, la funzione di sperimentazione contestuale è disponibile solo tramite il programma beta. Contatta il supporto Adobe o il tuo account manager per accedere al programma beta.
@@ -55,7 +55,7 @@ Il [servizio di telemetria operativa](/help/sites-cloud/administering/operationa
 
 ### Identificatore esperimento {#experiment-identifier}
 
-Prima di iniziare, ogni esperimento deve avere un proprio identificatore a scopo di tracciamento e analisi. Un buon punto di partenza è quello di trovare un buon identificatore univoco per l’esperimento, che sarà l’&quot;ID esperimento&quot;. Gli esperimenti sono spesso numerati in modo lineare o correlati al loro ID problema in un sistema di tracciamento o gestione dei problemi. Gli ID esperimento utilizzano spesso un prefisso per il progetto, ad esempio: OPT-0134, EXP0004 o CCX0076.
+Prima di iniziare, ogni esperimento deve avere un proprio identificatore a scopo di tracciamento e analisi. Un buon punto di partenza è quello di trovare un buon identificatore univoco per l’esperimento, che sarà l’&quot;ID esperimento&quot;. Gli esperimenti sono spesso numerati in modo lineare o correlati al loro ID problema in un sistema di tracciamento o gestione dei problemi. Gli ID esperimento utilizzano spesso un prefisso per il progetto, ad esempio: `OPT-0134`, `EXP0004` o `CCX0076`.
 
 ### Crea la pagina Challenger {#create-challenger-page}
 
@@ -91,7 +91,7 @@ Vedi l’esempio seguente:
 
 Per ogni esperimento, il traffico viene suddiviso tra tutte le varianti (controllo e sfidanti) e viene automaticamente impostato su una distribuzione uniforme. Di conseguenza, se si dispone di uno sfidante, ci sarà automaticamente una divisione 50/50 tra il controllo e lo sfidante. Se avete due sfidanti, vedrete automaticamente un terzo del traffico assegnato al controllo e ogni sfidante e così via.
 
-Puoi sovrascrivere la suddivisione del traffico configurando i metadati. Per ulteriori informazioni su come personalizzare i metadati utilizzati negli esperimenti, consulta la [pagina](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring) seguente
+Puoi sovrascrivere la suddivisione del traffico configurando i metadati. Per ulteriori informazioni su come personalizzare i metadati utilizzati negli esperimenti, consulta la [pagina](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring) seguente.
 
 ### Anteprima e staging delle varianti dell’esperimento {#preview-stage-experiment}
 
