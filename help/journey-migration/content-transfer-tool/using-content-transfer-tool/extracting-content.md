@@ -69,13 +69,13 @@ Lo strumento di trasferimento contenuti dispone di una funzione che supporta l�
 
 >[!NOTE]
 >Dopo il trasferimento iniziale dei contenuti, si consiglia di eseguire frequenti integrazioni dei contenuti differenziali in modo da ridurre il periodo di blocco dei contenuti per il trasferimento finale dei contenuti differenziali, prima della pubblicazione in Cloud Service. Se hai utilizzato il passaggio di pre-copia per la prima estrazione completa, puoi saltare la pre-copia per le successive estrazioni integrative (se la dimensione del set di migrazione integrativo è inferiore a 200 GB). Il motivo è che potrebbe aggiungere tempo all&#39;intero processo.
->>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
+>&#x200B;>Inoltre, è essenziale che la struttura del contenuto esistente non venga modificata dal momento in cui viene effettuata l’estrazione iniziale a quello in cui viene eseguita l’estrazione integrativa. I top-up non possono essere eseguiti su contenuti la cui struttura è stata modificata dopo l’estrazione iniziale. Assicurati di limitare questo passaggio durante il processo di migrazione.
 
 >[!NOTE]
 >Dopo la migrazione dei percorsi di contenuto al contenitore di staging, non è possibile rimuovere o escludere tali percorsi o eventuali percorsi secondari al loro interno dalle migrazioni integrative successive.
->>Esempio: Migrazione iniziale: content/dam/weRetail,
->>Prossimo tentativo di esclusione integrativa: content/dam/weRetail/ab.
->>In questo scenario, l’esclusione di contenuto/dam/weRetail/ab non è possibile perché i dati sono già stati migrati nel contenitore di staging.
+>&#x200B;>Esempio: Migrazione iniziale: content/dam/weRetail,
+>&#x200B;>Prossimo tentativo di esclusione integrativa: content/dam/weRetail/ab.
+>&#x200B;>In questo scenario, l’esclusione di contenuto/dam/weRetail/ab non è possibile perché i dati sono già stati migrati nel contenitore di staging.
 
 Una volta completato il processo di estrazione, puoi trasferire il contenuto delta utilizzando il metodo di estrazione integrativa.
 
