@@ -4,9 +4,9 @@ description: Scopri come visualizzare in anteprima i frammenti di contenuto con 
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,8 @@ Puoi visualizzare in anteprima il frammento:
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+Naturalmente, puoi anche visualizzare il frammento nell&#39;[Editor frammento di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ Una volta definito l&#39;URL, il pulsante **[Anteprima](/help/sites-cloud/admini
 
 ## Anteprima istanza {#preview-instance}
 
-Puoi **Pubblicare** e **Annullare la pubblicazione**, il frammento nell&#39;istanza di anteprima (nonché nell&#39;istanza di pubblicazione).
+Puoi **Pubblicare** e **Annullare la pubblicazione**, il frammento nel **[Servizio di anteprima](/help/headless/deployment/architecture.md)** (nonché nell&#39;istanza di pubblicazione).
 
 Puoi pubblicare il frammento dall’editor o dalla console.
 
