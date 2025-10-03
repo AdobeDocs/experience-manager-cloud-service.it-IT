@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 39615980db6ef985d6baeb5bfd049c4418ab8da8
+source-git-commit: 105eaf079447f6e0e4829d5f9e01893b8251403f
 workflow-type: tm+mt
-source-wordcount: '6821'
+source-wordcount: '6823'
 ht-degree: 95%
 
 ---
@@ -346,9 +346,9 @@ ht-degree: 95%
          + [Utilizzo del trasformatore di contenuti](/help/journey-migration/content-transformer/using.md)
       + Strumento di trasferimento contenuti {#content-transfer-tool}
          + [Panoramica](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [Prerequisiti per lo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [Linee guida e best practice per l’utilizzo dello strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [Guida introduttiva allo strumento Content Transfer (Trasferimento contenuti)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [Prerequisiti per lo strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [Linee guida e best practice per l’utilizzo dello strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [Guida introduttiva allo strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Convalida dei trasferimenti di contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Migrazione di gruppi di utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [Gestione di archivi di contenuti di grandi dimensioni](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
@@ -358,7 +358,7 @@ ht-degree: 95%
          + [Indicizzazione dopo la migrazione del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [Visualizzazione dei registri di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Eliminazione di un set di migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-         + [Esecuzione dello strumento Content Transfer (Trasferimento contenuti) su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [Esecuzione dello strumento di trasferimento contenuti su un’istanza di pubblicazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Gestione delle entità principali dopo la migrazione](/help/journey-migration/managing-principals-after-migration.md)
          + [Caricamento in blocco delle entità principali in IMS dopo la migrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [Risoluzione dei problemi dello strumento di trasferimento contenuti](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
@@ -532,8 +532,9 @@ ht-degree: 95%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [Sperimentazione contestuale](/help/sites-cloud/administering/contextual-experimentation.md)
 + Risorse {#assets}
    + [Panoramica e novità](/help/assets/overview.md)
    + [Modifiche di rilievo apportate a [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -800,8 +801,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
