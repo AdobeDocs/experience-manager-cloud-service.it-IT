@@ -4,10 +4,10 @@ description: Queste sono le note sulla versione 2025.10.02 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 58%
+source-wordcount: '188'
+ht-degree: 55%
 
 ---
 
@@ -22,7 +22,7 @@ Queste sono le note sulla versione del 2 ottobre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [È stata aggiunta un&#39;opzione](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) al menu **Account** nella barra degli strumenti dell&#39;intestazione di Experience Manager per passare dall&#39;ambiente di anteprima a quello di produzione.
+* [È stata aggiunta un&#39;opzione](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) al menu **Account** nella barra degli strumenti dell&#39;intestazione di Experience Manager per passare dalla versione di produzione corrente di Universal Editor alla versione di anteprima in arrivo.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 

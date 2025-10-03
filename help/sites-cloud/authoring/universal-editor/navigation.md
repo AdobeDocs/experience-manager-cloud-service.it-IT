@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 19%
 
 ---
@@ -117,7 +117,7 @@ Toccando o facendo clic sull’icona dell’account si apre un menu con le impos
 
 ![Commutatore ambiente](assets/environment-switcher.png)
 
-Per l&#39;editor universale, [se è disponibile il servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md), è inoltre possibile passare dagli ambienti di produzione a quelli di anteprima sotto l&#39;intestazione **Impostazioni prodotto**.
+Per l&#39;editor universale, sotto l&#39;intestazione **Impostazioni prodotto**, è possibile passare dalla versione di produzione corrente dell&#39;editor universale alla versione di anteprima in arrivo.
 
 ### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
@@ -214,11 +214,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
