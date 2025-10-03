@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 31%
+source-wordcount: '592'
+ht-degree: 32%
 
 ---
 
@@ -29,7 +29,7 @@ Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi s
 
 ![Pubblicazione pagine](assets/publish-menu.png)
 
-1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **&#x200B;**&#x200B;nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **** nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. Se hai un [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponibile, puoi scegliere dove pubblicare i contenuti, in **[Anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (se disponibile) o **Pubblica**.
 1. Nella sezione **Elementi** sono elencati i contenuti inclusi nella pubblicazione. Tocca o fai clic su **Visualizza** per visualizzare i dettagli, tra cui:
    * **Nuovi** elementi non ancora pubblicati.
@@ -43,6 +43,10 @@ Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi s
    Tocca o fai clic sulla freccia indietro accanto all&#39;intestazione **Elementi** per tornare alla panoramica.
 
 1. Tocca o fai clic su **Pubblica** per pubblicare o su **Annulla** per interrompere.
+
+>[!TIP]
+>
+>Se pubblichi nell&#39;ambiente di anteprima, [puoi utilizzare l&#39;opzione nel menu **Account**](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) nella barra degli strumenti dell&#39;intestazione di Experience Manager per passare dall&#39;ambiente di anteprima a quello di produzione.
 
 >[!NOTE]
 >
@@ -62,9 +66,9 @@ Puoi anche pubblicare [dalla console Sites](/help/sites-cloud/authoring/sites-co
 
 Per informazioni su come creare contenuti con l’editor universale, consulta questo documento.
 
-* [Authoring dei contenuti con l’editor universale](authoring.md): scopri quanto è semplice e intuitivo per gli autori di contenuto creare contenuto utilizzando l’editor universale.
+* [Authoring dei contenuti con l’editor universale](authoring.md): scopri quanto è semplice e intuitivo per gli autori creare contenuto utilizzando l’editor universale.
 
-Per ulteriori informazioni sui dettagli tecnici di Universal Editor, consulta questi documenti per gli sviluppatori.
+Per ulteriori informazioni sui dettagli tecnici dell’editor universale, consulta questi documenti per gli sviluppatori.
 
 * [Introduzione all’editor universale](/help/implementing/universal-editor/introduction.md): scopri come l’editor universale consente di modificare ogni aspetto di qualsiasi contenuto in qualsiasi implementazione per fornire esperienze eccezionali, velocizzare la preparazione dei contenuti e fornire un’esperienza di sviluppo all’avanguardia.
 * [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md): scopri come accedere all’editor universale e come iniziare a instrumentare la prima app AEM per utilizzarla.

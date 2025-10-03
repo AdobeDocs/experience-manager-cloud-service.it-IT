@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 20%
+source-wordcount: '1953'
+ht-degree: 19%
 
 ---
 
@@ -79,7 +79,7 @@ L’intestazione di Experience Cloud è sempre presente nella parte superiore de
 
 #### Experience Manager {#experience-manager}
 
-Seleziona il collegamento Adobe Experience Cloud a sinistra dell&#39;intestazione per passare alla directory principale della tua soluzione Experience Manager e accedere a strumenti come [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e [Distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
+Seleziona il collegamento Adobe Experience Cloud a sinistra dell&#39;intestazione per passare alla directory principale della tua soluzione Experience Manager e accedere a strumenti come [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e [Distribuzione software](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home).
 
 ![Pulsante di navigazione globale](assets/global-navigation.png)
 
@@ -112,6 +112,12 @@ Toccando o facendo clic sul commutatore dell’app puoi passare rapidamente ad a
 Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni del tuo account. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
 
 ![Proprietà utente](assets/user-properties.png)
+
+Toccando o facendo clic sull’icona dell’account si apre un menu con le impostazioni utente. Queste impostazioni si applicano a Cloud Manager in generale e le sue funzioni sono descritte in dettaglio [nella documentazione.](/help/implementing/cloud-manager/navigation.md)
+
+![Commutatore ambiente](assets/environment-switcher.png)
+
+Per l&#39;editor universale, [se è disponibile il servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md), è inoltre possibile passare dagli ambienti di produzione a quelli di anteprima sotto l&#39;intestazione **Impostazioni prodotto**.
 
 ### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
@@ -305,7 +311,7 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 >
 >Utilizzare il tasto di scelta rapida `e` per aprire un frammento di contenuto selezionato nell&#39;editor frammenti di contenuto.
 
-##### Aggiungi {#add}
+##### Aggiungere {#add}
 
 Se selezioni un componente contenitore nella struttura del contenuto o nell’editor, l’opzione aggiungi viene visualizzata nel pannello delle proprietà.
 
