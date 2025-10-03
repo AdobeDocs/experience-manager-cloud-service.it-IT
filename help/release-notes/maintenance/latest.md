@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 51%
+source-wordcount: '433'
+ht-degree: 50%
 
 ---
 
@@ -31,9 +31,9 @@ Con la versione di attivazione funzioni 2025.10.0 verrà fornito il set di funzi
 * GRANITE-56026: migliora le risposte del codice di stato API delle autorizzazioni.
 * GRANITE-61015: aggiunto il pacchetto `org.apache.commons.io.channels` all&#39;elenco pubblico esportato.
 * GRANITE-61167: Il registro Felix è stato aggiornato alle ultime specifiche OSGI.
-* GRANITE-61167: Aggiornare le dipendenze dei felix.
+* GRANITE-61167: aggiorna una serie di dipendenze Apache Felix.
 * GRANITE-61169: migliorare il controllo delle stringhe protette.
-* GRANITE-61622: aggiorna le dipendenze sling.
+* GRANITE-61622: aggiorna una serie di dipendenze Apache Sling.
 * GRANITE-61663: aggiungi `com.adobe.granite.repository.indexdefs-1.0.2` a quickstart.
 * GRANITE-61811: aggiungi `com.adobe.granite.repository-2.0.0` a quickstart.
 * SITES-32014: ascolta eventi esterni per aggiornare le registrazioni del servizio.
