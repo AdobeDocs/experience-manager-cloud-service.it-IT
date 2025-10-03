@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 35%
 
 ---
@@ -132,20 +132,7 @@ Quando selezioni un modello specifico, vengono visualizzate le proprietà del mo
 * **Titolo**
 * **Tag**
 * **Descrizione**
-* **Schema URL anteprima**
-
-  I modelli per frammenti di contenuto consentono agli autori di **visualizzare in anteprima** il contenuto in un&#39;applicazione front-end esterna. Una volta configurato il servizio **Anteprima**, aggiungere l&#39;URL per l&#39;applicazione front-end.
-
-  L’URL di anteprima deve seguire questo pattern:
-    `https://<preview_url>?param=${expression}`
-
-  Le espressioni disponibili sono:
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[Schema URL anteprima](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
@@ -228,7 +215,7 @@ Selezionare ad esempio **Abilitato** nella colonna **Stato**. Una volta selezion
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa alla cartella appropriata per la configurazione [&#x200B; o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Utilizza **Crea** per aprire la finestra di dialogo.
 
    >[!CAUTION]
