@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ Converti i certificati in formato diverso da PEM con i seguenti comandi `openssl
 
 ## Limitazione del numero di certificati SSL installati {#limitations}
 
-In qualsiasi momento, Cloud Manager supporta fino a 50 certificati installati. Questi certificati possono essere associati a uno o più ambienti nel programma e includere anche eventuali certificati scaduti.
+In qualsiasi momento, Cloud Manager supporta fino a 70 certificati installati. Questi certificati possono essere associati a uno o più ambienti nel programma e includere anche eventuali certificati scaduti.
 
 Se hai raggiunto il limite, rivedi i certificati e prendi in considerazione l’eliminazione di eventuali certificati scaduti. Oppure, raggruppa più domini nello stesso certificato poiché un certificato può coprire più domini (fino a 100 SAN).
 
