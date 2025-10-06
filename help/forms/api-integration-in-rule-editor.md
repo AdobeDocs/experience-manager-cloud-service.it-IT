@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integrazione dell’API nell’editor di regole, richiama i miglioramenti del servizio
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
 # Integrazione dell’API nell’editor di regole
 
-<span>L&#39;integrazione dell&#39;API nell&#39;editor di regole si trova nel programma di adozione anticipata. Puoi scrivere a `aem-forms-ea@adobe.com` dal tuo ID e-mail ufficiale per partecipare al programma early adopter e richiedere l&#39;accesso alla funzionalità.</span>
+<span>L&#39;integrazione dell&#39;API nell&#39;editor di regole si trova nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori e richiedere l’accesso alla funzionalità, puoi inviare una e-mail all’indirizzo `aem-forms-ea@adobe.com` dal tuo ID e-mail ufficiale.</span>
+
+>[!NOTE]
+>
+> L’Editor di regole visive supporta l’integrazione delle API in Forms adattivo basato su Componenti core e Edge Delivery Services Forms.
 
 L’Editor di regole visive in Forms adattivo supporta l’integrazione API diretta senza creare un modello dati per moduli. Puoi connetterti a un endpoint API immettendo l’URL API (in formato JSON) o importando la configurazione tramite un comando cURL. Una volta integrata, è possibile utilizzare l&#39;azione **Invoke Service** per richiamare l&#39;API.
 
