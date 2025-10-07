@@ -1,17 +1,17 @@
 ---
-title: Strumenti AEM Developer per Eclipse
+title: Strumenti per sviluppatori AEM per Eclipse
 description: Scopri come utilizzare AEM Developer Tools per Eclipse, un plug-in di Eclipse basato sul plug-in di Eclipse per Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
 
 ---
 
-# Strumenti AEM Developer per Eclipse{#aem-developer-tools-for-eclipse}
+# Strumenti per sviluppatori AEM per Eclipse{#aem-developer-tools-for-eclipse}
 
 ![Logo Strumenti per sviluppatori Experience Manager per Eclipse](assets/eclipse-logo.png)
 
@@ -42,7 +42,10 @@ Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare il plug-in come segue:
 
-1. Apri il [sito Web AEM Developer Tools](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. Aprire il [sito Web AEM Developer Tools](https://eclipse.adobe.com/).
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copia il **collegamento di installazione**.
 
@@ -53,7 +56,7 @@ Dopo aver soddisfatto i [requisiti](#requirements) di cui sopra, puoi installare
 1. Fare clic su **Aggiungi...**.
 1. Nel campo **Name**, immetti `AEM Developer Tools`.
 1. Nel campo **Posizione**, copia l&#39;URL di installazione.
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 1. Controlla entrambi i plug-in **AEM** e **Sling**.
 1. Fai clic su **Avanti**.
 1. Nella finestra **Installa dettagli**, fai di nuovo clic su **Avanti**.
@@ -200,7 +203,7 @@ Se desideri ricreare un pacchetto dal progetto, fai clic con il pulsante destro 
 
 È ora disponibile una cartella di destinazione creata con il pacchetto all&#39;interno (denominata, ad esempio, `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Risoluzione di una definizione di progetto non valida {#resolving-invalid-project-definition}
 
