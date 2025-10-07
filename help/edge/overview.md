@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '988'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 94%
 >**Desideri metterti subito all’opera?**
 >
 >Se desideri iniziare subito a utilizzare Edge Delivery Services, hai a disposizione due opzioni.
->* [Avvia subito l&#39;authoring con un ambiente di esercitazione predefinito, completamente configurato e pronto per l&#39;uso.](https://www.aem.live/developer/ue-trial)
->* Accedi a ulteriori dettagli e configura il tuo ambiente in meno di 30 minuti [consultando l&#39;esercitazione su aem.live.](https://www.aem.live/developer/ue-tutorial)
+>* [Avvia subito l’authoring con un ambiente di esercitazione predefinito, completamente configurato e pronto per l’uso.](https://www.aem.live/developer/ue-trial)
+>* Accedi a ulteriori dettagli e configura il tuo ambiente in meno di 30 minuti [consultando l’esercitazione su aem.live.](https://www.aem.live/developer/ue-tutorial)
 
 ## Che cos’è Edge Delivery Services? {#what-is-edge}
 
