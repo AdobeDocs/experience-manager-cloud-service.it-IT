@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integrazione dell’API nell’editor di regole, richiama i miglioramenti del servizio
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> L’Editor di regole visive supporta l’integrazione delle API in Forms adattivo basato su Componenti core e Edge Delivery Services Forms.
+> L&#39;editor di regole visive supporta l&#39;integrazione API in Forms adattivo basato su Componenti core e [Edge Delivery Services Forms creato in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 L’Editor di regole visive in Forms adattivo supporta l’integrazione API diretta senza creare un modello dati per moduli. Puoi connetterti a un endpoint API immettendo l’URL API (in formato JSON) o importando la configurazione tramite un comando cURL. Una volta integrata, è possibile utilizzare l&#39;azione **Invoke Service** per richiamare l&#39;API.
 
 I campi modulo possono essere mappati direttamente ai parametri di input definiti nella configurazione API. Analogamente, i parametri di output possono essere mappati ai campi modulo utilizzando l&#39;opzione **payload evento** per la risposta API corrispondente.
 
 Inoltre, l&#39;Editor di regole visive consente di definire **success** e **gestori di errori** quando si richiama un servizio. I gestori di operazioni riuscite specificano le azioni da eseguire dopo una chiamata API riuscita, mentre i gestori di operazioni non riuscite definiscono la modalità di risposta del modulo in caso di errore.
-
->[!NOTE]
->
-> L&#39;integrazione API nell&#39;editor di regole è applicabile anche a [Edge Delivery Services Forms creato in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Confronto: Metodi di integrazione API
 
