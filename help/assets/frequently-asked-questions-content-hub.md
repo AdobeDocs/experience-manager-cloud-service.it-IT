@@ -2,8 +2,8 @@
 title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: ht
+source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Le risorse contrassegnate come approvate in Assets as a Cloud Service sono autom
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende se hai abilitato il pulsante di attivazione/disattivazione [Approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) disponibile nell’interfaccia utente Configurazione:
 
-* Se il pulsante di attivazione **Approvazione automatica** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
+* Se il pulsante di attivazione **Approvazione automatica** è abilitato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
 * Se il pulsante di attivazione **Approvazione automatica** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](/help/assets/approve-assets-content-hub.md) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
@@ -118,7 +118,7 @@ La tabella seguente illustra le principali differenze tra le due soluzioni:
 |  | Aggiungere metadati configurabili durante il caricamento delle risorse | ✓ | − |
 | Scaricamento e rappresentazioni | Scaricamento risorsa originale | ✓ | ✓ |
 |  | Condividere e scaricare rappresentazioni statiche da DAM | ✓ | ✓ |
-|  | Scaricare rappresentazioni dinamiche (predefinito e ritagli avanzati) | ✓ | ✓ |
+|  | Scaricare rappresentazioni dinamiche (predefinito e ritaglio avanzato) | ✓ | ✓ |
 |  | Possibilità di limitare la visualizzazione e lo scaricamento delle risorse scadute | ✓ | − |
 | Condivisione collegamento e raccolte | Condivisione collegamento per utenti che hanno effettuato l’accesso | ✓ | ✓ |
 |  | Raccolte pubbliche | ✓ | ✓ |

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: e7f50e7da80927c9b9604f5454e11af8cd712a20
 workflow-type: tm+mt
-source-wordcount: '6830'
+source-wordcount: '6836'
 ht-degree: 95%
 
 ---
@@ -533,7 +533,7 @@ ht-degree: 95%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Sperimentazione contestuale](/help/sites-cloud/administering/contextual-experimentation.md)
 + Risorse {#assets}
@@ -802,8 +802,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -973,25 +973,28 @@ ht-degree: 95%
       + [Supporto di script per i moduli HTML5](/help/forms/scripting-support.md)
       + [Set di moduli in AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Comunicazione interattiva {#interactive-communication}
-      + [Introduzione all’editor di comunicazioni interattive](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-      + [Creare una comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Creare un modello di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Creare un frammento di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
-      + [Oggetto Casella di testo nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
-      + [Oggetto immagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
-      + [Oggetto campo immagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
-      + [Oggetto Campo di testo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
-      + [Oggetto campo numerico nell’editor di comunicazione interattiva](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
-      + [Oggetto campo data/ora nell’editor di comunicazione interattiva](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
-      + [Oggetto campo data nell’editor di comunicazione interattiva](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
-      + [Oggetto CheckBox nell’editor di comunicazione interattiva](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
-      + [Oggetto pulsante di scelta nell’editor di comunicazione interattiva](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
-      + [Oggetto Subform nell’editor di comunicazione interattiva](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
-      + [Oggetto Rectangle nell&#39;editor di comunicazioni interattive](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
-      + [Oggetto Table nell’editor di comunicazione interattiva](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
-      + [Oggetto Line nell&#39;editor di comunicazioni interattive](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
-      + [Oggetto Barcode nell’editor di comunicazioni interattive](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + Panoramica {#overview}
+         + [Introduzione all’editor di comunicazioni interattive](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+         + [Creare una comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication.md)
+         + [Creare un modello di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-template.md)
+         + [Creare un frammento di comunicazione interattiva](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+         + [Introduzione alla comunicazione interattiva](/help/forms/introduction-to-interactive-communication.md)
+         + [Creare la prima comunicazione interattiva](/help/forms/create-your-first-communication.md)
+      + Componente {#component}
+         + [Componente Casella di testo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
+         + [Componente Immagine nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
+         + [Componente Campo immagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
+         + [Componente Campo di testo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
+         + [Componente Campo numerico nell’editor di comunicazione interattiva](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
+         + [Componente Campo data/ora nell’editor di comunicazione interattiva](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
+         + [Componente Campo data nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
+         + [Componente casella di controllo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
+         + [Componente Pulsante di opzione nell’editor di comunicazioni interattive](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
+         + [Componente Sottomodulo nell’editor di comunicazione interattiva](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
+         + [Componente Rettangolo nell’editor di comunicazioni interattive](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
+         + [Componente tabella nell’editor di comunicazione interattiva](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
+         + [Componente linea nell’editor di comunicazione interattiva](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
+         + [Componente Codice a barre nell’editor di comunicazioni interattive](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
       + [Associazione dati nell’editor di comunicazione interattiva](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
       + [Creazione di regole nell’editor di comunicazioni interattive](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
@@ -1207,7 +1210,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
       + [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
