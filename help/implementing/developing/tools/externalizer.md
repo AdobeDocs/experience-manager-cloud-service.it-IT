@@ -4,10 +4,10 @@ description: Externalizer è un servizio OSGi che consente di trasformare in mod
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,11 @@ Per riferimento, la configurazione OSGi predefinita per `com.day.cq.commons.impl
 >
 >La distribuzione di un file `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` personalizzato in AEM as a Cloud Service che omette una qualsiasi di queste mappature di dominio predefinite può causare un comportamento imprevedibile dell&#39;applicazione.
 
-Per ignorare i valori `preview` e `publish`, utilizzare le variabili di ambiente Cloud Manager come descritto nell&#39;articolo [Configurazione di OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e impostazione delle variabili predefinite `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW`.
+Non definire o sostituire le variabili di ambiente `EXTERNALIZER` (ad esempio, `AEM_EXTERNALIZER_AUTHOR`) in Cloud Manager. Se invece è necessario ignorare i valori di dominio `publish` o `preview`, definire e utilizzare le variabili di ambiente `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW`. Queste variabili verranno assegnate automaticamente ai campi corrispondenti nella configurazione di Externalizer durante l’avvio.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Configurazione del servizio Externalizer {#configuring-the-externalizer-service}
 
@@ -79,7 +83,7 @@ Per definire un mapping di dominio per il servizio Externalizer:
 
    * **`server`** è il nome host (nome di dominio o indirizzo ip).
    * **`port`** (facoltativo) è il numero di porta.
-   * **`contextpath`** (facoltativo) è impostato solo se AEM è installato come WebApp in un percorso di contesto diverso.
+   * **`contextpath`** (facoltativo) è impostato solo se AEM è installato come app Web in un percorso di contesto diverso.
 
    Esempio: `production https://my.production.instance`
 
