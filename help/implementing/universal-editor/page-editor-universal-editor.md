@@ -4,9 +4,9 @@ description: L’editor di pagine continua ad essere supportato da Adobe, ma l�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 | [Generare varianti](/help/generative-ai/generate-variations.md) | [!BADGE Non disponibile]{type=Negative} |  | [!BADGE Disponibile]{type=Positive} | [Disponibile come estensione](/help/implementing/universal-editor/extending.md) |
 | Inserimento nuovo blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | Riordinamento blocco | [!BADGE Disponibile]{type=Positive} | Possibile con trascinamento nel contesto, ma non nel pannello laterale “visualizzazione struttura” | [!BADGE Disponibile]{type=Positive} | È possibile con trascinamento in ”visualizzazione struttura”, ma non ancora nel contesto (pianificato) |
-| Taglia/Copia-Incolla blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
+| Taglia/Copia-Incolla blocco | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | Applicazione stili | [!BADGE Disponibile]{type=Positive} | Gli stili possono essere applicati ai componenti utilizzando [il sistema di stili.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponibile]{type=Positive} | Gli stili possono essere applicati utilizzando le proprietà normali del componente (o del frammento di contenuto). Lo stesso selettore di stile non è disponibile nell’editor universale, tuttavia utilizzando un widget a selezione multipla è possibile ottenere un’interfaccia utente molto simile. |
 | Applicazione layout | [!BADGE Disponibile]{type=Positive} | I siti devono implementare la [griglia reattiva di AEM](/help/implementing/developing/introduction/responsive-design.md) per consentire agli autori di ridimensionare i componenti in tre punti di interruzione predefiniti. | [!BADGE Disponibile]{type=Positive} | I layout possono essere applicati utilizzando le proprietà del componente regolare (o frammento di contenuto), ma la griglia reattiva non è supportata. |
 | Annulla-Ripristina | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
