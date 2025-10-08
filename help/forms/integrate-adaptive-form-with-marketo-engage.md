@@ -5,9 +5,9 @@ keywords: Come si collega un’istanza di Marketo al modulo? , Collega un modulo
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1048'
 ht-degree: 7%
 
 ---
@@ -18,15 +18,9 @@ ht-degree: 7%
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-4.png)
 
-Dopo aver creato la configurazione del servizio cloud per integrare Marketo Engage con AEM Forms, puoi configurare un modulo adattivo da integrare con [Adobe Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home).
+Dopo aver creato la configurazione del servizio cloud per integrare Marketo Engage con AEM Forms, puoi configurare un modulo adattivo da integrare con [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 È possibile collegare Marketo Engage a un modulo adattivo utilizzando la procedura guidata del modulo, che semplifica il processo di configurazione guidando l’utente attraverso ogni passaggio. Include la selezione di modelli, stili e campi dati, nonché la configurazione della mappatura dei dati per garantire che il modulo sia pronto per la comunicazione con Marketo Engage dopo la creazione. Utilizzando la procedura guidata del modulo, puoi anche configurare il modulo adattivo in modo che invii i dati direttamente a Adobe Marketo Engage al momento dell’invio.
-
-## Considerazioni sulla configurazione dell&#39;origine dati Marketo Engage per i moduli
-
-Durante la configurazione dell’origine dati di Marketo Engage per i moduli si tiene conto dei seguenti fattori:
-
-* Impossibile collegare Edge Delivery Services Forms a Marketo Engage.
 
 ## Prerequisito per la connessione di Marketo Engage con Forms
 
@@ -180,7 +174,7 @@ Il modulo adattivo è ora configurato per connettersi all’istanza di Marketo E
 
 ## Passaggio successivo
 
-È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
+È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
 
 ## Articoli correlati
 

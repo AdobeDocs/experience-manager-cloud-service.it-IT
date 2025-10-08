@@ -5,10 +5,10 @@ keywords: 'Utilizzare l’origine dati Marketo Engage in Adaptive Forms: come co
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 7%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 7%
 Dopo aver creato la configurazione del servizio cloud per integrare Marketo Engage con AEM Forms esistente, puoi configurare l’origine dati per i moduli.
 
 La configurazione dell’integrazione dei dati consente agli utenti di connettersi a varie origini dati o schemi. L’integrazione con l’origine dati Marketo Engage e il suo utilizzo in diversi moduli facilita le operazioni su tali dati. Per esplorare le origini dati predefinite supportate per un modulo adattivo, consulta l&#39;articolo [Configurare le origini dati](/help/forms/configure-data-sources.md).
-
-## Considerazioni sulla configurazione dell&#39;origine dati Marketo Engage per i moduli
-
-Durante la configurazione dell’origine dati di Marketo Engage per i moduli si tiene conto dei seguenti fattori:
-
-* Impossibile collegare Edge Delivery Services Forms a Marketo Engage.
 
 ## Prerequisito per l’utilizzo dell’origine dati Marketo Engage per i moduli
 
