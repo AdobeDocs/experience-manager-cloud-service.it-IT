@@ -3,9 +3,9 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -167,7 +167,7 @@ Solo gli amministratori e il creatore possono eliminare una raccolta. Per elimin
 
 ## Blocca o rimuovi puntina raccolta {#pin-unpin-collection}
 
-Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione bloccata dedicata nella home page Raccolte, consentendo di mantenere più facilmente raccolte importanti a portata di mano. Per l’accesso rapido, puoi fissare o sbloccare una raccolta eseguendo i passaggi seguenti:
+Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione bloccata dedicata nella home page Raccolte, consentendo di mantenere più facilmente raccolte importanti a portata di mano. Per un accesso rapido, puoi fissare o sbloccare una raccolta eseguendo i passaggi seguenti:
 
 1. Sfoglia le raccolte che desideri fissare o sbloccare.
 
@@ -187,13 +187,13 @@ Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per
 
 È possibile contrassegnare le raccolte come Preferite in Content Hub, semplificandone l&#39;organizzazione e il recupero. Una volta aggiunte, le tue raccolte preferite sono comodamente disponibili dalla scheda Preferiti nella pagina Home di Content Hub. Inoltre, puoi cercare le risorse nelle Raccolte preferite. Per contrassegnare le raccolte come Preferite, effettuare le seguenti operazioni:
 
-1. Sfoglia le raccolte che desideri fissare o sbloccare.
+1. Sfogliare le raccolte che si desidera contrassegnare come Preferite.
 
 1. Fai clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e seleziona **[!UICONTROL Aggiungi ai preferiti]** per contrassegnare la raccolta come Preferita.
 
    ![Contrassegna raccolte come preferite](assets/mark-favorite-collection.png)
 
-   Le raccolte contrassegnate come Preferite ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
+   Le raccolte contrassegnate come Preferiti ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
 
    ![Rimuovi raccolta come preferita](assets/remove-favorite-collection.png)
 
