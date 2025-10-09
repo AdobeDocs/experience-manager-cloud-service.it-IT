@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
+source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 13%
 
 ---
@@ -212,7 +212,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-Puoi copiare e incollare i componenti che si trovano all&#39;interno di [contenitori](/help/implementing/universal-editor/field-types.md#container) nella stessa scheda del browser. Ciò è possibile solo se nel contenitore [destinazione non è impostato alcun filtro.](/help/implementing/universal-editor/filtering.md)
+Puoi copiare e incollare i componenti che si trovano all&#39;interno di [contenitori](/help/implementing/universal-editor/field-types.md#container) nella stessa scheda del browser. Ciò è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o dispone di filtri che consentono di incollare il componente.
 
 ![Icona copia](assets/copy.png)
 ![Icona Incolla](assets/paste.png)
