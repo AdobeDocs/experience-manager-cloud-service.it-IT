@@ -3,7 +3,7 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -193,11 +193,11 @@ Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per
 
    ![Contrassegna raccolte come preferite](assets/mark-favorite-collection.png)
 
-   Le raccolte contrassegnate come Preferiti ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
+   Le raccolte contrassegnate come Preferite ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
 
    ![Rimuovi raccolta come preferita](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Blocca o Rimuovi puntina raccolta](#pin-unpin-collection) e [Contrassegna raccolte come Preferite](#favorite-collection) sono funzionalità di disponibilità limitate. Puoi creare e inviare un caso di assistenza clienti Adobe per abilitarlo per la distribuzione.
+>[Blocca o Rimuovi puntina raccolta](#pin-unpin-collection) e [Contrassegna raccolte come Preferite](#favorite-collection) sono funzionalità di disponibilità limitate. Puoi [creare e inviare](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) un caso di assistenza clienti Adobe per abilitarlo per la distribuzione.
 
