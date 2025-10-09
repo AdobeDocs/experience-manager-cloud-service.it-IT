@@ -3,10 +3,10 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,8 @@ Una raccolta fa riferimento a un insieme di risorse che possono essere condivise
 * **Scarica**: scarica le risorse.
 * **Rimuovi**: rimuovi risorse specifiche da una raccolta.
 * **Elimina**: elimina l&#39;intera raccolta.
+* **Blocca/Rimuovi**: Blocca o rimuovi la raccolta.
+* **Preferiti**: contrassegna la raccolta come preferita.
 
 Consente agli utenti di accedere e gestire facilmente le diverse risorse disponibili in [!DNL Content Hub].
 
@@ -40,7 +42,7 @@ Puoi scegliere di [creare una nuova raccolta](#create-new-collection) o [aggiung
 
 Esegui i passaggi seguenti per controllare l’accesso durante la creazione delle raccolte:
 
-1. Vai alla scheda **[!DNL Collections]** e fai clic su **[!UICONTROL Crea raccolta]**. Viene visualizzata la finestra Nuova raccolta.
+1. Vai alla scheda **[!DNL Collections]** e fai clic su **[!UICONTROL Crea raccolta]**. Viene visualizzata una nuova finestra Raccolta.
 
 1. Aggiungi **[!UICONTROL Titolo]** e **[!UICONTROL Descrizione]** per la raccolta.
 
@@ -163,5 +165,39 @@ Le risorse selezionate sono state rimosse dalla raccolta.
 
 Solo gli amministratori e il creatore possono eliminare una raccolta. Per eliminare una raccolta, passare alla scheda **[!UICONTROL Raccolte]** e fare clic sulla raccolta da eliminare. Fai clic sull&#39;icona ![elimina](assets/delete-icon.svg) per eliminare la raccolta.
 
+## Blocca o rimuovi puntina raccolta {#pin-unpin-collection}
 
+Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione bloccata dedicata nella home page Raccolte, consentendo di mantenere più facilmente raccolte importanti a portata di mano. Per l’accesso rapido, puoi fissare o sbloccare una raccolta eseguendo i passaggi seguenti:
+
+1. Sfoglia le raccolte che desideri fissare o sbloccare.
+
+1. Fai clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e seleziona **[!UICONTROL Aggiungi per accesso rapido]**. Viene visualizzata una casella di conferma.
+
+   ![raccolta pin](assets/pin-collection.png)
+
+1. Fai clic su **[!UICONTROL Pin]** per confermare. Il messaggio di avviso viene visualizzato quando si fissa una raccolta privata.
+
+   ![Conferma raccolta pin](assets/confirm-pin-collection.png)
+
+   Le Raccolte bloccate vengono visualizzate nella parte superiore per un accesso rapido. In alternativa, per sbloccare la raccolta, fai clic su **[!UICONTROL Altre azioni]** ![Altre azioni icona](assets/do-not-localize/more-actions.png) e seleziona **[!UICONTROL Sblocca]**.
+
+   ![Visualizza raccolte bloccate](assets/pinned-collections.png)
+
+## Contrassegna raccolte come preferite {#favorite-collection}
+
+È possibile contrassegnare le raccolte come Preferite in Content Hub, semplificandone l&#39;organizzazione e il recupero. Una volta aggiunte, le tue raccolte preferite sono comodamente disponibili dalla scheda Preferiti nella pagina Home di Content Hub. Inoltre, puoi cercare le risorse nelle Raccolte preferite. Per contrassegnare le raccolte come Preferite, effettuare le seguenti operazioni:
+
+1. Sfoglia le raccolte che desideri fissare o sbloccare.
+
+1. Fai clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e seleziona **[!UICONTROL Aggiungi ai preferiti]** per contrassegnare la raccolta come Preferita.
+
+   ![Contrassegna raccolte come preferite](assets/mark-favorite-collection.png)
+
+   Le raccolte contrassegnate come Preferiti ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
+
+   ![Rimuovi raccolta come preferita](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Blocca o Rimuovi puntina raccolta](#pin-unpin-collection) e [Contrassegna raccolte come Preferite](#favorite-collection) sono funzionalità di disponibilità limitate. Puoi creare e inviare un caso di assistenza clienti Adobe per abilitarlo per la distribuzione.
 
