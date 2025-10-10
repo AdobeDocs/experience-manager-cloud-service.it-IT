@@ -4,10 +4,10 @@ description: L’integrazione nativa di AEM Assets con Adobe Express consente di
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 200d0ae5546b5d50e8bad590f496b0fab62f0fe3
+source-git-commit: 76f23be65e71970742c40068c475da7d04c41a9c
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 9%
+source-wordcount: '777'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ Per iniziare a utilizzare AEM Assets nell’editor di Adobe Express, effettua le
 
 3. Fai clic su **[!UICONTROL Assets]** disponibile nel riquadro di navigazione a sinistra. Adobe Express mostra l’elenco degli archivi a cui hai diritto di accesso e l’elenco delle risorse e cartelle disponibili a livello principale.
 
-4. Sfoglia o cerca le risorse nel tuo archivio per trascinarle nell’area di lavoro. Puoi filtrare le risorse utilizzando vari filtri disponibili, ad esempio tipo di file, tipo MIME e dimensioni.
+4. Sfoglia o cerca le risorse nel tuo archivio, quindi trascinale e rilasciale sull’area di lavoro. In alternativa, fai clic sulle risorse per inserirle nell’area di lavoro. Puoi anche filtrare le risorse in base a vari criteri, ad esempio tipo di file, tipo MIME e dimensioni.
 
    >[!NOTE]
    >
@@ -41,6 +41,21 @@ Per iniziare a utilizzare AEM Assets nell’editor di Adobe Express, effettua le
 
    ![Inclusione delle risorse dal componente aggiuntivo di Assets](assets/adobe-express-native-integration.png)
 
+### Sostituisci immagine con caricamento AEM {#replace-image-using-aem-upload}
+
+È inoltre possibile sostituire le immagini aggiunte utilizzando **[!UICONTROL Caricamento AEM]**. A questo scopo, esegui i seguenti passaggi:
+
+1. Sfoglia o cerca le risorse e trascinale sull’area di lavoro.
+
+1. Selezionate l&#39;immagine da sostituire. Fai clic su **[!UICONTROL Sostituisci]** e seleziona **[!UICONTROL AEM Assets]** tra le varie altre opzioni.
+
+   ![Sostituzione AEM](assets/aem-replace.png)
+
+1. Il pannello **[!UICONTROL Caricamento AEM]** si apre nel pannello di navigazione a sinistra. Adobe Express mostra l’elenco degli archivi a cui hai diritto di accesso e l’elenco delle risorse e cartelle disponibili a livello principale. Seleziona una risorsa da lì per visualizzare in anteprima la sostituzione nell&#39;area di lavoro, quindi fai clic su **[!UICONTROL Sostituisci]** per confermare.
+
+   >[!NOTE]
+   >
+   > I tipi di file SVG non sono supportati.
 
 ## Salvare progetti Adobe Express in AEM Assets {#save-express-projects-in-assets}
 
@@ -77,18 +92,15 @@ Come best practice, Adobe consiglia di specificare i valori negli altri campi e 
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 pixel, massimo 40 MB</td>
+        <td> 65 MP (ad esempio, 8K x 8K o 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 pixel, massimo 40 MB</td>
+        <td> 65 MP (ad esempio, 8K x 8K o 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> Massimo 250 KB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
