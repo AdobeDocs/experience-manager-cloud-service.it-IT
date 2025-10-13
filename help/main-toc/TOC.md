@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: b6c3bfcdf5526e3cfbbcefd2791c77ef359574a7
 workflow-type: tm+mt
 source-wordcount: '6839'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -803,8 +803,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -873,7 +873,7 @@ ht-degree: 95%
                + [Utilizzo di funzioni asincrone in un modulo adattivo](/help/forms/using-async-funct-in-rule-editor.md)
                + [Miglioramenti a Avvia servizio nell’editor di regole visive per i moduli basati su componenti core](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [Miglioramenti dell’editor di regole](/help/forms/rule-editor-enhancements-use-cases.md)
-               + [Integrazione API nell’editor di regole](/help/forms/api-integration-in-rule-editor.md)
+               + [Integrazione dell’API nell’editor di regole](/help/forms/api-integration-in-rule-editor.md)
             + Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core{#create-and-use-custom-function-core-component}
                + [Introduzione alle funzioni personalizzate per moduli adattivi basati su componenti core](/help/forms/create-and-use-custom-functions.md)
                + [Creare e utilizzare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md)
@@ -1037,7 +1037,7 @@ ht-degree: 95%
       + [Riavvio di SDK di AEM](/help/forms/restart-aem-sdk.md)
       + [Risoluzione degli errori di creazione di moduli](/help/forms/form-creation-failing.md)
       + [Pagina di errore 502 nell’azione di invio personalizzata](/help/forms/custom-submit-action-troubleshooting.md)
-+ Assistente IA in AEM {#ai-in-aem}
++ IA in AEM {#ai-in-aem}
    + [Panoramica](/help/ai-in-aem/overview.md)
    + Assistente IA {#ai-assistant}
       + [Configurare l’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1163,11 +1163,11 @@ ht-degree: 95%
          + [Come precompilare i campi del modulo adattivo](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Creare componenti personalizzati per un modulo EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [Risoluzione dei problemi relativi a errori non consentiti 403 nell’invio di Edge Delivery Services Form](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [Risoluzione dei problemi relativi agli errori 403 non consentito durante l’invio di moduli di Edge Delivery Services](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
          + [Crea oggetto lead Salesforce tramite integrazione API](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + Elenco a discesa a cascata {#cascading-drop-down-list}
             + [Introduzione](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-            + [Crea integrazione API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [Creare integrazione API](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
             + [Crea modulo](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + Authoring basato su documenti {#getting-started-edge-delivery-services-forms}
          + [Creazione del primo modulo - Guida rapida con Fogli Google ed Excel](/help/edge/docs/forms/tutorial.md)
@@ -1211,7 +1211,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
       + [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
@@ -1302,7 +1302,7 @@ ht-degree: 95%
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Utilizzare più archivi](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configurazione del team di sviluppo Enterprise](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [Controlli delle richieste di pull per archivi privati](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Controlli della richiesta pull per archivi privati](/help/implementing/cloud-manager/managing-code/github-check-config.md)
          + [Annotazioni di controllo GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipeline CI-CD di Cloud Manager {#cicd-pipelines}

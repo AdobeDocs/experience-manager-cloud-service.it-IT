@@ -12,26 +12,26 @@ index: false
 source-git-commit: 3a09a3fa9b8fb3dacef4c900979c4cc256551941
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Creare un oggetto Lead di Salesforce tramite l’integrazione API
 
-Questo caso d’uso illustra come creare un lead in Salesforce utilizzando l’integrazione API. Al termine del processo, sarà possibile:
+Questo caso d’uso illustra come creare un lead in Salesforce utilizzando l’integrazione API. Alla fine di questo processo imparerai a:
 
-Configura un&#39;app [connessa in Salesforce](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) per abilitare l&#39;accesso API protetto.
+Configurare [un’app connessa in Salesforce](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) per abilitare l’accesso API protetto.
 
-Configura CORS (Cross-Origin Resource Sharing) per consentire al codice (come JavaScript) in esecuzione in un browser web di comunicare con Salesforce da un’origine specifica, aggiungi l’origine all’elenco Consentiti come mostrato di seguito
+Configurare CORS (Cross-Origin Resource Sharing) per consentire al codice (come JavaScript) in esecuzione in un browser web di comunicare con Salesforce da un’origine specifica, aggiungere l’origine all’elenco consentiti come mostrato di seguito
 
 ![cors](assets/salesforce-cors.png)
 
 ## Impostazioni app collegate
 
-Nell&#39;app connessa vengono utilizzate le impostazioni seguenti. Puoi assegnare gli ambiti OAuth in base alle tue esigenze.
+Nell’app connessa vengono utilizzate le impostazioni seguenti. Puoi assegnare gli ambiti OAuth in base alle tue esigenze.
 ![impostazioni-app-connesse](assets/salesforce-connected-app-settings.png)
 
-## Crea integrazione API
+## Creare integrazione API
 
 | Nome | Valore |
 |--------------------------------|------------------|
@@ -42,13 +42,13 @@ Nell&#39;app connessa vengono utilizzate le impostazioni seguenti. Puoi assegnar
 | URL token di accesso | https://`<your-domain>`/services/oauth2/token |
 | Aggiorna URL token | https://`<your-domain>`/services/oauth2/token |
 | Ambito autorizzazione | api chatter_api id completo openid refresh_token visualforce web |
-| Intestazione autorizzazione | Supporto autorizzazione |
+| Intestazione autorizzazione | Bearer autorizzazione |
 
-![integrazione api](assets/salesforce-api-integration-create-lead.png)
+![integrazione-api](assets/salesforce-api-integration-create-lead.png)
 
 ## Parametri di input e output
 
-Definisci i parametri di input per la chiamata API e mappa i parametri di output utilizzando il seguente json
+Definisci i parametri di input per la chiamata API e mappa i parametri di output utilizzando il seguente JSON
 
 ```json
 {
@@ -64,12 +64,12 @@ Definisci i parametri di input per la chiamata API e mappa i parametri di output
 Crea un semplice modulo adattivo utilizzando l’Editor universale per acquisire i dettagli dell’oggetto Lead come mostrato di seguito
 ![modulo-oggetto-lead](assets/create-lead.png)
 
-Gestisci l’evento clic sulla casella di controllo Crea lead utilizzando l’editor di regole. Mappate i parametri di input ai valori degli oggetti modulo appropriati, come mostrato di seguito. Visualizza l&#39;ID del nuovo oggetto Lead creato nell&#39;oggetto TextField `leadid`
-![editor di regole](assets/create-leade-rule-editor.png)
+Gestisci l’evento clic sulla casella di controllo Crea lead utilizzando l’editor di regole. Mappa i parametri di input ai valori degli oggetti modulo appropriati, come mostrato di seguito. Visualizza l’ID del nuovo oggetto Lead creato nell’`leadid`oggetto TextField
+![editor-di-regole](assets/create-leade-rule-editor.png)
 
 ## Testare l’integrazione
 
-- Visualizzare l’anteprima del modulo
+- Visualizza l’anteprima del modulo
 - Immetti alcuni valori significativi
-- Selezionare la casella di controllo `Create Lead` per attivare la chiamata API
-- L&#39;ID lead dell&#39;oggetto lead appena creato viene visualizzato nel campo di testo `Lead ID`.
+- Seleziona la casella di controllo `Create Lead` per attivare la chiamata API
+- L’ID lead dell’oggetto lead appena creato viene visualizzato nel campo di testo `Lead ID`.

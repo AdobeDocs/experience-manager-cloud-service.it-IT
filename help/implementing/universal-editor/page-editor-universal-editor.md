@@ -7,7 +7,7 @@ exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 L’editor universale offre numerosi vantaggi, pertanto è una soluzione ideale per nuovi progetti.
 
 * **Modifica visiva:** come per l’editor di pagine, gli autori possono modificare il contenuto direttamente nell’anteprima e visualizzare immediatamente come le modifiche influiscono sull’esperienza del visitatore.
-* **Future-Proofing:** la roadmap di AEM dà priorità all&#39;editor universale come editor visivo. Il suo utilizzo garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
+* **Predisposizione per il futuro:** la roadmap di AEM dà priorità all’editor universale come editor visivo. Il suo utilizzo garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
 * **Integrazione semplificata:** non è necessario alcun SDK specifico per AEM per utilizzare l’editor universale, così si riduce il blocco dello stack tecnologico.
 * **Porta la tua app:** l’editor universale supporta qualsiasi framework o architettura web, consentendo l’utilizzo senza richiedere un refactoring complesso.
 * **Estensibilità:** l’editor universale dispone di un solido [framework di estensione](/help/implementing/universal-editor/extending.md), che include integrazioni con GenAI, Workfront e altro ancora.
