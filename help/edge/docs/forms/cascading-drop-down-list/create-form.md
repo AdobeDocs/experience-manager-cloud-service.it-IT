@@ -1,12 +1,12 @@
 ---
 title: Creare un modulo con l’editor universale
-description: Creare un modulo adattivo per testare l’elenco a discesa a cascata tramite le integrazioni API
+description: Crea un modulo adattivo per testare l’elenco a discesa tramite le integrazioni API
 feature: Edge Delivery Services
 role: User
 source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ Crea il seguente modulo utilizzando l’editor universale. Il modulo dispone di 
 Al momento dell’inizializzazione, nel menu a discesa del paese di residenza verranno inseriti i risultati della chiamata API.
 ![initialize-event](assets/initialize-event.png)
 
-## Gestore di successo
+## Handler operazione riuscita
 
-Il gestore di operazione riuscita è stato definito per impostare l&#39;enum e l&#39;enumNames dell&#39;elenco a discesa del paese con i valori appropriati dall&#39;array dei nomi geografici. L’array di nomi geografici è disponibile nell’opzione Payload evento
-![payload evento](assets/event-payload.png)
-![handler di successo](assets/success-handler.png)
+Handler operazione riuscita è stato definito per impostare enum e enumNames dell’elenco a discesa del paese con i valori appropriati dall’array dei nomi geografici. L’array di nomi geografici è disponibile nell’opzione Payload evento
+![event-payload](assets/event-payload.png)
+![success-handler](assets/success-handler.png)
 
-## Recupera valori figlio
+## Recupera valori secondari
 
-L’elenco a discesa Stato o Provincia viene compilato quando l’utente effettua una selezione nell’elenco a discesa Paese di residenza. Il geonameId associato al paese selezionato viene passato come parametro di input all’integrazione API GetChildren
+La voce di elenco Stato o Provincia viene compilato quando l’utente effettua una selezione nell’elenco a discesa Paese di residenza. Il geonameId associato al paese selezionato viene passato come parametro di input all’integrazione API GetChildren
 
 ![get-children](assets/invoke-service-get-children.png)
 
-Il gestore di risultati è stato definito per impostare il campo a discesa enum/enumNames del campo StateOrProvince
+Il handler operazione riuscirta è stato definito per impostare il dato enum/enumNames del campo StateOrProvince
 ![get-children-success-handler](assets/child-success-handler.png)
 
-Quando si seleziona lo stato o la provincia, è possibile popolare l&#39;elenco a discesa città seguendo il modello sopra indicato utilizzato per popolare l&#39;elenco a discesa stato o provincia.
+Quando hai selezionato stato o provincia, puoi popolare l’elenco a discesa città seguendo il modello sopra indicato, utilizzato per popolare l’elenco a discesa stato o provincia.

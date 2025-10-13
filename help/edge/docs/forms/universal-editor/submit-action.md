@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Le seguenti azioni di invio sono supportate da [moduli adattivi creati nell’ed
 - [Richiamare un flusso Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 - [Inviare a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 - [Richiamare uno scenario Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-- [Inviare mediante il modello di dati modulo (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
+- [Inviare mediante un modello dati modulo (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 - [Inviare all’archiviazione Blob di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 - [Inviare all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
 - [Inviare a OneDrive](/help/forms/configure-submit-action-onedrive.md)

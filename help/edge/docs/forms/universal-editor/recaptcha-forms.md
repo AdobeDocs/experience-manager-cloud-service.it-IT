@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1281'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -217,7 +217,7 @@ I moduli Edge Delivery Services supportano due opzioni Google reCAPTCHA. Utilizz
 
 ## Configurare reCAPTCHA Standard
 
-+++Passaggio 1: ottenere le chiavi API reCAPTCHA (vedi i dettagli)
++++Passaggio 1: ottenere le chiavi API reCAPTCHA (consulta i dettagli)
 
 >[!IMPORTANT]
 >
@@ -255,7 +255,7 @@ I moduli Edge Delivery Services supportano due opzioni Google reCAPTCHA. Utilizz
 
 +++
 
-+++Passaggio 2: configurare il contenitore di configurazione cloud di AEM (consulta i dettagli)
++++Passaggio 2: configura il contenitore della configurazione di AEM Cloud (consulta i dettagli)
 
 Segui lo stesso processo della configurazione Enterprise:
 
@@ -267,7 +267,7 @@ Segui lo stesso processo della configurazione Enterprise:
 
 +++
 
-+++Passaggio 3: configurare il servizio standard reCAPTCHA in AEM (vedi dettagli)
++++Passaggio 3: configurare il servizio standard reCAPTCHA in AEM (consulta i dettagli)
 
 ![schermata di configurazione standard di reCAPTCHA](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
 *Figura: interfaccia di configurazione di reCAPTCHA Standard in AEM*
@@ -312,8 +312,8 @@ Dopo aver configurato il servizio reCAPTCHA, aggiungi la protezione al modulo co
 ![Aggiunta del componente reCAPTCHA a un modulo](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figura: aggiunta del componente Captcha invisibile al modulo*
 
-+++&#x200B;1. Apri modulo nell’editor universale
-Vai al modulo in AEM Sites e fai clic su Modifica per aprirlo in Universal Editor. Attendi il caricamento dell’editor.
++++&#x200B;1. Aprire il modulo nell’editor universale
+Passa al modulo in AEM Sites e fai clic su Modifica per aprirlo nell’editor universale. Attendi il caricamento dell’editor.
 
 - Passa al modulo in AEM Sites.
 - Fai clic su Modifica per aprirlo nell’editor universale.
@@ -328,7 +328,7 @@ Nella struttura del contenuto (pannello a sinistra), individua la sezione Modulo
 +++
 
 +++&#x200B;3. Aggiungere il componente reCAPTCHA
-Aggiungi il componente Captcha (invisibile) al modulo.
+Aggiungi al modulo il componente captcha (invisibile).
 
 - Fai clic sull’icona Aggiungi (+) nella sezione del modulo.
 - Dall’elenco dei componenti, seleziona Captcha (invisibile).
@@ -336,15 +336,15 @@ Aggiungi il componente Captcha (invisibile) al modulo.
 +++
 
 +++&#x200B;4. Configurare il componente (facoltativo)
-Seleziona il componente captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA.
+Seleziona il componente captcha appena aggiunto e verifica che utilizzi la configurazione reCAPTCHA che hai creato.
 
 - Seleziona il componente Captcha appena aggiunto.
 - Nel pannello Proprietà, verifica che utilizzi la configurazione reCAPTCHA precedentemente salvata.
 - Non è necessaria alcuna configurazione aggiuntiva per la configurazione di base.
 +++
 
-+++&#x200B;5. Pubblicare Le Modifiche
-Pubblica le modifiche e verifica che non siano presenti errori.
++++&#x200B;5. Pubblicare le modifiche apportate
+Pubblica le modifiche e verifica che non vi siano errori.
 
 - Fai clic su Pubblica nell’editor universale.
 - Attendi la conferma.

@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: precompilare un modulo adattivo, servizi di consegna edge di moduli adattivi, riempimento automatico di moduli adattivi
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ L’editor universale offre due opzioni di servizio di precompilazione:
 
 ## Configurare il servizio di precompilazione per un modulo
 
-+++Fase 1: Impostazione del modello dati del modulo
++++Fase 1: impostazione del modello dati modulo
 
 ### Passaggio 1: creare il modello dati modulo
 
@@ -145,7 +145,7 @@ L’editor universale offre due opzioni di servizio di precompilazione:
 
 +++
 
-+++Fase 2: Creazione e configurazione del modulo adattivo
++++Fase 2: creazione e configurazione del modulo adattivo
 
 ### Passaggio 3: creare un modulo adattivo
 
@@ -159,7 +159,7 @@ L’editor universale offre due opzioni di servizio di precompilazione:
 
    >
    >
-   > Puoi configurare l&#39;origine dati dalla scheda **Dati** o versione successiva modificando le proprietà del modulo.
+   > Puoi configurare l’origine dati dalla scheda **Dati** o successivamente modificando le proprietà del modulo.
 
 1. Specificare i dettagli del modulo:
 
@@ -207,7 +207,7 @@ Gli elementi del modulo dal tuo FDM vengono visualizzati nella scheda **Origine 
 
 +++
 
-+++Fase 3: Configurazione del servizio di preriempimento
++++Fase 3: configurazione del servizio di precompilazione
 
 ### Passaggio 6: abilitare le estensioni richieste
 
@@ -246,7 +246,7 @@ Assicurati che queste estensioni siano abilitate nell’editor universale:
 
 +++
 
-+++Fase 4: Verifica della configurazione di preriempimento
++++Fase 4: test della configurazione di precompilazione
 
 ### Passaggio 8: visualizzazione in anteprima e test
 
@@ -331,7 +331,7 @@ Gli URL riportati di seguito hanno solo scopo illustrativo e non funzioneranno c
 
 +++
 
-+++Passaggi del debug
++++Passaggi per il debug
 
 1. **Verificare la configurazione FDM:**
 
@@ -361,7 +361,7 @@ Gli URL riportati di seguito hanno solo scopo illustrativo e non funzioneranno c
 
 ## Best practice
 
-+++Best practice per la configurazione
++++Best practice di configurazione
 
 - **Utilizzare una denominazione descrittiva**: assegna un nome chiaro ai FDM e ai servizi
 - **Convalidare gli schemi dei dati**: verifica che la struttura dei dati corrisponda ai requisiti del modulo
@@ -399,13 +399,13 @@ Gli URL riportati di seguito hanno solo scopo illustrativo e non funzioneranno c
 
 ## Domande frequenti
 
-+++Come posso verificare se la precompilazione funziona correttamente?
++++Come posso testare se la precompilazione funziona correttamente?
 
 Visualizza l’anteprima del modulo e aggiungi i parametri di precompilazione all’URL utilizzando questo formato: `?<bindreferencefield>=<value>`. Assicurati che il campo abbia un `bindRef` valido che corrisponda alla struttura dei dati. Utilizza gli strumenti di sviluppo del browser per controllare le richieste di rete e verifica che i dati vengano recuperati correttamente.
 
 +++
 
-+++Quali formati di dati sono supportati per la precompilazione di Adaptive Forms?
++++Quali formati di dati sono supportati per la precompilazione dei moduli adattivi?
 
 I moduli adattivi supportano più formati a seconda del modello di modulo:
 
@@ -416,25 +416,25 @@ I moduli adattivi supportano più formati a seconda del modello di modulo:
 
 +++
 
-+++Posso precompilare sia i campi associati che quelli non associati?
++++Posso precompilare sia i campi associati sia quelli non associati?
 
 Sì, puoi precompilare entrambi i tipi di campi. I campi associati utilizzano la sezione `afBoundData` e devono corrispondere allo schema del modello del modulo. I campi non associati utilizzano la sezione `afUnBoundData` e possono contenere dati aggiuntivi.
 
 +++
 
-+++Cosa devo fare se solo alcuni campi sono precompilati?
++++Cosa devo fare se solo alcuni campi vengono precompilati?
 
 Verifica che tutti i campi abbiano valori `bindRef` corretti e che corrispondano esattamente al tuo FDM. Verifica che l’origine dati contenga tutti i campi obbligatori e che la struttura dati corrisponda allo schema del modello del modulo.
 
 +++
 
-+++È possibile utilizzare più servizi di precompilazione in un modulo?
++++Posso utilizzare più servizi di precompilazione in un unico modulo?
 
 Puoi configurare un servizio di precompilazione principale per modulo. Tuttavia, per ottenere funzionalità simili, puoi combinare diverse origini dati all’interno di un singolo modello dati modulo.
 
 +++
 
-+++Come si gestisce l’autenticazione per i servizi di precompilazione?
++++Come posso gestire l’autenticazione per i servizi di precompilazione?
 
 L’autenticazione dipende dalla configurazione dell’origine dati. Per la precompilazione basata su FDM, configura l’autenticazione nelle impostazioni dell’origine dati. Per la precompilazione delle bozze, gli utenti in genere devono aver effettuato l’accesso per accedere alle bozze salvate.
 

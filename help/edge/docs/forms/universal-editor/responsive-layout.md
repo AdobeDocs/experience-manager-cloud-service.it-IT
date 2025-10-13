@@ -7,14 +7,14 @@ role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2443'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Creazione di Forms reattivo con Universal Editor - Guida completa
+# Creazione di moduli dinamici con l’editor universale - Guida completa
 
 Il panorama web moderno richiede moduli che funzionino perfettamente in uno spettro sempre più ampio di dispositivi e dimensioni dello schermo. Che sia su un grande monitor desktop o sul piccolo display dello smartphone, gli utenti si aspettano esperienze coerenti e intuitive a prescindere dal dispositivo utilizzato. La creazione di moduli dinamici non è più un optional: è un requisito fondamentale per offrire esperienze digitali professionali, accessibili e ottimizzate per la conversione.
 
@@ -277,7 +277,7 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 ### Best practice per tipo di dispositivo
 
-+++Ottimizzazione per dispositivi mobili (320px-767px)
++++Ottimizzazione per dispositivi mobili (320 px-767 px)
 
 **Layout e interazione:**
 
@@ -296,18 +296,18 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 +++
 
-+++Ottimizzazione tablet (768px-1199px)
++++Ottimizzazione per tablet (768 px-1199 px)
 
 **Layout e usabilità:**
 
-- Utilizza layout a due colonne per i campi correlati per sfruttare lo spazio disponibile sullo schermo.
+- Utilizza layout a due colonne per i campi correlati per sfruttare il maggior spazio disponibile sullo schermo.
 - Verifica l’aspetto e l’usabilità del modulo sia in orientamento verticale che orizzontale.
 - Progetta per l’input touch e con il mouse, garantendo un facile accesso a tutti i controlli.
 - Aumenta le dimensioni dell’area del contenuto mantenendo una chiara gerarchia visiva e leggibilità.
 
 +++
 
-+++Ottimizzazione desktop (1200 px+)
++++Ottimizzazione per desktop (1200 px+)
 
 **Funzioni e layout avanzati:**
 
@@ -318,11 +318,11 @@ Il layout pannello a soffietto fa risparmiare spazio, consentendo di organizzare
 
 +++
 
-## Configurare layout personalizzati con punti di interruzione query multimediali
+## Configurare layout personalizzati con punti di interruzione query di file multimediali
 
-Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando **Universal Editor**, devi definire il comportamento reattivo utilizzando **Punti di interruzione per query multimediali CSS**. In questo modo i moduli vengono riprodotti correttamente su dispositivi e dimensioni di schermo diversi.
+Quando crei layout personalizzati per i componenti in Moduli adattivi utilizzando **Editor universale**, devi definire il comportamento dinamico utilizzando **Punti di interruzione per query di file multimediali CSS**. In questo modo il rendering dei moduli è corretto su dispositivi e dimensioni di schermo diversi.
 
-**Punti di interruzione consigliati (basati sui componenti core di AEM)**
+**Punti di interruzione consigliati (In base ai componenti core di AEM)**
 
 | **Tipo di dispositivo** | **Punto di interruzione consigliato** |
 |-----------------|---------------------------|
@@ -332,9 +332,9 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 **Punti chiave**
 
-- Utilizzare questi punti di interruzione per controllare il modo in cui i componenti vengono ridimensionati, sovrapposti o nascosti su dispositivi diversi.
-- Segui le linee guida di progettazione reattiva della tua organizzazione per un’esperienza utente coerente.
-- Test dei layout su più dispositivi e orientamenti per garantire usabilità e accessibilità.
+- Utilizza questi punti di interruzione per controllare come i componenti si ridimensionano, sovrappongono o nascondono su dispositivi diversi.
+- Segui le linee guida di progettazione dinamica della tua organizzazione per un’esperienza utente coerente.
+- Testa i layout su più dispositivi e orientamenti per garantire usabilità e accessibilità.
 
 ```css
 /* Example: Stack form fields on smaller screens */
@@ -348,7 +348,7 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 >[!NOTE]
 >
-> L’editor universale non fornisce un’interfaccia utente per la definizione del comportamento reattivo. Tutte le personalizzazioni del layout devono essere gestite tramite CSS.
+> L’editor universale non fornisce un’interfaccia utente per la definizione del comportamento dinamico. Tutte le personalizzazioni del layout devono essere gestite tramite CSS.
 
 
 
@@ -356,7 +356,7 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 ### Problemi di layout
 
-+++Interruzioni layout modulo su dispositivi mobili
++++Interruzioni del layout del modulo su dispositivi mobili
 
 **Cause possibili:**
 
@@ -373,7 +373,7 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 +++
 
-+++Destinazioni Touch Troppo Piccole
++++Destinazioni touch troppo piccole
 
 **Cause possibili:**
 
@@ -390,7 +390,7 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 +++
 
-+++Problemi di overflow del contenuto
++++Problemi di riversamento del contenuto
 
 **Cause possibili:**
 
@@ -447,7 +447,7 @@ Quando crei layout personalizzati per i componenti in Adaptive Forms utilizzando
 
 ## Metriche di successo per moduli dinamici
 
-+++Indicatori prestazioni chiave
++++Indicatori di prestazioni chiave
 
 **Esperienza utente:**
 

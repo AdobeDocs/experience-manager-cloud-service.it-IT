@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -292,11 +292,11 @@ Hai imparato a sfruttare correttamente i frammenti di modulo in Edge Delivery Se
 
 **Passaggi successivi:**
 
-- Crea una libreria di frammenti di uso comune per la tua organizzazione.
+- Crea una libreria di frammenti di utilizzo comune per la tua organizzazione.
 - Stabilisci convenzioni di denominazione e criteri di governance per l’utilizzo dei frammenti.
-- Esplora l’integrazione avanzata con [modelli di dati del modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) per frammenti dinamici basati su dati
-- Implementare modelli di modulo basati su frammenti per esperienze utente coerenti.
+- Esplora l’integrazione avanzata con [modelli dati modulo](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) per frammenti dinamici basati su dati
+- Implementa modelli di moduli basati su frammenti per esperienze utente coerenti.
 
-I moduli ora beneficiano di un’architettura modulare e gestibile in grado di scalare in modo efficiente tra i progetti, garantendo al contempo esperienze utente coerenti.
+I moduli ora usufruiscono di un’architettura modulare e gestibile in grado di scalare in modo efficiente tra i progetti, garantendo al contempo esperienze utente coerenti.
 
 

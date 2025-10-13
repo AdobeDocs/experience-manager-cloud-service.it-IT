@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ La **barra degli strumenti dell’editor universale** fornisce azioni chiave per
 
 **Per il primo modulo:**
 
-1. **Aggiungi un componente modulo adattivo** - Inserisci il componente `Adaptive Form` in una sezione.
+1. **Aggiungere un componente modulo adattivo**: inserisci il componente `Adaptive Form` in una sezione.
 2. **Iniziare la compilazione**: aggiungi componenti utilizzando il pulsante **Aggiungi** (`a`)
 3. **Configura campi**: seleziona i componenti e utilizza le **Modalità delle proprietà** (`d`)
 4. **Testa il modulo**: utilizza la **modalità anteprima** (`p`) per interagire con il modulo
@@ -121,7 +121,7 @@ La **barra degli strumenti dell’editor universale** fornisce azioni chiave per
 
 >[!NOTE]
 >
-> Per informazioni dettagliate sulla creazione di moduli in Universal Editor, vedere [Creare e pubblicare Forms adattivo con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Per informazioni dettagliate sui passaggi da seguire per la creazione di moduli nell’editor universale, consulta [Creare e pubblicare moduli adattivi con Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 **Punto di controllo per la convalida:**
 
@@ -223,7 +223,7 @@ La **barra degli strumenti dell’editor universale** contiene gli strumenti pri
 
 #### **Proprietà AEM Form**
 
-**Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM), configurare le azioni di invio e le date di pubblicazione\
+**Scopo:** configurare le impostazioni a livello di modulo come Modello dati modulo (FDM), configurando le azioni di invio e le date di pubblicazione\
 **Quando utilizzare:** configurazione delle integrazioni di dati, pianificazione della pubblicazione
 
 ![Proprietà modulo](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)

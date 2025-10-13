@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2608'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Le sezioni seguenti ti guideranno nei dettagli di ogni passaggio, garantendo un�
 
 +++
 
-+++Passaggio 2: installare AEM Code Sync
++++Passaggio 2: installare la sincronizzazione del codice AEM
 
 La sincronizzazione del codice AEM sincronizza automaticamente le modifiche apportate al contenuto tra l’ambiente di authoring AEM e l’archivio GitHub.
 
@@ -346,7 +346,7 @@ Completerai i seguenti passaggi di alto livello:
 3. Imposta le regole ESLint per adattarle ai nuovi file e modelli di codifica.
 4. Crea il progetto e impegna le modifiche nell’archivio.
 
-+++Passaggio 1: copiare i file di blocco di Forms
++++Passaggio 1: copiare i file di blocco dei moduli
 
 1. **Passa al progetto locale**
 
@@ -371,7 +371,7 @@ Completerai i seguenti passaggi di alto livello:
 
 +++
 
-+++Passaggio 2: Aggiornare la configurazione del componente
++++Passaggio 2: aggiornare la configurazione del componente
 
 1. **Aggiornare il modello della sezione**
 
@@ -465,7 +465,7 @@ Completerai i seguenti passaggi di alto livello:
 
 +++
 
-+++Passaggio 4: generare e distribuire
++++Passaggio 4: generare e implementare
 
 1. **Installare le dipendenze e generare**
 
@@ -553,7 +553,7 @@ Le sezioni seguenti ti guideranno nel dettaglio attraverso tutti questi passaggi
 
 +++
 
-+++Passaggio 2: Aggiungere componenti modulo
++++Passaggio 2: aggiungere componenti del modulo
 
 1. **Passa al blocco modulo**
    - Nella struttura contenuto, individua la sezione Modulo adattivo appena aggiunta
@@ -664,7 +664,7 @@ Ora che possiedi un modulo funzionante, puoi:
 
 Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarle immediatamente senza passare attraverso il ciclo di pubblicazione.
 
-+++Configurazione di AEM CLI e sviluppo locale
++++Configurazione di CLI di AEM e sviluppo locale
 
 1. **Installare AEM CLI**
 
@@ -718,7 +718,7 @@ Un ambiente di sviluppo locale consente di apportare modifiche e di visualizzarl
 
 ### Problemi comuni e soluzioni
 
-+++Problemi relativi alla build GitHub
++++Problemi relativi alla creazione in GitHub
 
 **Problema:** errori di creazione o di linting
 
@@ -762,7 +762,7 @@ Se visualizzi “Impossibile risolvere il percorso al modulo &#39;/scripts/lib-f
 
 +++
 
-+++Problemi relativi alla funzionalità dei moduli
++++Problemi relativi alla funzionalità del modulo
 
 **Problema:** gli invii del modulo non funzionano
 

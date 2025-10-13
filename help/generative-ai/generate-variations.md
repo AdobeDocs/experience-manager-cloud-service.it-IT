@@ -5,7 +5,7 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer
 source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3295'
 ht-degree: 100%
 
@@ -489,7 +489,7 @@ Per ulteriori informazioni, consulta anche:
 
 * [Genera varianti GenAI su GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Sperimentazione di Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [Intelligenza artificiale generativa in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
+* [IA generativa in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Domande frequenti {#faqs}
 

@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Nella finestra di dialogo Proprietà modulo, seleziona la scheda **Ringraziament
 
 **3. Configurare la visualizzazione del messaggio**
 
-Selezionare **Mostra messaggio** dalle opzioni disponibili.
+Seleziona **Mostra messaggio** dalle opzioni disponibili.
 
 ![grazie](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 

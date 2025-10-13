@@ -1,21 +1,21 @@
 ---
-title: Editor regole per Edge Delivery Services Forms
+title: Editor di regole per moduli Edge Delivery Services
 description: Crea moduli dinamici e avanzati utilizzando l’editor di regole nell’editor universale. Aggiungi logica condizionale, calcoli e comportamenti interattivi senza codifica.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Editor regole per Edge Delivery Services Forms
+# Editor di regole per moduli Edge Delivery Services
 
-L’editor di regole consente agli autori di trasformare i moduli statici in esperienze intelligenti e reattive senza scrivere codice. Puoi visualizzare i campi in modo condizionale, eseguire calcoli, convalidare dati, guidare gli utenti attraverso specifici flussi e integrare una logica di business che si adatta in base a ciò che viene digitato dall&#39;utente.
+L’editor di regole consente agli autori di trasformare i moduli statici in esperienze avanzate e dinamiche, senza scrivere codice. Puoi visualizzare i campi in modo condizionale, eseguire calcoli, convalidare dati, guidare gli utenti attraverso specifici flussi e integrare una logica di business che si adatta in base a ciò che viene digitato dall&#39;utente.
 
 ## Che cosa imparerai
 
@@ -304,7 +304,7 @@ Creerai un modulo che:
 
 +++
 
-+++ Passaggio 1: creare il modulo
++++ Passaggio 1: creazione del modulo
 
 **Obiettivo**: creare il modulo di base con tutti i campi e le impostazioni iniziali.
 
@@ -365,7 +365,7 @@ Figura: struttura del modulo iniziale con componenti di base configurati
 
 1. **Seleziona il campo “reddito imponibile”** e apri l’editor di regole
 2. **Crea l’espressione matematica**:
-   - “Fai clic su **Crea**   Seleziona **“Espressione matematica”**
+   - “Fai clic su **Crea** 	 Seleziona **“Espressione matematica”**
    - Crea l’espressione: **stipendio lordo − detrazione aggiuntiva**
    - Trascina “Stipendio lordo” nel primo campo
    - Seleziona l’operatore **“meno”**
@@ -537,7 +537,7 @@ Figura: selezione e configurazione di funzioni personalizzate nell’interfaccia
 
 >
 >
-> I miglioramenti all’editor delle regole, tra cui regole personalizzate basate su eventi, supporto per variabili dinamiche e integrazione API, sono disponibili anche per Edge Delivery Services Forms. Per ulteriori informazioni su questi miglioramenti e su come utilizzarli, consulta l&#39;articolo [Miglioramenti dell&#39;editor di regole e casi d&#39;uso](/help/forms/rule-editor-enhancements-use-cases.md).
+> I miglioramenti all’editor di regole, tra cui regole personalizzate basate su eventi, supporto per variabili dinamiche e integrazione API, sono disponibili anche per moduli Edge Delivery Services. Per ulteriori informazioni su questi miglioramenti e su come utilizzarli, consulta l’articolo [Miglioramenti dell’editor di regole e casi d’uso](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Best practice per l&#39;uso della funzione**
 
@@ -551,8 +551,8 @@ Figura: selezione e configurazione di funzioni personalizzate nell’interfaccia
 
 ### Importazioni statiche per funzioni personalizzate
 
-L&#39;editor di regole dell&#39;editor universale supporta le importazioni statiche, consentendo di organizzare la logica riutilizzabile in più file e moduli. Invece di mantenere tutte le funzioni personalizzate in un unico file (/blocks/form/functions.js), puoi importare funzioni da altri moduli.
-Esempio: importazione di funzioni da un file esterno
+L’editor di regole dell’editor universale supporta le importazioni statiche, consentendoti di organizzare la logica riutilizzabile in più file e moduli. Invece di mantenere tutte le funzioni personalizzate in un unico file (/blocks/form/functions.js), puoi importare funzioni da altri moduli.
+Esempio: per l’importazione di funzioni da un file esterno
 Considera la seguente struttura di cartelle:
 
 ```
@@ -565,7 +565,7 @@ Considera la seguente struttura di cartelle:
       ┗ functions.js
 ```
 
-È possibile importare le funzioni da `commonLib/functions.js` nel file `functions.js` principale come illustrato di seguito:
+Puoi importare le funzioni da `commonLib/functions.js` nel tuo file `functions.js` principale come illustrato di seguito:
 
 ```
 `import {days} from './commonLib/functions';
@@ -584,17 +584,17 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### Organizzazione Di Funzioni Personalizzate In Diversi Forms
+### Organizzazione di funzioni personalizzate in diversi moduli
 
-È possibile creare diversi set di funzioni in file o cartelle separati ed esportarli come richiesto:
+Puoi creare diversi set di funzioni in file o cartelle separati ed esportarli come richiesto:
 
-- Se si desidera rendere disponibili determinate funzioni solo in moduli specifici, è possibile specificare il percorso del file delle funzioni nella configurazione del modulo.
+- Se desideri rendere disponibili determinate funzioni solo in moduli specifici, puoi specificare il percorso del file delle funzioni nella configurazione del modulo.
 
-- Se la casella di testo per il percorso viene lasciata vuota, per impostazione predefinita nell&#39;Editor regole vengono caricate le funzioni da `/blocks/form/functions.js`
+- Se la casella di testo per il percorso viene lasciata vuota, per impostazione predefinita nell’editor di regole vengono caricate le funzioni da `/blocks/form/functions.js`
 
 ![Funzione personalizzata in UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-Nella schermata precedente, il percorso della funzione personalizzata viene aggiunto nella casella di testo Percorso funzione personalizzato. Le funzioni personalizzate per questo modulo sono caricate dal file specificato (`cc_function.js`).
+Nella schermata precedente, il percorso della funzione personalizzata viene aggiunto nella casella di testo Percorso funzione personalizzata. Le funzioni personalizzate per questo modulo sono caricate dal file specificato (`cc_function.js`).
 
 Ciò consente flessibilità condividendo funzioni su più moduli o mantenendoli isolati per modulo.
 
