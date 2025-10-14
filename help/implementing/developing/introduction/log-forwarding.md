@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ I clienti con una licenza di un fornitore di registrazione o che ospitano un pro
   <tbody>
     <tr>
       <th>Tecnologia di registro</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Sì</td>
       <td>Sì</td>
       <td>Sì</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Archiviazione BLOB di Azure</td>
-      <td>No</td>
       <td>Sì</td>
       <td>Sì</td>
       <td>Sì</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>No</td>
       <td>Sì</td>
       <td>Sì</td>
       <td>Sì</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Sì</td>
       <td>Sì</td>
       <td>Sì</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>No</td>
       <td>Sì</td>
       <td>Sì</td>
       <td>Sì</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>No</td>
       <td>Sì</td>
       <td>Sì</td>
       <td>Sì</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Sì</td>
       <td>Sì</td>
       <td>Sì</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>No</td>
       <td>Sì</td>
       <td>Sì</td>
       <td>Sì</td>
     </tr>
     <tr>
       <td>Logica sumo</td>
-      <td style="background-color: #ffb3b3;">Sì</td>
       <td>Sì</td>
       <td>Sì</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Per le tecnologie in Private Beta, invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
+> Per le future tecnologie di registro CDN pianificate per il futuro, invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare gli interessi.
 
 L’inoltro dei registri viene configurato in modo self-service dichiarando una configurazione in Git e può essere distribuito tramite pipeline di configurazione Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. Il file di configurazione può essere implementato negli ambienti di sviluppo rapido (RDE, Rapid Developement Environments) utilizzando gli strumenti della riga di comando.
 
@@ -116,7 +106,7 @@ Questo articolo è organizzato nel modo seguente:
 
 ## Configurazione {#setup}
 
-1. Creare un file denominato `logForwarding.yaml`. Deve contenere metadati, come descritto nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) (**tipo** deve essere impostato su `LogForwarding` e la versione impostata su &quot;1&quot;), con una configurazione simile alla seguente (ad esempio, si utilizza Splunk).
+1. Crea un file denominato `logForwarding.yaml`. Deve contenere metadati, come descritto nell&#39;articolo [Pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) (**tipo** deve essere impostato su `LogForwarding` e la versione impostata su &quot;1&quot;), con una configurazione simile alla seguente (ad esempio, si utilizza Splunk).
 
    ```yaml
    kind: "LogForwarding"
@@ -247,6 +237,8 @@ Per i registri CDN, puoi inserire nell&#39;elenco Consentiti gli indirizzi IP, c
 >[!NOTE]
 >
 >Non è possibile che i registri CDN vengano visualizzati dallo stesso indirizzo IP da cui vengono visualizzati i registri di AEM, perché i registri vengono inviati direttamente da Fastly e non da AEM Cloud Service.
+>
+>Per questo motivo non è possibile utilizzare l’inoltro del registro con configurazioni VPN di rete avanzate.
 
 ## Registrazione della configurazione di destinazione {#logging-destinations}
 
@@ -293,6 +285,9 @@ I criteri IAM devono consentire all&#39;utente di utilizzare `s3:putObject`.  Ad
 ```
 
 Per ulteriori informazioni su come implementare, consulta la [documentazione sui criteri bucket di AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html).
+
+>[!NOTE]
+>Il supporto del registro CDN per AWS S3 è pianificato per il futuro. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare l&#39;interesse.
 
 ### Archiviazione BLOB di Azure {#azureblob}
 
@@ -491,7 +486,7 @@ L’inoltro del registro a New Relic sfrutta l’API HTTPS di New Relic per l’
 >
 >L’inoltro dei registri a New Relic è disponibile solo per gli account New Relic di proprietà del cliente.
 >
->Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
+>Il supporto del registro CDN per l’API di registro New Relic è pianificato per il futuro. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare l&#39;interesse.
 >
 >New Relic fornisce endpoint specifici per l’area geografica in base alla posizione in cui è stato eseguito il provisioning dell’account New Relic.  Per ulteriori informazioni, consulta la [documentazione di New Relic](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint).
 
@@ -515,8 +510,7 @@ L’attributo di ambito &quot;Ingest Logs&quot; (Acquisisci registri) è obbliga
 ```
 
 >[!NOTE]
->
-> Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per richiedere l&#39;accesso.
+>Il supporto del registro CDN per l’API di registro Dynatrace è pianificato per il futuro. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare l&#39;interesse.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>Il supporto dei registri CDN per SumoLogic è pianificato per il futuro. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare l&#39;interesse.
+>
 > Per sfruttare la funzionalità del campo &quot;indice&quot; è necessario un abbonamento Sumo Logic Enterprise.  I registri delle sottoscrizioni non Enterprise verranno instradati alla partizione `sumologic_default` come standard.  Per ulteriori informazioni, vedere la [documentazione sul partizionamento logico Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/).
 
 ## Formati voce registro {#log-formats}
