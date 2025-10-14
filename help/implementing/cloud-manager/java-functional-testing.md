@@ -131,7 +131,7 @@ Le modifiche imminenti all&#39;infrastruttura containerizzata per l&#39;esecuzio
 >[!NOTE]
 >
 >Questa modifica deve essere eseguita prima del 6 aprile 2024.
->>Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
+>&#x200B;>Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
 
 ### Esecuzione locale dei test {#local-test-execution}
 

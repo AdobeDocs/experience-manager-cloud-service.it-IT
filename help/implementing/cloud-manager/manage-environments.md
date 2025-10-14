@@ -67,7 +67,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente**, esegui le operazioni seguenti:
 
-   * Selezionare un tipo di ambiente [****](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
+   * Selezionare un tipo di ambiente [**&#128279;**](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Fornisci una **Descrizione** facoltativa per l&#39;ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
