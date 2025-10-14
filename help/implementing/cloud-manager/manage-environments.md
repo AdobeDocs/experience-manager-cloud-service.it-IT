@@ -308,7 +308,7 @@ Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer
 
 Solo gli utenti con il ruolo **Sviluppatore** possono accedere a **Developer Console**. Tuttavia, per i programmi sandbox, qualsiasi utente con accesso al programma sandbox ha accesso a **Developer Console**.
 
-Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
+Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
 
 Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **Panoramica** quando si fa clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) di un singolo ambiente.
 

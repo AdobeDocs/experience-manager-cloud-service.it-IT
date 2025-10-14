@@ -101,5 +101,5 @@ Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia dell
 
 Per ulteriori informazioni sui file di registro in AEM as a Cloud Service, consulta le seguenti risorse aggiuntive:
 
-* [File di registro di Cloud 5 AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [File di registro di Cloud 5 AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
