@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privata" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>La funzione descritta in questo articolo è disponibile solo tramite il programma beta privato. Per iscriverti alla versione beta privata, consulta [Ambiente di test specializzato](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>La funzione descritta in questo articolo è disponibile solo tramite il programma beta privato. Per iscriverti alla versione beta privata, consulta [Ambiente di test specializzato](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 Lo Specialized Testing Environment, o DevXL, è un nuovo tipo di ambiente Cloud Manager che è possibile creare. È progettato per supportare casi d’uso avanzati, come test di accettazione utente (UAT) e convalida delle prestazioni. A differenza degli ambienti di sviluppo tradizionale, sviluppo rapido o staging, gli ambienti DevXL operano al di fuori della pipeline di implementazione di produzione. Offrono quindi maggiore flessibilità, pur mantenendo un rigoroso isolamento volto a evitare interferenze con i flussi di lavoro di produzione.
 
@@ -35,7 +35,7 @@ DevXL è progettato per rispecchiare le dimensioni, la scalabilità e le configu
 | Ripristino contenuto | Come l’ambiente di sviluppo. |
 | Registri di accesso | Come l’ambiente di sviluppo. |
 | Developer Console | Come l’ambiente di sviluppo. |
-| Elenco indirizzi IP consentiti | Come l’ambiente di sviluppo. |
+| `IP Allow List` | Come l’ambiente di sviluppo. |
 | Rete | Come l’ambiente di sviluppo (servizi, nome di dominio, certificati SSL, rete avanzata). |
 
 Vedi anche [Gestisci ambienti](/help/implementing/cloud-manager/manage-environments.md)
@@ -61,7 +61,7 @@ Se l&#39;opzione **Aggiungi ambiente** è disattivata (disabilitata), è possibi
 
      ![Scheda Ambienti](assets/environments-tab.png)
 
-1. Nella finestra di dialogo **Aggiungi ambiente** eseguire le operazioni seguenti:
+1. Nella finestra di dialogo **Aggiungi ambiente**, esegui le operazioni seguenti:
 
    * Fare clic su **Ambiente di testing specializzato**.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.

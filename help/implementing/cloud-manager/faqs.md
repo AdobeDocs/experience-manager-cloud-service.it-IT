@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ Sì. Aggiungi il `maven-toolchains-plugin` con le impostazioni appropriate per J
 
 Il processo è documentato: consulta [Procedura guidata per la creazione di progetti](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Ad esempio, consulta il [codice del progetto di esempio WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Ad esempio, vedi il [codice del progetto di esempio lWKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Dopo il passaggio da Java™ 8 a Java™ 11, la build restituisce un errore relativo al maven-scr-plugin. Cosa posso fare? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Per le build di Cloud Manager è possibile che l’esecuzione di `maven-enforcer
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Si tratta di un problema noto dovuto al fatto che Cloud Manager utilizza una versione diversa di Java™ per eseguire il comando maven per la compilazione del codice. Basta omettere `requireJavaVersion` dalle configurazioni del `maven-enforcer-plugin`.
+Questo errore è un problema noto a causa del quale Cloud Manager utilizza una versione diversa di Java™ per eseguire il comando Maven anziché compilare il codice. Basta omettere `requireJavaVersion` dalle configurazioni del `maven-enforcer-plugin`.
 
 ## Il controllo di qualità del codice non riuscito e la distribuzione è bloccata. C’è un modo per aggirare questo controllo? {#deployment-stuck}
 
-Sì. Tutti gli errori generati dal controllo di qualità del codice, a eccezione della valutazione di sicurezza, riguardano metriche non critiche e possono pertanto essere ignorati come parte di una pipeline di distribuzione espandendo gli elementi nell’interfaccia utente dei risultati.
+Sì. Tutti gli errori dei controlli di qualità del codice, ad eccezione della valutazione della sicurezza, sono metriche non critiche. Di conseguenza, possono essere ignorati come parte di una pipeline di distribuzione espandendo gli elementi nell’interfaccia utente dei risultati.
 
-L’utente con il ruolo [Responsabile dell’implementazione, Responsabile del progetto o Proprietario business](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) può ignorare i problemi (facendo in tal caso procedere la pipeline) o accettarli (causando in tal caso l’arresto della pipeline con un errore).
+Un utente con il ruolo [Responsabile dell&#39;implementazione, Project Manager o Proprietario business](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) può ignorare i problemi. In questo caso, la pipeline procede o può accettare i problemi, nel qual caso la pipeline si interrompe con un errore.
 
 Per ulteriori informazioni, consulta i documenti [Test di qualità del codice](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) e [Configurazione delle pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines).
 
@@ -61,7 +61,7 @@ Questo valore consente di installare la distribuzione successiva anche se la ver
 
 È possibile impostare la versione su `-SNAPSHOT` per le build o le implementazioni negli ambienti di staging e produzione. Cloud Manager imposta automaticamente un numero di versione corretto e crea un tag in Git per l’utente. Se necessario, è possibile fare riferimento a questo tag in un secondo momento.
 
-Per ulteriori dettagli sulla gestione delle versioni, consulta [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Per ulteriori dettagli sulla gestione delle versioni, vedi [Gestione delle versioni dei progetti Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Come funziona il controllo delle versioni di pacchetti e bundle per le distribuzioni negli ambienti di staging e produzione? {#snapshot-version}
 
@@ -94,7 +94,7 @@ La soluzione per aggiungere gli elenchi di controllo accesso (ACL) per l’utent
 
 Nell’errore precedente, il pacchetto `myapp-base.ui.content-*.zip` include contenuti in `/conf` e `/var/workflow`. Affinché la distribuzione venga eseguita correttamente, è necessario che `sling-distribution-importer` disponga delle autorizzazioni in questi percorsi.
 
-Di seguito è riportato un esempio di configurazione OSGi [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) che consente di aggiungere ulteriori autorizzazioni per l’utente `sling-distribution-importer`. La configurazione aggiunge le autorizzazioni in `/var`. Tale configurazione deve essere aggiunta al pacchetto dell’applicazione in `/apps/myapp/config` (dove myapp è la cartella in cui è archiviato il codice dell’applicazione).
+Di seguito è riportato un esempio di configurazione OSGi [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) che consente di aggiungere ulteriori autorizzazioni per l’utente `sling-distribution-importer`. La configurazione aggiunge le autorizzazioni in `/var`. Tale configurazione deve essere aggiunta al pacchetto dell&#39;applicazione in `/apps/myapp/config` (dove `myapp` è la cartella in cui è archiviato il codice dell&#39;applicazione).
 
 ## L’esecuzione della distribuzione di Cloud Manager non riesce al passaggio di distribuzione in AEM as a Cloud Service e ho già aggiunto una configurazione OSGi RepositoryInitializer. Che altro posso fare? {#build-failures}
 
@@ -107,9 +107,9 @@ Se [aggiungendo una configurazione OSGi RepositoryInitializer](#cloud-manager-de
    * Assicurati di eseguire i test delle configurazioni Dispatcher e Apache a livello locale utilizzando l’immagine Docker inclusa nell’SDK.
    * Per informazioni su come configurare il contenitore Docker dispatcher per eseguire facilmente i test locali, consulta [Dispatcher nel cloud](/help/implementing/dispatcher/disp-overview.md#content-delivery).
 
-* La distribuzione potrebbe non riuscire a causa di altri errori rilevati durante la replica dei pacchetti di contenuti (distribuzione Sling) dall’istanza di authoring a quella di pubblicazione.
+* L’implementazione potrebbe non riuscire a causa di altri errori rilevati durante la replica dei pacchetti di contenuti (implementazione Sling) dall’istanza di authoring a quella di pubblicazione.
    * Per simulare il problema in una configurazione locale, segui la procedura riportata di seguito.
-      1. Installa a livello locale un’istanza di authoring e pubblicazione con i JAR dell’SDK di AEM più recenti.
+      1. Installa localmente un’istanza Author e Publish utilizzando i file jar di AEM SDK più recenti.
       1. Accedi all’istanza di authoring.
       1. Vai a **Strumenti** > **Implementazione** > **Distribuzione**.
       1. Distribuisci i pacchetti di contenuti che fanno parte della base di codice e verifica se la coda si blocca generando un errore.

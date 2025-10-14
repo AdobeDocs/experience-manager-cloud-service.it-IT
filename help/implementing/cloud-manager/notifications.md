@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 79%
+source-wordcount: '585'
+ht-degree: 73%
 
 ---
 
@@ -45,11 +45,9 @@ Fai clic sull&#39;opzione **Contrassegna tutto come letto** nella parte inferior
 
 Puoi personalizzare le modalità di ricezione delle notifiche e le notifiche ricevute.
 
-Fai clic sull’icona a forma di ingranaggio nella parte superiore della barra laterale delle notifiche.
+Fai clic sull&#39;icona a forma di ingranaggio nella parte superiore della barra laterale delle notifiche per aprire la finestra **Preferenze di Experience Cloud**. Da qui puoi definire le tue iscrizioni alle notifiche e come riceverle.
 
 ![Icona delle impostazioni di notifica](assets/notifications-configuration.png)
-
-Viene aperta la finestra **Preferenze di Experience Cloud**, che consente di definire le iscrizioni alle notifiche e le modalità di ricezione delle notifiche.
 
 ### Sottoscrizioni {#subscriptions}
 
@@ -57,13 +55,13 @@ Le iscrizioni definiscono per quali prodotti ricevi le notifiche e quali notific
 
 ![Iscrizioni alle notifiche](assets/notifications-subscriptions.png)
 
-Per impostazione predefinita, riceverai tutte le notifiche per tutti i prodotti sia nell’applicazione che tramite e-mail. Fai clic sulla freccia accanto al nome di un prodotto per visualizzare le opzioni dettagliate e definire i tipi di notifiche ricevute per quel prodotto. Oppure seleziona o deseleziona le opzioni a livello di prodotto per selezionare/deselezionare tutte le opzioni per il prodotto.
+Per impostazione predefinita, ricevi tutte le notifiche per tutti i prodotti sia nell’applicazione che tramite e-mail. Fai clic sulla freccia accanto al nome di un prodotto per visualizzare le opzioni dettagliate e definire i tipi di notifiche ricevute per quel prodotto. Oppure seleziona o deseleziona le opzioni a livello di prodotto per selezionare/deselezionare tutte le opzioni per il prodotto.
 
 ![Personalizzazione dell’iscrizione alle notifiche](assets/notifications-subscriptions-customize.png)
 
 ### Priorità {#priority}
 
-Gli avvisi prioritari saranno contrassegnati con un tag **ALTA** e possono essere configurati per essere ricevuti esclusivamente come avvisi. Nella sezione **Priorità** è possibile definire quali categorie si qualificano come notifiche prioritarie.
+Gli avvisi prioritari sono contrassegnati con un tag **ALTA**. Puoi configurarli in modo che vengano ricevuti esclusivamente come avvisi. Nella sezione **Priorità** è possibile definire quali categorie si qualificano come notifiche prioritarie.
 
 ![Priorità di notifica](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ Per impostazione predefinita non vengono inviate e-mail. Puoi scegliere di ricev
 * Giornaliero
 * Settimanale
 
-Quando viene selezionato **Notifiche istantanee**, le e-mail vengono inviate immediatamente per ogni notifica. Con **Riepilogo giornaliero** e **Riepilogo settimanale** puoi scegliere quando inviare il riepilogo giornaliero e quello settimanale.
+Quando scegli **Notifiche istantanee**, le e-mail vengono inviate immediatamente per ogni notifica. Con **Riepilogo giornaliero** e **Riepilogo settimanale** puoi scegliere quando inviare il riepilogo giornaliero e quello settimanale.

@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 78%
 
 ---
@@ -40,7 +40,7 @@ I test vengono eseguiti su un’infrastruttura di test gestita da Adobe, che pre
 
 ### Struttura dei test funzionali {#functional-tests-structure}
 
-I test funzionali personalizzati devono essere inclusi come file JAR separati prodotti dalla stessa build Maven degli artefatti da distribuire in AEM. Generalmente, questa build è di un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato con il `maven-assembly-plugin` utilizzando il descrittore `jar-with-dependencies`.
+I test funzionali personalizzati devono essere inclusi come file JAR separati prodotti dalla stessa build Maven degli artefatti da implementare in AEM. Generalmente, questa build è di un modulo Maven separato. Il file JAR risultante deve contenere tutte le dipendenze richieste e generalmente viene creato con il `maven-assembly-plugin` utilizzando il descrittore `jar-with-dependencies`.
 
 Inoltre, l’intestazione del manifesto `Cloud-Manager-TestType` del file JAR deve essere impostata su `integration-test`.
 
@@ -108,7 +108,7 @@ Per ulteriori dettagli, consulta l’[`aem-testing-clients`archivio GitHub.](htt
 | CPU | 0.5 | Quantità di tempo CPU riservato per ogni esecuzione di test |
 | Memoria | 0,5 Gi | Quantità di memoria allocata al test, valore in gibibyte. |
 | Timeout | 30 min | Il limite di tempo dopo il quale il test viene interrotto. |
-| Durata consigliata | 15 min | L’Adobe consiglia di non richiedere più tempo per la scrittura dei test. |
+| Durata consigliata | 15 min | Adobe consiglia di non richiedere più tempo alla scrittura dei test. |
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Le modifiche imminenti all&#39;infrastruttura containerizzata per l&#39;esecuzio
 >[!NOTE]
 >
 >Questa modifica deve essere eseguita prima del 6 aprile 2024.
->Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
+>>Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
 
 ### Esecuzione locale dei test {#local-test-execution}
 

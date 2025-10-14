@@ -5,9 +5,9 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 69%
 
 ---
@@ -39,7 +39,7 @@ Per scaricare i registri, effettua le seguenti operazioni:
 
    ![Finestra di dialogo Scarica registri](assets/download-preview.png)
 
-   Se per l&#39;ambiente sono abilitate [altre aree geografiche di Publish](/help/operations/additional-publish-regions.md), sarà possibile selezionare ciascuna area e scaricare i relativi registri separatamente, come illustrato di seguito:
+   Se per l&#39;ambiente sono abilitate [altre aree di pubblicazione](/help/operations/additional-publish-regions.md), è possibile selezionare ciascuna area e scaricare i relativi registri separatamente, come illustrato di seguito:
 
    ![Scarica registri per altre aree geografiche di pubblicazione](assets/download-publish-region-logs.png)
 
@@ -101,5 +101,5 @@ Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia dell
 
 Per ulteriori informazioni sui file di registro in AEM as a Cloud Service, consulta le seguenti risorse aggiuntive:
 
-* [File di registro AEM di Cloud 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=it)
-* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=it)
+* [File di registro di Cloud 5 AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
