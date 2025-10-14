@@ -70,7 +70,7 @@ Per configurare [!DNL Adobe Sign] per un modulo adattivo:
 
 È possibile abilitare [!DNL Adobe Sign] per un modulo adattivo esistente o crearne uno abilitato per [!DNL Adobe Sign]. Scegliere una delle opzioni seguenti:
 
-* [Crea un modulo adattivo abilitato per  [!DNL Adobe Sign] ](#create-an-adaptive-form-for-adobe-sign)
+* [Crea un modulo adattivo abilitato per  [!DNL Adobe Sign] &#x200B;](#create-an-adaptive-form-for-adobe-sign)
 * [Attiva [!DNL Adobe Sign] per un modulo adattivo esistente](#editafsign).
 
 #### Creare un modulo adattivo per Adobe Sign {#create-an-adaptive-form-for-adobe-sign}

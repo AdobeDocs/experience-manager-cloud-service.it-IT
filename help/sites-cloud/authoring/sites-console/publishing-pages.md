@@ -66,8 +66,8 @@ Questa operazione è denominata pubblicazione della pagina. Quando si rimuove un
 
 Nella console **Sites** sono disponibili due opzioni per la pubblicazione:
 
-* [Pubblicazione rapida ](#quick-publish)
-* [Gestisci pubblicazione ](#manage-publication)
+* [Pubblicazione rapida &#x200B;](#quick-publish)
+* [Gestisci pubblicazione &#x200B;](#manage-publication)
 
 ### Pubblicazione rapida  {#quick-publish}
 

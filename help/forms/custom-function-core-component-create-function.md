@@ -192,7 +192,7 @@ Dopo aver implementato la libreria client nell’ambiente Forms CS, utilizzane l
 
 1. Fai clic su **[!UICONTROL Fine]**.
 
-Puoi utilizzare la funzione personalizzata nell&#39;editor di regole [ di un modulo adattivo](/help/forms/rule-editor-core-components.md) utilizzando le [annotazioni di JavaScript](##js-annotations).
+Puoi utilizzare la funzione personalizzata nell&#39;editor di regole [&#x200B; di un modulo adattivo](/help/forms/rule-editor-core-components.md) utilizzando le [annotazioni di JavaScript](##js-annotations).
 
 ## Utilizzo di una funzione personalizzata in un modulo adattivo
 

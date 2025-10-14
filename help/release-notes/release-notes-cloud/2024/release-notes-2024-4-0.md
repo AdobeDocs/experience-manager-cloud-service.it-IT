@@ -249,7 +249,7 @@ Ora disponi di un’esperienza avanzata per filtrare i file. La funzionalità ri
 
 Sfrutta vantaggi quali un accesso più rapido ai file rilevanti e un’interfaccia utente più intuitiva, che rende l’esperienza di ricerca più fluida ed efficiente.
 
-![filtro di ricerca rapida ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
+![filtro di ricerca rapida &#x200B;](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *Utilizza i filtri rapidi per cercare file DITA e non DITA.*
 

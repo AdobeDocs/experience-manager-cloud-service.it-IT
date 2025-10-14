@@ -18,7 +18,7 @@ Scopri come configurare e scalare il team di sviluppo Enterprise e come l’as a
 
 ## Introduzione {#introduction}
 
-Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) appositamente progettate. Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice](/help/implementing/cloud-manager/code-quality-testing.md).
+Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) appositamente progettate. Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Supporto di Cloud Manager per la configurazione del team di sviluppo aziendale {#cloud-manager}
 

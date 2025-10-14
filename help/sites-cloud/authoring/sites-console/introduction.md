@@ -83,7 +83,7 @@ Dopo aver fatto clic su, le opzioni visualizzate sono appropriate per la console
 
 * [Pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Sito](/help/sites-cloud/administering/site-creation/create-site.md)
-* [Live Copy ](/help/sites-cloud/administering/msm/overview.md)
+* [Live Copy &#x200B;](/help/sites-cloud/administering/msm/overview.md)
 * [Lancio](/help/sites-cloud/authoring/launches/overview.md)
 * [Copia per lingua](/help/sites-cloud/administering/translation/overview.md)
 * [Rapporto CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
@@ -96,7 +96,7 @@ La console **Sites** offre tre diverse visualizzazioni della gerarchia dei conte
 
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
-* [Vista a elenco ](#list-view)
+* [Vista a elenco &#x200B;](#list-view)
 
 L&#39;icona **Visualizza** all&#39;estrema destra della barra degli strumenti di AEM indica la visualizzazione corrente selezionata.
 

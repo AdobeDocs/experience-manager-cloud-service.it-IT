@@ -49,7 +49,7 @@ L&#39;ID o il nome della risorsa, `AdobeStock_28563982`, è in verde. Tieni pres
 
 Infine, alcuni parametri di elaborazione delle immagini, `?wid=1000&fmt=jpeg&qlt=85`, sono visualizzati in giallo alla fine.
 
-L’intero percorso URL è live. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
+L’intero percorso URL è live. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}.
 
 Con la finestra del browser ancora aperta sull’URL di Dynamic Media e sull’immagine di controllo, esaminiamo più da vicino come creare rappresentazioni dell’immagine modificando semplicemente l’URL.
 
@@ -66,9 +66,9 @@ Quando si preme **[!UICONTROL Invio]**, il browser torna al server immagini Dyna
 
 Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che puoi utilizzare per ottimizzare le risorse delle immagini nelle pagine web. Puoi [visualizzarne un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it).
 
-Provare ora ad aggiungere un parametro di rotazione all&#39;immagine dell&#39;orologio. E la fine del percorso URL, subito dopo `wid=1000`, digitare `&rotate=90`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}.
+Provare ora ad aggiungere un parametro di rotazione all&#39;immagine dell&#39;orologio. E la fine del percorso URL, subito dopo `wid=1000`, digitare `&rotate=90`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
-L&#39;orologio è ancora leggermente inclinato verso sinistra. Modificare il valore di rotazione di `90` in `92`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
+L&#39;orologio è ancora leggermente inclinato verso sinistra. Modificare il valore di rotazione di `90` in `92`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}.
 
 Anche in questo caso, quando si preme **[!UICONTROL Invio]**, viene generato quasi istantaneamente un nuovo rendering dell&#39;orologio. Puoi vedere il tipo di prestazioni ottenute, il che spiega perché Dynamic Media può fornire più di 800.000 richieste di immagini, _al secondo_, in un weekend intenso o in una festività importante.
 
@@ -163,7 +163,7 @@ _Inizio della creazione di un set di immagini._
 
 Per creare il set di immagini, scegliere **[!UICONTROL Set di immagini]** dal menu a discesa **[!UICONTROL Crea]**. Nel menu sono inoltre disponibili opzioni per creare un **[!UICONTROL set di file multimediali diversi]**, un **[!UICONTROL set 360 gradi]** e un **[!UICONTROL set carosello]**. Questi set vengono creati in modo analogo a un set di immagini.
 
-Un set di file multimediali diversi può contenere immagini, set di campioni, set 360 gradi, video e set di video adattivi. [Prova](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un set 360 gradi simula l&#39;atto reale di girare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare i dettagli visivi chiave da qualsiasi angolazione. [Prova](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}.
+Un set di file multimediali diversi può contenere immagini, set di campioni, set 360 gradi, video e set di video adattivi. [Prova](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Un set 360 gradi simula l&#39;atto reale di girare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare i dettagli visivi chiave da qualsiasi angolazione. [Prova](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}.
 
 La creazione di un set di immagini è semplice. È sufficiente aggiungere le risorse immagine da includere nel set.
 
@@ -189,13 +189,13 @@ Nell’anteprima puoi selezionare i campioni di scarpe da corsa e ingrandire e r
 ![Set di immagini in esecuzione a cui è applicato il visualizzatore a comparsa](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _Set di immagini `Running` a cui è applicato il visualizzatore a comparsa._
 
-In questo caso, è stato selezionato il visualizzatore `Flyout`. A questo punto, puoi visualizzare in anteprima il set di immagini nel visualizzatore. Tuttavia, è meglio visualizzarlo nel browser, esattamente come lo vede un cliente. Seleziona **[!UICONTROL URL]** in basso a sinistra, quindi copia l&#39;URL e incollalo nel browser. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}.
+In questo caso, è stato selezionato il visualizzatore `Flyout`. A questo punto, puoi visualizzare in anteprima il set di immagini nel visualizzatore. Tuttavia, è meglio visualizzarlo nel browser, esattamente come lo vede un cliente. Seleziona **[!UICONTROL URL]** in basso a sinistra, quindi copia l&#39;URL e incollalo nel browser. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}.
 
 Il singolo URL consente di utilizzare il set di immagini e il visualizzatore nel punto desiderato sul sito web. È possibile che nell&#39;esempio precedente **[!UICONTROL Incorpora]** si trovi a destra del pulsante URL. Selezionando **[!UICONTROL Incorpora]**, puoi copiare il codice per questo set di immagini o visualizzatore e aggiungerlo a una pagina Web o a un componente Experience Manager Sites.
 
 Il visualizzatore a comparsa è un visualizzatore predefinito le cui proprietà possono essere modificate. Oppure, come per la creazione di un predefinito immagine, puoi creare un visualizzatore personalizzato.
 
-Ora, supponiamo che al tuo team di vendita e marketing non piaccia il visualizzatore a comparsa. Gli piace la funzione di zoom, ma vogliono che i clienti vedano l&#39;effetto zoom direttamente sopra le scarpe. In questo caso, è sufficiente applicare il visualizzatore InlineZoom al set di immagini e copiarne e incollarne l’URL nel browser per vedere come si comporta. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Ora, supponiamo che al tuo team di vendita e marketing non piaccia il visualizzatore a comparsa. Gli piace la funzione di zoom, ma vogliono che i clienti vedano l&#39;effetto zoom direttamente sopra le scarpe. In questo caso, è sufficiente applicare il visualizzatore InlineZoom al set di immagini e copiarne e incollarne l’URL nel browser per vedere come si comporta. [Prova](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 Spostando il puntatore del mouse sulla scarpa, si ingrandisce l&#39;immagine e si visualizzano maggiori dettagli quando si sposta il puntatore. E il motivo è semplicemente la dimensione dell&#39;immagine che è stata caricata inizialmente in Dynamic Media.
 
@@ -205,8 +205,8 @@ Leggi solo i set di immagini e i visualizzatori. Osserviamo un paio di altri vis
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* Visualizzatore `ZoomVertical_dark` applicato a una risorsa immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}.
-* Visualizzatore `Zoom_light` applicato a un&#39;immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}.
+* Visualizzatore `ZoomVertical_dark` applicato a una risorsa immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}.
+* Visualizzatore `Zoom_light` applicato a un&#39;immagine. [Prova](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}.
 
 ## Facoltativo - Ulteriori informazioni
 

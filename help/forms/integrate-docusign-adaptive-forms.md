@@ -162,7 +162,7 @@ Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Accertat
 
 È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crearne uno abilitato per [!DNL DocuSign]. Scegliere una delle opzioni seguenti:
 
-- [Crea un modulo adattivo abilitato per  [!DNL DocuSign] ](#create-an-adaptive-form-for-docusign)
+- [Crea un modulo adattivo abilitato per  [!DNL DocuSign] &#x200B;](#create-an-adaptive-form-for-docusign)
 - [Attiva [!DNL DocuSign] per un modulo adattivo esistente](#editafsign).
 
 #### Creare un modulo adattivo per DocuSign {#create-an-adaptive-form-for-docusign}

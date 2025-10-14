@@ -106,7 +106,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 

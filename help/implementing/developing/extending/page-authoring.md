@@ -32,7 +32,7 @@ Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrappo
 
 Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) consente l&#39;ereditarietà.
 
-Per ulteriori informazioni, vedere la [documentazione JS ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Per ulteriori informazioni, vedere la [documentazione JS &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Per ulteriori informazioni sulle sovrapposizioni, vedere [Sovrapposizioni per Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 

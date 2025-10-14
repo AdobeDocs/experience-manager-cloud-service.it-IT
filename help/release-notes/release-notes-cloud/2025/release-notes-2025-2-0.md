@@ -61,7 +61,7 @@ Continueremo ad abilitare il nuovo [Editor frammento di contenuto](/help/sites-c
 
 **API HTTP di traduzione**
 
-L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [ qui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L&#39;API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione per il contenuto in AEM.
+L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [&#x200B; qui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L&#39;API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione per il contenuto in AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

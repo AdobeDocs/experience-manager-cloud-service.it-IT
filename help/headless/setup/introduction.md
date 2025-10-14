@@ -15,7 +15,7 @@ ht-degree: 94%
 
 Di seguito è riportato un semplice percorso in cinque passaggi per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service, destinato agli utenti che hanno già familiarità con AEM e la tecnologia headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
-1. [Creazione di una configurazione ](create-configuration.md)
+1. [Creazione di una configurazione &#x200B;](create-configuration.md)
 1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
 1. [Creazione di una cartella di risorse](create-assets-folder.md)
 1. [Creazione di un frammento di contenuto](create-content-fragment.md)

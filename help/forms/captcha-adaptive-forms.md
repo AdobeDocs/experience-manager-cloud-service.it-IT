@@ -65,7 +65,7 @@ Gli autori di moduli possono utilizzare il servizio reCAPTCHA di Google per impl
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionare il contenitore di configurazione creato e selezionare **[!UICONTROL Crea]**.
    1. Seleziona la versione come [!DNL reCAPTCHA Enterprise] e specifica Nome, ID progetto, Chiave sito e Chiave API (ottenuta nel passaggio 2) per il servizio Enterprise reCAPTCHA.
    1. Selezionare il tipo di chiave. Il tipo di chiave deve essere uguale alla chiave del sito configurata nel [progetto Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), ad esempio **Chiave del sito di checkbox** o **Chiave del sito basata su punteggio**.
-   1. Specifica un punteggio di soglia [ compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
+   1. Specifica un punteggio di soglia [&#x200B; compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
    1. Seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
 
 <!--

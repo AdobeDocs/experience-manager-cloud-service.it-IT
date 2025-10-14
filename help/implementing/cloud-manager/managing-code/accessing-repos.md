@@ -66,4 +66,4 @@ La funzionalità **Accedi a dati archivio** è disponibile anche nella pagina [*
 
 Puoi revocare una password di accesso in qualsiasi momento.
 
-Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&amp;support-tab=home?lang=it#support). Il biglietto viene trattato con priorità alta e di solito viene revocato entro un giorno.
+Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&support-tab=home?lang=it#support). Il biglietto viene trattato con priorità alta e di solito viene revocato entro un giorno.

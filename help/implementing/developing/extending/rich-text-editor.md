@@ -123,7 +123,7 @@ Nella tabella seguente sono elencati i plug-in correnti:
 
 ## Comprendere i percorsi e le posizioni di configurazione {#understand-the-configuration-paths-and-locations}
 
-La modalità [ di modifica dell&#39;editor Rich Text e l&#39;interfaccia](#editingmodes) fornita agli autori determinano il percorso per i dettagli di configurazione quando si attivano [i plug-in dell&#39;editor Rich Text](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
+La modalità [&#x200B; di modifica dell&#39;editor Rich Text e l&#39;interfaccia](#editingmodes) fornita agli autori determinano il percorso per i dettagli di configurazione quando si attivano [i plug-in dell&#39;editor Rich Text](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
 
 * Modalità in linea: `cq:editConfig/cq:inplaceEditing`.
 * Modalità a schermo intero: `cq:editConfig/cq:inplaceEditing`.

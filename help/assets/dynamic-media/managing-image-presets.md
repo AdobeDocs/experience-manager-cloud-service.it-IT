@@ -340,7 +340,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
 >[!NOTE]
 >
->Alcuni modificatori di immagini [ non possono essere utilizzati in Experience Manager](#advanced-tab-options).
+>Alcuni modificatori di immagini [&#x200B; non possono essere utilizzati in Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
 

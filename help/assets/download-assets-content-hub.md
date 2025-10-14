@@ -151,7 +151,7 @@ Per abilitare le rappresentazioni dinamiche:
 
    Una volta che hai accesso a Dynamic Media con funzionalità OpenAPI, tutte le risorse contrassegnate come `Approved` sono disponibili per la distribuzione pubblica tramite Dynamic Media.
 
-1. Imposta la destinazione di approvazione [ della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
+1. Imposta la destinazione di approvazione [&#x200B; della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
 
 1. Abilita l&#39;opzione **[!UICONTROL Abilita disponibilità delle rappresentazioni]** nella scheda **[!UICONTROL Rappresentazioni]** dell&#39;interfaccia utente [Configurazione](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 

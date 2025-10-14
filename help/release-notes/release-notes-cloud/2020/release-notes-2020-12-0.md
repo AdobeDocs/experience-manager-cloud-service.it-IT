@@ -52,7 +52,7 @@ La data di pubblicazione di Cloud Manager in Adobe Experience Manager (AEM) as a
 
 * Gestione self-service di [certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) e [introduzione ai nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Gestione in autonomia di [elenchi IP consentiti ](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Gestione in autonomia di [elenchi IP consentiti &#x200B;](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * La pagina dei dettagli **Ambiente** aggiornata ora consente agli utenti di gestire i nomi di dominio personalizzati e gli Elenchi consentiti IP nei loro ambienti.
 

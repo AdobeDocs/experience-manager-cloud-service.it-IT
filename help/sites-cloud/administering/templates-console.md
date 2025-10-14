@@ -73,7 +73,7 @@ Se un autore inizia a creare un modello con l’editor di modelli già abilitato
 
 ## Proprietà {#properties}
 
-È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) includono:
+È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) includono:
 
 * Titolo modello
 * Descrizione

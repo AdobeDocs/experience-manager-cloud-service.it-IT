@@ -37,7 +37,7 @@ Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente co
 
 >[!NOTE]
 >
->Il modello di sito non deve essere confuso con [ modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md) I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
+>Il modello di sito non deve essere confuso con [&#x200B; modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md) I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
 
 ### Modelli di sito forniti da Adobe {#adobe-templates}
 

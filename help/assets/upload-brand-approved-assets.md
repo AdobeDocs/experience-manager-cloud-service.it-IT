@@ -29,7 +29,7 @@ Per migliorare ulteriormente la ricerca delle risorse, Content Hub consente di:
 
 * Utilizza l&#39;intelligenza artificiale fornita da [Adobe Sensei](https://www.adobe.com/it/sensei.html) per applicare automaticamente tag rilevanti a tutte le risorse caricate. Questi tag, o tag avanzati, consentono di velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti.
 
-Assicurati di caricare solo le risorse approvate dal marchio [ in Content Hub](/help/assets/approve-assets.md).
+Assicurati di caricare solo le risorse approvate dal marchio [&#x200B; in Content Hub](/help/assets/approve-assets.md).
 
 ![Carica risorse approvate dal marchio](assets/upload-brand-approved-assets.png)
 

@@ -262,7 +262,7 @@ Un altro metodo per visualizzare in anteprima una risorsa consiste nel seleziona
 ![Anteprima di una risorsa in base al predefinito visualizzatore Zoom Vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Anteprima di una risorsa in base al predefinito visualizzatore &quot;ZoomVertical_light&quot; selezionato. Il puntatore del mouse (`+`) è stato spostato sull&#39;orologio per ingrandire. Osservare i pulsanti URL e Incorpora._
 
-La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Facoltativo - Ulteriori informazioni
 

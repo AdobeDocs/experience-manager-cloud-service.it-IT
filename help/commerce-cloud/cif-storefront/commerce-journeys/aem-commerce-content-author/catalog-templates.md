@@ -95,7 +95,7 @@ Aggiungi un’immagine sopra la pagina.
 
 Il modello può essere visualizzato in anteprima con qualsiasi categoria/prodotto. Apri **Informazioni pagina**, quindi seleziona **Visualizza con categoria/prodotto**. Seleziona il prodotto/categoria dal selettore per ottenere un’anteprima con questo prodotto/categoria. Seleziona **Acquista la categoria Look** per ottenere un&#39;anteprima del modello aggiornato.
 
-![crea modello ](assets/create-template-picker.png)
+![crea modello &#x200B;](assets/create-template-picker.png)
 
 Ora devi assegnare questo modello alla categoria specifica. Apri proprietà nel menu **Informazioni pagina** e passa alla scheda Commerce. Fai clic sull&#39;icona della cartella per selezionare la categoria **Acquista aspetto** dal selettore delle categorie. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
 

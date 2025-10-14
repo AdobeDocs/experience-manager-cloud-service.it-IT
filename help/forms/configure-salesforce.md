@@ -30,7 +30,7 @@ I servizi cloud [!DNL Salesforce] e il modello dati modulo (FDM) sono disponibil
 
 Prima di configurare i servizi cloud [!DNL Salesforce], assicurarsi di eseguire le attività seguenti:
 
-* [Crea un&#39;applicazione abilitata per OAuth [!DNL Salesforce] connessa](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). Quando si crea l&#39;applicazione [!DNL Salesforce] connessa, specificare l&#39;URL di callback nel formato seguente:
+* [Crea un&#39;applicazione abilitata per OAuth [!DNL Salesforce] connessa](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5). Quando si crea l&#39;applicazione [!DNL Salesforce] connessa, specificare l&#39;URL di callback nel formato seguente:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
