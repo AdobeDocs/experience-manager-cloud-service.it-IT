@@ -110,7 +110,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` non disponibile in [!DNL Exp
    * Indicatore visivo per i dati di prodotto in staging in modalità di authoring per una migliore visibilità delle modifiche imminenti
    * Nuovo componente sitemap per contenuti e pagine commerce
 
-* Supporto per [Adobe Commerce Sensei Product Recommendations, basato su Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o creati al volo
+* Supporto per [Adobe Commerce Sensei Product Recommendations, basato su Adobe Sensei](https://business.adobe.com/it/products/magento/product-recommendations.html) in AEM Storefront utilizzando consigli predefiniti o creati al volo
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

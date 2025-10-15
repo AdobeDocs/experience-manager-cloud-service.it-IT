@@ -19,7 +19,7 @@ I tag avanzati sono parole chiave che non solo compaiono nel testo, ma che descr
 
 Ad esempio, le parole disposte alfabeticamente in un dizionario sono più facili da trovare rispetto a quelle sparse casualmente. L’assegnazione tag ha uno scopo simile. Organizza le risorse in base alla tassonomia aziendale, garantendo che quelle più rilevanti appaiano nei risultati di ricerca. Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli, in modo che vengano visualizzate solo le immagini pertinenti durante la progettazione di una campagna promozionale. Che si tratti di assegnare tag a &quot;corridori&quot; o &quot;scarpe da corsa&quot;, gli utenti non devono preoccuparsi di errori di battitura, variazioni di ortografia o termini di ricerca alternativi: i tag avanzati li riconoscono tutti.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) applica automaticamente Tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/it/products/sensei/adobe-sensei.html) applica automaticamente Tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
 
 ## Prerequisiti e configurazione {#smart-tags-prereqs-config}
 

@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Apprendimento dei tag avanzati
 
-L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla tua struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
+L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/it/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla tua struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
 
 ## Determinazione del requisito dell’apprendimento dei tag avanzati {#smart-tag-training-requirement}
 
