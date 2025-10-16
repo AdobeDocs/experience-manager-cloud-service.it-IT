@@ -3,10 +3,10 @@ title: Note sulla versione 2025.8.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.8.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 89%
+source-wordcount: '1934'
+ht-degree: 86%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Content Hub consente ora di individuare più rapidamente le risorse necessarie. 
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
-**DM ottimizzato per la SEO con URL OpenAPI**
+**URL di consegna risorse con marchio e leggibili**
 
-Crea URL personalizzati per la consegna delle risorse in DM con OpenAPI, sostituendo gli UUID lunghi generati dal sistema con identificatori brevi e leggibili. Questo rende i collegamenti ottimizzati per la SEO e meglio allineati al brand o alle campagne. Gli URL personalizzati si risolvono automaticamente nell’UUID della risorsa originale in fase di esecuzione senza interrompere i flussi di lavoro esistenti.
+Rendi Dynamic Media con gli URL OpenAPI più leggibili dall’utente sfruttando gli URL personalizzati in Dynamic Media con OpenAPI. Gli URL personalizzati consentono di sostituire lunghi UUID generati dal sistema e difficili da memorizzare negli URL di consegna delle risorse con identificatori brevi controllati dal brand. In questo modo gli URL personalizzati saranno più brevi, più facili da leggere e condividere e più allineati al tuo marchio o alle tue campagne. Gli URL personalizzati si risolvono automaticamente nell’UUID della risorsa originale in fase di esecuzione senza interrompere i flussi di lavoro esistenti.
 
 >[!NOTE]
 >
