@@ -5,8 +5,8 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
 
@@ -29,11 +29,6 @@ Questo documento ti aiuta a comprendere la pipeline di pubblicazione headless AE
 * Proteggi e ridimensiona l’applicazione prima del lancio
 * Monitoraggio dei problemi di prestazioni e debug
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 Per preparare l’applicazione AEM headless per il lancio, segui le best practice descritte di seguito.
 
 ## Proteggi e ridimensiona l’applicazione headless prima del lancio {#secure-and-scale-before-launch}
@@ -70,7 +65,7 @@ Una volta verificato che tutto sia stato testato e funzioni correttamente, puoi 
 
 Dopo il caricamento su Cloud Manager, gli aggiornamenti possono essere distribuiti su AEM as a Cloud Service utilizzando la [pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it).
 
-Puoi iniziare a distribuire il codice utilizzando la pipeline CI/CD di Cloud Manager, ampiamente trattata in [Distribuzione di pacchetti di contenuti tramite Cloud Manager e Gestione pacchetti](/help/implementing/deploying/overview.md).
+Puoi iniziare a implementare il codice utilizzando la pipeline CI/CD di Cloud Manager, ampiamente trattata in [Implementazione di pacchetti di contenuti tramite Cloud Manager e il gestore di pacchetti](/help/implementing/deploying/overview.md).
 
 ## Monitoraggio delle prestazioni {#performance-monitoring}
 
@@ -127,7 +122,7 @@ Hai già lanciato il tuo primo progetto AEM Headless oppure possiedi ormai tutte
 
 ### Esplora le applicazioni a pagina singola {#explore-spa}
 
-I negozi headless in AEM possono anche non fermarsi qui, però. Nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo accennato a come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
+Il potenziale headless in AEM non si ferma qui. Nella [Guida introduttiva al percorso](getting-started.md#integration-levels) abbiamo accennato a come AEM supporta non solo la distribuzione headless e i modelli tradizionali full-stack, ma anche i modelli ibridi che combinano i vantaggi di entrambi.
 
 Se questo tipo di flessibilità è un elemento necessario per il tuo progetto, continua con l’ulteriore parte opzionale del percorso, [Come creare applicazioni a pagina singola (SPA) con AEM](create-spa.md).
 

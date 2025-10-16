@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ Alcuni riferimenti sono costituiti da tipi di dati dedicati (ad esempio, Riferim
 
 I riferimenti al contenuto fanno proprio questo: ti consentono di fare riferimento a qualsiasi altro contenuto. Viene aperto un browser che consente di selezionare l’elemento di contenuto.
 
-Esistono due tipi:
+Ce ne sono due tipi:
 
 * **Riferimento contenuto**
-   * specifica il percorso della risorsa di riferimento
+   * specifica il percorso della risorsa a cui viene fatto riferimento
 * **Riferimento contenuto (UUID)**
-   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
 
 ## Riferimenti a risorse/file multimediali {#assets-media-references}
 
@@ -83,16 +83,12 @@ La rappresentazione di queste interrelazioni può essere effettuata con i Riferi
 
 In qualità di Autore, non sei responsabile della definizione di queste relazioni (attività svolta dall’Architetto dei contenuti durante la creazione del modello di Frammento di contenuto), ma devi sapere come riconoscere e modificare i riferimenti.
 
-Esistono due tipi:
+Ce ne sono di due tipi:
 
 * **Riferimento frammento**
-   * specifica il percorso della risorsa di riferimento
+   * specifica il percorso della risorsa a cui viene fatto riferimento
 * **Riferimento frammento (UUID)**
-   * Nell’editor, il riferimento specifica il percorso della risorsa di riferimento; internamente, il riferimento viene mantenuto come ID univoco universale (UUID) che fa riferimento alla risorsa
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
+   * Nell’editor i riferimenti specificano il percorso della risorsa a cui si fa riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alla risorsa.
 
 ### Come creare i frammenti nidificati {#author-nested-fragment}
 

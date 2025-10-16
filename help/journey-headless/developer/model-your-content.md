@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -184,8 +184,8 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 * Data e ora
 * Enumerazione
 * Tag
-* Riferimento frammento/UUID riferimento frammento
-* Riferimento contenuto/UUID riferimento contenuto
+* Riferimento frammento/Riferimento frammento UUID
+* Riferimento contenuto/Riferimento contenuto UUID
 * Oggetto JSON
 * Segnaposto scheda
 
@@ -218,7 +218,7 @@ All’inizio, devi abilitare i modelli per frammenti di contenuto per il sito. Q
 
 Una volta creato, puoi modificare il modello. Esempio:
 
-![Modello per frammenti di contenuto](assets/cfm-model.png)
+![Modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -248,19 +248,13 @@ Una volta creato il frammento, è possibile aprirlo nell’Editor frammento di c
 
 Dopo aver selezionato il modello appropriato, nell’Editor frammento di contenuto viene aperto un frammento di contenuto per la modifica:
 
-![Editor frammento di contenuto - Panoramica](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![Editor frammenti di contenuto: panoramica](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
 >Consultare Risorse aggiuntive - Utilizzo di frammenti di contenuto.
 
 ## Guida introduttiva con alcuni esempi {#getting-started-examples}
-
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
 
 Per una struttura di base come esempio, vedere Struttura dei frammenti di contenuto di esempio.
 

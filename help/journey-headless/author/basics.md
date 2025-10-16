@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 98%
 
 ---
 
@@ -63,16 +63,10 @@ La prima volta che esegui l’accesso a una piccola esercitazione online, verran
 
 Per aprire il pannello di navigazione, seleziona l’icona Adobe in alto a sinistra e l’icona a forma di piccola bussola.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >Anche se i frammenti di contenuto sono una funzione di AEM **Sites**, vengono salvati come **Risorse**. Questo è un dettaglio tecnico che non dovrebbe influenzare l’utente, ma potrebbe essere utile da sapere.
 
-Nella console puoi selezionare le cartelle nel pannello a sinistra per andare al frammento di contenuto. Puoi anche filtrare e/o eseguire ricerche.
+Nella console Frammenti di contenuto puoi selezionare le cartelle nel pannello a sinistra per passare al frammento di contenuto. Puoi anche filtrare e/o eseguire ricerche.
 
 ![Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ Nella console puoi selezionare le cartelle nel pannello a sinistra per andare al
 
 Nella barra degli strumenti della console **Frammenti di contenuto** è disponibile una scelta di azioni relative ai frammenti di contenuto:
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **Apri in Assets**
 * **Crea**
 * La colonna **Riferimento da** fornisce inoltre un collegamento diretto per visualizzare tutti i riferimenti principali di tale frammento, compresi i riferimenti a frammenti di contenuto, frammenti di esperienza e pagine.
-* Passando il puntatore del mouse sul nome della cartella verrà visualizzato il percorso JCR.
+* Passando il puntatore sul nome della cartella verrà visualizzato il percorso JCR.
 
-Dopo aver selezionato il frammento, saranno disponibili tutte le azioni appropriate:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+Dopo aver selezionato il frammento sono disponibili ulteriori azioni (a seconda dei casi):
 
 * **Apri**
 * **Pubblica** (e **Annulla pubblicazione**)
+* **Gestisci tag**
 * **Copia**
+* **Sostituisci**
 * **Sposta**
 * **Rinomina**
 * **Elimina**
@@ -101,26 +93,6 @@ Dopo aver selezionato il frammento, saranno disponibili tutte le azioni appropri
 >[!NOTE]
 >
 >Azioni come Pubblica, Annulla pubblicazione, Elimina, Sposta, Rinomina, Copia, attivano un processo asincrono. L’avanzamento di tale processo può essere monitorato tramite l’interfaccia dei processi asincroni di AEM.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## Authoring dei frammenti di contenuto {#authoring-content-fragments}
 
@@ -208,7 +180,7 @@ Quando l’editor si apre per la prima volta, vengono visualizzati i seguenti el
    * Azioni Pubblica e Annulla pubblicazione
    * Opzione per mostrare tutti i **Riferimenti padre** (icona collegamento)
    * **Stato** del frammento e le ultime informazioni salvate
-   * Pulsante per passare all’editor originale (basato su Assets)
+   * Pulsante di attivazione per passare all’editor originale (basato su Assets)
 * Pannello a sinistra: presenta le **Varianti** del frammento di contenuto e i relativi **Campi**:
    * questi collegamenti possono essere utilizzati per navigare nella struttura del frammento di contenuto
 * Pannello a destra: presenta schede che mostrano le proprietà (metadati) e i tag, informazioni sulla cronologia delle versioni e informazioni relative a eventuali copie per lingua

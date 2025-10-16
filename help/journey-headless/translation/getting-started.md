@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -29,9 +29,9 @@ Questo articolo si basa su questi elementi fondamentali che ti consentono di com
 
 Questo documento ti aiuta a capire come iniziare a tradurre il contenuto headless in AEM. Dopo la lettura dovresti:
 
-* Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Avere compreso come AEM archivia il contenuto headless.
-* conoscere gli strumenti di traduzione di AEM.
+* L’importanza della struttura dei contenuti per la traduzione.
+* Come AEM archivia il contenuto headless.
+* Gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -81,16 +81,15 @@ L’architetto dei contenuti all’inizio del progetto si occupa della definizio
 
 Poiché i modelli di contenuto definiscono la struttura del contenuto, è necessario sapere quali campi dei modelli devono essere tradotti. In genere si lavora con l’architetto dei contenuti per deciderlo. Per sfogliare i campi dei modelli di contenuto, effettua le seguenti operazioni.
 
-1. Passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Passa alla console Frammenti di contenuto e seleziona la scheda Modelli frammenti di contenuto.
 1. I modelli per frammenti di contenuto sono generalmente memorizzati in una struttura di cartelle. Seleziona la cartella per il progetto.
-1. I modelli sono elencati. Seleziona il modello per visualizzare i dettagli.
-   ![Modelli per frammenti di contenuto](assets/content-fragment-models.png)
+1. I modelli sono elencati. Seleziona il modello e apri l’editor.
 1. L’**Editor modello frammento di contenuto** si apre.
-   1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
-   1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
-      ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
-1. Seleziona uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
-   ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
+   ![Editor modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. Nel pannello a sinistra sono elencati i possibili Tipi di dati.
+   1. Nel pannello a destra vengono visualizzate le proprietà appropriate per il campo selezionato.
+   * Il pannello centrale contiene i campi creati e definiti, o che verranno.
+1. Seleziona uno dei campi del modello. AEM lo contrassegna e i dettagli di tale campo vengono visualizzati nel pannello di destra.
 1. L’architettura dei contenuti abilita il campo **Traducibile** in ogni campo Modello di contenuto che deve essere tradotto.
 
 >[!TIP]
@@ -178,8 +177,8 @@ In genere, il connettore viene configurato una sola volta per l’istanza. Poi u
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
 * comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Avere compreso come AEM archivia il contenuto headless.
-* conoscere gli strumenti di traduzione di AEM.
+* Come AEM archivia il contenuto headless.
+* Gli strumenti di traduzione di AEM.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione in AEM headless consultando il documento [Configurare l’integrazione della traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.
 

@@ -5,10 +5,10 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 96%
 
 ---
 
@@ -132,24 +132,22 @@ Ora che hai completato questa parte del percorso per sviluppatori headless di AE
 * Sapere quali strumenti e configurazioni AEM sono necessari.
 * Conoscere le best practice per semplificare il tuo percorso headless, garantire la distribuzione rapida dei contenuti e l’efficienza nella loro generazione.
 
-Vogliamo che tu sfrutti questa conoscenza fondamentale per comprendere appieno il potere e la flessibilità di AEM Headless in modo da poterne trarre vantaggio nei tuoi progetti. Per fare questo, hai diverse possibilità.
+Desideriamo che tu sviluppi questa conoscenza fondamentale per comprendere appieno la potenza e la flessibilità di AEM Headless in modo da poterne sfruttare i vantaggi per i tuoi progetti.
 
-### Scegli la tua avventura {#choose-your-path}
-
-Indipendentemente dal tuo stile di apprendimento, Adobe vuole che tu abbia successo quando inizi con il tuo progetto AEM Headless.
-
-* Se preferisci continuare a **scoprire i concetti headless e le tecnologie headless di AEM**, dovresti continuare il tuo percorso AEM headless studiando il documento [Come modellare il contenuto come modelli di contenuto AEM](model-your-content.md) che illustra come modellare la struttura del contenuto in AEM.
-* Se preferisci **imparare facendo**, puoi passare al [Tutorial pratico di introduzione ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) che ti consente di iniziare direttamente con lo sviluppo AEM Headless implementando un semplice progetto che espone il contenuto headless AEM.
+A questo scopo, continua il tuo percorso AEM headless con [How to Model Your Content as AEM Content Models](/help/journey-headless/developer/model-your-content.md) (Come modellare il contenuto come modelli di contenuto) dove imparerai a modellare la struttura del contenuto in AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Ti consigliamo di passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare i contenuti come Modelli di contenuto AEM](model-your-content.md). Inoltre, di seguito trovi alcune risorse aggiuntive opzionali, utili per approfondire alcuni concetti menzionati in questo documento, ma non sono un requisito obbligatorio per procedere nel percorso headless.
 
+Se preferisci **imparare facendo**, puoi passare alla [Guida introduttiva ai tutorial pratici headless di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) dove puoi passare direttamente allo sviluppo headless di AEM implementando un semplice progetto per esporre il contenuto headless di AEM.
+
+Altre risorse:
+
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
 * [Sviluppo headless per AEM Sites as a Cloud Service](/help/headless/introduction.md): una rapida introduzione per orientare lo sviluppatore AEM Headless nell’utilizzo delle funzioni necessarie
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
-* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/it?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
+* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): questo progetto GitHub include applicazioni di esempio che evidenziano le API GraphQL di AEM.
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): panoramica completa dell’architettura AEM
 * [Configurazione headless](/help/headless/introduction.md#getting-started): introduzione rapida alle funzioni AEM headless per gli utenti già esperti di AEM.
