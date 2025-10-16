@@ -186,7 +186,7 @@ AEM headless CMS offre agli sviluppatori la libertà di creare e distribuire esp
 
 * [Installa e utilizza AEM SDK per lo sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=it)
 * [Risorse per sviluppatori AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* Esempi, tra cui [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)
+* Esempi, tra cui [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=it), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=it)
 
 #### Ambienti {#environments-your-apps}
 
