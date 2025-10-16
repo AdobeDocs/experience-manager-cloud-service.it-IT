@@ -4,10 +4,10 @@ description: Definisci la struttura del contenuto da creare e distribuire utiliz
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: b76898409291fef85733e75405e65152424e2d41
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 74%
+source-wordcount: '231'
+ht-degree: 50%
 
 ---
 
@@ -23,47 +23,14 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 ## Creare un modello per frammenti di contenuto {#how-to-create-a-content-fragment-model}
 
-Un architetto dell’informazione esegue tali attività solo occasionalmente, quando sono necessari nuovi modelli. Ai fini di questa guida introduttiva, è necessario creare un solo modello.
+Un architetto dell’informazione esegue queste attività solo occasionalmente, quando sono necessari nuovi modelli.
 
-1. Accedi ad AEM as a Cloud Service, quindi dal menu principale seleziona **Strumenti**, **Generale**, **Modelli per frammenti di contenuto**.
-1. Seleziona la cartella creata durante la creazione della configurazione.
+I passaggi necessari per creare un modello pronto all’uso sono i seguenti:
 
-   ![Cartella dei modelli](../assets/models-folder.png)
-1. Seleziona **Crea**.
-1. Specifica un **titolo modello**, **tag** e **descrizione**. Puoi anche selezionare/deselezionare **Abilita modello** per assicurarti che il modello venga subito abilitato al momento della creazione.
-
-   ![Creare un modello](../assets/models-create.png)
-1. Nella finestra di conferma, seleziona **Apri** per configurare il modello.
-
-   ![Finestra di conferma](../assets/models-confirmation.png)
-1. Utilizzando l’**Editor modello per frammenti di contenuto**, crea il modello per frammenti di contenuto trascinando i campi dalla colonna **Tipi di dati**.
-
-   ![Trascinare i campi](../assets/models-drag-and-drop.png)
-
-1. Dopo aver inserito un campo, è necessario configurarne le proprietà. L’editor passa automaticamente alla scheda **Proprietà** per il campo aggiunto, dove puoi specificare i campi obbligatori.
-
-   ![Configurare proprietà](../assets/models-configure-properties.png)
-
-1. Al termine della creazione del modello, selezionare **Salva**.
-
-1. La modalità del modello creato dipende dalla selezione o meno di **Abilita modello** durante la creazione del modello:
-   * selezionato: il nuovo modello è già **abilitato**
-   * non selezionato: il nuovo modello viene creato nella modalità **Bozza**
-
-1. Se non è già abilitato, per poter essere utilizzato il modello deve essere **abilitato**.
-   1. Selezionare il modello creato, quindi selezionare **Abilita**.
-
-      ![Abilitazione del modello](../assets/models-enable.png)
-   1. Conferma l’abilitazione del modello toccando o facendo clic su **Abilita** nella finestra di dialogo di conferma.
-
-      ![Abilitazione della finestra di dialogo di conferma](../assets/models-enabling.png)
-1. Il modello è ora abilitato e pronto per essere utilizzato.
-
-   ![Modello abilitato](../assets/models-enabled.png)
-
-L’**Editor modello per frammenti di contenuto** supporta differenti tipi di dati, ad esempio campi di testo semplice, riferimenti alle risorse, riferimenti ad altri modelli e dati JSON.
-
-Puoi creare più modelli. I modelli possono fare riferimento ad altri frammenti di contenuto. Utilizza le [configurazioni](create-configuration.md) per organizzare i modelli.
+* [Creare un modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)
+* [Abilitare il modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-a-content-fragment-model)
+* [Definire il modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Pubblicare il modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
 ## Passaggi successivi {#next-steps}
 
@@ -71,4 +38,7 @@ Dopo aver definito le strutture dei frammenti di contenuto mediante la creazione
 
 >[!TIP]
 >
->Per informazioni complete sui modelli per frammenti di contenuto, consulta la [documentazione sui modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+>Per informazioni complete sui modelli per frammenti di contenuto, consulta:
+>
+>* [Gestione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Definizione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

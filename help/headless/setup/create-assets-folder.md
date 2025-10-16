@@ -4,10 +4,10 @@ description: Utilizza i modelli per frammenti di contenuto di AEM per definire l
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 81%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
@@ -23,27 +23,11 @@ Tuttavia, è necessario innanzitutto creare una cartella di risorse in cui memor
 
 Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-digital-assets.md) come immagini e video, insieme ai frammenti di contenuto.
 
-## Creare una cartella di risorse {#how-to-create-an-assets-folder}
+## Creare e configurare una cartella di Assets {#create-and-configure-an-assets-folder}
 
-Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Ai fini di questa guida introduttiva, è sufficiente creare una sola cartella.
+Di solito, un amministratore deve creare cartelle solo occasionalmente, per organizzare i contenuti al momento della creazione. Usa la console Assets per creare la nuova cartella.
 
-1. Accedi ad AEM as a Cloud Service e dal menu principale seleziona **Navigazione > Assets > File**.
-1. Selezionare **Crea > Cartella**.
-1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
-   * Il **titolo** deve essere descrittivo.
-   * Il **nome** diventa il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM](/help/implementing/developing/introduction/naming-conventions.md).
-      * Se necessario è possibile modificarlo.
-
-   ![Crea cartella](../assets/assets-folder-create.png)
-1. Seleziona la cartella creata passando il puntatore del mouse e toccando il segno di spunta. Dalla barra degli strumenti, seleziona **Proprietà** (oppure utilizza le `p` [scelte rapide da tastiera](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)).
-1. In **Proprietà**, seleziona la scheda **Servizi cloud**.
-1. Per **Configurazione cloud** seleziona la [configurazione creata in precedenza](create-configuration.md).
-   ![Configurare la cartella delle risorse](../assets/assets-folder-configure.png)
-1. Seleziona **Salva e chiudi**.
-1. Selezionare **OK** nella finestra di conferma.
-
-   ![Finestra di conferma](../assets/assets-folder-confirmation.png)
+Una volta creata, devi applicare la [configurazione](/help/headless/setup/create-configuration.md) alla cartella. Per ulteriori dettagli, vedere [Applicare la configurazione alla cartella](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder).
 
 Puoi creare ulteriori sottocartelle all’interno della cartella creata. Le sottocartelle ereditano la **configurazione cloud** della cartella principale. Tuttavia, questo può essere ignorato se desideri utilizzare modelli di un’altra configurazione.
 

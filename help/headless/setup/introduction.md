@@ -4,22 +4,22 @@ description: Questa guida rapida ti permette di scoprire informazioni fondamenta
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b25d47cca15ac1fe3f06c1ae99f15495ed5f4752
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 94%
+source-wordcount: '284'
+ht-degree: 77%
 
 ---
 
 # Configurazione headless {#introduction}
 
-Di seguito è riportato un semplice percorso in cinque passaggi per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service, destinato agli utenti che hanno già familiarità con AEM e la tecnologia headless. Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
+Di seguito è riportato un semplice percorso per creare, gestire e distribuire esperienze utilizzando AEM as a Cloud Service, suddiviso in cinque passaggi per gli utenti che hanno già familiarità con la tecnologia AEM e headless (in modo che possano fare riferimento alla documentazione dettagliata). Ogni guida si basa sulla precedente, pertanto si consiglia di esaminarla in modo approfondito e coerente.
 
-1. [Creazione di una configurazione &#x200B;](create-configuration.md)
-1. [Creazione di un modello di frammento di contenuto](create-content-model.md)
-1. [Creazione di una cartella di risorse](create-assets-folder.md)
-1. [Creazione di un frammento di contenuto](create-content-fragment.md)
-1. [Creare una richiesta API](create-api-request.md)
+1. [Creare una configurazione](/help/headless/setup/create-configuration.md)
+1. [Creare un modello per frammenti di contenuto](/help/headless/setup/create-content-model.md)
+1. [Creare una cartella Assets](/help/headless/setup/create-assets-folder.md)
+1. [Creare un frammento di contenuto](/help/headless/setup/create-content-fragment.md)
+1. [Creare una richiesta API](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
