@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: fcccac27d9648cf8bc313583e4d8acc2ed6b1879
+source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 16 ottobre 2025.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 23 ottobre 2025.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,9 +27,12 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* È stato introdotto il supporto di più campi per gli aggiornamenti di.
+* È ora supportato il comando Copia e Incolla tra le schede del browser.
+* Ora puoi disattivare il pulsante Annulla pubblicazione con un tag meta.
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* L&#39;host in `AemContentFragmentReference` è ora bonificato.
-* È stata aggiunta la logica per le configurazioni del dispatcher SSL e non SSL.
+* L’albero della struttura è stato migliorato.
+* Le immagini collegate sono ora supportate.
+* Sono stati apportati miglioramenti alle operazioni Annulla/Ripristina.
+
