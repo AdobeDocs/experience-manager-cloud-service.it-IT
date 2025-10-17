@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 92%
+source-wordcount: '522'
+ht-degree: 78%
 
 ---
 
@@ -38,6 +38,26 @@ L’opzione **Anteprima** nella finestra di pubblicazione può quindi essere eli
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Disabilitazione della pubblicazione su LiveLive {#publish-live}
+
+Alcuni flussi di lavoro di authoring potrebbero impedire la pubblicazione nel servizio live.
+
+L&#39;opzione **Live** nella finestra di pubblicazione può quindi essere soppressa completamente in un&#39;app aggiungendo i seguenti metadati.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Disabilitazione dell’annullamento della pubblicazione {#unpublish}
+
+Alcuni flussi di lavoro di authoring richiedono un processo di approvazione prima che venga annullata la pubblicazione del contenuto. In tali situazioni, l’opzione per annullare la pubblicazione non deve essere disponibile per alcun autore.
+
+Il pulsante **Annulla pubblicazione** può quindi essere eliminato completamente in un&#39;app aggiungendo i metadati seguenti.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## Disabilitazione del pulsante Apertura della pagina {#open-page}
@@ -74,7 +94,7 @@ Puoi limitare i componenti consentiti per contenitore nell’editor universale u
 
 ## Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [&#x200B; del modello del componente &#x200B;](/help/implementing/universal-editor/field-types.md#fields).
+Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello del componente ](/help/implementing/universal-editor/field-types.md#fields).
 
 Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://jsonlogic.com/). Se la condizione è vera, il campo viene visualizzato. Se la condizione è falsa, il campo viene nascosto.
 
@@ -115,7 +135,7 @@ Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 A tal fine, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app dotata di strumenti come nell’esempio seguente.
 
