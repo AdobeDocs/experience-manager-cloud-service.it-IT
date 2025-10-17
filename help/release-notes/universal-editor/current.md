@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 31c94576f6cfb0ffff0f37ece33ef1f91f98f356
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 50%
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ Queste sono le note sulla versione del 16 ottobre 2025 di Universal Editor.
 
 >[!TIP]
 >
->Se desideri testare le **prossime** funzionalità di Universal Editor prima che vengano rilasciate, consulta le [note sulla versione di anteprima di Universal Editor.](/help/release-notes/universal-editor/preview.md)
+>Se desideri testare le **prossime** funzionalità dell’editor universale prima che vengano rilasciate, consulta le [note sulla versione di anteprima dell’editor universale.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >

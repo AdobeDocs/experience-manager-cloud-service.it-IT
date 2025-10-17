@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 8dfe5316db99860ee8fbf5d0be2fa70412e7cce3
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 56%
+ht-degree: 89%
 
 ---
 
@@ -21,9 +21,9 @@ Consulta anche le [note sulla versione corrente di Adobe Experience Manager as a
 
 ## Date di pubblicazione {#release-date}
 
-La versione 2025.10.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata il venerdì 2 ottobre 2025.
+La versione 2025.10.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata venerdì 2 ottobre 2025.
 
-La prossima versione è pianificata per il venerdì 6 novembre 2025.
+La prossima versione è pianificata per il 6 novembre 2025.
 
 ## Novità {#what-is-new}
 
@@ -31,52 +31,52 @@ La prossima versione è pianificata per il venerdì 6 novembre 2025.
 
   Cloud Manager offre ora pipeline di distribuzione dedicate solo per lo staging e per la sola produzione, garantendo maggiore flessibilità per la gestione indipendente delle distribuzioni negli ambienti di staging e produzione. Consulta [Pipeline suddivise solo per staging e solo produzione](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
 
-* **Servizio di valutazione dell&#39;integrità cloud di AEM**
+* **Servizio valutazione dello stato di AEM Cloud**
 
-  Adobe presenta AEM Cloud Health Assessment Service, uno strumento di controllo automatizzato e non invasivo che mantiene l’ambiente AEM as a Cloud Service ottimizzato, sicuro e allineato con le best practice.
+  Adobe presenta il Servizio di valutazione dello stato di AEM cloud, uno strumento di controllo automatizzato e non invasivo che mantiene l’ambiente AEM as a Cloud Service ottimizzato, sicuro e in linea con le best practice.
 
-  Questo servizio esegue le seguenti operazioni:
+  Il servizio offre le seguenti funzionalità:
 
-   * Esegue la scansione degli ambienti per individuare colli di bottiglia delle prestazioni, inefficienze e rischi potenziali.
-   * Analizza le strutture dei contenuti (blueprint, Live Copy) e le configurazioni personalizzate.
-   * Identifica le dipendenze obsolete (AEM SDK, librerie di terze parti).
-   * Segnala i problemi di qualità del codice (annotazioni non corrette, modelli inefficienti).
-   * Fornisce indicazioni actionable tramite dashboard come **Centro azioni**.
-   * Supporta l’ottimizzazione proattiva tramite il rilevamento e la risoluzione tempestivi dei problemi.
+   * Scansione degli ambienti per individuare ostacoli alle prestazioni, inefficienze e rischi potenziali.
+   * Analisi delle strutture dei contenuti (blueprint, live copy) e delle configurazioni personalizzate.
+   * Identificazione delle dipendenze obsolete (AEM SDK, librerie di terze parti).
+   * Segnalazione dei problemi di qualità del codice (annotazioni non corrette, modelli inefficaci).
+   * Indicazioni operative tramite dashboard come **Centro azioni**.
+   * Supporto per l’ottimizzazione proattiva, grazie al rilevamento e alla risoluzione dei problemi in tempo utile.
 
-  I team possono monitorare e migliorare continuamente gli ambienti AEM per garantire prestazioni più fluide, maggiore sicurezza e manutenibilità a lungo termine.
+  I team possono monitorare e migliorare continuamente gli ambienti AEM per garantire prestazioni più fluide, maggiore sicurezza e manutenzione a lungo termine.
 
   Consulta [Valutazione dello stato per gli ambienti di produzione e staging](/help/implementing/cloud-manager/reports/report-health-assessment.md).
 
 * **Supporto pipeline di configurazione**
 
-  Le pipeline di configurazione sono ora supportate per i siti creati con Edge Delivery Services, espandendo questa funzionalità oltre i singoli ambienti Cloud Service. Puoi utilizzare **Pipeline di configurazione** per gestire impostazioni quali la configurazione CDN, incluse le regole del filtro del traffico e i selettori di origine. Consulta le [configurazioni supportate](/help/operations/config-pipeline.md#configurations).
+  Le pipeline di configurazione sono ora supportate per i siti creati con Edge Delivery Services, espandendo questa funzionalità oltre i singoli ambienti del servizio cloud. Puoi utilizzare le **pipeline di configurazione** per gestire impostazioni quali la configurazione CDN, incluse le regole di filtro del traffico e i selettori di origine. Consulta le [configurazioni supportate](/help/operations/config-pipeline.md#configurations).
 
-  Le pipeline di configurazione di Edge Delivery supportano anche i segreti tramite le variabili della pipeline di Cloud Manager.
+  Le pipeline di configurazione Edge Delivery ora supportano i secret tramite le variabili pipeline di Cloud Manager.
 
   Consulta [Aggiungere pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 * **Finestra di dialogo di configurazione di Domain Mapping-CDN semplificata**
 
-  Cloud Manager ha semplificato il flusso **Mappa dominio su CDN** per ridurre confusione e velocizzare la configurazione. La finestra di dialogo ora enfatizza **CDN gestita da Adobe** (con un badge &quot;Consigliato&quot;).
+  Cloud Manager ha semplificato il flusso **Mappa dominio su CDN** per ridurre complessità e velocizzare la configurazione. Nella finestra di dialogo è ora evidenziata l&#39;opzione **CDN gestita da Adobe** (con il badge &quot;Consigliato&quot;).
 
-  ![Finestra di dialogo Mappa dominio su rete CDN con il pulsante di opzione CDN gestita da Adobe selezionato](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png).
+  ![Finestra di dialogo Mappa dominio su CDN con il pulsante di opzione CDN gestita da Adobe selezionato](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png).
 
-  Vedere [Aggiungere un mapping di dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
+  Consulta [Aggiungere una mappatura di dominio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
-  La finestra di dialogo presenta anche un elenco di controllo singolo e conciso per la scheda **Altro provider CDN**, incentrato sul contenuto informativo con i seguenti elementi:
+  La finestra di dialogo presenta anche un elenco di controllo singolo e sintetico per la scheda **Altro provider CDN**, incentrato sui contenuti istruttivi seguenti:
 
-   * Puntare l&#39;origine CDN a `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
-   * Imposta **Host/SNI** per inoltrare l&#39;host originale.
-   * Aggiungi `X-AEM-Edge-Key` (dopo la distribuzione della chiave in Cloud Manager).
-   * Imposta `X-Forwarded-Host` sul tuo dominio rivolto al cliente.
-   * Cancella altre intestazioni `X-Forwarded-*` prima di raggiungere AEM.
+   * Puntare l’origine della CDN su `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
+   * Impostare **Host/SNI** per inoltrare l&#39;host originale.
+   * Aggiungere `X-AEM-Edge-Key` (dopo l&#39;implementazione della chiave in Cloud Manager).
+   * Impostare `X-Forwarded-Host` sul proprio dominio rivolto ai clienti.
+   * Cancellare altre intestazioni `X-Forwarded-*` prima di raggiungere AEM.
 
-  ![Finestra di dialogo Mappa dominio su rete CDN con il pulsante di scelta Altro provider CDN selezionato](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+  ![Finestra di dialogo Mappa dominio su CDN con il pulsante di scelta Altro provider CDN selezionato](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
 
-  <!-- (no redundant `Origin` field or "Learn more" clutter) -->Il piè di pagina allegato fornisce due collegamenti utili: configurazioni di esempio per le CDN principali e un collegamento alla documentazione completa. Un singolo pulsante di conferma-Ho configurato la rete CDN-completa il flusso.
+  <!-- (no redundant `Origin` field or "Learn more" clutter) -->Il piè di pagina allegato fornisce due collegamenti utili: configurazioni di esempio per le CDN principali e un collegamento alla documentazione completa. Il flusso si conclude con l&#39;unico pulsante di conferma &quot;Ho configurato la rete CDN&quot;.
 
-  Vedi [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN).
+  Consulta [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -98,17 +98,17 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ### Estensibilità e personalizzazione di Experience Hub {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md) funge da punto di ingresso ad AEM, personalizzato in base alle esigenze della tua organizzazione. Comunica ad Adobe le tue estensioni dell’interfaccia utente di AEM esistenti in modo che possano aiutarti ad abilitarle in Experience Hub con il minimo sforzo.
+[Experience Hub](/help/experience-hub.md) funge da punto di accesso ad AEM, personalizzato in base alle esigenze della tua organizzazione. Comunica ad Adobe le tue estensioni dell’interfaccia utente di AEM esistenti, in modo che possano aiutarti ad abilitarle in Experience Hub con il minimo sforzo.
 
-![Diagramma del flusso di lavoro di estensibilità e personalizzazione di Experience Hub](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+![Diagramma del workflow di estensibilità e personalizzazione di Experience Hub](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
-Incorpora esperienze personalizzate in Experience Hub per estendere e personalizzare il dashboard della tua organizzazione. Oltre ai widget incorporati di Adobe, aggiungi quelli personalizzati utilizzando il framework [UI Extensibility](https://developer.adobe.com/uix/docs/). Crea app dell’interfaccia utente basate su JavaScript e mostrale agli utenti per soddisfare requisiti e flussi di lavoro specifici per le aziende.
+Incorpora esperienze personalizzate in Experience Hub per estendere e personalizzare il dashboard della tua organizzazione. Oltre ai widget incorporati di Adobe, aggiungi quelli personalizzati utilizzando il framework [Estensibilità dell’interfaccia utente](https://developer.adobe.com/uix/docs/). Crea app dell’interfaccia utente basate su JavaScript e mostrale agli utenti per soddisfare requisiti e flussi di lavoro specifici per l’azienda.
 
-Ti interessa la versione beta? Invia un&#39;e-mail a [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) con il tuo OrgID Adobe e una breve descrizione della personalizzazione che intendi creare.
+Ti interessa la versione beta? Invia un’e-mail a [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) con il tuo OrgID Adobe e una breve descrizione della personalizzazione che intendi creare.
 
 ### Build più veloci con il caching dei moduli {#quick-build-cm-pipelines}
 
-Un nuovo modello di build compila solo i moduli modificati (anziché l’intero archivio) utilizzando la memorizzazione nella cache a livello di modulo per ridurre i tempi di build. Si applica alle pipeline di qualità del codice, full stack e solo stage.
+Un nuovo modello di build compila solo i moduli modificati (anziché l’intero archivio) utilizzando il caching a livello di modulo per ridurre i tempi della build. Si applica alle pipeline di qualità del codice, full stack e di solo staging.
 
 ![Finestra di dialogo Modifica pipeline non di produzione con le due opzioni Strategia di compilazione Full Build e Smart Build](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *Finestra di dialogo Modifica pipeline non di produzione che mostra le due opzioni Strategia di compilazione, Build completa e Build avanzata.*
@@ -120,7 +120,7 @@ Nella finestra di dialogo **Aggiungi/Modifica pipeline**, nella scheda **Codice 
 
 Puoi controllare quali pipeline utilizzano **Smart build**. Durante la versione beta, questa opzione viene visualizzata solo per le pipeline **Qualità codice** e **Distribuzione sviluppatore**.
 
-Interessato? Invia un&#39;e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con il tuo ID organizzazione e l&#39;ID programma di Adobe.
+Ti interessa? Invia un’e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) indicando il tuo OrgID Adobe e l’ID programma.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -130,13 +130,13 @@ Interessato? Invia un&#39;e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailt
 
 Ripristino rapido a un’implementazione precedente se il codice di origine più recente del cliente non funziona come previsto: non è necessario eseguire nuovamente la pipeline completa o ripristinare manualmente i commit.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**&#x200B;per un ambiente selezionato.*
+![Ripristina il codice di origine del cliente dalla scheda Ambienti](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Nella scheda Ambienti precedente è visualizzata l’opzione **Ripristina**>**Codice precedente implementato**per un ambiente selezionato.*
 
 ![Finestra di dialogo Ripristina codice precedente implementato](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Nella finestra di dialogo **Ripristina codice precedente implementato**, controlla la versione attualmente implementata e quella che desideri ripristinare, quindi fai clic su **Conferma***.
 
 ![Ripristino dell’attivazione](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**&#x200B;fino al completamento dell’implementazione.*
+*Cloud Manager ripristina l’ambiente alla versione precedente, mantiene intatti il contenuto e la configurazione e contrassegna l’ambiente **Ripristino**fino al completamento dell’implementazione.*
 
 ![Versione del codice di origine in uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *La visualizzazione dei dettagli dell’ambiente, come illustrato in precedenza, mostra ora anche la versione del codice di origine attiva in uso.*
 
@@ -205,7 +205,7 @@ Consulta [Gestisci token di accesso](/help/implementing/cloud-manager/managing-c
 
 ## Correzioni di bug {#bug-fixes}
 
-Non vi sono correzioni di bug significativi nella versione di ottobre di Cloud Manager.
+Non sono state apportate correzioni di bug significative nella versione di ottobre di Cloud Manager.
 
 
 <!-- ## Known issues {#known-issues} -->
