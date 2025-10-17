@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '1569'
-ht-degree: 100%
+source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+workflow-type: tm+mt
+source-wordcount: '1592'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ Di seguito è riportata la definizione di tipo di un oggetto campo.
 | `label` | `FieldLabel` | Etichetta del campo | Sì |
 | `description` | `FieldDescription` | Descrizione del campo | No |
 | `placeholder` | `string` | Segnaposto per il campo | No |
-| `value` | `FieldValue` | Valore predefinito | No |
+| `value` | `FieldValue` | Questo è un valore predefinito, che funge da segnaposto. Questo valore non determina alcun aggiornamento del contenuto. È solo una rappresentazione nell’interfaccia utente. | No |
 | `valueType` | `ValueType` | Convalida standard, può essere `string`, `string[]`, `number`, `date`, `boolean` | No |
 | `required` | `boolean` | Il campo è obbligatorio? | No |
 | `readOnly` | `boolean` | Il campo è di sola lettura? | No |
