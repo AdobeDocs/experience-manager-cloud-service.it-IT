@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 65%
+source-wordcount: '4349'
+ht-degree: 64%
 
 ---
 
@@ -117,7 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravità**: critico
 * **Da**: versione 2018.6.0
 
-Quando si effettuano richieste HTTP all’interno di un’applicazione di Experience Manager, è essenziale configurare timeout appropriati per evitare un inutile consumo di thread.
+Quando si effettuano richieste HTTP all’interno di un’applicazione Experience Manager, è essenziale configurare timeout appropriati per evitare un inutile consumo di thread.
 Per impostazione predefinita, sia il client HTTP Java™ (java.net.HttpUrlConnection) che il client Apache HTTP Components ampiamente utilizzato non impongono timeout, pertanto devono essere configurati manualmente. Come best practice, i timeout devono essere impostati su un massimo di 60 secondi.
 
 #### Codice non conforme {#non-compliant-code-2}
@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **Gravità**: importante
 * **Da**: versione 2018.4.0
 
-Come descritto nella [documentazione di Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), i servlet di associazione da percorsi sono sconsigliati. I servlet associati ai percorsi non possono utilizzare controlli dell’accesso JCR standard e, di conseguenza, richiedono un’ulteriore misura di sicurezza. Anziché utilizzare i servlet associati ai percorsi, si consiglia di creare nodi nell’archivio e di registrare i servlet in base al tipo di risorsa.
+Come descritto nella documentazione di [`Sling`](https://sling.apache.org/documentation/the-sling-engine/servlets.html), i servlet di associazione da percorsi sono sconsigliati. I servlet associati ai percorsi non possono utilizzare controlli dell’accesso JCR standard e, di conseguenza, richiedono un’ulteriore misura di sicurezza. Anziché utilizzare i servlet associati ai percorsi, si consiglia di creare nodi nell’archivio e di registrare i servlet in base al tipo di risorsa.
 
 #### Codice non conforme {#non-compliant-code-5}
 
@@ -322,7 +322,7 @@ public void doThis() throws Exception {
 * **Tipo**: `Code Smell`
 * **Gravità**: minore
 
-In generale, il livello di registro INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, Experience Manager è configurato per registrare a livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste GET o HEAD generi un notevole disturbo nel registro, rendendo così più difficile identificare le informazioni utili nei file di log. Quando gestisci le richieste di GET o HEAD, registra a livello di WARN o ERROR in caso di errori. Utilizzare i livelli DEBUG o TRACE se sono necessarie informazioni dettagliate sulla risoluzione dei problemi.
+In generale, il livello di registro INFO deve essere utilizzato per delimitare azioni importanti e, per impostazione predefinita, Experience Manager è configurato per registrare a livello INFO o superiore. I metodi GET e HEAD devono essere sempre di sola lettura e non costituiscono pertanto azioni importanti. È probabile che la registrazione a livello INFO in risposta alle richieste GET o HEAD generi un notevole disturbo nel registro, rendendo così più difficile identificare le informazioni utili nei file di log. Durante la gestione delle richieste di GET o HEAD, effettua l’accesso ai livelli WARN o ERROR in caso di errori. Utilizzare i livelli DEBUG o TRACE se sono necessarie informazioni dettagliate sulla risoluzione dei problemi.
 
 >[!NOTE]
 >
@@ -483,7 +483,7 @@ public void doThis() {
 * **Gravità**: minore
 * **Da**: versione 2018.4.0
 
-I percorsi che iniziano con `/libs` e `/apps` in genere non devono essere hardcoded. Questi percorsi vengono in genere memorizzati in relazione al percorso di ricerca Sling, che ha come impostazione predefinita `/libs,/apps`. L’utilizzo del percorso assoluto può presentare difetti minimi che appariranno solo successivamente nel ciclo di vita del progetto.
+I percorsi che iniziano con `/libs` e `/apps` in genere non devono essere hardcoded. Questi percorsi vengono in genere archiviati rispetto al percorso di ricerca `Sling`, che ha come impostazione predefinita `/libs,/apps`. L’utilizzo del percorso assoluto può presentare difetti minimi che appariranno solo successivamente nel ciclo di vita del progetto.
 
 #### Codice non conforme {#non-compliant-code-13}
 
@@ -504,18 +504,18 @@ public void doThis(Resource resource) {
 ### Non utilizzare lo Sling Scheduler {#sonarqube-sling-scheduler}
 
 * **Chiave**: CQRules:AMSCORE-554
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-Non utilizzare lo Sling Scheduler per le attività che richiedono un’esecuzione garantita. I processi pianificati Sling garantiscono l’esecuzione e sono più adatti per gli ambienti cluster che per quelli non cluster.
+Non utilizzare l&#39;utilità di pianificazione `Sling` per le attività che richiedono un&#39;esecuzione garantita. I processi pianificati Sling garantiscono l’esecuzione e sono più adatti per gli ambienti cluster che per quelli non cluster.
 
-Per ulteriori informazioni sulla gestione dei processi Sling in ambienti cluster, consulta [Evento Sling di Apache e Gestione dei processi](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
+Per ulteriori informazioni sulla gestione dei processi Sling negli ambienti cluster, consulta Gestione eventi e processi [`Apache Sling`](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
 ### Non utilizzare API obsolete di Experience Manager {#sonarqube-aem-deprecated}
 
 * **Chiave**: AMSCORE-553
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -532,9 +532,9 @@ Tuttavia, in alcuni casi un’API può essere obsoleta nel contesto di Experienc
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
-Il progetto Apache Sling sconsiglia l&#39;utilizzo dell&#39;annotazione `@Inject` nel contesto dei modelli Sling, in quanto può causare prestazioni non corrette se combinata con `DefaultInjectionStrategy.OPTIONAL` (a livello di campo o di classe). Invece, devono essere utilizzate iniezioni più specifiche (come le annotazioni `@ValueMapValue` o `@OsgiInjector`).
+Il progetto `Apache Sling` scoraggia l&#39;utilizzo dell&#39;annotazione `@Inject` nel contesto dei modelli Sling, in quanto può causare prestazioni non corrette se combinata con `DefaultInjectionStrategy.OPTIONAL` (a livello di campo o di classe). Invece, devono essere utilizzate iniezioni più specifiche (come le annotazioni `@ValueMapValue` o `@OsgiInjector`).
 
-Consulta la [documentazione di Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) per ulteriori informazioni sulle annotazioni consigliate e sul motivo per cui questo consiglio è stato creato.
+Per ulteriori informazioni sulle annotazioni consigliate e sul motivo per cui questo consiglio è stato creato, consulta la documentazione di [`Apache Sling`](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1).
 
 
 ### Riutilizzare le istanze di un client HTTPC {#sonarqube-reuse-httpclient}
@@ -544,7 +544,7 @@ Consulta la [documentazione di Apache Sling](https://sling.apache.org/documentat
 * **Gravità**: minore
 * **Da**: versione 2023.11
 
-Le applicazioni AEM spesso raggiungono altre applicazioni utilizzando il protocollo HTTP e Apache HttpClient è una libreria spesso utilizzata per raggiungere questo scopo. Tuttavia, la creazione di un oggetto HttpClient comporta un certo sovraccarico, pertanto tali oggetti devono essere riutilizzati il più possibile.
+Le applicazioni AEM spesso si rivolgono ad altre applicazioni utilizzando il protocollo HTTP e Apache HttpClient è una libreria spesso utilizzata per raggiungere questo scopo. Tuttavia, la creazione di un oggetto HttpClient comporta un certo sovraccarico, pertanto tali oggetti devono essere riutilizzati il più possibile.
 
 Questa regola controlla che tale oggetto HttpClient non sia privato all&#39;interno di un metodo, ma globale a livello di classe, in modo da poterlo riutilizzare. In questo caso, il campo HttpClient deve essere impostato nel costruttore della classe o nel metodo `activate()` (se questa classe è un componente/servizio OSGi).
 
@@ -579,7 +579,7 @@ Nella sezione seguente sono descritti i controlli OakPAL eseguiti da Cloud Manag
 
 >[!NOTE]
 >
->OakPAL è un framework che convalida i pacchetti di contenuti con un archivio Oak autonomo. Un partner Experience Manager, che ha vinto il premio Experience Manager Rockstar North America 2019, lo ha sviluppato.
+>OakPAL è un’infrastruttura che convalida i pacchetti di contenuti utilizzando un archivio Oak autonomo. Un partner Experience Manager, che ha vinto il premio Experience Manager Rockstar North America 2019, lo ha sviluppato.
 
 ### I clienti non devono implementare o estendere le API di prodotto annotate con @ProviderType{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -588,7 +588,7 @@ Nella sezione seguente sono descritti i controlli OakPAL eseguiti da Cloud Manag
 * **Gravità**: critico
 * **Da**: versione 2018.7.0
 
-L&#39;API Experience Manager contiene interfacce e classi Java™ che devono essere utilizzate solo dal codice personalizzato, ma non implementate. Solo Experience Manager, ad esempio, deve implementare l&#39;interfaccia `com.day.cq.wcm.api.Page`.
+L&#39;API Experience Manager contiene interfacce e classi Java™ che devono essere utilizzate solo dal codice personalizzato, ma che non devono essere implementate. Solo Experience Manager, ad esempio, deve implementare l&#39;interfaccia `com.day.cq.wcm.api.Page`.
 
 Quando a queste interfacce vengono aggiunti nuovi metodi, questi non influiscono sul codice esistente che utilizza tali interfacce. Di conseguenza, l’aggiunta di nuovi metodi a queste interfacce è considerata retrocompatibile. Tuttavia, se il codice personalizzato implementa una di queste interfacce, genera per il cliente un rischio di retrocompatibilità con le versioni precedenti.
 
@@ -797,12 +797,12 @@ Un problema comune è l’utilizzo di nodi denominati `config` nelle finestre di
 * **Gravità**: importante
 * **Da**: versione 2019.6.0
 
-Simile alla regola [I pacchetti non devono contenere duplicati delle configurazioni OSGi](#oakpal-package-osgi), questa situazione è un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuto separati. Benché sia possibile utilizzare le dipendenze tra pacchetti di contenuti per garantire risultati coerenti, è meglio evitare del tutto le sovrapposizioni.
+Simile alla regola [I pacchetti non devono contenere duplicati delle configurazioni OSGi](#oakpal-package-osgi), questa situazione è un problema comune nei progetti complessi in cui lo stesso percorso del nodo viene scritto da più pacchetti di contenuto separati. Con i pacchetti di contenuti è possibile utilizzare le dipendenze per garantire un risultato coerente. È invece preferibile evitare del tutto le sovrapposizioni.
 
 ### La modalità di authoring predefinita non deve essere interfaccia classica {#oakpal-default-authoring}
 
 * **Chiave**: ClassicUIAuthoringMode
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -811,13 +811,13 @@ La configurazione OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### I componenti con finestre di dialogo devono avere finestre di dialogo per l’interfaccia touch {#oakpal-components-dialogs}
 
 * **Chiave**: ComponentWithOnlyClassicUIDialog
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-I componenti di Experience Manager che hanno una finestra di dialogo per l’interfaccia classica devono sempre avere una finestra di dialogo corrispondente per l’interfaccia touch. Entrambi offrono un’esperienza di authoring ottimale compatibile con il modello di distribuzione di Cloud Service, in cui l’interfaccia classica non è più supportata. Questa regola verifica i seguenti scenari:
+I componenti Experience Manager che hanno una finestra di dialogo per l’interfaccia classica devono avere sempre una finestra di dialogo corrispondente per l’interfaccia touch. Entrambi offrono un’esperienza di authoring ottimale compatibile con il modello di distribuzione di Cloud Service, in cui l’interfaccia classica non è più supportata. Questa regola verifica i seguenti scenari:
 
-* Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo figlio `dialog`) deve avere una finestra di dialogo corrispondente dell’interfaccia Touch (ovvero un nodo figlio `cq:dialog`).
+* Un componente con una finestra di dialogo dell’interfaccia classica (ovvero un nodo figlio `dialog`) deve avere una finestra di dialogo corrispondente dell’interfaccia Touch (ovvero un nodo secondario `cq:dialog`).
 * Un componente che ha una finestra di dialogo di progettazione per l’interfaccia utente classica (ad es. un nodo `design_dialog`) deve avere anche una finestra di dialogo di progettazione corrispondente per l’interfaccia utente touch (cioè un nodo `cq:design_dialog` secondario).
 * Un componente con una finestra di dialogo Interfaccia classica e una finestra di dialogo di progettazione Interfaccia classica deve avere una finestra di dialogo Interfaccia Touch corrispondente così come una finestra di dialogo di progettazione Interfaccia Touch corrispondente.
 
@@ -826,11 +826,11 @@ La documentazione sugli strumenti di modernizzazione di Experience Manager forni
 ### I pacchetti non devono contenere un mix di contenuti mutabili e immutabili {#oakpal-packages-immutable}
 
 * **Chiave**: ImmutableMutableMixedPackage
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
-Per la compatibilità con il modello di distribuzione di Cloud Service, i singoli pacchetti di contenuti devono contenere contenuti per aree non modificabili dell’archivio (`/apps` e `/libs`) o per l’area modificabile (ovvero tutto ciò che non si trova in `/apps` o `/libs`), ma non per entrambi i tipi. Ad esempio, un pacchetto che include sia `/apps/myco/components/text` che `/etc/clientlibs/myco` non è compatibile con il Cloud Service e causa la segnalazione di un problema.
+Per la compatibilità con il modello di implementazione di Cloud Service, i singoli pacchetti di contenuti devono contenere contenuti per aree non mutabili dell’archivio (`/apps` e `/libs`) o per l’area mutabile (ovvero tutto ciò che non si trova in `/apps` o `/libs`), ma non per entrambi i tipi. Ad esempio, un pacchetto che include sia `/apps/myco/components/text` che `/etc/clientlibs/myco` non è compatibile con Cloud Service e causa la segnalazione di un problema.
 
 >[!NOTE]
 >
@@ -841,7 +841,7 @@ Per ulteriori informazioni, consulta [Struttura dei progetti Experience Manager]
 ### Non utilizzare agenti di replica inversa {#oakpal-reverse-replication}
 
 * **Chiave**: ReverseReplication
-* **Tipo**: Compatibilità `Code Smell`/Cloud Service
+* **Tipo**: `Code Smell`/Compatibilità Cloud Service
 * **Gravità**: minore
 * **Da**: versione 2020.5.0
 
@@ -900,7 +900,7 @@ Lo strumento di migrazione nell’[archivio GitHub di Assets Experience Manager 
 
 Sebbene l’utilizzo di modelli statici sia storicamente comune nei progetti di Experience Manager, Adobe consiglia di utilizzare modelli modificabili in quanto forniscono la massima flessibilità e supportano funzionalità aggiuntive non presenti nei modelli statici. Per ulteriori informazioni, consulta il documento [Modelli pagina](/help/implementing/developing/components/templates.md).
 
-La migrazione da modelli statici a modificabili può essere in gran parte automatizzata utilizzando gli [strumenti di modernizzazione di Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
+La migrazione da modelli statici a modificabili può essere in gran parte automatizzata con gli [strumenti Experience Manager di modernizzazione](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### L’utilizzo dei componenti di base precedenti è sconsigliato {#oakpal-usage-legacy}
 
@@ -911,7 +911,7 @@ La migrazione da modelli statici a modificabili può essere in gran parte automa
 
 I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora obsoleti per diverse versioni di Experience Manager, in favore dei componenti core. L’utilizzo dei componenti Foundation come base per i componenti personalizzati (tramite sovrapposizione o ereditarietà) viene scoraggiato; si consiglia di optare per la conversione nei corrispondenti componenti core.
 
-[Strumenti di modernizzazione di Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) possono facilitare questa conversione.
+[Strumenti di modernizzazione Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) può facilitare questa conversione.
 
 ### Utilizza solo i nomi e l’ordine delle modalità di esecuzione supportati {#oakpal-supported-runmodes}
 
@@ -920,7 +920,7 @@ I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono 
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate si basa sul documento [Distribuzione nell&#39;Experienci Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da questo elenco è identificata come un problema.
+Experience Manager as a Cloud Service applica un criterio di denominazione rigoroso per i nomi delle modalità di esecuzione e un ordine rigoroso per tali modalità di esecuzione. L&#39;elenco delle modalità di esecuzione supportate si basa sul documento [Distribuzione in Experience Manager as a Cloud Service](/help/implementing/deploying/overview.md#runmodes) e qualsiasi deviazione da questo elenco è identificata come un problema.
 
 ### I nodi di definizione dell’indice di ricerca personalizzato devono essere nodi secondari diretti di `/oak:index` {#oakpal-custom-search}
 
@@ -979,7 +979,7 @@ Experience Manager as a Cloud Service richiede che le definizioni dell’indice 
 ### I nodi di definizione dell’indice di ricerca personalizzato non devono contenere una proprietà denominata seed {#oakpal-property-name-seed}
 
 * **Chiave**: IndexSeedProperty
-* **Tipo**: `Code Smell`
+* **Tipo:**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -988,7 +988,7 @@ Experience Manager as a Cloud Service non consente che le definizioni dell’ind
 ### I nodi di definizione dell’indice di ricerca personalizzato non devono contenere una proprietà denominata reindex {#oakpal-reindex-property}
 
 * **Chiave**: IndexReindexProperty
-* **Tipo**: `Code Smell`
+* **Tipo:**: `Code Smell`
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
@@ -1265,7 +1265,7 @@ AEM Cloud Service non consente modifiche non autorizzate ai seguenti indici inte
 * **Gravità**: minore
 * **Da**: versione 2024.6.0
 
-AEM Cloud Service vieta la creazione di tokenizer con nomi non corretti negli analizzatori. I tokenizzatori devono sempre essere definiti come `tokenizer`.
+AEM Cloud Service non consente la creazione di tokenizer con nomi non corretti negli analizzatori. I tokenizzatori devono sempre essere definiti come `tokenizer`.
 
 >[!WARNING]
 >

@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1580'
 ht-degree: 3%
 
 ---
@@ -101,4 +101,4 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | Escludere le chiamate Commerce integration framework | Escluso | Le richieste effettuate ad AEM che vengono inoltrate a Commerce integration framework, l&#39;URL inizia con `/api/graphql`, per evitare un doppio conteggio, non sono fatturabili per Cloud Service. |
 | Escludi `manifest.json` | Escluso | Il manifesto non è una chiamata API. È qui per fornire informazioni su come installare siti web su un desktop o un telefono cellulare. Adobe non deve contare la richiesta JSON a `/etc.clientlibs/*/manifest.json` |
 | Escludi `favicon.ico` | Escluso | Anche se il contenuto restituito non deve essere HTML o JSON, si è osservato che alcuni scenari come i flussi di autenticazione SAML restituiscono favicon come HTML. Di conseguenza, le favicon sono esplicitamente escluse dal conteggio. |
-| Frammento esperienza (XF) - Riutilizzo dello stesso dominio | Escluso | Richieste effettuate a percorsi XF (ad esempio `/content/experience-fragments/...`) da pagine ospitate sullo stesso dominio (come identificato dall&#39;intestazione Referer che corrisponde all&#39;host della richiesta).<br><br> Esempio: una home page su `aem.customer.com` che richiama un XF per un banner o una scheda dello stesso dominio.<br><br>· URL matches /content/experience-fragments/...<br>· Il dominio di riferimento corrisponde a `request_x_forwarded_host`<br><br>**Nota:** Se il percorso del frammento di esperienza è personalizzato (ad esempio utilizzando `/XFrags/...` o un percorso esterno a `/content/experience-fragments/`), la richiesta non verrà esclusa e potrebbe essere conteggiata, anche se si tratta dello stesso dominio. È consigliabile utilizzare la struttura di percorso XF standard di Adobe per garantire che la logica di esclusione venga applicata correttamente. |
+| Frammento esperienza (XF) - Riutilizzo dello stesso dominio | Escluso | Richieste effettuate a percorsi XF (ad esempio `/content/experience-fragments/...`) da pagine ospitate sullo stesso dominio (come identificato dall&#39;intestazione Referrer che corrisponde all&#39;host della richiesta).<br><br> Esempio: una home page su `aem.customer.com` che richiama un XF per un banner o una scheda dello stesso dominio.<br><br>· URL matches /content/experience-fragments/...<br>· Il dominio del referente corrisponde a `request_x_forwarded_host`<br><br>**Nota:** Se il percorso del frammento di esperienza è personalizzato (ad esempio utilizzando `/XFrags/...` o un percorso esterno a `/content/experience-fragments/`), la richiesta non viene esclusa e potrebbe essere conteggiata. Questo risultato è vero anche se si tratta dello stesso dominio. Adobe consiglia di utilizzare la struttura di percorso XF standard di Adobe per garantire che la logica di esclusione venga applicata correttamente. |
