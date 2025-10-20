@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ Scopri le diverse opzioni per personalizzare l’editor universale in modo da su
 >
 >L’editor universale offre anche molti [punti di estensione](/help/implementing/universal-editor/extending.md) che ti consentono di ampliarne le funzionalità per soddisfare le esigenze del progetto.
 
-## Disabilitazione della pubblicazione {#disable-publish}
+## Utilizzo dei tag di configurazione Meta {#meta-tags}
 
-Alcuni flussi di lavoro di authoring richiedono la revisione del contenuto prima della pubblicazione. In tali situazioni, l’opzione per pubblicare non deve essere disponibile per nessun autore.
+Alcuni flussi di lavoro di authoring potrebbero richiedere l’utilizzo di alcune funzioni dell’Editor universale e non di altre. Per supportare casi diversi, i metatag sono disponibili per configurare o disabilitare determinate funzioni o pulsanti dell’editor.
 
-Il pulsante **Pubblica** può quindi essere eliminato completamente da un’app aggiungendo i metadati seguenti.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Disabilitazione della pubblicazione nell’anteprima {#publish-preview}
-
-Alcuni flussi di lavoro di authoring potrebbero impedire la pubblicazione nell’[anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) (se disponibile).
-
-L’opzione **Anteprima** nella finestra di pubblicazione può quindi essere eliminata completamente da un’app aggiungendo i metadati seguenti.
+Utilizzare questo tag nella sezione `<head>` della pagina per disabilitare una o più funzionalità:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Disabilitazione della pubblicazione su LiveLive {#publish-live}
+Per disattivare più funzioni, fornisci un elenco di valori separato da virgole.
 
-Alcuni flussi di lavoro di authoring potrebbero impedire la pubblicazione nel servizio live.
+Di seguito sono riportati i valori supportati per `content`, ovvero le funzionalità che possono essere disabilitate con i metatag.
 
-L&#39;opzione **Live** nella finestra di pubblicazione può quindi essere soppressa completamente in un&#39;app aggiungendo i seguenti metadati.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Disabilitazione dell’annullamento della pubblicazione {#unpublish}
-
-Alcuni flussi di lavoro di authoring richiedono un processo di approvazione prima che venga annullata la pubblicazione del contenuto. In tali situazioni, l’opzione per annullare la pubblicazione non deve essere disponibile per alcun autore.
-
-Il pulsante **Annulla pubblicazione** può quindi essere eliminato completamente in un&#39;app aggiungendo i metadati seguenti.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Disabilitazione del pulsante Apertura della pagina {#open-page}
-
-Il pulsante **Apertura della pagina** può essere eliminato completamente da un’app aggiungendo i metadati seguenti.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Disabilitazione del pulsante Duplica {#duplicate-button}
-
-Alcuni flussi di lavoro di authoring potrebbero dover limitare la capacità dell’autore di contenuto di duplicare i componenti. Puoi disabilitare l’[icona di duplicazione](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) aggiungendo i seguenti metadati.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Disabilitazione di Copia e Incolla {#copy-paste}
-
-Alcuni flussi di lavoro di authoring potrebbero dover limitare la possibilità dell’autore di contenuto di copiare e incollare componenti. È possibile disabilitare le [icone Copia e Incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) aggiungendo i metadati seguenti.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Valore contenuto | Descrizione |
+|---|---|
+| `publish` | Disattiva il pulsante [pubblica](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | Disabilita [pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md) in tempo reale |
+| `publish-preview` | Disabilita pubblicazione anteprima (se il [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) è disponibile) |
+| `unpublish` | Disattiva il pulsante [annulla pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | Disattiva i [pulsanti Copia e Incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | Disattiva il [pulsante Duplica](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | Disattiva il pulsante [apri pagina](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## Modifica dell’endpoint {#custom-endpoint}
 
@@ -94,7 +54,7 @@ Puoi limitare i componenti consentiti per contenitore nell’editor universale u
 
 ## Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [&#x200B; del modello del componente &#x200B;](/help/implementing/universal-editor/field-types.md#fields).
+Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello del componente ](/help/implementing/universal-editor/field-types.md#fields).
 
 Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://jsonlogic.com/). Se la condizione è vera, il campo viene visualizzato. Se la condizione è falsa, il campo viene nascosto.
 
@@ -135,7 +95,7 @@ Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 A tal fine, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app dotata di strumenti come nell’esempio seguente.
 
