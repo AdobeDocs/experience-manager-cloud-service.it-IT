@@ -5,12 +5,14 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
 
 ---
+
 
 # Configurare la pipeline {#set-up-your-pipeline}
 
@@ -50,7 +52,7 @@ Questa parte del percorso si applica all’amministratore di Cloud Manager.
 
 Lo sviluppo front-end comporta la personalizzazione di risorse JavaScript, CSS e statiche che definiscono lo stile del sito AEM. Lo sviluppatore front-end lavorerà nei propri ambienti locali per effettuare queste personalizzazioni. Una volta pronte, le modifiche vengono salvate nell’archivio Git AEM. Ma sono impegnati solo nel codice sorgente. Non sono ancora in diretta.
 
-La pipeline front-end porta queste personalizzazioni impegnate e le distribuisce in un ambiente AEM, in genere in ambienti di produzione o di non produzione.
+La pipeline front-end porta queste personalizzazioni impegnate e le implementa in un ambiente AEM, in genere in ambienti di produzione o non di produzione.
 
 In questo modo, lo sviluppo front-end può funzionare separatamente e parallelamente a qualsiasi sviluppo back-end full-stack su AEM, che dispone di proprie pipeline di distribuzione.
 

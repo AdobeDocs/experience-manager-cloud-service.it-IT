@@ -4,12 +4,14 @@ description: Scopri in che modo lo strumento Creazione Rapida dei Siti utilizza 
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
 
 ---
+
 
 # Creazione rapida di siti e personalizzazione front-end {#quick-site-creation}
 
