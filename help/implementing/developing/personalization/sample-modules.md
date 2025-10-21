@@ -1,17 +1,17 @@
 ---
-title: Tipi di modulo interfaccia utente ContextHub di esempio
+title: Tipi di modulo dell’interfaccia utente di ContextHub di esempio
 description: ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Tipi di modulo interfaccia utente ContextHub di esempio {#sample-contexthub-ui-module-types}
+# Tipi di modulo dell’interfaccia utente di ContextHub di esempio {#sample-contexthub-ui-module-types}
 
 ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni. Vengono fornite le seguenti informazioni:
 
@@ -40,7 +40,7 @@ Codice sorgente in `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.
 Configura il modulo dell’interfaccia utente contexthub.base utilizzando un oggetto JavaScript in formato JSON. Includi una delle seguenti proprietà per configurare le funzioni del modulo dell’interfaccia utente:
 
 * **immagine:** URL di un&#39;immagine da visualizzare come icona.
-* **icon:** il nome di una classe di [Icona interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Se specificate un valore sia per la proprietà icona che per quella immagine, viene utilizzata l&#39;immagine.
+* **icon:** il nome di una classe di [Icona interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon). Se specificate un valore sia per la proprietà icona che per quella immagine, viene utilizzata l&#39;immagine.
 * **titolo:** Titolo per il modulo dell&#39;interfaccia utente. Il titolo viene visualizzato quando si posiziona il puntatore sull&#39;icona del modulo dell&#39;interfaccia utente.
 * **a schermo intero:** valore booleano che indica se il modulo dell&#39;interfaccia utente supporta la modalità a schermo intero. Utilizza `true` per supportare la modalità a schermo intero e `false` per impedire la modalità a schermo intero.
 * **modello:** modello [Handlebars](https://handlebarsjs.com/) che specifica il contenuto da riprodurre nella barra degli strumenti di ContextHub. Utilizzare al massimo due tag `<p>`.
@@ -52,7 +52,7 @@ Configura il modulo dell’interfaccia utente contexthub.base utilizzando un ogg
    * selected: (facoltativo) valore booleano che specifica se l&#39;elemento deve essere visualizzato come selezionato (true=selected). Per impostazione predefinita, gli elementi selezionati vengono visualizzati in grassetto. Utilizzare una proprietà `listType` per configurare altri aspetti (vedere di seguito).
 * **listType:** stile da utilizzare per gli elementi dell&#39;elenco popover. Utilizza uno dei seguenti valori:
    * segno di spunta
-   * casella di controllo
+   * checkbox
    * radio
 * **popoverTemplate:** modello Handlebars che specifica il contenuto da riprodurre nel popover quando si fa clic sul modulo dell&#39;interfaccia utente. Se si include questo elemento, non includere l&#39;elemento `list`.
 

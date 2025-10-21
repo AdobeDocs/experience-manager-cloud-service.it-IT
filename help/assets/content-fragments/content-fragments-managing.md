@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 63%
@@ -55,7 +55,7 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-È possibile abilitare e creare i [modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) prima della creazione dei frammenti di contenuto con una struttura.
+È possibile abilitare e creare i [modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) prima di creare dei frammenti di contenuti strutturati.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
@@ -136,7 +136,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 >[!NOTE]
 >
->Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
+>Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 

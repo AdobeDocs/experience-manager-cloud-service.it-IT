@@ -4,7 +4,7 @@ description: Scopri come configurare Context Hub, un framework per l’archiviaz
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 1%
@@ -19,14 +19,14 @@ Puoi configurare la barra degli strumenti di ContextHub per controllare se viene
 
 ## Visualizzazione e nascondere l’interfaccia utente di ContextHub {#showing-and-hiding-the-contexthub-ui}
 
-Configura il servizio OSGi Adobe Granite ContextHub per mostrare o nascondere la [interfaccia utente ContextHub](/help/sites-cloud/authoring/personalization/targeted-content.md) nelle tue pagine. Il PID di questo servizio è `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+Configura il servizio OSGi ContextHub Adobe Granite per mostrare o nascondere la [interfaccia utente ContextHub](/help/sites-cloud/authoring/personalization/targeted-content.md) nelle tue pagine. Il PID di questo servizio è `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
 Per configurare il servizio è possibile utilizzare la [console Web](/help/implementing/deploying/configuring-osgi.md) o un nodo JCR nell&#39;archivio:
 
 * **Console Web:** Per visualizzare l&#39;interfaccia utente, selezionare la proprietà Mostra interfaccia utente. Per nascondere l’interfaccia utente, cancella la proprietà Nascondi interfaccia utente.
 * **Nodo JCR:** Per visualizzare l&#39;interfaccia utente, impostare la proprietà booleana `com.adobe.granite.contexthub.show_ui` su `true`. Per nascondere l&#39;interfaccia utente, impostare la proprietà su `false`.
 
-Quando viene visualizzata l’interfaccia utente di ContextHub, viene visualizzata solo sulle pagine delle istanze di authoring AEM. L’interfaccia utente non viene visualizzata nelle pagine delle istanze di pubblicazione.
+Quando viene visualizzata l’interfaccia utente di ContextHub, viene visualizzata solo sulle pagine delle istanze di authoring di AEM. L’interfaccia utente non viene visualizzata nelle pagine delle istanze di pubblicazione.
 
 ## Aggiunta di modalità e moduli dell’interfaccia utente ContextHub {#adding-contexthub-ui-modes-and-modules}
 
@@ -39,13 +39,13 @@ Le modalità dell’interfaccia utente vengono visualizzate sotto forma di una s
 
 ![Barra degli strumenti di ContextHub](assets/contexthub-toolbar.png)
 
-Le icone sono riferimenti dalla [libreria di icone dell&#39;interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+Le icone sono riferimenti dalla [libreria di icone dell&#39;interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon).
 
 ### Aggiunta di una modalità interfaccia utente {#adding-a-ui-mode}
 
 Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub correlati. Quando crei la modalità interfaccia utente, fornisci il titolo e l’icona visualizzati nella barra degli strumenti di ContextHub.
 
-1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > Context Hub.
+1. Nella barra di Experience Manager, seleziona Strumenti > Siti > Context Hub.
 1. Seleziona il Contenitore di configurazione predefinito.
 1. Seleziona la configurazione Context Hub.
 1. Seleziona il pulsante Crea, quindi seleziona Modalità interfaccia utente Context Hub.
@@ -55,7 +55,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 1. Immetti i valori per le seguenti proprietà:
 
    * Titolo modalità interfaccia utente: titolo che identifica la modalità interfaccia utente
-   * Icona modalità: selettore dell&#39;[icona dell&#39;interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) da utilizzare, ad esempio `coral-Icon--user`
+   * Icona modalità: selettore dell&#39;[icona dell&#39;interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) da utilizzare, ad esempio `coral-Icon--user`
    * Abilitato: seleziona per visualizzare la modalità interfaccia utente nella barra degli strumenti di ContextHub
 
 1. Seleziona Salva.
@@ -64,7 +64,7 @@ Aggiungi una modalità interfaccia utente per raggruppare i moduli ContextHub co
 
 Aggiungi un modulo dell’interfaccia utente ContextHub a una modalità interfaccia utente in modo che venga visualizzato nella barra degli strumenti di ContextHub per l’anteprima del contenuto della pagina. Quando aggiungi un modulo di interfaccia utente, stai creando un’istanza di un tipo di modulo registrato con ContextHub. Per aggiungere un modulo di interfaccia utente, è necessario conoscere il nome del tipo di modulo associato.
 
-L’AEM fornisce un tipo di modulo dell’interfaccia utente di base e diversi tipi di modulo dell’interfaccia utente di esempio su cui puoi basare un modulo dell’interfaccia utente. La tabella seguente fornisce una breve descrizione di ciascuno di essi. Per informazioni sullo sviluppo di un modulo interfaccia utente personalizzato, vedi [Creazione di moduli interfaccia utente ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
+AEM fornisce un tipo di modulo dell’interfaccia utente di base e diversi tipi di modulo dell’interfaccia utente di esempio su cui puoi basare un modulo dell’interfaccia utente. La tabella seguente fornisce una breve descrizione di ciascuno di essi. Per informazioni sullo sviluppo di un modulo interfaccia utente personalizzato, vedi [Creazione di moduli interfaccia utente ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi fornire valori per le proprietà specifiche del modulo. Fornisci la configurazione dei dettagli in formato JSON. La colonna Tipo modulo nella tabella fornisce collegamenti a informazioni sul codice JSON necessario per ogni tipo di modulo dell’interfaccia utente.
 
@@ -78,7 +78,7 @@ Le proprietà del modulo UI includono una configurazione dettagliata in cui puoi
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Visualizza le statistiche sui tag pagina | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Visualizza le informazioni sul profilo per l&#39;utente corrente, inclusi `authorizableID`, `displayName` e `familyName`. È possibile modificare il valore di `displayName` e `familyName`. | `profile` |
 
-1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > ContextHub.
+1. Nella barra di Experience Manager, seleziona Strumenti > Siti > ContextHub.
 1. Seleziona il Contenitore di configurazione a cui desideri aggiungere un modulo di interfaccia utente.
 1. Seleziona o digita la configurazione ContextHub a cui desideri aggiungere il modulo di interfaccia utente.
 1. Seleziona la modalità dell’interfaccia utente a cui stai aggiungendo il modulo dell’interfaccia utente.
@@ -107,7 +107,7 @@ Il valore della proprietà Configurazione dettagli è un oggetto `config` in for
 
 ### Candidati dell’archivio esempi {#sample-store-candidates}
 
-L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un negozio.
+AEM fornisce i seguenti esempi di store candidati su cui puoi basare uno store.
 
 | Tipo di archivio | Descrizione |
 |---|---|
@@ -117,7 +117,7 @@ L’AEM fornisce i seguenti esempi di store candidati su cui puoi basare un nego
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Memorizza i dati profilo per l&#39;utente corrente |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Memorizza informazioni sul client, ad esempio informazioni sul dispositivo, il tipo di browser e l&#39;orientamento della finestra |
 
-1. Nella barra degli Experienci Manager, seleziona Strumenti > Siti > ContextHub.
+1. Nella barra di Experience Manager, seleziona Strumenti > Siti > ContextHub.
 1. Seleziona il contenitore di configurazione predefinito.
 1. Seleziona configurazione Contexthub
 1. Per aggiungere un archivio, seleziona l’icona Crea, quindi seleziona Configurazione archivio ContextHub.
@@ -221,7 +221,7 @@ Utilizzare CRXDE Lite per impostare la proprietà `debug` su **true** in:
 
 ### Registrazione dei messaggi di debug per ContextHub {#logging-debug-messages-for-contexthub}
 
-Configura il servizio OSGi Adobe Granite ContextHub (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) per registrare i messaggi di debug dettagliati che sono utili durante lo sviluppo.
+Configura il servizio OSGi ContextHub Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) per registrare i messaggi di debug dettagliati che sono utili durante lo sviluppo.
 
 Per configurare il servizio è possibile utilizzare la [console Web](/help/implementing/deploying/configuring-osgi.md) o un nodo JCR nell&#39;archivio:
 
