@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 ## Nuove funzioni in arrivo {#what-is-new}
 
 * È ora supportato il comando Copia e Incolla tra le schede del browser.
+   * Limitato a tra schede aperte contemporaneamente.
+   * La copia del contenuto e l’apertura di una nuova scheda non sono supportate.
 * Ora puoi disattivare il pulsante Annulla pubblicazione con un tag meta.
 
 ## Prossimi miglioramenti {#other-improvements}

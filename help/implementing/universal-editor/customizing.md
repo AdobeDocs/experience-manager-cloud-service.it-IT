@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per personalizzare l’editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 69%
+source-wordcount: '412'
+ht-degree: 67%
 
 ---
 
@@ -36,10 +36,10 @@ Di seguito sono riportati i valori supportati per `content`, ovvero le funzional
 
 | Valore contenuto | Descrizione |
 |---|---|
-| `publish` | Disattiva il pulsante [pubblica](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish` | Disattiva tutte le funzionalità di [pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md), ovvero il pulsante [pubblicazione](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) e il pulsante [annullamento pubblicazione](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
 | `publish-live` | Disabilita [pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md) in tempo reale |
 | `publish-preview` | Disabilita pubblicazione anteprima (se il [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) è disponibile) |
-| `unpublish` | Disattiva il pulsante [annulla pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `unpublish` | Disattiva il pulsante [annulla pubblicazione](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ([funzionalità anteprima](/help/release-notes/universal-editor/preview.md)) |
 | `copy` | Disattiva i [pulsanti Copia e Incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Disattiva il [pulsante Duplica](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Disattiva il pulsante [apri pagina](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
@@ -54,7 +54,7 @@ Puoi limitare i componenti consentiti per contenitore nell’editor universale u
 
 ## Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [&#x200B; del modello del componente &#x200B;](/help/implementing/universal-editor/field-types.md#fields).
+Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello del componente ](/help/implementing/universal-editor/field-types.md#fields).
 
 Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://jsonlogic.com/). Se la condizione è vera, il campo viene visualizzato. Se la condizione è falsa, il campo viene nascosto.
 
@@ -95,7 +95,7 @@ Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 A tal fine, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app dotata di strumenti come nell’esempio seguente.
 
