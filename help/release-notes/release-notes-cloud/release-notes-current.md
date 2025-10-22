@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 96%
+source-wordcount: '2081'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -56,7 +56,21 @@ L’editor Modello di contenuto per i frammenti di contenuto di AEM è stato mod
 
 **Formattazione testo avanzata con sottostringhe nei modelli Dynamic Media**
 
-È ora possibile applicare la formattazione alle sottostringhe nei livelli di testo dei modelli Dynamic Media. Una parola o una frase selezionata viene trattata come un livello separato, consentendo di regolarne il font, la dimensione del font, il colore e altro ancora. Il livello della sottostringa è parametrizzato in modo da poterlo aggiornare in tempo reale utilizzando l’URL di distribuzione del modello
+È ora possibile applicare la formattazione alle sottostringhe nei livelli di testo dei modelli Dynamic Media. Una parola o una frase selezionata viene trattata come un livello separato, consentendo di regolarne il font, la dimensione del font, il colore e altro ancora. Il livello della sottostringa è parametrizzato in modo da poterlo aggiornare in tempo reale utilizzando l’URL di consegna del modello.
+
+### Nuove funzioni in Content Hub {#new-features-content-hub}
+
+**Contrassegna raccolte come preferite**
+
+È ora possibile contrassegnare le raccolte come Preferiti in Content Hub, semplificandone l’organizzazione e il recupero. Una volta aggiunte, le tue raccolte preferite sono comodamente disponibili dalla scheda **[!UICONTROL Preferiti]** nella home page di Content Hub.
+
+**Aggiungi raccolte per accesso rapido**
+
+Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
+
+>[!IMPORTANT]
+>
+>Queste funzioni sono disponibili come funzioni a disponibilità limitata. Puoi [creare e inviare un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per abilitarlo per la distribuzione.
 
 ### Nuove funzioni di Dynamic Media con funzionalità OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +80,7 @@ Rendi Dynamic Media con gli URL OpenAPI più leggibili dall’utente sfruttando 
 
 >[!NOTE]
 >
->Questa funzione è accessibile in disponibilità limitata. Puoi [creare e inviare un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per abilitarlo per la distribuzione.
+>Questa funzione è accessibile in disponibilità limitata. Per iniziare, consulta [questo articolo](/help/assets/vanity-urls.md).
 
 <!--
 
@@ -82,7 +96,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +171,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 

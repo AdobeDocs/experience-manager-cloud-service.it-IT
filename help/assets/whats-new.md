@@ -3,10 +3,10 @@ title: Novità di Content Hub
 description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,21 @@ Il seguente video illustra le funzionalità principali di Content Hub:
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale di Content Hub (2025.8.0) è il 28 agosto 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.9.0) è pianificata per il 25 settembre 2025.
+La data di rilascio della versione funzionale di Content Hub (2025.9.0) è il venerdì 25 settembre 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.10.0) è pianificata per il 30 ottobre 2025.
+
+## Funzioni della versione di settembre {#september-release-features}
+
+**Contrassegna raccolte come preferite**
+
+È ora possibile contrassegnare le raccolte come Preferiti in Content Hub, semplificandone l’organizzazione e il recupero. Una volta aggiunte, le tue raccolte preferite sono comodamente disponibili dalla scheda **[!UICONTROL Preferiti]** nella home page di Content Hub.
+
+**Aggiungi raccolte per accesso rapido**
+
+Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
+
+>[!IMPORTANT]
+>
+>Queste funzioni sono disponibili come funzioni a disponibilità limitata. Puoi [creare e inviare un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per abilitarlo per la distribuzione.
 
 ## Funzioni della versione di agosto {#august-release-features}
 
