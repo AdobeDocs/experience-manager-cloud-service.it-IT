@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -81,7 +81,7 @@ Consulta [Altre opzioni del programma di produzione](#options).
 
 A seconda dei diritti disponibili per l’organizzazione, è possibile che siano disponibili le seguenti opzioni aggiuntive al momento della creazione di un programma di produzione.
 
-### Sicurezza {#security}
+### Protezione {#security}
 
 Se si dispone dei diritti necessari, la scheda **Protezione** verrà visualizzata come prima scheda nella finestra di dialogo **`Set up for production`**.
 
@@ -91,7 +91,7 @@ La scheda **Sicurezza** fornisce le opzioni per attivare **HIPAA** o **Protezion
 
 Conformità HIPAA di Adobe e WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitano la sicurezza basata sul cloud come parte di un approccio multilivello per la protezione contro le vulnerabilità.
 
-* **HIPAA** - Questa opzione abilita l&#39;implementazione della soluzione compatibile con HIPPA di Adobe.
+* **HIPAA** - Questa opzione abilita l&#39;implementazione della soluzione compatibile con HIPAA di Adobe.
    * [Ulteriori informazioni](https://www.adobe.com/trust/compliance/hipaa-ready.html) sull’implementazione della soluzione compatibile HIPAA di Adobe.
    * Impossibile abilitare o disabilitare HIPAA dopo la creazione del programma.
 * **Protezione WAF-DDOS** - Questa opzione abilita il firewall dell&#39;applicazione Web tramite regole per la protezione dell&#39;applicazione.
