@@ -1214,7 +1214,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
