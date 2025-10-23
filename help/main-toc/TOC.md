@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9eeb5286923727e5c50cdcde141d901f43119f7f
+source-git-commit: 98218684e27e3112007cf3fe646b252b36b1b7e3
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6850'
 ht-degree: 96%
 
 ---
@@ -240,8 +240,9 @@ ht-degree: 96%
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + [Anteprima delle note sulla versione per l’editor universale](/help/release-notes/universal-editor/preview.md)
       + 2025 {#2025}
-         + [Note sulla versione 2025.10.09](/help/release-notes/universal-editor/2025/2025-10-02.md)
-         + [Note sulla versione 2025.10.02](/help/release-notes/universal-editor/2025/2025-10-09.md)
+         + [Note sulla versione 2025.10.16](/help/release-notes/universal-editor/2025/2025-10-16.md)
+         + [Note sulla versione 2025.10.09](/help/release-notes/universal-editor/2025/2025-10-09.md)
+         + [Note sulla versione 2025.10.02](/help/release-notes/universal-editor/2025/2025-10-02.md)
          + [Note sulla versione 2025.09.25](/help/release-notes/universal-editor/2025/2025-09-25.md)
          + [Note sulla versione 2025.09.18](/help/release-notes/universal-editor/2025/2025-09-18.md)
          + [Note sulla versione 2025.09.11](/help/release-notes/universal-editor/2025/2025-09-11.md)
@@ -520,7 +521,7 @@ ht-degree: 96%
             + [Traduzione di contenuti per siti multilingue](/help/sites-cloud/administering/translation/overview.md)
             + [Preparazione del contenuto per la traduzione](/help/sites-cloud/administering/translation/preparation.md)
             + [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md)
-            + [Creazione guidata copia lingua](/help/sites-cloud/administering/translation/wizard.md)
+            + [Procedura guidata per creare una copia per lingua](/help/sites-cloud/administering/translation/wizard.md)
             + [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md)
             + [Configurazione del framework di integrazione della traduzione](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Connetti a Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
@@ -805,8 +806,8 @@ ht-degree: 96%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -1213,7 +1214,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)

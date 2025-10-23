@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 13%
+source-wordcount: '2534'
+ht-degree: 14%
 
 ---
 
@@ -203,8 +203,8 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 ![Icona Annulla](assets/undo.png)
 ![Icona Ripristina](assets/redo.png)
 
-* Le operazioni Annulla e Ripeti possono essere eseguite per le modifiche apportate nel contesto, per le modifiche effettuate tramite il pannello Proprietà, nonché per aggiungere, duplicare, spostare ed eliminare blocchi.
-* Le operazioni Annulla e Ripeti sono limitate alla sessione corrente del browser.
+* Annullamento e ripristino possono essere eseguiti per modifiche apportate nel contesto, effettuate tramite il pannello Proprietà, nonché aggiunta, duplicazione, spostamento ed eliminazione di blocchi.
+* Le operazioni Annulla e Ripristina sono limitate alla sessione corrente del browser.
 
 >[!TIP]
 >
@@ -212,7 +212,9 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-Puoi copiare e incollare i componenti che si trovano all&#39;interno di [contenitori](/help/implementing/universal-editor/field-types.md#container) nella stessa scheda del browser. Ciò è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o dispone di filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+
+Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
 ![Icona copia](assets/copy.png)
 ![Icona Incolla](assets/paste.png)
@@ -227,6 +229,8 @@ Puoi copiare e incollare i componenti che si trovano all&#39;interno di [conteni
 >[!TIP]
 >
 >Utilizzare la scelta rapida `Command-C` o `Command-V` rispettivamente per copiare o incollare.
+
+
 
 ## Anteprima del contenuto {#previewing-content}
 
