@@ -212,7 +212,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
