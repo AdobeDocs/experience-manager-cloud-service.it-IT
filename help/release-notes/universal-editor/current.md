@@ -1,10 +1,10 @@
 ---
-title: Note sulla versione 2025.10.23 dell’editor universale
-description: Queste sono le note sulla versione 2025.10.23 dell’editor universale.
+title: Note sulla versione 2025.10.24 dell’editor universale
+description: Queste sono le note sulla versione 2025.10.24 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 63%
@@ -12,9 +12,9 @@ ht-degree: 63%
 ---
 
 
-# Note sulla versione 2025.10.23 dell’editor universale {#release-notes}
+# Note sulla versione 2025.10.24 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 23 ottobre 2025 di Universal Editor.
+Queste sono le note sulla versione del 24 ottobre 2025 di Universal Editor.
 
 >[!TIP]
 >

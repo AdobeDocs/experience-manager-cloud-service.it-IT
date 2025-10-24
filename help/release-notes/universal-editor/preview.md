@@ -3,10 +3,10 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +27,15 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* Da definire
+* Inserisci immagine per nuovo editor Rich Text
+* Nuovo endpoint `/configuration`
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* Da definire
-
+* L’evento di aggiornamento viene ora informato se l’azione è stata annullata.
+* La stringa `No results` ora dipende dalle impostazioni locali del browser nei tag di Universal Editor.
+* È stata corretta un’interruzione di riga aggiuntiva nel pulsante Publish di Universal Editor.
+* La pulizia è stata effettuata per patch API.
+* Il pulsante Seleziona contenuto è ora visibile in Safari.
+* Compilazione RPM corretta.
+* Aggiornamento CORS per evitare di aggiornare nuovamente il testo modificato dopo il salvataggio.
