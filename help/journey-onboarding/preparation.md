@@ -1,17 +1,17 @@
 ---
-title: Preparazione all’onboarding
+title: Preparazione a bordo
 description: Prima dell’inizio del processo di onboarding e di effettuare l’accesso al sistema è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '760'
-ht-degree: 100%
+source-git-commit: 7c79ad402826cd40a25560cdc169b31e95cda6bd
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 69%
 
 ---
 
-# Preparazione all’onboarding {#onboarding-preparation}
+# Preparazione a bordo {#onboarding-preparation}
 
 Ora che sai cosa ti riserva il processo di onboarding poiché hai letto l’articolo [Introduzione al percorso di onboarding di AEM as a Cloud Service](overview.md), tutto è pronto per iniziare. Tuttavia, prima di iniziare il processo di onboarding e di effettuare l’accesso al sistema, è necessario che l’amministratore comprenda una serie di passaggi preparatori.
 
@@ -28,31 +28,34 @@ Dopo aver letto questo documento, comprenderai
 
 Non preoccuparti se non conosci tutti i termini utilizzati in questa pagina. I termini sono illustrati nella parte successiva del percorso.
 
+<!-- REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
 ## Video {#video}
 
-Questo video riassume il processo di onboarding descritto nel percorso ed è concepito come panoramica delle opzioni. Tutti gli argomenti del video sono presentati in dettaglio all’interno del percorso.
+This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431506/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
-## Contratto {#contract}
+-->
+
+## Il tuo contratto {#contract}
 
 L’onboarding su AEM as a Cloud Service inizia con la sottoscrizione di un contratto tra l’organizzazione e Adobe. Il motivo è che il contratto specifica diversi importanti accordi tra Adobe e la tua organizzazione, ad esempio:
 
 * Quali soluzioni e componenti aggiuntivi può utilizzare l’organizzazione.
 * Il numero e i tipi di ambienti a cui è possibile accedere.
 * La data di inizio del servizio.
-* Il livello Premier Support (se applicabile).
+* Livello Premier Support (se applicabile).
 * I contatti per l’onboarding.
 
 Se non conosci questi dettagli, contatta il team che gestisce i contratti nella tua organizzazione.
 
-Dopo aver sottoscritto il contratto, Adobe esegue il provisioning degli ambienti, invia un’e-mail di benvenuto ai contatti dell’onboarding definiti nel contratto e organizza una chiamata per l’onboarding. Questo generalmente avviene circa due giorni dopo la chiusura del contratto, a meno che non sia stata concordata una data di inizio del servizio futura.
+Una volta firmato il contratto, Adobe esegue il provisioning degli ambienti, invia un’e-mail di benvenuto ai contatti per l’onboarding definiti nel contratto e Adobe organizza una chiamata per l’onboarding. Questo flusso di lavoro si verifica generalmente un paio di giorni dopo la chiusura del contratto, a meno che non venga concordata una data di inizio del servizio futura.
 
 ## Provisioning del sistema {#provisioning}
 
-Dopo aver sottoscritto il contratto, Adobe esegue automaticamente il provisioning di tutti gli ambienti cloud di AEM coperti dal contratto. Anche questi ambienti saranno collegati ai programmi in Cloud Manager (ulteriori informazioni su questo argomento sono riportate più avanti nel percorso). Questi ambienti cloud di AEM sono inclusi in ogni abbonamento a AEM as a Cloud Service e sono in genere costituiti da almeno un ambiente di produzione, un ambiente di staging e, facoltativamente, uno o più ambienti di sviluppo o di test.
+Dopo la firma del contratto, Adobe esegue automaticamente il provisioning di tutti gli ambienti cloud AEM coperti dal contratto. Anche questi ambienti sono collegati ai programmi in Cloud Manager (ulteriori informazioni su questo argomento sono disponibili più avanti nel percorso). Ogni abbonamento include ambienti cloud AEM: almeno una produzione, una gestione temporanea e uno sviluppo o test opzionale.
 
-## Chiamata di onboarding {#onboarding-call}
+## Chiamata integrata {#onboarding-call}
 
 Una volta chiuso il contratto, il team di onboarding di Adobe pianifica una chiamata con i rappresentanti della tua organizzazione per discutere delle procedure iniziali.
 
@@ -62,20 +65,20 @@ Devono partecipare le seguenti figure dell’organizzazione:
 * Team tecnico
 * Partner di implementazione
 
-Adobe è rappresentato da:
+Adobe fornisce:
 
-* Specialista dell’onboarding
-* Account manager tecnico (come applicabile)
-* Ingegnere designato per il customer success (come applicabile)
-* Esperti supplementari in materia, secondo necessità
+* Uno specialista dell’onboarding.
+* Account manager tecnico (come applicabile).
+* Ingegnere designato per il customer success (come applicabile).
+* Se necessario, esperti supplementari in materia.
 
 L’obiettivo della chiamata è darti l’opportunità di porre domande, ottenere informazioni sul processo di assistenza e possibilmente visionare il prodotto per la prima volta.
 
 ## E-mail di benvenuto {#welcome-email}
 
-Al termine del processo di provisioning dell’ambiente, l’amministratore di sistema definito nel contratto riceve un’e-mail di benvenuto contenente la conferma di poter accedere a Adobe Experience Cloud. Se stai leggendo questo percorso di documentazione, quella persona probabilmente sei tu.
+Al termine del processo di provisioning dell’ambiente, l’amministratore di sistema definito nel contratto riceve un messaggio e-mail di benvenuto con la conferma di poter accedere a Adobe Experience Cloud. Se stai leggendo questo percorso di documentazione, quella persona probabilmente sei tu.
 
-L’e-mail contiene informazioni dettagliate su come iniziare a utilizzare i servizi Experience Cloud e il portale self-service di Cloud Manager. Inoltre, l’e-mail contiene informazioni importanti su dove cercare risorse di supporto, forum, domande frequenti e molto altro. Nell’elenco delle risorse fornite nell’e-mail, riceverai anche informazioni su come accedere agli ambienti cloud di AEM.
+L’e-mail contiene informazioni dettagliate su come iniziare a utilizzare i servizi Experience Cloud e il portale self-service di Cloud Manager. Inoltre, l’e-mail contiene informazioni importanti su dove cercare risorse di supporto, forum, domande frequenti e molto altro. Nell’elenco delle risorse fornite nell’e-mail, ricevi anche informazioni su come accedere agli ambienti cloud AEM.
 
 >[!TIP]
 >
@@ -90,4 +93,4 @@ Ora dovresti aver acquisito le seguenti nozioni di base:
 * In che modo il contratto influisce sul processo di onboarding.
 * Come prepararti per la chiamata di onboarding.
 
-Ora che conosci questi passaggi preparatori, è quasi tutto pronto per accedere al sistema. Prima di tutto dovrai acquisire alcune informazioni generali sulla struttura di AEM as a Cloud Service dal punto di vista dell’amministratore di sistema e conoscere alcuni termini importanti. Continua e passa alla prossima sezione del percorso: [Terminologia di AEM as a Cloud Service](terminology.md).
+Ora che conosci questi passaggi preparatori, è quasi tutto pronto per accedere al sistema. Inizia con una breve presentazione di AEM as a Cloud Service dal punto di vista dell’amministratore di sistema. Quindi, scopri la terminologia essenziale. Continua e passa alla prossima sezione del percorso: [Terminologia di AEM as a Cloud Service](terminology.md).
