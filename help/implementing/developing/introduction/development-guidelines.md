@@ -239,7 +239,7 @@ Si consiglia di configurare la rete avanzata con un parametro `kind` impostato s
 
 ### Invio di e-mail {#sending-emails}
 
-Utilizzare il servizio OSGI [ del servizio di posta elettronica CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
+Utilizzare il servizio OSGI [&#x200B; del servizio di posta elettronica CQ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
 
 ### Configurazione {#email-configuration}
 
