@@ -4,7 +4,7 @@ description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e l
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 4%
@@ -17,15 +17,15 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/345903?captions=ita" text="Dimostrazione della struttura del pacchetto"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Dimostrazione della struttura del pacchetto"
 
 Questo documento presenta le linee guida per lo sviluppo su AEM as a Cloud Service e sulle differenze importanti tra AEM on-premise e AEM in AMS.
 
 ## Il Codice Deve Essere Basato Su Cluster {#cluster-aware}
 
-Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che sono sempre in esecuzione più istanze. Il codice deve essere resiliente, in particolare in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che sono sempre in esecuzione più istanze. Il codice deve essere resiliente, soprattutto in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
 
-Durante l’aggiornamento di AEM as a Cloud Service, sono presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto vecchio.
+Durante l’aggiornamento di AEM as a Cloud Service, sono presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
 
 Se è necessario identificare l’elemento primario nel cluster, è possibile utilizzare l’API di individuazione Apache Sling per rilevarlo.
 
@@ -37,25 +37,25 @@ Lo stato non deve essere mantenuto in memoria, ma deve essere mantenuto nell’a
 
 Non utilizzare il file system dell’istanza in AEM as a Cloud Service. Il disco è temporaneo e viene eliminato quando le istanze vengono riciclate. È possibile un uso limitato del file system per la memorizzazione temporanea in relazione al trattamento di singole richieste, ma non dovrebbe essere utilizzato impropriamente per file di grandi dimensioni. Questo perché potrebbe avere un impatto negativo sulla quota di utilizzo delle risorse ed essere soggetto a limitazioni del disco.
 
-Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per uno storage a lungo termine.
+Ad esempio, se l’utilizzo del file system non è supportato, il livello di pubblicazione deve garantire che tutti i dati che devono essere mantenuti vengano inviati a un servizio esterno per lo storage a lungo termine.
 
 ## Osservazione {#observation}
 
-Allo stesso modo, con tutto ciò che accade in modo asincrono come agire su eventi di osservazione, non si può garantire che venga eseguito localmente e quindi deve essere utilizzato con cautela. Questo vale sia per gli eventi JCR che per gli eventi della risorsa Sling. Nel momento in cui si verifica una modifica, l’istanza può essere rimossa e sostituita da un’istanza diversa. Altre istanze della topologia attive in quel momento sono in grado di reagire a quell&#39;evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe addirittura non esserci un leader attivo nel caso in cui, al momento dell&#39;evento, si proceda alle elezioni per il leader.
+Allo stesso modo, con tutto ciò che accade in modo asincrono, come agire su eventi di osservazione, non si può garantire che venga eseguito localmente e quindi deve essere utilizzato con cautela. Questo vale sia per gli eventi JCR che per gli eventi della risorsa Sling. Nel momento in cui si verifica una modifica, l’istanza può essere rimossa e sostituita da un’istanza diversa. Altre istanze della topologia attive in quel momento sono in grado di reagire a quell&#39;evento. In questo caso, tuttavia, non si tratterà di un evento locale e potrebbe addirittura non esserci un leader attivo nel caso in cui, al momento dell&#39;evento, si proceda alle elezioni per il leader.
 
 ## Attività in background e processi con esecuzione prolungata {#background-tasks-and-long-running-jobs}
 
-Il codice eseguito come attività in background deve presupporre che l’istanza in cui viene eseguito possa essere disattivata in qualsiasi momento. Pertanto, il codice deve essere resiliente e soprattutto ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe iniziare di nuovo dall’inizio, ma piuttosto vicino a da dove si è interrotto. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM as a Cloud Service è più probabile che venga eliminata un’istanza.
+Il codice eseguito come attività in background deve presupporre che l’istanza in cui viene eseguito possa essere disattivata in qualsiasi momento. Pertanto, il codice deve essere resiliente e, soprattutto, ripristinabile. Ciò significa che se il codice viene rieseguito, non dovrebbe iniziare di nuovo dall’inizio, ma piuttosto vicino al punto in cui è stato interrotto. Anche se questo non è un nuovo requisito per questo tipo di codice, in AEM as a Cloud Service è più probabile che si verifichi un’eliminazione dell’istanza.
 
-Per ridurre al minimo i problemi, è necessario evitare, se possibile, processi con tempi di esecuzione lunghi, che dovrebbero essere almeno ripristinabili. Per eseguire tali processi, utilizza Sling Jobs, che dispongono di una garanzia almeno una volta e quindi, se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare la pianificazione [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), in quanto garantisce l&#39;esecuzione almeno una volta.
+Per ridurre al minimo il problema, è necessario evitare processi con tempi di esecuzione lunghi, se possibile, e riprenderli al minimo. Per eseguire tali processi, utilizza Sling Jobs, che dispongono di una garanzia almeno una volta e quindi, se vengono interrotti, verranno rieseguiti il prima possibile. Ma probabilmente non dovrebbero ricominciare dall&#39;inizio. Per la pianificazione di tali processi, è consigliabile utilizzare la pianificazione [Processi Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), in quanto garantisce l&#39;esecuzione almeno una volta.
 
-Non utilizzare Sling Commons Scheduler per la pianificazione in quanto l’esecuzione non può essere garantita. È solo più probabile che sia programmato.
+Non utilizzare Sling Commons Scheduler per la pianificazione, in quanto l’esecuzione non può essere garantita. È solo più probabile che sia programmato.
 
 Allo stesso modo, con tutto ciò che accade in modo asincrono, come agire su eventi di osservazione (che si tratti di eventi JCR o di eventi di risorse Sling), non può essere garantito che venga eseguito e pertanto deve essere utilizzato con cautela. Questo vale già per le distribuzioni AEM nel presente.
 
 ## Connessioni HTTP in uscita {#outgoing-http-connections}
 
-Si consiglia vivamente che tutte le connessioni HTTP in uscita impostino timeout ragionevoli di connessione e lettura; i valori consigliati sono 1 secondo per il timeout di connessione e 5 secondi per il timeout di lettura. I numeri esatti devono essere determinati in base alle prestazioni del sistema back-end che gestisce queste richieste.
+Si consiglia vivamente che tutte le connessioni HTTP in uscita impostino timeout ragionevoli di connessione e lettura; i valori suggeriti sono 1 secondo per il timeout di connessione e 5 secondi per il timeout di lettura. I numeri esatti devono essere determinati in base alle prestazioni del sistema back-end che gestisce queste richieste.
 
 Per il codice che non applica questi timeout, le istanze di AEM in esecuzione su AEM as a Cloud Service applicheranno un timeout globale. Questi valori di timeout sono di 10 secondi per le chiamate di connessione e di 60 secondi per le chiamate di lettura per le connessioni.
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service supporta solo l’interfaccia utente touch per il codice 
 
 Le librerie e i file binari nativi non devono essere distribuiti o installati in ambienti cloud.
 
-Inoltre, il codice non deve tentare di scaricare file binari nativi o estensioni Java native (ad esempio, JNI) in fase di esecuzione.
+Inoltre, il codice non deve tentare di scaricare binari nativi o estensioni Java native (ad esempio, JNI) in fase di esecuzione.
 
 ## Nessun file binario di streaming tramite AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -111,11 +111,11 @@ Ad esempio, la modifica della definizione di un indice in un archivio di contenu
 
 Per lo sviluppo locale, le voci di registro vengono scritte nei file locali nella cartella `/crx-quickstart/logs`.
 
-Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento della riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento da riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Impostazione del livello di registro**
 
-Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché non è istantaneo, presta attenzione quando abiliti registri dettagliati in ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per modificare più rapidamente il livello del registro.
+Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché non è istantaneo, presta attenzione all’abilitazione di registri dettagliati sugli ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per modificare più rapidamente il livello del registro.
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ I livelli del registro sono i seguenti:
 
 ### Immagini thread {#thread-dumps}
 
-Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, contatta il supporto AEM se sono necessarie immagini thread per il debug di un problema, specificando l’intervallo di tempo esatto.
+Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, ma al momento non possono essere scaricate in modo autonomo. Nel frattempo, se sono necessarie immagini thread per il debug di un problema, contatta il supporto AEM e specifica la finestra di ora esatta.
 
 ## CRX/DE Lite e AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -174,7 +174,7 @@ Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, m
 
 Per lo sviluppo locale, gli sviluppatori hanno accesso completo a CRXDE Lite (`/crx/de`) e alla console Web di AEM (`/system/console`).
 
-Nello sviluppo locale (utilizzando SDK), `/apps` e `/libs` possono essere scritti direttamente in, il che è diverso dagli ambienti Cloud in cui le cartelle di primo livello non sono modificabili.
+Nello sviluppo locale (utilizzando SDK), è possibile scrivere direttamente in `/apps` e `/libs`, che è diverso dagli ambienti Cloud, in cui le cartelle di primo livello non sono modificabili.
 
 ### Strumenti di sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -189,7 +189,7 @@ I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello 
 
 È invece possibile avviare il Browser dell’archivio da AEM as a Cloud Service Developer Console, fornendo una vista in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Per ulteriori informazioni, vedere [Browser repository](/help/implementing/developing/tools/repository-browser.md).
 
-In AEM as a Cloud Service Developer Console sono disponibili una serie di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per gli ambienti RDE, di sviluppo, di stage e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish come segue:
+In AEM as a Cloud Service Developer Console è disponibile un set di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per ambienti RDE, di sviluppo, di staging e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish come segue:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,7 +215,7 @@ Utile anche per il debug, AEM as a Cloud Service Developer Console dispone di un
 
 ![Console sviluppo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi di produzione, l’accesso a AEM as a Cloud Service Developer Console è definito dal &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console, mentre per i programmi sandbox, AEM as a Cloud Service Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che gli consente di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e il browser dell’archivio e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di authoring e pubblicazione per visualizzare i dati di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=it).
+Per i programmi di produzione, l’accesso a AEM as a Cloud Service Developer Console è definito dal &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console, mentre per i programmi sandbox, AEM as a Cloud Service Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che gli consente di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e il browser dell’archivio e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di authoring e pubblicazione per visualizzare i dati di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitoraggio delle prestazioni {#performance-monitoring}
 
@@ -235,17 +235,17 @@ Per impostazione predefinita, le porte utilizzate per l’invio delle e-mail son
 
 Si consiglia di configurare la rete avanzata con un parametro `kind` impostato su `flexiblePortEgress`, in quanto Adobe può ottimizzare le prestazioni del traffico in uscita dalla porta flessibile. Se è necessario un indirizzo IP in uscita univoco, scegliere un parametro `kind` di `dedicatedEgressIp`. Se hai già configurato la VPN per altri motivi, puoi utilizzare anche l’indirizzo IP univoco fornito dalla variante di rete avanzata.
 
-È necessario inviare messaggi di posta elettronica tramite un server di posta anziché direttamente ai client di posta elettronica. In caso contrario, le e-mail potrebbero essere bloccate.
+È necessario inviare un messaggio e-mail tramite un server di posta anziché direttamente ai client di posta elettronica. In caso contrario, le e-mail potrebbero essere bloccate.
 
 ### Invio di e-mail {#sending-emails}
 
-Utilizzare il servizio OSGI [&#x200B; del servizio di posta CQ di &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it#configuring-the-mail-service) Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
+Utilizzare il servizio OSGI [ del servizio di posta elettronica CQ ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
 
 ### Configurazione {#email-configuration}
 
-Le e-mail in AEM devono essere inviate utilizzando il servizio OSGi del servizio di posta CQ [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it#configuring-the-mail-service).
+Le e-mail in AEM devono essere inviate utilizzando il servizio OSGi del servizio di posta CQ [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, consulta la [documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it). Per AEM as a Cloud Service, prendere nota delle seguenti modifiche necessarie al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
+Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, consulta la [documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html). Per AEM as a Cloud Service, prendere nota delle seguenti modifiche necessarie al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
 
 * Il nome host del server SMTP deve essere impostato su $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * La porta del server SMTP deve essere impostata sul valore della porta proxy originale impostata nel parametro portForwards utilizzato nella chiamata API durante la configurazione della rete avanzata. Ad esempio, 30465 (anziché 465)
