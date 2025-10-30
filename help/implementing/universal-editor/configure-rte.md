@@ -3,13 +3,13 @@ title: Configurazione dell’editor Rich Text per l’editor universale
 description: Scopri come configurare l’editor Rich Text nell’editor universale.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # Configurazione dell’editor Rich Text per l’editor universale {#configure-rte}
 
@@ -73,7 +73,7 @@ La configurazione della barra degli strumenti controlla quali opzioni di modific
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ Le azioni di collegamento supportano il controllo degli attributi di destinazion
 * `hideTarget`: `true` - Escludi completamente l&#39;attributo di destinazione dai collegamenti
 
 L&#39;azione `unlink` viene visualizzata solo quando il cursore si trova all&#39;interno di un collegamento esistente. Rimuove la formattazione del collegamento mantenendo il contenuto del testo.
+
+### Azioni immagine {#image}
+
+Le azioni relative alle immagini supportano il wrapping degli elementi immagine per generare un markup dinamico per le immagini. Sono disponibili le seguenti sezioni.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Opzioni di configurazione immagine {#image-options}
+
+* `wrapInPicture`: `false` (predefinito) - Genera `<img>` elementi semplici
+* `wrapInPicture`: `true` - Racchiudi immagini negli elementi `<picture>` per la progettazione reattiva
 
 ### Altre azioni {#other}
 

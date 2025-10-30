@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.10.24 dell’editor universale
-description: Queste sono le note sulla versione 2025.10.24 dell’editor universale.
+title: Note sulla versione 2025.10.30 dell’editor universale
+description: Queste sono le note sulla versione 2025.10.30 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 63%
+source-wordcount: '224'
+ht-degree: 58%
 
 ---
 
 
-# Note sulla versione 2025.10.24 dell’editor universale {#release-notes}
+# Note sulla versione 2025.10.30 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 24 ottobre 2025 di Universal Editor.
+Queste sono le note sulla versione del 30 ottobre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Queste sono le note sulla versione del 24 ottobre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [È ora possibile copiare e incollare](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) in più schede del browser.
-   * Limitato a tra schede aperte contemporaneamente.
-   * La copia del contenuto e l’apertura di una nuova scheda non sono supportate.
-* È ora possibile disattivare il pulsante Annulla pubblicazione con un tag [meta.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* [Il nuovo editor Rich Text](#new-rte) ora può inserire immagini.
+   * Questa funzionalità è disabilitata e deve essere abilitata in modo esplicito tramite una definizione di filtro [.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -41,6 +39,10 @@ Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra
 
 ## Altri miglioramenti {#other-improvements}
 
-* L’albero della struttura è stato migliorato.
-* Le immagini collegate sono ora supportate.
-* Sono stati apportati miglioramenti alle operazioni Annulla/Ripristina.
+* L’evento di aggiornamento viene ora informato se l’azione è stata annullata.
+* La stringa `No results` ora dipende dalle impostazioni locali del browser nei tag di Universal Editor.
+* È stata corretta un’interruzione di riga aggiuntiva nel pulsante Publish di Universal Editor.
+* La pulizia è stata effettuata per patch API.
+* Il pulsante Seleziona contenuto è ora visibile in Safari.
+* Compilazione RPM corretta.
+* Aggiornamento CORS per evitare di aggiornare nuovamente il testo modificato dopo il salvataggio.
