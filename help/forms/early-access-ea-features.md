@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 20%
 
 ---
@@ -122,6 +122,17 @@ Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la
 * **Tipi di carattere personalizzati:** incorpora tipi di carattere personalizzati o approvati dall&#39;organizzazione per garantire un rendering PDF coerente e personalizzato tra i dispositivi.
 * **Importa ed esporta:** Esegui la migrazione e riutilizza la comunicazione interattiva con i relativi frammenti e modelli di dati in ambienti diversi.
 
+* **Blocco modello**: blocca contenuto ed elementi di layout all&#39;interno dei modelli per mantenere l&#39;integrità del marchio ed evitare modifiche non autorizzate.
+
+* **Overflow del contenuto**: opzione &quot;Consenti interruzioni di pagina all&#39;interno del contenuto&quot; per i layout con flusso per una modifica ottimale di più pagine e una migliore gestione del testo per i documenti complessi.
+
+* **Modifica file XDP**: è ora possibile modificare i file XDP in un browser anziché in Forms Designer che viene eseguito solo sul desktop Microsoft Windows.
+
+##### Numerazione dinamica delle pagine
+
+Visualizza automaticamente &quot;Pagina # di ##&quot; nelle pagine master per una paginazione chiara e coerente nei documenti a più pagine.
+
+
 
 #### Casi d’uso:
 
@@ -166,7 +177,7 @@ Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/
 
 Accelera lo sviluppo di AEM Forms Edge Delivery Services con lo strumento AEM Forms CLI. Questa interfaccia della riga di comando consente di generare immediatamente il codice e il cablaggio necessari per avviare lo sviluppo di componenti personalizzati, senza problemi o problemi.
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Funzionalità chiave:**
 

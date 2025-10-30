@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2021'
 ht-degree: 35%
 
 ---
@@ -35,7 +35,7 @@ Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto 
 >* utilizzo di [Frammenti di contenuto per l&#39;authoring delle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
-I frammenti di contenuto contengono contenuto strutturato:
+I frammenti di contenuto contengono contenuti strutturati:
 
 * Ogni frammento è basato su un [Modello per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
    * Il [Modello per frammenti di contenuto definisce la struttura](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) del frammento risultante.
@@ -103,6 +103,7 @@ Dopo la creazione dei frammenti, puoi:
 * [Analizza](/help/sites-cloud/administering/content-fragments/analysis.md) la struttura del frammento di contenuto, utilizzando l&#39;editor
 * [Accedi ai tuoi frammenti con GraphQL per la consegna headless nelle tue applicazioni](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrare e utilizzare i frammenti di contenuto in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* Crea e gestisci [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Oppure utilizza i tuoi frammenti per creare le pagine](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -158,7 +159,7 @@ Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utiliz
 
 La consegna viene effettuata in formato JSON utilizzando il modulo di esportazione JSON.
 
-I frammenti di contenuto di AEM possono essere utilizzati per descrivere e gestire contenuti strutturati. Il contenuto strutturato è definito in modelli che possono contenere diversi tipi di contenuto, compresi testo, dati numerici, dati booleani, data e ora e altro ancora.
+I frammenti di contenuto di AEM possono essere utilizzati per descrivere e gestire contenuti strutturati. I contenuti strutturati vengono definiti in modelli che possono contenere diversi tipi di contenuto, compresi testo, dati numerici, dati booleani, data e ora e altro ancora.
 
 Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali contenuti strutturati possono quindi essere utilizzati per consegnare contenuti AEM a canali diversi dalle pagine AEM.
 
@@ -183,7 +184,7 @@ I frammenti di contenuto sono:
 
 * Accessibile per la distribuzione dei contenuti tramite l&#39;[API GraphQL di AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponibile nell&#39;editor di pagine [&#x200B; tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Disponibile nell&#39;editor di pagine [ tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è disponibile per gli autori di pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 

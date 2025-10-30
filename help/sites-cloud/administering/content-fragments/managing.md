@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2927'
 ht-degree: 36%
 
 ---
@@ -63,7 +63,9 @@ Nella console puoi osservare tre aree principali:
    * Qui puoi nascondere o visualizzare la struttura delle cartelle
    * Puoi selezionare un ramo specifico della struttura
    * Può essere ridimensionato per mostrare le cartelle nidificate
-   * Oltre ai frammenti di contenuto, puoi visualizzare [modelli di frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); puoi anche comprimere o espandere i collegamenti ai pannelli
+   * Oltre ai frammenti di contenuto, puoi:
+      * Visualizza [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) o [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Puoi anche comprimere o espandere i collegamenti ai pannelli
+      * Crea e gestisci [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * Pannello principale/destro; da qui puoi:
    * Visualizza l’elenco di tutti i frammenti di contenuto nel ramo selezionato della struttura:
       * Verranno visualizzati i frammenti di contenuto della cartella selezionata e tutte le cartelle secondarie:

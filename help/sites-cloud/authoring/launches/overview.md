@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 76%
+source-wordcount: '1027'
+ht-degree: 73%
 
 ---
 
@@ -18,13 +18,11 @@ In Adobe Experience Manager (AEM) as a Cloud Service, Launches consente di svilu
 
 Viene creato un *lancio* per consentire di apportare modifiche in preparazione alla pubblicazione futura, mantenendo al contempo il contenuto corrente. Per le pagine AEM, questo significa che stai modificando in modo efficace due versioni contemporaneamente: pagine attualmente pubblicate e una versione di tali pagine, da pubblicare in futuro. Una volta arrivato questo momento, puoi sostituire le pagine originali e pubblicare le nuove versioni.
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>Sono disponibili anche lanci per Frammenti di contenuto. I concetti di base sono gli stessi, ma esistono differenze nella loro gestione in AEM.
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Per informazioni dettagliate, consulta [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 Hai creato un *lancio*, quindi dopo aver modificato e aggiornato le tue *pagine di lancio* le hai *promosse* di nuovo al *Source*. Puoi quindi attivare queste *pagine Source* (livello principale). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
@@ -115,13 +113,11 @@ I lanci ti consentono di:
 
 ## La console Lanci {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>Questa console è solo per i lanci per le pagine.
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>Per gestire i frammenti di contenuto, vedi [Avvii per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 La console Lanci fornisce una panoramica dei lanci e consente di agire su quelli elencati.
 
