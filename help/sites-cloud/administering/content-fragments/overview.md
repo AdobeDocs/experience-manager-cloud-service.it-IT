@@ -184,7 +184,7 @@ I frammenti di contenuto sono:
 
 * Accessibile per la distribuzione dei contenuti tramite l&#39;[API GraphQL di AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponibile nell&#39;editor di pagine [ tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Disponibile nell&#39;editor di pagine [&#x200B; tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è disponibile per gli autori di pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 

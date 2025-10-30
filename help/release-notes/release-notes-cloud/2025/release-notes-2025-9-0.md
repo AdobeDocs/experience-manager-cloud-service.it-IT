@@ -170,7 +170,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 
