@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 98218684e27e3112007cf3fe646b252b36b1b7e3
+source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
 workflow-type: tm+mt
-source-wordcount: '6850'
-ht-degree: 96%
+source-wordcount: '6877'
+ht-degree: 95%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 96%
    + [Novità?](/help/release-notes/what-is-new.md)
    + [Modifiche di rilievo in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md)
-   + [Canale Prerelease](/help/release-notes/prerelease.md)
+   + [Canale pre-release](/help/release-notes/prerelease.md)
 + Sicurezza {#security}
    + [Panoramica sulla sicurezza per AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
    + [Configurazione di networking avanzato per AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
@@ -806,8 +806,8 @@ ht-degree: 96%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -1004,6 +1004,10 @@ ht-degree: 96%
       + [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [Aggiungere caratteri personalizzati all’editor di comunicazione interattiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [Anteprima PDF nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+      + [Blocco modello nell’editor di comunicazione interattiva](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+      + [Numerazione dinamica delle pagine nell’editor di comunicazione interattiva](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+      + [Gestione dell’overflow dei contenuti nell’editor di comunicazioni interattive](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+      + [Supporto per la modifica XDP nell’Editor di comunicazione interattiva](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
       + [Domande frequenti](/help/forms/interactive-communications-faq.md)
    + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
       + [Introduzione al flusso di lavoro incentrato su moduli](/help/forms/aem-forms-workflow.md)
@@ -1116,7 +1120,7 @@ ht-degree: 96%
          + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
          + [Componente CIF Live Search](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
          + [Componente CIF popover Live Search](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
-         + [Soluzione Commerce di terze parti](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+         + [Soluzione di terze parti per l’e-commerce](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
          + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
       + Vetrina digitale AEM {#storefront}
          + [Guida introduttiva](/help/commerce-cloud/cif-storefront/getting-started.md)
@@ -1214,7 +1218,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
