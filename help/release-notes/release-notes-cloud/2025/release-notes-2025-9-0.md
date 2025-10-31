@@ -3,10 +3,10 @@ title: Note sulla versione 2025.9.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.9.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 Il passaggio del workflow Invoke del modello dati modulo ora supporta la gestione dei metadati lato workflow per gli array di allegati con codifica Base64 nei modelli dati modulo basati su elenco SharePoint. Con questo miglioramento, il passaggio del workflow può trasmettere, archiviare e recuperare metadati quali nome file, tipo MIME e proprietà personalizzate per ogni allegato. Questa funzionalità consente una gestione dei dati più completa e agevola l’integrazione diretta a valle. Per informazioni dettagliate, vedere [Supporto avanzato nel passaggio del workflow Invoke del modello dati modulo per allegati dell&#39;elenco SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-### Funzioni pre-release in AEM Forms
-
-**Miglioramenti dell’editor di regole**
-
-L’editor di regole ora supporta la navigazione avanzata e consente l’utilizzo di funzioni ed espressioni matematiche nei parametri di input.
-
-**Navigazione migliorata con supporto payload evento**
-
-Ora l&#39;azione `Navigate To` nei gestori del servizio Invoke supporta `EVENT_PAYLOAD`, consentendo agli autori di moduli di configurare azioni di follow-up in base alle risposte degli eventi. Questo miglioramento offre una maggiore flessibilità nella progettazione dei workflow dopo l’invio, garantendo transizioni più fluide ed esperienze utente più personalizzate. Per ulteriori informazioni, vedere [Navigazione migliorata con supporto payload evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Supporto di funzioni ed espressioni matematiche nei parametri di input**
-
-I parametri di input ora supportano sia le chiamate di funzione che le espressioni matematiche, consentendo agli autori dei moduli di trasmettere direttamente i valori calcolati in modo dinamico. Questo miglioramento semplifica le configurazioni delle regole, elimina la necessità di campi aggiuntivi e rende i moduli più adattabili a scenari logici complessi e basati su calcoli. Per ulteriori informazioni, vedere [Supporto di funzioni ed espressioni matematiche nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità uni
 
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Anteprima PDF nell&#39;editor di comunicazione interattiva**
+* **Anteprima PDF nell&#39;editor di comunicazione interattiva**
 
-Gli utenti possono visualizzare in anteprima i PDF di comunicazione interattiva senza dati, con file di dati JSON locali o con dati provenienti da un modello di dati, consentendo test flessibili basati sui dati. Per ulteriori informazioni, vedere [Anteprima PDF nell&#39;editor di comunicazione interattiva](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Gli utenti possono visualizzare in anteprima i PDF di comunicazione interattiva senza dati, con file di dati JSON locali o con dati provenienti da un modello di dati, consentendo test flessibili basati sui dati. Per ulteriori informazioni, vedere [Anteprima PDF nell&#39;editor di comunicazione interattiva](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Supporto di font personalizzati nella comunicazione interattiva**
+* **Supporto di font personalizzati nella comunicazione interattiva**
 
-La funzione Font personalizzati consente agli utenti di incorporare font personalizzati o approvati dall’organizzazione nelle comunicazioni interattive, garantendo un rendering PDF coerente e personalizzato su dispositivi e piattaforme. Per ulteriori informazioni, vedere [Supporto di font personalizzati nella comunicazione interattiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  La funzione Font personalizzati consente agli utenti di incorporare font personalizzati o approvati dall’organizzazione nelle comunicazioni interattive, garantendo un rendering PDF coerente e personalizzato su dispositivi e piattaforme. Per ulteriori informazioni, vedere [Supporto di font personalizzati nella comunicazione interattiva](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-**Importare ed esportare comunicazioni interattive**
+* **Importare ed esportare comunicazioni interattive**
 
-Questa funzione consente la migrazione e il riutilizzo delle comunicazioni interattive in ambienti diversi. Ora è possibile esportare una comunicazione interattiva con i frammenti e i modelli di dati associati da un ambiente e importarla in un altro. Per ulteriori informazioni, vedere [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Questa funzione consente la migrazione e il riutilizzo delle comunicazioni interattive in ambienti diversi. Ora è possibile esportare una comunicazione interattiva con i frammenti e i modelli di dati associati da un ambiente e importarla in un altro. Per ulteriori informazioni, vedere [Importare ed esportare comunicazioni interattive](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
+* **Miglioramenti dell’editor di regole**
+
+  L’editor di regole ora supporta la navigazione avanzata e consente l’utilizzo di funzioni ed espressioni matematiche nei parametri di input.
+
+   * **Navigazione avanzata con supporto payload eventi**: l&#39;azione `Navigate To` nei gestori del servizio Invoke ora supporta `EVENT_PAYLOAD`, consentendo agli autori dei moduli di configurare azioni di follow-up in base alle risposte agli eventi. Questo miglioramento offre una maggiore flessibilità nella progettazione dei workflow dopo l’invio, garantendo transizioni più fluide ed esperienze utente più personalizzate. Per ulteriori informazioni, vedere [Navigazione migliorata con supporto payload evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+   * **Supporto di funzioni ed espressioni matematiche nei parametri di input**: i parametri di input ora supportano sia le chiamate di funzioni che le espressioni matematiche, consentendo agli autori di moduli di trasmettere direttamente i valori calcolati in modo dinamico. Questo miglioramento semplifica le configurazioni delle regole, elimina la necessità di campi aggiuntivi e rende i moduli più adattabili a scenari logici complessi e basati su calcoli. Per ulteriori informazioni, vedere [Supporto di funzioni ed espressioni matematiche nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Nuova versione di AEM Developer Tools per Eclipse {#aem-develeper-tools-for-eclipse}
 

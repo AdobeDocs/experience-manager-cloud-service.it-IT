@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 20%
+source-wordcount: '3076'
+ht-degree: 19%
 
 ---
 
@@ -177,7 +177,7 @@ Pronto per iniziare? La documentazione [Introduzione a HTML5 forms](/help/forms/
 
 Accelera lo sviluppo di AEM Forms Edge Delivery Services con lo strumento AEM Forms CLI. Questa interfaccia della riga di comando consente di generare immediatamente il codice e il cablaggio necessari per avviare lo sviluppo di componenti personalizzati, senza problemi o problemi.
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Funzionalità chiave:**
 
@@ -302,7 +302,11 @@ L’archiviazione dei PDF in Azure Blob Storage consente la gestione centralizza
 
 ### Miglioramenti nell’Editor di regole visive
 
-* L&#39;editor di regole visive in Forms adattivo ora supporta l&#39;integrazione di [API diretta senza richiedere un modello dati modulo](/help/forms/api-integration-in-rule-editor.md). Puoi connetterti a un endpoint API immettendo il relativo URL JSON o importando la configurazione utilizzando un comando cURL. Dopo l&#39;integrazione, l&#39;API può essere richiamata utilizzando l&#39;azione `Invoke Service`.
+* [Integrazione API diretta](/help/forms/api-integration-in-rule-editor.md): l&#39;editor di regole visive in Forms adattivo ora supporta l&#39;integrazione API diretta senza richiedere un modello dati modulo. Puoi connetterti a un endpoint API immettendo il relativo URL JSON o importando la configurazione utilizzando un comando cURL. Dopo l&#39;integrazione, l&#39;API può essere richiamata utilizzando l&#39;azione `Invoke Service`.
+
+* [Navigazione avanzata con supporto payload eventi](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): l&#39;azione **Accedi a** nei gestori del servizio Invoke supporta `EVENT_PAYLOAD`, consentendo agli autori dei moduli di configurare azioni di follow-up in base alle risposte agli eventi.
+
+* [Supporto di funzioni ed espressioni matematiche nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): i parametri di input ora supportano sia le chiamate di funzioni che le espressioni matematiche, consentendo agli autori di moduli di trasmettere direttamente i valori calcolati in modo dinamico.
 
 ## Consulta anche
 
