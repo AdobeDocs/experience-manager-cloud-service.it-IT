@@ -37,4 +37,4 @@ La funzione per tipi di carattere personalizzati consente di migliorare l&#39;as
 >[!NOTE]
 >
 > Per i passaggi di configurazione dettagliati, gli utenti possono seguire la guida [Utilizzare font personalizzati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> >Dopo aver completato i passaggi e aver eseguito la pipeline, i font personalizzati sono disponibili per l’uso diretto nell’Editor di comunicazione interattiva.
+> &#x200B;>Dopo aver completato i passaggi e aver eseguito la pipeline, i font personalizzati sono disponibili per l’uso diretto nell’Editor di comunicazione interattiva.
