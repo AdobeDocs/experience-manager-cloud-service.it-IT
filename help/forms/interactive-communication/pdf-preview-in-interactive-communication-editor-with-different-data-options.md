@@ -50,7 +50,7 @@ Visualizza in anteprima le comunicazioni interattive senza dati, dati locali o d
 
 +++&#x200B;2. Anteprima con dati JSON locali
 
-2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
+2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
 
 2.2. Nell&#39;editor IC, passare a **Anteprima PDF** > Utilizzo dei dati locali.
 
