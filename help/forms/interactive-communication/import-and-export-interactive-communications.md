@@ -4,10 +4,7 @@ description: Importazione ed esportazione di comunicazioni interattive consente 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 14%
@@ -39,7 +36,7 @@ Creare una comunicazione interattiva (IC) in un ambiente e riutilizzarla in un a
 
 +++&#x200B;1. Come esportare la comunicazione interattiva
 
-1.1. Selezionare una [comunicazione interattiva creata](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
+1.1. Selezionare una [comunicazione interattiva creata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC).
 1.2. Fai clic sull&#39;opzione **Scarica** per esportarla come file ZIP.
 1.3. Il file ZIP scaricato include l&#39;IC insieme al relativo **modello**, **frammenti** e **modello dati** selezionato.
 

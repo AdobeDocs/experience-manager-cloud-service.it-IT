@@ -4,10 +4,7 @@ description: La gestione dell'overflow dei contenuti nell'Editor comunicazioni i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 16%
@@ -27,8 +24,7 @@ ht-degree: 16%
 
 ## Introduzione
 
-La funzione Gestione dell&#39;overflow del contenuto nell&#39;Editor comunicazioni interattive migliora il comportamento del testo all&#39;interno dei layout con flusso e posizionamento.
-Garantisce una fluida continuità dei contenuti per i layout a flusso continuo e fornisce avvisi visivi per i layout posizionati, offrendo agli autori un controllo migliore e una maggiore flessibilità nella progettazione delle comunicazioni.
+La funzione Gestione dell&#39;overflow del contenuto nell&#39;Editor comunicazioni interattive migliora il comportamento del testo all&#39;interno dei layout con flusso e posizionamento. Garantisce una fluida continuità dei contenuti per i layout a flusso continuo e fornisce avvisi visivi per i layout posizionati, offrendo agli autori un controllo migliore e una maggiore flessibilità nella progettazione delle comunicazioni.
 
 ## Funzionalità principali
 
