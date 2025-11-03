@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 78%
+source-wordcount: '832'
+ht-degree: 77%
 
 ---
 
@@ -110,10 +110,6 @@ Per ulteriori dettagli, consulta l’[`aem-testing-clients`archivio GitHub.](htt
 | Timeout | 30 min | Il limite di tempo dopo il quale il test viene interrotto. |
 | Durata consigliata | 15 min | Adobe consiglia di non richiedere più tempo alla scrittura dei test. |
 
->[!NOTE]
->
-> Se hai bisogno di più risorse, crea un caso per l’Assistenza clienti e descrivi il tuo caso d’uso. Il team di Adobe esamina la tua richiesta e fornisce assistenza adeguata.
-
 #### Dipendenze
 
 * aem-cloud-testing-client:
@@ -131,7 +127,7 @@ Le modifiche imminenti all&#39;infrastruttura containerizzata per l&#39;esecuzio
 >[!NOTE]
 >
 >Questa modifica deve essere eseguita prima del 6 aprile 2024.
->&#x200B;>Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
+>Se non si aggiorna la libreria di dipendenze, possono verificarsi errori di pipeline nel passaggio &quot;Test funzionali personalizzato&quot;.
 
 ### Esecuzione locale dei test {#local-test-execution}
 
