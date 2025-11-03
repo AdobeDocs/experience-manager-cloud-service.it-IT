@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e5e33c9e5be7882f481d9ec66c84c87093c062a3
+source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
 workflow-type: tm+mt
-source-wordcount: '6886'
+source-wordcount: '6896'
 ht-degree: 95%
 
 ---
@@ -578,6 +578,7 @@ ht-degree: 95%
       + [Gestisci pubblicazione](/help/assets/manage-publication.md)
       + [Anteprima delle risorse 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Abilita tag avanzati per immagini](/help/assets/smart-tags.md)
+      + [Migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Tag avanzati per video](/help/assets/smart-tags-for-videos.md)
       + [Organizzare le risorse](/help/assets/organize-assets.md)
       + [Utilizzare [!DNL Adobe Stock] risorse](/help/assets/aem-assets-adobe-stock.md)
@@ -717,6 +718,7 @@ ht-degree: 95%
       + [Cercare e individuare le risorse](/help/assets/search-assets-view.md)
       + [Filtri di ricerca personalizzati](/help/assets/custom-search-filters.md)
       + [Attività di gestione risorse](/help/assets/manage-organize-assets-view.md)
+      + [Metadati generati da IA](/help/assets/ai-generated-metadata-assets-view.md)
       + [Modificare le immagini](/help/assets/edit-images-assets-view.md)
       + [Modificare i video](/help/assets/edit-videos-assets-view.md)
       + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
@@ -808,8 +810,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -1220,7 +1222,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
