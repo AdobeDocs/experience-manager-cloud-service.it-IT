@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 38%
+source-wordcount: '1595'
+ht-degree: 37%
 
 ---
 
@@ -47,7 +47,7 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
    * **Licenza** che accede alla [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md).
    * Il valore predefinito delle schede è Chiuso e può essere visualizzato utilizzando ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) nell&#39;intestazione [Cloud Manager](#cloud-manager-header).
 1. [Statistiche e invito all’azione](#statistics) per una panoramica dell’attività recente
-1. Sezione [**Programmi personali** &#x200B;](#my-programs-section) con una panoramica di tutti i programmi
+1. Sezione [**Programmi personali** ](#my-programs-section) con una panoramica di tutti i programmi
 1. [Collegamenti rapidi](#quick-links-section) per accedere facilmente alle risorse correlate.
 
 >[!TIP]
@@ -58,20 +58,16 @@ La console Programmi personali fornisce una panoramica di tutti i programmi a cu
 
 Sono disponibili due barre degli strumenti una sopra l’altra.
 
-#### Intestazione di Cloud Manager {#cloud-manager-header}
+#### Barra di navigazione superiore di Experience Platform {#cloud-manager-header}
 
-La prima è l’intestazione di Cloud Manager, che è persistente quando ti sposti in Cloud Manager. Si tratta di un ancoraggio che consente di accedere alle impostazioni e alle informazioni applicabili ai diversi programmi di Cloud Manager.
+La prima è la barra di navigazione superiore di Experience Platform, che è persistente durante la navigazione in Cloud Manager. Si tratta di un ancoraggio che consente di accedere alle impostazioni e alle informazioni applicabili ai diversi programmi di Cloud Manager.
 
-![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
+![Barra di navigazione superiore di Experience Platform](assets/experience-cloud-header.png)
 
-1. Fai clic su ![Mostra icona menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostra o nascondi menu laterale) per accedere a una serie di schede che possono portare a parti specifiche di un singolo programma. In alternativa, è possibile passare dalla console [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md) alla console **[Programmi personali](#my-programs-console)** a seconda del contesto.
-1. Fai clic sul pulsante Adobe Cloud Manager per tornare alla console Programmi di Cloud Manager, ovunque ti trovi in Cloud Manager.
-1. Fai clic su **Feedback** per fornire ad Adobe un feedback su Cloud Manager.
-1. Fare clic sul selettore organizzazione per visualizzare l&#39;organizzazione a cui si è attualmente connessi (in questo esempio, Foundation Internal). Fai clic per passare a un’altra organizzazione se il tuo Adobe ID è associato a più di una.
-1. Fai clic sull&#39;icona ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (cambio soluzioni) per passare rapidamente ad altre soluzioni Experience Cloud.
-1. Fai clic sull&#39;![icona Aiuto](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) per accedere rapidamente alle risorse di apprendimento e supporto.
-1. Fai clic su ![icona campana](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifiche](/help/implementing/cloud-manager/notifications.md)) per visualizzare, tra le altre cose, notifiche e annunci.
-1. Fai clic sull’icona che rappresenta l’accesso degli utenti alle impostazioni utente. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
+* L&#39;icona ![Mostra menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostra o nascondi menu laterale) consente di accedere a una serie di schede che consentono di accedere a parti specifiche di un singolo programma. In alternativa, è possibile passare dalla console [Dashboard delle licenze](/help/implementing/cloud-manager/license-dashboard.md) alla console **[Programmi personali](#my-programs-console)** a seconda del contesto.
+* L&#39;icona ![Bell](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifiche](/help/implementing/cloud-manager/notifications.md)) consente di accedere, tra le altre cose, a notifiche e annunci.
+
+Per ulteriori dettagli sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform.](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Barra degli strumenti del programma {#program-toolbar}
 
@@ -126,7 +122,7 @@ Una scheda (o riga in una tabella) rappresenta ogni programma, fornendo una pano
 * Nome assegnato al programma. L’immagine qui sopra mostra &quot;SecurBank Sample&quot; come nome del programma.
 * Tipo di servizio:
    * **Experience Manager Cloud** — per programmi AEM as a Cloud Service
-   * **Experience Manager** — per [programmi AMS (Adobe Managed Services)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — per [programmi AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo di programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produzione
@@ -153,7 +149,7 @@ L&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_22/Smock_M
 * Passa a una particolare ![icona dati](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [ambiente](/help/implementing/cloud-manager/manage-environments.md) del programma
 * Apri l&#39;![icona Panoramica programma](/help/implementing/cloud-manager/assets/program-overview.svg) [Panoramica programma](#program-overview)
 * ![Icona Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Modifica il programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Icona Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Elimina un programma sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

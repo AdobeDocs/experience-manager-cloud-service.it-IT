@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 19%
+source-wordcount: '1818'
+ht-degree: 18%
 
 ---
+
 
 # Accesso e navigazione nell’editor universale {#navigating}
 
@@ -71,49 +72,17 @@ L’interfaccia utente è divisa in queste aree principali.
 >
 >Universal Editor offre numerose [opzioni di personalizzazione](/help/implementing/universal-editor/customizing.md) e [punti di estensione](/help/implementing/universal-editor/extending.md) che possono essere modificati e aggiunti alle funzionalità dell&#39;editor. Per questo motivo, potresti vedere opzioni diverse da quelle standard qui documentate.
 
-### Intestazione di Experience Cloud {#experience-cloud-header}
+### Barra di navigazione superiore di Experience Platform {#experience-cloud-header}
 
-L’intestazione di Experience Cloud è sempre presente nella parte superiore dello schermo. È un ancoraggio che indica dove ti trovi all’interno di Experience Cloud e ti aiuta a passare ad altre app di Experience Cloud.
+La barra di navigazione superiore di Experience Platform è sempre presente nella parte superiore dello schermo. È un ancoraggio che indica dove ti trovi all’interno di Experience Cloud e ti aiuta a passare ad altre app di Experience Cloud.
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-Seleziona il collegamento Adobe Experience Cloud a sinistra dell&#39;intestazione per passare alla directory principale della tua soluzione Experience Manager e accedere a strumenti come [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e [Distribuzione software](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home).
-
-![Pulsante di navigazione globale](assets/global-navigation.png)
-
-#### Organizzazione {#organization}
-
-Viene visualizzata l’organizzazione in cui hai effettuato l’accesso. Seleziona questa opzione per passare a un’altra organizzazione se l’Adobe ID è associata a più.
-
-![Indicatore dell’organizzazione](assets/organization.png)
-
-#### Centro assistenza {#help}
-
-L’icona del centro assistenza consente di accedere rapidamente alle risorse di apprendimento e supporto.
-
-![Aiuto](assets/help.png)
-
-#### Notifiche {#notifications}
-
-Questa icona è contrassegnata con il numero di [notifiche](/help/implementing/cloud-manager/notifications.md) incomplete attualmente assegnate.
-
-![Notifiche](assets/notifications.png)
-
-#### App {#solutions}
-
-Toccando o facendo clic sul commutatore dell’app puoi passare rapidamente ad altre soluzioni Experience Cloud.
-
-![Commutatore app](assets/solutions.png)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
-Seleziona l’icona che rappresenta l’utente per accedere alle impostazioni del tuo account. Se non hai configurato un’immagine utente, viene assegnata un’icona in modo casuale.
-
-![Proprietà utente](assets/user-properties.png)
-
-Toccando o facendo clic sull’icona dell’account si apre un menu con le impostazioni utente. Queste impostazioni si applicano a Cloud Manager in generale e le sue funzioni sono descritte in dettaglio [nella documentazione.](/help/implementing/cloud-manager/navigation.md)
+Toccando o facendo clic sull’icona dell’account si apre un menu con le impostazioni utente.
 
 ![Commutatore ambiente](assets/environment-switcher.png)
 
@@ -214,11 +183,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
