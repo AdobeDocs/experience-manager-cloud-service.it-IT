@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
 
 ---
+
 
 # Test funzionali Java™
 
@@ -102,7 +103,6 @@ Per ulteriori dettagli, consulta l’[`aem-testing-clients`archivio GitHub.](htt
 
 1. L&#39;infrastruttura a contenitori per il test funzionale è limitata dai seguenti vincoli:
 
-
 | Tipo | Valore | Descrizione |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Quantità di tempo CPU riservato per ogni esecuzione di test |
@@ -153,8 +153,6 @@ Le proprietà del sistema sono indicate di seguito.
 | `sling.it.instance.adminUser.2` | Impostato per pubblicare l’utente amministratore. | `admin` |
 | `sling.it.instance.adminPassword.2` | Imposta per pubblicare la password amministratore. |                         |
 
-
-
 #### Esecuzione di tutti i test con Maven {#using-maven}
 
 1. Apri una shell e passa alla cartella `it.tests` nell’archivio.
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
