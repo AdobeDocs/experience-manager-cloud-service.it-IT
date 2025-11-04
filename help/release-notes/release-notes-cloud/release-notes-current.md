@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 69%
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.10.0) è il venerdì 30 ottobre 2025. La prossima versione funzionale (2025.10.0) è pianificata per il venerdì 20 novembre 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.10.0) è il venerdì 30 ottobre 2025. La prossima versione funzionale (2025.11.0) è pianificata per il venerdì 20 novembre 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -147,7 +147,7 @@ I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. 
 >[!NOTE]
 >
 >Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->&#x200B;>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
 
 ### Inoltro dei registri di AEM a più destinazioni {#log-forwarding}
 
