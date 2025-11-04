@@ -4,10 +4,10 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 31%
+source-wordcount: '2042'
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ Nelle versioni precedenti di AEM, era possibile configurare le attività di manu
 
 >[!CAUTION]
 >
->Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione delle attività di manutenzione di un cliente per attenuare problemi quali il degrado delle prestazioni.
+>Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione delle attività di manutenzione di un cliente per attenuare problemi come il degrado delle prestazioni.
 
 Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <th>Come configurare (facoltativo)</th>
   </tr>  
   <tr>
-    <td>Raccolta rifiuti del datastore</td>
+    <td>Raccolta oggetti inattivi del datastore</td>
     <td>Adobe</td>
     <td>N/D: gestito completamente da Adobe</td>
   </td> 
@@ -47,14 +47,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Elimina log di controllo</td>
     <td>Cliente</td>
-    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_WorkflowPurgeTask</code>) con le proprietà appropriate. Configura le proprietà OSGI secondo la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=it#regular-purging-of-workflow-instances">Documentazione delle attività di manutenzione di AEM 6.5</a>.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_WorkflowPurgeTask</code>) con le proprietà opportune. Configurare le proprietà OSGI. Vedere <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Rimozione regolare delle istanze del flusso di lavoro</a>.</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Visualizza l'elenco delle <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>Configurazione eliminazione progetti Adobe</b>.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
   </td>
   </tr>
   </tbody>
@@ -371,6 +371,6 @@ Le colonne che indicano *default* indicano i valori predefiniti in futuro, quand
 | Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
 | regole | - | - | Sì | Oggetto | Uno o più dei seguenti nodi: replica, pagine, dam. Ciascuno di questi nodi definisce regole, con le proprietà seguenti. Tutte le proprietà devono essere dichiarate. |
-| maximumAgeDays | 7 giorni | per tutti, 2557 (7 anni + 2 giorni bisestili) | Sì | numero intero | Per replica, pagine o dam: il numero di giorni in cui vengono conservati i registri di audit. I registri di controllo precedenti al valore configurato vengono eliminati. |
+| maximumAgeDays | 7 giorni | per tutti, 2557 (7 anni + 2 giorni bisestili) | Sì | intero | Per replica, pagine o dam: il numero di giorni in cui vengono conservati i registri di audit. I registri di controllo precedenti al valore configurato vengono eliminati. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sì | Stringa | Percorso in cui verranno eliminati i registri di audit, per il tipo correlato. Deve essere impostato su &quot;/content&quot;. |
 | tipi | tutti i valori | tutti i valori | Sì | Array di enumerazione | Per **replication**, i valori enumerati sono: Activate, Deactivate, Delete, Test, Reverse, Internal Poll. Per **pagine**, i valori enumerati sono: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestored, PageRolled Out, PageValid, PageInvalid. Per **dam**, i valori enumerati sono: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVE, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |

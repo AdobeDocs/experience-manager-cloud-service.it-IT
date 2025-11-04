@@ -4,7 +4,7 @@ description: Assegna tag alle risorse con un servizio artificialmente intelligen
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ I tag avanzati sono parole chiave che non solo compaiono nel testo, ma che descr
 
 Ad esempio, le parole disposte alfabeticamente in un dizionario sono più facili da trovare rispetto a quelle sparse casualmente. L’assegnazione tag ha uno scopo simile. Organizza le risorse in base alla tassonomia aziendale, garantendo che quelle più rilevanti appaiano nei risultati di ricerca. Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli, in modo che vengano visualizzate solo le immagini pertinenti durante la progettazione di una campagna promozionale. Che si tratti di assegnare tag a &quot;corridori&quot; o &quot;scarpe da corsa&quot;, gli utenti non devono preoccuparsi di errori di battitura, variazioni di ortografia o termini di ricerca alternativi: i tag avanzati li riconoscono tutti.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/it/products/sensei/adobe-sensei.html) applica automaticamente Tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) applica automaticamente Tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
 
 ## Prerequisiti e configurazione {#smart-tags-prereqs-config}
 
@@ -47,7 +47,7 @@ I tag avanzati sono implementati in AEM Assets utilizzando il seguente flusso di
 
 1. Crea o carica una risorsa in AEM. I tag predefiniti vengono generati per Assets basati su immagini, video e testo.
 
-1. Se scopri che non sono generati tag specifici, puoi addestrare di conseguenza i tag di tipo immagine. Consulta [Apprendimento dei tag avanzati](#smart-tags-training.md).
+1. Se scopri che non sono generati tag specifici, puoi addestrare di conseguenza i tag di tipo immagine. Consulta [Apprendimento dei tag avanzati](/help/assets/smart-tags-training.md).
 
 ## Formati di file supportati per tag avanzati {#supported-file-formats}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets senza tag in DAM {#smart-tag-existing-assets}
 
-Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
+Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -256,7 +256,7 @@ I tag avanzati sono configurabili e possono essere applicati a qualsiasi cartell
 
 +++**Come posso sapere che l&#39;assegnazione tag richiede formazione?**
 
-Consulta [Determinazione dei requisiti per l&#39;apprendimento dei tag avanzati](#smart-tags-training.md#smart-tag-training-requirement).
+Consulta [Determinazione dei requisiti per l&#39;apprendimento dei tag avanzati](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
