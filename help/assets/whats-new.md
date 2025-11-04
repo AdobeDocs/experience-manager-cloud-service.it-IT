@@ -3,10 +3,10 @@ title: Novità di Content Hub
 description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 88%
+source-wordcount: '883'
+ht-degree: 82%
 
 ---
 
@@ -24,7 +24,15 @@ Il seguente video illustra le funzionalità principali di Content Hub:
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale di Content Hub (2025.9.0) è il venerdì 25 settembre 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.10.0) è pianificata per il 30 ottobre 2025.
+La data di rilascio della versione funzionale di Content Hub (2025.10.0) è il venerdì 30 ottobre 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.11.0) è pianificata per il venerdì 20 novembre 2025.
+
+## Funzioni della versione di ottobre {#october-release-features}
+
+**Miglioramenti Nell&#39;Esperienza Di Download Di Content Hub**
+
+Content Hub ora supporta il download di più rappresentazioni di risorse in una gerarchia semplice, eliminando la necessità di spostarsi tra più cartelle. Ora le preferenze utente per il comportamento di download vengono mantenute per un’esperienza coerente nelle diverse sessioni. La nuova esperienza di download delle risorse semplifica la gestione delle risorse e migliora l’efficienza semplificando l’individuazione e l’organizzazione dei file scaricati.
+
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## Funzioni della versione di settembre {#september-release-features}
 
@@ -35,6 +43,8 @@ La data di rilascio della versione funzionale di Content Hub (2025.9.0) è il ve
 **Aggiungi raccolte per accesso rapido**
 
 Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
+
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
