@@ -3,15 +3,20 @@ title: Migliorare l’individuazione dei contenuti con i metadati generati dall�
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale in Admin View
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '646'
+ht-degree: 9%
 
 ---
 
 
 # Miglioramento dell’individuazione dei contenuti con metadati generati dall’intelligenza artificiale {#ai-smart-tags}
+
+| Interfaccia utente | Collegamento articolo |
+| -------- | ---------------------------- |
+| Vista risorse | [Fai clic qui](/help/assets/ai-generated-metadata-assets-view.md) |
+| Visualizzazione amministratore | Questo articolo |
 
 Invece di fare affidamento sull’input manuale, l’intelligenza artificiale assegna automaticamente tag descrittivi alle risorse digitali. Questi tag generati dall’IA migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuti digitali. Ad esempio, se la risorsa è un’immagine, l’intelligenza artificiale è in grado di identificare oggetti, scene, emozioni o anche loghi del brand al suo interno e generare tag rilevanti come &quot;tramonto&quot;, &quot;spiaggia&quot;, &quot;vacanza&quot; o &quot;sorriso&quot;. I contenuti generati dall’intelligenza artificiale possono migliorare la ricerca delle risorse sfruttando tecniche di ricerca sia semantiche che lessicali. Ulteriori informazioni su [Cerca in Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
