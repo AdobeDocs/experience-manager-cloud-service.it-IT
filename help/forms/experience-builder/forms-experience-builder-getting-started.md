@@ -62,9 +62,9 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 **Esempio:**
 
     Crea un modulo di feedback del cliente con:
-    - Valutazione del prodotto (1-5 stelle)
-    - Campo di commento per feedback dettagliato
-    - E-mail del cliente (facoltativo)
+    &#x200B;- Valutazione del prodotto (1-5 stelle)
+    &#x200B;- Campo di commento per feedback dettagliato
+    &#x200B;- E-mail del cliente (facoltativo)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -130,9 +130,9 @@ Includi funzionalità aggiuntive:
 
     Aggiungi due elenchi a discesa
     
-    - tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
+    &#x200B;- tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
     
-    - livello di urgenza con opzioni (Basso, Medium, Alto)
+    &#x200B;- livello di urgenza con opzioni (Basso, Medium, Alto)
 
 
 ![È stato aggiunto un elenco a discesa utilizzando i prompt del linguaggio naturale in Forms Experience Builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -166,9 +166,9 @@ Utilizza `@fieldName` per fare riferimento a campi specifici:
 
 Descrivi cosa vuoi in inglese semplice:
 
-    - Aggiungi una sezione per le informazioni sulla società
-    - Crea un menu a discesa per la selezione del reparto
-    - Includi un caricamento di file per la ripresa
+    &#x200B;- Aggiungi una sezione per le informazioni sulla società
+    &#x200B;- Crea un menu a discesa per la selezione del reparto
+    &#x200B;- Includi un caricamento di file per la ripresa
 
 ### Generazione incrementale {#build-incrementally}
 
@@ -188,53 +188,53 @@ Inizia con semplicità e aggiungi gradualmente complessità:
 **Modulo di contatto di base:**
 
     Crea un modulo di contatto con:
-    - Nome (obbligatorio)
-    - E-mail (obbligatorio, convalidato)
-    - Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
-    - Messaggio (obbligatorio, su più righe)
+    &#x200B;- Nome (obbligatorio)
+    &#x200B;- E-mail (obbligatorio, convalidato)
+    &#x200B;- Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
+    &#x200B;- Messaggio (obbligatorio, su più righe)
 
 **Modulo feedback cliente:**
 
     Crea un modulo di feedback del cliente con:
-    - Valutazione del prodotto (1-5 stelle)
-    - Campo di commento per feedback dettagliato
-    - E-mail del cliente (facoltativo)
+    &#x200B;- Valutazione del prodotto (1-5 stelle)
+    &#x200B;- Campo di commento per feedback dettagliato
+    &#x200B;- E-mail del cliente (facoltativo)
 
 ### Moduli di registrazione e onboarding {#registration-onboarding-forms}
 
 **Registrazione utente:**
 
     Crea un modulo di registrazione utente con:
-    - Informazioni personali (nome, e-mail, telefono)
-    - Preferenze account (newsletter, notifiche)
-    - Accettazione termini e condizioni
-    - Creazione password con convalida di forza
+    &#x200B;- Informazioni personali (nome, e-mail, telefono)
+    &#x200B;- Preferenze account (newsletter, notifiche)
+    &#x200B;- Accettazione termini e condizioni
+    &#x200B;- Creazione password con convalida di forza
 
 **Onboarding dei dipendenti:**
 
     Crea un modulo per l&#39;onboarding dei dipendenti con:
-    - Dati personali e informazioni di contatto
-    - Informazioni sull&#39;impiego e data di inizio
-    - Caricamenti di documenti (curriculum, ID, moduli fiscali)
-    - Selezione di benefit e preferenze
+    &#x200B;- Dati personali e informazioni di contatto
+    &#x200B;- Informazioni sull&#39;impiego e data di inizio
+    &#x200B;- Caricamenti di documenti (curriculum, ID, moduli fiscali)
+    &#x200B;- Selezione di benefit e preferenze
 
 ### Moduli di indagine e valutazione {#survey-assessment-forms}
 
 **Sondaggio sulla soddisfazione dei clienti:**
 
     Crea un sondaggio sulla soddisfazione dei clienti con:
-    - Valutazione complessiva (scala da 1 a 10)
-    - Valutazione delle categorie (prodotto, servizio, supporto)
-    - Sezioni di feedback aperte
-    - Informazioni demografiche (facoltative)
+    &#x200B;- Valutazione complessiva (scala da 1 a 10)
+    &#x200B;- Valutazione delle categorie (prodotto, servizio, supporto)
+    &#x200B;- Sezioni di feedback aperte
+    &#x200B;- Informazioni demografiche (facoltative)
 
 **Valutazione delle abilità:**
 
     Crea un modulo di valutazione delle abilità con:
-    - Categorie di abilità con livelli di esperienza
-    - Durata dell&#39;esperienza per ogni abilità
-    - Informazioni sulla certificazione e sulla formazione
-    - Autovalutazione e obiettivi
+    &#x200B;- Categorie di abilità con livelli di esperienza
+    &#x200B;- Durata dell&#39;esperienza per ogni abilità
+    &#x200B;- Informazioni sulla certificazione e sulla formazione
+    &#x200B;- Autovalutazione e obiettivi
 
 ## Test e convalida {#testing-validation}
 
