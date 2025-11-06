@@ -1,40 +1,40 @@
 ---
 title: Utilizzo di CRXDE Lite
-description: CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
+description: CRXDE Lite fa parte di AEM quickstart ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 1%
 
 ---
 
 # Utilizzo di CRXDE Lite {#using-crxde-lite}
 
-CRXDE Lite fa parte del modulo quickstart dell’AEM ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser. Con CRXDE Lite puoi modificare file, cartelle, nodi e proprietà. L’intero archivio è accessibile da questa interfaccia di facile utilizzo.
+CRXDE Lite fa parte di AEM quickstart ed è disponibile per accedere e modificare l’archivio negli ambienti di sviluppo locali all’interno del browser. Con CRXDE Lite puoi modificare file, cartelle, nodi e proprietà. L’intero archivio è accessibile da questa interfaccia di facile utilizzo.
 
 >[!NOTE]
 >
 >CRXDE Lite è disponibile solo negli ambienti di sviluppo locali. Non è disponibile in AEM as a Cloud Service.
 
-## Guida introduttiva di CRXDE Lite {#getting-started-with-crxde-lite}
+## Guida introduttiva a CRXDE Lite {#getting-started-with-crxde-lite}
 
 Per iniziare a utilizzare CRXDE Lite:
 
-1. Avvia rapidamente lo sviluppo locale dell’AEM.
+1. Avvia l’avvio rapido di sviluppo AEM locale.
 1. Nel browser, aprire l&#39;URL `https://<host>:<port>/crx/de`.
 1. Immetti **username** e **password**.
 1. Fai clic su **OK**.
 
 L’interfaccia utente di CRXDE Lite viene visualizzata come segue nel browser:
 
-![Interfaccia CRXDE Lite](assets/crxde-lite.png)
+![Interfaccia di CRXDE Lite](assets/crxde-lite.png)
 
 >[!TIP]
 >
->Puoi anche accedere a CRXDE Lite dal menu AEM. Dal menu principale selezionare **Strumenti** > **Generale** > **CRXDE Lite**.
+>Puoi accedere a CRXDE Lite anche dal menu AEM. Dal menu principale selezionare **Strumenti** > **Generale** > **CRXDE Lite**.
 
 ## Panoramica dell’interfaccia utente {#overview-of-the-user-interface}
 
@@ -64,7 +64,7 @@ Il filtro di navigazione ad albero (icona binocolo) consente di filtrare i nodi 
 
 Il **riquadro di modifica** consente di visualizzare il contenuto del file attualmente selezionato nell&#39;archivio. Ogni file aperto viene rappresentato come la relativa scheda nel riquadro.
 
-La scheda **Home** consente di eseguire ricerche nel contenuto e/o nella documentazione e di accedere alla documentazione per gli sviluppatori e al supporto Adobe.
+La scheda **Home** consente di eseguire ricerche nel contenuto e/o nella documentazione e di accedere alla documentazione per gli sviluppatori e al supporto di Adobe.
 
 Fare doppio clic su un file nel **riquadro di Explorer** per visualizzarne il contenuto nel **riquadro di modifica**. Puoi quindi modificarlo e salvare le modifiche.
 
@@ -91,7 +91,7 @@ Le autorizzazioni sono suddivise nelle seguenti categorie.
 
 >[!NOTE]
 >
->Per poter visualizzare le informazioni sul controllo di accesso, l’utente connesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
+>Per poter visualizzare le informazioni sul controllo di accesso, l’utente che ha effettuato l’accesso a CRXDE Lite deve disporre dei diritti per la lettura delle voci ACL.
 
 ### Scheda Replica {#replication-tab}
 
@@ -203,7 +203,7 @@ Per creare una proprietà con CRXDE Lite:
 1. Apri CRXDE Lite nel browser.
 1. Nel [**riquadro Esplosione**](#explorer-pane), selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
 1. Nella [**scheda Proprietà**](#properties-tab) nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**.
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 1. Fare clic sul pulsante [**Salva tutto**](#save-all-button) per salvare le modifiche nel server.
 
 ## Creazione di un file {#creating-a-file}

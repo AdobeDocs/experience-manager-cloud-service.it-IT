@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5357'
 ht-degree: 38%
@@ -106,7 +106,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 
@@ -289,7 +289,7 @@ Passaggi per registrare un ticket di supporto tramite Admin Console:
 +++
 
 +++**Passaggi di integrazione**
-Utilizza questo file `index.html` di esempio per l’autenticazione durante l’integrazione di Asset Selector con un’applicazione non Adobe.
+Utilizza questo file di esempio `index.html` per l&#39;autenticazione durante l&#39;integrazione di Asset Selector con un&#39;applicazione non Adobe.
 
 Accedere al pacchetto Asset Selector utilizzando il tag `Script`, come illustrato nella *riga 9* alla *riga 11* del file `index.html` di esempio.
 
@@ -915,7 +915,7 @@ Utilizza il seguente frammento di codice per visualizzare un messaggio popup per
 
 Il selettore risorse consente di aggiungere un filtro per la selezione dei tag. Supporta un gruppo di tag che combina tutti i tag pertinenti a un particolare gruppo di tag. Inoltre, ti consente di selezionare altri tag corrispondenti alla risorsa che stai cercando. Inoltre, puoi anche impostare i gruppi di tag predefiniti sotto il filtro di chiamata contestuale, che vengono utilizzati principalmente da te in modo che siano accessibili da te in movimento.
 
->
+>[!NOTE]
 >
 > * Per abilitare il filtro di assegnazione tag nella ricerca, è necessario aggiungere lo snippet di codice di chiamata contestuale.
 > * È obbligatorio utilizzare la proprietà name corrispondente al tipo di gruppo di tag `(property=xcm:keywords.id=)`.

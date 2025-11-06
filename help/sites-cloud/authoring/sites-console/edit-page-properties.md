@@ -4,13 +4,13 @@ description: Scopri come modificare le proprietà di una pagina e il comportamen
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 22%
 
 ---
-
 
 # Modifica delle proprietà di una pagina {#page-properties}
 
@@ -24,7 +24,7 @@ Scopri come modificare [le proprietà di una pagina](/help/sites-cloud/authoring
 
 È possibile modificare le proprietà di pagina da diverse posizioni in AEM.
 
-* [Dalla sezione &#x200B;](#from-the-sites-console)
+* [Dalla sezione ](#from-the-sites-console)
 * [Dall’Editor pagina](#from-the-page-editor)
 * [Dall’editor universale](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ Puoi eseguire la modifica in serie solo su pagine che:
 La finestra di modifica in serie è divisa in due parti verticalmente:
 
 * Il lato sinistro contiene un elenco delle pagine selezionate per la modifica in serie.
+
    * Puoi selezionare/deselezionare le pagine in base alle esigenze.
    * Per impostazione predefinita, sono selezionati tutti.
+
 * A destra è riportato un elenco di [proprietà disponibili per la modifica in serie.](/help/implementing/developing/extending/bulk-editor.md)
+
    * Come per la visualizzazione delle proprietà di una singola pagina, le proprietà sono ordinate in schede.
    * Puoi vedere le proprietà che sono disponibili su tutte le pagine selezionate e che sono state esplicitamente definite come disponibili per la modifica in serie.
    * Se la tua selezione include una sola pagina, tutte le proprietà sono visibili.
    * Vengono visualizzate solo le proprietà con un valore comune.
    * Se il campo ha più valori (ad esempio Tag), questi verranno visualizzati solo se *tutti* sono comuni. Se solo alcune sono comuni, verranno visualizzate solo durante la modifica.
+
 * I campi in comune ma con valori diversi nelle varie pagine sono contraddistinti da uno speciale valore, ad esempio il testo `<Mixed Entries>`.
 
 Puoi aggiornare i valori nei campi disponibili nelle pagine selezionate. I nuovi valori vengono applicati a tutte le pagine selezionate quando si seleziona **Fine**. Quando il campo ha più valori (ad esempio Tag), puoi aggiungere un nuovo valore o rimuovere un valore comune.

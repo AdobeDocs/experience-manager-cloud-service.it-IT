@@ -4,9 +4,9 @@ description: Scopri i vari metodi di gestione e modifica delle risorse
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Questo articolo descrive come gestire e modificare le risorse in [!DNL Adobe Experience Manager Assets]. Per gestire [!DNL Content Fragments], consulta [[!DNL Content Fragments]](content-fragments/content-fragments.md) risorse.
@@ -59,10 +59,10 @@ Per estrarre i file ZIP, effettuare le seguenti operazioni:
 
    ![estrazione zip](assets/zip-extraction.png)
 
->[!NOTE]
->
->* La dimensione massima supportata per il file ZIP è 15 GB.
->* Puoi estrarre un massimo di tre file ZIP alla volta.
+   >[!NOTE]
+   >
+   >* La dimensione massima supportata per il file ZIP è 15 GB.
+   >* Puoi estrarre un massimo di tre file ZIP alla volta.
 
 ## Visualizzare l’anteprima delle risorse {#previewing-assets}
 
@@ -70,7 +70,6 @@ Per visualizzare in anteprima una risorsa, segui la procedura riportata di segui
 
 1. Dall’interfaccia utente di Assets, individua il percorso della risorsa di cui vuoi visualizzare l’anteprima.
 1. Seleziona la risorsa desiderata per aprirla.
-
 1. In modalità anteprima sono disponibili opzioni di zoom per [tipi di immagini supportati](/help/assets/file-format-support.md) (con modifica interattiva).
 
    Per ingrandire una risorsa, seleziona `+` (o seleziona la lente di ingrandimento della risorsa). Per ridurre, selezionare `-`. Quando si esegue lo zoom avanti, è possibile esaminare attentamente qualsiasi area dell&#39;immagine eseguendo una panoramica. La freccia di ripristino consente di tornare alla visualizzazione originale.
@@ -80,7 +79,6 @@ Per visualizzare in anteprima una risorsa, segui la procedura riportata di segui
 ## Modifica proprietà {#editing-properties}
 
 1. Passa alla posizione della risorsa di cui desideri modificare i metadati.
-
 1. Seleziona la risorsa e fai clic su **[!UICONTROL Proprietà]** nella barra degli strumenti per visualizzarne le proprietà. In alternativa, scegli l&#39;azione rapida **[!UICONTROL Proprietà]** sulla scheda della risorsa.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ Per visualizzare in anteprima una risorsa, segui la procedura riportata di segui
 
 1. Per disattivare la risorsa dopo una determinata durata, scegli la data/ora di disattivazione dalla selezione della data accanto al campo **[!UICONTROL Ora di disattivazione]**. La data di disattivazione deve essere successiva alla data di attivazione di una risorsa. Dopo l&#39;[!UICONTROL Ora di disattivazione], una risorsa e le relative rappresentazioni non sono disponibili tramite l&#39;interfaccia Web di Assets o tramite l&#39;API HTTP.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. Nel campo **[!UICONTROL Tag]**, seleziona uno o più tag. Per aggiungere un tag personalizzato, digitare il nome del tag nella casella e selezionare il tasto `Enter`. Il nuovo tag viene salvato in [!DNL Experience Manager].
 
    YouTube richiede che i tag siano pubblicati e che sia presente un collegamento ad YouTube (se disponibile).
 
    >[!NOTE]
    >
-   > Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura nel percorso `/content/cq:tags/default` nell&#39;archivio CRX.
+   >Per creare i tag, è necessario disporre dell&#39;autorizzazione di scrittura nel percorso `/content/cq:tags/default` nell&#39;archivio CRX.
 
 1. Seleziona **[!UICONTROL Salva e chiudi]**.
-
 1. Passa all’interfaccia utente di Assets. Le proprietà dei metadati modificate, tra cui titolo, descrizione e tag, vengono visualizzate nella scheda delle risorse nella vista a schede e nelle colonne pertinenti nella vista a elenco.
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulta anche**
 
@@ -669,7 +667,7 @@ Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando 
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

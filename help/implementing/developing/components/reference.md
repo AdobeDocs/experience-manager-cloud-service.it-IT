@@ -3,21 +3,21 @@ title: Guida di riferimento dei componenti
 description: Guida di riferimento per sviluppatori per i dettagli dei componenti e della loro struttura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # Guida di riferimento dei componenti {#components-reference-guide}
 
-I componenti sono al centro della creazione di un’esperienza nell’AEM. I [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e il [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) semplificano l&#39;avvio con un set di strumenti di componenti pronti e affidabili. L&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) spiega allo sviluppatore come utilizzare questi strumenti e come creare componenti personalizzati per creare un sito AEM.
+I componenti sono alla base della creazione di un’esperienza in AEM. I [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e il [Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) semplificano l&#39;avvio con un set di strumenti di componenti pronti e affidabili. L&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) spiega allo sviluppatore come utilizzare questi strumenti e come creare componenti personalizzati per creare un sito AEM.
 
 >[!TIP]
 >
->Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere pertanto familiarità con [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e con [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it).
+>Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere quindi familiarità con i [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e l&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Poiché l’esercitazione WKND copre la maggior parte dei casi d’uso, questo documento è inteso solo come supplemento a tali risorse. Fornisce informazioni tecniche approfondite sulla struttura e la configurazione dei componenti in AEM e non intende essere una guida introduttiva.
 
@@ -39,7 +39,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 
 ### Riutilizzo dei componenti esistenti {#reusing-components}
 
-Prima di dedicare tempo alla creazione di un componente completamente nuovo, è consigliabile personalizzare o estendere i componenti esistenti. [I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) offrono una suite di componenti flessibili, solidi e testati pronti per la produzione.
+Prima di dedicare tempo alla creazione di un componente completamente nuovo, è consigliabile personalizzare o estendere i componenti esistenti. [I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offrono una suite di componenti flessibili, solidi e testati pronti per la produzione.
 
 #### Estensione dei Componenti core {#extending-core-components}
 
@@ -61,17 +61,17 @@ Il rendering del componente viene eseguito con [HTML](https://www.w3schools.com/
 
 Si consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), un linguaggio di modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
+Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview), un linguaggio di modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
 
 Questa logica (facoltativa) può essere implementata in diversi modi e viene richiamata da HTL con comandi specifici:
 
-* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=it) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
-* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=it) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
+* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
+* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
 * Utilizzo delle librerie lato client: i siti web moderni si basano in larga misura sull’elaborazione lato client guidata da codici JavaScript e CSS complessi. Per ulteriori informazioni, vedere il documento [Utilizzo delle librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Struttura dei componenti {#structure}
 
-La struttura di una componente AEM è potente e flessibile. Le parti principali sono:
+La struttura di un componente AEM è potente e flessibile. Le parti principali sono:
 
 * [Tipo risorsa](#resource-type)
 * [Definizione del componente](#component-definition)
@@ -95,7 +95,7 @@ La definizione di un componente può essere suddivisa come segue:
 * I componenti AEM si basano su [Sling](https://sling.apache.org/documentation.html).
 * I componenti AEM si trovano in `/libs/core/wcm/components`.
 * I componenti specifici del progetto/sito si trovano in `/apps/<myApp>/components`.
-* I componenti standard AEM sono definiti come `cq:Component` e presentano gli elementi chiave:
+* I componenti standard di AEM sono definiti come `cq:Component` e presentano gli elementi chiave:
    * Proprietà jcr: elenco di proprietà jcr. Queste sono variabili e alcune possono essere facoltative sebbene la struttura di base di un nodo componente, le relative proprietà e i sottonodi siano definiti dalla definizione `cq:Component`.
    * Risorse: definiscono gli elementi statici utilizzati dal componente.
    * Script: vengono utilizzati per implementare il comportamento dell’istanza risultante del componente.
@@ -110,7 +110,7 @@ La definizione di un componente può essere suddivisa come segue:
    * Per ulteriori informazioni, vedere la sezione [Icona componente](#component-icon).
 * **Nodi figlio vitali**:
    * `cq:editConfig (cq:EditConfig)` - Definisce le proprietà di modifica del componente e consente la visualizzazione del componente nel browser Componenti.
-      * Se il componente ha una finestra di dialogo, questa viene visualizzata automaticamente nel browser Componenti o nel Sidekick, anche se cq:editConfig non esiste.
+      * Se il componente ha una finestra di dialogo, questa verrà visualizzata automaticamente nel browser Componenti o in Sidekick, anche se cq:editConfig non esiste.
    * `cq:childEditConfig (cq:EditConfig)` - Controlla gli aspetti dell&#39;interfaccia utente di authoring per i componenti figlio che non definiscono il proprio `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Finestra di dialogo per questo componente. Definisce l’interfaccia che consente all’utente di configurare il componente e/o modificare il contenuto.
    * `cq:design_dialog (nt:unstructured)` - Modifica progettazione per questo componente.
@@ -181,7 +181,7 @@ Un componente è un nodo di tipo `cq:Component` e presenta le proprietà e i nod
 | `jcr:title` | `String` | Titolo del componente. |
 | `sling:resourceSuperType` | `String` | Con questa impostazione, il componente eredita da questo componente. |
 | `component.html` | `nt:file` | Questo è il file di script HTL del componente. |
-| `cq:icon` | `String` | Questo valore punta all&#39;icona [&#x200B; del componente](#component-icon) e viene visualizzato nel browser Componenti. |
+| `cq:icon` | `String` | Questo valore punta all&#39;icona [ del componente](#component-icon) e viene visualizzato nel browser Componenti. |
 
 Se osservi il componente **Testo**, puoi vedere diversi di questi elementi:
 
@@ -205,7 +205,7 @@ Le finestre di dialogo sono un elemento chiave del componente in quanto fornisco
 
 A seconda della complessità del componente, la finestra di dialogo potrebbe richiedere una o più schede.
 
-Finestre di dialogo per le componenti AEM:
+Finestre di dialogo per i componenti di AEM:
 
 * Sono `cq:dialog` nodi di tipo `nt:unstructured`.
 * Si trovano sotto i relativi nodi `cq:Component` e accanto alle relative definizioni di componenti.
@@ -229,7 +229,7 @@ Le finestre di dialogo per progettazione sono simili alle finestre di dialogo ut
 
 ### Coral UI e Granite UI {#coral-and-granite}
 
-L’interfaccia utente Coral e Granite definiscono l’aspetto dell’AEM.
+L’interfaccia utente Coral e Granite definiscono l’aspetto di AEM.
 
 * [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) fornisce un&#39;interfaccia utente coerente in tutte le soluzioni cloud.
 * [L&#39;interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornisce il markup dell&#39;interfaccia utente Coral racchiuso nei componenti Sling per la creazione di console e finestre di dialogo dell&#39;interfaccia utente.
@@ -301,7 +301,7 @@ Le proprietà definite dipendono dalle singole definizioni. Anche se possono ess
 
 ## Gerarchia dei componenti ed ereditarietà {#component-hierarchy-and-inheritance}
 
-I componenti in AEM sono soggetti alla gerarchia dei tipi di risorsa **&#x200B;**. Utilizzato per estendere i componenti utilizzando la proprietà `sling:resourceSuperType`. Questo consente al componente di ereditare da un altro componente.
+I componenti in AEM sono soggetti alla **gerarchia dei tipi di risorsa**. Utilizzato per estendere i componenti utilizzando la proprietà `sling:resourceSuperType`. Questo consente al componente di ereditare da un altro componente.
 
 Per ulteriori informazioni, vedere la sezione [Riutilizzo dei componenti](#reusing-components).
 
@@ -317,20 +317,20 @@ Il comportamento di modifica di un componente è configurato aggiungendo un nodo
    * `cq:inplaceEditing` (tipo di nodo `cq:InplaceEditingConfig`): definisce una configurazione di modifica diretta per il componente
    * `cq:listeners` (tipo di nodo `cq:EditListenersConfig`): definisce cosa accade prima o dopo che si verifica un&#39;azione sul componente
 
-Ci sono molte configurazioni esistenti nell&#39;AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Lite**.
+Esistono molte configurazioni in AEM. Puoi cercare facilmente proprietà specifiche o nodi secondari utilizzando lo strumento Query in **CRXDE Lite**.
 
 ### Segnaposto Componente {#component-placeholders}
 
 I componenti devono sempre eseguire il rendering di alcuni HTML visibili all’autore, anche quando il componente non ha contenuto. In caso contrario, potrebbe scomparire visivamente dall’interfaccia dell’editor, rendendolo tecnicamente presente ma invisibile nella pagina e nell’editor. In questo caso, gli autori non potranno selezionare e interagire con il componente vuoto.
 
 Per questo motivo, i componenti devono eseguire il rendering di un segnaposto a condizione che non eseguano il rendering di alcun output visibile quando la pagina viene riprodotta nell&#39;editor pagina (quando la modalità WCM è `edit` o `preview`).
-Il markup HTML tipico per un segnaposto è il seguente:
+Il markup tipico di HTML per un segnaposto è il seguente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-HTML Il tipico script HTL che esegue il rendering del segnaposto sopra riportato è il seguente:
+Il tipico script HTL che esegue il rendering del segnaposto di cui sopra HTML è il seguente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -352,7 +352,7 @@ Nell&#39;esempio precedente, `model.text` è la variabile che è true solo quand
 
 Un esempio di utilizzo di questo modello è disponibile nei Componenti core, [ad esempio nel Componente titolo](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
-### Configurazione con i nodi secondari cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurazione con nodi secondari cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 #### Eliminazione di Assets in una finestra di dialogo - cq:dropTargets {#cq-droptargets}
 

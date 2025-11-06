@@ -3,11 +3,11 @@ title: Valutazione dello stato per ambienti di produzione e stage
 description: Scopri come utilizzare la valutazione dello stato di Cloud Manager. Puoi scansionare gli ambienti AEM, eseguire ed esaminare i rapporti, visualizzare i dettagli dei problemi, esportare PDF e gestire le esecuzioni passate.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1406'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -31,9 +31,9 @@ Vedere anche [Modelli di valutazione dell&#39;integrità](#ha-patterns) per le d
 
 ## Accedere alla pagina Valutazione stato {#access-health-assessment}
 
-1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com).
+1. Accedi a Cloud Manager dall’indirizzo [experience.adobe.com](https://experience.adobe.com).
 1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
-1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
+1. Nel pannello laterale a sinistra, fai clic su **Cloud Manager**.
 1. Selezionare un&#39;organizzazione desiderata. L&#39;immagine seguente è a scopo illustrativo. Seleziona il nome della tua organizzazione.
 
    ![Selezione di un&#39;organizzazione in Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
@@ -126,9 +126,9 @@ Di seguito è riportato l’elenco completo degli anti-pattern e dei problemi ri
 | Nome pattern | Categoria | Tipo | Descrizione | Impatto | Correzione automatica? |
 | --- | --- | --- | --- | --- | --- |
 | Gruppi AEM personalizzati con aggiunte dirette degli utenti | Protezione | Analisi dei contenuti | Gli utenti sono stati aggiunti direttamente ai gruppi di AEM invece di aggiungere gruppi IMS come membri. | La gestione delle autorizzazioni e la governance della sicurezza possono complicarsi. [Supporto IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/ims-support) | No |
-| Nodo di contenuto JCR mancante nelle pagine | Struttura di archivio | Analisi dei contenuti | Nodo `jcr:content` mancante nella pagina. | Limitazioni funzionali in Experience Manager as a Cloud Service. [Rilevamento pattern - ACV](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Tipo di risorsa Sling mancante nelle pagine | Struttura di archivio | Analisi dei contenuti | `sling:resourceType` mancante nella pagina. | Limitazioni funzionali in Experience Manager as a Cloud Service. [Rilevamento pattern - ACV](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
-| Pagine con numero eccessivo di nodi | Prestazioni | Analisi dei contenuti | Le pagine contengono un numero elevato di nodi nella loro struttura. | Tempi di caricamento delle pagine lenti e scarsa esperienza utente. [Rilevamento pattern - PCX](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
+| Nodo di contenuto JCR mancante nelle pagine | Struttura di archivio | Analisi dei contenuti | Nodo `jcr:content` mancante nella pagina. | Limitazioni funzionali in Experience Manager as a Cloud Service. [Rilevamento pattern - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Tipo di risorsa Sling mancante nelle pagine | Struttura di archivio | Analisi dei contenuti | `sling:resourceType` mancante nella pagina. | Limitazioni funzionali in Experience Manager as a Cloud Service. [Rilevamento pattern - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | No |
+| Pagine con numero eccessivo di nodi | Prestazioni | Analisi dei contenuti | Le pagine contengono un numero elevato di nodi nella loro struttura. | Tempi di caricamento delle pagine lenti e scarsa esperienza utente. [Rilevamento pattern - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | No |
 | Eccessive istanze di flussi di lavoro in esecuzione | Prestazioni | Analisi dei contenuti | Troppe istanze del flusso di lavoro in esecuzione. | Riduzione generale delle prestazioni del sistema. [Attività di manutenzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
 | Istanze flusso di lavoro completate non eliminate | Prestazioni | Analisi dei contenuti | Le istanze di flusso di lavoro completate precedenti non vengono eliminate. | Riduzione dell&#39;efficienza del sistema e aumento dei costi di storage. [Attività di manutenzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance) | No |
 | Statistiche sull’utilizzo dei frammenti di contenuto | Statistiche | Analisi dei contenuti | Tiene traccia del numero di frammenti di contenuto in uso. | N/D | N/D |

@@ -4,8 +4,8 @@ description: Scopri i tre diversi tipi di test funzionali integrati nel processo
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 5%
@@ -58,7 +58,7 @@ Il diagramma seguente fornisce una visualizzazione dettagliata dei gate di quali
 
 Ti invitiamo a fornire gli unit test per l’applicazione AEM, su cui si basano tutte le strategie di test. Hanno lo scopo di essere veloci e frequenti e di fornire feedback rapidi e tempestivi. Sono strettamente integrati nei flussi di lavoro per sviluppatori, nel tuo CI/CD e nelle pipeline di implementazione di AEM Cloud Service.
 
-Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Per un esempio di unit test per AEM e una guida introduttiva, consulta il modulo [core dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests).
+Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Per un esempio di unit test per AEM e una guida introduttiva, consulta il modulo [core dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests).
 
 ### Qualità del codice
 

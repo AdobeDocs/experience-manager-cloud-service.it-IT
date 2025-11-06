@@ -1,27 +1,27 @@
 ---
 title: Fondamenti tecnici AEM
-description: Una panoramica delle basi tecniche dell’AEM, compreso il modo in cui l’AEM è strutturato e le tecnologie fondamentali come JCR, Sling e OSGi.
+description: Panoramica delle basi tecniche di AEM, compreso il modo in cui AEM è strutturata e le tecnologie fondamentali come JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 1%
 
 ---
 
 # Fondamenti tecnici AEM {#aem-technical-foundations}
 
-AEM è una piattaforma solida basata su tecnologie collaudate, scalabili e flessibili. Questo documento offre una panoramica dettagliata delle varie parti che compongono l&#39;AEM ed è concepito come un&#39;appendice tecnica per uno sviluppatore AEM full stack. Non è concepito come guida introduttiva. Se non hai ancora sviluppato AEM, consulta [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](develop-wknd-tutorial.md) come primo passo.
+AEM è una piattaforma solida basata su tecnologie collaudate, scalabili e flessibili. Questo documento offre una panoramica dettagliata delle varie parti che compongono AEM ed è concepito come un’appendice tecnica per uno sviluppatore AEM full-stack. Non è concepito come guida introduttiva. Se hai poca esperienza con lo sviluppo AEM, consulta [Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND](develop-wknd-tutorial.md) come primo passaggio.
 
 >[!TIP]
 >
->Prima di immergerti nelle tecnologie di base dell&#39;AEM, Adobe consiglia di completare l&#39;[esercitazione Guida introduttiva allo sviluppo per AEM Sites - WKND](develop-wknd-tutorial.md).
+>Prima di immergerti nelle tecnologie di base di AEM, Adobe consiglia di completare l&#39;[esercitazione Guida introduttiva allo sviluppo per AEM Sites - WKND](develop-wknd-tutorial.md).
 
 ## Nozioni di base {#fundamentals}
 
-In quanto sistema moderno di gestione dei contenuti, l’AEM si basa sulle tecnologie web standard:
+In quanto sistema moderno di gestione dei contenuti, AEM si basa sulle tecnologie web standard:
 
 * Ciclo richiesta-risposta (XMLHttpRequest / XMLHttpResponse)
 * HTML
@@ -40,17 +40,17 @@ Lo standard Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.
 
 Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto dell&#39;archivio.
 
-L’AEM si basa su un JCR.
+AEM è basato su JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
 [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) è un&#39;implementazione di un archivio di contenuti gerarchici scalabile e ad alte prestazioni da utilizzare come base per siti Web moderni e altre applicazioni di contenuti complesse, conformi allo standard JCR.
 
-Jackrabbit Oak (noto anche semplicemente come Oak) è l’implementazione dello standard JCR su cui si basa l’AEM.
+Jackrabbit Oak (noto anche semplicemente come Oak) è l’implementazione dello standard JCR su cui viene creato AEM.
 
 ## Elaborazione richiesta Sling {#sling-request-processing}
 
-L&#39;AEM viene creato utilizzando [Sling](https://sling.apache.org/index.html), un framework di applicazioni Web basato sui principi REST che consente di sviluppare facilmente applicazioni orientate ai contenuti. Sling utilizza un archivio JCR, come Apache Jackrabbit Oak, come archivio dati. Sling ha contribuito alla Apache Software Foundation; ulteriori informazioni sono disponibili su Apache.
+AEM è stato creato utilizzando [Sling](https://sling.apache.org/index.html), un framework di applicazioni Web basato sui principi REST che consente di sviluppare facilmente applicazioni orientate ai contenuti. Sling utilizza un archivio JCR, come Apache Jackrabbit Oak, come archivio dati. Sling ha contribuito alla Apache Software Foundation; ulteriori informazioni sono disponibili su Apache.
 
 ### Introduzione a Sling {#introduction-to-sling}
 
@@ -155,9 +155,9 @@ L&#39;elenco dei motori di script supportati dall&#39;istanza di AEM specificata
 
 Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` per:
 
-* Richieste GET/HEAD e URL che terminano con `.html` (tipi di richiesta predefiniti, formato predefinito)
+* Richieste e URL di GET/HEAD che terminano con `.html` (tipi di richiesta predefiniti, formato predefinito)
    * Lo script è `/apps/hr/jobs/jobs.esp`; l&#39;ultima sezione di `sling:resourceType` costituisce il nome del file.
-* Richieste POST (tutti i tipi di richiesta tranne GET/HEAD, il nome del metodo deve essere in maiuscolo)
+* Richieste POST (tutti i tipi di richiesta eccetto GET/HEAD, il nome del metodo deve essere in maiuscolo)
    * POST viene utilizzato nel nome dello script.
    * Lo script è `/apps/hr/jobs/jobs.POST.esp`.
 * URL in altri formati, che non terminano con `.html`
@@ -172,7 +172,7 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` per:
    * Ad esempio, lo script per `../content/corporate/jobs/developer.html` genererebbe una ricerca in `/apps/content/corporate/jobs/`.
    * Viene utilizzato il tipo di nodo principale.
 * Se non viene trovato alcuno script, viene utilizzato lo script predefinito.
-   * La rappresentazione predefinita è supportata come testo normale (`.txt`), HTML (`.html`) e JSON (`.json`), che elencano tutte le proprietà del nodo (formattate in modo appropriato). Il rendering predefinito per l&#39;estensione `.res`, o per le richieste senza estensione di richiesta, consiste nello spool della risorsa (ove possibile).
+   * Il rendering predefinito è supportato come testo normale (`.txt`), HTML (`.html`) e JSON (`.json`), che elencano tutte le proprietà del nodo (formattate in modo appropriato). Il rendering predefinito per l&#39;estensione `.res`, o per le richieste senza estensione di richiesta, consiste nello spool della risorsa (ove possibile).
 * Per la gestione degli errori http (codici 403 o 404), Sling cerca uno script in:
    * Percorso `/apps/sling/servlet/errorhandler` per gli script personalizzati
    * Oppure il percorso dello script standard `/libs/sling/servlet/errorhandler/404.jsp`
@@ -245,7 +245,7 @@ Se chiami direttamente la rappresentazione (lo script), nascondi la risorsa all�
 
 Utilizza il pacchetto API Sling, `org.apache.sling.*`, e le librerie tag.
 
-### Riferimento a elementi esistenti mediante sling:include {#referencing-existing-elements-using-sling-include}
+### Riferimento a elementi esistenti tramite sling:include {#referencing-existing-elements-using-sling-include}
 
 Un&#39;ultima considerazione è la necessità di fare riferimento agli elementi esistenti all&#39;interno degli script.
 
@@ -270,7 +270,7 @@ Un framework OSGi offre quindi operazioni dinamiche di caricamento/scaricamento,
 >
 >In particolare, la pagina Istruzione di base contiene una raccolta di presentazioni e tutorial.
 
-Questa architettura consente di estendere Sling con moduli specifici per le applicazioni. Sling, e quindi AEM, utilizza l’implementazione [Apache Felix](https://felix.apache.org/documentation/index.html) di OSGi. Sono entrambe raccolte di bundle OSGi in esecuzione all’interno di un framework OSGi.
+Questa architettura consente di estendere Sling con moduli specifici per le applicazioni. Sling, e quindi AEM, utilizza l&#39;implementazione [Apache Felix](https://felix.apache.org/documentation/index.html) di OSGi. Sono entrambe raccolte di bundle OSGi in esecuzione all’interno di un framework OSGi.
 
 Questa funzionalità consente di eseguire le azioni seguenti su uno qualsiasi dei pacchetti all’interno dell’installazione:
 
@@ -292,7 +292,7 @@ L’elenco seguente offre una panoramica della struttura visualizzata all’inte
 * `/content` - Contenuto creato per il sito Web.
 * `/etc`
 * `/home` - Informazioni utente e gruppo.
-* `/libs` - Librerie e definizioni che appartengono al nucleo dell&#39;AEM. Le sottocartelle in `/libs` rappresentano le funzionalità predefinite di AEM. Impossibile modificare il contenuto in `/libs`. Le funzionalità specifiche del sito Web devono essere effettuate in `/apps`.
+* `/libs` - Librerie e definizioni che appartengono al nucleo di AEM. Le sottocartelle in `/libs` rappresentano le funzionalità predefinite di AEM. Impossibile modificare il contenuto in `/libs`. Le funzionalità specifiche del sito Web devono essere effettuate in `/apps`.
 * `/tmp` - Area di lavoro temporanea.
 * `/var` - File che vengono modificati e aggiornati dal sistema, ad esempio registri di controllo, statistiche e gestione degli eventi.
 

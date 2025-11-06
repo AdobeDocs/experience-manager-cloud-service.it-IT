@@ -4,10 +4,10 @@ description: Scopri come utilizzare Best Practices Analyzer per comprendere lo s
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 La sezione seguente per contiene considerazioni importanti sull’esecuzione di Best Practices Analyzer (BPA):
 
-* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=it). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
+* Il report BPA viene creato utilizzando l&#39;output del rilevatore pattern [di Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). La versione del rilevatore pattern utilizzata da BPA è inclusa nel pacchetto di installazione di BPA.
 
 * BPA può essere eseguito solo dall&#39;utente **admin** o da un utente del gruppo **amministratori**.
 
@@ -222,6 +222,7 @@ Un valore “\N” in una colonna di un singolo risultato indica che non sono st
 Il BPA fornisce un’interfaccia HTTP che può essere utilizzata come alternativa all’interfaccia utente all’interno di AEM. L’interfaccia supporta sia i comandi HEAD che GET. Può essere utilizzato per generare il rapporto BPA e restituirlo in uno dei tre formati seguenti: JSON, CSV e valori delimitati da tabulazioni (TSV).
 
 I seguenti URL sono disponibili per l&#39;accesso HTTP, dove `<host>` è il nome host, e se necessario la porta, del server in cui è installato BPA:
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` per il formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` per il formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` per il formato TSV
@@ -286,8 +287,8 @@ Il valore di questa proprietà corrisponde alla durata della cache, in secondi. 
 
 BPA utilizza un account utente del servizio di sistema denominato `repository-reader-service` per eseguire il rilevatore pattern. Questo account è disponibile in AEM 6.2 e versioni successive. In AEM 6.1, l&#39;account deve essere creato *prima dell&#39;installazione di* di BPA, eseguendo la procedura seguente:
 
-1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=it#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
+1. Per creare un utente segui le istruzioni in [Creazione di un nuovo utente di servizio](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user). Imposta UserID su `repository-reader-service` e lascia vuoto il Percorso intermedio, quindi fai clic sul segno di spunta verde.
 
-2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
+2. Segui le istruzioni riportate nella sezione [Gestione di utenti e gruppi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), in particolare Aggiunta di utenti a un gruppo, per aggiungere l’utente `repository-reader-service` al gruppo `administrators`.
 
 3. Installa il pacchetto BPA tramite Gestione pacchetti nell’istanza AEM di origine. Questa azione aggiunge la necessaria modifica alla configurazione ServiceUserMapper per l’utente di servizio del sistema `repository-reader-service`.)

@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 'Utilizza i flussi di lavoro di AEM: assegna passaggi di un’attività, converti in un passaggio PDF/A, Genera un documento del passaggio registrato, Utilizza flussi di lavoro, Firma il passaggio del documento, Genera un passaggio di output stampato, Genera un output PDF non interattivo'
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem).
+Si utilizzano i modelli di flusso di lavoro. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Passaggi incentrati su Forms {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ Il passaggio Assegna attività crea un elemento di lavoro e lo assegna a un uten
     -->
 
 * **[!UICONTROL Assegnatario]** > **[!UICONTROL Assegna opzioni]**: specifica il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Selettore partecipanti]**: l&#39;opzione è disponibile quando l&#39;opzione **[!UICONTROL Assegna dinamicamente a un utente o a un gruppo]** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Creazione di un passaggio Partecipante dinamico Adobe Experience Manager personalizzato](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Partecipanti]**: il campo è disponibile quando l&#39;opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo **[!UICONTROL Selettore partecipanti]**. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -177,6 +177,7 @@ Il passaggio Converti in PDF/A ha le seguenti proprietà:
 **[!UICONTROL Documento di input]**: il documento di input può essere relativo al payload, avere un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo dati Documento.
 
 **[!UICONTROL Opzioni di conversione]**: utilizzando questa proprietà, vengono specificate le impostazioni per la conversione di documenti PDF in documenti PDF/A. Le opzioni disponibili in questa scheda sono:
+
 * **[!UICONTROL Conformità]**: specifica lo standard a cui deve conformarsi il documento PDF/A di output. Supporta diversi standard PDF come PDF/A-1b, PDF/A-2b o PDF/A-3b.
 * **[!UICONTROL Livello risultati]**: specifica il livello dei risultati come PassFail, Summary o Detailed per l&#39;output di conversione.
 * **[!UICONTROL Spazio colore]**: specifica lo spazio colore predefinito come S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED o SWOP, che può essere utilizzato per i file PDF/A di output.
@@ -189,7 +190,7 @@ Il passaggio Converti in PDF/A ha le seguenti proprietà:
 
 Utilizzare il passaggio e-mail per inviare un messaggio e-mail, ad esempio un messaggio e-mail con un documento Record, un collegamento di un modulo adattivo <!-- , link of an interactive communication--> o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=it#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, accertati che il servizio e-mail sia configurato. Per impostazione predefinita, le e-mail supportano solo i protocolli HTTP e HTTP. [Contatta il team di supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) per abilitare le porte per l&#39;invio di e-mail e l&#39;abilitazione del protocollo SMTP per l&#39;ambiente. La restrizione contribuisce a migliorare la sicurezza della piattaforma.
 
 Il passaggio e-mail presenta le seguenti proprietà:
 
@@ -255,11 +256,13 @@ Document Description XML (DDX) è un linguaggio di markup dichiarativo i cui ele
 Il passaggio Richiama DDX ha le seguenti proprietà:
 
 **[!UICONTROL Documenti di input]**: utilizzato per impostare le proprietà di un documento di input. Le opzioni disponibili in questa scheda sono:
+
 * **[!UICONTROL Specificare DDX utilizzando]**: specifica il documento di input relativo al payload, dispone di un percorso assoluto, può essere fornito come payload o memorizzato in una variabile di tipo di dati Document.
 * **[!UICONTROL Crea mappa da payload]**: aggiungi tutti i documenti nella cartella del payload alla mappa del documento di input per l&#39;API di richiamo in Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
 * **[!UICONTROL Mappa del documento di input]**: l&#39;opzione viene utilizzata per aggiungere più voci utilizzando il pulsante **[!UICONTROL AGGIUNGI]**. Ogni voce rappresenta la chiave del documento nella mappa e l&#39;origine del documento.
 
 **[!UICONTROL Opzioni ambiente]**: questa opzione viene utilizzata per impostare le impostazioni di elaborazione per richiamare l&#39;API. Le opzioni disponibili in questa scheda sono:
+
 * **[!UICONTROL Solo convalida]**: verifica la validità del documento DDX di input.
 * **[!UICONTROL Errore]**: valore booleano per indicare se il servizio API di richiamo non riesce, in caso di errore o meno. Per impostazione predefinita, il relativo valore è impostato su False.
 * **[!UICONTROL Primo numero Bates]**: specifica il numero, che è auto-incrementante. Questo numero con incremento automatico viene visualizzato automaticamente su ogni pagina consecutiva.
@@ -270,6 +273,7 @@ Il passaggio Richiama DDX ha le seguenti proprietà:
 >Le opzioni dell’ambiente sono mantenute sincronizzate con le API HTTP.
 
 **[!UICONTROL Documenti di output]**: specifica il percorso in cui salvare il file di output. Le opzioni disponibili in questa scheda sono:
+
 * **[!UICONTROL Salva output nel payload]**: salva i documenti di output nella cartella del payload o sovrascrive il payload, se il payload è un file.
 * **[!UICONTROL Mappa documento di output]**: specifica il percorso in cui salvare in modo esplicito ogni file di documento, aggiungendo una voce per documento. Ogni voce rappresenta il documento e la posizione in cui salvarlo. Se sono presenti più documenti di output, viene utilizzata questa opzione.
 

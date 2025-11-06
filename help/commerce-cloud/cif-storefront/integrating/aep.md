@@ -6,13 +6,13 @@ version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Architect, Developer
+role: Developer, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 # Componenti core AEM-CIF e integrazione con Adobe Experience Platform {#aem-cif-aep-integration}
 
-I componenti core [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) forniscono un&#39;integrazione perfetta con [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=it) per inoltrare gli eventi storefront e i relativi dati dalle interazioni lato client, ad esempio __aggiungi al carrello__.
+I componenti core [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) forniscono un&#39;integrazione perfetta con [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html) per inoltrare gli eventi storefront e i relativi dati dalle interazioni lato client, ad esempio __aggiungi al carrello__.
 
 Il progetto [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) fornisce una libreria JavaScript denominata [Connettore Adobe Experience Platform per Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) per raccogliere i dati evento dalla vetrina Commerce. I dati dell’evento vengono inviati ad Experience Platform, dove vengono utilizzati in altri prodotti Adobe Experience Cloud, come Adobe Analytics e Adobe Target, per creare un profilo a 360 gradi che copre un percorso di clienti. Collegando i dati di Commerce ad altri prodotti in Adobe Experience Cloud, puoi eseguire attività come analizzare il comportamento degli utenti sul tuo sito, eseguire test AB e creare campagne personalizzate.
 
-Ulteriori informazioni sulla suite di tecnologie [Raccolta dati di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=it) che consente di raccogliere i dati sull&#39;esperienza del cliente da origini lato client.
+Ulteriori informazioni sulla suite di tecnologie [Raccolta dati di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) che consente di raccogliere i dati sull&#39;esperienza del cliente da origini lato client.
 
 ## Invia dati evento `addToCart` ad Experience Platform {#send-addtocart-to-aep}
 
@@ -38,7 +38,7 @@ Nei passaggi seguenti viene illustrato come inviare i dati dell&#39;evento `addT
 
 Utilizza un ambiente di sviluppo locale per completare questa demo. Ciò include un’istanza in esecuzione di AEM configurata e connessa a un’istanza di Adobe Commerce. Rivedi i requisiti e i passaggi per [configurare lo sviluppo locale con AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md)
 
-È inoltre necessario accedere a [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=it) e alle autorizzazioni per creare schemi, set di dati e flussi di dati per la raccolta dati. Per ulteriori informazioni, vedere [Gestione autorizzazioni.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=it)
+È inoltre necessario accedere a [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) e alle autorizzazioni per creare schemi, set di dati e flussi di dati per la raccolta dati. Per ulteriori informazioni, vedere [Gestione autorizzazioni.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)
 
 ## Configurazione di AEM Commerce as a Cloud Service {#aem-setup}
 
@@ -349,7 +349,7 @@ La procedura seguente illustra come ricevere e memorizzare i dati dell’evento 
 
 Per definire la struttura per i dati dell’evento Commerce, devi creare uno schema Experience Data Model (XDM). Uno schema è un insieme di regole che rappresentano e convalidano la struttura e il formato dei dati.
 
-1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Esempio: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Ad esempio, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Individua il menu __Schemi__ nella sezione di navigazione a sinistra, fai clic sul pulsante __Crea schema__ nella sezione in alto a destra e seleziona __XDM ExperienceEvent__.
 
@@ -366,13 +366,13 @@ Per definire la struttura per i dati dell’evento Commerce, devi creare uno sch
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it).
+>Per ulteriori informazioni, vedere le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
 
 ### Crea set di dati {#create-dataset}
 
 Per memorizzare i dati dell’evento, è necessario creare un set di dati conforme alla definizione dello schema. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe).
 
-1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Esempio: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Ad esempio, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Individua il menu __Set di dati__ nella sezione di navigazione a sinistra e fai clic sul pulsante __Crea set di dati__ nella sezione in alto a destra.
 
@@ -392,14 +392,14 @@ Per memorizzare i dati dell’evento, è necessario creare un set di dati confor
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere [Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=it).
+>Per ulteriori informazioni, vedere [Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
 
 ### Crea stream di dati {#create-datastream}
 
 Completa i passaggi seguenti per creare uno stream di dati in Experience Platform.
 
-1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Esempio: <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Nel browser passare alla home page del prodotto __Adobe Experience Platform__. Ad esempio, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
 1. Individua il menu __Datastreams__ nella sezione di navigazione a sinistra e fai clic sul pulsante __New Datastream__ nella sezione in alto a destra.
 
@@ -419,7 +419,7 @@ Completa i passaggi seguenti per creare uno stream di dati in Experience Platfor
 
 >[!TIP]
 >
->Per ulteriori informazioni, vedere [Panoramica sullo stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it).
+>Per ulteriori informazioni, vedere [Panoramica sullo stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Aggiungere valore dello stream di dati nella configurazione di AEM Commerce {#add-aep-values-to-aem}
 
@@ -494,6 +494,6 @@ __Eventi XDM del profilo :__
 Per ulteriori informazioni, consulta le risorse seguenti:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=it)
-- [[!DNL Data Connection] Eventi](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=it)
-- [Panoramica di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=it)
+- [[!DNL Data Connection] panoramica](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Eventi](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [Panoramica di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

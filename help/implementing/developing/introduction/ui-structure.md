@@ -1,10 +1,10 @@
 ---
 title: Struttura dell’interfaccia AEM
-description: L’interfaccia utente dell’AEM ha diversi principi di base ed è composta da diversi elementi chiave
+description: L’interfaccia utente di AEM presenta diversi principi di base ed è composta da diversi elementi chiave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 # Struttura dell’interfaccia AEM {#structure-of-the-aem-ui}
 
-L’interfaccia utente dell’AEM ha diversi principi di base ed è composta da diversi elementi chiave:
+L’interfaccia utente di AEM presenta diversi principi di base ed è composta da diversi elementi chiave:
 
 ## Console {#consoles}
 
 ### Layout e ridimensionamento di base {#basic-layout-and-resizing}
 
-L’interfaccia utente supporta sia i dispositivi mobili che quelli desktop, ma invece di creare due stili, l’AEM utilizza uno stile che funziona per tutti gli schermi e i dispositivi.
+L’interfaccia utente supporta sia i dispositivi mobili che quelli desktop; tuttavia, invece di creare due stili, AEM utilizza uno stile che funziona per tutti gli schermi e i dispositivi.
 
 Tutti i moduli utilizzano lo stesso layout di base:
 
@@ -33,11 +33,11 @@ Ad esempio, quando la risoluzione scende al di sotto di 1024 pixel (come su un d
 
 ### Barra intestazione {#header-bar}
 
-![Barra di intestazione AEM](assets/ui-header-bar.png)
+![Barra di intestazione di AEM](assets/ui-header-bar.png)
 
 La barra dell’intestazione mostra gli elementi globali, tra cui:
 
-* Il logo e il prodotto/soluzione specifico attualmente in uso. Per l’AEM, questo elemento costituisce anche un collegamento alla navigazione globale
+* Il logo e il prodotto/soluzione specifico attualmente in uso. Per AEM, questo elemento costituisce anche un collegamento alla navigazione globale
 * Ricerca
 * Icona per accedere alle risorse della guida
 * Icona per accedere ad altre soluzioni
@@ -144,7 +144,7 @@ Un livello è un bundle indipendente di funzionalità che può essere attivato p
 
 I livelli forniscono funzionalità avanzate per l’intera pagina, anziché azioni specifiche per un singolo componente.
 
-L’AEM include diversi livelli già implementati per l’authoring delle pagine, tra cui, ad esempio, i livelli Modifica, Anteprima e Annota.
+AEM viene fornito con diversi livelli già implementati per l’authoring delle pagine, inclusi ad esempio i livelli Modifica, Anteprima e Annota.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Per ulteriori informazioni tecniche, consulta il [set di documentazione JS](http
 
 ### Unified Shell {#unified-shell}
 
-Consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) se utilizzi Unified Shell come interfaccia utente AEM.
+Consulta [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) se utilizzi Unified Shell come interfaccia utente di AEM.
 
 Se hai bisogno di effettuare, o hai già fatto, qualsiasi personalizzazione, Unified Shall può essere disabilitato:
 

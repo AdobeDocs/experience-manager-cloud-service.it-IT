@@ -4,15 +4,14 @@ description: Raccolta di pattern di prompt ed esempi dimostrati per la creazione
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 38%
+ht-degree: 99%
 
 ---
-
 
 # Forms Experience Builder: libreria di prompt
 
@@ -41,10 +40,10 @@ Questa libreria fornisce modelli di prompt riutilizzabili per scenari comuni di 
 
 **Prepara in anticipo le risorse del brand per la creazione di moduli coerenti:**
 
-- **Modelli marchio** - Prepara modelli di modulo standardizzati con i colori, i font e i modelli di layout della tua organizzazione
-- **Linee guida per gli stili** - Definisci stili di campo coerenti, progettazioni di pulsanti e standard di spaziatura che Forms Experience Builder può applicare
-- **Libreria componenti** - Collabora con il team di sviluppo per preparare componenti modulo riutilizzabili che corrispondano alla tua brand identity
-- **Risorse visive**: prepara logo, icone ed elementi di sfondo per l’integrazione dei moduli
+- **Modelli di brand**: crea modelli di modulo standardizzati con i colori, i font e i pattern di layout della tua organizzazione
+- **Linee guida per gli stili**: definisci stili di campo coerenti, progettazioni di pulsanti e standard di spaziatura che Forms Experience Builder può applicare
+- **Libreria componenti**: collabora con il team di sviluppo per preparare componenti modulo riutilizzabili che corrispondano alla tua identità del brand
+- **Risorse visive**: prepara logo, icone ed elementi dello sfondo per l’integrazione dei moduli
 
 
 ## Esempi di sviluppo incrementale
@@ -55,23 +54,23 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 **Passaggio 1 - Inizia in modo semplice:**
 
-    Crea un modulo di contatto di base con i campi nome, e-mail e messaggio
+    Crea un modulo di contatto base con i campi nome, e-mail e messaggio
 
-**Passaggio 2 - Aggiungi convalida:**
+**Passaggio 2 - Aggiungere la convalida:**
 
-    Rendi obbligatori @name e @email i campi con la convalida appropriata
+    Rendi obbligatori i campi @name e @email con la convalida appropriata
 
-**Passaggio 3 - Migliora l’esperienza utente:**
+**Passaggio 3 - Migliorare l’esperienza utente:**
 
-    Aggiungi testo segnaposto: @name &quot;Nome e cognome&quot;, @email &quot;your.email@company.com&quot;, @message &quot;Come possiamo aiutarci&quot;
+    Aggiungi testo segnaposto: @name “Nome e cognome”, @email “your.email@company.com”, @message “Come possiamo essere di aiuto”
 
-**Passaggio 4 - Aggiungi funzionalità avanzate:**
+**Passaggio 4 - Aggiungere funzionalità avanzate:**
 
-    Aggiungi un tipo di richiesta a discesa con le opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Richiesta di informazioni sulle vendite&quot;, &quot;Partnership&quot;
+    Aggiungi un tipo di richiesta a discesa con opzioni: “Domanda generale”, “Richiesta di supporto”, “Richiesta di informazioni sulle vendite”, “Partnership”
 
-**Passaggio 5 - Implementa logica condizionale:**
+**Passaggio 5 - Implementare logica condizionale:**
 
-    /create-rule mostra @urgencyLevel menu a discesa (Basso, Medium, Alto) solo quando @inquiryType è uguale a &quot;Richiesta di supporto&quot;
+    /create-rule mostra @urgencyLevel menu a discesa (Basso, Medio, Alto) solo quando @inquiryType è uguale a “Richiesta di supporto”
 
 ### Esempio 2: creazione incrementale di un modulo di registrazione
 
@@ -79,19 +78,19 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
     Crea un modulo di registrazione utente con il pannello informazioni personali
 
-**Passaggio 2 - Aggiungi campi obbligatori:**
+**Passaggio 2 - Aggiungere campi obbligatori:**
 
     Aggiungi campi per @firstName, @lastName, @email, @phoneNumber con convalida appropriata
 
-**Passaggio 3 - Aggiungi logica di business:**
+**Passaggio 3 - Aggiungere la logica di business:**
 
-    Crea una regola: se il @age è inferiore a 18, mostra sezione informazioni padre/tutore
+    Crea una regola: se @age è inferiore a 18, mostra sezione informazioni genitore/tutore
 
-**Passaggio 4 - Migliora con preferenze:**
+**Passaggio 4 - Migliorare con le preferenze:**
 
     Aggiungi un pannello preferenze con @newsletterSubscription, @marketingConsent, @termsAccepted
 
-**Passaggio 5 - Aggiungi caricamento file:**
+**Passaggio 5 - Aggiungere un caricamento file:**
 
     Includi un campo di caricamento file per @profilePicture con limite di dimensione di 5 MB
 
@@ -103,37 +102,37 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 **Esempio di prompt - Creazione semplice del modulo:**
 
-    Crea un modulo di feedback del cliente con:
+    Crea un modulo di feedback dei clienti con:
     - Valutazione del prodotto (1-5 stelle)
     - Campo di commento per feedback dettagliato
     - E-mail del cliente (facoltativo)
     - Invia a notifica e-mail
 
-**Esempio di prompt: creazione modulo complesso:**
+**Esempio di prompt - Creazione di un modulo complesso:**
 
     Crea un modulo di onboarding completo per i dipendenti con:
     
     **Sezione informazioni personali:**
-    - Nome completo (primo, secondo e ultimo)
-    - Data di nascita con convalida dell&#39;età
+    - Nome completo (nome, secondo nome e cognome)
+    - Data di nascita con convalida dell’età
     - Informazioni di contatto (e-mail, telefono, indirizzo)
     - Dettagli di contatto di emergenza
     
-    **Dettagli sull&#39;impiego:**
+    **Dettagli sull’impiego:**
     - Selezione di posizione e reparto
     - Data di inizio con convalida del giorno lavorativo
     - Informazioni sullo stipendio con avviso di riservatezza
     - Struttura di reporting
     
     **Caricamento documento:**
-    - Caricamento curriculum/CV (PDF, DOC, DOC, DOC, DOCX)
+    - Caricamento curriculum/CV (PDF, DOC, DOCX)
     - Documenti di verifica ID
     - Moduli fiscali e informazioni bancarie
     - Contratto di lavoro firmato
     
     **Preferenze:**
     - Selezione dei benefici con il calcolatore dei costi
-    - Preferenze programmazione lavoro
+    - Preferenze pianificazione lavoro
     - Requisiti di formazione
     - Necessità attrezzature
     
@@ -141,20 +140,20 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     - Convalida formato e-mail
     - Convalida formato numero di telefono
     - Età non superiore a 18
-    - Caricare tutti i documenti richiesti
-    - Condizioni accettato
+    - Tutti i documenti richiesti devono essere caricati
+    - Termini e condizioni devono essere accettati
     
     **Invia azioni:**
-    - Invia un&#39;e-mail di conferma al nuovo dipendente
-    - Notifica al reparto HR
-    - Crea record dipendente nel sistema HR
+    - Invia un’e-mail di conferma al nuovo dipendente
+    - Notifica al reparto Risorse umane
+    - Crea record dipendente nel sistema Risorse umane
     - Pianifica riunione orientamento
 
 **Prompt gestione moduli:**
 
     Importa il modulo di richiesta PDF e convertilo in un modulo adattivo con convalida avanzata
     
-    Aggiorna il modulo di contatto esistente per includere gli handle di social media e il metodo di contatto preferito
+    Aggiorna il modulo di contatto esistente per includere le maniglie dei social media e il metodo di contatto preferito
     
     Riorganizza il modulo di registrazione in una procedura guidata in tre passaggi: informazioni personali, preferenze, conferma
 
@@ -166,9 +165,9 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 **Esempio di prompt: aggiunta di un campo di base:**
 
-    Aggiungi un campo di immissione testo per &quot;Nome società&quot; con segnaposto &quot;Inserisci il nome società&quot;
+    Aggiungi un campo di immissione testo per “Nome società” con segnaposto “Inserisci il nome società”
 
-**Esempio di prompt: configurazione avanzata del campo:**
+**Esempio di prompt - Configurazione avanzata del campo:**
 
     Aggiungi una sezione di indirizzo completa con:
     
@@ -178,26 +177,26 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     - Città (obbligatorio, a discesa con le città comuni)
     - Stato/Provincia (obbligatorio, a discesa)
     - Codice postale (obbligatorio, convalida formato)
-    - Paese (obbligatorio, predefinito &quot;Stati Uniti&quot;)
+    - Paese (obbligatorio, predefinito “Stati Uniti”)
     
     **Regole di convalida:**
     - Il codice postale deve corrispondere alla selezione dello stato
-    - Indirizzo 1 non può essere empty
+    - Indirizzo 1 non può essere vuoto
     - La città deve essere valida per lo stato selezionato
     
     **Esperienza utente:**
     - Completamento automatico per i campi indirizzo
-    - Cancella etichette e testo della guida
-    - Campi di input descrittivi per dispositivi mobili
-    - Conformità per l&#39;accessibilità
+    - Etichette e testo della guida chiari
+    - Campi di input descrittivi ottimizzati per i dispositivi mobili
+    - Conformità per dell’accessibilità
 
 **Prompt di configurazione campo:**
 
-    Rendi obbligatorio @email campo con convalida in tempo reale e messaggio di errore personalizzato
+    Rendi obbligatorio il campo @email con convalida in tempo reale e messaggio di errore personalizzato
     
-    Aggiungi un elenco a discesa per @country con opzioni per Stati Uniti, Canada, Regno Unito, Germania, Francia e &quot;Altro&quot;
+    Aggiungi un elenco a discesa per @country con opzioni per Stati Uniti, Canada, Regno Unito, Germania, Francia e “Altro”
     
-    Configura @phoneNumber campo con formato (XXX) XXX-XXXX e convalida
+    Configura il campo @phoneNumber con il formato (XXX) XXX-XXXX e convalida
     
     Aggiungi un campo di caricamento file per @resume con restrizioni PDF e DOC, massimo 5 MB
 
@@ -212,14 +211,14 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 **Aeroporti e trasporti:**
 
     Aggiungi un elenco a discesa per gli aeroporti di partenza con tutti i principali aeroporti internazionali
-    Aggiungi il campo dell&#39;aeroporto di arrivo con i codici IATA e i nomi completi
-    Crea un campo per l&#39;aeroporto più vicino alla posizione dell&#39;utente
+    Aggiungi il campo dell’aeroporto di arrivo con i codici IATA e i nomi completi
+    Crea un campo per l’aeroporto più vicino alla posizione dell’utente
     Aggiungi una selezione di stazioni ferroviarie per le città europee
 
-**Aree amministrative:**
+**Aree geografiche amministrative:**
 
     Aggiungi un elenco completo degli stati degli Stati Uniti con le abbreviazioni
-    Crea un elenco a discesa di un paese con codici ISO e nomi completi
+    Crea un elenco a discesa di un Paese con codici ISO e nomi completi
     Aggiungi un campo per le principali città del mondo con fusi orari
     Includi un elenco a discesa di province e territori canadesi
     Aggiungi un campo per le contee e le aree postali del Regno Unito
@@ -229,28 +228,28 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 **Classificazioni aziendali:**
 
     Aggiungi un campo per la classificazione del settore con codici NAICS
-    Crea un elenco a discesa dei tipi di entità business (LLC, Corporation, Partnership, ecc.)
-    Aggiungi un campo per le categorie di dimensione società (avvio, PMI, impresa)
+    Crea un elenco a discesa dei tipi di entità aziendale (S.r.l,, S.p.A., S.n.c, ecc.)
+    Aggiungi un campo per le categorie di dimensione società (startup, PMI, impresa)
     Includi selezione reparto per organizzazioni di grandi dimensioni
     Aggiungi un campo per i tipi di servizi professionali
 
 **Classificazioni professionali:**
 
-    Aggiungi un campo per i titoli di lavoro con ruoli di settore comuni
+    Aggiungi un campo per le mansioni con ruoli di settore comuni
     Crea un elenco a discesa di certificazioni professionali per campo
     Includi livelli di formazione con tipi di laurea
-    Aggiungi un campo per anni di intervalli di esperienza
-    Crea una selezione per linguaggi e framework di programmazione
+    Aggiungi un campo per gli intervalli degli anni di esperienza
+    Crea una selezione per linguaggi di programmazione e framework
 
 ### Standard e normative
 
 **Aree finanziaria e legale:**
 
     Aggiungi un campo per i codici valuta con simboli e tassi di cambio
-    Crea un elenco a discesa di tipi di ID imposta per paese
+    Crea un elenco a discesa di tipi di codice fiscale per Paese
     Includi un campo per i tipi di documenti legali
-    Aggiungi opzioni metodo di pagamento con caratteristiche di sicurezza
-    Crea una selezione per gli istituti bancari per paese
+    Aggiungi opzioni metodo di pagamento con funzioni di sicurezza
+    Crea una selezione di istituti bancari per Paese
 
 **Standard tecnici:**
 
@@ -273,8 +272,8 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
 **Campi data e ora:**
 
-    Aggiungi un campo per gli orari lavorativi con gestione del fuso orario
-    Crea un elenco a discesa delle festività per paese
+    Aggiungi un campo per gli orari d’ufficio con gestione del fuso orario
+    Crea un elenco a discesa delle festività per Paese
     Includi opzioni stagionali con intervalli di date
     Aggiungi un campo per la prenotazione di una sala conferenze con disponibilità
     Crea una selezione per i modelli di riunione ricorrenti
@@ -286,20 +285,20 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     Aggiungi un campo per le categorie di prodotto con sottocategorie
     Crea un elenco a discesa dei metodi di spedizione con le stime di consegna
     Includi un campo per le opzioni dei criteri di restituzione
-    Aggiungi una selezione per i livelli di priorità del cliente
-    Crea un campo per i cicli di fatturazione dell&#39;abbonamento
+    Aggiungi una selezione per i livelli di priorità dei clienti
+    Crea un campo per i cicli di fatturazione dell’abbonamento
 
 **Esempio di prompt per campi avanzati:**
 
-    &quot;Aggiungere un campo aeroporto di partenza con tutti i principali aeroporti del mondo, inclusi i codici IATA e i nomi delle città&quot;
+    “Aggiungi un campo aeroporto di partenza con tutti i principali aeroporti del mondo, inclusi i codici IATA e i nomi delle città”
     
-    &quot;Creare un campo di settore completo utilizzando la classificazione NAICS standard con sottocategorie tecnologiche&quot;
+    &quot;Crea un campo di settore completo utilizzando la classificazione NAICS standard con sottocategorie tecnologiche”
     
-    &quot;Includere un elenco a discesa di certificazione professionale che si adatta in base al campo di lavoro selezionato&quot;
+    “Includi un elenco a discesa di certificazione professionale che si adatta in base al campo di lavoro selezionato”
     
-    &quot;Aggiungere un campo numero di telefono internazionale che si formatta in base al paese selezionato&quot;
+    “Aggiungi un campo numero di telefono internazionale che si formatta in base al Paese selezionato”
     
-    &quot;Creare un campo di selezione universitario con le principali istituzioni organizzate per paese e classificazione&quot;
+    “Crea un campo di selezione universitario con le principali istituzioni organizzate per Paese e classificazione”
 
 ## Creazione di regole e logica di business
 
@@ -311,35 +310,35 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
 
     Crea una regola che mostri il pannello @spouseInformation solo quando @maritalStatus è uguale a “Sposato”
 
-**Esempio di prompt: regole aziendali complesse:**
+**Esempio di prompt- Regole aziendali complesse:**
 
-    Implementare la convalida completa della richiesta di prestito:
+    Implementa la convalida completa della richiesta di prestito:
     
     **Convalida del reddito:**
-    - Se il @annualIncome è inferiore a 30000:
-    - Visualizzare il messaggio di avviso: &quot;Il reddito potrebbe essere insufficiente per l&#39;importo del prestito richiesto&quot;
-    - Richiedere ulteriore documentazione sul reddito
-    - Visualizzare il messaggio: &quot;Potrebbe essere richiesta documentazione aggiuntiva&quot;
-    - Se il @annualIncome è superiore a 100000:
-    - Visualizzare le opzioni dei servizi premium
-    - Abilitare la casella di controllo di elaborazione prioritaria
+    - Se @annualIncome è inferiore a 30000:
+    - Mostra il messaggio di avviso: “Il reddito potrebbe essere insufficiente per l’importo del prestito richiesto”
+    - Richiedi ulteriore documentazione sul reddito
+    - Mostra il messaggio: “Potrebbe essere richiesta documentazione aggiuntiva”
+    - Se @annualIncome è superiore a 100000:
+    - Mostra le opzioni dei servizi premium
+    - Abilita la casella di controllo di elaborazione prioritaria
     
-    **Convalida basata sull&#39;età:**
+    **Convalida basata sull’età:**
     - Se @age è inferiore a 18:
-    - Visualizzare le informazioni padre caricamento della firma obbligatorio
-    - Modificare il testo del pulsante Invia in &quot;Invia per revisione&quot;
+    - Mostra la sezione di informazioni genitore/tutore
+    - Rendi obbligatorio il caricamento della firma del genitore
+    - Modifica il testo del pulsante Invia in “Invia per revisione”
     - Se @age 65 anni o più:
     - Mostra opzioni sconto senior
-    - Aggiungi preferenze di accessibilità sezione
-    
+    - Aggiungi sezione di preferenze di accessibilità
 
 **Prompt specifici per regole:**
 
-    Crea una **regola di visibilità** che mostra @spouseInformation pannello solo quando @maritalStatus è uguale a &quot;Coniugato&quot; o &quot;Collaborazione domestica&quot;
+    Crea una **regola di visibilità** che mostra il pannello @spouseInformation solo quando @maritalStatus è uguale a “Coniugato” o “Convivenza”
     
-    Aggiungi **divulgazione progressiva** dove vengono visualizzate ulteriori domande in base alle risposte precedenti. Inizia con informazioni di base, quindi mostra i follow-up pertinenti
+    Aggiungi **divulgazione progressiva** dove vengono mostrate ulteriori domande in base alle risposte precedenti. Inizia con informazioni di base, quindi mostra i follow-up pertinenti
     
-    Implementa **impostazioni predefinite avanzate** in cui @country selezione imposta automaticamente i campi correlati. Consenti sostituzione manuale
+    Implementa **impostazioni predefinite avanzate** dove la selezione @country imposta automaticamente i campi correlati. Consenti sostituzione manuale
 
 ## Integrazione e invio dei dati
 
@@ -352,49 +351,49 @@ Questi esempi mostrano come creare moduli passo dopo passo, iniziando in modo se
     Configura invio modulo di base per @applicationForm:
     
     **Invio primario:**
-    - Invia dati modulo all&#39;endpoint REST: `/api/v1/applications`
+    - Invia dati modulo all’endpoint REST: `/api/v1/applications`
     - Formatta dati come JSON
-    - Mostra messaggio di operazione riuscita: &quot;Applicazione inviata correttamente&quot;
-    - Mostra messaggio di errore se l&#39;invio non riesce: &quot;Invio non riuscito, riprova&quot;
+    - Mostra messaggio di operazione riuscita: “Richiesta inviata correttamente”
+    - Mostra messaggio di errore se l’invio non riesce: “Invio non riuscito, riprova”
 
 **Aggiungi azioni secondarie in modo in modo incrementale:**
 
-    Aggiungi notifica e-mail a @applicationForm: invia un messaggio e-mail di conferma all@emailindirizzo con numero di riferimento dell&#39;applicazione
+    Aggiungi notifica e-mail ad @applicationForm: invia un messaggio e-mail di conferma all’indirizzo @email con numero di riferimento della richiesta
     
-    Aggiungi l&#39;integrazione CRM a @applicationForm: crea un nuovo record cliente potenziale con @firstName, @lastName, @email e imposta lo stato su &quot;Nuova applicazione&quot;
+    Aggiungi l’integrazione CRM ad @applicationForm: crea un nuovo record lead potenziale con @firstName, @lastName, @email e imposta lo stato su “Nuova richiesta”
 
-**Prompt di esempio: invio multicanale standard:**
+**Prompt di esempio- Invio multicanale standard:**
 
-    Configura invio modulo con più destinazioni dati:
+    Configura l’invio del modulo con più destinazioni dati:
     
     **Invio principale:**
-    - Invia dati modulo all&#39;endpoint REST: `/api/v1/applications`
+    - Invia dati modulo all’endpoint REST: `/api/v1/applications`
     - Includi intestazione autenticazione con chiave API
     - Formatta i dati come JSON con oggetti nidificati per indirizzo e impiego
-    - Gestisci risposta di successo (201) mostrando il messaggio di ringraziamento
+    - Gestisci risposta di completamento (201) mostrando il messaggio di ringraziamento
     
     **Azioni secondarie:**
-    - Invia e-mail di notifica al richiedente all&#39;indirizzo @email
-    - Copia i dati dell&#39;applicazione nel sistema di tracciamento
+    - Invia e-mail di notifica al richiedente all’indirizzo @email
+    - Copia i dati della richiesta nel sistema di tracciamento
     - Attiva il flusso di lavoro per il processo di approvazione
-    - Crea record nel CRM con stato nuovo Applicazione&quot;
+    - Crea record nel CRM con stato lead “Nuova richiesta”
     
     **Gestione degli errori:**
-    - Se l&#39;invio primario non riesce, salvare i dati localmente e riprovare
-    - Mostra messaggio di errore intuitivo: &quot;Invio temporaneamente non disponibile&quot;
-    - Fornire l&#39;opzione per scaricare i dati del modulo come backup
-    - Inviare un messaggio e-mail di avviso al team di amministrazione sull&#39;invio non riuscito
+    - Se l’invio primario non riesce, salvare i dati in locale e riprova
+    - Mostra messaggio di errore descrittivo: “Invio temporaneamente non disponibile”
+    - Fornisci l’opzione per scaricare i dati del modulo come backup
+    - Invia un messaggio e-mail di avviso al team di amministrazione sull’invio non riuscito
     
-    **Flusso di successo:**
-    - Reindirizzare alla pagina di conferma con il numero di riferimento dell&#39;applicazione
-    - Inviare un messaggio e-mail di conferma con i passaggi successivi
-    - Visualizzare la timeline di elaborazione stimata 
+    **Flusso di completamento:**
+    - Reindirizza alla pagina di conferma con il numero di riferimento della richiesta
+    - Invia un messaggio e-mail di conferma con i passaggi successivi
+    - Visualizza la timeline di elaborazione stimata
 
 **Prompt specifici per integrazione:**
 
-    Connetti il modulo al **sistema CRM** per creare nuovi lead. Mappa @firstName su FirstName, @email su Email, imposta LeadSource su &quot;Web Form&quot; e Status su &quot;New&quot;
+    Connetti questo modulo al **sistema CRM** per creare nuovi lead. Mappa @firstName su FirstName, @email su Email, imposta LeadSource su “Modulo web” e Status su “Nuovo”
     
-    Imposta **trigger del flusso di lavoro** quando il modulo viene inviato. Passa tutti i dati del modulo e attiva il flusso di lavoro di approvazione con la notifica del manager
+    Imposta **trigger del flusso di lavoro** quando il modulo viene inviato. Trasmetti tutti i dati del modulo e attiva il flusso di lavoro di approvazione con la notifica del manager
     
     Configura **integrazione del database** per salvare gli invii del modulo come record. Crea una nuova cartella per ogni invio con documenti caricati
 

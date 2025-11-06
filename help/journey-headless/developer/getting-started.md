@@ -4,8 +4,8 @@ description: In questa parte del Percorso per sviluppatori headless di AEM, appr
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -79,7 +79,7 @@ I modelli per frammenti di contenuto definiscono la struttura dei dati e del con
 
 I Frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l’uso in più posizioni e su più canali.
 
-I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuti strutturati e possono essere consegnati in formato JSON.
 
 ### API GraphQL e REST {#apis}
 
@@ -180,7 +180,7 @@ Pianificare la traduzione all’inizio del progetto. Considerare “specialista 
 Creare un piano su quali contenuti devono essere tradotti.
 
 * Hai bisogno di lingue diverse o anche di una lingua da adottare per caratteristiche regionali specifiche?
-* È necessario che contenuti multimediali complessi come immagini o video siano diversi per impostazioni internazionali diverse?
+* I contenuti multimediali complessi, come immagini o video, devono essere diversi per lingue diverse?
 
 Procedere con sicurezza sul flusso di lavoro di aggiornamento dei contenuti. Quale processo di approvazione deve supportare il sistema? È possibile utilizzare i flussi di lavoro AEM per automatizzare questo processo?
 
@@ -215,7 +215,7 @@ Consulta la sezione [risorse aggiuntive](#additional-resources) per ulteriore do
 
 ##### Non estendere troppo la nidificazione dei contenuti {#content-nesting}
 
-I [Frammenti di contenuto](#content-fragments) vengono utilizzati in AEM per creare contenuti headless. AEM supporta fino a dieci livelli di nidificazione dei contenuti per i frammenti di contenuto. Tuttavia è importante tenere presente che AEM deve risolvere in modo iterativo ogni riferimento definito nel frammento di contenuto principale, quindi verificare se in tutti gli elementi di pari livello sono presenti riferimenti figlio. Queste operazioni possono sommarsi rapidamente e provocare un problema di prestazioni.
+I [Frammenti di contenuto](#content-fragments) vengono utilizzati in AEM per creare contenuti headless. AEM supporta fino a dieci livelli di nidificazione dei contenuti per i frammenti di contenuto. Tuttavia è importante tenere presente che AEM deve risolvere in modo iterativo ogni riferimento definito nel frammento di contenuto principale, quindi verificare se in tutti gli elementi di pari livello sono presenti riferimenti secondari. Queste operazioni possono sommarsi rapidamente e provocare un problema di prestazioni.
 
 Come regola generale, i riferimenti ai frammenti di contenuto non dovrebbero essere nidificati oltre i cinque livelli.
 
@@ -287,12 +287,12 @@ Sebbene sia consigliabile spostarsi nella parte successiva del percorso per lo s
 * [Introduzione ad AEM come CMS headless](/help/headless/introduction.md)
 * Il [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
 * [Tutorial di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): segui questi pratici tutorial per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
-* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/it?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
+* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.
 * [Concetti sull’authoring](/help/sites-cloud/authoring/author-publish.md) - Documentazione tecnica per l’ambiente di authoring di AEM, compresi i dettagli sull’impostazione di authoring-pubblicazione
 * [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Documentazione tecnica per la pubblicazione dei contenuti su AEM
 * [Convenzioni di denominazione](/help/implementing/developing/introduction/naming-conventions.md) - Documentazione tecnica sulle restrizioni di denominazione delle pagine in AEM
-* [Gestore multisito e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
+* [Multi-Site Manager e traduzione](/help/sites-cloud/administering/msm-and-translation.md) - Documentazione tecnica sulle potenti funzioni di traduzione di AEM
 * [Flussi di lavoro AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentazione tecnica su come automatizzare i flussi di lavoro in AEM
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md) - Documentazione tecnica per i frammenti di contenuto.
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Documentazione tecnica per i modelli per frammenti di contenuto.

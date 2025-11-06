@@ -3,8 +3,8 @@ title: Come si configurano i filtri di ricerca per la casella in entrata?
 description: Scopri come configurare i filtri di ricerca per gli elementi della casella in entrata.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Per eliminare una configurazione personalizzata:
 
 Per configurare un predicato Range:
 
-1. Apri il modulo [&#x200B; per la configurazione](#creating-opening-customized-configuration).
+1. Apri il modulo [ per la configurazione](#creating-opening-customized-configuration).
 1. Seleziona la scheda **[!UICONTROL Seleziona predicato]** e trascina **[!UICONTROL Predicato intervallo]** nel modulo.
 1. Nella scheda **[!UICONTROL Impostazioni]**, seleziona il nome della colonna Posta in arrivo su cui basare la ricerca, dal campo **[!UICONTROL Nome colonna]**.
 1. Specificare l&#39;etichetta per il filtro nel campo **[!UICONTROL Etichetta filtro]**. Selezionare la casella di controllo **[!UICONTROL Abilita valori decimali]** per accettare valori decimali per i numeri durante la definizione dell&#39;intervallo.
@@ -71,7 +71,7 @@ Filtrare gli elementi della casella in entrata per cercare una stringa di testo 
 
 Per configurare un predicato di testo:
 
-1. Apri il modulo [&#x200B; per la configurazione](#creating-opening-customized-configuration).
+1. Apri il modulo [ per la configurazione](#creating-opening-customized-configuration).
 1. Seleziona la scheda **[!UICONTROL Seleziona predicato]** e trascina **[!UICONTROL Predicato di testo]** nel modulo.
 1. Nella scheda **[!UICONTROL Impostazioni]**, seleziona il nome della colonna Posta in arrivo su cui basare la ricerca, dal campo **[!UICONTROL Nome colonna]**.
 1. Specificare il testo visualizzato nella casella di testo Ricerca come testo segnaposto nel campo **[!UICONTROL Segnaposto casella di testo ricerca]**.
@@ -85,7 +85,7 @@ Le modifiche alla configurazione si riflettono all’apertura della pagina Filtr
 
 Per configurare un predicato di intervallo di date:
 
-1. Apri il modulo [&#x200B; per la configurazione](#creating-opening-customized-configuration).
+1. Apri il modulo [ per la configurazione](#creating-opening-customized-configuration).
 1. Seleziona la scheda **[!UICONTROL Seleziona predicato]** e trascina **[!UICONTROL Predicato intervallo date]** nel modulo.
 1. Nella scheda **[!UICONTROL Impostazioni]**, seleziona il nome della colonna Posta in arrivo su cui basare la ricerca, dal campo **[!UICONTROL Nome colonna]**.
 1. Specifica l&#39;etichetta per il filtro dell&#39;intervallo di date nel campo **[!UICONTROL Etichetta filtro]**.
@@ -100,7 +100,7 @@ Le modifiche alla configurazione si riflettono all’apertura della pagina Filtr
 
 Per configurare un predicato Opzioni colonna personalizzato:
 
-1. Apri il modulo [&#x200B; per la configurazione](#creating-opening-customized-configuration).
+1. Apri il modulo [ per la configurazione](#creating-opening-customized-configuration).
 1. Seleziona la scheda **[!UICONTROL Seleziona predicato]** e trascina **[!UICONTROL Predicato opzioni colonna personalizzate]** nel modulo.
 1. Nella scheda **[!UICONTROL Impostazioni]**, seleziona il nome della colonna Posta in arrivo su cui basare la ricerca, dal campo **[!UICONTROL Nome colonna]**.
 1. Specifica l&#39;etichetta per il filtro delle opzioni di colonna personalizzato nel campo **[!UICONTROL Etichetta filtro]**.

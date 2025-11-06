@@ -3,8 +3,8 @@ title: Componenti di configurazione dei frammenti di contenuto per il rendering
 description: Componenti di configurazione dei frammenti di contenuto per il rendering
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 5%
@@ -22,7 +22,7 @@ Queste informazioni sono necessarie quando:
 * È necessario implementare un componente basato su frammenti di contenuto personalizzato,
 * E devono utilizzare i servizi avanzati.
 
-L’Adobe consiglia di utilizzare i Componenti core.
+Adobe consiglia di utilizzare i Componenti core.
 
 >[!CAUTION]
 >
@@ -136,7 +136,7 @@ Per alcune funzionalità il componente dovrà rispettare convenzioni predefinite
 
 ## Esempio {#example}
 
-Ad esempio, consulta quanto segue (su un’istanza di AEM preconfigurata):
+Ad esempio, consulta quanto segue (su un’istanza predefinita di AEM):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

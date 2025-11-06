@@ -4,8 +4,8 @@ description: Scopri in che modo Cloud Manager valuta le prestazioni della rete C
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
@@ -48,7 +48,7 @@ Per informazioni dettagliate sulle prestazioni CDN e suggerimenti su come miglio
 
 Fai clic su **Visualizza** sotto il grafico per modificare l&#39;intervallo di tempo del grafico.
 
-Per suggerimenti su come migliorare le prestazioni CDN, seleziona la scheda **Recommendations**.
+Per suggerimenti su come migliorare le prestazioni CDN, seleziona la scheda **Consigli**.
 
 ![Consigli CDN](assets/cdn-performance-recommendations.png)
 

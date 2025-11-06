@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -222,6 +222,7 @@ Scopri in che modo le funzioni personalizzate utilizzano oggetti campo e globali
 
 La seguente riga di codice:
 `globals.functions.submitForm(globals.functions.exportData(), false);` viene utilizzato per inviare i dati del modulo dopo la manipolazione.
+
 * Il primo argomento è costituito dai dati da inviare.
 * Il secondo argomento indica se il modulo deve essere convalidato prima dell&#39;invio. È `optional` ed è impostato come `true` per impostazione predefinita.
 * Il terzo argomento è `contentType` dell&#39;inoltro, che è anche facoltativo con il valore predefinito `multipart/form-data`. Gli altri valori possono essere `application/json` e `application/x-www-form-urlencoded`.
@@ -523,7 +524,7 @@ Fare riferimento al file GIF riportato di seguito, a dimostrazione che quando si
   `const pattern = new RegExp("^abc$");`
 Effettua il refactoring delle espressioni regolari per utilizzare il costruttore RegExp per garantire un’esecuzione coerente e affidabile.
 
-## Risoluzione dei problemi
+## Risoluzione di problemi
 
 * Se il gestore di invio personalizzato non funziona come previsto nei progetti o moduli AEM esistenti, effettua le seguenti operazioni:
    * Verificare che la versione dei componenti core [sia aggiornata a 3.0.18 e versioni successive](https://github.com/adobe/aem-core-forms-components). Tuttavia, per i progetti e i moduli AEM esistenti, sono disponibili ulteriori passaggi da seguire:

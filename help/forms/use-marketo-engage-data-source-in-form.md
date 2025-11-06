@@ -5,7 +5,7 @@ keywords: 'Utilizzare l’origine dati Marketo Engage in Adaptive Forms: come co
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 8%
@@ -109,8 +109,10 @@ Il modulo è ora configurato con l’origine dati dell’istanza di Marketo Enga
 **D: cosa succede quando si modifica il connettore del modulo?**\
 **A:** Se si modifica il connettore del modulo, le associazioni esistenti non saranno più valide.
 
-**D: quali sono le tre operazioni disponibili nel servizio Invoke dell&#39;editor di regole per i moduli integrati con Marketo Engage?**\
+**D: quali sono le tre operazioni disponibili nel servizio Invoke dell&#39;editor di regole per i moduli integrati con Marketo Engage?**
+
 **A:** Le tre operazioni predefinite disponibili in **Invoke Service** per i moduli integrati con Marketo Engage sono:
+
 * Sincronizza lead
 * Ottieni lead per ID
 * Ottieni lead per tipo di filtro

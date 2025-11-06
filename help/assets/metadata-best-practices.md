@@ -4,7 +4,7 @@ description: Scopri le best practice sui metadati per gestire in modo efficace l
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Determina da dove provengono le informazioni ed esamina i dettagli della strateg
 
 >[!NOTE]
 >
->Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=it).
+>Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Coerenza con la strategia per i metadati
 
@@ -107,11 +107,13 @@ Nella gestione dei metadati a livello aziendale, la coerenza è importante per l
 
 Ecco alcune delle best practice da seguire:
 
-* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.<br>
-Ad esempio, invece di utilizzare nomi duplicati come *campaign_image_001* e *campaign_image_002*, implementa una convenzione di denominazione sistematica come *event_promotion* e *product_launch*, garantendo un&#39;identificazione chiara e ordinata.
+* **Evita valori duplicati:** Se disponi di una raccolta di immagini da una campagna di marketing, utilizza nomi coerenti ed evita duplicati.
 
-* **Utilizza i vocabolari controllati in modo efficace:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag. Scopri come implementare [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) in modo efficace.  <br>
-Ad esempio, utilizza in modo coerente termini come *product_launch* o *event_promotion* quando assegni tag alle immagini con temi per mantenere una sequenza sistematica.
+  Ad esempio, invece di utilizzare nomi duplicati come *campaign_image_001* e *campaign_image_002*, implementa una convenzione di denominazione sistematica come *event_promotion* e *product_launch*, garantendo un&#39;identificazione chiara e ordinata.
+
+* **Utilizza i vocabolari controllati in modo efficace:** Implementa i vocabolari controllati utilizzando termini standardizzati per i tag. Scopri come implementare [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) in modo efficace.
+
+  Ad esempio, utilizza in modo coerente termini come *product_launch* o *event_promotion* quando assegni tag alle immagini con temi per mantenere una sequenza sistematica.
 
 * **Mantieni precisione e completezza:** Per mantenere coerenti i metadati, sono fondamentali precisione, completezza e allineamento tra le varie origini.
 Ad esempio, quando aggiungi metadati a un documento PDF, verifica che dettagli come i nomi degli autori e le parole chiave siano precisi e completi.
@@ -136,7 +138,7 @@ Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
    1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
-  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
+  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Campi metadati personalizzati:** Personalizza i campi metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca. Scopri [come modificare o aggiungere metadati personalizzati](meta-edit.md) in Experience Manager Assets.
 
@@ -166,4 +168,4 @@ Esaminare la catena di fornitura dei contenuti per individuare le origini dei me
 
 Comunica tempestivamente obiettivi, progressi, tappe fondamentali e sfide per ricevere il contributo e la cooperazione di tutte le parti interessate. Incoraggiare la collaborazione all&#39;interno dell&#39;organizzazione per creare processi efficienti e metadati preziosi.
 
-Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=it) per gestire in modo efficace i metadati di Experience Manager.
+Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) per gestire in modo efficace i metadati di Experience Manager.

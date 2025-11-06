@@ -5,8 +5,8 @@ description: Modalità sviluppatore apre un pannello laterale con diverse schede
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -31,8 +31,7 @@ Questi aiutano uno sviluppatore a:
 >
 >Modalità sviluppatore:
 >
->* Non è disponibile su dispositivi mobili o piccole finestre sul desktop (a causa di limitazioni di spazio).
->  * Ciò si verifica quando la larghezza è inferiore a 1024 px.
+>* Non è disponibile su dispositivi mobili o piccole finestre sul desktop (a causa di limitazioni di spazio). Ciò si verifica quando la larghezza è inferiore a 1024 px.
 >* È disponibile solo per gli utenti membri del gruppo `administrators`.
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}
@@ -91,7 +90,7 @@ Inoltre, l’espansione di una voce di componente toccando o facendo clic sulla 
 
 Si spera che la scheda **Errori** sia sempre vuota (come sopra), ma in caso di problemi potrebbero essere visualizzati i dettagli seguenti per ciascun componente:
 
-* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato all’interno di CRXDE Lite.
+* Un avviso se il componente scrive una voce nel registro degli errori, insieme a dettagli dell’errore e collegamenti diretti al codice appropriato in CRXDE Lite.
 * Un avviso se il componente apre una sessione di amministrazione.
 
 Ad esempio, se viene chiamato un metodo non definito, l&#39;errore risultante viene visualizzato nella scheda **Errori** e la voce del componente nella struttura della scheda **Componenti** verrà contrassegnata con un indicatore quando si verifica un errore.

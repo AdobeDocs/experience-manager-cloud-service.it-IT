@@ -4,9 +4,9 @@ description: In questa parte del Percorso per sviluppatori headless di AEM, scop
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ In questa parte del [Percorso per sviluppatori di AEM Headless](overview.md), sc
 Questo documento è utile per comprendere la distribuzione dei contenuti headless e perché deve essere utilizzata. Dopo la lettura dovresti:
 
 * Comprendere i concetti e la terminologia di base per la distribuzione di contenuti headless
-* Capire perché e quando è richiesto un headless
+* Perché e quando è richiesto un headless
 * Conoscere ad alto livello come vengono utilizzati i concetti headless e come si relazionano
 
 ## Distribuzione contenuti full-stack {#full-stack}

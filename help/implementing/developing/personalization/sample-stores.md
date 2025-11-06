@@ -1,17 +1,17 @@
 ---
-title: Candidati archivio ContextHub di esempio
+title: Candidati dell’archivio di ContextHub di esempio
 description: ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle tue soluzioni
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Candidati archivio ContextHub di esempio {#sample-contexthub-store-candidates}
+# Candidati dell’archivio di ContextHub di esempio {#sample-contexthub-store-candidates}
 
 ContextHub fornisce diversi esempi di store candidati che puoi utilizzare nelle soluzioni. Per ciascun campione vengono fornite le seguenti informazioni:
 
@@ -105,7 +105,7 @@ L’archivio utilizza una struttura dati simile a quella del seguente esempio:
 
 >[!NOTE]
 >
->Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, l’AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se l’AEM è in esecuzione anche su https. In caso contrario, http viene utilizzato per rispettare il criterio della stessa origine.
+>Un criterio di sicurezza introdotto in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione vengano effettuate tramite una connessione protetta. Pertanto, AEM forza l’utilizzo di https per le chiamate API di geolocalizzazione se AEM viene eseguito anche su https. In caso contrario, http viene utilizzato per rispettare il criterio della stessa origine.
 >
 >Consulta [questo post di blog di Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
 

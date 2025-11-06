@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 10%
@@ -37,8 +37,8 @@ La legenda seguente descrive il livello di supporto per ciascun formato.
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] supporta solo i formati di file elencati in questo articolo.
->&#x200B;>Alcune funzionalità potrebbero funzionare con altri formati, ma questi formati non sono ufficialmente supportati. I risultati potrebbero essere incoerenti e le funzioni potrebbero non funzionare come previsto.
->&#x200B;>Per garantire risultati coerenti e affidabili, utilizza solo i formati supportati.
+>Alcune funzionalità potrebbero funzionare con altri formati, ma questi formati non sono ufficialmente supportati. I risultati potrebbero essere incoerenti e le funzioni potrebbero non funzionare come previsto.
+>Per garantire risultati coerenti e affidabili, utilizza solo i formati supportati.
 
 ## Formati Adobe {#adobe-formats}
 
@@ -279,7 +279,7 @@ Vedi anche [Formati 3D supportati](/help/assets/file-format-support.md#support-3
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

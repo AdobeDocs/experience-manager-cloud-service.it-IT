@@ -3,8 +3,8 @@ title: Headful e headless in AEM
 description: È possibile implementare i progetti AEM in un modello headful e headless, ma la scelta non è binaria. AEM offre la flessibilità di sfruttare i vantaggi di entrambi i modelli in un unico progetto.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 90%
@@ -29,7 +29,7 @@ In un modello headful o full stack, il contenuto viene gestito nell’archivio A
 
 In un modello headless, il contenuto viene gestito nell’archivio AEM, ma distribuito tramite API come REST e GraphQL a un altro sistema per eseguire il rendering del contenuto per l’esperienza utente. In questo modello, il contenuto viene creato in AEM, ma la sua presentazione, distribuzione e attribuzione di stile avvengono su un’altra piattaforma.
 
-Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, non è necessario che questi SPA siano completamente esterni all&#39;AEM. L’AEM consente di decidere in che misura l’SPA viene integrato nell’AEM. Prendiamo un esempio.
+Le applicazioni a pagina singola (SPA) sono spesso la destinazione del contenuto headless consegnato da AEM. Tuttavia, queste applicazioni a pagina singola non devono essere completamente esterne ad AEM. AEM consente di decidere in che misura le applicazioni a pagina singola vengono integrate in AEM. Prendiamo un esempio.
 
 ## Esempio di negozio web {#web-shop-example}
 
@@ -45,7 +45,7 @@ La sezione successiva esplora più dettagliatamente questi livelli di integrazio
 
 >[!NOTE]
 >
->Naturalmente è possibile anche implementare nuovamente la SPA del negozio web come una SPA AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM](/help/implementing/developing/hybrid/introduction.md). Se hai già un AEM e vuoi creare un negozio online o un altro SPA, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
+>Naturalmente è possibile anche implementare nuovamente la SPA del negozio web come una SPA AEM pienamente funzionante [utilizzando il framework dell’editor SPA AEM](/help/implementing/developing/hybrid/introduction.md). Se disponi già di AEM e desideri creare un Web shop o un’altra applicazione a pagina singola, questo è il metodo consigliato, ma non rientra nell’ambito di questo documento.
 
 ## Livelli di integrazione SPA {#integration-levels}
 

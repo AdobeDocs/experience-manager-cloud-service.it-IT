@@ -4,7 +4,7 @@ description: Note sulla versione 2025.2.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -61,7 +61,7 @@ Continueremo ad abilitare il nuovo [Editor frammento di contenuto](/help/sites-c
 
 **API HTTP di traduzione**
 
-L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [&#x200B; qui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L&#39;API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione per il contenuto in AEM.
+L’API REST HTTP di traduzione AEM, solo per i primi utilizzatori per un certo periodo, adesso è in disponibilità generale. La documentazione è disponibile [ qui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) L&#39;API consente di automatizzare i passaggi richiesti nel processo di gestione della traduzione per il contenuto in AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -121,13 +121,14 @@ Il **runtime** Java 21, con prestazioni più elevate, verrà distribuito automat
 
 >[!IMPORTANT]
 >
-> A febbraio, il **runtime** di Java 21 è stato distribuito in ambienti dev/RDE (oltre a quelli già generati con Java 17 o 21, che dispongono già del runtime di Java 21). Java 21 verrà applicato agli ambienti di staging/produzione nel mese di aprile.
+> A febbraio, il **runtime** di Java 21 è stato distribuito in ambienti dev/RDE (oltre a quelli già generati con Java 17 o 21, che dispongono già del runtime di Java 21). Java 21 verrà applicato agli ambienti di staging e di produzione nel mese di aprile.
 
 ### Edge Computing - Richiesta di feedback! {#edge-computing-feedback}
 
 L’Edge computing avvicina l’elaborazione dei dati al browser, il che offre vantaggi quali una latenza ridotta. Adobe desidera ricevere commenti sull’utilità di questa tecnologia per i progetti Pubblica cosegna AEM e Edge Delivery Services. Inoltre, il modo in cui pensi di utilizzarla per contribuire alla roadmap.
 
 Alcuni possibili casi d’uso:
+
 * Autenticazione con un IdP per ottenere l’accesso al contenuto
 * Rendering di contenuti dinamici (personalizzati, localizzati) in base alla geolocalizzazione, al tipo di dispositivo, agli attributi utente e così via.
 * Manipolazione avanzata delle immagini

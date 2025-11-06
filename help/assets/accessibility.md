@@ -1,14 +1,14 @@
 ---
-title: Accessibilità in [!DNL Experience Manager Assets]
+title: Accessibilità in  [!DNL Experience Manager Assets]
 description: Scopri in che modo le funzionalità di accessibilità di  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aiutano gli utenti con disabilità.
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -225,7 +225,7 @@ Quando si condividono le risorse, le seguenti funzionalità migliorano l’acces
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

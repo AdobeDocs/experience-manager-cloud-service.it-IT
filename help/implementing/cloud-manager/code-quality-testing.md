@@ -4,8 +4,8 @@ description: Scopri come funziona il test della qualità del codice delle pipeli
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 80%
@@ -29,7 +29,7 @@ Per ulteriori informazioni sui diversi tipi di pipeline, consulta il documento [
 
 ## Regole per la qualità del codice {#understanding-code-quality-rules}
 
-Il test di qualità del codice controlla il codice sorgente per garantire che soddisfi determinati criteri di qualità. Questo passaggio è implementato tramite una combinazione di SonarQube e l’esame dei contenuti a livello di pacchetto tramite OakPAL. Esistono più di 100 regole, che combinano regole Java generiche e regole specifiche per l’AEM. Alcune regole specifiche per AEM si basano sulle best practice indicate dal team ingegneristico dell&#39;AEM e sono note come [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Il test di qualità del codice controlla il codice sorgente per garantire che soddisfi determinati criteri di qualità. Questo passaggio è implementato tramite una combinazione di SonarQube e l’esame dei contenuti a livello di pacchetto tramite OakPAL. Sono presenti più di 100 regole, che combinano regole Java generiche e regole specifiche per AEM. Alcune regole specifiche per AEM si basano sulle best practice indicate dal team ingegneristico di AEM e sono note come [regole per la qualità del codice personalizzato](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 È possibile scaricare l’attuale elenco completo delle regole [utilizzando questo collegamento](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
@@ -43,7 +43,7 @@ I problemi identificati dai test di qualità del codice vengono assegnati a una 
 
 * **Critico**: si tratta di problemi che causano un errore immediato della pipeline.
 
-* **Importante**: si tratta di problemi che causano la sospensione dell’esecuzione della pipeline. Un Responsabile della distribuzione, un Project Manager o un Proprietario business possono ignorare i problemi, consentendo alla pipeline di procedere. In alternativa, può accettare i problemi, causando l’interruzione della pipeline con un errore.
+* **Importante**: si tratta di problemi che causano la sospensione dell’esecuzione della pipeline. Un Responsabile della distribuzione, un Project Manager o un Proprietario business possono ignorare i problemi, consentendo alla pipeline di procedere. In alternativa, possono accettare i problemi, causando l’interruzione della pipeline con un errore.
 
 * **Informazioni** - Problemi forniti a scopo puramente informativo e che non hanno alcun impatto sull&#39;esecuzione della pipeline
 
@@ -115,13 +115,13 @@ la soluzione corretta è rimuovere la password hardcoded.
 
 ## Ottimizzazione dell’analisi dei pacchetti di contenuti {#content-package-scanning-optimization}
 
-Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Cloud Manager offre ottimizzazioni per accelerare questo processo, che è efficace quando si osservano determinati vincoli relativi ai pacchetti. L’ottimizzazione più significativa riguarda i progetti che producono un singolo pacchetto &quot;all&quot; (tutti), contenente più pacchetti di contenuto della build contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, scansiona i singoli pacchetti di contenuti e li ordina in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
+Come parte del processo di analisi della qualità, Cloud Manager esegue l’analisi dei pacchetti di contenuti prodotti dalla build Maven. Cloud Manager offre ottimizzazioni per accelerare questo processo, che è efficace quando si osservano determinati vincoli relativi ai pacchetti. L’ottimizzazione più significativa riguarda i progetti che producono un singolo pacchetto &quot;all&quot; (tutti), contenente più pacchetti di contenuto della build contrassegnati come ignorati. Quando Cloud Manager rileva questo scenario, anziché decomprimere il pacchetto “all”, i singoli pacchetti di contenuti vengono analizzati direttamente e ordinati in base alle dipendenze. Consideriamo ad esempio il seguente output di build.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (pacchetto di contenuti ignorato)
 
-Se gli unici elementi all’interno di `myco-all-1.0.0-SNAPSHOT.zip` sono i due pacchetti di contenuto ignorato, allora i due pacchetti incorporati sono analizzati al posto del pacchetto di contenuto “all”.
+Se gli unici elementi all’interno di `myco-all-1.0.0-SNAPSHOT.zip` sono i due pacchetti di contenuti ignorati, allora i due pacchetti incorporati sono analizzati al posto del pacchetto di contenuti “all”.
 
 Per i progetti che producono decine di pacchetti incorporati, è comprovato che questa ottimizzazione consente di risparmiare fino a 10 minuti per ogni esecuzione della pipeline.
 

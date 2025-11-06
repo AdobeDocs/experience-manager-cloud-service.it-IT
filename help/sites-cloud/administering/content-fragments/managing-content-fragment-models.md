@@ -2,10 +2,10 @@
 title: Gestione dei modelli per frammenti di contenuto
 description: Scopri come gestire i modelli per frammenti di contenuto, che fungono da base per i frammenti di contenuto in AEM e consentono di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring delle pagine.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 35%
@@ -215,7 +215,7 @@ Selezionare ad esempio **Abilitato** nella colonna **Stato**. Una volta selezion
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa alla cartella appropriata per la configurazione [&#x200B; o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Utilizza **Crea** per aprire la finestra di dialogo.
 
    >[!CAUTION]

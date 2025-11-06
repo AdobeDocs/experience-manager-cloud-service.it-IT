@@ -4,7 +4,7 @@ description: Utilizza l’editor Rich Text per le note a piè di pagina in un mo
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -30,11 +30,12 @@ Le note a piè di pagina sono numerate in sequenza in base all&#39;ordine di vis
 * Fornisce informazioni aggiuntive che possono interrompere il normale flusso delle informazioni principali.
 * Fornisce informazioni parentetiche o autorizzazioni di copyright.
 
-In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
+In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Nota a piè di pagina in Forms adattivo {#using-footnote-adaptiveforms}
 
 Per aggiungere una nota a piè di pagina in Adaptive Forms, effettuate le seguenti operazioni:
+
 1. Apri un modulo adattivo in modalità **Modifica**.
 1. Dal browser componenti, trascina il componente **[!UICONTROL Testo]** nel modulo adattivo.
 1. Seleziona il componente **[!UICONTROL Testo]** aggiunto e seleziona ![cmppr](assets/configure-icon.svg) per modificarne le proprietà.

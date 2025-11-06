@@ -5,24 +5,24 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 57%
+ht-degree: 58%
 
 ---
 
 
 # Aggiungere una pipeline non di produzione {#configuring-non-production-pipelines}
 
-Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima di distribuirle negli ambienti di produzione.
+Scopri come configurare le pipeline non di produzione per eseguire test sulla qualità del codice prima dell’implementazione negli ambienti di produzione.
 
 Per configurare le pipeline non di produzione, l&#39;utente deve avere il ruolo **[Responsabile dell&#39;implementazione](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**.
 
 ## Pipeline non di produzione {#non-production-pipelines}
 
-Oltre alle [pipeline di produzione](#configuring-production-pipelines.md), che distribuiscono negli ambienti di staging e di produzione, per convalidare il codice è possibile configurare anche delle pipeline non di produzione.
+Oltre alle [pipeline di produzione](#configuring-production-pipelines.md), per l’implementazione negli ambienti di staging e di produzione, per convalidare il codice è possibile configurare anche delle pipeline non di produzione.
 
 Esistono due tipi di pipeline non di produzione:
 
@@ -37,9 +37,9 @@ Esistono due tipi di pipeline non di produzione:
 
 Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza l’interfaccia utente di Cloud Manager, puoi aggiungere una pipeline non di produzione seguendo la procedura riportata di seguito.
 
-1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com).
+1. Accedi a Cloud Manager dall’indirizzo [experience.adobe.com](https://experience.adobe.com).
 1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
-1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
+1. Nel pannello laterale a sinistra, fai clic su **Cloud Manager**.
 1. Selezionare un&#39;organizzazione desiderata.
 1. Nella console **Programmi** fare clic su un programma.
 

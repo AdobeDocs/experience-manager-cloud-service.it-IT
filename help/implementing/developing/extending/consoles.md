@@ -3,17 +3,17 @@ title: Personalizzazione delle console
 description: Scopri le diverse opzioni fornite da AEM per personalizzare le console dell’istanza di authoring.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Personalizzazione delle console {#customizing-consoles}
 
-AEM offre opzioni per personalizzare le console (e la funzionalità di [authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)) dell&#39;istanza di authoring.
+AEM fornisce opzioni per personalizzare le console (e la funzionalità di [authoring delle pagine](/help/implementing/developing/extending/page-authoring.md)) dell&#39;istanza di authoring.
 
 ## Clientlibs {#clientlibs}
 

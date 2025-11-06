@@ -2,12 +2,12 @@
 title: Aggiungere un sito Edge Delivery a Cloud Manager
 description: Scopri come aggiungere un sito Edge Delivery al programma di produzione o al programma sandbox.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ddf2d80330ecfddad4af8a05c95cdba7f968a986
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >Scopri perché devi effettuare l’onboarding del sito Edge Deliver Services in Cloud Manager.
->&#x200B;>Consulta [Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>Consulta [Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Per aggiungere un sito Edge Delivery a Cloud Manager:**
 
 1. Prima di effettuare l’onboarding di un sito Edge Delivery in Cloud Manager, assicurati di aver creato il programma con una licenza Edge Delivery Services.
 Consulta [Creare un programma di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Accedi a Cloud Manager all&#39;indirizzo [experiece.adobe.com](https://experience.adobe.com).
+1. Accedi a Cloud Manager dall’indirizzo [experience.adobe.com](https://experience.adobe.com).
 1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
-1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
+1. Nel pannello laterale a sinistra, fai clic su **Cloud Manager**.
 1. Selezionare un&#39;organizzazione desiderata.
 1. Nella console **Programmi** fare clic su un programma.
 1. Effettua una delle seguenti operazioni:

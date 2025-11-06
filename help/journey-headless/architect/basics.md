@@ -4,11 +4,11 @@ description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS 
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 All’inizio del [percorso Architect di contenuti AEM headless](overview.md) l’[introduzione](introduction.md) ha trattato i concetti e la terminologia di base relativi alla modellazione dei contenuti headless.
 
-Questo articolo si basa su questi principi per comprendere come modellare i contenuti per un progetto headless AEM.
+Questo articolo si basa su questi principi per comprendere come modellare i contenuti per il progetto AEM headless.
 
 ## Obiettivo {#objective}
 
@@ -119,7 +119,7 @@ Il tipo di dati può essere configurato in modo da consentire agli autori di fra
 
 >[!NOTE]
 >
->Nell’editor i riferimenti UUID specificano il percorso della risorsa di riferimento; internamente, tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alle risorse.
+>Nell’editor i riferimenti UUID specificano il percorso della risorsa di riferimento; internamente tali riferimenti vengono considerati come ID universalmente univoci (UUID) che fanno riferimento alle risorse.
 
 ## Livelli di struttura (frammenti nidificati) {#levels-of-structure-nested-fragments}
 

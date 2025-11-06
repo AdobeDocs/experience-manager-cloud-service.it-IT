@@ -3,9 +3,9 @@ title: Introduzione all’editor universale
 description: L’editor universale è un moderno strumento di authoring visivo progettato per consentire all’organizzazione di marketing di produrre esperienze web di impatto.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 100%
 

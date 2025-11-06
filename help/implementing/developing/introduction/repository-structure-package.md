@@ -3,8 +3,8 @@ title: Pacchetto per la struttura dell’archivio dei progetti AEM
 description: I progetti Maven in Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le directory principali dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Pacchetto per la struttura dell’archivio dei progetti AEM
 
-I progetti Maven per Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le directory principali dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto. Questo metodo garantisce che l’installazione dei pacchetti in Experience Manager as a Cloud Service venga ordinata automaticamente in base alle dipendenze delle risorse JCR. Le dipendenze mancanti possono portare a scenari in cui le sottostrutture verrebbero installate prima delle strutture padre e quindi rimosse in modo imprevisto, interrompendo la distribuzione.
+I progetti Maven per Adobe Experience Manager as a Cloud Service richiedono una definizione di pacchetto secondario della struttura dell’archivio il cui unico scopo è quello di definire le directory principali dell’archivio JCR in cui vengono distribuiti i pacchetti secondari del codice del progetto. Questo metodo assicura che l’installazione dei pacchetti in Experience Manager as a Cloud Service venga ordinata automaticamente in base alle dipendenze delle risorse JCR. Le dipendenze mancanti possono portare a scenari in cui le sottostrutture verrebbero installate prima delle strutture padre e quindi rimosse in modo imprevisto, interrompendo la distribuzione.
 
 Se il pacchetto di codice viene distribuito in una posizione **non coperta** dal pacchetto stesso, tutte le risorse precedenti (risorse JCR più vicine alla radice JCR) devono essere enumerate nel pacchetto della struttura dell&#39;archivio. Questo processo è necessario per stabilire tali dipendenze.
 

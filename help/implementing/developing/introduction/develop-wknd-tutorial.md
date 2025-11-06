@@ -3,9 +3,9 @@ title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
 description: Nessuna esperienza nello sviluppo in AEM? Hai bisogno di un aggiornamento sulle best practice? Puoi cominciare da qui! L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che non conosce AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
@@ -34,7 +34,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 L’implementazione del tutorial utilizza molte funzioni avanzate di AEM. Il sito viene implementato utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=it)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)

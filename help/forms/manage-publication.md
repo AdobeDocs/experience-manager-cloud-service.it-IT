@@ -7,19 +7,20 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# &#x200B;Gestisci pubblicazione in Experience Manager Forms
+# Gestire la pubblicazione in Experience Manager Forms
 
 In qualità di amministratore di Adobe Experience Manager (AEM) Forms, puoi pubblicare moduli dall’istanza di authoring a Experience Manager Forms. È inoltre possibile pianificare la pubblicazione di un modulo o di una cartella per una data o un&#39;ora successiva. Dopo la pubblicazione, gli utenti possono accedere e compilare i moduli.
 
 In Experience Manager Forms è possibile pubblicare un modulo utilizzando uno dei metodi seguenti:
+
 * [Opzione di pubblicazione](#publish-forms-using-the-publish-option)
 * [Opzione Gestisci pubblicazione](#publish-forms-using-the-manage-publication-option)
 
@@ -32,7 +33,7 @@ In Experience Manager Forms è possibile pubblicare un modulo utilizzando uno de
 
 L&#39;opzione **Pubblica** consente di pubblicare immediatamente un modulo. Per pubblicare un Experience Manager Form utilizzando il pulsante **Pubblica** sulla barra degli strumenti. Per pubblicare i moduli tramite l’opzione Pubblica:
 
-1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo da pubblicare.
+1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo che desideri pubblicare.
 1. Fai clic sull&#39;opzione **Pubblica** nella barra degli strumenti e controlla tutte le risorse di riferimento che verranno pubblicate con il modulo.
 1. Fai clic su **[!UICONTROL Pubblica]**.
 
@@ -52,7 +53,7 @@ Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Pubblic
    Quando fai clic sul pulsante **[!UICONTROL Annulla pubblicazione]**, viene visualizzata la finestra di dialogo **Annulla pubblicazione risorsa**.
 1. Fai clic su **[!UICONTROL Annulla pubblicazione]** per avviare il processo di annullamento della pubblicazione
 
-   ![Rimuovi &#x200B;](/help/forms/assets/unpublish-asset.png)
+   ![Rimuovi ](/help/forms/assets/unpublish-asset.png)
 
    Dopo aver annullato la pubblicazione del modulo e delle risorse correlate, viene visualizzata la finestra di dialogo **Operazione riuscita**.
 1. Fai clic su **Chiudi**.
@@ -63,7 +64,7 @@ Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Pubblic
 
 Gestisci pubblicazione consente di pubblicare o annullare la pubblicazione dei contenuti da e verso la destinazione selezionata, aggiungere contenuto all&#39;elenco di pubblicazione dalla cartella `forms&documents`, selezionare i riferimenti da pubblicare e pianificare la pubblicazione a una data o un&#39;ora successiva.  Per pubblicare i moduli con l&#39;opzione **Gestisci pubblicazione**:
 
-1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo da pubblicare.
+1. Dalla console Experience Manager Forms, passa alla cartella principale e seleziona il modulo che desideri pubblicare.
 1. Fai clic sull&#39;opzione **[!UICONTROL Gestisci pubblicazione]** nella barra degli strumenti.
 
    ![Opzione Gestisci pubblicazione](/help/forms/assets/manage-publication-option.png)

@@ -3,8 +3,8 @@ title: Utilizzo delle librerie lato client su AEM as a Cloud Service
 description: AEM fornisce cartelle della libreria lato client, che ti consentono di memorizzare il codice lato client (clientlibs) nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Utilizzo delle librerie lato client su AEM as a Cloud Service {#using-client-side-libraries}
 
-Le esperienze digitali si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client di AEM (clientlibs) consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. In combinazione con il [processo di sviluppo front-end nell&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it), la gestione del codice front-end per il progetto AEM diventa semplice.
+Le esperienze digitali si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. Le librerie lato client di AEM (clientlibs) consentono di organizzare e archiviare centralmente queste librerie lato client all’interno dell’archivio. In combinazione con il [processo di sviluppo front-end nell&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it), la gestione del codice front-end per il progetto AEM diventa semplice.
 
 I vantaggi dell’utilizzo di clientlibs in AEM includono:
 
@@ -27,7 +27,7 @@ Clientlibs è la soluzione integrata per la distribuzione di CSS e JavaScript da
 
 >[!TIP]
 >
->Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono acquisire familiarità con [Archetipo progetto AEM e il relativo processo di sviluppo front-end automatizzato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it).
+>Anche gli sviluppatori front-end che creano CSS e JavaScript per progetti AEM devono acquisire familiarità con [Archetipo progetto AEM e il relativo processo di sviluppo front-end automatizzato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it).
 
 ## Cosa sono le librerie lato client {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ AEM raccoglie i file CSS e JavaScript del sito in un unico file, in una posizion
 
 ## Sviluppo front-end per AEM as a Cloud Service {#fed-for-aemaacs}
 
-Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere mantenute nel modulo [ui.frontend dell&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it). La flessibilità dell’archetipo consente di utilizzare i moderni strumenti web a tua scelta per creare e gestire tali risorse.
+Tutte le risorse JavaScript, CSS e altre risorse front-end devono essere mantenute nel modulo [ui.frontend dell&#39;archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it). La flessibilità dell’archetipo consente di utilizzare i moderni strumenti web a tua scelta per creare e gestire tali risorse.
 
 L&#39;archetipo può quindi compilare le risorse in singoli file CSS e JS, incorporandoli automaticamente in un `cq:clientLibraryFolder` nell&#39;archivio.
 
@@ -92,7 +92,7 @@ Per rendere accessibili le librerie client in `/apps`, viene utilizzato un servl
 1. Se è necessario gestire risorse statiche, creare una sottocartella denominata `resources` sotto la cartella della libreria client.
    * Se si archiviano risorse statiche in un punto qualsiasi diverso dalla cartella `resources`, non è possibile farvi riferimento in un&#39;istanza Publish.
 1. Aggiungere i file di origine alla cartella della libreria.
-   * Questa operazione viene in genere eseguita dal processo di compilazione front-end dell&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it).
+   * Questa operazione viene in genere eseguita dal processo di compilazione front-end dell&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?=it).
    * Se necessario, è possibile organizzare i file di origine in sottocartelle.
 1. Selezionare la cartella della libreria client e fare clic su **Crea > Crea file**.
 1. Nella casella Nome file digitare uno dei seguenti nomi di file e fare clic su OK:
@@ -127,7 +127,7 @@ Le librerie client vengono caricate tramite un modello helper fornito da AEM, ac
 
 Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
-[Consulta la documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=it#loading-client-libraries) per ulteriori dettagli sul caricamento di clientlibs tramite HTL.
+[Consulta la documentazione di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) per ulteriori dettagli sul caricamento di clientlibs tramite HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}

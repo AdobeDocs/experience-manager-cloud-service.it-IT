@@ -6,10 +6,10 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2047'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -58,16 +58,16 @@ Il video seguente offre una guida dettagliata sui prerequisiti (come creazione d
 Prima di configurare il connettore AEP in AEM Forms, assicurati di aver completato quanto segue in Adobe Experience Platform:
 
 1. Configurazione schema
-   * [Creare uno schema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Abilita schema per la profilatura](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Definisci campo identità](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Creare uno schema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Abilita schema per la profilatura](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Definisci campo identità](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configurazione dati
-   * [Crea un set di dati](https://experienceleague.adobe.com/it/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configura la connessione in streaming](https://experienceleague.adobe.com/it/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (è necessario l&#39;URL dell&#39;endpoint in streaming in un secondo momento, quindi prendi nota adesso.)
+   * [Crea un set di dati](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configura la connessione in streaming](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (è necessario l&#39;URL dell&#39;endpoint in streaming in un secondo momento, quindi prendi nota adesso.)
 
 3. Autenticazione
-   * [Genera credenziali API](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID client e Segreto client) da Adobe Developer Console
+   * [Genera credenziali API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID client e Segreto client) da Adobe Developer Console
 
 
 ## Passaggi di implementazione
@@ -191,9 +191,9 @@ Per creare un modulo adattivo creato utilizzando l’editor universale con integ
      >[!NOTE]
      >
      >* Se l&#39;icona Origini dati non è visibile nell&#39;interfaccia di Universal Editor o nella proprietà Associa riferimento nel pannello delle proprietà appropriato, abilitare l&#39;estensione **Origine dati** in Extension Manager.
-     >* Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
+     >* Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
      > 
-     > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+     >* Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
    Il servizio di precompilazione dei moduli nell’editor universale non è attualmente supportato.
 
@@ -249,7 +249,7 @@ R: questo connettore funziona sia con i componenti core Adaptive Forms che con i
 R: Attualmente, ogni modulo può inviare solo un set di dati.
 
 **D: esiste un limite al numero di invii di moduli che è possibile elaborare?**
-R: L’invio di moduli è soggetto alle [quote e ai limiti di tariffa](https://experienceleague.adobe.com/it/docs/experience-platform/data-lifecycle/api/quota) per l’acquisizione in streaming da parte di AEP.
+R: L’invio di moduli è soggetto alle [quote e ai limiti di tariffa](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota) per l’acquisizione in streaming da parte di AEP.
 
 <!-- 
 >
@@ -288,10 +288,10 @@ Per iniziare a utilizzare questa integrazione:
 ## Risorse correlate {#related-resources}
 
 * [Documentazione di AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=it)
-* [Documentazione di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=it)
-* [Panoramica del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it)
-* [Acquisizione in streaming in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it)
-* [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
+* [Documentazione di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [Panoramica del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [Acquisizione in streaming in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Panoramica del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Funzioni di accesso anticipato di AEM Forms](/help/forms/early-access-ea-features.md)
 * [Creazione di Forms adattivo con i componenti core](/help/forms/creating-adaptive-form-core-components.md)
 * [Utilizzo dei modelli di dati dei moduli in AEM Forms](/help/forms/using-form-data-model.md)

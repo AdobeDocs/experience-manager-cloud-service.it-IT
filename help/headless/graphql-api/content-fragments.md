@@ -4,7 +4,7 @@ description: Scopri come utilizzare Frammenti di contenuto in Adobe Experience M
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 73%
@@ -232,7 +232,7 @@ Quando i frammenti di contenuto sono nidificati, può accadere che venga pubblic
 
 >[!NOTE]
 >
->L’interfaccia utente AEM impedisce che ciò accada, ma se la pubblicazione viene effettuata a livello di programmazione o con pacchetti di contenuto può verificarsi.
+>L’interfaccia utente AEM impedisce che ciò accada, ma può verificarsi se la pubblicazione viene effettuata a livello di programmazione o con pacchetti di contenuti.
 
 In questo caso, AEM genera uno schema *incompleto* per il modello di Frammento di contenuto principale. Ciò significa che il Riferimento al frammento, che dipende dal modello non pubblicato, viene rimosso dallo schema.
 
@@ -375,7 +375,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->&#x200B;>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
+>Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
 >
 >Ad esempio, effettuando una chiamata del campo `stringMetadata`, può essere restituito un array di tutti i metadati memorizzati nell’archivio come una `String`; se si effettua una chiamata dell’`stringArrayMetadata` può essere restituito un array di tutti i metadati memorizzati nell’archivio come `String[]`.
 
@@ -770,6 +770,7 @@ La soluzione GraphQL consente di:
 >[!NOTE]
 >
 >È possibile utilizzare un **Riferimento contenuto** sia per le risorse DAM che per le risorse Dynamic Media. Il recupero dell’URL appropriato utilizza parametri diversi:
+>
 >* `_dynamicUrl`: una risorsa DAM
 >* `_dmS7Url` : risorsa Dynamic Media
 > 
@@ -784,13 +785,17 @@ La struttura e la sintassi sono:
 * `format`: un&#39;enumerazione con tutti i formati supportati dalla relativa estensione: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL o WEBPLY
 * `seoName`: una stringa che viene utilizzata come nome file invece del nome del nodo
 * `crop`: una sottostruttura del frame, se la larghezza o l’altezza sono omesse, vengono utilizzate come lo stesso valore
+
    * `xOrigin`: l&#39;origine x del frame ed è obbligatoria
    * `yOrigin`: l&#39;origine y del frame ed è obbligatoria
    * `width`: la larghezza del frame
    * `height`: l’altezza del frame
+
 * `size`: una sottostruttura della dimensione, se la larghezza o l’altezza sono omesse, vengono utilizzate come lo stesso valore
+
    * `width`: la larghezza della dimensione
    * `height`: l’altezza della dimensione
+
 * `rotation`: un’enumerazione di tutte le rotazioni supportate: R90, R180, R270
 * `flip`: un’enumerazione di HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: un numero intero compreso tra 1 e 100 che rileva la percentuale di qualità dell’immagine
@@ -980,6 +985,7 @@ La soluzione GraphQL consente di:
 ### Query di esempio per la consegna di risorse Dynamic Media tramite URL - Riferimento immagine{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Di seguito è riportato un esempio di query:
+
 * per più frammenti di contenuto di tipo `team` e `person`, restituendo un valore `ImageRef`
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Query di esempio per la consegna di risorse Dynamic Media tramite URL: più riferimenti{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Di seguito è riportato un esempio di query:
+
 * per più frammenti di contenuto di tipo `team` e `person`, che restituiscono un `ImageRef`, `MultimediaRef` e `DocumentRef`:
 
 ```graphql
@@ -1209,10 +1216,11 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * Consulta la query di esempio [per più frammenti di contenuto, e relative varianti, di un determinato modello](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >Il filtro `includeVariations` e il campo generato dal sistema `_variation` non possono essere utilizzati insieme nella stessa definizione di query.
 
 * Se vuoi utilizzare un operatore OR logico:
-   * utilizza ` _logOp: OR`
+   * utilizza `_logOp: OR`
    * Vedi [Query di esempio: tutti gli utenti denominati “Jobs” o “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Esiste anche l’operatore AND logico, ma è (spesso) implicito

@@ -3,15 +3,15 @@ title: Aggiungere una pipeline di Edge Delivery
 description: Scopri come aggiungere una pipeline Edge Delivery per generare e distribuire il codice negli ambienti di produzione.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -45,7 +45,7 @@ Prima di iniziare la distribuzione del codice, configura le impostazioni della p
 
 1. Accedi a Cloud Manager all&#39;indirizzo [experience.adobe.com](https://experience.adobe.com).
 1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
-1. Nel pannello laterale sinistro fare clic su **Cloud Manager**.
+1. Nel pannello laterale a sinistra, fai clic su **Cloud Manager**.
 1. Selezionare un&#39;organizzazione desiderata.
 1. Nella console **Programmi** fare clic su un programma.
 

@@ -3,10 +3,10 @@ title: Modelli modificabili
 description: Scopri come vengono utilizzati i modelli modificabili durante la creazione di una pagina, definendone il contenuto iniziale, il contenuto strutturato, le policy di authoring e il layout.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ La creazione di modelli modificabili viene eseguita principalmente con la consol
 
 Quando crei un modello modificabile:
 
-1. Crea una cartella [&#x200B; per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
+1. Crea una cartella [ per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
 1. Seleziona un tipo di [modello](#template-type). Viene copiato per creare la [definizione modello](#template-definitions).
 
    >[!NOTE]
@@ -235,7 +235,7 @@ Una volta create le cartelle di modelli (tramite CRXDE o con il Browser configur
 
 #### Gruppo di autori di modelli {#the-template-authors-group}
 
-Il gruppo `template-authors` è il gruppo utilizzato per gestire l&#39;accesso ai modelli e viene fornito come standard con AEM, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
+Il gruppo `template-authors` è il gruppo utilizzato per gestire l&#39;accesso ai modelli ed è fornito come standard con AEM, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
 
 >[!CAUTION]
 >
@@ -328,7 +328,7 @@ I tipi di modello preconfigurati sono memorizzati in:
 
 >[!CAUTION]
 >
->Non è necessario modificare nulla nel percorso `/libs`. Questo perché il contenuto di `/libs` può essere sovrascritto in qualsiasi momento da un aggiornamento dell&#39;AEM.
+>Non è necessario modificare nulla nel percorso `/libs`. Questo perché il contenuto di `/libs` può essere sovrascritto in qualsiasi momento da un aggiornamento ad AEM.
 
 I tipi di modello specifici per il sito devono essere memorizzati nella posizione simile di:
 
@@ -501,7 +501,6 @@ I criteri di pagina consentono di definire il [criterio contenuto](#content-poli
    * Impostazione della proprietà di stato nel nodo `jcr:content`.
 
       * Ad esempio, su:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definisci la proprietà:
@@ -514,7 +513,6 @@ I criteri di pagina consentono di definire il [criterio contenuto](#content-poli
 
    * [Definisci i percorsi dei modelli consentiti nelle **Proprietà pagina**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) della pagina appropriata o della pagina principale di un ramo secondario.
    * Imposta la proprietà:
-
      `cq:allowedTemplates`
 Nel nodo `jcr:content` del ramo richiesto.
 

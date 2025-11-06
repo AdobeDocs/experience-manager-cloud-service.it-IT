@@ -4,8 +4,8 @@ description: Scopri le regole di qualità del codice personalizzato di Cloud Man
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4349'
 ht-degree: 64%
@@ -909,7 +909,7 @@ La migrazione da modelli statici a modificabili può essere in gran parte automa
 * **Gravità**: minore
 * **Da**: versione 2021.2.0
 
-I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora obsoleti per diverse versioni di Experience Manager, in favore dei componenti core. L’utilizzo dei componenti Foundation come base per i componenti personalizzati (tramite sovrapposizione o ereditarietà) viene scoraggiato; si consiglia di optare per la conversione nei corrispondenti componenti core.
+I componenti Foundation legacy (ovvero i componenti in `/libs/foundation`) sono ora obsoleti per diverse versioni di Experience Manager, in favore dei componenti core. Si consiglia di non utilizzare i componenti di base per creare componenti personalizzati (tramite sovrapposizione o ereditarietà), ma piuttosto di convertirli nei corrispondenti componenti core.
 
 [Strumenti di modernizzazione Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) può facilitare questa conversione.
 

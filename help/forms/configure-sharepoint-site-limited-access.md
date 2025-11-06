@@ -5,7 +5,7 @@ keywords: Come configurare il sito SharePoint con accesso limitato?, Configurare
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Vantaggi per fornire accesso limitato al sito SharePoint:
 
 Per configurare SharePoint Sites con accesso limitato utilizzando gli ambiti di autorizzazione, effettua le seguenti operazioni:
 
-1. [Creare un’applicazione con &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Creare un’applicazione con ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Imposta l’ambito di autorizzazione nell’istanza di AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Creare un’applicazione con l’autorizzazione limitata nel portale di Azure
@@ -46,13 +46,14 @@ Creare un&#39;applicazione nel [portale di Microsoft Azure](https://portal.azure
 ![Sito SharePoint selezionato](/help/forms/assets/sharepoint-selected-site.png)
 
 Per informazioni su come recuperare `Client ID`, `Client Secret` e `Tenant ID` per `OAuth URL`, consulta [Documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+
 * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
 * Aggiungi l&#39;ambito delle autorizzazioni `offline_access` e `Sites.Selected` nell&#39;API Graph di Microsoft per fornire accesso limitato ai siti.
 * Per URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
 
 Per utilizzare l&#39;autorizzazione API `Sites.Selected` è necessaria un&#39;applicazione registrata nel portale di Azure con le autorizzazioni appropriate impostate per i siti SharePoint Online. Questa configurazione garantisce che l’applicazione disponga dell’autorizzazione necessaria per interagire con il sito SharePoint all’interno dell’ambito definito, fornendo in tal modo l’accesso limitato richiesto.
 
-Per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni [&#x200B; per Sites SharePoint Online, consulta l&#39;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)articolo del blog - Sviluppo di applicazioni che utilizzano le autorizzazioni Sites.Selected per i siti SPO`Sites.Selected`.
+Per istruzioni sullo sviluppo di applicazioni che utilizzano le autorizzazioni [ per Sites SharePoint Online, consulta l&#39;](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)articolo del blog - Sviluppo di applicazioni che utilizzano le autorizzazioni Sites.Selected per i siti SPO`Sites.Selected`.
 
 ### Imposta l’ambito di autorizzazione nell’istanza di AEM
 
@@ -91,6 +92,7 @@ Ora puoi utilizzare questa configurazione di [SharePoint Sites per l&#39;azione 
 ## Byte aggiuntivi
 
 Per recuperare il valore di `SharePoint Site ID`:
+
 1. Passa alle [API Esplora grafico di Microsoft](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. Nel riquadro a sinistra, sotto le API `SharePoint Sites`, fare clic su `Search for a SharePoint site by keyword`.
 1. Sostituire il segnaposto `contoso` con il nome effettivo del sito SharePoint per recuperare l&#39;ID sito corrispondente.

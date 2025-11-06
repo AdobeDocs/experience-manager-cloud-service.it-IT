@@ -2,11 +2,11 @@
 title: Editor di regole per moduli Edge Delivery Services
 description: Crea moduli dinamici e avanzati utilizzando l’editor di regole nell’editor universale. Aggiungi logica condizionale, calcoli e comportamenti interattivi senza codifica.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -535,7 +535,7 @@ Immagine: aggiunta di funzioni personalizzate al file functions.js
 ![Funzione personalizzata nell&#39;editor di regole](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figura: selezione e configurazione di funzioni personalizzate nell’interfaccia dell’editor di regole
 
->
+>[!NOTE]
 >
 > I miglioramenti all’editor di regole, tra cui regole personalizzate basate su eventi, supporto per variabili dinamiche e integrazione API, sono disponibili anche per moduli Edge Delivery Services. Per ulteriori informazioni su questi miglioramenti e su come utilizzarli, consulta l’articolo [Miglioramenti dell’editor di regole e casi d’uso](/help/forms/rule-editor-enhancements-use-cases.md).
 
@@ -716,7 +716,7 @@ L’editor di regole dell’editor universale trasforma i moduli statici in espe
 
 **Impatto aziendale**:
 
-I Moduli diventano uno strumento potente per la raccolta di dati, la qualificazione dei lead e il coinvolgimento degli utenti. L’editor di regole consente agli autori non tecnici di implementare una logica di business sofisticata, riducendo i costi di sviluppo e migliorando al contempo i tassi di completamento dei moduli e la qualità dei dati.
+I Moduli diventano uno strumento potente per la raccolta di dati, la qualificazione dei lead e il coinvolgimento degli utenti. L’editor di regole consente agli autori non tecnici di implementare una logica di business sofisticata, riducendo i costi di sviluppo e migliorando al contempo sia i tassi di completamento dei moduli sia la qualità dei dati.
 
 +++
 

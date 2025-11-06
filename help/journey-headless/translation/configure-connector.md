@@ -4,9 +4,9 @@ description: Scopri come connettere AEM a un servizio di traduzione.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
@@ -122,7 +122,7 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 1. Vai alla navigazione globale e passa a **Navigazione** > **Risorse** > **File**.
 1. Nella console delle risorse, seleziona la directory principale per la lingua da configurare e seleziona **Proprietà**.
 1. Seleziona la scheda **Servizi cloud**.
-1. Nella sezione **Configurazioni Cloud Service**, nell’elenco a discesa **Aggiungi configurazione**, seleziona il connettore. Dovrebbe essere incluso nell’elenco a discesa dopo aver installato il pacchetto come [descritto in precedenza](#connect-translation-provider).
+1. Nella sezione **Configurazioni Cloud Service**, nell’elenco a discesa **Aggiungi configurazione**, seleziona il connettore. Dovrebbe comparire nel menu a discesa dopo averne installato il pacchetto come [descritto in precedenza](#connect-translation-provider).
 1. Nella sezione **Configurazioni Cloud Service**, seleziona anche la configurazione nell’elenco a discesa **Aggiungi configurazione**.
 1. Seleziona **Salva e chiudi**.
 
@@ -132,8 +132,8 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
-* Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
-* Essere in grado di impostare la propria connessione al servizio di traduzione.
+* I parametri importanti del framework di integrazione della traduzione in AEM.
+* Come impostare la propria connessione al servizio di traduzione.
 
 Sviluppa questa conoscenza e prosegui nel tuo percorso di traduzione headless in AEM consultando il documento [Tradurre il contenuto](translation-rules.md), per capire come utilizzare la configurazione impostata finora per tradurre effettivamente i tuoi contenuti.
 

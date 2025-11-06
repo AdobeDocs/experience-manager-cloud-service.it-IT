@@ -1,17 +1,17 @@
 ---
-title: Personalizzazione dell’authoring delle pagine
+title: Personalizzazione dell’authoring pagina
 description: Scopri i meccanismi forniti da AEM as a Cloud Service per personalizzare la funzionalità di authoring delle pagine.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 2%
+source-wordcount: '936'
+ht-degree: 3%
 
 ---
 
-# Personalizzazione dell’authoring delle pagine {#customizing-page-authoring}
+# Personalizzazione dell’authoring pagina {#customizing-page-authoring}
 
 Adobe Experience Manager as a Cloud Service offre meccanismi che ti consentono di personalizzare la funzionalità di authoring delle pagine (e le [console](/help/implementing/developing/extending/consoles.md)) della tua istanza di authoring.
 
@@ -32,17 +32,17 @@ Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrappo
 
 Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell&#39;originale, in quanto [sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) consente l&#39;ereditarietà.
 
-Per ulteriori informazioni, vedere la [documentazione JS &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+Per ulteriori informazioni, vedere la [documentazione JS ](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Per ulteriori informazioni sulle sovrapposizioni, vedere [Sovrapposizioni per Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Aggiungi nuovo livello (modalità) {#add-new-layer-mode}
 
-Quando modifichi una pagina, sono disponibili varie [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes). Queste modalità sono implementate utilizzando [livelli](/help/implementing/developing/introduction/ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. Le modalità AEM standard includono Modifica, Layout, Sviluppatore, Timewarp, Stato Live Copy e Targeting.
+Quando modifichi una pagina, sono disponibili varie [modalità](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes). Queste modalità sono implementate utilizzando [livelli](/help/implementing/developing/introduction/ui-structure.md#layer). Consentono di accedere a diversi tipi di funzionalità per lo stesso contenuto della pagina. Le modalità standard di AEM includono Modifica, Layout, Sviluppatore, Timewarp, Stato Live Copy e Targeting.
 
 ### Esempio di livello: stato Live Copy {#layer-example-live-copy-status}
 
-Un&#39;istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi alla [gestione multisito](/help/sites-cloud/administering/msm/overview.md) e di evidenziarli nel livello.
+Un’istanza AEM standard fornisce il livello MSM. Consente di accedere ai dati relativi alla [gestione multisito](/help/sites-cloud/administering/msm/overview.md) e di evidenziarli nel livello.
 
 Per vederlo in azione, puoi modificare qualsiasi copia per lingua nel [contenuto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e selezionare la modalità **Stato Live Copy**.
 
@@ -135,7 +135,7 @@ Di seguito è riportato un esempio di definizione delle proporzioni per il plug-
 
 >[!NOTE]
 >
->I rapporti di ritaglio AEM, impostati dalla proprietà `ratio`, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, a condizione che tu definisca chiaramente la proprietà `name`, in quanto questo è ciò che viene visualizzato nell&#39;interfaccia utente.
+>I rapporti di ritaglio di AEM, impostati dalla proprietà `ratio`, sono definiti come **altezza/larghezza**. Ciò differisce dalla definizione tradizionale di larghezza/altezza e viene fatto per ragioni di compatibilità con le versioni precedenti. Gli utenti che creano i file non noteranno alcuna differenza, a condizione che tu definisca chiaramente la proprietà `name`, in quanto questo è ciò che viene visualizzato nell&#39;interfaccia utente.
 
 #### Creazione di un nuovo editor locale {#creating-a-new-in-place-editor}
 
@@ -178,7 +178,7 @@ Flusso di lavoro predefinito, **Richiesta di attivazione**:
 
 Per personalizzare il comportamento di questa attivazione, puoi sovrapporre il flusso di lavoro **Richiesta di attivazione**:
 
-1. In `/apps` sovrapporre la procedura guidata `/libs/wcm/core/content/common/managepublicationwizard` di **Sites**
+1. In `/apps` sovrapporre la procedura guidata **di** Sites`/libs/wcm/core/content/common/managepublicationwizard`
 
    * Questa azione esegue l&#39;override dell&#39;istanza comune di `/libs/cq/gui/content/common/managepublicationwizard`.
 

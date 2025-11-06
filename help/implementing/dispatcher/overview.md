@@ -4,7 +4,7 @@ description: Ulteriori informazioni sul flusso di dati per la distribuzione dei 
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 87%
@@ -32,6 +32,7 @@ Il flusso di dati è il seguente:
 Per impostazione predefinita, il tipo di contenuto HTML/testo è impostato per scadere dopo 300 secondi (5 minuti) al livello del Dispatcher, una soglia rispettata sia dalla cache del Dispatcher che dalla CDN. Durante le ridistribuzioni del servizio di pubblicazione, la cache del Dispatcher viene svuotata e quindi subisce un processo di riscaldamento prima che i nuovi nodi di pubblicazione accettino il traffico.
 
 Le sezioni seguenti forniscono ulteriori dettagli sulla distribuzione dei contenuti:
+
 * [Configurazione CDN](/help/implementing/dispatcher/cdn.md)
 * [Memorizzazione in cache](/help/implementing/dispatcher/caching.md)
 

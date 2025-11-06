@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 33%
@@ -35,17 +35,23 @@ Le proprietà di pagina possono controllare molti aspetti di una pagina dal tito
 ### Titolo e tag {#title-tags}
 
 * **Titolo** - Definisce il metatitolo della pagina ai fini SEO e il titolo visualizzato nel contenuto della pagina (a meno che non venga sostituito)
+
    * Il titolo della pagina viene visualizzato in varie posizioni nell&#39;interfaccia utente di AEM, incluse le visualizzazioni a elenco/scheda di **Sites** nella console [Sites.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * Questo campo è obbligatorio.
+
 * **Tag** - Definisce i metatag della pagina a scopo SEO (Search Engine Optimization)
+
    * È possibile aggiungere o rimuovere tag dalla pagina aggiornando l&#39;elenco nella casella di selezione.
    * Utilizza il menu a discesa per selezionare tra i tag esistenti.
    * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
    * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
+
       * Il nuovo tag viene creato quando premi Invio.
       * Il nuovo tag viene quindi mostrato con un asterisco a destra che lo identifica come nuovo tag.
+
    * Quando passi il mouse su uno dei tag nella casella di selezione, viene visualizzata una x, che può essere utilizzata per rimuovere quel tag per quella pagina.
    * Per ulteriori informazioni sui tag, vedere [Utilizzo del tag.](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **Nascondi in navigazione** - Indica se la pagina viene visualizzata o nascosta nella navigazione delle pagine del sito risultante
 
 ### Branding {#branding}
@@ -53,9 +59,13 @@ Le proprietà di pagina possono controllare molti aspetti di una pagina dal tito
 Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a ciascun titolo della pagina. Questa funzionalità richiede l’utilizzo del Componente Pagina dalla versione 2.14.0 o successiva di [Componenti Core.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
 * **Brand Slug**
+
    * **Override**: selezionalo per definire il marchio su questa pagina.
+
       * Il valore viene ereditato da tutte le pagine secondarie a meno che non abbiano impostati anche i loro valori **Override**.
+
    * **Valore di override**: testo del marchio da aggiungere al titolo della pagina.
+
       * Il valore viene aggiunto al titolo della pagina dopo un carattere barra verticale come `Cycling Tuscany | Always ready for the WKND`
 
 ### ID HTML {#html-id}
@@ -65,10 +75,14 @@ Applica un’identità del brand coerente tra le pagine aggiungendo un marchio a
 ### Altri titoli e descrizioni {#more-titles}
 
 * **Titolo pagina** - Titolo da utilizzare nella pagina
+
    * Questa funzione viene in genere utilizzata dai componenti titolo.
    * Se vuoto, il **Titolo** è utilizzato.
+
 * **Titolo navigazione** - È possibile specificare un titolo separato da utilizzare nella navigazione (ad esempio, se si desidera un titolo più conciso).
+
    * Se vuoto, viene utilizzato il **Titolo pagina**.
+
 * **Sottotitolo** - Sottotitolo da utilizzare nella pagina
 * **Descrizione** - Descrizione della pagina, il suo scopo o altri dettagli da aggiungere
 
@@ -112,12 +126,12 @@ Questa proprietà consente di immettere un URL personalizzato per questa pagina,
    * Seleziona l&#39;icona **Rimuovi** per eliminare il Vanity URL.
 * **Reindirizza Vanity URL** - Indica se la pagina deve utilizzare il Vanity URL o reindirizzare all&#39;URL effettivo della pagina
 
-## Avanzato {#advanced}
+## Avanzate {#advanced}
 
 ### Impostazioni {#settings}
 
 * **Lingua**: indica la lingua della pagina
-* **Lingua root**: deve essere selezionato, se la pagina è la root di una copia in lingua
+* **Directory principale lingua**: questa opzione deve essere selezionata se la pagina corrisponde alla pagina principale di una copia per lingua
 * **Reindirizza** - Indica la pagina a cui deve essere automaticamente reindirizzata la pagina con lo stato `302 Found` di HTML
    * **Reindirizzamento permanente**: se questa opzione è selezionata, la pagina viene reindirizzata al percorso di destinazione fornito, con uno stato HTML `301 Moved Permanently`.
 * **Design**
@@ -228,7 +242,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 * **Sospendi**: sospendi la Live Copy da ulteriori modifiche di rollout
 * **Stacca** - Stacca Live Copy dalla blueprint
 
-### Sorgente {#source}
+### Origine {#source}
 
 * Visualizza il percorso della blueprint per questa Live Copy
 
@@ -245,7 +259,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
 ## Anteprima {#preview}
 
-Quando un ambiente di anteprima [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
+Quando un ambiente di anteprima [](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
 
 * **URL anteprima** - URL utilizzato per accedere al contenuto nell&#39;ambiente di anteprima
 

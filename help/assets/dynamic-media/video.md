@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
+source-wordcount: '10063'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Visualizzare in anteprima e pubblicare le risorse video
 
       * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-
         [Anteprima video](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](/help/assets/dynamic-media/previewing-assets.md)
         [Gestione rappresentazioni video](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Utilizzare i metadati video
 
       * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
-
         [Modifica proprietà video](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestire i metadati per le risorse digitali](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
    * Se utilizzi un sistema WCM di terze parti, puoi collegare o incorporare video nelle pagine web.
 
       * Integra video tramite URL:
-
         [Collega URL all&#39;applicazione Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integra video utilizzando il codice di incorporamento in una pagina web:
-
         [Incorpora il visualizzatore video in una pagina Web](/help/assets/dynamic-media/embed-code.md).
 
    * [Genera report video](#viewing-video-reports).
@@ -135,7 +131,7 @@ Durante la gestione di un singolo video e di set di video adattivi, sono support
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi per web e desktop, tablet e dispositivi mobili.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Vedere anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources).
+Vedere anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Best practice: utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ Sul lato di riproduzione del visualizzatore, rileva automaticamente la funzional
 
 È possibile combinare in un unico lettore la possibilità di progettare i componenti di riproduzione utilizzando HTML5 e CSS. Può avere una riproduzione incorporata e utilizzare uno streaming adattivo e progressivo a seconda delle funzionalità del browser. Tutte queste funzionalità consentono di estendere la portata dei contenuti rich media agli utenti desktop e mobili e di garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources).
+Vedi anche [Visualizzatori solo per Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) nella [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH è lo standard internazionale e HLS è uno standard Apple. Entrambi vengono
 
 Il video progressivo viene distribuito scaricando e memorizzando il video localmente sul sistema desktop o sul dispositivo mobile di un utente.
 
-Nella tabella seguente vengono descritti il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano [Visualizzatore video Dynamic Media HTML5](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+Nella tabella seguente vengono descritti il dispositivo, il browser e il metodo di riproduzione dei video su computer desktop e dispositivi mobili che utilizzano [Visualizzatore video Dynamic Media HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -316,7 +312,7 @@ Nella tabella seguente viene descritto come i risultati della formula si traduco
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
 | 1,78 | 16:9 |
-| 0,56 | 09:16 |
+| 0,56 | 9:16 |
 
 Ad esempio, un video con larghezza 1440 × altezza 1080 ha proporzioni 1440/1080 o 1,33. In questo caso, scegliete un predefinito di codifica video con proporzioni 4:3 per codificare il file video.
 
@@ -401,7 +397,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 × 1080. Nella tabella seg
 
 | Tipo di video | Larghezza × altezza | Rapporto larghezza | Rapporto altezza |
 |--- |--- |--- |--- |
-| Sorgente | 1920 × 1080 | 1 | 1 |
+| Origine | 1920 × 1080 | 1 | 1 |
 | Codificato | 960 × 540 | 2 | 2 |
 | Codificato | 640 × 360 | 3 | 3 |
 | Codificato | 480 × 270 | 4 | 4 |
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=it).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -605,7 +601,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
    ![Opzioni per la creazione dei sottotitoli.](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *Il menu a discesa Crea didascalia offre tre opzioni: Carica file, Converti tracce audio e Traduci didascalia.*
 
-+++**Opzione 1:** *Ho i miei file di didascalia preesistenti nelle lingue che voglio utilizzare* (**[!UICONTROL Carica file]**)
+   +++**Opzione 1:** *Ho i miei file di didascalia preesistenti nelle lingue che voglio utilizzare* (**[!UICONTROL Carica file]**)
 
    1. Nella parte superiore destra della pagina, fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Carica file]**.
    1. Passare a uno o più file `.vtt` preesistenti e selezionarli.
@@ -616,7 +612,7 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
       | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
       | Lingua | Selezionare la lingua della didascalia. Dopo l&#39;elaborazione di un file di didascalia, questo campo della lingua diventa non modificabile (inattivo) |
       | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di fondo, la differenziazione degli altoparlanti e altri dettagli rilevanti, insieme alla traduzione o alla trascrizione del dialogo, migliorando l&#39;accessibilità per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, `English (CC)`. |
 
       Se necessario, puoi modificare i metadati dei sottotitoli in un secondo momento. Quando il video viene pubblicato, questi dettagli si riflettono sugli URL pubblici nei video pubblicati.
 
@@ -629,9 +625,9 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
    1. Se hai selezionato **[!UICONTROL Salva e chiudi]** nel passaggio precedente, invece di selezionare **[!UICONTROL Salva]**, puoi comunque visualizzare lo stato di elaborazione dei file caricati. Consulta [Visualizzare lo stato del ciclo di vita dei file di didascalia e traccia audio caricati](#lifecycle-status-video).
    1. Continuare con il passaggio 8.
 
-+++
+   +++
 
-+++**Opzione 2:** *Desidero che AI generi i miei file di didascalia in più lingue* (**[!UICONTROL Opzione Converti tracce audio]**)
+   +++**Opzione 2:** *Desidero che AI generi i miei file di didascalia in più lingue* (**[!UICONTROL Opzione Converti tracce audio]**)
 
    1. Fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Converti tracce audio]** nell&#39;angolo superiore destro della pagina.
 
@@ -658,14 +654,14 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
       | Metadati didascalia | Descrizione |
       | --- | --- |
       | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di sottofondo e la differenziazione degli altoparlanti. Comprende anche altre informazioni pertinenti, insieme alla traduzione o trascrizione della finestra di dialogo. Questo approccio rende i contenuti più accessibili per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, `English (CC)`. |
 
       Se necessario, puoi modificare alcuni metadati di didascalia in un secondo momento. Quando il video viene pubblicato, i dettagli dei metadati si riflettono sugli URL pubblici nei video pubblicati.
    1. Continuare con il passaggio 8.
 
-+++
+   +++
 
-+++**Opzione 3:** *È necessario correggere il testo di un file di didascalia (`.vtt`), ricaricarlo per sostituire il file `.vtt` precedente, quindi fare in modo che AI traduca il file corretto* (**[!UICONTROL Traduci didascalie]**)
+   +++**Opzione 3:** *È necessario correggere il testo di un file di didascalia (`.vtt`), ricaricarlo per sostituire il file `.vtt` precedente, quindi fare in modo che AI traduca il file corretto* (**[!UICONTROL Traduci didascalie]**)
 
    1. Fai clic su **[!UICONTROL Crea didascalia]** > **[!UICONTROL Traduci didascalie]**. Questa opzione è disponibile se uno o più file di didascalia sono già stati aggiunti ed elaborati.
 
@@ -692,13 +688,13 @@ I sottotitoli aggiunti sono supportati nei formati WebVTT e Adobe VTT. Inoltre, 
       | Metadati didascalia | Descrizione |
       | --- | --- |
       | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include anche i rumori di sottofondo e la differenziazione degli altoparlanti. Comprende anche altre informazioni pertinenti, insieme alla traduzione o trascrizione della finestra di dialogo. Questo approccio rende i contenuti più accessibili per gli individui non udenti o ipoudenti. |
-      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Esempio: `English (CC)`. |
+      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o didascalia]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, `English (CC)`. |
 
       Se necessario, puoi modificare alcuni metadati di didascalia in un secondo momento. Quando il video viene pubblicato, i dettagli dei metadati si riflettono sugli URL pubblici nei video pubblicati.
 
    1. Continuare con il passaggio 8.
 
-+++
+   +++
 
 1. (Facoltativo) Visualizza l&#39;anteprima del video prima della pubblicazione per assicurarti che i sottotitoli e l&#39;audio funzionino come previsto. Vedi [Anteprima di un video con più sottotitoli e tracce audio](#preview-video-audio-subtitle).
 1. Pubblica il video. Consulta [Pubblicare risorse](publishing-dynamicmedia-assets.md).
@@ -920,7 +916,7 @@ Vedi anche [Accessibilità in Dynamic Media](/help/assets/dynamic-media/accessib
 
 Dynamic Media può convertire i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi eseguire la ricerca per indicizzazione/indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti maggiori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Server static (non-image) contents](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Server static (non-image) contents](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Per aggiungere didascalie a un video:**
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

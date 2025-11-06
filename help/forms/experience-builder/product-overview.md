@@ -5,16 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 20%
+ht-degree: 31%
 
 ---
-
-
-
 
 # Panoramica
 
@@ -161,7 +159,7 @@ Forms Experience Builder offre due flussi di lavoro principali per la creazione 
 
 **Generazione moduli in linguaggio naturale**
 
-Crea moduli completi da zero utilizzando descrizioni in inglese semplice. È sufficiente descrivere le proprie esigenze, ad esempio &quot;Creare un modulo di feedback del cliente con scale di valutazione e campi di commento&quot; e Forms Experience Builder genera la struttura appropriata del modulo. Utilizza il generatore di esperienze degli editor visivi per aggiungere altri campi, regole di convalida e logica di invio.
+Crea moduli completi da zero utilizzando descrizioni in inglese semplice. Descrivi semplicemente i requisiti, ad esempio “Creare un modulo di feedback della clientela personalizzato con scale di valutazione e campi di commento” e Forms Experience Builder genera la struttura del modulo. Utilizza il generatore di esperienze degli editor visivi per aggiungere altri campi, regole di convalida e logica di invio.
 
 **Gestione campi dinamici**
 
@@ -169,7 +167,7 @@ Aggiungi, modifica o rimuovi campi modulo tramite comandi conversazionali. L’I
 
 **Ottimizzazione layout**
 
-Aggiorna i layout e le configurazioni dei moduli tramite il linguaggio naturale. Richiedi modifiche quali &quot;Modifica il layout del modulo al layout della procedura guidata&quot; e Forms Experience Builder applica le regolazioni di stile e layout appropriate.
+Aggiorna i layout e le configurazioni dei moduli tramite il linguaggio naturale. Richiedi modifiche quali “Modifica il layout del modulo al layout della procedura guidata” e Forms Experience Builder applica le regolazioni di stile e layout appropriate.
 
 **Configurazione completa azione di invio**
 
@@ -187,11 +185,11 @@ Configura l’invio dei moduli da integrare con i sistemi aziendali esistenti:
 
 Trasforma i documenti esistenti in esperienze digitali interattive. Forms Experience Builder supporta vari formati, analizzando i contenuti caricati per rilevare i tipi di campo, mantenere i layout e migliorare i moduli con una progettazione reattiva e una logica avanzata. I formati supportati includono:
 
-- **Acroforms**: PDF forms interattivo con strutture di campi esistenti
+- **Moduli acro**: moduli PDF interattivi con strutture di campi esistenti
 - **PDF XFA**: architetture di moduli basate su XML complesse
 - **PDF semplici**: documenti statici convertiti in moduli interattivi
 - **Immagini e schermate**: formati JPG e PNG
-- **Forms disegnato a mano**: schizzi e fotografie su carta
+- **Moduli disegnato a mano**: schizzi e fotografie su carta
 
 
 

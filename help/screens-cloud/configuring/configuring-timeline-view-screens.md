@@ -4,10 +4,10 @@ description: Questa pagina descrive come configurare una vista timeline in Scree
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 Questa sezione descrive come creare una vista Timeline per AEM Screens.
 
-AEM fornisce una suite di funzioni che consente a più persone nei gruppi di un’organizzazione di collaborare alla creazione, alla gestione e all’utilizzo dei canali.
+AEM fornisce una suite di funzioni che consente a più persone appartenenti a gruppi all’interno di un’organizzazione di collaborare alla creazione, alla gestione e all’utilizzo dei canali.
 La timeline, che si trova nella barra a sinistra, descrive i canali, la posizione o il ciclo di vita di una cartella di schermate in ordine temporale per trasmettere ciò che è successo a essa nel corso della sua vita. Questo può essere filtrato verso il basso per tipo.
 Oltre ai registri del ciclo di vita, la barra Timeline fornisce le seguenti funzioni.
 
@@ -36,7 +36,7 @@ Le sezioni seguenti descrivono in dettaglio questi passaggi.
 ### Aggiungi un commento {#addcomment}
 
 I commenti disponibili tramite la timeline consentono agli utenti di creare una registrazione centralizzata e cronologica per le discussioni che si svolgono sul canale, sulla posizione o su qualsiasi cartella nello schermo.
-I commenti forniscono un modo consolidato per gli utenti AEM di discutere un modo che può essere mantenuto, consentendo agli altri di comprendere le decisioni chiave.
+I commenti forniscono un modo consolidato per consentire agli utenti di AEM di discutere di un modo che può essere mantenuto, consentendo ad altri di comprendere le decisioni chiave.
 
 1. Passare al canale per il quale si desidera aggiungere un commento.
 1. Seleziona il canale.
@@ -52,6 +52,7 @@ Le informazioni nella timeline vengono aggiornate per indicare che il commento �
 ### Salva una versione {#saveversion}
 
 Il controllo delle versioni crea un&#39;istantanea di un canale in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
+
 * Crea una versione di un canale.
 * Ripristina un canale a una versione precedente; ad esempio:
    * per annullare una modifica apportata alla pagina.
@@ -123,7 +124,7 @@ Durante l’authoring, è possibile richiamare i flussi di lavoro per intraprend
 Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
 
 * Flusso di lavoro da applicare.
-* Facoltativamente, titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
+* Facoltativamente, un titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
 * Il payload del flusso di lavoro.
 
 #### Avvio del flusso di lavoro

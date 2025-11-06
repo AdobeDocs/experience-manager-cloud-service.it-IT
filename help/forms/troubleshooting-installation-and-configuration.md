@@ -5,16 +5,16 @@ contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Configurazione {#installation-and-configuration}
 
-Durante la configurazione di un ambiente di Cloud Service è possibile riscontrare alcuni dei seguenti problemi:
+Durante la configurazione di un ambiente Cloud Service, si possono verificare alcuni dei seguenti problemi:
 
 ## Opzione Forms non disponibile
 
@@ -30,7 +30,8 @@ Per abilitare l&#39;opzione **[!UICONTROL Forms]**:
 1. Seleziona l&#39;opzione **[!UICONTROL Forms]** e fai clic su **[!UICONTROL Salva]**.
 
    ![Selezionare l&#39;opzione Forms](assets/installation-configuration-select-forms-option.png)
-1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=it#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
+
+1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
 
 Dopo la generazione e la distribuzione della pipeline, l&#39;opzione **[!UICONTROL Forms]** nella pagina **[!UICONTROL Navigazione]**.
 
@@ -59,7 +60,7 @@ Per risolvere il problema, apri Cloud Manager, seleziona l&#39;opzione **[!UICON
 
 Per risolvere il problema, effettuare le seguenti operazioni:
 
-1. Avvia AEM e attendi che inizi completamente finché tutti i bundle non sono attivi.
-1. Interrompere AEM (Ctrl + C).
+1. Avvia AEM e attendi che venga avviato completamente fino a quando tutti i bundle non sono attivi.
+1. Arresta AEM (Ctrl + C).
 1. Inserire il file Forms `.far` nella cartella di installazione.
-1. Riavviare il server AEM.
+1. Riavvia il server AEM.

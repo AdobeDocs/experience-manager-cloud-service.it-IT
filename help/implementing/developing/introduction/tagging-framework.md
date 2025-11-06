@@ -1,34 +1,34 @@
 ---
 title: Framework di assegnazione tag AEM
-description: Assegna tag ai contenuti e utilizza l’infrastruttura di tag AEM per suddividerli in categorie e organizzarli.
+description: Assegna tag ai contenuti e utilizza l’infrastruttura di tag di AEM per suddividerli in categorie e organizzarli.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
-# Il quadro di riferimento per l&#39;assegnazione dei tag dell&#39;AEM {#aem-tagging-framework}
+# Framework di assegnazione tag di AEM {#aem-tagging-framework}
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia. Per informazioni dettagliate sull’utilizzo dei tag:
 
 * Per informazioni sull&#39;assegnazione di tag ai contenuti come autore di contenuti, vedere [Utilizzo dei tag](/help/sites-cloud/authoring/sites-console/tags.md).
 * Per informazioni sulla creazione e la gestione dei tag e sulla modalità di applicazione dei tag di contenuto, consulta Amministrazione dei tag .
 
-Questo articolo si concentra sul framework sottostante che supporta l’assegnazione tag in AEM e su come utilizzarlo come sviluppatore.
+Questo articolo si concentra sul framework sottostante che supporta i tag in AEM e su come utilizzarlo come sviluppatore.
 
 ## Introduzione {#introduction}
 
-Per assegnare tag ai contenuti e utilizzare l&#39;infrastruttura dei tag AEM:
+Per assegnare tag ai contenuti e utilizzare l’infrastruttura di assegnazione tag di AEM:
 
 * Il tag deve esistere come nodo di tipo [`cq:Tag`](#cq-tag-node-type) nel [nodo principale della tassonomia](#taxonomy-root-node).
-* Il mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) deve essere incluso nel nodo del contenuto con tag `NodeType`.
+* Il mixin `NodeType` deve essere incluso nel nodo del contenuto con tag [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * [`TagID`](#tagid) viene aggiunto alla proprietà [`cq:tags`](#cq-tags-property) del nodo di contenuto e viene risolto in un nodo di tipo [`cq:Tag`](#cq-tag-node-type).
 
-## cq:Tag Node Type {#cq-tag-node-type}
+## Tipo di nodo cq:Tag {#cq-tag-node-type}
 
 La dichiarazione di un tag viene acquisita nell&#39;archivio in un nodo di tipo `cq:Tag.`
 
@@ -107,17 +107,17 @@ Per ulteriori dettagli, vedi:
 
 ### Controllo accesso {#access-control}
 
-I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [&#128279;](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
+I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
 
 Il rifiuto delle autorizzazioni di lettura per alcuni tag o spazi dei nomi controlla la possibilità di applicare tag a contenuto specifico.
 
 Una pratica tipica include:
 
-* Consente al gruppo/ruolo `tag-administrators` di accedere in scrittura a tutti gli spazi dei nomi (aggiungere/modificare in `/content/cq:tags`). Questo gruppo viene fornito con AEM preconfigurato.
+* Consente al gruppo/ruolo `tag-administrators` di accedere in scrittura a tutti gli spazi dei nomi (aggiungere/modificare in `/content/cq:tags`). Questo gruppo viene fornito con AEM pronto all’uso.
 * Consente agli utenti/autori di accedere in lettura a tutti i namespace che dovrebbero essere leggibili (per lo più tutti).
 * Consentire agli utenti/autori di accedere in scrittura agli spazi dei nomi in cui i tag devono essere liberamente definibili dagli utenti/autori (`add_node` in `/content/cq:tags/some_namespace`)
 
-## Contenuto assegnabile : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenuto con tag : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Affinché gli sviluppatori di applicazioni possano associare tag a un tipo di contenuto, la registrazione del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve includere il mixin `cq:Taggable` o il mixin `cq:OwnerTaggable`.
 
@@ -134,7 +134,7 @@ Il mixin `cq:OwnerTaggable`, che eredita da `cq:Taggable`, ha lo scopo di indica
 
 Le definizioni dei tipi di nodo esistono nell’archivio come file CND. La notazione CND è definita nella [documentazione JCR](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-Le definizioni essenziali per i tipi di nodo inclusi nell’AEM sono le seguenti:
+Le definizioni essenziali per i tipi di nodo inclusi in AEM sono le seguenti:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -157,7 +157,7 @@ La proprietà `cq:tags` è un array `String` utilizzato per memorizzare uno o pi
 
 >[!NOTE]
 >
->Per utilizzare la funzionalità di assegnazione tag AEM, le applicazioni sviluppate personalizzate non devono definire proprietà di tag diverse da `cq:tags`.
+>Per utilizzare la funzionalità di assegnazione tag di AEM, le applicazioni sviluppate personalizzate non devono definire proprietà di tag diverse da `cq:tags`.
 
 ## Spostamento e unione di tag {#moving-and-merging-tags}
 

@@ -3,9 +3,9 @@ title: Utilizza la libreria multimediale per la gestione di base delle risorse d
 description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
 contentOwner: AG
 feature: Asset Management, Publishing
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 9%
@@ -106,7 +106,7 @@ Impossibile utilizzare smart tag, collegamento [!DNL Asset], selettore [!DNL Ass
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
@@ -117,4 +117,4 @@ Impossibile utilizzare smart tag, collegamento [!DNL Asset], selettore [!DNL Ass
 >[!MORELIKETHIS]
 >
 >* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=it)
->* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

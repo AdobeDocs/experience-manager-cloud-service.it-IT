@@ -2,9 +2,9 @@
 title: Creare componenti personalizzati per un modulo EDS
 description: Creare componenti personalizzati per un modulo EDS
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 99%
@@ -505,13 +505,13 @@ Il modo precedente per farlo è seguire manualmente i passaggi descritti di segu
 
 10. **Aggiorna _component-definition.json**: in `models/_component-definition.json` aggiorna l’array all’interno del gruppo con `id custom-components` con un oggetto nel modo seguente:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    In questo modo, viene fornito il riferimento al nuovo componente schede da creare con gli altri componenti
+   In questo modo, viene fornito il riferimento al nuovo componente schede da creare con gli altri componenti
 
 11. **Esegui lo script:json della build**: esegui `npm run build:json` per compilare e unire tutte le definizioni JSON dei componenti in un unico file trasmesso dal server. In questo modo lo schema del nuovo componente viene incluso nell’output unito.
 

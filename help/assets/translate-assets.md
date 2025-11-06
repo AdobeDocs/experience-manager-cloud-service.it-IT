@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2615'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Risorse multilingue significa risorse con binari, metadati e tag in più lingue. In genere, i file binari, i metadati e i tag per le risorse esistono in una lingua e vengono quindi tradotti in altre lingue per l’utilizzo in progetti multilingue. Adobe Experience Manager Assets consente di automatizzare i flussi di lavoro per tradurre le risorse (inclusi file binari, metadati e tag) e generare risorse in altre lingue da utilizzare nei progetti multilingue.
@@ -30,11 +30,11 @@ Traduzione automatica delle risorse in AEM: il servizio di traduzione automatica
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=it
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=it
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=it)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=it
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -132,9 +132,11 @@ Se utilizzi questa opzione, il flusso di lavoro di traduzione viene eseguito per
 1. Seleziona **[!UICONTROL Crea e traduci]** in basso.
 1. Dall&#39;elenco **[!UICONTROL Lingue di destinazione]**, selezionare le lingue per le quali si desidera creare una struttura di cartelle.
 1. Dall’elenco **[!UICONTROL Progetto]**, seleziona **[!UICONTROL Aggiungi al progetto di traduzione esistente]** per eseguire il flusso di lavoro di traduzione nella cartella.
+
    >[!NOTE]
    >
    >Se si sceglie l&#39;opzione **[!UICONTROL Aggiungi al progetto di traduzione esistente]**, il progetto di traduzione verrà aggiunto a un progetto preesistente solo se le impostazioni del progetto corrispondono esattamente a quelle del progetto preesistente. In caso contrario, viene creato un nuovo progetto.
+
 1. Dall&#39;elenco **[!UICONTROL Progetto di traduzione esistente]**, seleziona un progetto per aggiungere la risorsa per la traduzione.
 1. Seleziona **[!UICONTROL Crea]**. Le risorse da tradurre vengono aggiunte alla cartella di destinazione. La cartella aggiornata è elencata nella sezione **[!UICONTROL Copie per lingua]**.
 1. Passa alla console Progetti e apri il progetto di traduzione esistente aggiunto a.
@@ -164,7 +166,7 @@ Se si utilizza questa opzione, il set di risorse viene aggiunto a un progetto di
 
 1. Dall’interfaccia utente di Assets, seleziona la cartella di origine in cui hai aggiunto una cartella di risorse.
 1. Apri il riquadro **[!UICONTROL Riferimenti]** e seleziona **[!UICONTROL Copie per lingua]** in **[!UICONTROL Copie]** per visualizzare l&#39;elenco delle copie per lingua.
-1. Per selezionare tutte le copie della lingua, seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**. Deseleziona le altre copie, ad eccezione della copia (o copie) per lingua corrispondente alle impostazioni internazionali verso cui vuoi tradurre.
+1. Per selezionare tutte le copie della lingua, seleziona la casella di controllo che precede **[!UICONTROL Copie per lingua]**. Deseleziona le altre copie, ad eccezione della copia (o copie) per la lingua (o lingue) verso cui vuoi tradurre.
 1. Seleziona **[!UICONTROL Aggiorna copie per lingua]** in basso.
 1. Dall&#39;elenco **[!UICONTROL Progetto]** scegliere **[!UICONTROL Aggiungi al progetto di traduzione esistente]**.
 1. Dall&#39;elenco **[!UICONTROL Progetto di traduzione esistente]**, seleziona un progetto per aggiungere la risorsa per la traduzione.
@@ -288,7 +290,7 @@ Se vuoi applicare un connettore personalizzato per i servizi di traduzione che d
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

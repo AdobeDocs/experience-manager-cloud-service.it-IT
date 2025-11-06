@@ -4,11 +4,11 @@ description: Le variabili di ambiente standard possono essere configurate e gest
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -37,7 +37,7 @@ I casi d’uso tipici per l’utilizzo delle variabili di ambiente includono:
 
 ## Aggiungere una variabile di ambiente {#add-variables}
 
-Se desideri aggiungere più variabili, l&#39;Adobe consiglia di aggiungere la prima variabile, quindi di utilizzare l&#39;icona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aggiungi** nella finestra di dialogo **Configurazione ambiente** per aggiungere altre variabili. Questo metodo consente di aggiungerli all’ambiente con un solo aggiornamento.
+Se desideri aggiungere più variabili, Adobe consiglia di aggiungere la prima variabile e quindi di utilizzare l&#39;icona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aggiungi** nella finestra di dialogo **Configurazione ambiente** per aggiungere altre variabili. Questo metodo consente di aggiungerli all’ambiente con un solo aggiornamento.
 
 Per aggiungere, aggiornare o eliminare variabili di ambiente, è necessario essere membri del ruolo [**Responsabile della distribuzione**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
@@ -59,7 +59,7 @@ Se stai aggiungendo una variabile di ambiente per la prima volta, fai clic su **
    | --- | --- |
    | Nome | Nome univoco della variabile di configurazione. Identifica la variabile specifica utilizzata nell’ambiente. Deve rispettare le seguenti convenzioni di denominazione:<ul><li>Le variabili possono contenere solo caratteri alfanumerici e il carattere di sottolineatura (`_`).</li><li>Esiste un limite di 200 variabili per ambiente.</li><li>Ogni nome non può contenere più di 100 caratteri.</li></ul> |
    | Valore | Valore contenuto nella variabile. |
-   | Passaggio applicato | Seleziona il servizio a cui si applica la variabile. Selezionare **Tutti** per applicare la variabile a tutti i servizi.<ul><li>**Tutti**</li><li>**Autore**</li><li>**Publish**</li><li>**Anteprima**</li></ul> |
+   | Passaggio applicato | Seleziona il servizio a cui si applica la variabile. Selezionare **Tutti** per applicare la variabile a tutti i servizi.<ul><li>**Tutti**</li><li>**Authoring**</li><li>**Pubblica**</li><li>**Anteprima**</li></ul> |
    | Tipo | Seleziona se la variabile è normale o segreta. |
 
    ![Aggiunta di una variabile](assets/add-variable.png)
@@ -78,7 +78,7 @@ Se stai aggiungendo una variabile di ambiente per la prima volta, fai clic su **
 
 Dopo aver creato le variabili di ambiente, è possibile aggiornarle utilizzando ![Aggiungi/Aggiorna - Icona Aggiungi cerchio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Aggiungi/Aggiorna** per aprire la finestra di dialogo **Configurazione ambiente**.
 
-Adobe Se si desidera aggiornare più variabili, si consiglia di utilizzare la finestra di dialogo **Configurazione ambiente** per aggiornare tutte le variabili necessarie contemporaneamente prima di fare clic su **Salva**. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
+Se si desidera aggiornare più variabili, Adobe consiglia di utilizzare la finestra di dialogo **Configurazione ambiente** per aggiornare tutte le variabili necessarie contemporaneamente prima di fare clic su **Salva**. In questo modo è possibile aggiungerle all’ambiente con un unico aggiornamento.
 
 **Per aggiornare una variabile di ambiente:**
 
@@ -98,7 +98,7 @@ Quando si modifica un segreto, il valore può essere solo aggiornato e non visua
 
    ![Modifica della variabile](assets/edit-variable.png)
 
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
 
    * Fai clic su ![Applica - icona segno di spunta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) per applicare la modifica.
    * Fai clic sull&#39;icona ![Annulla](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) per annullare la modifica.
@@ -127,7 +127,7 @@ Puoi accedere alle variabili di ambiente e ai segreti tramite XML nel modo segue
 
 `${env.VARIABLE_NAME}`
 
-Per un esempio di utilizzo di entrambi i tipi di variabili in un file `pom.xml`, vedere [Configurazione del progetto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories).
+Per un esempio di utilizzo di entrambi i tipi di variabili in un file [, vedere ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)Configurazione del progetto`pom.xml`.
 
 Per ulteriori informazioni, consulta anche la [documentazione Maven ufficiale](https://maven.apache.org/settings.html#quick-overview).
 

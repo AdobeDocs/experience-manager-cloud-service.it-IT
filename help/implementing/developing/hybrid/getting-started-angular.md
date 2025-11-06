@@ -3,12 +3,12 @@ title: Guida introduttiva alle applicazioni a pagina singola in AEM con Angular
 description: Questo articolo presenta un esempio di applicazione SPA, spiega come viene creata e come iniziare subito a utilizzare un’applicazione SPA personale con il framework Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -104,7 +104,7 @@ Una volta generato, il pacchetto può essere caricato in un’istanza di AEM.
 
 ### Archetipo di progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Struttura dell&#39;applicazione {#application-structure}
 
@@ -147,7 +147,7 @@ Quando il componente viene creato in modo statico utilizzando la maschera del co
 
 ### app.component.ts {#app-component-ts}
 
-Una volta avviato `AppComponent`, `app.module.ts` può inizializzare l&#39;app, che viene qui mostrata in una versione semplificata per concentrarsi sul contenuto importante.
+Una volta avviato `app.module.ts`, `AppComponent` può inizializzare l&#39;app, che viene qui mostrata in una versione semplificata per concentrarsi sul contenuto importante.
 
 ```
 // app.component.ts

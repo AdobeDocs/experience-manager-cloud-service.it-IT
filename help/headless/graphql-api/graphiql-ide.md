@@ -4,10 +4,10 @@ description: Scopri come utilizzare l’IDE GraphiQL in Adobe Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 90%
+source-wordcount: '1135'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +25,7 @@ Un’implementazione dell’IDE [GraphiQL](https://graphql.org/learn/serving-ove
 >Prima di utilizzare l’IDE GraphiQL, devi avere [configurato gli endpoint](/help/headless/graphql-api/graphql-endpoint.md) nel [browser delle configurazioni](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query GraphQL consentendoti di:
+
 * selezionare l’**Endpoint** appropriato per la configurazione Sites da utilizzare per le query;
 * inserire direttamente nuove query;
 * creare e accedere a **[query persistenti](/help/headless/graphql-api/persisted-queries.md)**;
@@ -37,7 +38,7 @@ Lo strumento **GraphiQL** consente di testare ed eseguire il debug delle query G
 
 Puoi accedere all’editor di query da:
 
-* **Strumenti** -> **Generale** -> **Editor query GraphQL**
+* **Strumenti** -> **Generale** -> **Editor di query GraphQL**
 * direttamente; ad esempio `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaccia di GraphiQL](assets/cfm-graphiql-interface.png "Interfaccia di GraphiQL")
@@ -96,7 +97,7 @@ Esempio:
 
 ## Gestione della cache per le query persistenti {#managing-cache}
 
-Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono consigliate in quanto possono essere memorizzate nella cache ai livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. Per impostazione predefinita, AEM renderà non valida la cache CDN (Content Delivery Network) in base a un valore Time To Live (TTL) predefinito.
+Le [query persistenti](/help/headless/graphql-api/persisted-queries.md) sono consigliate in quanto possono essere memorizzate nella cache ai livelli dispatcher e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. Per impostazione predefinita, AEM renderà non valida la cache della rete per la consegna dei contenuti (CDN) in base a un valore Time -to-Live (TTL) predefinito.
 
 >[!NOTE]
 >

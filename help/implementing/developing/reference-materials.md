@@ -3,8 +3,8 @@ title: Materiali di riferimento API
 description: AEM dispone di API estese e potenti che puoi utilizzare per il tuo progetto di esperienza digitale.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 4%
@@ -46,7 +46,7 @@ AEM si basa su diverse API open-source aggiuntive.
 
 ## Linee guida sulle preferenze API {#guidelines}
 
-AEM si basa sui seguenti quattro set di API Java primarie in ordine decrescente di preferenza.
+AEM è basato sui seguenti quattro set di API Java primari in ordine decrescente di preferenza.
 
 | Priorità | API | Descrizione |
 |---|---|---|
@@ -55,11 +55,11 @@ AEM si basa sui seguenti quattro set di API Java primarie in ordine decrescente 
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Astrazioni di dati e contenuti come nodo, proprietà e sessioni. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Astrazioni dei contenitori di applicazioni OSGi come servizi e componenti (OSGi). |
 
-Se un’API è fornita da AEM, preferiscila a Sling, JCR e OSGi. Se AEM non fornisce un&#39;API, preferisci Sling a JCR e OSGi.
+Se un’API è fornita da AEM, preferiscila a Sling, JCR e OSGi. Se AEM non fornisce un’API, preferisci Sling rispetto a JCR e OSGi.
 
 >[!TIP]
 >
->Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=it).
+>Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## Servizi e API di distribuzione e gestione dei contenuti di AEM {#delivery-apis}
 
@@ -76,7 +76,7 @@ AEM offre componenti personalizzabili e opzioni di distribuzione dei contenuti.
 |  |  |
 | [API Assets](/help/assets/mac-api-assets.md) | Consente operazioni di creazione-lettura-aggiornamento-eliminazione (CRUD) sulle risorse, inclusi dati binari, metadati, rappresentazioni e commenti. Consulta API HTTP di AEM Assets |
 | [API HTTP frammenti di contenuto](/help/assets/content-fragments/assets-api-content-fragments.md) | Accedere ai contenuti dei frammenti di contenuto direttamente tramite l’API HTTP tramite operazioni CRUD |
-| [Frammenti di contenuto Assets API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=it) | Formato esatto delle richieste di risorse HTTP supportate |
+| [Frammenti di contenuto API HTTP Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) | Formato esatto delle richieste di risorse HTTP supportate |
 
 >[!NOTE]
 >

@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 50%
+ht-degree: 55%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 50%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -33,16 +33,15 @@ ht-degree: 50%
 ## Varie opzioni disponibili nella finestra Firma
 
 * **A:** Fai clic sull&#39;icona **Pennello pittura** per disegnare la firma su un&#39;area di lavoro.
-* **B:** Fai clic sull&#39;icona **Cancella** per cancellare la firma nell&#39;area di lavoro.
-* **C:** Fai clic sull&#39;icona **Geolocation** per aggiungere la geolocalizzazione insieme alla firma.
-* **D:** Fai clic sull&#39;icona **Tastiera** per digitare il tuo nome nell&#39;area di lavoro.
+* **B:** fai clic sull’icona **Cancella** per cancellare la firma nell’area di lavoro.
+* **C:** fai clic sull’icona **Geolocalizzazione** per aggiungere la geolocalizzazione insieme alla firma.
+* **D:** fai clic sull’icona **Tastiera** per digitare il tuo nome nell’area di lavoro.
 
-Dopo aver selezionato l&#39;icona Fine ![aem_forms_save](assets/aem_forms_save.png) nella finestra Firma a mano a mano, non è possibile modificare la firma. Nel caso in cui si desideri modificare la firma, è necessario ignorare la firma corrente e riapporla utilizzando l&#39;opzione Pennello/Tastiera.
+Dopo aver selezionato l&#39;icona Fine ![aem_forms_save](assets/aem_forms_save.png) nella finestra Firma a mano a mano, non è possibile modificare la firma. Nel caso in cui desideri modificare la firma, è necessario ignorare quella corrente e riapporla utilizzando l’opzione Pennello/Tastiera.
 
 È possibile selezionare l&#39;icona **Configura** ![configura icona](assets/configure.png) per impostare le proporzioni dell&#39;area di lavoro Firma scarabocchio.
+
 * Quando le proporzioni dell’area di lavoro Firma a mano sono inferiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte nella parte inferiore dell’area di lavoro Firma a mano.
-
-
 * Quando le proporzioni dell’area di lavoro Firma scarabocchio sono superiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte al lato destro dell’area di lavoro Firma scarabocchio.
 
 
@@ -53,7 +52,6 @@ Dopo aver selezionato l&#39;icona Fine ![aem_forms_save](assets/aem_forms_save.p
 >[!NOTE]
 >
 >Le firme vengono sempre salvate in formato PNG.
->
 
 ## Configurare un modulo adattivo per utilizzare la firma scarabocchio {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -108,7 +106,7 @@ Puoi personalizzare facilmente il componente Firma a mano per i visitatori con l
 
 Nella scheda **Accessibilità** è possibile impostare i valori per le etichette di [accessibilità ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) del componente. Sono disponibili varie opzioni per l’utilizzo del testo per l’assistente vocale:
 
-* **Precedenza Reader schermo** - Precedenza Reader schermo si riferisce a testo aggiuntivo che deve essere letto specificamente da tecnologie per l&#39;accessibilità, come utilità per la lettura dello schermo, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome del campo ed eventuali messaggi rilevanti (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di qualsiasi utente, comprese le persone ipovedenti, consentendo di comprendere appieno il campo del modulo e i relativi requisiti.
+* **Precedenza Reader per schermo** - Precedenza Reader per schermo si riferisce a testo aggiuntivo che deve essere letto dalle tecnologie per l&#39;accessibilità, come le utilità per la lettura dello schermo, utilizzate da persone ipovedenti. Questo testo fornisce una descrizione audio dello scopo del campo modulo e può includere informazioni sul titolo, la descrizione, il nome del campo ed eventuali messaggi rilevanti (testo personalizzato). Il testo dell’assistente vocale consente di garantire l’accesso al modulo da parte di qualsiasi utente, comprese le persone ipovedenti, consentendo di comprendere appieno il campo del modulo e i relativi requisiti.
 
    * **Testo personalizzato**: seleziona questa opzione per utilizzare il testo personalizzato per le etichette di accessibilità ARIA. Selezionando questa opzione, viene visualizzata la finestra di dialogo Testo personalizzato. Puoi aggiungere informazioni rilevanti nella finestra di dialogo Testo personalizzato.
    * **Descrizione breve**: selezionare questa opzione per utilizzare la descrizione per le etichette di accessibilità ARIA.

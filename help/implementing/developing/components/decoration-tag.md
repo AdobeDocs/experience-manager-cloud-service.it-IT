@@ -3,8 +3,8 @@ title: Tag di decorazione
 description: Quando viene eseguito il rendering di un componente in una pagina web, è possibile generare un elemento HTML che racchiude all’interno il componente renderizzato. AEM offre agli sviluppatori una logica chiara e semplice che controlla i tag di decorazione che racchiudono i componenti.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 8%
@@ -37,7 +37,7 @@ Di seguito sono riportati alcuni consigli generali su quando includere l’eleme
 
 Per controllare il comportamento del tag di decorazione, è possibile applicare ai componenti le proprietà e i nodi seguenti:
 
-* **`cq:noDecoration {boolean}`:** Questa proprietà può essere aggiunta a un componente e un valore true impedisce all&#39;AEM di generare elementi wrapper sul componente.
+* **`cq:noDecoration {boolean}`:** Questa proprietà può essere aggiunta a un componente e un valore true impedisce ad AEM di generare elementi wrapper sul componente.
 * **`cq:htmlTag`nodo :** Questo nodo può essere aggiunto in un componente e può avere le seguenti proprietà:
    * **`cq:tagName {String}`:** Questo può essere utilizzato per specificare un tag HTML personalizzato da utilizzare per il wrapping dei componenti invece dell&#39;elemento DIV predefinito.
    * **`class {String}`:** Può essere utilizzato per specificare i nomi di classe css da aggiungere al wrapper.

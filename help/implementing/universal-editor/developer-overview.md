@@ -3,9 +3,9 @@ title: Panoramica dell’editor universale per sviluppatori AEM
 description: Se ti occupi dello sviluppo AEM e ti interessa sapere come funziona l’editor universale e come utilizzarlo nel progetto, questo documento ti offre un’introduzione end-to-end che ti guida attraverso la strumentazione del progetto WKND per utilizzare l’editor universale.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
 
@@ -143,7 +143,7 @@ Devi aggiungere la libreria JavaScript necessaria al componente pagina dell’ap
    https://localhost:8443/crx/de
    ```
 
-1. In `/apps/wknd/components/page`, modifica il file `customheaderlibs.html`.
+1. In `/apps/wknd/components/page`, modificare il file `customheaderlibs.html`.
 
    ![Modifica del file customheaderlibs.html](assets/dev-customheaderlibs.png)
 
@@ -179,7 +179,7 @@ Tuttavia, probabilmente hai notato che non puoi interagire con la pagina nell’
    https://localhost:8443/crx/de
    ```
 
-1. In `/apps/wknd/components/page`, modifica il file `customheaderlibs.html`.
+1. In `/apps/wknd/components/page`, modificare il file `customheaderlibs.html`.
 
    ![Modifica il file customheaderlibs.html](assets/dev-instrument-app.png)
 
@@ -204,7 +204,7 @@ Ora l’editor universale non solo può caricare correttamente il contenuto dall
 >[!TIP]
 >
 >* Consulta il documento [Guida introduttiva all’editor universale in AEM](/help/implementing/universal-editor/getting-started.md#connection) per maggiori dettagli sulla connessione per i metadati.
->* Per ulteriori informazioni sulla struttura dell’editor universale, consulta il documento [Architettura dell’editor universale](/help/implementing/universal-editor/architecture.md#service).
+>* Per ulteriori informazioni sulla struttura dell&#39;editor universale, consulta [Architettura dell&#39;editor universale](/help/implementing/universal-editor/architecture.md#service).
 >* Per ulteriori informazioni su come connettersi a una versione self-hosted dell’editor universale, consulta il documento [Sviluppo AEM locale con l’editor universale](/help/implementing/universal-editor/local-dev.md).
 
 ## Componenti della strumentazione {#instrumenting-components}
@@ -374,7 +374,7 @@ Per aggiornare l’app in modo da utilizzare il pannello Proprietà per la modif
    https://localhost:8443/crx/de
    ```
 
-1. In `/apps/wknd/components/page`, modifica il file `customheaderlibs.html`.
+1. In `/apps/wknd/components/page`, modificare il file `customheaderlibs.html`.
 
    ![Modifica del file customheaderlibs.html](assets/dev-instrument-properties-rail.png)
 

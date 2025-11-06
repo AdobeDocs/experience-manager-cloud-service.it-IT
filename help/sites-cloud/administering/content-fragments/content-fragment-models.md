@@ -2,10 +2,10 @@
 title: Definizione dei modelli per frammenti di contenuto
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i frammenti di contenuto in AEM, consentendo di creare contenuti strutturati da utilizzare nella distribuzione headless o nell’authoring delle pagine.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 31%
@@ -313,10 +313,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM dispone di protezione di ricorrenza per:
 >
 >* Riferimenti al contenuto
->  &#x200B;>  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
+>  In questo modo si impedisce all’utente di aggiungere un riferimento al frammento corrente e si potrebbe creare una finestra di dialogo di selezione Riferimento frammento vuota.
 >
 >* Riferimenti frammento in GraphQL
->  &#x200B;>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
+>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui si fa riferimento l’un l’altro, alla prima occorrenza restituisce null.
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Il tipo di dati **Riferimento contenuto** consente di eseguire il rendering del 
 Oltre alle proprietà standard puoi specificare:
 
 * **Percorso principale**, che specifica o rappresenta la posizione in cui archiviare il contenuto a cui si fa riferimento
+
   >[!NOTE]
   >
   >Questo è obbligatorio se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l’editor di frammenti di contenuto.
@@ -338,6 +339,7 @@ Oltre alle proprietà standard puoi specificare:
   >Per ulteriori dettagli, vedi [Immagini di riferimento](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images).
 
 * I tipi di contenuto a cui è possibile fare riferimento
+
   >[!NOTE]
   >
   >Devono includere **Immagine** se desideri caricare e fare riferimento direttamente alle immagini in questo campo quando utilizzi l&#39;editor di frammenti di contenuto.
@@ -346,6 +348,7 @@ Oltre alle proprietà standard puoi specificare:
 
 * Le limitazioni per le dimensioni dei file
 * Se si fa riferimento a un’immagine:
+
    * Mostra miniatura
    * Limiti di altezza e larghezza dell’immagine
 

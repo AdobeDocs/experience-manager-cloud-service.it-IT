@@ -1,17 +1,17 @@
 ---
-title: Riferimento API di JavaScript ContextHub
+title: Riferimento API di JavaScript per ContextHub
 description: L’API JavaScript di ContextHub è disponibile per i tuoi script quando il componente ContextHub è stato aggiunto alla pagina
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
 
 ---
 
-# Riferimento API di JavaScript ContextHub {#contexthub-javascript-api-reference}
+# Riferimento API di JavaScript per ContextHub {#contexthub-javascript-api-reference}
 
 L&#39;API JavaScript ContextHub è disponibile per gli script quando il componente [ContextHub è stato aggiunto alla pagina](adding-contexthub.md).
 
@@ -64,7 +64,7 @@ Nella tabella seguente sono elencati i nomi degli eventi che si verificano per l
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Generato quando il contenitore dell’interfaccia utente viene inizializzato | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indica la modalità interfaccia utente attiva | `/_/active-ui-mode` |
 
-## Riferimento API di JavaScript ContextHub {#contexthub-javascript-api-reference-2}
+## Riferimento API di JavaScript per ContextHub {#contexthub-javascript-api-reference-2}
 
 L&#39;oggetto ContextHub consente di accedere a tutti gli archivi.
 

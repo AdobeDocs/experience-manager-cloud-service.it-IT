@@ -3,8 +3,8 @@ title: Utilizzo di adattatori Sling
 description: Sling offre un pattern Adapter per tradurre in modo semplice gli oggetti che implementano l'interfaccia Adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 2%
@@ -331,7 +331,7 @@ Ancora nessuna destinazione, ma implementa Adaptable e potrebbe essere utilizzat
  </tbody>
 </table>
 
-#### Sicurezza {#security}
+#### Protezione {#security}
 
 **Autorizzabile**, **Utente** e **Gruppo** si adattano a:
 
@@ -348,7 +348,7 @@ Ancora nessuna destinazione, ma implementa Adaptable e potrebbe essere utilizzat
 | [Nodo](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nodo della risorsa. |
 | ... | Tutto ciò a cui può essere adattata la risorsa della risorsa. |
 
-#### Assegnazione dei tag {#tagging}
+#### Assegnazione tag {#tagging}
 
 **Tag** si adatta a:
 

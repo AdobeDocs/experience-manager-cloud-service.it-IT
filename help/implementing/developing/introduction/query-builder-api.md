@@ -3,8 +3,8 @@ title: API Query Builder
 description: La funzionalità di Asset Share Query Builder è esposta tramite un'API Java&trade; e un'API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # API Query Builder {#query-builder-api}
 
-Query Builder offre un modo semplice per eseguire query sull’archivio dei contenuti dell’AEM. La funzionalità è esposta tramite un’API Java™ e un’API REST. Questo documento descrive queste API.
+Query Builder offre un modo semplice per eseguire query sull’archivio dei contenuti di AEM. La funzionalità è esposta tramite un’API Java™ e un’API REST. Questo documento descrive queste API.
 
 Il generatore di query lato server ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) accetta una descrizione della query, crea ed esegui una query XPath, facoltativamente filtra il set di risultati ed estrae i facet, se necessario.
 
@@ -25,19 +25,19 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 >[!NOTE]
 >
->L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR dell’AEM utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, vedere [Query dei dati Adobe Experience Manager tramite l&#39;API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=it).
+>L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR di AEM utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, vedere [Query dei dati Adobe Experience Manager tramite l&#39;API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 ## Sessione Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=it) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe.
 
-Puoi [rivedere la sessione dedicata al generatore di query](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=it) per una panoramica e l&#39;utilizzo dello strumento.
+Puoi [rivedere la sessione dedicata al generatore di query](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) per una panoramica e l&#39;utilizzo dello strumento.
 
 ## Query di esempio {#sample-queries}
 
 Questi esempi sono forniti nella notazione di stile delle proprietà Java™. Per utilizzarli con l&#39;API Java™, utilizzare un Java™ `HashMap` come nell&#39;esempio di API seguente.
 
-Per il servlet JSON `QueryBuilder`, ogni esempio include un collegamento di esempio a un&#39;installazione AEM (nel percorso predefinito, `http://<host>:<port>`). Accedi all’istanza dell’AEM prima di utilizzare questi collegamenti.
+Per il servlet JSON `QueryBuilder`, ogni esempio include un collegamento di esempio a un&#39;installazione di AEM (nel percorso predefinito, `http://<host>:<port>`). Accedi all’istanza di AEM prima di utilizzare questi collegamenti.
 
 >[!CAUTION]
 >
@@ -453,7 +453,7 @@ In alternativa, il servlet JSON di Query Builder in
 
 `path=/tmp` è solo un esempio.
 
-### Debug generale di Recommendations {#general-debugging-recommendations}
+### Consigli generali sul debug {#general-debugging-recommendations}
 
 ### Ottenere XPath spiegabile tramite la registrazione {#obtain-explain-able-xpath-via-logging}
 

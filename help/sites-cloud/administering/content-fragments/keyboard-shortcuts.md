@@ -2,10 +2,10 @@
 title: Scelte rapide da tastiera per la console Frammenti di contenuto
 description: In AEM sono disponibili varie scelte rapide da tastiera, inclusa una selezione per la gestione dei frammenti di contenuto.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 88%

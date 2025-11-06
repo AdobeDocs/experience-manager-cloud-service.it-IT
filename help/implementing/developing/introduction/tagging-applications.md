@@ -3,8 +3,8 @@ title: Creazione di tag nelle applicazioni AEM
 description: Utilizzare i tag a livello di programmazione o estenderli all’interno di un’applicazione AEM personalizzata
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Creazione di tag nelle applicazioni AEM {#building-tagging-into-aem-applications}
 
-Per utilizzare i tag a livello di programmazione o per estendere i tag all&#39;interno di un&#39;applicazione AEM personalizzata, in questo documento viene descritto l&#39;utilizzo di
+Ai fini dell’utilizzo a livello di programmazione dei tag o dell’estensione dei tag all’interno di un’applicazione AEM personalizzata, questo documento descrive l’utilizzo di
 
 * [API di assegnazione tag](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -155,7 +155,7 @@ L&#39;API lato server ha localizzato `title` metodi correlati:
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
 
-In AEM, la lingua può essere ottenuta o dalla lingua della pagina o dalla lingua dell’utente.
+In AEM, la lingua può essere ottenuta dalla lingua della pagina o dalla lingua dell’utente.
 
 Per i tag, la localizzazione dipende dal contesto, in quanto il tag `titles` può essere visualizzato nella lingua della pagina, nella lingua dell&#39;utente o in qualsiasi altra lingua.
 
@@ -170,4 +170,4 @@ Il finlandese è ora disponibile nella finestra di dialogo dei tag delle proprie
 
 >[!NOTE]
 >
->La nuova lingua deve essere una delle lingue riconosciute dall&#39;AEM. Deve quindi essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.
+>La nuova lingua deve essere una delle lingue riconosciute da AEM. Deve quindi essere disponibile come nodo sotto `/libs/wcm/core/resources/languages`.

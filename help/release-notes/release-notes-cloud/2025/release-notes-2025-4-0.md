@@ -4,7 +4,7 @@ description: Note sulla versione 2025.4.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di aprile 2025 per un riepilogo delle funzioni aggiunte alla versione 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464010?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -157,19 +157,21 @@ Il **runtime** Java 21, con prestazioni più elevate, verrà distribuito automat
 
 >[!IMPORTANT]
 >
-> Il **runtime** Java 21 è stato distribuito negli ambienti di sviluppo/RDE a febbraio; verrà applicato agli ambienti di staging/produzione il **28 e 29 aprile**. Tieni presente che **la generazione del codice** con Java 21 (o Java 17) è indipendente dal runtime di Java 21. È necessario eseguire in modo esplicito i passaggi per generare il codice con Java 21 (o Java 17).
+> Il **runtime** Java 21 è stato implementato negli ambienti di sviluppo/RDE a febbraio; verrà applicato agli ambienti di staging e di produzione il **28 e 29 aprile**. Tieni presente che **la generazione del codice** con Java 21 (o Java 17) è indipendente dal runtime di Java 21. È necessario eseguire in modo esplicito i passaggi per generare il codice con Java 21 (o Java 17).
 
 ### Applicazione dei criteri di configurazione della registrazione di AEM {#logconfig-policy}
 
 Per garantire un monitoraggio efficace degli ambienti della clientela, i registri Java di AEM devono mantenere un formato coerente e non devono essere sostituiti da configurazioni personalizzate. L’output del registro deve rimanere indirizzato ai file predefiniti. Per il codice prodotto AEM, è necessario mantenere i livelli di registro predefiniti. Tuttavia, è accettabile regolare i livelli di registro per il codice sviluppato dalla clientela.
 
 A tal fine, non è necessario apportare modifiche alle seguenti proprietà OSGi:
+
 * **Configurazione registro Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`): *tutte le proprietà*
 * **Configurazione logger registrazione Sling Apache** (PID di fabbrica: `org.apache.sling.commons.log.LogManager.factory.config`):
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 A metà maggio, AEM applicherà un criterio in base al quale eventuali modifiche personalizzate a queste proprietà verranno ignorate. Rivedi e adegua di conseguenza i processi a valle. Ad esempio, se utilizzi la funzione di inoltro del registro:
+
 * Se la destinazione di registrazione prevede un formato di registro personalizzato (non predefinito), potrebbe essere necessario aggiornare le regole di acquisizione.
 * Se le modifiche ai livelli di registro ne riducono la verbosità, tieni presente che i livelli di registro predefiniti possono causare un aumento significativo del rispettivo volume.
 

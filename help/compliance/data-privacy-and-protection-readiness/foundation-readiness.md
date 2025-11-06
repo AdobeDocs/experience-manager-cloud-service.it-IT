@@ -1,10 +1,10 @@
 ---
 title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di Adobe Experience Manager as a Cloud Service Foundation
-description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati. Questo articolo include il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM as a Cloud Service.
+description: Scopri il supporto di Adobe Experience Manager as a Cloud Service Foundation per le varie normative su privacy e protezione dei dati. Questo articolo include il Regolamento generale sulla protezione dei dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 >[!WARNING]
 >
->Il contenuto di questo documento non costituisce una consulenza legale e non intende sostituirsi a una consulenza legale.
+>Il contenuto di questo documento non costituisce una consulenza legale e non intende esserne una sostituzione.
 >
 >Consulta l’ufficio legale della tua azienda per ricevere consigli in merito alle normative su privacy e protezione dei dati.
 
@@ -81,7 +81,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-2. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
+2. Passa il puntatore sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
 
 3. Nel menu superiore, fai clic su **Disabilita** per disabilitare (disattivare) l’utente:
 

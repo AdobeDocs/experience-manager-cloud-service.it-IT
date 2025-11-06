@@ -4,7 +4,7 @@ description: Scopri come rendere persistenti le query GraphQL in Adobe Experienc
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -221,7 +221,7 @@ dove `PERSISTENT_PATH` è un percorso abbreviato in cui viene salvata la query p
 
 ## Utilizzo delle variabili di query {#query-variables}
 
-Le variabili di query possono essere utilizzate con le query persistenti. Le variabili di query aggiunte alla richiesta devono essere precedute da un punto e virgola (`;`) e devono utilizzare il nome e il valore della variabile. Se si utilizzano più variabili, queste devono essere separate da un punto e virgola.
+Le variabili di query possono essere utilizzate con le query persistenti. Le variabili di query vengono aggiunte alla richiesta con un prefisso composto da punto e virgola (`;`) e il nome e il valore della variabile. Se si utilizzano più variabili, queste devono essere separate da un punto e virgola.
 
 Il pattern si presenta come segue:
 
@@ -277,11 +277,13 @@ Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` è abilitato per Dispatcher, i parametr
 Per evitare questa situazione:
 
    * Abilita `DispatcherNoCanonURL` sul Dispatcher.
-Questo istruirà Dispatcher a inoltrare l’URL originale all’AEM, evitando così la duplicazione delle codifiche.
+Questo istruirà Dispatcher a inoltrare l’URL originale ad AEM, in modo da evitare codifiche duplicate.
 Tuttavia, questa impostazione al momento funziona solo sul livello `vhost`, quindi se disponi già di configurazioni Dispatcher per riscrivere gli URL (ad esempio, quando utilizzi URL abbreviati), potresti aver bisogno di un `vhost` separato per gli URL di query persistenti.
 
    * Invia `/` o `\` caratteri senza codifica.
-Quando si chiama l&#39;URL della query persistente, verificare che tutti i caratteri `/` o `\` non siano codificati nel valore delle variabili della query persistente.
+
+     Quando si chiama l&#39;URL della query persistente, verificare che tutti i caratteri `/` o `\` non siano codificati nel valore delle variabili della query persistente.
+
      >[!NOTE]
      >
      >Questa opzione è consigliata solo quando la soluzione `DispatcherNoCanonURL` non può essere implementata per alcun motivo.
@@ -292,7 +294,7 @@ Quando si chiama l&#39;URL della query persistente, verificare che tutti i carat
 
 ## Memorizzazione in cache delle query persistenti {#caching-persisted-queries}
 
-Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](/help/headless/deployment/dispatcher.md) e CDN, migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
+Le query persistenti sono consigliate in quanto possono essere memorizzate nella cache a livello di [Dispatcher](/help/headless/deployment/dispatcher.md) e di rete per la consegna dei contenuti (CDN), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente.
 
 Per impostazione predefinita, AEM annullerà la cache basata sulla definizione TTL (Time To Live). Le definizioni TTL possono essere definite dai seguenti parametri. Questi parametri sono accessibili con vari mezzi, con variazioni dei nomi in base al meccanismo utilizzato:
 

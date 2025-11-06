@@ -4,8 +4,8 @@ description: Scopri come configurare e scalare il team di sviluppo Enterprise e 
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: cbeb3d8f5fa5cbf1839e1e8c5e651329b06e60a4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 40%
@@ -14,11 +14,11 @@ ht-degree: 40%
 
 # Configurazione del team di sviluppo Enterprise per AEM as a Cloud Service {#enterprise-setup}
 
-Scopri come configurare e scalare il team di sviluppo Enterprise e come l’as a Cloud Service AEM (Adobe Experience Manager) può supportare il processo di sviluppo.
+Scopri come configurare e scalare il team di sviluppo Enterprise e come AEM (Adobe Experience Manager) as a Cloud Service può supportare il processo di sviluppo.
 
 ## Introduzione {#introduction}
 
-Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) appositamente progettate. Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice](/help/implementing/cloud-manager/code-quality-testing.md).
+Per supportare i clienti con configurazioni di sviluppo di livello Enterprise, AEM as a Cloud Service si integra completamente con Cloud Manager e le relative [pipeline CI/CD ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) appositamente progettate. Queste pipeline e servizi sono progettati in base alle best practice e garantiscono [test accurati e la qualità più elevata del codice](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Supporto di Cloud Manager per la configurazione del team di sviluppo aziendale {#cloud-manager}
 
@@ -36,7 +36,7 @@ Il codice può essere distribuito negli ambienti di sviluppo con una pipeline no
 
 La pipeline di produzione distribuisce il codice e la configurazione nell’ambiente di staging, esegue il test dell’applicazione e infine la distribuisce nell’ambiente di produzione.
 
-Un SDK per Cloud Service sempre aggiornato con i più recenti miglioramenti di AEM as a Cloud Service consente lo sviluppo locale utilizzando direttamente l’hardware locale dello sviluppatore. Questo approccio consente uno sviluppo rapido con tempi di risposta molto ridotti. Di conseguenza, il team di sviluppo può lavorare dal proprio ambiente locale conosciuto e scegliere tra un’ampia gamma di strumenti di sviluppo, eseguendo il push negli ambienti di sviluppo o produzione quando ritenuto opportuno.
+Un SDK Cloud Service sempre aggiornato con i più recenti miglioramenti di AEM as a Cloud Service consente lo sviluppo locale utilizzando direttamente l’hardware locale dello sviluppatore. Questo approccio consente uno sviluppo rapido con tempi di risposta molto ridotti. Di conseguenza, il team di sviluppo può lavorare dal proprio ambiente locale conosciuto e scegliere tra un’ampia gamma di strumenti di sviluppo, eseguendo il push negli ambienti di sviluppo o produzione quando ritenuto opportuno.
 
 Cloud Manager supporta configurazioni flessibili di più team che possono essere regolate in base alle esigenze di un&#39;azienda. Per garantire distribuzioni stabili tra più team, la pipeline categorica di Cloud Manager convalida e verifica il codice da tutti i team insieme. Questo approccio aiuta a evitare situazioni in cui le modifiche di un team influiscono sulla produzione di tutti i team.
 
@@ -54,7 +54,7 @@ L’onboarding di un nuovo progetto richiede l’inserimento nel file di progett
 
 ![Diagramma del flusso di lavoro](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-Ogni archivio Git viene configurato utilizzando l&#39;archetipo di progetto [AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) e segue pertanto le best practice per la configurazione dei progetti AEM. L’unica eccezione è la configurazione di Dispatcher, che viene eseguita nell’archivio Git condiviso come descritto sopra.
+Ogni archivio Git viene configurato utilizzando [Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) e segue pertanto le best practice per la configurazione dei progetti AEM. L’unica eccezione è la configurazione di Dispatcher, che viene eseguita nell’archivio Git condiviso come descritto sopra.
 
 Ogni team utilizza un flusso di lavoro Git semplificato con due rami + N, seguendo il modello di flusso Git:
 
@@ -83,7 +83,7 @@ I push al ramo di sviluppo vengono gestiti in modo diverso. Anche il push a un r
 
 L’esecuzione della pipeline di produzione include il controllo del codice di tutti i team tramite i gate di qualità forniti. Dopo aver distribuito il codice nell’ambiente di staging, vengono eseguiti i test e i controlli in modo che tutto funzioni come previsto. Quando tutti i gate vengono superati, le modifiche vengono implementate nell’ambiente di produzione senza interruzioni o tempi di inattività.
 
-Per lo sviluppo locale, si utilizza l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). L’SDK consente di configurare un’istanza di Author, Publish e Dispatcher locale. Questo flusso di lavoro consente lo sviluppo offline e tempi di risposta rapidi. A volte per lo sviluppo viene utilizzato solo l’ambiente di authoring, ma configurare rapidamente gli ambienti Dispatcher e di pubblicazione consente di eseguire test locali prima di eseguire il push nell’archivio Git.
+Per lo sviluppo locale, si utilizza l’[SDK di AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing). Il SDK consente di configurare un’istanza di Author, Publish e Dispatcher locale. Questo flusso di lavoro consente lo sviluppo offline e tempi di risposta rapidi. A volte per lo sviluppo viene utilizzato solo l’ambiente di authoring, ma configurare rapidamente gli ambienti Dispatcher e di pubblicazione consente di eseguire test locali prima di eseguire il push nell’archivio Git.
 
 In genere, i membri di ogni team estraggono il codice dal Git condiviso per il proprio codice di progetto. Non è necessario estrarre altri progetti perché i progetti sono indipendenti.
 
@@ -93,7 +93,7 @@ Questa configurazione reale può essere utilizzata come blueprint e personalizza
 
 >[!TIP]
 >
->Per ulteriori informazioni su questa configurazione, consulta [Utilizzare più archivi Git di Source](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code).
+>Per ulteriori informazioni su questa configurazione, consulta [Utilizzare più archivi Git di Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code).
 
 ### Considerazioni per una configurazione con più team {#considerations}
 
@@ -101,7 +101,7 @@ Con l’archivio Git di Cloud Manager e la pipeline di produzione, l’intero co
 
 Al contrario, in assenza di un tale sistema, poiché ogni team può distribuire separatamente, esiste il rischio che un aggiornamento effettuato da un singolo team possa causare problemi di stabilità della produzione. Inoltre, per distribuire gli aggiornamenti è necessario essere coordinati e pianificare i tempi di inattività. Con il costante aumento del numero dei team, coordinarsi diventa molto più complesso e rapidamente ingestibile.
 
-Se viene rilevato un problema al livello dei gate di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza necessità di intervento del personale Adobe. Se non si integra Cloud Service e non si eseguono test continui dell’intera distribuzione, le distribuzioni parziali possono causare interruzioni che richiedono il ripristino dello stato precedente di una richiesta o persino un ripristino completo da un backup. I test parziali possono anche causare ulteriori problemi che devono essere risolti in un secondo momento, richiedendo ancora una volta il coordinamento e il supporto del personale Adobe.
+Se viene rilevato un problema al livello dei gate di qualità, la produzione non viene influenzata e il problema può essere rilevato e risolto senza necessità di intervento del personale Adobe. Se non si integra Cloud Service e non si eseguono test continui dell’intera implementazione, le implementazioni parziali possono causare interruzioni che richiedono il ripristino dello stato precedente di una richiesta o persino un ripristino completo da un backup. I test parziali possono anche causare problemi aggiuntivi che devono essere risolti in un secondo momento, che richiedono ancora una volta il coordinamento e il supporto del personale Adobe.
 
 >[!TIP]
 >

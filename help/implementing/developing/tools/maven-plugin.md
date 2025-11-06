@@ -1,29 +1,29 @@
 ---
-title: Plug-in Maven per pacchetto di contenuti Adobe
-description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM
+title: Plug-in Maven pacchetto contenuti Adobe
+description: Utilizza il plug-in Maven Content Package per distribuire le applicazioni AEM.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
 
 ---
 
-# Plug-in Maven per pacchetto di contenuti Adobe {#adobe-content-package-maven-plugin}
+# Plug-in Maven pacchetto contenuti Adobe {#adobe-content-package-maven-plugin}
 
-Utilizza il plug-in Maven per pacchetti di contenuti Adobe per integrare le attività di distribuzione e gestione dei pacchetti nei progetti Maven.
+Utilizza il plug-in Adobe Content Package Maven per integrare le attività di distribuzione e gestione dei pacchetti nei progetti Maven.
 
-La distribuzione dei pacchetti costruiti all&#39;AEM viene eseguita dal plug-in Maven del pacchetto di contenuti Adobe e consente l&#39;automazione delle attività normalmente eseguite con AEM [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)
+La distribuzione dei pacchetti costruiti in AEM viene eseguita dal plug-in Maven di Adobe Content Package e consente l&#39;automazione delle attività normalmente eseguite con AEM [Gestione pacchetti](/help/implementing/developing/tools/package-manager.md)
 
 * Creare nuovi pacchetti dai file nel file system.
 * Installare e disinstallare pacchetti su AEM.
-* Creare pacchetti già definiti in AEM.
-* Ottieni un elenco dei pacchetti installati su AEM.
-* Rimuovere un pacchetto dall’AEM.
+* Genera pacchetti già definiti in AEM.
+* Ottieni un elenco dei pacchetti installati in AEM.
+* Rimuovere un pacchetto da AEM.
 
-Questo documento descrive come utilizzare Maven per gestire queste attività. Tuttavia è anche importante comprendere [come sono strutturati i progetti AEM e i relativi pacchetti](#aem-project-structure).
+Questo documento descrive come utilizzare Maven per gestire queste attività. Tuttavia è anche importante comprendere [la struttura dei progetti AEM e dei relativi pacchetti](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -33,15 +33,15 @@ Questo documento descrive come utilizzare Maven per gestire queste attività. Tu
 >
 >Il pacchetto **creation** è ora di proprietà del [plug-in Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
->In questo articolo viene descritta la **distribuzione** dei pacchetti costruiti per l&#39;AEM come eseguito dal plug-in Maven del pacchetto di contenuti Adobe.
+>Questo articolo descrive la **distribuzione** dei pacchetti costruiti in AEM come eseguito dal plug-in Maven del pacchetto di contenuti di Adobe.
 
 ## Pacchetti e struttura del progetto AEM {#aem-project-structure}
 
-AEM as a Cloud Service aderisce alle best practice più recenti per la gestione dei pacchetti e la struttura del progetto, come implementato dall’archetipo del progetto AEM più recente.
+AEM as a Cloud Service aderisce alle best practice più recenti per la gestione dei pacchetti e la struttura del progetto, come implementato dal più recente Archetipo progetto AEM.
 
 >[!TIP]
 >
->Consulta l&#39;articolo [Struttura del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione di AEM as a Cloud Service e la documentazione [Archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it). Entrambi sono pienamente supportati per AEM 6.5.
+>Consulta l&#39;articolo [Struttura del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione di AEM as a Cloud Service e la documentazione [Archetipo del progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview). Entrambi sono completamente supportati per AEM 6.5.
 
 ## Ottenere il plug-in Maven del pacchetto di contenuti {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### Proxy {#proxies}
 
-Per gli obiettivi che utilizzano i proxy per l’AEM viene utilizzata la prima configurazione proxy valida trovata nelle impostazioni Maven. Se non viene trovata alcuna configurazione proxy, non viene utilizzato alcun proxy. Vedi il parametro `useProxy` nella sezione [Parametri comuni](#common-parameters).
+Per gli obiettivi che utilizzano i proxy per AEM, viene utilizzata la prima configurazione proxy valida trovata nelle impostazioni Maven. Se non viene trovata alcuna configurazione proxy, non viene utilizzato alcun proxy. Vedi il parametro `useProxy` nella sezione [Parametri comuni](#common-parameters).
 
 ### Parametri comuni {#common-parameters}
 
@@ -98,7 +98,7 @@ I parametri nella tabella seguente sono comuni a tutti gli obiettivi, tranne qua
 | `name` | `String` | `build`: Sì, `install`: No, `rm`: Sì | `build`: nessun valore predefinito, `install`: il valore della proprietà `artifactId` del progetto Maven | Nome del pacchetto su cui intervenire | Tutti gli obiettivi tranne `ls` |
 | `password` | `String` | Sì | `admin` | Password utilizzata per l’autenticazione con AEM | Tutti gli obiettivi tranne `package` |
 | `serverId` | `String` | No | ID server da cui recuperare il nome utente e la password per l&#39;autenticazione | Tutti gli obiettivi tranne `package` |
-| `targetURL` | `String` | Sì | `http://localhost:4502/crx/packmgr/service.jsp` | URL dell’API del servizio HTTP del gestore di pacchetti AEM | Tutti gli obiettivi tranne `package` |
+| `targetURL` | `String` | Sì | `http://localhost:4502/crx/packmgr/service.jsp` | URL dell’API del servizio HTTP del gestore pacchetti di AEM | Tutti gli obiettivi tranne `package` |
 | `timeout` | `int` | No | `5` | Timeout di connessione per la comunicazione con il servizio Gestione pacchetti, in secondi | Tutti gli obiettivi tranne `package` |
 | `useProxy` | `boolean` | No | `true` | Il valore `true` fa in modo che Maven utilizzi la prima configurazione proxy attiva trovata per le richieste proxy al gestore di pacchetti. | Tutti gli obiettivi tranne `package` |
 | `userId` | `String` | Sì | `admin` | Nome utente da autenticare con AEM | Tutti gli obiettivi tranne `package` |
@@ -106,7 +106,7 @@ I parametri nella tabella seguente sono comuni a tutti gli obiettivi, tranne qua
 
 ### build {#build}
 
-Genera un pacchetto di contenuti già definito in un’istanza AEM.
+Genera un pacchetto di contenuti già definito in un’istanza di AEM.
 
 >[!NOTE]
 >
@@ -127,8 +127,8 @@ Oltre ai seguenti parametri, vedere le descrizioni nella sezione [Parametri comu
 | Nome | Tipo | Obbligatorio | Valore predefinito | Descrizione |
 |---|---|---|---|---|
 | `artifact` | `String` | No | Valore della proprietà `artifactId` del progetto Maven | Una stringa del modulo `groupId:artifactId:version[:packaging]` |
-| `artifactId` | `String` | No | Nessuno | ID dell’artefatto da installare |
-| `groupId` | `String` | No | Nessuno | `groupId` dell&#39;artefatto da installare |
+| `artifactId` | `String` | No | Nessuna | ID dell’artefatto da installare |
+| `groupId` | `String` | No | Nessuna | `groupId` dell&#39;artefatto da installare |
 | `install` | `boolean` | No | `true` | Determina se decomprimere automaticamente il pacchetto quando viene caricato |
 | `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | No | Valore della variabile di sistema `localRepository` | L’archivio Maven locale che non può essere configurato utilizzando la configurazione del plug-in in quanto viene sempre utilizzata la proprietà di sistema |
 | `packageFile` | `java.io.File` | No | L’artefatto principale definito per il progetto Maven | Nome del file del pacchetto da installare |
@@ -136,8 +136,8 @@ Oltre ai seguenti parametri, vedere le descrizioni nella sezione [Parametri comu
 | `pomRemoteRepositories` | `java.util.List` | Sì | Valore della proprietà `remoteArtifactRepositories` definita per il progetto Maven | Questo valore non può essere configurato utilizzando la configurazione del plug-in e deve essere specificato nel progetto. |
 | `project` | `org.apache.maven.project.MavenProject` | Sì | Progetto per il quale è configurato il plug-in | Il progetto Maven che è implicito perché il progetto contiene la configurazione del plug-in. |
 | `repositoryId` (POM), `repoID` (riga di comando) | `String` | No | `temp` | ID dell’archivio da cui viene recuperato l’artefatto |
-| `repositoryUrl` (POM), `repoURL` (riga di comando) | `String` | No | Nessuno | URL dell’archivio da cui viene recuperato l’artefatto |
-| version | Stringa | No | Nessuno | Versione dell&#39;artefatto da installare |
+| `repositoryUrl` (POM), `repoURL` (riga di comando) | `String` | No | Nessuna | URL dell’archivio da cui viene recuperato l’artefatto |
+| version | Stringa | No | Nessuna | Versione dell&#39;artefatto da installare |
 
 ### ls {#ls}
 
@@ -171,7 +171,7 @@ Tutti i parametri dell&#39;obiettivo di disinstallazione sono descritti nella se
 | Nome | Tipo | Obbligatorio | Valore predefinito | Descrizione |
 |---|---|---|---|---|
 | `detail` | `boolean` | No | `false` | Determina se visualizzare tutte le proprietà impostabili per ogni obiettivo |
-| `goal` | `String` | No | Nessuno | Questi parametri definiscono il nome dell’obiettivo per il quale visualizzare la guida. Se non viene specificato alcun valore, viene visualizzata la guida per tutti gli obiettivi. |
+| `goal` | `String` | No | Nessuna | Questi parametri definiscono il nome dell’obiettivo per il quale visualizzare la guida. Se non viene specificato alcun valore, viene visualizzata la guida per tutti gli obiettivi. |
 | `indentSize` | `int` | No | `2` | Numero di spazi da utilizzare per il rientro di ciascun livello (se definito, deve essere positivo) |
 | `lineLength` | `int` | No | `80` | Lunghezza massima di una linea di visualizzazione (deve essere positiva se definita) |
 
@@ -209,10 +209,10 @@ Il codice POM seguente aggiunge al pacchetto solo un&#39;immagine in miniatura. 
 </build>
 ```
 
-## Utilizzo dell’archetipo del progetto AEM per generare progetti AEM {#using-archetypes}
+## Utilizzo di Archetipo progetto AEM per generare progetti AEM {#using-archetypes}
 
-L’archetipo del progetto AEM più recente implementa la struttura di pacchetti di best practice sia per le implementazioni on-premise che per quelle AMS ed è consigliato per tutti i progetti AEM.
+La versione più recente di Archetipo progetto AEM implementa la struttura di pacchetti basata su best practice per le implementazioni on-premise e AMS ed è consigliata per tutti i progetti AEM.
 
 >[!TIP]
 >
->Consulta l&#39;articolo [Struttura del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione di AEM as a Cloud Service e la documentazione [Archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it). Entrambi sono pienamente supportati per AEM 6.5.
+>Consulta l&#39;articolo [Struttura del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) nella documentazione di AEM as a Cloud Service e la documentazione [Archetipo del progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview). Entrambi sono completamente supportati per AEM 6.5.

@@ -5,15 +5,15 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 2%
 
 ---
 
-# Configurare i plug-in dell’Editor Rich Text {#configure-the-rich-text-editor-plug-ins}
+# Configurare i plug-in del Rich Text editor  {#configure-the-rich-text-editor-plug-ins}
 
 Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per attivare o disattivare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
 
@@ -134,7 +134,7 @@ Per i collegamenti, puoi anche definire i protocolli che vengono accettati autom
 Per configurare i formati consentiti quando si incolla testo in [!DNL Experience Manager] da un altro programma:
 
 1. Nel componente, passa al nodo `<rtePlugins-node>/edit`. Crea i nodi se il nodo non esiste. Per ulteriori dettagli, vedere [attivare un plug-in](#activateplugin).
-1. Crea un nodo sotto il nodo `edit` per contenere le regole di incollamento HTML:
+1. Crea un nodo sotto il nodo `edit` per contenere le regole di Incolla di HTML:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -455,12 +455,10 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 1. Sotto questo nodo (denominato in base all’intervallo di caratteri speciali) aggiungi le due proprietà seguenti:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere nell&#39;intervallo
 
@@ -500,8 +498,8 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
    >* **Tipo** `String[]`
    >
    >* **Valore**(i) uno dei seguenti elementi o entrambi, come richiesto:
-   >* `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
-   >* `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
+   >   * `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
+   >   * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
 1. Definisci la posizione dei fogli di stile CSS in modo che facciano riferimento a essi. Vedere [Specifica della posizione del foglio di stile](#locationofstylesheet), come quando si definiscono [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
 1. Nel nodo `table` creare i nodi seguenti come richiesto:
@@ -565,7 +563,7 @@ Quando il plug-in spellcheck è attivato, l&#39;editor Rich Text utilizza dizion
 >
 >Il messaggio &quot;Controllo ortografico non riuscito&quot;. viene visualizzato se si tenta di controllare una lingua non installata.
 
-Un Experience Manager di installazione standard include i dizionari per:
+Un&#39;installazione standard di Experience Manager include i dizionari per:
 
 * Inglese americano (en_us)
 * Inglese britannico (en_gb)

@@ -3,9 +3,9 @@ title: Componente pagina SPA
 description: In un’applicazione a pagina singola, il componente pagina non fornisce gli elementi HTML dei suoi componenti secondari, ma lo delega al framework dell’applicazione a pagina singola. Questo documento spiega come questo renda univoco il componente Pagina di un’applicazione a pagina singola.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%

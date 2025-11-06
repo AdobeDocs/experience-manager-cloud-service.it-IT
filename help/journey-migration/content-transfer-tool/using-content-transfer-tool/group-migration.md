@@ -2,9 +2,9 @@
 title: Migrazione dei gruppi
 description: Panoramica sulla migrazione dei gruppi in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Come parte del percorso di transizione verso Adobe Experience Manager (AEM) as a Cloud Service, i gruppi devono essere migrati dai sistemi AEM esistenti ad AEM as a Cloud Service. Questa operazione viene eseguita dallo strumento Content Transfer (Trasferimento contenuti).
 
-Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=it#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente su AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi di cui è stata effettuata la migrazione o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto di AEM da migrare.  In questo modo, gli utenti del cloud system avranno lo stesso accesso che avevano sul sistema AEM sorgente.
+Una modifica importante per AEM as a Cloud Service è l’utilizzo completamente integrato degli Adobe ID per accedere al livello di authoring. Questo processo richiede l&#39;utilizzo di [Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html) per la gestione di utenti e gruppi di utenti. Le informazioni sul profilo utente sono centralizzate in Adobe Identity Management System (IMS) che fornisce il single sign-on in tutte le applicazioni cloud Adobe. Per ulteriori dettagli, vedere [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). A causa di questa modifica, gli utenti vengono creati automaticamente su AEM al primo accesso tramite IMS.  Pertanto, CTT non esegue la migrazione degli utenti al sistema cloud.  Gli utenti IMS devono essere inseriti in gruppi IMS, che possono essere gruppi di cui è stata effettuata la migrazione o nuovi gruppi inseriti nei gruppi AEM a cui è stata concessa l’autorizzazione per accedere al contenuto di AEM da migrare.  In questo modo, gli utenti del cloud system avranno lo stesso accesso che avevano sul sistema AEM sorgente.
 
 ## Dettagli migrazione gruppo {#group-migration-detail}
 
@@ -65,12 +65,14 @@ Se questa impostazione è disabilitata, i gruppi non verranno migrati e non verr
 ## Rapporto sulla migrazione principale e rapporto sugli utenti {#principal-migration-report}
 
 Quando i gruppi vengono inclusi durante la migrazione (impostazione predefinita), viene salvato un rapporto sulla migrazione principale che illustra cosa accade a ciascun gruppo durante la migrazione.  Per scaricare questo rapporto dopo una corretta acquisizione:
+
 * In CAM, vai a Trasferimento contenuti e seleziona Processi di acquisizione.
 * Fai clic sui puntini di sospensione (...) nella riga dell’acquisizione in questione e scegli &quot;Visualizza riepilogo entità&quot;.
 * Nella finestra di dialogo visualizzata, seleziona &quot;Report migrazione entità&quot; dall’elenco a discesa in &quot;Scarica un file...&quot; e fai clic sul pulsante Scarica.
 * Salva il file CSV risultante.
 
 Alcune delle informazioni registrate per gruppo sono:
+
 * Se migrato, il percorso del primo ACL o CUG che ha causato la migrazione del gruppo.
 * Indica se il gruppo è stato migrato in precedenza; se l’acquisizione corrente era un’acquisizione non wipe, alcuni gruppi potrebbero essere stati migrati durante un’acquisizione precedente.
 * Se il gruppo è un gruppo integrato; questi gruppi non vengono migrati perché si trovano sempre nell’ambiente AEMaaCS di destinazione.
@@ -109,7 +111,7 @@ Vedi anche [Gestione utenti](https://helpx.adobe.com/ca/enterprise/using/users.h
 
 * Se l&#39;impostazione **Cancella contenuto esistente nell&#39;istanza Cloud prima dell&#39;acquisizione** è impostata, i gruppi precedentemente trasferiti all&#39;istanza Cloud Service vengono eliminati insieme all&#39;intero archivio esistente; viene creato un nuovo archivio in cui viene acquisito il contenuto. Questo processo reimposta anche tutte le impostazioni, incluse le autorizzazioni sull&#39;istanza di Cloud Service di destinazione, ed è true per tutti gli utenti aggiunti al gruppo **amministratori**. L&#39;utente amministratore deve essere aggiunto nuovamente al gruppo **amministratori** per recuperare il token di accesso per l&#39;acquisizione CTT/CAM.
 * Quando si eseguono acquisizioni senza cancellazione (**Il contenuto esistente** non viene impostato), se il contenuto non viene trasferito perché non è stato modificato dal trasferimento precedente, i gruppi associati a tale contenuto non vengono trasferiti. Questa regola è vera anche se i gruppi sono cambiati nel sistema di origine. Questo perché i gruppi vengono migrati solo insieme al contenuto a cui sono associati. Per questo motivo, in questo caso non verrà eseguita la migrazione dei gruppi che sono membri di un gruppo nel sistema di origine, a meno che non facciano parte di un gruppo diverso di cui è in corso la migrazione o nell&#39;ACL di contenuti diversi di cui è in corso la migrazione. Per migrare successivamente questi gruppi, puoi utilizzare i pacchetti, eliminare i gruppi dalla destinazione e migrare nuovamente il contenuto pertinente o eseguire nuovamente la migrazione utilizzando un’acquisizione wipe.
-* Durante un’acquisizione non wipe, se esiste un gruppo con gli stessi dati vincolati all’univocità (rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId) sia sull’istanza AEM di origine che sull’istanza AEM Cloud Service di destinazione, il gruppo in questione è _not_ migrato e il gruppo esistente precedentemente sul cloud system rimane invariato. Questa operazione viene registrata nel report di migrazione dell’entità.
+* Durante un&#39;acquisizione senza cancellazione del contenuto, se esiste un gruppo con gli stessi dati con vincoli di univocità (rep:principalName, rep:authorizableId, jcr:uuid o rep:externalId) sia sull&#39;istanza AEM di origine che sull&#39;istanza AEM Cloud Service di destinazione, il gruppo in questione è _not_ migrato e il gruppo esistente in precedenza sul cloud rimane invariato. Questa operazione viene registrata nel report di migrazione dell’entità.
 * Vedere [Migrazione di gruppi utenti chiusi](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) per ulteriori considerazioni sui gruppi utilizzati in un criterio Gruppo utenti chiuso (CUG).
 
 ## Riepilogo finale e relazione

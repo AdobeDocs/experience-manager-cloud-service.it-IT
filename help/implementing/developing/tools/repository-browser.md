@@ -5,8 +5,8 @@ description: Il browser dell’archivio fornisce una vista in sola lettura dell�
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 1%
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Il Browser dell’archivio è disponibile sulle versioni 6582 e successive dell’AEM.
+>Il Browser dell’archivio è disponibile su AEM versione 6582 e successive.
 
 >[!INFO]
 >
->È inoltre possibile guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=it) per una breve introduzione video su come utilizzare il Browser dell&#39;archivio per eseguire il debug di AEM as a Cloud Service.
+>È inoltre possibile guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) per una breve introduzione video su come utilizzare il Browser dell&#39;archivio per eseguire il debug di AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 
@@ -33,15 +33,15 @@ Accessibile da [AEM as a Cloud Service Developer Console](/help/implementing/dev
 
 Per accedere ad AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
 
-Per accedere ad AEM as a Cloud Service Developer Console, vedi [Accesso a Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Per accedere ad AEM as a Cloud Service Developer Console, vedi [Accesso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Per accedere al Browser dell’archivio, i requisiti sono gli stessi di AEM as a Cloud Service Developer Console (specificati sopra). Per visualizzare il contenuto del Browser dell’archivio per una particolare istanza:
 
-* Istanze di authoring: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di authoring** possono visualizzare il browser dell&#39;archivio con accesso in lettura minimo; le autorizzazioni dell&#39;utente vengono rispettate durante la navigazione nell&#39;archivio. Gli utenti con il profilo di prodotto per amministratori dell’AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
+* Istanze di authoring: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di authoring** possono visualizzare il browser dell&#39;archivio con accesso in lettura minimo; le autorizzazioni dell&#39;utente vengono rispettate durante la navigazione nell&#39;archivio. Gli utenti con il profilo di prodotto per amministratori di AEM possono visualizzare il browser dell’archivio con accesso in lettura completo.
 
-* Istanze di Publish: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di Publish** possono visualizzare il browser dell&#39;archivio con accesso in lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
+* Istanze di pubblicazione: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di pubblicazione** possono visualizzare il browser dell&#39;archivio con un accesso di lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta la [documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=it).
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta la [documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Avvio del Browser dell’archivio {#launching-the-repository-browser}
 
@@ -94,16 +94,16 @@ Per rendere visibili tali posizioni, effettuare le seguenti operazioni.
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Attendi alcuni minuti, quindi apri la console **Autore AEM**
+1. Attendi alcuni minuti, quindi apri la console **AEM Author**
 1. Aggiungere il gruppo corrispondente al nuovo profilo di prodotto come membro del gruppo dell&#39;amministratore facendo clic su **Strumenti - Protezione - Gruppi sull&#39;autore** e quindi sul gruppo **amministratori**. Quindi, aggiungete il gruppo come mostrato di seguito
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Attiva il gruppo **amministratori** e il nuovo gruppo **DEV - Amministratori AEM Publish** in modo che diventino disponibili al momento della pubblicazione
+1. Attiva il gruppo **amministratori** e il nuovo gruppo **DEV - AEM Administrators Publish** in modo che diventino disponibili al momento della pubblicazione
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Come buona prassi di sicurezza, rimuovere il nuovo gruppo **DEV - Amministratori AEM Publish** dal gruppo dell&#39;amministratore in **author** in modo che il nuovo gruppo sia isolato per la pubblicazione
+1. Come buona prassi di sicurezza, rimuovere il nuovo gruppo **DEV - AEM Administrators Publish** dal gruppo dell&#39;amministratore in **author** in modo che il nuovo gruppo sia isolato per la pubblicazione
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 

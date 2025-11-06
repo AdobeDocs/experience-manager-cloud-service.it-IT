@@ -4,9 +4,9 @@ description: Inizia qui per un percorso guidato alla traduzione di contenuti hea
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizz
 
 ## Introduzione {#introduction}
 
-L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalle impostazioni internazionali.
+L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalla lingua.
 
 L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni full-stack e si concentra sulla creazione dei frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Utilizzando i potenti strumenti di traduzione di AEM, questi frammenti riutilizzabili possono essere facilmente tradotti e consegnati al pubblico ovunque si trovi.
 

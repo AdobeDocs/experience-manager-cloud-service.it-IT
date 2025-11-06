@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: precompilare un modulo adattivo, servizi di consegna edge di moduli adattivi, riempimento automatico di moduli adattivi
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 100%
 
@@ -157,7 +157,7 @@ L’editor universale offre due opzioni di servizio di precompilazione:
 
 1. Fare clic su **Crea** per aprire la procedura guidata **Crea modulo**
 
-   >
+   >[!NOTE]
    >
    > Puoi configurare l’origine dati dalla scheda **Dati** o successivamente modificando le proprietà del modulo.
 

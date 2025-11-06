@@ -4,8 +4,8 @@ description: Scopri che cosa sono i programmi di produzione e suggerimenti su co
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 83%
@@ -36,4 +36,4 @@ Nella tabella seguente sono descritti gli scenari comuni delle soluzioni disponi
 
 >[!NOTE]
 >
->I programmi di produzione [&#x200B; possono essere modificati ma non eliminati](editing-programs.md).
+>I programmi di produzione [ possono essere modificati ma non eliminati](editing-programs.md).

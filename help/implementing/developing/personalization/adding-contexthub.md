@@ -1,17 +1,17 @@
 ---
-title: Aggiunta di ContextHub alle pagine e accesso agli store
+title: Aggiunta di ContextHub alle pagine e accesso agli archivi
 description: Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Aggiunta di ContextHub alle pagine e accesso agli store {#adding-contexthub-to-pages-and-accessing-stores}
+# Aggiunta di ContextHub alle pagine e accesso agli archivi {#adding-contexthub-to-pages-and-accessing-stores}
 
 Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub.
 
@@ -42,13 +42,13 @@ Tutti i tipi di archivio sono estensioni della classe [`ContextHub.Store.Core`](
 
 Gli archivi Context Hub utilizzano una delle seguenti modalità di persistenza:
 
-* **Locale:** utilizza HTML5 localStorage per salvare i dati in modo permanente. L’archiviazione locale viene mantenuta nel browser per tutte le sessioni.
-* **Sessione:** utilizza HTML5 sessionStorage per salvare i dati in modo permanente. L’archiviazione della sessione viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
+* **Locale:** utilizza LocalStorage di HTML5 per salvare i dati in modo permanente. L’archiviazione locale viene mantenuta nel browser per tutte le sessioni.
+* **Sessione:** utilizza HTML5 sessionStorage per rendere persistenti i dati. L’archiviazione della sessione viene mantenuta per tutta la durata della sessione del browser ed è disponibile per tutte le finestre del browser.
 * **Cookie:** utilizza il supporto nativo dei cookie del browser per l&#39;archiviazione dei dati. I dati dei cookie vengono inviati al e dal server nelle richieste HTTP.
 * **Window.name:** Utilizza la proprietà window.name per rendere persistenti i dati.
 * **Memoria:** utilizza un oggetto JavaScript per salvare i dati in modo permanente.
 
-Per impostazione predefinita, Context Hub utilizza la modalità di persistenza locale. Se il browser non supporta o consente HTML5 localStorage, viene utilizzata la persistenza della sessione. Se il browser non supporta o consente HTML5 sessionStorage, viene utilizzata la persistenza Window.name.
+Per impostazione predefinita, Context Hub utilizza la modalità di persistenza locale. Se il browser non supporta o consente l&#39;archiviazione locale di HTML5, viene utilizzata la persistenza della sessione. Se il browser non supporta o consente HTML5 sessionStorage, viene utilizzata la persistenza Window.name.
 
 ### Dati store {#store-data}
 

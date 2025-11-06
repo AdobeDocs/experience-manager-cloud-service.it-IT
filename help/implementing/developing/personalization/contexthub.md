@@ -3,8 +3,8 @@ title: ContextHub
 description: ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -30,7 +30,7 @@ La barra degli strumenti [ContextHub](/help/sites-cloud/authoring/personalizatio
 Ogni modulo dell’interfaccia utente ContextHub è un’istanza di un tipo di modulo predefinito:
 
 * ContextHub fornisce diversi [tipi di moduli di esempio](sample-modules.md).
-* Utilizza le console AEM per [aggiungere moduli di interfaccia utente](configuring-contexthub.md#adding-a-ui-module) e per [raggrupparli in modalità interfaccia utente](configuring-contexthub.md#adding-a-ui-mode).
+* Usa le console di AEM per [aggiungere moduli di interfaccia utente](configuring-contexthub.md#adding-a-ui-module) e per [raggrupparli in modalità interfaccia utente](configuring-contexthub.md#adding-a-ui-mode).
 * Gli sviluppatori possono [creare tipi di moduli personalizzati](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Gli sviluppatori devono [aggiungere il componente ContextHub alla pagina](configuring-contexthub.md).
@@ -42,7 +42,7 @@ ContextHub archivia i dati contestuali persistenti sul client. L’API JavaScrip
 Ogni archivio ContextHub è un’istanza di un tipo di archivio predefinito:
 
 * ContextHub fornisce diversi [tipi di archivio di esempio](sample-stores.md).
-* Usa le console AEM per [creare archivi](configuring-contexthub.md#creating-a-contexthub-store).
+* Usa le console AEM per [creare store](configuring-contexthub.md#creating-a-contexthub-store).
 * Gli sviluppatori possono [creare tipi di archivio personalizzati](extending-contexthub.md#creating-custom-store-candidates).
 * Gli sviluppatori possono [accedere ai dati dell&#39;archivio](adding-contexthub.md#interacting-with-contexthub-stores) tramite JavaScript.
 

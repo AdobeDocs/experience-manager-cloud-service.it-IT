@@ -4,10 +4,10 @@ description: Adobe Experience Manager Assets consente di distinguere i colori in
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1244'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ![Banner assegnazione tag colore](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets utilizza le funzionalità di intelligenza artificiale di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’inserimento. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione cromatica dell’immagine.
+Adobe Experience Manager (AEM) Assets utilizza le funzionalità di intelligenza artificiale di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’inserimento. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
 
 È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento. Experience Manager Assets applica i tag in base alla copertura cromatica di un’immagine. È inoltre possibile configurare il formato di visualizzazione per un tag colore.
 
@@ -94,7 +94,7 @@ Per aggiungere il componente Tag colore avanzati all’editor modulo schema meta
 
 1. Seleziona il nome dello schema e fai clic su **[!UICONTROL Modifica]**.
 
-1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati **&#x200B;**.
+1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati ****.
 
 1. Fare clic sul **[!UICONTROL Campo tag colore avanzato]** nell&#39;**[!UICONTROL Editor modulo schema metadati]**.
 
@@ -192,7 +192,7 @@ Per cercare le immagini in base ai colori:
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

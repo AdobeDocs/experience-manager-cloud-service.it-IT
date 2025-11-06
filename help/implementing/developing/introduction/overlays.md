@@ -3,10 +3,10 @@ title: Sovrapposizioni per Adobe Experience Manager as a Cloud Service
 description: AEM as a Cloud Service utilizza il principio delle sovrapposizioni per estendere e personalizzare le console e altre funzionalità
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,6 @@ Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe
 
 ## Percorsi di ricerca {#search-paths}
 
-L&#39;AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca per impostazione predefinita nel ramo `/apps` e quindi nel ramo `/libs`. Questo meccanismo indica che la sovrapposizione in `/apps` (e le personalizzazioni ivi definite) ha la priorità.
+AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca, per impostazione predefinita, nel ramo `/apps` e quindi nel ramo `/libs`. Questo meccanismo indica che la sovrapposizione in `/apps` (e le personalizzazioni ivi definite) ha la priorità.
 
 Per le sovrapposizioni, la risorsa distribuita è un aggregato delle risorse e delle proprietà recuperate, a seconda dei percorsi di ricerca definiti nella configurazione OSGi.

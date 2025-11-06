@@ -4,10 +4,10 @@ description: Note sulla versione 2024.1.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448937?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -60,7 +60,7 @@ Stiamo attivamente richiedendo un feedback e nuovi casi d’uso per le estension
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Funzioni prerelease della vista Amministratore {#admin-view-prerelease}
+### Funzioni pre-release della vista Amministrazione {#admin-view-prerelease}
 
 **Anteprima rappresentazioni per tutti i tipi di video supportati**
 
@@ -70,7 +70,7 @@ Experience Manager Assets ora genera le rappresentazioni in anteprima di tutti i
 
 **Tag avanzati nell’elenco Bloccati**
 
-Assets Essentials ora consente di definire l’elenco Bloccati per le parole che non devono essere aggiunte come tag avanzati alle risorse quando vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre gli sforzi nella moderazione dei tag avanzati.
+Assets Essentials ora consente di definire un elenco Bloccati per le parole che non devono essere aggiunte come tag avanzati alle risorse che vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre il lavoro associato alla moderazione dei tag avanzati.
 
 ![Tag avanzati nell’elenco Bloccati](/help/assets/assets/block-tags.png)
 
@@ -112,7 +112,8 @@ Gli [ambienti di sviluppo rapido (RDE)](/help/implementing/developing/introducti
 
 ### Mappatura dei domini - Programma di adozione anticipata {#cdn-config-early-adopter}
 
-Oltre alle [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per specificare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Iscriviti al programma per primi utilizzatori tramite e-mail all’indirizzo **aemcs-cdn-config-adopter@adobe.com** per accedere a:
+Oltre alle [Regole del filtro del traffico](/help/security/traffic-filter-rules-including-waf.md) rilasciate di recente, che includono le regole WAF (Web Application Firewall) facoltative, esiste l’opportunità di utilizzare la pipeline di configurazione per specificare e distribuire [altri tipi di configurazione CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Partecipa al programma early adopter inviando un&#39;e-mail a **`aemcs-cdn-config-adopter@adobe.com`** per accedere a:
+
 * 301/302 reindirizzamenti lato client
 * proxy di richieste al server Edge di origini arbitrarie
 * trasformazioni URL

@@ -4,7 +4,7 @@ description: Note sulla versione 2023.8.0 di  [!DNL Adobe Experience Manager]  a
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 100%
@@ -36,6 +36,7 @@ Dai un’occhiata al video Panoramica sulla versione di agosto 2023 per un riepi
   ![Nuovo Editor frammento di contenuto](/help/release-notes/assets/newCFEditor.png)
 
 Il nuovo Editor frammento di contenuto offre i seguenti vantaggi che non sono disponibili nell’editor originale:
+
 * Salvataggio automatico per una maggiore efficienza nell’authoring e per evitare la perdita accidentale di modifiche.
 * Visualizzazione gerarchica di un frammento di contenuto e dei relativi riferimenti utilizzando la Struttura per una navigazione rapida all’interno di un frammento profondamente strutturato.
   ![Struttura nell’Editor frammento di contenuto](/help/release-notes/assets/newCFEditor_StructureTree.png)

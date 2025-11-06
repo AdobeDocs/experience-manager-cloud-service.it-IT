@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
@@ -36,7 +36,7 @@ L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 Il primo passaggio di onboarding viene eseguito da Adobe. Per maggiori dettagli su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
-Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=it)
+Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF è necessario eseguire alcune configurazioni aggiuntive.
 
@@ -57,7 +57,7 @@ Esistono due opzioni per configurare l’endpoint:
 
 ### Tramite l’interfaccia utente di Cloud Manager (impostazione predefinita) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343369?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Questa configurazione può essere eseguita utilizzando una finestra di dialogo nella pagina Dettagli dell’ambiente. Quando si visualizza questa pagina per un programma abilitato per Commerce, se l’endpoint non è attualmente configurato viene visualizzato un pulsante:
 
@@ -128,14 +128,19 @@ Questa configurazione può essere regolata per il progetto tramite la configuraz
 * Client GraphQL: seleziona il client GraphQL configurato per la comunicazione back-end commerce. In genere, questo client deve rimanere quello predefinito.
 * Visualizzazione store: l&#39;identificatore della visualizzazione store. Se vuota, viene utilizzata la visualizzazione predefinita dello store.
 * Percorso proxy GraphQL: il percorso URL che il proxy GraphQL in AEM utilizza per inoltrare le richieste all’endpoint GraphQL back-end di commerce.
+
   >[!NOTE]
   >
   > Nella maggior parte delle impostazioni, il valore predefinito `/api/graphql` non deve essere modificato. Questa impostazione può essere modificata solo da una configurazione avanzata che non utilizza il proxy GraphQL fornito.
+
 * Abilita il supporto per Catalog UID: abilita il supporto per UID invece dell’ID nelle chiamate GraphQL back-end per e-commerce.
+
   >[!NOTE]
   >
   > Il supporto per gli UID è stato introdotto in Adobe Commerce 2.4.2. Abilita gli UID solo se il backend di e-commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
+
 * Identificatore categoria principale catalogo: l’identificatore (UID o ID) della directory principale del catalogo principale dello store
+
   >[!CAUTION]
   >
   > A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Se il progetto utilizza i componenti core di CIF versione 2.0.0, devi abilitare il supporto per Catalog UID e utilizzare una categoria valida di UID come &quot;Identificatore categoria radice catalogo&quot;.

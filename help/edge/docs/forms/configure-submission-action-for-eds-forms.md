@@ -2,10 +2,10 @@
 title: Configurare le azioni di invio per AEM Forms con Edge Delivery Services
 description: Scopri come configurare le azioni di invio in AEM Forms utilizzando Edge Delivery Services. Scegli tra Servizio di invio moduli e Azione di invio di AEM Publish per gestire i dati del modulo in modo sicuro ed efficiente.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 

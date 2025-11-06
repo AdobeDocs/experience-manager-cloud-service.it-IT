@@ -4,10 +4,10 @@ description: Note sulla versione 2024.10.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 100%
+source-wordcount: '1663'
+ht-degree: 99%
 
 ---
 
@@ -44,6 +44,7 @@ Dai un’occhiata al video di panoramica sulla versione di ottobre 2024 per un r
 **Eventi pagina modernizzati**
 
 I seguenti eventi pagina di AEM Sites sono ora disponibili come eventi fruibili esternamente basati sulla piattaforma di eventi di AEM as a Cloud Service. Gli eventi possono essere elaborati tramite Adobe I/O per interagire con i processi esterni.
+
 * Pagina pubblicata
 * Pagina di cui è stata annullata la pubblicazione
 * Pagina eliminata
@@ -156,7 +157,7 @@ Per controllare gli invii dei moduli Coral o Foundation in posizioni specifiche,
 1. **Aggiungi percorsi consentiti**: specifica i percorsi in cui sono consentite le azioni del modulo.
 1. **Limita comportamento**: determina il comportamento per i percorsi con restrizioni (percorsi non inclusi nell’elenco Consentiti). Puoi scegliere tra due opzioni:
    * **Popup** (impostazione predefinita): mostra una notifica popup.
-   * **Impedisci**: blocca l’invio di moduli.
+   * **Impedisci**:Blocks l&#39;invio del modulo.
 
 >[!NOTE]
 >
@@ -176,7 +177,7 @@ Le opzioni per la pubblicazione del file di riscrittura includono il caricamento
 
 ### Pipeline di configurazione per RDE {#config-pipeline-rdes}
 
-Gli ambienti di sviluppo rapido (RDE, Rapid Development Environments) sono uno strumento potente per distribuire e testare rapidamente il codice e la configurazione in un ambiente Cloud. Gli RDE ora supportano la [sincronizzazione dei file YAML di configurazione](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluse le impostazioni CDN quali le regole del filtro del traffico e le trasformazioni di richieste o risposte, nonché l’inoltro dei registri e altre opzioni di configurazione. Per ulteriori dettagli, [consulta l’elenco completo](/help/operations/config-pipeline.md) delle opzioni di configurazione supportate.
+Gli ambienti di sviluppo rapido sono uno strumento potente per implementare e testare rapidamente il codice e la configurazione in un ambiente Cloud. Gli RDE ora supportano la [sincronizzazione dei file YAML di configurazione](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), incluse le impostazioni CDN quali le regole del filtro del traffico e le trasformazioni di richieste o risposte, nonché l’inoltro dei registri e altre opzioni di configurazione. Per ulteriori dettagli, [consulta l’elenco completo](/help/operations/config-pipeline.md) delle opzioni di configurazione supportate.
 
 ### Nuovi profili di prodotto {#new-product-profiles}
 

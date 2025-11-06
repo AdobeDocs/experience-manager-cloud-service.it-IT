@@ -2,9 +2,9 @@
 title: Gestire i token di accesso degli archivi esterni in Cloud Manager
 description: Scopri come visualizzare, modificare ed eliminare i token di accesso utilizzati per Bring Your Own Git in AEM Cloud Manager.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 3%

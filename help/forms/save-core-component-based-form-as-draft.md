@@ -4,7 +4,7 @@ description: Scopri come salvare come bozza un modulo adattivo basato su compone
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Salvare i moduli come bozze e elencarli nella pagina Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente predefinito **Bozze e invii** di Forms Portal, che consente di visualizzare le bozze e gli invii nelle pagine di AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
@@ -104,9 +104,11 @@ Ora configura le proprietà del componente **Bozze e invii** in base ai requisit
 ## Configurare le proprietà del componente Bozze e invii
 
 Puoi configurare le proprietà di **Bozze e invii**:
+
 1. Seleziona il componente **Bozze e invii**.
 1. Fare clic sull&#39;icona ![Configura](assets/configure_icon.png) per visualizzare la finestra di dialogo.
 1. Nella finestra di dialogo **[!UICONTROL Bozze e invii]**, specifica quanto segue:
+
    * **Titolo** Per identificare un componente in una pagina Sites e per impostazione predefinita, il titolo viene visualizzato sopra il componente.
    * **Seleziona tipo**: per indicare il modulo come bozza o inviato. Se si sceglie **Bozza di Forms**, verranno visualizzati i moduli salvati come bozze. In alternativa, selezionando **Forms inviato** vengono visualizzati i moduli inviati dagli utenti connessi.
    * **Layout**: per visualizzare le bozze degli elenchi o i moduli inviati in formato scheda o elenco.
@@ -116,6 +118,7 @@ Puoi configurare le proprietà di **Bozze e invii**:
 ## Configurare i moduli da salvare come bozze
 
 È possibile configurare Forms adattivo nei due modi seguenti per salvarlo come bozza da utilizzare in un secondo momento:
+
 * [Azione utente](#user-action)
 * [Salvataggio automatico](#auto-save)
 

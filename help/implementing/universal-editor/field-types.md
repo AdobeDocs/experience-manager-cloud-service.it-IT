@@ -3,8 +3,8 @@ title: Definizioni di modelli, campi e tipi di componenti
 description: Scopri i campi e i tipi di componenti che l’editor universale può modificare nel pannello delle proprietà con alcuni esempi. Scopri come puoi dotare di strumenti la tua app creando una definizione di modello e un collegamento al componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 98%

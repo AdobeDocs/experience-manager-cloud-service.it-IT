@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service e le linee guida per l’acce
 description: Introduzione ad Adobe Experience Manager as a Cloud Service e linee guida per l’accessibilità dei contenuti web
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -51,7 +51,7 @@ Utilizzando Adobe Experience Manager, gli autori di contenuti e/o i proprietari 
 
 >[!NOTE]
 >
->Quando si crea un sito, è necessario determinare il livello complessivo che si desidera ottenere.
+>Durante la creazione del sito, è necessario determinare il livello complessivo che desideri ottenere.
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)

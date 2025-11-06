@@ -4,9 +4,9 @@ description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzi
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ AEM è quindi fisicamente separato in due istanze.
 1. L’istanza dell’**autore** è il sistema in cui autori e amministratori di contenuti lavorano per creare e gestire i contenuti.
 1. L’istanza di **pubblicazione** è il sistema che consegna il contenuto ai consumatori.
 
-Per essere disponibile per il consumo, dopo essere stato creato sull’istanza dell’autore, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
+Per essere disponibile per il consumo, dopo essere stato creato sull’istanza di authoring, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 

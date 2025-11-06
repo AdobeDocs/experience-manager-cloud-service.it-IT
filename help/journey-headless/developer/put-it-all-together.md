@@ -4,9 +4,9 @@ description: In questa parte del Percorso per sviluppatori AEM Headless, scoprir
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Git è ciò che utilizzerai per gestire il controllo del codice sorgente e per t
 
 AEM utilizza Apache Maven per creare progetti generati dall’archetipo del progetto Maven di AEM. Tutti gli IDE principali forniscono supporto per l’integrazione per Maven.
 
-Node.js è un ambiente di esecuzione di codice JavaScript utilizzato per lavorare con le risorse front-end di un `ui.frontend` sottoprogetto di un progetto AEM. Node.js è distribuito con npm, è di fatto Node.js Package Manager, utilizzato per gestire le dipendenze JavaScript.
+Node.js è un ambiente di esecuzione di codice JavaScript utilizzato per lavorare con le risorse front-end di un `ui.frontend` sottoprogetto di un progetto AEM. Node.js è distribuito con npm, il gestore di pacchetti Node.js utilizzato per gestire le dipendenze JavaScript.
 
 ## Panoramica dei componenti di un sistema AEM {#components-of-an-aem-system-at-a-glance}
 

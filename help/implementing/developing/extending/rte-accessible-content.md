@@ -4,8 +4,8 @@ description: Scopri come configurare l'Editor Rich Text per creare siti accessib
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Per istruzioni sulla configurazione dell&#39;editor Rich Text, vedere [configura
 
 Per attivare alcune o tutte le funzionalità di un plug-in, configurare il plug-in nel ramo secondario `rtePlugins` appropriato in CRXDE Lite.
 
-![CRXDE Liti con rtePlugin di esempio](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite con un esempio di rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
 ### Esempio per specificare i formati di paragrafo disponibili nel campo di selezione dell’Editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 

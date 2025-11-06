@@ -4,9 +4,9 @@ description: Utilizzare il connettore di traduzione per tradurre i contenuti hea
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -30,8 +30,8 @@ Dopo aver impostato il connettore, grazie a questo articolo farai un passo in av
 
 Questo documento ti aiuta a capire come utilizzare i progetti di traduzione AEM insieme al connettore per tradurre i contenuti. Dopo aver letto questo documento, dovresti:
 
-* Sapere cos’è un progetto di traduzione.
-* Essere in grado di creare nuovi progetti di traduzione.
+* Cos’è un progetto di traduzione.
+* Come creare nuovi progetti di traduzione.
 * Utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 ## Creazione di un progetto di traduzione {#creating-translation-project}
@@ -241,9 +241,9 @@ La traduzione umana va oltre lo scopo di questo percorso di localizzazione. Cons
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
-* Sapere cos’è un progetto di traduzione.
-* Essere in grado di creare nuovi progetti di traduzione.
-* Utilizzare i progetti di traduzione per tradurre i contenuti headless.
+* Cos’è un progetto di traduzione.
+* Come creare nuovi progetti di traduzione.
+* Come utilizzare i progetti di traduzione per tradurre i contenuti headless.
 
 Approfondisci questo argomento e continua il tuo percorso di traduzione in AEM headless consultando il documento successivo [Pubblicare contenuti tradotti](publish-content.md) dove verrà illustrato come pubblicare i contenuti tradotti e come aggiornare tali traduzioni man mano che il contenuto della lingua principale cambia.
 

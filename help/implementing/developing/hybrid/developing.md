@@ -3,9 +3,9 @@ title: Sviluppo di SPA per AEM
 description: Questo articolo presenta domande importanti da considerare quando si coinvolge uno sviluppatore front-end per sviluppare un’applicazione a pagina singola per AEM. Offre inoltre una panoramica dell’architettura di AEM per quanto riguarda le applicazioni a pagina singola da tenere presente quando si distribuisce un’applicazione a pagina singola sviluppata su AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -60,7 +60,7 @@ Qualsiasi routing statico funziona in base al principio [di portabilità](#porta
 
 ## Archetipo di progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Modelli di progettazione SPA {#spa-design-models}
 

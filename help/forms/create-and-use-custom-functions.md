@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Questo articolo |
 
 AEM Forms supporta funzioni personalizzate che consentono agli utenti di definire funzioni JavaScript per l’implementazione di regole aziendali complesse. Queste funzioni personalizzate estendono le funzionalità dei moduli facilitando la manipolazione e l’elaborazione dei dati immessi per soddisfare requisiti specifici. Consentono di modificare dinamicamente il comportamento delle forme in base a criteri predefiniti. Le funzioni personalizzate consentono inoltre agli sviluppatori di applicare logiche di convalida complesse, eseguire calcoli dinamici e controllare la visualizzazione o il comportamento degli elementi del modulo in base alle interazioni dell&#39;utente o a criteri predefiniti.
@@ -31,6 +31,7 @@ AEM Forms supporta funzioni personalizzate che consentono agli utenti di definir
 ## Utilizzo di funzioni personalizzate {#uses-of-custom-function}
 
 L’utilizzo di funzioni personalizzate in Adaptive Forms offre i seguenti vantaggi:
+
 * **Elaborazione dei dati**: le funzioni personalizzate consentono di elaborare i dati immessi nei campi dei moduli.
 * **Convalida dei dati**: le funzioni personalizzate consentono di eseguire controlli personalizzati sugli input dei moduli e di fornire messaggi di errore specifici.
 * **Comportamento dinamico**: le funzioni personalizzate consentono di controllare il comportamento dinamico dei moduli in base a condizioni specifiche. Ad esempio, è possibile visualizzare/nascondere campi, modificare i valori dei campi o modificare dinamicamente la logica del modulo.
@@ -119,7 +120,7 @@ Considera il seguente frammento di codice, in cui input2 è definito come parame
 
 Nell&#39;illustrazione seguente viene visualizzato l&#39;utilizzo della funzione personalizzata `OptionalParameterFunction` nell&#39;editor di regole:
 
-![Parametri facoltativi o obbligatori &#x200B;](/help/forms/assets/optional-default-params.png)
+![Parametri facoltativi o obbligatori ](/help/forms/assets/optional-default-params.png)
 
 Puoi salvare la regola senza specificare un valore per i parametri richiesti, ma la regola non viene eseguita e visualizza un messaggio di avviso come:
 

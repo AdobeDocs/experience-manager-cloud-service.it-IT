@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 90%
@@ -46,6 +46,7 @@ Gli autori intendono utilizzare AEM solo per l’authoring, ma non per la distri
 >[!NOTE]
 >
 >I **[frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
+>
 >* I **frammenti di contenuto** sono contenuti editoriali, con definizione e struttura, ma senza elementi visivi aggiuntivi di design e/o layout. Possono essere utilizzati per accedere a dati strutturati, tra cui testi, numeri e date.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
@@ -79,8 +80,8 @@ I Frammenti di esperienza sono indicati nei seguenti casi:
 ## Organizzazione dei frammenti esperienza {#organizing-your-experience-fragments}
 
 È consigliabile:
-* organizzare i frammenti esperienza in cartelle;
 
+* organizzare i frammenti esperienza in cartelle;
 * [configurare i modelli consentiti in queste cartelle](#configure-allowed-templates-folder).
 
 La creazione di cartelle consente di:

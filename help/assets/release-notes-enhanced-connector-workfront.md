@@ -4,8 +4,8 @@ description: Note sulla versione di [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ La versione più recente di [!DNL Workfront for Experience Manager enhanced conn
 
 * Durante la riconfigurazione della connessione di Experience Manager con Workfront, le sottoscrizioni agli eventi, come l’aggiornamento della sincronizzazione commenti, l’eliminazione e l’aggiornamento del documento, non vengono create correttamente.
 
-* Miglioramenti importanti delle prestazioni API per creazione di cartelle collegate, aggiornamento, attivazione di cartelle collegate, attivazione e disattivazione della sincronizzazione commenti, salvataggio anticipato delle impostazioni sul connettore.
+* Miglioramenti importanti delle prestazioni API per creazione di cartelle collegate, aggiornamento, abilitazione di cartelle collegate, abilitazione e disabilitazione della sincronizzazione commenti, salvataggio anticipato delle impostazioni sul connettore.
 
 ### Versione di settembre 2023 {#september-2023-release}
 
@@ -201,13 +201,13 @@ La versione 1.9.5 di [!DNL Workfront for Experience Manager enhanced connector],
          Assicurati che il contenuto tra `"objId": "",` e `"url"` corrisponda alla risposta JSON. Il metodo consigliato per eseguire questa operazione consiste nel copiare da qualsiasi Sottoscrizione evento che dispone di `objId` e quindi eliminare il numero.
 
       1. Prendi nota dell’ID di sottoscrizione all’evento.
-
       1. Elimina la sottoscrizione all’evento errata. Effettua una chiamata API di eliminazione a `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` in quanto il codice di risposta indica l’eliminazione corretta delle sottoscrizioni a eventi errate.
-  >[!NOTE]
-  >
-  >Se hai già eliminato le sottoscrizioni a eventi errate prima di eseguire i passaggi indicati in questa procedura, puoi saltare l’ultimo passaggio.
+
+         >[!NOTE]
+         >
+         >Se hai già eliminato le sottoscrizioni a eventi errate prima di eseguire i passaggi indicati in questa procedura, puoi saltare l’ultimo passaggio.
 
 ### Versione di ottobre 2022 {#october-2022-release}
 
@@ -266,7 +266,7 @@ La versione 1.9.2 di [!DNL Workfront for Experience Manager enhanced connector],
 
 * È stato aggiunto il supporto per gli ambienti proxy.
 
-* Sono stati corretti diversi bug segnalati da partner e clienti.
+* Sono stati corretti diversi bug in base ai feedback ricevuti da partner e clienti.
 
 >[!MORELIKETHIS]
 >

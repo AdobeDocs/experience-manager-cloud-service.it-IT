@@ -4,7 +4,7 @@ description: Questa pagina descrive come creare e gestire i canali in Screens as
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Questo documento spiega come creare e gestire i canali per il progetto AEM Scree
 
 * informazioni su come creare canali per il provider di contenuti Screens
 * gestire e modificare i contenuti nei canali
-* gestisci la pianificazione di assegnazione e attivazione per i canali in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=it)
+* gestisci la pianificazione di assegnazione e attivazione per i canali in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Passaggi per creare un nuovo canale di sequenza in Screens as a Cloud Service {#create-new-channel}
 
@@ -114,6 +114,7 @@ Questa funzionalità consente di definire una pianificazione di attivazione pred
    ![immagine](/help/screens-cloud/assets/display/Assignments3.png)
 
 In questa sezione vengono visualizzate le seguenti informazioni:
+
 * Priorità predefinita del canale nella visualizzazione.
 * Date di inizio e fine dell’attivazione quando è pianificata la riproduzione del canale.
 * Vista sintetica della ricorrenza (Oraria/Giornaliera/Settimanale/Mensile/Annuale e nome assegnato alla ricorrenza).

@@ -3,9 +3,9 @@ title: Modelli per frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Scopri come i modelli per frammenti di contenuto fungono da base per i contenuti headless in AEM, consentendoti di creare frammenti di contenuto con contenuti strutturati.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin, Architect
+role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 71%
@@ -324,10 +324,10 @@ I frammenti di contenuto possono formare contenuto nidificato utilizzando uno de
 >AEM ha una protezione di ricorrenze per:
 >
 >* Riferimenti contenuto
->  &#x200B;>  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
+>  Questo impedisce all’utente di aggiungere un riferimento al frammento corrente. Inoltre la finestra di dialogo selettore del riferimento frammento può risultare vuota.
 >
 >* Riferimenti frammento in GraphQL
->  &#x200B;>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
+>  Se crei una query approfondita che restituisce più frammenti di contenuto a cui fanno riferimento l’un l’altro, alla prima occorrenza restituirà null.
 
 ### Riferimento contenuto {#content-reference}
 

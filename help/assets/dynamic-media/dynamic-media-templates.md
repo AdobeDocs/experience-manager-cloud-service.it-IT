@@ -4,7 +4,7 @@ description: Scopri come creare  [!DNL Dynamic Media] modelli utilizzando un edi
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: d82d40ebb5417dfb7ce37c9995c5cadb74a2fe11
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3780'
 ht-degree: 1%
@@ -51,7 +51,7 @@ ht-degree: 1%
     </tr>
 </table>
 
-Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Pubblica il modello [!DNL Dynamic Media] e utilizzalo nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/it/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
+Creare modelli personalizzabili in tempo reale per banner e volantini utilizzando i modelli [!DNL Dynamic Media], un editor di modelli WYSIWYG. Pubblica il modello [!DNL Dynamic Media] e utilizzalo nelle applicazioni a valle. Un modello [!DNL Dynamic Media] include livelli immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza [[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
 
 Alcune delle caratteristiche principali includono:
 
@@ -83,10 +83,10 @@ Scopri come creare un modello [!DNL Dynamic Media] passo dopo passo in questo vi
 Soddisfare i seguenti requisiti per creare un modello [!DNL Dynamic Media] e generarne l&#39;URL di consegna:
 
 1. Accesso a [!DNL Dynamic Media].
-1. Nella home page di [!DNL Assets View] è presente una cartella in **[!UICONTROL Dynamic Media Assets]** per salvare il modello. [Crea una cartella](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;per replicare tale cartella in&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
+1. Nella home page di [!DNL Assets View] è presente una cartella in **[!UICONTROL Dynamic Media Assets]** per salvare il modello. [Crea una cartella](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**per replicare tale cartella in**[!UICONTROL  Dynamic Media Assets ]**.
 1. [Sincronizza le immagini disponibili nell&#39;istanza  [!DNL AEM Assets] con [!DNL Dynamic Media] per utilizzarle per creare il modello](/help/assets/dynamic-media/config-dm.md).
 1. Pubblica le immagini da utilizzare per creare il modello per generare l’URL di consegna del modello dopo averlo creato. L’URL di consegna può essere utilizzato nelle applicazioni a valle.
-1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati inoltre di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli. Per ulteriori informazioni, vedere [Tipi di carattere](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. Per utilizzare un tipo di carattere diverso da quello predefinito di [!UICONTROL Adobe Sans F2] nel livello testo del modello, [carica e pubblica il file del tipo di carattere in AEM e Dynamic Media simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [I formati di file dei caratteri supportati sono AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Assicurati inoltre di [rielaborare](/help/assets/reprocessing-assets-view.md) i font esistenti per utilizzarli. Per ulteriori informazioni, vedere [Tipi di carattere](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts).<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. verifica quanto segue nell’interfaccia utente touch:
    * Nella pagina **[!UICONTROL Modifica configurazione [!DNL Dynamic Media]]**, la modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** impostata su **[!UICONTROL Disabilitata per impostazione predefinita]** non è applicata a tutte le cartelle di AEM (**[!UICONTROL Sincronizza tutto il contenuto]** non è selezionata). Per ulteriori informazioni, vedere [configurazione di Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md).
    * La modalità di sincronizzazione **[!UICONTROL [!DNL Dynamic Media]]** è impostata su **[!UICONTROL Abilita per le sottocartelle]** per la cartella o sottocartella di destinazione in cui verrà salvato il modello dopo la creazione. Per ulteriori informazioni, vedere [configurazione [!DNL Dynamic Media] di Cloud Service](/help/assets/dynamic-media/config-dm.md).
@@ -96,9 +96,9 @@ Soddisfare i seguenti requisiti per creare un modello [!DNL Dynamic Media] e gen
 Eseguire la procedura seguente per creare un modello [!DNL Dynamic Media]:
 
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 
 1. [Creare un’area di lavoro vuota](#create-a-canvas)
@@ -159,7 +159,7 @@ Fai clic su ![modello per creare rapidamente i volantini](/help/assets/assets/sh
 
 Per aggiungere immagini all’area di lavoro, effettua le seguenti operazioni:
 
-1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per aprire il pannello [Selettore risorse](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
+1. Fai clic su ![crea un banner in poco tempo](/help/assets/assets/add-image.svg) per aprire il pannello [Selettore risorse](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). Nel pannello vengono visualizzate le immagini dell&#39;istanza AEM Assets sincronizzate con [!DNL Dynamic Media].
 1. Sfoglia il pannello o usa le parole chiave nella barra di ricerca per trovare un’immagine specifica.
 1. Trascina e rilascia un’immagine nell’area di lavoro per utilizzarla. Vedere il [**[!UICONTROL pannello Proprietà]**](#reposition-resize-delete-a-layer) per ridimensionare o riposizionare un livello nell&#39;area di lavoro.
    ![crea un banner in pochi secondi](/help/assets/assets/add-image-to-canvas.png)
@@ -233,7 +233,7 @@ Per modificare un livello testo o immagine, consulta le seguenti azioni di modif
 #### Opzioni di formattazione del testo{#text-formatting-options-on-properties-panel}
 
 Formatta il testo con il carattere, le dimensioni, il colore, lo stile e l&#39;allineamento richiesti (all&#39;interno del livello) modificandone i valori nei rispettivi campi nella sezione **[!UICONTROL Testo]** del pannello.
-Assicurarsi di includere **[!UICONTROL Ridimensionamento testo avanzato]**. [!UICONTROL Smart Text Resize] funziona sull&#39;algoritmo [Copyfit](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) per riempire in modo ottimale il testo nell&#39;area di testo, impedisce l&#39;overflow del testo e riduce al minimo lo spazio in eccesso nella parte inferiore del testo.
+Assicurarsi di includere **[!UICONTROL Ridimensionamento testo avanzato]**. [!UICONTROL Smart Text Resize] funziona sull&#39;algoritmo [Copyfit](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) per riempire in modo ottimale il testo nell&#39;area di testo, impedisce l&#39;overflow del testo e riduce al minimo lo spazio in eccesso nella parte inferiore del testo.
 
 ![creazione contenuto in pochissimo tempo](/help/assets/assets/smart-text-resize.png)
 
@@ -280,7 +280,7 @@ Includi i seguenti parametri per modificare il testo, il relativo font, colore e
 
 ##### Parametrizza sottostringhe{#substring-parameterisation}
 
-Nel pannello **[!UICONTROL Parametri]**, scorri fino alla sezione **[!UICONTROL Parametri sottostringa]**. Questa sezione include un selettore di sottostringhe **&#x200B;**&#x200B;che visualizza la stringa completa (livello di testo selezionato) con formattazione coerente o le relative parti formattate come sottostringhe separate. Selezionare una sottostringa per [parametrizzarne il testo, la famiglia di caratteri, la dimensione e il colore](#text-formatting-parameters).
+Nel pannello **[!UICONTROL Parametri]**, scorri fino alla sezione **[!UICONTROL Parametri sottostringa]**. Questa sezione include un selettore di sottostringhe **** che visualizza la stringa completa (livello di testo selezionato) con formattazione coerente o le relative parti formattate come sottostringhe separate. Selezionare una sottostringa per [parametrizzarne il testo, la famiglia di caratteri, la dimensione e il colore](#text-formatting-parameters).
 Utilizza il selettore delle sottostringhe per [dividere le sottostringhe](#split-substring) per parametrizzarne le singole parti o [unire le sottostringhe](#merge-substring) per applicare parametri uniformi.
 
 ###### Dividi sottostringa{#split-substring}
@@ -299,8 +299,11 @@ Per unire due sottostringhe adiacenti e applicare parametri uniformi alla sottos
 
 1. Nel selettore delle sottostringhe, seleziona i caratteri tra due sottostringhe adiacenti con la stessa formattazione.
 1. Fare clic su ![unisci sottostringa](/help/assets/assets/merge.svg) per unire le sottostringhe.
+
    ![unisci sottostringhe identiche](/help/assets/assets/merge-two-substrings.png)
-Puoi applicare parametri uniformi alla sottostringa appena formata.
+
+   Puoi applicare parametri uniformi alla sottostringa appena formata.
+
    >[!NOTE]
    >
    >È possibile unire solo le sottostringhe con la stessa formattazione.
@@ -396,8 +399,8 @@ Per aggiungere un collegamento CTA a un livello, effettuate le seguenti operazio
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="<Image ID>>" src="<Image Source>>" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
-    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/it/products.html" alt="Layer with CTA" title="https://business.adobe.com/it/products.html" target="_blank">
-    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/it/products.html" alt="Layer with CTA" title="https://business.adobe.com/it/products.html" target="_blank">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
     </map>
     </div>
    ```

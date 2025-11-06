@@ -4,10 +4,10 @@ description: Scopri come iniziare a utilizzare lo strumento Content Transfer (Tr
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 14%
+source-wordcount: '1653'
+ht-degree: 13%
 
 ---
 
@@ -65,7 +65,7 @@ Talvolta può essere difficile comprendere i problemi di connessione SSL/TLS. Pe
 >id="aemcloud_ctt_demo"
 >title="Esecuzione dello strumento di trasferimento contenuti"
 >abstract="Scopri come utilizzare lo strumento di trasferimento contenuti per migrare i contenuti in AEM as a Cloud Service (authoring/pubblicazione)."
->additional-url="https://video.tv.adobe.com/v/327073/?quality=12&learn=on&captions=ita" text=" Guarda la dimostrazione"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Guarda la dimostrazione"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=it#migration" text="Tutorial - Utilizzo dello strumento di trasferimento contenuti"
 
 La sezione seguente si applica alla nuova versione dello strumento Content Transfer (Trasferimento contenuti). Leggi questa sezione per scoprire come utilizzare lo strumento Content Transfer (Trasferimento contenuti) per migrare i contenuti ad AEM as a Cloud Service:
@@ -149,8 +149,10 @@ Per popolare il set di migrazione creato in Cloud Acceleration Manager, installa
       >A partire dalla versione CTT (3.0.24), sono state incluse nuove funzioni nello strumento Content Transfer (Trasferimento contenuti), che migliorano il processo di inclusione e esclusione dei percorsi. In precedenza, i percorsi dovevano essere selezionati singolarmente, operazione noiosa e dispendiosa in termini di tempo. Ora gli utenti possono includere percorsi direttamente dall’interfaccia utente o caricare un file CSV in base alle loro preferenze.  Il file CSV deve avere un percorso per riga e nessuna virgola.
 
    1. **Percorsi da includere**: utilizzare il browser percorsi per selezionare i percorsi da migrare. Il selettore di percorsi accetta l’input digitando o selezionando. Gli utenti possono selezionare una sola opzione per l’inclusione dei percorsi: dall’interfaccia utente o caricando un file CSV.
+
       >[!IMPORTANT]
       >Durante la creazione di un set di migrazione, i percorsi seguenti sono soggetti a restrizioni:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`

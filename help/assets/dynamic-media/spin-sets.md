@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 9%
@@ -80,7 +80,7 @@ Per iniziare a usare rapidamente i set 360 gradi, effettua le seguenti operazion
 
    Adobe Experience Manager Assets crea chiamate URL per i set 360 gradi e li attiva dopo la pubblicazione dei set 360 gradi. Puoi copiare questi URL quando visualizzi in anteprima le risorse. In alternativa, puoi incorporarli nel sito web.
 
-   Seleziona il set a 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
+   Seleziona il set 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
 
    Consulta [Collegare un set 360 gradi a una pagina Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incorporare il visualizzatore di video o immagini](/help/assets/dynamic-media/embed-code.md).
 
@@ -110,7 +110,7 @@ Questa sezione descrive come creare i set 360 gradi.
 
 >[!NOTE]
 >
->Puoi anche creare in automatico i set 360 gradi da [predefiniti set di batch](/help/assets/dynamic-media/config-dm.md). **Importante:** i set di batch vengono creati dall’IPS (Image Production System) come parte dell’inserimento delle risorse.
+>Puoi anche creare in automatico i set 360 gradi da [predefiniti set di batch](/help/assets/dynamic-media/config-dm.md). **Importante:** i set di batch vengono creati dall’IPS (Image Production System) come parte dell’acquisizione delle risorse.
 >
 >Consulta &quot;Creazione di set di batch predefiniti per la generazione automatica di set di immagini e set 360 gradi&quot; in [Configurare Dynamic Media](/help/assets/dynamic-media/config-dm.md).
 

@@ -5,10 +5,10 @@ keywords: Integrazione di AEM Forms OneDrive, connessione a Microsoft OneDrive, 
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -64,7 +64,7 @@ Per collegare AEM Forms allo storage Microsoft® OneDrive:
    >[!NOTE]
    >
    >* Per impostazione predefinita, `forms-ootb-storage-adaptive-forms-submission` è presente nel contenitore OneDrive.
-   > * Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente, facendo clic su **Crea cartella**.
+   >* Creare una cartella come `forms-ootb-storage-adaptive-forms-submission`, se non già presente, facendo clic su **Crea cartella**.
 
 Ora puoi utilizzare questa configurazione di archiviazione OneDrive per l&#39;azione di invio in un modulo adattivo.
 
@@ -116,8 +116,8 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia a OneDrive]**.
    ![GIF OneDrive](/help/forms/assets/submit-to-onedrive-ue.png)
 Se si seleziona **Salva allegati con nome originale**, gli allegati vengono archiviati nella cartella utilizzando i nomi di file originali. Puoi anche salvare il documento di record (DoR) nell’archiviazione BLOB di Azure.

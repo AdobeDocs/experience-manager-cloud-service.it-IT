@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
@@ -87,6 +87,7 @@ Creare un modulo `Get Information` che recuperi i valori in base all&#39;input i
 **Campi modulo**
 
 Aggiungi i campi seguenti al modulo:
+
 * **Inserisci ID animale**: Casella di testo
 * **Seleziona URL foto**: elenco a discesa
 * **Tag**: Pannello
@@ -103,6 +104,7 @@ Aggiungi i campi seguenti al modulo:
 **Configurazione dei pannelli**
 
 Impostate i pannelli come ripetitivi con i seguenti vincoli:
+
 * Valore minimo: 1
 * Valore massimo: 4
 

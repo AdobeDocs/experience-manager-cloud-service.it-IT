@@ -3,8 +3,8 @@ title: Configurazione dei moduli di ricerca
 description: Configurazione di Search Forms per Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Adobe Experience Manager as a Cloud Service viene fornito con un potente meccanismo di [ricerca](/help/sites-cloud/authoring/search.md).
 
-In combinazione con questo, sono disponibili anche una serie di opzioni predefinite che consentono di filtrare il contenuto. Questi contengono facet predefiniti come **Data di modifica**, **Stato Publish** o **Stato LiveCopy** per consentirti di espandere rapidamente le risorse necessarie.
+In combinazione con questo, sono disponibili anche una serie di opzioni predefinite che consentono di filtrare il contenuto. Questi contengono facet predefiniti come **Data di modifica**, **Stato pubblicazione** o **Stato LiveCopy** per consentirti di espandere rapidamente le risorse necessarie.
 
 ![ricerca e utilizzo filtro](assets/csf-usage.png)
 
@@ -288,7 +288,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
    <td>
     <ul>
      <li>Etichetta campo</li>
-     <li>Nome proprietà Publish*</li>
+     <li>Nome proprietà pubblicazione*</li>
      <li>Nome proprietà pagine bloccate*</li>
      <li>Descrizione</li>
     </ul> </td>
@@ -309,7 +309,7 @@ Sono disponibili i seguenti predicati, a seconda della configurazione:
    <td>
     <ul>
      <li>Segnaposto</li>
-     <li>Percorso directory principale</li>
+     <li>Percorso principale</li>
      <li>Descrizione</li>
     </ul> 
    </td>
@@ -541,10 +541,10 @@ Effettivamente come il **Percorso opzioni**, solo questo è nel campo predicato 
 * **Selezione singola**
 Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle di controllo che consentono una sola selezione. Se selezionata per errore, è possibile deselezionare una casella di controllo.
 
-* **Nome/i proprietà Publish e Live Copy**
+* **Nome/i proprietà pubblicazione e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* Il &ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, verrà visualizzato un messaggio di errore.
+* Il &amp;ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, verrà visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
@@ -699,7 +699,7 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire a
    <td>Autorizzazioni di lettura e scrittura sul nodo <code>/apps </code>.</td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/apps</code></td>
   </tr>
   <tr>

@@ -3,19 +3,20 @@ title: Creare URL personalizzati utilizzando Dynamic Media con funzionalità Ope
 description: Utilizza le funzionalità OpenAPI di Dynamic Media per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Un URL personalizzato è una versione breve, pulita, facile da ricordare e leggibile del tuo URL di consegna complesso. Puoi includere il nome del tuo marchio, i nomi dei prodotti e le parole chiave pertinenti nell’URL personalizzato per migliorare la visibilità del tuo marchio e il coinvolgimento degli utenti
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
 
 ---
 
-
 # Utilizzare URL personalizzati{#vanity-urls}
 
 Utilizza [!DNL Dynamic Media with OpenAPI capabilities] per trasformare gli URL lunghi di consegna delle risorse in URL brevi e personalizzati. Gli URL di consegna di risorse standard includono UID di risorse generate dal sistema che rendono l’URL di consegna complesso, difficile da ricordare e condividere. Sostituisci questi UUID delle risorse con identificatori semplici (Vanity ID) per generare un URL personalizzato. Un URL personalizzato è una versione breve, pulita e leggibile del tuo URL di consegna complesso.
 
 Consulta i seguenti formati URL per comprenderne la differenza:
+
 * [URL di consegna standard](#standard-urls)
 * [Gli URL personalizzati](#vanity-url)
 
@@ -81,6 +82,7 @@ Per creare l&#39;URL personalizzato, assicurati di avere già [approvato le riso
 ## Creare URL personalizzati{#create-vanity-urls}
 
 Per creare URL personalizzati, effettua le seguenti operazioni:
+
 1. [Configurare i metadati delle risorse](#set-up-asset-metadata)
 1. [Creare e mappare la variabile di ambiente di Cloud Manager](#map-cloud-manager-environment-variable)
 1. [Approva le risorse che richiedono l’URL personalizzato per la consegna](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -89,18 +91,22 @@ Per creare URL personalizzati, effettua le seguenti operazioni:
 ### Configurare i metadati delle risorse{#set-up-asset-metadata}
 
 Per impostare il Vanity ID nel modulo dei metadati della risorsa, esegui le seguenti operazioni:
+
 1. Passare alla pagina dei dettagli della cartella contenente le risorse per la consegna [!DNL Dynamic Media with OpenAPI].
 1. [Modificare il modulo di metadati](/help/assets/metadata-assets-view.md#edit-metadata-forms) eseguendo una delle operazioni seguenti:
+
    * Aggiungi un nuovo campo di metadati e specifica il Vanity ID richiesto come valore di quel campo.
    * Aggiorna il campo esistente sostituendo il valore di una proprietà di metadati esistente con l’ID del reindirizzamento richiesto. Scopri le [best practice](#best-practices) per la creazione del Vanity ID.
-     ![ID reindirizzamento](/help/assets/assets/vanity-id-metadata.png)
-Ulteriori informazioni su [schemi metadati](/help/assets/metadata-schemas.md).
 
-     >[!NOTE]
-     >
-     > * Utilizza ID personalizzati univoci per ogni risorsa. Verifica sempre che le risorse che condividono lo stesso modulo di metadati abbiano ID personalizzati per DM con distribuzione OpenAPI tramite URL personalizzati. Se due risorse condividono lo stesso ID Vanity, DM con OpenAPI distribuisce la risorsa che ha ricevuto più di recente l’ID, ignorando il diritto precedente dell’ID a un’altra risorsa.
-     >
-     > * Una singola risorsa può avere più ID di reindirizzamento. [Contatta il supporto Adobe](https://helpx.adobe.com/in/contact.html) e invia una richiesta per generare gli ID personalizzati richiesti.
+   ![ID reindirizzamento](/help/assets/assets/vanity-id-metadata.png)
+
+   Ulteriori informazioni su [schemi metadati](/help/assets/metadata-schemas.md).
+
+   >[!NOTE]
+   >
+   > * Utilizza ID personalizzati univoci per ogni risorsa. Verifica sempre che le risorse che condividono lo stesso modulo di metadati abbiano ID personalizzati per DM con distribuzione OpenAPI tramite URL personalizzati. Se due risorse condividono lo stesso ID Vanity, DM con OpenAPI distribuisce la risorsa che ha ricevuto più di recente l’ID, ignorando il diritto precedente dell’ID a un’altra risorsa.
+   >
+   > * Una singola risorsa può avere più ID di reindirizzamento. [Contatta il supporto Adobe](https://helpx.adobe.com/in/contact.html) e invia una richiesta per generare gli ID personalizzati richiesti.
 
 Dopo aver impostato il tuo ID personalizzato nel modulo dei metadati della risorsa, [mappa questo campo di metadati sul meccanismo di consegna del sistema](#map-cloud-manager-environment-variable).
 
@@ -134,7 +140,7 @@ Quando l&#39;utente fa clic sull&#39;URL personalizzato, [!DNL Dynamic Media wit
 
 ## Ridimensionare utilizzando gli URL personalizzati{#scale-using-vanity-url}
 
-AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
+AEM as a Cloud Service ti consente di [personalizzare i nomi DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) negli indirizzi Web. Utilizza queste funzionalità AEMCS con i tuoi URL personalizzati per trasformarli in indirizzi web univoci, puliti, descrittivi, di marca e intuitivi e fornire i [vantaggi di cui sopra](#key-benefits).
 
 Consulta il seguente URL personalizzato e i relativi componenti personalizzabili:
 
@@ -184,7 +190,7 @@ Consulta il seguente URL personalizzato e i relativi componenti personalizzabili
 Esegui la procedura seguente per riscrivere le regole CDN per la consegna:
 
 1. Passa al tuo archivio AEM per creare un file di configurazione YAML.
-2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
+2. Esegui i passaggi della sezione [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) per configurare le regole CDN e distribuire la configurazione tramite la pipeline di configurazione di Cloud Manager.
 Segui queste [best practice](#best-practices) per creare il percorso del dominio.
    [Ulteriori informazioni sulle regole di riscrittura CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

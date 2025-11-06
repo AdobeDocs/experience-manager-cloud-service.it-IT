@@ -4,7 +4,7 @@ description: Note sulla versione 2023.7.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Dai un’occhiata al video Panoramica sulla versione di luglio 2023 per un riepi
 
 * MSM per frammenti di contenuto. AEM Multisite Manager è ora disponibile per i frammenti di contenuto, che consentono di creare Live Copy dei frammenti di contenuto per la distribuzione in blocco dei contenuti. I controlli di ereditarietà granulari sono disponibili fino al livello Elemento frammento di contenuto e Variante.
 
-### Nuove funzioni nella versione prerelease di [!DNL Experience Manager Sites] {#prerelease-sites}
+### Nuove funzioni nella versione pre-release di [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * La [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) ora consente agli utenti di visualizzare i tag e di effettuare ricerche per tag applicati come metadati ai frammenti di contenuto. Per usufruire di questa funzionalità, gli utenti non dovranno più passare all’interfaccia utente Assets, riducendo così i passaggi da un contesto all’altro e migliorando l’efficienza.
 
@@ -115,6 +115,7 @@ Iscriviti per ricevere notifiche e-mail in caso di incidenti critici che richied
 ### Programma per i primi utilizzatori delle regole CDN e WAF {#waf-early-adopter}
 
 Filtra il traffico sulla rete CDN in base a:
+
 * intestazioni e proprietà delle richieste (ad esempio, indirizzo IP)
 * modelli di traffico noti associati a traffico dannoso
 

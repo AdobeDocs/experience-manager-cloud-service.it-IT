@@ -3,9 +3,9 @@ title: Blueprint SPA
 description: Questo documento descrive il contratto generale indipendente dal framework che qualsiasi framework SPA deve soddisfare per consentirti di implementare componenti SPA modificabili all’interno di AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -71,7 +71,7 @@ La struttura del contenuto della pagina viene memorizzata in AEM. Il modello del
 
 I componenti dell’applicazione a pagina singola devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con eventuali modifiche al contenuto. Un pattern che utilizza componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
 
-### Meta campi {#meta-fields}
+### Campi Meta {#meta-fields}
 
 Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 

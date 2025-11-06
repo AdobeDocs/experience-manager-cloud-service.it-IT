@@ -3,9 +3,9 @@ title: Elabora le risorse utilizzando i microservizi relativi
 description: Elabora le risorse digitali utilizzando microservizi di elaborazione delle risorse scalabili e nativi per il cloud.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -84,7 +84,7 @@ I flussi di lavoro di post-elaborazione sono regolari [!DNL Experience Manager] 
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -3,9 +3,9 @@ title: Architettura di  [!DNL Assets]
 description: Architettura di Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
-role: Architect
+role: Developer
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 36%
@@ -26,7 +26,7 @@ Per visualizzare la panoramica dell&#39;architettura dei microservizi per le ris
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -10,9 +10,9 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Risposta: il campo Data accetta il formato ISO AAAA-MM-GG. Se si specifica una d
 
 1. I moduli HTML5 eseguono più volte lo script di inizializzazione e l&#39;evento di preparazione al modulo?
 
-   Risposta: sì, gli script di inizializzazione e gli eventi di preparazione al modulo vengono eseguiti più volte, almeno una volta sul server e una volta sul lato client. Si consiglia di scrivere script come initialize o form:ready, in base ad alcune regole di business (dati di form o campi), in modo che l&#39;azione venga eseguita in base allo stato dei dati e all&#39;idempotente (se i dati sono uguali).
+   Risposta: sì, gli script di inizializzazione e gli eventi di preparazione al modulo vengono eseguiti più volte, almeno una volta sul server e una volta sul lato client. Si consiglia di scrivere script come initialize o form:ready events in base ad alcune regole business (dati di form o campi) in modo che l&#39;azione venga eseguita in base allo stato dei dati e all&#39;idempotent (se i dati sono uguali).
 
 ### Progettazione di XDP {#designing-xdp}
 

@@ -3,11 +3,11 @@ title: Personalizzazione ed estensione dei frammenti di contenuto
 description: Un frammento di contenuto estende una risorsa standard. Scopri come personalizzarli.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,6 @@ I frammenti di contenuto, basati su un modello per frammenti di contenuto, sono 
 * Tutto il contenuto è archiviato nel nodo `jcr:content/data` della risorsa:
 
    * I dati dell’elemento vengono memorizzati nel sottonodo principale:
-
      `jcr:content/data/master`
 
    * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante:
@@ -99,9 +98,9 @@ Per l’integrazione con Assets Core:
 
 >[!CAUTION]
 >
->Il componente [Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it). Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
+>Il componente [Frammento di contenuto fa parte dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it). Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
-È possibile fare riferimento ai frammenti di contenuto dalle pagine AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il **[componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)** - un [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente core **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it)**.
+È possibile fare riferimento ai frammenti di contenuto dalle pagine di AEM, come qualsiasi altro tipo di risorsa. AEM fornisce il **[componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it)** - un [componente che consente di includere frammenti di contenuto nelle pagine](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Puoi anche estendere questo componente core **[Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**.
 
 * Il componente utilizza la proprietà `fragmentPath` per fare riferimento al frammento di contenuto effettivo. La proprietà `fragmentPath` viene gestita nello stesso modo di proprietà simili di altri tipi di risorse, ad esempio quando il frammento di contenuto viene spostato in un’altra posizione.
 
@@ -173,7 +172,7 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 >[!CAUTION]
 >
->L’Adobe consiglia di utilizzare l’API lato server invece di accedere direttamente alla struttura del contenuto.
+>Adobe consiglia di utilizzare l’API lato server invece di accedere direttamente alla struttura del contenuto.
 
 ### Interfacce chiave {#key-interfaces}
 
@@ -285,11 +284,11 @@ Consulta le seguenti risorse:
 >
 >Considera queste informazioni di base. Non è previsto alcun cambiamento qui (in quanto è contrassegnato come *area privata* nell&#39;archivio), ma a volte può essere utile comprendere come funzionano le cose dal punto di vista tecnico.
 
-La modifica di un frammento di contenuto, che può estendersi su più visualizzazioni (= pagine HTML), è atomica. Poiché le funzionalità di modifica atomiche di più viste non sono un tipico concetto AEM, i frammenti di contenuto utilizzano ciò che viene definita *sessione di modifica*.
+La modifica di un frammento di contenuto, che può estendersi su più visualizzazioni (= pagine HTML), è atomica. Poiché le funzionalità di modifica atomiche di più viste non sono un concetto tipico di AEM, i frammenti di contenuto utilizzano ciò che viene definita *sessione di modifica*.
 
 Quando l’utente apre un frammento di contenuto nell’editor, viene avviata una sessione di modifica. La sessione di modifica è terminata quando l&#39;utente esce dall&#39;editor selezionando **Salva** o **Annulla**.
 
-Tecnicamente, tutte le modifiche vengono eseguite sul contenuto *live*, come con tutte le altre modifiche AEM. All&#39;avvio della sessione di modifica, viene creata una versione dello stato corrente non modificato. Se un utente annulla una modifica, la versione viene ripristinata. Se l&#39;utente fa clic su **Salva**, non viene eseguita alcuna operazione specifica, perché la modifica è stata eseguita sul contenuto *live*, pertanto tutte le modifiche sono già persistenti. Inoltre, facendo clic su **Salva** vengono attivate alcune elaborazioni in background, ad esempio la creazione di informazioni di ricerca full-text, la gestione di risorse multimediali diverse o entrambe.
+Tecnicamente, tutte le modifiche vengono eseguite sul contenuto *live*, come con tutte le altre modifiche di AEM. All&#39;avvio della sessione di modifica, viene creata una versione dello stato corrente non modificato. Se un utente annulla una modifica, la versione viene ripristinata. Se l&#39;utente fa clic su **Salva**, non viene eseguita alcuna operazione specifica, perché la modifica è stata eseguita sul contenuto *live*, pertanto tutte le modifiche sono già persistenti. Inoltre, facendo clic su **Salva** vengono attivate alcune elaborazioni in background, ad esempio la creazione di informazioni di ricerca full-text, la gestione di risorse multimediali diverse o entrambe.
 
 Esistono alcune misure di sicurezza per i casi limite; ad esempio, se l’utente tenta di uscire dall’editor senza salvare o annullare la sessione di modifica. È inoltre disponibile un salvataggio automatico periodico per evitare la perdita di dati.
 Due utenti possono modificare lo stesso frammento di contenuto contemporaneamente e quindi sovrascrivere le modifiche l’uno dell’altro. Per evitare questo problema, il frammento di contenuto deve essere bloccato applicando l&#39;azione *Estrai* dell&#39;amministrazione DAM al frammento.

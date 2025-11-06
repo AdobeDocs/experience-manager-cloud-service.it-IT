@@ -3,8 +3,8 @@ title: Progettazione reattiva
 description: Con il design reattivo, le stesse esperienze possono essere visualizzate in modo efficace su più dispositivi in più orientamenti.
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -85,7 +85,7 @@ L&#39;esercitazione [WKND](develop-wknd-tutorial.md) utilizza questa strategia p
 
 ### Utilizzo delle query multimediali con le pagine AEM {#using-media-queries-with-aem-pages}
 
-[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) utilizzano il [Componente core pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=it), che include clientlibs tramite i criteri di pagina.
+[Il progetto di esempio WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e [Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) utilizzano il [Componente core pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), che include clientlibs tramite i criteri di pagina.
 
 Se il tuo componente pagina non è basato sul componente core pagina, puoi anche includere la cartella della libreria client nello script HTL o JSP. In questo modo si genera e si fa riferimento al file CSS con le query multimediali necessarie per il funzionamento della griglia reattiva.
 
@@ -137,7 +137,7 @@ Le pagine reattive si adattano dinamicamente al dispositivo su cui vengono ripro
 
 [Il componente core Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it) offre funzionalità quali la selezione di immagini adattive.
 
-* Per impostazione predefinita, il componente Immagine utilizza [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=it) per distribuire la rappresentazione corretta.
+* Per impostazione predefinita, il componente Immagine utilizza [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) per distribuire la rappresentazione corretta.
 * [La consegna di immagini ottimizzate per il web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=it) è disponibile anche tramite una semplice casella di controllo nei suoi criteri, che fornisce risorse immagine da DAM in formato WebP e può ridurre la dimensione di download di un&#39;immagine di circa il 25% in media.
 
 ## Contenitore di layout {#layout-container}

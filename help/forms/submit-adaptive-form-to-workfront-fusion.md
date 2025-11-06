@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -17,11 +17,12 @@ ht-degree: 3%
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=it) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatizza il processo di ripetizione delle stesse attività, ad esempio i flussi di lavoro di approvazione dei documenti, il filtro e l&#39;ordinamento delle e-mail, consentendo di concentrarsi su nuove attività anziché su quelle ricorrenti. Adobe Workfront Fusion include più scenari. Uno scenario è costituito da una serie di moduli che esegue il trasferimento di dati tra applicazioni e servizi web. In uno scenario, puoi aggiungere vari passaggi (moduli) per automatizzare un’attività.
 
 Utilizzando Workfront Fusion, ad esempio, puoi creare uno scenario per raccogliere dati con un modulo adattivo, elaborarli e inviarli a un archivio dati per l’archiviazione. Una volta configurato uno scenario, Workfront Fusion esegue automaticamente le attività ogni volta che un utente compila un modulo, aggiornando senza problemi l’archivio dati.
 
 AEM Forms as a Cloud Service fornisce un connettore OOTB per connettersi e inviare un modulo adattivo ad Adobe Workfront Fusion. L’invio di un modulo ad Adobe Workfront Fusion può offrire diversi vantaggi:
+
 * Ha consentito il trasferimento senza soluzione di continuità dei dati di invio dei moduli ai flussi di lavoro di Workfront Fusion.
 * Consente di automatizzare varie attività attivate dall’invio dei moduli. Ciò può includere l&#39;avvio di progetti, l&#39;assegnazione di attività a specifici membri del team, l&#39;invio di notifiche e l&#39;aggiornamento degli stati del progetto, il tutto senza alcun intervento manuale.
 * Tutti i moduli inviati acquisiti in Workfront Fusion forniscono un’unica fonte di verità per le informazioni relative al progetto
@@ -37,8 +38,8 @@ AEM Forms as a Cloud Service fornisce un connettore OOTB per connettersi e invia
 
 Per stabilire una connessione tra Workfront Fusion e AEM Forms, sono necessari i seguenti elementi:
 
-* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=it) valida.
-* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it).
+* [Licenza Workfront e Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html) valida.
+* Un utente di AEM con il diritto di accedere a [Dev Console](https://my.cloudmanager.adobe.com/) per [recuperare le credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrare AEM Forms con Adobe Workfront Fusion
 
@@ -105,7 +106,7 @@ Per aggiungere una connessione:
    >
    > L’URL dell’istanza è l’indirizzo web univoco che punta a un’istanza AEM Forms specifica.
 
-   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it) necessarie per creare una connessione.
+   È possibile recuperare le credenziali del servizio [dalla Console sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessarie per creare una connessione.
 
 1. Sostituisci `ims-na1.adobelogin.com` nell&#39;endpoint **IMS** con il valore di **imsEndpoint** dalle credenziali del servizio nella console per sviluppatori.
 
@@ -118,7 +119,7 @@ Per aggiungere una connessione:
    * Specificare **Segreto client** con valore di **clientSecret** dalle credenziali del servizio nella console per sviluppatori.
    * Specificare **ID account tecnico** con valore **id** dalle credenziali del servizio nella console Sviluppatore.
    * Specifica **ID organizzazione** con valore di **org** dalle credenziali del servizio nella console per sviluppatori.
-   * **Meta ambiti** con valore di **metascopi** dalle credenziali del servizio nella console per sviluppatori.
+   * **Ambiti Meta** con valore di **metascopi** dalle credenziali del servizio nella console per sviluppatori.
    * **Chiavi private** con valore di **chiave privata** dalle credenziali del servizio nella console per sviluppatori.
 
    >[!NOTE]
@@ -185,8 +186,8 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Richiama un&#39;azione di invio Scenario di Workfront Fusion]**.
 

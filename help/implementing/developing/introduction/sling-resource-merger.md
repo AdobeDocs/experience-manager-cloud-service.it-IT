@@ -3,8 +3,8 @@ title: Utilizzo di Sling Resource Merger in Adobe Experience Manager as a Cloud 
 description: Sling Resource Merger fornisce servizi per accedere e unire le risorse
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Con Sling Resource Merger, le risorse e/o le proprietà di sovrapposizione/sosti
 >
 >Sling Resource Merger e i metodi correlati possono essere utilizzati solo con l’interfaccia touch (l’unica disponibile per AEM as a Cloud Service).
 
-### Obiettivi per l&#39;AEM {#goals-for-aem}
+### Obiettivi per AEM {#goals-for-aem}
 
 Gli obiettivi per utilizzare Sling Resource Merger in AEM sono i seguenti:
 
@@ -198,7 +198,7 @@ Queste funzionalità, insieme a quelle standard, consentono di:
       * tipo: `String[]`
       * valore: elenco dei nodi figlio (come definiti in `/libs`) da nascondere/ignorare
 
-      Il carattere jolly &ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
+      Il carattere jolly &amp;ast; può essere utilizzato per nascondere/ignorare tutti i nodi figlio.
 
 * **Riordina nodi**
 

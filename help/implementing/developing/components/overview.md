@@ -3,8 +3,8 @@ title: Panoramica dei componenti
 description: I componenti sono unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 66%
@@ -22,7 +22,7 @@ Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager
 * Sviluppati come unità autonome all’interno di una cartella dell’archivio.
 * Non sono presenti file di configurazione nascosti.
 * Possono contenere altri componenti.
-* Possono essere eseguiti ovunque all&#39;interno di qualsiasi sistema AEM e possono anche essere limitati per funzionare con componenti specifici.
+* Possono essere eseguiti ovunque all’interno di qualsiasi sistema AEM e possono anche essere limitati per l’esecuzione con componenti specifici.
 * Hanno un’interfaccia utente standard.
 * Hanno un comportamento di modifica configurabile.
 * Utilizza finestre di dialogo create utilizzando sottoelementi basati su componenti dell’interfaccia utente Granite.
@@ -44,13 +44,13 @@ Ogni componente AEM:
 
 ## Componenti core AEM {#aem-core-components}
 
-[I componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un insieme di componenti WCM (Web Content Management) standardizzati per l&#39;AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
+[I componenti core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) sono un insieme di componenti WCM (Web Content Management) standardizzati di AEM che consentono di velocizzare i tempi di sviluppo e ridurre i costi di manutenzione dei siti Web.
 
 I Componenti core sono forniti con AEM as a Cloud Service e il [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) illustra come implementarli e utilizzarli. I componenti sono forniti con tutto il codice sorgente e possono essere utilizzati così come sono o come punti di partenza per i componenti modificati o estesi.
 
 ### Visualizzazione dei componenti disponibili {#viewing-available-components}
 
-Per una panoramica di tutti i componenti disponibili nell&#39;istanza AEM, utilizzare la [console Componenti](/help/sites-cloud/authoring/components-console.md).
+Per una panoramica di tutti i componenti disponibili nell&#39;istanza di AEM, utilizza la [console Componenti](/help/sites-cloud/authoring/components-console.md).
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 

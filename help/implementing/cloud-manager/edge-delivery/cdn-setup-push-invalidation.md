@@ -3,10 +3,10 @@ title: Configurare l’annullamento della validità push per un sito Edge Delive
 description: Scopri come configurare l’annullamento della validità push per un sito Edge Delivery, per gestire in modo efficace l’aggiornamento dei contenuti e la memorizzazione in cache.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 

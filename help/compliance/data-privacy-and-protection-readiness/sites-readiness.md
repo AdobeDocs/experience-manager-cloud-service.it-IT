@@ -1,21 +1,21 @@
 ---
-title: Normative sulla protezione dei dati e la privacy dei dati - Preparazione di AEM Sites
-description: Scopri il supporto di Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (RGPD) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
+title: Normative sulla protezione dei dati e la privacy dei dati - Compatibilità di AEM Sites
+description: Informazioni sul supporto di Adobe Experience Manager as a Cloud Service Sites per le varie normative su privacy e protezione dei dati, incluso il Regolamento generale sulla protezione dei dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Preparazione di Experience Manager Sites per le normative su privacy e protezione dei dati {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Compatibilità di Experience Manager Sites per le normative su privacy e protezione dei dati {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->Il contenuto di questo documento non costituisce una consulenza legale e non intende sostituirsi a una consulenza legale.
+>Il contenuto di questo documento non costituisce una consulenza legale e non intende esserne una sostituzione.
 >
 >Consulta l’ufficio legale della tua azienda per ricevere consigli in merito alle normative su privacy e protezione dei dati.
 

@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 40%
 
 ---
@@ -46,7 +46,7 @@ Ad esempio, se il contenuto viene memorizzato in una tassonomia simile a:
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-il `/content/myUnstructuredContent/parentCategory/childCategory` nodo può essere semplicemente recuperato, i relativi nodi secondari possono essere analizzati e utilizzati per eseguire il rendering del componente.
+Il nodo `/content/myUnstructuredContent/parentCategory/childCategory` può essere semplicemente recuperato, i relativi nodi secondari possono essere analizzati e utilizzati per eseguire il rendering del componente.
 
 Inoltre, quando si tratta di un set di risultati piccolo o omogeneo, può essere più rapido attraversare l’archivio e raccogliere i nodi richiesti, anziché creare una query per restituire lo stesso set di risultati. In generale, occorre evitare le query laddove possibile.
 
@@ -69,7 +69,7 @@ AEM as a Cloud Service fornisce lo [strumento Prestazioni query](#query-performa
 * Vengono visualizzate le query già eseguite con le relative caratteristiche di prestazione e la pianificazione delle query.
 * Consente l’esecuzione di query ad-hoc a vari livelli, a partire dalla semplice visualizzazione della pianificazione delle query, fino all’esecuzione della query completa.
 
-Lo strumento Prestazioni query è raggiungibile tramite [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries). Lo strumento Prestazioni query di AEM as a Cloud Service fornisce ulteriori informazioni sui dettagli dell’esecuzione della query sulla versione AEM 6.x.
+Lo strumento Prestazioni query è raggiungibile tramite [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries). Lo strumento Prestazioni query di AEM as a Cloud Service fornisce ulteriori informazioni sui dettagli dell’esecuzione della query sulla versione 6.x di AEM.
 
 Questo grafico illustra il flusso generale da utilizzare per ottimizzare le query con lo strumento Prestazioni query.
 
@@ -105,13 +105,14 @@ La dimensione recuperata del risultato della query è un fattore importante nell
 
 Ciò significa anche che le dimensioni del set di risultati possono essere determinate correttamente solo se tutti i risultati vengono recuperati. Per questo motivo, il set di risultati recuperato deve sempre essere limitato, sia incrementando la query (per i dettagli, consulta la sezione [Scheda di riferimento rapido per le query JCR](#jcr-query-cheatsheet) del presente documento) o limitando la lettura dei risultati.
 
-Tale limite impedisce inoltre al motore di query di raggiungere il **limite trasversale** di 100.000 nodi, che comporta un arresto forzato della query.
+Tale limite impedisce inoltre al motore di query di raggiungere il **limite trasversale** di 100.000 nodi, che comporta un’interruzione forzata della query.
 
 Consulta la sezione [Query con set di risultati di grandi dimensioni](#queries-with-large-result-sets) se è necessario elaborare completamente un set di risultati potenzialmente di grandi dimensioni.
 
 ## Strumento Prestazioni query {#query-performance-tool}
 
 Lo strumento Prestazioni query (disponibile in `/libs/granite/operations/content/diagnosistools/queryPerformance.html` tramite [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries)) fornisce:
+
 * Un elenco di qualsiasi &quot;Query lente&quot;; attualmente definite come quelle che leggono/analizzano più di 5000 righe.
 * Un elenco di &quot;Query popolari&quot;
 * Lo strumento &quot;Spiega query&quot; consente di comprendere in che modo una particolare query verrà eseguita da Oak.
@@ -119,6 +120,7 @@ Lo strumento Prestazioni query (disponibile in `/libs/granite/operations/content
 ![Strumento Prestazioni Query](assets/query-performance-tool.png)
 
 Le tabelle &quot;Query lente&quot; e &quot;Query popolari&quot; includono:
+
 * L&#39;istruzione di query stessa.
 * Dettagli dell’ultimo thread che ha eseguito la query, consentendo l’identificazione della pagina o della funzione dell’applicazione che esegue la query.
 * Punteggio &quot;Ottimizzazione di lettura&quot; per la query.
@@ -155,6 +157,7 @@ Per spiegare una query, eseguire le operazioni seguenti:
 
 Dopo aver selezionato `Explain`, all&#39;utente viene presentato un pop-up che descrive il risultato della query explain (e l&#39;esecuzione, se selezionata).
 Questo pop-up include i dettagli di -
+
 * Gli indici utilizzati durante l&#39;esecuzione della query (o nessun indice se la query verrebbe eseguita utilizzando [Repository Traversal](#repository-traversal)).
 * Il tempo di esecuzione (se la casella di controllo `Include Execution Time` è stata selezionata) e il conteggio dei risultati letti (se sono state selezionate le caselle di controllo `Read first page of results` o `Include Node Count`).
 * Il piano di esecuzione, che consente l&#39;analisi dettagliata del modo in cui viene eseguita la query. Per informazioni su come interpretare il piano, vedere [Lettura del piano di esecuzione della query](#reading-query-execution-plan).
@@ -172,6 +175,7 @@ Considera la seguente query:
 ```
 
 ...che contiene -
+
 * 3 restrizioni
    * Tipo nodo (`dam:Asset`)
    * Percorso (discendenti di `/content/dam`)
@@ -191,6 +195,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 In questa sezione del piano si afferma che:
+
 * Per eseguire questa query viene utilizzato un indice -
    * In questo caso verrà utilizzato l&#39;indice Lucene `/oak:index/damAssetLucene-9`, quindi le informazioni rimanenti sono nella sintassi di query Lucene.
 * Tutte e 3 le restrizioni sono gestite dall’indice:
@@ -212,6 +217,7 @@ Considerazione di una query diversa -
 ```
 
 ...che contiene -
+
 * 3 restrizioni
    * Tipo nodo (`dam:Asset`)
    * Percorso (discendenti di `/content/dam`)
@@ -231,6 +237,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 In questa sezione del piano si afferma che:
+
 * Solo 2 (delle 3) restrizioni sono gestite dall&#39;indice -
    * La restrizione del tipo di nodo
       * implicito, perché `damAssetLucene-9` indicizza solo nodi di tipo dam:Asset.

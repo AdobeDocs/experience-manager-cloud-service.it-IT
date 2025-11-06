@@ -2,9 +2,9 @@
 title: Anteprima dei frammenti di contenuto
 description: Scopri come visualizzare in anteprima i frammenti di contenuto con una serie di metodi.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 2%

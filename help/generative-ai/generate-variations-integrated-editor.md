@@ -2,10 +2,10 @@
 title: Generare varianti
 description: Scopri le informazioni su Genera varianti, accessibile da vari editor in AEM as a Cloud Service
 feature: Generate Variations, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: b99cc846a1efbbcd12244f68c770aa25ac4e985d
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 100%
 

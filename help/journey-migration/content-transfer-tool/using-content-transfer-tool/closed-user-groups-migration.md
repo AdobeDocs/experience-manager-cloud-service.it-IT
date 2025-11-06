@@ -6,7 +6,7 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 13%
@@ -28,9 +28,10 @@ Attualmente, i gruppi chiusi di utenti (CUG) richiedono alcuni passaggi aggiunti
 
 I gruppi vengono inclusi automaticamente in una migrazione CTT/CAM ad Adobe Experience Manager as a Cloud Service se sono associati al contenuto migrato tramite l’ACL di quel contenuto o il relativo nodo di criteri CUG. La verifica dell’esistenza del gruppo e dei relativi membri deve essere eseguita prima di andare &quot;live&quot;. I gruppi a cui si fa riferimento in un criterio CUG sono denominati &quot;gruppi CUG&quot;.
 
-Per utilizzare i gruppi utenti chiusi (CUG) in AEM as a Cloud Service, gli utenti devono essere presenti nell’istanza di authoring ed essere membri dei gruppi di utenti chiusi (CUG) pertinenti.  Questa operazione può essere eseguita utilizzando pacchetti; se gli utenti CUG sono utenti IMS, potrebbero essere già presenti.  Gli utenti dei gruppi di utenti chiusi (CUG) devono quindi essere resi membri dei gruppi di utenti chiusi (CUG) dell’AEM.
+Per utilizzare i gruppi utenti chiusi (CUG) in AEM as a Cloud Service, gli utenti devono essere presenti nell’istanza di authoring ed essere membri dei gruppi di utenti chiusi (CUG) pertinenti.  Questa operazione può essere eseguita utilizzando pacchetti; se gli utenti CUG sono utenti IMS, potrebbero essere già presenti.  Gli utenti CUG devono quindi essere resi membri dei gruppi CUG di AEM.
 
 Per abilitare il comportamento dei gruppi utenti chiusi (CUG) nell’istanza Publish,
+
 1. I gruppi CUG devono essere attivati (replicandoli insieme ai relativi membri nell’istanza Publish),
 1. È necessario annullare la pubblicazione di *Tutte* le pagine protette con criteri CUG (per cancellare il conteggio dei CUG globali) e
 1. Le pagine protette con i criteri per i gruppi utenti chiusi (CUG) devono quindi essere pubblicate (in modo da abilitare l’istanza Publish e tenere traccia dei criteri).

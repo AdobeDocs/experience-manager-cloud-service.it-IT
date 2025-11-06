@@ -3,9 +3,9 @@ title: Introduzione alla SPA e procedura dettagliata
 description: Questo articolo introduce i concetti di una SPA e spiega come utilizzare un’applicazione SPA di base per l’authoring, mostrando come si relaziona con l’editor di SPA AEM sottostante.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -39,7 +39,7 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 * [L’app di esempio del progetto SPA WKND disponibile su GitHub](https://github.com/adobe/aem-guides-wknd-spa)
    * Scarica l’[ultima versione dell’app React](https://github.com/adobe/aem-guides-wknd-spa/releases) con nome simile a `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
    * Scarica le [immagini di esempio più recenti per l’app](https://github.com/adobe/aem-guides-wknd-spa/releases) con nome simile a `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Utilizza Gestione pacchetti](/help/implementing/developing/tools/package-manager.md) per installare entrambi i pacchetti come faresti con qualsiasi altro pacchetto in AEM.
+   * [Utilizza il gestore di pacchetti](/help/implementing/developing/tools/package-manager.md) per installare entrambi i pacchetti come faresti con qualsiasi altro pacchetto in AEM.
    * Ai fini della procedura dettagliata, non è necessario installare l’app tramite Maven.
 
 >[!CAUTION]
@@ -94,10 +94,12 @@ Effettuando il rendering sul lato client, gli elementi di pagina reagiscono più
 >[!TIP]
 >
 >Per informazioni tecniche sul funzionamento delle SPA in AEM, consulta gli articoli:
+>
 >* [Guida introduttiva alle SPA in AEM usando React](getting-started-react.md)
 >* [Guida introduttiva alle SPA in AEM che usano Angular](getting-started-angular.md)
 >
 >Per un’analisi più approfondita della progettazione, dell’architettura e del flusso di lavoro tecnico dell’editor di SPA, consulta l’articolo:
+>
 >* [Panoramica dell’editor di SPA](editor-overview.md).
 
 ## Esperienza di modifica dei contenuti con SPA {#content-editing-experience-with-spa}

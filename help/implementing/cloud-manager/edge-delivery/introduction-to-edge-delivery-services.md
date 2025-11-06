@@ -3,8 +3,8 @@ title: Introduzione a Edge Delivery Services in Cloud Manager
 description: Scopri come distribuire i progetti Cloud Manager utilizzando Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 93%
@@ -87,7 +87,7 @@ L’**elenco attività di Edge Delivery** in Cloud Manager è un elenco di contr
 | 8 | Configurare la convalida push | Consulta [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Pubblicazione | Consulta [Elenco di controllo per la pubblicazione](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441569?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrare un ticket di assistenza {#eds-support-ticket}
 

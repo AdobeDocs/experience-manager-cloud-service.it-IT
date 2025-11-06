@@ -5,10 +5,10 @@ keywords: Endpoint REST di AEM Forms, invia all’endpoint REST, invia dati all�
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
@@ -131,11 +131,14 @@ Per configurare l’azione di invio in base alle specifiche dell’API aperta Sw
 
 1. Apri il modulo adattivo per la modifica.
 1. Fai clic sull&#39;estensione **Modifica proprietà modulo** nell&#39;editor.
-Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
+   Viene visualizzata la finestra di dialogo **Proprietà modulo**.
+
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia all&#39;endpoint REST]** azione di invio.
 
    Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, `/content/restEndPoint`. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.

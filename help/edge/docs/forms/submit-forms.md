@@ -3,9 +3,9 @@ title: Preparare il foglio di calcolo per accettare i dati
 description: Creare moduli potenti più rapidamente utilizzando fogli di calcolo e campi blocco di moduli adattivi.
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
 

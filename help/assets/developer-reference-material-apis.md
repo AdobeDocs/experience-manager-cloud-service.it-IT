@@ -3,12 +3,12 @@ title: Riferimenti sviluppatore per  [!DNL Assets]
 description: API [!DNL Assets] e contenuti di riferimento per sviluppatori consentono di gestire le risorse, inclusi file binari, metadati, rappresentazioni, commenti e  [!DNL Content Fragments].
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 | × | Non supportato. Non utilizzare. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=it#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
+| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **File binario originale** |  |  |  |  |  |  |
 | Crea originale | ✓ | × | - | × | × | - |
@@ -64,7 +64,7 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 | Copia cartella | ✓ | ✓ | - | ✓ | - | - |
 | Sposta cartella | ✓ | ✓ | - | ✓ | - | - |
 
-## Caricamento risorse {#asset-upload}
+## Caricamento della risorsa {#asset-upload}
 
 In [!DNL Experience Manager] come [!DNL Cloud Service], puoi caricare direttamente le risorse nell&#39;archiviazione cloud utilizzando l&#39;API HTTP. Di seguito sono riportati i passaggi per caricare un file binario. Eseguire questi passaggi in un&#39;applicazione esterna e non nella JVM [!DNL Experience Manager].
 
@@ -542,7 +542,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -4,9 +4,9 @@ description: Scopri come definire le regole di traduzione per identificare i con
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -20,8 +20,8 @@ Scopri come definire le regole di traduzione per identificare i contenuti per la
 
 Nel documento precedente del percorso di traduzione AEM headless, [Configurare l’integrazione della traduzione](configure-connector.md), hai imparato a installare e configurare l’integrazione della traduzione e ora dovresti:
 
-* Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
-* Essere in grado di impostare la propria connessione al servizio di traduzione.
+* I parametri importanti del framework di integrazione della traduzione in AEM.
+* Come impostare la propria connessione al servizio di traduzione.
 
 Ora che l’integrazione è configurata, questo articolo illustra il passaggio successivo per identificare il contenuto da tradurre.
 
@@ -37,7 +37,7 @@ Ora che l’integrazione è configurata, questo articolo illustra il passaggio s
 
 Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AEM per identificare il contenuto per la traduzione. Dopo aver letto questo documento, dovresti:
 
-* Comprendere come funzionano le regole di traduzione.
+* Come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
 ## Regole di traduzione {#translation-rules}
@@ -98,8 +98,8 @@ Tali funzioni generalmente non sono necessarie per iniziare a localizzare il con
 
 Ora cha hai completato questa parte del percorso di traduzione headless, dovresti:
 
-* Comprendere come funzionano le regole di traduzione.
-* Essere in grado di definire le tue regole di traduzione.
+* Come funzionano le regole di traduzione.
+* Come definire le tue regole di traduzione.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione AEM headless esaminando successivamente il documento [Tradurre il contenuto](translate-content.md) dove verrà illustrato come l’integrazione e le regole contribuiscono alla traduzione dei contenuti.
 

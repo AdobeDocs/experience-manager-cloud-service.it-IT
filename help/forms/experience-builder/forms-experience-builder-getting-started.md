@@ -4,14 +4,14 @@ description: Scopri le nozioni di base sulla creazione del primo modulo basato s
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
-
 
 # Guida introduttiva di Forms Experience Builder {#getting-started-forms-experience-builder}
 
@@ -61,11 +61,11 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 
 **Esempio:**
 
-    Crea un modulo di feedback del cliente con:
-    &#x200B;- Valutazione del prodotto (1-5 stelle)
-    &#x200B;- Campo di commento per feedback dettagliato
-    &#x200B;- E-mail del cliente (facoltativo)
-    &#x200B;- Invia a notifica e-mail
+    Crea un modulo di feedback dei clienti con:
+    - Valutazione del prodotto (1-5 stelle)
+    - Campo di commento per feedback dettagliato
+    - E-mail del cliente (facoltativo)
+    - Invia a notifica e-mail
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 
 Trasformare i documenti esistenti in moduli digitali interattivi.
 
-Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
+Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
 
 **Quando utilizzare:**
 
@@ -100,7 +100,7 @@ Creiamo un semplice modulo di contatto per comprendere il flusso di lavoro di ba
 
 Inizia con una descrizione di base del modulo:
 
-    Crea un modulo di contatto di base con i campi nome, e-mail e messaggio
+    Crea un modulo di contatto base con i campi nome, e-mail e messaggio
 
 In questo modo viene creato un modulo con tre campi essenziali.
 
@@ -110,7 +110,7 @@ In questo modo viene creato un modulo con tre campi essenziali.
 
 Migliora il modulo con le regole di convalida:
 
-    Rendi obbligatori @name e @email i campi con la convalida appropriata
+    Rendi obbligatori i campi @name e @email con la convalida appropriata
 
 Il simbolo `@` fa riferimento a campi specifici per le modifiche mirate.
 
@@ -121,7 +121,7 @@ Il simbolo `@` fa riferimento a campi specifici per le modifiche mirate.
 
 Aggiungi testo e indicazioni utili per i segnaposto:
 
-    Aggiungi testo segnaposto: @name &quot;Nome e cognome&quot;, @email &quot;your.email@company.com&quot;, @message &quot;Come possiamo aiutarci&quot;
+    Aggiungi testo segnaposto: @name “Nome e cognome”, @email “your.email@company.com”, @message “Come possiamo essere di aiuto”
 
 ![È stata aggiunta la convalida tramite i prompt del linguaggio naturale nel generatore di esperienze di Forms](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
@@ -131,9 +131,9 @@ Includi funzionalità aggiuntive:
 
     Aggiungi due elenchi a discesa
     
-    &#x200B;- tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
+    - tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
     
-    &#x200B;- livello di urgenza con opzioni (Basso, Medium, Alto)
+    - livello di urgenza con opzioni (Basso, Medium, Alto)
 
 
 ![È stato aggiunto un elenco a discesa utilizzando i prompt del linguaggio naturale in Forms Experience Builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +167,10 @@ Utilizza `@fieldName` per fare riferimento a campi specifici:
 
 Descrivi cosa vuoi in inglese semplice:
 
-    &#x200B;- Aggiungi una sezione per le informazioni sulla società
-    &#x200B;- Crea un menu a discesa per la selezione del reparto
-    &#x200B;- Includi un caricamento di file per la ripresa
-    &#x200B;- Configura le notifiche e-mail quando il modulo viene inviato
+    - Aggiungi una sezione per le informazioni sulla società
+    - Crea un menu a discesa per la selezione del reparto
+    - Includi un caricamento di file per la ripresa
+    - Configura le notifiche e-mail quando il modulo viene inviato
 
 ### Generazione incrementale {#build-incrementally}
 
@@ -190,55 +190,55 @@ Inizia con semplicità e aggiungi gradualmente complessità:
 **Modulo di contatto di base:**
 
     Crea un modulo di contatto con:
-    &#x200B;- Nome (obbligatorio)
-    &#x200B;- E-mail (obbligatorio, convalidato)
-    &#x200B;- Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
-    &#x200B;- Messaggio (obbligatorio, su più righe)
-    &#x200B;- Pulsante Invia
+    - Nome (obbligatorio)
+    - E-mail (obbligatorio, convalidato)
+    - Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
+    - Messaggio (obbligatorio, su più righe)
+    - Pulsante Invia
 
 **Modulo feedback cliente:**
 
-    Crea un modulo di feedback del cliente con:
-    &#x200B;- Valutazione del prodotto (1-5 stelle)
-    &#x200B;- Campo di commento per feedback dettagliato
-    &#x200B;- E-mail del cliente (facoltativo)
-    &#x200B;- Invia a notifica e-mail
+    Crea un modulo di feedback dei clienti con:
+    - Valutazione del prodotto (1-5 stelle)
+    - Campo di commento per feedback dettagliato
+    - E-mail del cliente (facoltativo)
+    - Invia a notifica e-mail
 
 ### Moduli di registrazione e onboarding {#registration-onboarding-forms}
 
 **Registrazione utente:**
 
     Crea un modulo di registrazione utente con:
-    &#x200B;- Informazioni personali (nome, e-mail, telefono)
-    &#x200B;- Preferenze account (newsletter, notifiche)
-    &#x200B;- Accettazione termini e condizioni
-    &#x200B;- Creazione password con convalida di forza
+    - Informazioni personali (nome, e-mail, telefono)
+    - Preferenze account (newsletter, notifiche)
+    - Accettazione termini e condizioni
+    - Creazione password con convalida di forza
 
 **Onboarding dei dipendenti:**
 
     Crea un modulo per l&#39;onboarding dei dipendenti con:
-    &#x200B;- Dati personali e informazioni di contatto
-    &#x200B;- Informazioni sull&#39;impiego e data di inizio
-    &#x200B;- Caricamenti di documenti (curriculum, ID, moduli fiscali)
-    &#x200B;- Selezione di benefit e preferenze
+    - Dati personali e informazioni di contatto
+    - Informazioni sull&#39;impiego e data di inizio
+    - Caricamenti di documenti (curriculum, ID, moduli fiscali)
+    - Selezione di benefit e preferenze
 
 ### Moduli di indagine e valutazione {#survey-assessment-forms}
 
 **Sondaggio sulla soddisfazione dei clienti:**
 
     Crea un sondaggio sulla soddisfazione dei clienti con:
-    &#x200B;- Valutazione complessiva (scala da 1 a 10)
-    &#x200B;- Valutazione delle categorie (prodotto, servizio, supporto)
-    &#x200B;- Sezioni di feedback aperte
-    &#x200B;- Informazioni demografiche (facoltative)
+    - Valutazione complessiva (scala da 1 a 10)
+    - Valutazione delle categorie (prodotto, servizio, supporto)
+    - Sezioni di feedback aperte
+    - Informazioni demografiche (facoltative)
 
 **Valutazione delle abilità:**
 
     Crea un modulo di valutazione delle abilità con:
-    &#x200B;- Categorie di abilità con livelli di esperienza
-    &#x200B;- Durata dell&#39;esperienza per ogni abilità
-    &#x200B;- Informazioni sulla certificazione e sulla formazione
-    &#x200B;- Autovalutazione e obiettivi
+    - Categorie di abilità con livelli di esperienza
+    - Durata dell&#39;esperienza per ogni abilità
+    - Informazioni sulla certificazione e sulla formazione
+    - Autovalutazione e obiettivi
 
 ## Test e convalida {#testing-validation}
 

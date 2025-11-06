@@ -4,8 +4,8 @@ description: Scopri come verificare che Cloud Manager abbia confermato correttam
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 17%
@@ -52,7 +52,7 @@ Cloud Manager verifica la proprietà del dominio tramite il certificato SSL gest
 | Verifica del dominio in corso | Verifica in corso.<br>Questo stato viene generalmente visualizzato dopo aver selezionato l&#39;icona **Verifica di nuovo** accanto allo stato. L’elaborazione della verifica DNS può richiedere alcune ore per via dei ritardi di propagazione del DNS. |
 | Verificato - Distribuzione non riuscita | La verifica del certificato EV/OV è riuscita, ma la distribuzione CDN non è riuscita.<br>In questi casi, contatta il tuo rappresentante Adobe. |
 | Dominio verificato e implementato | Questo stato indica che il nome di dominio personalizzato è pronto per l’uso.<br>A questo punto, il nome di dominio personalizzato è pronto per essere testato e puntato al nome di dominio Cloud Manager. Per ulteriori informazioni, consulta [Aggiungere un nome di dominio personalizzato](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
-| Eliminazione in corso | È in corso l’eliminazione di un nome di dominio personalizzato. |
+| Eliminazione | È in corso l’eliminazione di un nome di dominio personalizzato. |
 | Eliminazione non riuscita | Eliminazione di un nome di dominio personalizzato non riuscita. È necessario riprovare.<br>Per ulteriori informazioni, consulta [Gestire i nomi di dominio personalizzati](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md). |
 
 

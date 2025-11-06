@@ -4,7 +4,7 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 11%
@@ -68,7 +68,7 @@ Puoi configurare una pagina di errore CDN per sostituire la pagina predefinita s
 
 Impostando il valore TTL (Time to Live) mediante l’intestazione HTTP cache-control è possibile bilanciare in modo efficace le prestazioni di distribuzione dei contenuti e lo stato di aggiornamento degli stessi. Tuttavia, negli scenari in cui è fondamentale distribuire immediatamente il contenuto aggiornato, può essere utile eliminare direttamente la cache CDN.
 
-Leggi informazioni su [configurazione di un token API di eliminazione](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) e [eliminazione del contenuto CDN memorizzato nella cache](/help/implementing/dispatcher/cdn-cache-purge.md).
+Leggi informazioni su [configurazione di un token API di eliminazione](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) e [eliminazione del contenuto CDN memorizzato nella cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Autenticazione di base alla rete CDN {#basic-auth}
 

@@ -5,7 +5,7 @@ keywords: Come connettere l’elenco di SharePoint per un modulo adattivo?, Invi
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 1%
@@ -59,6 +59,7 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Mi
 >[!NOTE]
 >
 > In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
+>
 > * colonna immagine
 > * colonna metadati
 > * colonna persona

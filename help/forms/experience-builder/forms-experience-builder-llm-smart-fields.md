@@ -4,14 +4,14 @@ description: Scopri come creare campi modulo intelligenti con opzioni precompila
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
-
 
 # Campi avanzati migliorati LLM in Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -48,8 +48,8 @@ Creazione di campi basati sulla posizione con dati geografici e informazioni amm
 **Aeroporti internazionali con codice IATA:**
 
     Aggiungi un elenco a discesa per gli aeroporti di partenza con tutti i principali aeroporti internazionali
-    Aggiungi il campo dell&#39;aeroporto di arrivo con i codici IATA e i nomi completi
-    Crea un campo per l&#39;aeroporto più vicino alla posizione dell&#39;utente
+    Aggiungi il campo dell’aeroporto di arrivo con i codici IATA e i nomi completi
+    Crea un campo per l’aeroporto più vicino alla posizione dell’utente
     Aggiungi una selezione di stazioni ferroviarie per le città europee
 
 **Esempi di prompt:**
@@ -63,7 +63,7 @@ Creazione di campi basati sulla posizione con dati geografici e informazioni amm
 **Paesi, stati e province:**
 
     Aggiungi un elenco completo degli stati degli Stati Uniti con le abbreviazioni
-    Crea un elenco a discesa di un paese con codici ISO e nomi completi
+    Crea un elenco a discesa di un Paese con codici ISO e nomi completi
     Aggiungi un campo per le principali città del mondo con fusi orari
     Includi un elenco a discesa di province e territori canadesi
     Aggiungi un campo per le contee e le aree postali del Regno Unito
@@ -84,8 +84,8 @@ Utilizzo di classificazioni aziendali complete e dati professionali per i moduli
 **Tipi di entità di settore e business:**
 
     Aggiungi un campo per la classificazione del settore con codici NAICS
-    Crea un elenco a discesa dei tipi di entità business (LLC, Corporation, Partnership, ecc.)
-    Aggiungi un campo per le categorie di dimensione società (avvio, PMI, impresa)
+    Crea un elenco a discesa dei tipi di entità aziendale (S.r.l,, S.p.A., S.n.c, ecc.)
+    Aggiungi un campo per le categorie di dimensione società (startup, PMI, impresa)
     Includi selezione reparto per organizzazioni di grandi dimensioni
     Aggiungi un campo per i tipi di servizi professionali
 
@@ -99,11 +99,11 @@ Utilizzo di classificazioni aziendali complete e dati professionali per i moduli
 
 **Qualifiche e certificazioni:**
 
-    Aggiungi un campo per i titoli di lavoro con ruoli di settore comuni
+    Aggiungi un campo per le mansioni con ruoli di settore comuni
     Crea un elenco a discesa di certificazioni professionali per campo
     Includi livelli di formazione con tipi di laurea
-    Aggiungi un campo per anni di intervalli di esperienza
-    Crea una selezione per linguaggi e framework di programmazione
+    Aggiungi un campo per gli intervalli degli anni di esperienza
+    Crea una selezione per linguaggi di programmazione e framework
 
 **Esempi di prompt:**
 
@@ -120,10 +120,10 @@ Accedi a codici standardizzati, classificazioni e informazioni sulle normative p
 **Informazioni su valuta, imposta e pagamento:**
 
     Aggiungi un campo per i codici valuta con simboli e tassi di cambio
-    Crea un elenco a discesa di tipi di ID imposta per paese
+    Crea un elenco a discesa di tipi di codice fiscale per Paese
     Includi un campo per i tipi di documenti legali
-    Aggiungi opzioni metodo di pagamento con caratteristiche di sicurezza
-    Crea una selezione per gli istituti bancari per paese
+    Aggiungi opzioni metodo di pagamento con funzioni di sicurezza
+    Crea una selezione di istituti bancari per Paese
 
 **Esempi di prompt:**
 
@@ -174,8 +174,8 @@ Campi di data e ora avanzati con informazioni sul contesto aziendale e sulla pia
 
 **Orario operativo e pianificazione:**
 
-    Aggiungi un campo per gli orari lavorativi con gestione del fuso orario
-    Crea un elenco a discesa delle festività per paese
+    Aggiungi un campo per gli orari d’ufficio con gestione del fuso orario
+    Crea un elenco a discesa delle festività per Paese
     Includi opzioni stagionali con intervalli di date
     Aggiungi un campo per la prenotazione di una sala conferenze con disponibilità
     Crea una selezione per i modelli di riunione ricorrenti
@@ -197,8 +197,8 @@ Campi orientati al commercio elettronico e ai servizi con categorizzazione compl
     Aggiungi un campo per le categorie di prodotto con sottocategorie
     Crea un elenco a discesa dei metodi di spedizione con le stime di consegna
     Includi un campo per le opzioni dei criteri di restituzione
-    Aggiungi una selezione per i livelli di priorità del cliente
-    Crea un campo per i cicli di fatturazione dell&#39;abbonamento
+    Aggiungi una selezione per i livelli di priorità dei clienti
+    Crea un campo per i cicli di fatturazione dell’abbonamento
 
 **Esempi di prompt:**
 
@@ -296,4 +296,3 @@ Combina la conoscenza di LLM con i dati della tua organizzazione:
 * [Creazione di moduli basati sull’intelligenza artificiale](forms-experience-builder-prompt-examples-library.md)
 * [Creazione di regole e logica di business](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Invio e integrazione di moduli](form-submission-integration.md)
-

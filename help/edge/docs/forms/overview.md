@@ -3,9 +3,9 @@ title: Panoramica di Edge Delivery Services per AEM Forms
 description: Crea e distribuisci moduli con prestazioni elevate su Adobe Experience Manager Edge Delivery Services, con particolare attenzione all’approccio di authoring dell’editor universale.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 ### Editor universale
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [Editor universale](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) è uno strumento di authoring visivo e di trascinamento per gli addetti al marketing e i designer che combina velocità e potenza di livello enterprise:
@@ -64,7 +64,7 @@ Alla fine, sarai in grado di scegliere il metodo di authoring adatto, comprender
 - Integrazione con Adobe Sign per le firme elettroniche.
 - Integrazione con Adobe Workfront Fusion per attivare scenari Adobe Workfront Fusion al momento dell’invio del modulo.
 - Integrazione con diverse origini dati per precompilare i moduli e inviare i dati.
-- Modello dati del modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
+- Modello dati modulo (FDM) per la definizione della struttura dei dati e delle interazioni con varie origini dati.
 - Possibilità di scegliere tra più azioni di invio per la gestione degli invii dei moduli, tra cui l’invio di dati a Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e molte altre origini dati.
 - Invia utilizzando le azioni di invio del servizio di invio moduli (FSS) o AEM Publish
 

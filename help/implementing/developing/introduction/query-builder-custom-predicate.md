@@ -1,13 +1,13 @@
 ---
 title: Implementazione di un valutatore del predicato personalizzato per Query Builder
-description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query sull’archivio dei contenuti
+description: Query Builder in AEM offre un modo semplice e personalizzabile per eseguire query nell’archivio dei contenuti
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ Questo documento descrive come estendere [Query Builder](query-builder-api.md) i
 
 ## Panoramica {#overview}
 
-[Query Builder](query-builder-api.md) offre un modo semplice per eseguire query nell&#39;archivio dei contenuti. AEM viene fornito con [un set di valutatori predicati](#query-builder-predicates.md) che consentono di eseguire query sui dati.
+[Query Builder](query-builder-api.md) offre un modo semplice per eseguire query nell&#39;archivio dei contenuti. AEM include [un set di valutatori predicati](#query-builder-predicates.md) che consentono di eseguire query sui dati.
 
 Tuttavia, potrebbe essere utile semplificare le query implementando un valutatore di predicati personalizzato che nasconda una certa complessità e garantisca una semantica migliore.
 
@@ -101,7 +101,7 @@ Il raggruppamento dei predicati di replica con un valutatore di predicati person
 
 >[!TIP]
 >
->La configurazione di nuovi progetti AEM, incluso l&#39;utilizzo di Maven, è spiegata in dettaglio da [l&#39;esercitazione WKND](develop-wknd-tutorial.md).
+>La configurazione di nuovi progetti AEM, incluso l&#39;utilizzo di maven, è spiegata in dettaglio da [l&#39;esercitazione WKND](develop-wknd-tutorial.md).
 
 Innanzitutto devi aggiornare le dipendenze Maven del progetto. `PredicateEvaluator` fa parte dell&#39;artefatto `cq-search`, pertanto deve essere aggiunto al file POM Maven.
 

@@ -3,9 +3,9 @@ title: Modifica di uno SPA esterno in AEM
 description: Questo documento descrive i passaggi consigliati per caricare un’applicazione a pagina singola indipendente in un’istanza di AEM, aggiungere sezioni di contenuto modificabili e abilitare l’authoring.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Questo documento descrive i passaggi consigliati per caricare un’applicazione 
 I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
-* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
+* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms è la base del progetto AEM, che viene aggiornato per includere l’applicazione a pagina singola esterna.
-   * Per gli esempi di questo documento, Adobe utilizza il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
+   * Per gli esempi di questo documento, Adobe utilizza il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Avere l’applicazione a pagina singola React funzionante ed esterna che desideri integrare a portata di mano.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}
@@ -38,7 +38,7 @@ I prerequisiti sono semplici.
 Innanzitutto, devi caricare l’applicazione a pagina singola esterna nel progetto AEM.
 
 1. Sostituisci `src` nella cartella dei progetti `/ui.frontend` con la cartella `src` dell&#39;applicazione React.
-1. Includere eventuali dipendenze aggiuntive nel file `/ui.frontend/package.json` dell&#39;app `package.json`.
+1. Includere eventuali dipendenze aggiuntive nel file `package.json` dell&#39;app `/ui.frontend/package.json`.
    * Verificare che le dipendenze di SPA SDK siano di [versioni consigliate](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
 1. Includere eventuali personalizzazioni nella cartella `/public`.
 1. Includere eventuali script o stili in linea aggiunti nel file `/public/index.html`.
@@ -373,9 +373,9 @@ Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto
 Il seguente materiale di riferimento può essere utile per comprendere le applicazioni a pagina singola nel contesto di AEM.
 
 * [Headful e headless in AEM](/help/implementing/developing/headful-headless.md)
-* [Archetipo Progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+* [Archetipo Progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
 * [Progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
 * [Guida introduttiva alle applicazioni a pagina singola in AEM con React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [Routing modello SPA](/help/implementing/developing/hybrid/routing.md)
+* [Indirizzamento del modello SPA](/help/implementing/developing/hybrid/routing.md)

@@ -1,17 +1,17 @@
 ---
-title: Estensione di Multi Site Manager
+title: Estensione di Multi-Site Manager
 description: Scopri come estendere le funzionalità di Multi Site Manager.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 0%
+source-wordcount: '2336'
+ht-degree: 1%
 
 ---
 
-# Estensione di Multi Site Manager {#extending-the-multi-site-manager}
+# Estensione di Multi-Site Manager {#extending-the-multi-site-manager}
 
 Questo documento spiega come estendere le funzionalità di Multi Site Manager e tratta i seguenti argomenti.
 
@@ -183,17 +183,14 @@ Per creare una configurazione di rollout:
 1. Aggiungi le seguenti proprietà a questo nodo:
 
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valore**: titolo di identificazione che verrà visualizzato nell&#39;interfaccia utente
 
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valore**: descrizione facoltativa.
 
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valore**: [Attivatore rollout](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) da utilizzare
       * `rollout`
@@ -565,7 +562,7 @@ Attiva la pagina **Prodotti** (inglese) del ramo di origine e osserva i messaggi
 
 ## Modifica dei nomi delle lingue e dei paesi predefiniti {#changing-language-names-and-default-countries}
 
-L’AEM utilizza un set predefinito di codici per lingua e paese.
+AEM utilizza un set predefinito di codici di lingua e paese.
 
 * Il codice lingua predefinito è il codice a due lettere minuscole, come definito dallo standard ISO-639-1.
 * Il codice predefinito del paese è il codice a due lettere minuscole o maiuscole, come definito dallo standard ISO 3166.
@@ -601,7 +598,7 @@ Per modificare le lingue:
 1. Fare clic su **Strumenti**, **Operazioni** e quindi su **Console Web**. Da questa console fare clic su **OSGi**, quindi su **Configurazione**.
 1. Individua e fai clic su **Day CQ WCM Language Manager** e modifica il valore di **Language List** in `/apps/wcm/core/resources/languages`, quindi fai clic su **Save**.
 
-   ![&#x200B; giorno CQ WCM Language Manager](assets/msm-language-manager.png)
+   ![ giorno CQ WCM Language Manager](assets/msm-language-manager.png)
 
 ## Configurazione dei blocchi MSM nelle proprietà della pagina {#configuring-msm-locks-on-page-properties}
 
@@ -639,7 +636,6 @@ Se una proprietà di pagina è soggetta a rollout e quindi, in caso di annullame
       * **Tipo**: `String`
       * **Valore**: contiene il nome della proprietà in esame ed è paragonabile al valore della proprietà `name`
          * Ad esempio, consulta
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Una volta definito `cq-msm-lockable`, l&#39;interruzione/chiusura della catena interagirà con MSM nel modo seguente:

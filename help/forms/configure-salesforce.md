@@ -3,13 +3,13 @@ title: Come si configura Salesforce in modelli di dati modulo preconfigurati per
 description: Scopri come integrare Salesforce con Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
 
 # Configurare Salesforce per AEM Forms {#configure-azure-storage}
 
@@ -59,6 +59,7 @@ Per configurare il servizio cloud [!DNL Salesforce], eseguire la procedura segue
 Un [!DNL Salesforce] Form Data Model (FDM) è disponibile nel server [!DNL AEM Forms] dopo che [hai impostato un progetto di sviluppo per Forms basato su Archetipo Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 Per accedere al modello dati modulo (FDM):
+
 1. Passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrazioni dati]**.
 1. Seleziona il nome della cartella, fai clic su **[!UICONTROL Salesforce Data Model]** e seleziona l&#39;icona Modifica ![Modifica](assets/edit.png) per visualizzare il modello dati del modulo (FDM).
 

@@ -4,8 +4,8 @@ description: In questa parte del Percorso per sviluppatori headless AEM, compren
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1881'
 ht-degree: 96%
@@ -147,7 +147,7 @@ Altre risorse:
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
 * [Sviluppo headless per AEM Sites as a Cloud Service](/help/headless/introduction.md): una rapida introduzione per orientare lo sviluppatore AEM Headless nell’utilizzo delle funzioni necessarie
 * [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/it?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
+* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): questo progetto GitHub include applicazioni di esempio che evidenziano le API GraphQL di AEM.
 * [Introduzione all’architettura di Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md): panoramica completa dell’architettura AEM
 * [Configurazione headless](/help/headless/introduction.md#getting-started): introduzione rapida alle funzioni AEM headless per gli utenti già esperti di AEM.

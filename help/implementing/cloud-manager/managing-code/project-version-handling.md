@@ -4,8 +4,8 @@ description: Per le distribuzioni negli ambienti di staging e produzione di AEM 
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
@@ -19,7 +19,7 @@ Per le distribuzioni negli ambienti di staging e produzione di AEM as a Cloud Se
 
 Questa versione viene visualizzata nella [pagina dei dettagli di esecuzione delle pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) e nella pagina dell’attività. Quando viene eseguita una build, il progetto Maven viene aggiornato per utilizzare questa versione e viene creato un tag nell’archivio Git con tale versione come nome.
 
-Se la versione del progetto originale soddisfa determinati criteri, la versione del progetto Maven aggiornata unirà la versione del progetto originale e quella generata da Cloud Manager. Tuttavia, il tag utilizza sempre la versione generata. Affinché tale unione si verifichi, la versione originale del progetto deve essere formata da esattamente tre segmenti di versione, ad esempio `1.0.0` o `1.2.3`, ma non `1.0` o `1`, mentre la versione originale non deve terminare con `-SNAPSHOT`.
+Se la versione del progetto originale soddisfa determinati criteri, nella versione del progetto Maven aggiornata verranno unite sia la versione del progetto originale che la versione generata da Cloud Manager. Tuttavia, il tag utilizza sempre la versione generata. Affinché tale unione si verifichi, la versione originale del progetto deve essere formata da esattamente tre segmenti di versione, ad esempio `1.0.0` o `1.2.3`, ma non `1.0` o `1`, mentre la versione originale non deve terminare con `-SNAPSHOT`.
 
 >[!IMPORTANT]
 >

@@ -1,18 +1,18 @@
 ---
-title: Gestire le mappature dei domini
+title: Gestire le mappature di dominio
 description: Scopri come utilizzare Cloud Manager per modificare, aggiornare o eliminare configurazioni CDN per un sito Edge Delivery o un ambiente Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
 
 ---
 
-# Gestire le mappature dei domini {#manage-domain-mappings}
+# Gestire le mappature di dominio {#manage-domain-mappings}
 
 Scopri come utilizzare Cloud Manager per modificare o eliminare le configurazioni CDN per un sito Edge Delivery o un ambiente Cloud Manager.
 

@@ -4,7 +4,7 @@ description: Il seguente tutorial illustra i passaggi necessari per creare un co
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 2%
@@ -30,16 +30,16 @@ Per completare questa esercitazione, sono necessari i seguenti elementi:
 
 1. Ambiente di sviluppo locale
 
-I passaggi del tutorial e le schermate vengono eseguiti utilizzando **CRXDE Lite**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=it).
+I passaggi del tutorial e le schermate vengono eseguiti utilizzando **CRXDE Lite**. È inoltre possibile utilizzare gli IDE per completare l&#39;esercitazione. Ulteriori informazioni sull&#39;utilizzo di un IDE per sviluppare [con AEM sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 
 ## Configurazione del progetto {#project-setup}
 
-Il codice sorgente di un progetto Screens viene in genere gestito come progetto Maven con più moduli. Per accelerare l&#39;esercitazione, è stato pregenerato un progetto utilizzando [Archetipo progetto AEM 13](https://github.com/adobe/aem-project-archetype). Consulta [Configurazione del progetto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=it) per ulteriori dettagli sulla creazione di un progetto con Archetipo progetto Maven AEM.
+Il codice sorgente di un progetto Screens viene in genere gestito come progetto Maven con più moduli. Per accelerare l&#39;esercitazione, è stato pregenerato un progetto utilizzando [Archetipo progetto AEM 13](https://github.com/adobe/aem-project-archetype). Consulta [Configurazione del progetto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) per ulteriori dettagli sulla creazione di un progetto con Archetipo progetto Maven AEM.
 
 1. Scarica e installa i seguenti pacchetti utilizzando [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp):
 
-[Ottieni file](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
+[Ottieni il file](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
 
    [Ottieni file](/help/screens-cloud/developing/assets/base-screens-weretail-runuiapps-001-snapshot.zip)
    **Facoltativamente** se si lavora con Eclipse o un altro IDE, scaricare il pacchetto di origine seguente. Distribuisci il progetto in un’istanza AEM locale utilizzando il comando Maven:
@@ -48,7 +48,7 @@ Il codice sorgente di un progetto Screens viene in genere gestito come progetto 
 
    Avvia progetto di esecuzione We.Retail di HelloWorld SRC Screens
 
-[Ottieni file](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
+[Ottieni il file](/help/screens-cloud/developing/assets/src-screens-weretail-run.zip)
 
 1. In [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp), verificare che siano installati i due pacchetti seguenti:
 
@@ -131,7 +131,7 @@ AEM Screens presenta alcuni vincoli interessanti che non sono necessariamente va
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   I componenti Screens richiedono due rendering diversi a seconda della [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=it#page-modes) utilizzata:
+   I componenti Screens richiedono due rendering diversi a seconda della [modalità di authoring](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) utilizzata:
 
    1. **Produzione**: modalità Anteprima o Pubblicazione (wcmmode=disabled)
    1. **Modifica**: utilizzato per tutte le altre modalità di creazione, ovvero modifica, progettazione, scaffolding, sviluppatore...
@@ -378,7 +378,7 @@ I componenti AEM Screens vengono riprodotti in modo diverso nelle modalità Modi
 
 ## Creare una pagina di progettazione {#design-page}
 
-AEM Screens utilizza [modelli di pagina statici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=it) e [configurazioni di progettazione](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=it) per le modifiche globali. Le configurazioni di progettazione vengono spesso utilizzate per configurare i componenti consentiti per Parsys su un canale. Una best practice consiste nell’archiviare queste configurazioni in un modo specifico per l’app.
+AEM Screens utilizza [modelli di pagina statici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) e [configurazioni di progettazione](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) per le modifiche globali. Le configurazioni di progettazione vengono spesso utilizzate per configurare i componenti consentiti per Parsys su un canale. Una best practice consiste nell’archiviare queste configurazioni in un modo specifico per l’app.
 
 Di seguito viene creata una pagina Progettazione dell&#39;esecuzione di We.Retail in cui sono memorizzate tutte le configurazioni specifiche del progetto.
 
@@ -548,10 +548,10 @@ Il video seguente mostra il componente finito e come può essere aggiunto a un c
 
 ## Codice finito {#finished-code}
 
-Di seguito è riportato il codice finito dell&#39;esercitazione. I pacchetti AEM compilati sono **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**. **SRC-screens-weretail-run-0.0.1.zip &#x200B;** è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
+Di seguito è riportato il codice finito dell&#39;esercitazione. I pacchetti AEM compilati sono **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**. **SRC-screens-weretail-run-0.0.1.zip** è il codice sorgente non compilato che può essere distribuito utilizzando Maven.
 
-[Ottieni file](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
+[Ottieni il file](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 
-[Ottieni file](/help/screens-cloud/developing/assets/screens-weretail-runuicontent-001-snapshot.zip)
+[Ottieni il file](/help/screens-cloud/developing/assets/screens-weretail-runuicontent-001-snapshot.zip)
 
-[Ottieni file](/help/screens-cloud/developing/assets/screens-weretail-run.zip)
+[Ottieni il file](/help/screens-cloud/developing/assets/screens-weretail-run.zip)

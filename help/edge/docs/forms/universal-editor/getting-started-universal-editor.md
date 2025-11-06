@@ -2,11 +2,11 @@
 title: Guida introduttiva a Edge Delivery Services per moduli AEM utilizzando l’editor universale
 description: Scopri come creare e pubblicare moduli ad alte prestazioni utilizzando Edge Delivery Services con l’authoring WYSIWYG dell’editor universale.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Per garantire un’esperienza fluida e di successo con Edge Delivery Services pe
 - **Familiarità con Git**: acquisisci dimistechezza nell’eseguire operazioni Git di base quali la clonazione degli archivi, l’impegno delle modifiche e l’invio degli aggiornamenti. Queste competenze sono fondamentali per il controllo delle origini e la collaborazione nel progetto.
 - **Conoscenze delle tecnologie web**: è consigliabile essere in grado di consiglia di utilizzare HTML, CSS e JavaScript. Queste tecnologie sono alla base della personalizzazione dei moduli e della risoluzione dei problemi.
 - **Node.js (versione 16 o successiva)**: Node.js è necessario per lo sviluppo locale e per l’esecuzione di strumenti di creazione. Assicurati che nel sistema sia installata la versione 16 o successiva.
-- **Gestione pacchetti (npm o yarn)**: per gestire le dipendenze e gli script del progetto sarà necessario npm (Gestione pacchetti nodi) o yarn.
+- **Gestore di pacchetti (npm o yarn)**: per gestire le dipendenze e gli script del progetto sarà necessario npm (Node Package Manager) o yarn.
 
 ### Esperienza pregressa consigliata
 

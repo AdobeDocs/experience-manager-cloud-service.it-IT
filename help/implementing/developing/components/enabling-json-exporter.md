@@ -3,11 +3,11 @@ title: Abilitazione dell’esportazione JSON per un componente
 description: I componenti possono essere adattati per generare l’esportazione JSON dei contenuti in base a un framework modellatore.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -72,7 +72,7 @@ L&#39;interfaccia del modello deve essere annotata correttamente per definire qu
 
 ## Esempio {#example}
 
-[I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) supportano l&#39;esportazione JSON e possono essere utilizzati come riferimento.
+[I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) supportano l&#39;esportazione JSON e possono essere utilizzati come riferimento.
 
 Ad esempio, consulta l’implementazione del modello Sling del componente core Immagine e la relativa interfaccia con annotazioni.
 
@@ -81,4 +81,4 @@ Ad esempio, consulta l’implementazione del modello Sling del componente core I
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

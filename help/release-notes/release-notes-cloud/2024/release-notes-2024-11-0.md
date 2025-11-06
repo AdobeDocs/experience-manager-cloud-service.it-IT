@@ -4,7 +4,7 @@ description: Note sulla versione 2024.11.0 di [!DNL Adobe Experience Manager] as
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 98%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di giugno 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.11.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -114,11 +114,11 @@ In queste note sulla versione sono elencate le innovazioni incluse nella version
 
 #### Moduli adattivi e moduli HTML5
 
-* **[Creare moduli adattivi basati su un modello XFA esistente](/help/forms/create-adaptive-form-using-xfa-templates.md)**: è ora possibile creare un modulo adattivo basato su Componenti core utilizzando modelli di modulo XFA (file *.XDP). Questa funzionalità consente ai clienti AEM Forms On-Premise che già investono nella tecnologia XFA di adottare AEM Forms as a Cloud Service.
+* **[Creare moduli adattivi basati su un modello XFA esistente](/help/forms/create-adaptive-form-using-xfa-templates.md)**: è ora possibile creare un modulo adattivo basato su Componenti core utilizzando modelli per moduli XFA (file *.XDP). Questa funzionalità consente ai clienti AEM Forms On-Premise che già investono nella tecnologia XFA di adottare AEM Forms as a Cloud Service.
 
-* **Moduli HTML5 (moduli web basati su XFA)**: ora la clientela di AEM Forms On-Premise che utilizza la tecnologia XFA può passare facilmente ad AEM Forms as a Cloud Service mantenendo la propria esperienza utente esistente con i moduli HTML5 (moduli web basati su XFA). Questa funzionalità consente di eseguire il rendering dei modelli di modulo XFA in formato HTML5, rendendo i moduli accessibili su dispositivi che non supportano moduli PDF basati su XFA.
+* **Moduli HTML5 (moduli web basati su XFA)**: ora la clientela di AEM Forms On-Premise che utilizza la tecnologia XFA può passare facilmente ad AEM Forms as a Cloud Service mantenendo la propria esperienza utente esistente con i moduli HTML5 (moduli web basati su XFA). Questa funzionalità consente di eseguire il rendering dei modelli per moduli XFA in formato HTML5, rendendo i moduli accessibili su dispositivi che non supportano moduli PDF basati su XFA.
 
-  ![HTML Forms (moduli web basati su XFA)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
+  ![Moduli HTML (moduli web basati su XFA)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
 
 * **[Supporto di stringhe codificate Base64 per file allegati](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: il componente File allegati nei moduli adattivi basati su componenti core ora include un’opzione per inviare i file allegati come stringhe codificate Base64.
@@ -173,6 +173,7 @@ Gli sviluppatori possono integrare in modo approfondito le funzionalità di AEM 
 Scopri di più sulle [API AEM basate su OpenAPI](/help/implementing/developing/open-api-based-apis.md) e prova un [tutorial end-to-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) che ne illustra la configurazione e l’utilizzo.
 
 In concreto, gli endpoint API elencati di seguito sono disponibili come parte di un programma per i primi utilizzatori. Per partecipare, inviare un’e-mail all’indirizzo [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con la descrizione di come si intende utilizzarli.
+
 * [API per frammenti di contenuto di Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [API di Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * API per Sites e cartelle di Assets
