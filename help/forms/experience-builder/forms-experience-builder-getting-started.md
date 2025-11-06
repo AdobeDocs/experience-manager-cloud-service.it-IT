@@ -6,10 +6,10 @@ index: false
 hidefromtoc: true
 role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 3%
 
 ---
 
@@ -61,11 +61,10 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 
 **Esempio:**
 
-    Crea un modulo di feedback dei clienti con:
-    &#x200B;- Valutazione del prodotto (1-5 stelle)
-    &#x200B;- Campo di commento per feedback dettagliato
-    &#x200B;- E-mail del cliente (facoltativo)
-    &#x200B;- Invia a notifica e-mail
+    Crea un modulo di feedback del cliente con:
+    - Valutazione del prodotto (1-5 stelle)
+    - Campo di commento per feedback dettagliato
+    - E-mail del cliente (facoltativo)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +74,7 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 
 Trasformare i documenti esistenti in moduli digitali interattivi.
 
-Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
+Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
 
 **Quando utilizzare:**
 
@@ -131,9 +130,9 @@ Includi funzionalità aggiuntive:
 
     Aggiungi due elenchi a discesa
     
-    &#x200B;- tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
+    - tipo di richiesta con opzioni: &quot;Domanda generale&quot;, &quot;Richiesta di supporto&quot;, &quot;Interrogazione vendite&quot;, &quot;Partnership&quot;
     
-    &#x200B;- livello di urgenza con opzioni (Basso, Medium, Alto)
+    - livello di urgenza con opzioni (Basso, Medium, Alto)
 
 
 ![È stato aggiunto un elenco a discesa utilizzando i prompt del linguaggio naturale in Forms Experience Builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +166,9 @@ Utilizza `@fieldName` per fare riferimento a campi specifici:
 
 Descrivi cosa vuoi in inglese semplice:
 
-    &#x200B;- Aggiungi una sezione per le informazioni sulla società
-    &#x200B;- Crea un menu a discesa per la selezione del reparto
-    &#x200B;- Includi un caricamento di file per la ripresa
-    &#x200B;- Configura le notifiche e-mail quando il modulo viene inviato
+    - Aggiungi una sezione per le informazioni sulla società
+    - Crea un menu a discesa per la selezione del reparto
+    - Includi un caricamento di file per la ripresa
 
 ### Generazione incrementale {#build-incrementally}
 
@@ -190,55 +188,53 @@ Inizia con semplicità e aggiungi gradualmente complessità:
 **Modulo di contatto di base:**
 
     Crea un modulo di contatto con:
-    &#x200B;- Nome (obbligatorio)
-    &#x200B;- E-mail (obbligatorio, convalidato)
-    &#x200B;- Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
-    &#x200B;- Messaggio (obbligatorio, su più righe)
-    &#x200B;- Pulsante Invia
+    - Nome (obbligatorio)
+    - E-mail (obbligatorio, convalidato)
+    - Menu a discesa Oggetto (Generale, Supporto, Vendite, Partnership)
+    - Messaggio (obbligatorio, su più righe)
 
 **Modulo feedback cliente:**
 
-    Crea un modulo di feedback dei clienti con:
-    &#x200B;- Valutazione del prodotto (1-5 stelle)
-    &#x200B;- Campo di commento per feedback dettagliato
-    &#x200B;- E-mail del cliente (facoltativo)
-    &#x200B;- Invia a notifica e-mail
+    Crea un modulo di feedback del cliente con:
+    - Valutazione del prodotto (1-5 stelle)
+    - Campo di commento per feedback dettagliato
+    - E-mail del cliente (facoltativo)
 
 ### Moduli di registrazione e onboarding {#registration-onboarding-forms}
 
 **Registrazione utente:**
 
     Crea un modulo di registrazione utente con:
-    &#x200B;- Informazioni personali (nome, e-mail, telefono)
-    &#x200B;- Preferenze account (newsletter, notifiche)
-    &#x200B;- Accettazione termini e condizioni
-    &#x200B;- Creazione password con convalida di forza
+    - Informazioni personali (nome, e-mail, telefono)
+    - Preferenze account (newsletter, notifiche)
+    - Accettazione termini e condizioni
+    - Creazione password con convalida di forza
 
 **Onboarding dei dipendenti:**
 
     Crea un modulo per l&#39;onboarding dei dipendenti con:
-    &#x200B;- Dati personali e informazioni di contatto
-    &#x200B;- Informazioni sull&#39;impiego e data di inizio
-    &#x200B;- Caricamenti di documenti (curriculum, ID, moduli fiscali)
-    &#x200B;- Selezione di benefit e preferenze
+    - Dati personali e informazioni di contatto
+    - Informazioni sull&#39;impiego e data di inizio
+    - Caricamenti di documenti (curriculum, ID, moduli fiscali)
+    - Selezione di benefit e preferenze
 
 ### Moduli di indagine e valutazione {#survey-assessment-forms}
 
 **Sondaggio sulla soddisfazione dei clienti:**
 
     Crea un sondaggio sulla soddisfazione dei clienti con:
-    &#x200B;- Valutazione complessiva (scala da 1 a 10)
-    &#x200B;- Valutazione delle categorie (prodotto, servizio, supporto)
-    &#x200B;- Sezioni di feedback aperte
-    &#x200B;- Informazioni demografiche (facoltative)
+    - Valutazione complessiva (scala da 1 a 10)
+    - Valutazione delle categorie (prodotto, servizio, supporto)
+    - Sezioni di feedback aperte
+    - Informazioni demografiche (facoltative)
 
 **Valutazione delle abilità:**
 
     Crea un modulo di valutazione delle abilità con:
-    &#x200B;- Categorie di abilità con livelli di esperienza
-    &#x200B;- Durata dell&#39;esperienza per ogni abilità
-    &#x200B;- Informazioni sulla certificazione e sulla formazione
-    &#x200B;- Autovalutazione e obiettivi
+    - Categorie di abilità con livelli di esperienza
+    - Durata dell&#39;esperienza per ogni abilità
+    - Informazioni sulla certificazione e sulla formazione
+    - Autovalutazione e obiettivi
 
 ## Test e convalida {#testing-validation}
 
@@ -275,21 +271,29 @@ Prima di distribuire un modulo:
     Convalida del tipo di file aggiunto: sono consentiti solo PDF, DOC e DOCX per @resume
     Aggiungi limite dimensione file: massimo 5 MB per @resume
 
-## Passaggi successivi {#next-steps}
+<!-- 
 
-Ora che conosci le nozioni di base, scopri questi argomenti avanzati:
+## Next steps {#next-steps}
 
-* **[Campi avanzati migliorati LLM](forms-experience-builder-llm-smart-fields.md)** - Crea campi con opzioni precompilate utilizzando la conoscenza IA
-* **[Creazione di moduli basati su IA](forms-experience-builder-prompt-examples-library.md)** - Modelli ed esempi di prompt avanzati
-* **[Importazione e conversione intelligenti](intelligent-import-conversion.md)** - Trasforma i documenti esistenti in moduli
-* **[Invio e integrazione dei moduli](form-submission-integration.md)** - Connettere i moduli ai sistemi aziendali
+Now that you understand the basics, explore these advanced topics:
+
+* **[LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)** - Create fields with pre-populated options using AI knowledge
+* **[AI-powered form creation](forms-experience-builder-prompt-examples-library.md)** - Advanced prompt patterns and examples
+* **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
+* **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
+
+-->
 
 
 ## Articoli correlati
 
 * [Panoramica di Forms Experience Builder](product-overview.md)
-* [Campi avanzati migliorati LLM](forms-experience-builder-llm-smart-fields.md)
-* [Creazione di moduli basati sull’intelligenza artificiale](forms-experience-builder-prompt-examples-library.md)
-* [Importazione e conversione intelligenti](intelligent-import-conversion.md)
-* [Invio e integrazione di moduli](form-submission-integration.md)
-* [Domande frequenti](forms-experience-builder-frequently-asked-questions.md)
+
+<!-- 
+* [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
+* [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
+* [Intelligent import and conversion](intelligent-import-conversion.md)
+* [Form submission and integration](form-submission-integration.md)
+* [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->

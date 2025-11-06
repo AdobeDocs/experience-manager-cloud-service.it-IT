@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -171,9 +171,11 @@ Di seguito sono riportati esempi reali di ciò che è possibile realizzare con u
 "Update the layout to match the attached wireframe"
 ```
 
-### Invio e integrazione
+<!-- 
 
-**Invio di base:**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -181,13 +183,15 @@ Di seguito sono riportati esempi reali di ciò che è possibile realizzare con u
 "Redirect to a thank you page"
 ```
 
-**Integrazione avanzata:**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## Utilizzo degli allegati
 
@@ -282,8 +286,11 @@ Digita `/` per visualizzare le scelte rapide disponibili:
 | `/update-field` | Modificare le proprietà del campo | `/update-field @email to be required` |
 | `/create-rule` | Aggiungere un comportamento dinamico | `/create-rule show @spouse if married` |
 | `/create-panel` | Aggiungere contenitori di campi | `/create-panel Personal Information` |
-| `/configure-submit` | Configurare l’invio di un modulo | `/configure-submit to email support` |
 | `/help` | Ottenere assistenza | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### Sintassi di riferimento del campo
 
