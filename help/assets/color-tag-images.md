@@ -94,7 +94,7 @@ Per aggiungere il componente Tag colore avanzati all’editor modulo schema meta
 
 1. Seleziona il nome dello schema e fai clic su **[!UICONTROL Modifica]**.
 
-1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati ****.
+1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati **&#x200B;**.
 
 1. Fare clic sul **[!UICONTROL Campo tag colore avanzato]** nell&#39;**[!UICONTROL Editor modulo schema metadati]**.
 

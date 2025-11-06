@@ -127,7 +127,7 @@ Puoi accedere alle variabili di ambiente e ai segreti tramite XML nel modo segue
 
 `${env.VARIABLE_NAME}`
 
-Per un esempio di utilizzo di entrambi i tipi di variabili in un file [, vedere ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)Configurazione del progetto`pom.xml`.
+Per un esempio di utilizzo di entrambi i tipi di variabili in un file [, vedere &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories)Configurazione del progetto`pom.xml`.
 
 Per ulteriori informazioni, consulta anche la [documentazione Maven ufficiale](https://maven.apache.org/settings.html#quick-overview).
 

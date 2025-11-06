@@ -24,7 +24,7 @@ Scopri come modificare [le proprietà di una pagina](/help/sites-cloud/authoring
 
 È possibile modificare le proprietà di pagina da diverse posizioni in AEM.
 
-* [Dalla sezione ](#from-the-sites-console)
+* [Dalla sezione &#x200B;](#from-the-sites-console)
 * [Dall’Editor pagina](#from-the-page-editor)
 * [Dall’editor universale](#from-the-universal-editor)
 

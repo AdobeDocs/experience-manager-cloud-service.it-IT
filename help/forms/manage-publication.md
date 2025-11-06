@@ -53,7 +53,7 @@ Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Pubblic
    Quando fai clic sul pulsante **[!UICONTROL Annulla pubblicazione]**, viene visualizzata la finestra di dialogo **Annulla pubblicazione risorsa**.
 1. Fai clic su **[!UICONTROL Annulla pubblicazione]** per avviare il processo di annullamento della pubblicazione
 
-   ![Rimuovi ](/help/forms/assets/unpublish-asset.png)
+   ![Rimuovi &#x200B;](/help/forms/assets/unpublish-asset.png)
 
    Dopo aver annullato la pubblicazione del modulo e delle risorse correlate, viene visualizzata la finestra di dialogo **Operazione riuscita**.
 1. Fai clic su **Chiudi**.

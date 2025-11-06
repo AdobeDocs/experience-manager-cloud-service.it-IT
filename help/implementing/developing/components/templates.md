@@ -58,7 +58,7 @@ La creazione di modelli modificabili viene eseguita principalmente con la consol
 
 Quando crei un modello modificabile:
 
-1. Crea una cartella [ per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
+1. Crea una cartella [&#x200B; per i modelli](#template-folders). Questo non è obbligatorio, ma è una best practice consigliata.
 1. Seleziona un tipo di [modello](#template-type). Viene copiato per creare la [definizione modello](#template-definitions).
 
    >[!NOTE]

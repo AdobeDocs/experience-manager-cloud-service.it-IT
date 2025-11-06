@@ -95,7 +95,7 @@ Le funzionalità di base dell&#39;editor Rich Text vengono attivate o disattivat
 
 Nella tabella seguente sono elencati i plug-in correnti:
 
-* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1}.](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)
+* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1&rbrace;.](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin)
 * Valori consentiti per la proprietà `features`.
 * Descrizione delle funzionalità fornite dal plug-in.
 
@@ -123,7 +123,7 @@ Nella tabella seguente sono elencati i plug-in correnti:
 
 ## Comprendere i percorsi e le posizioni di configurazione {#understand-the-configuration-paths-and-locations}
 
-La modalità [ di modifica dell&#39;editor Rich Text e l&#39;interfaccia](#editingmodes) fornita agli autori determinano il percorso per i dettagli di configurazione quando si attivano [i plug-in dell&#39;editor Rich Text](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
+La modalità [&#x200B; di modifica dell&#39;editor Rich Text e l&#39;interfaccia](#editingmodes) fornita agli autori determinano il percorso per i dettagli di configurazione quando si attivano [i plug-in dell&#39;editor Rich Text](configure-rich-text-editor-plug-ins.md#activateplugin). Le posizioni sono:
 
 * Modalità in linea: `cq:editConfig/cq:inplaceEditing`.
 * Modalità a schermo intero: `cq:editConfig/cq:inplaceEditing`.

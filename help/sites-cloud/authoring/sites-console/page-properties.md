@@ -259,7 +259,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
 ## Anteprima {#preview}
 
-Quando un ambiente di anteprima [](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
+Quando un ambiente di anteprima [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
 
 * **URL anteprima** - URL utilizzato per accedere al contenuto nell&#39;ambiente di anteprima
 

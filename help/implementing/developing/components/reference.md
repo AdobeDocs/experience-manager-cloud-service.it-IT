@@ -181,7 +181,7 @@ Un componente è un nodo di tipo `cq:Component` e presenta le proprietà e i nod
 | `jcr:title` | `String` | Titolo del componente. |
 | `sling:resourceSuperType` | `String` | Con questa impostazione, il componente eredita da questo componente. |
 | `component.html` | `nt:file` | Questo è il file di script HTL del componente. |
-| `cq:icon` | `String` | Questo valore punta all&#39;icona [ del componente](#component-icon) e viene visualizzato nel browser Componenti. |
+| `cq:icon` | `String` | Questo valore punta all&#39;icona [&#x200B; del componente](#component-icon) e viene visualizzato nel browser Componenti. |
 
 Se osservi il componente **Testo**, puoi vedere diversi di questi elementi:
 

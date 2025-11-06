@@ -36,4 +36,4 @@ Nella tabella seguente sono descritti gli scenari comuni delle soluzioni disponi
 
 >[!NOTE]
 >
->I programmi di produzione [ possono essere modificati ma non eliminati](editing-programs.md).
+>I programmi di produzione [&#x200B; possono essere modificati ma non eliminati](editing-programs.md).
