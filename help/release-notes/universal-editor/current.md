@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.10.30 dell’editor universale
-description: Queste sono le note sulla versione 2025.10.30 dell’editor universale.
+title: Note sulla versione 2025.11.06 dell’editor universale
+description: Queste sono le note sulla versione 2025.11.06 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 58%
+source-wordcount: '256'
+ht-degree: 50%
 
 ---
 
 
-# Note sulla versione 2025.10.30 dell’editor universale {#release-notes}
+# Note sulla versione 2025.11.06 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 30 ottobre 2025 di Universal Editor.
+Queste sono le note sulla versione del 6 novembre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ Queste sono le note sulla versione del 30 ottobre 2025 di Universal Editor.
 >[!TIP]
 >
 >Per le note sulla versione corrente di Adobe Experience Manager as a Cloud Service, consulta [questa pagina](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
-## Novità {#what-is-new}
-
-* [Il nuovo editor Rich Text](#new-rte) ora può inserire immagini.
-   * Questa funzionalità è disabilitata e deve essere abilitata in modo esplicito tramite una definizione di filtro [.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -39,10 +34,12 @@ Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra
 
 ## Altri miglioramenti {#other-improvements}
 
-* L’evento di aggiornamento viene ora informato se l’azione è stata annullata.
-* La stringa `No results` ora dipende dalle impostazioni locali del browser nei tag di Universal Editor.
-* È stata corretta un’interruzione di riga aggiuntiva nel pulsante Publish di Universal Editor.
-* La pulizia è stata effettuata per patch API.
-* Il pulsante Seleziona contenuto è ora visibile in Safari.
-* Compilazione RPM corretta.
-* Aggiornamento CORS per evitare di aggiornare nuovamente il testo modificato dopo il salvataggio.
+* È ora possibile eliminare correttamente i campi di metadati `og:title`.
+* È stato risolto un problema di navigazione che si verificava quando un utente modificava la barra della posizione nell’editor del browser in modo che le modifiche venissero applicate correttamente e l’editor e/o l’app ora passasse all’URL richiesto.
+* La risoluzione del modello di campo è stata corretta e l’editor utilizza il modello del componente, se presente.
+* Il componentId è ora incluso nell’azione /add.
+* È stata corretta la possibilità di eliminare alcune proprietà di metadati che in precedenza non era possibile rimuovere.
+* Il recupero non elaborato ora viene eseguito in modo condizionale per xwalk quando non è impostato dal plug-in AEM.
+* La gestione MSM dei frammenti di contenuto con l’editor Rich Text è stata corretta.
+* L&#39;evidenziazione delle immagini in un&#39;immagine è ora supportata.
+
