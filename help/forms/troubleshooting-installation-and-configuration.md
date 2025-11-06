@@ -31,7 +31,7 @@ Per abilitare l&#39;opzione **[!UICONTROL Forms]**:
 
    ![Selezionare l&#39;opzione Forms](assets/installation-configuration-select-forms-option.png)
 
-1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
+1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=it#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
 
 Dopo la generazione e la distribuzione della pipeline, l&#39;opzione **[!UICONTROL Forms]** nella pagina **[!UICONTROL Navigazione]**.
 

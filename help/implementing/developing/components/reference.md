@@ -17,7 +17,7 @@ I componenti sono alla base della creazione di un’esperienza in AEM. I [Compon
 
 >[!TIP]
 >
->Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere quindi familiarità con i [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e l&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview).
+>Prima di fare riferimento a questo documento, assicurati di aver completato l&#39;[esercitazione WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e di avere quindi familiarità con i [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e l&#39;[Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 Poiché l’esercitazione WKND copre la maggior parte dei casi d’uso, questo documento è inteso solo come supplemento a tali risorse. Fornisce informazioni tecniche approfondite sulla struttura e la configurazione dei componenti in AEM e non intende essere una guida introduttiva.
 
@@ -39,7 +39,7 @@ Prima di iniziare a configurare o codificare il componente, è necessario chiede
 
 ### Riutilizzo dei componenti esistenti {#reusing-components}
 
-Prima di dedicare tempo alla creazione di un componente completamente nuovo, è consigliabile personalizzare o estendere i componenti esistenti. [I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offrono una suite di componenti flessibili, solidi e testati pronti per la produzione.
+Prima di dedicare tempo alla creazione di un componente completamente nuovo, è consigliabile personalizzare o estendere i componenti esistenti. [I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) offrono una suite di componenti flessibili, solidi e testati pronti per la produzione.
 
 #### Estensione dei Componenti core {#extending-core-components}
 
@@ -65,8 +65,8 @@ Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/it/do
 
 Questa logica (facoltativa) può essere implementata in diversi modi e viene richiamata da HTL con comandi specifici:
 
-* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
-* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
+* Utilizzo di Java - [Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=it) per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata. Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
+* Utilizzo di JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=it) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
 * Utilizzo delle librerie lato client: i siti web moderni si basano in larga misura sull’elaborazione lato client guidata da codici JavaScript e CSS complessi. Per ulteriori informazioni, vedere il documento [Utilizzo delle librerie lato client in AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Struttura dei componenti {#structure}

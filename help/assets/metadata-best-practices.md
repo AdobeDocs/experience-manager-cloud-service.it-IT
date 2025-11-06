@@ -97,7 +97,7 @@ Determina da dove provengono le informazioni ed esamina i dettagli della strateg
 
 >[!NOTE]
 >
->Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
+>Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=it).
 
 ### Coerenza con la strategia per i metadati
 
@@ -138,7 +138,7 @@ Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
    1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
-  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
 
 * **Campi metadati personalizzati:** Personalizza i campi metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca. Scopri [come modificare o aggiungere metadati personalizzati](meta-edit.md) in Experience Manager Assets.
 
@@ -168,4 +168,4 @@ Esaminare la catena di fornitura dei contenuti per individuare le origini dei me
 
 Comunica tempestivamente obiettivi, progressi, tappe fondamentali e sfide per ricevere il contributo e la cooperazione di tutte le parti interessate. Incoraggiare la collaborazione all&#39;interno dell&#39;organizzazione per creare processi efficienti e metadati preziosi.
 
-Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) per gestire in modo efficace i metadati di Experience Manager.
+Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=it) per gestire in modo efficace i metadati di Experience Manager.

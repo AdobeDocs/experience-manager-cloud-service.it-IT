@@ -72,7 +72,7 @@ L&#39;interfaccia del modello deve essere annotata correttamente per definire qu
 
 ## Esempio {#example}
 
-[I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) supportano l&#39;esportazione JSON e possono essere utilizzati come riferimento.
+[I Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) supportano l&#39;esportazione JSON e possono essere utilizzati come riferimento.
 
 Ad esempio, consulta l’implementazione del modello Sling del componente core Immagine e la relativa interfaccia con annotazioni.
 
@@ -81,4 +81,4 @@ Ad esempio, consulta l’implementazione del modello Sling del componente core I
 * [Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Authoring con frammenti di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Componente frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)

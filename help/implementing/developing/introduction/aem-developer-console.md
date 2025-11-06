@@ -106,5 +106,5 @@ Gli sviluppatori possono accedere alle funzioni descritte di seguito:
 
 Per i programmi di produzione, il &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console controlla l’accesso ad AEM as a Cloud Service Developer Console. Per i programmi sandbox, qualsiasi utente con un profilo di prodotto che concede l’accesso ad AEM può utilizzare Developer Console. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e l’accesso al browser dell’archivio. Per visualizzare i dati dei servizi Author e Publish, gli utenti devono essere assegnati anche al profilo di prodotto Utenti AEM o Amministratori AEM per entrambi i servizi.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 

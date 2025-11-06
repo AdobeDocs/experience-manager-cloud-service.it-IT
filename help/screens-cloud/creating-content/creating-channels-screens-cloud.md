@@ -22,7 +22,7 @@ Questo documento spiega come creare e gestire i canali per il progetto AEM Scree
 
 * informazioni su come creare canali per il provider di contenuti Screens
 * gestire e modificare i contenuti nei canali
-* gestisci la pianificazione di assegnazione e attivazione per i canali in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
+* gestisci la pianificazione di assegnazione e attivazione per i canali in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=it)
 
 ## Passaggi per creare un nuovo canale di sequenza in Screens as a Cloud Service {#create-new-channel}
 
