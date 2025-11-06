@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Scopri cosa sono le applicazioni App Builder front-end, comprese le opzioni di inizializzazione dei progetti e Adobe Spectrum.
 
->[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346316/?captions=ita&quality=12&learn=on)
 
 ## Creazione di applicazioni App Builder front-end
 
 Scopri come creare un’applicazione App Builder front-end utilizzando React e le azioni di Adobe Runtime dall’interno dell’applicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409738/?captions=ita&quality=12&learn=on)

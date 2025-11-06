@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Scopri le opzioni di storage di App Builder e perché lo storage è importante in un’applicazione App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343615/?captions=ita&quality=12&learn=on)
 
 ## Utilizzo della libreria di archiviazione dello stato
 
 Scopri come installare la libreria di archiviazione di stato nell’applicazione App Builder e utilizzarla per gestire lo stato.
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343554/?captions=ita&quality=12&learn=on)
 
 ## Utilizzo della libreria di archiviazione file
 
 Scopri come installare la libreria di archiviazione file nell’applicazione App Builder per salvare, recuperare ed eliminare i dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343561/?captions=ita&quality=12&learn=on)

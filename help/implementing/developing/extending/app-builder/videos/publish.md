@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come inviare l’applicazione App Builder per la revisione e l’approvazione e come eseguire un’applicazione appena pubblicata.
 
->[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343373/?captions=ita&quality=12&learn=on)

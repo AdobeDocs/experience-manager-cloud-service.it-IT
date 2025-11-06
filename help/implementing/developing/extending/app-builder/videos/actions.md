@@ -22,22 +22,22 @@ ht-degree: 0%
 
 Scopri Adobe I/O Runtime, le azioni e come crearle.
 
->[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343388/?captions=ita&quality=12&learn=on)
 
 ## Attivazione, sequenza, trigger e regole
 
 Scopri come le azioni sono correlate ad attivazioni, azioni web, trigger e regole.
 
->[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343398/?captions=ita&quality=12&learn=on)
 
 ## Azioni nelle applicazioni App Builder
 
 Scopri come creare azioni che possono essere utilizzate come applicazioni App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343393/?captions=ita&quality=12&learn=on)
 
 ## Creare un’azione
 
 Scopri come creare un’azione App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343403/?captions=ita&quality=12&learn=on)

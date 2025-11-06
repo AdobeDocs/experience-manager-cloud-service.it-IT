@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri cosa significa distribuire per App Builder e come distribuire l’applicazione App Builder utilizzando Adobe I/O CLI.
 
->[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343375/?captions=ita&quality=12&learn=on)
