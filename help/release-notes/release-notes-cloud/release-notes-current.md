@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 67%
+source-wordcount: '1871'
+ht-degree: 60%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Editor universale per moduli adattivi e frammenti di moduli**
 
-Universal Editor ora offre un’esperienza di authoring unificata per la creazione di Forms adattivi e frammenti di moduli riutilizzabili. Gli autori possono progettare visivamente i moduli, configurare azioni di invio e integrare la convalida reCAPTCHA in un ambiente WYSIWYG intuitivo.
+Universal Editor ora offre un’esperienza di authoring unificata per la creazione di Forms adattivi e frammenti di moduli riutilizzabili. Gli autori possono progettare i moduli visivamente all’interno di un ambiente WYSIWYG intuitivo, sfruttando potenti estensioni e funzionalità di invio complete. L’editor integra la convalida reCAPTCHA per una maggiore sicurezza, fornisce servizi di precompilazione per ridurre l’input manuale e supporta la progettazione reattiva su tutti i dispositivi.
+
+**Estensioni disponibili:**
+
+* **Editor regole**: l&#39;editor di regole visive consente agli autori di moduli di aggiungere un comportamento dinamico ai campi modulo senza codificare, supportare regole basate su eventi, convalida immediata e gestione degli errori.
+* **Proprietà modulo**: procedura guidata che consente agli utenti di configurare le azioni di invio, il servizio di precompilazione, il messaggio di ringraziamento e altri comportamenti relativi ai moduli direttamente all&#39;interno dell&#39;editor.
+* **Source dati modulo e riferimento associazione**: l&#39;estensione dell&#39;origine dati consente agli autori dei moduli di aggiungere componenti associati a un modello dati direttamente in un modulo adattivo e selezionare un riferimento associazione da una struttura ad albero per tutti i componenti.
+
+**Azioni di invio supportate:**
+
+Universal Editor supporta una gamma completa di flussi di lavoro per l’invio, tra cui Azione di invio personalizzata, Invia a Microsoft SharePoint, Invia a Microsoft OneDrive, Invia ad Azure Blob Storage, Invia a endpoint REST, Richiama un flusso di lavoro AEM, Richiama un flusso Power Automate, Invia a Marketo Engage, Invia a Adobe Experience Platform (AEP), Invia a foglio di calcolo, Invia utilizzando il modello dati del modulo (FDM), Invia a Workfront Fusion e Invia e-mail.
+
+Per informazioni dettagliate, vedere la [documentazione di Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Per informazioni sulla configurazione delle azioni di invio, vedere [Azione di invio modulo adattivo](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
