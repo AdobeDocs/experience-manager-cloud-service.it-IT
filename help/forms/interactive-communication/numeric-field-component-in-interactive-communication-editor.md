@@ -1,10 +1,10 @@
 ---
-title: Oggetto campo numerico nell’editor di comunicazione interattiva
-description: Oggetto campo numerico nell’editor di comunicazione interattiva in AEM Forms per consentire agli autori di raccogliere input numerici dagli utenti in un formato controllato.
+title: Componente Campo numerico nell’editor di comunicazione interattiva
+description: Componente Campo numerico nell’editor di comunicazioni interattive in AEM Forms per consentire agli autori di raccogliere input numerici dagli utenti in un formato controllato.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 7%
@@ -12,7 +12,7 @@ ht-degree: 7%
 ---
 
 
-# Oggetto campo numerico nell’editor di comunicazione interattiva
+# Componente Campo numerico nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ Gli autori possono inserire campi numerici all’interno di contenitori o sottom
 
 - Mantieni l’aspetto coerente e la tipografia per rispettare le linee guida del brand.
 
-L&#39;oggetto **Numeric Field** nell&#39;editor di comunicazioni interattive è uno strumento preciso e affidabile per la raccolta di dati basati sulle cifre. Grazie alla formattazione affidabile, ai controlli di visibilità e alle opzioni di associazione dei dati, gli input numerici vengono acquisiti in modo chiaro e integrati perfettamente nei moduli digitali. Se formattato e configurato correttamente, migliora notevolmente l’usabilità dei moduli e la precisione complessiva dei dati.
+Il componente **Campo numerico** nell&#39;editor di comunicazioni interattive è uno strumento preciso e affidabile per la raccolta dati basata sulle cifre. Grazie alla formattazione affidabile, ai controlli di visibilità e alle opzioni di associazione dei dati, gli input numerici vengono acquisiti in modo chiaro e integrati perfettamente nei moduli digitali. Se formattato e configurato correttamente, migliora notevolmente l’usabilità dei moduli e la precisione complessiva dei dati.
 
 

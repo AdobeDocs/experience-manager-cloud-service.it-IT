@@ -4,10 +4,10 @@ description: Supporto per la modifica XDP nell’Editor di comunicazione interat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 13%
+source-wordcount: '433'
+ht-degree: 12%
 
 ---
 
@@ -25,6 +25,20 @@ ht-degree: 13%
 ## Introduzione
 
 L&#39;editor di comunicazione interattiva (IC) ora offre il supporto di **per la modifica dei file XDP (XML Data Package)** nell&#39;ambiente di authoring. Questo miglioramento consente agli autori di gestire, modificare e gestire i modelli XDP senza problemi, senza dover ricorrere a strumenti esterni. Grazie a questa funzionalità, gli utenti possono caricare, visualizzare e modificare i file XDP direttamente nell’editor IC, consentendo un flusso di lavoro unificato ed efficiente dal punto di vista della progettazione alla consegna.
+
+## Come utilizzare il supporto per la modifica XDP nell’editor di comunicazione interattiva
+
+![Trova documento IC](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Passa a **Forms > Forms e documenti**.
+
+1. Carica il file XDP utilizzando l&#39;opzione **Crea > Carica file**.
+
+1. Apri XDP in **Editor comunicazioni interattive**.
+
+1. Apporta le **modifiche necessarie alla progettazione o all&#39;associazione dati**.
+
+1. Salva le modifiche. Gli aggiornamenti vengono automaticamente rispecchiati nel file XDP di origine.
 
 ## Funzionalità principali
 
@@ -46,18 +60,6 @@ Se manca un frammento, l&#39;editor visualizza un **messaggio di avviso** che in
 - **Riutilizzo frammento nell&#39;editor:**
 Tutti i frammenti XDP esistenti vengono visualizzati nel **pannello Frammenti** dell&#39;editor IC.
 Gli autori possono **trascinare** questi frammenti direttamente nell&#39;area di lavoro. I riferimenti vengono mantenuti, garantendo che gli aggiornamenti ai frammenti si propaghino su tutti gli XDP che li utilizzano.
-
-## Esempio di utilizzo
-
-1. Passa a **Forms > Forms e documenti**.
-
-1. Carica il file XDP utilizzando l&#39;opzione **Crea > Carica file**.
-
-1. Apri XDP in **Editor comunicazioni interattive**.
-
-1. Apporta le **modifiche necessarie alla progettazione o all&#39;associazione dati**.
-
-1. Salva le modifiche. Gli aggiornamenti vengono automaticamente rispecchiati nel file XDP di origine.
 
 ## Vantaggi
 

@@ -4,10 +4,10 @@ description: Blocco modelli nell'Editor comunicazioni interattive consente agli 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 La funzione Blocco modello nell’editor di comunicazione interattiva (IC) consente agli autori di modelli di limitare le modifiche a elementi specifici di un modello di comunicazione. In questo modo viene garantita la coerenza della progettazione, vengono protetti i contenuti critici e viene applicata la governance tra i team che riutilizzano i modelli per creare comunicazioni personalizzate.
 
 Quando applicati, i componenti bloccati appaiono visivamente distinti e non possono essere modificati dagli autori o dai collaboratori a valle, a seconda del tipo di blocco impostato. Questa funzione consente di mantenere gli standard del marchio, l’integrità dei dati e l’uniformità del layout in tutte le comunicazioni derivate.
+
+![Trova documento IC](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Tipi di blocco
 
@@ -56,15 +58,29 @@ Quando applicati, gli autori non possono:
 
 - Ridimensionare la larghezza o l&#39;altezza dell&#39;elemento
 
-## &#x200B;3. Comportamento nelle comunicazioni derivate
+## &#x200B;3. Come utilizzare il blocco dei modelli nell’editor di comunicazione interattiva
 
-- Quando una comunicazione viene creata da un modello bloccato, gli elementi bloccati vengono visualizzati in sola lettura nell&#39;editor IC per gli autori di comunicazioni.
+Per applicare i blocchi di contenuto o di layout nel modello di comunicazione interattiva (IC), segui la procedura riportata di seguito:
 
-- I componenti con blocco del contenuto non possono avere proprietà interne o binding modificati.
+1. Apri il modello
+Apri o crea un modello, segui la guida [Creare un modello di comunicazione interattiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- I componenti con blocco layout non possono essere spostati o ridimensionati.
+1. Seleziona il componente
+Fare clic sul componente (casella di testo, immagine o sottomaschera) che si desidera limitare.
 
-Questo consente ai creatori di modelli di mantenere il controllo sulla progettazione e sulla struttura, consentendo ad altri utenti di concentrarsi sul contenuto variabile e sulla personalizzazione basata sui dati.
+1. Opzioni blocco di accesso
+Nel pannello Proprietà, passate alla sezione Blocco.
+
+1. Applica blocchi
+
+   1. Blocco di contenuto: impedisce la modifica di testo, stili e dati.
+
+   1. Blocco layout: limita lo spostamento e il ridimensionamento.
+
+   1. È possibile abilitare entrambi per la protezione completa.
+
+1. Salva e verifica
+Salva il modello e crea un nuovo IC basato su di esso per confermare che gli elementi bloccati non possono essere modificati.
 
 ## &#x200B;4. Best practice
 

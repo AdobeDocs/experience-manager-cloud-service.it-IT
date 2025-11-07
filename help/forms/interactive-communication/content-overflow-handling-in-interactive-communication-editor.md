@@ -4,10 +4,10 @@ description: La gestione dell'overflow dei contenuti nell'Editor comunicazioni i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 16%
+source-wordcount: '487'
+ht-degree: 10%
 
 ---
 
@@ -25,6 +25,35 @@ ht-degree: 16%
 ## Introduzione
 
 La funzione Gestione dell&#39;overflow del contenuto nell&#39;Editor comunicazioni interattive migliora il comportamento del testo all&#39;interno dei layout con flusso e posizionamento. Garantisce una fluida continuità dei contenuti per i layout a flusso continuo e fornisce avvisi visivi per i layout posizionati, offrendo agli autori un controllo migliore e una maggiore flessibilità nella progettazione delle comunicazioni.
+
+![Trova documento IC](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Come utilizzare la gestione dell’overflow dei contenuti nell’editor di comunicazione interattiva
+
+1. Apri l’editor di comunicazione interattiva
+Aprire la comunicazione nell&#39;editor IC per iniziare a modificare il layout e il contenuto.
+
+1. Seleziona il tipo di layout
+Scegli il layout desiderato per la sottomaschera, il flusso o il posizionamento in base al comportamento del contenuto.
+
+1. Per i layout con flusso
+
+   1. Verificare che la gerarchia del sottomodulo padre sia impostata su Flusso.
+
+   1. Nel pannello Proprietà, abilitate l&#39;opzione Consenti interruzioni di pagina nel contenuto (visibile solo se è abilitata l&#39;opzione &quot;Consenti interruzioni di pagina&quot; della sottomaschera principale).
+
+   1. Aggiunge o incolla testo. Quando il contenuto supera una pagina, continua automaticamente nella pagina successiva.
+
+1. Per layout posizionati
+
+   1. Consente di aggiungere o modificare testo all&#39;interno di un contenitore fisso.
+
+   1. Se il contenuto supera l&#39;altezza del contenitore, nella parte inferiore viene visualizzato un bordo rosso per indicare l&#39;overflow.
+
+   1. Ridimensiona manualmente il contenitore per accogliere il contenuto aggiuntivo.
+
+1. Anteprima della comunicazione
+Utilizza l’opzione Anteprima PDF per verificare in che modo il contenuto scorre o scorre in modo eccessivo tra le pagine per entrambi i tipi di layout.
 
 ## Funzionalità principali
 
