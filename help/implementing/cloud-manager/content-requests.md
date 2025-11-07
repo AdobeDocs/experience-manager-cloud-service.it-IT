@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -95,8 +95,7 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | Traffico da attacchi DDOS | Escluso | Protezione DDOS. AEM rileva automaticamente alcuni degli attacchi DDOS e li blocca. Gli attacchi DDOS rilevati non sono fatturabili. |
 | Monitoraggio di AEM as a Cloud Service New Relic | Escluso | Monitoraggio globale di AEM as a Cloud Service. |
 | URL per i clienti per monitorare il proprio programma Cloud Service | Escluso | Adobe consiglia di utilizzare l&#39;URL per monitorare la disponibilità o il controllo dello stato esternamente.<br><br>`/system/probes/health` |
-| Servizio di riscaldamento AEM as a Cloud Service Pod | Escluso |
-| Agente: skyline-service-warm/1.* |
+| Servizio di riscaldamento AEM as a Cloud Service Pod | Escluso | Agente: skyline-service-warm/1.* |
 | Motori di ricerca noti, social network e librerie HTTP (contrassegnati da Fastly) | Escluso | Servizi noti che visitano regolarmente il sito per aggiornare l&#39;indice o il servizio di ricerca:<br><br>Esempi:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Chiedi a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google Google AdsBot<br> AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot |
 | Escludere le chiamate Commerce integration framework | Escluso | Le richieste effettuate ad AEM che vengono inoltrate a Commerce integration framework, l&#39;URL inizia con `/api/graphql`, per evitare un doppio conteggio, non sono fatturabili per Cloud Service. |
 | Escludi `manifest.json` | Escluso | Il manifesto non è una chiamata API. È qui per fornire informazioni su come installare siti web su un desktop o un telefono cellulare. Adobe non deve contare la richiesta JSON a `/etc.clientlibs/*/manifest.json` |

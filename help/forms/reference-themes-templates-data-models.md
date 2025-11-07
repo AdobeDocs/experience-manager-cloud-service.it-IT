@@ -1,10 +1,10 @@
 ---
-title: Come ottenere temi e modelli di riferimento per i moduli AEM?
+title: Come ottenere temi e modelli di riferimento per AEM Forms?
 description: AEM Forms fornisce esempi di temi, modelli e modelli di dati per moduli adattivi per aiutarti a creare i moduli rapidamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Applicabile a | Collegamento articolo |
 | -------- | ---------------------------- |
-| Modulo adattivo basato su componenti core | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) |
+| Modulo adattivo basato su componenti core | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Modulo adattivo basato su componenti di base | Questo articolo |
 
 >[!NOTE]
@@ -29,7 +29,7 @@ I temi, i modelli e il modello dati modulo (FDM) inclusi nel pacchetto di conten
 
 
 | Temi | Modelli | Modello dati modulo (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Area di lavoro 3.0 | Base | Microsoft Dynamics 365 |
 | Tranquilla | Vuoto | Salesforce |
 | Urbano |   |  |
@@ -129,7 +129,7 @@ Il Forms adattivo può quindi interagire con i server Microsoft Dynamics 365 e S
 * Microsoft® Dynamics 365
 * Salesforce
 
-Per informazioni sull&#39;utilizzo di questi modelli, vedere [Configurare Microsoft Dynamics 365 e Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=it#configure-dynamics-cloud-service)
+Per informazioni sull&#39;utilizzo di questi modelli, vedere [Configurare Microsoft Dynamics 365 e Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulta anche {#see-also}

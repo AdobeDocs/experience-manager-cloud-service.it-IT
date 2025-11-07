@@ -4,7 +4,7 @@ description: Scopri come configurare Open ID Connect (OIDC) per AEM as a Cloud S
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ Di seguito sono riportati alcuni degli attributi più rilevanti da configurare i
 | `user.dynamicMembership` | È consigliabile abilitare l&#39;iscrizione al gruppo dinamico | vero |
 | `user.enforceDynamicMembership` | È consigliabile abilitare l&#39;applicazione dell&#39;iscrizione a un gruppo dinamico | vero |
 | `group.dynamicGroups` | È consigliabile abilitare i gruppi dinamici | vero |
-| user.propertyMapping | L&#39;implementazione fornita di `UserInfoProcessor` sincronizza solo alcune proprietà. Può essere modificata e personalizzata. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=nome/profilo&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | L&#39;implementazione fornita di `UserInfoProcessor` sincronizza solo alcune proprietà. Può essere modificata e personalizzata. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=nome/profilo&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | Restituisce la profondità massima della nidificazione del gruppo quando le relazioni delle iscrizioni vengono sincronizzate. Un valore pari a 0 disattiva efficacemente la ricerca dell&#39;iscrizione al gruppo. Il valore 1 aggiunge solo i gruppi diretti di un utente. Questo valore non ha alcun effetto quando si sincronizzano singoli gruppi solo durante la sincronizzazione dell&#39;origine dell&#39;iscrizione degli utenti. | 1 |
 
 ### Configurare il Modulo di accesso esterno {#configure-the-external-login-module}

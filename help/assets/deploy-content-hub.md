@@ -3,7 +3,7 @@ title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, utenti Adobe Express) e fornire privilegi di amministratore agli utenti.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 6%
@@ -38,12 +38,12 @@ Nella tabella seguente sono riepilogati i tipi di utenti Content Hub disponibili
 
 | Ruolo utente | Utenti Content Hub | Utenti Content Hub con diritti per aggiungere risorse | Utenti Content Hub con diritti per il remix delle risorse | Amministratori Content Hub |
 |---------------|----------|----------|-------------------------|---|
-| **Funzionalità** |
+| **Funzionalità** |  |  |  |  |
 | Accesso alle risorse approvate dal brand sul portale Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Caricare risorse dal portale Content Hub | − | ✓ | ✓ | ✓ |
 | Utilizzare l’integrazione di Adobe Express per modificare le immagini | − | − | ✓ | − |
 | Accedere all’interfaccia utente di configurazione di Content Hub | − | − | − | ✓ |
-| **L’utente deve essere in questi profili di prodotto (Admin Console)** |
+| **L’utente deve essere in questi profili di prodotto (Admin Console)** |  |  |  |  |
 | AEM > Istanza di consegna > Utenti con limitazione AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Istanza Production Author > Utenti AEM | − | ✓ | ✓ | − |
 | AEM > Istanza di authoring di produzione > Amministratori AEM | − | − | − | ✓ |

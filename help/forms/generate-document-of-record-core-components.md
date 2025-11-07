@@ -4,7 +4,7 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -262,7 +262,7 @@ La tabella seguente descrive i componenti Modulo adattivo e i corrispondenti com
 | Componente modulo adattivo | Componente XFA corrispondente | Note |
 |---|---|---|
 | Immagine | Immagine | I componenti TextDraw e Image, sia associati che non associati, vengono sempre visualizzati nel documento di record per un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
-| Testo | Testo |
+| Testo | Testo |  |
 
 ### Tabelle {#tables}
 

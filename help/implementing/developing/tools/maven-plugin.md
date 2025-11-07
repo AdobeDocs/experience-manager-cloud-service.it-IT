@@ -4,7 +4,7 @@ description: Utilizza il plug-in Maven Content Package per distribuire le applic
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -97,7 +97,7 @@ I parametri nella tabella seguente sono comuni a tutti gli obiettivi, tranne qua
 | `failOnError` | `boolean` | No | `false` | Un valore di `true` causa un errore di compilazione. Il valore `false` fa sì che la build ignori l&#39;errore. | Tutti gli obiettivi tranne `package` |
 | `name` | `String` | `build`: Sì, `install`: No, `rm`: Sì | `build`: nessun valore predefinito, `install`: il valore della proprietà `artifactId` del progetto Maven | Nome del pacchetto su cui intervenire | Tutti gli obiettivi tranne `ls` |
 | `password` | `String` | Sì | `admin` | Password utilizzata per l’autenticazione con AEM | Tutti gli obiettivi tranne `package` |
-| `serverId` | `String` | No | ID server da cui recuperare il nome utente e la password per l&#39;autenticazione | Tutti gli obiettivi tranne `package` |
+| `serverId` | `String` | No | ID server da cui recuperare il nome utente e la password per l&#39;autenticazione | Tutti gli obiettivi tranne `package` |  |
 | `targetURL` | `String` | Sì | `http://localhost:4502/crx/packmgr/service.jsp` | URL dell’API del servizio HTTP del gestore pacchetti di AEM | Tutti gli obiettivi tranne `package` |
 | `timeout` | `int` | No | `5` | Timeout di connessione per la comunicazione con il servizio Gestione pacchetti, in secondi | Tutti gli obiettivi tranne `package` |
 | `useProxy` | `boolean` | No | `true` | Il valore `true` fa in modo che Maven utilizzi la prima configurazione proxy attiva trovata per le richieste proxy al gestore di pacchetti. | Tutti gli obiettivi tranne `package` |

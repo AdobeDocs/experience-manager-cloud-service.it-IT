@@ -1,14 +1,14 @@
 ---
-title: 'Riutilizzo del contenuto: Gestore multisito e Live Copy'
-description: Ottieni un’introduzione al riutilizzo dei contenuti con le potenti funzionalità di AEM Live Copy e Gestore multisito.
+title: 'Riutilizzo del contenuto: Multi-Site Manager e Live Copy'
+description: Ottieni un’introduzione al riutilizzo dei contenuti con le potenti funzionalità di AEM Live Copy e Multi-Site Manager.
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 91%
+source-wordcount: '2719'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Gestore multisito (MSM) consente di utilizzare lo stesso contenuto del sito in p
 Questa pagina fornisce una panoramica del riutilizzo dei contenuti con MSM. Nelle pagine seguenti vengono descritti in dettaglio i problemi correlati.
 
 * [Creazione e sincronizzazione di Live Copy](creating-live-copies.md)
-* [Panoramica Live Copy](live-copy-overview.md)
+* [Panoramica sulla console Live Copy](live-copy-overview.md)
 * [Configurazione della sincronizzazione di una Live Copy](live-copy-sync-config.md)
 * [Conflitti di rollout MSM](rollout-conflicts.md)
 * [Best practice MSM](best-practices.md)
@@ -173,7 +173,7 @@ Come introduzione, la tabella seguente fornisce una panoramica dei termini princ
 | Stacca | Rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint |  |
 | Ripristina | Reimposta una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e riporta la pagina allo stesso stato della pagina origine | La reimpostazione influisce su tutte le modifiche apportate alle proprietà della pagina, al sistema di paragrafi e ai componenti. |
 | Superficiale | Live Copy di una singola pagina |  |
-| Profondo | Una Live Copy di una pagina, insieme alle relative pagine figlie |  |
+| Profondo | Una Live Copy di una pagina, insieme alle relative pagine secondarie |  |
 
 >[!TIP]
 >
@@ -187,7 +187,7 @@ Una Live Copy MSM è una copia di un contenuto specifico del sito per cui viene
 * La sincronizzazione esegue il trasferimento effettivo del contenuto quando vengono apportate modifiche al sorgente.
 * Una Live Copy può essere definita
    * Shallow: una singola pagina
-   * Deep: la pagina, insieme alle relative pagine figlie
+   * Deep: la pagina, insieme alle relative pagine secondarie
 * Le regole di sincronizzazione, denominate configurazioni di rollout, determinano le proprietà sincronizzate e quando si verifica la sincronizzazione.
 
 Nell&#39;esempio precedente, `/content/wknd/language-masters/en` è il sito master globale in inglese. Per riutilizzare il contenuto di questo sito, vengono create le Live Copy MSM:
@@ -203,14 +203,14 @@ Nell&#39;esempio precedente, `/content/wknd/language-masters/en` è il sito mast
 >
 >I diagrammi e le descrizioni contenuti in questa sezione rappresentano istantanee di potenziali Live Copy. Non sono complete, ma forniscono una panoramica per evidenziare caratteristiche specifiche.
 
-Quando crei inizialmente una Live Copy, le pagine sorgente selezionate vengono riportate in rapporto 1:1 sulla Live Copy. In seguito, è possibile creare nuove risorse (pagine e/o paragrafi) direttamente all’interno della Live Copy, pertanto è utile essere consapevoli di queste varianti e del loro impatto sulla sincronizzazione. Le possibili composizioni includono:
+Quando crei inizialmente una Live Copy, le pagine sorgente selezionate vengono riportate su una base 1:1 nella Live Copy. In seguito, è possibile creare nuove risorse (pagine e/o paragrafi) direttamente all’interno della Live Copy, pertanto è utile essere consapevoli di queste varianti e del loro impatto sulla sincronizzazione. Le possibili composizioni includono:
 
 * [Live Copy con pagine non Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copy nidificate](#nested-live-copies)
 
 La forma di base di una Live Copy include:
 
-* Pagine Live Copy che riflettono le pagine sorgente selezionate in rapporto 1:1.
+* Pagine Live Copy che riflettono le pagine sorgente selezionate su base 1:1.
 * Una definizione di configurazione.
 * Una relazione live definita per ogni risorsa:
    * Collega la risorsa Live Copy alla relativa blueprint/sorgente.
@@ -246,7 +246,7 @@ Ad esempio, i collegamenti che puntano dal secondo al primo blueprint verranno r
 
 #### Live Copy sovrapposte {#stacked-live-copies}
 
-Una Live Copy è nota come Live Copy sovrapposta quando viene creata come figlia di una shallow. Si comporta nello stesso modo di una [Live Copy nidificata](#nested-live-copies).
+Una Live Copy è nota come Live Copy sovrapposta quando viene creata come secondaria rispetto a una Live Copy shallow. Si comporta nello stesso modo di una [Live Copy nidificata](#nested-live-copies).
 
 ### Sorgente, blueprint e configurazioni di blueprint {#source-blueprints-and-blueprint-configurations}
 
@@ -283,7 +283,7 @@ Un rollout è l’azione MSM essenziale che sincronizza le Live Copy con le loro
 Una configurazione di rollout definisce quando e come una Live Copy viene sincronizzata con il contenuto sorgente. Una configurazione di rollout è costituita da un trigger e da una o più azioni di sincronizzazione:
 
 * **Trigger**: un trigger è un evento che causa la sincronizzazione di un’azione live, ad esempio l’attivazione di una pagina sorgente. MSM definisce i trigger utilizzabili.
-* **Azioni di sincronizzazione**: le azioni di sincronizzazione vengono eseguite sulla Live Copy per sincronizzarla con la sorgente. Le azioni di esempio sono la copia del contenuto, l’ordine dei nodi figli e l’attivazione della pagina Live Copy. MSM fornisce diverse azioni di sincronizzazione.
+* **Azioni di sincronizzazione**: le azioni di sincronizzazione vengono eseguite sulla Live Copy per sincronizzarla con la sorgente. Le azioni di esempio sono la copia del contenuto, l’ordine dei nodi secondari e l’attivazione della pagina Live Copy. MSM fornisce diverse azioni di sincronizzazione.
 
 >[!NOTE]
 >

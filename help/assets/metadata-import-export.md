@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -32,7 +32,7 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    | ---------------------- | ------- |
    | Dimensione batch | Numero di risorse in un batch per le quali devono essere importati i metadati. Il valore predefinito è 50. Il valore massimo è 100. |
    | Separatore di campi | Il valore predefinito è `,` (una virgola). È possibile specificare qualsiasi altro carattere. |
-   | Delimitatore multivalore | Separatore per i valori dei metadati. Il valore predefinito è `|`. |
+   | Delimitatore multivalore | Separatore per i valori dei metadati. Il valore predefinito è `\|`. |
    | Avvia flussi di lavoro | False per impostazione predefinita. Se è impostato su `true` e sono attive le impostazioni predefinite per il flusso di lavoro Writeback di metadati DAM (che scrive i metadati nei dati binari di XMP). L’abilitazione dei flussi di lavoro rallenta il sistema. |
    | Nome colonna percorso risorsa | Definisce il nome della colonna per il file CSV con le risorse. |
 
@@ -89,7 +89,7 @@ Alcuni casi d’uso per l’esportazione in blocco di metadati sono:
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)
