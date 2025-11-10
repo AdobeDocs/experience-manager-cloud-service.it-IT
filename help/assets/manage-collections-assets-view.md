@@ -4,10 +4,10 @@ description: Una raccolta è un insieme di risorse nella vista Experience Manage
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 90%
+source-wordcount: '1084'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >title="Gestire le raccolte"
 >abstract="Una raccolta è un set di risorse, cartelle o altre raccolte all’interno di una vista di Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse. Puoi condividere più raccolte con un utente. Ogni raccolta contiene riferimenti alle risorse. L’integrità dei riferimenti alle risorse viene mantenuta tra le varie raccolte."
 
-Una raccolta è un insieme di risorse, cartelle o altre raccolte nella vista Adobe Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti.
+Una raccolta è un set di risorse, cartelle o altre raccolte all’interno della vista Risorse di Adobe Experience Manager. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti.
 
 A differenza delle cartelle, una raccolta può includere risorse da posizioni diverse.
 
@@ -37,6 +37,8 @@ Per gestire e utilizzare le raccolte, puoi eseguire le seguenti attività:
 * [Aggiungere risorse a una raccolta](#add-assets-to-collection)
 
 * [Rimuovere risorse da una raccolta](#remove-assets-from-collection)
+
+* [Ricerca in raccolte](#search-collection)
 
 * [Creare una raccolta avanzata](#create-smart-collection)
 
@@ -93,6 +95,32 @@ Per rimuovere le risorse da una raccolta:
 1. Fai clic sulla raccolta e seleziona le risorse da rimuovere.
 
 1. Fai clic su **[!UICONTROL Rimuovi]**.
+
+## Ricerca in raccolte {#search-collection}
+
+Puoi eseguire ricerche all’interno di una raccolta per trovare facilmente le risorse rilevanti. A questo scopo, esegui i seguenti passaggi:
+
+* Passa a **[!DNL Collections]**. Nella barra di ricerca, inserisci una parola chiave per individuare la raccolta desiderata. Nella barra di ricerca viene visualizzata la posizione della raccolta selezionata.
+
+* Per perfezionare i risultati della ricerca, aprire **[!DNL Filters]** e assicurarsi che **[!DNL Collections]** sia selezionato in **[!DNL Asset Type]**.
+
+* Nel menu a discesa **[!DNL Collection Visibility]**, scegli una delle seguenti opzioni:
+
+   * **[!DNL All]:** Visualizza tutte le raccolte, indipendentemente dalla visibilità.
+   * **[!DNL Public Collection]:** mostra solo le raccolte visibili a tutti gli utenti.
+   * **[!DNL Private Collection]:** mostra solo le raccolte limitate o visibili a utenti o gruppi specifici.
+
+* Nel menu a discesa [!DNL Collection Type], scegli una delle seguenti opzioni:
+
+   * **[!DNL All]:** Visualizza sia le raccolte normali che quelle avanzate.
+   * **[!DNL Collection]:** mostra le raccolte create manualmente in cui le risorse vengono aggiunte singolarmente.
+   * **[!DNL Smart Collection]:** mostra le raccolte che includono automaticamente le risorse salvate in [Raccolte avanzate](#manage-smart-collection).
+
+* Il menu a discesa **[!DNL Created Date]** consente di filtrare le raccolte in base a quando sono state create. Puoi specificare un intervallo di date per trovare le raccolte create di recente o meno.
+
+  ![Raccolta ricerche](assets/search-collection.png)
+
+Per ulteriori informazioni, vedere [risorse di ricerca](search-assets-view.md), [filtrare i risultati della ricerca](search-assets-view.md#refine-search-results) o [gestire le ricerche salvate](search-assets-view.md##saved-search).
 
 ## Gestire una raccolta avanzata {#manage-smart-collection}
 

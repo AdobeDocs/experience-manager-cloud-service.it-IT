@@ -3,10 +3,10 @@ title: Filtri di ricerca personalizzati
 description: Scopri come personalizzare il modulo dei filtri di ricerca
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 13%
+source-wordcount: '1425'
+ht-degree: 12%
 
 ---
 
@@ -18,18 +18,41 @@ Ulteriori informazioni su [search](search-assets-view.md).
 
 Personalizza filtri di ricerca AEM Assets può essere mappato solo alle voci nell’indice delle proprietà ricercabili. Assicurati di includere tutti i metadati personalizzati prima di configurare l’esperienza di filtro personalizzata. [!DNL Assets view] consente di personalizzare i filtri di ricerca per semplificare il processo di ricerca. Per personalizzare i filtri di ricerca personalizzati di AEM Assets, esegui i seguenti passaggi:
 
-1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]**.
-1. Passa alla scheda **[!UICONTROL Ricerca]**. Fai clic su **[!UICONTROL Personalizza]** per configurare il modulo di ricerca.
+1. Passa a **[!UICONTROL Impostazioni]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Ricerca]**.
+
+   <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
    ![impostazioni filtro di ricerca personalizzato](assets/custom-search-filter.png)
 
-1. Viene visualizzato il modulo [!UICONTROL Configura filtri]. Assicurati di essere in modalità Modifica in modo da poter apportare modifiche al modello. È possibile passare alla [!UICONTROL modalità Anteprima] per visualizzare l&#39;anteprima di un modulo di ricerca esistente.
-1. Elimina gli elementi filtro dai [filtri personalizzati](#available-custom-filters) nell&#39;area di lavoro. Se necessario, puoi trascinare il componente per riordinarlo.
+1. Nella sezione **[!UICONTROL Filtri]** è possibile configurare i seguenti elementi:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL File]:** La configurazione dei file richiede tipi di file, formati di file, stato delle risorse, dimensioni del file, dimensioni dell&#39;immagine, data di creazione, data di modifica e così via.
+   * **[!UICONTROL Cartelle]:** La configurazione delle cartelle richiede la data di creazione, la data di eliminazione, l&#39;eliminazione di e così via.
+   * **[!UICONTROL Raccolte]:** La configurazione delle raccolte implica la visibilità della raccolta, il tipo di raccolta, la data di creazione e così via.
 
-1. Fare clic su **[!UICONTROL Modalità anteprima]** per rivedere le modifiche.
-1. Fai clic su **[!UICONTROL Conferma]** per salvare.
+1. È possibile visualizzare in anteprima il modulo **[!UICONTROL Filtri predefiniti]** disponibile per file, cartelle o raccolte. Non è invece possibile personalizzare o eliminare questo modulo preesistente. In alternativa, per creare un modulo filtri personalizzato, fare clic su **[!UICONTROL Aggiungi nuovo modulo]**.
+
+   >[!NOTE]
+   >
+   >È possibile creare un solo modulo filtro personalizzato per categoria (File, Cartella o Raccolta).
+
+1. Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
+
+## Azioni su un modulo configurato {#Actions-on-configured-form}
+
+In un modulo di filtri configurato è possibile utilizzare le azioni seguenti:
+
+* **[!UICONTROL Personalizza]:** Fare clic per aggiungere o modificare il modulo. Puoi eliminare gli elementi filtro dai [filtri personalizzati](#available-custom-filters) nell&#39;area di lavoro o riordinarli, se necessario.
+
+* **[!UICONTROL Anteprima]:** Fare clic per rivedere le modifiche.
+
+* **[!UICONTROL Imposta come predefinito]:** Fare clic per impostare il modulo selezionato come predefinito.
+
+* **[!UICONTROL Elimina modulo]:** Fai clic su altre opzioni ![altre opzioni](assets/do-not-localize/more-icon.svg) e seleziona **[!UICONTROL Elimina modulo]** per eliminare il modulo dei filtri selezionato.
+
+* **[!UICONTROL Modifica etichette modulo]:** Fai clic su altre opzioni ![altre opzioni](assets/do-not-localize/more-icon.svg) e aggiungi una nuova etichetta e descrizione al modulo dei filtri personalizzato.
+
+  ![modifica etichette modulo](assets/edit-form-labels.png)
 
 ## Filtri personalizzati disponibili {#available-custom-filters}
 
@@ -404,6 +427,7 @@ Ogni elemento filtro è associato a un set di proprietà. I filtri di ricerca pe
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Eliminare un elemento filtro {#delete-a-filter-element}
 
