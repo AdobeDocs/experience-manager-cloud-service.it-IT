@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Come indicato nella sezione precedente [Varianze delle richieste di contenuto di
 ### Tecniche di implementazione per gestire le richieste di contenuto {#implementation-techniques-to-manage-crs}
 
 * Assicurati che tutte le risposte Page Not Found (Pagina non trovata) siano consegnate con uno stato HTTP 404.  Se vengono restituiti con lo stato 200, verranno conteggiati per le richieste di contenuto.
-* Indirizza gli strumenti di controllo o di monitoraggio dello stato all&#39;URL /systems/probes/health oppure utilizza il metodo HEAD invece di GET per evitare di inviare richieste di contenuto.
+* Indirizza gli strumenti di controllo o di verifica dello stato all&#39;URL /system/probes/health oppure utilizza il metodo HEAD invece di GET per evitare di inviare richieste di contenuto.
 * Bilancia le tue esigenze di aggiornamento dei contenuti con i costi di licenza di AEM per qualsiasi crawler di ricerca personalizzato integrato con il tuo sito.  Un crawler eccessivamente aggressivo può richiedere molti contenuti.
 * Per evitare due richieste di contenuto separate, gestisci i reindirizzamenti come lato server (stato 301 o 302) anziché lato client (stato 200 con reindirizzamento JavaScript).
 * Combina o riduci le chiamate API, che sono risposte JSON da AEM che possono essere caricate per eseguire il rendering della pagina.
