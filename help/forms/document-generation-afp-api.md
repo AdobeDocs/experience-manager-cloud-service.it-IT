@@ -4,10 +4,10 @@ description: Scopri come utilizzare l’API AFP Output Sync per recuperare e sin
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
@@ -39,12 +39,12 @@ Genera un file AFP (Advanced Function Presentation) utilizzando un modello XDP e
 
 ### Autorizzazione
 
-È possibile utilizzare **BasicAuth** (credenziali amministratore) per gli ambienti locali o **BearerAuth** per le istanze di AEM Cloud.
+È possibile utilizzare **BasicAuth** (credenziali amministratore) per gli ambienti locali o l&#39;autorizzazione **OAuth Server-to-Server** per le istanze AEM Cloud.
 
 ### Richiesta
 
 **Endpoint:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### Intestazioni
 

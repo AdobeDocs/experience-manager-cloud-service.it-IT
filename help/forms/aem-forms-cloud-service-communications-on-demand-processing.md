@@ -4,9 +4,9 @@ description: Configurare l’ambiente di sviluppo per le API sincrone di comunic
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso a Cloud Manager**
 
@@ -118,7 +118,7 @@ Clona l’archivio Git di Cloud Manager per gestire i file di configurazione API
       ![Clonazione dell&#39;archivio Git](/help/forms/assets/repo-clone.png)
 
 
-### Opzioni di integrazione dell’archivio Git
+**Opzioni di integrazione archivio Git**
 
 Adobe Cloud Manager supporta entrambe le opzioni dell’archivio:
 
