@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 20%
 
 ---
@@ -106,7 +106,7 @@ Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi riso
 
 ### Problemi noti {#known-issues-23320}
 
-Nessuna.
+* FORMS-22633: l&#39;invio di moduli potrebbe non riuscire quando si utilizza codice personalizzato basato sulle API GuideBridge (`getData` o `getDataXML`). Se riscontri questo problema, contatta il supporto Adobe per assistenza.
 
 ### Funzioni e API obsolete {#deprecated-23320}
 
