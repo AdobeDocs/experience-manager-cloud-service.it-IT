@@ -4,10 +4,10 @@ description: Scopri come ripristinare il contenuto di AEM as a Cloud Service dal
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 23%
+source-wordcount: '1358'
+ht-degree: 24%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 23%
 
 Puoi ripristinare il contenuto di AEM as a Cloud Service dal backup utilizzando Cloud Manager.
 
-## Panoramica {#overview}
+
 
 Il processo di ripristino self-service di Cloud Manager copia i dati dai backup del sistema Adobe e li ripristina nell’ambiente originale. Viene eseguito un ripristino per riportare alle condizioni originali i dati persi, danneggiati o accidentalmente eliminati.
 
-Il processo di ripristino influisce solo sul contenuto, lasciando invariati il codice e la versione di AEM. Puoi avviare un’operazione di ripristino di singoli ambienti in qualsiasi momento. Se devi ripristinare il codice sorgente distribuito in precedenza in modo semplice e veloce, senza dover avviare una nuova esecuzione della pipeline, puoi utilizzare [Ripristina il codice precedente distribuito](/help/operations/restore-previous-code-deployed.md).
+Il processo di ripristino influisce solo sul contenuto, lasciando invariati il codice e la versione di AEM. È possibile avviare un’operazione di ripristino dei singoli ambienti in qualsiasi momento.
+
+Se devi ripristinare il codice sorgente distribuito in precedenza in modo semplice e veloce, senza dover avviare una nuova esecuzione della pipeline, puoi utilizzare [Ripristina il codice precedente distribuito](/help/operations/restore-previous-code-deployed.md).
 
 Cloud Manager fornisce due tipi di backup dai quali è possibile ripristinare il contenuto.
 
