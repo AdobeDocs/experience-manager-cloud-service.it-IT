@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
+source-git-commit: 95bebfd554aee90d0066e1d7dea5d5c7e43100e6
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 60%
+source-wordcount: '1887'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -271,9 +271,9 @@ Invia un’e-mail a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canar
 
 AI Answers introduce un nuovo modo per i visitatori di interagire con il contenuto. Basato sulla tecnologia Retrieval-Augmented Generation (RAG), utilizza i dati gestiti da AEM per fornire risposte precise e coerenti direttamente all’interno delle esperienze digitali.
 
-Come parte di questa versione beta, puoi esplorare in modo sicuro le risposte AI nell’ambiente AEM Cloud Service. Questo approccio consente di convalidare le prestazioni, la precisione e l’esperienza complessiva prima di renderla disponibile al pubblico in tempo reale. Una volta convalidata, puoi promuovere l’esperienza di risposte AI a una produzione completa.
+Stiamo preparando il lancio del programma Beta AI Answers e invitiamo i clienti a registrare il loro interesse. Poiché la versione beta avrà una capacità molto limitata, le iscrizioni anticipate riceveranno la priorità. La partecipazione alla versione beta consente di esplorare le risposte AI nell’ambiente AEM Cloud Service, convalidare le prestazioni e l’accuratezza e contribuire a definire l’esperienza futura prima che diventi generalmente disponibile.
 
-Per richiedere l&#39;accesso in versione beta o condividere il tuo feedback, contatta [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+Per richiedere la partecipazione o ricevere aggiornamenti, contattare [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 
 ### Istantanee per RDE (programma Alpha) {#rde-snapshot-program}
