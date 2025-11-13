@@ -4,9 +4,9 @@ description: Scopri le diverse opzioni per estendere le funzionalità dell’edi
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ Come servizio di Adobe Experience Cloud, l’interfaccia utente dell’editor un
 * **[Estensione Amministratore del sito AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: apri la console Sites alla posizione della pagina nell’editor universale
 * **[Estensione Blocco pagina AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: visualizza e modifica lo stato di blocco della pagina dall’editor universale
 * **[Estensione Flussi di lavoro AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: avvia flussi di lavoro sulla pagina e sul contenuto della pagina dall’editor universale
-* **[Estensione Accesso per sviluppatori dell’editor universale AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: esegui l’autenticazione facilmente nel tuo SDK AEM locale durante lo sviluppo
 * **[Generare varianti](/help/generative-ai/generate-variations-integrated-editor.md)**: utilizza l’intelligenza artificiale generativa (IA) per creare varianti per il contenuto direttamente nel pannello delle proprietà.
 * **[Selettore del prodotto AEM per l’editor universale](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: integra i dati di Adobe Commerce selezionando o rimuovendo i dati di prodotto dall’editor.
 * **[Bozze di contenuto dell’editor universale](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: crea, modifica e gestisci più bozze di contenuto.

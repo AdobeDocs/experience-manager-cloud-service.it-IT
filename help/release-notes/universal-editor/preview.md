@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 13 novembre 2025.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 20 novembre 2025 e sarà disponibile a livello generale.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,12 +27,11 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* Sono stati migliorati il menu contestuale nell’intestazione del pannello e nella barra a destra.
-* gli schemi json ora vengono consegnati per la convalida.
-* L’accesso a AEM per sviluppatori è ora una parte fondamentale di Universal Editor e l’estensione non è più necessaria.
+* È stata effettuata la migrazione dei token a una nuova interfaccia utente.
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* È stato regolato il modo in cui l’albero della struttura si espande automaticamente per impostazione predefinita.
-* È stata aggiunta una larghezza specifica per il menu contestuale.
-* Errori del servizio Editor universale a causa di alcuni valori `null` sono stati risolti.
+* La gestione dei valori dell’editor Rich Text è stata semplificata.
+* È stata risolta una rara condizione di corsa della barra degli strumenti.
+* Sono state rimosse le funzioni inutilizzate.
+* Le dipendenze sono state aggiornate.

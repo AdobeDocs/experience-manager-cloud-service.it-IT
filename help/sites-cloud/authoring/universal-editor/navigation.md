@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1847'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra di navigazione superiore di Experience Platform è sempre presente nell
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
@@ -143,6 +143,12 @@ Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo 
 
 ![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
 
+#### Accesso sviluppatore locale {#local-developer-login}
+
+Selezionare l&#39;icona di accesso per sviluppatori locali se è necessario eseguire l&#39;autenticazione nel SDK AEM locale [durante lo sviluppo locale.](/help/implementing/universal-editor/local-dev.md)
+
+![Pulsante di accesso per sviluppatori locali](assets/local-developer-login.png)
+
 #### Modalità reattiva {#emulator}
 
 Seleziona l’icona della modalità reattiva per definire il rendering della pagina da parte dell’Editor universale.
@@ -183,11 +189,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 

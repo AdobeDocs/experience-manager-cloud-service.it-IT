@@ -4,10 +4,10 @@ description: Scopri come eseguire il servizio editor universale per lo sviluppo 
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 95%
 
 ---
 
@@ -160,5 +160,7 @@ Con il [servizio editor universale in esecuzione localmente](#running-ue) e la [
 
 1. Apri il browser per `https://localhost:8000/ping`.
 1. Indirizza il browser per accettare [il certificato autofirmato](#ue-https).
-1. Una volta che il certificato autofirmato è attendibile, puoi modificare la pagina utilizzando il servizio editor universale locale.
+1. Una volta che il certificato autofirmato è considerato attendibile, la pagina viene caricata utilizzando il servizio Universal Editor locale.
+1. Fai clic su [Accesso sviluppatore locale](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) nella barra degli strumenti e autentica nell&#39;istanza AEM locale.
 
+È ora possibile modificare le pagine nell’istanza di test AEM locale utilizzando il servizio Universal Editor locale.
