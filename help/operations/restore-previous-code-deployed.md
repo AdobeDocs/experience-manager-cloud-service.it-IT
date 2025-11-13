@@ -85,7 +85,7 @@ Se si desidera semplicemente ripristinare le condizioni originali dei dati persi
 
    ![Ripristino dell&#39;attivazione](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Nell&#39;angolo superiore destro della pagina, fai clic sull&#39;icona ![Campana o sull&#39;icona Notifiche ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifiche** per sapere quando inizia e termina il ripristino.
+1. Nell&#39;angolo superiore destro della pagina, fai clic sull&#39;icona ![Campana o sull&#39;icona Notifiche &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifiche** per sapere quando inizia e termina il ripristino.
 
    ![Ripristina le notifiche di codice precedenti all&#39;avvio del ripristino e al termine del ripristino](/help/operations/assets/restore-previous-code-notifications.png)
    *Notifiche per un processo di ripristino del codice precedente.*
