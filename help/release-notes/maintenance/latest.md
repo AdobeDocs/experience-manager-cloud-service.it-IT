@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
+source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1213'
 ht-degree: 20%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 20%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 23320 {#23320}
+## Versione 23385 {#23385}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 23320, rilasciata pubblicamente il giovedì 12 novembre 2025. La versione di manutenzione precedente era la 22943.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 23385, rilasciata pubblicamente il venerdì 13 novembre 2025. La versione di manutenzione precedente era la 22943.
 
 Con la versione di attivazione funzioni 2025.11.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 >[!NOTE]
 >
->Le 23122 sulla versione sono diventate private il 3 novembre.
+>Le versioni 23320 e 23122 sono state rese private.
 
-### Miglioramenti {#enhancements-23320}
+### Miglioramenti {#enhancements-23385}
 
 * CQ-4361363: Ultime traduzioni per AEM e Granite.
 * FORMS-21594: Abilita il blocco di contenuti e layout dei modelli di comunicazione interattiva per gli autori di contenuti.
@@ -61,7 +61,7 @@ Con la versione di attivazione funzioni 2025.11.0 verrà fornito il set di funzi
 * SKYOPS-118390: aggiorna la risorsa JCR alla versione 3.3.6.
 * SKYOPS-121082: aggiornare le versioni di `org.apache.sling.discovery.standalone`, `org.apache.sling.jcr.packageinit` e `org.apache.sling.commons.fsclassloader` bundle sling.
 
-### Problemi risolti {#fixed-issues-23320}
+### Problemi risolti {#fixed-issues-23385}
 
 * ASSETS-58926: Correggi la funzione delle miniature di modifica video in DM.
 * ASSETS-58623: correggi npe in omnisearch quando la configurazione esiste.
@@ -88,13 +88,14 @@ Con la versione di attivazione funzioni 2025.11.0 verrà fornito il set di funzi
 * SITES-35409: è stato corretto un bug che impediva la ripubblicazione di frammenti corretti durante lo spostamento di una pagina.
 * SITES-15757: è stato corretto un bug che impediva la ripubblicazione di pagine modificate durante lo spostamento di una pagina.
 * SITES-34638: è stato corretto un bug a causa del quale le proprietà delle pagine padre non venivano incluse durante la creazione di nuove versioni.
+* SITES-35226: è stato corretto un regresso a causa del quale, in determinate circostanze, il selettore delle risorse nell’editor pagina non veniva caricato correttamente.
 * SITES-35071: l’esportazione CSV restituisce risultati non filtrati quando omnisearch utilizza una frase tra virgolette.
 * SITES-32182: Edge Delivery con Universal Editor - Correzione di problemi di codifica con URL contenenti parametri di richiesta già codificati.
 * SITES-34324: Edge Delivery con Universal Editor - corregge il rendering dei collegamenti con un protocollo tel:.
 * SITES-35333: Edge Delivery con Universal Editor - corregge la selezione del rendering delle risorse per le immagini nei metadati della pagina.
 * SITES-35549: Edge Delivery con Universal Editor - corregge le entità HTML con doppia codifica nei metadati della pagina.
 
-#### AEM Guides {#guides-23320}
+#### AEM Guides {#guides-23385}
 
 * GUIDES-33597: se a un file DITAVAL viene aggiunto un elemento `prop` vuoto senza attributi o valori, non è possibile aggiungere ulteriori elementi `prop`.
 * GUIDE-33693: quando carichi nuovamente un’immagine modificata tramite l’interfaccia utente di Experience Manager Guides, la rappresentazione originale dell’immagine viene aggiornata ma il contenuto DITA associato continua a visualizzare la versione precedente dell’immagine.
@@ -104,19 +105,19 @@ Con la versione di attivazione funzioni 2025.11.0 verrà fornito il set di funzi
 Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 
-### Problemi noti {#known-issues-23320}
+### Problemi noti {#known-issues-23385}
 
 * FORMS-22633: l&#39;invio di moduli potrebbe non riuscire quando si utilizza codice personalizzato basato sulle API GuideBridge (`getData` o `getDataXML`). Se riscontri questo problema, contatta il supporto Adobe per assistenza.
 
-### Funzioni e API obsolete {#deprecated-23320}
+### Funzioni e API obsolete {#deprecated-23385}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-23320}
+### Correzioni di sicurezza {#security-23385}
 
 AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 31 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-23320}
+### Tecnologie incorporate {#embedded-tech-23385}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
