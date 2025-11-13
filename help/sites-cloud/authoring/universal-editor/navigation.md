@@ -189,11 +189,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
