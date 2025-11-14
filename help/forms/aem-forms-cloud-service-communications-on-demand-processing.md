@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2573'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso a Cloud Manager**
 
@@ -183,7 +183,7 @@ Esempio: `https://author-p43162-e177398.adobeaemcloud.com`
 
    - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
    - Bucket: publish-pXXXXX-eYYYY
-Esempio: `https://publish-author-p43162-e177398.adobeaemcloud.com`
+Esempio: `https://publish-p43162-e177398.adobeaemcloud.com`
 
 >[!NOTE]
 >
@@ -318,7 +318,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 **B. Per la produzione**
 
-Generare i token a livello di programmazione utilizzando l’API Adobe IMS:
+Genera i token a livello di programmazione utilizzando il comando cURL:
 
 **Credenziali richieste:**
 
