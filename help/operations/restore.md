@@ -77,11 +77,11 @@ Per informazioni dettagliate sulla gestione delle autorizzazioni, vedere [Autori
 
 1. Elenca tutti gli ambienti per il programma eseguendo una delle seguenti operazioni:
 
-   * Dal menu a sinistra, sotto **Servizi**, clicca sull&#39;icona![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Dati Ambienti**.
+   * Dal menu a sinistra, sotto **Servizi**, clicca sull&#39;icona![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Dati Ambienti**.
 
      ![Scheda Ambienti](assets/environments-1.png)
 
-   * Dal menu a sinistra, sotto **Programma, fai clic su** Panoramica ****, quindi dalla **scheda Ambienti**, fai clic sull&#39;icona ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**Flusso di lavoro Mostra Tutto.**
+   * Dal menu a sinistra, sotto **Programma, fai clic su** Panoramica **&#x200B;**, quindi dalla **scheda Ambienti**, fai clic sull&#39;icona ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**Flusso di lavoro Mostra Tutto.**
 
      ![Opzione Mostra tutto](assets/environments-2.png)
 
@@ -165,7 +165,7 @@ Se i clienti hanno domande specifiche o giustificate riguardanti l&#39;implement
 Nel determinare una mappatura area geografica dati adatta, Adobe Systems applica diversi criteri di priorità:
 
 1. **Non uscire dalla area geografica globale**\
-   Le implementazioni rimangono all&#39;interno di una delle principali regioni globali: **APAC,****EMEA** e **Americhe**.
+   Le implementazioni rimangono all&#39;interno di una delle principali regioni globali: **APAC,**&#x200B;**EMEA** e **Americhe**.
 
 2. **Non lasciare il continente**\
    Ove possibile, la replica e il failover dei dati rimangono nello stesso continente.
