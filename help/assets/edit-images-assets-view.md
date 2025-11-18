@@ -25,7 +25,7 @@ Dopo aver modificato un’immagine, puoi salvarla come nuova versione. Il contro
 
 ## Editing delle immagini {#edit-image}
 
-Vai alla interfaccia di visualizzazione Assets, utilizzando il Visualizza[ Assets collegare - ](https://experience.adobe.com/#/assets)e selezionando il archivio giusto. Per ricevere l’accesso, contatta l’amministratore dell’organizzazione.
+Vai alla interfaccia di visualizzazione Assets, utilizzando il Visualizza[&#x200B; Assets collegare - &#x200B;](https://experience.adobe.com/#/assets)e selezionando il archivio giusto. Per ricevere l’accesso, contatta l’amministratore dell’organizzazione.
 Per qualsiasi ulteriore informazione di riferimento, consulta: - [Introduzione all&#39;utilizzo di Adobe Experience Manager Assets Visualizza](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Comprendere la visualizzazione Assets utente interfaccia](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Assets Visualizza casi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases) d&#39;uso.
 <!--
 >[!CONTEXTUALHELP]
@@ -90,7 +90,7 @@ Gli utenti con diritto Express possono utilizzare il editor Express incorporato 
 ![Express in Essentials interfaccia](/help/assets/assets/express-in-essentials-ui.jpg)
 Per modificare le immagini utilizzando [!DNL Adobe Express] editor incorporati, seguire i passaggi seguenti:
 
-1. Vai all AEM Assets Visualizza utilizzando il Visualizza[ collegare - ](https://experience.adobe.com/#/assets)AEM Assets e seleziona il archivio giusto.
+1. Vai all AEM Assets Visualizza utilizzando il Visualizza[&#x200B; collegare - &#x200B;](https://experience.adobe.com/#/assets)AEM Assets e seleziona il archivio giusto.
 1. Fai clic su **Risorse**, immetti una cartella e seleziona un’immagine.
 1. Fai clic su **Apri in Adobe Express**. L’immagine si apre in un’area di lavoro Express.
 1. Apporta le modifiche necessarie all’immagine.
