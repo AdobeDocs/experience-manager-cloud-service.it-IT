@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 23%
+source-wordcount: '1026'
+ht-degree: 21%
 
 ---
 
@@ -19,13 +19,13 @@ Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei p
 
 >[!IMPORTANT]
 >
->La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
+>La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
 >
 >Per determinare il tipo di servizio del programma (AMS o AEMaaCS), vedi [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Panoramica {#overview}
 
-La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai diritti delle soluzioni disponibili per tutti i programmi, inclusi ciò che viene utilizzato e ciò che è disponibile. Inoltre, le metriche di consumo delle richieste di contenuto hanno mostrato tendenze mensili per la soluzione Sites.
+La dashboard delle licenze di Cloud Manager consente di accedere facilmente ai diritti delle soluzioni disponibili per tutti i programmi, tra cui la quantità utilizzata e quella disponibile. Inoltre, le metriche di consumo delle richieste di contenuto hanno mostrato tendenze mensili per la soluzione Sites.
 
 ## Accedere alla dashboard delle licenze {#using-dashboard}
 
@@ -67,6 +67,15 @@ Ogni sezione riepiloga ciò che è disponibile e come viene utilizzato, se del c
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Il pulsante **Visualizza dettagli sull&#39;utilizzo** nell&#39;area Licenza di Cloud Manager fornisce un&#39;analisi dettagliata dell&#39;utilizzo corrente delle risorse. Se cliccato, si apre un report o un dashboard che mostra metriche importanti relative alla licenza. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Questa funzionalità consente di monitorare e assicurarsi di rimanere entro i limiti del contratto, offrendo al contempo informazioni approfondite per una migliore pianificazione e ottimizzazione delle risorse.
+
+Il pulsante **Visualizza dettagli sull&#39;utilizzo** è *disabilitato* (disattivato) nei casi seguenti:
+
+* La soluzione non fa parte del contratto e non ha crediti. Il pulsante rimane disponibile se sono presenti crediti, anche se tutti i crediti vengono utilizzati.
+* Nessun programma Cloud Manager configurato per tale soluzione.
+* Un flag di funzione che regola i dettagli di utilizzo è disabilitato. Deve essere *abilitato* (attivato) per la tua organizzazione prima che il pulsante diventi disponibile.
+* L&#39;utilizzo è esplicitamente disabilitato per la soluzione. Attualmente, questa situazione si applica solo a Edge Delivery Services.
+
+
 
 ### Dettagli sull’utilizzo di Sites {#sites-usage-details}
 
