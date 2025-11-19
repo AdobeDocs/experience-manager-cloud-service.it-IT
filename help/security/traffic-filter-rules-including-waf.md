@@ -4,8 +4,8 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
 1. Leggi e prova l’esercitazione per comprendere concretamente come utilizzare le regole del filtro del traffico, incluse le regole WAF, se disponi della licenza. Il tutorial illustra come distribuire le regole in un ambiente di sviluppo, simulare traffico dannoso, scaricare i [Registri CDN](#cdn-logs) e analizzarli negli [strumenti della dashboard](#dashboard-tooling).
 1. Copia le regole iniziali consigliate in `cdn.yaml` e implementa la configurazione nell’ambiente di produzione con alcune regole in modalità registro.
 1. Dopo aver raccolto alcuni dati di traffico, analizza i risultati utilizzando gli [strumenti della dashboard](#dashboard-tooling) per vedere se ci sono state corrispondenze. Cerca i falsi positivi e apporta le eventuali modifiche necessarie, in ultima analisi abilitando tutte le regole iniziali in modalità blocco.
-1. Se necessario, aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo per prima un test con traffico simulato in ambienti di sviluppo prima di distribuirlo negli ambienti di staging e produzione in modalità registro e in seguito in modalità blocco.
+1. Se necessario, aggiungi regole personalizzate basate sull’analisi dei registri CDN, eseguendo un test con traffico simulato in ambienti di sviluppo prima di implementarle negli ambienti di staging e di produzione in modalità registro e in seguito in modalità blocco.
 1. Monitora costantemente il traffico e modifica le regole man mano che il panorama delle minacce evolve.
 
 ## Configurazione {#setup}
@@ -82,8 +82,6 @@ Di seguito è riportato un processo end-to-end di alto livello consigliato per i
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -120,8 +118,6 @@ Di seguito è riportato un esempio di un set di regole per il filtro del traffic
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -302,8 +298,6 @@ Questa regola blocca le richieste provenienti da **IP192.168.1.1**:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -320,8 +314,6 @@ Questa regola blocca le richieste nel percorso `/helloworld` al momento della pu
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -342,8 +334,6 @@ Questa regola blocca le richieste che contengono il parametro di query `foo` al 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -367,8 +357,6 @@ Questa regola blocca le richieste al percorso `/block-me` al momento della pubbl
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -393,8 +381,6 @@ Questa regola blocca l’accesso ai Paesi OFAC:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -449,8 +435,6 @@ Questa regola blocca un client per 5 millisecondi quando supera la media di 60 r
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -475,8 +459,6 @@ Blocca le richieste per 60 secondi nel percorso /critical/resource quando supera
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -512,8 +494,6 @@ La proprietà dell’avviso può essere applicata al nodo dell’azione per tutt
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -533,13 +513,11 @@ Una notifica e-mail [Centro azioni](/help/operations/actions-center.md) verrà i
 
 Se questa soglia viene raggiunta, Adobe bloccherà il traffico da tale indirizzo IP. Tuttavia si consiglia di adottare misure aggiuntive per proteggere l’origine, tra cui la configurazione delle regole del filtro del traffico del limite di frequenza e bloccare i picchi a soglie più basse. Per una procedura guidata, consulta [Tutorial sul blocco degli attacchi DoS e DDoS tramite le regole del traffico](#tutorial-blocking-DDoS-with-rules).
 
-Questo avviso è attivato per impostazione predefinita, ma può essere disattivato utilizzando la proprietà *defaultTrafficAlerts* e impostandola su false. Una volta attivato, l’avviso non si riattiverà fino al giorno successivo (UTC).
+Questo avviso è abilitato per impostazione predefinita, ma può essere disabilitato utilizzando la proprietà *defaultTrafficAlerts* e impostandola su false. Una volta attivato, l’avviso non si riattiverà fino al giorno successivo (UTC).
 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
    defaultTrafficAlerts: false
@@ -578,8 +556,6 @@ L’esempio seguente mostra un esempio `cdn.yaml` e due voci di registro CDN:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -679,8 +655,6 @@ Inizia con queste regole:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
