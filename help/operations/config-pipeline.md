@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
+source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -63,21 +63,32 @@ Per informazioni su come creare e configurare **pipeline di configurazione di Ed
 Ogni file di configurazione inizia con proprietà simili al seguente snippet di esempio:
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | Proprietà | Descrizione | Predefiniti |
 |---|---|---|
 | `kind` | Stringa che determina il tipo di configurazione, ad esempio inoltro registro, regole del filtro del traffico o trasformazioni richieste | Obbligatorio, nessun valore predefinito |
 | `version` | Stringa che rappresenta la versione dello schema | Obbligatorio, nessun valore predefinito |
-| `envTypes` | Questa matrice di stringhe è una proprietà figlio del nodo `metadata`. Per **Distribuzione pubblicazione**, i valori possibili sono dev, stage, prod o qualsiasi combinazione e determina per quali tipi di ambiente viene elaborata la configurazione. Ad esempio, se l&#39;array include solo `dev`, la configurazione non viene caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì. Per **Edge Delivery**, deve essere utilizzato solo un valore di `prod`. | Tutti i tipi di ambiente, ovvero (dev, stage, prod) per la distribuzione delle pubblicazioni o solo prod per Edge Delivery. |
+| `metadata` | (Facoltativo) Contiene un array di stringhe `envTypes` che determina per quali tipi di ambiente viene elaborata la configurazione. Per **Distribuzione pubblicazione** i valori possibili sono `dev`, `stage` e `prod`. Per **Edge Delivery**, deve essere utilizzato solo un valore di `prod`. Ad esempio, se l&#39;array include solo `dev`, la configurazione non viene caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì. | Tutti i tipi di ambiente, ovvero (dev, stage, prod) per la distribuzione delle pubblicazioni o solo prod per Edge Delivery. |
 
 È possibile utilizzare l&#39;utilità `yq` per convalidare localmente la formattazione YAML del file di configurazione (ad esempio, `yq cdn.yaml`).
 
-## Struttura delle cartelle {#folder-structure}
+## Consegna pubblicazione {#yamls-for-aem}
+
+Le configurazioni di **Distribuzione pubblicazione** verranno distribuite in un ambiente di destinazione. Quando si esegue il targeting di più ambienti, è possibile organizzare i diversi file in modi diversi. Ad esempio, se l&#39;array include solo `dev`, la configurazione non viene caricata negli ambienti di staging o di produzione, anche se la configurazione è distribuita lì.
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### Struttura delle cartelle {#folder-structure}
 
 Una cartella denominata `/config` o simile deve trovarsi nella parte superiore della struttura, con uno o più file YAML in una struttura al di sotto di essa.
 
@@ -115,7 +126,7 @@ La struttura del file è simile alla seguente:
 Utilizza questa struttura quando la stessa configurazione è sufficiente per tutti gli ambienti e per tutti i tipi di configurazione (CDN, inoltro registro e così via). In questo scenario, la proprietà dell&#39;array `envTypes` includerebbe tutti i tipi di ambiente.
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
@@ -175,7 +186,7 @@ La struttura del file è simile alla seguente:
 
 Una variazione di questo approccio consiste nel mantenere un ramo separato per ogni ambiente.
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Le pipeline di configurazione di Edge Delivery non dispongono di ambienti di sviluppo, staging e produzione separati. Negli ambienti di distribuzione della pubblicazione, le modifiche progrediscono attraverso i livelli di sviluppo, stage e produzione. Al contrario, una pipeline di configurazione di Edge Delivery applica la configurazione direttamente a tutte le mappature di dominio registrate in Cloud Manager per un sito Edge Delivery.
 
@@ -188,7 +199,7 @@ Di conseguenza, distribuisci una struttura di file semplice come:
   logForwarding.yaml
 ```
 
-Se una regola deve essere diversa per ogni sito Edge Delivery, utilizza la sintassi *when* per distinguere le regole tra loro. Ad esempio, il dominio corrisponde a dev.example.com nello snippet seguente, che può essere distinto dal dominio www.example.com.
+Se una regola deve essere diversa per ogni sito Edge Delivery, utilizza la sintassi *when* per distinguere le regole tra loro. Si noti, ad esempio, che il dominio corrisponde a dev.example.com nello snippet seguente, che può essere distinto dal dominio `www.example.com`.
 
 ```
 kind: "CDN"
@@ -220,8 +231,6 @@ Il frammento seguente è un esempio dell&#39;utilizzo della variabile di ambient
 ```
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
