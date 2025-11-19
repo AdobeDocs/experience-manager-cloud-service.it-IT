@@ -4,7 +4,7 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%
@@ -44,8 +44,6 @@ Prima di configurare il traffico sulla rete CDN, è necessario effettuare le seg
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    ```
 
 1. Posizionare il file in una cartella di primo livello denominata *config* o simile, come descritto in [Pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
@@ -79,8 +77,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -227,8 +223,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -313,8 +307,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -397,8 +389,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -456,8 +446,6 @@ Di seguito è riportato un esempio di regola del selettore di origine che può e
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -483,8 +471,6 @@ Di seguito è riportato un esempio di regola del selettore di origine che può e
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -523,8 +509,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
