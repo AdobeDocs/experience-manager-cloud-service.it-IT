@@ -4,7 +4,7 @@ description: Scopri come ignorare la pagina di errore predefinita ospitando file
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ Esempio di configurazione:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ In questo modo, attivi direttamente il gestore degli errori della rete CDN per t
 
 ### Tutorial
 
-Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
+Per istruzioni dettagliate su come creare, distribuire e verificare le pagine di errore CDN distribuite, consulta l&#39;esercitazione [Pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages).
 
 
