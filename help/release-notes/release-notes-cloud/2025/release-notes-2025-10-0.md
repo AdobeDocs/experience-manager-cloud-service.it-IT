@@ -1,20 +1,18 @@
 ---
-title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Note sulla versione 2025.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Note sulla versione 2025.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 33655e7d58f19a5637ad120d8df537015f2f0aec
+source-git-commit: c5918c887be60c5198b762d860fe72afd31df352
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 69%
+source-wordcount: '1894'
+ht-degree: 59%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione 2025.10.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione funzionale 2025.10.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.11.0) è il venerdì 20 novembre 2025. La prossima versione funzionale (2025.12.0) è pianificata per il venerdì 11 dicembre 2025.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2025.10.0) è il venerdì 30 ottobre 2025. La prossima versione funzionale (2025.11.0) è pianificata per il venerdì 20 novembre 2025.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -43,6 +41,14 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Nuove funzioni in Experience Manager Sites {#new-sites}
+
+* [Lanci per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): gli autori dei contenuti possono ora creare e pianificare varianti future di contenuti strutturati utilizzando Lanci per frammenti di contenuto. La nuova console Frammenti di contenuto consente di creare, modificare, gestire e pianificare i lanci di frammenti di contenuto come rami per contenuti futuri che possono essere sincronizzati con il ramo di origine. Una nuova Visualizzazione differenze offre una panoramica chiara di tutte le modifiche apportate al contenuto prima di confermare un lancio per la pubblicazione futura.
+
+* L&#39;editor del modello di contenuto [per i frammenti di contenuto di AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) è stato modernizzato per l&#39;allineamento con altre interfacce basate su React Spectrum in AEM. L’implementazione dell’interfaccia utente e il modello di estensibilità sono ora coerenti con l’editor di frammenti di contenuto e l’editor universale. Il nuovo editor di modelli è ora predefinito quando viene aperto dalla nuova interfaccia di amministrazione del modello di contenuto. Quando si apre un modello di contenuto nell’interfaccia Touch, si apre l’editor dell’interfaccia Touch e viene presentata l&#39;opzione di provare il nuovo editor.
 
 <!--
 
@@ -63,6 +69,24 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 -->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Nuove funzioni in Experience Manager Forms {#new-features-forms}
+
+**Editor universale per moduli adattivi e frammenti di moduli**
+
+Universal Editor ora offre un’esperienza di authoring unificata per la creazione di Forms adattivi e frammenti di moduli riutilizzabili. Gli autori possono progettare i moduli visivamente all’interno di un ambiente WYSIWYG intuitivo, sfruttando potenti estensioni e funzionalità di invio complete. L’editor integra la convalida reCAPTCHA per una maggiore sicurezza, fornisce servizi di precompilazione per ridurre l’input manuale e supporta la progettazione reattiva su tutti i dispositivi.
+
+**Estensioni disponibili:**
+
+* **Editor regole**: l&#39;editor di regole visive consente agli autori di moduli di aggiungere un comportamento dinamico ai campi modulo senza codificare, supportare regole basate su eventi, convalida immediata e gestione degli errori.
+* **Proprietà modulo**: procedura guidata che consente agli utenti di configurare le azioni di invio, il servizio di precompilazione, il messaggio di ringraziamento e altri comportamenti relativi ai moduli direttamente all&#39;interno dell&#39;editor.
+* **Source dati modulo e riferimento associazione**: l&#39;estensione dell&#39;origine dati consente agli autori dei moduli di aggiungere componenti associati a un modello dati direttamente in un modulo adattivo e selezionare un riferimento associazione da una struttura ad albero per tutti i componenti.
+
+**Azioni di invio supportate:**
+
+Universal Editor supporta una gamma completa di flussi di lavoro per l’invio, tra cui Azione di invio personalizzata, Invia a Microsoft SharePoint, Invia a Microsoft OneDrive, Invia ad Azure Blob Storage, Invia a endpoint REST, Richiama un flusso di lavoro AEM, Richiama un flusso Power Automate, Invia a Marketo Engage, Invia a Adobe Experience Platform (AEP), Invia a foglio di calcolo, Invia utilizzando il modello dati del modulo (FDM), Invia a Workfront Fusion e Invia e-mail.
+
+Per informazioni dettagliate, vedere la [documentazione di Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Per informazioni sulla configurazione delle azioni di invio, vedere [Azione di invio modulo adattivo](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -121,11 +145,37 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### [!DNL Experience Manager] come [!DNL Cloud Service] nuove funzionalità di base {#foundation-new}
+### Nuove funzioni in Release Management {#new-features-release-management}
 
-#### Prossime versioni obsolete dell’API Java {#java-api-deprecation}
+**Sospendi aggiornamenti di manutenzione automatica**
 
-Diverse API obsolete sono state contrassegnate per la rimozione il 31 agosto e pertanto non è più necessario farvi riferimento.  Riceverai notifiche dal Centro operativo se nel codice viene rilevato un utilizzo API obsoleto e, dopo il 3 dicembre, verranno visualizzati avvisi durante le build di Cloud Manager per sottolineare l’importanza di rimuovere l’utilizzo. Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/release-notes/deprecated-removed-features.md#aem-apis). Per comodità, tuttavia, le seguenti API sono elencate di seguito:
+I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. [Le nuove funzionalità self-service](/help/implementing/deploying/quiet-hours-update-free-periods.md) consentono di interrompere gli aggiornamenti di manutenzione automatica quando sono importanti, in modo che i team rimangano concentrati.
+
+* Quiet Hours (Ore tranquille): blocca la manutenzione automatica durante gli orari impostati ogni giorno. Ideale per le ore lavorative, le corse notturne o i cutover mattutini.
+* Periodo senza aggiornamento: blocca la manutenzione automatica per una settimana intera. Utilizzala per lanci, promozioni o blocchi annuali.
+
+>[!NOTE]
+>
+>Disponibile come funzionalità a disponibilità limitata il 25 settembre.
+>Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
+
+### Inoltro dei registri di AEM a più destinazioni {#log-forwarding}
+
+È ora possibile inoltrare i registri di AEM a Amazon S3, Sumo Logic, Dynatrace e al tuo account New Relic (non all’account fornito da Adobe). I registri di AEM (incluso Apache/Dispatcher) sono supportati per queste destinazioni di registrazione, ma non per i registri CDN.
+
+Vedi il set completo di [destinazioni di inoltro log supportate](/help/implementing/developing/introduction/log-forwarding.md).
+
+### Pipeline di configurazione per Edge Delivery Services {#config-pipeline-eds}
+
+Le pipeline di configurazione sono ora supportate per i siti generati con Edge Delivery Services, espandendo questa funzionalità oltre la semplice distribuzione di AEM Author e AEM Publish. Puoi utilizzare le pipeline di configurazione per gestire impostazioni quali la configurazione CDN, incluse le regole del filtro del traffico e i selettori di origine. Consulta le [configurazioni supportate](/help/operations/config-pipeline.md#configurations).
+
+Le pipeline di configurazione Edge Delivery ora supportano i secret tramite le variabili pipeline di Cloud Manager.
+
+Consulta [Aggiungere pipeline Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+
+### Prossime versioni obsolete dell’API Java {#java-api-deprecation}
+
+Diverse API obsolete sono state contrassegnate per la rimozione il 31 agosto e pertanto non è più necessario farvi riferimento.  Riceverai notifiche dal Centro operativo se nel codice viene rilevato un utilizzo di API obsolete e dopo il 13 novembre verranno visualizzati avvisi durante le build di Cloud Manager per sottolineare l’importanza di cessare tale utilizzo. Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/release-notes/deprecated-removed-features.md#aem-apis). Per comodità, tuttavia, le seguenti API sono elencate di seguito:
 
 +++ Espandi per visualizzare le rimozioni
 
@@ -157,42 +207,27 @@ OSGi properties:
 
 -->
 
-#### Rimozione runtime Java 11 {#java11-runtime-deprecation}
+### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Adobe ha aggiornato gli ambienti **Stage** e **Produzione** al runtime **Java 21** a prestazioni superiori il 14 ottobre 2025. A partire dal **fine gennaio**, né il SDK di AEM Cloud Service né alcun ambiente cloud funzioneranno con Java 11 runtime.
+Adobe ha aggiornato gli ambienti **Stage** e **Produzione** al runtime **Java 21** a prestazioni superiori il 14 ottobre 2025. A partire dalla fine di gennaio, né il SDK di AEM Cloud Service né alcun ambiente cloud funzioneranno con il runtime Java 11.
 
 >[!NOTE]
 >
 > Per sfruttare le ultime ottimizzazioni delle prestazioni e i miglioramenti del linguaggio, si consiglia di creare con Java 17 o Java 21 (preferito). La creazione di con Java 8 e Java 11 rimane supportata per il momento, ma verrà rimossa in una delle prossime versioni. Prima della deprecazione verrà inviata una comunicazione separata. Consulta la sezione *requisiti tempo di compilazione* di [questo articolo](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 >
 
-#### Applicazione dei criteri di configurazione dei registri Java di AEM {#logconfig-policy}
+### Applicazione dei criteri di configurazione dei registri Java di AEM {#logconfig-policy}
 
 Come indicato nelle note sulla versione di aprile, i registri Java di AEM devono seguire un formato standard per garantire un monitoraggio affidabile in tutti gli ambienti del cliente. Le configurazioni di registro personalizzate, ad esempio modifiche alla formattazione del registro, ai file di output o ai livelli di registro predefiniti, non sono più supportate. I registri devono rimanere indirizzati ai file predefiniti e i livelli di registro predefiniti per il codice prodotto AEM devono essere mantenuti. Consulta tutti i dettagli nell’articolo [Registrazione](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partire dal **10 dicembre**, le sostituzioni di registrazione personalizzate non supportate verranno ignorate. In base alla nostra analisi, la maggior parte della clientela non sarà interessata e Adobe ha contattato tutti coloro la cui configurazione corrente potrebbe essere coinvolta.
+A partire dal **20 novembre**, le sostituzioni di registrazione personalizzate non supportate verranno ignorate. In base alla nostra analisi, la maggior parte della clientela non sarà interessata e Adobe ha contattato tutti coloro la cui configurazione corrente potrebbe essere coinvolta.
 
 Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento di registrazione personalizzato. Ad esempio:
 
 * Se il sistema di inoltro dei registri prevede un formato di registro personalizzato, potrebbe essere necessario modificare le regole di acquisizione.
 * Se in precedenza è stato ridotto il livello di verbosità del registro modificando i livelli del registro, il ripristino dei livelli predefiniti potrebbe aumentare il volume del registro.
 
-### Caratteristiche di [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter {#foundation-early-adopter}
-
-#### Sospendi aggiornamenti di manutenzione automatica {#pause-updates}
-
-I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. [Le nuove funzionalità self-service](/help/implementing/deploying/quiet-hours-update-free-periods.md) consentono di interrompere gli aggiornamenti di manutenzione automatica quando sono importanti, in modo che i team rimangano concentrati.
-
-* Quiet Hours (Ore tranquille): blocca la manutenzione automatica durante gli orari impostati ogni giorno. Ideale per le ore lavorative, le corse notturne o i cutover mattutini.
-* Periodo senza aggiornamento: blocca la manutenzione automatica per una settimana intera. Utilizzala per lanci, promozioni o blocchi annuali.
-
->[!NOTE]
->
->Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
->
-
-#### Edge Computing (programma Beta) {#edge-computing}
+### Edge Computing (programma Beta) {#edge-computing}
 
 Edge Computing consente di eseguire JavaScript a livello CDN, avvicinando l’elaborazione dati all’utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
 
@@ -206,14 +241,14 @@ I casi d’uso comuni includono:
 
 Abbiamo un numero limitato di opportunità disponibili per i progetti AEM Publish Delivery o Edge Delivery Services per i siti di produzione live. Se sei interessato a partecipare o desideri saperne di più, invia un’e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d’uso.
 
-#### Autenticazione Edge per Edge Delivery Services (programma Beta) {#edge-authentication}
+### Autenticazione Edge per Edge Delivery Services (programma Beta) {#edge-authentication}
 
 L’Autenticazione edge consente di limitare l’accesso alle pagine Edge Delivery Services solo a coloro che si sono autenticati con il provider di identità (IdP). Ciò avviene distribuendo un file YAML di configurazione OpenID Connect (OIDC).
 
 Se ti interessa, invia una e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d’uso ed eventuali domande.
 
 <!--
-#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
@@ -221,7 +256,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-#### Distribuzioni di produzione canary per testare il codice prima di accettare il traffico live (programma Beta) {#canary-beta}
+### Distribuzioni di produzione canary per testare il codice prima di accettare il traffico live (programma Beta) {#canary-beta}
 
 Convalida una build di produzione con traffico di prova esclusivamente interno prima di renderla disponibile agli utenti finali. Invia alla produzione, instrada solo il traffico canary (utilizzando un’intestazione speciale), monitora il comportamento, quindi passa al traffico live o ripristina la versione precedente, senza che ciò abbia un impatto sui clienti.
 
@@ -230,7 +265,7 @@ Distribuisci le versioni del codice in produzione, ma limitalo al traffico di te
 Invia un’e-mail a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) per richiedere l’accesso e condividere il feedback.
 
 
-#### Risposte basate sull’intelligenza artificiale - Risposte più intelligenti e in base al contesto per AEM Sites (programma Beta) {#ai-answers-beta}
+### Risposte basate sull’intelligenza artificiale - Risposte più intelligenti e in base al contesto per AEM Sites (programma Beta) {#ai-answers-beta}
 
 AI Answers introduce un nuovo modo per i visitatori di interagire con il contenuto. Basato sulla tecnologia Retrieval-Augmented Generation (RAG), utilizza i dati gestiti da AEM per fornire risposte precise e coerenti direttamente all’interno delle esperienze digitali.
 
@@ -238,19 +273,14 @@ Stiamo preparando il lancio del programma Beta AI Answers e invitiamo i clienti 
 
 Per richiedere la partecipazione o ricevere aggiornamenti, contattare [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Accelerare lo sviluppo di AEM con l’intelligenza artificiale (programma Alpha)  {#ai-dev-alpha}
 
-I team Java stack di AEM utilizzano sempre più lo sviluppo basato sull’intelligenza artificiale in strumenti come Cursor, Claude Code, Visual Studio e IntelliJ per velocizzare la distribuzione delle funzioni e migliorare la qualità del codice. Stiamo raccogliendo esperienze reali per aiutare a modellare le future funzionalità di intelligenza artificiale supportate da Adobe.
-
-Condividi ciò che funziona per il tuo team e ciò che vorresti che Adobe fornisse inviando un&#39;e-mail a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
-#### Istantanee per RDE (programma Alpha) {#rde-snapshot-program}
+### Istantanee per RDE (programma Alpha) {#rde-snapshot-program}
 
 In Alpha, gli ambienti di sviluppo rapido (RDE) ora supportano una funzione per acquisire un’istantanea dello stato corrente del codice e del contenuto, che può essere ripristinata in un secondo momento. Questo può essere utile quando si sincronizza un codice che potrebbe essere necessario ripristinare o quando si passa da uno sviluppo di funzioni diverse all’altro. È inoltre possibile ripristinare solo il contenuto mutabile come punto di partenza noto per il test.
 
 Invia un’e-mail a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se ti interessa fornire un feedback su questa funzione.
 
-#### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
+### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
 Per motivi di osservabilità, AEM Cloud Service attualmente supporta [New Relic One](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornito da Adobe e [Dynatrace](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gestito dal cliente. Mentre esploriamo il supporto di ulteriori opzioni APM, inviaci un’e-mail all’indirizzo [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) indicando il fornitore o la tecnologia che preferisci, oltre ai casi d’uso.
 
