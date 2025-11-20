@@ -354,12 +354,12 @@ Il nome file da modificare è `org.apache.sling.auth.oauth_client.impl.SlingUser
 
 ## Come migrare dal gestore di autenticazione Saml al gestore di autenticazione Oidc
 
-Quando AEM è già configurato con un gestore di autenticazione SAML e gli utenti sono presenti nel repository con [sincronizzazione dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) abilitata, possono verificarsi conflitti tra gli utenti SAML originali e i nuovi utenti OIDC.
+Quando AEM è già configurato con un gestore di autenticazione SAML e gli utenti sono presenti nel repository con [sincronizzazione dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) abilitata, possono verificarsi conflitti tra gli utenti SAML originali e i nuovi utenti OIDC.
 
 1. Configura [OidcAuthenticationHandler](#configure-oidc-authentication-handler) e abilita `idpNameInPrincipals` nella configurazione [SlingUserInfoProcessor](#configure-slinguserinfoprocessor)
 1. Imposta [ACL per gruppi esterni](#configure-acl-for-external-groups).
 1. Dopo l’accesso da parte degli utenti, è possibile eliminare i vecchi utenti creati dallo stesso gestore di autenticazione.
 
 >[!NOTE]
->Dopo aver disabilitato il gestore di autenticazione SAML e aver abilitato il gestore di autenticazione OIDC, se [la sincronizzazione dei dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) non è abilitata, le sessioni esistenti non saranno più valide. Agli utenti verrà richiesto di eseguire nuovamente l’autenticazione, che determinerà la creazione di nuovi nodi utente OIDC nell’archivio.
+>Dopo aver disabilitato il gestore di autenticazione SAML e aver abilitato il gestore di autenticazione OIDC, se [la sincronizzazione dei dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) non è abilitata, le sessioni esistenti non saranno più valide. Agli utenti verrà richiesto di eseguire nuovamente l’autenticazione, che determinerà la creazione di nuovi nodi utente OIDC nell’archivio.
 
