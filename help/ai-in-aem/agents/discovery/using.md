@@ -3,7 +3,7 @@ title: Panoramica di Discovery Agent
 description: Scopri come utilizzare Discovery Agent per distribuire contenuti AEM rilevanti on-demand attraverso messaggi di richiesta conversazionali per un’esperienza di rilevamento semplificata e senza clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
