@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilità limitata" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-
 * **Ore non interattive** - È possibile definire un intervallo di tempo giornaliero (fino a 8 ore) in cui non verranno eseguiti aggiornamenti.
 * **Aggiorna periodi liberi** - È possibile definire un periodo di tempo di 7 giorni in cui gli aggiornamenti non verranno eseguiti. È possibile avere fino a tre periodi liberi di aggiornamento in un intervallo di 12 mesi.
 
-Le funzioni di aggiornamento dei periodi liberi e delle ore non interattive sono configurate in base al singolo programma.
+Le funzioni di aggiornamento dei periodi liberi e delle ore non interattive sono configurate in base al singolo programma. Tieni presente che solo gli utenti con il &quot;ruolo utente&quot; di **Proprietario business** e **Responsabile dell&#39;implementazione** possono visualizzare e utilizzare queste funzionalità.
 
 Inoltre, per informazioni sui periodi di manutenzione automatica pianificati per AEM as a Cloud Service, consulta la pagina [Roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
@@ -76,3 +76,13 @@ Vai a **Attività>Aggiornamenti automatici>Opzioni di aggiornamento**.
 ![Aggiorna configurazione periodi liberi](assets/update-free-periods.png)
 
 Un&#39;icona **Attivo** verrà visualizzata accanto al periodo di disponibilità dell&#39;aggiornamento attualmente attivo e un&#39;icona **Completo** accanto ai periodi di disponibilità dell&#39;aggiornamento completati.
+
+## Periodi di esclusione dalla manutenzione pianificata {#planned-maintenance}
+
+Adobe prevede diversi periodi di esclusione dalla manutenzione pianificata. Questi periodi sono definiti da Adobe per ridurre al minimo i rischi associati agli eventi critici e in genere si verificano due o tre volte all’anno. Puoi visualizzare la pianificazione esatta dei periodi di esclusione dalla manutenzione nella pagina [Roadmap sulla versione di manutenzione](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+Per configurare in modo accurato i periodi senza aggiornamento, i periodi di esclusione della manutenzione vengono visualizzati anche nell’interfaccia utente Ore non interattive e Aggiorna periodi liberi.
+
+![Periodi di esclusione dalla manutenzione pianificata](assets/planned-maintenance.png)
+
+Non è possibile creare un periodo gratuito di aggiornamento durante i periodi di esclusione.
