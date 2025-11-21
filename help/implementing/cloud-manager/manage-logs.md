@@ -1,19 +1,19 @@
 ---
-title: Accesso e gestione dei registri
+title: Accedere e gestire i registri
 description: Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 68%
 
 ---
 
 
-# Accesso e gestione dei registri {#manage-logs}
+# Accedere e gestire i registri {#manage-logs}
 
 Scopri come accedere ai registri e gestirli per facilitare il processo di sviluppo in AEM as a Cloud Service.
 
@@ -21,9 +21,7 @@ Dalla scheda **Ambienti** della pagina **Panoramica** o dalla pagina Dettagli de
 
 I registri vengono conservati per sette giorni.
 
-## Download dei registri {#download-logs}
-
-Per scaricare i registri, effettua le seguenti operazioni:
+## Scaricare i registri {#download-logs}
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.
 
@@ -49,7 +47,7 @@ Per scaricare i registri, effettua le seguenti operazioni:
 
 ![Registri dalla schermata Ambienti](assets/download-logs.png)
 
-## Registri tramite API {#logs-through-api}
+## Registra tramite l’API {#logs-through-api}
 
 Oltre che dall’interfaccia utente, i registri possono essere scaricati tramite l’API e l’interfaccia della riga di comando.
 
@@ -101,5 +99,5 @@ Per ulteriori informazioni sull’API di Cloud Manager e sull’interfaccia dell
 
 Per ulteriori informazioni sui file di registro in AEM as a Cloud Service, consulta le seguenti risorse aggiuntive:
 
-* [File di registro di Cloud 5 AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [File di registro di Cloud 5 AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debug di AEM as a Cloud Service tramite i registri](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
