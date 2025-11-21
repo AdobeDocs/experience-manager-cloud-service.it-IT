@@ -3,9 +3,9 @@ title: Abilità nella creazione di comunicazioni
 description: Scopri l’abilità di creazione di comunicazioni dell’agente di produzione Experience e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le comunicazioni interattive sono documenti personalizzati, basati su dati, progettati per la corrispondenza aziendale, ad esempio estratti conto, documenti relativi alle politiche, fatture, kit di benvenuto e avvisi sui benefit. A differenza dei moduli che raccolgono input dagli utenti, le comunicazioni interattive generano documenti di output con contenuto dinamico specifico per il destinatario.
 
-L’abilità di creazione di comunicazioni è una funzionalità dell’agente di produzione di esperienze progettata per sviluppare comunicazioni interattive utilizzando interazioni nel linguaggio naturale. Consente agli utenti di creare una corrispondenza personalizzata basata su dati senza processi manuali tradizionali. Questa abilità elimina la complessità della progettazione delle comunicazioni interpretando i prompt conversazionali e generando automaticamente strutture di documenti, layout e associazioni di dati appropriate. L’abilità viene evidenziata tramite l’assistente di intelligenza artificiale e Experience Hub.
+L’abilità di creazione delle comunicazioni è una funzionalità dell’agente di produzione dell’esperienza progettata per sviluppare comunicazioni interattive utilizzando prompt del linguaggio naturale. Questa abilità genera automaticamente una corrispondenza personalizzata basata su dati per la stampa (in formato PDF). L’abilità viene evidenziata tramite l’Assistente IA.
 
 Alcuni dei vantaggi chiave dell’abilità di creazione di comunicazioni includono:
 
@@ -23,13 +23,16 @@ Alcuni dei vantaggi chiave dell’abilità di creazione di comunicazioni includo
 * **Corrispondenza coerente e nel marchio**: crea comunicazioni che seguono il branding, i modelli e le linee guida di stile della tua organizzazione utilizzando modelli e stili approvati.
 * **Abbassare la barriera tecnica**: consente agli utenti aziendali di creare facilmente comunicazioni senza dover disporre di competenze tecniche avanzate o di prodotto approfondite.
 
-## Casi d’uso e prompt di esempio {#use-cases-prompts}
+## Funzionalità {#capabilities}
 
-L’abilità di creazione di comunicazioni ti consente di creare corrispondenza all’interno del brand inviando i requisiti in un linguaggio semplice.
+* **Creare comunicazioni personalizzate con prompt di testo normale**: è possibile creare documenti di comunicazione per la stampa (in formato PDF) inviando i requisiti in linguaggio normale. L&#39;agente genera automaticamente strutture di documenti, layout e associazioni di dati appropriati in base alla descrizione del linguaggio naturale.
 
-Viene richiesto di specificare il modello, indicare il percorso preferito per il salvataggio della comunicazione e fornire eventuali dettagli sull&#39;origine dati. In base a queste selezioni, l’abilità di creazione della comunicazione genera automaticamente il documento appropriato.
+* **Crea da modelli**: puoi utilizzare modelli organizzativi approvati per garantire la coerenza del brand e gli standard di conformità. L’agente sfrutta i modelli e le linee guida di stile esistenti per creare corrispondenza all’interno del brand che soddisfa i requisiti normativi.
 
-### Prompt di esempio {#sample-prompts}
+* **Importa e converti documenti esistenti in comunicazioni interattive**: puoi importare e trasformare documenti esistenti in comunicazioni interattive. L’agente analizza il contenuto caricato per rilevare i campi, mantenere i layout e creare corrispondenza basata sui dati con funzionalità di contenuto dinamico. I formati supportati includono PDF, file XDP, immagini (JPG, PNG) e modelli disegnati a mano.
+
+
+## Prompt di esempio {#sample-prompts}
 
 * *Crea un rendiconto bancario con tabella di cronologia delle transazioni e grafico dei saldi*
 * *Genera un riepilogo del portfolio investimenti con grafici delle prestazioni e suddivisione delle risorse*
@@ -47,6 +50,8 @@ Viene richiesto di specificare il modello, indicare il percorso preferito per il
 ## Passaggi successivi {#refine-with-ic-editor}
 
 Dopo aver creato la struttura di comunicazione iniziale mediante l&#39;Assistente AI o Experience Hub, è possibile utilizzare l&#39;Editor comunicazioni interattive per perfezionare e migliorare il documento:
+
+* **Modifica campi utilizzando i prompt del linguaggio naturale**: è possibile aggiungere, aggiornare e rimuovere senza problemi i campi e le relative proprietà all&#39;interno dei documenti utilizzando i prompt. L’agente interpreta le istruzioni e apporta le modifiche appropriate alla struttura del documento e alle configurazioni dei campi.
 
 * **Creazione di componenti incrementali**: è possibile aggiungere o modificare singoli componenti quali testo, immagini, grafici, tabelle e codici a barre tramite l&#39;editor visivo.
 

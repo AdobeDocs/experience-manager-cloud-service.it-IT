@@ -3,9 +3,9 @@ title: Abilità nella creazione di moduli
 description: Scopri le competenze di Experience Production Agent nella creazione di moduli e come utilizzare il linguaggio naturale per creare moduli da zero.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ semplici comandi per il linguaggio naturale, eliminando la necessità di imparar
 
 ## Funzionalità {#capabilitiess}
 
-* **Crea un nuovo modulo con prompt di testo normale**: puoi creare esperienze di modulo sul marchio inviando i requisiti in un linguaggio semplice.
+* **Crea un nuovo modulo con prompt di testo normale**: è possibile creare un modulo inviando i requisiti in linguaggio normale. L’agente genera automaticamente la struttura del modulo, i tipi di campo e le esperienze sul marchio appropriati in base alla descrizione del linguaggio naturale e al modello specificato. Questa funzionalità accelera la creazione dei moduli, garantendo al contempo il mantenimento degli standard di marchio e conformità.
 
-* **Importare un&#39;immagine PDF o un&#39;immagine e convertirla in un modulo**: è possibile importare e trasformare in moduli documenti PDF o immagini esistenti. L’agente analizza il contenuto caricato per rilevare i tipi di campo, mantenere i layout e migliorare i moduli con una progettazione reattiva e una logica di convalida. I formati supportati includono Acroforms, PDF XFA, flat PDF, immagini (JPG, PNG) e fotografie di moduli disegnati a mano.
+* **Importare un&#39;immagine PDF o un&#39;immagine e convertirla in un modulo**: è possibile importare e trasformare in moduli documenti PDF o immagini esistenti. L’agente analizza i contenuti caricati per rilevare i tipi di campo, mantenere i layout e migliorare i moduli con una logica di progettazione e convalida reattiva, garantendo al contempo il mantenimento degli standard di marchio e conformità. I formati supportati includono documenti PDF, immagini (JPG, PNG) e fotografie di moduli disegnati a mano.
 
   Quando si utilizza una delle funzionalità precedenti, viene richiesto di scegliere il tipo di modulo da creare, specificare un modello di moduli adattivi basato su Componenti core o un modello di moduli adattivi basato su Edge Delivery Services e indicare il percorso preferito per il salvataggio del modulo. Se stai creando un modulo basato su Edge Delivery Services, puoi anche specificare l’URL GitHub dell’archivio.
 
@@ -42,7 +42,7 @@ semplici comandi per il linguaggio naturale, eliminando la necessità di imparar
 
 ## Passaggi successivi {#refine-with-forms-experience-builder}
 
-Dopo aver creato la struttura del modulo iniziale tramite l’Assistente per l’intelligenza artificiale, puoi utilizzare l’estensione per la creazione di Forms per:
+Dopo aver creato la struttura del modulo iniziale tramite l’Assistente di intelligenza artificiale, puoi utilizzare Forms Experience Builder per:
 
 * **Aggiorna moduli**: aggiungi o modifica campi, regola i tipi di campo e aggiorna lo stile in base alle esigenze tramite l&#39;editor visivo.
 
