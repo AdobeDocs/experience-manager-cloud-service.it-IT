@@ -3,9 +3,9 @@ title: Abilità nella creazione di moduli
 description: Scopri le competenze di Experience Production Agent nella creazione di moduli e come utilizzare il linguaggio naturale per creare moduli da zero.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ semplici comandi per il linguaggio naturale, eliminando la necessità di imparar
 
 * **Crea un nuovo modulo con prompt di testo normale**: è possibile creare un modulo inviando i requisiti in linguaggio normale. L’agente genera automaticamente la struttura del modulo, i tipi di campo e le esperienze sul marchio appropriati in base alla descrizione del linguaggio naturale e al modello specificato. Questa funzionalità accelera la creazione dei moduli, garantendo al contempo il mantenimento degli standard di marchio e conformità.
 
-* **Importare un&#39;immagine PDF o un&#39;immagine e convertirla in un modulo**: è possibile importare e trasformare in moduli documenti PDF o immagini esistenti. L’agente analizza i contenuti caricati per rilevare i tipi di campo, mantenere i layout e migliorare i moduli con una logica di progettazione e convalida reattiva, garantendo al contempo il mantenimento degli standard di marchio e conformità. I formati supportati includono documenti PDF, immagini (JPG, PNG) e fotografie di moduli disegnati a mano.
+* **Importare un documento PDF e convertirlo in un modulo**: è possibile importare e trasformare documenti PDF esistenti in moduli. L’agente analizza i contenuti caricati per rilevare i tipi di campo, mantenere i layout e migliorare i moduli con una logica di progettazione e convalida reattiva, garantendo al contempo il mantenimento degli standard di marchio e conformità.
 
   Quando si utilizza una delle funzionalità precedenti, viene richiesto di scegliere il tipo di modulo da creare, specificare un modello di moduli adattivi basato su Componenti core o un modello di moduli adattivi basato su Edge Delivery Services e indicare il percorso preferito per il salvataggio del modulo. Se stai creando un modulo basato su Edge Delivery Services, puoi anche specificare l’URL GitHub dell’archivio.
 
@@ -40,7 +40,7 @@ semplici comandi per il linguaggio naturale, eliminando la necessità di imparar
 * *Crea un modulo di richiesta della carta di credito importando il file PDF disponibile all&#39;indirizzo &#39;https://[aem-author-url]/path/to/pdf/file*
 * *Crea un modulo di feedback utilizzando la boilerplate in &#39;<https://github.com/wkndforms/wesecure>&#39;*
 
-## Passaggi successivi {#refine-with-forms-experience-builder}
+## Ridefinisci il modulo {#refine-with-forms-experience-builder}
 
 Dopo aver creato la struttura del modulo iniziale tramite l’Assistente di intelligenza artificiale, puoi utilizzare Forms Experience Builder per:
 

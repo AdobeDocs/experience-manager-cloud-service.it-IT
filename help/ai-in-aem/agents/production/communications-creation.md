@@ -3,9 +3,9 @@ title: Abilità nella creazione di comunicazioni
 description: Scopri l’abilità di creazione di comunicazioni dell’agente di produzione Experience e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -25,45 +25,44 @@ Alcuni dei vantaggi chiave dell’abilità di creazione di comunicazioni includo
 
 ## Funzionalità {#capabilities}
 
-* **Creare comunicazioni personalizzate con prompt di testo normale**: è possibile creare documenti di comunicazione per la stampa (in formato PDF) inviando i requisiti in linguaggio normale. L&#39;agente genera automaticamente strutture di documenti, layout e associazioni di dati appropriati in base alla descrizione del linguaggio naturale.
+<!-- * **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description. -->
 
 * **Crea da modelli**: puoi utilizzare modelli organizzativi approvati per garantire la coerenza del brand e gli standard di conformità. L’agente sfrutta i modelli e le linee guida di stile esistenti per creare corrispondenza all’interno del brand che soddisfa i requisiti normativi.
 
-* **Importa e converti documenti esistenti in comunicazioni interattive**: puoi importare e trasformare documenti esistenti in comunicazioni interattive. L’agente analizza il contenuto caricato per rilevare i campi, mantenere i layout e creare corrispondenza basata sui dati con funzionalità di contenuto dinamico. I formati supportati includono PDF, file XDP, immagini (JPG, PNG) e modelli disegnati a mano.
+* **Importa e converti immagini e documenti esistenti in comunicazioni interattive**: puoi importare e trasformare documenti esistenti in comunicazioni interattive. L’agente analizza il contenuto caricato per rilevare i campi, mantenere i layout e creare corrispondenza basata sui dati con funzionalità di contenuto dinamico. I formati supportati includono PDF, immagini (JPG, PNG) e modelli disegnati a mano.
 
 
 ## Prompt di esempio {#sample-prompts}
 
-* *Crea un rendiconto bancario con tabella di cronologia delle transazioni e grafico dei saldi*
-* *Genera un riepilogo del portfolio investimenti con grafici delle prestazioni e suddivisione delle risorse*
-* *Creare un rendiconto del prestito con lo scadenzario dei pagamenti e il saldo rimanente*
-* *Crea un documento di polizza assicurativa con dettagli sulla copertura e suddivisione premi*
-* *Genera un riepilogo di richieste di rimborso con informazioni sullo stato e sui pagamenti*
-* *Crea un avviso di rinnovo dei criteri con termini aggiornati e grafico di confronto prezzi*
-* *Creare una fattura di utilità con il grafico di utilizzo, i dettagli di pagamento e la cronologia di fatturazione*
-* *Genera una notifica di servizio con riepilogo account e azioni*
-* *Crea un report annuale sull&#39;utilizzo con il grafico dei consumi mensile e l&#39;analisi dei costi*
-* *Creare una lettera di offerta di impiego con i dettagli relativi alla retribuzione e il riepilogo dei benefit*
-* *Genera un documento di onboarding dei dipendenti con i criteri aziendali e i moduli richiesti*
-* *Crea un avviso per i cittadini con informazioni ufficiali e istruzioni di risposta*
+* *Crea una comunicazione per un rendiconto del prestito utilizzando il modello all&#39;indirizzo https://[aem-author-url]/path/to/pdf/file*
+* *Crea una comunicazione da PDF in https://[aem-author-url]/path/to/pdf/file*
+* *Crea una comunicazione dal file di immagine all&#39;indirizzo https://[aem-author-url]/path/to/image/file*
+* Crea una lettera utilizzando il file PDF all&#39;indirizzo https://[aem-author-url]/path/to/pdf/file
 
-## Passaggi successivi {#refine-with-ic-editor}
+## Ottimizzare la comunicazione {#refine-with-ic-editor}
 
-Dopo aver creato la struttura di comunicazione iniziale mediante l&#39;Assistente AI o Experience Hub, è possibile utilizzare l&#39;Editor comunicazioni interattive per perfezionare e migliorare il documento:
+Dopo aver creato la struttura di comunicazione iniziale mediante l&#39;Assistente AI, è possibile utilizzare l&#39;Editor di comunicazioni interattive per perfezionare e migliorare il documento. Nell&#39;editor di comunicazioni interattive è possibile fornire prompt in linguaggio naturale per:
 
-* **Modifica campi utilizzando i prompt del linguaggio naturale**: è possibile aggiungere, aggiornare e rimuovere senza problemi i campi e le relative proprietà all&#39;interno dei documenti utilizzando i prompt. L’agente interpreta le istruzioni e apporta le modifiche appropriate alla struttura del documento e alle configurazioni dei campi.
+* **Aggiungi campi e contenuto**: aggiungi nuovi campi, blocchi di testo, immagini, grafici, tabelle e altri componenti ai documenti di comunicazione utilizzando prompt in linguaggio naturale. L’agente interpreta le istruzioni e inserisce gli elementi appropriati con la struttura e la formattazione corrette.
 
-* **Creazione di componenti incrementali**: è possibile aggiungere o modificare singoli componenti quali testo, immagini, grafici, tabelle e codici a barre tramite l&#39;editor visivo.
+* **Modifica campi e contenuto**: modifica i campi e il contenuto esistenti nei documenti di comunicazione tramite comandi di conversazione. Aggiorna le proprietà dei campi, modifica il contenuto del testo, regola le associazioni di dati e perfeziona le configurazioni dei componenti.
 
-* **Associazione dati dinamici**: configura origini dati, imposta mappature campi e associa componenti a dati back-end per la personalizzazione.
+* **Rimuovi campi e contenuto**: elimina campi, componenti o sezioni indesiderati dai documenti di comunicazione utilizzando istruzioni in linguaggio naturale. L&#39;agente rimuove gli elementi specificati mantenendo la struttura del documento e l&#39;integrità del layout.
 
-* **Ottimizzazione del layout e della progettazione**: regola posizionamento, formattazione, stile e pagine master per ottenere una corrispondenza perfetta per i pixel.
+* **Campi di stile e contenuto**: applica formattazione e stile ai campi e al contenuto tramite prompt in linguaggio naturale. Regola font, colori, allineamento, spaziatura e altre proprietà visive in base alle linee guida del tuo marchio e ai requisiti di progettazione.
 
-* **Creazione e gestione di frammenti**: crea frammenti di documenti riutilizzabili come intestazioni, piè di pagina, esclusioni di responsabilità e blocchi di firma per coerenza.
+### Prompt di esempio per l&#39;ottimizzazione delle comunicazioni {#sample-prompts-refining}
 
-* **Creazione di regole e logica**: definire il contenuto condizionale, impostare le regole business e configurare le convalide tramite l&#39;editor di regole.
+* *Genera una lettera di liquidazione per la richiesta di risarcimento per l&#39;assicurazione del veicolo*
+* *Applica il corsivo al testo della liberatoria*
+* *Modifica la dimensione del carattere del testo della liberatoria in 12*
+* *Aggiorna il colore del carattere del testo della liberatoria in rosso*
+* *Aggiorna il colore di sfondo delle caselle di testo di intestazione e piè di pagina al grigio chiaro*
+* *Aggiungi un nuovo pannello di esclusione della responsabilità con campi di firma e conferma*
+* *Rimuovi il campo del testo di conferma*
+* *Aggiungere una tabella dei dettagli di pagamento con tre colonne*
+* *Aggiorna l&#39;allineamento del campo del numero dei criteri al centro*
+* *Modifica l&#39;interlinea della sezione termini e condizioni in 1.5*
 
-* **Uscita multicanale**: configura le versioni dei canali di stampa e web, garantendo una presentazione ottimale tra i formati di consegna.
-
-Per ulteriori informazioni, consulta [Documentazione sulle comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md).
+Per ulteriori informazioni sulle funzionalità dell&#39;editor di comunicazioni interattive, vedere [Documentazione di comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md).
 
