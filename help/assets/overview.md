@@ -3,7 +3,7 @@ title: Introduzione ad Assets as a Cloud Service per la gestione delle risorse d
 description: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5078'
 ht-degree: 100%
 
@@ -191,7 +191,7 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 </td>
 </table>
 
-**Imaging avanzato**: Imaging avanzato fornisce prestazioni di consegna delle risorse di immagine ancora migliori ottimizzando automaticamente il formato di un’immagine e le dimensioni del file in base alla funzionalità del browser del cliente. Funziona con i predefiniti delle immagini esistenti e utilizza l’intelligenza nella consegna. Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete.
+**Imaging avanzato**: Imaging avanzato fornisce prestazioni di consegna delle risorse di immagine ancora migliori ottimizzando automaticamente il formato di un’immagine e le dimensioni del file in base alla funzionalità del browser del cliente. Funziona con i predefiniti per immagini esistenti e utilizza l’intelligenza al momento della consegna. Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete.
 
 **Ritaglio avanzato**: una funzionalità di intelligenza artificiale Adobe Sensei per rilevare automaticamente il punto focale di qualsiasi immagine o video e di ritagliarlo, al fine di mantenerlo. Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo, eliminando così le attività manuali noiose e distribuendo immagini e video di alta qualità con caricamento rapido, che risultano di ottima qualità su qualsiasi dispositivo o schermo.
 
@@ -246,12 +246,12 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 
 Dopo aver importato le risorse in AEM Assets, la difficoltà sta nel trovare rapidamente quelle giuste da una raccolta così vasta.
 
-AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giusta. Queste funzioni includono assegnazione tag generata da IA (tag avanzati), metadati personalizzati e funzionalità di ricerca avanzate.
+AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giusta. Queste funzioni includono l’assegnazione di tag generati dll’IA (tag avanzati), metadati personalizzati e funzionalità di ricerca avanzate.
 
 **Gestione metadati**: i metadati rappresentano l’aspetto più critico durante l’avvio del percorso di gestione delle risorse. La gestione dei metadati sfugge completamente al controllo degli amministratori una volta che le risorse vengono distribuite agli utenti. I metadati di risorse efficaci garantiscono una ricerca migliore, che rappresenta il fine ultimo di qualsiasi strumento DAM.
 
 
-**Moduli di metadati**: Assets as a Cloud Service fornisce molti campi di metadati standard per impostazione predefinita. Se hai esigenze aggiuntive in termini di metadati e necessiti di più campi relativi per aggiungere metadati aziendali specifici. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina Dettagli di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
+**Moduli metadati**: Assets as a Cloud Service fornisce molti campi di metadati standard per impostazione predefinita. Se hai esigenze aggiuntive in termini di metadati e necessiti di più campi relativi per aggiungere metadati aziendali specifici. I moduli metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina Dettagli di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse. Puoi creare nuovi moduli o riutilizzare quelli esistenti.
 
 <table>
 <td>
@@ -264,7 +264,7 @@ AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giust
       </a>
    </div>
    <p>
-      <em>Scopri come gestire i metadati e i moduli di metadati utilizzando la vista Risorse.</em>
+      <em>Scopri come gestire i metadati e i moduli metadati utilizzando la vista Risorse.</em>
    </p>
 </td>
 
@@ -698,7 +698,7 @@ Dynamic Media ti consente di fornire risorse visive avanzate di merchandising e 
 
 Dynamic Media offre le seguenti funzioni principali:
 
-* **Imaging avanzato**: l’imaging avanzato fornisce prestazioni di consegna delle risorse di immagine ancora migliori, ottimizzando automaticamente il formato e le dimensioni del file di un’immagine in base alla funzionalità di browser della clientela. Funziona con i predefiniti delle immagini esistenti e utilizza l’intelligenza nella consegna. Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete.
+* **Imaging avanzato**: l’imaging avanzato fornisce prestazioni di consegna delle risorse di immagine ancora migliori, ottimizzando automaticamente il formato e le dimensioni del file di un’immagine in base alla funzionalità di browser della clientela. Funziona con i predefiniti per immagini esistenti e utilizza l’intelligenza al momento della consegna. Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete.
 
 * **Set di video adattivi**: un set di video adattivi raggruppa le versioni dello stesso video che sono codificate in velocità bit e formati diversi. Inizia con il video principale originale che hai caricato nel sistema. Dynamic Media ridimensiona automaticamente, o transcodifica, tale video in più video. In seguito, al momento della consegna, determina in modo intelligente lo schermo video, la qualità e il formato da utilizzare, distribuendolo su telefono, tablet o computer desktop.
 
@@ -797,7 +797,7 @@ Per informazioni sulle offerte Dynamic Media disponibili, consulta [Dynamic Medi
       </a>
    </div>
    <p>
-      <em>Scopri i vantaggi principali e come abilitarli. </em>
+      <em>Scopri i vantaggi principali e come abilitarlo. </em>
    </p>
 </td>
 
@@ -906,4 +906,4 @@ Per informazioni su come accedere alla vista Risorse e su alcune delle semplific
 
 ## Assistente IA in AEM
 
-Per i clienti che hanno [completato i criteri prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l’Assistente IA in AEM è disponibile per gli utenti dell’organizzazione. Consulta [Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+L’Assistente IA in AEM è disponibile per gli utenti delle organizzazioni che hanno [completato i criteri prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access). Consulta [Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
