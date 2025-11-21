@@ -3,10 +3,10 @@ title: Abilità di aggiornamento contenuti
 description: Scopri cos’è l’abilità di aggiornamento dei contenuti dell’agente di produzione di Experience e cosa può fare per te.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ Aprire l&#39;Assistente AI da experience.adobe.com, quindi iniziare a interagire
 
 ![Agente individuazione accesso](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### Prompt di esempio {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+Per avviare gli aggiornamenti dei contenuti è possibile inviare una vasta gamma di prompt in linguaggio naturale. È inoltre necessario specificare l&#39;URL pubblico della pagina da aggiornare. Ad esempio:
 
-* Change your headlines
+* Modificare la pagina seguente https://www.your-url.com/sale Aggiornare l&#39;intestazione principale hero a &quot;Black Friday Mega Sale - Fino al 70% Off&quot;, Cambiare il timer conto alla rovescia per mostrare &quot;Termina in 48 ore&quot;, Rimuovere &quot;Registrarsi per gli aggiornamenti&quot;, Cambiare tutti i pulsanti &quot;Shop Now&quot; a &quot;Grab the Deal&quot;&quot;
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model Aggiorna la copia del banner in "Salva solo 300 USD oggi", aggiorna i prezzi da 1.299 USD a 999 USD, Rimuovi il banner dell'opzione di finanziamento
+
+* https://www.your-url.com/your-sneaker Aggiornare lo stato delle scorte da "Magazzino basso" a "Torna a magazzino - Quantità limitate", Modificare il selettore delle dimensioni per evidenziare le dimensioni disponibili in verde, Rimuovere il badge "In arrivo"
+
+* https://www.your-url.com/your-sneaker Aggiorna le immagini del prodotto per visualizzare nuove colorway
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ Nel caso di un comando `process` per attivare gli aggiornamenti, le risposte pot
 
 ### Attivazione {#activation}
 
-Per attivare e ottenere l’accesso all’agente di produzione con Jira è necessario inviare un messaggio e-mail a Adobe. Per iniziare, contatta:
+Per attivare e ottenere l’accesso a Experience Production Agent con Jira è necessario inviare un messaggio e-mail a Adobe. Per iniziare, contatta:
 
 * `experience-production-agent@adobe.com`
 * oppure rivolgiti al team del tuo account
