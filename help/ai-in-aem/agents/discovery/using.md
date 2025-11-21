@@ -3,9 +3,9 @@ title: Panoramica di Discovery Agent
 description: Scopri come utilizzare Discovery Agent per distribuire contenuti AEM rilevanti on-demand attraverso messaggi di richiesta conversazionali per un’esperienza di rilevamento semplificata e senza clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d4b5b0e606e9e680b0950538cce267d094a57d13
+source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Nota: l&#39;individuazione dei moduli supporta attualmente solo Edge Delivery Se
 
 ### Risorse {#discovery-agent-search-results-assets}
 
-Discovery Agent restituisce i primi 20 risultati per ogni query, ordinati in base alla rilevanza per garantire che le corrispondenze esatte vengano visualizzate per prime. L’agente combina query basate su metadati con ricerche semantiche per assemblare un set mirato di corrispondenze probabili, quindi utilizza un LLM per classificarle in base alle intenzioni dell’utente. Questo approccio misto offre risultati precisi e in base al contesto, senza dipendere interamente da una corrispondenza diretta delle parole chiave.
+Discovery Agent restituisce i primi risultati per ogni query, ordinati in base alla rilevanza per garantire che le corrispondenze esatte vengano visualizzate per prime. L’agente combina query basate su metadati con ricerche semantiche per assemblare un set mirato di corrispondenze probabili, quindi utilizza un LLM per classificarle in base alle intenzioni dell’utente. Questo approccio misto offre risultati precisi e in base al contesto, senza dipendere interamente da una corrispondenza diretta delle parole chiave.
 
 Ogni risultato include il nome della risorsa e i metadati chiave della risorsa, ad esempio il percorso della risorsa, il creatore, la data di creazione, il titolo, la descrizione, il formato, l&#39;ultimo modificatore, la data dell&#39;ultima modifica, la dimensione del file, le dimensioni, l&#39;[URL Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) e i tag associati. Se una risorsa è in stato approvato, i risultati includono anche [Dynamic Media con URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
 
@@ -156,7 +156,7 @@ Puoi utilizzare questi dettagli per valutare rapidamente se una risorsa soddisfa
 
 ### Frammenti di contenuto {#discovery-agent-search-results-content-fragments}
 
-Discovery Agent fornisce funzionalità di ricerca full-text per i frammenti di contenuto, restituendo i primi 20 risultati che meglio corrispondono al prompt specificato. Ogni risultato include il nome del frammento di contenuto e i campi di metadati chiave, ad esempio il percorso del frammento di contenuto, il creatore, la data di creazione, le varianti, l’ultimo modificatore e i campi data dell’ultima modifica.
+Discovery Agent fornisce funzionalità di ricerca full-text per i frammenti di contenuto, restituendo i primi risultati che meglio corrispondono al prompt specificato. Ogni risultato include il nome del frammento di contenuto e i campi di metadati chiave, ad esempio il percorso del frammento di contenuto, il creatore, la data di creazione, le varianti, l’ultimo modificatore e i campi data dell’ultima modifica.
 
 ![Cerca frammenti di contenuto tramite Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
