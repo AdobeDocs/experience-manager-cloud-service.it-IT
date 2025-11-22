@@ -3,15 +3,19 @@ title: Abilità nella creazione di comunicazioni
 description: Scopri l’abilità di creazione di comunicazioni dell’agente di produzione Experience e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # Abilità nella creazione di comunicazioni {#ic-creation-skill}
+
+>[!NOTE]
+>
+> L&#39;abilità di creazione delle comunicazioni è attualmente in formato alfa. Se desideri partecipare, invia una richiesta dal tuo indirizzo e-mail ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 Le comunicazioni interattive sono documenti personalizzati, basati su dati, progettati per la corrispondenza aziendale, ad esempio estratti conto, documenti relativi alle politiche, fatture, kit di benvenuto e avvisi sui benefit. A differenza dei moduli che raccolgono input dagli utenti, le comunicazioni interattive generano documenti di output con contenuto dinamico specifico per il destinatario.
 
@@ -39,7 +43,9 @@ Alcuni dei vantaggi chiave dell’abilità di creazione di comunicazioni includo
 * *Crea una comunicazione dal file di immagine all&#39;indirizzo https://[aem-author-url]/path/to/image/file*
 * Crea una lettera utilizzando il file PDF all&#39;indirizzo https://[aem-author-url]/path/to/pdf/file
 
+
 ## Ottimizzare la comunicazione {#refine-with-ic-editor}
+
 
 Dopo aver creato la struttura di comunicazione iniziale mediante l&#39;Assistente AI, è possibile utilizzare l&#39;Editor di comunicazioni interattive per perfezionare e migliorare il documento. Nell&#39;editor di comunicazioni interattive è possibile fornire prompt in linguaggio naturale per:
 
@@ -65,4 +71,3 @@ Dopo aver creato la struttura di comunicazione iniziale mediante l&#39;Assistent
 * *Modifica l&#39;interlinea della sezione termini e condizioni in 1.5*
 
 Per ulteriori informazioni sulle funzionalità dell&#39;editor di comunicazioni interattive, vedere [Documentazione di comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md).
-
