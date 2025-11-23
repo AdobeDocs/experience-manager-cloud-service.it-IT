@@ -4,10 +4,10 @@ description: Scopri come cercare e individuare le risorse nella vista AEM Assets
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 79%
+source-wordcount: '1938'
+ht-degree: 77%
 
 ---
 
@@ -145,6 +145,19 @@ Tuttavia, la ricerca basata su IA corrisponde a parole simili come `Girl`, `Lady
 Analogamente, è possibile specificare questa richiesta in spagnolo o inserire erroneamente `Woman` come `Wman` e ottenere comunque gli stessi risultati.
 
 ![Ricerca semantica nella visualizzazione Assets](assets/semantic-search.png)
+
+### Attivare o disattivare la ricerca basata su IA nella vista Assets {#enable-disable-ai-search}
+
+Per abilitare o disabilitare la ricerca basata su IA, effettua le seguenti operazioni:
+
+1. Passa a **[!UICONTROL Impostazioni]** >> **[!UICONTROL Impostazioni generali]** e seleziona la scheda **[!UICONTROL Ricerca]**.
+
+1. Nella sezione **[!UICONTROL Ricerca]**, seleziona **[!UICONTROL Ricerca basata su IA]** per abilitare la ricerca basata su IA o **[!UICONTROL Parola chiave]** per disabilitarla.
+
+   ![Ricerca semantica nella visualizzazione Assets](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Fai clic su **[!UICONTROL Salva]**.
+
 
 ## Cercare risorse utilizzando [!DNL Adobe Firefly] {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 
 
