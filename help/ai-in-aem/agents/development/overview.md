@@ -1,11 +1,11 @@
 ---
 title: Panoramica dell’agente di sviluppo
 description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ Il processo di risoluzione dei problemi della pipeline dell’agente di sviluppo
 
 | Prompt | Risultato |
 | --- | --- |
-| *Elencare le pipeline non riuscite per il programma principale.* | Anche se i risultati possono variare, questo prompt dovrebbe generare una tabella di pipeline non riuscite, con un suggerimento di follow-up per fare riferimento a una pipeline specifica da analizzare. |
-| *Analizza la pipeline non riuscita denominata &quot;Pipeline di sviluppo&quot;* | Questo prompt dovrebbe causare un’analisi della pipeline non riuscita con suggerimenti da correggere. |
+| *Elencare le pipeline non riuscite per il programma principale.* | Anche se i risultati possono variare, questo prompt restituisce una tabella di pipeline non riuscite, con un suggerimento di follow-up per fare riferimento a una pipeline specifica da analizzare. |
+| *Analizza la pipeline non riuscita denominata &quot;Pipeline di sviluppo&quot;* | Questo prompt determina un’analisi della pipeline non riuscita con suggerimenti da correggere. |
 
 ## Funzioni fuori ambito {#out-of-scope-features}
 
