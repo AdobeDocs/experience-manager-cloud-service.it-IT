@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
+* Le intestazioni di autorizzazione sono state disabilitate a favore dell&#39;[accesso sviluppatore locale.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * Nella struttura strutturata, al clic con il pulsante destro del mouse, è ora disponibile un menu contestuale.
 * È stato aggiunto un tasto di scelta rapida ai componenti duplicati.
 
