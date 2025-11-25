@@ -4,10 +4,10 @@ description: Scopri come eseguire il servizio editor universale per lo sviluppo 
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 0df573a3d869f2718983b4e661a86c769b4d3f1a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 95%
+source-wordcount: '979'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Scopri come eseguire il servizio editor universale per lo sviluppo locale o come
 
 >[!NOTE]
 >
->I servizi editor universale locale non sono necessari o supportati per i progetti che utilizzano l’authoring AEM con Edge Delivery Services.
+>I servizi Editor universale locale non sono necessari per i progetti che utilizzano AEM con Edge Delivery Services.
 
 ## Panoramica {#overview}
 
@@ -109,7 +109,7 @@ La tabella seguente descrive questi e altri valori aggiuntivi disponibili.
 
 >[!NOTE]
 >
->Prima della [&#128279;](/help/release-notes/universal-editor/current.md)versione 2024.08.13 dell’editor universale, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
+>Prima della ](/help/release-notes/universal-editor/current.md)versione 2024.08.13[ dell’editor universale, nel file `.env` erano richieste le seguenti variabili. Questi valori saranno supportati fino al 1° ottobre 2024 per la compatibilità con le versioni precedenti.
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
