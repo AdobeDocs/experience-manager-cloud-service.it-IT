@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 51%
+source-wordcount: '2571'
+ht-degree: 50%
 
 ---
 
@@ -429,7 +429,7 @@ Esempio:
 
 * Riabilita ereditarietà (se l’ereditarietà è già annullata)
 
-  ![Pulsante Riattiva ereditarietà](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+  ![Pulsante Abilita di nuovo ereditarietà](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
 <!--
 * Rollout action is also available in Live Copy source
@@ -444,6 +444,12 @@ Esempio:
 Le varianti consentono di utilizzare il contenuto **Master** e modificarlo in base allo scopo (se necessario).
 
 **Per creare una variante:**
+
+>[!NOTE]
+>
+>Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
+>
+>Si consiglia di non superare le dieci varianti per frammento di contenuto.
 
 1. Apri il frammento e accertati che il pannello laterale sia visibile.
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
