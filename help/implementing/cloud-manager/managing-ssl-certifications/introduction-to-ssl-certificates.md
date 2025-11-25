@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1263'
+ht-degree: 16%
 
 ---
 
@@ -154,11 +154,17 @@ Converti i certificati in formato diverso da PEM con i seguenti comandi `openssl
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitazione del numero di certificati SSL installati {#limitations}
+## Limitazioni {#limitations}
+
+### Numero di certificati SSL installati {#number-installed-ssl-certs}
 
 In qualsiasi momento, Cloud Manager supporta fino a 70 certificati installati. Questi certificati possono essere associati a uno o più ambienti nel programma e includere anche eventuali certificati scaduti.
 
 Se hai raggiunto il limite, rivedi i certificati e prendi in considerazione l’eliminazione di eventuali certificati scaduti. Oppure, raggruppa più domini nello stesso certificato poiché un certificato può coprire più domini (fino a 100 SAN).
+
+### Crittografiamo i limiti di velocità per i certificati DV gestiti da Adobe
+
+I certificati DV gestiti da Adobe si basano su Let&#39;s Encrypt. Oltre al limite di Cloud Manager sui certificati installati, Let&#39;s Encrypt applica i propri limiti di velocità. Un limite chiave è **Nuovi certificati per set esatto di identificatori**: è possibile emettere fino a 5 certificati per lo stesso set di nomi host in un periodo di 7 giorni. Se questo limite viene raggiunto, Cloud Manager mostra il corrispondente errore Let&#39;s Encrypt e non può creare altri certificati per quel nome host impostato finché la finestra del limite di velocità non viene reimpostata. Per gli ultimi valori e altri limiti correlati, consulta la [Documentazione sui limiti di velocità di crittografia](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Ulteriori informazioni {#learn-more}
 
