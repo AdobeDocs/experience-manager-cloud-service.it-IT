@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 16%
 
 ---
@@ -164,7 +164,7 @@ Se hai raggiunto il limite, rivedi i certificati e prendi in considerazione l’
 
 ### Crittografiamo i limiti di velocità per i certificati DV gestiti da Adobe
 
-I certificati DV gestiti da Adobe si basano su Let&#39;s Encrypt. Oltre al limite di Cloud Manager sui certificati installati, Let&#39;s Encrypt applica i propri limiti di velocità. Un limite chiave è **Nuovi certificati per set esatto di identificatori**: è possibile emettere fino a 5 certificati per lo stesso set di nomi host in un periodo di 7 giorni. Se questo limite viene raggiunto, Cloud Manager mostra il corrispondente errore Let&#39;s Encrypt e non può creare altri certificati per quel nome host impostato finché la finestra del limite di velocità non viene reimpostata. Per gli ultimi valori e altri limiti correlati, consulta la [Documentazione sui limiti di velocità di crittografia](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+I certificati DV gestiti da Adobe si basano su Let&#39;s Encrypt. Oltre al limite di Cloud Manager sui certificati installati, Let&#39;s Encrypt applica i propri limiti di velocità. Un limite chiave è **Nuovi certificati per set esatto di identificatori**: è possibile emettere fino a 5 certificati per lo stesso set di nomi host in un periodo di 7 giorni. Se questo limite viene raggiunto, Cloud Manager mostra un errore e non può creare altri certificati per il nome host impostato finché la finestra del limite di velocità non viene reimpostata. Per gli ultimi valori e altri limiti correlati, consulta la [Documentazione sui limiti di velocità di crittografia](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Ulteriori informazioni {#learn-more}
 
