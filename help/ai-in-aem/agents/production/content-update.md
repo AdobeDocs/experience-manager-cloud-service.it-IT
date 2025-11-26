@@ -3,9 +3,9 @@ title: Abilità di aggiornamento contenuti
 description: Scopri cos’è l’abilità di aggiornamento dei contenuti dell’agente di produzione di Experience e cosa può fare per te.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Puoi accedere all’abilità di aggiornamento del contenuto da:
 
 ## Assistente IA {#ai-assistant}
 
-Puoi accedere ad AEM Business Agent tramite l’Assistente AI.
+Puoi accedere agli agenti in AEM tramite l’Assistente AI.
 
 Aprire l&#39;Assistente AI da experience.adobe.com, quindi iniziare a interagire specificando il prompt nel linguaggio naturale utilizzando il campo `Ask AI Assistant anything`:
 

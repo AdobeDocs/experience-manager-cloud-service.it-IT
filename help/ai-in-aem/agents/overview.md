@@ -1,19 +1,19 @@
 ---
-title: Panoramica sugli agenti aziendali
-description: Scopri gli agenti business disponibili in AEM per accelerare la creazione dei contenuti e orchestrare automaticamente le modifiche.
+title: Panoramica degli agenti in AEM
+description: Scopri gli agenti disponibili in AEM per accelerare la creazione dei contenuti e orchestrare automaticamente le modifiche.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 
-# Panoramica degli agenti aziendali di AEM {#business-agents-overview}
+# Panoramica degli agenti in AEM {#overview-of-agents-in-aem}
 
-Questi agenti aziendali sono disponibili in Adobe Experience Manager (AEM) as a Cloud Service per accelerare la creazione dei contenuti e orchestrare automaticamente le modifiche.
+Questi agenti sono disponibili in Adobe Experience Manager (AEM) as a Cloud Service per accelerare la creazione dei contenuti e orchestrare automaticamente le modifiche.
 
 >[!IMPORTANT]
 >

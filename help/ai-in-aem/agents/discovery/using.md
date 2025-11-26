@@ -3,9 +3,9 @@ title: Panoramica di Discovery Agent
 description: Scopri come utilizzare Discovery Agent per distribuire contenuti AEM rilevanti on-demand attraverso messaggi di richiesta conversazionali per un’esperienza di rilevamento semplificata e senza clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 25ca9a85b3d3e9917ae144cd906dae7736adb2f0
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Agenzie e partner possono trovare facilmente all’interno di Content Hub le ris
 
 ## Come accedere a Discovery Agent? {#access-discovery-agent}
 
-Puoi accedere ad AEM Business Agent tramite l’Assistente AI. Accedi a experience.adobe.com e inizia a interagire con l’Assistente AI specificando il prompt in linguaggio naturale utilizzando la casella di ricerca:
+Puoi accedere agli agenti in AEM tramite l’Assistente AI. Accedi a experience.adobe.com e inizia a interagire con l’Assistente AI specificando il prompt in linguaggio naturale utilizzando la casella di ricerca:
 
 ![Agente individuazione accesso](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
