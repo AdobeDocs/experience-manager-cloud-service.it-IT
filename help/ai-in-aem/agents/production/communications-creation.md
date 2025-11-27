@@ -3,9 +3,9 @@ title: Abilità nella creazione di comunicazioni
 description: Scopri l’abilità di creazione di comunicazioni dell’agente di produzione Experience e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
+source-git-commit: 01fce6fcdf1c8ada0422a84fccb9a89f395e2a0e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -79,31 +79,5 @@ Per abilitare Experience Production Agent per la tua organizzazione, l’attivaz
 * E-mail: `experience-production-agent@adobe.com`
 * Oppure, contatta il team del tuo account Adobe.
 
-Per un’esperienza di onboarding efficiente, prepara e fornisci i seguenti dettagli:
-
-Per **AEM as a Cloud Service**, condividi i seguenti identificatori:
-
-* ID organizzazione
-* `product_id`
-* `profile_id`
-
-Il tuo amministratore AEM può individuarli:
-
-1. Accesso a <https://adminconsole.adobe.com/>
-1. Selezione di **Adobe Experience Manager as a Cloud Service**
-1. Scelta dell’istanza di AEM appropriata nel tuo ambiente
-1. Selezione di un profilo con autorizzazioni di lettura/scrittura per il contenuto pertinente
-1. Copia dell’URL completo del browser da questa pagina
-1. Estrazione dei valori `product_id` e `profile_id` dall&#39;URL\
-   Ad esempio, un URL come `https://adminconsole.adobe.com/products/profiles/users` contiene questi parametri.
-
-Per **Edge Delivery Document Authoring**, fornisci al tuo team Adobe:
-
-* Domini per l’ambiente Edge Delivery Services
-* Dettagli GitHub corrispondenti:
-   * Organizzazione (Org)
-   * Archivio (archivio)
-   * Ramo
-
-La fornitura di informazioni complete e accurate accelera il processo di attivazione e garantisce il provisioning tempestivo di Experience Production Agent.
+Quando ti rivolgi a, assicurati di fornire il tuo ID organizzazione AEM as a Cloud Service.
 
