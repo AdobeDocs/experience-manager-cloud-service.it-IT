@@ -1,8 +1,7 @@
 ---
-title: Salvataggio di un modulo HTML5 come bozza
+title: Salvare un modulo HTML5 come bozza
 description: Salvare un modulo di HTML5 come bozza e riprendere la compilazione del modulo in una fase successiva.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
@@ -11,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
 
-# Salvataggio di un modulo HTML5 come bozza {#saving-an-html-form-as-a-draft}
+# Salvare un modulo HTML5 come bozza {#saving-an-html-form-as-a-draft}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
@@ -78,4 +77,4 @@ Per abilitare l’elenco dei moduli per il componente Bozza e Invio, aggiungi la
  </tbody>
 </table>
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per informazioni dettagliate, vedere [Archiviazione personalizzata per il componente Bozze e invii](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per informazioni dettagliate, vedere [Archiviazione personalizzata per il componente Bozze e invii](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

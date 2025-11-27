@@ -1,17 +1,15 @@
 ---
 title: Generare l’anteprima HTML5 di un modulo XDP
 description: La scheda Anteprima HTML in LiveCycle Designer può essere utilizzata per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -90,7 +88,7 @@ La **modalità protetta** è attivata per impostazione predefinita. Tienilo abil
    >
    >Verifica che il server AEM Forms sia in esecuzione. L&#39;anteprima HTML si connette al server CRX per *generare* un&#39;anteprima.
 
-   ![Opzioni AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opzioni AEM Forms Designer ](assets/server_options.png)
 
    Opzioni AEM Forms Designer
 
@@ -120,9 +118,9 @@ Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e 
 
 1. Selezionare **File > Proprietà modulo**.
 
-1. Fare clic sulla scheda **Anteprima** e nella casella File di dati digitare il percorso completo del file di dati di prova. È inoltre possibile utilizzare il pulsante Sfoglia per passare al file.
+2. Fare clic sulla scheda **Anteprima** e nella casella File di dati digitare il percorso completo del file di dati di prova. È inoltre possibile utilizzare il pulsante Sfoglia per passare al file.
 
-1. Fare clic su **OK**. Alla successiva anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
+3. Fare clic su **OK**. Alla successiva anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
 
 ## Anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
 

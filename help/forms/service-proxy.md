@@ -1,22 +1,20 @@
 ---
-title: proxy del servizio HTML5 forms
+title: Proxy del servizio moduli HTML5
 description: Il proxy di servizio HTML5 forms è una configurazione che consente di registrare un proxy per il servizio di invio. Per configurare Service Proxy, specifica l’URL del servizio di invio tramite il parametro di richiesta submitServiceProxy.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# proxy del servizio HTML5 forms{#html-forms-service-proxy}
+# Proxy del servizio moduli HTML5{#html-forms-service-proxy}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>

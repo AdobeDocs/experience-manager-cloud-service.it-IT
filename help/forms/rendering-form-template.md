@@ -1,22 +1,21 @@
 ---
-title: Rendering del modello di modulo per i moduli HTML5
+title: Rendering del modello per moduli HTML5
 description: I profili HTML5 forms sono associati ai rendering dei profili. I rendering profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio OSGi di Forms.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Rendering del modello di modulo per i moduli HTML5 {#rendering-form-template-for-html-forms}
+# Rendering del modello per moduli HTML5 {#rendering-form-template-for-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 I moduli HTML5 hanno il concetto di **Profili** che sono esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. A questi profili è associato **Rendering profilo**. Si tratta di pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio Forms OSGi. Il percorso JCR del nodo Profilo determina l’URL dell’endpoint di rendering. Il punto finale predefinito del rendering del modulo che punta al profilo &quot;predefinito&quot; è simile al seguente:
 
-https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente il modulo xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
+https://<*host*>:<*porta*>/content/xfaforms/profiles/default.html?contentRoot=<*percorso della cartella contenente il modulo xdp*>&template=<*nome dell'xdp*>
 
 Ad esempio `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

@@ -1,23 +1,21 @@
 ---
-title: Abilita registrazione per moduli HTML5
+title: Abilitare la registrazione per i moduli HTML5
 description: L'utilità logger consente di registrare un modulo e di eseguire il debug dei problemi correlati ai moduli.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Abilita registrazione per moduli HTML5{#enable-logging-for-html-forms}
+# Abilitare la registrazione per i moduli HTML5{#enable-logging-for-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
@@ -30,7 +28,7 @@ Per configurare i registri lato server, effettua le seguenti operazioni:
 
 1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
 
-   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![&#x200B; dell&#39;interfaccia](assets/logconfig.png)
+   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![ dell&#39;interfaccia](assets/logconfig.png)
 
    Opzione di configurazione del logger di registrazione di accesso Sling
 
@@ -172,9 +170,9 @@ Ad esempio:
 >[!NOTE]
 >
 >Il livello di registro predefinito per ogni categoria di registro a (xfa), b (xfaView) e c (xfaPerf) è 2 (ERROR). Di conseguenza, per la configurazione del registro: 2-b6, i livelli del registro per le diverse categorie sono:
->&#x200B;>a (xfa): 2 (errore di livello predefinito)
->&#x200B;>b (xfaView): 6 (TRACE specificato dall&#39;utente)
->&#x200B;>a (xfaPerf): 2 (errore di livello predefinito)
+>a (xfa): 2 (errore di livello predefinito)
+>b (xfaView): 6 (TRACE specificato dall&#39;utente)
+>a (xfaPerf): 2 (errore di livello predefinito)
 
 ### Abilitazione della registrazione tramite Configuration Manager {#enabling-logging-using-configuration-manager}
 

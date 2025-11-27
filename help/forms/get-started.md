@@ -1,22 +1,21 @@
 ---
-title: Guida introduttiva ai moduli di HTML5
+title: Introduzione ai moduli HTML5
 description: Per iniziare, distribuisci il pacchetto del componente aggiuntivo AEM Forms e importa i moduli HTML5 esistenti in AEM.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: HTML5 Forms,Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Guida introduttiva ai moduli di HTML5 {#getting-started-with-html-forms}
+# Introduzione ai moduli HTML5 {#getting-started-with-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>

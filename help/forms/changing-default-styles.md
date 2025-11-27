@@ -1,22 +1,20 @@
 ---
-title: Modifica degli stili predefiniti dei moduli di HTML5
+title: Modifica degli stili predefiniti dei moduli HTML5
 description: Lo stile dei moduli di HTML5 è basato su CSS. È possibile modificare gli stili predefiniti del modulo.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 0%
+source-wordcount: '391'
+ht-degree: 3%
 
 ---
 
-# Modifica degli stili predefiniti dei moduli di HTML5{#changing-default-styles-of-html-forms}
+# Modifica degli stili predefiniti dei moduli HTML5{#changing-default-styles-of-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
@@ -53,7 +51,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
    1. Cerca nella pagina del renderer la seguente riga:
 
-      &lt;cq:includeClientLib Categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib category=&quot;xfaforms.profile&quot; />
 
    1. Inserire quanto segue sotto la riga precedente per includere il foglio di stile:
 

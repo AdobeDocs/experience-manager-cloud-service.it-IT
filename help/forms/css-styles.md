@@ -3,17 +3,16 @@ title: Creazione di stili CSS per i moduli HTML5
 description: Scopri come modificare l’aspetto dei moduli HTML5 modificando la classe CSS associata all’elemento modulo HTML.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 

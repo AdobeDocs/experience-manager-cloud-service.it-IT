@@ -1,27 +1,25 @@
 ---
-title: Integrazione di Form Bridge con il portale personalizzato per HTML5 Forms
+title: Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5
 description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 4%
 
 ---
 
-# Integrazione di Form Bridge con il portale personalizzato per HTML5 Forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
 
-FormBridge è un&#39;API bridge per HTML5 Forms che consente di interagire con un modulo. Per il riferimento all&#39;API FormBridge, vedere [Riferimento all&#39;API FormBridge](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
+FormBridge è un&#39;API bridge per HTML5 Forms che consente di interagire con un modulo. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile a una procedura guidata.
 

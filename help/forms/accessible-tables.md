@@ -1,22 +1,21 @@
 ---
-title: Creare tabelle complesse accessibili in moduli HTML5
+title: Creare tabelle complesse accessibili nei moduli HTML5
 description: Scopri come creare tabelle accessibili nei moduli di HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Creare tabelle complesse accessibili in moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
+# Creare tabelle complesse accessibili nei moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>

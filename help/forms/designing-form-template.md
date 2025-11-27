@@ -1,27 +1,25 @@
 ---
-title: Progettazione di modelli di modulo per moduli HTML5
+title: Progettazione di modelli per moduli per moduli HTML5
 description: AEM Forms può eseguire il rendering del modello di modulo XFA nel formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando Designer e utilizzare la funzionalità di rendering di HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 3%
 
 ---
 
-# Progettazione di modelli di modulo per moduli HTML5{#designing-form-templates-for-html-forms}
+# Progettazione di modelli per moduli per moduli HTML5{#designing-form-templates-for-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
 
-Il componente HTML5 Forms in AEM può eseguire il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) e utilizzare la funzionalità di rendering di HTML5. Questi modelli di modulo, insieme alle relative risorse, possono trovarsi nell’archivio di AEM, nel file system o essere esposti tramite http. Tuttavia, se prevedi di gestire i moduli con Forms Manager, i modelli e le risorse devono trovarsi nell’archivio di AEM.
+Il componente HTML5 Forms in AEM può eseguire il rendering del modello di modulo XFA in formato HTML5. I progettisti di moduli possono progettare modelli di modulo utilizzando Forms Designer e utilizzare la funzionalità di rendering di HTML5. Questi modelli di modulo, insieme alle relative risorse, possono trovarsi nell’archivio di AEM, nel file system o essere esposti tramite http. Tuttavia, se prevedi di gestire i moduli con Forms Manager, i modelli e le risorse devono trovarsi nell’archivio di AEM.
 
 Anche se i moduli HTML5 corrispondono in larga misura al comportamento di PDF forms, esistono alcune funzioni in entrambi i formati che non sono applicabili all’altro formato. Ad esempio, il modo in cui i codici a barre vengono applicati a un modulo PDF in Adobe Reader varia da un modulo Mobile, oppure il modo in cui un modulo è firmato digitalmente varia anche tra i formati. Per ulteriori informazioni su tali varianti, vedere [Differenziazione delle funzionalità tra HTML5 Forms e PDF forms](/help/forms/feature-differentiation-html5-forms-pdf-forms.md).
 

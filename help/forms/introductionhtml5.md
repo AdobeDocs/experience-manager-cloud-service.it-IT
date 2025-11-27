@@ -1,17 +1,15 @@
 ---
 title: Introduzione ai moduli HTML5
-description: HTML5 forms è una nuova funzionalità del software Adobe Experience Manager 6.0 (AEM 6.0) che può eseguire il rendering dei modelli di moduli XFA in formato HTML5.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: HTML5 forms è una nuova funzionalità del software Adobe Experience Manager in grado di eseguire il rendering dei modelli di moduli XFA in formato HTML5.
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 0%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +18,9 @@ ht-degree: 0%
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
 
-HTML5 forms è una nuova funzionalità del software Adobe Experience Manager 6.0 (AEM 6.0) che può eseguire il rendering dei modelli di moduli XFA in formato HTML5. Questa funzionalità consente il rendering dei moduli su dispositivi mobili e browser desktop su cui non è supportato il PDF basato su XFA. HTML5 Forms non solo supporta le funzionalità esistenti dei modelli di modulo XFA, ma aggiunge anche nuove funzionalità, ad esempio la firma scarabocchio, per i dispositivi mobili.
+HTML5 forms è una nuova funzionalità del software Adobe Experience Manager in grado di eseguire il rendering dei modelli di moduli XFA in formato HTML5. Questa funzionalità consente il rendering dei moduli su dispositivi mobili e browser desktop su cui non è supportato il PDF basato su XFA. HTML5 Forms non solo supporta le funzionalità esistenti dei modelli di modulo XFA, ma aggiunge anche nuove funzionalità, ad esempio la firma scarabocchio, per i dispositivi mobili.
 
-HTML5 forms genera documenti basati su costrutti standard di HTML5. È possibile visualizzare i moduli HTML5 in tutti i browser moderni che supportano HTML5. Non è necessario installare altri plug-in per browser. Per ulteriori informazioni sui browser supportati, vedere [Piattaforme client supportate](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+HTML5 forms genera documenti basati su costrutti standard di HTML5. È possibile visualizzare i moduli HTML5 in tutti i browser moderni che supportano HTML5. Non è necessario installare altri plug-in per browser. <!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![Anteprima modulo HTML5](assets/mobile_form_on_an_ipad_date_14.png)
 
