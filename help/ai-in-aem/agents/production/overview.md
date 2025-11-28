@@ -3,9 +3,9 @@ title: Panoramica di Experience Production Agent
 description: Scopri in che modo l’agente di produzione Experience in AEM consente di accelerare la creazione dei contenuti e di orchestrare automaticamente le modifiche.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
+source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ L&#39;agente fornisce i seguenti processi:
 
 ### Aggiornamento contenuti {#content-update}
 
-[Aggiornamento contenuto](/help/ai-in-aem/agents/production/content-update.md) aggiorna facilmente i contenuti esistenti in CMS, inclusi frammenti di contenuto, pagine, moduli e risorse. L’agente può eseguire azioni quali l’aggiornamento, la rimozione, la sostituzione o l’aggiunta di elementi di contenuto per mantenere le esperienze accurate e correnti. Gli input possono essere descrizioni in linguaggio naturale e, se utilizzati con Jira PDF e screenshot, possono fornire anche input.
+[Aggiornamento contenuto](/help/ai-in-aem/agents/production/content-update.md) aggiorna facilmente i contenuti esistenti, inclusi frammenti di contenuto, pagine, moduli e risorse. L’agente può eseguire azioni quali l’aggiornamento, la rimozione, la sostituzione o l’aggiunta di elementi di contenuto per mantenere le esperienze accurate e correnti. Gli input possono essere descrizioni in linguaggio naturale e, se utilizzati con Jira PDF e screenshot, possono fornire anche input.
 
 ### Creazione modulo {#form-creation}
 
