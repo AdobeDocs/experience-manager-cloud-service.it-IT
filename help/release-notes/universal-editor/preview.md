@@ -3,7 +3,7 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
+source-git-commit: 73d85b27df338d91a001d5f97503a958a8edfdc7
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 27 novembre 2025.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 4 dicembre 2025.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
