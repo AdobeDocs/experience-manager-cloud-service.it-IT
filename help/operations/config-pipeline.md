@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ La tabella seguente offre un elenco completo di tali configurazioni, con collega
 | [Autenticazione di base](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Dichiara i nomi utente e le password per una finestra di dialogo di autenticazione di base che protegge alcuni URL. | X | X |
 | [Attività di manutenzione Pulizia versione](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza l’archivio AEM dichiarando le regole per determinare quando le versioni del contenuto devono essere eliminate | X |  |
 | [Attività di manutenzione eliminazione registro di controllo](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Ottimizza il registro di controllo di AEM per migliorare le prestazioni dichiarando regole su quando eliminare i registri | X |  |
+| [Attività manutenzione eliminazione flusso di lavoro](/help/operations/maintenance.md) | `MaintenanceTasks` | Riduci al minimo il numero di istanze del flusso di lavoro per migliorare le prestazioni del motore del flusso di lavoro.<br><br>Vedi anche [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Inoltro registro](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configura gli endpoint e le credenziali per l’inoltro dei registri a varie destinazioni, tra cui Archiviazione BLOB di Azure, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Registrazione di un ID client](/help/implementing/developing/open-api-based-apis.md) | `API` | Iscrivi i progetti API Adobe Developer Console in un ambiente AEM specifico registrando l’ID client. Necessario per l’utilizzo di API basate su OpenAPI che richiedono l’autenticazione | X |  |
 

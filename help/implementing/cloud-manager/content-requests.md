@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
+source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1976'
 ht-degree: 2%
 
 ---
@@ -113,6 +113,7 @@ Come indicato nella sezione precedente [Varianze delle richieste di contenuto di
 * Bilancia le tue esigenze di aggiornamento dei contenuti con i costi di licenza di AEM per qualsiasi crawler di ricerca personalizzato integrato con il tuo sito.  Un crawler eccessivamente aggressivo può richiedere molti contenuti.
 * Per evitare due richieste di contenuto separate, gestisci i reindirizzamenti come lato server (stato 301 o 302) anziché lato client (stato 200 con reindirizzamento JavaScript).
 * Combina o riduci le chiamate API, che sono risposte JSON da AEM che possono essere caricate per eseguire il rendering della pagina.
+* Assicurati che l’agente utente del browser sia passato correttamente ad AEM per sfruttare la regola di esclusione di richieste di contenuto &quot;motore di ricerca noto&quot; descritta in precedenza.  A volte l’agente utente di origine viene perso con determinate implementazioni headless o configurazioni CDN che possono impedire l’esclusione e causare richieste di contenuto più elevate rispetto a quando l’agente utente viene trasmesso.
 
 ### Regole di filtro del traffico per gestire le richieste di contenuto {#traffic-filter-rules-to-manage-crs}
 
