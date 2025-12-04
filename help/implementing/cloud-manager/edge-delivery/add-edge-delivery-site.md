@@ -4,10 +4,10 @@ description: Scopri come aggiungere un sito Edge Delivery al programma di produz
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 92%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -58,6 +58,12 @@ Nell&#39;angolo superiore destro della pagina fare clic sull&#39;icona ![Collega
    | **3** | Crea una richiesta di pull nell’archivio Git per le modifiche appena create, quindi uniscila in `main` per eseguire il commit del codice. |
 
 1. Fai clic su **Verifica**.
+
+   >[!NOTE]
+   >
+   >Se il sito Edge Delivery Services utilizza l’autenticazione Helix, la verifica non è accessibile. Disattivare temporaneamente l&#39;autenticazione, completare la verifica del sito e quindi riattivare l&#39;autenticazione.
+
+
 
 Una volta verificato l’archivio, il relativo stato viene aggiornato nella tabella dei siti Edge Delivery. Un cerchio verde con un segno di spunta bianco all’interno indica lo stato.
 
