@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Configurazione dell’editor Rich Text per l’editor universale {#configure-rte}
 
 Scopri come configurare l’editor Rich Text nell’editor universale.
-
->[!NOTE]
->
->Questa documentazione riguarda il nuovo editor Rich Text per l’editor universale, disponibile come funzionalità iniziale. Se ti interessa testare questa nuova funzionalità, [per ulteriori informazioni, consulta le note sulla versione.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Panoramica {#overview}
 

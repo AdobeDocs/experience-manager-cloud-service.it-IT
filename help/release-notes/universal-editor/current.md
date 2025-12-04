@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.11.20 dell’editor universale
-description: Queste sono le note sulla versione 2025.11.20 dell’editor universale.
+title: Note sulla versione 2025.12.04 dell’editor universale
+description: Queste sono le note sulla versione 2025.12.04 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 73%
+source-wordcount: '166'
+ht-degree: 57%
 
 ---
 
 
-# Note sulla versione 2025.11.20 dell’editor universale {#release-notes}
+# Note sulla versione 2025.12.04 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 20 novembre 2025 di Universal Editor.
+Queste sono le note sulla versione del 4 dicembre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ Queste sono le note sulla versione del 20 novembre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* È stata effettuata la migrazione dei token a una nuova interfaccia utente.
-
-## Funzioni per adozione anticipata {#early-adopter}
-
-Se ti interessa testare queste nuove funzioni e condividere un feedback, invia un’e-mail al tuo Adobe Customer Success Manager dall’indirizzo e-mail associato al tuo Adobe ID.
+* Le intestazioni di autorizzazione sono state disabilitate a favore dell&#39;[accesso sviluppatore locale.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* È ora disponibile un menu contestuale nella struttura [strutturata facendo clic con il pulsante destro del mouse.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Tasto di scelta rapida aggiunto a [componenti duplicati.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Nuovo editor Rich Text {#new-rte}
 
@@ -38,7 +36,6 @@ Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra
 
 ## Altri miglioramenti {#other-improvements}
 
-* La gestione dei valori dell’editor Rich Text è stata semplificata.
-* È stata risolta una rara condizione di corsa della barra degli strumenti.
-* Sono state rimosse le funzioni inutilizzate.
-* Le dipendenze sono state aggiornate.
+* È stato risolto un problema che impediva il salvataggio corretto dell’editor Rich Text nell’area di lavoro.
+* Il ritaglio della struttura della cartella del selettore di contenuto è stato corretto.
+* `componentId` è ora fornito durante l&#39;azione di aggiunta.

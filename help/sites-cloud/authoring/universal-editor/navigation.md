@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra di navigazione superiore di Experience Platform è sempre presente nell
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
@@ -137,12 +137,6 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 >
 >Utilizzare il tasto di scelta rapida `Command-Z` o `Shift-Command-Z` rispettivamente per annullare o ripetere l&#39;operazione.
 
-#### Intestazioni di autenticazione {#authentication-settings}
-
-Se devi [impostare un&#39;intestazione di autenticazione personalizzata a scopo di sviluppo locale](/help/implementing/universal-editor/developer-overview.md#auth-header), seleziona l&#39;icona delle intestazioni di autenticazione.
-
-![Pulsante Impostazioni intestazione autenticazione](assets/authentication-header-settings.png)
-
 #### Accesso sviluppatore locale {#local-developer-login}
 
 Selezionare l&#39;icona di accesso per sviluppatori locali se è necessario eseguire l&#39;autenticazione nel SDK AEM locale [durante lo sviluppo locale.](/help/implementing/universal-editor/local-dev.md)
@@ -189,11 +183,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
@@ -265,6 +259,7 @@ In modalità struttura contenuto, il pannello mostra la gerarchia del contenuto 
 
 * Quando si seleziona un elemento nella struttura del contenuto, l’editor scorre fino a quel contenuto e lo seleziona.
 * Quando si fa doppio clic su un elemento nella struttura del contenuto, l&#39;editor scorre fino al contenuto selezionato e apre le proprietà associate in modalità [proprietà.](#properties-mode)
+* Facendo clic con il pulsante destro del mouse su un elemento nella struttura, viene visualizzato un menu di scelta rapida contenente le azioni appropriate per l&#39;elemento.
 
 ![Struttura contenuto](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Se selezioni un componente all’interno di un componente contenitore nella stru
 ![Icona duplicata](assets/duplicate.png)
 
 Toccando o facendo clic sul pulsante di duplicazione [viene duplicato il componente selezionato](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+
+>[!TIP]
+>
+>Utilizzare il tasto di scelta rapida `Command+d` per eliminare un componente selezionato da un contenitore.
 
 ##### Eliminare {#delete}
 
