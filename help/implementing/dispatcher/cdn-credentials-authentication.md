@@ -88,7 +88,7 @@ data:
 
 Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
-Per ulteriori dettagli, consulta il passaggio tutorial [Configurare e distribuire la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule).
+Per ulteriori dettagli, consulta il passaggio tutorial [Configurare e distribuire la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule).
 
 Altre proprietà includono:
 
@@ -208,7 +208,7 @@ Altre proprietà includono:
 >[!NOTE]
 >La chiave di eliminazione deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento. Si consiglia di utilizzare una chiave casuale univoca della lunghezza minima di 32 byte; ad esempio, la libreria di crittografia Open SSL può generare una chiave casuale eseguendo il comando openssl rand -hex 32
 
-Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
+Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
 ## Autenticazione di base {#basic-auth}
 
