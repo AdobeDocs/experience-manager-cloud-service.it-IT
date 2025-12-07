@@ -3,9 +3,9 @@ title: Panoramica di Discovery Agent
 description: Scopri come utilizzare Discovery Agent per distribuire contenuti AEM rilevanti on-demand attraverso messaggi di richiesta conversazionali per un’esperienza di rilevamento semplificata e senza clic.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ Prompt di esempio:
 * Mostra le risorse modificate dopo `Nov 1 2025` nella cartella `WKND`.
 * Elencare `lifestyle` immagini nella cartella `WKND`.
 
-**Individuazione risorse basata su risoluzione e formato**
+**Individuazione risorse basata sul formato**
 
-Discovery Agent è in grado di identificare le risorse che soddisfano specifici requisiti di qualità, ad esempio il formato di file o la risoluzione minima, consentendo agli utenti di individuare rapidamente gli elementi visivi dei prodotti pronti per la distribuzione di alta qualità e il riutilizzo tra i canali.
+Discovery Agent è in grado di identificare le risorse che soddisfano specifici requisiti di qualità, ad esempio il formato di file, consentendo agli utenti di individuare rapidamente gli elementi visivi dei prodotti pronti per la distribuzione di alta qualità e per il riutilizzo tra canali diversi.
 
 Esempio di prompt:
 
-Trova il pacchetto del prodotto PNG immagini di larghezza di almeno 2000 px.
+Trova il pacchetto del prodotto PNG images.
 
 **Individuazione contenuto basata su orientamento**
 

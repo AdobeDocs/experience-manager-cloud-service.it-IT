@@ -4,9 +4,9 @@ description: Scopri la funzionalità di estensibilità dell'interfaccia utente d
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,17 @@ Per iniziare ad aggiungere il componente di estensibilità in [!DNL Assets View 
 1. Configurate l&#39;applicazione utilizzando la CLI AIO per generare la struttura di estensione di base e il codice richiesto. Per informazioni dettagliate, vedere [generazione del codice per [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/).
 1. Verifica le estensioni a livello locale per assicurarti che funzionino come previsto prima della distribuzione. Eseguire l&#39;estensione in un ambiente completamente isolato o con isolamento parziale e connettere l&#39;estensione all&#39;ambiente di produzione [!DNL AEM Assets View] per il test. Per informazioni dettagliate, vedere [Risoluzione dei problemi - [!DNL AEM Assets View] estensibilità](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/).
 
-## Personalizzare la barra Azioni rapide e Azioni nella vista Assets {#customize-quick-actions-and-actions-bar}
+## Personalizzare le azioni nella vista Assets {#customize-actions-assets-view}
 
-Puoi personalizzare le azioni visualizzate quando selezioni una o più risorse (Barra delle azioni) nella vista Assets. La vista Assets consente inoltre di personalizzare le azioni visualizzate quando si fa clic su Altre opzioni (...) nella scheda delle risorse. Per ulteriori informazioni, vedere [Sfoglia visualizzazione](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+La vista AEM Assets consente di personalizzare le seguenti azioni nella vista Sfoglia:
+
+* Personalizza le azioni da visualizzare quando selezioni una o più risorse nella barra delle azioni.
+
+* Personalizza le azioni visualizzate quando fai clic su Altre opzioni (...) nella scheda delle risorse.
+
+* Personalizza le azioni disponibili nel menu Intestazione.
+
+Per ulteriori informazioni, vedere [Sfoglia visualizzazione](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Apri finestre di dialogo personalizzate in visualizzazione Assets {#open-custom-dialogs-assets-view}
 

@@ -3,10 +3,10 @@ title: Migliorare l’individuazione dei contenuti con i metadati generati dall�
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale in Admin View
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 9%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
@@ -28,15 +28,13 @@ Per abilitare i metadati generati dall’intelligenza artificiale:
 
 * La versione minima richiesta di AEM è `20626`.
 
-* È necessario firmare un accordo GenAI Rider. Per ulteriori informazioni, contatta il rappresentante Adobe.
-
 ## Configurare titoli generati dall’intelligenza artificiale {#configure-ai-generated-titles}
 
 AEM consente di configurare la visualizzazione dei titoli delle risorse nella vista a schede o nella vista a elenco della pagina Sfoglia risorse. Puoi scegliere di visualizzare il titolo della risorsa definito dall’utente, il titolo generato tramite IA o utilizzare il titolo generato tramite IA solo se non è presente alcun titolo per la risorsa.
 
 Per configurare i titoli generati dall’intelligenza artificiale:
 
-1. Passa a **[!UICONTROL Strumenti > Assets > Configurazione Assets > Configurazione miglioramento smart tag]**.
+1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets > Configurazione miglioramento smart tag]**.
 
 1. Seleziona una delle opzioni seguenti:
 
@@ -71,20 +69,12 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 ## Disattiva i metadati generati dall’intelligenza artificiale {#disable-ai-generated-metadata}
 
-Puoi disabilitare i metadati generati dall’intelligenza artificiale a livello di cartella. Tutte le cartelle secondarie ereditano le proprietà dalla cartella principale.
+Per disabilitare i metadati generati dall’intelligenza artificiale:
 
-Per disabilitare i metadati generati dall’intelligenza artificiale a livello di cartella:
+1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets > Configurazione miglioramento smart tag]**.
 
-1. Passa a **[!UICONTROL Adobe Experience Manager > Assets > File]**.
+1. Selezionare **[!UICONTROL Disabilita miglioramenti smart tag]**.
 
-1. Selezionare la cartella e fare clic su **[!UICONTROL Proprietà]**.
+1. Fai clic su **[!UICONTROL Salva]**.
 
-1. Nella scheda **[!UICONTROL Elaborazione risorse]**, passa alla cartella **[!UICONTROL Miglioramenti tag avanzati per immagini]**. Selezionare uno dei seguenti valori dall&#39;elenco a discesa:
-
-   * Ereditata: la cartella eredita le opzioni di abilitazione o disabilitazione dalla cartella principale.
-
-   * Abilita: abilita i metadati generati dall’intelligenza artificiale per la cartella selezionata.
-
-   * Disabilita: disabilita i metadati generati dall’intelligenza artificiale per la cartella selezionata.
-
-     ![Disabilita metadati generati da IA](assets/disable-ai-generated-metadata.png)
+I metadati generati dall’intelligenza artificiale sono disabilitati per le nuove risorse o cartelle caricate in AEM Assets. Le risorse o cartelle esistenti con campi di metadati generati dall’intelligenza artificiale continuano a visualizzare questi campi.

@@ -1,9 +1,9 @@
 ---
 title: Migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ Per abilitare i metadati generati dall’intelligenza artificiale:
 
 * La versione minima richiesta di AEM è `20626`.
 
-* È necessario firmare un accordo GenAI Rider. Per ulteriori informazioni, contatta il rappresentante Adobe.
 
 ## Utilizzo di metadati generati da IA {#using-ai-generated-smart-tags}
 
