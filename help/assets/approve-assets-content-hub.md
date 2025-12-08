@@ -2,10 +2,10 @@
 title: Approvare risorse per Content Hub
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 16%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -83,10 +83,6 @@ Per impostare il target di approvazione:
 
    Per ulteriori informazioni sulle opzioni disponibili, consulta [Destinazione approvazione predefinita e destinazioni di pubblicazione per risorse approvate](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >L’impostazione di un target di approvazione è una funzione a disponibilità limitata. Per attivarla o disattivarla, crea un ticket di supporto. Se hai Dynamic Media con OpenAPI abilitato, per impostazione predefinita è abilitato.
-
    ![Stato approvazione](/help/assets/assets/approval-status-delivery.png)
 
 1. Specifica altre proprietà della risorsa e fai clic su **[!UICONTROL Salva]**.
@@ -121,17 +117,17 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.
-   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:status_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam :status_.
    1. Cambia il valore predefinito in _approvato_.
 
 1. Analogamente al passaggio 6, trascinare un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione attivazione_.
-   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam :activationTarget_.
    1. Cambia il valore predefinito in _contentthub_.
 
 1. Fai clic su **[!UICONTROL Salva]**.
@@ -152,8 +148,8 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto che sia stato abilitato [l&#39;interruttore di approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
 
-* Se il pulsante **[!UICONTROL Approvazione automatica]** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
+* Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è abilitato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
-* Se il pulsante **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
+* Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)
