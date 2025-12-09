@@ -63,7 +63,7 @@ Quando applicati, gli autori non possono:
 Per applicare i blocchi di contenuto o di layout nel modello di comunicazione interattiva (IC), segui la procedura riportata di seguito:
 
 1. Apri il modello
-Apri o crea un modello, segui la guida [Creare un modello di comunicazione interattiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Apri o crea un modello, segui la guida [Creare un modello di comunicazione interattiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Seleziona il componente
 Fare clic sul componente (casella di testo, immagine o sottomaschera) che si desidera limitare.

@@ -33,7 +33,7 @@ Per utilizzare la comunicazione interattiva, accertati che il tuo ambiente AEM F
 
 ### Verifica il browser
 
-Per conoscere i browser e le piattaforme client supportati, seguire l&#39;articolo collegato, [Piattaforme client supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Per conoscere i browser e le piattaforme client supportati, seguire l&#39;articolo collegato, [Piattaforme client supportate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ L&#39;accesso alle funzionalità dell&#39;editor IC è gestito da [ruoli utente 
 | **Autore modulo** | Crea e modifica le comunicazioni interattive. | Creare, modificare, visualizzare in anteprima e pubblicare IC. |
 | **Autore modello** | Progetta modelli riutilizzabili per le comunicazioni interattive. | Creare e bloccare modelli, definire layout. |
 | **Amministratore** | Gestisce l’accesso, le autorizzazioni e le configurazioni degli utenti. | Assegna ruoli, gestisci modelli, pubblica IC. |
-| **Autore FDM** | [Crea e gestisce modelli di dati modulo (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) per l&#39;integrazione dei dati. | Crea, modifica e configura origini dati e modelli. |
+| **Autore FDM** | [Crea e gestisce modelli di dati modulo (FDM)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) per l&#39;integrazione dei dati. | Crea, modifica e configura origini dati e modelli. |
 
 >[!NOTE]
 >
