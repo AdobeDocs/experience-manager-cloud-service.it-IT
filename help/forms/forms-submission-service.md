@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4ed2444dac60fe08ae3de13f62aa7a400c06473a
+source-git-commit: 8056b17d390cb84a11de9d329f04f04927a35646
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 1%
+source-wordcount: '1540'
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ Scegli una delle piattaforme supportate:
 
 >[!TIP]
 >
->**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
+>**Ti avvicini ora a Edge Delivery Services?** Inizia con l&#39;[esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) per configurare le basi del progetto.
 
 ## Metodi di configurazione
 
@@ -133,7 +133,7 @@ Il servizio di invio Forms offre due approcci di configurazione. Scegli il metod
 
 Prima di configurare uno di questi metodi, assicurati che le basi del progetto AEM siano pronte:
 
-1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Crea o aggiorna il progetto AEM** con il blocco Forms adattivo più recente ([Esercitazione introduttiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Aggiorna`fstab.yaml`** nella directory principale del progetto:
 
@@ -166,7 +166,7 @@ Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 1. **Apri la piattaforma del foglio di calcolo** (fogli di Google o Microsoft Excel)
 2. **Crea un nuovo foglio di calcolo** per il progetto modulo
 3. **Denomina il foglio** (deve essere `helix-default` o `shared-aem`)
-4. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Definisci la struttura del modulo** utilizzando la [guida alla creazione del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definizione modulo](/help/forms/assets/form-submission-definition.png)
 *Esempio: definizione modulo con tipi di campo, etichette e regole di convalida*
@@ -182,7 +182,7 @@ Creare la struttura del modulo utilizzando Google Sheets o Microsoft Excel.
 >
 >Gli altri nomi di foglio non verranno riconosciuti dal sistema.
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
 - Struttura del modulo completata con tutti i campi obbligatori
 - Il foglio è denominato correttamente (`helix-default` o `shared-aem`)
@@ -214,7 +214,7 @@ Imposta un foglio dedicato per ricevere i dati di invio del modulo.
 >- Nessun dato verrà memorizzato
 >- Gli utenti visualizzeranno gli errori di invio
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
 - Il foglio `incoming` esiste nel tuo foglio di calcolo
 - Le intestazioni di colonna corrispondono ai nomi dei campi modulo
@@ -261,7 +261,7 @@ Concedi al servizio Adobe Forms Submission l’accesso al tuo foglio di calcolo.
   ![Copia collegamento del foglio in ingresso](/help/forms/assets/form-submission-copy-link.png)
   *Esempio: copia del collegamento condivisibile per la configurazione del modulo*
 
-**Checkpoint di convalida:**
+**Punto di controllo per la convalida:**
 
 - `forms@adobe.com` ha accesso editor al tuo foglio di calcolo
 - Il collegamento al foglio di calcolo viene copiato e pronto per l&#39;uso
@@ -562,11 +562,10 @@ Solutions:
 
 +++
 
-+++ Ottenimento della Guida
++++ Come trovare assistenza
 
 **Canali di supporto:**
 
-- **Problemi di accesso anticipato:** E-mail [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **Documentazione API:** [Riferimento sviluppatore](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 - **Supporto community:** [Community Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
 
@@ -579,7 +578,7 @@ Ora che hai configurato il servizio di invio Forms, scopri i seguenti argomenti 
 
 +++ Migliora il tuo Forms
 
-- **[Crea Forms avanzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
+- **[Crea Forms avanzato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Aggiungi convalida, logica condizionale e stile personalizzato
 - **[Guida ai componenti del modulo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Esplora i tipi di campo modulo disponibili
 
 +++
