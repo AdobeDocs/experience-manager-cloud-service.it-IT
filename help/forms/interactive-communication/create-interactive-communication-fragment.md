@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '291'
 ht-degree: 18%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 Un frammento di comunicazione interattiva consente agli utenti di creare blocchi di contenuto riutilizzabili e modulari, come intestazioni, piè di pagina o esclusioni di responsabilità standard, che possono essere utilizzati in più documenti di comunicazione. Questi frammenti consentono di mantenere la coerenza, ridurre il lavoro ripetitivo e accelerare il processo di progettazione durante la creazione di comunicazioni personalizzate e integrate nei dati.
 
-## Prerequisito
-
-* [Assicurati che l’autore sia un membro del gruppo utenti dei moduli](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [L&#39;autore deve essere membro del gruppo &quot;utenti-moduli&quot;](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Creare un frammento di comunicazione interattiva
 
@@ -41,7 +41,7 @@ Per creare un frammento di comunicazione interattivo, effettua le seguenti opera
 
 1. Dopo aver selezionato il frammento di comunicazione interattiva, viene visualizzata una schermata in cui vengono definiti i dettagli chiave del frammento, ad esempio titolo, nome, descrizione, modello dati (una rappresentazione strutturata dei dati di back-end) e tag.
 
-   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Trova documento IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
