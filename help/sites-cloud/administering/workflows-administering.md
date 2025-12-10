@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 1. L’istanza **Flussi di lavoro in esecuzione** mostra il numero di flussi di lavoro in esecuzione e il relativo stato. Ad esempio, nelle immagini specificate, viene mostrato il numero di **Flussi di lavoro in esecuzione** e lo **Stato** dell’istanza di AEM:
 
    * **Stato: integro**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Stato: non integro**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Per i **Dettagli dello stato** delle istanze del flusso di lavoro, fai clic su **Dettagli**, per visualizzare il **numero di istanze di flussi di lavoro in esecuzione**, le **istanze di flusso di lavoro completate**, le **istanze di flusso di lavoro interrotte**, le **istanze di flusso di lavoro non riuscite** e così via. Ad esempio, di seguito sono riportate le immagini che mostrano i **Dettagli dello stato** con:
 
    * **Dettagli dello stato: integro**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Dettagli dello stato: non integro**
-
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=it).
+   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Cerca istanze del flusso di lavoro {#search-workflow-instances}
 
@@ -67,7 +63,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
    * Modello di flusso di lavoro: selezionare un modello di flusso di lavoro
    * Assegnatario: selezionare un assegnatario del flusso di lavoro
    * Tipo: Attività, Elemento del flusso di lavoro o Errore del flusso di lavoro
-   * Stato attività: attivo, completo o terminato
+   * Stato attività: attivo, completato o terminato
    * Dove sono: Proprietario AND Assegnatario, Solo proprietario, Solo assegnatario
    * Data di inizio: data di inizio prima o dopo una data specificata
    * Data di fine: data di fine prima o dopo una data specificata
@@ -81,7 +77,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    ![wf-96-1](/help/sites-cloud/administering/assets/wf-96-1.png)
 
-1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; conferma e/o ulteriori dettagli richiesti:
+1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; verrà richiesto di confermare e/o fornire ulteriori dettagli:
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
@@ -116,7 +112,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e &#x200B;** Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
@@ -150,39 +146,14 @@ Per configurare il servizio, puoi settare i file di configurazione OSGi; vedi [F
 >Poiché si tratta di un servizio di fabbrica, il nome del nodo `sling:OsgiConfig` richiede un suffisso di identificatore, ad esempio:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Nome proprietà (console Web)</th>
-   <th>Nome proprietà OSGi</th>
-   <th>Descrizione</th>
-  </tr>
-  <tr>
-   <td>Nome processo</td>
-   <td>scheduledpurge.name</td>
-   <td>Nome descrittivo per l’eliminazione pianificata.</td>
-  </tr>
-  <tr>
-   <td>Stato flusso di lavoro</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>Stato delle istanze del flusso di lavoro da eliminare. I seguenti valori sono validi:</p>
-    <ul>
-     <li>COMPLETATO: le istanze del flusso di lavoro completate vengono eliminate.</li>
-     <li>IN ESECUZIONE: le istanze del flusso di lavoro in esecuzione vengono eliminate.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Modelli da eliminare</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>ID dei modelli di flusso di lavoro da eliminare. L’ID è il percorso del nodo del modello, ad esempio:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> </td>
-  </tr>
-  <tr>
-   <td>Età del flusso di lavoro</td>
-   <td>scheduledpurge.daysold</td>
-   <td>Età in giorni delle istanze del flusso di lavoro da eliminare.</td>
-  </tr>
- </tbody>
-</table>
+| Nome proprietà (console Web) | Nome proprietà OSGi | Descrizione |
+|--- |--- |--- |
+| Nome processo  | `scheduledpurge.name` | Nome descrittivo per l’eliminazione pianificata. |
+| Stato flusso di lavoro | `scheduledpurge.workflowStatus` | Stato delle istanze del flusso di lavoro da eliminare. Valori validi:<br><br>- COMPLETATO: le istanze del flusso di lavoro completate vengono eliminate.<br>- IN ESECUZIONE: le istanze del flusso di lavoro in esecuzione vengono eliminate. |
+| Modelli da eliminare | `scheduledpurge.modelIds` | ID dei modelli di flusso di lavoro da eliminare.<br>L&#39;ID è il percorso del nodo del modello, ad esempio:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.<br>Per specificare più modelli, fare clic sul pulsante `+` nella console Web. |
+| Età del flusso di lavoro | `scheduledpurge.daysold` | Età in giorni delle istanze del flusso di lavoro da eliminare. |
+| Pacchetto payload flusso di lavoro | `scheduledpurge.purgePackagePayload` | Indica se il pacchetto di payload deve essere eliminato; `true` o `false`. |
+
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
@@ -204,7 +175,7 @@ I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione f
 
 Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non saranno rese persistenti in JCR per quelle istanze dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* viene memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* è archiviata nel nodo *jcr:content* del modello di flusso di lavoro. Questo flag è persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come configurare il flag in un flusso di lavoro.
 
