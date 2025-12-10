@@ -112,7 +112,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e &#x200B;** Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.
