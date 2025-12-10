@@ -48,7 +48,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    >[!NOTE]
    >
-   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=it).
 
 ## Cerca istanze del flusso di lavoro {#search-workflow-instances}
 
