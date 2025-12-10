@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Nelle tabelle seguenti sono elencati i tipi di richieste di contenuto incluse ed
 
 | Tipo di richiesta | Richiesta contenuto | Descrizione |
 | --- | --- | --- |
-| Codice HTTP 100-299 | Inclusi | Include le richieste riuscite che restituiscono contenuti HTML o JSON completi o parziali.<br>Codice HTTP 206: queste richieste forniscono solo una parte del contenuto completo. Ad esempio, un video o un’immagine di grandi dimensioni. Le richieste di contenuto parziale sono incluse quando distribuiscono parte di una risposta HTML o JSON utilizzata nel rendering del contenuto della pagina. |
+| Codice HTTP 100-299 | Inclusi | Include le richieste riuscite che restituiscono contenuti HTML o JSON completi o parziali.<br>Codice HTTP 206: queste richieste forniscono solo una parte del contenuto completo. Le richieste parziali sono incluse quando distribuiscono parte di una risposta HTML o JSON utilizzata nel rendering del contenuto della pagina. |
 | Librerie HTTP per l&#39;automazione | Inclusi | Richieste effettuate da strumenti o librerie che recuperano il contenuto della pagina. Gli esempi includono: <br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous HTTP Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Python Requests<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub Node Fetch<br>· Reactor Netty |
 | Strumenti di monitoraggio e verifica stato | Inclusi | Richieste utilizzate per monitorare lo stato o la disponibilità delle pagine.<br>Consulta [Tipi di richieste di contenuto escluse](#excluded-content-request).<br>Gli esempi includono:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatibile; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` richieste | Inclusi | Quando i clienti precaricano o recuperano preventivamente il contenuto (ad esempio, con `<link rel="prefetch">`), il sistema conta tali richieste lato server. Tieni presente che questo approccio può aumentare il traffico, a seconda di quante di queste pagine vengono preacquisite. |
