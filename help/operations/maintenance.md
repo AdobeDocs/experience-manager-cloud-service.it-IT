@@ -49,14 +49,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Elimina registro di controllo</td>
     <td>Cliente</td>
-    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
    </td>
   </tr>
@@ -87,7 +87,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
   </td>
   </tr>
   </tbody>
