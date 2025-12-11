@@ -4,10 +4,10 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 30%
+source-wordcount: '2054'
+ht-degree: 29%
 
 ---
 
@@ -29,6 +29,8 @@ Nelle versioni precedenti di AEM, era possibile configurare le attività di manu
 >
 >Adobe si riserva il diritto di sovrascrivere le impostazioni di configurazione delle attività di manutenzione di un cliente per attenuare problemi come il degrado delle prestazioni.
 
+### Attività di manutenzione {#maintenance-tasks}
+
 Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
   </td>
   </tr>
   <tr>
-    <td>Elimina log di controllo</td>
+    <td>Elimina registro di controllo</td>
     <td>Cliente</td>
-    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Cliente</td>
     <td>
     <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### Configurazioni finestre di manutenzione {#maintenance-window-configurations}
+
+La tabella seguente illustra le configurazioni delle finestre di manutenzione disponibili.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     </tbody>
 </table>
 
-**Posizioni**:
+### Posizioni {#locations}
 
 * Giornaliero: /apps/settings/granite/operations/maintenance/granite_daily
 * Settimanale: /apps/settings/granite/operations/maintenance/granite_weekly
 * Mensile: /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Esempi di codice**:
+### Esempi di codice {#code-samples}
 
-Esempio di codice 1 (giornaliero)
+**Esempio di codice 1 (giornaliero)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ Esempio di codice 1 (giornaliero)
  />
 ```
 
-Esempio di codice 2 (settimanale)
+**Esempio di codice 2 (settimanale)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ Esempio di codice 2 (settimanale)
    windowStartTime="14:30"/>
 ```
 
-Esempio di codice 3 (mensile)
+**Esempio di codice 3 (mensile)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ Dichiara un file di configurazione e distribuiscilo come descritto nei passaggi 
 > 
 >Allo stesso modo, una volta distribuito il nodo di eliminazione del registro di controllo nel file di configurazione, è necessario mantenerlo dichiarato e non rimuoverlo.
 
-**1** Creare un file denominato `mt.yaml` o simile.
+1. Creare un file denominato `mt.yaml` o simile.
 
-**2** Posizionare il file in una cartella di primo livello denominata `config` o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
+1. Posizionare il file in una cartella di primo livello denominata `config` o simile, come descritto in [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#folder-structure).
 
-**3** - Dichiara le proprietà nel file di configurazione, che includono:
+1. Dichiara le proprietà nel file di configurazione, tra cui:
 
-* alcune proprietà sopra il nodo dati. Per una descrizione, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *MaintenanceTasks* e la versione deve essere *1*.
+   * alcune proprietà sopra il nodo dati. Per una descrizione, vedere [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax). Il valore della proprietà `kind` deve essere *MaintenanceTasks* e la versione deve essere *1*.
 
-* un oggetto dati con `versionPurge` e `auditLogPurge` oggetti.
+   * un oggetto dati con `versionPurge` e `auditLogPurge` oggetti.
 
-Vedere le definizioni e la sintassi degli oggetti `versionPurge` e `auditLogPurge`.
+   Vedere le definizioni e la sintassi degli oggetti `versionPurge` e `auditLogPurge`.
 
-Struttura la configurazione in modo simile all’esempio seguente:
+   Struttura la configurazione in modo simile all’esempio seguente:
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-Tieni presente che affinché la configurazione sia valida:
+   Tieni presente che affinché la configurazione sia valida:
 
-* tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
-* devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
+   * tutte le proprietà devono essere definite. Non sono presenti valori predefiniti ereditati.
+   * devono essere rispettati i tipi (interi, stringhe, booleani, ecc.) nelle tabelle delle proprietà sottostanti.
 
-**4** - Crea una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Creare una pipeline di configurazione in Cloud Manager, come descritto nell&#39;articolo [pipeline di configurazione](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Pulizia delle versioni {#version-purge}
 
@@ -309,7 +315,6 @@ Le colonne che indicano *default* indicano i valori predefiniti in futuro, quand
 | minimumVersions | 1 | 1 | Sì | Numero intero | Il numero minimo di versioni mantenute indipendentemente dall’età. Tieni presente che viene sempre mantenuta almeno 1 versione; il suo valore deve essere 1 o superiore. |
 | keepLabellingVersioned | false | false | Sì | booleano | Determina se le versioni con etichetta esplicita verranno escluse dalla rimozione. Per una migliore ottimizzazione dell’archivio, si consiglia di impostare questo valore su false. |
 
-
 **Interazioni proprietà**
 
 Gli esempi seguenti illustrano il modo in cui le proprietà interagiscono quando combinate.
@@ -338,7 +343,7 @@ Non verranno eliminate versioni più recenti di 30 giorni, poiché la proprietà
 
 Verrà conservata una versione precedente ai 30 giorni.
 
-### Elimina log di controllo {#audit-purge}
+### Elimina registro di controllo {#audit-purge}
 
 #### Valori predefiniti eliminazione log di controllo {#audit-purge-defaults}
 
@@ -366,7 +371,6 @@ Gli ambienti creati prima dell’attivazione dell’eliminazione predefinita pre
 Le proprietà consentite sono elencate di seguito.
 
 Le colonne che indicano *default* indicano i valori predefiniti in futuro, quando verranno applicati i valori predefiniti; *TBD* riflette un ID ambiente non ancora determinato.
-
 
 | Proprietà | valore predefinito futuro per envs>TBD | valore predefinito futuro per envs&lt;=TBD | obbligatorio | tipo | Valori |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
