@@ -79,6 +79,6 @@ Se l&#39;opzione **Aggiungi ambiente** è disattivata (disabilitata), è possibi
 
 ## Risorse aggiuntive {#additional-resources}
 
-* Video: [Informazioni sui tipi di ambiente in AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Video: [Informazioni sui tipi di ambiente in AEM Cloud Manager](https://experienceleague.adobe.com/it/perspectives/cloud-manager-environment-types)
 * [Gestire gli ambienti](/help/implementing/cloud-manager/manage-environments.md)
 
