@@ -1,18 +1,18 @@
 ---
-title: Panoramica sull’utilizzo dei frammenti di contenuto
+title: Panoramica dei concetti e delle best practice per l’utilizzo dei frammenti di contenuto
 description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service ti consentono di creare e utilizzare contenuti strutturati; ideali per la distribuzione headless e l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 35%
+source-wordcount: '2357'
+ht-degree: 30%
 
 ---
 
-# Panoramica sull’utilizzo dei frammenti di contenuto {#overview-working-with-content-fragments}
+# Utilizzo dei frammenti di contenuto: concetti e best practice {#working-with-content-fragments-concepts-and-best-practices}
 
 Con Adobe Experience Manager (AEM) as a Cloud Service, i frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalla pagina. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per [distribuzione headless](/help/headless/what-is-headless.md) e [creazione pagine](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -185,7 +185,7 @@ I frammenti di contenuto sono:
 
 * Accessibile per la distribuzione dei contenuti tramite l&#39;[API GraphQL di AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponibile nell&#39;editor di pagine [&#x200B; tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Disponibile nell&#39;editor di pagine [ tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è disponibile per gli autori di pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -325,3 +325,47 @@ Il progetto WKND include:
 * Frammenti di contenuto (e altro contenuto) disponibili in:
 
    * `.../assets.html/content/dam/wknd/en`
+
+## Best practice {#best-practices}
+
+I frammenti di contenuto possono essere utilizzati per formare strutture complesse. Adobe offre consigli sulle best practice da seguire per la definizione e l’utilizzo di modelli e frammenti.
+
+### Semplifica {#keep-it-simple}
+
+Durante la modellazione di contenuti strutturati in AEM, utilizza strutture di contenuto quanto più semplici possibile per garantire prestazioni di sistema elevate e governance semplificata.
+
+### Numero di modelli {#number-of-models}
+
+Crea tutti i modelli di contenuto necessari, ma non più.
+
+Troppi modelli complicano la governance e possono rallentare le query GraphQL. Di solito è sufficiente un piccolo insieme di modelli, massimo di decine basse. Se ti avvicini alle dieci o più alte, riconsidera la tua strategia di modellazione.
+
+### Nidificazione di modelli e frammenti (molto importante) {#nesting-models-and-fragments}
+
+Evita la nidificazione profonda o eccessiva dei frammenti di contenuto utilizzando i Riferimenti ai frammenti di contenuto, che consentono ai frammenti di fare riferimento ad altri frammenti, a volte su più livelli.
+
+L’utilizzo intensivo dei riferimenti ai frammenti di contenuto può influire in modo significativo sulle prestazioni del sistema, sulla reattività dell’interfaccia utente e sull’esecuzione delle query GraphQL. Mirare a mantenere la nidificazione a non più di dieci livelli.
+
+### Numero di campi e tipi di dati per modello {#number-of-data-fields-and-types-per-model}
+
+Includi solo i campi di dati e i tipi di dati necessari per un modello.
+
+Modelli eccessivamente complessi portano a frammenti eccessivamente complessi che possono rendere difficile l’authoring e ridurre le prestazioni dell’editor.
+
+### Campi Rich Text {#rich-text-fields}
+
+Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) in considerazione.
+
+Limita il numero di campi Rich Text per modello. Inoltre, indica la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
+
+### Numero di varianti {#number-of-variations}
+
+Crea tutte le varianti di frammento necessarie, ma non più.
+
+Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
+
+Si consiglia di non superare le dieci varianti per frammento di contenuto.
+
+### Test prima della produzione {#test-before-production}
+
+In caso di dubbi, crea un prototipo delle strutture di contenuto previste prima di implementarle in produzione. Una verifica precoce dei concetti, unita a test adeguati, sia tecnici che di accettazione da parte dell’utente, può aiutare a evitare problemi in un secondo momento, quando si dovranno affrontare le scadenze di produzione.

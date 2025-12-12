@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2475'
 ht-degree: 35%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 35%
 Dalla console Frammenti di contenuto puoi gestire i tuoi modelli di frammenti di contenuto, quindi [apri l&#39;editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) per definire la struttura.
 
 I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati come base per i contenuti headless o per l’authoring delle pagine.
+
+>[!NOTE]
+>
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!NOTE]
 >
@@ -215,7 +219,7 @@ Selezionare ad esempio **Abilitato** nella colonna **Stato**. Una volta selezion
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa alla cartella appropriata per la configurazione [&#x200B; o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Utilizza **Crea** per aprire la finestra di dialogo.
 
    >[!CAUTION]
@@ -269,7 +273,7 @@ Un modello può anche essere disabilitato, con i seguenti risultati:
 
 * Il modello non sarà più disponibile come base per la creazione di *nuovi* frammenti di contenuto.
 * Tuttavia:
-   * Lo schema GraphQL continua a essere generato ed è ancora interrogabile (per evitare di influenzare l’API JSON).
+   * Lo schema GraphQL continua a essere generato ed è ancora disponibile a ricevere query (per evitare un impatto sull’API JSON).
    * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
 * Non è più possibile fare riferimento al modello, ma i riferimenti esistenti vengono mantenuti intatti e possono ancora essere interrogati e restituiti dall’endpoint GraphQL.
 

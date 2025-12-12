@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 71%
+source-wordcount: '3604'
+ht-degree: 70%
 
 ---
 
@@ -22,6 +22,10 @@ Per utilizzare i modelli di frammento di contenuto:
 1. [Crea](#creating-a-content-fragment-model) e [configura](#defining-your-content-fragment-model) i modelli per frammenti di contenuto
 1. [Abilitare i modelli di frammenti di contenuto](#enabling-disabling-a-content-fragment-model) da utilizzare per la creazione di frammenti di contenuto
 1. [Consenti modelli di frammento di contenuto nelle cartelle Risorse richieste](#allowing-content-fragment-models-assets-folder) configurando i **Criteri**.
+
+>[!NOTE]
+>
+>Tieni presente le [best practice](/help/assets/content-fragments/content-fragments.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!NOTE]
 >
@@ -446,7 +450,7 @@ Un modello può anche essere disabilitato, con i seguenti risultati:
 
 * Il modello non sarà più disponibile come base per la creazione di *nuovi* frammenti di contenuto.
 * Tuttavia:
-   * Lo schema GraphQL continua a essere generato ed è ancora interrogabile (per evitare di influenzare l’API JSON).
+   * Lo schema GraphQL continua a essere generato ed è ancora disponibile a ricevere query (per evitare un impatto sull’API JSON).
    * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
 * Non è più possibile fare riferimento al modello, ma i riferimenti esistenti vengono mantenuti intatti e possono ancora essere interrogati e restituiti dall’endpoint GraphQL.
 

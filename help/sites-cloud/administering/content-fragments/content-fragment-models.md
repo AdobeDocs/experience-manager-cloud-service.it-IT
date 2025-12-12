@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2217'
 ht-degree: 31%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 31%
 I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service definiscono la struttura per il contenuto dei [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/overview.md). Questi frammenti possono quindi essere utilizzati per l’authoring delle pagine o come base per i contenuti headless.
 
 Questa pagina illustra come definire il modello per frammenti di contenuto utilizzando l’editor dedicato. Consulta [Gestione dei modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) per ulteriori attività e opzioni disponibili dopo la creazione dei frammenti, tra cui [azioni disponibili nella Console Frammenti di contenuto](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions), [autorizzazione del modello nella cartella](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) e [pubblicazione del modello](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
+
+>[!NOTE]
+>
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!CAUTION]
 >

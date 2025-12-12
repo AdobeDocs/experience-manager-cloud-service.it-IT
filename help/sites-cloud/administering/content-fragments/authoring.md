@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 6%
 
 ---
@@ -32,6 +32,10 @@ Questo editor fornisce:
 * Possibilità di [visualizzare i dettagli della versione](#view-version-history) nell&#39;editor. Puoi anche ripristinare una versione selezionata.
 * Possibilità di [visualizzare e aprire i riferimenti principali](#view-parent-references).
 * Una visualizzazione gerarchica del frammento di contenuto e dei relativi riferimenti, utilizzando la [struttura ad albero](#structure-tree).
+
+>[!NOTE]
+>
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ Nel pannello a sinistra puoi vedere:
 
 * l&#39;elenco di **[Varianti](#variations)** create per questo frammento:
    * **Principale** è la variante presente al momento della creazione del frammento di contenuto. Puoi aggiungerne altre in un secondo momento
-   * puoi utilizzare Genera varianti (#generate-variations) per utilizzare un modello basato su prompt creato da Adobe per un caso d’uso specifico.
+   * è possibile utilizzare [Genera varianti](#generate-variations-ai) per utilizzare un modello basato su prompt creato da Adobe per un caso d&#39;uso specifico.
    * puoi anche [creare una variante](#create-variation)
 * **Campi** all&#39;interno del frammento e relative varianti:
    * l&#39;icona indica il [Tipo di dati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -135,12 +139,6 @@ Dall’editor è possibile:
 * [Eliminare una variante](#delete-variation)
 
 ### Crea una variante {#create-variation}
-
->[!NOTE]
->
->Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
->
->Si consiglia di non superare le dieci varianti per frammento di contenuto.
 
 Per creare una variante del frammento di contenuto:
 
@@ -273,7 +271,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 

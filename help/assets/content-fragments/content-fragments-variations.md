@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2571'
-ht-degree: 50%
+source-wordcount: '2530'
+ht-degree: 51%
 
 ---
 
@@ -444,12 +444,6 @@ Esempio:
 Le varianti consentono di utilizzare il contenuto **Master** e modificarlo in base allo scopo (se necessario).
 
 **Per creare una variante:**
-
->[!NOTE]
->
->Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
->
->Si consiglia di non superare le dieci varianti per frammento di contenuto.
 
 1. Apri il frammento e accertati che il pannello laterale sia visibile.
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
