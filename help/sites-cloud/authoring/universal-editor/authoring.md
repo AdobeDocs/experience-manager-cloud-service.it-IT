@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2625'
 ht-degree: 14%
 
 ---
@@ -75,11 +75,15 @@ Le modifiche vengono salvate automaticamente quando lo stato attivo lascia il ca
 
 #### Pannello Proprietà {#properties-rail}
 
-Nel [pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) viene visualizzato un elemento per il testo selezionato. Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo.
+Il pannello [proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) mostra una voce per il componente Rich Text selezionato.
+
+![Componente Rich Text nel pannello delle proprietà](assets/rich-text-properties-panel.png)
+
+Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo RTF.
 
 ![Finestra di dialogo per la modifica di testo RTF](assets/rich-text-canvas.png)
 
-Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvare le modifiche.
+Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvare le modifiche. Puoi anche premere il tasto Esc per salvare le modifiche e chiudere la finestra di dialogo.
 
 #### Opzioni di formattazione RTF {#formatting-options}
 
@@ -92,8 +96,15 @@ L’editor Rich Text di Universal Editor consente all’autore di applicare la f
 * Apice
 * Pedice
 * Elenco puntato
-* Elenco numerato
+   * Utilizza il tasto TAB per applicare un rientro e MAIUSC+TAB per annullare il rientro
+* Elenco ordinato
+   * Utilizza il tasto TAB per applicare un rientro e MAIUSC+TAB per annullare il rientro
 * Collegamento
+* Scollega
+* Immagine
+* Rimuovi tutta la formattazione
+
+È possibile modificare le tabelle esistenti utilizzando l’editor Rich Text, ma non è possibile creare nuove tabelle.
 
 L’editor Rich Text può essere configurato in modo da nascondere le opzioni o mostrare opzioni aggiuntive a seconda delle esigenze degli autori. Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;editor Rich Text per Universal Editor](/help/implementing/universal-editor/configure-rte.md).
 
@@ -212,7 +223,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
@@ -230,7 +241,11 @@ Copiare e incollare possono essere nella stessa scheda del browser o tra schede 
 >
 >Utilizzare la scelta rapida `Command-C` o `Command-V` rispettivamente per copiare o incollare.
 
+## Opzioni di contesto {#context-options}
 
+Durante la modifica diretta, l’editor offre opzioni pertinenti al contesto con un clic con il pulsante destro del mouse, ad esempio per duplicare, eliminare o copiare componenti.
+
+![Menu delle opzioni di contesto](assets/context-options-menu.png)
 
 ## Anteprima del contenuto {#previewing-content}
 

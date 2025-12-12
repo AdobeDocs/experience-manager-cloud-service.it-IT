@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2025.12.04 dell’editor universale
-description: Queste sono le note sulla versione 2025.12.04 dell’editor universale.
+title: Note sulla versione 2025.12.12 dell’editor universale
+description: Queste sono le note sulla versione 2025.12.11 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 57%
+source-wordcount: '323'
+ht-degree: 21%
 
 ---
 
 
-# Note sulla versione 2025.12.04 dell’editor universale {#release-notes}
+# Note sulla versione 2025.12.12 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 4 dicembre 2025 di Universal Editor.
+Queste sono le note sulla versione del 12 dicembre 2025 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ Queste sono le note sulla versione del 4 dicembre 2025 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* Le intestazioni di autorizzazione sono state disabilitate a favore dell&#39;[accesso sviluppatore locale.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* È ora disponibile un menu contestuale nella struttura [strutturata facendo clic con il pulsante destro del mouse.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* Tasto di scelta rapida aggiunto a [componenti duplicati.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* Il supporto è stato aggiunto alle tabelle esistenti nell&#39;editor Rich Text [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* Tasto di tabulazione abilitato per la nidificazione di elenchi nell&#39;editor di testo RTF [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* È ora possibile disabilitare la funzione di accesso per sviluppatori tramite il tag [meta `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* Facendo clic con il pulsante destro del mouse nella sezione di sovrapposizione viene ora visualizzato un menu di [opzioni contestuali.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [Il rientro con ambito](/help/implementing/universal-editor/configure-rte.md#indentation) è ora supportato nell&#39;editor di testo RTF [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### Nuovo editor Rich Text {#new-rte}
+## Funzioni per adozione anticipata {#early-adopter}
 
-Il nuovo editor Rich Text ProseMirror, con un selettore di pagina nella finestra di dialogo del collegamento, è ora disponibile nel pannello di destra. [Questo editor Rich Text offre opzioni di configurazione flessibili.](/help/implementing/universal-editor/configure-rte.md)
+Se ti interessa testare le prossime funzionalità elencate di seguito e condividere i tuoi commenti, invia un’e-mail al tuo Customer Success Manager Adobe dall’indirizzo e-mail associato al tuo Adobe ID.
+
+* La copia superficiale è stata implementata per i frammenti di contenuto.
 
 ## Altri miglioramenti {#other-improvements}
 
-* È stato risolto un problema che impediva il salvataggio corretto dell’editor Rich Text nell’area di lavoro.
-* Il ritaglio della struttura della cartella del selettore di contenuto è stato corretto.
-* `componentId` è ora fornito durante l&#39;azione di aggiunta.
+* La barra delle proprietà ora è sincronizzata quando più campi cambiano nel contesto.
+* Il selettore Frammento di contenuto ora si apre come previsto sulle istanze AEM 6.5.
+* Il tasto Esc ora chiude le finestre di dialogo nell’editor Rich Text.
+* L&#39;azione **Rimuovi componente** è ora disponibile solo quando è selezionato un componente.
+* L’editor di frammenti di contenuto corretto (vecchio o nuovo) ora viene aperto in base all’istanza utilizzata (se il nome host è il pattern di AEM as a Cloud Service, utilizza il nuovo editor, altrimenti utilizza l’editor legacy).
+* La convalida del filtro viene aggiunta all’azione duplicata.
+* I titoli lunghi vengono ora troncati nella barra delle proprietà.
+* Gli array di gestione multisito con più di 10 valori ora vengono gestiti correttamente.
+* Gli errori di conflitto durante la creazione di più componenti con lo stesso nome vengono ora gestiti correttamente.
+* È stata aggiunta la gestione di array di gestione multisito con valori > 10.

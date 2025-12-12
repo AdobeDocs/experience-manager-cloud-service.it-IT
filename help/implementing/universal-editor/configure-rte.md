@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ Le azioni relative alle immagini supportano il wrapping degli elementi immagine 
 * `wrapInPicture`: `false` (predefinito) - Genera `<img>` elementi semplici
 * `wrapInPicture`: `true` - Racchiudi immagini negli elementi `<picture>` per la progettazione reattiva
 
+### Configurazione rientro {#indentation}
+
+La funzione Rientro dispone di una configurazione a livello di funzionalità che controlla l&#39;ambito del comportamento di rientro, oltre a configurazioni delle singole azioni per collegamenti ed etichette.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Opzioni ambito rientro {#indentation-options}
+
+* `scope`: `all` (impostazione predefinita) - Il rientro/rientro si applica a tutto il contenuto:
+   * Elenchi: annulla/annulla annidamento voci elenco
+   * Paragrafi e intestazioni: Aumenta/diminuisce il livello di rientro generale
+* `scope`: `lists` - Il rientro/rientro si applica solo agli elementi dell&#39;elenco:
+   * Elenchi: annulla/annulla annidamento voci elenco
+   * Paragrafi e intestazioni: nessun rientro (pulsanti disattivati per questi)
+
+>[!NOTE]
+>
+>La nidificazione degli elenchi tramite i tasti TAB/MAIUSC+TAB funziona indipendentemente dalle impostazioni generali di rientro.
+
 ### Altre azioni {#other}
 
 Tutte le altre azioni supportano la personalizzazione di base. Sono disponibili le seguenti sezioni.
@@ -307,6 +345,35 @@ Utilizza `wrapInParagraphs: true` quando hai bisogno di:
 * Più paragrafi per voce di elenco
 * Stile coerente a livello di blocco
 
+### `wrapInPicture`{#wrapinpicture}
+
+L&#39;opzione `wrapInPicture` per le immagini controlla la struttura HTML generata per il contenuto dell&#39;immagine.
+
+#### wrapInPicture: false (impostazione predefinita) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Utilizza `wrapInPicture: true` quando hai bisogno di:
+
+* Supporto per immagini reattive con `<source>` elementi.
+* Capacità di direzione dell&#39;arte.
+* Funzionalità di immagine avanzate a prova di futuro.
+* Struttura coerente degli elementi immagine.
+
+>[!NOTE]
+>
+>Quando `wrapInPicture: true` è abilitato, le immagini possono essere migliorate con ulteriori elementi `<source>` per diversi formati e query multimediali, rendendole più flessibili per la progettazione reattiva.
+
 ### Collega opzioni di destinazione {#link-target}
 
 L&#39;opzione `hideTarget` per i collegamenti controlla se l&#39;attributo `target` è incluso nei collegamenti generati e se la finestra di dialogo per la creazione dei collegamenti include un campo per la selezione della destinazione.
@@ -318,11 +385,60 @@ L&#39;opzione `hideTarget` per i collegamenti controlla se l&#39;attributo `targ
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Disabilitazione dei collegamenti sulle immagini {#disableforimages}
+
+L&#39;opzione `disableForImages` per i collegamenti controlla se gli utenti possono creare collegamenti su immagini ed elementi dell&#39;immagine. Questo vale sia per gli elementi `<img>` in linea che per gli elementi `<picture>` a livello di blocco.
+
+#### `disableForImages: false` (impostazione predefinita) {#disableforimages-false}
+
+Gli utenti possono selezionare le immagini e racchiuderle nei collegamenti.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+Il pulsante di collegamento è disattivato quando si seleziona un&#39;immagine o un&#39;immagine. Gli utenti possono creare collegamenti solo sul contenuto di testo.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Utilizza `disableForImages: true` quando desideri:
+
+* Mantenere la coerenza visiva impedendo le immagini collegate.
+* Semplifica la struttura del contenuto separando le immagini dalla navigazione.
+* Applica criteri per contenuto che limitano il collegamento delle immagini.
+* Riduzione della complessità di accessibilità dei contenuti.
+
+>[!NOTE]
+>
+>Questa impostazione influisce solo sulla possibilità di creare nuovi collegamenti sulle immagini. Non rimuove i collegamenti esistenti dalle immagini nel contenuto.
 
 ### Opzioni tag {#tag}
 

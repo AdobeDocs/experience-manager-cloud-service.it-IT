@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1871'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ La barra di navigazione superiore di Experience Platform è sempre presente nell
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
@@ -183,11 +183,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
@@ -224,6 +224,8 @@ Universal Editor offre un&#39;esperienza di authoring personalizzabile ed estens
 L’editor occupa la maggior parte della finestra ed è l’area in cui viene eseguito il rendering della pagina specificata nella [barra della posizione](#location-bar).
 
 ![Editor](assets/editor.png)
+
+Per impostazione predefinita, l&#39;editor viene aperto in modo che sia possibile [creare contenuto](/help/sites-cloud/authoring/universal-editor/authoring.md) sul posto o utilizzando il pannello [proprietà.](#properties-rail)
 
 Se l&#39;editor è in [modalità anteprima](#preview-mode), il contenuto sarà navigabile e potrai seguire i collegamenti, ma non potrai modificarlo.
 
