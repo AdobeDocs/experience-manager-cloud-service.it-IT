@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 37%
 
 ---
@@ -28,9 +28,11 @@ L’utente con le autorizzazioni necessarie può creare i seguenti tipi di ambie
 | **Sviluppo rapido** | Un ambiente di sviluppo rapido (RDE, Rapid Development Environment) consente agli sviluppatori di implementare e rivedere rapidamente le modifiche. Questa funzionalità riduce il tempo necessario per testare le funzionalità già convalidate in un ambiente di sviluppo locale. Consulta [la documentazione sull’ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) per ottenere informazioni dettagliate sull’utilizzo di un RDE. |
 | **Ambiente di testing specializzato** | Gli ambienti di test specializzati forniscono uno spazio dedicato per convalidare le funzioni in condizioni di produzione prossime alla produzione, ideale per i test di stress e i controlli avanzati di pre-distribuzione. Consulta [Aggiungere un ambiente di test specializzato](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
+<!-- 
 >[!NOTE]
 >
->La funzionalità **Ambiente di test specializzato** è attualmente disponibile solo tramite il programma beta privato. Per iscriverti alla versione beta privata, consulta [Ambiente di test specializzato](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 Le funzionalità dei singoli ambienti dipendono dalle soluzioni abilitate nel [programma](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) dell&#39;ambiente.
 
@@ -67,7 +69,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente**, esegui le operazioni seguenti:
 
-   * Selezionare un tipo di ambiente [**&#128279;**](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
+   * Selezionare un tipo di ambiente [****](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Fornisci una **Descrizione** facoltativa per l&#39;ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
@@ -308,7 +310,7 @@ Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer
 
 Solo gli utenti con il ruolo **Sviluppatore** possono accedere a **Developer Console**. Tuttavia, per i programmi sandbox, qualsiasi utente con accesso al programma sandbox ha accesso a **Developer Console**.
 
-Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
+Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
 
 Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **Panoramica** quando si fa clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) di un singolo ambiente.
 
