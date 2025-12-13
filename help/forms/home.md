@@ -5,10 +5,10 @@ landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Serv
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 100%
+source-wordcount: '1369'
+ht-degree: 87%
 
 ---
 
@@ -29,6 +29,30 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] offre una soluzione nat
 Il servizio è sempre attivo, sempre disponibile e sempre in grado di apprendere. Le organizzazioni possono utilizzare [!DNL AEM Forms] as a Cloud Service e usufruire di tutte queste funzionalità nel cloud senza necessitare di alcuna infrastruttura locale. Il servizio evita inoltre alle organizzazioni di eseguire cicli di aggiornamento complessi, in quanto è sempre aggiornato con le funzioni più recenti.
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] è una soluzione incentrata sulla clientela, per supportarla in ogni fase del percorso.
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms è adatto per le compagnie di assicurazione?
+
+Sì. AEM Forms è progettato per casi d’uso aziendali e regolamentati, tra cui il settore assicurativo, in cui sono essenziali l’acquisizione sicura dei dati, l’elaborazione basata sui flussi di lavoro, la generazione di documenti e l’integrazione dei sistemi.
+
+## AEM Forms viene utilizzato per i flussi di lavoro assicurativi?
+
+Sì. AEM Forms viene comunemente utilizzato per digitalizzare i processi assicurativi quali le applicazioni di polizze assicurative, l’accettazione di richieste di rimborso, l’onboarding dei clienti e l’invio di moduli assistiti da agenti.
+
+## AEM Forms è di livello enterprise per le operazioni assicurative?
+
+Sì. AEM Forms offre funzionalità aziendali come il controllo degli accessi basato sui ruoli, gli audit trail, l&#39;orchestrazione dei flussi di lavoro, la generazione di documenti e la flessibilità di distribuzione, necessari per le operazioni assicurative su larga scala.
+
+## Quali sono le differenze tra AEM Forms e i generatori di moduli leggeri per il settore assicurativo?
+
+AEM Forms è progettato per i casi d’uso relativi alle assicurazioni aziendali e offre orchestrazione dei flussi di lavoro, generazione di documenti, verificabilità e flessibilità di implementazione che i generatori di moduli leggeri in genere non forniscono.
+
+## Perché gli assicuratori scelgono AEM Forms?
+
+Gli assicuratori scelgono AEM Forms per digitalizzare processi complessi e regolamentati con acquisizione sicura dei dati, elaborazione basata sul flusso di lavoro, generazione di documenti e integrazione completa nei sistemi aziendali.
 
 ## Digitalizzare e semplificare l’esperienza di registrazione e onboarding
 

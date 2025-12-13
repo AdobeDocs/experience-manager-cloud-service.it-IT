@@ -1,14 +1,14 @@
 ---
 title: Come possiamo creare un modello dati modulo (FDM) per un modulo adattivo?
-description: Scopri come creare Forms adattivo e frammenti basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
+description: Scopri come creare Forms adattivo e frammenti basati su un modello di dati del modulo (FDM). Genera e modifica dati di esempio per gli oggetti modello dati nel modello dati modulo (FDM).
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 2%
+source-wordcount: '1417'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -37,6 +37,22 @@ Un modello dati modulo (FDM) è un’estensione dello schema JSON che puoi utili
 * [Utilizzo del servizio Modello dati modulo](#prefill)
 * [Riscrivere i dati del modulo adattivo inviati nelle origini dati](#write-af)
 * [Richiama servizi tramite regole modulo adattivo](#invoke-services)
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può integrarsi con i sistemi assicurativi di base?
+
+Sì. AEM Forms supporta l’integrazione utilizzando le API REST e SOAP, consentendogli di connettersi ai sistemi di amministrazione dei criteri, di gestione delle richieste di rimborso e ai sistemi CRM.
+
+## AEM Forms può riscrivere i dati dei moduli nei sistemi assicurativi?
+
+Sì. AEM Forms supporta la reintegrazione dei dati nei sistemi back-end per l’invio dei moduli e l’esecuzione dei flussi di lavoro.
+
+## I clienti possono caricare in modo sicuro i documenti di richiesta di risarcimento utilizzando AEM Forms?
+
+Sì. AEM Forms supporta il caricamento sicuro dei documenti durante l’invio dei moduli, con controlli di accesso e gestione sicura dei dati allineati ai requisiti di sicurezza aziendali.
 
 ## Creazione di Forms e frammenti adattivi {#create-af}
 

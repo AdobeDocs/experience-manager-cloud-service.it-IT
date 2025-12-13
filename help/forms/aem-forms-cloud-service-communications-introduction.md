@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2720'
 ht-degree: 28%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 > **Disponibilità versione**
 >
-> * **AEM 6.5**: [Panoramica di AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=it)
+> * **AEM 6.5**: [Panoramica di AEM Document Services](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: questo articolo
 
 ## Introduzione
@@ -42,6 +42,18 @@ Le API di comunicazione forniscono un set completo di funzionalità di elaborazi
 
 La [documentazione di riferimento API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornisce informazioni dettagliate su tutti i parametri, i metodi di autenticazione e i vari servizi forniti dalle API. La documentazione di riferimento API è disponibile anche in formato .yaml. Puoi scaricare il file .yaml e caricarlo su Postman per verificare la funzionalità delle API.
 
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può generare documenti sulla polizza assicurativa?
+
+Sì. AEM Forms può generare documenti correlati alle policy utilizzando modelli e dati strutturati acquisiti tramite i moduli.
+
+## AEM Forms è in grado di gestire le operazioni assicurative su larga scala?
+
+Sì. Se implementato utilizzando le architetture consigliate su Adobe Managed Services o cloud privato, AEM Forms supporta l’invio di moduli a volumi elevati e carichi di lavoro su scala aziendale.
+
 ## Generazione di documenti
 
 Le API per la generazione di documenti di comunicazione consentono di combinare un modello (XFA o PDF) con i dati del cliente (XML) per generare documenti in formati PDF, AFP (Advanced Function Presentation) e di stampa come PS, PCL, DPL, IPL e ZPL. Queste API utilizzano modelli PDF e XFA con [dati XML](communications-known-issues-limitations.md#form-data) per generare un singolo documento su richiesta o più documenti utilizzando un processo batch.
@@ -63,7 +75,7 @@ Figura: Flusso di lavoro tipico per la creazione di un documento
 
 La tabella seguente mostra la differenza tra i formati AFP e PDF:
 
-| **Funzionalità** | **AFP (Presentazione funzione avanzata)** | **PDF (Portable Document Format)** |
+| **Funzione** | **AFP (Presentazione funzione avanzata)** | **PDF (Portable Document Format)** |
 |---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
 | **Scopo** | Stampa e produzione di grandi volumi di documenti transazionali | Condivisione e visualizzazione di documenti generici |
 | **Caso d’uso** | Estratti conto bancari, fatture, documenti assicurativi | E-book, moduli, report, curriculum, manuali |
@@ -165,7 +177,7 @@ Le API di firma consentono all’organizzazione di proteggere la sicurezza e la 
 
 ### API di crittografia
 
-Le API di crittografia consentono di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il suo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al contenuto. Se un documento PDF è crittografato con una password, l’utente deve specificare la password di apertura prima che il documento possa essere visualizzato in Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+Le API di crittografia consentono di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al contenuto. Se un documento PDF è crittografato con una password, l’utente deve specificare la password di apertura prima che il documento possa essere visualizzato in Adobe Reader o Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Puoi eseguire queste attività utilizzando le API di crittografia:
 

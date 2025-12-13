@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2154'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,14 @@ ht-degree: 3%
 AEM Forms fornisce supporto predefinito per le lingue inglese (en), spagnolo (es), francese (fr), italiano (it), tedesco (de), giapponese (ja), portoghese-brasiliano (pt-BR), cinese (zh-CN), cinese-Taiwan (zh-TW) e coreano (ko-KR). È possibile aggiungere il supporto anche per altre lingue, come Hindi(hi_IN). È inoltre possibile presentare Forms adattivo in una lingua RTL (Right-to-Left) come l’arabo, il persiano e l’urdu aggiungendo queste lingue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms supporta i casi di utilizzo di assicurazioni multilingue?
+
+Sì. AEM Forms supporta esperienze di moduli multilingue, importante per gli assicuratori che operano in aree geografiche e lingue diverse.
 
 ## In che modo AEM Forms determina le impostazioni locali di un modulo adattivo?
 
@@ -117,7 +125,7 @@ Per aggiungere il supporto per nuove lingue a un modulo adattivo basato su compo
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Il progetto è pronto!**
 
@@ -140,7 +148,7 @@ Per aggiungere il supporto per nuove lingue a un modulo adattivo basato su compo
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     Sostituisci `<appid>` con l&#39;ID app specifico del progetto. Puoi trovare `<appid>` per il progetto AEM nel file `archetype.properties`.
+     Sostituisci `<appid>` con l&#39;ID app specifico del progetto. Puoi trovare `<appid>` per il tuo progetto AEM nel file `archetype.properties`.
 
      ![Proprietà Archetipo](/help/forms/assets/archetype-properties.png)
 
@@ -347,9 +355,9 @@ Questo passaggio si applica solo alle lingue diverse da quelle comunemente suppo
 
 1. Salva il file.
 
-### Distribuire le nuove impostazioni locali create nell&#39;ambiente AEM
+### Distribuire le nuove impostazioni locali create nell’ambiente AEM
 
-Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro Forms adattivo. È possibile
+Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro Forms adattivo. Operazioni disponibili:
 
 * Distribuire la directory di progetto AEM as a Cloud Service [AEMaaCS] nell&#39;ambiente di sviluppo locale per provare la nuova configurazione locale nel computer locale. Per implementare nell’ambiente di sviluppo locale:
 
@@ -365,7 +373,7 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
       mvn -PautoInstallPackage clean install
       ```
 
-* Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39;ambiente di Cloud Service. Per eseguire l’implementazione nell’ambiente di Cloud Service:
+* Distribuisci la directory del progetto AEM as a Cloud Service [AEMaaCS] nell&#39;ambiente Cloud Service. Per eseguire l’implementazione nell’ambiente Cloud Service:
 
    1. Eseguire il commit delle modifiche:
 
@@ -373,16 +381,16 @@ Ora tutti potete utilizzare le nuove impostazioni internazionali con il vostro F
 
    1. Distribuisci il codice aggiornato:
 
-      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline). In questo modo viene automaticamente creato e distribuito il codice aggiornato con il nuovo supporto delle impostazioni internazionali.
+      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). In questo modo viene automaticamente creato e distribuito il codice aggiornato con il nuovo supporto delle impostazioni internazionali.
 
-      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
+      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Anteprima di un modulo adattivo con le nuove impostazioni internazionali aggiunte
 
 Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le nuove impostazioni locali aggiunte:
 
-1. Accedi all’istanza AEM Forms as a Cloud Service.
+1. Accedi all’istanza di AEM Forms as a Cloud Service.
 1. Vai a **Forms** > **Forms e documenti**.
 1. Selezionare un modulo adattivo e fare clic su **Aggiungi dizionario**. Viene visualizzata la procedura guidata **Aggiungi dizionario al progetto di traduzione**.
 1. Specifica il **Titolo progetto** e seleziona le **Lingue di destinazione** dal menu a discesa nella procedura guidata **Aggiungi dizionario al progetto di traduzione**.
@@ -394,7 +402,7 @@ Questi passaggi ti guidano attraverso l’anteprima di un modulo adattivo con le
 ## Procedure consigliate per il supporto della nuova localizzazione {#best-practices}
 
 * Adobe consiglia di creare un progetto di traduzione dopo la creazione di un modulo adattivo. Ciò semplifica il processo di localizzazione.
-* Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per ovviare a questo problema, è stata incorporata un&#39;opzione **Lingua** nella finestra di dialogo Configura del [componente Selezione data](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e del [componente Casella numerica](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Quando i componenti Casella numerica e Selettore data vengono convertiti in una lingua specifica, possono verificarsi problemi di formattazione. Per ovviare a questo problema, è stata incorporata un&#39;opzione **Lingua** nella finestra di dialogo Configura del [componente Selezione data](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e del [componente Casella numerica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Gestione dei nuovi campi:

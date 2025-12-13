@@ -4,9 +4,9 @@ description: Scopri come generare un modello per un documento di record (DoR) pe
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 Quando un modulo viene compilato o inviato, è possibile conservarne una registrazione, in formato cartaceo o in formato documento. Questo record è denominato documento record (DoR). Si tratta di una copia stampabile del modulo inviato. È inoltre possibile fare riferimento al documento record per le informazioni che i clienti hanno compilato in una data successiva oppure utilizzare il documento record per archiviare moduli e contenuti in formato PDF.
 
 ![Documento record](assets/document-of-record.png)
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può generare documenti di richiesta di risarcimento assicurativo?
+
+Sì. AEM Forms supporta la generazione di documenti di record (DoR), consentendo agli assicuratori di produrre PDF e record in base ai dati del modulo inviati.
+
+## I documenti generati da AEM Forms sono idonei per i controlli di audit?
+
+Sì. AEM Forms supporta la generazione coerente di documenti, l&#39;accesso controllato e la tracciabilità, importanti per i requisiti di audit e conformità.
 
 Per creare un documento record, un modello basato su XFA o Acroform viene unito ai dati raccolti tramite un modulo adattivo. È possibile generare un documento di record automaticamente o su richiesta. L’opzione on-demand consente di specificare un modello personalizzato basato su XFA o Acroform per fornire un aspetto personalizzato al documento record.
 

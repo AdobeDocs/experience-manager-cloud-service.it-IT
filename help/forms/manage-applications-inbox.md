@@ -10,9 +10,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
@@ -23,9 +23,25 @@ Uno dei modi per avviare o attivare un flusso di lavoro incentrato su Forms è t
 
 Inoltre, la Casella in entrata AEM consolida le notifiche e le attività da vari componenti AEM, inclusi i flussi di lavoro Forms. Quando viene attivato un Forms Workflow contenente un passaggio di attività Assegna, l&#39;applicazione associata viene elencata come attività nella casella in entrata dell&#39;assegnatario. Se l&#39;assegnatario è un gruppo, l&#39;attività viene visualizzata nella Posta in arrivo di tutti i membri del gruppo fino a quando un singolo utente non richiede o delega l&#39;attività.
 
-L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. Puoi filtrare le attività in base a vari parametri. Per ulteriori informazioni sulla visualizzazione e sui filtri, vedere [Posta in arrivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=it#inbox-in-the-header).
+L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. Puoi filtrare le attività in base a vari parametri. Per ulteriori informazioni sulla visualizzazione e sui filtri, vedere [Posta in arrivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
 In sintesi, Casella in entrata consente di creare un&#39;applicazione e gestire le attività assegnate.
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può tenere traccia dello stato delle richieste di risarcimento o delle domande di risarcimento?
+
+Sì. I flussi di lavoro di AEM Forms consentono agli assicuratori di tenere traccia dell’invio dei moduli e dello stato di elaborazione in diverse fasi del processo aziendale.
+
+## AEM Forms supporta audit trail per i processi assicurativi?
+
+Sì. AEM Forms supporta la verificabilità attraverso la cronologia dei flussi di lavoro, i controlli di accesso e i registri di sistema, che consentono alle compagnie di assicurazione di soddisfare le esigenze di audit interno ed esterno.
+
+## Gli agenti possono inviare i moduli di assicurazione per conto dei clienti?
+
+Sì. AEM Forms supporta la compilazione di moduli assistiti e guidati da agenti, consentendo agli utenti autorizzati di inviare moduli per conto dei clienti mantenendo al contempo la possibilità di controllo.
 
 >[!NOTE]
 >
@@ -81,7 +97,7 @@ La vista dettagliata delle attività comprende le sezioni riportate di seguito.
 
 #### Dettagli attività {#task-details}
 
-Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
+Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
 
 #### Modulo {#form}
 
@@ -89,7 +105,7 @@ La scheda Modulo nell’area del contenuto principale visualizza il modulo invia
 
 #### Dettagli flusso di lavoro {#workflow-details}
 
-La scheda Dettagli flusso di lavoro nella parte superiore mostra l’avanzamento dell’attività attraverso le varie fasi del flusso di lavoro. Vengono visualizzate le fasi completata, corrente e in sospeso per l&#39;attività. Le fasi di un flusso di lavoro sono definite nel [Passaggio di assegnazione attività](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem) del flusso di lavoro associato.
+La scheda Dettagli flusso di lavoro nella parte superiore mostra l’avanzamento dell’attività attraverso le varie fasi del flusso di lavoro. Vengono visualizzate le fasi completata, corrente e in sospeso per l&#39;attività. Le fasi di un flusso di lavoro sono definite nel [Passaggio di assegnazione attività](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) del flusso di lavoro associato.
 
 Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni fase completata del flusso di lavoro. È possibile selezionare **[!UICONTROL Visualizza dettagli]** per una fase completata per conoscere i dettagli della fase. Vengono visualizzati i commenti, gli allegati del modulo e dell&#39;attività, lo stato, le date di inizio e di fine e così via relativi all&#39;attività.
 
@@ -97,7 +113,7 @@ Inoltre, nella scheda viene visualizzata la cronologia delle attività per ogni 
 
 #### Barra delle azioni {#actions-toolbar}
 
-La barra degli strumenti Azioni mostra tutte le opzioni disponibili per l&#39;attività. Mentre Salva, Reimposta e Delega sono azioni predefinite, altre azioni disponibili sono configurate nel [passaggio Assegna attività](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem). Nell’esempio precedente, Approve (Approva) e Reject (Rifiuta) sono configurati nel flusso di lavoro.
+La barra degli strumenti Azioni mostra tutte le opzioni disponibili per l&#39;attività. Mentre Salva, Reimposta e Delega sono azioni predefinite, altre azioni disponibili sono configurate nel [passaggio Assegna attività](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). Nell’esempio precedente, Approve (Approva) e Reject (Rifiuta) sono configurati nel flusso di lavoro.
 
 Quando si agisce sull’attività, questa procede ulteriormente nel flusso di lavoro.
 
@@ -112,7 +128,7 @@ Nella casella in entrata di AEM sono visualizzate solo le attività attive. Le a
 
 1. Seleziona per selezionare un&#39;attività e fai clic su **[!UICONTROL Apri]**.
 
-Viene visualizzata l’attività per visualizzare il documento o il modulo adattivo associato all’attività. Per il modulo adattivo, l&#39;attività visualizza il modulo adattivo di sola lettura o il relativo documento di record PDF configurato nella scheda Modulo/documento del passaggio [Assegna attività del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem).
+Viene visualizzata l’attività per visualizzare il documento o il modulo adattivo associato all’attività. Per il modulo adattivo, l&#39;attività visualizza il modulo adattivo di sola lettura o il relativo documento di record PDF configurato nella scheda Modulo/documento del passaggio [Assegna attività del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem).
 
 Nella sezione dei dettagli dell&#39;attività vengono visualizzate informazioni quali l&#39;azione intrapresa, lo stato dell&#39;attività, la data di inizio e la data di fine.
 
@@ -122,7 +138,7 @@ La scheda **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del f
 
 ![attività-flusso di lavoro completato](assets/completed-task-workflow.png)
 
-## Risoluzione dei problemi {#troubleshooting-workflows}
+## Risoluzione di problemi {#troubleshooting-workflows}
 
 ### Impossibile visualizzare gli elementi relativi al flusso di lavoro AEM nella casella in entrata AEM {#unable-to-see-aem-worklow-items}
 
@@ -151,6 +167,6 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=it#the-property-index).
+1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index).
 
 1. Dopo aver configurato gli indici in CRX DE o aver distribuito tramite un pacchetto, reindicizza l’archivio.

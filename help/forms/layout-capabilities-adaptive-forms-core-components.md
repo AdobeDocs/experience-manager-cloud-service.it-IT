@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Layout del modulo adattivo basato su componenti core, layout diversi per i moduli, layout di moduli dinamici AEM, layout di moduli di AEM Cloud Service, tipi di layout di moduli nei componenti core di AEM, layout di moduli adattivi
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2176'
 ht-degree: 16%
 
 ---
@@ -17,13 +17,25 @@ ht-degree: 16%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (componenti core) | Questo articolo |
 
 Adaptive Forms fornisce componenti di prima classe per il layout e la progettazione efficace dei moduli. Il layout controlla il modo in cui i componenti vengono visualizzati in un modulo. Forms adattivo supporta vari layout: pannello, procedura guidata, pannello a soffietto, schede nelle schede superiore/orizzontale e schede nelle schede sinistra/verticale.
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms supporta i moduli di richiesta di risarcimento assicurativo in più fasi?
+
+Sì. AEM Forms supporta moduli adattivi guidati in più passaggi con logica condizionale, consentendo agli assicuratori di raccogliere informazioni sulle richieste di rimborso in modo progressivo in base al tipo e al contesto.
+
+## I clienti possono caricare in modo sicuro i documenti di richiesta di risarcimento utilizzando AEM Forms?
+
+Sì. AEM Forms supporta il caricamento sicuro dei documenti durante l’invio dei moduli, con controlli di accesso e gestione sicura dei dati allineati ai requisiti di sicurezza aziendali.
 
 ## Prerequisito
 
@@ -69,7 +81,7 @@ Il layout delle schede verticali è noto anche come tabulazioni nel layout sinis
 
 Layout schede verticali
 
-È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB Layout schede orizzontali]
@@ -81,7 +93,7 @@ Il layout delle schede orizzontali è noto anche come Tabulazioni nel layout sup
 
 Layout schede orizzontali
 
-È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Layout pannello a soffietto]

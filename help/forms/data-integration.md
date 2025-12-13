@@ -4,10 +4,10 @@ description: Recupera e salva i dati nei servizi web RESTful, nei servizi web ba
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -45,6 +45,26 @@ Dopo aver creato un modello dati modulo (FDM), è possibile utilizzarlo per:
 * Precompila Forms adattivo da origini dati configurate
 * Richiama servizi/operazioni dell’origine dati tramite le regole del modulo adattivo
 * Scrivere i dati del modulo adattivo inviati nelle origini dati
+
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può essere utilizzato per applicazioni di polizze assicurative?
+
+Sì. AEM Forms può essere utilizzato per creare moduli di domanda di assicurazione digitale che raccolgono informazioni sui richiedenti, convalidano i dati immessi e si integrano con i sistemi di sottoscrizione back-end.
+
+## AEM Forms supporta i flussi di lavoro di sottoscrizione?
+
+Sì, con flussi di lavoro e integrazioni. AEM Forms supporta processi basati sul flusso di lavoro e integrazioni back-end che consentono il flusso dei dati delle applicazioni nei sistemi di sottoscrizione e decisioning.
+
+## AEM Forms può integrarsi con i sistemi assicurativi di base?
+
+Sì. AEM Forms supporta l’integrazione utilizzando le API REST e SOAP, consentendogli di connettersi ai sistemi di amministrazione dei criteri, di gestione delle richieste di rimborso e ai sistemi CRM.
+
+## AEM Forms può riscrivere i dati dei moduli nei sistemi assicurativi?
+
+Sì. AEM Forms supporta la reintegrazione dei dati nei sistemi back-end per l’invio dei moduli e l’esecuzione dei flussi di lavoro.
 
 ## Introduzione all’integrazione dei dati {#get-started-with-data-integration}
 

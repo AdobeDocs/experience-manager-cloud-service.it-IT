@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2044'
 ht-degree: 1%
 
 ---
@@ -20,16 +20,24 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Introduzione {#introduction}
 
 È possibile precompilare i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Per precompilare i dati in un modulo adattivo, rendi i dati utente disponibili come XML/JSON precompilato nel formato conforme alla struttura dei dati precompilata di Adaptive Forms.
 
+## Applicabilità e casi d’uso
+
+### Assicurazione
+
+## AEM Forms può precompilare i dati delle applicazioni assicurative?
+
+Sì. AEM Forms supporta la precompilazione dei campi modulo utilizzando origini dati back-end, consentendo agli assicuratori di riutilizzare i dati esistenti relativi a clienti o policy e di ridurre l’immissione manuale.
+
 ## Struttura dei dati preriempimento {#the-prefill-structure}
 
-Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono il valore della proprietà `bindRef` non vuoto nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser componenti del Sidekick e hanno un valore `bindRef` vuoto.
+Un modulo adattivo può contenere una combinazione di campi associati e non associati. I campi associati sono campi trascinati dalla scheda Content Finder e che contengono il valore della proprietà `bindRef` non vuoto nella finestra di dialogo di modifica del campo. I campi non associati vengono trascinati direttamente dal browser componenti di Sidekick e hanno un valore `bindRef` vuoto.
 
 È possibile precompilare sia i campi associati che quelli non associati di un modulo adattivo. I dati di precompilazione contengono le sezioni afBoundData e afUnBoundData per precompilare sia i campi associati che quelli non associati di un modulo adattivo. La sezione `afBoundData` contiene i dati di precompilazione per i campi e i pannelli associati. Questi dati devono essere conformi allo schema del modello di modulo associato:
 
@@ -207,7 +215,7 @@ Di seguito è riportato un esempio senza wrapper `afData/afBoundData`:
 
 >[!NOTE]
 >
-> L&#39;utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando i componenti dalla scheda Sidekick o Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
+> L&#39;utilizzo di campi non associati nei pannelli associati (pannelli con bindRef non vuoto creati trascinando componenti dalla scheda Sidekick o Origini dati) è **non** consigliato in quanto potrebbe causare la perdita di dati dei campi non associati. Si consiglia di avere nomi di campo univoci nel modulo, in particolare per i campi non associati.
 >
 
 ### Modulo adattivo senza modello di modulo {#adaptive-form-with-no-form-model}
@@ -249,7 +257,7 @@ Il seguente file JSON mostra un esempio:
   }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando l&#39;AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza di Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 >[!NOTE]
 >
@@ -346,12 +354,12 @@ Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in 
 
 Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle OSGi. Puoi creare il bundle OSGi, caricarlo e installarlo in [!DNL AEM Forms] bundle. Prima di iniziare a creare il bundle:
 
-- [Scarica  [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+- [Scarica  [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - Scarica il pacchetto boilerplate
 
 - Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.
 
-[Ottieni file](assets/prefill-sumbit-xmlsandcontentpackage.zip)
+[Ottieni il file](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 #### Creare un servizio di preriempimento {#create-a-prefill-service}
 
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
