@@ -139,7 +139,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 >[!NOTE]
 >
->Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
+>Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=it).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
