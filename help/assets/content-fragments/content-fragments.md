@@ -128,7 +128,7 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor pagina [ dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor pagina [&#x200B; dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
