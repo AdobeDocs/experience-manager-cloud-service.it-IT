@@ -271,7 +271,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
