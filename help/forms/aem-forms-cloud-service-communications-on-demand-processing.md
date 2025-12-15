@@ -6,7 +6,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
+source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
 workflow-type: tm+mt
 source-wordcount: '2573'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso a Cloud Manager**
 
