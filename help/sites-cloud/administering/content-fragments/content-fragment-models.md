@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 31%
@@ -20,7 +20,7 @@ Questa pagina illustra come definire il modello per frammenti di contenuto utili
 
 >[!NOTE]
 >
->Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!CAUTION]
 >

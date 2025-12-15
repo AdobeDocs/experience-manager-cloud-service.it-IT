@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 35%
@@ -20,7 +20,7 @@ I modelli per frammenti di contenuto in Adobe Experience Manager (AEM) as a Clou
 
 >[!NOTE]
 >
->Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Selezionare ad esempio **Abilitato** nella colonna **Stato**. Una volta selezion
 
 ## Creazione di un modello di frammento di contenuto {#creating-a-content-fragment-model}
 
-1. Passa alla cartella appropriata per la configurazione [&#x200B; o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
+1. Passa alla cartella appropriata per la configurazione [ o la configurazione secondaria](/help/sites-cloud/administering/content-fragments/setup.md).
 1. Utilizza **Crea** per aprire la finestra di dialogo.
 
    >[!CAUTION]

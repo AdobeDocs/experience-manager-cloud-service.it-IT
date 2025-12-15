@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Questo editor fornisce:
 
 >[!NOTE]
 >
->Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
+>Tieni presente le [best practice](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
 
 >[!WARNING]
 >
@@ -271,7 +271,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
