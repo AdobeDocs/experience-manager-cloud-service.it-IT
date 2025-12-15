@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 50%
+source-wordcount: '2610'
+ht-degree: 49%
 
 ---
 
@@ -128,7 +128,7 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor pagina [&#x200B; dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor pagina [ dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -352,9 +352,15 @@ Modelli eccessivamente complessi portano a frammenti eccessivamente complessi ch
 
 ### Campi Rich Text {#rich-text-fields}
 
-Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) in considerazione.
+Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) tenendo presente:
 
-Limita il numero di campi Rich Text per modello. Inoltre, indica la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
+* Campi
+
+  Limita il numero di campi Rich Text per modello. Per motivi di prestazioni, si consiglia di non disporre di più di dieci campi Rich Text in un modello. Se necessario, è consigliabile utilizzare [frammenti di contenuto nidificati](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Contenuto
+
+  È inoltre necessario limitare la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
 
 ### Numero di varianti {#number-of-variations}
 

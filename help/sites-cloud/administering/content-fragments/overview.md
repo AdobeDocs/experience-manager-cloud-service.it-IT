@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2391'
 ht-degree: 30%
 
 ---
@@ -185,7 +185,7 @@ I frammenti di contenuto sono:
 
 * Accessibile per la distribuzione dei contenuti tramite l&#39;[API GraphQL di AEM](/help/headless/graphql-api/content-fragments.md).
 
-* Disponibile nell&#39;editor di pagine [&#x200B; tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Disponibile nell&#39;editor di pagine [ tramite il componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è disponibile per gli autori di pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -354,9 +354,15 @@ Modelli eccessivamente complessi portano a frammenti eccessivamente complessi ch
 
 ### Campi Rich Text {#rich-text-fields}
 
-Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) in considerazione.
+Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) tenendo presente:
 
-Limita il numero di campi Rich Text per modello. Inoltre, indica la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
+* Campi
+
+  Limita il numero di campi Rich Text per modello. Per motivi di prestazioni, si consiglia di non disporre di più di dieci campi Rich Text in un modello. Se necessario, è consigliabile utilizzare [frammenti di contenuto nidificati](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content).
+
+* Contenuto
+
+  È inoltre necessario limitare la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
 
 ### Numero di varianti {#number-of-variations}
 
