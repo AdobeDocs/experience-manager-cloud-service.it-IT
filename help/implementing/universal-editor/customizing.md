@@ -4,7 +4,7 @@ description: Scopri le diverse opzioni per personalizzare l’editor universale 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 67%
@@ -43,7 +43,7 @@ Di seguito sono riportati i valori supportati per `content`, ovvero le funzional
 | `copy` | Disattiva i [pulsanti Copia e Incolla](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Disattiva il [pulsante Duplica](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Disattiva il pulsante [apri pagina](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
-| `dev-login` | Disabilita il pulsante di accesso [sviluppatore](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
+| `aem-dev-login` | Disabilita il pulsante di accesso [sviluppatore](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## Modifica dell’endpoint {#custom-endpoint}
 
@@ -55,7 +55,7 @@ Puoi limitare i componenti consentiti per contenitore nell’editor universale u
 
 ## Mostra e nascondi componenti in modo condizionale nel pannello Proprietà {#conditionally-hide}
 
-Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [&#x200B; del modello del componente &#x200B;](/help/implementing/universal-editor/field-types.md#fields).
+Anche se, generalmente, uno o più componenti possono essere disponibili per gli autori, in alcune situazioni potrebbe non avere senso. In questi casi, puoi nascondere i componenti nel pannello delle proprietà aggiungendo un attributo `condition` ai campi [ del modello del componente ](/help/implementing/universal-editor/field-types.md#fields).
 
 Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://jsonlogic.com/). Se la condizione è vera, il campo viene visualizzato. Se la condizione è falsa, il campo viene nascosto.
 
@@ -96,7 +96,7 @@ Le condizioni possono essere definite utilizzando lo [schema JsonLogic](https://
 
 ## URL di anteprima personalizzati {#custom-preview-urls}
 
-Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Puoi specificare un URL di anteprima personalizzato tramite una metaconfigurazione `urn:adobe:aue:config:preview` che viene aperta quando fai clic sul pulsante **Apri pagina** nella barra degli strumenti in alto a destra dell’editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 A tal fine, includi semplicemente l’URL di anteprima desiderato in un metatag dell’app dotata di strumenti come nell’esempio seguente.
 

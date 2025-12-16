@@ -4,7 +4,7 @@ description: Queste sono le note sulla versione 2025.12.11 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 21%
@@ -28,7 +28,7 @@ Queste sono le note sulla versione del 12 dicembre 2025 di Universal Editor.
 
 * Il supporto è stato aggiunto alle tabelle esistenti nell&#39;editor Rich Text [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * Tasto di tabulazione abilitato per la nidificazione di elenchi nell&#39;editor di testo RTF [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* È ora possibile disabilitare la funzione di accesso per sviluppatori tramite il tag [meta `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* È ora possibile disabilitare la funzione di accesso per sviluppatori tramite il tag [meta `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * Facendo clic con il pulsante destro del mouse nella sezione di sovrapposizione viene ora visualizzato un menu di [opzioni contestuali.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [Il rientro con ambito](/help/implementing/universal-editor/configure-rte.md#indentation) è ora supportato nell&#39;editor di testo RTF [.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
