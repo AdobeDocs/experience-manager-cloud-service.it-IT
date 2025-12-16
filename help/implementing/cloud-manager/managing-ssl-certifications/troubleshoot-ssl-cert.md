@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 31%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Validità certificato
++++Validità del certificato
 
 ## Validità del certificato {#validity}
 
@@ -138,7 +138,7 @@ Cloud Manager richiede che il certificato SSL sia valido per almeno 90 giorni da
 
 +++
 
-+++**Il certificato SAN applicato al dominio non è corretto
++++Il certificato SAN applicato al dominio non è corretto
 
 ## Il certificato SAN applicato al dominio non è corretto {#wrong-san-cert}
 
@@ -146,8 +146,8 @@ Si supponga di voler collegare `dev.yoursite.com` e `stage.yoursite.com` all&#39
 
 Per configurare la rete CDN per questi domini, è necessario installare un certificato per ciascuno di essi, quindi installare un certificato che copre `*.yoursite.com` per i domini non di produzione e un altro che copre anche `*.yoursite.com` per i domini di produzione.
 
-Configurazione valida. Tuttavia, quando aggiorni uno dei certificati, poiché entrambi i certificati coprono la stessa voce SAN, la rete CDN installerà il certificato più recente su tutti i domini applicabili, il che potrebbe apparire imprevisto.
+Configurazione valida. Tuttavia, quando si aggiorna uno dei certificati, entrambi i certificati coprono ancora la stessa voce SAN. Di conseguenza, la rete CDN installa il certificato più recente su tutti i domini applicabili, il che può sembrare imprevisto.
 
-Anche se questo comportamento può essere imprevisto, non si tratta di un errore e si tratta del comportamento standard della rete CDN sottostante. Se si dispone di due o più certificati SAN che coprono la stessa voce di dominio SAN, se tale dominio è coperto da un certificato e l&#39;altro è aggiornato, quest&#39;ultimo verrà ora installato per il dominio.
+Anche se questo scenario può essere imprevisto, non si tratta di un errore e rappresenta il comportamento standard della rete CDN sottostante. Se sono presenti due o più certificati SAN che coprono la stessa voce di dominio SAN, la rete CDN installa il certificato aggiornato più di recente per quel dominio. Questa situazione si verifica anche quando un altro certificato copre già la stessa voce di dominio.
 
 +++
