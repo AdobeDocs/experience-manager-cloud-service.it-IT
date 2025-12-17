@@ -1,18 +1,18 @@
 ---
-title: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Note sulla versione corrente per  [!DNL Adobe Experience Manager] as a Cloud Service
 description: Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 64%
+source-wordcount: '1704'
+ht-degree: 54%
 
 ---
 
-# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione corrente di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
 
@@ -40,13 +40,41 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Agenti in AEM {#agents-in-aem}
+## Programmi beta di AEM {#aem-beta-programs}
 
-AEM fornisce una serie di agenti che consentono di accelerare la creazione dei contenuti e di orchestrare automaticamente le modifiche. Per ulteriori informazioni, vedere [Panoramica degli agenti in AEM](/help/ai-in-aem/agents/overview.md).
+I programmi beta di Adobe Experience Manager (AEM) consentono ai clienti di accedere alle funzioni e al codice prerelease, fornire feedback e guidare il futuro di AEM.
+
+>[!IMPORTANT]
+>
+>I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Adobe consiglia ai clienti di prestare attenzione e di non affidarsi al corretto funzionamento o alle prestazioni delle versioni beta o a qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
+
+**Vantaggi della partecipazione**
+L’accesso anticipato alle funzioni sviluppate da Adobe consente a clienti e partner di fornire feedback e plasmare lo sviluppo dei prodotti. Consente inoltre di prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
+
+**Programmi beta correnti**
+Nelle sezioni seguenti sono elencati i programmi beta attivi.
+
+### Agenti in AEM (programma Beta)
+
+Accesso anticipato a nuove potenti funzionalità di AEM Agent in ambienti di produzione, governance, ottimizzazione, discovery e sviluppo. Il tuo feedback influisce direttamente sulla roadmap e sulle funzioni finali di Adobe. Per ulteriori informazioni, consulta [Panoramica degli agenti in AEM](/help/ai-in-aem/agents/overview.md).
+
+Per partecipare al programma, inviare un&#39;e-mail a [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) e includere i dettagli seguenti nella misura del possibile:
+
+    * Nomi e nomi Adobe ID dei membri del gruppo che utilizzeranno attivamente gli agenti.
+    * Elencare agenti specifici che l&#39;utente o il team desidera utilizzare. Oppure è sufficiente dire &quot;Tutti gli agenti&quot;
+.
+### AEM Foundation (programmi Beta)
+
+    Vedere [Programmi beta di AEM Foundation](#foundation-early-adopter).
+
+### Cloud Manager (programmi Beta)
+
+    Vedere [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -225,7 +253,7 @@ Invia un&#39;e-mail a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@ado
 
 I team Java stack di AEM utilizzano sempre più lo sviluppo basato sull’intelligenza artificiale in strumenti come Cursor, Claude Code, Visual Studio e IntelliJ per velocizzare la distribuzione delle funzioni e migliorare la qualità del codice. Stiamo raccogliendo esperienze reali per aiutare a modellare le future funzionalità di intelligenza artificiale supportate da Adobe.
 
-Condividi ciò che funziona per il tuo team e ciò che vorresti che Adobe fornisse inviando un&#39;e-mail a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+Condividi ciò che funziona per il tuo team e ciò che desideri che Adobe fornisca inviando un&#39;e-mail a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 
