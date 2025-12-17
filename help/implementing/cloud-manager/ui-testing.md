@@ -274,7 +274,7 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 | Durata consigliata | 15 min | Adobe consiglia di mantenere i test entro questo limite di tempo. |
 
 * Se l’istanza di authoring/pubblicazione di destinazione è protetta dall’inserire nell&#39;elenco Consentiti di IP, è necessario inserire nell&#39;elenco Consentiti l’infrastruttura di test dell’interfaccia utente della pipeline oppure i test dell’interfaccia utente possono non riuscire con 403 Forbidden (Non consentito).
-Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un&#39;Inserire nell&#39;elenco Consentiti del IP &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un&#39;Inserire nell&#39;elenco Consentiti del IP &#x200B;](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
