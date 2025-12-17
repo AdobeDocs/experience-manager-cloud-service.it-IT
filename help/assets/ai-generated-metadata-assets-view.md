@@ -1,7 +1,7 @@
 ---
 title: Migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 1. [Facoltativo] Se ritieni che manchino dei tag rilevanti, puoi aggiungere altri tag o crearne di nuovi. A questo scopo, scrivi i tag nel campo **[!UICONTROL Parole chiave generate]** e fai clic su **[!UICONTROL Salva]**.
 
-Per informazioni su come disabilitare i metadati generati dall&#39;intelligenza artificiale, vedi [Disabilitare i metadati generati dall&#39;intelligenza artificiale](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+Per informazioni su come disabilitare i metadati generati dall&#39;intelligenza artificiale, vedi [Disabilitare i metadati generati dall&#39;intelligenza artificiale](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).

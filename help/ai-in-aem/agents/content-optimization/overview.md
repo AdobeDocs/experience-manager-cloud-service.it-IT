@@ -3,9 +3,9 @@ title: Agente di ottimizzazione del contenuto
 description: Scopri come utilizzare l’agente di ottimizzazione dei contenuti per trasformare il modo in cui gli utenti perfezionano e adattano le risorse applicando istruzioni in linguaggio naturale per creare varianti pronte per il canale.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ad027974400bdce3428ce96e8804abfe087b48da
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -154,6 +154,13 @@ Quando specifichi una richiesta di ottimizzazione, l’agente di ottimizzazione 
 ![Risultati ottimizzazione contenuto](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
 
 Questi risultati semplificano la revisione dell’output ottimizzato e lo utilizzano immediatamente tra i canali o i flussi di lavoro a valle.
+
+
+## Limitazioni {#limitations-content-optimization}
+
+* L’agente di ottimizzazione del contenuto non supporta attualmente le risorse PNG.
+
+* Impostazione del colore di sfondo non supportata.
 
 <!--
 

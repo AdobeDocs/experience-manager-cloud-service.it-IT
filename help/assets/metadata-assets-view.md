@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 81%
+source-wordcount: '2235'
+ht-degree: 80%
 
 ---
 
@@ -115,6 +115,10 @@ Guarda questo video per visualizzare la sequenza di passaggi:
 Dopo aver creato il modulo, quest’ultimo viene applicato automaticamente quando gli utenti caricano una risorsa del tipo MIME corrispondente.
 
 Per creare un nuovo modulo riutilizzandone uno esistente, seleziona un modulo metadati e fai clic su **[!UICONTROL Copia]** nella barra degli strumenti, specifica un nome e fai clic su **[!UICONTROL Conferma]**. A questo punto puoi modificare il modulo metadati. Quando modifichi un modulo, quest’ultimo viene utilizzato per le risorse caricate in seguito alla modifica. L’operazione non modifica le risorse esistenti.
+
+>[!IMPORTANT]
+>
+>Il modulo metadati predefinito include anche una scheda **[!UICONTROL Campaign]**, che include **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]** e **[!UICONTROL Region]** campi con più valori in sola lettura. è una funzione di disponibilità limitata. Per abilitarla, crea un ticket di supporto.
 
 ### Componenti proprietà {#property-components}
 
@@ -233,7 +237,7 @@ Per modificare un modulo di metadati, effettua le seguenti operazioni:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

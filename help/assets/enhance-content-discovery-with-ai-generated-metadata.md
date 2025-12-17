@@ -3,10 +3,10 @@ title: Migliorare l’individuazione dei contenuti con i metadati generati dall�
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale in Admin View
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 10%
+source-wordcount: '669'
+ht-degree: 9%
 
 ---
 
@@ -69,7 +69,9 @@ Per utilizzare la funzione dei tag avanzati, esegui i seguenti passaggi:
 
 ## Disattiva i metadati generati dall’intelligenza artificiale {#disable-ai-generated-metadata}
 
-Per disabilitare i metadati generati dall’intelligenza artificiale:
+Puoi disabilitare i metadati generati dall’intelligenza artificiale per il tuo ambiente AEM as a Cloud Service oppure a livello di cartella.
+
+Per disabilitare i metadati generati dall’intelligenza artificiale per l’ambiente AEM as a Cloud Service:
 
 1. Passa a **[!UICONTROL Strumenti > Assets > Configurazioni Assets > Configurazione miglioramento smart tag]**.
 
@@ -78,3 +80,15 @@ Per disabilitare i metadati generati dall’intelligenza artificiale:
 1. Fai clic su **[!UICONTROL Salva]**.
 
 I metadati generati dall’intelligenza artificiale sono disabilitati per le nuove risorse o cartelle caricate in AEM Assets. Le risorse o cartelle esistenti con campi di metadati generati dall’intelligenza artificiale continuano a visualizzare questi campi.
+
+### Disabilita i metadati generati dall’intelligenza artificiale per le cartelle {#disable-ai-generated-metadata-folder-level}
+
+Per disabilitare i metadati generati dall’intelligenza artificiale a livello di cartella:
+
+1. Selezionare la cartella e fare clic su **[!UICONTROL Proprietà]**.
+
+1. Selezionare la scheda **[!UICONTROL Elaborazione risorse]**.
+
+1. Nella sezione **[!UICONTROL Miglioramenti dei tag avanzati per le immagini]**, seleziona **[!UICONTROL Disattiva]** dal menu a discesa.
+
+1. Fai clic su **[!UICONTROL Salva e chiudi]** per disabilitare i metadati generati dall&#39;intelligenza artificiale per la cartella selezionata.
