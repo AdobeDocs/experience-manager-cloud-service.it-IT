@@ -67,6 +67,7 @@ Per partecipare al programma, inviare un&#39;e-mail a [aemagentsteam@adobe.com](
     * Nomi e nomi Adobe ID dei membri del gruppo che utilizzeranno attivamente gli agenti.
     * Elencare agenti specifici che l&#39;utente o il team desidera utilizzare. Oppure è sufficiente dire &quot;Tutti gli agenti&quot;
 .
+
 ### AEM Foundation (programmi Beta)
 
     Vedere [Programmi beta di AEM Foundation](#foundation-early-adopter).
