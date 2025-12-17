@@ -4,10 +4,10 @@ description: Scopri le attività di manutenzione in AEM as a Cloud Service e com
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
+source-git-commit: d5addc40eb48000c515b670ef5f7c7a7e8b79928
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 29%
+source-wordcount: '2057'
+ht-degree: 28%
 
 ---
 
@@ -49,14 +49,14 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
   <tr>
     <td>Pulizia delle versioni</td>
     <td>Cliente</td>
-    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione della versione è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del log di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Elimina registro di controllo</td>
     <td>Cliente</td>
-    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
+    <td>L'eliminazione del registro di controllo è attualmente disabilitata per impostazione predefinita, ma è possibile configurare il criterio come descritto nella sezione <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Attività di manutenzione dell'eliminazione della versione e del registro di controllo</a>.<br/><br/>La rimozione verrà presto abilitata per impostazione predefinita e tali valori potranno essere sovrascritti.<br>
    </td>
    </td>
   </tr>
@@ -70,7 +70,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Eliminazione di attività ad hoc</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>.</p>
     <p>Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito. Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore. Denominarlo <code>granite_TaskPurgeTask</code>, con l'attributo <code>sling:resourceType</code> impostato su <code>granite/operations/components/maintenance/task</code> e l'attributo <code>granite.maintenance.name</code> impostato su <code>TaskPurge</code>. Configurare le proprietà OSGI. Per l'elenco delle proprietà, vedere <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>.</p>
   </td>
   </tr>
@@ -78,7 +78,7 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Eliminazione flussi di lavoro</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
     <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_WorkflowPurgeTask</code>) con le proprietà opportune. Configurare le proprietà OSGI. Vedere <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Rimozione regolare delle istanze del flusso di lavoro</a>.</p>
   </td>
   </tr>
@@ -86,8 +86,8 @@ Nella tabella seguente sono illustrate le attività di manutenzione disponibili.
     <td>Eliminazione progetti</td>
     <td>Cliente</td>
     <td>
-    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
-    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
+    <p>Deve essere eseguito in git. Sovrascrivere il nodo di configurazione della finestra Manutenzione preconfigurata in <code>/libs</code> creando proprietà nella cartella <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> o <code>granite_monthly</code>. Per ulteriori informazioni sulla configurazione, consulta la tabella Finestra di manutenzione riportata di seguito.</p>
+    <p>Abilita l’attività di manutenzione aggiungendo un altro nodo sotto il nodo superiore (denominalo <code>granite_ProjectPurgeTask</code>) con le proprietà appropriate. Vedi l'elenco delle <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">proprietà OSGi</a> per <b>configurazione rimozione progetti Adobe</b>.</p>
   </td>
   </tr>
   </tbody>
@@ -146,9 +146,9 @@ La tabella seguente illustra le configurazioni delle finestre di manutenzione di
 
 ### Posizioni {#locations}
 
-* Giornaliero: /apps/settings/granite/operations/maintenance/granite_daily
-* Settimanale: /apps/settings/granite/operations/maintenance/granite_weekly
-* Mensile: /apps/settings/granite/operations/maintenance/granite_monthly
+* Giornaliero: /conf/global/settings/granite/operations/maintenance/granite_daily
+* Settimanale: /conf/global/settings/granite/operations/maintenance/granite_weekly
+* Mensile: /conf/global/settings/granite/operations/maintenance/granite_month
 
 ### Esempi di codice {#code-samples}
 
