@@ -3,10 +3,11 @@ title: Note sulla versione 2025.7.0 di [!DNL Adobe Experience Manager] as a Clou
 description: Note sulla versione 2025.7.0 di [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 98%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -161,7 +162,7 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-**Editor di regole per l’editor comunicazioni interattive**
+**Editor di regole per l’editor di comunicazioni interattive**
 
 Crea azioni dinamiche e basate sui dati direttamente all’interno dei documenti mediante un’interfaccia intuitiva e di tipo punta e clicca. Definisci facilmente la logica condizionale, automatizza i flussi di lavoro e personalizza i contenuti senza scrivere codice.
 
@@ -177,9 +178,9 @@ Lo strumento di integrazione API consente agli autori dei moduli di creare modul
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-### Visualizzazione nodo per la gestione delle autorizzazioni {#node-view}
+### Vista nodo per la gestione delle autorizzazioni {#node-view}
 
-AEM introduce la funzione di gestione delle autorizzazioni nella vista Nodo. La funzionalità principale rimane la stessa dell’interfaccia classica, ma è più semplice ed efficiente. Per ulteriori informazioni, consulta l&#39;[articolo dedicato](/help/security/touch-ui-principal-view.md).
+AEM introduce la gestione delle autorizzazioni nella vista Nodo. La funzionalità principale rimane la stessa dell&#39;interfaccia classica, ma è più semplice ed efficiente. Per ulteriori informazioni, consulta [l&#39;articolo dedicato](/help/security/touch-ui-principal-view.md).
 
 ### Processo di rimozione aggiornato {#updated-deprecation-process}
 
@@ -222,7 +223,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il **runtime Java 11* è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime &#x200B;** Java 21** più performante.
+Il **runtime Java 11* è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime **Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 
@@ -241,18 +242,20 @@ Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento d
 
 ### Eliminazione predefinita delle versioni precedenti e dei registri di controllo {#mt-defaults}
 
-Attualmente, le *attività di manutenzione dell’eliminazione associate alle versioni di contenuto e ai registri di controllo sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso, a meno che questo non sia configurato in modo esplicito.
+Attualmente, le *attività di eliminazione di manutenzione* associate alle versioni di contenuto e ai registri di controllo sono disabilitate per impostazione predefinita, pertanto nessun dato viene rimosso, a meno che questo non sia configurato in modo esplicito.
 
-Tuttavia, per ottimizzare le prestazioni dell’archivio, l’eliminazione sarà abilitata per impostazione predefinita in una data futura che verrà comunicata, seguendo queste linee guida:
+Tuttavia, per ottimizzare le prestazioni dell’archivio, l’eliminazione sarà abilitata per impostazione predefinita in una data futura annunciata.
+
+Per ulteriori dettagli, consulta l’articolo [Attività di manutenzione](/help/operations/maintenance.md#defaults).
 
 #### Versioni dei contenuti {#mt-content}
 
-* **Nuovi ambienti* (creati in seguito a una data futura (che verrà comunicata in un secondo momento)
-   * Le versioni precedenti a **30 giorni* verranno eliminate periodicamente.
+* **Nuovi ambienti** (creati dopo una data imminente, da comunicare in un secondo momento):
+   * Le versioni precedenti a 30 giorni verranno eliminate periodicamente.
    * Vengono mantenute le cinque versioni più recenti degli ultimi 30 giorni, insieme alla versione più recente e a quella corrente, indipendentemente dalla loro età.
 
-* **Ambienti esistenti* (creati prima di questa data futura):
-   * Le versioni precedenti a **7 anni* verranno eliminate periodicamente.
+* **Ambienti esistenti** (creati prima di questa data):
+   * Le versioni più vecchie di 7 anni verranno eliminate periodicamente.
    * Vengono mantenute tutte le versioni degli ultimi 7 anni.
    * Questa soglia predefinita elevata impedisce la rimozione involontaria dei dati recenti. Tuttavia, si consiglia di configurare valori inferiori per ottimizzare le prestazioni dell’archivio.
 
@@ -260,18 +263,16 @@ Tuttavia, per ottimizzare le prestazioni dell’archivio, l’eliminazione sarà
 
 #### Registro di controllo {#mt-auditlogs}
 
-* **Nuovi ambienti* (creati in seguito a una data futura, che verrà comunicata separatamente):
-   * I registri di controllo della pagina, DAM e di replica precedenti a **7 giorni* verranno eliminati periodicamente.
+* **Nuovi ambienti** (creati dopo una data prossima, che verrà comunicata separatamente):
+   * I registri di replica, DAM e di audit delle pagine precedenti a 7 giorni verranno eliminati periodicamente.
    * Tutti gli eventi vengono registrati per impostazione predefinita.
 
-* **Ambienti esistenti* (creati prima di questa data futura):
-   * I registri di controllo della pagina, DAM e di replica precedenti a **7 anni* verranno eliminati periodicamente.
+* **Ambienti esistenti** (creati prima di questa data):
+   * I registri di replica, DAM e di audit delle pagine più vecchi di 7 anni verranno eliminati periodicamente.
    * Tutti gli eventi vengono registrati per impostazione predefinita.
    * Questa soglia predefinita elevata impedisce la rimozione involontaria dei dati recenti. Tuttavia, si consiglia di configurare valori inferiori per ottimizzare le prestazioni dell’archivio.
 
 * Puoi modificare questi valori predefiniti tramite la configurazione YAML, distribuita mediante la pipeline di configurazione.
-
-Per ulteriori dettagli, consulta l’articolo [Attività di manutenzione](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (programma Alpha) {#edge-computing}
 
