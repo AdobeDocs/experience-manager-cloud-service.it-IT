@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
+source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1698'
 ht-degree: 54%
 
 ---
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,17 +64,16 @@ Accesso anticipato a nuove potenti funzionalità di AEM Agent in ambienti di pro
 
 Per partecipare al programma, inviare un&#39;e-mail a [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) e includere i dettagli seguenti nella misura del possibile:
 
-    * Nomi e nomi Adobe ID dei membri del gruppo che utilizzeranno attivamente gli agenti.
-    * Elencare agenti specifici che l&#39;utente o il team desidera utilizzare. Oppure è sufficiente dire &quot;Tutti gli agenti&quot;
-.
+* Nomi e Adobe ID dei membri del gruppo che utilizzeranno attivamente gli agenti.
+* Elencare agenti specifici che il tuo team desidera utilizzare. Oppure dire semplicemente &quot;Tutti gli agenti&quot;.
 
 ### AEM Foundation (programmi Beta)
 
-    Vedere [Programmi beta di AEM Foundation](#foundation-early-adopter).
+Consulta [Programmi beta di AEM Foundation](#foundation-early-adopter).
 
 ### Cloud Manager (programmi Beta)
 
-    Vedere [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
