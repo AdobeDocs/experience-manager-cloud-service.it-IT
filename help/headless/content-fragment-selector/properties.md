@@ -3,10 +3,10 @@ title: Proprietà selettore frammento di contenuto micro-front-end per Adobe Exp
 description: Proprietà per configurare il Selettore frammenti di contenuto Microsoft FrontEnd per cercare, trovare e recuperare frammenti di contenuto dall’applicazione.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '1073'
+ht-degree: 4%
 
 ---
 
@@ -20,22 +20,28 @@ Puoi utilizzare le seguenti proprietà per personalizzare il rendering del selet
 
 | Proprietà | Tipo | Obbligatorio | Predefiniti | Descrizione |
 |--- |--- |--- |--- |--- |
-| `imsToken` | stringa | No | | Token IMS utilizzato per l’autenticazione. |
-| `repoId` | stringa | No | | ID archivio utilizzato per l’autenticazione. |
-| `orgId` | stringa | Sì | | ID organizzazione utilizzato per l’autenticazione. |
-| `locale` | stringa | No | | Dati locali. |
-| `env` | Ambiente | No | | Ambiente di distribuzione del selettore dei frammenti di contenuto. |
-| `filters` | FiltroFrammento | No | | Filtri da applicare per l’elenco dei frammenti di contenuto. Per impostazione predefinita, i frammenti in `/content/dam` verranno visualizzati. Valore predefinito: `{ folder: "/content/dam" }` |
-| `isOpen` | booleano | Sì | `false` | Contrassegno flag per attivare l’apertura o la chiusura del selettore. |
-| `onDismiss` | () => void | Sì | | Funzione da chiamare quando è selezionato **Ignora**. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Sì | | Funzione da chiamare quando si utilizza **Select** dopo aver selezionato uno o più frammenti di contenuto. <br><br>La funzione riceverà:<br><ul><li> i frammenti di contenuto selezionati con i campi `id` e `path`</li><li>e i nomi di dominio correlati all&#39;ID di programma e all&#39;ID di ambiente dell&#39;archivio, che hanno lo stato `ready` e la pubblicazione `tier`</li></ul><br>Se non sono presenti nomi di dominio, verrà utilizzata l&#39;istanza Publish come dominio di fallback. |
-| `theme` | &quot;chiaro&quot; o &quot;scuro&quot; | No | | Tema del selettore dei frammenti di contenuto. Il tema predefinito è impostato sul tema dell’ambiente UnifiedShell. |
-| `selectionType` | &quot;singolo&quot; o &quot;multiplo&quot; | No | `single` | Tipo di selezione che può essere utilizzato per limitare la selezione per FragmentSelector. |
-| `dialogSize` | &quot;fullscreen&quot; o &quot;fullscreenTakeover&quot; | No | `fullscreen` | Proprietà facoltativa per controllare la dimensione della finestra di dialogo. |
-| `waitForImsToken` | booleano | No | `false` | Indica se il rendering del selettore dei frammenti di contenuto viene eseguito nel contesto del flusso SUSI e deve attendere che `imsToken` sia pronto. |
-| `imsAuthInfo` | ImsAuthInfo | No | | Oggetto contenente le informazioni di autenticazione IMS dell’utente connesso. |
-| `runningInUnifiedShell` | booleano | No | | Indica se il selettore dei frammenti di contenuto è in esecuzione in UnifiedShell o standalone. |
-| `readonlyFilters` | ResourceReadonlyFiltersField | No | | Filtri in sola lettura che possono essere applicati per l’elenco dei contenuti e non possono essere rimossi. |
+| `ref` | FragmentSelectorRef | | | Riferimento all&#39;istanza `ContentFragmentSelector`, che consente l&#39;accesso alle funzionalità fornite, ad esempio `reload`. |
+| `imsToken` | stringa | No | | Token IMS utilizzato per l’autenticazione. Se non viene fornito, verrà avviato il flusso di accesso IMS. |
+| `repoId` | stringa | No | | ID archivio utilizzato per il selettore frammento. Se fornito, il selettore si connette automaticamente all’archivio specificato e il menu a discesa dell’archivio è nascosto. Se non viene fornito, l’utente può selezionare un archivio dall’elenco degli archivi disponibili a cui ha accesso. |
+| `defaultRepoId` | stringa | No | | ID archivio che verrà selezionato per impostazione predefinita quando viene visualizzato il selettore dell’archivio. Utilizzato solo quando `repoId` non è fornito. Se `repoId` è impostato, il selettore dell&#39;archivio è nascosto e questo valore viene ignorato. |
+| `orgId` | stringa | No | | ID organizzazione utilizzato per l’autenticazione. Se non viene fornito, l’utente può selezionare un archivio da diverse organizzazioni a cui ha accesso. Se l’utente non ha accesso ad alcun archivio o organizzazione, il contenuto non verrà caricato. |
+| `locale` | stringa | No | &quot;en-US&quot; | Lingua. |
+| `env` | stringa | No | | Ambiente di implementazione. Vedere il tipo `Env` per i nomi di ambiente consentiti. |
+| `filters` | FiltroFrammento | No | `{ folder: "/content/dam" }` | Filtri da applicare all’elenco dei frammenti di contenuto. Per impostazione predefinita, i frammenti in `/content/dam` verranno visualizzati. |
+| `isOpen` | booleano | No | `false` | Contrassegno flag per controllare se il selettore è aperto o chiuso. |
+| `noWrap` | booleano | No | `false` | Determina se il rendering del selettore frammento viene eseguito senza una finestra di dialogo di ritorno a capo. Se è impostato su `true`, il selettore di frammenti è incorporato direttamente nel contenitore principale. Utile per integrare il selettore in layout o flussi di lavoro personalizzati. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva ogni volta che cambia la selezione dei frammenti di contenuto. Fornisce i frammenti selezionati, il nome di dominio, le informazioni sul tenant, l’ID dell’archivio e gli archivi di consegna. |
+| `onDismiss` | () => void | No | | Funzione di callback attivata quando viene eseguita l&#39;azione di esclusione (ad esempio, chiudendo il selettore). |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva quando l&#39;utente conferma la selezione. Riceve i frammenti di contenuto selezionati, il nome di dominio, le informazioni sul tenant, l’ID archivio e gli archivi di consegna. |
+| `theme` | &quot;chiaro&quot; o &quot;scuro&quot; | No | | Tema per il selettore di frammenti. Per impostazione predefinita, è impostato sul tema dell’ambiente unifiedShell. |
+| `selectionType` | &quot;singolo&quot; o &quot;multiplo&quot; | No | `single` | Il tipo di selezione può essere utilizzato per limitare la selezione per il selettore di frammenti. |
+| `dialogSize` | &quot;fullscreen&quot; o &quot;fullscreenTakeover&quot; | No | `fullscreen` | Proprietà opzionale per controllare la dimensione della finestra di dialogo. |
+| `runningInUnifiedShell` | booleano | No | | Indica se DestinationSelector è in esecuzione in UnifiedShell o standalone. |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | No | | Filtri di sola lettura applicati all’elenco dei frammenti di contenuto. L’utente non può rimuovere questi filtri. |
+| `selectedFragments` | ContentFragmentIdentifier[] | No | `[]` | Selezione iniziale dei frammenti di contenuto da preselezionare all’apertura del selettore. |
+| `hipaaEnabled` | booleano | No | `false` | Indica se la conformità HIPAA è abilitata. |
+| `inventoryView` | TipoVistaInventario | No | `table` | Tipo di visualizzazione predefinito del magazzino da utilizzare nel selettore. |
+| `inventoryViewToggleEnabled` | booleano | No | `false` | Indica se l&#39;interruttore della visualizzazione inventario è attivato, consentendo all&#39;utente di passare dalla visualizzazione tabella alla visualizzazione griglia e viceversa. |
 
 ## Proprietà ImsAuthProps {#imsauthprops-properties}
 
