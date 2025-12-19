@@ -3,9 +3,9 @@ title: Proprietà selettore frammento di contenuto micro-front-end per Adobe Exp
 description: Proprietà per configurare il Selettore frammenti di contenuto Microsoft FrontEnd per cercare, trovare e recuperare frammenti di contenuto dall’applicazione.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ Puoi utilizzare le seguenti proprietà per personalizzare il rendering del selet
 | `repoId` | stringa | No | | ID archivio utilizzato per il selettore frammento. Se fornito, il selettore si connette automaticamente all’archivio specificato e il menu a discesa dell’archivio è nascosto. Se non viene fornito, l’utente può selezionare un archivio dall’elenco degli archivi disponibili a cui ha accesso. |
 | `defaultRepoId` | stringa | No | | ID archivio che verrà selezionato per impostazione predefinita quando viene visualizzato il selettore dell’archivio. Utilizzato solo quando `repoId` non è fornito. Se `repoId` è impostato, il selettore dell&#39;archivio è nascosto e questo valore viene ignorato. |
 | `orgId` | stringa | No | | ID organizzazione utilizzato per l’autenticazione. Se non viene fornito, l’utente può selezionare un archivio da diverse organizzazioni a cui ha accesso. Se l’utente non ha accesso ad alcun archivio o organizzazione, il contenuto non verrà caricato. |
-| `locale` | stringa | No | &quot;en-US&quot; | Lingua. |
+| `locale` | stringa | No | `en-US` | Lingua. |
 | `env` | stringa | No | | Ambiente di implementazione. Vedere il tipo `Env` per i nomi di ambiente consentiti. |
 | `filters` | FiltroFrammento | No | `{ folder: "/content/dam" }` | Filtri da applicare all’elenco dei frammenti di contenuto. Per impostazione predefinita, i frammenti in `/content/dam` verranno visualizzati. |
 | `isOpen` | booleano | No | `false` | Contrassegno flag per controllare se il selettore è aperto o chiuso. |
 | `noWrap` | booleano | No | `false` | Determina se il rendering del selettore frammento viene eseguito senza una finestra di dialogo di ritorno a capo. Se è impostato su `true`, il selettore di frammenti è incorporato direttamente nel contenitore principale. Utile per integrare il selettore in layout o flussi di lavoro personalizzati. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva ogni volta che cambia la selezione dei frammenti di contenuto. Fornisce i frammenti selezionati, il nome di dominio, le informazioni sul tenant, l’ID dell’archivio e gli archivi di consegna. |
-| `onDismiss` | () => void | No | | Funzione di callback attivata quando viene eseguita l&#39;azione di esclusione (ad esempio, chiudendo il selettore). |
+| `onDismiss` | () => void | No | | La funzione di callback si attiva quando viene eseguita l’azione di esclusione, ad esempio chiudendo il selettore. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva quando l&#39;utente conferma la selezione. Riceve i frammenti di contenuto selezionati, il nome di dominio, le informazioni sul tenant, l’ID archivio e gli archivi di consegna. |
 | `theme` | &quot;chiaro&quot; o &quot;scuro&quot; | No | | Tema per il selettore di frammenti. Per impostazione predefinita, è impostato sul tema dell’ambiente unifiedShell. |
 | `selectionType` | &quot;singolo&quot; o &quot;multiplo&quot; | No | `single` | Il tipo di selezione può essere utilizzato per limitare la selezione per il selettore di frammenti. |
