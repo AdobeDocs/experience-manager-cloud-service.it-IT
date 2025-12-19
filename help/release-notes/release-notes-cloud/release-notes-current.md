@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 53%
+source-wordcount: '1857'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Consulta [Programmi beta di AEM Foundation](#foundation-early-adopter).
 ### Cloud Manager (programmi Beta) {#cloud-manager-beta-programs}
 
 Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**È disponibile una nuova versione del plug-in Figma per l&#39;integrazione con AEM Assets**
+
+* Supporto per file video (MP4, MOV, WebM), file animati (GIF) e file vettoriali (SVG) durante l’importazione di risorse dall’archivio AEM al documento Figma.
+
+* Supporto per la verifica di eventuali aggiornamenti alle risorse utilizzate nel documento Figma rispetto alle risorse esistenti nell’archivio AEM e per ottenere la versione più recente delle risorse, in caso di aggiornamenti.
+
+* Supporto per le configurazioni di esportazione durante l&#39;esportazione di formati di file PNG (scale) e JPG (image scale and quality).
+
+  ![Plug-in Figma](/help/assets/assets/figma-v2-plugin.png)
+
+**Rilevamento malware per risorse caricate**
+
+AEM Assets ora include la scansione automatica dei malware per i file caricati, garantendo che le risorse sospette siano messe in quarantena prima di entrare in DAM per proteggere l’archivio dalle minacce. Gli amministratori possono configurare le impostazioni di scansione e i criteri di conservazione della quarantena per controlli di sicurezza semplificati.
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
