@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ Con la versione di attivazione funzioni 2026.1.0 verrà fornito il set di funzio
 * SITES-36570: la creazione di Live Copy non riesce dopo l’attivazione dell’opzione Crea Live Copy a blocchi.
 * SITES-36158: Rollout non riuscito con processo non riuscito a causa di un’eccezione.
 * SITES-35655: il nuovo editor CF mostra l’ereditarietà attiva dopo che è stata interrotta.
-* SITES-31425: Messaggio di errore non localizzato &quot;Errore: il campo {} è obbligatorio&quot; visualizzato in Avvia flusso di lavoro in Sites.
+* SITES-31425: messaggio di errore non localizzato `Error: {} field is required` visualizzato in Avvia flusso di lavoro in Sites.
 * SITES-19802: le descrizioni comandi sono disponibili in Componenti core sito > Sommario.
 * SITES-36543: è stato corretto un problema che consentiva all’amministratore di modificare i frammenti di contenuto estratti.
 * SITES-36967: sono state corrette le eccezioni NullPointerException che si verificavano durante il tentativo di generare dati di miniature per frammenti di contenuto interrotti.
