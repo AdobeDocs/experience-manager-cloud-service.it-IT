@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
-# Note sulla versione corrente di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Note sulla versione corrente per [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La sezione seguente illustra le note specifiche sulla versione corrente (più recente) di [!DNL Experience Manager] as a Cloud Service.
 
@@ -40,11 +40,11 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## Programmi beta di AEM {#aem-beta-programs}
+## Programmi AEM Beta {#aem-beta-programs}
 
 I programmi beta di Adobe Experience Manager (AEM) consentono ai clienti di accedere alle funzioni e al codice prerelease, fornire feedback e guidare il futuro di AEM.
 
@@ -93,7 +93,6 @@ Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/rele
 **Rilevamento malware per risorse caricate**
 
 AEM Assets ora include la scansione automatica dei malware per i file caricati, garantendo che le risorse sospette siano messe in quarantena prima di entrare in DAM per proteggere l’archivio dalle minacce. Gli amministratori possono configurare le impostazioni di scansione e i criteri di conservazione della quarantena per controlli di sicurezza semplificati.
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

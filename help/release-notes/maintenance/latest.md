@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 68444ac15513bad7c1eaee97c474e21d36992d49
+source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 42%
+source-wordcount: '1080'
+ht-degree: 19%
 
 ---
 
@@ -16,67 +16,98 @@ ht-degree: 42%
 
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
-## Versione 23482 {#23482}
+## Versione 23862 {#23862}
 
-Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 23482, rilasciata pubblicamente l’giovedì 3 dicembre 2025. La versione di manutenzione precedente era la 23385.
+Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 23862, rilasciata pubblicamente l’mercoledì 23 dicembre 2025. La versione di manutenzione precedente era la 23482.
 
-Con la versione di attivazione funzioni 2025.12.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione funzioni 2026.1.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
+### Miglioramenti {#enhancements-23862}
 
-### Miglioramenti {#enhancements-23482}
+* CQ-4361812: è stato aggiunto il supporto per folderPath del parametro opzionale nell’api rest. Descrizione: un nuovo progetto di traduzione viene creato dall&#39;API e verrà inserito nel percorso specificato dal parametro facoltativo `folderPath`. In caso contrario, per impostazione predefinita viene utilizzato il percorso del progetto principale `/content/projects`.
+* FORMS-21960: è stato aggiunto il supporto per la modifica su tela in locale per le comunicazioni interattive, in modo simile a forms-spa.
+* FORMS-22001: aggiunte indicazioni per ridurre il volume elevato di `/etc.clientlibs/toggles.json` richieste in AEM Forms as a Cloud Service.
+* FORMS-22496: esporre ResponseBody non elaborato nel servizio di richiamo.
+* FORMS-22495: aggiungi la proprietà segnaposto nella regola SetProperty.
+* FORMS-21925: UBS Footnotes Formattazione: visualizza tutte le note a piè di pagina nel modulo durante il caricamento del modulo.
+* FORMS-20536: espone un’opzione di risposta completa in eventPayload nell’editor di regole senza mappatura.
+* SITES-37199: la funzione di annotazione attiva l&#39;attraversamento dell&#39;archivio tramite una chiamata `authorizables.json` non convalidata, causando il deterioramento delle prestazioni.
+* SITES-37118: Supporto Commerce Optimizer nella cabina di comando del prodotto.
+* SITES-38029: aggiungi i registri per tracciare gli eventi di modifica push MSM.
+* SITES-37050: supporto per &quot;forzare l’annullamento della pubblicazione&quot;, che consente di annullare la pubblicazione dei frammenti di contenuto a cui fanno riferimento altre risorse pubblicate.
+* SITES-37142: è stata aggiunta la funzionalità di archiviazione/estrazione di un frammento di contenuto tramite PATCH.
+* SITES-37613: nell’endpoint delle autorizzazioni API CF restituisce l’archiviazione se l’utente può archiviare un frammento di contenuto o l’estrazione se l’utente può estrarre un frammento di contenuto.
+* SITES-37835: quando tenti di creare più frammenti di contenuto con lo stesso titolo, ma senza nome fornito, genera automaticamente un nuovo nome invece di generare un errore a causa di un conflitto.
+* SITES-36823: Edge Delivery con Universal Editor: elimina la necessità di mappature inverse per gli indici.
+* SITES-34751: Edge Delivery con Editor universale: errore per tipi di file non supportati e percorsi fuori limite durante la pubblicazione (accesso anticipato).
+* SITES-37888: Edge Delivery con Universal Editor: Usa il suffisso Alt come sinonimo di Testo per i collegamenti.
+* SITES-19850: Edge Delivery con Universal Editor: aggiunta del supporto per più fogli nei fogli di calcolo.
+* SITES-32490: Edge Delivery con Universal Editor: aggiunta del supporto per data-aue-component e data-aue-label definite dall’utente ai blocchi e al contenuto predefinito.
+* SITES-37794: Edge Delivery con Universal Editor: procedura guidata per semplificare la creazione delle pagine.
+* SITES-36963: Migrazione dell’endpoint pubblico/segmento all’API di Target v3 per il supporto di Workspace.
 
-* ASSETS-49770: aggiungi notifiche di quarantena per i risultati dell’analisi malware.
-* ASSETS-54079: applica un modulo di metadati personalizzato per la cartella di quarantena.
-* ASSETS-54083: creazione di un meccanismo di pulizia della quarantena pianificato.
-* ASSETS-54278: rimuovi la proprietà `dam:avScanTime` dalle risorse.
-* ASSETS-57284: limita il caricamento dei file nella cartella di quarantena (disattiva il trascinamento della selezione).
-* ASSETS-57428: nasconde la cartella di quarantena nell’interfaccia utente di visualizzazione di Assets.
-* ASSETS-57626: migliora il comportamento dei tentativi per i processi di risorse asincrone.
-* ASSETS-57879: aggiungi l’opzione di unione per i processi asincroni di spostamento/copia delle risorse.
-* ASSETS-58099: aggiungi la configurazione per disabilitare gli smart tag avanzati per l’intero ambiente.
-* ASSETS-58136: implementa il feedback sull’impaginazione in Search OpenAPI.
-* ASSETS-59402: Aggiungere endpoint del processo asincrono per API di eliminazione cartella: esportare pacchetti nell’area interna.
-* ASSETS-59966: rinominare il gruppo Malware Administrators in Quarantine Administrators.
-* ASSETS-60166: utilizza VideoViewer.js invece degli URL basati su iframe.
-* GRANITE-61378: strumento di debug delle autorizzazioni - API ListPrincipals.
-* GRANITE-63235: Query per identificare Sites tramite la proprietà `cq:conf`. Supporta il rilevamento di pagine/versioni precedenti.
-* SITES-30452: API di contenuto con ASO - Suggerimenti su titolo e descrizione, supporto XWalk, operazioni Patch JSON, binding entità servizio IMS.
+### Problemi risolti {#fixed-issues-23862}
 
-### Problemi risolti {#fixed-issues-23482}
+* CQ-4361831: è stato corretto un problema a causa del quale genai_dropdown_span non era definito.
+* CQ-4360895: è stato corretto il conteggio dello stato del processo di traduzione non accurato nel progetto durante gli aggiornamenti simultanei.
+* CQ-4361599: è stato corretto ignorare i frammenti di contenuto dai processi di traduzione dopo l’aggiornamento 2025.7.
+* CQ-4360747: i processi di traduzione ripetibili corretti creano payload vuoti e attivano troppo spesso (NullPointerException in ScheduleRepeatTranslationProject).
+* CQ-4359994: è stata corretta l’incoerenza del tipo di campo destinationLanguage per un progetto singolo e multilingue.
+* SITES-38153: Correggi il provider di riferimento di pubblicazione cf per i riferimenti basati su UUID.
+* SITES-37594: miglioramenti delle prestazioni per la funzionalità modello per tag.
+* SITES-37337: FragmentCreateProcessor: specifica ulteriori dettagli sull’errore nei registri.
+* SITES-33666: messaggio di errore &quot;Impossibile stampare il codice JSON del frammento&quot; non localizzato nell’Editor frammento di contenuto.
+* SITES-33675: Stringa codificata &quot;non definita&quot; nell’Editor frammento di contenuto > Contenuto associato.
+* SITES-30715: stringa &#39;Generale&#39; non localizzata nell’Editor frammento di contenuto.
+* SITES-28592: Stringhe non localizzate nella finestra di dialogo Editor modello per frammenti di contenuto > &quot;Il modello è bloccato&quot;.
+* SITES-977: Le stringhe &quot;Tag&quot; e &quot;raccolte&quot; non sono localizzate nella pagina di modifica del frammento di contenuto.
+* SITES-29699: tipi non localizzati di risorse consentite nell’Editor frammento di contenuto.
+* SITES-25240: i campi Call to action nel modale Teaser non hanno un’etichetta visibile.
+* SITES-24869: Descrizione troncata in Editor modelli > Separatore > Criterio.
+* SITES-19313: l’errore non viene localizzato quando trascini e rilasci un componente per eliminare un modello nell’Editor modelli.
+* SITES-18103: Stringhe non localizzate in Editor pagina > Workflow.
+* SITES-17501: Stringhe non localizzate in Editor modelli > Editor criteri per componenti.
+* SITES-15091: le stringhe vengono slocalizzate nelle proprietà dei componenti di testo del frammento di esperienza.
+* SITES-8113: la stringa &quot;Assets&quot; non è localizzata nella finestra di dialogo &quot;Seleziona immagine&quot; per &quot;Modelli&quot; nel menu Strumenti.
+* SITES-37587: la creazione di Live Copy non riesce ancora in PROD con NPE in RolloutManagerImpl.
+* SITES-37335: le proprietà della pagina Live Copy mostrano l’errore nella console relativo ai tag cq.
+* SITES-36972: pulsante &quot;Rollout&quot; mancante nella barra degli strumenti modificabile.
+* SITES-36570: la creazione di Live Copy non riesce dopo l’attivazione dell’opzione Crea Live Copy a blocchi.
+* SITES-36158: Rollout non riuscito con processo non riuscito a causa di un’eccezione.
+* SITES-35655: il nuovo editor CF mostra l’ereditarietà attiva dopo che è stata interrotta.
+* SITES-31425: Messaggio di errore non localizzato &quot;Errore: il campo {} è obbligatorio&quot; visualizzato in Avvia flusso di lavoro in Sites.
+* SITES-19802: le descrizioni comandi sono disponibili in Componenti core sito > Sommario.
+* SITES-36543: è stato corretto un problema che consentiva all’amministratore di modificare i frammenti di contenuto estratti.
+* SITES-36967: sono state corrette le eccezioni NullPointerException che si verificavano durante il tentativo di generare dati di miniature per frammenti di contenuto interrotti.
+* SITES-37791: è stato risolto un problema che impediva la chiamata di FindAndReplace per le stringhe contenenti `$`.
+* SITES-37018: Popup Errore vuoto durante la copia di una pagina con un percorso modello non consentito.
+* SITES-36243: Edge Delivery con Universal Editor: Correggi 404 durante la pubblicazione di `sling:OrderedFolder`.
+* SITES-37684: Edge Delivery con Universal Editor: correggere il deterioramento delle prestazioni in ambienti con molti siti.
+* SITES-37840: Edge Delivery con Universal Editor: sono stati corretti errori di pubblicazione a causa di un token di accesso obsoleto per Edge Delivery.
+* SITES-37933: Edge Delivery con Universal Editor: Correggi (annulla) errori di pubblicazione per risorse eliminate in Launches.
+* SITES-37870: Edge Delivery con Universal Editor: correggere il rendering non funzionante dei metadati di pagina personalizzati con il supporto per più campi abilitato.
+* SITES-37349: Edge Delivery con Universal Editor: esegui il rendering di più campi con voci singole come elenco con una singola voce di elenco.
+* SITES-36148: Edge Delivery con Universal Editor: Correggere l’etichetta aue dei dati per più campi compositi.
 
-* ASSETS-57430: Correggi il caricamento della visualizzazione Assets ignorando la preelaborazione: esporta il pacchetto `repoapi.preprocessing`, aggiorna RAPI alla versione più recente.
-* ASSETS-58190: riduci il totale delle ipotesi inutilmente elevato nell’interfaccia utente Raccolte.
-* ASSETS-58866: Correggi il titolo/la descrizione/l’ID della risorsa restituito nelle risposte OpenAPI.
-* ASSETS-58868: correggi la paginazione quando mancano campi di ordinamento nelle risorse.
-* ASSETS-58920: correggi l’importazione in blocco delle risorse, ignorando la preelaborazione.
-* ASSETS-59168: l’ora di inizio/fine della scansione corretta mostra un fuso orario errato.
-* ASSETS-59702: correggi l’ordine degli eventi quando lo stato della risorsa è impostato su No Status (Nessuno stato).
-* ASSETS-59830: riaccodamento dei processi asincroni interrotto durante la terminazione del pod.
-* ASSETS-49757: Correzioni per gli eventi di scansione di Rilevamento malware.
-* GRANITE-61019: correzione `gcMonitor` non notificata alla prima esecuzione dopo il riavvio di AEM.
-* GRANITE-62717: correggere `JSafe` gestione password con caratteri non ASCII.
-* SITES-34331: è stato corretto il timeout di caricamento della sovrimpressione di rollout 503 per gli utenti non amministratori (`cqLiveSyncCancelled index`).
-
-### Problemi noti {#known-issues-23482}
+### Problemi noti {#known-issues-23862}
 
 Nessuna.
 
-### Funzioni e API obsolete {#deprecated-23482}
+### Funzioni e API obsolete {#deprecated-23862}
 
 Le funzioni e le API obsolete e rimosse in AEM as a Cloud Service sono descritte nei dettagli nel documento [Funzioni e API obsolete e rimosse](/help/release-notes/deprecated-removed-features.md).
 
-### Correzioni di sicurezza {#security-23482}
+### Correzioni di sicurezza {#security-23862}
 
-AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 4 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
+AEM as a Cloud Service è dedicato all’ottimizzazione della sicurezza e delle prestazioni della piattaforma. Questa versione di manutenzione riguarda 23 vulnerabilità identificate, rafforzando il nostro impegno per una solida protezione del sistema.
 
-### Tecnologie incorporate {#embedded-tech-23482}
+### Tecnologie incorporate {#embedded-tech-23862}
 
 | Tecnologia | Versione | Collegamento |
 |---|---|---|
-| AEM Oak | 1,88,0 | [API Oak 1.88.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html) |
+| AEM Oak | 1,88,0 | [API Oak 1.88.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html) |
 | API SLING AEM | 2.27.6 | [API Apache Sling 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [Specifiche HTML Template Language](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache HTTPD 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componenti core AEM | 2.30.2. | [Componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components) |
 | Node.js | 14 (predefinito) | [Versioni Node.js supportate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
