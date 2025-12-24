@@ -4,7 +4,7 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 11%
@@ -39,7 +39,7 @@ Per prepararti alla distribuzione dei contenuti utilizzando la rete CDN integrat
 * [Introduzione ai certificati SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [Configurare una rete CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**Limitazione del traffico**
+### Limitazione del traffico {#restricting-traffic}
 
 Per impostazione predefinita, per una configurazione CDN gestita da AEM tutto il traffico pubblico può indirizzarsi al servizio di pubblicazione, sia per gli ambienti di produzione che per quelli non di produzione (sviluppo e stage). Puoi limitare il traffico verso il servizio di pubblicazione per un dato ambiente (ad esempio, limitando la gestione temporanea da un intervallo di indirizzi IP) tramite l’interfaccia utente di Cloud Manager.
 
@@ -74,7 +74,7 @@ Leggi informazioni su [configurazione di un token API di eliminazione](/help/imp
 
 Per i casi di utilizzo di autenticazione leggera che includono soggetti interessati alle attività di revisione del contenuto, proteggi il contenuto visualizzando una finestra di dialogo di autenticazione di base che richiede un nome utente e una password. [Ulteriori informazioni](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## CDN gestita dal cliente punta alla CDN gestita di AEM {#point-to-point-CDN}
+## CDN gestita dal cliente punta alla CDN gestita di AEM {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ Prima di accettare il traffico in tempo reale, è necessario verificare con l’
 
 Dopo aver impostato `X-AEM-Edge-Key`, puoi verificare che la richiesta sia instradata correttamente come segue.
 
-In Linux®:
+In Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -138,7 +138,7 @@ Questa configurazione CDN del cliente è supportata per il livello di pubblicazi
 
 Per eseguire il debug di una configurazione BYOCDN, utilizzare l&#39;intestazione `x-aem-debug` con il valore `edge=true`. Ad esempio:
 
-In Linux®:
+In Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -163,23 +163,23 @@ Questo processo consente la verifica di dettagli quali i valori host, la configu
 >Puoi utilizzare un ambiente di sviluppo rapido (RDE) per distribuire e testare la configurazione:
 >
 >* [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Esempio di configurazioni fornitore CDN {#sample-configurations}
 
 Di seguito sono riportati diversi esempi di configurazione di diversi fornitori CDN leader.
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ Di seguito sono riportati diversi esempi di configurazione di diversi fornitori 
 
 Le configurazioni di esempio fornite mostrano le impostazioni di base necessarie. Tuttavia, una configurazione del cliente può avere altre regole che interessano e che rimuovono, modificano o riorganizzano le intestazioni necessarie affinché AEM as a Cloud Service distribuisca il traffico. Di seguito sono riportati gli errori comuni che si verificano durante la configurazione di una rete CDN gestita dal cliente per puntare ad AEM as a Cloud Service.
 
-**Reindirizzamento all&#39;endpoint del servizio di pubblicazione**
+#### Reindirizzamento all’endpoint del servizio di pubblicazione {#redirect-publish}
 
 Quando una richiesta riceve una risposta 403 non consentita, significa che mancano alcune intestazioni richieste. Una causa comune è che la rete CDN gestisce sia il traffico del dominio APEX che quello del dominio `www`, ma non aggiunge l&#39;intestazione corretta per il dominio `www`. Per risolvere questo problema, controlla i registri CDN di AEM as a Cloud Service e verifica le intestazioni di richiesta necessarie.
 
-**Errore 421: reindirizzamento errato**
+#### Errore 421: reindirizzamento errato {#error-421}
 
 Un errore 421 con il messaggio `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indica che l&#39;HTTP `Host` non corrisponde agli host elencati nel certificato. Questo problema indica in genere che `Host` o l&#39;impostazione SNI non è corretta. Assicurarsi che sia `Host` che le impostazioni SNI puntino all&#39;host publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com.
 
-**Troppi reindirizzamenti al ciclo**
+#### Troppi reindirizzamenti {#redirect-loop}
 
 Quando una pagina riceve un loop di tipo &quot;Troppi reindirizzamenti&quot;, viene aggiunta un’intestazione di richiesta alla rete CDN che corrisponde a un reindirizzamento che la forza a tornare a se stessa. Ad esempio:
 
