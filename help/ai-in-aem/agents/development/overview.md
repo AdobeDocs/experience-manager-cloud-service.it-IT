@@ -3,7 +3,7 @@ title: Panoramica dell’agente di sviluppo
 description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -16,6 +16,8 @@ ht-degree: 1%
 L’agente di sviluppo consente agli sviluppatori e agli amministratori di AEM di creare, eseguire il debug, distribuire e ottimizzare il codice in modo più efficiente.
 
 Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a risolvere i problemi dei passaggi di build non riusciti suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
