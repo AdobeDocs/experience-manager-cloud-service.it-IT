@@ -4,10 +4,10 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Gli eventi includono il payload della richiesta e della risposta e vengono attiv
 
 ## Eventi aggiornamento contenuto {#content-events}
 
-### aue:content-add {#content-add}
+### e&amp;due punti;content-add {#content-add}
 
 L’evento `aue:content-add` viene attivato quando un nuovo componente viene aggiunto a un contenitore.
 
@@ -53,7 +53,7 @@ Il payload è un contenuto del servizio dell’editor universale, con contenuto 
 }
 ```
 
-### aue:content-details {#content-details}
+### e&amp;due punti;content-details {#content-details}
 
 L’evento `aue:content-details` viene attivato quando un componente viene caricato nel pannello delle proprietà.
 
@@ -70,7 +70,7 @@ Il payload è il contenuto del componente e, facoltativamente, il relativo schem
 }
 ```
 
-### aue:content-move {#content-move}
+### e&amp;due punti;content-move {#content-move}
 
 L’evento `aue:content-move` viene attivato quando un componente viene spostato.
 
@@ -89,7 +89,7 @@ Il payload è il componente, il contenitore di origine e il contenitore di desti
 }
 ```
 
-### aue:content-patch {#content-patch}
+### e&amp;due punti;content-patch {#content-patch}
 
 L’evento `aue:content-patch` viene attivato quando i dati di un componente vengono aggiornati nel pannello delle proprietà.
 
@@ -108,7 +108,7 @@ Il payload è una patch JSON delle proprietà aggiornate.
 }
 ```
 
-### aue:content-remove {#content-remove}
+### e&amp;due punti;content-remove {#content-remove}
 
 L’evento `aue:content-remove` viene attivato quando un componente viene rimosso da un contenitore.
 
@@ -124,7 +124,7 @@ Il payload è l’ID elemento del componente rimosso.
 }
 ```
 
-### aue:content-update {#content-update}
+### e&amp;due punti;content-update {#content-update}
 
 L’&#39;evento `aue:content-update` viene attivato quando le proprietà di un componente vengono aggiornate nel contesto.
 
@@ -180,7 +180,7 @@ Payload risposta
 
 ## Eventi interfaccia utente {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### e&amp;due punti;anteprima interfaccia utente {#ui-preview}
 
 L’evento `aue:ui-preview` viene attivato quando la modalità di modifica della pagina viene modificata in **Anteprima**.
 
@@ -192,7 +192,7 @@ Il payload è vuoto per questo evento.
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### e&amp;due punti;modifica interfaccia utente {#ui-edit}
 
 L’evento `aue:ui-edit` viene attivato quando la modalità di modifica della pagina viene modificata in **Modifica**.
 
@@ -204,7 +204,7 @@ Il payload è vuoto per questo evento.
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### e&amp;due punti;ui-viewport-change {#ui-viewport-change}
 
 L’evento `aue:ui-viewport-change` viene attivato quando si modifica la dimensione di visualizzazione.
 
@@ -219,7 +219,7 @@ Il payload è rappresentato dalle dimensioni di visualizzazione.
 }
 ```
 
-### aue:initialized {#initialized}
+### e&amp;due punti;inizializzato {#initialized}
 
 L’evento `aue:initialized` viene attivato per comunicare alla pagina remota che è stata caricata correttamente nell’editor universale.
 
@@ -257,4 +257,3 @@ Il payload è vuoto per questo evento.
 ## Risorse aggiuntive {#additional-resources}
 
 * [Chiamate all’editor universale](/help/implementing/universal-editor/calls.md)
-
