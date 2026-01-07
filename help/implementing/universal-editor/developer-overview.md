@@ -4,7 +4,7 @@ description: Se ti occupi dello sviluppo AEM e ti interessa sapere come funziona
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 100%
@@ -118,7 +118,7 @@ Il cookie del token di accesso viene inviato ad AEM come dominio di terze parti.
 
    ![Proprietà OSGi per cookie dello stesso sito](assets/dev-cross-origin-osgi.png)
 
-1. Modifica la proprietà **Attributo SameSite per il cookie del token di accesso** in `None`.
+1. Modifica la proprietà **Attributo SameSite per il cookie del token di accesso** in `Partitioned`.
 
 1. Salva le modifiche.
 
