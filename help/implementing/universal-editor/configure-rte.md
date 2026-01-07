@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ Scopri come configurare l’editor Rich Text nell’editor universale.
 L’editor universale fornisce un editor Rich Text (RTE) sia nella posizione originale che nel pannello delle proprietà per consentire agli autori di applicare le modifiche di formattazione mentre modificano il testo.
 
 L&#39;editor Rich Text è configurabile utilizzando i filtri dei componenti [.](/help/implementing/universal-editor/filtering.md) Questo documento descrive le opzioni di configurazione disponibili e alcuni esempi.
+
+>[!NOTE]
+>
+>Quando avvii un progetto Universal Editor, tutte le funzioni Rich Text supportate dal backend (AEM con Edge Delivery o implementazione headless) sono automaticamente attive.
+>
+>* È possibile disattivare le opzioni non necessarie.
+>* L’attivazione di opzioni non compatibili con il tipo di progetto non è supportata.
 
 ## Struttura di configurazione {#structure}
 
