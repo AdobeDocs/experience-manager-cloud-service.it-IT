@@ -207,8 +207,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL  Swagger], i campi seguenti sono precompilati con i valori:
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL &#x200B; Swagger], i campi seguenti sono precompilati con i valori:
 
       * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine [!DNL Swagger].
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
@@ -232,8 +232,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL  Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL &#x200B; Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
    * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
    Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
