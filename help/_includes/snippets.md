@@ -1,8 +1,8 @@
 ---
-source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: ht
-source-wordcount: '1623'
-ht-degree: 100%
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+workflow-type: tm+mt
+source-wordcount: '1625'
+ht-degree: 99%
 
 ---
 # Snippet {#snippets}
@@ -93,7 +93,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
   <tr>
     <td>Impostare le opzioni dell’elenco a discesa </td>
     <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando la proprietà <b>Imposta le opzioni di</b> dell’editor di regole.</td>
-    <td>Le opzioni dell’elenco a discesa vengono impostate utilizzando le funzioni personalizzate. 
+    <td>L'elenco a discesa delle opzioni viene impostato utilizzando la proprietà <b>Invoke Service</b> dell'editor di regole. 
    </td>
    </tr>
      </tr>
@@ -167,11 +167,11 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >[!IMPORTANT]
 >
 >La pipeline front-end richiede che il seguente Elenco di indirizzi IP consentiti sia aggiunto in anticipo a Cloud Manager.
->>Se necessario, [aggiungi l’Elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando il blocco di indirizzi seguente. Ogni indirizzo è separato da una virgola. Incolla il blocco nel campo **Indirizzo IP / CIDR** della finestra di dialogo **Aggiungi Elenco indirizzi IP consentiti**. Posiziona il cursore subito dopo la prima virgola nell’elenco indirizzi e premi **Invio**. Salva l’elenco.
->>Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo elenco di indirizzi IP consentiti sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
+>Se necessario, [aggiungi l’Elenco di indirizzi IP consentiti](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando il blocco di indirizzi seguente. Ogni indirizzo è separato da una virgola. Incolla il blocco nel campo **Indirizzo IP / CIDR** della finestra di dialogo **Aggiungi Elenco indirizzi IP consentiti**. Posiziona il cursore subito dopo la prima virgola nell’elenco indirizzi e premi **Invio**. Salva l’elenco.
+>Per evitare interruzioni nell’esecuzione della pipeline front-end, assicurati che questo elenco di indirizzi IP consentiti sia aggiunto a Cloud Manager *prima* di abilitare la pipeline.
 >
 >**Elenco indirizzi IP consentiti di Cloud Manager**
->>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Aggiungere un elenco di indirizzi IP consentiti e pipeline front-end di Could Manager {#add-cm-allowlist-frontend-pipeline}
@@ -179,7 +179,7 @@ Nella tabella seguente viene illustrata la differenza tra le funzioni disponibil
 >[!IMPORTANT]
 >
 >Se utilizzi, o intendi utilizzare, la pipeline front-end per sviluppare siti, è necessario aggiungere in anticipo l’elenco consentiti IP di Cloud Manager.
->>Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>Consulta [Utilizzo dell’Elenco consentiti IP di Cloud Manager con la pipeline front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## Elenchi IP consentiti ed editor universale {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 **Per registrare un ticket di supporto:**
 
-1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/it?support-tab=home?lang=it#support).
+1. Crea un ticket [seguendo la procedura di assistenza standard](https://experienceleague.adobe.com/?support-tab=home?lang=it#support).
 1. Aggiungi **Edge Delivery** nel titolo del ticket.
 1. Nella descrizione, fornisci i dettagli seguenti oltre alla descrizione del problema:
 
@@ -284,6 +284,6 @@ Per poter registrare un ticket di supporto, devi prima registrare il tuo sito Ed
 
 Per accelerare la creazione del sito, Adobe fornisce un certo numero di modelli adatti a scopi diversi.
 
-* [Sito AEM con Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases): per la creazione di pagine AEM con l’editor unversale e la distribuzione tramite [Edge Delivery](/help/edge/overview.md)
+* [Sito AEM con Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases): per la creazione di pagine AEM con l’editor universale e la consegna tramite [Edge Delivery](/help/edge/overview.md)
 * [Edge Delivery Services con AEM Authoring per Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases): per la creazione di pagine AEM con l’editor universale per progetti e distribuzioni commerce tramite [Edge Delivery](/help/edge/overview.md)
 * [Modello di siti AEM standard](https://github.com/adobe/aem-site-template-standard/releases): per la creazione di pagine AEM tradizionali e la distribuzione tramite [Publish Delivery](/help/sites-cloud/authoring/author-publish.md)

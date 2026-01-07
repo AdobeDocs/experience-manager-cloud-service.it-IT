@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f913871da16b44d7a465e0fa00608835524ba7e3
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2384'
 ht-degree: 4%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
 
 L&#39;integrazione dei dati di [!DNL Experience Manager Forms] consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi predefiniti:
 
-* Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL e [!DNL Oracle RDBMS]
+* Database relazionali: MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL, SQL di Azure e [!DNL Oracle RDBMS]
 * Servizi Web RESTful
 * Servizi Web basati su SOAP
 * Servizi OData (versione 4.0)
@@ -40,30 +40,101 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 
 Prima di configurare i database relazionali utilizzando la configurazione della console Web [!DNL Experience Manager], è necessario:
 
-* [Abilita la rete avanzata tramite l&#39;API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=it), in quanto le porte sono disabilitate per impostazione predefinita.
-* [Aggiungi dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=it#mysql-driver-dependencies).
+* [Abilita la rete avanzata tramite l&#39;API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), in quanto le porte sono disabilitate per impostazione predefinita.
+* [Aggiungi dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
 ### Passaggi per configurare un database relazionale
 
 È possibile configurare i database relazionali utilizzando la configurazione della console Web [!DNL Experience Manager]. Effettua le seguenti operazioni:
 
-1. Vai alla console Web [!DNL Experience Manager] in `https://server:host/system/console/configMgr`.
-1. Individuare la configurazione **[!UICONTROL dei pool di connessioni JDBC Day Commons]**. Seleziona per aprire la configurazione in modalità di modifica.
+**Passaggio1: clonare l&#39;archivio Git AEM as a Cloud Service**
 
-   ![Pool di connettori JDBC](/help/forms/assets/jdbc_connector.png)
+1. Aprire la riga di comando e scegliere una directory in cui archiviare l&#39;archivio AEM as a Cloud Service, ad esempio `/cloud-service-repository/`.
 
-1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
+2. Esegui il comando seguente per clonare l’archivio:
 
-   * Nome classe Java™ per il driver JDBC
-   * URI connessione JDBC
-   * Nome utente e password per stabilire la connessione con il driver JDBC
-   * Specificare una query SQL SELECT nel campo **[!UICONTROL Query di convalida]** per convalidare le connessioni dal pool. La query deve restituire almeno una riga. In base al database, specificare una delle seguenti opzioni:
-      * SELECT 1 (MySQL e MS® SQL)
-      * SELECT 1 from dual (Oracle) (Seleziona 1 da doppio)
-   * Nome dell’origine dati
+   ```
+   git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+   ```
 
-   Stringhe di esempio per configurare un database relazionale:
+   **Dove trovare queste informazioni?**
+
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+
+   Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall&#39;applicazione.
+
+**Passaggio 2: passare alla cartella di configurazione**
+
+1. Apri la cartella dell’archivio in un editor.
+
+1. Passa alla seguente directory all&#39;interno di `<application folder>` in cui deve essere posizionata la configurazione OSGi per il pool JDBC:
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**Passaggio 3: creare il file di configurazione della connessione MySQL**
+
+1. Crea il file:
+
+   ```bash
+   com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+   ```
+
+1. Aggiungi le seguenti righe di codice:
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> 
+>
+> Sostituisci segnaposto come `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>` e `<your-db-password>` con valori effettivi.
+
+**Passaggio 4: conferma e invia le modifiche**
+
+Apri il terminale ed esegui i seguenti comandi:
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**Passaggio 5: distribuire le modifiche tramite pipeline Cloud Manager**
+
+1. Accedi a **AEM Cloud Manager**.
+1. Passa al progetto ed esegui la pipeline per distribuire le modifiche.
+
+>[!NOTE]
+>
+> Per informazioni più dettagliate, vedere [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html).
+
+<!--
+1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+
+   ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
+
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
+
+    * Java&trade; class name for the JDBC driver
+    * JDBC connection URI
+    * Username and password to establish connection with the JDBC driver
+    * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+      * SELECT 1 (MySQL and MS&reg; SQL) 
+      * SELECT 1 from dual (Oracle)
+    * Name of the data source
+
+   Sample strings for configuring a relational database:
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -71,13 +142,11 @@ Prima di configurare i database relazionali utilizzando la configurazione della 
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > Per informazioni più dettagliate, vedere [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=it).
 
-1. Seleziona **[!UICONTROL Salva]** per salvare la configurazione.
+    
+4. Select **[!UICONTROL Save]** to save the configuration.
 
-Ora è possibile utilizzare il database relazionale configurato con il modello dati del modulo (FDM).
+Now, you can use the configured relational database with your Form Data Model (FDM). 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -109,7 +178,7 @@ Tutte le configurazioni del servizio cloud in [!DNL Experience Manager] sono con
 Per configurare la cartella per le configurazioni del servizio cloud:
 
 1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
-   * Per ulteriori informazioni, vedere la documentazione del [browser di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=it).
+   * Per ulteriori informazioni, vedere la documentazione del [browser di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html).
 1. Effettua le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud oppure ignora questo passaggio per creare e configurare un’altra cartella per le configurazioni del servizio cloud.
 
    1. Nel **[!UICONTROL Browser configurazioni]**, selezionare la cartella `global` e selezionare **[!UICONTROL Proprietà]**.
@@ -138,8 +207,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL &#x200B; Swagger], i campi seguenti sono precompilati con i valori:
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], i campi seguenti sono precompilati con i valori:
 
       * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine [!DNL Swagger].
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
@@ -163,8 +232,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL &#x200B; Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
    * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
    Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
@@ -288,7 +357,7 @@ Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONT
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Configurare i servizi OData {#config-odata}
 
@@ -320,7 +389,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

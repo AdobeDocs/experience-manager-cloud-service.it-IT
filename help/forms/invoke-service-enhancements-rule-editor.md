@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ Di seguito sono riportati alcuni vantaggi dell’utilizzo dell’operazione Invo
 L&#39;editor di regole visive consente di creare regole per i gestori di operazioni riuscite e non riuscite per le operazioni **Richiama servizio** in base alle relative risposte di output. L&#39;immagine seguente mostra il **servizio Invoke** nell&#39;editor di regole visive per un modulo adattivo:
 
 ![Richiama gestori di servizi](/help/forms/assets/invoke-service-rule-editor.png)
+
+### Aggiunta del gestore di successo e del gestore degli errori
 
 Per aggiungere un gestore operazioni riuscite o non riuscite, fare clic rispettivamente su **[!UICONTROL Aggiungi gestore operazioni riuscite]** o **[!UICONTROL Aggiungi gestore operazioni non riuscite]**.
 
@@ -160,6 +162,10 @@ Per ottenere questo risultato, creare una regola nella casella di testo `Pet ID`
 
 ![Imposta valore elenco a discesa](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> Consulta la sezione [Aggiunta del gestore dei successi e del gestore degli errori](#adding-success-handler-and-failure-handler) per scoprire come impostare i gestori dei successi e degli errori.
+
 #### Output
 
 Immettere `101` nella casella di testo `Pet ID` per popolare dinamicamente le opzioni del menu a discesa in base al valore immesso.
@@ -181,6 +187,10 @@ Creare una regola nella casella di testo `Pet ID` per richiamare il servizio `ge
 
 ![Crea regola per pannello ripetibile](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> Consulta la sezione [Aggiunta del gestore dei successi e del gestore degli errori](#adding-success-handler-and-failure-handler) per scoprire come impostare i gestori dei successi e degli errori.
+
 #### Output
 
 Immettere `101` nella casella di testo `Pet ID` per popolare il pannello ripetibile in modo dinamico in base al valore di input.
@@ -199,6 +209,10 @@ In questo caso d&#39;uso viene illustrato come impostare in modo dinamico il val
 #### Implementazione
 
 Creare una regola nella casella di testo `Pet ID` per richiamare il servizio `getPetById`. In **[!UICONTROL Aggiungi gestore operazioni riuscite]**, aggiungi un&#39;altra risposta del gestore operazioni riuscite. Impostare il valore della casella di testo `categoryname` su `category.name` nella regola.
+
+>[!NOTE]
+>
+> Consulta la sezione [Aggiunta del gestore dei successi e del gestore degli errori](#adding-success-handler-and-failure-handler) per scoprire come impostare i gestori dei successi e degli errori.
 
 ![Crea regola per pannello ripetibile](/help/forms/assets/set-panel-values.png)
 
