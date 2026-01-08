@@ -3,7 +3,7 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Scopri come [scaricare una risorsa da [!DNL Content Hub]](download-assets-conten
 
 ## Condividere le risorse disponibili all’interno di una raccolta {#share-assets-available-within-collection}
 
-Puoi anche condividere le risorse disponibili all’interno di una raccolta. Assicurati di [abilitare la condivisione di collegamenti pubblici in Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Passa alla scheda **[!UICONTROL Raccolte]**. Seleziona l&#39;icona ![condividi](assets/share.svg) sulla scheda della raccolta. Il collegamento di condivisione viene copiato. Puoi condividere il collegamento copiato con il destinatario. Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
+Puoi anche condividere le risorse disponibili all’interno di una raccolta. Assicurati di [abilitare la condivisione di collegamenti pubblici in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub). Passa alla scheda **[!UICONTROL Raccolte]**. Seleziona l&#39;icona ![condividi](assets/share.svg) sulla scheda delle risorse. Il collegamento di condivisione viene copiato. Puoi condividere il collegamento copiato con il destinatario. Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections fornisce strumenti di governance completi per una gestione efficace delle risorse, tra cui autorizzazioni di condivisione personalizzabili e funzioni di collaborazione. Dall’accesso in sola lettura al controllo amministrativo completo, queste impostazioni supportano la governance fine sulla distribuzione delle risorse. Quando si condivide una risorsa singolarmente o come parte di una raccolta, l’ambito di accesso è determinato dal livello di accesso corrente della raccolta assegnato all’utente. In alternativa, non è possibile condividere una raccolta privata.
 
