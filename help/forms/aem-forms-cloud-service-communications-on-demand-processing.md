@@ -1,24 +1,22 @@
 ---
-title: Come si configurano le API sincrone di comunicazione interattiva?
+title: Come si configurano le API sincrone di Forms Communications?
 description: Configurare l’ambiente di sviluppo per le API sincrone di comunicazioni interattive per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2380'
 ht-degree: 1%
 
 ---
 
 
-# Elaborazione delle API sincrone di AEM Forms as a Cloud Service Communications
+# Configurare l’accesso server-to-server OAuth per le API sincrone di AEM Forms Communications
 
-Questa guida fornisce istruzioni complete per la configurazione e l’utilizzo delle API sincrone di AEM Forms Communications.
-
-Scopri come configurare l’ambiente AEM as a Cloud Service, abilitare l’accesso API e richiamare le API di comunicazione utilizzando l’autenticazione server-to-server OAuth.
+Questa guida fornisce istruzioni per configurare e richiamare le API sincrone di AEM Forms Communications a cui si accede tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
 
 ## Prerequisiti
 
@@ -30,27 +28,30 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 **Autorizzazioni utente e ruolo**
 
-- Adobe ID creato in [https://account.adobe.com/](https://account.adobe.com/)
-- Adobe ID associato all’e-mail della tua organizzazione
-- Contesto del prodotto Adobe Managed Services assegnato
 - Ruolo Sviluppatore assegnato in Adobe Admin Console
 - Autorizzazione per la creazione di progetti in Adobe Developer Console
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
-
-**Accesso a Cloud Manager**
-
-- Credenziali di accesso per [Cloud Manager](https://my.cloudmanager.adobe.com)
-- Accesso per visualizzare e gestire gli ambienti del programma
-- Autorizzazione per creare ed eseguire pipeline CI/CD
-- Accesso ai dettagli e alla configurazione dell’ambiente
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso archivio Git**
 
 - Accesso all’archivio Git di Cloud Manager
 - Credenziali Git per la clonazione e il push delle modifiche
+
+>[!NOTE]
+>
+> Per ulteriori informazioni su come integrare Adobe Cloud Manager e Adobe Cloud Manager, consulta [Documentazione sull&#39;integrazione Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
+
+### Generare token di accesso utilizzando Adobe Developer Console (ADC)
+
+- Genera il token di accesso tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
+- Recuperare l’ID client da Adobe Developer Console
+
+>[!NOTE]
+>
+> Per ulteriori informazioni sull&#39;autenticazione server-to-server di OAuth tramite Adobe Developer Console, [fai clic qui](/help/forms/oauth-api-authetication.md).
 
 ### Strumenti di sviluppo
 
@@ -64,315 +65,263 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 >
 > Si tratta di un processo una tantum per ambiente che deve essere completato prima di procedere con la configurazione delle API di AEM Forms Communications.
 
-Ora cerchiamo di capire ogni passo nel dettaglio.
+## Configurare le API sincrone di AEM Forms Communications
 
-### Passaggio 1: aggiornare l’istanza di AEM
+Le API di comunicazione di AEM Forms sono accessibili tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
 
-Per aggiornare l’istanza di AEM:
+Segui i passaggi che spiegano come configurare le API sincrone di Forms Communication per generare PDF utilizzando il modello e il file XDP:
 
-1. **Accedi ad Adobe Cloud Manager**
-   1. Passa a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. Accedi con il tuo Adobe ID
-
-2. **Passa alla panoramica del programma**
-   1. Seleziona il programma dall’elenco. Viene visualizzata la pagina Panoramica del programma
-
-3. **Individua dettagli ambiente**
-   1. Seleziona l&#39;icona `ellipsis`(...) accanto al nome dell&#39;ambiente e fai clic su **Aggiorna**
-   2. Fai clic sul pulsante **Invia** ed esegui la pipeline full stack suggerita.
-
-      ![Aggiorna ambiente](/help/forms/assets/update-env.png)
-
-### Passaggio 2: clonare l’archivio Git
-
-Clona l’archivio Git di Cloud Manager per gestire i file di configurazione API.
-
-1. **Individua la sezione dell&#39;archivio**
-   1. Nella pagina **Panoramica del programma**, fai clic sulla scheda **Archivi**
-   2. Individua il nome dell’archivio e fai clic sul menu con i puntini di sospensione (...)
-   3. Copia l’URL dell’archivio
-
-      >[!NOTE]
-      >
-      > Il formato dell&#39;URL è in genere `https://git.cloudmanager.adobe.com/<org>/<program>/`
-
-2. **Clona utilizzando il comando Git**
-
-   1. Apri il prompt dei comandi o il terminale
-   2. Eseguire il comando `git clone` per clonare l&#39;archivio Git.
-
-      ```bash
-      git clone [repository-url]
-      ```
-
-      >[!NOTE]
-      >
-      > Per clonare l’archivio Git, utilizza le credenziali fornite da Adobe Cloud Manager.
-
-      Ad esempio, per clonare l’archivio Git, esegui il seguente comando:
-
-      ```bash
-      https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-p43162-uk59167/
-      ```
-
-      ![Clonazione dell&#39;archivio Git](/help/forms/assets/repo-clone.png)
-
-
-**Opzioni di integrazione archivio Git**
-
-Adobe Cloud Manager supporta entrambe le opzioni dell’archivio:
-
-- **Utilizzo diretto dell&#39;archivio Git di Cloud Manager**
-   - Usa archivio Git nativo di Cloud Manager
-   - Integrazione integrata con le pipeline
-
-- **Integrazione con l&#39;archivio Git gestito dal cliente**
-   - Connetti il tuo archivio Git (GitHub, GitLab, Bitbucket, ecc.)
-   - Configurare la sincronizzazione con Adobe Cloud Manager
-
-Per ulteriori informazioni su come integrare Adobe Cloud Manager e Adobe Cloud Manager, consulta [Documentazione sull&#39;integrazione Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
-
-### Passaggio 3: accedere all’ambiente AEM Cloud Service e all’endpoint AEM Forms
+### Passaggio 1: accedere all’ambiente AEM Cloud Service e all’endpoint AEM Forms
 
 Accedi ai dettagli dell’ambiente AEM Cloud Service per ottenere gli URL e gli identificatori necessari per la configurazione API.
 
-1. **Accedi ad Adobe Cloud Manager**
-   1. Passa a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. Accedi con il tuo Adobe ID
+#### 1.1 Accesso ad Adobe Cloud Manager
 
-2. **Passa alla panoramica del programma**
-Seleziona il programma dall’elenco. Viene visualizzata la pagina Panoramica del programma
+1. Passa a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Accedi con il tuo Adobe ID
 
-3. **Accedere e visualizzare l&#39;ambiente AEM Cloud Service**
+#### 1.2 Panoramica del programma
 
-   Puoi visualizzare o accedere ai dettagli dell’ambiente AEM Cloud Service utilizzando una delle due opzioni seguenti:
+Seleziona il programma dall’elenco. Sei stato reindirizzato alla pagina **Panoramica del programma**
 
-   - **Opzione 1: dalla pagina Panoramica**
+![Pagina Panoramica Programma](/help/forms/assets/program-overview.png)
 
-      1. Nella pagina **Panoramica del programma**
-      2. Fare clic su **&quot;Ambienti&quot;** nel menu a sinistra.  Puoi visualizzare un elenco di tutti gli ambienti
+#### 1.3 Accedere e visualizzare l’ambiente AEM Cloud Service
 
-         ![Visualizza tutti gli ambienti](/help/forms/assets/all-env.png)
+Puoi visualizzare o accedere ai dettagli dell’ambiente AEM Cloud Service utilizzando una delle due opzioni seguenti:
 
-      3. Fai clic sul nome dell’ambiente specifico per visualizzare i dettagli
+>[!BEGINTABS]
 
-         ![Opzione1-Dettagli ambiente](/help/forms/assets/option1-env.png)
+>[!TAB Opzione 1: dalla pagina Panoramica]
 
-   - **Opzione 2: dalla sezione Ambienti**
+1. Nella pagina **Panoramica del programma**
+2. Fare clic su **&quot;Ambienti&quot;** nel menu a sinistra.  Puoi visualizzare un elenco di tutti gli ambienti
+3. Fai clic sul nome dell’ambiente specifico per visualizzare i dettagli
 
-      1. Nella pagina Panoramica del programma
-      2. Individua la sezione **Ambienti**
-      3. Fai clic su **&quot;Mostra tutto&quot;** per visualizzare tutti gli ambienti
-      4. Fai clic sul menu **puntini di sospensione (...)** accanto all&#39;ambiente
-         ![Opzione1-Dettagli ambiente](/help/forms/assets/option2-env-details.png)
-      5. Selezionare **&quot;Visualizza dettagli&quot;**
+   ![Visualizza tutti gli ambienti](/help/forms/assets/all-env.png)
 
-         ![Opzione1-Dettagli ambiente](/help/forms/assets/option1-env.png)
+>[!TAB Opzione 2: dalla sezione Ambienti]
 
-4. **Trova Il Tuo Endpoint AEM Forms**
+1. Nella pagina **Panoramica del programma**
+2. Individua la sezione **Ambienti**
+3. Fai clic su **&quot;Mostra tutto&quot;** per visualizzare tutti gli ambienti
+4. Fai clic sul menu **puntini di sospensione (...)** accanto all&#39;ambiente
+5. Selezionare **&quot;Visualizza dettagli&quot;**
 
-   Nella pagina dei dettagli **Ambiente**, prendere nota dei dettagli seguenti:
+   ![Opzione1-Dettagli ambiente](/help/forms/assets/option2-env-details.png)
 
-   **URL servizio Author**
+>[!ENDTABS]
 
-   - URL: `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`
-   - Bucket: author-pXXXXX-eYYYY
-Esempio: `https://author-p43162-e177398.adobeaemcloud.com`
+#### &#x200B;4. Trovare L’Endpoint Di AEM Forms
 
-   **URL servizio di pubblicazione**
+Dalla pagina dei dettagli **Ambiente**, prendi nota dell&#39;istanza dell&#39;URL di AEM.
 
-   - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
-   - Bucket: publish-pXXXXX-eYYYY
-Esempio: `https://publish-p43162-e177398.adobeaemcloud.com`
+![Opzione1-Dettagli ambiente](/help/forms/assets/option1-env.png)
 
 >[!NOTE]
 >
 > Per informazioni su come accedere all&#39;ambiente AEM Cloud Service e all&#39;endpoint AEM Forms, consulta [Gestione della documentazione degli ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
-### Passaggio 4: configurazione dell’accesso API
+### Passaggio 2: clonare l’archivio Git
 
-Per configurare le API di AEM Forms Communications, effettua le seguenti operazioni:
+Clona l’archivio Git di Cloud Manager per gestire i file di configurazione API.
 
-#### 4.1 Configurazione del progetto Adobe Developer Console
+#### 2.1 Individuare la sezione dell’archivio
 
-1. **Accedi a Adobe Developer Console**
-   1. Passa a [Adobe Developer Console](https://developer.adobe.com/console)
-   2. Accedi con il tuo Adobe ID
+1. Nella pagina **Panoramica del programma**, fai clic sulla scheda **Archivi**
+2. Individua il nome dell’archivio e fai clic sul menu con i puntini di sospensione (...)
+3. Copia l’URL dell’archivio
 
-2. **Crea nuovo progetto**
-   1. Dalla sezione **Guida rapida**, fai clic su **Crea nuovo progetto**
-   2. Viene creato un nuovo progetto con un nome predefinito
+   ![Copia URL archivio](/help/forms/assets/copy-repo-url.png)
 
-      ![Crea progetto ADC](/help/forms/assets/adc-home.png)
+>[!NOTE]
+>
+> Il formato dell&#39;URL è in genere `https://git.cloudmanager.adobe.com/<org>/<program>/`
 
-   3. Fai clic su **Modifica progetto** nell&#39;angolo superiore destro
+#### 2.2 Clonare Utilizzando Il Comando Git
 
-      ![Modifica progetto](/help/forms/assets/adc-edit-project.png)
+1. Apri il prompt dei comandi o il terminale
+2. Eseguire il comando `git clone` per clonare l&#39;archivio Git.
 
-   4. Fornisci un nome significativo (ad esempio, &quot;formsproject&quot;)
-   5. Fai clic su **Salva**
+   ```bash
+   git clone [repository-url]
+   ```
 
-      ![Modifica nome progetto](/help/forms/assets/adc-edit-projectname.png)
+>[!NOTE]
+>
+> Per clonare l’archivio Git, utilizza le credenziali fornite da Adobe Cloud Manager.
 
-#### 4.2 Aggiungere API di comunicazione Forms
+Ad esempio, per clonare l’archivio Git, esegui il seguente comando:
 
-Puoi aggiungere diverse API di comunicazione di AEM Forms a seconda dei requisiti.
+```bash
+https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-pXXX-ukYYYY/
+```
 
-**A. Per le API di Document Services**
+![Clonazione dell&#39;archivio Git](/help/forms/assets/repo-clone.png)
+
+Per ulteriori informazioni su come integrare Adobe Cloud Manager e Adobe Cloud Manager, consulta [Documentazione sull&#39;integrazione Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
+
+### Passaggio 3: configurazione del progetto Adobe Developer Console
+
+#### 3.1 Accesso a Adobe Developer Console
+
+1. Passa a [Adobe Developer Console](https://developer.adobe.com/console)
+2. Accedi con il tuo Adobe ID
+3. Crea un nuovo progetto o accedi al progetto esistente
+
+>[!BEGINTABS]
+
+>[!TAB Per creare un nuovo progetto]
+
+1. Dalla sezione **Guida rapida**, fai clic su **Crea nuovo progetto**
+2. Viene creato un nuovo progetto con un nome predefinito
+
+   ![Crea progetto ADC](/help/forms/assets/adc-home.png)
+
+3. Fai clic su **Modifica progetto** nell&#39;angolo superiore destro
+
+   ![Modifica progetto](/help/forms/assets/adc-edit-project.png)
+
+4. Fornisci un nome significativo (ad esempio, &quot;formsproject&quot;)
+5. Fai clic su **Salva**
+
+   ![Modifica nome progetto](/help/forms/assets/adc-edit-projectname.png)
+
+>[!TAB Per passare al progetto esistente]
+
+1. Fai clic su **Tutti i progetti** da Adobe Developer Console
+
+   ![Progetti di ricerca](/help/forms/assets/search-adc-project.png)
+
+2. Individua il progetto e fai clic su per aprirlo.
+
+   ![Individua Progetti](/help/forms/assets/locate-adc-project.png)
+
+>[!ENDTABS]
+
+#### 3.2 Aggiungere API di comunicazione Forms
 
 1. Fai clic su **Aggiungi API**
 
    ![Aggiungi API](/help/forms/assets/adc-add-api.png)
 
-2. Seleziona **API di comunicazione Forms**
-   1. Nella finestra di dialogo _Aggiungi API_, filtra per **Experience Cloud**
-   2. Seleziona **&quot;API di comunicazione Forms&quot;**
+2. Nella finestra di dialogo _Aggiungi API_, filtra per **Experience Cloud**
+3. Seleziona **&quot;API di comunicazione Forms&quot;**
 
    ![Aggiungi API di comunicazione Forms](/help/forms/assets/adc-add-forms-api.png)
 
-
-3. Seleziona il metodo di autenticazione da server a server **OAuth**
+4. Fai clic su **Avanti**
+5. Seleziona il metodo di autenticazione da server a server **OAuth**
 
    ![Seleziona metodo di autenticazione](/help/forms/assets/adc-add-authentication-method.png)
+6. Fai clic su **Avanti**
 
-**B. Per le API di Forms Runtime**
+#### 3.3 Aggiungere un profilo di prodotto
 
-1. **Fai clic su Aggiungi API**
-   - Nel progetto, fai clic sul pulsante **Aggiungi API**
+1. Seleziona il **profilo prodotto** che corrisponde all&#39;URL dell&#39;istanza di AEM (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`).
 
-   ![Aggiungi API](/help/forms/assets/adc-add-api.png)
-
-2. **Seleziona l&#39;API di AEM Forms Delivery e Runtime**
-   - Nella finestra di dialogo _Aggiungi API_, filtra per **Experience Cloud**
-   - Seleziona **&quot;AEM Forms Delivery and Runtime API&quot;**
-   - Fai clic su **Avanti**
-
-   ![Aggiungi API runtime](/help/forms/assets/add-runtime-api.png)
-
-
-3. **Metodo di autenticazione**
-   - Selezionare il metodo di autenticazione da server a server **OAuth**.
-
-
-   ![Seleziona metodo di autenticazione](/help/forms/assets/add-authentication-for-runtime-apis.png)
-
-#### 4.3 Aggiungi profilo prodotto
-
-Per aggiungere il profilo di prodotto, segui la procedura riportata di seguito:
-
-1. Seleziona il **profilo prodotto** appropriato in base al livello di accesso richiesto:
-
-   | Tipo di accesso | Profilo prodotto |
-   |------------------|----------------------|
-   | Accesso in sola lettura | `AEM Users - author - Program XXX - Environment XXX` |
-   | Accesso in lettura/scrittura | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-   | Accesso amministrativo completo | `AEM Administrators - author - Program XXX - Environment XXX` |
-
-2. Seleziona il **profilo prodotto** che corrisponde all&#39;URL del servizio di authoring (`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`). Ad esempio: selezionare `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`.
-
-3. Fai clic su **Salva API configurata**. L’API e il profilo di prodotto vengono aggiunti al progetto
+2. Fai clic su **Salva API configurata**. L’API e il profilo di prodotto vengono aggiunti al progetto
 
    ![Seleziona configurazione progetto](/help/forms/assets/adc-add-product-profile.png)
 
-#### 4.4 Generare e salvare le credenziali
-
-1. **Accedi alle credenziali**
-
-   1. Passare al progetto in Adobe Developer Console
-   2. Fai clic sulle credenziali **OAuth Server-to-Server**
-   3. Visualizza la sezione **Dettagli credenziali**
+3. Visualizza la sezione **Dettagli credenziali**
 
    ![Visualizza credenziali](/help/forms/assets/adc-view-credential.png)
 
-2. **Registra credenziali API**
+**Registra credenziali API**
 
-   ```text
-   API Credentials:
-   ================
-   Client ID: <your_client_id>
-   Client Secret: <your_client_secret>
-   Technical Account ID: <tech_account_id>
-   Organization ID: <org_id>
-   Scopes: AdobeID,openid,read_organizations
-   ```
+```text
+    API Credentials:
+    ================
+    Client ID: <your_client_id>
+    Client Secret: <your_client_secret>
+    Technical Account ID: <tech_account_id>
+    Organization ID: <org_id>
+    Scopes: AdobeID,openid,read_organizations
+```
 
-#### 4.5 Generazione token di accesso
+#### 3.4 Generare l’accesso
 
-**A. Per test**
+>[!BEGINTABS]
+
+>[!TAB Per test]
 
 Generare manualmente i token di accesso in Adobe Developer Console:
 
-1. **Accedi al progetto**
-   1. In Adobe Developer Console, apri il progetto
-   2. Fai clic su **Server-to-Server OAuth**
-
-2. **Genera token di accesso**
-   1. Fai clic sul pulsante **&quot;Genera token di accesso&quot;** nella sezione API del progetto
-   2. Copia il token di accesso generato
+1. Fai clic sul pulsante **&quot;Genera token di accesso&quot;** nella sezione API del progetto
+2. Copia il token di accesso generato
 
    ![Genera token di accesso](/help/forms/assets/adc-access-token.png)
 
-   >[!NOTE]
-   >
-   > Il token di accesso è valido per **24 ore**
+>[!NOTE]
+>
+> Il token di accesso è valido solo per **24 ore**
 
-**B. Per la produzione**
+>[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando il comando cURL:
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
 - ID client
 - Segreto client
-- Ambiti (in genere: `AdobeID,openid,read_organizations`)
+- Ambiti (in genere: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Endpoint token:**
 
 ```
-https://ims-na1.adobelogin.com/ims/token/v3
+    https://ims-na1.adobelogin.com/ims/token/v3
 ```
 
 **Richiesta di esempio (curl):**
 
 ```bash
-curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'grant_type=client_credentials' \
-  -d 'client_id=<YOUR_CLIENT_ID>' \
-  -d 'client_secret=<YOUR_CLIENT_SECRET>' \
-  -d 'scope=AdobeID,openid,read_organizations'
+    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=client_credentials' \
+    -d 'client_id=<YOUR_CLIENT_ID>' \
+    -d 'client_secret=<YOUR_CLIENT_SECRET>' \
+    -d 'scope=AdobeID,openid,read_organizations'
 ```
 
 **Risposta:**
 
 ```json
-{
-  "access_token": "eyJhbGciOiJSUz...",
-  "token_type": "bearer",
-  "expires_in": 86399
-}
+        {
+        "access_token": "eyJhbGciOiJSUz...",
+        "token_type": "bearer",
+        "expires_in": 86399
+        }
 ```
 
-#### 4.6 Registrare l’ID client con l’ambiente AEM
+>[!ENDTABS]
+
+Ora puoi utilizzare il token di accesso generato per effettuare chiamate API per ambienti di sviluppo, stage o produzione.
+
+>[!NOTE]
+>
+> Per ulteriori informazioni sull&#39;autenticazione server-to-server OAuth tramite Adobe Developer Console, consulta l&#39;articolo [Autenticazione server-to-server OAuth](/help/forms/oauth-api-authetication.md).
+
+### Passaggio 4: registrare l’ID client nell’ambiente AEM
 
 Per abilitare l’ID client del progetto ADC per comunicare con l’istanza di AEM, devi registrarlo utilizzando un file di configurazione YAML e distribuirlo tramite una pipeline di configurazione.
 
-1. **Individuare o creare la directory di configurazione**
+#### 4.1 Individuare o creare la directory di configurazione
 
-   1. Passare all&#39;archivio dei progetti AEM clonato, passare alla cartella `config`
-   2. Se non esiste, creala a livello di directory principale del progetto:
+1. Passare all&#39;archivio progetti AEM clonato e individuare la cartella `config`
+2. Se non esiste, creala a livello di directory principale del progetto:
 
    ```bash
    mkdir config
    ```
 
-2. Creare un nuovo file denominato `api.yaml` nella directory `config`:
+3. Creare un nuovo file denominato `api.yaml` nella directory `config`:
 
    ```bash
    touch config/api.yaml
    ```
 
-3. Aggiungi il seguente codice nel file `api.yaml`:
+4. Aggiungi il seguente codice nel file `api.yaml`:
 
    ```yaml
    kind: "API"
@@ -389,26 +338,24 @@ Per abilitare l’ID client del progetto ADC per comunicare con l’istanza di A
        - "<your_client_id>"
    ```
 
-   Di seguito vengono illustrati i parametri di configurazione:
+Di seguito vengono illustrati i parametri di configurazione:
 
-   - **tipo**: sempre impostato su `"API"` (identifica questa come configurazione API)
-   - **versione**: versione API, in genere `"1"` o `"1.0"`
-   - **envTypes**: Array di tipi di ambiente in cui si applica questa configurazione
-      - `["dev"]` - Solo ambienti di sviluppo
-      - `["stage"]` - Solo ambienti di staging
-      - `["prod"]` - Solo ambienti di produzione
-   - **allowedClientIDs**: gli ID client possono accedere alla tua istanza di AEM
-      - **author**: ID client per il livello di authoring
-      - **publish**: ID client per il livello di pubblicazione
-      - **anteprima**: ID client per il livello di anteprima
+- **tipo**: sempre impostato su `"API"` (identifica questa come configurazione API)
+- **versione**: versione API, in genere `"1"` o `"1.0"`
+- **envTypes**: Array di tipi di ambiente in cui si applica questa configurazione
+   - `["dev"]` - Solo ambienti di sviluppo
+   - `["stage"]` - Solo ambienti di staging
+   - `["prod"]` - Solo ambienti di produzione
+- **allowedClientIDs**: gli ID client possono accedere alla tua istanza di AEM
+   - **author**: ID client per il livello di authoring
+   - **publish**: ID client per il livello di pubblicazione
+   - **anteprima**: ID client per il livello di anteprima
 
-   Aggiungere ad esempio `allowedClientIDs` come `6bc4589785e246eda29a545d3ca55980` e envTypes come `dev`:
+![Aggiunta del file di configurazione](/help/forms/assets/create-api-yaml-file.png)
 
-   ![Aggiunta del file di configurazione](/help/forms/assets/create-api-yaml-file.png)
+#### 4.2 Commit e modifiche push
 
-4. **Commit e modifiche push**
-
-   1. Passa alla cartella principale dell’archivio clonato ed esegui i seguenti comandi:
+1. Passa alla cartella principale dell’archivio clonato ed esegui i seguenti comandi:
 
 
    ```bash
@@ -420,112 +367,115 @@ Per abilitare l’ID client del progetto ADC per comunicare con l’istanza di A
    ![Modifiche Git push](/help/forms/assets/push-yaml-changes-in-git.png)
 
 
-5. **Configura pipeline**
+### Passaggio 5: configurare la pipeline di configurazione
 
-   1. **Accedi a Cloud Manager**
-      1. Passa a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-      2. Accedi con il tuo Adobe ID
+#### 5.1 Individuare la scheda Pipeline
 
-   2. **Accedi al programma**
-Seleziona il programma dall’elenco e vieni reindirizzato alla pagina Panoramica del programma
+1. Individua la scheda **Pipeline** nella pagina Panoramica del programma
+2. Fare clic sul pulsante **&quot;Aggiungi&quot;**
 
-   3. **Individua la scheda Pipeline**
-      1. Individua la scheda **Pipeline** nella pagina Panoramica del programma
-      1. Fare clic sul pulsante **&quot;Aggiungi&quot;**
+   ![Aggiungi pipeline](/help/forms/assets/add-pipeline.png)
 
-   4. **Seleziona tipo di pipeline**
+#### 5.2 Seleziona tipo di pipeline
 
-      - **Per Gli Ambienti Di Sviluppo**: Selezionare **&quot;Aggiungi Pipeline Non Di Produzione&quot;**. Le pipeline non di produzione sono per ambienti di sviluppo e stage
+- **Per Gli Ambienti Di Sviluppo**: Selezionare **&quot;Aggiungi Pipeline Non Di Produzione&quot;**. Le pipeline non di produzione sono per ambienti di sviluppo e stage
 
-      - **Per Gli Ambienti Di Produzione**: Selezionare **&quot;Aggiungi Pipeline Di Produzione&quot;**. Le pipeline di produzione richiedono approvazioni aggiuntive
+- **Per Gli Ambienti Di Produzione**: Selezionare **&quot;Aggiungi Pipeline Di Produzione&quot;**. Le pipeline di produzione richiedono approvazioni aggiuntive
 
-        >[!NOTE]
-        >
-        > In questo caso, crea una pipeline non di produzione poiché è disponibile un ambiente di sviluppo.
+>[!NOTE]
+>
+> In questo caso, crea una pipeline non di produzione poiché è disponibile un ambiente di sviluppo.
 
-   5. **Configura pipeline - Scheda Configurazione**
+**1. Configura pipeline - Scheda Configurazione**
 
-      Nella scheda **Configurazione**:
+Nella scheda **Configurazione**:
 
-      a. **Tipo di pipeline**
-      - Seleziona **&quot;Pipeline di distribuzione&quot;**
+a. **Tipo di pipeline**
 
-      b. **Nome pipeline**
-      - Specifica un nome descrittivo. Ad esempio, assegna alla pipeline il nome `api-config-pipieline`
+- Seleziona **&quot;Pipeline di distribuzione&quot;**
 
-      c. **Trigger distribuzione**
-      - **Manuale**: distribuisci solo quando attivato manualmente (consigliato per la configurazione iniziale)
-      - **Su modifiche Git**: distribuzione automatica quando le modifiche vengono inviate al ramo
+b. **Nome pipeline**
 
-      d. **Comportamento in caso di errori di metriche importanti**
-      - **Chiedi ogni volta**: richiede un&#39;azione in caso di errori (impostazione predefinita)
-      - **Genera errore immediatamente**: genera automaticamente un errore di pipeline in caso di errori di metrica
-      - **Continua immediatamente**: continua nonostante gli errori
+- Specifica un nome descrittivo. Ad esempio, assegna alla pipeline il nome `api-config-pipieline`
 
-      e. Fare clic su **&quot;Continua&quot;** per passare alla scheda **Codice Source**
+c. **Trigger distribuzione**
 
-      ![Pipeline di configurazione](/help/forms/assets/add-config-pipeline.png)
+- **Manuale**: distribuisci solo quando attivato manualmente (consigliato per la configurazione iniziale)
+- **Su modifiche Git**: distribuzione automatica quando le modifiche vengono inviate al ramo
 
-   6. **Configura pipeline - Scheda Codice Source**
+d. **Comportamento in caso di errori di metriche importanti**
 
-      Nella scheda **Codice Source**:
+- **Chiedi ogni volta**: richiede un&#39;azione in caso di errori (impostazione predefinita)
+- **Genera errore immediatamente**: genera automaticamente un errore di pipeline in caso di errori di metrica
+- **Continua immediatamente**: continua nonostante gli errori
 
-      a. **Tipo di distribuzione**
-      - Seleziona **&quot;Distribuzione di destinazione&quot;**
+e. Fare clic su **&quot;Continua&quot;** per passare alla scheda **Codice Source**
 
-      b. **Opzioni di distribuzione**
-      - Selezionare **&quot;Config&quot;** (distribuire solo i file di configurazione). Indica a Cloud Manager che si tratta di una distribuzione di configurazione.
+![Pipeline di configurazione](/help/forms/assets/add-config-pipeline.png)
 
-      c. **Seleziona ambiente di distribuzione idoneo**
-      - Scegli l’ambiente in cui distribuire la configurazione. In questo caso, si tratta di un ambiente `dev`.
+**2. Configura pipeline - Scheda Codice Source**
 
-      d. **Definisci dettagli codice Source**
+Nella scheda **Codice Source**:
 
-      - **Archivio**: selezionare l&#39;archivio contenente il file `api.yaml`. Selezionare ad esempio l&#39;archivio `AEMFormsInternal-ReleaseSanity-p43162-uk59167`.
-      - **Ramo Git**: seleziona il ramo. Ad esempio, in questo caso il nostro codice viene distribuito nel ramo `main`.
-      - **Posizione codice**: immettere il percorso della directory `config`. Poiché `api.yaml` si trova nella cartella principale `config`, immettere `/config`
+a. **Tipo di distribuzione**
 
-      e. Fare clic su **&quot;Salva&quot;** per creare la pipeline
+- Seleziona **&quot;Distribuzione di destinazione&quot;**
 
-      ![Pipeline di configurazione](/help/forms/assets/confirm-pipeline-1.png)
+b. **Opzioni di distribuzione**
 
-6. **Distribuisci configurazione**
+- Selezionare **&quot;Config&quot;** (distribuire solo i file di configurazione). Indica a Cloud Manager che si tratta di una distribuzione di configurazione.
 
-   Una volta creata la pipeline, distribuire la configurazione `api.yaml`:
+c. **Seleziona ambiente di distribuzione idoneo**
 
-   1. **Dalla panoramica delle pipeline**
-      1. Nella pagina Panoramica del programma, individua la scheda **Pipeline**
-      2. Passa alla nuova pipeline di configurazione creata nell’elenco. Ad esempio, cerca il nome della pipeline creata (ad esempio, &quot;api-config-pipeline&quot;). Puoi visualizzare i dettagli della pipeline, compreso lo stato e l’ultima esecuzione.
+- Scegli l’ambiente in cui distribuire la configurazione. In questo caso, si tratta di un ambiente `dev`.
 
-   2. **Avvia la distribuzione**
-      1. Fai clic sul pulsante **&quot;Build&quot;** (o sull&#39;icona di riproduzione ▶) accanto alla pipeline
-      2. Conferma la distribuzione se richiesto e l’esecuzione della pipeline inizia
+d. **Definisci dettagli codice Source**
 
-      ![esegui la pipeline](/help/forms/assets/run-config-pipeline.png)
+- **Archivio**: selezionare l&#39;archivio contenente il file `api.yaml`. Selezionare ad esempio l&#39;archivio `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
+- **Ramo Git**: seleziona il ramo. Ad esempio, in questo caso il nostro codice viene distribuito nel ramo `main`.
+- **Posizione codice**: immettere il percorso della directory `config`. Poiché `api.yaml` si trova nella cartella principale `config`, immettere `/config`
 
-   3. **Verifica distribuzione completata**
-      - Attendi il completamento della pipeline.
-         - Se l&#39;operazione ha esito positivo, lo stato diventa &quot;Completato&quot; (segno di spunta verde ✓).
-         - In caso contrario, lo stato diventa &quot;Non riuscito&quot; (croce rossa ✗). Fai clic su **Scarica registri** per visualizzare i dettagli dell&#39;errore.
+e. Fare clic su **&quot;Salva&quot;** per creare la pipeline
 
-           ![Pipeline completata](/help/forms/assets/pipeline-suceess.png)
+![Pipeline di configurazione](/help/forms/assets/confirm-pipeline-1.png)
 
-      Ora puoi iniziare a testare le API di comunicazione di Forms. A scopo di test, puoi utilizzare Postman, curl o qualsiasi altro client REST per richiamare le API.
+### Passaggio 6: distribuire la configurazione
 
-### Passaggio 5: specifiche e test delle API
+Una volta creata la pipeline, distribuire la configurazione `api.yaml`:
 
-Ora che il tuo ambiente è configurato, puoi iniziare a testare le API di comunicazione di AEM Forms utilizzando [Interfaccia utente Swagger](#a-using-swagger-ui-for-api-testing) o a livello di programmazione sviluppando l&#39;applicazione NodeJS.
+#### 6.1 Dalla panoramica delle pipeline
 
-In questo esempio generiamo un PDF utilizzando le API di Document Services utilizzando il modello e il file XDP.
+1. Nella pagina Panoramica del programma, individua la scheda **Pipeline**
+2. Passa alla nuova pipeline di configurazione creata nell’elenco. Ad esempio, cerca il nome della pipeline creata (ad esempio, &quot;api-config-pipeline&quot;). Puoi visualizzare i dettagli della pipeline, compreso lo stato e l’ultima esecuzione.
 
-#### A. Utilizzo dell’interfaccia utente Swagger per i test API
+#### 6.2 Avviare l’implementazione**
 
-L&#39;interfaccia utente Swagger fornisce un&#39;interfaccia interattiva per testare le API senza scrivere codice.Utilizzare la funzionalità **Prova** per richiamare e testare l&#39;API di servizio documenti [generate PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+1. Fai clic sul pulsante **&quot;Build&quot;** (o sull&#39;icona di riproduzione ▶) accanto alla pipeline
+2. Conferma la distribuzione se richiesto e l’esecuzione della pipeline inizia
 
-1. Passa alla documentazione API
-   - API Forms: [Riferimento API Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-   - Document Services: [Riferimento API per Document Services](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-Apri la documentazione delle [API di Document Services](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) nel browser.
+![esegui la pipeline](/help/forms/assets/run-config-pipeline.png)
+
+#### 6.3 Verifica della corretta implementazione
+
+- Attendi il completamento della pipeline.
+   - Se l&#39;operazione ha esito positivo, lo stato diventa &quot;Completato&quot; (segno di spunta verde ✓).
+   - In caso contrario, lo stato diventa &quot;Non riuscito&quot; (croce rossa ✗). Fai clic su **Scarica registri** per visualizzare i dettagli dell&#39;errore.
+
+     ![Pipeline completata](/help/forms/assets/pipeline-suceess.png)
+
+Ora puoi iniziare a testare le API di comunicazione di Forms. A scopo di test, puoi utilizzare Postman, curl o qualsiasi altro client REST per richiamare le API.
+
+### Passaggio 7: specifiche e test delle API
+
+Ora che l’ambiente è configurato, puoi iniziare a testare le API di comunicazione di AEM Forms utilizzando l’interfaccia utente di Swagger o a livello di programmazione sviluppando l’applicazione NodeJS.
+
+>[!BEGINTABS]
+
+>[!TAB A. Utilizzo dell&#39;interfaccia utente Swagger per il test API]
+
+L&#39;interfaccia utente Swagger fornisce un&#39;interfaccia interattiva per testare le API senza scrivere codice.Utilizzare la funzionalità **Prova** per richiamare e testare l&#39;API di comunicazione Forms [genera PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
+
+1. Passa a [Riferimento API di comunicazione Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) e apri la [documentazione API di comunicazione Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) nel browser.
 2. Espandere la sezione **Generazione documento** e selezionare [Genera un modulo PDF compilabile da un modello XDP o PDF, facoltativamente con unione dati](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).
 3. Nel riquadro destro fare clic su **Prova**.
 
@@ -534,8 +484,8 @@ Apri la documentazione delle [API di Document Services](https://developer.adobe.
 
    | **Sezione** | **Parametro** | **Valore** |
    |--------------|---------------|------------|
-   | bucket | istanza AEM | Nome dell&#39;istanza di AEM senza il nome di dominio di Adobe (`.adobeaemcloud.com`). Utilizzare ad esempio `p43162-e177398` come bucket. |
-   | Protezione | Token Bearer | Utilizza il token di accesso dalle credenziali server-to-server OAuth di Adobe Developer Console Project |
+   | bucket | istanza AEM | Nome dell&#39;istanza di AEM senza il nome di dominio di Adobe (`.adobeaemcloud.com`). Utilizzare ad esempio `pXXXXX-eYYYYY` come bucket. |
+   | Protezione | Token Bearer | Utilizza il token di accesso [dalle credenziali server-to-server OAuth di Adobe Developer Console Project](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
    | Corpo testo | Modello | Carica un XDP per generare il modulo PDF. Ad esempio, puoi utilizzare [questo XDP](/help/forms/assets/ClosingForm.xdp) per generare un PDF. |
    | Corpo testo | dati | File XML facoltativo contenente i dati da unire al modello per generare un modulo PDF precompilato. È ad esempio possibile utilizzare [questo XML](/help/forms/assets/ClosingForm.xml) per generare un PDF. |
    | Parametri | X-Adobe-Accept-Experimental | 1 |
@@ -548,6 +498,7 @@ Apri la documentazione delle [API di Document Services](https://developer.adobe.
    - Se il codice di risposta è `200`, significa che il PDF è stato creato correttamente.
    - Se il codice di risposta è `400`, significa che i parametri di richiesta non sono validi o non sono corretti.
    - Se il codice di risposta è `500`, significa che si è verificato un errore interno del server.
+   - Se il codice di risposta è `403`, significa che si è verificato un errore di autorizzazione.
 
    In questo caso, il codice di risposta è `200`, significa che il PDF è stato generato correttamente:
 
@@ -557,15 +508,15 @@ Apri la documentazione delle [API di Document Services](https://developer.adobe.
 
    ![Visualizza PDF](/help/forms/assets/create-pdf.png)
 
->[!NOTE]
->
-> A scopo di test, puoi anche utilizzare [Postman](https://www.postman.com/), [curl](https://curl.se/) o qualsiasi altro client REST per richiamare le API di AEM.
+   >[!NOTE]
+   >
+   > A scopo di test, puoi anche utilizzare [Postman](https://www.postman.com/), [curl](https://curl.se/) o qualsiasi altro client REST per richiamare le API di AEM.
 
-#### B. Programmaticamente sviluppando l’applicazione NodeJS
+>[!TAB  B. A livello di programmazione sviluppando l&#39;applicazione NodeJS]
 
 Sviluppa un&#39;applicazione Node.js per generare un modulo PDF compilabile da un modello **XDP** e un file di dati **XML** utilizzando l&#39;API **Document Services**
 
-##### Prerequisiti
+**Prerequisiti**
 
 - Node.js installato nel sistema
 - Istanza AEM as a Cloud Service attiva
@@ -575,7 +526,7 @@ Sviluppa un&#39;applicazione Node.js per generare un modulo PDF compilabile da u
 
 Per sviluppare l’applicazione Node.js, segui lo sviluppo passo passo:
 
-##### Passaggio 1: creare un nuovo progetto Node.js
+**Passaggio 1: creare un nuovo progetto Node.js**
 
 Apri il comando/terminale ed esegui i seguenti comandi:
 
@@ -590,7 +541,7 @@ npm init -y
 
 ![Crea nuovo progetto js del nodo](/help/forms/assets/api-1.png)
 
-##### Passaggio 2: installare le dipendenze richieste
+**Passaggio 2: Installare Le Dipendenze Richieste**
 
 Installa le librerie **node-fetch**, **dotenv** e **form-data** per effettuare richieste HTTP, leggere le variabili di ambiente e gestire rispettivamente i dati del modulo.
 
@@ -602,7 +553,7 @@ npm install form-data
 
 ![installa dipendenze npm](/help/forms/assets/api-2.png)
 
-##### Passaggio 3: aggiornare package.json
+**Passaggio 3: aggiornare package.json**
 
 1. Apri il comando/terminale ed esegui il comando:
 
@@ -627,7 +578,7 @@ npm install form-data
 
    ![aggiorna file pacchetto](/help/forms/assets/api-4.png)
 
-##### Passaggio 4: creare un file .env
+**Passaggio 4: creare un file .env**
 
 1. Creare un file .env a livello di directory principale di un progetto
 2. Aggiungi la seguente configurazione e sostituisci i segnaposto con i valori effettivi delle credenziali server-to-server OAuth del progetto ADC.
@@ -644,7 +595,7 @@ npm install form-data
    >
    > È possibile copiare `CLIENT_ID`, `CLIENT_SECRET` e `SCOPES` dal progetto Adobe Developer Console.
 
-##### Passaggio 5: creare src/index.js
+**Passaggio 5: creare src/index.js**
 
 1. Crea il file `index.js` a livello di directory principale del progetto
 2. Aggiungi il seguente codice e sostituisci i segnaposto con i valori effettivi:
@@ -739,7 +690,7 @@ generatePDF();
 
 ![crea index.js](/help/forms/assets/api-6.png)
 
-##### Passaggio 6: eseguire l&#39;applicazione
+**Passaggio 6: eseguire l&#39;applicazione**
 
 ```bash
 node src/index.js
@@ -750,6 +701,10 @@ node src/index.js
 PDF creato nella cartella `demo-nodejs-generate-pdf`. Passare alla cartella per trovare il file generato denominato `generatedForm.pdf`.
 
 ![visualizza pdf creato](/help/forms/assets/api-8.png)
+
+![Visualizza PDF](/help/forms/assets/create-pdf.png)
+
+>[!ENDTABS]
 
 Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzarlo.
 
@@ -762,13 +717,11 @@ Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzar
 **Sintomi:**
 
 - Le richieste API restituiscono `403 Forbidden`
-- Messaggio di errore: *Accesso negato* o *autorizzazioni insufficienti*
-- Si verifica anche con un token di accesso valido
+- Messaggio di errore: *Accesso non autorizzato*
 
-**Cause possibili:**
+**Possibile causa:**
 
-- Autorizzazioni insufficienti nel profilo di prodotto collegato alle credenziali server-to-server OAuth
-- Il gruppo di utenti del servizio in AEM Author non dispone delle autorizzazioni necessarie per i percorsi di contenuto richiesti
+- ID client non registrato nella configurazione `api.yaml` dell&#39;istanza AEM
 
 #### Problema 2: errore 401 non autorizzato
 
@@ -781,7 +734,6 @@ Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzar
 
 - Token di accesso scaduto (valido solo per 24 ore)
 - ID client e segreto client non corretti o non corrispondenti
-- Intestazioni di autenticazione mancanti o non valide nella richiesta API
 
 #### Problema 3: errore 404 non trovato
 
@@ -790,23 +742,11 @@ Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzar
 - Le richieste API restituiscono `404 Not Found`
 - Messaggio di errore: *Risorsa non trovata* o *Endpoint API non trovato*
 
-**Cause possibili:**
-
-- ID client non registrato nella configurazione `api.yaml` dell&#39;istanza AEM
-- Parametro bucket errato (non corrisponde all’identificatore dell’istanza di AEM)
-- ID risorsa (modulo o risorsa) non valido o inesistente
-
-#### Problema 4: opzione di autenticazione server-to-server non disponibile
-
-**Sintomi:**
-
-- Opzione server-to-server OAuth mancante o disabilitata in Adobe Developer Console
-
 **Possibile causa:**
 
-- L&#39;utente che crea l&#39;integrazione non viene aggiunto come **Sviluppatore** nel profilo di prodotto associato
+- Parametro bucket errato (non corrisponde all’identificatore dell’istanza di AEM)
 
-#### Problema 5: distribuzione della pipeline non riuscita
+#### Problema 4: distribuzione della pipeline non riuscita
 
 **Sintomi:**
 
@@ -818,8 +758,30 @@ Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzar
 - Sintassi YAML non valida (problemi di rientro, virgolette o formato di matrice)
 - `api.yaml` inserito in una directory non corretta
 - ID client errato o non corretto nella configurazione
+- Segreto client non valido
 
+#### Problema 5: mancata esecuzione delle API di comunicazione di Forms
+
+**Sintomi:**
+
+- Le richieste API restituiscono errori che indicano funzioni non supportate o non disponibili.
+- La generazione di PDF tramite XDP e XML non funziona.
+- L’implementazione della pipeline viene completata correttamente, ma le chiamate API di runtime non riescono.
+
+**Possibile causa:**
+
+Nell’ambiente AEM è in esecuzione una versione rilasciata prima dell’introduzione o del supporto delle API di comunicazione Forms.
+Per aggiornare l&#39;ambiente AEM, fare riferimento alla sezione [Aggiorna istanza AEM](#update-aem-instance).
+
+## Aggiorna istanza AEM
+
+Per aggiornare l’istanza di AEM per individuare i dettagli dell’ambiente:
+
+1. Seleziona l&#39;icona `ellipsis`(...) accanto al nome dell&#39;ambiente e fai clic su **Aggiorna**
+2. Fai clic sul pulsante **Invia** ed esegui la pipeline full stack suggerita.
+
+   ![Aggiorna ambiente](/help/forms/assets/update-env.png)
 
 ## Articoli correlati
 
-Per informazioni su come impostare l&#39;ambiente per Batch (API asincrone), vedere [Elaborazione batch di comunicazioni AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+- Per informazioni su come impostare l&#39;ambiente per Batch (API asincrone), vedere [Elaborazione batch di comunicazioni AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
