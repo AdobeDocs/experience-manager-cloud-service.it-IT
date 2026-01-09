@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 19%
 La sezione seguente illustra le note di rilascio tecnico per la versione di manutenzione corrente di Experience Manager as a Cloud Service.
 
 ## Versione 23862 {#23862}
+
+>[!CAUTION]
+>
+> Il 23862 sulla versione è stato reso privato. Presto verrà fornita una nuova versione di manutenzione.
 
 Di seguito sono riepilogati i miglioramenti continui per la versione di manutenzione 23862, rilasciata pubblicamente l’mercoledì 23 dicembre 2025. La versione di manutenzione precedente era la 23482.
 
