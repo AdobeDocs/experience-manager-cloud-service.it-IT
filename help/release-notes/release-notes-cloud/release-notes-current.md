@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
+source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 50%
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -192,7 +192,7 @@ OSGi properties:
 
 #### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Adobe ha aggiornato gli ambienti **Stage** e **Produzione** al runtime **Java 21** a prestazioni superiori il 14 ottobre 2025. A partire dal **fine gennaio**, né il SDK di AEM Cloud Service né alcun ambiente cloud funzioneranno con Java 11 runtime.
+Adobe ha aggiornato gli ambienti **Stage** e **Produzione** al runtime **Java 21** a prestazioni superiori il 14 ottobre 2025. A partire dal **9 febbraio**, né il SDK di AEM Cloud Service né gli ambienti cloud funzioneranno con Java 11 runtime.
 
 >[!NOTE]
 >
