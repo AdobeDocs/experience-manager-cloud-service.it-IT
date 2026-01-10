@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '817'
 ht-degree: 3%
 
 ---
@@ -22,14 +22,14 @@ OAuth Server-to-Server Authentication consente l&#39;accesso sicuro e basato su 
 
 Prima di iniziare, accertati di soddisfare i seguenti prerequisiti:
 
-* Assicurati di avere [accesso a Adobe Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifico per l&#39;ambiente in uso.
+* Assicurati di avere [accesso a Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifico per l&#39;ambiente in uso.
 * [Assegnare il ruolo Amministratore di sistema o Sviluppatore in Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) per abilitare l&#39;accesso a Adobe Developer Console.
 
 ## Come si genera un token di accesso utilizzando l’autenticazione server-to-server di OAuth?
 
 Segui i passaggi seguenti per generare un token di accesso dalla console Adobe Developer ed effettua la prima chiamata API tramite l’autenticazione server-to-server OAuth.
 
-### Configurazione del progetto Adobe Developer Console
+### &#x200B;1. Configurazione del progetto Adobe Developer Console
 
 1. Passa a [Adobe Developer Console](https://developer.adobe.com/console)
 2. Accedi con il tuo Adobe ID
@@ -66,7 +66,7 @@ Segui i passaggi seguenti per generare un token di accesso dalla console Adobe D
 
 >[!ENDTABS]
 
-### Aggiungere API Forms
+### &#x200B;2. Aggiungere API Forms
 
 Aggiungi API Forms in base a ciò che desideri fare:
 
@@ -109,12 +109,10 @@ Aggiungi API Forms in base a ciò che desideri fare:
 
 >[!ENDTABS]
 
->[!NOTE]
->
-> Puoi anche aggiungere l&#39;API e il metodo di autenticazione al progetto esistente facendo clic su **Aggiungi al progetto** > **API**\
-> ![Aggiungi API al progetto esistente](/help/forms/assets/add-api-existing-project.png)
+Puoi anche aggiungere l&#39;API e il metodo di autenticazione al progetto esistente facendo clic su **Aggiungi al progetto** > **API**\
+![Aggiungi API al progetto esistente](/help/forms/assets/add-api-existing-project.png)
 
-### Aggiungi profilo prodotto
+### &#x200B;3. Aggiungi profilo prodotto
 
 Il profilo di prodotto fornisce le autorizzazioni (o autorizzazioni) per le credenziali di accesso alle risorse di AEM.
 
@@ -128,7 +126,7 @@ Il profilo di prodotto fornisce le autorizzazioni (o autorizzazioni) per le cred
 
    * **Ambiente XXX** - identifica l&#39;ID ambiente specifico all&#39;interno di tale programma
 
-   >
+   >[!NOTE]
    >
    > I profili di prodotto sono legati a un’istanza AEM specifica (programma + ambiente). Scegli sempre il profilo che corrisponde all’URL dell’istanza.
 
@@ -136,7 +134,7 @@ Il profilo di prodotto fornisce le autorizzazioni (o autorizzazioni) per le cred
 
    ![Seleziona configurazione progetto](/help/forms/assets/adc-add-product-profile.png)
 
-### Generare e salvare le credenziali
+### &#x200B;4. Generare e salvare le credenziali
 
 1. Passare al progetto in Adobe Developer Console
 2. Fai clic sulle credenziali da server a server **OAuth**
@@ -156,7 +154,7 @@ Il profilo di prodotto fornisce le autorizzazioni (o autorizzazioni) per le cred
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### Generazione token di accesso
+### &#x200B;5. Generazione token di accesso
 
 Genera il token di accesso manualmente o a livello di programmazione:
 
@@ -182,7 +180,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
@@ -221,7 +219,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 Ora puoi utilizzare il token di accesso generato per effettuare chiamate API per ambienti di sviluppo, stage o produzione.
 
->[!NOTE]
+>
 >
 > Per ulteriori informazioni sull&#39;implementazione server-to-server di OAuth per generare il token di accesso ed effettuare chiamate API, [fai clic qui](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 

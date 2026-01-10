@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso archivio Git**
 
@@ -112,7 +112,7 @@ Puoi visualizzare o accedere ai dettagli dell’ambiente AEM Cloud Service utili
 
 >[!ENDTABS]
 
-#### &#x200B;4. Trovare L’Endpoint Di AEM Forms
+#### 1.4. Trovare l’endpoint di AEM Forms
 
 Dalla pagina dei dettagli **Ambiente**, prendi nota dell&#39;istanza dell&#39;URL di AEM.
 
@@ -259,7 +259,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
@@ -369,6 +369,11 @@ Di seguito vengono illustrati i parametri di configurazione:
 
 ### Passaggio 5: configurare la pipeline di configurazione
 
+#### 5.1 Accedere ad Adobe Cloud Manager
+
+1. Passa a [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Accedi con il tuo Adobe ID
+
 #### 5.1 Individuare la scheda Pipeline
 
 1. Individua la scheda **Pipeline** nella pagina Panoramica del programma
@@ -441,7 +446,7 @@ e. Fare clic su **&quot;Salva&quot;** per creare la pipeline
 
 ### Passaggio 6: distribuire la configurazione
 
-Una volta creata la pipeline, distribuire la configurazione `api.yaml`:
+Una volta creata la pipeline, distribuire la configurazione `api.yaml`
 
 #### 6.1 Dalla panoramica delle pipeline
 
