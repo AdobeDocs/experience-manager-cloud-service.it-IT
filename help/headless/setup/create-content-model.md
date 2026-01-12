@@ -4,9 +4,9 @@ description: Definisci la struttura del contenuto da creare e distribuire utiliz
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 50%
 
 ---
@@ -19,7 +19,7 @@ Definisci la struttura del contenuto da creare e distribuire utilizzando le funz
 
 [Dopo aver creato una configurazione](create-configuration.md), è possibile utilizzarla per creare modelli per frammenti di contenuto.
 
-I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto da creare e gestire in AEM. Servono come una sorta di impalcatura per i tuoi contenuti. Nella creazione di contenuti, questi vengono selezionati dagli autori in base ai modelli per frammenti di contenuto da te definiti, utilizzati come riferimento.
+I modelli per frammenti di contenuto definiscono la struttura dei dati e del contenuto che puoi creare e gestire in AEM. Servono come una sorta di impalcatura per i tuoi contenuti. Nella creazione di contenuti, questi vengono selezionati dagli autori in base ai modelli per frammenti di contenuto da te definiti, utilizzati come riferimento.
 
 ## Creare un modello per frammenti di contenuto {#how-to-create-a-content-fragment-model}
 

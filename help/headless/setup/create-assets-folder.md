@@ -4,10 +4,10 @@ description: Utilizza i modelli per frammenti di contenuto di AEM per definire l
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 77%
+source-wordcount: '267'
+ht-degree: 72%
 
 ---
 
@@ -19,7 +19,7 @@ Utilizza i modelli per frammenti di contenuto di AEM per definire la struttura d
 
 [Dopo aver creato i modelli per frammenti di contenuto](create-content-model.md) che definiscono la struttura per i futuri frammenti di contenuto, è ora di creare alcuni frammenti.
 
-Tuttavia, è necessario innanzitutto creare una cartella di risorse in cui memorizzarli.
+Tuttavia, devi prima creare una cartella di risorse in cui memorizzarle.
 
 Le cartelle di risorse vengono utilizzate per [organizzare le risorse di contenuti tradizionali](/help/assets/manage-digital-assets.md) come immagini e video, insieme ai frammenti di contenuto.
 
