@@ -3,18 +3,15 @@ title: Come si configurano le API sincrone di Forms Communications?
 description: Configurare l’ambiente di sviluppo per le API sincrone di comunicazioni interattive per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 1%
 
 ---
 
 
-# Configurare l’accesso server-to-server OAuth per le API sincrone di AEM Forms Communications
+# Configurare l’accesso server-to-server OAuth per le API di comunicazione AEM Forms
 
 Questa guida fornisce istruzioni per configurare e richiamare le API sincrone di AEM Forms Communications a cui si accede tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
 
@@ -22,23 +19,28 @@ Questa guida fornisce istruzioni per configurare e richiamare le API sincrone di
 
 Per configurare un ambiente per l’esecuzione e il test delle API di comunicazione di AEM Forms, assicurati di disporre dei seguenti elementi:
 
+### Aggiornare l’ambiente AEM as a Cloud Service
+
+* [AEM versione 2024.10.18459.20241031T210302Z o successiva](#update-aem-instance)
+* Aggiornare i profili di prodotto se l’ambiente è stato creato prima di novembre 2024
+
 ### Accesso e autorizzazioni
 
 Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari prima di iniziare a configurare le API di comunicazione.
 
 **Autorizzazioni utente e ruolo**
 
-- Ruolo Sviluppatore assegnato in Adobe Admin Console
-- Autorizzazione per la creazione di progetti in Adobe Developer Console
+* Ruolo Sviluppatore assegnato in Adobe Admin Console
+* Autorizzazione per la creazione di progetti in Adobe Developer Console
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso archivio Git**
 
-- Accesso all’archivio Git di Cloud Manager
-- Credenziali Git per la clonazione e il push delle modifiche
+* Accesso all’archivio Git di Cloud Manager
+* Credenziali Git per la clonazione e il push delle modifiche
 
 >[!NOTE]
 >
@@ -46,8 +48,8 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 ### Generare token di accesso utilizzando Adobe Developer Console (ADC)
 
-- Genera il token di accesso tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
-- Recuperare l’ID client da Adobe Developer Console
+* Genera il token di accesso tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
+* Recuperare l’ID client da Adobe Developer Console
 
 >[!NOTE]
 >
@@ -55,11 +57,11 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 ### Strumenti di sviluppo
 
-- **Node.js** per eseguire applicazioni di esempio
-- Versione più recente di **Git**
-- Accesso a **Terminal/Riga di comando**
-- **Editor di testo o IDE** per la modifica dei file di configurazione (codice VS, IntelliJ, ecc.)
-- **Postman** o strumento simile per test API
+* **Node.js** per eseguire applicazioni di esempio
+* Versione più recente di **Git**
+* Accesso a **Terminal/Riga di comando**
+* **Editor di testo o IDE** per la modifica dei file di configurazione (codice VS, IntelliJ, ecc.)
+* **Postman** o strumento simile per test API
 
 >[!NOTE]
 >
@@ -259,13 +261,13 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
-- ID client
-- Segreto client
-- Ambiti (in genere: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+* ID client
+* Segreto client
+* Ambiti (in genere: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Endpoint token:**
 
@@ -340,16 +342,16 @@ Per abilitare l’ID client del progetto ADC per comunicare con l’istanza di A
 
 Di seguito vengono illustrati i parametri di configurazione:
 
-- **tipo**: sempre impostato su `"API"` (identifica questa come configurazione API)
-- **versione**: versione API, in genere `"1"` o `"1.0"`
-- **envTypes**: Array di tipi di ambiente in cui si applica questa configurazione
-   - `["dev"]` - Solo ambienti di sviluppo
-   - `["stage"]` - Solo ambienti di staging
-   - `["prod"]` - Solo ambienti di produzione
-- **allowedClientIDs**: gli ID client possono accedere alla tua istanza di AEM
-   - **author**: ID client per il livello di authoring
-   - **publish**: ID client per il livello di pubblicazione
-   - **anteprima**: ID client per il livello di anteprima
+* **tipo**: sempre impostato su `"API"` (identifica questa come configurazione API)
+* **versione**: versione API, in genere `"1"` o `"1.0"`
+* **envTypes**: Array di tipi di ambiente in cui si applica questa configurazione
+   * `["dev"]` - Solo ambienti di sviluppo
+   * `["stage"]` - Solo ambienti di staging
+   * `["prod"]` - Solo ambienti di produzione
+* **allowedClientIDs**: gli ID client possono accedere alla tua istanza di AEM
+   * **author**: ID client per il livello di authoring
+   * **publish**: ID client per il livello di pubblicazione
+   * **anteprima**: ID client per il livello di anteprima
 
 ![Aggiunta del file di configurazione](/help/forms/assets/create-api-yaml-file.png)
 
@@ -383,9 +385,9 @@ Di seguito vengono illustrati i parametri di configurazione:
 
 #### 5.2 Seleziona tipo di pipeline
 
-- **Per Gli Ambienti Di Sviluppo**: Selezionare **&quot;Aggiungi Pipeline Non Di Produzione&quot;**. Le pipeline non di produzione sono per ambienti di sviluppo e stage
+* **Per Gli Ambienti Di Sviluppo**: Selezionare **&quot;Aggiungi Pipeline Non Di Produzione&quot;**. Le pipeline non di produzione sono per ambienti di sviluppo e stage
 
-- **Per Gli Ambienti Di Produzione**: Selezionare **&quot;Aggiungi Pipeline Di Produzione&quot;**. Le pipeline di produzione richiedono approvazioni aggiuntive
+* **Per Gli Ambienti Di Produzione**: Selezionare **&quot;Aggiungi Pipeline Di Produzione&quot;**. Le pipeline di produzione richiedono approvazioni aggiuntive
 
 >[!NOTE]
 >
@@ -397,22 +399,22 @@ Nella scheda **Configurazione**:
 
 a. **Tipo di pipeline**
 
-- Seleziona **&quot;Pipeline di distribuzione&quot;**
+* Seleziona **&quot;Pipeline di distribuzione&quot;**
 
 b. **Nome pipeline**
 
-- Specifica un nome descrittivo. Ad esempio, assegna alla pipeline il nome `api-config-pipieline`
+* Specifica un nome descrittivo. Ad esempio, assegna alla pipeline il nome `api-config-pipieline`
 
 c. **Trigger distribuzione**
 
-- **Manuale**: distribuisci solo quando attivato manualmente (consigliato per la configurazione iniziale)
-- **Su modifiche Git**: distribuzione automatica quando le modifiche vengono inviate al ramo
+* **Manuale**: distribuisci solo quando attivato manualmente (consigliato per la configurazione iniziale)
+* **Su modifiche Git**: distribuzione automatica quando le modifiche vengono inviate al ramo
 
 d. **Comportamento in caso di errori di metriche importanti**
 
-- **Chiedi ogni volta**: richiede un&#39;azione in caso di errori (impostazione predefinita)
-- **Genera errore immediatamente**: genera automaticamente un errore di pipeline in caso di errori di metrica
-- **Continua immediatamente**: continua nonostante gli errori
+* **Chiedi ogni volta**: richiede un&#39;azione in caso di errori (impostazione predefinita)
+* **Genera errore immediatamente**: genera automaticamente un errore di pipeline in caso di errori di metrica
+* **Continua immediatamente**: continua nonostante gli errori
 
 e. Fare clic su **&quot;Continua&quot;** per passare alla scheda **Codice Source**
 
@@ -424,21 +426,21 @@ Nella scheda **Codice Source**:
 
 a. **Tipo di distribuzione**
 
-- Seleziona **&quot;Distribuzione di destinazione&quot;**
+* Seleziona **&quot;Distribuzione di destinazione&quot;**
 
 b. **Opzioni di distribuzione**
 
-- Selezionare **&quot;Config&quot;** (distribuire solo i file di configurazione). Indica a Cloud Manager che si tratta di una distribuzione di configurazione.
+* Selezionare **&quot;Config&quot;** (distribuire solo i file di configurazione). Indica a Cloud Manager che si tratta di una distribuzione di configurazione.
 
 c. **Seleziona ambiente di distribuzione idoneo**
 
-- Scegli l’ambiente in cui distribuire la configurazione. In questo caso, si tratta di un ambiente `dev`.
+* Scegli l’ambiente in cui distribuire la configurazione. In questo caso, si tratta di un ambiente `dev`.
 
 d. **Definisci dettagli codice Source**
 
-- **Archivio**: selezionare l&#39;archivio contenente il file `api.yaml`. Selezionare ad esempio l&#39;archivio `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
-- **Ramo Git**: seleziona il ramo. Ad esempio, in questo caso il nostro codice viene distribuito nel ramo `main`.
-- **Posizione codice**: immettere il percorso della directory `config`. Poiché `api.yaml` si trova nella cartella principale `config`, immettere `/config`
+* **Archivio**: selezionare l&#39;archivio contenente il file `api.yaml`. Selezionare ad esempio l&#39;archivio `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
+* **Ramo Git**: seleziona il ramo. Ad esempio, in questo caso il nostro codice viene distribuito nel ramo `main`.
+* **Posizione codice**: immettere il percorso della directory `config`. Poiché `api.yaml` si trova nella cartella principale `config`, immettere `/config`
 
 e. Fare clic su **&quot;Salva&quot;** per creare la pipeline
 
@@ -462,9 +464,9 @@ Una volta creata la pipeline, distribuire la configurazione `api.yaml`
 
 #### 6.3 Verifica della corretta implementazione
 
-- Attendi il completamento della pipeline.
-   - Se l&#39;operazione ha esito positivo, lo stato diventa &quot;Completato&quot; (segno di spunta verde ✓).
-   - In caso contrario, lo stato diventa &quot;Non riuscito&quot; (croce rossa ✗). Fai clic su **Scarica registri** per visualizzare i dettagli dell&#39;errore.
+* Attendi il completamento della pipeline.
+   * Se l&#39;operazione ha esito positivo, lo stato diventa &quot;Completato&quot; (segno di spunta verde ✓).
+   * In caso contrario, lo stato diventa &quot;Non riuscito&quot; (croce rossa ✗). Fai clic su **Scarica registri** per visualizzare i dettagli dell&#39;errore.
 
      ![Pipeline completata](/help/forms/assets/pipeline-suceess.png)
 
@@ -500,10 +502,10 @@ L&#39;interfaccia utente Swagger fornisce un&#39;interfaccia interattiva per tes
    ![Invia API](/help/forms/assets/api-send.png)
 
 6. Controlla la risposta nella scheda **Risposta**:
-   - Se il codice di risposta è `200`, significa che il PDF è stato creato correttamente.
-   - Se il codice di risposta è `400`, significa che i parametri di richiesta non sono validi o non sono corretti.
-   - Se il codice di risposta è `500`, significa che si è verificato un errore interno del server.
-   - Se il codice di risposta è `403`, significa che si è verificato un errore di autorizzazione.
+   * Se il codice di risposta è `200`, significa che il PDF è stato creato correttamente.
+   * Se il codice di risposta è `400`, significa che i parametri di richiesta non sono validi o non sono corretti.
+   * Se il codice di risposta è `500`, significa che si è verificato un errore interno del server.
+   * Se il codice di risposta è `403`, significa che si è verificato un errore di autorizzazione.
 
    In questo caso, il codice di risposta è `200`, significa che il PDF è stato generato correttamente:
 
@@ -523,11 +525,11 @@ Sviluppa un&#39;applicazione Node.js per generare un modulo PDF compilabile da u
 
 **Prerequisiti**
 
-- Node.js installato nel sistema
-- Istanza AEM as a Cloud Service attiva
-- Token Bearer per l’autenticazione API da Adobe Developer Console
-- File XDP di esempio: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- File XML di esempio: [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* Node.js installato nel sistema
+* Istanza AEM as a Cloud Service attiva
+* Token Bearer per l’autenticazione API da Adobe Developer Console
+* File XDP di esempio: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* File XML di esempio: [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 Per sviluppare l’applicazione Node.js, segui lo sviluppo passo passo:
 
@@ -721,57 +723,57 @@ Puoi aprire il [PDF](/help/forms/assets/create-pdf.png) generato per visualizzar
 
 **Sintomi:**
 
-- Le richieste API restituiscono `403 Forbidden`
-- Messaggio di errore: *Accesso non autorizzato*
+* Le richieste API restituiscono `403 Forbidden`
+* Messaggio di errore: *Accesso non autorizzato*
 
 **Possibile causa:**
 
-- ID client non registrato nella configurazione `api.yaml` dell&#39;istanza AEM
+* ID client non registrato nella configurazione `api.yaml` dell&#39;istanza AEM
 
 #### Problema 2: errore 401 non autorizzato
 
 **Sintomi:**
 
-- Le richieste API restituiscono `401 Unauthorized`
-- Messaggio di errore: *Token non valido o scaduto*
+* Le richieste API restituiscono `401 Unauthorized`
+* Messaggio di errore: *Token non valido o scaduto*
 
 **Cause possibili:**
 
-- Token di accesso scaduto (valido solo per 24 ore)
-- ID client e segreto client non corretti o non corrispondenti
+* Token di accesso scaduto (valido solo per 24 ore)
+* ID client e segreto client non corretti o non corrispondenti
 
 #### Problema 3: errore 404 non trovato
 
 **Sintomi:**
 
-- Le richieste API restituiscono `404 Not Found`
-- Messaggio di errore: *Risorsa non trovata* o *Endpoint API non trovato*
+* Le richieste API restituiscono `404 Not Found`
+* Messaggio di errore: *Risorsa non trovata* o *Endpoint API non trovato*
 
 **Possibile causa:**
 
-- Parametro bucket errato (non corrisponde all’identificatore dell’istanza di AEM)
+* Parametro bucket errato (non corrisponde all’identificatore dell’istanza di AEM)
 
 #### Problema 4: distribuzione della pipeline non riuscita
 
 **Sintomi:**
 
-- L’esecuzione della pipeline di configurazione non riesce
-- I registri di distribuzione mostrano gli errori relativi a `api.yaml`
+* L’esecuzione della pipeline di configurazione non riesce
+* I registri di distribuzione mostrano gli errori relativi a `api.yaml`
 
 **Cause possibili:**
 
-- Sintassi YAML non valida (problemi di rientro, virgolette o formato di matrice)
-- `api.yaml` inserito in una directory non corretta
-- ID client errato o non corretto nella configurazione
-- Segreto client non valido
+* Sintassi YAML non valida (problemi di rientro, virgolette o formato di matrice)
+* `api.yaml` inserito in una directory non corretta
+* ID client errato o non corretto nella configurazione
+* Segreto client non valido
 
 #### Problema 5: mancata esecuzione delle API di comunicazione di Forms
 
 **Sintomi:**
 
-- Le richieste API restituiscono errori che indicano funzioni non supportate o non disponibili.
-- La generazione di PDF tramite XDP e XML non funziona.
-- L’implementazione della pipeline viene completata correttamente, ma le chiamate API di runtime non riescono.
+* Le richieste API restituiscono errori che indicano funzioni non supportate o non disponibili.
+* La generazione di PDF tramite XDP e XML non funziona.
+* L’implementazione della pipeline viene completata correttamente, ma le chiamate API di runtime non riescono.
 
 **Possibile causa:**
 
@@ -789,4 +791,4 @@ Per aggiornare l’istanza di AEM per individuare i dettagli dell’ambiente:
 
 ## Articoli correlati
 
-- Per informazioni su come impostare l&#39;ambiente per Batch (API asincrone), vedere [Elaborazione batch di comunicazioni AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+* Per informazioni su come impostare l&#39;ambiente per Batch (API asincrone), vedere [Elaborazione batch di comunicazioni AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
