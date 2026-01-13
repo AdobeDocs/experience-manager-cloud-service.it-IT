@@ -3,16 +3,16 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
+source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1295'
 ht-degree: 2%
 
 ---
 
+
 # Gestisci raccolte in [!DNL Content Hub] {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Gestire le raccolte](assets/manage-collection.png)
 
 Una raccolta fa riferimento a un insieme di risorse che possono essere condivise tra gli utenti. Una raccolta può includere risorse da posizioni diverse mantenendo al contempo la loro integrità referenziale.
@@ -196,8 +196,3 @@ Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per
    Le raccolte contrassegnate come Preferiti ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
 
    ![Rimuovi raccolta come preferita](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[Blocca o Rimuovi puntina raccolta](#pin-unpin-collection) e [Contrassegna raccolte come Preferite](#favorite-collection) sono funzionalità di disponibilità limitate. Puoi [creare e inviare](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) un caso di assistenza clienti Adobe per abilitarlo per la distribuzione.
-
