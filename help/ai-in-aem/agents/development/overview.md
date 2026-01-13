@@ -3,7 +3,7 @@ title: Panoramica dell’agente di sviluppo
 description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ L’agente di sviluppo consente agli sviluppatori e agli amministratori di AEM d
 
 Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a risolvere i problemi dei passaggi di build non riusciti suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ Puoi accedere all’agente di sviluppo tramite l’Assistente AI presente nelle 
 
 Il processo di risoluzione dei problemi della pipeline dell’agente di sviluppo richiede il ruolo Cloud Manager - Sviluppatore o il ruolo Cloud Manager - Responsabile del programma.
 
-
-
 ## Prompt di esempio {#sample-prompts}
 
 | Prompt | Risultato |
@@ -93,4 +91,3 @@ La risoluzione dei problemi della pipeline funziona nella fase di build della pi
 Consulta [Registri di accesso e download](/help/implementing/cloud-manager/manage-logs.md).
 
 La risoluzione dei problemi delle pipeline non è supportata per i programmi che utilizzano BYOGIT (Bring Your Own Git).
-
