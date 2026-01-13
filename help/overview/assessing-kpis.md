@@ -1,13 +1,13 @@
 ---
-title: Accesso ai KPI
-description: Scopri come accedere ai KPI e definire il processo di reporting
+title: Valutazione dei KPI
+description: Scopri come valutare i KPI e definire il processo di reporting
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ In uno studio del 2018, IDC ha analizzato il valore commerciale che diverse gran
 
 Per ottenere gli stessi notevoli vantaggi, è necessario avere chiari gli obiettivi per l’implementazione di Experience Manager. e avere dei KPI che aiutino tutti a rimanere concentrati su questi obiettivi.
 
-## Accesso ai KPI
+## Valutazione dei KPI
 
 Nel valutare i KPI, assicurati che:
 
