@@ -4,10 +4,10 @@ description: Note sulla versione 2021.11.0 di [!DNL Adobe Experience Manager] as
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 96%
+source-wordcount: '1059'
+ht-degree: 94%
 
 ---
 
@@ -36,9 +36,9 @@ Dai un’occhiata al video [Panoramica sulla versione di dicembre 2021](https://
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-* Il ritaglio e il campione avanzato dell’immagine di Dynamic Media è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* Il ritaglio e il campione avanzato dell’immagine di Dynamic Media è ora basato sui servizi AI di Adobe più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
-### Nuove funzioni nel [!DNL Assets] canale prerelease {#assets-prerelease-features}
+### Nuove funzioni nel canale pre-release di [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] - È ora possibile utilizzare l’interfaccia Dynamic Media di AEM per configurare le impostazioni generali e le impostazioni di pubblicazione anziché passare attraverso l’applicazione desktop Dynamic Media Classic.
 
@@ -52,7 +52,7 @@ Dai un’occhiata al video [Panoramica sulla versione di dicembre 2021](https://
 
 * **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
-### Nuove funzioni disponibili in [!DNL Forms] canale prerelease {#prerelease-features-forms}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=it) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che permettono di:
 
@@ -73,7 +73,7 @@ Dai un’occhiata al video [Panoramica sulla versione di dicembre 2021](https://
 
 * Gli autori possono creare consigli di prodotti Commerce ad hoc utilizzando altri tipi di consigli
 
-* Supporto per le carte regalo in AEM Storefront
+* Supporto per le carte regalo nel progetto di vetrina digitale di AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -89,7 +89,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 * Gli utenti possono ora sfruttare le nuove pipeline Front End per distribuire esclusivamente il codice front-end in modo accelerato. Consulta [Pipeline front-end di Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) per ulteriori informazioni.
 
   >[!IMPORTANT]
-  >Per utilizzare le nuove pipeline front-end è necessario utilizzare la versione `2021.10.5933.20211012T154732Z` o successiva dell&#39;AEM.
+  >Per utilizzare le nuove pipeline front-end è necessario utilizzare AEM versione `2021.10.5933.20211012T154732Z` o successiva.
 
 * La durata della pipeline di qualità del codice viene notevolmente ridotta, eseguendo l’analisi del codice in modo più efficiente senza la necessità di creare un’immagine intera AEM. Questa modifica verrà implementata progressivamente nelle settimane successive al rilascio.
 
@@ -115,7 +115,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Correzioni di bug {#bug-fixes-nov}
 
-* Alcune configurazioni della versione non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’arresto del contenitore della versione.
+* Alcune configurazioni della versione non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’interruzione del contenitore della versione.
 
 * L’API di Pipeline PATCH non riesce se la fase di distribuzione non esiste.
 

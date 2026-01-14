@@ -4,10 +4,10 @@ description: Introduzione all’architettura di Adobe Experience Manager as a Cl
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
-source-wordcount: '2711'
-ht-degree: 100%
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+workflow-type: tm+mt
+source-wordcount: '2710'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="Introduzione all’architettura di AEM as a Cloud Service"
 >abstract="In questa scheda puoi visualizzare la nuova architettura di AEM as a Cloud Service e comprendere le modifiche apportate. Per AEM è stata creata un’architettura dinamica con un numero variabile di immagini, pertanto è importante prendere il tempo necessario per comprenderne l’architettura cloud."
->additional-url="https://video.tv.adobe.com/v/346182?captions=ita" text="Panoramica dell’architettura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Panoramica dell’architettura"
 
 Adobe Experience Manager (AEM) as a Cloud Service offre una serie di servizi componibili per la creazione e la gestione di esperienze ad alto impatto.
 
@@ -60,7 +60,7 @@ Con AEM as a Cloud Service sono disponibili quattro tipi di [ambienti](/help/imp
    * Il contenuto dell’ambiente di staging è generalmente sincronizzato con il contenuto di produzione tramite la funzione di copia self-service dei contenuti.
    * Esecuzione di test di prestazioni e sicurezza nell’ambiente di staging.  Ha le stesse dimensioni della produzione.
 * Ambiente di sviluppo:
-   * Un ambiente di sviluppo consente ai tuoi sviluppatori di implementare e testare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di staging e produzione.
+   * Un ambiente di sviluppo consente ai tuoi sviluppatori di implementare e testare le applicazioni AEM nelle medesime condizioni di esecuzione degli ambienti di staging e di produzione.
    * Le modifiche passano attraverso una pipeline di distribuzione che consente gli stessi gate di qualità del codice e sicurezza delle pipeline di distribuzione in produzione.
    * Gli ambienti di sviluppo non hanno le stesse dimensioni di quelli di staging e produzione e non devono essere utilizzati per eseguire test di prestazioni e sicurezza.
 * Ambiente di sviluppo rapido (RDE):
@@ -141,7 +141,7 @@ Ci sono altri servizi adiacenti:
 * Il servizio di telemetria operativa:
    * È responsabile della raccolta di metriche chiave da un’esperienza del cliente (come visualizzazioni di pagina, web vitals di base, eventi di conversione), nonché della risposta alle query associate (ad esempio, principali visualizzazioni della pagina per un determinato dominio negli ultimi 7 giorni).
 * Servizio Assets Compute:
-   * È responsabile dell’elaborazione di immagini, video e documenti caricati, ad esempio file PDF e Adobe Photoshop. L’elaborazione può utilizzare Adobe Sensei per estrarre metadati di immagini e video (come tag descrittivi o toni di colore primari) e generare rappresentazioni (come dimensioni o formati diversi) con accesso ad API, come le API di Adobe Photoshop e Adobe Lightroom.
+   * È responsabile dell’elaborazione di immagini, video e documenti caricati, ad esempio file PDF e Adobe Photoshop. L’elaborazione può utilizzare l’intelligenza artificiale di Adobe per estrarre metadati di immagini e video (come tag descrittivi o tonalità di colore primarie) e generare rappresentazioni (come dimensioni o formati diversi) con accesso a API come le API di Adobe Photoshop e Adobe Lightroom.
 * L’Identity Management Service (IMS):
    * È la posizione centrale responsabile della gestione e dell’autenticazione di utenti e gruppi di utenti per una determinata applicazione di Adobe Experience Cloud (ad esempio, il livello di authoring di Cloud Manager o AEM).
    * È accessibile tramite Adobe Admin Console.

@@ -4,16 +4,16 @@ description: Note sulla versione 2022.5.0 di  [!DNL Adobe Experience Manager]  a
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 67%
+source-wordcount: '799'
+ht-degree: 64%
 
 ---
 
 # Note sulla versione 2022.5.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note sulla versione della funzionalità per la versione 2022.5.0 di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione 2022.5.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Dai un’occhiata al video Panoramica della versione di maggio 2022 per un riepi
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Sites] {#prerelease-features-sites}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Sites] {#prerelease-features-sites}
 
 * Varie funzionalità di GraphQL
 * Una [nuova console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) ottimizzata per l’utilizzo headless di frammenti di contenuto
@@ -49,14 +49,14 @@ Dai un’occhiata al video Panoramica della versione di maggio 2022 per un riepi
 
 * [!UICONTROL Experience Manager Assets Brand Portal] ora esegue processi automatici ogni 12 ore per eliminare tutte le risorse Brand Portal pubblicate in AEM. Di conseguenza, non è necessario eliminare manualmente le risorse nella cartella Contributo per mantenere la dimensione della cartella al di sotto del limite di soglia. Consulta [Novità di Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Assets] {#prerelease-features-assets}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
+Experience Manager Assets utilizza le funzionalità di intelligenza artificiale di Adobe per [distinguere i colori in un&#39;immagine e applicarli automaticamente come tag al momento dell&#39;acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Forms] {#prerelease-features-forms}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#prerelease-features-forms}
 
 * **Integrare moduli adattivi con Microsoft® Power Automate**: ora è possibile configurare un modulo adattivo per eseguire un flusso cloud Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti.
 
@@ -72,7 +72,7 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 <!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* Supporto per ulteriori componenti di marketing commerce: i componenti possono essere configurati per mostrare un invito all’azione di aggiunta al carrello e aggiunta all’elenco dei desideri
+* Supporto per ulteriori componenti di marketing commerce: i componenti possono essere configurati per mostrare un componente aggiuntivo al carrello e un componente aggiuntivo all’elenco dei desideri call-to-action
 
   ![Collegamento all’editor di Sites per la cabina di comando del prodotto](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -83,9 +83,9 @@ Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [dist
 
 * L&#39;opzione &quot;Aggiungi albero&quot; nella scheda **Distribuisci** della schermata di amministrazione dell&#39;agente di replica, precedentemente dichiarata obsoleta, è stata rimossa il 20 giugno 2022 o poco dopo. I pacchetti con una gerarchia di struttura dei contenuti devono essere replicati utilizzando [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuti di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è diventato obsoleto e applicato il 12 settembre 2022 o poco dopo. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avvertenza se si tenta di replicare pacchetti di contenuti di grandi dimensioni nella **scheda Distribuisci** della schermata di amministrazione dell&#39;agente di replica, nonché nel registro di errore AEM ogni volta che l&#39;API di replica viene utilizzata per replicare tali pacchetti di contenuti di grandi dimensioni. A settembre, le avvertenze sono state sostituite da errori. Regola i processi di conseguenza.
+* L’utilizzo della schermata di amministrazione dell’agente di replica o dell’API di replica per la distribuzione di pacchetti di contenuti di dimensioni superiori a 10 MB (nodi con proprietà, esclusi i binari) è diventato obsoleto e applicato il 12 settembre 2022 o poco dopo. Per replicare pacchetti di contenuti di grandi dimensioni, è necessario utilizzare [Gestisci pubblicazione](/help/operations/replication.md#manage-publication) o il [flusso di lavoro Pubblica struttura dei contenuti](/help/operations/replication.md#publish-content-tree-workflow). A luglio verrà visualizzato un messaggio di avvertenza se si tenta di replicare pacchetti di contenuti di grandi dimensioni nella **scheda Distribuisci** della schermata di amministrazione dell&#39;agente di replica, nonché nel registro degli errori di AEM ogni volta che l&#39;API di replica viene utilizzata per replicare tali pacchetti di contenuti di grandi dimensioni. A settembre, le avvertenze sono state sostituite da errori. Regola i processi di conseguenza.
 
-### Nuove funzioni disponibili nel canale prerelease di [!DNL Experience Manager] {#prerelease-features-foundation}
+### Nuove funzioni disponibili nel canale pre-release di [!DNL Experience Manager] {#prerelease-features-foundation}
 
 * AEM as a Cloud Service è ora integrato con Unified Shell per migliorare l’esperienza utente e per coerenza con tutte le altre applicazioni di Experience Cloud. Per ulteriori dettagli, vedi [AEM as a Cloud Service su Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 

@@ -2,10 +2,10 @@
 title: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 description: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '5078'
-ht-degree: 100%
+source-wordcount: '5075'
+ht-degree: 97%
 
 ---
 
@@ -86,9 +86,9 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 
 >[!TAB Funzioni basate sull’intelligenza artificiale]
 
-**Tag avanzati**: tag avanzati utilizza la struttura dell’intelligenza artificiale di Adobe Sensei per formare l’algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, AEM applica automaticamente i tag avanzati alle risorse caricate.
+**Tag avanzati**: i tag avanzati utilizzano il framework artificialmente intelligente di Adobe AI per addestrare il relativo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, AEM applica automaticamente i tag avanzati alle risorse caricate.
 
-**Ricerca e Assegnazione dei tag intelligente in base al colore**: AEM Assets utilizza le funzionalità IA di Adobe Sensei per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
+**Assegnazione tag intelligente basata su colori e ricerca**: AEM Assets utilizza le funzionalità di intelligenza artificiale di Adobe per distinguere i colori in un&#39;immagine e applicare automaticamente tali caratteristiche come tag al momento dell&#39;acquisizione. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
 
 **Metadati generati dall’IA**: AEM Assets utilizza l’IA per generare automaticamente i metadati, inclusi Titolo, Descrizione e Parole chiave. Questi campi generati dall’IA migliorano la precisione dei metadati, rendendo le risorse più facili da ricercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione tag manuale, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuto digitale.
 
@@ -193,7 +193,7 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 
 **Imaging avanzato**: Imaging avanzato fornisce prestazioni di consegna delle risorse di immagine ancora migliori ottimizzando automaticamente il formato di un’immagine e le dimensioni del file in base alla funzionalità del browser del cliente. Funziona con i predefiniti per immagini esistenti e utilizza l’intelligenza al momento della consegna. Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete.
 
-**Ritaglio avanzato**: una funzionalità di intelligenza artificiale Adobe Sensei per rilevare automaticamente il punto focale di qualsiasi immagine o video e di ritagliarlo, al fine di mantenerlo. Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo, eliminando così le attività manuali noiose e distribuendo immagini e video di alta qualità con caricamento rapido, che risultano di ottima qualità su qualsiasi dispositivo o schermo.
+**Ritaglio avanzato**: funzionalità di intelligenza artificiale di Adobe per rilevare automaticamente il punto focale in qualsiasi immagine o video e ritagliarlo per mantenerlo. Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo, eliminando così le attività manuali noiose e distribuendo immagini e video di alta qualità con caricamento rapido, che risultano di ottima qualità su qualsiasi dispositivo o schermo.
 
 **Didascalie video generate dall’intelligenza artificiale**: in Adobe Dynamic Media utilizzano l’intelligenza artificiale per generare automaticamente le didascalie per i contenuti video. Questa funzione è stata progettata per migliorare l’accessibilità e l’esperienza utente fornendo didascalie accurate. Le didascalie vengono generate dall’audio originale, eventuali tracce audio o didascalie aggiuntive sono fornite nella scheda `Captions and Audio` nella pagina delle proprietà video. Grazie al supporto di più di 60 lingue, le didascalie possono essere riviste e visualizzate in anteprima prima della pubblicazione del video.
 <table>
@@ -297,7 +297,7 @@ AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giust
 </td>
 </table>
 
-**Tag avanzati**: tag avanzati utilizza la struttura dell’intelligenza artificiale di Adobe Sensei per formare l’algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, AEM applica automaticamente i tag avanzati alle risorse caricate.
+**Tag avanzati**: i tag avanzati utilizzano il framework artificialmente intelligente di Adobe AI per addestrare il relativo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Per impostazione predefinita, AEM applica automaticamente i tag avanzati alle risorse caricate.
 
 **Cerca risorse**: una volta che i metadati corretti sono stabiliti, AEM Assets ti consente di eseguire ricerche utilizzando vari operatori, caratteri jolly, query avanzate e filtri personalizzati.
 
@@ -702,7 +702,7 @@ Dynamic Media offre le seguenti funzioni principali:
 
 * **Set di video adattivi**: un set di video adattivi raggruppa le versioni dello stesso video che sono codificate in velocità bit e formati diversi. Inizia con il video principale originale che hai caricato nel sistema. Dynamic Media ridimensiona automaticamente, o transcodifica, tale video in più video. In seguito, al momento della consegna, determina in modo intelligente lo schermo video, la qualità e il formato da utilizzare, distribuendolo su telefono, tablet o computer desktop.
 
-* **Ritaglio avanzato**: funzionalità di intelligenza artificiale di Adobe Sensei che permette di rilevare automaticamente il punto focale di qualsiasi immagine o video e di ritagliarlo, al fine di mantenerlo. Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo, eliminando così le attività manuali noiose e distribuendo immagini e video di alta qualità con caricamento rapido, che risultano di ottima qualità su qualsiasi dispositivo o schermo.
+* **Ritaglio avanzato**: funzionalità di intelligenza artificiale di Adobe per rilevare automaticamente il punto focale in qualsiasi immagine o video e ritagliarlo per mantenerlo. Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo, eliminando così le attività manuali noiose e distribuendo immagini e video di alta qualità con caricamento rapido, che risultano di ottima qualità su qualsiasi dispositivo o schermo.
 
 * **Modelli Dynamic Media**: crea modelli personalizzabili in tempo reale per i banner e i volantini utilizzando i modelli Dynamic Media, un editor di modelli WYSIWYG. Pubblica il modello Dynamic Media e utilizzalo nelle applicazioni a valle. Un modello Dynamic Media include livelli di immagine e testo. Aggiungi parametri ai livelli immagine e testo del modello e utilizza gli URL Dynamic Media per riposizionare e ridimensionare il livello e aggiornarne il contenuto in tempo reale.
 

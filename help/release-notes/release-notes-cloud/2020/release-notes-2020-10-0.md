@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager] note sulla versione 2020.10.0 di a
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 feature: Release Information
 role: Admin
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 24%
@@ -24,21 +24,21 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 ### Novità in [!DNL Sites] {#what-is-new-sites}
 
-* **[Componenti core 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)**: Adobe Experience Manager as a Cloud Service beneficia degli aggiornamenti automatici all&#39;ultima versione dei Componenti core. La versione 2.12.0 include gli ultimi miglioramenti apportati dalla community. I miglioramenti includono [un nuovo gestore di moduli POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=it#post-data) la possibilità di includere tag [di metadati, JavaScript e CSS personalizzati tramite la configurazione basata sul contesto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=it#context-aware-loading) e un&#39;utilità [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=it#enabling-custom-components) per semplificare l&#39;integrazione di Adobe Data Layer nei componenti personalizzati. Visualizza l&#39;[elenco delle modifiche](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) nella versione 2.12.0.
+* **[Componenti core 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)**: Adobe Experience Manager as a Cloud Service beneficia degli aggiornamenti automatici all&#39;ultima versione dei Componenti core. La versione 2.12.0 include gli ultimi miglioramenti apportati dalla community. I miglioramenti includono [un nuovo gestore di moduli POST;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) la possibilità di includere tag [di metadati, JavaScript e CSS personalizzati tramite la configurazione basata sul contesto;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) e un&#39;utilità [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) per semplificare l&#39;integrazione di Adobe Data Layer nei componenti personalizzati. Visualizza l&#39;[elenco delle modifiche](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) nella versione 2.12.0.
 
-* **[Archetipo progetto 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)**: la base consigliata per l&#39;avvio di un nuovo progetto Experience Manager è stata migliorata. Ora include il nuovo [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it), l&#39;opzione per [recapitare il sito in AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=it) e i nuovi [punti di estensione per aggiungere il progetto CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=it#context-aware-loading).
+* **[Archetipo progetto 24](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)**: la base consigliata per l&#39;avvio di un nuovo progetto Experience Manager è stata migliorata. Ora include il nuovo [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it), l&#39;opzione per [recapitare il sito in AMP](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) e i nuovi [punti di estensione per aggiungere il progetto CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading).
 
 * **[Cartelle ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**: possibilità di creare cartelle di pubblico per organizzare, trovare e selezionare facilmente i segmenti di pubblico da utilizzare per le funzionalità di targeting delle offerte ContextHub.
 
 ## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
-* Applicazione di tag avanzati video **basata su**&#x200B;[!DNL Adobe Sensei]: applicando modelli AI per analizzare contenuti video per tag specifici per oggetti e azioni, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo all&#39;utilizzo di informazioni avanzate esposte. A tua volta, puoi offrire ai clienti l’esperienza giusta. Consulta [Risorse per video con tag avanzati](/help/assets/smart-tags-for-videos.md).
+* Applicazione di tag avanzati video **[!DNL Adobe AI]basata su**: applicando modelli AI per analizzare contenuti video per tag specifici per oggetti e azioni, gli utenti DAM possono dedicare meno tempo all&#39;aggiunta di tag e più tempo all&#39;utilizzo di informazioni avanzate esposte. A tua volta, puoi offrire ai clienti l’esperienza giusta. Consulta [Risorse per video con tag avanzati](/help/assets/smart-tags-for-videos.md).
 
-* **Miglioramenti di Brand Portal**: le seguenti nuove funzionalità e altro ancora sono disponibili in [!DNL Brand Portal]. Per informazioni dettagliate, consulta [[!DNL Brand Portal] note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=it).
+* **Miglioramenti di Brand Portal**: le seguenti nuove funzionalità e altro ancora sono disponibili in [!DNL Brand Portal]. Per informazioni dettagliate, consulta [[!DNL Brand Portal] note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * [Esperienza di download migliorata](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=it) per download semplificati e rapidi. Gli amministratori possono configurare modalità di download aggiuntive per offrire un’esperienza in grado di soddisfare le esigenze specifiche di qualsiasi utente o azienda.
-   * È ora possibile navigare con un solo clic su File, [Raccolte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html?lang=it) e Collegamenti condivisi da qualsiasi pagina.
-   * Ora gli utenti possono [selezionare e scaricare rappresentazioni specifiche](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=it#download-assets-from-asset-details-page). La nuova opzione di download delle rappresentazioni è ora disponibile nel riquadro Rappresentazioni della pagina dei dettagli delle risorse.
+   * [Esperienza di download migliorata](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) per download semplificati e rapidi. Gli amministratori possono configurare modalità di download aggiuntive per offrire un’esperienza in grado di soddisfare le esigenze specifiche di qualsiasi utente o azienda.
+   * È ora possibile navigare con un solo clic su File, [Raccolte](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) e Collegamenti condivisi da qualsiasi pagina.
+   * Ora gli utenti possono [selezionare e scaricare rappresentazioni specifiche](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). La nuova opzione di download delle rappresentazioni è ora disponibile nel riquadro Rappresentazioni della pagina dei dettagli delle risorse.
    * Un timeout di 15 minuti per le sessioni degli utenti ospiti garantisce un’esperienza migliore a tutti gli utenti simultanei.
 
 * **[!DNL Adobe Asset Link]versione 2.1**: è disponibile una nuova versione dell&#39;estensione [Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) per [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. Aggiunge compatibilità con le ultime applicazioni [!DNL Adobe Creative Cloud] con la versione 2021, rilasciata a ottobre 2020.
@@ -57,7 +57,7 @@ La seguente versione (2020.11.0) sarà del 1° dicembre 2020.
 
 ### Funzioni beta di [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html?lang=it) consentono di combinare un modello e dati XML per generare documenti in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) consentono di combinare un modello e dati XML per generare documenti in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch.
 
 Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DNL formscsbeta@adobe.com].
 
@@ -116,11 +116,11 @@ Per ulteriori dettagli, consulta la [Visualizzazione dell’ambiente](/help/impl
 
 ### Flussi di lavoro {#workflows}
 
-* È stato aggiunto il supporto per la ricerca di istanze di flussi di lavoro basate su Titolo flusso di lavoro, Modello flusso di lavoro, Stato, Iniziatore, Percorso payload e Data inizio. Consulta [Istanze flusso di lavoro di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=it).
+* È stato aggiunto il supporto per la ricerca di istanze di flussi di lavoro basate su Titolo flusso di lavoro, Modello flusso di lavoro, Stato, Iniziatore, Percorso payload e Data inizio. Consulta [Istanze flusso di lavoro di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## Strumento di trasferimento contenuti {#content-transfer-tool}
 
-Scopri le novità e gli aggiornamenti di [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it) Release v1.1.12.
+Scopri le novità e gli aggiornamenti di [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### Novità {#what-is-new-ctt}
 

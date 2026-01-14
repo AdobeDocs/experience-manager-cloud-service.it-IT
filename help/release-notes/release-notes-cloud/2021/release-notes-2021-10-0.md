@@ -4,10 +4,10 @@ description: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -46,7 +46,7 @@ Dai un&#39;occhiata al video [Panoramica sulla versione di ottobre 2021](https:/
 
 ### Nuova funzionalità nel canale prerelease [!DNL Assets] {#assets-prerelease-features}
 
-* Ritaglio e campione avanzato immagine [!DNL Dynamic Media] è ora basato sui servizi Sensei più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
+* Ritaglio e campione avanzato immagine [!DNL Dynamic Media] ora si basa sui servizi di intelligenza artificiale più recenti, che generano ritagli e campioni migliorati. Inoltre, è stato avviato un miglioramento per generare contenuti di ritaglio diversi, per le stesse proporzioni ma con risoluzioni diverse. Inoltre, eventuali modifiche manuali vengono mantenute durante la rielaborazione, se nel profilo immagine non vi sono modifiche di larghezza e altezza.
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **Esternalizzare i dati del flusso di lavoro AEM per un’elaborazione sicura**: è possibile memorizzare i dati dei flussi di lavoro AEM in elaborazione (dati variabili di flusso di lavoro AEM) contenenti elementi di dati personali sensibili (SPD) in un archivio gestito dal cliente per un’elaborazione sicura. Gli elementi dei dati e le variabili del flusso di lavoro non vengono memorizzati nell’archivio AEM e vengono recuperati su richiesta da un archivio gestito dal cliente durante l’elaborazione del flusso di lavoro.
 
-### Funzioni beta di [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Funzioni beta di [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [API di comunicazione](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=it) consente di combinare un modello e dati XML per generare documenti di stampa in vari formati. Il servizio consente di generare documenti in modalità sincrona e batch. Le API consentono di creare applicazioni che permettono di:
 
@@ -83,15 +83,15 @@ Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DN
 
 * Gli autori possono aggiungere collegamenti alle pagine di prodotti e cataloghi nei campi di testo utilizzando l’editor Rich Text. Alla barra degli strumenti dell’editor Rich Text è stata aggiunta un’icona CIF che apre i selettori per cercare e selezionare rapidamente il prodotto o la categoria senza uscire dal contesto.
 
-* I carrelli e le pagine di pagamento pop-up esistenti sono stati sostituiti da carrelli e pagine di pagamento dedicati per l’AEM. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
+* Il carrello e il pagamento pop-up esistenti sono stati sostituiti con il carrello e le pagine di pagamento AEM dedicate. I componenti di queste pagine vengono generati utilizzando i componenti PEGRA estensibili di Adobe Commerce
 
 * Gli esercenti possono nascondere determinate categorie del catalogo dei prodotti nella navigazione utilizzando il backend di Commerce. Il componente core Navigazione CIF rispetta la configurazione back-end per l’e-commerce &quot;includi nel menu&quot; per mostrare/nascondere le categorie nella navigazione
 
-* AEM Storefront Venia restituisce l’errore HTTP 404 se la pagina della categoria o del prodotto non è stata trovata
+* AEM Storefront Venia restituisce l’errore HTTP 404 se la pagina della categoria o del prodotto non viene trovata
 
 ## Cloud Manager {#cloud-manager}
 
-Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.10.0.
+Questa sezione illustra le note sulla versione 2021.10.0 di Cloud Manager AEM as a Cloud Service.
 
 ### Data di pubblicazione {#release-date-cm-nov}
 
@@ -129,7 +129,7 @@ La prossima versione è prevista per il 9 dicembre 2021.
 
 ### Correzioni di bug {#bug-fixes-nov}
 
-* Alcune configurazioni della versione non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’arresto del contenitore della versione.
+* Alcune configurazioni della versione non ortodosse hanno comportato la memorizzazione di file non necessari nella cache degli artefatti Maven della pipeline, causando un I/O di rete estranea all’avvio e all’interruzione del contenitore della versione.
 
 * L’API di Pipeline PATCH non riesce se la fase di distribuzione non esiste.
 

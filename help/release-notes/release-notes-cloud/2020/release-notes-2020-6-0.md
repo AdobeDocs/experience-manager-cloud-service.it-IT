@@ -1,13 +1,13 @@
 ---
 title: 'Adobe Experience Manager as a Cloud Service: note sulla versione 2020.6.0'
-description: '[!DNL Adobe Experience Manager] note sulla versione 2020.6.0 di as a Cloud Service.'
+description: '[!DNL Adobe Experience Manager] Note sulla versione 2020.6.0 di as a Cloud Service.'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 91%
 
 ---
 
@@ -27,7 +27,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di AEM Sites in
 
 La versione 2.9.0 dei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) è ora disponibile come parte di AEM Sites e include:
 
-* Integrazione tra [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) e i Componenti core
+* Integrazione tra [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) e i componenti core
 * Attributi ID HTML configurabili per tutti i componenti
 * Un nuovo componente Barra di avanzamento
 * Numerose correzioni di bug
@@ -50,9 +50,9 @@ La versione 2.9.0 dei [Componenti core](https://experienceleague.adobe.com/docs/
 
 ## Novità negli elementi di base di AEM as a Cloud Service {#foundations}
 
-I tempi di creazione dei progetti AEM miglioreranno eliminando tutti i riferimenti nel file pom.xml del progetto AEM all&#39;archivio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+I tempi di creazione dei progetti AEM miglioreranno grazie alla rimozione di tutti i riferimenti all&#39;archivio remoto `https://downloads.experiencecloud.adobe.com/content/maven/public` nel file pom.xml del progetto AEM.
 
-Il Jar dell’API SDK di AEM as a Cloud Service, precedentemente ospitato in tale posizione, ora si trova in Maven Central, l’archivio di artefatti predefinito di Maven.
+Il file Jar dell’API SDK di AEM as a Cloud Service, precedentemente ospitato in tale posizione, ora si trova in Maven Central, l’archivio di artefatti predefinito di Maven.
 
 ## Novità di Cloud Manager {#cloud-manager}
 
@@ -84,11 +84,11 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
   Per ulteriori dettagli, consulta [Gestione accesso all’istanza di authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=it#manage-access-aem).
 
-* Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti saltati.
+* Il registro Build ora include l’elenco degli artefatti individuati, inclusi i pacchetti di contenuti ignorati.
 
 * Il passaggio Build ora verifica se tutti i pacchetti di contenuto generati includono tutte le proprietà obbligatorie: nome, gruppo e versione.
 
-* La fase di build ora verifica se la build ha generato almeno un pacchetto di contenuto.
+* Il passaggio Build ora verifica se la build ha prodotto almeno un pacchetto di contenuti.
 
 ### Correzioni di bug {#bug-fixes-cm}
 
@@ -106,7 +106,7 @@ Leggi questa sezione per scoprire le novità e gli aggiornamenti di Cloud Manage
 
 ## Novità di [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**User experience guidata per tag avanzati migliorati, basati su Adobe Sensei**
+**Esperienza utente guidata per tag avanzati migliorati, basati su Adobe AI**
 
 I tag avanzati migliorati consentono di addestrare modelli di assegnazione tag avanzati per riconoscere le immagini in base a tag aziendali specifici, oltre che ai tag avanzati generici.
 
@@ -143,7 +143,7 @@ Gli elementi dell’interfaccia utente sono compatibili con gli assistenti vocal
 
 * Nell’interfaccia di Assets, le impostazioni di visualizzazione non sono accessibili dalla tastiera. (CQ-4289038)
 
-* Il rapporto di luminosità è inferiore a 3:1 per le icone di classificazione colorate in giallo. È svantaggioso per gli utenti ipovedenti e senza percezione dei colori. Le stelle di valutazione vengono visualizzate nella scheda della risorsa o nella visualizzazione a schede
+* Il rapporto di luminosità è inferiore a 3:1 per le icone di classificazione di colore giallo. È svantaggioso per gli utenti ipovedenti e senza percezione dei colori. Le stelle di valutazione vengono visualizzate nella scheda della risorsa o nella visualizzazione a schede
 
 * Il colore e il contrasto di alcuni elementi dell’interfaccia utente sono stati aggiornati in modo che gli utenti con vista limitata o senza percezione del colore possano distinguere tali elementi. Ad esempio, le icone delle stelle di valutazione nella sezione [!UICONTROL Valutazione] della scheda [!UICONTROL Avanzate] nelle [!UICONTROL Proprietà] di una risorsa e nella visualizzazione a schede sono ora di un colore con contrasto adeguato. (CQ-4295106)
 

@@ -1,18 +1,18 @@
 ---
-title: Profili video Dynamic Media
+title: Profili video di Dynamic Media
 description: Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Puoi anche aggiungere il ritaglio avanzato ai video.
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
 ht-degree: 6%
 
 ---
 
-# Profili video Dynamic Media{#video-profiles}
+# Profili video di Dynamic Media{#video-profiles}
 
 Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Quando codifichi i video sorgente principali utilizzando il profilo di codifica video adattiva, durante la riproduzione il lettore video regola automaticamente la qualità del flusso video in base alla velocità di connessione Internet dei clienti. Questa azione è nota come streaming bitrate adattivo.
 
@@ -94,7 +94,7 @@ La tabella seguente identifica le best practice per la codifica di profili per l
 
 ## Informazioni sull’utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-Il ritaglio avanzato per i video è una funzione opzionale disponibile in Profili video. Si tratta di uno strumento che utilizza Adobe Sensei per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
+Il ritaglio avanzato per i video è una funzione opzionale disponibile in Profili video. Si tratta di uno strumento che utilizza l’intelligenza artificiale di Adobe per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -104,7 +104,7 @@ Le dimensioni massime supportate per i file video con ritaglio avanzato sono i s
 * 30 fps.
 * Dimensione del file: 300 MB.
 
-Adobe Sensei è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe Sensei e SmartCrop.
+Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe AI e Smart Crop.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 
@@ -278,13 +278,13 @@ Puoi modificare un profilo di codifica video esistente per sfruttare parametri d
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/dynamic-media/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/dynamic-media/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/dynamic-media/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/dynamic-media/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito. Tuttavia, il valore consigliato è fino a due volte il bitrate di codifica.</p> </td>
   </tr>

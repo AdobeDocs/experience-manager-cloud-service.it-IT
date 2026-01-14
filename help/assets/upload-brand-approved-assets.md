@@ -3,7 +3,7 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -27,9 +27,9 @@ Per migliorare ulteriormente la ricerca delle risorse, Content Hub consente di:
 
 * Genera automaticamente più proprietà per ogni risorsa al momento del caricamento, ad esempio dimensione del file, formato, risoluzione e altre proprietà.
 
-* Utilizza l&#39;intelligenza artificiale fornita da [Adobe Sensei](https://www.adobe.com/it/sensei.html) per applicare automaticamente tag rilevanti a tutte le risorse caricate. Questi tag, o tag avanzati, consentono di velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti.
+* Utilizza l&#39;intelligenza artificiale fornita da [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per applicare automaticamente tag rilevanti a tutte le risorse caricate. Questi tag, o tag avanzati, consentono di velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti.
 
-Assicurati di caricare solo le risorse approvate dal marchio [&#x200B; in Content Hub](/help/assets/approve-assets.md).
+Assicurati di caricare solo le risorse approvate dal marchio [ in Content Hub](/help/assets/approve-assets.md).
 
 ![Carica risorse approvate dal marchio](assets/upload-brand-approved-assets.png)
 
@@ -70,8 +70,8 @@ Gli amministratori possono anche configurare i campi obbligatori e facoltativi d
 
 La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto che sia stato abilitato [l&#39;interruttore di approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
 
-* Se il pulsante **[!UICONTROL Approvazione automatica]** è attivato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
+* Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è abilitato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
-* Se il pulsante **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
+* Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)

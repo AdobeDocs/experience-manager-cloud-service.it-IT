@@ -1,19 +1,19 @@
 ---
-title: Assegna tag automatici alle risorse con  [!DNL Adobe Sensei] servizio avanzato
+title: Assegna tag automatici alle risorse con  [!DNL Adobe AI] servizio avanzato
 description: Assegna tag alle risorse con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
 # Apprendimento dei tag avanzati
 
-L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe Sensei](https://business.adobe.com/it/why-adobe/experience-cloud-artificial-intelligence.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla tua struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
+L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
 
 ## Determinazione del requisito dell’apprendimento dei tag avanzati {#smart-tag-training-requirement}
 
@@ -118,7 +118,7 @@ Assicurati che le immagini nel set di formazione siano conformi alle seguenti li
 >[!NOTE]
 >
 >Puoi utilizzare le stesse immagini per addestrare diversi modelli di tag. Tuttavia, non associare un’immagine a più tag in un modello di tag. È possibile assegnare tag alla stessa immagine con tag diversi appartenenti a modelli di tag diversi.
->&#x200B;>Non è possibile annullare l’apprendimento. Le linee guida di cui sopra dovrebbero aiutarti a scegliere le immagini migliori da addestrare.
+>Non è possibile annullare l’apprendimento. Le linee guida di cui sopra dovrebbero aiutarti a scegliere le immagini migliori da addestrare.
 
 ## Addestra il modello per i tag personalizzati {#train-model}
 
@@ -161,15 +161,15 @@ Per verificare se il servizio Tag avanzati è stato addestrato sui tag nel set d
 >[!NOTE]
 >
 >Cosa succede se voglio trasferire la formazione di tag avanzati da un’istanza all’altra tramite un’esportazione?
->&#x200B;>Non è necessario esportare l’apprendimento dei tag avanzati se l’ambiente appartiene alla stessa organizzazione IMS. Viene condiviso automaticamente. Se l’ambiente si trova in più organizzazioni IMS, non è possibile condividere o esportare l’apprendimento dei tag avanzati.
+>Non è necessario esportare l’apprendimento dei tag avanzati se l’ambiente appartiene alla stessa organizzazione IMS. Viene condiviso automaticamente. Se l’ambiente si trova in più organizzazioni IMS, non è possibile condividere o esportare l’apprendimento dei tag avanzati.
 
 ## Limitazioni e best practice relative agli smart tag {#limitations-smart-tags-training}
 
 * Per addestrare il modello, utilizzate le immagini più appropriate. Non è possibile ripristinare l’addestramento o rimuovere il modello di addestramento. La precisione dei tag dipende dall&#39;addestramento corrente, quindi esegui questa operazione con attenzione.
-* Non puoi addestrare il servizio che applica Tag avanzati ai video utilizzando video specifici. Funziona con le impostazioni predefinite di [!DNL Adobe Sensei].
+* Non puoi addestrare il servizio che applica Tag avanzati ai video utilizzando video specifici. Funziona con le impostazioni predefinite di [!DNL Adobe AI].
 
 
 >[!NOTE]
 >
 >La capacità dei tag avanzati di addestrarsi sui tag e di applicarli ad altre immagini dipende dalla qualità delle immagini utilizzate per l’apprendimento.
->&#x200B;>Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.
+>Per ottenere i migliori risultati, Adobe consiglia di utilizzare immagini visivamente simili per addestrare il servizio per ogni tag.

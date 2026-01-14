@@ -4,16 +4,16 @@ description: Note sulla versione 2022.6.0 di  [!DNL Adobe Experience Manager]  a
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 79%
+source-wordcount: '632'
+ht-degree: 75%
 
 ---
 
 # Note sulla versione 2022.6.0 di [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La sezione seguente illustra le note sulla versione della funzionalità per la versione 2022.6.0 di [!DNL Experience Manager] as a Cloud Service.
+La sezione seguente illustra le note sulla versione 2022.6.0 di [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Dai un’occhiata al video Panoramica sulla versione di giugno 2022 per un riepi
 
   ![Console Frammenti di contenuto](/help/release-notes/assets/cf-ui.png)
 
-* Il nuovo [Componente Sommario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=it) funziona non solo con i componenti core, ma con tutti i componenti, riproducendo automaticamente il sommario sulle pagine dei contenuti. Inoltre, poiché è gestito lato server e completamente memorizzato nella cache dal dispatcher, viene anche caricato in modo efficiente.
+* Il nuovo [componente Sommario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=it) funziona non solo con i componenti core, ma con tutti i componenti, riproducendo automaticamente il sommario sulle pagine dei contenuti. Inoltre, poiché è gestito lato server e completamente memorizzato nella cache dal dispatcher, viene anche caricato in modo efficiente.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuove funzioni in [!DNL Assets] {#assets-features}
 
-Experience Manager Assets utilizza le funzionalità IA di Adobe Sensei per [distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
+Experience Manager Assets utilizza le funzionalità di intelligenza artificiale di Adobe per [distinguere i colori in un&#39;immagine e applicarli automaticamente come tag al momento dell&#39;acquisizione](/help/assets/color-tag-images.md). Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine. È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
