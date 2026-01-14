@@ -3,9 +3,9 @@ title: Come si imposta l'autenticazione server-to-server OAuth?
 description: Scopri come configurare l’autenticazione server-to-server OAuth per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '833'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ OAuth Server-to-Server Authentication consente l&#39;accesso sicuro e basato su 
 
 Prima di iniziare, accertati di soddisfare i seguenti prerequisiti:
 
-* Assicurati di avere [accesso a Adobe Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifico per l&#39;ambiente in uso.
+* Assicurati di avere [accesso a Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifico per l&#39;ambiente in uso.
 * [Assegnare il ruolo Amministratore di sistema o Sviluppatore in Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) per abilitare l&#39;accesso a Adobe Developer Console.
 
 ## Come si genera un token di accesso utilizzando l’autenticazione server-to-server di OAuth?
@@ -177,7 +177,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
@@ -288,4 +288,10 @@ Scopri come impostare l’ambiente per le API di comunicazione Forms sincrone (s
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architettura AEM Forms as a Cloud Service per API Forms adattivi e di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API Forms Communications - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

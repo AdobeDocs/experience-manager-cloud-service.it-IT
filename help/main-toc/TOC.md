@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5188e515b44e9153e17d0ee9ca2a5bd8e0fb72d6
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6928'
 ht-degree: 96%
 
 ---
@@ -823,8 +823,8 @@ ht-degree: 96%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1042,13 +1042,13 @@ ht-degree: 96%
    + [Utilizzare l’opzione Fuori sede](/help/forms/configure-out-of-office-settings.md)
 + API di comunicazione {#using-communications}
    + [Introduzione alle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-   + [Panoramica delle API di comunicazione di AEM Forms](/help/forms/aem-forms-communication-api-overview.md)
-   + [Autenticazione server-to-server OAuth](/help/forms/oauth-api-authetication.md)
-   + [Autenticazione server-to-server JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
+   + [API di comunicazione di AEM Forms](/help/forms/aem-forms-communication-api-overview.md)
    + [Elaborazione sincrona delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications.md)
    + [Elaborazione in batch delle API di comunicazione](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-   + [API di comunicazione - Elaborazione on-demand](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+   + [API di comunicazione Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
    + [Generare output AFP utilizzando le API di AEM Forms](/help/forms/document-generation-afp-api.md)
+   + [Autenticazione server-to-server OAuth](/help/forms/oauth-api-authetication.md)
+   + [Autenticazione server-to-server JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
    + [Installare e configurare Forms Designer](/help/forms/installing-configuring-designer.md)
    + [Utilizzare Forms Designer per creare modelli](/help/forms/use-forms-designer.md)
    + [Modifica del contenuto della pagina zero in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1260,7 +1260,7 @@ ht-degree: 96%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)

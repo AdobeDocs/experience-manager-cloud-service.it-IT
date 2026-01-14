@@ -3,15 +3,15 @@ title: Come si configurano le API sincrone di Forms Communications?
 description: Configurare l’ambiente di sviluppo per le API sincrone di comunicazioni interattive per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
 
 
-# Configurare l’accesso server-to-server OAuth per le API di comunicazione AEM Forms
+# Richiama le API di comunicazione di AEM Forms tramite autenticazione server-to-server OAuth
 
 Questa guida fornisce istruzioni per configurare e richiamare le API sincrone di AEM Forms Communications a cui si accede tramite Adobe Developer Console utilizzando l’autenticazione server-to-server OAuth.
 
@@ -35,7 +35,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso archivio Git**
 
@@ -261,7 +261,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
@@ -789,6 +789,10 @@ Per aggiornare l’istanza di AEM per individuare i dettagli dell’ambiente:
 
    ![Aggiorna ambiente](/help/forms/assets/update-env.png)
 
-## Articoli correlati
-
-* Per informazioni su come impostare l&#39;ambiente per Batch (API asincrone), vedere [Elaborazione batch di comunicazioni AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+>[!MORELIKETHIS]
+>
+>* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Architettura AEM Forms as a Cloud Service per API Forms adattivi e di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API Forms Communications - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
