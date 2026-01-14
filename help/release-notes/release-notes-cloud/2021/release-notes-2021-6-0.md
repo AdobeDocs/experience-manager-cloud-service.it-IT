@@ -155,7 +155,7 @@ La data di rilascio per AEM Screens as a Cloud Service è il 24 giugno 2021.
 ### Novità {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulta la [Guida di AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) per informazioni fondamentali necessarie per installare, configurare ed eseguire correttamente Screens as a Cloud Service e collegarti alla documentazione tecnica sui concetti dettagliati.
+>Consulta la [Guida di AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=it) per informazioni fondamentali necessarie per installare, configurare ed eseguire correttamente Screens as a Cloud Service e collegarti alla documentazione tecnica sui concetti dettagliati.
 
 * La gestione della registrazione dei dispositivi in blocco rende più veloce ed efficiente il provisioning di enormi quantità di dispositivi di riproduzione.
 
@@ -184,7 +184,7 @@ La data di pubblicazione dello strumento Content Transfer v1.5.4 è il 28 giugno
 
 ### Novità {#what-is-new-ctt-latest}
 
-* È stato aggiunto il supporto per un passaggio facoltativo [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) da utilizzare con CTT. Il passaggio di pre-copia può essere utilizzato per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3 o Azure Blob Storage.
+* È stato aggiunto il supporto per un passaggio facoltativo [pre-copia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=it) da utilizzare con CTT. Il passaggio di pre-copia può essere utilizzato per velocizzare in modo significativo le fasi di estrazione e acquisizione dell’attività di trasferimento dei contenuti quando l’istanza AEM di origine è configurata per utilizzare un archivio dati di Amazon S3 o Azure Blob Storage.
 
 * Il guardarrail aggiunto al CTT per impedire agli utenti di interrompere un’acquisizione e potenzialmente danneggiare i dati una volta raggiunto il punto critico durante la fase di acquisizione.
 

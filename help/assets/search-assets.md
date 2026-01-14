@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] fornisce metodi affidabili per la ricerca delle risorse che consentono di velocizzare i contenuti. I team possono ridurre i tempi di lancio sul mercato con un’esperienza di ricerca delle risorse intelligente e fluida, utilizzando funzionalità pronte all’uso e metodi personalizzati. La funzionalità di ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, sia che venga utilizzato ulteriormente dai creativi, che le risorse vengano gestite in modo affidabile dagli utenti aziendali e dai professionisti del marketing o che venga amministrato dagli amministratori DAM. Ricerche semplici, avanzate e personalizzate che è possibile eseguire tramite l&#39;interfaccia utente di [!DNL Assets] o altre applicazioni e superfici consentono di soddisfare questi casi d&#39;uso.
@@ -147,7 +147,7 @@ Puoi migliorare la pertinenza delle parole chiave per determinate risorse in mod
 1. Nella casella **[!UICONTROL Promozione ricerca]**, specifica una parola chiave per la quale vuoi aumentare la ricerca dell&#39;immagine, quindi fai clic su **[!UICONTROL Aggiungi]**. È possibile specificare più parole chiave nello stesso modo.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i risultati di ricerca principali.
 
-Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune risorse nei risultati di ricerca per la parola chiave di destinazione. Guarda l’esempio di video seguente. Per informazioni dettagliate, vedi [Ricerca in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune risorse nei risultati di ricerca per la parola chiave di destinazione. Guarda l’esempio di video seguente. Per informazioni dettagliate, vedi [Ricerca in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -253,11 +253,11 @@ Utilizzando Adobe Asset Link, i professionisti della creatività possono ora acc
 
 ### Cerca risorse nell&#39;app desktop [!DNL Experience Manager] {#desktop-app}
 
-I professionisti Creative utilizzano l&#39;app desktop per rendere [!DNL Experience Manager Assets] facilmente ricercabile e disponibile sul desktop locale (Windows o Mac). I creativi possono visualizzare facilmente le risorse desiderate in Mac Finder o Esplora risorse, aperte in applicazioni desktop e modificate localmente. Le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell&#39;archivio. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e l&#39;operatore `AND`. Consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell&#39;app desktop.
+I professionisti Creative utilizzano l&#39;app desktop per rendere [!DNL Experience Manager Assets] facilmente ricercabile e disponibile sul desktop locale (Windows o Mac). I creativi possono visualizzare facilmente le risorse desiderate in Mac Finder o Esplora risorse, aperte in applicazioni desktop e modificate localmente. Le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell&#39;archivio. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e l&#39;operatore `AND`. Consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets) nell&#39;app desktop.
 
 ### Cercare risorse in [!DNL Brand Portal] {#brand-portal}
 
-Gli utenti e i professionisti del marketing che operano nel settore commerciale utilizzano Brand Portal per condividere in modo efficiente e sicuro le risorse digitali approvate con i loro team interni, partner e rivenditori. Vedi [cercare risorse in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+Gli utenti e i professionisti del marketing che operano nel settore commerciale utilizzano Brand Portal per condividere in modo efficiente e sicuro le risorse digitali approvate con i loro team interni, partner e rivenditori. Vedi [cercare risorse in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=it).
 
 ### Cerca in [!DNL Adobe Stock] immagini {#adobe-stock1}
 
@@ -557,5 +557,5 @@ Passa alla posizione della cartella per le risorse visualizzate nei risultati di
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] guida all&#39;implementazione per la ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Configurazione avanzata per migliorare i risultati della ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [[!DNL Experience Manager] guida all&#39;implementazione per la ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=it)
+>* [Configurazione avanzata per migliorare i risultati della ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it)

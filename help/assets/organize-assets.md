@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 Tutte le risorse digitali, i metadati e il contenuto dei documenti di Microsoft® Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtro sofisticato sulle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadati in Gestione delle risorse digitali.
