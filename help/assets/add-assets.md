@@ -148,7 +148,7 @@ Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Ved
 
 Lo strumento viene fornito solo al gruppo di amministratori da utilizzare per l’acquisizione su larga scala delle risorse dai datastore di Azure o S3. Guarda un video con la procedura dettagliata sulla configurazione e l’acquisizione.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341387/?captions=ita&quality=12&learn=on)
 
 L’immagine seguente illustra le varie fasi di acquisizione delle risorse in Experience Manager da un archivio dati:
 
