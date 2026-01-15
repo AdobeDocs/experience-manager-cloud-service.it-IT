@@ -4,7 +4,7 @@ description: Scopri i diversi tipi di chiamate effettuate all’app dall’edito
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Tuttavia, per lo sviluppatore, comprendere queste chiamate e come funzionano pu�
 * Il **payload** della chiamata contiene i dettagli di ciò che viene aggiornato dall’editor, tra cui l’identificazione dell’elemento da aggiornare e come aggiornarlo.
 * La **Risposta** include i dettagli di ciò che è stato esattamente aggiornato dal servizio editor. Questo consente di facilitare l’aggiornamento del contenuto nell’editor. In alcuni casi, come una chiamata `move`, è necessario aggiornare l’intera pagina.
 
-Una volta completata correttamente una chiamata, vengono attivati gli eventi che includono il payload della richiesta e della risposta, che può essere personalizzato per la tua app. Per maggiori dettagli, consulta il documento [Eventi dell’editor universale](/help/implementing/universal-editor/events.md).
+Una volta completata correttamente una chiamata, vengono attivati gli eventi che includono il payload della richiesta e della risposta, che può essere personalizzato per la tua app. Per maggiori dettagli, consulta il documento [Eventi dell’editor universale](/help/implementing/universal-editor/events-universal-editor.md).
 
 Di seguito è riportato un elenco dei tipi di chiamate effettuate dall’editor universale all’app, con esempi di payload e risposte.
 
@@ -384,5 +384,5 @@ L’editor universale scorre il contenuto e genera un elenco di riferimenti che 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Eventi dell’editor universale](/help/implementing/universal-editor/events.md)
+* [Eventi dell’editor universale](/help/implementing/universal-editor/events-universal-editor.md)
 

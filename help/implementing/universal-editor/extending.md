@@ -4,7 +4,7 @@ description: Scopri le diverse opzioni per estendere le funzionalità dell’edi
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ Oltre all’estensibilità dell’interfaccia utente, l’editor universale offr
 
 * **[Blocchi](https://www.aem.live/developer/block-collection)**: in formato JSON semplice, i progetti possono regolare i blocchi e utilizzare le funzionalità dell’editor universale disponibili per la creazione di contenuti.
 * **[Interfaccia utente personalizzata](#extending-ui)**: le estensioni possono visualizzare l’interfaccia utente necessaria nei pannelli laterali o nelle finestre di dialogo modali.
-* **[Eventi](/help/implementing/universal-editor/events.md)**: le estensioni ricevono eventi sulle azioni dell’autore e sulle selezioni effettuate nella pagina per rispondere in modo appropriato.
+* **[Eventi](/help/implementing/universal-editor/events-universal-editor.md)**: le estensioni ricevono eventi sulle azioni dell’autore e sulle selezioni effettuate nella pagina per rispondere in modo appropriato.
