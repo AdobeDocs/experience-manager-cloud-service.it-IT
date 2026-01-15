@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
+source-git-commit: 31429cfce9f38a3f492f3852fcfa88a38f9de7dd
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 15 gennaio 2026.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 21 gennaio 2026.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,10 +27,13 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* È stato aggiunto il supporto per l’impostazione e la persistenza dei valori predefiniti dei campi modello.
+* I blocchi di testo nella struttura del contenuto mostrano brevi anteprime di testo.
+* I campi di testo normale supportano aree di testo su più righe.
+* Le estensioni possono utilizzare l’API dell’avviso popup per mostrare le notifiche interne al prodotto.
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* La pulizia dei dati viene ora eseguita correttamente al passaggio del contenuto.
-* Sono ora supportate più operazioni nell&#39;aggiornamento delle estensioni.
-* Il pulsante Chiudi per l’accesso sviluppatore ora funziona come previsto.
+* Lo spazio vuoto iniziale nell’editor Rich Text è bonificato in modo appropriato, evitando le anomalie di layout e formattazione.
+* Premendo Invio viene nuovamente attivata la modifica in linea, ripristinando il comportamento di modifica previsto.
+* Sono stati risolti diversi problemi di accessibilità del browser.
+* La formattazione dei tasti di scelta rapida è stata unificata e le icone nella tavolozza dei comandi sono state regolate per offrire un&#39;esperienza più chiara e coerente.

@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1604'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Di seguito è riportata la definizione di tipo di un oggetto campo.
 | `name` | `string` | Proprietà [o percorso](#nesting) in cui devono essere mantenuti i dati | Sì |
 | `label` | `FieldLabel` | Etichetta del campo | Sì |
 | `description` | `FieldDescription` | Descrizione del campo | No |
-| `value` | `FieldValue` | Questo è un valore predefinito, che funge da segnaposto. Questo valore non determina alcun aggiornamento del contenuto. È solo una rappresentazione nell’interfaccia utente. | No |
+| `value` | `FieldValue` | Questo è un valore predefinito, che funge da segnaposto. Se non viene impostato alcun valore, l&#39;editor universale manterrà qualsiasi elemento definito come `value` nella definizione del modello. In questo modo ciò che visualizzi corrisponderà a ciò che viene mantenuto nel backend. | No |
 | `valueType` | `ValueType` | Convalida standard, può essere `string`, `string[]`, `number`, `date`, `boolean` | No |
 | `required` | `boolean` | Il campo è obbligatorio? | No |
 | `readOnly` | `boolean` | Il campo è di sola lettura? | No |
