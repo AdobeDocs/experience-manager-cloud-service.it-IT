@@ -3,9 +3,9 @@ title: Panoramica dell’agente di sviluppo
 description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ L’agente di sviluppo consente agli sviluppatori e agli amministratori di AEM d
 
 Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a risolvere i problemi dei passaggi di build non riusciti suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a ris
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+Invia un messaggio e-mail a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) con il feedback o le richieste di accesso a questo agente.
 
 ## Accedere all’agente di sviluppo tramite Cloud Manager {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ Il processo di risoluzione dei problemi della pipeline dell’agente di sviluppo
 
 | Prompt | Risultato |
 | --- | --- |
+| *Risoluzione dei problemi relativi alla pipeline non riuscita* | Esegue un’analisi del motivo per cui una pipeline non è riuscita; se non è chiaro a quale pipeline viene fatto riferimento, verranno poste all’utente ulteriori domande. |
 | *Elencare le pipeline non riuscite per il programma principale.* | Anche se i risultati possono variare, questo prompt restituisce una tabella di pipeline non riuscite, con un suggerimento di follow-up per fare riferimento a una pipeline specifica da analizzare. |
-| *Analizza la pipeline non riuscita denominata &quot;Pipeline di sviluppo&quot;* | Questo prompt determina un’analisi della pipeline non riuscita con suggerimenti da correggere. |
+| *Analizza la pipeline non riuscita denominata &quot;Pipeline di sviluppo&quot;* | Questo prompt determina un’analisi della pipeline non riuscita con suggerimenti da correggere. In caso di più errori, l’utente dovrà porre ulteriori domande. |
+| *Risoluzione dei problemi di esecuzione della pipeline 1234567* | Fornendo un ID di esecuzione della pipeline esatto, viene eseguita un’analisi della pipeline. |
 
 ## Funzioni fuori ambito {#out-of-scope-features}
 
 La risoluzione dei problemi della pipeline funziona nella fase di build della pipeline full stack. Per altri tipi e passaggi di pipeline, esegui il debug degli errori scaricando ed esaminando i registri.
 
 Consulta [Registri di accesso e download](/help/implementing/cloud-manager/manage-logs.md).
-
-La risoluzione dei problemi delle pipeline non è supportata per i programmi che utilizzano BYOGIT (Bring Your Own Git).
