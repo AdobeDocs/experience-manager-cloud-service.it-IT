@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
+source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 50%
+source-wordcount: '1944'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -93,6 +93,10 @@ Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/rele
 **Rilevamento malware per risorse caricate**
 
 AEM Assets ora include la scansione automatica dei malware per i file caricati, garantendo che le risorse sospette siano messe in quarantena prima di entrare in DAM per proteggere l’archivio dalle minacce. Gli amministratori possono configurare le impostazioni di scansione e i criteri di conservazione della quarantena per controlli di sicurezza semplificati.
+
+**Metadati generati dall&#39;intelligenza artificiale - Aggiornamento idoneità**
+
+I metadati generati dall’intelligenza artificiale in AEM Assets non richiedono più la firma di GenAI Rider per essere abilitati. La funzione è ora disponibile sia per i clienti che hanno firmato GenAI Rider che per i clienti che non sono ancora stati convalidati. Per i clienti che hanno esplicitamente rinunciato all’utilizzo di GenAI, la funzione continuerà a essere disabilitata. Per gestire l&#39;abilitazione della funzione a livello di ambiente, consulta [Disattivare i metadati generati dall&#39;intelligenza artificiale](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). Questa modifica verrà apportata ai clienti nella versione 23482 o successiva.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
