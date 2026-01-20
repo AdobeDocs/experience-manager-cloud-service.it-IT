@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
+source-git-commit: 93a96173ab62827dc1127794611294effb3f612e
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 48%
+source-wordcount: '1984'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,6 +68,8 @@ Per partecipare al programma, inviare un&#39;e-mail a [aemagentsteam@adobe.com](
 
 * Nomi e Adobe ID dei membri del gruppo che utilizzeranno attivamente gli agenti.
 * Elencare agenti specifici che il tuo team desidera utilizzare. Oppure dire semplicemente &quot;Tutti gli agenti&quot;.
+
+I clienti selezionati per la partecipazione riceveranno una notifica diretta da Adobe. La partecipazione è soggetta a considerazioni di idoneità, tra cui la concessione di licenze ai clienti e la capacità limitata del programma. Anche se non tutte le richieste possono essere soddisfatte inizialmente, ulteriori clienti potrebbero essere presi in considerazione nelle prossime ondate beta.
 
 ### AEM Foundation (programmi Beta) {#aem-foundation-beta-programs}
 
