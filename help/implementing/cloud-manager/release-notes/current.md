@@ -34,7 +34,7 @@ La prossima pubblicazione è pianificata per il venerdì 5 febbraio 2026.
   ![Opzione Visualizza/Modifica variabili nel menu a discesa per una pipeline selezionata](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-option.png)
   *Opzione Visualizza/Modifica variabili nel menu a discesa per una pipeline selezionata.*
 
-  ![Finestra di dialogo Configurazione variabili ](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Finestra di dialogo Configurazione variabili.*
+  ![Finestra di dialogo Configurazione variabili &#x200B;](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Finestra di dialogo Configurazione variabili.*
 
 * **Stabilità, prestazioni e affidabilità migliorate**
 
