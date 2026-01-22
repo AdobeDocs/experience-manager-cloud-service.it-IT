@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 31429cfce9f38a3f492f3852fcfa88a38f9de7dd
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 21 gennaio 2026.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è previsto per il 29 gennaio 2026.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,13 +27,15 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* I blocchi di testo nella struttura del contenuto mostrano brevi anteprime di testo.
-* I campi di testo normale supportano aree di testo su più righe.
-* Le estensioni possono utilizzare l’API dell’avviso popup per mostrare le notifiche interne al prodotto.
+* Il metodo Remove Component è stato esposto a `editorActions`.
+* Il metodo del componente Copy è stato esposto a `editorActions`.
+* Le definizioni sono state esposte all’estensibilità.
+* Il metodo del componente Sposta è stato esposto a `editorActions`.
+* Il metodo Add Component è stato esposto a `editorActions`.
+* Dettagli del blocco implementati per V2.
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* Lo spazio vuoto iniziale nell’editor Rich Text è bonificato in modo appropriato, evitando le anomalie di layout e formattazione.
-* Premendo Invio viene nuovamente attivata la modifica in linea, ripristinando il comportamento di modifica previsto.
-* Sono stati risolti diversi problemi di accessibilità del browser.
-* La formattazione dei tasti di scelta rapida è stata unificata e le icone nella tavolozza dei comandi sono state regolate per offrire un&#39;esperienza più chiara e coerente.
+* L&#39;estensibilità `content` è stata rinominata in `details` per seguire lo schema API.
+* È stato migliorato il comportamento del menu contestuale.
+* È stato corretto un bug che si verificava facendo clic sul badge di un elemento modificabile in modo che il menu di scelta rapida si aprisse correttamente.

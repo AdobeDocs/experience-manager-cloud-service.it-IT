@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.01.15 dell’editor universale
-description: Queste sono le note sulla versione 2026.01.15 dell’editor universale.
+title: Note sulla versione 2026.01.22 dell’editor universale
+description: Queste sono le note sulla versione 2026.01.22 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 34%
+source-wordcount: '243'
+ht-degree: 29%
 
 ---
 
 
-# Note sulla versione 2026.01.15 dell’editor universale {#release-notes}
+# Note sulla versione 2026.01.22 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 15 gennaio 2026 di Universal Editor.
+Queste sono le note sulla versione del 22 gennaio 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ Queste sono le note sulla versione del 15 gennaio 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* È stato aggiunto il supporto per l&#39;impostazione e la persistenza di [valori predefiniti dei campi modello.](/help/implementing/universal-editor/field-types.md)
-   * Se non viene impostato alcun valore, l&#39;editor universale manterrà qualsiasi elemento definito come `value` nella definizione del modello.
-   * In questo modo ciò che visualizzi corrisponderà a ciò che viene mantenuto nel backend.
-   * Questo è un cambiamento rivoluzionario.
+* Le etichette (come anteprime di testo brevi) sono state aggiunte ai blocchi di testo in [Struttura contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* TextArea è ora supportato per i campi di testo normale.
+* L’endpoint di configurazione viene ora utilizzato per le funzionalità dell’interfaccia utente.
+* L’area di testo da Frammenti di contenuto è ora supportata.
+* L’API dell’avviso popup ora è esposta alle estensioni.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -39,6 +40,12 @@ Se ti interessa testare le prossime funzionalità elencate di seguito e condivid
 
 ## Altri miglioramenti {#other-improvements}
 
-* La pulizia dei dati viene ora eseguita correttamente al passaggio del contenuto.
-* Sono ora supportate più operazioni nell&#39;aggiornamento delle estensioni.
-* Il pulsante Chiudi per l’accesso sviluppatore ora funziona come previsto.
+* È stato risolto un problema relativo al layout dell’area di lavoro durante la navigazione tramite la barra delle posizioni.
+* Spazio vuoto iniziale bonificato nell’editor Rich Text.
+* La modifica in linea è stata ripristinata al momento di invio.
+* L&#39;etichetta di trascinamento è stata ripristinata in modo da non mostrare l&#39;intero contenuto.
+* Sono stati risolti i problemi di accessibilità del browser.
+* `selectEditables([])` è ora utilizzato per deselezionare tutti i componenti tramite estensibilità.
+* La tabella dei metadati viene ora creata nella posizione corretta.
+* È stato risolto un problema a causa del quale le risorse dei frammenti di contenuto copiate puntavano a `/data/undefined`.
+
