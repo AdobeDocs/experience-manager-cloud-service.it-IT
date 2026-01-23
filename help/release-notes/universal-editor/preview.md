@@ -3,9 +3,9 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 * Le definizioni sono state esposte all’estensibilità.
 * Il metodo del componente Sposta è stato esposto a `editorActions`.
 * Il metodo Add Component è stato esposto a `editorActions`.
-* Dettagli del blocco implementati per V2.
+* Viene rilasciata la versione 2.0 dell’API di authoring dei documenti.
 
 ## Prossimi miglioramenti {#other-improvements}
 
