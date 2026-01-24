@@ -106,7 +106,7 @@ Consulta le risorse di supporto autonomo su come configurare e distribuire in am
 > Per ulteriore assistenza, è possibile:
 >
 >1. [Contatta il team di supporto Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=it)
->1. Esplora [Community e forum di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it)
+>1. Esplora [Community e forum di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it&lang=it)
 
 <br>
 
@@ -219,4 +219,4 @@ Nella fase di post-pubblicazione, devi assicurarti che i file temporanei vengano
 > Per ulteriore assistenza, è possibile:
 >
 >1. [Contatta il team di supporto Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=it)
->1. Esplora [Community e forum di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=it)
+>1. Esplora [Community e forum di Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it&lang=it)
