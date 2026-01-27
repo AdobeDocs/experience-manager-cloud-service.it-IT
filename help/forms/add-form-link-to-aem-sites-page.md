@@ -4,9 +4,9 @@ description: Scopri come aggiungere collegamenti ai moduli alla pagina AEM Sites
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,6 @@ Nello scenario del sito Web della banca, il componente **Link** Forms Portal mig
 
 ![Icona collegamento](/help/forms/assets/link-forms.png)
 
-## Prerequisito
-
-Prima di esplorare le varie funzionalità di un componente Forms Portal, accertati che i Componenti core siano abilitati per il tuo ambiente. Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
-
-Dopo aver distribuito i Componenti core più recenti nell’ambiente, i componenti del portale Forms diventano accessibili nell’ambiente di authoring.
 
 ## Aggiungere il componente Collegamento alla pagina Sites
 

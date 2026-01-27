@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 16%
+source-wordcount: '683'
+ht-degree: 17%
 
 ---
 
-# Creare un modulo adattivo (componenti core) basato su modelli di modulo XFA
+# Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA
 
 <span class="preview"> La funzionalità è disponibile nel programma di adozione anticipata. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
 
@@ -31,9 +31,7 @@ Alcuni dei vantaggi della creazione di moduli basati su modelli di moduli XFA o 
 
 ## Prerequisiti
 
-Per creare un modulo adattivo basato su componenti core utilizzando modelli di modulo XFA o file XDP, è necessario quanto segue:
 
-* Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
 * Si raccomanda di acquisire familiarità con le seguenti aree:
    * Creazione di un modulo adattivo
    * XFA (XML Forms Architecture)

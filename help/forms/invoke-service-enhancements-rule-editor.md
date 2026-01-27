@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1835'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,6 @@ Di seguito sono riportati i prerequisiti che è necessario soddisfare prima di u
 
 * Assicurati di aver configurato un’origine dati. Per istruzioni sulla configurazione di un&#39;origine dati, [fare clic qui](/help/forms/configure-data-sources.md).
 * Crea un modello dati modulo utilizzando l’origine dati configurata. Per istruzioni sulla creazione di un modello dati modulo, [fai clic qui](/help/forms/create-form-data-models.md).
-* Assicurati che i Componenti core siano abilitati per il tuo ambiente. Installa la versione più recente per abilitare i componenti core Adaptive Forms per il tuo ambiente AEM Cloud Service.
 
 ## Esplorazione del servizio Invoke attraverso diversi casi d’uso
 
