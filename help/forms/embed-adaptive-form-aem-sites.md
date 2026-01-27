@@ -277,7 +277,7 @@ Un frame in linea (iframe) è un elemento di HTML che carica un modulo adattivo 
 
    * Se la casella di controllo **[!UICONTROL Modulo occupa l&#39;intera larghezza della cornice]** è selezionata, un modulo adattivo occupa l&#39;intera larghezza del contenitore in cui viene inserito. In questo caso, non viene utilizzato un iframe per eseguire il rendering del modulo. Il layout e il design di un modulo adattivo si adattano a coprire l’intera larghezza del contenitore, rendendolo reattivo e in grado di adattarsi a diverse dimensioni dello schermo. Questa opzione consente di incorporare più Forms adattivi all’interno di una pagina AEM Sites.
 
-         >[!NOTA]
+         >[ !NOTA]
          >
          > Per incorporare più moduli in una pagina AEM Sites, seleziona **[!UICONTROL Il modulo occupa l&#39;intera larghezza della casella di controllo frame]**.
      
