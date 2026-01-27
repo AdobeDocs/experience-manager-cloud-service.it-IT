@@ -33,13 +33,13 @@ Se la tua azienda desidera la vetrina più veloce e adatta all&#39;intelligenza 
 
 #### &#x200B;1. Integrazione con Adobe Commerce as a Cloud Service {#acaacs}
 
-Adobe consiglia di utilizzare Edge Delivery e [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) come punto di partenza. La vetrina è dotata di una piattaforma integrata con i servizi e le API di Adobe Commerce e offre una varietà di componenti aggiuntivi Commerce per costruire rapidamente una vetrina.
+Adobe consiglia di utilizzare Edge Delivery e [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) come punto di partenza. La vetrina è dotata di una piattaforma integrata con i servizi e le API di Adobe Commerce e offre una varietà di componenti aggiuntivi Commerce per costruire rapidamente una vetrina.
 
 Buona vestibilità: esperienza tipica della vetrina con Adobe Commerce as a Cloud Service
 
 #### &#x200B;2. Integrazione con Adobe Commerce Optimizer (per qualsiasi soluzione di terze parti) {#aco}
 
-Se desideri integrare la tua soluzione commerce esistente e migliorare le prestazioni del catalogo, Adobe consiglia di utilizzare [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) come livello di integrazione moderno. Commerce Optimizer migliora la tua soluzione commerce con servizi SaaS ad alte prestazioni per la catalogazione e la merchandizzazione. Come per Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) è pronto all&#39;uso.
+Se desideri integrare la tua soluzione commerce esistente e migliorare le prestazioni del catalogo, Adobe consiglia di utilizzare [Adobe Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) come livello di integrazione moderno. Commerce Optimizer migliora la tua soluzione commerce con servizi SaaS ad alte prestazioni per la catalogazione e la merchandizzazione. Come per Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) è pronto all&#39;uso.
 
 Sono disponibili integrazioni alle soluzioni commerciali come Salesforce Commerce. Contatta il tuo rappresentante Adobe.
 
@@ -53,7 +53,7 @@ Buona vestibilità: basso valore dalla vetrina Edge Delivery
 
 ### Usa la tua vetrina (integrazione headless di AEM) {#own-storefront}
 
-Hai una vetrina esistente (ad esempio, creata con React JS) e desideri utilizzare Adobe Experience Manager per la gestione e la distribuzione dei contenuti (frammenti di contenuto), le risorse e la modifica nel contesto (Editor universale). Il punto di partenza per un&#39;integrazione è [Introduzione a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction) e il componente aggiuntivo [CIF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Il componente aggiuntivo CIF consente un’integrazione diretta dei dati dei prodotti in AEM (cerca, sfoglia e trova prodotti nell’interfaccia utente di AEM) da utilizzare per creare esperienze specifiche per l’e-commerce.
+Hai una vetrina esistente (ad esempio, creata con React JS) e desideri utilizzare Adobe Experience Manager per la gestione e la distribuzione dei contenuti (frammenti di contenuto), le risorse e la modifica nel contesto (Editor universale). Il punto di partenza per un&#39;integrazione è [Introduzione a Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/headless/introduction) e il componente aggiuntivo [CIF](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content). Il componente aggiuntivo CIF consente un’integrazione diretta dei dati dei prodotti in AEM (cerca, sfoglia e trova prodotti nell’interfaccia utente di AEM) da utilizzare per creare esperienze specifiche per l’e-commerce.
 
 ### vetrina AEM CIF {#cif}
 
@@ -61,4 +61,4 @@ L’architettura di riferimento e i consigli di Adobe consiste nell’utilizzare
 
 >[!NOTE]
 >
->I clienti esistenti che desiderano sfruttare le nuove funzionalità di AEM/Commerce devono spostare il sito web in Edge Delivery. Un pattern comune consiste nello spostare solo un sottoinsieme di pagine in Edge Delivery ed eseguire pagine Edge Delivery e CIF in modalità affiancata. È inoltre possibile sostituire i componenti CIF di AEM con i nuovi [componenti aggiuntivi di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) per sfruttare le nuove funzionalità di Commerce.
+>I clienti esistenti che desiderano sfruttare le nuove funzionalità di AEM/Commerce devono spostare il sito web in Edge Delivery. Un pattern comune consiste nello spostare solo un sottoinsieme di pagine in Edge Delivery ed eseguire pagine Edge Delivery e CIF in modalità affiancata. È inoltre possibile sostituire i componenti CIF di AEM con i nuovi [componenti aggiuntivi di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it) per sfruttare le nuove funzionalità di Commerce.
