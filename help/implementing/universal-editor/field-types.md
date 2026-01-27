@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ Di seguito è riportata la definizione di tipo di un oggetto campo.
 | `multi` | `boolean` | Si tratta di un campo multiplo<br/>L’annidamento dei contenitori non è consentito per i campi multipli nel pannello delle proprietà | No |
 | `validation` | `ValidationType` | Regola o regole di convalida per il campo | No |
 | `raw` | `unknown` | Dati non elaborati che possono essere utilizzati dal componente | No |
+
+>[!NOTE]
+>
+>Il carattere di sottolineatura (`_`) non è consentito nei nomi dei campi quando si utilizzano i plug-in [`aem` o `xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### Campo name e annidamento {#nesting}
 
