@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
@@ -36,7 +36,7 @@ L’onboarding per AEM Commerce as a Cloud Service è un processo in due fasi:
 
 Il primo passaggio di onboarding viene eseguito da Adobe. Per maggiori dettagli su prezzi e provisioning, contatta il tuo rappresentante commerciale.
 
-Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=it)
+Dopo il provisioning con il componente aggiuntivo CIF, questo viene applicato a tutti i programmi Cloud Manager esistenti. Se non disponi di un programma Cloud Manager, devi crearne uno. Per ulteriori dettagli, consulta [Configurare il programma.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 Il secondo passaggio è autonomo per ogni ambiente AEM as a Cloud Service. Dopo il provisioning iniziale del componente aggiuntivo CIF è necessario eseguire alcune configurazioni aggiuntive.
 
@@ -57,11 +57,11 @@ Esistono due opzioni per configurare l’endpoint:
 
 ### Tramite l’interfaccia utente di Cloud Manager (impostazione predefinita) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343369?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Questa configurazione può essere eseguita utilizzando una finestra di dialogo nella pagina Dettagli dell’ambiente. Quando si visualizza questa pagina per un programma abilitato per Commerce, se l’endpoint non è attualmente configurato viene visualizzato un pulsante:
 
-![Informazioni sull&#39;ambiente CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![CM informazioni sull&#39;ambiente](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 Facendo clic su questo pulsante si apre una finestra di dialogo:
 
@@ -69,7 +69,7 @@ Facendo clic su questo pulsante si apre una finestra di dialogo:
 
 Dopo aver impostato l’endpoint e, facoltativamente, un’intestazione di autorizzazione per il supporto di cataloghi in staging, l’endpoint viene visualizzato nella pagina dei dettagli. Facendo clic sull&#39;icona Modifica per aprire la stessa finestra di dialogo in cui è possibile modificare il punto finale, se necessario.
 
-![Informazioni sull&#39;ambiente CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![CM informazioni sull&#39;ambiente](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### Tramite Adobe I/O CLI  {#adobe-cli}
 

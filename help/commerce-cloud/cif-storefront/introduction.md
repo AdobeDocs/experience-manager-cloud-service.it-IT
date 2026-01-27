@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -15,7 +15,7 @@ ht-degree: 61%
 
 # Introduzione di AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Una soluzione commerce può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce Cloud a un set di servizi commerce personalizzati. L’integrazione dipende in larga misura dal caso d’uso e dall’ecosistema. Di solito colpisce vari sistemi e si presenta in molte varietà diverse:
+Una soluzione per l’e-commerce può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce Cloud a un set di servizi personalizzati per l’e-commerce. L’integrazione dipende in larga misura dal caso d’uso e dall’ecosistema. Di solito colpisce vari sistemi e si presenta in molte varietà diverse:
 
 * Integrazione di un ecosistema complesso e dinamico (ad esempio cataloghi di prodotti)
 * L&#39;azienda deve gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
@@ -29,7 +29,7 @@ Questa complessità apre le porte a potenziali punti di errore, aumento del TCO,
 
 ## Vantaggi di CIF {#cif-benefits}
 
-CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
+CIF fornisce componenti core per l’e-commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando per i brand il tempo di immissione sul mercato. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
 
 Il componente aggiuntivo CIF porta il contesto del prodotto in Experience Manager e fornisce strumenti di authoring come una console del prodotto e selettori di prodotti/categorie che consentono all’addetto al marketing di creare e distribuire esperienze di acquisto in Experience Manager senza dover dipendere dallo sviluppatore. I vantaggi includono:
 
@@ -51,7 +51,7 @@ CIF è progettato per l&#39;innovazione continua con un componente aggiuntivo se
 
 ### Integrazioni {#integrations}
 
-Collega l’ecosistema (ad esempio, la soluzione commerce) con l’Experience Cloud utilizzando [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Collega l’ecosistema (ad esempio, la soluzione per l’e-commerce) con Experience Cloud utilizzando [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Pattern collaudati e best practice {#proven}
 
@@ -62,7 +62,7 @@ CIF ti supporta con modelli di integrazione standardizzati basati sulle best pra
    * Nessun accesso ai dati in fase di sviluppo
    * Necessità di dati ed esperienze sui prodotti in tempo reale
 * Una maturità digitale in crescita comporta la necessità di gestire l’esperienza
-* &#x200B;
+* 
    * CIF offre funzionalità di gestione dell’esperienza dei prodotti che possono essere incorporate in modo incrementale senza ulteriore sforzo IT.
 * Pronto per l&#39;omni-channel
    * CIF supporta una serie di tecnologie di punti di contatto (lato server, ibrido, lato client) con modelli, acceleratori e componenti core.
