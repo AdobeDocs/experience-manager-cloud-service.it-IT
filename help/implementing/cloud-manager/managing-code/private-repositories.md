@@ -4,7 +4,7 @@ description: Scopri come configurare Cloud Manager per l’utilizzo di archivi G
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 34%
@@ -22,7 +22,7 @@ Configurando Cloud Manager per l&#39;integrazione con GitHub Cloud privato (arch
 >* Archivi GitHub Enterprise Server (versione con hosting autonomo di GitHub) .
 >* Archivi GitLab (sia `gitlab.com` che versioni con hosting autonomo di GitLab).
 >* Archivi Bitbucket (sia `bitbucket.org` che Bitbucket Server, versione con hosting autonomo di BitBucket).
->* Archivi DevOps di Azure (sia [dev.azure.com](http://dev.azure.com) che versioni con hosting autonomo di Azure DevOps).
+>* Archivi DevOps di Azure (sia [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) che versioni con hosting autonomo di Azure DevOps).
 >
 >Vedi [Aggiungi archivi esterni in Cloud Manager - versione beta privata](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
