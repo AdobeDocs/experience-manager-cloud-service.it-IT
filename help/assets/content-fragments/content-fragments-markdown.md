@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
+source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -44,7 +44,7 @@ Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hash
 
     `### This is an H3`
 
-    `###### This is a H6`
+    `###### This is an H6`
 
 In alternativa, è possibile creare un H1 sottolineando il testo con alcuni segni di uguale e creare un H2 sottolineando il testo con i segni meno. Esempio:
 
@@ -72,7 +72,7 @@ Di seguito sono riportati alcuni esempi di collegamenti in linea:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -136,7 +136,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizza il simbolo &ast; davanti agli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizza il simbolo &amp;ast; davanti agli elementi dell’elenco. Esempio:
 
     `* item in list`
 
@@ -156,7 +156,7 @@ Per creare un elenco ordinato, aggiungi i numeri, seguiti da un punto, davanti a
 
 Puoi aggiungere al testo lo stile corsivo o grassetto.
 
-Per aggiungere il corsivo, procedi come segue:
+È possibile aggiungere il corsivo nel modo seguente:
 
     `*single asterisks*`
 
