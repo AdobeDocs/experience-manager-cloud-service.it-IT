@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 88%
+source-wordcount: '559'
+ht-degree: 79%
 
 ---
 
 # Markdown {#markdown}
 
-Quando [crei](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) i frammenti di contenuto, è possibile che siano definiti [campi di testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) con **Tipo predefinito** di **Markdown**. L&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti sia per la creazione delle pagine che per la distribuzione headless:
+Durante l&#39;authoring di [frammenti di contenuto](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) è possibile che siano definiti [campi di testo su più righe](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) con il **tipo predefinito** di **Markdown**. L&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti sia per la creazione delle pagine che per la distribuzione headless:
 
 ![Campo testo su più righe Markdown nell&#39;editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Puoi definire:
 
 ## Notazione intestazione {#heading-notation}
 
-Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hashtag (#) viene utilizzato per un H1, due hashtag (##) per un H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hashtag (#) indica un H1, due hashtag (##) per un H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ Di seguito sono riportati alcuni esempi di collegamenti in linea:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -130,7 +130,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizza il simbolo &ast; davanti agli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizza il simbolo &amp;ast; davanti agli elementi dell’elenco. Esempio:
 
     `* item in list`
 
@@ -150,7 +150,7 @@ Per creare un elenco ordinato, aggiungi i numeri, seguiti da un punto, davanti a
 
 Puoi aggiungere al testo lo stile corsivo o grassetto.
 
-Per aggiungere il corsivo, procedi come segue:
+È possibile aggiungere il corsivo nel modo seguente:
 
     `*single asterisks*`
 
@@ -182,7 +182,7 @@ I blocchi di codice vengono generalmente utilizzati per illustrare il codice sor
 
 ## Escape barra rovesciata {#backslash-escapes}
 
-Puoi utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno un significato speciale nella sintassi di formattazione. Ad esempio, se desideri racchiudere una parola tra asterischi letterali (invece di un tag &lt;em> HTML), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
+Puoi utilizzare gli escape barra rovesciata per generare caratteri letterali che hanno anche un significato speciale nella sintassi di formattazione. Ad esempio, se desideri racchiudere una parola tra asterischi letterali (invece di un tag &lt;em> di HTML), puoi utilizzare le barre rovesciate prima degli asterischi, come segue:
 
     `\\*literal asterisks\\*`
 
