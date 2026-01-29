@@ -28,7 +28,7 @@ Le note a piè di pagina sono numerate in sequenza in base all&#39;ordine di vis
 * Fornisce informazioni aggiuntive che possono interrompere il normale flusso delle informazioni principali.
 * Fornisce informazioni parentetiche o autorizzazioni di copyright.
 
-In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
+In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
 
 ## Nota a piè di pagina in Forms adattivo {#using-footnote-adaptiveforms}
 
