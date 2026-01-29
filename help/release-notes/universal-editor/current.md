@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.01.22 dell’editor universale
-description: Queste sono le note sulla versione 2026.01.22 dell’editor universale.
+title: Note sulla versione 2026.01.29 dell’editor universale
+description: Queste sono le note sulla versione 2026.01.29 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
+source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 29%
+source-wordcount: '198'
+ht-degree: 35%
 
 ---
 
 
-# Note sulla versione 2026.01.22 dell’editor universale {#release-notes}
+# Note sulla versione 2026.01.29 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 22 gennaio 2026 di Universal Editor.
+Queste sono le note sulla versione del 29 gennaio 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,11 +26,12 @@ Queste sono le note sulla versione del 22 gennaio 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* Le etichette (come anteprime di testo brevi) sono state aggiunte ai blocchi di testo in [Struttura contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* TextArea è ora supportato per i campi di testo normale.
-* L’endpoint di configurazione viene ora utilizzato per le funzionalità dell’interfaccia utente.
-* L’area di testo da Frammenti di contenuto è ora supportata.
-* L’API dell’avviso popup ora è esposta alle estensioni.
+* Il metodo Remove Component è stato esposto a `editorActions`.
+* Il metodo del componente Copy è stato esposto a `editorActions`.
+* Il metodo del componente Sposta è stato esposto a `editorActions`.
+* Il metodo Add Component è stato esposto a `editorActions`.
+* Le definizioni sono state esposte all&#39;estensibilità [.](/help/implementing/universal-editor/extending.md)
+* Viene rilasciata la versione 2.0 dell’API di authoring dei documenti.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -40,12 +41,6 @@ Se ti interessa testare le prossime funzionalità elencate di seguito e condivid
 
 ## Altri miglioramenti {#other-improvements}
 
-* È stato risolto un problema relativo al layout dell’area di lavoro durante la navigazione tramite la barra delle posizioni.
-* Spazio vuoto iniziale bonificato nell’editor Rich Text.
-* La modifica in linea è stata ripristinata al momento di invio.
-* L&#39;etichetta di trascinamento è stata ripristinata in modo da non mostrare l&#39;intero contenuto.
-* Sono stati risolti i problemi di accessibilità del browser.
-* `selectEditables([])` è ora utilizzato per deselezionare tutti i componenti tramite estensibilità.
-* La tabella dei metadati viene ora creata nella posizione corretta.
-* È stato risolto un problema a causa del quale le risorse dei frammenti di contenuto copiate puntavano a `/data/undefined`.
-
+* L&#39;estensibilità `content` è stata rinominata in `details` per seguire lo schema API.
+* È stato migliorato il comportamento del menu contestuale.
+* È stato corretto un bug che si verificava facendo clic sul badge di un elemento modificabile in modo che il menu di scelta rapida si aprisse correttamente.

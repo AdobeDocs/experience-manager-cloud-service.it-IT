@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 14%
+source-wordcount: '2710'
+ht-degree: 13%
 
 ---
 
@@ -33,17 +33,25 @@ A questo scopo, l’editor universale offre agli autori di contenuti un’interf
 
 ## Modifica del contenuto {#editing-content}
 
-La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con un sottile contorno blu.
+La modifica del contenuto è semplice e intuitiva. Quando passi il mouse sul contenuto nell’editor, il contenuto modificabile viene evidenziato con un contorno sottile di colore blu chiaro e un badge.
 
-![Il contenuto modificabile viene evidenziato da una casella blu](assets/editable-content.png)
+![Il contenuto modificabile è evidenziato da una casella blu chiaro](assets/editable-content.png)
+
+Quando si tocca o si fa clic sul contenuto evidenziato, il contorno sottile di colore blu chiaro diventa un contorno di colore blu scuro con un badge.
+
+![Il contenuto selezionato è evidenziato da una casella blu scuro](assets/selected-content.png)
 
 >[!TIP]
 >
 >Per impostazione predefinita, tocca o fai clic sul contenuto per selezionarlo per la modifica. Se desideri esplorare il contenuto tramite i seguenti collegamenti, passa alla modalità di anteprima [.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-A seconda del contenuto selezionato, è possibile che siano disponibili diverse opzioni di modifica diretta e che siano disponibili ulteriori informazioni e opzioni per il contenuto nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+A seconda del contenuto selezionato, è possibile che nel pannello [proprietà siano disponibili diverse opzioni di modifica diretta e ulteriori informazioni e opzioni per il contenuto.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-Ogni elemento di contenuto modificabile viene contrassegnato con il tipo di contenuto. A seconda del contenuto, puoi fare clic su questo badge per accedere rapidamente alle azioni di modifica.
+### Menu di scelta rapida {#context-menu}
+
+Ogni elemento di contenuto modificabile viene contrassegnato con il tipo di contenuto.
+
+Puoi fare clic su questo badge per accedere rapidamente a un menu di scelta rapida con azioni di modifica. Facendo clic con il pulsante destro del mouse su un elemento modificabile non selezionato, questo viene selezionato automaticamente e viene aperto anche il menu di scelta rapida.
 
 ![Opzioni badge modificabili](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 ![Modifica del contenuto](assets/editing-content.png)
 
-Il contorno blu sottile si trasforma in un contorno blu pesante per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
+Il contorno sottile di colore blu chiaro diventa un contorno blu scuro per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
 
 Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel pannello delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Puoi anche modificare il testo nel pannello.
 
@@ -69,9 +77,9 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 Per comodità, le opzioni di formattazione e i dettagli del testo sono disponibili in due posizioni.
 
-#### Menu di scelta rapida {#context-menu}
+#### Menu di scelta rapida Rich Text {#rich-text-context-menu}
 
-Il menu di scelta rapida si apre sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
+Un menu di scelta rapida viene visualizzato sopra il blocco di testo RTF e offre opzioni di formattazione di base nel contesto. A causa di limiti di spazio, alcune opzioni potrebbero essere nascoste dietro il pulsante con i puntini di sospensione.
 
 ![Menu di scelta rapida RTF](assets/rich-text-context-menu.png)
 
@@ -227,7 +235,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
