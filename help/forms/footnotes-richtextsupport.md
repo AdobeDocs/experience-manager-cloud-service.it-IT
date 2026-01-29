@@ -4,18 +4,16 @@ description: Utilizza l’editor Rich Text per le note a piè di pagina in un mo
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
 # Componente nota a piè di pagina {#footnotecomponent}
 
->[!NOTE]
->
-> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base.
+Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/creating-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base.
 
 **[!UICONTROL Nota a piè di pagina]** è la parte aggiuntiva di informazioni o note visualizzate alla fine della pagina. [!UICONTROL La nota a piè di pagina] comprende le note indicate nel testo con i numeri in apice.
 
@@ -30,7 +28,7 @@ Le note a piè di pagina sono numerate in sequenza in base all&#39;ordine di vis
 * Fornisce informazioni aggiuntive che possono interrompere il normale flusso delle informazioni principali.
 * Fornisce informazioni parentetiche o autorizzazioni di copyright.
 
-In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
+In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Nota a piè di pagina in Forms adattivo {#using-footnote-adaptiveforms}
 
@@ -53,14 +51,15 @@ Per aggiungere una nota a piè di pagina in Adaptive Forms, effettuate le seguen
 
 1. Dal browser componenti, trascina il componente **[!UICONTROL Segnaposto nota a piè di pagina]** nel modulo adattivo.
 
-   >[!NOTE]
-   >
-   >* Nell&#39;istanza di pubblicazione, le note a piè di pagina vengono visualizzate nella posizione in cui il componente **[!UICONTROL Segnaposto nota a piè di pagina]** viene inserito nel modulo adattivo.
-   >* Quando si passa da un pannello all&#39;altro, nel **[!UICONTROL segnaposto nota a piè di pagina]** vengono visualizzate solo le note a piè di pagina visibili presenti nel pannello visualizzato.
-
 1. Salva le proprietà.
 
 In fase di esecuzione, il numero viene visualizzato nel testo come apice e la descrizione corrispondente viene visualizzata nel componente **[!UICONTROL Nota a piè di pagina]** nella posizione in cui [!UICONTROL Segnaposto nota a piè di pagina] viene inserito nel modulo adattivo. Puoi passare direttamente alla descrizione della nota a piè di pagina facendo clic sul numero corrispondente nella [!UICONTROL Nota a piè di pagina].
+
+## Comportamento del segnaposto della nota a piè di pagina in Forms adattivo
+
+* Nell&#39;istanza di pubblicazione, le note a piè di pagina vengono visualizzate nella posizione in cui il componente **[!UICONTROL Segnaposto nota a piè di pagina]** viene inserito nel modulo adattivo.
+* Le note a piè di pagina supportano le interruzioni di riga, consentendo agli autori dei moduli di formattare il contenuto su più righe all&#39;interno del componente **[!UICONTROL Segnaposto nota a piè di pagina]**.
+* Le note a piè di pagina rimangono sempre visibili nel **[!UICONTROL Segnaposto nota a piè di pagina]**, indipendentemente dalla visibilità dei pannelli associati.
 
 
 ## Consulta anche {#see-also}

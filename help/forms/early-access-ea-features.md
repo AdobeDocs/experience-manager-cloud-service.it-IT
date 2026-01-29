@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3096'
 ht-degree: 19%
 
 ---
@@ -312,6 +312,8 @@ L’archiviazione dei PDF in Azure Blob Storage consente la gestione centralizza
 * [Navigazione avanzata con supporto payload eventi](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): l&#39;azione **Accedi a** nei gestori del servizio Invoke supporta `EVENT_PAYLOAD`, consentendo agli autori dei moduli di configurare azioni di follow-up in base alle risposte agli eventi.
 
 * [Supporto di funzioni ed espressioni matematiche nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): i parametri di input ora supportano sia le chiamate di funzioni che le espressioni matematiche, consentendo agli autori di moduli di trasmettere direttamente i valori calcolati in modo dinamico.
+
+* [Recuperare i valori delle proprietà da un array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): richiama un&#39;API con una funzione personalizzata per estrarre i valori da un array JSON e associarli direttamente ai campi modulo.
 
 ## Consulta anche
 

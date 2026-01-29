@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integrazione dell’API nell’editor di regole, richiama i miglioramenti del servizio
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 2%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Inoltre, l&#39;Editor di regole visive consente di definire **success** e **gest
 | **Complessità** | Maggiore impegno di configurazione (richiede mappatura e configurazione) | Semplice e leggero |
 | **Più Adatto Per** | Casi d’uso aziendali o su larga scala con più moduli | Piccoli moduli, prototipi o chiamate API una tantum |
 
-## Configurazione integrazione API
+## Configurazione dell’integrazione API
 
 La schermata seguente mostra la finestra di configurazione dell’integrazione API:
 
@@ -123,6 +123,10 @@ Ad esempio, quando l&#39;utente apre **Paese di cittadinanza**, l&#39;elenco dei
 
 Analogamente, **Paese di rilascio Passport** e **Paese di destinazione** utilizzano la stessa chiamata API, garantendo dati coerenti e aggiornati in tutti e tre i campi.
 
+>
+>
+> È possibile [recuperare i valori delle proprietà da un array JSON richiamando un&#39;API e utilizzando una funzione personalizzata](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Questo approccio consente di estrarre i valori e associarli direttamente ai campi modulo.
+
 ## Implementazione del meccanismo dei tentativi per gli errori API
 
 Quando una richiesta API ha esito negativo, spesso è utile riprovare prima di segnalare un errore all’utente. Puoi implementare un meccanismo di polling e tentativi scrivendo codice personalizzato nel file **function.js**.
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 Nel codice riportato sopra, la funzione **retryHandler** gestisce le richieste API con tentativi automatici in caso di errore. Richiede una funzione di richiesta (requestFn) e tenta la richiesta fino a due volte, aggiungendo metadati per ogni nuovo tentativo.
-
->[!NOTE]
->
-> Per i passaggi dettagliati su come aggiungere funzioni personalizzate, consulta l&#39;articolo [Introduzione alle funzioni personalizzate per Forms adattivo basate sui componenti core](/help/forms/create-and-use-custom-functions.md).
 
 ## Domande frequenti
 

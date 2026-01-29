@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,10 @@ Immettere `101` nella casella di testo `Pet ID` per popolare dinamicamente le op
 
 ![Risultato](/help/forms/assets/output1.png)
 
+> 
+>
+> Le opzioni a discesa possono anche essere compilate dinamicamente richiamando un servizio, analizzando la risposta JSON e applicando funzioni personalizzate. Per ulteriori dettagli, vedere [questa sezione](#retrieve-property-values-from-a-json-array).
+
 ### Caso d’uso 2: impostare un pannello ripetibile utilizzando l’output del servizio di richiamo
 
 Questo caso d&#39;uso illustra come popolare i pannelli ripetibili in modo dinamico in base all&#39;output di un **servizio Invoke**.
@@ -269,6 +273,123 @@ Facoltativamente, configura un gestore degli errori per visualizzare un messaggi
 Quando si fa clic sul pulsante **Invia**, viene richiamato il servizio API `redirect-api`. Dopo il completamento, l&#39;utente viene reindirizzato alla pagina **Contattaci**.
 
 ![Output payload evento](/help/forms/assets/output5.gif)
+
+## Recuperare i valori delle proprietà da un array JSON
+
+Forms adattivo supporta la chiamata di un servizio, l’elaborazione delle risposte JSON e il popolamento dinamico dei campi del modulo. Questa sezione descrive come estrarre i valori delle proprietà da un array JSON e associarli ai campi modulo.
+
+### Risposta JSON di esempio
+
+L&#39;esempio seguente rappresenta le aree di vendita e l&#39;elenco dei rappresentanti commerciali degli Stati Uniti:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Funzione personalizzata per estrarre i valori delle proprietà
+
+<span class="preview"> Si tratta di una funzionalità precoce. Se sei interessato, invia un&#39;e-mail rapida dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità</a>. </span>
+
+Utilizza la seguente funzione personalizzata per estrarre i valori delle proprietà dall’array JSON.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+La funzione personalizzata accetta:
+
+* **jsonArray**: array JSON restituito dal servizio
+* **propertyName**: proprietà da estrarre
+
+La funzione personalizzata restituisce un semplice array di valori.
+
+>[!NOTE]
+>
+> Per i passaggi dettagliati su come aggiungere funzioni personalizzate, consulta l&#39;articolo [Introduzione alle funzioni personalizzate per Forms adattivo basate sui componenti core](/help/forms/create-and-use-custom-functions.md).
+
+
+### Utilizzare la funzione nell’editor di regole
+
+Per recuperare il valore specifico dall’array JSON:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+Nell&#39;esempio seguente viene illustrato come compilare un modulo `Sales Department` utilizzando questa risposta.
+
+Ad esempio, creiamo un modulo `Sales Department` che include i menu a discesa `Select Region` e `Select Sales Representative`.
+
+**Passaggio 1: richiama il servizio all&#39;inizializzazione del modulo**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> Per informazioni su come integrare le API senza creare un modello dati modulo nell&#39;editor di regole visive, [fai clic qui](/help/forms/api-integration-in-rule-editor.md).
+
+**Passaggio 2: popolare il menu a discesa Regione**
+
+Aggiungi un handler di successo per la chiamata del servizio e configura la seguente azione:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+Questa regola legge l&#39;array JSON, estrae i valori della proprietà `region` e assegna i valori al menu a discesa `Select Region`.
+
+Allo stesso modo, configura l&#39;azione per il menu a discesa `Select Sales Representative` nel Gestore di successo.
+
+![Payload evento per array JSON](/help/forms/assets/event-payload.png)
+
+Quando il modulo viene caricato, vengono restituiti i dati JSON e la funzione personalizzata estrae i valori delle proprietà e il menu a discesa viene popolato automaticamente:
+
+![Modulo payload eventi](/help/forms/assets/event-payload-form.png)
 
 ## Domande frequenti
 
