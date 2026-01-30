@@ -3,9 +3,9 @@ title: Panoramica di Experience Production Agent
 description: Scopri in che modo l’agente di produzione Experience in AEM consente di accelerare la creazione dei contenuti e di orchestrare automaticamente le modifiche.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
+source-git-commit: a0a6c14da73ba6881e55aa5089fbde13880f9ec5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,12 @@ L&#39;agente fornisce i seguenti processi:
 * [Aggiornamento contenuti](#content-update)
 * [Creazione modulo](#form-creation)
 * [Creazione di comunicazioni](#communications-creation)
-* [Migrazione del sito](#site-migration)
 
 >[!IMPORTANT]
 >
 >Le risposte generate dall’intelligenza artificiale possono essere imprecise o fuorvianti. Controlla nuovamente le correzioni e le risposte suggerite.
 >
->Consulta anche [Linee guida per l&#39;utente di Adobe Experience Cloud Generative AI](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+>Vedi anche [Linee guida per l&#39;utente di Adobe Experience Cloud Generative AI](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Aggiornamento contenuti {#content-update}
 
@@ -44,15 +43,11 @@ L&#39;abilità [Creazione di comunicazioni](/help/ai-in-aem/agents/production/co
 
 >[!NOTE]
 >
-> L&#39;abilità di creazione delle comunicazioni è attualmente in formato alfa. Se desideri partecipare, invia una richiesta dal tuo indirizzo e-mail ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
-### Migrazione del sito {#site-migration}
-
-[Migrazione siti](/help/ai-in-aem/agents/production/site-migration.md) esegue la migrazione diretta di siti non AEM in ambienti AEM (Experience Delivery Services), garantendo che siano performanti, conformi e pronti per gli agenti. L&#39;agente semplifica la configurazione e la trasformazione, riducendo l&#39;impegno manuale e il time-to-value.
-
-L’agente deve essere in grado di lavorare con altre competenze dell’agente, ad esempio:
+> L&#39;abilità di creazione delle comunicazioni è attualmente in formato alfa. Se desideri partecipare, invia una richiesta dal tuo indirizzo e-mail ufficiale a [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ## Uso con altri agenti {#use-with-other-agents}
+
+L&#39;agente è in grado di lavorare con altre competenze dell&#39;agente, ad esempio:
 
 * Ottenere risorse di origine da Experience Advisory Agent
 
