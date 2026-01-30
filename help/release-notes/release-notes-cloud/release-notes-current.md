@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 38%
+source-wordcount: '2161'
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -83,11 +83,16 @@ Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/rele
 
 ### Server MCP dei contenuti {#content-MCP}
 
-Le applicazioni di chat (ad es. ChatGPT) e le IDE moderne (ad es. Cursor) possono utilizzare il protocollo MCP (Model Context Protocol) per consentire a un modello di linguaggio di grandi dimensioni di chiamare gli strumenti esposti da un server MCP. Invece di scrivere codice in base a specifiche API di basso livello, puoi descrivere ciò che desideri nel linguaggio naturale e far tradurre tale intento dalle LLM nelle chiamate API appropriate. E in alcuni casi, un prompt può essere più comodo che navigare in un’interfaccia utente.
+AEM Cloud Service ora include **Content MCP Server**, che fornisce un modo standardizzato per consentire alle esperienze basate sull&#39;intelligenza artificiale di lavorare con i contenuti AEM tramite strumenti compatibili con MCP.
 
-Ad esempio, puoi richiedere a ChatGPT: *Modifica /en/coffee.html in AEM: modifica il testo Frescopa Coffee nel contenuto impostandolo come desiderato per un ventenne.*
+Sviluppatori e utenti esperti che lavorano su app di chat e piattaforme di agenti possono collegare AEM a compilazioni e automazioni personalizzate, in modo che il lavoro sui contenuti diventi parte dei flussi di lavoro aziendali end-to-end.
 
-AEM fornisce due server Content MCP, **di sola lettura** e **di lettura/scrittura**, con strumenti per l&#39;utilizzo di **pagine**, **frammenti di contenuto** e **Assets**. Questi server possono essere utilizzati dai seguenti client MCP: **ChatGPT**, **Claude**, **Cursor** e **Microsoft Copilot Studio**.
+AEM fornisce due server:
+
+1. **Server MCP dei contenuti di sola lettura** - per recuperare i contenuti in modo sicuro
+1. **Server MCP del contenuto di lettura/scrittura** - per apportare modifiche al contenuto
+
+Questi server MCP includono strumenti per l&#39;utilizzo di **Pagine**, **Frammenti di contenuto** e **Assets** e possono essere utilizzati dai seguenti client MCP: **ChatGPT**, **Claude**, **Cursore** e **Microsoft Copilot Studio**.
 
 Ulteriori informazioni in [Utilizzo di MCP con AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Per domande o commenti, invia un&#39;e-mail a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
@@ -95,9 +100,9 @@ Ulteriori informazioni in [Utilizzo di MCP con AEM Cloud Service](/help/ai-in-ae
 
 **Ricerca IA**
 
-La ricerca basata su IA introduce un’esperienza di ricerca intelligente e basata sul contesto che va oltre la tradizionale corrispondenza delle parole chiave, comprendendo il significato e le finalità alla base delle query degli utenti. Basato sull’intelligenza artificiale e sull’apprendimento automatico, fornisce risultati più precisi anche quando le query sono formulate in modo diverso, contengono errori ortografici, utilizzano sinonimi o vengono inviate in lingue diverse, consentendo agli utenti di trovare contenuti rilevanti più rapidamente e con meno sforzo.
+Ricerca IA introduce un’esperienza di ricerca intelligente e basata sul contesto che va oltre la tradizionale corrispondenza delle parole chiave, comprendendo il significato e le finalità alla base delle query degli utenti. Basato sull’intelligenza artificiale e sull’apprendimento automatico, fornisce risultati più precisi anche quando le query sono formulate in modo diverso, contengono errori ortografici, utilizzano sinonimi o vengono inviate in lingue diverse, consentendo agli utenti di trovare contenuti rilevanti più rapidamente e con meno sforzo.
 
-Per ulteriori informazioni, vedi Ricerca basata su IA in [visualizzazione Assets](/help/assets/search-assets-view.md#ai-search) e [visualizzazione Amministratore](/help/assets/search-assets.md#ai-search).
+Per ulteriori informazioni, vedere Ricerche IA in [Assets view](/help/assets/search-assets-view.md#ai-search) e [Admin view](/help/assets/search-assets.md#ai-search).
 
 **Versione app desktop 3.0.1**
 
