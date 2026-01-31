@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3133'
 ht-degree: 19%
 
 ---
@@ -127,6 +127,8 @@ Comunicazioni interattive su Cloud è una soluzione potente per la creazione, la
 * **Overflow del contenuto**: opzione &quot;Consenti interruzioni di pagina all&#39;interno del contenuto&quot; per i layout con flusso per una modifica ottimale di più pagine e una migliore gestione del testo per i documenti complessi.
 
 * **Modifica file XDP**: è ora possibile modificare i file XDP in un browser anziché in Forms Designer che viene eseguito solo sul desktop Microsoft Windows.
+
+* **Richiama l&#39;interfaccia utente Associate in un&#39;istanza Publish**: ora puoi richiamare l&#39;interfaccia utente Associate direttamente nelle istanze Publish. Questa funzionalità definisce la configurazione, la struttura del payload e il flusso di richiamo richiesti, semplificando l’integrazione e accelerando l’implementazione negli ambienti.
 
 ##### Numerazione dinamica delle pagine
 

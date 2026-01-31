@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 39%
+source-wordcount: '2145'
+ht-degree: 37%
 
 ---
 
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,43 +115,16 @@ Per ulteriori informazioni, vedere Ricerche IA in [Assets view](/help/assets/sea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+* [Miglioramenti al segnaposto nota a piè di pagina in Forms adattivo (componenti di base)](/help/forms/footnotes-richtextsupport.md):
+   * Il rendering delle note a piè di pagina è stato ulteriormente perfezionato per supportare la formattazione su più righe attraverso interruzioni di riga, consentendo una presentazione più chiara ed espressiva del contenuto delle note a piè di pagina.
+   * Le note a piè di pagina ora rimangono sempre visibili all’interno del segnaposto della nota a piè di pagina, indipendentemente dalla visibilità dei pannelli associati, garantendo un accesso coerente alle informazioni critiche.
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
-Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità unica per ottenere l’accesso esclusivo a innovazioni all’avanguardia e contribuire a modellarne lo sviluppo.
+* [Recuperare valori da un array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): le funzionalità di integrazione dei dati espanse ora consentono di richiamare le API tramite funzioni personalizzate per estrarre in modo efficiente i valori dagli array JSON e associarli direttamente ai campi del modulo adattivo. Questo miglioramento semplifica il consumo di dati, riduce al minimo la mappatura manuale e supporta esperienze di moduli più dinamiche e basate su dati.
 
-In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
-
-#### Miglioramenti alla comunicazione interattiva
-
-##### Blocco modello
-
-Blocca il contenuto e gli elementi di layout all’interno dei modelli per mantenere l’integrità del brand ed evitare modifiche non autorizzate. Ciò garantisce la coerenza del design in tutte le comunicazioni.
-
-##### Supporto per overflow dei contenuti
-
-Introduzione all’opzione &quot;Consenti interruzioni di pagina nel contenuto&quot; per i layout a flusso. Questo miglioramento consente di semplificare la modifica di più pagine e migliorare la gestione del testo per i documenti complessi.
-
-##### Modifica file XDP
-
-L’editor di comunicazioni interattive ora supporta la modifica XDP, inclusa l’integrazione dei frammenti. È ora possibile modificare i file XDP in un browser anziché in Forms Designer che viene eseguito solo su Microsoft Windows.
-
-##### Numerazione dinamica delle pagine
-
-Visualizza automaticamente &quot;Pagina # di ##&quot; nelle pagine master per una paginazione chiara e coerente nei documenti a più pagine.
+* **Richiama l&#39;interfaccia utente Associate in un&#39;istanza Publish**: il supporto esteso è ora disponibile per richiamare l&#39;interfaccia utente Associate direttamente nelle istanze Publish. Questa funzionalità definisce la configurazione, la struttura del payload e il flusso di richiamo richiesti, semplificando l’integrazione e accelerando l’implementazione negli ambienti.
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +143,7 @@ Key optimization opportunities include:
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
 -->
 
-## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### [!DNL Experience Manager] come [!DNL Cloud Service] Avvisi importanti di Foundation {#foundation-notices}
 
