@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
+source-git-commit: f7fc0b6c65677217461c71aea2c6213489558d9c
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2128'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -119,6 +119,7 @@ Per ulteriori informazioni, vedere Ricerche IA in [Assets view](/help/assets/sea
 
 * È stato aggiunto il supporto di [più righe con interruzioni di riga](/help/forms/footnotes-richtextsupport.md) per consentire una presentazione più chiara ed espressiva del contenuto delle note a piè di pagina.
 * Le note a piè di pagina ora rimangono sempre visibili all’interno del segnaposto delle note a piè di pagina, indipendentemente dalla visibilità dei pannelli associati, garantendo un accesso coerente alle informazioni critiche.
+  ![Descrizione nota](/help/forms/assets/footnote-description.png)
 
 ### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
