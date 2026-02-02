@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2126'
 ht-degree: 37%
 
 ---
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -115,16 +115,20 @@ Per ulteriori informazioni, vedere Ricerche IA in [Assets view](/help/assets/sea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Miglioramenti al segnaposto nota a piè di pagina in Forms adattivo (componenti di base)](/help/forms/footnotes-richtextsupport.md):
-   * Il rendering delle note a piè di pagina è stato ulteriormente perfezionato per supportare la formattazione su più righe attraverso interruzioni di riga, consentendo una presentazione più chiara ed espressiva del contenuto delle note a piè di pagina.
-   * Le note a piè di pagina ora rimangono sempre visibili all’interno del segnaposto della nota a piè di pagina, indipendentemente dalla visibilità dei pannelli associati, garantendo un accesso coerente alle informazioni critiche.
+**Miglioramenti al segnaposto nota a piè di pagina in Forms adattivo (componenti di base)**
 
+* È stato aggiunto il supporto di [più righe con interruzioni di riga](/help/forms/footnotes-richtextsupport.md) per consentire una presentazione più chiara ed espressiva del contenuto delle note a piè di pagina.
+* Le note a piè di pagina ora rimangono sempre visibili all’interno del segnaposto delle note a piè di pagina, indipendentemente dalla visibilità dei pannelli associati, garantendo un accesso coerente alle informazioni critiche.
 
 ### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
 
-* [Recuperare valori da un array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): le funzionalità di integrazione dei dati espanse ora consentono di richiamare le API tramite funzioni personalizzate per estrarre in modo efficiente i valori dagli array JSON e associarli direttamente ai campi del modulo adattivo. Questo miglioramento semplifica il consumo di dati, riduce al minimo la mappatura manuale e supporta esperienze di moduli più dinamiche e basate su dati.
+**Recuperare i valori da un array JSON**
 
-* **Richiama l&#39;interfaccia utente Associate in un&#39;istanza Publish**: il supporto esteso è ora disponibile per richiamare l&#39;interfaccia utente Associate direttamente nelle istanze Publish. Questa funzionalità definisce la configurazione, la struttura del payload e il flusso di richiamo richiesti, semplificando l’integrazione e accelerando l’implementazione negli ambienti.
+Funzionalità funzioni personalizzate estese per [estrarre valori da array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), ricevuti tramite una chiamata API, e associarli direttamente ai campi del modulo adattivo. Ora puoi sviluppare regole e regole di business con una mappatura dei dati manuale minima.
+
+**Eseguire l&#39;interfaccia utente Associate in un&#39;istanza Publish**
+
+È ora possibile eseguire [Associa interfaccia utente](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) direttamente sulle istanze di pubblicazione. In questo modo gli agenti possono accedere all’interfaccia utente di Associa e personalizzare facilmente le comunicazioni per i clienti.
 
 <!--
 **Forms Optimization opportunities**
