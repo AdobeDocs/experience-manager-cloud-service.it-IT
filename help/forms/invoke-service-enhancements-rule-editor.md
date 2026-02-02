@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ Quando si fa clic sul pulsante **Invia**, viene richiamato il servizio API `redi
 
 ## Recuperare i valori delle proprietà da un array JSON
 
+<span class="preview"> Si tratta di una funzionalità precoce. Se sei interessato, invia un&#39;e-mail rapida dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità</a>. </span>
+
 Forms adattivo supporta la chiamata di un servizio, l’elaborazione delle risposte JSON e il popolamento dinamico dei campi del modulo. Questa sezione descrive come estrarre i valori delle proprietà da un array JSON e associarli ai campi modulo.
 
 ### Risposta JSON di esempio
@@ -309,8 +311,6 @@ L&#39;esempio seguente rappresenta le aree di vendita e l&#39;elenco dei rappres
 ```
 
 ### Funzione personalizzata per estrarre i valori delle proprietà
-
-<span class="preview"> Si tratta di una funzionalità precoce. Se sei interessato, invia un&#39;e-mail rapida dal tuo indirizzo di lavoro a mailto:aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità</a>. </span>
 
 Utilizza la seguente funzione personalizzata per estrarre i valori delle proprietà dall’array JSON.
 
