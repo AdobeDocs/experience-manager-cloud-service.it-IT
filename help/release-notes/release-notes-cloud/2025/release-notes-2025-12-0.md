@@ -3,10 +3,10 @@ title: Note sulla versione 2025.12.0 di  [!DNL Adobe Experience Manager]  as a C
 description: Note sulla versione 2025.12.0 di  [!DNL Adobe Experience Manager]  as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: 9e81e0f3ed4b3e4ac02655cf4203191c61007b1d
+source-git-commit: 552d967edb81a8c586dc0a6a8a9bc9902342014c
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 48%
+source-wordcount: '1832'
+ht-degree: 51%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -254,14 +254,6 @@ Distribuisci le versioni del codice in produzione, ma limitalo al traffico di te
 
 Invia un’e-mail a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) per richiedere l’accesso e condividere il feedback.
 
-
-#### Risposte basate sull’intelligenza artificiale - Risposte più intelligenti e in base al contesto per AEM Sites (programma Beta) {#ai-answers-beta}
-
-AI Answers introduce un nuovo modo per i visitatori di interagire con il contenuto. Basato sulla tecnologia Retrieval-Augmented Generation (RAG), utilizza i dati gestiti da AEM per fornire risposte precise e coerenti direttamente all’interno delle esperienze digitali.
-
-Stiamo preparando il lancio del programma Beta AI Answers e invitiamo i clienti a registrare il loro interesse. Poiché la versione beta avrà una capacità molto limitata, le iscrizioni anticipate riceveranno la priorità. La partecipazione alla versione beta consente di esplorare le risposte AI nell’ambiente AEM Cloud Service, convalidare le prestazioni e l’accuratezza e contribuire a definire l’esperienza futura prima che diventi generalmente disponibile.
-
-Per richiedere la partecipazione o ricevere aggiornamenti, contattare [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 #### Snapshot per RDE (programma Beta) {#rde-snapshot-program}
 
