@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d9d9455f47145f190bfba01c52478b2a302c439
+source-git-commit: 1c5cbed1ea9e8beda14ed3c66f14a446941cd9cf
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2011'
 ht-degree: 39%
 
 ---
@@ -40,7 +40,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -56,9 +56,9 @@ I programmi beta di Adobe Experience Manager (AEM) consentono ai clienti di acce
 L’accesso anticipato alle funzioni sviluppate da Adobe consente a clienti e partner di fornire feedback e plasmare lo sviluppo dei prodotti. Consente inoltre di prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
 
 **Programmi beta correnti**
-Nelle sezioni seguenti sono elencati i programmi beta attivi.
+Nelle sezioni seguenti sono elencati i programmi beta ed Explorer attivi.
 
-### Agenti in AEM (programma Beta) {#agents-in-aem-beta-program}
+### Agenti in AEM (programma Explorer) {#agents-in-aem-beta-program}
 
 Accesso anticipato a nuove potenti funzionalità di AEM Agent in ambienti di produzione, governance, ottimizzazione, discovery e sviluppo. Il tuo feedback influisce direttamente sulla roadmap e sulle funzioni finali di Adobe. Per ulteriori informazioni, consulta [Panoramica degli agenti in AEM](/help/ai-in-aem/agents/overview.md).
 
