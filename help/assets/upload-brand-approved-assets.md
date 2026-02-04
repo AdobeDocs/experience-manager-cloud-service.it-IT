@@ -19,7 +19,7 @@ ht-degree: 17%
 
 [Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da origini dati OneDrive o Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o dalle origini dati di OneDrive e Dropbox, per migliorare le funzionalità di ricerca.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445386/?captions=ita&learn=on){transcript=true}
 
 Le risorse contrassegnate come `Approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub. Per ulteriori informazioni, consulta [Approvare le risorse per Content Hub](/help/assets/approve-assets-content-hub.md).
 

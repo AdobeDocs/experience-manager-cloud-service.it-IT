@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Crea un collegamento alle risorse selezionate per condividerle facilmente con altri utenti. In qualità di utente [!DNL Content Hub] autorizzato, seleziona una o più risorse disponibili nell&#39;ambiente [!DNL Content Hub], genera un collegamento e invialo ad altri utenti pubblici o privati.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474927/?captions=ita&learn=on&enablevpops=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 

@@ -27,7 +27,7 @@ Puoi importare le risorse dalle seguenti origini dati:
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3451967/?captions=ita&learn=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 
