@@ -35,7 +35,7 @@ Prima di integrare l’interfaccia utente Associa all’applicazione, assicurati
 
 - Comunicazione interattiva creata e pubblicata
 - Browser con supporto per popup abilitato
-- Associa [ utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Associa [&#x200B; utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
 - Autenticazione configurata - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
