@@ -2,10 +2,10 @@
 title: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 description: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
+source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
 workflow-type: tm+mt
-source-wordcount: '5626'
-ht-degree: 88%
+source-wordcount: '5642'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Alcune delle funzioni chiave di Gestione delle risorse digitali di Adobe includo
 
 >[!BEGINTABS]
 
->[!TAB Acquisizione della risorsa]
+>[!TAB Acquisizione]
 
 ## Acquisizione della risorsa {#asset-ingestion}
 
@@ -239,7 +239,7 @@ Utilizza questi collegamenti per accedere alla documentazione dettagliata sui se
 </td>
 </table>
 
->[!TAB Individuazione delle risorse]
+>[!TAB Individuazione]
 
 ## Individuazione delle risorse {#asset-discovery}
 
@@ -269,11 +269,11 @@ AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giust
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=it">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best practice per la gestione dei metadati" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=it">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best practice per la gestione dei metadati</strong>
       </a>
    </div>
@@ -346,7 +346,7 @@ AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giust
 </td>
 </table>
 
->[!TAB Governance delle risorse]
+>[!TAB Governance]
 
 ## Gestione e governance delle risorse {#asset-management-governance}
 
@@ -666,10 +666,10 @@ L&#39;**agente di ottimizzazione dei contenuti** consente di perfezionare e adat
 
 **Prompt di esempio:**
 
-* `Create a 2000px JPEG rendition.`
-* `Sharpen the image.`
-* `Change background color to #ff8932.`
-* `Create a rendition for an Instagram story.`
+* Creazione di una copia trasformata JPEG da 2000 pixel.
+* Contrasta l&#39;immagine.
+* Cambia il colore di sfondo in #ff8932.
+* Crea una rappresentazione di una storia Instagram.
 
 **Limitazioni:** Alcune ottimizzazioni non sono supportate per le risorse PNG.
 
@@ -695,11 +695,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Panoramica di Discovery Agent" src="./assets/discovery-agent-overview.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Panoramica di Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Panoramica dell'agente di individuazione</strong>
       </a>
    </div>
@@ -709,11 +709,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Panoramica sull’ottimizzazione dei contenuti" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Panoramica dell'agente di ottimizzazione dei contenuti</strong>
       </a>
    </div>
@@ -723,11 +723,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Panoramica dell’agente di governance" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Panoramica dell'agente di governance</strong>
       </a>
    </div>
@@ -741,7 +741,7 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 
 Gli agenti sono accessibili tramite l&#39;**Assistente AI** in AEM Cloud Service. Accedi a [experience.adobe.com](https://experience.adobe.com/) e interagisci con l&#39;Assistente AI utilizzando i prompt del linguaggio naturale.
 
->[!TAB Attivazione risorse]
+>[!TAB Attivazione]
 
 ## Attivazione della risorsa {#asset-activation}
 
