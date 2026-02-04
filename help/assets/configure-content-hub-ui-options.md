@@ -2,7 +2,7 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '2265'
 ht-degree: 9%
@@ -35,6 +35,8 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 * Eventuali collegamenti personalizzati da includere su Content Hub, oltre a risorse, raccolte e informazioni.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+
 ## Prerequisiti {#prerequisites-configuration-ui}
 
 [Gli amministratori di Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) possono impostare le opzioni di configurazione per altri utenti all&#39;interno della tua organizzazione.
@@ -43,7 +45,7 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 Per accedere alle opzioni di configurazione in Content Hub:
 
-1. Fai clic sull’icona utente nel riquadro a destra.
+1. Fai clic sull’icona dell’utente nel riquadro a destra.
 
 1. Nella sezione **[!UICONTROL Impostazioni prodotto]**, seleziona **[!UICONTROL Configurazioni]**.
 
@@ -262,7 +264,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 

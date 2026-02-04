@@ -3,16 +3,18 @@ title: Condividi Assets in [!DNL the Content Hub]
 description: Condividi Assets in [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a6d995eddd714c356eadc6c1b668887bdfd011cd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # Condividere risorse in Content Hub {#search-assets-as-a-link}
 
 Crea un collegamento alle risorse selezionate per condividerle facilmente con altri utenti. In qualità di utente [!DNL Content Hub] autorizzato, seleziona una o più risorse disponibili nell&#39;ambiente [!DNL Content Hub], genera un collegamento e invialo ad altri utenti pubblici o privati.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 

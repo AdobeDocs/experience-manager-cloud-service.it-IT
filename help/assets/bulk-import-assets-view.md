@@ -4,10 +4,10 @@ description: Scopri come importare in blocco le risorse utilizzando la nuova int
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 87%
+source-wordcount: '1874'
+ht-degree: 88%
 
 ---
 
@@ -26,6 +26,8 @@ Puoi importare le risorse dalle seguenti origini dati:
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 
@@ -224,7 +226,3 @@ Fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispo
 ## Passare alle risorse dopo l’importazione in blocco {#view-assets-after-bulk-import}
 
 Per visualizzare il percorso di destinazione in cui le risorse vengono importate dopo l’esecuzione del processo di importazione in blocco, fai clic sull’![icona Altro](assets/do-not-localize/more-icon.svg) in corrispondenza del nome della configurazione, quindi fai clic su **[!UICONTROL Visualizza risorse]**.
-
-## Video: importare risorse in blocco tramite la vista Assets
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

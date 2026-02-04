@@ -3,7 +3,7 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -19,6 +19,8 @@ ht-degree: 17%
 
 [Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da origini dati OneDrive o Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o dalle origini dati di OneDrive e Dropbox, per migliorare le funzionalità di ricerca.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+
 Le risorse contrassegnate come `Approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub. Per ulteriori informazioni, consulta [Approvare le risorse per Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Per migliorare ulteriormente la ricerca delle risorse, Content Hub consente di:
@@ -29,7 +31,7 @@ Per migliorare ulteriormente la ricerca delle risorse, Content Hub consente di:
 
 * Utilizza l&#39;intelligenza artificiale fornita da [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per applicare automaticamente tag rilevanti a tutte le risorse caricate. Questi tag, o tag avanzati, consentono di velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti.
 
-Assicurati di caricare solo le risorse approvate dal marchio [&#x200B; in Content Hub](/help/assets/approve-assets.md).
+Assicurati di caricare solo le risorse approvate dal marchio [ in Content Hub](/help/assets/approve-assets.md).
 
 ![Carica risorse approvate dal marchio](assets/upload-brand-approved-assets.png)
 

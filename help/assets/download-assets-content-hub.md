@@ -3,7 +3,7 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 # Scaricare risorse da Content Hub {#download-assets}
 
 [!DNL Content Hub] ti consente di scaricare e condividere le risorse. L&#39;interfaccia utente di [!DNL Content Hub] visualizza solo le risorse approvate. Queste risorse possono includere immagini, video o qualsiasi altro contenuto digitale. [!DNL Content Hub] migliora l&#39;accessibilità e l&#39;adattabilità per una distribuzione efficace delle risorse.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
 È possibile scaricare una o più risorse e le relative rappresentazioni disponibili utilizzando [!DNL Content Hub].
 
@@ -145,7 +147,7 @@ Ulteriori informazioni su [visualizzare e gestire le rappresentazioni in [!DNL E
 
 * [Rappresentazioni dinamiche](/help/assets/renditions.md#dynamic-renditions): le rappresentazioni dinamiche sono versioni personalizzate in tempo reale delle risorse per eseguire varie azioni, ad esempio ridimensionare le immagini per diverse risoluzioni del dispositivo o ritagliarle per adattarle a varie proporzioni. Questi rendering ti consentono di offrire esperienze personalizzate e ottimizzate per requisiti più ampi. Vengono creati rendering dinamici delle risorse nell&#39;ambiente di authoring [!DNL Adobe Experience Manager Assets]. Per informazioni sui passaggi necessari per abilitare le rappresentazioni dinamiche, vedere [Abilitare le rappresentazioni dinamiche](#enable-dynamic-media-renditions).
 
-* [Ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): il ritaglio avanzato si concentra esclusivamente sulla parte essenziale di una risorsa durante il processo di ritaglio. Il ritaglio intelligente di Dynamic Media sfrutta l’intelligenza artificiale fornita dall’intelligenza artificiale di Adobe per monitorare il punto di interesse, assicurando che le nostre risorse abbiano un aspetto ottimale su tutte le dimensioni dello schermo. Con lo smart crop di [!DNL Adobe Experience Manager] vengono visualizzate la larghezza e l&#39;altezza delle rappresentazioni di una risorsa e il titolo. Per saperne di più, visita il sito [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Ritaglio avanzato](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): il ritaglio avanzato si concentra esclusivamente sulla parte essenziale di una risorsa durante il processo di ritaglio. Il ritaglio intelligente di Dynamic Media sfrutta l’intelligenza artificiale fornita da Adobe AI per monitorare il punto di interesse, assicurando che le nostre risorse abbiano un aspetto ottimale su tutte le dimensioni dello schermo. Con lo smart crop di [!DNL Adobe Experience Manager] vengono visualizzate la larghezza e l&#39;altezza delle rappresentazioni di una risorsa e il titolo. Per saperne di più, visita il sito [Utilizzo di Smart Crop con AEM Assets Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   Le rappresentazioni di ritaglio avanzato vengono visualizzate e sono disponibili per il download solo se hai accesso a [Dynamic Media con funzionalità OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Le rappresentazioni con ritaglio avanzato sono disponibili solo per le risorse immagine.
 
@@ -163,7 +165,7 @@ Per abilitare le rappresentazioni dinamiche:
 
    Una volta che hai accesso a Dynamic Media con funzionalità OpenAPI, tutte le risorse contrassegnate come `Approved` sono disponibili per la distribuzione pubblica tramite Dynamic Media.
 
-1. Imposta la destinazione di approvazione [&#x200B; della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
+1. Imposta la destinazione di approvazione [ della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
 
 1. Abilita l&#39;opzione **[!UICONTROL Abilita disponibilità delle rappresentazioni]** nella scheda **[!UICONTROL Rappresentazioni]** dell&#39;interfaccia utente [Configurazione](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
