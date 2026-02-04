@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
@@ -33,15 +33,14 @@ La tabella seguente illustra i vari scenari reali in cui l’interfaccia utente 
 
 Prima di integrare l’interfaccia utente Associa all’applicazione, assicurati di disporre di:
 
-- Istanza Publish di AEM Forms Cloud Service
-- Comunicazione interattiva creata e pubblicata in AEM
+- Comunicazione interattiva creata e pubblicata
 - Browser con supporto per popup abilitato
-- Gli utenti associati devono far parte del gruppo **forms-associates**
-- Autenticazione configurata - [SAML 2.0](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- Associa [ utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticazione configurata - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
+> Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
 
 ### Configurazioni SAML aggiuntive per l’interfaccia utente associata
 
@@ -144,10 +143,10 @@ const data = {
 | Componente | Obbligatorio | Descrizione |
 |-----------|----------|-------------|
 | `id` | Sì | Identificatore della comunicazione interattiva da caricare |
-| `prefill` | No | Contiene la configurazione del servizio per la precompilazione dei dati. |
-| `prefill.serviceName` | No | Nome del servizio Modello dati modulo da richiamare per la precompilazione dei dati |
-| `prefill.serviceParams` | No | Coppie chiave-valore passate al servizio di precompilazione |
-| `options` | No | Proprietà aggiuntive supportate per il rendering PDF: locale, includeAttachments, embedFonts, makeAccessible |
+| `prefill` | Facoltativo | Contiene la configurazione del servizio per la precompilazione dei dati. |
+| `prefill.serviceName` | Facoltativo | Nome del servizio Modello dati modulo da richiamare per la precompilazione dei dati |
+| `prefill.serviceParams` | Facoltativo | Coppie chiave-valore passate al servizio di precompilazione |
+| `options` | Facoltativo | Proprietà aggiuntive supportate per il rendering PDF: locale, includeAttachments, embedFonts, makeAccessible |
 
 ### Passaggio 3: implementare la funzione di integrazione
 
@@ -409,7 +408,7 @@ Utilizza questa opzione per popolare dinamicamente l’IC con i dati del cliente
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ Utilizzate questa opzione per specificare ulteriori opzioni di rendering:
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ Utilizzate questa opzione per specificare ulteriori opzioni di rendering:
 - Per la produzione: specifica l’URL di origine esatto dell’applicazione
 - Assicurati che le impostazioni CORS dell’istanza di pubblicazione consentano il dominio dell’applicazione
 
-## Best practice
+<!--## Best Practices
 
-Quando implementi l’integrazione Associate UI (Associa interfaccia utente), segui queste best practice:
+When implementing the Associate UI integration, follow these best practices:
 
-1. **Convalida**: convalida sempre il payload IC ID e JSON prima dell&#39;invio
-2. **Gestione degli errori**: implementa la gestione degli errori corretta per `window.open()` errori
-3. **Esperienza utente**: visualizza un indicatore di caricamento durante l&#39;inizializzazione dell&#39;interfaccia utente associata
-4. **Gestione memoria**: rimuovere i listener di eventi dopo l&#39;inizializzazione per evitare perdite di memoria
-5. **Test**: verifica l&#39;integrazione con i blocchi popup abilitati per garantire una gestione corretta
-6. **Autorizzazioni utente**: verificare che gli utenti abbiano accesso appropriato al gruppo forms-associates
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## Consulta anche
 
