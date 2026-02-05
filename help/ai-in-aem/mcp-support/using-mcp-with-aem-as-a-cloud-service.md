@@ -3,7 +3,7 @@ title: Utilizzo di MCP con AEM as a Cloud Service
 description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Questo passaggio viene eseguito da ogni utente (o da un amministratore dell’ap
 
 Di seguito sono riportati alcuni esempi di come si presenta questo in ciascuna applicazione supportata a un livello elevato.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![Configura ChatGPT - Impostazioni](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ Di seguito sono riportati alcuni esempi di come si presenta questo in ciascuna a
 
   *&quot;Utilizzando gli strumenti AEM MCP configurati, elenca tutti i siti nel nostro ambiente di authoring.&quot;*
 
-**Claude**
+### Claude {#claude}
 
 ![Configura Claude - Impostazioni](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ Di seguito sono riportati alcuni esempi di come si presenta questo in ciascuna a
 * Accertati che il server MCP sia selezionato prima di avviare la conversazione
 * Chiedi a Claude di eseguire le attività relative ad AEM; Claude selezionerà gli strumenti AEM esposti dal server MCP in base al tuo prompt.
 
-**Cursore**
+### Cursore {#cursor}
 
 ![Configura cursore - Impostazioni](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ Di seguito sono riportati alcuni esempi di come si presenta questo in ciascuna a
 * Se necessario, attivate o disattivate i singoli strumenti facendo clic sui relativi nomi. Tutti gli strumenti sono attivati per impostazione predefinita.
 * Utilizza l’editor o la chat del cursore per richiamare gli strumenti di AEM come parte dei flussi di lavoro di sviluppo o di contenuti.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Configura Copilota - Agenti](assets/copilot-1.png)
 
