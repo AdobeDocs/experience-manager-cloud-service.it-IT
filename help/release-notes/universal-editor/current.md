@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.01.29 dell’editor universale
-description: Queste sono le note sulla versione 2026.01.29 dell’editor universale.
+title: Note sulla versione 2026.02.05 dell’editor universale
+description: Queste sono le note sulla versione 2026.02.05 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 35%
+source-wordcount: '157'
+ht-degree: 45%
 
 ---
 
 
-# Note sulla versione 2026.01.29 dell’editor universale {#release-notes}
+# Note sulla versione 2026.02.05 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 29 gennaio 2026 di Universal Editor.
+Queste sono le note sulla versione del 5 febbraio 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ Queste sono le note sulla versione del 29 gennaio 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* Il metodo Remove Component è stato esposto a `editorActions`.
-* Il metodo del componente Copy è stato esposto a `editorActions`.
-* Il metodo del componente Sposta è stato esposto a `editorActions`.
-* Il metodo Add Component è stato esposto a `editorActions`.
-* Le definizioni sono state esposte all&#39;estensibilità [.](/help/implementing/universal-editor/extending.md)
-* Viene rilasciata la versione 2.0 dell’API di authoring dei documenti.
+* L&#39;azione Sposta è ora disponibile nel [menu di scelta rapida.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* L&#39;editor Rich Text ora supporta [incolla come testo.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -41,6 +37,4 @@ Se ti interessa testare le prossime funzionalità elencate di seguito e condivid
 
 ## Altri miglioramenti {#other-improvements}
 
-* L&#39;estensibilità `content` è stata rinominata in `details` per seguire lo schema API.
-* È stato migliorato il comportamento del menu contestuale.
-* È stato corretto un bug che si verificava facendo clic sul badge di un elemento modificabile in modo che il menu di scelta rapida si aprisse correttamente.
+* La pubblicazione in anteprima è stata abilitata per AEM 6.5 quando si utilizza il plug-in [`xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)

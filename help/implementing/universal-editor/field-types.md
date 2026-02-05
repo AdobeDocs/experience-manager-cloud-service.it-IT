@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 96%
+source-wordcount: '1637'
+ht-degree: 95%
 
 ---
 
@@ -138,6 +138,7 @@ Di seguito sono elencati i tipi di componenti che è possibile utilizzare per il
 | [Seleziona](#select) | `select` |
 | [Scheda](#tab) | `tab` |
 | [Testo](#text) | `text` |
+| [Area testo](#textarea) | `textarea` |
 
 #### Tag AEM {#aem-tag}
 
@@ -906,5 +907,33 @@ Il testo consente di inserire una singola riga di testo.  Include tipi di conval
 >[!TAB Schermata]
 
 ![Schermata del tipo di componente Testo](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Area testo {#textarea}
+
+L&#39;area di testo consente l&#39;inserimento di più righe di testo.
+
+>[!BEGINTABS]
+
+>[!TAB Esempio]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Schermata]
+
+![Schermata del tipo di componente textarea](assets/component-types/textarea.png)
 
 >[!ENDTABS]

@@ -3,19 +3,19 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 5 febbraio 2026.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 12 febbraio 2026.
 
-Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando al tuo ambiente di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
+Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando alla versione di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!TIP]
 >
@@ -27,8 +27,8 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* L&#39;azione Sposta è ora disponibile nel [menu di scelta rapida.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* Da definire
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* La pubblicazione in anteprima è stata abilitata per AEM 6.5 quando si utilizza il plug-in [`xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)
+* Da definire

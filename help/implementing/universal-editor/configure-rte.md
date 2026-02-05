@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ La funzione Rientro dispone di una configurazione a livello di funzionalità che
 >[!NOTE]
 >
 >La nidificazione degli elenchi tramite i tasti TAB/MAIUSC+TAB funziona indipendentemente dalle impostazioni generali di rientro.
+
+### Incolla testo semplice {#paste-as-text}
+
+L&#39;azione dell&#39;editor `paste_text` abilita un flusso di lavoro standard Incolla come testo normale.
+
+* **Scelta rapida predefinita:** Mod-Shift-v (Cmd+Shift+V su macOS, Ctrl+Shift+V su Windows/Linux)
+* **Comportamento:** Incolla da testo/normale (la formattazione di origine viene ignorata)
+   * Negli elenchi, le nuove righe creano nuove voci di elenco.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Altre azioni {#other}
 

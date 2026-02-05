@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2835'
 ht-degree: 13%
 
 ---
@@ -202,7 +202,32 @@ Il componente selezionato è stato eliminato.
 >
 >Utilizzare il tasto di scelta rapida `Shift+Backspace` per eliminare il componente selezionato dal relativo contenitore.
 
-### Riordinamento dei componenti {#reordering-components}
+### Riordinamento e spostamento di componenti {#reordering-components}
+
+Puoi spostare e riordinare i componenti utilizzando il menu di scelta rapida o la struttura del contenuto.
+
+#### Spostare i componenti con il menu di scelta rapida {#move-context-menu}
+
+1. Fare clic con il pulsante destro del mouse su un componente o fare clic sul badge del componente selezionato per aprire il menu di scelta rapida [.](#context-menu)
+1. Seleziona l’opzione di spostamento desiderata.
+   * Sposta all’inizio
+   * Sposta in alto
+   * Sposta in basso
+   * Sposta alla fine
+     ![Opzioni di spostamento nel menu di scelta rapida](assets/move-options-in-conext-menu.png)
+
+Il componente viene spostato sia nell’editor che nella struttura del contenuto.
+
+>[!TIP]
+>
+>Utilizzare i tasti di scelta rapida `Command-U` o `Shift-Command-U` rispettivamente per spostarsi verso l&#39;alto o verso l&#39;alto.
+>Utilizzare i tasti di scelta rapida `Command-J` o `Shift-Command-J` rispettivamente per spostarsi verso il basso o verso il basso.
+
+>[!NOTE]
+>
+>Le opzioni del menu di scelta rapida possono spostare i componenti solo all’interno dei rispettivi contenitori. Se si desidera spostare i componenti tra contenitori, [utilizzare la struttura del contenuto.](#reorder-content-tree)
+
+#### Riordinare i componenti con la struttura del contenuto {#reorder-content-tree}
 
 1. Se non è già in [modalità struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), passare a tale modalità.
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
@@ -235,7 +260,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
