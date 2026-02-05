@@ -86,7 +86,7 @@ Toccando o facendo clic sull’icona dell’account si apre un menu con le impos
 
 ![Commutatore ambiente](assets/environment-switcher.png)
 
-Per l&#39;editor universale, sotto l&#39;intestazione **Impostazioni prodotto**, utilizzare l&#39;opzione **Passa all&#39;ambiente di anteprima** per passare dalla versione di produzione corrente dell&#39;editor universale alla versione di anteprima [ in arrivo.](/help/release-notes/universal-editor/preview.md)
+Per l&#39;editor universale, sotto l&#39;intestazione **Impostazioni prodotto**, utilizzare l&#39;opzione **Passa all&#39;ambiente di anteprima** per passare dalla versione di produzione corrente dell&#39;editor universale alla versione di anteprima [&#x200B; in arrivo.](/help/release-notes/universal-editor/preview.md)
 
 ### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
@@ -183,11 +183,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 
