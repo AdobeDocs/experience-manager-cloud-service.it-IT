@@ -3,10 +3,10 @@ title: Note sulla versione di anteprima di Universal Editor
 description: Queste sono le note sulla versione di anteprima di Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,10 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Nuove funzioni in arrivo {#what-is-new}
 
-* Da definire
+* I collegamenti Dynamic Media sono ora supportati.
 
 ## Prossimi miglioramenti {#other-improvements}
 
-* Da definire
+* È stato risolto un problema relativo a URL non corretti per i video.
+* La creazione di più componenti con lo stesso nome non restituisce più il valore 409.
+* L’area di lavoro headless ora persiste negli aggiornamenti successivi di un campo nel contenitore.
