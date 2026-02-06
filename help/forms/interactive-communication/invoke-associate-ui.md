@@ -1,33 +1,24 @@
 ---
-title: Richiama un’interfaccia utente di associazione nell’istanza Publish
-description: Scopri come integrare e richiamare l’interfaccia utente di AEM Forms Associate sulle istanze Publish per consentire ai professionisti che si rivolgono al cliente di generare comunicazioni interattive personalizzate in tempo reale.
+title: Integrare l’interfaccia utente di Associa per le comunicazioni interattive in fase di esecuzione
+description: Scopri come integrare l’interfaccia utente di AEM Forms Associate con la tua applicazione per consentire ai professionisti che si rivolgono al cliente di generare comunicazioni interattive personalizzate in tempo reale sulle istanze Publish.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
+source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '1078'
 ht-degree: 2%
 
 ---
 
 
-# Generare comunicazioni personalizzate con l’interfaccia utente associata
+# Integrare l’interfaccia utente di Associa nell’applicazione
 
 <span> La funzionalità di comunicazione interattiva è disponibile nel programma per l&#39;adozione anticipata. Invia un&#39;e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com` per richiedere l&#39;accesso.</span>
 
-L’interfaccia utente Associa può essere richiamata direttamente sulle istanze Publish, consentendo a professionisti che si rivolgono al cliente, come associati sul campo e agenti di servizio, di generare comunicazioni personalizzate in tempo reale durante le interazioni con il cliente.
-
-La tabella seguente illustra i vari scenari reali in cui l’interfaccia utente Associa può essere utilizzata per inviare messaggi personalizzati ai clienti:
-
-| Settore | Caso d’uso |
-|----------|----------|
-| **Servizi finanziari** | Generare lettere di conferma del prestito in tempo reale, rendiconti dei conti e riepiloghi dei profili di rischio durante le riunioni con i clienti |
-| **Assicurazione** | Produrre immediatamente le carte di prova di assicurazione e i riepiloghi di smaltimento delle richieste di risarcimento presso i banchi assistenza |
-| **Assistenza sanitaria** | Creare riepiloghi del piano di trattamento del paziente con quantità e pianificazioni aziendali calcolate |
-| **Pubblica amministrazione** | Generare sul posto report di verifica della polizia, ricevute dei servizi ai cittadini e riepiloghi degli aggiornamenti dei casi |
+Questo articolo spiega come integrare l’interfaccia utente Associa con l’applicazione, consentendo a professionisti che si rivolgono al cliente, come associati sul campo e agenti di servizio, di generare comunicazioni interattive personalizzate in tempo reale sulle istanze Publish.
 
 ## Prerequisiti
 
@@ -35,19 +26,21 @@ Prima di integrare l’interfaccia utente Associa all’applicazione, assicurati
 
 - Comunicazione interattiva creata e pubblicata
 - Browser con supporto per popup abilitato
-- Associa [&#x200B; utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
+- Associa [ utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
 
 >[!NOTE]
 >
 >- In questo articolo viene illustrata la configurazione dell&#39;autenticazione utilizzando SAML 2.0 con [Microsoft Entra ID (Azure AD) come provider di identità](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
+>- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
 
 ### Configurazioni SAML aggiuntive per l’interfaccia utente associata
 
 Quando configuri l’autenticazione SAML 2.0 per l’interfaccia utente Associate, devi applicare le seguenti impostazioni specifiche nei file di configurazione OSGi.
 
 #### Gestore autenticazione SAML
+
+Il Gestore autenticazione SAML è una configurazione di fabbrica OSGi che consente più configurazioni SAML per strutture di risorse diverse. In questo modo è possibile abilitare le distribuzioni AEM multisito e aggiungere le risorse Associate UI (Associate UI) alla configurazione SAML esistente.
 
 Crea il file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
@@ -85,6 +78,8 @@ Crea il file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.jso
 
 #### Autenticatore Sling
 
+L’autenticatore Sling impone l’autenticazione per accedere alle risorse dell’interfaccia utente Associate al momento della pubblicazione.
+
 Aggiornare il file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
 ```json
@@ -95,6 +90,8 @@ Aggiornare il file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cf
 ```
 
 #### Filtro Dispatcher
+
+Aggiungi le regole seguenti per garantire il corretto funzionamento delle API di comunicazione interattiva e dell’interfaccia utente di associazione nell’istanza Publish.
 
 Se non è già presente, aggiungere le regole seguenti al file `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
 
@@ -112,23 +109,248 @@ Se non è già presente, aggiungere le regole seguenti al file `dispatcher/src/c
 
 ## Richiamare l’interfaccia utente Associa nell’istanza di pubblicazione
 
-Per richiamare l’interfaccia utente Associa dall’applicazione, configura l’URL dell’istanza Publish, prepara il payload dei dati e utilizza la funzione di integrazione per avviare l’interfaccia utente Associa in una nuova finestra del browser.
+Questa sezione illustra come avviare l’interfaccia utente Associa dalla tua applicazione. Segui questi passaggi per iniziare rapidamente: inizia con una pagina HTML di esempio pronta per l’uso, quindi configurala per l’ambiente.
 
-### Passaggio 1: configurare l’URL dell’istanza di pubblicazione
+### Passaggio 1: inizia con la pagina HTML di esempio
 
-L’interfaccia utente Associa è accessibile tramite un endpoint specifico nell’istanza Publish di AEM Forms Cloud Service:
+Per verificare e comprendere rapidamente come funziona l’integrazione dell’interfaccia utente Associa, utilizza la seguente pagina di esempio di HTML. Copia il codice in un file HTML e aprilo nel browser.
+
+Questo esempio fornisce una semplice interfaccia modulo in cui puoi inserire i dettagli della comunicazione interattiva e avviare l’interfaccia utente Associa con un solo clic.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Associate UI Integration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 80px;
+      font-family: monospace;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-primary {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launch Associate UI</h1>
+
+  <form id="form">
+    <div class="form-group">
+      <label>IC ID *</label>
+      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
+    </div>
+
+    <div class="form-group">
+      <label>Prefill Service</label>
+      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
+    </div>
+
+    <div class="form-group">
+      <label>Service Parameters (JSON)</label>
+      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
+      <span id="paramsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <div class="form-group">
+      <label>Options (JSON)</label>
+      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
+      <span id="optionsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <button type="button" onclick="reset()">Reset</button>
+    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
+  </form>
+
+  <script>
+    // Replace with your AEM Publish instance URL
+    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
+
+    function validateJSON(str, errorId) {
+      const err = document.getElementById(errorId);
+      try {
+        const obj = JSON.parse(str || '{}');
+        err.style.display = 'none';
+        return obj;
+      } catch (e) {
+        err.style.display = 'block';
+        return null;
+      }
+    }
+
+    function launch() {
+      const icId = document.getElementById('icId').value.trim();
+      if (!icId) {
+        alert('IC ID is required');
+        return;
+      }
+
+      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
+      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
+
+      if (!params || !opts) {
+        alert('Please fix JSON errors before launching');
+        return;
+      }
+
+      const data = {
+        id: icId,
+        prefill: {
+          serviceName: document.getElementById('serviceName').value.trim(),
+          serviceParams: params
+        },
+        options: opts
+      };
+
+      const win = window.open(AEM_URL, '_blank');
+      if (!win) {
+        alert('Pop-up blocked. Please enable pop-ups for this site.');
+        return;
+      }
+
+      const handler = (e) => {
+        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      };
+
+      window.addEventListener('message', handler);
+
+      // Fallback timeout in case READY message is missed
+      setTimeout(() => {
+        if (win && !win.closed) {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      }, 1000);
+    }
+
+    function reset() {
+      document.getElementById('form').reset();
+      document.getElementById('serviceParams').value = '{}';
+      document.getElementById('options').value = '{}';
+      document.getElementById('paramsError').style.display = 'none';
+      document.getElementById('optionsError').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+```
+
+### Passaggio 2: configurare l’URL dell’istanza di pubblicazione
+
+Prima di poter avviare l’interfaccia utente Associa, devi puntare l’esempio all’istanza Publish di AEM Forms Cloud Service.
+
+Nell&#39;esempio di HTML precedente, individuare la riga seguente nella sezione `<script>`:
 
 ```javascript
 const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
 ```
 
-Sostituisci `{program-id}` e `{env-id}` con i valori effettivi dell&#39;ambiente.
+Sostituisci i valori dei segnaposto con i dettagli dell’ambiente effettivo:
+- `{program-id}`: ID del programma AEM Cloud Service
+- `{env-id}`: ID ambiente
 
-Per motivi di sicurezza, parametri come l’ID comunicazione interattiva, il servizio di precompilazione e i parametri del servizio non vengono trasmessi attraverso l’URL. Al contrario, questi parametri vengono passati in modo sicuro utilizzando una funzione di JavaScript che comunica con l’interfaccia utente Associate tramite l’API postMessage del browser.
+Ad esempio, se l&#39;ID del programma è `12345` e l&#39;ID dell&#39;ambiente è `67890`, l&#39;URL diventa:
 
-### Passaggio 2: preparare il payload dei dati
+```javascript
+const AEM_URL = 'https://publish-p12345`-e67890.adobeaemcloud.com/libs/fd/associate/ui.html';
+```
 
-Struttura il payload dei dati con il seguente formato:
+>[!NOTE]
+>
+> Per motivi di sicurezza, parametri come l’ID comunicazione interattiva, il servizio di precompilazione e i parametri del servizio non vengono trasmessi attraverso l’URL. Questi parametri vengono invece passati in modo sicuro utilizzando l&#39;API `postMessage` di JavaScript.
+
+### Passaggio 3: comprendere la funzione di integrazione di JavaScript
+
+Il HTML di esempio utilizza la seguente funzione JavaScript per avviare l’interfaccia utente Associate. Questa funzione convalida l&#39;ID IC, crea il payload dei dati, apre l&#39;interfaccia utente Associate in una nuova finestra del browser e invia i dati utilizzando l&#39;API `postMessage` del browser.
+
+```javascript
+function launchAssociateUI(icId, prefillService, prefillParams, options) {
+  if (!icId) {
+    console.error('IC ID required');
+    return;
+  }
+
+  const data = {
+    id: icId,
+    prefill: {
+      serviceName: prefillService || '',
+      serviceParams: prefillParams || {}
+    },
+    options: options || {}
+  };
+
+  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
+  const win = window.open(AEM_URL, '_blank');
+
+  if (!win) {
+    alert('Please enable pop-ups for this site');
+    return;
+  }
+
+  const readyHandler = (event) => {
+    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  };
+
+  window.addEventListener('message', readyHandler);
+
+  // Fallback timeout in case READY message is missed
+  setTimeout(() => {
+    if (win && !win.closed) {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  }, 1000);
+}
+```
+
+La funzione accetta quattro parametri: l’ID IC (obbligatorio), il nome del servizio di precompilazione, i parametri del servizio di precompilazione e le opzioni aggiuntive. Questi parametri sono strutturati nel payload di dati come descritto di seguito.
+
+### Passaggio 4: comprendere la struttura del payload dei dati
+
+**Formato payload:**
 
 ```javascript
 const data = {
@@ -146,249 +368,14 @@ const data = {
 | Componente | Obbligatorio | Descrizione |
 |-----------|----------|-------------|
 | `id` | Sì | Identificatore della comunicazione interattiva da caricare |
-| `prefill` | Facoltativo | Contiene la configurazione del servizio per la precompilazione dei dati. |
+| `prefill` | Facoltativo | Contiene la configurazione del servizio per la precompilazione dei dati |
 | `prefill.serviceName` | Facoltativo | Nome del servizio Modello dati modulo da richiamare per la precompilazione dei dati |
 | `prefill.serviceParams` | Facoltativo | Coppie chiave-valore passate al servizio di precompilazione |
 | `options` | Facoltativo | Proprietà aggiuntive supportate per il rendering PDF: locale, includeAttachments, embedFonts, makeAccessible |
 
-### Passaggio 3: implementare la funzione di integrazione
+#### Esempi di payload dei dati
 
-Crea una funzione JavaScript per avviare l’interfaccia utente Associa e gestire la comunicazione del messaggio:
-
-```javascript
-function launchAssociateUI(icId, prefillService, prefillParams, options) {
-  if (!icId) {
-    console.error('IC ID required');
-    return;
-  }
-   
-  const data = {
-    id: icId,
-    prefill: {
-      serviceName: prefillService || '',
-      serviceParams: prefillParams || {}
-    },
-    options: options || {}
-  };
-   
-  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
-  const win = window.open(AEM_URL, '_blank');
-   
-  if (!win) {
-    alert('Please enable pop-ups for this site');
-    return;
-  }
-   
-  const readyHandler = (event) => {
-    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  };
-   
-  window.addEventListener('message', readyHandler);
-   
-  // Fallback timeout in case READY message is missed
-  setTimeout(() => {
-    if (win && !win.closed) {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  }, 1000);
-}
-```
-
-### Passaggio 4: richiamare la funzione
-
-Chiama la funzione con i parametri appropriati:
-
-```javascript
-// Basic invocation with IC ID only
-launchAssociateUI('12345', '', {}, {});
-
-// With prefill service
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: '101'}, {});
-
-// With all parameters
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: "101" }, 
-  { locale: 'en', includeAttachments: "true" });
-```
-
-## Pagina Test dell’integrazione con un esempio di HTML
-
-Per osservare come viene visualizzata l’interfaccia utente Associa sul front-end e testare l’integrazione, ecco un semplice esempio di HTML. Questa pagina di esempio ti consente di inserire l’ID IC, configurare i parametri del servizio di precompilazione, impostare le opzioni di PDF e avviare l’interfaccia utente Associa nell’istanza Pubblica.
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Associate UI Integration</title>
-  <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 600px; 
-      margin: 50px auto; 
-      padding: 20px; 
-    }
-    .form-group { 
-      margin: 20px 0; 
-    }
-    label { 
-      display: block; 
-      margin-bottom: 5px; 
-      font-weight: bold; 
-    }
-    input, textarea { 
-      width: 100%; 
-      padding: 8px; 
-      border: 1px solid #ccc; 
-      border-radius: 4px; 
-      box-sizing: border-box;
-    }
-    textarea { 
-      height: 80px; 
-      font-family: monospace; 
-    }
-    button { 
-      padding: 10px 20px; 
-      margin: 5px; 
-      cursor: pointer; 
-      border-radius: 4px;
-    }
-    .btn-primary { 
-      background: #007bff; 
-      color: white; 
-      border: none; 
-    }
-    .btn-primary:hover {
-      background: #0056b3;
-    }
-    .error { 
-      color: red; 
-      font-size: 12px; 
-      display: none; 
-    }
-  </style>
-</head>
-<body>
-  <h1>Launch Associate UI</h1>
-  
-  <form id="form">
-    <div class="form-group">
-      <label>IC ID *</label>
-      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
-    </div>
-    
-    <div class="form-group">
-      <label>Prefill Service</label>
-      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
-    </div>
-    
-    <div class="form-group">
-      <label>Service Parameters (JSON)</label>
-      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
-      <span id="paramsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <div class="form-group">
-      <label>Options (JSON)</label>
-      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
-      <span id="optionsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <button type="button" onclick="reset()">Reset</button>
-    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
-  </form>
-
-  <script>
-    // Replace with your AEM Publish instance URL
-    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
-    
-    function validateJSON(str, errorId) {
-      const err = document.getElementById(errorId);
-      try {
-        const obj = JSON.parse(str || '{}');
-        err.style.display = 'none';
-        return obj;
-      } catch (e) {
-        err.style.display = 'block';
-        return null;
-      }
-    }
-    
-    function launch() {
-      const icId = document.getElementById('icId').value.trim();
-      if (!icId) { 
-        alert('IC ID is required'); 
-        return; 
-      }
-      
-      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
-      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
-      
-      if (!params || !opts) { 
-        alert('Please fix JSON errors before launching'); 
-        return; 
-      }
-      
-      const data = {
-        id: icId,
-        prefill: {
-          serviceName: document.getElementById('serviceName').value.trim(),
-          serviceParams: params
-        },
-        options: opts
-      };
-      
-      const win = window.open(AEM_URL, '_blank');
-      if (!win) { 
-        alert('Pop-up blocked. Please enable pop-ups for this site.'); 
-        return; 
-      }
-      
-      const handler = (e) => {
-        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      };
-      
-      window.addEventListener('message', handler);
-      
-      // Fallback timeout in case READY message is missed
-      setTimeout(() => {
-        if (win && !win.closed) {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      }, 1000);
-    }
-    
-    function reset() {
-      document.getElementById('form').reset();
-      document.getElementById('serviceParams').value = '{}';
-      document.getElementById('options').value = '{}';
-      document.getElementById('paramsError').style.display = 'none';
-      document.getElementById('optionsError').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
-```
-
-### Funzionamento del campione
-
-1. **Campo ID IC**: immettere l&#39;identificatore di comunicazione interattiva (obbligatorio)
-2. **Servizio di precompilazione**: specificare il nome del servizio del modello dati modulo per la precompilazione dei dati
-3. **Parametri del servizio**: immettere l&#39;oggetto JSON con i parametri da passare al servizio di precompilazione
-4. **Opzioni**: immettere le opzioni di configurazione per PDF, ad esempio lingua, includeAttachments, embedFonts, makeAccessible
-5. **Pulsante di avvio**: apre l&#39;interfaccia utente Associa in una nuova finestra e invia i dati di inizializzazione
-
-## Esempi di payload dei dati
-
-### Payload minimo (solo IC)
+**Payload minimo (solo ID IC)**
 
 Utilizza questa opzione quando non sono necessari dati di precompilazione:
 
@@ -403,7 +390,7 @@ Utilizza questa opzione quando non sono necessari dati di precompilazione:
 }
 ```
 
-### Con dati di preriempimento
+**Con Dati Precompilati**
 
 Utilizza questa opzione per popolare dinamicamente l’IC con i dati del cliente:
 
@@ -421,7 +408,7 @@ Utilizza questa opzione per popolare dinamicamente l’IC con i dati del cliente
 }
 ```
 
-### Con configurazione opzioni
+**Con Opzioni Di Rendering Di PDF**
 
 Utilizzate questa opzione per specificare ulteriori opzioni di rendering:
 
@@ -436,14 +423,36 @@ Utilizzate questa opzione per specificare ulteriori opzioni di rendering:
     }
   },
   "options": { 
-      locale: "en_US",
-      includeAttachments: "true",
-      webOptimized: "false",
-      embedFonts: "false",
-      makeAccessible: "false"
+      "locale": "en_US",
+      "includeAttachments": "true",
+      "webOptimized": "false",
+      "embedFonts": "false",
+      "makeAccessible": "false"
   }
 }
 ```
+
+### Passaggio 5: immettere l&#39;ID IC e avviare l&#39;interfaccia utente Associate
+
+Ora puoi avviare l’interfaccia utente Associa utilizzando la pagina di esempio di HTML:
+
+1. **Immettere l&#39;ID IC**: nel campo **ID IC** immettere l&#39;identificatore della comunicazione interattiva pubblicata. Questo è l’unico campo obbligatorio.
+
+2. **Configura servizio di precompilazione** (facoltativo): se si desidera precompilare l&#39;IC con dati dinamici, immettere il nome del servizio del modello dati modulo nel campo **Servizio di precompilazione**. Ad esempio, utilizzare `FdmTestData` per i dati di esempio o `IC-FDM` per i dati di test.
+
+3. **Aggiungi parametri servizio** (facoltativo): nel campo **Parametri servizio (JSON)**, immetti un oggetto JSON con i parametri richiesti dal servizio di precompilazione. Ad esempio:
+
+   ```json
+   {"customerId": "101", "accountNumber": "ACC-98765"}
+   ```
+
+4. **Imposta opzioni PDF** (facoltativo): nel campo **Opzioni (JSON)**, configurare le opzioni di rendering come impostazioni internazionali, allegati o impostazioni di accessibilità.
+
+5. **Fare clic su Interfaccia utente associata lancio**: fare clic sul pulsante **Interfaccia utente associata lancio**. Viene visualizzata una nuova finestra del browser con l’interfaccia utente Associa, precaricata con la comunicazione interattiva.
+
+>[!NOTE]
+>
+> Se la finestra non si apre, verificare che il browser consenta la visualizzazione di popup per questo sito.
 
 ## Risoluzione dei problemi
 
