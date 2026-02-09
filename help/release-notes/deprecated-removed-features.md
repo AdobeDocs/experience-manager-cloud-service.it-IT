@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
+source-git-commit: 910876ef77698680266a2ef99cd5650b0adbd1ac
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 85%
@@ -30,14 +30,15 @@ Durante la finestra temporale di dichiarazione come obsoleta, Adobe ricorderà a
 >In alcuni casi, potrebbe essere necessario rimuovere una funzione prima di distribuire una nuova build di Cloud Manager o effettuare l’aggiornamento alla versione più recente di AEM as a Cloud Service.
 
 >[!IMPORTANT]
->  Diverse [API obsolete](#aem-apis) eseguono la rimozione come destinazione il **26 febbraio 2026**. Rivedi le date e gli impatti principali:
 >
-> * **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
-> * **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
-> * **26 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
-> * **30 aprile 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+>Diverse [API obsolete](#aem-apis) eseguono la rimozione come destinazione il **26 febbraio 2026**. Rivedi le date e gli impatti principali:
 >
-> Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 26 marzo 2026.
+>* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
+>* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
+>* **26 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
+>* **30 aprile 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+>
+>Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 26 marzo 2026.
 
 ## Funzionalità obsolete {#deprecated-features}
 
