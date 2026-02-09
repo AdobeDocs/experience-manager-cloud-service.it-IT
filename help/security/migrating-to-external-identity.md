@@ -4,7 +4,7 @@ description: Guida tecnica per la migrazione di utenti e gruppi locali a un mode
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Elenco di controllo pre-migrazione {#pre-migration-checklist}
 
-* [ ] **Configura utente del servizio**: crea e configura l&#39;utente del servizio (ad esempio, `group-provisioner`) con le autorizzazioni appropriate
-* [ ] **Verifica configurazione ExternalPrincipal**: verificare che l&#39;utente del servizio sia configurato per ignorare la protezione in `rep:externalId` e `rep:externalPrincipalNames`
-* [ ] **Verifica autorizzazioni utente servizio**: verifica che l&#39;utente del servizio possa impostare proprietà di identità esterne in sviluppo
-* [ ] Identificare tutto il codice personalizzato che crea utenti o gruppi
-* [ ] Rivedi e aggiorna il codice personalizzato per utilizzare il modello di identità esterno
-* [ ] Test del codice aggiornato nell&#39;ambiente di sviluppo
-* [ ] Effettua l&#39;inventario di tutti gli utenti e i gruppi locali esistenti da migrare
-* [ ] Test del processo di migrazione in ambienti inferiori
+* **Configura utente del servizio**: crea e configura l&#39;utente del servizio (ad esempio, `group-provisioner`) con le autorizzazioni appropriate
+* **Verifica configurazione ExternalPrincipal**: verificare che l&#39;utente del servizio sia configurato per ignorare la protezione in `rep:externalId` e `rep:externalPrincipalNames`
+* **Verifica autorizzazioni utente servizio**: verificare che l&#39;utente del servizio possa impostare proprietà di identità esterne in fase di sviluppo
+* Identifica tutto il codice personalizzato che crea utenti o gruppi
+* Rivedi e aggiorna il codice personalizzato per utilizzare il modello di identità esterno
+* Test del codice aggiornato nell&#39;ambiente di sviluppo
+* Inventario di tutti gli utenti e i gruppi locali esistenti da migrare
+* Test del processo di migrazione in ambienti di dimensioni inferiori
 
 ### Passaggi di esecuzione {#execution-steps}
 
@@ -773,12 +773,12 @@ Come ulteriore livello di sicurezza, puoi configurare le regole CDN per limitare
 
 Prima di distribuire i servlet di migrazione alla produzione:
 
-* [ ] Creazione dell&#39;integrazione IMS in AEM Developer Console
-* [ ] Configura i servlet per convalidare l&#39;ID account tecnico
-* [ ] Flusso di autenticazione di test in ambienti di sviluppo/gestione temporanea
-* [ ] Considerare ulteriori restrizioni basate su IP a livello CDN
-* [ ] Pianificazione per disabilitare o rimuovere i servlet di migrazione al termine della migrazione
-* [ ] Controlla e registra tutti gli accessi agli endpoint di migrazione
+* Creare l’integrazione IMS in AEM Developer Console
+* Configurare i servlet per convalidare l’ID account tecnico
+* Flusso di autenticazione di test in ambienti di sviluppo/staging
+* Considerare ulteriori restrizioni basate su IP a livello CDN
+* Pianifica la disattivazione o la rimozione dei servlet di migrazione al termine della migrazione
+* Controlla e registra tutti gli accessi agli endpoint di migrazione
 
 >[!IMPORTANT]
 >
