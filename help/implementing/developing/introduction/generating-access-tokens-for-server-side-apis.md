@@ -4,9 +4,9 @@ description: Scopri come facilitare la comunicazione tra un server di terze part
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Il flusso server-to-server è descritto di seguito, insieme a un flusso semplifi
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=it#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## Flusso server-to-server {#the-server-to-server-flow}
 
@@ -224,7 +224,6 @@ Per ottenere questa estensione di aggiornamento, effettua le seguenti operazioni
 
 * Dopo aver premuto il pulsante, viene generato un set di credenziali che include un nuovo certificato. Installa le nuove credenziali sul server off-AEM e assicurati che la connettività sia come previsto, senza rimuovere le vecchie credenziali.
 * Assicurati che vengano utilizzate le nuove credenziali invece di quelle precedenti durante la generazione del token di accesso.
-* Facoltativamente, revoca (e quindi elimina) il certificato precedente in modo che non possa più essere utilizzato per l’autenticazione con AEM as a Cloud Service.
 
 ## Revoca credenziali {#credentials-revocation}
 
@@ -252,3 +251,15 @@ Se la chiave privata è compromessa, è necessario creare le credenziali con un 
    ![Revoca conferma certificato](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. Infine, elimina il certificato compromesso.
+
+### Nota sulla revoca di singoli certificati {#note-on-recovacting-individual-certificates}
+
+Per l’handshake JWT (utilizzato per recuperare un token Bearer) è sufficiente che:
+
+1. La chiave privata è disponibile
+1. Uno o più certificati attivi sono presenti nella rispettiva chiave privata in Developer Console
+1. Durante il recupero del token (handshake JWT), IMS controlla che la firma JWT corrisponda a qualsiasi certificato associato e attivo (non scaduto) registrato nel nostro sistema, come puoi vedere nella console.
+
+L&#39;aggiunta di un nuovo certificato in una PK potrebbe far sembrare che i certificati revocati siano ancora utilizzabili. In effetti, tutti i certificati con una PK sono equivalenti. Se almeno uno è attivo, tutti sono considerati attivi.
+
+Se si ritiene che si tratti di un problema di sicurezza, è necessario creare una chiave privata separata e revocare tutti i certificati della vecchia chiave privata.
