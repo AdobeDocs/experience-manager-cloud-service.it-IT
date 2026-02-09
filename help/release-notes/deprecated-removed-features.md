@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90b1730522494cda0e777ecc0171703c2b2eff5b
+source-git-commit: 5b049c6502cddf7009cf5c81b033e290216eb847
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3695'
 ht-degree: 85%
 
 ---
@@ -61,6 +61,7 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 | [!DNL Foundation] | Le integrazioni che utilizzano credenziali generate dai progetti di Adobe Developer Console perdono gradualmente il supporto per le credenziali dell’account servizio (JWT). A partire dal 1° maggio 2024, non è possibile creare nuove credenziali dell’account di servizio (JWT) in Adobe Developer Console. Le credenziali dell’account di servizio (JWT) esistenti rimangono utilizzabili per le integrazioni configurate fino al 1° gennaio 2025, dopo di che cessano di funzionare e sarà necessario migrare alle credenziali da server a server OAuth. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migra](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) alle credenziali da server a server OAuth. |
 | [!DNL Foundation] | Il flusso di lavoro Pubblica contenuti struttura e il relativo passaggio Flusso di lavoro di pubblicazione contenuti struttura, utilizzato per la replica delle gerarchie di contenuti. | Utilizza [il passaggio del flusso di lavoro di attivazione struttura](/help/operations/replication.md#tree-activation), che offre prestazioni migliori. |
 | [!DNL Foundation] | Utilizzo di YUI per comprimere/minimizzare le librerie client di JavaScript. Adobe non prevede di aggiornare ulteriormente la libreria di YUI. | Adobe consiglia alla clientela di passare a Google Closure Compiler (GCC) per l’implementazione. |
+| [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS |
 
 ## Funzionalità rimossa {#removed-features}
 
@@ -76,7 +77,6 @@ In questa sezione sono elencate le funzionalità rimosse.
 | [!DNL Foundation] | Supporto per le origini dati Apache Sling (OSGi bundle org.apache.sling.datasource) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per i modelli di script JST (OSGi bundle org.apache.sling.scripting.jst) | N/D | Rimosso |
 | [!DNL Foundation] | Supporto per Apache Felix Http Whiteboard | OSGi Http Whiteboard | Marzo 2022 |
-| [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS | Marzo 2023 |
 | [!DNL Foundation] | Supporto per la funzione org.apache.sling.serviceusermapping per [ottenere l’ID utente del servizio](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/D | 30/08/24 |
 | [!DNL Foundation] | Il runtime Java 11 è obsoleto ed è stato sostituito da Adobe con il runtime Java 21. È accettabile che il codice venga comunque generato con Java 11 (Java 17 e 21 sono le altre opzioni) | Viene applicato il runtime Java 21. Per garantire la compatibilità, è essenziale aggiornare le versioni della libreria come illustrato in [Requisiti di runtime](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements). | 5/29/25 marzo |
 
