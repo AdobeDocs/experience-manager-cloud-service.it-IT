@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 910876ef77698680266a2ef99cd5650b0adbd1ac
+source-git-commit: 45bdc9afeb43e9b9cc2e190d459819f65f091020
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3707'
 ht-degree: 85%
 
 ---
@@ -343,7 +343,7 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
 Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
