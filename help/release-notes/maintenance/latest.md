@@ -4,10 +4,10 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 24%
+source-wordcount: '999'
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 24288, rilasciata pubblicamente il giovedì 4 febbraio 2026. La versione di manutenzione precedente era la 23963.
 
-Con la versione di attivazione funzioni 2026.2.0 verrà fornito il set di funzioni completo per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Con la versione di attivazione delle funzioni 2026.2.0 viene fornito il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi riso
 
 ### Problemi noti {#known-issues-24288}
 
-Nessuna.
+* SITES-40408: l’endpoint GraphQL restituisce 404 a causa delle regole di riscrittura del dispatcher personalizzate.
 
 ### Funzioni e API obsolete {#deprecated-24288}
 
