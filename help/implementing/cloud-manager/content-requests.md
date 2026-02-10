@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
+source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2084'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Le richieste di contenuto vengono misurate indipendentemente dal fatto che la ri
 
 <!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
 
 ### Varianze nelle richieste di contenuto Cloud Service {#content-requests-variances}
 
@@ -65,7 +65,7 @@ Per informazioni su come visualizzare e tenere traccia dell&#39;utilizzo delle r
 
 ## Regole di raccolta lato server {#serverside-collection}
 
-AEM as a Cloud Service applica le regole di raccolta lato server per conteggiare le richieste di contenuto. Queste regole escludono bot noti (come crawler di motori di ricerca), tra cui crawler AI/LLM riconosciuti e un set di servizi di monitoraggio che eseguono regolarmente il ping del sito. L’altro traffico sintetico, automatico o di tipo monitoraggio non presente in questo elenco di esclusione viene conteggiato come richieste di contenuto fatturabili.
+AEM as a Cloud Service applica le regole di raccolta lato server per conteggiare le richieste di contenuto. Queste regole escludono bot noti (come crawler di motori di ricerca), inclusi crawler di IA/LLM riconosciuti e un set di servizi di monitoraggio che eseguono regolarmente il ping del sito. L’altro traffico sintetico, automatico o di tipo monitoraggio non presente in questo elenco di esclusione viene conteggiato come richieste di contenuto fatturabili.
 
 Nelle tabelle seguenti sono elencati i tipi di richieste di contenuto incluse ed escluse, con brevi descrizioni di ciascuna.
 
@@ -97,9 +97,9 @@ Vedi anche [Dashboard delle licenze](/help/implementing/cloud-manager/license-da
 | URL per i clienti per monitorare il proprio programma Cloud Service | Escluso | Adobe consiglia di utilizzare l&#39;URL per monitorare la disponibilità o il controllo dello stato esternamente.<br><br>`/system/probes/health` |
 | Servizio di riscaldamento AEM as a Cloud Service Pod | Escluso | Agente: skyline-service-warm/1.* |
 | Motori di ricerca noti, social network e librerie HTTP (contrassegnati da Fastly) | Escluso | Servizi noti che visitano regolarmente il sito per aggiornare l&#39;indice o il servizio di ricerca:<br><br>Esempi:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Chiedi a Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google Google AdsBot<br> AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot |
-| Crawler AI/LLM noti (contrassegnati da Fastly) | Escluso | Richieste da crawler AI/LLM riconosciuti identificati come bot noti (ad esempio, da `User-Agent` o altri segnali di classificazione bot). Queste richieste non sono fatturabili.<br><br>Se un agente di IA non è identificato come bot noto (ad esempio, utilizza un browser generico `User-Agent`), le sue richieste possono essere conteggiate come richieste di contenuto fatturabili. |
+| Crawler AI/LLM noti (contrassegnati da Fastly) | Escluso | Richieste provenienti da crawler AI/LLM riconosciuti identificati come bot noti (ad esempio, da `User-Agent` o altri segnali di classificazione bot). Queste richieste non sono fatturabili.<br><br>Alcuni esempi di questi bot esclusi sono: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector e Yahoo Gemini.<br><br>Se un agente di IA non è identificato come bot noto (ad esempio, utilizza un browser generico `User-Agent`), le sue richieste possono essere conteggiate come richieste di contenuto fatturabili. |
 | Escludere le chiamate Commerce integration framework | Escluso | Le richieste effettuate ad AEM che vengono inoltrate a Commerce integration framework, l&#39;URL inizia con `/api/graphql`, per evitare un doppio conteggio, non sono fatturabili per Cloud Service. |
-| Escludi `manifest.json` | Escluso | Il manifesto non è una chiamata API. È qui per fornire informazioni su come installare siti web su un desktop o un telefono cellulare. Adobe non deve contare la richiesta JSON a `/etc.clientlibs/*/manifest.json` |
+| Librerie client (/etc.clientlibs/*) — Escluse | Escluso | Le richieste in /etc.clientlibs/* sono risorse della libreria client a livello di piattaforma e file di configurazione di runtime utilizzati da AEM. Queste richieste non distribuiscono contenuti creati dal cliente o dati aziendali e pertanto non vengono considerate come richieste di contenuto. |
 | Escludi `favicon.ico` | Escluso | Anche se il contenuto restituito non deve essere HTML o JSON, si è osservato che alcuni scenari come i flussi di autenticazione SAML restituiscono favicon come HTML. Di conseguenza, le favicon sono esplicitamente escluse dal conteggio. |
 | Frammento esperienza (XF) - Riutilizzo dello stesso dominio | Escluso | Richieste effettuate a percorsi XF (ad esempio `/content/experience-fragments/...`) da pagine ospitate sullo stesso dominio (come identificato dall&#39;intestazione Referrer che corrisponde all&#39;host della richiesta).<br><br> Esempio: una home page su `aem.customer.com` che richiama un XF per un banner o una scheda dello stesso dominio.<br><br>· URL matches /content/experience-fragments/...<br>· Il dominio del referente corrisponde a `request_x_forwarded_host`<br><br>**Nota:** Se il percorso del frammento di esperienza è personalizzato (ad esempio utilizzando `/XFrags/...` o un percorso esterno a `/content/experience-fragments/`), la richiesta non viene esclusa e può essere conteggiata, anche se si tratta dello stesso dominio. Adobe consiglia di utilizzare la struttura di percorso XF standard di Adobe per garantire che la logica di esclusione venga applicata correttamente. |
 
