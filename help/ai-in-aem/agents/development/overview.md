@@ -3,13 +3,13 @@ title: Panoramica dell’agente di sviluppo
 description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 30b715d4e43bf83016622e3cf13f100062a1c08d
+exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
+source-git-commit: eeaa119711b480197b5807b85eb9c566a735f270
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
-
 
 # Panoramica dell’agente di sviluppo {#development-agent-overview}
 
@@ -17,7 +17,7 @@ L’agente di sviluppo consente agli sviluppatori e agli amministratori di AEM d
 
 Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a risolvere i problemi dei passaggi di build non riusciti suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -30,6 +30,8 @@ Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a ris
 -->
 
 Per accedere a questo agente, fare riferimento alle [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriversi al programma beta e assicurarsi di indicare il proprio interesse per l&#39;agente di sviluppo. Puoi anche inviare un feedback specifico all&#39;agente di sviluppo all&#39;indirizzo [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
+
+[Segui un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
 
 ## Accedere all’agente di sviluppo tramite Cloud Manager {#how-to-access-the-agent}
 
