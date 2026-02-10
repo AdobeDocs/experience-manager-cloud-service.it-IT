@@ -31,7 +31,7 @@ Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a ris
 
 Per accedere a questo agente, fare riferimento alle [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriversi al programma beta e assicurarsi di indicare il proprio interesse per l&#39;agente di sviluppo. Puoi anche inviare un feedback specifico all&#39;agente di sviluppo all&#39;indirizzo [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
-[Segui un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
+[Segui un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
 
 ## Accedere all’agente di sviluppo tramite Cloud Manager {#how-to-access-the-agent}
 
