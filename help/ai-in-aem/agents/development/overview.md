@@ -17,7 +17,7 @@ L’agente di sviluppo consente agli sviluppatori e agli amministratori di AEM d
 
 Al momento, l’agente può recuperare gli stati della pipeline e aiutarti a risolvere i problemi dei passaggi di build non riusciti suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
