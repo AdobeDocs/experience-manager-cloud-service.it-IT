@@ -3,14 +3,15 @@ title: Attiva l’interruttore delle funzioni per integrare le funzioni di adozi
 description: L’attivazione delle funzioni è una funzionalità di AEM che consente agli amministratori di abilitare le nuove funzioni in un ambiente di runtime.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '404'
+ht-degree: 5%
 
 ---
 
-# Abilita attivazione/disattivazione funzionalità in Adobe Experience Software Development Kit (AEM SDK)
+# Abilitare attivazione/disattivazione funzioni in Adobe Experience Software Development Kit (AEM SDK)
 
 In AEM, l’attivazione delle funzioni consente agli amministratori di abilitare o disabilitare le funzioni in fase di esecuzione, ideale per la gestione delle funzioni di adozione anticipata e prerelease senza modifiche al codice. Supporta i rollout graduali, il test A/B e la rapida disattivazione delle funzioni instabili.
 
@@ -34,11 +35,11 @@ Prima di abilitare l’attivazione delle funzioni nella configurazione di AEM SD
 
 * Utente membro del gruppo `forms-users`.
 
-* Passa a `http://<author-instance-url>:portnumber/system/console/bundles` e controlla se il bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** è presente o meno. Se non è presente, [scarica il bundle dal collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Passa a `http://<author-instance-url>:portnumber/system/console/bundles` e controlla se il bundle **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** è presente o meno. Se non è presente, [scarica il bundle dal collegamento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
   ![Attiva/Disattiva funzionalità](/help/forms/assets/aem-web-console-bundle.png)
 
-### Attiva/disattiva funzione
+### Abilitare il pulsante di attivazione/disattivazione della funzione
 
 Per abilitare le opzioni nella tua istanza di AEM SDK, segui la procedura riportata di seguito:
 
@@ -82,4 +83,3 @@ Gli interruttori delle funzioni sono gestiti in fase di esecuzione e sono più a
 >[!NOTE]
 >
 > Per abilitare l’attivazione/disattivazione della funzione per l’ambiente di produzione, contatta il team di supporto Adobe.
-
