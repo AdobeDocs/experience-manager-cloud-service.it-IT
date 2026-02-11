@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 3%
 
 ---
@@ -297,8 +297,8 @@ data:
 Utilizzare un token SAS per l&#39;autenticazione. Deve essere creato dalla pagina della firma di accesso condiviso, anziché dalla pagina del token di accesso condiviso, e deve essere configurato con le seguenti impostazioni:
 
 * Servizi consentiti: è necessario selezionare BLOB.
-* Risorse consentite: è necessario selezionare l’oggetto.
-* Autorizzazioni consentite: è necessario selezionare Scrivi, Aggiungi o Crea.
+* Risorse consentite: è necessario selezionare l’oggetto e il contenitore.
+* Autorizzazioni consentite: è necessario selezionare Lettura, Scrittura, Aggiungi, Elenco, Crea.
 * Una data/ora di inizio e di scadenza valida.
 
 Ecco una schermata di esempio della configurazione del token SAS:
@@ -332,7 +332,7 @@ aemcdn/
 
 Ogni file contiene più voci di registro json, ciascuna su una riga separata. I formati delle voci di registro sono descritti in [Registrazione per AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) e ogni voce di registro include anche le proprietà aggiuntive menzionate nella sezione [Formati di voce di registro](#log-formats) seguente.
 
-#### Registri AEM archiviazione BLOB di Azure {#azureblob-aem}
+#### Registri AEM per archiviazione BLOB di Azure {#azureblob-aem}
 
 I registri di AEM (incluso Apache/Dispatcher) vengono visualizzati sotto una cartella con la seguente convenzione di denominazione:
 
