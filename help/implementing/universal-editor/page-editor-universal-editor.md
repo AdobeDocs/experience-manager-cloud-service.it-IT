@@ -4,10 +4,10 @@ description: L’editor di pagine continua ad essere supportato da Adobe, ma l�
 feature: Developing
 role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1a04bebf073ac10100dede9b5e9f835665588cf3
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1085'
+ht-degree: 98%
 
 ---
 
@@ -74,10 +74,11 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 | Simulazione dispositivo | [!BADGE Disponibile]{type=Positive} | [È possibile simulare i dispositivi configurati](/help/sites-cloud/administering/responsive-layout.md), ma l’utente non può immettere manualmente dimensioni dello schermo diverse da simulare. | [!BADGE Disponibile]{type=Positive} | [È possibile immettere manualmente qualsiasi dimensione dello schermo da simulare](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator), ma non è possibile configurare i punti di interruzione predefiniti. |
 | [Blocco pagina](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Rispetta lo stato di blocco impostato nella console Sites con l’estensione disponibile per bloccare/sbloccare le pagine dall’editor |
 | [Proprietà pagina](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile dall’amministratore del sito, con estensione per accedere anche alle proprietà delle pagine dall’editor |
-| Proprietà con più campi | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
+| Proprietà con più campi | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [DAM remoto](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
 | [Controllo delle versioni della pagina](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} |  |
-| [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) e [Visualizzazione differenze](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Pianificato |
+| [Visualizzazione differenze](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Parzialmente disponibile]{type=Caution} | Disponibile per i casi di utilizzo di Edge Delivery Services, ma non headless |
+| [AlterazioneOra](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Versioni pianificate ancora disponibili nella console Sites |
 | Visualizzazione in Amministrazione | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Disponibile]{type=Positive} | Disponibile come estensione per le pagine |
 | Visualizzare lo stato della pagina | [!BADGE Disponibile]{type=Positive} |  | [!BADGE Non disponibile]{type=Negative} | Disponibile nella console AEM Sites |
 | Estensibilità | [!BADGE Disponibile]{type=Positive} | Come sovrapposizioni di AEM | [!BADGE Disponibile]{type=Positive} | Punti di estensione ben definiti utilizzando App Builder e conoscenze specifiche di AEM molto limitate |
@@ -87,7 +88,7 @@ Poiché il gap di funzionalità tra i due editor si riduce costantemente, consul
 L’editor universale offre numerosi vantaggi, pertanto è una soluzione ideale per nuovi progetti.
 
 * **Modifica visiva:** come per l’editor di pagine, gli autori possono modificare il contenuto direttamente nell’anteprima e visualizzare immediatamente come le modifiche influiscono sull’esperienza del visitatore.
-* **Predisposizione per il futuro:** la roadmap di AEM dà priorità all’editor universale come editor visivo. Il suo utilizzo garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
+* **A prova di futuro:** la roadmap di AEM dà priorità all’editor universale come editor visivo. Il suo utilizzo garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
 * **Integrazione semplificata:** non è necessario alcun SDK specifico per AEM per utilizzare l’editor universale, così si riduce il blocco dello stack tecnologico.
 * **Porta la tua app:** l’editor universale supporta qualsiasi framework o architettura web, consentendo l’utilizzo senza richiedere un refactoring complesso.
 * **Estensibilità:** l’editor universale dispone di un solido [framework di estensione](/help/implementing/universal-editor/extending.md), che include integrazioni con GenAI, Workfront e altro ancora.
