@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
+source-git-commit: e58e1355b923e1da447e3dbcfd0a81086aee3e66
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1018'
 ht-degree: 23%
 
 ---
@@ -90,6 +90,10 @@ Con la versione di attivazione delle funzioni 2026.2.0 viene fornito il set comp
 * GUIDES-36641: durante la generazione dell&#39;output di AEM Sites, i titoli delle mappe contenenti parole chiave e titoli di argomenti con l&#39;elemento `<ph>` non vengono inclusi nell&#39;output pubblicato.
 * GUIDES-37837: quando si tenta di salvare un argomento o una mappa, l’operazione potrebbe non riuscire a intermittenza con un errore Impossibile salvare il file, in particolare durante attività di elaborazione intensiva delle risorse o flussi di lavoro di traduzione in esecuzione in background.
 * GUIDES-27774: il report Elenco interrotto include erroneamente collegamenti esterni, `keyrefs` validi e parole chiave risolte correttamente nell&#39;ambito della mappa corrente.
+
+>[!NOTE]
+>
+> In AEM Guides è stata introdotta una modifica importante di cui tenere conto: [Gestione migliorata per i file di sola lettura](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
