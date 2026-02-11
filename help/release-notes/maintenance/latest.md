@@ -93,7 +93,7 @@ Con la versione di attivazione delle funzioni 2026.2.0 viene fornito il set comp
 
 >[!NOTE]
 >
-> In AEM Guides è stata introdotta una modifica importante di cui tenere conto: [Gestione migliorata per i file di sola lettura](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+> In AEM Guides è stata introdotta una modifica importante di cui tenere conto: [Gestione migliorata per i file di sola lettura](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 Per ulteriori informazioni sulle funzioni nuove e migliorate e sui problemi risolti in questa versione, consulta la [roadmap delle versioni di Experience Manager Guides](https://experienceleague.adobe.com/it/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
