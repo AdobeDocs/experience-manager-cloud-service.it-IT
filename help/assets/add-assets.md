@@ -29,7 +29,7 @@ Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse cari
 |---------------------|----------------|-----------------|
 | [Interfaccia utente della console Assets](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del mirino. Non utilizzare per caricare più risorse. | Tutti gli utenti |
 | [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Sviluppatore |
-| [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Acquisizione di risorse di volume ridotto, ma non per la migrazione. | Amministratore, addetto marketing |
+| [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it) | Acquisizione di risorse di volume ridotto, ma non per la migrazione. | Amministratore, addetto marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Utile quando creativi e addetti al marketing lavorano su risorse dalle app desktop [!DNL Creative Cloud] supportate. | Creative, addetto marketing |
 | [Acquisizione in blocco risorse](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e acquisizioni in blocco occasionali. Solo per gli archivi dati supportati. | Amministratore, sviluppatore |
 
@@ -146,7 +146,7 @@ L’inserimento in blocco delle risorse può gestire molte risorse in modo effic
 Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Vedi anche [casi d&#39;uso e metodi](#upload-methods-comparison)
 
 * [API per il caricamento di risorse](developer-reference-material-apis.md#asset-upload): se necessario, usa uno script o uno strumento di caricamento personalizzato che utilizza le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file).
-* [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): utile per professionisti del settore creativo e addetti al marketing che caricano risorse dal file system locale. Utilizzala per caricare le cartelle nidificate disponibili localmente.
+* [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it): utile per professionisti del settore creativo e addetti al marketing che caricano risorse dal file system locale. Utilizzala per caricare le cartelle nidificate disponibili localmente.
 * [Strumento di acquisizione in blocco](#asset-bulk-ingestor): utilizza per l&#39;acquisizione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione di [!DNL Experience Manager].
 
 ### Strumento Importazione in blocco risorse {#asset-bulk-ingestor}
@@ -202,7 +202,7 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 
-1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando si [Importa ed esporta metadati di risorse in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se si seleziona l&#39;opzione **Elimina file di origine dopo l&#39;importazione**, filtrare i file CSV utilizzando i campi **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file**. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
+1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando si [Importa ed esporta metadati di risorse in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=it). Se si seleziona l&#39;opzione **Elimina file di origine dopo l&#39;importazione**, filtrare i file CSV utilizzando i campi **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file**. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
 
 1. Fai clic su **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -357,7 +357,7 @@ In Experience Manager viene visualizzata la cronologia dei processi. Nella pagin
 Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supporta altri client sul desktop. Inoltre, forniscono un’esperienza di caricamento senza dover passare al browser web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) fornisce l&#39;accesso alle risorse da [!DNL Experience Manager] nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall&#39;interfaccia utente di Adobe Asset Link, direttamente da queste applicazioni desktop.
-* L&#39;[[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È utile caricare i file nelle gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
+* L&#39;[[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it) semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È utile caricare i file nelle gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
 
 ## Elabora risorse quando caricate {#process-when-uploaded}
 
