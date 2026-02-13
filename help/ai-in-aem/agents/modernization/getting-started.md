@@ -3,9 +3,10 @@ title: Guida introduttiva all’agente di modernizzazione esperienza
 description: Scopri i primi passaggi per diventare rapidamente produttivi con l’agente di modernizzazione esperienza utilizzando la console di modernizzazione esperienza.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c80ce5a9fc5f208fd910d5cef72225085248fb4d
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Scopri i primi passaggi per diventare rapidamente produttivi con l’agente di m
 
 1. Selezionare un repository [Edge Delivery Services](/help/edge/overview.md) da utilizzare con la console di modernizzazione delle esperienze.
    * Questo può essere un progetto Edge Delivery Services esistente oppure puoi crearne uno nuovo seguendo l&#39;[esercitazione per sviluppatori](https://www.aem.live/developer/tutorial) utilizzando l&#39;[archivio standard.](https://github.com/adobe/aem-boilerplate)
-1. Verificare che l&#39;app [AEMY GitHub](https://github.com/apps/aem-aemy) sia installata nell&#39;archivio.
+1. Verificare che il [Connettore codice AEM](https://github.com/apps/aem-code-connector) sia installato nell&#39;archivio.
    * Questo consente alla console di controllare il codice.
 1. Verificare che l&#39;app GitHub [AEM Code Sync](https://github.com/apps/aem-code-sync) sia installata nell&#39;archivio.
    * Questo consente a Edge Delivery Services di sincronizzare il codice.
@@ -41,7 +42,7 @@ La console richiede un repository al primo accesso.
 ![Prima schermata di accesso della console](assets/first-sign-on.png)
 
 1. Fare clic su **Connetti repository**.
-1. Verrà aperta l’app AEMY in una nuova scheda del browser. Fai clic su **Autorizza AEM AEMY**.
+1. Verrà aperta l’app AEM Code Connector in una nuova scheda del browser. Fai clic su **Autorizza connettore codice AEM**.
 1. Nella console, seleziona **Proprietario**, **Archivio** e **Selezione ramo** e fai clic su **Estrai nell&#39;area di lavoro**.
    ![Connessione al progetto GitHub](assets/connect-to-github-project.png)
 1. Quando viene richiesto di **Sostituire l&#39;area di lavoro esistente**, fare clic su **Sostituisci area di lavoro**.

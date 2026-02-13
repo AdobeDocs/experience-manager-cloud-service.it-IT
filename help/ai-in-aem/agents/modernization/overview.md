@@ -3,7 +3,8 @@ title: Panoramica dell’agente di modernizzazione dell’esperienza
 description: Scopri in che modo l’agente di modernizzazione esperienza esegue l’onboarding di nuovi siti web in Edge Delivery Services con l’aiuto dell’intelligenza artificiale.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a19b17517a096c93609cd5637deee9e04eb6ac37
+exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
