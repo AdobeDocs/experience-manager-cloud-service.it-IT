@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1c5cbed1ea9e8beda14ed3c66f14a446941cd9cf
+source-git-commit: 087c29ddd1dcfe0fc4bda7428d71a5e6157e1325
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 39%
+source-wordcount: '2035'
+ht-degree: 40%
 
 ---
 
@@ -34,15 +34,12 @@ La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience
 
 Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Video sulla versione {#release-video}
 
-## Release Video {#release-video}
+Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
 
-Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
-
--->
 
 ## Programmi AEM Beta {#aem-beta-programs}
 
