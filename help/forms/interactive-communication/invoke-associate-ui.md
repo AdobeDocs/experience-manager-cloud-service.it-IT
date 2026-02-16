@@ -4,15 +4,13 @@ description: Scopri come integrare l’interfaccia utente di AEM Forms Associate
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 2%
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
-
 
 # Integrare l’interfaccia utente di Associa nell’applicazione
 
@@ -26,13 +24,13 @@ Prima di integrare l’interfaccia utente Associa all’applicazione, assicurati
 
 - Comunicazione interattiva creata e pubblicata
 - Browser con supporto per popup abilitato
-- Associa [&#x200B; utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
+- Associa [ utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
 
 >[!NOTE]
 >
 >- In questo articolo viene illustrata la configurazione dell&#39;autenticazione utilizzando SAML 2.0 con [Microsoft Entra ID (Azure AD) come provider di identità](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
+>- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
 
 ### Configurazioni SAML aggiuntive per l’interfaccia utente associata
 
@@ -115,7 +113,11 @@ Questa sezione illustra come avviare l’interfaccia utente Associa dalla tua ap
 
 Per verificare e comprendere rapidamente come funziona l’integrazione dell’interfaccia utente Associa, utilizza la seguente pagina di esempio di HTML. Copia il codice in un file HTML e aprilo nel browser.
 
-Questo esempio fornisce una semplice interfaccia modulo in cui puoi inserire i dettagli della comunicazione interattiva e avviare l’interfaccia utente Associa con un solo clic.
+>[!NOTE]
+>
+> Questo HTML di esempio richiede un ID IC e un servizio di precompilazione. Puoi testarlo utilizzando il tuo ID IC e il servizio di precaricamento di esempio &quot;FdmTestData&quot;.&quot;
+
+L’esempio di HTML fornisce una semplice interfaccia modulo in cui puoi inserire i dettagli della comunicazione interattiva e avviare l’interfaccia utente Associa con un solo clic.
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ Ora puoi avviare l’interfaccia utente Associa utilizzando la pagina di esempio
 
 1. **Immettere l&#39;ID IC**: nel campo **ID IC** immettere l&#39;identificatore della comunicazione interattiva pubblicata. Questo è l’unico campo obbligatorio.
 
-2. **Configura servizio di precompilazione** (facoltativo): se si desidera precompilare l&#39;IC con dati dinamici, immettere il nome del servizio del modello dati modulo nel campo **Servizio di precompilazione**. Ad esempio, utilizzare `FdmTestData` per i dati di esempio o `IC-FDM` per i dati di test.
+1. **Configura servizio di precompilazione**: se si desidera precompilare l&#39;IC con dati dinamici, immettere il nome del servizio del modello dati modulo nel campo **Servizio di precompilazione**. Ad esempio, utilizzare `FdmTestData` per i dati di esempio.
 
-3. **Aggiungi parametri servizio** (facoltativo): nel campo **Parametri servizio (JSON)**, immetti un oggetto JSON con i parametri richiesti dal servizio di precompilazione. Ad esempio:
+   ![Interfaccia utente HTML di esempio](/help/forms/assets/samplehtmlui.png)
+
+1. **Fare clic su Interfaccia utente associata lancio**: fare clic sul pulsante **Interfaccia utente associata lancio**. Viene visualizzata una nuova finestra del browser con l’interfaccia utente Associa, precaricata con la comunicazione interattiva.
+
+Immetti i dati e l’interfaccia utente Associa verrà visualizzata come mostrato di seguito:
+
+![Associa interfaccia utente](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> Se la finestra non si apre, verificare che il browser consenta la visualizzazione di popup per questo sito.
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **Imposta opzioni PDF** (facoltativo): nel campo **Opzioni (JSON)**, configurare le opzioni di rendering come impostazioni internazionali, allegati o impostazioni di accessibilità.
-
-5. **Fare clic su Interfaccia utente associata lancio**: fare clic sul pulsante **Interfaccia utente associata lancio**. Viene visualizzata una nuova finestra del browser con l’interfaccia utente Associa, precaricata con la comunicazione interattiva.
-
->[!NOTE]
->
-> Se la finestra non si apre, verificare che il browser consenta la visualizzazione di popup per questo sito.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Risoluzione dei problemi
 
