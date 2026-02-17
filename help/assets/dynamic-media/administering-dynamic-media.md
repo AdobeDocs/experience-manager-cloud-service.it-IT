@@ -1,11 +1,12 @@
 ---
 title: Impostazione di Dynamic Media
 description: Per configurare Dynamic Media, devi configurare Dynamic Media e gestire i predefiniti per immagini e visualizzatori.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 8a8f3d7b17d79791a3ebf6b583ffcccfcf214470
+source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 4%
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 {{work-with-dynamic-media}}
 
-[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
