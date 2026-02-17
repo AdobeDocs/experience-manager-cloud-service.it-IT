@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 79%
+source-wordcount: '2268'
+ht-degree: 77%
 
 ---
 
@@ -100,7 +100,9 @@ Per creare un modulo metadati, effettua le seguenti operazioni:
 
    ![opzione moduli metadati nella barra laterale a sinistra](assets/metadata-form-new.png)
 
-   *Figura: Interfaccia per la creazione di moduli metadati, con opzioni che consentono di aggiungere componenti e visualizzare l’anteprima del modulo.*
+   Comprendere l&#39;interfaccia utente [di un modulo metadati](cascading-metadata-assets-view.md#build-metadata-forms).
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. Per ogni componente, specifica un nome nelle **[!UICONTROL Impostazioni]** nella barra a destra e una mappatura con le proprietà supportate.
 1. Se necessario, per un singolo componente, seleziona **[!UICONTROL Obbligatorio]** per rendere obbligatorio il campo di metadati e seleziona **[!UICONTROL Solo lettura]** per impedire la modifica del campo nella pagina [!UICONTROL Dettagli] della risorsa.
@@ -140,6 +142,9 @@ Di seguito è riportata una panoramica di ciascun tipo di proprietà e della rel
 | Tag | Aggiungere un tag dai valori archiviati in Gestione tassonomia (mappato a xcm:tags). |
 | Parole chiave | Aggiungere parole chiave in formato libero (mappate a dc:subject). |
 | Tag avanzati | Migliora le funzionalità di ricerca aggiungendo automaticamente tag di metadati. |
+| Pubblicazione | Aggiunge lo stato di pubblicazione della risorsa. |
+| Collegamento | Memorizza un indirizzo web che punta a una risorsa online, ad esempio una pagina web, un’immagine o un riferimento esterno. |
+| Valutazione | Aggiunge un valore di categoria che indica la qualità di una risorsa. |
 
 ### Assegnare un modulo metadati a una cartella {#assign-metadata-form-folder}
 
@@ -237,7 +242,7 @@ Per modificare un modulo di metadati, effettua le seguenti operazioni:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
