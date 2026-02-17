@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 49%
+source-wordcount: '2627'
+ht-degree: 46%
 
 ---
 
@@ -103,7 +103,7 @@ Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utiliz
 
 * Applicazioni a pagina singola
 * Applicazioni mobile native
-* Altri canali e punti di contatto esterni ad AEM
+* altri canali e punti di contatto esterni ad AEM
 
 La consegna viene effettuata in formato JSON utilizzando il modulo di esportazione JSON.
 
@@ -128,19 +128,19 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor pagina [&#x200B; dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor pagina [ dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
 * Accessibili tramite l’[API GraphQL di AEM](/help/headless/graphql-api/content-fragments.md).
 
-I frammenti di contenuto sono una struttura di contenuto che:
+I frammenti di contenuto sono strutture di contenuto che:
 
 * Non disporre di layout o progettazione (in modalità Testo formattato è possibile formattare del testo).
 * Contiene una o più [parti costitutive](#constituent-parts-of-a-content-fragment).
 * [Contengono immagini o possono essere connesse a esse](#fragments-with-visual-assets).
-* È utilizzato [tra i contenuti](#in-between-content-when-page-authoring-with-content-fragments) quando vi si fa riferimento in una pagina.
-* Sono indipendenti dal meccanismo di consegna (ovvero, pagina, canale).
+* Sono utilizzati come [contenuto intermedio](#in-between-content-when-page-authoring-with-content-fragments) quando vi si fa riferimento in una pagina.
+* è indipendente dal meccanismo di consegna (ad esempio, pagina, canale).
 
 ### Frammenti con risorse visive {#fragments-with-visual-assets}
 
@@ -246,7 +246,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
 * **Varianti**
 
-   * Sono rappresentazioni di testo di frammenti specifiche a scopo editoriale; possono essere relative a un canale ma non sono obbligatorie; possono anche essere utilizzate per modifiche locali ad hoc.
+   * Rappresentazioni di testo di un frammento specifiche a scopo editoriale; possono essere relative a un canale, ma questo non è obbligatorio; possono anche essere utilizzate per modifiche locali ad hoc.
    * Vengono create come copie di **Master**, ma possono essere modificate in base alle esigenze. Esiste una sovrapposizione di contenuti tra le varianti stesse.
    * Possono essere definite durante l’authoring del frammento.
    * Sono memorizzate nel frammento, per evitare la dispersione delle copie del contenuto.
@@ -270,24 +270,24 @@ Contenuto intermedio:
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 
-Per creare frammenti di contenuto, è necessario:
+Per creare un frammento di contenuto, è necessario:
 
-* **Modello di contenuto**
+* un **Modello per frammenti di contenuto**
 
-   * Viene [abilitato tramite il Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * Viene [creato utilizzando gli strumenti](/help/assets/content-fragments/content-fragments-models.md).
+   * È abilitato per [tramite il browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * È [creato utilizzando gli strumenti](/help/assets/content-fragments/content-fragments-models.md).
    * È necessario per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Definisce la struttura di un frammento (titolo, elementi di contenuto, definizioni tag).
-   * La definizione di un modello di contenuto richiede un titolo e un elemento dati; tutto il resto è facoltativo.
-   * Il modello può definire eventuale contenuto predefinito.
-   * Durante l’authoring del contenuto di un frammento, gli autori non possono modificare la struttura definita.
+   * La definizione del modello richiede un titolo e un elemento dati; tutto il resto è facoltativo.
+   * Il modello può definire il contenuto predefinito, se applicabile.
+   * Gli autori non possono modificare la struttura definita durante l’authoring del contenuto di un frammento, anche se possono aprire l’editor modelli dall’editor frammenti.
    * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti possono influire su tali frammenti di contenuto.
 
 Per utilizzare i frammenti di contenuto per l’authoring delle pagine, è inoltre necessario:
 
-* **Componente Frammento di contenuto**
+* il **componente Frammento di contenuto**
 
-   * Essenziale per distribuire il frammento in formato HTML, JSON o entrambi.
+   * Essenziale per la distribuzione del frammento in formato HTML, JSON o entrambi.
    * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-cloud/authoring/fragments/content-fragments.md).
    * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
    * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
@@ -366,9 +366,12 @@ Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) tenendo pre
 
 Crea tutte le varianti di frammento necessarie, ma non più.
 
-Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
+Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna.
 
-Si consiglia di non superare le dieci varianti per frammento di contenuto.
+Si consiglia di:
+
+* mantenere il numero di varianti al minimo gestibile
+* non superare dieci varianti per frammento di contenuto
 
 ### Test prima della produzione {#test-before-production}
 
