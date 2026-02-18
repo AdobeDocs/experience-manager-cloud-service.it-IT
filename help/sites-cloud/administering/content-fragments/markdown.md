@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 79%
+ht-degree: 72%
 
 ---
 
@@ -32,7 +32,7 @@ Puoi definire:
 
 ## Notazione intestazione {#heading-notation}
 
-Per creare un’intestazione inserendo un hashtag (#) davanti al titolo. Un hashtag (#) indica un H1, due hashtag (##) per un H2 e così via. Puoi utilizzare fino a 6 hashtag. Esempio:
+Per creare un&#39;intestazione, posiziona un simbolo hash (#) davanti all&#39;intestazione. Un simbolo hash (#) indica un H1, due simboli hash (##) per un H2 e così via. Puoi utilizzare fino a sei simboli hash. Esempio:
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ Puoi citare il testo aggiungendo il simbolo > prima del testo. Esempio:
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Puoi anche aggiungere citazioni nidificate. Esempio:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizza il simbolo &ast; davanti agli elementi dell’elenco. Esempio:
+Per creare un elenco non ordinato, utilizzare il simbolo &amp;ast; (asterisco) prima delle voci dell&#39;elenco. Esempio:
 
     `* item in list`
 
