@@ -376,7 +376,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
       &lt;!...[Proprietà pagina master](/help/forms/assets/dorpropertiesimg.png)—>
      
-     >[!NOTA]
+     >[ !NOTA]
      >
      >Se si utilizza un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, verificare che nel modello di modulo adattivo nel sottomodulo radice sia presente quanto segue:
      
