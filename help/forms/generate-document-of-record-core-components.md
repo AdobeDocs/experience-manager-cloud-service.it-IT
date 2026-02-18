@@ -4,9 +4,9 @@ description: Scopri come generare un PDF di invio dall’invio dei moduli per i 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
+source-wordcount: '3208'
 ht-degree: 1%
 
 ---
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
       * **Nascondi descrizione pannelli**: l&#39;impostazione della proprietà esclude la descrizione del pannello o della tabella dal PDF di invio. Applicabile per il pannello e la tabella.
 
-
-
    1. **Proprietà campo modulo**:
 
       * **Per i componenti Casella di controllo e Pulsante di opzione, mostrare solo i valori selezionati**: impostando la proprietà verranno visualizzati solo i valori selezionati della casella di controllo e del pulsante di opzione in [!UICONTROL Documento record].
@@ -363,35 +359,33 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Allineamento opzioni**: è possibile selezionare l&#39;allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l&#39;allineamento per i campi, ad esempio la casella di controllo o il pulsante di scelta da visualizzare nel [!UICONTROL Documento record]. Per impostazione predefinita, l&#39;allineamento verticale è impostato per i campi in [!UICONTROL Documento di record]. L&#39;impostazione delle proprietà dalle [!UICONTROL proprietà campo modulo] del DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Se si seleziona l&#39;opzione [!UICONTROL Come modulo adattivo], per i campi [!UICONTROL Documento record] viene utilizzato l&#39;allineamento configurato in un&#39;istanza di authoring del modulo adattivo.
       * **Numero di opzioni per l&#39;allineamento orizzontale**:You può impostare il numero di opzioni da visualizzare nel PDF di invio per l&#39;allineamento orizzontale.
 
-
-
    1. **Proprietà pagina master**:
 
       * **Immagine logo**: puoi scegliere di utilizzare l&#39;immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
       * **Titolo modulo**: titolo del documento record.
-* **Testo intestazione**: Testo visualizzato nella sezione dell&#39;intestazione del PDF di invio.
-* **Etichetta liberatoria**: etichetta della liberatoria.
-* **Dichiarazione di non responsabilità**: testo che specifica l&#39;ambito dei diritti e degli obblighi relativi all&#39;inoltro PDF.
-* **Testo liberatoria**: testo liberatoria.
+      * **Testo intestazione**: Testo visualizzato nella sezione dell&#39;intestazione del PDF di invio.
+      * **Etichetta liberatoria**: etichetta della liberatoria.
+      * **Esclusione di responsabilità**: testo che specifica l&#39;ambito dei diritti e degli obblighi relativi all&#39;inoltro PDF.
+      * **Testo liberatoria**: testo liberatoria.
 
-      &lt;!...[Proprietà pagina master](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[ !NOTA]
-     >
-     >Se si utilizza un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, verificare che nel modello di modulo adattivo nel sottomodulo radice sia presente quanto segue:
-     
-     &quot;xml
-     &lt;proto>
-     &lt;font typeface=&quot;Arial&quot;/>
-     &lt;riempimento>
-     &lt;valore colore=&quot;4,166,203&quot;/>
-     &lt;/fill>
-     &lt;bordo>
-     &lt;valore colore=&quot;4,166,203&quot;/>
-     &lt;/edge>
-     &lt;/proto>
-     &quot;
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
