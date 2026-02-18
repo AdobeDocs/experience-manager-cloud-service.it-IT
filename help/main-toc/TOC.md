@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 35d6f1bf1387273bda1ea8d8a873f47cb3fb64a5
+source-git-commit: 6f919532c9764e4f0c34b89115b058c90545034f
 workflow-type: tm+mt
-source-wordcount: '6993'
+source-wordcount: '6998'
 ht-degree: 95%
 
 ---
@@ -836,8 +836,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -881,8 +881,8 @@ ht-degree: 95%
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Creare un modello per moduli adattivi basato sui componenti core](/help/forms/template-editor-core-components.md)
             + [Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
-            + [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-core-components.md)
-            + [Tag di markup HTML supportati nel documento di record](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [Genera PDF di invio (precedentemente documento di record) per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
+            + [Tag di markup HTML supportati nel PDF di invio](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
@@ -966,7 +966,7 @@ ht-degree: 95%
             + [Aggiungere informazioni dai dati utente ai metadati di invio di un modulo](/help/forms/form-submission-metadata.md)
             + [API per richiamare il servizio Modello dati modulo (FDM) dai moduli adattivi](/help/forms/invoke-form-data-model-services.md)
          + [Precompilare i campi di un modulo adattivo](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [Genera documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Genera PDF di invio (in precedenza documento di record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Aggiungere il supporto per nuove lingue a un modulo adattivo](/help/forms/supporting-new-language-localization.md)
          + Aggiungere o migliorare i metadati {#manage-metadata}
             + [Aggiungere, rimuovere o modificare i metadati di un modulo adattivo](/help/forms/manage-form-metadata.md)
@@ -1278,7 +1278,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)

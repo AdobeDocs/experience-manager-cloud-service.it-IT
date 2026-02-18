@@ -1,24 +1,24 @@
 ---
-title: Tag di markup HTML supportati nel documento di record
-description: La guida di riferimento per i tag di markup HTML è ora supportata nella generazione del documento di record, incluse considerazioni sul comportamento di rendering e sull’accessibilità
+title: Tag di markup HTML supportati nel PDF di invio (precedentemente Document of Record)
+description: Guida di riferimento per i tag di markup HTML supportati durante la generazione di un PDF di invio (precedentemente Document of Record), incluse considerazioni sul comportamento di rendering e sull’accessibilità.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 8%
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# Tag di markup HTML supportati nel documento di record
+# Tag di markup HTML supportati nel PDF di invio (precedentemente Document of Record)
 
 ## Quali sono le implicazioni di questo riferimento?
 
-AEM Forms ora supporta i tag di markup HTML nei campi Rich Text durante la generazione di PDF del documento record (DoR). Questa guida spiega quali tag di markup HTML puoi utilizzare in modo sicuro in Adaptive Forms e come vengono riprodotti nei documenti generati.
+AEM Forms ora supporta i tag di markup HTML nei campi Rich Text durante la generazione di un PDF Submission PDF (precedentemente Document of Record). Questa guida spiega quali tag di markup HTML puoi utilizzare in modo sicuro in Adaptive Forms e come vengono riprodotti nel PDF di invio generato.
 
-Se ai moduli si aggiungono contenuti in formato Rich Text (ad esempio in grassetto, elenchi o collegamenti), è importante capire quali tag sono supportati e quali limitazioni possono avere. Questo riferimento consente di scegliere i tag appropriati per garantire che il contenuto venga visualizzato correttamente e rimanga accessibile nel documento di record.
+Se ai moduli si aggiungono contenuti in formato Rich Text (ad esempio in grassetto, elenchi o collegamenti), è importante capire quali tag sono supportati e quali limitazioni possono avere. Questo riferimento consente di scegliere i tag appropriati per garantire la corretta visualizzazione e l’accessibilità del contenuto nel PDF di invio.
 
 ## Prima di iniziare
 
@@ -27,18 +27,18 @@ Se ai moduli si aggiungono contenuti in formato Rich Text (ad esempio in grasset
 Dovresti conoscere:
 
 - Sintassi di markup HTML di base
-- [Nozioni di base sul documento di record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Nozioni di base su PDF (in precedenza Documento di record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Principi di accessibilità e linee guida WCAG
 - Requisiti di accessibilità di PDF
 - Componenti del modulo adattivo che accettano il markup HTML
 
 ### Considerazioni
 
-Il documento di record (DoR) può essere un PDF con tag, il che contribuisce a garantire l’accessibilità e la struttura corretta per le tecnologie per l’accessibilità. Per abilitare l&#39;output di PDF con tag, [impostare la proprietà XCI `config/present/pdf/tagged` su `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Dopo aver generato il PDF, è importante verificare che i tag di accessibilità siano applicati correttamente. È possibile utilizzare [Adobe Acrobat per verificare i tag di accessibilità](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) e assicurarsi che il documento soddisfi gli standard di accessibilità.
+Il PDF di invio (precedentemente Document of Record) può essere un PDF con tag che garantisce l’accessibilità e la struttura corretta delle tecnologie per l’accessibilità. Per abilitare l&#39;output di PDF con tag, [impostare la proprietà XCI `config/present/pdf/tagged` su `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Dopo aver generato il PDF, è importante verificare che i tag di accessibilità siano applicati correttamente. È possibile utilizzare [Adobe Acrobat per verificare i tag di accessibilità](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) e assicurarsi che il documento soddisfi gli standard di accessibilità.
 
 ### Novità
 
-Il supporto per testo formattato nel documento di record è un miglioramento recente. In precedenza, il contenuto in formato Rich Text veniva visualizzato come testo normale nei documenti generati. Questa nuova funzionalità consente il corretto rendering del contenuto formattato negli output PDF.
+Il supporto per testo RTF in Submission PDF è stato recentemente migliorato. In precedenza, il contenuto in formato Rich Text veniva visualizzato come testo normale nei documenti generati. Questa nuova funzionalità consente il corretto rendering del contenuto formattato negli output PDF.
 
 ## Riferimento per il supporto dei tag di HTML
 
@@ -46,7 +46,7 @@ Il supporto per testo formattato nel documento di record è un miglioramento rec
 
 Questi tag sono completamente supportati con la corretta creazione dei nodi di accessibilità:
 
-| Tag HTML | Descrizione | Supporto del documento record | Accessibilità | Esempio |
+| Tag HTML | Descrizione | Invio supporto PDF | Accessibilità | Esempio |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Paragrafo | Sì | Completamente supportato - Correzione nodo `<P>` | `<p>This is a paragraph.</p>` |
 | `<br/>` | Interruzione di riga | Sì | Completamente supportato - entro `<P>` nodo | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Questi tag non sono supportati e non verranno visualizzati correttamente:
 ## Contenuto correlato
 
 
-- [Generare un documento di record per moduli adattivi](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Genera documento di record per i componenti core](/help/forms/generate-document-of-record-core-components.md)
-- [Personalizzazione del modello del documento record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Genera PDF di invio (precedentemente documento di record) per Forms adattivo](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Genera PDF di invio per i componenti core](/help/forms/generate-document-of-record-core-components.md)
+- [Personalizzazione del modello PDF di invio](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
