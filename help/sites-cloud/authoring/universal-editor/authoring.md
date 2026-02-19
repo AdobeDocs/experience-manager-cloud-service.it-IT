@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 13%
+source-wordcount: '2902'
+ht-degree: 12%
 
 ---
 
@@ -101,23 +101,30 @@ Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvar
 
 L’editor Rich Text di Universal Editor consente all’autore di applicare la formattazione di testo standard. Per impostazione predefinita, sono disponibili le seguenti opzioni.
 
-* Paragrafo (h1, h2, h3, ecc.)
-* Grassetto
-* Corsivo
-* Sottolineato
-* Apice
-* Pedice
-* Elenco puntato
-   * Utilizza il tasto TAB per applicare un rientro e MAIUSC+TAB per annullare il rientro
-* Elenco ordinato
-   * Utilizza il tasto TAB per applicare un rientro e MAIUSC+TAB per annullare il rientro
-* Collegamento
-* Scollega
-* Immagine
-* Incolla testo semplice
-* Rimuovi tutta la formattazione
-
-È possibile modificare le tabelle esistenti utilizzando l’editor Rich Text, ma non è possibile creare nuove tabelle.
+* **Stile paragrafo**
+   * Paragrafo, h1-h6, codice
+* **Grassetto**
+* **Corsivo**
+* **Sottolineato**
+* **Barrato**
+* **Apice**
+* **Pedice**
+* **Elenco puntato**
+   * Utilizza il tasto TAB per applicare un rientro e Maiusc+TAB per annullare il rientro.
+* **Elenco ordinato**
+   * Utilizza il tasto TAB per applicare un rientro e Maiusc+TAB per annullare il rientro.
+* **Collegamento**
+   * Specifica un URL o utilizza il Browser contenuto per selezionare un percorso all’interno di AEM.
+* **Scollega**
+   * Rimuovi collegamento dal testo selezionato.
+* **Immagine**
+   * Specifica un URL o utilizza il [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) per selezionare una risorsa da AEM.
+* **Tabella**
+   * Utilizza il menu a discesa per inserire una nuova tabella del numero di colonne e righe selezionato o per inserire e rimuovere nuove colonne o righe.
+* **Incolla come testo**
+   * Rimuovere la formattazione dal testo presente negli Appunti prima di incollarla nell&#39;Editor universale.
+* **Rimuovi tutta la formattazione**
+   * Rimuovi tutte le opzioni di formattazione dal testo selezionato.
 
 L’editor Rich Text può essere configurato in modo da nascondere le opzioni o mostrare opzioni aggiuntive a seconda delle esigenze degli autori. Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;editor Rich Text per Universal Editor](/help/implementing/universal-editor/configure-rte.md).
 
@@ -261,7 +268,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 

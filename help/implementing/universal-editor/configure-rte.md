@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ La configurazione della barra degli strumenti controlla quali opzioni di modific
 }
 ```
 
-## Configurazione azioni {#actions}
+## Configurazione azione {#action}
 
 La configurazione delle azioni ti consente di personalizzare il comportamento e l’aspetto delle singole azioni di modifica. Queste sono le sezioni disponibili.
+
+### Opzioni azioni comuni {#common-action-options}
+
+La maggior parte delle azioni supporta le seguenti opzioni comuni:
+
+* `shortcut?`: stringa - Sostituisce la scelta rapida da tastiera predefinita per l&#39;azione (se presente)
+* `label?`: string - Esegue l&#39;override dell&#39;etichetta utilizzata per l&#39;azione nell&#39;interfaccia utente
+* `hideInline?`: booleano - Quando `true`, nasconde questa azione dalla barra degli strumenti dell&#39;editor RTE in-context (inline)
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Azioni formato {#format}
 
@@ -134,6 +154,56 @@ Le azioni elenco supportano il wrapping del contenuto per controllare la struttu
   }
 }
 ```
+
+### Azioni tabella {#table-actions}
+
+Le azioni di tabella supportano il wrapping del contenuto per controllare la struttura HTML nelle celle di tabella:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Opzioni di configurazione tabella {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (impostazione predefinita) - Le celle di tabella contengono contenuto di testo non racchiuso
+* `wrapInParagraphs`: `true` - Le celle della tabella racchiudono il contenuto nei tag paragrafo
+
+Esempi:
+
+Quando `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Quando `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Quando si rimuove il wrapping dei paragrafi (`wrapInParagraphs`: `false`), lo strumento di pulizia inserisce automaticamente `<br>` tag tra più paragrafi per mantenere le interruzioni di riga visive. Questo segue gli standard HTML e le pratiche comuni dei principali editor Rich Text.
 
 ### Azioni collegamento {#link}
 
@@ -487,3 +557,20 @@ I collegamenti utilizzano il formato `Mod-Key` in cui:
 
 * `Mod` = `Cmd` su Mac, `Ctrl` su Windows/Linux
 * Esempi: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## HTML non supportato {#unsupported-html}
+
+Per impostazione predefinita, i tag HTML sconosciuti vengono rimossi quando vengono analizzati dall’editor. Per conservarli, fornire il consenso tramite l&#39;opzione di configurazione `unsupportedHtml`:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Valore | Comportamento |
+|---|---|
+| `false` (impostazione predefinita) | I tag HTML sconosciuti vengono eliminati durante l’analisi. |
+| `true` | I tag di HTML sconosciuti sono racchiusi in un nodo personalizzato non supportato a blocchi, in modo che il contenuto possa essere sottoposto a round trip in modo sicuro. |
+
+Quando è abilitato, l&#39;editor esegue il rendering dei nodi non supportati con una classe `rte-unsupported-block`. Le app consumer devono fornire lo stile per questa classe (ad esempio, bordo, spaziatura interna, sfondo). L&#39;etichetta del tag all&#39;interno del blocco utilizza `rte-unsupported-label`, che può anche essere personalizzato.
