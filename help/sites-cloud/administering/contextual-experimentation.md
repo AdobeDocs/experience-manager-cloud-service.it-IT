@@ -3,9 +3,11 @@ title: Sperimentazione contestuale in AEM as a Cloud Service
 description: Scopri come utilizzare il plug-in di sperimentazione per aggiungere funzionalità di sperimentazione al sito.
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ Per i siti in esecuzione su Adobe Experience Manager, è disponibile il **plug-i
 
 Il plug-in di sperimentazione viene utilizzato nel contesto di [Edge Delivery Services](/help/edge/overview.md), pertanto sarà necessario un account Github, un archivio di contenuti come SharePoint o Google Drive e anche il [AEM Sidekick](https://www.aem.live/docs/sidekick). Vedere anche la [Guida introduttiva - Esercitazione per sviluppatori di Universal Editor](https://www.aem.live/developer/tutorial) e la [Guida introduttiva - Esercitazione per sviluppatori](https://www.aem.live/developer/tutorial).
 
-Dopo aver configurato tutto, **guarda questo video** intitolato [Sperimentazione immediata](https://business.adobe.com/it/products/experience-manager/sites/testing-optimization.html) per una breve dimostrazione del funzionamento del plug-in di sperimentazione.
+Dopo aver configurato tutto, **guarda questo video** intitolato [Sperimentazione immediata](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) per una breve dimostrazione del funzionamento del plug-in di sperimentazione.
 
 ## Termini utilizzati di frequente {#frequently-used-terms}
 
