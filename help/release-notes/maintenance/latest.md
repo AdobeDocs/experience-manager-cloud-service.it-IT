@@ -4,7 +4,7 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 27%
@@ -18,7 +18,7 @@ La sezione seguente illustra le note di rilascio tecnico per la versione di manu
 
 ## Versione 24464 {#release-24464}
 
-Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 24464, rilasciata pubblicamente il mercoledì 17 febbraio 2026. La versione di manutenzione precedente era la 24288.
+Di seguito sono riepilogati i miglioramenti continui relativi alla versione di manutenzione 24464, rilasciata pubblicamente il giovedì 18 febbraio 2026. La versione di manutenzione precedente era la 24288.
 
 Con la versione di attivazione delle funzioni 2026.2.0 viene fornito il set completo di funzioni per questa versione di manutenzione. Per ulteriori informazioni, consulta la [roadmap delle versioni di Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
