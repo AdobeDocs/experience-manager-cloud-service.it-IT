@@ -4,23 +4,19 @@ description: Blocco modelli nell'Editor comunicazioni interattive consente agli 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 10%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
-
 
 # Blocco modello nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -63,7 +59,7 @@ Quando applicati, gli autori non possono:
 Per applicare i blocchi di contenuto o di layout nel modello di comunicazione interattiva (IC), segui la procedura riportata di seguito:
 
 1. Apri il modello
-Apri o crea un modello, segui la guida [Creare un modello di comunicazione interattiva](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Apri o crea un modello, segui la guida [Creare un modello di comunicazione interattiva](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Seleziona il componente
 Fare clic sul componente (casella di testo, immagine o sottomaschera) che si desidera limitare.

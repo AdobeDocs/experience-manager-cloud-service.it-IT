@@ -4,23 +4,19 @@ description: L’oggetto campo data nell’Editor di comunicazione interattiva i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 8%
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
-
 
 # Oggetto campo data nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -139,5 +135,3 @@ Gli autori possono inserire il campo data all’interno di contenitori di layout
 - Nascondi dinamicamente campi data non rilevanti utilizzando le regole di visibilità.
 
 L&#39;oggetto **Date Field** nell&#39;editor di comunicazioni interattive è uno strumento potente per acquisire dati sensibili al tempo con precisione e facilità. Se formattato in modo accurato e connesso a percorsi di dati significativi, supporta un’esperienza utente fluida ed efficiente nell’elaborazione delle voci basate sul tempo.
-
-

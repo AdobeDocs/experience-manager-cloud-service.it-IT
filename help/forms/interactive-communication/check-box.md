@@ -4,23 +4,19 @@ description: Il componente Casella di controllo nell’Editor di comunicazione i
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 8%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
-
 
 # Componente casella di controllo nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -123,5 +119,3 @@ Le caselle di controllo possono essere posizionate all&#39;interno di griglie o 
 - Utilizza le regole di visibilità quando le caselle di controllo dipendono da input o condizioni precedenti.
 
 Il componente Casella di controllo nell’editor di comunicazioni interattive è un componente semplice ma essenziale per gli input binari. Grazie al supporto per lo stile, la presenza condizionale e l’associazione flessibile dei dati, riveste un ruolo chiave nel miglioramento dell’interattività e del controllo degli utenti nei moduli digitali intelligenti. Se implementate con etichette ponderate, stili coerenti e un’integrazione significativa dei dati, le caselle di controllo contribuiscono in modo significativo a creare un’esperienza di modulo fluida e intuitiva.
-
-

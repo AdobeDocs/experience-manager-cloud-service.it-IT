@@ -4,23 +4,19 @@ description: Anteprima PDF nell’Editor di comunicazione interattiva con divers
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 13%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
-
 
 # Anteprima PDF nell’Editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 La funzione di anteprima di PDF consente agli utenti di visualizzare in anteprima le comunicazioni interattive in tre modi diversi: senza dati, con dati locali basati su JSON o con dati di esempio dal modello dati configurato.
 
@@ -50,7 +46,7 @@ Visualizza in anteprima le comunicazioni interattive senza dati, dati locali o d
 
 +++&#x200B;2. Anteprima con dati JSON locali
 
-2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
+2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
 
 2.2. Nell&#39;editor IC, passare a **Anteprima PDF** > Utilizzo dei dati locali.
 
@@ -69,4 +65,3 @@ Visualizza in anteprima le comunicazioni interattive senza dati, dati locali o d
 ![Trova documento IC](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

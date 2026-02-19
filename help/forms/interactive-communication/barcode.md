@@ -4,23 +4,19 @@ description: Il componente Codice a barre nell’Editor comunicazioni interattiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 7%
+source-wordcount: '702'
+ht-degree: 2%
 
 ---
-
 
 # Componente Codice a barre nell’editor di comunicazioni interattive
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 

@@ -4,23 +4,19 @@ description: Il componente Linea nell’Editor comunicazioni interattive di AEM 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 11%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
-
 
 # Componente linea nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -113,5 +109,3 @@ Il componente Linea viene spesso utilizzato per:
 - Nascondere le linee non necessarie per evitare distrazioni e mantenere la spaziatura.
 
 Il componente Linea nell’editor di comunicazione interattiva è un elemento di progettazione semplice ma potente. Utilizzato strategicamente, migliora la struttura visiva dei documenti di comunicazione, consentendo agli utenti di navigare meglio nei contenuti e garantendo un layout più pulito e raffinato.
-
-

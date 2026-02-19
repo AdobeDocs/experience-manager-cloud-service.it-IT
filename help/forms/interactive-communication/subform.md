@@ -4,23 +4,19 @@ description: Il componente Sottomodulo nell’Editor di comunicazione interattiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '479'
+ht-degree: 2%
 
 ---
-
 
 # Componente Sottomodulo nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -110,5 +106,3 @@ Le sottomaschere possono essere utilizzate anche come contenitori per l&#39;alli
 - Applicare regole di visibilità condizionale per ottimizzare l’esperienza utente nei moduli complessi.
 
 Il componente **Sottomodulo** nell&#39;editor di comunicazioni interattive consente di strutturare e controllare layout di moduli complessi. Organizzando i campi di input, gestendo il contenuto dinamico o abilitando la progettazione modulare, le sottomaschere migliorano sia l&#39;usabilità che la gestibilità tra i modelli di documento.
-
-

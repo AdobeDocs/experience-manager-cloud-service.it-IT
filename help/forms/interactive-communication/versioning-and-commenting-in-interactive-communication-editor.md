@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 7f366823e1baeda8eacd8c92fe23300d10ec828a
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 8%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
-
 
 # Controllo delle versioni e commenti nell’Editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 Le comunicazioni interattive (IC) consentono alle organizzazioni di creare documenti dinamici e basati su dati per comunicazioni personalizzate con i clienti. Per supportare una migliore collaborazione, governance e flussi di lavoro di pubblicazione controllata, l’Editor di comunicazione interattiva fornisce funzionalità di controllo delle versioni, revisione e commento.
 

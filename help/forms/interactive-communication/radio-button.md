@@ -4,23 +4,19 @@ description: Il componente Pulsante di scelta nell’Editor comunicazioni intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 9%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
-
 
 # Componente Pulsante di opzione nell’editor di comunicazioni interattive
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -118,5 +114,3 @@ Gli autori possono raggruppare i pulsanti di scelta correlati e posizionarli all
 - Applicate spaziature e allineamenti coerenti per una maggiore chiarezza visiva, in particolare nei layout facili da usare sui dispositivi mobili.
 
 Il componente Pulsante di scelta nell’editor di comunicazioni interattive è un componente di input fondamentale che offre agli utenti finali un processo decisionale pulito e strutturato. Se configurato con etichette chiare, spaziatura accurata e associazione dati, garantisce una raccolta dati affidabile e un’esperienza utente più fluida per moduli, sondaggi e flussi di lavoro di onboarding.
-
-

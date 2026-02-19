@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: f587a30da747ae3d53848ef5bb30c32a9b5d78e1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 11%
+source-wordcount: '545'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 11%
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 La comunicazione interattiva ti consente di creare, gestire e distribuire comunicazioni personalizzate e interattive, tra cui servizio clienti, fatturazione, documenti di onboarding, lettere di offerta, aggiornamenti dell’account e altro ancora. È progettato per supportare qualsiasi scenario in cui contenuti dinamici e specifici per l’utente migliorino l’esperienza di comunicazione nei diversi settori.
 

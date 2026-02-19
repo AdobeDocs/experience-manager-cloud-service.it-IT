@@ -4,23 +4,19 @@ description: Componente Campo numerico nell’editor di comunicazioni interattiv
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 7%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
-
 
 # Componente Campo numerico nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -131,5 +127,3 @@ Gli autori possono inserire campi numerici all’interno di contenitori o sottom
 - Mantieni l’aspetto coerente e la tipografia per rispettare le linee guida del brand.
 
 Il componente **Campo numerico** nell&#39;editor di comunicazioni interattive è uno strumento preciso e affidabile per la raccolta dati basata sulle cifre. Grazie alla formattazione affidabile, ai controlli di visibilità e alle opzioni di associazione dei dati, gli input numerici vengono acquisiti in modo chiaro e integrati perfettamente nei moduli digitali. Se formattato e configurato correttamente, migliora notevolmente l’usabilità dei moduli e la precisione complessiva dei dati.
-
-

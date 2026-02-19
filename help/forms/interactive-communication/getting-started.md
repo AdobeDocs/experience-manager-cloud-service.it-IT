@@ -4,23 +4,19 @@ description: La comunicazione interattiva consente alle organizzazioni di proget
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 11%
+source-wordcount: '701'
+ht-degree: 6%
 
 ---
-
 
 # Guida introduttiva all’editor di comunicazione interattiva (IC)
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 L&#39;**editor di comunicazione interattiva** in Adobe Experience Manager (AEM) Forms consente alle organizzazioni di progettare e distribuire comunicazioni personalizzate basate su dati, quali rendiconti, fatture e lettere, tra canali digitali e di stampa. Questa guida fornisce una panoramica su come iniziare, dall’onboarding alla navigazione nell’interfaccia dell’editor IC.
 
@@ -33,7 +29,7 @@ Per utilizzare la comunicazione interattiva, accertati che il tuo ambiente AEM F
 
 ### Verifica il browser
 
-Per conoscere i browser e le piattaforme client supportati, seguire l&#39;articolo collegato, [Piattaforme client supportate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+Per conoscere i browser e le piattaforme client supportati, seguire l&#39;articolo collegato, [Piattaforme client supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -49,7 +45,7 @@ L&#39;accesso alle funzionalità dell&#39;editor IC è gestito da [ruoli utente 
 | **Autore modulo** | Crea e modifica le comunicazioni interattive. | Creare, modificare, visualizzare in anteprima e pubblicare IC. |
 | **Autore modello** | Progetta modelli riutilizzabili per le comunicazioni interattive. | Creare e bloccare modelli, definire layout. |
 | **Amministratore** | Gestisce l’accesso, le autorizzazioni e le configurazioni degli utenti. | Assegna ruoli, gestisci modelli, pubblica IC. |
-| **Autore FDM** | [Crea e gestisce modelli di dati modulo (FDM)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) per l&#39;integrazione dei dati. | Crea, modifica e configura origini dati e modelli. |
+| **Autore FDM** | [Crea e gestisce modelli di dati modulo (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models) per l&#39;integrazione dei dati. | Crea, modifica e configura origini dati e modelli. |
 
 >[!NOTE]
 >

@@ -4,23 +4,19 @@ description: Crea frammenti di comunicazione interattiva in AEM Forms per creare
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 10%
+source-wordcount: '493'
+ht-degree: 3%
 
 ---
-
 
 # Associazione dati nell’editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -83,4 +79,3 @@ In genere, gli autori selezionano l’FDM nelle prime fasi del progetto, mappano
 - **Proteggi dati sensibili:** Applica il mascheramento, la crittografia e l&#39;accesso con privilegi minimi per i dati PII o di pagamento.
 
 Configurando con attenzione l’associazione dati, gli autori creano un ponte affidabile tra la progettazione e i dati, accelerando l’authoring delle comunicazioni, garantendo accuratezza e offrendo esperienze altamente personalizzate su larga scala.
-

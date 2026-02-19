@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # Copiare e incollare nell’Editor di comunicazione interattiva
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 La funzione Copia e incolla nell&#39;editor di comunicazione interattiva (IC) consente agli autori di duplicare una comunicazione interattiva esistente e riutilizzarla in una cartella o posizione diversa. Questa funzionalità consente ai team di lavorare in modo efficiente abilitando più varianti di un componente di interoperabilità senza modificare la versione originale.
 
@@ -88,4 +84,3 @@ Dopo aver incollato la comunicazione interattiva:
 - Rivedi le associazioni di dati e i canali di output dopo la copia per assicurarne la correttezza.
 
 La funzione di copia e incolla nella comunicazione interattiva semplifica il riutilizzo e la personalizzazione consentendo agli autori di duplicare gli IC esistenti e modificarli in modo indipendente. Consente uno sviluppo più rapido, una sperimentazione più sicura e una distribuzione coerente delle comunicazioni, senza rischiare di modificare la comunicazione interattiva originale.
-

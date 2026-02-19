@@ -4,23 +4,19 @@ description: Il componente Rettangolo nell’Editor di comunicazioni interattive
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 12%
+source-wordcount: '447'
+ht-degree: 4%
 
 ---
-
 
 # Componente Rettangolo nell’editor di comunicazioni interattive
 
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 ## &#x200B;1. Introduzione
 
@@ -112,5 +108,3 @@ I rettangoli possono essere combinati con altri elementi di layout come sottomas
 - Nascondi i rettangoli se necessari solo a scopo di progettazione durante la modifica ma non necessari nell&#39;output finale.
 
 Il componente Rectangle è uno strumento non interattivo ma potente nell’editor IC. Se formattato e posizionato in modo efficace, migliora la precisione del layout, il flusso visivo e l’esperienza utente senza aggiungere complessità all’associazione dati o all’interattività.
-
-

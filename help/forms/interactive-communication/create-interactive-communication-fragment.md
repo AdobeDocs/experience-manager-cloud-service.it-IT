@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 18%
+source-wordcount: '251'
+ht-degree: 5%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 18%
 >[!NOTE]
 >
 > La funzionalità di comunicazione interattiva è disponibile nell’ambito del programma di adozione anticipata. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo di lavoro a `aem-forms-ea@adobe.com`.
-
->[!IMPORTANT]
->
-> **Documentazione soggetta a modifiche**: questa libreria di prompt è attualmente in fase di test rispetto al prodotto ed è soggetta ad aggiornamenti e revisioni. I prompt, gli esempi e le best practice possono cambiare man mano che Forms Experience Builder continua a evolversi durante il programma per primi utilizzatori.
 
 Un frammento di comunicazione interattiva consente agli utenti di creare blocchi di contenuto riutilizzabili e modulari, come intestazioni, piè di pagina o esclusioni di responsabilità standard, che possono essere utilizzati in più documenti di comunicazione. Questi frammenti consentono di mantenere la coerenza, ridurre il lavoro ripetitivo e accelerare il processo di progettazione durante la creazione di comunicazioni personalizzate e integrate nei dati.
 
@@ -41,7 +37,7 @@ Per creare un frammento di comunicazione interattivo, effettua le seguenti opera
 
 1. Dopo aver selezionato il frammento di comunicazione interattiva, viene visualizzata una schermata in cui vengono definiti i dettagli chiave del frammento, ad esempio titolo, nome, descrizione, modello dati (una rappresentazione strutturata dei dati di back-end) e tag.
 
-   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Per ulteriori informazioni, consultare la [Guida alla configurazione del modello dati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Trova documento IC](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
