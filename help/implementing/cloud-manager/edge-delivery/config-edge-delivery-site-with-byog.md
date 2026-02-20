@@ -4,9 +4,9 @@ description: Scopri come collegare un sito Edge Delivery a un archivio Git priva
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '282'
 ht-degree: 100%
 
 ---
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 Puoi configurare il tuo sito Edge Delivery per estrarre il codice da qualsiasi archivio Git privato già integrato in Cloud Manager.
 
-**Fornitori Git supportati**
+<!--
+**Supported Git Vendors**
 
-| Livello di supporto | Fornitori | Note |
+| Support level | Vendors | Notes |
 | --- | --- | --- |
-| Disponibilità generale | · GitHub Enterprise (versione self-hosted)<br>· Bitbucket (versione cloud)<br>· GitLab (versione cloud e self-hosted) | Connettersi senza richieste di abilitazione |
-| Programma Alpha | Azure DevOps (versione cloud) | [Richiedi l’accesso](mailto:grp-cloudmanager_byog@adobe.com) |
-| Programma Beta | Archivio ospitato da Adobe (creato in Cloud Manager) | [Richiedi l’accesso](mailto:grp-cloudmanager_byog@adobe.com) |
+| General availability | &bull; GitHub Enterprise (self-hosted version)<br>&bull; Bitbucket (Cloud version)<br>&bull; GitLab (Cloud and self-hosted version) | Connect without enablement requests |
+| Alpha program | Azure DevOps (Cloud version) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+| Beta program | Adobe-hosted repository (created in Cloud Manager) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+-->
 
 **Per configurare un sito Edge Delivery per l&#39;utilizzo di un archivio Git esterno:**
 
