@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
+source-git-commit: cf45f9e6d89e0a166c09989b0fc8e793a54ce9ff
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1886'
 ht-degree: 43%
 
 ---
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479797/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -53,7 +53,7 @@ I programmi beta di Adobe Experience Manager (AEM) consentono ai clienti di acce
 L’accesso anticipato alle funzioni sviluppate da Adobe consente a clienti e partner di fornire feedback e plasmare lo sviluppo dei prodotti. Consente inoltre di prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
 
 **Programmi beta correnti**
-Nelle sezioni seguenti sono elencati i programmi beta ed Explorer attivi.
+Nelle sezioni seguenti sono elencati i programmi beta attivi.
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
