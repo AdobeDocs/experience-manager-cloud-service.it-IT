@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 45bdc9afeb43e9b9cc2e190d459819f65f091020
+source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
 workflow-type: tm+mt
-source-wordcount: '3707'
-ht-degree: 85%
+source-wordcount: '3842'
+ht-degree: 80%
 
 ---
 
@@ -343,7 +343,7 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
 Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
@@ -363,7 +363,7 @@ Se stai utilizzando `org.apache.sling.commons.auth` e/o `org.apache.sling.common
 
 Elenco azioni:
 
-* Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Esegui la migrazione da `org.apache.sling.commons.auth` e/o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Rimozione di `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -381,7 +381,7 @@ Se stai utilizzando un elemento del pacchetto `org.eclipse.jetty` o uno dei rela
 Elenco azioni:
 
 * Sostituisci l’utilizzo di pacchetti `org.eclipse.jetty` con altre librerie di terze parti/proprio codice o
-* seleziona i bundle richiesti da questo elenco e aggiungili al progetto:
+* Seleziona i bundle richiesti da questo elenco e aggiungili al progetto. Se ne aggiungi uno, assicurati di controllare le importazioni del pacchetto di quel bundle in quanto potresti dover aggiungere altri da questi elenchi per completare tali importazioni. Se desideri utilizzare la versione 9.x di questi bundle, assicurati di distribuire esattamente la versione dal basso e di non incorporare *e* esporta questi pacchetti.
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -408,7 +408,8 @@ Rimuovi l’utilizzo delle librerie core Java di Google o includi una versione a
 
 Elenco azioni:
 
-* Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
+* Se utilizzi `io.wcm:io.wcm.caconfig.extensions`, devi aggiornarlo almeno alla versione 1.9.2
 * Sostituire l’utilizzo della libreria core Guava di Google con raccolte JDK o Apache Commons4
 * Se ancora necessario, aggiungi questo pacchetto al progetto (sostituisci la versione con quella più recente disponibile):
    * `com.google.guava:guava:33.4.8-jre`
@@ -419,7 +420,7 @@ Rimuovi l’utilizzo delle librerie Apache Commons non mantenute e sostituiscile
 
 Elenco azioni:
 
-* Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Sostituisci le importazioni di `org.apache.commons.lang*` con `org.apache.commons.lang3`
 * Sostituisci le importazioni di `org.apache.commons.collections*` con `org.apache.commons.collecitons4`
 
@@ -445,7 +446,7 @@ La funzione Logback non è supportata in Cloud Service. Rimuovine qualsiasi util
 
 Elenco azioni:
 
-* Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Rimuovi il codice utilizzando i pacchetti da `ch.qos.logback`
 
 ### Utilizzo di `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -454,9 +455,10 @@ Se utilizzi `org.slf4j.event` o `org.slf4j.spi`, rimuovine l’utilizzo completo
 
 Elenco azioni:
 
-* Aggiornare ACS AEM Commons alla versione più recente (almeno 6.11.0)
-* Rimuovi il codice utilizzando `org.slf4j.event` e `org.slf4j.spi`
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Se si utilizza il client Apache Kafka e si include il bundle del wrapper OSGi da Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), sostituirlo con [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Questa è la stessa versione di Apache ServiceMix, ma è stato rimosso solo l’utilizzo di questi due pacchetti.
+* Se utilizzi `com.adobe.aio.aem:aio-lib-osgi`, aggiorna alla versione più recente (almeno 2.0.12).
+* Rimuovi il codice utilizzando `org.slf4j.event` e `org.slf4j.spi`
 
 ### Utilizzo di `org.apache.log4j` {#org.apache.log4j}
 
