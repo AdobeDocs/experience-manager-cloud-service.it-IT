@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cf45f9e6d89e0a166c09989b0fc8e793a54ce9ff
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 43%
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479797/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -153,12 +153,12 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### API Java obsolete {#java-api-deprecation}
 
-Le API obsolete con targeting 2/26/2026 non devono più essere utilizzate nel codice. Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 26 marzo 2026. Date importanti:
+Le API obsolete con targeting 2/30/2026 non devono più essere utilizzate nel codice. Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026. Date importanti:
 
 * **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
 * **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
-* **26 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
-* **30 aprile 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
+* **4 maggio 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
 
 Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/release-notes/deprecated-removed-features.md#aem-apis). Per comodità, tuttavia, le seguenti API sono elencate di seguito:
 
