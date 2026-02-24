@@ -1,13 +1,14 @@
 ---
 title: Registrazione, accesso e profilo utente
 description: Scopri di più su Registrazione, Accesso, Dati utente e Sincronizzazione dei gruppi per AEM as a Cloud Service
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1493'
 ht-degree: 58%
 
 ---
@@ -92,7 +93,7 @@ L’interfaccia`com.adobe.granite.auth.oauth.provider` può essere integrata con
 
 **Prerequisito:**
 
-Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;idP, abilitare la [sincronizzazione dati](#data-synchronization-data-synchronization) inviando una richiesta all&#39;Assistenza clienti indicando il programma e gli ambienti appropriati. Oltre alla [sincronizzazione dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML verificare che sia abilitata l&#39;appartenenza al gruppo dinamico [&#128279;](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0).
+Come best practice, considera sempre l’idP (Identity Provider) come un singolo punto di verità per l’archiviazione di dati specifici dell’utente. Se le informazioni utente aggiuntive sono memorizzate nell&#39;archivio locale, che non fa parte dell&#39;idP, abilitare la [sincronizzazione dati](#data-synchronization-data-synchronization) inviando una richiesta all&#39;Assistenza clienti indicando il programma e gli ambienti appropriati. Oltre alla [sincronizzazione dati](#data-synchronization-data-synchronization), nel caso del provider di autenticazione SAML verificare che sia abilitata l&#39;appartenenza al gruppo dinamico [](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0).
 
 ### Sessioni permanenti e token incapsulati {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +110,7 @@ Esistono diversi approcci ai dati persistenti, a seconda della natura di tali da
 Le informazioni sul profilo utente possono essere scritte e lette in due modi:
 
 * Utilizzo lato server con `com.adobe.granite.security.user` Interfaccia UserPropertiesManager, che inserirà i dati sotto il nodo dell&#39;utente in `/home/users`. Assicurati che le pagine univoche per utente non siano memorizzate nella cache.
-* Lato client che utilizza ContextHub, come descritto [nella documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=it#personalization).
+* Lato client che utilizza ContextHub, come descritto [nella documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 **Prerequisito:**
 
@@ -129,7 +130,7 @@ una richiesta all’Assistenza clienti che indica il programma e gli ambienti ap
 
 ## Autorizzazioni (gruppi di utenti chiusi) {#permissions-closed-user-groups}
 
-I criteri di accesso al livello di pubblicazione, denominati anche gruppi utenti chiusi, sono definiti nell&#39;autore di AEM. Vedere [Creazione di un gruppo utenti chiuso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=it#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
+I criteri di accesso al livello di pubblicazione, denominati anche gruppi utenti chiusi, sono definiti nell&#39;autore di AEM. Vedere [Creazione di un gruppo utenti chiuso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Per limitare alcune sezioni o pagine di un sito Web a determinati utenti, applica i CUG necessari utilizzando l’autore AEM, come descritto qui, e replicali sul livello di pubblicazione.
 
 * Se gli utenti effettuano l&#39;accesso autenticandosi con un provider di identità (IdP) utilizzando SAML, il gestore di autenticazione identificherà l&#39;iscrizione degli utenti a gruppi (che devono corrispondere ai CUG sul livello di pubblicazione) e manterrà l&#39;associazione tra utente e gruppo attraverso un record dell&#39;archivio
 * Se l&#39;accesso viene eseguito senza l&#39;integrazione IdP, il codice personalizzato può applicare le stesse relazioni di struttura dell&#39;archivio.

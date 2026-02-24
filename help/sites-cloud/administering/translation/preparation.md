@@ -3,11 +3,12 @@ title: Preparazione del contenuto per la traduzione
 description: Scopri come preparare i contenuti per la traduzione quando sviluppi siti web multilingue.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '762'
 ht-degree: 66%
 
 ---
@@ -18,7 +19,7 @@ I siti web multilingue forniscono generalmente una certa quantità di contenuto 
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 Il [sito tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) include diversi rami di lingua e utilizza la seguente struttura:
 
@@ -53,13 +54,13 @@ Il [sito tutorial WKND](/help/implementing/developing/introduction/develop-wknd-
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/wknd/fr` è la directory principale della lingua della copia per la lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](preparation.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
 
 Utilizza i seguenti passaggi per preparare il sito alla traduzione:
 
 1. Crea la lingua principale della lingua master. Ad esempio, la directory principale della lingua del sito di dimostrazione WKND inglese è `/content/wknd/language-masters/en`. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creazione di una directory principale della lingua](preparation.md#creating-a-language-root).
 1. Creare il contenuto della lingua master.
-1. Crea la directory principale della lingua di ogni copia per la lingua del sito. Ad esempio, la copia in lingua francese del sito di esempio WKND è `/content/wknd/language-masters/fr`.
+1. Crea la directory principale della lingua per ogni copia per lingua del sito. Ad esempio, la copia per la lingua francese del sito di esempio WKND è `/content/wknd/language-masters/fr`.
 
 Dopo aver preparato il contenuto per la traduzione, puoi creare automaticamente le pagine mancanti nelle copie della lingua e nei relativi progetti di traduzione. (Vedi [Creazione di un progetto di traduzione](managing-projects.md).) Per una panoramica del processo di traduzione dei contenuti in AEM, vedi [Traduzione di contenuti per siti Web multilingue](overview.md).
 
@@ -72,7 +73,7 @@ Per creare la directory principale della lingua è necessario creare una pagina 
 * `<language-code>` - Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
 * `<language-code>_<country-code>` o `<language-code>-<country-code>` - Il codice paese supportato è un codice a due lettere minuscole o maiuscole come definito dallo standard ISO 3166, ad esempio `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale. Ad esempio, la pagina principale della copia in lingua francese del sito WKND ha `fr` come proprietà **Nome**. La proprietà **Name** viene utilizzata come nome del nodo della pagina nell&#39;archivio e quindi determina il percorso della pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale. Ad esempio, la pagina principale della copia per la lingua francese del sito WKND ha `fr` come proprietà **Nome**. La proprietà **Name** viene utilizzata come nome del nodo della pagina nell&#39;archivio e quindi determina il percorso della pagina (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Passa a Sites.
 1. Seleziona il sito per il quale desideri creare una copia per lingua.
@@ -140,7 +141,7 @@ Le directory principali della lingua possono anche essere raggruppate in nodi, a
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
 >
-> Questa copia della lingua `es` non verrà rilevata perché è 2 livelli (`americas/central-america`) lontano dal nodo `en`.
+> Questa copia per lingua `es` non verrà rilevata perché è a 2 livelli (`americas/central-america`) di distanza dal nodo `en`.
 
 >[!TIP]
 >

@@ -1,13 +1,14 @@
 ---
 title: Casella in entrata
 description: Scopri come utilizzare le notifiche che arrivano nella casella in entrata per gestire le attività.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '916'
 ht-degree: 88%
 
 ---
@@ -50,7 +51,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 1. Seleziona l’indicatore nella barra degli strumenti.
 
-1. Seleziona **Visualizza tutto**. Verrà aperta la cartella Posta in arrivo **AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
+1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
    Per entrambe le viste puoi inoltre definire le [Impostazioni vista](#inbox-view-settings). Le opzioni disponibili dipendono dalla vista corrente.
@@ -170,7 +171,7 @@ Dalla casella in entrata è possibile creare le attività:
       * **Contenuto**: simile al payload, è un riferimento dall’attività a una posizione nell’archivio.
       * **Descrizione**
       * **Priorità attività**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
 
    ![Casella in entrata - Aggiunta di un’attività](/help/sites-cloud/authoring/assets/inbox-create-task.png)
@@ -203,7 +204,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-cloud/authoring/proje
 
       * **Titolo**
       * **Descrizione**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
 

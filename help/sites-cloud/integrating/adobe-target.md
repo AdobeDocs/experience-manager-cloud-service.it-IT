@@ -1,11 +1,12 @@
 ---
 title: Integrazione con Adobe Target
 description: Integrazione con Adobe Target
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 0af1f7dcc330a2ee5300088f274150a3ea79efe8
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 94%
+source-wordcount: '619'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +43,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support).
+>In AEM as a Cloud Service, l’agente di replica che sincronizza offerte e attività da AEM ad Adobe Target è disattivato per impostazione predefinita. Se è necessario riabilitare l’agente di replica, contatta il Team [di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=it#support).
 
 >[!NOTE]
 >
@@ -66,7 +67,7 @@ Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](h
 
 ## Origini dell&#39;informazione di base {#background-information-sources}
 
-L’integrazione di AEM as a Cloud Service con Adobe Target richiede la conoscenza di Adobe Target, AEM Activities management e AEM Audiences management. Devi avere familiarità con le seguenti informazioni:
+L’integrazione di AEM as a Cloud Service con Adobe Target richiede la conoscenza di Adobe Target, gestione delle attività di AEM e gestione del pubblico di AEM. Devi avere familiarità con le seguenti informazioni:
 
 * Adobe Target (consulta [Documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=it)).
 * Console Attività di AEM (consulta [Gestione delle attività](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=it)).

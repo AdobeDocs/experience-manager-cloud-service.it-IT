@@ -4,29 +4,30 @@ description: Scopri come i frammenti di contenuto possono essere integrati e uti
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 10%
+source-wordcount: '190'
+ht-degree: 11%
 
 ---
 
 # Frammenti di contenuto con Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/get-started) ti aiuta a fornire ai tuoi clienti esperienze connesse, contestuali e personalizzate. Integrando Adobe Experience Manager (AEM) as a Cloud Service con Adobe Journey Optimizer (AJO), puoi riutilizzare i contenuti AEM nei canali in entrata AJO e nei canali in uscita AJO, inclusi web, SMS, e-mail e altri.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) ti aiuta a fornire ai tuoi clienti esperienze connesse, contestuali e personalizzate. Integrando Adobe Experience Manager (AEM) as a Cloud Service con Adobe Journey Optimizer (AJO), puoi riutilizzare i contenuti AEM nei canali in entrata AJO e nei canali in uscita AJO, inclusi web, SMS, e-mail e altri.
 
 Ad esempio:
 
-* incorpora perfettamente i [frammenti di contenuto AEM](/help/sites-cloud/administering/content-fragments/overview.md) nel contenuto di [e-mail Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/channels/email/email-landing-page)
+* incorpora perfettamente i [frammenti di contenuto AEM](/help/sites-cloud/administering/content-fragments/overview.md) nel contenuto di [e-mail Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/email-landing-page)
 * visualizzare l’anteprima dell’esperienza AJO direttamente da AEM
 
 La connessione tra Frammenti di contenuto e AJO semplifica il processo di accesso e utilizzo dei contenuti di AEM, consentendo la creazione di campagne e percorsi personalizzati e dinamici.
 
 Per informazioni dettagliate, inizia con la documentazione di AJO:
 
-* [Utilizzo di frammenti di contenuto in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=it#integrations)
-* [Offerte di integrazione AJO con frammento di contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [Utilizzo di frammenti di contenuto in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
+* [Offerte di integrazione AJO con frammento di contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## Configurazione Dispatcher {#dispatcher-configuration}
 

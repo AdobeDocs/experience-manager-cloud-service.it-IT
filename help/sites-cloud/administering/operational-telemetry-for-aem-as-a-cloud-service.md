@@ -1,12 +1,13 @@
 ---
 title: Telemetria operativa per AEM as a Cloud Service
 description: Scopri la telemetria operativa, un servizio automatizzato che consente di monitorare la raccolta di dati lato client.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1140'
 ht-degree: 1%
 
 ---
@@ -42,7 +43,7 @@ Il servizio di telemetria operativa è progettato per ridurre al minimo la racco
 * Il nome host del sito visitato, ad esempio: `experienceleague.adobe.com`
 * Tipo di agente utente e sistema operativo utilizzati per visualizzare la pagina, ad esempio: `desktop:windows` o `mobile:ios`
 * Ora della raccolta dati, ad esempio: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs?lang=it`
+* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs`
 * URL referente (URL della pagina collegata alla pagina corrente, se l’utente ha seguito un collegamento)
 * ID della visualizzazione pagina generato in modo casuale, in un formato simile a: `2Ac6`
 * Peso o inverso della frequenza di campionamento, ad esempio: `100`. Significa che viene registrata solo una visualizzazione pagina su cento

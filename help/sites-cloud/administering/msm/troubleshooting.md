@@ -3,11 +3,12 @@ title: Risoluzione dei problemi e domande frequenti relativi a MSM
 description: Scopri come risolvere i problemi più comuni relativi a MSM e ottieni le risposte alle domande più comuni.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 51%
 
 ---
@@ -28,13 +29,11 @@ MSM registra diversi servlet che possono essere richiesti con i selettori sugli 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilizza questo su una pagina blueprint per recuperare l’elenco di tutte le Live Copy ad essa collegate, con informazioni sullo stato di Live Copy aggiuntive.
    * ad esempio:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilizza questo nelle pagine Live Copy per recuperare informazioni avanzate sulla loro connessione con le loro pagine blueprint. Se la pagina non è una Live Copy, non viene restituito nulla.
    * ad esempio:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Questi servlet generano messaggi del registro DEBUG attraverso il logger `com.day.cq.wcm.msm` che può anche essere utile.
@@ -48,13 +47,13 @@ I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mi
    * Le pagine hanno un nodo figlio `cq:LiveSyncConfig` di tipo `cq:LiveCopy` che contiene informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
       * `cq:master` punta alla pagina blueprint della Live Copy.
       * `cq:rolloutConfigs` indica le configurazioni di rollout attive applicate alla Live Copy.
-      * `cq:isDeep` è true se le pagine figlie di questa pagina Live Copy principale sono incluse nella Live Copy.
+      * `cq:isDeep` è true se le pagine secondarie di questa pagina Live Copy principale sono incluse nella Live Copy.
 * Tipo mixin `cq:LiveRelationship`
    * Qualsiasi pagina Live Copy ha questo tipo mixin sul suo nodo `jcr:content`.
    * In caso contrario, la pagina a un certo punto è stata scollegata o creata manualmente tramite l’interfaccia di authoring al di fuori di un’azione Live Copy (creazione o rollout).
 * Tipo mixin `cq:LiveSyncCancelled`
    * Aggiunto ai nodi `jcr:content` di pagine Live Copy sospese.
-   * Se la sospensione è efficace anche per le pagine figlie, una proprietà `cq:isCancelledForChildren` è impostata su true sullo stesso nodo.
+   * Se la sospensione è efficace anche per le pagine secondarie, una proprietà `cq:isCancelledForChildren` è impostata su true sullo stesso nodo.
 
 Le informazioni presenti in queste proprietà devono essere riportare nell’interfaccia utente, tuttavia durante la risoluzione dei problemi può essere utile osservare il comportamento di MSM direttamente nell’archivio mentre si verificano le azioni MSM.
 

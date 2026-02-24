@@ -3,11 +3,12 @@ title: Configurazione della sincronizzazione di una Live Copy
 description: Scopri le potenti opzioni di sincronizzazione Live Copy disponibili e come configurarle e personalizzarle in base alle esigenze del progetto.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2420'
 ht-degree: 90%
 
 ---
@@ -50,7 +51,7 @@ Se le azioni di configurazione rollout installate non soddisfano i requisiti, pu
 
 | Nome | Descrizione | Attivatore | [Azioni di sincronizzazione](#synchronization-actions) |
 |---|---|---|---|
-| Configurazione di rollout standard | Configurazione di rollout standard che consente di avviare il processo di rollout all’attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi figlio | Al momento del rollout | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
+| Configurazione di rollout standard | Configurazione di rollout standard che consente di avviare il processo di rollout all’attivazione del rollout ed esegue le seguenti azioni: crea, aggiorna, elimina contenuto e ordina nodi secondari | Al momento del rollout | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
 | Attiva in caso di attivazione Blueprint | Pubblica la Live Copy quando il sorgente viene pubblicato | Al momento dell’attivazione | `targetActivate` |
 | Disattiva in caso di disattivazione Blueprint | Disattiva la Live Copy quando il sorgente è disattivato | Alla disattivazione | `targetDeactivate` |
 | Invia dopo modifica | Invia il contenuto alla Live Copy quando il sorgente viene modificato<br>Utilizza questa configurazione di rollout con moderazione in quanto utilizza il trigger Durante la modifica. | In caso di modifica | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
@@ -70,7 +71,7 @@ Se le azioni installate non soddisfano le tue esigenze, puoi [Creare una nuova a
 | `contentUpdate` | Questa azione aggiorna il contenuto della Live Copy con le modifiche apportate dal sorgente. [Configura il **servizio** CQ MSM Content Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `editProperties` | Questa azione modifica le proprietà della Live Copy. La proprietà `editMap` determina quali proprietà vengono modificate e il loro valore. Il valore della proprietà `editMap` deve utilizzare il formato seguente:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` e `new_value` sono espressioni regolari e `n` è un numero intero incrementato.<br>Ad esempio, considera il seguente valore per `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>Questo valore modifica le proprietà dei nodi Live Copy come segue:<br>le `sling:resourceType` proprietà impostate su `contentpage` o `homepage` sono impostate su `mobilecontentpage`.<br>Le proprietà `cq:template` impostate su `contentpage` vengono impostate su `mobilecontentpage`. | `editMap: (String)` identifica la proprietà, il valore corrente e il nuovo valore. Per informazioni, consulta la descrizione. |
 | `notify` | Questa azione invia un evento di pagina segnalando che è stata soggetta a rollout. Per ricevere una notifica, devi prima abbonarti agli eventi di rollout. |  |
-| `orderChildren` | Questa azione ordina i nodi figli in base all’ordine della blueprint. |  |
+| `orderChildren` | Questa azione ordina i nodi secondari in base all’ordine della blueprint. |  |
 | `referencesUpdate` | Questa azione di sincronizzazione aggiorna i riferimenti sulla Live Copy.<br>Cerca i percorsi nelle pagine Live Copy che puntano a una risorsa all’interno della blueprint. Quando viene trovato un percorso, lo aggiorna per indicare il punto in cui si trova la risorsa correlata all’interno della Live Copy. I riferimenti che hanno destinazioni esterne alla blueprint non vengono modificati. <br>[Configure il **servizio** CQ MSM References Update Action](#excluding-properties-and-node-types-from-synchronization) per specificare i tipi di nodo, gli elementi di paragrafo e le proprietà di pagina da escludere. |  |
 | `targetVersion` | Crea una versione della pagina Live Copy.<br>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout. |  |
 | `targetActivate` | Questa azione attiva la Live Copy.<br>Questa deve essere l’unica azione di sincronizzazione inclusa in una configurazione di rollout. |  |
@@ -96,7 +97,7 @@ La nuova configurazione di rollout è quindi disponibile quando configuri le con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti in modo che non influiscano su proprietà e tipi di nodo specifici. Ad esempio, molte proprietà e sottonodi correlati al funzionamento interno di AEM non devono essere inclusi in una Live Copy. Deve essere copiato solo il contenuto rilevante all’utente della pagina.
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per le quali è possibile specificare i nodi da escludere. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -135,7 +136,7 @@ Ad esempio, se desideri includere il **Titolo** della pagina nelle modifiche con
 
 Puoi configurare diversi servizi OSGi che supportano le azioni di sincronizzazione corrispondenti, relative all’aggiornamento dei riferimenti.
 
-Quando si lavora con l’AEM, esistono diversi metodi per gestire le impostazioni di configurazione di tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
+Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impostazioni di configurazione per tali servizi. Per ulteriori dettagli e procedure consigliate, vedere [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 Nella tabella seguente sono elencate le azioni di sincronizzazione per cui è possibile specificare l’aggiornamento dei riferimenti. La tabella fornisce i nomi dei servizi da configurare utilizzando la console web e il PID per la configurazione con un nodo dell’archivio.
 
@@ -175,7 +176,7 @@ Puoi anche impostare le configurazioni di rollout per una pagina Live Copy quand
 
    ![Ereditarietà Live Copy dalla pagina genitore](../assets/live-copy-inherit.png)
 
-1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine figlie.
+1. Se necessario, regola il flag **Ereditarietà Live Copy**. Se selezionato, la configurazione Live Copy ha effetto su tutte le pagine secondarie.
 
 1. Deseleziona la proprietà **Eredita configurazione di rollout dall’elemento principale**, quindi seleziona una o più configurazioni di rollout dall’elenco.
 

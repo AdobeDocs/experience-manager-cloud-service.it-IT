@@ -3,18 +3,19 @@ title: Integrazione con Adobe Target
 description: Scopri come integrare Adobe Target con AEM as a Cloud Service utilizzando l’interfaccia utente touch e Adobe Launch.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 solution: Experience Manager Sites
-source-git-commit: e5c529ced09a557585681ebf82f40daafc2c4402
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1086'
 ht-degree: 85%
 
 ---
 
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
-Come parte di Adobe Experience Cloud, [Adobe Target](https://experienceleague.adobe.com/it/docs/target) consente di aumentare la rilevanza dei contenuti mediante il targeting e la valutazione su tutti i canali. L’integrazione di Adobe Target e AEM as a Cloud Service richiede:
+Come parte di Adobe Experience Cloud, [Adobe Target](https://experienceleague.adobe.com/en/docs/target) consente di aumentare la rilevanza dei contenuti mediante il targeting e la valutazione su tutti i canali. L’integrazione di Adobe Target e AEM as a Cloud Service richiede:
 
 * utilizzo dell’interfaccia utente touch per creare una configurazione Target in AEM as a Cloud Service (è richiesta la configurazione IMS).
 * aggiunta e configurazione di Adobe Target come estensione in [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=it).
@@ -29,7 +30,7 @@ Per esportare frammenti di esperienza e/o di contenuto in Target, è necessaria 
 
 >[!NOTE]
 >
->Consulta anche la documentazione di Adobe Target: [Integrare Target con Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/it/docs/target/using/integrate/aem/aem-target-integration).
+>Consulta anche la documentazione di Adobe Target: [Integrare Target con Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration).
 
 ## Creazione della configurazione di Adobe Target {#create-configuration}
 

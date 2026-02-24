@@ -1,13 +1,14 @@
 ---
 title: Gestione dei progetti
 description: Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità, accessibile e gestibile nella console dedicata
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 81%
 
 ---
@@ -126,7 +127,7 @@ Per visualizzare i progetti attivi o inattivi, dalla console **Progetti** fai cl
 
 Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
-![Pulsante Mostra/nascondi progetti non attivi](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![Pulsante Mostra/nascondi progetti inattivi](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## Rendere i progetti inattivi o attivi {#making-projects-inactive-or-active}
 

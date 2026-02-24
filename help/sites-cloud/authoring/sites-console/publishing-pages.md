@@ -1,13 +1,14 @@
 ---
 title: Pubblicazione di pagine dalla console Sites
 description: Scopri come pubblicare e annullare la pubblicazione delle pagine utilizzando la console Sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 73%
 
 ---
@@ -66,8 +67,8 @@ Questa operazione è denominata pubblicazione della pagina. Quando si rimuove un
 
 Nella console **Sites** sono disponibili due opzioni per la pubblicazione:
 
-* [Pubblicazione rapida &#x200B;](#quick-publish)
-* [Gestisci pubblicazione &#x200B;](#manage-publication)
+* [Pubblicazione rapida ](#quick-publish)
+* [Gestisci pubblicazione ](#manage-publication)
 
 ### Pubblicazione rapida  {#quick-publish}
 
@@ -117,7 +118,7 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
      >[!TIP]
      >
-     >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
+     >Per annullare un’attività di pubblicazione o annullamento della pubblicazione pianificata per un momento successivo, accedi alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e termina il flusso di lavoro corrispondente.
 
      >[!TIP]
      >
@@ -211,7 +212,7 @@ Puoi utilizzare [l’opzione Gestisci pubblicazione per eseguire la pubblicazion
 
    >[!NOTE]
    >
-   >Per annullare un’attività di pubblicazione, anche programmata per un momento successivo, accedete alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e interrompete il flusso di lavoro corrispondente.
+   >Per annullare un’attività di pubblicazione o annullamento della pubblicazione pianificata per un momento successivo, accedi alla [console Flusso di lavoro](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) e termina il flusso di lavoro corrispondente.
 
    >[!NOTE]
    >Se hai un ambiente [Anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) puoi selezionare la **Destinazione** durante Gestisci pubblicazione.

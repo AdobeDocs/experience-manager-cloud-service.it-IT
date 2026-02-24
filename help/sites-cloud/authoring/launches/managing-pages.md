@@ -1,14 +1,15 @@
 ---
 title: Gestione delle pagine nel lancio
 description: Puoi creare nuove pagine all’interno del lancio. Puoi anche eliminare le pagine indesiderate.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 89%
+source-wordcount: '294'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +29,6 @@ Puoi navigare nella struttura del lancio da:
 * Editor pagina:
 
    * Seleziona **Naviga** per aprire la struttura del lancio nella console:
-
      ![Navigare nel lancio dall’Editor pagina](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

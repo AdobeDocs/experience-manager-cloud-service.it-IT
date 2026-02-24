@@ -1,13 +1,14 @@
 ---
 title: Creazione e gestione delle offerte (console Offerte)
 description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 82%
 
 ---
@@ -59,7 +60,7 @@ L’opzione e flusso di lavoro **Converti in variante di frammento di esperienza
 
 1. Passa alla modalità **Targeting** per tale pagina.
 
-1. Fai clic su **Inizia impostazione destinazione**.
+1. Seleziona **Inizia targeting**.
 
 1. Seleziona il componente appropriato (di destinazione).
 

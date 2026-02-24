@@ -3,11 +3,12 @@ title: Identificazione del contenuto da tradurre
 description: Scopri come le regole di traduzione identificano il contenuto da tradurre.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -18,7 +19,7 @@ Le regole di traduzione identificano il contenuto da tradurre per le pagine, i c
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 ## Frammenti di contenuto e regole di traduzione {#content-fragments}
 
@@ -59,7 +60,7 @@ Per una panoramica delle funzioni di traduzione dei contenuti di AEM, vedi [Trad
 
 ## Sintassi delle regole per pagine, componenti e risorse {#rule-syntax-for-pages-components-and-assets}
 
-Una regola è un `node` elemento con uno o più elementi secondari `property` e zero o più elementi figlio secondari`node`:
+Una regola è un elemento `node` con uno o più elementi secondari `property` e zero o più elementi secondari `node`:
 
 ```xml
 <node path="content path">
@@ -215,7 +216,7 @@ Nell’interfaccia utente, puoi selezionare/deselezionare **Traduci** nella sche
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** viene utilizzato per le proprietà che non hanno testo ma codici di lingua, ad esempio `jcr:language`. L&#39;utente non traduce il testo, ma la lingua locale dal sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
+**`updateDestinationLanguage`** viene utilizzato per le proprietà che non hanno testo ma codici di lingua, ad esempio `jcr:language`. L&#39;utente non traduce il testo, ma la lingua dalla sorgente alla destinazione. Tali proprietà non vengono inviate per la traduzione.
 
 Nell&#39;interfaccia utente, puoi selezionare/deselezionare **Traduci** nella scheda **Proprietà** per modificare questo valore, ma per le proprietà specifiche che hanno come valore i codici lingua.
 

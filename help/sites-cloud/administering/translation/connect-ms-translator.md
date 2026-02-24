@@ -3,22 +3,23 @@ title: Connetti a Microsoft Translator
 description: Scopri come collegare AEM a Microsoft Translator predefinito per automatizzare il flusso di lavoro di traduzione.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '299'
 ht-degree: 53%
 
 ---
 
 # Connetti a Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM fornisce un connettore integrato per [Microsoft Translator](https://www.microsoft.com/it-it/translator/business/) per tradurre il contenuto o le risorse della pagina. Dopo aver ottenuto una licenza da Microsoft per utilizzare Microsoft Translator, configura il connettore seguendo le istruzioni riportate in questa pagina.
+AEM fornisce un connettore integrato per [Microsoft Translator](https://www.microsoft.com/it-it/translator/business/) per tradurre il contenuto o le risorse di una pagina. Dopo aver ottenuto una licenza da Microsoft per utilizzare Microsoft Translator, configura il connettore seguendo le istruzioni riportate in questa pagina.
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 | Proprietà | Descrizione |
 |---|---|
@@ -29,7 +30,7 @@ AEM fornisce un connettore integrato per [Microsoft Translator](https://www.micr
 
 La procedura seguente crea una configurazione di Microsoft Translator.
 
-1. Nel [pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#first-steps), seleziona **Strumenti** > **Cloud Service** > **Cloud Service di traduzione**.
+1. Nel [pannello di navigazione](/help/sites-cloud/authoring/basic-handling.md#first-steps), seleziona **Strumenti** > **Servizi cloud** > **Servizi cloud di traduzione**.
 1. Passa alla posizione in cui desideri creare la configurazione. Normalmente si trova nel sito principale oppure può essere una configurazione globale predefinita.
 1. Seleziona il pulante **Crea**.
 1. Definisci la configurazione.

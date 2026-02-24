@@ -1,13 +1,14 @@
 ---
 title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso ne semplifica la gestione
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1259'
 ht-degree: 96%
 
 ---
@@ -70,7 +71,7 @@ Nel riquadro **Risorse**, puoi raccogliere tutte le risorse utilizzate per un pa
 
 Le risorse vengono caricate direttamente nel riquadro. Inoltre, se disponi del componente aggiuntivo Dynamic Media, puoi creare set di immagini, set 360 gradi o set di file multimediali diversi.
 
-![Set immagini](/help/sites-cloud/authoring/assets/projects-image-sets.png)
+![Set di immagini](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### Raccolte di risorse {#asset-collections}
 
@@ -116,11 +117,11 @@ I membri del team possono essere assegnati a questo riquadro o al riquadro Team 
 
 Dal riquadro Processo di traduzione puoi iniziare una traduzione e visualizzare lo stato delle traduzioni. Per impostare la traduzione, consulta [Creazione di progetti di traduzione](/help/assets/translate-assets.md).
 
-![Lavoro di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job.png)
+![Processo di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Fai clic sull’ellissi nella parte inferiore della scheda **Lavoro di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
+Fai clic sui puntini di sospensione nella parte inferiore della scheda **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
 
-![Dettaglio del lavoro di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
+![Dettaglio del processo di traduzione](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
 ### Team {#team}
 

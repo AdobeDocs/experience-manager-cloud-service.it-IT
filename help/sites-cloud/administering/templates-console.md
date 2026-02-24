@@ -4,10 +4,11 @@ description: Scopri come la console dei modelli funge da posizione centrale per 
 solution: Experience Manager Sites
 feature: Administering
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '863'
 ht-degree: 2%
 
 ---
@@ -73,7 +74,7 @@ Se un autore inizia a creare un modello con l’editor di modelli già abilitato
 
 ## Proprietà {#properties}
 
-È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello &#x200B;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) includono:
+È possibile modificare [le proprietà del modello](/help/sites-cloud/authoring/page-editor/templates.md) in modo analogo a [modificare le proprietà della pagina.Le proprietà del modello ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) includono:
 
 * Titolo modello
 * Descrizione

@@ -3,12 +3,13 @@ title: Console Panoramica sulla Live Copy
 description: Scopri le nozioni di base della console Panoramica sulla Live Copy per comprendere rapidamente lo stato delle Live Copy al fine di sincronizzare i contenuti.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 97%
+source-wordcount: '735'
+ht-degree: 96%
 
 ---
 
@@ -103,7 +104,7 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 La console **Stato relazione** dispone di due schede che forniscono una serie di funzionalità.
 
 * [Stato di relazione](#relationship-status-tab)
-* [Live Copy &#x200B;](#live-copy-tab)
+* [Live Copy ](#live-copy-tab)
 
 ### Stato di relazione {#relationship-status-tab}
 

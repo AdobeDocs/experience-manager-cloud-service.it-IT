@@ -1,13 +1,14 @@
 ---
 title: Organizzazione delle pagine
 description: Scopri come organizzare il tuo sito web con AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '805'
 ht-degree: 67%
 
 ---
@@ -22,7 +23,7 @@ Scopri come organizzare il tuo sito web con AEM. Una volta compreso come organiz
 In qualità di autore, devi organizzare il tuo sito all’interno di AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
-* i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
+* i visitatori del tuo sito possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
 
 È inoltre possibile utilizzare le [cartelle](#creating-a-new-folder) per organizzare i contenuti.
 
@@ -71,7 +72,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 
 >[!TIP]
 >
->Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C &#x200B;](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
+>Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C ](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 

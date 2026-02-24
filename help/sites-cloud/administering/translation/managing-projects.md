@@ -3,11 +3,12 @@ title: Gestione dei progetti di traduzione
 description: Scopri come creare e gestire progetti di traduzione automatica e umana in AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4129'
+source-wordcount: '4135'
 ht-degree: 79%
 
 ---
@@ -18,7 +19,7 @@ I progetti di traduzione consentono di gestire la traduzione dei contenuti AEM. 
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 Quando si aggiungono risorse a un progetto di traduzione, viene creato un processo di traduzione apposito. I processi forniscono i comandi e le informazioni sullo stato, utili per gestire i flussi di lavoro di traduzione umana e automatica che vengono eseguiti sulle risorse.
 
@@ -40,8 +41,8 @@ AEM rileva se viene creato un progetto per la traduzione iniziale del contenuto 
 
 Ad esempio, viene creata la directory principale della lingua `/content/wknd/fr` per la traduzione francese dal master lingua `/content/wknd/en`. Non ci sono altre pagine nella copia per lingua francese.
 
-* Viene creato un progetto di traduzione per la pagina `/content/wknd/en/products` e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua non include la pagina `/content/wknd/fr/products`, AEM copia immediatamente la pagina `/content/wknd/en/products` e tutte le pagine figlie nella copia in lingua francese. Le copie sono incluse anche nel progetto di traduzione.
-* Viene creato un progetto di traduzione per la pagina `/content/wknd/en` e tutte le pagine figlie, con targeting per la copia in lingua francese. Poiché la copia per lingua include la pagina che corrisponde alla pagina `/content/wknd/en` (directory principale della lingua), AEM copia la pagina `/content/wknd/en` e tutte le pagine figlie e le aggiunge a un lancio. Le copie sono incluse anche nel progetto di traduzione.
+* Viene creato un progetto di traduzione per la pagina `/content/wknd/en/products` e tutte le pagine secondarie, con targeting per la copia per la lingua francese. Poiché la copia per lingua non include la pagina `/content/wknd/fr/products`, AEM copia immediatamente la pagina `/content/wknd/en/products` e tutte le pagine secondarie nella copia in lingua francese. Le copie sono incluse anche nel progetto di traduzione.
+* Viene creato un progetto di traduzione per la pagina `/content/wknd/en` e tutte le pagine secondarie, con targeting per la copia per la lingua francese. Poiché la copia per lingua include la pagina che corrisponde alla pagina `/content/wknd/en` (directory principale della lingua), AEM copia la pagina `/content/wknd/en` e tutte le pagine secondarie e le aggiunge a un lancio. Le copie sono incluse anche nel progetto di traduzione.
 
 ## Traduzioni dalla console Sites {#performing-initial-translations-and-updating-existing-translations}
 
@@ -55,7 +56,7 @@ Crea progetti di traduzione in modo da poter eseguire e gestire il flusso di lav
 * Viene creato un progetto per ogni copia per lingua selezionata.
 * Viene creata e aggiunta a ciascun progetto una copia della pagina selezionata e delle risorse associate. Queste copie vengono successivamente inviate al fornitore di traduzione per la lavorazione.
 
-È possibile specificare anche la selezione delle pagine figlie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine figlie in modo che vengano tradotte. Se alle pagine figlie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
+È possibile specificare anche la selezione delle pagine secondarie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine secondarie in modo che vengano tradotte. Se alle pagine secondarie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
 
 È inoltre possibile [creare manualmente progetti di traduzione](#creating-a-translation-project-using-the-projects-console).
 
@@ -86,7 +87,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 
    * Utilizza il menu a discesa **Lingue** per selezionare una copia per lingua per cui desideri tradurre. Seleziona le lingue aggiuntive come richiesto. Le lingue visualizzate nell’elenco corrispondono alle [directory principali della lingua create](preparation.md#creating-a-language-root).
       * Selezionando più lingue si crea un progetto con un processo di traduzione per ogni lingua.
-   * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
+   * Per tradurre la pagina selezionata e tutte le pagine secondarie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per **Progetto**, seleziona **Crea progetti di traduzione**.
    * Facoltativamente per **Master progetto**, seleziona un progetto da cui ereditare i ruoli utente e le autorizzazioni.
    * In **Titolo** digita un nome per il progetto.
@@ -106,7 +107,7 @@ Dopo aver tradotto, puoi [rivedere la traduzione](#reviewing-and-promoting-updat
 1. Scegli **Copie per lingua**, quindi seleziona le copie per lingua per le quali stai traducendo le pagine sorgente.
 1. Seleziona **Aggiorna copie per lingua** e quindi configura il processo di traduzione:
 
-   * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
+   * Per tradurre la pagina selezionata e tutte le pagine secondarie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per **Progetto**, seleziona **Crea progetti di traduzione**.
    * Facoltativamente per **Master progetto**, seleziona un progetto da cui ereditare i ruoli utente e le autorizzazioni.
    * In **Titolo** digita un nome per il progetto.
@@ -135,7 +136,7 @@ Come per la creazione di un progetto, quando si aggiungono pagine, se necessario
 
 1. Seleziona **Aggiorna copie per lingua** e quindi configura le proprietà:
 
-   * Per tradurre la pagina selezionata e tutte le pagine figlie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
+   * Per tradurre la pagina selezionata e tutte le pagine secondarie, seleziona l’opzione **Seleziona tutte le sottopagine**. Per tradurre solo la pagina selezionata, deseleziona l’opzione.
    * Per **Progetto**, seleziona **Aggiungi al progetto di traduzione esistente**.
    * Seleziona il progetto in **Progetto di traduzione esistente**.
 
@@ -317,7 +318,7 @@ Nel progetto di traduzione, seleziona i puntini di sospensione nella parte infer
 * **Credenziali fornitore di traduzione:** credenziali per accedere al fornitore
 * **Promuovi automaticamente i lanci di traduzione:** dopo aver ricevuto i contenuti tradotti, i lanci di traduzione vengono promossi automaticamente
    * **Elimina lancio dopo la promozione:** se i lanci di traduzione vengono promossi automaticamente, elimina il lancio dopo la promozione
-* **Approva automaticamente traduzioni:** dopo aver ricevuto il contenuto tradotto, i lavori di traduzione vengono automaticamente approvati
+* **Approva automaticamente traduzioni:** dopo aver ricevuto il contenuto tradotto, i processi di traduzione vengono automaticamente approvati
 * **Ripeti traduzione:** configura l’esecuzione ricorrente di un progetto di traduzione selezionando la frequenza con cui il progetto creerà ed eseguirà automaticamente i processi di traduzione
 
 Quando un progetto viene creato utilizzando la barra dei riferimenti di una pagina, queste proprietà vengono configurate automaticamente in base alle proprietà della pagina sorgente.
@@ -494,11 +495,11 @@ Ora la pagina sorgente è stata spostata e la copia per lingua associata.
 
 ## Importazione ed esportazione di processi di traduzione {#import-export}
 
-Sebbene l’AEM offra diverse soluzioni e interfacce di traduzione, è anche possibile importare ed esportare manualmente le informazioni sul processo di traduzione.
+Anche se AEM offre diverse soluzioni e interfacce di traduzione, è anche possibile importare ed esportare manualmente le informazioni sul processo di traduzione.
 
 ### Esportazione di un processo di traduzione {#exporting-a-translation-job}
 
-Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un fornitore di traduzione che non è integrato con l’AEM tramite un connettore o per rivederlo.
+Puoi scaricare il contenuto di un processo di traduzione, ad esempio per inviarlo a un provider di traduzione che non è integrato con AEM tramite un connettore o per rivederlo.
 
 1. Dal menu a discesa del riquadro del processo di traduzione, seleziona **Esporta**.
 1. Nella finestra di dialogo, selezionare **Scarica file esportato** e se necessario utilizzare la finestra di dialogo del browser Web per salvare il file.

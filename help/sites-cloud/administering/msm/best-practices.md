@@ -3,12 +3,13 @@ title: Best practice MSM
 description: Scopri le best practice compilate dai team di progettazione e consulenza di Adobe per iniziare a utilizzare AEM Multi Site Manager.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 91%
+source-wordcount: '1420'
+ht-degree: 90%
 
 ---
 
@@ -49,7 +50,7 @@ In generale, la regola di rollout in MSM per quanto riguarda la sincronizzazione
 * I componenti vengono implementati per sincronizzare tutte le risorse contenute nella blueprint.
 * I contenitori sincronizzano solo la risorsa corrente.
 
-Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi figli vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, viene persa per il contenuto della blueprint al momento del rollout.
+Ciò significa che i componenti sono trattati come un aggregato e in un rollout il componente stesso e tutti i suoi elementi secondari vengono sostituiti con quelli nei progetti. Ciò significa che se una risorsa viene aggiunta localmente a tale componente, viene persa per il contenuto della blueprint al momento del rollout.
 
 Per supportare la nidificazione dei componenti in modo che i componenti aggiunti localmente siano mantenuti in un rollout, il componente deve essere dichiarato come contenitore.
 
@@ -69,7 +70,7 @@ Di seguito sono riportate alcune considerazioni da tenere a mente durante la cre
 
 * Per creare un sito, è necessaria una [configurazione blueprint](creating-live-copies.md#managing-blueprint-configurations).
 * Per consentire la selezione dei percorsi linguistici da creare in un nuovo sito, le lingue root corrispondenti devono esistere nella blueprint (sorgente).
-* Una volta creato un [nuovo sito come Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Crea**, poi **Sito**), i primi due livelli di questa Live Copy sono *shallow*. Gli elementi figli della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
+* Una volta creato un [nuovo sito come Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Crea**, poi **Sito**), i primi due livelli di questa Live Copy sono *shallow*. Gli elementi secondari della pagina non appartengono alla relazione live, ma se viene trovata una relazione live corrispondente al trigger, verrà comunque generato un rollout.
 
 È utile evitare:
 
@@ -148,6 +149,6 @@ Oltre a personalizzare le azioni di rollout, MSM ti consente anche di personaliz
 Per ulteriori informazioni su MSM e Live Copy, consulta i seguenti articoli.
 
 * [Creazione e sincronizzazione di Live Copy](creating-live-copies.md)
-* [Panoramica Live Copy](live-copy-overview.md)
+* [Panoramica sulla console Live Copy](live-copy-overview.md)
 * [Configurazione della sincronizzazione di una Live Copy](live-copy-sync-config.md)
 * [Conflitti di rollout MSM](rollout-conflicts.md)

@@ -1,24 +1,25 @@
 ---
-title: Creazione guidata copia lingua
-description: Informazioni sull'utilizzo della Creazione guidata copia in lingua in AEM.
+title: Procedura guidata per creare una copia per lingua
+description: Informazioni sull'utilizzo della procedura guidata per creare una copia per lingua in AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 46%
 
 ---
 
-# Creazione guidata copia lingua {#language-copy-wizard}
+# Procedura guidata per creare una copia per lingua {#language-copy-wizard}
 
-La Creazione guidata copia in lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. La creazione guidata rende la creazione di una copia in lingua semplice e veloce.
+La procedura guidata per creare una copia per lingua è un’esperienza guidata per la creazione e la strumentazione di una struttura di contenuto multilingue. La procedura guidata agevola e velocizza la creazione di una copia per lingua.
 
 >[!TIP]
 >
->Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione dell&#39;AEM, ideali per chi non ha esperienza di AEM o traduzione.
+>Se non hai ancora tradotto i contenuti, consulta [Percorso di traduzione siti](/help/journey-sites/translation/overview.md), per una guida attraverso la traduzione dei contenuti AEM Sites tramite i potenti strumenti di traduzione di AEM, ideali per chi non ha esperienza di AEM o traduzione.
 
 >[!NOTE]
 >
@@ -28,7 +29,7 @@ Per accedere alla creazione guidata:
 
 1. Nella console Sites, seleziona una pagina, fai clic su **Crea** e seleziona **Copia lingua**.
 
-   ![Crea copia in lingua dalla creazione guidata](../assets/language-copy-wizard.png)
+   ![Crea copia per lingua dalla procedura guidata](../assets/language-copy-wizard.png)
 
 1. Viene visualizzata la procedura guidata per il passaggio **Seleziona Source** che consente di aggiungere/rimuovere pagine. È inoltre possibile includere o escludere le pagine secondarie. Selezionare le pagine da includere e selezionare **Avanti**.
 

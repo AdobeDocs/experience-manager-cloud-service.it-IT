@@ -3,11 +3,12 @@ title: Amministrazione delle istanze dei flussi di lavoro
 description: Scopri come amministrare le istanze dei flussi di lavoro utilizzando la console dei flussi di lavoro
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1288'
 ht-degree: 90%
 
 ---
@@ -48,7 +49,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    >[!NOTE]
    >
-   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=it).
+   > Per mantenere integra l’istanza del flusso di lavoro, segui le best practice in [Eliminazione regolare delle istanze del flusso di lavoro](#regular-purging-of-workflow-instances) o [Migliori best practice per i flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Cerca istanze del flusso di lavoro {#search-workflow-instances}
 
@@ -112,7 +113,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
 * **Dettagli errore**
-Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e &#x200B;** Stack errori**.
+Apre una finestra per visualizzare **Messaggio di errore**, **Passaggio e **Stack errori**.
 
 * **Cronologia elementi aperti**
 Mostra i dettagli della cronologia del flusso di lavoro.

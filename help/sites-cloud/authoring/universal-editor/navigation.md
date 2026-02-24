@@ -4,10 +4,11 @@ description: Scopri le nozioni di base sull’accesso e la navigazione nell’Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 17%
 
 ---
@@ -78,7 +79,7 @@ La barra di navigazione superiore di Experience Platform è sempre presente nell
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
@@ -86,7 +87,7 @@ Toccando o facendo clic sull’icona dell’account si apre un menu con le impos
 
 ![Commutatore ambiente](assets/environment-switcher.png)
 
-Per l&#39;editor universale, sotto l&#39;intestazione **Impostazioni prodotto**, utilizzare l&#39;opzione **Passa all&#39;ambiente di anteprima** per passare dalla versione di produzione corrente dell&#39;editor universale alla versione di anteprima [&#x200B; in arrivo.](/help/release-notes/universal-editor/preview.md)
+Per l&#39;editor universale, sotto l&#39;intestazione **Impostazioni prodotto**, utilizzare l&#39;opzione **Passa all&#39;ambiente di anteprima** per passare dalla versione di produzione corrente dell&#39;editor universale alla versione di anteprima [ in arrivo.](/help/release-notes/universal-editor/preview.md)
 
 ### Barra degli strumenti Editor universale {#universal-editor-toolbar}
 
@@ -183,11 +184,11 @@ Seleziona l’icona Apri pagina per aprire la pagina che stai modificando nella 
 
 >[!TIP]
 >
->L&#39;URL di anteprima dell&#39;app [&#x200B; può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
+>L&#39;URL di anteprima dell&#39;app [ può essere personalizzato](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 >[!NOTE]
 >
->Il pulsante Apri pagina [&#x200B; può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
+>Il pulsante Apri pagina [ può essere disabilitato](/help/implementing/universal-editor/customizing.md#open-page) e pertanto potrebbe non essere visualizzato nell&#39;editor.
 
 #### Pubblicazione {#publish}
 

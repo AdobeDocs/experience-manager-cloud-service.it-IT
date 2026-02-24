@@ -1,13 +1,14 @@
 ---
 title: Operazioni di base
 description: Acquisisci dimestichezza con AEM e il suo utilizzo di base
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '960'
 ht-degree: 61%
 
 ---

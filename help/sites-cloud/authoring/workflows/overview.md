@@ -1,20 +1,21 @@
 ---
 title: Utilizzo dei flussi di lavoro
 description: I flussi di lavoro in AEM consentono di automatizzare una serie di passaggi che vengono eseguiti su una pagina o una risorsa.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 88%
+source-wordcount: '183'
+ht-degree: 86%
 
 ---
 
 # Utilizzo dei flussi di lavoro {#working-with-workflows}
 
-I flussi di lavoro AEM consentono di automatizzare una serie di passaggi eseguiti su (una o più) pagine e/o risorse.
+I flussi di lavoro di AEM consentono di automatizzare una serie di passaggi eseguiti su (una o più) pagine e/o risorse.
 
 Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto:
 

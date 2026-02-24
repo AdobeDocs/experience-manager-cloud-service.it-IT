@@ -3,11 +3,12 @@ title: Modelli per siti
 description: Scopri come utilizzare i modelli per sito AEM per predefinire la struttura del sito e i contenuti iniziali per poter creare siti in modo rapido.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 82%
 
 ---
@@ -23,7 +24,7 @@ Scopri come utilizzare i modelli per sito AEM per predefinire la struttura del s
 
 I modelli di sito generalmente contengono i contenuti e la struttura del sito di base e informazioni sullo stile del sito, note come [tema del sito,](site-themes.md) per creare rapidamente un nuovo sito. Gli amministratori selezionano un modello di sito su cui basare il sito [durante il processo di creazione dello stesso.](create-site.md)
 
-I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
+I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze di business.
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre,
 >
 >I modelli di sito AEM non devono essere confusi con i [temi del sito AEM.](site-themes.md) I temi del sito AEM contengono solo le informazioni sullo stile di un sito AEM. I modelli di sito AEM definiscono la struttura del sito e il contenuto iniziale e contengono un tema del sito AEM per consentire la [creazione rapida del sito.](create-site.md)
 
-### Modelli di sito forniti da Adobe {#adobe-templates}
+### Modelli di siti forniti da Adobe {#adobe-templates}
 
 {{adobe-templates}}
 

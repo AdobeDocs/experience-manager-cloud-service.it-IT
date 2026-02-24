@@ -4,11 +4,12 @@ description: Scopri come modificare le proprietà di una pagina e il comportamen
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 22%
+source-wordcount: '867'
+ht-degree: 23%
 
 ---
 
@@ -24,7 +25,7 @@ Scopri come modificare [le proprietà di una pagina](/help/sites-cloud/authoring
 
 È possibile modificare le proprietà di pagina da diverse posizioni in AEM.
 
-* [Dalla sezione &#x200B;](#from-the-sites-console)
+* [Dalla sezione ](#from-the-sites-console)
 * [Dall’Editor pagina](#from-the-page-editor)
 * [Dall’editor universale](#from-the-universal-editor)
 

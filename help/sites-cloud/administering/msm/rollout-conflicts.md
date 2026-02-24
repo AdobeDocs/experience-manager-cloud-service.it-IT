@@ -1,13 +1,14 @@
 ---
 title: Conflitti di rollout
-description: Scopri come gestire e risolvere i conflitti di rollout di Multi Site Manager.
+description: Scopri come gestire e risolvere i conflitti di rollout di Multi-Site Manager.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 61%
 
 ---
@@ -42,7 +43,7 @@ Nelle sezioni seguenti viene utilizzato un esempio di nuova pagina `b`, creata s
 
   Una pagina creata manualmente nel ramo Live Copy con una pagina figlia, `lc-level-1`
 
-   * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio
+   * Attivato al momento della pubblicazione come `/b`, insieme alla pagina secondaria
 
 #### Prima del rollout {#before-rollout}
 
@@ -59,7 +60,7 @@ La gestione del rollout consente di attivare o disattivare la gestione dei confl
 
 Questa operazione viene eseguita utilizzando [Configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) di **Day CQ WCM Rollout Manager**. Imposta il valore **Gestisci i conflitti con le pagine create manualmente** ( `rolloutmgr.conflicthandling.enabled`) su true se il gestore di rollout deve gestire i conflitti da una pagina creata in Live Copy con un nome esistente in blueprint.
 
-L&#39;AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
+AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
 ## Gestori dei conflitti {#conflict-handlers}
 
@@ -118,7 +119,7 @@ I gestori di conflitti personalizzati possono:
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se [disattivi manualmente la gestione dei conflitti](#rollout-manager-and-conflict-handling), l&#39;AEM non interverrà su alcuna pagina in conflitto. Le pagine non in conflitto sono distribuite come previsto.
+Se [disattivi manualmente la gestione dei conflitti](#rollout-manager-and-conflict-handling), AEM non interviene su alcuna pagina in conflitto. Le pagine non in conflitto sono distribuite come previsto.
 
 >[!CAUTION]
 >

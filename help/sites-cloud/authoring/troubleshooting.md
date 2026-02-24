@@ -1,14 +1,15 @@
 ---
 title: Risoluzione di problemi AEM nell’ambiente di authoring
-description: Alcuni problemi che potresti riscontrare durante l’utilizzo dell’AEM
+description: Alcuni problemi che potresti riscontrare durante l’utilizzo di AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 72%
+source-wordcount: '241'
+ht-degree: 71%
 
 ---
 

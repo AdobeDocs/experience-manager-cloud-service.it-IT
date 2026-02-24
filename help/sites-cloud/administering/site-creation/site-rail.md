@@ -3,12 +3,13 @@ title: Utilizzo del pannello Sito per gestire il tema del sito
 description: Scopri le potenti funzioni del pannello Sito per personalizzare e gestire facilmente il tema del sito per i progetti di authoring tradizionali di AEM con distribuzione di pubblicazioni.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '613'
 ht-degree: 36%
 
 ---

@@ -1,13 +1,14 @@
 ---
 title: Ricerca
 description: Individua il contenuto più velocemente con funzionalità complete di ricerca
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '498'
 ht-degree: 83%
 
 ---
@@ -62,7 +63,7 @@ Per cercare e filtrare le risorse:
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Date modificate, Stato Publish, Stato LiveCopy
+   * Criteri di ricerca, ad esempio Date modificate, Stato pubblicazione, Stato LiveCopy
 
    >[!NOTE]
    >

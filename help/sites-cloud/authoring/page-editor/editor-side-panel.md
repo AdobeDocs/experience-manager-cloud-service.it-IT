@@ -1,20 +1,21 @@
 ---
 title: Pannello laterale dell’Editor pagina
-description: Scopri come utilizzare il pannello laterale nell’editor di siti AEM per aggiungere componenti e risorse alla pagina.
+description: Scopri come utilizzare il pannello laterale nell’editor dei siti di AEM per aggiungere componenti e risorse alla pagina.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1128'
 ht-degree: 38%
 
 ---
 
 # Pannello laterale dell’Editor pagina {#side-panel}
 
-Scopri come utilizzare il pannello laterale nell’editor di siti AEM per aggiungere componenti e risorse alla pagina.
+Scopri come utilizzare il pannello laterale nell’editor dei siti di AEM per aggiungere componenti e risorse alla pagina.
 
 ## Modalità pannello laterale {#modes}
 
@@ -30,7 +31,7 @@ Quando apri il pannello laterale, questo si apre scorrendo dal lato sinistro e p
 
 ## Browser Componenti   {#components-browser}
 
-[I componenti](/help/implementing/developing/components/overview.md) sono i blocchi predefiniti utilizzati per creare contenuti con l&#39;editor di pagine AEM. Posiziona più componenti in una pagina e configurane le opzioni per creare la pagina di contenuto.
+[I componenti](/help/implementing/developing/components/overview.md) sono i blocchi predefiniti utilizzati per creare contenuti con l&#39;editor pagina di AEM. Posiziona più componenti in una pagina e configurane le opzioni per creare la pagina di contenuto.
 
 Il browser Componenti mostra tutti componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 

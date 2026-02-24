@@ -1,13 +1,14 @@
 ---
 title: Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub
 description: La barra degli strumenti di ContextHub visualizza dati dagli archivi di ContextHub, ti consente di modificare i dati archiviati ed è utile per visualizzare in anteprima il contenuto
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 25%
 
 ---
@@ -25,7 +26,7 @@ ContextHub installa diverse modalità e moduli di interfaccia utente. L&#39;ammi
 
 ## Visualizzazione della barra degli strumenti di ContextHub {#revealing-the-contexthub-toolbar}
 
-La barra degli strumenti di ContextHub è disponibile in modalità Anteprima. La barra degli strumenti è disponibile solo nelle istanze dell’autore e solo se l’amministratore l’ha abilitata.
+La barra degli strumenti di ContextHub è disponibile in modalità Anteprima. La barra degli strumenti è disponibile solo nelle istanze di authoring e solo se l’amministratore l’ha abilitata.
 
 ![Barra degli strumenti di ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 

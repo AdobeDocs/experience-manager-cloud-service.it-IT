@@ -1,21 +1,22 @@
 ---
-title: Layout reattivo
+title: Layout dinamico
 description: AEM consente di realizzare un layout dinamico per le pagine utilizzando il componente Contenitore di layout.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1795'
 ht-degree: 76%
 
 ---
 
 
-# Layout reattivo {#responsive-layout}
+# Layout dinamico {#responsive-layout}
 
-AEM consente di avere un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
+AEM ti consente di avere un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
 
 >[!TIP]
 >
@@ -188,7 +189,7 @@ Per configurare il layout di una griglia dinamica implementato con il contenitor
 La modalità **Layout** può essere avviata in due modi.
 
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e selezionando la modalità **Layout**
-   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
+   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Targeting**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 * Durante la[modifica di un singolo componente](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.

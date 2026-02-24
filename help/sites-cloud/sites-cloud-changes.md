@@ -2,13 +2,14 @@
 title: Modifiche di rilievo apportate ad AEM Sites in AEM Cloud Service
 description: Comprendi come scrivere e amministrare AEM Sites as a Cloud Service, nonché conoscere le modifiche significative apportate ad AEM Sites in AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 99%
 
 ---
 

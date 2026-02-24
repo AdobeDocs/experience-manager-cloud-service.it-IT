@@ -1,13 +1,14 @@
 ---
-title: Configurazione dell’ambiente dell’account
+title: 'Configurazione dell’ambiente dell’account  '
 description: Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '507'
 ht-degree: 60%
 
 ---
@@ -70,7 +71,7 @@ Ogni utente può impostare le proprie proprietà preferite.
 
 * **Presentazione data relativa**
 
-  Per migliorare la leggibilità, AEM riproduce le date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e le date più lontane come date esatte (ad esempio, 20 marzo 2017).
+  Per migliorare la leggibilità, AEM esegue il rendering delle date degli ultimi sette giorni come date relative (ad esempio, Tre giorni fa) e delle date precedenti come date esatte (ad esempio, 20 marzo 2017).
 
   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 

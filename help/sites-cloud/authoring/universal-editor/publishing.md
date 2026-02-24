@@ -1,13 +1,14 @@
 ---
 title: Pubblicazione di contenuti con l’editor universale
 description: Scopri in che modo l’editor universale pubblica i contenuti e come le tue app possono gestire i contenuti pubblicati.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '569'
 ht-degree: 33%
 
 ---
@@ -29,7 +30,7 @@ Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi s
 
 ![Pubblicazione pagine](assets/publish-menu.png)
 
-1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **&#x200B;**&#x200B;nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. Nell&#39;editor universale, toccare o fare clic sull&#39;icona [Pubblica **** nella barra degli strumenti dell&#39;editor universale.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. Se hai un [servizio di anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md) disponibile, puoi scegliere dove pubblicare i contenuti, in **[Anteprima](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (se disponibile) o **Pubblica**.
 1. Nella sezione **Elementi** sono elencati i contenuti inclusi nella pubblicazione. Tocca o fai clic su **Visualizza** per visualizzare i dettagli, tra cui:
    * **Nuovi** elementi non ancora pubblicati.
@@ -46,7 +47,7 @@ Quando sei un autore di contenuti pronto per pubblicare i tuoi contenuti, devi s
 
 >[!NOTE]
 >
->L&#39;opzione per la pubblicazione nell&#39;anteprima [&#x200B; può essere disabilitata](/help/implementing/universal-editor/customizing.md#publish-preview) e pertanto potrebbe non essere visualizzata nell&#39;editor.
+>L&#39;opzione per la pubblicazione nell&#39;anteprima [ può essere disabilitata](/help/implementing/universal-editor/customizing.md#publish-preview) e pertanto potrebbe non essere visualizzata nell&#39;editor.
 
 ## Annullamento della pubblicazione di contenuti dall’editor universale {#unpublishing-content}
 

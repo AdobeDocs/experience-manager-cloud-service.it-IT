@@ -1,13 +1,14 @@
 ---
 title: Aggiunta di annotazioni di pagina
 description: La modalità di annotazione consente di lasciare annotazioni e schizzi sulle pagine, in modo da facilitare il processo di revisione dei contenuti
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '682'
 ht-degree: 72%
 
 ---

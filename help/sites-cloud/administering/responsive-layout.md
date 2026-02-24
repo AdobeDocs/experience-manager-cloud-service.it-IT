@@ -1,14 +1,15 @@
 ---
 title: Configurazione del contenitore di layout e della modalità di layout
 description: Scopri come configurare il contenitore di layout e la modalità di layout per abilitare i layout reattivi per gli autori di contenuti.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 2%
+source-wordcount: '1383'
+ht-degree: 3%
 
 ---
 
@@ -54,7 +55,7 @@ Con questi meccanismi basati su una griglia dinamica è possibile:
 
 ## Abilitazione dell’emulatore {#enabling-emulator}
 
-L&#39;[Archetipo progetto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) e il [Modello di sito standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sono già abilitati per utilizzare l&#39;emulatore. Se hai sviluppato contenuti personalizzati non basati sui Componenti core o sull&#39;archetipo, consulta il documento [Progettazione reattiva](/help/implementing/developing/introduction/responsive-design.md) per informazioni dettagliate su come sviluppare i componenti sfruttando queste funzioni.
+L&#39;[Archetipo progetto](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) e il [Modello di sito standard](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) sono già abilitati per utilizzare l&#39;emulatore. Se hai sviluppato contenuti personalizzati non basati sui Componenti core o sull&#39;archetipo, consulta il documento [Progettazione reattiva](/help/implementing/developing/introduction/responsive-design.md) per informazioni dettagliate su come sviluppare i componenti sfruttando queste funzioni.
 
 ## Attiva modalità layout per il sito {#activate-layout-mode-for-your-site}
 
@@ -62,7 +63,7 @@ La modalità **Layout** consente di utilizzare l&#39;emulatore per regolare il l
 
 ### Configurare i punti di interruzione {#configure-breakpoints}
 
-I punti di interruzione sono vitali per la progettazione reattiva e definiscono come e quando il contenuto viene regolato sul dispositivo di destinazione. Tuttavia, presta attenzione, poiché ogni punto di interruzione introdotto genererà ulteriore lavoro per gli autori in modo da includere il contenuto. Spesso possono essere sufficienti due punti di interruzione, incluso il punto di interruzione predefinito che è sempre presente. Adobe consiglia di non creare più di tre punti di interruzione, incluso il valore predefinito, ovvero non più di due nodi sotto `cq:responsive/breakpoint`.
+I punti di interruzione sono vitali per la progettazione reattiva e definiscono come e quando il contenuto viene regolato sul dispositivo di destinazione. Tuttavia, presta attenzione, poiché ogni punto di interruzione introdotto genererà ulteriore lavoro per gli autori in modo da includere il contenuto. Spesso possono essere sufficienti due punti di interruzione, incluso il punto di interruzione predefinito che è sempre presente. Adobe consiglia di non creare più di tre punti di interruzione, incluso il valore predefinito, ovvero non più di due nodi al di sotto di `cq:responsive/breakpoint`.
 
 * I punti di interruzione hanno un titolo e una larghezza:
    * Il titolo descrive il raggruppamento di dispositivi generico, se necessario con orientamento.
@@ -158,7 +159,7 @@ I due esempi seguenti illustrano la definizione:
 
 #### CSS per i punti di interruzione che utilizzano MENO {#css-for-breakpoints-using-less}
 
-AEM utilizza LESS per generare parti del CSS necessario, che devono essere incluse nei progetti.
+AEM utilizza LESS per generare parti del CSS necessario, che deve essere incluso nei progetti.
 
 È necessario creare una [libreria client](/help/implementing/developing/introduction/clientlibs.md) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
@@ -194,7 +195,7 @@ La definizione della griglia di base è disponibile in:
 
 #### Considerazioni sullo stile {#styling-considerations}
 
-I componenti contenuti in un contenitore reattivo vengono ridimensionati (insieme ai rispettivi elementi DOM HTML) in base alla dimensione della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni degli elementi DOM a larghezza fissa (contenuti).
+I componenti contenuti in un contenitore reattivo vengono ridimensionati (insieme ai rispettivi elementi DOM di HTML) in base alla dimensione della griglia reattiva. Pertanto, in queste circostanze, si consiglia di evitare (o aggiornare) le definizioni degli elementi DOM a larghezza fissa (contenuti).
 
 Ad esempio:
 

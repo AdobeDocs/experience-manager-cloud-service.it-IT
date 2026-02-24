@@ -1,14 +1,15 @@
 ---
 title: Creazione dei lanci
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 94%
+source-wordcount: '1106'
+ht-degree: 93%
 
 ---
 
@@ -73,7 +74,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    * **Includere le pagine secondarie**:
 
-      * Specifica se creare il lancio con o senza pagine figlie.  Per impostazione predefinita, le pagine secondarie sono incluse.
+      * Specifica se creare il lancio con o senza pagine secondarie. Per impostazione predefinita, le pagine secondarie sono incluse.
 
    Procedi con **Successivo**.
 

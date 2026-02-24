@@ -1,13 +1,14 @@
 ---
 title: Configurazione della segmentazione con ContextHub
 description: Scopri come configurare la segmentazione utilizzando ContextHub.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1659'
 ht-degree: 87%
 
 ---
@@ -20,7 +21,7 @@ Definisci i segmenti e le strategie necessari per i contenuti di destinazione in
 
 Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Le [Attività](activities.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
-L’AEM ti consente di personalizzare facilmente le esperienze degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
+AEM ti consente di personalizzare facilmente le esperienze degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
 
 ## Accesso ai segmenti {#accessing-segments}
 
@@ -136,7 +137,7 @@ Per iniziare, inserisci un componente contenitore OR all’interno del contenito
 
 ![Segmento con operatore OR](../assets/contexthub-or-operator.png)
 
-È possibile nidificare più operatori AND e OR, a seconda delle necessità.
+È possibile nidificare più operatori E e O, a seconda delle necessità.
 
 ### Utilizzo di riferimenti a script {#using-script-references}
 
@@ -215,7 +216,6 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * È possibile selezionare le intestazioni di colonna per modificare l&#39;ordinamento.
-
      ![La nuova cartella](../assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
@@ -251,7 +251,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
-   ![Conferma l’eliminazione degli elementi figlio](../assets/contexthub-confirm-segment-child-delete.png)
+   ![Conferma l’eliminazione degli elementi secondari](../assets/contexthub-confirm-segment-child-delete.png)
 
    * Selezionare **Forza eliminazione** per confermare.
    * Seleziona **Annulla** per interrompere.

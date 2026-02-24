@@ -1,13 +1,14 @@
 ---
 title: Gestione delle attività
 description: La console Attività consente di creare, organizzare e gestire le attività di marketing dei brand
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1964'
 ht-degree: 85%
 
 ---
@@ -44,7 +45,7 @@ Le attività vengono visualizzate con un’etichetta che descrive il tipo di att
 >
 >* Se le opzioni `xt_only` **non** sono abilitate nel tenant di Adobe Target (clientcode), puoi creare attività **sia** XT che A/B in AEM.
 >
->**Nota aggiuntiva:** l’opzione `xt_only` è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente all’interno di Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** l’opzione `xt_only` è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente all’interno di Adobe Target. Non puoi abilitare o disabilitare questa opzione da AEM.
 
 >[!CAUTION]
 >
@@ -75,15 +76,15 @@ Quando crei un marchio utilizzando la console Attività, questa viene visualizza
 Aggiungi un’attività o modifica un’attività esistente per concentrare le tue attività di marketing su tipi di pubblico specifici. Quando crei o modifichi un’attività, è necessario specificare le seguenti informazioni:
 
 * **Nome:** il nome dell’attività.
-* **Motore di destinazione:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oppure [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) come motore per il contenuto di destinazione.
-* **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target è per il motore di destinazione.
-* **Tipo di attività**: il tipo di attività, test A/B o Impostazione destinazione dell&#39;esperienza
+* **Motore di targeting:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) oppure [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) come motore per il contenuto target.
+* **Seleziona una configurazione di destinazione:** (Solo Adobe Target) la configurazione cloud che questa attività deve utilizzare per connettersi ad Adobe Target. Questa opzione viene visualizzata solo quando è selezionato Adobe Target come motore di targeting.
+* **Tipo di attività**: il tipo di attività, test A/B o Targeting esperienza
 * **Obiettivo:** (facoltativo) una descrizione dell’attività.
-* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing di destinazione.
+* **Esperienze:** mappature tra i nomi del pubblico e i segmenti di marketing per cui si esegue il targeting.
 * **Traffic Percentages (Percentuali di traffico):** se è selezionato il test A/B, puoi modificare la quantità di traffico (in percentuale) che viene indirizzato a ogni esperienza.
 * **Durata:** il periodo di tempo in cui viene applicata l’attività.
 * **Priorità:** la priorità relativa dell’attività. Quando le attività forniscono contenuto per gli stessi segmenti di utenti, l’attività della priorità superiore ha la precedenza.
-* **Metrica per obiettivo:** se Adobe Target è selezionato come motore di destinazione, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
+* **Metrica per obiettivo:** se Adobe Target è selezionato come motore di targeting, puoi aggiungere all’attività le metriche di successo. È necessaria una metrica di successo.
 
 >[!NOTE]
 >
@@ -143,7 +144,7 @@ Per pubblicare o annullare la pubblicazione delle attività:
 
    ![Pubblicazione dalla console attività](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Per pubblicare, selezionare **Publish**. Per annullare la pubblicazione, selezionare **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
+1. Per pubblicare, seleziona **Pubblica**. Per annullare la pubblicazione, selezionare **Annulla pubblicazione**. L’attività o le attività vengono pubblicate o ne viene annullata la pubblicazione e il loro stato cambia nella console Attività (potrebbe essere necessario un aggiornamento della schermata).
 
 ## Attività sulle istanze di authoring e pubblicazione {#activities-on-author-and-publish-instances}
 
@@ -190,7 +191,7 @@ Queste condizioni si applicano alle attività sulle istanze di authoring e di pu
 Quando un’attività viene sincronizzata, si crea una campagna corrispondente in Adobe Target:
 
 * Le attività sull’istanza di pubblicazione hanno lo stesso nome della campagna Adobe Target corrispondente.
-* Le attività sull&#39;istanza autore corrispondono alle campagne Target con lo stesso nome con il suffisso `_author`.
+* Le attività sull&#39;istanza di authoring corrispondono alle campagne Target con lo stesso nome con il suffisso `_author`.
 
 ![Integrazione con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 

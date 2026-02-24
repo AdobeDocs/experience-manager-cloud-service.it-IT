@@ -3,12 +3,13 @@ title: Visualizzazione e gestione di Assets nella console Frammenti di contenuto
 description: Scopri come visualizzare e gestire Assets nella Console Frammenti di contenuto di Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 

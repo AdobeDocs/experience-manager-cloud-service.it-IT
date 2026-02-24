@@ -1,14 +1,15 @@
 ---
 title: Promozione dei lanci
 description: Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 98%
+source-wordcount: '818'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 98%
 Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando promuovi una pagina di lancio sono disponibili le seguenti opzioni:
 
 * Promuovere solo la pagina corrente o l’intero lancio.
-* Promuovere le pagine figlie della pagina corrente.
+* Promuovere le pagine secondarie della pagina corrente.
 * Promuovere il lancio completo o solo le pagine che sono state modificate.
 * Eliminare il lancio dopo la promozione.
 

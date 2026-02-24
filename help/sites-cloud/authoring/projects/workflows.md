@@ -1,14 +1,15 @@
 ---
 title: Utilizzo dei flussi di lavoro per i progetti
 description: Sono disponibili diversi flussi di lavoro per progetti già pronti all’uso.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 96%
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -30,8 +31,8 @@ A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di
 | Richiedi lancio | x |  |
 | Richiedi pagina di destinazione | x |  |
 | Richiedi e-mail | x | |
-| Creazione DAM copia in lingua &ast; |  | x |
-| Creazione DAM e traduzione copia in lingua &ast; |   | x |
+| Crea copia per lingua DAM &amp;ast; |  | x |
+| DAM - Crea e traduci copia per lingua &amp;ast; |   | x |
 
 >[!NOTE]
 >

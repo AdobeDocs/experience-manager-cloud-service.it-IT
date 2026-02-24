@@ -1,13 +1,14 @@
 ---
 title: Modelli per creare pagine modificabili con l’Editor pagina
 description: È possibile utilizzare l’Editor modelli per creare modelli utilizzabili dagli autori di contenuti per creare pagine modificabili con l’Editor pagina.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4421'
 ht-degree: 77%
 
 ---
@@ -167,7 +168,7 @@ Per definire la miniatura del modello:
 
 Per poter utilizzare un modello quando si crea una pagina, è necessario svolgere le seguenti operazioni:
 
-* [Attiva i modelli](#enabling-a-template-template-author) per renderli disponibili per l’uso durante la creazione di pagine.
+* [Abilita i modelli](#enabling-a-template-template-author) per renderli disponibili per l’uso durante la creazione di pagine.
 * [Consenti ai modelli](#allowing-a-template-author) di specificare i rami di contenuto in cui è possibile utilizzare il modello.
 
 #### Abilitazione di un modello - Autore del modello {#enabling-a-template-template-author}
@@ -210,7 +211,7 @@ Un modello può essere reso disponibile o non disponibile per alcuni rami di pag
 
 Poiché al modello viene fatto riferimento durante il rendering di una pagina, il modello completamente configurato deve essere pubblicato in modo che sia disponibile nell’ambiente di pubblicazione.
 
-Modelli di Publish che utilizzano **[Templates Console](/help/sites-cloud/administering/templates-console.md)**.
+Pubblicare modelli utilizzando **[Templates Console](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Modifica dei modelli - Autori dei modelli   {#editing-templates-template-authors}
 
@@ -647,4 +648,4 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
    >AEM fornisce avvisi espliciti quando si modifica lo stato di blocco dei componenti nei modelli che non sono più bozze.
 
 1. [Creazione di cartelle personalizzate](#creating-a-template-folder-admin) per i modelli specifici del sito.
-1. [Publish i tuoi modelli](#publishing-a-template-template-author) dalla **[console Modelli]**(/help/sites-cloud/administering/templates-console.md).
+1. [Pubblica i tuoi modelli](#publishing-a-template-template-author) dalla **[console Modelli]**(/help/sites-cloud/administering/templates-console.md).

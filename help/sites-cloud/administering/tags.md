@@ -1,13 +1,14 @@
 ---
 title: Amministrazione dei tag
 description: Scopri come amministrare i tag in AEM per organizzare i contenuti.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -33,10 +34,10 @@ I tag offrono funzioni affidabili per organizzare e gestire i contenuti.
 
 * I tag possono essere raggruppati in vari spazi dei nomi.
    * Gli spazi dei nomi possono essere considerati gerarchie che consentono la creazione di tassonomie.
-   * Queste tassonomie sono globali in tutta l&#39;AEM.
+   * Queste tassonomie sono globali in AEM.
 * I tag possono essere applicati dagli autori e utilizzati dai visitatori del sito.
 * Indipendentemente dall’autore, tutte le forme di tag sono disponibili per la selezione, sia durante l’assegnazione a una pagina che durante la ricerca.
-* I tag vengono utilizzati dal [componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it) per generare elenchi dinamici in base ai tag selezionati.
+* I tag vengono utilizzati dal [componente Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) per generare elenchi dinamici in base ai tag selezionati.
 
 ## Requisiti dei tag {#requirements}
 
@@ -52,7 +53,7 @@ Sono disponibili alcuni dettagli tecnici da tenere a mente durante la creazione 
    * Un tag che non è un tag contenitore viene definito tag foglia.
    * Uno spazio dei nomi dei tag può essere un tag foglia o un tag contenitore.
 
-Per ulteriori dettagli tecnici sul funzionamento dei tag, consulta [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md).
+Per ulteriori dettagli tecnici sul funzionamento dei tag, vedi [Framework di assegnazione tag di AEM](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Console per assegnazione tag {#tagging-console}
 
@@ -68,7 +69,7 @@ Per accedere alla console dei tag:
 1. Nel menu di navigazione globale selezionare **`Tools`** > **`General`** >
    **`Tagging`**.
 
-![Console di assegnazione tag in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
+![La console dei tag in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
 ## Creazione di nuovi tag {#creating-new-tags}
 
@@ -76,7 +77,7 @@ Esistono diversi passaggi per creare e utilizzare i tag per organizzare i conten
 
 1. [Crea uno spazio dei nomi per i tag](#creating-namespaces) (o scegline uno esistente da riutilizzare).
 1. [Crea un nuovo tag](#creating-tags).
-1. [Publish il tag](#publishing-tags).
+1. [Pubblica il tag](#publishing-tags).
 
 ### Creazione di spazi dei nomi {#creating-namespaces}
 
@@ -89,7 +90,7 @@ Per organizzare altri tag viene utilizzato uno spazio dei nomi. Può essere cons
 1. Fornisci le informazioni necessarie.
 
    * **Titolo** - Titolo per lo spazio dei nomi visualizzato nell&#39;interfaccia utente (facoltativo)
-   * **Nome** - Se non viene specificato un nome, viene creato un nome di nodo valido dal **Titolo**. Per ulteriori informazioni, consulta il documento [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Nome** - Se non viene specificato un nome, viene creato un nome di nodo valido dal **Titolo**. Per ulteriori informazioni, consulta il documento [Framework di assegnazione tag di AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid).
    * **Descrizione** - Descrizione dello spazio dei nomi (facoltativo)
 
 1. Una volta immesse le informazioni richieste, seleziona **Crea**.
@@ -130,21 +131,21 @@ I tag consentono di creare in modo flessibile la propria tassonomia in base alle
 
 ### Pubblicazione dei tag {#publishing-tags}
 
-Come per la creazione di qualsiasi altro contenuto in AEM, dopo aver creato un tag (o namespace), questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
+Come per qualsiasi altro contenuto in AEM, dopo aver creato un tag (o spazio dei nomi) questo esiste solo nell’ambiente di authoring. Affinché i tag siano disponibili per gli utenti, devi pubblicarli.
 
 1. Per pubblicare un tag, apri la [console tag](#tagging-console).
 
-1. Selezionare il tag o i tag da pubblicare e nella barra degli strumenti selezionare **Publish**.
+1. Seleziona il tag o i tag da pubblicare e nella barra degli strumenti seleziona **Pubblica**.
 
    ![Selezione di tag nella console](assets/select-tags.png)
 
-1. La finestra di dialogo **Tag Publish** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
+1. La finestra di dialogo **Pubblica tag** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
 
-   ![Il modale di conferma del tag Publish](assets/publish-tag.png)
+   ![Conferma tag di pubblicazione modale](assets/publish-tag.png)
 
 1. L&#39;azione di pubblicazione è confermata con una finestra di dialogo **Operazione riuscita**.
 
-   ![Finestra di dialogo per il completamento del tag Publish](assets/publish-tag-success.png)
+   ![Finestra di dialogo Pubblicazione tag completata](assets/publish-tag-success.png)
 
 I tag selezionati sono in coda per la pubblicazione. Analogamente al contenuto della pagina, vengono pubblicati solo i tag selezionati, indipendentemente dal fatto che contengano o meno tag secondari.
 
@@ -164,7 +165,7 @@ Puoi eseguire diverse azioni sui tag e sugli spazi dei nomi esistenti per gestir
 * [Riferimenti](#viewing-tag-references)
 * [Spostare](#moving-tags)
 * [Unisci](#merging-tags)
-* [Elimina](#deleting-tags)
+* [Eliminare](#deleting-tags)
 
 Quando lo spazio sulla barra degli strumenti è sufficiente, dietro l’icona con i puntini di sospensione sono disponibili opzioni aggiuntive.
 
@@ -220,11 +221,11 @@ Per disattivare i tag nell’istanza di authoring e rimuoverli dall’istanza di
 
 1. La finestra di dialogo **Annulla pubblicazione tag** richiede una conferma per la pubblicazione dei tag selezionati. Seleziona **Pubblica**.
 
-   ![Il modale di conferma del tag Publish](assets/unpublish-tag.png)
+   ![Conferma tag di pubblicazione modale](assets/unpublish-tag.png)
 
 1. L&#39;azione di annullamento della pubblicazione è confermata con una finestra di dialogo **Operazione riuscita**.
 
-   ![Finestra di dialogo per il completamento del tag Publish](assets/unpublish-tag-success.png)
+   ![Finestra di dialogo Pubblicazione tag completata](assets/unpublish-tag-success.png)
 
 I tag selezionati sono in coda per l&#39;annullamento della pubblicazione. Se il tag selezionato è un tag contenitore, tutti i relativi tag figlio verranno disattivati nell’ambiente di authoring e rimossi dall’ambiente di pubblicazione.
 
@@ -291,7 +292,7 @@ Se la tassonomia dei tag include duplicati o tag simili, può essere utile unirl
 
 1. Seleziona **Invia**.
 
-Il tag selezionato nella console viene unito al tag specificato nella finestra di dialogo. Quando un tag di riferimento viene spostato o unito, il tag non viene fisicamente eliminato in modo tale da poter mantenere i riferimenti. Per ulteriori informazioni, vedere [Framework di assegnazione tag AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags).
+Il tag selezionato nella console viene unito al tag specificato nella finestra di dialogo. Quando un tag di riferimento viene spostato o unito, il tag non viene fisicamente eliminato in modo tale da poter mantenere i riferimenti. Per ulteriori informazioni, vedere [Framework di assegnazione tag di AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags).
 
 ### Eliminazione dei tag {#deleting-tags}
 
@@ -305,13 +306,13 @@ Se la tassonomia dei tag cambia e non è necessario specificare un tag o uno spa
 
    ![Finestra modale di conferma eliminazione tag](assets/delete-tag.png)
 
-1. L’AEM verifica che non sia presente alcun riferimento al tag.
+1. AEM verifica che non sia presente alcun riferimento al tag.
 
-   1. Se non viene trovato alcun riferimento, l&#39;AEM chiede la conferma finale per l&#39;eliminazione. Seleziona **Elimina**
+   1. Se non viene trovato alcun riferimento, AEM richiede la conferma finale per l’eliminazione. Seleziona **Elimina**
 
       ![Nessun riferimento trovato](assets/no-references-found.png)
 
-   1. Se vengono trovati dei riferimenti, l&#39;AEM li presenta e chiede una conferma finale per la loro cancellazione.
+   1. Se vengono trovati dei riferimenti, AEM li presenta e richiede la conferma finale per l’eliminazione.
 
       ![Riferimenti trovati](assets/references-found.png)
 
@@ -380,4 +381,4 @@ Per aggiungere una nuova lingua alla finestra di dialogo, consulta il documento 
 
 >[!TIP]
 >
->Per ulteriori informazioni sulle funzionalità di localizzazione dell&#39;AEM, vedere [Traduzione del contenuto per siti multilingue](/help/sites-cloud/administering/translation/overview.md).
+>Per ulteriori informazioni sulle funzionalità di localizzazione di AEM, consulta [Traduzione del contenuto per siti multilingue](/help/sites-cloud/administering/translation/overview.md).

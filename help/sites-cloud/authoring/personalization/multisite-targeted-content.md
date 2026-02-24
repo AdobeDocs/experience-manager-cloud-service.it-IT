@@ -1,20 +1,21 @@
 ---
 title: Utilizzo dei contenuti di destinazione in più siti
-description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
+description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2850'
 ht-degree: 89%
 
 ---
 
 # Utilizzo dei contenuti di destinazione in più siti {#working-with-targeted-content-in-multisites}
 
-Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati.
+Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati.
 
 >[!NOTE]
 >
@@ -243,7 +244,7 @@ Un’attività che eredita da un altro sito è contrassegnata in verde accanto a
 Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attività:
 
 1. Passare alla pagina in cui si desidera scollegare o sospendere l&#39;ereditarietà e selezionare **Targeting** nel menu a discesa della modalità.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fai clic su **Inizia impostazione destinazione**.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Seleziona **Inizia targeting**.
 1. Per sospendere un’attività, effettua una delle seguenti operazioni:
 
    1. Seleziona un elemento dell’attività, ad esempio il pubblico. AEM visualizza automaticamente una casella di conferma Sospendi Live Copy. (Puoi sospendere la Live Copy toccando o facendo clic su qualsiasi elemento durante tutto il processo di targeting).
@@ -260,7 +261,7 @@ Per sospendere o scollegare l’ereditarietà dei contenuti mirati in un’attiv
 Per interrompere l’ereditarietà di contenuti mirati in un’attività:
 
 1. Passa alla pagina in cui desideri scollegare la Live Copy dalla pagina mastro e seleziona **Targeting** nel menu a discesa della modalità.
-1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Fai clic su **Inizia impostazione destinazione**.
+1. Se la pagina è collegata a un’area che è una Live Copy, viene visualizzato lo stato di ereditarietà. Seleziona **Inizia targeting**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Stacca Live Copy**. AEM conferma che vuoi scollegare la Live Copy.
 1. Seleziona **Scollega** per scollegare la Live Copy dall&#39;attività. Una volta scollegata, il menu a discesa relativo all’ereditarietà non viene più visualizzato. L’attività è ora un’attività locale.
 
@@ -273,7 +274,7 @@ Se hai sospeso l’ereditarietà di contenuti di destinazione in un’attività,
 Per ripristinare l’ereditarietà di contenuti di destinazione in un’attività:
 
 1. Passa alla pagina in cui desideri ripristinare l&#39;ereditarietà e seleziona **Targeting** nel menu a discesa della modalità.
-1. Fai clic su **Inizia impostazione destinazione**.
+1. Seleziona **Inizia targeting**.
 1. Dal menu a discesa nella barra degli strumenti, seleziona **Riprendi Live Copy**.
 
    ![Ripresa della Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)

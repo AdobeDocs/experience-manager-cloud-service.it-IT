@@ -1,14 +1,15 @@
 ---
 title: Concetti relativi all’authoring e alla pubblicazione
 description: Scopri i concetti di authoring in AEM utilizzando gli ambienti di authoring, anteprima e pubblicazione.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 29%
+source-wordcount: '444'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +20,7 @@ Per un autore di contenuti, un’installazione di AEM as a Cloud Service può es
 
 * Livello di authoring
 * Anteprima livello
-* Livello Publish
+* Livello di pubblicazione
 
 Questi livelli interagiscono per consentire di rendere i contenuti disponibili sul sito web in modo che i visitatori possano accedervi. Il flusso di lavoro di base è:
 
@@ -58,7 +59,7 @@ Per una panoramica del processo di authoring, consulta il documento [Guida rapid
 
 ## Anteprima del contenuto {#previewing-content}
 
-AEM offre anche un servizio di anteprima che consente a sviluppatori e autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
+AEM offre anche un servizio di anteprima che consente agli sviluppatori e agli autori di contenuti di visualizzare in anteprima l’esperienza finale di un sito web prima che raggiunga l’ambiente di pubblicazione e sia disponibile pubblicamente.
 
 Per ulteriori dettagli, vedere il documento [Anteprima del contenuto](/help/sites-cloud/authoring/sites-console/previewing-content.md).
 

@@ -1,13 +1,14 @@
 ---
 title: Guida rapida all’authoring
 description: Inizia qui per una guida rapida di alto livello per iniziare a creare contenuti utilizzando la console Sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -25,11 +26,11 @@ Inizia qui per una guida rapida di alto livello per iniziare a creare contenuti 
 
 Per creare nuovi contenuti o visualizzare e gestire quelli esistenti, la panoramica centrale è la console **Sites**.
 
-Quando accedi per la prima volta all’AEM, arrivi alla schermata di navigazione globale. Tocca o fai clic su **Sites** per aprire la console **Sites**.
+La prima volta che accedi ad AEM arrivi alla schermata di navigazione globale. Tocca o fai clic su **Sites** per aprire la console **Sites**.
 
 ![Navigazione globale](assets/getting-started-global-navigation.png)
 
-Per accedere alla navigazione globale da qualsiasi altra posizione in AEM, tocca o fai clic sul collegamento **Adobe Experience Manager** in alto a sinistra di qualsiasi schermata AEM, che apre una sovrapposizione a discesa della navigazione globale.
+Per accedere alla navigazione globale da qualsiasi altra posizione in AEM, tocca o fai clic sul collegamento **Adobe Experience Manager** in alto a sinistra in qualsiasi schermata di AEM, per aprire una sovrapposizione a discesa della navigazione globale.
 
 Una volta nella console **Sites**, il contenuto è semplice da spostarsi ed è presentato in una vista a colonne per impostazione predefinita.
 
@@ -68,7 +69,7 @@ In qualsiasi momento puoi anche utilizzare l’icona di ricerca in alto a destra
 
 La ricerca viene visualizzata come sovrapposizione a discesa sull’intera console. Immetti i termini di ricerca per trovare il contenuto.
 
-## Creazione di contenuti {#creating}
+## Creazione del contenuto {#creating}
 
 Per creare una nuova pagina, passa alla posizione desiderata nella gerarchia dei contenuti, quindi tocca o fai clic sul pulsante **Crea** nella barra degli strumenti.
 
@@ -96,11 +97,11 @@ Per spostare o copiare una pagina, selezionarla nella console, quindi nella barr
 
 ## Pubblicazione del contenuto {#publishing}
 
-Dopo aver apportato le modifiche desiderate al contenuto utilizzando la console **Sites**, puoi pubblicare il contenuto. Seleziona il contenuto da pubblicare e tocca o fai clic sull&#39;icona **Publish rapido** nella barra degli strumenti.
+Dopo aver apportato le modifiche desiderate al contenuto utilizzando la console **Sites**, puoi pubblicare il contenuto. Seleziona il contenuto da pubblicare e tocca o fai clic sull&#39;icona **Pubblicazione rapida** nella barra degli strumenti.
 
 ![Pubblicazione rapida](assets/getting-started-quick-publish.png)
 
-Conferma la pubblicazione toccando o facendo clic su **Publish** nella finestra di dialogo.
+Conferma la pubblicazione toccando o facendo clic su **Pubblica** nella finestra di dialogo.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -111,5 +112,5 @@ Di seguito sono riportate alcune altre risorse che approfondiscono tutte le funz
 * [Operazioni di base](/help/sites-cloud/authoring/basic-handling.md)
 * [Concetti di authoring](/help/sites-cloud/authoring/author-publish.md)
 * [Console Sites](/help/sites-cloud/authoring/sites-console/introduction.md)
-* [Editor pagina](/help/sites-cloud/authoring/page-editor/introduction.md)
+* [Editor di pagine](/help/sites-cloud/authoring/page-editor/introduction.md)
 * [Pubblicazione delle pagine](/help/sites-cloud/authoring/sites-console/publishing-pages.md)

@@ -1,13 +1,14 @@
 ---
 title: Modifica del contenuto di una pagina con l’Editor pagina di AEM
 description: L’editor pagina di AEM è uno strumento utile per la creazione dei contenuti.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 32%
 
 ---
@@ -256,7 +257,7 @@ Puoi annullare e riabilitare l’ereditarietà. A seconda del componente, queste
 
 * **Riabilita ereditarietà** se l&#39;ereditarietà è già annullata
 
-  ![Pulsante Riattiva ereditarietà](assets/edit-content-re-enable-inheritance.png)
+  ![Pulsante Abilita di nuovo ereditarietà](assets/edit-content-re-enable-inheritance.png)
 
 * **Rollout** è disponibile anche nel blueprint o nell&#39;origine Live Copy
 

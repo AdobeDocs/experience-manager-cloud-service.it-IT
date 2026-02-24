@@ -3,11 +3,12 @@ title: Gestione dei frammenti di contenuto
 description: Scopri come gestire i frammenti di contenuto di AEM dalla console e dall’editor, come creare contenuti come base per i contenuti headless o per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2943'
 ht-degree: 36%
 
 ---

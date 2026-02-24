@@ -3,11 +3,12 @@ title: Frammenti di contenuto - Configurazione
 description: Scopri come abilitare la funzionalità Frammento di contenuto e GraphQL per l’utilizzo con le funzioni di consegna headless di AEM e l’authoring delle pagine.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '408'
 ht-degree: 36%
 
 ---

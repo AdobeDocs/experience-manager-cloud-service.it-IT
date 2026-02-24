@@ -1,20 +1,21 @@
 ---
-title: Gestione multisito e traduzione
+title: Multi-Site Manager e traduzione
 description: Scopri come riutilizzare i contenuti all’interno del progetto e come gestire siti web multilingue in AEM.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '415'
+ht-degree: 95%
 
 ---
 
-# Gestione multisito e traduzione {#msm-and-translation}
+# Multi-Site Manager e traduzione {#msm-and-translation}
 
-Gli strumenti di traduzione e gestione multisito integrati di Adobe Experience Manager semplificano la localizzazione dei contenuti.
+Gli strumenti di traduzione e Multi-Site Manager incorporati di Adobe Experience Manager semplificano la localizzazione dei contenuti.
 
 * Multi Site Manager (MSM) e le sue funzioni Live Copy consentono di utilizzare lo stesso contenuto del sito in più posizioni, permettendo al contempo l’utilizzo di varianti:
    * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](msm/overview.md)
@@ -29,7 +30,7 @@ Queste due funzioni possono essere combinate per gestire i siti Web che sono [mu
 
 ## Siti multinazionali e multilingue {#multinational-and-multilingual-sites}
 
-Puoi creare contenuti per siti multinazionali e multilingue in modo efficiente tramite l’utilizzo combinato di Multi Site Manager e del flusso di lavoro di traduzione.
+Puoi creare contenuti per siti multinazionali e multilingue in modo efficiente tramite l’utilizzo combinato di Multi-Site Manager e del flusso di lavoro di traduzione.
 
 In genere, si crea un sito master in una lingua e per un paese specifico, quindi si utilizza tale contenuto come base per gli altri siti, utilizzando la traduzione ove necessario.
 
@@ -40,7 +41,7 @@ In genere, si crea un sito master in una lingua e per un paese specifico, quindi
 
 >[!TIP]
 >
->Limitare l’utilizzo di Multi Site Manager ai contenuti in una sola lingua.
+>Limitare l’utilizzo di Multi-Site Manager ai contenuti in una sola lingua.
 >
 >Ad esempio, utilizza l’inglese primario per creare la versione inglese delle pagine per Stati Uniti, Canada, Regno Unito, ecc. Quindi, utilizza il francese primario per creare la versione francese delle pagine per Francia, Svizzera, Canada e così via.
 

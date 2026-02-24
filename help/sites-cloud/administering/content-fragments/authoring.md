@@ -3,12 +3,13 @@ title: Authoring dei frammenti di contenuto
 description: Scopri come creare contenuti per i frammenti di contenuto e creare varianti di tali contenuti in base allo scopo. I frammenti di contenuto offrono maggiore flessibilità sia per la distribuzione headless che per l’authoring delle pagine.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2793'
-ht-degree: 6%
+source-wordcount: '2799'
+ht-degree: 7%
 
 ---
 
@@ -271,7 +272,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 

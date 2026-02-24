@@ -1,14 +1,15 @@
 ---
 title: Console Sites
 description: Scopri come utilizzare la console Sites per gestire e organizzare le pagine di AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 44%
+source-wordcount: '1659'
+ht-degree: 46%
 
 ---
 
@@ -83,7 +84,7 @@ Dopo aver fatto clic su, le opzioni visualizzate sono appropriate per la console
 
 * [Pagina](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 * [Sito](/help/sites-cloud/administering/site-creation/create-site.md)
-* [Live Copy &#x200B;](/help/sites-cloud/administering/msm/overview.md)
+* [Live Copy ](/help/sites-cloud/administering/msm/overview.md)
 * [Lancio](/help/sites-cloud/authoring/launches/overview.md)
 * [Copia per lingua](/help/sites-cloud/administering/translation/overview.md)
 * [Rapporto CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
@@ -96,7 +97,7 @@ La console **Sites** offre tre diverse visualizzazioni della gerarchia dei conte
 
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
-* [Vista a elenco &#x200B;](#list-view)
+* [Vista a elenco ](#list-view)
 
 L&#39;icona **Visualizza** all&#39;estrema destra della barra degli strumenti di AEM indica la visualizzazione corrente selezionata.
 
@@ -264,7 +265,7 @@ Inoltre, consente di creare azioni relative alla pagina.
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [**Vista a colonne**](/help/sites-cloud/authoring/basic-handling.md#column-view) o [**Vista a elenco**](/help/sites-cloud/authoring/basic-handling.md#list-view).
 
-## Assistente AI in AEM
+## Assistente IA in AEM
 
-Per i clienti che hanno [completato i criteri dei prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), l&#39;Assistente per l&#39;intelligenza artificiale in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+L’Assistente IA in AEM è disponibile per gli utenti delle organizzazioni che hanno [completato i criteri prerequisiti](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access). Consulta [Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 

@@ -3,11 +3,12 @@ title: Creazione e sincronizzazione di Live Copy
 description: Scopri come creare e sincronizzare Live Copy per riutilizzare i contenuti in tutto il sito.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4276'
 ht-degree: 94%
 
 ---
@@ -183,7 +184,7 @@ Per creare una Live Copy di un sito da una configurazione blueprint:
 
 ### Creazione di una Live Copy all’interno di una Live Copy (configurazione Blueprint) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
-Quando crei una Live Copy all’interno della Live Copy esistente (creata utilizzando una configurazione di blueprint), puoi inserire qualsiasi copia o capitolo in lingua non inclusi al momento della creazione della Live Copy.
+Quando crei una Live Copy all’interno della Live Copy esistente (creata utilizzando una configurazione di blueprint), puoi inserire qualsiasi copia per lingua o capitolo non inclusi al momento della creazione della Live Copy.
 
 ## Monitoraggio della Live Copy {#monitoring-your-live-copy}
 
@@ -400,7 +401,7 @@ Sospendere l’ereditarietà della Live Copy per una pagina è un’azione tempo
 
 ![Riprendi l’ereditarietà](../assets/resume-inheritance.png)
 
-Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
+Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
 
 * Nella finestra di dialogo **Riprendi**/**Ripristina**; ad esempio:
 
@@ -410,7 +411,7 @@ Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticam
 
 >[!NOTE]
 >
->Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
+>Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
 
 #### Ripresa dell’ereditarietà dalle proprietà della pagina {#resuming-inheritance-from-page-properties}
 
@@ -472,7 +473,7 @@ Annulla l’ereditarietà Live Copy per un componente in modo che non venga più
 
 >[!NOTE]
 >
->Quando riabiliti l’ereditarietà, il componente non viene sincronizzato automaticamente con il sorgente. Se necessario, è possibile richiedere manualmente una sincronizzazione.
+>Quando abiliti di nuovo l’ereditarietà, il componente non viene sincronizzato automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione.
 
 Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il componente:
 
@@ -528,7 +529,7 @@ In seguito puoi riabilitare l’ereditarietà per una proprietà, se necessario.
 
 >[!NOTE]
 >
->Quando riabiliti l’ereditarietà, la proprietà della pagina Live Copy non viene sincronizzata automaticamente con la proprietà sorgente. Se necessario, è possibile richiedere manualmente una sincronizzazione.
+>Quando abiliti di nuovo l’ereditarietà, la proprietà della pagina Live Copy non viene sincronizzata automaticamente con la proprietà di origine. Se necessario, è possibile richiedere manualmente una sincronizzazione.
 
 1. Apri le proprietà della pagina Live Copy utilizzando l&#39;opzione **Visualizza proprietà** nella console **Sites** o **Informazioni pagina** sulla barra degli strumenti.
 1. Per annullare l’ereditarietà di una proprietà, seleziona l’icona di collegamento visualizzata a destra della proprietà.

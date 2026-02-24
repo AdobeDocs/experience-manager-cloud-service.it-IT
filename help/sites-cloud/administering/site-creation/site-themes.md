@@ -3,12 +3,13 @@ title: Temi del sito
 description: Scopri come utilizzare i temi del sito AEM per personalizzare lo stile e la progettazione del sito per i progetti di authoring tradizionali di AEM con distribuzione di pubblicazioni.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 67%
+source-wordcount: '394'
+ht-degree: 66%
 
 ---
 

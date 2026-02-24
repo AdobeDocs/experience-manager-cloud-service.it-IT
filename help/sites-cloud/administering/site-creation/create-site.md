@@ -3,12 +3,13 @@ title: Creazione di un sito
 description: Scopri come utilizzare AEM per creare un sito utilizzando i modelli di sito per definire lo stile e la struttura del sito.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 55%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +30,7 @@ Prendi in considerazione lo scopo del tuo sito e i contenuti pianificati con lar
 
 Poiché la struttura del sito è così importante per il successo di un sito, è opportuno disporre di strutture predefinite per distribuire rapidamente un nuovo sito in base a un insieme di standard esistenti. I modelli di sito consentono di combinare i contenuti di base del sito in un pacchetto comodo e riutilizzabile.
 
-Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente contengono il contenuto e la struttura di base del sito e informazioni sul suo stile. I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze aziendali.
+Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente contengono il contenuto e la struttura di base del sito e informazioni sul suo stile. I modelli sono efficaci perché sono riutilizzabili e personalizzabili. Inoltre, poiché è possibile disporre di più modelli durante l’installazione di AEM, è possibile creare siti diversi per soddisfare le varie esigenze di business.
 
 >[!TIP]
 >
@@ -37,9 +38,9 @@ Per consentire un rapido avvio del nuovo sito, i modelli di sito generalmente co
 
 >[!NOTE]
 >
->Il modello di sito non deve essere confuso con [&#x200B; modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md) I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
+>Il modello di sito non deve essere confuso con [ modelli di pagina.](/help/sites-cloud/authoring/page-editor/templates.md) I modelli di sito definiscono la struttura complessiva di un sito. Un modello di pagina definisce la struttura e il contenuto iniziale di una singola pagina.
 
-### Modelli di sito forniti da Adobe {#adobe-templates}
+### Modelli di siti forniti da Adobe {#adobe-templates}
 
 {{adobe-templates}}
 

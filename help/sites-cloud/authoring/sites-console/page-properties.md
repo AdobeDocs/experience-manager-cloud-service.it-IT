@@ -1,14 +1,15 @@
 ---
 title: Proprietà pagina
 description: Scopri le diverse proprietà di una pagina, come controllano il comportamento della pagina e come viene gestita.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2144'
 ht-degree: 33%
 
 ---
@@ -175,7 +176,7 @@ Questa proprietà consente di immettere un URL personalizzato per questa pagina,
 * **URL canonico** - Utilizzato per sovrascrivere l&#39;URL canonico della pagina
    * Se lasciato vuoto, l’URL della pagina corrisponde al suo URL canonico.
 
-* **Tag robot** - Utilizzare il menu a discesa per selezionare i tag robot per controllare il comportamento dei crawler dei motori di ricerca
+* **Tag robot**: utilizza il menu a discesa per selezionare i tag robot per controllare il comportamento dei crawler di motori di ricerca
    * Alcune opzioni sono in conflitto tra loro, nel qual caso l’opzione più permissiva ha la precedenza.
 
 * **Genera mappa del sito** - Se selezionata, viene generato un `sitemap.xml` per questa pagina e i relativi discendenti.
@@ -259,7 +260,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
 ## Anteprima {#preview}
 
-Quando un ambiente di anteprima [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
+Quando un ambiente di anteprima [](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
 
 * **URL anteprima** - URL utilizzato per accedere al contenuto nell&#39;ambiente di anteprima
 

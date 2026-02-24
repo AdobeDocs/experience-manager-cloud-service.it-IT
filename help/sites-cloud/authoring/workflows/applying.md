@@ -1,14 +1,15 @@
 ---
 title: Applicazione dei flussi di lavoro alle pagine
 description: Durante l’authoring, puoi richiamare i flussi di lavoro per agire sulle pagine; è anche possibile applicare più di un flusso di lavoro.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 83%
+source-wordcount: '660'
+ht-degree: 82%
 
 ---
 

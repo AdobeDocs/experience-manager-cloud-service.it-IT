@@ -1,13 +1,14 @@
 ---
 title: Gestione dei tipi di pubblico
 description: La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire segmenti per ContextHub
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '891'
 ht-degree: 86%
 
 ---
@@ -23,7 +24,7 @@ Un tipo di pubblico, denominato *segmento* in ContextHub, è una classe di visi
 
 Nella console Pubblico, i tipi di pubblico sono organizzati per marchio.
 
-I tipi di pubblico sono disponibili nella modalità Impostazione destinazione per [creare contenuti con destinazione](/help/sites-cloud/authoring/personalization/targeted-content.md), dove puoi anche creare dei tipi di pubblico (ma devi usare la console Pubblico per creare i tipi di pubblico per Adobe Target). I tipi di pubblico creati in modalità Targeting vengono visualizzati nella console Pubblico.
+I tipi di pubblico sono disponibili nella modalità Targeting per [creare contenuti per specifici target](/help/sites-cloud/authoring/personalization/targeted-content.md), in cui puoi anche creare dei tipi di pubblico (ma devi usare la console Pubblico per creare i tipi di pubblico per Adobe Target). I tipi di pubblico creati in modalità Targeting vengono visualizzati nella console Pubblico.
 
 I tipi di pubblico vengono visualizzati con un’etichetta che descrive il tipo di pubblico definito:
 
@@ -59,7 +60,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se non vedi le voci **Crea pubblico Target** nel menu **Crea**, non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare audience è necessario disporre di autorizzazioni di scrittura in `/etc/segmentation`. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
+>Se non vedi le voci **Crea pubblico Target** nel menu **Crea**, non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare un pubblico è necessario disporre di autorizzazioni di scrittura in `/etc/segmentation`. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -73,7 +74,7 @@ Per creare un pubblico di Adobe Target:
 
 1. Nella finestra di dialogo **Configurazione Adobe Target** selezionare la configurazione di destinazione e quindi **OK**.
 1. Nell&#39;area Regola n. 1 selezionare il tipo di attributo e immettere le informazioni relative agli attributi nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
-1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
+1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore booleano E, il che significa che il pubblico deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Seleziona **Avanti**.
 1. Immetti un nome per il pubblico e seleziona **Salva**.
 1. Seleziona **Salva**. Il pubblico è elencato nell’elenco Pubblico.
