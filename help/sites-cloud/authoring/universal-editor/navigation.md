@@ -79,7 +79,7 @@ La barra di navigazione superiore di Experience Platform è sempre presente nell
 
 ![Intestazione di Experience Cloud](assets/experience-cloud-header.png)
 
-Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Per informazioni dettagliate sulla barra di navigazione superiore di Experience Platform, consulta la [guida dell&#39;interfaccia utente di Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
