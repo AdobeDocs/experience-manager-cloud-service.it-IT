@@ -104,7 +104,7 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 La console **Stato relazione** dispone di due schede che forniscono una serie di funzionalità.
 
 * [Stato di relazione](#relationship-status-tab)
-* [Live Copy ](#live-copy-tab)
+* [Live Copy &#x200B;](#live-copy-tab)
 
 ### Stato di relazione {#relationship-status-tab}
 
