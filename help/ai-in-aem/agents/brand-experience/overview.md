@@ -3,13 +3,13 @@ title: Brand Experience Agent
 description: Scopri in che modo Brand Experience Agent elimina gli attriti derivanti dall’evoluzione delle esperienze digitali, assorbendo il pesante lavoro operativo alla base degli aggiornamenti, della creazione di comunicazioni e della risoluzione dei problemi, consentendo ai team di apportare modifiche più rapidamente e con maggiore sicurezza per l’attuale era dell’intelligenza artificiale.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 722be0dda9eebe7337eee6b01a428e788fd5a0a7
+exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
+source-git-commit: 4ad099edc7d580148a401f9a61c9536c1cb88346
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
-
 
 # Brand Experience Agent {#brand-experience-agent}
 
@@ -60,7 +60,5 @@ L&#39;agente è in grado di lavorare con altre competenze dell&#39;agente, ad es
 
 ## Attivazione {#activation}
 
-Per attivare e accedere a Brand Experience Agent è necessario contattare Adobe:
+Puoi esplorare gli agenti AEM tramite [Playground](https://www.aem.live/developer/aem-playground) oppure connetterti con il tuo CSM o TAM per discutere dell&#39;accesso tramite lo SKU agente.
 
-* Invio di e-mail a `experience-production-agent@adobe.com`
-* Oppure rivolgiti al team del tuo account

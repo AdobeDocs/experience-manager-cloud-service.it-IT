@@ -4,9 +4,9 @@ description: Scopri il processo di creazione dei moduli di Brand Experience Agen
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -54,15 +54,9 @@ Dopo aver creato la struttura del modulo iniziale tramite l’Assistente IA, puo
 
 Per ulteriori informazioni, consulta la [documentazione di Forms Experience Builder.](/help/forms/experience-builder/product-overview.md)
 
-
 ## Attivazione {#activation}
 
-Per abilitare il processo di creazione del modulo per la tua organizzazione, l’attivazione deve essere avviata tramite Adobe. Inizia il processo contattando tramite:
-
-* E-mail: `experience-production-agent@adobe.com`
-* Oppure, contatta il team del tuo account Adobe.
-
-Quando ti rivolgi a, assicurati di fornire il tuo ID organizzazione AEM as a Cloud Service.
+Puoi esplorare gli agenti AEM tramite [Playground](https://www.aem.live/developer/aem-playground) oppure connetterti con il tuo CSM o TAM per discutere dell&#39;accesso tramite lo SKU agente.
 
 <!-- 
 #### Import and convert {#import-and-convert}

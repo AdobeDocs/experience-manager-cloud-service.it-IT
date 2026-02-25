@@ -4,9 +4,9 @@ description: Scopri cos’è il processo di aggiornamento dei contenuti di Brand
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Il processo di aggiornamento dei contenuti di [Brand Experience Agent](/help/ai-
 
 Il processo di aggiornamento del contenuto aggiorna il contenuto esistente, inclusi frammenti di contenuto, pagine, moduli e risorse. Il processo può eseguire azioni quali l’aggiornamento, la rimozione, la sostituzione o l’aggiunta di elementi di contenuto per mantenere le esperienze accurate e correnti. Gli input possono essere descrizioni in linguaggio naturale e, se utilizzati con Jira PDF e screenshot, possono fornire anche input.
 
-Il processo di aggiornamento dei contenuti trasforma i dettagli forniti, tramite linguaggio naturale o visualizzazioni, in aggiornamenti dei contenuti sulla pagina. Fornisci l’URL di una pagina da aggiornare, insieme ai dettagli su cosa è necessario aggiornare e all’abilità dell’agente che completa l’attività.
+Il processo di aggiornamento dei contenuti trasforma i dettagli forniti, tramite linguaggio naturale o visualizzazioni, in aggiornamenti dei contenuti sulla pagina. Fornisci l’URL di una pagina da aggiornare, insieme ai dettagli su cosa è necessario aggiornare e all’abilità dell’agente che completa l’attività. Se utilizzato con Adobe Experience Manager (AEM) as a Cloud Service, il processo crea un nuovo [lancio](/help/sites-cloud/authoring/launches/overview.md) che consente di rivedere gli aggiornamenti prima di applicare. Se utilizzato con la creazione di documenti, il processo crea una nuova [versione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Funzionalità {#capabilities}
 
@@ -37,21 +37,40 @@ Apri l&#39;Assistente IA da [`experience.adobe.com`,](https://experience.adobe.c
 
 ![Processo di aggiornamento contenuto](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
-### Prompt di esempio {#sample-prompts}
+### Configurazione dell’URL di pubblicazione {#configuring-the-publish-url}
 
-Per avviare gli aggiornamenti dei contenuti è possibile inviare una vasta gamma di prompt in linguaggio naturale. È inoltre necessario specificare l&#39;URL pubblico della pagina da aggiornare. Ad esempio:
+Per utilizzare un URL di pubblicazione (con interfaccia pubblica) è necessario effettuare una configurazione una tantum:
 
-* Modificare la pagina seguente `https://www.your-url.com/sale` Aggiornare l&#39;intestazione principale hero a &quot;Black Friday Mega Sale - Fino al 70% Off&quot;, Modificare il timer di conto alla rovescia per mostrare &quot;Termina in 48 ore&quot;, Rimuovere &quot;Registrarsi per gli aggiornamenti&quot;, Cambiare tutti i pulsanti &quot;Shop Now&quot; in &quot;Afferrare l&#39;offerta&quot;&quot;
+* Prerequisiti:
 
-* `https://www.your-url.com/laptops/your-laptop-model` Aggiorna la copia del banner in &quot;Salva solo 300 USD oggi&quot;, aggiorna i prezzi da 1.299 USD a 999 USD, rimuovi banner opzione di finanziamento
+   * Per effettuare la configurazione, l’utente deve disporre dei diritti di amministratore di sistema o di amministratore di prodotto.
 
-* `https://www.your-url.com/your-sneaker` Aggiornare lo stato delle scorte da &quot;Magazzino basso&quot; a &quot;Torna in magazzino - Quantità limitate&quot;, Modificare il selettore delle dimensioni per evidenziare le dimensioni disponibili in verde, Rimuovere il badge &quot;Disponibile a breve&quot;
+* Configurazione:
 
-* `https://www.your-url.com/your-sneaker` Aggiorna le immagini del prodotto per visualizzare nuove colorway
+   1. Richiama l’abilità Aggiornamento contenuto richiedendo un aggiornamento del contenuto per l’URL.
+   1. L’assistente ti guiderà attraverso la configurazione, facendoti una serie di domande.
+   1. Una volta completato, l’URL di pubblicazione viene configurato e può essere utilizzato.
+
+Ad esempio:
+
+![Abilità aggiornamento contenuti - configura URL di pubblicazione](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+
+### Prompt {#prompts}
+
+Per avviare gli aggiornamenti dei contenuti è possibile inviare una vasta gamma di prompt in linguaggio naturale. È necessario specificare l’URL pubblico (di pubblicazione) o l’URL dell’ambiente di authoring della pagina da aggiornare. Alcuni, ma non tutti, i verbi supportati; sostituisci, aggiorna, rimuovi, modifica, revisionato, modifica, regola, elimina.
 
 >[!NOTE]
 >
 >I caricamenti di file possono essere utilizzati quando si interagisce utilizzando [Jira](#jira), ma non sono supportati con l&#39;Assistente IA.
+
+### Prompt di esempio {#sample-prompts}
+
+I prompt di esempio includono:
+
+* il `<your-publish-URL>` aggiornamento &quot;Il tuo caffè perfetto è tra quattro domande&quot; a &quot;Il tuo caffè, a modo tuo!&quot;
+* il `<your-author-env-URL>` sostituire l&#39;immagine da &quot;holdingcup.png&quot; a &quot;stairhead.png&quot;
+* il `<your-publish-URL>` cambia il pulsante &quot;Passa al quiz&quot; in una versione più coinvolgente&quot;
+* il `<your-author-env-URL>` rimuovere la sezione &quot;Premi non rivendicati è un Regalo mancato!&quot;
 
 ## Jira {#jira}
 
@@ -79,17 +98,11 @@ Crea un ticket Jira (di qualsiasi tipo). Nel campo **Descrizione** del ticket so
 
 ### Richiama il processo dal ticket {#invoke-the-job-from-your-ticket}
 
-Per utilizzare il processo, aggiungi un commento al ticket. Nel commento indicare il processo con il simbolo `@`, insieme al comando che deve essere eseguito; ad esempio:
+Per utilizzare il processo, aggiungi un commento al ticket. Nel commento indicare il processo con il simbolo `@`, insieme alle istruzioni.
 
-* `@aemagent@adobe.com process`
+Ad esempio:
 
-Attualmente, il processo comprende i comandi:
-
-* `process` - elabora la richiesta
-* `cancel` - annulla una richiesta di elaborazione
-* `retry` - rielaborazione di una richiesta
-* `feedback` - Applica feedback a una generazione precedente
-* `reprocess` - rielabora la richiesta originale
+* `@aemagent@adobe.com process this ticket`
 
 ### Interazione del processo {#how-the-agent-interacts}
 
@@ -109,34 +122,7 @@ Nel caso di un comando `process` per attivare gli aggiornamenti, le risposte pot
 
 ## Attivazione {#activation}
 
-Per attivare e accedere al processo di creazione delle comunicazioni è necessario contattare Adobe. Per iniziare puoi:
-
-* Contatta `experience-production-agent@adobe.com`
-* Oppure rivolgiti al team del tuo account
-
-Per velocizzare il processo, è utile fornire le seguenti informazioni:
-
-* Per AEM as a Cloud Service, devi fornire:
-   * ID organizzazione
-   * `product_id`
-   * `profile_id`
-
-   * Questi valori si trovano nei seguenti passaggi:
-      1. L&#39;amministratore deve visitare [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)
-      1. Seleziona **Adobe Experience Manager as a Cloud Service**
-      1. Seleziona l’istanza di AEM appropriata
-      1. Seleziona il profilo che consente le operazioni di lettura e scrittura per il contenuto in questione
-      1. Acquisisci l’URL del browser
-      1. Estrarre `product_id` e `profile_id` dall&#39;URL.
-Ad esempio `https://adminconsole.adobe.com/products/profiles/users`
-
-* Authoring di documenti Edge Delivery
-   * Fornisci al tuo team Adobe le seguenti informazioni:
-      * Domini rilevanti
-      * Informazioni pertinenti su Github:
-         * Organizzazione
-         * Repo
-         * Ramo
+Puoi esplorare gli agenti AEM tramite [Playground](https://www.aem.live/developer/aem-playground) oppure connetterti con il tuo CSM o TAM per discutere dell&#39;accesso tramite lo SKU agente.
 
 ## Limitazioni {#limitations}
 
