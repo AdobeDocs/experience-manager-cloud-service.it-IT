@@ -4,12 +4,13 @@ description: Scopri gli agenti disponibili in AEM per accelerare la creazione de
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
+source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
+
 
 # Panoramica degli agenti in AEM {#overview-of-agents-in-aem}
 
@@ -22,32 +23,43 @@ Questi agenti sono disponibili in Adobe Experience Manager (AEM) as a Cloud Serv
 >* Al momento non sono disponibili per AEM 6.5 né per AEM 6.5 LTS.
 >* Non sono disponibili né su AEM On-Prem né su Managed Services.
 
-## Experience Production Agent {#experience-production-agent}
+>[!IMPORTANT]
+>
+>Per utilizzare gli agenti necessari per l&#39;iscrizione al programma Explorer. Ulteriori informazioni sul programma Esplora agenti di AEM [sono disponibili qui.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
-[Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) automatizza le attività di grandi volumi e a sforzo elevato. Team autonomi e processi manuali di settimane in flussi di lavoro rapidi e assistiti dall’intelligenza artificiale che mantengono ogni esperienza aggiornata e coerente, aiutando l’azienda a raggiungere i propri obiettivi.
+## Brand Experience Agent {#brand-experience-agent}
 
-## Agente di ottimizzazione del contenuto {#content-optimization-agent}
+[Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatizza i processi che richiedono molto lavoro e un elevato volume di lavoro.
 
-L&#39;[agente di ottimizzazione dei contenuti](/help/ai-in-aem/agents/content-optimization/overview.md) trasforma il modo in cui gli utenti perfezionano e adattano le risorse applicando le istruzioni in linguaggio naturale per creare varianti compatibili con i canali. L’agente interpreta le intenzioni dell’utente ed esegue automaticamente attività di modifica complesse per eseguire attività quali la generazione di nuove rappresentazioni, la regolazione delle proprietà visive, la modifica degli sfondi o la preparazione delle risorse per canali digitali specifici.
+* **Aggiornamento contenuto** - Aggiornamento di una pagina o di un frammento contenuto
+* **Creazione modulo** - Crea un modulo o importa un modulo
+* **Risoluzione dei problemi di sviluppo** - Consente ai ruoli tecnici (sviluppatori e amministratori) di semplificare la creazione, il debug, la distribuzione e l&#39;ottimizzazione del codice.
 
-## Discovery Agent {#discovery-agent}
+Brand Experience Agent consente ai team di trasformare processi manuali, della durata di settimane, in flussi di lavoro rapidi e basati sull’intelligenza artificiale, in grado di mantenere aggiornata e coerente ogni esperienza, aiutando l’azienda a raggiungere i propri obiettivi.
 
-[Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) fornisce contenuti AEM per un&#39;esperienza di individuazione semplificata e senza clic. Esegue una ricerca intelligente tra Assets, Frammenti di contenuto e Forms adattivo per fornire materiali rilevanti come immagini, video, documenti PDF, articoli e modelli di modulo.
+## Agente di Content Advisor {#content-advisor-agent}
 
-## Agente di sviluppo {#development-agent}
+L&#39;agente di [Content Advisor](/help/ai-in-aem/agents/content-advisor/overview.md) trasforma il modo in cui gli utenti rilevano, perfezionano e adattano le risorse applicando istruzioni in linguaggio naturale per creare varianti compatibili con il canale, semplificando i seguenti processi.
 
-[L&#39;agente di sviluppo](/help/ai-in-aem/agents/development/overview.md) abilita i ruoli tecnici (sviluppatori e amministratori) semplificando la creazione, il debug, la distribuzione e l&#39;ottimizzazione del codice.
+* **Individuazione** - Distribuisci contenuti AEM per un&#39;esperienza di individuazione semplificata e senza clic. Cerca in modo intelligente tra Assets, Frammenti di contenuto e Forms adattivo per distribuire materiali rilevanti come immagini, video, documenti PDF, articoli e modelli di modulo.
+* **Ottimizzazione dei contenuti** - Trasforma il modo in cui gli utenti perfezionano e adattano le risorse applicando le istruzioni in linguaggio naturale per creare varianti pronte per il canale. Interpreta le intenzioni dell’utente ed esegue automaticamente attività di modifica complesse per eseguire attività quali la generazione di nuove rappresentazioni, la regolazione delle proprietà visive, la modifica degli sfondi o la preparazione delle risorse per canali digitali specifici.
+
+L’agente interpreta le intenzioni dell’utente ed esegue automaticamente attività di modifica complesse, tra cui la generazione di nuove rappresentazioni, la regolazione delle proprietà visive, la modifica degli sfondi o la preparazione delle risorse per canali digitali specifici.
+
+## Agente di modernizzazione esperienza {#site-modernization}
+
+L&#39;[agente di modernizzazione dell&#39;esperienza](/help/ai-in-aem/agents/modernization/overview.md) sblocca l&#39;intero valore di Edge Delivery Services (inclusa la creazione di AEM) rendendo il processo di migrazione del sito Web e di evoluzione continua veloce e senza attriti.
 
 ## Agente di governance {#governance-agent}
 
-[L&#39;agente di governance](/help/ai-in-aem/agents/governance/overview.md) protegge l&#39;integrità del brand e la conformità in AEM. Imponendo regole di sicurezza, normative e marchio, l&#39;agente garantisce che ogni interazione e attivazione rispetti gli standard stabiliti.
+[L&#39;agente di governance](/help/ai-in-aem/agents/governance/overview.md) protegge l&#39;integrità del brand e la conformità in AEM. Applicando le politiche di sicurezza, normative e marchio, l&#39;agente esegue i processi necessari per garantire che ogni interazione e attivazione rispetti gli standard stabiliti.
 
 ## Limitazioni {#limitations}
 
-Attualmente le limitazioni in vigore sono:
+Tieni presente le seguenti limitazioni generali degli agenti AEM:
 
 * Gli agenti sono disponibili solo per AEM as a Cloud Service e Edge Delivery Services.
-   * Al momento non sono disponibili per AEM 6.5 né per AEM 6.5 LTS.
-   * Al momento non sono disponibili né su AEM On-Prem né su Managed Services.
+* Al momento non sono disponibili per AEM 6.5 né per AEM 6.5 LTS.
+* Al momento non sono disponibili né su AEM On-Prem né su Managed Services.
 
 Consulta le singole pagine per informazioni sulle limitazioni specifiche per l’agente.
