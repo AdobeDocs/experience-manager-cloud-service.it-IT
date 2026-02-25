@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
+source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 80%
+source-wordcount: '3912'
+ht-degree: 79%
 
 ---
 
@@ -160,6 +160,12 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>2/26/2026</td>
   </tr>
   <tr>
+    <td>org.slf4j.event</td>
+    <td>AEM as a Cloud Service non supporta questa API slf4j interna. <a href="#org.slf4j">Consulta le note sulla rimozione di seguito.</a></td>
+    <td>11/04/2022</td>
+    <td>2/26/2026</td>
+  </tr>
+  <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 ha raggiunto la fine del ciclo di vita nel 2015 e non è più supportato. <a href="#org.apache.log4j">Consulta le note sulla rimozione di seguito.</a></td>
     <td>27/01/2022</td>
@@ -170,22 +176,10 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>15/05/2023</td>
     <td>2/26/2026</td>
   </tr>
-  <tr>
-    <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service non supporta questa API slf4j interna. <a href="#org.slf4j">Consulta le note sulla rimozione di seguito.</a></td>
-    <td>11/04/2022</td>
-    <td>2/26/2026</td>
-  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>L’estrazione dei metadati da immagini e video dovrebbe essere eseguita tramite Asset Compute nel Cloud Service oppure tramite Apache POI o Apache Tika.</td>
     <td>17/09/2024</td>
-    <td>2/26/2026</td>
-  </tr>
-  <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td>Questa API è solo per uso interno.</td>
-    <td>23/09/2024</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
@@ -200,10 +194,17 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>30/04/2021</td>
     <td>2/26/2026</td>
   </tr>
-<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
+    <td>Questa API è solo per uso interno.</td>
+    <td>23/09/2024</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>L’utilizzo di questa API non è più supportato in AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>2/26/2026</td>
+    <td>Da definire</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -247,9 +248,39 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>Da definire</td>
   </tr>
   <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>com.adobe.granite.xss</td>
     <td>Utilizza invece org.apache.sling.xss.</td>
     <td>12/12/2023</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
+    <td>API obsoleta.</td>
+    <td>07/10/2024</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.mailer.commons</td>
+    <td>Questa API è obsoleta in quanto dipende da commons-lang (che è obsoleto dal 2021).</td>
+    <td>11/30/2025</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.httpcache.api</td>
+    <td>Questa API non è più supportata.</td>
+    <td>01/01/2026</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.webdav.client.methods</td>
+    <td>L’utilizzo di questa API non è più supportato in AEM as a Cloud Service.</td>
+    <td>2/13/2026</td>
+    <td>Da definire</td>
+  </tr>
+  <tr>
+    <td>org.osgi.service.http</td>
+    <td>L’API HTTP del servizio OSGi è obsoleta. Al suo posto, utilizza la lavagna OSGi Servlet.</td>
+    <td>5/1/2024</td>
     <td>Da definire</td>
   </tr>
   </tbody>
@@ -343,7 +374,7 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
 Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
