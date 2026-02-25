@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2ca425f9a142432a5d3bcce8ce522c97e4c2cf2d
+source-git-commit: e9a347e229deb0af203503fe6a005f5b0a244484
 workflow-type: tm+mt
-source-wordcount: '3721'
-ht-degree: 2%
+source-wordcount: '3139'
+ht-degree: 5%
 
 ---
 
@@ -22,13 +22,13 @@ Vedi anche [Configurare un account alias società Dynamic Media](/help/assets/dy
 
 >[!IMPORTANT]
 >
->**Dynamic Media (Scene7) non supportato negli ambienti di sicurezza avanzata**
+>**Dynamic Media (Scene7) non è supportato negli ambienti di sicurezza avanzata**
 >
 >Dynamic Media (Scene7) su AEM as a Cloud Service non è compatibile con HIPAA e non può essere utilizzato in ambienti AEM in cui è abilitata la sicurezza avanzata.
 >
->A partire dalla versione di aprile 2025 di AEM as a Cloud Service, una restrizione tecnica impedisce la configurazione di Dynamic Media (Scene7) in ambienti con sicurezza avanzata. Di conseguenza, la scheda **Configurazione elemento multimediale dinamico** in **Strumenti** > **Servizi cloud** non è più visibile in questi ambienti.
+>A partire dalla versione di AEM as a Cloud Service di aprile 2025, una restrizione tecnica impedisce la configurazione di Dynamic Media (Scene7) in ambienti con sicurezza avanzata. Di conseguenza, in questi ambienti la scheda **Configurazione Dynamic Media** in **Strumenti** > **Servizi cloud** non è più visibile.
 >
->Inoltre, i clienti che utilizzano AEM 6.5 devono essere consapevoli che lo stack Dynamic Media (Scene7) non è compatibile con HIPAA.
+>Inoltre, la clientela che utilizza AEM 6.5 deve essere consapevole che lo stack Dynamic Media (Scene7) non è compatibile con HIPAA.
 
 ## Diagramma dell’architettura di Dynamic Media {#architecture-diagram-of-dynamic-media}
 
@@ -75,7 +75,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Creare una configurazione Dynamic Media in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. In Experience Manager as a Cloud Service, seleziona il logo Experience Manager as a Cloud Service per accedere alla console di navigazione globale.
 1. Sulla sinistra della console, seleziona l&#39;icona Strumenti, quindi vai a **[!UICONTROL Cloud Services > Configurazione elemento multimediale dinamico]**.
@@ -93,7 +93,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Se necessario, è possibile controllare l&#39;ortografia di una password digitata o ridigitata selezionando l&#39;icona dell&#39;occhio della password per visualizzare la password. Seleziona nuovamente l’icona per nascondere la password.
 
-1. Nel campo **[!UICONTROL Ripeti password]**, digita nuovamente la nuova password, quindi seleziona **[!UICONTROL Fine]**.
+1. Nel campo **[!UICONTROL `Repeat Password`]**, ridigitare la nuova password, quindi selezionare **[!UICONTROL Fine]**.
 
    La nuova password viene salvata quando si seleziona **[!UICONTROL Salva]** nell&#39;angolo superiore destro della pagina **[!UICONTROL Crea configurazione Dynamic Media]**.
 
@@ -107,9 +107,9 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | Azienda | Nome dell’account Dynamic Media.<br>**Importante**: in un&#39;istanza di Experience Manager è supportata una sola configurazione Dynamic Media in Cloud Services; non aggiungere più di una configurazione. Adobe *non* supporta o consiglia di configurare più configurazioni Dynamic Media in una singola istanza Experience Manager.<!-- CQDOC-19579 and CQDOC-19612 --><br>Vedere anche [Configurare un account alias società Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Percorso cartella principale della società | Percorso della cartella principale della società. |
-   | Pubblicazione di Assets | Puoi scegliere tra le tre opzioni seguenti:<br>**[!UICONTROL Immediatamente &#x200B;]**- Quando le risorse vengono caricate, il sistema le acquisisce e fornisce immediatamente l&#39;URL/Incorpora. Non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.<br>**[!UICONTROL Al momento dell&#39;attivazione]** - Prima di fornire un URL o un collegamento di incorporamento, devi pubblicare esplicitamente la risorsa.<br>**[!UICONTROL Pubblicazione selettiva &#x200B;]**- Assets viene pubblicato automaticamente solo per l&#39;anteprima protetta. Possono anche essere pubblicati in modo esplicito in Experience Manager as a Cloud Service senza dover essere pubblicati in DMS7 per la distribuzione nel dominio pubblico. In futuro, questa opzione pubblicherà le risorse in Experience Manager as a Cloud Service e le pubblicherà in Dynamic Media, escludendosi a vicenda. In altre parole, puoi pubblicare le risorse in DMS7 per utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche. In alternativa, puoi pubblicare le risorse esclusivamente in Experience Manager as a Cloud Service per la visualizzazione in anteprima. Le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico. |
+   | Pubblicazione di Assets | Puoi scegliere tra le tre opzioni seguenti:<br>**[!UICONTROL Immediatamente ]**- Quando le risorse vengono caricate, il sistema le acquisisce e fornisce immediatamente l&#39;URL/Incorpora. Non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.<br>**[!UICONTROL Al momento dell&#39;attivazione]** - Prima di fornire un URL o un collegamento di incorporamento, devi pubblicare esplicitamente la risorsa.<br>**[!UICONTROL Pubblicazione selettiva ]**- Assets viene pubblicato automaticamente solo per l&#39;anteprima protetta. Possono anche essere pubblicati in modo esplicito in Experience Manager as a Cloud Service senza dover essere pubblicati in DMS7 per la distribuzione nel dominio pubblico. In futuro, questa opzione pubblicherà le risorse in Experience Manager as a Cloud Service e le pubblicherà in Dynamic Media, escludendosi a vicenda. In altre parole, puoi pubblicare le risorse in DMS7 per utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche. In alternativa, puoi pubblicare le risorse esclusivamente in Experience Manager as a Cloud Service per la visualizzazione in anteprima. Le stesse risorse non vengono pubblicate in DMS7 per la distribuzione nel dominio pubblico. |
    | Server di anteprima protetto | Consente di specificare il percorso URL del server di anteprima delle rappresentazioni protette. In altre parole, dopo la generazione delle rappresentazioni, AEM as a Cloud Service può accedere in modo sicuro e visualizzare in anteprima le rappresentazioni remote di Dynamic Media (nessun binario viene rimandato all’istanza di Experience Manager as a Cloud Service).<br>A meno che non si disponga di una disposizione speciale per utilizzare il server della propria società o un server speciale, Adobe consiglia di lasciare questa impostazione come specificato. |
-   | Sincronizza tutti i contenuti | Selezionata per impostazione predefinita. Deseleziona questa opzione se desideri includere o escludere selettivamente le risorse dalla sincronizzazione con Dynamic Media. Deselezionando questa opzione è possibile scegliere tra le due modalità di sincronizzazione di Dynamic Media seguenti:<br>**[!UICONTROL Modalità di sincronizzazione di Dynamic Media]**<br>**[!UICONTROL Attiva per impostazione predefinita &#x200B;]**- La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.<br>Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. _Ricorda: queste tre opzioni non sono disponibili se hai selezionato **Sincronizza tutto il contenuto**&#x200B;in precedenza._ Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Ereditato &#x200B;]**- Nessun valore di sincronizzazione esplicito nella cartella. Al contrario, la cartella eredita il valore di sincronizzazione da una delle sue cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.<br>**[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.<br>**[!UICONTROL Disattivato per le sottocartelle &#x200B;]**- Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media. |
+   | Sincronizza tutti i contenuti | Selezionata per impostazione predefinita. Deseleziona questa opzione se desideri includere o escludere selettivamente le risorse dalla sincronizzazione con Dynamic Media. Deselezionando questa opzione è possibile scegliere tra le due modalità di sincronizzazione di Dynamic Media seguenti:<br>**[!UICONTROL Modalità di sincronizzazione di Dynamic Media]**<br>**[!UICONTROL Attiva per impostazione predefinita ]**- La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.<br>Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. _Ricorda: queste tre opzioni non sono disponibili se hai selezionato **Sincronizza tutto il contenuto**in precedenza._ Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Ereditato ]**- Nessun valore di sincronizzazione esplicito nella cartella. Al contrario, la cartella eredita il valore di sincronizzazione da una delle sue cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.<br>**[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.<br>**[!UICONTROL Disattivato per le sottocartelle ]**- Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media. |
 
    >[!NOTE]
    >
@@ -130,10 +130,10 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Questa notifica della casella in entrata ti informa se la configurazione è stata eseguita correttamente o meno.
    > Per ulteriori informazioni, vedere [Risoluzione dei problemi relativi a una nuova configurazione di Dynamic Media](#troubleshoot-dm-config) e [Posta in arrivo](/help/sites-cloud/authoring/inbox.md).
 
-1. Per visualizzare in anteprima il contenuto Dynamic Media in modo sicuro prima che venga pubblicato, Experience Manager as a Cloud Service utilizza la convalida basata su token e quindi Experience Manager Author visualizza in anteprima il contenuto Dynamic Media per impostazione predefinita. Tuttavia, puoi *inserire nell&#39;elenco Consentiti* altri IP per consentire agli utenti di accedere in modo sicuro all&#39;anteprima del contenuto. Per impostare questa azione in Experience Manager as a Cloud Service, consulta la [Configurazione della pubblicazione Dynamic Media per il server immagini - scheda Sicurezza](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Per visualizzare in anteprima il contenuto Dynamic Media in modo sicuro prima che venga pubblicato, Experience Manager as a Cloud Service utilizza la convalida basata su token e quindi Experience Manager Author visualizza in anteprima il contenuto Dynamic Media per impostazione predefinita. Tuttavia, puoi *inserire nell&#39;elenco Consentiti* altri IP per consentire agli utenti di accedere in modo sicuro all&#39;anteprima del contenuto. Per configurare questa azione in Experience Manager as a Cloud Service, vedere l&#39;argomento [Configurare l&#39;installazione della pubblicazione Dynamic Media per il server immagini - Scheda Sicurezza](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -192,7 +192,7 @@ La password modificata viene salvata quando si seleziona **[!UICONTROL Salva]** 
 
      Il campo **[!UICONTROL Password corrente]** è stato precompilato intenzionalmente e nascosto dall&#39;interazione.
 
-   * Nel campo **[!UICONTROL Ripeti password]**, digita nuovamente la nuova password, quindi seleziona **[!UICONTROL Fine]**.
+   * Nel campo **[!UICONTROL `Repeat Password`]**, ridigitare la nuova password, quindi selezionare **[!UICONTROL Fine]**.
 
 1. Nell&#39;angolo superiore destro della pagina **[!UICONTROL Modifica configurazione Dynamic Media]**, seleziona **[!UICONTROL Salva]**, quindi seleziona **[!UICONTROL OK]**.
 
@@ -200,7 +200,7 @@ La password modificata viene salvata quando si seleziona **[!UICONTROL Salva]** 
 
 Per personalizzare ulteriormente la configurazione e la configurazione di Dynamic Media o ottimizzarne le prestazioni, puoi completare una o più delle seguenti _attività facoltative_:
 
-* [Abilitare le autorizzazioni ACL in Dynamic Media (facoltativo)](#optional-enable-acl)
+<!-- * [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl) -->
 * [Impostazione e configurazione delle impostazioni di Dynamic Media (facoltativo)](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -244,7 +244,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 Utilizza l’interfaccia utente di Dynamic Media Classic per modificare le impostazioni di Dynamic Media.
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 Le attività di configurazione e configurazione includono:
 
@@ -275,9 +275,9 @@ Consulta [Configurare i predefiniti immagine](/help/assets/dynamic-media/managin
 
 Per configurare le proprietà di colore predefinite per l&#39;abilitazione della correzione del colore durante la richiesta delle immagini:
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), quindi accedi al tuo account utilizzando le credenziali fornite durante il provisioning.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), quindi accedi al tuo account utilizzando le credenziali fornite durante il provisioning.
 1. Vai a **[!UICONTROL Configurazione > Impostazione applicazione]**.
-1. Espandi l’area **[!UICONTROL Publish Setup (Impostazione pubblicazione)]** e seleziona **[!UICONTROL Image Server]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
+1. Espandere l&#39;area **[!UICONTROL `Publish Setup`]** e selezionare **[!UICONTROL Server immagini]**. Per le istanze di pubblicazione, imposta **[!UICONTROL Contesto di pubblicazione]** su **[!UICONTROL Image Server]**.
 1. Scorri fino alla proprietà che devi modificare, ad esempio una proprietà nell&#39;area **[!UICONTROL Attributi gestione colore]**.
 È possibile impostare le seguenti proprietà di correzione del colore:
 
@@ -394,12 +394,12 @@ In Experience Manager Assets è possibile aggiungere tipi MIME personalizzati pe
 
 ### (Facoltativo) Ottimizzazione delle prestazioni di Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Per un funzionamento ottimale di Dynamic Media, Adobe consiglia di seguire i suggerimenti per l’ottimizzazione delle prestazioni e della scalabilità della sincronizzazione riportati di seguito.
+Per garantire un funzionamento ottimale di Dynamic Media, Adobe consiglia di seguire i suggerimenti di ottimizzazione delle prestazioni e della scalabilità della sincronizzazione riportati di seguito.
 
 * [Aggiorna i parametri predefiniti del processo per l&#39;elaborazione di diversi formati di file](#update-job-para).
-* [Aggiornare i thread di lavoro predefiniti della coda del flusso di lavoro di Granite (risorse video)](#update-granite-workflow-queue-worker-threads-video)
-* [Aggiorna i thread di lavoro predefiniti della coda del flusso di lavoro transitorio di Granite (immagini e risorse non video)](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Aggiorna il numero massimo di connessioni di caricamento al server Dynamic Media Classic (Scene7)](#update-max-s7-upload-connections).
+<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+* [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
 
 #### Aggiornare i parametri predefiniti del job per l&#39;elaborazione di diversi formati di file {#update-job-para}
 
@@ -423,85 +423,88 @@ Per aggiornare uno di questi parametri, vedere [Modifica dei tipi MIME per i for
 
 Vedi anche [Aggiunta di tipi MIME per formati non supportati](#adding-mime-types-for-unsupported-formats).
 
-#### Aggiornare i thread di lavoro predefiniti della coda del flusso di lavoro di Granite (risorse video) {#update-granite-workflow-queue-worker-threads-video}
+<!--
+#### Update the predefined Granite Workflow Queue (video assets) worker threads {#update-granite-workflow-queue-worker-threads-video}
 
-La coda del flusso di lavoro Granite viene utilizzata per flussi di lavoro non transitori. In Dynamic Media viene utilizzato per elaborare video con il flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]**.
+The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it is used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
 >[!NOTE]
 >
->Per completare questa attività, devi aver effettuato l’accesso ad Experience Manager as a Cloud Service in qualità di amministratore del prodotto.
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-Se non hai accesso a OSGi, consulta [Configurazione OSGi](/help/implementing/developing/components/overview.md#osgi-configuration).
+If you do not have access to OSGi, see [OSGi Configuration](/help/implementing/developing/components/overview.md#osgi-configuration).
 
-**Per aggiornare i thread di lavoro predefiniti della coda del flusso di lavoro di Granite (risorse video):**
+**To update the predefined Granite Workflow Queue (video assets) worker threads:**
 
-1. Passare a `https://<server>/system/console/configMgr` e cercare **Coda: coda flusso di lavoro Granite**.
+1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
 
    >[!NOTE]
    >
-   >È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
+   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
 
-1. Nel campo **[!UICONTROL Maximum Parallel Jobs]** (Numero massimo processi paralleli), modifica il numero impostando il valore desiderato.
+1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   Per impostazione predefinita, il numero massimo di processi paralleli dipende dal numero di core CPU disponibili. Ad esempio, in un server a 4 core, vengono assegnati due thread di lavoro. (Un valore compreso tra 0,0 e 1,0 è basato sul rapporto oppure qualsiasi numero maggiore di uno assegna il numero di thread di lavoro.)
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns two worker threads. (A value between 0.0 and 1.0 is ratio-based, or any numbers greater than one assigns the number of worker threads.)
 
-   Per la maggior parte dei casi d’uso è sufficiente l’impostazione predefinita 0.5.
+   For most use cases, the 0.5 default setting is sufficient.
 
-   ![Configurazione di una coda di elaborazione del processo](assets/chlimage_1-1.jpeg)
+   ![Configuration of a job processing queue](assets/chlimage_1-1.jpeg)
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Select **[!UICONTROL Save]**.
 
-#### Aggiorna i thread di lavoro predefiniti della coda del flusso di lavoro transitorio di Granite {#update-granite-transient-workflow-queue-worker-threads-images}
+#### Update the predefined Granite Transient Workflow Queue worker threads {#update-granite-transient-workflow-queue-worker-threads-images}
 
-La coda del flusso di lavoro di transito Granite è utilizzata per il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**. In Dynamic Media, viene utilizzato per l’acquisizione e l’elaborazione di risorse video e non.
+The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image and non-video asset ingestion and processing.
 
 >[!NOTE]
 >
->Per completare questa attività, devi aver effettuato l’accesso ad Experience Manager as a Cloud Service in qualità di amministratore del prodotto.
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-**Per aggiornare i thread di lavoro della coda del flusso di lavoro transitorio di Granite predefiniti:**
+**To update the predefined Granite Transient Workflow queue worker threads:**
 
-1. Passa alla **configurazione console Web Adobe Experience Manager** in `http://<host>:<port>/system/console/configMgr`
-1. Cerca **Coda: coda flusso di lavoro transitorio Granite**.
+1. Navigate to the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
+1. Search for **Queue: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >
-   >È necessaria una ricerca di testo invece di un URL diretto, perché il PID OSGi viene generato in modo dinamico.
+   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
 
-1. Nel campo **[!UICONTROL Maximum Parallel Jobs]** (Numero massimo processi paralleli), modifica il numero impostando il valore desiderato.
+1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   Puoi aumentare il numero massimo di **[!UICONTROL processi paralleli]** per supportare il caricamento di file in Dynamic Media con un carico adeguato. Il valore esatto dipende dalla capacità hardware. In alcuni scenari, ad esempio una migrazione iniziale o un caricamento in blocco una tantum, puoi utilizzare un valore elevato. Tuttavia, l’utilizzo di un valore elevato (ad esempio due volte il numero di core) può avere effetti negativi su altre attività simultanee. In questo modo, testa e regola il valore in base al tuo caso d’uso particolare.
+   You can increase **[!UICONTROL Maximum Parallel Jobs]** to support adequately heavy upload of files to Dynamic Media. The exact value depends on hardware capacity. In certain scenarios, such as an initial migration or a one-time bulk upload, you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) can have negative effects on other concurrent activities. As such, test and adjust the value based on your particular use case.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic.
 
-![chlimage_1](assets/chlimage_1.jpeg)
+   ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Select **[!UICONTROL Save]**.
+-->
+<!--
+#### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
-#### Aggiornare il numero massimo di connessioni di caricamento al server Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
-
-L’impostazione Dynamic Media Classic (Scene7) Upload Connection sincronizza le risorse Experience Manager con i server Dynamic Media Classic.
+The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
 
 >[!NOTE]
 >
->Per completare questa attività, devi aver effettuato l’accesso ad Experience Manager as a Cloud Service in qualità di amministratore del prodotto.
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-**Per aggiornare il numero massimo di connessioni di caricamento al server Dynamic Media Classic (Scene7):**
+**To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 
-1. Passa a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. Nel campo **[!UICONTROL Numero di connessioni]**, nel campo **[!UICONTROL Timeout processo attivo]** o in entrambi, modificare il numero come desiderato.
+1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. In the **[!UICONTROL Number of connections]** field, or the **[!UICONTROL Active job timeout]** field, or both, change the number as desired.
 
-   L&#39;impostazione **[!UICONTROL Numero di connessioni]** controlla il numero massimo di connessioni HTTP consentite per il caricamento da Experience Manager a Dynamic Media. In genere, il valore predefinito di dieci connessioni è sufficiente.
+   The **[!UICONTROL Number of connections]** setting controls the maximum number of HTTP connections allowed for Experience Manager to Dynamic Media upload. Typically, the predefined value of ten connections is sufficient.
 
-   L&#39;impostazione **[!UICONTROL Timeout processo attivo]** definisce il tempo di attesa del sistema per la pubblicazione delle risorse Dynamic Media caricate da parte del server di consegna. Per impostazione predefinita, questo valore è di 2100 secondi o 35 minuti.
+   The **[!UICONTROL Active job timeout]** setting defines how long the system waits for the delivery server to publish uploaded Dynamic Media assets. This value is 2100 seconds or 35 minutes by default.
 
-   Per la maggior parte dei casi d’uso è sufficiente impostare 2100.
+   For most use cases, the setting of 2100 is sufficient.
 
-   ![Servizio di caricamento Adobe Scene7](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Select **[!UICONTROL Save]**.
+-->
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
