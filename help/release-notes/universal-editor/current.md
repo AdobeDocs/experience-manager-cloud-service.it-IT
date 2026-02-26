@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.02.19 dell’editor universale
-description: Queste sono le note sulla versione 2026.02.19 dell’editor universale.
+title: Note sulla versione 2026.02.26 dell’editor universale
+description: Queste sono le note sulla versione 2026.02.26 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 28%
+source-wordcount: '221'
+ht-degree: 32%
 
 ---
 
 
-# Note sulla versione 2026.02.19 dell’editor universale {#release-notes}
+# Note sulla versione 2026.02.26 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione dell’Editor universale del 19 febbraio 2026.
+Queste sono le note sulla versione del 26 febbraio 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ Queste sono le note sulla versione dell’Editor universale del 19 febbraio 2026
 
 ## Novità {#what-is-new}
 
-* Sono stati apportati miglioramenti all’editor Rich Text.
-   * [È ora supportato nascondere gli elementi della barra degli strumenti nell&#39;editor Rich Text nel contesto](/help/implementing/universal-editor/configure-rte.md#common-action-options).
-   * [Il ritorno a capo del testo nelle tabelle con paragrafi](/help/implementing/universal-editor/configure-rte.md#table-actions) è ora supportato.
-   * [I tag di HTML non supportati](/help/implementing/universal-editor/configure-rte.md#unsupported-html) ora possono essere mantenuti dall&#39;editor Rich Text.
-   * La logica dell’editor Rich Text viene ora gestita da un file separato.
-   * È ora possibile creare [tabelle](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) e modificarle con l&#39;editor Rich Text.
-* Se non viene impostata alcuna etichetta, viene ora utilizzato il titolo del componente della definizione del componente.
-* `setEditorMode` è ora disponibile tramite estensioni.
+* Sono state aggiunte descrizioni a tutti i campi dello schema per consentire agli sviluppatori di generare file di definizione di modelli/filtri/componenti.
+* Gli aggiornamenti multicampo ai frammenti di contenuto sono ora supportati per le modifiche nel contesto.
+
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -43,7 +38,7 @@ Se ti interessa testare le prossime funzionalità elencate di seguito e condivid
 
 ## Altri miglioramenti {#other-improvements}
 
-* Gli endpoint dell’editor Rich Text vengono ora gestiti per l’editor locale.
-* La modifica dei campi nidificati non comporta più la sovrascrittura delle voci dei peer da tali strutture.
-* I campi obbligatori dell’Editor Rich Text non possono più essere salvati come vuoti.
-* La formattazione diretta non viene più applicata in modo errato quando si aggiungono collegamenti dopo la formattazione.
+* L&#39;editor non imposta più il contenuto su `{}` per impostazione predefinita prima che arrivi il contenuto, impedendo la perdita di dati in determinate situazioni.
+* La persistenza dei dati quando il campo è a fuoco è stata resa più robusta.
+* Le modifiche non vengono più perse in determinate situazioni quando si esegue la modifica nel pannello sinistro e quindi si seleziona un altro elemento nella finestra dell’editor.
+* È stato risolto un problema di persistenza relativo ai campi Editor Rich Text per i frammenti di contenuto quando si utilizzano gli endpoint OpenAPI.

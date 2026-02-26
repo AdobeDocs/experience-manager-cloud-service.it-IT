@@ -4,12 +4,13 @@ description: Queste sono le note sulla versione di anteprima di Universal Editor
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
+
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
@@ -25,12 +26,11 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 >
 >Il contenuto della versione effettiva e la data di rilascio sono soggetti a modifiche.
 
-## Prossimi miglioramenti {#other-improvements}
+## Prossime funzionalità {#upcoming-features}
 
-* L&#39;editor non imposta più il contenuto su `{}` per impostazione predefinita prima che arrivi il contenuto, impedendo la perdita di dati in determinate situazioni.
-* Le modifiche non vengono più perse quando si esegue la modifica nel pannello a sinistra e quindi si seleziona un altro elemento nella finestra dell’editor.
-* L&#39;importazione manuale dei file CSS non è più necessaria quando si utilizza `headless-canvas`.
-* Ai fini di CORS, gli endpoint corretti vengono utilizzati per stage, anteprima e produzione.
-* La descrizione è stata aggiunta a tutti i campi dello schema.
-* Gli aggiornamenti multicampo ai frammenti di contenuto sono ora supportati per le modifiche nel contesto.
-* La persistenza dei dati quando il campo è a fuoco è stata resa più robusta.
+* Nel menu di scelta rapida è ora disponibile un selettore di componenti.
+* È ora disponibile un selettore colore per l’editor Rich Text.
+
+## Prossimi miglioramenti {#upcoming-improvements}
+
+* Le opzioni di allineamento, direzione del testo e rientro ora sono [abilitate per impostazione predefinita nell&#39;editor Rich Text](/help/implementing/universal-editor/configure-rte.md), purché supportate dal backend.
