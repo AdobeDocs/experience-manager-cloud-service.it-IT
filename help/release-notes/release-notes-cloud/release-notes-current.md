@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 94207e0c93106cf2b0b9d4fdbbb22af05b8f5ed1
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 43%
+source-wordcount: '1917'
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479797/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -54,6 +54,10 @@ L’accesso anticipato alle funzioni sviluppate da Adobe consente a clienti e pa
 
 **Programmi beta correnti**
 Nelle sezioni seguenti sono elencati i programmi beta attivi.
+
+### Agenti in AEM {#agents-in-aem}
+
+Se desideri esplorare le potenti e nuove funzionalità di AEM Agent per la produzione, la governance, l&#39;ottimizzazione, l&#39;individuazione e lo sviluppo, [scopri come accedervi qui.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}

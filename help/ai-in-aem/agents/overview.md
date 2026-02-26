@@ -4,9 +4,9 @@ description: Scopri gli agenti disponibili in AEM per accelerare la creazione de
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,15 @@ Questi agenti sono disponibili in Adobe Experience Manager (AEM) as a Cloud Serv
 >* Al momento non sono disponibili per AEM 6.5 né per AEM 6.5 LTS.
 >* Non sono disponibili né su AEM On-Prem né su Managed Services.
 
->[!IMPORTANT]
->
->Per utilizzare gli agenti necessari per l&#39;iscrizione al programma Explorer. Ulteriori informazioni sul programma Esplora agenti di AEM [sono disponibili qui.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+## Accesso agli agenti {#accessing-agents}
+
+Sono disponibili tre opzioni per accedere agli agenti.
+
+1. È possibile avere la possibilità di accedere ad AEM Agents tramite il programma [Prova prima di acquistare,](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) che si sta implementando in fasi. Il tuo CSM o TAM può aiutare a confermare la disponibilità per la tua organizzazione.
+1. Esplora gli agenti AEM [tramite una versione di prova.](https://www.aem.live/developer/aem-playground)
+1. Entra in contatto con il tuo CSM o TAM per discutere l’accesso tramite l’SKU Agentic, se è in linea con la roadmap e i piani di valutazione.
+
+Man mano che saranno disponibili nuove competenze con il rilascio anticipato, offriremo ulteriori opportunità di partecipare e condividere feedback. Ti invitiamo a guardare [questa pagina](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) per gli aggiornamenti.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
