@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
+source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
 workflow-type: tm+mt
-source-wordcount: '3918'
-ht-degree: 79%
+source-wordcount: '4040'
+ht-degree: 76%
 
 ---
 
@@ -31,14 +31,14 @@ Durante la finestra temporale di dichiarazione come obsoleta, Adobe ricorderà a
 
 >[!IMPORTANT]
 >
->Diverse [API obsolete](#aem-apis) eseguono la rimozione come destinazione il **26 febbraio 2026**. Rivedi le date e gli impatti principali:
+>Diverse [API obsolete](#aem-apis) verranno rimosse il **4 maggio 2026**. Rivedi le date e gli impatti principali:
 >
->* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
->* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
->* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
->* **30 aprile 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+>* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate come promemoria per rimuovere l&#39;utilizzo di queste API.
+>* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere. *La convalida e il rilascio delle modifiche al codice potrebbero essere rallentati.*
+>* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**. Le implementazioni verranno bloccate fino alla rimozione dell’utilizzo API obsoleto. *Ciò potrebbe impedire il rilascio di aggiornamenti sensibili al tempo e potrebbe influire sulle operazioni aziendali.*
+>* **4 maggio 2026**: gli ambienti che utilizzano ancora API obsolete **non riceveranno aggiornamenti critici della versione di Adobe** e non sono soggetti agli impegni standard di Adobe relativi a prestazioni e disponibilità. Di conseguenza, non riceverai nuove funzioni o correzioni di bug, la stabilità e l’operatività delle applicazioni potrebbero essere influenzate negativamente e l’esposizione al rischio per la sicurezza potrebbe aumentare ulteriormente.
 >
->Per impedire i blocchi di distribuzione, rimuovi l&#39;utilizzo delle API prima del 30 marzo 2026.
+>Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026.
 
 ## Funzionalità obsolete {#deprecated-features}
 
@@ -86,15 +86,15 @@ In questa sezione sono elencate le funzionalità rimosse.
 Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono state dichiarate obsolete, ma non sono ancora state rimosse.  L’utilizzo di queste API deve cessare prima della data di rimozione prevista oppure si rischiano problemi relativi a prestazioni, disponibilità e sicurezza. Alcune API fanno riferimento alla sezione Indicazioni per la rimozione delle API di seguito riportata.
 
 >[!IMPORTANT]
-> È stata pianificata la rimozione di diverse API il **26 febbraio 2026**. Rivedi le date e gli impatti principali:
 >
-> * **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
-> * **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
-> * **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
-> * **4 maggio 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+>Diverse [API obsolete](#aem-apis) verranno rimosse il **4 maggio 2026**. Rivedi le date e gli impatti principali:
 >
-> Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026.
-
+>* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate come promemoria per rimuovere l&#39;utilizzo di queste API.
+>* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere. *La convalida e il rilascio delle modifiche al codice potrebbero essere rallentati.*
+>* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**. Le implementazioni verranno bloccate fino alla rimozione dell’utilizzo API obsoleto. *Ciò potrebbe impedire il rilascio di aggiornamenti sensibili al tempo e potrebbe influire sulle operazioni aziendali.*
+>* **4 maggio 2026**: gli ambienti che utilizzano ancora API obsolete **non riceveranno aggiornamenti critici della versione di Adobe** e non sono soggetti agli impegni standard di Adobe relativi a prestazioni e disponibilità. Di conseguenza, non riceverai nuove funzioni o correzioni di bug, la stabilità e l’operatività delle applicazioni potrebbero essere influenzate negativamente e l’esposizione al rischio per la sicurezza potrebbe aumentare ulteriormente.
+>
+>Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026.
 
 <details>
   <summary>Espandi per visualizzare l’elenco delle API obsolete.</summary>
@@ -258,7 +258,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3 è in modalità di manutenzione. Utilizzare invece Commons Collections 4. <a href="#apache.commons">Consulta le note sulla rimozione di seguito.</a></td>
     <td>30/04/2021</td>
-    <td>3/31/2027 (Da confermare)</td>
+    <td>3/31/2027 (da confermare)</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -270,7 +270,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>org.apache.sling.runmode</td>
     <td></td>
     <td>2015</td>
-    <td>12/31/2027 (Da confermare)</td>
+    <td>12/31/2027 (da confermare)</td>
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
     <td>AEM as a Cloud Service non supporta questa API.</td>
@@ -374,19 +374,19 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integrare il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguirlo localmente. Il report elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fate riferimento a [questa esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per informazioni su come utilizzare il plug-in Maven.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
-Sebbene sia necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione di destinazione il 26 febbraio 2026 (o precedente). Nel report di AEM Analyzer, queste API possono apparire con una data effettiva di rimozione pari al 8/31/2025.
+Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
-Dopo aver aggiornato il codice, verifica che in Cloud Manager non rimanga alcun utilizzo API obsoleto, controllando i risultati del passaggio relativo alla qualità del codice.
+Dopo aver aggiornato il codice, verifica che in Cloud Manager non rimanga alcun uso API obsoleto controllando i risultati del passaggio di qualità del codice.
 
 ### Linee guida generali
 
 Se utilizzi una libreria di terze parti che al momento richiede un’API obsoleta, prova ad eseguire l’aggiornamento a una versione più recente della libreria di terze parti.
 
-Se si utilizza ACS AEM Commons, utilizzare almeno la versione 6.11.0 (si consiglia la versione più recente) e assicurarsi di [includere la versione per il Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) specificando il classificatore `cloud` per il pacchetto di contenuti.
+Se si utilizza ACS AEM Commons, utilizzare almeno la versione 6.11.0 (si consiglia l&#39;ultima versione) e assicurarsi di [includere la versione per Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) specificando il classificatore `cloud` per il pacchetto di contenuti.
 
-Se l’importazione di un’API obsoleta è contrassegnata come `optional`, prova comunque a rimuoverla. Tuttavia, un utilizzo facoltativo di questo tipo non bloccherà le distribuzioni. Tuttavia, la distribuzione potrebbe risentirne, una volta che l&#39;importazione opzionale non è più soddisfatta.
+Se l&#39;importazione di un&#39;API obsoleta è contrassegnata come `optional`, provare comunque a rimuoverla. Tuttavia, un utilizzo facoltativo di questo tipo non blocca le distribuzioni. Tuttavia, la distribuzione potrebbe essere interessata, una volta che l’importazione facoltativa non è più soddisfatta.
 
 ### Rimozione di `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -412,7 +412,7 @@ Se stai utilizzando un elemento del pacchetto `org.eclipse.jetty` o uno dei rela
 Elenco azioni:
 
 * Sostituisci l’utilizzo di pacchetti `org.eclipse.jetty` con altre librerie di terze parti/proprio codice o
-* Seleziona i bundle richiesti da questo elenco e aggiungili al progetto. Se ne aggiungi uno, controlla le importazioni del pacchetto perché potresti dover aggiungere altri da questi elenchi per completare tali importazioni. Se desideri utilizzare la versione 9.x di questi bundle, assicurati di distribuire esattamente la versione dal basso e di non incorporare *e* esporta questi pacchetti.
+* Seleziona i bundle richiesti da questo elenco e aggiungili al progetto. Se ne aggiungi uno, assicurati di controllare le importazioni del pacchetto di quel bundle in quanto potresti dover aggiungere altri da questi elenchi per completare tali importazioni. Se desideri utilizzare la versione 9.x di questi bundle, assicurati di distribuire esattamente la versione dal basso e di non incorporare *e* esporta questi pacchetti.
    * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -451,7 +451,7 @@ Rimuovi l’utilizzo delle librerie Apache Commons non mantenute e sostituiscile
 
 Elenco azioni:
 
-* Se si utilizza ACS AEM Commons, eseguire l&#39;aggiornamento alla versione più recente (almeno 6.11.0) e assicurarsi di utilizzare il classificatore `cloud`.
+* Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Sostituisci le importazioni di `org.apache.commons.lang*` con `org.apache.commons.lang3`
 * Sostituisci le importazioni di `org.apache.commons.collections*` con `org.apache.commons.collecitons4`
 
@@ -488,7 +488,7 @@ Elenco azioni:
 
 * Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
 * Se si utilizza il client Apache Kafka e si include il bundle del wrapper OSGi da Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), sostituirlo con [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). Questa è la stessa versione di Apache ServiceMix, ma è stato rimosso solo l’utilizzo di questi due pacchetti.
-* Se stai utilizzando `com.adobe.aio.aem:aio-lib-osgi`, aggiorna alla versione più recente (almeno 2.0.12).
+* Se utilizzi `com.adobe.aio.aem:aio-lib-osgi`, aggiorna alla versione più recente (almeno 2.0.12).
 * Rimuovi il codice utilizzando `org.slf4j.event` e `org.slf4j.spi`
 
 ### Utilizzo di `org.apache.log4j` {#org.apache.log4j}
