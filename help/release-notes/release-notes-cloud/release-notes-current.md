@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 4070808ad3ac99f6112cb748a1f4288ffa974915
+source-git-commit: f360c1b99c3d057c9b5f96cc2680248be4a296e3
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 42%
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.1.0) è il venerdì 29 gennaio 2026. La prossima versione funzionale (2026.2.0) è pianificata per il venerdì 26 febbraio 2026.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.1.0) è il venerdì 29 gennaio 2026. La prossima versione (2026.2.0) è pianificata per il mercoledì 3 marzo 2026.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479797/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
