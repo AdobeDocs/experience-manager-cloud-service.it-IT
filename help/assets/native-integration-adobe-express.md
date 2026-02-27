@@ -154,7 +154,7 @@ Fai clic sull&#39;icona ![icona anteprima](assets/do-not-localize/preview-icon.s
 
 ![Anteprima rappresentazioni Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Fare clic su **[!UICONTROL Aggiungi modificatori]**, specificare un modificatore nella casella di testo e premere Invio per applicare la trasformazione alle rappresentazioni in tempo reale. Allo stesso modo, potete aggiungere più modificatori a una rappresentazione e visualizzare in anteprima tali trasformazioni. Trascina e rilascia la risorsa dall’anteprima all’area di lavoro. La rappresentazione dopo l’applicazione di tali modificatori non viene salvata. Consulta l&#39;elenco dei modificatori supportati per [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Fare clic su **[!UICONTROL Aggiungi modificatori]**, specificare un modificatore nella casella di testo e premere Invio per applicare la trasformazione alle rappresentazioni in tempo reale. Allo stesso modo, potete aggiungere più modificatori a una rappresentazione e visualizzare in anteprima tali trasformazioni. Trascina e rilascia la risorsa dall’anteprima all’area di lavoro. La rappresentazione dopo l’applicazione di tali modificatori non viene salvata. Consulta l&#39;elenco dei modificatori supportati per [Dynamic Media Scene7](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media con OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -250,7 +250,7 @@ Come best practice, Adobe consiglia di specificare i valori negli altri campi e 
 
 ## Formati di file supportati {#supported-file-formats-import-assets}
 
-Adobe Express supporta in modo nativo i formati disponibili in [Verifica i requisiti minimi per l&#39;immagine](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Tuttavia, AEM Assets supporta i seguenti tipi di formato:
+Adobe Express supporta in modo nativo i formati disponibili in [Verifica i requisiti minimi per l&#39;immagine](https://helpx.adobe.com/it/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). Tuttavia, AEM Assets supporta i seguenti tipi di formato:
 
 | Formato supportato | Dimensioni massime/risoluzione | Dimensione massima file |
 |------------------|---------------------------------------------|---------------|
