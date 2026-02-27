@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione di anteprima di Universal Editor
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Prossime funzionalità {#upcoming-features}
 
-* Nel menu di scelta rapida è ora disponibile un selettore di componenti.
+* Il selettore dei componenti ha un nuovo design.
 * È ora disponibile un selettore colore per l’editor Rich Text.
 
 ## Prossimi miglioramenti {#upcoming-improvements}
