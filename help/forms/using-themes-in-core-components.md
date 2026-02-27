@@ -5,9 +5,9 @@ keywords: temi per generazione moduli, componenti core per la creazione di stili
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: c5bea0d9386617b8ff51309f5cba45e7068f71e8
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2889'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Puoi creare e applicare temi per assegnare uno stile a un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
@@ -63,14 +63,14 @@ La personalizzazione di un tema si riferisce al processo di modifica, formattazi
 
 ### Prerequisiti {#prerequisites-to-customize}
 
-* Acquisisci familiarità con [la configurazione di una pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline) e avere conoscenze di base su come impostare una pipeline ti aiuta a gestire e distribuire in modo efficiente le personalizzazioni dei temi.
-* Scopri come [configurare un utente con il ruolo di collaboratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=it). Le informazioni su come configurare un utente con il ruolo di collaboratore consentono di concedere le autorizzazioni necessarie per la personalizzazione del tema.
+* Acquisisci familiarità con [la configurazione di una pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e avere conoscenze di base su come impostare una pipeline ti aiuta a gestire e distribuire in modo efficiente le personalizzazioni dei temi.
+* Scopri come [configurare un utente con il ruolo di collaboratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Le informazioni su come configurare un utente con il ruolo di collaboratore consentono di concedere le autorizzazioni necessarie per la personalizzazione del tema.
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
 ### Configurare l’ambiente
 
-* Configura una [pipeline di distribuzione front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=it) per l&#39;ambiente Cloud Service. In alternativa, puoi configurare la pipeline in un secondo momento, dando la flessibilità di assegnare la priorità ai test e perfezionando il tema prima di impostare la pipeline di distribuzione.
+* Configura una [pipeline di distribuzione front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) per l&#39;ambiente Cloud Service. In alternativa, puoi configurare la pipeline in un secondo momento, dando la flessibilità di assegnare la priorità ai test e perfezionando il tema prima di impostare la pipeline di distribuzione.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -316,11 +316,12 @@ Per distribuire il tema nell’ambiente Cloud Service utilizzando la pipeline fr
 
 * 5.1 [Crea un archivio per il tema](#create-a-new-theme-repo)
 * 5.2 [Invia le modifiche all&#39;archivio](#committing-the-changes)
-* 5.3 [Eseguire la pipeline front-end](#run-a-frontend-pipeline)
+* 5.3 [Imposta la versione di Node.js su 20](#53-set-the-nodejs-version-to-20)
+* 5.4 [Eseguire la pipeline front-end](#run-a-frontend-pipeline)
 
 ##### 5.1 Creare un archivio per il tema{#create-a-new-theme-repo}
 
-Per distribuire il tema è necessario un repository. Accedi al tuo [archivio AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git) e aggiungi un nuovo archivio per il tema.
+Per distribuire il tema è necessario un repository. Accedi al tuo [archivio AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) e aggiungi un nuovo archivio per il tema.
 
 1. Creare un nuovo archivio per un tema facendo clic su **[!UICONTROL Archivi]** > **[!UICONTROL Aggiungi archivio]**.
 
@@ -368,11 +369,25 @@ Ora, invia le modifiche all’archivio dei temi del tuo Cloud Service AEM Forms.
 
    ![Commit delle modifiche eseguito](/help/forms/assets/cmd_git_push.png)
 
+##### 5.3 Imposta la versione di Node.js su 20
+
+Per impostare la versione di Node.js su 20 utilizzando la configurazione della pipeline:
+
+1. Vai alla sezione **Pipeline** e individua la pipeline front-end.
+2. Sul lato destro della pipeline, fai clic sul menu a tre punti **⋯** e seleziona **Visualizza/Modifica variabili** dal menu a discesa.
+3. Nella finestra di dialogo **Configurazione variabili**, compila i campi come segue:
+   * **NOME** - NODE_VERSION
+   * **VALORE** - 20
+   * **PASSAGGIO APPLICATO** - Build
+   * **TIPO** - Variabile
+4. Fai clic su **Salva** per applicare la configurazione.
+
+![configurazione pipeline](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.3 Eseguire la pipeline front-end {#run-a-frontend-pipeline}
+##### 5.4 Eseguire la pipeline front-end {#run-a-frontend-pipeline}
 
-Il tema viene distribuito utilizzando la [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=it). Per distribuire il tema, effettua le seguenti operazioni:
+Il tema viene distribuito utilizzando la [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Per distribuire il tema, effettua le seguenti operazioni:
 
 1. Accedi al tuo archivio AEM Cloud Manager.
 1. Fai clic sul pulsante **[!UICONTROL Aggiungi]** nella sezione **[!UICONTROL Pipeline]**.
@@ -419,21 +434,6 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo adattivo per definire lo stile durante la creazione di un modulo adattivo.
 
-## Imposta la versione di Node.js su 20
-
-Per impostare la versione di Node.js su 20 utilizzando la configurazione della pipeline:
-
-1. Vai alla sezione **Pipeline** e individua la pipeline front-end.
-2. Sul lato destro della pipeline, fai clic sul menu a tre punti **⋯** e seleziona **Visualizza/Modifica variabili** dal menu a discesa.
-3. Nella finestra di dialogo **Configurazione variabili**, compila i campi come segue:
-   * **NOME** - NODE_VERSION
-   * **VALORE** - 20
-   * **PASSAGGIO APPLICATO** - Build
-   * **TIPO** - Variabile
-4. Fai clic su **Salva** per applicare la configurazione.
-
-![configurazione pipeline](/help/forms/assets/pipeline-config.png)
-
 ## Best practice {#best-practices}
 
 * **Evitare risorse da un altro tema**
@@ -461,4 +461,4 @@ Per impostare la versione di Node.js su 20 utilizzando la configurazione della p
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generare documenti di record per Forms adattivo (componenti core)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creare un Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
