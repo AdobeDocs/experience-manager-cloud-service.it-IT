@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
+source-git-commit: 608f8d11499579f3f22bcf9b2f0b79699509021f
 workflow-type: tm+mt
-source-wordcount: '4040'
-ht-degree: 76%
+source-wordcount: '4163'
+ht-degree: 74%
 
 ---
 
@@ -374,7 +374,7 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
 Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
@@ -383,6 +383,8 @@ Dopo aver aggiornato il codice, verifica che in Cloud Manager non rimanga alcun 
 ### Linee guida generali
 
 Se utilizzi una libreria di terze parti che al momento richiede un’API obsoleta, prova ad eseguire l’aggiornamento a una versione più recente della libreria di terze parti.
+
+Se decidi di distribuire una tua versione dell’API obsoleta, ad esempio la tua versione di Guava, assicurati che tutti i bundle che utilizzano questa API siano collegati alla tua versione. Se decidi di distribuire la stessa versione principale attualmente inclusa in Cloud Service, non sono necessarie ulteriori azioni. Tuttavia, se segui i consigli e distribuisci la versione più recente, devi modificare il progetto Maven, includi la libreria come nuova dipendenza prima di `aem-sdk-api`. In questo modo il codice verrà collegato alla nuova versione. Dopo aver apportato le modifiche, verificare con il [plug-in Maven di AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) che l&#39;utilizzo dell&#39;API obsoleta non sia più contrassegnato.
 
 Se si utilizza ACS AEM Commons, utilizzare almeno la versione 6.11.0 (si consiglia l&#39;ultima versione) e assicurarsi di [includere la versione per Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) specificando il classificatore `cloud` per il pacchetto di contenuti.
 
