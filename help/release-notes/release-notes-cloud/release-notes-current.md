@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f360c1b99c3d057c9b5f96cc2680248be4a296e3
+source-git-commit: 0ddc7c0b1dc7dd3350dd91576011dc26f57afa51
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 42%
+source-wordcount: '1944'
+ht-degree: 35%
 
 ---
 
@@ -28,7 +28,7 @@ La sezione seguente illustra le note specifiche sulla versione corrente (più re
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.1.0) è il venerdì 29 gennaio 2026. La prossima versione (2026.2.0) è pianificata per il mercoledì 3 marzo 2026.
+La data di rilascio della versione funzionale corrente di [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2026.2.0) è il mercoledì 3 marzo 2026. La prossima versione (2026.3.0) è pianificata per il venerdì 26 marzo 2026.
 
 ## Note sulla versione di manutenzione {#maintenance}
 
@@ -36,9 +36,9 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 ## Video sulla versione {#release-video}
 
-Dai un’occhiata al video Panoramica sulla versione di gennaio 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.1.0:
+Dai un’occhiata al video Panoramica sulla versione di febbraio 2026 per un riepilogo delle funzioni aggiunte nella versione 2026.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479797/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -82,76 +82,52 @@ Consulta [Programmi beta di AEM Foundation](#foundation-early-adopter).
 
 Consulta [Programmi beta di Cloud Manager](/help/implementing/cloud-manager/release-notes/current.md).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Server MCP dei contenuti {#content-MCP}
-
-AEM Cloud Service ora include **Content MCP Server**, che fornisce un modo standardizzato per consentire alle esperienze basate sull&#39;intelligenza artificiale di lavorare con i contenuti AEM tramite strumenti compatibili con MCP.
-
-Sviluppatori e utenti esperti che lavorano su app di chat e piattaforme di agenti possono collegare AEM a compilazioni e automazioni personalizzate, in modo che il lavoro sui contenuti diventi parte dei flussi di lavoro aziendali end-to-end.
-
-AEM fornisce due server:
-
-1. **Server MCP dei contenuti di sola lettura** - per recuperare i contenuti in modo sicuro
-1. **Server MCP del contenuto di lettura/scrittura** - per apportare modifiche al contenuto
-
-Questi server MCP includono strumenti per l&#39;utilizzo di **Pagine**, **Frammenti di contenuto** e **Assets** e possono essere utilizzati dai seguenti client MCP: **ChatGPT**, **Claude**, **Cursore** e **Microsoft Copilot Studio**.
-
-Ulteriori informazioni in [Utilizzo di MCP con AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Per domande o commenti, invia un&#39;e-mail a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Ricerca IA**
+**Contenuto verificato per accedere ad AEM Assets in Adobe Express**
 
-Ricerca IA introduce un’esperienza di ricerca intelligente e basata sul contesto che va oltre la tradizionale corrispondenza delle parole chiave, comprendendo il significato e le finalità alla base delle query degli utenti. Basato sull’intelligenza artificiale e sull’apprendimento automatico, fornisce risultati più precisi anche quando le query sono formulate in modo diverso, contengono errori ortografici, utilizzano sinonimi o vengono inviate in lingue diverse, consentendo agli utenti di trovare contenuti rilevanti più rapidamente e con meno sforzo.
+[Contenuto verificato è ora disponibile in Adobe Express](/help/assets/native-integration-adobe-express.md), introducendo l&#39;individuazione intelligente delle risorse per AEM Assets direttamente nell&#39;interfaccia Express. Contenuto verificato fornisce consigli in base al contesto basati su contenuti e descrizioni di campagne su tela, supporta la ricerca basata sull’intelligenza artificiale, abilita il supporto nativo per le rappresentazioni pronte per il canale al volo basate su Dynamic Media e molte altre funzioni. Content Advisor trasforma il modo in cui individuare e utilizzare le risorse approvate, consentendo di trovare più rapidamente i contenuti appropriati per semplificare i flussi di lavoro creativi.
 
-Per ulteriori informazioni, vedere Ricerche IA in [Assets view](/help/assets/search-assets-view.md#ai-search) e [Admin view](/help/assets/search-assets.md#ai-search).
+### Nuove funzioni in Dynamic Media con OpenAPI {#dynamic-media-openAPI-new-features}
 
-**Versione app desktop 3.0.1**
+**Controllo degli accessi basato su attributi (ABAC) per Dynamic Media con OpenAPI**
 
-[App desktop 3.0.1 (20 dicembre 2025)](https://experienceleague.adobe.com/it/docs/experience-manager-desktop-app/using/release-notes) migliora l&#39;affidabilità, le prestazioni e la stabilità tra i flussi di lavoro chiave. Questa versione assicura una denominazione coerente delle cartelle, risolvendo i problemi di sincronizzazione con AEM Author, consente un utilizzo ininterrotto dell’app durante i trasferimenti attivi, migliora la reattività dell’interfaccia utente tramite l’elaborazione asincrona, ottimizza i trasferimenti di file di grandi dimensioni con l’impaginazione e risolve i problemi di stabilità, tra cui i riavvii e gli arresti anomali del server di authoring durante caricamenti e download di cartelle di grandi dimensioni.
+Il controllo degli accessi basato su attributi (Attribute-Based Access Control - ABAC) consente agli amministratori di controllare l’accesso a Dynamic Media con risorse OpenAPI utilizzando regole basate sui metadati. Gli amministratori possono definire regole per i gruppi di utenti in base ai metadati delle risorse per determinare quali risorse sono visibili a gruppi specifici. Quando i metadati di una risorsa corrispondono alle condizioni definite, l’accesso viene concesso automaticamente. Questa funzionalità consente alle organizzazioni di applicare una migliore governance, garantendo che gli utenti possano visualizzare e lavorare solo con Dynamic Media con risorse OpenAPI rilevanti per il loro ruolo o le loro autorizzazioni.
 
-**Versione di Adobe Asset Link CEP 2026.01.0**
-
-[Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) introduce una nuova opzione Ricollega collegamenti mancanti in InDesign che ricollega automaticamente altre risorse mancanti dalla stessa cartella di AEM. La funzione associa le risorse in base al nome file, riducendo notevolmente lo sforzo manuale durante il ripristino dei collegamenti interrotti.
-
+>[!NOTE]
+>
+>ABAC (Attribute-based Access Control) per Dynamic Media con OpenAPI è una funzione a disponibilità limitata. Per abilitarlo, crea un [ticket di supporto](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-**Miglioramenti al segnaposto nota a piè di pagina in Forms adattivo (componenti di base)**
+### Funzionalità per Accesso anticipato in AEM Forms {#forms-early-access-features}
 
-* È stato aggiunto il supporto di [più righe con interruzioni di riga](/help/forms/footnotes-richtextsupport.md) per consentire una presentazione più chiara ed espressiva del contenuto delle note a piè di pagina.
-* Le note a piè di pagina ora rimangono sempre visibili all’interno del segnaposto delle note a piè di pagina, indipendentemente dalla visibilità dei pannelli associati, garantendo un accesso coerente alle informazioni critiche.
-  ![Descrizione nota](/help/forms/assets/footnote-description.png){height=50%}
+* **Etichette di visualizzazione per l&#39;elenco a discesa a selezione multipla in PDF di invio**: i componenti a discesa a selezione multipla in Forms adattivo ora eseguono il rendering delle etichette di visualizzazione selezionate in [PDF di invio generato](/help/forms/generate-document-of-record-core-components.md), garantendo che il documento rifletta con precisione ciò che viene visualizzato dagli utenti nel modulo.
 
-### Nuove funzioni per l’accesso anticipato in AEM Forms {#forms-new-early-access-features}
+* **Accesso facilitato per i componenti di caselle di controllo, pulsanti di scelta e pannelli**: i componenti core Forms adattivi introducono il markup semantico compatibile con WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
 
-**Recuperare i valori da un array JSON**
+* **Supporto del controllo delle versioni in Forms Manager**: Forms Manager ora supporta il controllo delle versioni per Forms adattivo (componenti core e componenti di base), frammenti di modulo, temi, modelli XDP e risorse binarie. Crea versioni, visualizza la cronologia completa delle versioni e ripristina gli stati precedenti delle risorse del modulo direttamente dalla console Forms &amp; Documents.
 
-Funzionalità funzioni personalizzate estese per [estrarre valori da array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), ricevuti tramite una chiamata API, e associarli direttamente ai campi del modulo adattivo. Ora puoi sviluppare regole e regole di business con una mappatura dei dati manuale minima.
+## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
-**Eseguire l&#39;interfaccia utente Associate in un&#39;istanza Publish**
+### [!DNL Experience Manager] come [!DNL Cloud Service] nuove funzionalità di base {#foundation-new}
 
-È ora possibile eseguire [Associa interfaccia utente](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) direttamente sulle istanze di pubblicazione. In questo modo gli agenti possono accedere all’interfaccia utente di Associa e personalizzare facilmente le comunicazioni per i clienti.
+#### Sospendi aggiornamenti di manutenzione automatica {#pause-updates}
 
-<!--
-**Forms Optimization opportunities**
+I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. [Le nuove funzionalità self-service](/help/implementing/deploying/quiet-hours-update-free-periods.md) consentono di interrompere gli aggiornamenti di manutenzione automatica quando sono importanti, in modo che i team rimangano concentrati.
 
-Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
+* Quiet Hours (Ore tranquille): blocca la manutenzione automatica durante gli orari impostati ogni giorno. Ideale per le ore lavorative, le corse notturne o i cutover mattutini.
+* Periodo senza aggiornamento: blocca la manutenzione automatica per una settimana intera. Utilizzala per lanci, promozioni o blocchi annuali.
 
->[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
+#### Risoluzione dei problemi relativi alla pipeline di qualità del codice con l’agente di sviluppo {#devagent-codequality}
 
-Key optimization opportunities include:
+Le funzionalità di risoluzione dei problemi delle pipeline dell’agente di sviluppo consentono agli sviluppatori di diagnosticare e risolvere in modo più efficiente i problemi nelle implementazioni di AEM as a Cloud Service.
 
-* Increasing visibility for forms with low views
-* Improving completion rates for forms with low conversions
-* Addressing accessibility compliance issues
-* Streamlining navigation to enhance user experience
+Precedentemente incentrato sul passaggio **Build e unit test**, la risoluzione dei problemi della pipeline ora supporta anche il passaggio **Scansione del codice** nelle pipeline di distribuzione full stack e qualità del codice.
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
--->
+Il passaggio dell’analisi del codice valuta il codice in base alle regole di qualità, rileva vulnerabilità di sicurezza e genera rapporti di qualità dettagliati. Se questo passaggio non riesce, puoi utilizzare l’Assistente IA per richiedere all’agente di sviluppo un’analisi della causa principale insieme alla guida per la correzione consigliata.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+Ulteriori informazioni sull&#39;[agente di sviluppo](/help/ai-in-aem/agents/brand-experience/development/development.md) e sulla risoluzione dei problemi relativi alla pipeline.
 
 ### [!DNL Experience Manager] come [!DNL Cloud Service] Avvisi importanti di Foundation {#foundation-notices}
 
@@ -159,10 +135,10 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 Le API obsolete con targeting 2/26/2026 non devono più essere utilizzate nel codice. Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026. Date importanti:
 
-* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate **ogni settimana per ogni ambiente** come promemoria per rimuovere l&#39;utilizzo di queste API.
-* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere.
-* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**, **bloccando le distribuzioni** del nuovo codice fino alla rimozione dell&#39;utilizzo.
-* **4 maggio 2026**: gli ambienti che utilizzano ancora queste API potrebbero **non ricevere più aggiornamenti critici sulla versione di Adobe**.
+* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate come promemoria per rimuovere l&#39;utilizzo di queste API.
+* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere. *La convalida e il rilascio delle modifiche al codice potrebbero essere rallentati.*
+* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**. Le implementazioni verranno bloccate fino alla rimozione dell’utilizzo API obsoleto. *Ciò potrebbe impedire il rilascio di aggiornamenti sensibili al tempo e potrebbe influire sulle operazioni aziendali.*
+* **4 maggio 2026**: gli ambienti che utilizzano ancora API obsolete **non riceveranno aggiornamenti critici della versione di Adobe** e non sono soggetti agli impegni standard di Adobe relativi a prestazioni e disponibilità. Di conseguenza, non riceverai nuove funzioni o correzioni di bug, la stabilità e l’operatività delle applicazioni potrebbero essere influenzate negativamente e l’esposizione al rischio per la sicurezza potrebbe aumentare ulteriormente.
 
 Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/release-notes/deprecated-removed-features.md#aem-apis). Per comodità, tuttavia, le seguenti API sono elencate di seguito:
 
@@ -181,8 +157,6 @@ Per informazioni dettagliate, consulta l’[articolo sulla rimozione](/help/rele
 * `org.apache.log4j`
 * `com.google.common`
 * `com.drew`
-* `org.bson`
-* `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
@@ -196,44 +170,11 @@ OSGi properties:
 
 -->
 
-#### Rimozione runtime Java 11 {#java11-runtime-deprecation}
-
-Adobe ha aggiornato gli ambienti **Stage** e **Produzione** al runtime **Java 21** a prestazioni superiori il 14 ottobre 2025. A partire dal **9 febbraio** (rollout graduale fino all&#39;11 febbraio), né AEM Cloud Service SDK né alcun ambiente cloud funzioneranno con Java 11 runtime.
-
->[!NOTE]
->
-> Per sfruttare le ultime ottimizzazioni delle prestazioni e i miglioramenti del linguaggio, si consiglia di creare con Java 17 o Java 21 (preferito). La creazione di con Java 8 e Java 11 rimane supportata per il momento, ma verrà rimossa in una delle prossime versioni. Prima della deprecazione verrà inviata una comunicazione separata. Consulta la sezione *requisiti tempo di compilazione* di [questo articolo](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
->
-
-#### Applicazione dei criteri di configurazione dei registri Java di AEM {#logconfig-policy}
-
-I registri Java di AEM devono seguire un formato standard per garantire un monitoraggio affidabile in tutti gli ambienti dei clienti. Le configurazioni di registro personalizzate, ad esempio modifiche alla formattazione del registro, ai file di output o ai livelli di registro predefiniti, non sono più supportate. I registri devono rimanere indirizzati ai file predefiniti e i livelli di registro predefiniti per il codice prodotto AEM devono essere mantenuti. Consulta tutti i dettagli nell’articolo [Registrazione](/help/implementing/developing/introduction/logging.md#configuration-loggers).
-
-Eventuali sostituzioni di registrazione personalizzate non supportate *vengono ora ignorate*. La maggior parte dei clienti non è stata interessata e Adobe ha contattato i clienti la cui configurazione corrente potrebbe essere interessata.
-
-Rivedi e aggiorna eventuali processi a valle che si basano su un comportamento di registrazione personalizzato. Ad esempio:
-
-* Se il sistema di inoltro dei registri prevede un formato di registro personalizzato, potrebbe essere necessario modificare le regole di acquisizione.
-* Se in precedenza è stato ridotto il livello di verbosità del registro modificando i livelli del registro, il ripristino dei livelli predefiniti potrebbe aumentare il volume del registro.
-
 ### Caratteristiche di [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter {#foundation-early-adopter}
-
-#### Sospendi aggiornamenti di manutenzione automatica {#pause-updates}
-
-I giorni di lancio, gli eventi live, i picchi di vendita: non possono fermarsi. [Le nuove funzionalità self-service](/help/implementing/deploying/quiet-hours-update-free-periods.md) consentono di interrompere gli aggiornamenti di manutenzione automatica quando sono importanti, in modo che i team rimangano concentrati.
-
-* Quiet Hours (Ore tranquille): blocca la manutenzione automatica durante gli orari impostati ogni giorno. Ideale per le ore lavorative, le corse notturne o i cutover mattutini.
-* Periodo senza aggiornamento: blocca la manutenzione automatica per una settimana intera. Utilizzala per lanci, promozioni o blocchi annuali.
-
->[!NOTE]
->
->Disponibile come funzionalità a disponibilità limitata il 25 settembre.
->Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivarlo nei programmi.
->
 
 #### Funzioni di AEM Edge (programma Beta) {#edge-functions}
 
-Le funzioni di AEM Edge (a cui si fa riferimento nelle note precedenti sulla versione come *Edge Computing*) consentono di eseguire JavaScript a livello di CDN, avvicinando l&#39;elaborazione dei dati all&#39;utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
+Le funzioni Edge di AEM consentono di eseguire JavaScript a livello di CDN, avvicinando l’elaborazione dei dati all’utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
 
 I casi d’uso comuni includono:
 
@@ -244,6 +185,37 @@ I casi d’uso comuni includono:
 * Esposizione di un server MCP per LLM come ChatGPT e Claude per accedere a strumenti personalizzati
 
 Abbiamo un numero limitato di opportunità disponibili per i progetti AEM Publish Delivery o Edge Delivery Services per i siti di produzione live. Se sei interessato a partecipare o desideri saperne di più, invia un’e-mail a [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) con una breve descrizione del tuo caso d’uso.
+
+#### Server MCP Cloud Manager (programma Beta) {#cm-mcp-server}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+
+Le IDE moderne utilizzano il protocollo MCP (Model Context Protocol) per abilitare i modelli di linguaggio di grandi dimensioni (Large Language Model, LLM) per richiamare gli strumenti esposti dai server MCP. Invece di integrarsi direttamente con le specifiche API di basso livello, gli sviluppatori possono semplicemente descrivere il loro intento nel linguaggio naturale.
+
+Ora disponibile in versione beta, Cloud Manager MCP Server consente di interagire con le API Cloud Manager direttamente dall’IDE tramite prompt. Gli scenari supportati includono l’esecuzione delle pipeline, la verifica dello stato dell’ambiente e altro ancora.
+
+Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Per richiedere l&#39;accesso alla versione beta di Cloud Manager MCP Server, invia un&#39;e-mail a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) e includi una descrizione del tuo caso d&#39;uso.
+
+#### Risoluzione dei problemi relativi alla pipeline di configurazione a livello web con l’agente di sviluppo (programma Beta) {#devagent-webtier}
+
+Le funzionalità di risoluzione dei problemi della pipeline [dell&#39;agente di sviluppo](/help/ai-in-aem/agents/brand-experience/development/development.md) consentono agli sviluppatori di diagnosticare e risolvere in modo efficiente i problemi nelle distribuzioni di AEM as a Cloud Service. Oltre a supportare le pipeline full stack (distribuzione e qualità del codice), l&#39;agente di sviluppo ora supporta la risoluzione dei problemi per la **pipeline di configurazione a livello web** come parte di un programma beta.
+
+Per richiedere l&#39;accesso alla versione beta, invia un&#39;e-mail a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). È richiesto l’accesso preesistente agli agenti in AEM.
+
+#### Strumenti di intelligenza artificiale IDE per lo sviluppo Java e Dispatcher di AEM (programma Beta) {#ai-dev-beta}
+
+I team Java stack utilizzano sempre più lo sviluppo basato sull’intelligenza artificiale in strumenti come Cursor, Claude Code, Visual Studio e IntelliJ per velocizzare la distribuzione delle funzioni e migliorare la qualità del codice. Partecipa alla versione beta per:
+
+* Condividi esperienze reali per contribuire a definire le future funzionalità di intelligenza artificiale supportate da Adobe
+* Prova gli strumenti IDE che possono essere utilizzati dagli agenti di intelligenza artificiale per generare ed eseguire il debug del codice AEM e della configurazione del dispatcher
+
+Per ulteriori informazioni, invia un&#39;e-mail a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+#### Strumenti di intelligenza artificiale IDE per la migrazione da AEM 6.5 a AEM Cloud Service (programma Alpha) {#cm-ide-migration}
+
+Accelera la migrazione da AEM 6.5 ad AEM as a Cloud Service (stack Java) utilizzando gli strumenti di intelligenza artificiale IDE per seguire le raccomandazioni del [rapporto di Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+
+Per ulteriori informazioni, invia un&#39;e-mail a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
 #### Autenticazione Edge per Edge Delivery Services (programma Beta) {#edge-authentication}
 
@@ -264,15 +236,6 @@ Invia un’e-mail a [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canar
 In versione beta, gli ambienti di sviluppo rapido (RDE) supportano ora una funzione che consente di acquisire un’istantanea dello stato corrente del codice e del contenuto, che può essere ripristinato in un secondo momento. Questo può essere utile quando si sincronizza un codice che potrebbe essere necessario ripristinare o quando si passa da uno sviluppo di funzioni diverse all’altro. È inoltre possibile ripristinare solo il contenuto mutabile come punto di partenza noto per il test.
 
 Invia un&#39;e-mail a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se sei interessato a utilizzare e fornire feedback su questa funzione.
-
-#### Strumenti di intelligenza artificiale per IDE per lo sviluppo Java e Dispatcher di AEM (programma Beta) {#ai-dev-beta}
-
-I team Java stack utilizzano sempre più lo sviluppo basato sull’intelligenza artificiale in strumenti come Cursor, Claude Code, Visual Studio e IntelliJ per velocizzare la distribuzione delle funzioni e migliorare la qualità del codice. Partecipa alla versione beta per:
-
-* Condividi esperienze reali per contribuire a definire le future funzionalità di intelligenza artificiale supportate da Adobe
-* Prova gli strumenti IDE che possono essere utilizzati dagli agenti di intelligenza artificiale per generare ed eseguire il debug del codice AEM e della configurazione del dispatcher
-
-Per ulteriori informazioni, invia un&#39;e-mail a [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Monitoraggio avanzato delle prestazioni delle applicazioni (APM) (programma Alpha) {#apm-alpha}
 

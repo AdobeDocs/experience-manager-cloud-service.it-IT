@@ -3,11 +3,10 @@ title: Ore non interattive e aggiornamento dei periodi liberi
 description: Scopri come ridurre al minimo l’impatto operativo degli aggiornamenti automatici di AEM as a Cloud Service utilizzando le ore non interattive e i periodi senza aggiornamento.
 feature: Deploying
 role: Admin
-badge: label="Disponibilità limitata" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
+source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -15,9 +14,6 @@ ht-degree: 0%
 # Ore non interattive e aggiornamento dei periodi liberi {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Questa funzionalità sarà disponibile come **Disponibilità limitata** a partire dal 25 settembre. Invia un&#39;e-mail a [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) per attivare la funzionalità nei programmi.
-
->[!WARNING]
 >È possibile utilizzare le funzionalità Ore non interattive e Aggiorna periodi liberi solo dopo aver effettuato l&#39;onboarding in [Aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md).
 
 Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md) di AEM as a Cloud Service garantiscono la protezione delle istanze e l&#39;aggiornamento alle ultime versioni di manutenzione. Detto questo, in alcuni casi (come eventi di pubblicazione) potrebbe essere necessario &quot;proteggere&quot; tali ore di lavoro critiche da potenziali interruzioni. AEM as a Cloud Service offre quindi la possibilità di impostare un intervallo di tempo in cui non si verificano aggiornamenti automatici per i programmi in corso.

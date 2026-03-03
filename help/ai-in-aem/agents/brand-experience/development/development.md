@@ -4,10 +4,10 @@ description: Scopri in che modo il processo di sviluppo in AEM analizza le pipel
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,17 @@ ht-degree: 1%
 
 Il processo può recuperare gli stati della pipeline e aiutarti a risolvere eventuali errori nei passaggi di build suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
 >Le risposte generate dall’intelligenza artificiale possono essere imprecise o fuorvianti. Controlla nuovamente le correzioni e le risposte suggerite.
 >
->Consulta anche [Linee guida per l&#39;utente di Adobe Experience Cloud Generative AI.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>Consulta anche [Linee guida per l&#39;utente di Adobe Experience Cloud Generative AI](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!NOTE]
+>
+>La risoluzione dei problemi delle pipeline è limitata alle pipeline full stack (distribuzione e qualità del codice), ma il supporto per **pipeline di configurazione a livello web** è ora disponibile in versione beta. Per richiedere l&#39;accesso, invia un&#39;e-mail a [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). È richiesto l’accesso preesistente agli agenti in AEM.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -32,7 +36,7 @@ Il processo può recuperare gli stati della pipeline e aiutarti a risolvere even
 
 Per accedere a questo processo, consulta le [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriverti al programma beta, assicurandoti di indicare il tuo interesse per il processo di sviluppo. Puoi anche inviare un feedback specifico per il processo di sviluppo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Segui un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
+[Segui un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
 
 ## Accedere al processo di sviluppo tramite Cloud Manager {#how-to-access-the-job}
 
@@ -91,6 +95,6 @@ Il processo di sviluppo richiede il ruolo Cloud Manager - Sviluppatore o il ruol
 
 ## Funzioni fuori ambito {#out-of-scope-features}
 
-La risoluzione dei problemi della pipeline funziona nel passaggio di build della pipeline full stack. Per altri tipi e passaggi di pipeline, esegui il debug degli errori scaricando ed esaminando i registri.
+La risoluzione dei problemi delle pipeline funziona nei passaggi Build e Unit Testing e Code Scanning nelle pipeline di distribuzione full stack e di qualità del codice. Per altri tipi e passaggi di pipeline, esegui il debug degli errori scaricando ed esaminando i registri.
 
 Per ulteriori informazioni, vedere [Log di accesso e download](/help/implementing/cloud-manager/manage-logs.md).
