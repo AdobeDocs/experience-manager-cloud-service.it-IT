@@ -36,7 +36,7 @@ Il processo può recuperare gli stati della pipeline e aiutarti a risolvere even
 
 Per accedere a questo processo, consulta le [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriverti al programma beta, assicurandoti di indicare il tuo interesse per il processo di sviluppo. Puoi anche inviare un feedback specifico per il processo di sviluppo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Segui un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
+[Segui un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
 
 ## Accedere al processo di sviluppo tramite Cloud Manager {#how-to-access-the-job}
 
