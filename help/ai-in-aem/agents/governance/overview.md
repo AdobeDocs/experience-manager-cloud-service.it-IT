@@ -4,9 +4,9 @@ description: Scopri in che modo AEM Governance Agent protegge l’integrità del
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+source-git-commit: 1f40d8201456f5c1a735e2d92988607c25d34a09
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,8 @@ L’agente di governance può convalidare i contenuti in base alle linee guida d
 * *`https://www.website/en.html` segue le linee guida per i messaggi del brand?*
 * *Verifica se `https://www.website/homepage` segue le linee guida del brand*
 * *Mostra le linee guida per il marchio*
+
+L’agente di governance include anche una funzionalità di importazione di criteri del brand basati sull’intelligenza artificiale che utilizza l’intelligenza artificiale per trasformare i documenti delle linee guida del brand esistenti dei clienti in controlli strutturati e applicabili che governano, convalidano e guidano automaticamente la creazione di contenuti conformi. Per ulteriori informazioni, vedere [Come importare un criterio per i marchi](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Autorizzazione e Digital Rights Management {#permission-and-digital-rights-management}
 
