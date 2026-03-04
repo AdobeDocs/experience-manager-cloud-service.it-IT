@@ -4,14 +4,14 @@ description: Scopri come generare un PDF di invio dall’invio dei moduli per i 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3314'
 ht-degree: 1%
 
 ---
 
-# Generare un PDF per l’invio (precedentemente Document of Record) per Forms adattivo (Componenti core)
+# Generare un PDF di invio (documento record) per Forms adattivo (componenti core)
 
 ## Panoramica {#overview}
 
@@ -359,6 +359,12 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Allineamento opzioni**: è possibile selezionare l&#39;allineamento desiderato (Orizzontale, Verticale, Come modulo adattivo) per impostare l&#39;allineamento per i campi, ad esempio la casella di controllo o il pulsante di scelta da visualizzare nel [!UICONTROL Documento record]. Per impostazione predefinita, l&#39;allineamento verticale è impostato per i campi in [!UICONTROL Documento di record]. L&#39;impostazione delle proprietà dalle [!UICONTROL proprietà campo modulo] del DoR sovrascrive le proprietà impostate in [!UICONTROL Allineamento elemento] per i campi di un modulo adattivo. Se si seleziona l&#39;opzione [!UICONTROL Come modulo adattivo], per i campi [!UICONTROL Documento record] viene utilizzato l&#39;allineamento configurato in un&#39;istanza di authoring del modulo adattivo.
       * **Numero di opzioni per l&#39;allineamento orizzontale**:You può impostare il numero di opzioni da visualizzare nel PDF di invio per l&#39;allineamento orizzontale.
 
+      **Visualizza etichette per elenco a discesa a selezione multipla**
+
+      <span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      Il PDF di invio ora visualizza le etichette di visualizzazione selezionate per i componenti a discesa a selezione multipla invece dei valori memorizzati interni. Ad esempio, se un utente seleziona &quot;California&quot; e &quot;New York&quot; da un menu a discesa, il PDF di invio mostra le etichette selezionate invece dei valori interni come `CA` e `NY`. Ogni opzione selezionata viene visualizzata su una riga separata anziché come valori separati da virgola, in linea con il comportamento di [Forms adattivo basato su componenti Foundation](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
    1. **Proprietà pagina master**:
 
       * **Immagine logo**: puoi scegliere di utilizzare l&#39;immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
@@ -367,24 +373,6 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
       * **Etichetta liberatoria**: etichetta della liberatoria.
       * **Esclusione di responsabilità**: testo che specifica l&#39;ambito dei diritti e degli obblighi relativi all&#39;inoltro PDF.
       * **Testo liberatoria**: testo liberatoria.
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
 
@@ -428,6 +416,11 @@ L’impostazione del componente Documento di record è disponibile nelle relativ
 **Impostazioni livello modulo**
 
 * **Includi campi non associati nel DoR:** L&#39;impostazione della proprietà include campi non associati del modulo adattivo basato su schema in PDF di invio. Per impostazione predefinita è true.
+
+## Domande frequenti {#faq}
+
+**Q: le modifiche non vengono visualizzate nel PDF di invio.**
+**Ans:** Apri il modulo nell&#39;editor di Forms adattivo, apporta una modifica minore (ad esempio, regola un&#39;etichetta di campo o riordina un campo) e salva il modulo. In questo modo viene rigenerato il modello PDF di invio e le modifiche vengono visualizzate nel PDF generato successivamente.
 
 ## Consulta anche {#see-also}
 

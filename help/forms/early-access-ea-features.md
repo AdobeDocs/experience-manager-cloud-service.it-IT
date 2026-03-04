@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 19%
+source-wordcount: '3229'
+ht-degree: 18%
 
 ---
 
@@ -316,6 +316,14 @@ L’archiviazione dei PDF in Azure Blob Storage consente la gestione centralizza
 * [Supporto di funzioni ed espressioni matematiche nei parametri di input](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): i parametri di input ora supportano sia le chiamate di funzioni che le espressioni matematiche, consentendo agli autori di moduli di trasmettere direttamente i valori calcolati in modo dinamico.
 
 * [Recuperare i valori delle proprietà da un array JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): richiama un&#39;API con una funzione personalizzata per estrarre i valori da un array JSON e associarli direttamente ai campi modulo.
+
+### Supporto del controllo delle versioni in Forms Manager
+
+Forms Manager ora supporta il controllo delle versioni per Forms adattivo (componenti core e componenti di base), frammenti di modulo, temi, modelli XDP e risorse binarie. È possibile creare versioni, visualizzare la cronologia e ripristinare gli stati precedenti dalla console Forms &amp; Documents. Vedi [Gestione delle versioni dei moduli in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+### Miglioramento dell’accessibilità dei componenti del modulo
+
+I componenti core Forms adattivi introducono un markup semantico conforme alle linee guida WCAG per gruppi di caselle di controllo, gruppi di pulsanti di scelta e pannelli. Questi componenti ora sfruttano gli elementi `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni per le tecnologie per l&#39;accessibilità. Consulta [Supporto per set di campi e legende in Adaptive Forms](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Consulta anche
 

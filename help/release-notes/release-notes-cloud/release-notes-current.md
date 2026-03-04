@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ddc7c0b1dc7dd3350dd91576011dc26f57afa51
+source-git-commit: 49d29c468a2047e3026948030c3663db0beada53
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 35%
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di febbraio 2026 per un riepilogo delle funzioni aggiunte nella versione 2026.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480407/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -102,11 +102,14 @@ Il controllo degli accessi basato su attributi (Attribute-Based Access Control -
 
 ### Funzionalità per Accesso anticipato in AEM Forms {#forms-early-access-features}
 
-* **Etichette di visualizzazione per l&#39;elenco a discesa a selezione multipla in PDF di invio**: i componenti a discesa a selezione multipla in Forms adattivo ora eseguono il rendering delle etichette di visualizzazione selezionate in [PDF di invio generato](/help/forms/generate-document-of-record-core-components.md), garantendo che il documento rifletta con precisione ciò che viene visualizzato dagli utenti nel modulo.
+**Visualizza le etichette per il menu a discesa a selezione multipla in PDF di invio**
+I componenti a discesa a selezione multipla in Adaptive Forms ora eseguono il rendering delle etichette di visualizzazione selezionate in [PDF di invio generato](/help/forms/generate-document-of-record-core-components.md), garantendo che il documento rifletta con precisione ciò che viene visualizzato dagli utenti nel modulo.
 
-* **Accesso facilitato per i componenti di caselle di controllo, pulsanti di scelta e pannelli**: i componenti core Forms adattivi introducono il markup semantico compatibile con WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
+**Accesso facilitato per i componenti di caselle di controllo, pulsanti di scelta e pannelli**
+I componenti core Forms adattivi introducono il markup semantico conforme a WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
 
-* **Supporto del controllo delle versioni in Forms Manager**: Forms Manager ora supporta il controllo delle versioni per Forms adattivo (componenti core e componenti di base), frammenti di modulo, temi, modelli XDP e risorse binarie. Crea versioni, visualizza la cronologia completa delle versioni e ripristina gli stati precedenti delle risorse del modulo direttamente dalla console Forms &amp; Documents.
+**Supporto del controllo delle versioni in Forms Manager**
+Forms Manager ora [supporta il controllo delle versioni per Forms adattivo (Componenti core e Componenti di base)](/help/forms/manage-form-versions-forms-manager.md), frammenti di modulo, temi, modelli XDP e risorse binarie. Crea versioni, visualizza la cronologia completa delle versioni e ripristina gli stati precedenti delle risorse del modulo direttamente dalla console Forms &amp; Documents.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
@@ -188,7 +191,7 @@ Abbiamo un numero limitato di opportunità disponibili per i progetti AEM Publis
 
 #### Server MCP Cloud Manager (programma Beta) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480350/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Le IDE moderne utilizzano il protocollo MCP (Model Context Protocol) per abilitare i modelli di linguaggio di grandi dimensioni (Large Language Model, LLM) per richiamare gli strumenti esposti dai server MCP. Invece di integrarsi direttamente con le specifiche API di basso livello, gli sviluppatori possono semplicemente descrivere il loro intento nel linguaggio naturale.
 

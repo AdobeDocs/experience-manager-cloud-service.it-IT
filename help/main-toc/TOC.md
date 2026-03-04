@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
+source-git-commit: d4227a30722aadc802ebfd8dada9210d1cf5e7ae
 workflow-type: tm+mt
-source-wordcount: '7021'
+source-wordcount: '7028'
 ht-degree: 95%
 
 ---
@@ -144,8 +144,8 @@ ht-degree: 95%
    + Note sulla versione di Cloud Manager {#cloud-manager}
       + [Corrente](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
-         + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
-         + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
+         + [2025.12,0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
+         + [2025.11.0.](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
          + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
          + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
          + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
@@ -748,7 +748,7 @@ ht-degree: 95%
       + [Cercare e individuare le risorse](/help/assets/search-assets-view.md)
       + [Filtri di ricerca personalizzati](/help/assets/custom-search-filters.md)
       + [Attività di gestione risorse](/help/assets/manage-organize-assets-view.md)
-      + [Metadati generati da IA](/help/assets/ai-generated-metadata-assets-view.md)
+      + [Metadati generati dall&#39;intelligenza artificiale](/help/assets/ai-generated-metadata-assets-view.md)
       + [Modificare le immagini](/help/assets/edit-images-assets-view.md)
       + [Modificare i video](/help/assets/edit-videos-assets-view.md)
       + [Visualizzare e gestire le rappresentazioni](/help/assets/renditions.md)
@@ -841,8 +841,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -878,6 +878,7 @@ ht-degree: 95%
       + [Quale modulo adattivo è più adatto alle tue esigenze?](/help/edge/docs/forms/authoring-a-form.md)
       + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments.md)
       + [Aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [Gestire le versioni di Assets Form in Forms Manager](/help/forms/manage-form-versions-forms-manager.md)
       + Componenti core {#authoring-adaptive-forms-core-components}
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
@@ -886,9 +887,9 @@ ht-degree: 95%
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
             + [Creare un modello per moduli adattivi basato sui componenti core](/help/forms/template-editor-core-components.md)
             + [Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
-            + [Genera PDF di invio (precedentemente documento di record) per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
-            + [Personalizza modello per documento di record generato automaticamente](/help/forms/customize-document-of-record-template.md)
-            + [Tag di markup HTML supportati nel PDF di invio](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [Genera PDF di invio (in precedenza Document of Record) per Forms adattivo](/help/forms/generate-document-of-record-core-components.md)
+            + [Personalizzare il modello Documento di registrazione generato automaticamente](/help/forms/customize-document-of-record-template.md)
+            + [Tag di markup HTML supportati in Submission PDF](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [Utilizzare la traduzione automatica o la traduzione umana per tradurre un modulo adattivo](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurazione della pagina di reindirizzamento o del messaggio di ringraziamento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Creare moduli con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
@@ -1046,11 +1047,11 @@ ht-degree: 95%
       + [Abilita blocco modello](/help/forms/interactive-communication/enable-template-lock.md)
       + [Implementare la numerazione dinamica delle pagine](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [Gestire l’overflow del contenuto](/help/forms/interactive-communication/handle-content-overflow.md)
-      + [Supporto per la modifica XDP](/help/forms/interactive-communication/support-xdp-editing.md)
+      + [Supporto della modifica XDP](/help/forms/interactive-communication/support-xdp-editing.md)
       + [Creare versioni e aggiungere commenti](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + [Copiare e incollare comunicazioni interattive](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+      + [Copia e incolla comunicazioni interattive](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associa interfaccia {#associateui}
-      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+      + [Associare l’interfaccia utente nell’Editor comunicazioni interattive](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [Integrare l’interfaccia utente di Associa nell’applicazione](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [Domande frequenti](/help/forms/interactive-communications-faq.md)
 + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
@@ -1068,7 +1069,7 @@ ht-degree: 95%
    + [API di comunicazione Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
    + [Generare output AFP utilizzando le API di AEM Forms](/help/forms/document-generation-afp-api.md)
    + [Autenticazione server-to-server OAuth](/help/forms/oauth-api-authetication.md)
-   + [Autenticazione server-to-server JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
+   + [Autenticazione da server a server JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
    + [Installare e configurare Forms Designer](/help/forms/installing-configuring-designer.md)
    + [Utilizzare Forms Designer per creare modelli](/help/forms/use-forms-designer.md)
    + [Modifica del contenuto della pagina zero in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1094,8 +1095,8 @@ ht-degree: 95%
       + [Pagina di errore 502 nell’azione di invio personalizzata](/help/forms/custom-submit-action-troubleshooting.md)
 + IA in AEM {#ai-in-aem}
    + [Panoramica](/help/ai-in-aem/overview.md)
-   + [Utilizzo di MCP con AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
-   + Agenti in AEM {#agents}
+   + [Utilizzo di MCP con AEM come Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+   + Agenti nell’AEM {#agents}
       + [Panoramica](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
          + [Panoramica](/help/ai-in-aem/agents/brand-experience/overview.md)
@@ -1127,7 +1128,7 @@ ht-degree: 95%
          + [Come si converte un&#39;immagine in un modulo?](/help/forms/experience-builder/intelligent-import-conversion.md)
          + [Come si configurano gli invii e le integrazioni di moduli?](/help/forms/experience-builder/form-submission-integration.md)
          + [Come si creano campi avanzati migliorati con LLM in Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-         + [Come avviare una nuova conversazione thread in Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+         + [Come avviare una nuova conversazione di thread in Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
       + [Libreria dei prompt](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
       + [Domande frequenti (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
@@ -1261,7 +1262,7 @@ ht-degree: 95%
          + [Monitorare la prestazione del modulo - Guide alla telemetria operativa](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [Guida all’invio dei moduli - Utilizzo del servizio di invio moduli](/help/forms/forms-submission-service.md)
       + [Configurare l’invio per moduli Edge Delivery Services](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [Proprietà campo di blocco Forms adattivo](/help/edge/docs/forms/eds-form-field-properties.md)
+      + [Proprietà campo blocco Forms adattivo](/help/edge/docs/forms/eds-form-field-properties.md)
       + [Domande frequenti](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Best practice per la creazione di moduli](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1283,7 +1284,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
@@ -1366,8 +1367,8 @@ ht-degree: 95%
          + [Gestione degli archivi in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Aggiungere un archivio Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Aggiungere un archivio privato](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Aggiungere un archivio esterno](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gestire i token di accesso degli archivi esterni](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Aggiunta di un repository esterno](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gestire i token di accesso dei repository esterni](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Accedere agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Supporto per i sottomoduli Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Utilizzare Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

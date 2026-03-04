@@ -4,9 +4,9 @@ description: Scopri come generare un PDF di invio dall’invio dei moduli per Fo
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4202'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -367,6 +367,12 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
       ![Proprietà campo modulo](/help/forms/assets/formfieldpropertiesdor.png)
 
+      **Visualizza etichette per elenco a discesa a selezione multipla**
+
+      <span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      Il PDF di invio ora visualizza le etichette di visualizzazione selezionate per i componenti a discesa a selezione multipla invece dei valori memorizzati interni. Ad esempio, se un utente seleziona &quot;California&quot; e &quot;New York&quot; da un menu a discesa, il PDF di invio mostra le etichette selezionate invece dei valori interni come `CA` e `NY`.
+
    3. **Proprietà pagina master**:
       * **Immagine logo**: puoi scegliere di utilizzare l&#39;immagine del logo dal modulo adattivo, sceglierne una da DAM o caricarne una dal computer.
       * **Titolo modulo**: titolo del documento record.
@@ -377,9 +383,10 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
 
       ![Proprietà pagina master](/help/forms/assets/masterpagepropertiesdor.png)
 
-   >[!NOTE]
+   <!--
+   [!NOTE]
    >
-   >Se utilizzi un modello di modulo adattivo creato con una versione di Designer precedente alla 6.3, affinché le proprietà Colore accento e Famiglia font funzionino, accertati che nel modello di modulo adattivo nel sottomodulo principale sia presente quanto segue:
+   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
    ```xml
    <proto>
@@ -391,7 +398,7 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```
+   ```-->
 
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
 
@@ -524,6 +531,11 @@ Un file XCI consente di impostare varie proprietà di un documento. Forms as a C
 1. Individua e apri la configurazione **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]**.
 1. Specifica il percorso del file XCI e fai clic su **[!UICONTROL Salva]**.
 
+
+## Domande frequenti {#faq}
+
+**Q: le modifiche non vengono visualizzate nel PDF di invio.**
+**Ans:** Apri il modulo nell&#39;editor di Forms adattivo, apporta una modifica minore (ad esempio, regola un&#39;etichetta di campo o riordina un campo) e salva il modulo. In questo modo viene rigenerato il modello PDF di invio e le modifiche vengono visualizzate nel PDF generato successivamente.
 
 ## Consulta anche {#see-also}
 
