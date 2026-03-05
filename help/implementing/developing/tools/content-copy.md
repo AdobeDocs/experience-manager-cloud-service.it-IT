@@ -1,19 +1,19 @@
 ---
 title: Lo strumento Copia contenuto
-description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
+description: Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili On-demand dai propri ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 31%
+source-wordcount: '1502'
+ht-degree: 28%
 
 ---
 
-# Strumento Copia contenuto {#content-copy}
+# Lo strumento Copia contenuto {#content-copy}
 
-Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili on-demand dai loro ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
+Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mutabili On-demand dai loro ambienti di produzione su AEM as a Cloud Service in ambienti più bassi a scopo di test.
 
 >[!NOTE]
 >Mentre il flusso di copia del contenuto principale va dagli ambienti di livello superiore a quelli di livello inferiore, una funzionalità aggiuntiva, **Flusso successivo**, consente la copia dagli ambienti di non produzione di livello inferiore agli ambienti di non produzione di livello superiore (ad esempio Dev → Stage, RDE → Stage). Per informazioni dettagliate, inclusi i requisiti di disponibilità, vedere [Limitazioni](#limitations).
@@ -22,7 +22,7 @@ Lo strumento di copia dei contenuti consente agli utenti di copiare contenuti mu
 
 I dati attuali e reali sono utili a scopo di test, convalida e accettazione da parte degli utenti. Lo strumento di copia del contenuto consente di copiare il contenuto da un ambiente AEM as a Cloud Service di produzione a un ambiente di staging, sviluppo o [ambiente di sviluppo rapido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) per tale test.
 
-Il contenuto da copiare è definito da un set di contenuti. Un set di contenuti è costituito da un elenco di percorsi JCR che contengono il contenuto mutabile da copiare da un ambiente del servizio di authoring sorgente a un ambiente del servizio di authoring di destinazione all’interno dello stesso programma Cloud Manager. I percorsi seguenti sono consentiti in un set di contenuti.
+Un set di contenuti definisce il contenuto da copiare. Un set di contenuti è costituito da un elenco di percorsi JCR. Questi percorsi contengono il contenuto modificabile da copiare da un ambiente del servizio di authoring di origine a un ambiente del servizio di authoring di destinazione, il tutto all’interno dello stesso programma Cloud Manager. I percorsi seguenti sono consentiti in un set di contenuti:
 
 ```text
 /content
@@ -32,9 +32,9 @@ Il contenuto da copiare è definito da un set di contenuti. Un set di contenuti 
 /etc/clientlibs/fd/themes
 ```
 
-Durante la copia del contenuto, l’ambiente sorgente è l’origine di riferimento.
+Durante la copia del contenuto, l’ambiente di origine è l’origine di riferimento.
 
-* Se il contenuto è stato modificato nell’ambiente di destinazione, viene sovrascritto dal contenuto nell’origine, se i percorsi sono gli stessi.
+* Se i percorsi di origine e di destinazione corrispondono, il contenuto dell’origine sovrascrive il contenuto modificato nell’ambiente di destinazione.
 * Se i percorsi sono diversi, il contenuto dell’origine viene unito al contenuto della destinazione.
 
 ## Autorizzazioni {#permissions}
@@ -48,7 +48,7 @@ Per utilizzare lo strumento di copia del contenuto, sono necessarie determinate 
 
 Per ulteriori dettagli sulle autorizzazioni e su come impostarle, vedi [Profili team e prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Creazione di un set di contenuti {#create-content-set}
+## Creare un set di contenuti {#create-content-set}
 
 Prima di poter copiare qualsiasi contenuto, è necessario definire un set di contenuti. Una volta definiti, i set di contenuti possono essere riutilizzati per copiare il contenuto. Per creare un set di contenuti, segui la procedura riportata di seguito.
 
@@ -75,8 +75,8 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
 1. Se devi perfezionare o limitare il set di contenuti, i percorsi secondari possono essere esclusi.
 
-   1. Nell&#39;elenco dei percorsi inclusi fare clic su **Aggiungi percorsi secondari di esclusione** accanto al percorso che si desidera limitare.
-   1. Immettere il percorso secondario da escludere sotto il percorso selezionato.
+   1. Nell&#39;elenco dei percorsi inclusi fare clic sull&#39;opzione **Aggiungi percorsi secondari di esclusione** accanto al percorso che si desidera limitare.
+   1. Immettere il percorso secondario da escludere dal percorso selezionato.
    1. Selezionare **Escludi percorso**.
    1. Selezionare di nuovo **Aggiungi percorsi secondari di esclusione** per aggiungere percorsi aggiuntivi da escludere in base alle esigenze.
       * I percorsi esclusi devono essere relativi al percorso incluso.
@@ -95,34 +95,36 @@ Prima di poter copiare qualsiasi contenuto, è necessario definire un set di con
 
 Il set di contenuti può ora essere utilizzato per copiare il contenuto tra ambienti diversi.
 
-## Modifica di un set di contenuti {#edit-content-set}
+## Modificare un set di contenuti {#edit-content-set}
 
-Segui passaggi simili a quelli impiegati per la creazione del contenuto. Invece di fare clic su **Aggiungi set di contenuti**, selezionare un set esistente dalla console e selezionare **Modifica** dal menu con i puntini di sospensione.
+1. Segui passaggi simili a quelli impiegati per la creazione del contenuto. Invece di fare clic su **Aggiungi set di contenuti**, selezionare un set esistente dalla console e selezionare **Modifica** dal menu con i puntini di sospensione.
 
 ![Modifica set di contenuti](assets/edit-content-set.png)
 
-Quando modifichi il set di contenuti, puoi espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
+1. Quando modifichi il set di contenuti, puoi espandere i percorsi configurati per visualizzare i percorsi secondari esclusi.
 
-## Copia del contenuto {#copy-content}
+## Copia contenuto {#copy-content}
 
-Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto. Segui questi passaggi per copiare il contenuto.
+Una volta creato un set di contenuti, puoi utilizzarlo per copiare i contenuti.
 
 >[!NOTE]
-> Non utilizzare la copia del contenuto in un ambiente mentre è in esecuzione un&#39;operazione di [trasferimento del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) in tale ambiente.
+> Non utilizzare la copia del contenuto in un ambiente mentre un&#39;operazione di [trasferimento del contenuto](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) è in esecuzione in tale ambiente.
+
+**Per copiare i contenuti:**
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione e il programma appropriati.
 
-1. Dalla pagina **Panoramica**, accedi alla schermata **Ambienti**.
+1. Nella pagina **Panoramica**, passa a **Ambienti** > **Set di contenuti**.
 
-1. Dalla schermata **Ambienti**, passa alla pagina **Set di contenuti**.
+1. Nella console, seleziona un set di contenuti.
 
-1. Seleziona un set di contenuti dalla console e seleziona **Copia contenuto** dal menu con i puntini di sospensione.
+1. Dal menu con i puntini di sospensione, fare clic su **Copia contenuto**.
 
    ![Copia contenuto](assets/copy-content.png)
 
    >[!NOTE]
    >
-   >Un ambiente può non essere selezionabile se:
+   >Un ambiente non può essere selezionabile se si verifica una delle seguenti condizioni:
    >
    >* L’utente non dispone delle autorizzazioni appropriate.
    >* L’ambiente dispone di una pipeline in esecuzione o di un’operazione di copia del contenuto in corso.
@@ -138,9 +140,12 @@ Dopo aver creato un set di contenuti, puoi utilizzarlo per copiare il contenuto.
       * Sviluppo/RDE
    * Per impostazione predefinita, la copia del contenuto tra programmi è disabilitata. Tuttavia, su richiesta del cliente, può essere abilitato, rendendo disponibile un ulteriore campo di input **Programma di destinazione**.
 
-1. Se necessario, puoi anche scegliere di **Includere gli elenchi di controllo di accesso** nel processo di copia.
+1. (Facoltativo) Se lo desideri, imposta quanto segue:
 
-1. Seleziona **Copia**.
+   * **Includi elenchi di controllo di accesso** - Selezionare se si desidera copiare le autorizzazioni di controllo di accesso del contenuto insieme al contenuto.
+   * **Cancella** - Seleziona questa opzione per eliminare il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da una nuova lavagna ed evitare conflitti con il contenuto preesistente. Se lasci deselezionato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
+
+1. Fai clic su **Copia**.
 
 Viene avviato il processo di copia. Lo stato del processo di copia si riflette nella console del set di contenuti selezionato.
 
@@ -161,13 +166,13 @@ Puoi monitorare lo stato dei processi di copia nella pagina **Attività copia co
 Una volta iniziata la copia del contenuto, il processo può trovarsi in uno dei seguenti stati.
 
 | Stato | Descrizione |
-|---|---|
-| In corso | Operazione di copia del contenuto in corso |
-| Non riuscito | Operazione di copia del contenuto non riuscita |
-| Completato | Operazione di copia del contenuto completata |
-| Annullato | L’utente annulla un’operazione di copia del contenuto dopo averlo avviato |
+| --- | --- |
+| In corso | Operazione di copia dei contenuti in corso. |
+| Non riuscito | Operazione di copia dei contenuti non riuscita. |
+| Completato | Operazione di copia dei contenuti completata correttamente. |
+| Annullato | Un utente annulla un’operazione di copia del contenuto dopo averlo avviato. |
 
-### Annullamento di un processo di copia {#canceling}
+### Annullare un processo di copia {#canceling}
 
 Se è necessario interrompere un&#39;operazione di copia del contenuto dopo averla avviata, è possibile annullarla.
 
@@ -181,15 +186,19 @@ A tale scopo, nella pagina **Attività copia contenuto** selezionare l&#39;azion
 >
 >Se l’ambiente si trova in questo stato a causa di una cancellazione, contatta l’Assistenza clienti Adobe.
 
-### Accesso ai registri {#accessing-logs}
+### Registri di accesso {#accessing-logs}
 
 Puoi controllare i registri sia per l’ambiente di origine che per quello di destinazione per qualsiasi processo di copia del contenuto completato.
 
-A questo scopo, nella pagina **Attività copia contenuto**, seleziona l&#39;azione **Registri** dal menu con i puntini di sospensione del processo di copia per il quale desideri rivedere i registri e quindi scegliere l&#39;ambiente desiderato.
+**Per accedere ai registri:**
+
+1. Nella pagina **Copia attività contenuto**, dal menu con i puntini di sospensione, fare clic su **Registri** per il processo di copia che si desidera esaminare. Quindi seleziona l’ambiente.
 
 ![Accesso ai registri per il processo di copia del contenuto](assets/copy-content-logs.png)
 
-I registri vengono scaricati nel computer locale. Se il download non inizia, controllare le impostazioni del blocco dei popup.
+I registri vengono scaricati nel computer locale.
+
+1. Se il download non inizia, controllare le impostazioni del blocco dei popup.
 
 ## Limitazioni {#limitations}
 
@@ -205,4 +214,4 @@ Lo strumento Copia contenuto presenta le seguenti limitazioni.
 * Lo strumento di copia del contenuto non dispone di funzionalità di controllo delle versioni e non è in grado di rilevare automaticamente il contenuto modificato o creato nell&#39;ambiente di origine di un set di contenuti dall&#39;ultima operazione di copia del contenuto.
    * Se desideri aggiornare l’ambiente di destinazione solo con le modifiche apportate al contenuto, dall’ultima operazione di copia del contenuto devi creare un set di contenuti. Quindi, specifica i percorsi nell’istanza sorgente in cui sono state apportate le modifiche dall’ultima operazione di copia del contenuto.
 * Le informazioni sulla versione non sono incluse in una copia del contenuto.
-* [I modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) possono specificare campi di riferimento basati su ID universalmente univoci (UUID). Tali UUID sono specifici dell’archivio, pertanto lo strumento di copia del contenuto ricalcola questi UUID nell’ambiente di destinazione durante la copia dei frammenti di contenuto.
+* [I modelli per frammenti di contenuto](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) possono specificare campi di riferimento basati su ID universalmente univoci (UUID). Tali UUID sono specifici per l’archivio, pertanto lo strumento di copia del contenuto ricalcola questi UUID nell’ambiente di destinazione durante la copia dei frammenti di contenuto.

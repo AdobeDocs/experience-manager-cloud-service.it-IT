@@ -1,46 +1,47 @@
 ---
-title: Note sulla versione 2026.1.0 di Cloud Manager
-description: Scopri la versione 2026.1.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service.
+title: Note sulla versione 2026.3.0 di Cloud Manager
+description: Ulteriori informazioni sulla versione 2026.3.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 46%
+source-wordcount: '715'
+ht-degree: 23%
 
 ---
 
-# Note sulla versione 2026.1.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Note sulla versione 2026.3.0 di Cloud Manager in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-Scopri la versione 2026.1.0 di Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
+Ulteriori informazioni sulla versione 2026.3.0 di Cloud Manager in AEM (Adobe Experience Manager) as a Cloud Service.
 
 Consulta anche le [note sulla versione corrente di Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Date di pubblicazione {#release-date}
 
-La versione 2026.1.0 di Cloud Manager in AEM as a Cloud Service è stata rilasciata venerdì 22 gennaio 2026.
+La data di pubblicazione della versione 2026.3.0 di Cloud Manager in AEM as a Cloud Service è il venerdì 5 marzo 2026.
 
-La prossima pubblicazione è pianificata per il venerdì 5 febbraio 2026.
+La prossima pubblicazione è pianificata per il venerdì 2 aprile 2026.
+
 
 ## Novità - Cloud Manager {#cloud-manager-whats-new}
 
-* **Le pipeline di configurazione ora supportano i segreti gestiti**
+* **Cloud Manager ora supporta l&#39;opzione** Cancella **per** Importazioni copia contenuto ****
 
-  Ora gli utenti possono aggiungere e gestire i segreti direttamente nelle pipeline di configurazione di Cloud Manager. Questi segreti sostituiscono in modo sicuro i valori nelle specifiche di configurazione della pipeline e supportano distribuzioni flessibili e specifiche per l’ambiente.
+  Quando abiliti **Cancella**, Cloud Manager elimina il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da una nuova lavagna ed evitare conflitti con il contenuto preesistente. Se lasci disabilitato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
 
-  ![Opzione Visualizza/Modifica variabili nel menu a discesa per una pipeline selezionata](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-option.png)
-  *Opzione Visualizza/Modifica variabili nel menu a discesa per una pipeline selezionata.*
+  Vedi anche [Copia contenuto](/help/implementing/developing/tools/content-copy.md#copy-content).
 
-  ![Finestra di dialogo Configurazione variabili &#x200B;](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Finestra di dialogo Configurazione variabili.*
+* **Supporto per l&#39;estensibilità dell&#39;interfaccia utente in AEM Experience Hub**
+Il supporto per le estensioni dell&#39;interfaccia utente in [AEM Experience Hub](https://experience.adobe.com/experiencemanager) è ora abilitato e consente agli sviluppatori di estendere l&#39;interfaccia con funzionalità personalizzate e widget generati con Adobe App Builder.
+
+  Per ulteriori informazioni, consulta [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
 * **Stabilità, prestazioni e affidabilità migliorate**
 
   Questa versione include aggiornamenti di ottimizzazione e manutenzione che migliorano la stabilità, le prestazioni e l’affidabilità di Cloud Manager.
-
-
 
 
 ## Programmi Beta {#private-beta-program}
@@ -59,15 +60,28 @@ Sono attualmente disponibili le seguenti opportunità:
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
-### Estensibilità e personalizzazione di Experience Hub {#exp-hub-extensibility}
+### Server MCP Cloud Manager per IDE basati su intelligenza artificiale{#mcp-server-for-cm}
 
-[Experience Hub](/help/experience-hub.md) funge da punto di accesso ad AEM, personalizzato in base alle esigenze della tua organizzazione. Comunica ad Adobe le tue estensioni dell’interfaccia utente di AEM esistenti, in modo che possano aiutarti ad abilitarle in Experience Hub con il minimo sforzo.
+È ora possibile provare un server MCP (Model Context Protocol) che espone le API pubbliche di Cloud Manager come strumenti per IDE abilitati per l’intelligenza artificiale (come Cursore). Dopo averlo connesso, puoi utilizzare le richieste di conversazione per elencare e gestire programmi, pipeline, ambienti e archivi, in modo da velocizzare l’operazione senza uscire dall’editor.
 
-![Diagramma del workflow di estensibilità e personalizzazione di Experience Hub](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+Consulta la documentazione [Utilizzare MCP con AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-Incorpora esperienze personalizzate in Experience Hub per estendere e personalizzare il dashboard della tua organizzazione. Oltre ai widget incorporati di Adobe, aggiungi quelli personalizzati utilizzando il framework [Estensibilità dell’interfaccia utente](https://developer.adobe.com/uix/docs/). Crea app dell’interfaccia utente basate su JavaScript e mostrale agli utenti per soddisfare requisiti e flussi di lavoro specifici per l’azienda.
+Vedere l&#39;esercitazione [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
 
-Ti interessa la versione beta? Invia un’e-mail a [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) con il tuo OrgID Adobe e una breve descrizione della personalizzazione che intendi creare.
+Ti interessa la versione beta? Invia un&#39;e-mail a [GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) con il tuo ID organizzazione e l&#39;ID programma di Adobe.
+
+
+<!--
+### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+
+[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
+
+![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+
+Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
+
+Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
+-->
 
 ### Build più veloci con il caching dei moduli {#quick-build-cm-pipelines}
 
@@ -89,7 +103,10 @@ Ti interessa? Invia un’e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto
 
 ## Correzioni di bug {#bug-fixes}
 
-Non vi sono correzioni di bug significativi nella versione di dicembre 2025 di Cloud Manager.
+* È stato risolto un problema a causa del quale l’API Restore Points (Punti di ripristino) poteva restituire un errore 500 durante il recupero dei punti di ripristino. L’endpoint ora gestisce correttamente i valori nulli, garantendo risposte coerenti e affidabili. (CMGR-72963)
+* Cloud Manager ora accetta gli URL dell’archivio GitHub con o senza il suffisso `.git`, allineando il comportamento API all’interfaccia utente e rendendo più flessibile l’onboarding dell’archivio. (CMGR-73296)
+* La convalida del nome del profilo di prodotto ora non distingue tra maiuscole e minuscole, evitando errori durante la creazione di profili con nomi che differiscono solo per l’iniziale maiuscola. (CMGR-74075)
+* Ora è possibile eseguire più operazioni di ripristino dalla stessa esecuzione della pipeline, abilitando i ripristini sequenziali per ambienti quali Stage e Produzione senza richiedere una nuova esecuzione della pipeline. (CMGR-73538)
 
 
 <!-- ## Known issues {#known-issues} -->
