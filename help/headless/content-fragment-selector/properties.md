@@ -1,11 +1,11 @@
 ---
 title: Proprietà selettore frammento di contenuto micro-front-end per Adobe Experience Manager as a Cloud Service
 description: Proprietà per configurare il Selettore frammenti di contenuto Microsoft FrontEnd per cercare, trovare e recuperare frammenti di contenuto dall’applicazione.
-role: Admin, User
+role: Admin, User, Developer
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
+source-git-commit: 86be8e53b77e8c7771f5a60b711a045128899acd
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1122'
 ht-degree: 4%
 
 ---
@@ -20,18 +20,19 @@ Puoi utilizzare le seguenti proprietà per personalizzare il rendering del selet
 
 | Proprietà | Tipo | Obbligatorio | Predefiniti | Descrizione |
 |--- |--- |--- |--- |--- |
-| `ref` | FragmentSelectorRef | | | Riferimento all&#39;istanza `ContentFragmentSelector`, che consente l&#39;accesso alle funzionalità fornite, ad esempio `reload`. |
+| `ref` | FragmentSelectorRef | No | | Riferimento all&#39;istanza `ContentFragmentSelector`, che consente l&#39;accesso alle funzionalità fornite, ad esempio `reload`. |
 | `imsToken` | stringa | No | | Token IMS utilizzato per l’autenticazione. Se non viene fornito, verrà avviato il flusso di accesso IMS. |
 | `repoId` | stringa | No | | ID archivio utilizzato per il selettore frammento. Se fornito, il selettore si connette automaticamente all’archivio specificato e il menu a discesa dell’archivio è nascosto. Se non viene fornito, l’utente può selezionare un archivio dall’elenco degli archivi disponibili a cui ha accesso. |
+| `allowedRepositoryIds` | stringa[] | No | | Elenco di ID dell’archivio per filtrare archivi e frammenti di contenuto nel selettore dei frammenti di contenuto. Se vengono forniti gli ID dell’archivio, solo questi archivi saranno visibili nel selettore dell’archivio. Se non viene fornito un array vuoto, saranno disponibili tutti gli archivi a cui l’utente ha accesso. |
 | `defaultRepoId` | stringa | No | | ID archivio che verrà selezionato per impostazione predefinita quando viene visualizzato il selettore dell’archivio. Utilizzato solo quando `repoId` non è fornito. Se `repoId` è impostato, il selettore dell&#39;archivio è nascosto e questo valore viene ignorato. |
 | `orgId` | stringa | No | | ID organizzazione utilizzato per l’autenticazione. Se non viene fornito, l’utente può selezionare un archivio da diverse organizzazioni a cui ha accesso. Se l’utente non ha accesso ad alcun archivio o organizzazione, il contenuto non verrà caricato. |
-| `locale` | stringa | No | `en-US` | Lingua. |
+| `locale` | stringa | No | &quot;en-US&quot; | Lingua. |
 | `env` | stringa | No | | Ambiente di implementazione. Vedere il tipo `Env` per i nomi di ambiente consentiti. |
 | `filters` | FiltroFrammento | No | `{ folder: "/content/dam" }` | Filtri da applicare all’elenco dei frammenti di contenuto. Per impostazione predefinita, i frammenti in `/content/dam` verranno visualizzati. |
 | `isOpen` | booleano | No | `false` | Contrassegno flag per controllare se il selettore è aperto o chiuso. |
 | `noWrap` | booleano | No | `false` | Determina se il rendering del selettore frammento viene eseguito senza una finestra di dialogo di ritorno a capo. Se è impostato su `true`, il selettore di frammenti è incorporato direttamente nel contenitore principale. Utile per integrare il selettore in layout o flussi di lavoro personalizzati. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva ogni volta che cambia la selezione dei frammenti di contenuto. Fornisce i frammenti selezionati, il nome di dominio, le informazioni sul tenant, l’ID dell’archivio e gli archivi di consegna. |
-| `onDismiss` | () => void | No | | La funzione di callback si attiva quando viene eseguita l’azione di esclusione, ad esempio chiudendo il selettore. |
+| `onDismiss` | () => void | No | | Funzione di callback attivata quando viene eseguita l&#39;azione di esclusione (ad esempio, chiudendo il selettore). |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | La funzione di callback si attiva quando l&#39;utente conferma la selezione. Riceve i frammenti di contenuto selezionati, il nome di dominio, le informazioni sul tenant, l’ID archivio e gli archivi di consegna. |
 | `theme` | &quot;chiaro&quot; o &quot;scuro&quot; | No | | Tema per il selettore di frammenti. Per impostazione predefinita, è impostato sul tema dell’ambiente unifiedShell. |
 | `selectionType` | &quot;singolo&quot; o &quot;multiplo&quot; | No | `single` | Il tipo di selezione può essere utilizzato per limitare la selezione per il selettore di frammenti. |
@@ -52,7 +53,7 @@ Le proprietà `ImsAuthProps` definiscono le informazioni di autenticazione e il 
 | `imsClientId` | Valore stringa che rappresenta l’ID client IMS utilizzato a scopo di autenticazione. Questo valore è fornito da Adobe ed è specifico per la tua organizzazione Adobe AEM CS. |
 | `imsScope` | Descrive gli ambiti utilizzati nell&#39;autenticazione. Gli ambiti determinano il livello di accesso dell&#39;applicazione alle risorse dell&#39;organizzazione. Più ambiti possono essere separati da virgole. |
 | `redirectUrl` | Rappresenta l&#39;URL a cui l&#39;utente viene reindirizzato dopo l&#39;autenticazione. Questo valore viene in genere impostato sull’URL corrente dell’applicazione. Se `redirectUrl` non viene fornito, `ImsAuthService` utilizzerà il redirectUrl utilizzato per registrare `imsClientId` |
-| `modalMode` | Valore booleano che indica se il flusso di autenticazione deve essere visualizzato o meno in un modale (pop-up). Se è impostato su `true`, il flusso di autenticazione viene visualizzato in un popup. Se è impostato su `false`, il flusso di autenticazione viene visualizzato in un ricaricamento dell&#39;intera pagina.<br>**Nota:** per una migliore interfaccia utente, è possibile controllare dinamicamente questo valore se la finestra popup del browser dell&#39;utente è disabilitata. |
+| `modalMode` | Valore booleano che indica se il flusso di autenticazione deve essere visualizzato o meno in un modale (pop-up). Se è impostato su `true`, il flusso di autenticazione viene visualizzato in un popup. Se è impostato su `false`, il flusso di autenticazione viene visualizzato in un ricaricamento dell&#39;intera pagina. _Note :_per una migliore interfaccia utente, è possibile controllare dinamicamente questo valore se la finestra popup del browser dell&#39;utente è disabilitata. |
 | `onImsServiceInitialized` | Funzione di callback chiamata quando viene inizializzato il servizio di autenticazione Adobe IMS. Questa funzione accetta un parametro, `service`, che è un oggetto che rappresenta il servizio Adobe IMS. Per ulteriori dettagli, vedere [`ImsAuthService`](#imsauthservice-ims-auth-service). |
 | `onAccessTokenReceived` | Funzione di callback chiamata quando viene ricevuto un `imsToken` dal servizio di autenticazione Adobe IMS. Questa funzione accetta un parametro, `imsToken`, che è una stringa che rappresenta il token di accesso. |
 | `onAccessTokenExpired` | Funzione di callback chiamata quando un token di accesso è scaduto. Questa funzione viene in genere utilizzata per attivare un nuovo flusso di autenticazione per ottenere un nuovo token di accesso. |
@@ -65,7 +66,7 @@ La classe `ImsAuthService` gestisce il flusso di autenticazione per il selettore
 | Nome funzione | Descrizione |
 |--- |--- |
 | `isSignedInUser` | Determina se l&#39;utente è attualmente connesso al servizio e restituisce di conseguenza un valore booleano. |
-| `getImsToken` | Recupera l&#39;autenticazione `imsToken` per l&#39;utente attualmente connesso, che può essere utilizzata per autenticare le richieste ad altri servizi, ad esempio per generare la risorsa _rendition._ |
+| `getImsToken` | Recupera l&#39;autenticazione `imsToken` per l&#39;utente attualmente connesso, che può essere utilizzata per autenticare le richieste ad altri servizi, ad esempio per generare la rappresentazione delle risorse. |
 | `signIn` | Avvia il processo di accesso per l&#39;utente. Questa funzione utilizza `ImsAuthProps` per mostrare l&#39;autenticazione in un popup o in un ricaricamento dell&#39;intera pagina. |
 | `signOut` | Firma l’utente fuori dal servizio, invalidando il token di autenticazione e richiedendo di nuovo l’accesso per accedere alle risorse protette. Richiamando questa funzione verrà ricaricata la pagina corrente. |
 | `refreshToken` | Aggiorna il token di autenticazione per l&#39;utente attualmente connesso, evitando la scadenza e garantendo l&#39;accesso ininterrotto alle risorse protette. Restituisce un nuovo token di autenticazione che può essere utilizzato per le richieste successive. |
