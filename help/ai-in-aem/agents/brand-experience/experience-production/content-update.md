@@ -4,7 +4,7 @@ description: Scopri cos’è il processo di aggiornamento dei contenuti di Brand
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 # Processo di aggiornamento contenuti {#content-update}
 
-Il processo di aggiornamento dei contenuti di [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatizza la produzione dei contenuti per accelerare le attività quotidiane per Adobe Experience Manager (AEM) as a Cloud Service e Edge Delivery Services.
+Il processo di aggiornamento dei contenuti di [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automatizza la produzione dei contenuti per accelerare le attività quotidiane per Adobe Experience Manager (AEM) as a Cloud Service e Edge Delivery Services.
 
 ## Panoramica {#overview}
 
 Il processo di aggiornamento del contenuto aggiorna il contenuto esistente, inclusi frammenti di contenuto, pagine, moduli e risorse. Il processo può eseguire azioni quali l’aggiornamento, la rimozione, la sostituzione o l’aggiunta di elementi di contenuto per mantenere le esperienze accurate e correnti. Gli input possono essere descrizioni in linguaggio naturale e, se utilizzati con Jira PDF e screenshot, possono fornire anche input.
 
-Il processo di aggiornamento dei contenuti trasforma i dettagli forniti, tramite linguaggio naturale o visualizzazioni, in aggiornamenti dei contenuti sulla pagina. Fornisci l’URL di una pagina da aggiornare, insieme ai dettagli su cosa è necessario aggiornare e all’abilità dell’agente che completa l’attività. Se utilizzato con Adobe Experience Manager (AEM) as a Cloud Service, il processo crea un nuovo [lancio](/help/sites-cloud/authoring/launches/overview.md) che consente di rivedere gli aggiornamenti prima di applicare. Se utilizzato con la creazione di documenti, il processo crea una nuova [versione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+Il processo di aggiornamento dei contenuti trasforma i dettagli forniti, tramite linguaggio naturale o visualizzazioni, in aggiornamenti dei contenuti sulla pagina. Fornisci l’URL di una pagina da aggiornare, insieme ai dettagli su cosa è necessario aggiornare e all’abilità dell’agente che completa l’attività. Se utilizzato con Adobe Experience Manager (AEM) as a Cloud Service, il processo crea un nuovo [lancio](/help/sites-cloud/authoring/launches/overview.md) che consente di rivedere gli aggiornamenti prima di applicare. Se utilizzato con la creazione di documenti, il processo crea una nuova [versione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Funzionalità {#capabilities}
 

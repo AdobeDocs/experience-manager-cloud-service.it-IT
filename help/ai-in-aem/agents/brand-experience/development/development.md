@@ -1,10 +1,10 @@
 ---
-title: Panoramica dei processi di sviluppo
-description: Scopri in che modo il processo di sviluppo in AEM analizza le pipeline non riuscite in Cloud Manager e genera i registri per suggerire correzioni di codice e velocizzare il debug.
+title: Panoramica dell’agente di sviluppo
+description: Scopri in che modo l’agente di sviluppo di AEM analizza le pipeline in Cloud Manager non riuscite e genera i registri per suggerire correzioni di codice e velocizzare il debug.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
+source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# Panoramica dei processi di sviluppo {#development-job-overview}
+# Panoramica dell’agente di sviluppo {#development-agent-overview}
 
-[Come parte di Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) il processo di sviluppo consente agli sviluppatori e agli amministratori di AEM di creare, eseguire il debug, distribuire e ottimizzare il codice in modo più efficiente.
+[Come parte di Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) l&#39;agente di sviluppo aiuta sviluppatori e amministratori di AEM a creare, eseguire il debug, distribuire e ottimizzare il codice in modo più efficiente.
 
-Il processo può recuperare gli stati della pipeline e aiutarti a risolvere eventuali errori nei passaggi di build suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
+L’agente può recuperare gli stati della pipeline e aiutarti a risolvere eventuali errori nei passaggi di build suggerendo correzioni, risparmiando tempo durante il debug delle distribuzioni AEM as a Cloud Service negli ambienti di sviluppo, staging e produzione. Esamina i registri di build e il codice correlato per consigliare una correzione da applicare manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478015?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ Il processo può recuperare gli stati della pipeline e aiutarti a risolvere even
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-Per accedere a questo processo, consulta le [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriverti al programma beta, assicurandoti di indicare il tuo interesse per il processo di sviluppo. Puoi anche inviare un feedback specifico per il processo di sviluppo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+Per accedere a questo agente, fare riferimento alle [note sulla versione](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) per istruzioni su come iscriversi al programma beta, assicurandosi di indicare il proprio interesse per l&#39;agente di sviluppo. Puoi anche inviare un feedback specifico dell&#39;agente di sviluppo a [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Segui un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
+[Segui un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) per scoprire come utilizzare l&#39;agente di sviluppo per risolvere gli errori della pipeline.
 
-## Accedere al processo di sviluppo tramite Cloud Manager {#how-to-access-the-job}
+## Accedere all’agente di sviluppo tramite Cloud Manager {#how-to-access-the-agent}
 
-Accedi al processo di sviluppo tramite l’Assistente AI presente nelle interfacce utente, inclusi Cloud Manager o Experience Hub.
+Puoi accedere all’agente di sviluppo tramite l’Assistente AI presente nelle interfacce utente, inclusi Cloud Manager o Experience Hub.
 
 1. Per iniziare, fare clic su [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) per aprire la relativa home page.
 
@@ -79,10 +79,9 @@ Accedi al processo di sviluppo tramite l’Assistente AI presente nelle interfac
 
    ![Richiesta dell&#39;Assistente AI e risposta risultante](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
-
 ## Autorizzazioni {#permissions}
 
-Il processo di sviluppo richiede il ruolo Cloud Manager - Sviluppatore o il ruolo Cloud Manager - Program Manager.
+L’agente di sviluppo richiede il ruolo Cloud Manager - Sviluppatore o il ruolo Cloud Manager - Responsabile del programma.
 
 ## Prompt di esempio {#sample-prompts}
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2c70dcda8a85bfc08ca1fd21578057894344c147
+source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
 workflow-type: tm+mt
-source-wordcount: '7034'
+source-wordcount: '7038'
 ht-degree: 95%
 
 ---
@@ -841,8 +841,8 @@ ht-degree: 95%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1100,21 +1100,23 @@ ht-degree: 95%
       + [Panoramica](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
          + [Panoramica](/help/ai-in-aem/agents/brand-experience/overview.md)
-         + [Processo di aggiornamento contenuti](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-         + [Processo di creazione comunicazione](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
-         + [Processo di creazione modulo](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
-         + [Processo di sviluppo](/help/ai-in-aem/agents/brand-experience/development/development.md)
+         + Experience Production Agent {#experience-production}
+            + [Panoramica](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
+            + [Processo di aggiornamento contenuti](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+            + [Processo di creazione comunicazione](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+            + [Processo di creazione modulo](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+         + Agente di modernizzazione esperienza {#modernization}
+            + [Panoramica](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+            + [Guida introduttiva](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+            + [Console di modernizzazione](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+         + [Agente di sviluppo](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Agente di Content Advisor {#content-advisor}
          + [Panoramica](/help/ai-in-aem/agents/content-advisor/overview.md)
-         + [Processo di individuazione contenuti](/help/ai-in-aem/agents/content-advisor/discovery.md)
-         + [Processo di ottimizzazione dei contenuti](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
+         + [Agente di individuazione contenuto](/help/ai-in-aem/agents/content-advisor/discovery.md)
+         + [Agente di ottimizzazione del contenuto](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Agente di governance {#governance}
          + [Panoramica](/help/ai-in-aem/agents/governance/overview.md)
          + [Importare un criterio per i marchi](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
-      + Agente di modernizzazione esperienza {#modernization}
-         + [Panoramica](/help/ai-in-aem/agents/modernization/overview.md)
-         + [Guida introduttiva](/help/ai-in-aem/agents/modernization/getting-started.md)
-         + [Console di modernizzazione](/help/ai-in-aem/agents/modernization/console.md)
    + Assistente IA {#ai-assistant}
       + [Configurare l’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [Informazioni sull’Assistente IA in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
@@ -1285,7 +1287,7 @@ ht-degree: 95%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)

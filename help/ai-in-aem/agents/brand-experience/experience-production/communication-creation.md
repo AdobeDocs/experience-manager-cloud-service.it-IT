@@ -1,18 +1,18 @@
 ---
 title: Processo di creazione comunicazione
-description: Scopri il processo di creazione di comunicazioni degli agenti di esperienza per i marchi e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
+description: Scopri il processo di creazione di comunicazioni degli agenti di produzione di esperienze e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Abilità nella creazione di comunicazioni {#ic-creation-skill}
+# Processo di creazione comunicazione {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Le [comunicazioni interattive](/help/forms/introduction-to-interactive-communication.md) sono documenti personalizzati e basati su dati progettati per la corrispondenza aziendale, ad esempio rendiconti di account, documenti relativi alle policy, fatture, kit di benvenuto e avvisi sui benefit. A differenza dei moduli che raccolgono input dagli utenti, le comunicazioni interattive generano documenti di output con contenuto dinamico specifico per il destinatario.
 
-Il processo di creazione delle comunicazioni è una funzionalità di [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) progettata per sviluppare comunicazioni interattive utilizzando i prompt del linguaggio naturale. Questo processo genera automaticamente una corrispondenza personalizzata basata su dati per la stampa (in formato PDF). Il processo viene evidenziato tramite l’Assistente IA.
+Il processo di creazione delle comunicazioni fa parte di [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) progettato per sviluppare le comunicazioni interattive utilizzando i prompt del linguaggio naturale. Questo processo genera automaticamente una corrispondenza personalizzata basata su dati per la stampa (in formato PDF). Il processo viene evidenziato tramite l’Assistente IA.
 
 Alcuni dei vantaggi principali dell&#39;occupazione legata alla creazione di comunicazioni includono:
 

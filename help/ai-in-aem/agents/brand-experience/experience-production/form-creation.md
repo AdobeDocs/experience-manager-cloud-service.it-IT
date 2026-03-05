@@ -4,9 +4,9 @@ description: Scopri il processo di creazione dei moduli di Brand Experience Agen
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Processo di creazione modulo {#form-creation-job}
 
-Il processo di creazione dei moduli è una funzionalità di [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) progettata per sviluppare moduli utilizzando prompt del linguaggio naturale. Questo processo genera automaticamente la struttura del modulo e i tipi di campo appropriati. Il processo viene evidenziato tramite l’Assistente IA.
+Il processo di creazione del modulo fa parte di [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) progettato per sviluppare moduli utilizzando prompt del linguaggio naturale. Questo processo genera automaticamente la struttura del modulo e i tipi di campo appropriati. Il processo viene evidenziato tramite l’Assistente IA.
 
 Alcuni dei vantaggi principali dei processi di creazione dei moduli includono:
 
