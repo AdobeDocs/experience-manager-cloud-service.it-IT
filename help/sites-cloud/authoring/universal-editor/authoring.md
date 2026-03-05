@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2990'
 ht-degree: 12%
 
 ---
@@ -100,7 +100,7 @@ Tocca o fai clic rispettivamente su **Annulla** o **Fine** per ignorare o salvar
 
 #### Opzioni di formattazione RTF {#formatting-options}
 
-L’editor Rich Text di Universal Editor consente all’autore di applicare la formattazione di testo standard. Per impostazione predefinita, sono disponibili le seguenti opzioni.
+L’editor Rich Text di Universal Editor consente all’autore di applicare la formattazione di testo standard. Sono disponibili le seguenti opzioni.
 
 * **Stile paragrafo**
    * Paragrafo, h1-h6, codice
@@ -108,6 +108,9 @@ L’editor Rich Text di Universal Editor consente all’autore di applicare la f
 * **Corsivo**
 * **Sottolineato**
 * **Barrato**
+* **Colore testo**
+   * Apre una tavolozza di colori in cui è possibile selezionare un colore o specificare un valore esadecimale
+   * Disponibile solo nell’editor modale, non nel contesto
 * **Apice**
 * **Pedice**
 * **Elenco puntato**
@@ -122,12 +125,21 @@ L’editor Rich Text di Universal Editor consente all’autore di applicare la f
    * Specifica un URL o utilizza il [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) per selezionare una risorsa da AEM.
 * **Tabella**
    * Utilizza il menu a discesa per inserire una nuova tabella del numero di colonne e righe selezionato o per inserire e rimuovere nuove colonne o righe.
+* **Allineamento**
+   * **Allinea a sinistra**
+   * **Allinea al centro**
+   * **Allinea a destra**
+   * **Allinea giustificato**
+* **Da destra a sinistra**
+* **Da sinistra a destra**
+* **Rientro**
+* **Rientro negativo**
 * **Incolla come testo**
    * Rimuovere la formattazione dal testo presente negli Appunti prima di incollarla nell&#39;Editor universale.
 * **Rimuovi tutta la formattazione**
    * Rimuovi tutte le opzioni di formattazione dal testo selezionato.
 
-L’editor Rich Text può essere configurato in modo da nascondere le opzioni o mostrare opzioni aggiuntive a seconda delle esigenze degli autori. Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;editor Rich Text per Universal Editor](/help/implementing/universal-editor/configure-rte.md).
+Le opzioni disponibili per impostazione predefinita possono variare a seconda del back-end. L’editor Rich Text può essere configurato in modo da nascondere le opzioni o mostrare opzioni aggiuntive a seconda delle esigenze degli autori. Per ulteriori informazioni, vedere il documento [Configurazione dell&#39;editor Rich Text per Universal Editor](/help/implementing/universal-editor/configure-rte.md).
 
 ### Editing di file multimediali {#edit-media}
 
@@ -178,7 +190,13 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 
    ![Seleziona icona di aggiunta](assets/add-icon.png)
 
-1. Se per il contenitore sono consentiti più componenti, seleziona quello che desideri inserire dal menu a discesa. Se è consentito un solo componente, questo viene inserito automaticamente.
+1. Viene visualizzata la finestra di dialogo del selettore dei componenti.
+   * Utilizza la colonna a sinistra per filtrare i componenti per categoria o utilizza la ricerca per filtrare per nome.
+   * Fai clic sul nome del componente nella colonna di destra per inserirlo nel contenitore.
+   * Se nel contenitore è consentito un solo componente, questo viene inserito automaticamente.
+   * Fai clic all’esterno del selettore per annullare l’inserimento del componente.
+
+   ![Selettore componenti](assets/component-picker.png)
 
 Il componente viene inserito nel contenitore e può essere modificato nell’editor.
 
@@ -269,7 +287,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 

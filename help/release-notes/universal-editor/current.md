@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.02.26 dell’editor universale
-description: Queste sono le note sulla versione 2026.02.26 dell’editor universale.
+title: Note sulla versione 2026.03.05 dell’editor universale
+description: Queste sono le note sulla versione 2026.03.05 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# Note sulla versione 2026.02.26 dell’editor universale {#release-notes}
+# Note sulla versione 2026.03.05 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 26 febbraio 2026 di Universal Editor.
+Queste sono le note sulla versione del 5 marzo 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ Queste sono le note sulla versione del 26 febbraio 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* Sono state aggiunte descrizioni a tutti i campi dello schema per consentire agli sviluppatori di generare file di definizione di modelli/filtri/componenti.
-* Gli aggiornamenti multicampo ai frammenti di contenuto sono ora supportati per le modifiche nel contesto.
-
+* [Il selettore dei componenti](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) ha un nuovo design.
+* [È ora disponibile un selettore colore](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) per l&#39;editor Rich Text.
 
 ## Funzioni per adozione anticipata {#early-adopter}
 
@@ -38,7 +37,5 @@ Se ti interessa testare le prossime funzionalità elencate di seguito e condivid
 
 ## Altri miglioramenti {#other-improvements}
 
-* L&#39;editor non imposta più il contenuto su `{}` per impostazione predefinita prima che arrivi il contenuto, impedendo la perdita di dati in determinate situazioni.
-* La persistenza dei dati quando il campo è a fuoco è stata resa più robusta.
-* Le modifiche non vengono più perse in determinate situazioni quando si esegue la modifica nel pannello sinistro e quindi si seleziona un altro elemento nella finestra dell’editor.
-* È stato risolto un problema di persistenza relativo ai campi Editor Rich Text per i frammenti di contenuto quando si utilizzano gli endpoint OpenAPI.
+* Le opzioni di allineamento, direzione del testo e rientro ora sono [abilitate per impostazione predefinita nell&#39;editor Rich Text](/help/implementing/universal-editor/configure-rte.md), purché supportate dal backend.
+* Ora viene eseguito il rendering delle schede quando si utilizza un frammento di contenuto con API aperta e schema di interfaccia utente.
