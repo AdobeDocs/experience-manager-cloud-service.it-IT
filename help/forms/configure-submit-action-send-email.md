@@ -5,10 +5,10 @@ keywords: come inviare un’e-mail per un modulo adattivo, Azione di invio e-mai
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 7%
+source-wordcount: '953'
+ht-degree: 11%
 
 ---
 
@@ -56,6 +56,11 @@ Per configurare un’azione di invio Invia e-mail per il componente di base:
 1. Aggiungi un modello e-mail per configurare l’azione di invio dell’e-mail.
    * Puoi specificare il percorso del modello e-mail esterno salvato nelle risorse AEM utilizzando l&#39;opzione **[!UICONTROL Percorso modello esterno]**.
    * Puoi anche aggiungere un modello e-mail personalizzato per l&#39;invio del modulo nella casella di testo **[!UICONTROL Modello e-mail]**.
+
+   >[!NOTE]
+   >
+   > È inoltre possibile abilitare **[!UICONTROL Utilizzare il modello HTML]** per inviare le e-mail utilizzando un layout HTML personalizzato anziché il modello predefinito. Quando questa opzione è abilitata, specifica il file HTML nel campo **Percorso modello esterno**. Questa funzione è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Facoltativo] L&#39;azione di invio **[!UICONTROL Invia e-mail]** consente di includere allegati e un [documento di record (DoR)](generate-document-of-record-core-components.md) con l&#39;e-mail.
 1. Fai clic su **[!UICONTROL Fine]**.
 
@@ -76,6 +81,11 @@ Per configurare l’azione di invio Invia e-mail per il componente core:
 1. Aggiungi un modello e-mail per configurare l’azione di invio dell’e-mail.
    * Puoi specificare il percorso del modello e-mail esterno salvato nelle risorse AEM utilizzando l&#39;opzione **[!UICONTROL Percorso modello esterno]**.
    * Puoi anche aggiungere un modello e-mail personalizzato per l&#39;invio del modulo nella casella di testo **[!UICONTROL Modello e-mail]**.
+
+   >[!NOTE]
+   >
+   > È inoltre possibile abilitare **[!UICONTROL Utilizzare il modello HTML]** per inviare le e-mail utilizzando un layout HTML personalizzato anziché il modello predefinito. Quando questa opzione è abilitata, specifica il file HTML nel campo **Percorso modello esterno**. Questa funzione è disponibile tramite il programma di accesso anticipato. Per richiedere l&#39;accesso, invia un&#39;e-mail dal tuo indirizzo ufficiale a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Facoltativo] L&#39;azione di invio **[!UICONTROL Invia e-mail]** consente di includere allegati e un [documento di record (DoR)](generate-document-of-record-core-components.md) con l&#39;e-mail.
 1. Fai clic su **[!UICONTROL Fine]**.
 
@@ -89,8 +99,8 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia e-mail]** azione di invio.
@@ -104,6 +114,7 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 1. Aggiungi un modello e-mail per configurare l’azione di invio dell’e-mail.
    * Puoi specificare il percorso del modello e-mail esterno salvato nelle risorse AEM utilizzando l&#39;opzione **[!UICONTROL Percorso modello esterno]**.
    * Puoi anche aggiungere un modello e-mail personalizzato per l&#39;invio del modulo nella casella di testo **[!UICONTROL Modello e-mail]**.
+
 1. [Facoltativo] L&#39;azione di invio **[!UICONTROL Invia e-mail]** consente di includere allegati e un [documento di record (DoR)](generate-document-of-record-core-components.md) con l&#39;e-mail.
 1. Fai clic su **[!UICONTROL Salva&amp;Chiudi]**.
 
@@ -113,7 +124,7 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
 * Si consiglia di mantenere il contenuto dell’e-mail chiaro e conciso. Gli utenti devono comprendere lo scopo dell’e-mail e tutte le azioni da intraprendere.
 * Si consiglia di assegnare nomi elementi univoci a tutti i campi modulo, anche se sono posizionati in pannelli diversi all’interno di un modulo adattivo.
-* Quando si utilizza AEM as a Cloud Service, i messaggi e-mail in uscita richiedono la crittografia. Per impostazione predefinita, la funzionalità e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [richiedi l&#39;accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it#sending-email).
+* Quando si utilizza AEM as a Cloud Service, i messaggi e-mail in uscita richiedono la crittografia. Per impostazione predefinita, la funzionalità e-mail in uscita è disabilitata. Per attivarlo, invia un ticket di supporto a [richiedi l&#39;accesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 ## Articoli correlati
 
