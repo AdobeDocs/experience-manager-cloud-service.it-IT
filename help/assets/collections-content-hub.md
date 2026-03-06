@@ -3,10 +3,10 @@ title: Gestire le raccolte in Content Hub
 description: Scopri come gestire le raccolte in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1914'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Una raccolta fa riferimento a un insieme di risorse che possono essere condivise
 
 Consente agli utenti di accedere e gestire facilmente le diverse risorse disponibili in [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3445308/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 
@@ -198,3 +198,54 @@ Gli amministratori di Content Hub possono fissare le raccolte in Content Hub per
    Le raccolte contrassegnate come Preferiti ora vengono visualizzate nella scheda **[!UICONTROL Preferiti]**. In alternativa, è possibile rimuovere le raccolte da **[!UICONTROL Preferiti]**. A tale scopo, fare clic su **[!UICONTROL Altre azioni]** ![Icona Altre azioni](assets/do-not-localize/more-actions.png) e selezionare **[!UICONTROL Rimuovi dai preferiti]**.
 
    ![Rimuovi raccolta come preferita](assets/remove-favorite-collection.png)
+
+## Domande frequenti {#faqs-manage-collections-content-hub}
+
+### A cosa si fa riferimento come raccolte in AEM Assets Content Hub?
+
+Una raccolta in AEM Assets Content Hub si riferisce a un insieme di risorse che possono essere condivise tra gli utenti. Le raccolte possono includere risorse da posizioni diverse mantenendo al contempo la loro integrità referenziale. Creano uno spazio condiviso per gli utenti per accedere ai contenuti e utilizzarli in modo efficiente.
+
+### Come posso creare una nuova raccolta in AEM Assets Content Hub?
+
+Per creare una nuova raccolta in AEM Assets Content Hub, vai alla scheda Raccolte e fai clic su **Crea raccolta**. Nella nuova finestra della raccolta, aggiungi un titolo e una descrizione, seleziona il tipo di controllo di accesso nell&#39;elenco a discesa **Chi può accedere** e fai clic su **Crea**. A questo punto puoi aggiungere risorse alla raccolta.
+
+### Quali tipi di controllo di accesso sono disponibili durante la creazione di una raccolta?
+
+Esistono tre tipi di controllo di accesso: **Privato** - Solo il creatore e gli amministratori possono modificare e accedere, **Pubblico** - Solo visualizzazione - Tutti possono visualizzare, ma solo il creatore e gli amministratori possono modificare e **Pubblico** - Visualizza e modifica - tutti possono accedere e modificare la raccolta senza restrizioni.
+
+### Chi può eseguire azioni sulle raccolte in Content Hub?
+
+Gli utenti di Content Hub possono eseguire azioni quali la creazione, la visualizzazione, la condivisione, il download, la rimozione, l’eliminazione, il fissaggio delle raccolte e la loro contrassegnazione come preferiti. Gli amministratori dispongono di privilegi aggiuntivi, ad esempio per visualizzare tutte le opzioni di accesso ed eliminare le raccolte.
+
+### Come si aggiungono risorse a una raccolta esistente in AEM Assets Content Hub?
+
+Selezionare le risorse da aggiungere, fare clic su **Aggiungi alla raccolta** e scegliere la raccolta dall&#39;elenco. Puoi anche cercare le raccolte utilizzando la barra di ricerca. Fai clic su **Aggiungi alla raccolta** per confermare l&#39;azione.
+
+### È possibile filtrare e cercare le raccolte in AEM Assets Content Hub?
+
+Sì, le raccolte possono essere filtrate e cercate in AEM Assets Content Hub per nome, autorizzazioni di accesso o creatore. I filtri includono opzioni come **Tutte le raccolte**, **Solo io**, **Chiunque può visualizzare**, **Chiunque può modificare**, **Creato da chiunque** e **Creato da me**.
+
+### Come si scaricano le risorse da una raccolta in AEM Assets Content Hub?
+
+Per scaricare risorse da una raccolta in AEM Assets Content Hub, passa alla scheda **Raccolte** e fai clic sull&#39;icona Scarica sulla scheda della raccolta per scaricare tutte le risorse. Puoi anche aprire la raccolta, selezionare singole risorse e fare clic su **Scarica** per scaricarle separatamente.
+
+### Come possono essere condivise le risorse da una raccolta in AEM Assets Content Hub?
+
+Assets può essere condiviso abilitando la condivisione di collegamenti pubblici in Content Hub. Seleziona l’icona di condivisione sulla scheda della risorsa per copiare il collegamento di condivisione, che può quindi essere inviato ai destinatari. Non è possibile condividere raccolte private.
+
+### Chi può rimuovere risorse da una raccolta in AEM Assets Content Hub?
+
+Un proprietario della raccolta, un amministratore o un utente non amministratore con diritti di modifica può rimuovere una o più risorse da una raccolta. Per rimuovere, selezionare le risorse e fare clic su **Rimuovi dalla raccolta**, quindi confermare la rimozione.
+
+### Chi è autorizzato a eliminare una raccolta da AEM Assets Content Hub e come avviene?
+
+Solo gli amministratori e il creatore di una raccolta possono eliminarla. Per eliminare, accedi alla scheda Raccolte, seleziona la raccolta e fai clic sull’icona Elimina. La raccolta viene rimossa da AEM Assets Content Hub.
+
+### Quali sono tutte le opzioni che un amministratore può configurare per le raccolte in AEM Assets Content Hub?
+
+L’amministratore può abilitare o disabilitare le seguenti opzioni per le raccolte in AEM Assets Content Hub:
+
+* Attiva l&#39;opzione **Visualizza solo raccolte** per consentire raccolte accessibili a tutti ma modificabili solo dall&#39;autore e dall&#39;amministratore.
+
+* Attiva l&#39;opzione **Raccolte pubbliche** per consentire a tutti gli utenti di accedere e modificare le raccolte. Se le opzioni **Visualizza solo raccolte** e **Raccolte pubbliche** sono disabilitate, per impostazione predefinita gli utenti non amministratori possono creare solo raccolte private.
+

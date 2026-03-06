@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 9%
+source-wordcount: '2815'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 * Eventuali collegamenti personalizzati da includere su Content Hub, oltre a risorse, raccolte e informazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472954/?captions=ita&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Prerequisiti {#prerequisites-configuration-ui}
 
@@ -264,7 +264,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
@@ -329,3 +329,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Ulteriori informazioni sulla condivisione di [risorse in [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Domande frequenti {#faqs-content-hub-upload-assets}
+
+### Chi può accedere e configurare le impostazioni dell’interfaccia utente di AEM Assets Content Hub?
+
+Solo gli utenti con diritti di amministratore di Content Hub possono accedere e configurare le impostazioni dell’interfaccia utente di Content Hub. Prima di accedere all’interfaccia di configurazione, è necessario concedere le autorizzazioni amministrative tramite Adobe Admin Console.
+
+### Cosa possono configurare gli amministratori nell’interfaccia utente di AEM Assets Content Hub?
+
+Gli amministratori possono configurare le seguenti impostazioni nell’interfaccia utente di configurazione di AEM Assets Content Hub:
+
+* Importa campi di metadati (inclusi i campi obbligatori e le impostazioni di approvazione automatica)
+
+* Filtri di ricerca visualizzati nella pagina di ricerca
+
+* Campi di metadati ricercabili utilizzati per l’indicizzazione
+
+* Metadati scheda risorsa (fino a sei campi visualizzati sulle schede)
+
+* Dettagli risorsa - Visualizza proprietà
+
+* Elementi di branding (logo, testo banner, colori, immagine banner)
+
+* Regole di visibilità delle risorse (compreso il comportamento delle risorse scadute)
+
+* Opzioni di rendering e download
+
+* Collegamenti di navigazione personalizzati (schede esterne)
+
+* Impostazioni di raccolta e condivisione (collegamenti pubblici e autorizzazioni)
+
+Queste impostazioni controllano sia l’esperienza visiva che il comportamento funzionale di Content Hub per gli utenti finali.
+
+
+### In che modo gli amministratori possono aggiungere nuovi campi di metadati per il caricamento di risorse in AEM Assets Content Hub?
+
+Gli amministratori possono aggiungere nuovi campi di metadati per i caricamenti di risorse facendo clic su **Aggiungi metadati** nella scheda **Importa**, specificando l&#39;etichetta, eseguendo il mapping alla proprietà appropriata dallo schema metadati, selezionando il tipo di input e decidendo se il campo è obbligatorio o facoltativo. Dopo la conferma e il salvataggio, il nuovo campo diventa disponibile per gli utenti durante il caricamento delle risorse.
+
+### Qual è l’impostazione Approvazione automatica per le risorse in AEM Assets Content Hub e come funziona?
+
+L’impostazione Approvazione automatica, se abilitata, consente di rendere immediatamente disponibili nuove risorse su Content Hub al momento del caricamento. Per impostazione predefinita, questa impostazione è disattivata e richiede agli autori o agli amministratori di AEM di approvare manualmente le nuove risorse prima che vengano visualizzate sul portale Content Hub.
+
+### Come possono gli amministratori configurare i filtri per le ricerche di risorse in AEM Assets Content Hub?
+
+Gli amministratori possono configurare i filtri per le ricerche di risorse facendo clic su **Aggiungi filtri**, specificando l&#39;etichetta del filtro, eseguendo il mapping alla proprietà dei metadati appropriata, selezionando il tipo di dati e confermando l&#39;aggiunta. I filtri diventano disponibili nell’interfaccia quando esiste almeno una risorsa che soddisfa i criteri di filtro. Le modifiche vengono applicate facendo clic su **Salva**.
+
+### Quali proprietà delle risorse possono essere visualizzate nella vista Dettagli risorsa e come sono configurate in AEM Assets Content Hub?
+
+Le proprietà della risorsa come il nome del file, il titolo, il formato, le dimensioni e i campi personalizzati come le categorie possono essere visualizzati nella vista Dettagli risorsa. Gli amministratori aggiungono queste proprietà facendo clic su **Aggiungi metadati**, specificando l&#39;etichetta, eseguendo il mapping allo schema metadati, selezionando il tipo di dati, confermando e salvando le modifiche.
+
+### In che modo gli amministratori possono personalizzare i dettagli dei metadati visualizzati nelle schede delle risorse in AEM Assets Content Hub?
+
+Gli amministratori possono personalizzare i dettagli dei metadati visualizzati nelle schede delle risorse facendo clic su **Aggiungi metadati** nelle impostazioni della scheda delle risorse, specificando l&#39;etichetta (ad esempio, il formato del file), eseguendo il mapping alla proprietà appropriata nello schema dei metadati e confermando l&#39;aggiunta. Sulle schede delle risorse è possibile visualizzare fino a sei campi di metadati.
+
+### Gli amministratori possono personalizzare il portale AEM Assets Content Hub per soddisfare i requisiti di branding della tua organizzazione?
+
+Sì. Gli amministratori possono personalizzare l’aspetto di AEM Assets Content Hub modificando il testo del titolo e del corpo del banner principale, selezionando i colori del testo mediante un selettore di colori o un codice esadecimale e impostando colori secondari e primari per lo sfondo, il testo e le icone.

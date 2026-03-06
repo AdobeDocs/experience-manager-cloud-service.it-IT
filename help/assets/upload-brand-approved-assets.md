@@ -3,10 +3,10 @@ title: Carica le risorse approvate dal tuo marchio in [!DNL Content Hub]
 description: Scopri come caricare le risorse approvate dal marchio in Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 17%
+source-wordcount: '1123'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 [Gli utenti di Content Hub con i diritti per aggiungere risorse](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) possono aggiungere risorse a Content Hub dal file system locale o importare risorse da origini dati OneDrive o Dropbox. Tutte le risorse vengono visualizzate al livello superiore in Content Hub, indipendentemente dalla struttura di cartelle disponibile nel file system locale o dalle origini dati di OneDrive e Dropbox, per migliorare le funzionalità di ricerca.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445386/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Le risorse contrassegnate come `Approved` in Assets as a Cloud Service sono automaticamente disponibili in Content Hub. Per ulteriori informazioni, consulta [Approvare le risorse per Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -31,7 +31,7 @@ Per migliorare ulteriormente la ricerca delle risorse, Content Hub consente di:
 
 * Utilizza l&#39;intelligenza artificiale fornita da [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per applicare automaticamente tag rilevanti a tutte le risorse caricate. Questi tag, o tag avanzati, consentono di velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti.
 
-Assicurati di caricare solo le risorse approvate dal marchio [&#x200B; in Content Hub](/help/assets/approve-assets.md).
+Assicurati di caricare solo le risorse approvate dal marchio [ in Content Hub](/help/assets/approve-assets.md).
 
 ![Carica risorse approvate dal marchio](assets/upload-brand-approved-assets.png)
 
@@ -77,3 +77,30 @@ La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto 
 * Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)
+
+## Domande frequenti {#faqs-content-hub-upload-assets}
+
+### Quali tipi di risorse posso caricare su Content Hub e da dove? {#asset-types-upload-to-content-hub}
+
+Gli utenti di Content Hub che dispongono dei diritti per aggiungere risorse possono caricare le risorse approvate dal proprio file system locale. Tutte le risorse caricate, a prescindere dalla struttura delle cartelle originale, vengono visualizzate al livello superiore in Content Hub per migliorare le funzionalità di ricerca.
+
+### In che modo Content Hub migliora la ricerca e l’organizzazione delle risorse? {#search-content-hub}
+
+Content Hub migliora la ricerca delle risorse e l’organizzazione consentendo agli utenti di definire i dettagli chiave per ogni caricamento, ad esempio il nome della campagna, le parole chiave, i canali, l’intervallo temporale e l’area geografica. Genera inoltre automaticamente proprietà aggiuntive per ogni risorsa (ad esempio dimensioni, formato e risoluzione dei file) e utilizza Adobe AI per applicare tag avanzati, semplificando e velocizzando la ricerca delle risorse rilevanti.
+
+### Come si caricano le risorse dal file system locale in Content Hub? {#upload-assets-content-hub}
+
+Per caricare risorse dal file system locale, fai clic su **Aggiungi Assets** per aprire la finestra di dialogo di caricamento. Puoi trascinare e rilasciare file o cartelle oppure sfogliare manualmente per selezionarli. Devi raggruppare le risorse con il nome di una campagna e, per una migliore organizzazione, ti consigliamo di compilare altri campi come parole chiave, canali, arco temporale e regione. Al termine dell&#39;operazione, fare clic su **Carica**, esaminare i dettagli e confermare l&#39;avvio del caricamento.
+
+### Come funziona il processo di approvazione delle risorse in Content Hub? {#asset-approval-content-hub}
+
+Se l’opzione di approvazione automatica è abilitata, le risorse caricate tramite Content Hub sono automaticamente disponibili. Se è disabilitata, le risorse caricate vengono inserite nella cartella **idratated-assets** in Assets as a Cloud Service e devi modificarne manualmente lo stato in massa in **Approvato** per renderle visualizzate in Content Hub.
+
+### Posso configurare i campi obbligatori o facoltativi durante il caricamento di risorse in Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
+
+Gli amministratori possono utilizzare l’interfaccia utente di configurazione per definire i campi obbligatori o facoltativi durante il caricamento delle risorse in Content Hub.
+
+### Cosa devo fare se le risorse caricate non vengono visualizzate automaticamente in Content Hub? {#assets-do-not-display-in-content-hub}
+
+Se le risorse non vengono visualizzate automaticamente, significa che l’opzione Approvazione automatica è disattivata. Le risorse si trovano nella cartella **idratated-assets** dell&#39;ambiente Assets as a Cloud Service. Per essere visualizzati in Content Hub, è necessario modificarne lo stato in massa in **Approvato**.
+

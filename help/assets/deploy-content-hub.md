@@ -3,10 +3,10 @@ title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, utenti Adobe Express) e fornire privilegi di amministratore agli utenti.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 6%
+source-wordcount: '2558'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ Questo articolo fornisce un flusso di lavoro end-to-end per fornire agli utenti 
 
 Guarda questo video per scoprire come abilitare Content Hub per Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472943/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Le varianti di privilegi su Content Hub includono:
 
@@ -270,3 +270,78 @@ I clienti Assets as a Cloud Service esistenti hanno 250 utenti Content Hub Limit
 1. Se gli utenti devono accedere all&#39;interfaccia utente di Content Hub Configuration, aggiungerli al profilo di prodotto `AEM Administrators`. Per ulteriori informazioni, vedere [Amministratore onboard di Content Hub](#onboard-content-hub-administrator).
 
 Se gli utenti non ottengono i privilegi appropriati anche dopo averli aggiunti ai profili di prodotto pertinenti, contatta il rappresentante Adobe.
+
+## Domande frequenti {#faqs-deploy-content-hub}
+
+### In che modo gli utenti possono accedere a Content Hub e quali privilegi è possibile assegnare?
+
+Gli utenti possono essere aggiunti a Content Hub tramite Adobe Admin Console assegnandoli al relativo profilo di prodotto per Content Hub.
+
+Sono disponibili i seguenti privilegi per gli utenti:
+
+* Gli utenti di Content Hub possono accedere alle risorse approvate dal marchio sul portale Content Hub.
+
+* Gli amministratori di Content Hub hanno accesso all’interfaccia utente di configurazione su Content Hub, oltre che alle risorse approvate dal marchio, al caricamento delle risorse in Content Hub e all’integrazione di Adobe Express per la modifica delle immagini (se disponi di autorizzazioni Adobe Express).
+
+* Gli utenti di Content Hub con diritti di aggiunta di risorse possono caricare le risorse in Content Hub, oltre ad accedere alle risorse approvate dal marchio sul portale Content Hub.
+
+* Gli utenti di Content Hub con diritti per il remix delle risorse hanno accesso ad Adobe Express (se hai diritti Adobe Express) oltre che alle risorse approvate dal marchio sul portale Content Hub.
+
+### Quali sono i diversi profili di prodotto disponibili per i diversi tipi di utenti su Content Hub?
+
+I profili di prodotto sono disponibili per diversi tipi di utenti su Content Hub:
+
+* Utenti Content Hub: Utenti limitati AEM Assets
+
+* Amministratori Content Hub: utenti con limitazioni di AEM Assets + amministratori di AEM
+
+* Utenti Content Hub con diritti di aggiunta risorse: Utenti AEM Assets Limited + Utenti AEM
+
+* Utenti Content Hub con diritti per il remix delle risorse: Utenti AEM Assets Limited + Utenti AEM
+
+### In che modo gli amministratori possono abilitare Content Hub per la propria organizzazione?
+
+Gli amministratori devono accedere a Cloud Manager, selezionare (o creare) il proprio programma, abilitare Assets e Content Hub nella scheda Soluzioni e componenti aggiuntivi e aggiornare il programma. In questo modo viene creata un’istanza di Content Hub in Adobe Admin Console in cui è possibile gestire l’accesso degli utenti.
+
+### Quanti utenti Content Hub Limited sono inclusi in AEM Assets? {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) e Assets as a Cloud Service includono ciascuno 250 utenti Content Hub Limited, mentre [Assets Prime](/help/assets/assets-prime.md) include 50 utenti Content Hub Limited.
+
+### Quanti crediti Content Hub sono disponibili con la mia licenza AEM Assets?
+
+Il numero di crediti Content Hub disponibili dipende dalla licenza AEM Assets:
+
+* Assets Ultimate include tre crediti Content Hub.
+
+* Assets Prime include un credito Content Hub.
+
+* I clienti Assets as a Cloud Service esistenti ricevono un credito Content Hub.
+
+### Come vengono utilizzati i crediti Content Hub?
+
+Viene utilizzato un credito Content Hub per ogni ambiente in cui è abilitato Content Hub. Ad esempio, l’abilitazione di Content Hub in ambienti di produzione, sviluppo e staging richiede tre crediti.
+
+### È possibile abilitare Content Hub in ambienti di livello inferiore?
+
+Sì. È possibile attivare Content Hub in ambienti di livello inferiore, ad esempio Sviluppo o Stage, purché siano disponibili crediti Content Hub. Ogni ambiente abilitato di livello inferiore utilizza un credito.
+
+### Come posso disporre dei diritti di accesso alle risorse approvate su Content Hub?
+
+Gli utenti di Content Hub possono accedere alle risorse approvate dal marchio sul portale Content Hub. Per essere utente di Content Hub, devi essere aggiunto al profilo di prodotto Utenti limitati di AEM.
+
+### Come posso disporre dei diritti per caricare le risorse su Content Hub?
+
+Gli utenti di Content Hub con diritti di aggiunta di risorse possono caricare le risorse in Content Hub, oltre ad accedere alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per l’aggiunta di risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
+
+### Come posso disporre dei diritti di accesso all’interfaccia utente di configurazione su Content Hub?
+
+Gli amministratori di Content Hub hanno accesso all’interfaccia utente di configurazione su Content Hub, oltre che alle risorse approvate dal marchio, al caricamento delle risorse in Content Hub e all’integrazione di Adobe Express per la modifica delle immagini (se disponi di autorizzazioni Adobe Express). AEM Per poter essere amministratore di Content Hub, devi essere aggiunto ai profili di prodotto Utenti limitati e Amministratori AEM.
+
+### Come posso disporre dei diritti per modificare le immagini utilizzando Adobe Express su Content Hub?
+
+Gli utenti di Content Hub con diritti per il remix delle risorse hanno accesso ad Adobe Express (se hai diritti Adobe Express) oltre che alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per il remix delle risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
+
+
+
+
+

@@ -3,10 +3,10 @@ title: Cercare risorse in Content Hub
 description: Scopri come cercare le risorse in [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
@@ -167,5 +167,20 @@ Per eseguire la ricerca in blocco in [!DNL Content Hub], eseguire i passaggi seg
 [!DNL The Content Hub] non è limitato alla ricerca, ma consente di eseguire azioni aggiuntive, ad esempio [download](download-assets-content-hub.md), [condivisione](share-assets-content-hub.md) e [aggiungere risorse alla raccolta](collections-content-hub.md), direttamente dall&#39;interfaccia di ricerca o anteprima. Seleziona le risorse nella pagina dei risultati della ricerca per visualizzare queste opzioni.
 
 Ulteriori informazioni sulla [configurazione delle risorse in [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Domande frequenti {#faqs-deploy-content-hub}
+
+### Come posso limitare i risultati della ricerca in AEM Assets Content Hub?
+
+È possibile limitare i risultati della ricerca in Content Hub utilizzando la ricerca basata su testo, applicando vari filtri (ad esempio il formato del file, lo stato di approvazione, la data di modifica e così via), la ricerca per tag o smart tag e utilizzando il pannello filtri. La combinazione di più predicati o opzioni di filtro consente di eseguire il targeting preciso delle risorse necessarie.
+
+### È possibile eseguire una ricerca in blocco in AEM Assets Content Hub per più risorse contemporaneamente?
+
+Sì, è possibile eseguire una ricerca in blocco in Content Hub immettendo più valori (come nomi, formati di file, tag) separati da delimitatori specificati. La funzione di ricerca in blocco consente di trovare rapidamente diverse risorse in una singola query, rendendola più efficiente della ricerca delle risorse una alla volta.
+
+
+### Gli amministratori possono personalizzare i filtri disponibili in AEM Assets Content Hub Search?
+
+Sì, gli amministratori possono utilizzare l’interfaccia utente di configurazione di AEM Assets Content Hub per configurare quali filtri sono disponibili nell’interfaccia di ricerca. I filtri predefiniti includono il formato del file, lo stato di approvazione, la data di scadenza e altro ancora, ma gli amministratori possono personalizzare queste opzioni in base alle esigenze aziendali.
 
 

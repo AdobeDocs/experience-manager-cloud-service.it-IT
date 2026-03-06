@@ -3,9 +3,9 @@ title: Scaricare risorse da Content Hub
 description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '1367'
 ht-degree: 1%
 
 ---
@@ -165,7 +165,7 @@ Per abilitare le rappresentazioni dinamiche:
 
    Una volta che hai accesso a Dynamic Media con funzionalità OpenAPI, tutte le risorse contrassegnate come `Approved` sono disponibili per la distribuzione pubblica tramite Dynamic Media.
 
-1. Imposta la destinazione di approvazione [&#x200B; della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
+1. Imposta la destinazione di approvazione [ della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
 
 1. Abilita l&#39;opzione **[!UICONTROL Abilita disponibilità delle rappresentazioni]** nella scheda **[!UICONTROL Rappresentazioni]** dell&#39;interfaccia utente [Configurazione](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 
@@ -178,6 +178,43 @@ Per abilitare le rappresentazioni dinamiche:
    >[!NOTE]
    > 
    > Le rappresentazioni dinamiche sono disponibili solo per le risorse di immagini.
+
+## Domande frequenti {#faqs-download-assets-content-hub}
+
+### Come si scaricano una o più risorse da AEM Assets Content Hub?
+
+Per scaricare una singola risorsa, fai clic sull’icona di download nella scheda delle risorse. Per più risorse, selezionale e fai clic su Scarica nella barra delle azioni. Se l’amministratore abilita i download, Content Hub inizia a scaricare le risorse nella rappresentazione originale. Se sono disponibili rappresentazioni di risorse, puoi selezionare rappresentazioni specifiche prima di scaricarle.
+
+### Esiste una configurazione gestita dall’amministratore in AEM Assets Content Hub che consente agli utenti di scaricare le risorse originali o abilitare la disponibilità delle rappresentazioni?
+
+Sì, gli amministratori possono abilitare o disabilitare gli interruttori **Abilita disponibilità delle rappresentazioni** e **Consenti download di risorse originali** disponibili nella scheda **Rappresentazioni** dell&#39;interfaccia utente di configurazione per gestire il download delle risorse originali o abilitare la disponibilità delle rappresentazioni in AEM Assets Content Hub.
+
+### Cosa sono i rendering delle risorse e quali tipi sono disponibili in AEM Assets Content Hub?
+
+Le rappresentazioni delle risorse sono rappresentazioni diverse del file di risorsa originale, adattate ai vari casi d’uso. I tipi includono rappresentazioni statiche (come miniature, versioni ottimizzate per web o dispositivi mobili o file ad alta risoluzione per la stampa), rappresentazioni statiche personalizzate e rappresentazioni dinamiche (comprese le versioni con ritaglio avanzato). Le rappresentazioni statiche sono pregenerate, mentre quelle dinamiche vengono create in tempo reale su richiesta.
+
+### Come funziona il ritaglio avanzato con le risorse in AEM Assets Content Hub?
+
+Il ritaglio avanzato è una funzione basata sull’intelligenza artificiale che identifica la parte più importante di un’immagine e la racchiude in modo intelligente. Questo assicura un&#39;ottima resa visiva su schermi e formati diversi. Le rappresentazioni con ritaglio avanzato sono disponibili per le risorse di immagini se l’organizzazione supporta le funzionalità di elementi multimediali dinamici.
+
+### Come si abilitano le rappresentazioni dinamiche in AEM Assets Content Hub?
+
+Per abilitare le rappresentazioni dinamiche:
+
+* Assicurati che Dynamic Media con funzionalità OpenAPI sia abilitato. Le risorse approvate sono quindi disponibili per la distribuzione pubblica.
+
+* Imposta la destinazione di approvazione della risorsa su Content Hub.
+
+* Nell’interfaccia utente di configurazione, vai alla scheda Rappresentazioni e abilita Abilita Abilita disponibilità delle rappresentazioni.
+
+* Se è stato effettuato l’onboarding in Dynamic Media con OpenAPI, salva nuovamente i predefiniti immagine esistenti da Vista amministratore > Strumenti > Assets > Predefiniti immagine (Modifica > Salva).
+
+Le rappresentazioni dinamiche sono supportate solo per le risorse di immagini.
+
+### Come si scaricano i rendering delle risorse in Content Hub?
+
+Per scaricare le rappresentazioni, seleziona la risorsa e fai clic sull’azione di download. Se l&#39;amministratore abilita le copie trasformate, viene visualizzata una finestra di dialogo in cui è possibile scegliere quali copie trasformate scaricare. Per le risorse concesse in licenza, accetta le condizioni di licenza prima di effettuare il download. Per più risorse, seleziona le risorse, scegli le rappresentazioni e scaricale come file ZIP. Puoi selezionare tutte le rappresentazioni disponibili o quelle specifiche, come le rappresentazioni statiche o dinamiche.
+
 
 
 

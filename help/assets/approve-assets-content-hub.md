@@ -2,10 +2,10 @@
 title: Approvare risorse per Content Hub
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: aec2bd06ad498e92ce1e69ac587ee7fcd5106268
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 17%
+source-wordcount: '1698'
+ht-degree: 12%
 
 ---
 
@@ -117,7 +117,7 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.
@@ -153,3 +153,42 @@ La visualizzazione delle risorse caricate tramite Content Hub dipende dal fatto 
 * Se il pulsante di attivazione **[!UICONTROL Approvazione automatica]** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](#bulk-approve-assets-content-hub) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
 ![Processo di approvazione Content Hub](/help/assets/assets/content-hub-approval.png)
+
+## Domande frequenti {#faqs-content-hub-approved-assets}
+
+### Qual è lo scopo di approvare le risorse per Content Hub in Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+
+L’approvazione delle risorse garantisce che solo le versioni più recenti e approvate siano disponibili per l’utilizzo in Content Hub, mantenendo una rigorosa coerenza del marchio per tutti i canali e le applicazioni. Questo processo controllato semplifica la gestione delle risorse per i brand manager e gli addetti al marketing.
+
+### Quali sono i prerequisiti necessari per approvare le risorse per Content Hub?
+
+Devi avere accesso ad AEM Assets as a Cloud Service e le autorizzazioni di scrittura per modificare i metadati delle risorse, in particolare il campo **Stato** nelle proprietà delle risorse.
+
+### Come si approva una singola risorsa utilizzando la vista Assets in AEM as a Cloud Service?
+
+Seleziona la risorsa, fai clic su **Dettagli** nella barra degli strumenti, passa alla scheda **Base**, scegli **Approvato** dall&#39;elenco a discesa **Stato**, quindi fai clic su **Salva**. La risorsa è disponibile in Content Hub.
+
+### È possibile approvare in blocco le risorse per Content Hub? In caso affermativo, in che modo?
+
+Sì, le risorse possono essere approvate in blocco. Nella vista Assets, seleziona più risorse, fai clic su **Modifica in blocco metadati**, seleziona **Approvato** nel campo **Stato** in Proprietà, quindi fai clic su **Salva**. Tutte le risorse selezionate sono disponibili in Content Hub.
+
+### Come funziona il processo di approvazione delle risorse in Content Hub? {#asset-approval-content-hub}
+
+Se l’opzione di approvazione automatica è abilitata, le risorse caricate tramite Content Hub sono automaticamente disponibili. Se è disabilitata, le risorse caricate vengono inserite nella cartella **idratated-assets** in Assets as a Cloud Service e devi modificarne manualmente lo stato in massa in **Approvato** per renderle visualizzate in Content Hub.
+
+### Cos’è il campo Target di approvazione e come influisce sulla pubblicazione delle risorse?
+
+Il campo **Destinazione approvazione** nella pagina Dettagli risorsa consente di scegliere dove pubblicare le risorse approvate. Le opzioni includono solo **Delivery** (pubblicazione in Dynamic Media con OpenAPI e Content Hub) o **Content Hub**. Se non è selezionata alcuna opzione, viene applicata l’impostazione predefinita per l’ambiente Assets as a Cloud Service. Per ulteriori informazioni, consulta [Destinazione approvazione predefinita e destinazioni pubblicazione per risorse approvate](#default-approval-target-options-publish-destinations).
+
+
+### Cosa succede se non visualizzi il campo Target di approvazione nella pagina Visualizza dettagli risorsa di Assets?
+
+Se il campo **Destinazione approvazione** non è presente nella pagina Visualizza dettagli risorsa di Assets, è necessario modificare il modulo metadati, trascinare il campo **Approvazione per** dai componenti disponibili nel modulo e fare clic su **Salva**. Questo consente di impostare i target di approvazione per le risorse.
+
+### Come puoi automatizzare l’approvazione per le nuove risorse acquisite in Admin View?
+
+Crea una cartella nell&#39;ambiente di authoring, passa a **Strumenti** > **Assets** > **Profili metadati**, crea e modifica un profilo metadati. Aggiungi un campo di testo a riga singola, etichettalo **Approved Assets**, mappalo a &#39;./jcr:content/metadata/dam:status&#39; e impostarne il valore predefinito su `approved`. Applica il profilo metadati alla cartella. Approva automaticamente le nuove risorse aggiunte alla cartella.
+
+### Chi può accedere alle risorse approvate in Content Hub e quali controlli sono implementati?
+
+Le risorse approvate sono disponibili per gli utenti che fanno parte della stessa organizzazione all’interno di Content Hub. Controlli rigorosi garantiscono l’accessibilità solo delle versioni più recenti e approvate, contribuendo a mantenere la coerenza e la sicurezza del marchio.

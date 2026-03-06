@@ -3,10 +3,10 @@ title: Visualizzare informazioni approfondite sulle risorse in Content Hub
 description: Scopri come visualizzare informazioni approfondite sulle risorse in [!DNL Content Hub]
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 17%
+source-wordcount: '465'
+ht-degree: 10%
 
 ---
 
@@ -50,3 +50,25 @@ Puoi anche visualizzare:
 * **[!UICONTROL Assets by Campaigns]**: conteggio delle risorse e percentuale rispettiva basata sulle campagne.
 * **[!UICONTROL Assets per canali]**: conteggio delle risorse e rispettiva percentuale in base ai canali utilizzati.
 * **[!UICONTROL Assets per area geografica]**: numero di risorse e percentuale rispettiva in base alle aree di utilizzo delle risorse.
+
+## Domande frequenti {#faqs-assets-insights-content-hub}
+
+### Cosa ci serve Assets Insights in AEM Assets Content Hub?
+
+Assets Insights in AEM Assets Content Hub fornisce dati preziosi sulle statistiche sull’utilizzo delle risorse in campagne, canali e aree geografiche, aiutando le parti interessate del marketing a comprendere le prestazioni e la popolarità delle risorse, al fine di migliorare l’esperienza utente.
+
+### Chi può accedere alle funzioni descritte in Informazioni su Assets?
+
+Gli utenti di Content Hub possono eseguire le azioni e accedere alle funzioni menzionate nella sezione Assets Insights.
+
+### Quali insights sulle risorse sono disponibili nella scheda Insights?
+
+Puoi visualizzare il numero di risorse nell’archivio, il numero di raccolte, i caricamenti di Assets per anno, mese o giorno, gli utenti attivi per giorno o mese e la classificazione delle risorse in base ai formati di file.
+
+### Come posso visualizzare le statistiche per le risorse caricate in AEM Assets Content Hub?
+
+Per visualizzare le statistiche per le risorse e le raccolte caricate, passa alla scheda Insights, in cui puoi tenere traccia della cronologia di caricamento per anno, mese o giorno.
+
+### Quali metriche posso analizzare relative all’attività degli utenti in Content Hub?
+
+Puoi analizzare il numero di utenti attivi per giorno o per mese, rappresentato visivamente da un grafico a linee.
