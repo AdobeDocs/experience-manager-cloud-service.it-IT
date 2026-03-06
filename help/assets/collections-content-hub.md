@@ -30,7 +30,7 @@ Una raccolta fa riferimento a un insieme di risorse che possono essere condivise
 
 Consente agli utenti di accedere e gestire facilmente le diverse risorse disponibili in [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445308/?captions=ita&learn=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 

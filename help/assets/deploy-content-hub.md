@@ -20,7 +20,7 @@ Questo articolo fornisce un flusso di lavoro end-to-end per fornire agli utenti 
 
 Guarda questo video per scoprire come abilitare Content Hub per Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472943/?captions=ita&learn=on){transcript=true}
 
 Le varianti di privilegi su Content Hub includono:
 
