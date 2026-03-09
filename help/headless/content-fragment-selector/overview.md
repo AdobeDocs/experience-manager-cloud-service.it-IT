@@ -1,14 +1,14 @@
 ---
 title: Selettore frammento di contenuto micro-front-end per Adobe Experience Manager as a Cloud Service
 description: Utilizza il Selettore frammenti di contenuto Microsoft-Frontend per cercare, trovare e recuperare frammenti di contenuto dall’applicazione.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 11%
+source-wordcount: '833'
+ht-degree: 10%
 
 ---
-
 
 # Selettore frammento di contenuto micro-front-end {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ Utilizza il componente `ContentFragmentSelector`. Sono disponibili diverse opzio
 
 Una volta che il Selettore frammento di contenuto è configurato e autenticato per l’utilizzo del Selettore Frammento di contenuto con l’applicazione AEM as a Cloud Service, puoi selezionare Frammenti di contenuto o eseguire varie altre operazioni per cercare i frammenti nell’archivio:
 
-![Selettore frammento di contenuto](/help/headless/assets/content-fragment-selector-using.png)
+![Selettore frammento di contenuto](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Con il selettore **Archivio** in alto a destra, puoi selezionare l&#39;archivio che desideri utilizzare
+* Dalla barra degli strumenti superiore puoi effettuare le seguenti operazioni:
+   * Utilizza il selettore **Archivio** in alto a destra, per selezionare l&#39;archivio che desideri utilizzare
+   * Selezionare il formato; elenco o griglia
 * Nel pannello a sinistra puoi effettuare le seguenti operazioni:
    * Nascondere o mostrare le cartelle dall&#39;archivio selezionato
    * Seleziona una cartella specifica per mostrare i frammenti di contenuto in quella cartella
@@ -81,6 +83,9 @@ Una volta che il Selettore frammento di contenuto è configurato e autenticato p
    * Ordina l&#39;elenco corrente in base a varie colonne, sia crescenti che decrescenti
    * Visualizzare l&#39;indicatore del formato di visualizzazione
    * Mostra, nascondi e specifica filtri
+* Nel pannello a destra puoi:
+   * Visualizza proprietà
+   * Visualizza riferimenti
 
 ### Nascondi/Mostra pannello {#hide-show-panel}
 
@@ -130,3 +135,16 @@ Puoi ordinare i frammenti nel Selettore frammento di contenuto in base a varie p
 Il selettore frammento di contenuto consente di visualizzare il frammento in:
 
 * **Vista tabella**
+* **Visualizzazione griglia**
+
+La vista desiderata può essere selezionata dalle icone nella barra degli strumenti superiore:
+
+![Selettore frammento di contenuto - Tipo di visualizzazione](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrare il selettore dei frammenti di contenuto con le applicazioni {#integrate-the-content-fragment-selector-with-applications}
+
+Puoi integrare il Selettore frammento di contenuto con varie applicazioni, ad esempio:
+
+* [Integrare il selettore dei frammenti di contenuto con un&#39;applicazione Adobe](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [Integrare il selettore dei frammenti di contenuto con un’applicazione non Adobe o di terze parti](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integrare il selettore dei frammenti di contenuto utilizzando Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
