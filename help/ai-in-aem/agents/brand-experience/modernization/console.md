@@ -4,9 +4,9 @@ description: Guida di riferimento per l’interfaccia e le funzionalità della C
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -67,19 +67,17 @@ La barra laterale a sinistra consente di accedere rapidamente a importanti viste
 
 La visualizzazione **Home** è il punto di partenza per l&#39;utilizzo della console.
 
-* Nella parte superiore è presente un [pannello di richiesta](#prompt-panel) per effettuare le richieste della console.
-* Di seguito sono riportati i prompt da utilizzare per avviare il progetto.
+* Nella parte superiore è presente un [prompt input](#prompt-input) per l&#39;esecuzione di richieste della console.
+* Di seguito sono riportati i prompt suggeriti per iniziare a utilizzare il progetto.
 
-### Pannello Prompt {#prompt-panel}
+### Input prompt {#prompt-input}
 
-Il pannello dei prompt fornisce i controlli per interagire con l’intelligenza artificiale.
+L’input del prompt fornisce i controlli per interagire con l’intelligenza artificiale.
 
 * **Pianifica/Esegui modalità** (icone a forma di lampadina e bacchetta magica): consente di passare rispettivamente dalla modalità Pianificazione alla modalità Esecuzione.
    * **Modalità piano**: l&#39;intelligenza artificiale analizza le richieste e delinea un approccio senza apportare modifiche, utile per comprendere la strategia prima di eseguire il commit.
    * **Modalità di esecuzione**: IA esegue il piano e apporta le modifiche effettive al file.
 * **Allega file** (icona a forma di graffetta): carica e allega i file alla richiesta di ulteriore contesto (ad esempio progettazioni di riferimento, schermate, specifiche)
-* **Impostazioni** (icona ingranaggio): scegli di saltare le domande di conferma dall&#39;IA
-* **Cancella chat**: la conversazione verrà ripristinata e la finestra di contesto dell&#39;intelligenza artificiale verrà cancellata. Utilizzare questa opzione quando si avvia una nuova attività non correlata alla conversazione precedente.
 
 ## Vista contenuto {#content-view}
 
@@ -91,15 +89,32 @@ La **visualizzazione contenuto** fornisce gli strumenti per la visualizzazione e
 
 ![Visualizzazione contenuto](assets/content-imported.png)
 
-Il pannello di anteprima offre tre modalità:
+### Pannello Chat {#chat-panel}
+
+Il pannello chat ti consente di visualizzare e continuare la conversazione con l’agente di modernizzazione esperienza. Il pannello chat include la cronologia dei messaggi della chat e un [input di richiesta](#prompt-input) per l&#39;esecuzione di richieste aggiuntive della console.
+
+* **Azioni chat**
+   * **Cancella chat**: la conversazione verrà ripristinata e la finestra di contesto dell&#39;intelligenza artificiale verrà cancellata. Utilizzare questa opzione quando si avvia una nuova attività non correlata alla conversazione precedente.
+   * **Scarica chat**: la cronologia delle conversazioni viene scaricata come file Markdown.
+
+### Pannello Anteprima {#preview-panel}
+
+Il pannello di anteprima offre fino a quattro modalità:
 
 * **Anteprima** (documento con icona della lente di ingrandimento) per visualizzare il contenuto HTML sottoposto a rendering
-* **Visualizzazione HTML** (icona del documento) per visualizzare rispettivamente la struttura di contenuto di authoring del documento sottostante
-* **Modalità progettazione** (icona del pennello) per selezionare gli elementi della pagina da contestualizzare al prompt
+   * **Visualizzazione reattiva** per visualizzare il contenuto HTML sottoposto a rendering in una visualizzazione desktop, tablet o mobile
+   * **Modalità progettazione** (icona del pennello) per aggiungere elementi della pagina alla richiesta di ulteriore contesto
+* **Visualizzazione documento** (icona documento) per visualizzare rispettivamente la struttura del contenuto di authoring del documento sottostante
+* **Vista Markdown (authoring AEM)** (icona di codice) per visualizzare la struttura di contenuto markdown sottostante
+* **Visualizzazione XML JCR (authoring AEM)** (icona dati) per visualizzare la struttura di contenuto XML JCR risultante
 
 Puoi sempre fare clic sull&#39;icona **Aggiorna anteprima** per aggiornare il pannello di anteprima.
 
-Il pulsante **Carica contenuto** apre una finestra modale per caricare i file in AEM Document Authoring.
+Il pulsante **Elimina** rimuove la pagina selezionata dall&#39;area di lavoro. Il contenuto visualizzato in anteprima o pubblicato non verrà eliminato.
+
+Il pulsante **Errori** (authoring AEM) apre una finestra modale per visualizzare gli errori nella pagina selezionata.
+
+Il pulsante **Carica contenuto** apre una finestra modale per caricare i file in AEM.
 
 * Il campo **Organizzazione** e **Archivio** sono precompilati se il progetto contiene un file `fstab.yaml`
 * La selezione dei file fornisce percorsi di destinazione modificabili
@@ -111,15 +126,16 @@ Il pulsante **Carica contenuto** apre una finestra modale per caricare i file in
 
 La **vista Codice** fornisce gli strumenti per sfogliare il codice e gestire le modifiche al codice. La vista è divisa in tre pannelli, da sinistra a destra:
 
-* Pannello Prompt per interagire con la console e il progetto
+* Pannello Chat per interagire con la console e il progetto
 * Browser file per una panoramica dei file di codice o delle modifiche in base alle differenze
-* Pannello Anteprima per la visualizzazione di un file di codice o di una differenza selezionata nel browser di file
+* Pannello Anteprima per la visualizzazione di un file di codice o delle modifiche selezionate nel browser di file
 
 ![Visualizzazione codice](assets/code-view.png)
 
 Il pannello di anteprima offre due modalità diverse:
 
-* **File Workspace** per visualizzare i file di codice nell&#39;area di lavoro corrente
+* **File Workspace** per sfogliare i file di codice nell&#39;area di lavoro corrente
+   * Utilizza il pulsante **Aggiungi alla chat** per aggiungere il file al pannello chat per il contesto.
 * **Modifiche Git** per visualizzare le differenze delle modifiche ai file create dal lavoro sul progetto
    * Fai clic sull&#39;icona `+` per posizionare nell&#39;area intermedia il file modificato
    * Fare clic sull&#39;icona freccia per eliminare il file modificato
@@ -145,6 +161,8 @@ La vista Impostazioni consente di gestire le impostazioni di base della console.
 
 ![Visualizzazione impostazioni](assets/settings-view.png)
 
+* **Il progetto** ti consente di visualizzare e modificare le impostazioni del progetto, ad esempio personalizzando l&#39;URL della libreria.
+* **Supporto** consente di richiedere assistenza al team di supporto AEM.
 * **Credenziali** consente di specificare un token di accesso personale per Figma in modo che la console [possa accedere ai blocchi di progettazione per il progetto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * Il token richiede i seguenti ambiti di sola lettura:
       * `file_content:read`

@@ -4,9 +4,9 @@ description: Scopri i primi passaggi per diventare rapidamente produttivi con l�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Scopri i primi passaggi per diventare rapidamente produttivi con l’agente di m
 >Se ti interessa utilizzare la console di modernizzazione esperienza, puoi richiedere l’accesso per garantire un’esperienza di onboarding fluida.
 
 ## Preparare un archivio GitHub di Edge Delivery {#prepare-repo}
+
+>[!NOTE]
+>
+>Utilizzare un progetto AEM Sites e Universal Editor? Segui [Guida introduttiva di AEM Sites/Universal Editor](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) passaggi di installazione.
 
 1. Selezionare un repository [Edge Delivery Services](/help/edge/overview.md) da utilizzare con la console di modernizzazione delle esperienze.
    * Questo può essere un progetto Edge Delivery Services esistente oppure puoi crearne uno nuovo seguendo l&#39;[esercitazione per sviluppatori](https://www.aem.live/developer/tutorial) utilizzando l&#39;[archivio standard.](https://github.com/adobe/aem-boilerplate)
@@ -77,6 +81,10 @@ Ora puoi importare sia il contenuto che gli stili nella console.
 >[Consulta la guida alla richiesta](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) per ulteriori idee su come richiedere all&#39;agente e sulle sue competenze.
 
 ## Caricare contenuti {#upload-content}
+
+>[!TIP]
+>
+>Se lavori su un progetto AEM Sites e Universal Editor, il caricamento di contenuto in AEM funziona in modo leggermente diverso. Per istruzioni di caricamento specifiche, consulta [Guida introduttiva all&#39;agente di modernizzazione delle esperienze per progetti AEM Sites/Universal Editor](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content).
 
 Per caricare i contenuti in [Document Authoring](https://da.live):
 
