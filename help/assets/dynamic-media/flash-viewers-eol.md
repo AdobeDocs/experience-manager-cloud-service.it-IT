@@ -17,4 +17,4 @@ ht-degree: 18%
 
 A partire dal 31 gennaio 2017, il supporto per la piattaforma di visualizzazione Flash è ufficialmente terminato.
 
-Per conoscere gli ultimi visualizzatori supportati, consulta la [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Per conoscere gli ultimi visualizzatori supportati, consulta la [Guida di riferimento per visualizzatori Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=it).
