@@ -3,11 +3,12 @@ title: Gestire le risorse digitali
 description: Sposta, elimina, copia, rinomina, aggiorna e crea versioni delle risorse in [!DNL Assets view].
 role: User, Leader
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1660'
 ht-degree: 64%
 
 ---
@@ -213,13 +214,13 @@ L’indicatore `Expired` nella scheda delle risorse sostituisce l’indicatore `
 
 Puoi anche filtrare le risorse in base allo stato. Per ulteriori informazioni, consulta [Cercare le risorse nella vista Assets](search-assets-view.md).
 
-## Personalizzare i moduli di metadati per includere il campo dello stato delle risorse {#customize-asset-status-metadata-form}
+## Personalizzare i moduli metadati per includere il campo dello stato delle risorse {#customize-asset-status-metadata-form}
 
 **Autorizzazioni richieste:** Amministratore
 
-La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli di metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse.
+La vista Assets fornisce molti campi di metadati standard per impostazione predefinita. Spesso le organizzazioni hanno l’esigenza di aggiungere altri metadati, specifici per l’azienda. I moduli metadati consentono alle aziende di aggiungere campi di metadati personalizzati alla pagina [!UICONTROL Dettagli] di una risorsa. I metadati specifici per l’azienda migliorano la governance e l’individuazione delle risorse.
 
-Per ulteriori informazioni su come aggiungere ulteriori campi di metadati al modulo, consulta [Moduli di metadati](metadata-assets-view.md#metadata-forms).
+Per ulteriori informazioni su come aggiungere ulteriori campi di metadati al modulo, consulta [Moduli metadati](metadata-assets-view.md#metadata-forms).
 
 **Aggiungere al modulo il campo di metadati Stato risorsa**
 

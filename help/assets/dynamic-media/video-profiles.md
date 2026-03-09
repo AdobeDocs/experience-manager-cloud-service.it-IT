@@ -4,10 +4,11 @@ description: Dynamic Media dispone già di un profilo di codifica video adattivo
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3700'
 ht-degree: 6%
 
 ---
@@ -94,7 +95,7 @@ La tabella seguente identifica le best practice per la codifica di profili per l
 
 ## Informazioni sull’utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-Il ritaglio avanzato per i video è una funzione opzionale disponibile in Profili video. Si tratta di uno strumento che utilizza l’intelligenza artificiale di Adobe per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
+Il ritaglio avanzato per i video è una funzione opzionale disponibile in Profili video. Si tratta di uno strumento che utilizza Adobe AI per rilevare e ritagliare automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -104,7 +105,7 @@ Le dimensioni massime supportate per i file video con ritaglio avanzato sono i s
 * 30 fps.
 * Dimensione del file: 300 MB.
 
-Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe AI e Smart Crop.
+Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, un video a 60 FPS deve avere una durata di due minuti e mezzo per essere supportato da Adobe AI e SmartCrop.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 

@@ -4,10 +4,11 @@ description: Scopri come visualizzare in anteprima le risorse 3D in Experience M
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '627'
 ht-degree: 6%
 
 ---

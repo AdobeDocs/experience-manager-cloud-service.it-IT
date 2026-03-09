@@ -3,10 +3,11 @@ title: Metadati a cascata
 description: Questo articolo descrive come definire i metadati a catena per le risorse.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '974'
 ht-degree: 8%
 
 ---

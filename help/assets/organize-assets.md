@@ -4,10 +4,11 @@ description: Organizza risorse digitali, immagini, file, cartelle e così via ut
 contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Tutte le risorse digitali, i metadati e il contenuto dei documenti di Microsoft® Office e PDF vengono estratti e resi ricercabili. La ricerca consente un filtro sofisticato sulle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadati in Gestione delle risorse digitali.
@@ -79,9 +80,9 @@ Il modo più semplice per organizzare le risorse consiste nel salvarle in cartel
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
-L’aggiunta di tag alle risorse ne semplifica il recupero durante una ricerca, la creazione di raccolte utilizzando i risultati della ricerca, l’aumento della classificazione di alcune risorse e l’applicazione di algoritmi di intelligenza artificiale di Adobe per l’individuazione delle risorse.
+L’aggiunta di tag alle risorse ne semplifica il recupero durante una ricerca, la creazione di raccolte utilizzando i risultati della ricerca, l’aumento della classificazione di ricerca per alcune risorse e l’applicazione di algoritmi di intelligenza artificiale di Adobe AI per l’individuazione delle risorse.
 
-[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che consentono di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza l’intelligenza artificiale e il framework di apprendimento automatico di Adobe, che possono essere addestrati per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse.
+[!DNL Adobe Experience Manager Assets] utilizza un algoritmo di apprendimento automatico per creare tag altamente descrittivi che consentono di trovare la risorsa giusta con pochi clic. L’assegnazione tag avanzati utilizza Adobe AI, l’intelligenza artificiale e il framework di apprendimento automatico, che possono essere addestrati per riconoscere e applicare tag standard e specifici per l’azienda alle immagini. I tag avanzati possono inoltre identificare contenuti, singole parole o frasi e applicare automaticamente tag descrittivi alle risorse.
 
 Di seguito è descritta la procedura per aggiungere tag a una risorsa:
 

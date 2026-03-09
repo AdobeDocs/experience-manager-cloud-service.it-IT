@@ -2,12 +2,13 @@
 title: Quali vantaggi offre la visualizzazione di Assets in AEM?
 description: Ulteriori informazioni sui vantaggi chiave della visualizzazione Assets in AEM. Adobe, avvalendosi della sua esperienza nel campo del marketing e dei professionisti creativi, introduce una nuova esperienza utente rivoluzionaria.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '972'
 ht-degree: 69%
 
 ---

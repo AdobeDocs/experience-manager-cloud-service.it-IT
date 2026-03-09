@@ -3,10 +3,11 @@ title: Integra [!DNL AEM Assets] con [!DNL Figma].
 description: Scopri come integrare  [!DNL AEM Assets] con [!DNL Figma] per accedere e utilizzare le risorse della tua organizzazione nel flusso di lavoro di progettazione [!DNL Figma] .
 hide: false
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -33,20 +34,20 @@ ht-degree: 1%
 Eseguire i passaggi seguenti per accedere al connettore Assets di [!UICONTROL Adobe Experience Manager (AEM)]:
 
 1. Nella home page di [!DNL Figma], fai clic su **[!UICONTROL Azioni]** nella barra degli strumenti nella parte inferiore dell&#39;area di lavoro e cerca [!DNL Adobe Experience Manager (AEM) Assets Connector] nella barra di ricerca disponibile nella finestra di dialogo.
-1. Selezionare [!DNL Adobe Experience Manager (AEM) Assets Connector] per visualizzare il pannello [!DNL Adobe Experience Manager (AEM) Assets Connector]. [Importa [!DNL AEM] le risorse nell&#39;area di lavoro [!DNL Figma] &#x200B;](#import-aem-assets-into-figma-workflow) tramite questo pannello.
+1. Selezionare [!DNL Adobe Experience Manager (AEM) Assets Connector] per visualizzare il pannello [!DNL Adobe Experience Manager (AEM) Assets Connector]. [Importa [!DNL AEM] le risorse nell&#39;area di lavoro [!DNL Figma] ](#import-aem-assets-into-figma-workflow) tramite questo pannello.
    ![azioni](/help/assets/assets/actions-on-figma.png)
 In alternativa, accedere a [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) disponibile nella community [!DNL Figma], fare clic su **[!UICONTROL Apri in...]**, selezionare un file recente o crearne uno nuovo e fare clic su **[!UICONTROL Esegui]** per accedere al pannello [!DNL Adobe Experience Manager (AEM) Assets Connector].
    ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
 >
-> [Contatta il supporto Adobe](https://helpx.adobe.com/it/contact.html) per assistenza se dopo l&#39;accesso all&#39;ambiente **[!UICONTROL ricevi un messaggio di]** errore di rete[!DNL AEM].
+> [Contatta il supporto Adobe](https://helpx.adobe.com/contact.html) per assistenza se dopo l&#39;accesso all&#39;ambiente **[!UICONTROL ricevi un messaggio di]** errore di rete[!DNL AEM].
 
 ## Importa [!DNL AEM] risorse nell&#39;area di lavoro [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
 [Accedi al pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]](#access-aem-assets-connector) nell&#39;interfaccia di progettazione di [!DNL Figma] ed effettua le seguenti operazioni:
 
-1. Cerca le risorse nel pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]. Per ulteriori informazioni, consulta [utilizzo di Asset Selector](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Cerca le risorse nel pannello [!UICONTROL Connettore Assets di Adobe Experience Manager (AEM)]. Per ulteriori informazioni, consulta [utilizzo di Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Trascina e rilascia la risorsa nell&#39;area di lavoro o selezionala e fai clic su **[!UICONTROL Seleziona]** per inserire la risorsa nell&#39;area di lavoro.
 

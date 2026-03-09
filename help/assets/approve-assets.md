@@ -2,10 +2,11 @@
 title: Approvare le risorse in Experience Manager
 description: Scopri come approvare le risorse in [!DNL Experience Manager].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1066'
 ht-degree: 7%
 
 ---
@@ -25,7 +26,7 @@ Devi avere accesso ad AEM Assets as a Cloud Service e alle autorizzazioni per mo
 Prima di approvare una risorsa, devi effettuare un aggiornamento una tantum dello schema di metadati applicabile nella visualizzazione Amministratore. Puoi saltare questa configurazione per la vista Assets. Per configurare lo schema metadati, effettua le seguenti operazioni:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Schemi metadati]**.
-1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2&rbrace; con la scheda**&#x200B;[!UICONTROL &#x200B; Base &#x200B;]&#x200B;**evidenziata.]**
+1. Seleziona lo schema metadati applicabile e fai clic su **[!UICONTROL Modifica]**. <br>Viene aperto l&#39;Editor modulo schema metadati **[!UICONTROL 2} con la scheda]** Base **[!UICONTROL evidenziata.]**
 1. Scorri verso il basso e fai clic su **[!UICONTROL Verifica stato]**.
 1. Fai clic sulla scheda **[!UICONTROL Regole]** nel pannello laterale destro.
 1. Deseleziona **[!UICONTROL Disabilita modifica]**.
@@ -33,7 +34,7 @@ Se devi visualizzare la proprietà a cui è mappato il campo **[!UICONTROL Stato
 1. Trascina e rilascia un campo **[!UICONTROL A discesa]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione approvazione_.
-   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam :activationTarget_.
    1. Aggiungere le scelte con `contenthub` e `delivery` come valori di opzione.
 
    >[!NOTE]
@@ -69,17 +70,17 @@ Semplifica il flusso di lavoro approvando rapidamente più risorse contemporanea
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.
-   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:status_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam :status_.
    1. Cambia il valore predefinito in _approvato_.
 
 1. Trascina e rilascia un campo **[!UICONTROL A discesa]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Destinazione approvazione_.
-   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam:activationTarget_.
+   1. Aggiorna **[!UICONTROL Mappa sulla proprietà]** in _./jcr:content/metadata/dam :activationTarget_.
    1. Aggiungere le scelte con `contenthub` e `delivery` come valori di opzione.
 
    >[!NOTE]

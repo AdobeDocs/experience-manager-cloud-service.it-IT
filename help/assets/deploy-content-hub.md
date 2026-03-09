@@ -2,10 +2,11 @@
 title: Distribuisci [!DNL Content Hub]
 description: Scopri come distribuire e attivare Content Hub, fornire accesso agli utenti con diversi tipi di privilegi (caricare risorse, utenti Adobe Express) e fornire privilegi di amministratore agli utenti.
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2564'
 ht-degree: 4%
 
 ---
@@ -20,7 +21,7 @@ Questo articolo fornisce un flusso di lavoro end-to-end per fornire agli utenti 
 
 Guarda questo video per scoprire come abilitare Content Hub per Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472943/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Le varianti di privilegi su Content Hub includono:
 

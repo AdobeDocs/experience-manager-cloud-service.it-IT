@@ -1,10 +1,11 @@
 ---
 title: Gestire risorse con licenza in Content Hub
 description: Scopri come aggiungere un campo di licenza al modulo dei metadati delle risorse, applicare la proprietà dei metadati della licenza alle cartelle di risorse e approvare le risorse con le licenze per l’utilizzo.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '616'
 ht-degree: 3%
 
 ---

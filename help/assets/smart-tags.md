@@ -1,13 +1,14 @@
 ---
 title: Assegna tag automatici alle risorse con  [!DNL Adobe AI] servizio avanzato
-description: Assegna tag alle risorse con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
+description: Assegna tag alle risorse con un servizio di intelligenza artificiale che applica tag aziendali contestuali e descrittivi.
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 1%
+source-wordcount: '2088'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +20,7 @@ I tag avanzati sono parole chiave che non solo compaiono nel testo, ma che descr
 
 Ad esempio, le parole disposte alfabeticamente in un dizionario sono più facili da trovare rispetto a quelle sparse casualmente. L’assegnazione tag ha uno scopo simile. Organizza le risorse in base alla tassonomia aziendale, garantendo che quelle più rilevanti appaiano nei risultati di ricerca. Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli, in modo che vengano visualizzate solo le immagini pertinenti durante la progettazione di una campagna promozionale. Che si tratti di assegnare tag a &quot;corridori&quot; o &quot;scarpe da corsa&quot;, gli utenti non devono preoccuparsi di errori di battitura, variazioni di ortografia o termini di ricerca alternativi: i tag avanzati li riconoscono tutti.
 
-In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) applica automaticamente tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
+In background, la funzionalità utilizza il framework artificialmente intelligente di [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) applica automaticamente Tag avanzati alle risorse caricate, per impostazione predefinita, insieme al testo allineato alla tassonomia aziendale.
 
 ## Prerequisiti e configurazione {#smart-tags-prereqs-config}
 
@@ -88,7 +89,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets senza tag in DAM {#smart-tag-existing-assets}
 
-Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
+Le risorse esistenti o precedenti in DAM non vengono contrassegnate automaticamente con tag avanzati. Devi [Rielaborare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets manualmente per generare tag avanzati per loro. Al termine del processo, passa alla pagina [!UICONTROL Proprietà] di qualsiasi risorsa all&#39;interno della cartella. I tag aggiunti automaticamente sono visualizzati nella sezione [!UICONTROL Tag avanzati] della scheda [!UICONTROL Base]. Questi tag avanzati applicati sono ordinati in ordine decrescente di [punteggio di affidabilità](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:

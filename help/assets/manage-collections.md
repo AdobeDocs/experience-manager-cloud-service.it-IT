@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2404'
 ht-degree: 19%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 19%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Una raccolta è un insieme di risorse all’interno di Adobe Experience Manager Assets. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. Il set può essere una raccolta statica o dinamica basata sui risultati della ricerca.
@@ -267,7 +268,7 @@ Puoi eseguire un flusso di lavoro per le risorse all’interno di una raccolta. 
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

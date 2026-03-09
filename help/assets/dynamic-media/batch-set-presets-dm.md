@@ -4,10 +4,11 @@ description: Scopri come automatizzare la creazione di set di immagini e set 360
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---

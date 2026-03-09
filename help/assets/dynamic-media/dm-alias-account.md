@@ -1,5 +1,5 @@
 ---
-title: Configurare un account alias società Dynamic Media
+title: Configurare un account alias aziendale Dynamic Media
 description: Scopri come configurare un account alias aziendale in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: administering
@@ -7,11 +7,12 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: '677'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +25,7 @@ hidefromtoc: yes
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Gli URL di Dynamic Media e il codice di incorporamento del visualizzatore contengono il nome dell&#39;account della tua azienda. Questo nome account è stato creato al momento del provisioning di Dynamic Media. Ci possono essere scenari in cui la tua azienda ha subito un&#39;acquisizione, o un rebranding, o semplicemente vuoi utilizzare un nome più memorabile. In questi scenari, non è facile aggiornare manualmente il nome dell’account aziendale in tutti gli URL e nel codice di incorporamento del visualizzatore fornito con la soluzione. Inoltre, esiste la possibilità che tu possa influire sull’archivio Dynamic Media esistente o sui contenuti live. Per risolvere questo problema, puoi configurare un account alias della società Dynamic Media.

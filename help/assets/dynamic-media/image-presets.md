@@ -1,18 +1,19 @@
 ---
-title: Applicare predefiniti per le immagini Dynamic Media
+title: Applicare predefiniti per immagini Dynamic Media
 description: Scopri come applicare i predefiniti per immagini in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 6%
+source-wordcount: '309'
+ht-degree: 7%
 
 ---
 
-# Applicare predefiniti per le immagini Dynamic Media {#applying-image-presets}
+# Applicare predefiniti per immagini Dynamic Media {#applying-image-presets}
 
 I predefiniti per immagini consentono alle risorse di distribuire dinamicamente immagini di diverse dimensioni, in formati diversi o con altre proprietà dell’immagine generate dinamicamente. Potete scegliere un predefinito quando esportate per riformattare le immagini in base alle specifiche definite dall&#39;amministratore.
 

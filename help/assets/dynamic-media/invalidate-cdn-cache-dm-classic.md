@@ -4,10 +4,11 @@ description: Scopri come annullare la validità della rete CDN (Content Delivery
 contentOwner: Rick Brough
 feature: Asset Management,Dynamic Media Classic
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '677'
 ht-degree: 15%
 
 ---
@@ -28,7 +29,7 @@ Le risorse Dynamic Media vengono memorizzate nella cache dalla rete CDN (Content
 
 **Per annullare la validità della cache CDN tramite Dynamic Media Classic:**
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti.
 

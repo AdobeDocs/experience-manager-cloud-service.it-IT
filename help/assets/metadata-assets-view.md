@@ -3,11 +3,12 @@ title: Come si gestiscono i metadati nella vista Assets?
 description: Scopri come gestire i metadati nella vista Assets. Una migliore gestione dei metadati rende una risorsa più accessibile, facile da gestire e completa.
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2274'
 ht-degree: 77%
 
 ---
@@ -242,7 +243,7 @@ Per modificare un modulo di metadati, effettua le seguenti operazioni:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

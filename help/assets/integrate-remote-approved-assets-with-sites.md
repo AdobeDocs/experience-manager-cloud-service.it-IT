@@ -1,11 +1,12 @@
 ---
 title: Integrare AEM Assets remoto con AEM Sites
 description: Scopri come configurare e collegare i siti di AEM con Approved AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 12%
+source-wordcount: '1011'
+ht-degree: 13%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 12%
 
 Una gestione efficace delle risorse digitali è fondamentale per offrire esperienze di marchio coinvolgenti e coerenti su varie piattaforme online. Dynamic Media con funzionalità OpenAPI migliora la gestione delle risorse digitali consentendo un’integrazione perfetta tra AEM Sites e AEM Assets as a Cloud Service. Questa funzione innovativa consente di condividere e gestire facilmente diversi tipi di risorse digitali approvate tra più ambienti AEM, semplificando i flussi di lavoro per autori di siti ed editor di contenuti.
 
-Dynamic Media con funzionalità OpenAPI consente agli autori dei siti di utilizzare le risorse di DAM remoto direttamente nell&#39;Editor pagina di AEM e nel [Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=it), semplificando i processi di creazione e gestione dei contenuti.
+Dynamic Media con funzionalità OpenAPI consente agli autori dei siti di utilizzare le risorse di DAM remoto direttamente nell&#39;Editor pagina di AEM e nel [Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), semplificando i processi di creazione e gestione dei contenuti.
 
 Gli utenti possono connettere più istanze di AEM Sites, senza restrizioni sul numero massimo, a una distribuzione DAM remota, un vantaggio notevole rispetto alla funzionalità [Connected Assets](use-assets-across-connected-assets-instances.md).
 
@@ -29,12 +30,11 @@ Il supporto per le risorse remote che utilizzano Dynamic Media con funzionalità
 
 * AEM 6.5 SP 18+ o AEM as a Cloud Service
 
-* Componenti Core versione 2.23.2 o successiva
+* Componenti core versione 2.23.2 o successiva
 
 * Configura le [variabili di ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) seguenti per AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
-
      `pXXXX` fa riferimento all&#39;ID programma <br>
      `eYYYY` fa riferimento all&#39;ID ambiente
 
@@ -42,7 +42,7 @@ Il supporto per le risorse remote che utilizzano Dynamic Media con funzionalità
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: è necessario inviare un ticket di supporto Adobe per ottenere l&#39;ID client IMS.
 
-     o configura le [impostazioni OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=it) per AEM 6.5 nell&#39;istanza AEM Sites eseguendo la procedura seguente:
+     o configura le [impostazioni OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) per AEM 6.5 nell&#39;istanza AEM Sites eseguendo la procedura seguente:
 
    1. Accedi alla console e fai clic su **[!UICONTROL OSGi] >** o
 utilizzare l&#39;URL diretto, ad esempio: `https://localhost:4502/system/console/configMgr`
@@ -63,7 +63,7 @@ dove `pXXXX` fa riferimento all&#39;ID del programma
 
       ![Finestra di configurazione OSGi della configurazione di Dynamic Media di nuova generazione](/help/assets/assets/remote-assets-osgi.png)
 
-  Ulteriori informazioni sull&#39;[autenticazione IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=it).
+  Ulteriori informazioni sull&#39;[autenticazione IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
   Per informazioni dettagliate su come configurare OSGi, consulta i seguenti documenti:
 
@@ -78,7 +78,7 @@ dove `pXXXX` fa riferimento all&#39;ID del programma
 
 In genere si consiglia di eseguire tutte le istanze di produzione AEM utilizzando HTTP. Tuttavia, gli ambienti di sviluppo locali potrebbero non essere configurati come tali. In ogni caso, le risorse remote di Dynamic Media cion OpenAPI richiedono HTTPS per funzionare.
 
-Per configurare HTTPS ovunque desideri utilizzare le risorse remote, inclusi gli ambienti di sviluppo, [utilizza questa guida](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=it).
+Per configurare HTTPS ovunque desideri utilizzare le risorse remote, inclusi gli ambienti di sviluppo, [utilizza questa guida](https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard).
 
 ## Accedere alle risorse da DAM remoto {#fetch-assets}
 
@@ -119,7 +119,7 @@ Per utilizzare le risorse remote all’interno del frammento di contenuto di AEM
 
    >[!NOTE]
    >
-   >Se non disponi di un modello per frammenti di contenuto di AEM, potresti dover [crearne uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=it).
+   >Se non disponi di un modello per frammenti di contenuto di AEM, potresti dover [crearne uno](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Fai clic sull&#39;icona ![segno di spunta](/help/assets/assets/do-not-localize/checkmark-icon.svg) accanto al componente testo.
 1. Seleziona **[!UICONTROL Remoto]** per recuperare la risorsa dal DAM remoto. <br>

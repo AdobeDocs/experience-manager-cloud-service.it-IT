@@ -1,20 +1,21 @@
 ---
 title: Contenuto associato (Assets - Frammenti di contenuto)
-description: Scopri in che modo la funzione di contenuto associato per Frammenti di contenuto AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento.
+description: Scopri in che modo la funzione di contenuto associato per Frammenti di contenuto di AEM fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 44%
+source-wordcount: '298'
+ht-degree: 43%
 
 ---
 
 # Contenuto associato{#associated-content}
 
-Per i Frammenti di contenuto di Adobe Experience Manager (AEM) as a Cloud Service, la funzione di contenuto associato (disponibile nell’editor originale) fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento. Ciò offre flessibilità [fornendo una serie di risorse a cui accedere quando si utilizza il frammento di contenuto](/help/assets/content-fragments/content-fragments.md#using-associated-content), contribuendo anche a ridurre il tempo necessario per cercare la risorsa appropriata. Questa funzione può essere utilizzata sia per la distribuzione di contenuti headless che per l’authoring delle pagine.
+Per as a Cloud Service, Frammenti di contenuto di Adobe Experience Manager (AEM), la funzione di contenuto associato (disponibile nell’editor originale) fornisce la connessione in modo che le risorse possano essere facoltativamente utilizzate con il frammento. Ciò offre flessibilità [fornendo una serie di risorse a cui accedere quando si utilizza il frammento di contenuto](/help/assets/content-fragments/content-fragments.md#using-associated-content), contribuendo anche a ridurre il tempo necessario per cercare la risorsa appropriata. Questa funzione può essere utilizzata sia per la distribuzione di contenuti headless che per l’authoring delle pagine.
 
 >[!NOTE]
 >

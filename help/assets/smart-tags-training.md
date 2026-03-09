@@ -1,19 +1,20 @@
 ---
 title: Assegna tag automatici alle risorse con  [!DNL Adobe AI] servizio avanzato
-description: Assegna tag alle risorse con un servizio artificialmente intelligente che applica tag aziendali contestuali e descrittivi.
+description: Assegna tag alle risorse con un servizio di intelligenza artificiale che applica tag aziendali contestuali e descrittivi.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 6%
+source-wordcount: '1516'
+ht-degree: 7%
 
 ---
 
-
 # Apprendimento dei tag avanzati
 
-L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
+L’apprendimento dei tag avanzati consente di addestrare i tag in modo da poter specificare i dettagli se i tag rilevanti non sono presenti. Utilizza un framework artificialmente intelligente di [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) per addestrare il suo algoritmo di riconoscimento delle immagini in base alla tua struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse caricate, per impostazione predefinita.
 
 ## Determinazione del requisito dell’apprendimento dei tag avanzati {#smart-tag-training-requirement}
 

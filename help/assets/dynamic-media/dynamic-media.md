@@ -4,17 +4,18 @@ description: Scopri cos’è Dynamic Media e puoi utilizzare Dynamic Media per d
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 5%
+source-wordcount: '661'
+ht-degree: 6%
 
 ---
 
 # Utilizzare Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
 
 Dynamic Media offre esperienze di visualizzazione interattiva, tra cui zoom, 360° rotazione e video. Dynamic Media incorpora in modo univoco i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
@@ -46,7 +47,7 @@ Le funzioni disponibili solo in Dynamic Media sono le seguenti:
 * [Immagini panoramiche](panoramic-images.md)
 * [Set 360 gradi](spin-sets.md)
 * [Video](video.md)
-* [Distribuzione di Dynamic Media Assets](delivering-dynamic-media-assets.md)
+* [Distribuzione di risorse Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestione di Assets](managing-assets.md)
 * [Utilizzo delle visualizzazioni rapide per creare finestre popup personalizzate](custom-pop-ups.md)
 

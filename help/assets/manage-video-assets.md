@@ -4,10 +4,11 @@ description: Carica, visualizza in anteprima, commenta e pubblica risorse video 
 contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4983'
+source-wordcount: '4995'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Il formato video è una parte fondamentale delle risorse digitali di un’organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l&#39;intero ciclo di vita delle risorse video dopo la loro creazione.
@@ -349,7 +350,7 @@ Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà nec
 1. Nell&#39;angolo superiore sinistro di Experience Manager, seleziona il logo Experience Manager, quindi nella barra a sinistra seleziona **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 
 1. Nella pagina Profili metadati, nell&#39;angolo superiore destro della pagina, selezionare **[!UICONTROL Crea]**.
-1. Nella finestra di dialogo Aggiungi profilo metadati, inserisci il nome `YouTube Video` nel campo di testo **[!UICONTROL Titolo profilo]**, quindi seleziona **[!UICONTROL Crea]**.
+1. Nella finestra di dialogo Aggiungi profilo metadati, inserisci il nome **[!UICONTROL nel campo di testo]** Titolo profilo`YouTube Video`, quindi seleziona **[!UICONTROL Crea]**.
 1. Nella pagina Editor profilo metadati, seleziona la scheda **[!UICONTROL Avanzamento]**.
 1. Aggiungi al profilo i valori di pubblicazione di YouTube copiati effettuando le seguenti operazioni:
 
@@ -410,7 +411,7 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo processo cons
 1. Nell&#39;angolo superiore destro della pagina delle proprietà del video, seleziona **[!UICONTROL Salva e chiudi]**.
 1. Sulla barra degli strumenti, seleziona **[!UICONTROL Pubblicazione rapida]**.
 
-   Vedi anche [Utilizzare Gestione delle pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=it#page-authoring).
+   Vedi anche [Utilizzare Gestione delle pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Facoltativamente, puoi verificare il video pubblicato sul tuo canale YouTube.
 
@@ -495,7 +496,7 @@ Puoi monitorare l’avanzamento, inclusa la codifica non riuscita/pubblicazione 
 
    >[!NOTE]
    >
-   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL ritardo tentativi]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL nuovo ritardo]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
    >* Configurazione coda processi Apache Sling
    >* Gestore processo esterno flusso di lavoro di Adobe Granite
@@ -640,7 +641,7 @@ Puoi aggiungere annotazioni alle risorse video. Durante l’annotazione dei vide
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -1,12 +1,13 @@
 ---
 title: Visualizzare e gestire le rappresentazioni in Experience Manager Assets
 description: Scopri come AEM Assets e Dynamic Media semplificano la gestione efficace delle immagini con rappresentazioni statiche e dinamiche.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -49,7 +50,7 @@ Questi rendering consentono alle organizzazioni di fornire esperienze personaliz
    * [Predefiniti immagine](/help/assets/dynamic-media/managing-image-presets.md)
 
   È possibile [cambiare la visualizzazione](/help/assets/assets-view-introduction.md#how-to-access-assets-view) in un secondo momento per visualizzare in anteprima le rappresentazioni dinamiche nella visualizzazione Assets.
-* Pubblica le risorse in Dynamic Media per rendere disponibili le rappresentazioni Dynamic Media nella vista Assets. Per ulteriori informazioni, consulta [Pubblicare Assets in AEM e Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Pubblica le risorse in Dynamic Media per rendere disponibili le rappresentazioni Dynamic Media nella vista Assets. Per ulteriori informazioni, consulta [Pubblicare Assets in AEM e Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Visualizzare e scaricare le rappresentazioni Dynamic Media {#view-download-dm-renditions}

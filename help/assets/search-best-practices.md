@@ -2,13 +2,14 @@
 title: Cerca best practice per  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best practice per cercare, trovare e recuperare i metadati delle risorse all’interno dell’applicazione.
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 2%
+source-wordcount: '2533'
+ht-degree: 3%
 
 ---
 
@@ -268,7 +269,7 @@ Consente di accedere alla raccolta di risorse con colori e metadati simili.
 
 ## Facet di ricerca personalizzati {#custom-search-facets}
 
-I facet di ricerca in Adobe Experience Manager consentono di cercare le risorse in più modi anziché in un unico ordine tassonomico o predeterminato. Puoi personalizzare i facet di ricerca e aggiungere predicati in base alle tue esigenze. Leggi [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it#) per la guida dettagliata sull&#39;aggiunta di un predicato personalizzato.
+I facet di ricerca in Adobe Experience Manager consentono di cercare le risorse in più modi anziché in un unico ordine tassonomico o predeterminato. Puoi personalizzare i facet di ricerca e aggiungere predicati in base alle tue esigenze. Leggi [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) per la guida dettagliata sull&#39;aggiunta di un predicato personalizzato.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -316,7 +317,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Facet personalizzati </td>
-        <td> Puoi aggiungere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it"> facet di ricerca personalizzati in base al requisito.</td>
+        <td> Puoi aggiungere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en"> facet di ricerca personalizzati in base al requisito.</td>
         <td> I facet personalizzati sono parzialmente supportati nella vista Assets. I facet supportati sono:
             <ul>
             <li> Tag previsti
@@ -430,5 +431,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Cercare risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=it)
->* [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it)
+>* [Cercare risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

@@ -1,10 +1,11 @@
 ---
 title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 99%
 
 ---
@@ -82,7 +83,7 @@ Esistono alcune configurazioni del modo in cui gli utenti vengono assegnati a [!
    >
    >L’utente assegnato ai profili di prodotto Express e Assets in due Admin Console deve avere lo stesso indirizzo e-mail e utilizzare un account aziendale **Enterprise o scolastico**, non uno **personale**. La configurazione ideale consiste nell’avere entrambe le configurazioni di Admin Console impostate come **Federated ID** con relazione di affidabilità configurata tra loro, in modo che l’utente abbia un’esperienza di accesso unico semplice. Alcuni dei piani Express (ad esempio, Express Teams) non supportano il Federated ID/accesso unico.
 
-Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[!UICONTROL # /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
+Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[#UICONTROL /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
 
 ## È possibile impostare Content Hub in modo che le linee guida del brand della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
 

@@ -2,12 +2,13 @@
 title: Rielaborazione di risorse digitali
 description: Scopri i vari metodi di rielaborazione delle risorse digitali
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -52,7 +53,7 @@ Se selezioni una cartella:
 
       * **[!UICONTROL Flusso di lavoro di post-elaborazione]:** Scegliere questa opzione se è necessaria un&#39;ulteriore elaborazione delle risorse che non può essere ottenuta utilizzando i profili di elaborazione. È possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. La post-elaborazione consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
 
-Consulta [utilizzare i microservizi delle risorse e i profili di elaborazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=it) per ulteriori informazioni sui profili di elaborazione e sul flusso di lavoro di post-elaborazione.
+Consulta [utilizzare i microservizi delle risorse e i profili di elaborazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) per ulteriori informazioni sui profili di elaborazione e sul flusso di lavoro di post-elaborazione.
 
 ![Opzioni avanzate di rielaborazione Assets2](assets/reprocessing-assets-options-advanced-2.png)
 
@@ -68,21 +69,21 @@ Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spe
 
 Rispetto ai vocabolari del linguaggio naturale, assegnare tag alle risorse digitali in base alla tassonomia aziendale consente di allinearle alle attività aziendali e assicura che le risorse più rilevanti vengano visualizzate nelle ricerche.
 
-Ulteriori informazioni su [Rielabora tag colore per immagini esistenti in DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=it#color-tags-existing-images).
+Ulteriori informazioni su [Rielabora tag colore per immagini esistenti in DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
 
 ### Ritaglio avanzato {#reprocessing-smart-crop}
 
-Ulteriori informazioni su [Ritaglio avanzato Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=it) che consente di applicare alle risorse caricate specifiche configurazioni di ritaglio (**[!UICONTROL Ritaglio avanzato]** e ritaglio pixel) e nitidezza.
+Ulteriori informazioni su [Ritaglio avanzato Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) che consente di applicare alle risorse caricate specifiche configurazioni di ritaglio (**[!UICONTROL Ritaglio avanzato]** e ritaglio pixel) e nitidezza.
 
 ### Metadati {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets] mantiene i metadati per ogni risorsa. Consente di categorizzare e organizzare più facilmente le risorse e aiuta le persone alla ricerca di una risorsa specifica. Grazie alla possibilità di estrarre i metadati dai file caricati in Experience Manager Assets, la gestione dei metadati si integra con il flusso di lavoro creativo. Grazie alla possibilità di conservare e gestire i metadati con le risorse, è possibile organizzare ed elaborare automaticamente le risorse in base ai relativi metadati.
 
-Ulteriori informazioni su [Rielaborazione dei profili di metadati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=it).
+Ulteriori informazioni su [Rielaborazione dei profili di metadati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
 
 ### Rielaborare le risorse Dynamic Media in una cartella {#reprocessing-dynamic-media}
 
-È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media esistente o di un profilo video Dynamic Media modificato successivamente. Per ulteriori informazioni, visita [rielabora risorse Dynamic Media in una cartella](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=it).
+È possibile rielaborare le risorse in una cartella che dispone già di un profilo immagine Dynamic Media esistente o di un profilo video Dynamic Media modificato successivamente. Per ulteriori informazioni, visita [rielabora risorse Dynamic Media in una cartella](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en).
 
 >[!NOTE]
 >
@@ -91,4 +92,4 @@ Ulteriori informazioni su [Rielaborazione dei profili di metadati](https://exper
 
 ### Flussi di lavoro
 
-Ulteriori informazioni su [profili di elaborazione e flussi di lavoro di post-elaborazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=it).
+Ulteriori informazioni su [profili di elaborazione e flussi di lavoro di post-elaborazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).

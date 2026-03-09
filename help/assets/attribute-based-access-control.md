@@ -2,10 +2,11 @@
 title: Controllo degli accessi basato su attributi
 description: Scopri come abilitare il controllo degli accessi basato su attributi per definire regole basate su metadati per definire il livello di accesso alle risorse disponibili in Content Hub
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ Alcuni dei vantaggi principali del controllo degli accessi basato su attributi i
 
 * Riduzione del numero di duplicati, migliorando l’integrità della risorsa. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475422/?captions=ita&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Come abilitare il controllo degli accessi basato su attributi? {#enable-attribute-based-access-control}
 

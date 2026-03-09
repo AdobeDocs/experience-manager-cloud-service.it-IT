@@ -3,10 +3,11 @@ title: Configura [!DNL Workfront for Experience Manager enhanced connector]
 description: Configura [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1772'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] come [!DNL Cloud Service] configura il connettore avanzato dopo averlo installato. Per istruzioni sull&#39;installazione, vedere [Installare il connettore](/help/assets/workfront-integrations.md).
@@ -62,7 +63,7 @@ Per iscriverti agli eventi, segui questi passaggi:
 
 1. Vai alla scheda Cartelle collegate al progetto nei servizi cloud.
 1. Percorso principale della cartella collegata: seleziona una cartella in DAM in cui desideri creare le cartelle collegate. Se lasciato vuoto, per impostazione predefinita viene impostato su /content/dam. Verificare che lo schema metadati Strumenti di Workfront e lo schema metadati cartelle collegate a Workfront siano stati applicati alla cartella selezionata.
-1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Programma,Anno,DE:Tipo di progetto,Nome.
+1. Struttura delle cartelle collegate: immetti valori separati da virgole. Ogni valore deve essere `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name o un &quot;valore stringa letterale&quot; (quest&#39;ultimo con virgolette). Attualmente è impostato su Portfolio,Program,Year,DE:Project Type,Name.
 1. Configura autorizzazioni: aggiungi le autorizzazioni `jcr:all permissions` a `/conf/workfront-tools/settings/cloudconfigs` per il gruppo `wf-workfront-users`.
 1. Se il titolo della cartella in Workfront deve includere tutte le cartelle della struttura, seleziona la casella di controllo Crea titolo della cartella collegata in Workfront utilizzando i nomi della struttura di cartelle. In caso contrario, si tratta del titolo dell&#39;ultima cartella.
 1. Sottocartelle con più campi consente di specificare un elenco di cartelle da creare come cartella secondaria della cartella collegata.

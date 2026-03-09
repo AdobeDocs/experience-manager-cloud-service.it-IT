@@ -2,11 +2,12 @@
 title: Integra il Selettore risorse utilizzando Vanilla JS
 description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 59%
+source-wordcount: '185'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +30,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 

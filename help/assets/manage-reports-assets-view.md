@@ -1,21 +1,22 @@
 ---
 title: Gestione dei rapporti in vista Risorse
 description: Accedi ai dati nella sezione dei rapporti di vista Risorse per valutare l’utilizzo di prodotti e funzionalità e ottenere informazioni approfondite sulle metriche di successo chiave.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 86%
+source-wordcount: '1510'
+ht-degree: 87%
 
 ---
 
 # Gestire i rapporti {#manage-reports}
 
-Il reporting delle risorse offre agli amministratori visibilità sulle attività dell’ambiente Adobe Experience Manager Assets View. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti possono accedere alla dashboard Insight e quelli assegnati al profilo di prodotto Amministratori possono creare rapporti definiti dall’utente.
+Il reporting sulle risorse offre agli amministratori visibilità sulle attività dell’ambiente della vista Risorse di Adobe Experience Manager. Questi dati forniscono informazioni utili su come gli utenti interagiscono con i contenuti e il prodotto. Tutti gli utenti possono accedere alla dashboard Insight e quelli assegnati al profilo di prodotto Amministratori possono creare rapporti definiti dall’utente.
 
 ## Accedere ai rapporti {#access-reports}
 
@@ -52,7 +53,6 @@ L’ambiente di visualizzazione AEM Assets offre funzionalità di reporting comp
    1. **Descrizione**: specifica una descrizione facoltativa per il rapporto.
    1. **Seleziona il percorso della cartella:** seleziona un percorso della cartella per generare il rapporto delle risorse caricate e scaricate all’interno di quella cartella specifica. Ad esempio, se hai bisogno del rapporto sulle risorse caricate in una cartella, specifica il percorso di tale cartella.
    1. **Seleziona intervallo date:** seleziona l’intervallo di date per visualizzare l’attività di caricamento o download nella cartella.
-
    <br>
 
    >[!NOTE]
@@ -143,7 +143,7 @@ Ottieni informazioni dettagliate sulla consegna delle risorse effettuata con Dyn
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Prerequisiti {#prereqs-dynamic-media-delivery-reports}
@@ -205,7 +205,6 @@ Per pianificare un rapporto, effettua le seguenti operazioni:
    1. **Descrizione**: aggiungi una descrizione facoltativa al rapporto.
    1. **Seleziona il percorso della cartella:** seleziona il percorso di una cartella per generare un rapporto per le risorse che verranno caricate o scaricate in futuro da tale cartella specifica.
    1. Attiva/disattiva **Pianifica rapporto:** attiva/disattiva la pianificazione del rapporto per un momento successivo o per la sua occorrenza ripetuta.
-
       ![pianifica rapporto](/help/assets/assets/schedule-reports1.svg)
 
    1. **Scegli la frequenza:** specifica l’intervallo di generazione del rapporto (ad esempio giornaliero, settimanale, mensile, annuale o una volta) e imposta la data e l’ora di esecuzione del rapporto insieme alla data di fine per la ricorrenza. Per un rapporto una tantum, seleziona l’intervallo di date per il rapporto sul tipo di attività selezionato nell’ambiente AEM. Ad esempio, se hai bisogno di un rapporto sulle risorse scaricate dal 10 al 29 (date future) di un mese specifico, seleziona queste date nel campo **Seleziona intervallo date**.
@@ -263,7 +262,7 @@ Fai clic su **[!UICONTROL Insight]** nel riquadro di navigazione a sinistra per 
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **Conteggio risorse per dimensione:** suddivide il conteggio totale delle risorse nell’ambiente vista Assets in intervalli di dimensioni diversi, evidenziando il conteggio e la percentuale delle risorse in ciascun intervallo di dimensioni, rappresentate utilizzando un grafico ad anello.
+* **Numero di risorse per dimensione:** suddivide il numero totale di risorse nell’ambiente della vista Assets in intervalli di dimensioni diversi, evidenziando il conteggio e la percentuale delle risorse in ciascun intervallo di dimensioni, rappresentate utilizzando un grafico ad anello.
   ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
 * **Conteggio risorse per tipo di risorsa:** Segmenta il conteggio totale delle risorse nell&#39;ambiente di visualizzazione Assets, evidenziando il conteggio e la percentuale delle risorse in base ai relativi tipi di file, rappresentati da un grafico ad anello.
   ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

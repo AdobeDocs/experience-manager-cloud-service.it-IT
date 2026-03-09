@@ -2,10 +2,11 @@
 title: Integrare Asset Selector (Selettore risorse) con Dynamic Media open API
 description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '942'
 ht-degree: 3%
 
 ---

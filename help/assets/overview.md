@@ -1,10 +1,11 @@
 ---
 title: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
 description: Introduzione ad Assets as a Cloud Service per la gestione delle risorse digitali in AEM
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 5606d66dfa9c7d11063eea495088e1263a2cc5fb
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5642'
+source-wordcount: '5648'
 ht-degree: 87%
 
 ---
@@ -269,11 +270,11 @@ AEM Assets offre funzioni che consentono di trovare rapidamente la risorsa giust
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=it">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Best practice per la gestione dei metadati" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=it">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Best practice per la gestione dei metadati</strong>
       </a>
    </div>
@@ -695,11 +696,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="Panoramica di Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Panoramica dell'agente di individuazione</strong>
       </a>
    </div>
@@ -709,11 +710,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Panoramica sull’ottimizzazione dei contenuti" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Panoramica dell'agente di ottimizzazione dei contenuti</strong>
       </a>
    </div>
@@ -723,11 +724,11 @@ Alcuni dei vantaggi principali dell&#39;agente di governance includono:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Panoramica dell’agente di governance" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Panoramica dell'agente di governance</strong>
       </a>
    </div>

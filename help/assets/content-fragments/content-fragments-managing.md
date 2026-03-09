@@ -1,13 +1,14 @@
 ---
 title: Gestione dei frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM come base per i contenuti headless o per l’authoring delle pagine.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1947'
 ht-degree: 62%
 
 ---
@@ -139,7 +140,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 >[!NOTE]
 >
->Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=it).
+>Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 

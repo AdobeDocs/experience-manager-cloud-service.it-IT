@@ -1,12 +1,13 @@
 ---
 title: Importazione in blocco delle risorse utilizzando la vista Assets
 description: Scopri come importare in blocco le risorse utilizzando la nuova interfaccia utente di Assets (vista Assets). Consente agli amministratori di importare un numero elevato di risorse da un’origine dati ad AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 88%
 
 ---
@@ -27,7 +28,7 @@ Puoi importare le risorse dalle seguenti origini dati:
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451967/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 

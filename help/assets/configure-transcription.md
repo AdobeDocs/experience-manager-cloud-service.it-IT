@@ -8,11 +8,12 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 84%
+source-wordcount: '1674'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +24,7 @@ La trascrizione è il processo di traduzione dell’audio da un file audio o vid
 
 Le trascrizioni sono versioni testuali del contenuto parlato; un esempio è un filmato che stai guardando su qualsiasi piattaforma OTT e che spesso include didascalie per facilitarne l’accessibilità o per consumarne il contenuto in altre lingue. Oppure qualsiasi file audio o video utilizzato per scopi di marketing, apprendimento o intrattenimento. Queste esperienze iniziano con una trascrizione che viene poi formattata o tradotta come appropriato. La trascrizione di audio o video è un processo che richiede molto tempo ed è soggetto a errori quando viene eseguito manualmente. Il processo manuale rende difficile anche la scalabilità, necessaria data la crescente necessità di contenuti audio-video. [!DNL Experience Manager Assets] utilizza la trascrizione basata sull&#39;intelligenza artificiale di Azure che consente l&#39;elaborazione su larga scala delle risorse audio e video e genera le trascrizioni di testo (file .vtt) insieme ai dettagli della marca temporale. Oltre ad Assets, la funzione di trascrizione è supportata anche da Dynamic Media.
 
-La funzione di trascrizione è disponibile senza alcun costo in [!DNL Experience Manager Assets]. Tuttavia, gli amministratori richiedono le credenziali di Azure dell&#39;utente per configurare il servizio di trascrizione in [!DNL Experience Manager Assets]. È inoltre possibile [ottenere le credenziali di prova](https://azure.microsoft.com/en-us/pricing/details/media-services/) direttamente da Microsoft® per scoprire la funzione di trascrizione audio o video in Assets.
+La funzione di trascrizione è disponibile senza alcun costo in [!DNL Experience Manager Assets]. Tuttavia, gli amministratori richiedono le credenziali Azure dell&#39;utente per configurare il servizio di trascrizione in [!DNL Experience Manager Assets]. È inoltre possibile [ottenere le credenziali di prova](https://azure.microsoft.com/en-us/pricing/details/media-services/) direttamente da Microsoft® per scoprire la funzione di trascrizione audio o video in Assets.
 
 ## Prerequisiti per la trascrizione {#prerequisites}
 
@@ -65,7 +66,7 @@ Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profi
 
 Nella scheda **[!UICONTROL IA per la gestione dei contenuti]**, fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]** per configurare la trascrizione. In questo caso, puoi includere ed escludere i formati di file (tipi MIME) per la generazione delle trascrizioni selezionando i tipi di file dall’elenco a discesa. Nell’illustrazione seguente, tutti i file audio e video supportati sono inclusi e i file di testo sono esclusi.
 
-Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** per creare e memorizzare la rappresentazione della trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. Le altre rappresentazioni vengono generate anche dal flusso di lavoro di elaborazione delle risorse DAM predefinito, indipendentemente da questa impostazione.
+Abilita il pulsante di attivazione **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** per creare e memorizzare la rappresentazione della trascrizione (file .vtt) nella stessa cartella in cui si trova la risorsa originale. Le altre rappresentazioni vengono generate anche dal flusso di lavoro di elaborazione delle risorse DAM predefinito, indipendentemente da questa impostazione.
 
 ![configure-transcription-service](assets/configure-transcription-profile.png)
 
@@ -77,7 +78,7 @@ Il profilo video contiene anche le seguenti configurazioni personalizzate. Consu
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Ora configuriamo la trascrizione in questo profilo video. Passa alla scheda **[!UICONTROL IA per la gestione dei contenuti]** e fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]**. Includi tutti i file audio e video ed escludi i file di immagine e di applicazione. Abilita **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** e salva la configurazione.
+Ora configuriamo la trascrizione in questo profilo video. Passa alla scheda **[!UICONTROL IA per la gestione dei contenuti]** e fai clic sul pulsante **[!UICONTROL Aggiungi nuovo]**. Includi tutti i file audio e video ed escludi i file di immagine e di applicazione. Abilita il pulsante di attivazione **[!UICONTROL Creare una trascrizione VTT nella stessa directory]** e salva la configurazione.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 
@@ -173,7 +174,7 @@ Accedi al tuo account [!DNL Azure Media Services] con le stesse credenziali (que
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

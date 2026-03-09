@@ -1,13 +1,14 @@
 ---
 title: Configurare la mappatura dei metadati delle risorse tra Workfront e Experience Manager Assets
 description: Mappa i campi di metadati delle risorse tra le applicazioni Adobe Workfront e Experience Manager as a Cloud Service. Come risultato della mappatura dei campi di metadati, quando invii una risorsa da Workfront a Experience Manager Assets, puoi visualizzare i metadati della risorsa mappata in Experience Manager Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 4%
+source-wordcount: '1018'
+ht-degree: 5%
 
 ---
 
@@ -91,7 +92,6 @@ Per configurare la mappatura dei metadati utilizzando un nuovo modulo metadati i
    1. Specificare `Project Name` nel campo **[!UICONTROL Etichetta campo]**.
 
    1. Specificare `./jcr:content/metadata/wm:projectName` nel campo **[!UICONTROL Mappa su proprietà]**. Come linea guida, utilizza il seguente modello per definire le mappature dei campi in Experience Manager Assets:
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Durante la configurazione delle mappature in Workfront, hai mappato il campo Experience Manager Assets `wm:projectName` al campo Progetto > Nome Workfront.
@@ -140,7 +140,7 @@ Puoi passare all’immagine in Experience Manager Assets e visualizzare i metada
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

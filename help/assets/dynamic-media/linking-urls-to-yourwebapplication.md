@@ -4,10 +4,11 @@ description: Scopri come collegare gli URL all’applicazione web in Dynamic Med
 contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1287'
 ht-degree: 5%
 
 ---
@@ -52,7 +53,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
 1. Passa alla risorsa *published* di cui desideri copiare l&#39;URL del predefinito immagine o del predefinito visualizzatore e seleziona la risorsa per aprirlo.
 
-   Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
+   Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito per immagini.
 
    Consulta [Pubblicare Assets](publishing-dynamicmedia-assets.md).
 
@@ -110,7 +111,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono altre riso
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        Esempio: `https://aem.com/is/content/adobe/image.gif`.
+        Ad esempio, `https://aem.com/is/content/adobe/image.gif`.
 
    * Seleziona **[!UICONTROL Risorsa]** > **[!UICONTROL Rappresentazioni dinamiche]**, quindi seleziona una rappresentazione dinamica della risorsa statica e copia l&#39;URL.
 

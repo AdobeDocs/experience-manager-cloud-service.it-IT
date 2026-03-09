@@ -3,10 +3,11 @@ title: Assets Prime
 description: Ulteriori informazioni sugli aspetti chiave di Assets Prime, ad esempio i vantaggi chiave, i tipi di utente e i relativi privilegi.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1106'
 ht-degree: 15%
 
 ---

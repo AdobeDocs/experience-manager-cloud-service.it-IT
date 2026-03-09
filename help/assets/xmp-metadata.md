@@ -4,11 +4,12 @@ description: Scopri lo standard dei metadati di XMP (Extensible Metadata Platfor
 contentOwner: AG
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 17%
+source-wordcount: '1039'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 17%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da Experience Manager Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia gamma di applicazioni.
@@ -76,7 +77,7 @@ XMP può includere proprietà da uno o più schemi. Ad esempio, un sottoinsieme 
 
 XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo per specificare la lingua del testo.
 
-## Write-back di XMP alle rappresentazioni {#xmp-writeback-to-renditions}
+## Write-back XMP alle rappresentazioni {#xmp-writeback-to-renditions}
 
 Questa funzionalità di writeback di XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale.
 Quando modifichi i metadati di una risorsa dall&#39;interno di [!DNL Assets] o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo metadati nella gerarchia della risorsa. La funzione di writeback consente di propagare le modifiche ai metadati a tutte le rappresentazioni o a rappresentazioni specifiche della risorsa. La funzionalità riscrive solo le proprietà dei metadati che utilizzano lo spazio dei nomi `jcr`, ovvero una proprietà denominata `dc:title` viene riscritta ma una proprietà denominata `mytitle` no.
@@ -154,7 +155,7 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -1,11 +1,12 @@
 ---
 title: Modificare le immagini in Content Hub con Adobe Express
 description: Modificare le immagini in Content Hub con Adobe Express
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 5%
+source-wordcount: '716'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +30,7 @@ Per modificare le immagini con Content Hub:
 
 1. Fai clic su **[!DNL Open in Adobe Express]** disponibile nella scheda delle risorse dell&#39;immagine da modificare. In alternativa, fare clic sull&#39;immagine per aprirne i dettagli e quindi fare clic sul logo [!DNL Adobe Express]. L’editor incorporato per Adobe Express viene quindi caricato senza mai uscire da Content Hub.
 
-   Puoi sfruttare la funzionalità [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensionare l&#39;immagine](https://helpx.adobe.com/it/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/it/express/using/remove-background.html), [ritagliare l&#39;immagine](https://helpx.adobe.com/it/express/using/crop-image.html), combinare l&#39;immagine con il testo o l&#39;immagine generata dall&#39;intelligenza artificiale e molto altro.
+   Puoi sfruttare la funzionalità [!DNL Adobe Express] per eseguire tutte le azioni correlate alla modifica delle immagini, ad esempio [ridimensionare l&#39;immagine](https://helpx.adobe.com/express/using/resize-image.html), [rimuovere o modificare il colore di sfondo](https://helpx.adobe.com/express/using/remove-background.html), [ritagliare l&#39;immagine](https://helpx.adobe.com/express/using/crop-image.html), combinare l&#39;immagine con il testo o l&#39;immagine generata dall&#39;intelligenza artificiale e molto altro.
 
 1. Esegui le modifiche e fai clic su **[!UICONTROL Salva]** per salvare la risorsa modificata in uno dei tipi di formato seguenti:
 

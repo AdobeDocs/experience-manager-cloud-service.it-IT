@@ -2,11 +2,12 @@
 title: Scopri come cercare e individuare le risorse in [!DNL Assets view]?
 description: Scopri come cercare e individuare le risorse nella vista AEM Assets. La potente funzionalità di ricerca consente di individuare rapidamente la risorsa appropriata e velocizza le attività relative ai contenuti.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## Ricerca IA {#ai-search}
 
-La ricerca basata su IA è una funzionalità di ricerca avanzata che comprende il significato e l’intento alla base della query di un utente, anziché fare affidamento sulle corrispondenze esatte tra parole chiave. Utilizza l’intelligenza artificiale (IA) e l’apprendimento automatico per fornire risultati più precisi e in base al contesto.
+Ricerca IA è una funzionalità di ricerca avanzata che comprende il significato e l’intento alla base della query di un utente, anziché fare affidamento sulle corrispondenze esatte tra parole chiave. Utilizza l’intelligenza artificiale (IA) e l’apprendimento automatico per fornire risultati più precisi e in base al contesto.
 
-A differenza della ricerca tradizionale basata su parole chiave, che cerca termini esatti, la ricerca basata su IA interpreta le relazioni tra parole, concetti e intento dell’utente. In questo modo gli utenti possono trovare ciò che stanno cercando, anche se la query è formulata in modo diverso, contiene errori di battitura o è in un’altra lingua.
+A differenza della ricerca tradizionale basata su parole chiave, che cerca termini esatti, Ricerca IA interpreta le relazioni tra parole, concetti e intento dell&#39;utente. In questo modo gli utenti possono trovare ciò che stanno cercando, anche se la query è formulata in modo diverso, contiene errori di battitura o è in un’altra lingua.
 
 Alcuni vantaggi, tra cui:
 
@@ -138,25 +139,25 @@ Alcuni vantaggi, tra cui:
 
 * **Ricerca in base al contesto**: riconosce l&#39;intento di una query, non solo le parole esatte.
 
-### Esempi di ricerca basata su IA {#examples-ai-search}
+### Esempi di Ricerche IA {#examples-ai-search}
 
 **Prompt di esempio**: *Donna che beve caffè*
 
 La ricerca tradizionale basata su parole chiave cerca corrispondenze esatte tra i metadati delle risorse, ad esempio `Woman`, `drinking`, `Coffee`, e restituisce risorse che includono tutti questi termini nei metadati.
 
-Tuttavia, la ricerca basata su IA corrisponde a parole simili come `Girl`, `Lady` nel caso di `Woman` e `Cappuccino` e `Latte` nel caso di `Coffee`.
+Tuttavia, la Ricerca IA corrisponde a parole simili come `Girl`, `Lady` nel caso di `Woman` e `Cappuccino` e `Latte` nel caso di `Coffee`.
 
 Analogamente, è possibile specificare questa richiesta in spagnolo o inserire erroneamente `Woman` come `Wman` e ottenere comunque gli stessi risultati.
 
 ![Ricerca semantica nella visualizzazione Assets](assets/semantic-search.png)
 
-### Attivare o disattivare la ricerca basata su IA nella vista Assets {#enable-disable-ai-search}
+### Abilitare o disabilitare le Ricerche IA nella vista Assets {#enable-disable-ai-search}
 
-Per abilitare o disabilitare la ricerca basata su IA, effettua le seguenti operazioni:
+Per abilitare o disabilitare la Ricerca IA, eseguire la procedura seguente:
 
 1. Passa a **[!UICONTROL Impostazioni]** >> **[!UICONTROL Impostazioni generali]** e seleziona la scheda **[!UICONTROL Ricerca]**.
 
-1. Nella sezione **[!UICONTROL Ricerca]**, seleziona **[!UICONTROL Ricerca basata su IA]** per abilitare la ricerca basata su IA o **[!UICONTROL Parola chiave]** per disabilitarla.
+1. Nella sezione **[!UICONTROL Ricerca]**, seleziona **[!UICONTROL Ricerca IA]** per abilitare la Ricerca IA o **[!UICONTROL Parola chiave]** per disabilitarla.
 
    ![Ricerca semantica nella visualizzazione Assets](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Fornisci feedback sulla documentazione utilizzando [!UICONTROL Modifica questa pagina], ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema], ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibili sulla barra laterale a destra.
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 
 

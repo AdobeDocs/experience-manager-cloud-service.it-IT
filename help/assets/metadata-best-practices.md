@@ -2,11 +2,12 @@
 title: Gestione dei metadati e best practice
 description: Scopri le best practice sui metadati per gestire in modo efficace le risorse digitali.
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -97,7 +98,7 @@ Determina da dove provengono le informazioni ed esamina i dettagli della strateg
 
 >[!NOTE]
 >
->Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=it).
+>Scopri come [gestire i metadati delle risorse digitali](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Coerenza con la strategia per i metadati
 
@@ -138,7 +139,7 @@ Puoi aggiungere più parole chiave e disporle in base alla tua priorità.
    1. Fai clic su **[!UICONTROL Salva e chiudi]**.
 Cerca la risorsa utilizzando le parole chiave aggiunte. La risorsa viene visualizzata tra i primi risultati di ricerca.
 
-  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
+  Scopri come [aumentare la ricerca in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Campi metadati personalizzati:** Personalizza i campi metadati per acquisire informazioni aggiuntive sulle risorse. Ad esempio, aggiungi campi specifici per i dettagli del progetto, le informazioni sul copyright o qualsiasi altro dato rilevante che migliori le funzionalità di ricerca. Scopri [come modificare o aggiungere metadati personalizzati](meta-edit.md) in Experience Manager Assets.
 
@@ -164,8 +165,8 @@ Per semplificare i metadati, prova le seguenti best practice:
 
 ### Analizza percorso di contenuti
 
-Esaminare la catena di fornitura dei contenuti per individuare le origini dei metadati e coinvolgere tutte le parti interessate, a partire dall&#39;alto, per un approccio completo basato sulle best practice. Coinvolgi diversi membri del personale per garantire il supporto completo in tutta l’organizzazione. <br>Incorpora i metadati in varie fasi per condividere la responsabilità di fornire i dettagli delle risorse durante il caricamento. Ad esempio, l&#39;integrazione di [!DNL Experience Manager Assets] e [!DNL Workfront] offre notevoli vantaggi in termini di gestione dei metadati, migliorando l&#39;efficienza e la collaborazione nella creazione e nella gestione dei contenuti. Questa integrazione garantisce un&#39;efficace sincronizzazione dei metadati per le risorse collegate, aggiornando automaticamente i dettagli del progetto quando vengono apportate modifiche in [!DNL Workfront].
+Esamina il supply chain dei contenuti per trovare le origini di metadati e coinvolgere tutte le parti interessate, a partire dall’alto, per un approccio completo basato sulle best practice. Coinvolgi diversi membri del personale per garantire il supporto completo in tutta l’organizzazione. <br>Incorpora i metadati in varie fasi per condividere la responsabilità di fornire i dettagli delle risorse durante il caricamento. Ad esempio, l&#39;integrazione di [!DNL Experience Manager Assets] e [!DNL Workfront] offre notevoli vantaggi in termini di gestione dei metadati, migliorando l&#39;efficienza e la collaborazione nella creazione e nella gestione dei contenuti. Questa integrazione garantisce un&#39;efficace sincronizzazione dei metadati per le risorse collegate, aggiornando automaticamente i dettagli del progetto quando vengono apportate modifiche in [!DNL Workfront].
 
 Comunica tempestivamente obiettivi, progressi, tappe fondamentali e sfide per ricevere il contributo e la cooperazione di tutte le parti interessate. Incoraggiare la collaborazione all&#39;interno dell&#39;organizzazione per creare processi efficienti e metadati preziosi.
 
-Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=it) per gestire in modo efficace i metadati di Experience Manager.
+Ulteriori informazioni su [metadati e i concetti correlati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) per gestire in modo efficace i metadati di Experience Manager.

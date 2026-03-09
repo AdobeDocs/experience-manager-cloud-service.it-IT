@@ -1,26 +1,27 @@
 ---
 title: Imaging avanzato
-description: Scopri in che modo l’imaging intelligente con intelligenza artificiale di Adobe applica le caratteristiche di visualizzazione uniche di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
+description: Scopri in che modo la tecnologia Smart Imaging di Adobe AI applica le esclusive caratteristiche di visualizzazione di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3224'
 ht-degree: 1%
 
 ---
 
 # Imaging avanzato {#smart-imaging}
 
-Scopri in che modo l’imaging intelligente con intelligenza artificiale di Adobe applica le caratteristiche di visualizzazione uniche di ogni utente per fornire automaticamente le immagini giuste ottimizzate per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
+Scopri in che modo la tecnologia Smart Imaging di Adobe AI applica le esclusive caratteristiche di visualizzazione di ogni utente per distribuire automaticamente le immagini giuste ottimizzate per la propria esperienza, migliorando le prestazioni e il coinvolgimento.
 
 
 ## Informazioni sulla tecnologia Smart Imaging {#about-smart-imaging}
 
-La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+La tecnologia Smart Imaging applica le funzionalità di Adobe AI e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
 E ora, ottieni un punteggio Google Core Web Vital migliore per LCP (Largest Contentful Paint) con Smart Imaging migliorato, che ora viene fornito con supporto sia AVIF che WebP.
 
@@ -86,7 +87,7 @@ Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;UR
 
 Per disattivare Smart Imaging, aggiungi `bfc=off` all&#39;URL dell&#39;immagine.
 
-Vedi anche [bfc](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
+Vedi anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
 
 ### Informazioni sull&#39;ottimizzazione delle proporzioni pixel del dispositivo {#dpr}
 
@@ -279,7 +280,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
       * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
       * Smart Imaging supporta domini sia generici che personalizzati.
-      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
+      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
 
          1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
          1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.

@@ -2,10 +2,11 @@
 title: Scaricare risorse da Content Hub
 description: Scopri come scaricare una o più risorse e le relative rappresentazioni dal portale Content Hub.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1373'
 ht-degree: 1%
 
 ---
@@ -165,7 +166,7 @@ Per abilitare le rappresentazioni dinamiche:
 
    Una volta che hai accesso a Dynamic Media con funzionalità OpenAPI, tutte le risorse contrassegnate come `Approved` sono disponibili per la distribuzione pubblica tramite Dynamic Media.
 
-1. Imposta la destinazione di approvazione [&#x200B; della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
+1. Imposta la destinazione di approvazione [ della risorsa](/help/assets/approve-assets-content-hub.md#set-approval-target) su Content Hub per approvare le risorse solo per Content Hub.
 
 1. Abilita l&#39;opzione **[!UICONTROL Abilita disponibilità delle rappresentazioni]** nella scheda **[!UICONTROL Rappresentazioni]** dell&#39;interfaccia utente [Configurazione](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
 

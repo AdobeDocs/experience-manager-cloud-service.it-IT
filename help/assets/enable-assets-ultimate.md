@@ -3,10 +3,11 @@ title: Abilita Assets Ultimate
 description: Scopri come abilitare Assets Ultimate per i clienti nuovi ed esistenti.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1408'
 ht-degree: 3%
 
 ---
@@ -43,7 +44,7 @@ L’istanza di AEM as a Cloud Service su Admin Console include i seguenti profil
 
 * AEM Administrators
 
-* AEM Users
+* Utenti AEM
 
 * [AEM Assets Collaborator Users](#onboard-collaborator-users)
 
@@ -121,7 +122,7 @@ L’istanza di AEM as a Cloud Service su Admin Console ora include i seguenti pr
 
 * AEM Administrators
 
-* AEM Users
+* Utenti AEM
 
 * [AEM Assets Collaborator Users](#onboard-collaborator-users)
 

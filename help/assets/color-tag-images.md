@@ -1,12 +1,13 @@
 ---
 title: Tag colore per immagini
 description: Adobe Experience Manager Assets consente di distinguere i colori in un’immagine e di applicarli automaticamente come tag. Puoi quindi utilizzare questi tag per cercare e filtrare le immagini.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1249'
 ht-degree: 7%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 7%
 
 ![Banner assegnazione tag colore](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets utilizza le funzionalità di intelligenza artificiale di Adobe per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’inserimento. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
+Adobe Experience Manager (AEM) Assets utilizza le funzionalità di Adobe AI per distinguere i colori in un’immagine e applicarli automaticamente come tag al momento dell’inserimento. Questi tag consentono un’esperienza di ricerca avanzata, in base alla composizione del colore dell’immagine.
 
 È possibile configurare il numero di colori, compresi tra uno e 40, con cui un&#39;immagine viene taggata in modo da poter cercare le immagini in base a tali colori in un secondo momento. Experience Manager Assets applica i tag in base alla copertura cromatica di un’immagine. È inoltre possibile configurare il formato di visualizzazione per un tag colore.
 
@@ -94,7 +95,7 @@ Per aggiungere il componente Tag colore avanzati all’editor modulo schema meta
 
 1. Seleziona il nome dello schema e fai clic su **[!UICONTROL Modifica]**.
 
-1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati **&#x200B;**.
+1. Trascina **[!UICONTROL Tag colore avanzati]** dalla scheda **[!UICONTROL Genera modulo]** all&#39;Editor modulo schema metadati ****.
 
 1. Fare clic sul **[!UICONTROL Campo tag colore avanzato]** nell&#39;**[!UICONTROL Editor modulo schema metadati]**.
 

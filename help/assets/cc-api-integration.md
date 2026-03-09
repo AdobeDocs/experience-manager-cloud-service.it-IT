@@ -4,10 +4,11 @@ description: Generare varianti di risorse tramite l’integrazione Creative Clou
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '807'
 ht-degree: 5%
 
 ---
@@ -60,7 +61,7 @@ Per abilitare il componente aggiuntivo Automazione dei contenuti per il programm
 1. Fai clic su **[!UICONTROL Continua]**.
 1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Crea]**.
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un programma AEM as a Cloud Service esistente in Cloud Manager:
 
@@ -70,7 +71,7 @@ Se devi aggiungere il componente aggiuntivo Automazione dei contenuti a un progr
 
 1. Espandi **[!UICONTROL Assets]** e seleziona **[!UICONTROL Automazione contenuti]**.
 1. Fai clic su **[!UICONTROL Aggiorna]**.
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Utilizzare un profilo di elaborazione per modificare in blocco le risorse creative {#process-assets}
 
@@ -111,7 +112,7 @@ Per elaborare le risorse esistenti, selezionare le risorse, selezionare l&#39;op
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -1,13 +1,14 @@
 ---
 title: Migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
 description: Scopri come migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
+exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '363'
 ht-degree: 4%
 
 ---
-
 
 # Migliorare l’individuazione dei contenuti con i metadati generati dall’intelligenza artificiale {#ai-smart-tags}
 

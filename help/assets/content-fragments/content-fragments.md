@@ -1,13 +1,14 @@
 ---
 title: Utilizzo dei frammenti di contenuto (Assets - Frammenti di contenuto)
 description: Scopri come i frammenti di contenuto in Adobe Experience Manager (AEM) as a Cloud Service ti consentono di progettare, creare, curare e utilizzare contenuti, ideali per l’authoring delle pagine e la distribuzione headless.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2633'
 ht-degree: 46%
 
 ---
@@ -128,7 +129,7 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor pagina [&#x200B; dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor pagina [ dal componente Frammento di contenuto](/help/sites-cloud/authoring/fragments/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 

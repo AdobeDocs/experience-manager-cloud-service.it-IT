@@ -10,10 +10,11 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3620'
 ht-degree: 3%
 
 ---
@@ -201,7 +202,7 @@ Di seguito sono riportati diversi altri casi d’uso da considerare.
 
 | **Problema** | **Soluzione Dynamic Media** |
 |---|---|
-| Disegnare, misurare e tagliare manualmente immagini o video per evidenziare il punto focale e visualizzarli in modo appropriato su tutti i dispositivi e le dimensioni dello schermo richiede molto tempo e lavoro. | Utilizza il ritaglio avanzato in Dynamic Media, una funzionalità di intelligenza artificiale di Adobe, per rilevare automaticamente il punto focale in qualsiasi immagine o video e ritagliarlo per mantenerlo. |
+| Disegnare, misurare e tagliare manualmente immagini o video per evidenziare il punto focale e visualizzarli in modo appropriato su tutti i dispositivi e le dimensioni dello schermo richiede molto tempo e lavoro. | Utilizza il ritaglio avanzato in Dynamic Media, una funzionalità di Adobe AI, per rilevare automaticamente il punto focale in qualsiasi immagine o video e ritagliarlo per mantenerlo. |
 | Tempo perso che potrebbe essere impiegato meglio per creare esperienze ad alto impatto. | Acquisisce il punto di interesse desiderato indipendentemente dalle dimensioni dello schermo. |
 | Risorse monouso create per ogni esperienza e dispositivo. | Elimina le attività manuali noiose e fornisce immagini e video di alta qualità e a caricamento rapido che si presentano correttamente su qualsiasi dispositivo o schermo. |
 
@@ -284,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Esercitazioni Dynamic Media_
 
-* [Utilizza Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
-* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/it?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
+* [Utilizza Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
 
 _Visualizzatori Dynamic Media_
 

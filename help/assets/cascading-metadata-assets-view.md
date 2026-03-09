@@ -3,13 +3,14 @@ title: Metadati a cascata
 description: Questo articolo descrive come definire i metadati a catena per le risorse nella vista risorse.
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 5%
 
 ---
-
 
 # Visualizzazione Assets metadati a cascata{#cascading-metadata-assets-view}
 
@@ -156,5 +157,4 @@ Per modificare un modulo di metadati esistente, effettua le seguenti operazioni:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
-
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

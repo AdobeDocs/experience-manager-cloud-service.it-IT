@@ -1,12 +1,13 @@
 ---
 title: Come gestire i tag nella Vista risorse?
 description: Scopri come gestire i tag nella Vista risorse. I tag consentono di categorizzare le risorse così da poter essere sfogliate e cercate in modo più efficiente.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---
@@ -30,17 +31,17 @@ L’assegnazione tag offre molti vantaggi, ad esempio:
 
 * l’assegnazione tag consente agli autori di organizzare facilmente risorse differenti tramite una tassonomia comune. Gli autori possono cercare e organizzare rapidamente le risorse in base a tag comuni.
 
-* I tag gerarchici sono estremamente flessibili e costituiscono un modo eccellente di organizzare i termini in modo logico. È possibile rappresentare interi sistemi tassonomici tramite spazi dei nomi, tag e sottotag.
+* I tag gerarchici sono estremamente flessibili e costituiscono un modo eccellente di organizzare i termini in modo logico. È possibile rappresentare interi sistemi tassonomici tramite spazi dei nomi, tag principali e secondari.
 
 * I tag possono evolvere nel tempo in funzione dei cambiamenti del vocabolario organizzativo.
 
 * I tag gestiti nella Vista amministrazione rimangono sincronizzati con i tag gestiti nella Vista risorse garantendo la governance e l’integrità dei metadati.
 
-Per poter applicare tag alle risorse, è necessario prima creare uno spazio dei nomi, quindi creare e aggiungervi i tag. È possibile anche creare dei tag e aggiungerli a uno spazio dei nomi esistente. Tutti i tag creati a livello di radice vengono aggiunti automaticamente allo spazio dei nomi Tag standard. È possibilie quindi aggiungere il campo Tag al modulo dei metadati in modo che venga visualizzato nella pagina dei dettagli della risorsa. Dopo aver configurato queste impostazioni, puoi iniziare ad applicare i tag alle risorse.
+Per poter applicare tag alle risorse, è necessario prima creare uno spazio dei nomi, quindi creare e aggiungervi i tag. È possibile anche creare dei tag e aggiungerli a uno spazio dei nomi esistente. Tutti i tag creati a livello di radice vengono aggiunti automaticamente allo spazio dei nomi Tag standard. È possibile quindi aggiungere il campo Tag al modulo metadati in modo che venga visualizzato nella pagina dei dettagli della risorsa. Dopo aver configurato queste impostazioni, puoi iniziare ad applicare i tag alle risorse.
 
 >[!NOTE]
 >
->È necessario aggiungere il campo Tag al modulo dei metadati solo se non si utilizza il modulo dei metadati predefinito.
+>È necessario aggiungere il campo Tag al modulo metadati solo se non si utilizza il modulo metadati predefinito.
 
 ![Gestione dell’assegnazione tag](assets/tagging-taxonomy-management.png)
 
@@ -130,9 +131,9 @@ Per eliminare i tag, effettua le seguenti operazioni:
 
 ## Aggiungere il componente Tag al modulo Metadati {#add-tags-to-metadata-form}
 
-Il componente Tag viene aggiunto al modulo metadati `default` automaticamente. Puoi progettare un [modulo metadati](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=it#metadata-forms) utilizzando un modello o da zero. Se non utilizzi un modello di modulo Metadati esistente, puoi modificare il modulo Metadati e aggiungere il componente Tag. La mappatura della proprietà dei metadati viene compilata automaticamente e non può essere modificata in questo momento. Gli utenti di [!DNL Assets as a Cloud Service] possono aggiornare la mappatura per memorizzare i valori dei tag utilizzando spazi dei nomi personalizzati ed esporre solo sottoinsiemi di gerarchie utilizzando percorsi principali.
+Il componente Tag viene aggiunto al modulo metadati `default` automaticamente. Puoi progettare un [modulo metadati](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=it#metadata-forms) utilizzando un modello o da zero. Se non utilizzi un modello per moduli Metadati esistente, puoi modificare il modulo Metadati e aggiungere il componente Tag. La mappatura della proprietà dei metadati viene compilata automaticamente e non può essere modificata in questo momento. Gli utenti di [!DNL Assets as a Cloud Service] possono aggiornare la mappatura per memorizzare i valori dei tag utilizzando spazi dei nomi personalizzati ed esporre solo sottoinsiemi di gerarchie utilizzando percorsi principali.
 
-Guarda questo video rapido per vedere come aggiungere il componente Tag al modulo di metadati:
+Guarda questo video rapido per vedere come aggiungere il componente Tag al modulo metadati:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
@@ -149,7 +150,7 @@ I tag modificati in Assets Essentials vengono applicati anche in Assets as a Clo
 
 ## Aggiungere tag nell’elenco Bloccati {#blocklist-essentials}
 
-[!DNL Assets view] consente di definire l’elenco Bloccati per le parole che non devono essere aggiunte come tag avanzati alle risorse quando vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre gli sforzi nella moderazione dei tag avanzati.
+[!DNL Assets view] consente di definire un elenco Bloccati per le parole che non devono essere aggiunte come tag avanzati alle risorse che vengono caricate nell’archivio. Questa funzionalità consente di mantenere la conformità al marchio e di ridurre il lavoro associato alla moderazione dei tag avanzati.
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)

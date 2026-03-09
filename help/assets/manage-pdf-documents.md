@@ -3,10 +3,11 @@ title: Gestisci i tuoi documenti PDF in [!DNL Adobe Experience Manager].
 description: Gestisci documenti PDF in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -47,7 +48,7 @@ Il visualizzatore nativo di PDF Doc Cloud dispone dei seguenti componenti in AEM
 
 Adobe Experience Manager Assets consente di visualizzare in anteprima un documento PDF costituito da diverse pagine. Per visualizzare in anteprima più pagine di un documento PDF, attenersi alla seguente procedura:
 
-1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=it).
+1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento PDF da caricare e visualizzare in anteprima.
 1. Aprire il documento.
 1. Il visualizzatore documenti di PDF viene caricato per impostazione predefinita. Potete anche selezionare la rappresentazione PDF nel pannello della rappresentazione.
@@ -126,7 +127,7 @@ Oltre ai documenti di PDF, è possibile visualizzare in anteprima più pagine pe
 
 Per l&#39;anteprima di più pagine di altri formati di documento supportati, effettuare le seguenti operazioni:
 
-1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=it).
+1. Segui i passaggi per [caricare le risorse in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Sfogliare il documento da caricare e visualizzare in anteprima.
 1. Aprire il documento.
 1. Seleziona PDF nella sezione statica del pannello a sinistra. Il pannello a destra mostra l’anteprima di più pagine di una risorsa. Seleziona la miniatura dal pannello a sinistra per scegliere la pagina da visualizzare in anteprima.
@@ -144,7 +145,7 @@ Per l&#39;anteprima di più pagine di altri formati di documento supportati, eff
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

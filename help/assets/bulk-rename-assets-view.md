@@ -2,10 +2,11 @@
 title: Rinominare e raggruppare le risorse rinominare in [!DNL Assets view]
 description: Scopri come rinominare in blocco le risorse utilizzando la nuova interfaccia utente di Assets (vista Assets). Consente di rinominare più risorse contemporaneamente.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '446'
 ht-degree: 15%
 
 ---
@@ -67,4 +68,4 @@ Di seguito sono riportati alcuni esempi di utilizzo dell’intelligenza artifici
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

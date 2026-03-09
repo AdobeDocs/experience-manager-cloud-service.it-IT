@@ -1,20 +1,21 @@
 ---
 title: Frammenti di contenuto - Browser configurazioni (Assets - Frammenti di contenuto)
 description: Scopri come abilitare la funzionalità Frammenti di contenuto nel Browser configurazioni.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 80%
+source-wordcount: '361'
+ht-degree: 79%
 
 ---
 
 # Frammenti di contenuto - Browser configurazioni{#content-fragments-configuration-browser}
 
-Scopri come abilitare alcune funzionalità relative ai frammenti di contenuto nel browser configurazioni per utilizzare le potenti funzioni di distribuzione headless dell’AEM.
+Scopri come abilitare alcune funzionalità relative ai frammenti di contenuto nel browser configurazioni per utilizzare le potenti funzioni di distribuzione headless di AEM.
 
 ## Abilita funzionalità frammento di contenuto per la tua istanza {#enable-content-fragment-functionality-instance}
 
@@ -37,7 +38,7 @@ Per abilitare la funzionalità dei frammenti di contenuto, è necessario effettu
 
 ### Abilitare la funzionalità dei frammenti di contenuto nel browser configurazioni {#enable-content-fragment-functionality-in-configuration-browser}
 
-Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model), per prima cosa **devi** attivarle tramite il **Browser di configurazione**:
+Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-content-fragment-model), per prima cosa **devi** abilitarle tramite il **Browser di configurazione**:
 
 >[!NOTE]
 >
@@ -65,7 +66,7 @@ Per utilizzare alcune [funzionalità dei frammenti di contenuto](#creating-a-con
    1. Il **nome** diventa il nome del nodo nell’archivio.
       * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Se necessario è possibile regolarlo.
-   1. Per attivarne l’uso, seleziona
+   1. Per abilitarne l’uso, seleziona
       * **Modelli per frammenti di contenuto**
       * **Query persistenti GraphQL**
 

@@ -2,10 +2,11 @@
 title: Selettore risorse per [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Esempi per personalizzare il selettore risorse in base alle esigenze.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 54%
 
 ---

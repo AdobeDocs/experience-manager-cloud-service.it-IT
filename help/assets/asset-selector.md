@@ -4,10 +4,11 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 contentOwner: KK
 feature: Selectors
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5357'
+source-wordcount: '5363'
 ht-degree: 38%
 
 ---
@@ -106,7 +107,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 

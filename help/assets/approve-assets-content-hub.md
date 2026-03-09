@@ -1,10 +1,11 @@
 ---
 title: Approvare risorse per Content Hub
 description: Scopri come approvare le risorse in Assets as a Cloud Service per renderle disponibili in Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1704'
 ht-degree: 12%
 
 ---
@@ -117,7 +118,7 @@ Segui questi passaggi per automatizzare l&#39;approvazione per le risorse appena
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
 1. Fai clic su **[!UICONTROL Crea]** in alto a destra della pagina.
 1. Aggiungi un titolo profilo e fai clic su **[!UICONTROL Crea]**. Il profilo metadati è stato creato correttamente.
-1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**&#x200B;con la scheda **[!UICONTROL Base]**&#x200B;evidenziata.
+1. Selezionare il profilo metadati appena creato e fare clic su **[!UICONTROL Modifica _(e)_]**. <br>Viene aperto il modulo **[!UICONTROL Modifica profilo metadati]**con la scheda **[!UICONTROL Base]**evidenziata.
 1. Trascina e rilascia un **[!UICONTROL Campo di testo a riga singola]** dalla sezione **[!UICONTROL Genera modulo]** a destra alla sezione Metadati nel modulo.
 1. Fai clic sul campo appena aggiunto, quindi esegui i seguenti aggiornamenti nel pannello **[!UICONTROL Impostazioni]**:
    1. Cambia l&#39;etichetta **[!UICONTROL Campo]** in _Assets approvato_.

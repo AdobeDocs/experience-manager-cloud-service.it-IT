@@ -4,10 +4,11 @@ description: Pubblicare risorse, cartelle e raccolte su Brand Portal.
 contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1293'
 ht-degree: 85%
 
 ---
@@ -32,8 +33,8 @@ Le eventuali modifiche apportate successivamente alla risorsa, alla cartella o a
 >[!NOTE]
 >
 >Adobe consiglia di scaglionare la pubblicazione, eseguendola preferibilmente nelle ore non di picco, in modo che AEM Author non utilizzi troppe risorse.
->&#x200B;>Assets deve essere pubblicato in batch. Il valore consigliato per la dimensione del batch è 15K.
->&#x200B;> Per [!DNL Experience Manager Assets] come [!DNL Cloud Service], la velocità di trasferimento osservata in condizioni lab è di 1000 risorse all&#39;ora. Il tasso si osserva con una dimensione media di 10 MB di risorse.
+>Assets deve essere pubblicato in batch. Il valore consigliato per la dimensione del batch è 15K.
+> Per [!DNL Experience Manager Assets] come [!DNL Cloud Service], la velocità di trasferimento osservata in condizioni lab è di 1000 risorse all&#39;ora. Il tasso si osserva con una dimensione media di 10 MB di risorse.
 
 ## Pubblicare risorse in Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +94,12 @@ Per pianificare la pubblicazione delle risorse su Brand Portal in una data o un�
 >
 > * La parte utenti esistenti del gruppo DAM-Users dispone dell’accesso in lettura al percorso &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
 > * I nuovi utenti (o utenti non amministratori) richiedono i seguenti diritti per la pubblicazione su Brand Portal.
->   &#x200B;> Percorsi:
->   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   &#x200B;>`/libs : jcr:read`
->   &#x200B;>`/conf : jcr:read`
->   &#x200B;>`/content : jcr:read, crx:replicate`
->   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
+> Percorsi:
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Pubblicare cartelle in Brand Portal {#publish-folders-to-brand-portal}
 
@@ -160,7 +161,7 @@ Per pianificare la pubblicazione delle cartelle di risorse in una data o in un�
 
 1. Passa alla vista a elenco ![Vista a elenco](assets/list-view.svg) per visualizzare lo stato di pubblicazione corrente della risorsa.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![stato report generato](assets/report-status.JPG)
 
@@ -258,11 +259,11 @@ Di seguito è descritta la procedura per annullare la pubblicazione di una racco
 
 Oltre a quanto sopra, è possibile pubblicare anche schemi di metadati, predefiniti per immagini, facet di ricerca e tag da AEM Assets a Brand Portal.
 
-* [Pubblicare predefiniti, schemi e facet in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=it)
-* [Pubblicare tag in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=it)
+* [Pubblicare predefiniti, schemi e facet in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Pubblicare tag in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Per ulteriori informazioni, consulta la [documentazione di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=it).
+Per ulteriori informazioni, consulta la [documentazione di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
 
 
 <!--
@@ -285,7 +286,7 @@ Per ulteriori informazioni, consulta la [documentazione di Brand Portal](https:/
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

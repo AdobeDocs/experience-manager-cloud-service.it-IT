@@ -4,10 +4,11 @@ description: Questo articolo descrive come importare il modulo metadati da [!DNL
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -46,9 +47,8 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 
    * Fai clic sull&#39;intestazione della colonna per ordinare la tabella in base a [!UICONTROL Nome], [!UICONTROL Modificato] o [!UICONTROL Autore].
    * Seleziona il modulo importato e fai clic su **[!UICONTROL Rimuovi da cartelle]**, quindi verifica il nome della cartella nel percorso della cartella per verificare che la cartella sia stata trasferita correttamente.
-
      ![verifica pagina moduli metadati](/help/assets/assets/confirm-ported-folder.png)
-   * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
+   * Seleziona il modulo importato e fai clic su **[!UICONTROL Modifica]** per visualizzare tutte le configurazioni supportate del modulo metadati. Per ulteriori informazioni sui moduli di metadati, sui relativi componenti e sui campi, vedere [Configurazione dei metadati Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms).
 
    ![verifica pagina moduli metadati](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -57,8 +57,8 @@ In qualità di amministratore, eseguire la procedura seguente per importare i mo
 Dopo aver importato i moduli di metadati da [!DNL Admin View] a [!DNL Assets View], eseguire la procedura seguente per verificare l&#39;importazione:
 
 1. Passa a una delle cartelle associate al modulo di metadati importato.
-1. Passa alla pagina dei dettagli di una [risorsa](/help/assets/navigate-assets-view.md#preview-assets) e verifica che i componenti di metadati, i campi dei componenti e i valori dei campi supportati siano sincronizzati da [!DNL Admin View]. Consulta l&#39;articolo [Metadati in Assets Essentials](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/metadata) per ulteriori informazioni sui componenti metadati, i campi dei componenti e i valori dei campi.
+1. Passa alla pagina dei dettagli di una [risorsa](/help/assets/navigate-assets-view.md#preview-assets) e verifica che i componenti di metadati, i campi dei componenti e i valori dei campi supportati siano sincronizzati da [!DNL Admin View]. Consulta l&#39;articolo [Metadati in Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) per ulteriori informazioni sui componenti metadati, i campi dei componenti e i valori dei campi.
 
    >[!NOTE]
    >
-   > Nella [[!DNL Assets View] pagina dei dettagli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o nella [[!DNL Admin View] pagina delle proprietà](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/metadata-schemas), le modifiche ai valori delle proprietà dei metadati vengono sincronizzate automaticamente tra le due interfacce. Tuttavia, le modifiche strutturali del modulo, ad esempio l’aggiunta o la rimozione di campi o altre modifiche, non vengono sincronizzate.
+   > Nella [[!DNL Assets View] pagina dei dettagli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) o nella [[!DNL Admin View] pagina delle proprietà](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), le modifiche ai valori delle proprietà dei metadati vengono sincronizzate automaticamente tra le due interfacce. Tuttavia, le modifiche strutturali del modulo, ad esempio l’aggiunta o la rimozione di campi o altre modifiche, non vengono sincronizzate.

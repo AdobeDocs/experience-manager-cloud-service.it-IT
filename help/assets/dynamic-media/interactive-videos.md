@@ -4,10 +4,11 @@ description: Scopri come utilizzare i video interattivi e i video acquistabili i
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 3b1b2bbff6bb01b7efa27c887641a22b5493dc29
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '5749'
 ht-degree: 2%
 
 ---
@@ -28,11 +29,11 @@ Per visualizzare un video interattivo e shoppable in azione, seleziona [Demo liv
 
 * Per mettere in pausa il video e aprire Quickview del prodotto, seleziona la miniatura. Ad esempio, seleziona l’immagine della miniatura di KitchenAid nel video per avere una rotazione di 360° del mixer, oppure ingrandisci per vedere i dettagli del mixer.
 
-Vedi anche [Utilizzare video interattivi con Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
+Vedi anche [Utilizzare video interattivi con Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/interactive-videos#dynamic-media)
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=it. This must now call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
 
 -->
 
@@ -60,11 +61,11 @@ The [Use Interactive Video, Link Sharing, and YouTube sharing in Experience Mana
 
 La seguente descrizione dettagliata del flusso di lavoro è progettata per aiutarti a iniziare rapidamente a utilizzare i video interattivi in Dynamic Media.
 
-Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa [pagina Web demo iniziale a cui *non* è ancora stata aggiunta interattività](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=it).
+Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su questa [pagina Web demo iniziale a cui *non* è ancora stata aggiunta interattività](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html).
 
 Gli **esempi** illustrano i passaggi necessari per integrare i video interattivi nel sito web.
 
-Quando hai completato l&#39;esercitazione nell&#39;ultima sezione dell&#39;esempio, [viene visualizzata la pagina Web della demo finale con il video interattivo completamente integrato](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=it).
+Quando hai completato l&#39;esercitazione nell&#39;ultima sezione dell&#39;esempio, [viene visualizzata la pagina Web della demo finale con il video interattivo completamente integrato](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html).
 
 Passaggi video interattivi:
 
@@ -148,10 +149,10 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili di mi
     <td><p>SKU singola. Trovato nella stringa di query.</p> </td>
     <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>L'unica parte variabile nell'URL è il valore del parametro della stringa di query <code>productId=</code> ed è chiaramente un valore SKU. Pertanto, le miniature richiedono solo campi SKU compilati con valori come <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -167,9 +168,9 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili di mi
     <td><p>SKU e ID categoria nella stringa query.</p> </td>
     <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU è archiviato nel parametro <code>prodId</code> e l'ID di categoria nel parametro <code>category=</code>.</p> <p>Di conseguenza, le definizioni delle miniature sono coppie. ovvero un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
     <ul>
       <li>Lo SKU è <code>305466</code> e <code>categoryId</code> è <code>1100004</code></li>
@@ -184,7 +185,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili di mi
 
 Quando l’approccio di cui sopra viene applicato al sito web di esempio, hai una pagina web con diverse miniature di prodotto, ciascuna con un pulsante &quot;SEE MORE&quot; (VEDI ALTRO):
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Dopo aver attivato tutte le visualizzazioni rapide del prodotto disponibili nella pagina, si ottiene il seguente elenco di richieste Quickview effettuate al backend:
 
@@ -234,7 +235,7 @@ Facoltativamente, puoi creare un predefinito visualizzatore video interattivo pe
 
 Un predefinito visualizzatore video interattivo esegue correttamente il rendering del video e di tutti i segmenti della timeline aggiunti. Utilizza anche un esempio di visualizzazione rapida predefinita quando selezioni una miniatura di prodotto in modalità Anteprima, in modo da verificarne l’interattività prima di pubblicarla.
 
-Dopo aver salvato il predefinito visualizzatore, lo stato relativo viene impostato automaticamente su **On &#x200B;** nella pagina Predefiniti visualizzatore. Lo stato indica che è visibile nel componente Dynamic Media e ogni volta che lo si utilizza per visualizzare l’anteprima di un video. Accertati anche di pubblicare manualmente il nuovo predefinito visualizzatore.
+Dopo aver salvato il predefinito visualizzatore, lo stato relativo viene impostato automaticamente su **On **nella pagina Predefiniti visualizzatore. Lo stato indica che è visibile nel componente Dynamic Media e ogni volta che lo si utilizza per visualizzare l’anteprima di un video. Accertati anche di pubblicare manualmente il nuovo predefinito visualizzatore.
 
 Consulta [Creare un predefinito visualizzatore](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) per creare un predefinito visualizzatore video interattivo personalizzato.
 
@@ -538,7 +539,7 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo e si a
 
 Utilizzando il sito web demo come esempio:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Il codice di incorporamento video è standard:
 
@@ -569,7 +570,7 @@ Il codice di incorporamento video è standard:
 
 L’integrazione è semplice come rimuovere il codice di incorporamento video e sostituirlo con il codice di incorporamento video interattivo da Experience Manager. Puoi visualizzare il risultato al seguente URL. Anche se mostra un video interattivo presente nella pagina, non è ancora integrato con le visualizzazioni rapide esistenti:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrare un video interattivo con un Quickview esistente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -658,27 +659,27 @@ Il processo di costruzione dell’URL Quickview è opposto al processo di identi
   <tbody>
   <tr>
     <td><p>SKU singola, trovata nella stringa di query</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU singola, trovata nel percorso URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID categoria nella stringa query</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -769,7 +770,7 @@ Il codice sorgente completo è il seguente:
 
 Il sito web di dimostrazione finale con il video interattivo completamente integrato viene visualizzato come segue:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Creare finestre popup personalizzate® utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 

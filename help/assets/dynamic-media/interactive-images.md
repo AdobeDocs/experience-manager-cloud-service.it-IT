@@ -4,10 +4,11 @@ description: Scopri come utilizzare le immagini interattive in Dynamic Media.
 contentOwner: Rick Brough
 feature: Interactive Images
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '4072'
+source-wordcount: '4078'
 ht-degree: 1%
 
 ---
@@ -20,7 +21,7 @@ Di seguito è riportato un banner acquistabile con una finestra popup Quickview.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Vedi [immagini interattive in azione](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=it) nella pagina Web illustrata sopra.
+Vedi [immagini interattive in azione](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) nella pagina Web illustrata sopra.
 
 ## Guarda come vengono creati i banner interattivi per le immagini {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +31,7 @@ Segui la procedura dettagliata per [la creazione dei banner interattivi](https:/
 
 La seguente descrizione dettagliata del flusso di lavoro è stata progettata per aiutarti a iniziare rapidamente a usare le immagini interattive in Adobe Experience Manager Assets.
 
-Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un esempio di [pagina Web a cui non sono ancora state aggiunte immagini interattive](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it).
+Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata su un esempio di [pagina Web a cui non sono ancora state aggiunte immagini interattive](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -112,10 +113,10 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
     <td><p>Singolo SKU, trovato nella stringa di query.</p> </td>
     <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>L’unica parte variabile nell’URL è il valore del parametro della stringa query productId=, che è chiaramente un valore SKU. Pertanto, gli hotspot richiedono solo campi SKU compilati con valori come <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -131,9 +132,9 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
     <td><p>SKU e ID categoria nella stringa query.</p> </td>
     <td><p>Gli URL registrati di Quickview includono:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU è archiviato nel parametro <code>prodId</code> e l'ID categoria <code></code> nel parametro <code>category=</code>.</p> <p>Di conseguenza, le definizioni dei punti attivi sono coppie. ovvero un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
     <ul>
       <li><p>Lo SKU è <strong><code>305466</code></strong> e <code>categoryId</code> è <code>1100004</code>.</p> </li>
@@ -146,7 +147,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
 
 **Esempio**
 
-Puoi applicare lo stesso approccio utilizzato nei tre esempi precedenti alla [pagina web demo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it).
+Puoi applicare lo stesso approccio utilizzato nei tre esempi precedenti alla [pagina web demo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 La pagina web demo presenta diverse miniature di prodotto, ciascuna con un pulsante Quickview etichettato &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser ancora attivato, seleziona ogni pulsante e annota gli URL registrati di Quickview. Dopo aver attivato tutte e quattro le visualizzazioni rapide del prodotto disponibili nella pagina, viene visualizzato il seguente elenco di richieste Quickview effettuate al backend:
 
@@ -342,13 +343,13 @@ Il codice di incorporamento copiato è impostato per un ambiente reattivo in mod
 
 **Esempio**
 
-Utilizzando il sito Web [demo come esempio](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it), l&#39;immagine dei tre singoli utenti è un tag `IMG` statico:
+Utilizzando il sito Web [demo come esempio](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), l&#39;immagine dei tre singoli utenti è un tag `IMG` statico:
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice da incorporare copiato da Experience Manager Assets. Il risultato [mostra l&#39;immagine interattiva acquistabile nella pagina con tre punti attivi circolari](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=it).
+L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice da incorporare copiato da Experience Manager Assets. Il risultato [mostra l&#39;immagine interattiva acquistabile nella pagina con tre punti attivi circolari](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
@@ -356,9 +357,9 @@ L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il 
 
 Per applicare un ritaglio a un&#39;immagine interattiva acquistabile per un ambiente reattivo, includere nel percorso l&#39;attributo di configurazione dell&#39;immagine interattiva `ZoomView.iscommand`. In questo caso, viene chiamato il componente `ZoomView` e `iscommand` è il comando di server immagini &quot;ritagliate&quot; applicato.
 
-Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=it).
+Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Vedere il comando [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=it) image serving.
+Vedere il comando [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) image serving.
 
 Ora puoi integrare l’immagine interattiva con un Quickview esistente sul tuo sito web.
 
@@ -426,27 +427,27 @@ Utilizzando i precedenti esempi di URL di Quickview, è possibile vedere come vi
  <tbody>
   <tr>
    <td><p>SKU singola, trovata nella stringa di query</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU singola, trovata nel percorso URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU e ID categoria nella stringa query</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>
@@ -495,7 +496,7 @@ Di seguito è riportato il codice sorgente completo:
  s7interactiveimageviewer.init();
 ```
 
-Il sito Web di dimostrazione [final con l&#39;immagine interattiva completamente integrata](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=it).
+Il sito Web di dimostrazione [final con l&#39;immagine interattiva completamente integrata](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
 ## Creare pop-up personalizzati utilizzando Quickview {#using-quickviews-to-create-custom-pop-ups}
 

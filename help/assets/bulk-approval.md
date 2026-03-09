@@ -4,10 +4,11 @@ description: Imposta i flussi di lavoro di revisione per le risorse all’intern
 contentOwner: AG
 feature: Collections, Collaboration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '826'
 ht-degree: 10%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 10%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Con Adobe Experience Manager Assets puoi impostare flussi di lavoro di revisione ad hoc per le risorse presenti in una cartella o in una raccolta. Puoi condividerlo con revisori o partner creativi per chiedere il loro feedback. È possibile associare un flusso di lavoro di revisione a un progetto o creare un&#39;attività di revisione indipendente.
@@ -122,7 +123,7 @@ Al termine della revisione (approvazione o rifiuto delle risorse), il revisore r
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

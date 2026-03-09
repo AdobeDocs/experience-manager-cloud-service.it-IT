@@ -4,10 +4,11 @@ description: Scopri come gestire gli stati di scadenza delle risorse e le inform
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1374'
 ht-degree: 6%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata di utilizzo. Utilizzando la piattaforma [!DNL Experience Manager], puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e le informazioni sulle licenze.
@@ -163,7 +164,7 @@ Un bene è considerato protetto se è soddisfatta una delle seguenti condizioni:
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

@@ -1,12 +1,13 @@
 ---
 title: Pubblicazione rapida in [!DNL AEM and Dynamic Media]
 description: Pubblicazione rapida in [!DNL Assets view] consente di pubblicare risorse in [!DNL AEM and Dynamic Media] contemporaneamente o separatamente. Puoi selezionare risorse e cartelle e scegliere di pubblicare in [!DNL Dynamic Media] o [!DNL AEM].
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---

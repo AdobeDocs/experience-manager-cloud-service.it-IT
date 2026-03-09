@@ -3,12 +3,13 @@ title: Selettore di destinazione per AEM as a Cloud Service
 description: Utilizza il Selettore di destinazione di AEM per mostrare e selezionare le risorse da utilizzare come copia della risorsa originale.
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 35%
+source-wordcount: '1880'
+ht-degree: 34%
 
 ---
 
@@ -128,18 +129,18 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 
 | Proprietà | Tipo | Spiegazione |
 |---|---|---|
-| *repo:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
-| *repo:id* | stringa | Identificatore univoco della risorsa. |
-| *repo:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
-| *repo:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
-| *repo:size* | numero | Dimensione della risorsa in byte. |
-| *repo:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
-| *repo:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
-| *repo:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
-| *repo:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
-| *repo:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
-| *repo:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
-| *repo:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
+| *archivio:repositoryId* | stringa | Identificatore univoco dell’archivio in cui è memorizzata la risorsa. |
+| *archivio:id* | stringa | Identificatore univoco della risorsa. |
+| *archivio:assetClass* | stringa | La classificazione della risorsa (ad esempio immagine o video, documento). |
+| *archivio:name* | stringa | Nome della risorsa, inclusa l’estensione del file. |
+| *archivio:size* | numero | Dimensione della risorsa in byte. |
+| *archivio:path* | stringa | Posizione della risorsa all’interno dell’archivio. |
+| *archivio:ancestors* | `Array<string>` | Array di elementi predecessori per la risorsa nell’archivio. |
+| *archivio:state* | stringa | Stato corrente della risorsa nell’archivio (ad esempio attiva, eliminata e così via). |
+| *archivio:createdBy* | stringa | Utente o sistema che ha creato la risorsa. |
+| *archivio:createDate* | stringa | La data e l’ora in cui è stata creata la risorsa. |
+| *archivio:modifiedBy* | stringa | Utente o sistema che ha modificato per ultimo la risorsa. |
+| *archivio:modifyDate* | stringa | La data e l’ora dell’ultima modifica apportata alla risorsa. |
 | *dc:format* | stringa | Formato della risorsa. |
 | *_pagina* | orderBy: string; count: number; | Include il numero di pagina del documento. |
 

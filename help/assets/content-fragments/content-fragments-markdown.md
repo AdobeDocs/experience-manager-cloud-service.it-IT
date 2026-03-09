@@ -3,11 +3,12 @@ title: Markdown (Assets - Frammenti di contenuto)
 description: Scopri in che modo l’editor dei frammenti di contenuto utilizza la sintassi markdown per consentire di creare facilmente contenuti headless.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '601'
 ht-degree: 69%
 
 ---
@@ -132,7 +133,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizzare il simbolo &ast; (asterisco) prima delle voci dell&#39;elenco. Esempio:
+Per creare un elenco non ordinato, utilizzare il simbolo &amp;ast; (asterisco) prima delle voci dell&#39;elenco. Esempio:
 
     `* item in list`
 

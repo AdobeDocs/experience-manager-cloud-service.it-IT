@@ -4,10 +4,11 @@ description: Rapporti sulle risorse in [!DNL Adobe Experience Manager Assets] ch
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 9%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Il reporting delle risorse consente di valutare l&#39;utilità della distribuzione di [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets] puoi generare diversi rapporti per le risorse digitali. I report forniscono informazioni utili sull&#39;utilizzo del sistema, sulle modalità di interazione degli utenti con le risorse e sulle risorse condivise <!-- downloaded and -->.
@@ -66,7 +67,7 @@ Gli amministratori di [!DNL Adobe Experience Manager] possono generare e persona
 
    >[!NOTE]
    >
-   >Iscriviti a un **profilo di prodotto Amministratore AEM** per creare un report **Scarica**. Consulta [Assegnazione dei profili di prodotto di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) per acquisire il diritto a un profilo di prodotto Amministratore AEM.
+   >Iscriviti a un **profilo di prodotto Amministratore AEM** per creare un report **Scarica**. Consulta [Assegnazione dei profili di prodotto di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) per acquisire il diritto a un profilo di prodotto Amministratore AEM.
 
    ![Seleziona tipo di report](assets/choose_report.png)
 
@@ -203,7 +204,7 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 * [Formati di file supportati dalle risorse](file-format-support.md)
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

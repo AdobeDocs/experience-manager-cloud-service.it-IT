@@ -4,10 +4,12 @@ description: Scopri come correlare le risorse digitali che condividono alcuni at
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 9%
+source-wordcount: '538'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +42,7 @@ Grazie a questa funzione, è possibile condividere un file PDF a bassa risoluzio
 
 1. Fai clic su **[!UICONTROL Seleziona]**. A seconda della relazione scelta al passaggio 3, la risorsa correlata viene elencata in una categoria appropriata nella sezione **[!UICONTROL Relazioni risorse]**. Se ad esempio la risorsa correlata è il file di origine della risorsa corrente, verrà elencata in **[!UICONTROL Source]**.
 
-   ![Esempio di relazione Assets](assets/asset-relations-example.png)
+   ![Esempio di relazione risorse](assets/asset-relations-example.png)
 
 1. Fai clic su **[!UICONTROL Annulla correlazione]** ![annulla correlazione risorse](assets/do-not-localize/link-unrelate-icon.png) disponibili per tutte le risorse correlate in ogni sezione ([!UICONTROL Source], [!UICONTROL Derivato] e [!UICONTROL Altro]) per annullare la correlazione di una risorsa.
 

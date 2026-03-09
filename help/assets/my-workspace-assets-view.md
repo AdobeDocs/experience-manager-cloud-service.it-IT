@@ -1,12 +1,13 @@
 ---
 title: Vista My Workspace for Assets
 description: L’area di lavoro personale è una pagina che offre moduli visivi personalizzabili per un accesso comodo alle aree chiave dell’interfaccia utente di Assets e alle informazioni più rilevanti per l’utente.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '751'
 ht-degree: 84%
 
 ---
@@ -86,7 +87,7 @@ Tutti i widget vengono visualizzati per impostazione predefinita, ma è possibil
 
 1. Fai clic su **[!UICONTROL Area di lavoro personale]** disponibile nel riquadro di navigazione a sinistra e fai clic su **[!UICONTROL Personalizza]**.
 
-1. Disattiva l’interruttore per il widget che non è necessario visualizzare nell’area di lavoro. Puoi anche trascinare un widget in una posizione appropriata per aggiornare l’ordine di visualizzazione nell’area di lavoro.
+1. Disattiva il pulsante di attivazione per il widget che non è necessario visualizzare nell’area di lavoro. Puoi anche trascinare un widget in una posizione appropriata per aggiornare l’ordine di visualizzazione nell’area di lavoro.
 
 1. Per salvare le modifiche, fai clic su **[!UICONTROL Completati]**.
 

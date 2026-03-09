@@ -2,11 +2,12 @@
 title: Modificare i video
 description: Modifica i video utilizzando  [!DNL Adobe Express] opzioni basate su e salva i video aggiornati come versioni.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '785'
 ht-degree: 17%
 
 ---

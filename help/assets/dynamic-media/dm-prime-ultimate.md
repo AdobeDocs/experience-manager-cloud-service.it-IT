@@ -2,11 +2,12 @@
 title: Dynamic Media Prime e Ultimate
 description: Scopri di più su Dynamic Media Prime e Ultimate, i loro vantaggi e le differenze tra i due.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 12%
+source-wordcount: '427'
+ht-degree: 18%
 
 ---
 
@@ -32,7 +33,7 @@ Tra gli altri vantaggi principali di Dynamic Media Prime:
 
 >[!NOTE]
 >
->I clienti di DM Prime possono utilizzare modificatori di immagine di base, tra cui rotazione, ritaglio, capovolgimento, altezza, larghezza e qualità. Smart Imaging non supporta AVIF per i clienti DM Prime.
+>La clientela DM Prime può utilizzare modificatori di immagine di base, tra cui rotazione, ritaglio, riflessione, altezza, larghezza e qualità. Smart Imaging non supporta AVIF per la clientela DM Prime.
 
 ### Prerequisiti {#pre-requisites-dm-prime}
 
@@ -54,8 +55,8 @@ Oltre alle funzioni di Dynamic Media Prime, come l’integrazione di AEM Assets 
 * [Soluzione Dynamic Media in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), che include anche le seguenti funzionalità chiave:
 
    * [Modelli Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [Nozioni di base sui modelli](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [Configurazione visiva](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [Nozioni di base sui modelli](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [Configurazione visiva](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### Prerequisiti {#pre-requisites-dm-ultimate}
 

@@ -2,12 +2,13 @@
 title: Iniziare a utilizzare [!DNL Assets View]
 description: Accesso, esperienza di accesso, casi di utilizzo supportati e problemi noti di [!DNL Assets View].
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 89%
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -56,7 +57,7 @@ Di seguito sono indicate le varie attività di gestione delle risorse digitali (
 | Modificare le risorse | <ul> <li>[Modifiche nel browser con Adobe Photoshop Express](/help/assets/edit-images-assets-view.md)</li> <li>[Ritagliare in base a un profilo social media](/help/assets/edit-images-assets-view.md#crop-straighten-images)</li> <li>[Visualizzare e gestire le versioni](/help/assets/manage-organize-assets-view.md#view-versions)</li></ul></ul> |
 | Cercare le risorse nell’archivio | <ul> <li>[Ricerca in una cartella specifica](/help/assets/search-assets-view.md#refine-search-results)</li> <li>[Ricerche salvate](/help/assets/search-assets-view.md#saved-search)</li> <li>[Cercare le risorse visualizzate di recente](/help/assets/search-assets-view.md)</li> <li>[Ricerca testuale](/help/assets/search-assets-view.md) |
 | Scaricare le risorse | <ul> <li> [Visualizzare in anteprima una risorsa](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [Scaricare le risorse](/help/assets/manage-organize-assets-view.md#download) <li> [Scaricare le rappresentazioni](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
-| Operazioni relative ai metadati | <ul> <li>[Visualizzare i metadati nel dettaglio](/help/assets/metadata-assets-view.md) </li> <li> [Aggiornare i metadati](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Creare un nuovo modulo di metadati](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
+| Operazioni relative ai metadati | <ul> <li>[Visualizzare i metadati nel dettaglio](/help/assets/metadata-assets-view.md) </li> <li> [Aggiornare i metadati](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [Creare un nuovo modulo metadati](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
 
 ## Passaggi successivi {#next-steps}
 
@@ -66,7 +67,7 @@ Di seguito sono indicate le varie attività di gestione delle risorse digitali (
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

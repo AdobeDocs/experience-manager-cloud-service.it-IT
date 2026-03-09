@@ -2,10 +2,11 @@
 title: Novità di Content Hub
 description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '889'
 ht-degree: 82%
 
 ---
@@ -44,7 +45,7 @@ Content Hub ora supporta il download di più rappresentazioni di risorse in una 
 
 Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >

@@ -4,10 +4,11 @@ description: Scopri come creare uno schema di metadati per le cartelle di risors
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1071'
 ht-degree: 10%
 
 ---
@@ -167,7 +168,7 @@ Puoi assegnare uno schema di metadati della cartella durante la creazione di una
 
 ## Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
+Apri le proprietà di una cartella configurata con uno schema di metadati per cartelle. Nella pagina delle proprietà della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
 Immetti i valori dei metadati nei vari campi e seleziona **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
@@ -181,7 +182,7 @@ Immetti i valori dei metadati nei vari campi e seleziona **[!UICONTROL Salva]** 
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

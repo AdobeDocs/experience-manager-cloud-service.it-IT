@@ -2,12 +2,13 @@
 title: Caricare risorse nell’archivio
 description: Carica le risorse in [!DNL Assets view], visualizza lo stato di caricamento e risolvi eventuali problemi.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 91%
+source-wordcount: '831'
+ht-degree: 90%
 
 ---
 
@@ -51,7 +52,7 @@ Per visualizzare un sottoinsieme di risorse in base all’avanzamento o allo sta
 
 Non appena caricate, le risorse vengono elaborate da [!DNL Assets view] per generare miniature ed elaborare i metadati. Per molte risorse, l’elaborazione richiede un po’ di tempo. Se non vedi una miniatura e sulla miniatura segnaposto compare un messaggio di elaborazione, controlla nuovamente la cartella dopo qualche minuto. Durante l’elaborazione, [!DNL Assets view] genera anche le rappresentazioni, aggiunge tag avanzati e indicizza i dettagli della risorsa che verranno usati per le ricerche.
 
-![Le risorse vengono elaborate al momento del caricamento e nelle relative sezioni compare la dicitura Elaborazione in corso](assets/upload-processing.png)
+![Le risorse vengono elaborate al momento del caricamento e nelle relative sezioni viene visualizzata la dicitura Elaborazione in corso](assets/upload-processing.png)
 
 *Figura: Sezioni delle risorse caricate, con la dicitura “Elaborazione in corso”.*
 
@@ -108,4 +109,4 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

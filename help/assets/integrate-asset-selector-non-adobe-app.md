@@ -2,10 +2,11 @@
 title: Integrare Asset Selector con applicazioni non Adobe o di terze parti
 description: Integra il selettore delle risorse con varie applicazioni Adobe, non Adobe e di terze parti.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '434'
 ht-degree: 9%
 
 ---

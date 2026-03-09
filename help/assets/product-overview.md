@@ -1,11 +1,12 @@
 ---
 title: Panoramica di Content Hub
 description: Informazioni su Content Hub, i principali vantaggi che offre, come accedervi e come fornire un feedback sulle opzioni disponibili.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 68%
+source-wordcount: '936'
+ht-degree: 67%
 
 ---
 

@@ -1,27 +1,28 @@
 ---
-title: Approfondimenti Assets
+title: Approfondimenti sulle risorse
 description: Tieni traccia delle valutazioni utente e delle statistiche di utilizzo delle immagini utilizzate in siti web di terze parti, campagne di marketing e soluzioni creative di Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 13%
+source-wordcount: '907'
+ht-degree: 20%
 
 ---
 
-# Approfondimenti Assets {#asset-insights}
+# Approfondimenti sulle risorse {#asset-insights}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 La funzionalità Assets Insights consente di monitorare le valutazioni degli utenti e le statistiche di utilizzo delle immagini utilizzate nei siti web di terze parti, nelle campagne di marketing e nelle soluzioni creative di Adobe. Consente di fornire informazioni approfondite sulle prestazioni e sulla popolarità delle immagini.
 
-Assets Insights acquisisce i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, cliccata e impression (numero di volte in cui un’immagine viene caricata sul sito web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più comuni da includere in cataloghi, campagne di marketing e così via. È inoltre possibile formulare criteri di archiviazione e rinnovo delle licenze in base a tali statistiche.
+La funzionalità di informazioni sulle risorse acquisisce i dettagli dell’attività dell’utente, ad esempio il numero di volte in cui un’immagine viene valutata, cliccata e le impressioni (numero di volte in cui un’immagine viene caricata sul sito web). Assegna punteggi alle immagini in base a queste statistiche. Puoi utilizzare i punteggi e le statistiche sulle prestazioni per selezionare le immagini più popolari da includere in cataloghi, campagne di marketing e così via. È inoltre possibile formulare criteri di archiviazione e rinnovo delle licenze in base a tali statistiche.
 
 Affinché Assets Insights possa acquisire le statistiche di utilizzo delle immagini provenienti da un sito web, devi includere il codice di incorporamento dell’immagine nel codice del sito web.
 
@@ -114,11 +115,11 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *Figura: Configurare Adobe Analytics per Assets Insights in[!DNL Experience Manager]*
 
-1. Una volta completata l’autenticazione, nell’elenco a discesa verranno elencate le suite di rapporti. Seleziona la **[!UICONTROL suite di rapporti]** di Adobe Analytics da cui desideri che Assets Insights recuperi i dati. Fare clic su **[!UICONTROL Aggiungi]**.
+1. Una volta completata l’autenticazione, nell’elenco a discesa verranno elencate le suite di rapporti. Seleziona la **[!UICONTROL suite di rapporti]** di Adobe Analytics da cui desideri che Assets Insights recuperi i dati. Fai clic su **[!UICONTROL Aggiungi]**.
 
 1. Dopo che [!DNL Experience Manager] ha configurato la tua suite di rapporti, fai clic su **[!UICONTROL Fine]**.
 
-Per ulteriori informazioni, vedere [Servizi Web Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=it#api-access-information).
+Per ulteriori informazioni, vedere [Servizi Web Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Tracciamento pagina {#page-tracker}
 
@@ -189,7 +190,7 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 * [Cerca risorse](search-assets.md)
 * [Risorse collegate](use-assets-across-connected-assets-instances.md)
 * [Rapporti sulle risorse](asset-reports.md)
-* [Schemi metadati](metadata-schemas.md)
+* [Schemi di metadati](metadata-schemas.md)
 * [Scaricare le risorse](download-assets-from-aem.md)
 * [Gestire i metadati](manage-metadata.md)
 * [Facet di ricerca](search-facets.md)

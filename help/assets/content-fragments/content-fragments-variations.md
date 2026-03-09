@@ -1,13 +1,14 @@
 ---
 title: Varianti - Authoring dei contenuti di frammenti (Assets - Frammenti di contenuto)
 description: Scopri in che modo le varianti di Frammento di contenuto consentono di creare contenuti per il frammento, quindi di creare varianti di tale contenuto in base allo scopo, aumentando così la flessibilità.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 51%
 
 ---

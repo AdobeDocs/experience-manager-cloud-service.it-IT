@@ -3,11 +3,12 @@ title: Installa [!DNL Workfront for Experience Manager enhanced connector]
 description: Installa [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] come [!DNL Cloud Service] installa il connettore avanzato. Prima dell&#39;installazione, controlla il supporto della piattaforma e altri [prerequisiti per il connettore](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
@@ -38,9 +39,9 @@ Prima di installare il connettore, effettuare le seguenti operazioni di preinsta
 
 1. Se il programma AEM as a Cloud Service ha configurato il networking avanzato e abilitato l’inserimento di IP nell’elenco Consentiti, devi aggiungere gli IP Workfront a questo elenco per consentire la trasmissione delle sottoscrizioni di eventi e di varie chiamate API ad AEM.
 
-   * [IP cluster Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=it#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Per conoscere il cluster IP in [!DNL Workfront], passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informazioni cliente]**.
+   * [IP cluster Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Per conoscere il cluster IP in [!DNL Workfront], passare a **[!UICONTROL Configurazione]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informazioni cliente]**.
 
-   * [IP API sottoscrizione eventi Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=it)
+   * [IP API sottoscrizione eventi Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
 
    >[!IMPORTANT]
    >
@@ -52,7 +53,7 @@ Prima di installare il connettore, effettuare le seguenti operazioni di preinsta
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
+   >
    >    ```
 
 1. Verificare che le sovrapposizioni seguenti non esistano nell&#39;archivio [!DNL Experience Manager]. Se disponi di sovrapposizioni preesistenti su questi percorsi, rimuovi le sovrapposizioni o unisci il delta delle modifiche tra i due:
@@ -66,14 +67,14 @@ Prima di installare il connettore, effettuare le seguenti operazioni di preinsta
 
 1. L&#39;installazione richiede l&#39;impostazione di un progetto Maven in [!DNL Experience Manager] come [!DNL Cloud Service]. Utilizza le seguenti risorse per comprendere come includere un pacchetto di terze parti nel progetto Maven:
 
-   * [Includi pacchetto di terze parti nel progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#including-third-party).
-   * [Distribuisci con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it).
+   * [Includi pacchetto di terze parti nel progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
+   * [Distribuisci con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
 
 Per installare il componente aggiuntivo in [!DNL Experience Manager] come [!DNL Cloud Service], eseguire la procedura seguente:
 
 1. Scarica il connettore avanzato da [Distribuzione software Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
-1. [Accedi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=it) e clona l&#39;archivio AEM as a Cloud Service da Cloud Manager.
+1. [Accedi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clona l&#39;archivio AEM as a Cloud Service da Cloud Manager.
 
 1. Apri l’archivio AEM as a Cloud Service clonato utilizzando un IDE a tua scelta.
 
@@ -136,7 +137,7 @@ Per installare il componente aggiuntivo in [!DNL Experience Manager] come [!DNL 
 
 1. Invia le modifiche all’archivio.
 
-1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=it).
+1. Esegui la pipeline per [distribuire le modifiche in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. Per creare una configurazione utente di sistema, creare `wf-workfront-users` nel gruppo utenti [!DNL Experience Manager] e assegnare l&#39;autorizzazione `jcr:all` a `/content/dam`. Un utente di sistema `workfront-tools` viene creato automaticamente e le autorizzazioni richieste vengono gestite automaticamente. Tutti gli utenti di [!DNL Workfront] che utilizzano il connettore avanzato vengono aggiunti automaticamente come parte di questo gruppo.
 
