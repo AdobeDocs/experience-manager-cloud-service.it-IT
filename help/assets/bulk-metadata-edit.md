@@ -1,6 +1,6 @@
 ---
 title: Modifica in blocco dei metadati in [!DNL Assets View]
-description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [DNL! Assets View] simultaneamente.
+description: Scopri come aggiornare un set predefinito di campi di metadati standard per più risorse disponibili su [!DNL ! Assets View] simultaneamente.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
