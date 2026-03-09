@@ -4,9 +4,9 @@ description: Scopri i primi passaggi per diventare rapidamente produttivi con l�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Ora che la console è in grado di accedere al codice, puoi iniziare a chiedere c
 
 Ora puoi importare sia il contenuto che gli stili nella console.
 
+>[!TIP]
+>
+>[Consulta la guida alla richiesta](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) per ulteriori idee su come richiedere all&#39;agente e sulle sue competenze.
+
 ## Caricare contenuti {#upload-content}
 
 Per caricare i contenuti in [Document Authoring](https://da.live):
@@ -136,5 +140,6 @@ Se il codice è stato inviato a un ramo diverso da `main`, l&#39;anteprima apert
 I seguenti documenti possono essere utili mentre continui a esplorare Experience Modernization Agent e la relativa console.
 
 * [Console di modernizzazione esperienza](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Dettagli sulla console, visualizzazioni, opzioni e funzionalità
+* [Guida introduttiva per l&#39;agente di modernizzazione esperienza](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Idee su come richiedere all&#39;agente e quali sono le funzionalità dell&#39;agente
 * [Esercitazione per sviluppatori di Edge Delivery Services](https://www.aem.live/developer/tutorial): utile se hai poca esperienza con i progetti AEM e Edge Delivery Services
 * [Authoring dei documenti](https://da.live) - Utile se si è alle prime armi con l&#39;authoring dei documenti per la gestione dei contenuti

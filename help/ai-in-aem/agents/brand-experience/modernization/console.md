@@ -4,9 +4,9 @@ description: Guida di riferimento per l’interfaccia e le funzionalità della C
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,14 @@ La vista Impostazioni consente di gestire le impostazioni di base della console.
 
 ![Visualizzazione impostazioni](assets/settings-view.png)
 
-* **Credenziali** consente di specificare un token di accesso personale per Figma in modo che la console possa accedere ai blocchi di progettazione per il progetto.
+* **Credenziali** consente di specificare un token di accesso personale per Figma in modo che la console [possa accedere ai blocchi di progettazione per il progetto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * Il token richiede i seguenti ambiti di sola lettura:
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [Consulta la documentazione di Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) per ulteriori informazioni sulla configurazione dei token di accesso personali.
 * **Ripristina area di lavoro** ripristina lo stato iniziale della console e tutte le modifiche non inviate o non caricate andranno perse.
