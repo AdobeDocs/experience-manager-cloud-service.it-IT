@@ -21,5 +21,5 @@ L’integrazione viene eseguita importando il pacchetto Selettore frammento di c
 
 Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
-* sta integrando un&#39;applicazione Adobe in [Unified Shell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* sta integrando un&#39;applicazione Adobe in [Unified Shell](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
 * ha già generato un token IMS per l’autenticazione
