@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1932'
 ht-degree: 1%
 
 ---
@@ -437,6 +437,10 @@ Le connessioni alle origini sono solo SSL e utilizzano la porta 443.
 | **forwardAuthorization** (facoltativo, il valore predefinito è false) | Se è impostato su true, l’intestazione &quot;Authorization&quot; dalla richiesta del client verrà passata al backend, altrimenti l’intestazione Authorization viene rimossa. |
 | **timeout** (facoltativo, in secondi, il valore predefinito è 60) | Numero di secondi in cui la rete CDN deve attendere che un server backend distribuisca il primo byte di un corpo di risposta HTTP. Questo valore viene utilizzato anche come timeout tra i byte per il server back-end. |
 
+>[!IMPORTANT]
+>
+>Il valore **dominio** non deve contenere `.adobeaemcloud.com`. Non è possibile eseguire il proxy diretto a un dominio adobeaemcloud.com. Questa restrizione protegge da loop di richiesta indesiderati. Per inoltrare il traffico all&#39;ambiente AEM as a Cloud Service, utilizza come backend di origine un [dominio personalizzato](#proxying-to-aemaacs) installato nell&#39;ambiente AEMaaCS.
+
 ### Trasferimento del dominio personalizzato al livello statico di AEM {#proxy-custom-domain-static}
 
 I selettori di origine possono essere utilizzati per instradare il traffico di pubblicazione AEM al contenuto statico AEM distribuito utilizzando la [pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). I casi d’uso includono l’utilizzo di risorse statiche sullo stesso dominio della pagina (ad esempio, example.com/static) o su un dominio esplicitamente diverso (ad esempio, static.example.com).
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >Poiché viene utilizzata la rete CDN gestita di Adobe, assicurarsi di configurare l&#39;annullamento della validità push in modalità **gestita** seguendo la [documentazione sull&#39;annullamento della validità push di Edge Delivery Services](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
+
+### Esecuzione del proxy nell’ambiente AEMaaCS {#proxying-to-aemaacs}
+
+Impossibile utilizzare un dominio `adobeaemcloud.com` direttamente come origine nella configurazione CDN. Questa operazione è rifiutata (il dominio non deve contenere `.adobeaemcloud.com`) per proteggere da loop di richieste indesiderati. Ciò si applica anche quando si esegue il routing da un dominio installato per un sito Edge Delivery.
+
+Se il dominio personalizzato (`www.example.com`) è già installato in un ambiente AEMaaCS, il routing predefinito verrà indirizzato al backend di AEM senza alcuna regola CDN. Utilizza i selettori di origine quando devi indirizzare tra ambienti diversi (ad esempio, da `pXXXX-eYYYY` a `pXXXX-eZZZZ`) o da un sito Edge Delivery a un ambiente AEMaaCS.
+
+In questi casi, per inoltrare il traffico all&#39;ambiente AEM as a Cloud Service (ad esempio, per instradare percorsi specifici come `/graphql` a un back-end), installa un dominio personalizzato nell&#39;ambiente AEMaaCS e utilizzalo come origine nella configurazione CDN.
+
+**Esempio:** Se il livello di pubblicazione di AEM è raggiungibile alle `publish-pXXXXX-eYYYYY.adobeaemcloud.com`, non utilizzare tale dominio in `originSelectors`. Invece:
+
+1. Installa un dominio personalizzato nell’ambiente AEMaaCS (ad esempio, `aem-publish-origin.example.com`) che punta al servizio di pubblicazione.
+2. Nella configurazione CDN, definisci un&#39;origine con tale dominio personalizzato e instrada i percorsi desiderati (ad esempio, `/graphql`) verso di esso.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## Reindirizzamenti lato server {#server-side-redirectors}
