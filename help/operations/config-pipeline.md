@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
+source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,9 @@ Scopri come utilizzare le pipeline di configurazione per distribuire diverse con
 
 Una pipeline di configurazione di Cloud Manager distribuisce i file di configurazione (creati in formato YAML) in un ambiente di destinazione. È possibile configurare in questo modo diverse funzioni in AEM as a Cloud Service, tra cui l’inoltro del registro, le attività di manutenzione relative all’eliminazione e diverse funzioni CDN.
 
-Per i progetti **Distribuzione pubblicazione**, le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. I file di configurazione possono essere distribuiti in ambienti di sviluppo rapido (RDE) utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Per i progetti **Distribuzione pubblicazione**, le pipeline di configurazione possono essere distribuite tramite Cloud Manager ai tipi di ambiente di sviluppo, staging e produzione. I file di configurazione possono essere distribuiti in ambienti di sviluppo rapido (RDE) utilizzando [strumenti della riga di comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Utilizza una [**pipeline di distribuzione di destinazione**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ([produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) o [non produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)) quando devi configurare il traffico per un dominio associato a un ambiente di distribuzione di pubblicazione.
 
-Le pipeline di configurazione possono essere distribuite anche tramite Cloud Manager per **progetti Edge Delivery**.
+Le pipeline di configurazione possono essere distribuite anche tramite Cloud Manager per **progetti Edge Delivery**. Utilizza una [**pipeline Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) quando il dominio è associato a un **sito Edge Delivery**.
 
 Nelle sezioni seguenti di questo documento viene fornita una panoramica di informazioni importanti su come utilizzare le pipeline di configurazione e su come strutturare le relative configurazioni. Descrive i concetti generali condivisi tra tutte le funzionalità o un sottoinsieme di quelle supportate dalle pipeline di configurazione.
 
