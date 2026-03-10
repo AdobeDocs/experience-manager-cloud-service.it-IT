@@ -4,10 +4,10 @@ description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 621ae9a93ee8bd7d5f1b35387d4022072bfc46c6
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 82%
+source-wordcount: '989'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +25,18 @@ Il seguente video illustra le funzionalità principali di Content Hub:
 
 ## Data di pubblicazione {#release-date}
 
-La data di rilascio della versione funzionale di Content Hub (2025.10.0) è il venerdì 30 ottobre 2025 (come per la versione di AEM as a Cloud Service). La prossima versione funzionale (2025.11.0) è pianificata per il venerdì 20 novembre 2025.
+La data di rilascio della versione funzionale di Content Hub (2026.02.0) è il venerdì 26 febbraio 2026 (come per la versione di AEM as a Cloud Service). La prossima versione (2026.03.0) è pianificata per il venerdì 26 marzo 2026.
+
+## Funzioni della versione di febbraio 2026 {#february-release-features}
+
+**Gestione delle autorizzazioni in Content Hub tramite AEM Governance Agent**
+
+In Content Hub, l’agente di governance di AEM garantisce che solo le persone giuste accedano alle risorse giuste al momento giusto. Grazie all&#39;applicazione di controlli granulari basati su attributi e diritti di utilizzo, protegge i contenuti sensibili e al tempo stesso consente una collaborazione sicura. Ciò significa ridurre i rischi di conformità, rafforzare l&#39;integrità del marchio e velocizzare i flussi di lavoro; i team possono condividere e riutilizzare le risorse in tutta sicurezza senza preoccuparsi di accessi non autorizzati o utilizzi impropri. Questo equilibrio tra sicurezza e flessibilità si traduce in una maggiore efficienza operativa e fiducia in tutta l&#39;organizzazione.
+
+![Panoramica sulla gestione delle autorizzazioni](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+
 
 ## Funzioni della versione di ottobre {#october-release-features}
 
@@ -45,7 +56,7 @@ Content Hub ora supporta il download di più rappresentazioni di risorse in una 
 
 Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
