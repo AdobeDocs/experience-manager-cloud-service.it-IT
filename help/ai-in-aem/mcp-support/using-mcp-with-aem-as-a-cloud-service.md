@@ -4,9 +4,9 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
+source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Ogni utente esegue questo passaggio oppure un amministratore dell&#39;applicazio
 1. Verificare gli strumenti individuati
    * Una volta autenticata, l’applicazione rileva gli strumenti MCP dal server. È quindi possibile iniziare a richiedere al LLM di eseguire le operazioni di AEM.
 
-Di seguito sono riportate le guide dettagliate per ciascuna applicazione supportata:
+Di seguito sono elencate le applicazioni supportate, alcune delle quali sono collegate a guide dettagliate:
 
 #### Applicazioni chat (Web e desktop) {#setup-chat-applications}
 
