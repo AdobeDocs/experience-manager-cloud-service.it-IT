@@ -4,9 +4,9 @@ description: Scopri come visualizzare in anteprima risorse e proprietà in [!DNL
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '997'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Alcune proprietà per le risorse visualizzate in [!DNL Content Hub] vengono deri
 
 * **Tag avanzati:** [!DNL The Content Hub] utilizza i servizi di contenuti avanzati di Adobe AI per addestrare le risorse utilizzando l&#39;algoritmo di riconoscimento sulla struttura basata su tag. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse. Grazie ai tag avanzati è possibile velocizzare le attività relative ai contenuti dei progetti grazie alla possibilità di trovare rapidamente le risorse rilevanti. Gli smart tag sono un esempio di informazioni sulla risorsa non contenute nell’immagine. [!DNL Experience Manager Assets] applica automaticamente i tag avanzati alle risorse per impostazione predefinita.
 
-* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=it) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalità di intelligenza artificiale di Adobe.
+* **Tag colore:** [I tag colore](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) consentono di riconoscere una risorsa utilizzando colori identificati automaticamente in una risorsa mediante le funzionalità di intelligenza artificiale di Adobe.
 
 * Data di caricamento
 
@@ -141,22 +141,22 @@ The date range allows you to select dates you want to see the assets. You can cu
 
 ### Perché visualizzi l’anteprima delle risorse e delle relative proprietà in AEM Assets Content Hub?
 
-L’anteprima delle risorse e delle relative proprietà in Content Hub consente agli utenti di visualizzarne i dettagli, essenziali per una distribuzione e una gestione efficienti delle risorse. Con la crescita delle informazioni digitali, affidarsi semplicemente a nomi di file e miniature diventa inscalabile. La visualizzazione delle proprietà dettagliate consente di categorizzare le risorse, renderle più accessibili, semplificarne l’utilizzo e garantire la completezza delle informazioni per tutti gli utenti.
+L’anteprima delle risorse e delle relative proprietà in AEM Assets Content Hub consente agli utenti di visualizzarne i dettagli, essenziali per una distribuzione e una gestione efficienti delle risorse. Con la crescita delle informazioni digitali, affidarsi semplicemente a nomi di file e miniature diventa inscalabile. La visualizzazione delle proprietà dettagliate consente di categorizzare le risorse, renderle più accessibili, semplificarne l’utilizzo e garantire la completezza delle informazioni per tutti gli utenti.
 
 ### Come posso visualizzare e interagire con le proprietà di una risorsa in AEM Assets Content Hub?
 
-Per visualizzare le proprietà di una risorsa in Content Hub, accedi o cerca la risorsa, quindi fai clic su di essa per aprirne la pagina delle proprietà. Qui puoi ingrandire o ridurre l’anteprima, annullare lo zoom, passare alle risorse precedenti o successive, scaricare la risorsa, modificarla con Adobe Express, aggiungerla a una raccolta o chiudere l’anteprima. Nella pagina delle proprietà vengono visualizzate informazioni dettagliate quali titolo, formato, dimensioni, risoluzione, tag, tag colore e smart tag.
+Per visualizzare le proprietà di una risorsa in AEM Assets Content Hub, accedi o cerca la risorsa, quindi fai clic su di essa per aprirne la pagina delle proprietà. Qui puoi ingrandire o ridurre l’anteprima, annullare lo zoom, passare alle risorse precedenti o successive, scaricare la risorsa, modificarla con Adobe Express, aggiungerla a una raccolta o chiudere l’anteprima. Nella pagina delle proprietà vengono visualizzate informazioni dettagliate quali titolo, formato, dimensioni, risoluzione, tag, tag colore e smart tag.
 
 ### Quali sono le proprietà derivate in AEM Assets Content Hub e come vengono generate?
 
-Le proprietà derivate in Content Hub vengono generate automaticamente quando le risorse vengono caricate e approvate. Alcuni esempi includono le dimensioni della risorsa, i tag avanzati e i tag colore. I tag avanzati utilizzano i servizi di contenuti avanzati di Adobe AI per riconoscere e applicare automaticamente i tag rilevanti, migliorando l’individuazione delle risorse. I tag colore vengono inoltre identificati automaticamente tramite l’intelligenza artificiale, consentendo agli utenti di riconoscere le risorse in base ai loro colori prominenti.
+Le proprietà derivate in AEM Assets Content Hub vengono generate automaticamente quando le risorse vengono caricate e approvate. Alcuni esempi includono le dimensioni della risorsa, i tag avanzati e i tag colore. I tag avanzati utilizzano i servizi di contenuti avanzati di Adobe AI per riconoscere e applicare automaticamente i tag rilevanti, migliorando l’individuazione delle risorse. I tag colore vengono inoltre identificati automaticamente tramite l’intelligenza artificiale, consentendo agli utenti di riconoscere le risorse in base ai loro colori prominenti.
 
-### Gli amministratori possono personalizzare quali proprietà delle risorse sono visibili in Content Hub?
+### Gli amministratori possono personalizzare quali proprietà delle risorse sono visibili in AEM Assets Content Hub?
 
-Sì, gli amministratori possono configurare le proprietà da visualizzare per ogni risorsa in Content Hub. Questa operazione può essere eseguita sia per l’interfaccia utente di anteprima delle risorse che per le schede delle risorse nei risultati di ricerca o nelle raccolte, in modo che gli utenti possano visualizzare le informazioni più rilevanti in base ai requisiti.
+Sì, gli amministratori possono configurare le proprietà da visualizzare per ogni risorsa in AEM Assets Content Hub. Questa operazione può essere eseguita sia per l’interfaccia utente di anteprima delle risorse che per le schede delle risorse nei risultati di ricerca o nelle raccolte, in modo che gli utenti possano visualizzare le informazioni più rilevanti in base ai requisiti.
 
-### Quali sono i formati di file supportati per l’anteprima delle risorse?
+### Quali sono i formati di file supportati per l’anteprima delle risorse in AEM Assets Content Hub?
 
-I formati di file supportati includono JPEG e PNG per le immagini, Quicktime, MP4 e MPEG per i video, TXT, DOC/DOCX e XML per i documenti e PDF per i supporti di stampa.
+I formati di file supportati in AEM Assets Content Hub includono JPEG e PNG per le immagini, Quicktime, MP4 e MPEG per i video, TXT, DOC/DOCX e XML per i documenti e PDF per i supporti di stampa.
 
 
