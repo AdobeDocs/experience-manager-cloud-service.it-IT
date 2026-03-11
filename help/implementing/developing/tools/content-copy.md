@@ -4,10 +4,10 @@ description: Lo strumento di copia dei contenuti consente agli utenti di copiare
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 28%
+source-wordcount: '1574'
+ht-degree: 27%
 
 ---
 
@@ -143,7 +143,14 @@ Una volta creato un set di contenuti, puoi utilizzarlo per copiare i contenuti.
 1. (Facoltativo) Se lo desideri, imposta quanto segue:
 
    * **Includi elenchi di controllo di accesso** - Selezionare se si desidera copiare le autorizzazioni di controllo di accesso del contenuto insieme al contenuto.
-   * **Cancella** - Seleziona questa opzione per eliminare il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da una nuova lavagna ed evitare conflitti con il contenuto preesistente. Se lasci deselezionato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
+   * **Cancella** - Seleziona questa opzione per eliminare il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da uno stato di pulizia ed evitare conflitti con il contenuto preesistente. Se lasci deselezionato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
+     ![Copia del contenuto](assets/content_copy_wipe-destination.png)
+      * Quando si sceglie l&#39;opzione **Cancella destinazione prima dell&#39;importazione** e si fa clic su **Copia**, viene visualizzato un messaggio di avviso in cui sono disponibili le opzioni per:
+         * **Annulla** (in questo caso il flusso **Copia contenuto** non verrà avviato)
+         * **Conferma** (il flusso **Copia contenuto** verrà avviato e il contenuto nella destinazione verrà cancellato)
+           ![Copia del contenuto](assets/content-copy-wipe-destination-warning.png)
+
+      * Se non scegli **Cancella destinazione prima dell&#39;importazione**, il flusso **Copia contenuto** funzionerà come prima.
 
 1. Fai clic su **Copia**.
 
