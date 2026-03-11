@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
+source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 8%
+source-wordcount: '2962'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 * Eventuali collegamenti personalizzati da includere su Content Hub, oltre a risorse, raccolte e informazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472954/?captions=ita&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Prerequisiti {#prerequisites-configuration-ui}
 
@@ -84,7 +84,7 @@ Puoi configurare i campi di metadati che vengono visualizzati dagli utenti duran
 
 1. Fare clic su **[!UICONTROL Aggiungi metadati]**.
 
-1. Specifica un&#39;etichetta per la proprietà, mappala a una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input per i nuovi metadati della risorsa.
+1. Specifica un&#39;etichetta per la proprietà, mappala a una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input appropriato per i nuovi metadati della risorsa. Le etichette dei tipi di input vengono aggiornate per l’allineamento con Adobe Experience Manager (AEM). I tipi di input disponibili includono Testo, Tag, Data, Numero, A discesa, Testo con più valori, Tag avanzati e Tag colore avanzati. Per alcuni campi di metadati (xcm:colorDistribution, xcm:machineKeywords), il tipo di input viene assegnato automaticamente e non può essere modificato.
 
 1. Fai clic sull&#39;interruttore **[!UICONTROL Campo obbligatorio]** per rendere obbligatorio il nuovo campo di metadati da specificare per gli utenti durante il caricamento di nuove risorse.
 
@@ -98,7 +98,7 @@ Fai clic sull&#39;interruttore **[!UICONTROL Approvazione automatica]** se tutte
 
 Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche necessarie per applicarle.
 
-![Dettagli sul caricamento dell&#39;interfaccia utente di configurazione in Content Hub](/help/assets/assets/import-content-hub1.png)
+![Dettagli sul caricamento dell&#39;interfaccia utente di configurazione in Content Hub](assets/filter-new.png)
 
 I metadati sono abilitati nella visualizzazione dell’interfaccia utente di configurazione nella pagina di caricamento delle risorse:
 ![Carica metadati in Content Hub](assets/add-assets-for-approval1.png)
@@ -108,12 +108,9 @@ I metadati sono abilitati nella visualizzazione dell’interfaccia utente di con
 Content Hub consente agli amministratori di configurare i filtri da visualizzare durante la ricerca delle risorse. Per aggiungere un nuovo filtro, effettua le seguenti operazioni:
 
 1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Filters]**.
-
 1. Fare clic su **[!UICONTROL Aggiungi filtri]**.
-
-1. Specifica un&#39;etichetta per il filtro, mappalo su una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input per il nuovo filtro.
+1. Specifica un&#39;etichetta per il filtro, mappalo su una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input appropriato per il nuovo filtro. Le etichette dei tipi di input vengono aggiornate per l’allineamento con Adobe Experience Manager (AEM). I tipi di input disponibili includono Testo, Tag, Data, Numero, A discesa, Testo con più valori, Tag avanzati e Tag colore avanzati. Per alcuni campi di metadati (xcm:colorDistribution, xcm:machineKeywords), il tipo di input viene assegnato automaticamente e non può essere modificato.
 1. Fai clic su **[!UICONTROL Conferma]**. Il nuovo filtro viene visualizzato nell’elenco dei filtri esistenti.
-
 1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche in modo che il nuovo filtro venga visualizzato nella pagina di ricerca durante il filtraggio delle risorse.
 
    >[!NOTE]
@@ -121,7 +118,7 @@ Content Hub consente agli amministratori di configurare i filtri da visualizzare
    >Il nuovo filtro viene visualizzato nella pagina di ricerca solo se nell’archivio è presente almeno una risorsa che soddisfa i criteri del filtro.
 
 Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg), disponibile accanto a ciascun filtro disponibile, per modificare le etichette o fare clic sull&#39;icona Elimina per eliminare un filtro esistente. Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche necessarie per applicarle.
-![Filtri dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-filter1.png)
+![Filtri dell&#39;interfaccia utente di configurazione in Content Hub](assets/add-filters.png)
 
 I filtri abilitati nell’interfaccia utente di configurazione vengono visualizzati nella pagina Ricerca:
 ![Cerca in Content Hub](assets/content-hub-filters1.png)
@@ -136,7 +133,7 @@ Per abilitare la ricerca di più risorse contemporaneamente in [!DNL Content Hub
 
 1. Attiva/disattiva **[!UICONTROL Ricerca in blocco]**. I delimitatori predefiniti `[ , | \t | \r\n | \r | \n ]` vengono visualizzati automaticamente. Inoltre, puoi anche aggiungere altri delimitatori. A questo scopo, specifica i delimitatori nella casella di input separati da `pipe symbol (|)`.
 
-   ![Configurazione ricerca in blocco](assets/bulk-search-configuration.png)
+   ![Configurazione ricerca in blocco](assets/edit-filter-new.png)
 
 1. Fai clic su **[!UICONTROL Conferma]** per salvare le modifiche. Vedere [Ricerca in blocco in Content Hub](search-assets-content-hub.md#bulk-search) in azione.
 
@@ -147,15 +144,14 @@ Puoi anche configurare le proprietà della risorsa che vengono visualizzate per 
 1. Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Dettagli risorsa]**.
 
 1. Fare clic su **[!UICONTROL Aggiungi metadati]**.
-
-1. Specifica un&#39;etichetta per la proprietà, mappala a una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input per i nuovi metadati della risorsa.
+1. Specifica un&#39;etichetta per la proprietà, mappala a una proprietà utilizzando il campo **[!UICONTROL Metadati]** e seleziona il tipo di input appropriato per i nuovi metadati della risorsa. Le etichette dei tipi di input vengono aggiornate per l’allineamento con Adobe Experience Manager (AEM). I tipi di input disponibili includono Testo, Tag, Data, Numero, A discesa, Testo con più valori, Tag avanzati e Tag colore avanzati. Per alcuni campi di metadati (xcm:colorDistribution, xcm:machineKeywords), il tipo di input viene assegnato automaticamente e non può essere modificato.
 1. Fai clic su **[!UICONTROL Conferma]**. I nuovi metadati vengono visualizzati nell’elenco delle proprietà della risorsa esistenti.
 
 1. Fai clic su **[!UICONTROL Salva]** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
 
 Allo stesso modo, puoi fare clic sull&#39;![icona Modifica](assets/do-not-localize/edit_icon.svg), disponibile accanto a ciascuna proprietà disponibile, per modificare le etichette o fare clic sull&#39;icona Elimina per eliminare i dettagli della risorsa esistente. Fai clic su **[!UICONTROL Salva]** dopo aver apportato tutte le modifiche necessarie per applicarle.
 
-![Dettagli della risorsa dell&#39;interfaccia utente di configurazione in Content Hub](assets/configuration-asset-details.png)
+![Dettagli della risorsa dell&#39;interfaccia utente di configurazione in Content Hub](assets/asset-detailsn.png)
 
 Le proprietà abilitate nell’interfaccia utente di configurazione vengono visualizzate nella pagina Dettagli risorsa:
 
@@ -264,7 +260,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
