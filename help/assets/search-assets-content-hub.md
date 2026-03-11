@@ -4,9 +4,9 @@ description: Scopri come cercare le risorse in [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -173,11 +173,11 @@ Ulteriori informazioni sulla [configurazione delle risorse in [!DNL Content Hub]
 
 ### Come posso limitare i risultati della ricerca in AEM Assets Content Hub?
 
-È possibile limitare i risultati della ricerca in Content Hub utilizzando la ricerca basata su testo, applicando vari filtri (ad esempio il formato del file, lo stato di approvazione, la data di modifica e così via), la ricerca per tag o smart tag e utilizzando il pannello filtri. La combinazione di più predicati o opzioni di filtro consente di eseguire il targeting preciso delle risorse necessarie.
+È possibile limitare i risultati della ricerca in AEM Assets Content Hub utilizzando la ricerca basata su testo, applicando vari filtri (ad esempio il formato del file, lo stato di approvazione, la data di modifica e così via), eseguendo ricerche per tag o smart tag e utilizzando il pannello filtri. La combinazione di più predicati o opzioni di filtro consente di eseguire il targeting preciso delle risorse necessarie.
 
 ### È possibile eseguire una ricerca in blocco in AEM Assets Content Hub per più risorse contemporaneamente?
 
-Sì, è possibile eseguire una ricerca in blocco in Content Hub immettendo più valori (come nomi, formati di file, tag) separati da delimitatori specificati. La funzione di ricerca in blocco consente di trovare rapidamente diverse risorse in una singola query, rendendola più efficiente della ricerca delle risorse una alla volta.
+Sì, è possibile eseguire una ricerca in blocco in AEM Assets Content Hub immettendo più valori (come nomi, formati di file, tag) separati da delimitatori specificati. La funzione di ricerca in blocco consente di trovare rapidamente diverse risorse in una singola query, rendendola più efficiente della ricerca delle risorse una alla volta.
 
 
 ### Gli amministratori possono personalizzare i filtri disponibili in AEM Assets Content Hub Search?

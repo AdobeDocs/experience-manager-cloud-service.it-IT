@@ -3,9 +3,9 @@ title: Gestire risorse con licenza in Content Hub
 description: Scopri come aggiungere un campo di licenza al modulo dei metadati delle risorse, applicare la proprietà dei metadati della licenza alle cartelle di risorse e approvare le risorse con le licenze per l’utilizzo.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -28,21 +28,21 @@ Esegui i passaggi seguenti:
 
 ### Qual è lo scopo della gestione delle risorse concesse in licenza su AEM Assets Content Hub?
 
-La gestione delle risorse concesse in licenza in Content Hub consente agli amministratori di garantire che siano disponibili per l’uso solo le risorse approvate con licenze valide, mantenendo la conformità e il corretto tracciamento dei metadati all’interno dell’ambiente di authoring di AEM.
+La gestione delle risorse concesse in licenza in AEM Assets Content Hub consente agli amministratori di garantire che siano disponibili per l’uso solo le risorse approvate con licenze valide, mantenendo la conformità e il corretto tracciamento dei metadati all’interno dell’ambiente di authoring di AEM.
 
 ### Come posso aggiungere un campo licenza alle proprietà delle risorse in Experience Manager as a Cloud Service?
 
-È possibile aggiungere un campo licenza alle proprietà delle risorse modificando il modulo metadati per includere un nuovo campo di testo mappato alla proprietà `dc:license`. Questo campo viene quindi visualizzato nelle proprietà della risorsa nell’ambiente di authoring di AEM Assets.
+Nella vista AEM Assets, puoi aggiungere un campo licenza alle proprietà delle risorse modificando il modulo metadati per includere un nuovo campo di testo mappato alla proprietà `dc:license`. Questo campo viene quindi visualizzato nelle proprietà della risorsa nell’ambiente di authoring di AEM Assets.
 
-### Come si applica un modulo di metadati a una cartella di risorse per includere il campo licenza nelle proprietà delle risorse?
+### Come si applica un modulo di metadati a una cartella di risorse per includere il campo licenza nelle proprietà delle risorse in AEM Assets?
 
-Modifica il modulo metadati per includere il campo licenza. Applica questo modulo di metadati alla cartella di risorse desiderata per assicurarti che le nuove impostazioni siano incorporate per tutte le risorse all’interno di tale cartella.
+Nella vista AEM Assets, modifica il modulo metadati per includere il campo licenza. Applica questo modulo di metadati alla cartella di risorse desiderata per assicurarti che le nuove impostazioni siano incorporate per tutte le risorse all’interno di tale cartella.
 
-### Come si specificano i dettagli della licenza di una risorsa?
+### Come si specificano i dettagli di licenza per una risorsa nella vista AEM Assets?
 
 Per specificare i dettagli della licenza, seleziona la risorsa, fai clic su **Dettagli** per visualizzarne le proprietà e immetti il percorso assoluto della licenza della risorsa approvata nel campo della licenza aggiunto al modulo dei metadati.
 
-### Qual è il formato richiesto per il percorso assoluto di Content Hub per una licenza per risorse?
+### Qual è il formato richiesto per il percorso assoluto di AEM Assets Content Hub per una licenza per risorse?
 
 Il percorso assoluto di Content Hub deve seguire il pattern: /content/dam/(Gerarchia di cartelle della risorsa all’interno dell’archivio DAM)/(nome_risorsa).(file_extension). Ad esempio, `/content/dam/teamA/projects/documents/file1.pdf`.
 
@@ -54,6 +54,6 @@ L’approvazione sia della risorsa che della relativa licenza garantisce che sol
 
 Dopo aver definito il percorso di licenza nelle proprietà della risorsa, approva la risorsa e fai clic su Salva. Questa azione rende la risorsa concessa in licenza disponibile in AEM Assets Content Hub.
 
-### Chi è responsabile della gestione delle risorse concesse in licenza in Content Hub?
+### Chi è responsabile della gestione delle risorse concesse in licenza in AEM Assets Content Hub?
 
-Gli amministratori sono responsabili della modifica dei moduli di metadati, dell’assegnazione di tali moduli alle cartelle di risorse e dell’approvazione delle risorse e delle relative licenze in Content Hub.
+Gli amministratori sono responsabili della modifica dei moduli di metadati, dell’assegnazione alle cartelle di risorse e dell’approvazione di risorse e licenze in AEM Assets Content Hub.

@@ -4,9 +4,9 @@ description: Condividi Assets in [!DNL the Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Crea un collegamento alle risorse selezionate per condividerle facilmente con altri utenti. In qualità di utente [!DNL Content Hub] autorizzato, seleziona una o più risorse disponibili nell&#39;ambiente [!DNL Content Hub], genera un collegamento e invialo ad altri utenti pubblici o privati.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474927/?captions=ita&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Prerequisiti {#prerequisites}
 
@@ -74,7 +74,7 @@ La condivisione di risorse in AEM Assets Content Hub consente agli utenti autori
 
 ### Come posso condividere risorse o raccolte con altri tramite AEM Assets Content Hub?
 
-Per condividere risorse o raccolte in Content Hub, passa alla home page di Content Hub, seleziona una o più risorse (oppure passa alla scheda Raccolte per le raccolte) e fai clic sull’icona Condividi. Nella finestra di dialogo Condividi puoi visualizzare in anteprima le risorse, rimuoverle se necessario, aggiungere un titolo e una descrizione, selezionare chi può accedere al collegamento (privato o pubblico), impostare un periodo di scadenza e quindi fare clic su Ottieni collegamento per generare e copiare l’URL condivisibile. Il collegamento può quindi essere inviato ai membri del gruppo o alle parti interessate.
+Per condividere risorse o raccolte in AEM Assets Content Hub, passa alla home page di Content Hub, seleziona una o più risorse (oppure passa alla scheda Raccolte per le raccolte) e fai clic sull’icona Condividi. Nella finestra di dialogo Condividi puoi visualizzare in anteprima le risorse, rimuoverle se necessario, aggiungere un titolo e una descrizione, selezionare chi può accedere al collegamento (privato o pubblico), impostare un periodo di scadenza e quindi fare clic su Ottieni collegamento per generare e copiare l’URL condivisibile. Il collegamento può quindi essere inviato ai membri del gruppo o alle parti interessate.
 
 ### Quali opzioni di accesso sono disponibili per la condivisione di risorse in AEM Assets Content Hub, e quali sono le loro differenze?
 
@@ -86,11 +86,11 @@ Sì, gli amministratori possono abilitare o disabilitare l&#39;interruttore **Ab
 
 ### Posso impostare le date di scadenza per i collegamenti alle risorse condivise in AEM Assets Content Hub, e perché è importante?
 
-Sì, puoi impostare le date di scadenza per i collegamenti condivisi pubblici e privati in Content Hub. Per i collegamenti pubblici, puoi scegliere tra predefiniti come 24 ore fino a una settimana, mentre i collegamenti privati consentono di selezionare tra predefiniti o impostare una data di scadenza personalizzata. Le date di scadenza sono importanti perché una volta scaduto il collegamento non può più essere utilizzato per accedere o scaricare le risorse, il che consente di mantenere la sicurezza e il controllo dei contenuti.
+Sì, puoi impostare le date di scadenza per i collegamenti condivisi pubblici e privati in AEM Assets Content Hub. Per i collegamenti pubblici, puoi scegliere tra predefiniti come 24 ore fino a una settimana, mentre i collegamenti privati consentono di selezionare tra predefiniti o impostare una data di scadenza personalizzata. Le date di scadenza sono importanti perché una volta scaduto il collegamento non può più essere utilizzato per accedere o scaricare le risorse, il che consente di mantenere la sicurezza e il controllo dei contenuti.
 
 ### Che cosa possono fare i destinatari con il collegamento alle risorse condivise creato utilizzando AEM Assets Content Hub e quali sono le opzioni per scaricare rappresentazioni diverse?
 
-I destinatari che ricevono un collegamento a una risorsa condivisa possono aprirlo nel browser per visualizzare in anteprima, selezionare e scaricare le risorse fornite. Se in Content Hub sono abilitate le rappresentazioni delle risorse, i destinatari possono scegliere quali copie trasformate (ad esempio Originale o Statica) scaricare. Le risorse e le rappresentazioni vengono scaricate come file zip e i metadati possono essere visualizzati facendo clic sulla miniatura della risorsa. Il collegamento rimane funzionante fino alla data di scadenza impostata.
+I destinatari che ricevono un collegamento a una risorsa condivisa possono aprirlo nel browser per visualizzare in anteprima, selezionare e scaricare le risorse fornite. Se in AEM Assets Content Hub sono abilitate le rappresentazioni delle risorse, i destinatari possono scegliere quali copie trasformate (ad esempio Originale o Statica) scaricare. Le risorse e le rappresentazioni vengono scaricate come file zip e i metadati possono essere visualizzati facendo clic sulla miniatura della risorsa. Il collegamento rimane funzionante fino alla data di scadenza impostata.
 
 
 

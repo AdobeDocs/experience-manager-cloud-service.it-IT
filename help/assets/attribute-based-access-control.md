@@ -4,9 +4,9 @@ description: Scopri come abilitare il controllo degli accessi basato su attribut
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1407'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Alcuni dei vantaggi principali del controllo degli accessi basato su attributi i
 
 * Riduzione del numero di duplicati, migliorando l’integrità della risorsa. I duplicati sono necessari nelle autorizzazioni basate su cartelle quando le stesse risorse sono condivise con gruppi diversi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475422/?captions=ita&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Come abilitare il controllo degli accessi basato su attributi? {#enable-attribute-based-access-control}
 
@@ -114,7 +114,7 @@ Il controllo degli accessi basato su attributi (Attribute-Based Access Control -
 
 Gli amministratori definiscono le regole di accesso creando condizioni basate sui metadati delle risorse, ad esempio marchio o regione, e collegandole a ID di gruppi di utenti specifici. Queste regole utilizzano operatori logici (AND, OR) e di confronto (equals, not equals) per specificare esattamente quali risorse sono visibili a quali gruppi di utenti.
 
-### Quali sono i principali vantaggi dell&#39;utilizzo di ABAC rispetto alle autorizzazioni tradizionali basate su cartelle?
+### Quali sono i principali vantaggi dell’utilizzo di ABAC rispetto alle autorizzazioni tradizionali basate su cartelle in AEM Assets Content Hub?
 
 ABAC elimina la dipendenza dalle strutture di cartelle per le autorizzazioni, consente agli amministratori di caricare le risorse e assegnare le autorizzazioni retroattivamente e riduce il numero di risorse duplicate necessarie. Ciò migliora l’integrità delle risorse e semplifica la gestione delle autorizzazioni, in particolare quando le risorse devono essere condivise con più gruppi.
 
@@ -130,7 +130,7 @@ Le regole ABAC in AEM Assets Content Hub possono utilizzare operatori logici com
 
 ABAC è utile per le organizzazioni con team di grandi dimensioni perché consente un accesso granulare e basato su regole alle risorse in base a ruoli utente, aree geografiche o marchi. Garantisce che gli utenti vedano solo le risorse rilevanti per le loro responsabilità, senza assegnazioni manuali di autorizzazioni o eccessiva duplicazione di risorse.
 
-### In che modo gli amministratori devono preparare il foglio di calcolo ABAC prima di inviarlo al supporto Adobe?
+### In che modo gli amministratori devono preparare il foglio di calcolo ABAC per AEM Assets Content Hub prima di inviarlo al supporto Adobe?
 
 Gli amministratori devono creare gruppi di utenti in Adobe Admin Console, annotare i propri ID gruppo e definire chiaramente le autorizzazioni e le condizioni per ciascun gruppo nel foglio di calcolo. Devono garantire che tutte le proprietà dei metadati siano mappate correttamente agli schemi appropriati e utilizzare la colonna Commenti per chiarire le finalità aziendali di ciascuna regola, facilitando la convalida e l’implementazione delle regole da parte di Adobe.
 

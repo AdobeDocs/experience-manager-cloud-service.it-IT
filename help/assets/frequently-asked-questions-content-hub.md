@@ -3,10 +3,10 @@ title: Domande frequenti su Content Hub
 description: Ricevi risposte ad alcune delle domande più frequenti su Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 99%
+source-wordcount: '1635'
+ht-degree: 67%
 
 ---
 
@@ -14,25 +14,29 @@ ht-degree: 99%
 
 ![Domande frequenti su Content Hub.](assets/content-hub-faqs.png)
 
-## Che cos’è Content Hub? {#what-is-content-hub}
+## Cos’è AEM Assets Content Hub? {#what-is-content-hub}
 
-Content Hub è una funzione di Adobe Experience Manager Assets as a Cloud Service.
+AEM Assets Content Hub è una funzione di Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub consente ai team più grandi di individuare facilmente le risorse approvate e rilevanti tramite un portale intuitivo e di adattarle rapidamente alle proprie esigenze.Inoltre, Content Hub fornisce un meccanismo di acquisizione che consente agli utenti un servizio self-service facile durante il caricamento delle risorse nel DAM. In questo modo si soddisfa direttamente la necessità delle organizzazioni di velocizzare la creazione dei contenuti, preservando al contempo la coerenza del brand e la conformità alle protezioni appropriate.
 
-## Perché non è possibile abilitare Content Hub nel programma/ambiente Cloud Manager? {#cannot-enable-content-hub}
+<!--
 
-In questo momento, Content Hub è disponibile solo sui programmi di produzione AEM Cloud Manager che includono una licenza Assets (Assets Cloud Service, Assets Ultimate, Assets Prime). Quando fai clic su [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) per abilitarlo, questo viene distribuito e associato all’ambiente di produzione di authoring di AEM in tale programma. Per informazioni dettagliate e prerequisiti, consulta [Distribuire Content Hub](/help/assets/deploy-content-hub.md).
+## Why cannot I enable Content Hub on my Cloud Manager program/environment? {#cannot-enable-content-hub}
 
-## Ho abilitato Content Hub nel mio programma/ambiente di produzione, posso disattivarlo? {#can-i-disable-content-hub}
+Content Hub is at this point is only available on AEM Cloud Manager Production programs, which include an Assets license (Assets Cloud Service, Assets Ultimate, Assets Prime). When you click [Content Hub](/help/assets/deploy-content-hub.md#enable-content-hub) to enable it, it is deployed and associated with the author production environment of AEM in that program. See [Deploy Content Hub](/help/assets/deploy-content-hub.md) for details and prerequisites.
 
-L’abilitazione di Content Hub in un programma di produzione lo implementa come parte dell’infrastruttura di produzione. AEM Cloud Manager non consente di rimuovere o disabilitare l’infrastruttura di produzione per ridurre al minimo i rischi di errori umani nell’utilizzo della produzione.
+-->
+
+## Ho abilitato AEM Assets Content Hub nel mio programma/ambiente di produzione, posso disabilitarlo? {#can-i-disable-content-hub}
+
+L’abilitazione di AEM Assets Content Hub su un programma di produzione lo implementa come parte dell’infrastruttura di produzione. AEM Cloud Manager non consente di rimuovere o disabilitare l’infrastruttura di produzione per ridurre al minimo i rischi di errori umani nell’utilizzo della produzione.
 
 Se non desideri fornire Content Hub agli utenti una volta implementato, non assegnare alcun utente al profilo di prodotto Content Hub in Admin Console. Per ulteriori dettagli, consulta [Distribuire Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile).
 
-## Come posso valutare Content Hub nella mia organizzazione? {#how-can-i-evaluate-content-hub}
+## Come posso valutare AEM Assets Content Hub nella mia organizzazione? {#how-can-i-evaluate-content-hub}
 
-Content Hub è una funzione fornita e gestita da Adobe e non dispone di codice personalizzato che richiede la tipica convalida tramite sviluppo/staging/produzione. Inoltre, l’accesso a questa funzione per gli utenti è completamente controllato dall’amministratore, in modo da poterla valutare senza esporla a tutti gli utenti.
+AEM Assets Content Hub è una funzione fornita e gestita da Adobe e non dispone di codice personalizzato che richiederebbe la tipica convalida tramite dev/stage/produzione. Inoltre, l’accesso a questa funzione per gli utenti è completamente controllato dall’amministratore, in modo da poterla valutare senza esporla a tutti gli utenti.
 
 È possibile valutare Content Hub senza influire su utenti/contenuti di produzione gestiti in AEM as a Cloud Service Assets. Una procedura di valutazione potrebbe essere simile alla seguente:
 
@@ -45,21 +49,21 @@ Content Hub è una funzione fornita e gestita da Adobe e non dispone di codice p
 
 È disponibile un programma di accesso anticipato per Content Hub su programmi sandbox e i relativi ambienti di produzione e di authoring. Per ulteriori informazioni, consulta [Introduzione ai programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Per ulteriori informazioni sul programma per l’accesso anticipato, contatta il team Adobe Account.
 
-## Perché non è visibile alcuna risorsa dopo aver effettuato l’accesso a Content Hub? {#no-assets-in-content-hub}
+## Perché non vedo risorse dopo aver effettuato l’accesso ad AEM Assets Content Hub? {#no-assets-in-content-hub}
 
 Le risorse contrassegnate come approvate in Assets as a Cloud Service sono automaticamente disponibili in Content Hub. Se non riesci a visualizzare alcuna risorsa dopo aver effettuato l’accesso a Content Hub, approva le risorse utilizzando l’ambiente di authoring AEM as a Cloud Service per renderle disponibili in Content Hub. Per ulteriori informazioni, consulta [Approvare le risorse per Content Hub](/help/assets/approve-assets-content-hub.md).
 
-## Perché non sono visibili le risorse che ho caricato direttamente con Content Hub o importato da account Dropbox oppure OneDrive con Content Hub? {#no-assets-uploaded-from-content-hub}
+## Perché non visualizzo le mie risorse caricate direttamente utilizzando AEM Assets Content Hub o importate dagli account Dropbox o OneDrive utilizzando Content Hub? {#no-assets-uploaded-from-content-hub}
 
-La visualizzazione delle risorse caricate tramite Content Hub dipende se hai abilitato il pulsante di attivazione/disattivazione [Approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) disponibile nell’interfaccia utente Configurazione:
+La visualizzazione delle risorse caricate tramite AEM Assets Content Hub dipende dall&#39;attivazione o meno dell&#39;opzione [Approvazione automatica](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub) disponibile nell&#39;interfaccia utente di configurazione:
 
 * Se il pulsante di attivazione **Approvazione automatica** è abilitato, le risorse caricate tramite Content Hub sono automaticamente disponibili.
 
 * Se il pulsante di attivazione **Approvazione automatica** è disattivato, le risorse caricate tramite Content Hub non vengono visualizzate automaticamente. Le risorse sono disponibili nella cartella `hydrated-assets` dell’ambiente Assets as a Cloud Service. Passa alla cartella e [modifica in blocco](/help/assets/approve-assets-content-hub.md) lo stato di tali risorse in `Approved` per consentirne la visualizzazione in Content Hub.
 
-## Come trovare rapidamente le risorse caricate utilizzando Content Hub nell’ambiente AEM as a Cloud Service? {#find-uploaded-assets-on-aem-cloud}
+## Come trovare rapidamente le risorse caricate utilizzando AEM Assets Content Hub nell’ambiente AEM as a Cloud Service? {#find-uploaded-assets-on-aem-cloud}
 
-Per trovare rapidamente le risorse caricate utilizzando Content Hub nell’ambiente AEM as a Cloud Service:
+Per trovare rapidamente le risorse caricate tramite AEM Assets Content Hub nell’ambiente AEM as a Cloud Service:
 
 1. Passa alla cartella `hydrated-assets`.
 
@@ -67,9 +71,9 @@ Per trovare rapidamente le risorse caricate utilizzando Content Hub nell’ambie
 
 1. Ordina le risorse tramite il campo **[!UICONTROL Data di modifica]**.
 
-## Perché non trovo l’opzione Modifica con Adobe Express nella scheda delle risorse per poter eseguire il remix delle risorse e creare nuove varianti? {#edit-using-express-not-available}
+## Perché non vedo l’opzione Modifica con Adobe Express nella scheda delle risorse per poter eseguire il remix delle risorse e creare nuove varianti con AEM Assets Content Hub? {#edit-using-express-not-available}
 
-Per visualizzare l’opzione **Modifica con Adobe Express** nella scheda delle risorse, l’utente deve disporre del diritto per utilizzare Adobe Express Enterprise o Teams (consulta [Piani](https://www.adobe.com/it/express/pricing)), oltre ai privilegi per [utenti di Content Hub autorizzati a eseguire il remix delle risorse per creare nuove varianti](#onboard-content-hub-users-add-assets).
+Per visualizzare l&#39;opzione **Modifica con Adobe Express** sulla scheda delle risorse in AEM Assets Content Hub, l&#39;utente deve disporre dei diritti Adobe Express Enterprise o Teams (vedi [plans](https://www.adobe.com/it/express/pricing)) oltre ai privilegi per [utenti Content Hub con diritti per il remix delle risorse in nuove varianti](#onboard-content-hub-users-add-assets).
 
 Esistono alcune configurazioni del modo in cui gli utenti vengono assegnati a [!DNL Content Hub] e [!DNL Adobe Express]:
 
@@ -83,24 +87,24 @@ Esistono alcune configurazioni del modo in cui gli utenti vengono assegnati a [!
    >
    >L’utente assegnato ai profili di prodotto Express e Assets in due Admin Console deve avere lo stesso indirizzo e-mail e utilizzare un account aziendale **Enterprise o scolastico**, non uno **personale**. La configurazione ideale consiste nell’avere entrambe le configurazioni di Admin Console impostate come **Federated ID** con relazione di affidabilità configurata tra loro, in modo che l’utente abbia un’esperienza di accesso unico semplice. Alcuni dei piani Express (ad esempio, Express Teams) non supportano il Federated ID/accesso unico.
 
-Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[!UICONTROL # /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
+Oltre ai diritti ai prodotti corretti, l’integrazione di Adobe Express in Content Hub richiede che l’utente assegnato disponga almeno delle autorizzazioni [!UICONTROL Può modificare] nell’ambiente di authoring delle risorse su cui si basa Content Hub, almeno nella gerarchia di cartelle **[#UICONTROL /content/dam/idratated-assets/]**, in cui gli utenti di Content Hub possono salvare il contenuto creato utilizzando Express. Consulta [Gestione delle autorizzazioni](/help/security/touch-ui-principal-view.md) nella vista Amministratore (interfaccia utente Touch) o una [gestione semplificata delle autorizzazioni](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) nella vista Risorse.
 
-## È possibile impostare Content Hub in modo che le linee guida del brand della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
+## Posso impostare AEM Assets Content Hub in modo che le linee guida del marchio della mia organizzazione vengano visualizzate come collegamento nella pagina Home? {#content-hub-setup-brand-guidelines}
 
-Puoi aggiungere collegamenti personalizzati come schede a parte nella pagina Home di Content Hub, in aggiunta alle schede standard Tutte le Risorse, Raccolte e Insight. Per informazioni sulla configurazione, consulta [Collegamenti personalizzati](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
+Puoi aggiungere collegamenti personalizzati come schede separate, oltre alle schede standard All Assets, Collections e Insights nella home page di AEM Assets Content Hub. Per informazioni sulla configurazione, consulta [Collegamenti personalizzati](/help/assets/configure-content-hub-ui-options.md#configure-custom-links-content-hub).
 
-## È prevista la migrazione dei clienti Brand Portal esistenti a Content Hub? {#migration-brand-portal}
+## È prevista la migrazione dei clienti Brand Portal esistenti ad AEM Assets Content Hub? {#migration-brand-portal}
 
-Adobe fornisce supporto per la migrazione da Brand Portal a Content Hub, che puoi richiedere creando un ticket di assistenza Adobe.
+Adobe fornisce supporto per la migrazione da Brand Portal ad AEM Assets Content Hub che puoi utilizzare creando un ticket di supporto Adobe.
 
-## Perché non trovo l’opzione Impostazioni/Configurazione del prodotto in Content Hub? {#ui-configuration-option-missing}
+## Perché non è possibile visualizzare l’opzione Impostazioni prodotto/Configurazione in AEM Assets Content Hub? {#ui-configuration-option-missing}
 
-Per accedere all’[interfaccia utente per la configurazione](/help/assets/configure-content-hub-ui-options.md), devi avere il ruolo di [amministratore di Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Se in Adobe Admin Console ti è stato assegnato il profilo di prodotto Amministratori AEM nell’istanza di authoring per l’ambiente di produzione e non trovi l’opzione di configurazione, assicurati che il profilo di prodotto Amministratori AEM non sia rinominato. Per ulteriori dettagli, consulta [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
+Per accedere all&#39;[interfaccia utente di configurazione](/help/assets/configure-content-hub-ui-options.md) in AEM Assets Content Hub, devi essere un [amministratore Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Se in Adobe Admin Console ti è stato assegnato il profilo di prodotto Amministratori AEM nell’istanza di authoring per l’ambiente di produzione e non trovi l’opzione di configurazione, assicurati che il profilo di prodotto Amministratori AEM non sia rinominato. Per ulteriori dettagli, consulta [Profili Team e Prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## In che modo Content Hub tiene conto dei limiti di Brand Portal? {#content-hub-brand-portal-comparison}
+## In che modo AEM Assets Content Hub soddisfa i limiti di Brand Portal? {#content-hub-brand-portal-comparison}
 
 
-La tabella seguente illustra le principali differenze tra le due soluzioni:
+La tabella seguente illustra le differenze principali tra AEM Assets Content Hub e Brand Portal:
 
 | Area | Funzionalità | Content Hub | Brand Portal |
 |---|---|----|----|
@@ -134,9 +138,9 @@ La tabella seguente illustra le principali differenze tra le due soluzioni:
 |  | Ricerca semantica | ✓ | − |
 |  | Ricerca localizzata e visualizzazione dei metadati | ✓ | − |
 
-## Come posso selezionare un archivio per visualizzare le risorse solo per l’ambiente selezionato? {#select-repository-multiple-environments}
+## Come posso selezionare un archivio per visualizzare solo le risorse per l’ambiente selezionato in AEM Assets Content Hub? {#select-repository-multiple-environments}
 
-Dopo aver configurato Content Hub per la produzione e altri ambienti inferiori per lo stesso programma, puoi selezionare l’archivio e visualizzare le risorse per l’ambiente selezionato. Esegui i passaggi seguenti:
+Dopo aver configurato AEM Assets Content Hub per la produzione e altri ambienti inferiori per lo stesso programma, puoi selezionare l’archivio e visualizzare le risorse per l’ambiente selezionato. Esegui i passaggi seguenti:
 
 1. Fai clic sull’icona dell’utente nel riquadro a destra.
 
@@ -146,9 +150,9 @@ Dopo aver configurato Content Hub per la produzione e altri ambienti inferiori p
 
    Content Hub ora visualizza le risorse per l’ambiente selezionato.
 
-## Come può Content Hub visualizzare l’anteprima delle miniature per il tipo di file .ZIP? {#thumbnail-preview-zip-file}
+## Come può AEM Assets Content Hub visualizzare l’anteprima delle miniature per il tipo di file .ZIP? {#thumbnail-preview-zip-file}
 
-Per fornire un’anteprima delle miniature per tipi di file come .ZIP in Content Hub, puoi aggiungere una rappresentazione denominata `cq5dam.preview.jpg` o `cq5dam.preview.png` alla radice del percorso in cui è disponibile il file .ZIP nell’ambiente di authoring di AEM as a Cloud Service.
+Per fornire un&#39;anteprima delle miniature per i tipi di file come .ZIP in AEM Assets Content Hub, è possibile aggiungere una rappresentazione denominata `cq5dam.preview.jpg` o `cq5dam.preview.png` alla radice del percorso in cui è disponibile il file .ZIP nell&#39;ambiente di authoring AEM as a Cloud Service.
 
 Immagine aggiunta come rappresentazione:
 

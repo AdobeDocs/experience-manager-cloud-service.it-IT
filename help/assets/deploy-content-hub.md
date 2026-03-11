@@ -4,9 +4,9 @@ description: Scopri come distribuire e attivare Content Hub, fornire accesso agl
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '2564'
+source-wordcount: '2603'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Questo articolo fornisce un flusso di lavoro end-to-end per fornire agli utenti 
 
 Guarda questo video per scoprire come abilitare Content Hub per Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3472943/?captions=ita&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 Le varianti di privilegi su Content Hub includono:
 
@@ -274,9 +274,9 @@ Se gli utenti non ottengono i privilegi appropriati anche dopo averli aggiunti a
 
 ## Domande frequenti {#faqs-deploy-content-hub}
 
-### In che modo gli utenti possono accedere a Content Hub e quali privilegi è possibile assegnare?
+### In che modo gli utenti possono accedere ad AEM Assets Content Hub e quali privilegi è possibile assegnare?
 
-Gli utenti possono essere aggiunti a Content Hub tramite Adobe Admin Console assegnandoli al relativo profilo di prodotto per Content Hub.
+Gli utenti possono essere aggiunti ad AEM Assets Content Hub tramite Adobe Admin Console assegnandoli al relativo profilo di prodotto per Content Hub.
 
 Sono disponibili i seguenti privilegi per gli utenti:
 
@@ -288,9 +288,9 @@ Sono disponibili i seguenti privilegi per gli utenti:
 
 * Gli utenti di Content Hub con diritti per il remix delle risorse hanno accesso ad Adobe Express (se hai diritti Adobe Express) oltre che alle risorse approvate dal marchio sul portale Content Hub.
 
-### Quali sono i diversi profili di prodotto disponibili per i diversi tipi di utenti su Content Hub?
+### Quali sono i diversi profili di prodotto disponibili per i diversi tipi di utenti su AEM Assets Content Hub?
 
-I profili di prodotto sono disponibili per diversi tipi di utenti su Content Hub:
+I profili di prodotto sono disponibili per diversi tipi di utenti su AEM Assets Content Hub:
 
 * Utenti Content Hub: Utenti limitati AEM Assets
 
@@ -300,9 +300,9 @@ I profili di prodotto sono disponibili per diversi tipi di utenti su Content Hub
 
 * Utenti Content Hub con diritti per il remix delle risorse: Utenti AEM Assets Limited + Utenti AEM
 
-### In che modo gli amministratori possono abilitare Content Hub per la propria organizzazione?
+### In che modo gli amministratori possono abilitare AEM Assets Content Hub per la propria organizzazione?
 
-Gli amministratori devono accedere a Cloud Manager, selezionare (o creare) il proprio programma, abilitare Assets e Content Hub nella scheda Soluzioni e componenti aggiuntivi e aggiornare il programma. In questo modo viene creata un’istanza di Content Hub in Adobe Admin Console in cui è possibile gestire l’accesso degli utenti.
+Per abilitare AEM Assets Content Hub per la propria organizzazione, gli amministratori devono accedere a Cloud Manager, selezionare (o creare) il proprio programma, abilitare Assets e Content Hub nella scheda Soluzioni e componenti aggiuntivi e aggiornare il programma. In questo modo viene creata un’istanza di Content Hub in Adobe Admin Console in cui è possibile gestire l’accesso degli utenti.
 
 ### Quanti utenti Content Hub Limited sono inclusi in AEM Assets? {#content-hub-limited-users-with-aem-assets}
 
@@ -318,29 +318,29 @@ Il numero di crediti Content Hub disponibili dipende dalla licenza AEM Assets:
 
 * I clienti Assets as a Cloud Service esistenti ricevono un credito Content Hub.
 
-### Come vengono utilizzati i crediti Content Hub?
+### Come vengono utilizzati i crediti di AEM Assets Content Hub?
 
 Viene utilizzato un credito Content Hub per ogni ambiente in cui è abilitato Content Hub. Ad esempio, l’abilitazione di Content Hub in ambienti di produzione, sviluppo e staging richiede tre crediti.
 
 ### È possibile abilitare Content Hub in ambienti di livello inferiore?
 
-Sì. È possibile attivare Content Hub in ambienti di livello inferiore, ad esempio Sviluppo o Stage, purché siano disponibili crediti Content Hub. Ogni ambiente abilitato di livello inferiore utilizza un credito.
+Sì. È possibile abilitare AEM Assets Content Hub in ambienti di livello inferiore, ad esempio Sviluppo o Stage, purché siano disponibili crediti Content Hub. Ogni ambiente abilitato di livello inferiore utilizza un credito.
 
-### Come posso disporre dei diritti di accesso alle risorse approvate su Content Hub?
+### Come posso disporre dei diritti di accesso alle risorse approvate su AEM Assets Content Hub?
 
-Gli utenti di Content Hub possono accedere alle risorse approvate dal marchio sul portale Content Hub. Per essere utente di Content Hub, devi essere aggiunto al profilo di prodotto Utenti limitati di AEM.
+Gli utenti di AEM Assets Content Hub possono accedere alle risorse approvate dal marchio sul portale Content Hub. Per essere utente di Content Hub, devi essere aggiunto al profilo di prodotto Utenti limitati di AEM.
 
-### Come posso disporre dei diritti per caricare le risorse su Content Hub?
+### Come posso disporre dei diritti per caricare risorse su AEM Assets Content Hub?
 
-Gli utenti di Content Hub con diritti di aggiunta di risorse possono caricare le risorse in Content Hub, oltre ad accedere alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per l’aggiunta di risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
+Gli utenti di AEM Assets Content Hub con diritti di aggiunta di risorse possono caricare risorse in Content Hub, oltre ad accedere alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per l’aggiunta di risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
 
-### Come posso disporre dei diritti di accesso all’interfaccia utente di configurazione su Content Hub?
+### Come posso disporre dei diritti di accesso all’interfaccia utente di configurazione su AEM Assets Content Hub?
 
-Gli amministratori di Content Hub hanno accesso all’interfaccia utente di configurazione su Content Hub, oltre che alle risorse approvate dal marchio, al caricamento delle risorse in Content Hub e all’integrazione di Adobe Express per la modifica delle immagini (se disponi di autorizzazioni Adobe Express). AEM Per poter essere amministratore di Content Hub, devi essere aggiunto ai profili di prodotto Utenti limitati e Amministratori AEM.
+Gli amministratori di AEM Assets Content Hub hanno accesso all’interfaccia utente di configurazione su Content Hub, oltre che alle risorse approvate dal marchio, al caricamento delle risorse in Content Hub e all’integrazione di Adobe Express per la modifica delle immagini (se disponi di autorizzazioni Adobe Express). AEM Per poter essere amministratore di Content Hub, devi essere aggiunto ai profili di prodotto Utenti limitati e Amministratori AEM.
 
-### Come posso disporre dei diritti per modificare le immagini utilizzando Adobe Express su Content Hub?
+### Come posso disporre dei diritti per modificare le immagini utilizzando Adobe Express su AEM Assets Content Hub?
 
-Gli utenti di Content Hub con diritti per il remix delle risorse hanno accesso ad Adobe Express (se hai diritti Adobe Express) oltre che alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per il remix delle risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
+Gli utenti di AEM Assets Content Hub con diritti per il remix delle risorse hanno accesso ad Adobe Express (se hai diritti Adobe Express) oltre che alle risorse approvate dal marchio sul portale Content Hub. Per poter essere aggiunto come utente Content Hub con diritti per il remix delle risorse, devi essere aggiunto ai profili di prodotto Utenti limitati e Utenti AEM di AEM.
 
 
 
