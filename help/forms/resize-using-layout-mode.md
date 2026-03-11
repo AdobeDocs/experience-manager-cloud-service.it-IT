@@ -33,7 +33,7 @@ Puoi utilizzare la modalità Layout per ridimensionare i componenti per tutti i 
 Seleziona **[!UICONTROL Layout]** dall&#39;elenco a discesa visualizzato nella parte superiore dell&#39;interfaccia di creazione dei moduli adattivi accanto all&#39;opzione **[!UICONTROL Anteprima]**. Il modulo viene visualizzato in modalità Layout.
 
 1. Accedi all&#39;istanza di authoring [!DNL Adobe Experience Manager] e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Crea un nuovo modulo adattivo [ o apri un modulo adattivo ](creating-adaptive-form.md)esistente.
+1. Crea un nuovo modulo adattivo [&#x200B; o apri un modulo adattivo &#x200B;](creating-adaptive-form.md)esistente.
 1. Seleziona **[!UICONTROL Layout]** dall&#39;elenco a discesa visualizzato nella parte superiore accanto all&#39;opzione **[!UICONTROL Anteprima]**. Il modulo viene visualizzato in modalità Layout.
 
    ![Modalità layout](assets/layout_mode_ic_new.png)
