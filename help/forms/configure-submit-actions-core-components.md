@@ -3,12 +3,13 @@ title: Come si configura un’azione di invio per un modulo adattivo?
 description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio incorporate o crearne di personalizzate
 keywords: come selezionare l’azione di invio per un modulo adattivo, collegare un modulo adattivo a un elenco di sharepoint, collegare un modulo adattivo a una raccolta documenti di sharepoint, collegare un modulo adattivo a un modello di dati modulo (FDM)
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 17%
+source-wordcount: '353'
+ht-degree: 29%
 
 ---
 
@@ -21,8 +22,8 @@ ht-degree: 17%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=it) |
-| AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/configuring-submit-actions.md) |
-| AEM as a Cloud Service (Componenti core) | Questo articolo |
+| AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (componenti core) | Questo articolo |
 | AEM as a Cloud Service (Edge Delivery Services) | [Fai clic qui](/help/forms/configure-submit-action-eds-forms.md) |
 
 Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tramite un modulo adattivo. Viene attivato quando un utente fa clic sul pulsante **[!UICONTROL Invia]** in un modulo adattivo. Il Forms adattivo basato sul componente core supporta diverse [azioni di invio predefinite](#submit-actions-supported-by-adaptive-forms-based-on-core-components).
@@ -38,12 +39,12 @@ Le seguenti azioni di invio sono supportate da Forms adattivo basato su Componen
 
 * [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Richiama un flusso Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Inviare a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Richiama Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Inviare mediante il modello di dati modulo (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
-* [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Invia a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
-* [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Inviare mediante un modello dati modulo (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
+* [Inviare all’archiviazione Blob di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Inviare all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Inviare a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
 * [Invia a Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [Invia a Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
@@ -66,7 +67,7 @@ Inoltre, puoi [personalizzare le azioni di invio predefinite](/help/forms/custom
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
 -->
 
-Puoi definire le proprietà Contenitore modulo utilizzando la scheda Invio della finestra di dialogo Configura. Per ulteriori informazioni sulla finestra di dialogo per configurazione di un componente Contenitore modulo, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=it).
+Puoi definire le proprietà Contenitore modulo utilizzando la scheda Invio della finestra di dialogo Configura. Per ulteriori informazioni sulla finestra di dialogo per configurazione di un componente Contenitore modulo, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
 
 ![Fai clic sull&#39;icona chiave inglese per aprire la finestra di dialogo Contenitore modulo adattivo e configurare un&#39;azione di invio](/help/forms/assets/adaptive-forms-submit-message.png)
 
@@ -126,7 +127,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=it#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -142,7 +143,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

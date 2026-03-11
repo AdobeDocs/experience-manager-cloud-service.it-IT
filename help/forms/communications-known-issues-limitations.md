@@ -1,12 +1,13 @@
 ---
 title: Quali sono le considerazioni, i problemi noti e le best practice in AEM Forms?
 description: Considerazioni sui problemi noti e sulle best practice per le API di comunicazione di AEM Forms.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ Per unire i dati in questa struttura di modulo, creare un&#39;origine dati XML c
 
 Per un accesso completo alle funzionalità di rendering delle API di comunicazione, si consiglia di utilizzare un file XDP come input. A volte è possibile utilizzare un file PDF. Tuttavia, l’utilizzo di un file PDF come input presenta le limitazioni seguenti:
 
-Non è possibile eseguire il rendering di un documento PDF che non contiene un flusso XFA come PostScript, PCL o ZPL. Le API di comunicazione possono eseguire il rendering di documenti PDF con flussi XFA (ovvero, moduli creati in Designer) in formati laser ed etichette. Se il documento PDF è firmato, certificato o contiene diritti di utilizzo (applicati mediante il servizio AEM Forms Reader Extensions), non può essere sottoposto a rendering in questi formati di stampa.
+Non è possibile eseguire il rendering di un documento PDF che non contiene un flusso XFA come PostScript, PCL o ZPL. Le API di comunicazione possono eseguire il rendering di documenti PDF con flussi XFA (ovvero, moduli creati in Designer) in formati laser ed etichette. Se il documento PDF è firmato, certificato o contiene diritti di utilizzo (applicati mediante il servizio AEM Forms Reader Extensions), non è possibile eseguirne il rendering in questi formati di stampa.
 
 
 ### Aree stampabili {#printable-areas}
@@ -84,9 +85,9 @@ Per progettare un modulo che utilizza tipi di carattere residenti nella stampant
 
 Se in un computer client è installato un tipo di carattere, questo sarà disponibile nell&#39;elenco a discesa di Designer. Se il tipo di carattere non è installato, è necessario specificarne manualmente il nome. L&#39;opzione &quot;Sostituisci definitivamente i caratteri non disponibili&quot; in Designer può essere disattivata. In caso contrario, quando il file XDP viene salvato in Designer, il nome del font di sostituzione viene scritto nel file XDP. Ciò significa che non viene utilizzato il tipo di carattere residente nella stampante.
 
-Esistono due tipi di OpenType ® i caratteri. Un tipo di carattere è un&#39;OpenType TrueType® supportata da PCL. L&#39;altro è OpenType CFF®. L&#39;output di PDF e PostScript supporta i caratteri Type-1, TrueType e OpenType® incorporati. L&#39;output PCL supporta i caratteri TrueType incorporati.
+Esistono due tipi di font OpenType®. Un tipo di carattere TrueType OpenType® supportato da PCL. L&#39;altro è CFF OpenType®. L&#39;output di PDF e PostScript supporta i caratteri Type-1, TrueType e OpenType® incorporati. L&#39;output PCL supporta i caratteri TrueType incorporati.
 
-Tipo-1 e OpenType ® i font non sono incorporati nell&#39;output PCL. Contenuto formattato con tipo-1 e OpenType ® i font vengono rasterizzati e generati come immagini bitmap che possono essere grandi e più lente da generare.
+I font Type-1 e OpenType® non sono incorporati nell&#39;output PCL. Il contenuto formattato con i font Type-1 e OpenType® viene rasterizzato e generato come immagine bitmap che può essere grande e più lenta da generare.
 
 I font scaricati o incorporati vengono automaticamente sostituiti durante la generazione dell&#39;output PostScript, PCL o PDF. Ciò significa che nell&#39;output generato viene incluso solo il sottoinsieme dei glifi di font necessari per il corretto rendering del documento generato.
 
@@ -137,11 +138,11 @@ La tabella seguente specifica le opzioni XCI.
 
 | Opzione XCI | Descrizione |
 | ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| config/present/pdf/creator | Identifica il creatore del documento utilizzando la voce Creator nel dizionario Document Information. Per informazioni su questo dizionario, consulta la guida di riferimento per le PDF. |
-| config/present/pdf/producer | Identifica il produttore del documento utilizzando la voce Producer nel dizionario Document Information. Per informazioni su questo dizionario, consulta la guida di riferimento per le PDF. |
+| config/present/pdf/creator | Identifica il creatore del documento utilizzando la voce Creator nel dizionario Document Information. Per informazioni su questo dizionario, consulta la guida di riferimento di PDF. |
+| config/present/pdf/producer | Identifica il produttore del documento utilizzando la voce Producer nel dizionario Document Information. Per informazioni su questo dizionario, consulta la guida di riferimento di PDF. |
 | config/present/layout | Controlla se l’output è un singolo pannello o impaginato. |
 | config/present/pdf/compression/level | Specifica il grado di compressione da utilizzare durante la generazione di un documento PDF. |
-| config/present/pdf/scriptModel | Controlla se le informazioni specifiche XFA vengono incluse nel documento di output PDF. |
+| config/present/pdf/scriptModel | Controlla se le informazioni specifiche XFA vengono incluse nel documento PDF di output. |
 | config/present/common/data/adjustData | Controlla se l&#39;applicazione XFA regola i dati dopo l&#39;unione. |
 | config/present/pdf/renderPolicy | Controlla se la generazione del contenuto della pagina viene eseguita sul server o differita al client. |
 | config/present/common/locale | Specifica le impostazioni locali predefinite utilizzate nel documento di output. |
@@ -161,7 +162,7 @@ La tabella seguente specifica le opzioni XCI.
 
 ## Problemi noti
 
-* È possibile utilizzare un tipo di rendering specifico (PDF, PRINT) solo una volta nell&#39;elenco delle opzioni di stampa. Ad esempio, non potete avere due opzioni PRINT ciascuna che specificano un tipo di rendering PCL.
+* È possibile utilizzare un tipo di rendering specifico (PDF, PRINT) una sola volta nell&#39;elenco delle opzioni di stampa. Ad esempio, non potete avere due opzioni PRINT ciascuna che specificano un tipo di rendering PCL.
 
 * Per una configurazione batch, è consentita una sola istanza di combinazione di valori di OutputType(PDF, PRINT) e RenderType(PostScript, PCL, IPL, ZPL e così via).
 
@@ -173,27 +174,27 @@ La tabella seguente specifica le opzioni XCI.
 
 ## Best practice
 
-* L’Adobe consiglia di ospitare l’archivio dei contenitori BLOB dei file di dati nell’area cloud utilizzata da AEM Cloud Service.
+* Adobe consiglia di ospitare l’archivio dei contenitori BLOB dei file di dati nell’area cloud utilizzata da AEM Cloud Service.
 
 ## Domande frequenti {#faq}
 
 **È possibile utilizzare una cartella controllata o altri meccanismi di archiviazione per archiviare input e output?**
 
-Al momento, è possibile utilizzare Archiviazione di Microsoft Azure per salvare i dati di input e i documenti generati. L&#39;archiviazione di Microsoft Azure offre diverse opzioni per [automatizzare le operazioni di spostamento dei dati](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+Al momento, puoi utilizzare Microsoft Azure Storage per salvare i dati di input e i documenti generati. L&#39;archiviazione di Microsoft Azure fornisce varie opzioni per [automatizzare le operazioni di spostamento dei dati](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
 
-**Un account di archiviazione di Microsoft Azure è incluso nella licenza di Cloud Service di Experience Manager Forms?**
+**Un account di archiviazione Microsoft Azure è incluso nella licenza Experience Manager Forms Cloud Service?**
 
-L&#39;account di archiviazione di Microsoft Azure è indipendente dalla licenza di Cloud Service di Experience Manager Forms.
+L&#39;account di archiviazione Microsoft Azure è indipendente dalla licenza Experience Manager Forms Cloud Service.
 
-**Le API di comunicazione memorizzano i dati sui server di Cloud Service Experience Manager Forms?**
+**Le API di comunicazione memorizzano i dati sui server Experience Manager Forms Cloud Service?**
 
-I dati di input e output vengono salvati solo nell&#39;archiviazione di Microsoft Azure.
+I dati di input e output vengono salvati solo su Microsoft Azure Storage.
 
-**Le API di comunicazione sono disponibili solo per il Cloud Service Experience Manager Forms? È possibile ottenere funzionalità simili nell&#39;ambiente locale?**
+**Le API di comunicazione sono disponibili solo per Experience Manager Forms Cloud Service? È possibile ottenere funzionalità simili nell&#39;ambiente locale?**
 
-Puoi utilizzare il servizio di output di AEM Forms per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formato PDF, PS, PCL e ZPL.
+Puoi utilizzare il servizio di output di AEM Forms per combinare un modello (XFA o PDF) con i dati del cliente per generare documenti in formati PDF, PS, PCL e ZPL.
 
-Rispetto all&#39;ambiente on-premise, il Cloud Service offre ulteriori vantaggi in termini di scalabilità automatica e convenienza economica.
+Rispetto all&#39;ambiente on-premise, Cloud Service offre ulteriori vantaggi in termini di scalabilità automatica e convenienza economica.
 
 <!--**Where is data processed?**
 
@@ -209,7 +210,7 @@ Sì, è possibile eseguire più operazioni batch contemporaneamente. Utilizzare 
 >[!MORELIKETHIS]
 >
 >* [Introduzione ad AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Architettura di AEM Forms as a Cloud Service per le API di comunicazione e Forms adattivi](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Architettura AEM Forms as a Cloud Service per API Forms adattivi e di comunicazione](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Elaborazione comunicazione - API sincrone](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Elaborazione comunicazione - API batch](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

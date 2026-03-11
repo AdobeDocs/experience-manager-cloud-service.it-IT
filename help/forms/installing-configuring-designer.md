@@ -4,10 +4,11 @@ description: Utilizza Forms Designer per creare modelli XDP e PDF Form da utiliz
 keywords: Installazione di Designer, Installazione di Forms Designer, Requisiti per l’installazione di Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 7%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Questo articolo |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 Designer è uno strumento di progettazione grafica semplice e intuitivo che semplifica la creazione di modelli di moduli XDP e PDF. È possibile progettare un modello di modulo, definirne la logica e soddisfare requisiti legislativi rigorosi. Un modulo XDP e PDF fungono da modello per un documento di record in un modulo adattivo. Questi modelli di moduli sono diversi dai [modelli di moduli adattivi](template-editor.md).
 

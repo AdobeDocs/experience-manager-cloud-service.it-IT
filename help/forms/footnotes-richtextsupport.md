@@ -2,12 +2,13 @@
 title: Come si aggiunge una nota a piè di pagina a un modulo adattivo?
 description: Utilizza l’editor Rich Text per le note a piè di pagina in un modulo adattivo.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ Le note a piè di pagina sono numerate in sequenza in base all&#39;ordine di vis
 * Fornisce informazioni aggiuntive che possono interrompere il normale flusso delle informazioni principali.
 * Fornisce informazioni parentetiche o autorizzazioni di copyright.
 
-In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
+In Forms adattivo, viene utilizzata la [!UICONTROL nota a piè di pagina] per visualizzare le informazioni su come completare o utilizzare il modulo. Per informazioni sulla creazione di un Forms adattivo, vedere [Creazione di un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Nota a piè di pagina in Forms adattivo {#using-footnote-adaptiveforms}
 

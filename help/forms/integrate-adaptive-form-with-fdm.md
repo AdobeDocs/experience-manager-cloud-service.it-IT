@@ -1,18 +1,20 @@
 ---
 title: Come integrare il modello dati del modulo (FDM) per un modulo con il modulo adattivo?
-description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti del modello dati nel modello dati modulo (FDM).
+description: Scopri come creare moduli basati su un modello dati modulo (FDM). Genera e modifica dati di esempio per gli oggetti modello dati nel modello dati modulo (FDM).
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 19%
+source-wordcount: '670'
+ht-degree: 26%
 
 ---
 
 # Integrare i moduli con il modello dati del modulo
 
-L’integrazione dei moduli con un modello dati modulo (FDM) consente di utilizzare diverse origini dati back-end per creare un modello dati modulo (FDM). Puoi utilizzare il modello dati modulo (FDM) come schema in vari flussi di lavoro di moduli. Configura le origini dati e crea un modello dati modulo (FDM) basato sugli oggetti e i servizi del modello dati disponibili nelle origini dati.
+L’integrazione dei moduli con un modello dati modulo (FDM) consente di utilizzare diverse origini dati back-end per creare un modello dati modulo (FDM). Puoi utilizzare il modello dati modulo (FDM) come schema in vari flussi di lavoro di moduli. Configura le origini dati e crea un modello dati modulo (FDM) basato su servizi e oggetti modello dati disponibili nelle origini dati.
 
 ## Vantaggi dell’integrazione di Forms con Form Data Model (FDM)
 
@@ -29,7 +31,7 @@ Prima di configurare il modulo con il modello dati modulo, assicurati di aver co
 
 * [Configura origini dati](/help/forms/configure-data-sources.md): configura l’origine dati per connettere il modulo ai dati di back-end.
 * [Crea modello dati modulo (FDM)](/help/forms/create-form-data-models.md): crea un modello dati utilizzando oggetti dati e servizi dall’origine dati configurata.
-* [Configura oggetti e servizi del modello dati](/help/forms/work-with-form-data-model.md): mappa gli oggetti e i servizi del modello dati per garantire un flusso di dati uniforme tra il modulo e l’origine dati.
+* [Configura servizi e oggetti e modello dati](/help/forms/work-with-form-data-model.md): mappa i servizi e gli oggetti modello dati per garantire un flusso di dati uniforme tra il modulo e l’origine dati.
 
 >[!BEGINTABS]
 
@@ -72,8 +74,8 @@ Per configurare il modello dati modulo con un modulo adattivo creato in universa
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia utilizzando il modello dati del modulo]**.
 

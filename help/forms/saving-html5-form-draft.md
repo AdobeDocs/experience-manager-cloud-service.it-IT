@@ -5,14 +5,15 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '332'
 ht-degree: 9%
 
 ---
@@ -77,4 +78,4 @@ Per abilitare l’elenco dei moduli per il componente Bozza e Invio, aggiungi la
  </tbody>
 </table>
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per informazioni dettagliate, vedere [Archiviazione personalizzata per il componente Bozze e invii](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo /content/forms/fp dell’istanza Publish. È possibile aggiungere il provider di archiviazione personalizzato. Per informazioni dettagliate, vedere [Archiviazione personalizzata per il componente Bozze e invii](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).

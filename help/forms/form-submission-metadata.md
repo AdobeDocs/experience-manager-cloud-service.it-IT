@@ -6,15 +6,16 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
 
-
-# Aggiungere informazioni dai dati utente ai metadati di invio del modulo {#adding-information-from-user-data-to-form-submission-metadata}
+# Aggiungere informazioni dai dati utente ai metadati di invio di un modulo {#adding-information-from-user-data-to-form-submission-metadata}
 
 È possibile utilizzare i valori immessi in un elemento del modulo per calcolare i campi di metadati di una bozza o di un modulo inviato. I metadati consentono di filtrare il contenuto in base ai dati utente. Ad esempio, un utente immette John Doe nel campo del nome del modulo. È possibile utilizzare queste informazioni per calcolare i metadati che possono classificare l’invio in base alle iniziali JD.
 

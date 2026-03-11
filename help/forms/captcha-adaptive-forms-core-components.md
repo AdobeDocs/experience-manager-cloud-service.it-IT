@@ -5,11 +5,12 @@ topic-tags: Adaptive Forms, author
 keywords: Servizio Google reCAPTCHA, Forms adattivo, sfida CAPTCHA, prevenzione dei bot, componenti core, sicurezza dell’invio dei moduli, prevenzione della posta indesiderata dei moduli
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 7%
+source-wordcount: '1424'
+ht-degree: 10%
 
 ---
 
@@ -55,7 +56,7 @@ In base alle tue esigenze puoi configurare il servizio reCAPTCHA per abilitare:
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionare il contenitore di configurazione creato e selezionare **[!UICONTROL Crea]**.
    1. Seleziona la versione come [!DNL reCAPTCHA Enterprise] e specifica Nome, ID progetto, Chiave sito e Chiave API (ottenuta nel passaggio 2) per il servizio Enterprise reCAPTCHA.
    1. Selezionare il tipo di chiave. Il tipo di chiave deve essere uguale alla chiave del sito configurata nel [progetto Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), ad esempio **Chiave del sito di checkbox** o **Chiave del sito basata su punteggio**.
-   1. Specifica un punteggio di soglia [&#x200B; compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
+   1. Specifica un [punteggio soglia compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
    1. Seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
 
 <!--

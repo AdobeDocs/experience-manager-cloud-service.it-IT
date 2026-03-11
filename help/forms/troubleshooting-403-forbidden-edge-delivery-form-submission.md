@@ -1,17 +1,18 @@
 ---
-title: Risoluzione dei problemi relativi a errori non consentiti 403 nell’invio di Edge Delivery Services Form
+title: Risoluzione dei problemi relativi agli errori 403 non consentito durante l’invio di moduli di Edge Delivery Services
 description: Scopri come diagnosticare e risolvere gli errori 403 Forbidden durante l’invio di moduli da Edge Delivery Services a AEM Publish. Questa guida descrive le cause più comuni, tra cui CORS, regole di Dispatcher e problemi relativi al filtro Referrer.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 11%
 
 ---
 
-# Risoluzione dei problemi relativi a errori non consentiti 403 nell’invio di Edge Delivery Services Form {#troubleshooting-403-forbidden-edge-delivery}
+# Risoluzione dei problemi relativi agli errori 403 non consentito durante l’invio di moduli di Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
 
 Durante l&#39;invio dei moduli da Edge Delivery Services a AEM Publish, è possibile che si verifichi un errore **403 Forbidden**. Questo errore indica che il server rifiuta di elaborare la richiesta, in genere a causa di configurazioni di sicurezza. Questo articolo ti aiuta a identificare e risolvere le cause più comuni di questo problema.
 
@@ -41,7 +42,7 @@ Questo problema si verifica in genere nelle integrazioni Edge Delivery Services 
 
 Un errore 403 Forbidden nell’invio di un modulo Edge Delivery Services può avere più cause. Segui questi passaggi per la risoluzione dei problemi, nell’ordine in cui:
 
-### &#x200B;1. Problemi CORS (Cross-Origin Resource Sharing)
+### &#x200B;1. Problemi relativi a CORS (Cross-Origin Resource Sharing)
 
 **Sintomi:**
 
@@ -73,7 +74,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->Sostituisci `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` con i tuoi domini del sito effettivi. Ogni sito ospitato dallo stesso archivio richiede una voce di configurazione CORS separata.
+>Sostituisci `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` con i domini effettivi del tuo sito. Ogni sito ospitato dallo stesso archivio richiede una voce di configurazione CORS separata.
 
 Per informazioni dettagliate sulla configurazione CORS, consulta la [Guida alla configurazione CORS](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
@@ -137,7 +138,7 @@ Configura il filtro Referrer per consentire domini del sito Edge Delivery specif
 
 1. Crea o aggiorna il file di configurazione OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. Aggiungi la seguente configurazione ai tuoi domini di sito specifici:
+2. Aggiungi la seguente configurazione ai domini specifici del tuo sito:
 
    ```json
    {
@@ -165,7 +166,7 @@ Configura il filtro Referrer per consentire domini del sito Edge Delivery specif
    }
    ```
 
-3. Distribuire la configurazione tramite Cloud Manager
+3. Distribuisci la configurazione tramite Cloud Manager
 
 >[!IMPORTANT]
 >

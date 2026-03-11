@@ -5,13 +5,14 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 3%
+source-wordcount: '767'
+ht-degree: 5%
 
 ---
-
 
 # Creare la prima comunicazione interattiva
 
@@ -54,7 +55,7 @@ L&#39;anatomia include dati con le seguenti modalità di input:
 
 ## Passaggio 2: creare il modello dati del modulo
 
-Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/data-integration.md).
+Un modello per dati modulo consente di collegare una comunicazione interattiva per utilizzare origini dati diverse. Ad esempio, profilo utente di AEM, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello dati modulo è uno schema di rappresentazione dati unificato di entità business e servizi disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](/help/forms/data-integration.md).
 
 ## Passaggio 3: creare frammenti
 

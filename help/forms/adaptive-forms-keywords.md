@@ -4,11 +4,12 @@ description: Parole chiave riservate che non possono essere utilizzate come iden
 topic-tags: author
 role: User, Developer
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 4%
+source-wordcount: '211'
+ht-degree: 6%
 
 ---
 
@@ -71,7 +72,7 @@ Le parole chiave di Adaptive Forms sono identificatori predefiniti e riservati c
   <tr>
    <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
-   <td><p>elementi figlio</p> </td>
+   <td><p>elementi secondari</p> </td>
   </tr>
   <tr>
    <td><p>valore</p> </td>

@@ -4,11 +4,12 @@ description: L’editor di regole di Forms adattivo consente di aggiungere un co
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 4%
+source-wordcount: '1180'
+ht-degree: 7%
 
 ---
 
@@ -17,9 +18,9 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service (Componenti core) | Questo articolo |
-| AEM as a Cloud Service (Componenti di base) | [Fai clic qui](/help/forms/rule-editor.md) |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=it) |
+| AEM as a Cloud Service (componenti core) | Questo articolo |
+| AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/rule-editor.md) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 In un modulo adattivo basato su componenti core, la funzione dell’editor di regole consente sia agli utenti aziendali che agli sviluppatori di scrivere regole per gli oggetti del modulo adattivo. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Questa funzionalità consente di semplificare ulteriormente l&#39;esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
@@ -28,11 +29,11 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 Alcune delle azioni chiave che è possibile eseguire sugli oggetti Modulo adattivo utilizzando le regole sono:
 
 * Mostrare o nascondere un oggetto
-* Attivare o disattivare un oggetto
+* Abilitare o disabilitare un oggetto
 * Impostare un valore per un oggetto
 * Convalidare il valore di un oggetto
 * Eseguire funzioni per calcolare il valore di un oggetto
-* Richiamare un modello dati del modulo (FDM) ed eseguire un’operazione
+* Richiamare un modello dati modulo (FDM) ed eseguire un’operazione
 * Impostare la proprietà di un oggetto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -52,7 +53,7 @@ Per un confronto dettagliato, consulta l&#39;articolo [Differenza tra l&#39;edit
 
 -->
 
-## Informazioni su una regola {#understanding-a-rule}
+## Informazioni sulle regole {#understanding-a-rule}
 
 Una regola è una combinazione di azioni e condizioni. Nell’editor delle regole, le azioni includono attività quali nascondere, mostrare, abilitare, disabilitare o calcolare il valore di un oggetto in un modulo. Le condizioni sono espressioni booleane che vengono valutate eseguendo controlli e operazioni sullo stato, sul valore o sulla proprietà di un oggetto modulo. Le azioni vengono eseguite in base al valore ( `True` o `False`) restituito valutando una condizione.
 

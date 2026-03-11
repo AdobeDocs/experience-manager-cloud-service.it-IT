@@ -4,11 +4,12 @@ description: Risoluzione dei problemi di installazione e configurazione dell’a
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 1%
+source-wordcount: '219'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +32,7 @@ Per abilitare l&#39;opzione **[!UICONTROL Forms]**:
 
    ![Selezionare l&#39;opzione Forms](assets/installation-configuration-select-forms-option.png)
 
-1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=it#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
+1. [Crea](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [esegui](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) entrambe le pipeline di produzione e non di produzione.
 
 Dopo la generazione e la distribuzione della pipeline, l&#39;opzione **[!UICONTROL Forms]** nella pagina **[!UICONTROL Navigazione]**.
 

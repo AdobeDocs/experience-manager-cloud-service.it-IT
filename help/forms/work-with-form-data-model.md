@@ -4,19 +4,20 @@ description: Aggiungi oggetti modello dati, servizi, crea oggetti modello dati e
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '4146'
-ht-degree: 0%
+source-wordcount: '4152'
+ht-degree: 1%
 
 ---
 
-# Utilizzare il modello dati del modulo {#work-with-form-data-model}
+# Utilizzare il modello dati modulo (FDM) {#work-with-form-data-model}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -196,7 +197,7 @@ Utilizza l’attributo request per recuperare le proprietà associate dall’ori
 
 1. Selezionare **[!UICONTROL Richiedi attributo]** dal menu a discesa **[!UICONTROL Associazione a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore associazione]**.
 
-1. Crea una [sovrapposizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=it#developing) per head.jsp. Per creare la sovrapposizione, aprire CRX DE e copiare il file `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Crea una [sovrapposizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing) per head.jsp. Per creare la sovrapposizione, aprire CRX DE e copiare il file `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >
@@ -541,7 +542,7 @@ In questo esempio, i dati di input vengono convalidati in base ai vincoli massim
    ]
 ```
 
-Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log**. Ad esempio:
+Se i dati di input non soddisfano i criteri di convalida, viene visualizzata un&#39;eccezione. Se il livello di registro è impostato su **Debug**, viene registrato un errore nel file **error.log**. Ad esempio,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

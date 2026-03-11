@@ -4,11 +4,12 @@ description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida d
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 12%
+source-wordcount: '958'
+ht-degree: 13%
 
 ---
 
@@ -52,10 +53,8 @@ Per configurare Turnstile per AEM Forms, è necessario ottenere la [chiave del s
 
 1. Configura Cloud Service:
    1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]** e seleziona **[!UICONTROL Turnstile]**.
-
       ![Turnstile nell&#39;interfaccia utente](assets/turnstile-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
-
       ![Turnstile di configurazione](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Tipo widget]** come gestito. Il tipo di widget può cambiare in base alla chiave ottenuta nel prerequisito **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio tornstile [ottenuto nel prerequisito](#prerequisite). Seleziona **[!UICONTROL Crea]**.
 

@@ -4,10 +4,11 @@ description: Anteprima PDF nell’Editor di comunicazione interattiva con divers
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 3%
 
 ---
@@ -46,7 +47,7 @@ Visualizza in anteprima le comunicazioni interattive senza dati, dati locali o d
 
 +++&#x200B;2. Anteprima con dati JSON locali
 
-2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
+2.1. Preparare un file JSON strutturato. Per riferimento, è possibile copiare i dati di esempio dallo schema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) utilizzato per la comunicazione.
 
 2.2. Nell&#39;editor IC, passare a **Anteprima PDF** > Utilizzo dei dati locali.
 

@@ -1,12 +1,13 @@
 ---
 title: Come si configura l’archiviazione Azure?
-description: Scopri come integrare i moduli con il server di archiviazione Azure.
+description: Scopri come integrare i moduli con il server di storage Azure.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -27,13 +28,13 @@ ht-degree: 1%
 
 Prima di eseguire questi passaggi, verificare di disporre di un account di archiviazione [!DNL Azure] e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure].
 
-1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Archiviazione Azure]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Archiviazione Azure]**.
 1. Selezionare una cartella per creare la configurazione e selezionare **[!UICONTROL Crea]**.
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nel campo **[!UICONTROL Account di archiviazione Azure]**.
 1. Specifica la chiave per accedere all&#39;account di archiviazione Azure nel campo **[!UICONTROL Chiave di accesso Azure]** e seleziona **[!UICONTROL Salva]**.
 
-## Crea modello dati modulo {#create-azure-form-data-model}
+## Creare un modello di dati per moduli {#create-azure-form-data-model}
 
 Dopo aver creato la configurazione dell&#39;archiviazione [!DNL Azure], puoi [creare il modello dati del modulo](create-form-data-models.md). Specificare la cartella contenente la configurazione [!DNL Azure] nel campo **[!UICONTROL Configurazione Source dati]** durante la creazione del modello dati del modulo. Puoi quindi selezionare la configurazione dall’elenco di configurazioni esistenti nel nome della cartella specificato.
 
@@ -65,22 +66,22 @@ Per aggiungere [!DNL Azure] servizi:
      </tr>
      <tr>
       <td>Ottieni BLOB con URL binari da Azure</td>
-      <td>Recupera i dati memorizzati come BLOB con URL per i file binari nell’archiviazione di Azure utilizzando un ID o un nome</td>
+      <td>Recupera i dati memorizzati come BLOB con URL per i dati binari nell’archiviazione di Azure utilizzando un ID o un nome</td>
      </tr>
      <tr>
-      <td>Salva BLOB in Azure</td>
-      <td>Utilizza un ID BLOB per salvare i dati nell’archiviazione di Azure</td>
+      <td>Salvare un BLOB in Azure</td>
+      <td>Utilizzare un ID BLOB per salvare i dati nell’archiviazione di Azure</td>
      </tr>
      <tr>
-      <td>Aggiorna BLOB in Azure</td>
-      <td>Utilizza un ID BLOB per aggiornare i dati nell’archiviazione di Azure</td>
+      <td>Aggiornare BLOB in Azure</td>
+      <td>Utilizzare un ID BLOB per aggiornare i dati nell’archiviazione di Azure</td>
      </tr>
      <tr>
       <td>Recuperare l’elenco degli ID BLOB da Azure</td>
       <td>Recupera un elenco di ID BLOB da Azure in base al numero definito nella richiesta di input.</td>
      </tr>
      <tr>
-      <td>Recupera URL SAS per BLOB da Azure</td>
+      <td>Recuperare gli URL SAS per i BLOB da Azure</td>
       <td>Recupera gli URL SAS per i BLOB da Azure in base agli ID BLOB nella richiesta di input.</td>
      </tr>
      <tr>
@@ -98,11 +99,11 @@ Per definire una proprietà dell’oggetto modello dati come chiave di ricerca:
 1. Imposta l&#39;opzione di attivazione per **[!UICONTROL Chiave di ricerca]**. Questa opzione è disponibile solo per i tipi di dati primari.
 1. Seleziona **[!UICONTROL Fine]**, quindi seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo (FDM).
 
-Dopo aver definito le proprietà dell’oggetto modello dati come chiavi di ricerca, i valori hash vengono memorizzati nei tag di indice di Azure e i valori con codifica Base64 vengono memorizzati nei metadati di Azure.
+Dopo aver definito le proprietà dell’oggetto modello dati come chiavi di ricerca, i valori hash vengono memorizzati nei tag di indice Azure e i valori codificati Base64 vengono memorizzati nei metadati Azure.
 
 >[!NOTE]
 >
->Sono consentite solo 10 chiavi di ricerca per entità Azure, poiché Azure consente solo 10 tag per BLOB e il valore delle proprietà contrassegnato come chiavi di ricerca viene memorizzato nei tag di indice di Azure dopo l’hashing.
+>Sono consentite solo 10 chiavi di ricerca per entità Azure, poiché Azure consente solo 10 tag per BLOB e il valore delle proprietà contrassegnato come chiavi di ricerca viene memorizzato nei tag di indice Azure dopo l’hashing.
 
 <!--
 

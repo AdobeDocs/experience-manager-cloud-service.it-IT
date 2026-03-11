@@ -4,15 +4,16 @@ description: Scopri come gli utenti possono visualizzare un messaggio di ringraz
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 12%
 
 ---
 
-# Configurazione della pagina di reindirizzamento {#configuring-redirect-page}
+# Configurare la pagina di reindirizzamento {#configuring-redirect-page}
 
 All&#39;invio di un modulo adattivo basato su [Componenti core](creating-adaptive-form-core-components.md), è possibile reindirizzare l&#39;utente a un&#39;altra pagina Web o visualizzare un messaggio. Per configurare la pagina di reindirizzamento o il messaggio di ringraziamento:
 

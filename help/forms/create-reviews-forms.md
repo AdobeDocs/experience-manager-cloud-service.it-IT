@@ -3,12 +3,13 @@ title: Come si creano e gestiscono le revisioni nei moduli?
 description: Utilizzare il meccanismo di revisione per aggiungere revisori e consentire ai revisori di aggiungere commenti a un modulo.
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Rivedere {#review}
@@ -30,7 +31,7 @@ Una revisione è un meccanismo che consente a uno o più revisori di aggiungere 
 
 1. Passare al browser Moduli e selezionare un modulo da rivedere.
 1. Se per il modulo non è in corso una revisione, nella barra delle azioni verrà visualizzata l&#39;icona **Avvia revisione** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fai clic sull&#39;icona **Avvia revisione** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
-1. Immettere le seguenti informazioni:
+1. Immetti le seguenti informazioni:
 
    * **Titolo**: obbligatorio, può contenere caratteri alfanumerici, trattini e trattini bassi.
    * **Descrizione**: facoltativo, descrizione dello scopo/contenuto da rivedere.

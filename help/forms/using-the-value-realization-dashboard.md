@@ -1,21 +1,23 @@
 ---
-title: Utilizzo della dashboard di realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti
+title: Utilizzo della dashboard per la realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti
 description: Scopri come utilizzare la dashboard Informazioni sull’utilizzo di Forms per monitorare e comprendere le prestazioni dei moduli e dei frammenti di modulo.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 6%
 
 ---
 
-# Utilizzo della dashboard di realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti
+# Utilizzo della dashboard per la realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
 
 ![Dashboard per la realizzazione del valore](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -129,4 +131,4 @@ Questa sezione fornisce informazioni sull’utilizzo dei frammenti di modulo, ch
 
 ## Consulta anche
 
-- [Informazioni sulla dashboard di realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
+- [Informazioni sulla dashboard per la realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)

@@ -3,11 +3,12 @@ title: Come connettere un database a  [!DNL AEM Forms] as a Cloud Service?
 description: Recupera e salva i dati nei servizi web RESTful, nei servizi web basati su SOAP e nei servizi OData da un modulo adattivo o da un flusso di lavoro AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 2%
+source-wordcount: '674'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 

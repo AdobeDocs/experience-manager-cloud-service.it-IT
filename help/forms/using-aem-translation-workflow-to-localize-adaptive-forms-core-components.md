@@ -2,12 +2,13 @@
 title: Come possiamo tradurre un Modulo adattivo basato su Componenti core?
 description: Scopri come creare un modello di dati modulo (FDM) in AEM Forms, testare il modello con dati e servizi di esempio e configurare varie opzioni per un modello.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +33,7 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in modu
    ![Avvia traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
 1. Dopo che lo stato è cambiato in **Approvato** nella sezione **Processo di traduzione**, fai clic sull&#39;icona ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e fai clic su **Completo**.
 
-1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Fai clic su **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riaprire il modulo dopo aver aggiunto `afAcceptLang=<locale code>` all&#39;URL del modulo. Aggiungere ad esempio `afAcceptLang=de` per aprire la versione tedesca del modulo.
+1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Fare clic su **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riaprire il modulo dopo aver aggiunto `afAcceptLang=<locale code>` all&#39;URL del modulo. Aggiungere ad esempio `afAcceptLang=de` per aprire la versione tedesca del modulo.
 
 
    >[!NOTE]
@@ -83,7 +84,7 @@ Per localizzare un modulo e il relativo documento di record mediante Human Trans
 
    ![Importa file di traduzione](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Fai clic su **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riaprire il modulo dopo aver aggiunto `afAcceptLang=<locale code>` all&#39;URL del modulo. Aggiungere ad esempio `afAcceptLang=de` per aprire la versione tedesca del modulo.
+1. Per visualizzare in anteprima il modulo localizzato, seleziona il modulo localizzato nell’interfaccia utente di AEM Forms. Fare clic su **[!UICONTROL Anteprima]** >**[!UICONTROL Anteprima come HTML]**. Riaprire il modulo dopo aver aggiunto `afAcceptLang=<locale code>` all&#39;URL del modulo. Aggiungere ad esempio `afAcceptLang=de` per aprire la versione tedesca del modulo.
 
 ## Consulta anche {#see-also}
 

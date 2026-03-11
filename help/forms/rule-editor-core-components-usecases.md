@@ -4,11 +4,12 @@ description: L’articolo delinea vari casi d’uso per un editor di regole in u
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e10451553692b6ad957421783e176409b36b642b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 0%
+source-wordcount: '1567'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +20,7 @@ Ora, parliamo delle diverse implementazioni per un editor di regole.
 
 ## Imposta lo stato attivo su un altro pannello al clic del pulsante, se il primo pannello è valido
 
-<span class="preview"> Si tratta di una funzionalità pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 L’editor di regole consente di convalidare i layout di un pannello, ad esempio Schede orizzontali, Schede verticali, Accordi o Procedura guidata al clic del pulsante e di impostare lo stato attivo su un oggetto modulo in un altro pannello. Puoi utilizzare questa funzionalità per migliorare la navigazione nei moduli e l’esperienza utente.
 

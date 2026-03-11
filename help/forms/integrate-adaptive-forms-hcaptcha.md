@@ -5,11 +5,12 @@ topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Forms adattivo, CAPTCHA challenge, prevenzione bot, sicurezza invio modulo, prevenzione spam modulo
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 19%
+source-wordcount: '987'
+ht-degree: 20%
 
 ---
 
@@ -55,10 +56,8 @@ Per configurare hCaptcha® con AEM Forms, è necessario ottenere la chiave del s
 
 1. Configura Cloud Service:
    1. Nell&#39;istanza Autore AEM, vai a ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e seleziona **[!UICONTROL hCaptcha®]**.
-
       ![hCaptcha® nell&#39;interfaccia utente](assets/hcaptcha-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
-
       ![Configurazione hCaptcha®](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio hCaptcha® [ottenuto nel prerequisito](#prerequisite). Seleziona **[!UICONTROL Crea]**.
 
@@ -69,7 +68,7 @@ Per configurare hCaptcha® con AEM Forms, è necessario ottenere la chiave del s
 
 Una volta configurato, il servizio hCAPTCHA è disponibile per l’utilizzo in un modulo adattivo.
 
-## Utilizzare hCaptcha® in un modulo adattivo{#using-hCaptcha®-foundation-components}
+## Utilizzare hCaptcha® in un modulo adattivo{#using-hCaptcha&reg;-foundation-components}
 
 1. Apri l’istanza di AEM Forms as a Cloud Service.
 1. Vai a **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.

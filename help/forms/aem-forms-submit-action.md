@@ -1,17 +1,18 @@
 ---
 title: Come si configura un’azione di invio per un modulo adattivo?
-description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio integrate o crearne di personalizzate.
+description: Un modulo adattivo fornisce più azioni di invio. Un’azione di invio definisce il modo in cui un modulo adattivo viene elaborato dopo l’invio. Puoi utilizzare le azioni di invio incorporate o crearne di personalizzate.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 12%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
-
-# Azioni di invio supportate da Adaptive Forms
+# Azioni di invio supportate dai moduli adattivi
 
 I moduli adattivi consentono di creare moduli coinvolgenti e reattivi, che si rivelano, inoltre, dinamici e adattivi. Offrono un’interfaccia utente intuitiva e un set di componenti pronti all’uso per la progettazione e la gestione efficiente dei moduli. Puoi configurare diverse azioni di invio per inviare i dati del modulo a servizi come OneDrive, SharePoint, Workfront Fusion e altro ancora.
 
@@ -19,26 +20,26 @@ Un&#39;azione di invio viene attivata quando un utente fa clic sul pulsante **[!
 
 * Inviare facilmente i dati del modulo tramite e-mail
 * Avvia flussi di lavoro Microsoft® Power Automate o AEM durante la trasmissione dei dati.
-* Trasmette direttamente i dati del modulo a Microsoft® SharePoint Server, Microsoft® Azure Blob Storage o Microsoft® OneDrive.
+* Trasmettere direttamente i dati del modulo a Microsoft® SharePoint Server, Microsoft® Azure Blob Storage o Microsoft® OneDrive.
 * Invia facilmente i dati a un’origine dati configurata utilizzando il modello dati del modulo (FDM).
 * Invia in modo semplice i dati a un endpoint REST.
 
-## Azioni di invio supportate da Adaptive Forms
+## Azioni di invio supportate dai moduli adattivi
 
 AEM Forms offre le seguenti azioni di invio predefinite:
 
-* [Invia e-mail](/help/forms/configure-submit-action-send-email.md)
+* [Inviare e-mail](/help/forms/configure-submit-action-send-email.md)
 * [Richiama un flusso Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Invia a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Inviare a SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Richiama Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Inviare mediante il modello di dati modulo (FDM)](/help/forms/using-form-data-model.md)
-* [Invia ad Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Invia a endpoint REST](/help/forms/configure-submit-action-restpoint.md)
-* [Invia a OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Inviare mediante un modello dati modulo (FDM)](/help/forms/using-form-data-model.md)
+* [Inviare all’archiviazione Blob di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Inviare all’endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Inviare a OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Richiama un flusso di lavoro AEM](/help/forms/configure-submit-action-workflow.md)
 * [Invia a Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [Invia a Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-* [Invia a foglio di calcolo](/help/forms/forms-submission-service.md)
+* [Inviare al foglio di calcolo](/help/forms/forms-submission-service.md)
 
 È inoltre possibile inviare un modulo adattivo ad altre configurazioni di archiviazione:
 
@@ -53,16 +54,16 @@ La tabella seguente mostra quali azioni di invio sono supportate in base al meto
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | Inviare un’e-mail | ✅ supportati | ✅ supportati | ✅ supportati |                        |
 | Flusso di Power Automate | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Invia a SharePoint | ✅ supportati | ✅ supportati | ✅ supportati |                        |
+| Inviare a SharePoint | ✅ supportati | ✅ supportati | ✅ supportati |                        |
 | Workfront Fusion | ✅ supportati | ✅ supportati | ✅ supportati |                        |
 | Invia tramite FDM | ✅ supportati | ✅ supportati | ✅ supportati |                        |
 | Invia ad AEP | ✅ supportati | ✅ supportati | ✅ supportati |                        |
 | Archiviazione BLOB di Azure | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Invia all’endpoint REST | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Invia a Marketo Engage | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Invia a OneDrive | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Richiama il flusso di lavoro AEM | ✅ supportati | ✅ supportati | ✅ supportati |                        |
-| Invia a foglio di calcolo |                        |                  | ✅ supportati | ✅ supportati |
+| Inviare all’endpoint REST | ✅ supportati | ✅ supportati | ✅ supportati |                        |
+| Inviare a Marketo Engage | ✅ supportati | ✅ supportati | ✅ supportati |                        |
+| Inviare a OneDrive | ✅ supportati | ✅ supportati | ✅ supportati |                        |
+| Richiamare il flusso di lavoro AEM | ✅ supportati | ✅ supportati | ✅ supportati |                        |
+| Inviare al foglio di calcolo |                        |                  | ✅ supportati | ✅ supportati |
 
 
 ## Riconvalida lato server in modulo adattivo
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## Consulta anche
 
 {{af-submit-action}}
-

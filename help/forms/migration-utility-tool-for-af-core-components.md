@@ -6,12 +6,13 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 5%
+source-wordcount: '1074'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +48,7 @@ Forms Conversion Utility converte i Forms adattivi basati su componenti Foundati
    * Scelta immagine
    * Pulsante Avanti
    * Pulsante precedente
-   * Firma scarabocchio
+   * Firma a mano
    * Passaggio di riepilogo
    * Barra degli strumenti
 
@@ -165,5 +166,5 @@ Ora puoi vedere che il modulo adattivo basato su componenti di base si trasforma
 
 ## Best practice {#best-practices}
 
-* Assicurati che i moduli basati su Componenti di base utilizzino solo i componenti con un [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponibile. Nei casi in cui utilizzi componenti di base che non hanno un componente core equivalente, il componente di base non viene convertito. Di conseguenza, non funziona correttamente durante la creazione di un modulo
+* Assicurati che i moduli basati su Componenti di base utilizzino solo i componenti con un [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponibile. Nei casi in cui utilizzi componenti di base che non hanno un componente core equivalente, il componente di base non viene convertito. Di conseguenza, non funziona correttamente durante la creazione di un modulo
 * Assicurati che le regole per convertire i Componenti di base in Componenti core siano formattate in XML.

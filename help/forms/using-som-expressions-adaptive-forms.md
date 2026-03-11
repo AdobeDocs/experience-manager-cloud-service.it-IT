@@ -3,15 +3,16 @@ title: Come possiamo utilizzare le espressioni SOM in Adaptive Forms?
 description: Scopri come estrarre le espressioni SOM di un pannello in Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
-
-# Utilizzo delle espressioni SOM in Adaptive Forms{#using-som-expressions-in-adaptive-forms}
+# Utilizzare le espressioni SOM nei moduli adattivi{#using-som-expressions-in-adaptive-forms}
 
 I Forms adattivi sono modellati come pagina AEM che è rappresentata come struttura di contenuto JCR nell’archivio AEM. L’elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
 
@@ -41,4 +42,4 @@ All’interno dei pannelli, puoi accedere alla funzione dalla barra degli strume
 
 Estrazione di espressioni SOM tramite la barra degli strumenti del pannello
 
-Alcune API elencate in [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per spostare lo stato attivo su un particolare campo in un modulo adattivo, passa l&#39;espressione SOM corrispondente all&#39;API `getFocus` in `guideBridge`.
+Alcune API elencate in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) utilizzano l&#39;espressione SOM di un elemento. Ad esempio, per spostare lo stato attivo su un particolare campo in un modulo adattivo, passa l&#39;espressione SOM corrispondente all&#39;API `getFocus` in `guideBridge`.

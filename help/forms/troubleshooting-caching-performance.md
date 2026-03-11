@@ -1,20 +1,21 @@
 ---
 title: Come possiamo risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service?
-description: Risolvere i problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service.
+description: Risoluzione dei problemi relativi alla memorizzazione nella cache per AEM Forms as a Cloud Service.
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '387'
+ht-degree: 2%
 
 ---
 
 # Prestazioni di memorizzazione in cache {#caching-performance}
 
-Durante la configurazione o l’utilizzo della cache di Forms adattivo in un ambiente di Cloud Service si possono verificare alcuni dei seguenti problemi:
+Durante la configurazione o l’utilizzo della cache di Adaptive Forms in un ambiente Cloud Service è possibile riscontrare alcuni dei seguenti problemi:
 
 ## Alcuni Forms adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache di Dispatcher {#images-videos-not-invalidated}
 
@@ -34,7 +35,7 @@ Se l’URL del modulo adattivo non contiene informazioni sulla localizzazione e 
 
 Per risolvere il problema, effettua le seguenti operazioni:
 
-1. Apri il progetto di Experience Manager.
+1. Apri il progetto Experience Manager.
 1. Apri `dispatcher/scr/conf.d/rewrites/rewrite.rules` per la modifica.
 1. Aprire `conf.d/httpd-dispatcher.conf` o qualsiasi altro file di configurazione configurato per il caricamento in fase di esecuzione.
 1. Aggiungi il seguente codice al file e salvalo. Si tratta di un codice di esempio per modificarlo in base all’ambiente in uso.

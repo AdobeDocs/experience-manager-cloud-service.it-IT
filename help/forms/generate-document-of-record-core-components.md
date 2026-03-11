@@ -2,12 +2,13 @@
 title: Generare un PDF di invio (in precedenza documento di record) per Forms adattivo
 description: Scopri come generare un PDF di invio dall’invio dei moduli per i componenti core di Forms adattivi. Crea un PDF del modulo inviato per l'archiviazione o per riferimento.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
-ht-degree: 1%
+source-wordcount: '3320'
+ht-degree: 2%
 
 ---
 

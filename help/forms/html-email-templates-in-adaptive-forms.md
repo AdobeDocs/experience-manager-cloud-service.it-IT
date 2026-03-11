@@ -5,22 +5,24 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 0%
+source-wordcount: '759'
+ht-degree: 9%
 
 ---
 
-# Modelli e-mail in Forms adattivo
+# Modelli e-mail nei moduli adattivi
 
-Forms adattivo consente di utilizzare modelli e-mail HTML e di testo normale. I modelli e-mail di HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con Adaptive Forms, puoi caricare un file contenente un modello di HTML o utilizzare un editor di testo normale per creare questi modelli.
+Forms adattivo consente di utilizzare HTML e modelli e-mail in formato testo normale. I modelli e-mail HTML consentono di inviare e-mail avanzate, personalizzate e visivamente accattivanti quando viene inviato un modulo. Queste e-mail possono essere personalizzate con i dati del modulo e migliorate utilizzando vari tag e-mail, come immagini e collegamenti. Con i Moduli adattivi, è possibile caricare un file contenente un modello HTML o utilizzare un editor di testo normale per creare questi modelli.
 
-![Modelli e-mail HTML](/help/forms/assets/html-email.png)
+![Modello e-mail HTML](/help/forms/assets/html-email.png)
 
 Questo articolo consente di configurare e utilizzare i modelli e-mail in Adaptive Forms. Entro la fine, potrai:
 
-* [Configurare un modello di HTML per un modulo adattivo](#configure-an-html-template-for-an-adaptive-form)
+* [Configurare un modello HTML per un modulo adattivo](#configure-an-html-template-for-an-adaptive-form)
 * [Configurare un modello e-mail in testo normale per un modulo adattivo](#configure-a-plain-text-template-for-an-adaptive-form)
 * [Utilizzare i dati dei moduli nei modelli e-mail](#use-form-data-in-your-email-templates)
 
@@ -29,16 +31,16 @@ Ecco una breve panoramica dei passaggi necessari:
 
 1. Apri il modulo adattivo per la modifica.
 1. Configura l&#39;azione di invio [Invia e-mail](/help/forms/configure-submit-action-send-email.md).
-1. Seleziona o carica un modello di HTML oppure immetti manualmente il modello di e-mail.
+1. Seleziona o carica un modello HTML oppure immetti manualmente il modello e-mail.
 1. Verifica la configurazione e-mail.
 
-## Configurare un modello di HTML per un modulo adattivo
+## Configurare un modello HTML per un modulo adattivo
 
-Puoi impostare un modulo adattivo per inviare un&#39;e-mail al momento dell&#39;invio utilizzando l&#39;[**Invia e-mail** azione di invio](/help/forms/configure-submit-action-send-email.md). L’azione fornisce due metodi per configurare un modello di HTML:
+Puoi impostare un modulo adattivo per inviare un&#39;e-mail al momento dell&#39;invio utilizzando l&#39;[**Invia e-mail** azione di invio](/help/forms/configure-submit-action-send-email.md). L’azione fornisce due metodi per configurare un modello HTML:
 
-### Opzione 1: selezionare un file contenente il modello di HTML
+### Opzione 1: selezionare un file contenente il modello HTML
 
-Prima di procedere, assicurati di aver caricato il modello di HTML nell’ambiente AEM Forms.
+Prima di procedere, assicurati di aver caricato il modello HTML nell’ambiente AEM Forms.
 
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
@@ -48,12 +50,12 @@ Prima di procedere, assicurati di aver caricato il modello di HTML nell’ambien
 
 1. Abilita l&#39;opzione **Usa modello esterno**.
 1. Abilita l&#39;opzione **Usa modello HTML**.
-1. Fai clic sull’icona della cartella per l’opzione Percorso modello esterno e sfoglia per selezionare il modello di HTML.
+1. Fai clic sull’icona della cartella per l’opzione Percorso modello esterno e sfoglia per selezionare il modello HTML.
 1. Fai clic su **Fine** per salvare la configurazione.
 
-Il modello di HTML è ora configurato per il modulo adattivo.
+Il modello HTML è ora configurato per il modulo adattivo.
 
-### Opzione 2: inserire o incollare manualmente un modello di HTML
+### Opzione 2: inserire o incollare manualmente un modello HTML
 
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
@@ -68,7 +70,7 @@ Puoi impostare un modulo adattivo per inviare un&#39;e-mail al momento dell&#39;
 
 ### Opzione 1: selezionare un file contenente il modello
 
-Prima di procedere, assicurati di aver caricato il modello di HTML nell’ambiente AEM Forms.
+Prima di procedere, assicurati di aver caricato il modello HTML nell’ambiente AEM Forms.
 
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
@@ -79,7 +81,7 @@ Prima di procedere, assicurati di aver caricato il modello di HTML nell’ambien
 
 Il modello è ora configurato per il modulo adattivo.
 
-### Opzione 2: inserire o incollare manualmente un modello di HTML
+### Opzione 2: inserire o incollare manualmente un modello HTML
 
 1. Apri il modulo adattivo per la modifica.
 1. Vai a **Browser contenuti**, seleziona il **Contenitore guida**, quindi tocca l&#39;icona delle proprietà. Verrà visualizzata una finestra di dialogo con il titolo `Adaptive Form Container`.
@@ -96,7 +98,7 @@ Il modello è ora configurato per il modulo adattivo.
 
 ### Modello e-mail HTML di esempio
 
-Di seguito è riportato un esempio di modello e-mail di HTML che utilizza segnaposto per i dati del modulo:
+Di seguito è riportato un esempio di modello e-mail di HTML che utilizza segnaposto per dati modulo:
 
 ```HTML
     <!DOCTYPE html>
@@ -152,11 +154,11 @@ Di seguito è riportato un esempio di modello di e-mail di testo normale:
     Your Team
 ```
 
-## Best practice per i modelli e-mail per HTML
+## Best practice per i modelli e-mail di HTML
 
 * Assicurati che gli stili siano inline per una migliore compatibilità con i client e-mail.
 * Rendi il tuo modello dinamico per un’esperienza migliore sui dispositivi mobili.
 * Utilizza strumenti come Litmus o E-mail su Acid per visualizzare in anteprima il messaggio e-mail tra vari client e-mail.
 * Assicurati che i nomi dei segnaposto corrispondano esattamente ai nomi dei campi modulo.
-* Verifica la presenza di tag mancanti o errati nel modello di HTML.
+* Verifica la presenza di tag mancanti o errati nel modello HTML.
 * Verificare che l&#39;azione di invio [Invia e-mail](/help/forms/configure-submit-action-send-email.md) sia configurata correttamente.

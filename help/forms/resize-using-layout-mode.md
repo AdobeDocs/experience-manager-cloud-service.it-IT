@@ -4,10 +4,11 @@ description: Definisci la posizione dei componenti AEM Forms, scopri come accede
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 L’interfaccia di authoring di moduli adattivi consente di ridimensionare i componenti utilizzando la modalità Layout. Trascinate i punti blu all&#39;interno delle colonne per definire i punti iniziale e finale e posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente nella griglia reattiva. La griglia reattiva è costituita da 12 colonne uguali. L&#39;ombreggiatura dei colori bianco e blu nelle colonne alternative differenzia una colonna dall&#39;altra.
@@ -32,7 +33,7 @@ Puoi utilizzare la modalità Layout per ridimensionare i componenti per tutti i 
 Seleziona **[!UICONTROL Layout]** dall&#39;elenco a discesa visualizzato nella parte superiore dell&#39;interfaccia di creazione dei moduli adattivi accanto all&#39;opzione **[!UICONTROL Anteprima]**. Il modulo viene visualizzato in modalità Layout.
 
 1. Accedi all&#39;istanza di authoring [!DNL Adobe Experience Manager] e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
-1. Crea un nuovo modulo adattivo [&#128279;](creating-adaptive-form.md) o apri un modulo adattivo esistente.
+1. Crea un nuovo modulo adattivo [ o apri un modulo adattivo ](creating-adaptive-form.md)esistente.
 1. Seleziona **[!UICONTROL Layout]** dall&#39;elenco a discesa visualizzato nella parte superiore accanto all&#39;opzione **[!UICONTROL Anteprima]**. Il modulo viene visualizzato in modalità Layout.
 
    ![Modalità layout](assets/layout_mode_ic_new.png)

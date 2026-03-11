@@ -3,10 +3,11 @@ title: Come si configura Microsoft Dynamics 365 in modelli di dati di moduli pre
 description: Scopri come integrare Microsoft Dynamics 365 con Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---
@@ -113,7 +114,7 @@ Per configurare la configurazione del servizio cloud [!DNL Microsoft® Dynamics 
    ![ID client e segreto client](/help/forms/assets/dynamics-azure-app-resgistration.png)
 
 1. Specifica quanto segue nei campi **[!UICONTROL URL OAuth]**, **[!UICONTROL URL token di aggiornamento]** e **[!UICONTROL URL token di accesso]**.
-È possibile recuperare l&#39;**[!UICONTROL URL OAuth]**, l&#39;**[!UICONTROL URL token di aggiornamento]** e l&#39;**[!UICONTROL URL token di accesso]** dalla sezione **Endpoints** dell&#39;applicazione Azure Active Directory.
+Puoi recuperare l&#39;**[!UICONTROL URL OAuth]**, l&#39;**[!UICONTROL URL token di aggiornamento]** e l&#39;**[!UICONTROL URL token di accesso]** dalla sezione **Endpoints** dell&#39;applicazione Azure Active Directory.
 
    ![Endpoint app Azure](/help/forms/assets/dynamics-azure-app-endpoints.png)
 
@@ -158,5 +159,5 @@ Per configurare la configurazione del servizio cloud [!DNL Microsoft® Dynamics 
 >[!MORELIKETHIS]
 >
 >* [Configura origini dati per AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurare l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configura l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
 >  [Aggiungi Forms Portal a una pagina AEM Sites](/help/forms/configure-forms-portal.md)

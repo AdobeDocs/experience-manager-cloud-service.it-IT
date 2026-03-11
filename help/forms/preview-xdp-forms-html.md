@@ -3,13 +3,14 @@ title: Generare l’anteprima HTML5 di un modulo XDP
 description: La scheda Anteprima HTML in LiveCycle Designer può essere utilizzata per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 2%
+source-wordcount: '813'
+ht-degree: 3%
 
 ---
 
@@ -88,7 +89,7 @@ La **modalità protetta** è attivata per impostazione predefinita. Tienilo abil
    >
    >Verifica che il server AEM Forms sia in esecuzione. L&#39;anteprima HTML si connette al server CRX per *generare* un&#39;anteprima.
 
-   ![Opzioni AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opzioni AEM Forms Designer ](assets/server_options.png)
 
    Opzioni AEM Forms Designer
 

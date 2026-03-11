@@ -5,12 +5,13 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '206'
 ht-degree: 8%
 
 ---
@@ -33,7 +34,7 @@ Per gli ambienti **AEM 6.5 Forms** e **AEM 6.5 LTS Forms**, i componenti core di
 Segui le relative guide:
 
 - Per AEM 6.5 Forms: [Abilitare i componenti core Adaptive Forms in AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=it).
-- Per AEM 6.5 LTS Forms: [Abilitare i componenti core Adaptive Forms in AEM 6.5 LTS Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
+- Per AEM 6.5 LTS Forms: [Abilitare i componenti core Adaptive Forms in AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Nota:** se esistono dei passaggi per abilitare i componenti core Adaptive Forms nei vecchi ambienti AEM 6.5 o se esistono dei prerequisiti specifici per l&#39;ambiente, chiarisci questi requisiti prima di tentare l&#39;abilitazione.
 

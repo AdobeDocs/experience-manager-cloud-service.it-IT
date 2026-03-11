@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 1%
 
 ---
@@ -137,7 +138,7 @@ Sì, Forms Experience Builder supporta diverse opzioni di integrazione:
 
 - Invii e-mail con modelli personalizzati
 - Integrazione REST API con servizi esterni
-- Integrazione dell’archiviazione cloud (Azure, AWS, Google Cloud)
+- Integrazione con l’archiviazione cloud (Azure, AWS, Google Cloud)
 - Integrazione del flusso di lavoro (Power Automate, flusso di lavoro AEM)
 
 ## Risoluzione di problemi

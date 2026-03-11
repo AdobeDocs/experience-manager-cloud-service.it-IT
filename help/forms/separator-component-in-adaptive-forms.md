@@ -3,13 +3,14 @@ title: Cos’è un componente separatore in Adaptive Forms?
 description: Il componente Separatore in Forms adattivo consente di segregare visivamente le sezioni di un modulo.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 1%
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
-
 
 # Componente separatore in Adaptive Forms{#separator-component-in-adaptive-forms}
 
@@ -32,7 +33,6 @@ Per specificare le proprietà di un componente separatore:
 1. Nel campo adiacente, specifica un valore valido per la proprietà CSS3 specificata. Ad esempio, **3 pixel di nero solido**.
 1. Fare clic su **Aggiungi elemento** per specificare un&#39;altra proprietà e il relativo valore.
 1. Fai clic su **Anteprima** per visualizzare le modifiche nel modulo.
-1. Effettua una delle operazioni seguenti:
+1. Effettua una delle seguenti operazioni:
    * Confermare le modifiche facendo clic su **OK**
    * Uscire dalla finestra di dialogo senza apportare modifiche facendo clic su **Annulla**.
-

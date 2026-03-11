@@ -1,13 +1,14 @@
 ---
 title: Come integrare un modulo adattivo con Microsoft&reg; Power Automate?
 description: Integrare un modulo adattivo con Microsoft&reg; Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: collegare i moduli AEM per l'automazione dell'alimentazione, l'automazione dell'alimentazione AEM Forms, integrare l'automazione dell'alimentazione in Adaptive Forms, inviare dati da Adaptive Forms a Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 7%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Questo articolo |
 
 <span class="preview"> Se sei su GovCloud e devi connetterti a un tenant GCC (Government Cloud Computing), invia un&#39;e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com per richiedere l&#39;accesso tramite il programma Early Adopter. </span>
@@ -107,7 +108,7 @@ Fare clic su `Add permissions` per salvare le autorizzazioni.
 
    ![Utilizza l&#39;opzione Endpoints nell&#39;interfaccia utente dell&#39;applicazione Microsoft Power Automate per trovare l&#39;URL OAuth](assets/endpoints.png)
 
-1. Seleziona **[!UICONTROL Connetti]**. Se richiesto, accedere all&#39;account Microsoft® Azure. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Connetti]**. Se richiesto, accedi al tuo account Microsoft® Azure. Seleziona **[!UICONTROL Salva]**.
 
 ### Crea configurazione cloud del servizio Flow di Microsoft® Power Automate {#create-microsoft-power-automate-flow-cloud-configuration}
 
@@ -124,14 +125,14 @@ Fare clic su `Add permissions` per salvare le autorizzazioni.
 
    >[!NOTE]
    >
-   > Se desideri connetterti a un tenant GCC (Government Cloud Computing), seleziona l’autorizzazione GCC nel portale di Microsoft Azure.
+   > Se desideri connetterti a un tenant GCC (Government Cloud Computing), seleziona l’autorizzazione GCC nel portale Microsoft Azure.
 
 
    ![Configurazione cloud Power Automate](/help/forms/assets/power-automate.png)
 
 1. Nella pagina **[!UICONTROL Configura Dataverse per Microsoft® Power Automate]**, specificare **[!UICONTROL ID client]** (denominato anche ID applicazione), **[!UICONTROL Segreto client]**, **[!UICONTROL URL OAuth]** e **[!UICONTROL URL ambiente dinamico]**. Utilizza l’ID client, il segreto client, l’URL OAuth e l’ID ambiente Dynamics. Utilizza l’opzione Endpoints nell’interfaccia utente dell’applicazione Microsoft® Azure Active Directory per trovare l’URL OAuth. Apri il collegamento [Flussi personali](https://us.flow.microsoft.com) e seleziona I miei flussi utilizzano l&#39;ID elencato nell&#39;URL come ID ambiente Dynamics.
 
-1. Seleziona **[!UICONTROL Connetti]**. Se richiesto, accedere all&#39;account Microsoft® Azure. Seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Connetti]**. Se richiesto, accedi al tuo account Microsoft® Azure. Seleziona **[!UICONTROL Salva]**.
 
 ### Pubblicare le configurazioni cloud di Microsoft® Power Automate Dataverse e Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 

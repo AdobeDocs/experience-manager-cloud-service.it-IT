@@ -4,10 +4,11 @@ description: Chiamate di funzione asincrone nell’editor di regole visive
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -53,11 +54,11 @@ La figura seguente illustra i passaggi per utilizzare il tipo di regola **[!UICO
 
 ![Flusso di lavoro per aggiungere funzioni asincrone](/help/forms/assets/workflow-to-add-async-func.png){width=50%, align=center}
 
-### 1. Scrivere una funzione personalizzata per l’operazione asincrona nel file JS
+### &#x200B;1. Scrivere una funzione personalizzata per l’operazione asincrona nel file JS
 
 >[!NOTE]
 >
-> * Quando si seleziona il tipo di regola **Chiamata funzione asincrona**, nell&#39;editor di regole di un modulo vengono visualizzate solo le funzioni con tipo restituito `Promise`.
+> * Quando si seleziona il tipo di regola `Promise`Chiamata funzione asincrona **, nell&#39;editor di regole di un modulo vengono visualizzate solo le funzioni con tipo restituito**.
 > * Per informazioni su come creare una funzione personalizzata, consulta l&#39;articolo [Creare una funzione personalizzata per un modulo adattivo basato su componenti core](/help/forms/custom-function-core-component-create-function.md).
 
 La funzione `matchOTP()` è implementata come funzione personalizzata. Il codice seguente viene aggiunto al file JS della funzione personalizzata:
@@ -99,7 +100,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 Il codice definisce una funzione `matchOTP()` che genera una promessa di convalida di una password monouso (OTP) in modo asincrono. Utilizza una funzione `asyncOperationForOTPMatch()` per simulare il processo di corrispondenza OTP. La funzione controlla se l&#39;OTP fornito è uguale a `111`. Se l&#39;OTP immesso è corretto, chiama il callback con null per l&#39;errore e un oggetto che indica che l&#39;OTP è valido `({'valid':'true'})`. Se l&#39;OTP non è valido, chiama il callback con un oggetto errore `({'valid':'false'})` e null per il risultato.
 
-### 2. Configurare la funzione asincrona nell’editor di regole
+### &#x200B;2. Configurare la funzione asincrona nell’editor di regole
 
 Per configurare la funzione asincrona nell’editor di regole, effettua le seguenti operazioni:
 

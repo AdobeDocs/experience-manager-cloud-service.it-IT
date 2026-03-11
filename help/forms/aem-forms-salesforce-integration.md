@@ -1,22 +1,23 @@
 ---
-title: Come integrare Salesforce utilizzando il flusso delle credenziali client OAuth 2.0 con AEM Forms?
-description: Scopri come integrare Salesforce con AEM Forms utilizzando il flusso delle credenziali client OAuth 2.0. Vengono visualizzati i passaggi per l’integrazione con AEM Forms Salesforce.
+title: Come integrare Salesforce utilizzando il flusso delle credenziali del client OAuth 2.0 con AEM Forms?
+description: Scopri come integrare Salesforce con AEM Forms utilizzando il flusso di credenziali del client OAuth 2.0. Vengono visualizzati i passaggi per l’integrazione con AEM Forms Salesforce.
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '558'
 ht-degree: 3%
 
 ---
 
-# Integrare il modulo adattivo con Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrare un modulo adattivo con Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 L’integrazione di Adobe Experience Manager (AEM) Forms con Salesforce consente alle organizzazioni di semplificare i processi collegando le funzionalità di creazione e gestione dei moduli alla piattaforma Salesforce. La connessione di un modulo adattivo con Salesforce consente uno scambio di dati fluido tra le due piattaforme. Quando gli utenti inviano i moduli, i dati vengono sincronizzati automaticamente con Salesforce. Garantisce che tutte le informazioni del cliente siano aggiornate e centralizzate all&#39;interno del sistema.
@@ -32,7 +33,7 @@ AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la ges
 L’utilizzo delle credenziali del client OAuth 2.0 per l’autenticazione rispetto all’autenticazione del flusso del codice di autorizzazione offre diversi vantaggi:
 
 * L&#39;autenticazione delle credenziali client OAuth 2.0 consente più di cinque connessioni per utente.
-* La configurazione dell’origine dati dell’AEM continua a funzionare su disattivazione, modifiche di accesso, aggiornamento della password per un utente AEM.
+* La configurazione dell’origine dati di AEM continua a funzionare su disattivazione, modifiche all’accesso, aggiornamento della password per un utente di AEM.
 
 ## Prerequisiti {#prerequisites}
 
@@ -40,15 +41,15 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 * Crea un&#39;app connessa a [Salesforce con flusso di credenziali client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) e un utente solo API per la tua organizzazione e ottieni la chiave consumer e il segreto consumer per l&#39;app.
 
-* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=it) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
+* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
 
 
-## Configurare l’applicazione Salesforce utilizzando il flusso delle credenziali client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
+## Configurare l’applicazione Salesforce tramite il flusso delle credenziali client OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
 
 Per collegare il modulo adattivo all’applicazione Salesforce utilizzando le impostazioni di autenticazione delle credenziali client OAuth 2.0, effettua le seguenti operazioni:
 
 1. Accedi all’istanza di authoring.
-1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Origini dati]**.
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Origini dati]**.
 1. Seleziona la cartella di configurazione.
 1. Fai clic su **[!UICONTROL Crea]** per visualizzare **[!UICONTROL Crea configurazione Data Source]**.
 1. Specifica il **[!UICONTROL Titolo]** e seleziona il **[!UICONTROL Tipo di servizio]** come **[!UICONTROL Servizio RESTful]**.
@@ -62,7 +63,7 @@ Per collegare il modulo adattivo all’applicazione Salesforce utilizzando le im
 1. Carica il file Swagger creato dal computer locale facendo clic su **[!UICONTROL Sfoglia]**.
 1. Selezionare **[!UICONTROL Tipo di autenticazione]** come **[!UICONTROL OAuth 2.0]** e viene visualizzato il pannello **[!UICONTROL Impostazioni autenticazione]**.
 1. Selezionare **[!UICONTROL Tipo di concessione]** come **[!UICONTROL Credenziali client]**.
-1. Specifica l&#39;**[!UICONTROL ID client]** e il **[!UICONTROL Segreto client]** ottenuti dall&#39;app connessa Salesforce.
+1. Specifica l&#39;**[!UICONTROL ID client]** e il **[!UICONTROL Segreto client]** ottenuti dall&#39;app connessa a Salesforce.
 1. Specifica l&#39;**[!UICONTROL URL token di accesso]** in formato
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
 

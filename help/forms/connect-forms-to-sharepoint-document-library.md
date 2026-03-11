@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Come collegare la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l’azione Invia a SharePoint per un modulo adattivo, Libreria documenti di AEM Forms Data Model SharePoint, Libreria documenti di Forms Data Model SharePoint, Integrare il modello dati di Forms nella raccolta documenti di SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 0%
+source-wordcount: '997'
+ht-degree: 5%
 
 ---
 
@@ -37,18 +38,18 @@ Per collegare AEM Forms all&#39;archivio della raccolta documenti di Microsoft®
 
 1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
+   * Nel portale Microsoft® Azure, aggiungi l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
    * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` per fornire le autorizzazioni di lettura/scrittura. `Sites.Manage.All` è un ambito di autorizzazione nell&#39;API Graph di Microsoft che consente a un&#39;applicazione di gestire tutti gli aspetti dei siti SharePoint, ad esempio l&#39;eliminazione o la modifica di siti.
 
      >[!NOTE]
      >
      > È inoltre possibile [configurare SharePoint Sites con accesso limitato](/help/forms/configure-sharepoint-site-limited-access.md) utilizzando l&#39;ambito di autorizzazione `Sites.Selected` nell&#39;API Graph di Microsoft. `Sites.Selected` è un ambito di autorizzazione nell&#39;API Graph di Microsoft che consente un accesso più granulare e limitato ai siti SharePoint.
 
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale Microsoft® Azure.
 
      >[!NOTE]
      >
-     > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+     > Il campo **segreto client** è obbligatorio o facoltativo a seconda della configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Ambito di autorizzazione `offline_access Sites.Selected` nell&#39;API Graph di Microsoft che consente un accesso più granulare e limitato ai siti SharePoint. Ambito di autorizzazione `offline_access Sites.Manage.All` nell&#39;API Graph di Microsoft che consente l&#39;accesso completo ai siti SharePoint.
 1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
@@ -115,8 +116,8 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia a SharePoint]** azione di invio.
    ![GIF Sharepoint](/help/forms/assets/submit-to-sharepoint-ue.png)

@@ -5,13 +5,14 @@ contentOwner: robhagat
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 5%
+source-wordcount: '661'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +29,7 @@ Per configurare i registri lato server, effettua le seguenti operazioni:
 
 1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
 
-   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![&#x200B; dell&#39;interfaccia](assets/logconfig.png)
+   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![ dell&#39;interfaccia](assets/logconfig.png)
 
    Opzione di configurazione del logger di registrazione di accesso Sling
 

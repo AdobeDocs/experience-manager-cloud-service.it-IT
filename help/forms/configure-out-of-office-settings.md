@@ -1,12 +1,13 @@
 ---
 title: Come configurare le impostazioni Fuori sede in AEM Forms?
 description: Consente di delegare le attività mentre si è in congedo o fuori sede per un'esecuzione fluida del flusso di lavoro.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Se si prevede di uscire dall&#39;ufficio, è possibile specificare cosa accade agli articoli assegnati per quel periodo.
@@ -39,7 +40,7 @@ Puoi segregare la delega di elementi in base ai modelli di flusso di lavoro. Ad 
 
 Per abilitare l&#39;impostazione Fuori sede per l&#39;account e delegare gli elementi della casella in entrata a un altro utente, effettuare le operazioni riportate di seguito.
 
-1. Accedi all’istanza AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Accedi all’istanza di AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
 1. Seleziona l&#39;icona ![Visualizza selettore](assets/viewlist.svg) o ![Visualizza selettore](assets/calendar.svg) accanto al pulsante **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
 1. Apri la scheda **[!UICONTROL Fuori sede]** nella finestra di dialogo delle impostazioni.
 1. Selezionare il pulsante **[!UICONTROL Abilita/Disabilita]** per abilitare l&#39;impostazione Fuori sede.

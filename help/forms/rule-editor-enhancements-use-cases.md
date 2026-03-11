@@ -4,10 +4,11 @@ description: Questo articolo esplora vari casi d’uso per l’editor di regole 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -124,7 +125,7 @@ Il campo **Costo totale spedizione** viene aggiornato in modo dinamico per rifle
 >[!NOTE]
 >
 > È inoltre possibile aggiungere la funzione **Ottieni valore variabile** nella condizione When.
-> &#x200B;> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> ![Funzione Get Variable Value nella condizione When](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Questo approccio consente di eseguire calcoli dinamici e in tempo reale senza aggiungere campi aggiuntivi al modulo, mantenendo la struttura pulita e intuitiva.
 

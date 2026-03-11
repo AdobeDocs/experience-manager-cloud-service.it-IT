@@ -4,11 +4,12 @@ description: Scopri come configurare l’azione di invio del modulo adattivo per
 keywords: Invia dati a Marketo coinvolgi, configura l’azione di invio come Invia a Marketo Engage
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 7%
+source-wordcount: '778'
+ht-degree: 13%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 7%
 
 ![Flusso di lavoro](/help/forms/assets/workflow-marketo-3.png)
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/it/docs/marketo/using/home) all&#39;invio.
+L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Invia a Marketo Engage** per inviare dati di Forms adattivo a Adobe Marketo Engage per l&#39;elaborazione. È possibile configurare un modulo adattivo esistente per inviare dati a [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) all&#39;invio.
 
 Sono disponibili varie azioni di invio predefinite per la gestione degli invii dei moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -77,8 +78,8 @@ Viene visualizzata la finestra di dialogo **Proprietà modulo**.
 
    >[!NOTE]
    >
-   > * Se l&#39;icona **Modifica proprietà modulo** non è visibile nell&#39;interfaccia di Universal Editor, abilitare l&#39;estensione **Modifica proprietà modulo** in Extension Manager.
-   > * Per informazioni su come abilitare o disabilitare le estensioni nell&#39;editor universale, consulta l&#39;articolo [Caratteristiche principali di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
+   > * Se non visualizzi l’icona **Modifica le proprietà del modulo** nell’interfaccia dell’editor universale, abilita l’estensione **Modifica le proprietà del modulo** in Extension Manager.
+   > * Per scoprire come abilitare e disabilitare le estensioni nell’editor universale, fai riferimento all’articolo [Caratteristiche principali delle funzioni di Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions).
 
 1. Fai clic sulla scheda **Invio** e seleziona **[!UICONTROL Invia a Marketo Engage]** azione di invio.
 
@@ -97,7 +98,7 @@ Dopo aver configurato l&#39;azione di invio per il modulo adattivo come **Invia 
 
 ## Passaggio successivo
 
-È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/it/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
+È inoltre possibile collegare un modulo adattivo alla [libreria Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) per tenere traccia del numero di visite, clic e invii di moduli.
 
 ## Articoli correlati
 

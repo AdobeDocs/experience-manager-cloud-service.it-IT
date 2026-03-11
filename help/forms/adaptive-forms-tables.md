@@ -3,11 +3,12 @@ title: Come si aggiungono tabelle a un modulo adattivo?
 description: Utilizza il componente tabella per aggiungere tabelle a un modulo adattivo. Oltre ad aiutare con il layout dinamico, il componente tabella consente di aggiungere elementi di tabella XDP.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2487'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -44,7 +45,7 @@ AEM Forms fornisce un componente Tabella nella barra laterale del browser Compon
 
 Per creare una tabella, trascina il componente Tabella dal browser Componenti nella barra laterale del modulo adattivo. Per impostazione predefinita, la tabella contiene due colonne e tre righe, inclusa la riga di intestazione.
 
-![Componente tabella nella barra laterale AEM](assets/sidebar-tables.png)
+![Componente tabella nella barra laterale di AEM](assets/sidebar-tables.png)
 
 ### Informazioni sulle celle di intestazione e corpo {#about-header-and-body-cells}
 

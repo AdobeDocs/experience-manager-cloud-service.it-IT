@@ -6,11 +6,12 @@ topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 2%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Questo articolo |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 Nel panorama in rapida evoluzione dell’analisi digitale, è fondamentale rimanere in sintonia con le tendenze globali per prendere decisioni informate e ottimizzare le esperienze digitali. Per risolvere questo problema, Forms adattivo si integra perfettamente con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo alla base dell’analisi di queste metriche è prendere decisioni basate sui dati, utilizzando metriche e analisi per migliorare l’usabilità e l’efficacia dei moduli.
 
@@ -56,7 +57,7 @@ Contiene le metriche Rendering moduli, Invio moduli, Errori di convalida e Visit
 
 * **Errori di convalida**: l&#39;errore di convalida visualizza il numero totale di errori correlati alla convalida che si sono verificati nei campi dei moduli.
 
-* **Visitatori univoci**: i visitatori univoci rappresentano il numero di volte in cui un visitatore esegue il rendering del modulo. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=it).
+* **Visitatori univoci**: i visitatori univoci rappresentano il numero di volte in cui un visitatore esegue il rendering del modulo. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
   ![Prestazioni Forms](assets/forms-performance.png){width="100%"}
 
@@ -64,8 +65,8 @@ Contiene le metriche Rendering moduli, Invio moduli, Errori di convalida e Visit
 
 Consente di ottenere informazioni utili sull’attività del visitatore nei moduli:
 
-* **Visite e invii**: descrive la frequenza delle visite ai moduli in un intervallo di date e il numero corrispondente di invii di moduli. Per ulteriori informazioni, fai clic su [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=it).
-* **Visitatori unici e relativo totale di visite**: distingue tra utenti nuovi e utenti di ritorno. Ad esempio, un visitatore può visitare il tuo sito ogni giorno per un mese, ma continua a contare come un singolo visitatore univoco. Visita [Visitatori univoci](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it) per informazioni dettagliate.
+* **Visite e invii**: descrive la frequenza delle visite ai moduli in un intervallo di date e il numero corrispondente di invii di moduli. Per ulteriori informazioni, fai clic su [Visite](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Visitatori unici e relativo totale di visite**: distingue tra utenti nuovi e utenti di ritorno. Ad esempio, un visitatore può visitare il tuo sito ogni giorno per un mese, ma continua a contare come un singolo visitatore univoco. Visita [Visitatori univoci](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) per informazioni dettagliate.
 
   ![Visitatori Forms](assets/forms-visitors.png){width="100%"}
 

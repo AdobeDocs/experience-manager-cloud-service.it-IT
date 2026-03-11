@@ -5,10 +5,11 @@ keywords: confronto di moduli adattivi, componenti core, componenti di base, mod
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 8%
 
 ---
@@ -65,7 +66,7 @@ I Componenti core supportano più modelli di rendering:
 | **Componenti** | 30 componenti standardizzati tra cui Casella di testo, Casella numerica, Selezione data, Elenco a discesa, Gruppo di caselle di controllo, Pulsante di opzione, File allegato, Procedura guidata, Pannello a soffietto, Schede orizzontali/verticali |
 | **Modelli modulo** | Schema JSON (v4 e 2020-12), modello dati modulo (FDM), modelli XDP/XFA (limitato) |
 | **Motore regole** | Editor di regole visive con logica condizionale, convalida, chiamata di servizio, funzioni personalizzate |
-| **Azioni di invio** | Endpoint REST, e-mail, flusso di lavoro AEM, SharePoint, OneDrive, archiviazione BLOB di Azure, Power Automate, Workfront Fusion, modello dati modulo |
+| **Azioni di invio** | Endpoint REST, e-mail, flusso di lavoro AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion, modello dati modulo |
 | **Precompilazione** | Servizio di preriempimento modello dati modulo, servizi di preriempimento personalizzati |
 | **CAPTCHA** | reCAPTCHA, hCaptcha, Turnstile |
 | **Documento record** | Generazione di PDF con modelli personalizzati o OOTB |

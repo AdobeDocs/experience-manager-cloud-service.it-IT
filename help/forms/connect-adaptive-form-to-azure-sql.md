@@ -4,17 +4,19 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
 
-# Connettere un modulo adattivo all’archiviazione SQL di Azure
+# Collegare un modulo adattivo all’archiviazione SQL di Azure
 
 Forms adattivo in Adobe Experience Manager (AEM) può integrarsi con database esterni per memorizzare o recuperare dati.
-Questo articolo illustra come connettere un modulo adattivo a un database SQL di Azure utilizzando JDBC tramite AEM as a Cloud Service.
+Questo articolo illustra come collegare un modulo adattivo a un database Azure SQL utilizzando JDBC tramite AEM as a Cloud Service.
 
 >
 > 
@@ -27,20 +29,20 @@ L’integrazione di Adaptive Forms con Azure SQL offre diversi vantaggi:
 * **Interazione dati in tempo reale:** consente la lettura e la scrittura di dati in tempo reale tra i moduli e il database di Azure.
 * **Scalabilità:** Azure SQL fornisce prestazioni di database scalabili adatte alle applicazioni di livello enterprise.
 * **Archiviazione dati centralizzata:** mantiene gli invii dei moduli e i dati recuperati archiviati in modo sicuro in un&#39;unica posizione centrale.
-* **Conformità alla sicurezza:** sfrutta le opzioni di rete, firewall e crittografia integrate di Azure per garantire comunicazioni sicure.
+* **Conformità in materia di sicurezza:** sfrutta le opzioni di rete, firewall e crittografia integrate di Azure per garantire comunicazioni sicure.
 * **Integrazione nativa per il cloud:** Ideale per architetture moderne basate sul cloud che utilizzano AEM as a Cloud Service.
 
 ## Prerequisiti
 
-* Creare il [database SQL di Azure](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) e verificare che la **connessione proxy** sia abilitata.
+* Creare il [database Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) e verificare che la **connessione proxy** sia abilitata.
 
   >[!NOTE]
   >
   > Passare a: `Azure Portal → SQL Server → Security → Networking → Connectivity` per abilitare **connessione proxy**.
 
-  ![Crea database di Azure](/help/forms/assets/create-azure-db.png)
+  ![Crea Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Abilita [Rete avanzata configurata utilizzando un IP in uscita dedicato](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) per il database di Azure creato.
+* Abilita [Rete avanzata configurata utilizzando un IP in uscita dedicato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) per il database Azure creato.
 
   >[!NOTE]
   >
@@ -50,7 +52,7 @@ L’integrazione di Adaptive Forms con Azure SQL offre diversi vantaggi:
 
 * Imposta l’inoltro delle porte nell’ambiente cloud con:
    * **portOrigin**: tra `30000–30999`
-   * **portDest**: `1433` (porta predefinita per SQL di Azure)
+   * **portDest**: `1433` (porta predefinita per Azure SQL)
 Esempio: `portOrigin: 30433 → portDest: 1433`
 
      >
@@ -58,7 +60,7 @@ Esempio: `portOrigin: 30433 → portDest: 1433`
      > Per configurare l’inoltro porta, contatta il supporto Cloud Manager di Adobe.
 
 
-## Passaggi per connettere Forms adattivo a SQL di Azure
+## Passaggi per connettere Forms adattivo a Azure SQL
 
 **Passaggio1: clonare l&#39;archivio Git AEM as a Cloud Service**
 
@@ -72,7 +74,7 @@ Esempio: `portOrigin: 30433 → portDest: 1433`
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall&#39;applicazione.
 
@@ -84,7 +86,7 @@ Includere la [dipendenza del driver SQL](https://central.sonatype.com/artifact/c
 
 >[!NOTE]
 >
-> Per includere la dipendenza SQL nel progetto, fare riferimento alla sezione [Dipendenze driver SQL](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Per includere la dipendenza SQL nel progetto, fare riferimento alla sezione [Dipendenze driver SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Passaggio 3: aggiunta della configurazione JDBC**
 
@@ -117,7 +119,7 @@ Includere la [dipendenza del driver SQL](https://central.sonatype.com/artifact/c
 
    >
    >
-   > Sostituisci `jdbc.username` con il nome utente di Azure effettivo e `jdbc.password` con la password sicura effettiva.
+   > Sostituisci `jdbc.username` con il nome utente Azure effettivo e `jdbc.password` con la password sicura effettiva.
 
 **Passaggio 5: conferma e invia le modifiche**
 
@@ -136,7 +138,7 @@ git push
 
 **Passaggio 7: creare un modello dati modulo (FDM)**
 
-Una volta completata l’installazione di AEM e Azure e distribuite le modifiche al codice:
+Una volta completata la configurazione di AEM e Azure e implementate le modifiche al codice:
 
 1. Passa all’istanza Autore AEM.
 1. Passa a **Strumenti** > **Forms** > **Integrazioni dati**.
@@ -150,14 +152,14 @@ Una volta completata l’installazione di AEM e Azure e distribuite le modifiche
 
 1. Apri un modulo adattivo in modalità di modifica.
 1. Selezionate l&#39;FDM creato nel passo precedente come modello dati.
-1. Utilizzare [associazioni dati per connettere i campi modulo con l&#39;origine dati SQL di Azure](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) e configurare l&#39;azione di invio.
+1. Utilizza [associazioni dati per connettere i campi modulo con l&#39;origine dati Azure SQL](/help/forms/work-with-form-data-model.md#add-data-model-objects-and-services) e configurare l&#39;azione di invio.
 
 ## Best practice
 
 * Utilizza **gestione segreti** per evitare password hardcoding nei file di configurazione.
 * Ruota regolarmente le credenziali del database e aggiorna la configurazione in modo sicuro.
 * Monitora i registri di connettività JDBC per individuare errori e latenza.
-* Segui le best practice di Azure per proteggere i database SQL e le configurazioni del firewall.
+* Seguire le procedure consigliate di Azure per la protezione dei database SQL e delle configurazioni del firewall.
 * Evitare di utilizzare account di database con privilegi elevati per l&#39;accesso ai moduli.
 
 ## Articoli correlati

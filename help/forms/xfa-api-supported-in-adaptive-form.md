@@ -1,5 +1,5 @@
 ---
-title: Supporto XFA in Adaptive Forms basato su XDP
+title: Supporto XFA in moduli adattivi basati su XDP
 description: Elenca gli eventi, le proprietà e gli script XFA supportati e la convalida in Adaptive Forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -8,15 +8,16 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 5%
+source-wordcount: '689'
+ht-degree: 7%
 
 ---
 
-
-# Supporto XFA in Adaptive Forms basato su XDP{#xfa-support-in-xdp-based-adaptive-forms}
+# Supporto XFA in moduli adattivi basati su XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introduzione {#introduction}
 
@@ -267,4 +268,3 @@ La tabella seguente acquisisce il mapping delle convalide XFA alle convalide in 
 >[!NOTE]
 >
 >Non è possibile ignorare la proprietà obbligatoria per il pulsante di opzione e il gruppo di caselle di controllo Moduli adattivi associati a pulsanti di controllo XFA.
-

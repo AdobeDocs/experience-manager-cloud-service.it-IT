@@ -3,11 +3,12 @@ title: Come riavviare AEM SDK?
 description: Best practice per il riavvio di AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 16%
 
 ---
 
@@ -23,7 +24,7 @@ Se riavvii AEM SDK arrestando i processi Java™, potrebbero verificarsi incongr
 
 Per riavviare AEM SDK, passare alla finestra dei comandi attiva e premere il comando `Ctrl + C` per riavviare SDK.
 
-Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java™, può causare incongruenze nell’ambiente di sviluppo AEM.
+Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java™, può causare incongruenze nell’ambiente di sviluppo AEM.
 
 ## Consulta anche
 

@@ -3,18 +3,19 @@ title: Confronta due moduli adattivi distinti.
 description: Confronta due moduli distinti in base ai campi, al contenuto e ai componenti del modulo.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 3%
+source-wordcount: '159'
+ht-degree: 11%
 
 ---
 
 # Confrontare i moduli adattivi {#compare-two-forms}
 
-<span class="preview"> Si tratta di una funzionalità preliminare accessibile tramite il [canale preliminare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview">Si tratta di una funzione pre-release accessibile tramite il [canale pre-release](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
 
 Quando gli autori dei moduli devono confrontare due moduli distinti in base ai campi, al contenuto e ai componenti dei moduli, confrontano i due moduli. Per poter confrontare i due moduli, l&#39;autore deve assicurarsi che si trovino nella stessa directory o cartella. Per confrontare due moduli adattivi distinti, effettua le seguenti operazioni:
 

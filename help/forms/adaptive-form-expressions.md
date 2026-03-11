@@ -5,15 +5,16 @@ feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
 
-# Espressioni per moduli adattivi {#adaptive-form-expressions}
+# Espressioni dei moduli adattivi {#adaptive-form-expressions}
 
 Forms adattivo offre un’esperienza di compilazione dei moduli ottimizzata e semplificata per gli utenti finali con funzionalità di scripting dinamico. Consente di scrivere espressioni per aggiungere vari comportamenti, ad esempio mostrare/nascondere campi e pannelli dinamici. Consente inoltre di aggiungere campi calcolati, rendere i campi di sola lettura, aggiungere logica di convalida e molto altro. Il comportamento dinamico si basa sull’input dell’utente o sui dati precompilati.
 
@@ -32,7 +33,7 @@ I pannelli ripetuti sono istanze di un pannello che vengono aggiunte o rimosse d
 * Per creare un pannello ripetuto, nella finestra di dialogo del pannello, apri le impostazioni e imposta il valore del campo conteggio massimo su più di 1.
 * Il valore di conteggio minimo delle impostazioni di ripetizione del pannello può essere uno o più ma non può essere superiore al valore di conteggio massimo.
 * Quando un’espressione fa riferimento a un campo di un pannello ripetuto, i nomi dei campi nell’espressione vengono risolti nell’elemento ripetuto più vicino.
-* Forms adattivo fornisce alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l&#39;elenco completo delle funzioni, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/af.html)
+* Forms adattivo fornisce alcune funzioni speciali per semplificare il calcolo per i pannelli ripetibili come somma, conteggio, min, max, filtro e molte altre. Per l&#39;elenco completo delle funzioni, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * Le API per la manipolazione delle istanze del pannello ripetuto sono:
 
    * Per aggiungere un&#39;istanza del pannello: `panel1.instanceManager.addInstance()`
@@ -78,7 +79,7 @@ L’espressione di calcolo viene utilizzata per calcolare automaticamente il val
 
 ### Espressione clic {#click-expression}
 
-L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per l&#39;elenco completo delle API, vedere [API GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html).
+L&#39;espressione click gestisce le azioni eseguite sull&#39;evento click di un pulsante. GuideBridge fornisce le API per eseguire varie funzioni, ad esempio l&#39;invio e la convalida, utilizzate insieme all&#39;espressione di clic. Per l&#39;elenco completo delle API, vedere [API GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Si applica a**: campi pulsante
 
@@ -209,7 +210,7 @@ Formato di visualizzazione può essere utilizzato per visualizzare i dati in for
 
 ### GuideBridge - API ed eventi {#guidebridge-apis-and-events}
 
-GuideBridge è una raccolta di API che possono essere utilizzate per interagire con Adaptive Forms nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/).
+GuideBridge è una raccolta di API che possono essere utilizzate per interagire con Adaptive Forms nel modello di memoria in un browser. Per un&#39;introduzione dettagliata all&#39;API Guide Bridge, ai metodi di classe e agli eventi esposti, vedere [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -255,7 +256,7 @@ Per utilizzare GuideBridge dopo l&#39;inizializzazione del modulo (invio dell&#3
 
 #### Eventi GuideBridge {#guidebridge-events}
 
-GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, consulta [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fornisce inoltre alcuni eventi per gli script esterni nella pagina di hosting. Gli script esterni possono ascoltare questi eventi ed eseguire varie operazioni. Ad esempio, ogni volta che il nome utente di un modulo cambia, cambia anche il nome visualizzato nell’intestazione della pagina. Per ulteriori dettagli su tali eventi, consulta [Riferimento API della libreria JavaScript™ per Forms adattivo](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilizza il seguente codice per registrare i gestori:
 

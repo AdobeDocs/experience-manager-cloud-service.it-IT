@@ -3,15 +3,16 @@ title: Come personalizzare l’aspetto dei moduli adattivi?
 description: Utilizza il framework LESS per Forms adattivo per personalizzare l’aspetto di Forms adattivo.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2313'
 ht-degree: 3%
 
 ---
 
-
-# Costrutti di stile per Forms adattivo{#styling-constructs-for-adaptive-forms}
+# Costrutti di stile per moduli adattivi{#styling-constructs-for-adaptive-forms}
 
 ## Prerequisiti {#prerequisites}
 
@@ -19,7 +20,7 @@ Conoscenza del CSS e del framework LESS.
 
 ## Cosa può essere personalizzato {#what-can-be-customized}
 
-Nell’articolo sono elencate le classi css di Adaptive Forms disponibili al pubblico. È possibile utilizzare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non è possibile assegnare uno stile ai componenti utilizzando [editor tema](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html).
+Nell’articolo sono elencate le classi css di Adaptive Forms disponibili al pubblico. È possibile utilizzare queste classi per assegnare uno stile a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non è possibile assegnare uno stile ai componenti utilizzando [editor tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili in Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -38,9 +39,9 @@ Le modifiche nell’aspetto generale del modulo adattivo che utilizzano le propr
 
 In base al bootstrap, il seguente insieme di proprietà CSS definisce il tema di una pagina web:
 
-* Colore sfondo
+* Colore di sfondo
 * Bordo (tipo, colore, spessore)
-* Colore carattere
+* Colore font
 * Riempimento
 * Margine
 * Dimensione font
@@ -134,7 +135,7 @@ I campi includono etichette, widget, descrizioni della Guida (descrizione lunga 
 
 ## Stile etichetta {#label-styling}
 
-L&#39;elemento HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o a sinistra.
+L&#39;elemento di HTML **label** utilizzato per il campo include le classi **left** o **top** a seconda che l&#39;etichetta sia in alto o a sinistra.
 
 <table>
  <tbody>
@@ -349,10 +350,10 @@ Il widget Termini e condizioni (TnC `` ``) consente di specificare termini e con
 I pulsanti sono anche widget. Tuttavia, il loro stile è leggermente diverso dai widget. In Adaptive Forms, uno dei seguenti elementi costituisce un pulsante:
 
 * input[tipo = testo]
-* pulsante
+* button
 * element con classe .button
 
-Codice HTML per pulsante:
+Codice HTML per il pulsante:
 
 `<button type="button" >`
 
@@ -555,7 +556,7 @@ Il widget File allegato di Adaptive Forms consente di caricare i file. Puoi anch
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Colore per l'icona Anteprima (icona Bootstrap) nel widget</p> </td>
+   <td><p>Colore dell'icona Anteprima (icona Bootstrap) nel widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -593,7 +594,7 @@ Sono disponibili quattro tipi di schede del navigatore. Queste includono le sche
  </tbody>
 </table>
 
-Di seguito è riportato il codice HTML per l&#39;elemento tab navigator (simile alle schede bootstrap):
+Di seguito è riportato il codice HTML per l&#39;elemento navigator della scheda (simile alle schede di avvio):
 
 `<li>`
 
@@ -1124,4 +1125,3 @@ Anche il tema **Iscrizione semplice** in /etc/clientlibs/fd/af/guidetheme/simple
   </tr>
  </tbody>
 </table>
-

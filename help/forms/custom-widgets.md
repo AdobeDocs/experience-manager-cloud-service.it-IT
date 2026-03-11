@@ -1,5 +1,5 @@
 ---
-title: Creare aspetti personalizzati nei moduli di HTML5
+title: Creare aspetti personalizzati nei moduli HTML5
 description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
-# Creare aspetti personalizzati nei moduli di HTML5{#create-custom-appearances-in-html-forms}
+# Creare aspetti personalizzati nei moduli HTML5{#create-custom-appearances-in-html-forms}
 
 <span class="preview"> La funzionalità HTML5 Forms è disponibile come parte del programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo ID e-mail ufficiale (di lavoro) a aem-forms-ea@adobe.com.
 </span>
@@ -79,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrare un widget personalizzato con il motore di script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando il codice widget personalizzato è pronto, registralo con il motore di script utilizzando `registerConfig`API per [Bridge modulo](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Prende widgetConfigObject come input.
+Quando il codice widget personalizzato è pronto, registralo con il motore di script utilizzando `registerConfig`API per [Bridge modulo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis). Prende widgetConfigObject come input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

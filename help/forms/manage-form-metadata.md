@@ -2,11 +2,12 @@
 title: Come possiamo gestire i metadati per AEM Forms?
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
@@ -39,7 +40,7 @@ I seguenti tipi di risorse sono supportati in [!DNL AEM Forms]:
 
 * Modelli di modulo (moduli XFA)
 * PDF forms
-* Documento (PDF flat)
+* Documento (PDF semplici)
 * Moduli adattivi
 * Modello dati Forms
 * XFS
@@ -71,7 +72,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
    <td><p>Valore di sola lettura che specifica il tipo di risorsa. Può avere uno dei seguenti valori:</p> 
     <ul> 
      <li>Modello di modulo</li> 
-     <li>Modulo PDF, Modulo PDF (Acroform) o Modulo PDF (Signed)</li> 
+     <li>Modulo PDF, Modulo PDF (Acroform) o Modulo PDF (Firmato)</li> 
      <li>Documento, Documento (Firmato)</li> 
      <li>Modulo adattivo</li> 
      <li>Modello dati modulo (FDM)</li>
@@ -93,7 +94,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
    <td>Tutto tranne la risorsa</td> 
    <td><p>Valore di sola lettura calcolato automaticamente in base al tipo di modulo.</p> 
     <ul> 
-     <li>PDF/Modello modulo/Documento: recuperato dal file binario caricato.</li> 
+     <li>PDF/Modello di modulo/Documento - recuperato dal file binario caricato.</li> 
      <li>Modulo adattivo: utente connesso al momento della creazione del modulo.</li> 
     </ul> </td> 
   </tr> 
@@ -113,12 +114,12 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
    <td>Valore di sola lettura che specifica l'ora dell'ultima pubblicazione del modulo.</td> 
   </tr> 
   <tr> 
-   <td>Ora di attivazione/disattivazione Publish</td> 
+   <td>Ora di attivazione/disattivazione pubblicazione</td> 
    <td>Tutto tranne la risorsa</td> 
    <td><p>Ora in cui è pianificata la pubblicazione automatica o l'annullamento della pubblicazione del modulo. L’utente imposta questo valore durante la modifica dei metadati.</p> 
     <ul> 
-     <li>L'ora di attivazione e disattivazione del Publish deve essere successiva alla data corrente. </li> 
-     <li>L'ora di disattivazione del Publish deve essere successiva all'ora di attivazione della pubblicazione. </li> 
+     <li>L'ora di attivazione e disattivazione della pubblicazione deve essere successiva alla data corrente. </li> 
+     <li>L'ora di disattivazione della pubblicazione deve essere successiva all'ora di attivazione della pubblicazione. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -132,7 +133,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Profilo rendering HTML</td> 
+   <td>Profilo di rendering HTML</td> 
    <td>Modello di modulo</td> 
    <td>Il profilo di rendering HTML utilizzato durante il rendering di un modello di modulo in formato HTML.</td> 
   </tr> 
@@ -169,7 +170,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
       <li>Schema: un XML di schema JSON</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
-     <li>Nessuno</li> 
+     <li>Nessuna</li> 
     </ul> 
     <div>
       Un modello di modulo selezionato può essere aggiornato ma non rimosso. 

@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 5%
+source-wordcount: '1748'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 5%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 | Applicabile a | Modulo adattivo basato su componenti di base. <br> Per il modulo adattivo basato su componenti core, [Fai clic qui](/help/forms/captcha-adaptive-forms-core-components.md). |
 
@@ -61,11 +62,11 @@ Gli autori di moduli possono utilizzare il servizio reCAPTCHA di Google per impl
 
 1. Configurare il servizio cloud per [!DNL reCAPTCHA Enterprise].
 
-   1. Nell&#39;istanza Autore Experience Manager, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
+   1. Nell&#39;istanza Autore Experience Manager, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]**.
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionare il contenitore di configurazione creato e selezionare **[!UICONTROL Crea]**.
    1. Seleziona la versione come [!DNL reCAPTCHA Enterprise] e specifica Nome, ID progetto, Chiave sito e Chiave API (ottenuta nel passaggio 2) per il servizio Enterprise reCAPTCHA.
    1. Selezionare il tipo di chiave. Il tipo di chiave deve essere uguale alla chiave del sito configurata nel [progetto Google Cloud](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), ad esempio **Chiave del sito di checkbox** o **Chiave del sito basata su punteggio**.
-   1. Specifica un punteggio di soglia [&#x200B; compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
+   1. Specifica un [punteggio soglia compreso tra 0 e 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). I punteggi superiori o uguali ai punteggi di soglia identificano l’interazione umana, altrimenti considerata interazione da bot.
    1. Seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
 
 <!--
@@ -90,7 +91,7 @@ Una volta abilitato, il servizio reCAPTCHA Enterprise è disponibile per l’uti
 
 1. Configura il servizio cloud per reCAPTCHA v2.
 
-   1. Nell&#39;istanza dell&#39;autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **Cloud Service**.
+   1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **Servizi cloud**.
    1. Selezionare **[!UICONTROL reCAPTCHA]**. Viene visualizzata la pagina Configurazioni. Selezionare il contenitore di configurazione creato e selezionare **[!UICONTROL Crea]**.
    1. Seleziona la versione come [!DNL reCAPTCHA v2] , specifica il nome, la chiave del sito e la chiave segreta per il servizio reCAPTCHA (ottenuto nel passaggio 1), quindi seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specifica il sito e le chiavi segrete ottenuti nel passaggio 1. Seleziona **[!UICONTROL Salva impostazioni]**, quindi seleziona **OK** per completare la configurazione.
@@ -344,7 +345,7 @@ Impostare la proprietà **[!UICONTROL af.cloudservices.recaptcha.domain]** della
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando il SDK dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza del Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Consulta anche {#see-also}
 

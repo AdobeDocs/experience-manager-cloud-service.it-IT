@@ -4,10 +4,11 @@ description: Scopri come creare un modello di dati modulo (FDM) e inviare o recu
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -93,7 +94,7 @@ Per aggiungere o aggiornare origini dati a un modello dati modulo (FDM) esistent
 
 ## Configurazioni in base al contesto per modalità di esecuzione specifiche {#runmode-specific-context-aware-config}
 
-[!UICONTROL Form Data Model (FDM)] utilizza [configurazioni in base al contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=it) per supportare diversi parametri dell&#39;origine dati per la connessione con origini dati per diverse modalità di esecuzione di [!DNL Experience Manager].
+[!UICONTROL Form Data Model (FDM)] utilizza [configurazioni in base al contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) per supportare diversi parametri dell&#39;origine dati per la connessione con origini dati per diverse modalità di esecuzione di [!DNL Experience Manager].
 
 Quando [!UICONTROL Form Data Model (FDM)] utilizza le configurazioni cloud per memorizzare i parametri, che quando vengono archiviati e distribuiti tramite il controllo del codice sorgente (archivio GIT di Cloud-Manager) crea la configurazione cloud con gli stessi parametri per tutte le modalità di esecuzione (Sviluppo, Stage e Produzione). Tuttavia, per i casi di utilizzo in cui è necessario disporre di set di dati diversi per ambienti di test e produzione, vengono utilizzati i parametri dell&#39;origine dati (ad esempio, URL dell&#39;origine dati) per diverse modalità di esecuzione di [!DNL Experience Manager].
 
@@ -104,7 +105,7 @@ Per abilitare le configurazioni cloud specifiche della distribuzione in [!UICONT
 1. Crea la configurazione cloud nell’istanza di sviluppo locale. Per i passaggi dettagliati, vedi [Come configurare le origini dati](/help/forms/configure-data-sources.md).
 
 1. Memorizza la configurazione cloud nel file system.
-   1. Crea pacchetto con filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Utilizzare lo stesso `{foldername}` come nel passaggio 1. E sostituisci `fdm` con `azurestorage` per la configurazione di archiviazione Azure.
+   1. Crea pacchetto con filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Utilizzare lo stesso `{foldername}` come nel passaggio 1. E sostituisci `fdm` con `azurestorage` per la configurazione dell&#39;archiviazione Azure.
    1. Creare e scaricare il pacchetto. Per ulteriori dettagli, vedere [azioni pacchetto](/help/implementing/developing/tools/package-manager.md).
 
 1. Integrare la configurazione cloud nel progetto Archetipo [!DNL Experience Manager].
@@ -131,7 +132,7 @@ Quando questo progetto di archetipo viene distribuito tramite pipeline CM, l’o
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia per i dettagli. Vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=it#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia per i dettagli. Vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
 1. Aggiornare le definizioni dell&#39;origine dati utilizzando l&#39;opzione per aggiornare le definizioni dell&#39;origine dati nell&#39;[Editor modello dati modulo](#data-sources) per aggiornare la cache FDM tramite l&#39;interfaccia utente di FDM e ottenere la configurazione più recente.
 

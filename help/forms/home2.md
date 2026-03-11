@@ -8,11 +8,12 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 0%
+source-wordcount: '2329'
+ht-degree: 1%
 
 ---
 
@@ -192,7 +193,7 @@ Monitora l&#39;utilizzo delle API, i volumi di generazione dei documenti e [le t
 Archiviare e gestire in modo sicuro gli invii di moduli e i documenti generati per la conservazione a lungo termine e la conformità.
 
 **Archiviazione documenti**
-Archivia i documenti generati e gli invii di moduli nel sistema Digital Asset Management di AEM o integra con archivi di documenti esterni come [SharePoint](/help/forms/configure-submit-action-sharepoint.md), [OneDrive](/help/forms/configure-submit-action-onedrive.md) o [Archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md).
+Archivia i documenti generati e gli invii di moduli nel sistema Digital Asset Management di AEM o integra con archivi di documenti esterni come [SharePoint](/help/forms/configure-submit-action-sharepoint.md), [OneDrive](/help/forms/configure-submit-action-onedrive.md) o [Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md).
 
 **Conformità e conservazione**
 Implementazione di regole di conservazione dei dati conformi ai requisiti normativi, inclusi GDPR, CCPA e HIPAA. [I processi di archiviazione automatizzati](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) garantiscono la conservazione dei documenti per i periodi richiesti e la loro eliminazione sicura quando necessario.

@@ -3,12 +3,13 @@ title: Funzioni di Accesso anticipato correnti di  [!DNL Adobe Experience Manage
 description: Funzioni di Accesso anticipato correnti di  [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3235'
 ht-degree: 18%
 
 ---

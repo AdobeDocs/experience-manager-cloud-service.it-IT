@@ -4,10 +4,11 @@ description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida d
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '919'
 ht-degree: 14%
 
 ---
@@ -55,10 +56,8 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
 
 1. Configura Cloud Service:
    1. Nell&#39;istanza Autore AEM, vai a ![strumenti-1](assets/tools-1.png) > **[!UICONTROL Servizi cloud]** e fai clic su **[!UICONTROL Turnstile]**.
-
       ![Turnstile nell&#39;interfaccia utente](assets/turnstile-in-ui.png)
    1. Seleziona un Contenitore di configurazione, creato o aggiornato, come descritto nella sezione precedente. Seleziona **[!UICONTROL Crea]**.
-
       ![Turnstile di configurazione](assets/config-hcaptcha.png)
    1. Specificare **[!UICONTROL Tipo widget]** come gestito, non interattivo o invisibile. Per ulteriori informazioni sul tipo di widget, visita [Widget tornstile](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Specificare **[!UICONTROL Titolo]**, **[!UICONTROL Nome]**, **[!UICONTROL Chiave sito]** e **[!UICONTROL Chiave segreta]** per il servizio tornello [ottenuto nel prerequisito](#prerequisite).
@@ -70,7 +69,7 @@ Per integrare AEM Forms con il servizio Turnstile, effettuare le seguenti operaz
    >
    > Gli utenti non devono modificare l’URL di convalida JavaScript lato client e l’URL di convalida lato server, in quanto sono già precompilati per la convalida lato client.
 
-   Una volta configurato, il servizio Captcha Turnstile è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Una volta configurato, il servizio Captcha Turnstile è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Utilizzare Turnstile in un modulo adattivo {#using-turnstile-core-components}
 

@@ -4,10 +4,11 @@ description: Scopri AEM Forms per produrre moduli pronti per l’azienda, creare
 landing-page-description: Scopri come utilizzare i moduli in AEM as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1375'
 ht-degree: 87%
 
 ---

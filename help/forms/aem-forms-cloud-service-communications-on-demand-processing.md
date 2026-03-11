@@ -3,13 +3,14 @@ title: Come si configurano le API sincrone di Forms Communications?
 description: Configurare l’ambiente di sviluppo per le API sincrone di comunicazioni interattive per Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 0c8f6adc-46aa-4e96-b176-86b59322ad45
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2434'
 ht-degree: 1%
 
 ---
-
 
 # Richiama le API di comunicazione di AEM Forms tramite autenticazione server-to-server OAuth
 
@@ -35,7 +36,7 @@ Assicurati di disporre dei diritti di accesso e delle autorizzazioni necessari p
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Per ulteriori informazioni sull&#39;assegnazione di ruoli e sulla concessione dell&#39;accesso agli utenti, vedere l&#39;articolo [Aggiungere utenti e ruoli](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Accesso archivio Git**
 
@@ -261,7 +262,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 

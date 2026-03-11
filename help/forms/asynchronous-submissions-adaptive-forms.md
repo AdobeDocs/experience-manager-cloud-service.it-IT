@@ -4,20 +4,21 @@ description: Scopri come configurare l’invio asincrono per Adaptive Forms. App
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 1%
+source-wordcount: '752'
+ht-degree: 2%
 
 ---
 
-# Configurare l’invio asincrono del Forms adattivo dell’AEM {#asynchronous-submission-of-adaptive-forms}
+# Configurare l’invio asincrono di AEM Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
 
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/asynchronous-submissions-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -115,4 +116,4 @@ Per scrivere regole per gestire eventi di successo e di errore, effettua le segu
 
    ![gestore invio riuscito](assets/form-submission-handler.png)
 
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**.

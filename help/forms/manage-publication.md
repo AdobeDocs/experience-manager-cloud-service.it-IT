@@ -6,10 +6,11 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '951'
 ht-degree: 6%
 
 ---
@@ -53,7 +54,7 @@ Dopo aver pubblicato correttamente il modulo utilizzando l&#39;opzione **Pubblic
    Quando fai clic sul pulsante **[!UICONTROL Annulla pubblicazione]**, viene visualizzata la finestra di dialogo **Annulla pubblicazione risorsa**.
 1. Fai clic su **[!UICONTROL Annulla pubblicazione]** per avviare il processo di annullamento della pubblicazione
 
-   ![Rimuovi &#x200B;](/help/forms/assets/unpublish-asset.png)
+   ![Rimuovi ](/help/forms/assets/unpublish-asset.png)
 
    Dopo aver annullato la pubblicazione del modulo e delle risorse correlate, viene visualizzata la finestra di dialogo **Operazione riuscita**.
 1. Fai clic su **Chiudi**.

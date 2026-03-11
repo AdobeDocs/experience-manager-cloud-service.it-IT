@@ -4,17 +4,18 @@ description: Scopri come integrare un tema Forms adattivo (ad esempio, Canvas) i
 keywords: tema per moduli adattivi, tema del sito, tema di AEM Sites, integrazione del tema dei moduli, pipeline front-end, incorporamento del tema
 feature: Adaptive Forms, Core Components
 role: Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
-source-git-commit: e1593d26beea79ffd7d8c5075b99d84c6a98c3b0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # Incorporare un tema Forms adattivo in un tema AEM Sites
 
-Puoi incorporare un tema Forms adattivo (ad esempio [tema AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas)) nel tema AEM Sites. In questo modo, un singolo tema guida sia le pagine del sito che qualsiasi Forms adattivo incorporato in tali pagine, con una build e una distribuzione tramite la [pipeline front-end di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=it).
+Puoi incorporare un tema Forms adattivo (ad esempio [tema AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas)) nel tema AEM Sites. In questo modo, un singolo tema guida sia le pagine del sito che qualsiasi Forms adattivo incorporato in tali pagine, con una build e una distribuzione tramite la [pipeline front-end di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
 
 Questo articolo è destinato agli sviluppatori che mantengono o personalizzano il tema AEM Sites standard (o personalizzato) e desiderano includere lo stile Moduli adattivi senza gestire una distribuzione separata del tema Forms.
 
@@ -22,7 +23,7 @@ Questo articolo è destinato agli sviluppatori che mantengono o personalizzano i
 
 Prima di iniziare, assicurati di disporre di:
 
-* **AEM as a Cloud Service** con [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=it) configurata per il tema del sito.
+* **AEM as a Cloud Service** con [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) configurata per il tema del sito.
 * **Origini tema sito**, ad esempio [tema modello sito standard](https://github.com/adobe/aem-site-template-standard) (l&#39;archivio che contiene `theme/` con `src/theme.scss`, `src/components/` e così via).
 * **Origini tema Forms** - il [tema AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas) (o un altro tema Adaptive Forms compatibile) è stato clonato o scaricato localmente.
 * **Node.js e npm**: per generare il tema del sito, vedere il file README del tema per le versioni supportate.
@@ -209,7 +210,7 @@ Questa è l&#39;unica modifica necessaria nella struttura del tema del sito esis
 
    ![esegui compilazione](/help/forms/assets/theme-mpm-run-build.png)
 
-2. Distribuisci tramite la [pipeline front-end esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=it). Dopo la distribuzione, lo stesso CSS tema verrà applicato sia alle pagine del sito che al Forms adattivo incorporato.
+2. Distribuisci tramite la [pipeline front-end esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html). Dopo la distribuzione, lo stesso CSS tema verrà applicato sia alle pagine del sito che al Forms adattivo incorporato.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -224,4 +225,4 @@ Questa è l&#39;unica modifica necessaria nella struttura del tema del sito esis
 ## Consulta anche {#see-also}
 
 * [Utilizzare i temi per assegnare uno stile al Forms adattivo basato su Componenti core](/help/forms/using-themes-in-core-components.md)
-* [Sviluppa con pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=it)
+* [Sviluppa con pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)

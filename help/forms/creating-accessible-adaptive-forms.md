@@ -4,11 +4,12 @@ description: AEM Forms fornisce gli strumenti necessari per creare Forms adattiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -44,7 +45,7 @@ ANDI funziona con tutti i principali browser Internet. Per istruzioni dettagliat
 
 ### Scarica e installa il tema Ultramarine-Accessible
 
-Il tema Ultramarine-Accessible è un tema di riferimento. Illustra come correggere il contrasto dei colori e altri problemi correlati all’accessibilità in un modulo adattivo. L’Adobe consiglia di creare un tema personalizzato per l’ambiente di produzione in base agli stili approvati dall’organizzazione. Per caricare il tema nell’istanza AEM, effettua le seguenti operazioni:
+Il tema Ultramarine-Accessible è un tema di riferimento. Illustra come correggere il contrasto dei colori e altri problemi correlati all’accessibilità in un modulo adattivo. Adobe consiglia di creare un tema personalizzato per l’ambiente di produzione in base agli stili approvati dall’organizzazione. Per caricare il tema nell’istanza AEM, effettua le seguenti operazioni:
 
 1. Scarica il pacchetto del tema.
 1. Passa a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigazione]** ![Navigazione](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** nell&#39;istanza AEM.
@@ -54,7 +55,7 @@ Il tema Ultramarine-Accessible è un tema di riferimento. Illustra come corregge
 
 Per rendere accessibile un modulo adattivo, è necessario concentrarsi su quattro aspetti chiave: navigazione da tastiera, contrasto dei colori, testo alternativo significativo per le immagini ed etichette appropriate per i controlli dei moduli. Per rendere accessibile il Forms adattivo esistente, effettua le seguenti operazioni:
 
-### 1. Applicare un tema accessibile ed eseguire correzioni aggiuntive
+### &#x200B;1. Applicare un tema accessibile ed eseguire correzioni aggiuntive
 
 Applica al modulo adattivo esistente il tema Accessibile agli ultrasuoni. Per applicare il tema:
 
@@ -93,7 +94,7 @@ Dopo aver applicato un tema accessibile, esegui le correzioni aggiuntive elencat
 
 1. Rimuovi gli eventuali campi di firma scarabocchio nel modulo adattivo. Configurare il modulo adattivo per utilizzare [!DNL Adobe Sign] per un&#39;esperienza di firma digitale fluida.
 
-### 2. Fornire etichette appropriate per i controlli dei moduli {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Fornire etichette appropriate per i controlli dei moduli {#provide-proper-labels-for-form-controls}
 
 L’etichetta o il titolo di un componente identifica ciò che il componente modulo rappresenta. Ad esempio, il testo &quot;Nome&quot; indica agli utenti che devono immettere il proprio nome in un campo di testo. Per essere accessibile agli assistenti vocali, l’etichetta è associata a livello di programmazione a un componente modulo. In alternativa, il controllo modulo viene configurato con informazioni aggiuntive sull&#39;accessibilità.
 
@@ -108,7 +109,7 @@ Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 
 ![Opzioni di accessibilità nei componenti del modulo](assets/accessibility-options.png)
 
-**Testo personalizzato** Gli autori dei moduli forniscono il contenuto nel campo di testo personalizzato dell&#39;opzione di accesso facilitato. La tecnologia per l’accessibilità, come gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valuta la possibilità di creare un testo di Reader con schermo personalizzato solo quando non è possibile utilizzare il titolo o una breve descrizione.
+**Testo personalizzato** Gli autori dei moduli forniscono il contenuto nel campo di testo personalizzato dell&#39;opzione di accesso facilitato. La tecnologia per l’accessibilità, come gli assistenti vocali, utilizza questo testo personalizzato. L’utilizzo dell’impostazione Titolo è l’opzione migliore nella maggior parte degli scenari. Valuta la creazione di un testo Reader per schermo personalizzato solo quando non è possibile utilizzare il titolo o una breve descrizione.
 
 **Breve descrizione** Per la maggior parte dei componenti, la breve descrizione viene visualizzata in fase di esecuzione quando l&#39;utente passa il puntatore sul componente. È possibile impostare questa opzione nel campo breve descrizione in opzione contenuto della Guida.
 
@@ -123,7 +124,7 @@ Per utilizzare l&#39;opzione Accessibilità, effettuare le seguenti operazioni:
 >* Il pulsante di opzione e la casella di controllo possono avere solo due opzioni per l&#39;accessibilità, ovvero Testo personalizzato e Titolo.
 >* Per l’Adaptive Forms basato su XFA, l’opzione di accessibilità viene ereditata dalle opzioni di accessibilità impostate in XDP. Le descrizioni comandi da XDP sono mappate a Descrizione breve e la didascalia a Titolo. Le altre opzioni funzionano nello stato corrente.
 
-### 3. Fornire equivalenti testuali per le immagini {#provide-text-equivalents-for-images}
+### &#x200B;3. Fornire equivalenti testuali per le immagini {#provide-text-equivalents-for-images}
 
 Le immagini possono aiutare alcuni utenti a comprendere meglio la situazione. Tuttavia, per gli utenti che utilizzano utilità per la lettura dello schermo, le immagini riducono l’accessibilità del modulo. Se scegli di utilizzare le immagini, fornisci descrizioni testuali per tutte le immagini.
 
@@ -133,7 +134,7 @@ Selezionare un componente immagine e selezionare ![cmppr](assets/cmppr.png). Nel
 
 ![Testo alternativo per un&#39;immagine](assets/image-properties.png)
 
-### 4. Fornire un contrasto del colore sufficiente {#provide-sufficient-color-contrast}
+### &#x200B;4. Fornire un contrasto del colore sufficiente {#provide-sufficient-color-contrast}
 
 Per la progettazione dell’accessibilità è necessario considerare ulteriori linee guida sull’utilizzo dei colori. Gli autori di moduli possono utilizzare i colori per migliorare l&#39;aspetto dei moduli evidenziandone i diversi componenti. Tuttavia, un uso improprio del colore può rendere una forma difficile o impossibile da leggere da persone con abilità diverse.
 
@@ -143,7 +144,7 @@ Si consiglia di utilizzare i colori predefiniti per il carattere e lo sfondo, ov
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
-### 5. Assicurarsi che i controlli del modulo siano accessibili da tastiera {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Assicurarsi che i controlli del modulo siano accessibili da tastiera {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un modulo accessibile può essere compilato completamente utilizzando solo la tastiera o un dispositivo di input equivalente. Gli utenti con mobilità ridotta o problemi di vista potrebbero non avere altra scelta se non quella di utilizzare la tastiera e molti utenti che possono utilizzare il mouse preferiscono l&#39;input da tastiera. Consentendo l&#39;utilizzo di vari metodi di input, non solo si creano moduli accessibili, ma si creano anche moduli più adatti alle preferenze di tutti gli utenti.
 
@@ -151,7 +152,7 @@ In [!DNL AEM Forms] sono disponibili le seguenti scelte rapide da tastiera.
 
 | Azione | Scelta rapida da tastiera |
 |---|---|
-| Spostare il cursore in avanti in un modulo | Linguetta |
+| Spostare il cursore in avanti in un modulo | Scheda |
 | Spostare il cursore all&#39;indietro in un modulo | Maiusc+Tab |
 | Passa al pannello successivo | Alt+Freccia destra |
 | Passa al pannello precedente | Alt+Freccia sinistra |
@@ -166,7 +167,7 @@ Per il componente Selezione data in Adaptive Forms sono disponibili i seguenti t
 |---|---|
 | <ul><li>Visualizzare le opzioni del componente Selezione data quando lo stato attivo della scheda evidenzia l’icona del calendario</li><li>Esegui l’evento clic quando lo stato attivo della scheda evidenzia un’opzione</li> | Spazio o Invio |
 | Nascondi le opzioni del componente Selettore data | Esc |
-| <ul><li>Sposta il cursore in avanti tra le opzioni disponibili nel componente Selettore data.</li><li>Imposta lo stato attivo della scheda sull’icona del calendario quando il campo di immissione data è attivo</li> | Linguetta |
+| <ul><li>Sposta il cursore in avanti tra le opzioni disponibili nel componente Selettore data.</li><li>Imposta lo stato attivo della scheda sull’icona del calendario quando il campo di immissione data è attivo</li> | Scheda |
 | Sposta il cursore all’indietro tra le opzioni disponibili nel componente Selettore data | Maiusc+Tab |
 | <ul><li>Visualizzare le opzioni del componente Selezione data quando lo stato attivo della scheda evidenzia il campo di immissione della data</li><li>Sposta il cursore verso il basso nel calendario disponibile nel componente Selettore data</li> | Freccia giù |
 | Sposta il cursore verso l’alto nel calendario disponibile nel componente Selettore data | Freccia Su |

@@ -3,11 +3,12 @@ title: Come si configura Salesforce in modelli di dati modulo preconfigurati per
 description: Scopri come integrare Salesforce con Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 1%
 
 ---
 
@@ -68,5 +69,5 @@ Dopo aver configurato il servizio [[!DNL Salesforce] Cloud Config](#configure-sa
 >[!MORELIKETHIS]
 >
 >* [Configura origini dati per AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurare l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configura l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
 >  [Aggiungi Forms Portal a una pagina AEM Sites](/help/forms/configure-forms-portal.md)

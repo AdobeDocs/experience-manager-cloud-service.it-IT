@@ -3,10 +3,11 @@ title: Come salvare il modulo adattivo basato sui componenti core come bozza e u
 description: Scopri come salvare come bozza un modulo adattivo basato su componenti core. Scopri anche come utilizzare il componente Bozze e invii per elencare le bozze e gli invii per gli utenti connessi?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 # Salvare i moduli come bozze e elencarli nella pagina Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tornare in un secondo momento. AEM offre un&#39;opzione `save-as-draft` che consente all&#39;utente di salvare il modulo come bozza per il completamento futuro. Per facilitare questa fase, AEM fornisce il componente predefinito **Bozze e invii** di Forms Portal, che consente di visualizzare le bozze e gli invii nelle pagine di AEM Sites. Il componente elenca i moduli salvati come bozze da completare in un secondo momento, nonché quelli inviati. Solo gli utenti connessi possono modificare le bozze o visualizzare i moduli inviati. Tuttavia, se un utente anonimo passa all&#39;elenco dei moduli utilizzando il componente **Ricerca e elenco** e salva un modulo come bozza, tale bozza non viene elencata dal componente **Bozze e invii**. Per visualizzare le bozze e gli invii, è necessario che gli utenti abbiano effettuato l&#39;accesso al momento dell&#39;invio del modulo.
 
@@ -24,17 +25,17 @@ Si consideri un utente che inizia a compilare un modulo ma deve sospendere e tor
 
 * [Configura il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal per bozze e invii](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-### Configurare il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal per bozze e invii
+### Configurare il connettore di archiviazione e archiviazione unificata di Azure per il componente Forms Portal Bozze e invii
 
 Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazione per il salvataggio e l&#39;elenco delle bozze sulla pagina AEM Sites. Il connettore di archiviazione unificata offre un framework per collegare AEM con l’archiviazione esterna. Per salvare il modulo come bozza, verificare di disporre di un account di archiviazione Azure e di una chiave di accesso per autorizzare l&#39;accesso all&#39;account di archiviazione [!DNL Azure]. Una volta che disponi dell’account di archiviazione Azure e della chiave di accesso, effettua le seguenti operazioni per creare una configurazione di archiviazione Azure:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Servizi cloud]** > **[!UICONTROL Archiviazione Azure]**.
 
-   ![Selezione scheda di archiviazione Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Selezione scheda di memoria Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Selezionare una cartella di configurazione per creare la configurazione e selezionare **[!UICONTROL Crea]**.
 
-   ![Seleziona cartella di configurazione archiviazione di Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![Seleziona cartella di configurazione archiviazione Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 1. Specificare il nome dell&#39;account di archiviazione [!DNL Azure] nei campi **[!UICONTROL Account di archiviazione Azure]** e **[!UICONTROL Chiave di accesso Azure]**.
@@ -47,15 +48,15 @@ Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazio
 
    >[!NOTE]
    >
-   > È possibile recuperare l&#39;**[!UICONTROL account di archiviazione Azure]** e la **[!UICONTROL chiave di accesso Azure]** dal [portale Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   > Puoi recuperare l&#39;**[!UICONTROL account di archiviazione Azure]** e la **[!UICONTROL chiave di accesso Azure]** dal [portale Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
-   Dopo aver creato la configurazione di archiviazione di Azure, configurare il connettore di archiviazione unificata per Forms Portal, attenendosi alla procedura seguente:
+   Dopo aver creato correttamente la configurazione di archiviazione Azure, configura il connettore di archiviazione unificata per Forms Portal seguendo la procedura riportata di seguito:
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
    ![Archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-1. Nella sezione **[!UICONTROL Forms Portal]**, selezionare **[!UICONTROL Azure]** dall&#39;elenco a discesa **[!UICONTROL Archiviazione]**.
+1. Nella sezione **[!UICONTROL Forms Portal]**, seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa **[!UICONTROL Storage]**.
 1. Specificare il percorso di configurazione per la configurazione di archiviazione Azure nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
 
    ![Impostazione archiviazione connettore unificato](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
@@ -66,7 +67,7 @@ Il componente **Bozze e invii** richiede una configurazione dell&#39;archiviazio
 >
 > Se devi configurare un&#39;opzione di archiviazione diversa da Azure, scrivi a <aem-forms-ea@adobe.com> dal tuo indirizzo e-mail ufficiale con i requisiti dettagliati.
 
-Dopo aver configurato correttamente il connettore di archiviazione e archiviazione unificata di Azure per l&#39;archiviazione delle bozze e dei moduli inviati, aggiungere il componente **Bozze e invii** nella pagina di AEM Sites.
+Dopo aver configurato correttamente Azure Storage e Unified Storage Connector per l&#39;archiviazione delle bozze e dei moduli inviati, aggiungi il componente **Bozze e invii** nella pagina di AEM Sites.
 
 ## Come aggiungere il componente Bozze e invii a una pagina di AEM Sites?
 

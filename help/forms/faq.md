@@ -5,11 +5,12 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
-workflow-type: ht
-source-wordcount: '975'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '981'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ Sì, è possibile creare un modulo adattivo basato su XFA sull’istanza di Clou
 * **È possibile migrare il contenuto da ambienti on-premise o da [!DNL Adobe-Managed Services] all’ambiente di [!DNL Forms] as a Cloud Service?**
 Sì, è possibile migrare il codice personalizzato, il contenuto e le risorse da ambienti on-premise o da [!DNL Adobe-Managed Services] all’ambiente di [!DNL Forms] as a Cloud Service. Per istruzioni dettagliate, consulta [Migrare a Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=it#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **Dove è possibile trovare la documentazione di riferimento API [!DNL Java™] per AEM [!DNL Forms] as a Cloud Service?**
 È possibile scaricare la documentazione di riferimento API Java™ da [!DNL Maven Central Repository]. Per scaricarla:
@@ -58,11 +59,11 @@ Sì, è possibile creare modelli adattivi per produrre dati conformi allo schema
 Custom parameters are planned for an upcoming release. -->
 
 * **È possibile memorizzare nella cache il contenuto protetto?**
-Per impostazione predefinita, la funzione di memorizzazione in cache del contenuto protetto è disabilitata. Per attivare la funzione, è possibile eseguire le istruzioni fornite in [Memorizzazione in cache del contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
+Per impostazione predefinita, la funzione di memorizzazione in cache del contenuto protetto è disabilitata. Per abilitare la funzione, è possibile eseguire le istruzioni fornite in [Memorizzazione in cache del contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
 
 * **Il modulo adattivo localizzato non è il rendering di una versione localizzata? Quale potrebbe essere la causa e come risolvere il problema?**
 
-  La convenzione URL dei moduli adattivi localizzati consente ora di specificare le impostazioni internazionali della lingua nell’URL. La nuova convenzione URL consente di memorizzare i moduli localizzati nella cache di Dispatcher o della rete CDN. Nell’ambiente di Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe consiglia di utilizzare la memorizzare nella cache di Dispatcher o della rete CDN. Questo consente di migliorare la velocità di rendering dei moduli precompilati.
+  La convenzione per gli URL dei moduli adattivi localizzati consente ora di specificare la lingua nell’URL stesso. La nuova convenzione URL consente di memorizzare i moduli localizzati nella cache di Dispatcher o della rete CDN. Nell’ambiente Cloud Service, utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo anziché `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe consiglia di utilizzare la memorizzare nella cache di Dispatcher o della rete CDN. Questo consente di migliorare la velocità di rendering dei moduli precompilati.
 
 * **Se un modulo adattivo è stato aggiornato, la versione aggiornata non è disponibile per l’uso da parte da parte della clientela?**
 Per impostazione predefinita, la rete CDN aggiorna la cache ogni 5 minuti. Attendi 5 minuti e verifica la presenza della versione aggiornata.
@@ -76,13 +77,13 @@ No, il passaggio di verifica non è disponibile per [!DNL Forms] as a Cloud Serv
 * **È possibile aggiungere grafici a un modulo adattivo?**
 Sì, puoi aggiungere grafici ai moduli adattivi. I moduli adattivi forniscono un componente grafico. È possibile utilizzarlo per aggiungere grafici a un modulo adattivo.
 
-* **È possibile collegare un modello di dati modulo a un modello di database relazionale?**&#x200B;È possibile collegare un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e al profilo utente di Experience Manager come origini dati.<!--Support to connect a Form Data Model with a relational database is not available.-->
+* **È possibile collegare un modello dati modulo a un modello di database relazionale?**&#x200B;È possibile collegare un modello dati modulo a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e al profilo utente di Experience Manager come origini dati.<!--Support to connect a Form Data Model with a relational database is not available.-->
 
-* **È possibile utilizzare certificati personalizzati con il modello dati del modulo (FDM) per l’autenticazione?** Il modello dati del modulo (FDM) non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
+* **È possibile utilizzare certificati personalizzati con il modello dati modulo (FDM) per l’autenticazione?** Il modello dati modulo (FDM) non fornisce un metodo per utilizzare certificati personalizzati per l’autenticazione. Pertanto, i certificati personalizzati come x509 e SSL bidirezionale non sono supportati.
 
 * **È possibile utilizzare l’azione di invio Forms Portal per i moduli adattivi?**
 
-  È possibile modificare i moduli adattivi esistenti per utilizzare le azioni di invio [Invia a endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando un modello dati del modulo (FDM)](configuring-submit-actions.md#submit-using-form-data-model) e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Forms Portal e l’azione di invio da Forms Portal non sono ancora disponibili. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
+  È possibile modificare i moduli adattivi esistenti per utilizzare le azioni di invio [Invia a endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Invia e-mail](configuring-submit-actions.md#send-email), [Invia utilizzando un modello dati modulo (FDM)](configuring-submit-actions.md#submit-using-form-data-model) e [Richiama un flusso di lavoro AEM](configuring-submit-actions.md#invoke-an-aem-workflow). Forms Portal e l’azione di invio da Forms Portal non sono ancora disponibili. Per informazioni sulla disponibilità delle funzioni, consulta le note sulla versione mensili.
 
 * **È possibile utilizzare l’app [!DNL AEM Forms] con [!DNL AEM Forms] as a Cloud Service?**
 
@@ -92,17 +93,17 @@ Sì, puoi aggiungere grafici ai moduli adattivi. I moduli adattivi forniscono un
 Forms Portal, l’app [!DNL AEM Forms], l’integrazione con Adobe Analytics e l’integrazione con Adobe Target non fanno parte della versione iniziale con disponibilità generale. Per informazioni sulle nuove funzioni, consulta le note sulla versione mensili.
 
 * **Ho progettato uno [Schema JSON per creare un modulo adattivo](adaptive-form-json-schema-form-model.md). Lo schema JSON definisce gli eventi per alcuni componenti di moduli adattivi. AEM Forms as a Cloud Service supporta tali eventi?**
-Crea il modulo adattivo basato sullo schema JSON nell’ambiente Forms Experience Manager 6.5 e utilizza l’[utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per migrare tali moduli adattivi ad AEM Forms as a Cloud Service. L’utilità converte tali eventi in librerie client così sarà possibile continuare a utilizzare i moduli adattivi con gli eventi in un ambiente di Cloud Service.
+Crea il modulo adattivo basato sullo schema JSON nell’ambiente Forms Experience Manager 6.5 e utilizza l’[utilità di migrazione](migrate-to-forms-as-a-cloud-service.md) per migrare tali moduli adattivi ad AEM Forms as a Cloud Service. L’utilità converte tali eventi in librerie client così sarà possibile continuare a utilizzare i moduli adattivi con gli eventi in un ambiente Cloud Service.
 
 <!-- 
 
 * **Is there any AEM Forms as a Cloud Service connector for Microsoft Power Automate?**
 
-  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=it) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
+  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it&#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

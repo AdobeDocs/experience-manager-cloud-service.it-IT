@@ -3,10 +3,11 @@ title: Creazione di PDF in blocco semplice - Padroneggiare l’arte con l’elab
 description: Come si creano comunicazioni personalizzate e orientate al brand?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -40,15 +41,15 @@ Un&#39;operazione batch è un processo di generazione di più documenti di tipo 
 
 ### Componenti di un&#39;operazione batch {#components-of-a-batch-operations}
 
-**Configurazione cloud**: la configurazione di Experience Manager Cloud consente di connettere un&#39;istanza di Experience Manager all&#39;archiviazione di Microsoft Azure di proprietà del cliente. Consente di specificare le credenziali per l&#39;account Microsoft Azure di proprietà del cliente per la connessione.
+**Configurazione cloud**: la configurazione di Experience Manager Cloud ti consente di collegare un&#39;istanza di Experience Manager all&#39;archiviazione Microsoft Azure di proprietà del cliente. Ti consente di specificare le credenziali per l’account Microsoft Azure di proprietà del cliente per connettersi ad esso.
 
-**Configurazione archivio dati batch (USC)**: la configurazione dei dati batch consente di configurare un&#39;istanza specifica dell&#39;archivio BLOB per le API batch. Consente di specificare i percorsi di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
+**Configurazione archivio dati batch (USC)**: la configurazione dei dati batch consente di configurare un&#39;istanza specifica dell&#39;archivio BLOB per le API batch. Ti consente di specificare le posizioni di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
 
 **API batch**: consente di creare configurazioni batch ed eseguire esecuzioni batch basate su queste configurazioni per unire un modello PDF o XDP con i dati e generare output nei formati PDF, PS, PCL, DPL, IPL e ZPL. Le comunicazioni forniscono API batch per la gestione della configurazione e l’esecuzione in batch.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**Archiviazione**: le API di comunicazione utilizzano l&#39;archiviazione cloud di Microsoft Azure di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. È possibile configurare l’archiviazione di Microsoft Azure nella configurazione di Experience Manager Cloud Service.
+**Archiviazione**: le API di comunicazione utilizzano l&#39;archiviazione Microsoft Azure Cloud di proprietà del cliente per recuperare i record dei clienti e archiviare i documenti generati. Puoi configurare Microsoft Azure Storage in Experience Manager Cloud Service Configuration.
 
 **App**: applicazione personalizzata per l&#39;utilizzo delle API Batch per generare e utilizzare documenti.
 
@@ -73,29 +74,29 @@ Per utilizzare l’API Batch, è necessario quanto segue:
 
 Prima di utilizzare un&#39;operazione batch:
 
-* Carica dati cliente (file XML) nell’archiviazione BLOB di Microsoft Azure
+* Caricare i dati del cliente (file XML) nell’archiviazione BLOB di Microsoft Azure
 * Creare una configurazione cloud
 * Crea configurazione archivio dati batch
 * Caricare modelli e altre risorse nell’istanza di Experience Manager Forms Cloud Service
 
-### Carica dati cliente (file XML) nell’archiviazione di Azure
+### Caricare i dati del cliente (file XML) nell’archiviazione Azure
 
-Nell&#39;archiviazione di Microsoft Azure creare [contenitori](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [caricare i dati del cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) nelle [cartelle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) all&#39;interno dei contenitori.
+Nell&#39;archiviazione Microsoft Azure, crea [contenitori](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [carica dati cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) nelle [cartelle](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) all&#39;interno dei contenitori.
 
 >[!NOTE]
 >
->È possibile configurare l&#39;archiviazione di Microsoft Azure per pulire automaticamente la cartella di input o spostare il contenuto della cartella di output in una posizione diversa a intervalli pianificati. Tuttavia, assicurati che le cartelle non vengano pulite quando è ancora in esecuzione un’operazione batch che fa riferimento alle cartelle.
+>Puoi configurare l’archiviazione di Microsoft Azure in modo da pulire automaticamente la cartella di input o spostare il contenuto della cartella di output in una posizione diversa a intervalli pianificati. Tuttavia, assicurati che le cartelle non vengano pulite quando è ancora in esecuzione un’operazione batch che fa riferimento alle cartelle.
 
 ### Creare una configurazione cloud {#create-a-cloud-configuration}
 
-La configurazione Cloud connette l’istanza di Experience Manager all’archiviazione di Microsoft Azure. Per creare una configurazione Cloud:
+La configurazione Cloud collega l’istanza Experience Manager all’archiviazione Microsoft Azure. Per creare una configurazione Cloud:
 
 1. Vai a Strumenti > Cloud Services > Archiviazione Azure
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Puoi utilizzare la cartella Globale o crearne una.
-1. Specifica il nome della configurazione e le credenziali per la connessione al servizio. È possibile [recuperare queste credenziali dal portale di archiviazione di Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
+1. Specifica il nome della configurazione e le credenziali per la connessione al servizio. Puoi [recuperare queste credenziali dal tuo portale di archiviazione Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Fai clic su Crea.
 
-L&#39;istanza di Experience Manager è ora pronta per connettersi all&#39;archiviazione di Microsoft Azure e utilizzarla per archiviare e leggere il contenuto, quando necessario.
+L’istanza di Experience Manager è ora pronta per connettersi allo storage Microsoft Azure e utilizzarla per archiviare e leggere i contenuti, quando necessario.
 
 ### Crea configurazione archivio dati batch {#create-batch-data-store-configuration}
 
@@ -105,13 +106,13 @@ Per creare la configurazione:
 
 1. Vai a Strumenti > Forms > Connettore di archiviazione unificata.
 1. Apri una cartella per ospitare la configurazione e fai clic su Crea. Puoi utilizzare la cartella Globale o crearne una.
-1. Specifica Titolo e Nome della configurazione. In Archiviazione selezionare Archiviazione Microsoft Azure.
-1. In Percorso configurazione archiviazione, sfoglia e seleziona la configurazione cloud che contiene le credenziali dell’account di archiviazione Azure di proprietà del cliente.
+1. Specifica Titolo e Nome della configurazione. In Archiviazione, seleziona Microsoft Azure Storage.
+1. In Percorso configurazione archiviazione, sfoglia e seleziona Configurazione cloud che contiene le credenziali dell’account di archiviazione Azure di proprietà del cliente.
 1. Nella cartella Source, specifica il nome del contenitore di archiviazione Azure e della cartella contenente i record.
 1. Nella cartella di destinazione, specifica il percorso del contenitore e della cartella di archiviazione Azure in cui archiviare i documenti generati.
 1. Fai clic su Crea.
 
-L&#39;istanza di Experience Manager è ora connessa all&#39;archiviazione di Microsoft Azure e configurata per recuperare e inviare dati a posizioni specifiche nell&#39;archiviazione di Microsoft Azure.
+L’istanza di Experience Manager è ora connessa allo storage Microsoft Azure e configurata per recuperare e inviare dati a posizioni specifiche sullo storage Microsoft Azure.
 
 ### Carica modelli e altre risorse nella tua istanza di Experience Manager {#upload-templates-and-other-assets-to-your-AEM-instance}
 
@@ -148,7 +149,7 @@ Per eseguire un batch, utilizzare `POST /config /[configName]/execution`. Ad ese
 
 >[!NOTE]
 >
->Mentre il batch è in esecuzione, non apportare modifiche alle cartelle di origine e di destinazione corrispondenti, alla configurazione dell&#39;origine dati e alla configurazione di Microsoft Azure Cloud.
+>Durante l’esecuzione del batch, non apportare modifiche alle cartelle di origine e di destinazione corrispondenti, alla configurazione dell’origine dati e alla configurazione di Microsoft Azure Cloud.
 
 ### Controllare lo stato di un batch {#status-of-a-batch}
 

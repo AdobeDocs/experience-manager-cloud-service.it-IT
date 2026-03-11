@@ -3,10 +3,11 @@ title: Come si configura il connettore di archiviazione unificata (USC) per AEM 
 description: Scopri come gestire il connettore di archiviazione unificata (USC) per AEM Forms. Utilizza il connettore di archiviazione unificata (USC) per collegare AEM Forms alle archiviazioni dati esterne.
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ ht-degree: 0%
 
 È possibile utilizzare il connettore di archiviazione unificata (USC) per collegare AEM Forms a archivi di dati esterni.
 
-Ad esempio, puoi compilare i valori dei campi in un modulo adattivo e inviarlo a un flusso di lavoro AEM. Puoi configurare ulteriormente i flussi di lavoro di AEM per archiviare i dati in un archivio esterno, ad esempio il server di archiviazione di Microsoft Azure. Utilizza il connettore di archiviazione unificata (USC) per creare una connessione tra i flussi di lavoro di AEM e l’archiviazione esterna.
+Ad esempio, puoi compilare i valori dei campi in un modulo adattivo e inviarlo a un flusso di lavoro AEM. Puoi configurare ulteriormente i flussi di lavoro di AEM per memorizzare i dati in un’archiviazione esterna, ad esempio il server di archiviazione Microsoft Azure. Utilizza il connettore di archiviazione unificata (USC) per creare una connessione tra i flussi di lavoro di AEM e l’archiviazione esterna.
 
-## Collegare i flussi di lavoro di AEM a un server di archiviazione Microsoft Azure {#connect-workflows-with-azure}
+## Collegare i flussi di lavoro di AEM a un server di storage Microsoft Azure {#connect-workflows-with-azure}
 
-Crea una configurazione di archiviazione Azure e fai riferimento a tale configurazione utilizzando il connettore di archiviazione unificata (USC). Puoi quindi configurare i modelli di flusso di lavoro di AEM per esternalizzare l’archiviazione dati in modo da collegarli a un server di archiviazione Azure.
+Crea una configurazione di archiviazione Azure e fai riferimento a tale configurazione utilizzando Unified Storage Connector (USC). Puoi quindi configurare i modelli di flusso di lavoro di AEM in modo da esternalizzare l’archiviazione dati per collegarli a un server di archiviazione Azure.
 
 ### Crea configurazione archiviazione [!DNL Azure] {#create-azure-storage-configuration}
 
@@ -39,8 +40,8 @@ Per configurare il connettore di archiviazione unificata (USC) per i flussi di l
 
 1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Connettore di archiviazione unificata]**.
 
-1. Nella sezione **[!UICONTROL Flusso di lavoro]**, seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa Archiviazione.
-1. Specificare il [percorso di configurazione per la configurazione di archiviazione Azure](#create-azure-storage-configuration) nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
+1. Nella sezione **[!UICONTROL Workflow]**, seleziona **[!UICONTROL Azure]** dall&#39;elenco a discesa Archiviazione.
+1. Specificare il percorso di configurazione [per la configurazione di archiviazione di Azure](#create-azure-storage-configuration) nel campo **[!UICONTROL Percorso configurazione di archiviazione]**.
 1. Seleziona **[!UICONTROL Pubblica]**, quindi seleziona **[!UICONTROL Salva]** per salvare la configurazione.
 
 ### Configurare un modello di flusso di lavoro AEM per l’archiviazione dei dati esterni {#configure-workflow-external-data-storage}
@@ -59,7 +60,7 @@ Per configurare un modello di flusso di lavoro AEM per un’archiviazione dati e
 
 ### Linee guida per i flussi di lavoro di AEM per l’archiviazione di dati esterni {#guidelines-workflows-external-data-storage}
 
-Di seguito sono riportate le linee guida per l’utilizzo dei flussi di lavoro di AEM e l’archiviazione dei dati in archivi di dati esterni, come il server di archiviazione di Microsoft Azure:
+Di seguito sono riportate le linee guida per l’utilizzo dei flussi di lavoro di AEM e l’archiviazione di dati in archivi di dati esterni, come Microsoft Azure Storage Server:
 
 * Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. Le opzioni **[!UICONTROL Relative al payload]** e **[!UICONTROL Disponibili in un percorso assoluto]** non vengono visualizzate automaticamente dopo aver [configurato un modello di flusso di lavoro AEM per l&#39;archiviazione dati esterna](#configure-workflow-external-data-storage).
 
@@ -72,6 +73,6 @@ Di seguito sono riportate le linee guida per l’utilizzo dei flussi di lavoro d
 >[!MORELIKETHIS]
 >
 >* [Configura origini dati per AEM Forms](/help/forms/configure-data-sources.md)
->* [Configurare l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Configura l&#39;archiviazione Azure per AEM Forms](/help/forms/configure-azure-storage.md)
 >* [Integrare Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
 >  [Aggiungi Forms Portal a una pagina AEM Sites](/help/forms/configure-forms-portal.md)

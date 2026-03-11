@@ -3,12 +3,13 @@ title: Come si inviano i dati a un archivio SharePoint all’invio di un modulo 
 description: Scopri come inviare dati dal modulo adattivo a un archivio SharePoint, ad esempio un elenco SharePoint o una raccolta documenti, quando invii il modulo.
 keywords: Come connettere l'elenco di SharePoint per un modulo adattivo?, Come connettere la raccolta documenti di SharePoint per un modulo adattivo, Inviare a SharePoint, Creare una configurazione della raccolta documenti di SharePoint, Utilizzare l'azione Invia a SharePoint in un modulo adattivo, Connettere un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 3%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 

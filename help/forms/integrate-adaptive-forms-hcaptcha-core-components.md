@@ -4,11 +4,12 @@ description: Migliora la sicurezza dei moduli con il servizio hCaptcha&reg; senz
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; servizio, Forms adattivo, CAPTCHA challenge, prevenzione bot, Componenti core, sicurezza invio modulo, prevenzione posta indesiderata modulo
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '967'
 ht-degree: 26%
 
 ---
@@ -68,7 +69,7 @@ Per integrare AEM Forms con il servizio hCaptcha®, effettua le seguenti operazi
    >[!NOTE]
    > Gli utenti non devono modificare [URL di convalida JavaScript lato client](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) e [URL di convalida lato server](https://docs.hcaptcha.com/#verify-the-user-response-server-side) in quanto sono già precompilati per la convalida hCaptcha®.
 
-   Una volta configurato, il servizio hCAPTCHA è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Una volta configurato, il servizio hCAPTCHA è disponibile per l&#39;utilizzo in un [modulo adattivo basato su componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Utilizzare hCaptcha® in un componente core di Forms adattivo {#using-hCaptcha&reg;-core-components}
 

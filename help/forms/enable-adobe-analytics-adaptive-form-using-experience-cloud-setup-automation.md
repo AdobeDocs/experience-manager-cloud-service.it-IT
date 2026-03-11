@@ -4,10 +4,11 @@ description: Experience Cloud Setup Automation consente di collegare Adobe Analy
 keywords: Abilitare Adobe Analytics per un modulo adattivo utilizzando Experience Cloud Setup Automation, Abilitare Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, integrazione Forms Analytics, Forms e Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1602'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 2%
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Questo articolo |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 Experience Cloud Setup Automation consente di collegare Adobe Analytics ad Adaptive Forms, facilitando l’analisi rapida dell’interazione dell’utente con i moduli e fornendo informazioni approfondite sulle interazioni e sul coinvolgimento dei visitatori. Experience Cloud Setup Automation consente inoltre di monitorare le prestazioni dei moduli tramite la valutazione di metriche quali tempi di completamento e punti di riconsegna. Questa analisi consente di ottimizzare i moduli per una migliore esperienza utente, distinguendo al contempo il comportamento degli utenti in base allo stato di accesso, ad esempio utenti anonimi, per identificare tendenze e modelli generali.
 
@@ -75,7 +76,7 @@ Per verificare che quanto sopra sia disponibile per l&#39;ambiente Forms as a Cl
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=it)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configurare Adobe Analytics {#configure-adobe-analytics}
@@ -153,7 +154,7 @@ Per connettersi e abilitare le analisi in Adaptive Forms per AEM Sites, assicura
 
 Per connettere il modulo adattivo in una pagina di AEM Sites per abilitare Analytics per un&#39;analisi rapida, includere la libreria client `customfooterlibs` nella pagina di AEM Sites utilizzando l&#39;archivio e la pipeline di distribuzione di Archetipo/Git AEM.
 
-1. Apri il progetto [Archetipo AEM Forms o Archivio Git clonato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) in un editor di testo. Ad esempio, Visual Studio Code.
+1. Apri il progetto [Archetipo AEM Forms o Archivio Git clonato](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) in un editor di testo. Ad esempio, Visual Studio Code.
 
 1. Passa alla pagina dei tuoi siti in cui esiste il modulo adattivo, ad esempio In questo progetto demo abbiamo `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 
@@ -176,7 +177,7 @@ Per connettere il modulo adattivo in una pagina di AEM Sites per abilitare Analy
 
    `customfooterlibs.html` è utilizzato per JavaScript.
 
-1. [Esegui la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=it) per distribuire le modifiche.
+1. [Esegui la pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le modifiche.
 
 ### Abilitare le regole di analisi dei moduli in Forms in Sites {#bind-forms-analytics-rules-to-forms-in-sites}
 
@@ -202,7 +203,7 @@ Per connettere il modulo adattivo in una pagina di AEM Sites per abilitare Analy
 
 1. Fai clic su **copia** per incollare le regole del modulo nella pagina Sites.
 
-#### Aggiungi elementi dati {#data-elements}
+#### Aggiungi elementi dei dati {#data-elements}
 
 1. Seleziona il modulo e aggiungi **Nuova proprietà** in alto a destra, oppure fai clic sul modulo.
 1. Nella pagina delle proprietà, fai clic su **Elementi dati** e seleziona gli eventi per il modulo.

@@ -9,15 +9,16 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 3%
 
 ---
 
-
-# Associazione dei revisori di invio a un modulo {#associating-submission-reviewers-with-a-form}
+# Associare i revisori di invio a un modulo {#associating-submission-reviewers-with-a-form}
 
 Quando si crea un modulo, è possibile specificare gli utenti che esaminano gli invii del modulo tramite il portale moduli e forniscono feedback. La tua organizzazione può raccogliere feedback e rielaborare i moduli inviati.
 
@@ -33,8 +34,8 @@ Per associare un gruppo di revisori a un modulo, modifica lo schema di metadati 
 
 Per modificare lo schema metadati:
 
-1. In modalità Creazione, nell&#39;Experience Manager, fare clic su **Strumenti** > **Assets** > **Schemi metadati**.
-1. Nella pagina Forms dello schema, passa a **Forms** > **Forms creato nell&#39;AEM.**
+1. In modalità Creazione, in Experience Manager, fai clic su **Strumenti** > **Assets** > **Schemi metadati**.
+1. Nella pagina Forms dello schema, passa a **Forms** > **Forms creato in AEM.**
 
    L’URL della pagina è:
 
@@ -52,7 +53,7 @@ Per modificare lo schema metadati:
 
    Il campo gruppo revisore invio nelle proprietà avanzate del modulo adattivo è abilitato con il nome specificato in Etichetta campo.
 
-## Associazione dei revisori di invio a un modulo {#associating-submission-reviewers-with-a-form-1}
+## Associare i revisori di invio a un modulo {#associating-submission-reviewers-with-a-form-1}
 
 Per associare i revisori per l’invio a un modulo adattivo, crea un gruppo di revisori e aggiungi gli utenti. Aggiungi il gruppo di revisori creato nel campo revisore invio modulo nelle proprietà avanzate del modulo.
 I gruppi di utenti consentono di associare diversi set di revisori per l’invio a diversi Forms adattivi. Questa funzione impedisce a un utente non autorizzato di inviare un messaggio di revisione.
@@ -66,7 +67,7 @@ Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti prede
 Per associare gruppi di utenti a un modulo adattivo:
 
 1. In modalità creazione, passa a **Forms** > **Forms e documenti**.
-1. Utilizza l&#39;opzione **Seleziona &#x200B;** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
+1. Utilizza l&#39;opzione **Seleziona **per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
 1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi su **AVANZATE**.
 1. Immettere il gruppo nel campo gruppo revisore invio e fare clic su **Fine**.
 

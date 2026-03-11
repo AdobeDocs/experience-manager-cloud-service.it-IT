@@ -3,12 +3,13 @@ title: 'Analisi dei moduli con Adobe Analytics e AEM Forms: guida completa'
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Guida completa all’analisi dei moduli con Adobe Analytics e AEM Forms. Monitora le prestazioni dei moduli, analizza il comportamento degli utenti, riduce l’abbandono e ottimizza le conversioni.
 keywords: analisi dei moduli, tracciamento delle prestazioni dei moduli, analisi dell’abbandono dei moduli, ottimizzazione della conversione, analisi del comportamento degli utenti, Adobe Analytics forms, AEM Forms analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7904'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ Un’analisi efficace dei moduli si concentra sulle metriche che influiscono dir
 
 **Metriche comportamentali avanzate**
 
-- **Analisi del funnel di conversione**: percorso di utenti tramite moduli in più passaggi, con pattern di progressione e abbandono
+- **Conversione Funnel Analysis**: percorso di utenti tramite moduli in più passaggi, con pattern di progressione e abbandono
 - **Prestazioni del dispositivo e del browser**: fattori tecnici che influiscono sul completamento in diversi ambienti utente
 - **Profondità coinvolgimento utente**: tempo trascorso su moduli, modelli di interazione dei campi e indicatori di attenzione utente
 
@@ -323,7 +324,7 @@ Monitora le prestazioni dei moduli come avviene con dashboard in tempo reale e a
 
 ### Funzionalità di tracciamento predefinite
 
-AEM Forms si integra perfettamente con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=it) per acquisire e tenere traccia automaticamente delle metriche delle prestazioni per i moduli pubblicati. Puoi monitorare il comportamento degli utenti autenticati e anonimi senza ulteriore configurazione.
+AEM Forms si integra perfettamente con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia automaticamente delle metriche delle prestazioni per i moduli pubblicati. Puoi monitorare il comportamento degli utenti autenticati e anonimi senza ulteriore configurazione.
 
 Prima di implementare l&#39;analisi dei moduli, verifica che l&#39;ambiente [AEM Forms sia configurato correttamente](/help/forms/setup-forms-cloud-service.md) e che [i moduli adattivi siano stati creati](/help/forms/creating-adaptive-form-core-components.md) utilizzando i Componenti core o [Componenti Foundation](/help/forms/creating-adaptive-form.md).
 
@@ -353,7 +354,7 @@ Oltre agli eventi di modulo standard, Adobe Analytics consente un sofisticato tr
 
 - **Metriche specifiche per l&#39;azienda**: definisci gli eventi personalizzati utilizzando l&#39;editor di regole per tenere traccia delle interazioni dei moduli specifiche per l&#39;organizzazione
 - **Mappatura Percorso utenti**: creazione di eventi personalizzati per tenere traccia di percorsi utente complessi tramite moduli in più passaggi
-- **Analisi del funnel di conversione**: imposta eventi personalizzati per misurare punti di conversione e fasi di rilascio specifici
+- **Analisi del Funnel di conversione**: configura eventi personalizzati per misurare punti di conversione e fasi di abbandono specifici
 - **Eventi di integrazione**: tieni traccia delle interazioni dei moduli con sistemi e API esterni
 
 ### Funzionalità di reporting avanzate
@@ -362,7 +363,7 @@ Adobe Analytics fornisce funzionalità di reporting di livello enterprise per le
 
 - **Dashboard in tempo reale**: monitora le prestazioni dei moduli e le interazioni degli utenti man mano che si verificano
 - **Analisi della segmentazione**: analizza le prestazioni dei moduli tra diversi gruppi di utenti, origini del traffico e dati demografici
-- **Visualizzazione funnel**: visualizza la progressione dell&#39;utente tramite moduli con più passaggi e identifica le opportunità di ottimizzazione
+- **Visualizzazione Funnel**: visualizza la progressione dell&#39;utente tramite moduli con più passaggi e identifica le opportunità di ottimizzazione
 - **Analisi per coorte**: tieni traccia dei miglioramenti delle prestazioni dei moduli nel tempo e misura l&#39;impatto dell&#39;ottimizzazione
 - **Monitoraggio tra dispositivi**: scopri come gli utenti interagiscono con i moduli su diversi dispositivi e sessioni
 
@@ -465,12 +466,12 @@ I Forms che vengono caricati in meno di 3 secondi hanno tassi di completamento p
 - **Analisi del tipo di utente**: confronto delle prestazioni tra utenti nuovi e di ritorno
 - **Informazioni demografiche**: comprendere come diversi gruppi di utenti interagiscono con i moduli
 
-**Analisi funnel di conversione**
+**Analisi Funnel per la conversione**
 
 - **Progressione di moduli con più passaggi**: tenere traccia dell&#39;avanzamento dell&#39;utente tramite moduli complessi
 - **Conversione fase per fase**: misura i tassi di completamento a ogni passaggio del modulo
-- **Ottimizzazione funnel**: identificazione e risoluzione dei colli di bottiglia nella progressione del modulo
-- **Integrazione test A/B**: confronto delle prestazioni funnel tra le varianti di modulo
+- **Ottimizzazione Funnel**: identificazione e risoluzione dei colli di bottiglia durante la progressione del modulo
+- **Integrazione test A/B**: confronto delle prestazioni di funnel tra le varianti di modulo
 
 **Metriche di impatto aziendale**
 
@@ -527,12 +528,12 @@ Prima di iniziare l’implementazione di analisi dei moduli, assicurati che l’
 Prima di configurare [!DNL Adobe Analytics], creare:
 
 - Un Adobe ID per accedere a [Adobe Experience Cloud](https://experience.adobe.com/#/home).
-- Una [suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=it).
+- Una [suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
 
 ### Installa le estensioni AEM Forms e [!DNL Adobe Analytics] {#install-extensions}
 
-Per configurare le estensioni AEM Forms e [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=it), effettua le seguenti operazioni:
+Per configurare le estensioni AEM Forms e [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html), effettua le seguenti operazioni:
 
 1. Accedi a Adobe Experience Cloud e seleziona un nome appropriato per l’azienda.
 
@@ -676,7 +677,7 @@ Per pubblicare la configurazione, effettua le seguenti operazioni:
 
 ## &#x200B;2. Configurare AEM Forms {#configure-aem-forms}
 
-Prima di creare una configurazione di Adobe Launch, crea una [configurazione Adobe IMS utilizzando Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=it).
+Prima di creare una configurazione di Adobe Launch, crea una [configurazione Adobe IMS utilizzando Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Crea configurazione di Adobe Launch {#create-adobe-launch-configuration}
 
@@ -688,7 +689,7 @@ Per creare una configurazione di Adobe Launch, effettua le seguenti operazioni:
 
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 
-1. Seleziona la [configurazione Adobe IMS associata](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=it).
+1. Seleziona la [configurazione Adobe IMS associata](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 1. Selezionare il nome dell&#39;azienda utilizzata durante [la configurazione di Adobe Analytics](#Configure-adobe-analytics).
 
@@ -708,7 +709,7 @@ Per utilizzare la configurazione [!DNL Adobe Launch] in un modulo adattivo esist
 1. Seleziona **[!UICONTROL Salva e chiudi]**. Modulo adattivo abilitato per [!DNL Adobe Analytics].
 1. Pubblica il modulo.
 
-Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo, puoi [convalidare](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=it#validate-the-page-view-beacon) se esiste un flusso di eventi dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
+Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo, puoi [convalidare](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se esiste un flusso di eventi dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
 
 ### Creare regole per acquisire eventi personalizzati (facoltativo) {#capture-custom-events}
 
@@ -850,7 +851,7 @@ Per un’ottimizzazione di successo è fondamentale comprendere come interpretar
 
 **Dashboard indicatori prestazioni chiave**
 
-- **Funnel di conversione modulo**: visualizza la progressione dell&#39;utente durante il processo di completamento del modulo
+- **Conversione modulo Funnel**: visualizza la progressione dell&#39;utente durante il processo di completamento del modulo
 - **Analisi dell&#39;abbandono**: identifica punti specifici in cui gli utenti lasciano i moduli incompleti
 - **Tendenze delle prestazioni**: tieni traccia delle modifiche delle prestazioni dei moduli nel tempo e identifica i modelli
 - **Analisi comparativa**: confronto delle prestazioni tra moduli, periodi di tempo e segmenti utente diversi
@@ -1021,7 +1022,7 @@ Questa sezione completa sulle domande frequenti tratta le domande comuni sull’
 
 **D: Qual è la differenza tra analisi dei moduli e analisi generale dei siti Web?**
 
-R: L’analisi dei moduli si concentra specificamente sulle interazioni degli utenti all’interno dei moduli, fornendo informazioni dettagliate sul comportamento a livello di campo, sui pattern di completamento e sui punti di abbandono. Mentre l’analisi generale dei siti web tiene traccia delle visualizzazioni di pagina e dei percorsi di utenti complessivi, l’analisi dei moduli offre dati granulari sulle esperienze utente specifiche dei moduli, sugli errori di convalida, sui tempi di completamento dei campi e sull’analisi del funnel di conversione all’interno dei moduli stessi.
+R: L’analisi dei moduli si concentra specificamente sulle interazioni degli utenti all’interno dei moduli, fornendo informazioni dettagliate sul comportamento a livello di campo, sui pattern di completamento e sui punti di abbandono. Mentre l’analisi generale dei siti web tiene traccia delle visualizzazioni di pagina e dei percorsi di utenti complessivi, l’analisi dei moduli offre dati granulari sulle esperienze utente specifiche dei moduli, sugli errori di convalida, sui tempi di completamento dei campi e sull’analisi dei funnel di conversione all’interno dei moduli stessi.
 
 **D: sono necessarie competenze tecniche per implementare l&#39;analisi dei moduli con Adobe Analytics?**
 

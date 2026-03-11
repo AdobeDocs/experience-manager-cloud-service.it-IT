@@ -2,12 +2,13 @@
 title: Come si aggiunge il supporto per le nuove lingue in un modulo adattivo basato su componenti di base?
 description: Per Adaptive Forms, puoi aggiungere lingue per più lingue oltre a quella fornita come impostazione predefinita.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 1%
+source-wordcount: '1226'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | Componenti core | [Fai clic qui](supporting-new-language-localization-core-components.md) |
 | Componenti di base | Questo articolo |
 
@@ -32,7 +33,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 * **Dizionario specifico per modulo** Contiene stringhe utilizzate nei moduli adattivi. Ad esempio, etichette, nomi dei campi, messaggi di errore, descrizioni dell’Aiuto. Viene gestito come un insieme di file XLIFF per ogni lingua e puoi accedervi all&#39;indirizzo `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **Dizionari globali** Nella libreria client AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Questi dizionari sono disponibili in `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ogni lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
+* **Dizionari globali** Nella libreria client di AEM sono presenti due dizionari globali gestiti come oggetti JSON. Questi dizionari contengono messaggi di errore predefiniti, nomi dei mesi, simboli di valuta, modelli di data e ora e così via. Questi dizionari sono disponibili in `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Questi percorsi contengono cartelle separate per ogni lingua. Poiché i dizionari globali non vengono aggiornati frequentemente, la separazione dei file JavaScript per ogni lingua consente ai browser di memorizzarli nella cache e di ridurre l&#39;utilizzo della larghezza di banda di rete quando si accede a moduli adattivi diversi sullo stesso server.
 
 ## Aggiunta del supporto per le nuove lingue {#add-support-for-new-locales}
 
@@ -53,14 +54,14 @@ Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptiv
 1. [Aggiungere il supporto delle impostazioni locali per il dizionario](#add-locale-support-for-the-dictionary)
 1. [Eseguire il commit delle modifiche nell’archivio e distribuire la pipeline](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Clonare l’archivio {#clone-the-repository}
+#### &#x200B;1. Clonare l’archivio {#clone-the-repository}
 
-1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio di Cloud Service di Forms.
-1. Esegui il comando [recuperato da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git). È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio Forms Cloud Service.
+1. Esegui il comando [recuperato da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilizza il nome utente e la password Git per clonare l’archivio.
-1. Apri la cartella clonata dell’archivio di Cloud Service di Forms nell’editor preferito.
+1. Apri la cartella dell’archivio Forms Cloud Service clonato nell’editor preferito.
 
-#### 2. Aggiungere una lingua al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Aggiungere una lingua al servizio di localizzazione della Guida TV {#add-a-locale-to-the-guide-localization-service}
 
 1. Individuare il file `Guide Localization Service.cfg.json` e aggiungere le impostazioni locali da aggiungere all&#39;elenco delle impostazioni locali supportate.
 
@@ -68,7 +69,7 @@ Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptiv
    >
    > Creare un file con il nome `Guide Localization Service.cfg.json`, se non già presente.
 
-#### 3. Aggiungere una libreria client di cartelle specifica per il nome della lingua {#add-locale-name-specific-folder}
+#### &#x200B;3. Aggiungere una libreria client di cartelle specifica per il nome della lingua {#add-locale-name-specific-folder}
 
 1. Nella cartella UI.content, crea la cartella `etc/clientlibs`.
 1. Creare ulteriormente una cartella denominata `locale-name` in `etc/clientlibs` per fungere da contenitore per clientlibs xfa e af.
@@ -98,7 +99,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Aggiungere il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Aggiungere il supporto delle impostazioni internazionali per il dizionario {#add-locale-support-for-the-dictionary}
 
 Eseguire questo passaggio solo se il `<locale>` che si sta aggiungendo non è tra `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -115,18 +116,18 @@ Eseguire questo passaggio solo se il `<locale>` che si sta aggiungendo non è tr
    <filter root="/etc/languages"/>
    ```
 
-Prima di confermare le modifiche nell&#39;archivio Git AEM, devi accedere alle informazioni dell&#39;archivio [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git).
+Prima di confermare le modifiche nell&#39;archivio Git di AEM, devi accedere alle informazioni dell&#39;archivio [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5. Eseguire il commit delle modifiche nell’archivio e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Eseguire il commit delle modifiche nell’archivio e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Apporta le modifiche all’archivio GIT dopo l’aggiunta del supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come configurare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline) per aggiungere il supporto delle nuove impostazioni locali.
+Apporta le modifiche all’archivio GIT dopo l’aggiunta del supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come configurare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere il supporto delle nuove impostazioni locali.
 Una volta completata la pipeline, nell’ambiente AEM viene visualizzata la lingua appena aggiunta.
 
 ### Usa le impostazioni locali aggiunte in Adaptive Forms {#use-added-locale-in-af}
 
 Per utilizzare ed eseguire il rendering di un modulo adattivo utilizzando le impostazioni locali appena aggiunte, effettua le seguenti operazioni:
 
-1. Accedi all’istanza di authoring dell’AEM.
+1. Accedi all’istanza Autore di AEM.
 1. Vai a **Forms** > **Forms e documenti**.
 1. Selezionare un modulo adattivo e fare clic su **Aggiungi dizionario**. Viene visualizzata la procedura guidata **Aggiungi dizionario al progetto di traduzione**.
 1. Specifica il **Titolo progetto** e seleziona le **Lingue di destinazione** dal menu a discesa nella procedura guidata **Aggiungi dizionario al progetto di traduzione**.
@@ -137,7 +138,7 @@ Per utilizzare ed eseguire il rendering di un modulo adattivo utilizzando le imp
 
 Esistono due metodi per identificare le impostazioni locali di un modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, questo identifica le impostazioni locali richieste tramite:
 
-* Recupero del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell&#39;URL è `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare in cache un modulo adattivo.
+* Recupero del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell’URL è `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare in cache un modulo adattivo.
 
 * Recupero dei seguenti parametri nell&#39;ordine elencato:
 

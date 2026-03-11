@@ -3,13 +3,14 @@ title: Come personalizzare il modello del documento di record generato automatic
 description: Scopri come scaricare, personalizzare e ricaricare il modello DoR (Document of Record) generato automaticamente per Adaptive Forms utilizzando Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
-
 
 # Personalizzare il modello del documento di record generato automaticamente
 
@@ -126,4 +127,3 @@ Per verificare che il modello personalizzato sia applicato correttamente:
 * [Genera documento di record per Forms adattivo (componenti di base)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Modello base di un documento record](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [Personalizzare le informazioni di branding nel documento record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

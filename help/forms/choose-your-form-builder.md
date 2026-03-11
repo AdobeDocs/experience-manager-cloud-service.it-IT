@@ -5,10 +5,11 @@ keywords: Forms Builder, AEM forms, creatore di moduli, creazione di moduli, cre
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '954'
 ht-degree: 8%
 
 ---
@@ -104,7 +105,7 @@ Universal Editor fornisce due potenti approcci di authoring per Edge Delivery Se
 | **Aspetto** | **Foundation** | **Core** | **Editor universale** | **Basato Su Documenti** |
 |------------|----------------|----------|---------------------|-------------------|
 | **Pubblicazione** | Solo AEM | AEM + Edge Delivery + API headless | Edge Delivery | Edge Delivery |
-| **Prestazioni** | Standard | Migliorato | Punteggi elevati di Lighthouse | Punteggi elevati di Lighthouse |
+| **Prestazioni** | Standard | Migliorati | Punteggi elevati di Lighthouse | Punteggi elevati di Lighthouse |
 | **Ottimizzazione SEO** | Base | Buona | Eccellente | Eccellente |
 | **Velocità di risposta mobile** | Buona | Eccellente | Eccellente | Eccellente |
 

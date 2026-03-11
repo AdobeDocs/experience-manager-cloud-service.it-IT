@@ -1,12 +1,13 @@
 ---
 title: Come integrare DocuSign con un modulo adattivo?
 description: Scopri come utilizzare DocuSign con un modulo adattivo per raccogliere firme elettroniche.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1540'
 ht-degree: 1%
 
 ---
@@ -120,7 +121,7 @@ Per configurare l’azione di invio personalizzata predefinita e DocuSign Cloud 
 
    Dopo aver eseguito questi passaggi, puoi visualizzare una nuova azione di invio personalizzata [Invia con le firme elettroniche DocuSign](#enabledocusign) disponibile nell&#39;elenco delle opzioni di invio per un modulo adattivo e una [configurazione del servizio cloud DocuSign](#configure-docusign-with-aem-forms) nell&#39;ambiente di sviluppo locale.
 
-1. Compila e [distribuisci il codice nell&#39;ambiente [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#customer-releases).
+1. Compila e [distribuisci il codice nell&#39;ambiente [!DNL AEM Forms] as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
 
 ## Integra [!DNL DocuSign] con [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 
@@ -162,7 +163,7 @@ Ora l’ambiente AEM Forms è configurato per l’utilizzo di DocuSign. Accertat
 
 È possibile abilitare [!DNL DocuSign] per un modulo adattivo esistente o crearne uno abilitato per [!DNL DocuSign]. Scegliere una delle opzioni seguenti:
 
-- [Crea un modulo adattivo abilitato per  [!DNL DocuSign] &#x200B;](#create-an-adaptive-form-for-docusign)
+- [Crea un modulo adattivo abilitato per  [!DNL DocuSign] ](#create-an-adaptive-form-for-docusign)
 - [Attiva [!DNL DocuSign] per un modulo adattivo esistente](#editafsign).
 
 #### Creare un modulo adattivo per DocuSign {#create-an-adaptive-form-for-docusign}

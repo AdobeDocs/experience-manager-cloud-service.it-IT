@@ -4,10 +4,11 @@ description: Scopri come migliorare le prestazioni dei moduli di grandi dimensio
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -75,7 +76,7 @@ Puoi contrassegnare i valori degli oggetti nel frammento caricato in modo differ
 
 Alcune limitazioni, raccomandazioni e punti importanti da tenere a mente quando si lavora con il caricamento lento sono i seguenti:
 
-* Adobe consiglia di utilizzare Adaptive Forms basato su schema XSD su Adaptive Forms basato su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento in Adaptive Forms basato su XFA è relativamente inferiore al guadagno in Adaptive Forms basato su XSD.
+* Adobe consiglia di utilizzare Forms adattivo basato su schema XSD su Forms adattivo basato su XFA per configurare il caricamento lento su moduli di grandi dimensioni. L’aumento delle prestazioni dovuto all’implementazione con caricamento lento in Adaptive Forms basato su XFA è relativamente inferiore al guadagno in Adaptive Forms basato su XSD.
 * Non configurare il caricamento lento nei frammenti in un modulo adattivo che utilizzano **[!UICONTROL Responsive -Everything in una pagina senza navigazione]** layout per il pannello principale. Con la configurazione del layout Reattivo, tutti i frammenti vengono caricati contemporaneamente in un modulo adattivo. ma può anche causare un peggioramento delle prestazioni.
 * Si consiglia di non configurare il caricamento lento sui frammenti nel primo pannello riprodotto al caricamento del modulo adattivo.
 * Il caricamento lento è supportato fino a due livelli nella gerarchia dei frammenti.

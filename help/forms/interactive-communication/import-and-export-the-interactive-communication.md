@@ -4,11 +4,12 @@ description: Importazione ed esportazione di comunicazioni interattive consente 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 4%
 
 ---
 

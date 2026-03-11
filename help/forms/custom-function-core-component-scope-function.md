@@ -4,11 +4,12 @@ description: Il modulo supporta gli oggetti ambito nelle funzioni personalizzate
 keywords: oggetti di ambito in funzioni personalizzate, oggetti globali, oggetti campo.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 248c75a5-6335-41d2-aa0a-28a20a710f88
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 1%
+source-wordcount: '464'
+ht-degree: 3%
 
 ---
 

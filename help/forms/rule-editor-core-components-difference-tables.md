@@ -4,11 +4,12 @@ description: Questo articolo spiega la differenza tra gli editor di regole di Fo
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 0feef02c-6186-45f2-9929-07120126c596
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 16%
+source-wordcount: '118'
+ht-degree: 17%
 
 ---
 
