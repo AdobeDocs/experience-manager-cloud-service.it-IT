@@ -21,7 +21,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=it) |
 | Componenti core | [Fai clic qui](supporting-new-language-localization-core-components.md) |
 | Componenti di base | Questo articolo |
 
@@ -57,7 +57,7 @@ Per aggiungere il supporto per una nuova lingua in fase di esecuzione di Adaptiv
 #### &#x200B;1. Clonare l’archivio {#clone-the-repository}
 
 1. Dalla riga di comando, individua il punto in cui desideri duplicare l’archivio Forms Cloud Service.
-1. Esegui il comando [recuperato da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Esegui il comando [recuperato da Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git). È simile a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Utilizza il nome utente e la password Git per clonare l’archivio.
 1. Apri la cartella dell’archivio Forms Cloud Service clonato nell’editor preferito.
 
@@ -116,11 +116,11 @@ Eseguire questo passaggio solo se il `<locale>` che si sta aggiungendo non è tr
    <filter root="/etc/languages"/>
    ```
 
-Prima di confermare le modifiche nell&#39;archivio Git di AEM, devi accedere alle informazioni dell&#39;archivio [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+Prima di confermare le modifiche nell&#39;archivio Git di AEM, devi accedere alle informazioni dell&#39;archivio [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git).
 
 #### &#x200B;5. Eseguire il commit delle modifiche nell’archivio e distribuire la pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Apporta le modifiche all’archivio GIT dopo l’aggiunta del supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come configurare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) per aggiungere il supporto delle nuove impostazioni locali.
+Apporta le modifiche all’archivio GIT dopo l’aggiunta del supporto delle impostazioni internazionali. Distribuisci il codice utilizzando la pipeline full stack. Scopri [come configurare una pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline) per aggiungere il supporto delle nuove impostazioni locali.
 Una volta completata la pipeline, nell’ambiente AEM viene visualizzata la lingua appena aggiunta.
 
 ### Usa le impostazioni locali aggiunte in Adaptive Forms {#use-added-locale-in-af}

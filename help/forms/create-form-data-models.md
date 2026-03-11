@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -94,7 +94,7 @@ Per aggiungere o aggiornare origini dati a un modello dati modulo (FDM) esistent
 
 ## Configurazioni in base al contesto per modalità di esecuzione specifiche {#runmode-specific-context-aware-config}
 
-[!UICONTROL Form Data Model (FDM)] utilizza [configurazioni in base al contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) per supportare diversi parametri dell&#39;origine dati per la connessione con origini dati per diverse modalità di esecuzione di [!DNL Experience Manager].
+[!UICONTROL Form Data Model (FDM)] utilizza [configurazioni in base al contesto Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=it) per supportare diversi parametri dell&#39;origine dati per la connessione con origini dati per diverse modalità di esecuzione di [!DNL Experience Manager].
 
 Quando [!UICONTROL Form Data Model (FDM)] utilizza le configurazioni cloud per memorizzare i parametri, che quando vengono archiviati e distribuiti tramite il controllo del codice sorgente (archivio GIT di Cloud-Manager) crea la configurazione cloud con gli stessi parametri per tutte le modalità di esecuzione (Sviluppo, Stage e Produzione). Tuttavia, per i casi di utilizzo in cui è necessario disporre di set di dati diversi per ambienti di test e produzione, vengono utilizzati i parametri dell&#39;origine dati (ad esempio, URL dell&#39;origine dati) per diverse modalità di esecuzione di [!DNL Experience Manager].
 
@@ -132,7 +132,7 @@ Quando questo progetto di archetipo viene distribuito tramite pipeline CM, l’o
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia per i dettagli. Vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] utenti possono crittografare i valori segreti utilizzando il supporto di crittografia per i dettagli. Vedere [supporto di crittografia per le proprietà di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=it#enabling-encryption-support) e inserire testo crittografato nel valore dopo [che le configurazioni in base al contesto sono disponibili nel service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it#runmode-specific-context-aware-config).
 
 1. Aggiornare le definizioni dell&#39;origine dati utilizzando l&#39;opzione per aggiornare le definizioni dell&#39;origine dati nell&#39;[Editor modello dati modulo](#data-sources) per aggiornare la cache FDM tramite l&#39;interfaccia utente di FDM e ottenere la configurazione più recente.
 
