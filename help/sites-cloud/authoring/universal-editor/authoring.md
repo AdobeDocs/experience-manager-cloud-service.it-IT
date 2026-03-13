@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '3002'
 ht-degree: 12%
 
 ---
@@ -186,9 +186,15 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 
    ![Selezione di un componente da aggiungere a un contenitore](assets/ue-add-component.png)
 
-1. Quindi selezionate l&#39;icona Aggiungi nel pannello delle proprietà.
+1. È quindi possibile:
 
-   ![Seleziona icona di aggiunta](assets/add-icon.png)
+   * Select the **Add** icon in the properties panel.
+
+     ![Seleziona icona di aggiunta](assets/add-icon.png)
+
+   * Selezionare l&#39;opzione **Aggiungi** nel menu di scelta rapida.
+
+     ![Aggiungi dal menu di scelta rapida](assets/add-from-context-menu.png)
 
 1. Viene visualizzata la finestra di dialogo del selettore dei componenti.
    * Utilizza la colonna a sinistra per filtrare i componenti per categoria o utilizza la ricerca per filtrare per nome.
@@ -207,21 +213,28 @@ Il componente viene inserito nel contenitore e può essere modificato nell’edi
 ### Duplicazione di componenti nei contenitori {#duplicating-components}
 
 1. Selezionare un componente in un contenitore utilizzando la [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o l&#39;editor.
-1. Quindi seleziona l&#39;icona **Duplica** nel pannello delle proprietà.
 
-   ![Selezione di un componente da aggiungere a un contenitore](assets/ue-duplicate-component.png)
-1. Il componente viene duplicato e inserito sotto il componente selezionato.
+1. È quindi possibile:
 
-Il componente viene inserito nel contenitore e può essere modificato nell’editor.
+   * Seleziona l&#39;icona **Duplica** nel pannello delle proprietà.
+
+     ![Selezione di un componente da aggiungere a un contenitore](assets/ue-duplicate-component.png)
+
+   * Selezionare l&#39;opzione **Duplica** dal menu di scelta rapida.
+
+     ![Duplica dal menu di scelta rapida](assets/duplicate-from-context-menu.png)
+
+Il componente viene duplicato e inserito sotto il componente selezionato.
 
 ### Eliminazione di componenti dai contenitori {#deleting-components}
 
-1. Selezionare un componente contenitore nella [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o nell&#39;editor.
-1. Seleziona l’icona della freccia del contenitore per espanderne il contenuto nella struttura del contenuto.
-1. Quindi, nella struttura del contenuto, seleziona un componente all’interno del contenitore.
-1. Selezionate l&#39;icona Elimina nel pannello delle proprietà.
+1. Selezionare un componente in un contenitore nella [struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) o nell&#39;editor.
+1. È quindi possibile:
+   * Seleziona l&#39;icona **Elimina** nel pannello delle proprietà.
 
-   ![Eliminazione di un componente](assets/ue-delete-component.png)
+     ![Eliminazione di un componente](assets/ue-delete-component.png)
+   * Selezionare l&#39;opzione **Elimina** nel menu di scelta rapida.
+     ![Elimina dal menu di scelta rapida](assets/delete-from-context-menu.png)
 
 Il componente selezionato è stato eliminato.
 
@@ -287,7 +300,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
@@ -295,21 +308,23 @@ Copiare e incollare possono essere nella stessa scheda del browser o tra schede 
 ![Icona Incolla](assets/paste.png)
 
 1. Seleziona un componente nell’editor o nella struttura del contenuto.
-1. L&#39;icona **Copia** viene visualizzata nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tocca o fai clic su di esso.
-1. L&#39;icona **Incolla** viene visualizzata nel pannello delle proprietà.
+1. È quindi possibile:
+   * Fai clic sull&#39;icona **Copia** nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Copia dal pannello](assets/copy-from-panel.png)
+   * Selezionare l&#39;opzione **Copia** nel menu di scelta rapida.
+     ![Copia dal menu di scelta rapida](assets/copy-from-context-menu.png)
 1. Selezionare il componente _dopo_ che si desidera incollare.
-1. Tocca o fai clic su Incolla.
-1. Il componente copiato viene incollato _dopo_ il componente selezionato.
+1. È quindi possibile:
+   * Tocca o fai clic su **Incolla** nel pannello delle proprietà.
+     ![Incolla dal pannello](assets/paste-from-panel.png)
+   * Selezionare **Incolla** nel menu di scelta rapida.
+     ![Incolla dal menu di scelta rapida](assets/paste-from-context-menu.png)
+
+Il componente copiato viene incollato _dopo_ il componente selezionato.
 
 >[!TIP]
 >
 >Utilizzare la scelta rapida `Command-C` o `Command-V` rispettivamente per copiare o incollare.
-
-## Opzioni di contesto {#context-options}
-
-Durante la modifica diretta, l’editor offre opzioni pertinenti al contesto con un clic con il pulsante destro del mouse, ad esempio per duplicare, eliminare o copiare componenti.
-
-![Menu delle opzioni di contesto](assets/context-options-menu.png)
 
 ## Anteprima del contenuto {#previewing-content}
 

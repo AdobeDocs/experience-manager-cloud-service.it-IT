@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7114'
 ht-degree: 94%
 
 ---
@@ -257,6 +257,7 @@ ht-degree: 94%
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + [Anteprima delle note sulla versione per l’editor universale](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Note sulla versione 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Note sulla versione 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
          + [Note sulla versione 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
          + [Note sulla versione 2026.02.13](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -845,8 +846,8 @@ ht-degree: 94%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1124,7 +1125,7 @@ ht-degree: 94%
             + [Guida introduttiva ai progetti di authoring di AEM](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
             + [Console di modernizzazione](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Guida alla richiesta](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-            + [Modello di consegna AOE](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+            + [Consegna AOE](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Agente di sviluppo](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Agente di Content Advisor {#content-advisor}
          + [Panoramica](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1303,7 +1304,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
