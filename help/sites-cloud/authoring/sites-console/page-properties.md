@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 33%
+source-wordcount: '2211'
+ht-degree: 32%
 
 ---
 
@@ -161,11 +161,17 @@ Questa proprietà consente di immettere un URL personalizzato per questa pagina,
 
 * **Abilita** - Abilita l&#39;utilizzo dell&#39;autenticazione per accedere alla pagina
 
->[!NOTE]
->
->Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
+  >[!NOTE]
+  >
+  >Nella scheda **[Autorizzazioni](#permissions)** è possibile definire gruppi utenti chiusi per la pagina.
 
 * **Pagina di accesso**: indica la pagina da utilizzare per l’accesso
+
+  >[!WARNING]
+  >
+  >La pagina di accesso specificata **non deve** puntare a una pagina a sua volta protetta da un **requisito di autenticazione**. Assicurati che la pagina di accesso sia pubblica e non protetta. Ad esempio, una pagina dedicata come `/content/<mysite>/en/login` senza **requisito di autenticazione** abilitato.
+  >
+  >Se nella pagina di accesso configurata è presente **Abilita**, il requisito di autenticazione per tale pagina verrà rimosso automaticamente all&#39;avvio, rendendolo accessibile al pubblico.
 
 ### Esporta {#export}
 
@@ -260,7 +266,7 @@ Questa scheda è visibile solo per le pagine configurate come Live Copy. Come pe
 
 ## Anteprima {#preview}
 
-Quando un ambiente di anteprima [&#128279;](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
+Quando un ambiente di anteprima [](/help/sites-cloud/authoring/sites-console/previewing-content.md) è abilitato, sono disponibili i dettagli seguenti:
 
 * **URL anteprima** - URL utilizzato per accedere al contenuto nell&#39;ambiente di anteprima
 
