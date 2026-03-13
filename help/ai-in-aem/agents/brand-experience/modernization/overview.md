@@ -4,9 +4,9 @@ description: Scopri in che modo l’agente di modernizzazione esperienza esegue 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -18,29 +18,29 @@ Scopri in che modo l’agente di modernizzazione esperienza esegue l’onboardin
 
 ## Introduzione {#introduction}
 
-[Come parte di Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) l&#39;agente di modernizzazione dell&#39;esperienza sfrutta appieno il valore di Edge Delivery Services (inclusa la creazione di AEM) rendendo le migrazioni dei siti Web e l&#39;evoluzione continua veloci e senza attriti.
+[Come parte di Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md), l&#39;agente di modernizzazione dell&#39;esperienza accelera l&#39;onboarding in Edge Delivery Services automatizzando le migrazioni dei siti web e la configurazione dei siti fondamentali.
 
-Combina [abilità di creazione siti e migrazione](#creation-migration) per l&#39;onboarding iniziale del sito Web e [capacità di sviluppo blocchi](#block-development) per lo sviluppo continuo di esperienze (aggiornamenti di stili, perfezionamenti di modelli, creazione di pagine di destinazione). Inoltre, offre la [Console di modernizzazione esperienza](#console) come ambiente di sviluppo ospitato basato sull&#39;intelligenza artificiale disponibile direttamente. Anche se gli utenti possono utilizzare l’agente direttamente tramite tale console, gli sviluppatori mantengono il controllo completo sulle consegne.
+Combina [abilità di creazione siti e migrazione](#creation-migration) per l&#39;onboarding iniziale del sito Web e [capacità di sviluppo blocchi](#block-development) per supportare la creazione di siti e i flussi di lavoro di migrazione. Inoltre, offre la [Console di modernizzazione esperienza](#console) come ambiente di sviluppo basato su IA basato sul Web, disponibile direttamente. Anche se gli utenti possono utilizzare l’agente direttamente tramite tale console, gli sviluppatori mantengono il controllo completo sulle consegne.
 
-Inoltre, per garantire il successo di migrazioni complesse, Adobe offre il [modello di consegna AOE (Agentic Outcome Engineer)](#delivery-model). Questa opzione può essere utilizzata come acceleratore o come servizio tattico per risolvere problemi specifici del progetto.
+Per migrazioni complesse o ad alta priorità, Adobe offre il modello di consegna [Agentic Outcome Engineer (AOE),](#aoe-delivery) un servizio basato su progettazione progettato per distribuire siti Edge Delivery pronti per la produzione tramite l&#39;agente di modernizzazione dell&#39;esperienza.
 
 ## Vantaggi {#benefits}
 
 L&#39;agente di modernizzazione dell&#39;esperienza accelera il time-to-value per l&#39;adozione di [Edge Delivery Services](/help/edge/overview.md) e ti offre la flessibilità di adattare l&#39;esperienza web del tuo marchio.
 
-* **Velocità elevata**: l&#39;automazione IA gestisce il lavoro di migrazione ripetitivo (importazione di contenuti, mappatura di blocchi, applicazione del sistema di progettazione), riducendo i mesi di impegno in settimane
-* **Economico**: l&#39;automazione gestisce il lavoro ripetitivo, liberando servizi professionali per attività di alto valore come integrazioni e decisioni strategiche
+* **Velocità elevata**: l&#39;automazione IA gestisce il lavoro di migrazione ripetitivo (importazione dei contenuti, mappatura dei blocchi, applicazione del sistema di progettazione), comprimendo i timeline di migrazione rispetto agli approcci tradizionali
+* **Maggiore efficienza**: l&#39;automazione riduce il lavoro ripetitivo, consentendo ai team di concentrarsi sul lavoro di implementazione di valore più elevato
 * **Accessibile a chiunque**: le richieste in linguaggio naturale rendono accessibili le modifiche al sito Web a utenti meno tecnici, con l&#39;anteprima live per convalidare le modifiche all&#39;istante
 * **Governance aziendale**: gli sviluppatori mantengono piena autorità su ciò che viene pubblicato tramite flussi di lavoro di revisione integrati con GitHub
-* **Valore continuo**: l&#39;agente supporta l&#39;evoluzione continua del sito, inclusi aggiornamenti di stile, perfezionamenti dei modelli e creazione di pagine di destinazione
+* **Flessibilità post-migrazione**: consente ai team di estendere e perfezionare i siti migrati utilizzando i modelli di Edge Delivery Services
 
 ## Abilità per la creazione di siti e la migrazione {#creation-migration}
 
 L’agente di modernizzazione dell’esperienza offre competenze per la creazione di nuovi siti Edge Delivery Services e la migrazione di siti web esistenti. È consigliabile sfruttare queste competenze per qualsiasi nuovo sito Edge Delivery Services o migrazione.
 
 * Accelera la creazione e la migrazione dei siti web da mesi a settimane o giorni, riducendo notevolmente il time-to-value per l’adozione di Edge Delivery Services
-* Trasforma i siti web da qualsiasi CMS, AEM legacy o sistema di progettazione (come Figma) in progetti Edge Delivery Services pronti per la produzione
-* Offre tutte le promesse di Edge Delivery Services: preparazione all’intelligenza artificiale per funzionalità agentiche, prestazioni rapide (core Web Vitals ottimizzati), accessibilità (WCAG 2.1 AA), progettazione reattiva in tutti i punti di interruzione e agilità di contenuti e codice
+* Supporta le migrazioni da un&#39;ampia gamma di piattaforme CMS, AEM legacy o sistemi di progettazione (come Figma) in progetti Edge Delivery Services con capacità di produzione
+* Supporta le best practice per prestazioni, accessibilità e progettazione reattiva in linea con le indicazioni di Edge Delivery Services
 
 Competenze dettagliate includono migrazione delle pagine, importazione in blocco, estrazione della progettazione, configurazione della navigazione e web scraping.
 
@@ -56,11 +56,11 @@ Le funzionalità dettagliate includono sviluppo di blocchi, modellazione di cont
 
 ## Console di modernizzazione esperienza {#console}
 
-L&#39;agente di modernizzazione dell&#39;esperienza fornisce un ambiente di sviluppo ospitato basato sull&#39;intelligenza artificiale per Edge Delivery Services, esposto come interfaccia Web in [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
+L&#39;agente di modernizzazione dell&#39;esperienza fornisce un ambiente di sviluppo basato su IA per Edge Delivery Services, esposto come interfaccia Web in [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 
 * La console non richiede alcuna configurazione locale per consentire agli utenti di avviare la richiesta di modifiche immediatamente in linguaggio naturale.
 * Esegui rapidamente attività di sviluppo delle esperienze quotidiane visualizzandole in anteprima tramite AEM live e sincronizza i contenuti con AEM.
-* La governance aziendale viene applicata in quanto gli sviluppatori mantengono il pieno controllo su ciò che viene spedito tramite il consueto processo di revisione e approvazione GitHub.
+* La console supporta la governance aziendale tramite flussi di lavoro di revisione GitHub standard.
 
 La console self-service di modernizzazione delle esperienze è generalmente disponibile. Gli utenti interessati possono richiedere l’accesso per garantire un’esperienza di onboarding fluida.
 
@@ -69,9 +69,9 @@ Inizia a usare la console di modernizzazione dell’esperienza.
 * Se stai modernizzando il tuo sito eseguendo il targeting di Document Authoring, [inizia qui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * Se stai modernizzando il tuo sito eseguendo il targeting dell&#39;authoring AEM, [inizia qui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
-## Modello di consegna {#delivery-model}
+## Distribuzione di Agentic Outcome Engineer (AOE) {#aoe-delivery}
 
-Per migrazioni complesse o risultati accelerati, Adobe offre il modello di consegna Agentic Outcome Engineer (AOE). Si tratta di un servizio opzionale in cui i tecnici Adobe gestiscono gli strumenti di intelligenza artificiale per tuo conto. Per informazioni dettagliate su questo modello di consegna, consulta il documento [Modello di consegna dell&#39;agente di modernizzazione esperienza.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+Per migrazioni complesse o risultati accelerati, Adobe offre la distribuzione Agentic Outcome Engineer (AOE). Si tratta di un servizio opzionale in cui i tecnici Adobe gestiscono l’agente di modernizzazione dell’esperienza per tuo conto, combinando l’automazione basata su intelligenza artificiale con indicazioni esperte per fornire risultati pronti per la produzione su larga scala. Per informazioni dettagliate sulla consegna AOE, consulta il documento [Consegna AOE dell&#39;agente di modernizzazione dell&#39;esperienza.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
 
 Se sei interessato al modello AOE per la prossima migrazione:
 
@@ -82,7 +82,7 @@ Se sei interessato al modello AOE per la prossima migrazione:
 
 I seguenti casi d’uso richiedono un ulteriore sforzo di implementazione oltre alle competenze dell’agente di modernizzazione dell’esperienza.
 
-Lo strumento di raschiatura non supporta le seguenti origini.
+L&#39;abilità di raschiamento non supporta le origini seguenti.
 
 * Origini Intranet o protette, ad esempio contenuto dietro autenticazione, VPN o firewall, non accessibili
 * Contenuti dinamici complessi come contenuti che richiedono una sofisticata interazione dell’utente per essere visualizzati nel DOM.
