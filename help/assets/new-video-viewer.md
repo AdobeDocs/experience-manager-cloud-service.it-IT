@@ -3,7 +3,7 @@ title: Nuovo visualizzatore video
 description: Il nuovo Visualizzatore video di Dynamic Media offre un’esperienza di riproduzione video migliorata
 role: User
 exl-id: null
-source-git-commit: 0a9d4ef72a6bc5037f87c22915bc75312bbd52d7
+source-git-commit: 8dd1771f667666883ef5fc727efea1e0ea9a3d95
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -167,7 +167,7 @@ Il nuovo visualizzatore video invia messaggi relativi alla riproduzione alla pag
 
 Per gestire questi eventi, l’applicazione principale deve ascoltare gli eventi dei messaggi del browser e convalidare l’origine del messaggio prima di elaborare i dati.
 
-Il payload dell’evento include informazioni quali il tipo di evento, lo stato di riproduzione, il tempo di riproduzione corrente e metadati aggiuntivi. Questi eventi possono essere utilizzati per supportare il tracciamento di Analytics, interazioni personalizzate o l’integrazione con sistemi esterni
+Il payload dell’evento include informazioni quali il tipo di evento, lo stato di riproduzione, il tempo di riproduzione corrente e metadati aggiuntivi. Questi eventi possono essere utilizzati per supportare il tracciamento di Analytics, le interazioni personalizzate o l’integrazione con sistemi esterni.
 
 Adobe consiglia di convalidare l’origine del messaggio per garantire che gli eventi vengano elaborati solo dai domini Dynamic Media attendibili.
 
