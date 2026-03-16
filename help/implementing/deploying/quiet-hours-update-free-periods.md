@@ -4,7 +4,7 @@ description: Scopri come ridurre al minimo l’impatto operativo degli aggiornam
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-
 È possibile configurare questi intervalli di tempo utilizzando due opzioni di pianificazione:
 
 * **Ore non interattive** - È possibile definire un intervallo di tempo giornaliero (fino a 8 ore) in cui non verranno eseguiti aggiornamenti.
-* **Aggiorna periodi liberi** - È possibile definire un periodo di tempo di 7 giorni in cui gli aggiornamenti non verranno eseguiti. È possibile avere fino a tre periodi liberi di aggiornamento in un intervallo di 12 mesi.
+* **Aggiorna periodi liberi** - È possibile definire un periodo di tempo di 7 giorni in cui gli aggiornamenti non verranno eseguiti. In una finestra mobile di 365 giorni è possibile avere fino a tre periodi liberi di aggiornamento.
 
 Le funzioni di aggiornamento dei periodi liberi e delle ore non interattive sono configurate in base al singolo programma. Tieni presente che solo gli utenti con il &quot;ruolo utente&quot; di **Proprietario business** e **Responsabile dell&#39;implementazione** possono visualizzare e utilizzare queste funzionalità.
 
