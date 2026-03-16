@@ -6,18 +6,18 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3033'
 ht-degree: 4%
 
 ---
 
-# Utilizzare i temi per assegnare uno stile ai Componenti core basati su Adaptive Forms{#themes-for-af-using-core-components}
+# Utilizzare i temi per assegnare uno stile ai Componenti core basati su Adaptive Forms
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 Puoi creare e applicare temi per assegnare uno stile a un modulo adattivo. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Un tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo e può essere riutilizzato in più Forms adattivi.
@@ -54,7 +54,7 @@ Forms as Cloud Service fornisce i temi di stile per moduli adattivi per Forms ba
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Puoi [personalizzare uno di questi temi per creare un nuovo tema](#customize-a-theme-core-components).
+Puoi [personalizzare uno di questi temi per creare un nuovo tema](#customize-a-theme).
 
 >[!NOTE]
 >
@@ -62,20 +62,20 @@ Puoi [personalizzare uno di questi temi per creare un nuovo tema](#customize-a-t
 
 ![Flusso di lavoro di personalizzazione tema](/help/forms/assets/workflow-of-customization-of-theme.png)
 
-## Personalizzare un tema {#customize-a-theme-core-components}
+## Personalizzare un tema
 
 La personalizzazione di un tema si riferisce al processo di modifica, formattazione e personalizzazione dell’aspetto di un tema. Quando si personalizza un tema, è possibile modificarne gli elementi di progettazione, il layout, i colori, la composizione tipografica e, a volte, il codice sottostante. Consente di creare un aspetto univoco e personalizzato per il sito web o l’applicazione, mantenendo la struttura e le funzionalità di base fornite dal tema.
 
-### Prerequisiti {#prerequisites-to-customize}
+### Prerequisiti
 
-* Acquisisci familiarità con [la configurazione di una pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline) e avere conoscenze di base su come impostare una pipeline ti aiuta a gestire e distribuire in modo efficiente le personalizzazioni dei temi.
-* Scopri come [configurare un utente con il ruolo di collaboratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=it). Le informazioni su come configurare un utente con il ruolo di collaboratore consentono di concedere le autorizzazioni necessarie per la personalizzazione del tema.
+* Acquisisci familiarità con [la configurazione di una pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e avere conoscenze di base su come impostare una pipeline ti aiuta a gestire e distribuire in modo efficiente le personalizzazioni dei temi.
+* Scopri come [configurare un utente con il ruolo di collaboratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Le informazioni su come configurare un utente con il ruolo di collaboratore consentono di concedere le autorizzazioni necessarie per la personalizzazione del tema.
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi). Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
 ### Configurare l’ambiente
 
-* Configura una [pipeline di distribuzione front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=it) per l&#39;ambiente Cloud Service. In alternativa, puoi configurare la pipeline in un secondo momento, dando la flessibilità di assegnare la priorità ai test e perfezionando il tema prima di impostare la pipeline di distribuzione.
+* Configura una [pipeline di distribuzione front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) per l&#39;ambiente Cloud Service. In alternativa, puoi configurare la pipeline in un secondo momento, dando la flessibilità di assegnare la priorità ai test e perfezionando il tema prima di impostare la pipeline di distribuzione.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -86,21 +86,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 Dopo aver appreso i prerequisiti e configurato l’ambiente di sviluppo, sei pronto per iniziare a personalizzare o formattare il tema in base alle tue esigenze specifiche.
 
-### Personalizzare un tema {#steps-to-customize-a-theme-core-components}
+### Personalizzare un tema
 
 La personalizzazione di un tema è un processo in più fasi. Per personalizzare il tema, esegui i passaggi nell’ordine elencato:
 
-1. [Clona un tema](#download-a-theme-core-components)
-1. [Imposta il nome di un tema](#set-name-of-theme)
-1. [Personalizzare un tema](#customize-the-theme)
-1. [Testare un tema](#test-the-theme)
-1. [Distribuire un tema](#deploy-the-theme)
+1. [Clona un tema](#1-clone-a-theme)
+1. [Imposta il nome di un tema](#2-set-name-of-a-theme)
+1. [Personalizzare un tema](#3-customize-a-theme)
+1. [Testare un tema](#4-test-a-customized-theme)
+1. [Distribuire un tema](#5-deploy-a-theme)
 
 Gli esempi forniti nel documento sono basati sul tema **Canvas**, ma è importante notare che è possibile clonare qualsiasi tema e personalizzarlo utilizzando le stesse istruzioni. Queste istruzioni sono applicabili a qualsiasi tema, consentendo di modificare i temi in base alle esigenze specifiche.
 
 Iniziamo con un processo per creare un’esperienza con il marchio per il Forms adattivo basato su Componenti core utilizzando i temi?
 
-#### &#x200B;1. Clonare un tema {#download-a-theme-core-components}
+#### &#x200B;1. Clonare un tema
 
 Per clonare un tema per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi:
 
@@ -129,7 +129,7 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
    Dopo aver eseguito correttamente il comando, nella cartella `aem-forms-theme-canvas` del computer è disponibile una copia locale del tema.
 
 
-#### &#x200B;2. Impostare il nome di un tema {#set-name-of-theme}
+#### &#x200B;2. Impostare il nome di un tema
 
 >[!NOTE]
 >
@@ -177,15 +177,15 @@ Per clonare un tema, attenersi alle istruzioni riportate di seguito.
 * Si consiglia di aggiornare il tema `version` nel file `Package.json` e nel file `Package-lock.json` per riflettere con precisione le modifiche e i miglioramenti apportati nel tempo al tema.
 * Per informazioni importanti sull&#39;utilizzo, sulle istruzioni di installazione e su altri dettagli rilevanti, si consiglia di aggiornare il nome del tema nel file `ReadMe`.
 
-#### &#x200B;3. Personalizzare un tema {#customize-the-theme}
+#### &#x200B;3. Personalizzare un tema
 
 È possibile personalizzare singoli componenti o apportare modifiche a livello di tema utilizzando le variabili globali di un tema. Eventuali modifiche apportate alle variabili globali influiscono su tutti i singoli componenti. Ad esempio, è possibile utilizzare le variabili globali per modificare il colore del bordo di tutti i componenti di un modulo adattivo e un colore di riempimento luminoso per impostare CTA (Call to action) utilizzando il componente pulsante:
 
-* [Impostare gli stili del livello tema](#theme-customization-global-level)
+* [Impostare gli stili del livello tema](#set-theme-level-styles)
 
-* [Impostare gli stili a livello di componente](#component-based-customization)
+* [Impostare gli stili a livello di componente](#set-component-level-styles)
 
-##### Impostare gli stili del livello tema{#theme-customization-global-level}
+##### Impostare gli stili del livello tema
 
 Il file `variable.scss` contiene le variabili globali del tema. Aggiornando queste variabili, puoi apportare modifiche relative allo stile a livello di tema. Per applicare gli stili a livello di tema, effettua le seguenti operazioni:
 
@@ -197,7 +197,7 @@ Il file `variable.scss` contiene le variabili globali del tema. Aggiornando ques
 
 Analogamente, è possibile utilizzare il file `variable.scss` per impostare la famiglia e il tipo di carattere, i colori del tema e del carattere, la dimensione del carattere, la spaziatura del tema, l&#39;icona di errore, gli stili del bordo del tema e altre variabili che influiscono su più componenti del modulo adattivo.
 
-##### Impostare gli stili a livello di componente {#component-based-customization}
+##### Impostare gli stili a livello di componente
 
 Puoi anche modificare il font, il colore, le dimensioni e altre proprietà CSS di un componente core Modulo adattivo specifico. Ad esempio, pulsante, casella di controllo, contenitore, piè di pagina e altro ancora. Puoi assegnare uno stile a un pulsante o a una casella di controllo modificando il file CSS del componente specifico in modo da allinearlo allo stile della tua organizzazione. Per personalizzare uno stile di un componente:
 
@@ -219,14 +219,14 @@ Puoi anche modificare il font, il colore, le dimensioni e altre proprietà CSS d
    >
    > Quando uno stile viene definito sia a livello di tema che a livello di componente, lo stile definito a livello di componente ha la priorità.
 
-#### &#x200B;4. Testare un tema personalizzato {#test-the-theme}
+#### &#x200B;4. Testare un tema personalizzato
 
 Per visualizzare in anteprima e testare le modifiche nell’ambiente locale e personalizzare il tema in base ai requisiti per i diversi componenti di AEM, effettua le seguenti operazioni:
 
-* 4.1 [Configurare un ambiente locale per il test](#rename-env-file-theme-folder)
-* 4.2 [Verifica il tema utilizzando l&#39;ambiente locale](#start-a-local-proxy-server)
+* 4.1 [Configurare un ambiente locale per il test](#41-configure-a-local-environment-for-testing)
+* 4.2 [Verifica il tema utilizzando l&#39;ambiente locale](#42-test-the-theme-using-a-local-environment)
 
-##### 4.1. Configurare un ambiente locale per il test {#rename-env-file-theme-folder}
+##### 4.1. Configurare un ambiente locale per il test
 
 1. Apri la cartella dei temi nell’IDE. Aprire ad esempio la cartella `aem-forms-theme-canvas` nell&#39;editor di codice di Visual Studio.
 1. Rinomina il file `env_template` in `.env` nella cartella dei temi e aggiungi i seguenti parametri:
@@ -251,7 +251,7 @@ Per visualizzare in anteprima e testare le modifiche nell’ambiente locale e pe
 
    ![Struttura Tema Area Di Lavoro](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Testare il tema utilizzando un ambiente locale {#start-a-local-proxy-server}
+##### 4.2 Testare il tema utilizzando un ambiente locale
 
 1. Passa alla cartella principale della cartella dei temi. In questo caso, il nome della cartella dei temi è `aem-forms-theme-canvas`.
 1. Apri il prompt dei comandi o il terminale.
@@ -319,18 +319,19 @@ Puoi anche testare il tema per il modulo adattivo ospitato nell’istanza as a C
 
 Puoi visualizzare in anteprima il modulo adattivo con le modifiche più recenti. Una volta apportate le modifiche desiderate in una cartella dei temi, distribuisci il tema nell’ambiente AEM Cloud Service utilizzando la pipeline front-end.
 
-#### &#x200B;5. Distribuire un tema {#deploy-the-theme}
+#### &#x200B;5. Distribuire un tema
 
 Per distribuire il tema nell’ambiente Cloud Service utilizzando la pipeline front-end:
 
-* 5.1 [Crea un archivio per il tema](#create-a-new-theme-repo)
-* 5.2 [Invia le modifiche all&#39;archivio](#committing-the-changes)
-* 5.3 [Imposta la versione di Node.js su 20](#53-set-the-nodejs-version-to-20-set-node)
-* 5.4 [Eseguire la pipeline front-end](#run-a-frontend-pipeline)
+* 5.1 [Crea un archivio per il tema](#51-create-a-repository-for-theme)
+* 5.2 [Invia le modifiche all&#39;archivio](#52-push-the-changes-to-the-repository)
+* 5.3 [Aggiungi pipeline front-end](#53-add-the-frontend-pipeline)
+* 5.4 [Imposta la versione di Node.js su 20](#54-set-the-nodejs-version-to-20)
+* 5.5 [Eseguire la pipeline front-end](#55-run-the-frontend-pipeline)
 
-##### 5.1 Creare un archivio per il tema{#create-a-new-theme-repo}
+##### 5.1 Creare un archivio per il tema
 
-Per distribuire il tema è necessario un repository. Accedi al tuo [archivio AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git) e aggiungi un nuovo archivio per il tema.
+Per distribuire il tema è necessario un repository. Accedi al tuo [archivio AEM Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) e aggiungi un nuovo archivio per il tema.
 
 1. Creare un nuovo archivio per un tema facendo clic su **[!UICONTROL Archivi]** > **[!UICONTROL Aggiungi archivio]**.
 
@@ -352,7 +353,7 @@ Per distribuire il tema è necessario un repository. Accedi al tuo [archivio AEM
    >* Per distribuire temi diversi, devi creare pipeline front-end separate.
    >* È possibile, ad esempio, utilizzare lo stesso repository, come `custom-canvas-theme-repo`, per i temi Canvas, WKND e EASEL. Tuttavia, per distribuire i temi, è necessario creare pipeline front-end separate. Le personalizzazioni future per un tema specifico vengono distribuite utilizzando la pipeline front-end corrispondente.
 
-##### 5.2. Inviare le modifiche all’archivio {#committing-the-changes}
+##### 5.2. Inviare le modifiche all’archivio
 
 Ora, invia le modifiche all’archivio dei temi del tuo Cloud Service AEM Forms.
 
@@ -378,25 +379,9 @@ Ora, invia le modifiche all’archivio dei temi del tuo Cloud Service AEM Forms.
 
    ![Commit delle modifiche eseguito](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Imposta la versione di Node.js su 20 {#set-node}
+##### 5.3 Aggiungere la pipeline front-end
 
-Per impostare la versione di Node.js su 20 utilizzando la configurazione della pipeline:
-
-1. Vai alla sezione **Pipeline** e individua la pipeline front-end.
-2. Sul lato destro della pipeline, fai clic sul menu a tre punti **⋯** e seleziona **Visualizza/Modifica variabili** dal menu a discesa.
-3. Nella finestra di dialogo **Configurazione variabili**, compila i campi come segue:
-   * **NOME** - NODE_VERSION
-   * **VALORE** - 20
-   * **PASSAGGIO APPLICATO** - Build
-   * **TIPO** - Variabile
-4. Fai clic su **Salva** per applicare la configurazione.
-
-![configurazione pipeline](/help/forms/assets/pipeline-config.png)
-
-
-##### 5.4 Eseguire la pipeline front-end {#run-a-frontend-pipeline}
-
-Il tema viene distribuito utilizzando la [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=it). Per distribuire il tema, effettua le seguenti operazioni:
+Il tema viene distribuito utilizzando la [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Per distribuire il tema, effettua le seguenti operazioni:
 
 1. Accedi al tuo archivio AEM Cloud Manager.
 1. Fai clic sul pulsante **[!UICONTROL Aggiungi]** nella sezione **[!UICONTROL Pipeline]**.
@@ -414,12 +399,30 @@ Il tema viene distribuito utilizzando la [pipeline front-end](https://experience
 
    >[!NOTE]
    >
-   > Per garantire che la pipeline front-end non abbia esito negativo in Cloud Manager, [imposta la versione di Node.js su 20](#set-the-nodejs-vesrion-to-20).
+   > Per garantire che la pipeline front-end non abbia esito negativo in Cloud Manager, [imposta la versione di Node.js su 20](#54-set-the-nodejs-version-to-20).
 
-1. Fate clic con il pulsante destro del mouse sulla tubazione creata.
+##### 5.4 Imposta la versione di Node.js su 20
+
+Per impostare la versione di Node.js su 20 utilizzando la configurazione della pipeline:
+
+1. Vai alla sezione **Pipeline** e individua la pipeline front-end.
+2. Sul lato destro della pipeline, fai clic sul menu a tre punti **⋯** e seleziona **Visualizza/Modifica variabili** dal menu a discesa.
+3. Nella finestra di dialogo **Configurazione variabili**, compila i campi come segue:
+   * **NOME** - NODE_VERSION
+   * **VALORE** - 20
+   * **PASSAGGIO APPLICATO** - Build
+   * **TIPO** - Variabile
+4. Fai clic su **Salva** per applicare la configurazione.
+
+![configurazione pipeline](/help/forms/assets/pipeline-config.png)
+
+
+##### 5.5 Eseguire la pipeline front-end
+
+1. Vai alla sezione **Pipeline** e individua la pipeline front-end.
 1. Fare clic su **[!UICONTROL Esegui]**.
 
-   ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
+   ![run-a-pipeline](/help/forms/assets/canvas-theme-run-pipeline.png)
 
 Una volta completata la build, il tema diventa disponibile nell’istanza di authoring per l’utilizzo. Viene visualizzato nella scheda **[!UICONTROL Stile]** della procedura guidata di creazione dei moduli adattivi durante la creazione di un modulo adattivo.
 
@@ -427,7 +430,7 @@ Una volta completata la build, il tema diventa disponibile nell’istanza di aut
 
 Il tema personalizzato consente di creare un’esperienza con il marchio per un Forms adattivo basato su Componenti core.
 
-## Applicare un tema a un modulo adattivo {#using-theme-in-adaptive-form}
+## Applicare un tema a un modulo adattivo
 
 I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
@@ -443,7 +446,7 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo adattivo per definire lo stile durante la creazione di un modulo adattivo.
 
-## Best practice {#best-practices}
+## Best practice
 
 * **Evitare risorse da un altro tema**
 
@@ -455,7 +458,7 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 
   La modifica della larghezza del layout del pannello contenitore non è consigliata. Quando si specifica la larghezza di un pannello contenitore, questo diventa statico e non si adatta a visualizzazioni diverse.
 
-## Domande frequenti {#faq}
+## Domande frequenti
 
 **Q:** Quale personalizzazione ha priorità quando si eseguono personalizzazioni in una cartella dei temi a livello globale e di componente?
 
@@ -463,7 +466,7 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 
 
 
-## Consulta anche {#see-also}
+## Consulta anche
 
 {{see-also}}
 
@@ -471,4 +474,4 @@ I temi per moduli adattivi vengono utilizzati come parte di un modello di modulo
 * [Impostare il layout dei moduli per dimensioni di schermo e tipi di dispositivi diversi](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generare documenti di record per Forms adattivo (componenti core)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Creare un Forms adattivo con sezioni ripetibili](/help/forms/create-forms-repeatable-sections.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
