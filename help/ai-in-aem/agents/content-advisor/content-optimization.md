@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’agente di ottimizzazione dei contenuti p
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Puoi accedere all’agente di ottimizzazione dei contenuti in AEM tramite l’As
 
 ## Casi d’uso comuni e prompt di esempio {#use-cases-prompts}
 
-Utilizzare l&#39;agente di ottimizzazione del contenuto ricercando le risorse corrette tramite l&#39;agente di individuazione contenuto [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Una volta visualizzate le immagini rilevanti, gli utenti possono generare varianti ottimizzate o specifiche per il canale per una o più risorse direttamente dai risultati della ricerca. Questo flusso di lavoro garantisce input di alta qualità e risultati di ottimizzazione sempre migliori. [Per ulteriori informazioni, vedere l&#39;elenco completo delle ottimizzazioni disponibili](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Utilizzare l&#39;agente di ottimizzazione del contenuto ricercando le risorse corrette tramite l&#39;agente di individuazione contenuto [.](/help/ai-in-aem/agents/content-advisor/discovery.md) Una volta visualizzate le immagini rilevanti, gli utenti possono generare varianti ottimizzate o specifiche per il canale per una o più risorse direttamente dai risultati della ricerca. In alternativa, gli utenti possono generare varianti specificando l’UUID della risorsa o il percorso della risorsa nel prompt, senza dover eseguire una ricerca precedente. Questo flusso di lavoro garantisce input di alta qualità e risultati di ottimizzazione sempre migliori. [Per ulteriori informazioni, vedere l&#39;elenco completo delle ottimizzazioni disponibili](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **Creazione rappresentazione ad alta risoluzione**
 

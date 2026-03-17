@@ -4,21 +4,21 @@ description: Scopri come utilizzare l’agente di individuazione contenuti per f
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 1%
+source-wordcount: '2066'
+ht-degree: 0%
 
 ---
 
 
 # Agente di individuazione contenuto {#discovery-agent}
 
-Come parte dell&#39;[agente di Content Advisor](/help/ai-in-aem/agents/content-advisor/overview.md) di AEM, l&#39;agente di individuazione dei contenuti distribuisce i contenuti AEM su richiesta tramite messaggi di richiesta espliciti per un&#39;esperienza di individuazione semplificata e senza clic. Esegue una ricerca intelligente tra Assets, Frammenti di contenuto e Forms adattivo per fornire materiali rilevanti come immagini, video, documenti PDF, articoli e modelli di modulo. Con il linguaggio naturale, puoi cercare contenuti senza creare query complesse o applicare filtri nell’interfaccia di AEM Assets. In base al prompt, l’agente restituisce i risultati curati, insieme ai metadati delle risorse e agli URL di consegna, pronti per essere incorporati in altre applicazioni.
+Come parte dell&#39;[agente di Content Advisor](/help/ai-in-aem/agents/content-advisor/overview.md) di AEM, l&#39;agente di individuazione dei contenuti distribuisce i contenuti AEM su richiesta tramite messaggi di richiesta espliciti per un&#39;esperienza di individuazione semplificata e senza clic. Esegue ricerche in modo intelligente in Assets, frammenti di contenuto, pagine AEM Sites e Forms adattivo per fornire materiali rilevanti come immagini, video, documenti PDF, articoli e modelli di moduli. Con il linguaggio naturale, puoi cercare contenuti senza creare query complesse o applicare filtri nell’interfaccia di AEM Assets. In base al prompt, l’agente restituisce i risultati curati, insieme ai metadati delle risorse e agli URL di consegna, pronti per essere incorporati in altre applicazioni.
 
 Alcuni dei vantaggi principali dell&#39;agente di individuazione dei contenuti includono:
 
-* **Individuazione unificata dei contenuti**: consente di accedere a tutti i tipi di contenuti AEM, ad esempio immagini, video, documenti PDF, articoli e moduli, da un&#39;unica interfaccia di conversazione.
+* **Individuazione unificata dei contenuti**: consente di accedere a tutti i tipi di contenuti AEM, ad esempio immagini, video, documenti PDF, articoli, pagine e moduli, da un&#39;unica interfaccia di conversazione.
 
 * **Pianificazione più rapida delle campagne**: raccogli rapidamente elementi visivi e moduli per le campagne di marketing su canali e-mail, web e social.
 
@@ -38,12 +38,15 @@ Alcuni dei vantaggi principali dell&#39;agente di individuazione dei contenuti i
 
 L’agente di individuazione contenuti fornisce le seguenti competenze:
 
-* **Individuazione contenuti in linguaggio naturale**\
-  L’agente di individuazione dei contenuti consente agli utenti di trovare risorse rilevanti, frammenti di contenuto e moduli adattivi all’interno di Adobe Experience Manager (AEM) utilizzando semplici prompt del linguaggio naturale, senza richiedere query di ricerca complesse.
+* **Individuazione contenuti in linguaggio naturale**
 
-* **Individuazione risorse basata su tag**
+  L’agente di individuazione dei contenuti consente agli utenti di trovare risorse rilevanti, frammenti di contenuto, moduli adattivi e pagine AEM Sites all’interno di Adobe Experience Manager (AEM) utilizzando semplici prompt del linguaggio naturale, senza richiedere query di ricerca complesse.
 
-  L’agente di individuazione dei contenuti utilizza i prompt in linguaggio naturale per trovare le risorse associate a tag specifici nell’archivio AEM, consentendo agli utenti di accedere rapidamente ai contenuti organizzati o non organizzati in base alla tassonomia dell’organizzazione.
+* **Individuazione risorse basata su metadati**
+
+  L’agente di individuazione dei contenuti utilizza i prompt in linguaggio naturale per trovare le risorse in base ai metadati disponibili in AEM. Gli utenti possono individuare le risorse utilizzando metadati quali tag, ID e-mail dell’autore o dell’editore, date di pubblicazione o modifica, tipo di risorsa MIME, tipo di risorsa, stato, proprietà dei metadati personalizzate definite nei moduli di metadati nella vista Assets o Admin e così via. Per l&#39;elenco completo, vedere [Casi d&#39;uso comuni e prompt di esempio](#use-cases-prompts).
+
+  Puoi anche combinare più filtri di metadati in un singolo prompt per perfezionare i risultati della ricerca.
 
 * **Individuazione contenuto basato su cartelle:**\
   L’agente di individuazione contenuti può identificare le risorse interpretando i prompt del linguaggio naturale che fanno riferimento ai nomi delle cartelle in AEM. Gli utenti possono semplicemente menzionare la cartella nel prompt, senza navigare manualmente nell’archivio, riducendo in modo significativo il numero di clic necessari per individuare il contenuto corretto.
@@ -78,22 +81,51 @@ Per informazioni sull’endpoint MCP per accedere all’agente di individuazione
 
 ### Risorse {#discovery-agent-use-cases-assets}
 
-**Individuazione risorse basata su tag**
+**Individuazione risorse basata su metadati**
 
-L’agente di individuazione dei contenuti utilizza i prompt in linguaggio naturale per trovare le risorse associate a tag specifici nell’archivio AEM, consentendo agli utenti di accedere rapidamente ai contenuti organizzati in base alla tassonomia della propria organizzazione.
+L’agente di individuazione dei contenuti utilizza i prompt in linguaggio naturale per trovare le risorse in base ai metadati disponibili in AEM. Gli utenti possono individuare le risorse utilizzando le seguenti proprietà di metadati: Tag, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, file size, image width, image height, e più filtri di metadati in un singolo prompt.
 
-Esempio di prompt:
+L’agente di individuazione contenuti cerca anche le proprietà personalizzate disponibili negli schemi di metadati per la visualizzazione Amministratore e nei moduli di metadati per la visualizzazione Assets. Puoi modificare le richieste di conseguenza in base ai valori di ricerca disponibili all’interno di tali proprietà personalizzate delle risorse.
 
-Mostra le immagini con tag `office` nella cartella `WKND`.
+>[!NOTE]
+>
+>Per migliorare le prestazioni dell&#39;individuazione, indicizzare le proprietà dei metadati personalizzati pertinenti. Le proprietà indicizzate consentono all&#39;agente di recuperare più rapidamente il contenuto corrispondente quando gli utenti le includono nelle richieste.
+
+
+Prompt di esempio:
+
+* **Ricerca basata sui tag**: visualizza le immagini con tag `office` nella cartella `WKND`.
+* **Ricerca basata su formato file, tipo di risorsa, stato risorsa e Pubblicato da ID e-mail**: visualizza le immagini in formato `.PNG` che sono `approved` e `published by <user email ID>`.
+* **Ricerca basata su formato file, tipo di risorsa, stato risorsa e Creato da ID e-mail**: mostra video in formato `.mp4` approvati e `created by <user email ID>`.
+* **Ricerca in base al formato di file, al tipo di risorsa, allo stato della risorsa e alla data di creazione**: mostra le immagini in formato `.PNG` create dopo il 1° gennaio 2025 e `published by <user email ID>`
+* **Ricerca basata sul tipo MIME, Data creazione e Pubblicato da ID e-mail**: mostra `image/jpeg` creato dopo `January 1, 2025` e `published by <user email ID>`.
+* **Ricerca basata sul formato di file e sulle proprietà dei metadati personalizzate**: visualizza le immagini in formato `.JPEG` con `Product SKU ID as <SKU value>`.
+
+* **Cerca le risorse con metadati mancanti**: il campo Mostra risorse create negli ultimi 90 giorni con `<Name of metadata property including custom properties>` è vuoto.
+
+* **Cerca le risorse utilizzando le dimensioni del file, la larghezza dell&#39;immagine e l&#39;altezza dell&#39;immagine**: mostra immagini di dimensioni superiori a 5 MB con una larghezza superiore a 2000 pixel e un&#39;altezza superiore a 1200 pixel.
+
 
 **Individuazione contenuto basato su cartelle:**\
-L’agente di individuazione contenuti può identificare le risorse interpretando i prompt del linguaggio naturale che fanno riferimento ai nomi delle cartelle in AEM. Gli utenti possono semplicemente menzionare la cartella nel prompt, senza navigare manualmente nell’archivio, riducendo in modo significativo il numero di clic necessari per individuare il contenuto corretto.
+L’agente di individuazione dei contenuti può identificare le risorse interpretando i prompt del linguaggio naturale che fanno riferimento ai nomi delle cartelle in AEM. Gli utenti possono semplicemente menzionare la cartella nel prompt, senza navigare manualmente nell’archivio, riducendo in modo significativo il numero di clic necessari per individuare il contenuto corretto.
 
 Prompt di esempio:
 
 * La cartella `WKND` contiene svg?
 * Mostra le risorse modificate dopo `Nov 1 2025` nella cartella `WKND`.
 * Elencare `lifestyle` immagini nella cartella `WKND`.
+
+**Ulteriori domande per abilitare l&#39;individuazione del contenuto basato su cartelle**
+
+Quando un nome di cartella viene incluso in un prompt (senza il percorso completo della risorsa), l&#39;agente di individuazione contenuto verifica innanzitutto la presenza di una cartella corrispondente nel percorso radice `/content/dam/<folder-name>`.
+
+Se non viene trovata una cartella corrispondente a livello di radice, l&#39;agente suggerisce percorsi di cartella alternativi in cui il nome di cartella specificato esiste nell&#39;archivio. In questo modo gli utenti possono identificare rapidamente la posizione corretta senza sfogliare manualmente la struttura delle cartelle.
+
+Ad esempio, il percorso `/content/dam/<folder-name>` non è stato trovato. Intendevi una di queste?
+
+* Opzione 1
+
+* Opzione 2
 
 **Individuazione risorse basata sul formato**
 
@@ -111,9 +143,37 @@ Esempio di prompt:
 
 Mostra le risorse con la persona nell’orientamento orizzontale.
 
+**Espansione dei risultati della ricerca**
+
+L&#39;agente di individuazione contenuto restituisce i primi 20 risultati più rilevanti per tipo di contenuto per un prompt. Se sono disponibili altri risultati corrispondenti, gli utenti possono richiedere il set successivo immettendo un prompt di completamento come `show me more`. L’agente recupera quindi il set successivo di risultati dalla ricerca originale, consentendo agli utenti di esplorare progressivamente set di risultati più grandi senza perfezionare il prompt.
+
+**Ricerca di risorse simili**
+
+L&#39;agente di individuazione contenuto consente agli utenti di trovare risorse simili a un risultato specifico restituito nei risultati di ricerca. Quando l’agente visualizza i primi risultati per un prompt, puoi richiedere risorse simili facendo riferimento alla posizione di un elemento nell’elenco dei risultati. Ad esempio, un prompt come `find assets similar to the 3rd result` indica all&#39;agente di identificare e restituire altre risorse rilevanti correlate a tale elemento. In questo modo gli utenti possono individuare rapidamente i contenuti correlati senza dover creare un nuovo prompt di ricerca.
+
+**Ordinamento dei risultati della ricerca**
+
+L’agente di individuazione contenuti consente agli utenti di ordinare i risultati della ricerca direttamente nei prompt del linguaggio naturale. Gli utenti possono specificare i criteri di ordinamento, ad esempio la data di modifica, la data di creazione o il nome della risorsa, e scegliere l’ordine crescente o decrescente.
+
+Prompt di esempio:
+
+* Trova le immagini di montagna in ordine decrescente in base alla data di modifica (per prima cosa, mostra le risorse modificate più di recente).
+
+* Mostra le immagini di montagna ordinate per nome in ordine crescente (mostra i nomi delle immagini che iniziano con la lettera A seguita da B e così via).
+
+### Pagine AEM Sites {#content-discovery-agent-aem-sites-pages}
+
+L’agente di individuazione dei contenuti consente agli utenti di individuare rapidamente le pagine AEM Sites rilevanti interpretando i prompt in linguaggio naturale che fanno riferimento ad argomenti della pagina, campagne o altre parole chiave contestuali. L’agente esegue una ricerca full-text in base alle parole chiave nel prompt per identificare le pagine corrispondenti nell’archivio AEM, eliminando la necessità di sfogliare manualmente la struttura Sites.
+
+Prompt di esempio:
+
+* Trova tutte le pagine di AEM Sites per la campagna estiva.
+
+* Trova le pagine AEM Sites con un tema Coffee.
+
 ### Frammenti di contenuto {#discovery-agent-use-cases-content-fragments}
 
-L’agente di individuazione dei contenuti consente agli utenti di individuare rapidamente i frammenti di contenuto giusti interpretando i riferimenti in linguaggio naturale ai nomi delle campagne, ai marchi di prodotto, allo stato della pubblicazione e alle attività di creazione recenti. Consente ai team di creare frammenti pronti per la campagna e visualizzare contenuti specifici per il brand, il tutto senza sfogliare manualmente le cartelle o applicare più filtri in AEM.
+L’agente di individuazione dei contenuti consente agli utenti di individuare rapidamente i frammenti di contenuto corretti interpretando i riferimenti in linguaggio naturale ai nomi delle campagne, ai marchi di prodotto, allo stato della pubblicazione e alle attività di creazione recenti. Consente ai team di creare frammenti pronti per la campagna e visualizzare contenuti specifici per il brand, il tutto senza sfogliare manualmente le cartelle o applicare più filtri in AEM.
 
 Prompt di esempio:
 
@@ -127,7 +187,7 @@ Prompt di esempio:
 
 ### Forms {#discovery-agent-use-cases-forms}
 
-L’agente di individuazione contenuti consente di trovare rapidamente moduli adattivi utilizzando prompt in linguaggio naturale. Esegue la ricerca tra il contenuto del modulo e i metadati per trovare le corrispondenze in base alle parole chiave delle richieste. Ciò significa che è possibile individuare correttamente i moduli rilevanti anche se i termini di ricerca non sono nel titolo o nella descrizione del modulo.
+L’agente di individuazione dei contenuti consente di trovare rapidamente i moduli adattivi utilizzando i prompt in linguaggio naturale. Esegue la ricerca tra il contenuto del modulo e i metadati per trovare le corrispondenze in base alle parole chiave delle richieste. Ciò significa che è possibile individuare correttamente i moduli rilevanti anche se i termini di ricerca non sono nel titolo o nella descrizione del modulo.
 
 Prompt di esempio:
 
@@ -175,4 +235,8 @@ Specifica dettagli concisi nei prompt del linguaggio naturale in modo che l&#39;
 
 ## Limitazioni {#limitations-discovery-agent}
 
-L’agente di individuazione contenuto supporta i prompt basati sulle dimensioni solo per i tipi di formato immagine e SVG. Ad esempio, `Find images wider than 1080px`.
+* L&#39;agente di individuazione contenuto supporta i prompt basati sulle dimensioni solo per i tipi di formato immagine e SVG. Ad esempio, `Find images wider than 1080px`.
+
+* Gli amministratori di Content Hub possono accedere a Content Discovery Agent utilizzando il portale Content Hub; tuttavia, i risultati vengono recuperati solo dall&#39;istanza di authoring di AEM. Al momento gli utenti di Content Hub Limited non possono usufruire dei vantaggi dell&#39;agente di individuazione contenuti (disponibile a breve).
+
+* Trova funzionalità simile funziona solo per le immagini con [miglioramenti Tag avanzati](/help/assets/ai-generated-metadata-assets-view.md).
