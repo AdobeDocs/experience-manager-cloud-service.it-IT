@@ -1,14 +1,13 @@
 ---
 title: Nuovo visualizzatore video
-description: Il nuovo visualizzatore video in Dynamic Media offre un’esperienza di riproduzione video migliorata con prestazioni, accessibilità e configurabilità migliorate.
+description: Il nuovo Visualizzatore video di Dynamic Media offre un’esperienza di riproduzione video migliorata
 role: User
-source-git-commit: f069e2cfaaa3c82a1d2391403b23f1ccf1ec2866
+source-git-commit: 1ee4f1352a0fe1e8d1f2fd7b79555ad4144bb02c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1443'
 ht-degree: 2%
 
 ---
-
 
 # Nuovo visualizzatore video in Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -74,7 +73,7 @@ Per visualizzare in anteprima il nuovo visualizzatore video dalla pagina dei det
 3. Nel pannello a sinistra, fai clic su **Visualizzatori**.
 4. Nel pannello **Visualizzatori**, seleziona **Video (nuovo)**.
 5. Fai clic su **URL** per copiare il collegamento di anteprima.
-   ![Copia URL](/help/assets/assets/Copy-url1.jpg)
+   ![Copia URL](assets/Copy-url1.jpg)
 
 ## Utilizzare il nuovo Visualizzatore video in Sites {#use-in-sites}
 
@@ -90,7 +89,7 @@ Per aggiungere un video utilizzando il componente Dynamic Media, effettua le seg
 4. Fai clic sul componente per aprire il selettore risorse.
 5. Seleziona una risorsa video.
 
-![Trascina componente Dynamic Media](/help/assets/assets/drag-component.jpeg)
+![Trascina componente Dynamic Media](assets/drag-component.jpeg)
 
 ### Configurare il visualizzatore
 
@@ -98,13 +97,13 @@ Per configurare il predefinito visualizzatore, effettua le seguenti operazioni:
 
 1. Seleziona il componente **Dynamic Media** nella pagina.
 2. Fare clic su **Configura** nella barra degli strumenti del componente.
-   ![Apri impostazioni Dynamic Media](/help/assets/assets/configure-asset.png)
+   ![Apri impostazioni Dynamic Media](assets/configure-asset.png)
 
 3. Nella finestra di dialogo **Impostazioni Dynamic Media**, seleziona **Video (nuovo)** dall&#39;elenco a discesa **Predefinito visualizzatore**.
-   ![Seleziona predefinito visualizzatore video (nuovo)](/help/assets/assets/viewer-preset.jpeg)
+   ![Seleziona predefinito visualizzatore video (nuovo)](assets/viewer-preset.jpeg)
 
 4. Immettere i modificatori richiesti nel campo **Modificatori visualizzatore** (ad esempio, `autoplay=true&muted=true`).
-   ![Modificatori visualizzatore](/help/assets/assets/additional-modifiers.jpeg)
+   ![Modificatori visualizzatore](assets/additional-modifiers.jpeg)
 
 5. Salva le modifiche.
 
