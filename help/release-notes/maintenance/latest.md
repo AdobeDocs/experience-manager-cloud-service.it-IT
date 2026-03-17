@@ -4,9 +4,9 @@ description: Note sulla versione di manutenzione corrente di [!DNL Adobe Experie
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2a7b83b99547637e02ec7cef9c92c5dd794a9adc
+source-git-commit: b83d8736d47778ed133e0cc07207e02e581bbc69
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 36%
 
 ---
@@ -29,7 +29,7 @@ Con la versione di attivazione funzioni 2026.3.0 verrà fornito il set di funzio
 * GRANITE-57035: utilizza Bouncy Castle come provider di sicurezza predefinito.
 * GRANITE-59249: evita la registrazione di un provider di sicurezza nella JVM.
 * GRANITE-61564: impossibile aprire la visualizzazione delle impostazioni in `/security/users.html` per gli amministratori.
-* GRANITE-64748: OIDC: scadenza del cookie configurabile sling.oauth-request-key.
+* GRANITE-64748: OIDC: scadenza del cookie `sling.oauth-request-key` configurabile.
 * SITES-39767: supporta il valore nonce tramite l’attributo di richiesta (CSP).
 * SKYOPS-129301: imposta il livello di conformità javadoc jar delle API su 17.
 * GRANITE-64962: Aggiornare Apache Jackrabbit Oak alla versione 1.92.0.
