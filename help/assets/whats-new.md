@@ -35,7 +35,7 @@ In Content Hub, l’agente di governance di AEM garantisce che solo le persone g
 
 ![Panoramica sulla gestione delle autorizzazioni](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funzioni della versione di ottobre {#october-release-features}
@@ -56,7 +56,7 @@ Content Hub ora supporta il download di più rappresentazioni di risorse in una 
 
 Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funzioni della versione di agosto {#august-release-features}
 
