@@ -4,9 +4,9 @@ description: Scopri alcune delle nuove funzionalità introdotte in Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 621ae9a93ee8bd7d5f1b35387d4022072bfc46c6
+source-git-commit: 6aeab06b4dc48249e69dd265eefb99db9d45d6c3
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '964'
 ht-degree: 74%
 
 ---
@@ -35,7 +35,7 @@ In Content Hub, l’agente di governance di AEM garantisce che solo le persone g
 
 ![Panoramica sulla gestione delle autorizzazioni](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
 
 ## Funzioni della versione di ottobre {#october-release-features}
@@ -56,11 +56,7 @@ Content Hub ora supporta il download di più rappresentazioni di risorse in una 
 
 Gli amministratori di Content Hub ora possono fissare le raccolte in Content Hub per un accesso rapido. Le raccolte bloccate vengono visualizzate in una sezione **[!UICONTROL bloccata]** dedicata nella home page Raccolte, per facilitare la disponibilità di raccolte importanti.
 
-[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
-
->[!IMPORTANT]
->
->Queste funzioni sono disponibili come funzioni a disponibilità limitata. Puoi [creare e inviare un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per abilitarlo per la distribuzione.
+[!BADGE Approfondisci questa funzione]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 ## Funzioni della versione di agosto {#august-release-features}
 
