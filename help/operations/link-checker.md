@@ -36,7 +36,7 @@ Verifica collegamenti convalida [collegamenti interni](#internal) e [collegament
 I collegamenti interni sono collegamenti ad altri contenuti nell’archivio di AEM. I collegamenti interni possono essere aggiunti mediante il selettore di percorsi, l’editor Rich Text o un componente personalizzato. Ad esempio:
 
 * Crea la pagina `/content/wknd/us/en/adventures/ski-touring`
-* La pagina contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing` in un [componente testo.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* La pagina contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing` in un [componente testo.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
 
 I collegamenti interni vengono convalidati non appena l’autore di contenuto aggiunge un collegamento di questo tipo a una pagina. Se il collegamento non è più valido:
 
@@ -52,7 +52,7 @@ I collegamenti interni vengono convalidati non appena l’autore di contenuto ag
 I collegamenti esterni sono collegamenti a contenuti esterni all’archivio AEM. I collegamenti esterni possono essere aggiunti utilizzando l’editor Rich Text o un componente personalizzato. Ad esempio:
 
 * Crea la pagina `/content/wknd/us/en/adventures/ski-touring`
-* La pagina contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* La pagina contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
 
 I collegamenti esterni vengono convalidati per la sintassi e verificandone la disponibilità. Questo controllo viene eseguito in modo asincrono a un intervallo configurabile. Se Verifica collegamenti rileva un collegamento esterno non valido:
 
