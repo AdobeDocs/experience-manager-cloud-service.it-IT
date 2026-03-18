@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione di anteprima di Universal Editor
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,17 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Prossime funzionalità {#upcoming-features}
 
-* The items in the right rail can now be collapsed on the home screen.
-* The assets selector now supports filter definitions.
-* If there are no actions available for the selected item, the context menu no longer shows a chevron to access actions.
+* Gli elementi nella barra a destra ora possono essere compressi nella schermata iniziale.
+* Il selettore delle risorse ora supporta le definizioni dei filtri.
+* Se non sono disponibili azioni per l&#39;elemento selezionato, il menu di scelta rapida non mostra più una freccia per accedere alle azioni.
 
 ## Prossimi miglioramenti {#upcoming-improvements}
 
-* If there is a model/filter/component definition, it will get refetched when switching from one app to another in the editor.
-* Removing an image no longer leaves empty image tags when using DA as a back end.
-* Classes in blocks are now properly handled when using DA as a back end.
-* Open API now saves remote assets properly as objects.
+* Se esiste una definizione di modello/filtro/componente, questa verrà recuperata quando si passa da un’app all’altra nell’editor.
+* Se si rimuove un’immagine, non rimangono più tag immagine vuoti quando si utilizza DA come back-end.
+* Le classi nei blocchi ora vengono gestite correttamente quando si utilizza DA come back-end.
+* L’API aperta ora salva correttamente le risorse remote come oggetti.
+
+## Prossima modifica necessaria {#breaking-change}
+
+* Tutte le estensioni devono essere aggiornate a `@adobe/uix-guest` >= `1.1.7` per migliorare la stabilità.
