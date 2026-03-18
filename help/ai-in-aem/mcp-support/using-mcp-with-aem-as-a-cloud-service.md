@@ -4,9 +4,9 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 6fccf4f197fbfd38aa6a84422dc347b02d03061d
+source-git-commit: 3b935114d543a0bf99f3c03a2840942862396216
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
@@ -99,27 +99,20 @@ La configurazione di MCP per AEM prevede due parti principali:
 1. **Configurazione in ogni applicazione client MCP** in modo che l&#39;applicazione sappia come connettersi ai server MCP di AEM ed eseguire l&#39;accesso OAuth
 1. **Selezionare il server MCP** prima di avviare la richiesta, in modo che il client MCP possa utilizzarlo.
 
+Sono disponibili guide dettagliate relative a entrambi i passaggi per:
+
+* [Claude antropico](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [Cursore](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+
 ### Configurazione AEM {#aem-configuration}
 
 Per impostazione predefinita, le autorizzazioni di cui dispongono i singoli utenti all’interno di AEM regolano l’accesso ai server MCP di AEM. Quando un utente si autentica tramite un’applicazione client MCP, gli strumenti MCP applicano le stesse regole di accesso delle operazioni manuali in AEM. Un utente può eseguire solo azioni che è già autorizzato a eseguire.
 
 #### Applicazioni client MCP consentite {#permitted-mcp-client-applications}
 
-Le seguenti applicazioni client MCP sono consentite per impostazione predefinita:
-
-* Claude antropico
-* Codice Claude antropico
-* Codice incremento
-* Aumenta rientro
-* Cline
-* Cursore
-* Copilota GitHub
-* Kiro
-* Microsoft Copilot Studio
-* OpenAI ChatGPT
-* Codice OpenAI
-* OpenAI Codex CLI
-* Windsurf
+Tutte le applicazioni elencate in [Applicazioni MCP supportate](#supported-mcp-applications) sono consentite per impostazione predefinita.
 
 #### Limitazione dei server MCP {#restricting-mcp-servers}
 
@@ -144,29 +137,7 @@ Ogni utente esegue questo passaggio oppure un amministratore dell&#39;applicazio
 1. Verificare gli strumenti individuati
    * Una volta autenticata, l’applicazione rileva gli strumenti MCP dal server. È quindi possibile iniziare a richiedere al LLM di eseguire le operazioni di AEM.
 
-Di seguito sono elencate le applicazioni supportate, alcune delle quali sono collegate a guide dettagliate:
-
-#### Applicazioni chat (Web e desktop) {#setup-chat-applications}
-
-* [Claude antropico](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
-
-#### Strumenti per sviluppatori (estensioni IDE, app desktop, CLI) {#setup-developer-tools}
-
-* Codice Claude antropico (CLI, JetBrains, codice VS, cursore)
-* Codice incremento (CLI, JetBrains, codice VS, cursore)
-* App desktop con rientro aggiuntivo
-* Cline (JetBrains, codice VS, cursore)
-* [Cursore](/help/ai-in-aem/mcp-support/setup-cursor.md)
-* Copilota GitHub (codice VS)
-* Kiro (app desktop, CLI)
-* Codice OpenAI (app desktop)
-* OpenAI Codex CLI
-* Windsurf
-
-#### Piattaforme aziendali {#setup-enterprise-platforms}
-
-* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+Per l&#39;elenco completo delle applicazioni supportate, vedere [Applicazioni MCP supportate](#supported-mcp-applications).
 
 ## Autenticazione {#authentication}
 
@@ -207,9 +178,7 @@ Alcuni scenari rappresentativi includono:
    * Aggiorna i frammenti esistenti quando cambia la messaggistica della campagna.
 
 * **Gestione Assets**
-   * Importare risorse
-   * Trovare risorse esistenti
-   * Pubblicare le risorse.
+   * Importa risorse con controllo stato
 
 ### Esempio di flussi di lavoro {#example-workflows}
 
