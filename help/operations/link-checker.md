@@ -3,13 +3,13 @@ title: Verifica collegamenti
 description: Scopri in che modo Verifica collegamenti aiuta gli autori convalidando i collegamenti quando vengono aggiunti al contenuto e quali opzioni di configurazione offre.
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
 
 ---
-
 
 # Verifica collegamenti {#link-checker}
 
@@ -36,7 +36,7 @@ Verifica collegamenti convalida [collegamenti interni](#internal) e [collegament
 I collegamenti interni sono collegamenti ad altri contenuti nell’archivio di AEM. I collegamenti interni possono essere aggiunti mediante il selettore di percorsi, l’editor Rich Text o un componente personalizzato. Ad esempio:
 
 * Crea la pagina `/content/wknd/us/en/adventures/ski-touring`
-* La pagina contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing` in un [componente testo.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
+* La pagina contiene un collegamento a `/content/wknd/us/en/adventures/extreme-ironing` in un [componente testo.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 I collegamenti interni vengono convalidati non appena l’autore di contenuto aggiunge un collegamento di questo tipo a una pagina. Se il collegamento non è più valido:
 
@@ -52,7 +52,7 @@ I collegamenti interni vengono convalidati non appena l’autore di contenuto ag
 I collegamenti esterni sono collegamenti a contenuti esterni all’archivio AEM. I collegamenti esterni possono essere aggiunti utilizzando l’editor Rich Text o un componente personalizzato. Ad esempio:
 
 * Crea la pagina `/content/wknd/us/en/adventures/ski-touring`
-* La pagina contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
+* La pagina contiene un collegamento a `https://bunwarmerthermalunderwear.com` in un [componente testo.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 I collegamenti esterni vengono convalidati per la sintassi e verificandone la disponibilità. Questo controllo viene eseguito in modo asincrono a un intervallo configurabile. Se Verifica collegamenti rileva un collegamento esterno non valido:
 
@@ -69,10 +69,10 @@ Verifica collegamenti esterni si basa su diversi servizi e la comprensione del l
 
 1. Ogni volta che un autore di contenuti salva un collegamento a una pagina, viene attivato un gestore eventi.
 1. Il gestore eventi analizza tutto il contenuto in `/content` e verifica la presenza di collegamenti nuovi o aggiornati e li aggiunge a una cache per Verifica collegamenti.
-1. Il servizio **Day CQ Link Checker** viene quindi eseguito regolarmente per verificare la presenza di una sintassi valida nelle voci della cache.
+1. Il **servizio Adobe AEM Link Checker** viene quindi eseguito regolarmente per verificare la sintassi valida nelle voci della cache.
 1. I collegamenti convalidati dalla sintassi vengono quindi visualizzati nella finestra [Verifica collegamenti esterni.](#external-using) Tuttavia saranno in uno stato **Pending**.
-1. L&#39;attività **Day CQ Link Checker** viene quindi eseguita regolarmente per convalidare i collegamenti effettuando una chiamata GET.
-1. L&#39;attività **Day CQ Link Checker** aggiorna quindi le voci nella [finestra External Link Checker](#external-using) con i risultati delle chiamate GET.
+1. L&#39;**attività Verifica collegamenti di Adobe AEM** viene quindi eseguita regolarmente per convalidare i collegamenti effettuando una chiamata GET.
+1. L&#39;**attività Verifica collegamenti AEM di Adobe** aggiorna quindi le voci nella [finestra Verifica collegamenti esterni](#external-using) con i risultati delle chiamate di GET.
 
 ### Utilizzo di Verifica collegamenti esterni {#external-using}
 
@@ -93,7 +93,7 @@ Ogni voce della tabella rappresenta un collegamento esterno rilevato dal servizi
 * **Destinatario che inoltra**: la pagina di contenuto che contiene il collegamento esterno
    * Viene popolato solo [se configurato.](#configuring)
 * **Ultimo controllo** - L&#39;ultima volta che Verifica collegamenti ha convalidato il collegamento esterno
-   * La frequenza con cui vengono controllati i collegamenti [&#x200B; è configurabile.](#configuring)
+   * La frequenza con cui vengono controllati i collegamenti [ è configurabile.](#configuring)
 * **Ultimo stato** - L&#39;ultimo codice di stato di HTML restituito quando il collegamento selezionato ha controllato l&#39;ultimo collegamento esterno
 * **Ultima disponibilità** - Ora dall&#39;ultima disponibilità del collegamento per Verifica collegamenti
 * **Ultimo accesso** - Ora dall&#39;ultimo accesso alla pagina con il collegamento esterno nell&#39;interfaccia di creazione
@@ -109,12 +109,12 @@ Tutte le altre icone nella finestra Verifica collegamenti esterni sono inattive.
 
 Il Link Checker è disponibile automaticamente come strumento pronto all’uso in AEM. Tuttavia, esistono diverse configurazioni OSGi che possono essere modificate per modificarne il comportamento:
 
-* **Servizio di archiviazione informazioni verifica collegamenti Day CQ** - Questo servizio definisce la dimensione della cache di Verifica collegamenti nell&#39;archivio.
-* **Day CQ Link Checker Service** - Questo servizio esegue il controllo asincrono della sintassi dei collegamenti esterni.
+* **Servizio di archiviazione informazioni di Adobe AEM Link Checker** - Questo servizio definisce le dimensioni della cache di Link Checker nell&#39;archivio.
+* **Servizio Adobe AEM Link Checker** - Questo servizio esegue il controllo asincrono della sintassi dei collegamenti esterni.
    * È possibile definire il periodo di controllo e quali tipi di collegamenti vengono ignorati dallo strumento di controllo, tra le altre opzioni.
-* **Attività Verifica collegamenti Day CQ** - Questo servizio esegue la convalida GET dei collegamenti esterni.
+* **Attività Adobe AEM Link Checker** - Questo servizio esegue la convalida GET dei collegamenti esterni.
    * Consente definizioni separate degli intervalli per verificare collegamenti errati e validi tra le altre opzioni.
-* **Day CQ Link Checker Transformer** - Questo servizio converte i collegamenti in base a un set di regole definito dall&#39;utente.
+* **Adobe AEM Link Checker Transformer** - Questo servizio converte i collegamenti in base a un set di regole definito dall&#39;utente.
 
 Per ulteriori informazioni su come modificare le impostazioni OSGi, consulta il documento [Configurazione di OSGi](/help/implementing/deploying/configuring-osgi.md).
 
@@ -123,7 +123,7 @@ Per ulteriori informazioni su come modificare le impostazioni OSGi, consulta il 
 Puoi scegliere di disabilitare completamente Verifica collegamenti. Per eseguire questa operazione:
 
 1. Apri la console OSGi.
-1. Modifica il trasformatore **Day CQ Link Checker**
+1. Modifica il **trasformatore Adobe AEM Link Checker**
 1. Selezionare le opzioni che si desidera disattivare:
    * **Disabilita controllo** - per disabilitare la convalida dei collegamenti
    * **Disabilita riscrittura** - per disabilitare le trasformazioni dei collegamenti
