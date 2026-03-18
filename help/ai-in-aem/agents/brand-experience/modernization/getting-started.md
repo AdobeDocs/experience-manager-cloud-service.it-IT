@@ -4,9 +4,9 @@ description: Scopri i primi passaggi per diventare rapidamente produttivi con l�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
+source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ La console richiede un repository al primo accesso.
 
 1. Fare clic su **Connetti repository**.
 1. Verrà aperta l’app AEM Code Connector in una nuova scheda del browser. Fai clic su **Autorizza connettore codice AEM**.
-1. Nella console, seleziona **Proprietario**, **Archivio** e **Selezione ramo** e fai clic su **Estrai nell&#39;area di lavoro**.
-   ![Connessione al progetto GitHub](assets/connect-to-github-project.png)
+1. Nella console, specifica l’URL di anteprima del sito. L’URL di anteprima può essere ottenuto visualizzando in anteprima qualsiasi documento nel sito o costruendolo dal ramo, nome-sito e organizzazione. Il sistema recupererà automaticamente il progetto Github associato; in alcuni casi ti potrebbe essere richiesto di fornire anche le coordinate github.
+   ![Connessione al progetto GitHub](assets/connect-site-and-github.png)
 1. Quando viene richiesto di **Sostituire l&#39;area di lavoro esistente**, fare clic su **Sostituisci area di lavoro**.
    ![Sostituisci area di lavoro esistente](assets/replace-existing-workspace.png)
 
