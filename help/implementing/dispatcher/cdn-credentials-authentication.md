@@ -4,9 +4,9 @@ description: Scopri come configurare le credenziali e l’autenticazione CDN dic
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
+source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2181'
 ht-degree: 3%
 
 ---
@@ -40,9 +40,28 @@ data:
     ...
 ```
 
+## Distribuzione di segreti: variabili di ambiente e variabili della pipeline {#deploying-secrets}
+
+Puoi distribuire i segreti utilizzati nella configurazione CDN in due modi:
+
+* **Variabili segrete della pipeline** - Configurate in Cloud Manager come [variabili pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) di tipo **Segreto** con **Passaggio applicato** impostate su **Distribuisci**. Sono disponibili come configurazione a livello di pipeline di configurazione.
+
+* **Variabili segrete ambiente** - Configurate in Cloud Manager come [variabili ambiente](/help/implementing/cloud-manager/environment-variables.md) di tipo **Segreto** e **Servizio applicato** impostate su **Tutto**. Sono disponibili come configurazione a livello di ambiente.
+
+**Preferito: variabili segrete della pipeline.** Utilizza le variabili segrete della pipeline quando possibile, perché sono distribuite insieme alla configurazione nella stessa esecuzione della pipeline. In questo modo i segreti e la configurazione vengono sincronizzati e i rollout vengono semplificati.
+
+Non è possibile combinare i segreti della pipeline con i segreti dell’ambiente per la stessa configurazione. Se per il passaggio di distribuzione sono definite delle variabili segrete della pipeline, queste vengono utilizzate come preferenza.
+
+L’immagine seguente mostra come configurare le variabili segrete della pipeline in Cloud Manager:
+
+![Configurazione delle variabili segrete della pipeline](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+Per informazioni complete sull&#39;aggiunta, la modifica e la gestione delle variabili di pipeline (inclusi i segreti), vedere [Variabili di pipeline in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+## Linee guida per l’utilizzo dei segreti {#secrets-guidelines}
+
 Di seguito sono riportate alcune linee guida da tenere presenti quando si lavora con i segreti:
 
-* I segreti dell&#39;ambiente devono essere distribuiti come [variabile di ambiente di tipo segreto Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). Per il campo Servizio applicato, selezionare Tutto.
 * I riferimenti segreti non vengono interpolati all&#39;interno di stringhe (ad es. `"Token ${{AUTH_TOKEN}}"` non funzionerà)
 * Un segreto di ambiente a cui si fa riferimento non deve essere rimosso se vi si fa ancora riferimento nella configurazione.
 
@@ -88,7 +107,7 @@ data:
 
 Consulta [Utilizzo delle pipeline di configurazione](/help/operations/config-pipeline.md#common-syntax) per una descrizione delle proprietà al di sopra del nodo `data`. Il valore della proprietà `kind` deve essere *CDN* e la proprietà `version` deve essere impostata su `1`.
 
-Per ulteriori dettagli, consulta il passaggio tutorial [Configurare e distribuire la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule).
+Per ulteriori dettagli, consulta il passaggio tutorial [Configurare e distribuire la regola CDN di convalida dell&#39;intestazione HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule).
 
 Altre proprietà includono:
 
@@ -208,7 +227,7 @@ Altre proprietà includono:
 >[!NOTE]
 >La chiave di eliminazione deve essere configurata come [variabile di ambiente Cloud Manager di tipo segreto](/help/operations/config-pipeline.md#secret-env-vars), prima che venga distribuita la configurazione che vi fa riferimento. Si consiglia di utilizzare una chiave casuale univoca della lunghezza minima di 32 byte; ad esempio, la libreria di crittografia Open SSL può generare una chiave casuale eseguendo il comando openssl rand -hex 32
 
-Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
+Puoi fare riferimento a [un&#39;esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) incentrata sulla configurazione delle chiavi di eliminazione e sull&#39;esecuzione dell&#39;eliminazione della cache CDN.
 
 ## Autenticazione di base {#basic-auth}
 

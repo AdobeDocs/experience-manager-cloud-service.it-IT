@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1491'
 ht-degree: 2%
 
 ---
@@ -221,13 +221,11 @@ data:
 
 Se si include il campo di metadati *envTypes*, deve essere utilizzato solo il valore **prod** (anche omettendo il campo di metadati envTypes va bene). Per il *livello* reqProperty, deve essere utilizzato solo il valore **publish**.
 
-## Variabili di ambiente segrete {#secret-env-vars}
+## Segreti di configurazione  {#secret-in-configuration}
 
-Per evitare che le informazioni riservate vengano archiviate nel controllo del codice sorgente, i file di configurazione supportano variabili di ambiente Cloud Manager di tipo **secret**. Per alcune configurazioni, incluso l’inoltro del registro, le variabili di ambiente segrete sono obbligatorie per alcune proprietà.
+Per evitare che le informazioni riservate vengano memorizzate nel controllo del codice sorgente, i file di configurazione supportano i segreti di riferimento delle variabili della pipeline di configurazione o delle variabili di ambiente. Per alcune configurazioni, incluso l’inoltro del registro, le variabili segrete sono obbligatorie per determinate proprietà. Per informazioni dettagliate sull&#39;utilizzo dei segreti nella configurazione CDN, vedere [Configurazione delle credenziali CDN e dell&#39;autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-Tieni presente che le variabili di ambiente segrete vengono utilizzate per i progetti di distribuzione della pubblicazione; consulta la sezione Variabili segrete della pipeline per i progetti Edge Delivery Services.
-
-Il frammento seguente è un esempio dell&#39;utilizzo della variabile di ambiente segreta `${{SPLUNK_TOKEN}}` nella configurazione.
+Il frammento seguente è un esempio di come la variabile segreta `${{SPLUNK_TOKEN}}` viene utilizzata nella configurazione.
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-Per informazioni dettagliate sull&#39;utilizzo delle variabili di ambiente, vedere [Variabili di ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
-## Variabili segrete della pipeline {#secret-pipeline-vars}
 
-Per i progetti Edge Delivery Services, utilizzare le variabili della pipeline Cloud Manager di tipo **secret** in modo che non sia necessario archiviare le informazioni riservate nel controllo del codice sorgente. La casella di selezione *Passaggio applicato* deve utilizzare l&#39;opzione **distribuisci**.
+### Variabili segrete della pipeline {#secret-pipeline-vars}
 
-La sintassi è identica al frammento mostrato nella sezione precedente.
+La **modalità preferita** consiste nell&#39;utilizzare le variabili della pipeline di Cloud Manager di tipo **secret**, pertanto non è necessario archiviare le informazioni riservate nel controllo del codice sorgente. La casella di selezione **Passaggio applicato** deve utilizzare l&#39;opzione **distribuisci**.
 
 Per informazioni dettagliate sull&#39;utilizzo delle variabili di pipeline, vedere [Variabili di pipeline in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Variabili di ambiente segrete {#secret-env-vars}
+
+Utilizza le variabili di ambiente segrete quando desideri che abbiano valori segreti diversi per ambiente.
+
+Per informazioni dettagliate sull&#39;utilizzo delle variabili di ambiente, vedere [Variabili di ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+>[!NOTE]
+>L’utilizzo di variabili di ambiente segrete è più complicato e richiede una disciplina rigorosa: le variabili di ambiente non vengono distribuite insieme alla pipeline di configurazione. È necessario distribuirli prima di eseguire la pipeline e non rimuoverli mentre la configurazione della pipeline vi fa ancora riferimento. Ecco perché i segreti della pipeline sono preferiti.
+
+
