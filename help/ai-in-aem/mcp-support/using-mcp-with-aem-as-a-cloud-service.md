@@ -4,9 +4,9 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3b935114d543a0bf99f3c03a2840942862396216
+source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Molti team di Adobe Experience Manager (AEM) ora lavorano in ambienti di svilupp
 Con l’integrazione MCP di AEM, utenti tipo diversi possono collaborare intorno allo stesso contenuto:
 
 * **Gli sviluppatori** possono orchestrare operazioni e flussi di lavoro per contenuti dalla loro applicazione IDE o chat
-* **I professionisti** e gli architetti di contenuti possono gestire siti, frammenti di contenuto e risorse con assistenza AI, pur rimanendo nel modello di autorizzazioni esistente di AEM.
+* **I professionisti** e gli architetti di contenuti possono gestire siti e frammenti di contenuto e importare risorse con l&#39;assistenza dell&#39;intelligenza artificiale, pur mantenendo il modello di autorizzazione esistente di AEM.
 
 >[!IMPORTANT]
 >
@@ -52,8 +52,8 @@ AEM espone i server MCP come endpoint HTTP. Gli endpoint elencati di seguito son
 
 | **Server MCP** | **Endpoint** | **Descrizione** |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Contenuto** | `/content` | Tutte le operazioni relative ai contenuti di basso livello, tra cui creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine, frammenti e risorse. |
-| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine, frammenti e risorse. |
+| **Contenuto** | `/content` | Operazioni per contenuti, tra cui creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto e importazione di risorse. |
+| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine e frammenti di contenuto. |
 | **Cloud Manager** | `/cloudmanager` | Gestisci le entità Cloud Manager, inclusi programmi, ambienti, archivi e pipeline, che possono anche essere attivati. <br><br>*Il server MCP è ora in **beta**; per richiedere l&#39;accesso, invia un&#39;e-mail a [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) con una descrizione del caso d&#39;uso.* |
 
 Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo. In pratica, puoi chiedere all’applicazione abilitata per MCP di individuare gli strumenti tramite un prompt come:
@@ -64,7 +64,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
@@ -177,7 +177,7 @@ Alcuni scenari rappresentativi includono:
    * Creare nuovi frammenti
    * Aggiorna i frammenti esistenti quando cambia la messaggistica della campagna.
 
-* **Gestione Assets**
+* **Importazione risorse**
    * Importa risorse con controllo stato
 
 ### Esempio di flussi di lavoro {#example-workflows}
