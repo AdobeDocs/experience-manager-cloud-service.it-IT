@@ -74,7 +74,7 @@ Per utilizzare il filtro, è necessario fare riferimento alla definizione del fi
   data-aue-filter="container-filter"
   ```
 
-* Facendo riferimento al filtro dalla definizione del componente [, ](/help/implementing/universal-editor/component-definition.md) passa l&#39;ID del filtro.
+* Facendo riferimento al filtro dalla definizione del componente [, &#x200B;](/help/implementing/universal-editor/component-definition.md) passa l&#39;ID del filtro.
 
   ```json
   {
