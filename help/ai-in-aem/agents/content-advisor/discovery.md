@@ -4,9 +4,9 @@ description: Scopri come utilizzare l’agente di individuazione contenuti per f
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2073'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Prompt di esempio:
 * **Ricerca basata su formato file, tipo di risorsa, stato risorsa e Creato da ID e-mail**: mostra video in formato `.mp4` approvati e `created by <user email ID>`.
 * **Ricerca in base al formato di file, al tipo di risorsa, allo stato della risorsa e alla data di creazione**: mostra le immagini in formato `.PNG` create dopo il 1° gennaio 2025 e `published by <user email ID>`
 * **Ricerca basata sul tipo MIME, Data creazione e Pubblicato da ID e-mail**: mostra `image/jpeg` creato dopo `January 1, 2025` e `published by <user email ID>`.
-* **Ricerca basata sul formato di file e sulle proprietà dei metadati personalizzate**: visualizza le immagini in formato `.JPEG` con `Product SKU ID as <SKU value>`.
+* **Ricerca basata sul formato di file e sulle proprietà dei metadati personalizzate**: mostra le immagini in formato `.JPEG` con `Product SKU ID = <SKU value>` (deve essere nel formato proprietà metadati = valore).
 
 * **Cerca le risorse con metadati mancanti**: il campo Mostra risorse create negli ultimi 90 giorni con `<Name of metadata property including custom properties>` è vuoto.
 
