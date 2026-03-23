@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e926ce5b20866497dd9f11a163ee4142f33778d0
+source-git-commit: 79f98664a3c4fddade7ed2ad1aa45ae6c3b501ce
 workflow-type: tm+mt
-source-wordcount: '7129'
-ht-degree: 94%
+source-wordcount: '7158'
+ht-degree: 93%
 
 ---
 
@@ -849,9 +849,9 @@ ht-degree: 94%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
-         + [Connetti modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
+         + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
          + [Utilizzare il modello di dati per moduli](/help/forms/work-with-form-data-model.md)
@@ -1107,12 +1107,13 @@ ht-degree: 94%
    + Supporto MCP {#mcp-support}
       + [Utilizzo di MCP con AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
       + Applicazioni chat (Web e desktop) {#chat-applications}
-         + [Claude antropico](/help/ai-in-aem/mcp-support/setup-claude.md)
-         + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+         + [Configurazione di Anthropic Claude con AEM MCP](/help/ai-in-aem/mcp-support/setup-claude.md)
+         + [Configurazione di OpenAI ChatGPT con AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
       + Strumenti per sviluppatori (estensioni IDE, app desktop, CLI) {#developer-tools}
-         + [Cursore](/help/ai-in-aem/mcp-support/setup-cursor.md)
+         + [Configurazione del cursore con AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
       + Piattaforme aziendali {#enterprise-platforms}
-         + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [Configurazione di Microsoft Copilot Studio con AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [Configurazione di JetBrains con GitHub Copilot e AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
    + Agenti in AEM {#agents}
       + [Panoramica](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
@@ -1307,7 +1308,7 @@ ht-degree: 94%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)

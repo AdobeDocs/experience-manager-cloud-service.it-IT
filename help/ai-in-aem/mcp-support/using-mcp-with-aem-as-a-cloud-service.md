@@ -4,9 +4,9 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
+source-git-commit: 6c2061cd6e6aee26c32935f4d33417a1f945665d
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
@@ -82,7 +82,7 @@ I server MCP di AEM sono progettati per funzionare con un set definito di applic
 * App desktop con rientro aggiuntivo
 * Cline (JetBrains, codice VS, cursore)
 * Cursore
-* Copilota GitHub (codice VS)
+* Copilota GitHub (JetBrains, codice VS)
 * Kiro (app desktop, CLI)
 * Codice OpenAI (app desktop)
 * OpenAI Codex CLI
@@ -104,6 +104,7 @@ Sono disponibili guide dettagliate relative a entrambi i passaggi per:
 * [Claude antropico](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursore](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [JetBrains con copilota GitHub](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ### Configurazione AEM {#aem-configuration}
