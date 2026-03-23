@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione 2026.03.19 dell’editor univers
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 34%
 
 ---
@@ -28,7 +28,7 @@ Queste sono le note sulla versione del 19 marzo 2026 di Universal Editor.
 
 * Gli elementi nelle proprietà ora sono compressi quando si torna alla schermata iniziale [.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
 * [Il selettore risorse](/help/implementing/universal-editor/configure-assets-selector.md) ora supporta [le definizioni dei filtri.](/help/implementing/universal-editor/filtering.md)
-* Se non sono disponibili azioni per l&#39;elemento selezionato, [il menu di scelta rapida](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) non mostra più una freccia per accedere alle azioni.
+* Se non sono disponibili azioni per l&#39;elemento selezionato, [nel menu di scelta rapida](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) viene ora visualizzato un messaggio che indica tali azioni.
 
 ## Altri miglioramenti {#other-improvements}
 
