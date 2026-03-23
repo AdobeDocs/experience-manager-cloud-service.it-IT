@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
+source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 37%
+ht-degree: 35%
 
 ---
 
@@ -69,7 +69,7 @@ Per aggiungere o modificare un ambiente, un utente deve essere membro del ruolo 
 
 1. Nella finestra di dialogo **Aggiungi ambiente**, esegui le operazioni seguenti:
 
-   * Selezionare un tipo di ambiente [**&#128279;**](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
+   * Selezionare un tipo di ambiente [****](#environment-types). Il numero di ambienti disponibili/utilizzati è visualizzato tra parentesi dopo il nome del tipo di ambiente.
    * Fornisci un ambiente **Nome**. Una volta creato l’ambiente, non è possibile modificarne il nome.
    * Fornisci una **Descrizione** facoltativa per l&#39;ambiente.
    * Se stai aggiungendo un ambiente di **produzione e fase**, è necessario fornire un nome ambiente e una descrizione sia per l’ambiente di produzione che per quello di staging.
@@ -108,7 +108,7 @@ Le aree geografiche selezionate verranno applicate agli ambienti di produzione e
 
 Se non si specificano altre aree, [sarà possibile farlo in seguito dopo la creazione degli ambienti](#edit-regions).
 
-Se desideri effettuare il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, si consiglia di eseguire questa operazione prima di aggiungere aree geografiche di pubblicazione aggiuntiva agli ambienti utilizzando API di Cloud Manager. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
+Se desideri eseguire il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, è consigliabile eseguire questo provisioning prima di aggiungere ulteriori aree di pubblicazione agli ambienti utilizzando l&#39;API Cloud Manager. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
 
 ### Modificare più aree geografiche di pubblicazione {#edit-regions}
 
@@ -130,7 +130,7 @@ Puoi anche rimuovere le aree geografiche di pubblicazione aggiuntiva. Tuttavia, 
 
 Le modifiche apportate all’ambiente di produzione verranno applicate sia agli ambienti di produzione che a quelli di staging. Le modifiche apportate a più aree geografiche di pubblicazione possono essere modificate solo nell’ambiente di produzione.
 
-Se desideri effettuare il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, si consiglia di eseguire questa operazione prima di aggiungere aree geografiche di pubblicazione aggiuntiva negli ambienti. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
+Se desideri eseguire il provisioning di [rete avanzata](/help/security/configuring-advanced-networking.md) per il programma, è consigliabile eseguire questo provisioning prima di aggiungere altre aree di pubblicazione agli ambienti. In caso contrario, il traffico delle aree geografiche di pubblicazione aggiuntiva passerà attraverso il proxy dell’area geografica principale.
 
 ## Visualizzare i dettagli di un ambiente {#viewing-environment}
 
@@ -184,7 +184,7 @@ Al momento della creazione, al servizio di anteprima viene applicato un elenco C
 
 Per garantire l’accesso, prima di condividere l’URL del servizio di anteprima, l’utente con le autorizzazioni necessarie deve completare i passaggi seguenti.
 
-1. Creare un Elenco consentiti inserì nell&#39;elenco Consentiti IP appropriato, applicarlo al servizio di anteprima e annullare immediatamente l&#39;applicazione del `Preview Default [<envId>]`.
+1. Creare un Elenco consentiti IP appropriato, applicarlo al servizio di anteprima e annullare immediatamente l&#39;applicazione del `Preview Default [<envId>]`.
 
    Per ulteriori dettagli, vedi [Applica e rimuovi Elenchi consentiti IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
 
@@ -310,7 +310,7 @@ Nel browser viene aperta una nuova scheda con la pagina di accesso a **Developer
 
 Solo gli utenti con il ruolo **Sviluppatore** possono accedere a **Developer Console**. Tuttavia, per i programmi sandbox, qualsiasi utente con accesso al programma sandbox ha accesso a **Developer Console**.
 
-Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
+Vedi [Sospensione e riattivazione degli ambienti sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) per ulteriori dettagli.
 
 Questa opzione è disponibile anche nella scheda **Ambiente** della finestra **Panoramica** quando si fa clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) di un singolo ambiente.
 
