@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->Acquisisci familiarità con [AEM Project Archetype use](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview#) di base e con [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), in quanto questo articolo si basa su questi concetti e conoscenze.
+>Acquisisci familiarità con [AEM Project Archetype use](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview#) di base e con [FileVault Content Maven Plug-in](/help/implementing/developing/tools/maven-plugin.md), in quanto questo articolo si basa su questi concetti e conoscenze.
 
 Questo articolo illustra le modifiche necessarie affinché i progetti Adobe Experience Manager Maven siano compatibili con AEM as a Cloud Service, garantendo che rispettino la suddivisione dei contenuti mutabili e immutabili. Inoltre, le dipendenze vengono stabilite per creare distribuzioni deterministiche non in conflitto e vengono inserite in una struttura distribuibile.
 
@@ -62,7 +62,7 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
 + Il file Jar del bundle OSGi viene generato e incorporato direttamente nel progetto all.
 
 + Il pacchetto `ui.apps` contiene tutto il codice da distribuire e distribuisce solo in `/apps`. Gli elementi comuni del pacchetto `ui.apps` includono, ma non sono limitati a:
-   + [Definizioni dei componenti e script HTL](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview#)
+   + [Definizioni dei componenti e script HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview#)
       + `/apps/my-app/components`
    + JavaScript e CSS (tramite [Librerie client](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
       + `/apps/settings`
    + ACL (autorizzazioni)
       + Qualsiasi `rep:policy` per qualsiasi percorso in `/apps`
-   + [Script in bundle precompilati](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
+   + [Script in bundle precompilati](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
 
 >[!NOTE]
 >
