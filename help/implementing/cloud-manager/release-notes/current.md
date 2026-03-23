@@ -28,7 +28,7 @@ La prossima pubblicazione è pianificata per il venerdì 2 aprile 2026.
 
 ## Novità - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager ora supporta l&#39;opzione** Cancella **per** Importazioni copia contenuto ****
+* **Cloud Manager ora supporta l&#39;opzione** Cancella **per** Importazioni copia contenuto **&#x200B;**
 
   Quando abiliti **Cancella**, Cloud Manager elimina il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da una nuova lavagna ed evitare conflitti con il contenuto preesistente. Se lasci disabilitato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
 
