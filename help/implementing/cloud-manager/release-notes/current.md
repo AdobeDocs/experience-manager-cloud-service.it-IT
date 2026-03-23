@@ -4,10 +4,10 @@ description: Ulteriori informazioni sulla versione 2026.3.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ La prossima pubblicazione è pianificata per il venerdì 2 aprile 2026.
 
 ## Novità - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager ora supporta l&#39;opzione** Cancella **per** Importazioni copia contenuto **&#x200B;**
+* **Cloud Manager ora supporta l&#39;opzione** Cancella **per** Importazioni copia contenuto ****
 
   Quando abiliti **Cancella**, Cloud Manager elimina il contenuto esistente nella destinazione prima di avviare l&#39;importazione, in modo da poter iniziare da una nuova lavagna ed evitare conflitti con il contenuto preesistente. Se lasci disabilitato **Cancella**, Cloud Manager importa il nuovo contenuto sopra il contenuto di destinazione esistente. Viene visualizzata una richiesta di conferma prima dell’inizio della cancellazione e Cloud Manager registra l’azione di cancellazione e i dettagli di importazione per la tracciabilità.
 
@@ -95,7 +95,9 @@ Nella finestra di dialogo **Aggiungi/Modifica pipeline**, nella scheda **Codice 
 * **Build completa**: crea tutti i moduli nell&#39;archivio a ogni esecuzione.
 * **Smart Build**: crea solo i moduli che sono cambiati dall&#39;ultimo commit, riducendo così il tempo di compilazione complessivo.
 
-Puoi controllare quali pipeline utilizzano **Smart build**. Durante la versione beta, questa opzione viene visualizzata solo per le pipeline **Qualità codice** e **Distribuzione sviluppatore**.
+Puoi controllare quali pipeline utilizzano **Smart build**. Durante la versione beta, questa opzione viene visualizzata solo per le pipeline **Qualità codice** e **Distribuzione full stack sviluppo**.
+
+Consulta [Informazioni sull&#39;utilizzo di Smart Build in una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) e [Aggiungi una pipeline non di produzione](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 Ti interessa? Invia un’e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) indicando il tuo OrgID Adobe e l’ID programma.
 
