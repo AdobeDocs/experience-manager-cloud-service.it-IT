@@ -95,7 +95,7 @@ La struttura consigliata per la distribuzione delle applicazioni è la seguente:
 
 + Il pacchetto `all` è un pacchetto contenitore. Include solo artefatti distribuibili come incorporamenti: il file JAR del bundle OSGi e i pacchetti `ui.apps`, `ui.config` e `ui.content`. Il pacchetto `all` non deve avere **alcun contenuto o codice** proprio, ma deve delegare l&#39;intera distribuzione al repository ai relativi sottopacchetti o file JAR del bundle OSGi.
 
-  I pacchetti sono ora inclusi utilizzando la configurazione incorporata del plug-in Maven [FileVault Package ](#embeddeds), anziché la configurazione `<subPackages>`.
+  I pacchetti sono ora inclusi utilizzando la configurazione incorporata del plug-in Maven [FileVault Package &#x200B;](#embeddeds), anziché la configurazione `<subPackages>`.
 
   Per implementazioni Experience Manager complesse, può essere utile creare più progetti/pacchetti `ui.apps`, `ui.config` e `ui.content` che rappresentano siti o tenant specifici in AEM. Se utilizzi questo approccio, rispetta la suddivisione tra contenuto mutabile e immutabile. Incorpora inoltre i pacchetti di contenuti e i file JAR del bundle OSGi richiesti come pacchetti secondari nel pacchetto di contenuti contenitore `all`.
 
