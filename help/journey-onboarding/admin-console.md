@@ -4,7 +4,7 @@ description: Una volta comprese le operazioni preliminari all’onboarding e le 
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 8ed13eb6f476bab07da07549a83ab9ac16bdea72
+source-git-commit: 9f237747f19ee537fbc51f39e935472c6a023328
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 55%
@@ -123,6 +123,6 @@ Di seguito sono riportate risorse aggiuntive e opzionali utili per andare oltre 
 
 * [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html): una panoramica completa di Admin Console.
 * [Creazione o aggiornamento dell’Adobe ID](https://helpx.adobe.com/it/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID/): scopri come creare un Adobe ID, come modificarlo e gestirne più di uno.
-* [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#): AEM viene fornito con un gestore per l’autenticazione SAML. Questo gestore fornisce il supporto per il protocollo di richiesta di autenticazione SAML 2.0 (profilo Web-SSO) utilizzando l’associazione HTTP POST.
+* [Gestore autenticazione SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#): AEM viene fornito con un gestore per l’autenticazione SAML. Questo gestore fornisce il supporto per il protocollo di richiesta di autenticazione SAML 2.0 (profilo Web-SSO) utilizzando l’associazione HTTP POST.
 * [Ruoli amministrativi](https://helpx.adobe.com/it/enterprise/using/admin-roles.html): con Adobe Admin Console le organizzazioni possono definire una gerarchia amministrativa flessibile per una gestione dettagliata dell’accesso e dell’utilizzo dei prodotti Adobe.
-* [Supporto e sessioni con gli esperti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html): scopri come accedere alle opzioni di supporto in Admin Console, gestire i casi di assistenza, pianificare una sessione con gli esperti e altro ancora.
+* [Supporto e sessioni con gli esperti](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html): scopri come accedere alle opzioni di supporto in Admin Console, gestire i casi di assistenza, pianificare una sessione con gli esperti e altro ancora.
