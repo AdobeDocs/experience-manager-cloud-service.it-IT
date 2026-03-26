@@ -4,10 +4,10 @@ description: Scopri le diverse opzioni per estendere le funzionalità dell’edi
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 92%
 
 ---
 
@@ -54,10 +54,13 @@ Se desideri esplorare le possibilità di creazione di estensioni personalizzate,
 
 [Utilizzando Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), puoi abilitare o disabilitare le estensioni per singole istanze, accedere alle estensioni di prime parti di Adobe, incluse quelle per l’editor universale, e molto altro.
 
-## Punti dell’estensione {#extension-points}
+### Punti dell’estensione {#extension-points}
 
-Oltre all’estensibilità dell’interfaccia utente, l’editor universale offre molti altri punti di estensione flessibili per consentire l’integrazione ottimizzata di requisiti aziendali personalizzati.
+Per un elenco completo dei punti di estensione disponibili nell&#39;interfaccia utente di Universal Editor, consulta la documentazione di Adobe Developer [Punti di estensione di Universal Editor.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Risorse aggiuntive {#additional-resources}
+
+Oltre all’estensibilità dell’interfaccia utente, Universal Editor offre altre opzioni di personalizzazione per consentire l’integrazione diretta dei requisiti aziendali personalizzati.
 
 * **[Blocchi](https://www.aem.live/developer/block-collection)**: in formato JSON semplice, i progetti possono regolare i blocchi e utilizzare le funzionalità dell’editor universale disponibili per la creazione di contenuti.
-* **[Interfaccia utente personalizzata](#extending-ui)**: le estensioni possono visualizzare l’interfaccia utente necessaria nei pannelli laterali o nelle finestre di dialogo modali.
 * **[Eventi](/help/implementing/universal-editor/events-universal-editor.md)**: le estensioni ricevono eventi sulle azioni dell’autore e sulle selezioni effettuate nella pagina per rispondere in modo appropriato.
