@@ -4,7 +4,7 @@ description: Scopri come rendere persistenti le query GraphQL in Adobe Experienc
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8e962dc399f12277432243bda401f16eddad7087
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -68,7 +68,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -114,7 +114,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -140,7 +140,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -153,7 +153,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -166,7 +166,7 @@ L’IDE GraphiQL è il metodo **preferito** per le query persistenti. Per render
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -384,7 +384,7 @@ Le [variabili dell’ambiente Cloud Manager](/help/implementing/cloud-manager/en
 
 ### Gestione della cache con una configurazione OSGi {#cache-osgi-configration}
 
-Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per la **Configurazione del servizio query persistenti**.
+Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](/help/implementing/deploying/configuring-osgi.md) per la **Configurazione Query Service persistente**.
 
 >[!NOTE]
 >
@@ -392,7 +392,7 @@ Per gestire la cache a livello globale, puoi [configurare le impostazioni OSGi](
 
 >[!NOTE]
 >
->La **Configurazione servizio query persistenti** viene utilizzata anche per [configurare il codice di risposta della query](#configuring-query-response-code).
+>La **Configurazione Query Service persistente** viene utilizzata anche per [configurare il codice di risposta della query](#configuring-query-response-code).
 
 La configurazione OSGi predefinita per le istanze di pubblicazione:
 
@@ -417,7 +417,7 @@ Per impostazione predefinita, il `PersistedQueryServlet` invia una risposta `200
 
 >[!NOTE]
 >
->La **Configurazione servizio query persistenti** viene utilizzata anche per la [gestione della cache](#cache-osgi-configration).
+>La **Configurazione Query Service persistente** viene utilizzata anche per la [gestione della cache](#cache-osgi-configration).
 
 Il campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) può essere definito come richiesto:
 
