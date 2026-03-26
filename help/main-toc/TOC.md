@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 97a1d88c3bafdb9ad275d68ac94dbb04003cb574
+source-git-commit: 605ba43b498041198b62df26b83f7a4f1f5966ac
 workflow-type: tm+mt
-source-wordcount: '7167'
+source-wordcount: '7176'
 ht-degree: 93%
 
 ---
@@ -590,19 +590,7 @@ ht-degree: 93%
    + [Risoluzione dei problemi di AEM Assets](/help/assets/troubleshoot-aem-assets.md)
    + [Utenti di Assets Collaborator](/help/assets/assets-collaborator-users.md)
    + Gestire le risorse digitali {#manage}
-      + Selettore risorse micro front-end {#asset-selector}
-         + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
-         + Integrazioni del Selettore risorse {#asset-selector-integration}
-            + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
-            + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
-         + [Esempi del Selettore risorse](/help/assets/asset-selector-examples.md)
-         + [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
-         + [Caricamento del Selettore risorse](/help/assets/asset-selector-upload.md)
-         + [Raccolte del Selettore risorse](/help/assets/asset-selector-collections.md)
-      + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
+      + [Contenuto verificato per accedere ai contenuti AEM nelle applicazioni Adobe](/help/assets/content-advisor-adobe-applications.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Rielaborazione delle risorse](/help/assets/reprocessing.md)
       + [Rilevamento malware](/help/assets/malware-detection.md)
@@ -637,6 +625,19 @@ ht-degree: 93%
       + [Elaborare risorse utilizzando [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
       + [Tag colore per immagini](/help/assets/color-tag-images.md)
       + [Gestire i documenti PDF](/help/assets/manage-pdf-documents.md)
+      + Selettore risorse micro front-end {#asset-selector}
+         + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
+         + Integrazioni del Selettore risorse {#asset-selector-integration}
+            + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
+            + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
+         + [Esempi del Selettore risorse](/help/assets/asset-selector-examples.md)
+         + [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
+         + [Caricamento del Selettore risorse](/help/assets/asset-selector-upload.md)
+         + [Raccolte del Selettore risorse](/help/assets/asset-selector-collections.md)
+      + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
    + Configurare, amministrare ed estendere [!DNL Assets] {#admin}
       + [Rilevare risorse duplicate](/help/assets/detect-duplicate-assets.md)
       + [Riferimenti ai documenti e alle API per sviluppatori](/help/assets/developer-reference-material-apis.md)
@@ -850,8 +851,8 @@ ht-degree: 93%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1310,7 +1311,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
