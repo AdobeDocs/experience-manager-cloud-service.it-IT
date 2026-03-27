@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 605ba43b498041198b62df26b83f7a4f1f5966ac
+source-git-commit: 3a99b537c4b78dd9a21be9ed74c5a7943da0a385
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7214'
 ht-degree: 93%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 93%
    + Note sulla versione funzionale di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Note sulla versione 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [Note sulla versione 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
          + [Note sulla versione 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)
@@ -851,8 +852,8 @@ ht-degree: 93%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -895,6 +896,7 @@ ht-degree: 93%
             + [Impostare un layout per un modulo adattivo basato sui componenti core](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Creare un frammento di modulo adattivo](/help/forms/adaptive-form-fragments-core-components.md)
             + [Creare temi per un modulo adattivo: componenti core](/help/forms/using-themes-in-core-components.md)
+            + [Personalizzazione dei temi dei moduli adattivi tramite l’Editor tema](/help/forms/customizing-themes-using-theme-editor.md)
             + [Incorporare un tema Forms adattivo in un tema AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
             + [Creare un modello per moduli adattivi basato sui componenti core](/help/forms/template-editor-core-components.md)
             + [Creare un modulo adattivo (componenti core) basato su modelli per moduli XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
@@ -1061,9 +1063,13 @@ ht-degree: 93%
       + [Supporto per la modifica XDP](/help/forms/interactive-communication/support-xdp-editing.md)
       + [Creare versioni e aggiungere commenti](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + [Copiare e incollare comunicazioni interattive](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+      + [Avvia flusso di lavoro nella comunicazione interattiva](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+      + [Creare una tabella dinamica](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + Associa interfaccia {#associateui}
       + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+      + [Abilitare e configurare l’interfaccia utente di Associa per le comunicazioni interattive](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integrare l’interfaccia utente di Associa nell’applicazione](/help/forms/interactive-communication/invoke-associate-ui.md)
+      + [Flusso di lavoro di invio per l&#39;interfaccia utente associata - IC Genera output PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
    + [Domande frequenti](/help/forms/interactive-communications-faq.md)
 + Flussi di lavoro incentrati sui moduli {#create-form-centric-workflows}
    + [Introduzione al flusso di lavoro incentrato su moduli](/help/forms/aem-forms-workflow.md)
@@ -1311,7 +1317,7 @@ ht-degree: 93%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
