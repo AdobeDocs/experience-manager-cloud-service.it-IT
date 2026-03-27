@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 36%
+source-wordcount: '3342'
+ht-degree: 32%
 
 ---
 
@@ -93,17 +93,20 @@ In questo modo l’intera tabella viene ordinata in base a tale colonna. L’ord
 
 Il pannello principale (vista tabella) della console, a destra, fornisce una serie di informazioni sui frammenti di contenuto. Alcuni elementi forniscono anche collegamenti diretti a ulteriori azioni e/o informazioni:
 
+* **Titolo**
+   * Un&#39;icona a forma di lucchetto indica che il frammento è [estratto](#check-out-and-check-in) e bloccato da un utente. Selezionando l&#39;icona a forma di lucchetto vengono visualizzati i dettagli dell&#39;account che ha estratto il frammento.
+   * L’icona delle informazioni (i) fornisce un accesso rapido a informazioni aggiuntive specifiche per i frammenti nel pannello di destra.
 * **Nome**
    * Fornisce un collegamento per aprire il frammento nell’editor.
 * **Modello**
    * Solo informativo.
-   * Può essere utilizzato per [Filtro rapido](#fast-filtering)
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Cartella**
    * Fornisce un collegamento per aprire la cartella nella console.
 Passando il puntatore sul nome della cartella verrà visualizzato il percorso JCR.
 * **Stato**
    * Solo informativo.
-   * Può essere utilizzato per [Filtro rapido](#fast-filtering)
+   * Può essere utilizzato per [Filtro rapido](#fast-filtering).
 * **Anteprima**
    * Solo informazioni:
       * **In sincronizzazione**: il frammento di contenuto è in sincronizzazione nei servizi di **authoring** e **anteprima**.
@@ -187,8 +190,8 @@ Selezionando un frammento specifico si apre una barra degli strumenti incentrata
 * **[Sostituisci](#find-and-replace)**
 * **Sposta**
 * **Rinomina**
+* **[Estrai e archivia](#check-out-and-check-in)**
 * **[Elimina](#deleting-a-fragment)** (disponibile solo per frammenti non pubblicati)
-
 
 >[!NOTE]
 >
@@ -481,6 +484,64 @@ Prima della sostituzione, vengono controllati i criteri di convalida e l’utent
 >Se selezioni più di 20 frammenti di contenuto, verrà visualizzato il messaggio **Impossibile trovare e sostituire**.
 
 ![Conferma sostituzione](assets/cf-managing-confirm-replace.png)
+
+## Estrai e archivia {#check-out-and-check-in}
+
+AEM consente di:
+
+* [estrai](#check-out-a-content-fragment) un frammento di contenuto, impedendo ad altri utenti di utilizzarlo
+* [archivia](#check-in-a-content-fragment) frammenti di contenuto, consentendo ad altri utenti di riprendere a lavorare con il frammento
+
+Il frammento estratto è bloccato (`jcr:lock`). Un&#39;icona lucchetto nella colonna **Titolo** indica un frammento bloccato. Selezionando l’icona a forma di lucchetto vengono forniti i dettagli dell’account che ha estratto il frammento.
+
+Puoi modificare, pubblicare, annullare la pubblicazione, spostare o eliminare un frammento bloccato. Gli altri utenti non possono eseguire nessuna di queste azioni sul frammento fino a quando non lo si archivia, ma possono comunque modificare i metadati del frammento bloccato.
+
+Questa funzionalità consente di evitare conflitti quando più utenti collaborano alla modifica di frammenti.
+
+>[!NOTE]
+>
+>Per poter estrarre o archiviare un frammento di contenuto, è necessario disporre dell&#39;accesso in scrittura.
+
+>[!CAUTION]
+>
+>È possibile eliminare una cartella contenente un frammento di contenuto estratto.
+>
+>Prima di eliminare una cartella, accertati che non contenga frammenti di contenuto (o altre risorse digitali) estratti dagli utenti.
+
+>[!NOTE]
+>
+>Poiché i frammenti di contenuto sono archiviati internamente come Assets, questa funzionalità è strettamente correlata ai [file di archiviazione ed estrazione in Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+
+### Estrarre un frammento di contenuto {#check-out-a-content-fragment}
+
+Per estrarre un frammento:
+
+1. Nella console **Frammenti di contenuto** passa alla posizione del frammento di contenuto.
+1. Seleziona il frammento.
+1. Selezionare **Estrai** nella barra degli strumenti.
+1. Conferma l&#39;azione **Estrai**.
+
+   * Un&#39;icona lucchetto nella colonna **Titolo** indica che il frammento è bloccato e può essere modificato solo da te.
+   * Se un altro utente apre il frammento per la modifica, visualizza un messaggio che indica che è in modalità di sola lettura.
+
+### Archiviare un frammento di contenuto {#check-in-a-content-fragment}
+
+Per archiviare un frammento:
+
+1. Nella console **Frammenti di contenuto** passa alla posizione del frammento di contenuto.
+1. Seleziona il frammento.
+1. Selezionare **Archivia** nella barra degli strumenti.
+1. Conferma l&#39;azione **Archivia**.
+
+## Archiviazione forzata (amministratore) {#forced-adminstrator-check-in}
+
+È possibile che l’utente che ha estratto un frammento di contenuto non sia disponibile per l’archiviazione.
+
+In tali situazioni un amministratore può eseguire l&#39;operazione **Archivia**.
+
+>[!NOTE]
+>
+>Vedi anche Assets [Check-in forzato](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
