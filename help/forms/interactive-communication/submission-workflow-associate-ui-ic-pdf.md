@@ -83,11 +83,11 @@ In [Abilita e configura l&#39;interfaccia utente associata](/help/forms/interact
 
 ![Impostazioni comunicazione interattiva - Configurazione del flusso di lavoro per l&#39;interfaccia utente associata](/help/forms/assets/associate-ui-configure-workflow.png)
 
-Quando **Esternalizza archiviazione dati flusso di lavoro** è abilitato, configurare l&#39;esternalizzatore in modo che i dati del flusso di lavoro vengano archiviati nell&#39;archiviazione esterna (ad esempio, Azure). Vedi [Esternalizzare i dati del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html).
+Quando **Esternalizza archiviazione dati flusso di lavoro** è abilitato, configurare l&#39;esternalizzatore in modo che i dati del flusso di lavoro vengano archiviati nell&#39;archiviazione esterna (ad esempio, Azure). Vedi [Esternalizzare i dati del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=it).
 
 ## Consulta anche
 
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Abilitare e configurare l’interfaccia utente di Associa per le comunicazioni interattive](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Integrare l’interfaccia utente di Associa nell’applicazione](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [Esternalizzare i dati del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [Esternalizzare i dati del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=it)
