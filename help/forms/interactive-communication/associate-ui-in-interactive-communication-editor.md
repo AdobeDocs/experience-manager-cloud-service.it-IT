@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ Responsabile della configurazione del sistema, della governance, delle integrazi
 
 ### &#x200B;2. Autore
 
-Progetta e gestisce la comunicazione interattiva utilizzando l’interfaccia utente Associa. ß
+Progetta e gestisce la comunicazione interattiva e la configura per l’interfaccia utente associata (compresa l’abilitazione di Visualizzazione associata e del flusso di lavoro opzionale).
 
 | Responsabilità | Stato attivo |
 |---------------|-------|
@@ -78,7 +78,7 @@ Utilizza l’interfaccia utente Associa per assistere i clienti, aggiornare le i
 
 >[!NOTE]
 >
-> Associa deve far parte del gruppo **forms-associates**.
+> Gli associati devono far parte del gruppo **forms-associates**. Per gli autori che inviano anche dall&#39;interfaccia utente Associate nell&#39;istanza Autore, aggiungili anche a **utenti-flusso di lavoro**.
 
 ## Casi d’uso dinamici
 
@@ -92,36 +92,22 @@ L’interfaccia utente Associate supporta la generazione immediata e personalizz
 | **Settore pubblico** | Generare sul posto report di verifica della polizia, ricevute di assistenza da parte dei cittadini, lettere di riscontro e riepiloghi degli aggiornamenti dei casi. |
 | **Pubblica amministrazione** | Creare riepiloghi sullo stato delle applicazioni, lettere di approvazione del servizio e comunicazioni in tempo reale per le iscrizioni al programma di welfare. |
 
-## Abilitazione dell’associazione del flusso di lavoro dell’interfaccia utente
+## Abilitazione dell’interfaccia utente Associa
 
-L’autore può seguire i passaggi seguenti per configurare e pubblicare una comunicazione interattiva (IC) per l’accesso all’interfaccia utente di Associate:
+Gli autori abilitano l&#39;interfaccia utente Associa e, facoltativamente, configurano un flusso di lavoro per gli invii nelle **impostazioni di comunicazione interattiva**:
 
->[!NOTE]
->
-> Componenti supportati per l’associazione: Campo data, Campo numerico, Campo testo, Campo data/ora, Campo data, Casella di controllo, Pulsante di scelta, Elenco a discesa.
+1. **Abilita visualizzazione associata**. In **Associa proprietà**, selezionare **Abilita modifica visualizzazione associata**, quindi fare clic su **Applica modifiche** e salvare il documento.
+2. **Configura flusso di lavoro (facoltativo)** — In **Flusso di lavoro**, attivare **Configura flusso di lavoro per aggiornamento**, selezionare un modello di flusso di lavoro e, facoltativamente, impostare un messaggio di successo e un URL di reindirizzamento.
+3. **Configura campi modificabili** - Abilita i campi che gli associati possono modificare e impostare le convalide.
+4. **Pubblica e condividi** — pubblica il componente di interoperabilità e condividi il collegamento con gli associati.
 
-### Creare il componente di interoperabilità
-
-Progetta e configura la comunicazione interattiva, garantendo che branding, associazioni di dati, regole di conformità e integrazioni siano impostati correttamente.
-
-### Abilita l’interfaccia utente Associa
-
-Dalla barra delle azioni superiore, abilita l’opzione Associa interfaccia utente per rendere il componente di interoperabilità disponibile per i driver associati.
-
-### Abilitare l’interfaccia utente Associa nel componente
-
-### Configura campi modificabili
-
-Nella sezione campi obbligatori, abilita i campi che gli associati possono modificare.
-Imposta le convalide per garantire l’immissione accurata e controllata dei dati.
-
-### Pubblica IC
-
-Dopo aver finalizzato tutte le configurazioni, pubblica la comunicazione interattiva per un accesso sicuro.
-
-### Condividi IC pubblicato con associati
-
-Fornisci il collegamento IC pubblicato all’associato, consentendo loro di autenticare, immettere informazioni specifiche per il cliente e generare la comunicazione finale con input validi.
+Per istruzioni dettagliate sulle schermate e sul comportamento di invio/flusso di lavoro (creazione e associazione durante la pubblicazione), vedi [Abilitare e configurare l&#39;interfaccia utente di associazione per le comunicazioni interattive](/help/forms/interactive-communication/enable-configure-associate-ui.md). Per generare un flusso di lavoro che generi PDF da invii IC, vedere [Flusso di lavoro di invio per l&#39;interfaccia utente associata - output PDF generato da IC](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 L&#39;**interfaccia utente associata** colma il divario tra l&#39;authoring di contenuti strutturati e il coinvolgimento dei clienti in tempo reale.\
 Grazie alla combinazione di design intuitivo, configurazione back-end affidabile e severi controlli di conformità, le organizzazioni possono fornire **comunicazioni veloci, precise e personalizzate** su larga scala.
+
+## Consulta anche
+
+- [Abilitare e configurare l’interfaccia utente di Associa per le comunicazioni interattive](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Integrare l’interfaccia utente di Associa nell’applicazione](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [Flusso di lavoro di invio per l&#39;interfaccia utente associata - IC Genera output PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
