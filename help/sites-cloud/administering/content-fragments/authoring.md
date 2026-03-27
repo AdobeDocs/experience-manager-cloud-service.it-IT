@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
+source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 6%
@@ -58,6 +58,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
      >[!WARNING]
      >
      >L’editor originale viene aperto nella stessa scheda. Si sconsiglia di aprire entrambi gli editor contemporaneamente.
+
    * Eventuali avvisi validi per il frammento e l’account. Ad esempio, se non disponi dei privilegi corretti per modificare il frammento o se un altro utente ha [estratto](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) i frammenti avrai accesso in sola lettura.
 
 * Pannello a sinistra: presenta le **[Varianti](#variations)** del frammento di contenuto e i relativi **Campi**:
@@ -273,7 +274,7 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
