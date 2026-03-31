@@ -4,9 +4,9 @@ description: Scopri come ridurre al minimo l’impatto operativo degli aggiornam
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >È possibile utilizzare le funzionalità Ore non interattive e Aggiorna periodi liberi solo dopo aver effettuato l&#39;onboarding in [Aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md).
 
-Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md) di AEM as a Cloud Service garantiscono la protezione delle istanze e l&#39;aggiornamento alle ultime versioni di manutenzione. Detto questo, in alcuni casi (come eventi di pubblicazione) potrebbe essere necessario &quot;proteggere&quot; tali ore di lavoro critiche da potenziali interruzioni. AEM as a Cloud Service offre quindi la possibilità di impostare un intervallo di tempo in cui non si verificano aggiornamenti automatici per i programmi in corso.
+Gli [aggiornamenti di manutenzione automatica](/help/implementing/deploying/aem-version-updates.md) di AEM as a Cloud Service garantiscono la protezione delle istanze e l&#39;aggiornamento alle ultime versioni di manutenzione. Detto questo, in alcuni casi (come eventi di pubblicazione) potrebbe essere necessario &quot;proteggere&quot; tali ore di lavoro critiche da potenziali interruzioni. AEM as a Cloud Service offre opzioni per selezionare periodi di tempo che mettono in pausa gli aggiornamenti automatici di manutenzione sui programmi. Ciò non impedisce a tutte le attività dell’infrastruttura, è possibile che vengano comunque apportate modifiche alla piattaforma di livello inferiore al di fuori degli aggiornamenti di manutenzione (ad esempio, IMS).
 
 È possibile configurare questi intervalli di tempo utilizzando due opzioni di pianificazione:
 
