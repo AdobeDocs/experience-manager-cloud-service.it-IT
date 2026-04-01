@@ -163,7 +163,7 @@ Forms Manager ora [supporta il controllo delle versioni per Forms adattivo (Comp
 
 #### Server Cloud Manager MCP {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480350/?captions=ita&quality=12)
 
 Le IDE moderne utilizzano il protocollo MCP (Model Context Protocol) per abilitare i modelli di linguaggio di grandi dimensioni (Large Language Model, LLM) per richiamare gli strumenti esposti dai server MCP. Invece di integrarsi direttamente con le specifiche API di basso livello, gli sviluppatori possono semplicemente descrivere il loro intento nel linguaggio naturale.
 
