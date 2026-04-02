@@ -4,9 +4,9 @@ description: Scopri come configurare l’editor Rich Text nell’editor universa
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ L&#39;editor Rich Text è configurabile utilizzando i filtri dei componenti [.](
 
 >[!NOTE]
 >
->Quando avvii un progetto Universal Editor, tutte le funzioni Rich Text supportate dal backend (AEM con Edge Delivery o implementazione headless) sono automaticamente attive.
+>Quando avvii un progetto Universal Editor, tutte le funzionalità Rich Text supportate dal backend (AEM con Edge Delivery o implementazione headless) sono automaticamente attive e disponibili nella [finestra dell&#39;editor modale dell&#39;editor Rich Text](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* È possibile disattivare le opzioni non necessarie.
 >* L’attivazione di opzioni non compatibili con il tipo di progetto non è supportata.
@@ -77,7 +77,7 @@ La configurazione della barra degli strumenti controlla quali opzioni di modific
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -292,6 +292,82 @@ La funzione Rientro dispone di una configurazione a livello di funzionalità che
 >
 >La nidificazione degli elenchi tramite i tasti TAB/MAIUSC+TAB funziona indipendentemente dalle impostazioni generali di rientro.
 
+### Caratteri speciali {#special-characters}
+
+L&#39;azione di inserimento `special_characters` apre un popover del selettore di caratteri per l&#39;inserimento di caratteri speciali (simboli, operatori matematici, segni di valuta, punteggiatura, frecce e così via) in corrispondenza della posizione del cursore.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+È incluso un set predefinito di 44 caratteri di uso comune. L’elenco dei caratteri può essere personalizzato tramite due opzioni di configurazione:
+
+* `appendCharacters` - Aggiungi caratteri al set predefinito
+* `characters` - Sostituisci completamente il set predefinito
+
+Ogni voce di carattere ha `character` (carattere Unicode) e `title` (descrizione comando/nome accessibile).
+
+#### Aggiungi caratteri ai valori predefiniti {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Sostituisci caratteri speciali predefiniti {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Entrambe le opzioni insieme {#both-special-character-options}
+
+In questo esempio viene utilizzato `characters` come base, quindi vengono aggiunti caratteri aggiuntivi utilizzando `appendCharacters`.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Incolla testo semplice {#paste-as-text}
 
 L&#39;azione dell&#39;editor `paste_text` abilita un flusso di lavoro standard Incolla come testo normale.
@@ -364,7 +440,9 @@ Di seguito è riportato un esempio di configurazione completa.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ Di seguito è riportato un esempio di configurazione completa.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {

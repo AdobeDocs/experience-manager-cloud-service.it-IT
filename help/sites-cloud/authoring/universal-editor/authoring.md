@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '3020'
 ht-degree: 12%
 
 ---
@@ -92,7 +92,9 @@ Il pannello [proprietà](/help/sites-cloud/authoring/universal-editor/navigation
 
 ![Componente Rich Text nel pannello delle proprietà](assets/rich-text-properties-panel.png)
 
-Tocca la voce per aprire una finestra di dialogo che presenta un’area di lavoro più grande per modificare il testo RTF.
+#### Editor modale {#modal-editor}
+
+Tocca la voce nel [pannello proprietà](#properties-rail) per aprire un editor modale che offre un&#39;area di lavoro più grande per modificare il testo RTF.
 
 ![Finestra di dialogo per la modifica di testo RTF](assets/rich-text-canvas.png)
 
@@ -136,6 +138,8 @@ L’editor Rich Text di Universal Editor consente all’autore di applicare la f
 * **Rientro negativo**
 * **Incolla come testo**
    * Rimuovere la formattazione dal testo presente negli Appunti prima di incollarla nell&#39;Editor universale.
+* **Carattere speciale**
+   * Inserisce un carattere speciale nel testo.
 * **Rimuovi tutta la formattazione**
    * Rimuovi tutte le opzioni di formattazione dal testo selezionato.
 
@@ -188,7 +192,7 @@ A seconda delle esigenze del flusso di lavoro, può essere utile modificare il f
 
 1. È quindi possibile:
 
-   * Select the **Add** icon in the properties panel.
+   * Seleziona l&#39;icona **Aggiungi** nel pannello delle proprietà.
 
      ![Seleziona icona di aggiunta](assets/add-icon.png)
 
@@ -300,7 +304,7 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [ contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 

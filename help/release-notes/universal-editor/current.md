@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.03.26 dell’editor universale
-description: Queste sono le note sulla versione 2026.03.26 dell’editor universale.
+title: Note sulla versione 2026.04.02 dell’editor universale
+description: Queste sono le note sulla versione 2026.04.02 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 46%
+source-wordcount: '113'
+ht-degree: 60%
 
 ---
 
 
-# Note sulla versione 2026.03.26 dell’editor universale {#release-notes}
+# Note sulla versione 2026.04.02 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 26 marzo 2026 di Universal Editor.
+Queste sono le note sulla versione del 2 aprile 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Queste sono le note sulla versione del 26 marzo 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [La configurazione delle risorse di authoring dei documenti](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) è ora esposta tramite un endpoint di configurazione.
-* [Un punto di estensione](/help/implementing/universal-editor/extending.md#extending-ui) è stato aggiunto al menu contestuale.
-* È stata aggiunta una nuova icona di flusso di lavoro personalizzato al sistema Extensibility DynamicIcon per visualizzare lo stato di cancellazione profondo/superficiale nell’interfaccia utente.
+* [Alla barra degli strumenti dell&#39;editor Rich Text è stata aggiunta un&#39;opzione configurabile](/help/implementing/universal-editor/configure-rte.md#special-characters) per [aggiungere caratteri speciali](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
 
 ## Altri miglioramenti {#other-improvements}
 
-* È stato risolto un problema che impediva il funzionamento delle classi Document Authoring con più campi in quanto era prevista una stringa.
+* I campi tag non vengono più restituiti in modo errato come campi multipli dall’adattatore OpenAPI.
