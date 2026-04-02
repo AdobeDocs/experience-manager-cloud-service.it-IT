@@ -4,10 +4,10 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando Edge D
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 93%
+source-wordcount: '1127'
+ht-degree: 68%
 
 ---
 
@@ -34,6 +34,41 @@ Se disponi di Edge Delivery Services con licenza come parte di Adobe Experience 
 
 Inoltre, puoi accedere a un’esperienza unificata per gestire tutte le proprietà di AEM e al contempo garantire la coerenza tra i flussi di lavoro chiave. Questi flussi di lavoro includono la gestione dei nomi di dominio e dei certificati SSL e le mappature CDN.
 
+## Informazioni su Edge Delivery Services con l’authoring di AEM (Beta) {#eds-aem-authoring}
+
+>[!NOTE]
+>
+>Il livello di pubblicazione flessibile e le funzioni crosswalk di authoring di AEM descritte qui sono in Beta. Per partecipare a Beta, invia un&#39;e-mail a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con il tuo ID organizzazione Adobe e l&#39;ID programma.
+
+Le moderne esperienze web richiedono prestazioni elevate, ma molte organizzazioni si basano anche su flussi di lavoro di authoring AEM consolidati, governance e modelli di riutilizzo dei contenuti. Per aiutare i team a modernizzare la distribuzione senza interrompere l’authoring, Cloud Manager introduce funzionalità che consentono di eseguire le seguenti operazioni:
+
+* Distribuisci esperienze tramite Edge Delivery Services.
+* Continua a utilizzare AEM Author per la creazione di contenuti.
+* Eseguire il provisioning solo dell&#39;infrastruttura necessaria per l&#39;architettura.
+
+Queste funzionalità consentono alle organizzazioni di adottare la distribuzione moderna in modo incrementale, senza sacrificare i flussi di lavoro esistenti.
+
+### Opzioni di authoring per i siti Edge Delivery
+
+Quando crei un sito Edge Delivery in Cloud Manager, puoi scegliere l’approccio di authoring preferito:
+
+* Authoring basato su documenti: creazione di contenuti in Google Drive o SharePoint. Non è richiesto alcun ambiente AEM.
+* Authoring di AEM: creazione di contenuti in AEM mediante l&#39;Editor universale. Questo metodo richiede un ambiente AEM Author. Con questa opzione, non è necessario un livello di pubblicazione quando Edge Delivery gestisce la distribuzione dei contenuti.
+
+Le organizzazioni possono scegliere tra questi approcci o utilizzarli entrambi in modo incrementale, a seconda delle preferenze del flusso di lavoro. Consulta [Crea il tuo primo sito Edge Delivery con un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+
+### Livello di pubblicazione flessibile
+
+Cloud Manager consente di configurare se è stato eseguito il provisioning di un livello di pubblicazione per gli ambienti del programma. Non tutte le architetture richiedono un livello di pubblicazione come mostrato nella tabella seguente:
+
+| Architettura | Livello di pubblicazione |
+| --- | --- |
+| AEM Sites tradizionale | Obbligatorio |
+| Headless/API-first | Obbligatorio |
+| Edge Delivery Services | Non obbligatorio |
+
+Attivando il livello di pubblicazione solo quando necessario, i team possono eseguire il provisioning degli ambienti più rapidamente, semplificare l’infrastruttura e ridurre i componenti non necessari. Consulta [Livello di pubblicazione flessibile (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 ## Vantaggi dell’utilizzo del percorso consigliato da Adobe per Edge Delivery Services {#recommended-path-eds}
 
 Ottimizza i vantaggi offerti da Adobe accedendo e utilizzando la licenza di Edge Delivery Services tramite Cloud Manager. In questo modo puoi sfruttare diversi vantaggi chiave.
@@ -59,6 +94,7 @@ In alternativa, se scegli di utilizzare la rete CDN (ovvero una rete CDN non ges
 | Desidero aggiungere un sito Edge Delivery a Cloud Manager | Consulta [Aggiungere un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | Desidero creare un sito Edge Delivery ora | Consulta [Creare rapidamente un sito Edge Delivery in Cloud Manager con il clic di un pulsante](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | Desidero aggiungere Edge Delivery Services a un programma sandbox nuovo o esistente. | Consulta [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>Quando crei un programma sandbox, Edge Delivery Services viene aggiunto al programma per impostazione predefinita; non è necessario selezionarlo.<br>I programmi sandbox esistenti prima della disponibilità generale di Edge Delivery ereditano automaticamente Edge Delivery Services. |
+| Desidero creare un sito Edge Delivery che utilizzi l’authoring AEM | Consulta [Creare un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site). Quando si utilizza l’authoring AEM con Edge Delivery, il livello di pubblicazione è facoltativo. Consulta [Livello di pubblicazione flessibile (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier). |
 
 >[!NOTE]
 >
@@ -87,7 +123,7 @@ L’**elenco attività di Edge Delivery** in Cloud Manager è un elenco di contr
 | 8 | Configurare la convalida push | Consulta [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Pubblicazione | Consulta [Elenco di controllo per la pubblicazione](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441569?captions=ita&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrare un ticket di assistenza {#eds-support-ticket}
 

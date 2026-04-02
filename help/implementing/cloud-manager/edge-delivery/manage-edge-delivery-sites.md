@@ -4,10 +4,10 @@ description: Scopri come aggiungere una configurazione CDN a un sito Edge Delive
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
+source-wordcount: '1103'
+ht-degree: 64%
 
 ---
 
@@ -39,8 +39,53 @@ Fai clic su **Rinomina**.
 Nella tabella del sito di Edge Delivery, fai clic sull’![icona Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) alla fine di una riga di cui vuoi rinominare il sito. Fai clic su **Rinomina**.
 
 1. Nella finestra di dialogo **Modifica sito Edge Delivery** immetti il nuovo nome del sito nel campo di testo **Nome sito**.
-
 1. Fai clic su **Modifica**.
+
+
+## Attivare il livello di pubblicazione per un sito Edge Delivery (Beta) {#activate-publish-tier-for-eds}
+
+>[!NOTE]
+>
+>La funzione di pubblicazione qui descritta è in Beta. Per partecipare a Beta, invia un&#39;e-mail a [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) con il tuo ID organizzazione Adobe e l&#39;ID programma.
+
+Questa funzionalità si applica solo ai siti Edge Delivery creati con l&#39;opzione **Authoring di AEM** nei programmi in cui è abilitata la funzione del livello di pubblicazione flessibile.
+
+Se il sito Edge Delivery utilizza l’authoring di AEM, per impostazione predefinita non viene eseguito il provisioning del livello di pubblicazione perché Edge Delivery gestisce la distribuzione dei contenuti. Tuttavia, puoi attivare il livello di pubblicazione in qualsiasi momento, se il sito lo richiede. Ad esempio, se devi supportare la pubblicazione tradizionale AEM insieme ad Edge Delivery.
+
+Dopo aver creato il sito Edge Delivery e aver visualizzato il relativo stato **Verificato** in Cloud Manager, puoi creare e pubblicare contenuti con AEM Universal Editor.
+
+**Per accedere all&#39;editor universale da Cloud Manager:**
+
+1. Nell’elenco Siti Edge Delivery della scheda Edge Delivery individua il tuo sito.
+
+   ![Pubblicazione di contenuto da AEM Author ad Edge Delivery.](/help/implementing/cloud-manager/edge-delivery/assets/eds-content-source-link.png)
+
+1. Fare clic sul collegamento **Source dei contenuti** nella riga del sito. Il collegamento consente di aprire la pagina AEM Universal Editor, da cui è possibile creare e modificare i contenuti del sito.—>
+
+**Per attivare il livello di pubblicazione per un sito Edge Delivery:**
+
+1. Nella pagina **Panoramica programma**, nella scheda **Consegna pubblicazione**, nella scheda **Ambiente**, fai clic sull&#39;icona Informazioni.
+
+1. Nel pop-up informativo, in **URL pubblicazione**, seleziona **Fai clic per attivare** per abilitare il provisioning del livello di pubblicazione nell&#39;interfaccia utente di Cloud Manager.
+
+   ![Fare clic per attivare il provisioning del livello di pubblicazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+
+1. Nella finestra di dialogo Attiva livello di pubblicazione fare clic su **Attiva**.
+
+   ![Finestra di dialogo Attiva livello di pubblicazione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+
+   Una volta attivato, il livello di pubblicazione viene fornito automaticamente. In alternativa, è possibile eseguire automaticamente il provisioning del livello di pubblicazione se l’autore tenta di pubblicare contenuti direttamente dall’interfaccia utente di AEM.
+
+   Dopo l&#39;attivazione e il provisioning del livello di pubblicazione, il collegamento **Fai clic per attivare** diventa inattivo/non disponibile.
+
+* **Da AEM Author**: nell&#39;interfaccia di authoring di AEM, fai clic su **Pubblicazione rapida** per pubblicare i contenuti direttamente sul tuo sito Edge Delivery. Il livello di pubblicazione non è necessario per questa operazione quando Edge Delivery gestisce la consegna.
+
+Dopo la pubblicazione, visualizza l&#39;anteprima del contenuto all&#39;URL `.page` del sito o in tempo reale all&#39;URL `.live`.—>
+
+>[!NOTE]
+>
+>L’attivazione del livello di pubblicazione aggiunge l’infrastruttura di pubblicazione all’ambiente. Questa funzionalità può influire sul consumo di risorse del programma. Per configurare se il livello di pubblicazione è obbligatorio a livello di programma, vedere [Livello di pubblicazione flessibile (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 
 ## Eliminare un sito di Edge Delivery {#delete-edge-delivery-site}
 

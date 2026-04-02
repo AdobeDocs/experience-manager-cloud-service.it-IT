@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 25%
+source-wordcount: '438'
+ht-degree: 24%
 
 ---
 
@@ -47,6 +47,7 @@ Ogni volta che si modifica un programma, incluso l&#39;aggiunta o la rimozione d
    ![Scheda Generale](assets/edit-program-prod1.png)
 
 1. Le opzioni disponibili per la modifica del programma sono le stesse per la creazione del programma.
+   * Puoi configurare se viene eseguito il provisioning di un livello di pubblicazione per i nuovi ambienti (Beta). Consulta [Livello di pubblicazione flessibile (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * Per informazioni dettagliate sulle singole opzioni, consulta [Creare programmi di produzione](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Creare programmi sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
    * [Ulteriori opzioni](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) potrebbero essere disponibili per il programma di produzione in base ai diritti dell&#39;organizzazione.
 

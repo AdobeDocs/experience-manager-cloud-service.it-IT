@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 35%
+source-wordcount: '1903'
+ht-degree: 26%
 
 ---
 
@@ -42,7 +42,7 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 >
 >Prima di configurare una pipeline front-end, consulta [Percorso per la creazione rapida dei siti di AEM](/help/journey-sites/quick-site/overview.md) per una guida end-to-end all’intuitivo strumento AEM per la creazione rapida dei siti. Questo percorso può aiutarti a semplificare lo sviluppo front-end del tuo sito AEM, consentendoti di personalizzare rapidamente il tuo sito senza alcuna conoscenza del back-end di AEM.
 
-1. Accedi a Cloud Manager dall’indirizzo [experience.adobe.com](https://experience.adobe.com).
+1. Accedi a Cloud Manager all&#39;indirizzo [experience.adobe.com](https://experience.adobe.com).
 1. Nella sezione **Accesso rapido**, fai clic su **Experience Manager**.
 1. Nel pannello laterale a sinistra, fai clic su **Cloud Manager**.
 1. Selezionare un&#39;organizzazione desiderata.
@@ -71,14 +71,14 @@ Dopo aver configurato il programma e disporre di almeno un ambiente che utilizza
 
 1. Nella scheda **Codice Source**, seleziona il tipo di codice da elaborare con la pipeline.
 
-   * **[Configurare una pipeline del codice full stack](#full-stack-code)**
+   * **[Utilizzo codice full stack](#full-stack-code)**
    * **[Configurare una pipeline di distribuzione di destinazione](#targeted-deployment)**
 
 Per ulteriori informazioni sui tipi di pipeline, consulta [Pipeline CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 I passaggi per completare la creazione della pipeline di produzione variano a seconda del tipo di codice sorgente selezionato. Accedi ai collegamenti riportati qui sopra per passare alla sezione successiva del documento e completare la configurazione della pipeline.
 
-### Configurare una pipeline del codice full stack {#full-stack-code}
+### Utilizzo un codice full stack {#full-stack-code}
 
 Una pipeline del codice full stack distribuisce simultaneamente le build del codice back-end e front-end contenenti una o più applicazioni server di AEM con la configurazione HTTPD/Dispatcher.
 
@@ -96,8 +96,14 @@ Una pipeline del codice full stack distribuisce simultaneamente le build del cod
    > 
    >Consulta [Aggiungere e gestire archivi](/help/implementing/cloud-manager/managing-code/managing-repositories.md) per scoprire come aggiungere e gestire archivi in Cloud Manager.
 
-   * **Ramo Git** - Definisce da quale ramo la pipeline selezionata deve recuperare il codice.
-Inserisci i primi caratteri del nome del ramo e la funzione di completamento automatico di questo campo trova i rami corrispondenti per aiutarti a selezionare.
+   * **Ramo Git**: dall&#39;elenco a discesa, scegli il ramo nell&#39;archivio selezionato da cui deve essere generata la pipeline. Il valore predefinito è `main`. La pipeline utilizza il ramo scelto come origine per la generazione e la distribuzione. Se necessario, fare clic su **Aggiorna** per aggiornare l&#39;elenco dei rami disponibili per l&#39;archivio selezionato. Utilizza questa opzione se un ramo creato di recente non viene visualizzato nell’elenco.
+   * **Strategia di compilazione**
+      * **Build completa** - Genera tutti i moduli nell&#39;archivio ogni volta
+      * BETA **Smart Build** - Genera solo moduli che sono stati modificati dopo l&#39;ultimo commit.<br>Ulteriori informazioni sull&#39;utilizzo di [Smart Build in una pipeline non di produzione](#about-smart-build-non-production-pipeline).
+
+        >[!IMPORTANT]
+        >
+        >Smart Build è disponibile solo per le pipeline di qualità del codice e per le pipeline di distribuzione del codice full stack di sviluppo.
    * **Ignora configurazione a livello web**: se questa opzione è selezionata, la pipeline non distribuisce la configurazione a livello web.
    * **Sospendi prima della distribuzione nell&#39;ambiente di produzione** - Sospende la pipeline prima della distribuzione nell&#39;ambiente di produzione.
    * **Pianificato** - Consente all&#39;utente di abilitare la distribuzione di produzione pianificata.
@@ -118,7 +124,7 @@ Durante l’esecuzione della pipeline, i percorsi configurati per l’audit dell
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
-### Configurare una pipeline di distribuzione di destinazione {#targeted-deployment}
+### Utilizzo un’implementazione mirata {#targeted-deployment}
 
 Una distribuzione mirata distribuisce il codice solo per parti selezionate dell’applicazione AEM. In tale distribuzione, puoi scegliere di **Includere** uno dei seguenti tipi di codice:
 
@@ -168,6 +174,80 @@ Una distribuzione mirata distribuisce il codice solo per parti selezionate dell�
 1. Fai clic su **Salva**.
 
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
+
+## BETA: informazioni sull’utilizzo di Smart Build in una pipeline di produzione{#about-smart-build-production-pipeline}
+
+**Smart Build** in Cloud Manager è una strategia di compilazione ottimizzata per le pipeline di produzione. Smart Build riduce i tempi di generazione memorizzando nella cache i moduli e ricostruendo solo quelli che sono stati modificati dopo l’ultima esecuzione riuscita. I moduli invariati vengono riutilizzati dalla cache, mentre vengono ricostruiti solo i moduli modificati e le relative dipendenze, migliorando l’efficienza dei flussi di lavoro di sviluppo iterativi.
+
+>[!NOTE]
+>
+>Ti interessa questa beta? Invia un’e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) indicando il tuo OrgID Adobe e l’ID programma.
+
+>[!IMPORTANT]
+>
+>La prima esecuzione dopo l’abilitazione di Smart Build si comporta come una Build completa perché la cache è vuota.
+
+Si consiglia di utilizzare Smart Build nei seguenti casi:
+
+* Stai sviluppando attivamente e apportando frequenti modifiche incrementali.
+* Il progetto contiene più moduli Maven.
+* Le build complete richiedono molto tempo.
+
+Smart Build non è sempre ideale quando si dispone dei seguenti elementi:
+
+* La build si basa principalmente su plug-in che eseguono operazioni al di fuori del grafico delle dipendenze di Maven.
+* È necessaria la convalida completa della ricompilazione a ogni esecuzione.
+
+### Comprendere le prestazioni della build{#smart-build-performance}
+
+Il miglioramento delle prestazioni derivante dall’utilizzo di Smart Build dipende da diversi fattori, tra cui i seguenti:
+
+* Il numero di moduli nel progetto.
+* Frequenza e ambito delle modifiche al codice.
+* La distribuzione delle dipendenze tra i moduli.
+
+In generale, i progetti con molti moduli indipendenti possono vedere il miglioramento maggiore.
+
+### Rinuncia alla cache per modulo{#smart-build-cache-optout}
+
+Smart Build fornisce un controllo dettagliato che consente di disabilitare la memorizzazione nella cache per moduli specifici. Questa funzionalità è utile quando alcuni moduli:
+
+* Utilizzare i plug-in, ad esempio `exec-maven-plugin` o `maven-antrun-plugin`.
+* Eseguire operazioni sui file non tracciate dalle dipendenze Maven.
+* Il contenuto nella cache produce risultati incoerenti.
+
+### Disattiva la memorizzazione in cache per un modulo{#smart-build-disable-caching}
+
+È possibile aggiungere la seguente proprietà al `pom.xml` del modulo interessato:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+Questa sintassi forza la ricostruzione del modulo su ogni esecuzione della pipeline, mentre altri moduli continuano a beneficiare della memorizzazione in cache.
+
+### Limitazioni e considerazioni sull’utilizzo di Smart Build{#smart-build-limitations}
+
+Quando usi Smart Build, tieni presente quanto segue:
+
+* Smart Build si basa sull’analisi delle dipendenze Maven.
+* Le modifiche che non rientrano nel grafico delle dipendenze potrebbero non attivare le ricompilazioni.
+* Alcuni plug-in potrebbero non essere completamente compatibili con il caching.
+* Puoi tornare a **Build completa** in qualsiasi momento modificando la pipeline di produzione.
+
+Se si verifica un comportamento di compilazione imprevisto, è consigliabile disabilitare la memorizzazione nella cache per moduli specifici o cambiare temporaneamente la strategia di compilazione in **Build completa**.
+
+### Risoluzione dei problemi di Smart Build{#smart-build-troubleshoot}
+
+| Problema | Soluzioni consigliate |
+| --- | --- |
+| I risultati della build non sono coerenti | · Disattiva la memorizzazione in cache per i moduli interessati.<br>· Verificare il comportamento del plug-in, in particolare `exec`/`antrun`. |
+| Nessun miglioramento delle prestazioni | · Verificare che si siano verificate più esecuzioni (riscaldamento della cache).<br>· Verificare se la maggior parte dei moduli cambia frequentemente. |
+| Artefatti imprevisti o modifiche mancanti | · Verifica se le modifiche non rientrano nel tracciamento delle dipendenze Maven.<br>· Utilizza **Build completa** per la verifica. |
+
+Consulta [Aggiungere una pipeline di produzione](#adding-production-pipeline) per abilitare Smart Build.
 
 ## Ignora pacchetti Dispatcher {#skip-dispatcher-packages}
 

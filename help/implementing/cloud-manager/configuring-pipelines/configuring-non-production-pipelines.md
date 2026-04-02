@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
+source-git-commit: 7663af90b17e4b9d9567041c3bed8e20465c87d9
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 20%
@@ -92,7 +92,7 @@ Per completare la configurazione della pipeline non di produzione del codice ful
    * **Ramo Git**: dall&#39;elenco a discesa, scegli il ramo nell&#39;archivio selezionato da cui deve essere generata la pipeline. Il valore predefinito è `main`. La pipeline utilizza il ramo scelto come origine per la generazione e la distribuzione. Se necessario, fare clic su **Aggiorna** per aggiornare l&#39;elenco dei rami disponibili per l&#39;archivio selezionato. Utilizza questa opzione se un ramo creato di recente non viene visualizzato nell’elenco.
    * **Strategia di compilazione**
       * **Build completa** - Genera tutti i moduli nell&#39;archivio ogni volta
-      * BETA **Smart Build** - Genera solo moduli che sono stati modificati dopo l&#39;ultimo commit.<br>Ulteriori informazioni sull&#39;utilizzo di [Smart Build in una pipeline non di produzione](#about-smart-build).
+      * BETA **Smart Build** - Genera solo moduli che sono stati modificati dopo l&#39;ultimo commit.<br>Ulteriori informazioni sull&#39;utilizzo di [Smart Build in una pipeline non di produzione](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
@@ -180,7 +180,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 Ora che hai salvato la pipeline, puoi [gestire le pipeline](managing-pipelines.md) dalla pagina **Panoramica del programma** nella scheda **Pipeline**.
 
 
-## Informazioni sull’utilizzo di Smart Build in una pipeline non di produzione{#about-smart-build}
+## Informazioni sull’utilizzo di Smart Build in una pipeline non di produzione{#about-smart-build-non-production-pipeline}
 
 **Smart Build** in Cloud Manager è una strategia di compilazione ottimizzata per le pipeline non di produzione. Smart Build riduce i tempi di generazione memorizzando nella cache i moduli e ricostruendo solo quelli che sono stati modificati dopo l’ultima esecuzione riuscita. I moduli invariati vengono riutilizzati dalla cache, mentre vengono ricostruiti solo i moduli modificati e le relative dipendenze, migliorando l’efficienza dei flussi di lavoro di sviluppo iterativi.
 
@@ -194,11 +194,13 @@ Smart Build è attualmente disponibile solo per:
 >La prima esecuzione dopo l’abilitazione di Smart Build si comporta come una Build completa perché la cache è vuota.
 
 Si consiglia di utilizzare Smart Build nei seguenti casi:
+
 * Stai sviluppando attivamente e apportando frequenti modifiche incrementali.
 * Il progetto contiene più moduli Maven.
 * Le build complete richiedono molto tempo.
 
 Smart Build non è sempre ideale quando si dispone dei seguenti elementi:
+
 * La build si basa principalmente su plug-in che eseguono operazioni al di fuori del grafico delle dipendenze di Maven.
 * È necessaria la convalida completa della ricompilazione a ogni esecuzione.
 
