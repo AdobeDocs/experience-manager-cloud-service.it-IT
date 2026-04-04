@@ -2,12 +2,12 @@
 title: Componenti core Forms adattivi vs Edge Delivery Services Forms vs Componenti Foundation
 description: 'Confronto tecnico degli approcci di authoring di AEM Forms: componenti core, Edge Delivery Services Forms e componenti di base. Architettura, rendering, funzioni e casi d’uso.'
 keywords: confronto di moduli adattivi, componenti core, componenti di base, moduli per servizi di consegna edge, confronto di AEM forms, confronto di form builder
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 8%

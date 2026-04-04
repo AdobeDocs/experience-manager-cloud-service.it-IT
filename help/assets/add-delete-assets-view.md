@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -21,8 +21,10 @@ Per caricare una o più risorse o una cartella contenente risorse, puoi utilizza
 * Trascina risorse o cartelle nell’interfaccia utente e segui le istruzioni visualizzate.
 * Fai clic sull’opzione **[!UICONTROL Aggiungi risorse]** nella barra degli strumenti e aggiungi alcuni file nella finestra di dialogo di caricamento.
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 Puoi utilizzare uno di questi metodi per caricare le risorse dopo aver creato una cartella. Per creare una cartella vuota, fai clic su **[!UICONTROL Crea cartella]** nella barra degli strumenti. [!DNL Assets view] offre una potente funzionalità di ricerca full-text ma puoi anche utilizzare le cartelle per organizzare meglio le risorse.
 
@@ -85,7 +87,8 @@ Se tenti di caricare risorse duplicate, queste non vengono caricate finché non 
 >[!TIP]
 >
 >È possibile caricare le risorse nell&#39;archivio DAM direttamente dalle applicazioni desktop [!DNL Creative Cloud].
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -109,4 +112,4 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

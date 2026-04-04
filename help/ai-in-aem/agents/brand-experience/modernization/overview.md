@@ -2,9 +2,9 @@
 title: Panoramica dell’agente di modernizzazione dell’esperienza
 description: Scopri in che modo l’agente di modernizzazione esperienza esegue l’onboarding di nuovi siti web in Edge Delivery Services con l’aiuto dell’intelligenza artificiale.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Scopri in che modo l’agente di modernizzazione esperienza esegue l’onboardin
 
 ## Introduzione {#introduction}
 
-[Come parte di Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md), l&#39;agente di modernizzazione dell&#39;esperienza accelera l&#39;onboarding in Edge Delivery Services automatizzando le migrazioni dei siti web e la configurazione dei siti fondamentali.
+[Come parte di Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) l&#39;agente di modernizzazione dell&#39;esperienza accelera l&#39;onboarding in Edge Delivery Services automatizzando le migrazioni dei siti Web e la configurazione dei siti fondamentali.
 
 Combina [abilità di creazione siti e migrazione](#creation-migration) per l&#39;onboarding iniziale del sito Web e [capacità di sviluppo blocchi](#block-development) per supportare la creazione di siti e i flussi di lavoro di migrazione. Inoltre, offre la [Console di modernizzazione esperienza](#console) come ambiente di sviluppo basato su IA basato sul Web, disponibile direttamente. Anche se gli utenti possono utilizzare l’agente direttamente tramite tale console, gli sviluppatori mantengono il controllo completo sulle consegne.
 

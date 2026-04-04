@@ -2,9 +2,9 @@
 title: Distribuzione AOE dell’agente di modernizzazione esperienza
 description: Scopri gli Adobe Agentic Outcome Engineer (AOE) e come possono aiutarti con il successo con l’agente di modernizzazione dell’esperienza.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
-source-git-commit: 8c3d14fd29b289bbd8538fd5d81b75bddbfa9082
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%

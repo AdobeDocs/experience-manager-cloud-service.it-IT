@@ -4,7 +4,7 @@ description: Ulteriori informazioni sulla versione 2026.4.0 di Cloud Manager in 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6c98a27889257a6d8befa04a2b2c4e5a7e6e49f2
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 23%
@@ -34,7 +34,7 @@ La prossima versione è pianificata per l’venerdì 7 maggio 2026.
 
   Consulta la documentazione [Utilizzare MCP con AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-  Vedere l&#39;esercitazione [Cloud Manager MCP Server](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
+  Vedere l&#39;esercitazione [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
 
 * **Build più veloci con memorizzazione nella cache dei moduli**
 
@@ -78,6 +78,7 @@ Ora puoi distribuire siti utilizzando Edge Delivery Services mentre continui a c
 Per ulteriori informazioni, vedere [Creare un sito Edge Delivery in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
 * **Configurazione flessibile livello di pubblicazione**
+
 Cloud Manager ora consente di configurare se è necessario un livello di pubblicazione per il programma. Questa flessibilità consente di configurare ambienti che si adattano meglio all’architettura di consegna scelta.
 
 Per ulteriori informazioni, vedere [Livello di pubblicazione flessibile (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
@@ -95,7 +96,8 @@ Per ulteriori informazioni, consulta:
 
 Per partecipare a Beta, invia un&#39;e-mail a [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) con il tuo OrgID Adobe e il tuo ID programma.
 
-<!-- OLD
+<!-- 
+OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -107,7 +109,8 @@ Embed custom experiences in Experience Hub to extend and personalize your organi
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
 -->
 
-<!-- OLD
+<!-- 
+OLD
 ### Support for Custom Author Domains in Cloud Service
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.

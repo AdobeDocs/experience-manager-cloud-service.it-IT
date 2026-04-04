@@ -4,7 +4,7 @@ description: AEM dispone di API estese e potenti che puoi utilizzare per il tuo 
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 4%
@@ -25,9 +25,11 @@ Le seguenti API sono core di AEM.
 | [Interfaccia utente Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Stack Open Web di Adobe, che fornisce vari componenti essenziali (i materiali 6.5 Granite si applicano ad AEMaaCS) |
 | [Interfaccia utente Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Stile visivo di Adobe per le interfacce utente cloud, progettato per fornire coerenza nell’esperienza utente |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >
@@ -59,7 +61,7 @@ Se un’API è fornita da AEM, preferiscila a Sling, JCR e OSGi. Se AEM non forn
 
 >[!TIP]
 >
->Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=it).
+>Per informazioni dettagliate su queste linee guida, consulta il documento [Comprendere le best practice per le API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## Servizi e API di distribuzione e gestione dei contenuti di AEM {#delivery-apis}
 

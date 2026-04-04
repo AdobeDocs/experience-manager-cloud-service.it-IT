@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5cdfdd401293873d13a85d5eb42c18ab2d0b3be3
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 29%
@@ -33,7 +33,7 @@ Cloud Manager genera e verifica il codice mediante un ambiente di build speciali
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
 * **IMPORTANTE:** Per impostazione predefinita, la variabile di ambiente `JAVA_HOME` è impostata su `/usr/lib/jvm/jdk1.8.0_401`, che contiene Oracle JDK 8u401. ***Questo valore predefinito deve essere ignorato se i progetti AEM Cloud utilizzano JDK 21 (preferito), 17 o 11***. Per ulteriori dettagli, consulta la sezione [Impostazione della versione JDK di Maven](#alternate-maven-jdk-version).
-* È necessario installare anche alcuni pacchetti di sistema aggiuntivi.
+* Sono installati anche alcuni altri pacchetti di sistema necessari.
    * `bzip2`
    * `unzip`
    * `libpng`
@@ -59,19 +59,23 @@ Come risultato di questo miglioramento sulla sicurezza, alcuni utenti potrebbero
 
 Per garantire un’esperienza fluida con la versione aggiornata, Adobe consiglia agli utenti di aggiornare gli archivi Maven per utilizzare HTTPS invece di HTTP. Questo adeguamento è in linea con la crescente tendenza del settore verso protocolli di comunicazione sicuri e contribuisce a mantenere un processo di creazione sicuro e affidabile.
 
-<!-- OLD below Removed 1/16/25
+<!--
+ OLD below Removed 1/16/25
 
 ### Use a specific Java version
 
-The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 11. -->
+The Cloud Manager build process uses the Oracle 8 JDK to build projects by default, but AEM Cloud Service customers should set the Maven execution JDK version to 11.
+-->
 
-<!-- OLD below Removed 1/16/25
+<!--
+ OLD below Removed 1/16/25
 
 #### Set the Maven JDK version
 
 Adobe recommends that you set the JDK version for the entire Maven execution to `11` in a `.cloudmanager/java-version file`.
 
-To do so, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. Edit the file so that it contains only the text, `11`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`. -->
+To do so, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. Edit the file so that it contains only the text, `11`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`.
+-->
 
 ### Utilizza una versione Java specifica {#using-java-support}
 

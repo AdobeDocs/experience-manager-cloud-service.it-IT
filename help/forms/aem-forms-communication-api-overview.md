@@ -5,7 +5,7 @@ role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Le API di AEM Forms sono strutturate e accessibili tramite due console primarie:
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console è il gateway per API, eventi, runtime e App Builder di Adobe.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console fornisce accesso a dettagli a livello di ambiente, configurazioni, account tecnici e credenziali di servizio per supportare attività operative e di integrazione.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console fornisce accesso a dettagli a livello di ambiente, configurazioni, account tecnici e credenziali di servizio per supportare attività operative e di integrazione.
 
 Diverse API supportano [metodi di autenticazione](#authentication-methods) diversi.
 
@@ -36,7 +36,8 @@ Le API precedenti supportano l’autenticazione da server a server basata su JWT
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## Panoramica sulla classificazione API
 

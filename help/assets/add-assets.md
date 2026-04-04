@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3195'
 ht-degree: 10%
@@ -30,13 +30,14 @@ Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse cari
 |---------------------|----------------|-----------------|
 | [Interfaccia utente della console Assets](#upload-assets) | Caricamento occasionale, facilità di pressione e trascinamento, caricamento del mirino. Non utilizzare per caricare più risorse. | Tutti gli utenti |
 | [Carica API](#upload-using-apis) | Per decisioni dinamiche durante il caricamento. | Sviluppatore |
-| [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it) | Acquisizione di risorse di volume ridotto, ma non per la migrazione. | Amministratore, addetto marketing |
+| [[!DNL Experience Manager] App desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Acquisizione di risorse di volume ridotto, ma non per la migrazione. | Amministratore, addetto marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) | Utile quando creativi e addetti al marketing lavorano su risorse dalle app desktop [!DNL Creative Cloud] supportate. | Creative, addetto marketing |
 | [Acquisizione in blocco risorse](#asset-bulk-ingestor) | Consigliato per migrazioni su larga scala e acquisizioni in blocco occasionali. Solo per gli archivi dati supportati. | Amministratore, sviluppatore |
 
 ## Caricare le risorse {#upload-assets}
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -49,11 +50,13 @@ Puoi anche scegliere di eseguire un’elaborazione aggiuntiva sulle risorse cari
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!--
+ #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -88,7 +91,8 @@ Inoltre, nell&#39;interfaccia utente di [!DNL Assets] viene visualizzata la riso
 >
 >Per caricare le gerarchie di cartelle nidificate, vedi [risorse per il caricamento in blocco](#bulk-upload).
 
-<!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+<!--
+ #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
 ### Serial uploads {#serialuploads}
 
@@ -147,14 +151,14 @@ L’inserimento in blocco delle risorse può gestire molte risorse in modo effic
 Per caricare un numero maggiore di file, utilizza uno dei seguenti approcci. Vedi anche [casi d&#39;uso e metodi](#upload-methods-comparison)
 
 * [API per il caricamento di risorse](developer-reference-material-apis.md#asset-upload): se necessario, usa uno script o uno strumento di caricamento personalizzato che utilizza le API per aggiungere ulteriore gestione delle risorse (ad esempio, tradurre i metadati o rinominare i file).
-* [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it): utile per professionisti del settore creativo e addetti al marketing che caricano risorse dal file system locale. Utilizzala per caricare le cartelle nidificate disponibili localmente.
+* [[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): utile per professionisti del settore creativo e addetti al marketing che caricano risorse dal file system locale. Utilizzala per caricare le cartelle nidificate disponibili localmente.
 * [Strumento di acquisizione in blocco](#asset-bulk-ingestor): utilizza per l&#39;acquisizione di grandi quantità di risorse occasionalmente o inizialmente durante la distribuzione di [!DNL Experience Manager].
 
 ### Strumento Importazione in blocco risorse {#asset-bulk-ingestor}
 
 Lo strumento viene fornito solo al gruppo degli amministratori da utilizzare per l’acquisizione su larga scala delle risorse dai datastore di Azure o S3. Guarda un video con la procedura dettagliata sulla configurazione e l’acquisizione.
 
->[!VIDEO](https://video.tv.adobe.com/v/341387/?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 L’immagine seguente illustra le varie fasi di acquisizione delle risorse in Experience Manager da un archivio dati:
 
@@ -203,7 +207,7 @@ Per configurare lo strumento Importazione in blocco, effettuare le seguenti oper
 
 1. Per definire una posizione in DAM in cui importare le risorse utilizzando il campo **[!UICONTROL Cartella risorse di destinazione]**, specifica un percorso. Esempio: `/content/dam/imported_assets`.
 
-1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando si [Importa ed esporta metadati di risorse in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=it). Se si seleziona l&#39;opzione **Elimina file di origine dopo l&#39;importazione**, filtrare i file CSV utilizzando i campi **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file**. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
+1. (Facoltativo) Specifica il file di metadati da importare, fornito in formato CSV, nel campo **[!UICONTROL File di metadati]**. Specifica il file CSV nel percorso del BLOB di origine e fai riferimento al percorso durante la configurazione dello strumento Importazione in blocco. Il formato di file CSV a cui si fa riferimento in questo campo è lo stesso del formato di file CSV quando si [Importa ed esporta metadati di risorse in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se si seleziona l&#39;opzione **Elimina file di origine dopo l&#39;importazione**, filtrare i file CSV utilizzando i campi **Escludi** o **Includi tipo MIME** o **Filtra per percorso/file**. È possibile utilizzare un’espressione regolare per filtrare i file CSV in questi campi.
 
 1. Fai clic su **[!UICONTROL Salva]** per salvare la configurazione.
 
@@ -358,7 +362,7 @@ In Experience Manager viene visualizzata la cronologia dei processi. Nella pagin
 Oltre all&#39;interfaccia utente del browser Web, [!DNL Experience Manager] supporta altri client sul desktop. Inoltre, forniscono un’esperienza di caricamento senza dover passare al browser web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html) fornisce l&#39;accesso alle risorse da [!DNL Experience Manager] nelle applicazioni desktop Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Puoi caricare il documento attualmente aperto in [!DNL Experience Manager] direttamente dall&#39;interfaccia utente di Adobe Asset Link, direttamente da queste applicazioni desktop.
-* L&#39;[[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it) semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È utile caricare i file nelle gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
+* L&#39;[[!DNL Experience Manager] app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) semplifica l&#39;utilizzo delle risorse sul desktop, indipendentemente dal tipo di file o dall&#39;applicazione nativa che le gestisce. È utile caricare i file nelle gerarchie di cartelle nidificate dal file system locale, in quanto il caricamento del browser supporta solo il caricamento di elenchi di file flat.
 
 ## Elabora risorse quando caricate {#process-when-uploaded}
 
@@ -401,7 +405,8 @@ I dettagli tecnici delle API di caricamento e del protocollo, nonché i collegam
 * Il metodo di importazione in blocco importa l&#39;intera struttura di cartelle così come esiste nell&#39;origine dati. Tuttavia, in [!DNL Experience Manager] vengono create solo le cartelle non vuote.
 
 
-<!-- TBD: Link to file name handling in DA docs when it is documented. 
+<!--
+ TBD: Link to file name handling in DA docs when it is documented. 
 -->
 
 **Consulta anche**

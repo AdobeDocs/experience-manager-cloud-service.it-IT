@@ -4,7 +4,7 @@ description: Note sulla versione 2025.7.0 di [!DNL Adobe Experience Manager] as 
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2273'
 ht-degree: 96%
@@ -39,7 +39,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440928?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -125,7 +125,8 @@ I vantaggi principali includono:
 
 L’[API di sincronizzazione dell’output AFP](/help/forms/document-generation-afp-api.md) consente ad amministratori e utenti di generare output AFP (Advanced Function Presentation) da moduli adattivi e di sincronizzare l’output con sistemi esterni o percorsi di archiviazione. AFP è un formato di documento ad alte prestazioni ottimizzato per la stampa, spesso utilizzato in ambienti aziendali di larga scala.
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+<!--
+ ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -147,7 +148,8 @@ Il programma per l’accesso anticipato ad AEM Forms offre un’opportunità uni
 In queste note sulla versione sono elencate le innovazioni incluse nella versione corrente. Per l’elenco completo delle innovazioni disponibili nell’ambito del programma per l’accesso anticipato, consulta la [documentazione del programma per l’accesso anticipato ad AEM Forms](/help/forms/early-access-ea-features.md).
 
 
-<!-- **Forms Optimization opportunities**
+<!--
+ **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -160,7 +162,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 **Editor di regole per l’editor di comunicazioni interattive**
 
@@ -223,7 +226,7 @@ Proprietà OSGi:
 
 ### Rimozione runtime Java 11 {#java11-runtime-deprecation}
 
-Il **runtime Java 11* è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime &#x200B;** Java 21** più performante.
+Il **runtime Java 11* è ora obsoleto e la maggior parte degli ambienti è stata già aggiornata al runtime **Java 21** più performante.
 
 Se non è stato possibile aggiornare l’ambiente a causa di dipendenze non supportate (consulta [Requisiti di runtime Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), dovresti aver ricevuto un’e-mail da Adobe con i passaggi successivi specifici. Assicurati che tutti gli aggiornamenti richiesti siano completati entro il **28 agosto 2025**, in modo che l’ambiente possa essere aggiornato senza interruzioni.
 

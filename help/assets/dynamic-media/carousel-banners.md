@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4498'
 ht-degree: 1%
@@ -49,7 +49,8 @@ Per iniziare subito a utilizzare il prodotto:
 
    Per prima cosa, identifica le variabili dinamiche utilizzate dall’implementazione della visualizzazione rapida esistente. In questo modo puoi inserire correttamente gli hotspot e i dati della mappa immagine durante il processo di creazione del banner a carosello in Experience Manager Assets.
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -100,7 +101,8 @@ Per prima cosa, identifica le variabili dinamiche utilizzate dall’implementazi
 
 Quando aggiungete punti attivi o mappe immagine a un&#39;immagine del banner, assegnate uno SKU (Stock Keeping Unit). Puoi anche assegnare ulteriori variabili facoltative a ciascun punto attivo o mappa immagine. Tali variabili vengono utilizzate in un secondo momento per far corrispondere i punti attivi o le mappe immagine con il contenuto della Visualizzazione rapida.
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -148,10 +150,10 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
    <td>Singolo SKU, trovato nella stringa di query.</td>
    <td><p>Gli URL di visualizzazione rapida registrati includono:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>L'unica parte variabile nell'URL è il valore del parametro della stringa di query <code>productId=</code> ed è chiaramente un valore SKU. Pertanto, i punti attivi o le mappe immagine richiedono solo campi SKU compilati con valori come <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -167,9 +169,9 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
    <td>SKU e ID categoria nella stringa query.</td>
    <td><p>Gli URL di visualizzazione rapida registrati includono:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>In questo caso, l’URL contiene due parti diverse. Lo SKU è archiviato nel parametro <code>prodId</code> e l'ID categoria nel parametro <code>category=</code>.</p> <p>Di conseguenza, le definizioni del punto attivo/mappa immagine sono coppie. ovvero un valore SKU e una variabile aggiuntiva denominata <code>categoryId</code>. Le coppie risultanti sono le seguenti:</p>
     <ul>
      <li><p>Lo SKU è <strong><code>305466</code></strong> e <code>categoryId</code> è <code>1100004</code>.</p> </li>

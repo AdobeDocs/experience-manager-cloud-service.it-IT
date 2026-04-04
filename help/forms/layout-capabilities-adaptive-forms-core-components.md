@@ -6,7 +6,7 @@ keywords: Layout del modulo adattivo basato su componenti core, layout diversi p
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2148'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (componenti di base) | [Fai clic qui](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (componenti core) | Questo articolo |
 
@@ -79,7 +79,7 @@ Il layout delle schede verticali è noto anche come tabulazioni nel layout sinis
 
 Layout schede verticali
 
-È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+È possibile utilizzare il componente [schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) per aggiungere il layout delle schede verticali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente Schede verticali, consulta l&#39;articolo [Componente Schede verticali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB Layout schede orizzontali]
@@ -91,7 +91,7 @@ Il layout delle schede orizzontali è noto anche come Tabulazioni nel layout sup
 
 Layout schede orizzontali
 
-È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+È possibile utilizzare il componente [schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) per aggiungere il layout delle schede orizzontali in un modulo. Per istruzioni dettagliate su come configurare le varie proprietà del componente schede orizzontali, consulta l&#39;articolo [componente schede orizzontali](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Layout pannello a soffietto]
@@ -229,9 +229,11 @@ Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. A
 
 ### &#x200B;3. Aggiungere componenti modulo al pannello
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. Individua la sezione all’interno del pannello che consente di aggiungere componenti.
 1. Fai clic sull&#39;icona **Aggiungi**. L’icona è un segno più (+) che indica l’opzione per aggiungere nuovi componenti.
@@ -277,7 +279,8 @@ Allo stesso modo, potete nascondere i titoli anche per gli altri due pannelli. A
 Puoi anche [trascinare i componenti](#extra-bytes) per aggiungere i componenti del modulo a ciascun pannello.
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

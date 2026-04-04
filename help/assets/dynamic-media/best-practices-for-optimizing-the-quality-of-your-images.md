@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Adobe Experience Manager include più di 100 comandi di consegna delle immagini 
 **Smart imaging:**
 
 * L’abilitazione di Smart Imaging in Dynamic Media consente di ottimizzare automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
-Vuoi saperne di più? Vai a [Smart Imaging](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+Vuoi saperne di più? Vai a [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Migliora le prestazioni di consegna delle immagini regolando dinamicamente questi parametri.
 * È possibile valutare Smart Imaging utilizzando lo strumento di autovalutazione [Snapshot](https://snapshot.scene7.com/).
 
@@ -61,7 +61,8 @@ Considerazioni essenziali sull&#39;utilizzo delle immagini di origine:
 
 Effettuando queste scelte accurate a livello di origine, puoi contribuire in modo significativo alla qualità complessiva del contenuto visivo.
 
-<!-- REMOVED TOPIC AS PER CQDOC-21594
+<!--
+ REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
@@ -71,7 +72,8 @@ Effettuando queste scelte accurate a livello di origine, puoi contribuire in mod
 * JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
 * If your images contain transparency, use PNG because JPG does not support transparency.
 
-As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
+As a best practice for image format, start with the most common setting `&fmt=JPG`.
+-->
 
 ## Best practice per le dimensioni delle immagini {#best-practices-for-image-size}
 
@@ -88,7 +90,7 @@ La nitidezza delle immagini è l’aspetto più complesso del controllo delle im
 
 * Il white paper sulle best practice [Best practice per la qualità delle immagini e la nitidezza di Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche ad Experience Manager.
 
-* Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Con Experience Manager, puoi rendere più nitide le immagini al momento dell’acquisizione, della consegna o di entrambe. Di solito, tuttavia, è meglio rendere più nitide le immagini utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini alla consegna, su un URL, in genere offre i risultati migliori.
 
@@ -112,7 +114,7 @@ Esistono due metodi per la nitidezza delle immagini:
 
       * Il white paper sulle best practice [Best practice per la qualità delle immagini e la nitidezza di Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) si applica anche ad Experience Manager.
 
-      * Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Guarda [Utilizza nitidezza immagine con Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager consente inoltre di controllare un quarto parametro: monocromatico (0,1). Questo parametro determina se la maschera di contrasto viene applicata separatamente a ogni componente di colore utilizzando il valore 0 oppure alla luminosità/intensità dell&#39;immagine utilizzando il valore 1.
 
@@ -165,4 +167,4 @@ Durante la sperimentazione, i seguenti suggerimenti generali sono utili per otti
 
 * Prova e testa diversi parametri in tempo reale, direttamente su un URL.
 * Come best practice, ricorda che puoi raggruppare i comandi Dynamic Media Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
-* Experience Manager offre anche modi più avanzati per regolare la qualità delle immagini, ad esempio applicare immagini di nitidezza al momento dell’acquisizione. Per ottimizzare e ottimizzare i risultati del rendering, [i servizi di consulenza di Adobe](https://business.adobe.com/it/customers/consulting-services/main.html) possono aiutarti con insight personalizzato e best practice.
+* Experience Manager offre anche modi più avanzati per regolare la qualità delle immagini, ad esempio applicare immagini di nitidezza al momento dell’acquisizione. Per ottimizzare e ottimizzare i risultati del rendering, [i servizi di consulenza di Adobe](https://business.adobe.com/customers/consulting-services/main.html) possono aiutarti con insight personalizzato e best practice.

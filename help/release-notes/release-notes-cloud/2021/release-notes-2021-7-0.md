@@ -4,10 +4,10 @@ description: Note sulla versione 2021.7.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1292'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -64,7 +64,8 @@ Dai un&#39;occhiata al video Panoramica sulla versione di [luglio 2021](https://
 
 ### Nuove funzioni disponibili nel canale prerelease [!DNL Assets] {#assets-prerelease-features}
 
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+<!--
+ TBD: Not sure about GA of these enh. Shall check with the team.
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 
@@ -85,7 +86,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` non disponibile in [!DNL Exp
 
 ### Novità in [!DNL Forms] {#what-is-new-forms}
 
-* È ora possibile utilizzare il servizio Automated Forms Conversion per [convertire PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=it&#language-specific-meta-model) in moduli adattivi.
+* È ora possibile utilizzare il servizio Automated Forms Conversion per [convertire PDF forms in francese, tedesco e spagnolo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) in moduli adattivi.
 * È stato aggiunto un pannello separato all’editor modelli per visualizzare gli errori relativi ai componenti dei moduli adattivi. Consente di consolidare tutti gli errori dei moduli adattivi in un’unica posizione e di ridurre i tempi di risoluzione.
 
 ### Nuove funzioni disponibili nel canale pre-release di [!DNL Forms] {#beta-features-forms}
@@ -99,7 +100,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` non disponibile in [!DNL Exp
 
 * **Documento di record basato su Acroform**: puoi anche [utilizzare Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) come modello per documento record oltre al modello per moduli basato su XFA.
 
-* **Connettore per l&#39;archivio dati Microsoft® Azure**: è ora possibile [collegare il modello dati dei moduli al sistema di archiviazione Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=it). Consente di recuperare e archiviare i dati dei moduli adattivi come BLOB nell’archiviazione di Microsoft® Azure.
+* **Connettore per l&#39;archivio dati Microsoft® Azure**: ora è possibile [collegare il modello dati dei moduli al sistema di archiviazione Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Consente di recuperare e archiviare i dati dei moduli adattivi come BLOB nell’archiviazione di Microsoft® Azure.
 
 ## Componente aggiuntivo CIF {#cloud-services-cif}
 
@@ -191,7 +192,7 @@ La data di rilascio per Cloud Acceleration Manager è il 15 luglio 2021.
 
 ### Novità {#what-is-new-cam}
 
-Cloud Acceleration Manager è un’applicazione basata su cloud progettata per guidare i team IT durante l’intero percorso di transizione, dalla pianificazione al Cloud Service. Configura il tuo team per una migrazione di successo con best practice, suggerimenti, documentazione e strumenti consigliati da Adobe per ogni fase del percorso ad AEM as Cloud Service. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it).
+Cloud Acceleration Manager è un’applicazione basata su cloud progettata per guidare i team IT durante l’intero percorso di transizione, dalla pianificazione al Cloud Service. Configura il tuo team per una migrazione di successo con best practice, suggerimenti, documentazione e strumenti consigliati da Adobe per ogni fase del percorso ad AEM as Cloud Service. Ulteriori informazioni [qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >

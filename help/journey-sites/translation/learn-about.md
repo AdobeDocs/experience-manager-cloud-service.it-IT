@@ -8,8 +8,8 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Le pagine che compongono la tua esperienza sono facili da gestire nella console 
 
 ## Traduzione del contenuto in AEM {#translating-in-aem}
 
-AEM semplifica non solo la creazione e la gestione dei contenuti, ma anche la loro traduzione per i tipi di audience, indipendentemente dal luogo in cui si trovano.
+AEM semplifica non solo la creazione e la gestione dei contenuti, ma anche la loro traduzione per i tipi di pubblico, indipendentemente dal luogo in cui si trovano.
 
 Ad alto livello, la traduzione in AEM consiste in quattro semplici passaggi:
 

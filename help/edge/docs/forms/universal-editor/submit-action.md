@@ -5,8 +5,8 @@ keywords: come selezionare l’azione di invio per un modulo adattivo, collegare
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Alla fine di questo documento comprenderai come:
 - Configurare diversi tipi di azioni di invio per i moduli
 - Configurare gli invii di endpoint REST per l’integrazione con i sistemi esterni
 - Configurare gli invii di e-mail per le risposte ai moduli
-- Implementare azioni di invio personalizzate per esigenze aziendali specifiche
+- Implementare azioni di invio personalizzate per esigenze di business specifiche
 - Gestire gli scenari di errore e convalida del modulo durante l’invio
 
 ## Pubblico target
@@ -60,10 +60,12 @@ Le seguenti azioni di invio sono supportate da [moduli adattivi creati nell’ed
 - [Inviare ad Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [Inviare al foglio di calcolo](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 Puoi configurare l’azione di invio per i moduli creati nell’editor universale utilizzando la scheda **Invio** dell’estensione **Modifica le proprietà del modulo**.
 

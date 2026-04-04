@@ -2,9 +2,9 @@
 title: Brand Experience Agent
 description: Scopri in che modo Brand Experience Agent accelera la modernizzazione e l’evoluzione delle esperienze digitali automatizzando gli aggiornamenti dei contenuti, la trasformazione dei siti e la risoluzione dei problemi tecnici, consentendo ai brand di migliorare e adattarsi continuamente alla velocità dell’intelligenza artificiale.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -18,13 +18,13 @@ Brand Experience Agent accelera la modernizzazione e l’evoluzione delle esperi
 
 ## Agenti {#agents}
 
-L’agente di esperienza del marchio fornisce i risultati tramite i seguenti agenti, ciascuno dei quali è specializzato in un set specifico di processi:
+Brand Experience Agent fornisce i suoi risultati attraverso i seguenti agenti, ciascuno specializzato in un set specifico di lavori:
 
 * [Agente di modernizzazione esperienza](#experience-modernization) - Esegue la migrazione dei siti Web in formati compatibili con il cloud
 * [Experience Production Agent](#experience-production) - Riduce il time-to-market con aggiornamenti dei contenuti, creazione di moduli e comunicazioni
 * [Agente di sviluppo](#development) - Fornisce la risoluzione dei problemi assistita dall&#39;intelligenza artificiale e l&#39;automazione della compilazione
 
-Tramite questi agenti, Brand Experience Agent assorbe il pesante lavoro operativo alla base degli aggiornamenti e della modernizzazione, aiutando i team a fornire cambiamenti più rapidamente e con maggiore fiducia nell’odierna era AI.
+Attraverso questi agenti, Brand Experience Agent assorbe il pesante lavoro operativo che sta dietro agli aggiornamenti e alla modernizzazione, aiutando i team a fornire cambiamenti più rapidamente e con maggiore fiducia nell’odierna era AI.
 
 >[!IMPORTANT]
 >

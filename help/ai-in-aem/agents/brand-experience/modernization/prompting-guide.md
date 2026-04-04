@@ -2,14 +2,14 @@
 title: Guida alla richiesta di informazioni per l’agente di modernizzazione esperienza
 description: Questa guida fornisce suggerimenti per una richiesta efficace dell’agente di modernizzazione esperienza e descrive le sue funzioni.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Guida alla richiesta di informazioni per l’agente di modernizzazione esperienza {#prompting-guide}
 

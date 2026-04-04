@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata di utilizzo. Utilizzando la piattaforma [!DNL Experience Manager], puoi gestire in modo efficiente le informazioni sulla scadenza delle risorse e le informazioni sulle licenze.
@@ -75,7 +75,8 @@ Puoi configurare la pianificazione utilizzando le seguenti proprietà:
 * Il numero massimo di risorse scadute in un&#39;iterazione della pianificazione è il valore della proprietà `asset_expired_limit`.
 * Per eseguire il processo periodicamente, impostare il valore della proprietà `cq.dam.expiry.notification.scheduler.istimebased` come `false` e impostare il valore della proprietà `cq.dam.expiry.notification.scheduler.period.rule` in secondi.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

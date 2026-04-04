@@ -4,7 +4,7 @@ description: Scopri come ripristinare l’ultima build riuscita di un ambiente &
 feature: Operations
 role: Admin
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 3%
@@ -13,11 +13,13 @@ ht-degree: 3%
 
 # Ripristina il codice sorgente precedente distribuito in AEM as a Cloud Service {#restore-previous-code-deployed}
 
-<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+-->
 
 Utilizza **Ripristina il codice precedente distribuito** per ripristinare immediatamente l&#39;ultima compilazione riuscita di un ambiente, senza richiedere alcuna esecuzione della pipeline.
 
@@ -85,7 +87,7 @@ Se si desidera semplicemente ripristinare le condizioni originali dei dati persi
 
    ![Ripristino dell&#39;attivazione](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Nell&#39;angolo superiore destro della pagina, fai clic sull&#39;icona ![Campana o sull&#39;icona Notifiche &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifiche** per sapere quando inizia e termina il ripristino.
+1. Nell&#39;angolo superiore destro della pagina, fai clic sull&#39;icona ![Campana o sull&#39;icona Notifiche ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifiche** per sapere quando inizia e termina il ripristino.
 
    ![Ripristina le notifiche di codice precedenti all&#39;avvio del ripristino e al termine del ripristino](/help/operations/assets/restore-previous-code-notifications.png)
    *Notifiche per un processo di ripristino del codice precedente.*

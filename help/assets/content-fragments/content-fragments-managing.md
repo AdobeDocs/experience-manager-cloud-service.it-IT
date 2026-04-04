@@ -6,7 +6,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 62%
@@ -117,7 +117,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Rielabora Assets**
 * **Crea**
-* **Download**
+* **Scarica**
 
    * Salva il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
@@ -140,7 +140,7 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 >[!NOTE]
 >
->Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=it).
+>Molte di queste sono [azioni standard per Assets](/help/assets/manage-digital-assets.md) e/o [app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
@@ -225,7 +225,8 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
    * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Salva, chiudi e versioni {#save-close-and-versions}
 

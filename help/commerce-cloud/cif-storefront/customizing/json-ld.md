@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
@@ -116,4 +116,4 @@ Gli attributi JSON+LD possono essere mappati su query GraphQL in AEM CIF, garant
 
 Questa mappatura assicura che lo script JSON+LD sia popolato dinamicamente in base ai dati del prodotto recuperati tramite query GraphQL.
 
-Per verificare la struttura JSON+LD, puoi utilizzare il test dei risultati avanzati di [&#x200B; nella console di ricerca di Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Questo strumento fornisce un feedback dettagliato, indicando se gli attributi richiesti sono presenti o mancanti, e aiuta a garantire che i dati strutturati siano correttamente implementati.
+Per verificare la struttura JSON+LD, puoi utilizzare il test dei risultati avanzati di [ nella console di ricerca di Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Questo strumento fornisce un feedback dettagliato, indicando se gli attributi richiesti sono presenti o mancanti, e aiuta a garantire che i dati strutturati siano correttamente implementati.

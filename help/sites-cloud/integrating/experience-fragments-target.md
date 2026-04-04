@@ -6,7 +6,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2198'
 ht-degree: 93%
@@ -56,7 +56,7 @@ I Frammenti di esperienza possono essere esportati nell’area di lavoro predefi
 >
 >* [Sviluppo Adobe Target](https://developers.adobetarget.com/)
 >* [Componenti core: Frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
->* [Adobe Target: come si utilizzano i Frammenti di esperienza Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=it)
+>* [Adobe Target: come si utilizzano i Frammenti di esperienza Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5: configurazione manuale dell’integrazione con Adobe Target; creazione di una configurazione cloud di Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=it#creating-a-target-cloud-configuration)
 
 ## Prerequisiti {#prerequisites}
@@ -160,7 +160,8 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+   <!--
+    Can this still occur?
 
    >[!NOTE]
    >
@@ -187,7 +188,8 @@ Ora puoi selezionare la nuova configurazione da modificare.
 
    * **Configurazione A4T Analytics Cloud**: seleziona la configurazione cloud di Analytics utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessario se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto.
 
-     <!-- Is this needed?
+     <!--
+      Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -271,7 +273,7 @@ Il framework viene creato. Per replicare il framework nell’istanza di pubblica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=it).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

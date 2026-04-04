@@ -8,7 +8,7 @@ exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 100%
@@ -33,7 +33,7 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come AEM
 Questo documento illustra come iniziare a tradurre il contenuto dei siti in AEM. Dopo la lettura dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM archivia il contenuto.
+* Come AEM archivia i contenuti.
 * Conoscere gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
@@ -158,7 +158,7 @@ Le traduzioni devono essere create come cartelle di pari livello accanto alla li
 
 >[!NOTE]
 >
->L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente lavori di traduzione.
+>L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente i processi di traduzione.
 
 La struttura finale può avere un aspetto simile al seguente.
 
@@ -201,8 +201,8 @@ In genere si imposta il connettore una sola volta per l’istanza e le regole pe
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere l’importanza della struttura dei contenuti per la traduzione.
-* Comprendere come AEM archivia il contenuto.
-* Conoscere gli strumenti di traduzione di AEM.
+* Come AEM archivia i contenuti.
+* Gli strumenti di traduzione di AEM.
 
 Approfondisci l’argomento e continua il tuo percorso di traduzione AEM Sites consultando il documento successivo [Configurare il connettore di traduzione](configure-connector.md) dove verrà illustrato come connettere AEM a un servizio di traduzione.|
 

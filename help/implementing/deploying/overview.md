@@ -4,7 +4,7 @@ description: Scopri le nozioni di base e le best practice per la distribuzione i
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## Introduzione {#introduction}
 
-Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono e testano localmente il codice, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per distribuire il codice negli ambienti di produzione, staging e sviluppo di AEM as a Cloud Service. Per la convalida rapida delle funzionalità e il debug prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
+Le basi dello sviluppo del codice sono simili in AEM as a Cloud Service rispetto alle soluzioni AEM On Premise e Managed Services. Gli sviluppatori scrivono e testano localmente il codice, che viene quindi inviato agli ambienti AEM as a Cloud Service remoti. Cloud Manager, che era uno strumento opzionale per la distribuzione dei contenuti per Managed Services, è necessario. Questo è ora l’unico meccanismo per implementare il codice negli ambienti di produzione, staging e sviluppo di AEM as a Cloud Service. Per la convalida rapida delle funzionalità e il debug prima della distribuzione di tali ambienti, il codice può essere sincronizzato da un ambiente locale a un [ambiente di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 L’aggiornamento della [Versione AEM](/help/implementing/deploying/aem-version-updates.md) è sempre un evento di distribuzione separato dal push del [codice personalizzato](#customer-releases). Considerando un’altra angolazione, le versioni del codice personalizzato devono essere testate rispetto alla versione AEM produzione, in quanto è quella su cui alla fine verranno implementate. Gli aggiornamenti delle versioni di AEM che avvengono dopo di che (che sono frequenti e vengono applicati automaticamente) sono intesi per essere compatibili con le versioni precedenti del codice cliente già distribuito.
 
@@ -41,7 +41,7 @@ Al fine di sviluppare un codice personalizzato per una versione interna, deve es
 
 Il video seguente fornisce una panoramica di alto livello su come distribuire il codice in AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/39832?quality=9&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -52,9 +52,11 @@ Il video seguente fornisce una panoramica di alto livello su come distribuire il
 
 ### Distribuzioni tramite Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 I clienti distribuiscono il codice personalizzato agli ambienti cloud tramite Cloud Manager. Cloud Manager trasforma i pacchetti di contenuti assemblati localmente in un artefatto conforme al modello di funzioni Sling. Questo è il modo in cui viene descritta un’applicazione AEM as a Cloud Service quando viene eseguita in un ambiente cloud. Di conseguenza, quando si esaminano i pacchetti nel [Gestore di pacchetti](/help/implementing/developing/tools/package-manager.md) negli ambienti cloud, il nome includerà “cp2fm” e nei pacchetti trasformati saranno rimossi tutti i metadati. Non è possibile interagire con questi elementi, ovvero non è possibile scaricarli, replicarli o aprirli. Per la documentazione dettagliata sul convertitore, vedi [sling-org-apache-sling-feature-cpconverter su GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -166,9 +168,11 @@ Per creare istruzioni `repoinit`, segui la procedura seguente:
 
 Maggiori dettagli su `repoinit` sono disponibili nella [documentazione Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Gestore di pacchetti “una tantum” per pacchetti di contenuti mutabili {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -286,7 +290,7 @@ Se viene segnalato o rilevato un errore dopo l’implementazione, è possibile c
 
 ## Ambienti di sviluppo rapido (RDE) {#rde}
 
-Gli [ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) (o RDE in breve) consentono agli sviluppatori di distribuire e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzionalità che sono già collaudate per funzionare in un ambiente di sviluppo locale.
+Gli [ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md) o RDE (Rapid Development Environments) consentono agli sviluppatori di implementare e rivedere rapidamente le modifiche, riducendo al minimo il tempo necessario per testare le funzionalità che sono già collaudate per funzionare in un ambiente di sviluppo locale.
 
 A differenza degli ambienti di sviluppo regolari, che distribuiscono il codice tramite la pipeline di Cloud Manager, gli sviluppatori utilizzano gli strumenti della riga di comando per sincronizzare il codice da un ambiente di sviluppo locale agli RDE. Dopo aver testato correttamente le modifiche in un RDE, implementale in un ambiente di sviluppo Cloud regolare tramite la pipeline di Cloud Manager, che inserisce il codice attraverso i gate di qualità appropriati.
 
@@ -299,7 +303,7 @@ AEM as a Cloud Service d’altra parte è più rigoroso su quali modalità di es
 * Le modalità di esecuzione della configurazione OSGI devono fare riferimento ad ambienti RDE, di sviluppo, di staging o di produzione, oppure a servizi di authoring o pubblicazione. È supportata una combinazione di `<service>.<environment_type>`, mentre questi ambienti devono essere utilizzati in questo particolare ordine (ad esempio, `author.dev` o `publish.prod`). I token OSGI devono essere referenziati direttamente dal codice anziché utilizzando il metodo `getRunModes`, che non include più `environment_type` in fase di esecuzione. Per ulteriori informazioni, consulta [Configurazione OSGi per AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Le modalità di esecuzione dei bundle OSGI sono limitate al servizio (authoring, pubblicazione). I bundle OSGI per modalità di esecuzione devono essere installati nel pacchetto di contenuti in `install.author` o `install.publish`.
 
-AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare contenuti per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML non presenti negli ambienti di staging o di produzione: è possibile utilizzare Gestore di pacchetti.
+AEM as a Cloud Service non consente di utilizzare le modalità di esecuzione per installare contenuti per ambienti o servizi specifici. Se è necessario impostare un ambiente di sviluppo con dati o HTML non presenti negli ambienti di staging o di produzione, è possibile utilizzare Gestore di pacchetti.
 
 Le configurazioni supportate per la modalità di esecuzione sono:
 
@@ -327,9 +331,11 @@ Quando viene sviluppato localmente, un parametro di avvio in modalità di esecuz
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Configurazione delle attività di manutenzione nel controllo del codice sorgente {#maintenance-tasks-configuration-in-source-control}
 

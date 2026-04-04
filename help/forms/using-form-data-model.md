@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -83,7 +83,8 @@ Sì. AEM Forms supporta il caricamento sicuro dei documenti durante l’invio de
 
    Per aggiungere campi modulo, puoi trascinare gli oggetti modello dati nel modulo adattivo o nel frammento. I campi modulo aggiunti mantengono le proprietà dei metadati e l’associazione con le proprietà dell’oggetto modello dati. L’associazione assicura che i valori dei campi vengano aggiornati nelle origini dati corrispondenti all’invio del modulo e precompilati al momento del rendering del modulo.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## Anteprima con dati di esempio {#preview-ic}
 
 L’editor modello dati modulo consente di generare e modificare dati di esempio per gli oggetti modello dati nel modello dati modulo (FDM). È possibile utilizzare questi dati per visualizzare in anteprima e testare <!--interactive communications and--> Forms adattivo. È necessario generare i dati di esempio prima di visualizzare l&#39;anteprima come descritto in [Utilizzare il modello dati del modulo](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ L’editor modello dati modulo consente di generare e modificare dati di esempio
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 Per visualizzare in anteprima un modulo adattivo con dati di esempio, apri il modulo adattivo in modalità di creazione e seleziona **[!UICONTROL Anteprima]**.
 
 ## Precompilare utilizzando il servizio Modello dati modulo {#prefill}
 
-[!DNL Experience Manager Forms] fornisce il servizio di precompilazione del modello dati del modulo preconfigurato che è possibile abilitare per Forms adattivo <!--and interactive communications--> basato sul modello dati del modulo (FDM). Il servizio di precompilazione interroga le origini dati per gli oggetti modello dati nel modulo adattivo <!--and interactive communication--> e di conseguenza esegue la precompilazione dei dati durante il rendering del modulo o della comunicazione.
+[!DNL Experience Manager Forms] fornisce il servizio di precompilazione del modello dati del modulo preconfigurato che è possibile abilitare per Forms adattivo <!--and interactive communications--> basato sul modello dati del modulo (FDM). Il servizio di precompilazione interroga le origini dati per gli oggetti modello dati nel modulo adattivo e di conseguenza esegue la precompilazione dei dati durante il rendering del modulo o della comunicazione.
 
 Per abilitare il servizio di precompilazione del modello dati del modulo per un modulo adattivo, apri le proprietà del contenitore del modulo adattivo e seleziona **[!UICONTROL servizio di precompilazione del modello dati del modulo]** dall&#39;elenco a discesa **[!UICONTROL Servizio di precompilazione]** nel pannello a soffietto Base. Quindi, salva le proprietà.
 
 ![servizio di precompilazione](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Scrivere i dati del modulo adattivo inviati nelle origini dati {#write-af}
 

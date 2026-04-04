@@ -4,7 +4,7 @@ description: Assicurarsi che il codice e il contenuto siano pronti per la migraz
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2288'
 ht-degree: 9%
@@ -73,7 +73,7 @@ Per prima cosa, consulta la documentazione che descrive gli strumenti di base e 
 
 
 * Durante la pianificazione, è consigliabile disporre di un elenco di aree che devono essere reimpostate per essere compatibili con AEM as a Cloud Service. Puoi consultare le [Linee guida per lo sviluppo](/help/implementing/developing/introduction/development-guidelines.md) per ulteriori dettagli su come effettuare il refactoring del codice e ottimizzarlo per Cloud Service.
-* Scopri come [gestire le configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=it#what-is-a-configuration) in AEM as a Cloud Service.
+* Scopri come [gestire le configurazioni](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
 * Scopri come impostare un ambiente di sviluppo locale scaricando [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it)
 * Infine, acquisisci familiarità con [API Java di AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
@@ -85,7 +85,7 @@ Inoltre, puoi anche:
 
 * Guarda questo video per comprendere come configurare Dispatcher SDK:
 
-  >[!VIDEO](https://video.tv.adobe.com/v/39581?captions=ita)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Un cambio di mentalità {#a-change-in-mindset}
 
@@ -106,8 +106,8 @@ Adobe fornisce diversi strumenti per accelerare alcune delle attività di refact
 
 * [Migrazione dei flussi di lavoro delle risorse](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), uno strumento utilizzato per migrare automaticamente i flussi di lavoro di elaborazione delle risorse
 * [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), uno strumento che converte le configurazioni esistenti di Dispatcher in un formato pronto per AEM as a Cloud Service.
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=it), uno strumento che accetta un progetto AEM Multimode come input e lo converte in un progetto AEM as a Cloud Service
-* [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=it), uno strumento che converte gli indici in un modulo compatibile con AEM as a Cloud Service
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), uno strumento che accetta un progetto AEM Multimode come input e lo converte in un progetto AEM as a Cloud Service
+* [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), uno strumento che converte gli indici in un modulo compatibile con AEM as a Cloud Service
 * [Strumenti di modernizzazione](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), una suite di utilità che può essere utilizzata per convertire le funzionalità legacy di AEM nelle funzionalità moderne e supportate di AEM as a Cloud Service.
 
 Dopo aver configurato l&#39;ambiente di sviluppo locale, acquisisci familiarità con AEM as a Cloud Service SDK consultando la [documentazione](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
@@ -134,7 +134,7 @@ Segui le best practice riportate nei documenti seguenti relativi al test della q
 
 La preparazione del sistema di origine per la migrazione prevede attività a livello di amministratore di sistema e AEM. Puoi iniziare verificando che l&#39;archivio dei contenuti sia in uno stato di manutenzione corretto controllando lo stato dell&#39;attività [pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it) e [raccolta di oggetti inattivi dell&#39;archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=it). Se esegui AEM versione 6.3 (poiché lo strumento Content Transfer è compatibile a partire dalla versione 6.3), si consiglia di eseguire la compattazione offline, seguita dalla raccolta di oggetti inattivi dell’archivio dati.
 
-[La verifica di coerenza dei dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=it) è consigliata in tutte le versioni di AEM per garantire che l&#39;archivio dei contenuti sia in buono stato per avviare le attività di migrazione.
+[La verifica di coerenza dei dati](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) è consigliata in tutte le versioni di AEM per garantire che l&#39;archivio dei contenuti sia in buono stato per avviare le attività di migrazione.
 
 Per installare e configurare [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) è necessario disporre dell&#39;accesso a livello di amministratore di sistema
 
@@ -160,10 +160,11 @@ La raccolta dei dati può essere utile per pianificare le attività di migrazion
 * Tempo totale impiegato per [estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * Tempo totale impiegato per [l&#39;acquisizione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 * Tempo totale impiegato per [estrazione](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) integrativa
-* Tempo totale impiegato per l&#39;acquisizione integrativa di [&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+* Tempo totale impiegato per l&#39;acquisizione integrativa di [](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
-<!-- Alexandru: hiding this for now
+<!--
+ Alexandru: hiding this for now
 
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 

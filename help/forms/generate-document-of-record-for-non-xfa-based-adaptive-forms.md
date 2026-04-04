@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4208'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -148,7 +148,8 @@ Tieni presenti le considerazioni e le limitazioni seguenti quando lavori su Subm
 * L’associazione del contenuto nel PDF di invio generato per un modulo adattivo basato su schema XML non è supportata.
 * La versione localizzata di Submission PDF viene creata su richiesta per una lingua quando l’utente richiede il rendering di Submission PDF. La localizzazione del PDF di invio si verifica insieme alla localizzazione del Modulo adattivo. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -163,7 +164,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Mappatura degli elementi del modulo adattivo {#mapping-of-adaptive-form-elements}
 
@@ -399,7 +401,8 @@ Per localizzare le informazioni di branding immesse nella scheda Documento recor
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```-->
+   ```
+   -->
 
 1. Per salvare le modifiche di branding, selezionare **[!UICONTROL Fine]**.
 

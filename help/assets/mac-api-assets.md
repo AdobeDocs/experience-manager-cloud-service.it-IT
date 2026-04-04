@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Introduzione all&#39;API HTTP di AEM [!DNL Assets] {#overview}
@@ -121,7 +121,8 @@ L&#39;API HTTP [!DNL Assets] include le seguenti funzionalità:
 >
 >Per maggiore leggibilità, gli esempi seguenti omettono le notazioni cURL complete. La notazione è correlata con [Resty](https://github.com/micha/resty) che è un wrapper di script per cURL.
 
-<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+<!--
+ TBD: The Console Manager is not available now. So how to configure the below? 
 
 **Prerequisites**
 

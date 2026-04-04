@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pa
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 
@@ -45,9 +45,11 @@ Include campi per specificare un indirizzo postale. I campi disponibili sono ind
 
 ![Frammento di indirizzo](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Informazioni di contatto {#contact-information}
 
@@ -55,9 +57,11 @@ Include campi per acquisire un numero di telefono e un indirizzo e-mail.
 
 ![Frammento informazioni contatto](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Informazioni carta di credito {#credit-card-information}
 
@@ -70,9 +74,11 @@ Include campi per acquisire i dettagli correnti sull&#39;impiego come lo stato, 
 
 ![Frammento di impiego corrente](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Informazioni sui dipendenti {#dependents-information}
 
@@ -80,9 +86,11 @@ Include campi per specificare informazioni su una o più dipendenze, ad esempio 
 
 ![Frammento di informazioni dipendenti](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Cronologia impiego {#employment-history}
 
@@ -90,9 +98,11 @@ Include campi per acquisire la cronologia dell&#39;impiego. Consente di aggiunge
 
 ![Frammento cronologia impiego](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Entrate e spese {#income-expenditure}
 
@@ -100,9 +110,11 @@ Include campi per acquisire flussi di cassa e spese mensili. I Forms che richied
 
 ![Frammento entrate e spese](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nome {#name}
 
@@ -110,9 +122,11 @@ Include campi per specificare titolo, nome, secondo nome e cognome.
 
 ![Frammento nome](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Termini e condizioni {#terms-conditions}
 
@@ -120,9 +134,11 @@ Specifica i termini e le condizioni che gli utenti devono accettare prima di inv
 
 ![Frammento termini e condizioni](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Termini e condizioni con scarabocchio {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ Specifica i termini e le condizioni che gli utenti devono accettare e firmare pr
 
 ![Termini e condizioni con scarabocchio](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

@@ -6,7 +6,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2533'
 ht-degree: 3%
@@ -133,7 +133,8 @@ In Adobe Experience Manager sono disponibili vari filtri di ricerca che è possi
 ![Pannello Filtri](assets/filters.png)
 
 Puoi selezionare uno o più filtri per perfezionare la ricerca in Adobe Experience Manager.
-<!--The following filters are available out of the box for all the users of Experience Manager:
+<!--
+The following filters are available out of the box for all the users of Experience Manager:
 
 * File Type Search Filters  
 * File Size Search Filters 
@@ -151,7 +152,8 @@ Puoi selezionare uno o più filtri per perfezionare la ricerca in Adobe Experien
 * Content fragment model 
  -->
 
-<!--**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+<!--
+**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
@@ -269,9 +271,10 @@ Consente di accedere alla raccolta di risorse con colori e metadati simili.
 
 ## Facet di ricerca personalizzati {#custom-search-facets}
 
-I facet di ricerca in Adobe Experience Manager consentono di cercare le risorse in più modi anziché in un unico ordine tassonomico o predeterminato. Puoi personalizzare i facet di ricerca e aggiungere predicati in base alle tue esigenze. Leggi [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it#) per la guida dettagliata sull&#39;aggiunta di un predicato personalizzato.
+I facet di ricerca in Adobe Experience Manager consentono di cercare le risorse in più modi anziché in un unico ordine tassonomico o predeterminato. Puoi personalizzare i facet di ricerca e aggiungere predicati in base alle tue esigenze. Leggi [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) per la guida dettagliata sull&#39;aggiunta di un predicato personalizzato.
 
-<!--**Scenario 10: Search assets based on Sku ID**
+<!--
+**Scenario 10: Search assets based on Sku ID**
 to be added later
 -->
 
@@ -317,7 +320,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Facet personalizzati </td>
-        <td> Puoi aggiungere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it"> facet di ricerca personalizzati in base al requisito.</td>
+        <td> Puoi aggiungere <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en"> facet di ricerca personalizzati in base al requisito.</td>
         <td> I facet personalizzati sono parzialmente supportati nella vista Assets. I facet supportati sono:
             <ul>
             <li> Tag previsti
@@ -431,5 +434,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Cercare risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=it)
->* [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=it)
+>* [Cercare risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Facet di ricerca](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

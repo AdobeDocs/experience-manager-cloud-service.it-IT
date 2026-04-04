@@ -4,7 +4,7 @@ description: Utilizza il Selettore risorse per cercare, trovare e recuperare i m
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 99%
@@ -28,7 +28,8 @@ Il Selettore risorse offre molti vantaggi, tra cui:
 * Possibilità di cambiare archivi all’interno di un’organizzazione IMS per la selezione delle risorse.
 * Possibilità di ordinare le risorse per nome, proporzioni e dimensioni e di visualizzarle nelle viste Elenco, Griglia, Galleria o Cascata.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -48,8 +49,10 @@ Devi accertarti di utilizzare i seguenti metodi di comunicazione:
 * L’applicazione host è in esecuzione su HTTPS.
 * Non è possibile eseguire l’applicazione su `localhost`. Se desideri integrare il Selettore risorse nel computer locale, è necessario creare un dominio personalizzato, ad esempio `[https://<your_campany>.localhost.com:<port_number>]`, e aggiungere tale dominio nell’`redirectUrl list`.
 * Puoi configurare e aggiungere clientID nella variabile di ambiente di AEM Cloud Services con il rispettivo `imsClientId`.
-<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
-![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
+<!--
+* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)
+-->
 * L’elenco degli ambiti IMS deve essere definito nella configurazione dell’ambiente.
 * L’URL dell’applicazione si trova nell’elenco Consentiti degli URL di reindirizzamento del client IMS.
 * Il flusso di accesso IMS viene configurato e renderizzato utilizzando un pop-up sul browser web. Pertanto, i popup devono essere abilitati o consentiti nel browser di destinazione.
@@ -165,7 +168,7 @@ Il selettore risorse consente di visualizzare la risorsa in quattro diversi modi
 * ![vista a elenco](assets/do-not-localize/list-view.png) [!UICONTROL **Vista a elenco**]: la vista a elenco mostra i file e le cartelle in una singola colonna scorrevole.
 * ![vista griglia](assets/do-not-localize/grid-view.png) [!UICONTROL **Vista griglia**]: con la vista griglia i file e le cartelle scorrono in una griglia di righe e colonne.
 * ![vista galleria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Vista galleria**]: la vista galleria mostra i file o le cartelle in un elenco orizzontale bloccato al centro.
-* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** &#x200B;]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
+* ![vista a cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Vista a cascata** ]: la vista a cascata mostra file o cartelle sotto forma di un Bridge.
 
 ### Metadati e dettagli della risorsa {#asset-details-and-metadata}
 
@@ -203,7 +206,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 

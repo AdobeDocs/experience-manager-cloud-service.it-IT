@@ -4,7 +4,7 @@ description: Note sulla versione 2024.4.0 di [!DNL Adobe Experience Manager] as 
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video Panoramica sulla versione di aprile 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446317?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -62,7 +62,7 @@ Ti interessa provare questa funzione e condividere con noi un tuo feedback? Per 
 
 **Ricerca contestuale**
 
-Ora puoi anche [cercare le risorse disponibili nell’archivio definendo i prompt di testo](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets trasforma automaticamente i prompt di testo in filtri di ricerca e visualizza i risultati della ricerca. È possibile visualizzare e modificare i filtri automatici utilizzando il riquadro Filtri per limitare ulteriormente i risultati della ricerca.
+Ora puoi anche [cercare le risorse disponibili nell’archivio definendo i prompt di testo](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets trasforma automaticamente questi prompt di testo in filtri di ricerca e ne visualizza i risultati. È possibile visualizzare e modificare i filtri automatici utilizzando il riquadro Filtri per limitare ulteriormente i risultati della ricerca.
 
 ![Ricerca contestuale](/help/assets/assets/contextual-search-text-prompt1.png)
 
@@ -74,7 +74,7 @@ Experience Manager Assets ora include [strumenti di editing video semplici e int
 
 **Rappresentazioni dinamiche**
 
-Ora puoi [visualizzare e scaricare le rappresentazioni dinamiche (inclusi i ritagli avanzati)](/help/assets/renditions.md) in Experience Manager Assets. Le rappresentazioni dinamiche sono versioni personalizzate delle risorse di immagini create in tempo reale per soddisfare esigenze specifiche, ad esempio per ridimensionare le immagini in base alla risoluzione del dispositivo o per adattarle a proporzioni diverse. Queste rappresentazioni consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare le diverse esigenze del pubblico.
+Ora puoi [visualizzare e scaricare le rappresentazioni dinamiche (incluso il ritaglio avanzato)](/help/assets/renditions.md) in Experience Manager Assets. Le rappresentazioni dinamiche sono versioni personalizzate delle risorse di immagini create in tempo reale per soddisfare esigenze specifiche, ad esempio per ridimensionare le immagini in base alla risoluzione del dispositivo o per adattarle a proporzioni diverse. Queste rappresentazioni consentono alle organizzazioni di fornire esperienze personalizzate e ottimizzate per soddisfare le diverse esigenze del pubblico.
 
 ![Rappresentazioni dinamiche](/help/assets/assets/preset_smart_crop.png)
 
@@ -249,7 +249,7 @@ Ora disponi di un’esperienza avanzata per filtrare i file. La funzionalità ri
 
 Sfrutta vantaggi quali un accesso più rapido ai file rilevanti e un’interfaccia utente più intuitiva, che rende l’esperienza di ricerca più fluida ed efficiente.
 
-![filtro di ricerca rapida &#x200B;](/help/release-notes/assets/guides/repository-filter-search-quick.png)
+![filtro di ricerca rapida ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *Utilizza i filtri rapidi per cercare file DITA e non DITA.*
 

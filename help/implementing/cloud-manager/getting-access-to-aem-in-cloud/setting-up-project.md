@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 68%
@@ -32,7 +32,7 @@ Per generare e distribuire correttamente con Cloud Manager, i progetti AEM devon
 
 In alcuni casi limitati, potrebbe essere necessario modificare leggermente il processo di build durante l’esecuzione in Cloud Manager rispetto a quando viene eseguito dalle workstation di sviluppo. Per questi casi è possibile utilizzare i [profili Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) per definire il modo in cui la build deve differire nei diversi ambienti, incluso Cloud Manager.
 
-L’attivazione di un profilo Maven all’interno dell’ambiente di build di Cloud Manager deve essere eseguita cercando la `CM_BUILD` [&#x200B; variabile di ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Analogamente, per un profilo destinato a essere utilizzato esclusivamente al di fuori dell’ambiente di build di Cloud Manager, è necessario verificare l’assenza di tale variabile.
+L’attivazione di un profilo Maven all’interno dell’ambiente di build di Cloud Manager deve essere eseguita cercando la `CM_BUILD` [ variabile di ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Analogamente, per un profilo destinato a essere utilizzato esclusivamente al di fuori dell’ambiente di build di Cloud Manager, è necessario verificare l’assenza di tale variabile.
 
 Ad esempio, se desideri inviare un messaggio semplice solo quando la build viene eseguita in Cloud Manager, effettua la seguente operazione:
 
@@ -79,7 +79,7 @@ E se desideri inviare un messaggio semplice solo quando la build viene eseguita 
             <id>notCMBuild</id>
             <activation>
                   <property>
-                        <name>!env.CM_BUILD</name>
+                        <name>[!NOTE]nv.CM_BUILD</name>
                   </property>
             </activation>
             <build>

@@ -4,8 +4,8 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
 
@@ -106,7 +106,7 @@ Per creare un frammento di modulo nell’editor universale, effettua le seguenti
 
    ![Mostra il tipo di modello nella scheda Modello modulo](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   - **Modello dati modulo (FDM)**: integra nel frammento oggetti e servizi del modello dati provenienti dalle origini dati. Se il modulo richiede la lettura e la scrittura di dati da più origini, scegli Modello dati modulo (FDM).
+   - **Modello dati modulo (FDM)**: integra nel frammento i servizi e gli oggetti modello dati provenienti dalle origini dati. Se il modulo richiede la lettura e la scrittura di dati da più origini, scegli Modello dati modulo (FDM).
 
    - **Schema JSON**: integra il modulo con un sistema back-end associando uno schema JSON che definisce la struttura dei dati. Consente di aggiungere contenuti dinamici utilizzando gli elementi dello schema.
    - **Nessuno**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
@@ -234,10 +234,12 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
    <td><p>Avvia/Gestisci revisione</p> </td>
    <td><p>Consente di avviare e gestire una revisione del frammento selezionato.<br /> <br /> </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Pubblica/Annulla pubblicazione</p> </td>
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>

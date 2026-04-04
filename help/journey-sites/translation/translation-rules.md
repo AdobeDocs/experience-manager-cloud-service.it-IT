@@ -8,8 +8,8 @@ exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Ora che il connettore è configurato, questo articolo illustra il passaggio succ
 
 Questo documento ti aiuta a capire come utilizzare le regole di traduzione di AEM per identificare il contenuto per la traduzione. Dopo aver letto questo documento, dovresti:
 
-* Comprendere come funzionano le regole di traduzione.
+* Come funzionano le regole di traduzione.
 * Essere in grado di definire le tue regole di traduzione.
 
 ## Regole di traduzione {#translation-rules}
@@ -98,7 +98,7 @@ Tali funzioni generalmente non sono necessarie per iniziare a localizzare il con
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere come funzionano le regole di traduzione.
-* Essere in grado di definire le tue regole di traduzione.
+* Come definire le tue regole di traduzione.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione di AEM Sites esaminando il documento successivo [Tradurre il contenuto](translate-content.md), dove verrà illustrato come il connettore e le regole lavorano insieme per tradurre i contenuti.
 

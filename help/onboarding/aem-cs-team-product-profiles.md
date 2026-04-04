@@ -4,8 +4,8 @@ description: Scopri come usare i profili di team e di prodotto di AEM as a Cloud
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 100%
 
@@ -20,9 +20,10 @@ Scopri come usare i profili di team e di prodotto di AEM as a Cloud Service per 
 
 Quando consenti l’accesso a una soluzione Adobe specifica a un utente, non devi necessariamente dare accesso completo a ogni funzione. Con i profili di prodotto è possibile disporre di un set personalizzato di autorizzazioni utente per ogni soluzione. I profili di prodotto sono disponibili e accessibili tramite [Admin Console](/help/journey-onboarding/admin-console.md).
 
-Adobe Admin Console dispone di una gerarchia strutturata di prodotti, istanze di prodotti e profili di prodotto in cui è possibile assegnare l’appartenenza agli utenti interni di un’organizzazione, consentendo loro di accedere alle soluzioni e alle funzioni per le quali è stata concessa la licenza.
+Adobe Admin Console dispone di una gerarchia strutturata di prodotti, istanze di prodotti e profili di prodotto in cui è possibile assegnare le iscrizioni di utenti interni di un’organizzazione, consentendo loro di accedere alle soluzioni e alle funzioni per le quali è stata concessa la licenza.
 
-<!-- Alexandru: Drafting for now 
+<!--
+ Alexandru: Drafting for now 
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
@@ -30,7 +31,8 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 * **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
-![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
+-->
 
 ## Profili di prodotto di AEM as a Cloud Service {#aem-product-profiles}
 
@@ -90,8 +92,10 @@ La tabella seguente descrive un elenco dei possibili profili di prodotto sotto u
                 <li>Se il servizio predefinito rimane selezionato,
                     <ul>
                         <li>gli utenti di questo profilo di prodotto saranno anche membri del gruppo AEM “AEM Sites Content Managers - Service”.</li>
-                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
-                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
+                      <!--
+                        <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
+                        -->
                     </ul>
                 </li>
             </ul>
@@ -277,7 +281,7 @@ L’immagine seguente rappresenta i gruppi AEM che riflettono il profilo di prod
 
 ### Aggiunta di profili di prodotto per ambienti esistenti {#adding-product-profiles-for-existing-environments}
 
-Negli ambienti creati prima dell’inizio di aprile 2024 potrebbe mancare l’istanza di prodotto a livello di organizzazione descritta nelle sezioni precedenti, nonché alcuni profili di prodotto. Inoltre, i profili di prodotto esistenti non disporranno degli interruttori del servizio. Si consiglia di aggiornare tali profili di prodotto, che è un prerequisito per accedere ad alcune API future.
+Negli ambienti creati prima dell’inizio di aprile 2024 potrebbe mancare l’istanza di prodotto a livello di organizzazione descritta nelle sezioni precedenti, nonché alcuni profili di prodotto. Inoltre, i profili di prodotto esistenti non disporranno dei pulsanti di attivazione del servizio. Si consiglia di aggiornare tali profili di prodotto, che è un prerequisito per accedere ad alcune API future.
 
 Se uno o più ambienti in un programma richiedono l’aggiornamento dei profili di prodotto, Cloud Manager mostrerà l’avviso seguente. Tieni presente che per poter aggiornare i profili di prodotto di un ambiente è necessario utilizzare la versione più recente di AEM.
 

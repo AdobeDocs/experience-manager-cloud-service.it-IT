@@ -4,7 +4,7 @@ description: Scopri come creare rapidamente un sito Edge Delivery in Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 62%
@@ -17,9 +17,11 @@ La creazione del primo sito Edge Delivery con un clic è progettata per consenti
 
 Questa automazione consente di ridurre le attività manuali necessarie per configurare il sito iniziale. Garantisce flussi di lavoro ottimizzati, scalabilità e prestazioni migliori per i team che gestiscono i contenuti su server Edge.
 
-<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!--
+ Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+-->
 
 
 

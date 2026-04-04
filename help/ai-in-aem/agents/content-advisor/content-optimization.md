@@ -2,9 +2,9 @@
 title: Agente di ottimizzazione del contenuto
 description: Scopri come utilizzare l’agente di ottimizzazione dei contenuti per trasformare il modo in cui gli utenti perfezionano e adattano le risorse applicando istruzioni in linguaggio naturale per creare varianti pronte per il canale.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%

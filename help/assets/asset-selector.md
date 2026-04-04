@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 38%
@@ -30,7 +30,8 @@ Il Selettore risorse offre molti vantaggi, tra cui:
 * Possibilità di cambiare archivi all’interno di un’organizzazione IMS per la selezione delle risorse.
 * Possibilità di ordinare le risorse per nome, proporzioni e dimensioni e di visualizzarle nelle viste Elenco, Griglia, Galleria o Cascata.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -107,7 +108,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 
@@ -473,7 +474,7 @@ L’URL di consegna dinamico ha la seguente sintassi:
 
 +++
 
-+++**Pronto a scegliere l&#39;URL di consegna dinamico**
++++ **Pronto a scegliere l&#39;URL di consegna dinamico**
 Tutte le risorse selezionate sono gestite dalla funzione `handleSelection` che agisce come oggetto JSON. Ad esempio, `JsonObj`. L’URL di consegna dinamico viene creato combinando i gestori seguenti:
 
 | Oggetto | JSON |
@@ -523,6 +524,8 @@ Nella schermata precedente, se è necessario PDF e non la sua miniatura, l’URL
   Lo snippet di codice nella schermata precedente è un esempio di risorsa video. Include l’array di collegamenti per le rappresentazioni. `selection[5]` nell&#39;estratto è l&#39;esempio della miniatura dell&#39;immagine che può essere utilizzata come segnaposto della miniatura video nell&#39;esperienza di destinazione. `selection[5]` nell&#39;array delle rappresentazioni è per il lettore video. Serve un HTML e può essere impostato come `src` dell&#39;iframe. Supporta lo streaming con bitrate adattivo, ovvero la distribuzione del video ottimizzata per il web.
 
   Nell&#39;esempio precedente, l&#39;URL del lettore video è `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++**Interfaccia utente di Asset Selector per Dynamic Media con funzionalità OpenAPI**
 
@@ -821,10 +824,12 @@ Nella tabella seguente vengono descritte alcune delle proprietà importanti dell
 
 Il selettore risorse consente di controllare l’utilizzo di una risorsa scaduta. Puoi personalizzare la risorsa scaduta con un distintivo **In scadenza** che ti aiuterà a conoscere in anticipo le risorse che scadranno entro 30 giorni dalla data corrente. Inoltre, questo può essere personalizzato in base al requisito. Puoi anche consentire la selezione di una risorsa scaduta nell’area di lavoro o viceversa. La personalizzazione di una risorsa scaduta può essere eseguita utilizzando alcuni snippet di codice in vari modi:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### Impostazione della durata di una risorsa scaduta {#set-duration-of-expired-asset}
 

@@ -2,9 +2,9 @@
 title: Processo di creazione comunicazione
 description: Scopri il processo di creazione di comunicazioni degli agenti di produzione di esperienze e come utilizzare il linguaggio naturale per creare comunicazioni interattive.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%

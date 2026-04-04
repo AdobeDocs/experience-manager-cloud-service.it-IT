@@ -4,7 +4,7 @@ description: Scopri come aggiungere un archivio esterno in Cloud Manager. Cloud 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 26%
@@ -28,15 +28,19 @@ La configurazione di un archivio esterno in Cloud Manager consiste nei seguenti 
 
 1. [Aggiungere un repository esterno](#add-external-repo) a un programma selezionato
 1. [Collegare un archivio esterno convalidato a una pipeline](#validate-ext-repo)
-   <!-- 1. Provide an access token to the external repository.
-    1. Validate ownership of the private GitHub repository. -->
+   <!--
+     1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository.
+    -->
 1. [Configurare un webhook](#configure-webhook) in un repository esterno.
 
 
 ## Aggiungere un archivio esterno {#add-ext-repo}
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+<!--
+ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
+-->
 
 
 1. Accedi a Cloud Manager all’indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e seleziona l’organizzazione appropriata.

@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: integrazione dell’API nell’editor di regole, richiama i miglioramenti del servizio
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -124,7 +124,7 @@ Ad esempio, quando l&#39;utente apre **Paese di cittadinanza**, l&#39;elenco dei
 
 Analogamente, **Paese di rilascio Passport** e **Paese di destinazione** utilizzano la stessa chiamata API, garantendo dati coerenti e aggiornati in tutti e tre i campi.
 
->
+>[!NOTE]
 >
 > È possibile [recuperare i valori delle proprietà da un array JSON richiamando un&#39;API e utilizzando una funzione personalizzata](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Questo approccio consente di estrarre i valori e associarli direttamente ai campi modulo.
 

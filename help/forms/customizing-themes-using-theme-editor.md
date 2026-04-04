@@ -3,19 +3,19 @@ title: Personalizzazione dei temi dei moduli adattivi tramite l’Editor tema
 description: Scopri come utilizzare l’Editor temi per creare e personalizzare temi visivi per Forms adattivo basato su componenti core in Adobe Experience Manager.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f1b318803b9b854ec2ce800670f6484799113599
+exl-id: 4a541c11-38e9-4dbc-8464-38be6b1ee94d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 1%
 
 ---
 
-
 # Personalizzazione dei temi dei moduli {#customizing-form-themes}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 L’Editor temi in Adobe Experience Manager (AEM) Forms è un’interfaccia visiva che consente di creare e personalizzare i temi per il Forms adattivo senza scrivere il codice manualmente. Un tema definisce l&#39;aspetto dei componenti e dei pannelli del modulo, inclusi i colori di sfondo, gli stili dei caratteri, i bordi, le dimensioni e la spaziatura. Quando applichi un tema, gli stili specificati si riflettono sui componenti corrispondenti e puoi riutilizzare lo stesso tema in più Forms adattivi.
@@ -113,14 +113,16 @@ Da sinistra a destra, la barra degli strumenti fornisce:
 * **D: emulatore**: selezionare un dispositivo o un punto di interruzione (ad esempio Desktop, Tablet o Mobile) per visualizzare in anteprima il modulo con le dimensioni dello schermo specificate. L’anteprima del modulo viene ridimensionata in modo da corrispondere al punto di interruzione selezionato. Tutti gli stili impostati durante l&#39;impostazione di un punto di interruzione vengono applicati solo a tale punto, in modo da poter definire stili reattivi. Per ulteriori dettagli, vedere [Stile per schermi di dimensioni diverse](#styling-for-different-screen-sizes).
 * **E: Modifica / Anteprima**: passaggio tra due modalità. **Modifica** è l&#39;impostazione predefinita: è possibile fare clic sui componenti nell&#39;area di lavoro per selezionarli e modificarne lo stile nella barra laterale. **Anteprima** mostra il modulo come un utente finale lo vedrebbe senza i bordi di selezione, le etichette dei componenti o la barra laterale dello stile, in modo da poter controllare l&#39;aspetto e il comportamento del modulo a tema prima di pubblicarlo.
 
-<!--**3. Bottom of the sidebar: Simulate Error and Simulate Success**
+<!--
+**3. Bottom of the sidebar: Simulate Error and Simulate Success**
 
 When you style components by state (for example, Error or Success), you can preview that look without submitting the form. In AEM Forms as a Cloud Service, **Simulate Error** and **Simulate Success** are available at the **bottom of the left sidebar**. Scroll down in the sidebar if you don’t see them; they appear when you have a component selected and let you toggle the preview to match the Error or Success state.
 
 * **Simulate Error**: Show the form as if a field failed validation, so you can see your **[!UICONTROL Error]** state styling.
 * **Simulate Success**: Show the form as if validation passed, so you can see your **[!UICONTROL Success]** state styling.
 
-Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).-->
+Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).
+-->
 
 ### Personalizzare lo stile di un componente
 
@@ -151,7 +153,8 @@ Per applicare uno stile:
 
    ![Applicazione dello stile](/help/forms/assets/custom-theme-applying-style.png)
 
-<!--#### Style by component state {#style-by-state}
+<!--
+#### Style by component state {#style-by-state}
 
 Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
 
@@ -162,7 +165,8 @@ Components can have different visual states (for example, default, focus, hover,
 
    ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.-->
+The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
+-->
 
 ### Stile a livello di modulo {#form-level-styling}
 
@@ -208,7 +212,7 @@ Puoi definire stili diversi per dispositivi di dimensioni diverse, in modo che i
 
    ![Emulatore di dispositivo nell&#39;Editor temi - opzioni righello e dispositivo (desktop, tablet, iPad, schermo più piccolo)](/help/forms/assets/custom-theme-emulator.png)
 
-Lo stesso tema può quindi avere spaziatura, dimensioni dei caratteri o stili correlati al layout diversi per dispositivo, in base al comportamento dell&#39;[Editor tema di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) per lo stile reattivo.
+Lo stesso tema può quindi avere spaziatura, dimensioni dei caratteri o stili correlati al layout diversi per dispositivo, in base al comportamento dell&#39;[Editor tema di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) per lo stile reattivo.
 
 ## Utilizzare sostituzioni CSS avanzate {#use-advanced-css-overrides}
 

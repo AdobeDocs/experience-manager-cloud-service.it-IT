@@ -10,7 +10,7 @@ thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 29%
@@ -28,7 +28,7 @@ Lo sviluppo di progetti AEM Commerce, basati su Commerce integration framework (
 
 ## Sviluppo locale con AEM as a Cloud Service SDK {#local}
 
->[!VIDEO](https://video.tv.adobe.com/v/347037/?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
 Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF. Il componente aggiuntivo CIF fornito per AEM as a Cloud Service è disponibile anche per lo sviluppo locale. È possibile scaricarlo dal portale di distribuzione software [.](/help/implementing/developing/tools/package-manager.md#software-distribution)
 
@@ -37,7 +37,7 @@ Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il fi
 >[!TIP]
 >
 >**Novità di AEM as a Cloud Service?**
->&#x200B;>Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
+>Consulta [una guida più dettagliata per configurare un ambiente di sviluppo locale utilizzando AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
 
 ### Software richiesto {#required-software}
 
@@ -45,7 +45,7 @@ Il componente aggiuntivo CIF viene fornito come archivio di Sling Feature. Il fi
 
 * [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it#download-the-aem-as-a-cloud-service-sdk)
 * [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 o versione successiva)
 * [Node.js v10+](https://nodejs.org/en)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)

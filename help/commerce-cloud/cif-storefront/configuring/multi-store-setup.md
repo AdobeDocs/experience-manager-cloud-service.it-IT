@@ -12,7 +12,7 @@ thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 12%
@@ -26,7 +26,7 @@ I componenti core CIF di Adobe Experience Manager (AEM) possono essere utilizzat
 
 Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni dello store di Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36997/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Le funzioni Live Copy e copia per lingua di AEM per la gestione multisito sono utilizzate con Commerce integration framework per gestire globalmente i siti in aree geografiche e lingue diverse.
 
@@ -36,7 +36,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Configurazione {#configuration}
 
-1. Configurare più store e visualizzazioni store in base al modello descritto in [Siti Web, store e visualizzazioni di Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
+1. Configurare più store e visualizzazioni store in base al modello descritto in [Siti Web, store e visualizzazioni di Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 1. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
@@ -62,7 +62,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
+* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componenti core CIF di AEM: configurazione di più store o siti](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=it)
+* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-cloud/administering/msm/overview.md)

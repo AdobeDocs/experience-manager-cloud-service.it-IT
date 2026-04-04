@@ -4,7 +4,7 @@ description: Utilizzo delle raccolte selettori risorse
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,7 +28,8 @@ Puoi visualizzare le raccolte in Asset Selector sia nella vista a barra che nell
 ![Raccolte nella visualizzazione della barra](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 Inoltre, puoi anche personalizzare la selezione delle risorse nella scheda Raccolte. Per eseguire questa operazione, è possibile personalizzarla utilizzando `handleSelection`. Vedere [gestione della selezione di Assets mediante lo schema di oggetti](/help/assets/asset-selector-customization.md#handling-selection).
 

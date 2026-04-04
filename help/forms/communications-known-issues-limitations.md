@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -76,8 +76,10 @@ Assicurarsi sempre di utilizzare il file XDC corretto per la stampante. Ad esemp
 
 Una progettazione di moduli utilizzata con le API di comunicazione può contenere script eseguiti sul server. Verificare che la struttura di un modulo non contenga script eseguiti sul client. Per informazioni sulla creazione degli script di progettazione dei moduli, vedere [Guida di Designer](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Mappatura font {#font-mapping}
 
@@ -196,13 +198,15 @@ Puoi utilizzare il servizio di output di AEM Forms per combinare un modello (XFA
 
 Rispetto all&#39;ambiente on-premise, Cloud Service offre ulteriori vantaggi in termini di scalabilità automatica e convenienza economica.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **È possibile eseguire più operazioni batch contemporaneamente?**
 Sì, è possibile eseguire più operazioni batch contemporaneamente. Utilizzare sempre cartelle di origine e di destinazione diverse per ogni operazione per evitare conflitti.

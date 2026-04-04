@@ -6,7 +6,7 @@ feature: Metadata
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 11%
@@ -44,7 +44,8 @@ L’importazione dei metadati è asincrona e non impedisce le prestazioni del si
    * Il formato della data dipende dall’intestazione della colonna e dal formato in essa contenuto. Ad esempio, se la data è un reclamo con formato `yyyy-MM-dd'T'HH:mm:ssXXX`, la rispettiva intestazione di colonna deve essere `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
    * Il formato di data predefinito è `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >

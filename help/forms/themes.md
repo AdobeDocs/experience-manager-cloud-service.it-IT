@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
 ht-degree: 1%
@@ -20,10 +20,10 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Questo articolo |
 
-È possibile creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo<!-- or interactive communication -->.
+È possibile creare e applicare temi per formattare un modulo adattivo<!-- or an interactive communication-->. Un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti. Il tema viene gestito in modo indipendente senza un riferimento a un modulo adattivo.
 
 Puoi scaricare e installare [!DNL AEM Forms] pacchetto di contenuti di riferimento dal portale [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) per importare i temi e i modelli di riferimento nel tuo ambiente.
 
@@ -166,7 +166,8 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
    <td>Sì</td>
    <td>Etichetta associata al tema per l’identificazione utilizzata per migliorare la ricerca.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## Informazioni sull’Editor tema {#about-the-theme-editor}
 
-L&#39;Editor temi è un&#39;interfaccia intuitiva per utenti aziendali e web designer/sviluppatori che fornisce funzionalità necessarie per specificare facilmente lo stile dei vari elementi del modulo adattivo <!-- and interactive communication -->. Quando si crea un tema, questo viene memorizzato come entità separata, ad esempio i moduli <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+L&#39;Editor temi è un&#39;interfaccia intuitiva per utenti aziendali e web designer/sviluppatori che fornisce funzionalità necessarie per specificare facilmente lo stile dei vari elementi del modulo adattivo <!-- and interactive communication -->. Quando si crea un tema, questo viene memorizzato come entità separata, ad esempio i moduli.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 L’Editor tema consente di personalizzare gli stili dei componenti a cui è applicato uno stile in un tema. È possibile personalizzare l&#39;aspetto di un modulo <!-- or interactive communication --> su un dispositivo.
 
 L’Editor tema è suddiviso in due pannelli:
 
-* **Area di lavoro** - Viene visualizzata sul lato destro. Viene visualizzato un esempio di modulo adattivo <!--  or interactive communication --> in cui tutte le modifiche di stile si riflettono immediatamente. È inoltre possibile selezionare gli oggetti direttamente dall&#39;area di lavoro per cercare gli stili ad essi associati e modificarli. L’area di lavoro è gestita da un righello di risoluzione dispositivo posto nella parte superiore. Se si seleziona un punto di interruzione di risoluzione dal righello, viene visualizzata l&#39;anteprima del modulo di esempio <!--  or interactive communication --> per la rispettiva risoluzione. L&#39;area di lavoro è trattata in dettaglio [sotto](themes.md#using-canvas).
+* **Area di lavoro** - Viene visualizzata sul lato destro. Viene visualizzato un esempio di modulo adattivo <!--  or interactive communication --> in cui tutte le modifiche di stile si riflettono immediatamente. È inoltre possibile selezionare gli oggetti direttamente dall&#39;area di lavoro per cercare gli stili ad essi associati e modificarli. L’area di lavoro è gestita da un righello di risoluzione dispositivo posto nella parte superiore. Selezionando un punto di interruzione di risoluzione dal righello viene visualizzata l&#39;anteprima del modulo di esempio per la rispettiva risoluzione. L&#39;area di lavoro è trattata in dettaglio [sotto](themes.md#using-canvas).
 
 * **Barra laterale*** visualizzata sul lato sinistro. Include i seguenti elementi:
 
@@ -282,7 +285,9 @@ Utilizza i punti di interruzione dell’Editor tema per definire uno stile alter
 
 >[!NOTE]
 >
->Il tema viene creato utilizzando un modulo<!-- or interactive communication--> e quindi applicato a moduli diversi<!-- or interactive communications-->. I punti di interruzione utilizzati nella creazione del tema possono essere diversi dal modulo <!-- or interactive communication --> a cui è applicato il tema. Le query multimediali CSS si basano sul modulo <!-- or interactive communication --> utilizzato nella creazione del tema e non sul modulo <!-- or interactive communication --> a cui viene applicato il tema.
+>Il tema viene creato utilizzando un modulo e quindi applicato a moduli diversi. I punti di interruzione utilizzati nella creazione del tema possono essere diversi dal modulo a cui è applicato il tema. Le query multimediali CSS si basano sul modulo utilizzato nella creazione del tema e non sul modulo a cui il tema è applicato.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### Modifica del contesto delle proprietà di stile nella barra laterale durante la selezione degli oggetti {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -350,7 +355,7 @@ Personalizzazione dello stile dello stato di successo del componente Widget case
 
 ### Utilizzo di Canvas {#using-canvas}
 
-Il tema viene creato utilizzando il modulo predefinito o un modulo <!-- or interactive communication --> scelto. Nell&#39;area di lavoro viene visualizzata l&#39;anteprima del modulo o <!-- interactive communication --> utilizzato per creare il tema con le personalizzazioni specificate nel tema. Il righello sopra il modulo viene utilizzato per determinare il layout in base alle dimensioni della visualizzazione del dispositivo.
+Il tema viene creato utilizzando il modulo predefinito o un modulo <!-- or interactive communication --> scelto. L’area di lavoro mostra l’anteprima del modulo o utilizzata per creare il tema con le personalizzazioni specificate in theme. Il righello sopra il modulo viene utilizzato per determinare il layout in base alle dimensioni della visualizzazione del dispositivo.
 
 Nella barra degli strumenti Area di lavoro vengono visualizzati i seguenti elementi:
 
@@ -488,7 +493,7 @@ Un punto di interruzione rappresenta un dispositivo mobile e le relative dimensi
 1. Utilizzare la barra laterale per personalizzare lo stile dei componenti del modulo <!-- or interactive communication --> nel tema per la dimensione di visualizzazione selezionata.
 1. Assicurati che la personalizzazione sia salvata.
 
-È possibile assegnare uno stile ai componenti del modulo <!-- or interactive communication --> per più dispositivi. I componenti del modulo <!-- and interactive communication --> per desktop e dispositivi mobili possono avere stili completamente diversi.
+È possibile assegnare uno stile ai componenti del modulo <!-- or interactive communication --> per più dispositivi. I componenti dei moduli per desktop e dispositivi mobili possono avere stili completamente diversi.
 
 ### Utilizzo di Web Fonts in un tema {#using-web-fonts-in-a-theme}
 
@@ -568,14 +573,16 @@ Per applicare un tema a un modulo adattivo:
 
 È inoltre possibile definire un tema per un modulo adattivo durante la sua creazione.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Modificare il tema di un modulo in fase di esecuzione {#change-theme-of-a-form-at-runtime}
 
@@ -642,7 +649,8 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 
 * Se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato, puoi riscontrare dei problemi con il tema corrente. Si consiglia di evitare di sfogliare e aggiungere risorse da altri temi.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -654,7 +662,8 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     È inoltre possibile creare un tema, crearne copie e quindi modificare lo stile fornito nei temi copiati per casi d&#39;uso simili.
     Consulta [Ottenere un aspetto specifico utilizzando i temi](#specific-af-appearance)
     
@@ -666,9 +675,11 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
     
     È possibile applicare uno stile ai componenti utilizzando la modalità Stile nel modulo &lt;!— o comunicazione interattiva —> editor multicanale quando si utilizza un modulo. L’utilizzo della modalità stile per modificare lo stile dei componenti del modulo sovrascrive lo stile specificato nel tema. Per modificare lo stile di alcuni componenti di un modulo specifico, vedere [Stile in linea dei componenti](inline-style-adaptive-forms.md).
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Modifica della larghezza del layout del pannello contenitore**
 

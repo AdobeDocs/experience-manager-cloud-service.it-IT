@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 21%
@@ -19,7 +19,7 @@ Cloud Manager fornisce una dashboard per visualizzare facilmente i diritti dei p
 
 >[!IMPORTANT]
 >
->La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
+>La dashboard Licenza si applica solo ai programmi AEM as a Cloud Service. [I programmi AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) non sono inclusi nel dashboard delle licenze.
 >
 >Per determinare il tipo di servizio del programma (AMS o AEMaaCS), vedi [Navigazione nell&#39;interfaccia utente di Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -64,7 +64,8 @@ Ogni sezione riepiloga ciò che è disponibile e come viene utilizzato, se del c
 ## Visualizza i dettagli sull’utilizzo {#view-usage-details}
 
 <!--
-The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution.
+-->
 
 Il pulsante **Visualizza dettagli sull&#39;utilizzo** nell&#39;area Licenza di Cloud Manager fornisce un&#39;analisi dettagliata dell&#39;utilizzo corrente delle risorse. Se cliccato, si apre un report o un dashboard che mostra metriche importanti relative alla licenza. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Questa funzionalità consente di monitorare e assicurarsi di rimanere entro i limiti del contratto, offrendo al contempo informazioni approfondite per una migliore pianificazione e ottimizzazione delle risorse.
 
@@ -89,7 +90,8 @@ Il lato destro della finestra presenta un grafico ad area che mostra l&#39;utili
 
 Nell&#39;angolo superiore destro della pagina del dashboard, puoi fare clic su **Scarica report** per esportare i dati come file CSV. Questo download semplifica l’analisi e la condivisione delle tendenze di utilizzo.
 
-<!-- REMOVED AS PER CQDOC-21983
+<!--
+ REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
 The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
@@ -110,7 +112,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
+-->
 
 ## Domande frequenti {#faq}
 

@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 6%
@@ -37,7 +37,8 @@ Un&#39;operazione sincrona è un processo di generazione di documenti in modo li
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### Autenticazione di un&#39;API a tenant singolo
@@ -48,11 +49,11 @@ Le operazioni API a tenant singolo supportano due tipi di autenticazione:
 
 * **Autenticazione basata su token:** L&#39;autenticazione basata su token utilizza un token di accesso (token di autenticazione Bearer) per effettuare richieste ad Experience Manager as a Cloud Service. AEM Forms as a Cloud Service fornisce API per recuperare in modo sicuro il token di accesso. Per recuperare e utilizzare il token per autenticare una richiesta:
 
-   1. [Recupera le credenziali di Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it).
-   1. [Installa le credenziali di Experience Manager as a Cloud Service nel tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it). (server applicazioni, server web o altri server non AEM) configurati per inviare richieste al servizio cloud (effettuare chiamate).
-   1. [Generare un token JWT e scambiarlo con le API Adobe IMS per un token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it).
+   1. [Recupera le credenziali di Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Installa le credenziali di Experience Manager as a Cloud Service nel tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (server applicazioni, server web o altri server non AEM) configurati per inviare richieste al servizio cloud (effettuare chiamate).
+   1. [Generare un token JWT e scambiarlo con le API Adobe IMS per un token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. Esegui l’API Experience Manager con il token di accesso come token di autenticazione Bearer.
-   1. [Imposta le autorizzazioni appropriate per l&#39;utente dell&#39;account tecnico nell&#39;ambiente Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it#configure-access-in-aem).
+   1. [Imposta le autorizzazioni appropriate per l&#39;utente dell&#39;account tecnico nell&#39;ambiente Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
   >[!NOTE]
   >

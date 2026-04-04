@@ -2,9 +2,9 @@
 title: Agente di Content Advisor
 description: Scopri in che modo l’agente di Content Advisor elimina gli attriti derivanti dall’evoluzione dei contenuti assorbendo il pesante lavoro operativo che sta dietro l’individuazione e l’ottimizzazione dei contenuti, consentendo ai team di apportare modifiche più rapidamente e con maggiore sicurezza per l’attuale era dell’intelligenza artificiale.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2899'
 ht-degree: 3%
@@ -21,7 +21,8 @@ I microservizi per le risorse consentono di elaborare [un&#39;ampia gamma di tip
 
 L&#39;elaborazione delle risorse dipende dalla configurazione in **[!UICONTROL Profili elaborazione]**. Experience Manager fornisce una configurazione di base predefinita e consente agli amministratori di aggiungere una configurazione di elaborazione delle risorse più specifica. Gli amministratori possono creare, gestire e modificare le configurazioni dei flussi di lavoro di post-elaborazione, inclusa la personalizzazione facoltativa. La personalizzazione dei flussi di lavoro consente agli sviluppatori di estendere l’offerta predefinita.
 
-<!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -40,9 +41,10 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configurazione predefinita](#default-config) | È disponibile così com’è e non può essere modificato. Questa configurazione fornisce una funzionalità di base per la generazione delle rappresentazioni. | <ul> <li>Miniature standard utilizzate dall&#39;interfaccia utente [!DNL Assets] (48, 140 e 319 pixel) </li> <li> Anteprima grande (rappresentazione web - 1280 pixel) </li><li> Estrazione di metadati e testo.</li></ul> |
 | [Configurazione personalizzata](#standard-config) | Configurato dagli amministratori tramite l’interfaccia utente di. Vengono fornite più opzioni per la generazione della rappresentazione estendendo l’opzione predefinita. Estendi l’opzione predefinita per fornire formati e rappresentazioni diversi. | <ul><li>Rendering FPO (solo per posizionamento). </li> <li>Modificare il formato e la risoluzione delle immagini</li> <li> Applicabile in modo condizionale ai tipi di file configurati. </li> </ul> |
-| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite applicazioni personalizzate per chiamare il servizio [Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/introduction). Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Vedi [casi d&#39;uso consentiti](#custom-config). |
+| [Profilo personalizzato](#custom-config) | Configurato dagli amministratori tramite l&#39;interfaccia utente per utilizzare il codice personalizzato tramite applicazioni personalizzate per chiamare il servizio [Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Supporta requisiti più complessi in un metodo scalabile e nativo per il cloud. | Vedi [casi d&#39;uso consentiti](#custom-config). |
 
-<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+<!--
+ To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## Formati di file supportati {#supported-file-formats}
@@ -55,18 +57,19 @@ Alcune impostazioni predefinite sono preconfigurate per garantire la disponibili
 
 Con la configurazione predefinita, viene configurato solo il profilo di elaborazione di base. Tale profilo di elaborazione non è visibile nell’interfaccia utente e non è possibile modificarlo. Viene sempre eseguito per elaborare le risorse caricate. Questo profilo di elaborazione predefinito garantisce il completamento dell&#39;elaborazione di base richiesta da [!DNL Experience Manager] per tutte le risorse.
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!--
+ ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
 ## Configurazione standard {#standard-config}
 
-[!DNL Experience Manager] fornisce funzionalità per generare rappresentazioni più specifiche per i formati comuni in base alle esigenze dell&#39;utente. Un amministratore può creare ulteriori [!UICONTROL profili di elaborazione] per facilitare la creazione di copie trasformate. Gli utenti assegnano quindi uno o più profili disponibili a cartelle specifiche per eseguire l’elaborazione aggiuntiva. Ad esempio, l’elaborazione aggiuntiva può generare rappresentazioni per web, dispositivi mobili e tablet. [Guarda questo video per comprendere come creare e applicare [!UICONTROL Profili di elaborazione] e come accedere alle rappresentazioni create](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/content-automation/creative-operations).
+[!DNL Experience Manager] fornisce funzionalità per generare rappresentazioni più specifiche per i formati comuni in base alle esigenze dell&#39;utente. Un amministratore può creare ulteriori [!UICONTROL profili di elaborazione] per facilitare la creazione di copie trasformate. Gli utenti assegnano quindi uno o più profili disponibili a cartelle specifiche per eseguire l’elaborazione aggiuntiva. Ad esempio, l’elaborazione aggiuntiva può generare rappresentazioni per web, dispositivi mobili e tablet. [Guarda questo video per comprendere come creare e applicare [!UICONTROL Profili di elaborazione] e come accedere alle rappresentazioni create](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Larghezza e altezza rappresentazione**: le specifiche di larghezza e altezza della rappresentazione forniscono le dimensioni massime dell&#39;immagine di output generata. I microservizi per le risorse tentano di produrre la rappresentazione più grande possibile, con larghezza e altezza non superiori a quelle specificate, rispettivamente. Le proporzioni vengono mantenute, ovvero sono identiche a quelle dell&#39;originale. Un valore vuoto indica che l’elaborazione delle risorse assume la dimensione in pixel dell’originale.
 
 * **Regole di inclusione del tipo MIME**: quando viene elaborata una risorsa con un tipo MIME specifico, il tipo MIME viene prima controllato rispetto al valore dei tipi MIME esclusi per la specifica della rappresentazione. Se corrisponde a tale elenco, la rappresentazione specifica non viene generata per la risorsa (elenco Bloccati). In caso contrario, il tipo MIME viene confrontato con il tipo MIME incluso e, se corrisponde all’elenco, viene generata la rappresentazione (elenco Consentiti).
 
-* **Rendering FPO speciale**: quando si inseriscono risorse di grandi dimensioni da [!DNL Experience Manager] in [!DNL Adobe InDesign] documenti, un professionista del settore creativo attende molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/it/indesign/using/placing-graphics.html). Nel frattempo, l&#39;utente non può utilizzare [!DNL InDesign]. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente copie trasformate di piccole dimensioni in [!DNL InDesign] documenti, che possono essere sostituiti da risorse a risoluzione completa in un secondo momento. [!DNL Experience Manager] fornisce copie trasformate utilizzate solo per il posizionamento. Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni.
+* **Rendering FPO speciale**: quando si inseriscono risorse di grandi dimensioni da [!DNL Experience Manager] in [!DNL Adobe InDesign] documenti, un professionista del settore creativo attende molto tempo dopo aver [inserito una risorsa](https://helpx.adobe.com/indesign/using/placing-graphics.html). Nel frattempo, l&#39;utente non può utilizzare [!DNL InDesign]. Questo interrompe il flusso creativo e influisce negativamente sull’esperienza utente. Adobe consente di inserire temporaneamente copie trasformate di piccole dimensioni in [!DNL InDesign] documenti, che possono essere sostituiti da risorse a risoluzione completa in un secondo momento. [!DNL Experience Manager] fornisce copie trasformate utilizzate solo per il posizionamento. Queste copie trasformate FPO hanno dimensioni di file ridotte ma hanno le stesse proporzioni.
 
 Il profilo di elaborazione può includere una rappresentazione FPO (solo per posizionamento). Consulta la [!DNL Adobe Asset Link] [documentazione](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html) per capire se devi attivarla per il tuo profilo di elaborazione. Per ulteriori informazioni, consulta la [documentazione completa di Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html).
 
@@ -87,20 +90,22 @@ Il profilo di elaborazione può includere una rappresentazione FPO (solo per pos
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+<!--
+ TBD: Update the video link when a new video is available from Tech Marketing.
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/39838?captions=ita&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
-<!-- This image was removed per cqdoc-15624, as requested by engineering.
+<!--
+ This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
 ## Profilo personalizzato e casi d’uso {#custom-config}
 
-[!DNL Asset Compute Service] supporta diversi casi d&#39;uso, inclusa l&#39;elaborazione predefinita e l&#39;elaborazione di formati specifici di Adobe come i file Photoshop. Consente inoltre di implementare un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility).
+[!DNL Asset Compute Service] supporta diversi casi d&#39;uso, inclusa l&#39;elaborazione predefinita e l&#39;elaborazione di formati specifici di Adobe come i file Photoshop. Consente inoltre di implementare un’elaborazione personalizzata o specifica per l’organizzazione. La personalizzazione del flusso di lavoro Risorsa di aggiornamento DAM richiesta in passato viene gestita automaticamente o tramite la configurazione dei profili di elaborazione. Se queste opzioni di elaborazione non soddisfano le esigenze aziendali, Adobe consiglia di sviluppare e utilizzare [!DNL Asset Compute Service] per estendere le funzionalità predefinite. Per una panoramica, vedi [comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 
 >[!NOTE]
 >
@@ -108,9 +113,9 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 Può trasformare immagini, video, documenti e altri formati di file in diverse rappresentazioni, tra cui miniature, testo e metadati estratti e archivi.
 
-Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare applicazioni personalizzate](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/develop-custom-application) per i casi d&#39;uso supportati. [!DNL Experience Manager] può richiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati configurati dagli amministratori. [!DNL Asset Compute Service] supporta i seguenti casi d&#39;uso di chiamata di servizi esterni:
+Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare applicazioni personalizzate](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application) per i casi d&#39;uso supportati. [!DNL Experience Manager] può richiamare queste applicazioni personalizzate dall&#39;interfaccia utente utilizzando profili personalizzati configurati dagli amministratori. [!DNL Asset Compute Service] supporta i seguenti casi d&#39;uso di chiamata di servizi esterni:
 
-* Utilizza l&#39;[!DNL Adobe Photoshop]API ImageCutout[&#x200B; di &#x200B;](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salva il risultato come rappresentazione.
+* Utilizza l&#39;[!DNL Adobe Photoshop]API ImageCutout[ di ](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salva il risultato come rappresentazione.
 * Chiama i sistemi di terze parti per apportare modifiche, ad esempio un sistema PIM.
 * Utilizza l&#39;API [!DNL Photoshop] per generare diverse rappresentazioni basate sul modello Photoshop.
 * Utilizza l&#39;[API Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) per ottimizzare le risorse acquisite e salvarle come rappresentazioni.
@@ -126,8 +131,8 @@ Gli sviluppatori possono utilizzare [!DNL Asset Compute Service] per [creare app
 1. Nel campo di testo Nome, digita il nome file desiderato per la rappresentazione, quindi fornisci le seguenti informazioni.
 
    * Nome file di ciascuna copia trasformata e estensione di file supportata.
-   * [URL endpoint di un&#39;app personalizzata App Builder](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/deploy-custom-application). L’app deve appartenere alla stessa organizzazione dell’account Experience Manager.
-   * Aggiungere parametri di servizio a [passare ulteriori informazioni o parametri all&#39;applicazione personalizzata](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/develop-custom-application#extend).
+   * [URL endpoint di un&#39;app personalizzata App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). L’app deve appartenere alla stessa organizzazione dell’account Experience Manager.
+   * Aggiungere parametri di servizio a [passare ulteriori informazioni o parametri all&#39;applicazione personalizzata](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend).
    * Tipi MIME inclusi ed esclusi per limitare l’elaborazione ad alcuni formati di file specifici.
 
 1. Fai clic su **[!UICONTROL Salva]** nell’angolo superiore destro della pagina.
@@ -182,7 +187,7 @@ Per verificare che le risorse siano state elaborate, visualizza l&#39;anteprima 
 
 In una situazione in cui è necessaria un’elaborazione aggiuntiva delle risorse che non può essere ottenuta utilizzando i Profili di elaborazione, è possibile aggiungere alla configurazione ulteriori flussi di lavoro di post-elaborazione. La post-elaborazione consente di aggiungere un’elaborazione completamente personalizzata oltre a quella configurabile utilizzando i microservizi per le risorse.
 
-Al termine dell&#39;elaborazione dei microservizi, [!DNL Experience Manager] esegue automaticamente flussi di lavoro di post-elaborazione o [flussi di lavoro con avvio automatico](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/configuring/auto-start-workflows), se configurati. Non è necessario aggiungere manualmente moduli di avvio dei flussi di lavoro per attivarli. Gli esempi includono:
+Al termine dell&#39;elaborazione dei microservizi, [!DNL Experience Manager] esegue automaticamente flussi di lavoro di post-elaborazione o [flussi di lavoro con avvio automatico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows), se configurati. Non è necessario aggiungere manualmente moduli di avvio dei flussi di lavoro per attivarli. Gli esempi includono:
 
 * Passaggi personalizzati del flusso di lavoro per elaborare le risorse.
 * Integrazioni per aggiungere metadati o proprietà alle risorse da sistemi esterni, ad esempio informazioni su prodotti o processi.
@@ -281,12 +286,13 @@ Segui i passaggi descritti in [Applica un modello di flusso di lavoro a una cart
 
 >[!MORELIKETHIS]
 >
->* [Introduzione al servizio Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/introduction).
->* [Comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility).
->* [Come creare applicazioni personalizzate](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/develop-custom-application).
+>* [Introduzione al servizio Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction).
+>* [Comprendere l&#39;estensibilità e quando utilizzarla](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+>* [Come creare applicazioni personalizzate](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [Tipi MIME supportati per vari casi d&#39;uso](/help/assets/file-format-support.md).
 
-<!-- TBD: 
+<!--
+ TBD: 
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->

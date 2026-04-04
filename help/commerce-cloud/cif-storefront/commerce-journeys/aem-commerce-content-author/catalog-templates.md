@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -95,7 +95,7 @@ Aggiungi un’immagine sopra la pagina.
 
 Il modello può essere visualizzato in anteprima con qualsiasi categoria/prodotto. Apri **Informazioni pagina**, quindi seleziona **Visualizza con categoria/prodotto**. Seleziona il prodotto/categoria dal selettore per ottenere un’anteprima con questo prodotto/categoria. Seleziona **Acquista la categoria Look** per ottenere un&#39;anteprima del modello aggiornato.
 
-![crea modello &#x200B;](assets/create-template-picker.png)
+![crea modello ](assets/create-template-picker.png)
 
 Ora devi assegnare questo modello alla categoria specifica. Apri proprietà nel menu **Informazioni pagina** e passa alla scheda Commerce. Fai clic sull&#39;icona della cartella per selezionare la categoria **Acquista aspetto** dal selettore delle categorie. È possibile assegnare più categorie a un modello e includere anche le sottocategorie abilitando la casella di controllo.
 
@@ -122,4 +122,4 @@ Approfondisci l&#39;argomento e continua il tuo percorso consultando il document
 Sebbene sia consigliabile passare alla parte successiva del percorso esaminando il documento [Gestione dell&#39;esperienza del catalogo prodotti in staging](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md), di seguito sono riportate alcune risorse aggiuntive facoltative che approfondiscono alcuni concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso headless:
 
 * [Creazione di più pagine per categorie e prodotti](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
-* [Guida alla migrazione per Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) - Come effettuare la migrazione al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente
+* [Guida alla migrazione per Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) - Come eseguire la migrazione al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente

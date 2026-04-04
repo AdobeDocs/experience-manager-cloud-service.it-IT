@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 1%
@@ -19,7 +19,8 @@ Un’azione di invio consente agli utenti di selezionare la destinazione dei dat
 
 Puoi anche creare un&#39;azione di invio personalizzata per aggiungere funzionalità non incluse nelle [opzioni predefinite](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Ad esempio, integra i dati del modulo con un’applicazione di terze parti o attiva una notifica SMS personalizzata in base all’input dell’utente.
 
-<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!--
+ ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
 ## Prerequisiti
@@ -48,7 +49,7 @@ Il diagramma seguente illustra i passaggi necessari per creare un’azione di in
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Il progetto è pronto!**
 
@@ -173,7 +174,9 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
        @Override
        public Map<String, Object> submit(FormSubmitInfo formSubmitInfo) {
        String data = formSubmitInfo.getData();
-       log.info("Using custom submit action service, [data] --> " + data);
+       log.info("Using custom submit action service, [data]
+       -->
+       " + data);
        Map<String, Object> result = new HashMap<>();
        result.put("status", "OK");
        return result;
@@ -215,9 +218,9 @@ Nella cartella `customsubmitaction`, creare un nuovo file denominato `.content.x
 
    1. Distribuisci il codice aggiornato:
 
-      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
+      Attiva una distribuzione del codice tramite la [pipeline full stack esistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Genera e distribuisce automaticamente il codice aggiornato con il nuovo supporto per l’azione di invio personalizzata.
 
-      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#setup-pipeline).
+      Se non hai già configurato una pipeline, consulta la guida su [come impostare una pipeline per AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![Distribuzione cloud](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

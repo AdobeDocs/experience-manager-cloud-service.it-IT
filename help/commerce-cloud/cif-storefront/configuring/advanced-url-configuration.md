@@ -12,7 +12,7 @@ thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 9%
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/38587/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configurazione {#configuration}
 
@@ -258,5 +258,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive {#additional}
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

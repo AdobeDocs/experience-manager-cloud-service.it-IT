@@ -1,11 +1,11 @@
 ---
-title: Migrazione al componente aggiuntivo AEM Commerce integration framework (CIF)
-description: Come migrare al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente
+title: Migrazione al componente aggiuntivo AEM Commerce Integration Framework (CIF)
+description: Come migrare al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 17%
@@ -48,7 +48,7 @@ L’importazione di dati del catalogo prodotti non è più supportata. L’utili
 
 >[!TIP]
 >
->Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source.](https://business.adobe.com/it/products/magento/open-source.html)
+>Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source.](https://business.adobe.com/products/magento/open-source.html)
 
 ## Esperienze nel catalogo dei prodotti con rendering AEM {#aem-rendering}
 

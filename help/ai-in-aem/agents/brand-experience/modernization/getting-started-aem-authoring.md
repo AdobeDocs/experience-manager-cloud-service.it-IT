@@ -2,15 +2,14 @@
 title: Guida introduttiva all’agente di modernizzazione esperienza per i progetti di authoring di AEM
 description: Scopri i passaggi di configurazione specifici necessari per i progetti di authoring di AEM nella guida introduttiva all’agente di modernizzazione esperienza tramite la console di modernizzazione esperienza.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # Guida introduttiva all’agente di modernizzazione esperienza per i progetti di authoring di AEM {#getting-started-aem-authoring}
 

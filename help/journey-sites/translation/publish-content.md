@@ -8,8 +8,8 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ AEM è quindi fisicamente separato in due istanze.
 1. L’istanza dell’**autore** è il sistema in cui autori e amministratori di contenuti lavorano per creare e gestire i contenuti.
 1. L’istanza di **pubblicazione** è il sistema che consegna il contenuto ai consumatori.
 
-Per essere disponibile per il consumo, dopo essere stato creato sull’istanza dell’autore, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
+Per essere disponibile per il consumo, dopo essere stato creato sull’istanza di authoring, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 
@@ -131,11 +131,11 @@ Per aggiornare una traduzione è possibile aggiungere al progetto esistente un n
 1. Passa a **Navigazione** > **Progetti**.
 1. Seleziona il progetto da aggiornare.
 1. Seleziona il pulsante **Aggiungi** nella parte superiore della finestra.
-1. Nella finestra **Aggiungi riquadro**, seleziona **Lavoro di traduzione** e poi **Invia**.
+1. Nella finestra **Aggiungi riquadro**, seleziona **Processo di traduzione** e poi **Invia**.
 
    ![Aggiungi riquadro](assets/add-translation-job-tile.png)
 
-1. Sulla scheda del nuovo lavoro di traduzione, seleziona il pulsante con freccia in alto nella scheda e seleziona **Aggiorna destinazione** per definire la lingua di destinazione del nuovo lavoro.
+1. Sulla scheda del nuovo processo di traduzione, seleziona il pulsante con freccia in alto nella scheda e seleziona **Aggiorna destinazione** per definire la lingua di destinazione del nuovo lavoro.
 
    ![Aggiorna destinazione](assets/update-target.png)
 

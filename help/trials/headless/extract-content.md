@@ -6,8 +6,8 @@ index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 
@@ -60,11 +60,11 @@ Inizia da GraphQL Explorer in una nuova scheda. Qui puoi creare e convalidare le
    }
    ```
 
-1. Sostituisci il contenuto esistente nell’editor delle query incollando il codice copiato.
+1. Sostituisci il contenuto esistente nell’editor di query incollando il codice copiato.
 
-1. Una volta incollato, fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor delle query per eseguire la query.
+1. Una volta incollato, fai clic sul pulsante **Riproduci** in alto a sinistra nell’editor di query per eseguire la query.
 
-1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
+1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor di query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
 
    ![Query elenco](assets/do-not-localize/list-query-1-3-4-5.png)
 
@@ -99,11 +99,11 @@ L’esecuzione di una query byPath ti consente di recuperare il contenuto per un
    }
    ```
 
-1. Sostituisci il contenuto esistente nell’editor delle query incollando il codice copiato.
+1. Sostituisci il contenuto esistente nell’editor di query incollando il codice copiato.
 
-1. Una volta incollato, fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor delle query per eseguire la query.
+1. Una volta incollato, fai clic sul pulsante **Riproduci** in alto a sinistra nell’editor di query per eseguire la query.
 
-1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
+1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor di query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
 
    ![Risultati della query byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
@@ -115,7 +115,7 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Per eseguire query con frammenti di contenuto personalizzati, modifica l’endpoint dalla cartella **AEM Demo Assets** alla cartella **Progetto**.
 
-1. Elimina tutto il contenuto esistente nell’editor delle query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni. Se hai seguito gli esempi nei moduli precedenti, dovresti trovare `adventureList` nell’elenco di completamento automatico.
+1. Elimina tutto il contenuto esistente nell’editor di query. Quindi digita parentesi graffa aperta `{` e premi Ctrl+Spazio o Opzione+Spazio per un elenco completo automatico dei modelli definiti nell’endpoint. Seleziona il modello creato che termina in `List` dalle opzioni. Se hai seguito gli esempi nei moduli precedenti, dovresti trovare `adventureList` nell’elenco di completamento automatico.
 
    ![Avvia query personalizzata](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Dopo aver eseguito i due tipi principali di query, puoi eseguire una query sul c
 
 1. Al termine, seleziona il pulsante **Riproduci** in alto a sinistra dell’editor per eseguire la query. L’editor completa automaticamente gli `items`, che vengono brevemente evidenziati in giallo e la query viene eseguita.
 
-1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query.
+1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor di query.
 
    ![Esegui query personalizzata](assets/do-not-localize/custom-query-2.png)
 
@@ -161,7 +161,7 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
    }
    ```
 
-1. Sostituisci il contenuto esistente nell’editor delle query incollando il codice copiato.
+1. Sostituisci il contenuto esistente nell’editor di query incollando il codice copiato.
 
    >[!NOTE]
    >
@@ -169,13 +169,13 @@ Verrà creata una query persistente che include i dati che si desidera utilizzar
    >
    >Utilizza la funzione di completamento automatico di GraphQL (Ctrl+Spazio o Opzione+Spazio) come descritto in precedenza per identificare le proprietà disponibili.
 
-1. Una volta incollato, fai clic sul pulsante **Riproduzione** in alto a sinistra dell’editor delle query per eseguire la query.
+1. Una volta incollato, fai clic sul pulsante **Riproduci** in alto a sinistra nell’editor di query per eseguire la query.
 
-1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor delle query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
+1. I risultati vengono visualizzati nel pannello a destra, accanto all’editor di query. Se la query non è corretta, viene visualizzato un errore nel pannello di destra.
 
    ![Crea query personalizzata](assets/do-not-localize/own-query.png)
 
-1. Quando la query ti soddisfa, fai clic sul pulsante **Salva con nome** nella parte superiore dell’editor delle query per renderla persistente.
+1. Una volta ottenuto il risultato desiderato, fai clic sul pulsante **Salva con nome** nella parte superiore dell’editor di query per renderla persistente.
 
 1. Nel menu a comparsa **Nome della query**, assegna alla query il nome `adventure-list`.
 

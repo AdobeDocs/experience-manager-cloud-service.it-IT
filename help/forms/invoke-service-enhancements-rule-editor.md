@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: richiamare i miglioramenti del servizio in VRE, popolare le opzioni a discesa utilizzando il servizio di richiamo, impostare il pannello ripetibile utilizzando l’output del servizio di richiamo, impostare il pannello utilizzando l’output del servizio di richiamo, utilizzare il parametro di output del servizio di richiamo per convalidare un altro campo.
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '2156'
 ht-degree: 1%
@@ -172,7 +172,7 @@ Immettere `101` nella casella di testo `Pet ID` per popolare dinamicamente le op
 
 ![Risultato](/help/forms/assets/output1.png)
 
-> 
+>[!NOTE]
 >
 > Le opzioni a discesa possono anche essere compilate dinamicamente richiamando un servizio, analizzando la risposta JSON e applicando funzioni personalizzate. Per ulteriori dettagli, vedere [questa sezione](#retrieve-property-values-from-a-json-array).
 

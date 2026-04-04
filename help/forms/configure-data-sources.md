@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2390'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
@@ -31,7 +31,7 @@ L&#39;integrazione dei dati di [!DNL Experience Manager Forms] consente di confi
 * Servizi OData (versione 4.0)
 * Microsoft® Dynamics
 * Salesforce
-* Archiviazione BLOB di Microsoft® Azure
+* Archiviazione BLOB Microsoft® Azure
 
 L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), l&#39;autenticazione di base e i tipi di autenticazione con chiave API predefiniti e consente l&#39;implementazione dell&#39;autenticazione personalizzata per l&#39;accesso ai servizi Web. Mentre i servizi RESTful, basati su SOAP e OData sono configurati in [!DNL Experience Manager] as a Cloud Service, JDBC per i database relazionali e il connettore per il profilo utente [!DNL Experience Manager] sono configurati nella console Web [!DNL Experience Manager].
 
@@ -41,8 +41,8 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 
 Prima di configurare i database relazionali utilizzando la configurazione della console Web [!DNL Experience Manager], è necessario:
 
-* [Abilita la rete avanzata tramite l&#39;API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=it), in quanto le porte sono disabilitate per impostazione predefinita.
-* [Aggiungi dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=it#mysql-driver-dependencies).
+* [Abilita la rete avanzata tramite l&#39;API di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), in quanto le porte sono disabilitate per impostazione predefinita.
+* [Aggiungi dipendenze driver JDBC in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
 
 ### Passaggi per configurare un database relazionale
@@ -61,7 +61,7 @@ Prima di configurare i database relazionali utilizzando la configurazione della 
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall&#39;applicazione.
 
@@ -96,7 +96,7 @@ Prima di configurare i database relazionali utilizzando la configurazione della 
 }
 ```
 
-> 
+>[!NOTE]
 >
 > Sostituisci segnaposto come `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>` e `<your-db-password>` con valori effettivi.
 
@@ -117,7 +117,7 @@ git push
 
 >[!NOTE]
 >
-> Per informazioni più dettagliate, vedere [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=it).
+> Per informazioni più dettagliate, vedere [Connessioni SQL con DataSourcePool JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html).
 
 <!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
@@ -149,7 +149,8 @@ git push
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
-<!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
+<!--
+ ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
@@ -168,7 +169,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Select **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration.
+-->
 
 ## Configurare la cartella per le configurazioni del servizio cloud {#cloud-folder}
 
@@ -179,7 +181,7 @@ Tutte le configurazioni del servizio cloud in [!DNL Experience Manager] sono con
 Per configurare la cartella per le configurazioni del servizio cloud:
 
 1. Vai a **[!UICONTROL Strumenti > Generale > Browser configurazioni]**.
-   * Per ulteriori informazioni, vedere la documentazione del [browser di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=it).
+   * Per ulteriori informazioni, vedere la documentazione del [browser di configurazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html).
 1. Effettua le seguenti operazioni per abilitare la cartella globale per le configurazioni cloud oppure ignora questo passaggio per creare e configurare un’altra cartella per le configurazioni del servizio cloud.
 
    1. Nel **[!UICONTROL Browser configurazioni]**, selezionare la cartella `global` e selezionare **[!UICONTROL Proprietà]**.
@@ -208,8 +210,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL &#x200B; Swagger], i campi seguenti sono precompilati con i valori:
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], i campi seguenti sono precompilati con i valori:
 
       * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine [!DNL Swagger].
       * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
@@ -233,8 +235,8 @@ I servizi Web RESTful possono essere descritti utilizzando [Specifiche Swagger](
 1. Selezionare **[!UICONTROL Crea]** per aprire la **[!UICONTROL Creazione guidata configurazione Data Source]**. Specifica un nome e, facoltativamente, un titolo per la configurazione. Seleziona **[!UICONTROL Servizio RESTful]** dal menu a discesa **[!UICONTROL Tipo di servizio]**. Se necessario, sfoglia e seleziona un&#39;immagine di anteprima per la configurazione, quindi seleziona **[!UICONTROL Avanti]**.
 1. Specificare i dettagli seguenti per il servizio RESTful:
 
-   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL &#x200B; Swagger] o caricare il file [!DNL Swagger] dal file system locale.
-   * In base all&#39;input di Source [!DNL &#x200B; Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
+   * Selezionare un URL o un file dal menu a discesa [!UICONTROL Swagger Source] e specificare di conseguenza [!DNL Swagger 3.0 URL] nel file di definizione [!DNL  Swagger] o caricare il file [!DNL Swagger] dal file system locale.
+   * In base all&#39;input di Source [!DNL  Swagger], vengono visualizzate le informazioni di connessione con il server di destinazione.
    * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API o Autenticazione personalizzata, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
    Se si seleziona **[!UICONTROL Chiave API]** come tipo di autenticazione, specificare il valore per la chiave API. La chiave API può essere inviata come intestazione di richiesta o come parametro di query. Seleziona una di queste opzioni dall&#39;elenco a discesa **[!UICONTROL Posizione]** e specifica di conseguenza il nome dell&#39;intestazione o il parametro della query nel campo **[!UICONTROL Nome parametro]**.
@@ -350,7 +352,7 @@ Per configurare il servizio Web basato su SOAP in [!DNL Experience Manager] as a
 
 È possibile specificare un&#39;espressione regolare che funga da filtro per gli URL assoluti consentiti come istruzioni di importazione in SOAP Web Services WSDL. Per impostazione predefinita, in questo campo non è presente alcun valore. [!DNL Experience Manager] blocca pertanto tutte le istruzioni di importazione disponibili in WSDL. Se si specifica `.*` come valore in questo campo, [!DNL Experience Manager] consente tutte le istruzioni di importazione.
 
-Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONTROL Modello dati modulo SOAP Inserire nell&#39;elenco Consentiti Web Services Import]** per specificare l&#39;espressione regolare. Il seguente file JSON mostra un esempio:
+Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONTROL Modello dati modulo SOAP Web Services Import]** per specificare l&#39;espressione regolare. Il seguente file JSON mostra un esempio:
 
 ```json
 {
@@ -358,7 +360,7 @@ Impostare la proprietà `importAllowlistPattern` della configurazione **[!UICONT
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Configurare i servizi OData {#config-odata}
 
@@ -390,7 +392,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
@@ -413,7 +415,8 @@ To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure
 
 -->
 
-<!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
+<!--
+## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
 When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
@@ -424,7 +427,8 @@ When you enable mutual authentication for form data model (FDM), both the data s
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
    1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
-1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
+1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
+-->
 
 ## Passaggi successivi {#next-steps}
 

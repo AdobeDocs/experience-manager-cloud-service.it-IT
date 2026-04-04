@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 8e57406d97b3019a3c3530390d1fd52c836fcdeb
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 90%
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ## Panoramica {#overview}
@@ -60,9 +60,11 @@ Quando crei o modifichi un modulo adattivo esistente, utilizzi i seguenti elemen
 * [Barra degli strumenti del componente](#component-toolbar)
 * [Pagina Modulo adattivo](#af-page)
 
-<!-- ![Adaptive Form authoring UI](assets/formeditor.png)
+<!--
+ ![Adaptive Form authoring UI](assets/formeditor.png)
 
-**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page -->
+**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page
+-->
 
 ### Barra laterale {#sidebar}
 
@@ -77,9 +79,11 @@ La barra laterale consente di:
 
 **A.** Browser dei contenuti **B.** Browser delle proprietà **C.** Browser delle risorse **D.** Browser delle componenti
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barra laterale comprende i seguenti browser:
 

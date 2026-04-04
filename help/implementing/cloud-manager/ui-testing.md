@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2662'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Test dell’interfaccia utente"
->abstract="I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework. Come Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium."
+>abstract="I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni. I test dell’interfaccia utente sono test basati su Selenium inseriti in un’immagine Docker per consentire un’ampia scelta in termini di linguaggio e framework. Ad esempio Java e Maven, Node e WebDriver.io o qualsiasi altro framework e tecnologia basati su Selenium."
 
 I test dell’interfaccia utente personalizzati sono una funzione facoltativa che consente di creare ed eseguire automaticamente i test dell’interfaccia utente per le applicazioni.
 
@@ -239,8 +239,10 @@ In fase di esecuzione, all’immagine Docker vengono passate le seguenti variabi
 Gli esempi di test di Adobe forniscono funzioni di supporto per accedere ai parametri di configurazione:
 
 Cypress: utilizza la funzione standard `Cypress.env('VARIABLE_NAME')`
-<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
+<!--
+ BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+-->
 
 ### Generare rapporti sui test {#generate-test-reports}
 
@@ -274,7 +276,7 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 | Durata consigliata | 15 min | Adobe consiglia di mantenere i test entro questo limite di tempo. |
 
 * Se l’istanza di authoring/pubblicazione di destinazione è protetta dall’inserire nell&#39;elenco Consentiti di IP, è necessario inserire nell&#39;elenco Consentiti l’infrastruttura di test dell’interfaccia utente della pipeline oppure i test dell’interfaccia utente possono non riuscire con 403 Forbidden (Non consentito).
-Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un&#39;Inserire nell&#39;elenco Consentiti del IP &#x200B;](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un&#39;Inserire nell&#39;elenco Consentiti del IP ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -291,7 +293,7 @@ Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un
 Prima dell’avvio dei test, l’immagine Docker verifica che il server Selenium sia in esecuzione. L’attesa del servizio Selenium è un processo a due fasi.
 
 1. È possibile leggere l’URL del servizio Selenium dalla variabile di ambiente `SELENIUM_BASE_URL`.
-1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [&#128279;](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
+1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
 
 Dopo aver ricevuto una risposta positiva dall’endpoint di stato di Selenium è possibile avviare i test.
 
@@ -306,9 +308,11 @@ Gli esempi di test forniti da Adobe per impostazione predefinita creano screensh
 
 Puoi utilizzare le funzioni di assistenza per creare screenshot tramite i test.
 
-<!-- BOTH URLS ARE 404
+<!--
+  BOTH URLS ARE 404
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+-->
 
 Se durante l&#39;esecuzione di un test dell&#39;interfaccia utente viene creato un archivio dei risultati del test, è possibile scaricarlo da Cloud Manager facendo clic sul pulsante `Download Details` nel passaggio [**Test dell&#39;interfaccia utente personalizzati**](/help/implementing/cloud-manager/deploy-code.md).
 
@@ -322,10 +326,12 @@ I test a volte richiedono il caricamento di file nell’applicazione sottoposta 
    * Equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Per informazioni su come eseguire una tale richiesta HTTP, consulta la documentazione e le librerie del linguaggio di programmazione utilizzato nell’immagine Docker.
 
-   <!-- BOTH URLS ARE 404
+   <!--
+    BOTH URLS ARE 404
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     -->
 
 1. Se il caricamento ha esito positivo, la richiesta restituisce una risposta `200 OK` di tipo `text/plain`.
    * Il contenuto della risposta è un handle di file opaco.

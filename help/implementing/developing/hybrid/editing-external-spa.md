@@ -5,7 +5,7 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Questo documento descrive i passaggi consigliati per caricare un’applicazione 
 I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
-* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
+* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms è la base del progetto AEM, che viene aggiornato per includere l’applicazione a pagina singola esterna.
-   * Per gli esempi di questo documento, Adobe utilizza il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
+   * Per gli esempi di questo documento, Adobe utilizza il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Avere l’applicazione a pagina singola React funzionante ed esterna che desideri integrare a portata di mano.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}

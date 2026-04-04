@@ -4,10 +4,10 @@ description: Scopri la ricerca e l’indicizzazione dei contenuti in AEM as a Cl
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 17%
+source-wordcount: '2906'
+ht-degree: 16%
 
 ---
 
@@ -59,7 +59,7 @@ Una definizione di indice può rientrare in una delle seguenti categorie:
 
 2. Personalizzazione di un indice OOTB. Per personalizzare un indice OOTB, aggiungere `-custom-` seguito da un numero. `/oak:index/damAssetLucene-8-custom-1` è la personalizzazione dell&#39;indice OOTB `/oak:index/damAssetLucene-8`. Una personalizzazione è in genere una copia dell’indice OOTB, oltre a proprietà aggiuntive che devono essere indicizzate.
 
-3. Indice completamente personalizzato: puoi creare un indice completamente nuovo da zero. Questi indici devono terminare con `-custom-` e un numero di versione. Inoltre, per evitare conflitti di denominazione, utilizza un prefisso nel nome dell’indice. Ad esempio: `/oak:index/acme.product-1-custom-2`, dove `acme.` è il prefisso.
+3. Indice completamente personalizzato: è possibile creare un indice completamente nuovo da zero. Questi indici devono terminare con `-custom-` e un numero di versione. Inoltre, per evitare conflitti di denominazione, utilizza un prefisso nel nome dell’indice. Ad esempio: `/oak:index/acme.product-1-custom-2`, dove `acme.` è il prefisso.
 
 >[!NOTE]
 >
@@ -82,9 +82,11 @@ Per un indice completamente personalizzato, prepara un nuovo pacchetto di defini
 Come indicato nelle sezioni delle limitazioni, `type` della definizione dell&#39;indice personalizzato deve essere sempre impostato su `lucene` anche se la definizione dell&#39;indice estratto utilizzando Gestione pacchetti è di un tipo diverso (ad esempio `elasticsearch`).
 È inoltre necessario modificare la proprietà `async` se la definizione dell&#39;indice estratto è impostata su `elastic-async`. La proprietà `async` deve essere impostata su uno dei seguenti valori: `[async]`, `[async,nrt]` o `[fulltext-async]` per la definizione dell&#39;indice personalizzato.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 1%
@@ -30,9 +30,9 @@ Puoi utilizzare Flussi di lavoro di AEM per creare rapidamente flussi di lavoro 
 
 Con un flusso di lavoro incentrato su Forms su OSGi, puoi creare e distribuire rapidamente flussi di lavoro per varie attività sullo stack OSGi, senza dover installare la funzionalità completa di gestione dei processi sullo stack JEE. Lo sviluppo e la gestione dei flussi di lavoro utilizzano le familiari funzionalità di AEM Workflow e Casella in entrata di AEM. I flussi di lavoro costituiscono la base per automatizzare i processi aziendali reali che si estendono su più sistemi software, reti, reparti e persino organizzazioni.
 
-Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o essere eseguiti a livello di programmazione quando gli utenti inviano un modulo <!-- or [correspondence management](cm-overview.md) letter-->. <!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
+Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o essere eseguiti a livello di programmazione quando gli utenti inviano un modulo. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Il flusso di lavoro incentrato su Forms su OSGi estende la cartella Posta in arrivo di [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=it#authoring) e fornisce componenti aggiuntivi (passaggi) che consentono all&#39;editor di flussi di lavoro AEM di aggiungere supporto per i flussi di lavoro incentrati su [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Il flusso di lavoro incentrato su Forms su OSGi estende la cartella Posta in arrivo di [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring) e fornisce componenti aggiuntivi (passaggi) che consentono all&#39;editor di flussi di lavoro AEM di aggiungere supporto per i flussi di lavoro incentrati su [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Tutti i [!DNL AEM Forms] passaggi del flusso di lavoro supportano l&#39;utilizzo di variabili. Le variabili consentono ai passaggi del flusso di lavoro di conservare e trasmettere metadati tra i passaggi in fase di esecuzione. Puoi creare diversi tipi di variabili per memorizzare diversi tipi di dati. Puoi anche creare raccolte di variabili (array) per memorizzare più istanze di dati correlati dello stesso tipo. In genere, si utilizza una variabile o una raccolta di variabili quando è necessario prendere una decisione in base al valore in essa contenuto o per memorizzare le informazioni necessarie in un secondo momento di un processo. Per ulteriori informazioni sull&#39;utilizzo delle variabili in questi componenti del flusso di lavoro incentrati su Forms (passaggi), vedi [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow-step-reference.md). Per informazioni sulla creazione e la gestione delle variabili, consulta [Variabili nei flussi di lavoro di AEM](variable-in-aem-workflows.md).
 
@@ -73,9 +73,9 @@ Sì. AEM Forms supporta la verificabilità attraverso la cronologia dei flussi d
 
 ## Creare un modello di flusso di lavoro {#create-a-workflow-model}
 
-Un modello di flusso di lavoro è costituito dalla logica e dal flusso di un processo aziendale. È costituito da una serie di passaggi. Questi passaggi sono relativi ai componenti di AEM. Puoi estendere i passaggi del flusso di lavoro con parametri e script per fornire più funzionalità e controllo, in base alle esigenze. [!DNL AEM Forms] fornisce alcuni passaggi in aggiunta ai passaggi predefiniti di AEM. Per un elenco dettagliato dei passaggi di AEM e di [!DNL AEM Forms], consulta [Riferimento passaggio flusso di lavoro di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem) e [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow.md).
+Un modello di flusso di lavoro è costituito dalla logica e dal flusso di un processo aziendale. È costituito da una serie di passaggi. Questi passaggi sono relativi ai componenti di AEM. Puoi estendere i passaggi del flusso di lavoro con parametri e script per fornire più funzionalità e controllo, in base alle esigenze. [!DNL AEM Forms] fornisce alcuni passaggi in aggiunta ai passaggi predefiniti di AEM. Per un elenco dettagliato dei passaggi di AEM e di [!DNL AEM Forms], consulta [Riferimento passaggio flusso di lavoro di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) e [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow.md).
 
-AEM fornisce un’interfaccia utente intuitiva per creare un modello di flusso di lavoro utilizzando i passaggi di flusso di lavoro forniti. Per istruzioni dettagliate sulla creazione di un modello di flusso di lavoro, vedere [Creazione di modelli di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=it#workflows). L’esempio seguente fornisce istruzioni dettagliate per creare un modello di flusso di lavoro per un flusso di lavoro di approvazione e revisione:
+AEM fornisce un’interfaccia utente intuitiva per creare un modello di flusso di lavoro utilizzando i passaggi di flusso di lavoro forniti. Per istruzioni dettagliate sulla creazione di un modello di flusso di lavoro, vedere [Creazione di modelli di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows). L’esempio seguente fornisce istruzioni dettagliate per creare un modello di flusso di lavoro per un flusso di lavoro di approvazione e revisione:
 
 >[!NOTE]
 >
@@ -227,9 +227,11 @@ Puoi avviare o attivare un flusso di lavoro incentrato su Forms:
 
 L&#39;applicazione del flusso di lavoro creata è disponibile come applicazione nella cartella Posta in arrivo. Gli utenti membri del gruppo [!DNL workflow-users] possono compilare e inviare l&#39;applicazione che attiva il flusso di lavoro associato.
 
-<!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
+<!--
+ ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you change the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you change the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.
+-->
 
 ### Invio di un modulo adattivo {#af}
 
@@ -237,7 +239,8 @@ Puoi configurare le azioni di invio di un modulo adattivo in modo da avviare un 
 
 <!-- You can configure an Adaptive Form to sync, submit, and trigger a workflow from [!DNL AEM Forms] app. For details, see [working with a form]((working-with-form.md). -->
 
-<!-- ### Using a watched folder {#watched}
+<!--
+ ### Using a watched folder {#watched}
 
 An administrator (a member of fd-administrators group) can configure a network folder to run a pre-configured workflow when a user places a file (such as a PDF file) in the folder. After the workflow completes, it can save the result file to a specified output folder. Such a folder is known as [Watched Folder](watched-folder-in-aem-forms.md). Perform the following procedure to configure a watched folder to launch a workflow:
 
@@ -279,9 +282,11 @@ An administrator (a member of fd-administrators group) can configure a network f
    |---|---|
    | Payload Mapper Filter |When you create a watched folder, it creates a folder structure in the crx-repository. The folder structure can serve as a payload to the workflow. You can write a script to map an AEM Workflow to accept inputs from the watched folder structure. An out of the box implementation is available and listed in the Payload Mapper Filter. If you do not have a custom implementation, select the default implementation. |
 
-   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder]((admin-help/configuring-watched-folder-endpoints.md) article. -->
+   The Advanced tab contains more fields. Most of these fields contain a default value. To learn about all the fields, see the [Create or Configure a watched folder]((admin-help/configuring-watched-folder-endpoints.md) article.
+   -->
 
-<!-- ### Submitting an interactive communication or a letter {#letter}
+<!--
+ ### Submitting an interactive communication or a letter {#letter}
 
 You can associate and execute a Forms-centric workflow on OSGi on submission of an interactive communication or a letter. In correspondence management workflows are used for post processing interactive communications and letters. For example, emailing, printing, faxing, or archiving final letters. For detailed steps, see [Post processing of interactive communications and letters](submit-letter-topostprocess.md).
 
@@ -293,7 +298,8 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
+-->
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 

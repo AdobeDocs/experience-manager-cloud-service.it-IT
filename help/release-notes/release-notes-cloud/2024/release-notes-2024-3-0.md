@@ -4,7 +4,7 @@ description: Note sulla versione 2024.3.0 di [!DNL Adobe Experience Manager] as 
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 93%
@@ -37,7 +37,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video che mostra una panoramica sulla versione di marzo 2024 per un riepilogo delle funzioni aggiunte alla versione 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450367?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -127,7 +127,7 @@ Questi servizi consentono di:
 * Utilizza il semplice HTML, CSS moderno e JavaScript vanilla per creare esperienze eccezionali, evitando la difficile curva di apprendimento di un framework specifico.
 
 
-### Nuove funzioni nella versione prerelease di AEM Forms {#forms-pre-release}
+### Nuove funzioni nella versione pre-release di AEM Forms {#forms-pre-release}
 
 * **Editor di regole visive ottimizzato per Forms adattivo basato su componenti core**: questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questa versione apporta un aggiornamento significativo all’editor di regole visive per i moduli adattivi basati su componenti core. Questo aggiornamento si concentra sulla semplificazione delle interazioni con le funzioni personalizzate, consentendo di creare moduli più solidi ed efficienti.
 

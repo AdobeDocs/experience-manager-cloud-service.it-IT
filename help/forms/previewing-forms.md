@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -29,10 +29,12 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td><strong>Tipo risorsa</strong><br /> </td>
    <td><strong>Opzioni di anteprima disponibili</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>PDF Form</td>
    <td>Anteprima PDF con dati<br /> </td>
@@ -41,10 +43,12 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td>Modulo adattivo</td>
    <td>Anteprima HTML e Anteprima HTML con dati</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

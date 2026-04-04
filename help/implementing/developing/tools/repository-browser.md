@@ -6,7 +6,7 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->È inoltre possibile guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=it) per una breve introduzione video su come utilizzare il Browser dell&#39;archivio per eseguire il debug di AEM as a Cloud Service.
+>È inoltre possibile guardare [questo clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) per una breve introduzione video su come utilizzare il Browser dell&#39;archivio per eseguire il debug di AEM as a Cloud Service.
 
 ## Introduzione {#introduction}
 
@@ -33,7 +33,7 @@ Accessibile da [AEM as a Cloud Service Developer Console](/help/implementing/dev
 
 Per accedere ad AEM as a Cloud Service Developer Console o al browser dell’archivio devono essere soddisfatte le seguenti condizioni
 
-Per accedere ad AEM as a Cloud Service Developer Console, vedi [Accesso a Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Per accedere ad AEM as a Cloud Service Developer Console, vedi [Accesso a Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Per accedere al Browser dell’archivio, i requisiti sono gli stessi di AEM as a Cloud Service Developer Console (specificati sopra). Per visualizzare il contenuto del Browser dell’archivio per una particolare istanza:
 
@@ -41,7 +41,7 @@ Per accedere al Browser dell’archivio, i requisiti sono gli stessi di AEM as a
 
 * Istanze di pubblicazione: gli utenti con il profilo di prodotto Utenti AEM per l&#39;**istanza di pubblicazione** possono visualizzare il browser dell&#39;archivio con un accesso di lettura minimo. Senza questo set di profili di prodotto, gli utenti potranno navigare come utenti anonimi e alcuni percorsi non verranno visualizzati a causa di autorizzazioni limitate.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta la [documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=it).
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, consulta la [documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Avvio del Browser dell’archivio {#launching-the-repository-browser}
 
@@ -78,7 +78,8 @@ Per la pubblicazione, per impostazione predefinita, il Browser dell&#39;archivio
 
 Per rendere visibili tali posizioni, utilizza il profilo di prodotto Pubblicazione amministratori di AEM. Per ulteriori informazioni, consulta la [documentazione dei profili di team e di prodotto](/help/onboarding/aem-cs-team-product-profiles.md).
 
-<!-- Drafting because of CQDOC-23204
+<!--
+ Drafting because of CQDOC-23204
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

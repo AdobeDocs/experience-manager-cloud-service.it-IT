@@ -4,7 +4,7 @@ description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manage
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consult
 
 1. Compila le informazioni in base alle tue esigenze, quindi fai clic su **Registra**.
 1. Passa all’app creata e seleziona **Autorizzazioni API**.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Seleziona le seguenti autorizzazioni per la tua app, quindi fai clic su **Aggiungi autorizzazione**:
 
    >[!NOTE]

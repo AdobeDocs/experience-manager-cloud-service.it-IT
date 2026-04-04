@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 9%
@@ -23,10 +23,11 @@ Vedi anche [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/ae
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (2 minuti e 40 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475200/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
-Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
+Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+-->
 
 ## Experience Hub in chiusura {#aem-experience-hub-about}
 

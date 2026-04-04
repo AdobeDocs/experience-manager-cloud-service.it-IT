@@ -2,14 +2,14 @@
 title: Importare un criterio per i marchi
 description: Utilizzare Adobe Governance Agent per importare un criterio per il marchio
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # Importare un criterio per i marchi {#how-to-import-a-brand-policy}
 
@@ -114,4 +114,3 @@ Per importare un brand nell’agente di governance:
    ![Configurazione dei dettagli di controllo](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. Infine, per un elenco dei domini e dei brand a cui sono associati, puoi premere la scheda **Domini**. Questa sezione ti consente di aggiungere, eliminare o modificare i domini nel tuo elenco.
-

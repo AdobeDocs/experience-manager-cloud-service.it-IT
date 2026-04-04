@@ -4,7 +4,7 @@ description: Scopri come accedere a Cloud Manager per configurare le risorse del
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 94%
@@ -30,7 +30,7 @@ Dopo aver letto questo documento avrai compreso:
 
 Cloud Manager è un componente essenziale di AEM as a Cloud Service e funge da punto di ingresso singolo per il team. Supporta i clienti con configurazioni di sviluppo di livello Enterprise e pipeline CI/CD appositamente progettate per garantire test approfonditi e la massima qualità del codice, in modo da poter offrire esperienze eccezionali. Cloud Manager offre tutti gli strumenti necessari per iniziare a lavorare in autonomia, inclusa la possibilità di creare le risorse e gli ambienti cloud.
 
-In genere un membro del team assegnato al profilo di prodotto **Proprietario business** è responsabile dell’aggiunta delle risorse cloud, ad esempio programmi e ambienti. Si tratta della persona che, in base alle esigenze aziendali, completa la configurazione iniziale di Cloud Manager.
+In genere un membro del team assegnato al profilo di prodotto **Proprietario business** è responsabile dell’aggiunta delle risorse cloud, ad esempio programmi e ambienti. Si tratta della persona che, in base alle esigenze di business, completa la configurazione iniziale di Cloud Manager.
 
 Ai fini di questo percorso di onboarding, come amministratore di sistema dovresti aver già assegnato te stesso/a al profilo di prodotto **Proprietario business** e ti occuperai della configurazione delle risorse cloud. A seconda dei requisiti effettivi del progetto, gli utenti con ruolo Proprietario business e Amministratore di sistema possono corrispondere.
 
@@ -53,7 +53,8 @@ Un amministratore di sistema con il ruolo **Proprietario business** deve prima a
 <!--
 By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
 
-Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles.
+-->
 
 ## Passa a Cloud Manager {#navigate-cloud-manager}
 
@@ -76,9 +77,11 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
    >
    >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. You are directed to Cloud Manager's landing page. -->
+1. You are directed to Cloud Manager's landing page.
+-->
 
-<!-- OLD
+<!--
+ OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
@@ -97,7 +100,8 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 >[!NOTE]
 >
->Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+-->
 
 ## Visualizzare programmi {#viewing-programs}
 

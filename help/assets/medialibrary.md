@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 9%
@@ -56,7 +56,8 @@ Media Library tratta in generale i seguenti casi d’uso:
 * Esperienze di schermata digitale create con [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API REST HTTP per operazioni headless.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
 
@@ -86,7 +87,8 @@ Per utilizzare la funzionalità Catalogo multimediale, è possibile utilizzare l
 * Flusso di attività (timeline).
 * Commenti e annotazioni.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+ TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -118,4 +120,4 @@ Impossibile utilizzare smart tag, collegamento [!DNL Asset], selettore [!DNL Ass
 >[!MORELIKETHIS]
 >
 >* [Funzioni DAM in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=it)
->* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] come  [!DNL Cloud Service] descrizione del prodotto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

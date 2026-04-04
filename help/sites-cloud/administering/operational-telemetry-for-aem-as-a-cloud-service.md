@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Il servizio di telemetria operativa è progettato per ridurre al minimo la racco
 * Il nome host del sito visitato, ad esempio: `experienceleague.adobe.com`
 * Tipo di agente utente e sistema operativo utilizzati per visualizzare la pagina, ad esempio: `desktop:windows` o `mobile:ios`
 * Ora della raccolta dati, ad esempio: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs?lang=it`
+* URL della pagina visitata, ad esempio: `https://experienceleague.adobe.com/docs`
 * URL referente (URL della pagina collegata alla pagina corrente, se l’utente ha seguito un collegamento)
 * ID della visualizzazione pagina generato in modo casuale, in un formato simile a: `2Ac6`
 * Peso o inverso della frequenza di campionamento, ad esempio: `100`. Significa che viene registrata solo una visualizzazione pagina su cento
 * Il punto di controllo, o nome, di un particolare evento nella sequenza di caricamento della pagina. Oppure, interagendo con esso come visitatore
 * L’origine, o identificatore, dell’elemento DOM con cui l’utente interagisce per il punto di controllo indicato sopra. Ad esempio, potrebbe trattarsi di un’immagine
 * La destinazione o il collegamento a una pagina o risorsa esterna con cui l’utente interagisce per il punto di controllo menzionato in precedenza. Esempio: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* Le metriche delle prestazioni [Core Web Vitals (CWV)](https://web.dev/articles/lcp) [LCP (Largest Contentful Paint)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) e [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) che descrivono la qualità dell&#39;esperienza del visitatore.
+* Le metriche delle prestazioni di [Core Web Vitals (CWV)](https://web.dev/articles/lcp) [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Interaction to Next Paint (INP)](https://web.dev/articles/inp) e [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) che descrivono la qualità dell&#39;esperienza del visitatore.
 
 ## Funzionamento della telemetria operativa per un cliente {#how-operational-telemetry-works-for-a-customer}
 
 La telemetria operativa controlla automaticamente il traffico lato client. In qualità di cliente di Adobe, non è necessario eseguire ulteriori passaggi, in quanto questo servizio è perfettamente integrato nella configurazione esistente. Il servizio di telemetria operativa è già disponibile e consente di usufruire automaticamente dei vantaggi di questa nuova funzionalità. Il servizio di telemetria operativa non espone attualmente al monitoraggio alcuna metrica visualizzata dai clienti. Stiamo lavorando per offrirti questa funzionalità il prima possibile.
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## Utilizzo della telemetria operativa in Adobe {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## Domande frequenti {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.

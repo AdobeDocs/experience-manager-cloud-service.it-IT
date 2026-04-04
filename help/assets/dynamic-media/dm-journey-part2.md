@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 0%
@@ -62,10 +62,10 @@ Ora aggiungi un parametro di elaborazione dell’immagine alla fine dell’URL. 
 
 Viene generata una nuova rappresentazione dell’orologio. Un aspetto fondamentale di questo semplice esercizio di modifica della larghezza dell&#39;immagine è che l&#39;immagine visualizzata viene generata al 100% in modo dinamico.
 
-Modificare il valore della larghezza di `500` pixel in `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
+Modificare il valore della larghezza di `500` pixel in `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 Quando si preme **[!UICONTROL Invio]**, il browser torna al server immagini Dynamic Media. Genera una nuova rappresentazione dell’orologio, basata sul nuovo valore di larghezza appena inserito, quindi consegna la nuova immagine al browser e la memorizza in cache.
 
-Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che puoi utilizzare per ottimizzare le risorse delle immagini nelle pagine web. Puoi [visualizzarne un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it).
+Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che puoi utilizzare per ottimizzare le risorse delle immagini nelle pagine web. Puoi [visualizzarne un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 Provare ora ad aggiungere un parametro di rotazione all&#39;immagine dell&#39;orologio. E la fine del percorso URL, subito dopo `wid=1000`, digitare `&rotate=90`, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
@@ -217,17 +217,18 @@ Per ulteriori informazioni su ciò che hai appena letto, utilizza i materiali ri
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
 * [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+-->
 
 _Esercitazioni Dynamic Media_
 
-* [Utilizza Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
-* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/it?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
+* [Utilizza Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
 
 _Visualizzatori Dynamic Media_
 

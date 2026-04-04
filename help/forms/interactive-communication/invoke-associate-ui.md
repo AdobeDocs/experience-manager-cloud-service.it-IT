@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -25,13 +25,13 @@ Prima di integrare l’interfaccia utente Associa all’applicazione, assicurati
 
 - Comunicazione interattiva creata e pubblicata
 - Browser con supporto per popup abilitato
-- Associa [&#x200B; utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
+- Associa [ utenti deve far parte del gruppo forms-associates](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Autenticazione configurata utilizzando qualsiasi meccanismo di autenticazione [supportato da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (ad esempio, gestori di autenticazione SAML 2.0, OAuth o personalizzati)
 
 >[!NOTE]
 >
 >- Questo articolo illustra la configurazione dell&#39;autenticazione utilizzando SAML 2.0 con [Microsoft Entra ID (Azure AD) come provider di identità](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
+>- Per Associate UI (Interfaccia utente associata), sono necessarie ulteriori configurazioni SAML oltre alla configurazione standard descritta nell&#39;articolo [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) (Autenticazione SAML 2.0). Per ulteriori informazioni, vedere la sezione [Configurazioni SAML aggiuntive per l&#39;interfaccia utente associata](#additional-saml-configurations-for-associate-ui).
 
 ### Configurazioni SAML aggiuntive per l’interfaccia utente associata
 
@@ -456,13 +456,15 @@ Immetti i dati e l’interfaccia utente Associa verrà visualizzata come mostrat
 > Se la finestra non si apre, verificare che il browser consenta la visualizzazione di popup per questo sito.
 
 
-<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+<!--
+  **Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.
+  -->
 
 ## Risoluzione dei problemi
 
@@ -503,7 +505,8 @@ Immetti i dati e l’interfaccia utente Associa verrà visualizzata come mostrat
 - Per la produzione: specifica l’URL di origine esatto dell’applicazione
 - Assicurati che le impostazioni CORS dell’istanza di pubblicazione consentano il dominio dell’applicazione
 
-<!--## Best Practices
+<!--
+## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -512,7 +515,8 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+-->
 
 ## Consulta anche
 

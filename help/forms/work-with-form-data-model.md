@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -110,7 +110,7 @@ Per creare una proprietà figlio:
 
 1. Seleziona **[!UICONTROL Fine]** per salvare la proprietà figlio e seleziona **[!UICONTROL Salva]** per salvare il modello dati del modulo. La proprietà figlio viene ora aggiunta all’oggetto modello dati.
 
-Dopo aver creato gli oggetti e le proprietà del modello dati, è possibile continuare a creare il Forms adattivo <!--and interactive communications--> in base al modello dati del modulo (FDM). Successivamente, quando saranno disponibili e configurate le origini dati, sarà possibile associare il modello dati del modulo (FDM) alle origini dati. Il binding viene aggiornato automaticamente nel Forms adattivo associato <!--and interactive communications-->. Per ulteriori informazioni sulla creazione di un Forms adattivo <!--and interactive communications--> tramite il modello dati modulo, vedere [Utilizzare il modello dati modulo](using-form-data-model.md).
+Dopo aver creato gli oggetti e le proprietà del modello dati, è possibile continuare a creare il Forms adattivo <!--and interactive communications--> in base al modello dati del modulo (FDM). Successivamente, quando saranno disponibili e configurate le origini dati, sarà possibile associare il modello dati del modulo (FDM) alle origini dati. Il binding viene aggiornato automaticamente in Adaptive Forms associato. Per ulteriori informazioni sulla creazione di un Forms adattivo utilizzando il modello dati modulo, vedere [Utilizzare il modello dati modulo](using-form-data-model.md).
 
 ### Associare oggetti e proprietà del modello dati {#bind-data-model-objects-and-properties}
 
@@ -197,7 +197,7 @@ Utilizza l’attributo request per recuperare le proprietà associate dall’ori
 
 1. Selezionare **[!UICONTROL Richiedi attributo]** dal menu a discesa **[!UICONTROL Associazione a]** e immettere il nome dell&#39;attributo nel campo **[!UICONTROL Valore associazione]**.
 
-1. Crea una [sovrapposizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=it#developing) per head.jsp. Per creare la sovrapposizione, aprire CRX DE e copiare il file `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Crea una [sovrapposizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing) per head.jsp. Per creare la sovrapposizione, aprire CRX DE e copiare il file `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

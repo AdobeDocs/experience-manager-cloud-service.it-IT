@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 64%
@@ -79,7 +79,8 @@ Puoi selezionare una o più risorse o cartelle o una combinazione di entrambe, e
 ## Controllo delle versioni di una risorsa {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 [!DNL Assets view] crea versioni delle risorse quando queste vengono caricate di nuovo dopo essere state aggiornate o modificate. Puoi visualizzare la cronologia delle versioni precedenti e, se necessario, ripristinare una versione delle risorse precedente come versione più recente. Le versioni delle risorse vengono create nei seguenti scenari:
 
@@ -117,13 +118,15 @@ Per visualizzare e confrontare le versioni:
 
    ![confronta le versioni della risorsa](/help/assets/assets/version-compare2.png)
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 Seleziona la versione più recente e fai clic su **[!UICONTROL Nuova versione]** per caricare una nuova copia della risorsa dal file system locale e creare una versione della risorsa.
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)

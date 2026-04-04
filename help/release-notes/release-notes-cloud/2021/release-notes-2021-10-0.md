@@ -4,10 +4,10 @@ description: Note sulla versione 2021.10.0 di [!DNL Adobe Experience Manager] as
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,8 @@ Dai un&#39;occhiata al video [Panoramica sulla versione di ottobre 2021](https:/
 
 * I tag avanzati vengono applicati automaticamente alle risorse utilizzando i microservizi per le risorse, anziché Smart Content Services. Il modello sottostante viene aggiornato per migliorare i risultati dei tag e ridurre i pregiudizi. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
@@ -91,7 +92,7 @@ Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DN
 
 ## Cloud Manager {#cloud-manager}
 
-Questa sezione illustra le note sulla versione 2021.10.0 di Cloud Manager AEM as a Cloud Service.
+Questa sezione illustra le note sulla versione di Cloud Manager in AEM as a Cloud Service 2021.10.0.
 
 ### Data di pubblicazione {#release-date-cm-nov}
 

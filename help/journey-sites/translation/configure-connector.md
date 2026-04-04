@@ -8,8 +8,8 @@ exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
-* Essere in grado di impostare la propria connessione al servizio di traduzione.
+* Come impostare la propria connessione al servizio di traduzione.
 
 Sviluppa questa conoscenza e continua il percorso sulla traduzione per AEM Sites, consultando ora il documento [Configurare le regole di traduzione](translation-rules.md) dove scoprirai come definire i contenuti da tradurre.
 
