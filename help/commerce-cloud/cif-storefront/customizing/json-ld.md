@@ -116,4 +116,4 @@ Gli attributi JSON+LD possono essere mappati su query GraphQL in AEM CIF, garant
 
 Questa mappatura assicura che lo script JSON+LD sia popolato dinamicamente in base ai dati del prodotto recuperati tramite query GraphQL.
 
-Per verificare la struttura JSON+LD, puoi utilizzare il test dei risultati avanzati di [ nella console di ricerca di Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Questo strumento fornisce un feedback dettagliato, indicando se gli attributi richiesti sono presenti o mancanti, e aiuta a garantire che i dati strutturati siano correttamente implementati.
+Per verificare la struttura JSON+LD, puoi utilizzare il test dei risultati avanzati di [&#x200B; nella console di ricerca di Google.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) Questo strumento fornisce un feedback dettagliato, indicando se gli attributi richiesti sono presenti o mancanti, e aiuta a garantire che i dati strutturati siano correttamente implementati.

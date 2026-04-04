@@ -42,7 +42,7 @@ Sì, è possibile migrare il codice personalizzato, il contenuto e le risorse da
    1. Apri il file index.html per visualizzare la documentazione di riferimento API.
 
 * **Dove è possibile trovare il riferimento API [!DNL JavaScript™] per i moduli adattivi?**
-È possibile scaricare la documentazione di riferimento API [!DNL JavaScript™] da [!DNL  Maven Central Repository]. Per scaricarla:
+È possibile scaricare la documentazione di riferimento API [!DNL JavaScript™] da [!DNL &#x200B; Maven Central Repository]. Per scaricarla:
    1. Apri [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Individua e apri la pagina contenente la versione più recente di [!DNL Experience Manager Forms] SDK.
    1. Fai clic sull’opzione Visualizza tutto per visualizzare tutti i file.

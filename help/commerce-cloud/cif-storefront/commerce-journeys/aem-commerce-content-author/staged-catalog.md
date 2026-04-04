@@ -68,7 +68,7 @@ Ora che hai completato questa parte del percorso dovresti:
 * comprendere i concetti di catalogo di prodotti in staging e contenuto con Launches
 * essere in grado di accedere ai dati del catalogo dei prodotti in staging tramite la cabina di comando e l’editor dei prodotti
 
-Ora puoi gestire [ esperienze prodotto.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Tuttavia, AEM Content e Commerce hanno molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
+Ora puoi gestire [&#x200B; esperienze prodotto.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) Tuttavia, AEM Content e Commerce hanno molte opzioni aggiuntive disponibili. Consulta alcune delle risorse aggiuntive disponibili nella [sezione Risorse aggiuntive](#additional-resources) per ulteriori informazioni sulle funzioni visualizzate in questo percorso.
 
 ## Risorse aggiuntive {#additional-resources}
 

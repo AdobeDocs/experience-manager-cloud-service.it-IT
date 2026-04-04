@@ -55,7 +55,7 @@ Per usare la miniatura nei video, segui la procedura indicata di seguito:
 
 1. Seleziona il video e fai clic sull&#39;icona Configura (*chiave inglese*) per aprire le proprietà del video.
 
-   ![Immagine della risorsa video selezionata con freccia rivolta verso l&#39;icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti ](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+   ![Immagine della risorsa video selezionata con freccia rivolta verso l&#39;icona Configura, rappresentata come una chiave inglese. sulla barra degli strumenti &#x200B;](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Viene visualizzata la finestra di dialogo **Video** in cui è possibile visualizzare la zona di rilascio **Miniatura**.
 

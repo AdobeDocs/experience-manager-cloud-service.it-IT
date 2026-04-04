@@ -29,7 +29,7 @@ Il marchio Venia ha recentemente iniziato a produrre alcuni prodotti utilizzando
 
 ## Prerequisiti {#prerequisites}
 
-Per completare questa esercitazione è necessario un ambiente di sviluppo locale. Questo ambiente include un’istanza in esecuzione di AEM configurata e connessa a un’istanza di Adobe Commerce. Rivedi i requisiti e i passaggi per [ la configurazione di uno sviluppo locale con AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md) Per seguire completamente l&#39;esercitazione, è necessario disporre dell&#39;autorizzazione per aggiungere [Attributi a un prodotto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+Per completare questa esercitazione è necessario un ambiente di sviluppo locale. Questo ambiente include un’istanza in esecuzione di AEM configurata e connessa a un’istanza di Adobe Commerce. Rivedi i requisiti e i passaggi per [&#x200B; la configurazione di uno sviluppo locale con AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md) Per seguire completamente l&#39;esercitazione, è necessario disporre dell&#39;autorizzazione per aggiungere [Attributi a un prodotto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
 Per eseguire gli esempi di codice e i tutorial è inoltre necessario GraphQL IDE, ad esempio [GraphiQL](https://github.com/graphql/graphiql) o un&#39;estensione del browser. Se installi un’estensione del browser, accertati che possa impostare le intestazioni della richiesta. In Google Chrome, _Altair GraphQL Client_ è un&#39;estensione in grado di eseguire il processo.
 
@@ -212,7 +212,7 @@ Utilizza [l&#39;IDE che preferisci](https://experienceleague.adobe.com/docs/expe
 
 1. Quindi, controllare `MyProductTeaserImpl.java` alle `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
-   Il pattern di delega [ per modelli Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) consente a `MyProductTeaserImpl` di fare riferimento al modello `ProductTeaser` tramite la proprietà `sling:resourceSuperType`:
+   Il pattern di delega [&#x200B; per modelli Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) consente a `MyProductTeaserImpl` di fare riferimento al modello `ProductTeaser` tramite la proprietà `sling:resourceSuperType`:
 
    ```java
    @Self

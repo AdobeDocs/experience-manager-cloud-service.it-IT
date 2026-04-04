@@ -62,7 +62,7 @@ Ora aggiungi un parametro di elaborazione dell’immagine alla fine dell’URL. 
 
 Viene generata una nuova rappresentazione dell’orologio. Un aspetto fondamentale di questo semplice esercizio di modifica della larghezza dell&#39;immagine è che l&#39;immagine visualizzata viene generata al 100% in modo dinamico.
 
-Modificare il valore della larghezza di `500` pixel in `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+Modificare il valore della larghezza di `500` pixel in `1000` pixel, quindi premere **[!UICONTROL Invio]**. [Prova](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
 Quando si preme **[!UICONTROL Invio]**, il browser torna al server immagini Dynamic Media. Genera una nuova rappresentazione dell’orologio, basata sul nuovo valore di larghezza appena inserito, quindi consegna la nuova immagine al browser e la memorizza in cache.
 
 Dynamic Media dispone di numerosi parametri di elaborazione delle immagini che puoi utilizzare per ottimizzare le risorse delle immagini nelle pagine web. Puoi [visualizzarne un elenco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
