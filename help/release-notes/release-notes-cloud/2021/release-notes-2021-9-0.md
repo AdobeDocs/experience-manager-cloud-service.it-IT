@@ -67,11 +67,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Novità in [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-* **Utilizzare i ruoli Adobe Sign in un modulo adattivo** - Adobe Sign per i livelli di servizio business ed enterprise consente di espandere facoltativamente i ruoli per i destinatari del contratto, oltre al solo firmatario, per soddisfare meglio i requisiti del flusso di lavoro. Ora puoi [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform), con Firmatario come ruolo predefinito.
+* **Utilizzare i ruoli Adobe Sign in un modulo adattivo** - Adobe Sign per i livelli di servizio business ed enterprise consente di espandere facoltativamente i ruoli per i destinatari del contratto, oltre al solo firmatario, per soddisfare meglio i requisiti del flusso di lavoro. Ora puoi [abilitare ogni destinatario dell&#39;accordo a configurare il proprio ruolo in un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=it#addsignerstoanadaptiveform), con Firmatario come ruolo predefinito.
 
 * **Analytics per Forms adattivo** - È ora possibile acquisire e monitorare il comportamento degli utenti finali tramite Adobe Analytics for Adaptive Forms per raccogliere informazioni approfondite sugli utenti finali. Consente di prendere decisioni informate basate sui dati per migliorare l’esperienza dell’utente finale.
 
-* **Connetti facilmente Adobe Experience Manager (AEM) Forms con Microsoft® Dynamics e Salesforce**: il servizio fornisce la configurazione dell&#39;origine dati predefinita e i modelli dati per Microsoft® Dynamics e Salesforce. Questo rende [più rapido e semplice per gli sviluppatori configurare Microsoft® Dynamics e Salesforce come origini dati per un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
+* **Connetti facilmente Adobe Experience Manager (AEM) Forms con Microsoft® Dynamics e Salesforce**: il servizio fornisce la configurazione dell&#39;origine dati predefinita e i modelli dati per Microsoft® Dynamics e Salesforce. Questo rende [più rapido e semplice per gli sviluppatori configurare Microsoft® Dynamics e Salesforce come origini dati per un modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=it).
 
 * **Firma elettronica di un modulo adattivo tramite DocuSign** - È possibile utilizzare DocuSign per firmare automaticamente un modulo adattivo. Il servizio fornisce un’azione di invio personalizzata per utilizzare DocuSign con un modulo adattivo. Puoi installare il pacchetto disponibile in Distribuzione di software per importare l’azione di invio.
 
@@ -115,10 +115,10 @@ Per registrarti al programma beta, puoi inviare un’e-mail all’indirizzo [!DN
 ### Novità {#what-is-new-screens}
 
 * Screens as a Cloud Service ora supporta il monitoraggio di base della riproduzione. Ora il lettore riporta diverse metriche di riproduzione per ciascun ping (30 secondi per impostazione predefinita). In base alle metriche, può rilevare vari casi limite (esperienza bloccata, schermata vuota, problemi di pianificazione e così via). Questa funzione consente al team di monitorare in remoto se un lettore riproduce correttamente il contenuto. Migliora la reattività a schermate vuote o esperienze bloccate sul campo e diminuisce il rischio di mostrare all’utente un’esperienza non funzionante.
-Per ulteriori dettagli, consulta [Monitoraggio della riproduzione di base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring).
+Per ulteriori dettagli, consulta [Monitoraggio della riproduzione di base](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=it#playback-monitoring).
 
 * Il supporto miniature per video è ora supportato in Screens as a Cloud Service. Un autore di contenuti può definire una miniatura per video in modo che l’immagine venga utilizzata come segnaposto e possa testare correttamente la riproduzione e il targeting del contenuto, mentre il video effettivo viene finalizzato dal team appropriato. L’immagine può essere utilizzata anche in caso di interruzione della riproduzione del video.
-Per ulteriori dettagli, consulta [Supporto miniature per video](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html).
+Per ulteriori dettagli, consulta [Supporto miniature per video](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=it).
 
 ### Correzioni di bug {#bug-fixes-screens}
 
@@ -185,7 +185,7 @@ La data di rilascio per Cloud Acceleration Manager è il 4 ottobre 2021.
 
 ### Novità {#what-is-new-cam}
 
-* Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un&#39;anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Vedere i passaggi 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+* Cloud Acceleration Manager ora consente agli utenti di visualizzare i rapporti BPA in un&#39;anteprima stampabile, che può essere stampata o stampata su PDF per facilitarne la condivisione. Vedere i passaggi 6 e 7 in [Utilizzo della scheda Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it#best-practices-analysis).
 
 ## Strumento di trasferimento contenuti {#content-transfer-tool}
 
@@ -195,7 +195,7 @@ La data di pubblicazione dello strumento Content Transfer v1.6.0 è il 4 ottobre
 
 ### Novità {#what-is-new-ctt}
 
-* È stata migliorata la mappatura degli utenti con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori dettagli, vedere [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool).
+* È stata migliorata la mappatura degli utenti con un’esperienza utente semplificata, incluse le seguenti funzioni elencate di seguito. Per ulteriori dettagli, vedere [Utilizzo dello strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=it#using-user-mapping-tool).
    * Verifica la connessione all’API User Management prima di eseguire la mappatura utente
    * Ignora gli errori e continua con l’attività Mappatura utenti
    * La mappatura degli utenti non ha più esito negativo se il token di accesso scade (dopo 24 ore). La mappatura utente può essere eseguita nuovamente dal punto in cui è stata interrotta l’ultima volta.

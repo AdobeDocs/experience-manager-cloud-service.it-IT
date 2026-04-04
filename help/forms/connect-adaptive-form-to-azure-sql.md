@@ -42,7 +42,7 @@ L’integrazione di Adaptive Forms con Azure SQL offre diversi vantaggi:
 
   ![Crea Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Abilita [Rete avanzata configurata utilizzando un IP in uscita dedicato](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) per il database Azure creato.
+* Abilita [Rete avanzata configurata utilizzando un IP in uscita dedicato](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) per il database Azure creato.
 
   >[!NOTE]
   >
@@ -74,7 +74,7 @@ Esempio: `portOrigin: 30433 → portDest: 1433`
 
    **Dove trovare queste informazioni?**
 
-   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Per istruzioni dettagliate su come individuare questi dettagli, consulta l&#39;articolo di Adobe Experience League &quot;[Accesso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=it#accessing-git)&quot;.
 
    Al termine del comando viene visualizzata una nuova cartella creata nella directory locale. Questa cartella prende il nome dall&#39;applicazione.
 
@@ -86,7 +86,7 @@ Includere la [dipendenza del driver SQL](https://central.sonatype.com/artifact/c
 
 >[!NOTE]
 >
-> Per includere la dipendenza SQL nel progetto, fare riferimento alla sezione [Dipendenze driver SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Per includere la dipendenza SQL nel progetto, fare riferimento alla sezione [Dipendenze driver SQL](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Passaggio 3: aggiunta della configurazione JDBC**
 

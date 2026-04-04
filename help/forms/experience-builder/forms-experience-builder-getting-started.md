@@ -75,7 +75,7 @@ Crea moduli utilizzando descrizioni in linguaggio naturale delle tue esigenze.
 
 Trasformare i documenti esistenti in moduli digitali interattivi.
 
-Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
+Prima di utilizzare questa opzione, carica il file PDF o un’immagine del modulo. PDF può essere un modulo AcroForm o un modulo PDF basato su XFA. Per [altri tipi di PDF forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), utilizzare l&#39;opzione [Prepara modulo](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) in Adobe Acrobat per convertirli in un AcroForm
 
 **Quando utilizzare:**
 

@@ -36,7 +36,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Configurazione {#configuration}
 
-1. Configurare più store e visualizzazioni store in base al modello descritto in [Siti Web, store e visualizzazioni di Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configurare più store e visualizzazioni store in base al modello descritto in [Siti Web, store e visualizzazioni di Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
 
 1. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
@@ -62,7 +62,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Siti Web, store e visualizzazioni di Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it)
 * [Componenti core CIF di AEM: configurazione di più store o siti](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Utilizzo di Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=it)
 * [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-cloud/administering/msm/overview.md)
