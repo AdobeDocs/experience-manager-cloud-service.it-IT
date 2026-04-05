@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Test funzionali"
->abstract="Scopri i tre diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service. I test garantiscono la qualità e l’affidabilità del codice."
+>abstract="Scopri i tre diversi tipi di test funzionali integrati nel processo di implementazione di AEM as a Cloud Service. I test garantiscono la qualità e l’affidabilità del codice."
 
 Scopri i gate di qualità disponibili nel [processo di distribuzione di AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) e i vari tipi di test funzionali incorporati. Scopri come contribuire e ottimizzarne l’utilizzo nel quadro di una strategia di test completa.
 
@@ -58,7 +58,7 @@ Il diagramma seguente fornisce una visualizzazione dettagliata dei gate di quali
 
 Ti invitiamo a fornire gli unit test per l’applicazione AEM, su cui si basano tutte le strategie di test. Hanno lo scopo di essere veloci e frequenti e di fornire feedback rapidi e tempestivi. Sono strettamente integrati nei flussi di lavoro per sviluppatori, nel tuo CI/CD e nelle pipeline di implementazione di AEM Cloud Service.
 
-Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Per un esempio di unit test per AEM e una guida introduttiva, consulta il modulo [core dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests).
+Vengono implementati utilizzando JUnit e vengono eseguiti con Maven. Per un esempio di unit test per AEM e una guida introduttiva, consulta il modulo [core dell&#39;Archetipo progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests).
 
 ### Qualità del codice
 
