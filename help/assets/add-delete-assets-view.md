@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -32,7 +32,7 @@ Dopo aver selezionato i file, viene visualizzata una finestra di dialogo di conf
 
 Una volta messi in coda tutti i file, fai clic su **[!UICONTROL Carica]**.
 
-![Caricare file e cartelle](assets/upload-browse-files-folders.png)
+![Caricare file e cartelle](assets/upload-files.png)
 
 *Figura: Prima di caricare le risorse selezionate, si possono aggiungere o rimuovere le risorse dalla coda.*
 
@@ -48,13 +48,13 @@ Per tenere traccia dell’avanzamento del caricamento, fai clic sull’opzione *
 
 Per visualizzare un sottoinsieme di risorse in base all’avanzamento o allo stato del caricamento, utilizza il filtro nella barra laterale **[!UICONTROL Avanzamento caricamento]**. I vari filtri consentono di visualizzare tutte le risorse; i caricamenti completati, in corso e in pausa; e le risorse in coda da caricare, duplicate e il cui caricamento non è riuscito.
 
-![Filtrare l’avanzamento del caricamento in base allo stato](assets/filter-upload-progress.png)
+![Filtrare l’avanzamento del caricamento in base allo stato](assets/filter-progress.png)
 
 *Figura: Filtrare le risorse da caricare in base allo stato o all’avanzamento del caricamento.*
 
 Non appena caricate, le risorse vengono elaborate da [!DNL Assets view] per generare miniature ed elaborare i metadati. Per molte risorse, l’elaborazione richiede un po’ di tempo. Se non vedi una miniatura e sulla miniatura segnaposto compare un messaggio di elaborazione, controlla nuovamente la cartella dopo qualche minuto. Durante l’elaborazione, [!DNL Assets view] genera anche le rappresentazioni, aggiunge tag avanzati e indicizza i dettagli della risorsa che verranno usati per le ricerche.
 
-![Le risorse vengono elaborate al momento del caricamento e nelle relative sezioni viene visualizzata la dicitura Elaborazione in corso](assets/upload-processing.png)
+![Le risorse vengono elaborate al momento del caricamento e nelle relative sezioni viene visualizzata la dicitura Elaborazione in corso](assets/upload-process.png)
 
 *Figura: Sezioni delle risorse caricate, con la dicitura “Elaborazione in corso”.*
 
@@ -70,17 +70,17 @@ Non appena caricate, le risorse vengono elaborate da [!DNL Assets view] per gene
 
 Se il caricamento di una risorsa supportata non riesce per qualche motivo, fai clic su **[!UICONTROL Riprova]** nel riquadro [!UICONTROL Avanzamento caricamento].
 
-![Riprovare un caricamento non riuscito](assets/upload-retry.png)
+![Riprovare un caricamento non riuscito](assets/upload-failed.png)
 
 *Figura: Riprovare il caricamento di un file supportato che per qualche motivo non riesce.*
 
 Se tenti di caricare risorse duplicate, queste non vengono caricate finché non confermi esplicitamente il caricamento. Inizialmente, le risorse duplicate vengono contrassegnate come caricamenti non riusciti. Per risolvere il problema, puoi semplicemente creare una versione, eliminare e sostituire la risorsa esistente o creare una copia duplicata rinominando la risorsa. Puoi risolvere tali errori una risorsa alla volta oppure in blocco, per tutti i duplicati non riusciti.
 
-![Gestire le risorse duplicate una alla volta](assets/uploads-manage-duplicates.png)
+![Gestire le risorse duplicate una alla volta](assets/duplicate-new.png)
 
 *Figura: Per le risorse duplicate che non possono essere caricate per impostazione predefinita, risolvere il problema una risorsa alla volta.*
 
-![Gestire in blocco tutti i caricamenti non riusciti](assets/upload-progress-manage-failed-uploads.png)
+![Gestire in blocco tutti i caricamenti non riusciti](assets/manage-duplicate.png)
 
 *Figura: Per le risorse duplicate che non possono essere caricate per impostazione predefinita, risolvi i problemi di tutte le risorse contemporaneamente.*
 
@@ -98,7 +98,7 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * Utilizza l’opzione disponibile sulla miniatura di una risorsa o cartella.
 
-  ![Opzioni sulla miniatura per gestire una risorsa](assets/options-on-thumbnail.png)
+  ![Opzioni sulla miniatura per gestire una risorsa](assets/delete-new.png)
 
   *Figura: Le azioni per file e cartelle sono disponibili nella sezione della risorsa o cartella.*
 
@@ -112,4 +112,4 @@ Gli utenti possono eliminare singole risorse o cartelle che non sono più necess
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)

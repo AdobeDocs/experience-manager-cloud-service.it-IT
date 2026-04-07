@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 98%
@@ -199,7 +199,7 @@ La vista Assets consente di importare tag bloccati da un’origine dati (CSV). P
 1. Scegli il file CSV dal tuo dispositivo. Fai clic su **[!UICONTROL Seleziona un file]** per passare al file dal dispositivo. In alternativa, puoi trascinare e rilasciare il file CSV dal dispositivo.
 1. Fai clic su **[!UICONTROL Carica]**. I tag dal file CSV vengono inseriti nell’elenco dei tag bloccati.
 
-   ![Importa elenco dei tag bloccati](assets/import-blocked-tags.png)
+   ![Importa elenco dei tag bloccati](assets/import-csv-new.png)
 
 Per scaricare un modello di tag bloccati, effettua le seguenti operazioni:
 
