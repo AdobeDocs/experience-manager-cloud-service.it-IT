@@ -6,9 +6,9 @@ role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 33cc6893228be84941f894cf1f9713205d96c912
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3284'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 
@@ -46,7 +46,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -88,7 +88,7 @@ Quando l&#39;opzione **[!UICONTROL Quando il modulo copre l&#39;intera larghezza
 
 Aggiungi le **librerie client Customheaderlibs** e **Customfooterlibs** alla pagina AEM Sites utilizzando la pipeline di distribuzione. Per aggiungere le librerie client:
 
-1. Accedi e clona l&#39;[archivio Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=it).
+1. Accedi e clona l&#39;[archivio Git AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
 2. Apri la cartella dell’archivio Git di AEM Cloud Service in un editor di testo del piano. Ad esempio, Microsoft® Visual Code.
 3. Aprire il file `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` e aggiungere il codice seguente al file:
 
@@ -126,7 +126,7 @@ Aggiungi le **librerie client Customheaderlibs** e **Customfooterlibs** alla pag
        </sly> 
    ```
 
-7. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=it) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
+7. [Esegui la pipeline di distribuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) per distribuire le librerie client nell&#39;ambiente AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -279,16 +279,16 @@ Un frame in linea (iframe) è un elemento di HTML che carica un modulo adattivo 
 
    * Se la casella di controllo **[!UICONTROL Modulo occupa l&#39;intera larghezza della cornice]** è selezionata, un modulo adattivo occupa l&#39;intera larghezza del contenitore in cui viene inserito. In questo caso, non viene utilizzato un iframe per eseguire il rendering del modulo. Il layout e il design di un modulo adattivo si adattano a coprire l’intera larghezza del contenitore, rendendolo reattivo e in grado di adattarsi a diverse dimensioni dello schermo. Questa opzione consente di incorporare più Forms adattivi all’interno di una pagina AEM Sites.
 
-         >[ !NOTA]
-         >
-         > Per incorporare più moduli in una pagina AEM Sites, seleziona **[!UICONTROL Il modulo occupa l&#39;intera larghezza della casella di controllo frame]**.
-     
+     >[!NOTE]
+     >
+     > Per incorporare più moduli in una pagina AEM Sites, selezionare **[!UICONTROL La casella di controllo Campo modulo copre l&#39;intera larghezza del frame]**.
+
    * Se la casella di controllo **[!UICONTROL Modulo copre l&#39;intera larghezza del frame]** non è selezionata, un modulo adattivo non copre l&#39;intera larghezza del contenitore. Viene invece utilizzato un iframe per eseguire il rendering del modulo, che non può essere esteso oltre una larghezza specifica. Questo approccio è utile quando un modulo adattivo ha limiti definiti e deve coesistere con altri componenti AEM adiacenti all’interno del contenitore. Se questa opzione non è selezionata, è possibile incorporare un solo Forms adattivo nella pagina AEM Sites senza un iframe.
 
-         >[!NOTE]
-         >
-         > La pagina AEM Sites supporta un solo modulo adattivo per esistere senza un iframe. Per aggiungere altro Forms adattivo utilizzando il componente **[!UICONTROL Forms adattivo - Incorpora]**, seleziona **[!UICONTROL Il modulo copre l&#39;intera larghezza del frame]**.
-     
+     >[!NOTE]
+     >
+     > La pagina di AEM Sites supporta un solo modulo adattivo per esistere senza un iframe. Per aggiungere altro Forms adattivo utilizzando il componente **[!UICONTROL Forms adattivo - Incorpora]**, seleziona **[!UICONTROL Il modulo copre l&#39;intera larghezza del frame]**.
+
 * **Altezza**: specificare l&#39;altezza del contenitore. Lascia vuoto questo campo per ridimensionare automaticamente il contenitore.
 * **Libreria client CSS**: specificare il percorso di una libreria client CSS.
 
@@ -303,7 +303,7 @@ In AEM Sites page, you can add an Adaptive Form using:
 
 ## Prerequisites {#prerequisites}
 
- To embed an Adaptive Form in an AEM Sites page that uses an editable template, ensure that the AEM Form component is configured as an allowed component in the associated template. 
+To embed an Adaptive Form in an AEM Sites page that uses an editable template, ensure that the AEM Form component is configured as an allowed component in the associated template. 
 
 In case **Adaptive Forms - Embed component** is not visible in the **Component browser panel** of AEM sites page, perform the following steps as illustrated in the video.
 
@@ -318,9 +318,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
 1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
 1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed] component on the page. Alternatively, you can search for an Adaptive Form in the Assets browser and drag-drop it onto the Sites page. You can add a new Adaptive Form or embed an existing Adaptive Form. 
 
-   >[!NOTE]
-   >
-   >Multiple Adaptive Forms - Embed components on a page are not supported.
+    >[!NOTE]
+    >
+    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
 1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
@@ -330,11 +330,11 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
     **Asset Type:** Select the type of asset to embed. 
     * **Asset Path**: Browse and select the Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
     * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
-        * Show
+       * Show
 
-        * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
-        * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
-           * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the [!UICONTROL Adaptive Forms - Embed] component, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
+       * **Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
+       * **Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
+          * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the [!UICONTROL Adaptive Forms - Embed] component, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
     * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
     * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
     * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
