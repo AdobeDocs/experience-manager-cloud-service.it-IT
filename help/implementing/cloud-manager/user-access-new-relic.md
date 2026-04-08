@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
+source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 37%
+source-wordcount: '2274'
+ht-degree: 26%
 
 ---
 
@@ -34,6 +34,8 @@ New Relic One APM per AEM as a Cloud Service presenta numerose funzioni.
 * Agente New Relic One APM instrumentato che mostra le chiamate al metodo esatto con i numeri di riga, incluse le dipendenze e i database esterni.
 
 * Ottimizzazione olistica delle prestazioni attraverso la combinazione di metriche chiave provenienti dal monitoraggio a livello di infrastruttura e dal monitoraggio delle applicazioni (Adobe Experience Manager).
+
+* Tracciamenti automatici delle modifiche per le esecuzioni della pipeline Cloud Manager, gli aggiornamenti AEM e le operazioni di ripristino del codice. Questi tracker consentono ai team di correlare le implementazioni con le modifiche delle prestazioni dell’applicazione direttamente in New Relic One.
 
 ## Attiva il tuo account secondario New Relic One {#activate-sub-account}
 
@@ -79,7 +81,7 @@ Per definire gli utenti dell’account secondario New Relic One associato al pro
 
    ![Aggiungi utenti](assets/newrelic-add-users.png)
 
-1. Per rimuovere gli utenti di New Relic One, fai clic sul pulsante Elimina all’estrema destra della riga dell’utente.
+1. Per rimuovere un utente di New Relic One, fai clic sul pulsante Elimina all’estremità destra della riga che rappresenta l’utente.
 
 1. Per creare gli utenti, fai clic su **Salva**.
 
@@ -87,11 +89,11 @@ Una volta definiti gli utenti, New Relic invia un’e-mail di conferma a tutti c
 
 >[!NOTE]
 >
->Se gestisci gli utenti di New Relic One, devi anche aggiungere te stesso o te stessa come utente per poter accedere a te stesso. Avere il ruolo di **Proprietario business** o **Responsabile dell’implementazione** non è sufficiente per avere accesso a New Relic One. Devi creare te stesso o te stessa come utente.
+>Se gestisci gli utenti di New Relic One, devi aggiungere anche te stesso o te stessa come utente. Il fatto di essere **Proprietario business** o **Responsabile dell&#39;implementazione** non è sufficiente per avere accesso a New Relic One.
 
 ## Attivare l’account utente di New Relic One {#activate-user-account}
 
-Dopo aver creato un account utente di New Relic One come descritto nella sezione precedente, [Gestione degli utenti di New Relic One](#manage-users), New Relic invia a tali utenti un’e-mail di conferma all’indirizzo fornito. Per utilizzare gli account, gli utenti devono prima attivarli con New Relic reimpostando la password.
+Dopo aver creato un account utente di New Relic One, come descritto in [Gestione utenti di New Relic One](#manage-users), New Relic invia a tali utenti un&#39;e-mail di conferma all&#39;indirizzo fornito. Per utilizzare gli account, gli utenti devono prima attivarli con New Relic reimpostando la password.
 
 **Per attivare l&#39;account utente di New Relic One:**
 
@@ -129,7 +131,7 @@ Dopo aver attivato [l&#39;account New Relic](#activate-account), puoi accedere a
 
 **Per accedere direttamente a New Relic One:**
 
-1. Accedi alla pagina di accesso di New Relic all’indirizzo [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
+1. Vai alla [pagina di accesso di New Relic](https://login.newrelic.com/login).
 
 1. Accedi a New Relic One.
 
@@ -140,6 +142,66 @@ Se ti viene richiesto di verificare l’e-mail durante l’accesso a New Relic O
 Se non verifichi il tuo indirizzo e-mail, New Relic tenta di accedere con il più recente record utente creato e associato al tuo indirizzo e-mail. Per evitare la verifica dell’e-mail durante ogni tentativo di accesso, fai clic sula casella di controllo **Ricordami** nella schermata di accesso.
 
 Per ulteriore assistenza, apri un ticket di supporto tramite il [Portale di supporto AEM](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+
+## Utilizzare il rilevamento delle modifiche {#change-tracker}
+
+Cloud Manager invia automaticamente i tracker delle modifiche a New Relic One ogni volta che vengono completate le esecuzioni della pipeline, gli aggiornamenti di AEM e il ripristino del codice supportati. Questi tracker vengono visualizzati come eventi di modifica nella visualizzazione **Tracciamento delle modifiche** di New Relic, consentendo al team di correlare le distribuzioni con variazioni nelle prestazioni dell&#39;applicazione, nelle percentuali di errore e nella velocità effettiva.
+
+<!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
+
+### Pipeline e flussi supportati {#supported-pipelines}
+
+Le seguenti pipeline di Cloud Manager e gli ultimi due tipi di flusso generano rilevatori di modifiche in New Relic One:
+
+| Tipo di pipeline/flusso | Descrizione |
+|---|---|
+| **Full stack (distribuzione CI_CD)** | Esecuzioni di pipeline full stack. La traccia include il nome della pipeline e l’ID di esecuzione. |
+| **Configurazione livello Web** | Esecuzioni della pipeline di configurazione a livello web. La traccia include il nome della pipeline e l’ID di esecuzione. |
+| **Front-end** | Esecuzioni della pipeline front-end. La traccia include il nome della pipeline e l’ID di esecuzione. |
+| **Configurazione** | Esecuzioni della pipeline di configurazione. La traccia include il nome della pipeline e l’ID di esecuzione. |
+| **Aggiornamento AEM** | Aggiornamenti della versione di AEM. Ad esempio, dalla versione {} alla versione {}. I tracciatori vengono creati al completamento dell’evento di modifica dell’ambiente. |
+| **Ripristina codice** | Il codice ripristina le operazioni da un repository e un ramo specifici. |
+
+>[!NOTE]
+>
+>I tracciamenti delle modifiche sono attualmente supportati solo per gli ambienti Skyline. Le pipeline che non rientrano nell’ambito di applicazione, come le pipeline di espansione e le pipeline dei service pack, non generano tracciatori.
+
+### Visualizzare i tracciamenti delle modifiche in New Relic One {#view-change-trackers}
+
+Al termine dell’esecuzione di una pipeline supportata, puoi visualizzare il tracker delle modifiche corrispondente in New Relic One.
+
+**Per visualizzare i rilevatori delle modifiche in New Relic One:**
+
+1. [Accedi a New Relic One](#accessing-new-relic) tramite Cloud Manager o direttamente.
+1. Passa a **APM &amp; Services** e seleziona l&#39;applicazione per l&#39;ambiente pertinente.
+1. Nella pagina di riepilogo dell&#39;applicazione cercare gli indicatori di rilevamento delle modifiche nel grafico. Passa il puntatore del mouse su un tracciatore per visualizzare i dettagli della distribuzione.
+
+   ![Indicatori di rilevamento modifiche nel grafico temporale transazioni Web](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
+
+1. Fare clic su un evento di modifica nella tabella per aprire una vista dettagliata.
+
+   ![Pannello Attributi di distribuzione con URL deepLink evidenziato](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Visualizzazione dettagliata di un evento di modifica.</i>
+
+   Il pannello **Dettagli modifica** a destra mostra, tra l&#39;altro, l&#39;entità, la marca temporale, l&#39;epoca, la categoria, l&#39;ID distribuzione e il tipo di API.
+
+   Per ogni rilevamento modifiche inviato da Cloud Manager a New Relic One, il pannello **Attributi di distribuzione** in basso a destra mostra i seguenti attributi:
+
+   | Attributo | Descrizione |
+   |---|---|
+   | **versione** | Una stringa di descrizione che include il nome della pipeline e l’ID di esecuzione. |
+   | **changelog** | Riservato per uso futuro. |
+   | **commit** | Riservato per uso futuro. |
+   | **collegamento profondo** | Fai clic sull’URL per collegarti nuovamente alla pagina di esecuzione della pipeline in Cloud Manager. |
+
+1. Per visualizzare un elenco completo dei rilevatori delle modifiche, nella barra laterale a sinistra, in **Eventi**, fare clic su **Rilevamento modifiche**.
+
+   La tabella **Eventi di modifica** mostra ogni distribuzione con la relativa marca temporale e descrizione della versione.
+
+   ![Opzione di rilevamento delle modifiche con la tabella degli eventi di modifica visualizzata](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+
+>[!TIP]
+>
+>Utilizza i rilevatori di modifiche insieme agli indicatori di prestazioni di New Relic One, ad esempio **Tempo di risposta** e **Throughput**. Questi indicatori consentono di identificare se una particolare distribuzione ha introdotto regressioni o miglioramenti delle prestazioni. Puoi confrontare le metriche precedenti e successive a una distribuzione direttamente nella pagina dei dettagli dell’evento di modifica.
 
 ## Risoluzione dei problemi di accesso degli utenti di New Relic One {#troubleshooting}
 
