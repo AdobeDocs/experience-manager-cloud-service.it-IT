@@ -4,7 +4,7 @@ description: Scopri come distribuire i progetti Cloud Manager utilizzando Edge D
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 68%
@@ -48,7 +48,7 @@ Le moderne esperienze web richiedono prestazioni elevate, ma molte organizzazion
 
 Queste funzionalità consentono alle organizzazioni di adottare la distribuzione moderna in modo incrementale, senza sacrificare i flussi di lavoro esistenti.
 
-### Opzioni di authoring per i siti Edge Delivery
+### Opzioni di authoring per i siti Edge Delivery {#authoring-options-eds}
 
 Quando crei un sito Edge Delivery in Cloud Manager, puoi scegliere l’approccio di authoring preferito:
 
@@ -57,7 +57,7 @@ Quando crei un sito Edge Delivery in Cloud Manager, puoi scegliere l’approccio
 
 Le organizzazioni possono scegliere tra questi approcci o utilizzarli entrambi in modo incrementale, a seconda delle preferenze del flusso di lavoro. Consulta [Crea il tuo primo sito Edge Delivery con un clic](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
-### Livello di pubblicazione flessibile
+### Livello di pubblicazione flessibile {#flexible-publish-tier}
 
 Cloud Manager consente di configurare se è stato eseguito il provisioning di un livello di pubblicazione per gli ambienti del programma. Non tutte le architetture richiedono un livello di pubblicazione come mostrato nella tabella seguente:
 
@@ -83,7 +83,7 @@ Se disponi di una licenza Edge Delivery Services (EDS), puoi utilizzare una [ret
 In alternativa, se scegli di utilizzare la rete CDN (ovvero una rete CDN non gestita da Adobe), indipendentemente dalle licenze Edge Delivery Services, devi configurarla sulla piattaforma `aem.live`. Consulta [Configurazione CDN BYO](https://www.aem.live/docs/byo-cdn-setup).
 
 
-## Informazioni sull’aggiunta di Edge Delivery Services a un programma di produzione o a un programma sandbox
+## Informazioni sull’aggiunta di Edge Delivery Services a un programma di produzione o a un programma sandbox {#about-adding-eds-to-prod-sandbox}
 
  Edge Delivery Services può essere aggiunto in diversi modi a seconda di come hai iniziato il progetto e di quando desideri creare il sito.
 
@@ -123,7 +123,7 @@ L’**elenco attività di Edge Delivery** in Cloud Manager è un elenco di contr
 | 8 | Configurare la convalida push | Consulta [Configurare la convalida push per un sito Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Pubblicazione | Consulta [Elenco di controllo per la pubblicazione](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441569?captions=ita&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrare un ticket di assistenza {#eds-support-ticket}
 
