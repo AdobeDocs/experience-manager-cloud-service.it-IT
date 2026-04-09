@@ -4,10 +4,10 @@ description: Scopri i diversi eventi inviati dall’editor universale che puoi u
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -229,6 +229,39 @@ Il payload è vuoto per questo evento.
 {
     details: {}
 }
+```
+
+### e&amp;due punti;navigare {#navigate}
+
+La libreria CORS di Universal Editor (`@aem-sites/universal-editor-cors`) invia un evento `aue:navigate` annullabile prima di inoltrare la navigazione alla shell di Universal Editor.
+
+Il payload è l’URL della destinazione di navigazione.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+Questo evento consente agli script di pagina di:
+
+* **Modificare** l&#39;URL di navigazione (ad esempio, aggiungere l&#39;estensione `.html`) modificando `event.detail.href`.
+* **Annulla** navigazione interamente tramite `event.preventDefault()`.
+
+Esempio:
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## Listener eventi di fallback {#fallback-listeners}
