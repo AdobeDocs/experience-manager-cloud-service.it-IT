@@ -5,9 +5,9 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1198'
 ht-degree: 5%
 
 ---
@@ -145,9 +145,6 @@ Per modificare un modulo di metadati esistente, effettua le seguenti operazioni:
 
    ![Output modulo metadati a cascata](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->Per accedere in anteprima ai metadati a cascata nell&#39;account Assets View, [crea e invia un caso di assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
 
 ## Passaggi successivi {#next-steps}
 
@@ -157,4 +154,4 @@ Per modificare un modulo di metadati esistente, effettua le seguenti operazioni:
 
 * Fornisci feedback alla documentazione utilizzando [!UICONTROL Modifica questa pagina] ![modifica la pagina](assets/do-not-localize/edit-page.png) o [!UICONTROL Segnala un problema] ![crea un problema GitHub](assets/do-not-localize/github-issue.png) disponibile sulla barra laterale destra
 
-* Contatta il [Servizio clienti](https://experienceleague.adobe.com/it?support-solution=General&lang=it#support)
+* Contatta il [Servizio clienti](https://experienceleague.adobe.com/?support-solution=General&lang=it#support)
