@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
+source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 22%
@@ -185,7 +185,7 @@ Al termine dell’esecuzione di una pipeline supportata, puoi visualizzare il tr
 
    ![Indicatori di rilevamento modifiche nel grafico temporale transazioni Web](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. Fare clic su un evento di modifica nella tabella per aprire una vista dettagliata.
+1. Fare clic su un evento di modifica nel grafico per aprire una visualizzazione dettagliata.
 
    ![Pannello Attributi di distribuzione con URL deepLink evidenziato](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Visualizzazione dettagliata di un evento di modifica.</i>
 
