@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione 2026.04.02 dell’editor universale
-description: Queste sono le note sulla versione 2026.04.02 dell’editor universale.
+title: Note sulla versione 2026.04.09 dell’editor universale
+description: Queste sono le note sulla versione 2026.04.09 dell’editor universale.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 60%
+source-wordcount: '138'
+ht-degree: 48%
 
 ---
 
 
-# Note sulla versione 2026.04.02 dell’editor universale {#release-notes}
+# Note sulla versione 2026.04.09 dell’editor universale {#release-notes}
 
-Queste sono le note sulla versione del 2 aprile 2026 di Universal Editor.
+Queste sono le note sulla versione del 9 aprile 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,8 +26,6 @@ Queste sono le note sulla versione del 2 aprile 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* [Alla barra degli strumenti dell&#39;editor Rich Text è stata aggiunta un&#39;opzione configurabile](/help/implementing/universal-editor/configure-rte.md#special-characters) per [aggiungere caratteri speciali](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options).
-
-## Altri miglioramenti {#other-improvements}
-
-* I campi tag non vengono più restituiti in modo errato come campi multipli dall’adattatore OpenAPI.
+* [L&#39;opzione Aggiungi immagine nella barra degli strumenti dell&#39;editor Rich Text](/help/implementing/universal-editor/configure-rte.md#image) è ora supportata per [progetti che creano e mantengono contenuti in AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* [Il pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) è ora comprimibile quando si torna dall&#39;editor alla [schermata iniziale.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+   * Per utilizzare questa funzione, contatta l’Assistenza clienti di Adobe.

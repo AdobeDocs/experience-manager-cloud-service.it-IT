@@ -4,9 +4,9 @@ description: Queste sono le note sulla versione di anteprima di Universal Editor
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: 95c52db6257f6141fb2991ae84a1c73278cfc062
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Note sulla versione di anteprima di Universal Editor {#preview}
 
-Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 9 aprile 2026.
+Queste sono le note sulla versione per la **versione di anteprima** di Universal Editor. Queste funzionalità sono attualmente disponibili nell&#39;**ambiente di anteprima** dell&#39;editor universale. Il rilascio di queste funzioni è pianificato per il 30 aprile 2026.
 
 Queste note sulla versione di **preview** sono fornite per comodità, in modo da sapere quali modifiche all&#39;editor universale sono in arrivo e puoi testarle [passando alla versione di anteprima.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,5 +28,4 @@ Queste note sulla versione di **preview** sono fornite per comodità, in modo da
 
 ## Prossime funzionalità {#upcoming-features}
 
-* AgentBridge è stato introdotto per l&#39;integrazione di AI Assistant e Universal Editor.
-* [L&#39;opzione Aggiungi immagine nella barra degli strumenti dell&#39;editor Rich Text](/help/implementing/universal-editor/configure-rte.md#image) è ora supportata per [progetti che creano e mantengono contenuti in AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* È stato risolto un problema a causa del quale [il badge di un elemento modificabile](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) nascondeva l&#39;elemento dietro di esso in alcune situazioni.

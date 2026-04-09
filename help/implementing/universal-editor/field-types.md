@@ -4,10 +4,10 @@ description: Scopri i campi e i tipi di componenti che l’editor universale pu�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -623,7 +623,13 @@ Un tipo di componente a selezione multipla presenta più elementi da selezionare
 
 #### Numero {#number}
 
-Un tipo di componente numero consente di immettere un numero. Offre tipi di convalida aggiuntivi.
+Un tipo di componente numero consente di immettere un numero. Offre una configurazione aggiuntiva.
+
+| Configurazione | Tipo di valore | Descrizione | Obbligatorio |
+|---|---|---|---|
+| `valueFormat` | `string` | Il tipo di numero da archiviare può essere `long` (impostazione predefinita) o `double`. | No |
+
+Offre inoltre ulteriori tipi di convalida.
 
 | Tipo di convalida | Tipo di valore | Descrizione | Obbligatorio |
 |---|---|---|---|
