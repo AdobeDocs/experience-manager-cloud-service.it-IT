@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 22%
@@ -86,7 +86,7 @@ Puoi definire gli utenti del tuo account secondario New Relic One associato al p
    * Immettere il nome e il cognome dell&#39;utente da aggiungere
    * Immetti l&#39;indirizzo e-mail associato
    * Fai clic sull&#39;icona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aggiungi**. Ripeti questo passaggio per ogni utente che desideri aggiungere.
-   * Fai clic sull&#39;icona ![Elimina](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) per rimuovere un utente.
+   * Fai clic sull&#39;icona ![Chiudi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) per rimuovere un utente.
 
    ![Aggiungi utenti](assets/newrelic-add-users.png)
 
