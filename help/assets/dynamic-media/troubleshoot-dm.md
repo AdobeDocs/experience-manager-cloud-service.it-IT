@@ -6,9 +6,9 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ In CRXDE Lite eseguire le operazioni seguenti:
 1. Passa alla cartella `<sync-folder>/_CSS/_OOTB` all&#39;interno della cartella di sincronizzazione di Dynamic Media (ad esempio, `/content/dam/_CSS/_OOTB`).
 1. Trovare il nodo metadati della risorsa problematica (ad esempio, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Verificare la presenza di `dam:scene7*` proprietà. Se la risorsa è stata sincronizzata e pubblicata correttamente, il set `dam:scene7FileStatus` è **PublishComplete**.
-1. Tentativo di richiedere il disegno direttamente da Dynamic Media concatenando i valori delle seguenti proprietà e stringhe letterali:
+1. Tentativo di richiedere il disegno direttamente da Dynamic Media concatenando i valori delle proprietà e delle stringhe letterali seguenti:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -220,6 +220,34 @@ Se le risorse di esempio o il disegno del predefinito visualizzatore non è stat
 1. In Cloud Services, passa alla pagina Configurazione di Dynamic Media, quindi apri la finestra di dialogo di configurazione per la configurazione di Dynamic Media - S7.
 1. Non apportare modifiche, selezionare **Salva**.
 Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
+
+### Problema: errore #2046 all’apertura della scheda Larghezza di banda e spazio di archiviazione {#error-2046-bandwidth-storage}
+
+**Eseguire il debug**
+
+![Errore #2046 nella scheda Larghezza di banda e spazio di archiviazione in Dynamic Media Classic](assets/2046-error.png)
+
+* Gli utenti ricevono un #2046 di errore all’apertura della scheda Larghezza di banda e spazio di archiviazione nell’applicazione desktop Dynamic Media Classic (Scene7).
+* Il problema è causato da un certificato di firma digitale scaduto in un RSL (Runtime Shared Library) memorizzato nella cache utilizzato dal framework Adobe AIR.
+* L&#39;errore si verifica durante la riconvalida del certificato locale.
+
+**Soluzione**
+
+Cancella la cache locale per forzare Adobe AIR a scaricare l’RSL (Runtime Shared Library) aggiornato.
+
+**macOS**
+
+1. Accedi a:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Eliminare tutti i file `.swz` e `.heu`.
+
+**Windows**
+
+1. Accedi a:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Elimina tutti i file nella cartella.
+
+Riavviare l&#39;applicazione dopo aver cancellato la cache.
 
 ### Problema: l’anteprima dell’immagine non viene caricata nella creazione dei predefiniti del visualizzatore {#image-preview-not-loading}
 
