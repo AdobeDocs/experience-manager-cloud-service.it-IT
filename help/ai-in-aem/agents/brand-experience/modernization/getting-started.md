@@ -4,9 +4,9 @@ description: Scopri i primi passaggi per diventare rapidamente produttivi con l�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,16 @@ Congratulazioni. I contenuti e gli stili migrati sono ora live nell’ambiente d
 ![Contenuto anteprima pubblicato](assets/published-preview.png)
 
 Se il codice è stato inviato a un ramo diverso da `main`, l&#39;anteprima aperta da Authoring documenti non mostrerà gli stili. Passa al ramo aggiornando l’URL dell’anteprima per visualizzare i tuoi stili.
+
+## Risoluzione dei problemi {#troubleshooting}
+
+### Inserire nell&#39;elenco Consentiti indirizzi IP {#allowlist-ip-addresses}
+
+Se il sito è protetto da un firewall o da restrizioni di accesso, è possibile inserire nell&#39;elenco Consentiti i seguenti indirizzi IP in modo che i servizi di back-end possano eseguire il raschiamento del sito:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## Risorse aggiuntive {#additional-resources}
 
