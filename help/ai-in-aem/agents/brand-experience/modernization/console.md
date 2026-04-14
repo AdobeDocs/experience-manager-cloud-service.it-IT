@@ -4,9 +4,9 @@ description: Guida di riferimento per l’interfaccia e le funzionalità della C
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,12 +157,18 @@ Quando esegui il push delle modifiche, devi avere le prime modifiche di staging 
 
 ## Visualizzazione impostazioni {#settings-view}
 
-La vista Impostazioni consente di gestire le impostazioni di base della console.
+La vista delle impostazioni consente di gestire le impostazioni di base della console ed è suddivisa nelle sezioni seguenti.
 
 ![Visualizzazione impostazioni](assets/settings-view.png)
 
+Se apporti una modifica a un valore in una sezione, fai clic su **Salva** per salvare le modifiche nella singola sezione.
+
 * **Il progetto** ti consente di visualizzare e modificare le impostazioni del progetto, ad esempio personalizzando l&#39;URL della libreria.
-* **Supporto** consente di richiedere assistenza al team di supporto AEM.
+   * **URL libreria** - Questo URL punta a un file library.json che definisce i blocchi disponibili, le relative varianti e il contenuto di esempio.
+   * **URL di base sito** - URL di origine del sito Web di cui si sta eseguendo la migrazione
+* **Autorizzazioni agente** - Consenti all&#39;agente di accedere alle opzioni di configurazione
+   * **Consenti a LLM di accedere ad admin.hlx.page per conto mio** - Se abilitato, l&#39;assistente AI può recuperare le configurazioni del sito e i metadati da Adobe Experience Manager utilizzando le credenziali IMS.
+   * **Token IMS personalizzato** - Puoi fornire un token IMS personalizzato da utilizzare al posto del token di sessione predefinito.
 * **Credenziali** consente di specificare un token di accesso personale per Figma in modo che la console [possa accedere ai blocchi di progettazione per il progetto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * Il token richiede i seguenti ambiti di sola lettura:
       * `file_content:read`
@@ -173,4 +179,7 @@ La vista Impostazioni consente di gestire le impostazioni di base della console.
       * `file_dev_resources:read`
       * `projects:read`
    * [Consulta la documentazione di Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) per ulteriori informazioni sulla configurazione dei token di accesso personali.
-* **Ripristina area di lavoro** ripristina lo stato iniziale della console e tutte le modifiche non inviate o non caricate andranno perse.
+* **Supporto** riepiloga le informazioni condivise con il team di supporto di Adobe quando si effettua una richiesta di supporto.
+   * **Richiedi supporto** - Fai clic su per avviare una richiesta di supporto da Adobe senza uscire dalla console.
+* **L&#39;area di rischio** contiene impostazioni che possono ripristinare l&#39;area di lavoro.
+   * **Ripristina area di lavoro** - Fare clic per ripristinare lo stato iniziale dell&#39;area di lavoro. Questa operazione non può essere annullata.
