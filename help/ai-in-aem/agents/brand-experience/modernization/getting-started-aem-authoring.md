@@ -4,9 +4,9 @@ description: Scopri i passaggi di configurazione specifici necessari per i proge
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ Per i progetti di authoring di AEM che utilizzano l’editor universale, la prep
 ## Creare l’archivio del progetto Edge Delivery Services {#create-repo}
 
 1. Utilizza l&#39;archivio [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) come modello (non come standard di Edge Delivery Services).
+1. Prima di connettere le app GitHub, verifica che `fstab.yaml` punti all&#39;host AEM, al proprietario Git e all&#39;archivio Git e conferma eventuali modifiche apportate a `main`.
+   * Per istruzioni, vedere [Configurare l&#39;origine di contenuto](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md).
 1. Segui l&#39;[esercitazione sull&#39;editor universale](https://www.aem.live/developer/ue-tutorial) per configurare l&#39;archivio.
    * Interrompi quando ti viene richiesto di creare un sito in AEM.
 1. Elimina `paths.json` e conferma questa modifica in `main`.
@@ -35,8 +37,6 @@ Per i progetti di authoring di AEM che utilizzano l’editor universale, la prep
 1. Fai clic su **Crea**.
    * Viene effettuato il reindirizzamento alla pagina Sites.
    * Aggiorna la pagina se il nuovo sito non viene visualizzato immediatamente.
-1. Se non l&#39;hai già fatto durante [la configurazione dell&#39;archivio](#create-repo), aggiorna `fstab.yaml` in modo che punti all&#39;host AEM, al proprietario Git e all&#39;archivio Git e conferma le modifiche in `main`.
-   * Per istruzioni, vedere [Configurare l&#39;origine di contenuto](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md).
 
 ## Continua con i passaggi iniziali standard {#continue}
 
