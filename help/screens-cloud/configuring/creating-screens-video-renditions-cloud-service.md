@@ -4,9 +4,9 @@ description: Questa pagina descrive come creare rappresentazioni video in Screen
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 210997fa8568245ab9e4e5d44d7faf99bc108ee3
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Per creare rappresentazioni video in Screens as a Cloud Service da Screens Conte
 1. Passa al tuo canale in Provider di contenuti Screens.
 
    >[!NOTE]
-   >Per ulteriori dettagli, vedere [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=it#screens-content-provider).
+   >Per ulteriori dettagli, vedere [Utilizzo del provider di contenuti Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider).
 
 1. Fare clic sulla sezione Strumenti nella barra di navigazione a sinistra e fare clic su **Assets**, quindi su **Profili di elaborazione**.
 
@@ -53,7 +53,7 @@ Per creare rappresentazioni video in Screens as a Cloud Service da Screens Conte
    >Utilizza il nome della codifica che inizia con &quot;screens-&quot;. Solo queste rappresentazioni video sono considerate per riprodurre l’esperienza video in Screens as a Cloud Service. Immetti il bitrate che funziona con i video (2500 kbps per i video a 720 px e 5000 kbps per i video a 1080 px).
 
    >[!NOTE]
-   >Per lavorare con i video è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabile. Tutti gli schermi e i rendering vengono scaricati dai dispositivi Screens, anche se il dispositivo riproduce solo il rendering video.
+   >Per lavorare con i video è possibile aggiungere più rappresentazioni video con larghezza/altezza/bitrate variabile.
 
 1. Fai clic su **Salva**.
 
