@@ -4,9 +4,9 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
+source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1786'
 ht-degree: 11%
 
 ---
@@ -95,7 +95,7 @@ Istruzioni di configurazione:
 1. Imposta SNI sull’ingresso della rete CDN di Adobe.
 1. Imposta l’intestazione Host sul dominio di origine. Ad esempio: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio in modo che AEM possa determinare l&#39;intestazione host. Ad esempio: `X-Forwarded-Host:example.com`.
-1. Imposta `X-AEM-Edge-Key`. Il valore deve essere configurato utilizzando una pipeline di configurazione di Cloud Manager, come descritto in [questo articolo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+1. Imposta `X-AEM-Edge-Key`. Il valore deve essere configurato utilizzando prima una pipeline di configurazione di Cloud Manager, quindi la stessa chiave Edge deve essere configurata nella rete CDN del cliente, come descritto in [questo articolo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
    * Necessario affinché il CDN di Adobe possa convalidare l&#39;origine delle richieste e passare le intestazioni `X-Forwarded-*` all&#39;applicazione AEM. Ad esempio, `X-Forwarded-For` viene utilizzato per determinare l&#39;IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota seguente).
    * Facoltativamente, l&#39;accesso all&#39;ingresso di Adobe CDN può essere bloccato quando non è presente un `X-AEM-Edge-Key`. Se hai bisogno di accedere direttamente all’ingresso di Adobe CDN (da bloccare), informa Adobe.
@@ -163,7 +163,7 @@ Questo processo consente la verifica di dettagli quali i valori host, la configu
 >Puoi utilizzare un ambiente di sviluppo rapido (RDE) per distribuire e testare la configurazione:
 >
 >* [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Esempio di configurazioni fornitore CDN {#sample-configurations}
 
