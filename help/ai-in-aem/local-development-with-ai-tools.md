@@ -3,13 +3,13 @@ title: Sviluppo locale con strumenti AI
 description: Scopri come configurare gli strumenti di codifica AI con il contesto del progetto, le competenze dell’agente e i server MCP per accelerare lo sviluppo di AEM as a Cloud Service.
 feature: Developing
 role: Developer
-source-git-commit: 0bc00b6e14be6ba111ac26ce69f07e138ca400e4
+exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
-
 
 # Sviluppo locale con strumenti AI {#local-development-with-ai-tools}
 
@@ -69,7 +69,7 @@ Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazion
 
 ```bash
 # Add the Adobe Skills marketplace (one-time setup)
-/plugin marketplace add adobe/skills#beta
+/plugin marketplace add adobe/skills
 
 # Install all available skills
 /plugin install aem-cloud-service@adobe-skills
@@ -79,17 +79,17 @@ Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazion
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
 #### Aggiornamento (estensione CLI GitHub) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
-gh extension install trieloff/gh-upskill
+gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --branch beta --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path skills/aem/cloud-service --all
 ```
 
 ### Utilizzare l’abilità make-agents-md {#use-the-ensure-agents-md-skill}
@@ -150,7 +150,7 @@ Model Context Protocol (MCP) è uno standard aperto che consente agli strumenti 
 
 ### Installare il pacchetto dei contenuti {#install-the-content-package}
 
-Scarica il pacchetto di contenuti dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo-software%3Abeta) e installa `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` nel tuo Quickstart locale utilizzando Gestione pacchetti in `/crx/packmgr`.
+Scarica il pacchetto di contenuti dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) e installa `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` nel tuo Quickstart locale utilizzando Gestione pacchetti in `/crx/packmgr`.
 
 **Compatibilità:** convalidata con AEM SDK `2026.2.24678.20260226T154829Z-260200` e versioni successive.
 
@@ -210,7 +210,7 @@ A differenza dell’abilità del dispatcher, il server MCP di Dispatcher espone 
 ### Prerequisiti {#prerequisites}
 
 - Docker Desktop 4.x o versione successiva, installato ed in esecuzione
-- AEM Dispatcher SDK scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo-software%3Abeta)
+- AEM Dispatcher SDK scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
 
 >[!NOTE]
 >
