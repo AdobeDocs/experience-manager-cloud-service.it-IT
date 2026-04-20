@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 161d6be186a6124840d93672470de91399481f20
 workflow-type: tm+mt
-source-wordcount: '5446'
+source-wordcount: '5835'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Gli ambienti di sviluppo e gli ambienti di sviluppo rapido devono essere limitat
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Sono disponibili altri video che mostrano [come configurarlo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [come utilizzarlo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e il [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) utilizzando RDE.
+Sono disponibili altri video che mostrano [come configurarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [come utilizzarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e il [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) utilizzando RDE.
 
 ## Introduzione {#introduction}
 
@@ -184,7 +184,7 @@ Negli ambienti in cui nessun utente può eseguire il comando di installazione in
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Puoi cercare il tuo ID organizzazione utilizzando il metodo documentato in [Visualizza ID organizzazione](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Puoi cercare il tuo ID organizzazione utilizzando il metodo documentato in [Visualizza ID organizzazione](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Quindi, configura l’ID del programma:
 
@@ -200,7 +200,7 @@ Negli ambienti in cui nessun utente può eseguire il comando di installazione in
 
    Questi passaggi richiedono l&#39;appartenenza al profilo di prodotto Cloud Manager **Developer - Cloud Service**. Per ulteriori dettagli, vedere [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager - Assegnazione del profilo di prodotto sviluppatore](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
-Per ulteriori informazioni e dimostrazioni, guarda l&#39;esercitazione video [come impostare un RDE (06:24)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Per ulteriori informazioni e dimostrazioni, guarda l&#39;esercitazione video [come impostare un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilizzare RDE durante lo sviluppo di una nuova funzione {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Per ulteriori informazioni e dimostrazioni, vedere l&#39;esercitazione video [utilizzo dei comandi RDE (10:01)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Per ulteriori informazioni e dimostrazioni, vedere l&#39;esercitazione video [utilizzo dei comandi RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Distribuire in un RDE da provider Git esterni {#deploy-to-rde}
@@ -707,6 +707,74 @@ Puoi anche reimpostare l&#39;RDE utilizzando il pulsante con i puntini di sospen
 ![Ripristina RDE dalla scheda Ambienti](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Per ulteriori informazioni su come utilizzare Cloud Manager per gestire gli ambienti, consulta [la documentazione di Cloud Manager](/help/implementing/cloud-manager/manage-environments.md).
+
+## Snapshot {#snapshots}
+
+>[!NOTE]
+>
+>Questa funzione è disponibile in Beta. Se ti interessa utilizzare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), descrivendo il tuo caso d&#39;uso.
+
+Gli RDE supportano l’acquisizione di un’istantanea dello stato corrente del codice e del contenuto, che può essere ripristinata in un secondo momento. Le istantanee sono utili quando si sincronizza il codice che potrebbe essere necessario ripristinare o quando si passa dallo sviluppo di diverse funzioni. È inoltre possibile ripristinare solo il contenuto mutabile da uno snapshot come punto di partenza noto per il test.
+
+Ogni ambiente RDE dispone di un massimo di sette istantanee. Le istantanee contrassegnate per l&#39;eliminazione ma che rientrano ancora nel periodo di conservazione di sette giorni continuano a essere conteggiate in base a tale limite fino a quando non vengono completamente rimosse. Se si raggiunge il limite e si necessita di capacità per un nuovo snapshot immediatamente, utilizzare l&#39;eliminazione forzata come descritto in [Eliminare uno snapshot](#delete-snapshot) invece di un&#39;eliminazione standard.
+
+I comandi supportati sono descritti di seguito. Per un elenco completo dei flag e delle opzioni, utilizzare `aio aem rde snapshot --help` oppure, per informazioni su un sottocomando specifico, utilizzare `aio aem rde snapshot <subcommand> --help`.
+
+### Elenca snapshot {#list-snapshots}
+
+È possibile elencare tutte le istantanee dell&#39;organizzazione eseguendo:
+
+`aio aem rde snapshot`
+
+In questo modo viene restituita una tabella degli snapshot disponibili, che è possibile ordinare utilizzando il flag `-s`:
+
+`aio aem rde snapshot -s <column-header>`
+
+Aggiungi il prefisso &quot;minus&quot; all’intestazione della colonna per l’ordinamento inverso. È supportato anche il flag globale `--json`.
+
+### Creare un’istantanea {#create-snapshot}
+
+Per creare un&#39;istantanea dello stato corrente dell&#39;RDE, inclusi il contenuto e la distribuzione, eseguire le operazioni riportate di seguito.
+
+`aio aem rde snapshot create <name>`
+
+Dove `<name>` è un nome univoco per lo snapshot all&#39;interno dell&#39;ambiente. Se necessario, includere una breve descrizione con il flag `-d`:
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### Ripristinare uno snapshot {#restore-snapshot}
+
+Per ripristinare uno snapshot nell&#39;RDE corrente, eseguire le operazioni riportate di seguito.
+
+`aio aem rde snapshot restore <name>`
+
+Per ripristinare solo il contenuto modificabile da uno snapshot (senza ripristinare la distribuzione), utilizzare il flag `--only-mutable-content`:
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### Eliminare un’istantanea {#delete-snapshot}
+
+La contrassegnazione di uno snapshot per l&#39;eliminazione non ne comporta la rimozione immediata. L&#39;istantanea viene eliminata dopo 7 giorni, dando il tempo di annullare l&#39;eliminazione, se necessario.
+
+Per contrassegnare uno snapshot per l&#39;eliminazione, eseguire le operazioni riportate di seguito.
+
+`aio aem rde snapshot delete <name>`
+
+Per contrassegnare tutti gli snapshot come eliminati contemporaneamente, utilizzare il flag `-a`:
+
+`aio aem rde snapshot delete -a`
+
+Per eliminare immediatamente uno snapshot (ignorando il periodo di conservazione in modo che non venga più conteggiato ai fini del limite di snapshot dell&#39;ambiente), aggiungere il flag `-f` (o `--force`):
+
+`aio aem rde snapshot delete <name> -f`
+
+Impossibile annullare l&#39;eliminazione forzata con `undelete`. Utilizzare `aio aem rde snapshot delete --help` per l&#39;insieme completo di opzioni quando si combinano i flag (ad esempio, eliminando tutti gli snapshot con la forza).
+
+### Annullare l’eliminazione di un’istantanea {#undelete-snapshot}
+
+Per annullare un&#39;eliminazione in sospeso e mantenere uno snapshot, eseguire le operazioni riportate di seguito.
+
+`aio aem rde snapshot undelete <name>`
 
 ## Comandi che supportano l’output JSON {#json-commands}
 
@@ -1156,7 +1224,7 @@ Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Developm
 
 ## Esercitazione RDE
 
-Per informazioni su RDE in AEM as a Cloud Service, consulta l&#39;esercitazione video che illustra [come configurarlo, come utilizzarlo e il ciclo di vita dello sviluppo (01:25)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Per informazioni su RDE in AEM as a Cloud Service, consulta l&#39;esercitazione video che illustra [come configurarlo, come utilizzarlo e il ciclo di vita dello sviluppo (01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
