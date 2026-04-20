@@ -4,20 +4,14 @@ description: Scopri come configurare gli strumenti di codifica AI con il contest
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
 
 # Sviluppo locale con strumenti AI {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->Le funzionalità descritte in questo articolo sono **beta**. L&#39;accesso anticipato alle funzionalità sviluppate da Adobe consente ai clienti e ai partner di fornire un feedback (inviando un&#39;e-mail a [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) e sviluppare i prodotti. Consente inoltre di prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
->
->I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Adobe consiglia ai clienti di prestare attenzione e di non affidarsi al corretto funzionamento o alle prestazioni delle versioni beta o a qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ Quattro componenti complementari affrontano questo problema:
 
 Le abilità sono set di istruzioni che codificano flussi di lavoro di sviluppo in più passaggi. Quando invocata, l’intelligenza artificiale segue la procedura dell’abilità anziché affidarsi esclusivamente alla conoscenza generale, producendo risultati coerenti e conformi alle convenzioni.
 
-Adobe pubblica AEM as a Cloud Service skills nell&#39;archivio **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** nel ramo `beta` poiché questa funzione non è ancora disponibile a livello generale:
+Adobe pubblica AEM as a Cloud Service skills nell&#39;archivio **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)**:
 
 | Abilità | Scopo |
 |---|---|
@@ -202,6 +196,12 @@ Qualsiasi client MCP può connettersi puntando a `http://localhost:4502/bin/mcp`
 >Il valore `Basic YWRtaW46YWRtaW4=` è la codifica Base64 di `admin:admin`, le credenziali predefinite per un Quickstart locale. Non utilizzarlo con ambienti non locali.
 
 ## Server Dispatcher MCP {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>Questa funzionalità è **beta**. L&#39;accesso anticipato alle funzionalità sviluppate da Adobe consente ai clienti e ai partner di fornire un feedback (inviando un&#39;e-mail a [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) e sviluppare i prodotti. Consente inoltre di prepararsi ad adottare nuove funzionalità prima della disponibilità generale.
+>
+>I rilasci di Beta possono contenere difetti e vengono forniti &quot;COSÌ COME SONO&quot; senza alcuna garanzia. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare o altrimenti supportare (tramite i servizi di supporto Adobe o in altro modo) le versioni beta. Adobe consiglia ai clienti di prestare attenzione e di non affidarsi al corretto funzionamento o alle prestazioni delle versioni beta o a qualsiasi documentazione o materiale di accompagnamento. Le funzioni e le API in versione beta sono soggette a modifiche senza preavviso. Di conseguenza, qualsiasi utilizzo delle versioni beta è interamente a rischio del cliente.
 
 Il server Dispatcher MCP è fornito in bundle con AEM Dispatcher SDK. Consente agli strumenti di intelligenza artificiale di convalidare la configurazione Dispatcher e Apache HTTPD, la gestione delle richieste di traccia e il comportamento della cache rispetto a un’istanza Dispatcher in esecuzione localmente in Docker.
 
