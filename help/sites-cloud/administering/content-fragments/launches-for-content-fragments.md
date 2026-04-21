@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Viene creato un *lancio* per consentire di apportare modifiche in preparazione a
 >
 >Per informazioni dettagliate, vedere [Lanci per pagine](/help/sites-cloud/authoring/launches/overview.md).
 
-Crea un *lancio*, quindi modifica e aggiorna i frammenti di contenuto nel tuo *lancio*. Se durante questa fase vengono apportate modifiche ai frammenti *Source*, è possibile copiarli in *Launch* con l&#39;operazione *Rebase*. Quando è pronto, *Promuovi* duplica il contenuto del lancio all&#39;origine. Puoi quindi attivare i frammenti di origine, manualmente o automaticamente (in base ai campi impostati durante la creazione e la modifica del lancio). Puoi anche specificare se i frammenti di riferimento devono essere inclusi in questo processo.
+Crea un *lancio*, quindi modifica e aggiorna i frammenti di contenuto nel tuo *lancio*. Se durante questa fase vengono apportate modifiche ai frammenti *Source*, è possibile copiare *Source* (incluse le modifiche) in *Launch* con l&#39;operazione **[Rebase](#rebase-a-launch-from-source)**. Quando è pronto, *Promuovi* duplica il contenuto del lancio all&#39;origine. Puoi quindi attivare i frammenti di origine, manualmente o automaticamente (in base ai campi impostati durante la creazione e la modifica del lancio). Puoi anche specificare se i frammenti di riferimento devono essere inclusi in questo processo.
 
 Ad esempio, i frammenti di prodotto stagionali del tuo negozio online vengono aggiornati trimestralmente in modo che i prodotti in questione siano in linea con la stagione corrente. Per prepararti al prossimo aggiornamento trimestrale, puoi creare un lancio dei frammenti appropriati. Nel corso del trimestre, nella copia del lancio vengono accumulate le seguenti modifiche:
 
@@ -88,9 +88,9 @@ Mentre il pannello a destra consente di:
 
    * **Pronto per la pubblicazione**; se si attiva questa opzione, i frammenti verranno pubblicati automaticamente quando il lancio viene promosso all&#39;origine.
 
-* E definisci anche:
+* Definisci **Promuovi data** e ora: se il [lancio deve essere promosso automaticamente](#promote-automatically)
 
-   * **Promuovi data** e ora: se il [lancio deve essere promosso automaticamente](#promote-automatically)
+* Visualizza ed esegue ulteriori azioni su **[Processi](#jobs-history)** eseguiti (**Confronta lancio con Source**)
 
 ## Creare un lancio {#create-a-launch}
 
@@ -203,7 +203,6 @@ Prima di qualsiasi azione di Rebase o Promote, è consigliabile confrontare semp
          * Source: blu
          * Lancio: rosa
          * Conflitti: giallo
-   * Le azioni [Promuovi](#promote-a-launch-to-source) e [Riprendi](#rebase-a-launch-from-source) sono disponibili in alto a destra.
    * **Aggiornamenti trovati**: in alto a sinistra viene visualizzato un riepilogo di tutti gli aggiornamenti. Il numero di aggiornamenti sorgente in blu, il numero di aggiornamenti lancio in rosa e gli aggiornamenti a entrambi (conflitti) in giallo.
       * Le icone a forma di occhio consentono di mostrare o nascondere gli aggiornamenti del contenuto effettivo per una panoramica più chiara.
    * I cursori **Includi** consentono di definire i frammenti di contenuto da includere nella successiva operazione di promozione o di riassegnazione:
@@ -217,11 +216,38 @@ Prima di qualsiasi azione di Rebase o Promote, è consigliabile confrontare semp
    * Il contenuto del frammento viene visualizzato a livello di campo (a livello di elemento Frammento di contenuto/tipo di dati); le evidenziazioni indicano le modifiche.
    * Seleziona **Visualizza** per ricalcolare le differenze.
 
+1. Le azioni [Promuovi](#promote-a-launch-to-source) e [Riprendi](#rebase-a-launch-from-source) sono disponibili in alto a destra.
+
+1. **Indietro** ti riporta alla console. Se desideri rivedere di nuovo queste differenze specifiche, puoi visualizzare le voci **[Processi](#jobs-history)**.
+
    ![Confronta Source e Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Cronologia processi {#jobs-history}
+
+Per visualizzare i dettagli degli ultimi **Confronta con processi Source** eseguiti:
+
+1. Passa alla console Frammenti di contenuto.
+
+1. Apri la scheda **Lanci**.
+
+1. Seleziona il lancio, viene aperto il pannello informazioni a destra.
+
+1. Nella sezione **Processi** sono presenti **voci launchDifferences** per ciascuno dei **processi di confronto con Source** eseguiti:
+
+   ![Cronologia processi](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Seleziona:
+
+   * Icona della lente di ingrandimento per visualizzare tutti i dettagli relativi a un processo specifico.
+Viene restituita la visualizzazione **[Confronta lancio con Source](#compare-launch-to-source)**, con le azioni disponibili.
+   * **Visualizza il registro** per visualizzare una panoramica dei dettagli di tutti i processi.
+Da qui puoi anche selezionare un processo specifico e quindi visualizzare i **Risultati**. Viene visualizzata di nuovo la visualizzazione **[Confronta lancio con Source](#compare-launch-to-source)**, con le azioni disponibili.
+
+   Entrambe queste azioni ti portano al processo **Confronta lancio con Source** appropriato. Da qui puoi **[Rebase](#rebase-a-launch-from-source)** o **[Promuovere](#promote-a-launch-to-source)** il lancio come era a quel punto.
 
 ## Rebase di un lancio (da Source) {#rebase-a-launch-from-source}
 
-Quando sono stati apportati aggiornamenti ai frammenti di origine e desideri copiare le modifiche nel lancio:
+Dopo aver apportato aggiornamenti ai frammenti di origine, puoi copiare l&#39;origine (comprese le modifiche) nel lancio con l&#39;azione **Rebase**:
 
 1. Passa alla console Frammenti di contenuto.
 
