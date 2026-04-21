@@ -6,9 +6,9 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1916'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 | × | Non supportato. Non utilizzare. |
 | - | Non disponibile |
 
-| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=it#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
+| Caso d’uso | [aem-upload](https://github.com/adobe/aem-upload) | [API Java Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Servizio Asset Compute](https://experienceleague.adobe.com/it/docs/asset-compute/using/extend/understand-extensibility) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlet Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **File binario originale** |  |  |  |  |  |  |
 | Crea originale | ✓ | × | - | × | × | - |
@@ -64,6 +64,10 @@ L&#39;articolo contiene consigli, materiali di riferimento e risorse per gli svi
 | Elimina cartella | ✓ | ✓ | - | ✓ | - | - |
 | Copia cartella | ✓ | ✓ | - | ✓ | - | - |
 | Sposta cartella | ✓ | ✓ | - | ✓ | - | - |
+
+>[!NOTE]
+>
+> Adobe sconsiglia di caricare pacchetti di risorse in quanto viola le nostre best practice per evitare la gestione binaria in AEM. Il caricamento delle risorse tramite pacchetti JCR non attiva l’elaborazione su tali risorse in AEM as a Cloud Service.
 
 ## Caricamento della risorsa {#asset-upload}
 
