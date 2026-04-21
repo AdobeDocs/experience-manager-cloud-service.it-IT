@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 2%
 
 ---
@@ -187,7 +187,7 @@ Per gestire i frammenti di contenuto nel lancio e modificarne il contenuto:
 
 ## Confronta lancio e origine {#compare-launch-to-source}
 
-Prima di qualsiasi azione di Rebase o Promote, è consigliabile confrontare sempre l’origine e il lancio per confermare le modifiche e il loro impatto sul contenuto (entrambe le azioni sovrascrivono il contenuto di destinazione):
+Prima di eseguire un&#39;azione di **[Rebase](#rebase-a-launch-from-source)** o **[Promote](#promote-a-launch-to-source)**, è consigliabile confrontare sempre l&#39;origine e il lancio per confermare le modifiche e il loro impatto sul contenuto (entrambe le azioni sovrascrivono il contenuto di destinazione):
 
 1. Passa alla console Frammenti di contenuto.
 
@@ -247,7 +247,7 @@ Da qui puoi anche selezionare un processo specifico e quindi visualizzare i **Ri
 
 ## Rebase di un lancio (da Source) {#rebase-a-launch-from-source}
 
-Dopo aver apportato aggiornamenti ai frammenti di origine, puoi copiare l&#39;origine (comprese le modifiche) nel lancio con l&#39;azione **Rebase**:
+Quando sono stati apportati aggiornamenti ai frammenti di origine, è possibile copiare l&#39;origine (incluse le modifiche) nel lancio con l&#39;azione **Rebase**:
 
 1. Passa alla console Frammenti di contenuto.
 
@@ -261,9 +261,17 @@ Dopo aver apportato aggiornamenti ai frammenti di origine, puoi copiare l&#39;or
 >
 >È inoltre possibile **Rebase** un lancio da **[Confrontare il lancio con Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>Prima di eseguire un&#39;azione di **Rebase** o **Promote**, è consigliabile [confrontare l&#39;origine e il lancio](#compare-launch-to-source) per confermare le modifiche e il relativo impatto sul contenuto, in quanto entrambe le azioni sovrascrivono il contenuto di destinazione.
+
 ## Promuovi un lancio (a Source) {#promote-a-launch-to-source}
 
 Quando il lancio è pronto per essere pubblicato, deve essere copiato nell’origine. Puoi eseguire questa operazione nella console oppure configurare le impostazioni affinché venga eseguita automaticamente in una data e in un’ora specifiche.
+
+>[!NOTE]
+>
+>Prima di eseguire un&#39;azione di **Rebase** o **Promote**, è consigliabile [confrontare l&#39;origine e il lancio](#compare-launch-to-source) per confermare le modifiche e il relativo impatto sul contenuto, in quanto entrambe le azioni sovrascrivono il contenuto di destinazione.
 
 ### Promuovi manualmente {#promote-manually}
 
