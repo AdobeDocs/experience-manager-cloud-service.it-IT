@@ -57,7 +57,7 @@ L&#39;editor di comunicazione interattiva (IC) è progettato per garantire effic
 
 La funzionalità di comunicazione interattiva (IC) è disponibile tramite il programma di accesso anticipato (EA). Per richiedere l&#39;accesso, invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo ID e-mail ufficiale con il tuo ID ambiente e ID organizzazione. Una volta che Adobe conferma la tua iscrizione, segui la [Documentazione integrata del servizio](/help/forms/setup-forms-cloud-service.md) per abilitare la comunicazione interattiva nell&#39;ambiente AEM Forms.
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Passaggi successivi
 
