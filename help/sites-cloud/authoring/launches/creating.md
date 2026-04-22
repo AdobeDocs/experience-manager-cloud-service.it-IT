@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 93%
@@ -85,7 +85,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
    * **Titolo lancio**: il nome del lancio. Il nome deve essere significativo per gli autori.
    * **con contenuto esistente**: il contenuto originale viene utilizzato per creare il lancio.
    * **con un nuovo modello per sostituire la pagina**: per ulteriori dettagli, vedi [Creare un lancio con un nuovo modello](#create-launch-with-new-template).
-   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.-->
+   * **Eredita i dati live della pagina di origine**: seleziona questa opzione per aggiornare automaticamente il contenuto delle pagine di lancio quando cambiano le pagine di origine. Con questa opzione il lancio diventa una [Live Copy](/help/sites-cloud/administering/msm/overview.md). Per impostazione predefinita, questa opzione è selezionata.
    * **Data lancio**: la data e l&#39;ora in cui la copia del lancio deve essere attivata (in base alla segnalazione **Produzione pronta**; consulta [Lanci: l&#39;ordine degli eventi](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Proprietà lancio](/help/sites-cloud/authoring/assets/launches-properties.png)
