@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c9ab1fefa8170a1397eb5801f26128e82e7cd4ca
+source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
 workflow-type: tm+mt
 source-wordcount: '2180'
 ht-degree: 29%
@@ -38,7 +38,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Dai un’occhiata al video che mostra una panoramica sulla versione di marzo 2026 per un riepilogo delle funzioni aggiunte alla versione 2026.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483068/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## Programmi AEM Beta {#aem-beta-programs}
 
@@ -148,7 +148,7 @@ Disponibile a breve: supporto di Content Advisor per le applicazioni B2C Adobe W
 I componenti a discesa a selezione multipla in Adaptive Forms ora eseguono il rendering delle etichette di visualizzazione selezionate in [PDF di invio generato](/help/forms/generate-document-of-record-core-components.md), garantendo che il documento rifletta con precisione ciò che viene visualizzato dagli utenti nel modulo.
 
 **Accesso facilitato per i componenti di caselle di controllo, pulsanti di scelta e pannelli**
-I componenti core Forms adattivi introducono il markup semantico conforme a WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
+I componenti core Forms adattivi introducono il markup semantico conforme a WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
 
 **Supporto del controllo delle versioni in Forms Manager**
 Forms Manager ora [supporta il controllo delle versioni per Forms adattivo (Componenti core e Componenti di base)](/help/forms/manage-form-versions-forms-manager.md), frammenti di modulo, temi, modelli XDP e risorse binarie. Crea versioni, visualizza la cronologia completa delle versioni e ripristina gli stati precedenti delle risorse del modulo direttamente dalla console Forms &amp; Documents.
@@ -163,7 +163,7 @@ Forms Manager ora [supporta il controllo delle versioni per Forms adattivo (Comp
 
 #### Server Cloud Manager MCP {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480350/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Le IDE moderne utilizzano il protocollo MCP (Model Context Protocol) per abilitare i modelli di linguaggio di grandi dimensioni (Large Language Model, LLM) per richiamare gli strumenti esposti dai server MCP. Invece di integrarsi direttamente con le specifiche API di basso livello, gli sviluppatori possono semplicemente descrivere il loro intento nel linguaggio naturale.
 
@@ -215,7 +215,7 @@ Per ulteriori informazioni, consulta la [documentazione sullo sviluppo locale co
 
 #### Funzioni di AEM Edge (programma Beta) {#edge-functions}
 
-Le funzioni Edge di AEM consentono di eseguire JavaScript a livello di CDN, avvicinando l’elaborazione dei dati all’utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
+[Funzioni AEM Edge](/help/implementing/developing/introduction/edge-functions.md) consente di eseguire JavaScript a livello di CDN, avvicinando l&#39;elaborazione dei dati all&#39;utente finale. Questo riduce la latenza e consente esperienze dinamiche reattive ai margini.
 
 I casi d’uso comuni includono:
 
