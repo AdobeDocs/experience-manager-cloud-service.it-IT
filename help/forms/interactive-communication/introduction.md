@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ L&#39;editor di comunicazione interattiva (IC) è progettato per garantire effic
 
 | **Funzione** | **Funzionalità chiave** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **Editor WYSIWYG** | - Perfezione dei pixel per un rendering accurato <br> - Controlli per lo stile dei caratteri <br> - Layout flessibile per un design professionale |
-| **Controllo layout** | - Posizionamento (assoluto e fluido) <br> - Funzionalità di trascinamento semplice <br> - Utilizzare le pagine master per definire layout coerenti |
-| **Componenti** | - Accesso ai nuovi componenti introdotti, tra cui tabelle, grafici e codici a barre <br> - Componenti pronti all&#39;uso per una progettazione più rapida |
-| **Binding dei dati** | - Collegamento diretto dei componenti alle origini dati <br> - Precompilazione automatica dei campi per comunicazioni personalizzate |
-| **Editor di regole** | - Configurare le convalide dinamiche <br> - Aggiungere calcoli e logica condizionale per l&#39;interattività |
-| **Libreria frammenti** | - Creazione di blocchi predefiniti modulari (intestazioni, piè di pagina, esclusioni di responsabilità, icone) <br> - Mantenimento della coerenza tra più comunicazioni |
-| **Modelli** | - Garantire l&#39;uniformità del marchio e della struttura nelle comunicazioni |
+| **Editor WYSIWYG** | - Perfezione dei pixel per un rendering accurato <br> - [Controlli per lo stile dei caratteri](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Layout flessibile per un design professionale |
+| [**Controllo layout**](/help/forms/interactive-communication/handle-content-overflow.md) | - Posizionamento (assoluto e fluido) <br> - Funzionalità di trascinamento semplice <br> - Utilizzare le pagine master per definire layout coerenti |
+| **Componenti** | - Accesso ai componenti introdotti di recente, tra cui [tabelle](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), grafici e [codici a barre](/help/forms/interactive-communication/barcode.md) <br> - Componenti pronti all&#39;uso per una progettazione più rapida |
+| [**Binding dei dati**](/help/forms/interactive-communication/configure-data-binding.md) | - Collegamento diretto dei componenti alle origini dati <br> - Precompilazione automatica dei campi per comunicazioni personalizzate |
+| [**Editor di regole**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Configurare le convalide dinamiche <br> - Aggiungere calcoli e logica condizionale per l&#39;interattività |
+| [**Libreria frammenti**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - Creazione di blocchi predefiniti modulari (intestazioni, piè di pagina, esclusioni di responsabilità, icone) <br> - Mantenimento della coerenza tra più comunicazioni |
+| [**Modelli**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Garantire l&#39;uniformità del marchio e della struttura nelle comunicazioni |
 
 ## Onboarding
 
 La funzionalità di comunicazione interattiva (IC) è disponibile tramite il programma di accesso anticipato (EA). Per richiedere l&#39;accesso, invia un&#39;e-mail a [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) dal tuo ID e-mail ufficiale con il tuo ID ambiente e ID organizzazione. Una volta che Adobe conferma la tua iscrizione, segui la [Documentazione integrata del servizio](/help/forms/setup-forms-cloud-service.md) per abilitare la comunicazione interattiva nell&#39;ambiente AEM Forms.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Passaggi successivi
 
