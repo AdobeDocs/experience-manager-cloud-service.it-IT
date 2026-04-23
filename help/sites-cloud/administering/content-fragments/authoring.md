@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 6%
@@ -33,6 +33,11 @@ Questo editor fornisce:
 * Possibilità di [visualizzare i dettagli della versione](#view-version-history) nell&#39;editor. Puoi anche ripristinare una versione selezionata.
 * Possibilità di [visualizzare e aprire i riferimenti principali](#view-parent-references).
 * Una visualizzazione gerarchica del frammento di contenuto e dei relativi riferimenti, utilizzando la [struttura ad albero](#structure-tree).
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+-->
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ La prima volta che apri l’Editor frammento di contenuto vengono visualizzate q
   >
   >A seconda delle definizioni nel modello sottostante, i campi possono essere soggetti a determinati tipi di [convalida](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
-![Editor frammenti di contenuto: panoramica](assets/cf-authoring-overview.png)
+![Editor frammenti di contenuto: panoramica](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Navigare nella struttura dei frammenti di contenuto {#navigate-structure}
 
@@ -107,13 +112,13 @@ Nel pannello a sinistra puoi vedere:
 
 In varie parti dell’editor è possibile visualizzare l’icona del collegamento. Questa icona può essere utilizzata per aprire l’elemento visualizzato, ad esempio un modello per frammenti di contenuto, un riferimento principale o un frammento a cui si fa riferimento:
 
-![Editor frammento di contenuto - Icona collegamento](assets/cf-authoring-link-icon.png)
+![Content Fragment Editor - Link Icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### Albero struttura {#structure-tree}
 
 Apri la scheda **Struttura** dalla barra degli strumenti dell&#39;editor per visualizzare la struttura gerarchica del frammento di contenuto e i relativi riferimenti. Utilizza le icone dei collegamenti per passare ai riferimenti.
 
-![Editor frammento di contenuto - Struttura](assets/cf-authoring-structure-tree.png)
+![Editor frammento di contenuto - Struttura](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -151,11 +156,11 @@ Per creare una variante del frammento di contenuto:
    >
    >Dopo aver creato la prima variante, le varianti esistenti vengono elencate nello stesso pannello.
 
-   ![Editor frammento di contenuto - Crea la tua prima variante](assets/cf-authoring-create-variation-01.png)
+   ![Editor frammento di contenuto - Crea la tua prima variante](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. Nella finestra di dialogo, immetti un **Titolo** per la variante e una **Descrizione** se necessario:
 
-   ![Editor frammento di contenuto - Finestra di dialogo Crea variante](assets/cf-authoring-create-variation-02.png)
+   ![Editor frammento di contenuto - Finestra di dialogo Crea variante](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **Crea** la variante. Viene visualizzato nell&#39;elenco.
 
@@ -191,7 +196,7 @@ Per eliminare una variante del frammento di contenuto:
 
 1. Nel pannello **Variante**, seleziona l&#39;icona Elimina (Cestino):
 
-   ![Editor frammento di contenuto - Icona Elimina variante](assets/cf-authoring-delete-variation.png)
+   ![Editor frammento di contenuto - Icona Elimina variante](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. Viene visualizzata una finestra di dialogo. Seleziona **Elimina** per confermare l&#39;azione.
 
@@ -205,7 +210,7 @@ Per eliminare una variante del frammento di contenuto:
 
 I campi definiti come Testo normale o Markdown hanno una casella di testo semplice, senza opzioni di formattazione (su schermo):
 
-![Editor frammento di contenuto - Testo su più righe - schermo intero](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Editor frammento di contenuto - Testo su più righe - schermo intero](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Modifica campi di testo su più righe - Testo formattato {#edit-multi-line-text-fields-rich-text}
 
@@ -231,7 +236,7 @@ Per i campi **[Testo su più righe](/help/sites-cloud/administering/content-frag
 
 Ad esempio:
 
-![Editor frammento di contenuto - Testo su più righe - Attiva/Disattiva schermo intero](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Editor frammento di contenuto - Testo su più righe - Attiva/Disattiva schermo intero](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -243,7 +248,7 @@ L’editor a schermo intero offre le stesse opzioni di modifica disponibili dura
 
 Ad esempio:
 
-![Editor frammento di contenuto - Testo su più righe - schermo intero](assets/cf-authoring-multilinetext-fullscreen.png)
+![Editor frammento di contenuto - Testo su più righe - schermo intero](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistiche - Rich Text {#statistics-rich-text}
 
@@ -251,7 +256,7 @@ L&#39;azione **Statistiche** visualizza un intervallo di informazioni sul testo 
 
 Ad esempio:
 
-![Editor frammento di contenuto - Statistiche](assets/cf-authoring-multilinetext-statistics.png)
+![Editor frammento di contenuto - Statistiche](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### Confronta e sincronizza - Testo formattato {#compare-and-synchronize-rich-text}
 
@@ -274,13 +279,13 @@ Questo apre il campo Multiriga a schermo intero e:
 
   >[!CAUTION]
   >
-  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**&#x200B;alla variante*.
+  >La sincronizzazione è disponibile solo per copiare le modifiche *da **Principale**alla variante*.
   >
   >Il trasferimento delle modifiche *da una variante a **Principale*** non è disponibile come opzione.
 
 Ad esempio, uno scenario in cui il contenuto della variante è stato completamente riscritto, in modo che una sincronizzazione sostituisca il nuovo contenuto con il contenuto di **Main**:
 
-![Editor frammenti di contenuto - Confronta e sincronizza](assets/cf-authoring-multilinetext-compare.png)
+![Editor frammenti di contenuto - Confronta e sincronizza](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## Gestisci riferimenti {#manage-references}
 
@@ -328,12 +333,12 @@ Nei campi **Riferimento contenuto** puoi:
 
 ##### Assets locale di riferimento {#reference-local-assets}
 
-Per fare riferimento a una risorsa locale, puoi effettuare le seguenti operazioni:
+To reference a local asset, you can either:
 
 * trascina e rilascia il nuovo file di risorse direttamente (ad esempio, dal file system) nel campo **Riferimento contenuto**
 * utilizza l&#39;azione **Aggiungi risorsa**, quindi seleziona **Sfoglia Assets** o **Carica** per aprire il selettore appropriato da utilizzare:
 
-  ![Editor frammento di contenuto - Aggiungi opzioni risorsa](assets/cf-authoring-add-asset-options.png)
+  ![Editor frammento di contenuto - Aggiungi opzioni risorsa](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### Riferimento ad Assets remoto {#reference-remote-assets}
 
@@ -341,21 +346,21 @@ Per fare riferimento a risorse remote:
 
 1. Specifica l&#39;**archivio** remoto durante la ricerca delle risorse:
 
-   ![Editor frammento di contenuto - Seleziona risorsa da remoto](assets/cf-authoring-remote-asset-01.png)
+   ![Editor frammento di contenuto - Seleziona risorsa da remoto](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. Dopo la selezione, la posizione può essere visualizzata nelle informazioni sulla risorsa:
 
-   ![Editor frammento di contenuto - Risorsa da archivio remoto](assets/cf-authoring-remote-asset-02.png)
+   ![Editor frammento di contenuto - Risorsa da archivio remoto](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
-###### Assets remoto - Limitazioni {#remote-assets-limitations}
+###### Remote Assets - Limitations {#remote-assets-limitations}
 
-Esistono alcune limitazioni quando si fa riferimento a risorse remote:
+There are some limitations when referencing remote assets:
 
-* Solo [risorse approvate](/help/assets/approve-assets.md) sono disponibili per riferimento da un archivio risorse remoto.
+* Only [Approved](/help/assets/approve-assets.md) assets are available for reference from a remote Asset repository.
 
-* Se una risorsa a cui si fa riferimento viene rimossa dall’archivio remoto, si verifica un errore in Riferimento al contenuto.
+* If a referenced asset is removed from the remote repository, this results in a broken Content Reference.
 
-* Tutti gli archivi di risorse di consegna a cui l’utente ha accesso sono disponibili per la selezione, l’elenco disponibile non può essere limitato.
+* All Delivery Asset Repositories to which the user has access are available for selection, the available list cannot be limited.
 
 * L’istanza di AEM e l’istanza remota del repository di risorse devono avere la stessa versione.
 
@@ -367,7 +372,7 @@ Esistono alcune limitazioni quando si fa riferimento a risorse remote:
 
 >[!NOTE]
 >
->Vedi anche [API GraphQL di AEM per l&#39;utilizzo con Frammenti di contenuto - Dynamic Media per il supporto di risorse OpenAPI (Assets remoto)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
+>See also [AEM GraphQL API for use with Content Fragments - Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Pagine di riferimento {#reference-pages}
 
@@ -392,13 +397,32 @@ Selezionando l’icona del collegamento nella barra degli strumenti superiore si
 
 Ad esempio:
 
-![Editor frammento di contenuto - Mostra riferimenti](assets/cf-authoring-show-references-link.png)
+![Editor frammento di contenuto - Mostra riferimenti](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 Viene visualizzata una finestra in cui sono elencati tutti i riferimenti correlati. Per aprire un riferimento, selezionate il nome o il titolo o l&#39;icona del collegamento.
 
 Ad esempio:
 
-![Editor frammento di contenuto - Mostra riferimenti](assets/cf-authoring-show-references.png)
+![Editor frammento di contenuto - Mostra riferimenti](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## Visualizza proprietà e tag {#view-properties-tags}
 
@@ -407,7 +431,9 @@ Nella scheda delle proprietà del pannello di destra, è possibile visualizzare 
 * per **Frammento di contenuto** - se **Principale** è attualmente selezionato
 * per una **variante** specifica
 
-![Editor frammento di contenuto - Proprietà](assets/cf-authoring-properties.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - Proprietà](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png)
 
 ### Modifica proprietà e tag {#edit-properties-tags}
 
@@ -417,7 +443,9 @@ Nella scheda delle proprietà (pannello a destra) puoi anche modificare:
 * **Descrizione**
 * **Tag**: utilizzo dell&#39;elenco a discesa o della finestra di dialogo di selezione
 
-  ![Editor frammento di contenuto - Gestisci tag](assets/cf-authoring-edit-tags.png)
+  <!-- CQDOC-23473 - new screenshot? -->
+
+  ![Editor frammento di contenuto - Gestisci tag](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png)
 
 ### Aprire il modello per frammenti di contenuto {#open-content-fragment-model}
 
@@ -425,7 +453,7 @@ Quando hai selezionato **Principale**, il nome del modello per frammenti di cont
 
 Ad esempio:
 
-![Editor frammento di contenuto - Apri modello frammento di contenuto](assets/cf-authoring-open-model.png)
+![Editor frammento di contenuto - Apri modello frammento di contenuto](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## Visualizzare la cronologia delle versioni {#view-version-history}
 
@@ -435,7 +463,9 @@ Nella scheda **Cronologia versioni** del pannello di destra vengono visualizzati
 >
 >Al momento della pubblicazione del frammento di contenuto viene creata una nuova versione.
 
-![Editor frammento di contenuto - Panoramica cronologia versioni](assets/cf-authoring-version-history-overview.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - Panoramica cronologia versioni](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Confronta versione {#compare-version}
 
@@ -447,7 +477,9 @@ Per confrontare una versione precedente con la versione corrente:
 
 1. Seleziona **Confronta**.
 
-![Editor frammento di contenuto - Confronto cronologia versioni](assets/cf-authoring-version-history-compare.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - Confronto cronologia versioni](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 Viene aperta una visualizzazione in cui sono visualizzate le differenze tra la versione corrente del contenuto e la versione precedente selezionata del frammento di contenuto. Dal menu a discesa **Varianti con modifiche**, puoi selezionare di visualizzare le differenze rispetto al contenuto principale e/o al contenuto di una variante.
 
@@ -456,7 +488,9 @@ Le differenze sono indicate dal colore:
 * Verde: indica il contenuto aggiunto (alla versione corrente)
 * Rosso: indica il contenuto rimosso (dalla versione corrente)
 
-![Editor frammento di contenuto - Cronologia versioni - Confronta versioni](assets/cf-authoring-version-history-compare-versions.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - Cronologia versioni - Confronta versioni](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Ripristina una versione {#revert-version}
 
@@ -466,17 +500,21 @@ Per ripristinare una versione specifica:
 
 1. Seleziona l’icona dei tre punti accanto alla versione.
 
-1. Seleziona **Ripristina**.
+1. Select **Revert**.
 
-![Editor frammento di contenuto - Ripristino cronologia versioni](assets/cf-authoring-version-history-revert.png)
+<!-- CQDOC-23473 - new screenshot? -->
 
-## Visualizzare le copie per lingua {#view-language-copies}
+![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
-Nella scheda **Proprietà lingua** vengono visualizzati i dettagli di tutte le copie delle lingue correlate. Selezionando un’icona di collegamento, apre la copia in una scheda separata.
+## View the Language Copies {#view-language-copies}
+
+In the **Language properties** tab details of any related language copies are shown. Selezionando un’icona di collegamento, apre la copia in una scheda separata.
 
 Ad esempio:
 
-![Editor frammento di contenuto - Apri copia lingua](assets/cf-authoring-open-language-copies.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - Apri copia lingua](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -496,7 +534,9 @@ Per consentire la collaborazione all&#39;interno del prodotto e nel contesto, la
 * Modifica un commento esistente
 * Elimina commenti
 
-![Editor frammento di contenuto - scheda Commenti](assets/cf-authoring-comments.png)
+<!-- CQDOC-23473 - new screenshot? -->
+
+![Editor frammento di contenuto - scheda Commenti](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >

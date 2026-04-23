@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Si applica ad AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '2725'
 ht-degree: 90%
@@ -32,9 +32,20 @@ Questa pagina fornisce una panoramica del riutilizzo dei contenuti con MSM. Nell
 * [Conflitti di rollout MSM](rollout-conflicts.md)
 * [Best practice MSM](best-practices.md)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!NOTE]
 >
 >MSM può essere utilizzato anche per Assets, inclusi i frammenti di contenuto. Vedi [Riutilizzare i frammenti di contenuto utilizzando MSM per Assets](/help/assets/reuse-assets-using-msm.md) (disponibile solo tramite la console Assets).
+
+<!--
+>[!NOTE]
+>
+>MSM can also be used for Assets, and Content Fragments. See:
+>
+>* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+>* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
+-->
 
 ## Scenari possibili {#possible-scenarios}
 

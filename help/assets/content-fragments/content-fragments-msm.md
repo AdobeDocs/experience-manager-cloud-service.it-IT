@@ -6,7 +6,7 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 12%
@@ -38,11 +38,21 @@ Utilizzando MSM per frammenti di contenuto puoi:
 
 MSM per frammenti di contenuto, combinato con la funzionalità nell’Editor frammenti di contenuto, consente di interrompere e ripristinare l’ereditarietà a livello di campo.
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >MSM per frammenti di contenuto è disponibile solo quando si utilizzano frammenti di contenuto tramite la console **Assets**.
 >
 >La funzionalità MSM è *non* disponibile quando si utilizza la console **Frammenti di contenuto**.
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## Procedura {#how-to}
 
