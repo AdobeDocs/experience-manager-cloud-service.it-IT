@@ -23,7 +23,7 @@ OAuth Server-to-Server Authentication allows secure, token-based access to AEM F
 
 Prima di iniziare, accertati di soddisfare i seguenti prerequisiti:
 
-* Ensure that you have [access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specific to the environment you use.
+* Ensure that you have [access to the Adobe Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/access-rights) specific to the environment you use.
 * [Assign the System Administrator or Developer role in the Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) to enable access to the Adobe Developer Console.
 
 ## How to Generate an Access Token Using OAuth Server-to-Server Authentication?
@@ -181,7 +181,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 
