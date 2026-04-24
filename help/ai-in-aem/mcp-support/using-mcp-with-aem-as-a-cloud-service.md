@@ -4,9 +4,9 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Le moderne applicazioni IDE e chat utilizzano MCP come metodo per consentire a u
 
 I vantaggi principali includono:
 
-* **Interazione con linguaggio naturale invece del plumbing API**
+* **Interazione con linguaggio naturale anziché API plumbing**
 Gli strumenti MCP descrivono le operazioni disponibili e come chiamarle. LLM utilizza questi schemi per decidere quali strumenti richiamare e con quali parametri.
 * **Esperienza coerente nelle applicazioni**
 Gli stessi strumenti MCP di AEM possono essere utilizzati da più applicazioni compatibili con MCP, consentendo ai team di lavorare dove sono più produttivi e richiamando le stesse funzionalità AEM sottostanti.
@@ -52,10 +52,10 @@ AEM espone i server MCP come endpoint HTTP. Gli endpoint elencati di seguito son
 
 | **Server MCP** | **Endpoint** | **Descrizione** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Contenuto** | `/content` | Tutte le operazioni relative ai contenuti di basso livello, tra cui creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine, frammenti e risorse. |
-| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine, frammenti e risorse. |
+| **Contenuto** | `/content` | Operazioni per contenuti, tra cui creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto e importazione di risorse. |
+| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine e frammenti di contenuto. |
 | **Cloud Manager** | `/cloudmanager` | Gestisci le entità Cloud Manager, inclusi programmi, ambienti, archivi e pipeline, che possono anche essere attivati. |
-| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>I clienti devono iscriversi alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/it/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) per accedere a Experience Governance MCP. |
+| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>I clienti devono iscriversi alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) per accedere a Experience Governance MCP. |
 
 Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo. In pratica, puoi chiedere all’applicazione abilitata per MCP di individuare gli strumenti tramite un prompt come:
 
@@ -65,7 +65,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
