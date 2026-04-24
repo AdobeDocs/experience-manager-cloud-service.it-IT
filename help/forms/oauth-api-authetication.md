@@ -1,56 +1,59 @@
 ---
-title: Come si imposta l'autenticazione server-to-server OAuth?
-description: Scopri come configurare l’autenticazione server-to-server OAuth per Adobe Experience Manager Forms as a Cloud Service
+title: How to set up OAuth Server-to-Server Authentication?
+description: Learn how to configure OAuth Server-to-Server authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 3%
+source-wordcount: '908'
+ht-degree: 4%
 
 ---
 
 # Autenticazione server-to-server OAuth
 
-OAuth Server-to-Server Authentication consente l&#39;accesso sicuro e basato su token alle API di AEM Forms Communications senza richiedere l&#39;interazione dell&#39;utente. L&#39;autenticazione server-to-server OAuth è supportata da Adobe Developer Console.
+OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. OAuth server-to-server authentication is supported by Adobe Developer Console.
 
 ## Prerequisiti
 
 Prima di iniziare, accertati di soddisfare i seguenti prerequisiti:
 
-* Assicurati di avere [accesso a Adobe Developer Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/access-rights) specifico per l&#39;ambiente in uso.
-* [Assegnare il ruolo Amministratore di sistema o Sviluppatore in Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) per abilitare l&#39;accesso a Adobe Developer Console.
+* Ensure that you have [access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specific to the environment you use.
+* [Assign the System Administrator or Developer role in the Adobe Admin Console](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) to enable access to the Adobe Developer Console.
 
-## Come si genera un token di accesso utilizzando l’autenticazione server-to-server di OAuth?
+## How to Generate an Access Token Using OAuth Server-to-Server Authentication?
 
-Segui i passaggi seguenti per generare un token di accesso dalla console Adobe Developer ed effettua la prima chiamata API tramite l’autenticazione server-to-server OAuth.
+Follow the steps below to generate an access token from the Adobe Developer console, and make your first API call through OAuth Server-to-Server Authentication.
 
-### &#x200B;1. Configurazione del progetto Adobe Developer Console
+### 1. Adobe Developer Console Project Setup
 
-1. Passa a [Adobe Developer Console](https://developer.adobe.com/console)
-2. Accedi con il tuo Adobe ID
+1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
+2. Log in with your Adobe ID
 
-3. Crea un nuovo progetto o accedi al progetto esistente
+3. Create New Project or navigate to your existing project
 
 >[!BEGINTABS]
 
->[!TAB Per creare un nuovo progetto]
+>[!TAB To create a new project]
 
-1. Dalla sezione **Guida rapida**, fai clic su **Crea nuovo progetto**
-2. Viene creato un nuovo progetto con un nome predefinito
+1. From the **Quick Start** section, click **Create new project**
+2. A new project is created with a default name
 
-   ![Crea progetto ADC](/help/forms/assets/adc-home.png)
+   ![Create ADC Project](/help/forms/assets/adc-home.png)
 
-3. Fai clic su **Modifica progetto** nell&#39;angolo superiore destro
+3. Click **Edit project** in the top right corner
 
-   ![Modifica progetto](/help/forms/assets/adc-edit-project.png)
+   ![Edit Project](/help/forms/assets/adc-edit-project.png)
 
-4. Fornisci un nome significativo (ad esempio, &quot;formsproject&quot;)
+4. Provide a meaningful name (e.g., &quot;formsproject&quot;)
 5. Fai clic su **Salva**
 
-   ![Modifica nome progetto](/help/forms/assets/adc-edit-projectname.png)
+   ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
 
 >[!TAB Per passare al progetto esistente]
 
@@ -178,7 +181,7 @@ Generare manualmente i token di accesso in Adobe Developer Console:
 
 >[!TAB Per La Produzione]
 
-Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Genera i token a livello di programmazione utilizzando l&#39;API [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenziali richieste:**
 

@@ -5,10 +5,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ L’autenticazione JWT da server a server in AEM Forms, in particolare per le in
 Prima di iniziare, accertati di soddisfare i seguenti prerequisiti:
 
 * Assicurati di avere accesso a [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) specifico per l&#39;ambiente che utilizzi.
-* Assegna il ruolo [Amministratore di sistema o Sviluppatore per accedere ad Adobe Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Assegna il ruolo [Amministratore di sistema o Sviluppatore per accedere ad Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Come si genera un token di accesso utilizzando le credenziali JWT?
 
@@ -107,7 +110,7 @@ Segui i passaggi indicati di seguito per generare un token di accesso dalle cred
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sulle credenziali del servizio e su come generare un token di accesso utilizzando l&#39;API Adobe IMS, [fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Per ulteriori informazioni sulle credenziali del servizio e su come generare un token di accesso utilizzando l&#39;API Adobe IMS, [fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Ora puoi utilizzare il token di accesso generato per effettuare chiamate API per ambienti di sviluppo, stage o produzione.
 
