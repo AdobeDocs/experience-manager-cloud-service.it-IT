@@ -3,13 +3,13 @@ title: Visualizzazione principale per la gestione delle autorizzazioni
 description: Scopri la nuova interfaccia utente touch che facilita la gestione delle autorizzazioni.
 feature: Security
 role: Admin
-source-git-commit: 66ec051a2412fdbfb18dec5b79c6d5d5ca496216
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 86%
 
 ---
-
 
 # Visualizzazione principale per la gestione delle autorizzazioni {#principal-view-for-permissions-management}
 
@@ -65,7 +65,7 @@ I privilegi possono essere aggiunti effettuando una ricerca dal campo di testo e
 >
 >Per un elenco completo dei privilegi e delle descrizioni, consulta [Gestione di utenti, gruppi e dei diritti di accesso](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
-![Autorizzazione di ricerca per un determinato percorso.](assets/image2019-3-21_0-5-47.png) ![Aggiungi una nuova voce per “dam-users” come mostrato da un percorso selezionato nelle colonne verticali.](assets/image2019-3-21_0-6-53.png)
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for &#39;dam-users&#39; as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
 Dopo aver selezionato l’elenco dei privilegi, l’utente può scegliere il tipo di autorizzazione: Nega o Consenti, come mostrato di seguito.
 
@@ -126,7 +126,7 @@ Puoi accedere alla vista dell’interfaccia utente touch Autorizzazioni facendo 
 
 Dopo aver avviato la vista Autorizzazioni, puoi fare clic su **Visualizzazione nodo** o **Visualizzazione filtrata** nell’angolo superiore a destra dello schermo, a seconda delle tue preferenze.
 
-#### Visualizzazione nodo
+#### Visualizzazione nodo {#node-view}
 
 In questa visualizzazione, le ACL vengono presentate per ogni singolo nodo (percorso). Fornisce informazioni su:
 
@@ -136,14 +136,17 @@ Gli utenti possono aggiungere, rimuovere o aggiornare le ACL. Facendo clic su un
 
 ![Visualizzazione nodo](assets/image-2025-2-5_15-26-2.png)
 
-#### Visualizzazione filtrata
+#### Vista di controllo {#audit-view}
 
-Questa visualizzazione consente agli utenti di cercare in modo efficiente le autorizzazioni sul percorso e sulle entità specificati. In questa visualizzazione, gli utenti possono determinare facilmente il tipo di autorizzazioni concesse a un gruppo di entità principali per il percorso selezionato.
-Inoltre, la Visualizzazione filtrata fornisce informazioni approfondite sulle ACL effettive. Le ACL vengono mostrate in associazione al nodo principale del percorso selezionato, tenendo in considerazione l’entità principale selezionata e tutte le entità comuni.
+This view allows users to efficiently search for applied permissions on a specified path and selected principals. In this view, users can clearly identify the type of permissions granted to one or more principals for the selected path.
 
-![Visualizzazione filtrata](assets/FilteredView.png)
+Group membership can optionally be displayed by selecting the dedicated checkbox. When this option is enabled, the permission evaluation will consider all groups of the principal, not only the selected principal.
 
-### Visualizzazione delle autorizzazioni del browser dell’archivio {#the-repository-browser-permissions-view}
+Additionally, the Audit View provides insights into effective ACLs. It displays the ACLs associated with the parent node of the selected path, taking into account the selected principal as well as any common principals.
+
+![Visualizzazione filtrata](assets/audit-view.png)
+
+### The Repository Browser Permissions and Audit view {#the-repository-browser-permissions-and-audit-view}
 
 È possibile accedere alla visualizzazione autorizzazioni tramite il [Browser dell’archivio](/help/implementing/developing/tools/repository-browser.md).
 
@@ -155,7 +158,11 @@ Puoi accedere:
 
 1. Dal Browser dell’archivio, fai clic sulla scheda **Autorizzazioni**
 
-   ![Scheda Autorizzazioni](assets/image-2025-2-5_15-29-33.png)
+   ![Scheda Autorizzazioni](/help/security/assets/permissions-tab.png)
+
+1. The audit view allows users efficiently search for applied permissions on a specified path and selected principals. Group membership can optionally be displayed by selecting the dedicated checkbox.
+
+   ![Audit tab](/help/security/assets/audit-tab.png)
 
 **Nota**: per visualizzare le autorizzazioni sono necessari i diritti di amministratore. Segui i passaggi indicati [qui](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) per accedere alle autorizzazioni.
 
@@ -176,11 +183,11 @@ Si trattava di un sistema che causava confusione su ciò che veniva esattamente 
    <td><code>jcr:read</code></td>
   </tr>
   <tr>
-   <td>Modificare</td>
+   <td>Modifica</td>
    <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
   </tr>
   <tr>
-   <td>Creare</td>
+   <td>Crea</td>
    <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td>
   </tr>
   <tr>
@@ -188,11 +195,11 @@ Si trattava di un sistema che causava confusione su ciò che veniva esattamente 
    <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
   </tr>
   <tr>
-   <td>Leggere le ACL</td>
+   <td>Leggi ACL</td>
    <td><code>jcr:readAccessControl</code></td>
   </tr>
   <tr>
-   <td>Modificare le ACL</td>
+   <td>Modifica ACL</td>
    <td><code>jcr:modifyAccessControl</code></td>
   </tr>
   <tr>
