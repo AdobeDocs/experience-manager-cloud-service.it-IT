@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: a536fc6203a589bef76387d5afbe6a8460630163
+source-git-commit: 3b1afd0b917a49e44f90969841d8c7d09a5158c0
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 72%
+source-wordcount: '4140'
+ht-degree: 70%
 
 ---
 
@@ -33,12 +33,11 @@ Durante la finestra temporale di dichiarazione come obsoleta, Adobe ricorderà a
 >
 >Diverse [API obsolete](#aem-apis) verranno rimosse il **4 maggio 2026**. Rivedi le date e gli impatti principali:
 >
->* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro operativo vengono inviate come promemoria per rimuovere l&#39;utilizzo di queste API.
+>* **A partire dal 26 gennaio 2026**: le e-mail di notifica del Centro azioni vengono inviate come promemoria per rimuovere l&#39;utilizzo di queste API, se una pipeline è stata eseguita di recente.
 >* **26 febbraio 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **sospendono** durante il passaggio **Qualità codice**. Un Responsabile della distribuzione, un Project Manager o un Proprietario business può ignorare il problema per consentire alla pipeline di procedere. *La convalida e il rilascio delle modifiche al codice potrebbero essere rallentati.*
 >* **30 marzo 2026**: le pipeline Cloud Manager che contengono codice che utilizza queste API **non riusciranno** durante il passaggio **Qualità codice**. Le implementazioni verranno bloccate fino alla rimozione dell’utilizzo API obsoleto. *Ciò potrebbe impedire il rilascio di aggiornamenti sensibili al tempo e potrebbe influire sulle operazioni aziendali.*
->* **4 maggio 2026**: gli ambienti che utilizzano ancora API obsolete **non riceveranno aggiornamenti critici della versione di Adobe** e non sono soggetti agli impegni standard di Adobe relativi a prestazioni e disponibilità. Di conseguenza, non riceverai nuove funzioni o correzioni di bug, la stabilità e l’operatività delle applicazioni potrebbero essere influenzate negativamente e l’esposizione al rischio per la sicurezza potrebbe aumentare ulteriormente.
+>* **4 maggio 2026**: gli ambienti che utilizzano ancora API obsolete **non riceveranno aggiornamenti critici della versione di Adobe** e non sono soggetti agli impegni standard di Adobe relativi a prestazioni e disponibilità. Di conseguenza, non riceverai nuove funzioni o correzioni di bug, la stabilità e l’operatività delle applicazioni potrebbero essere influenzate negativamente e l’esposizione al rischio per la sicurezza potrebbe aumentare ulteriormente. Per ricevere nuovamente gli aggiornamenti sul rilascio di Adobe, è necessario eseguire correttamente una pipeline full stack; l’aggiornamento verrà quindi applicato entro pochi giorni.
 >
->Per evitare blocchi di distribuzione, rimuovi l’utilizzo dell’API prima del 30 marzo 2026.
 
 ## Funzionalità obsolete {#deprecated-features}
 
@@ -48,7 +47,7 @@ Le funzionalità nella tabella seguente sono state dichiarate obsolete, ma non s
 | ------------ | ------------------ | ----------- |
 | Sites | [Supporto frammento di contenuto nell’API HTTP di Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Consegna frammento di contenuto con OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>insieme a<br> [OpenAPI per la gestione dei modelli di frammento di contenuto e frammenti di contenuto](/help/headless/content-fragment-openapis.md) |
 | Sites | [Funzioni PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nessuna |
-| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](https://www.aem.live/docs/aem-authoring) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
+| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [Universal Editor](https://www.aem.live/docs/aem-authoring) per la modifica visiva.<br>- [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. |
 | [!DNL Sites] | [API di utilizzo di JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API di utilizzo di Java](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Proprietà di Frammenti di esperienza per **Stato social media**. | La funzione è pianificata per la rimozione a breve. |
 | Sites | [Automazione della configurazione di Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nessuna |
@@ -177,7 +176,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>2/26/2026</td>
   </tr>
     <tr>
-    <td>com.drew.*</td>
+    <td>com.draw.*</td>
     <td>L’estrazione dei metadati da immagini e video dovrebbe essere eseguita tramite Asset Compute nel Cloud Service oppure tramite Apache POI o Apache Tika.</td>
     <td>17/09/2024</td>
     <td>2/26/2026</td>
@@ -220,7 +219,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
-    <td>API obsoleta.</td>
+    <td>Questa API è obsoleta.</td>
     <td>07/10/2024</td>
     <td>9/30/2026</td>
   </tr>
@@ -249,7 +248,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
     <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedded<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.detect <br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika ser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.eseguibile<br>org.apache tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache .tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org ache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.xml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.parser.mp4<br>org.apache.tika.parser.parser <br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf{73 org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment <br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org<br><br></td>
     <td>Questa versione di Apache Tika è obsoleta e pertanto verrà rimossa da Cloud Service. Passa a una versione più recente di Apache Tika.</td>
     <td>4/30/2026</td>
     <td>9/30/2026</td>
@@ -269,7 +268,7 @@ Le API nella tabella seguente (fai clic per espanderle e visualizzarle) sono sta
   <tr>
     <td>org.json</td>
     <td>L’implementazione Apache Johnzon di <a href="https://johnzon.apache.org/index.html">javax.json</a> è consigliata e deve essere utilizzata. </td>
-    <td>30/04/2021</td>
+    <td>4/30/2021</td>
     <td>3/31/2027 (da confermare)</td>
   </tr>
   <tr>
@@ -380,11 +379,13 @@ In questa sezione sono elencate le API che sono state dichiarate obsolete e rimo
 
 Questa sezione tratta le indicazioni per la rimozione delle API relativa a varie API riportate nelle tabelle precedenti.
 
-Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
+Per identificare le API Java obsolete utilizzate dal codice, integra il plug-in Maven [AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) nel progetto Maven ed eseguilo localmente. Il rapporto elenca tutti gli utilizzi API obsoleti rilevati e indica quale bundle OSGi fa riferimento a ciascuna API. Fai riferimento a [questa esercitazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) per scoprire come utilizzare il plug-in Maven.
 
 Anche se è necessario correggere tutte le API obsolete nel tempo, assegna la priorità a tutte le API elencate nella tabella API obsolete con una data di rimozione target del 26 febbraio 2026 (o precedente). Nel rapporto di AEM Analyzer, queste API potrebbero essere visualizzate con una data di rimozione effettiva del 8/31/2025.
 
 Dopo aver aggiornato il codice, verifica che in Cloud Manager non rimanga alcun uso API obsoleto controllando i risultati del passaggio di qualità del codice.
+
+Se gli aggiornamenti non vengono effettuati entro il 4 maggio, non riceverai più gli aggiornamenti delle versioni di AEM. Per ricevere nuovamente gli aggiornamenti sul rilascio di Adobe, è necessario eseguire correttamente la pipeline full stack; l’aggiornamento verrà quindi applicato entro pochi giorni.
 
 ### Linee guida generali
 
@@ -403,7 +404,7 @@ Se stai utilizzando `org.apache.sling.commons.auth` e/o `org.apache.sling.common
 Elenco azioni:
 
 * Se utilizzi ACS AEM Commons, aggiorna alla versione più recente (almeno 6.11.0) e assicurati di utilizzare il classificatore `cloud`.
-* Esegui la migrazione da `org.apache.sling.commons.auth` e/o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
+* Eseguire la migrazione da `org.apache.sling.commons.auth` e/o `org.apache.sling.commons.auth.spi` a `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Rimozione di `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
 
