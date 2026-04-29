@@ -4,10 +4,10 @@ description: Supporto Oauth2 per il servizio di posta in Adobe Experience Manage
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 7af84f36ab8629c6cf016b10534413f8890a9c95
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 100%
+source-wordcount: '964'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,11 @@ ht-degree: 100%
 AEM as a Cloud Service offre il supporto OAuth2 per il servizio di posta integrato, al fine di consentire alle organizzazioni di rispettare i requisiti e-mail sicuri.
 
 Puoi configurare OAuth per più provider di posta elettronica. Di seguito sono riportate le istruzioni dettagliate per configurare il servizio di posta AEM per l’autenticazione tramite OAuth2 con Microsoft Office 365 Outlook. Altri fornitori possono essere configurati in modo simile.
+
+AEM supporta due opzioni di trasporto basate su OAuth2 per Microsoft® 365:
+
+* **SMTP + OAuth2** - Percorso standard che utilizza SMTP con autenticazione OAuth2.
+* **API di Microsoft Graph** - Percorso alternativo che invia messaggi tramite Microsoft Graph quando l&#39;organizzazione non consente l&#39;invio basato su SMTP (ad esempio, quando SMTP AUTH è disabilitato a livello di tenant in Microsoft® 365), che impedisce l&#39;utilizzo di SMTP e OAuth2.
 
 Per ulteriori informazioni sul servizio di posta AEM as a Cloud Service, consulta [Invio di e-mail](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
@@ -152,8 +157,8 @@ Prima di procedere alla configurazione di OAuth sul lato AEM, assicurati di conv
    * `offline_access`
    * `email`
    * `profile`
-1. Crea un file di proprietà OSGI denominato `called com.day.cq.mailer.DefaultMailService.cfg.json`
-nella sezione `/apps/<my-project>/osgiconfig/config` con la seguente sintassi: I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
+1. Creare un file di proprietà OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
+in `/apps/<my-project>/osgiconfig/config` con la sintassi seguente. I valori `smtp.host` e `smtp.port` riflettono la configurazione di rete avanzata, come descritto nel [Tutorial sul servizio e-mail](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
 
    ```
    {
@@ -173,6 +178,81 @@ nella sezione `/apps/<my-project>/osgiconfig/config` con la seguente sintassi: I
 1. Per Outlook, il `smtp.host` valore di configurazione è `smtp.office365.com`
 1. In fase di runtime, passa i segreti `refreshToken values` e `clientSecret` che utilizzano l’[API delle variabili di Cloud Manager](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) oppure utilizza [Cloud Manager per aggiungere variabili](/help/implementing/cloud-manager/environment-variables.md). I valori delle variabili `SECRET_SMTP_OAUTH_REFRESH_TOKEN` e `SECRET_SMTP_OAUTH_CLIENT_SECRET` devono essere definiti.
 
-### Risoluzione dei problemi {#troubleshooting}
+Se si utilizzano SMTP e OAuth2 e la posta elettronica non funziona, vedere [Risoluzione dei problemi](#troubleshooting).
 
-Se il servizio di posta non funziona correttamente, nella maggior parte dei casi sarà necessario rigenerare il `refreshToken` come descritto in precedenza, passando il nuovo valore tramite l’API di Cloud Manager. L’implementazione del nuovo valore richiede alcuni minuti.
+## API di Microsoft Graph per Microsoft® Outlook {#microsoft-graph-api}
+
+Segui gli stessi passaggi per la registrazione all&#39;app Azure descritti in [Microsoft Outlook](#microsoft-outlook), con la seguente differenza nel passaggio 6 (Autorizzazioni API). Utilizzare l&#39;autorizzazione delegata di Microsoft Graph `Mail.Send` invece dell&#39;ambito SMTP di Outlook:
+
+>[!NOTE]
+>
+>La configurazione delle autorizzazioni può evolvere nel tempo. Se non funzionano come previsto, contatta Microsoft®.
+
+* `https://graph.microsoft.com/Mail.Send`
+* `openid`
+* `offline_access`
+* `email`
+* `profile`
+
+### Generazione del token di aggiornamento {#graph-generating-the-refresh-token}
+
+Segui gli stessi passaggi di generazione del token previsti per [SMTP + OAuth2](#generating-the-refresh-token), utilizzando l’ambito di Microsoft Graph nell’URL di autorizzazione e nella richiesta cURL.
+
+**URL autorizzazione** (sostituisci `clientID` e `tenantID` con i tuoi valori):
+
+```
+https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://graph.microsoft.com/Mail.Send%20email%20openid%20profile%20offline_access&state=12345
+```
+
+Nella richiesta del token cURL, sostituisci l’ambito con:
+
+```
+--data-urlencode 'scope=https://graph.microsoft.com/Mail.Send email openid profile offline_access'
+```
+
+### Integrazione con AEM as a Cloud Service {#graph-integration-with-aem-as-a-cloud-service}
+
+1. Creare un file di proprietà OSGI denominato `com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl.cfg.json` in `/apps/<my-project>/osgiconfig/config` con gli ambiti di Microsoft Graph:
+
+   ```
+   {
+       "authUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize",
+       "tokenUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "clientId": "<clientID>",
+       "clientSecret": "$[secret:SECRET_SMTP_OAUTH_CLIENT_SECRET]",
+       "scopes": [
+          "https://graph.microsoft.com/Mail.Send",
+          "openid",
+          "offline_access",
+          "email",
+          "profile"
+       ],
+       "authCodeRedirectUrl": "http://localhost",
+       "refreshUrl": "https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+       "refreshToken": "$[secret:SECRET_SMTP_OAUTH_REFRESH_TOKEN]"
+   }
+   ```
+
+1. Creare un file di proprietà OSGI `com.day.cq.mailer.DefaultMailService.cfg.json` in `/apps/<my-project>/osgiconfig/config` con `oauth.flow` e `graph.flow` impostati su `true`:
+
+   ```
+   {
+    "smtp.host": "smtp.office365.com",
+    "smtp.user": "<mailbox account used as the sender>",
+    "smtp.password": "value not used",
+    "smtp.port": 587,
+    "from.address": "<from address used for sending>",
+    "smtp.ssl": false,
+    "smtp.starttls": false,
+    "smtp.requiretls": false,
+    "debug.email": false,
+    "oauth.flow": true,
+    "graph.flow": true
+   }
+   ```
+
+1. In fase di runtime, passa i segreti `refreshToken` e `clientSecret` che utilizzano l’[API delle variabili di Cloud Manager](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) oppure utilizza [Cloud Manager per aggiungere variabili](/help/implementing/cloud-manager/environment-variables.md). I valori delle variabili `SECRET_SMTP_OAUTH_REFRESH_TOKEN` e `SECRET_SMTP_OAUTH_CLIENT_SECRET` devono essere definiti.
+
+### Risoluzione di problemi {#troubleshooting}
+
+Se il servizio di posta non funziona correttamente, rigenerare `refreshToken`. Utilizza [Generazione del token di aggiornamento](#generating-the-refresh-token) quando utilizzi SMTP e OAuth2 oppure [Generazione del token di aggiornamento](#graph-generating-the-refresh-token) quando utilizzi Microsoft Graph. Passa il nuovo valore tramite API Cloud Manager; l’implementazione può richiedere alcuni minuti.
