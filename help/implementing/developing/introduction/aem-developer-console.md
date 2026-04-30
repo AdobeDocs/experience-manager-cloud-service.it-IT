@@ -1,28 +1,35 @@
 ---
 title: AEM AS A CLOUD SERVICE DEVELOPER CONSOLE - BETA
-description: Scopri CRXDE Lite e AEM as a Cloud Service Developer Console.
+description: Scopri AEM as a Cloud Service Developer Console e il suo set di strumenti di sola lettura per il debug degli ambienti cloud.
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1188'
 ht-degree: 1%
 
 ---
 
+
 # Developer Console (Beta) di AEM as a Cloud Service {#developer-console}
 
->[!NOTE]
->
->Questo articolo descrive un’esperienza rinnovata per AEM Cloud Service Developer Console, attualmente in versione beta. Alcuni clienti possono accedervi facendo clic su un pulsante nella parte superiore dell’interfaccia classica. Adobe ti invita a inviare qualsiasi feedback a `aemcs-new-devconsole-ui-beta@adobe.com`. Per informazioni sul Developer Console classico di AEM, consulta [questo articolo](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
-
-AEM as a Cloud Service Developer Console include una serie di strumenti per il debug in ambienti Cloud. È accessibile tramite un collegamento per ambiente in Cloud Manager.
+AEM as a Cloud Service Developer Console include un set di strumenti di sola lettura per il debug degli ambienti cloud. È accessibile tramite un collegamento per ambiente in Cloud Manager e offre funzioni per visualizzare bundle, impostazioni OSGi, servizi e servlet e altro ancora.
 
 >[!NOTE]
->Il Developer Console di AEM as a Cloud Service non deve essere confuso con il nome simile [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
+>Questo articolo descrive un’esperienza rinnovata per AEM Cloud Service Developer Console, attualmente in versione beta.
+>
+>* Un gruppo limitato di utenti può accedere alla nuova console tramite un pulsante nella parte superiore dell’attuale Developer Console.
+>* Adobe è lieta di ricevere qualsiasi feedback che puoi inviare a `aemcs-new-devconsole-ui-beta@adobe.com`.
+>* Per la documentazione sul Developer Console AEM corrente, consulta [questo articolo.](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
+>* Il Developer Console di AEM as a Cloud Service non deve essere confuso con il nome simile [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
 
+>[!TIP]
+>
+>Developer Console è di sola lettura. Se stai lavorando allo sviluppo locale utilizzando SDK e hai bisogno di modificare le impostazioni OSGi o il contenuto dell’archivio, puoi utilizzare:
+>
+>* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -40,71 +47,89 @@ There are multiple ways of accessing it:
    ```
 -->
 
-Gli sviluppatori possono accedere alle funzioni descritte di seguito:
+## Prerequisiti {#prerequisites}
 
-## Bundle OSGi {#osgi-bundles}
+Developer Console è accessibile solo agli utenti con determinati ruoli in determinati programmi.
 
-![Schermata Nuovi bundle OSGi nella Console per sviluppatori](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+* Per i programmi di produzione, il &quot;Cloud Manager - Ruolo Sviluppatore&quot; nel Adobe Admin Console controlla l’accesso a Developer Console.
+* Per i programmi sandbox, qualsiasi utente con un profilo di prodotto che concede l’accesso ad AEM può utilizzare Developer Console.
+* Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e l’accesso al browser dell’archivio.
 
-* Panoramica dei bundle OSGI distribuiti nel tipo di ambiente selezionato. Consente una ricerca full-text.
-* È utile ottenere informazioni sullo stato effettivo dei bundle nell’ambiente. Puoi ottenere informazioni quali pacchetti esportati, pacchetti importati, servizi utilizzati e altro ancora.
-* Gli sviluppatori desiderano verificare l’ambiente effettivo e verificare se il bundle esegue le operazioni previste.
-* **Caso d&#39;uso di esempio:** Nel pacchetto è specificato un intervallo di versioni di una dipendenza. Qualcosa sta andando storto nella dipendenza. Desideri verificare quale versione della dipendenza viene collegata al bundle. Per verificare, vai ai dettagli del bundle e utilizza l’importazione di bundle/pacchetti per verificare quale versione del bundle o del pacchetto viene utilizzata in fase di esecuzione. Con queste informazioni, puoi regolare l’intervallo di versioni della dipendenza Maven o adattare il codice.
+Per visualizzare i dati dei servizi di authoring e pubblicazione, gli utenti devono essere assegnati anche al &quot;Profilo di prodotto Utenti AEM&quot; o &quot;Amministratori AEM&quot; in entrambi i servizi.
 
-## Pacchetti Java {#java-packages}
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere la [documentazione di Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
-![Scheda Pacchetti Java nell&#39;interfaccia utente della Console di sviluppo](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
+## Scheda Bundle OSGi {#osgi-bundles}
 
-* Un prompt di ricerca che puoi utilizzare per cercare i pacchetti attivi nel sistema OSGI dell’ambiente. In questa posizione puoi vedere quale bundle esporta (o fornisce) il pacchetto e quale importa (o utilizza) il pacchetto. Puoi anche verificare la presenza di pacchetti duplicati (stesso pacchetto, versioni diverse), che in alcuni casi possono causare problemi.
-* **Caso d&#39;uso di esempio:** un servizio personalizzato che utilizza il [caricatore di classe dinamico](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) carica una classe senza specificare una versione. Poiché più bundle esportano versioni diverse, l’implementazione varia, causando modifiche nel comportamento. Lo sviluppatore vuole verificare quali pacchetti sono presenti nell’ambiente senza analizzare il modello di funzione. Cercano il pacchetto e visualizzano tutte le versioni esportate. Questa funzionalità consente di immettere informazioni per un intervallo di versioni migliore.
+La scheda **Bundle OSGi** fornisce una panoramica dei bundle OSGi distribuiti nell&#39;ambiente selezionato e offre una ricerca full-text.
 
-## Servlet {#servlets}
+![Nuova schermata dei bundle OSGi in Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
-![Scheda Servlet nell&#39;interfaccia utente della Console di sviluppo](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
+* La scheda fornisce informazioni sullo stato effettivo dei bundle nell’ambiente, ad esempio pacchetti esportati, pacchetti importati, servizi utilizzati e altro ancora.
+* È ideale controllare lo stato dei bundle per verificare se eseguono le operazioni previste.
 
-* Un prompt di ricerca in cui è possibile specificare un percorso con i selettori e un&#39;estensione con GET o POST. Fornisce quindi i risultati dei servlet in ordine di preferenza, che gestisce la richiesta in Sling.
-* **Caso d&#39;uso di esempio:** disponi di un servlet OSGI che deve essere attivato su richiesta e stampare l&#39;output nella risposta. Tuttavia, invece dell’output previsto, la risposta restituisce vuoto. È necessario verificare se un altro servlet ha la precedenza sul servlet a causa di selettori, `resourceType`, estensioni o classificazione più specifici. Cerchi il percorso previsto e scopri che è attivo un altro servlet con una classificazione più alta. Quindi decidi se puoi ottenere il tuo servlet sopra in classifica aggiungendo selettori, ad esempio.
+**Caso d&#39;uso di esempio:** Supponiamo che tu specifichi un intervallo di versioni per una dipendenza nel bundle. Ma qualcosa non va nella dipendenza e devi controllare quale versione della dipendenza è effettivamente utilizzata dal bundle. Per verificare, apri Developer Console e fai clic sul nome di un bundle nella scheda **Bundle OSGi** per accedere ai dettagli del bundle, quindi utilizza il pannello a soffietto **Importazione dei bundle** per verificare quale versione del bundle o del pacchetto viene utilizzata in fase di esecuzione. Con queste informazioni, puoi regolare l’intervallo di versioni della dipendenza Maven o adattare il codice.
 
-## Servizi {#services}
+## Scheda Pacchetti Java {#java-packages}
 
-![Scheda Servizi nell&#39;interfaccia utente di Console sviluppatori](/help/implementing/developing/introduction/assets/services-dev-console.png)
+La scheda **Pacchetti Java** offre un campo di ricerca per cercare i pacchetti attivi nel sistema OSGi dell&#39;ambiente.
 
-* Simile alla visualizzazione Componenti OSGI, ma basata sui servizi. Puoi cercare rapidamente quali servizi vengono forniti con determinate proprietà.
+![Scheda Pacchetti Java nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
 
-## Componenti OSGi {#osgi-components}
+* Puoi vedere quale bundle esporta (o fornisce) il pacchetto e quali bundle importano (o utilizzano) il pacchetto.
+* Puoi anche verificare la presenza di pacchetti duplicati (stesso pacchetto, versioni diverse), che in alcuni casi possono causare problemi.
 
-![Scheda Componenti OSGi nell&#39;interfaccia utente della Console per sviluppatori](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
+**Caso d&#39;uso di esempio:** Supponiamo che un servizio personalizzato che utilizza il [caricatore di classe dinamico](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) carichi una classe senza specificare una versione. Poiché più bundle esportano versioni diverse, l’implementazione varia, causando modifiche nel comportamento. Si desidera verificare quali pacchetti sono presenti nell&#39;ambiente senza analizzare il modello di feature. Utilizzando questa scheda è possibile cercare il pacchetto e visualizzare tutte le versioni esportate e quindi utilizzare un intervallo di versioni migliore.
 
-* Panoramica dei componenti OSGI presenti nel tipo di ambiente selezionato. Consente una ricerca full-text.
-* Puoi ottenere lo stato live dei componenti OSGI nell’ambiente. Puoi vedere quali servizi soddisfa, il bundle che lo fornisce e il tipo di attivazione (immediata o ritardata).
-* **Caso d&#39;uso di esempio 1:** In qualità di sviluppatore, è necessario verificare se un componente attivato con una configurazione è attivo in un ambiente specifico. Il motivo è che il comportamento previsto non si verifica. È sufficiente cercare il componente nella ricerca e verificare se è attivo o meno.
-* **Caso d&#39;uso di esempio 2:** Vuoi vedere quali componenti predefiniti sono disponibili nell&#39;ambiente e identificare i servizi che supportano. Questa funzionalità consente di saperne di più su Adobe Experience Manager as a Cloud Service. È possibile estrarli nell&#39;elenco dei componenti.
+## Scheda Configurazioni {#configurations}
 
-## Integrazioni {#integrations}
+La scheda **Configurazioni** offre un elenco ricercabile delle configurazioni attive nell&#39;ambiente. Per vedere quali proprietà vengono fornite da ciascuna configurazione, fai clic su di essa e visualizza la pagina dei dettagli.
 
-![Scheda Integrazioni nell&#39;interfaccia utente di Console sviluppatori](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
+![Scheda Configurazioni nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
 
-* Gli amministratori possono generare, rinominare ed eliminare le credenziali del servizio e i token per sviluppatori.
+* **Caso d&#39;uso di esempio:** Supponiamo che si desideri verificare che le configurazioni specificate siano effettivamente presenti nell&#39;ambiente. Se si cerca nella scheda **Configurations** della console e la configurazione non è presente, è possibile controllare il modello di funzionalità, la modalità di esecuzione della configurazione o la cartella.
 
-## Archivio {#repository}
+## Scheda Servlet {#servlets}
 
-* Apre il [Browser dell&#39;archivio](/help/implementing/developing/tools/repository-browser.md).
+La scheda **Servlet** offre un campo di ricerca in cui è possibile specificare un percorso con i selettori e un&#39;estensione con GET o POST. Fornisce quindi un elenco di servlet in ordine di preferenza che gestisce la richiesta in Sling.
 
-## Dump/query stato {#status-dumps-queries}
+![Scheda Servlet nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
 
-![Scheda Dump di stato/Query nell&#39;interfaccia utente di Console sviluppatori](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+**Caso d&#39;uso di esempio:** supponiamo che tu disponga di un servlet OSGi che deve essere attivato su richiesta e stampare l&#39;output nella risposta. Tuttavia, invece dell’output previsto, si ottiene una risposta vuota. È necessario verificare se un altro servlet ha la precedenza sul servlet a causa di selettori, `resourceType`, estensioni o classificazione più specifici. Cerchi il percorso previsto e scopri che è attivo un altro servlet con una classificazione più alta. Puoi quindi decidere se aumentare la classificazione del servlet aggiungendo, ad esempio, selettori.
 
-* Un’immagine full text o JSON dello stato corrente di bundle, pacchetti, configurazioni, servizi, componenti, processi sling o definizioni di Oak.
-* Utile soprattutto se lo sviluppatore ha rilevato uno stato imprevisto e desidera comunicare o documentare questo stato per altri sviluppatori. Il download dell’immagine fornisce un’istantanea dello stato per riferimento successivo.
+## Scheda Servizi {#services}
 
-## Configurazioni {#configurations}
+La scheda **Servizi** fornisce una panoramica dei servizi presenti nell&#39;ambiente selezionato e offre una ricerca full-text.
 
-![Scheda Configurazioni nell&#39;interfaccia utente di Console sviluppatori](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
+![Scheda Servizi nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/services-dev-console.png)
 
-* Un elenco ricercabile di configurazioni attive nell’ambiente. Puoi vedere quali proprietà vengono fornite dalle configurazioni estraendo la pagina dei dettagli.
-* **Caso d&#39;uso di esempio:** uno sviluppatore vuole assicurarsi che le configurazioni specificate siano effettivamente presenti nell&#39;ambiente. Se la configurazione non è presente, è possibile controllare il modello di feature, la modalità di esecuzione della configurazione o la cartella.
+Fai clic su un servizio per visualizzarne i dettagli.
 
-Per i programmi di produzione, il &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console controlla l’accesso ad AEM as a Cloud Service Developer Console. Per i programmi sandbox, qualsiasi utente con un profilo di prodotto che concede l’accesso ad AEM può utilizzare Developer Console. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e l’accesso al browser dell’archivio. Per visualizzare i dati dei servizi Author e Publish, gli utenti devono essere assegnati anche al profilo di prodotto Utenti AEM o Amministratori AEM per entrambi i servizi.
+## Scheda Componenti OSGi {#osgi-components}
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+La scheda **Componenti OSGi** fornisce una panoramica dei componenti OSGi presenti nel tipo di ambiente selezionato e offre una ricerca full-text. Puoi visualizzare lo stato live dei componenti OSGi nell’ambiente e quali servizi soddisfa, il bundle che lo fornisce e il tipo di attivazione (immediata o ritardata).
 
+![Scheda Componenti OSGi nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
+
+* **Caso d&#39;uso di esempio 1:** Supponiamo che sia necessario verificare se un componente attivato con una configurazione è attivo in un ambiente specifico poiché si sta verificando un comportamento imprevisto. È sufficiente cercare il componente nella ricerca e verificare se è attivo o meno.
+* **Caso d&#39;uso di esempio 2:** Supponiamo che tu voglia vedere quali componenti pronti all&#39;uso sono disponibili nell&#39;ambiente e identificare i servizi che supportano per saperne di più su Adobe Experience Manager as a Cloud Service. Puoi controllare i componenti nell’elenco dei componenti.
+
+## Scheda Integrazioni {#integrations}
+
+La scheda **Integrazioni** consente agli amministratori di generare, rinominare ed eliminare le credenziali del servizio e i token per sviluppatori.
+
+![Scheda Integrazioni nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
+
+## Scheda Archivio {#repository}
+
+La scheda **Archivio** apre il browser dell&#39;archivio [.](/help/implementing/developing/tools/repository-browser.md)
+
+## Scheda Dump/Query di stato {#status-dumps-queries}
+
+La scheda **Duplicazioni di stato/query** ti consente di scaricare un’immagine full-text o JSON dello stato corrente di bundle, pacchetti, configurazioni, servizi, componenti, processi sling o definizioni di Oak.
+
+![Scheda Dump di stato/Query nell&#39;interfaccia utente di Developer Console](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+
+È inoltre possibile aprire lo strumento Prestazioni query [.](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
+
+* **Caso d&#39;uso di esempio:** Questa scheda è particolarmente utile se si verifica uno stato imprevisto e si desidera comunicare o documentare tale stato per altri sviluppatori. Il download dell’immagine fornisce un’istantanea dello stato per riferimento successivo.
