@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1142a763f44a2c797f1859c2ad44807bc2935b9
+source-git-commit: 6e0455e325e7988a9f7081878dff6e568479c322
 workflow-type: tm+mt
-source-wordcount: '7245'
-ht-degree: 93%
+source-wordcount: '7384'
+ht-degree: 90%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 93%
    + Note sulla versione funzionale di AEMaaCS {#release-notes}
       + [Note sulla versione corrente](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Note sulla versione 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [Note sulla versione 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [Note sulla versione 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
@@ -260,6 +261,7 @@ ht-degree: 93%
       + [Note sulla versione corrente dell’editor universale](/help/release-notes/universal-editor/current.md)
       + [Anteprima delle note sulla versione per l’editor universale](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Note sulla versione 2026.04.09](/help/release-notes/universal-editor/2026/2026-04-09.md)
          + [Note sulla versione 2026.04.02](/help/release-notes/universal-editor/2026/2026-04-02.md)
          + [Note sulla versione 2026.03.26](/help/release-notes/universal-editor/2026/2026-03-26.md)
          + [Note sulla versione 2026.03.19](/help/release-notes/universal-editor/2026/2026-03-19.md)
@@ -547,7 +549,7 @@ ht-degree: 93%
             + [Panoramica di MSM e Live Copy](/help/sites-cloud/administering/msm/overview.md)
             + [Configurazione della sincronizzazione di una Live Copy](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
             + [Creazione e sincronizzazione di Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md)
-            + [Panoramica Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+            + [Panoramica sulla console Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [Conflitti di rollout](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [Best practice MSM](/help/sites-cloud/administering/msm/best-practices.md)
             + [Risoluzione dei problemi e domande frequenti](/help/sites-cloud/administering/msm/troubleshooting.md)
@@ -567,6 +569,7 @@ ht-degree: 93%
             + [Procedura guidata per creare una copia per lingua](/help/sites-cloud/administering/translation/wizard.md)
             + [Identificazione del contenuto da tradurre](/help/sites-cloud/administering/translation/rules.md)
             + [Configurazione del framework di integrazione della traduzione](/help/sites-cloud/administering/translation/integration-framework.md)
+            + [Configurazione dell’integrazione di AI Translation](/help/sites-cloud/administering/translation/ai-translation-integration.md)
             + [Connetti a Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Best practice per la traduzione](/help/sites-cloud/administering/translation/best-practices.md)
       + [Amministrazione dei tag](/help/sites-cloud/administering/tags.md)
@@ -580,7 +583,7 @@ ht-degree: 93%
       + [Esportazione di frammenti di contenuto in Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Esportazione di frammenti di esperienza in Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integrazione con Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Utilizzo di frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
+      + [Utilizzo dei frammenti di contenuto in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=it)
    + [Telemetria operativa per AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Sperimentazione contestuale](/help/sites-cloud/administering/contextual-experimentation.md)
 + Risorse {#assets}
@@ -596,7 +599,6 @@ ht-degree: 93%
    + [Risoluzione dei problemi di AEM Assets](/help/assets/troubleshoot-aem-assets.md)
    + [Utenti di Assets Collaborator](/help/assets/assets-collaborator-users.md)
    + Gestire le risorse digitali {#manage}
-      + [Contenuto verificato per accedere ai contenuti AEM nelle applicazioni Adobe](/help/assets/content-advisor-adobe-applications.md)
       + [Condividere le risorse](/help/assets/share-assets.md)
       + [Rielaborazione delle risorse](/help/assets/reprocessing.md)
       + [Rilevamento malware](/help/assets/malware-detection.md)
@@ -631,18 +633,6 @@ ht-degree: 93%
       + [Elaborare risorse utilizzando [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
       + [Tag colore per immagini](/help/assets/color-tag-images.md)
       + [Gestire i documenti PDF](/help/assets/manage-pdf-documents.md)
-      + Selettore risorse micro front-end {#asset-selector}
-         + [Panoramica del Selettore risorse](/help/assets/overview-asset-selector.md)
-         + Integrazioni del Selettore risorse {#asset-selector-integration}
-            + [Panoramica delle integrazioni del Selettore risorse](/help/assets/integrate-asset-selector.md)
-            + [Integrare il Selettore risorse con un’applicazione di Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrare il Selettore risorse con un’applicazione non Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrare il Selettore risorse per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [Proprietà del Selettore risorse](/help/assets/asset-selector-properties.md)
-         + [Esempi del Selettore risorse](/help/assets/asset-selector-examples.md)
-         + [Personalizzazioni del Selettore risorse](/help/assets/asset-selector-customization.md)
-         + [Caricamento del Selettore risorse](/help/assets/asset-selector-upload.md)
-         + [Raccolte del Selettore risorse](/help/assets/asset-selector-collections.md)
       + [Selettore di destinazione micro front-end](/help/assets/destination-selector.md)
    + Configurare, amministrare ed estendere [!DNL Assets] {#admin}
       + [Rilevare risorse duplicate](/help/assets/detect-duplicate-assets.md)
@@ -665,7 +655,13 @@ ht-degree: 93%
    + Condividere e distribuire le risorse {#brand-portal}
       + [Configurare [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Pubblicare risorse su [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
-      + [Pubblicare risorse da [!DNL Brand Portal] su [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it)
+      + [Pubblica risorse da [!DNL Brand Portal] a [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=it)
+
+   + Advisor contenuti {#content-advisor}
+      + [Contenuto verificato per accedere ai contenuti AEM nelle applicazioni Adobe e non Adobe](/help/assets/integrate-adobe-non-adobe-applications.md)
+      + [Proprietà di Contenuto verificato](/help/assets/content-advisor-properties.md)
+      + [Personalizzazioni di Contenuto verificato](/help/assets/content-advisor-customization.md)
+      + [Integrazione per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-dynamic-media-open-api.md)
    + Frammenti di contenuto {#content-fragments}
       + [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
       + [Distribuzione headless con frammenti di contenuto e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -857,8 +853,8 @@ ht-degree: 93%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -874,14 +870,14 @@ ht-degree: 93%
          + [Integrare un modulo adattivo con un modello dati modulo](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [Integrare un modulo adattivo con Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + Collegare un modulo adattivo a Microsoft® SharePoint{#connect-to-sharepoint}
-            + [Collegare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Collegare un modulo adattivo a Microsoft® SharePoint](/help/forms/configure-submit-action-sharepoint.md)
             + [Invia a libreria documenti di SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
             + [Invia a elenco SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
             + [Configurare il sito SharePoint con accesso limitato utilizzando l’ambito di autorizzazione](/help/forms/configure-sharepoint-site-limited-access.md)
          + [Inviare un modulo adattivo ad Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Inviare un modulo adattivo all’archiviazione BLOB di Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [Configurare l’azione di invio Invia a endpoint REST per moduli adattivi](/help/forms/configure-submit-action-restpoint.md)
-         + [Inviare un modulo adattivo a Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Inviare un modulo adattivo a Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
          + [Integrare un modulo adattivo AEM con il flusso di lavoro di AEM](/help/forms/configure-submit-action-workflow.md)
          + [Integrazione di AEM Forms con Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + Integrare moduli adattivi con Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
@@ -946,8 +942,8 @@ ht-degree: 93%
       + Componenti di base {#authoring-adaptive-forms-foundation-components}
          + Convertire moduli PDF in moduli adattivi {#afcs}
             + [Introduzione al servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=it)
-            + [Convertire un modulo PDF esistente in un modulo adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
-            + [Revisione dei moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
+            + [Convertire un PDF Form esistente in un Form adattivo](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=it)
+            + [Rivedere e correggere i moduli convertiti](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=it#welcome-to-review-and-correct-editor)
          + Creare un modulo adattivo {#create-an-adaptive-form-on-forms-cs}
             + [Introduzione all’authoring di moduli adattivi](/help/forms/introduction-forms-authoring.md)
             + [Creazione di una guida contestuale per i campi modulo](/help/forms/authoring-in-field-help.md)
@@ -1105,10 +1101,10 @@ ht-degree: 93%
       + [Informazioni sulla dashboard per la realizzazione del valore](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Utilizzo della dashboard per la realizzazione del valore per analizzare le tendenze di utilizzo di moduli e documenti](/help/forms/using-the-value-realization-dashboard.md)
    + Riferimento API per sviluppatori {#aem-forms-developer-api-reference}
-      + [Riferimento API di moduli adattivi](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
-      + [Riferimento API per le comunicazioni del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Riferimento API per JavaScript del Cloud Service di AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
-      + [Riferimento API per Java del Cloud Service di AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+      + [Riferimento API di Forms adattivo](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [Riferimento API per le comunicazioni di AEM Forms Cloud Service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [Riferimento API di AEM Forms Cloud Service JavaScript](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html?lang=it)
+      + [Riferimento API Java di AEM Forms Cloud Service](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
    + Risoluzione di problemi {#troubleshooting-aem-forms-cloud-service}
       + [Installazione e configurazione](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Memorizzazione in cache di Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -1322,9 +1318,9 @@ ht-degree: 93%
       + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=it)
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
-         + [Editor markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
-      + [Struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
+         + [Editor Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
       + [Selettore frammento di contenuto - Proprietà correlate](/help/headless/content-fragment-selector/properties.md)

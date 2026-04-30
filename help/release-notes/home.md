@@ -4,9 +4,9 @@ description: Note sulla versione di Adobe Experience Manager (AEM) as a Cloud Se
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 8b477bea40eec0b0c5aadea68f5b40577a2aa294
+source-git-commit: a1fc361dd4d060bf2aa4a085188ddc28d996c62a
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '678'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Prodotto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versione | 2026.3.0 |
+| Versione | 2026.4.0 |
 | Tipo | Aggiornamenti continui |
 | Data di disponibilità | Aggiornamento continuo |
 
@@ -82,7 +82,7 @@ Dopo aver testato le nuove funzioni nel canale prerelease e aver deciso di utili
 Adobe Experience League offre molte risorse per imparare AEMaaCS.
 
 * [Documentazione di AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it)
-* [Esercitazioni](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=it)
+* [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=it)
 * [Video introduttivo sulle versioni mensili](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) nelle note sulla versione
 
 ## Informazioni principali sulle versioni {#key-articles}
