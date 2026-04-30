@@ -57,7 +57,7 @@ Developer Console è accessibile solo agli utenti con determinati ruoli in deter
 
 Per visualizzare i dati dei servizi di authoring e pubblicazione, gli utenti devono essere assegnati anche al &quot;Profilo di prodotto Utenti AEM&quot; o &quot;Amministratori AEM&quot; in entrambi i servizi.
 
-Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere la [documentazione di Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere la [documentazione di Cloud Manager.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## Scheda Bundle OSGi {#osgi-bundles}
 
