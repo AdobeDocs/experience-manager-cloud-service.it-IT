@@ -25,7 +25,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=it) |
 | AEM as a Cloud Service | Questo articolo |
 | Applicabile a | Modulo adattivo basato su componenti di base. <br> Per il modulo adattivo basato su componenti core, [Fai clic qui](/help/forms/captcha-adaptive-forms-core-components.md). |
 
@@ -346,7 +346,7 @@ Impostare la proprietà **[!UICONTROL af.cloudservices.recaptcha.domain]** della
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Escludere la configurazione cloud reCAPTCHA con OSGi {#override-recaptcha-osgi}
 

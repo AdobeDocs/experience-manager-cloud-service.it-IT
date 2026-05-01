@@ -133,7 +133,7 @@ Ulteriori informazioni su [Sviluppo locale con strumenti di intelligenza artific
 
 Il server MCP di Experience Governance è ora generalmente disponibile (GA). Si integra con gli strumenti per sviluppatori AI e i chatbot che supportano il protocollo MCP (Model Context Protocol), consentendoti di salvaguardare l’integrità del brand e la conformità utilizzando prompt del linguaggio naturale nel chatbot o nell’IDE. Puoi valutare i contenuti (testo, immagini, pagine) in base alle regole di governance del brand e recuperare le configurazioni del brand e i controlli di governance disponibili.
 
-Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Claude Connector {#aem-claude-connector}
 
