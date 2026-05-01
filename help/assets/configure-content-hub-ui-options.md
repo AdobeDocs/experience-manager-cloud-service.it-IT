@@ -160,14 +160,14 @@ Le proprietà abilitate nell’interfaccia utente di configurazione vengono visu
 ### Scheda risorse {#asset-card}
 
 Puoi anche configurare le proprietà dei metadati chiave da visualizzare nella **scheda risorse** fino a un massimo di 6 campi.
-Metadati chiave ![ nella scheda risorse](/help/assets/assets/asset-card-metadata.png)
+Metadati chiave ![&#x200B; nella scheda risorse](/help/assets/assets/asset-card-metadata.png)
 Eseguire la procedura seguente per configurare le proprietà dei metadati in modo che vengano visualizzate nella **[!UICONTROL scheda delle risorse]**:
 
 1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **Asset Card**.
 2. Fare clic su **Aggiungi metadati**. Viene visualizzata la finestra di dialogo **Aggiungi metadati scheda risorse**.
 3. Specifica il nome dei metadati nel campo **Etichetta** e seleziona una proprietà dei metadati nel campo **Metadati**.
 4. Fai clic su **Conferma**, quindi su **Salva** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
-   ![ scheda risorse](/help/assets/assets/configuration-asset-card1.png)
+   ![&#x200B; scheda risorse](/help/assets/assets/configuration-asset-card1.png)
 Allo stesso modo, fai clic su ![modifica](/help/assets/assets/edit-content-hub.svg) disponibile accanto a ciascuna proprietà disponibile, per apportare le modifiche necessarie, oppure fai clic su ![elimina](/help/assets/assets/delete-content-hub.svg) per eliminare eventuali proprietà di metadati esistenti. Fai clic su **Salva** dopo aver apportato tutte le modifiche necessarie per applicarle.
 
 ### Ricerca {#configure-metadata-search-content-hub}
