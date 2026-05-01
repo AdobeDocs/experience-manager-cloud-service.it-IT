@@ -2,10 +2,10 @@
 title: Configurare l’interfaccia utente di Content Hub
 description: Configurare l’interfaccia utente di Content Hub
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
+source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
 workflow-type: tm+mt
-source-wordcount: '2962'
-ht-degree: 7%
+source-wordcount: '3050'
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets consente agli amministratori di configurare le opzioni
 
 * Eventuali collegamenti personalizzati da includere su Content Hub, oltre a risorse, raccolte e informazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472954/?captions=ita&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Prerequisiti {#prerequisites-configuration-ui}
 
@@ -160,19 +160,23 @@ Le proprietà abilitate nell’interfaccia utente di configurazione vengono visu
 ### Scheda risorse {#asset-card}
 
 Puoi anche configurare le proprietà dei metadati chiave da visualizzare nella **scheda risorse** fino a un massimo di 6 campi.
-![metadati chiave nella scheda risorse](/help/assets/assets/asset-card-metadata.png)
-Esegui i seguenti passaggi per configurare le proprietà dei metadati in modo che vengano visualizzate nella **[!UICONTROL scheda delle risorse]**:
+Metadati chiave ![ nella scheda risorse](/help/assets/assets/asset-card-metadata.png)
+Eseguire la procedura seguente per configurare le proprietà dei metadati in modo che vengano visualizzate nella **[!UICONTROL scheda delle risorse]**:
 
 1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **Asset Card**.
 2. Fare clic su **Aggiungi metadati**. Viene visualizzata la finestra di dialogo **Aggiungi metadati scheda risorse**.
 3. Specifica il nome dei metadati nel campo **Etichetta** e seleziona una proprietà dei metadati nel campo **Metadati**.
 4. Fai clic su **Conferma**, quindi su **Salva** per applicare le modifiche in modo che la nuova proprietà venga visualizzata nella pagina dei dettagli della risorsa.
-   ![scheda risorse](/help/assets/assets/configuration-asset-card1.png)
+   ![ scheda risorse](/help/assets/assets/configuration-asset-card1.png)
 Allo stesso modo, fai clic su ![modifica](/help/assets/assets/edit-content-hub.svg) disponibile accanto a ciascuna proprietà disponibile, per apportare le modifiche necessarie, oppure fai clic su ![elimina](/help/assets/assets/delete-content-hub.svg) per eliminare eventuali proprietà di metadati esistenti. Fai clic su **Salva** dopo aver apportato tutte le modifiche necessarie per applicarle.
 
 ### Ricerca {#configure-metadata-search-content-hub}
 
 Gli amministratori possono definire i campi di metadati in cui eseguire le ricerche quando un utente specifica un criterio di ricerca in Content Hub. Esegui i passaggi seguenti:
+
+>[!CAUTION]
+>
+>Si consiglia di selezionare con attenzione i campi contrassegnati come ricercabili. Includi solo i campi che è probabile che gli utenti cerchino e che contribuiscono a restituire risultati significativi. Campi come date e numeri sono più adatti per filtrare e ordinare anziché per i contenuti ricercabili. Contrassegnare troppi campi come ricercabili può influire sulla qualità e sulle prestazioni dei risultati di ricerca.
 
 1. Nell&#39;interfaccia utente di [Configurations](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Aggiungi metadati]**.
 
@@ -228,7 +232,7 @@ Fare clic sulla casella quadrata accanto al **[!UICONTROL colore del testo del b
 
 Nella pagina ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, utilizza la sezione **[!UICONTROL Colori]** per impostare i colori primari e secondari selezionandoli tramite il selettore colore o definendo il codice esadecimale del colore. Questi colori consentono di impostare i colori dello sfondo, del testo e delle icone degli elementi dell&#39;interfaccia utente in modo da allineare l&#39;interfaccia utente di [!DNL Content Hub] al tema del tuo marchio.
 ![colore primario e secondario](/help/assets/assets/primary-secondary-color-content-hub1.png)
-**[!UICONTROL Colore primario]:** La combinazione di colori principale si applica alle azioni di selezione, agli elementi interattivi quali caselle di controllo, barre di ricerca e agli interruttori tra [!DNL Content Hub], inclusi [!DNL Content Hub] home page e [!UICONTROL Configurazione] pagina. Si applica anche alle opzioni di azione disponibili sulle interfacce primarie [!DNL Content Hub], ad esempio le opzioni disponibili su **[!UICONTROL Tutte le pagine Assets]** e **[!UICONTROL Raccolte]**.
+**[!UICONTROL Colore principale]:** La combinazione di colori principale si applica alle azioni di selezione, agli elementi interattivi quali caselle di controllo, barre di ricerca e agli interruttori tra [!DNL Content Hub], inclusi [!DNL Content Hub] pagina iniziale e [!UICONTROL Configurazione] pagina. Si applica anche alle opzioni di azione disponibili sulle interfacce primarie [!DNL Content Hub], ad esempio le opzioni disponibili su **[!UICONTROL Tutte le pagine Assets]** e **[!UICONTROL Raccolte]**.
 
 **[!UICONTROL Colore secondario]:** Nella home page di [!DNL Content Hub], la combinazione di colori secondaria si applica alle opzioni dell&#39;interfaccia utente e ai campi di input disponibili nelle finestre di dialogo. Si applica a tutte le opzioni del menu di configurazione disponibili nella pagina [!UICONTROL Configurazione], ad eccezione delle azioni di selezione, delle caselle di controllo, delle barre di ricerca e dei pulsanti di attivazione/disattivazione.
 
@@ -260,7 +264,7 @@ Se è abilitata la visibilità delle risorse scadute, Content Hub evidenzia anch
 
 ### Rappresentazioni {#renditions-content-hub}
 
-Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+Le rappresentazioni sono versioni personalizzate delle risorse digitali, ad esempio immagini, documenti e così via, progettate per diversi dispositivi e piattaforme per garantire prestazioni ottimali. Ulteriori informazioni sulle [copie trasformate in Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Per farlo, esegui le seguenti operazioni:
 
@@ -280,7 +284,7 @@ Puoi anche aggiungere schede personalizzate in aggiunta alle schede standard **[
 
 1. Nell&#39;interfaccia utente delle [Configurazioni](#access-configuration-options-content-hub), fare clic su **[!UICONTROL Collegamenti personalizzati]**.
 
-1. Fare clic su **[!UICONTROL Aggiungi collegamento]**.
+1. Fai clic su **[!UICONTROL Aggiungi collegamento]**.
 
 1. Specifica il testo nei campi **[!UICONTROL Etichetta]** e **[!UICONTROL URL]**. L&#39;etichetta definita viene visualizzata come scheda e quando si fa clic sull&#39;etichetta, si passa all&#39;URL definito nel campo **[!UICONTROL URL]**.
 
