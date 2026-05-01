@@ -1,15 +1,15 @@
 ---
 title: Come si inviano i dati a un archivio dell’elenco SharePoint all’invio di un modulo adattivo?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
-keywords: Come connettere l’elenco di SharePoint per un modulo adattivo?, Invia a SharePoint, Crea configurazione elenco SharePoint, Utilizza l’azione di invio Invia a SharePoint in un modulo adattivo, Connetti un modulo adattivo a Microsoft&reg; Elenco SharePoint.
+keywords: Come collegare un elenco SharePoint per un modulo adattivo?, Invia a SharePoint, Crea una configurazione elenco SharePoint, Utilizza l’azione Invia a SharePoint in un modulo adattivo, Connetti un modulo adattivo a Microsoft&reg; Elenco SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 1%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -45,12 +45,49 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
 1. Selezionare **[!UICONTROL Crea]** per creare la configurazione cloud per Microsoft® SharePointList.
 
+### Autenticazione basata su certificato {#certificate-based-authentication}
 
-## &#x200B;2. Utilizzare l’opzione Sottometti con modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
+L&#39;autenticazione basata su certificato <span class="preview"> per la configurazione dell&#39;elenco di SharePoint si trova nel programma Early Adopter. Per partecipare al programma per i primi utilizzatori, richiedi l’accesso alla funzionalità inviando una e-mail dal tuo account ufficiale all’indirizzo aem-forms-ea@adobe.com. </span>
+
+Nella procedura guidata di configurazione dell’elenco di SharePoint:
+
+1. Imposta **[!UICONTROL Tipo di autenticazione]** su **Autenticazione basata su certificato**.
+1. Specificare **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Alias certificato]**, **[!UICONTROL ID tenant]** e **[!UICONTROL Nome tenant]**.
+1. Immetti l&#39;**[!UICONTROL URL sito SharePoint]**, verifica la connessione del sito se necessario e seleziona il **[!UICONTROL elenco SharePoint]**.
+1. Fai clic su **[!UICONTROL Connetti]** per verificare la connessione, quindi su **[!UICONTROL Salva e chiudi]** per salvare la configurazione.
+
+Nella schermata seguente viene visualizzata la configurazione dell&#39;elenco di SharePoint con **autenticazione basata su certificato**:
+
+![Configurazione elenco SharePoint con autenticazione basata su certificato](/help/forms/assets/sharepoint-list-certificate-auth-configuration.png){width=50%, height=50%, align=center}
+
+Per preparare il certificato per AEM e Microsoft Azure, esegui i seguenti passaggi in AEM, quindi registra il certificato pubblico in Microsoft Azure.
+
+**In AEM**
+
+1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
+1. Cerca **[!UICONTROL fd-cloudservice]**, seleziona l&#39;utente e fai clic su **[!UICONTROL Proprietà]**.
+1. Apri la scheda **[!UICONTROL Registro chiavi]**. Se un keystore non è ancora stato creato, fare clic su **[!UICONTROL Crea keystore]** e completare le richieste per impostare la password del keystore.
+1. Aggiungi la chiave privata al keystore: espandi **[!UICONTROL Aggiungi chiave privata dal file keystore]** e carica il file **.jks**.
+1. Immetti un **[!UICONTROL Alias]** che corrisponda all&#39;**[!UICONTROL Alias certificato]** nella configurazione dell&#39;elenco di SharePoint, invia il materiale chiave, quindi fai clic su **[!UICONTROL Salva e chiudi]**.
+
+La schermata mostra il keystore dopo l’aggiunta del certificato. L&#39;**[!UICONTROL alias]** deve corrispondere all&#39;**[!UICONTROL alias certificato]** nella configurazione cloud di SharePoint List:
+
+Archivio chiavi utente ![fd-cloudservice con alias certificato](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}
+
+**In Microsoft Azure**
+
+1. Apri la registrazione dell&#39;applicazione e vai a **Certificati e segreti** > **Certificati**.
+1. Selezionare **Carica certificato** e caricare il file del certificato (chiave pubblica) che Azure deve considerare attendibile per l&#39;applicazione.
+
+La schermata mostra la scheda **Certificati** nel portale Azure, dove puoi caricare il certificato per la registrazione all&#39;app:
+
+![Certificati e segreti di registrazione per app Azure](/help/forms/assets/azure-app-registration-sharepoint-certificates.png){width=50%, height=50%, align=center}
+
+## &#x200B;2. Utilizzare l’invio utilizzando il modello dati modulo (FDM) in un modulo adattivo {#use-submit-using-fdm}
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare un elenco SharePoint in un modulo adattivo come, effettua le seguenti operazioni:
 
-1. [Creare un modello dati modulo (FDM) tramite Microsoft](/help/forms/create-form-data-models.md)
+1. [Creare un modello dati modulo (FDM) utilizzando la configurazione di Microsoft® SharePoint List](/help/forms/create-form-data-models.md)
 1. [Configurare il modello dati modulo (FDM) per recuperare e inviare dati](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Creare un modulo adattivo](/help/forms/creating-adaptive-form-core-components.md)
 1. [Configurare l’azione di invio utilizzando un modello di dati del modulo (FDM)](/help/forms/using-form-data-model.md)

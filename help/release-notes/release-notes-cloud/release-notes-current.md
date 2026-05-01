@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483068/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -101,16 +101,18 @@ Ora puoi scoprire, valutare e riutilizzare le risorse approvate da AEM Assets di
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Funzionalità per Accesso anticipato in AEM Forms {#forms-early-access-features}
+### Nuove funzioni in AEM Forms
 
-**Visualizza le etichette per il menu a discesa a selezione multipla in PDF di invio**
-I componenti a discesa a selezione multipla in Adaptive Forms ora eseguono il rendering delle etichette di visualizzazione selezionate in [PDF di invio generato](/help/forms/generate-document-of-record-core-components.md), garantendo che il documento rifletta con precisione ciò che viene visualizzato dagli utenti nel modulo.
+* **Sovrascrivi configurazione cloud reCAPTCHA con OSGi** 
+Gli ID progetto, le chiavi del sito e i segreti di reCAPTCHA Enterprise che conservi con i file di origine possono essere risolti in valori diversi in ogni ambiente Cloud Service dopo [aver aggiunto l&#39;override della configurazione in base al contesto e averli distribuiti tramite Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
-**Accesso facilitato per i componenti di caselle di controllo, pulsanti di scelta e pannelli**
-I componenti core Forms adattivi introducono il markup semantico conforme a WCAG 2.2 per [gruppi di caselle di controllo(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [gruppi di pulsanti di scelta(v2)](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e [componente Pannello](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Questi componenti sfruttano gli elementi HTML `<fieldset>` e `<legend>` per stabilire relazioni significative tra le etichette dei gruppi e le relative opzioni, consentendo un&#39;interpretazione accurata da parte degli assistenti vocali e di altre tecnologie per l&#39;accessibilità.
+* **Autenticazione basata su certificato** 
+I Forms adattivi che vengono inviati a un elenco di Microsoft SharePoint ora supportano [l&#39;autenticazione basata su certificato](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) insieme all&#39;autenticazione URL OAuth. Per l’accesso basato su certificati, registra un alias del certificato e i dettagli del tenant in AEM e Microsoft Azure.
 
-**Supporto del controllo delle versioni in Forms Manager**
-Forms Manager ora [supporta il controllo delle versioni per Forms adattivo (Componenti core e Componenti di base)](/help/forms/manage-form-versions-forms-manager.md), frammenti di modulo, temi, modelli XDP e risorse binarie. Crea versioni, visualizza la cronologia completa delle versioni e ripristina gli stati precedenti delle risorse del modulo direttamente dalla console Forms &amp; Documents.
+* **Miglioramenti dell’editor di regole**
+
+   * L&#39;editor di regole di Forms adattivo ora supporta la grammatica semplificata per le regole [Dispatch Event e On Trigger Event per i trigger predefiniti e per gli eventi personalizzati](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events), pertanto gli autori non sono limitati alla grammatica solo per i trigger personalizzati.
+   * Quando le regole di Adaptive Forms basate sui Componenti core ora includono il componente [File Attachment insieme ad altre condizioni utilizzando AND o OR logic](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), la regola esegue le proprie azioni solo quando lo stato dell&#39;allegato e gli altri controlli valutano tutti come previsto.
 
 ## Elementi di base di [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation}
 
@@ -131,7 +133,7 @@ Ulteriori informazioni su [Sviluppo locale con strumenti di intelligenza artific
 
 Il server MCP di Experience Governance è ora generalmente disponibile (GA). Si integra con gli strumenti per sviluppatori AI e i chatbot che supportano il protocollo MCP (Model Context Protocol), consentendoti di salvaguardare l’integrità del brand e la conformità utilizzando prompt del linguaggio naturale nel chatbot o nell’IDE. Puoi valutare i contenuti (testo, immagini, pagine) in base alle regole di governance del brand e recuperare le configurazioni del brand e i controlli di governance disponibili.
 
-Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Claude Connector {#aem-claude-connector}
 

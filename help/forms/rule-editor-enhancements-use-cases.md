@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 0%
+source-wordcount: '2396'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,7 @@ La tabella seguente elenca i recenti miglioramenti apportati all’editor di reg
 | [Variabili dinamiche](#support-for-dynamic-variables-in-rules) | Crea regole utilizzando variabili che cambiano in base all’input dell’utente o ad altre condizioni. | - Abilita le condizioni di regola flessibili <br> - Riduce la necessità di duplicare la logica <br> - Elimina la necessità di creare campi nascosti |
 | [Regole personalizzate basate su eventi](#custom-event-based-rules-support) | Definisci regole che rispondono a eventi personalizzati oltre i trigger standard. | - Supporta casi d&#39;uso avanzati <br> - Maggiore controllo su quando e come vengono eseguite le regole <br> - Maggiore interattività |
 | [Esecuzione del pannello ripetibile in base al contesto](#context-based-rule-execution-for-repeatable-panels) | Le regole ora vengono eseguite nel contesto corretto per ogni pannello ripetuto, anziché solo l’ultima istanza. | - Applicazione accurata delle regole per ogni istanza ripetuta <br> - Riduzione degli errori nelle sezioni dinamiche <br> - Miglioramento dell&#39;esperienza utente con contenuti ripetuti |
+| [Condizioni When combinate con il componente File allegato](#combined-when-conditions-with-the-file-attachment-component) | Creare una regola When per il componente File Attachment utilizzando Aggiungi condizione e AND o OR, in modo che l&#39;allegato venga valutato insieme ad altre convalide. | - Le azioni vengono eseguite solo quando lo stato dell&#39;allegato e altri controlli vengono valutati come previsto <br> - Meno regole concatenate per gli scenari di caricamento <br> - Authoring più chiaro per i moduli che richiedono file e input convalidati insieme |
 | [Supporto per stringa di query, UTM e parametri del browser](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Crea regole che adattano il comportamento del modulo in base a parametri URL o valori specifici del browser. | - Abilita la personalizzazione in base all&#39;origine o all&#39;ambiente <br> - Utile per flussi specifici di marketing o tracciamento <br> - Non è necessario aggiungere script o personalizzazioni |
 
 >[!NOTE]
@@ -139,7 +140,6 @@ Invece di associare la logica direttamente ai campi, il modulo utilizza un appro
 
 **Implementazione tramite evento di invio e evento all&#39;attivazione**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 Il frammento di accesso viene aggiunto al modulo, contenente campi predefiniti per Nome utente e Password. Nel pulsante **Ottieni OTP** è configurata una regola per visualizzare il **Pannello di convalida**, che include il campo di input per l&#39;immissione e la convalida dell&#39;OTP.
@@ -158,6 +158,10 @@ Quando l’utente invia il modulo con le credenziali corrette e un OTP valido, l
 
 Supporto per eventi personalizzati che consentono agli sviluppatori di creare e attivare eventi personalizzati utilizzabili come condizioni nell’editor di regole.
 
+### Grammatica semplificata per eventi OOTB e personalizzati {#simplified-grammar-for-ootb-and-custom-events}
+
+L&#39;editor di regole avanzato include una **grammatica semplificata** per le regole basate su eventi che utilizzano **evento di invio** e **evento all&#39;attivazione**. In precedenza, questa grammatica si applicava solo a **eventi personalizzati**; gli eventi predefiniti (OOTB) non erano supportati e spesso richiedevano **regole When** per i trigger OOTB e **regole On Trigger Event** per gli eventi personalizzati. Gli eventi OOTB sono ora supportati con la stessa grammatica semplificata, consentendo un pattern di authoring coerente senza passare da **When** a **On Trigger Event** a seconda che il trigger sia OOTB o personalizzato.
+
 ## Esecuzione di regole basate sul contesto per pannelli ripetibili
 
 Forms adattivo supporta l’esecuzione di regole in base al contesto per i pannelli ripetibili. Questo consente di applicare le regole in modo specifico all’istanza del pannello in cui l’utente interagisce, anziché influenzare tutte le istanze o impostare come predefinita l’ultima.
@@ -175,6 +179,26 @@ Nella schermata seguente viene visualizzata la regola per il campo **Numero di p
 Quando la quantità viene modificata, la regola recupera il prezzo unitario del prodotto selezionato e calcola il costo totale solo per quel pannello.
 
 ![Output regola in base al contesto](/help/forms/assets/context-aware-rule-output.png)
+
+## Condizioni When combinate con il componente File allegato {#combined-when-conditions-with-the-file-attachment-component}
+
+L&#39;editor di regole avanzato supporta **Quando** regole che combinano il componente **File allegato** con altre condizioni utilizzando la logica **AND** o **OR**. **Aggiungi condizione** nella clausola **When** può includere lo stato dell&#39;allegato del file insieme ai controlli sugli altri campi o alla convalida del pannello, pertanto un&#39;azione viene eseguita solo quando viene soddisfatta ogni condizione selezionata.
+
+**Scenario**: un modulo di registrazione per animali domestici raccoglie **ID animale**, **Nome animale** e **Categoria animale** e include un allegato di file **Aggiungi foto**. Il modulo esegue un&#39;azione, ad esempio cancella o aggiorna **Aggiungi foto**, quando l&#39;allegato modifica **e** le condizioni configurate negli altri campi (i relativi valori) sono soddisfatte.
+
+**Implementazione tramite le condizioni When con il componente File Attachment nell&#39;editor di regole**
+
+Regola configurata nell&#39;oggetto di destinazione, ad esempio **Aggiungi foto**. La sezione **When** utilizza **Add Condition** per combinare il trigger di file allegato con le condizioni di uno o più altri campi, pertanto l&#39;azione dipende sia dall&#39;allegato che dai valori dei campi.
+
+Nella schermata seguente viene visualizzata la condizione **When** con più condizioni e opzioni **Add Condition**:
+
+![Quando la regola presenta più condizioni e Aggiungi condizione](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+Quando la clausola **When** restituisce true per la logica **AND** o **OR** configurata, la regola esegue l&#39;azione configurata.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+Quando **ID animale** contiene `101`, l&#39;allegato **Aggiungi foto** viene cancellato; analogamente, quando **Nome animale** contiene `a`, l&#39;allegato viene cancellato.
 
 ## Regole basate su URL e parametri di browser in Adaptive Forms
 

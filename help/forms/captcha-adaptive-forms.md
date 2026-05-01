@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | Questo articolo |
 | Applicabile a | Modulo adattivo basato su componenti di base. <br> Per il modulo adattivo basato su componenti core, [Fai clic qui](/help/forms/captcha-adaptive-forms-core-components.md). |
 
@@ -346,7 +346,65 @@ Impostare la proprietà **[!UICONTROL af.cloudservices.recaptcha.domain]** della
 }
 ```
 
-Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
+
+## Escludere la configurazione cloud reCAPTCHA con OSGi {#override-recaptcha-osgi}
+
+Per utilizzare ID progetto, chiavi del sito o segreti diversi per ambiente, aggiungi una configurazione OSGi per **[!UICONTROL Provider sostituzione configurazione in base al contesto Apache Sling: configurazione OSGi]**.
+
+### Aggiungi la sostituzione OSGi nel progetto {#override-recaptcha-steps}
+
+1. Clona l’archivio Git di Cloud Manager per il progetto AEM.
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. Apri l’archivio clonato in un editor di testo.
+
+1. Vai alla cartella `ui.config` nell&#39;applicazione (sostituisci `<your-application-folder>` con il nome della cartella in `/apps` nel progetto):
+
+   * **Per l&#39;autore:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **Per la pubblicazione:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > Creare le cartelle `osgiconfig`, `config.author` e `config.publish`, se non sono già presenti.
+
+1. Crea il file di override OSGi in entrambe le cartelle in modalità di esecuzione, utilizzando lo stesso nome file in ciascuna:
+
+   * **Per l&#39;autore** nella cartella `config.author`, creare `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+   * **Per la pubblicazione:** nella cartella `config.publish`, creare `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+
+1. Incolla il seguente JSON in ciascun file (o, se necessario, regola separatamente il contenuto di authoring e pubblicazione). In ogni percorso in `overrides`, sostituisci `<environment-name>` con il nome della configurazione cloud reCAPTCHA Enterprise. Utilizza la sintassi di override [Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax).
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >Aggiungi `projectId`, `siteKey` e `secretKey` come variabili di ambiente e segreti in Cloud Manager in modo che vengano applicati a **Author**, **Preview** e **Publish** (utilizza **Passaggio applicato** nella finestra di dialogo **Configurazione ambiente**). Vedere [Variabili di ambiente in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+   ![Sostituzione Recaptcha](/help/forms/assets/recaptcha-override.png)
+
+1. Effettua il commit e invia le modifiche:
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. Esegui la pipeline Cloud Manager che distribuisce questo archivio. Dopo la distribuzione, l&#39;override fornisce `projectId`, `siteKey` e `secretKey` dalle variabili e dai segreti definiti per tale ambiente.
 
 ## Consulta anche {#see-also}
 
