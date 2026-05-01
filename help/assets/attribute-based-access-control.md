@@ -38,7 +38,7 @@ Alcuni dei vantaggi principali del controllo degli accessi basato su attributi i
 * Supporta la governance scalabile tra marchi e aree geografiche
 * Migliora la gestione delle risorse
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475422/?captions=ita&learn=on&enablevpops){transcript=true}
 
 ## Come abilitare il controllo degli accessi basato su attributi {#enable-attribute-based-access-control}
 
