@@ -6,9 +6,9 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 2b801c084305873790fa313ce42cb8af34db1069
 workflow-type: tm+mt
-source-wordcount: '5363'
+source-wordcount: '5461'
 ht-degree: 38%
 
 ---
@@ -108,7 +108,7 @@ Puoi eseguire l’autenticazione senza definire alcune delle proprietà IMS se:
 
 È possibile integrare Asset Selector (Selettore risorse) con diverse applicazioni, tra cui:
 
-* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrare Asset Selector con un&#39;applicazione  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrare il Selettore risorse con un’applicazione non Adobe](#adobe-non-app-integration)
 * [Integrazione per Dynamic Media con funzionalità OpenAPI](#adobe-app-integration-polaris)
 
@@ -131,7 +131,7 @@ Utilizzare i seguenti prerequisiti se si integra Asset Selector con un&#39;appli
 
 Nell&#39;esempio seguente viene illustrato l&#39;utilizzo di Asset Selector durante l&#39;esecuzione di un&#39;applicazione [!DNL Adobe] in Unified Shell o quando è già stato generato `imsToken` per l&#39;autenticazione.
 
-Includi il pacchetto Asset Selector nel codice utilizzando il tag `script`, come mostrato nelle _righe 6-15_ dell&#39;esempio seguente. Una volta caricato lo script, la variabile globale `PureJSSelectors` è disponibile per l’uso. Definisci il selettore risorse [proprietà](#asset-selector-properties) come mostrato nelle _righe 16-23_. Le proprietà `imsOrg` e `imsToken` sono entrambe necessarie per l&#39;autenticazione nell&#39;applicazione Adobe. La proprietà `handleSelection` è utilizzata per gestire le risorse selezionate. Per eseguire il rendering del Selettore risorse, chiama la funzione `renderAssetSelector` come indicato nella _riga 17_. Il Selettore risorse viene visualizzato nell’`<div>`elemento contenitore, come illustrato nelle _righe 21 e 22_.
+Includi il pacchetto Asset Selector nel codice utilizzando il tag `script`, come mostrato nelle _righe 6-15_ dell&#39;esempio seguente. Una volta caricato lo script, la variabile globale `PureJSSelectors` è disponibile per l’uso. Definisci il selettore risorse [proprietà](/help/assets/content-advisor-properties.md) come mostrato nelle _righe 16-23_. Le proprietà `imsOrg` e `imsToken` sono entrambe necessarie per l&#39;autenticazione nell&#39;applicazione Adobe. La proprietà `handleSelection` è utilizzata per gestire le risorse selezionate. Per eseguire il rendering del Selettore risorse, chiama la funzione `renderAssetSelector` come indicato nella _riga 17_. Il Selettore risorse viene visualizzato nell’`<div>`elemento contenitore, come illustrato nelle _righe 21 e 22_.
 
 Seguendo questi passaggi è possibile utilizzare Asset Selector con l&#39;applicazione [!DNL Adobe].
 
@@ -418,7 +418,7 @@ Le proprietà `rootPath` e `path` non devono far parte di Dynamic Media con funz
 aemTierType:[1: "delivery"]
 ```
 
-Questa configurazione ti consente di visualizzare tutte le risorse approvate senza cartelle o come struttura semplice. Per ulteriori informazioni, passa alla proprietà `aemTierType` in [Proprietà selettore risorse](#asset-selector-properties)
+Questa configurazione ti consente di visualizzare tutte le risorse approvate senza cartelle o come struttura semplice. Per ulteriori informazioni, passa alla proprietà `aemTierType` in [Proprietà selettore risorse](/help/assets/content-advisor-properties.md).
 
 +++
 
@@ -561,7 +561,7 @@ Per ottenere il nome, è necessario eseguire un’attività una tantum. Effettua
 
 >[!ENDTABS]
 
-## Proprietà del Selettore risorse {#asset-selector-properties}
+## Proprietà del Selettore risorse {#content-advisor-properties}
 
 Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rendering. Nella tabella seguente sono elencate le proprietà che è possibile utilizzare per personalizzare e utilizzare il Selettore risorse.
 
@@ -576,7 +576,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *selectedAssets* | Array `<Object>` | No |                 | Specifica le risorse selezionate quando viene eseguito il rendering del Selettore risorse. È necessario un array di oggetti che contenga una proprietà ID delle risorse. Ad esempio, `[{id: 'urn:234}, {id: 'urn:555'}]` Deve essere disponibile una risorsa nella directory corrente. Se devi utilizzare una directory diversa, specifica anche un valore per la proprietà `path`. |
 | *acvConfig* | Oggetto | No | | Proprietà Visualizzazione raccolta risorse che contiene un oggetto contenente una configurazione personalizzata per ignorare le impostazioni predefinite. Inoltre, questa proprietà viene utilizzata con la proprietà `rail` per abilitare la visualizzazione della barra del visualizzatore risorse. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |                 | Se le traduzioni OOTB non sono sufficienti per le esigenze dell&#39;applicazione, è possibile esporre un&#39;interfaccia tramite la quale è possibile passare i propri valori localizzati personalizzati tramite la proprietà `i18nSymbols`. Il passaggio di un valore tramite questa interfaccia sostituisce le traduzioni predefinite fornite e utilizza le tue. Per eseguire la sostituzione, è necessario passare un oggetto valido del [Descrittore del messaggio](https://formatjs.io/docs/react-intl/api/#message-descriptor) alla chiave di `i18nSymbols` che desideri sostituire. |
-| *intl* | Oggetto | No | | Il selettore risorse fornisce le traduzioni OOTB predefinite. È possibile selezionare la lingua di traduzione fornendo una stringa di lingua valida attraverso la proprietà `intl.locale`. Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe di lingua supportate seguono i [Codici - ISO 639](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione di nomi di lingue standard. </br></br> Elenco delle lingue supportate: Inglese - ‘en-us’ (impostazione predefinita) Spagnolo - ‘es-es’ Tedesco - ‘de-de’ Francese - ‘fr-fr’ Italiano - ‘it-it’ Giapponese - ‘ja-jp’ Coreano - ‘ko-kr’ Portoghese - ‘pt-br’ cinese (tradizionale) - ‘zh-cn’ Cinese (Taiwan) - ‘zh-tw’ |
+| *intl* | Oggetto | No | | Il selettore risorse fornisce le traduzioni OOTB predefinite. È possibile selezionare la lingua di traduzione fornendo una stringa di lingua valida attraverso la proprietà `intl.locale`. Ad esempio: `intl={{ locale: "es-es" }}` </br></br> Le stringhe delle impostazioni internazionali supportate seguono [ISO 639 - Codici](https://www.iso.org/iso-639-language-codes.html) per la rappresentazione dei nomi degli standard delle lingue. </br></br> Elenco delle lingue supportate: inglese - &#39;en-us&#39; (impostazione predefinita) spagnolo - &#39;es-es&#39; tedesco - &#39;de-de&#39; francese - &#39;fr-fr&#39; italiano - &#39;it-it&#39; giapponese - &#39;ja-jp&#39; coreano - &#39;ko-kr&#39; portoghese - &#39;pt-br&#39; cinese (tradizionale) - &#39;zh-cn&#39; cinese (Taiwan) - &#39;zh-tw&#39; |
 | *repositoryId* | Stringa | No | &#39;&#39; | Archivio da cui il Selettore risorse carica il contenuto. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | Ti consente di aggiungere un elenco di archivi AEM aggiuntivi. Se non vengono fornite informazioni in questa proprietà, vengono considerati solo la libreria di file multimediali o gli archivi di AEM Assets. |
 | *hideTreeNav* | Booleano | No |  | Specifica se mostrare o nascondere la barra laterale di navigazione della struttura delle risorse. Viene utilizzata solo nella vista modale e quindi questa proprietà non influisce sulla visualizzazione della barra. |
@@ -589,7 +589,7 @@ Puoi utilizzare le proprietà del Selettore risorse per personalizzarne il rende
 | *onFilterSubmit* | Funzione | No | | Richiamata con gli elementi filtro poiché l’utente modifica criteri di filtro diversi. |
 | *selectionType* | Stringa | No | Celibe/Nubile | Configurazione per la selezione `single` o `multiple` di risorse alla volta. |
 | *trascinamentoOpzioni.inserisco nell&#39;elenco Consentiti di* | booleano | No | | La proprietà viene utilizzata per consentire o negare il trascinamento di risorse non selezionabili. |
-| *aemTierType* | Stringa | No |  | Consente di scegliere se visualizzare le risorse dal livello di consegna, dal livello di authoring o da entrambi. Sintassi <br><br>: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Ad esempio, se vengono utilizzati entrambi `["author","delivery"]`, il commutatore dell&#39;archivio visualizza le opzioni sia per l&#39;autore che per la consegna. |
+| *aemTierType* | Stringa | No |  | Consente di scegliere se visualizzare le risorse dal livello di consegna, dal livello di authoring o da entrambi. <br><br> Sintassi: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Ad esempio, se vengono utilizzati entrambi `["author","delivery"]`, il commutatore dell&#39;archivio visualizza le opzioni sia per l&#39;authoring che per la consegna. |
 | *handleNavigateToAsset* | Funzione | No | | È una funzione di callback per gestire la selezione di una risorsa. |
 | *noWrap* | Booleano | No | | La proprietà *noWrap* consente di eseguire il rendering del selettore risorse nel pannello della barra laterale. Se questa proprietà non è menzionata, per impostazione predefinita viene eseguita la visualizzazione *Finestra di dialogo*. |
 | *dimensioneFinestraDiDialogo* | acquisizione di piccole, medie, grandi, a schermo intero o intero | Stringa | Facoltativo | È possibile controllare il layout specificandone le dimensioni utilizzando le opzioni specificate. |

@@ -4,10 +4,10 @@ description: Scopri i concetti chiave, ad esempio perché utilizzare Dynamic Med
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 99%
+source-wordcount: '1127'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Dynamic Media con funzionalità OpenAPI pone DAM al centro di un ecosistema agil
 
 Dynamic Media con funzionalità OpenAPI offre i seguenti vantaggi chiave:
 
-* **Integrazioni dirette**: Dynamic Media con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare facilmente la consegna delle risorse con le applicazioni](/help/assets/integrate-dynamic-media-open-apis.md). Le applicazioni includono sia quelle di Adobe che quelle di terze parti. Fornisce un’[interfaccia utente del selettore delle risorse di micro front-end](/help/assets/overview-asset-selector.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
+* **Integrazioni dirette**: Dynamic Media con funzionalità OpenAPI offre un set completo di API di ricerca e consegna. Consente agli sviluppatori di [integrare facilmente la consegna delle risorse con le applicazioni](/help/assets/integrate-dynamic-media-open-apis.md). Le applicazioni includono sia quelle di Adobe che quelle di terze parti. Fornisce un&#39;interfaccia di [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) per cercare e selezionare le risorse approvate. Il selettore può essere integrato facilmente con qualsiasi applicazione basata su framework JavaScript come React JS, Angular JS e Vanilla JS.
 
 * **Gestione centralizzata delle risorse digitali**: DAM è l’unica fonte di verità per tutte le risorse digitali. Le risorse digitali vengono gestite centralmente in AEM Assets e distribuite alle applicazioni di consumo mediante riferimento utilizzando gli URL di consegna, senza copiare i file binari delle risorse.
 
@@ -90,7 +90,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Approvare risorse in Experience Manager Assets" src="./assets/approved-assets.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/approve-assets.md"> <strong>Approvare risorse in Experience Manager Assets</strong> </a>
+      <a href="/help/assets/approve-assets.md">
+      <strong>Approva risorse in Experience Manager Assets</strong>
+      </a>
    </div>
    <p>
       <em>Approva le risorse in AEM Assets per semplificare la gestione delle risorse, garantendo un processo controllato ed efficiente per la gestione delle risorse.</em>
@@ -101,18 +103,22 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Integrare AEM Assets con le applicazioni a valle" src="./assets/asset-selector-integration.png" />
    </a>
    <div>
-      <a href="/help/assets/integrate-dynamic-media-open-apis.md"> <strong>Integrare AEM Assets con le applicazioni a valle</strong> </a>
+      <a href="/help/assets/integrate-dynamic-media-open-apis.md">
+      <strong>Integrare AEM Assets con le applicazioni downstream</strong>
+      </a>
    </div>
    <p>
-      <em>Integra la tua interfaccia utente personalizzata con l’archivio di Experience Manager Assets utilizzando le API di ricerca e consegna oppure utilizza il selettore delle risorse micro front-end di Adobe.</em>
+      <em>Integrare l'interfaccia utente personalizzata con l'archivio di Experience Manager Assets utilizzando le API di ricerca e distribuzione oppure utilizzare Contenuto verificato di Adobe.</em>
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Selettore risorse di Adobe" src="./assets/asset-selector-prereqs.png" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Adobe Content Advisor" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md"> <strong>Selettore risorse micro front-end di Adobe</strong> </a>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Contenuto verificato di Adobe</strong>
+      </a>
    </div>
    <p>
       <em>Interfaccia utente che interagisce con l’archivio di AEM Assets per cercare le risorse e utilizzarle nell’esperienza di authoring dell’applicazione.</em>
@@ -129,7 +135,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Cercare risorse nell’archivio Experience Manager Assets" src="./assets/search-assets-api-overview.png" />
    </a>
    <div>
-      <a href="/help/assets/search-assets-api.md"> <strong>Cercare risorse nell’archivio di Experience Manager Assets</strong> </a>
+      <a href="/help/assets/search-assets-api.md">
+      <strong>Cercare risorse nell'archivio di Experience Manager Assets</strong>
+      </a>
    </div>
    <p>
       <em>Cerca le risorse nell’archivio di AEM Assets in modo che possano essere consegnate alle applicazioni a valle.</em>
@@ -140,7 +148,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Consegnare risorse alle applicazioni a valle" src="./assets/delivery-url.png" />
    </a>
    <div>
-      <a href="/help/assets/deliver-assets-apis.md"> <strong>Consegnare risorse alle applicazioni a valle</strong> </a>
+      <a href="/help/assets/deliver-assets-apis.md">
+      <strong>Distribuisci risorse alle applicazioni a valle</strong>
+      </a>
    </div>
    <p>
       <em>Consegna le risorse alle applicazioni a valle integrate utilizzando un URL di consegna.</em>
@@ -151,7 +161,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Limitare l’accesso alle risorse in Experience Manager" src="./assets/restricted-access.png" />
    </a>
    <div>
-      <a href="/help/assets/restrict-assets-delivery.md"> <strong>Limitare l’accesso alle risorse in Experience Manager</strong> </a>
+      <a href="/help/assets/restrict-assets-delivery.md">
+      <strong>Limita l'accesso alle risorse in Experience Manager</strong>
+      </a>
    </div>
    <p>
       <em>L’amministratore DAM o i responsabili del brand limitano l’accesso configurando i ruoli per le risorse approvate nell’istanza di authoring di AEM as a Cloud Service.</em>
@@ -165,7 +177,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Integrare AEM Assets remoto con AEM Sites" src="./assets/connected-assets-rdam.png" />
    </a>
    <div>
-      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md"> <strong>Integrare AEM Assets remoto con AEM Sites</strong> </a>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>Integrare AEM Assets remoto con AEM Sites</strong>
+      </a>
    </div>
    <p>
       <em>Scopri come integrare AEM Assets remoto con l’ambiente AEM Sites. </em>
@@ -176,7 +190,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Domande frequenti su Dynamic Media con funzionalità OpenAPI" src="./assets/dynamic-media-faqs.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/dynamic-media-open-apis-faqs.md"> <strong>Domande frequenti su Dynamic Media con funzionalità OpenAPI</strong> </a>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>Domande frequenti su Dynamic Media con funzionalità OpenAPI</strong>
+      </a>
    </div>
    <p>
       <em>Ottieni una risposta alle domande più frequenti su Dynamic Media con funzionalità OpenAPI.</em>
@@ -187,7 +203,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
    <img alt="Configurare domini personalizzati" src="./assets/configure-custom-domain.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/configure-custom-domain.md"> <strong>Configurare domini personalizzati</strong> </a>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>Configura dominio personalizzato</strong>
+      </a>
    </div>
    <p>
       <em>Se AEM as a Cloud Service viene fornito con un dominio predefinito, puoi personalizzarlo in base alle tue esigenze.</em>

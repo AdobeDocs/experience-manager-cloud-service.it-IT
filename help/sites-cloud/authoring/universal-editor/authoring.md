@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 12%
+source-wordcount: '3101'
+ht-degree: 13%
 
 ---
 
@@ -64,7 +64,7 @@ Per modificare il testo nella posizione desiderata, fai doppio clic o tocca due 
 
 Il contorno sottile di colore blu chiaro diventa un contorno blu scuro per indicare la selezione e viene visualizzato un cursore. Apportare le modifiche e premere Invio/Ritorna o selezionare all&#39;esterno della casella di testo per salvare le modifiche.
 
-Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel pannello delle proprietà [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Puoi anche modificare il testo nel pannello.
+Quando selezioni il componente testo, i relativi dettagli vengono visualizzati nel pannello [proprietà.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Potete anche modificare il testo nel pannello.
 
 ![Modifica del testo nel pannello delle proprietà](assets/ue-editing-text-component-rail.png)
 
@@ -124,7 +124,7 @@ L’editor Rich Text di Universal Editor consente all’autore di applicare la f
 * **Scollega**
    * Rimuovi collegamento dal testo selezionato.
 * **Immagine**
-   * Specifica un URL o utilizza il [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) per selezionare una risorsa da AEM.
+   * Specificare un URL o utilizzare [Contenuto verificato](/help/assets/integrate-adobe-non-adobe-applications.md) per selezionare una risorsa da AEM.
 * **Tabella**
    * Utilizza il menu a discesa per inserire una nuova tabella del numero di colonne e righe selezionato o per inserire e rimuovere nuove colonne o righe.
 * **Allineamento**
@@ -152,7 +152,7 @@ Puoi visualizzarne i dettagli nel pannello [proprietà.](/help/sites-cloud/autho
 ![Modifica dei file multimediali](assets/ue-edit-media.png)
 
 1. Tocca o fai clic sull’anteprima dell’immagine selezionata nel pannello proprietà.
-1. Viene visualizzata la finestra [selettore risorse](/help/assets/overview-asset-selector.md#using-asset-selector) che consente di selezionare una risorsa.
+1. Viene visualizzata la finestra [Contenuto verificato](/help/assets/integrate-adobe-non-adobe-applications.md) che consente di selezionare una risorsa.
 1. Seleziona per selezionare una nuova risorsa.
 1. Seleziona **Seleziona** per tornare al pannello delle proprietà in cui è stata sostituita la risorsa.
 
@@ -304,11 +304,11 @@ Selezionare i pulsanti Annulla o Ripristina per annullare o ripristinare l&#39;u
 
 ### Copiare e incollare {#copy-paste}
 
-È possibile copiare e incollare i componenti che si trovano all&#39;interno di [&#x200B; contenitori.](/help/implementing/universal-editor/field-types.md#container) Questo è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o ha filtri che consentono di incollare il componente.
+È possibile copiare e incollare i componenti che si trovano all&#39;interno di [contenitori.](/help/implementing/universal-editor/field-types.md#container) Ciò è possibile solo se il contenitore di destinazione non ha [filtri configurati](/help/implementing/universal-editor/filtering.md) o dispone di filtri che consentono di incollare il componente.
 
 Copiare e incollare possono essere nella stessa scheda del browser o tra schede del browser, a condizione che le schede siano già aperte. Non è possibile copiare un elemento e quindi aprire una nuova scheda del browser per incollarlo.
 
-![Icona copia](assets/copy.png)
+![Icona Copia](assets/copy.png)
 ![Icona Incolla](assets/paste.png)
 
 1. Seleziona un componente nell’editor o nella struttura del contenuto.
