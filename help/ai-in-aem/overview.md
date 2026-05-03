@@ -1,13 +1,13 @@
 ---
 title: IA in AEM as a Cloud Service
-description: Scopri l’intelligenza artificiale in Adobe Experience Manager as a Cloud Service
+description: Scopri l’IA in Adobe Experience Manager as a Cloud Service.
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 48%
+source-wordcount: '535'
+ht-degree: 42%
 
 ---
 
@@ -24,7 +24,7 @@ L&#39;Assistente di [IA in Adobe Experience Manager](/help/implementing/cloud-ma
 
 AEM fornisce una serie di [agenti](/help/ai-in-aem/agents/overview.md) per accelerare la creazione dei contenuti e orchestrare automaticamente le modifiche:
 
-* [Agente esperienza marchio](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [Agente di Content Advisor](/help/ai-in-aem/agents/content-advisor/overview.md)
 * [Agente di governance](/help/ai-in-aem/agents/governance/overview.md)
 
@@ -59,6 +59,10 @@ L’intelligenza artificiale generativa viene utilizzata in AEM:
 
   Per le risorse digitali puoi utilizzare l’IA per assegnare automaticamente i tag descrittivi, anziché affidarti all’input manuale. Questi tag generati dall’IA migliorano la qualità dei metadati, rendendo le risorse più facili da cercare, classificare e consigliare. Questo approccio non solo migliora l’efficienza eliminando l’assegnazione manuale dei tag, ma garantisce anche coerenza e scalabilità su grandi volumi di contenuto digitale.
 
+* [Integrazione traduzione IA](/help/sites-cloud/administering/translation/ai-translation-integration.md)
+
+  L’integrazione della traduzione basata su IA consente di utilizzare un modello in linguaggio di grandi dimensioni (LLM, Large Language Model) come servizio di traduzione per i contenuti creati in Adobe Experience Manager. Puoi collegare AEM al provider LLM (a partire da Microsoft Azure OpenAI), riutilizzare gli stessi flussi di lavoro di traduzione degli altri connettori e, facoltativamente, caricare guide di stile per la traduzione in modo che AEM possa generare regole che mantengano il tono, la terminologia e il linguaggio del brand coerenti tra le diverse lingue.
+
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
@@ -67,7 +71,7 @@ L’intelligenza artificiale generativa viene utilizzata in AEM:
 
 Sono disponibili molte risorse, tra cui:
 
-* [Panoramica sull’intelligenza artificiale generativa di Adobe](https://www.adobe.com/it/ai/overview.html)
+* [Panoramica di Adobe AI](https://www.adobe.com/it/ai/overview.html)
 
 * [IA responsabile in Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
