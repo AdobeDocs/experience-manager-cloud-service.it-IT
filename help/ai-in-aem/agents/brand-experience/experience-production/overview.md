@@ -4,7 +4,7 @@ description: Scopri in che modo l’agente di produzione Experience in AEM conse
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
+source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 5%
@@ -56,4 +56,4 @@ L&#39;agente è in grado di lavorare con altre competenze dell&#39;agente, ad es
 
 Le seguenti risorse possono essere utili mentre continui a esplorare Experience Production Agent:
 
-* È inoltre possibile utilizzare la [cartella di lavoro agente di produzione esperienza](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) per istruzioni pratiche guidate.
+* È inoltre possibile utilizzare la [cartella di lavoro agente di produzione esperienza](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/) per istruzioni pratiche guidate.
