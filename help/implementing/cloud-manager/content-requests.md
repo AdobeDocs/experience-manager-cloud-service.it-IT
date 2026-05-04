@@ -120,7 +120,7 @@ Come indicato nella sezione precedente [Varianze delle richieste di contenuto di
 
 ### Regole di filtro del traffico per gestire le richieste di contenuto {#traffic-filter-rules-to-manage-crs}
 
-Per controllare meglio le richieste di contenuto, analizza il traffico CDN prima di definire le regole del filtro. Lo strumento di analisi del registro [CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) consente di ottenere informazioni approfondite sulle prestazioni della rete CDN e sui modelli di richiesta. Innanzitutto, puoi capire da dove proviene il traffico e se esistono pattern di segnalazione imprevisti (un pattern bot comune consiste nell’utilizzare un agente utente vuoto).
+Per controllare meglio le richieste di contenuto, analizza il traffico CDN prima di definire le regole del filtro. Lo strumento di analisi del registro [CDN](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) consente di ottenere informazioni approfondite sulle prestazioni della rete CDN e sui modelli di richiesta. Innanzitutto, puoi capire da dove proviene il traffico e se esistono pattern di segnalazione imprevisti (un pattern bot comune consiste nell’utilizzare un agente utente vuoto).
 
 **Elementi da controllare e registrare:**
 
