@@ -4,9 +4,9 @@ description: Scopri come inoltrare i registri ai fornitori di accesso in AEM as 
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2560'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ I clienti con una licenza di un fornitore di registrazione o che ospitano un pro
       <td>Logica sumo</td>
       <td>Sì</td>
       <td>Sì</td>
-      <td style="background-color: #ffb3b3;">Futuro</td>
+      <td>Sì</td>
     </tr>
   </tbody>
 </table>
@@ -517,8 +517,6 @@ data:
 
 ### Logica sumo {#sumologic}
 
-L’inoltro dei registri alla logica di riepilogo supporta i registri di AEM e Dispatcher; i registri CDN non sono ancora supportati.
-
 Durante la configurazione di Sumo Logic per l’acquisizione dei dati, viene visualizzato un &quot;indirizzo HTTP Source&quot; che fornisce l’host, l’URI del ricevitore e la chiave privata in una singola stringa.  Ad esempio:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
@@ -538,9 +536,12 @@ data:
 ```
 
 >[!NOTE]
->Il supporto dei registri CDN per SumoLogic è pianificato per il futuro. Invia un&#39;e-mail a [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) per registrare l&#39;interesse.
+>Il comportamento del campo `index` dipende dal tipo di registro:
 >
-> Per sfruttare la funzionalità del campo &quot;indice&quot; è necessario un abbonamento Sumo Logic Enterprise.  I registri delle sottoscrizioni non Enterprise verranno instradati alla partizione `sumologic_default` come standard.  Per ulteriori informazioni, vedere la [documentazione sul partizionamento logico Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/).
+>* **Registri di AEM (incluso Apache/Dispatcher)**: indirizzati alla partizione specificata da `index`, a condizione che si disponga di una sottoscrizione Sumo Logic Enterprise. Le sottoscrizioni non Enterprise vengono invece indirizzate alla partizione `sumologic_default`.
+>* **Registri CDN**: il campo `index` viene ignorato, in quanto l&#39;indicizzazione non è tecnicamente supportata per i registri CDN inoltrati a Sumo Logic. I registri CDN vengono sempre instradati alla partizione `sumologic_default`.
+>
+>Per ulteriori informazioni, vedere la [documentazione sul partizionamento logico Sumo](https://help.sumologic.com/docs/search/optimize-search-partitions/).
 
 ## Formati voce registro {#log-formats}
 
