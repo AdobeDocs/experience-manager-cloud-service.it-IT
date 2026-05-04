@@ -4,9 +4,9 @@ description: Scopri come configurare gli strumenti di codifica AI con il contest
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Quattro componenti complementari affrontano questo problema:
 | **Competenze agente** | Set di istruzioni riutilizzabili per attività di sviluppo ricorrenti, ad esempio la creazione di componenti e la configurazione di Dispatcher |
 | **Server MCP locale Quickstart di AEM** | Espone i dati live runtime da un’istanza AEM SDK locale per supportare la risoluzione dei problemi |
 | **Server MCP locale Dispatcher** | Abilita la convalida runtime e l&#39;ispezione di un&#39;istanza Dispatcher locale |
+
+Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) per ulteriori istruzioni pratiche.
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ Adobe pubblica AEM as a Cloud Service skills nell&#39;archivio **[adobe/skills](
 
 ### Installa abilità {#install-skills}
 
-Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer.
+Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer. Per una procedura dettagliata concreta, consulta l&#39;[esercitazione Configurare AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills).
 
 #### Claude Code {#claude-code}
 
@@ -121,6 +123,8 @@ CTA Link (ctaLink) - Pathfield
 
 L’agente fa eco alle specifiche del campo per la conferma, quindi genera tutti i file dei componenti. I pattern supportati includono multicampo con elementi compositi nidificati, logica condizionale di visualizzazione/nascondere, estensione dei componenti core tramite Sling Resource Merger e test JUnit 5 con AEM Mocks.
 
+Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+
 ### Utilizzare l’abilità Dispatcher {#use-the-dispatcher-skill}
 
 Richiama l’abilità del dispatcher per qualsiasi lavoro di configurazione Dispatcher o Apache HTTPD. L’abilità indirizza le richieste a una delle sei sottocompetenze specialistiche in base alla natura della richiesta:
@@ -144,13 +148,13 @@ Model Context Protocol (MCP) è uno standard aperto che consente agli strumenti 
 
 ### Installare il pacchetto dei contenuti {#install-the-content-package}
 
-Scarica il pacchetto di contenuti dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) e installa `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` nel tuo Quickstart locale utilizzando Gestione pacchetti in `/crx/packmgr`.
+Scarica il pacchetto di contenuti dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) e installa `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` nel tuo Quickstart locale utilizzando Gestione pacchetti in `/crx/packmgr`.
 
 **Compatibilità:** convalidata con AEM SDK `2026.2.24678.20260226T154829Z-260200` e versioni successive.
 
 ### Strumenti disponibili {#available-tools}
 
-| Strumento  | Descrizione |
+| Strumento | Descrizione |
 |---|---|
 | `aem-logs` | Recupera le voci di registro AEM e OSGi, filtrabili per pattern regex, livello di registro e conteggio delle voci |
 | `diagnose-osgi-bundle` | Diagnostica il motivo per cui un bundle o un componente DS non viene avviato; segnala pacchetti mancanti, riferimenti non soddisfatti e problemi di configurazione |
@@ -210,7 +214,7 @@ A differenza dell’abilità del dispatcher, il server MCP di Dispatcher espone 
 ### Prerequisiti {#prerequisites}
 
 - Docker Desktop 4.x o versione successiva, installato ed in esecuzione
-- AEM Dispatcher SDK scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=tipo di software%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
+- AEM Dispatcher SDK scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
 
 >[!NOTE]
 >
@@ -263,7 +267,7 @@ Altri IDE possono essere configurati in modo simile. Il SDK `docs/DispatcherMCP.
 
 ### Strumenti disponibili {#available-tools-dispatcher}
 
-| Strumento  | Descrizione |
+| Strumento | Descrizione |
 |---|---|
 | `validate` | Convalida le configurazioni HTTPD di Dispatcher e Apache |
 | `lint` | Esegue controlli statici in base alla modalità e analisi delle best practice |
