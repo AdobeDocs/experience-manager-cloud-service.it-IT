@@ -4,9 +4,9 @@ description: Scopri il processo di creazione dei moduli di Brand Experience Agen
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Alcuni dei vantaggi principali dei processi di creazione dei moduli includono:
 * **Importare un documento PDF e convertirlo in un modulo**: è possibile importare e trasformare documenti PDF esistenti in moduli. Le competenze analizzano i contenuti caricati per rilevare i tipi di campo, preservare i layout e migliorare i moduli con una logica di progettazione e convalida reattiva, garantendo al contempo il mantenimento degli standard di marchio e conformità.
 
 Quando si utilizza una di queste funzionalità, viene richiesto di scegliere il tipo di modulo da creare. Specifica un modello di moduli adattivi basati su Componenti core o un modello di moduli adattivi basati su Edge Delivery Services e indica il percorso preferito per salvare il modulo. Se stai creando un modulo basato su Edge Delivery Services, puoi anche specificare l’URL GitHub dell’archivio.
-
 
 ### Prompt di esempio {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Risorse aggiuntive {#additional-resources}
+
+Le seguenti risorse possono essere utili mentre continui a esplorare Experience Production Agent:
+
+* È inoltre possibile utilizzare la [cartella di lavoro agente di produzione esperienza](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) per istruzioni pratiche guidate.
