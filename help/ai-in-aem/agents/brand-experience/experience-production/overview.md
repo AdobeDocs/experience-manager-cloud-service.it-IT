@@ -4,7 +4,7 @@ description: Scopri in che modo l’agente di produzione Experience in AEM conse
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Panoramica di Experience Production Agent {#experience-production-agent}
 
-Experience Production Agent automatizza le attività più impegnative e con volumi elevati. Consente ai team di trasformare processi manuali, della durata di settimane, in flussi di lavoro rapidi e assistiti dall’intelligenza artificiale, in grado di mantenere sempre aggiornata e coerente ogni esperienza, aiutando l’azienda a raggiungere i propri obiettivi.
+Experience Production Agent automatizza le attività più impegnative e con volumi elevati. Permette ai team di trasformare processi manuali, della durata di settimane, in flussi di lavoro rapidi e assistiti dall’intelligenza artificiale, in grado di mantenere costante e aggiornata ogni esperienza e di aiutare l’azienda a raggiungere i propri obiettivi.
 
 ## Jobs {#jobs}
 
