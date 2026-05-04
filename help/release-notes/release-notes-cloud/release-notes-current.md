@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
+source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 30%
@@ -39,7 +39,7 @@ Puoi trovare le ultime note sulla versione di manutenzione [qui](/help/release-n
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483068/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programmi AEM Beta {#aem-beta-programs}
@@ -137,7 +137,10 @@ Ulteriori informazioni su [Sviluppo locale con strumenti di intelligenza artific
 
 Il server MCP di Experience Governance è ora generalmente disponibile (GA). Si integra con gli strumenti per sviluppatori AI e i chatbot che supportano il protocollo MCP (Model Context Protocol), consentendoti di salvaguardare l’integrità del brand e la conformità utilizzando prompt del linguaggio naturale nel chatbot o nell’IDE. Puoi valutare i contenuti (testo, immagini, pagine) in base alle regole di governance del brand e recuperare le configurazioni del brand e i controlli di governance disponibili.
 
-Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### Claude Connector {#aem-claude-connector}
 
