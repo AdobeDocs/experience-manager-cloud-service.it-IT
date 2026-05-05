@@ -4,9 +4,9 @@ description: Scopri come configurare il traffico CDN dichiarando regole e filtri
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2051'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,8 @@ Nella rete CDN sono configurabili anche le regole del filtro del traffico (inclu
 Inoltre, se la rete CDN non è in grado di contattare la relativa origine, puoi scrivere una regola che fa riferimento a una pagina di errore personalizzata con hosting autonomo (di cui viene quindi eseguito il rendering). Ulteriori informazioni leggendo l&#39;articolo [Configurazione delle pagine di errore CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 Tutte queste regole, dichiarate in un file di configurazione nel controllo del codice sorgente, vengono distribuite tramite la pipeline [config](/help/operations/config-pipeline.md) di Cloud Manager. Tieni presente che la dimensione cumulativa del file di configurazione, incluse le regole del filtro del traffico, non può superare i 100 KB.
+
+Per ulteriori snippet di codice per scenari comuni, consulta l&#39;articolo [Snippet di configurazione CDN per scenari comuni](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Ordine di valutazione {#order-of-evaluation}
 
@@ -384,6 +386,8 @@ Nella tabella seguente sono illustrate le azioni disponibili.
 
 Puoi sfruttare la rete CDN di AEM per indirizzare il traffico a diversi backend, incluse le applicazioni non Adobe (ad esempio in base al percorso o al sottodominio).
 
+Le proprietà di richiesta `originalPath` e `originalUrl` sono rispettivamente il percorso originale immutabile (senza parametri di query) e l&#39;URL completo (inclusi i parametri di query), ciascuno prima di qualsiasi [trasformazione di richiesta](#request-transformations) CDN. Utilizzarle in condizioni `when` quando è necessario ancorare le regole su ciò che il client ha inviato inizialmente, anziché sui valori che potrebbero essere stati riscritti in precedenza nella sequenza di valutazione. Utilizza `originalPath` per la corrispondenza solo percorso; utilizza `originalUrl` quando la stringa di query deve far parte della condizione (ad esempio, routing o filtro su un URL di richiesta iniziale specifico).
+
 Esempio di configurazione:
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage

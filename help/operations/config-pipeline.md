@@ -4,9 +4,9 @@ description: Scopri come utilizzare le pipeline di configurazione per distribuir
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,8 @@ Nelle sezioni seguenti di questo documento viene fornita una panoramica di infor
 ## Configurazioni supportati {#configurations}
 
 La tabella seguente offre un elenco completo di tali configurazioni, con collegamenti alla documentazione dedicata che descrive la sintassi di configurazione specifica e altre informazioni.
+
+Per le configurazioni relative a CDN, oltre all&#39;articolo collegato nella tabella, consulta anche l&#39;articolo [Snippet di configurazione CDN per scenari comuni](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 | Tipo | Valore `kind` YAML | Descrizione | Consegna pubblicazione | Edge Delivery |
 |---|---|---|---|---|

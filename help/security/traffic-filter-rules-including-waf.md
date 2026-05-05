@@ -4,10 +4,10 @@ description: Configurazione delle regole del filtro del traffico, incluse le reg
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4610'
-ht-degree: 97%
+source-wordcount: '4819'
+ht-degree: 96%
 
 ---
 
@@ -178,7 +178,7 @@ Un gruppo di condizioni è composto da più condizioni semplici e/o da condizion
 
 | **Proprietà** | **Tipo** | **Descrizione** |
 |---|---|---|
-| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query. (utilizza `pathRaw` per la variante senza escape)</li><li>`url`: restituisce l’URL completo, inclusi i parametri di query. (utilizza `urlRaw` per la variante senza escape)</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`forwardedDomain`: restituisce il primo dominio definito nell’intestazione `X-Forwarded-Host` in minuscolo</li><li>`forwardedIp`: restituisce il primo IP nell’intestazione `X-Forwarded-For`.</li><li>`clientRegion`: restituisce il codice di suddivisione del Paese che identifica l’area geografica in cui si trova il client, come descritto in [ISO 3166-2](https://it.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: restituisce un codice di due lettere ([simbolo indicatore regionale](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li><li>`clientContinent`: restituisce un codice a due lettere (AF, AN, AS, EU, NA, OC, SA) che identifica il continente in cui si trova il client.</li><li>`clientAsNumber`: restituisce il numero di [Sistema autonomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associato all’IP del client.</li><li>`clientAsName`: restituisce il nome associato al numero di Sistema autonomo.</li></ul> |
+| reqProperty | `string` | Proprietà richiesta.<br><br>Una di:<br><ul><li>`path`: restituisce il percorso completo di un URL senza i parametri di query. (utilizza `pathRaw` per la variante senza escape)</li><li>`originalPath`: restituisce il percorso originale immutabile della richiesta senza i parametri di query, ovvero il percorso prima di qualsiasi trasformazione di richiesta CDN.</li><li>`url`: restituisce l’URL completo, inclusi i parametri di query. (utilizza `urlRaw` per la variante senza escape)</li><li>`originalUrl`: restituisce l&#39;URL completo immutabile originale della richiesta, inclusi i parametri di query, ovvero l&#39;URL prima di qualsiasi trasformazione di richiesta CDN.</li><li>`queryString`: restituisce la parte di query di un URL</li><li>`method`: restituisce il metodo HTTP utilizzato nella richiesta.</li><li>`tier`: restituisce uno tra `author`, `preview` o `publish`.</li><li>`domain`: restituisce la proprietà del dominio (come definito nell’intestazione `Host`) in minuscolo</li><li>`clientIp`: restituisce l’IP del client.</li><li>`forwardedDomain`: restituisce il primo dominio definito nell’intestazione `X-Forwarded-Host` in minuscolo</li><li>`forwardedIp`: restituisce il primo IP nell’intestazione `X-Forwarded-For`.</li><li>`clientRegion`: restituisce il codice di suddivisione del Paese che identifica l’area geografica in cui si trova il client, come descritto in [ISO 3166-2](https://it.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: restituisce un codice di due lettere ([simbolo indicatore regionale](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) che identifica il paese in cui si trova il client.</li><li>`clientContinent`: restituisce un codice a due lettere (AF, AN, AS, EU, NA, OC, SA) che identifica il continente in cui si trova il client.</li><li>`clientAsNumber`: restituisce il numero di [Sistema autonomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associato all’IP del client.</li><li>`clientAsName`: restituisce il nome associato al numero di Sistema autonomo.</li></ul> |
 | reqHeader | `string` | Restituisce l’intestazione di richiesta con il nome specificato |
 | queryParam | `string` | Restituisce il parametro di query con il nome specificato |
 | reqCookie | `string` | Restituisce il cookie con il nome specificato |
@@ -471,6 +471,8 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+Per ulteriori snippet di codice per scenari avanzati, consulta l&#39;articolo [Snippet di configurazione CDN per scenari comuni](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Regole CVE {#cve-rules}
 

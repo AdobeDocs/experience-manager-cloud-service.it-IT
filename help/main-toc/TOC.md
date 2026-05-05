@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6ddc4857295bc8251894ee3aebb5ea2643959d5e
+source-git-commit: d0ee13cfe94ea7eef196cc70676418e4d075c049
 workflow-type: tm+mt
-source-wordcount: '7386'
+source-wordcount: '7392'
 ht-degree: 90%
 
 ---
@@ -853,8 +853,8 @@ ht-degree: 90%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1319,7 +1319,7 @@ ht-degree: 90%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
@@ -1641,6 +1641,7 @@ ht-degree: 90%
       + [Convalida e debug con la versione legacy degli strumenti di Dispatcher](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configurazione del traffico sulla rete CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Snippet di configurazione CDN per scenari comuni](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
       + [Reindirizzamenti URL senza pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Il lato Edge include](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurazione delle credenziali CDN e dell’autenticazione](/help/implementing/dispatcher/cdn-credentials-authentication.md)
