@@ -4,12 +4,13 @@ description: Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e l
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2890'
 ht-degree: 4%
 
 ---
+
 
 # Linee guida per lo sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -17,13 +18,13 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Linee guida per lo sviluppo in AEM as a Cloud Service"
 >abstract="Scopri le linee guida per lo sviluppo su AEM as a Cloud Service e le principali differenze rispetto ad AEM on-premise e AEM in AMS."
->additional-url="https://video.tv.adobe.com/v/345903?captions=ita" text="Dimostrazione della struttura del pacchetto"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Dimostrazione della struttura del pacchetto"
 
 Questo documento presenta le linee guida per lo sviluppo su AEM as a Cloud Service e sulle differenze importanti tra AEM on-premise e AEM in AMS.
 
 ## Il Codice Deve Essere Basato Su Cluster {#cluster-aware}
 
-Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che sono sempre in esecuzione più istanze. Il codice deve essere resiliente, soprattutto in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
+Il codice in esecuzione in AEM as a Cloud Service deve tenere presente che è sempre in esecuzione in un cluster. Ciò significa che ci sono sempre in esecuzione più di un’istanza. Il codice deve essere resiliente, soprattutto in quanto un’istanza potrebbe essere arrestata in qualsiasi momento.
 
 Durante l’aggiornamento di AEM as a Cloud Service, sono presenti istanze con codice vecchio e nuovo in esecuzione in parallelo. Pertanto, il vecchio codice non deve interrompere il contenuto creato dal nuovo codice e il nuovo codice deve essere in grado di gestire il contenuto precedente.
 
@@ -111,11 +112,11 @@ Ad esempio, la modifica della definizione di un indice in un archivio di contenu
 
 Per lo sviluppo locale, le voci di registro vengono scritte nei file locali nella cartella `/crx-quickstart/logs`.
 
-Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento da riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Negli ambienti Cloud, gli sviluppatori possono scaricare i registri tramite Cloud Manager o utilizzare uno strumento da riga di comando per visualizzare i registri. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Impostazione del livello di registro**
 
-Per modificare i livelli di registro per gli ambienti Cloud, è necessario modificare la configurazione OSGI Sling Logging, seguita da una ridistribuzione completa. Poiché non è istantaneo, presta attenzione all’abilitazione di registri dettagliati sugli ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per modificare più rapidamente il livello del registro.
+Per modificare i livelli di registro per gli ambienti Cloud, devi modificare la configurazione OSGi di registrazione Sling, seguita da una ridistribuzione completa. Poiché non è istantaneo, presta attenzione all’abilitazione di registri dettagliati sugli ambienti di produzione che ricevono molto traffico. In futuro, è possibile che esistano meccanismi per modificare più rapidamente il livello del registro.
 
 >[!NOTE]
 >
@@ -148,7 +149,7 @@ Non lasciare il registro a livello di registro DEBUG più a lungo del necessario
 | - | - | - |
 | Sviluppo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
 | Fase | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | AVVISO |
-| Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE  |
+| Produzione | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERRORE |
 
 Una riga nel file di debug in genere inizia con DEBUG e quindi fornisce il livello di registro, l&#39;azione del programma di installazione e il messaggio di registro. Ad esempio:
 
@@ -172,24 +173,22 @@ Le immagini thread negli ambienti Cloud vengono raccolte su base continuativa, m
 
 ### Sviluppo locale {#local-development}
 
-Per lo sviluppo locale, gli sviluppatori hanno accesso completo a CRXDE Lite (`/crx/de`) e alla console Web di AEM (`/system/console`).
+Per lo sviluppo locale, gli sviluppatori hanno accesso completo a [CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`) e alla [console Web](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
-Nello sviluppo locale (utilizzando SDK), è possibile scrivere direttamente in `/apps` e `/libs`, che è diverso dagli ambienti Cloud, in cui le cartelle di primo livello non sono modificabili.
+Per lo sviluppo locale (utilizzando SDK), è possibile scrivere direttamente in `/apps` e `/libs`, che è diverso dagli ambienti Cloud, in cui le cartelle di primo livello non sono modificabili.
 
 ### Strumenti di sviluppo in AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->Il Developer Console di AEM as a Cloud Service non deve essere confuso con il nome simile [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
-
->[!NOTE]
->Alcuni clienti avranno la possibilità di provare un’esperienza rinnovata per AEM Cloud Service Developer Console. Per ulteriori informazioni, consulta [questo articolo](/help/implementing/developing/introduction/aem-developer-console.md).
+>* Alcuni clienti avranno la possibilità di provare un’esperienza rinnovata per AEM Cloud Service Developer Console. Per ulteriori informazioni, consulta [questo articolo](/help/implementing/developing/introduction/aem-developer-console.md).
+>* Il Developer Console di AEM as a Cloud Service non deve essere confuso con il nome simile [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 
 I clienti possono accedere a CRXDE lite nell’ambiente di sviluppo del livello di authoring, ma non in quello di stage o produzione. Impossibile scrivere nell&#39;archivio immutabile (`/libs`, `/apps`) in fase di esecuzione. Se si tenta di eseguire questa operazione, verranno generati errori.
 
 È invece possibile avviare il Browser dell’archivio da AEM as a Cloud Service Developer Console, fornendo una vista in sola lettura nell’archivio per tutti gli ambienti sui livelli di authoring, pubblicazione e anteprima. Per ulteriori informazioni, vedere [Browser repository](/help/implementing/developing/tools/repository-browser.md).
 
-In AEM as a Cloud Service Developer Console è disponibile un set di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per ambienti RDE, di sviluppo, di staging e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish come segue:
+In [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) è disponibile un set di strumenti per il debug degli ambienti di sviluppo AEM as a Cloud Service per gli ambienti RDE, di sviluppo, stage e di produzione. L’URL può essere determinato regolando gli URL del servizio Author o Publish come segue:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +200,7 @@ Per ulteriori informazioni, vedere [Informazioni sulla versione](/help/release-n
 
 Gli sviluppatori possono generare informazioni sullo stato e risolvere varie risorse.
 
-Come illustrato di seguito, le informazioni sugli stati disponibili includono lo stato di bundle, componenti, configurazioni OSGI, indici Oak, servizi OSGI e processi Sling.
+Come illustrato di seguito, le informazioni sugli stati disponibili includono lo stato di bundle, componenti, configurazioni OSGi, indici Oak, servizi OSGi e processi Sling.
 
 ![Console sviluppo 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -215,7 +214,7 @@ Utile anche per il debug, AEM as a Cloud Service Developer Console dispone di un
 
 ![Console sviluppo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Per i programmi di produzione, l’accesso a AEM as a Cloud Service Developer Console è definito dal &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console, mentre per i programmi sandbox, AEM as a Cloud Service Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che gli consente di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e il browser dell’archivio e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di authoring e pubblicazione per visualizzare i dati di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=it).
+Per i programmi di produzione, l’accesso a AEM as a Cloud Service Developer Console è definito dal &quot;Cloud Manager - Ruolo Sviluppatore&quot; in Adobe Admin Console, mentre per i programmi sandbox, AEM as a Cloud Service Developer Console è disponibile per qualsiasi utente con un profilo di prodotto che gli consente di accedere a AEM as a Cloud Service. Per tutti i programmi, è necessario &quot;Cloud Manager - Ruolo sviluppatore&quot; per le immagini di stato e il browser dell’archivio e gli utenti devono essere definiti anche nel profilo di prodotto Utenti AEM o Amministratori AEM sui servizi di authoring e pubblicazione per visualizzare i dati di entrambi i servizi. Per ulteriori informazioni sulla configurazione delle autorizzazioni utente, vedere [Documentazione di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitoraggio delle prestazioni {#performance-monitoring}
 
@@ -239,13 +238,13 @@ Si consiglia di configurare la rete avanzata con un parametro `kind` impostato s
 
 ### Invio di e-mail {#sending-emails}
 
-Utilizzare il servizio OSGI [&#x200B; del servizio di posta elettronica CQ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it#configuring-the-mail-service) Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
+Utilizzare il servizio OSGI ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) del servizio di posta elettronica CQ [ Day e inviare le e-mail al server di posta indicato nella richiesta di supporto anziché direttamente ai destinatari.
 
 ### Configurazione {#email-configuration}
 
-Le e-mail in AEM devono essere inviate utilizzando il servizio OSGi del servizio di posta CQ [Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it#configuring-the-mail-service).
+Le e-mail in AEM devono essere inviate utilizzando il servizio OSGI [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, consulta la [documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it). Per AEM as a Cloud Service, prendere nota delle seguenti modifiche necessarie al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
+Per informazioni dettagliate sulla configurazione delle impostazioni e-mail, consulta la [documentazione di AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html). Per AEM as a Cloud Service, tieni presente le seguenti modifiche necessarie al servizio OSGi `com.day.cq.mailer.DefaultMailService`:
 
 * Il nome host del server SMTP deve essere impostato su $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * La porta del server SMTP deve essere impostata sul valore della porta proxy originale impostata nel parametro portForwards utilizzato nella chiamata API durante la configurazione della rete avanzata. Ad esempio, 30465 (anziché 465)
@@ -269,7 +268,7 @@ Il servizio di posta può essere configurato facoltativamente con il supporto OA
 
 ### Configurazione e-mail legacy {#legacy-email-configuration}
 
-Prima della versione 2021.9.0, l’e-mail era configurata tramite una richiesta di assistenza clienti. Prendere nota delle seguenti modifiche necessarie al servizio `com.day.cq.mailer.DefaultMailService OSGI`:
+Prima della versione 2021.9.0, l’e-mail era configurata tramite una richiesta di assistenza clienti. Prendere nota delle seguenti modifiche necessarie al servizio OSGi `com.day.cq.mailer.DefaultMailService`:
 
 AEM as a Cloud Service richiede che la posta venga inviata tramite la porta 465. Se un server di posta non supporta la porta 465, è possibile utilizzare la porta 587 purché sia abilitata l’opzione TLS.
 
@@ -283,7 +282,7 @@ e se è stata richiesta la porta 587:
 * imposta `smtp.port` su `587`
 * imposta `smtp.ssl` su `false`
 
-La proprietà `smtp.starttls` verrà impostata automaticamente da AEM as a Cloud Service in fase di esecuzione su un valore appropriato. Pertanto, se `smtp.ssl` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Indipendentemente dai valori `smtp.starttls` impostati nella configurazione OSGI.
+La proprietà `smtp.starttls` verrà impostata automaticamente da AEM as a Cloud Service in fase di esecuzione su un valore appropriato. Pertanto, se `smtp.ssl` è impostato su true, `smtp.startls` viene ignorato. Se `smtp.ssl` è impostato su false, `smtp.starttls` è impostato su true. Indipendentemente dai valori `smtp.starttls` impostati nella configurazione OSGi.
 
 L&#39;host del server SMTP deve essere impostato su quello del server di posta.
 
