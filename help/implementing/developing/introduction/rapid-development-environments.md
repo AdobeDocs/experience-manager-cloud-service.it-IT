@@ -4,9 +4,9 @@ description: Scopri come utilizzare gli ambienti di sviluppo rapido per le itera
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 161d6be186a6124840d93672470de91399481f20
+source-git-commit: 1548c70e63dcccd545d8d5838a1249ef6909f6a2
 workflow-type: tm+mt
-source-wordcount: '5835'
+source-wordcount: '6011'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Gli ambienti di sviluppo e gli ambienti di sviluppo rapido devono essere limitat
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Sono disponibili altri video che mostrano [come configurarlo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [come utilizzarlo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e il [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) utilizzando RDE.
+Sono disponibili altri video che mostrano [come configurarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [come utilizzarlo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e il [ciclo di vita dello sviluppo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) utilizzando RDE.
 
 ## Introduzione {#introduction}
 
@@ -184,7 +184,7 @@ Negli ambienti in cui nessun utente può eseguire il comando di installazione in
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Puoi cercare il tuo ID organizzazione utilizzando il metodo documentato in [Visualizza ID organizzazione](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Puoi cercare il tuo ID organizzazione utilizzando il metodo documentato in [Visualizza ID organizzazione](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Quindi, configura l’ID del programma:
 
@@ -200,7 +200,7 @@ Negli ambienti in cui nessun utente può eseguire il comando di installazione in
 
    Questi passaggi richiedono l&#39;appartenenza al profilo di prodotto Cloud Manager **Developer - Cloud Service**. Per ulteriori dettagli, vedere [Assegnazione dei membri del gruppo ai profili di prodotto di Cloud Manager - Assegnazione del profilo di prodotto sviluppatore](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer).
 
-Per ulteriori informazioni e dimostrazioni, guarda l&#39;esercitazione video [come impostare un RDE (06:24)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Per ulteriori informazioni e dimostrazioni, guarda l&#39;esercitazione video [come impostare un RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Utilizzare RDE durante lo sviluppo di una nuova funzione {#using-rde-while-developing-a-new-feature}
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Per ulteriori informazioni e dimostrazioni, vedere l&#39;esercitazione video [utilizzo dei comandi RDE (10:01)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Per ulteriori informazioni e dimostrazioni, vedere l&#39;esercitazione video [utilizzo dei comandi RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Distribuire in un RDE da provider Git esterni {#deploy-to-rde}
@@ -715,6 +715,8 @@ Per ulteriori informazioni su come utilizzare Cloud Manager per gestire gli ambi
 >Questa funzione è disponibile in Beta. Se ti interessa utilizzare questa nuova funzionalità e condividere i tuoi commenti, invia un&#39;e-mail a [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), descrivendo il tuo caso d&#39;uso.
 
 Gli RDE supportano l’acquisizione di un’istantanea dello stato corrente del codice e del contenuto, che può essere ripristinata in un secondo momento. Le istantanee sono utili quando si sincronizza il codice che potrebbe essere necessario ripristinare o quando si passa dallo sviluppo di diverse funzioni. È inoltre possibile ripristinare solo il contenuto mutabile da uno snapshot come punto di partenza noto per il test.
+
+Non è possibile ripristinare uno snapshot da un RDE specifico in un altro RDE.
 
 Ogni ambiente RDE dispone di un massimo di sette istantanee. Le istantanee contrassegnate per l&#39;eliminazione ma che rientrano ancora nel periodo di conservazione di sette giorni continuano a essere conteggiate in base a tale limite fino a quando non vengono completamente rimosse. Se si raggiunge il limite e si necessita di capacità per un nuovo snapshot immediatamente, utilizzare l&#39;eliminazione forzata come descritto in [Eliminare uno snapshot](#delete-snapshot) invece di un&#39;eliminazione standard.
 
@@ -1224,7 +1226,7 @@ Gli sviluppatori Forms possono utilizzare AEM Forms Cloud Service Rapid Developm
 
 ## Esercitazione RDE
 
-Per informazioni su RDE in AEM as a Cloud Service, consulta l&#39;esercitazione video che illustra [come configurarlo, come utilizzarlo e il ciclo di vita dello sviluppo (01:25)](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Per informazioni su RDE in AEM as a Cloud Service, consulta l&#39;esercitazione video che illustra [come configurarlo, come utilizzarlo e il ciclo di vita dello sviluppo (01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Risoluzione dei problemi {#troubleshooting}
 
