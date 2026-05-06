@@ -55,7 +55,7 @@ AEM espone i server MCP come endpoint HTTP. Gli endpoint elencati di seguito son
 | **Contenuto** | `/content` | Operazioni per contenuti quali creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto, importazione di risorse e ricerca di risorse.                                                                          <br>Invia un&#39;e-mail a aemagentsteam@adobe.com per attivare la **ricerca risorse**. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail. |
 | **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine e frammenti di contenuto, oltre alla ricerca di risorse.                                                                             <br>Invia un&#39;e-mail a aemagentsteam@adobe.com per attivare la **ricerca risorse**. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail. |
 | **Cloud Manager** | `/cloudmanager` | Gestisci le entità Cloud Manager, inclusi programmi, ambienti, archivi e pipeline, che possono anche essere attivati. |
-| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>I clienti devono iscriversi alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) per accedere a Experience Governance MCP. |
+| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>I clienti devono iscriversi alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/it/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) per accedere a Experience Governance MCP. |
 
 Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo. In pratica, puoi chiedere all’applicazione abilitata per MCP di individuare gli strumenti tramite un prompt come:
 
@@ -65,7 +65,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
