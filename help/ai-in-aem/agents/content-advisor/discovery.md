@@ -4,7 +4,7 @@ description: Scopri come utilizzare l’agente di individuazione contenuti per f
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,7 +236,7 @@ Nota: l&#39;individuazione dei moduli supporta attualmente solo Edge Delivery Se
 
 L&#39;agente di individuazione contenuto restituisce i primi risultati per ogni query, ordinati in base alla rilevanza per garantire che le corrispondenze esatte vengano visualizzate per prime. L’agente combina query guidate da metadati con ricerca semantica per assemblare un set mirato di corrispondenze probabili, quindi utilizza un LLM per classificarle in base alle intenzioni dell’utente. Questo approccio misto offre risultati precisi e in base al contesto, senza dipendere interamente da una corrispondenza diretta delle parole chiave.
 
-Ogni risultato viene visualizzato come una scheda di risorse che mostra il nome della risorsa, l’anteprima e i metadati chiave come la descrizione e il formato. Puoi fare clic sull’icona Informazioni su una scheda per visualizzare altre proprietà della risorsa.
+Ogni risultato viene visualizzato come una scheda di risorse con il nome della risorsa, l’anteprima e i metadati chiave, ad esempio la descrizione e il formato. Puoi fare clic sull’icona Informazioni su una scheda per visualizzare altre proprietà della risorsa.
 
 Utilizzare l&#39;opzione **Mostra tabella** per visualizzare i risultati in formato tabulare. Fai clic su **Mostra tutti i risultati** per visualizzare il set completo delle 20 risorse recuperate nel riquadro a destra.
 
