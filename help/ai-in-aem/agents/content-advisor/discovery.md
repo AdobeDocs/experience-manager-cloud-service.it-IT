@@ -4,10 +4,10 @@ description: Scopri come utilizzare l’agente di individuazione contenuti per f
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -99,11 +99,38 @@ Prompt di esempio:
 * **Ricerca basata su formato file, tipo di risorsa, stato risorsa e Creato da ID e-mail**: mostra video in formato `.mp4` approvati e `created by <user email ID>`.
 * **Ricerca in base al formato di file, al tipo di risorsa, allo stato della risorsa e alla data di creazione**: mostra le immagini in formato `.PNG` create dopo il 1° gennaio 2025 e `published by <user email ID>`
 * **Ricerca basata sul tipo MIME, Data creazione e Pubblicato da ID e-mail**: mostra `image/jpeg` creato dopo `January 1, 2025` e `published by <user email ID>`.
-* **Ricerca basata sul formato di file e sulle proprietà dei metadati personalizzate**: mostra le immagini in formato `.JPEG` con `Product SKU ID = <SKU value>` (deve essere nel formato proprietà metadati = valore).
 
 * **Cerca le risorse con metadati mancanti**: il campo Mostra risorse create negli ultimi 90 giorni con `<Name of metadata property including custom properties>` è vuoto.
 
 * **Cerca le risorse utilizzando le dimensioni del file, la larghezza dell&#39;immagine e l&#39;altezza dell&#39;immagine**: mostra immagini di dimensioni superiori a 5 MB con una larghezza superiore a 2000 pixel e un&#39;altezza superiore a 1200 pixel.
+
+**Supporto di linguaggio naturale per metadati personalizzati**
+
+L&#39;agente di individuazione contenuto supporta l&#39;esecuzione di query sulle proprietà dei metadati personalizzate definite negli schemi di metadati. Puoi fare riferimento ai valori dei metadati direttamente nelle richieste senza doverli specificare utilizzando un formato chiave-valore rigido. L’agente interpreta l’intento e associa automaticamente i campi di metadati rilevanti.
+
+Prompt di esempio:
+
+* **Impossibile trovare le risorse con un valore di proprietà**. Trovare le risorse il cui nome della campagna non è impostato (la proprietà deve essere indicizzata per ottenere risultati appropriati).
+
+* **Ricerca di risorse per le quali è impostato il valore di proprietà**: trova le risorse per le quali è impostato il nome della campagna (la proprietà deve essere indicizzata per ottenere risultati appropriati).
+
+* **Ricerca di risorse il cui valore di proprietà è impostato su X**: trova risorse il cui nome campagna è Coffee-day.
+
+* **Ricerca di risorse il cui valore di proprietà è impostato su un set di valori X, Y**: trova risorse il cui nome campagna è Coffee-day insieme a quelle il cui nome campagna è Tea-Day.
+
+* **Visualizzazione del valore di un particolare campo proprietà**: Richiedi risorse caffè visualizza anche il nome della campagna di tali risorse.
+
+* **Trova risorse corrispondenti a una condizione di proprietà basata su data**: Ottieni risorse la cui licenza non è scaduta.
+
+
+
+
+
+
+
+
+
+
 
 
 **Individuazione contenuto basato su cartelle:**\
@@ -153,13 +180,17 @@ L&#39;agente di individuazione contenuto consente agli utenti di trovare risorse
 
 **Ordinamento dei risultati della ricerca**
 
-L’agente di individuazione contenuti consente agli utenti di ordinare i risultati della ricerca direttamente nei prompt del linguaggio naturale. Gli utenti possono specificare i criteri di ordinamento, ad esempio la data di modifica, la data di creazione o il nome della risorsa, e scegliere l’ordine crescente o decrescente.
+L’agente di individuazione contenuto consente agli utenti di ordinare i risultati della ricerca direttamente nei prompt del linguaggio naturale. Gli utenti possono specificare i criteri di ordinamento, ad esempio la data di modifica, la data di creazione o il nome della risorsa, e scegliere l’ordine crescente o decrescente.
 
 Prompt di esempio:
 
 * Trova le immagini di montagna in ordine decrescente in base alla data di modifica (per prima cosa, mostra le risorse modificate più di recente).
 
 * Mostra le immagini di montagna ordinate per nome in ordine crescente (mostra i nomi delle immagini che iniziano con la lettera A seguita da B e così via).
+
+**Rilevamento dell&#39;ambiente in base al contesto**
+
+Nella vista Amministratore, l&#39;agente di individuazione contenuto rileva automaticamente l&#39;ambiente di authoring e lo utilizza per risolvere i prompt, senza richiedere di specificare esplicitamente l&#39;URL dell&#39;autore.
 
 ### Pagine AEM Sites {#content-discovery-agent-aem-sites-pages}
 
@@ -203,13 +234,15 @@ Nota: l&#39;individuazione dei moduli supporta attualmente solo Edge Delivery Se
 
 ### Risorse {#discovery-agent-search-results-assets}
 
-L’agente di individuazione contenuto restituisce i primi risultati per ogni query, ordinati in base alla rilevanza per garantire che vengano visualizzate per prime le corrispondenze esatte. L’agente combina query guidate da metadati con ricerca semantica per assemblare un set mirato di corrispondenze probabili, quindi utilizza un LLM per classificarle in base alle intenzioni dell’utente. Questo approccio misto offre risultati precisi e in base al contesto, senza dipendere interamente da una corrispondenza diretta delle parole chiave.
+L&#39;agente di individuazione contenuto restituisce i primi risultati per ogni query, ordinati in base alla rilevanza per garantire che le corrispondenze esatte vengano visualizzate per prime. L’agente combina query guidate da metadati con ricerca semantica per assemblare un set mirato di corrispondenze probabili, quindi utilizza un LLM per classificarle in base alle intenzioni dell’utente. Questo approccio misto offre risultati precisi e in base al contesto, senza dipendere interamente da una corrispondenza diretta delle parole chiave.
 
-Ogni risultato include il nome della risorsa e i metadati chiave della risorsa, ad esempio il percorso della risorsa, il creatore, la data di creazione, il titolo, la descrizione, il formato, l&#39;ultimo modificatore, la data dell&#39;ultima modifica, la dimensione del file, le dimensioni, l&#39;[URL Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) e i tag associati. Se una risorsa è in stato approvato, i risultati includono anche [Dynamic Media con URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+Ogni risultato viene visualizzato come una scheda di risorse che mostra il nome della risorsa, l’anteprima e i metadati chiave come la descrizione e il formato. Puoi fare clic sull’icona Informazioni su una scheda per visualizzare altre proprietà della risorsa.
 
-Puoi fare clic sul percorso della risorsa per passare facilmente alla posizione della risorsa in AEM.
+Utilizzare l&#39;opzione **Mostra tabella** per visualizzare i risultati in formato tabulare. Fai clic su **Mostra tutti i risultati** per visualizzare il set completo delle 20 risorse recuperate nel riquadro a destra.
 
-![Cerca le risorse utilizzando l&#39;agente di individuazione contenuto](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Ogni risultato include anche i metadati chiave della risorsa, ad esempio il percorso, la dimensione, la data di creazione e l’autore, la data di modifica e l’utente che ha modificato la risorsa, il formato e la descrizione. Se una risorsa è in stato approvato, i risultati includono anche [Dynamic Media con URL OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). Puoi fare clic sul percorso della risorsa per passare facilmente alla posizione della risorsa in AEM.
+
+![Cerca le risorse utilizzando l&#39;agente di individuazione contenuto](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 Puoi utilizzare questi dettagli per valutare rapidamente se una risorsa soddisfa i requisiti senza passare a ciascuna risorsa per visualizzarne i dettagli.
 
