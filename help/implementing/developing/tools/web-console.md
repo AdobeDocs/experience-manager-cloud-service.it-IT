@@ -21,7 +21,7 @@ Scopri come utilizzare la console web di Adobe Experience Manager (AEM) per gest
 
 ## Panoramica {#overview}
 
-AEM as a Cloud Service tratta la configurazione e il codice [ come immutabili in fase di esecuzione.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Ciò significa che tutte le configurazioni devono essere distribuite come si farebbe con il codice in un ambiente di produzione. Per le istanze di produzione, questo assicura il superamento dei gate di qualità e offre un livello di stabilità e chiarezza dell’ambiente corrente.
+AEM as a Cloud Service tratta la configurazione e il codice [&#x200B; come immutabili in fase di esecuzione.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Ciò significa che tutte le configurazioni devono essere distribuite come si farebbe con il codice in un ambiente di produzione. Per le istanze di produzione, questo assicura il superamento dei gate di qualità e offre un livello di stabilità e chiarezza dell’ambiente corrente.
 
 Tuttavia, per testare gli sviluppi locali sono spesso necessari aggiornamenti e modifiche al bundle della [configurazione OSGi](/help/implementing/deploying/configuring-osgi.md) ad hoc. Come parte di [AEM as a Cloud Service SDK,](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) la console Web abilita tali aggiornamenti in tempo reale.
 
