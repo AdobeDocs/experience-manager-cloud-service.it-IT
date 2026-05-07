@@ -1,25 +1,25 @@
 ---
 title: Autorizzazioni personalizzate
-description: Scopri come utilizzare le autorizzazioni personalizzate per creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
+description: Scopri come creare profili di autorizzazioni personalizzati in Cloud Manager per controllare l’accesso degli utenti a programmi, pipeline e ambienti specifici.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 38%
+source-wordcount: '1273'
+ht-degree: 28%
 
 ---
 
 
 # Autorizzazioni personalizzate {#custom-permissions}
 
-Scopri come utilizzare le autorizzazioni personalizzate per creare profili di autorizzazioni personalizzati con autorizzazioni configurabili per limitare l’accesso a programmi, pipeline e ambienti per gli utenti di Cloud Manager.
+Scopri come impostare profili di autorizzazione personalizzati in Cloud Manager. Puoi configurare controlli di accesso specifici per programmi, pipeline e ambienti, per avere un controllo granulare sulle operazioni eseguibili da ogni utente.
 
 ## Introduzione {#introduction}
 
-Cloud Manager dispone di un set di ruoli predefiniti che controllano l’accesso a varie funzioni di Cloud Manager:
+Cloud Manager dispone di un set di ruoli predefiniti che determinano l’accesso a varie funzioni di Cloud Manager:
 
 * Proprietario business
 * Responsabile del programma
@@ -29,36 +29,33 @@ Cloud Manager dispone di un set di ruoli predefiniti che controllano l’accesso
 Le autorizzazioni personalizzate consentono agli utenti di creare profili di autorizzazione personalizzati con autorizzazioni configurabili per limitare l’accesso degli utenti di Cloud Manager a programmi, pipeline e ambienti.
 
 >[!TIP]
->
 >Per informazioni dettagliate sui ruoli predefiniti, vedere [Profili team e prodotto di AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Utilizzo di autorizzazioni personalizzate {#using}
+## Usare le autorizzazioni personalizzate {#using}
 
-Per creare e utilizzare autorizzazioni personalizzate, è necessario seguire tre passaggi:
+La creazione e l’utilizzo di autorizzazioni personalizzate richiede i tre passaggi seguenti:
 
 1. [Crea un profilo di prodotto](#create).
 1. [Assegna autorizzazioni personalizzate al profilo di prodotto](#assign-permissions).
 1. [Assegna utenti al profilo di prodotto](#assign-users).
 
-Questa sezione descrive questi passaggi. Durante la creazione delle autorizzazioni personalizzate, potrebbe essere utile consultare le sezioni [Termini](#terms) e [Autorizzazioni configurabili](#configurable-permissions).
+>[!TIP]
+>Durante la creazione di autorizzazioni personalizzate, potrebbe essere utile esaminare le sezioni [Termini](#terms) e [Autorizzazioni configurabili](#configurable-permissions).
 
->[!NOTE]
->
->Per creare profili e gestire le autorizzazioni per Cloud Manager, è necessario disporre dei diritti di amministratore di prodotto in Admin Console per Adobe Experience Manager as a Cloud Service.
+>[!IMPORTANT]
+>Per creare profili di prodotto e gestire le autorizzazioni per Cloud Manager, è necessario disporre dei diritti di amministratore del prodotto in Admin Console per Adobe Experience Manager as a Cloud Service.
 
-### Creare un nuovo profilo di prodotto {#create}
-
-Crea innanzitutto un profilo di prodotto a cui assegnare autorizzazioni personalizzate.
+### Creare un profilo di prodotto {#create}
 
 1. Accedi a Cloud Manager all&#39;indirizzo [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Nella pagina di destinazione di Cloud Manager, seleziona il pulsante **Gestisci accesso**.
+1. Nella pagina di destinazione di Cloud Manager, fai clic su **Gestisci accesso**.
 
-![Pulsante Gestisci accesso](assets/manage-access.png)
+   ![Pulsante Gestisci accesso](assets/manage-access.png)
 
-1. Viene aperta la scheda **Prodotti** di Admin Console, in cui puoi gestire gli utenti e le autorizzazioni per Cloud Manager. In Admin Console, seleziona il pulsante **Nuovo profilo**.
+1. In Admin Console, fai clic su **Nuovo profilo**.
 
-![Pulsante Nuovo profilo](assets/admin-console-new-profile.png)
+   ![Pulsante Nuovo profilo](assets/admin-console-new-profile.png)
 
 1. Specifica i dettagli generali sul profilo.
 
@@ -67,85 +64,73 @@ Crea innanzitutto un profilo di prodotto a cui assegnare autorizzazioni personal
    * **Descrizione** : descrizione informativa del profilo che ne spiega la finalità (facoltativa)
    * **Notifica gli utenti via e-mail** - Gli utenti ricevono una notifica e-mail quando vengono aggiunti o rimossi da questo profilo.
 
-1. Al termine, seleziona **Salva**.
+1. Fai clic su **Salva**.
 
 Il nuovo profilo di prodotto viene salvato ed è visibile nell’elenco dei profili di prodotto in Admin Console.
 
-### Assegnare autorizzazioni personalizzate al profilo {#assign-permissions}
+### Assegnare autorizzazioni personalizzate al profilo di prodotto {#assign-permissions}
 
-Ora che disponi di un nuovo profilo di prodotto, puoi assegnargli le autorizzazioni personalizzate.
+1. In Admin Console, fai clic sul nome del [nuovo profilo di prodotto creato](#create).
 
-1. In Admin Console, seleziona il nome del [nuovo profilo di prodotto creato](#create).
-
-1. Nella finestra visualizzata, seleziona la scheda **Autorizzazioni** per visualizzare un elenco di autorizzazioni modificabili.
+1. Nella pagina **Profilo personalizzato**, fare clic sulla scheda **Autorizzazioni**.
 
    ![Autorizzazioni modificabili](assets/permissions-tab.png)
 
-1. Seleziona il collegamento **Modifica** di un&#39;autorizzazione per modificarla.
+1. Nella riga del nome di un&#39;autorizzazione, fare clic su **Modifica**.
 
-1. Viene visualizzata la finestra **Modifica autorizzazione**.
-   * L’autorizzazione selezionata nel passaggio precedente è selezionata nella colonna a sinistra.
-   * Gli elementi di autorizzazione disponibili per l’assegnazione dell’autorizzazione si trovano nella colonna centrale indicata con Elementi di **Autorizzazioni disponibili**.
-   * Gli elementi di autorizzazione assegnati si trovano nella colonna a destra indicata con **Elementi di autorizzazione inclusi**.
+1. Nella finestra di dialogo **Modifica autorizzazioni per il profilo personalizzato** eseguire una delle operazioni seguenti:
 
-   ![Modificare gli elementi di autorizzazione](assets/edit-permission-items.png)
+   * Nella parte superiore della colonna **Elementi autorizzazioni disponibili**, fare clic su ![Icona Aggiungi o Icona segno più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Aggiungi tutto** per aggiungere tutte le autorizzazioni.
+   * Per aggiungere una singola autorizzazione alla colonna **Elementi di autorizzazione inclusi**, fare clic sull&#39;icona associata ![Aggiungi o Segno più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
 
-1. Selezionare l&#39;icona più (`+`) accanto all&#39;elemento di autorizzazione per aggiungerlo alla colonna **Elementi di autorizzazione inclusi**.
+     ![Modificare gli elementi di autorizzazione](assets/edit-permission-items.png)
 
-   * Per ulteriori informazioni, seleziona l&#39;icona `i` accanto a un elemento di autorizzazione.
+1. Fai clic su **Salva**.
 
-1. Seleziona il pulsante **Aggiungi tutto** nella parte superiore della colonna **Autorizzazioni disponibili** per aggiungere tutte le autorizzazioni.
+### Assegnare utenti al profilo di prodotto {#assign-users}
 
-1. Seleziona **Salva** al termine della definizione degli elementi di autorizzazione per il nuovo profilo di prodotto.
+1. In Admin Console, fai clic sul nome del [nuovo profilo di prodotto a cui hai assegnato le autorizzazioni personalizzate](#assign-permissions).
 
-Il nuovo profilo di prodotto viene ora salvato con le relative autorizzazioni personalizzate.
+1. Nella finestra visualizzata, fare clic sulla scheda **Utenti**.
 
-### Assegnare utenti alle autorizzazioni personalizzate {#assign-users}
+1. Fai clic su **Aggiungi utenti** e assegna gli utenti al profilo di prodotto con autorizzazioni personalizzate.
 
-Ora puoi assegnare gli utenti al nuovo profilo di prodotto creato con le autorizzazioni personalizzate.
-
-1. In Admin Console, seleziona il nome del [nuovo profilo di prodotto a cui hai assegnato le autorizzazioni personalizzate](#assign-permissions).
-
-1. Nella finestra visualizzata, seleziona la scheda **Utenti**.
-
-1. Seleziona il pulsante **Aggiungi utenti** e assegna gli utenti al tuo nuovo profilo di prodotto con autorizzazioni personalizzate.
-
-Consulta la sezione **Aggiungere utenti e gruppi di utenti a un profilo di prodotto** del documento [Gestire i profili di prodotto per gli utenti aziendali](https://helpx.adobe.com/it/enterprise/using/manage-product-profiles.html) per ulteriori dettagli su come utilizzare Admin Console.
+In [Gestione dei profili di prodotto per gli utenti aziendali](https://helpx.adobe.com/it/enterprise/using/manage-product-profiles.html), consulta **Aggiungere utenti e gruppi di utenti a un profilo di prodotto** per ulteriori dettagli su come utilizzare Admin Console.
 
 ## Autorizzazioni configurabili {#configurable-permissions}
 
-Per creare profili personalizzati sono disponibili le seguenti autorizzazioni.
+Quando crei un profilo di prodotto personalizzato, sono disponibili le seguenti autorizzazioni.
 
 | Autorizzazione | Descrizione |
 | --- | --- |
-| Creazione programma | Consenti agli utenti di creare un programma. |
-| Accesso al programma | Consenti agli utenti di accedere ai programmi. |
-| Modifica programma | Consenti agli utenti di modificare i programmi. |
-| Creazione dell’ambiente | Consenti agli utenti di creare un ambiente. |
-| Modifica dell’ambiente | Consenti agli utenti di aggiornare e modificare gli ambienti. |
-| Lettura registri ambiente | Consenti agli utenti di leggere i registri dell’ambiente. |
-| Gestione variabili di ambiente | Consenti agli utenti di creare, modificare o eliminare configurazioni di ambiente. |
-| Creazione ripristino ambiente | Consenti agli utenti di creare un ripristino dell’ambiente. |
-| Ripristino dell’ambiente di sviluppo rapido | Consenti agli utenti di reimpostare l’ambiente di sviluppo rapido (RDE). |
-| Gestione della copia dei contenuti | Consenti agli utenti di gestire le operazioni di copia dei contenuti. |
-| Crea pipeline | Consenti agli utenti di creare pipeline. |
-| Elimina pipeline | Consenti agli utenti di eliminare le pipeline. |
-| Modifica pipeline | Consenti agli utenti di modificare le pipeline. |
-| Approvazione/rifiuto delle distribuzioni in produzione | Consenti agli utenti di approvare o rifiutare un passaggio di distribuzione di produzione. |
-| Annullamento delle esecuzioni della pipeline | Consenti agli utenti di annullare le esecuzioni della pipeline. |
-| Avvio delle esecuzioni della pipeline | Consenti agli utenti di avviare una nuova esecuzione della pipeline. |
-| Sostituzione/Rifiuto degli errori importanti della metrica | Consenti agli utenti di escludere/rifiutare errori di metriche importanti. |
-| Pianificazione delle distribuzioni in produzione | Consenti agli utenti di pianificare un passaggio di implementazione di produzione. |
-| Accesso alle informazioni dell’archivio | Consenti agli utenti di accedere alle informazioni dell’archivio e generare una password di accesso. |
-| Creazione di un archivio | Consenti agli utenti di creare archivi Git. |
-| Eliminazione di un archivio | Consenti agli utenti di eliminare gli archivi Git. |
-| Modifica di un archivio | Consenti agli utenti di modificare gli archivi Git. |
-| Generazione del codice di un archivio | Consenti agli utenti di generare un progetto da Archetipo. |
-| Gestione nome dominio | Consenti agli utenti di creare, modificare o eliminare i nomi di dominio. |
-| INSERIRE NELL&#39;ELENCO CONSENTITI Gestione IP | Consenti agli utenti di creare, modificare o eliminare i elenchi Consentiti IP di e di inserire nell&#39;elenco Consentiti l’associazione degli IP di. |
-| Gestione dell&#39;infrastruttura di rete | Consenti agli utenti di creare, modificare o eliminare l&#39;infrastruttura di rete. |
-| Gestione certificati SSL | Consenti agli utenti di creare, modificare o eliminare certificati SSL. |
-| Gestione utenti account secondario New Relic | Consenti agli utenti di leggere/modificare gli utenti degli account secondari di New Relic. |
+| `Program Create` | Consenti agli utenti di creare un programma. |
+| `Program Access` | Consenti agli utenti di accedere ai programmi. |
+| `Program Edit` | Consenti agli utenti di modificare i programmi. |
+| `Environment Create` | Consenti agli utenti di creare un ambiente. |
+| `Environment Edit` | Consenti agli utenti di aggiornare e modificare gli ambienti. |
+| `Environment Logs Read` | Consenti agli utenti di leggere i registri dell’ambiente. |
+| `Environment Variables Manage` | Consenti agli utenti di creare, modificare o eliminare configurazioni di ambiente. |
+| `Environment Restore Create` | Consenti agli utenti di creare un ripristino dell’ambiente. |
+| `Rapid Development Environment Reset` | Consenti agli utenti di reimpostare l’ambiente di sviluppo rapido (RDE). |
+| `Content Copy Manage` | Consenti agli utenti di gestire le operazioni di copia dei contenuti. |
+| `Pipeline Create` | Consenti agli utenti di creare pipeline. |
+| `Pipeline Delete` | Consenti agli utenti di eliminare le pipeline. |
+| `Pipeline Edit` | Consenti agli utenti di modificare le pipeline. |
+| `Production Deployments Approve/Reject` | Consenti agli utenti di approvare o rifiutare un passaggio di distribuzione di produzione. |
+| `Pipeline Executions Cancel` | Consenti agli utenti di annullare le esecuzioni della pipeline. |
+| `Pipeline Executions Start` | Consenti agli utenti di avviare una nuova pipeline di esecuzione. |
+| `Override/Reject Important Metric Failures` | Consenti agli utenti di escludere/rifiutare errori di metriche importanti. |
+| `Production Deployments Schedule` | Consenti agli utenti di pianificare un passaggio di implementazione di produzione. |
+| `Repository Info Access` | Consenti agli utenti di accedere alle informazioni dell’archivio e generare una password di accesso. |
+| `Repository Create` | Consenti agli utenti di creare archivi Git. |
+| `Repository Delete` | Consenti agli utenti di eliminare gli archivi Git. |
+| `Repository Edit` | Consenti agli utenti di modificare gli archivi Git. |
+| `Repository Code Generate` | Consenti agli utenti di generare un progetto da Archetipo. |
+| `Domain Name Manage` | Consenti agli utenti di creare, modificare o eliminare i nomi di dominio. |
+| `IP Allowlist Manage` | Consenti agli utenti di creare, modificare o eliminare i elenchi Consentiti IP di e di inserire nell&#39;elenco Consentiti l’associazione degli IP di. |
+| `Network Infrastructure Manage` | Consenti agli utenti di creare, eliminare, modificare e testare infrastrutture di rete. |
+| `SSL Certificate Manage` | Consenti agli utenti di creare, modificare o eliminare certificati SSL. |
+| `New Relic Sub Account User Manage` | Consenti agli utenti di leggere/modificare gli utenti degli account secondari di New Relic. |
 
 ### Autorizzazioni a livello di organizzazione {#organization-level}
 
@@ -153,8 +138,8 @@ Le autorizzazioni a livello di organizzazione si riferiscono alle autorizzazioni
 
 Le autorizzazioni seguenti sono autorizzazioni a livello di organizzazione:
 
-* **Creazione programma** - Questa autorizzazione consente agli utenti di creare un programma nell&#39;organizzazione.
-* **Accesso alle informazioni dell&#39;archivio** Questa autorizzazione a livello di tenant/organizzazione consente agli utenti di generare un nome utente, una password e un URL dell&#39;archivio per accedere e contribuire a un progetto cliente.
+* **`Program Create`** - Questa autorizzazione consente agli utenti di creare un programma nell&#39;organizzazione.
+* **Accesso alle informazioni dell&#39;archivio** - Questa autorizzazione a livello di tenant/organizzazione consente agli utenti di generare un nome utente, una password e un URL dell&#39;archivio per accedere e contribuire a un progetto cliente.
    * Il nome utente e la password per l’accesso all’archivio sono comuni a tutti gli archivi dell’organizzazione. Tuttavia, l’URL dell’archivio è univoco per ciascun programma.
    * Per ulteriori informazioni, vedere [Accesso agli archivi](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
@@ -170,7 +155,7 @@ I seguenti termini vengono utilizzati per creare e gestire autorizzazioni person
 | Autorizzazione configurabile | Autorizzazioni di Cloud Manager che puoi configurare nel profilo di autorizzazione. |
 | Elemento di autorizzazione | Un programma, un ambiente o una risorsa pipeline a cui è possibile applicare un’autorizzazione. |
 
-Gli elementi autorizzazione si riferiscono all’ambito in cui viene applicata l’autorizzazione. In genere, si tratta di uno dei seguenti.
+Gli elementi di autorizzazione si riferiscono all’ambito in cui verranno applicate le autorizzazioni. In genere, si tratta di uno dei seguenti.
 
 | Tipo di elemento di autorizzazione | Esempio | Descrizione |
 | --- | --- | --- |
@@ -182,7 +167,7 @@ Gli elementi autorizzazione si riferiscono all’ambito in cui viene applicata l
 ## Note sull’utilizzo {#usage-notes}
 
 * Un profilo di autorizzazioni personalizzato elenca anche i programmi, gli ambienti e le pipeline di AMS durante la configurazione delle autorizzazioni.
-* Le risorse come programma, ambiente e pipeline create in Cloud Manager potrebbero richiedere due minuti per essere visualizzate in Admin Console per la configurazione delle autorizzazioni.
+* La visualizzazione delle risorse come programma, ambiente e pipeline create in Cloud Manager in Admin Console per la configurazione delle autorizzazioni potrebbe richiedere alcuni minuti.
 * In rari scenari in cui il servizio di autorizzazioni personalizzate non risponde, i profili predefiniti restano ancora disponibili e gli utenti nei profili predefiniti dispongono ancora dell’accesso appropriato.
 
 ## Domande frequenti {#faq}
@@ -202,7 +187,7 @@ I profili di prodotto predefiniti e i ruoli di Cloud Manager continuano a funzio
 
 ### È possibile modificare i profili di autorizzazione predefiniti?
 
-No, i profili predefiniti non sono modificabili. Non è possibile aggiungere o rimuovere autorizzazioni al profilo di autorizzazione predefinito. È possibile aggiungere o rimuovere utenti solo dai profili predefiniti.
+No. I profili predefiniti non sono modificabili. Impossibile aggiungere o rimuovere autorizzazioni dal profilo di autorizzazione predefinito. È possibile aggiungere o rimuovere utenti solo dai profili predefiniti.
 
 ### È necessario eliminare i profili di autorizzazione predefiniti poiché ora sono disponibili i profili personalizzati?
 
@@ -210,8 +195,8 @@ Non eliminare i profili di autorizzazione predefiniti da Admin Console.
 
 ### È possibile aggiungere utenti a più profili di autorizzazione?
 
-Sì, un utente può far parte di più profili, inclusi profili di autorizzazione predefiniti e personalizzati. Un utente assegnato a più profili ha a disposizione le autorizzazioni combinate di tutti i profili di autorizzazione assegnati.
+Sì. Un utente può far parte di più profili, inclusi profili di autorizzazione predefiniti e personalizzati. Un utente assegnato a più profili ha a disposizione le autorizzazioni combinate di tutti i profili di autorizzazione assegnati.
 
 ### Cosa succede se un utente dispone dell’autorizzazione per modificare un ambiente o una pipeline ma non ha accesso a un programma che contiene l’ambiente o la pipeline?
 
-In questo caso, l&#39;utente non è in grado di accedere all&#39;ambiente o alla pipeline se non dispone delle autorizzazioni **Accesso al programma** contenenti l&#39;ambiente o la pipeline.
+L&#39;utente non è in grado di accedere all&#39;ambiente o alla pipeline se non dispone delle autorizzazioni **Accesso al programma** contenenti l&#39;ambiente o la pipeline.
