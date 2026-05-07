@@ -66,4 +66,4 @@ La funzione **Accedi a dati archivio** è disponibile anche nella pagina [**Arch
 
 Puoi revocare una password di accesso in qualsiasi momento.
 
-Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home?lang=it#support). Il ticket sarà trattato con priorità alta e solitamente revocato nell’arco di una giornata.
+Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&support-tab=home?lang=it#support). Il ticket sarà trattato con priorità alta e solitamente revocato nell’arco di una giornata.
