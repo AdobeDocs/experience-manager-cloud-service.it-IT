@@ -78,7 +78,7 @@ Prima di avviare la contrassegnazione per l&#39;eliminazione, il sistema verific
 1. Seleziona l’organizzazione appropriata.
 1. Nella pagina **I miei programmi**, per il programma di produzione che si desidera contrassegnare per l&#39;eliminazione, fare clic sull&#39;icona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), quindi su **Elimina programma**.
 
-   ![Se si seleziona Elimina programma dall&#39;elenco a discesa di un programma di produzione ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L&#39;esempio di programma di produzione sopra riportato è solo a scopo illustrativo.*
+   ![Se si seleziona Elimina programma dall&#39;elenco a discesa di un programma di produzione &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*L&#39;esempio di programma di produzione sopra riportato è solo a scopo illustrativo.*
 
 1. Nella finestra di dialogo **Contrassegna programma di produzione per l&#39;eliminazione**, controlla l&#39;avviso che elenca le risorse collegate al programma, inclusi gli ambienti di produzione, stage e sviluppo.
 
