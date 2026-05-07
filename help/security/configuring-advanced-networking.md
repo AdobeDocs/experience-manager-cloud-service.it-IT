@@ -59,7 +59,7 @@ Questo articolo descrive in dettaglio ciascuna di queste opzioni e il motivo per
 
 >[!CAUTION]
 >
->Se disponi già della tecnologia di uscita dedicata legacy e desideri configurare una di queste opzioni di rete avanzate, [contatta prima il Servizio Clienti Adobe.](https://experienceleague.adobe.com/?support-solution=Experience+Manager?lang=it#home)
+>Se disponi già della tecnologia di uscita dedicata legacy e desideri configurare una di queste opzioni di rete avanzate, [contatta prima il Servizio Clienti Adobe.](https://experienceleague.adobe.com/it?support-solution=Experience+Manager?lang=it#home)
 >
 >Il tentativo di configurare una rete avanzata con la tecnologia di uscita legacy può influire sulla connettività del sito.
 
