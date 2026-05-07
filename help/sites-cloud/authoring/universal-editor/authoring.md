@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3159'
 ht-degree: 13%
 
 ---
@@ -248,7 +248,18 @@ Il componente selezionato è stato eliminato.
 
 ### Riordinamento e spostamento di componenti {#reordering-components}
 
-Puoi spostare e riordinare i componenti utilizzando il menu di scelta rapida o la struttura del contenuto.
+Puoi spostare e riordinare i componenti trascinandoli, dal menu di scelta rapida o dalla struttura del contenuto.
+
+>[!NOTE]
+>
+>I componenti possono essere spostati tra contenitori solo se il filtro [componente](/help/implementing/universal-editor/filtering.md) dei contenitori di destinazione consente il componente selezionato.
+
+#### Spostare i componenti con il trascinamento della selezione {#drag-and-drop-move}
+
+1. Fai clic sul componente da spostare e trascinalo.
+   * Quando passi il mouse sulla destinazione, l’editor ti mostrerà dove verrà posizionato il componente, se lo rilasci con una linea blu orizzontale.
+     ![Trascinare un componente per spostarlo](assets/drag-and-drop-component-move.png)
+1. Rilascia il componente per riposizionarlo.
 
 #### Spostare i componenti con il menu di scelta rapida {#move-context-menu}
 
@@ -271,7 +282,7 @@ Il componente viene spostato sia nell’editor che nella struttura del contenuto
 >
 >Le opzioni del menu di scelta rapida possono spostare i componenti solo all’interno dei rispettivi contenitori. Se si desidera spostare i componenti tra contenitori, [utilizzare la struttura del contenuto.](#reorder-content-tree)
 
-#### Riordinare i componenti con la struttura del contenuto {#reorder-content-tree}
+#### Spostare i componenti con la struttura del contenuto {#reorder-content-tree}
 
 1. Se non è già in [modalità struttura contenuto](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), passare a tale modalità.
 1. Seleziona un componente contenitore nella struttura del contenuto o nell’editor.
@@ -283,10 +294,6 @@ Il componente viene spostato sia nell’editor che nella struttura del contenuto
 1. Il componente trascinato è disattivato nella struttura del contenuto, mentre il punto di inserimento è rappresentato da una linea blu. Rilasciate il componente per posizionarlo nella nuova posizione.
 
 I componenti vengono riordinati sia nella struttura del contenuto che nell’editor.
-
->[!NOTE]
->
->I componenti possono essere spostati tra contenitori solo se il filtro [componente](/help/implementing/universal-editor/filtering.md) dei contenitori di destinazione consente il componente selezionato.
 
 ### Annulla e Ripristina {#undo-redo}
 
