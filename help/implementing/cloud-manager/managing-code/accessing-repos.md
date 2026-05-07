@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ La finestra di dialogo **Informazioni archivio** consente di visualizzare le seg
 * L’URL dell’archivio Git di Cloud Manager.
 * Comandi Git predefiniti per aggiungere rapidamente un remoto all’archivio Git e inviare il codice.
 
-![Finestra dati archivio](assets/repository-info.png)
+  ![Finestra dati archivio](assets/repository-info.png)
 
 L’accesso alle informazioni degli [archivi privati](private-repositories.md) non è disponibile in Cloud Manager.
 
@@ -66,4 +66,4 @@ La funzione **Accedi a dati archivio** è disponibile anche nella pagina [**Arch
 
 Puoi revocare una password di accesso in qualsiasi momento.
 
-Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&support-tab=home?lang=it#support). Il ticket sarà trattato con priorità alta e solitamente revocato nell’arco di una giornata.
+Per farlo, [crea un ticket di supporto per questa richiesta](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home?lang=it#support). Il ticket sarà trattato con priorità alta e solitamente revocato nell’arco di una giornata.
