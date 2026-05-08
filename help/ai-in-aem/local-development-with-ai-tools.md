@@ -4,9 +4,9 @@ description: Scopri come configurare gli strumenti di codifica AI con il contest
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
+source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-L’agente fa eco alle specifiche del campo per la conferma, quindi genera tutti i file dei componenti. I pattern supportati includono multicampo con elementi compositi nidificati, logica condizionale di visualizzazione/nascondere, estensione dei componenti core tramite Sling Resource Merger e test JUnit 5 con AEM Mocks.
+L’agente fa eco alle specifiche del campo per la conferma, quindi genera tutti i file dei componenti. I pattern supportati includono multicampo con elementi compositi nidificati, logica condizionale di visualizzazione/nascondere, estensione dei componenti core tramite Sling Resource Merger e test JUnit 5 con AEM Mocks. Il progetto può provenire da varie fonti, tra cui una descrizione testuale, un&#39;immagine o un URL di progettazione Figma utilizzando il server MCP di Figma.
 
 Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
