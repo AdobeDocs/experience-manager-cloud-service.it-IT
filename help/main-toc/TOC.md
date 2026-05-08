@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Scopri come funziona Experience Manager as a Cloud Service e come puoi trarre vantaggio da questo software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM as a Cloud Service
-source-git-commit: af335d4cdba8d1a45208d4783ab61b99ce9d6175
+source-git-commit: caec03f07606ae324e4966af3ba2f3296a955b76
 workflow-type: tm+mt
 source-wordcount: '7397'
 ht-degree: 90%
@@ -664,7 +664,7 @@ ht-degree: 90%
       + [Contenuto verificato per accedere ai contenuti AEM nelle applicazioni Adobe e non Adobe](/help/assets/integrate-adobe-non-adobe-applications.md)
       + [Proprietà di Contenuto verificato](/help/assets/content-advisor-properties.md)
       + [Personalizzazioni di Contenuto verificato](/help/assets/content-advisor-customization.md)
-      + [Integrazione per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-dynamic-media-open-api.md)
+      + [Integrazione per Dynamic Media con funzionalità OpenAPI](/help/assets/integrate-dynamic-media-openapi.md)
    + Frammenti di contenuto {#content-fragments}
       + [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
       + [Distribuzione headless con frammenti di contenuto e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -856,8 +856,8 @@ ht-degree: 90%
          + [Configurare origini dati](/help/forms/configure-data-sources.md)
          + [Configurazione [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Collegare il modulo adattivo all’applicazione Salesforce tramite il flusso di credenziali client OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configura archiviazione  [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
-         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] &#x200B;](/help/forms/configure-msdynamics.md)
+         + [Configura archiviazione  [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+         + [Configurare servizi cloud  [!DNL Microsoft Dynamics 365] ](/help/forms/configure-msdynamics.md)
          + [Connettere il modulo adattivo al database SQL di Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurare servizi cloud Salesforce](/help/forms/configure-salesforce.md)
          + [Crea modello dati modulo](/help/forms/create-form-data-models.md)
@@ -1322,7 +1322,7 @@ ht-degree: 90%
       + Authoring{#authoring}
          + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=it)
          + [Editor Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=it)
-      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=it)
+      + [Anteprima dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=it)
    + Selettore frammento di contenuto {#content-fragment-selector}
       + [Selettore frammento di contenuto micro-front-end - Panoramica](/help/headless/content-fragment-selector/overview.md)
