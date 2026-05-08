@@ -28,7 +28,7 @@ Quattro componenti complementari affrontano questo problema:
 | **Server MCP locale Quickstart di AEM** | Espone i dati live runtime da un’istanza AEM SDK locale per supportare la risoluzione dei problemi |
 | **Server MCP locale Dispatcher** | Abilita la convalida runtime e l&#39;ispezione di un&#39;istanza Dispatcher locale |
 
-Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) per ulteriori istruzioni pratiche.
+Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) per ulteriori istruzioni pratiche.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Adobe pubblica AEM as a Cloud Service skills nell&#39;archivio **[adobe/skills](
 
 ### Installa abilità {#install-skills}
 
-Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer. Per una procedura dettagliata concreta, consulta l&#39;[esercitazione Configurare AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills).
+Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer. Per una procedura dettagliata concreta, consulta l&#39;[esercitazione Configurare AEM Agent Skills](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills).
 
 #### Claude Code {#claude-code}
 
@@ -123,7 +123,7 @@ CTA Link (ctaLink) - Pathfield
 
 L’agente fa eco alle specifiche del campo per la conferma, quindi genera tutti i file dei componenti. I pattern supportati includono multicampo con elementi compositi nidificati, logica condizionale di visualizzazione/nascondere, estensione dei componenti core tramite Sling Resource Merger e test JUnit 5 con AEM Mocks. Il progetto può provenire da varie fonti, tra cui una descrizione testuale, un&#39;immagine o un URL di progettazione Figma utilizzando il server MCP di Figma.
 
-Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Utilizzare l’abilità Dispatcher {#use-the-dispatcher-skill}
 
