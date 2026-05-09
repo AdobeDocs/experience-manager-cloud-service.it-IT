@@ -140,7 +140,7 @@ Il server MCP di Experience Governance è ora generalmente disponibile (GA). Si 
 Ulteriori informazioni sui [server AEM MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e sull&#39;[agente di governance](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486266/?captions=ita&learn=on&enablevpops)
 
 #### Claude Connector {#aem-claude-connector}
 
