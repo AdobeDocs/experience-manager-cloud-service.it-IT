@@ -4,12 +4,13 @@ description: Scopri come utilizzare Model Context Protocol con AEM as a Cloud Se
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
+source-git-commit: 0e011e464ba607edf1fce719263717cc8ce6ba61
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1922'
 ht-degree: 0%
 
 ---
+
 
 # Utilizzo di MCP con AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -19,13 +20,12 @@ Molti team di Adobe Experience Manager (AEM) ora lavorano in ambienti di svilupp
 
 Con l’integrazione MCP di AEM, utenti tipo diversi possono collaborare intorno allo stesso contenuto:
 
-* **Gli sviluppatori** possono orchestrare operazioni e flussi di lavoro per contenuti dalla loro applicazione IDE o chat
+* **Gli sviluppatori** possono orchestrare le operazioni e i flussi di lavoro relativi ai contenuti dalla loro applicazione IDE o chat.
 * **I professionisti** e gli architetti di contenuti possono gestire siti e frammenti di contenuto e importare risorse con l&#39;assistenza dell&#39;intelligenza artificiale, pur mantenendo il modello di autorizzazione esistente di AEM.
 
 >[!IMPORTANT]
 >
 > Per gli scenari che modificano o eliminano il contenuto, i professionisti devono utilizzare l’interfaccia di AI Assistant anziché richiamare direttamente gli strumenti MCP. Gli agenti AEM gestiti dall’Assistente AI includono protezioni integrate.
->
 
 Questo articolo spiega cosa fornisce la funzionalità MCP di AEM, quali applicazioni MCP sono supportate, come configurarla e come utilizzarla nella pratica.
 
@@ -35,27 +35,22 @@ Le moderne applicazioni IDE e chat utilizzano MCP come metodo per consentire a u
 
 I vantaggi principali includono:
 
-* **Interazione con linguaggio naturale anziché API plumbing**
-Gli strumenti MCP descrivono le operazioni disponibili e come chiamarle. LLM utilizza questi schemi per decidere quali strumenti richiamare e con quali parametri.
-* **Esperienza coerente nelle applicazioni**
-Gli stessi strumenti MCP di AEM possono essere utilizzati da più applicazioni compatibili con MCP, consentendo ai team di lavorare dove sono più produttivi e richiamando le stesse funzionalità AEM sottostanti.
-* **Protezione e governance mantenute**
-Le richieste agli strumenti MCP di AEM vengono eseguite con l’identità dell’utente autenticato e ogni strumento applica le autorizzazioni AEM esistenti dell’utente. Le operazioni basate sull’intelligenza artificiale seguono le stesse regole di accesso del lavoro manuale in AEM.
+* **Interazione con linguaggio naturale anziché API plumbing** - Gli strumenti MCP descrivono le operazioni disponibili e come chiamarle. LLM utilizza questi schemi per decidere quali strumenti richiamare e con quali parametri.
+* **Esperienza coerente nelle applicazioni** - Gli stessi strumenti MCP di AEM possono essere utilizzati da più applicazioni compatibili con MCP, consentendo ai team di lavorare dove sono più produttivi e richiamando le stesse funzionalità AEM sottostanti.
+* **Sicurezza e governance mantenute**: le richieste agli strumenti AEM MCP vengono eseguite con l&#39;identità dell&#39;utente autenticato e ogni strumento applica le autorizzazioni AEM esistenti dell&#39;utente. Le operazioni basate sull’intelligenza artificiale seguono le stesse regole di accesso del lavoro manuale in AEM.
 
 ## Server MCP forniti da AEM {#mcp-servers-provided-by-aem}
 
-AEM espone i server MCP come endpoint HTTP. Gli endpoint elencati di seguito sono relativi a:
-
-`https://mcp.adobeaemcloud.com/adobe/mcp/`
+AEM espone i server MCP come endpoint HTTP. Gli endpoint elencati di seguito sono relativi a `https://mcp.adobeaemcloud.com/adobe/mcp/`.
 
 ### Server MCP {#mcp-servers}
 
-| **Server MCP** | **Endpoint** | **Descrizione** |
-|---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Contenuto** | `/content` | Operazioni per contenuti quali creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto, importazione di risorse e ricerca di risorse.                                                                          <br>Invia un&#39;e-mail a `aemagentsteam@adobe.com` per attivare la **ricerca risorse**. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail. |
-| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (Get, List/Search) per pagine e frammenti di contenuto, oltre alla ricerca di risorse.                                                                             <br>Invia un&#39;e-mail a `aemagentsteam@adobe.com` per attivare la **ricerca risorse**. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail. |
+| Server MCP | Endpoint | Descrizione |
+|---|---|---|
+| **Contenuto** | `/content` | Operazioni per contenuti quali creazione, lettura, aggiornamento ed eliminazione (CRUD) per pagine e frammenti di contenuto, importazione di risorse e ricerca di risorse.<br>Se sei interessato, devi iscriverti alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) per accedere a Experience Governance MCP. |
+| **Contenuto (sola lettura)** | `/content-readonly` | Operazioni per contenuti di sola lettura (recupero, elenco/ricerca) per pagine e frammenti di contenuto, oltre alla ricerca di risorse.<br>Se sei interessato, devi iscriverti alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) per accedere a Experience Governance MCP. |
 | **Cloud Manager** | `/cloudmanager` | Gestisci le entità Cloud Manager, inclusi programmi, ambienti, archivi e pipeline, che possono anche essere attivati. |
-| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>I clienti devono iscriversi alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/it/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) per accedere a Experience Governance MCP. |
+| **Governance delle esperienze** | `/experience-governance` | Valuta i contenuti (testo, immagini, pagine) in base alle regole di governance del brand ed elenca configurazioni e controlli del brand.<br/>Se sei interessato, devi iscriverti alla versione di prova di [agenti o disporre di una licenza a pagamento](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) per accedere a Experience Governance MCP. |
 
 Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo. In pratica, puoi chiedere all’applicazione abilitata per MCP di individuare gli strumenti tramite un prompt come:
 
@@ -65,7 +60,7 @@ Gli strumenti specifici esposti da ciascun server MCP possono evolvere nel tempo
 
 Il client MCP utilizza il protocollo MCP per recuperare l&#39;elenco degli strumenti e gli schemi, che il LLM può quindi utilizzare.
 
-Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
+Per ulteriori informazioni sulle funzionalità e su come utilizzarle, fare riferimento all&#39;[esercitazione sul server MCP di contenuti](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e al [video sul server MCP di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager).
 
 ## Applicazioni MCP supportate {#supported-mcp-applications}
 
@@ -97,7 +92,7 @@ I server MCP di AEM sono progettati per funzionare con un set definito di applic
 
 La configurazione di MCP per AEM prevede due parti principali:
 
-1. **Configurazione in ogni applicazione client MCP** affinché l&#39;applicazione sappia come connettersi ai server MCP di AEM ed eseguire l&#39;accesso OAuth
+1. **Configura ogni applicazione client MCP** in modo che l&#39;applicazione sappia come connettersi ai server MCP di AEM ed eseguire l&#39;accesso OAuth.
 1. **Selezionare il server MCP** prima di avviare la richiesta, in modo che il client MCP possa utilizzarlo.
 
 Sono disponibili guide dettagliate relative a entrambi i passaggi per:
@@ -124,19 +119,19 @@ Tutti i server MCP vengono inseriti nell&#39;elenco Consentiti per impostazione 
 
 Gli amministratori possono inoltre disabilitare l&#39;accesso per specifiche applicazioni client MCP, se richiesto dai criteri dell&#39;organizzazione. Se desideri che Adobe abiliti il supporto per altri prodotti client MCP, invia un collegamento al sito web del prodotto. Se hai bisogno di inserire nell&#39;elenco Consentiti un client MCP personalizzato, contatta anche tu.
 
-Per tutte le richieste relative al server MCP, contattaci all&#39;indirizzo **aemcs-mcp-feedback@adobe.com**
+Per tutte le richieste relative al server MCP, contatta Adobe all&#39;indirizzo **`aemcs-mcp-feedback@adobe.com`**
 
 ### Configurazione applicazione client MCP {#mcp-client-application-configuration}
 
 Ogni utente esegue questo passaggio oppure un amministratore dell&#39;applicazione client MCP può eseguirlo laddove supportato. I dettagli di configurazione variano leggermente da un’applicazione all’altra. I client MCP si stanno evolvendo rapidamente e il supporto per i server MCP remoti è in fase di sviluppo attivo. Potrebbe essere necessario abilitare la modalità Sviluppatore per accedere alle funzionalità per l’aggiunta di server remoti, ma il processo generale è il seguente:
 
-1. Aggiungi uno o più URL del server MCP
+1. Aggiungi uno o più URL del server MCP.
    * Configura uno o più endpoint MCP dalla tabella precedente. Esempio:`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
-1. Attiva la connessione
+1. Attiva la connessione.
    * Salva o attiva la configurazione in modo che l&#39;applicazione client MCP tenti di connettersi al server MCP
-1. Accedi con Adobe ID
+1. Accedi con Adobe ID.
    * Quando richiesto, completa il flusso di accesso di Adobe in modo che l’applicazione possa ottenere token OAuth associati al tuo Adobe ID
-1. Verificare gli strumenti individuati
+1. Verificare gli strumenti individuati.
    * Una volta autenticata, l’applicazione rileva gli strumenti MCP dal server. È quindi possibile iniziare a richiedere al LLM di eseguire le operazioni di AEM.
 
 Per l&#39;elenco completo delle applicazioni supportate, vedere [Applicazioni MCP supportate](#supported-mcp-applications).
@@ -150,7 +145,7 @@ I server MCP ospitati da Adobe implementano OAuth e sono integrati con il sistem
 
 ![Errore client MCP non consentito](assets/MCP-Client-not-permitted.png)
 
-* Una volta verificata, il server MCP rilascia i token utilizzati dall’applicazione per le successive chiamate allo strumento
+* Una volta verificata, il server MCP rilascia i token utilizzati dall’applicazione per le successive chiamate dello strumento.
 * Gli strumenti MCP rispettano le autorizzazioni AEM dell’utente. Solo gli utenti che dispongono dell’autorizzazione per modificare un frammento di contenuto in AEM possono modificarlo tramite MCP.
 
 Questo approccio garantisce che le operazioni assistite da IA siano conformi al modello di sicurezza e governance di AEM esistente.
@@ -163,30 +158,26 @@ Una volta configurate le applicazioni client AEM e MCP, puoi lavorare nell’app
 >
 >I prompt contenenti più passaggi o destinati a diversi tipi di contenuto, ad esempio immagini e testo, funzionano al meglio con un modello pensante. Abilita un modello di pensiero o seleziona l’opzione Pensiero nel client MCP invece di fare affidamento sulla modalità Automatica.
 
-### Esempi di casi d’uso {#example-usecases}
+### Casi d’uso di esempio {#example-use-cases}
 
 Alcuni scenari rappresentativi includono:
 
-* **Individuazione ambiente**
+* Individuazione dell’ambiente
    * Elencare ambienti e licenze per decidere dove eseguire un flusso di lavoro.
-
-* **Gestione siti**
+* Gestione dei siti
    * Elenca siti
    * Crea, leggi, aggiorna ed elimina pagine e contenuto della pagina.
-
-* **Gestione frammenti di contenuto**
+* Gestione dei frammenti di contenuto
    * Cercare frammenti di contenuto
    * Creare nuovi frammenti
    * Aggiorna i frammenti esistenti quando cambia la messaggistica della campagna.
-
-* **Importazione risorse**
+* Importazione risorse
    * Importa risorse con controllo stato
-
-* **Ricerca Assets**
+* Ricerca risorse
 
   >[!NOTE]
   >
-  >Invia un&#39;e-mail a `aemagentsteam@adobe.com` per abilitare la ricerca delle risorse. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail.
+  >Invia un&#39;e-mail a `aemagentsteam@adobe.com` per abilitare la ricerca risorse. Includi il nome dell’organizzazione e il caso d’uso nell’e-mail.
 
 ### Esempio di flussi di lavoro {#example-workflows}
 
@@ -217,20 +208,13 @@ Il LLM sceglie e coordina automaticamente gli strumenti MCP necessari.
 
 Quando si lavora con LLM tramite MCP, tenere presente quanto segue:
 
-* **Funzionalità elevata ma non infallibile**
-I moduli LLM possono eseguire attività complesse, ma sono soggetti a errori occasionali. Lo stesso prompt può produrre risultati o presentazioni leggermente diversi senza un motivo evidente. Esamina sempre gli output prima di applicare modifiche al contenuto di produzione.
-
-* **Funzionalità in evoluzione**
-I modelli LLM sono in continuo miglioramento. Nel tempo, diventano più intelligenti nel scoprire nuovi modi per combinare gli strumenti MCP per raggiungere i tuoi obiettivi. Un’attività che richiedeva l’invio di più richieste oggi può funzionare senza problemi con un singolo prompt domani.
-
-* **La supervisione umana è essenziale:**
-Pensa al LLM come a un assistente esperto che ha bisogno di supervisione. Possiede un&#39;ampia conoscenza e può ideare soluzioni creative, ma trae vantaggio dalla tua guida e revisione. Verifica i risultati, in particolare per le operazioni critiche, e fornisci un feedback quando l’output non corrisponde alle tue aspettative.
-
-* **Prestare attenzione alle esecuzioni dello strumento di riconoscimento automatico**
-Alcune applicazioni client MCP, come Claude, offrono la possibilità di riconoscere automaticamente le esecuzioni dello strumento richieste da LLM. Anche se questa opzione può essere utile per operazioni di sola lettura, come la ricerca o il recupero del contenuto, occorre prestare attenzione con gli strumenti che aggiornano o eliminano il contenuto. Rivedi ogni richiesta di esecuzione dello strumento prima di confermare le azioni che modificano il tuo ambiente AEM.
+* **Funzionalità elevata ma non infallibile** - I moduli LLM possono eseguire attività complesse ma sono soggetti a errori occasionali. Lo stesso prompt può produrre risultati o presentazioni leggermente diversi senza un motivo evidente. Esamina sempre gli output prima di applicare modifiche al contenuto di produzione.
+* **Funzionalità in evoluzione** - I modelli LLM sono in continuo miglioramento. Nel tempo, diventano più intelligenti nel scoprire nuovi modi per combinare gli strumenti MCP per raggiungere i tuoi obiettivi. Un’attività che richiedeva l’invio di più richieste oggi può funzionare senza problemi con un singolo prompt domani.
+* **La supervisione umana è essenziale**. Considerare LLM come un assistente competente che necessita di supervisione. Possiede un&#39;ampia conoscenza e può ideare soluzioni creative, ma trae vantaggio dalla tua guida e revisione. Verifica i risultati, in particolare per le operazioni critiche, e fornisci un feedback quando l’output non corrisponde alle tue aspettative.
+* **Prestare attenzione alle esecuzioni dello strumento di riconoscimento automatico** - Alcune applicazioni client MCP, come Claude, offrono la possibilità di riconoscere automaticamente le esecuzioni dello strumento richieste da LLM. Anche se questa opzione può essere utile per operazioni di sola lettura, come la ricerca o il recupero del contenuto, occorre prestare attenzione con gli strumenti che aggiornano o eliminano il contenuto. Rivedi ogni richiesta di esecuzione dello strumento prima di confermare le azioni che modificano il tuo ambiente AEM.
 
 ## Limitazioni {#limitations}
 
-AEM attualmente supporta la configurazione dei server MCP nelle applicazioni elencate in [Applicazioni MCP supportate](#supported-mcp-applications).
+AEM attualmente supporta la configurazione dei server MCP nelle applicazioni elencate in [Applicazioni MCP supportate.](#supported-mcp-applications)
 
-Se desideri utilizzare un&#39;applicazione client MCP diversa, contatta il numero **aemcs-mcp-feedback@adobe.com** per richiedere supporto per altri client o per inserire nell&#39;elenco Consentiti uno personalizzato.
+Se desideri utilizzare un&#39;applicazione client MCP diversa, contatta il numero **`aemcs-mcp-feedback@adobe.com`** per richiedere supporto per client aggiuntivi o per inserire nell&#39;elenco Consentiti uno personalizzato.
