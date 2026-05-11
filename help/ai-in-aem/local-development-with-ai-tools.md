@@ -4,12 +4,13 @@ description: Scopri come configurare gli strumenti di codifica AI con il contest
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
+source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
+
 
 # Sviluppo locale con strumenti AI {#local-development-with-ai-tools}
 
@@ -17,28 +18,28 @@ ht-degree: 0%
 >
 >Questo articolo si concentra sullo sviluppo locale con strumenti di intelligenza artificiale per lo sviluppo **stack Java AEM**. Per Edge Delivery Services, consulta [Sviluppo con strumenti di intelligenza artificiale](https://www.aem.live/developer/ai-coding-agents).
 
-Gli agenti di codifica IA (Claude Code, Cursor, GitHub Copilot e strumenti simili) hanno un’ampia conoscenza delle tecnologie sottostanti di AEM (Java, OSGi, Sling, JCR, HTL), ma non conoscono necessariamente le best practice per la generazione di codice e configurazione, o come eseguire il debug dei problemi comuni di sviluppo di AEM.
+Gli agenti di codifica IA (Claude Code, Cursor, GitHub Copilot e strumenti simili) hanno un’ampia conoscenza delle tecnologie sottostanti di AEM (Java, OSGi, Sling, JCR, HTL), ma non conoscono necessariamente le best practice per la generazione di codice e configurazione o per il debug di problemi comuni di sviluppo AEM.
 
 Quattro componenti complementari affrontano questo problema:
 
 | Componente | Scopo |
 |---|---|
-| **AGENTI.md** | Un file di contesto specifico del progetto che basa l’intelligenza artificiale nel progetto AEM Cloud Service per ogni sessione |
+| **AGENTI.md** | Un file di contesto specifico per il progetto che basa l’intelligenza artificiale nel progetto AEM as a Cloud Service per ogni sessione |
 | **Competenze agente** | Set di istruzioni riutilizzabili per attività di sviluppo ricorrenti, ad esempio la creazione di componenti e la configurazione di Dispatcher |
 | **Server MCP locale Quickstart di AEM** | Espone i dati live runtime da un’istanza AEM SDK locale per supportare la risoluzione dei problemi |
 | **Server MCP locale Dispatcher** | Abilita la convalida runtime e l&#39;ispezione di un&#39;istanza Dispatcher locale |
 
-Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) per ulteriori istruzioni pratiche.
+Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) per ulteriori istruzioni pratiche.
 
->[!NOTE]
+>[!TIP]
 >
-> Utili anche per lo sviluppo locale, ma non trattati in questo articolo, sono i server MCP remoti di AEM Cloud Service. Per ulteriori informazioni, consulta l&#39;articolo [Utilizzo di MCP con Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+>I server MCP remoti di AEM Cloud Service sono utili anche per lo sviluppo locale. Per ulteriori informazioni, consulta l&#39;articolo ] sull&#39;utilizzo di MCP con Cloud Service.(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)[
 
 ## AGENTS.md {#agentsmd}
 
-`AGENTS.md` è un file Markdown nella directory principale del progetto AEM, in cui gli strumenti di codifica AI vengono caricati automaticamente all&#39;inizio di ogni sessione per essere basati sulle competenze essenziali del dominio Java stack di AEM Cloud Service (e non su altre soluzioni AEM come AEM 6.5 o Edge Delivery Services).
+`AGENTS.md` è un file markdown nella directory principale del progetto AEM. Gli strumenti di codifica basate sull’intelligenza artificiale caricano automaticamente questo file all’inizio di ogni sessione, in modo da essere basato sull’esperienza di dominio essenziale dello stack Java di AEM Cloud Service (e non su altre soluzioni AEM come AEM 6.5 o Edge Delivery Services).
 
-`AGENTS.md` non è un file statico copiato. Viene generato dall&#39;abilità `ensure-agents-md` descritta nella sezione successiva. L&#39;abilità legge `pom.xml` per risolvere il nome del progetto, individuare i moduli e rilevare i componenti aggiuntivi installati, producendo un file personalizzato per il progetto specifico.
+`AGENTS.md` non è un file statico copiato. Viene generata dall&#39;abilità `ensure-agents-md` descritta nella sezione successiva di questo documento. L&#39;abilità legge `pom.xml` per risolvere il nome del progetto, individuare i moduli e rilevare i componenti aggiuntivi installati, producendo un file personalizzato per il progetto specifico.
 
 >[!NOTE]
 >
@@ -55,11 +56,11 @@ Adobe pubblica AEM as a Cloud Service skills nell&#39;archivio **[adobe/skills](
 | `ensure-agents-md` | Bootstrap `AGENTS.md` e `CLAUDE.md` personalizzati in base all&#39;effettiva struttura del modulo del progetto |
 | `create-component` | Scaffolds un componente AEM completo: definizione del componente, finestra di dialogo XML, modello HTL, modello Sling, unit test e clientlibs |
 | `dispatcher` | Assistente alla configurazione di Dispatcher e Apache HTTPD con tecnologia AI per l’authoring della configurazione, consulenze tecniche, risposta agli incidenti, ottimizzazione delle prestazioni e protezione |
-| `workflow` | Singolo punto di ingresso per tutte le abilità del flusso di lavoro di AEM as a Cloud Service. Include la progettazione del modello di flusso di lavoro, il passaggio del processo personalizzato e lo sviluppo del selettore partecipanti, la configurazione del modulo di avvio, l’attivazione del flusso di lavoro e il supporto alla produzione, tra cui il debug di flussi di lavoro bloccati/non riusciti, la valutazione degli incidenti con i registri di Cloud Manager, l’analisi del pool di thread e la diagnostica dei processi Sling per il motore di flusso di lavoro Granite. |
+| `workflow` | Questo è il singolo punto di ingresso per tutte le abilità del flusso di lavoro di AEM as a Cloud Service. Include la progettazione del modello di flusso di lavoro, il passaggio del processo personalizzato e lo sviluppo del selettore dei partecipanti, la configurazione del modulo di avvio, l’attivazione del flusso di lavoro e il supporto alla produzione, tra cui il debug dei flussi di lavoro bloccati/non riusciti, la valutazione degli incidenti con i registri di Cloud Manager, l’analisi del pool di thread e la diagnostica dei processi Sling per il motore di flusso di lavoro Granite. |
 
 ### Installa abilità {#install-skills}
 
-Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer. Per una procedura dettagliata concreta, consulta l&#39;[esercitazione Configurare AEM Agent Skills](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills).
+Scegli il metodo che corrisponde allo strumento di codifica AI. L’installazione delle abilità una volta le rende disponibili per tutti i progetti su quel computer. Per una procedura dettagliata concreta, consulta l&#39;[esercitazione Configurare AEM Agent Skills](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills).
 
 #### Claude Code {#claude-code}
 
@@ -85,16 +86,16 @@ npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-servic
 gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
 ### Utilizzare l’abilità make-agents-md {#use-the-ensure-agents-md-skill}
 
-Dopo aver installato l’abilità, apri l’assistente AI in qualsiasi progetto AEM Cloud Service che non dispone ancora di `AGENTS.md`. L’abilità viene eseguita automaticamente prima di elaborare la prima richiesta, creando entrambi i file nella directory principale del progetto senza richiedere una chiamata esplicita.
+Dopo aver installato l&#39;abilità, apri l&#39;assistente AI in qualsiasi progetto AEM as a Cloud Service che non dispone ancora di `AGENTS.md`. L’abilità viene eseguita automaticamente prima di elaborare la prima richiesta, creando entrambi i file nella directory principale del progetto senza richiedere una chiamata esplicita.
 
 ### Utilizzare l’abilità di creazione dei componenti {#use-the-create-component-skill}
 
-Al primo utilizzo, l&#39;abilità rileva automaticamente `project`, `package` e `group` da `pom.xml` e dai componenti esistenti, richiede di confermare i valori rilevati, quindi crea `.aem-skills-config.yaml` nella directory principale del progetto. Non è richiesta alcuna configurazione manuale prima del primo utilizzo.
+Al primo utilizzo, l&#39;abilità rileva automaticamente `project`, `package` e `group` da `pom.xml` e dai componenti esistenti e richiede di confermare i valori rilevati. Quindi crea `.aem-skills-config.yaml` nella directory principale del progetto. Non è richiesta alcuna configurazione manuale prima del primo utilizzo.
 
 Se preferisci creare il file in anticipo, inserisci `.aem-skills-config.yaml` nella directory principale del progetto con la seguente struttura:
 
@@ -123,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 L’agente fa eco alle specifiche del campo per la conferma, quindi genera tutti i file dei componenti. I pattern supportati includono multicampo con elementi compositi nidificati, logica condizionale di visualizzazione/nascondere, estensione dei componenti core tramite Sling Resource Merger e test JUnit 5 con AEM Mocks. Il progetto può provenire da varie fonti, tra cui una descrizione testuale, un&#39;immagine o un URL di progettazione Figma utilizzando il server MCP di Figma.
 
-Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Per ulteriori informazioni, segui l&#39;esercitazione [Sviluppo di componenti con AEM Agent Skills.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### Utilizzare l’abilità Dispatcher {#use-the-dispatcher-skill}
 
@@ -140,7 +141,7 @@ Richiama l’abilità del dispatcher per qualsiasi lavoro di configurazione Disp
 
 Per richieste ampie o nuove, inizia con la sottoabilità `workflow-orchestrator`. Per un lavoro mirato, descrivi la preoccupazione specifica e gli itinerari di competenze allo specialista appropriato.
 
-L’abilità del dispatcher gestisce l’orchestrazione e le linee guida per gli advisory. Il server MCP di Dispatcher, descritto di seguito, fornisce i sette strumenti di convalida e runtime utilizzati dall’abilità quando necessita di prove locali.
+L’abilità del dispatcher gestisce l’orchestrazione e le linee guida per gli advisory. Il server MCP di Dispatcher, descritto nella sezione seguente, fornisce i sette strumenti di convalida e runtime utilizzati dall’abilità quando necessita di prove locali.
 
 ## Server AEM Quickstart MCP {#aem-quickstart-mcp-server}
 
