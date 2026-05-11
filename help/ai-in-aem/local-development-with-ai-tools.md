@@ -33,7 +33,7 @@ Consulta le [esercitazioni di sviluppo basate sull&#39;intelligenza artificiale]
 
 >[!TIP]
 >
->I server MCP remoti di AEM Cloud Service sono utili anche per lo sviluppo locale. Per ulteriori informazioni, consulta l&#39;articolo ] sull&#39;utilizzo di MCP con Cloud Service.(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)[
+>I server MCP remoti di AEM Cloud Service sono utili anche per lo sviluppo locale. Per ulteriori informazioni, consulta l&#39;articolo &rbrack; sull&#39;utilizzo di MCP con Cloud Service.(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)&lbrack;
 
 ## AGENTS.md {#agentsmd}
 
