@@ -4,9 +4,9 @@ description: Questa guida fornisce suggerimenti per una richiesta efficace dell�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -104,12 +104,12 @@ Utilizzare questo prompt per importare molte pagine dello stesso modello dopo il
 
 Il flusso di lavoro consigliato è iterativo: effettua prima la convalida su un set ridotto, quindi aumenta.
 
-1. **Eseguire prima una migrazione a pagina singola.** - Eseguire la migrazione di una pagina rappresentativa per il modello da importare in blocco.
+1. **Eseguire prima una migrazione di una sola pagina.** : esegui la migrazione di una pagina rappresentativa per il modello che intendi importare in blocco.
    * In questo modo viene creata l’infrastruttura di importazione richiesta.
-1. **Eseguire l&#39;importazione in blocco su un piccolo gruppo di pagine.** - Chiedi all&#39;agente di eseguire l&#39;importazione in blocco e fornisci un breve elenco di URL che seguono lo stesso modello.
-1. **Rivedere e perfezionare i risultati.** - Controlla le pagine importate.
+1. **Esegui l&#39;importazione in blocco su un piccolo set di pagine.** : chiedi all’agente di eseguire l’importazione in blocco e di fornire un breve elenco di URL che seguono lo stesso modello.
+1. **Rivedere e perfezionare i risultati.** - Controllare le pagine importate.
    * Se qualcosa sembra sbagliato, chiedi all&#39;agente di regolare i parser, i trasformatori o la logica di importazione.
-1. **Aumenta dimensioni.** - Quando i risultati sono corretti, fornire l&#39;elenco completo degli URL.
+1. **Aumenta dimensioni.** - Quando i risultati sono corretti, fornisci l’elenco completo degli URL.
    * L&#39;agente riutilizzerà la stessa logica di importazione ed eseguirà l&#39;importazione in blocco su scala.
 
 ### Rottamazione di pagine Web {#scraping-webpages}
@@ -219,7 +219,7 @@ Utilizzare questo prompt per convalidare intere pagine migrate per la fedeltà v
    1. Migrare una pagina.
    1. Applicare una progettazione.
    1. Eseguire una critica di blocco sui blocchi chiave
-   1. Esegui il criterio di pagina per la convalida completa.
+   1. Eseguire un criterio di pagina per la convalida completa.
 
 ### Migrazione in blocco Figma {#figma-block-migration}
 
@@ -245,7 +245,7 @@ Per utilizzare questo prompt, è necessario impostare i dettagli di Figma in [Co
    1. **Mappatura a blocchi esistenti**: l&#39;agente identifica il blocco corrispondente più vicino nella libreria di blocchi del progetto e crea una variante personalizzata.
    1. **Generazione CSS**: l&#39;agente scrive stili che fanno riferimento alle proprietà personalizzate CSS estratte, garantendo la coerenza della progettazione.
    1. **Download risorse**: l&#39;agente salva immagini e icone da Figma nell&#39;area di lavoro dell&#39;ambiente ospitato.
-   1. **Generazione di contenuti Edge Delivery Services**: l&#39;agente crea il file markdown seguendo la struttura di blocchi EDS
+   1. **Generazione di contenuti Edge Delivery Services**: l&#39;agente crea il file markdown seguendo la struttura di blocchi di Edge Delivery Services
    1. **Convalida output**: l&#39;agente visualizza in anteprima il risultato ed esegue un confronto visivo con la struttura Figma originale.
 * L’abilità legge innanzitutto i metadati (passaggio 1) per comprendere la struttura, quindi estrae il contesto di progettazione dettagliato (passaggi 2-5).
    * Questo approccio graduale evita problemi con file Figma di grandi dimensioni o complessi.
@@ -253,6 +253,60 @@ Per utilizzare questo prompt, è necessario impostare i dettagli di Figma in [Co
    * Tutti gli stili vengono estratti come proprietà personalizzate CSS (token di progettazione) prima della scrittura di qualsiasi CSS.
    * In questo modo il blocco migrato rimane coerente con il sistema di progettazione.
 * Il prompt richiede l&#39;URL Figma (con `fileKey` e l&#39;opzione `node-id`) o una chiave di file Figma direttamente come input.
+
+### Riprogettare La Migrazione Utilizzando I Blocchi Derivati Da Figma {#figma-redesign-migration}
+
+Utilizza questo prompt quando si esegue la migrazione di un sito web esistente in un’esperienza riprogettata.
+
+In questo flusso di lavoro, puoi innanzitutto creare la raccolta di blocchi di destinazione da Figma. La migrazione del sito viene eseguita sul sito web live source e mappa il contenuto sorgente nei blocchi creati da Figma.
+
+* **Figma** è la struttura di destinazione e l&#39;origine della libreria a blocchi.
+* **Il sito Web attivo** rimane l&#39;origine del contenuto.
+
+#### Esempio di prompt {#example-figma-redesign}
+
+1. Crea l’insieme di blocchi da Figma:
+
+   * &quot;Creare l&#39;insieme di blocchi Edge Delivery Services dai seguenti componenti Figma: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+1. Migra il contenuto sorgente in questi blocchi:
+
+   * &quot;Migrare queste pagine e mappare il contenuto alla raccolta di blocchi derivata da Figma: URL1, URL2, URL3&quot;
+
+#### Cosa sapere {#wtk-figma-redesign}
+
+* Figma viene utilizzato per primo per stabilire il set di blocchi riprogettato.
+* La migrazione del sito quindi mappa il contenuto reale del sito web in quel set di blocchi.
+* **Convalida del contenuto** eseguita sul sito Web di origine.
+* **Convalida visiva** eseguita sul sistema di progettazione e raccolta di blocchi derivato da Figma.
+* È necessario creare nuove varianti di blocco solo quando i blocchi esistenti derivati da Figma non possono rappresentare il contenuto sorgente.
+
+#### Workflow consigliato {#figma-redesign-workflow}
+
+1. Identificare i componenti Figma necessari per il sito riprogettato.
+1. Migra tali componenti in blocchi o varianti di Edge Delivery Services.
+1. Esamina la raccolta di blocchi e i token di progettazione generati.
+1. Eseguire la migrazione del sito su pagine di origine rappresentative.
+1. Mappa il contenuto sorgente nei blocchi derivati da Figma.
+1. Convalida il contenuto rispetto al sito Web di origine.
+1. Convalidare l&#39;output visivo rispetto al progetto Figma di destinazione.
+1. Perfeziona i blocchi o le mappature, quindi ridimensiona a più pagine.
+
+### Crea una nuova pagina da Figma {#figma-new-page-from-figma}
+
+Utilizzare questo prompt quando la pagina non esiste già in un sito Web di origine e una pagina o un frame Figma dovrebbe favorire la creazione di una nuova pagina Edge Delivery Services.
+
+#### Esempio di prompt {#example-figma-new-page}
+
+* &quot;Eseguire la migrazione della pagina Figma a Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+#### Cosa bisogna sapere {#wtk-figma-new-page}
+
+* Questo prompt funziona in modo ottimale con un frame Figma o una pagina **specifica**, non con un intero file.
+* Il frame deve essere organizzato in **sezioni di pagina cancellate**.
+* Le sezioni sono mappate su blocchi esistenti, contenuto predefinito o nuove varianti.
+* Il testo e le risorse provengono da Figma.
+* Le funzionalità dinamiche come la ricerca, le calcolatrici, la personalizzazione o i localizzatori di archivi potrebbero richiedere **lo sviluppo di blocchi separati** oltre a quello generato dalla migrazione Figma.
 
 ### Impostazione navigazione {#navigation-setup}
 
@@ -413,3 +467,9 @@ Utilizza questo prompt per risolvere i problemi relativi a blocchi, immagini, CS
    1. Codice di blocco
    1. Console del browser
 * L&#39;agente è in grado di controllare le anteprime locali alle `http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
