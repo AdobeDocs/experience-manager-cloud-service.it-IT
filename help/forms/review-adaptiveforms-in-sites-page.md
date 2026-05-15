@@ -46,7 +46,7 @@ Ora configura l’azione Invia di un componente Contenitore modulo adattivo sull
 
 1. Passa alla pagina del sito.
 1. Seleziona ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Viene visualizzata la finestra di dialogo **[!UICONTROL Contenitore modulo adattivo]**.
-1. Apri la scheda **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** per [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. Apri la scheda **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** per [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=it#invoke-an-aem-workflow)
 
 1. Fai clic su [Fine] per salvare le impostazioni.
 

@@ -97,7 +97,7 @@ Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (
 
    >[!IMPORTANT]
    >
-   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Fai clic su **Trasferimento contenuti** per creare un set di migrazione per eseguire l&#39;estrazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool).
+   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Fai clic su **Trasferimento contenuti** per creare un set di migrazione per eseguire l&#39;estrazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#running-tool).
 
 ### Ripresa del processo di mappatura utenti {#resume-user-mapping-process}
 
