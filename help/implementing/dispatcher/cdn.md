@@ -4,9 +4,9 @@ description: Scopri come utilizzare la rete CDN gestita da AEM e come indirizzar
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
+source-git-commit: 5f81fd54e28ce2636960ad66d1ae9317b9653e61
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1907'
 ht-degree: 11%
 
 ---
@@ -97,7 +97,7 @@ Istruzioni di configurazione:
 1. Imposta l&#39;intestazione `X-Forwarded-Host` con il nome di dominio in modo che AEM possa determinare l&#39;intestazione host. Ad esempio: `X-Forwarded-Host:example.com`.
 1. Imposta `X-AEM-Edge-Key`. Il valore deve essere configurato utilizzando prima una pipeline di configurazione di Cloud Manager, quindi la stessa chiave Edge deve essere configurata nella rete CDN del cliente, come descritto in [questo articolo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Necessario affinché il CDN di Adobe possa convalidare l&#39;origine delle richieste e passare le intestazioni `X-Forwarded-*` all&#39;applicazione AEM. Ad esempio, `X-Forwarded-For` viene utilizzato per determinare l&#39;IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota seguente).
+   * Necessario affinché il CDN di Adobe possa convalidare l&#39;origine delle richieste e passare le intestazioni `X-Forwarded-*` all&#39;applicazione AEM. Ad esempio, `X-Forwarded-For` viene utilizzato per determinare l&#39;IP del client. Pertanto, è responsabilità del chiamante fidato (ovvero, la rete CDN gestita dal cliente) garantire la correttezza delle intestazioni `X-Forwarded-*` (vedi la nota seguente). Vedi anche [come verificare le intestazioni inoltrate con `x-aem-debug`](#test-forwarded-headers).
    * Facoltativamente, l&#39;accesso all&#39;ingresso di Adobe CDN può essere bloccato quando non è presente un `X-AEM-Edge-Key`. Se hai bisogno di accedere direttamente all’ingresso di Adobe CDN (da bloccare), informa Adobe.
 
 Consulta la sezione [Configurazioni di esempio del fornitore CDN](#sample-configurations) per esempi di configurazione dai principali fornitori CDN.
@@ -117,6 +117,7 @@ In Windows:
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
+
 
 >[!NOTE]
 >
@@ -138,13 +139,6 @@ Questa configurazione CDN del cliente è supportata per il livello di pubblicazi
 
 Per eseguire il debug di una configurazione BYOCDN, utilizzare l&#39;intestazione `x-aem-debug` con il valore `edge=true`. Ad esempio:
 
-In Linux:
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-```
-
-In Windows:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -153,17 +147,37 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 Questo processo riflette alcune proprietà utilizzate nella richiesta nell&#39;intestazione di risposta `x-aem-debug`. Ad esempio:
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 Questo processo consente la verifica di dettagli quali i valori host, la configurazione dell’autenticazione edge e il valore dell’intestazione x-forwarded-host. Inoltre, identifica se è impostata una chiave edge e quale chiave viene utilizzata se esiste una corrispondenza.
+
+#### Testare le intestazioni inoltrate con x-aem-debug {#test-forwarded-headers}
+
+Per verificare che un visitatore non possa controllare le intestazioni inoltrate (`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`), la rete CDN gestita da AEM cancella i valori forniti dal visitatore e imposta quelli attendibili. Chiamare il sito con valori casuali e controllare l&#39;intestazione di risposta `x-aem-debug`:
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+Sostituisci `www.example.com` con il dominio del tuo sito. L&#39;intestazione di risposta `x-aem-debug` deve riflettere l&#39;host del sito e l&#39;IP del client. I valori inviati non devono essere visualizzati. Ad esempio:
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >
 >Puoi utilizzare un ambiente di sviluppo rapido (RDE) per distribuire e testare la configurazione:
 >
 >* [Ambienti di sviluppo rapido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Come utilizzare l&#39;ambiente di sviluppo rapido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Esempio di configurazioni fornitore CDN {#sample-configurations}
 
