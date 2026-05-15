@@ -3,10 +3,9 @@ title: Sperimentazione contestuale in AEM as a Cloud Service
 description: Scopri come utilizzare la barra di sperimentazione per aggiungere funzionalità di sperimentazione al sito.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Prima di impostare gli esperimenti, tieni presente che per poter creare in Unive
 1. Fai clic sull’icona A/B per aprire l’estensione di sperimentazione.
 
 >[!NOTE]
->In caso di problemi durante la configurazione della sperimentazione per il progetto, contatta [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com).
+>In caso di problemi durante la configurazione della sperimentazione per il progetto, contattare `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >Per ulteriori dettagli su come impostare e configurare il motore di sperimentazione, consulta la sezione della documentazione dal seguente [archivio](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
