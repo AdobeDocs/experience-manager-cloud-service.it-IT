@@ -293,7 +293,7 @@ Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di IP
 Prima dell’avvio dei test, l’immagine Docker verifica che il server Selenium sia in esecuzione. L’attesa del servizio Selenium è un processo a due fasi.
 
 1. È possibile leggere l’URL del servizio Selenium dalla variabile di ambiente `SELENIUM_BASE_URL`.
-1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
+1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [&#128279;](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
 
 Dopo aver ricevuto una risposta positiva dall’endpoint di stato di Selenium è possibile avviare i test.
 
