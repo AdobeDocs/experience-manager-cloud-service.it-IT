@@ -9,10 +9,10 @@ exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 89%
 
 ---
 
@@ -64,8 +64,8 @@ Definisci i parametri di input per la chiamata API e mappa i parametri di output
 Crea un semplice modulo adattivo utilizzando l’Editor universale per acquisire i dettagli dell’oggetto Lead come mostrato di seguito
 ![modulo-oggetto-lead](assets/create-lead.png)
 
-Gestisci l’evento clic sulla casella di controllo Crea lead utilizzando l’editor di regole. Mappa i parametri di input ai valori degli oggetti modulo appropriati, come mostrato di seguito. Visualizza l’ID del nuovo oggetto Lead creato nell’`leadid`oggetto TextField
-![editor-di-regole](assets/create-leade-rule-editor.png)
+Gestisci l’evento clic sulla casella di controllo Crea lead utilizzando l’editor di regole. Mappa i parametri di input ai valori degli oggetti modulo appropriati, come mostrato di seguito. Visualizza l&#39;ID del nuovo oggetto Lead creato nell&#39;oggetto TextField `leadid`
+![editor di regole](assets/create-leade-rule-editor.png)
 
 ## Testare l’integrazione
 

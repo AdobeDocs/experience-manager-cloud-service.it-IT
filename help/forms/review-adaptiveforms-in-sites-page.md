@@ -5,17 +5,17 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '394'
+ht-degree: 5%
 
 ---
 
+# Creare e gestire le revisioni per un modulo adattivo {#review-step-forms-aem-sites-page}
 
-# Creare e gestire recensioni per un modulo adattivo {#review-step-forms-aem-sites-page}
-
-Utilizzando il [Passaggio assegnazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=it#assign-task-step) del flusso di lavoro AEM, il revisore esamina il modulo inviato ed esegue azioni su di esso. Per rivedere il modulo inviato tramite il passaggio Assegna attività, eseguire la procedura seguente:
+Utilizzando il [Passaggio assegnazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) del flusso di lavoro AEM, il revisore esamina il modulo inviato ed esegue azioni su di esso. Per rivedere il modulo inviato tramite il passaggio Assegna attività, eseguire la procedura seguente:
 
 1. [Creare un flusso di lavoro AEM](#create-an-aem-workflow)
 1. [Configurare l’azione di invio del contenitore Modulo adattivo](#configure-submit-action)
@@ -46,7 +46,7 @@ Ora configura l’azione Invia di un componente Contenitore modulo adattivo sull
 
 1. Passa alla pagina del sito.
 1. Seleziona ![icona_impostazioni](assets/settings_icon.png) di un contenitore di moduli adattivi. Viene visualizzata la finestra di dialogo **[!UICONTROL Contenitore modulo adattivo]**.
-1. Apri la scheda **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** per [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=it#invoke-an-aem-workflow)
+1. Apri la scheda **[!UICONTROL Invio]** e specifica **[!UICONTROL Azione di invio]** per [Richiama un flusso di lavoro AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Fai clic su [Fine] per salvare le impostazioni.
 

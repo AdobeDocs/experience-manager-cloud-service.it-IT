@@ -2,15 +2,14 @@
 title: Configurare il connettore di traduzione (AEM Sites)
 description: Scopri come connettere AEM a un servizio di traduzione.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1162'
 ht-degree: 100%
 
 ---
@@ -48,7 +47,7 @@ Le sezioni seguenti descrivono questi passaggi in modo più dettagliato.
 
 ## Connessione a un fornitore di servizi di traduzione {#connect-translation-provider}
 
-Il primo passo è scegliere quale servizio di traduzione si desidera utilizzare.  Ci sono molte scelte per i servizi di traduzione umana e automatica disponibili per AEM. La maggior parte dei fornitori offre un pacchetto di traduzione da installare. Consulta la sezione [Risorse aggiuntive](#additional-resources) per una selezione di opzioni disponibili.
+Il primo passo è scegliere quale servizio di traduzione si desidera utilizzare. Ci sono molte scelte per i servizi di traduzione umana e automatica disponibili per AEM. La maggior parte dei fornitori offre un pacchetto di traduzione da installare. Consulta la sezione [Risorse aggiuntive](#additional-resources) per una selezione di opzioni disponibili.
 
 >[!NOTE]
 >
@@ -90,7 +89,7 @@ Per creare una configurazione di traduzione:
 
    ![Creare una configurazione di traduzione](assets/create-translation-configuration.png)
 
-1. Selezionando **Crea**, viene visualizzata la finestra **Modifica configurazione** in cui è possibile configurare le proprietà di configurazione.
+1. Selezionando **Crea** viene visualizzata la finestra **Modifica configurazione** in cui è possibile configurare le proprietà di configurazione.
 
 1. Poiché il contenuto viene gestito come un sito, seleziona la scheda **Siti**.
 
@@ -134,7 +133,7 @@ A questo scopo, accedi alla directory principale della lingua del contenuto. Per
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
 * Comprendere i parametri importanti del framework di integrazione della traduzione in AEM.
-* Come impostare la propria connessione al servizio di traduzione.
+* Essere in grado di impostare la propria connessione al servizio di traduzione.
 
 Sviluppa questa conoscenza e continua il percorso sulla traduzione per AEM Sites, consultando ora il documento [Configurare le regole di traduzione](translation-rules.md) dove scoprirai come definire i contenuti da tradurre.
 

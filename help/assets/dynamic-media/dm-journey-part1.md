@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Si applica ad AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 3%
+source-wordcount: '3692'
+ht-degree: 4%
 
 ---
 
@@ -105,7 +104,7 @@ Tuttavia, per aggiungere ulteriore valore a Dynamic Media oltre ai predefiniti i
 
 La tecnologia Smart Imaging migliora ulteriormente le prestazioni di consegna delle immagini ottimizzando automaticamente il formato e le dimensioni dei file in base alle funzionalità del browser del cliente. Funziona con i predefiniti immagine esistenti (i predefiniti immagine sono descritti nella Parte II di questo percorso) e utilizza l&#39;intelligenza al momento della consegna.
 
-Questa tecnologia riduce ulteriormente le dimensioni dei file di immagine in base alla velocità del browser e della connessione di rete. Poiché le risorse di immagini rappresentano la maggior parte del tempo di caricamento di una pagina, il miglioramento delle prestazioni può avere un impatto completo sugli indicatori aziendali chiave, ad esempio:
+Questa intelligenza riduce ulteriormente le dimensioni del file di immagine in base alla velocità del browser e della connessione di rete. Poiché le risorse di immagini rappresentano la maggior parte del tempo di caricamento di una pagina, il miglioramento delle prestazioni può avere un impatto completo sugli indicatori aziendali chiave, ad esempio:
 
 * Conversione più elevata
 * Tempo trascorso sul sito
@@ -113,8 +112,8 @@ Questa tecnologia riduce ulteriormente le dimensioni dei file di immagine in bas
 
 Nel complesso, con la tecnologia Smart Imaging, le prestazioni delle network camere migliorano del 22-47% in base alle impostazioni predefinite e alle caratteristiche specifiche dell&#39;utente finale. Il tutto mantenendo la qualità delle immagini come se non fossero mai state toccate.
 
-![Imaging avanzato](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_Smart Imaging ottimizza automaticamente il formato e le dimensioni dei file di un&#39;immagine in base alla capacità del browser e alla velocità di rete del cliente._
+![Smart Imaging](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
+_Smart Imaging ottimizza automaticamente il formato e la dimensione del file di un&#39;immagine in base alla capacità del browser e alla velocità di rete del cliente._
 
 L’imaging avanzato non è attivato per impostazione predefinita perché richiede uno sforzo coordinato tra l’utente e il supporto tecnico di Adobe Dynamic Media. Inoltre, l’abilitazione di Smart Imaging richiede la cancellazione completa della cache CDN, che viene quindi riempita con il tempo. Se ti interessa utilizzare Smart Imaging, puoi lavorare con Adobe per attivarlo inviando un ticket di supporto tecnico. Il supporto tecnico fornisce quindi un parametro URL che consente di provare, in anticipo, l’imaging intelligente. Puoi provarlo su qualsiasi pagina web o immagine in modo da vedere le prestazioni che ottieni e i risparmi. È quindi possibile attivare la tecnologia Smart Imaging per l&#39;intero sito.
 
@@ -253,14 +252,14 @@ Oltre a pubblicare manualmente le risorse, puoi configurare Dynamic Media in mod
 
 Dopo il caricamento, esistono diversi modi per visualizzare in anteprima le rappresentazioni di una risorsa in Dynamic Media. L’anteprima delle rappresentazioni può essere utile per avere un’idea di ciò che vede un cliente. Un metodo di anteprima comune consiste nel selezionare una risorsa e quindi visualizzarne le rappresentazioni selezionando un _predefinito immagine_ come illustrato di seguito.
 
-![Anteprima del rendering di una risorsa in base al predefinito per immagine grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+![Anteprima del rendering di una risorsa in base al predefinito per immagine di grandi dimensioni](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Anteprima del rendering di una risorsa in base al predefinito immagine &quot;Large&quot; selezionato. È stato fatto clic sul pulsante URL. Il percorso URL risultante contiene il nome del predefinito immagine &quot;Large&quot; e può essere utilizzato in una pagina Web._
 
 L&#39;URL qui sopra è live! [Prova](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Un altro metodo per visualizzare in anteprima una risorsa consiste nel selezionare la risorsa immagine e quindi selezionare un predefinito di _Visualizzatori_ come illustrato di seguito.
 
-![Anteprima di una risorsa in base al predefinito visualizzatore Zoom Vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+![Anteprima di una risorsa in base al predefinito visualizzatore Zoom verticale chiaro](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Anteprima di una risorsa in base al predefinito visualizzatore &quot;ZoomVertical_light&quot; selezionato. Il puntatore del mouse (`+`) è stato spostato sull&#39;orologio per ingrandire. Osservare i pulsanti URL e Incorpora._
 
 La rappresentazione qui sopra è live! [Prova](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Esercitazioni Dynamic Media_
 
-* [Utilizza Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=it)
-* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/it?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
+* [Utilizzare Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Libreria contenuti Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (ricerca in _Dynamic Media_)
 
 _Visualizzatori Dynamic Media_
 

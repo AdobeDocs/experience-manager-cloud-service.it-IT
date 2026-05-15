@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 1%
 
 ---
 
@@ -164,9 +164,9 @@ Collegare i moduli ai flussi di lavoro dei processi aziendali:
 **Implementazione:**
 Invia il modulo di feedback cliente a:
 1. Invia e-mail a <support@company.com> con dettagli modulo
-2. PUBBLICA in API CRM per creare record cliente
-3. Attivare il flusso di lavoro per la creazione di ticket di supporto
-4. Inviare un messaggio di ringraziamento al cliente
+2. PUBBLICA in API CRM per creare il record cliente
+3. Attiva flusso di lavoro per la creazione di ticket di supporto
+4. Invia un&#39;e-mail di ringraziamento al cliente
 
 ### Modulo di onboarding dipendenti
 
@@ -179,10 +179,10 @@ Invia il modulo di feedback cliente a:
 
 **Implementazione:**
 Elabora onboarding dipendenti:
-1. Invia un&#39;e-mail a <hr@company.com> con i dettagli del dipendente
-2. Caricare i documenti nella cartella dei dipendenti di SharePoint
+1. Invia e-mail a <hr@company.com> con dettagli dipendente
+2. Carica documenti nella cartella dei dipendenti di SharePoint
 3. Avvia il flusso di lavoro di onboarding in Power Automate
-4. Creare account nel sistema HR, e-mail e altri strumenti
+4. Creazione di account nel sistema HR, e-mail e altri strumenti
 
 ### Modulo generazione lead
 
@@ -195,10 +195,10 @@ Elabora onboarding dipendenti:
 
 **Implementazione:**
 Generazione lead processo:
-1. PUBBLICARE i dati dei lead nell’API di Marketo
-2. Creazione del record del lead in Salesforce
-3. Inviare un messaggio e-mail al team di vendita con i dettagli del lead
-4. Avviare la sequenza di acquisizione automatica delle e-mail
+1. PUBBLICA dati lead nell’API Marketo
+2. Crea record lead in Salesforce
+3. Invia un&#39;e-mail al team di vendita con i dettagli del lead
+4. Avvia sequenza di e-mail nurture automatizzata
 
 ## Scenari di integrazione avanzata
 

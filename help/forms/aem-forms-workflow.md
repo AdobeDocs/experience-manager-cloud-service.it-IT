@@ -9,10 +9,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 1%
+source-wordcount: '2589'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Con un flusso di lavoro incentrato su Forms su OSGi, puoi creare e distribuire r
 
 Una volta configurati, questi flussi di lavoro possono essere attivati manualmente per completare un processo definito o essere eseguiti a livello di programmazione quando gli utenti inviano un modulo. <!-- or [correspondence management](cm-overview.md) letter With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-Il flusso di lavoro incentrato su Forms su OSGi estende la cartella Posta in arrivo di [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=it#authoring) e fornisce componenti aggiuntivi (passaggi) che consentono all&#39;editor di flussi di lavoro AEM di aggiungere supporto per i flussi di lavoro incentrati su [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+Il flusso di lavoro incentrato su Forms su OSGi estende la cartella Posta in arrivo di [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring) e fornisce componenti aggiuntivi (passaggi) che consentono all&#39;editor di flussi di lavoro AEM di aggiungere supporto per i flussi di lavoro incentrati su [!DNL AEM Forms]. <!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 Tutti i [!DNL AEM Forms] passaggi del flusso di lavoro supportano l&#39;utilizzo di variabili. Le variabili consentono ai passaggi del flusso di lavoro di conservare e trasmettere metadati tra i passaggi in fase di esecuzione. Puoi creare diversi tipi di variabili per memorizzare diversi tipi di dati. Puoi anche creare raccolte di variabili (array) per memorizzare più istanze di dati correlati dello stesso tipo. In genere, si utilizza una variabile o una raccolta di variabili quando è necessario prendere una decisione in base al valore in essa contenuto o per memorizzare le informazioni necessarie in un secondo momento di un processo. Per ulteriori informazioni sull&#39;utilizzo delle variabili in questi componenti del flusso di lavoro incentrati su Forms (passaggi), vedi [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow-step-reference.md). Per informazioni sulla creazione e la gestione delle variabili, consulta [Variabili nei flussi di lavoro di AEM](variable-in-aem-workflows.md).
 
@@ -73,9 +73,9 @@ Sì. AEM Forms supporta la verificabilità attraverso la cronologia dei flussi d
 
 ## Creare un modello di flusso di lavoro {#create-a-workflow-model}
 
-Un modello di flusso di lavoro è costituito dalla logica e dal flusso di un processo aziendale. È costituito da una serie di passaggi. Questi passaggi sono relativi ai componenti di AEM. Puoi estendere i passaggi del flusso di lavoro con parametri e script per fornire più funzionalità e controllo, in base alle esigenze. [!DNL AEM Forms] fornisce alcuni passaggi in aggiunta ai passaggi predefiniti di AEM. Per un elenco dettagliato dei passaggi di AEM e di [!DNL AEM Forms], consulta [Riferimento passaggio flusso di lavoro di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=it#extending-aem) e [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow.md).
+Un modello di flusso di lavoro è costituito dalla logica e dal flusso di un processo aziendale. È costituito da una serie di passaggi. Questi passaggi sono relativi ai componenti di AEM. Puoi estendere i passaggi del flusso di lavoro con parametri e script per fornire più funzionalità e controllo, in base alle esigenze. [!DNL AEM Forms] fornisce alcuni passaggi in aggiunta ai passaggi predefiniti di AEM. Per un elenco dettagliato dei passaggi di AEM e di [!DNL AEM Forms], consulta [Riferimento passaggio flusso di lavoro di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) e [Flusso di lavoro incentrato su Forms in OSGi - Riferimento passaggio](aem-forms-workflow.md).
 
-AEM fornisce un’interfaccia utente intuitiva per creare un modello di flusso di lavoro utilizzando i passaggi di flusso di lavoro forniti. Per istruzioni dettagliate sulla creazione di un modello di flusso di lavoro, vedere [Creazione di modelli di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=it#workflows). L’esempio seguente fornisce istruzioni dettagliate per creare un modello di flusso di lavoro per un flusso di lavoro di approvazione e revisione:
+AEM fornisce un’interfaccia utente intuitiva per creare un modello di flusso di lavoro utilizzando i passaggi di flusso di lavoro forniti. Per istruzioni dettagliate sulla creazione di un modello di flusso di lavoro, vedere [Creazione di modelli di flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows). L’esempio seguente fornisce istruzioni dettagliate per creare un modello di flusso di lavoro per un flusso di lavoro di approvazione e revisione:
 
 >[!NOTE]
 >
@@ -303,4 +303,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
-La riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) eliminazione delle istanze del flusso di lavoro
+Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=it) eliminazione delle istanze del flusso di lavoro

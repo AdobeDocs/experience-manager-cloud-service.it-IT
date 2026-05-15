@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,10 +84,10 @@ Utilizzo di classificazioni aziendali complete e dati professionali per i moduli
 
 **Tipi di entità di settore e business:**
 
-    Aggiungi un campo per la classificazione del settore con codici NAICS
-    Crea un elenco a discesa dei tipi di entità aziendale (S.r.l,, S.p.A., S.n.c, ecc.)
-    Aggiungi un campo per le categorie di dimensione società (startup, PMI, impresa)
-    Includi selezione reparto per organizzazioni di grandi dimensioni
+    Aggiungi un campo per la classificazione di settore con codici NAICS
+    Crea un elenco a discesa dei tipi di entità business (LLC, Corporation, Partnership, ecc.)
+    Aggiungi un campo per le categorie di dimensione società (avvio, SME, enterprise)
+    Includi la selezione di reparto per le organizzazioni di grandi dimensioni
     Aggiungi un campo per i tipi di servizi professionali
 
 **Esempi di prompt:**

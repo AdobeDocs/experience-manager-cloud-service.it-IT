@@ -2,15 +2,14 @@
 title: Introduzione alla traduzione in AEM Sites
 description: Scopri come organizzare i contenuti AEM Sites e come funzionano gli strumenti di traduzione AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 100%
 
 ---
@@ -32,9 +31,9 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come AEM
 
 Questo documento illustra come iniziare a tradurre il contenuto dei siti in AEM. Dopo la lettura dovresti:
 
-* Comprendere l’importanza della struttura dei contenuti per la traduzione.
+* L’importanza della struttura dei contenuti per la traduzione.
 * Come AEM archivia i contenuti.
-* Conoscere gli strumenti di traduzione di AEM.
+* Gli strumenti di traduzione di AEM.
 
 ## Requisiti e prerequisiti {#requirements-prerequisites}
 
@@ -196,11 +195,11 @@ Ora che conosci la console e l’editor dei siti e l’importanza della struttur
 
 In genere si imposta il connettore una sola volta per l’istanza e le regole per progetto. Poi utilizzi i progetti di traduzione per tradurre i contenuti e tenerne aggiornate le traduzioni su base continua.
 
-## Novità {#what-is-next}
+## Passaggio successivo {#what-is-next}
 
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
-* Comprendere l’importanza della struttura dei contenuti per la traduzione.
+* L’importanza della struttura dei contenuti per la traduzione.
 * Come AEM archivia i contenuti.
 * Gli strumenti di traduzione di AEM.
 

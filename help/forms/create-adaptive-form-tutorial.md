@@ -1,17 +1,17 @@
 ---
 title: Guida introduttiva di Adaptive Forms.
 description: Scopri come creare moduli adattivi mobile-responsive con il nostro tutorial dettagliato. Questi moduli si adattano perfettamente ai diversi dispositivi, garantendo un’esperienza fluida.
-keywords: Forms adattivo, Forms reattivo, Forms HTML5
+keywords: Forms adattivo, Forms reattivo, HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 09d9c6ef-8079-4085-b494-8c58dbdeaf02
-source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 56%
+source-wordcount: '40'
+ht-degree: 60%
 
 ---
 

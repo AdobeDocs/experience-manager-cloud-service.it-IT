@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -62,10 +62,10 @@ Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (
    ![immagine](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **ID organizzazione**: immettere l&#39;ID organizzazione Adobe Identity Management System (IMS) per l&#39;organizzazione di cui si sta eseguendo la migrazione degli utenti.
+   * **ID organizzazione**: immettere l&#39;ID organizzazione del sistema Adobe Identity Management (IMS) per l&#39;organizzazione di cui si sta eseguendo la migrazione degli utenti.
 
      >[!NOTE]
-     >Per ottenere l&#39;ID organizzazione, accedi all&#39;[Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se ne appartieni a più di una. L’ID organizzazione si trova nell’URL della pagina, nel formato `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS. In alternativa, puoi trovare l&#39;ID organizzazione nella pagina [Adobe Developer Console](https://developer.adobe.com/console/) in cui generi il token di accesso.
+     >Per ottenere l&#39;ID organizzazione, accedi a [Admin Console](https://adminconsole.adobe.com/) e scegli la tua organizzazione (in alto a destra) se ne appartieni a più di una. L’ID organizzazione si trova nell’URL della pagina, nel formato `xx@AdobeOrg`, dove xx è l’ID organizzazione IMS. In alternativa, puoi trovare l&#39;ID organizzazione nella pagina [Adobe Developer Console](https://developer.adobe.com/console/) in cui generi il token di accesso.
 
    * **ID client**: immettere l&#39;ID client salvato dal passaggio di installazione.
 
@@ -97,7 +97,7 @@ Lo strumento di mappatura utenti è integrato nello strumento Content Transfer (
 
    >[!IMPORTANT]
    >
-   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Fai clic su **Trasferimento contenuti** per creare un set di migrazione per eseguire l&#39;estrazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#running-tool).
+   >* Una volta completata la mappatura utente, puoi tornare alla pagina di migrazione dei contenuti utilizzando la breadcrumb. La scheda Mappatura utente visualizza lo stato e la marca temporale. Fai clic su **Trasferimento contenuti** per creare un set di migrazione per eseguire l&#39;estrazione. Per ulteriori dettagli, vedere [Esecuzione dello strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool).
 
 ### Ripresa del processo di mappatura utenti {#resume-user-mapping-process}
 

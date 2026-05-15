@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 3%
+source-wordcount: '392'
+ht-degree: 4%
 
 ---
 
@@ -55,7 +55,7 @@ Il campo Descrizione breve fornisce suggerimenti rapidi e brevi sulla compilazio
 
 ![Aggiunta di rich media come guida contestuale per i campi modulo](assets/long-descriptions.png)
 
-Se si aggiunge una descrizione lunga, verrà visualizzato **?Icona** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
+Se si aggiunge una descrizione lunga, verrà visualizzata una **?** accanto al campo. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione descrizione lunga.
 
 ![Esempio di aiuto nel contesto di rich media](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ Oltre alla guida contestuale per i campi modulo, è possibile specificare la gui
 
 ![Aggiunta della guida contestuale a un pannello del modulo](assets/panel-level-help.png)
 
-L&#39;aggiunta della Guida per il pannello visualizza **?Icona** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
+L&#39;aggiunta della Guida per il pannello visualizza un **?** accanto alla descrizione del pannello. Facendo clic sull’icona viene visualizzato il contenuto aggiunto nella sezione Contenuto della guida della finestra di dialogo per modifica del pannello.
 
 ![Esempio di guida contestuale a livello di pannello del modulo](assets/photoshop-1.png)

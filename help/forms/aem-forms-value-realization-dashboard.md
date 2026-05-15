@@ -6,19 +6,19 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 0%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
-# Informazioni sulla dashboard di realizzazione del valore
+# Informazioni sulla dashboard per la realizzazione del valore
 
 ![Dashboard di realizzazione Fvalue](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Questa funzionalità è disponibile tramite il programma di accesso anticipato. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
+<span class="preview"> Questa funzione è disponibile tramite il programma per i primi utilizzatori. Per richiedere l’accesso, invia un’e-mail dal tuo indirizzo ufficiale a aem-forms-ea@adobe.com. <span>
 
 
 Benvenuto al tuo punto di riferimento per comprendere il valore che i moduli apportano. Questa dashboard offre informazioni utili per ottimizzare i moduli, semplificare i flussi di lavoro e, in ultima analisi, raggiungere gli obiettivi più rapidamente.
@@ -58,8 +58,8 @@ Questa dashboard consente di prendere decisioni basate sui dati in merito ai mod
 
 Traduciamo questi risultati in passaggi actionable!
 
-* **Invii insufficienti?** Verificare la chiarezza e la facilità d&#39;uso del modulo. È troppo lungo o hai domande confuse? Valuta la possibilità di effettuare revisioni per migliorare l’esperienza utente.
-* **Tempi di creazione elevati?** Suddividere il processo di creazione. Esistono passaggi o funzionalità non necessari che non vengono utilizzati in modo efficace? Utilizza funzioni che consentono di risparmiare tempo, come i modelli.
+* **Invii insufficienti?** Esaminare la chiarezza e la facilità d&#39;uso del modulo. È troppo lungo o hai domande confuse? Valuta la possibilità di effettuare revisioni per migliorare l’esperienza utente.
+* **Tempi di creazione elevati?** Suddividi il processo di creazione. Esistono passaggi o funzionalità non necessari che non vengono utilizzati in modo efficace? Utilizza funzioni che consentono di risparmiare tempo, come i modelli.
 * **Frammenti sottoutilizzati?** Assicurati che i frammenti siano ben organizzati, ricercabili e facili da comprendere. Prendi in considerazione la promozione dell’utilizzo dei frammenti all’interno del team.
 
 Analizzando queste tendenze, è possibile creare moduli migliori, risparmiare tempo sulla creazione e sfruttare componenti riutilizzabili. Questo si traduce in un flusso di lavoro più fluido, utenti più felici e, in ultima analisi, un maggiore ritorno sull&#39;investimento.

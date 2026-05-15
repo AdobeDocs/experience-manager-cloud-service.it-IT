@@ -8,15 +8,15 @@ feature: Adaptive Forms, Form Data Model
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-
-# API per richiamare il servizio Form Data Model (FDM) da Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API per richiamare il servizio Modello dati modulo (FDM) dai moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Panoramica {#overview}
 

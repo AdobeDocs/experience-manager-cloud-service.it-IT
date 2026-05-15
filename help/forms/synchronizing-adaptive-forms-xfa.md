@@ -9,15 +9,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
-
-# Sincronizzazione di Forms adattivo con i modelli di modulo XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Sincronizzazione di moduli adattivi con i modelli di modulo XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introduzione {#introduction}
 
@@ -140,4 +140,4 @@ Anche il campo che è stato eliminato è contrassegnato da un&#39;icona per indi
 
 Pacchetto di contenuti per l’esempio in questo articolo
 
-[Ottieni file](assets/sample-xfa-af-sync-1.0.zip)
+[Ottieni il file](assets/sample-xfa-af-sync-1.0.zip)

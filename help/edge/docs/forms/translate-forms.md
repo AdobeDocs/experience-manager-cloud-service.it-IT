@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ Fai riferimento al [foglio di calcolo](/help/forms/assets/enquirytranslate-sp.xl
 
 ![Modulo “enquiry” tradotto](/help/forms/assets/translate-form-french.png)
 
-Fai riferimento all’URL seguente, dove puoi visualizzare il modulo con la sua traduzione in lingua francese:
+Fai riferimento all’URL seguente, dove è possibile visualizzare il modulo con la sua traduzione in lingua francese:
 https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## Problemi noti {#known-issues}
@@ -83,9 +83,9 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **R**: per inserire testo in una lingua localizzata specifica, regola le impostazioni della tastiera sul dispositivo. Per istruzioni su come eseguire questa operazione, fai riferimento ai seguenti collegamenti:
 
-- [Configurare il Mac per ricevere input in un’altra lingua](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [Configura il Mac per ricevere input in un&#39;altra lingua](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
 - [Configurare Windows per ricevere input in un’altra lingua](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-- [Configurare dispositivi Android o iPhone/iPad per ricevere input in un’altra lingua](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
+- [Imposta l’Android o gli iPhone/iPad per inserire dati in un’altra lingua](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **D**: come posso recuperare un elenco di lingue utilizzate nella funzione `GOOGLETRANSLATE`?

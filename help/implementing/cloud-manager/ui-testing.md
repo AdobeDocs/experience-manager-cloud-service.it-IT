@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -275,8 +275,8 @@ Se implementi l’immagine Docker con altri linguaggi di programmazione o esecuz
 | Timeout | 30 min | Durata dell’esecuzione del test. |
 | Durata consigliata | 15 min | Adobe consiglia di mantenere i test entro questo limite di tempo. |
 
-* Se l’istanza di authoring/pubblicazione di destinazione è protetta dall’inserire nell&#39;elenco Consentiti di IP, è necessario inserire nell&#39;elenco Consentiti l’infrastruttura di test dell’interfaccia utente della pipeline oppure i test dell’interfaccia utente possono non riuscire con 403 Forbidden (Non consentito).
-Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un&#39;Inserire nell&#39;elenco Consentiti del IP &#x200B;](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Se l’istanza di authoring/pubblicazione di destinazione è protetta dalla inserire nell&#39;elenco Consentiti dell’interfaccia IP, è necessario inserire nell&#39;elenco Consentiti l’infrastruttura di test dell’interfaccia utente della pipeline oppure i test dell’interfaccia utente possono non riuscire con 403 Forbidden (Non consentito).
+Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di IP Inseriti nell&#39;elenco Consentiti](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introduzione ai Inserisce nell&#39;elenco Consentiti di IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Vedi anche [Errore del test dell&#39;interfaccia utente in AEMaaCS a causa di un
 Prima dell’avvio dei test, l’immagine Docker verifica che il server Selenium sia in esecuzione. L’attesa del servizio Selenium è un processo a due fasi.
 
 1. È possibile leggere l’URL del servizio Selenium dalla variabile di ambiente `SELENIUM_BASE_URL`.
-1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [&#128279;](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
+1. Esegui il polling a intervalli regolari dell&#39;endpoint di stato [](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready) esposto dall&#39;API Selenium.
 
 Dopo aver ricevuto una risposta positiva dall’endpoint di stato di Selenium è possibile avviare i test.
 

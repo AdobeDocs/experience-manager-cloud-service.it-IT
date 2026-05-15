@@ -2,15 +2,14 @@
 title: Tradurre il contenuto
 description: Utilizza il connettore di traduzione e le regole per tradurre il contenuto.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2535'
 ht-degree: 100%
 
 ---
@@ -24,7 +23,7 @@ Utilizza il connettore di traduzione e le regole per tradurre il contenuto.
 Nel documento precedente del percorso di traduzione AEM Sites, [Configurare le regole di traduzione](translation-rules.md) hai imparato a utilizzare le regole di traduzione AEM per identificare il contenuto da tradurre. Ora dovresti aver appreso quanto segue:
 
 * Come funzionano le regole di traduzione.
-* Come definire le tue regole di traduzione.
+* Essere in grado di definire le tue regole di traduzione.
 
 Ora che le regole del connettore e delle traduzioni sono configurate, questo articolo illustra il passaggio successivo per la traduzione dei contenuti in AEM Sites.
 
@@ -33,7 +32,7 @@ Ora che le regole del connettore e delle traduzioni sono configurate, questo art
 Questo documento ti aiuta a capire come utilizzare i progetti di traduzione AEM insieme al connettore e le regole di traduzione per tradurre il contenuto. Dopo aver letto questo documento, dovresti:
 
 * Cos’è un progetto di traduzione.
-* Essere in grado di creare nuovi progetti di traduzione.
+* Come creare nuovi progetti di traduzione.
 * Utilizza i progetti di traduzione per tradurre il tuo contenuto in AEM Sites.
 
 ## Creazione di un progetto di traduzione {#creating-translation-project}
@@ -277,7 +276,7 @@ La traduzione umana va oltre lo scopo di questo percorso di localizzazione. Cons
 
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
-* Sapere cos’è un progetto di traduzione.
+* Cos’è un progetto di traduzione.
 * Come creare nuovi progetti di traduzione.
 * Come utilizzare i progetti di traduzione per tradurre i contenuti.
 
@@ -288,4 +287,4 @@ Approfondisci questo argomento e prosegui nel tuo percorso di traduzione in AEM 
 Sebbene sia consigliabile passare alla parte successiva del processo di traduzione consultando il documento [Pubblicare i contenuti tradotti](publish-content.md), le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono concetti menzionati in questo documento, ma non sono necessarie per continuare il percorso.
 
 * [Gestione dei progetti di traduzione](/help/sites-cloud/administering/translation/managing-projects.md): scopri i dettagli dei progetti di traduzione e le funzioni aggiuntive, come i flussi di lavoro di traduzione umana e i progetti multilingue.
-* [Strumenti e ambiente di authoring](/help/sites-cloud/authoring/path-selection.md#path-selection): AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser del percorso affidabile.
+* [Ambiente e strumenti di authoring](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM offre diversi meccanismi per organizzare e modificare i contenuti, tra cui un browser con percorso affidabile.

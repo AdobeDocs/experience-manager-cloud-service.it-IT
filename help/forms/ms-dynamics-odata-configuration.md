@@ -8,9 +8,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1083'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=it) |
+| AEM 6.5 | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Questo articolo |
 
 ![integrazione dei dati](assets/data-integeration.png)
@@ -39,7 +39,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (servizio OData) è disponibile con tutte le modalità di esecuzione. Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza [!DNL Experience Manager], vedere [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (servizio OData) è disponibile con tutte le modalità di esecuzione. Per ulteriori informazioni sulla configurazione delle modalità di esecuzione per un&#39;istanza [!DNL Experience Manager], vedere [Modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#runmodes).
 
 AEM as a Cloud Service offre diverse azioni di invio pronte all’uso per la gestione degli invii di moduli. Ulteriori informazioni su queste opzioni sono disponibili nell&#39;articolo [Azione di invio modulo adattivo](/help/forms/configure-submit-actions-core-components.md).
 
@@ -145,7 +145,7 @@ Nella scheda **[!UICONTROL Impostazioni autenticazione]**:
 
    1. Specificare **[!UICONTROL openid]** nel campo **[!UICONTROL Ambito autorizzazione]** per il processo di autorizzazione in [!DNL Microsoft Dynamics].
 
-      ![Impostazioni autenticazione](assets/dynamics_authentication_settings_new.png)
+      ![Impostazioni di autenticazione](assets/dynamics_authentication_settings_new.png)
 Modello dati modulo (FDM)
 1. Fai clic su **[!UICONTROL Connetti a OAuth]**. Sei stato reindirizzato alla pagina di accesso [!DNL Microsoft Dynamics].
 1. Accedi con le credenziali di [!DNL Microsoft Dynamics] e accetta per consentire alla configurazione del servizio cloud di connettersi al servizio [!DNL Microsoft Dynamics]. È un task occasionale per stabilire il modello dati del modulo (FDM) per il servizio cloud e il servizio.

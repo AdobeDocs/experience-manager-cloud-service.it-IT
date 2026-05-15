@@ -4,9 +4,9 @@ description: Scopri come creare frammenti di modulo nell’editor universale e a
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1706'
 ht-degree: 100%
 
 ---
@@ -236,8 +236,8 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>
@@ -245,11 +245,11 @@ Puoi eseguire diverse operazioni sui frammenti di modulo utilizzando l’interfa
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
     </tr>
     <tr>
-   <td><p>Elimina</p> </td>
+   <td><p>Eliminare</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
     </tr>
     <tr>
-   <td><p>Confronta</p> </td>
+   <td><p>Confronto</p> </td>
    <td><p>Confronta due diversi frammenti di modulo a scopo di anteprima.<br /> <br /> </p> </td>
     </tr>
     </tbody>

@@ -2,11 +2,12 @@
 title: Preparazione HIPAA per Adobe Experience Manager as a Cloud Service
 description: Scopri il supporto di Experience Manager as a Cloud Service per i regolamenti HIPAA e come conformarsi quando si implementa un nuovo progetto AEM as a Cloud Service.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 6%
 >* [Prodotti e servizi HIPAA e Adobe](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) nel Centro affidabilità di Adobe
 >* [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html)
 
-Per Adobe Experience Manager (AEM) as a Cloud Service, Adobe fornisce la documentazione necessaria per comprendere lo stato di preparazione all’HIPAA. Può aiutarti a conformarti a queste normative.
+Per Adobe Experience Manager (AEM) as a Cloud Service, Adobe fornisce la documentazione necessaria per comprendere lo stato di preparazione all’HIPAA. Può aiutarti a diventare conforme a queste normative.
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -33,7 +34,7 @@ Per Adobe Experience Manager (AEM) as a Cloud Service, Adobe fornisce la documen
 
 Le Regole HIPAA sulla Privacy, la Sicurezza e la Notifica di Violazione stabiliscono importanti protezioni per le informazioni sanitarie identificabili individualmente note come Protected Health Information (PHI).
 
-In base all&#39;HIPAA, un&#39;entità coperta è un fornitore di assistenza sanitaria, un piano sanitario o un centro di assistenza sanitaria. Una società collegata è un&#39;entità che fornisce servizi a un&#39;entità coperta che comporta l&#39;accesso a PHI. Le norme HIPAA sulla privacy e sulla sicurezza richiedono che un’entità coperta ottenga garanzie scritte da un socio in affari sotto forma di un accordo di associazione commerciale (BAA) che richieda al socio in affari di salvaguardare la privacy e la sicurezza del PHI dell’entità coperta.
+In base all&#39;HIPAA, un&#39;entità coperta è un fornitore di assistenza sanitaria, un piano sanitario o un centro di assistenza sanitaria. Una società collegata è un&#39;entità che fornisce servizi a un&#39;entità coperta che comporta l&#39;accesso a PHI. Le norme HIPAA sulla privacy e sulla sicurezza richiedono che un’entità coperta ottenga garanzie scritte da un socio in affari sotto forma di un accordo di associazione commerciale (Business Associate Agreement, BAA) che richieda al socio in affari di salvaguardare la privacy e la sicurezza del PHI dell’entità coperta.
 
 ### Fornitura di PHI ad Adobe {#providing-phi-to-adobe}
 
@@ -132,7 +133,7 @@ Ciò significa che devi:
 
 La tabella seguente mostra dove i tipi di ambiente possono essere supportati come pronti per HIPAA.
 
-| | RDE | Svil. | Fase  | Prod |
+| | RDE | Dev | Fase  | Prod |
 | --- | --- | --- | --- | --- |
 | Tipo di ambiente  | No  | No  | No  | Sì  |
 

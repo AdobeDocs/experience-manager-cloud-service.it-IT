@@ -2,13 +2,12 @@
 title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
@@ -97,8 +96,8 @@ Tali funzioni generalmente non sono necessarie per iniziare a localizzare il con
 
 Ora che hai completato questa parte del percorso di traduzione di AEM Sites, dovresti:
 
-* Comprendere come funzionano le regole di traduzione.
-* Come definire le tue regole di traduzione.
+* Come funzionano le regole di traduzione.
+* Essere in grado di definire le tue regole di traduzione.
 
 Sviluppa questa conoscenza e continua il tuo percorso di traduzione di AEM Sites esaminando il documento successivo [Tradurre il contenuto](translate-content.md), dove verrà illustrato come il connettore e le regole lavorano insieme per tradurre i contenuti.
 

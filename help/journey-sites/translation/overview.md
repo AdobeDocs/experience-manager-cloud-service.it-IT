@@ -2,15 +2,14 @@
 title: Percorso AEM Sites translation
 description: Inizia qui per un percorso guidato alla traduzione di contenuti AEM Sites utilizzando i potenti strumenti di traduzione AEM.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -50,7 +49,7 @@ Di seguito sono riportati gli utenti tipo che interagiscono in questo percorso.
 | Amministratore | Gestisce l’impostazione e la configurazione di base di AEM | Lo specialista di traduzione collabora con l’amministratore per apportare le modifiche di configurazione necessarie per la traduzione, ad esempio per l’installazione di un connettore di traduzione. |
 | Architetto dei contenuti | Analizza i requisiti dei dati che devono essere consegnati come siti e ne definisce la struttura | Gli esperti di traduzione collaborano con l’architetto dei contenuti per definirne l’organizzazione in modo che possano essere facilmente tradotti. |
 
-Le informazioni in questo percorso possono essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Non perdere i [prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).
+Le informazioni in questo percorso possono essere utili a tutti gli utenti, ma alcune possono essere superflue per determinati ruoli. Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Percorso Sites translation {#the-journey}
 
@@ -78,6 +77,6 @@ Consulta queste risorse aggiuntive per ulteriori informazioni su come si integra
 
 * [Percorso di authoring headless](/help/journey-headless/author/overview.md): inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le potenzialità e i modi in cui modellare i contenuti sul tuo primo progetto headless.
 * [Percorso architetto headless](/help/journey-headless/architect/overview.md): fai clic qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager as a Cloud Service e per vedere come modellare i contenuti per il tuo progetto.
-* [Percorso sviluppatore AEM headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nei tuoi progetti.
+* [Percorso per sviluppatori AEM headless](/help/journey-headless/developer/overview.md): inizia qui un percorso guidato per scoprire le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come sfruttarle nel tuo primo progetto.
 * [Documentazione tecnica AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it): se hai già una solida conoscenza delle tecnologie AEM e headless, potresti voler consultare direttamente i nostri documenti tecnici approfonditi.
-* [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare facendo e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni create su AEM Headless.
+* [Tutorial AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it): se preferisci imparare con la pratica e hai capacità tecniche, segui i nostri tutorial pratici organizzati per API e framework, che esplorano la creazione e l’utilizzo di applicazioni basate su AEM Headless.

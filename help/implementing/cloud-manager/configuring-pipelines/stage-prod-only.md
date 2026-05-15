@@ -4,14 +4,13 @@ description: Scopri come suddividere le distribuzioni di staging e di produzione
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 48%
+source-wordcount: '1120'
+ht-degree: 49%
 
 ---
 
@@ -100,7 +99,7 @@ Le pipeline solo di produzione e solo di staging vengono create in modo simile a
 ### Creare una pipeline di sola produzione {#prod-only}
 
 1. Nella finestra di dialogo **Aggiungi pipeline di sola produzione**, immetti il nome libero della pipeline nel campo di testo **Nome pipeline**.
-1. Nel campo **Nome pipeline** digitare il nome desiderato.
+1. Nel campo **Nome pipeline**, digita il nome desiderato.
 1. In **Opzioni di distribuzione di produzione**, seleziona **Sospendi prima della distribuzione in produzione**.
 
    Questa opzione inserisce un gate di approvazione manuale subito prima del passaggio di produzione. La pipeline si interrompe e attende che un approvatore (ad esempio un Responsabile della distribuzione o un Proprietario business) approvi o annulli la distribuzione di produzione.

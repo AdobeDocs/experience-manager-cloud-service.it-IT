@@ -6,13 +6,13 @@ role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
-
 
 # Concedere l’accesso all’editor di regole a specifici gruppi di utenti {#grant-rule-editor-access-to-select-user-groups}
 
@@ -44,7 +44,7 @@ Esistono diversi tipi di utenti con diverse competenze che lavorano con Adaptive
 
    ![Crea utente](assets/create_user_new.png)
 
-   Ora, quando un utente che non fa parte del gruppo di utenti specificato (qui    `RuleEditorsUserGroup`) tocca un campo, l&#39;icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile nella barra degli strumenti Componenti:
+   Adesso, quando un utente che non fa parte del gruppo di utenti specificato (qui `RuleEditorsUserGroup`) tocca un campo, l&#39;icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile nella barra degli strumenti Componenti:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -55,4 +55,3 @@ Esistono diversi tipi di utenti con diverse competenze che lavorano con Adaptive
    Barra degli strumenti Componenti visibile a un utente senza accesso all’editor di regole
 
    Per istruzioni sull&#39;aggiunta di utenti ai gruppi, vedere [Amministrazione utenti e sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
-

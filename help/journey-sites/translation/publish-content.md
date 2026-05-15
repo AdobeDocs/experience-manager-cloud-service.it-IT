@@ -2,15 +2,14 @@
 title: Pubblicare contenuti tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1340'
 ht-degree: 100%
 
 ---
@@ -156,7 +155,7 @@ A questo punto, puoi [iniziare e gestire il processo di traduzione proprio come 
 
 ## Fine del percorso? {#end-of-journey}
 
-Congratulazioni! Hai completato il percorso di traduzione AEM Sites. Ora dovresti aver appreso quanto segue:
+Congratulazioni. Hai completato il percorso di traduzione AEM Sites. Ora dovresti aver appreso quanto segue:
 
 * Nozioni di base sulle funzionalità per la gestione dei contenuti di AEM.
 * Le funzioni di traduzione di AEM e in che modo si relazionano al contenuto dei siti.

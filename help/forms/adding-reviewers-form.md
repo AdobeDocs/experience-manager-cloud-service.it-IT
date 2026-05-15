@@ -11,10 +11,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '514'
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ Assicurati di aggiungere il gruppo creato come membro del gruppo di utenti prede
 Per associare gruppi di utenti a un modulo adattivo:
 
 1. In modalità creazione, passa a **Forms** > **Forms e documenti**.
-1. Utilizza l&#39;opzione **Seleziona &#x200B;** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
+1. Utilizza l&#39;opzione **Seleziona** per selezionare un modulo adattivo e fai clic su **Visualizza proprietà**.
 1. Nella finestra Proprietà del modulo fare clic su **Modifica** e quindi su **AVANZATE**.
 1. Immettere il gruppo nel campo gruppo revisore invio e fare clic su **Fine**.
 

@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -67,11 +67,11 @@ AEM Forms supporta il percorso completo di moduli digitali, dalla creazione iniz
 
 **Percorso di flussi di lavoro AEM Forms:**
 
-    CREA → GESTISCI → PUBBLICA → ACQUISISCI → PROCESSO → INTEGRA → TRACK → ARCHIVIO → MIGLIORARE
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    Progettazione   Revisione   Distribuisci   Raccogli   Maniglia   Connetti   Archivio monitor   Ottimizza
-    ↑                                                                              ↓
-    ←←←←←←←←←←←←←←← Ciclo continuo di miglioramento ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+    CREA → GOVERNA → PUBBLICA → ACQUISISCI → PROCESSO → INTEGRA → TRACK → ARCHIVIO → MIGLIORAMENTO
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↑
+    Design Revisione Distribuisci Gestisci Gestisci raccolta Monitor Store Ottimizza
+    ↓ ←←←←←←←←←←←←←←←
+    ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← Continuous Improvement Loop
 
 ### Creazione: Progettazione e sviluppo di moduli {#create}
 
@@ -81,7 +81,7 @@ Crea moduli adattivi utilizzando più approcci di authoring personalizzati in ba
 Progetta moduli reattivi tramite interfacce di trascinamento utilizzando [Componenti core](/help/forms/creating-adaptive-form-core-components.md), [Componenti Foundation](/help/forms/creating-adaptive-form.md) o [Edge Delivery Services](/help/edge/docs/forms/overview.md). L’editor visivo fornisce un feedback immediato, mantenendo al contempo un markup semantico e pulito che funziona tra dispositivi e tecnologie per l’accessibilità.
 
 **Authoring basato su documenti**
-Crea moduli utilizzando strumenti familiari come Microsoft Excel tramite [Edge Delivery Services](/help/edge/docs/forms/overview.md). Questo approccio consente agli autori di contenuti di creare moduli ad alte prestazioni senza competenze tecniche, ottenendo allo stesso tempo punteggi eccezionali in Google Lighthouse.
+Creare moduli utilizzando strumenti familiari come Microsoft Excel tramite [Edge Delivery Services](/help/edge/docs/forms/overview.md). Questo approccio consente agli autori di contenuti di creare moduli ad alte prestazioni senza competenze tecniche, ottenendo allo stesso tempo punteggi eccezionali in Google Lighthouse.
 
 **Modelli e temi**
 Accelera la creazione di moduli utilizzando [modelli](/help/forms/template-editor-core-components.md) predefiniti che definiscono la struttura e il contenuto iniziale. Applica un branding coerente con [temi](/help/forms/using-themes-in-core-components.md) che controllano lo stile visivo in più moduli, garantendo la coerenza della progettazione e riducendo i tempi di sviluppo.
@@ -115,7 +115,7 @@ Definisci le autorizzazioni granulari per la creazione, la modifica e la pubblic
 
 Distribuisci i moduli su più canali e punti di contatto per raggiungere gli utenti ovunque si trovino.
 
-**Pubblicazione Omnichannel**
+**Pubblicazione omni-channel**
 Pubblica moduli in [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md), pagine Web autonome, applicazioni mobili o [incorporati in sistemi di terze parti](/help/forms/embed-adaptive-form-core-components-external-web-page.md). La pubblicazione da una singola origine garantisce la coerenza adattandosi al contempo ai diversi requisiti del canale.
 
 **Localizzazione e Personalization**
@@ -156,7 +156,7 @@ Genera automaticamente record PDF di invii di moduli per conformità e conferma 
 **Orchestrazione flusso di lavoro**
 Attiva processi aziendali complessi basati sull&#39;invio di moduli. Instradare i dati attraverso le catene di approvazione, assegnare attività a utenti specifici e automatizzare le operazioni di routine mantenendo gli audit trail.
 
-**Gestione e ripristino errori**
+**Gestione e recupero degli errori**
 I meccanismi di esecuzione dei nuovi tentativi incorporati e l’elaborazione dei fallback assicurano che non vadano persi invii. La registrazione completa consente di risolvere i problemi e di mantenere gli accordi sui livelli di servizio.
 
 ### Integrare: connettività back-end {#integrate}
@@ -164,9 +164,9 @@ I meccanismi di esecuzione dei nuovi tentativi incorporati e l’elaborazione de
 Collegare i moduli ai sistemi aziendali e alle origini dati esistenti per un flusso di informazioni senza soluzione di continuità.
 
 **Connettori predefiniti**
-Integrazione nativa con [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) e soluzioni Adobe Experience Cloud. I connettori predefiniti riducono i tempi di sviluppo e garantiscono al tempo stesso una sincronizzazione affidabile dei dati.
+Integrazione nativa con [soluzioni Salesforce](/help/forms/configure-salesforce.md), [soluzioni Microsoft Dynamics](/help/forms/configure-msdynamics.md), [soluzioni SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) e Adobe Experience Cloud. I connettori predefiniti riducono i tempi di sviluppo e garantiscono al tempo stesso una sincronizzazione affidabile dei dati.
 
-**Integrazione API RESTful**
+Integrazione API **RESTful**
 Connettersi a qualsiasi servizio accessibile tramite API RESTful tramite [azioni di invio](/help/forms/configure-submit-action-restpoint.md) o [integrazione dati](/help/forms/data-integration.md). Il modello di dati modulo astrae la complessità dell’integrazione, fornendo un’interfaccia coerente indipendentemente dall’architettura di sistema sottostante.
 
 **Scambio di dati in tempo reale**
@@ -177,7 +177,7 @@ Consente il flusso bidirezionale dei dati tra moduli e sistemi aziendali. Precom
 Comprendere le prestazioni dei moduli e il comportamento degli utenti attraverso analisi e monitoraggio completi.
 
 **Analisi modulo**
-Tieni traccia dei tassi di completamento, dei pattern di abbandono e delle interazioni a livello di campo tramite [integrazione Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifica i punti di attrito, misura i funnel di conversione e comprendi il comportamento degli utenti in diversi segmenti.
+Tieni traccia dei tassi di completamento, dei pattern di abbandono e delle interazioni a livello di campo tramite [l&#39;integrazione di Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifica i punti di attrito, misura i funnel di conversione e comprendi il comportamento degli utenti in diversi segmenti.
 
 **Monitoraggio delle prestazioni**
 Monitora i tempi di caricamento dei moduli, i tassi di successo dell’invio e le prestazioni del sistema. Le dashboard in tempo reale forniscono informazioni approfondite sullo stato tecnico e sulle metriche di esperienza utente.
@@ -199,7 +199,7 @@ Archivia i documenti generati e gli invii di moduli nel sistema Digital Asset Ma
 Implementazione di regole di conservazione dei dati conformi ai requisiti normativi, inclusi GDPR, CCPA e HIPAA. [I processi di archiviazione automatizzati](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) garantiscono la conservazione dei documenti per i periodi richiesti e la loro eliminazione sicura quando necessario.
 
 **Sicurezza e controllo degli accessi**
-Applicare la crittografia, le firme digitali e i [controlli di accesso basati sui ruoli](/help/forms/forms-groups-privileges-tasks.md) ai documenti archiviati. AuditTrail traccia dell’accesso ai documenti e delle modifiche per la generazione di rapporti di conformità e la supervisione della sicurezza.
+Applicare la crittografia, le firme digitali e i [controlli di accesso basati su ruolo](/help/forms/forms-groups-privileges-tasks.md) ai documenti archiviati. AuditTrail traccia dell’accesso ai documenti e delle modifiche per la generazione di rapporti di conformità e la supervisione della sicurezza.
 
 ### Migliorare: ottimizzazione e miglioramento {#improve}
 
@@ -208,7 +208,7 @@ Ottimizza continuamente le prestazioni dei moduli e l’esperienza utente attrav
 **Integrazione test A/B**
 Utilizza Adobe Target per testare diversi layout di moduli, disposizioni dei campi e flussi di utenti. L’analisi statistica aiuta a identificare gli approcci più efficaci per diversi segmenti di utenti e casi d’uso.
 
-**Ottimizzazione guidata da Analytics**
+**Ottimizzazione basata su Analytics**
 Analizza i dati sul comportamento degli utenti per identificare le opportunità di miglioramento. [Visualizza e comprendi i rapporti di analisi](/help/forms/view-understand-aem-forms-analytics-reports.md) per la mappatura del calore, l&#39;analisi dell&#39;interazione dei campi e il riconoscimento del pattern di abbandono per informare i miglioramenti della progettazione iterativa.
 
 **Miglioramento iterativo**

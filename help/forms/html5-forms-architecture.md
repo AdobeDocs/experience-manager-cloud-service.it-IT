@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 0%
+source-wordcount: '2069'
+ht-degree: 2%
 
 ---
 
@@ -112,7 +112,7 @@ I moduli HTML5 eseguono il caching in memoria utilizzando la strategia LRU. Se l
 
 Il servizio di configurazione consente di ottimizzare i parametri di configurazione e le impostazioni della cache per i moduli HTML5.
 
-Per aggiornare queste impostazioni, vai a CQ Felix Admin Console (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[porta]&#39;/system/console/configMgr), cerca e seleziona Configurazione Forms mobile.
+Per aggiornare queste impostazioni, vai al CQ Felix Admin Console (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[porta]&#39;/system/console/configMgr), cerca e seleziona Configurazione Forms mobile.
 
 Puoi configurare la dimensione della cache o disabilitarla utilizzando il servizio di configurazione. È inoltre possibile abilitare il debug utilizzando il parametro Opzioni di debug. Ulteriori informazioni sul debug dei moduli sono disponibili all&#39;indirizzo [Debug dei moduli HTML5](/help/forms/debug.md).
 

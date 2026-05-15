@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Si applica ad AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Per gli autori di Forms adattivi, i frammenti di riferimento sono forniti nel pa
 * Termini e condizioni
 * Termini e condizioni con scarabocchio
 
-Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=it#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it).
+Quando si installa il pacchetto, in Forms &amp; Documents viene creata una cartella Frammenti di riferimento contenente frammenti di riferimento. Per l&#39;installazione di un pacchetto, vedere [Distribuzione di pacchetti di contenuto tramite Cloud Manager e Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Come utilizzare i pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Tutti i frammenti elencati](assets/ootb-frags.png)
 

@@ -2,14 +2,14 @@
 title: Abilità nella documentazione del progetto
 description: Scopri in che modo l’abilità nella documentazione dell’agente di modernizzazione dell’esperienza può aiutarti ad accelerare i passaggi di consegna dei progetti.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # Abilità nella documentazione del progetto {#project-documentation}
 
@@ -55,9 +55,9 @@ Puoi salvare il PDF direttamente per fornirlo ai team o caricarlo come parte del
 
 >[!NOTE]
 >
->Se non si dispone dell&#39;autorizzazione per accedere all&#39;API di amministrazione di Edge Delivery Services o all&#39;opzione **Consenti a LLM di accedere ad admin.hlx.page per conto dell&#39;utente** [nelle impostazioni della console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) non è abilitato, l&#39;agente genererà la documentazione in base alla base di codice a cui ha accesso.
+>Se non si è autorizzati ad accedere all&#39;API di amministrazione di Edge Delivery Services o all&#39;opzione **Consenti a LLM di accedere ad admin.hlx.page per conto dell&#39;utente** [nelle impostazioni della console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) non è abilitato, l&#39;agente genera la documentazione in base alla base di codice accessibile.
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Di seguito sono riportati i messaggi di errore più comuni che si verificano quando si utilizza l’abilità di documentazione del progetto e le modalità per risolverli.
 

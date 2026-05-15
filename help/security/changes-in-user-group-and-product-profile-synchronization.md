@@ -6,8 +6,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: ht
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -44,4 +44,4 @@ In questo modo si accede ad Adobe Admin Console, come illustrato nella schermata
 
 Nel caso improbabile che l’applicazione AEM faccia riferimento a un gruppo che non apparirà più in AEM, assicurarsi invece di utilizzare i) un profilo di prodotto della giusta istanza AEM o ii) un gruppo di utenti Adobe Admin Console.
 
-Le iscrizioni ai gruppi dell’utente vengono sincronizzate al momento dell’accesso all’ambiente e rimosse dai gruppi non correlati all’ambiente corrente. I gruppi stessi rimangono e includono gli utenti che non hanno effettuato l’accesso da quando la funzione è stata abilitata.
+L’iscrizione dell’utente a un gruppo viene sincronizzata al momento dell’accesso all’ambiente e rimossa dai gruppi non correlati all’ambiente corrente. I gruppi stessi rimangono e includono gli utenti che non hanno effettuato l’accesso da quando la funzione è stata abilitata.
