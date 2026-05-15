@@ -1,20 +1,20 @@
 ---
-title: Note sulla versione di Universal Editor 2026.05.07
-description: Queste sono le note sulla versione 2026.05.07 di Universal Editor.
+title: Note sulla versione di Universal Editor 2026.05.14
+description: Queste sono le note sulla versione 2026.05.14 di Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 12%
+source-wordcount: '123'
+ht-degree: 20%
 
 ---
 
 
-# Note sulla versione di Universal Editor 2026.05.07 {#release-notes}
+# Note sulla versione di Universal Editor 2026.05.14 {#release-notes}
 
-Queste sono le note sulla versione del 7 maggio 2026 di Universal Editor.
+Queste sono le note sulla versione del 14 maggio 2026 di Universal Editor.
 
 >[!TIP]
 >
@@ -26,13 +26,9 @@ Queste sono le note sulla versione del 7 maggio 2026 di Universal Editor.
 
 ## Novità {#what-is-new}
 
-* È ora possibile [trascinare i componenti nell&#39;editor per spostarli.](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
-* È stato introdotto un service worker per ridurre la latenza tra l’interfaccia utente di Universal Editor e i sistemi back-end.
-* Tutti gli adattatori per i frammenti di contenuto (AEM 6.5, OpenAPI e GraphQL) ora includono i filtri per il selettore delle risorse per garantire coerenza e consentire agli utenti di selezionare solo le risorse consentite.
-* L&#39;intento `content:patch` è ora specificato.
-* Per facilitare l’accessibilità, sono stati definiti il flusso di authoring e i punti di riferimento.
+* [Il pannello delle proprietà](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) viene ora aperto per impostazione predefinita.
+* [Migrazione delle icone di estensione a Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
 
-## Altri miglioramenti imminenti {#other-improvements}
+## Altri miglioramenti {#other-improvements}
 
-* Le asserzioni di tipo non necessarie in `assignImageDimensionFields` sono state rimosse.
-* È stato risolto un problema a causa del quale la gestione lato server dell&#39;operazione `add` ripeteva il valore stringa, considerandolo come un oggetto invece che come una patch.
+* Gli URL con spazi e/o caratteri speciali ora sono correttamente codificati in percentuale quando vengono memorizzati dall’editor Rich Text.
